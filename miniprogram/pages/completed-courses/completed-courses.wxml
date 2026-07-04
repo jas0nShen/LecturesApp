@@ -1,0 +1,53 @@
+<view class="page">
+  <view class="section record-head">
+    <view class="record-kicker">MY ACADEMIC RECORD</view>
+    <view class="title">管理已修课程</view>
+    <view class="subtitle">根据自己的修读记录勾选课程；这里不会连接或修改 HKU 官方成绩。</view>
+    <view class="record-summary">
+      <view>
+        <view class="summary-value">{{completedCount}}</view>
+        <view class="summary-label">门课程</view>
+      </view>
+      <view>
+        <view class="summary-value">{{completedCredits}}</view>
+        <view class="summary-label">已记录学分</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="section search-wrap">
+    <input
+      class="search-input"
+      value="{{keyword}}"
+      placeholder="搜索 Course Code 或课程名"
+      bindinput="onSearch"
+    />
+    <view wx:if="{{keyword}}" class="search-clear" bindtap="clearSearch">清除</view>
+  </view>
+
+  <view class="section filter-row">
+    <view class="filter {{viewMode === 'all' ? 'active' : ''}}" data-mode="all" bindtap="setMode">全部课程</view>
+    <view class="filter {{viewMode === 'completed' ? 'active' : ''}}" data-mode="completed" bindtap="setMode">仅看已修</view>
+    <view class="result-count">{{visibleCourses.length}} 门</view>
+  </view>
+
+  <view class="course-list">
+    <view wx:for="{{visibleCourses}}" wx:key="courseCode" class="course-record {{item.completed ? 'completed' : ''}}">
+      <view class="record-check {{item.completed ? 'active' : ''}}" data-code="{{item.courseCode}}" bindtap="toggleCompleted">{{item.completed ? '✓' : ''}}</view>
+      <view class="record-course" data-code="{{item.courseCode}}" bindtap="goCourse">
+        <view class="course-meta">
+          <view class="course-code">{{item.courseCode}}</view>
+          <view class="course-term">SEM {{item.termLabel}}</view>
+        </view>
+        <view class="course-title">{{item.title}}</view>
+        <view class="course-foot">{{item.credits}} credits · {{item.completed ? '已记录为已修' : '尚未记录'}}</view>
+      </view>
+      <view class="record-arrow">›</view>
+    </view>
+  </view>
+
+  <view wx:if="{{!visibleCourses.length}}" class="section empty">
+    <view class="empty-title">没有匹配的课程</view>
+    <view class="empty-copy">尝试更换关键词，或切换到“全部课程”。</view>
+  </view>
+</view>

@@ -147,6 +147,11 @@ function isOfferingCompleted(courseCode) {
   return getCompletedOfferingCodes().includes(String(courseCode).toUpperCase());
 }
 
+function getCompletedOfferings() {
+  const completedCodes = getCompletedOfferingCodes();
+  return hkuOfferings.courses.filter((course) => completedCodes.includes(course.courseCode));
+}
+
 function toggleOfferingCompleted(courseCode) {
   const code = String(courseCode).toUpperCase();
   const knownCourse = data.courses.find((course) => course.courseCode === code);
@@ -453,7 +458,17 @@ function buildAudit(profile, completedCourseIds) {
   const effectiveProfile = profile || getProfile() || { programmeId: 1, majorId: 1, curriculumYear: '2025-26' };
   const completedIds = completedCourseIds || getCompletedCourseIds();
   const completedCourses = data.courses.filter((course) => completedIds.includes(course.id));
-  const completedCredits = completedCourses.reduce((sum, course) => sum + course.credits, 0);
+  const completedCodes = [...new Set(
+    completedCourses.map((course) => course.courseCode)
+      .concat(wx.getStorageSync('completedOfferingCodes') || [])
+  )];
+  const completedOfferingCredits = hkuOfferings.courses
+    .filter((course) => completedCodes.includes(course.courseCode))
+    .reduce((sum, course) => sum + Number((course.details && course.details.credits) || 0), 0);
+  const completedNonOfferingCredits = completedCourses
+    .filter((course) => !hkuOfferings.courses.some((offering) => offering.courseCode === course.courseCode))
+    .reduce((sum, course) => sum + course.credits, 0);
+  const completedCredits = completedOfferingCredits + completedNonOfferingCredits;
   const programme = data.programmes.find((item) => item.id === Number(effectiveProfile.programmeId)) || data.programmes[0];
   let requirements = data.requirements.filter((item) => (
     item.programmeId === Number(effectiveProfile.programmeId)
@@ -642,7 +657,8 @@ function buildAuditRemote(profile, completedCourseIds) {
           programmeId: effectiveProfile.programmeId,
           majorId: effectiveProfile.majorId,
           curriculumYear: effectiveProfile.curriculumYear,
-          completedCourseIds: completedIds
+          completedCourseIds: completedIds,
+          completedOfferingCodes: wx.getStorageSync('completedOfferingCodes') || []
         }
       });
 
@@ -682,6 +698,7 @@ module.exports = {
   exportUserData,
   getCompletedCourseIds,
   getCompletedOfferingCodes,
+  getCompletedOfferings,
   analyzeStudyPlan,
   getCourse,
   getCourseNote,

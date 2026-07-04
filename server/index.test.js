@@ -123,6 +123,24 @@ test('graduation audit calculates progress and missing courses', async () => {
   assert.equal(audit.curriculumStructure.reduce((sum, section) => sum + section.credits, 0), 240);
 });
 
+test('graduation audit counts completed catalogue offerings outside the seed curriculum', async () => {
+  const response = await fetch(`${baseUrl}/api/graduation-audit`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      programmeId: 1,
+      majorId: 1,
+      curriculumYear: '2025-26',
+      completedCourseIds: [],
+      completedOfferingCodes: ['FITE1010']
+    })
+  });
+  const audit = await response.json();
+
+  assert.equal(response.status, 200);
+  assert.equal(audit.completedCredits, 6);
+});
+
 test('invalid JSON is rejected', async () => {
   const response = await fetch(`${baseUrl}/api/graduation-audit`, {
     method: 'POST',

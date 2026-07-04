@@ -198,3 +198,41 @@
   letter-spacing: 1rpx;
   margin-top: 8rpx;
 }
+
+.completed-entry {
+  align-items: center;
+  background: #e4f0eb;
+  border: 1rpx solid #bfd6cc;
+  border-radius: 18rpx;
+  display: flex;
+  padding: 26rpx;
+}
+
+.completed-icon {
+  align-items: center;
+  background: #0b6b55;
+  border-radius: 50%;
+  color: #ffffff;
+  display: flex;
+  font-size: 25rpx;
+  font-weight: 850;
+  height: 58rpx;
+  justify-content: center;
+  width: 58rpx;
+}
+
+.completed-copy {
+  flex: 1;
+  margin-left: 20rpx;
+}
+
+.completed-copy .subtitle {
+  font-size: 21rpx;
+  margin-top: 5rpx;
+}
+
+.completed-arrow {
+  color: #668277;
+  font-size: 42rpx;
+  margin-left: 12rpx;
+}

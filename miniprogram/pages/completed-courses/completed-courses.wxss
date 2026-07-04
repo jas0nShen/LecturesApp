@@ -1,0 +1,194 @@
+.record-head {
+  background: #17352c;
+  border-radius: 22rpx;
+  box-shadow: 0 14rpx 32rpx rgba(8, 45, 35, 0.18);
+  padding: 32rpx;
+}
+
+.record-kicker {
+  color: #9fd1c2;
+  font-size: 18rpx;
+  font-weight: 850;
+  letter-spacing: 2rpx;
+}
+
+.record-head .title {
+  color: #ffffff;
+  margin-top: 12rpx;
+}
+
+.record-head .subtitle {
+  color: #bcd3cb;
+}
+
+.record-summary {
+  border-top: 1rpx solid #426258;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 24rpx;
+  padding-top: 20rpx;
+}
+
+.record-summary > view + view {
+  border-left: 1rpx solid #426258;
+  padding-left: 26rpx;
+}
+
+.summary-value {
+  color: #ffffff;
+  font-size: 38rpx;
+  font-weight: 850;
+}
+
+.summary-label {
+  color: #9eb9af;
+  font-size: 20rpx;
+  margin-top: 3rpx;
+}
+
+.search-wrap {
+  position: relative;
+}
+
+.search-input {
+  background: #fbfcfa;
+  border: 1rpx solid #cbd9d2;
+  border-radius: 15rpx;
+  box-sizing: border-box;
+  font-size: 26rpx;
+  height: 86rpx;
+  padding: 0 100rpx 0 24rpx;
+  width: 100%;
+}
+
+.search-clear {
+  color: #0b6b55;
+  font-size: 22rpx;
+  font-weight: 700;
+  position: absolute;
+  right: 24rpx;
+  top: 29rpx;
+}
+
+.filter-row {
+  align-items: center;
+  display: flex;
+  gap: 10rpx;
+}
+
+.filter {
+  background: #e3ebe7;
+  border-radius: 999rpx;
+  color: #66776f;
+  font-size: 22rpx;
+  padding: 12rpx 18rpx;
+}
+
+.filter.active {
+  background: #0b6b55;
+  color: #ffffff;
+  font-weight: 750;
+}
+
+.result-count {
+  color: #87948e;
+  flex: 1;
+  font-size: 20rpx;
+  text-align: right;
+}
+
+.course-record {
+  align-items: center;
+  background: #fbfcfa;
+  border: 1rpx solid #dce5e0;
+  border-radius: 16rpx;
+  display: flex;
+  margin-bottom: 12rpx;
+  padding: 22rpx 18rpx;
+}
+
+.course-record.completed {
+  background: #f0f6f3;
+  border-color: #bfd7cc;
+}
+
+.record-check {
+  align-items: center;
+  border: 2rpx solid #adbbb4;
+  border-radius: 50%;
+  color: #ffffff;
+  display: flex;
+  flex: none;
+  font-size: 20rpx;
+  font-weight: 850;
+  height: 40rpx;
+  justify-content: center;
+  width: 40rpx;
+}
+
+.record-check.active {
+  background: #0b6b55;
+  border-color: #0b6b55;
+}
+
+.record-course {
+  flex: 1;
+  margin-left: 18rpx;
+}
+
+.course-meta {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-code {
+  color: #0b6b55;
+  font-size: 24rpx;
+  font-weight: 850;
+}
+
+.course-term {
+  color: #7b8b83;
+  font-size: 17rpx;
+  font-weight: 700;
+}
+
+.course-title {
+  color: #183129;
+  font-size: 25rpx;
+  font-weight: 750;
+  line-height: 1.35;
+  margin-top: 7rpx;
+}
+
+.course-foot {
+  color: #829088;
+  font-size: 19rpx;
+  margin-top: 9rpx;
+}
+
+.record-arrow {
+  color: #91a098;
+  font-size: 34rpx;
+  margin-left: 12rpx;
+}
+
+.empty {
+  background: #e8f1ed;
+  border-radius: 18rpx;
+  padding: 54rpx 28rpx;
+  text-align: center;
+}
+
+.empty-title {
+  color: #17352c;
+  font-size: 29rpx;
+  font-weight: 800;
+}
+
+.empty-copy {
+  color: #6c7d75;
+  font-size: 23rpx;
+  margin-top: 10rpx;
+}

@@ -2,7 +2,6 @@ const service = require('../../utils/courseService');
 
 Page({
   data: {
-    courses: [],
     audit: {
       sections: [],
       recommendations: [],
@@ -21,22 +20,15 @@ Page({
   async refresh() {
     const profile = service.getProfile() || { programmeId: 1, majorId: 1, curriculumYear: '2025-26' };
     const completedIds = service.getCompletedCourseIds();
-    const coursesResult = await service.listCoursesRemote({ programmeId: profile.programmeId, majorId: profile.majorId });
     const auditResult = await service.buildAuditRemote(profile, completedIds);
-    const courses = coursesResult.data.map((course) => ({
-      ...course,
-      completed: completedIds.includes(course.id)
-    }));
     this.setData({
-      courses,
       audit: auditResult.data,
       dataSource: auditResult.source
     });
   },
 
-  toggleCompleted(event) {
-    service.toggleCompleted(event.currentTarget.dataset.id);
-    this.refresh();
+  goCompletedCourses() {
+    wx.navigateTo({ url: '/pages/completed-courses/completed-courses' });
   },
 
   copyCurriculumSource() {

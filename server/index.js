@@ -111,6 +111,7 @@ function buildAudit(payload) {
   const majorId = Number(payload.majorId || 1);
   const requestedCurriculumYear = payload.curriculumYear || '2025-26';
   const completedCourseIds = (payload.completedCourseIds || []).map(Number);
+  const explicitOfferingCodes = (payload.completedOfferingCodes || []).map((code) => String(code).toUpperCase());
   const programme = seed.programmes.find((item) => item.id === programmeId);
   const curriculumYear = seed.requirements.some((item) => (
     item.programmeId === programmeId
@@ -118,7 +119,16 @@ function buildAudit(payload) {
     && item.curriculumYear === requestedCurriculumYear
   )) ? requestedCurriculumYear : programme.curriculumYear;
   const completedCourses = seed.courses.filter((course) => completedCourseIds.includes(course.id));
-  const completedCredits = completedCourses.reduce((sum, course) => sum + course.credits, 0);
+  const completedCodes = [...new Set(
+    completedCourses.map((course) => course.courseCode).concat(explicitOfferingCodes)
+  )];
+  const completedOfferingCredits = hkuCdsOfferings.courses
+    .filter((course) => completedCodes.includes(course.courseCode))
+    .reduce((sum, course) => sum + Number((course.details && course.details.credits) || 0), 0);
+  const completedNonOfferingCredits = completedCourses
+    .filter((course) => !hkuCdsOfferings.courses.some((offering) => offering.courseCode === course.courseCode))
+    .reduce((sum, course) => sum + course.credits, 0);
+  const completedCredits = completedOfferingCredits + completedNonOfferingCredits;
 
   const sections = seed.requirements
     .filter((item) => item.programmeId === programmeId && item.majorId === majorId && item.curriculumYear === curriculumYear)

@@ -28,15 +28,13 @@
     <view class="source-action" bindtap="copyCurriculumSource">复制 HKU 官方培养方案链接</view>
   </view>
 
-  <view class="section panel">
-    <view class="panel-title">录入已修课程</view>
-    <view wx:for="{{courses}}" wx:key="id" class="course-row" data-id="{{item.id}}" bindtap="toggleCompleted">
-      <view>
-        <view class="course-code">{{item.courseCode}}</view>
-        <view class="subtitle">{{item.titleEn}}</view>
-      </view>
-      <view class="check {{item.completed ? 'active' : ''}}">{{item.completed ? '已修' : '未修'}}</view>
+  <view class="section completed-entry" bindtap="goCompletedCourses">
+    <view class="completed-icon">✓</view>
+    <view class="completed-copy">
+      <view class="panel-title">管理已修课程</view>
+      <view class="subtitle">搜索完整官方课程目录，集中录入或修改修读记录。</view>
     </view>
+    <view class="completed-arrow">›</view>
   </view>
 
   <view class="section">

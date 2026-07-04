@@ -145,12 +145,28 @@ test('official completion records include known and catalogue-only courses', () 
   assert.equal(service.isOfferingCompleted('FITE1010'), true);
   assert.deepEqual(service.getCompletedOfferingCodes(), ['COMP1117', 'FITE1010']);
   assert.deepEqual(
+    service.getCompletedOfferings().map((course) => course.courseCode),
+    ['COMP1117', 'FITE1010']
+  );
+  assert.deepEqual(
     service.getPrerequisiteCourseStatus('COMP1117 or ENGG1330'),
     [
       { courseCode: 'COMP1117', completed: true },
       { courseCode: 'ENGG1330', completed: false }
     ]
   );
+});
+
+test('catalogue-only completed courses count toward recorded credits', () => {
+  service.toggleOfferingCompleted('FITE1010');
+  const audit = service.buildAudit({
+    programmeId: 1,
+    majorId: 1,
+    curriculumYear: '2025-26'
+  });
+
+  assert.equal(audit.completedCredits, 6);
+  assert.equal(audit.totalProgress, 3);
 });
 
 test('study plan items can be added, updated, joined and removed', () => {
