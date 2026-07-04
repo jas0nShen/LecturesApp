@@ -11,12 +11,65 @@ const TYPE_LABELS = {
   free_elective: '自由选修'
 };
 
+const USER_DATA_KEYS = [
+  'userProfile',
+  'favoriteCourseIds',
+  'favoriteOfferingCodes',
+  'completedCourseIds',
+  'completedOfferingCodes',
+  'studyPlanItems'
+];
+
 function getProfile() {
   return wx.getStorageSync('userProfile') || null;
 }
 
 function saveProfile(profile) {
   wx.setStorageSync('userProfile', profile);
+}
+
+function exportUserData() {
+  const dataSnapshot = {};
+  USER_DATA_KEYS.forEach((key) => {
+    const value = wx.getStorageSync(key);
+    if (value !== undefined && value !== null && value !== '') dataSnapshot[key] = value;
+  });
+  return {
+    app: 'lectures-app',
+    version: 1,
+    exportedAt: new Date().toISOString(),
+    data: dataSnapshot
+  };
+}
+
+function importUserData(snapshot) {
+  const parsed = typeof snapshot === 'string' ? JSON.parse(snapshot) : snapshot;
+  if (!parsed || parsed.app !== 'lectures-app' || parsed.version !== 1 || !parsed.data) {
+    throw new Error('Invalid backup format');
+  }
+
+  const arrayKeys = new Set([
+    'favoriteCourseIds',
+    'favoriteOfferingCodes',
+    'completedCourseIds',
+    'completedOfferingCodes',
+    'studyPlanItems'
+  ]);
+  USER_DATA_KEYS.forEach((key) => {
+    if (!Object.prototype.hasOwnProperty.call(parsed.data, key)) return;
+    const value = parsed.data[key];
+    if (arrayKeys.has(key) && !Array.isArray(value)) throw new Error(`Invalid ${key}`);
+    if (key === 'userProfile' && (typeof value !== 'object' || Array.isArray(value))) {
+      throw new Error('Invalid userProfile');
+    }
+  });
+
+  USER_DATA_KEYS.forEach((key) => {
+    if (Object.prototype.hasOwnProperty.call(parsed.data, key)) {
+      wx.setStorageSync(key, parsed.data[key]);
+    }
+  });
+  return true;
 }
 
 function getFavorites() {
@@ -461,6 +514,7 @@ module.exports = {
   data,
   buildAudit,
   buildAuditRemote,
+  exportUserData,
   getCompletedCourseIds,
   getCompletedOfferingCodes,
   analyzeStudyPlan,
@@ -482,6 +536,7 @@ module.exports = {
   isOfferingCompleted,
   isOfferingFavorite,
   isCoursePlanned,
+  importUserData,
   listCourses,
   listCoursesRemote,
   listCourseOfferings,

@@ -167,3 +167,17 @@ test('study plan analysis totals credits and flags prerequisite sequencing evide
   service.toggleOfferingCompleted('COMP1117');
   assert.equal(service.analyzeStudyPlan().noticeCount, 0);
 });
+
+test('user data can be exported and restored from a validated backup', () => {
+  service.saveProfile({ universityCode: 'HKU', currentYear: 2 });
+  service.toggleOfferingFavorite('COMP1117');
+  service.saveStudyPlanItem('COMP1117', 2, '1');
+
+  const backup = service.exportUserData();
+  storage.clear();
+  assert.equal(service.importUserData(JSON.stringify(backup)), true);
+  assert.deepEqual(service.getProfile(), { universityCode: 'HKU', currentYear: 2 });
+  assert.deepEqual(service.getFavoriteOfferingCodes(), ['COMP1117']);
+  assert.equal(service.isCoursePlanned('COMP1117'), true);
+  assert.throws(() => service.importUserData('{"version":1}'), /Invalid backup format/);
+});
