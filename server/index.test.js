@@ -51,6 +51,18 @@ test('official HKU offerings can be filtered by year, term and keyword', async (
   assert(result.courses.some((course) => course.courseCode === 'COMP3314'));
 });
 
+test('official HKU offerings can combine core or elective category with study year', async () => {
+  const coreResponse = await fetch(`${baseUrl}/api/course-offerings?category=core&year=1`);
+  const core = await coreResponse.json();
+  assert(core.courses.length > 0);
+  assert(core.courses.every((course) => course.categories.includes('Year 1 - Core')));
+
+  const electiveResponse = await fetch(`${baseUrl}/api/course-offerings?category=elective&year=3`);
+  const electives = await electiveResponse.json();
+  assert(electives.courses.length > 0);
+  assert(electives.courses.every((course) => course.categories.includes('Year 2 to 4 - Elective')));
+});
+
 test('an unavailable offering year returns an empty catalogue', async () => {
   const response = await fetch(`${baseUrl}/api/course-offerings?academic_year=2099-00`);
   const result = await response.json();

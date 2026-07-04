@@ -272,7 +272,9 @@ function listCoursesFromMock(filters = {}) {
 
 function listCourseOfferings(filters = {}) {
   const keyword = (filters.keyword || '').trim().toLowerCase();
-  const category = (filters.category || '').trim().toLowerCase();
+  const category = filters.category === 'all'
+    ? ''
+    : (filters.category || '').trim().toLowerCase();
   return hkuOfferings.courses.filter((course) => {
     const matchesKeyword = !keyword
       || course.courseCode.toLowerCase().includes(keyword)
@@ -280,7 +282,12 @@ function listCourseOfferings(filters = {}) {
     const matchesTerm = !filters.term || filters.term === 'all' || course.terms.includes(filters.term);
     const matchesCategory = !category
       || course.categories.some((item) => item.toLowerCase().includes(category));
-    return matchesKeyword && matchesTerm && matchesCategory;
+    const matchesYear = !filters.year || filters.year === 'all' || course.categories.some((item) => {
+      const range = item.match(/Year\s+(\d)\s+to\s+(\d)/i);
+      if (range) return Number(filters.year) >= Number(range[1]) && Number(filters.year) <= Number(range[2]);
+      return item.toLowerCase().includes(`year ${filters.year}`);
+    });
+    return matchesKeyword && matchesTerm && matchesCategory && matchesYear;
   });
 }
 
@@ -409,7 +416,8 @@ function listCourseOfferingsRemote(filters = {}) {
       academic_year: filters.academicYear || hkuOfferings.academicYear,
       keyword: filters.keyword,
       term: filters.term === 'all' ? null : filters.term,
-      category: filters.category
+      category: filters.category === 'all' ? null : filters.category,
+      year: filters.year === 'all' ? null : filters.year
     })}`),
     () => ({
       ...hkuOfferings,

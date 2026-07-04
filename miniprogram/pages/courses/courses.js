@@ -9,6 +9,22 @@ Page({
     courses: [],
     offerings: [],
     offeringTerm: 'all',
+    offeringCategory: 'all',
+    offeringYear: 'all',
+    offeringCategories: [
+      { value: 'all', label: '全部类别' },
+      { value: 'core', label: 'Core 核心' },
+      { value: 'elective', label: 'Elective 选修' }
+    ],
+    offeringYears: [
+      { value: 'all', label: '全部年级' },
+      { value: '1', label: 'Year 1' },
+      { value: '2', label: 'Year 2' },
+      { value: '3', label: 'Year 3' },
+      { value: '4', label: 'Year 4' }
+    ],
+    offeringCategoryIndex: 0,
+    offeringYearIndex: 0,
     offeringTerms: [
       { value: 'all', label: '全部学期' },
       { value: '1', label: '第一学期' },
@@ -36,7 +52,9 @@ Page({
       const result = await service.listCourseOfferingsRemote({
         academicYear: '2025-26',
         keyword: this.data.keyword,
-        term: this.data.offeringTerm
+        term: this.data.offeringTerm,
+        category: this.data.offeringCategory,
+        year: this.data.offeringYear
       });
       this.setData({
         offerings: result.data.courses.map((course) => ({
@@ -105,6 +123,24 @@ Page({
 
   onOfferingTermTap(event) {
     this.setData({ offeringTerm: event.currentTarget.dataset.value });
+    this.refresh();
+  },
+
+  onOfferingCategoryChange(event) {
+    const index = Number(event.detail.value);
+    this.setData({
+      offeringCategoryIndex: index,
+      offeringCategory: this.data.offeringCategories[index].value
+    });
+    this.refresh();
+  },
+
+  onOfferingYearChange(event) {
+    const index = Number(event.detail.value);
+    this.setData({
+      offeringYearIndex: index,
+      offeringYear: this.data.offeringYears[index].value
+    });
     this.refresh();
   },
 

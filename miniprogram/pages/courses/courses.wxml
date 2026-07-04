@@ -52,6 +52,15 @@
       <view wx:for="{{offeringTerms}}" wx:key="value" class="tab {{offeringTerm === item.value ? 'active' : ''}}" data-value="{{item.value}}" bindtap="onOfferingTermTap">{{item.label}}</view>
     </scroll-view>
 
+    <view class="offering-filter-bar">
+      <picker range="{{offeringCategories}}" range-key="label" value="{{offeringCategoryIndex}}" bindchange="onOfferingCategoryChange">
+        <view class="filter-select">{{offeringCategories[offeringCategoryIndex].label}} <text class="filter-arrow">⌄</text></view>
+      </picker>
+      <picker range="{{offeringYears}}" range-key="label" value="{{offeringYearIndex}}" bindchange="onOfferingYearChange">
+        <view class="filter-select">{{offeringYears[offeringYearIndex].label}} <text class="filter-arrow">⌄</text></view>
+      </picker>
+    </view>
+
     <view class="section source-stamp">
       <view class="stamp-mark">HKU OFFICIAL</view>
       <view>

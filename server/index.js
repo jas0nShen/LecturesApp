@@ -70,6 +70,7 @@ function listCourseOfferings(query) {
   const keyword = (query.get('keyword') || '').trim().toLowerCase();
   const term = query.get('term');
   const category = (query.get('category') || '').trim().toLowerCase();
+  const year = Number(query.get('year') || 0);
 
   return hkuCdsOfferings.courses.filter((course) => {
     const matchesKeyword = !keyword
@@ -78,7 +79,12 @@ function listCourseOfferings(query) {
     const matchesTerm = !term || course.terms.includes(term);
     const matchesCategory = !category
       || course.categories.some((item) => item.toLowerCase().includes(category));
-    return matchesKeyword && matchesTerm && matchesCategory;
+    const matchesYear = !year || course.categories.some((item) => {
+      const range = item.match(/Year\s+(\d)\s+to\s+(\d)/i);
+      if (range) return year >= Number(range[1]) && year <= Number(range[2]);
+      return item.toLowerCase().includes(`year ${year}`);
+    });
+    return matchesKeyword && matchesTerm && matchesCategory && matchesYear;
   });
 }
 

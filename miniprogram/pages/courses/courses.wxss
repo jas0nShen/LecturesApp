@@ -157,6 +157,31 @@
   border-top: 1rpx solid #edf0ed;
 }
 
+.offering-filter-bar {
+  display: grid;
+  gap: 12rpx;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: -4rpx 0 20rpx;
+}
+
+.filter-select {
+  align-items: center;
+  background: #fbfcfa;
+  border: 1rpx solid #d5e0da;
+  border-radius: 13rpx;
+  color: #40534a;
+  display: flex;
+  font-size: 23rpx;
+  justify-content: space-between;
+  min-height: 72rpx;
+  padding: 0 20rpx;
+}
+
+.filter-arrow {
+  color: #829088;
+  font-size: 24rpx;
+}
+
 .source-stamp {
   align-items: center;
   background: #e4f0eb;

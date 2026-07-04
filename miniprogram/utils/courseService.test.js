@@ -97,6 +97,16 @@ test('official HKU offerings can be filtered offline by term and keyword', async
   assert(result.data.courses.some((course) => course.courseCode === 'COMP3314'));
 });
 
+test('official HKU offerings combine category and year filters offline', () => {
+  const core = service.listCourseOfferings({ category: 'core', year: '1' });
+  const electives = service.listCourseOfferings({ category: 'elective', year: '4' });
+
+  assert(core.length > 0);
+  assert(core.every((course) => course.categories.includes('Year 1 - Core')));
+  assert(electives.length > 0);
+  assert(electives.every((course) => course.categories.includes('Year 2 to 4 - Elective')));
+});
+
 test('official offering detail falls back locally and enriches known courses', async () => {
   const known = await service.getCourseOfferingRemote('comp1117');
   const catalogueOnly = await service.getCourseOfferingRemote('FITE1010');
