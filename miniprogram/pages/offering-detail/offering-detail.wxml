@@ -62,8 +62,9 @@
       <view class="detail-copy">目前已确认开课学期和官方来源；学分与先修要求仍以官网为准。</view>
     </view>
 
-    <view class="section">
-      <view class="button" bindtap="copyOfficialUrl">复制官方课程链接</view>
+    <view class="section detail-actions">
+      <view class="button secondary" bindtap="copyOfficialUrl">复制官方链接</view>
+      <view class="button" bindtap="toggleFavorite">{{favorite ? '取消收藏' : '收藏课程'}}</view>
       <view class="source-note">数据源：{{dataSource === 'api' ? '本地 API' : '本地缓存'}}</view>
     </view>
   </block>

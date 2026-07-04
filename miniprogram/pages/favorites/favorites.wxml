@@ -1,10 +1,37 @@
 <view class="page">
   <view class="section">
-    <view class="title">收藏课程</view>
-    <view class="subtitle">把感兴趣的课程先收在这里，下一阶段会扩展成 Study Plan。</view>
+    <view class="title">我的课程夹</view>
+    <view class="subtitle">收好想进一步了解的课程，回来时不必重新搜索。</view>
   </view>
 
-  <view class="section">
+  <view class="folder-switch">
+    <view class="folder-tab {{viewMode === 'offerings' ? 'active' : ''}}" data-value="offerings" bindtap="onModeTap">
+      <view class="folder-count">{{offerings.length}}</view>
+      <view class="folder-label">官方开课</view>
+    </view>
+    <view class="folder-tab {{viewMode === 'curriculum' ? 'active' : ''}}" data-value="curriculum" bindtap="onModeTap">
+      <view class="folder-count">{{courses.length}}</view>
+      <view class="folder-label">培养方案</view>
+    </view>
+  </view>
+
+  <view wx:if="{{viewMode === 'offerings'}}" class="section">
+    <view wx:for="{{offerings}}" wx:key="courseCode" class="course-card official-card" data-code="{{item.courseCode}}" bindtap="goOfferingDetail">
+      <view class="row">
+        <view class="code">{{item.courseCode}}</view>
+        <view class="credits">Sem {{item.termLabel}}</view>
+      </view>
+      <view class="course-title">{{item.title}}</view>
+      <view class="record-line">{{item.categoryLabel}}</view>
+    </view>
+    <view wx:if="{{offerings.length === 0}}" class="empty">
+      <view class="empty-title">课程夹还是空的</view>
+      <view class="empty-copy">去官方开课目录，收藏想进一步了解的课程。</view>
+      <view class="empty-action" bindtap="goCourses">浏览官方开课</view>
+    </view>
+  </view>
+
+  <view wx:else class="section">
     <view wx:for="{{courses}}" wx:key="id" class="course-card" data-id="{{item.id}}" bindtap="goDetail">
       <view class="row">
         <view class="code">{{item.courseCode}}</view>
@@ -13,6 +40,10 @@
       <view class="course-title">{{item.titleEn}}</view>
       <view class="subtitle">{{item.semester}}</view>
     </view>
-    <view wx:if="{{courses.length === 0}}" class="empty">还没有收藏课程</view>
+    <view wx:if="{{courses.length === 0}}" class="empty">
+      <view class="empty-title">还没有培养方案收藏</view>
+      <view class="empty-copy">在课程详情中收藏后，会出现在这里。</view>
+      <view class="empty-action" bindtap="goCourses">查看培养方案</view>
+    </view>
   </view>
 </view>

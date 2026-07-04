@@ -35,6 +35,29 @@ function toggleFavorite(courseId) {
   return next;
 }
 
+function getFavoriteOfferingCodes() {
+  return wx.getStorageSync('favoriteOfferingCodes') || [];
+}
+
+function isOfferingFavorite(courseCode) {
+  return getFavoriteOfferingCodes().includes(String(courseCode).toUpperCase());
+}
+
+function toggleOfferingFavorite(courseCode) {
+  const code = String(courseCode).toUpperCase();
+  const favorites = getFavoriteOfferingCodes();
+  const next = favorites.includes(code)
+    ? favorites.filter((item) => item !== code)
+    : favorites.concat(code);
+  wx.setStorageSync('favoriteOfferingCodes', next);
+  return next;
+}
+
+function getFavoriteOfferings() {
+  const codes = getFavoriteOfferingCodes();
+  return hkuOfferings.courses.filter((course) => codes.includes(course.courseCode));
+}
+
 function getCompletedCourseIds() {
   return wx.getStorageSync('completedCourseIds') || [];
 }
@@ -303,9 +326,12 @@ module.exports = {
   getCourseOfferingRemote,
   getFavoriteCourses,
   getFavoriteCoursesRemote,
+  getFavoriteOfferingCodes,
+  getFavoriteOfferings,
   getFavorites,
   getProfile,
   isFavorite,
+  isOfferingFavorite,
   listCourses,
   listCoursesRemote,
   listCourseOfferings,
@@ -315,5 +341,6 @@ module.exports = {
   listUniversitiesRemote,
   saveProfile,
   toggleCompleted,
-  toggleFavorite
+  toggleFavorite,
+  toggleOfferingFavorite
 };

@@ -107,3 +107,10 @@ test('official offering detail falls back locally and enriches known courses', a
   assert.equal(catalogueOnly.data.offering.courseCode, 'FITE1010');
   assert.equal(catalogueOnly.data.course, null);
 });
+
+test('official offering favorites are stored by stable course code', () => {
+  assert.deepEqual(service.toggleOfferingFavorite('comp1117'), ['COMP1117']);
+  assert.equal(service.isOfferingFavorite('COMP1117'), true);
+  assert.deepEqual(service.getFavoriteOfferings().map((course) => course.courseCode), ['COMP1117']);
+  assert.deepEqual(service.toggleOfferingFavorite('COMP1117'), []);
+});

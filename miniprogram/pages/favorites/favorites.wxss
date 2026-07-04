@@ -1,9 +1,51 @@
+.folder-switch {
+  border-bottom: 1rpx solid #dce4df;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-bottom: 28rpx;
+}
+
+.folder-tab {
+  color: #718079;
+  padding: 18rpx 8rpx;
+  position: relative;
+  text-align: center;
+}
+
+.folder-tab.active {
+  color: #1f6f5b;
+}
+
+.folder-tab.active::after {
+  background: #1f6f5b;
+  bottom: -1rpx;
+  content: "";
+  height: 5rpx;
+  left: 24%;
+  position: absolute;
+  width: 52%;
+}
+
+.folder-count {
+  font-size: 36rpx;
+  font-weight: 800;
+}
+
+.folder-label {
+  font-size: 22rpx;
+  margin-top: 3rpx;
+}
+
 .course-card {
   background: #ffffff;
   border: 1rpx solid #e2e7e1;
   border-radius: 12rpx;
   margin-bottom: 18rpx;
   padding: 24rpx;
+}
+
+.official-card {
+  border-left: 6rpx solid #1f6f5b;
 }
 
 .code {
@@ -24,9 +66,35 @@
   margin-top: 12rpx;
 }
 
+.record-line {
+  color: #718079;
+  font-size: 22rpx;
+  margin-top: 16rpx;
+}
+
 .empty {
-  color: #64716b;
-  font-size: 28rpx;
-  padding: 80rpx 0;
+  background: #eef4f1;
+  border: 1rpx dashed #bed2c8;
+  padding: 62rpx 34rpx;
   text-align: center;
+}
+
+.empty-title {
+  color: #29433a;
+  font-size: 30rpx;
+  font-weight: 750;
+}
+
+.empty-copy {
+  color: #64716b;
+  font-size: 24rpx;
+  line-height: 1.5;
+  margin-top: 10rpx;
+}
+
+.empty-action {
+  color: #1f6f5b;
+  font-size: 25rpx;
+  font-weight: 750;
+  margin-top: 24rpx;
 }
