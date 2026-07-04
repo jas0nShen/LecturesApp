@@ -12,7 +12,8 @@ Page({
     const offerings = service.getFavoriteOfferings().map((course) => ({
       ...course,
       termLabel: course.terms.join(' / '),
-      categoryLabel: course.categories.join(' · ')
+      categoryLabel: course.categories.join(' · '),
+      planned: service.isCoursePlanned(course.courseCode)
     }));
     this.setData({ courses: result.data, offerings });
   },

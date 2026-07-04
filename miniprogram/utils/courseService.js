@@ -112,6 +112,15 @@ function getStudyPlanItems() {
   return wx.getStorageSync('studyPlanItems') || [];
 }
 
+function getStudyPlanItem(courseCode) {
+  const code = String(courseCode).toUpperCase();
+  return getStudyPlanItems().find((item) => item.courseCode === code) || null;
+}
+
+function isCoursePlanned(courseCode) {
+  return Boolean(getStudyPlanItem(courseCode));
+}
+
 function saveStudyPlanItem(courseCode, plannedYear, plannedTerm) {
   const code = String(courseCode).toUpperCase();
   const items = getStudyPlanItems();
@@ -467,10 +476,12 @@ module.exports = {
   getProfile,
   getPrerequisiteCourseStatus,
   getStudyPlanCourses,
+  getStudyPlanItem,
   getStudyPlanItems,
   isFavorite,
   isOfferingCompleted,
   isOfferingFavorite,
+  isCoursePlanned,
   listCourses,
   listCoursesRemote,
   listCourseOfferings,

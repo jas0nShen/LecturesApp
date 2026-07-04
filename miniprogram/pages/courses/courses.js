@@ -45,7 +45,8 @@ Page({
           categoryLabel: course.categories.join(' · '),
           sectionCount: course.sections.length,
           favorite: service.isOfferingFavorite(course.courseCode),
-          completed: service.isOfferingCompleted(course.courseCode)
+          completed: service.isOfferingCompleted(course.courseCode),
+          planned: service.isCoursePlanned(course.courseCode)
         })),
         offeringMeta: result.data,
         dataSource: result.source

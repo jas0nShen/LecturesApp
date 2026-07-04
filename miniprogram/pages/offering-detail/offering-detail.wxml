@@ -31,6 +31,14 @@
       <view class="completion-dot">{{completed ? '✓' : '—'}}</view>
     </view>
 
+    <view wx:if="{{planned}}" class="section planned-strip">
+      <view class="planned-symbol">◆</view>
+      <view>
+        <view class="planned-label">Study Plan</view>
+        <view class="planned-value">这门课已经排入四年计划</view>
+      </view>
+    </view>
+
     <view class="section panel">
       <view class="panel-title">班次</view>
       <view wx:for="{{offering.sections}}" wx:key="sectionCode" class="section-row">
@@ -85,7 +93,7 @@
       <view class="button secondary" bindtap="copyOfficialUrl">复制官方链接</view>
       <view class="button" bindtap="toggleFavorite">{{favorite ? '取消收藏' : '收藏课程'}}</view>
       <view class="button completion-action {{completed ? 'secondary' : ''}}" bindtap="toggleCompleted">{{completed ? '取消已修标记' : '标记为已修'}}</view>
-      <view class="button plan-action" bindtap="goPlanCourse">加入 Study Plan</view>
+      <view class="button plan-action" bindtap="goPlanCourse">{{planLabel}}</view>
       <view class="source-note">数据源：{{dataSource === 'api' ? '本地 API' : '本地缓存'}}</view>
     </view>
   </block>

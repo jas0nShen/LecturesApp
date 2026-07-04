@@ -265,6 +265,18 @@
 .completion-strip.done { border-left-color: #0b6b55; }
 .completion-strip.done .completion-value,
 .completion-strip.done .completion-dot { color: #0b6b55; }
+.planned-strip {
+  align-items: center;
+  background: #e8eef3;
+  border-left: 6rpx solid #3f5d75;
+  border-radius: 16rpx;
+  display: flex;
+  gap: 18rpx;
+  padding: 22rpx 24rpx;
+}
+.planned-symbol { color: #3f5d75; font-size: 26rpx; }
+.planned-label { color: #728494; font-size: 20rpx; }
+.planned-value { color: #304a5f; font-size: 25rpx; font-weight: 750; margin-top: 4rpx; }
 .panel-title { color: #17352c; }
 .section-code { color: #0b6b55; }
 .fact { background: #f0f5f2; border-radius: 12rpx; }

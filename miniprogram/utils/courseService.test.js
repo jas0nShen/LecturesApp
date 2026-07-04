@@ -142,9 +142,16 @@ test('study plan items can be added, updated, joined and removed', () => {
     { courseCode: 'COMP2113', plannedYear: 2, plannedTerm: '2' }
   ]);
   assert.equal(service.getStudyPlanCourses()[0].offering.title, 'Computer Programming');
+  assert.equal(service.isCoursePlanned('comp1117'), true);
+  assert.deepEqual(service.getStudyPlanItem('COMP1117'), {
+    courseCode: 'COMP1117',
+    plannedYear: 1,
+    plannedTerm: '2'
+  });
   assert.deepEqual(service.removeStudyPlanItem('comp1117'), [
     { courseCode: 'COMP2113', plannedYear: 2, plannedTerm: '2' }
   ]);
+  assert.equal(service.isCoursePlanned('COMP1117'), false);
 });
 
 test('study plan analysis totals credits and flags prerequisite sequencing evidence', () => {

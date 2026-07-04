@@ -12,6 +12,8 @@ Page({
     categoryLabel: '',
     favorite: false,
     completed: false,
+    planned: false,
+    planLabel: '加入 Study Plan',
     prerequisiteCourses: [],
     dataSource: 'loading'
   },
@@ -34,8 +36,19 @@ Page({
       categoryLabel: data.offering.categories.join(' · '),
       favorite: service.isOfferingFavorite(data.offering.courseCode),
       completed: service.isOfferingCompleted(data.offering.courseCode),
+      planned: service.isCoursePlanned(data.offering.courseCode),
+      planLabel: service.isCoursePlanned(data.offering.courseCode) ? '调整 Study Plan' : '加入 Study Plan',
       prerequisiteCourses: service.getPrerequisiteCourseStatus(data.course.prerequisites),
       dataSource: result.source
+    });
+  },
+
+  onShow() {
+    if (!this.data.offering) return;
+    const planned = service.isCoursePlanned(this.data.offering.courseCode);
+    this.setData({
+      planned,
+      planLabel: planned ? '调整 Study Plan' : '加入 Study Plan'
     });
   },
 

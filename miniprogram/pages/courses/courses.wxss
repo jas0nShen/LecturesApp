@@ -97,6 +97,12 @@
   font-weight: 700;
 }
 
+.planned-mark {
+  color: #3f5d75;
+  font-size: 20rpx;
+  font-weight: 700;
+}
+
 .course-title {
   color: #132a22;
   font-size: 30rpx;

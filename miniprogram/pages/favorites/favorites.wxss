@@ -73,6 +73,14 @@
   margin-top: 16rpx;
 }
 
+.planned-mark {
+  color: #3f5d75;
+  font-size: 20rpx;
+  font-weight: 700;
+  margin-bottom: 6rpx;
+  text-align: right;
+}
+
 .empty {
   background: #eef4f1;
   border: 1rpx dashed #bed2c8;

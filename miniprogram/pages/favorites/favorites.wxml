@@ -19,7 +19,10 @@
     <view wx:for="{{offerings}}" wx:key="courseCode" class="course-card official-card" data-code="{{item.courseCode}}" bindtap="goOfferingDetail">
       <view class="row">
         <view class="code">{{item.courseCode}}</view>
-        <view class="credits">Sem {{item.termLabel}}</view>
+        <view>
+          <view wx:if="{{item.planned}}" class="planned-mark">◆ 已计划</view>
+          <view class="credits">Sem {{item.termLabel}}</view>
+        </view>
       </view>
       <view class="course-title">{{item.title}}</view>
       <view class="record-line">{{item.categoryLabel}}</view>
