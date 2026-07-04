@@ -83,6 +83,12 @@
   font-size: 22rpx;
 }
 
+.completed-mark {
+  color: #1f6f5b;
+  font-size: 20rpx;
+  font-weight: 700;
+}
+
 .course-title {
   font-size: 30rpx;
   font-weight: 700;

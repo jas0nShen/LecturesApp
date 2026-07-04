@@ -44,7 +44,8 @@ Page({
           termLabel: course.terms.join(' / '),
           categoryLabel: course.categories.join(' · '),
           sectionCount: course.sections.length,
-          favorite: service.isOfferingFavorite(course.courseCode)
+          favorite: service.isOfferingFavorite(course.courseCode),
+          completed: service.isOfferingCompleted(course.courseCode)
         })),
         offeringMeta: result.data,
         dataSource: result.source
@@ -63,7 +64,8 @@ Page({
     this.setData({
       courses: result.data.map((course) => ({
         ...course,
-        favorite: service.isFavorite(course.id)
+        favorite: service.isFavorite(course.id),
+        completed: service.getCompletedCourseIds().includes(course.id)
       })),
       dataSource: result.source
     });
@@ -80,7 +82,8 @@ Page({
         hasPrerequisite: this.data.hasPrerequisite
       }).map((course) => ({
         ...course,
-        favorite: service.isFavorite(course.id)
+        favorite: service.isFavorite(course.id),
+        completed: service.getCompletedCourseIds().includes(course.id)
       }))
     });
   },

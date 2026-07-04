@@ -23,6 +23,14 @@
       </view>
     </view>
 
+    <view class="section completion-strip {{completed ? 'done' : ''}}">
+      <view>
+        <view class="completion-label">我的修读记录</view>
+        <view class="completion-value">{{completed ? '已记录为已修' : '尚未记录为已修'}}</view>
+      </view>
+      <view class="completion-dot">{{completed ? '✓' : '—'}}</view>
+    </view>
+
     <view class="section panel">
       <view class="panel-title">班次</view>
       <view wx:for="{{offering.sections}}" wx:key="sectionCode" class="section-row">
@@ -46,6 +54,13 @@
       <view class="detail-block">
         <view class="fact-label">先修要求</view>
         <view class="detail-copy">{{course.prerequisites || 'None'}}</view>
+        <view wx:if="{{prerequisiteCourses.length}}" class="prerequisite-list">
+          <view wx:for="{{prerequisiteCourses}}" wx:key="courseCode" class="prerequisite-chip {{item.completed ? 'done' : ''}}">
+            <text class="prerequisite-state">{{item.completed ? '✓' : '○'}}</text>
+            {{item.courseCode}}
+          </view>
+        </view>
+        <view wx:if="{{prerequisiteCourses.length}}" class="evidence-note">仅显示你的已修记录；最终选课资格以官网规则和学院审批为准。</view>
       </view>
       <view class="detail-block">
         <view class="fact-label">互斥课程</view>
@@ -69,6 +84,7 @@
     <view class="section detail-actions">
       <view class="button secondary" bindtap="copyOfficialUrl">复制官方链接</view>
       <view class="button" bindtap="toggleFavorite">{{favorite ? '取消收藏' : '收藏课程'}}</view>
+      <view class="button completion-action {{completed ? 'secondary' : ''}}" bindtap="toggleCompleted">{{completed ? '取消已修标记' : '标记为已修'}}</view>
       <view class="source-note">数据源：{{dataSource === 'api' ? '本地 API' : '本地缓存'}}</view>
     </view>
   </block>

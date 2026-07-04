@@ -90,6 +90,43 @@
   margin-top: 7rpx;
 }
 
+.completion-strip {
+  align-items: center;
+  background: #eef1ef;
+  border-left: 6rpx solid #aeb8b2;
+  display: flex;
+  justify-content: space-between;
+  padding: 22rpx 24rpx;
+}
+
+.completion-strip.done {
+  background: #e5f2ec;
+  border-left-color: #1f6f5b;
+}
+
+.completion-label {
+  color: #718079;
+  font-size: 21rpx;
+}
+
+.completion-value {
+  color: #34443c;
+  font-size: 27rpx;
+  font-weight: 750;
+  margin-top: 5rpx;
+}
+
+.completion-strip.done .completion-value,
+.completion-strip.done .completion-dot {
+  color: #1f6f5b;
+}
+
+.completion-dot {
+  color: #839089;
+  font-size: 34rpx;
+  font-weight: 850;
+}
+
 .panel-title {
   font-size: 29rpx;
   font-weight: 750;
@@ -149,6 +186,37 @@
   margin-top: 8rpx;
 }
 
+.prerequisite-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rpx;
+  margin-top: 16rpx;
+}
+
+.prerequisite-chip {
+  background: #f0f2f1;
+  color: #64716b;
+  font-size: 22rpx;
+  padding: 10rpx 14rpx;
+}
+
+.prerequisite-chip.done {
+  background: #e3f1eb;
+  color: #1f6f5b;
+  font-weight: 700;
+}
+
+.prerequisite-state {
+  margin-right: 5rpx;
+}
+
+.evidence-note {
+  color: #87928d;
+  font-size: 20rpx;
+  line-height: 1.45;
+  margin-top: 13rpx;
+}
+
 .quiet-panel {
   background: #f9faf9;
 }
@@ -167,5 +235,9 @@
 }
 
 .detail-actions .source-note {
+  grid-column: 1 / -1;
+}
+
+.completion-action {
   grid-column: 1 / -1;
 }

@@ -115,3 +115,19 @@ test('official offering favorites are stored by stable course code', () => {
   assert.deepEqual(service.getFavoriteOfferings().map((course) => course.courseCode), ['COMP1117']);
   assert.deepEqual(service.toggleOfferingFavorite('COMP1117'), []);
 });
+
+test('official completion records include known and catalogue-only courses', () => {
+  service.toggleOfferingCompleted('COMP1117');
+  service.toggleOfferingCompleted('FITE1010');
+
+  assert.equal(service.isOfferingCompleted('comp1117'), true);
+  assert.equal(service.isOfferingCompleted('FITE1010'), true);
+  assert.deepEqual(service.getCompletedOfferingCodes(), ['COMP1117', 'FITE1010']);
+  assert.deepEqual(
+    service.getPrerequisiteCourseStatus('COMP1117 or ENGG1330'),
+    [
+      { courseCode: 'COMP1117', completed: true },
+      { courseCode: 'ENGG1330', completed: false }
+    ]
+  );
+});

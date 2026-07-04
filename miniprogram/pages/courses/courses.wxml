@@ -32,6 +32,7 @@
         <view class="code">{{item.courseCode}}</view>
         <view class="card-status">
           <view wx:if="{{item.favorite}}" class="favorite-mark"><text class="favorite-star">★</text> 已收藏</view>
+          <view wx:if="{{item.completed}}" class="completed-mark">✓ 已修</view>
           <view class="credits">{{item.credits}} credits</view>
         </view>
       </view>
@@ -65,6 +66,7 @@
           <view class="code">{{item.courseCode}}</view>
           <view class="card-status">
             <view wx:if="{{item.favorite}}" class="favorite-mark"><text class="favorite-star">★</text> 已收藏</view>
+            <view wx:if="{{item.completed}}" class="completed-mark">✓ 已修</view>
             <view class="term-badge">Sem {{item.termLabel}}</view>
           </view>
         </view>

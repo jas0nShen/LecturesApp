@@ -70,6 +70,44 @@ function toggleCompleted(courseId) {
   return next;
 }
 
+function getCompletedOfferingCodes() {
+  const completedIds = getCompletedCourseIds();
+  const completedCodes = data.courses
+    .filter((course) => completedIds.includes(course.id))
+    .map((course) => course.courseCode);
+  return [...new Set(completedCodes.concat(wx.getStorageSync('completedOfferingCodes') || []))];
+}
+
+function isOfferingCompleted(courseCode) {
+  return getCompletedOfferingCodes().includes(String(courseCode).toUpperCase());
+}
+
+function toggleOfferingCompleted(courseCode) {
+  const code = String(courseCode).toUpperCase();
+  const knownCourse = data.courses.find((course) => course.courseCode === code);
+  if (knownCourse) {
+    toggleCompleted(knownCourse.id);
+    return getCompletedOfferingCodes();
+  }
+
+  const completed = wx.getStorageSync('completedOfferingCodes') || [];
+  const next = completed.includes(code)
+    ? completed.filter((item) => item !== code)
+    : completed.concat(code);
+  wx.setStorageSync('completedOfferingCodes', next);
+  return getCompletedOfferingCodes();
+}
+
+function getPrerequisiteCourseStatus(prerequisiteText) {
+  if (!prerequisiteText || prerequisiteText === 'None') return [];
+  const codes = [...new Set(String(prerequisiteText).toUpperCase().match(/[A-Z]{4}\d{4}/g) || [])];
+  const completed = getCompletedOfferingCodes();
+  return codes.map((courseCode) => ({
+    courseCode,
+    completed: completed.includes(courseCode)
+  }));
+}
+
 function listCourses(filters = {}) {
   const keyword = (filters.keyword || '').trim().toLowerCase();
   return data.courses.filter((course) => {
@@ -336,6 +374,7 @@ module.exports = {
   buildAudit,
   buildAuditRemote,
   getCompletedCourseIds,
+  getCompletedOfferingCodes,
   getCourse,
   getCourseRemote,
   getCourseOffering,
@@ -346,7 +385,9 @@ module.exports = {
   getFavoriteOfferings,
   getFavorites,
   getProfile,
+  getPrerequisiteCourseStatus,
   isFavorite,
+  isOfferingCompleted,
   isOfferingFavorite,
   listCourses,
   listCoursesRemote,
@@ -358,5 +399,6 @@ module.exports = {
   saveProfile,
   toggleCompleted,
   toggleFavorite,
+  toggleOfferingCompleted,
   toggleOfferingFavorite
 };
