@@ -146,3 +146,17 @@ test('study plan items can be added, updated, joined and removed', () => {
     { courseCode: 'COMP2113', plannedYear: 2, plannedTerm: '2' }
   ]);
 });
+
+test('study plan analysis totals credits and flags prerequisite sequencing evidence', () => {
+  service.saveStudyPlanItem('COMP2113', 1, '1');
+  service.saveStudyPlanItem('COMP1117', 2, '1');
+
+  const review = service.analyzeStudyPlan();
+  assert.equal(review.courseCount, 2);
+  assert.equal(review.totalCredits, 12);
+  assert.equal(review.noticeCount, 1);
+  assert.deepEqual(review.notices[0].missingCodes, ['COMP1117', 'ENGG1330']);
+
+  service.toggleOfferingCompleted('COMP1117');
+  assert.equal(service.analyzeStudyPlan().noticeCount, 0);
+});

@@ -5,6 +5,27 @@
     <view class="subtitle">先安排方向，再根据正式课表和先修要求逐步调整。</view>
   </view>
 
+  <view class="summary-strip">
+    <view class="summary-item">
+      <view class="summary-value">{{review.courseCount}}</view>
+      <view class="summary-label">计划课程</view>
+    </view>
+    <view class="summary-item">
+      <view class="summary-value">{{review.totalCredits}}</view>
+      <view class="summary-label">计划学分</view>
+    </view>
+    <view class="summary-item {{review.noticeCount ? 'attention' : ''}}">
+      <view class="summary-value">{{review.noticeCount}}</view>
+      <view class="summary-label">待核对</view>
+    </view>
+  </view>
+
+  <view wx:if="{{review.notices.length}}" class="review-notes">
+    <view class="review-title">顺序提醒</view>
+    <view wx:for="{{review.notices}}" wx:key="courseCode" class="review-note">{{item.message}}</view>
+    <view class="review-disclaimer">仅根据已修记录和计划顺序提示；等价课程、成绩门槛及学院审批仍以官方规则为准。</view>
+  </view>
+
   <view class="timeline">
     <view wx:for="{{groups}}" wx:key="year" class="year-group">
       <view class="year-rail">
@@ -12,12 +33,16 @@
         <view class="year-line"></view>
       </view>
       <view class="year-content">
-        <view class="year-heading">Year {{item.year}}</view>
+        <view class="year-heading">
+          <text>Year {{item.year}}</text>
+          <text class="year-credits">{{item.credits}} credits</text>
+        </view>
         <view wx:for="{{item.courses}}" wx:for-item="course" wx:key="courseCode" class="plan-course">
           <view class="plan-row" data-code="{{course.courseCode}}" bindtap="editCourse">
             <view>
               <view class="course-code">{{course.courseCode}}</view>
               <view class="course-title">{{course.offering.title}}</view>
+              <view class="course-credits">{{course.credits}} credits</view>
             </view>
             <view class="term">{{course.termLabel}}</view>
           </view>

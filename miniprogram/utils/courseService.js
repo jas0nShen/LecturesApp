@@ -141,6 +141,52 @@ function getStudyPlanCourses() {
   }).filter(Boolean);
 }
 
+function studyPlanPosition(item) {
+  const termOrder = item.plannedTerm === 'full year' ? 0 : Number(item.plannedTerm);
+  return (item.plannedYear * 10) + termOrder;
+}
+
+function analyzeStudyPlan() {
+  const courses = getStudyPlanCourses();
+  const completedCodes = getCompletedOfferingCodes();
+  const notices = [];
+  const totalCredits = courses.reduce(
+    (sum, item) => sum + Number((item.offering.details && item.offering.details.credits) || 0),
+    0
+  );
+
+  courses.forEach((item) => {
+    const prerequisiteText = (item.offering.details && item.offering.details.prerequisites) || 'None';
+    const prerequisiteCodes = [...new Set(prerequisiteText.toUpperCase().match(/[A-Z]{4}\d{4}/g) || [])];
+    if (!prerequisiteCodes.length) return;
+
+    const availableCodes = prerequisiteCodes.filter((code) => {
+      if (completedCodes.includes(code)) return true;
+      const planned = courses.find((course) => course.courseCode === code);
+      return planned && studyPlanPosition(planned) < studyPlanPosition(item);
+    });
+    const isAlternative = /\sor\s/i.test(prerequisiteText);
+    const missingCodes = isAlternative && availableCodes.length
+      ? []
+      : prerequisiteCodes.filter((code) => !availableCodes.includes(code));
+
+    if (missingCodes.length) {
+      notices.push({
+        courseCode: item.courseCode,
+        missingCodes,
+        message: `${item.courseCode} 的先修说明提到 ${missingCodes.join(' / ')}，目前没有更早的已修或计划记录。`
+      });
+    }
+  });
+
+  return {
+    courseCount: courses.length,
+    totalCredits,
+    noticeCount: notices.length,
+    notices
+  };
+}
+
 function listCourses(filters = {}) {
   const keyword = (filters.keyword || '').trim().toLowerCase();
   return data.courses.filter((course) => {
@@ -408,6 +454,7 @@ module.exports = {
   buildAuditRemote,
   getCompletedCourseIds,
   getCompletedOfferingCodes,
+  analyzeStudyPlan,
   getCourse,
   getCourseRemote,
   getCourseOffering,
