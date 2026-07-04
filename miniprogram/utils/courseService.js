@@ -19,6 +19,7 @@ const USER_DATA_KEYS = [
   'completedOfferingCodes',
   'studyPlanItems',
   'recentlyViewedCourseCodes',
+  'courseSearchHistory',
   'courseNotes'
 ];
 
@@ -34,6 +35,24 @@ function getProfile() {
 
 function saveProfile(profile) {
   wx.setStorageSync('userProfile', profile);
+}
+
+function getCourseSearchHistory() {
+  return wx.getStorageSync('courseSearchHistory') || [];
+}
+
+function recordCourseSearch(keyword) {
+  const value = String(keyword || '').trim();
+  if (!value) return getCourseSearchHistory();
+  const history = getCourseSearchHistory();
+  const next = [value].concat(history.filter((item) => item.toLowerCase() !== value.toLowerCase())).slice(0, 6);
+  wx.setStorageSync('courseSearchHistory', next);
+  return next;
+}
+
+function clearCourseSearchHistory() {
+  wx.setStorageSync('courseSearchHistory', []);
+  return [];
 }
 
 function exportUserData() {
@@ -62,7 +81,8 @@ function importUserData(snapshot) {
     'completedCourseIds',
     'completedOfferingCodes',
     'studyPlanItems',
-    'recentlyViewedCourseCodes'
+    'recentlyViewedCourseCodes',
+    'courseSearchHistory'
   ]);
   USER_DATA_KEYS.forEach((key) => {
     if (!Object.prototype.hasOwnProperty.call(parsed.data, key)) return;
@@ -703,6 +723,7 @@ module.exports = {
   getCourse,
   getCourseNote,
   getCourseNotes,
+  getCourseSearchHistory,
   getCourseRemote,
   getCourseOffering,
   getCourseOfferingRemote,
@@ -731,10 +752,12 @@ module.exports = {
   listProgrammesRemote,
   listUniversitiesRemote,
   removeStudyPlanItem,
+  recordCourseSearch,
   recordRecentlyViewed,
   saveStudyPlanItem,
   saveCourseNote,
   saveProfile,
+  clearCourseSearchHistory,
   toggleCompleted,
   toggleFavorite,
   toggleOfferingCompleted,

@@ -271,3 +271,18 @@ test('course notes can be saved, cleared and included in backups', () => {
   assert.equal(service.getCourseNote('COMP1117'), '');
   assert.deepEqual(service.getCourseNotes().map((item) => item.courseCode), ['COMP2113']);
 });
+
+test('course search history is deduplicated, capped, backed up and clearable', () => {
+  ['machine', 'COMP1117', 'database', 'security', 'graphics', 'algorithm', 'MACHINE']
+    .forEach((keyword) => service.recordCourseSearch(keyword));
+
+  assert.deepEqual(service.getCourseSearchHistory(), [
+    'MACHINE', 'algorithm', 'graphics', 'security', 'database', 'COMP1117'
+  ]);
+  assert.deepEqual(
+    service.exportUserData().data.courseSearchHistory,
+    service.getCourseSearchHistory()
+  );
+  assert.deepEqual(service.clearCourseSearchHistory(), []);
+  assert.deepEqual(service.getCourseSearchHistory(), []);
+});

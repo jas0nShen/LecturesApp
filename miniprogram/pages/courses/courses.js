@@ -3,6 +3,8 @@ const service = require('../../utils/courseService');
 Page({
   data: {
     keyword: '',
+    searchHistory: [],
+    quickSearches: ['COMP1117', 'COMP2119', 'COMP3314'],
     viewMode: 'curriculum',
     courseType: 'all',
     hasPrerequisite: null,
@@ -44,6 +46,7 @@ Page({
   },
 
   onShow() {
+    this.setData({ searchHistory: service.getCourseSearchHistory() });
     this.refresh();
   },
 
@@ -109,6 +112,42 @@ Page({
 
   onKeyword(event) {
     this.setData({ keyword: event.detail.value });
+    this.refresh();
+  },
+
+  onSearchConfirm() {
+    this.setData({ searchHistory: service.recordCourseSearch(this.data.keyword) });
+  },
+
+  applySearch(event) {
+    const keyword = event.currentTarget.dataset.keyword;
+    this.setData({
+      keyword,
+      searchHistory: service.recordCourseSearch(keyword)
+    });
+    this.refresh();
+  },
+
+  clearKeyword() {
+    this.setData({ keyword: '' });
+    this.refresh();
+  },
+
+  clearSearchHistory() {
+    this.setData({ searchHistory: service.clearCourseSearchHistory() });
+  },
+
+  resetFilters() {
+    this.setData({
+      keyword: '',
+      courseType: 'all',
+      hasPrerequisite: null,
+      offeringTerm: 'all',
+      offeringCategory: 'all',
+      offeringYear: 'all',
+      offeringCategoryIndex: 0,
+      offeringYearIndex: 0
+    });
     this.refresh();
   },
 

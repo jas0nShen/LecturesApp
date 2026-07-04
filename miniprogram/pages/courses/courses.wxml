@@ -11,7 +11,27 @@
   </view>
 
   <view class="section">
-    <input class="input" value="{{keyword}}" placeholder="搜索 Course Code 或课程名" confirm-type="search" bindinput="onKeyword" />
+    <view class="search-field">
+      <input class="input" value="{{keyword}}" placeholder="搜索 Course Code 或课程名" confirm-type="search" bindinput="onKeyword" bindconfirm="onSearchConfirm" />
+      <view wx:if="{{keyword}}" class="keyword-clear" bindtap="clearKeyword">×</view>
+    </view>
+    <view wx:if="{{!keyword}}" class="search-aids">
+      <view wx:if="{{searchHistory.length}}" class="aid-group">
+        <view class="aid-heading">
+          <view>最近搜索</view>
+          <view class="aid-clear" bindtap="clearSearchHistory">清除</view>
+        </view>
+        <view class="aid-chips">
+          <view wx:for="{{searchHistory}}" wx:key="*this" class="aid-chip history" data-keyword="{{item}}" bindtap="applySearch">{{item}}</view>
+        </view>
+      </view>
+      <view class="aid-group">
+        <view class="aid-heading">快捷查找</view>
+        <view class="aid-chips">
+          <view wx:for="{{quickSearches}}" wx:key="*this" class="aid-chip" data-keyword="{{item}}" bindtap="applySearch">{{item}}</view>
+        </view>
+      </view>
+    </view>
     <view class="source-line">数据源：{{dataSource === 'api' ? '本地 API' : '本地缓存'}}</view>
   </view>
 
@@ -43,7 +63,15 @@
         <text class="tag">Year {{item.recommendedYear}}</text>
       </view>
     </view>
-    <view wx:if="{{courses.length === 0}}" class="empty">没有找到匹配课程</view>
+    <view wx:if="{{courses.length === 0}}" class="empty">
+      <view class="empty-mark">NO MATCH</view>
+      <view class="empty-title">没有找到匹配课程</view>
+      <view class="empty-copy">试试只输入课程代码前缀，或清除当前筛选条件。</view>
+      <view class="empty-actions">
+        <view class="empty-action" bindtap="clearKeyword">清除关键词</view>
+        <view class="empty-action primary" bindtap="resetFilters">重置全部筛选</view>
+      </view>
+    </view>
   </view>
   </block>
 
@@ -86,7 +114,15 @@
           <text>{{item.sectionCount}} 个班次</text>
         </view>
       </view>
-      <view wx:if="{{offerings.length === 0}}" class="empty">本学期没有匹配课程，试试其他关键词或学期。</view>
+      <view wx:if="{{offerings.length === 0}}" class="empty">
+        <view class="empty-mark">NO OFFERING</view>
+        <view class="empty-title">没有匹配的官方开课</view>
+        <view class="empty-copy">课程可能在另一学期开设，也可以尝试只搜索 Course Code。</view>
+        <view class="empty-actions">
+          <view class="empty-action" bindtap="clearKeyword">清除关键词</view>
+          <view class="empty-action primary" bindtap="resetFilters">重置全部筛选</view>
+        </view>
+      </view>
     </view>
   </block>
 </view>
