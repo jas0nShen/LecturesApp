@@ -8,6 +8,7 @@
     "pages/plan-course/plan-course",
     "pages/study-plan/study-plan",
     "pages/course-notes/course-notes",
+    "pages/course-compare/course-compare",
     "pages/audit/audit",
     "pages/favorites/favorites",
     "pages/profile/profile"

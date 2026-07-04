@@ -1,0 +1,159 @@
+.compare-head {
+  border-bottom: 1rpx solid #d5e0da;
+  padding: 8rpx 2rpx 28rpx;
+}
+
+.compare-kicker {
+  color: #0b6b55;
+  font-size: 19rpx;
+  font-weight: 850;
+  letter-spacing: 2rpx;
+}
+
+.compare-head .title {
+  margin-top: 14rpx;
+}
+
+.compare-scroll {
+  margin-left: -28rpx;
+  width: calc(100% + 56rpx);
+}
+
+.compare-sheet {
+  display: flex;
+  padding: 0 28rpx 30rpx;
+  width: max-content;
+}
+
+.metric-column {
+  flex: none;
+  width: 150rpx;
+}
+
+.course-column {
+  flex: none;
+  width: 270rpx;
+}
+
+.metric-head,
+.course-head {
+  align-items: center;
+  background: #17352c;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-size: 21rpx;
+  font-weight: 800;
+  height: 74rpx;
+  padding: 0 20rpx;
+}
+
+.metric-head {
+  border-radius: 14rpx 0 0 0;
+  color: #a9c7bc;
+}
+
+.course-head {
+  border-left: 1rpx solid #46665b;
+  font-size: 25rpx;
+}
+
+.course-column:last-child .course-head {
+  border-radius: 0 14rpx 0 0;
+}
+
+.metric-cell,
+.course-cell {
+  align-items: flex-start;
+  background: #e6efeb;
+  border-bottom: 1rpx solid #cad9d2;
+  box-sizing: border-box;
+  color: #63756c;
+  display: flex;
+  font-size: 21rpx;
+  height: 86rpx;
+  line-height: 1.45;
+  padding: 22rpx 18rpx;
+}
+
+.course-cell {
+  background: #fbfcfa;
+  border-left: 1rpx solid #dce6e0;
+  color: #283c34;
+  font-size: 23rpx;
+}
+
+.title-cell {
+  display: block;
+  height: 240rpx;
+}
+
+.requirement-cell {
+  height: 270rpx;
+  overflow: hidden;
+}
+
+.course-title {
+  color: #17352c;
+  font-size: 25rpx;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.course-category {
+  color: #73847c;
+  font-size: 19rpx;
+  line-height: 1.4;
+  margin-top: 12rpx;
+}
+
+.emphasis {
+  color: #0b6b55;
+  font-size: 28rpx;
+  font-weight: 850;
+}
+
+.status-cell {
+  display: block;
+  height: 136rpx;
+}
+
+.status {
+  color: #78877f;
+  font-size: 21rpx;
+  font-weight: 700;
+}
+
+.status.done {
+  color: #0b6b55;
+}
+
+.status.planned {
+  color: #3f5d75;
+}
+
+.open-course {
+  color: #0b6b55;
+  font-size: 21rpx;
+  font-weight: 750;
+  margin-top: 18rpx;
+}
+
+.empty {
+  background: #e8f1ed;
+  border-radius: 18rpx;
+  padding: 60rpx 32rpx;
+  text-align: center;
+}
+
+.empty-title {
+  color: #17352c;
+  font-size: 30rpx;
+  font-weight: 800;
+}
+
+.empty-copy {
+  color: #66776f;
+  font-size: 24rpx;
+  margin-top: 12rpx;
+}

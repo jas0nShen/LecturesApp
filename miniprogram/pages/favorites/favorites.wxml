@@ -1,4 +1,4 @@
-<view class="page">
+<view class="page {{selectedCodes.length ? 'has-compare-dock' : ''}}">
   <view class="section">
     <view class="title">我的课程夹</view>
     <view class="subtitle">收好想进一步了解的课程，回来时不必重新搜索。</view>
@@ -19,9 +19,10 @@
     <view wx:for="{{offerings}}" wx:key="courseCode" class="course-card official-card" data-code="{{item.courseCode}}" bindtap="goOfferingDetail">
       <view class="row">
         <view class="code">{{item.courseCode}}</view>
-        <view>
+        <view class="card-tools">
           <view wx:if="{{item.planned}}" class="planned-mark">◆ 已计划</view>
           <view class="credits">Sem {{item.termLabel}}</view>
+          <view class="compare-check {{item.selected ? 'selected' : ''}}" data-code="{{item.courseCode}}" catchtap="toggleCompare">{{item.selected ? '✓' : ''}}</view>
         </view>
       </view>
       <view class="course-title">{{item.title}}</view>
@@ -48,5 +49,13 @@
       <view class="empty-copy">在课程详情中收藏后，会出现在这里。</view>
       <view class="empty-action" bindtap="goCourses">查看培养方案</view>
     </view>
+  </view>
+
+  <view wx:if="{{viewMode === 'offerings' && selectedCodes.length}}" class="compare-dock">
+    <view>
+      <view class="compare-count">已选择 {{selectedCodes.length}} / 3</view>
+      <view class="compare-hint">{{compareReady ? '可以开始比较' : '再选 1 门课程'}}</view>
+    </view>
+    <view class="compare-button {{compareReady ? '' : 'disabled'}}" bindtap="goCompare">对比课程</view>
   </view>
 </view>
