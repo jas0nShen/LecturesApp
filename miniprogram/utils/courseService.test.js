@@ -83,3 +83,16 @@ test('remote graduation audit falls back to the local rule engine', async () => 
   assert.equal(result.data.completedCredits, 6);
   assert.equal(result.data.totalProgress, 3);
 });
+
+test('official HKU offerings can be filtered offline by term and keyword', async () => {
+  const result = await service.listCourseOfferingsRemote({
+    academicYear: '2025-26',
+    term: '2',
+    keyword: 'machine'
+  });
+
+  assert.equal(result.source, 'mock');
+  assert(result.data.courses.length > 0);
+  assert(result.data.courses.every((course) => course.terms.includes('2')));
+  assert(result.data.courses.some((course) => course.courseCode === 'COMP3314'));
+});

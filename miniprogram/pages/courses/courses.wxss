@@ -83,3 +83,82 @@
   padding: 80rpx 0;
   text-align: center;
 }
+.catalog-switch {
+  background: #e8f0ec;
+  display: grid;
+  gap: 8rpx;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 24rpx 28rpx 8rpx;
+  padding: 8rpx;
+  border-radius: 18rpx;
+}
+
+.catalog-option {
+  border-radius: 14rpx;
+  color: #64716b;
+  padding: 18rpx 20rpx;
+}
+
+.catalog-option.active {
+  background: #ffffff;
+  box-shadow: 0 4rpx 16rpx rgba(31, 111, 91, 0.1);
+  color: #173d33;
+}
+
+.catalog-label {
+  font-size: 28rpx;
+  font-weight: 750;
+}
+
+.catalog-copy {
+  font-size: 21rpx;
+  margin-top: 4rpx;
+}
+
+.offering-tabs {
+  border-top: 1rpx solid #edf0ed;
+}
+
+.source-stamp {
+  align-items: center;
+  background: #edf5f1;
+  border: 1rpx solid #cfe1d8;
+  display: flex;
+  gap: 20rpx;
+}
+
+.stamp-mark {
+  border: 2rpx solid #1f6f5b;
+  color: #1f6f5b;
+  font-size: 18rpx;
+  font-weight: 800;
+  letter-spacing: 1rpx;
+  padding: 10rpx;
+  transform: rotate(-2deg);
+}
+
+.stamp-title {
+  color: #173d33;
+  font-size: 24rpx;
+  font-weight: 700;
+}
+
+.stamp-copy {
+  color: #64716b;
+  font-size: 21rpx;
+  margin-top: 5rpx;
+}
+
+.term-badge {
+  color: #1f6f5b;
+  font-size: 22rpx;
+  font-weight: 650;
+}
+
+.offering-footer {
+  color: #75817b;
+  display: flex;
+  font-size: 21rpx;
+  justify-content: space-between;
+  margin-top: 18rpx;
+}

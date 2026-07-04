@@ -3,9 +3,19 @@ const service = require('../../utils/courseService');
 Page({
   data: {
     keyword: '',
+    viewMode: 'curriculum',
     courseType: 'all',
     hasPrerequisite: null,
     courses: [],
+    offerings: [],
+    offeringTerm: 'all',
+    offeringTerms: [
+      { value: 'all', label: '全部学期' },
+      { value: '1', label: '第一学期' },
+      { value: '2', label: '第二学期' },
+      { value: 'full year', label: '全年' }
+    ],
+    offeringMeta: null,
     dataSource: 'loading',
     typeLabels: service.TYPE_LABELS,
     types: [
@@ -22,6 +32,25 @@ Page({
   },
 
   async refresh() {
+    if (this.data.viewMode === 'offerings') {
+      const result = await service.listCourseOfferingsRemote({
+        academicYear: '2025-26',
+        keyword: this.data.keyword,
+        term: this.data.offeringTerm
+      });
+      this.setData({
+        offerings: result.data.courses.map((course) => ({
+          ...course,
+          termLabel: course.terms.join(' / '),
+          categoryLabel: course.categories.join(' · '),
+          sectionCount: course.sections.length
+        })),
+        offeringMeta: result.data,
+        dataSource: result.source
+      });
+      return;
+    }
+
     const profile = service.getProfile() || { programmeId: 1, majorId: 1 };
     const result = await service.listCoursesRemote({
       programmeId: profile.programmeId,
@@ -54,6 +83,20 @@ Page({
     this.refresh();
   },
 
+  onModeTap(event) {
+    this.setData({
+      viewMode: event.currentTarget.dataset.value,
+      keyword: '',
+      dataSource: 'loading'
+    });
+    this.refresh();
+  },
+
+  onOfferingTermTap(event) {
+    this.setData({ offeringTerm: event.currentTarget.dataset.value });
+    this.refresh();
+  },
+
   onTypeTap(event) {
     this.setData({ courseType: event.currentTarget.dataset.value });
     this.refresh();
@@ -67,5 +110,14 @@ Page({
 
   goDetail(event) {
     wx.navigateTo({ url: `/pages/course-detail/course-detail?id=${event.currentTarget.dataset.id}` });
+  },
+
+  copyOfferingUrl(event) {
+    wx.setClipboardData({
+      data: event.currentTarget.dataset.url,
+      success() {
+        wx.showToast({ title: '官方链接已复制' });
+      }
+    });
   }
 });

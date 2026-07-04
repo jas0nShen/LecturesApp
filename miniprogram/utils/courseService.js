@@ -1,4 +1,5 @@
 const data = require('./mockData');
+const hkuOfferings = require('./hkuOfferings');
 const api = require('./apiClient');
 
 const TYPE_LABELS = {
@@ -65,6 +66,20 @@ function listCourses(filters = {}) {
 
 function listCoursesFromMock(filters = {}) {
   return listCourses(filters);
+}
+
+function listCourseOfferings(filters = {}) {
+  const keyword = (filters.keyword || '').trim().toLowerCase();
+  const category = (filters.category || '').trim().toLowerCase();
+  return hkuOfferings.courses.filter((course) => {
+    const matchesKeyword = !keyword
+      || course.courseCode.toLowerCase().includes(keyword)
+      || course.title.toLowerCase().includes(keyword);
+    const matchesTerm = !filters.term || filters.term === 'all' || course.terms.includes(filters.term);
+    const matchesCategory = !category
+      || course.categories.some((item) => item.toLowerCase().includes(category));
+    return matchesKeyword && matchesTerm && matchesCategory;
+  });
 }
 
 function listUniversitiesFromMock() {
@@ -186,6 +201,21 @@ function listCoursesRemote(filters = {}) {
   );
 }
 
+function listCourseOfferingsRemote(filters = {}) {
+  return withFallback(
+    () => api.request(`/api/course-offerings${api.toQuery({
+      academic_year: filters.academicYear || hkuOfferings.academicYear,
+      keyword: filters.keyword,
+      term: filters.term === 'all' ? null : filters.term,
+      category: filters.category
+    })}`),
+    () => ({
+      ...hkuOfferings,
+      courses: listCourseOfferings(filters)
+    })
+  );
+}
+
 function getCourseRemote(courseId) {
   return withFallback(
     () => api.request(`/api/courses/${courseId}`),
@@ -256,6 +286,8 @@ module.exports = {
   isFavorite,
   listCourses,
   listCoursesRemote,
+  listCourseOfferings,
+  listCourseOfferingsRemote,
   listMajorsRemote,
   listProgrammesRemote,
   listUniversitiesRemote,

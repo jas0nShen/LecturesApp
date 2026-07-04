@@ -1,9 +1,21 @@
 <view class="page">
+  <view class="catalog-switch">
+    <view class="catalog-option {{viewMode === 'curriculum' ? 'active' : ''}}" data-value="curriculum" bindtap="onModeTap">
+      <view class="catalog-label">培养方案</view>
+      <view class="catalog-copy">用于毕业检查</view>
+    </view>
+    <view class="catalog-option {{viewMode === 'offerings' ? 'active' : ''}}" data-value="offerings" bindtap="onModeTap">
+      <view class="catalog-label">官方开课</view>
+      <view class="catalog-copy">HKU · 2025–26</view>
+    </view>
+  </view>
+
   <view class="section">
     <input class="input" value="{{keyword}}" placeholder="搜索 Course Code 或课程名" confirm-type="search" bindinput="onKeyword" />
     <view class="source-line">数据源：{{dataSource === 'api' ? '本地 API' : '本地缓存'}}</view>
   </view>
 
+  <block wx:if="{{viewMode === 'curriculum'}}">
   <scroll-view class="tabs" scroll-x>
     <view wx:for="{{types}}" wx:key="value" class="tab {{courseType === item.value ? 'active' : ''}}" data-value="{{item.value}}" bindtap="onTypeTap">{{item.label}}</view>
   </scroll-view>
@@ -29,4 +41,34 @@
     </view>
     <view wx:if="{{courses.length === 0}}" class="empty">没有找到匹配课程</view>
   </view>
+  </block>
+
+  <block wx:else>
+    <scroll-view class="tabs offering-tabs" scroll-x>
+      <view wx:for="{{offeringTerms}}" wx:key="value" class="tab {{offeringTerm === item.value ? 'active' : ''}}" data-value="{{item.value}}" bindtap="onOfferingTermTap">{{item.label}}</view>
+    </scroll-view>
+
+    <view class="section source-stamp">
+      <view class="stamp-mark">HKU OFFICIAL</view>
+      <view>
+        <view class="stamp-title">{{offeringMeta.provider}}</view>
+        <view class="stamp-copy">{{offerings.length}} 门匹配课程 · 点击课程复制官方链接</view>
+      </view>
+    </view>
+
+    <view class="section">
+      <view wx:for="{{offerings}}" wx:key="courseCode" class="course-card offering-card" data-url="{{item.officialUrl}}" bindtap="copyOfferingUrl">
+        <view class="row">
+          <view class="code">{{item.courseCode}}</view>
+          <view class="term-badge">Sem {{item.termLabel}}</view>
+        </view>
+        <view class="course-title">{{item.title}}</view>
+        <view class="offering-footer">
+          <text>{{item.categoryLabel}}</text>
+          <text>{{item.sectionCount}} 个班次</text>
+        </view>
+      </view>
+      <view wx:if="{{offerings.length === 0}}" class="empty">本学期没有匹配课程，试试其他关键词或学期。</view>
+    </view>
+  </block>
 </view>
