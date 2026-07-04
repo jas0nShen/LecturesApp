@@ -43,7 +43,8 @@ Page({
           ...course,
           termLabel: course.terms.join(' / '),
           categoryLabel: course.categories.join(' · '),
-          sectionCount: course.sections.length
+          sectionCount: course.sections.length,
+          favorite: service.isOfferingFavorite(course.courseCode)
         })),
         offeringMeta: result.data,
         dataSource: result.source
@@ -60,7 +61,10 @@ Page({
       hasPrerequisite: this.data.hasPrerequisite
     });
     this.setData({
-      courses: result.data,
+      courses: result.data.map((course) => ({
+        ...course,
+        favorite: service.isFavorite(course.id)
+      })),
       dataSource: result.source
     });
   },
@@ -74,7 +78,10 @@ Page({
         keyword: this.data.keyword,
         courseType: this.data.courseType,
         hasPrerequisite: this.data.hasPrerequisite
-      })
+      }).map((course) => ({
+        ...course,
+        favorite: service.isFavorite(course.id)
+      }))
     });
   },
 

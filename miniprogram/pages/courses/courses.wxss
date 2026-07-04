@@ -66,6 +66,23 @@
   font-size: 24rpx;
 }
 
+.card-status {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 7rpx;
+}
+
+.favorite-mark {
+  color: #a06a13;
+  font-size: 20rpx;
+  font-weight: 700;
+}
+
+.favorite-star {
+  font-size: 22rpx;
+}
+
 .course-title {
   font-size: 30rpx;
   font-weight: 700;

@@ -30,7 +30,10 @@
     <view wx:for="{{courses}}" wx:key="id" class="course-card" data-id="{{item.id}}" bindtap="goDetail">
       <view class="row">
         <view class="code">{{item.courseCode}}</view>
-        <view class="credits">{{item.credits}} credits</view>
+        <view class="card-status">
+          <view wx:if="{{item.favorite}}" class="favorite-mark"><text class="favorite-star">★</text> 已收藏</view>
+          <view class="credits">{{item.credits}} credits</view>
+        </view>
       </view>
       <view class="course-title">{{item.titleEn}}</view>
       <view class="subtitle">{{item.titleZh}} · {{item.semester}}</view>
@@ -60,7 +63,10 @@
       <view wx:for="{{offerings}}" wx:key="courseCode" class="course-card offering-card" data-code="{{item.courseCode}}" bindtap="goOfferingDetail">
         <view class="row">
           <view class="code">{{item.courseCode}}</view>
-          <view class="term-badge">Sem {{item.termLabel}}</view>
+          <view class="card-status">
+            <view wx:if="{{item.favorite}}" class="favorite-mark"><text class="favorite-star">★</text> 已收藏</view>
+            <view class="term-badge">Sem {{item.termLabel}}</view>
+          </view>
         </view>
         <view class="course-title">{{item.title}}</view>
         <view class="offering-footer">
