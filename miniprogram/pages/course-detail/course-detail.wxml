@@ -49,7 +49,8 @@
 
   <view class="section panel">
     <view class="panel-title">官方来源</view>
-    <view class="body link">{{course.officialUrl}}</view>
+    <view class="body link" bindtap="copyOfficialUrl">{{course.officialUrl}}</view>
+    <view class="copy-hint" bindtap="copyOfficialUrl">点击复制官方链接</view>
     <view class="subtitle">最后核验：{{course.lastVerifiedAt}}</view>
   </view>
 </view>

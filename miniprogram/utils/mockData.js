@@ -17,11 +17,11 @@ const data = {
       degreeLevel: 'undergraduate',
       curriculumYear: '2026',
       totalCreditRequired: 240,
-      officialUrl: 'https://engg.hku.hk/'
+      officialUrl: 'https://cs.hku.hk/programmes/beng-compsc'
     }
   ],
   majors: [
-    { id: 1, programmeId: 1, code: 'COMP', nameEn: 'Computer Science', nameZh: '计算机科学', officialUrl: 'https://www.cs.hku.hk/' }
+    { id: 1, programmeId: 1, code: 'COMP', nameEn: 'Computer Science', nameZh: '计算机科学', officialUrl: 'https://cs.hku.hk/programmes/beng-compsc' }
   ],
   courses: [
     {
@@ -41,7 +41,7 @@ const data = {
       language: 'English',
       recommendedYear: 1,
       description: 'Introductory programming course covering problem solving, programming syntax, and basic software development practices.',
-      officialUrl: 'https://www.cs.hku.hk/',
+      officialUrl: 'https://cs.hku.hk/programmes/beng-compsc/course-descriptions',
       lastVerifiedAt: '2026-07-04'
     },
     {
@@ -61,7 +61,7 @@ const data = {
       language: 'English',
       recommendedYear: 2,
       description: 'Covers practical programming techniques and tools used in modern software development.',
-      officialUrl: 'https://www.cs.hku.hk/',
+      officialUrl: 'https://cs.hku.hk/programmes/beng-compsc/course-descriptions',
       lastVerifiedAt: '2026-07-04'
     },
     {
@@ -81,7 +81,7 @@ const data = {
       language: 'English',
       recommendedYear: 1,
       description: 'Mathematical foundations for computer science, including logic, proofs, sets, relations, graphs, and combinatorics.',
-      officialUrl: 'https://www.cs.hku.hk/',
+      officialUrl: 'https://cs.hku.hk/programmes/beng-compsc/course-descriptions',
       lastVerifiedAt: '2026-07-04'
     },
     {
@@ -101,7 +101,7 @@ const data = {
       language: 'English',
       recommendedYear: 2,
       description: 'Object-oriented programming concepts and Java application development.',
-      officialUrl: 'https://www.cs.hku.hk/',
+      officialUrl: 'https://cs.hku.hk/programmes/beng-compsc/course-descriptions',
       lastVerifiedAt: '2026-07-04'
     },
     {
@@ -121,7 +121,7 @@ const data = {
       language: 'English',
       recommendedYear: 3,
       description: 'Introduction to database design, relational model, SQL, indexing, transactions, and database applications.',
-      officialUrl: 'https://www.cs.hku.hk/',
+      officialUrl: 'https://cs.hku.hk/programmes/beng-compsc/course-descriptions',
       lastVerifiedAt: '2026-07-04'
     },
     {
@@ -141,7 +141,7 @@ const data = {
       language: 'English',
       recommendedYear: 4,
       description: 'A substantial project integrating knowledge and skills acquired in the programme.',
-      officialUrl: 'https://www.cs.hku.hk/',
+      officialUrl: 'https://cs.hku.hk/programmes/beng-compsc/course-descriptions',
       lastVerifiedAt: '2026-07-04'
     },
     {
@@ -161,7 +161,7 @@ const data = {
       language: 'English',
       recommendedYear: 1,
       description: 'A Common Core course introducing computing ideas in society and everyday life.',
-      officialUrl: 'https://commoncore.hku.hk/',
+      officialUrl: 'https://commoncore.hku.hk/ccst9003/',
       lastVerifiedAt: '2026-07-04'
     }
   ],

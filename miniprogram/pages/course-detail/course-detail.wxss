@@ -56,3 +56,10 @@
   color: #1f6f5b;
   word-break: break-all;
 }
+
+.copy-hint {
+  color: #1f6f5b;
+  font-size: 24rpx;
+  font-weight: 650;
+  margin: 14rpx 0;
+}
