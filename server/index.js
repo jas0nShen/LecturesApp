@@ -109,9 +109,14 @@ function buildOfferingCourse(offering) {
 function buildAudit(payload) {
   const programmeId = Number(payload.programmeId || 1);
   const majorId = Number(payload.majorId || 1);
-  const curriculumYear = payload.curriculumYear || '2026';
+  const requestedCurriculumYear = payload.curriculumYear || '2025-26';
   const completedCourseIds = (payload.completedCourseIds || []).map(Number);
   const programme = seed.programmes.find((item) => item.id === programmeId);
+  const curriculumYear = seed.requirements.some((item) => (
+    item.programmeId === programmeId
+    && item.majorId === majorId
+    && item.curriculumYear === requestedCurriculumYear
+  )) ? requestedCurriculumYear : programme.curriculumYear;
   const completedCourses = seed.courses.filter((course) => completedCourseIds.includes(course.id));
   const completedCredits = completedCourses.reduce((sum, course) => sum + course.credits, 0);
 
@@ -124,6 +129,7 @@ function buildAudit(payload) {
       return {
         type: requirement.type,
         name: requirement.name,
+        trackingScope: requirement.trackingScope || 'complete',
         requiredCredits: requirement.requiredCredits,
         completedCredits: Math.min(doneCredits, requirement.requiredCredits),
         missingCourses: requirementCourses.filter((course) => !completedCourseIds.includes(course.id))
@@ -133,6 +139,11 @@ function buildAudit(payload) {
   return {
     totalCreditsRequired: programme ? programme.totalCreditRequired : 0,
     completedCredits,
+    curriculumYear,
+    curriculumStructure: programme ? programme.curriculumStructure || [] : [],
+    curriculumSourceUrl: programme ? programme.curriculumSourceUrl || programme.officialUrl : '',
+    curriculumVerifiedAt: programme ? programme.curriculumVerifiedAt || '' : '',
+    trackingNotice: 'Official 240-credit structure verified; course-level tracking currently covers only part of the curriculum.',
     sections,
     recommendations: sections
       .flatMap((section) => section.missingCourses.map((course) => ({

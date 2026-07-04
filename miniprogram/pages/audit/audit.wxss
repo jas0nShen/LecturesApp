@@ -98,3 +98,103 @@
 .requirement { margin-bottom: 16rpx; overflow: hidden; }
 .missing { background: #f5f7f6; border-radius: 12rpx; padding: 18rpx; }
 .recommendation { background: #f7f9f8; border-radius: 12rpx; margin-top: 10rpx; padding: 18rpx; }
+
+.audit-kicker {
+  color: #0b6b55;
+  font-size: 18rpx;
+  font-weight: 850;
+  letter-spacing: 2rpx;
+  margin-bottom: 8rpx;
+}
+
+.audit-kicker.light {
+  color: #9fd1c2;
+}
+
+.curriculum-card {
+  background: #17352c;
+  border-radius: 22rpx;
+  box-shadow: 0 14rpx 32rpx rgba(8, 45, 35, 0.18);
+  padding: 30rpx;
+}
+
+.curriculum-head {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.curriculum-title {
+  color: #ffffff;
+  font-size: 29rpx;
+  font-weight: 800;
+}
+
+.verified-seal {
+  border: 2rpx solid #82b4a5;
+  color: #b9d8cf;
+  font-size: 18rpx;
+  font-weight: 850;
+  line-height: 1.2;
+  padding: 10rpx 13rpx;
+  text-align: center;
+  transform: rotate(3deg);
+}
+
+.structure-grid {
+  display: grid;
+  gap: 1rpx;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 26rpx;
+}
+
+.structure-item {
+  border-top: 1rpx solid #426258;
+  display: flex;
+  gap: 13rpx;
+  padding: 17rpx 4rpx;
+}
+
+.structure-credits {
+  color: #ffffff;
+  font-size: 26rpx;
+  font-weight: 850;
+  min-width: 48rpx;
+}
+
+.structure-name {
+  color: #b9d0c8;
+  font-size: 21rpx;
+  line-height: 1.35;
+}
+
+.curriculum-note {
+  color: #a9c1b8;
+  font-size: 21rpx;
+  line-height: 1.55;
+  margin-top: 18rpx;
+}
+
+.source-action {
+  border-top: 1rpx solid #426258;
+  color: #dcebe5;
+  font-size: 22rpx;
+  font-weight: 750;
+  margin-top: 20rpx;
+  padding-top: 19rpx;
+}
+
+.section-heading {
+  color: #53665d;
+  font-size: 23rpx;
+  font-weight: 750;
+  margin-bottom: 14rpx;
+}
+
+.partial-label {
+  color: #9a7340;
+  font-size: 17rpx;
+  font-weight: 750;
+  letter-spacing: 1rpx;
+  margin-top: 8rpx;
+}

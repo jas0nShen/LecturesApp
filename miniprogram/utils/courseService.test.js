@@ -21,6 +21,12 @@ beforeEach(() => {
   storage.clear();
 });
 
+test('legacy curriculum profiles migrate to the verified intake label', () => {
+  storage.set('userProfile', { programmeId: 1, curriculumYear: '2026' });
+  assert.deepEqual(service.getProfile(), { programmeId: 1, curriculumYear: '2025-26' });
+  assert.equal(storage.get('userProfile').curriculumYear, '2025-26');
+});
+
 test('local course filters match programme, major, type, prerequisite and keyword', () => {
   const courses = service.listCourses({
     programmeId: 1,
@@ -33,7 +39,7 @@ test('local course filters match programme, major, type, prerequisite and keywor
   assert.deepEqual(courses.map((course) => course.courseCode), ['COMP1117', 'COMP2121']);
   assert.deepEqual(service.listCourses({ programmeId: 999 }), []);
   assert.deepEqual(service.listCourses({ majorId: 999 }), []);
-  assert.deepEqual(service.listCurriculumYears(1, 1), ['2026']);
+  assert.deepEqual(service.listCurriculumYears(1, 1), ['2025-26']);
   assert.deepEqual(service.listCurriculumYears(999, 999), []);
 });
 
@@ -51,16 +57,18 @@ test('completed courses are stored and used by the local graduation audit', () =
   const audit = service.buildAudit({
     programmeId: 1,
     majorId: 1,
-    curriculumYear: '2026'
+    curriculumYear: '2025-26'
   });
-  const core = audit.sections.find((section) => section.type === 'core');
+  const foundation = audit.sections.find((section) => section.type === 'foundation');
 
   assert.deepEqual(service.getCompletedCourseIds(), [1, 2]);
   assert.equal(audit.completedCredits, 12);
   assert.equal(audit.totalCreditRequired, 240);
   assert.equal(audit.totalProgress, 5);
-  assert.equal(core.completedCredits, 12);
-  assert.deepEqual(core.missingCourses.map((course) => course.id), [3, 4]);
+  assert.equal(foundation.completedCredits, 12);
+  assert.equal(foundation.trackingScope, 'partial');
+  assert.deepEqual(foundation.missingCourses, []);
+  assert.equal(audit.curriculumStructure.reduce((sum, section) => sum + section.credits, 0), 240);
 });
 
 test('remote course lookup falls back to local data when the API is unavailable', async () => {
@@ -78,12 +86,13 @@ test('remote graduation audit falls back to the local rule engine', async () => 
   const result = await service.buildAuditRemote({
     programmeId: 1,
     majorId: 1,
-    curriculumYear: '2026'
+    curriculumYear: '2025-26'
   }, [1]);
 
   assert.equal(result.source, 'mock');
   assert.equal(result.data.completedCredits, 6);
   assert.equal(result.data.totalProgress, 3);
+  assert.equal(result.data.curriculumYear, '2025-26');
 });
 
 test('official HKU offerings can be filtered offline by term and keyword', async () => {

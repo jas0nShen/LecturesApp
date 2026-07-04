@@ -9,7 +9,7 @@ Page({
     selectedProgramme: {},
     selectedMajor: {},
     curriculumYears: [],
-    curriculumYear: '2026',
+    curriculumYear: '2025-26',
     yearOptions: ['1', '2', '3', '4'],
     currentYear: '1'
   },

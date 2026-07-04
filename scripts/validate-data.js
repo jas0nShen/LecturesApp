@@ -53,10 +53,24 @@ seed.requirements.forEach((requirement) => {
     .filter((course) => requirement.courseIds.includes(course.id))
     .reduce((total, course) => total + course.credits, 0);
 
-  assert(
-    availableCredits >= requirement.requiredCredits,
-    `Requirement ${requirement.id} requires ${requirement.requiredCredits} credits but only ${availableCredits} are available`
+  if (requirement.trackingScope !== 'partial') {
+    assert(
+      availableCredits >= requirement.requiredCredits,
+      `Requirement ${requirement.id} requires ${requirement.requiredCredits} credits but only ${availableCredits} are available`
+    );
+  }
+});
+
+seed.programmes.forEach((programme) => {
+  const structureCredits = (programme.curriculumStructure || [])
+    .reduce((total, section) => total + section.credits, 0);
+  assert.equal(
+    structureCredits,
+    programme.totalCreditRequired,
+    `Programme ${programme.id} curriculum structure does not total ${programme.totalCreditRequired} credits`
   );
+  assert.match(programme.curriculumSourceUrl, /^https:\/\//);
+  assert.match(programme.curriculumVerifiedAt, /^\d{4}-\d{2}-\d{2}$/);
 });
 
 assert.equal(hkuCdsOfferings.universityCode, 'HKU');

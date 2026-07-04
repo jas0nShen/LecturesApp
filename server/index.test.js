@@ -107,18 +107,20 @@ test('graduation audit calculates progress and missing courses', async () => {
     body: JSON.stringify({
       programmeId: 1,
       majorId: 1,
-      curriculumYear: '2026',
+      curriculumYear: '2025-26',
       completedCourseIds: [1, 2]
     })
   });
   const audit = await response.json();
-  const core = audit.sections.find((section) => section.type === 'core');
+  const foundation = audit.sections.find((section) => section.type === 'foundation');
 
   assert.equal(response.status, 200);
   assert.equal(audit.completedCredits, 12);
   assert.equal(audit.totalCreditsRequired, 240);
-  assert.equal(core.completedCredits, 12);
-  assert.deepEqual(core.missingCourses.map((course) => course.id), [3, 4]);
+  assert.equal(foundation.completedCredits, 12);
+  assert.equal(foundation.trackingScope, 'partial');
+  assert.deepEqual(foundation.missingCourses, []);
+  assert.equal(audit.curriculumStructure.reduce((sum, section) => sum + section.credits, 0), 240);
 });
 
 test('invalid JSON is rejected', async () => {

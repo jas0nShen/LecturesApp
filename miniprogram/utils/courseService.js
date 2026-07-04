@@ -23,7 +23,13 @@ const USER_DATA_KEYS = [
 ];
 
 function getProfile() {
-  return wx.getStorageSync('userProfile') || null;
+  const profile = wx.getStorageSync('userProfile') || null;
+  if (profile && profile.curriculumYear === '2026' && Number(profile.programmeId) === 1) {
+    const migrated = { ...profile, curriculumYear: '2025-26' };
+    wx.setStorageSync('userProfile', migrated);
+    return migrated;
+  }
+  return profile;
 }
 
 function saveProfile(profile) {
@@ -379,16 +385,23 @@ function getFavoriteCourses() {
 }
 
 function buildAudit(profile, completedCourseIds) {
-  const effectiveProfile = profile || getProfile() || { programmeId: 1, majorId: 1, curriculumYear: '2026' };
+  const effectiveProfile = profile || getProfile() || { programmeId: 1, majorId: 1, curriculumYear: '2025-26' };
   const completedIds = completedCourseIds || getCompletedCourseIds();
   const completedCourses = data.courses.filter((course) => completedIds.includes(course.id));
   const completedCredits = completedCourses.reduce((sum, course) => sum + course.credits, 0);
   const programme = data.programmes.find((item) => item.id === Number(effectiveProfile.programmeId)) || data.programmes[0];
-  const requirements = data.requirements.filter((item) => (
+  let requirements = data.requirements.filter((item) => (
     item.programmeId === Number(effectiveProfile.programmeId)
     && item.majorId === Number(effectiveProfile.majorId)
     && item.curriculumYear === effectiveProfile.curriculumYear
   ));
+  if (!requirements.length) {
+    requirements = data.requirements.filter((item) => (
+      item.programmeId === Number(effectiveProfile.programmeId)
+      && item.majorId === Number(effectiveProfile.majorId)
+      && item.curriculumYear === programme.curriculumYear
+    ));
+  }
 
   const sections = requirements.map((requirement) => {
     const requirementCourses = data.courses.filter((course) => requirement.courseIds.includes(course.id));
@@ -399,6 +412,7 @@ function buildAudit(profile, completedCourseIds) {
     return {
       type: requirement.type,
       name: requirement.name,
+      trackingScope: requirement.trackingScope || 'complete',
       requiredCredits: requirement.requiredCredits,
       completedCredits: Math.min(doneCredits, requirement.requiredCredits),
       progress: requirement.requiredCredits ? Math.min(100, Math.round((doneCredits / requirement.requiredCredits) * 100)) : 0,
@@ -410,7 +424,9 @@ function buildAudit(profile, completedCourseIds) {
   const recommendations = sections
     .flatMap((section) => section.missingCourses.map((course) => ({
       course,
-      reason: section.type === 'core' ? '未完成必修课' : `还缺 ${section.name} 学分`
+      reason: ['foundation', 'cs_core', 'capstone'].includes(section.type)
+        ? '尚未记录这门指定课程'
+        : `${section.name}仍有未记录课程`
     })))
     .sort((a, b) => {
       const priority = { core: 1, major_elective: 2, capstone: 3, common_core: 4 };
@@ -422,6 +438,11 @@ function buildAudit(profile, completedCourseIds) {
     totalCreditRequired: programme.totalCreditRequired,
     completedCredits,
     totalProgress: Math.min(100, Math.round((completedCredits / programme.totalCreditRequired) * 100)),
+    curriculumYear: programme.curriculumYear,
+    curriculumStructure: programme.curriculumStructure || [],
+    curriculumSourceUrl: programme.curriculumSourceUrl || programme.officialUrl,
+    curriculumVerifiedAt: programme.curriculumVerifiedAt || '',
+    trackingNotice: '官方 240 学分结构已核准；逐门课程完成度目前仅覆盖部分内置课程。',
     sections,
     recommendations
   };
@@ -545,7 +566,7 @@ async function getFavoriteCoursesRemote() {
 }
 
 function buildAuditRemote(profile, completedCourseIds) {
-  const effectiveProfile = profile || getProfile() || { programmeId: 1, majorId: 1, curriculumYear: '2026' };
+  const effectiveProfile = profile || getProfile() || { programmeId: 1, majorId: 1, curriculumYear: '2025-26' };
   const completedIds = completedCourseIds || getCompletedCourseIds();
 
   return withFallback(
@@ -569,6 +590,11 @@ function buildAuditRemote(profile, completedCourseIds) {
         totalCreditRequired: result.totalCreditsRequired,
         completedCredits: result.completedCredits,
         totalProgress: result.totalCreditsRequired ? Math.min(100, Math.round((result.completedCredits / result.totalCreditsRequired) * 100)) : 0,
+        curriculumYear: result.curriculumYear,
+        curriculumStructure: result.curriculumStructure || [],
+        curriculumSourceUrl: result.curriculumSourceUrl || '',
+        curriculumVerifiedAt: result.curriculumVerifiedAt || '',
+        trackingNotice: result.trackingNotice || '',
         sections,
         recommendations: (result.recommendations || []).map((item) => ({
           course: {

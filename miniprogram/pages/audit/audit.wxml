@@ -1,12 +1,31 @@
 <view class="page">
   <view class="section panel">
-    <view class="panel-title">毕业进度</view>
+    <view class="audit-kicker">RECORDED CREDITS</view>
+    <view class="panel-title">已录入学分</view>
     <view class="big-number">{{audit.totalProgress}}%</view>
     <view class="progress-wrap">
       <view class="progress-bar" style="width: {{audit.totalProgress}}%;"></view>
     </view>
-    <view class="subtitle">已记录 {{audit.completedCredits}} / {{audit.totalCreditRequired}} credits</view>
+    <view class="subtitle">已记录 {{audit.completedCredits}} / {{audit.totalCreditRequired}} credits；此比例不是官方毕业审核结果。</view>
     <view class="source-line">数据源：{{dataSource === 'api' ? '本地 API' : '本地缓存'}}</view>
+  </view>
+
+  <view class="section curriculum-card">
+    <view class="curriculum-head">
+      <view>
+        <view class="audit-kicker light">VERIFIED STRUCTURE</view>
+        <view class="curriculum-title">HKU BEng(CompSc) · {{audit.curriculumYear}}</view>
+      </view>
+      <view class="verified-seal">240<br/>CU</view>
+    </view>
+    <view class="structure-grid">
+      <view wx:for="{{audit.curriculumStructure}}" wx:key="type" class="structure-item">
+        <view class="structure-credits">{{item.credits}}</view>
+        <view class="structure-name">{{item.name}}</view>
+      </view>
+    </view>
+    <view class="curriculum-note">{{audit.trackingNotice}}</view>
+    <view class="source-action" bindtap="copyCurriculumSource">复制 HKU 官方培养方案链接</view>
   </view>
 
   <view class="section panel">
@@ -21,11 +40,13 @@
   </view>
 
   <view class="section">
+    <view class="section-heading">当前可逐门追踪的要求</view>
     <view wx:for="{{audit.sections}}" wx:key="type" class="panel requirement">
       <view class="row">
         <view class="panel-title">{{item.name}}</view>
         <view class="muted">{{item.completedCredits}} / {{item.requiredCredits}}</view>
       </view>
+      <view wx:if="{{item.trackingScope === 'partial'}}" class="partial-label">PARTIAL COVERAGE · 尚未收录该类别全部课程</view>
       <view class="progress-wrap small">
         <view class="progress-bar" style="width: {{item.progress}}%;"></view>
       </view>

@@ -26,9 +26,48 @@ const data = {
       "nameEn": "Bachelor of Engineering",
       "nameZh": "工学学士",
       "degreeLevel": "undergraduate",
-      "curriculumYear": "2026",
+      "curriculumYear": "2025-26",
       "totalCreditRequired": 240,
-      "officialUrl": "https://cs.hku.hk/programmes/beng-compsc"
+      "officialUrl": "https://cs.hku.hk/programmes/beng-compsc/academic-advising",
+      "curriculumSourceUrl": "https://i.cs.hku.hk/~atctam/Advisory/StudyPlans/CS/2025-26/StudyPlan_BEng%28CS%29-2025.pdf",
+      "curriculumVerifiedAt": "2026-07-04",
+      "curriculumStructure": [
+        {
+          "type": "foundation",
+          "name": "Foundation",
+          "credits": 36
+        },
+        {
+          "type": "ug5",
+          "name": "UG5 Requirements",
+          "credits": 54
+        },
+        {
+          "type": "cs_core",
+          "name": "CS Core",
+          "credits": 54
+        },
+        {
+          "type": "cs_elective",
+          "name": "CS Electives",
+          "credits": 36
+        },
+        {
+          "type": "free_elective",
+          "name": "Free Electives",
+          "credits": 42
+        },
+        {
+          "type": "experiential",
+          "name": "Experiential Learning",
+          "credits": 6
+        },
+        {
+          "type": "capstone",
+          "name": "Capstone Experience",
+          "credits": 12
+        }
+      ]
     }
   ],
   "majors": [
@@ -328,49 +367,57 @@ const data = {
       "id": 1,
       "programmeId": 1,
       "majorId": 1,
-      "curriculumYear": "2026",
-      "type": "core",
-      "name": "Core Courses",
-      "requiredCredits": 24,
+      "curriculumYear": "2025-26",
+      "type": "foundation",
+      "name": "Foundation（部分追踪）",
+      "requiredCredits": 36,
+      "trackingScope": "partial",
       "courseIds": [
         1,
-        2,
-        3,
-        4
+        2
       ]
     },
     {
       "id": 2,
       "programmeId": 1,
       "majorId": 1,
-      "curriculumYear": "2026",
-      "type": "major_elective",
-      "name": "Major Electives",
-      "requiredCredits": 6,
+      "curriculumYear": "2025-26",
+      "type": "ug5",
+      "name": "UG5 Requirements（部分追踪）",
+      "requiredCredits": 54,
+      "trackingScope": "partial",
       "courseIds": [
-        5
+        7
       ]
     },
     {
       "id": 3,
       "programmeId": 1,
       "majorId": 1,
-      "curriculumYear": "2026",
-      "type": "common_core",
-      "name": "Common Core",
-      "requiredCredits": 6,
+      "curriculumYear": "2025-26",
+      "type": "cs_core",
+      "name": "CS Core（部分追踪）",
+      "requiredCredits": 54,
+      "trackingScope": "partial",
       "courseIds": [
-        7
+        3,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14
       ]
     },
     {
       "id": 4,
       "programmeId": 1,
       "majorId": 1,
-      "curriculumYear": "2026",
+      "curriculumYear": "2025-26",
       "type": "capstone",
-      "name": "Capstone",
+      "name": "Capstone Experience",
       "requiredCredits": 12,
+      "trackingScope": "complete",
       "courseIds": [
         6
       ]
