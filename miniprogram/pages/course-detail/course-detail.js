@@ -12,6 +12,7 @@ Page({
   async onLoad(options) {
     const result = await service.getCourseRemote(options.id);
     const course = result.data;
+    if (course) service.recordRecentlyViewed(course.courseCode);
     this.setData({
       course,
       typeLabel: course ? service.TYPE_LABELS[course.courseType] : '',

@@ -8,15 +8,21 @@ Page({
       totalCreditRequired: 240,
       totalProgress: 0
     },
-    dataSource: 'loading'
+    dataSource: 'loading',
+    recentCourses: []
   },
 
   async onShow() {
     const profile = service.getProfile();
     const auditResult = await service.buildAuditRemote(profile);
+    const recentCourses = service.getRecentlyViewedOfferings().slice(0, 3).map((course) => ({
+      ...course,
+      termLabel: course.terms.join(' / ')
+    }));
     this.setData({
       profile,
       audit: auditResult.data,
+      recentCourses,
       dataSource: auditResult.source
     });
   },
@@ -39,6 +45,12 @@ Page({
 
   goStudyPlan() {
     wx.navigateTo({ url: '/pages/study-plan/study-plan' });
+  },
+
+  goRecentCourse(event) {
+    wx.navigateTo({
+      url: `/pages/offering-detail/offering-detail?code=${event.currentTarget.dataset.code}`
+    });
   },
 
   goProfile() {

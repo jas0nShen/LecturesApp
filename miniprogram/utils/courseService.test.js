@@ -193,3 +193,22 @@ test('user data can be exported and restored from a validated backup', () => {
   assert.equal(service.isCoursePlanned('COMP1117'), true);
   assert.throws(() => service.importUserData('{"version":1}'), /Invalid backup format/);
 });
+
+test('recently viewed courses are deduplicated, ordered and capped', () => {
+  ['COMP1117', 'COMP2113', 'COMP2121', 'COMP2396', 'COMP3278', 'COMP4801', 'COMP1117']
+    .forEach((code) => service.recordRecentlyViewed(code));
+
+  assert.deepEqual(
+    service.getRecentlyViewedOfferings().map((course) => course.courseCode),
+    ['COMP1117', 'COMP4801', 'COMP3278', 'COMP2396', 'COMP2121']
+  );
+  assert.deepEqual(service.exportUserData().data.recentlyViewedCourseCodes, [
+    'COMP1117', 'COMP4801', 'COMP3278', 'COMP2396', 'COMP2121'
+  ]);
+
+  service.recordRecentlyViewed('UNKNOWN1000');
+  assert.deepEqual(
+    service.getRecentlyViewedOfferings().map((course) => course.courseCode),
+    ['COMP1117', 'COMP4801', 'COMP3278', 'COMP2396', 'COMP2121']
+  );
+});

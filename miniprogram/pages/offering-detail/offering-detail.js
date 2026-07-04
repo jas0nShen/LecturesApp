@@ -26,6 +26,7 @@ Page({
     }
 
     const data = result.data;
+    service.recordRecentlyViewed(data.offering.courseCode);
     this.setData({
       loading: false,
       offering: data.offering,

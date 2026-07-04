@@ -53,6 +53,20 @@
     </view>
   </view>
 
+  <view wx:if="{{recentCourses.length}}" class="section recent-section">
+    <view class="recent-heading">
+      <view class="panel-title">最近查看</view>
+      <view class="recent-caption">继续上次的课程</view>
+    </view>
+    <view wx:for="{{recentCourses}}" wx:key="courseCode" class="recent-course" data-code="{{item.courseCode}}" bindtap="goRecentCourse">
+      <view>
+        <view class="recent-code">{{item.courseCode}}</view>
+        <view class="recent-title">{{item.title}}</view>
+      </view>
+      <view class="recent-term">Sem {{item.termLabel}} ›</view>
+    </view>
+  </view>
+
   <view class="section panel">
     <view class="progress-heading">
       <view class="panel-title">毕业进度预览</view>

@@ -17,7 +17,8 @@ const USER_DATA_KEYS = [
   'favoriteOfferingCodes',
   'completedCourseIds',
   'completedOfferingCodes',
-  'studyPlanItems'
+  'studyPlanItems',
+  'recentlyViewedCourseCodes'
 ];
 
 function getProfile() {
@@ -53,7 +54,8 @@ function importUserData(snapshot) {
     'favoriteOfferingCodes',
     'completedCourseIds',
     'completedOfferingCodes',
-    'studyPlanItems'
+    'studyPlanItems',
+    'recentlyViewedCourseCodes'
   ]);
   USER_DATA_KEYS.forEach((key) => {
     if (!Object.prototype.hasOwnProperty.call(parsed.data, key)) return;
@@ -163,6 +165,22 @@ function getPrerequisiteCourseStatus(prerequisiteText) {
 
 function getStudyPlanItems() {
   return wx.getStorageSync('studyPlanItems') || [];
+}
+
+function recordRecentlyViewed(courseCode) {
+  const code = String(courseCode).toUpperCase();
+  const existing = wx.getStorageSync('recentlyViewedCourseCodes') || [];
+  const isOfficialOffering = hkuOfferings.courses.some((course) => course.courseCode === code);
+  if (!isOfficialOffering) return existing;
+
+  const next = [code].concat(existing.filter((item) => item !== code)).slice(0, 5);
+  wx.setStorageSync('recentlyViewedCourseCodes', next);
+  return next;
+}
+
+function getRecentlyViewedOfferings() {
+  const codes = wx.getStorageSync('recentlyViewedCourseCodes') || [];
+  return codes.map((code) => hkuOfferings.courses.find((course) => course.courseCode === code)).filter(Boolean);
 }
 
 function getStudyPlanItem(courseCode) {
@@ -547,6 +565,7 @@ module.exports = {
   getFavorites,
   getProfile,
   getPrerequisiteCourseStatus,
+  getRecentlyViewedOfferings,
   getStudyPlanCourses,
   getStudyPlanItem,
   getStudyPlanItems,
@@ -564,6 +583,7 @@ module.exports = {
   listProgrammesRemote,
   listUniversitiesRemote,
   removeStudyPlanItem,
+  recordRecentlyViewed,
   saveStudyPlanItem,
   saveProfile,
   toggleCompleted,

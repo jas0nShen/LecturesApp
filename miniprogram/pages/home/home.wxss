@@ -111,6 +111,21 @@
   margin-bottom: 12rpx;
 }
 
+.recent-section {
+  background: #fbfcfa;
+  border: 1rpx solid #dbe5df;
+  border-radius: 20rpx;
+  box-shadow: 0 8rpx 22rpx rgba(15, 64, 51, 0.045);
+  padding: 28rpx;
+}
+.recent-heading { align-items: baseline; display: flex; justify-content: space-between; margin-bottom: 8rpx; }
+.recent-caption { color: #8a9891; font-size: 20rpx; }
+.recent-course { align-items: center; border-top: 1rpx solid #e6ece8; display: flex; justify-content: space-between; padding: 20rpx 0; }
+.recent-course:first-of-type { border-top: 0; }
+.recent-code { color: #0b6b55; font-size: 22rpx; font-weight: 850; }
+.recent-title { font-size: 24rpx; font-weight: 700; line-height: 1.35; margin-top: 5rpx; max-width: 390rpx; }
+.recent-term { color: #718079; font-size: 20rpx; margin-left: 16rpx; white-space: nowrap; }
+
 .progress-wrap {
   background: #e1e9e5;
   border-radius: 999rpx;
