@@ -52,8 +52,12 @@
         <view class="detail-copy">{{course.exclusions || 'None'}}</view>
       </view>
       <view class="detail-block">
+        <view class="fact-label">共修要求</view>
+        <view class="detail-copy">{{course.corequisites || 'None'}}</view>
+      </view>
+      <view class="detail-block">
         <view class="fact-label">课程简介</view>
-        <view class="detail-copy">{{course.description}}</view>
+        <view class="detail-copy">{{course.description || '官网暂未提供课程简介。'}}</view>
       </view>
     </view>
 

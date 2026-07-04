@@ -105,7 +105,8 @@ test('official offering detail falls back locally and enriches known courses', a
   assert.equal(known.data.offering.courseCode, 'COMP1117');
   assert.equal(known.data.course.credits, 6);
   assert.equal(catalogueOnly.data.offering.courseCode, 'FITE1010');
-  assert.equal(catalogueOnly.data.course, null);
+  assert.equal(catalogueOnly.data.course.credits, 6);
+  assert(catalogueOnly.data.course.description);
 });
 
 test('official offering favorites are stored by stable course code', () => {

@@ -68,6 +68,12 @@ test('official offering detail includes enriched course data when available', as
   assert.equal(result.course.credits, 6);
   assert.equal(result.academicYear, '2025-26');
 
+  const importedResponse = await fetch(`${baseUrl}/api/course-offerings/FITE1010`);
+  const imported = await importedResponse.json();
+  assert.equal(importedResponse.status, 200);
+  assert.equal(imported.course.credits, 6);
+  assert(imported.course.description);
+
   const missingResponse = await fetch(`${baseUrl}/api/course-offerings/COMP9999`);
   assert.equal(missingResponse.status, 404);
 });

@@ -72,6 +72,14 @@ hkuCdsOfferings.courses.forEach((course) => {
   assert(course.title, `${course.courseCode} is missing a title`);
   assert(course.terms.length > 0, `${course.courseCode} has no offering term`);
   assert.match(course.officialUrl, /^https:\/\/www\.cs\.hku\.hk\//);
+  assert(course.details, `${course.courseCode} has no imported detail record`);
+  assert(
+    Number.isFinite(course.details.credits) && course.details.credits >= 0,
+    `${course.courseCode} has invalid official credits`
+  );
+  assert(course.details.prerequisites, `${course.courseCode} has no prerequisite status`);
+  assert(course.details.corequisites, `${course.courseCode} has no corequisite status`);
+  assert(course.details.exclusions, `${course.courseCode} has no exclusion status`);
 });
 
 console.log(JSON.stringify({

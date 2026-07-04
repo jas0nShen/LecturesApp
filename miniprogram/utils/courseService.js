@@ -243,12 +243,28 @@ function getCourseOffering(courseCode) {
   const normalizedCode = String(courseCode || '').toUpperCase();
   const offering = hkuOfferings.courses.find((item) => item.courseCode === normalizedCode);
   if (!offering) return null;
+  const existing = data.courses.find((item) => item.courseCode === normalizedCode);
+  const details = offering.details || {};
+  const yearMatch = offering.categories.join(' ').match(/Year\s+(\d)/i);
   return {
     universityCode: hkuOfferings.universityCode,
     provider: hkuOfferings.provider,
     academicYear: hkuOfferings.academicYear,
     offering,
-    course: data.courses.find((item) => item.courseCode === normalizedCode) || null
+    course: {
+      ...(existing || {}),
+      courseCode: offering.courseCode,
+      titleEn: offering.title,
+      credits: details.credits !== null && details.credits !== undefined
+        ? details.credits
+        : existing && existing.credits,
+      prerequisites: details.prerequisites || (existing && existing.prerequisites) || 'None',
+      corequisites: details.corequisites || 'None',
+      exclusions: details.exclusions || (existing && existing.exclusions) || 'None',
+      description: details.description || (existing && existing.description) || '',
+      recommendedYear: (existing && existing.recommendedYear) || (yearMatch ? Number(yearMatch[1]) : null),
+      officialUrl: offering.officialUrl
+    }
   };
 }
 

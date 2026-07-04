@@ -82,6 +82,24 @@ function listCourseOfferings(query) {
   });
 }
 
+function buildOfferingCourse(offering) {
+  const existing = seed.courses.find((item) => item.courseCode === offering.courseCode);
+  const details = offering.details || {};
+  const yearMatch = offering.categories.join(' ').match(/Year\s+(\d)/i);
+  return {
+    ...(existing || {}),
+    courseCode: offering.courseCode,
+    titleEn: offering.title,
+    credits: details.credits ?? (existing && existing.credits) ?? null,
+    prerequisites: details.prerequisites || (existing && existing.prerequisites) || 'None',
+    corequisites: details.corequisites || 'None',
+    exclusions: details.exclusions || (existing && existing.exclusions) || 'None',
+    description: details.description || (existing && existing.description) || '',
+    recommendedYear: (existing && existing.recommendedYear) || (yearMatch ? Number(yearMatch[1]) : null),
+    officialUrl: offering.officialUrl
+  };
+}
+
 function buildAudit(payload) {
   const programmeId = Number(payload.programmeId || 1);
   const majorId = Number(payload.majorId || 1);
@@ -219,14 +237,13 @@ async function handleRequest(req, res) {
   if (req.method === 'GET' && offeringMatch) {
     const courseCode = offeringMatch[1].toUpperCase();
     const offering = hkuCdsOfferings.courses.find((item) => item.courseCode === courseCode);
-    const course = seed.courses.find((item) => item.courseCode === courseCode) || null;
     sendJson(res, offering ? 200 : 404, offering
       ? {
         universityCode: hkuCdsOfferings.universityCode,
         provider: hkuCdsOfferings.provider,
         academicYear: hkuCdsOfferings.academicYear,
         offering,
-        course
+        course: buildOfferingCourse(offering)
       }
       : { error: 'Course offering not found' });
     return;
@@ -267,6 +284,7 @@ if (require.main === module && process.argv.includes('--check')) {
 
 module.exports = {
   buildAudit,
+  buildOfferingCourse,
   createServer,
   listCourseOfferings,
   listCourses
