@@ -2,15 +2,26 @@ const service = require('../../utils/courseService');
 
 Page({
   data: {
-    profile: null
+    profile: null,
+    noteCount: 0,
+    noteSummary: '集中整理选课理由和注意事项'
   },
 
   onShow() {
-    this.setData({ profile: service.getProfile() });
+    const noteCount = service.getCourseNotes().length;
+    this.setData({
+      profile: service.getProfile(),
+      noteCount,
+      noteSummary: noteCount ? `已记录 ${noteCount} 门课程` : '集中整理选课理由和注意事项'
+    });
   },
 
   goOnboarding() {
     wx.navigateTo({ url: '/pages/onboarding/onboarding' });
+  },
+
+  goCourseNotes() {
+    wx.navigateTo({ url: '/pages/course-notes/course-notes' });
   },
 
   copyBackup() {

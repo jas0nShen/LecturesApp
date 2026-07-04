@@ -218,11 +218,15 @@ test('recently viewed courses are deduplicated, ordered and capped', () => {
 test('course notes can be saved, cleared and included in backups', () => {
   assert.equal(service.getCourseNote('COMP1117'), '');
   assert.equal(service.saveCourseNote('comp1117', '  Ask about tutorial times.  '), 'Ask about tutorial times.');
+  service.saveCourseNote('COMP2113', 'Review prerequisites.');
   assert.equal(service.getCourseNote('COMP1117'), 'Ask about tutorial times.');
+  assert.deepEqual(service.getCourseNotes().map((item) => item.courseCode), ['COMP1117', 'COMP2113']);
   assert.deepEqual(service.exportUserData().data.courseNotes, {
-    COMP1117: 'Ask about tutorial times.'
+    COMP1117: 'Ask about tutorial times.',
+    COMP2113: 'Review prerequisites.'
   });
 
   assert.equal(service.saveCourseNote('COMP1117', '   '), '');
   assert.equal(service.getCourseNote('COMP1117'), '');
+  assert.deepEqual(service.getCourseNotes().map((item) => item.courseCode), ['COMP2113']);
 });

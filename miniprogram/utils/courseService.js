@@ -192,6 +192,21 @@ function getCourseNote(courseCode) {
   return notes[String(courseCode).toUpperCase()] || '';
 }
 
+function getCourseNotes() {
+  const notes = wx.getStorageSync('courseNotes') || {};
+  return Object.keys(notes).map((courseCode) => {
+    const offering = hkuOfferings.courses.find((course) => course.courseCode === courseCode);
+    if (!offering || !notes[courseCode]) return null;
+    return {
+      courseCode,
+      title: offering.title,
+      terms: offering.terms,
+      termLabel: offering.terms.join(' / '),
+      note: notes[courseCode]
+    };
+  }).filter(Boolean).sort((left, right) => left.courseCode.localeCompare(right.courseCode));
+}
+
 function saveCourseNote(courseCode, note) {
   const code = String(courseCode).toUpperCase();
   const notes = wx.getStorageSync('courseNotes') || {};
@@ -579,6 +594,7 @@ module.exports = {
   analyzeStudyPlan,
   getCourse,
   getCourseNote,
+  getCourseNotes,
   getCourseRemote,
   getCourseOffering,
   getCourseOfferingRemote,

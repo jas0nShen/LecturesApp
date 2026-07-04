@@ -50,3 +50,37 @@
   text-align: center;
 }
 .vault-button.primary { background: #e2eee9; border-color: #e2eee9; color: #0b5d4b; }
+
+.notes-entry {
+  align-items: center;
+  background: #fbfcfa;
+  border: 1rpx solid #dce6e0;
+  border-radius: 18rpx;
+  display: flex;
+  padding: 26rpx;
+}
+
+.notes-mark {
+  border: 2rpx solid #0b6b55;
+  color: #0b6b55;
+  font-size: 17rpx;
+  font-weight: 850;
+  letter-spacing: 2rpx;
+  padding: 14rpx 9rpx;
+  transform: rotate(-3deg);
+}
+
+.notes-main {
+  flex: 1;
+  margin-left: 22rpx;
+}
+
+.notes-main .subtitle {
+  font-size: 22rpx;
+  margin-top: 5rpx;
+}
+
+.notes-arrow {
+  color: #789087;
+  font-size: 42rpx;
+}

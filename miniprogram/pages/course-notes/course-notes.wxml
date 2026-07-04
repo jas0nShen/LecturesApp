@@ -1,0 +1,32 @@
+<view class="page">
+  <view class="section notes-head">
+    <view class="notes-kicker">PERSONAL COURSE FILE</view>
+    <view class="title">我的课程笔记</view>
+    <view class="subtitle">这里集中保存你在课程详情中写下的选课理由和注意事项。</view>
+    <view wx:if="{{notes.length}}" class="notes-count">{{notes.length}} COURSE NOTES</view>
+  </view>
+
+  <view wx:if="{{!notes.length}}" class="section empty-card">
+    <view class="empty-mark">✎</view>
+    <view class="empty-title">还没有课程笔记</view>
+    <view class="empty-copy">打开任意课程详情，就可以记录咨询结果、选课理由或其他提醒。</view>
+    <view class="button empty-action" bindtap="goCourses">去查看课程</view>
+  </view>
+
+  <view wx:else class="notes-list">
+    <view wx:for="{{notes}}" wx:key="courseCode" class="section note-record">
+      <view class="record-index">
+        <view class="record-code">{{item.courseCode}}</view>
+        <view class="record-term">SEM {{item.termLabel}}</view>
+      </view>
+      <view class="record-body">
+        <view class="record-title">{{item.title}}</view>
+        <view class="record-note">{{item.note}}</view>
+        <view class="record-actions">
+          <view class="record-open" data-code="{{item.courseCode}}" bindtap="goCourse">查看课程</view>
+          <view class="record-delete" data-code="{{item.courseCode}}" bindtap="removeNote">删除</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

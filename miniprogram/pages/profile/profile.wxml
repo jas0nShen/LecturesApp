@@ -36,6 +36,15 @@
     <view class="button" bindtap="goOnboarding">{{profile ? '修改资料' : '开始设置'}}</view>
   </view>
 
+  <view class="section notes-entry" bindtap="goCourseNotes">
+    <view class="notes-mark">NOTES</view>
+    <view class="notes-main">
+      <view class="panel-title">我的课程笔记</view>
+      <view class="subtitle">{{noteSummary}}</view>
+    </view>
+    <view class="notes-arrow">›</view>
+  </view>
+
   <view class="section vault">
     <view class="vault-mark">LOCAL VAULT</view>
     <view class="panel-title">数据保险箱</view>

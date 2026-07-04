@@ -7,6 +7,7 @@
     "pages/offering-detail/offering-detail",
     "pages/plan-course/plan-course",
     "pages/study-plan/study-plan",
+    "pages/course-notes/course-notes",
     "pages/audit/audit",
     "pages/favorites/favorites",
     "pages/profile/profile"
