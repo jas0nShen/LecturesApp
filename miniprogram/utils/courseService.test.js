@@ -96,3 +96,14 @@ test('official HKU offerings can be filtered offline by term and keyword', async
   assert(result.data.courses.every((course) => course.terms.includes('2')));
   assert(result.data.courses.some((course) => course.courseCode === 'COMP3314'));
 });
+
+test('official offering detail falls back locally and enriches known courses', async () => {
+  const known = await service.getCourseOfferingRemote('comp1117');
+  const catalogueOnly = await service.getCourseOfferingRemote('FITE1010');
+
+  assert.equal(known.source, 'mock');
+  assert.equal(known.data.offering.courseCode, 'COMP1117');
+  assert.equal(known.data.course.credits, 6);
+  assert.equal(catalogueOnly.data.offering.courseCode, 'FITE1010');
+  assert.equal(catalogueOnly.data.course, null);
+});

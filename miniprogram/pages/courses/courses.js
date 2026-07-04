@@ -112,12 +112,9 @@ Page({
     wx.navigateTo({ url: `/pages/course-detail/course-detail?id=${event.currentTarget.dataset.id}` });
   },
 
-  copyOfferingUrl(event) {
-    wx.setClipboardData({
-      data: event.currentTarget.dataset.url,
-      success() {
-        wx.showToast({ title: '官方链接已复制' });
-      }
+  goOfferingDetail(event) {
+    wx.navigateTo({
+      url: `/pages/offering-detail/offering-detail?code=${event.currentTarget.dataset.code}`
     });
   }
 });

@@ -216,6 +216,26 @@ function listCourseOfferingsRemote(filters = {}) {
   );
 }
 
+function getCourseOffering(courseCode) {
+  const normalizedCode = String(courseCode || '').toUpperCase();
+  const offering = hkuOfferings.courses.find((item) => item.courseCode === normalizedCode);
+  if (!offering) return null;
+  return {
+    universityCode: hkuOfferings.universityCode,
+    provider: hkuOfferings.provider,
+    academicYear: hkuOfferings.academicYear,
+    offering,
+    course: data.courses.find((item) => item.courseCode === normalizedCode) || null
+  };
+}
+
+function getCourseOfferingRemote(courseCode) {
+  return withFallback(
+    () => api.request(`/api/course-offerings/${encodeURIComponent(String(courseCode).toUpperCase())}`),
+    () => getCourseOffering(courseCode)
+  );
+}
+
 function getCourseRemote(courseId) {
   return withFallback(
     () => api.request(`/api/courses/${courseId}`),
@@ -279,6 +299,8 @@ module.exports = {
   getCompletedCourseIds,
   getCourse,
   getCourseRemote,
+  getCourseOffering,
+  getCourseOfferingRemote,
   getFavoriteCourses,
   getFavoriteCoursesRemote,
   getFavorites,

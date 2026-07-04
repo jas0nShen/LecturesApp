@@ -59,6 +59,19 @@ test('an unavailable offering year returns an empty catalogue', async () => {
   assert.deepEqual(result.courses, []);
 });
 
+test('official offering detail includes enriched course data when available', async () => {
+  const response = await fetch(`${baseUrl}/api/course-offerings/COMP1117`);
+  const result = await response.json();
+
+  assert.equal(response.status, 200);
+  assert.equal(result.offering.courseCode, 'COMP1117');
+  assert.equal(result.course.credits, 6);
+  assert.equal(result.academicYear, '2025-26');
+
+  const missingResponse = await fetch(`${baseUrl}/api/course-offerings/COMP9999`);
+  assert.equal(missingResponse.status, 404);
+});
+
 test('course detail returns a course or 404', async () => {
   const foundResponse = await fetch(`${baseUrl}/api/courses/1`);
   assert.equal(foundResponse.status, 200);

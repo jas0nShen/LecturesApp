@@ -52,12 +52,12 @@
       <view class="stamp-mark">HKU OFFICIAL</view>
       <view>
         <view class="stamp-title">{{offeringMeta.provider}}</view>
-        <view class="stamp-copy">{{offerings.length}} 门匹配课程 · 点击课程复制官方链接</view>
+        <view class="stamp-copy">{{offerings.length}} 门匹配课程 · 点击查看开课详情</view>
       </view>
     </view>
 
     <view class="section">
-      <view wx:for="{{offerings}}" wx:key="courseCode" class="course-card offering-card" data-url="{{item.officialUrl}}" bindtap="copyOfferingUrl">
+      <view wx:for="{{offerings}}" wx:key="courseCode" class="course-card offering-card" data-code="{{item.courseCode}}" bindtap="goOfferingDetail">
         <view class="row">
           <view class="code">{{item.courseCode}}</view>
           <view class="term-badge">Sem {{item.termLabel}}</view>

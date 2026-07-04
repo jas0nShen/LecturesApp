@@ -1,0 +1,70 @@
+<view class="page">
+  <view wx:if="{{loading}}" class="state">正在读取开课资料…</view>
+
+  <view wx:elif="{{notFound}}" class="state">
+    <view class="state-title">没有找到这门课</view>
+    <view class="state-copy">返回课程页重新选择。</view>
+  </view>
+
+  <block wx:else>
+    <view class="record-head">
+      <view class="record-kicker">HKU · {{academicYear}}</view>
+      <view class="record-code">{{offering.courseCode}}</view>
+      <view class="record-title">{{offering.title}}</view>
+      <view class="record-source">{{provider}}</view>
+    </view>
+
+    <view class="section proof-card">
+      <view class="proof-seal">OFFERED</view>
+      <view class="proof-main">
+        <view class="proof-label">开课学期</view>
+        <view class="proof-value">Semester {{termLabel}}</view>
+        <view class="proof-meta">{{offering.sections.length}} 个班次 · {{categoryLabel}}</view>
+      </view>
+    </view>
+
+    <view class="section panel">
+      <view class="panel-title">班次</view>
+      <view wx:for="{{offering.sections}}" wx:key="sectionCode" class="section-row">
+        <view class="section-code">{{item.sectionCode}}</view>
+        <view class="section-term">Semester {{item.term}}</view>
+      </view>
+    </view>
+
+    <view wx:if="{{course}}" class="section panel">
+      <view class="panel-title">课程资料</view>
+      <view class="fact-grid">
+        <view class="fact">
+          <view class="fact-label">学分</view>
+          <view class="fact-value">{{course.credits}}</view>
+        </view>
+        <view class="fact">
+          <view class="fact-label">建议年级</view>
+          <view class="fact-value">Year {{course.recommendedYear}}</view>
+        </view>
+      </view>
+      <view class="detail-block">
+        <view class="fact-label">先修要求</view>
+        <view class="detail-copy">{{course.prerequisites || 'None'}}</view>
+      </view>
+      <view class="detail-block">
+        <view class="fact-label">互斥课程</view>
+        <view class="detail-copy">{{course.exclusions || 'None'}}</view>
+      </view>
+      <view class="detail-block">
+        <view class="fact-label">课程简介</view>
+        <view class="detail-copy">{{course.description}}</view>
+      </view>
+    </view>
+
+    <view wx:else class="section panel quiet-panel">
+      <view class="panel-title">课程资料待补充</view>
+      <view class="detail-copy">目前已确认开课学期和官方来源；学分与先修要求仍以官网为准。</view>
+    </view>
+
+    <view class="section">
+      <view class="button" bindtap="copyOfficialUrl">复制官方课程链接</view>
+      <view class="source-note">数据源：{{dataSource === 'api' ? '本地 API' : '本地缓存'}}</view>
+    </view>
+  </block>
+</view>

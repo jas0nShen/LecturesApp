@@ -32,6 +32,7 @@ npm run dev:api
 - `GET /api/courses?programme_id=1&major_id=1&keyword=comp`
 - `GET /api/courses/:id`
 - `GET /api/course-offerings?academic_year=2025-26&term=2&keyword=machine`
+- `GET /api/course-offerings/COMP1117`
 - `POST /api/graduation-audit`
 
 ## 小程序运行

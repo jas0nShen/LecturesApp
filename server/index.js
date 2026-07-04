@@ -215,6 +215,23 @@ async function handleRequest(req, res) {
     return;
   }
 
+  const offeringMatch = url.pathname.match(/^\/api\/course-offerings\/([A-Z]{4}\d{4})$/i);
+  if (req.method === 'GET' && offeringMatch) {
+    const courseCode = offeringMatch[1].toUpperCase();
+    const offering = hkuCdsOfferings.courses.find((item) => item.courseCode === courseCode);
+    const course = seed.courses.find((item) => item.courseCode === courseCode) || null;
+    sendJson(res, offering ? 200 : 404, offering
+      ? {
+        universityCode: hkuCdsOfferings.universityCode,
+        provider: hkuCdsOfferings.provider,
+        academicYear: hkuCdsOfferings.academicYear,
+        offering,
+        course
+      }
+      : { error: 'Course offering not found' });
+    return;
+  }
+
   const courseMatch = url.pathname.match(/^\/api\/courses\/(\d+)$/);
   if (req.method === 'GET' && courseMatch) {
     const course = seed.courses.find((item) => item.id === Number(courseMatch[1]));
