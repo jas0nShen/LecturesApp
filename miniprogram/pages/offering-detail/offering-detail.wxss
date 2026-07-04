@@ -280,3 +280,79 @@
 .panel-title { color: #17352c; }
 .section-code { color: #0b6b55; }
 .fact { background: #f0f5f2; border-radius: 12rpx; }
+
+.note-card {
+  background: #f1f6f2;
+  border-left: 7rpx solid #0b6b55;
+  border-radius: 4rpx 18rpx 18rpx 4rpx;
+  box-shadow: 0 8rpx 24rpx rgba(15, 64, 51, 0.05);
+  padding: 27rpx 28rpx 25rpx;
+}
+
+.note-head,
+.note-foot {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.note-eyebrow {
+  color: #6d8b80;
+  font-size: 18rpx;
+  font-weight: 800;
+  letter-spacing: 2rpx;
+}
+
+.note-title {
+  margin-bottom: 0;
+  margin-top: 5rpx;
+}
+
+.note-status {
+  color: #9a7340;
+  font-size: 20rpx;
+}
+
+.note-status.saved {
+  color: #6d8b80;
+}
+
+.note-input {
+  background: transparent;
+  border-bottom: 1rpx solid #cbdad3;
+  box-sizing: border-box;
+  color: #243a32;
+  font-size: 26rpx;
+  height: 190rpx;
+  line-height: 1.65;
+  margin-top: 18rpx;
+  padding: 8rpx 0 18rpx;
+  width: 100%;
+}
+
+.note-placeholder {
+  color: #91a098;
+}
+
+.note-foot {
+  margin-top: 18rpx;
+}
+
+.note-count {
+  color: #829088;
+  font-size: 20rpx;
+}
+
+.note-save {
+  background: #0b6b55;
+  border-radius: 10rpx;
+  color: #ffffff;
+  font-size: 23rpx;
+  font-weight: 700;
+  padding: 13rpx 22rpx;
+}
+
+.note-save.is-saved {
+  background: #dfe9e4;
+  color: #61746b;
+}

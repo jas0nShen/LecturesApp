@@ -18,7 +18,8 @@ const USER_DATA_KEYS = [
   'completedCourseIds',
   'completedOfferingCodes',
   'studyPlanItems',
-  'recentlyViewedCourseCodes'
+  'recentlyViewedCourseCodes',
+  'courseNotes'
 ];
 
 function getProfile() {
@@ -63,6 +64,9 @@ function importUserData(snapshot) {
     if (arrayKeys.has(key) && !Array.isArray(value)) throw new Error(`Invalid ${key}`);
     if (key === 'userProfile' && (typeof value !== 'object' || Array.isArray(value))) {
       throw new Error('Invalid userProfile');
+    }
+    if (key === 'courseNotes' && (!value || typeof value !== 'object' || Array.isArray(value))) {
+      throw new Error('Invalid courseNotes');
     }
   });
 
@@ -181,6 +185,25 @@ function recordRecentlyViewed(courseCode) {
 function getRecentlyViewedOfferings() {
   const codes = wx.getStorageSync('recentlyViewedCourseCodes') || [];
   return codes.map((code) => hkuOfferings.courses.find((course) => course.courseCode === code)).filter(Boolean);
+}
+
+function getCourseNote(courseCode) {
+  const notes = wx.getStorageSync('courseNotes') || {};
+  return notes[String(courseCode).toUpperCase()] || '';
+}
+
+function saveCourseNote(courseCode, note) {
+  const code = String(courseCode).toUpperCase();
+  const notes = wx.getStorageSync('courseNotes') || {};
+  const value = String(note || '').trim().slice(0, 500);
+
+  if (value) {
+    notes[code] = value;
+  } else {
+    delete notes[code];
+  }
+  wx.setStorageSync('courseNotes', notes);
+  return value;
 }
 
 function getStudyPlanItem(courseCode) {
@@ -555,6 +578,7 @@ module.exports = {
   getCompletedOfferingCodes,
   analyzeStudyPlan,
   getCourse,
+  getCourseNote,
   getCourseRemote,
   getCourseOffering,
   getCourseOfferingRemote,
@@ -585,6 +609,7 @@ module.exports = {
   removeStudyPlanItem,
   recordRecentlyViewed,
   saveStudyPlanItem,
+  saveCourseNote,
   saveProfile,
   toggleCompleted,
   toggleFavorite,

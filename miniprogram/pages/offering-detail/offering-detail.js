@@ -15,6 +15,9 @@ Page({
     planned: false,
     planLabel: '加入 Study Plan',
     prerequisiteCourses: [],
+    note: '',
+    noteLength: 0,
+    noteSaved: true,
     dataSource: 'loading'
   },
 
@@ -40,6 +43,8 @@ Page({
       planned: service.isCoursePlanned(data.offering.courseCode),
       planLabel: service.isCoursePlanned(data.offering.courseCode) ? '调整 Study Plan' : '加入 Study Plan',
       prerequisiteCourses: service.getPrerequisiteCourseStatus(data.course.prerequisites),
+      note: service.getCourseNote(data.offering.courseCode),
+      noteLength: service.getCourseNote(data.offering.courseCode).length,
       dataSource: result.source
     });
   },
@@ -83,5 +88,24 @@ Page({
     wx.navigateTo({
       url: `/pages/plan-course/plan-course?code=${this.data.offering.courseCode}`
     });
+  },
+
+  onNoteInput(event) {
+    const note = event.detail.value;
+    this.setData({
+      note,
+      noteLength: note.length,
+      noteSaved: false
+    });
+  },
+
+  saveNote() {
+    const note = service.saveCourseNote(this.data.offering.courseCode, this.data.note);
+    this.setData({
+      note,
+      noteLength: note.length,
+      noteSaved: true
+    });
+    wx.showToast({ title: note ? '笔记已保存' : '笔记已清空' });
   }
 });

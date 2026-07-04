@@ -184,6 +184,7 @@ test('user data can be exported and restored from a validated backup', () => {
   service.saveProfile({ universityCode: 'HKU', currentYear: 2 });
   service.toggleOfferingFavorite('COMP1117');
   service.saveStudyPlanItem('COMP1117', 2, '1');
+  service.saveCourseNote('COMP1117', 'Check the assessment details.');
 
   const backup = service.exportUserData();
   storage.clear();
@@ -191,6 +192,7 @@ test('user data can be exported and restored from a validated backup', () => {
   assert.deepEqual(service.getProfile(), { universityCode: 'HKU', currentYear: 2 });
   assert.deepEqual(service.getFavoriteOfferingCodes(), ['COMP1117']);
   assert.equal(service.isCoursePlanned('COMP1117'), true);
+  assert.equal(service.getCourseNote('COMP1117'), 'Check the assessment details.');
   assert.throws(() => service.importUserData('{"version":1}'), /Invalid backup format/);
 });
 
@@ -211,4 +213,16 @@ test('recently viewed courses are deduplicated, ordered and capped', () => {
     service.getRecentlyViewedOfferings().map((course) => course.courseCode),
     ['COMP1117', 'COMP4801', 'COMP3278', 'COMP2396', 'COMP2121']
   );
+});
+
+test('course notes can be saved, cleared and included in backups', () => {
+  assert.equal(service.getCourseNote('COMP1117'), '');
+  assert.equal(service.saveCourseNote('comp1117', '  Ask about tutorial times.  '), 'Ask about tutorial times.');
+  assert.equal(service.getCourseNote('COMP1117'), 'Ask about tutorial times.');
+  assert.deepEqual(service.exportUserData().data.courseNotes, {
+    COMP1117: 'Ask about tutorial times.'
+  });
+
+  assert.equal(service.saveCourseNote('COMP1117', '   '), '');
+  assert.equal(service.getCourseNote('COMP1117'), '');
 });

@@ -89,6 +89,28 @@
       <view class="detail-copy">目前已确认开课学期和官方来源；学分与先修要求仍以官网为准。</view>
     </view>
 
+    <view class="section note-card">
+      <view class="note-head">
+        <view>
+          <view class="note-eyebrow">MY COURSE NOTE</view>
+          <view class="panel-title note-title">我的课程笔记</view>
+        </view>
+        <view class="note-status {{noteSaved ? 'saved' : ''}}">{{noteSaved ? '已保存' : '待保存'}}</view>
+      </view>
+      <textarea
+        class="note-input"
+        value="{{note}}"
+        maxlength="500"
+        placeholder="记录选课理由、咨询结果或需要留意的事项…"
+        placeholder-class="note-placeholder"
+        bindinput="onNoteInput"
+      />
+      <view class="note-foot">
+        <view class="note-count">{{noteLength}} / 500</view>
+        <view class="note-save {{noteSaved ? 'is-saved' : ''}}" bindtap="saveNote">{{noteSaved ? '已保存' : '保存笔记'}}</view>
+      </view>
+    </view>
+
     <view class="section detail-actions">
       <view class="button secondary" bindtap="copyOfficialUrl">复制官方链接</view>
       <view class="button" bindtap="toggleFavorite">{{favorite ? '取消收藏' : '收藏课程'}}</view>
