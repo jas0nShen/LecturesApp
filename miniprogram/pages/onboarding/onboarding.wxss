@@ -23,3 +23,18 @@
 .button-space {
   margin-top: 34rpx;
 }
+
+.field { margin-bottom: 26rpx; }
+.label {
+  color: #52655c;
+  font-size: 22rpx;
+  font-weight: 700;
+  letter-spacing: 1rpx;
+}
+.select {
+  background: #f5f8f6;
+  border-color: #cedbd4;
+  border-radius: 14rpx;
+  min-height: 88rpx;
+  padding: 0 24rpx;
+}

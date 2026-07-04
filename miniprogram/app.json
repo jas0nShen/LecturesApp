@@ -11,14 +11,14 @@
   ],
   "window": {
     "navigationBarTitleText": "课程选择助手",
-    "navigationBarBackgroundColor": "#1f6f5b",
+    "navigationBarBackgroundColor": "#0b5d4b",
     "navigationBarTextStyle": "white",
-    "backgroundColor": "#f6f7f5"
+    "backgroundColor": "#eef3f0"
   },
   "tabBar": {
     "color": "#6c756f",
-    "selectedColor": "#1f6f5b",
-    "backgroundColor": "#ffffff",
+    "selectedColor": "#0b6b55",
+    "backgroundColor": "#fbfcfa",
     "borderStyle": "black",
     "list": [
       {

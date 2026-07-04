@@ -37,15 +37,16 @@
 }
 
 .course-card {
-  background: #ffffff;
-  border: 1rpx solid #e2e7e1;
-  border-radius: 12rpx;
+  background: #fbfcfa;
+  border: 1rpx solid #dbe5df;
+  border-radius: 18rpx;
+  box-shadow: 0 7rpx 20rpx rgba(15, 64, 51, 0.045);
   margin-bottom: 18rpx;
   padding: 24rpx;
 }
 
 .official-card {
-  border-left: 6rpx solid #1f6f5b;
+  border-left: 6rpx solid #0b6b55;
 }
 
 .code {
@@ -98,3 +99,17 @@
   font-weight: 750;
   margin-top: 24rpx;
 }
+
+.folder-switch {
+  background: #dfeae5;
+  border: 0;
+  border-radius: 18rpx;
+  gap: 6rpx;
+  padding: 7rpx;
+}
+.folder-tab { border-radius: 13rpx; }
+.folder-tab.active { background: #fbfcfa; box-shadow: 0 5rpx 16rpx rgba(15, 64, 51, 0.06); }
+.folder-tab.active::after { display: none; }
+.code { color: #0b6b55; }
+.course-title { color: #132a22; font-weight: 800; }
+.empty { background: #e8f1ed; border-color: #b9d2c7; border-radius: 18rpx; }

@@ -85,3 +85,16 @@
   font-size: 26rpx;
   padding: 16rpx 0;
 }
+
+/* Visual system overrides */
+.panel-title { color: #17352c; font-weight: 800; }
+.big-number { color: #0b6b55; font-size: 82rpx; font-weight: 850; letter-spacing: -3rpx; }
+.progress-wrap { background: #e0e9e5; height: 14rpx; }
+.progress-bar { background: #0b6b55; }
+.course-row { padding: 24rpx 0; }
+.course-code { color: #0b6b55; }
+.check { background: #f2f5f3; border-color: #d2ddd7; }
+.check.active { background: #0b6b55; border-color: #0b6b55; }
+.requirement { margin-bottom: 16rpx; overflow: hidden; }
+.missing { background: #f5f7f6; border-radius: 12rpx; padding: 18rpx; }
+.recommendation { background: #f7f9f8; border-radius: 12rpx; margin-top: 10rpx; padding: 18rpx; }

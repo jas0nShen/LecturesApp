@@ -241,3 +241,25 @@
 .completion-action {
   grid-column: 1 / -1;
 }
+
+.record-head {
+  background: #0b5d4b;
+  border-bottom: 0;
+  border-radius: 24rpx;
+  box-shadow: 0 16rpx 34rpx rgba(11, 72, 57, 0.16);
+  padding: 34rpx;
+}
+.record-kicker { color: #9fd1c2; }
+.record-code,
+.record-title { color: #ffffff; }
+.record-source { color: #c8ded6; }
+.proof-card { background: #e4f0eb; border-color: #b9d5c9; border-radius: 18rpx; }
+.proof-seal { border-color: #0b6b55; color: #0b6b55; }
+.proof-value { color: #123d31; }
+.completion-strip { border-radius: 16rpx; padding: 23rpx 25rpx; }
+.completion-strip.done { border-left-color: #0b6b55; }
+.completion-strip.done .completion-value,
+.completion-strip.done .completion-dot { color: #0b6b55; }
+.panel-title { color: #17352c; }
+.section-code { color: #0b6b55; }
+.fact { background: #f0f5f2; border-radius: 12rpx; }

@@ -1,10 +1,47 @@
 .hero {
-  padding-top: 24rpx;
+  background: #0b5d4b;
+  border-radius: 26rpx;
+  box-shadow: 0 18rpx 38rpx rgba(11, 72, 57, 0.18);
+  margin-bottom: 28rpx;
+  overflow: hidden;
+  padding: 42rpx 34rpx 40rpx;
+  position: relative;
+}
+
+.hero::after {
+  border: 2rpx solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  content: "";
+  height: 220rpx;
+  position: absolute;
+  right: -80rpx;
+  top: -92rpx;
+  width: 220rpx;
+}
+
+.hero-kicker {
+  color: #9fd1c2;
+  font-size: 20rpx;
+  font-weight: 750;
+  letter-spacing: 3rpx;
+  margin-bottom: 18rpx;
+}
+
+.hero .title {
+  color: #ffffff;
+  font-size: 46rpx;
+  max-width: 560rpx;
+}
+
+.hero .subtitle {
+  color: #c8ded6;
+  max-width: 570rpx;
 }
 
 .panel-title {
-  font-size: 32rpx;
-  font-weight: 700;
+  color: #17352c;
+  font-size: 30rpx;
+  font-weight: 800;
 }
 
 .button-space {
@@ -12,48 +49,79 @@
 }
 
 .edit-link {
-  color: #1f6f5b;
+  background: #e3efe9;
+  border-radius: 999rpx;
+  color: #0b6b55;
   font-size: 26rpx;
-  font-weight: 600;
+  font-weight: 700;
+  padding: 10rpx 18rpx;
 }
 
 .grid {
   display: grid;
-  gap: 18rpx;
+  gap: 16rpx;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .action-card {
-  background: #ffffff;
-  border: 1rpx solid #e2e7e1;
-  border-radius: 12rpx;
-  min-height: 168rpx;
-  padding: 24rpx;
+  background: #fbfcfa;
+  border: 1rpx solid #dbe5df;
+  border-radius: 20rpx;
+  box-shadow: 0 8rpx 22rpx rgba(15, 64, 51, 0.045);
+  min-height: 184rpx;
+  padding: 25rpx;
+  position: relative;
+}
+
+.action-card:active {
+  background: #f2f7f4;
+  transform: scale(0.985);
+}
+
+.action-index {
+  color: #93a89f;
+  font-size: 19rpx;
+  font-weight: 800;
+  letter-spacing: 2rpx;
+  margin-bottom: 22rpx;
 }
 
 .action-title {
-  font-size: 30rpx;
-  font-weight: 700;
+  color: #17352c;
+  font-size: 29rpx;
+  font-weight: 800;
 }
 
 .action-copy {
-  color: #64716b;
-  font-size: 24rpx;
+  color: #708078;
+  font-size: 22rpx;
   line-height: 1.4;
   margin-top: 12rpx;
 }
 
 .progress-wrap {
-  background: #e7ece8;
+  background: #e1e9e5;
   border-radius: 999rpx;
-  height: 18rpx;
+  height: 14rpx;
   margin-top: 22rpx;
   overflow: hidden;
 }
 
 .progress-bar {
-  background: #1f6f5b;
+  background: #0b6b55;
   height: 100%;
+}
+
+.progress-heading {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-number {
+  color: #0b6b55;
+  font-size: 32rpx;
+  font-weight: 850;
 }
 
 .source-line {

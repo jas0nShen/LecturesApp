@@ -63,3 +63,11 @@
   font-weight: 650;
   margin: 14rpx 0;
 }
+
+.code { color: #0b6b55; font-size: 34rpx; font-weight: 850; letter-spacing: 1rpx; }
+.course-heading { font-size: 40rpx; }
+.meta-grid { gap: 14rpx; }
+.meta-grid > view { background: #f0f5f2; border-radius: 12rpx; padding: 18rpx; }
+.panel-title { color: #17352c; font-weight: 800; }
+.link,
+.copy-hint { color: #0b6b55; }

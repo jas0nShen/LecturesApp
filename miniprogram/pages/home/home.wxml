@@ -1,8 +1,9 @@
 <view class="page">
   <view class="section hero">
     <view>
-      <view class="title">香港大学生课程选择助手</view>
-      <view class="subtitle">先从专业课程、已修课程和毕业要求检查开始，帮你快速看清下一步。</view>
+      <view class="hero-kicker">COURSE DESK · HKU</view>
+      <view class="title">今天，先把选课想清楚。</view>
+      <view class="subtitle">查官方开课、记录已修课程，再看毕业要求还差多少。</view>
     </view>
   </view>
 
@@ -26,25 +27,32 @@
 
   <view class="section grid">
     <view class="action-card" bindtap="goCourses">
+      <view class="action-index">01</view>
       <view class="action-title">查课程</view>
       <view class="action-copy">Core、Elective、Common Core</view>
     </view>
     <view class="action-card" bindtap="goAudit">
+      <view class="action-index">02</view>
       <view class="action-title">毕业检查</view>
       <view class="action-copy">看看还差哪些要求</view>
     </view>
     <view class="action-card" bindtap="goFavorites">
+      <view class="action-index">03</view>
       <view class="action-title">收藏课程</view>
       <view class="action-copy">保存想修的课程</view>
     </view>
     <view class="action-card" bindtap="goProfile">
+      <view class="action-index">04</view>
       <view class="action-title">我的资料</view>
       <view class="action-copy">学校、专业、年级</view>
     </view>
   </view>
 
   <view class="section panel">
-    <view class="panel-title">毕业进度预览</view>
+    <view class="progress-heading">
+      <view class="panel-title">毕业进度预览</view>
+      <view class="progress-number">{{audit.totalProgress}}%</view>
+    </view>
     <view class="progress-wrap">
       <view class="progress-bar" style="width: {{audit.totalProgress}}%;"></view>
     </view>

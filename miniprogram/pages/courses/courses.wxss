@@ -11,8 +11,8 @@
 }
 
 .tab {
-  background: #ffffff;
-  border: 1rpx solid #dfe5df;
+  background: #fbfcfa;
+  border: 1rpx solid #d5e0da;
   border-radius: 999rpx;
   color: #53615a;
   display: inline-flex;
@@ -22,8 +22,9 @@
 }
 
 .tab.active {
-  background: #1f6f5b;
-  border-color: #1f6f5b;
+  background: #0b6b55;
+  border-color: #0b6b55;
+  box-shadow: 0 6rpx 16rpx rgba(11, 107, 85, 0.14);
   color: #ffffff;
 }
 
@@ -48,15 +49,22 @@
 }
 
 .course-card {
-  background: #ffffff;
-  border: 1rpx solid #e2e7e1;
-  border-radius: 12rpx;
-  margin-bottom: 18rpx;
-  padding: 24rpx;
+  background: #fbfcfa;
+  border: 1rpx solid #dae5df;
+  border-radius: 18rpx;
+  box-shadow: 0 7rpx 20rpx rgba(15, 64, 51, 0.045);
+  margin-bottom: 16rpx;
+  padding: 26rpx;
+  position: relative;
+}
+
+.course-card:active {
+  background: #f4f8f6;
+  transform: scale(0.992);
 }
 
 .code {
-  color: #1f6f5b;
+  color: #0b6b55;
   font-size: 28rpx;
   font-weight: 800;
 }
@@ -90,8 +98,9 @@
 }
 
 .course-title {
+  color: #132a22;
   font-size: 30rpx;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.35;
   margin-top: 12rpx;
 }
@@ -107,23 +116,23 @@
   text-align: center;
 }
 .catalog-switch {
-  background: #e8f0ec;
+  background: #dfeae5;
   display: grid;
   gap: 8rpx;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   margin: 24rpx 28rpx 8rpx;
   padding: 8rpx;
-  border-radius: 18rpx;
+  border-radius: 20rpx;
 }
 
 .catalog-option {
-  border-radius: 14rpx;
+  border-radius: 16rpx;
   color: #64716b;
   padding: 18rpx 20rpx;
 }
 
 .catalog-option.active {
-  background: #ffffff;
+  background: #fbfcfa;
   box-shadow: 0 4rpx 16rpx rgba(31, 111, 91, 0.1);
   color: #173d33;
 }
@@ -144,15 +153,16 @@
 
 .source-stamp {
   align-items: center;
-  background: #edf5f1;
-  border: 1rpx solid #cfe1d8;
+  background: #e4f0eb;
+  border: 1rpx solid #bcd7cb;
+  border-radius: 14rpx;
   display: flex;
   gap: 20rpx;
 }
 
 .stamp-mark {
-  border: 2rpx solid #1f6f5b;
-  color: #1f6f5b;
+  border: 2rpx solid #0b6b55;
+  color: #0b6b55;
   font-size: 18rpx;
   font-weight: 800;
   letter-spacing: 1rpx;
@@ -185,3 +195,11 @@
   justify-content: space-between;
   margin-top: 18rpx;
 }
+
+.catalog-switch { margin: 4rpx 0 22rpx; padding: 7rpx; }
+.catalog-option { padding: 20rpx 22rpx; }
+.filter-chip { background: #fbfcfa; border-radius: 999rpx; }
+.filter-chip.active { background: #dfeee7; border-color: #a9cdbd; color: #0b6b55; }
+.source-line { color: #87978f; }
+.term-badge { color: #0b6b55; }
+.completed-mark { color: #0b6b55; }

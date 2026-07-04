@@ -22,3 +22,7 @@
   font-size: 30rpx;
   font-weight: 700;
 }
+
+.profile-row { padding: 25rpx 0; }
+.label { color: #687970; font-size: 23rpx; font-weight: 650; }
+.panel-title { color: #17352c; font-weight: 800; }
