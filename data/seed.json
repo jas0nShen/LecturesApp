@@ -207,7 +207,7 @@
       "curriculumYear": "2026",
       "type": "major_elective",
       "name": "Major Electives",
-      "requiredCredits": 12,
+      "requiredCredits": 6,
       "courseIds": [5]
     },
     {

@@ -1,7 +1,7 @@
 const data = {
   universities: [
-    { id: 1, code: 'HKU', nameEn: 'The University of Hong Kong', nameZh: '香港大学' },
-    { id: 2, code: 'HKUST', nameEn: 'The Hong Kong University of Science and Technology', nameZh: '香港科技大学' }
+    { id: 1, code: 'HKU', nameEn: 'The University of Hong Kong', nameZh: '香港大学', officialUrl: 'https://www.hku.hk/' },
+    { id: 2, code: 'HKUST', nameEn: 'The Hong Kong University of Science and Technology', nameZh: '香港科技大学', officialUrl: 'https://hkust.edu.hk/' }
   ],
   faculties: [
     { id: 1, universityId: 1, nameEn: 'Faculty of Engineering', nameZh: '工程学院' }
@@ -14,12 +14,14 @@ const data = {
       code: 'BENG',
       nameEn: 'Bachelor of Engineering',
       nameZh: '工学学士',
+      degreeLevel: 'undergraduate',
       curriculumYear: '2026',
-      totalCreditRequired: 240
+      totalCreditRequired: 240,
+      officialUrl: 'https://engg.hku.hk/'
     }
   ],
   majors: [
-    { id: 1, programmeId: 1, code: 'COMP', nameEn: 'Computer Science', nameZh: '计算机科学' }
+    { id: 1, programmeId: 1, code: 'COMP', nameEn: 'Computer Science', nameZh: '计算机科学', officialUrl: 'https://www.cs.hku.hk/' }
   ],
   courses: [
     {
@@ -165,7 +167,7 @@ const data = {
   ],
   requirements: [
     { id: 1, programmeId: 1, majorId: 1, curriculumYear: '2026', type: 'core', name: 'Core Courses', requiredCredits: 24, courseIds: [1, 2, 3, 4] },
-    { id: 2, programmeId: 1, majorId: 1, curriculumYear: '2026', type: 'major_elective', name: 'Major Electives', requiredCredits: 12, courseIds: [5] },
+    { id: 2, programmeId: 1, majorId: 1, curriculumYear: '2026', type: 'major_elective', name: 'Major Electives', requiredCredits: 6, courseIds: [5] },
     { id: 3, programmeId: 1, majorId: 1, curriculumYear: '2026', type: 'common_core', name: 'Common Core', requiredCredits: 6, courseIds: [7] },
     { id: 4, programmeId: 1, majorId: 1, curriculumYear: '2026', type: 'capstone', name: 'Capstone', requiredCredits: 12, courseIds: [6] }
   ]
