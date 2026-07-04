@@ -183,10 +183,26 @@ test('study plan analysis totals credits and flags prerequisite sequencing evide
   assert.equal(review.courseCount, 2);
   assert.equal(review.totalCredits, 12);
   assert.equal(review.noticeCount, 1);
+  assert.equal(review.notices[0].type, 'prerequisite');
   assert.deepEqual(review.notices[0].missingCodes, ['COMP1117', 'ENGG1330']);
 
   service.toggleOfferingCompleted('COMP1117');
   assert.equal(service.analyzeStudyPlan().noticeCount, 0);
+});
+
+test('study plan analysis flags unavailable terms, missing corequisites and heavy semesters', () => {
+  service.saveStudyPlanItem('COMP3230', 3, '2');
+  service.saveStudyPlanItem('COMP2120', 2, '2');
+
+  ['COMP2113', 'COMP2121', 'COMP2396', 'COMP2119', 'COMP3234', 'COMP3251', 'COMP3278']
+    .forEach((code) => service.saveStudyPlanItem(code, 1, '1'));
+
+  const review = service.analyzeStudyPlan();
+  assert(review.notices.some((notice) => notice.type === 'offering' && notice.courseCode === 'COMP3230'));
+  assert(review.notices.some((notice) => notice.type === 'corequisite' && notice.courseCode === 'COMP2120'));
+  assert(review.notices.some((notice) => notice.type === 'load' && notice.message.includes('42 学分')));
+  assert(review.issueCodes.includes('COMP3230'));
+  assert(review.termLoads.some((load) => load.year === 1 && load.term === '1' && load.overloaded));
 });
 
 test('user data can be exported and restored from a validated backup', () => {

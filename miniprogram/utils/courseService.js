@@ -270,6 +270,13 @@ function studyPlanPosition(item) {
   return (item.plannedYear * 10) + termOrder;
 }
 
+function requirementClauses(text) {
+  if (!text || text === 'None') return [];
+  return String(text).split(/;\s*(?:and\s+)?/i).map((clause) => (
+    [...new Set(clause.toUpperCase().match(/[A-Z]{4}\d{4}/g) || [])]
+  )).filter((codes) => codes.length);
+}
+
 function analyzeStudyPlan() {
   const courses = getStudyPlanCourses();
   const completedCodes = getCompletedOfferingCodes();
@@ -280,33 +287,91 @@ function analyzeStudyPlan() {
   );
 
   courses.forEach((item) => {
-    const prerequisiteText = (item.offering.details && item.offering.details.prerequisites) || 'None';
-    const prerequisiteCodes = [...new Set(prerequisiteText.toUpperCase().match(/[A-Z]{4}\d{4}/g) || [])];
-    if (!prerequisiteCodes.length) return;
-
-    const availableCodes = prerequisiteCodes.filter((code) => {
-      if (completedCodes.includes(code)) return true;
-      const planned = courses.find((course) => course.courseCode === code);
-      return planned && studyPlanPosition(planned) < studyPlanPosition(item);
-    });
-    const isAlternative = /\sor\s/i.test(prerequisiteText);
-    const missingCodes = isAlternative && availableCodes.length
-      ? []
-      : prerequisiteCodes.filter((code) => !availableCodes.includes(code));
-
-    if (missingCodes.length) {
+    if (!item.offering.terms.includes(item.plannedTerm)) {
       notices.push({
+        id: `offering-${item.courseCode}`,
+        type: 'offering',
+        courseCode: item.courseCode,
+        message: `${item.courseCode} 官方开课学期为 ${item.offering.terms.join(' / ')}，与计划中的 Semester ${item.plannedTerm} 不一致。`
+      });
+    }
+
+    const checkClauses = (text, allowSameTerm) => requirementClauses(text).filter((codes) => (
+      !codes.some((code) => {
+        if (completedCodes.includes(code)) return true;
+        const planned = courses.find((course) => course.courseCode === code);
+        if (!planned) return false;
+        return allowSameTerm
+          ? studyPlanPosition(planned) <= studyPlanPosition(item)
+          : studyPlanPosition(planned) < studyPlanPosition(item);
+      })
+    ));
+
+    const missingPrerequisiteClauses = checkClauses(
+      item.offering.details && item.offering.details.prerequisites,
+      false
+    );
+    if (missingPrerequisiteClauses.length) {
+      const missingCodes = missingPrerequisiteClauses.flat();
+      notices.push({
+        id: `prerequisite-${item.courseCode}`,
+        type: 'prerequisite',
         courseCode: item.courseCode,
         missingCodes,
-        message: `${item.courseCode} 的先修说明提到 ${missingCodes.join(' / ')}，目前没有更早的已修或计划记录。`
+        message: `${item.courseCode} 的先修要求尚缺：${missingPrerequisiteClauses.map((codes) => codes.join(' / ')).join('；')}。`
+      });
+    }
+
+    const missingCorequisiteClauses = checkClauses(
+      item.offering.details && item.offering.details.corequisites,
+      true
+    );
+    if (missingCorequisiteClauses.length) {
+      const missingCodes = missingCorequisiteClauses.flat();
+      notices.push({
+        id: `corequisite-${item.courseCode}`,
+        type: 'corequisite',
+        courseCode: item.courseCode,
+        missingCodes,
+        message: `${item.courseCode} 的共修要求尚缺：${missingCorequisiteClauses.map((codes) => codes.join(' / ')).join('；')}。`
       });
     }
   });
+
+  const termLoads = [];
+  [1, 2, 3, 4].forEach((year) => {
+    ['1', '2'].forEach((term) => {
+      const credits = courses.reduce((sum, item) => {
+        if (item.plannedYear !== year) return sum;
+        const courseCredits = Number((item.offering.details && item.offering.details.credits) || 0);
+        if (item.plannedTerm === term) return sum + courseCredits;
+        if (item.plannedTerm === 'full year') return sum + (courseCredits / 2);
+        return sum;
+      }, 0);
+      termLoads.push({ year, term, credits, overloaded: credits > 36 });
+      if (credits > 36) {
+        notices.push({
+          id: `load-${year}-${term}`,
+          type: 'load',
+          courseCode: '',
+          message: `Year ${year} Semester ${term} 已安排 ${credits} 学分，超过 36 学分，请确认课业负担。`
+        });
+      }
+    });
+  });
+
+  const noticeCounts = notices.reduce((counts, notice) => ({
+    ...counts,
+    [notice.type]: (counts[notice.type] || 0) + 1
+  }), {});
 
   return {
     courseCount: courses.length,
     totalCredits,
     noticeCount: notices.length,
+    noticeCounts,
+    issueCodes: [...new Set(notices.map((notice) => notice.courseCode).filter(Boolean))],
+    termLoads,
     notices
   };
 }

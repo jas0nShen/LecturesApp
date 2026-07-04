@@ -21,7 +21,17 @@
   padding: 24rpx;
 }
 .review-title { color: #80520e; font-size: 25rpx; font-weight: 800; }
-.review-note { border-top: 1rpx solid #f0dfbd; color: #684d24; font-size: 23rpx; line-height: 1.5; margin-top: 14rpx; padding-top: 14rpx; }
+.notice-legend { display: flex; flex-wrap: wrap; gap: 8rpx; margin-top: 14rpx; }
+.legend-item { background: #f4e4c7; border-radius: 999rpx; color: #80520e; font-size: 19rpx; padding: 8rpx 12rpx; }
+.legend-item.offering { background: #f1ded8; color: #8b4b3f; }
+.legend-item.corequisite { background: #e4e7f0; color: #505f82; }
+.legend-item.load { background: #eee0d3; color: #875938; }
+.review-note { align-items: flex-start; border-top: 1rpx solid #f0dfbd; display: flex; gap: 12rpx; margin-top: 14rpx; padding-top: 14rpx; }
+.notice-type { border: 1rpx solid #c99547; color: #80520e; flex: none; font-size: 17rpx; font-weight: 800; padding: 4rpx 7rpx; }
+.notice-type.offering { border-color: #bd7a6d; color: #8b4b3f; }
+.notice-type.corequisite { border-color: #7d89a7; color: #505f82; }
+.notice-type.load { border-color: #aa7652; color: #875938; }
+.notice-message { color: #684d24; font-size: 23rpx; line-height: 1.5; }
 .review-disclaimer { color: #967a4f; font-size: 19rpx; line-height: 1.5; margin-top: 18rpx; }
 .timeline { margin-top: 34rpx; }
 .year-group { display: flex; min-height: 150rpx; }
@@ -44,6 +54,9 @@
 .year-content { flex: 1; padding-bottom: 28rpx; }
 .year-heading { align-items: baseline; color: #17352c; display: flex; font-size: 28rpx; font-weight: 850; justify-content: space-between; margin: 8rpx 0 16rpx; }
 .year-credits { color: #829088; font-size: 20rpx; font-weight: 600; }
+.term-loads { display: flex; gap: 8rpx; margin: -6rpx 0 14rpx; }
+.term-load { background: #e7efeb; border-radius: 999rpx; color: #71827a; font-size: 18rpx; padding: 7rpx 11rpx; }
+.term-load.overloaded { background: #f3e1d3; color: #955b35; font-weight: 750; }
 .plan-course {
   background: #fbfcfa;
   border: 1rpx solid #dbe5df;
@@ -52,8 +65,10 @@
   margin-bottom: 12rpx;
   overflow: hidden;
 }
+.plan-course.has-issue { border-color: #ddb87e; }
 .plan-row { display: flex; justify-content: space-between; padding: 22rpx; }
 .course-code { color: #0b6b55; font-size: 24rpx; font-weight: 850; }
+.issue-mark { background: #fff0d5; border-radius: 999rpx; color: #966014; font-size: 17rpx; margin-left: 7rpx; padding: 5rpx 9rpx; }
 .course-title { font-size: 25rpx; font-weight: 750; line-height: 1.35; margin-top: 6rpx; max-width: 390rpx; }
 .course-credits { color: #829088; font-size: 20rpx; margin-top: 8rpx; }
 .term { color: #687970; font-size: 20rpx; white-space: nowrap; }
