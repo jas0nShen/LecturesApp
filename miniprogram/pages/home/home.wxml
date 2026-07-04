@@ -46,6 +46,11 @@
       <view class="action-title">我的资料</view>
       <view class="action-copy">学校、专业、年级</view>
     </view>
+    <view class="action-card plan-card" bindtap="goStudyPlan">
+      <view class="action-index">PLAN · 4 YEARS</view>
+      <view class="action-title">我的 Study Plan</view>
+      <view class="action-copy">按学年和学期安排想修的课程</view>
+    </view>
   </view>
 
   <view class="section panel">

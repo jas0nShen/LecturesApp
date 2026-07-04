@@ -5,6 +5,8 @@
     "pages/courses/courses",
     "pages/course-detail/course-detail",
     "pages/offering-detail/offering-detail",
+    "pages/plan-course/plan-course",
+    "pages/study-plan/study-plan",
     "pages/audit/audit",
     "pages/favorites/favorites",
     "pages/profile/profile"

@@ -99,6 +99,18 @@
   margin-top: 12rpx;
 }
 
+.plan-card {
+  background: #e3efe9;
+  border-color: #bdd7cb;
+  grid-column: 1 / -1;
+  min-height: 142rpx;
+}
+
+.plan-card .action-index {
+  color: #0b6b55;
+  margin-bottom: 12rpx;
+}
+
 .progress-wrap {
   background: #e1e9e5;
   border-radius: 999rpx;

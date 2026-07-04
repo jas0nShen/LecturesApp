@@ -131,3 +131,18 @@ test('official completion records include known and catalogue-only courses', () 
     ]
   );
 });
+
+test('study plan items can be added, updated, joined and removed', () => {
+  service.saveStudyPlanItem('COMP1117', 1, '1');
+  service.saveStudyPlanItem('COMP2113', 2, '2');
+  service.saveStudyPlanItem('COMP1117', 1, '2');
+
+  assert.deepEqual(service.getStudyPlanItems(), [
+    { courseCode: 'COMP1117', plannedYear: 1, plannedTerm: '2' },
+    { courseCode: 'COMP2113', plannedYear: 2, plannedTerm: '2' }
+  ]);
+  assert.equal(service.getStudyPlanCourses()[0].offering.title, 'Computer Programming');
+  assert.deepEqual(service.removeStudyPlanItem('comp1117'), [
+    { courseCode: 'COMP2113', plannedYear: 2, plannedTerm: '2' }
+  ]);
+});

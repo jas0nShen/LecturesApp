@@ -37,6 +37,10 @@ Page({
     wx.navigateTo({ url: '/pages/favorites/favorites' });
   },
 
+  goStudyPlan() {
+    wx.navigateTo({ url: '/pages/study-plan/study-plan' });
+  },
+
   goProfile() {
     wx.switchTab({ url: '/pages/profile/profile' });
   }

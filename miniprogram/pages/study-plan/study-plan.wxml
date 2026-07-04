@@ -1,0 +1,32 @@
+<view class="page">
+  <view class="section">
+    <view class="plan-kicker">FOUR-YEAR ROUTE</view>
+    <view class="title">我的 Study Plan</view>
+    <view class="subtitle">先安排方向，再根据正式课表和先修要求逐步调整。</view>
+  </view>
+
+  <view class="timeline">
+    <view wx:for="{{groups}}" wx:key="year" class="year-group">
+      <view class="year-rail">
+        <view class="year-dot">{{item.year}}</view>
+        <view class="year-line"></view>
+      </view>
+      <view class="year-content">
+        <view class="year-heading">Year {{item.year}}</view>
+        <view wx:for="{{item.courses}}" wx:for-item="course" wx:key="courseCode" class="plan-course">
+          <view class="plan-row" data-code="{{course.courseCode}}" bindtap="editCourse">
+            <view>
+              <view class="course-code">{{course.courseCode}}</view>
+              <view class="course-title">{{course.offering.title}}</view>
+            </view>
+            <view class="term">{{course.termLabel}}</view>
+          </view>
+          <view class="remove" data-code="{{course.courseCode}}" catchtap="removeCourse">移除</view>
+        </view>
+        <view wx:if="{{item.courses.length === 0}}" class="year-empty">还没有安排课程</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="section add-course" bindtap="goCourses">＋ 从官方开课目录添加课程</view>
+</view>

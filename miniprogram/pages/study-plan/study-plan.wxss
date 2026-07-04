@@ -1,0 +1,44 @@
+.plan-kicker { color: #0b6b55; font-size: 20rpx; font-weight: 800; letter-spacing: 3rpx; margin-bottom: 12rpx; }
+.timeline { margin-top: 34rpx; }
+.year-group { display: flex; min-height: 150rpx; }
+.year-rail { align-items: center; display: flex; flex-direction: column; margin-right: 22rpx; width: 54rpx; }
+.year-dot {
+  align-items: center;
+  background: #0b5d4b;
+  border: 6rpx solid #d9ebe3;
+  border-radius: 50%;
+  color: #ffffff;
+  display: flex;
+  font-size: 23rpx;
+  font-weight: 850;
+  height: 48rpx;
+  justify-content: center;
+  width: 48rpx;
+}
+.year-line { background: #cbdad3; flex: 1; width: 2rpx; }
+.year-group:last-child .year-line { background: transparent; }
+.year-content { flex: 1; padding-bottom: 28rpx; }
+.year-heading { color: #17352c; font-size: 28rpx; font-weight: 850; margin: 8rpx 0 16rpx; }
+.plan-course {
+  background: #fbfcfa;
+  border: 1rpx solid #dbe5df;
+  border-radius: 16rpx;
+  box-shadow: 0 7rpx 20rpx rgba(15, 64, 51, 0.045);
+  margin-bottom: 12rpx;
+  overflow: hidden;
+}
+.plan-row { display: flex; justify-content: space-between; padding: 22rpx; }
+.course-code { color: #0b6b55; font-size: 24rpx; font-weight: 850; }
+.course-title { font-size: 25rpx; font-weight: 750; line-height: 1.35; margin-top: 6rpx; max-width: 390rpx; }
+.term { color: #687970; font-size: 20rpx; white-space: nowrap; }
+.remove { border-top: 1rpx solid #e7ece9; color: #8b5b51; font-size: 21rpx; padding: 12rpx 22rpx; text-align: right; }
+.year-empty { border: 1rpx dashed #c6d5ce; border-radius: 14rpx; color: #89978f; font-size: 23rpx; padding: 24rpx; }
+.add-course {
+  background: #e2eee9;
+  border-radius: 16rpx;
+  color: #0b6b55;
+  font-size: 26rpx;
+  font-weight: 750;
+  padding: 26rpx;
+  text-align: center;
+}

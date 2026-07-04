@@ -242,6 +242,11 @@
   grid-column: 1 / -1;
 }
 
+.plan-action {
+  background: #17352c;
+  grid-column: 1 / -1;
+}
+
 .record-head {
   background: #0b5d4b;
   border-bottom: 0;

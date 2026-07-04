@@ -1,0 +1,24 @@
+.plan-head {
+  background: #0b5d4b;
+  border-radius: 24rpx;
+  box-shadow: 0 16rpx 34rpx rgba(11, 72, 57, 0.16);
+  color: #ffffff;
+  margin-bottom: 26rpx;
+  padding: 34rpx;
+}
+.plan-kicker { color: #9fd1c2; font-size: 20rpx; font-weight: 750; letter-spacing: 3rpx; }
+.plan-code { font-size: 44rpx; font-weight: 850; margin-top: 24rpx; }
+.plan-title { color: #d7e8e2; font-size: 28rpx; font-weight: 700; line-height: 1.4; margin-top: 8rpx; }
+.field { margin-bottom: 28rpx; }
+.label { color: #52655c; font-size: 22rpx; font-weight: 700; margin-bottom: 10rpx; }
+.select {
+  align-items: center;
+  background: #f0f5f2;
+  border: 1rpx solid #cedbd4;
+  border-radius: 14rpx;
+  display: flex;
+  font-size: 28rpx;
+  min-height: 88rpx;
+  padding: 0 24rpx;
+}
+.plan-form .button { margin-top: 38rpx; }

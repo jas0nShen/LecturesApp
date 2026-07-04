@@ -108,6 +108,39 @@ function getPrerequisiteCourseStatus(prerequisiteText) {
   }));
 }
 
+function getStudyPlanItems() {
+  return wx.getStorageSync('studyPlanItems') || [];
+}
+
+function saveStudyPlanItem(courseCode, plannedYear, plannedTerm) {
+  const code = String(courseCode).toUpperCase();
+  const items = getStudyPlanItems();
+  const nextItem = {
+    courseCode: code,
+    plannedYear: Number(plannedYear),
+    plannedTerm: String(plannedTerm)
+  };
+  const next = items.some((item) => item.courseCode === code)
+    ? items.map((item) => (item.courseCode === code ? nextItem : item))
+    : items.concat(nextItem);
+  wx.setStorageSync('studyPlanItems', next);
+  return next;
+}
+
+function removeStudyPlanItem(courseCode) {
+  const code = String(courseCode).toUpperCase();
+  const next = getStudyPlanItems().filter((item) => item.courseCode !== code);
+  wx.setStorageSync('studyPlanItems', next);
+  return next;
+}
+
+function getStudyPlanCourses() {
+  return getStudyPlanItems().map((item) => {
+    const offering = hkuOfferings.courses.find((course) => course.courseCode === item.courseCode);
+    return offering ? { ...item, offering } : null;
+  }).filter(Boolean);
+}
+
 function listCourses(filters = {}) {
   const keyword = (filters.keyword || '').trim().toLowerCase();
   return data.courses.filter((course) => {
@@ -386,6 +419,8 @@ module.exports = {
   getFavorites,
   getProfile,
   getPrerequisiteCourseStatus,
+  getStudyPlanCourses,
+  getStudyPlanItems,
   isFavorite,
   isOfferingCompleted,
   isOfferingFavorite,
@@ -396,6 +431,8 @@ module.exports = {
   listMajorsRemote,
   listProgrammesRemote,
   listUniversitiesRemote,
+  removeStudyPlanItem,
+  saveStudyPlanItem,
   saveProfile,
   toggleCompleted,
   toggleFavorite,

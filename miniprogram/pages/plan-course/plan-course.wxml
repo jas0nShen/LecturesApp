@@ -1,0 +1,23 @@
+<view class="page" wx:if="{{course}}">
+  <view class="plan-head">
+    <view class="plan-kicker">STUDY PLAN</view>
+    <view class="plan-code">{{course.courseCode}}</view>
+    <view class="plan-title">{{course.title}}</view>
+  </view>
+
+  <view class="section panel plan-form">
+    <view class="field">
+      <view class="label">计划修读年级</view>
+      <picker range="{{yearOptions}}" value="{{yearIndex}}" bindchange="onYearChange">
+        <view class="select">Year {{yearOptions[yearIndex]}}</view>
+      </picker>
+    </view>
+    <view class="field">
+      <view class="label">计划修读学期</view>
+      <picker range="{{termLabels}}" value="{{termIndex}}" bindchange="onTermChange">
+        <view class="select">{{termLabels[termIndex]}}</view>
+      </picker>
+    </view>
+    <view class="button" bindtap="save">保存到 Study Plan</view>
+  </view>
+</view>

@@ -63,5 +63,11 @@ Page({
       prerequisiteCourses: service.getPrerequisiteCourseStatus(this.data.course.prerequisites)
     });
     wx.showToast({ title: completed ? '已标记为已修' : '已取消已修' });
+  },
+
+  goPlanCourse() {
+    wx.navigateTo({
+      url: `/pages/plan-course/plan-course?code=${this.data.offering.courseCode}`
+    });
   }
 });
