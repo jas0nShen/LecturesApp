@@ -49,7 +49,8 @@ function toggleCompleted(courseId) {
 function listCourses(filters = {}) {
   const keyword = (filters.keyword || '').trim().toLowerCase();
   return data.courses.filter((course) => {
-    const matchesProfile = !filters.majorId || course.majorId === Number(filters.majorId);
+    const matchesProgramme = !filters.programmeId || course.programmeId === Number(filters.programmeId);
+    const matchesMajor = !filters.majorId || course.majorId === Number(filters.majorId);
     const matchesType = !filters.courseType || filters.courseType === 'all' || course.courseType === filters.courseType;
     const matchesKeyword = !keyword
       || course.courseCode.toLowerCase().includes(keyword)
@@ -58,7 +59,7 @@ function listCourses(filters = {}) {
     const matchesPrereq = filters.hasPrerequisite === undefined
       || filters.hasPrerequisite === null
       || (filters.hasPrerequisite ? course.prerequisites !== 'None' : course.prerequisites === 'None');
-    return matchesProfile && matchesType && matchesKeyword && matchesPrereq;
+    return matchesProgramme && matchesMajor && matchesType && matchesKeyword && matchesPrereq;
   });
 }
 

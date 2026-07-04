@@ -5,7 +5,8 @@
   "description": "MVP for a WeChat mini program helping Hong Kong university students plan courses.",
   "scripts": {
     "dev:api": "node server/index.js",
-    "check": "node server/index.js --check"
+    "test": "node --test",
+    "check": "node server/index.js --check && node --test"
   },
   "engines": {
     "node": ">=18"

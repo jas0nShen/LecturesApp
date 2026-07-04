@@ -195,11 +195,21 @@ async function handleRequest(req, res) {
   sendJson(res, 404, { error: 'Not found' });
 }
 
-if (process.argv.includes('--check')) {
+function createServer() {
+  return http.createServer(handleRequest);
+}
+
+if (require.main === module && process.argv.includes('--check')) {
   console.log(JSON.stringify({ ok: true, courses: seed.courses.length, requirements: seed.requirements.length }));
-} else {
+} else if (require.main === module) {
   const port = Number(process.env.PORT || 3000);
-  http.createServer(handleRequest).listen(port, () => {
+  createServer().listen(port, () => {
     console.log(`Course planner API listening on http://localhost:${port}`);
   });
 }
+
+module.exports = {
+  buildAudit,
+  createServer,
+  listCourses
+};
