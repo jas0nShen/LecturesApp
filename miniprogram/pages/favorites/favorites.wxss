@@ -1,0 +1,32 @@
+.course-card {
+  background: #ffffff;
+  border: 1rpx solid #e2e7e1;
+  border-radius: 12rpx;
+  margin-bottom: 18rpx;
+  padding: 24rpx;
+}
+
+.code {
+  color: #1f6f5b;
+  font-size: 28rpx;
+  font-weight: 800;
+}
+
+.credits {
+  color: #64716b;
+  font-size: 24rpx;
+}
+
+.course-title {
+  font-size: 30rpx;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-top: 12rpx;
+}
+
+.empty {
+  color: #64716b;
+  font-size: 28rpx;
+  padding: 80rpx 0;
+  text-align: center;
+}

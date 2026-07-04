@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Environment and secrets
+.env
+.env.*
+
+# WeChat Developer Tools local settings
+miniprogram/project.private.config.json
+
+# Build output and logs
+dist/
+build/
+*.log
+
+# macOS
+.DS_Store

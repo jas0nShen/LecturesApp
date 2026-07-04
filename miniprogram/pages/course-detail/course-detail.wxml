@@ -1,0 +1,55 @@
+<view class="page" wx:if="{{course}}">
+  <view class="section panel">
+    <view class="row">
+      <view class="code">{{course.courseCode}}</view>
+      <view class="tag">{{typeLabel}}</view>
+    </view>
+    <view class="title course-heading">{{course.titleEn}}</view>
+    <view class="subtitle">{{course.titleZh}}</view>
+    <view class="source-line">数据源：{{dataSource === 'api' ? '本地 API' : '本地缓存'}}</view>
+    <view class="meta-grid">
+      <view>
+        <view class="meta-label">Credits</view>
+        <view class="meta-value">{{course.credits}}</view>
+      </view>
+      <view>
+        <view class="meta-label">Semester</view>
+        <view class="meta-value">{{course.semester}}</view>
+      </view>
+      <view>
+        <view class="meta-label">Department</view>
+        <view class="meta-value">{{course.department}}</view>
+      </view>
+      <view>
+        <view class="meta-label">Language</view>
+        <view class="meta-value">{{course.language}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="section action-row">
+    <view class="button secondary" bindtap="toggleFavorite">{{favorite ? '取消收藏' : '收藏课程'}}</view>
+    <view class="button" bindtap="toggleCompleted">{{completed ? '标记未修' : '标记已修'}}</view>
+  </view>
+
+  <view class="section panel">
+    <view class="panel-title">先修要求</view>
+    <view class="body">{{course.prerequisites || 'None'}}</view>
+  </view>
+
+  <view class="section panel">
+    <view class="panel-title">互斥课程</view>
+    <view class="body">{{course.exclusions || 'None'}}</view>
+  </view>
+
+  <view class="section panel">
+    <view class="panel-title">课程简介</view>
+    <view class="body">{{course.description}}</view>
+  </view>
+
+  <view class="section panel">
+    <view class="panel-title">官方来源</view>
+    <view class="body link">{{course.officialUrl}}</view>
+    <view class="subtitle">最后核验：{{course.lastVerifiedAt}}</view>
+  </view>
+</view>

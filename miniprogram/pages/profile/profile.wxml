@@ -1,0 +1,43 @@
+<view class="page">
+  <view class="section">
+    <view class="title">我的资料</view>
+    <view class="subtitle">MVP 暂时保存在本机，接入微信登录后会同步到服务端。</view>
+  </view>
+
+  <view class="section panel" wx:if="{{profile}}">
+    <view class="profile-row">
+      <view class="label">大学</view>
+      <view>{{profile.universityCode}}</view>
+    </view>
+    <view class="profile-row">
+      <view class="label">Programme</view>
+      <view>{{profile.programmeName}}</view>
+    </view>
+    <view class="profile-row">
+      <view class="label">Major</view>
+      <view>{{profile.majorName}}</view>
+    </view>
+    <view class="profile-row">
+      <view class="label">Curriculum Year</view>
+      <view>{{profile.curriculumYear}}</view>
+    </view>
+    <view class="profile-row">
+      <view class="label">当前年级</view>
+      <view>Year {{profile.currentYear}}</view>
+    </view>
+  </view>
+
+  <view class="section panel" wx:else>
+    <view class="panel-title">还没有设置专业</view>
+    <view class="subtitle">设置后可以查看匹配课程和毕业要求。</view>
+  </view>
+
+  <view class="section">
+    <view class="button" bindtap="goOnboarding">{{profile ? '修改资料' : '开始设置'}}</view>
+  </view>
+
+  <view class="section panel">
+    <view class="panel-title">数据说明</view>
+    <view class="subtitle">当前为 MVP 示例数据。正式上线前，每门课程都会展示官方来源链接和最后核验时间；毕业检查仅供参考，以大学官方要求为准。</view>
+  </view>
+</view>

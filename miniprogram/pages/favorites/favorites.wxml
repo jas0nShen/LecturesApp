@@ -1,0 +1,18 @@
+<view class="page">
+  <view class="section">
+    <view class="title">收藏课程</view>
+    <view class="subtitle">把感兴趣的课程先收在这里，下一阶段会扩展成 Study Plan。</view>
+  </view>
+
+  <view class="section">
+    <view wx:for="{{courses}}" wx:key="id" class="course-card" data-id="{{item.id}}" bindtap="goDetail">
+      <view class="row">
+        <view class="code">{{item.courseCode}}</view>
+        <view class="credits">{{item.credits}} credits</view>
+      </view>
+      <view class="course-title">{{item.titleEn}}</view>
+      <view class="subtitle">{{item.semester}}</view>
+    </view>
+    <view wx:if="{{courses.length === 0}}" class="empty">还没有收藏课程</view>
+  </view>
+</view>

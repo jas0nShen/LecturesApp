@@ -1,0 +1,25 @@
+.field {
+  margin-bottom: 28rpx;
+}
+
+.label {
+  color: #64716b;
+  font-size: 24rpx;
+  margin-bottom: 10rpx;
+}
+
+.select {
+  align-items: center;
+  background: #f8faf8;
+  border: 1rpx solid #d7ded8;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  display: flex;
+  font-size: 28rpx;
+  min-height: 84rpx;
+  padding: 0 22rpx;
+}
+
+.button-space {
+  margin-top: 34rpx;
+}

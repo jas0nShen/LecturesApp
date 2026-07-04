@@ -1,0 +1,32 @@
+<view class="page">
+  <view class="section">
+    <input class="input" value="{{keyword}}" placeholder="搜索 Course Code 或课程名" confirm-type="search" bindinput="onKeyword" />
+    <view class="source-line">数据源：{{dataSource === 'api' ? '本地 API' : '本地缓存'}}</view>
+  </view>
+
+  <scroll-view class="tabs" scroll-x>
+    <view wx:for="{{types}}" wx:key="value" class="tab {{courseType === item.value ? 'active' : ''}}" data-value="{{item.value}}" bindtap="onTypeTap">{{item.label}}</view>
+  </scroll-view>
+
+  <view class="section filter-row">
+    <view class="filter-chip {{hasPrerequisite === null ? 'active' : ''}}" data-value="all" bindtap="onPrereqTap">全部</view>
+    <view class="filter-chip {{hasPrerequisite === false ? 'active' : ''}}" data-value="no" bindtap="onPrereqTap">无先修</view>
+    <view class="filter-chip {{hasPrerequisite === true ? 'active' : ''}}" data-value="yes" bindtap="onPrereqTap">有先修</view>
+  </view>
+
+  <view class="section">
+    <view wx:for="{{courses}}" wx:key="id" class="course-card" data-id="{{item.id}}" bindtap="goDetail">
+      <view class="row">
+        <view class="code">{{item.courseCode}}</view>
+        <view class="credits">{{item.credits}} credits</view>
+      </view>
+      <view class="course-title">{{item.titleEn}}</view>
+      <view class="subtitle">{{item.titleZh}} · {{item.semester}}</view>
+      <view class="meta">
+        <text class="tag">{{typeLabels[item.courseType]}}</text>
+        <text class="tag">Year {{item.recommendedYear}}</text>
+      </view>
+    </view>
+    <view wx:if="{{courses.length === 0}}" class="empty">没有找到匹配课程</view>
+  </view>
+</view>

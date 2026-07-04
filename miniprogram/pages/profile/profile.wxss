@@ -1,0 +1,24 @@
+.profile-row {
+  align-items: center;
+  border-top: 1rpx solid #edf0ee;
+  display: flex;
+  font-size: 28rpx;
+  justify-content: space-between;
+  padding: 22rpx 0;
+  text-align: right;
+}
+
+.profile-row:first-of-type {
+  border-top: 0;
+}
+
+.label {
+  color: #64716b;
+  margin-right: 24rpx;
+  text-align: left;
+}
+
+.panel-title {
+  font-size: 30rpx;
+  font-weight: 700;
+}

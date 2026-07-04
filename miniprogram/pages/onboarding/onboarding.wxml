@@ -1,0 +1,47 @@
+<view class="page">
+  <view class="section">
+    <view class="title">设置你的课程范围</view>
+    <view class="subtitle">MVP 先用少量准确数据验证核心体验，后续再扩展更多学校和专业。</view>
+  </view>
+
+  <view class="section panel">
+    <view class="field">
+      <view class="label">大学</view>
+      <picker range="{{universities}}" range-key="nameZh" bindchange="onUniversityChange">
+        <view class="select">{{selectedUniversity.nameZh || '请选择大学'}}</view>
+      </picker>
+    </view>
+
+    <view class="field">
+      <view class="label">Programme</view>
+      <picker range="{{programmes}}" range-key="nameZh" bindchange="onProgrammeChange">
+        <view class="select">{{selectedProgramme.nameZh || '请选择 Programme'}}</view>
+      </picker>
+    </view>
+
+    <view class="field">
+      <view class="label">Major</view>
+      <picker range="{{majors}}" range-key="nameZh" bindchange="onMajorChange">
+        <view class="select">{{selectedMajor.nameZh || '请选择 Major'}}</view>
+      </picker>
+    </view>
+
+    <view class="field">
+      <view class="label">Curriculum Year</view>
+      <picker range="{{curriculumYears}}" bindchange="onCurriculumYearChange">
+        <view class="select">{{curriculumYear}}</view>
+      </picker>
+    </view>
+
+    <view class="field">
+      <view class="label">当前年级</view>
+      <picker range="{{yearOptions}}" bindchange="onCurrentYearChange">
+        <view class="select">Year {{currentYear}}</view>
+      </picker>
+    </view>
+
+    <view class="button-space">
+      <view class="button" bindtap="save">保存并开始</view>
+    </view>
+  </view>
+</view>

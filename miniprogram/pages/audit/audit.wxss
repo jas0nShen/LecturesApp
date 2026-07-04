@@ -1,0 +1,87 @@
+.panel-title {
+  font-size: 30rpx;
+  font-weight: 700;
+}
+
+.big-number {
+  color: #1f6f5b;
+  font-size: 72rpx;
+  font-weight: 800;
+  margin-top: 12rpx;
+}
+
+.progress-wrap {
+  background: #e7ece8;
+  border-radius: 999rpx;
+  height: 18rpx;
+  margin-top: 20rpx;
+  overflow: hidden;
+}
+
+.progress-wrap.small {
+  height: 14rpx;
+}
+
+.progress-bar {
+  background: #1f6f5b;
+  height: 100%;
+}
+
+.source-line {
+  color: #87928d;
+  font-size: 22rpx;
+  margin-top: 10rpx;
+}
+
+.course-row {
+  align-items: center;
+  border-top: 1rpx solid #edf0ee;
+  display: flex;
+  justify-content: space-between;
+  padding: 22rpx 0;
+}
+
+.course-row:first-of-type {
+  border-top: 0;
+}
+
+.course-code {
+  color: #1f6f5b;
+  font-size: 27rpx;
+  font-weight: 800;
+}
+
+.check {
+  border: 1rpx solid #d8dfda;
+  border-radius: 999rpx;
+  color: #64716b;
+  font-size: 24rpx;
+  padding: 10rpx 16rpx;
+}
+
+.check.active {
+  background: #1f6f5b;
+  border-color: #1f6f5b;
+  color: #ffffff;
+}
+
+.requirement {
+  margin-bottom: 18rpx;
+}
+
+.missing {
+  margin-top: 18rpx;
+}
+
+.missing-title {
+  color: #64716b;
+  font-size: 24rpx;
+  margin-bottom: 8rpx;
+}
+
+.missing-course,
+.recommendation {
+  border-top: 1rpx solid #edf0ee;
+  font-size: 26rpx;
+  padding: 16rpx 0;
+}

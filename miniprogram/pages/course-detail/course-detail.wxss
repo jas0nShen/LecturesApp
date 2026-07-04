@@ -1,0 +1,58 @@
+.code {
+  color: #1f6f5b;
+  font-size: 32rpx;
+  font-weight: 800;
+}
+
+.course-heading {
+  font-size: 38rpx;
+  margin-top: 18rpx;
+}
+
+.meta-grid {
+  display: grid;
+  gap: 24rpx;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 30rpx;
+}
+
+.source-line {
+  color: #87928d;
+  font-size: 22rpx;
+  margin-top: 12rpx;
+}
+
+.meta-label {
+  color: #64716b;
+  font-size: 22rpx;
+}
+
+.meta-value {
+  font-size: 26rpx;
+  font-weight: 650;
+  line-height: 1.35;
+  margin-top: 6rpx;
+}
+
+.action-row {
+  display: grid;
+  gap: 18rpx;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.panel-title {
+  font-size: 30rpx;
+  font-weight: 700;
+  margin-bottom: 14rpx;
+}
+
+.body {
+  color: #25312c;
+  font-size: 27rpx;
+  line-height: 1.55;
+}
+
+.link {
+  color: #1f6f5b;
+  word-break: break-all;
+}

@@ -1,0 +1,63 @@
+.hero {
+  padding-top: 24rpx;
+}
+
+.panel-title {
+  font-size: 32rpx;
+  font-weight: 700;
+}
+
+.button-space {
+  margin-top: 24rpx;
+}
+
+.edit-link {
+  color: #1f6f5b;
+  font-size: 26rpx;
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  gap: 18rpx;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.action-card {
+  background: #ffffff;
+  border: 1rpx solid #e2e7e1;
+  border-radius: 12rpx;
+  min-height: 168rpx;
+  padding: 24rpx;
+}
+
+.action-title {
+  font-size: 30rpx;
+  font-weight: 700;
+}
+
+.action-copy {
+  color: #64716b;
+  font-size: 24rpx;
+  line-height: 1.4;
+  margin-top: 12rpx;
+}
+
+.progress-wrap {
+  background: #e7ece8;
+  border-radius: 999rpx;
+  height: 18rpx;
+  margin-top: 22rpx;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background: #1f6f5b;
+  height: 100%;
+}
+
+.source-line {
+  color: #87928d;
+  font-size: 22rpx;
+  margin-top: 10rpx;
+}

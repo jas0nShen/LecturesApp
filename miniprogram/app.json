@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/onboarding/onboarding",
+    "pages/courses/courses",
+    "pages/course-detail/course-detail",
+    "pages/audit/audit",
+    "pages/favorites/favorites",
+    "pages/profile/profile"
+  ],
+  "window": {
+    "navigationBarTitleText": "课程选择助手",
+    "navigationBarBackgroundColor": "#1f6f5b",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f6f7f5"
+  },
+  "tabBar": {
+    "color": "#6c756f",
+    "selectedColor": "#1f6f5b",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/courses/courses",
+        "text": "课程"
+      },
+      {
+        "pagePath": "pages/audit/audit",
+        "text": "毕业检查"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
