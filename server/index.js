@@ -4,6 +4,8 @@ const path = require('path');
 
 const seedPath = path.join(__dirname, '..', 'data', 'seed.json');
 const seed = JSON.parse(fs.readFileSync(seedPath, 'utf8'));
+const offeringsPath = path.join(__dirname, '..', 'data', 'hku-cds-offerings-2025.json');
+const hkuCdsOfferings = JSON.parse(fs.readFileSync(offeringsPath, 'utf8'));
 
 function sendJson(res, statusCode, payload) {
   res.writeHead(statusCode, {
@@ -61,6 +63,22 @@ function listCourses(query) {
     const matchesPrereq = !hasPrerequisite
       || (hasPrerequisite === 'true' ? course.prerequisites !== 'None' : course.prerequisites === 'None');
     return matchesProgramme && matchesMajor && matchesType && matchesKeyword && matchesPrereq;
+  });
+}
+
+function listCourseOfferings(query) {
+  const keyword = (query.get('keyword') || '').trim().toLowerCase();
+  const term = query.get('term');
+  const category = (query.get('category') || '').trim().toLowerCase();
+
+  return hkuCdsOfferings.courses.filter((course) => {
+    const matchesKeyword = !keyword
+      || course.courseCode.toLowerCase().includes(keyword)
+      || course.title.toLowerCase().includes(keyword);
+    const matchesTerm = !term || course.terms.includes(term);
+    const matchesCategory = !category
+      || course.categories.some((item) => item.toLowerCase().includes(category));
+    return matchesKeyword && matchesTerm && matchesCategory;
   });
 }
 
@@ -175,6 +193,28 @@ async function handleRequest(req, res) {
     return;
   }
 
+  if (req.method === 'GET' && url.pathname === '/api/course-offerings') {
+    const academicYear = url.searchParams.get('academic_year');
+    if (academicYear && academicYear !== hkuCdsOfferings.academicYear) {
+      sendJson(res, 200, {
+        universityCode: 'HKU',
+        academicYear,
+        courses: []
+      });
+      return;
+    }
+
+    sendJson(res, 200, {
+      universityCode: hkuCdsOfferings.universityCode,
+      provider: hkuCdsOfferings.provider,
+      academicYear: hkuCdsOfferings.academicYear,
+      sourceUrl: hkuCdsOfferings.sourceUrl,
+      retrievedAt: hkuCdsOfferings.retrievedAt,
+      courses: listCourseOfferings(url.searchParams)
+    });
+    return;
+  }
+
   const courseMatch = url.pathname.match(/^\/api\/courses\/(\d+)$/);
   if (req.method === 'GET' && courseMatch) {
     const course = seed.courses.find((item) => item.id === Number(courseMatch[1]));
@@ -211,5 +251,6 @@ if (require.main === module && process.argv.includes('--check')) {
 module.exports = {
   buildAudit,
   createServer,
+  listCourseOfferings,
   listCourses
 };

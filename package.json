@@ -5,6 +5,7 @@
   "description": "MVP for a WeChat mini program helping Hong Kong university students plan courses.",
   "scripts": {
     "dev:api": "node server/index.js",
+    "import:hku:cds": "node scripts/import-hku-cds-offerings.js",
     "sync:data": "node scripts/generate-mock-data.js",
     "test": "node --test",
     "check": "node scripts/validate-data.js && node server/index.js --check && node --test"

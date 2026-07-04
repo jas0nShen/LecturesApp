@@ -37,6 +37,28 @@ test('course filters can be combined', async () => {
   assert.deepEqual(courses.map((course) => course.courseCode), ['COMP1117', 'COMP2121']);
 });
 
+test('official HKU offerings can be filtered by year, term and keyword', async () => {
+  const response = await fetch(
+    `${baseUrl}/api/course-offerings?academic_year=2025-26&term=2&keyword=machine`
+  );
+  const result = await response.json();
+
+  assert.equal(response.status, 200);
+  assert.equal(result.universityCode, 'HKU');
+  assert.equal(result.academicYear, '2025-26');
+  assert(result.courses.length > 0);
+  assert(result.courses.every((course) => course.terms.includes('2')));
+  assert(result.courses.some((course) => course.courseCode === 'COMP3314'));
+});
+
+test('an unavailable offering year returns an empty catalogue', async () => {
+  const response = await fetch(`${baseUrl}/api/course-offerings?academic_year=2099-00`);
+  const result = await response.json();
+
+  assert.equal(response.status, 200);
+  assert.deepEqual(result.courses, []);
+});
+
 test('course detail returns a course or 404', async () => {
   const foundResponse = await fetch(`${baseUrl}/api/courses/1`);
   assert.equal(foundResponse.status, 200);

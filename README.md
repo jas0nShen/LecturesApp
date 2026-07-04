@@ -31,6 +31,7 @@ npm run dev:api
 - `GET /api/programmes?university_id=1`
 - `GET /api/courses?programme_id=1&major_id=1&keyword=comp`
 - `GET /api/courses/:id`
+- `GET /api/course-offerings?academic_year=2025-26&term=2&keyword=machine`
 - `POST /api/graduation-audit`
 
 ## 小程序运行
@@ -57,3 +58,11 @@ npm run check
 第一条命令会生成 `miniprogram/utils/mockData.js`，第二条命令会检查数据引用、官方链接、学分覆盖以及 API 和离线逻辑。
 
 当前课程目录参考 HKU 官方课程说明及 2025–26 Sample Study Plan；毕业检查规则仍是用于验证产品流程的简化示例，不能替代学校官方 Degree Audit。
+
+HKU Computing and Data Science 的学年开课表可通过以下命令从官网重新导入：
+
+```bash
+npm run import:hku:cds
+```
+
+导入结果保存在 `data/hku-cds-offerings-2025.json`，课程代码、班次和学期会保留官方来源链接。

@@ -1,0 +1,1077 @@
+{
+  "universityCode": "HKU",
+  "provider": "School of Computing and Data Science",
+  "academicYear": "2025-26",
+  "sourceUrl": "https://www.cs.hku.hk/programmes/course-offered",
+  "retrievedAt": "2026-07-04T08:36:48.965Z",
+  "courses": [
+    {
+      "courseCode": "COMP1110",
+      "title": "Computing and Data Science in Everyday Life",
+      "categories": [
+        "Year 1 - Core"
+      ],
+      "terms": [
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP1110",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp1110.html"
+    },
+    {
+      "courseCode": "COMP1117",
+      "title": "Computer Programming",
+      "categories": [
+        "Year 1 - Core"
+      ],
+      "terms": [
+        "1",
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP1117A",
+          "term": "1"
+        },
+        {
+          "sectionCode": "COMP1117B",
+          "term": "1"
+        },
+        {
+          "sectionCode": "COMP1117C",
+          "term": "2"
+        },
+        {
+          "sectionCode": "COMP1117D",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp1117.html"
+    },
+    {
+      "courseCode": "COMP2113",
+      "title": "Programming Technologies",
+      "categories": [
+        "Year 2 - Core"
+      ],
+      "terms": [
+        "1",
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP2113A",
+          "term": "1"
+        },
+        {
+          "sectionCode": "COMP2113B",
+          "term": "2"
+        },
+        {
+          "sectionCode": "COMP2113C",
+          "term": "2"
+        },
+        {
+          "sectionCode": "COMP2113D",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp2113.html"
+    },
+    {
+      "courseCode": "COMP2119",
+      "title": "Introduction to Data Structures and Algorithms",
+      "categories": [
+        "Year 2 - Core"
+      ],
+      "terms": [
+        "1",
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP2119A",
+          "term": "1"
+        },
+        {
+          "sectionCode": "COMP2119B",
+          "term": "1"
+        },
+        {
+          "sectionCode": "COMP2119C",
+          "term": "1"
+        },
+        {
+          "sectionCode": "COMP2119D",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp2119.html"
+    },
+    {
+      "courseCode": "COMP2120",
+      "title": "Computer Organization",
+      "categories": [
+        "Year 2 - Core"
+      ],
+      "terms": [
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP2120A",
+          "term": "2"
+        },
+        {
+          "sectionCode": "COMP2120B",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp2120.html"
+    },
+    {
+      "courseCode": "COMP2121",
+      "title": "Discrete Mathematics",
+      "categories": [
+        "Year 2 - Core"
+      ],
+      "terms": [
+        "1",
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP2121A",
+          "term": "1"
+        },
+        {
+          "sectionCode": "COMP2121B",
+          "term": "1"
+        },
+        {
+          "sectionCode": "COMP2121C",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp2121.html"
+    },
+    {
+      "courseCode": "COMP2396",
+      "title": "Object-oriented Programming and Java",
+      "categories": [
+        "Year 2 - Core"
+      ],
+      "terms": [
+        "1"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP2396A",
+          "term": "1"
+        },
+        {
+          "sectionCode": "COMP2396B",
+          "term": "1"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp2396.html"
+    },
+    {
+      "courseCode": "COMP2501",
+      "title": "Introduction to data science",
+      "categories": [
+        "Year 2 to 4 - Elective"
+      ],
+      "terms": [
+        "1",
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP2501A",
+          "term": "1"
+        },
+        {
+          "sectionCode": "COMP2501B",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp2501.html"
+    },
+    {
+      "courseCode": "COMP2502",
+      "title": "Computing Fundamentals (Minor in DS&E only)",
+      "categories": [
+        "Year 2 to 4 - Elective"
+      ],
+      "terms": [
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP2502",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp2502.html"
+    },
+    {
+      "courseCode": "COMP3160",
+      "title": "Web3.0 for Social Impact: An Innovative and Experiential Venture",
+      "categories": [
+        "Year 2 to 4 - Elective"
+      ],
+      "terms": [
+        "1"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3160",
+          "term": "1"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3160.html"
+    },
+    {
+      "courseCode": "COMP3230",
+      "title": "Principles of Operating Systems",
+      "categories": [
+        "Year 3 - Core"
+      ],
+      "terms": [
+        "1"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3230A",
+          "term": "1"
+        },
+        {
+          "sectionCode": "COMP3230B",
+          "term": "1"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3230.html"
+    },
+    {
+      "courseCode": "COMP3234",
+      "title": "Computer and Communication Networks",
+      "categories": [
+        "Year 3 - Core"
+      ],
+      "terms": [
+        "1",
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3234A",
+          "term": "1"
+        },
+        {
+          "sectionCode": "COMP3234B",
+          "term": "1"
+        },
+        {
+          "sectionCode": "COMP3234D",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3234.html"
+    },
+    {
+      "courseCode": "COMP3251",
+      "title": "Algorithm Design (Regular)",
+      "categories": [
+        "Year 3 - Core"
+      ],
+      "terms": [
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3251",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3251.html"
+    },
+    {
+      "courseCode": "COMP3252",
+      "title": "Algorithm Design and Analysis (Advanced)",
+      "categories": [
+        "Year 3 - Core"
+      ],
+      "terms": [
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3252",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3252.html"
+    },
+    {
+      "courseCode": "COMP3258",
+      "title": "Functional Programming",
+      "categories": [
+        "Year 2 to 4 - Elective"
+      ],
+      "terms": [
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3258",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3258.html"
+    },
+    {
+      "courseCode": "COMP3259",
+      "title": "Principles of Programming Languages",
+      "categories": [
+        "Year 2 to 4 - Elective"
+      ],
+      "terms": [
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3259",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3259.html"
+    },
+    {
+      "courseCode": "COMP3270",
+      "title": "Introduction to Artificial Intelligence",
+      "categories": [
+        "Year 2 to 4 - Elective"
+      ],
+      "terms": [
+        "1",
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3270A",
+          "term": "1"
+        },
+        {
+          "sectionCode": "COMP3270B",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3270.html"
+    },
+    {
+      "courseCode": "COMP3271",
+      "title": "Computer Graphics",
+      "categories": [
+        "Year 2 to 4 - Elective"
+      ],
+      "terms": [
+        "1"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3271",
+          "term": "1"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3271.html"
+    },
+    {
+      "courseCode": "COMP3278",
+      "title": "Introduction to Database Management Systems",
+      "categories": [
+        "Year 3 - Core"
+      ],
+      "terms": [
+        "1",
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3278A",
+          "term": "1"
+        },
+        {
+          "sectionCode": "COMP3278B",
+          "term": "2"
+        },
+        {
+          "sectionCode": "COMP3278C",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3278.html"
+    },
+    {
+      "courseCode": "COMP3297",
+      "title": "Software Engineering",
+      "categories": [
+        "Year 3 - Core"
+      ],
+      "terms": [
+        "1",
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3297A",
+          "term": "1"
+        },
+        {
+          "sectionCode": "COMP3297B",
+          "term": "2"
+        },
+        {
+          "sectionCode": "COMP3297C",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3297.html"
+    },
+    {
+      "courseCode": "COMP3312",
+      "title": "Law and Ethics in Data Science",
+      "categories": [
+        "Year 3 - Core"
+      ],
+      "terms": [
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3312",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3312.html"
+    },
+    {
+      "courseCode": "COMP3314",
+      "title": "Introduction to Machine Learning",
+      "categories": [
+        "Year 2 to 4 - Elective"
+      ],
+      "terms": [
+        "1",
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3314A",
+          "term": "1"
+        },
+        {
+          "sectionCode": "COMP3314B",
+          "term": "2"
+        },
+        {
+          "sectionCode": "COMP3314C",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3314.html"
+    },
+    {
+      "courseCode": "COMP3316",
+      "title": "Quantum Information and Computation",
+      "categories": [
+        "Year 2 to 4 - Elective"
+      ],
+      "terms": [
+        "1"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3316",
+          "term": "1"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3316.html"
+    },
+    {
+      "courseCode": "COMP3317",
+      "title": "Introduction to Computer Vision",
+      "categories": [
+        "Year 2 to 4 - Elective"
+      ],
+      "terms": [
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3317",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3317.html"
+    },
+    {
+      "courseCode": "COMP3322",
+      "title": "Modern Technologies on World Wide Web",
+      "categories": [
+        "Year 2 to 4 - Elective"
+      ],
+      "terms": [
+        "1",
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3322A",
+          "term": "1"
+        },
+        {
+          "sectionCode": "COMP3322B",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3322.html"
+    },
+    {
+      "courseCode": "COMP3323",
+      "title": "Advanced Database Systems",
+      "categories": [
+        "Year 2 to 4 - Elective"
+      ],
+      "terms": [
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3323",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3323.html"
+    },
+    {
+      "courseCode": "COMP3329",
+      "title": "Computer Game Design and Programming",
+      "categories": [
+        "Year 2 to 4 - Elective"
+      ],
+      "terms": [
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3329",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3329.html"
+    },
+    {
+      "courseCode": "COMP3330",
+      "title": "Interactive Mobile Application Design and Programming",
+      "categories": [
+        "Year 2 to 4 - Elective"
+      ],
+      "terms": [
+        "1"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3330",
+          "term": "1"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3330.html"
+    },
+    {
+      "courseCode": "COMP3340",
+      "title": "Introduction to Deep Learning",
+      "categories": [
+        "Year 2 to 4 - Elective"
+      ],
+      "terms": [
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3340",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3340.html"
+    },
+    {
+      "courseCode": "COMP3353",
+      "title": "Bioinformatics",
+      "categories": [
+        "Year 2 to 4 - Elective"
+      ],
+      "terms": [
+        "1"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3353",
+          "term": "1"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3353.html"
+    },
+    {
+      "courseCode": "COMP3354",
+      "title": "Statistical Learning",
+      "categories": [
+        "Year 2 to 4 - Elective"
+      ],
+      "terms": [
+        "1"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3354",
+          "term": "1"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3354.html"
+    },
+    {
+      "courseCode": "COMP3355",
+      "title": "Cyber Security",
+      "categories": [
+        "Year 2 to 4 - Elective"
+      ],
+      "terms": [
+        "1"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3355",
+          "term": "1"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3355.html"
+    },
+    {
+      "courseCode": "COMP3356",
+      "title": "Robotics",
+      "categories": [
+        "Year 2 to 4 - Elective"
+      ],
+      "terms": [
+        "1"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3356",
+          "term": "1"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3356.html"
+    },
+    {
+      "courseCode": "COMP3357",
+      "title": "Cryptography",
+      "categories": [
+        "Year 2 to 4 - Elective"
+      ],
+      "terms": [
+        "1"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3357",
+          "term": "1"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3357.html"
+    },
+    {
+      "courseCode": "COMP3358",
+      "title": "Distributed and Parallel Computing",
+      "categories": [
+        "Year 2 to 4 - Elective"
+      ],
+      "terms": [
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3358",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3358.html"
+    },
+    {
+      "courseCode": "COMP3360",
+      "title": "Data-driven Computer Animation",
+      "categories": [
+        "Year 2 to 4 - Elective"
+      ],
+      "terms": [
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3360",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3360.html"
+    },
+    {
+      "courseCode": "COMP3361",
+      "title": "Natural Language Processing",
+      "categories": [
+        "Year 2 to 4 - Elective"
+      ],
+      "terms": [
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3361",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3361.html"
+    },
+    {
+      "courseCode": "COMP3365",
+      "title": "Cyber Attack and Defense",
+      "categories": [
+        "Year 2 to 4 - Elective"
+      ],
+      "terms": [
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3365",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3365.html"
+    },
+    {
+      "courseCode": "COMP3366",
+      "title": "Quantum Algorithms and Computer Architecture",
+      "categories": [
+        "Year 2 to 4 - Elective"
+      ],
+      "terms": [
+        "1"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3366",
+          "term": "1"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3366.html"
+    },
+    {
+      "courseCode": "COMP3410",
+      "title": "Internship",
+      "categories": [
+        "Year 3 - Core"
+      ],
+      "terms": [
+        "1",
+        "summer"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3410A",
+          "term": "1"
+        },
+        {
+          "sectionCode": "COMP3410B",
+          "term": "summer"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3410.html"
+    },
+    {
+      "courseCode": "COMP3510",
+      "title": "Internship (DS&E)",
+      "categories": [
+        "Year 3 - Core"
+      ],
+      "terms": [
+        "summer"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3510",
+          "term": "summer"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3510.html"
+    },
+    {
+      "courseCode": "COMP3516",
+      "title": "Data Analytics for IoT",
+      "categories": [
+        "Year 2 to 4 - Elective"
+      ],
+      "terms": [
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3516",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3516.html"
+    },
+    {
+      "courseCode": "COMP3520",
+      "title": "Special Topics in Data Science",
+      "categories": [
+        "Year 2 to 4 - Elective"
+      ],
+      "terms": [
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3520",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3520.html"
+    },
+    {
+      "courseCode": "COMP3522",
+      "title": "Real-life Data Science",
+      "categories": [
+        "Year 3 - Core"
+      ],
+      "terms": [
+        "1"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3522",
+          "term": "1"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3522.html"
+    },
+    {
+      "courseCode": "COMP3523",
+      "title": "Security and Privacy in Artificial Intelligence",
+      "categories": [
+        "Year 2 to 4 - Elective"
+      ],
+      "terms": [
+        "1"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP3523",
+          "term": "1"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3523.html"
+    },
+    {
+      "courseCode": "COMP4501",
+      "title": "Data Science in Discipline Project",
+      "categories": [
+        "Year 4 - Core"
+      ],
+      "terms": [
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP4501",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp4501.html"
+    },
+    {
+      "courseCode": "COMP4502",
+      "title": "Final Year Project",
+      "categories": [
+        "Year 4 - Core"
+      ],
+      "terms": [
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP4502",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp4502.html"
+    },
+    {
+      "courseCode": "COMP4801",
+      "title": "Final Year Project",
+      "categories": [
+        "Year 4 - Core"
+      ],
+      "terms": [
+        "full year"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP4801",
+          "term": "full year"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp4801.html"
+    },
+    {
+      "courseCode": "COMP4805",
+      "title": "Project (2nd Major)",
+      "categories": [
+        "Year 4 - Core"
+      ],
+      "terms": [
+        "1"
+      ],
+      "sections": [
+        {
+          "sectionCode": "COMP4805",
+          "term": "1"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp4805.html"
+    },
+    {
+      "courseCode": "ENGG1330",
+      "title": "Computer Programming I (A1 - M2)",
+      "categories": [
+        "Year 1 - Core"
+      ],
+      "terms": [
+        "1"
+      ],
+      "sections": [
+        {
+          "sectionCode": "ENGG1330A",
+          "term": "1"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/engg1330.html"
+    },
+    {
+      "courseCode": "FITE1010",
+      "title": "Introduction to Financial Technologies",
+      "categories": [
+        "Year 1 - Core"
+      ],
+      "terms": [
+        "1"
+      ],
+      "sections": [
+        {
+          "sectionCode": "FITE1010",
+          "term": "1"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/fite1010.html"
+    },
+    {
+      "courseCode": "FITE2000",
+      "title": "Foundations of FinTech Programming",
+      "categories": [
+        "Year 1 - Core"
+      ],
+      "terms": [
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "FITE2000A",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/fite2000.html"
+    },
+    {
+      "courseCode": "FITE2010",
+      "title": "Distributed Ledger and Blockchain",
+      "categories": [
+        "Year 2 - Core"
+      ],
+      "terms": [
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "FITE2010",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/fite2010.html"
+    },
+    {
+      "courseCode": "FITE3010",
+      "title": "Big Data and Data Mining",
+      "categories": [
+        "Year 2 to 4 - Elective"
+      ],
+      "terms": [
+        "1"
+      ],
+      "sections": [
+        {
+          "sectionCode": "FITE3010",
+          "term": "1"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/fite3010.html"
+    },
+    {
+      "courseCode": "FITE3012",
+      "title": "E-payment and Crypto-currency",
+      "categories": [
+        "Year 2 to 4 - Elective"
+      ],
+      "terms": [
+        "2"
+      ],
+      "sections": [
+        {
+          "sectionCode": "FITE3012",
+          "term": "2"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/fite3012.html"
+    },
+    {
+      "courseCode": "FITE4801",
+      "title": "Project",
+      "categories": [
+        "Year 4 - Core"
+      ],
+      "terms": [
+        "full year"
+      ],
+      "sections": [
+        {
+          "sectionCode": "FITE4801",
+          "term": "full year"
+        }
+      ],
+      "officialUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/fite4801.html"
+    }
+  ]
+}

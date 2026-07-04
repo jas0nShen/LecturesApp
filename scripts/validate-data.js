@@ -1,5 +1,6 @@
 const assert = require('node:assert/strict');
 const seed = require('../data/seed.json');
+const hkuCdsOfferings = require('../data/hku-cds-offerings-2025.json');
 const mock = require('../miniprogram/utils/mockData');
 
 function assertUniqueIds(items, label) {
@@ -58,11 +59,27 @@ seed.requirements.forEach((requirement) => {
   );
 });
 
+assert.equal(hkuCdsOfferings.universityCode, 'HKU');
+assert.match(hkuCdsOfferings.academicYear, /^\d{4}-\d{2}$/);
+assert.match(hkuCdsOfferings.sourceUrl, /^https:\/\/www\.cs\.hku\.hk\//);
+assert(hkuCdsOfferings.courses.length >= 20, 'HKU CDS offering import is unexpectedly small');
+assertUniqueIds(
+  hkuCdsOfferings.courses.map((course, index) => ({ id: course.courseCode || index })),
+  'HKU CDS offerings'
+);
+hkuCdsOfferings.courses.forEach((course) => {
+  assert.match(course.courseCode, /^[A-Z]{4}\d{4}$/);
+  assert(course.title, `${course.courseCode} is missing a title`);
+  assert(course.terms.length > 0, `${course.courseCode} has no offering term`);
+  assert.match(course.officialUrl, /^https:\/\/www\.cs\.hku\.hk\//);
+});
+
 console.log(JSON.stringify({
   ok: true,
   universities: seed.universities.length,
   programmes: seed.programmes.length,
   majors: seed.majors.length,
   courses: seed.courses.length,
-  requirements: seed.requirements.length
+  requirements: seed.requirements.length,
+  hkuCdsOfferings: hkuCdsOfferings.courses.length
 }));
