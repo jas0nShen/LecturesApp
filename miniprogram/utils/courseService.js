@@ -303,6 +303,16 @@ function listMajorsFromMock(programmeId) {
   return data.majors.filter((item) => !programmeId || item.programmeId === Number(programmeId));
 }
 
+function listCurriculumYears(programmeId, majorId) {
+  return [...new Set(data.requirements
+    .filter((item) => (
+      (!programmeId || item.programmeId === Number(programmeId))
+      && (!majorId || item.majorId === Number(majorId))
+    ))
+    .map((item) => item.curriculumYear))]
+    .sort((a, b) => b.localeCompare(a));
+}
+
 function getCourse(courseId) {
   return data.courses.find((course) => course.id === Number(courseId));
 }
@@ -547,6 +557,7 @@ module.exports = {
   importUserData,
   listCourses,
   listCoursesRemote,
+  listCurriculumYears,
   listCourseOfferings,
   listCourseOfferingsRemote,
   listMajorsRemote,

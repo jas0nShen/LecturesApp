@@ -33,6 +33,8 @@ test('local course filters match programme, major, type, prerequisite and keywor
   assert.deepEqual(courses.map((course) => course.courseCode), ['COMP1117', 'COMP2121']);
   assert.deepEqual(service.listCourses({ programmeId: 999 }), []);
   assert.deepEqual(service.listCourses({ majorId: 999 }), []);
+  assert.deepEqual(service.listCurriculumYears(1, 1), ['2026']);
+  assert.deepEqual(service.listCurriculumYears(999, 999), []);
 });
 
 test('favorites are stored without duplicates and can be removed', () => {

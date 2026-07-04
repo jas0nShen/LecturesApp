@@ -6,13 +6,6 @@
       "nameEn": "The University of Hong Kong",
       "nameZh": "香港大学",
       "officialUrl": "https://www.hku.hk/"
-    },
-    {
-      "id": 2,
-      "code": "HKUST",
-      "nameEn": "The Hong Kong University of Science and Technology",
-      "nameZh": "香港科技大学",
-      "officialUrl": "https://hkust.edu.hk/"
     }
   ],
   "faculties": [

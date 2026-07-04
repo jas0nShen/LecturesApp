@@ -1,7 +1,7 @@
 <view class="page">
   <view class="section">
     <view class="title">设置你的课程范围</view>
-    <view class="subtitle">MVP 先用少量准确数据验证核心体验，后续再扩展更多学校和专业。</view>
+    <view class="subtitle">当前开放香港大学计算机科学，其他学校和专业会在数据核验完成后加入。</view>
   </view>
 
   <view class="section panel">

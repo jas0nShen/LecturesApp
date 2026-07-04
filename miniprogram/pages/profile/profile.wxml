@@ -1,7 +1,7 @@
 <view class="page">
   <view class="section">
     <view class="title">我的资料</view>
-    <view class="subtitle">MVP 暂时保存在本机，接入微信登录后会同步到服务端。</view>
+    <view class="subtitle">资料暂时保存在本机，可使用下方数据保险箱备份。</view>
   </view>
 
   <view class="section panel" wx:if="{{profile}}">
@@ -48,6 +48,6 @@
 
   <view class="section panel">
     <view class="panel-title">数据说明</view>
-    <view class="subtitle">当前为 MVP 示例数据。正式上线前，每门课程都会展示官方来源链接和最后核验时间；毕业检查仅供参考，以大学官方要求为准。</view>
+    <view class="subtitle">官方开课数据来自香港大学官网；毕业检查规则仍在持续核验，仅供规划参考，以大学官方要求为准。</view>
   </view>
 </view>

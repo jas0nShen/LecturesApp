@@ -8,7 +8,7 @@ Page({
     selectedUniversity: {},
     selectedProgramme: {},
     selectedMajor: {},
-    curriculumYears: ['2026', '2025', '2024'],
+    curriculumYears: [],
     curriculumYear: '2026',
     yearOptions: ['1', '2', '3', '4'],
     currentYear: '1'
@@ -25,6 +25,10 @@ Page({
     const majorsResult = await service.listMajorsRemote(selectedProgramme.id);
     const majors = majorsResult.data;
     const selectedMajor = majors.find((item) => item.id === (profile && profile.majorId)) || majors[0];
+    const curriculumYears = service.listCurriculumYears(selectedProgramme.id, selectedMajor.id);
+    const curriculumYear = profile && curriculumYears.includes(profile.curriculumYear)
+      ? profile.curriculumYear
+      : curriculumYears[0] || '';
 
     this.setData({
       universities,
@@ -33,7 +37,8 @@ Page({
       selectedUniversity,
       selectedProgramme,
       selectedMajor,
-      curriculumYear: profile ? profile.curriculumYear : '2026',
+      curriculumYears,
+      curriculumYear,
       currentYear: profile ? String(profile.currentYear) : '1'
     });
   },
@@ -47,12 +52,18 @@ Page({
       ? await service.listMajorsRemote(selectedProgramme.id)
       : { data: [] };
     const majors = majorsResult.data;
+    const selectedMajor = majors[0] || {};
+    const curriculumYears = selectedMajor.id
+      ? service.listCurriculumYears(selectedProgramme.id, selectedMajor.id)
+      : [];
     this.setData({
       selectedUniversity,
       programmes,
       selectedProgramme,
       majors,
-      selectedMajor: majors[0] || {}
+      selectedMajor,
+      curriculumYears,
+      curriculumYear: curriculumYears[0] || ''
     });
   },
 
@@ -60,15 +71,27 @@ Page({
     const selectedProgramme = this.data.programmes[Number(event.detail.value)];
     const majorsResult = await service.listMajorsRemote(selectedProgramme.id);
     const majors = majorsResult.data;
+    const selectedMajor = majors[0] || {};
+    const curriculumYears = selectedMajor.id
+      ? service.listCurriculumYears(selectedProgramme.id, selectedMajor.id)
+      : [];
     this.setData({
       selectedProgramme,
       majors,
-      selectedMajor: majors[0] || {}
+      selectedMajor,
+      curriculumYears,
+      curriculumYear: curriculumYears[0] || ''
     });
   },
 
   onMajorChange(event) {
-    this.setData({ selectedMajor: this.data.majors[Number(event.detail.value)] });
+    const selectedMajor = this.data.majors[Number(event.detail.value)];
+    const curriculumYears = service.listCurriculumYears(this.data.selectedProgramme.id, selectedMajor.id);
+    this.setData({
+      selectedMajor,
+      curriculumYears,
+      curriculumYear: curriculumYears[0] || ''
+    });
   },
 
   onCurriculumYearChange(event) {
@@ -80,8 +103,8 @@ Page({
   },
 
   save() {
-    if (!this.data.selectedMajor.id) {
-      wx.showToast({ title: '请选择 Major', icon: 'none' });
+    if (!this.data.selectedMajor.id || !this.data.curriculumYear) {
+      wx.showToast({ title: '当前专业还没有可用培养方案', icon: 'none' });
       return;
     }
 
