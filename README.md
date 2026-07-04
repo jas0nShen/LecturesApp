@@ -44,3 +44,16 @@ npm run dev:api
 ```text
 详情 -> 本地设置 -> 不校验合法域名、web-view（业务域名）、TLS 版本以及 HTTPS 证书
 ```
+
+## 数据维护
+
+`data/seed.json` 是 API 和小程序离线数据的唯一维护入口。修改后运行：
+
+```bash
+npm run sync:data
+npm run check
+```
+
+第一条命令会生成 `miniprogram/utils/mockData.js`，第二条命令会检查数据引用、官方链接、学分覆盖以及 API 和离线逻辑。
+
+当前课程目录参考 HKU 官方课程说明及 2025–26 Sample Study Plan；毕业检查规则仍是用于验证产品流程的简化示例，不能替代学校官方 Degree Audit。
