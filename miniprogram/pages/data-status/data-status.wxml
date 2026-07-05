@@ -1,0 +1,65 @@
+<view class="page" wx:if="{{status}}">
+  <view class="section status-head {{status.status}}">
+    <view class="status-seal">{{status.status === 'current' ? 'VERIFIED' : 'REVIEW'}}</view>
+    <view>
+      <view class="status-kicker">DATA PASSPORT · HKU</view>
+      <view class="title">{{status.statusLabel}}</view>
+      <view class="subtitle">{{status.status === 'current' ? '本地资料在设定的 90 天复核周期内。' : '资料已超过 90 天复核周期，使用前请核对官网。'}}</view>
+    </view>
+  </view>
+
+  <view class="section source-card">
+    <view class="source-index">01</view>
+    <view class="source-kicker">COURSE OFFERINGS</view>
+    <view class="source-title">官方开课目录 · {{status.offering.academicYear}}</view>
+    <view class="source-grid">
+      <view class="source-stat">
+        <view class="stat-value">{{status.offering.courseCount}}</view>
+        <view class="stat-label">门课程</view>
+      </view>
+      <view class="source-stat">
+        <view class="stat-value">{{status.offering.detailCount}}</view>
+        <view class="stat-label">门含完整详情</view>
+      </view>
+    </view>
+    <view class="source-row">
+      <view class="row-label">抓取日期</view>
+      <view>{{status.offering.updatedDate}}</view>
+    </view>
+    <view class="source-row">
+      <view class="row-label">距今</view>
+      <view>{{status.offering.ageDays}} 天</view>
+    </view>
+    <view class="source-action" data-url="{{status.offering.sourceUrl}}" bindtap="copySource">复制官方开课来源</view>
+  </view>
+
+  <view class="section source-card">
+    <view class="source-index">02</view>
+    <view class="source-kicker">CURRICULUM</view>
+    <view class="source-title">BEng(CompSc) · {{status.curriculum.curriculumYear}}</view>
+    <view class="source-grid">
+      <view class="source-stat">
+        <view class="stat-value">{{status.curriculum.totalCredits}}</view>
+        <view class="stat-label">总学分</view>
+      </view>
+      <view class="source-stat">
+        <view class="stat-value">{{status.curriculum.categoryCount}}</view>
+        <view class="stat-label">个学分类别</view>
+      </view>
+    </view>
+    <view class="source-row">
+      <view class="row-label">核验日期</view>
+      <view>{{status.curriculum.verifiedDate}}</view>
+    </view>
+    <view class="source-row">
+      <view class="row-label">距今</view>
+      <view>{{status.curriculum.ageDays}} 天</view>
+    </view>
+    <view class="source-action" data-url="{{status.curriculum.sourceUrl}}" bindtap="copySource">复制官方培养方案来源</view>
+  </view>
+
+  <view class="section method-note">
+    <view class="method-title">状态如何判断</view>
+    <view class="method-copy">页面显示的是随小程序发布的本地数据快照。任一主要来源超过 90 天未复核，就会标记为“需要复核”。这不代表 HKU 官网资料有误，只表示本地缓存可能需要更新。</view>
+  </view>
+</view>

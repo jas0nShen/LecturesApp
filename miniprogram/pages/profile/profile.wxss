@@ -60,6 +60,28 @@
   padding: 26rpx;
 }
 
+.data-entry {
+  align-items: center;
+  background: #fbfcfa;
+  border: 1rpx solid #dce6e0;
+  border-radius: 18rpx;
+  display: flex;
+  padding: 24rpx 26rpx;
+}
+
+.data-dot {
+  background: #0b6b55;
+  border: 7rpx solid #dcece6;
+  border-radius: 50%;
+  height: 22rpx;
+  width: 22rpx;
+}
+
+.data-dot.review {
+  background: #b26d20;
+  border-color: #f1e3d1;
+}
+
 .notes-mark {
   border: 2rpx solid #0b6b55;
   color: #0b6b55;

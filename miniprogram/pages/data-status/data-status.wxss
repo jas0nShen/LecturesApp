@@ -1,0 +1,140 @@
+.status-head {
+  align-items: center;
+  background: #17352c;
+  border-radius: 22rpx;
+  box-shadow: 0 14rpx 32rpx rgba(8, 45, 35, 0.18);
+  display: flex;
+  gap: 24rpx;
+  padding: 32rpx;
+}
+
+.status-head.review {
+  background: #65401e;
+}
+
+.status-seal {
+  border: 3rpx double #8fc4b4;
+  color: #a9d4c7;
+  flex: none;
+  font-size: 17rpx;
+  font-weight: 850;
+  letter-spacing: 1rpx;
+  padding: 14rpx 8rpx;
+  transform: rotate(-4deg);
+}
+
+.status-head.review .status-seal {
+  border-color: #d7b88e;
+  color: #ecd2ae;
+}
+
+.status-kicker {
+  color: #91c4b5;
+  font-size: 17rpx;
+  font-weight: 850;
+  letter-spacing: 2rpx;
+}
+
+.status-head .title {
+  color: #ffffff;
+  font-size: 36rpx;
+  margin-top: 8rpx;
+}
+
+.status-head .subtitle {
+  color: #b9d0c8;
+  font-size: 21rpx;
+}
+
+.source-card {
+  background: #fbfcfa;
+  border: 1rpx solid #dce6e0;
+  border-radius: 18rpx;
+  padding: 28rpx;
+  position: relative;
+}
+
+.source-index {
+  color: #d5e1dc;
+  font-size: 64rpx;
+  font-weight: 850;
+  position: absolute;
+  right: 24rpx;
+  top: 18rpx;
+}
+
+.source-kicker {
+  color: #0b6b55;
+  font-size: 18rpx;
+  font-weight: 850;
+  letter-spacing: 2rpx;
+}
+
+.source-title {
+  color: #17352c;
+  font-size: 29rpx;
+  font-weight: 800;
+  margin-top: 8rpx;
+  padding-right: 70rpx;
+}
+
+.source-grid {
+  background: #e8f1ed;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 24rpx;
+  padding: 20rpx;
+}
+
+.source-stat + .source-stat {
+  border-left: 1rpx solid #c7d9d1;
+  padding-left: 22rpx;
+}
+
+.stat-value {
+  color: #0b6b55;
+  font-size: 36rpx;
+  font-weight: 850;
+}
+
+.stat-label {
+  color: #718079;
+  font-size: 20rpx;
+}
+
+.source-row {
+  border-top: 1rpx solid #e5ebe8;
+  display: flex;
+  font-size: 23rpx;
+  justify-content: space-between;
+  padding: 18rpx 0;
+}
+
+.row-label {
+  color: #78877f;
+}
+
+.source-action {
+  color: #0b6b55;
+  font-size: 22rpx;
+  font-weight: 750;
+  padding-top: 8rpx;
+}
+
+.method-note {
+  border-left: 5rpx solid #8aa99c;
+  padding: 8rpx 0 8rpx 22rpx;
+}
+
+.method-title {
+  color: #43584f;
+  font-size: 24rpx;
+  font-weight: 800;
+}
+
+.method-copy {
+  color: #708078;
+  font-size: 21rpx;
+  line-height: 1.6;
+  margin-top: 8rpx;
+}

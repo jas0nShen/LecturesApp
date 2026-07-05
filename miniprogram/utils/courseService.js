@@ -37,6 +37,38 @@ function saveProfile(profile) {
   wx.setStorageSync('userProfile', profile);
 }
 
+function daysSince(dateValue, now) {
+  const timestamp = new Date(dateValue).getTime();
+  return Math.max(0, Math.floor((now.getTime() - timestamp) / 86400000));
+}
+
+function getDataStatus(now = new Date()) {
+  const programme = data.programmes[0];
+  const offeringAgeDays = daysSince(hkuOfferings.retrievedAt, now);
+  const curriculumAgeDays = daysSince(`${programme.curriculumVerifiedAt}T00:00:00+08:00`, now);
+  const stale = offeringAgeDays > 90 || curriculumAgeDays > 90;
+  return {
+    status: stale ? 'review' : 'current',
+    statusLabel: stale ? '需要复核' : '资料当前有效',
+    offering: {
+      academicYear: hkuOfferings.academicYear,
+      updatedDate: hkuOfferings.retrievedAt.slice(0, 10),
+      ageDays: offeringAgeDays,
+      courseCount: hkuOfferings.courses.length,
+      detailCount: hkuOfferings.courses.filter((course) => course.details).length,
+      sourceUrl: hkuOfferings.sourceUrl
+    },
+    curriculum: {
+      curriculumYear: programme.curriculumYear,
+      verifiedDate: programme.curriculumVerifiedAt,
+      ageDays: curriculumAgeDays,
+      totalCredits: programme.totalCreditRequired,
+      categoryCount: (programme.curriculumStructure || []).length,
+      sourceUrl: programme.curriculumSourceUrl
+    }
+  };
+}
+
 function getCourseSearchHistory() {
   return wx.getStorageSync('courseSearchHistory') || [];
 }
@@ -721,6 +753,7 @@ module.exports = {
   getCompletedOfferings,
   analyzeStudyPlan,
   getCourse,
+  getDataStatus,
   getCourseNote,
   getCourseNotes,
   getCourseSearchHistory,

@@ -12,6 +12,7 @@
     "pages/audit/audit",
     "pages/completed-courses/completed-courses",
     "pages/favorites/favorites",
+    "pages/data-status/data-status",
     "pages/profile/profile"
   ],
   "window": {

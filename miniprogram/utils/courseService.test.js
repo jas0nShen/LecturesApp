@@ -286,3 +286,18 @@ test('course search history is deduplicated, capped, backed up and clearable', (
   assert.deepEqual(service.clearCourseSearchHistory(), []);
   assert.deepEqual(service.getCourseSearchHistory(), []);
 });
+
+test('data status reports source coverage and freshness', () => {
+  const status = service.getDataStatus(new Date('2026-07-05T12:00:00+08:00'));
+  assert.equal(status.status, 'current');
+  assert.equal(status.offering.academicYear, '2025-26');
+  assert.equal(status.offering.courseCount, 56);
+  assert.equal(status.offering.detailCount, 56);
+  assert.equal(status.curriculum.totalCredits, 240);
+  assert.equal(status.curriculum.categoryCount, 7);
+
+  assert.equal(
+    service.getDataStatus(new Date('2026-11-01T12:00:00+08:00')).status,
+    'review'
+  );
+});
