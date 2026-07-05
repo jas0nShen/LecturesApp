@@ -224,6 +224,22 @@ test('study plan analysis flags unavailable terms, missing corequisites and heav
   assert(review.termLoads.some((load) => load.year === 1 && load.term === '1' && load.overloaded));
 });
 
+test('study plan can be formatted as grouped shareable text with checks', () => {
+  service.saveProfile({ programmeId: 1, curriculumYear: '2025-26' });
+  service.saveStudyPlanItem('COMP2113', 2, '2');
+  service.saveStudyPlanItem('COMP1117', 1, '1');
+
+  const text = service.formatStudyPlanText(new Date('2026-07-05T00:00:00Z'));
+  assert(text.includes('HKU BEng(CompSc) Study Plan'));
+  assert(text.includes('Curriculum: 2025-26'));
+  assert(text.includes('Generated: 2026-07-05'));
+  assert(text.indexOf('Year 1') < text.indexOf('Year 2'));
+  assert(text.includes('- COMP1117 Computer Programming (6 credits)'));
+  assert(text.includes('Total: 2 courses · 12 credits'));
+  assert(text.includes('Plan checks:'));
+  assert(!text.includes('courseNotes'));
+});
+
 test('user data can be exported and restored from a validated backup', () => {
   service.saveProfile({ universityCode: 'HKU', currentYear: 2 });
   service.toggleOfferingFavorite('COMP1117');

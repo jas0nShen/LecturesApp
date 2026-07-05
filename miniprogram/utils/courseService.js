@@ -453,6 +453,47 @@ function analyzeStudyPlan() {
   };
 }
 
+function formatStudyPlanText(now = new Date()) {
+  const courses = getStudyPlanCourses().slice().sort((left, right) => (
+    studyPlanPosition(left) - studyPlanPosition(right)
+    || left.courseCode.localeCompare(right.courseCode)
+  ));
+  const review = analyzeStudyPlan();
+  const profile = getProfile();
+  const lines = [
+    'HKU BEng(CompSc) Study Plan',
+    `Curriculum: ${(profile && profile.curriculumYear) || '2025-26'}`,
+    `Generated: ${now.toISOString().slice(0, 10)}`,
+    ''
+  ];
+
+  [1, 2, 3, 4].forEach((year) => {
+    const yearCourses = courses.filter((course) => course.plannedYear === year);
+    if (!yearCourses.length) return;
+    lines.push(`Year ${year}`);
+    ['1', '2', 'full year'].forEach((term) => {
+      const termCourses = yearCourses.filter((course) => course.plannedTerm === term);
+      if (!termCourses.length) return;
+      lines.push(term === 'full year' ? 'Full Year' : `Semester ${term}`);
+      termCourses.forEach((course) => {
+        const credits = Number((course.offering.details && course.offering.details.credits) || 0);
+        lines.push(`- ${course.courseCode} ${course.offering.title} (${credits} credits)`);
+      });
+    });
+    lines.push('');
+  });
+
+  lines.push(`Total: ${review.courseCount} courses · ${review.totalCredits} credits`);
+  if (review.notices.length) {
+    lines.push('', `Plan checks: ${review.noticeCount}`);
+    review.notices.forEach((notice) => lines.push(`- ${notice.message}`));
+  } else {
+    lines.push('', 'Plan checks: no current reminders');
+  }
+  lines.push('', 'For planning reference only. Confirm official timetable, prerequisites and degree requirements with HKU.');
+  return lines.join('\n');
+}
+
 function listCourses(filters = {}) {
   const keyword = (filters.keyword || '').trim().toLowerCase();
   return data.courses.filter((course) => {
@@ -768,6 +809,7 @@ module.exports = {
   buildAudit,
   buildAuditRemote,
   exportUserData,
+  formatStudyPlanText,
   getCompletedCourseIds,
   getCompletedOfferingCodes,
   getCompletedOfferings,

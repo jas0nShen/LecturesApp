@@ -20,6 +20,14 @@
     </view>
   </view>
 
+  <view class="plan-export {{review.courseCount ? '' : 'disabled'}}" bindtap="copyPlan">
+    <view>
+      <view class="export-title">复制四年计划</view>
+      <view class="export-copy">按学年和学期整理成可分享文本</view>
+    </view>
+    <view class="export-mark">COPY ↗</view>
+  </view>
+
   <view wx:if="{{review.notices.length}}" class="review-notes">
     <view class="review-title">计划检查</view>
     <view class="notice-legend">

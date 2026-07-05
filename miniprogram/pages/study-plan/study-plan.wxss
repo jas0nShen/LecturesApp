@@ -13,6 +13,20 @@
 .summary-value { color: #17352c; font-size: 34rpx; font-weight: 850; }
 .summary-label { color: #7a8982; font-size: 20rpx; margin-top: 4rpx; }
 .summary-item.attention .summary-value { color: #a66b13; }
+.plan-export {
+  align-items: center;
+  background: #17352c;
+  border-radius: 16rpx;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  margin: -10rpx 0 26rpx;
+  padding: 22rpx 24rpx;
+}
+.plan-export.disabled { opacity: 0.45; }
+.export-title { font-size: 25rpx; font-weight: 800; }
+.export-copy { color: #a9c1b8; font-size: 19rpx; margin-top: 4rpx; }
+.export-mark { border: 1rpx solid #66887c; color: #b9d4ca; font-size: 16rpx; font-weight: 800; letter-spacing: 1rpx; padding: 8rpx; }
 .review-notes {
   background: #fff7e8;
   border: 1rpx solid #ecd5a9;

@@ -43,6 +43,19 @@ Page({
     wx.switchTab({ url: '/pages/courses/courses' });
   },
 
+  copyPlan() {
+    if (!this.data.review.courseCount) {
+      wx.showToast({ title: '计划中还没有课程', icon: 'none' });
+      return;
+    }
+    wx.setClipboardData({
+      data: service.formatStudyPlanText(),
+      success() {
+        wx.showToast({ title: '四年计划已复制' });
+      }
+    });
+  },
+
   editCourse(event) {
     wx.navigateTo({
       url: `/pages/plan-course/plan-course?code=${event.currentTarget.dataset.code}`
