@@ -79,3 +79,4 @@ npm run check:release
 ```
 
 人工发布步骤见 [`docs/RELEASE_CHECKLIST.md`](docs/RELEASE_CHECKLIST.md)。
+可直接复制到微信后台的首发说明见 [`docs/REVIEW_SUBMISSION.md`](docs/REVIEW_SUBMISSION.md)。

@@ -19,6 +19,7 @@ function walkFiles(directory) {
 function checkReleaseReadiness(now = new Date()) {
   const project = readJson(path.join(MINI_ROOT, 'project.config.json'));
   const app = readJson(path.join(MINI_ROOT, 'app.json'));
+  const sitemap = readJson(path.join(MINI_ROOT, app.sitemapLocation || 'sitemap.json'));
   const seed = readJson(path.join(ROOT, 'data', 'seed.json'));
   const offerings = readJson(path.join(ROOT, 'data', 'hku-cds-offerings-2025.json'));
   const errors = [];
@@ -26,6 +27,14 @@ function checkReleaseReadiness(now = new Date()) {
 
   if (!/^wx[a-f0-9]{16}$/i.test(project.appid || '')) {
     errors.push('project.config.json does not contain a valid WeChat AppID');
+  }
+  if (project.setting && project.setting.uploadWithSourceMap !== false) {
+    errors.push('Source map upload must be disabled for the release build');
+  }
+  if (!sitemap.rules || !sitemap.rules.some((rule) => (
+    rule.action === 'disallow' && rule.page === '*'
+  ))) {
+    errors.push('sitemap.json must prevent personal and planning pages from being indexed');
   }
 
   const requiredExtensions = ['js', 'json', 'wxml', 'wxss'];
@@ -73,6 +82,22 @@ function checkReleaseReadiness(now = new Date()) {
     return !ignoredFiles.has(relative) && relative !== 'project.private.config.json';
   });
   const packageBytes = uploadFiles.reduce((sum, file) => sum + fs.statSync(file).size, 0);
+  const sourceText = walkFiles(MINI_ROOT)
+    .filter((file) => file.endsWith('.js') && !file.endsWith('.test.js'))
+    .map((file) => fs.readFileSync(file, 'utf8'))
+    .join('\n');
+  const sensitiveApis = [
+    'wx.getLocation',
+    'wx.chooseLocation',
+    'wx.getUserProfile',
+    'wx.getUserInfo',
+    'wx.getPhoneNumber',
+    'wx.chooseAddress',
+    'wx.chooseMedia'
+  ].filter((apiName) => sourceText.includes(apiName));
+  if (sensitiveApis.length) {
+    errors.push(`Sensitive APIs require a reviewed privacy declaration: ${sensitiveApis.join(', ')}`);
+  }
 
   warnings.push('Manual WeChat privacy declaration, category, filing and review checks are still required');
   warnings.push('Production HTTPS API is not configured; trial and release builds run offline');
@@ -86,7 +111,8 @@ function checkReleaseReadiness(now = new Date()) {
       offeringCount: offerings.courses.length,
       offeringAgeDays: Math.max(0, sourceAgeDays),
       uploadFileCount: uploadFiles.length,
-      packageBytes
+      packageBytes,
+      sensitiveApiCount: sensitiveApis.length
     }
   };
 }
