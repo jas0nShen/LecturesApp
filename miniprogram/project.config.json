@@ -30,7 +30,16 @@
     "projectname": "hong-kong-course-planner-mvp",
     "simulatorPluginLibVersion": {},
     "packOptions": {
-        "ignore": [],
+        "ignore": [
+            {
+                "type": "file",
+                "value": "utils/apiClient.test.js"
+            },
+            {
+                "type": "file",
+                "value": "utils/courseService.test.js"
+            }
+        ],
         "include": []
     },
     "editorSetting": {}

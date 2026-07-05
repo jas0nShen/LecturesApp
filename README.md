@@ -71,3 +71,11 @@ npm run sync:data
 ```
 
 导入结果保存在 `data/hku-cds-offerings-2025.json`，包括课程代码、班次、学期、学分、先修、共修、互斥条件、简介和官方来源链接。
+
+## 发布前检查
+
+```bash
+npm run check:release
+```
+
+人工发布步骤见 [`docs/RELEASE_CHECKLIST.md`](docs/RELEASE_CHECKLIST.md)。

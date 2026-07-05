@@ -8,6 +8,7 @@
     "import:hku:cds": "node scripts/import-hku-cds-offerings.js",
     "import:hku:details": "node scripts/import-hku-cds-details.js",
     "sync:data": "node scripts/generate-mock-data.js",
+    "check:release": "node scripts/check-release-readiness.js",
     "test": "node --test",
     "check": "node scripts/validate-data.js && node server/index.js --check && node --test"
   },
