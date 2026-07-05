@@ -113,7 +113,8 @@
 
     <view class="section detail-actions">
       <view class="button secondary" bindtap="copyOfficialUrl">复制官方链接</view>
-      <view class="button" bindtap="toggleFavorite">{{favorite ? '取消收藏' : '收藏课程'}}</view>
+      <button class="button secondary share-action" open-type="share">分享给好友</button>
+      <view class="button favorite-action" bindtap="toggleFavorite">{{favorite ? '取消收藏' : '收藏课程'}}</view>
       <view class="button completion-action {{completed ? 'secondary' : ''}}" bindtap="toggleCompleted">{{completed ? '取消已修标记' : '标记为已修'}}</view>
       <view class="button plan-action" bindtap="goPlanCourse">{{planLabel}}</view>
       <view class="source-note">数据源：{{dataSource === 'api' ? '本地 API' : '本地缓存'}}</view>

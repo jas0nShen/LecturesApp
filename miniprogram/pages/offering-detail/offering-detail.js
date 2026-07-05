@@ -107,5 +107,15 @@ Page({
       noteSaved: true
     });
     wx.showToast({ title: note ? '笔记已保存' : '笔记已清空' });
+  },
+
+  onShareAppMessage() {
+    if (!this.data.offering) {
+      return {
+        title: 'HKU 课程查询',
+        path: '/pages/courses/courses'
+      };
+    }
+    return service.getCourseShareInfo(this.data.offering.courseCode);
   }
 });

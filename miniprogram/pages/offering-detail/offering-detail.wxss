@@ -242,6 +242,22 @@
   grid-column: 1 / -1;
 }
 
+.favorite-action {
+  grid-column: 1 / -1;
+}
+
+.share-action {
+  border: 0;
+  box-sizing: border-box;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.share-action::after {
+  border: 0;
+}
+
 .plan-action {
   background: #17352c;
   grid-column: 1 / -1;

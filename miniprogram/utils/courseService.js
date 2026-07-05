@@ -736,6 +736,15 @@ function getCourseOffering(courseCode) {
   };
 }
 
+function getCourseShareInfo(courseCode) {
+  const data = getCourseOffering(courseCode);
+  if (!data) return null;
+  return {
+    title: `${data.offering.courseCode} · ${data.offering.title}`,
+    path: `/pages/offering-detail/offering-detail?code=${encodeURIComponent(data.offering.courseCode)}`
+  };
+}
+
 function getCourseOfferingRemote(courseCode) {
   return withFallback(
     () => api.request(`/api/course-offerings/${encodeURIComponent(String(courseCode).toUpperCase())}`),
@@ -820,6 +829,7 @@ module.exports = {
   getCourseNote,
   getCourseNotes,
   getCourseSearchHistory,
+  getCourseShareInfo,
   getCourseRemote,
   getCourseOffering,
   getCourseOfferingRemote,

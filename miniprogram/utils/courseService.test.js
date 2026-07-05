@@ -133,6 +133,15 @@ test('official offering detail falls back locally and enriches known courses', a
   assert(catalogueOnly.data.course.description);
 });
 
+test('course share info contains only a public title and deep link', () => {
+  assert.deepEqual(service.getCourseShareInfo('comp1117'), {
+    title: 'COMP1117 · Computer Programming',
+    path: '/pages/offering-detail/offering-detail?code=COMP1117'
+  });
+  assert.equal(service.getCourseShareInfo('UNKNOWN1000'), null);
+  assert(!JSON.stringify(service.getCourseShareInfo('COMP1117')).includes('note'));
+});
+
 test('official offering favorites are stored by stable course code', () => {
   assert.deepEqual(service.toggleOfferingFavorite('comp1117'), ['COMP1117']);
   assert.equal(service.isOfferingFavorite('COMP1117'), true);
