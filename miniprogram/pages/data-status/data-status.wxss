@@ -46,6 +46,52 @@
   font-size: 21rpx;
 }
 
+.runtime-card {
+  align-items: center;
+  background: #e7efeb;
+  border: 1rpx solid #c5d8cf;
+  border-radius: 16rpx;
+  display: flex;
+  justify-content: space-between;
+  padding: 24rpx 26rpx;
+}
+
+.runtime-kicker {
+  color: #71867c;
+  font-size: 16rpx;
+  font-weight: 850;
+  letter-spacing: 2rpx;
+}
+
+.runtime-title {
+  color: #17352c;
+  font-size: 25rpx;
+  font-weight: 800;
+  margin-top: 6rpx;
+}
+
+.runtime-copy {
+  color: #6c7d75;
+  font-size: 20rpx;
+  line-height: 1.45;
+  margin-top: 6rpx;
+  max-width: 540rpx;
+}
+
+.runtime-light {
+  background: #74887f;
+  border: 7rpx solid #d5e1dc;
+  border-radius: 50%;
+  flex: none;
+  height: 20rpx;
+  margin-left: 18rpx;
+  width: 20rpx;
+}
+
+.runtime-light.online {
+  background: #0b6b55;
+}
+
 .source-card {
   background: #fbfcfa;
   border: 1rpx solid #dce6e0;

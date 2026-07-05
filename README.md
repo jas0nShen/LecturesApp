@@ -39,7 +39,9 @@ npm run dev:api
 
 使用微信开发者工具导入 `miniprogram/` 目录即可。
 
-当前小程序会优先请求 `http://localhost:3000`，如果 API 没启动或开发者工具拦截本地请求，会自动回退到本地 mock 数据。
+开发版会优先请求 `http://localhost:3000`，如果 API 没启动或开发者工具拦截本地请求，会自动回退到本地 mock 数据。
+
+体验版和正式版在尚未配置生产 HTTPS API 时直接使用离线数据，不会请求用户设备上的 `localhost`。将来接入生产服务时，在 `miniprogram/utils/apiClient.js` 中为对应环境配置已加入微信合法域名的 HTTPS 地址。
 
 如果想在开发者工具里看到“数据源：本地 API”，需要在微信开发者工具里勾选：
 

@@ -8,6 +8,15 @@
     </view>
   </view>
 
+  <view class="section runtime-card">
+    <view>
+      <view class="runtime-kicker">RUNTIME MODE</view>
+      <view class="runtime-title">{{status.runtime.envLabel}} · {{status.runtime.modeLabel}}</view>
+      <view class="runtime-copy">{{status.runtime.apiEnabled ? '优先使用 localhost API，连接失败时自动读取离线数据。' : '当前版本不会请求 localhost，直接读取随小程序发布的离线数据。'}}</view>
+    </view>
+    <view class="runtime-light {{status.runtime.apiEnabled ? 'online' : 'offline'}}"></view>
+  </view>
+
   <view class="section source-card">
     <view class="source-index">01</view>
     <view class="source-kicker">COURSE OFFERINGS</view>

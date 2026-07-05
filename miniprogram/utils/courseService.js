@@ -50,6 +50,7 @@ function getDataStatus(now = new Date()) {
   return {
     status: stale ? 'review' : 'current',
     statusLabel: stale ? '需要复核' : '资料当前有效',
+    runtime: api.getRuntimeConfig(),
     offering: {
       academicYear: hkuOfferings.academicYear,
       updatedDate: hkuOfferings.retrievedAt.slice(0, 10),
