@@ -35,6 +35,7 @@ Page({
     ],
     offeringMeta: null,
     dataSource: 'loading',
+    searching: false,
     typeLabels: service.TYPE_LABELS,
     types: [
       { value: 'all', label: '全部' },
@@ -51,6 +52,14 @@ Page({
   },
 
   async refresh() {
+    if (this._searchTimer) {
+      clearTimeout(this._searchTimer);
+      this._searchTimer = null;
+    }
+    const requestId = (this._requestId || 0) + 1;
+    this._requestId = requestId;
+    this.setData({ searching: true });
+
     if (this.data.viewMode === 'offerings') {
       const result = await service.listCourseOfferingsRemote({
         academicYear: '2025-26',
@@ -59,6 +68,7 @@ Page({
         category: this.data.offeringCategory,
         year: this.data.offeringYear
       });
+      if (requestId !== this._requestId) return;
       this.setData({
         offerings: result.data.courses.map((course) => ({
           ...course,
@@ -70,7 +80,8 @@ Page({
           planned: service.isCoursePlanned(course.courseCode)
         })),
         offeringMeta: result.data,
-        dataSource: result.source
+        dataSource: result.source,
+        searching: false
       });
       return;
     }
@@ -83,13 +94,15 @@ Page({
       courseType: this.data.courseType,
       hasPrerequisite: this.data.hasPrerequisite
     });
+    if (requestId !== this._requestId) return;
     this.setData({
       courses: result.data.map((course) => ({
         ...course,
         favorite: service.isFavorite(course.id),
         completed: service.getCompletedCourseIds().includes(course.id)
       })),
-      dataSource: result.source
+      dataSource: result.source,
+      searching: false
     });
   },
 
@@ -111,12 +124,21 @@ Page({
   },
 
   onKeyword(event) {
-    this.setData({ keyword: event.detail.value });
-    this.refresh();
+    if (this._searchTimer) clearTimeout(this._searchTimer);
+    this._requestId = (this._requestId || 0) + 1;
+    this.setData({
+      keyword: event.detail.value,
+      searching: true
+    });
+    this._searchTimer = setTimeout(() => {
+      this._searchTimer = null;
+      this.refresh();
+    }, 250);
   },
 
   onSearchConfirm() {
     this.setData({ searchHistory: service.recordCourseSearch(this.data.keyword) });
+    this.refresh();
   },
 
   applySearch(event) {
@@ -202,5 +224,10 @@ Page({
     wx.navigateTo({
       url: `/pages/offering-detail/offering-detail?code=${event.currentTarget.dataset.code}`
     });
+  },
+
+  onUnload() {
+    if (this._searchTimer) clearTimeout(this._searchTimer);
+    this._requestId = (this._requestId || 0) + 1;
   }
 });

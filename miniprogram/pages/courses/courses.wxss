@@ -232,6 +232,7 @@
 .filter-chip { background: #fbfcfa; border-radius: 999rpx; }
 .filter-chip.active { background: #dfeee7; border-color: #a9cdbd; color: #0b6b55; }
 .source-line { color: #87978f; }
+.source-line.searching { color: #0b6b55; font-weight: 650; }
 .term-badge { color: #0b6b55; }
 .completed-mark { color: #0b6b55; }
 

@@ -32,7 +32,10 @@
         </view>
       </view>
     </view>
-    <view class="source-line">数据源：{{dataSource === 'api' ? '本地 API' : '本地缓存'}}</view>
+    <view class="source-line {{searching ? 'searching' : ''}}">
+      <block wx:if="{{searching}}">正在搜索…</block>
+      <block wx:else>数据源：{{dataSource === 'api' ? '本地 API' : '本地缓存'}}</block>
+    </view>
   </view>
 
   <block wx:if="{{viewMode === 'curriculum'}}">
