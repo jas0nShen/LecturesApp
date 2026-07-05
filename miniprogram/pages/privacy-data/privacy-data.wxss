@@ -1,0 +1,24 @@
+.privacy-head { background: #17352c; border-radius: 22rpx; box-shadow: 0 14rpx 32rpx rgba(8, 45, 35, 0.18); padding: 32rpx; }
+.privacy-kicker { color: #91c4b5; font-size: 18rpx; font-weight: 850; letter-spacing: 2rpx; }
+.privacy-head .title { color: #ffffff; font-size: 38rpx; margin-top: 12rpx; }
+.privacy-head .subtitle { color: #b9d0c8; }
+.summary-grid { display: grid; gap: 1rpx; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 22rpx; }
+.summary-item { border-left: 1rpx solid #dce6e0; text-align: center; }
+.summary-item:first-child { border-left: 0; }
+.summary-value { color: #0b6b55; font-size: 34rpx; font-weight: 850; }
+.summary-label { color: #74847c; font-size: 18rpx; margin-top: 4rpx; }
+.profile-state { background: #e8f1ed; color: #536c61; font-size: 21rpx; margin-top: 24rpx; padding: 14rpx; text-align: center; }
+.flow-card { background: #fbfcfa; border: 1rpx solid #dce6e0; border-radius: 18rpx; padding: 28rpx; }
+.flow-title { color: #17352c; font-size: 29rpx; font-weight: 800; }
+.flow-row { align-items: flex-start; border-top: 1rpx solid #e6ece9; display: flex; gap: 17rpx; margin-top: 20rpx; padding-top: 20rpx; }
+.flow-mark { border: 2rpx solid #0b6b55; color: #0b6b55; flex: none; font-size: 16rpx; font-weight: 850; padding: 7rpx; }
+.flow-mark.api { border-color: #526d84; color: #526d84; }
+.flow-mark.copy { border-color: #8a714f; color: #8a714f; }
+.flow-name { color: #263b33; font-size: 24rpx; font-weight: 750; }
+.flow-copy { color: #718079; font-size: 21rpx; line-height: 1.55; margin-top: 5rpx; }
+.action-card { background: #f3f5f4; border-radius: 18rpx; padding: 28rpx; }
+.action-copy { color: #6c7c74; font-size: 22rpx; line-height: 1.5; margin-top: 8rpx; }
+.backup-button, .delete-button { align-items: center; border-radius: 13rpx; display: flex; font-size: 24rpx; font-weight: 750; height: 80rpx; justify-content: center; margin-top: 20rpx; }
+.backup-button { background: #0b6b55; color: #ffffff; }
+.delete-button { border: 1rpx solid #c99993; color: #9b443d; margin-top: 12rpx; }
+.legal-note { color: #86928c; font-size: 19rpx; line-height: 1.55; padding: 0 10rpx; text-align: center; }

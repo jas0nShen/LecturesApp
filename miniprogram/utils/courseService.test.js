@@ -10,6 +10,9 @@ global.wx = {
   setStorageSync(key, value) {
     storage.set(key, value);
   },
+  removeStorageSync(key) {
+    storage.delete(key);
+  },
   request(options) {
     options.fail(new Error('API unavailable in fallback test'));
   }
@@ -300,4 +303,34 @@ test('data status reports source coverage and freshness', () => {
     service.getDataStatus(new Date('2026-11-01T12:00:00+08:00')).status,
     'review'
   );
+});
+
+test('user data summary counts local records and clear removes every user key', () => {
+  service.saveProfile({ programmeId: 1, curriculumYear: '2025-26' });
+  service.toggleOfferingFavorite('COMP1117');
+  service.toggleOfferingCompleted('COMP1117');
+  service.saveStudyPlanItem('COMP1117', 1, '1');
+  service.saveCourseNote('COMP1117', 'Remember this.');
+  service.recordRecentlyViewed('COMP1117');
+  service.recordCourseSearch('COMP');
+
+  assert.deepEqual(service.getUserDataSummary(), {
+    hasProfile: true,
+    favoriteCount: 1,
+    completedCount: 1,
+    studyPlanCount: 1,
+    noteCount: 1,
+    recentCount: 1,
+    searchCount: 1
+  });
+  assert.deepEqual(service.clearUserData(), {
+    hasProfile: false,
+    favoriteCount: 0,
+    completedCount: 0,
+    studyPlanCount: 0,
+    noteCount: 0,
+    recentCount: 0,
+    searchCount: 0
+  });
+  assert.deepEqual(service.exportUserData().data, {});
 });

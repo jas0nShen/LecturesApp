@@ -1,0 +1,43 @@
+<view class="page" wx:if="{{summary}}">
+  <view class="section privacy-head">
+    <view class="privacy-kicker">LOCAL-FIRST DATA</view>
+    <view class="title">你的数据，由你控制。</view>
+    <view class="subtitle">当前版本不要求登录，个人规划资料主要保存在这台设备的微信本地存储中。</view>
+  </view>
+
+  <view class="section panel">
+    <view class="panel-title">本机数据概览</view>
+    <view class="summary-grid">
+      <view class="summary-item"><view class="summary-value">{{summary.favoriteCount}}</view><view class="summary-label">收藏</view></view>
+      <view class="summary-item"><view class="summary-value">{{summary.completedCount}}</view><view class="summary-label">已修记录</view></view>
+      <view class="summary-item"><view class="summary-value">{{summary.studyPlanCount}}</view><view class="summary-label">计划课程</view></view>
+      <view class="summary-item"><view class="summary-value">{{summary.noteCount}}</view><view class="summary-label">课程笔记</view></view>
+    </view>
+    <view class="profile-state">{{summary.hasProfile ? '已保存学校与专业资料' : '尚未保存学校与专业资料'}}</view>
+  </view>
+
+  <view class="section flow-card">
+    <view class="flow-title">数据如何流动</view>
+    <view class="flow-row">
+      <view class="flow-mark local">本机</view>
+      <view><view class="flow-name">资料、收藏、Study Plan、笔记</view><view class="flow-copy">保存在微信本地存储；课程笔记不会发送给课程 API。</view></view>
+    </view>
+    <view class="flow-row">
+      <view class="flow-mark api">API</view>
+      <view><view class="flow-name">课程查询与毕业检查</view><view class="flow-copy">查询会发送筛选条件；毕业检查会发送专业、培养年份和已修课程标识，不包含姓名或课程笔记。</view></view>
+    </view>
+    <view class="flow-row">
+      <view class="flow-mark copy">复制</view>
+      <view><view class="flow-name">文本备份</view><view class="flow-copy">只有你点击“复制备份”时，数据才会写入系统剪贴板。</view></view>
+    </view>
+  </view>
+
+  <view class="section action-card">
+    <view class="panel-title">带走或删除数据</view>
+    <view class="action-copy">清除前可以先复制文本备份，以后仍能从“我的”页面恢复。</view>
+    <view class="backup-button" bindtap="copyBackup">复制完整备份</view>
+    <view class="delete-button" bindtap="clearAllData">清除全部本机数据</view>
+  </view>
+
+  <view class="section legal-note">这是当前版本的产品数据说明，不替代小程序正式发布时需要配置的平台隐私保护指引。</view>
+</view>

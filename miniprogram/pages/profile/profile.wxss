@@ -82,6 +82,15 @@
   border-color: #f1e3d1;
 }
 
+.privacy-icon {
+  border: 2rpx solid #71877d;
+  color: #60766c;
+  font-size: 15rpx;
+  font-weight: 850;
+  letter-spacing: 1rpx;
+  padding: 10rpx 7rpx;
+}
+
 .notes-mark {
   border: 2rpx solid #0b6b55;
   color: #0b6b55;

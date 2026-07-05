@@ -30,6 +30,10 @@ Page({
     wx.navigateTo({ url: '/pages/data-status/data-status' });
   },
 
+  goPrivacyData() {
+    wx.navigateTo({ url: '/pages/privacy-data/privacy-data' });
+  },
+
   copyBackup() {
     const backup = JSON.stringify(service.exportUserData());
     wx.setClipboardData({

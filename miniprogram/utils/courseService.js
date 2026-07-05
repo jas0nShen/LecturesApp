@@ -101,6 +101,26 @@ function exportUserData() {
   };
 }
 
+function getUserDataSummary() {
+  const favoriteCodes = new Set(
+    getFavoriteOfferingCodes().concat(getFavoriteCourses().map((course) => course.courseCode))
+  );
+  return {
+    hasProfile: Boolean(getProfile()),
+    favoriteCount: favoriteCodes.size,
+    completedCount: getCompletedOfferingCodes().length,
+    studyPlanCount: getStudyPlanItems().length,
+    noteCount: getCourseNotes().length,
+    recentCount: getRecentlyViewedOfferings().length,
+    searchCount: getCourseSearchHistory().length
+  };
+}
+
+function clearUserData() {
+  USER_DATA_KEYS.forEach((key) => wx.removeStorageSync(key));
+  return getUserDataSummary();
+}
+
 function importUserData(snapshot) {
   const parsed = typeof snapshot === 'string' ? JSON.parse(snapshot) : snapshot;
   if (!parsed || parsed.app !== 'lectures-app' || parsed.version !== 1 || !parsed.data) {
@@ -771,6 +791,7 @@ module.exports = {
   getStudyPlanCourses,
   getStudyPlanItem,
   getStudyPlanItems,
+  getUserDataSummary,
   isFavorite,
   isOfferingCompleted,
   isOfferingFavorite,
@@ -791,6 +812,7 @@ module.exports = {
   saveCourseNote,
   saveProfile,
   clearCourseSearchHistory,
+  clearUserData,
   toggleCompleted,
   toggleFavorite,
   toggleOfferingCompleted,

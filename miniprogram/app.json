@@ -13,6 +13,7 @@
     "pages/completed-courses/completed-courses",
     "pages/favorites/favorites",
     "pages/data-status/data-status",
+    "pages/privacy-data/privacy-data",
     "pages/profile/profile"
   ],
   "window": {
