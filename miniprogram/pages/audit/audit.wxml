@@ -57,7 +57,7 @@
 
   <view class="section panel">
     <view class="panel-title">优先建议</view>
-    <view wx:for="{{audit.recommendations}}" wx:key="course.id" class="recommendation">
+    <view wx:for="{{audit.recommendations}}" wx:key="index" class="recommendation">
       <view class="course-code">{{item.course.courseCode}}</view>
       <view class="subtitle">{{item.reason}}</view>
     </view>

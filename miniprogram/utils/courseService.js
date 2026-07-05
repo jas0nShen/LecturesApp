@@ -42,6 +42,17 @@ function daysSince(dateValue, now) {
   return Math.max(0, Math.floor((now.getTime() - timestamp) / 86400000));
 }
 
+function getRuntimeStatus() {
+  if (typeof api.getRuntimeConfig === 'function') return api.getRuntimeConfig();
+  return {
+    envVersion: 'develop',
+    envLabel: '开发版',
+    apiBaseUrl: api.API_BASE_URL || '',
+    apiEnabled: Boolean(api.API_BASE_URL),
+    modeLabel: api.API_BASE_URL ? '本地 API + 离线回退' : '离线数据'
+  };
+}
+
 function getDataStatus(now = new Date()) {
   const programme = data.programmes[0];
   const offeringAgeDays = daysSince(hkuOfferings.retrievedAt, now);
@@ -50,7 +61,7 @@ function getDataStatus(now = new Date()) {
   return {
     status: stale ? 'review' : 'current',
     statusLabel: stale ? '需要复核' : '资料当前有效',
-    runtime: api.getRuntimeConfig(),
+    runtime: getRuntimeStatus(),
     offering: {
       academicYear: hkuOfferings.academicYear,
       updatedDate: hkuOfferings.retrievedAt.slice(0, 10),
