@@ -109,6 +109,21 @@ tpgCatalogue.programmes.forEach((programme) => {
   assert(programme.name, `${programme.id} is missing a programme name`);
   assert(['programme', 'structure'].includes(programme.dataLevel));
   assert(Array.isArray(programme.courseGroups));
+  const courseCodes = [];
+  programme.courseGroups.forEach((group) => {
+    assert(group.name, `${programme.id} has an unnamed course group`);
+    assert(Array.isArray(group.courses), `${programme.id} has an invalid course group`);
+    group.courses.forEach((course) => {
+      assert(course.code, `${programme.id} has a course without a code`);
+      assert(course.name, `${programme.id} has a course without a name`);
+      courseCodes.push(course.code);
+    });
+  });
+  assert.equal(
+    new Set(courseCodes).size,
+    courseCodes.length,
+    `${programme.id} has duplicate course codes`
+  );
 });
 
 console.log(JSON.stringify({

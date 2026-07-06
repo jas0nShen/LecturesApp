@@ -10,7 +10,7 @@ module.exports = {
       "academicYear": "2025-26",
       "sourceFile": "HKU_Master_Course_Guide.pdf",
       "sourcePages": 251,
-      "programmeCount": 55,
+      "programmeCount": 62,
       "verificationStatus": "pdf_imported"
     },
     {
@@ -666,6 +666,220 @@ module.exports = {
       "name": "Master of Public Administration (MPA)",
       "faculty": "FACULTY OF SOCIAL SCIENCES",
       "creditsRequired": 60,
+      "sourceUrl": "",
+      "dataLevel": "structure",
+      "courseGroups": []
+    },
+    {
+      "id": "HKU-TPG-056",
+      "universityCode": "HKU",
+      "programmeCode": "",
+      "name": "Master of Data Science (MDASC)",
+      "faculty": "SCHOOL OF COMPUTING AND DATA SCIENCE",
+      "creditsRequired": 72,
+      "sourceUrl": "",
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "name": "Capstone / Project Options",
+          "creditsRequired": 12,
+          "courses": [
+            {
+              "code": "DASC8088",
+              "name": "Course Seminar / Capstone / Project"
+            },
+            {
+              "code": "DASC7600",
+              "name": "Data science project"
+            }
+          ]
+        },
+        {
+          "name": "Selectable Courses",
+          "creditsRequired": null,
+          "courses": [
+            {
+              "code": "COMP7404",
+              "name": "Computational intelligence and machine learning"
+            },
+            {
+              "code": "DASC7011",
+              "name": "Statistical inference for data science"
+            },
+            {
+              "code": "DASC7102",
+              "name": "Advanced statistical modelling for data science"
+            },
+            {
+              "code": "DASC7104",
+              "name": "Advanced database systems"
+            },
+            {
+              "code": "COMP7107",
+              "name": "Management of complex data types"
+            },
+            {
+              "code": "COMP7305",
+              "name": "Cluster and cloud computing"
+            },
+            {
+              "code": "COMP7409",
+              "name": "Machine learning in trading and finance"
+            },
+            {
+              "code": "COMP7503",
+              "name": "Multimedia technologies"
+            },
+            {
+              "code": "COMP7506",
+              "name": "Smart phone apps development"
+            },
+            {
+              "code": "COMP7507",
+              "name": "Visualization and visual analytics"
+            },
+            {
+              "code": "COMP7906",
+              "name": "Introduction to cyber security"
+            },
+            {
+              "code": "DASC7606",
+              "name": "Deep learning"
+            },
+            {
+              "code": "FITE7410",
+              "name": "Financial fraud analytics"
+            },
+            {
+              "code": "ICOM6044",
+              "name": "Data science for business"
+            },
+            {
+              "code": "ICOM7128",
+              "name": "Knowledge graphs"
+            },
+            {
+              "code": "STAT6008",
+              "name": "Advanced statistical inference"
+            },
+            {
+              "code": "STAT6013",
+              "name": "Financial data analysis"
+            },
+            {
+              "code": "STAT6015",
+              "name": "Advanced quantitative risk management"
+            },
+            {
+              "code": "STAT6016",
+              "name": "Spatial data analysis"
+            },
+            {
+              "code": "STAT6019",
+              "name": "Current topics in statistics"
+            },
+            {
+              "code": "STAT7008",
+              "name": "Programming for data science"
+            },
+            {
+              "code": "STAT8003",
+              "name": "Time series forecasting"
+            },
+            {
+              "code": "STAT8017",
+              "name": "Data mining techniques"
+            },
+            {
+              "code": "STAT8019",
+              "name": "Marketing analytics"
+            },
+            {
+              "code": "STAT8300",
+              "name": "Career development and communication workshop (Non-credit-bearing)"
+            },
+            {
+              "code": "STAT8306",
+              "name": "Statistical methods for network data"
+            },
+            {
+              "code": "STAT8307",
+              "name": "Natural language processing and text analytics"
+            },
+            {
+              "code": "STAT8308",
+              "name": "Blockchain data analytics"
+            },
+            {
+              "code": "STAT8309",
+              "name": "Monte Carlo simulation in finance"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HKU-TPG-057",
+      "universityCode": "HKU",
+      "programmeCode": "",
+      "name": "Master of Science in Computer Science - Cyber Security Stream (MSc(CompSc))",
+      "faculty": "SCHOOL OF COMPUTING AND DATA SCIENCE",
+      "creditsRequired": 72,
+      "sourceUrl": "",
+      "dataLevel": "structure",
+      "courseGroups": []
+    },
+    {
+      "id": "HKU-TPG-058",
+      "universityCode": "HKU",
+      "programmeCode": "",
+      "name": "Master of Science in Computer Science - Financial Computing Stream (MSc(CompSc))",
+      "faculty": "SCHOOL OF COMPUTING AND DATA SCIENCE",
+      "creditsRequired": 72,
+      "sourceUrl": "",
+      "dataLevel": "structure",
+      "courseGroups": []
+    },
+    {
+      "id": "HKU-TPG-059",
+      "universityCode": "HKU",
+      "programmeCode": "",
+      "name": "Master of Science in Computer Science - General Stream (MSc(CompSc))",
+      "faculty": "SCHOOL OF COMPUTING AND DATA SCIENCE",
+      "creditsRequired": 72,
+      "sourceUrl": "",
+      "dataLevel": "structure",
+      "courseGroups": []
+    },
+    {
+      "id": "HKU-TPG-060",
+      "universityCode": "HKU",
+      "programmeCode": "",
+      "name": "Master of Science in Computer Science - Multimedia Computing Stream (MSc(CompSc))",
+      "faculty": "SCHOOL OF COMPUTING AND DATA SCIENCE",
+      "creditsRequired": 72,
+      "sourceUrl": "",
+      "dataLevel": "structure",
+      "courseGroups": []
+    },
+    {
+      "id": "HKU-TPG-061",
+      "universityCode": "HKU",
+      "programmeCode": "",
+      "name": "Master of Science in Electronic Commerce and Internet Computing (MSc(ECom&IComp;))",
+      "faculty": "SCHOOL OF COMPUTING AND DATA SCIENCE",
+      "creditsRequired": 72,
+      "sourceUrl": "",
+      "dataLevel": "structure",
+      "courseGroups": []
+    },
+    {
+      "id": "HKU-TPG-062",
+      "universityCode": "HKU",
+      "programmeCode": "",
+      "name": "Master of Governance and Policy (MGP)",
+      "faculty": "SCHOOL OF GOVERNANCE AND POLICY",
+      "creditsRequired": 66,
       "sourceUrl": "",
       "dataLevel": "structure",
       "courseGroups": []

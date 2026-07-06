@@ -11,6 +11,7 @@ miniprogram/project.private.config.json
 # Build output and logs
 dist/
 build/
+tmp/
 *.log
 
 # macOS

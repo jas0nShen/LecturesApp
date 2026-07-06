@@ -113,6 +113,7 @@ def deduplicate(programmes: list[dict]) -> list[dict]:
 def parse_hku(text: str, university_code: str) -> list[dict]:
     raw_lines = text.replace("\x00", "").splitlines()
     programmes = []
+    organisation_prefixes = ("FACULTY OF ", "SCHOOL OF ", "DEPARTMENT OF ")
     for index, raw_line in enumerate(raw_lines):
         if clean(raw_line) != "Graduation Credit Requirement":
             continue
@@ -120,7 +121,7 @@ def parse_hku(text: str, university_code: str) -> list[dict]:
         while faculty_index >= 0 and not clean(raw_lines[faculty_index]):
             faculty_index -= 1
         faculty = clean(raw_lines[faculty_index]) if faculty_index >= 0 else ""
-        if not faculty.startswith("FACULTY OF "):
+        if not faculty.startswith(organisation_prefixes):
             continue
         name_lines = []
         cursor = faculty_index - 1
@@ -146,6 +147,36 @@ def parse_hku(text: str, university_code: str) -> list[dict]:
                 data_level="structure",
             )
         )
+
+    data_science = next(
+        (item for item in programmes if item["name"] == "Master of Data Science (MDASC)"),
+        None,
+    )
+    if data_science:
+        section = text.split("Master of Data Science (MDASC)", 1)[1]
+        section = section.split("Master of Science in Computer Science", 1)[0]
+        section_lines = [clean(line) for line in section.splitlines()]
+        courses = []
+        for index, line in enumerate(section_lines[:-1]):
+            if not re.fullmatch(r"[A-Z]{4}\d{4}", line):
+                continue
+            title = section_lines[index + 1]
+            if not title or title.startswith(("THE UNIVERSITY", "TAUGHT MASTER", "Confidential", "Page ")):
+                continue
+            courses.append({"code": line, "name": title})
+        capstone_codes = {"DASC8088", "DASC7600"}
+        data_science["courseGroups"] = [
+            {
+                "name": "Capstone / Project Options",
+                "creditsRequired": 12,
+                "courses": [course for course in courses if course["code"] in capstone_codes],
+            },
+            {
+                "name": "Selectable Courses",
+                "creditsRequired": None,
+                "courses": [course for course in courses if course["code"] not in capstone_codes],
+            },
+        ]
     return programmes
 
 
