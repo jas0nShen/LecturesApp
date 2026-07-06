@@ -55,3 +55,11 @@ test('WeChat review version description stays within the 200 character limit', (
   assert(versionDescription.includes('0.1.0'));
   assert(versionDescription.length <= 200);
 });
+
+test('MVP spec documents the six-school TPG launch scope', () => {
+  const mvpSpec = fs.readFileSync(path.join(ROOT, 'docs', 'MVP_SPEC.md'), 'utf8');
+  assert(mvpSpec.includes('六校授课硕士'));
+  assert(mvpSpec.includes('348 个 TPG Programme'));
+  assert(!mvpSpec.includes('多学校完整数据覆盖'));
+  assert(!mvpSpec.includes('本地 API mock 固定接口'));
+});
