@@ -40,6 +40,23 @@ Page({
     isTpg: false,
     tpgProfile: null,
     tpgNextSteps: [],
+    launchSteps: [
+      {
+        mark: '01',
+        title: '选择学校与 Programme',
+        copy: '六校授课硕士都可搜索，未拆课程的 Programme 也会保留来源入口。'
+      },
+      {
+        mark: '02',
+        title: '查看课程开放状态',
+        copy: '已拆课程组会显示必修/选修；未拆项目先展示 Programme 索引。'
+      },
+      {
+        mark: '03',
+        title: '确认本地数据说明',
+        copy: '收藏、计划和笔记保存在本机，可复制文本备份。'
+      }
+    ],
     tpgCoverage: tpgService.getSchoolCoverage()
   },
 
@@ -94,6 +111,10 @@ Page({
 
   goTpgCatalog() {
     wx.navigateTo({ url: '/pages/tpg-catalog/tpg-catalog' });
+  },
+
+  goPrivacyData() {
+    wx.navigateTo({ url: '/pages/privacy-data/privacy-data' });
   },
 
   goSelectedTpg() {
