@@ -1,10 +1,31 @@
 <view class="page">
   <view class="section">
-    <view class="title">设置你的课程范围</view>
-    <view class="subtitle">当前开放香港大学计算机科学，其他学校和专业会在数据核验完成后加入。</view>
+    <view class="title">选择你的课程范围</view>
+    <view class="subtitle">本科与授课硕士使用不同的培养方案结构，请先选择类型。</view>
   </view>
 
-  <view class="section panel">
+  <view class="section mode-switch">
+    <view
+      class="mode-option {{mode === 'undergraduate' ? 'mode-option-active' : ''}}"
+      data-mode="undergraduate"
+      bindtap="selectMode"
+    >
+      <view class="mode-mark">UG</view>
+      <view>本科</view>
+    </view>
+    <view
+      class="mode-option {{mode === 'tpg' ? 'mode-option-active' : ''}}"
+      data-mode="tpg"
+      bindtap="selectMode"
+    >
+      <view class="mode-mark">TPG</view>
+      <view>授课硕士</view>
+    </view>
+  </view>
+
+  <view wx:if="{{mode === 'undergraduate'}}" class="section panel">
+    <view class="scope-note">当前本科培养方案开放 HKU BEng Computer Science。</view>
+
     <view class="field">
       <view class="label">大学</view>
       <picker range="{{universities}}" range-key="nameZh" bindchange="onUniversityChange">
@@ -41,7 +62,40 @@
     </view>
 
     <view class="button-space">
-      <view class="button" bindtap="save">保存并开始</view>
+      <view class="button" bindtap="save">保存本科培养方案</view>
+    </view>
+  </view>
+
+  <view wx:else class="section panel tpg-panel">
+    <view class="scope-note tpg-note">六校已导入 {{tpgUniversities.length}} 所大学、{{tpgTotalProgrammes}} 个 Programme；课程结构按项目逐批核验。</view>
+
+    <view class="field">
+      <view class="label">大学</view>
+      <picker range="{{tpgUniversities}}" range-key="shortName" bindchange="onTpgUniversityChange">
+        <view class="select select-arrow">{{selectedTpgUniversity.shortName || '请选择大学'}}</view>
+      </picker>
+    </view>
+
+    <view class="field">
+      <view class="label">Programme</view>
+      <picker range="{{tpgProgrammes}}" range-key="name" bindchange="onTpgProgrammeChange">
+        <view class="select select-programme">{{selectedTpgProgramme.name || '请选择 Programme'}}</view>
+      </picker>
+    </view>
+
+    <view class="programme-proof">
+      <view class="proof-stamp">{{selectedTpgUniversity.code}}</view>
+      <view class="proof-main">
+        <view class="proof-label">当前数据状态</view>
+        <view class="proof-value">{{tpgCourseCount ? '已录入 ' + tpgCourseCount + ' 门课程' : 'Programme 索引已录入，课程待核验'}}</view>
+        <view class="proof-meta">{{selectedTpgUniversity.academicYear}} · {{selectedTpgProgramme.creditsRequired ? selectedTpgProgramme.creditsRequired + ' credits / units' : '学分待核验'}}</view>
+      </view>
+    </view>
+
+    <view class="tpg-explain">授课硕士通常以 Programme 或 Stream 区分方向，因此不再额外套用本科 Major。</view>
+
+    <view class="button-space">
+      <view class="button" bindtap="save">保存授课硕士 Programme</view>
     </view>
   </view>
 </view>

@@ -38,3 +38,109 @@
   min-height: 88rpx;
   padding: 0 24rpx;
 }
+
+.mode-switch {
+  background: #dfe9e4;
+  border-radius: 18rpx;
+  display: flex;
+  gap: 8rpx;
+  padding: 8rpx;
+}
+
+.mode-option {
+  align-items: center;
+  border-radius: 13rpx;
+  color: #66746d;
+  display: flex;
+  flex: 1;
+  font-size: 26rpx;
+  font-weight: 700;
+  gap: 14rpx;
+  justify-content: center;
+  min-height: 78rpx;
+}
+
+.mode-option-active {
+  background: #ffffff;
+  box-shadow: 0 6rpx 18rpx rgba(33, 65, 53, 0.1);
+  color: #113f34;
+}
+
+.mode-mark {
+  border: 1rpx solid currentColor;
+  font-size: 16rpx;
+  letter-spacing: 2rpx;
+  padding: 4rpx 7rpx;
+}
+
+.scope-note {
+  background: #eef3f0;
+  border-radius: 13rpx;
+  color: #607068;
+  font-size: 22rpx;
+  line-height: 1.55;
+  margin-bottom: 28rpx;
+  padding: 20rpx 22rpx;
+}
+
+.tpg-note {
+  background: #e4f0eb;
+  color: #31594a;
+}
+
+.select-programme {
+  align-items: flex-start;
+  line-height: 1.4;
+  min-height: 110rpx;
+  padding-bottom: 20rpx;
+  padding-top: 20rpx;
+}
+
+.programme-proof {
+  align-items: flex-start;
+  background: #123f34;
+  border-radius: 18rpx;
+  color: #ffffff;
+  display: flex;
+  gap: 24rpx;
+  margin-top: 10rpx;
+  padding: 26rpx;
+}
+
+.proof-stamp {
+  border: 2rpx solid #8fc7b1;
+  color: #a8d4c3;
+  font-size: 18rpx;
+  font-weight: 800;
+  letter-spacing: 2rpx;
+  padding: 8rpx 9rpx;
+  transform: rotate(-2deg);
+}
+
+.proof-main {
+  flex: 1;
+}
+
+.proof-label {
+  color: #9db9ae;
+  font-size: 19rpx;
+}
+
+.proof-value {
+  font-size: 27rpx;
+  font-weight: 750;
+  margin-top: 7rpx;
+}
+
+.proof-meta {
+  color: #afc7bd;
+  font-size: 20rpx;
+  margin-top: 9rpx;
+}
+
+.tpg-explain {
+  color: #708078;
+  font-size: 21rpx;
+  line-height: 1.55;
+  margin-top: 20rpx;
+}

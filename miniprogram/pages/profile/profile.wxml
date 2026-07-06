@@ -13,7 +13,7 @@
       <view class="label">Programme</view>
       <view>{{profile.programmeName}}</view>
     </view>
-    <view class="profile-row">
+    <view wx:if="{{profile.profileType !== 'tpg'}}" class="profile-row">
       <view class="label">Major</view>
       <view>{{profile.majorName}}</view>
     </view>
@@ -21,9 +21,13 @@
       <view class="label">Curriculum Year</view>
       <view>{{profile.curriculumYear}}</view>
     </view>
-    <view class="profile-row">
+    <view wx:if="{{profile.profileType !== 'tpg'}}" class="profile-row">
       <view class="label">当前年级</view>
       <view>Year {{profile.currentYear}}</view>
+    </view>
+    <view wx:if="{{profile.profileType === 'tpg'}}" class="profile-row">
+      <view class="label">课程资料</view>
+      <view>{{profile.courseCount ? '已录入 ' + profile.courseCount + ' 门' : '核验中'}}</view>
     </view>
   </view>
 

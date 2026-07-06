@@ -9,18 +9,30 @@ Page({
       totalProgress: 0
     },
     dataSource: 'loading',
-    recentCourses: []
+    recentCourses: [],
+    isTpg: false
   },
 
   async onShow() {
     const profile = service.getProfile();
-    const auditResult = await service.buildAuditRemote(profile);
+    const isTpg = profile && profile.profileType === 'tpg';
+    const auditResult = isTpg
+      ? {
+          data: {
+            completedCredits: 0,
+            totalCreditRequired: profile.creditsRequired || 0,
+            totalProgress: 0
+          },
+          source: 'catalogue'
+        }
+      : await service.buildAuditRemote(profile);
     const recentCourses = service.getRecentlyViewedOfferings().slice(0, 3).map((course) => ({
       ...course,
       termLabel: course.terms.join(' / ')
     }));
     this.setData({
       profile,
+      isTpg,
       audit: auditResult.data,
       recentCourses,
       dataSource: auditResult.source
@@ -49,6 +61,13 @@ Page({
 
   goTpgCatalog() {
     wx.navigateTo({ url: '/pages/tpg-catalog/tpg-catalog' });
+  },
+
+  goSelectedTpg() {
+    const profile = this.data.profile;
+    wx.navigateTo({
+      url: `/pages/tpg-programme/tpg-programme?id=${encodeURIComponent(profile.programmeId)}`
+    });
   },
 
   goRecentCourse(event) {

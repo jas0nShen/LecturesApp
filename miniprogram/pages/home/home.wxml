@@ -1,7 +1,7 @@
 <view class="page">
   <view class="section hero">
     <view>
-      <view class="hero-kicker">COURSE DESK · HKU</view>
+      <view class="hero-kicker">COURSE DESK · {{profile.universityCode || 'HKU'}}</view>
       <view class="title">今天，先把选课想清楚。</view>
       <view class="subtitle">查官方开课、记录已修课程，再看毕业要求还差多少。</view>
     </view>
@@ -18,14 +18,14 @@
   <view wx:else class="section panel">
     <view class="row">
       <view>
-        <view class="panel-title">{{profile.universityCode}} · {{profile.majorCode}}</view>
-        <view class="subtitle">{{profile.programmeName}} · Year {{profile.currentYear}}</view>
+        <view class="panel-title">{{profile.universityCode}} · {{isTpg ? 'TPG' : profile.majorCode}}</view>
+        <view class="subtitle">{{profile.programmeName}}{{isTpg ? '' : ' · Year ' + profile.currentYear}}</view>
       </view>
       <view class="edit-link" bindtap="goOnboarding">修改</view>
     </view>
   </view>
 
-  <view class="section grid">
+  <view wx:if="{{!isTpg}}" class="section grid">
     <view class="action-card" bindtap="goCourses">
       <view class="action-index">01</view>
       <view class="action-title">查课程</view>
@@ -53,6 +53,13 @@
     </view>
   </view>
 
+  <view wx:if="{{isTpg}}" class="section tpg-entry selected-tpg" bindtap="goSelectedTpg">
+    <view class="tpg-entry-mark">MY PROGRAMME · {{profile.curriculumYear}}</view>
+    <view class="tpg-entry-title">查看课程结构</view>
+    <view class="tpg-entry-copy">{{profile.courseCount ? '已录入 ' + profile.courseCount + ' 门课程' : '课程结构正在核验'}}</view>
+    <view class="tpg-entry-arrow">›</view>
+  </view>
+
   <view class="section tpg-entry" bindtap="goTpgCatalog">
     <view class="tpg-entry-mark">6 SCHOOLS · TPG</view>
     <view class="tpg-entry-title">授课硕士资料库</view>
@@ -74,7 +81,7 @@
     </view>
   </view>
 
-  <view class="section panel">
+  <view wx:if="{{!isTpg}}" class="section panel">
     <view class="progress-heading">
       <view class="panel-title">毕业进度预览</view>
       <view class="progress-number">{{audit.totalProgress}}%</view>
