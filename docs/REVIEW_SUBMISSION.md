@@ -86,5 +86,5 @@
 - 主体备案状态满足发布要求；
 - 微信后台用户隐私保护指引与上述行为一致；
 - iOS 和 Android 各完成一次体验版主流程测试；
-- 上传前执行 `npm run check` 和 `npm run check:release`；
+- 上传前执行 `npm run check:ship`；
 - 上传后不要立即发布，先提交审核。

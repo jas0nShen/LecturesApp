@@ -91,4 +91,4 @@ npm run check:ship
 | 分享入口 | ☐ | ☐ | 仅用户主动点击分享按钮触发 |
 | 审核材料 | ☐ | ☐ | `docs/REVIEW_SUBMISSION.md` 中字段可直接复制到微信后台 |
 
-如任一项未通过，先不要提交审核；修复后重新运行 `npm run check` 和 `npm run check:release`。
+如任一项未通过，先不要提交审核；修复后重新运行 `npm run check:ship`。
