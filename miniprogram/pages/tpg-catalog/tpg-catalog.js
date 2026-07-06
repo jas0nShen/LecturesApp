@@ -1,4 +1,5 @@
 const tpgService = require('../../utils/tpgService');
+const courseService = require('../../utils/courseService');
 
 const ALL_SCHOOLS = 'ALL';
 const coverage = tpgService.getSchoolCoverage();
@@ -14,10 +15,20 @@ Page({
     resultHint: '可按学校或关键词继续缩小范围',
     limitHint: '',
     totalProgrammes: coverage.programmeCount,
-    totalCourses: coverage.courseCount
+    totalCourses: coverage.courseCount,
+    selectedProfile: null
   },
 
   onLoad() {
+    this.refresh();
+  },
+
+  onShow() {
+    const profile = courseService.getProfile();
+    const selectedProfile = tpgService.getProfileSummary(profile);
+    this.setData({
+      selectedProfile: selectedProfile && selectedProfile.programme ? selectedProfile : null
+    });
     this.refresh();
   },
 
@@ -40,6 +51,14 @@ Page({
     const id = event.currentTarget.dataset.id;
     wx.navigateTo({
       url: `/pages/tpg-programme/tpg-programme?id=${encodeURIComponent(id)}`
+    });
+  },
+
+  goSelectedProgramme() {
+    const summary = this.data.selectedProfile;
+    if (!summary || !summary.programme) return;
+    wx.navigateTo({
+      url: `/pages/tpg-programme/tpg-programme?id=${encodeURIComponent(summary.programme.id)}`
     });
   },
 
@@ -70,8 +89,10 @@ Page({
       visibleProgrammes: visibleProgrammes.map((programme) => {
         const status = tpgService.getStatus(programme);
         const university = tpgService.getProgrammeUniversity(programme);
+        const selectedProgramme = this.data.selectedProfile && this.data.selectedProfile.programme;
         return {
           ...programme,
+          selected: Boolean(selectedProgramme && selectedProgramme.id === programme.id),
           academicYear: university.academicYear,
           courseCount: status.courseCount,
           statusLabel: status.hasCourseGroups

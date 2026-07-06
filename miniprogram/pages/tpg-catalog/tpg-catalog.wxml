@@ -19,6 +19,13 @@
     </view>
   </view>
 
+  <view wx:if="{{selectedProfile}}" class="selected-card" bindtap="goSelectedProgramme">
+    <view class="selected-mark">CURRENT PROGRAMME</view>
+    <view class="selected-title">{{selectedProfile.programme.name}}</view>
+    <view class="selected-copy">{{selectedProfile.schoolLabel}} · {{selectedProfile.yearLabel}} · {{selectedProfile.statusLabel}}</view>
+    <view class="selected-arrow">›</view>
+  </view>
+
   <scroll-view class="school-strip" scroll-x enhanced show-scrollbar="{{false}}">
     <view class="school-row">
       <view
@@ -61,7 +68,7 @@
     <view
       wx:for="{{visibleProgrammes}}"
       wx:key="id"
-      class="programme-card"
+      class="programme-card {{item.selected ? 'programme-card-selected' : ''}}"
       data-id="{{item.id}}"
       bindtap="goProgramme"
       hover-class="programme-card-active"
@@ -69,6 +76,7 @@
       <view class="programme-top">
         <view class="school-stamp">{{item.universityCode}}</view>
         <view class="programme-badges">
+          <view wx:if="{{item.selected}}" class="selected-badge">已选择</view>
           <view class="data-level {{item.courseCount ? 'data-level-ready' : ''}}">{{item.statusBadge}}</view>
           <view class="programme-arrow">›</view>
         </view>
