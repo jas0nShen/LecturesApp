@@ -3,7 +3,7 @@
     <view class="setup-card">
       <view class="setup-kicker">TPG FIRST</view>
       <view class="setup-title">先选择你的授课硕士 Programme</view>
-      <view class="setup-copy">课程页会根据你保存的 Programme 显示课程结构；未设置前不会默认展示本科示例数据。</view>
+      <view class="setup-copy">课程页会根据你保存的 Programme 显示课程状态；未设置前不会默认展示其他示例数据。</view>
       <view class="setup-stats">
         <view>
           <view class="setup-number">{{tpgCoverage.schoolCount}}</view>
@@ -33,7 +33,7 @@
       <view class="tpg-hero-foot">
         <view>
           <view class="tpg-number">{{tpgCourseCount}}</view>
-          <view class="tpg-number-label">已录入课程</view>
+          <view class="tpg-number-label">已开放课程</view>
         </view>
         <view class="tpg-seal">{{tpgCourseCount ? 'COURSES' : 'INDEX'}}</view>
       </view>

@@ -3,14 +3,14 @@
     <view>
       <view class="hero-kicker">COURSE DESK · {{profile.universityCode || '6 SCHOOLS TPG'}}</view>
       <view class="title">先找到你的 Programme。</view>
-      <view class="subtitle">首发支持六校授课硕士 Programme 索引；已核验的项目会显示课程结构。</view>
+      <view class="subtitle">首发支持六校授课硕士 Programme 索引；已开放课程组的项目会显示课程结构。</view>
     </view>
   </view>
 
   <view wx:if="{{!profile}}" class="section tpg-start-card">
     <view class="start-kicker">FIRST SETUP</view>
     <view class="panel-title">选择你的授课硕士 Programme</view>
-    <view class="subtitle">从港大、中大、科大、理大、城大、浸会的授课硕士资料开始；本科示例仍可在设置页切换。</view>
+    <view class="subtitle">从港大、中大、科大、理大、城大、浸会的授课硕士资料开始；保存 Programme 后即可查看课程状态。</view>
     <view class="start-stats">
       <view>
         <view class="start-number">{{tpgCoverage.schoolCount}}</view>
@@ -98,7 +98,7 @@
   <view class="section tpg-entry" bindtap="goTpgCatalog">
     <view class="tpg-entry-mark">6 SCHOOLS · TPG</view>
     <view class="tpg-entry-title">授课硕士资料库</view>
-    <view class="tpg-entry-copy">浏览六校 Programme，课程结构正在逐批核验</view>
+    <view class="tpg-entry-copy">浏览六校 Programme，查看课程清单开放状态</view>
     <view class="tpg-entry-arrow">›</view>
   </view>
 

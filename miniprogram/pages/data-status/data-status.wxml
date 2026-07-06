@@ -28,7 +28,7 @@
       <view>
         <view class="status-kicker">TPG DATA PASSPORT · 6 SCHOOLS</view>
         <view class="tpg-title">授课硕士资料库</view>
-        <view class="tpg-copy">用于首发版本的六校 Programme 索引；课程结构按项目逐批核验。</view>
+        <view class="tpg-copy">用于首发版本的六校 Programme 索引；已开放课程组的项目会显示课程结构。</view>
       </view>
       <view class="tpg-seal">PDF<br/>IMPORT</view>
     </view>
@@ -46,7 +46,7 @@
         <view class="stat-label">门已拆课程</view>
       </view>
     </view>
-    <view class="tpg-note-line">{{tpgStatus.programmeWithCoursesCount}} 个 Programme 已录入课程组；其余 Programme 先展示索引与来源，暂不生成毕业判断。</view>
+    <view class="tpg-note-line">{{tpgStatus.programmeWithCoursesCount}} 个 Programme 已开放课程组；其余 Programme 先展示索引与来源，暂不生成毕业判断。</view>
     <view class="source-action tpg-source-action" bindtap="copyTpgSources">复制六校 PDF 来源清单</view>
   </view>
 
