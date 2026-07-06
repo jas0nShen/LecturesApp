@@ -827,7 +827,224 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseGroups": [
+        {
+          "name": "Seminar / Capstone / Project Options",
+          "creditsRequired": null,
+          "courses": [
+            {
+              "code": "COMP7706",
+              "name": "Course Seminar / Capstone / Project"
+            },
+            {
+              "code": "COMP7412",
+              "name": "Course Seminar / Capstone / Project"
+            },
+            {
+              "code": "COMP7415",
+              "name": "Course Seminar / Capstone / Project"
+            }
+          ]
+        },
+        {
+          "name": "Selectable Courses",
+          "creditsRequired": null,
+          "courses": [
+            {
+              "code": "COMP7806",
+              "name": "Topic in information security"
+            },
+            {
+              "code": "COMP7901",
+              "name": "Legal protection of digital property"
+            },
+            {
+              "code": "COMP7903",
+              "name": "Digital investigation and forensics"
+            },
+            {
+              "code": "COMP7904",
+              "name": "Information security: attacks and defense"
+            },
+            {
+              "code": "COMP7905",
+              "name": "Reverse engineering and malware analysis"
+            },
+            {
+              "code": "COMP7906",
+              "name": "Introduction to cyber security"
+            },
+            {
+              "code": "FITE7410",
+              "name": "Financial fraud analytics"
+            },
+            {
+              "code": "COMP7103",
+              "name": "Data mining"
+            },
+            {
+              "code": "COMP7408",
+              "name": "Distributed ledger and blockchain technology"
+            },
+            {
+              "code": "COMP7802",
+              "name": "Introduction to financial computing"
+            },
+            {
+              "code": "COMP7808",
+              "name": "Topic in financial computing"
+            },
+            {
+              "code": "FITE7413",
+              "name": "Smart banking and innovative finance"
+            },
+            {
+              "code": "FITE7414",
+              "name": "Generative AI in financial services"
+            },
+            {
+              "code": "COMP7502",
+              "name": "Image processing and computer vision"
+            },
+            {
+              "code": "COMP7503",
+              "name": "Multimedia technologies"
+            },
+            {
+              "code": "COMP7504",
+              "name": "Pattern recognition and applications"
+            },
+            {
+              "code": "COMP7505",
+              "name": "User interface design and development"
+            },
+            {
+              "code": "COMP7506",
+              "name": "Smart phone apps development"
+            },
+            {
+              "code": "COMP7507",
+              "name": "Visualization and visual analytics"
+            },
+            {
+              "code": "COMP7604",
+              "name": "Game design and development"
+            },
+            {
+              "code": "COMP7807",
+              "name": "Topic in multimedia computing"
+            },
+            {
+              "code": "COMP7104",
+              "name": "Advanced database systems"
+            },
+            {
+              "code": "COMP7105",
+              "name": "Advanced topics in data science"
+            },
+            {
+              "code": "COMP7106",
+              "name": "Big data management"
+            },
+            {
+              "code": "COMP7107",
+              "name": "Management of complex data types"
+            },
+            {
+              "code": "COMP7108",
+              "name": "Network data analytics"
+            },
+            {
+              "code": "COMP7201",
+              "name": "Analysis and design of enterprise applications in UML"
+            },
+            {
+              "code": "COMP7305",
+              "name": "Cluster and cloud computing"
+            },
+            {
+              "code": "COMP7308",
+              "name": "Introduction to unmanned systems"
+            },
+            {
+              "code": "COMP7309",
+              "name": "Quantum computing and artificial intelligence"
+            },
+            {
+              "code": "COMP7310",
+              "name": "Artificial intelligence of things"
+            },
+            {
+              "code": "COMP7311",
+              "name": "Legal issues in artificial intelligence and data science"
+            },
+            {
+              "code": "COMP7404",
+              "name": "Computational intelligence and machine learning"
+            },
+            {
+              "code": "COMP7416",
+              "name": "FinTech and digital currencies"
+            },
+            {
+              "code": "COMP7602",
+              "name": "Introduction to bioinformatics"
+            },
+            {
+              "code": "COMP7607",
+              "name": "Natural language processing"
+            },
+            {
+              "code": "COMP7608",
+              "name": "Large language models"
+            },
+            {
+              "code": "COMP7610",
+              "name": "Introduction to Web3 and blockchain"
+            },
+            {
+              "code": "COMP7611",
+              "name": "Security and privacy in AI systems"
+            },
+            {
+              "code": "COMP7801",
+              "name": "Topic in computer science"
+            },
+            {
+              "code": "COMP7809",
+              "name": "Topic in artificial intelligence"
+            },
+            {
+              "code": "FITE7411",
+              "name": "RegTech in finance"
+            },
+            {
+              "code": "COMP7805",
+              "name": "Topic in computer network and systems"
+            },
+            {
+              "code": "COMP3311",
+              "name": "Legal aspects of computing"
+            },
+            {
+              "code": "DASC7606",
+              "name": "Deep learning"
+            },
+            {
+              "code": "FITE7405",
+              "name": "Techniques in computational finance"
+            },
+            {
+              "code": "FITE7406",
+              "name": "Software development for quantitative finance"
+            },
+            {
+              "code": "FITE7407",
+              "name": "Securities transaction banking"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "HKU-TPG-058",
@@ -838,7 +1055,224 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseGroups": [
+        {
+          "name": "Seminar / Capstone / Project Options",
+          "creditsRequired": null,
+          "courses": [
+            {
+              "code": "COMP7706",
+              "name": "Course Seminar / Capstone / Project"
+            },
+            {
+              "code": "COMP7412",
+              "name": "Course Seminar / Capstone / Project"
+            },
+            {
+              "code": "COMP7415",
+              "name": "Course Seminar / Capstone / Project"
+            }
+          ]
+        },
+        {
+          "name": "Selectable Courses",
+          "creditsRequired": null,
+          "courses": [
+            {
+              "code": "COMP7806",
+              "name": "Topic in information security"
+            },
+            {
+              "code": "COMP7901",
+              "name": "Legal protection of digital property"
+            },
+            {
+              "code": "COMP7903",
+              "name": "Digital investigation and forensics"
+            },
+            {
+              "code": "COMP7904",
+              "name": "Information security: attacks and defense"
+            },
+            {
+              "code": "COMP7905",
+              "name": "Reverse engineering and malware analysis"
+            },
+            {
+              "code": "COMP7906",
+              "name": "Introduction to cyber security"
+            },
+            {
+              "code": "FITE7410",
+              "name": "Financial fraud analytics"
+            },
+            {
+              "code": "COMP7103",
+              "name": "Data mining"
+            },
+            {
+              "code": "COMP7408",
+              "name": "Distributed ledger and blockchain technology"
+            },
+            {
+              "code": "COMP7802",
+              "name": "Introduction to financial computing"
+            },
+            {
+              "code": "COMP7808",
+              "name": "Topic in financial computing"
+            },
+            {
+              "code": "FITE7413",
+              "name": "Smart banking and innovative finance"
+            },
+            {
+              "code": "FITE7414",
+              "name": "Generative AI in financial services"
+            },
+            {
+              "code": "COMP7502",
+              "name": "Image processing and computer vision"
+            },
+            {
+              "code": "COMP7503",
+              "name": "Multimedia technologies"
+            },
+            {
+              "code": "COMP7504",
+              "name": "Pattern recognition and applications"
+            },
+            {
+              "code": "COMP7505",
+              "name": "User interface design and development"
+            },
+            {
+              "code": "COMP7506",
+              "name": "Smart phone apps development"
+            },
+            {
+              "code": "COMP7507",
+              "name": "Visualization and visual analytics"
+            },
+            {
+              "code": "COMP7604",
+              "name": "Game design and development"
+            },
+            {
+              "code": "COMP7807",
+              "name": "Topic in multimedia computing"
+            },
+            {
+              "code": "COMP7104",
+              "name": "Advanced database systems"
+            },
+            {
+              "code": "COMP7105",
+              "name": "Advanced topics in data science"
+            },
+            {
+              "code": "COMP7106",
+              "name": "Big data management"
+            },
+            {
+              "code": "COMP7107",
+              "name": "Management of complex data types"
+            },
+            {
+              "code": "COMP7108",
+              "name": "Network data analytics"
+            },
+            {
+              "code": "COMP7201",
+              "name": "Analysis and design of enterprise applications in UML"
+            },
+            {
+              "code": "COMP7305",
+              "name": "Cluster and cloud computing"
+            },
+            {
+              "code": "COMP7308",
+              "name": "Introduction to unmanned systems"
+            },
+            {
+              "code": "COMP7309",
+              "name": "Quantum computing and artificial intelligence"
+            },
+            {
+              "code": "COMP7310",
+              "name": "Artificial intelligence of things"
+            },
+            {
+              "code": "COMP7311",
+              "name": "Legal issues in artificial intelligence and data science"
+            },
+            {
+              "code": "COMP7404",
+              "name": "Computational intelligence and machine learning"
+            },
+            {
+              "code": "COMP7416",
+              "name": "FinTech and digital currencies"
+            },
+            {
+              "code": "COMP7602",
+              "name": "Introduction to bioinformatics"
+            },
+            {
+              "code": "COMP7607",
+              "name": "Natural language processing"
+            },
+            {
+              "code": "COMP7608",
+              "name": "Large language models"
+            },
+            {
+              "code": "COMP7610",
+              "name": "Introduction to Web3 and blockchain"
+            },
+            {
+              "code": "COMP7611",
+              "name": "Security and privacy in AI systems"
+            },
+            {
+              "code": "COMP7801",
+              "name": "Topic in computer science"
+            },
+            {
+              "code": "COMP7809",
+              "name": "Topic in artificial intelligence"
+            },
+            {
+              "code": "FITE7411",
+              "name": "RegTech in finance"
+            },
+            {
+              "code": "COMP7805",
+              "name": "Topic in computer network and systems"
+            },
+            {
+              "code": "COMP3311",
+              "name": "Legal aspects of computing"
+            },
+            {
+              "code": "DASC7606",
+              "name": "Deep learning"
+            },
+            {
+              "code": "FITE7405",
+              "name": "Techniques in computational finance"
+            },
+            {
+              "code": "FITE7406",
+              "name": "Software development for quantitative finance"
+            },
+            {
+              "code": "FITE7407",
+              "name": "Securities transaction banking"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "HKU-TPG-059",
@@ -849,7 +1283,224 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseGroups": [
+        {
+          "name": "Seminar / Capstone / Project Options",
+          "creditsRequired": null,
+          "courses": [
+            {
+              "code": "COMP7706",
+              "name": "Course Seminar / Capstone / Project"
+            },
+            {
+              "code": "COMP7412",
+              "name": "Course Seminar / Capstone / Project"
+            },
+            {
+              "code": "COMP7415",
+              "name": "Course Seminar / Capstone / Project"
+            }
+          ]
+        },
+        {
+          "name": "Selectable Courses",
+          "creditsRequired": null,
+          "courses": [
+            {
+              "code": "COMP7806",
+              "name": "Topic in information security"
+            },
+            {
+              "code": "COMP7901",
+              "name": "Legal protection of digital property"
+            },
+            {
+              "code": "COMP7903",
+              "name": "Digital investigation and forensics"
+            },
+            {
+              "code": "COMP7904",
+              "name": "Information security: attacks and defense"
+            },
+            {
+              "code": "COMP7905",
+              "name": "Reverse engineering and malware analysis"
+            },
+            {
+              "code": "COMP7906",
+              "name": "Introduction to cyber security"
+            },
+            {
+              "code": "FITE7410",
+              "name": "Financial fraud analytics"
+            },
+            {
+              "code": "COMP7103",
+              "name": "Data mining"
+            },
+            {
+              "code": "COMP7408",
+              "name": "Distributed ledger and blockchain technology"
+            },
+            {
+              "code": "COMP7802",
+              "name": "Introduction to financial computing"
+            },
+            {
+              "code": "COMP7808",
+              "name": "Topic in financial computing"
+            },
+            {
+              "code": "FITE7413",
+              "name": "Smart banking and innovative finance"
+            },
+            {
+              "code": "FITE7414",
+              "name": "Generative AI in financial services"
+            },
+            {
+              "code": "COMP7502",
+              "name": "Image processing and computer vision"
+            },
+            {
+              "code": "COMP7503",
+              "name": "Multimedia technologies"
+            },
+            {
+              "code": "COMP7504",
+              "name": "Pattern recognition and applications"
+            },
+            {
+              "code": "COMP7505",
+              "name": "User interface design and development"
+            },
+            {
+              "code": "COMP7506",
+              "name": "Smart phone apps development"
+            },
+            {
+              "code": "COMP7507",
+              "name": "Visualization and visual analytics"
+            },
+            {
+              "code": "COMP7604",
+              "name": "Game design and development"
+            },
+            {
+              "code": "COMP7807",
+              "name": "Topic in multimedia computing"
+            },
+            {
+              "code": "COMP7104",
+              "name": "Advanced database systems"
+            },
+            {
+              "code": "COMP7105",
+              "name": "Advanced topics in data science"
+            },
+            {
+              "code": "COMP7106",
+              "name": "Big data management"
+            },
+            {
+              "code": "COMP7107",
+              "name": "Management of complex data types"
+            },
+            {
+              "code": "COMP7108",
+              "name": "Network data analytics"
+            },
+            {
+              "code": "COMP7201",
+              "name": "Analysis and design of enterprise applications in UML"
+            },
+            {
+              "code": "COMP7305",
+              "name": "Cluster and cloud computing"
+            },
+            {
+              "code": "COMP7308",
+              "name": "Introduction to unmanned systems"
+            },
+            {
+              "code": "COMP7309",
+              "name": "Quantum computing and artificial intelligence"
+            },
+            {
+              "code": "COMP7310",
+              "name": "Artificial intelligence of things"
+            },
+            {
+              "code": "COMP7311",
+              "name": "Legal issues in artificial intelligence and data science"
+            },
+            {
+              "code": "COMP7404",
+              "name": "Computational intelligence and machine learning"
+            },
+            {
+              "code": "COMP7416",
+              "name": "FinTech and digital currencies"
+            },
+            {
+              "code": "COMP7602",
+              "name": "Introduction to bioinformatics"
+            },
+            {
+              "code": "COMP7607",
+              "name": "Natural language processing"
+            },
+            {
+              "code": "COMP7608",
+              "name": "Large language models"
+            },
+            {
+              "code": "COMP7610",
+              "name": "Introduction to Web3 and blockchain"
+            },
+            {
+              "code": "COMP7611",
+              "name": "Security and privacy in AI systems"
+            },
+            {
+              "code": "COMP7801",
+              "name": "Topic in computer science"
+            },
+            {
+              "code": "COMP7809",
+              "name": "Topic in artificial intelligence"
+            },
+            {
+              "code": "FITE7411",
+              "name": "RegTech in finance"
+            },
+            {
+              "code": "COMP7805",
+              "name": "Topic in computer network and systems"
+            },
+            {
+              "code": "COMP3311",
+              "name": "Legal aspects of computing"
+            },
+            {
+              "code": "DASC7606",
+              "name": "Deep learning"
+            },
+            {
+              "code": "FITE7405",
+              "name": "Techniques in computational finance"
+            },
+            {
+              "code": "FITE7406",
+              "name": "Software development for quantitative finance"
+            },
+            {
+              "code": "FITE7407",
+              "name": "Securities transaction banking"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "HKU-TPG-060",
@@ -860,7 +1511,224 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseGroups": [
+        {
+          "name": "Seminar / Capstone / Project Options",
+          "creditsRequired": null,
+          "courses": [
+            {
+              "code": "COMP7706",
+              "name": "Course Seminar / Capstone / Project"
+            },
+            {
+              "code": "COMP7412",
+              "name": "Course Seminar / Capstone / Project"
+            },
+            {
+              "code": "COMP7415",
+              "name": "Course Seminar / Capstone / Project"
+            }
+          ]
+        },
+        {
+          "name": "Selectable Courses",
+          "creditsRequired": null,
+          "courses": [
+            {
+              "code": "COMP7806",
+              "name": "Topic in information security"
+            },
+            {
+              "code": "COMP7901",
+              "name": "Legal protection of digital property"
+            },
+            {
+              "code": "COMP7903",
+              "name": "Digital investigation and forensics"
+            },
+            {
+              "code": "COMP7904",
+              "name": "Information security: attacks and defense"
+            },
+            {
+              "code": "COMP7905",
+              "name": "Reverse engineering and malware analysis"
+            },
+            {
+              "code": "COMP7906",
+              "name": "Introduction to cyber security"
+            },
+            {
+              "code": "FITE7410",
+              "name": "Financial fraud analytics"
+            },
+            {
+              "code": "COMP7103",
+              "name": "Data mining"
+            },
+            {
+              "code": "COMP7408",
+              "name": "Distributed ledger and blockchain technology"
+            },
+            {
+              "code": "COMP7802",
+              "name": "Introduction to financial computing"
+            },
+            {
+              "code": "COMP7808",
+              "name": "Topic in financial computing"
+            },
+            {
+              "code": "FITE7413",
+              "name": "Smart banking and innovative finance"
+            },
+            {
+              "code": "FITE7414",
+              "name": "Generative AI in financial services"
+            },
+            {
+              "code": "COMP7502",
+              "name": "Image processing and computer vision"
+            },
+            {
+              "code": "COMP7503",
+              "name": "Multimedia technologies"
+            },
+            {
+              "code": "COMP7504",
+              "name": "Pattern recognition and applications"
+            },
+            {
+              "code": "COMP7505",
+              "name": "User interface design and development"
+            },
+            {
+              "code": "COMP7506",
+              "name": "Smart phone apps development"
+            },
+            {
+              "code": "COMP7507",
+              "name": "Visualization and visual analytics"
+            },
+            {
+              "code": "COMP7604",
+              "name": "Game design and development"
+            },
+            {
+              "code": "COMP7807",
+              "name": "Topic in multimedia computing"
+            },
+            {
+              "code": "COMP7104",
+              "name": "Advanced database systems"
+            },
+            {
+              "code": "COMP7105",
+              "name": "Advanced topics in data science"
+            },
+            {
+              "code": "COMP7106",
+              "name": "Big data management"
+            },
+            {
+              "code": "COMP7107",
+              "name": "Management of complex data types"
+            },
+            {
+              "code": "COMP7108",
+              "name": "Network data analytics"
+            },
+            {
+              "code": "COMP7201",
+              "name": "Analysis and design of enterprise applications in UML"
+            },
+            {
+              "code": "COMP7305",
+              "name": "Cluster and cloud computing"
+            },
+            {
+              "code": "COMP7308",
+              "name": "Introduction to unmanned systems"
+            },
+            {
+              "code": "COMP7309",
+              "name": "Quantum computing and artificial intelligence"
+            },
+            {
+              "code": "COMP7310",
+              "name": "Artificial intelligence of things"
+            },
+            {
+              "code": "COMP7311",
+              "name": "Legal issues in artificial intelligence and data science"
+            },
+            {
+              "code": "COMP7404",
+              "name": "Computational intelligence and machine learning"
+            },
+            {
+              "code": "COMP7416",
+              "name": "FinTech and digital currencies"
+            },
+            {
+              "code": "COMP7602",
+              "name": "Introduction to bioinformatics"
+            },
+            {
+              "code": "COMP7607",
+              "name": "Natural language processing"
+            },
+            {
+              "code": "COMP7608",
+              "name": "Large language models"
+            },
+            {
+              "code": "COMP7610",
+              "name": "Introduction to Web3 and blockchain"
+            },
+            {
+              "code": "COMP7611",
+              "name": "Security and privacy in AI systems"
+            },
+            {
+              "code": "COMP7801",
+              "name": "Topic in computer science"
+            },
+            {
+              "code": "COMP7809",
+              "name": "Topic in artificial intelligence"
+            },
+            {
+              "code": "FITE7411",
+              "name": "RegTech in finance"
+            },
+            {
+              "code": "COMP7805",
+              "name": "Topic in computer network and systems"
+            },
+            {
+              "code": "COMP3311",
+              "name": "Legal aspects of computing"
+            },
+            {
+              "code": "DASC7606",
+              "name": "Deep learning"
+            },
+            {
+              "code": "FITE7405",
+              "name": "Techniques in computational finance"
+            },
+            {
+              "code": "FITE7406",
+              "name": "Software development for quantitative finance"
+            },
+            {
+              "code": "FITE7407",
+              "name": "Securities transaction banking"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "HKU-TPG-061",

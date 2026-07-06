@@ -177,6 +177,51 @@ def parse_hku(text: str, university_code: str) -> list[dict]:
                 "courses": [course for course in courses if course["code"] not in capstone_codes],
             },
         ]
+
+    computer_science_section = text.split(
+        "Master of Science in Computer Science - Cyber Security", 1
+    )
+    if len(computer_science_section) == 2:
+        section = computer_science_section[1].split(
+            "Master of Science in Computer Science - Financial", 1
+        )[0]
+        section_lines = [clean(line) for line in section.splitlines()]
+        title_fixes = {
+            "Financial fraud ana lytics": "Financial fraud analytics",
+            "Natur al language processing": "Natural language processing",
+            "/CSIS0311 Legal aspects of computing": "Legal aspects of computing",
+            "Deep learning Machine learning is a fast": "Deep learning",
+        }
+        excluded_codes = {"COMP7705", "COMP7409", "COMP7508", "COPM7805", "ECOM6004"}
+        courses = []
+        seen_codes = set()
+        for index, line in enumerate(section_lines[:-1]):
+            if not re.fullmatch(r"[A-Z]{4}\d{4}", line):
+                continue
+            if line in excluded_codes or line in seen_codes:
+                continue
+            title = title_fixes.get(section_lines[index + 1], section_lines[index + 1])
+            if not title or title.startswith(("THE UNIVERSITY", "TAUGHT MASTER", "Confidential", "Page ")):
+                continue
+            courses.append({"code": line, "name": title})
+            seen_codes.add(line)
+
+        capstone_codes = {"COMP7706", "COMP7412", "COMP7415"}
+        course_groups = [
+            {
+                "name": "Seminar / Capstone / Project Options",
+                "creditsRequired": None,
+                "courses": [course for course in courses if course["code"] in capstone_codes],
+            },
+            {
+                "name": "Selectable Courses",
+                "creditsRequired": None,
+                "courses": [course for course in courses if course["code"] not in capstone_codes],
+            },
+        ]
+        for programme in programmes:
+            if programme["name"].startswith("Master of Science in Computer Science - "):
+                programme["courseGroups"] = course_groups
     return programmes
 
 
