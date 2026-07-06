@@ -260,7 +260,8 @@
   padding: 22rpx;
 }
 
-.programme-proof {
+.programme-proof,
+.ug-proof {
   align-items: flex-start;
   background: #123f34;
   border-radius: 18rpx;
@@ -269,6 +270,25 @@
   gap: 24rpx;
   margin-top: 10rpx;
   padding: 26rpx;
+}
+
+.ug-proof {
+  background: #f8f3e7;
+  border: 1rpx solid #e8d6ad;
+  color: #17352c;
+}
+
+.ug-proof .proof-stamp {
+  border-color: #9b7840;
+  color: #795b2d;
+}
+
+.ug-proof .proof-label {
+  color: #8a714f;
+}
+
+.ug-proof .proof-meta {
+  color: #786b50;
 }
 
 .proof-stamp {

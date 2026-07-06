@@ -46,6 +46,10 @@
             {
                 "type": "file",
                 "value": "utils/feedbackService.test.js"
+            },
+            {
+                "type": "file",
+                "value": "utils/ugService.test.js"
             }
         ],
         "include": []
