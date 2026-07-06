@@ -63,3 +63,16 @@ test('MVP spec documents the six-school TPG launch scope', () => {
   assert(!mvpSpec.includes('多学校完整数据覆盖'));
   assert(!mvpSpec.includes('本地 API mock 固定接口'));
 });
+
+test('release-facing docs avoid stale launch terminology', () => {
+  [
+    'README.md',
+    'docs/RELEASE_CHECKLIST.md',
+    'docs/REVIEW_SUBMISSION.md',
+    'docs/HKU_2025_26_SOURCES.md'
+  ].forEach((relativePath) => {
+    const content = fs.readFileSync(path.join(ROOT, relativePath), 'utf8');
+    assert(!content.includes('Degree Audit'), `${relativePath} still mentions Degree Audit`);
+    assert(!content.includes('本地 API mock'), `${relativePath} still mentions 本地 API mock`);
+  });
+});

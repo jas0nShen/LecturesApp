@@ -14,7 +14,7 @@
 - `miniprogram/`：微信小程序源码
 - `data/seed.json`：首批示例数据
 - `data/tpg-programmes.json`：六校授课硕士 Programme 索引
-- `server/index.js`：本地 API mock server
+- `server/index.js`：本机调试服务
 - `database/schema.sql`：核心数据库表结构
 - `admin/README.md`：后台管理端规划
 - `docs/MVP_SPEC.md`：MVP 说明
