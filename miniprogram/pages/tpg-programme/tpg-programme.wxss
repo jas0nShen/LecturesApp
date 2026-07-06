@@ -143,6 +143,58 @@
   color: #51665c;
 }
 
+.current-range-card {
+  align-items: flex-start;
+  background: #fffaf0;
+  border: 1rpx solid #e8d6ad;
+  border-radius: 20rpx;
+  display: flex;
+  gap: 20rpx;
+  margin-top: 20rpx;
+  padding: 24rpx;
+}
+
+.current-range-active {
+  background: #e9f5ef;
+  border-color: #bdd9cc;
+}
+
+.current-range-mark {
+  border: 2rpx solid #9b7840;
+  color: #795b2d;
+  flex: none;
+  font-size: 16rpx;
+  font-weight: 850;
+  letter-spacing: 1rpx;
+  padding: 8rpx 10rpx;
+}
+
+.current-range-active .current-range-mark {
+  border-color: #17705a;
+  color: #0b6b55;
+}
+
+.current-range-main {
+  flex: 1;
+}
+
+.current-range-title {
+  color: #17352c;
+  font-size: 25rpx;
+  font-weight: 850;
+}
+
+.current-range-copy {
+  color: #6a604b;
+  font-size: 21rpx;
+  line-height: 1.5;
+  margin-top: 7rpx;
+}
+
+.current-range-active .current-range-copy {
+  color: #52675d;
+}
+
 .section,
 .source-card {
   background: #ffffff;

@@ -27,6 +27,16 @@
     </view>
   </view>
 
+  <view class="current-range-card {{isCurrentProgramme ? 'current-range-active' : ''}}">
+    <view class="current-range-mark">{{isCurrentProgramme ? 'SAVED LOCALLY' : 'NOT SAVED YET'}}</view>
+    <view class="current-range-main">
+      <view class="current-range-title">{{isCurrentProgramme ? '这是你当前的课程范围' : '保存后可作为你的课程范围'}}</view>
+      <view class="current-range-copy">
+        {{isCurrentProgramme ? '首页、资料库和毕业检查会优先使用这个 Programme；数据只保存在本机。' : '设为我的 Programme 后，首页和资料库会高亮它，收藏、计划与笔记仍只保存在本机。'}}
+      </view>
+    </view>
+  </view>
+
   <view wx:if="{{hasCourseGroups}}" class="section">
     <view class="section-kicker">COURSE STRUCTURE</view>
     <view
