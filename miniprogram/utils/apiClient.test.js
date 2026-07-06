@@ -27,7 +27,7 @@ test('development runtime enables the local API', async () => {
     envLabel: '开发版',
     apiBaseUrl: 'http://localhost:3000',
     apiEnabled: true,
-    modeLabel: '本地 API + 离线回退'
+    modeLabel: '本机服务 + 离线回退'
   });
   assert.deepEqual(await api.request('/health'), { ok: true });
   assert.equal(requestCount, 1);

@@ -49,7 +49,7 @@ function getRuntimeStatus() {
     envLabel: '开发版',
     apiBaseUrl: api.API_BASE_URL || '',
     apiEnabled: Boolean(api.API_BASE_URL),
-    modeLabel: api.API_BASE_URL ? '本地 API + 离线回退' : '离线数据'
+    modeLabel: api.API_BASE_URL ? '本机服务 + 离线回退' : '离线数据'
   };
 }
 

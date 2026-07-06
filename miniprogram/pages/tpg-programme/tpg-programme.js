@@ -49,7 +49,7 @@ Page({
   copyOfficialLink() {
     const url = this.data.programme && this.data.programme.sourceUrl;
     if (!url) {
-      wx.showToast({ title: '官方链接整理中', icon: 'none' });
+      wx.showToast({ title: '来源链接待补充', icon: 'none' });
       return;
     }
     wx.setClipboardData({

@@ -6,7 +6,7 @@
     </view>
     <view class="title course-heading">{{course.titleEn}}</view>
     <view class="subtitle">{{course.titleZh}}</view>
-    <view class="source-line">数据源：{{dataSource === 'api' ? '本地 API' : '本地缓存'}}</view>
+    <view class="source-line">数据源：{{dataSource === 'api' ? '开发环境服务' : '离线数据'}}</view>
     <view class="meta-grid">
       <view>
         <view class="meta-label">Credits</view>

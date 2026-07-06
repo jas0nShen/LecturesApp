@@ -30,7 +30,7 @@
     <view class="section tpg-audit-hero">
       <view class="audit-kicker light">{{tpgAudit.programme.universityCode}} · {{tpgAudit.university.academicYear}}</view>
       <view class="tpg-audit-title">{{tpgAudit.programme.name}}</view>
-      <view class="tpg-audit-faculty">{{tpgAudit.programme.faculty || 'Faculty 整理中'}}</view>
+      <view class="tpg-audit-faculty">{{tpgAudit.programme.faculty || 'Faculty 待确认'}}</view>
       <view class="tpg-audit-meter">
         <view>
           <view class="big-number">{{tpgAudit.totalCredits || '--'}}</view>
@@ -76,10 +76,10 @@
     <view wx:else class="section panel tpg-pending-panel">
       <view class="audit-kicker">NEXT DATA STEP</view>
       <view class="panel-title">先不计算毕业进度</view>
-      <view class="subtitle">这个 Programme 还没有完成必修/选修拆分。为避免给出错误 degree audit，当前只展示资料收录状态。</view>
+      <view class="subtitle">这个 Programme 的必修/选修课程组尚未开放。当前先展示资料收录状态，不生成毕业完成度。</view>
       <view class="recommendation">
         <view class="course-code">下一步</view>
-        <view class="subtitle">继续从 PDF/官网核验课程组，再开放逐项毕业检查。</view>
+        <view class="subtitle">课程组复核完成后，再开放逐项毕业检查。</view>
       </view>
     </view>
 
@@ -105,8 +105,8 @@
     <view class="progress-wrap">
       <view class="progress-bar" style="width: {{audit.totalProgress}}%;"></view>
     </view>
-    <view class="subtitle">已记录 {{audit.completedCredits}} / {{audit.totalCreditRequired}} credits；此比例不是官方毕业审核结果。</view>
-    <view class="source-line">数据源：{{dataSource === 'api' ? '本地 API' : '本地缓存'}}</view>
+    <view class="subtitle">已记录 {{audit.completedCredits}} / {{audit.totalCreditRequired}} credits；此比例不是学校官方审核结果。</view>
+    <view class="source-line">数据源：{{dataSource === 'api' ? '开发环境服务' : '离线数据'}}</view>
   </view>
 
   <view class="section curriculum-card">
@@ -160,7 +160,7 @@
       <view class="course-code">{{item.course.courseCode}}</view>
       <view class="subtitle">{{item.reason}}</view>
     </view>
-    <view wx:if="{{audit.recommendations.length === 0}}" class="subtitle">当前示例规则下暂无缺口。</view>
+    <view wx:if="{{audit.recommendations.length === 0}}" class="subtitle">当前规则下暂无明显缺口。</view>
   </view>
   </block>
 </view>

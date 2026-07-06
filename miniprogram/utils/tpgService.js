@@ -2,8 +2,8 @@ const catalogue = require('./tpgCatalog');
 
 const EMPTY_UNIVERSITY = {
   code: '',
-  shortName: '学校待核验',
-  academicYear: '待核验',
+  shortName: '学校待确认',
+  academicYear: '待确认',
   sourceFile: ''
 };
 
@@ -102,12 +102,12 @@ function getProfileSummary(profile) {
     courseCount,
     schoolLabel: university.shortName || profile.universityName || profile.universityCode,
     yearLabel: university.academicYear || profile.curriculumYear,
-    statusLabel: courseCount ? `已录入 ${courseCount} 门课程` : '课程结构正在核验',
+    statusLabel: courseCount ? `已录入 ${courseCount} 门课程` : '课程清单待开放',
     creditsLabel: programme && programme.creditsRequired
       ? `${programme.creditsRequired} credits / units`
       : profile.creditsRequired
         ? `${profile.creditsRequired} credits / units`
-        : '学分待核验'
+        : '学分待确认'
   };
 }
 

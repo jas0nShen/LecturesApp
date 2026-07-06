@@ -12,7 +12,7 @@
     <view>
       <view class="runtime-kicker">RUNTIME MODE</view>
       <view class="runtime-title">{{status.runtime.envLabel}} · {{status.runtime.modeLabel}}</view>
-      <view class="runtime-copy">{{status.runtime.apiEnabled ? '优先使用 localhost API，连接失败时自动读取离线数据。' : '当前版本不会请求 localhost，直接读取随小程序发布的离线数据。'}}</view>
+      <view class="runtime-copy">{{status.runtime.apiEnabled ? '开发环境会优先连接本机服务，连接失败时自动读取离线数据。' : '体验版与正式版直接读取随小程序发布的离线数据。'}}</view>
     </view>
     <view class="runtime-light {{status.runtime.apiEnabled ? 'online' : 'offline'}}"></view>
   </view>
@@ -40,7 +40,7 @@
         <view class="stat-label">门已拆课程</view>
       </view>
     </view>
-    <view class="tpg-note-line">{{tpgStatus.programmeWithCoursesCount}} 个 Programme 已录入课程组；其余 Programme 先展示索引与来源，避免误导毕业检查。</view>
+    <view class="tpg-note-line">{{tpgStatus.programmeWithCoursesCount}} 个 Programme 已录入课程组；其余 Programme 先展示索引与来源，暂不生成毕业判断。</view>
     <view class="source-action tpg-source-action" bindtap="copyTpgSources">复制六校 PDF 来源清单</view>
   </view>
 

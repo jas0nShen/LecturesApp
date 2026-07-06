@@ -37,8 +37,8 @@
       <view><view class="flow-name">资料、收藏、Study Plan、笔记</view><view class="flow-copy">保存在微信本地存储；课程笔记不会发送给课程 API。</view></view>
     </view>
     <view class="flow-row">
-      <view class="flow-mark api">API</view>
-      <view><view class="flow-name">课程查询与毕业检查</view><view class="flow-copy">{{dataStatus.runtime.apiEnabled ? '开发版可能请求本地 API；查询只包含筛选条件、专业、培养年份和课程标识，不包含姓名或课程笔记。' : '体验版与正式版跳过 localhost，直接读取离线数据；课程笔记不会上传。'}}</view></view>
+      <view class="flow-mark api">查询</view>
+      <view><view class="flow-name">课程查询与毕业检查</view><view class="flow-copy">{{dataStatus.runtime.apiEnabled ? '开发版可能连接本机服务；查询只包含筛选条件、专业、培养年份和课程标识，不包含姓名或课程笔记。' : '体验版与正式版直接读取离线数据；课程笔记不会上传。'}}</view></view>
     </view>
     <view class="flow-row">
       <view class="flow-mark copy">复制</view>

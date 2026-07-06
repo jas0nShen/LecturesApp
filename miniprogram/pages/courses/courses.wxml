@@ -29,7 +29,7 @@
     <view class="tpg-hero">
       <view class="tpg-eyebrow">{{tpgProgramme.universityCode}} · {{tpgUniversity.academicYear}}</view>
       <view class="tpg-title">{{tpgProgramme.name}}</view>
-      <view class="tpg-subtitle">{{tpgProgramme.faculty || 'Faculty 整理中'}}</view>
+      <view class="tpg-subtitle">{{tpgProgramme.faculty || 'Faculty 待确认'}}</view>
       <view class="tpg-hero-foot">
         <view>
           <view class="tpg-number">{{tpgCourseCount}}</view>
@@ -70,8 +70,8 @@
 
       <view wx:if="{{tpgCourseCount === 0}}" class="empty tpg-empty">
         <view class="empty-mark">PROGRAMME ADDED</view>
-        <view class="empty-title">这个 Programme 已收录，课程还在核验</view>
-        <view class="empty-copy">你可以先查看 Programme 详情和官方来源；我后续会继续补全更多学校的课程结构。</view>
+        <view class="empty-title">Programme 已收录，课程清单待开放</view>
+        <view class="empty-copy">你可以先查看 Programme 详情和资料来源；课程组完成复核后会在这里显示。</view>
       </view>
 
       <view wx:elif="{{tpgCourses.length === 0}}" class="empty">
@@ -127,7 +127,7 @@
     </view>
     <view class="source-line {{searching ? 'searching' : ''}}">
       <block wx:if="{{searching}}">正在搜索…</block>
-      <block wx:else>数据源：{{dataSource === 'api' ? '本地 API' : '本地缓存'}}</block>
+      <block wx:else>数据源：{{dataSource === 'api' ? '开发环境服务' : '离线数据'}}</block>
     </view>
   </view>
 

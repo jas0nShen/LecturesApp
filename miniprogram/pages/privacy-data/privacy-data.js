@@ -10,10 +10,10 @@ function buildLaunchBoundaries(dataStatus, tpgCoverage) {
     },
     {
       mark: '02',
-      title: dataStatus.runtime.apiEnabled ? '开发版可连本地 API' : '正式版离线运行',
+      title: dataStatus.runtime.apiEnabled ? '开发版可连接本机服务' : '正式版离线运行',
       copy: dataStatus.runtime.apiEnabled
-        ? '开发环境会优先请求本地 API；体验版和正式版会跳过 localhost，避免发布后请求失败。'
-        : '发布环境直接读取随包发布的数据快照，不请求 localhost。'
+        ? '开发环境会优先连接本机服务；体验版和正式版直接读取离线数据，避免发布后依赖开发环境。'
+        : '发布环境直接读取随包发布的数据快照，不依赖开发机或外部登录。'
     },
     {
       mark: '03',

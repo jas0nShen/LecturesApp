@@ -16,7 +16,7 @@ function buildTrustCards(tpgCoverage, dataStatus) {
     {
       label: '运行模式',
       value: dataStatus.runtime.apiEnabled ? 'DEV' : 'OFFLINE',
-      copy: dataStatus.runtime.apiEnabled ? '开发版可连本地 API' : '发布版读取本地数据'
+      copy: dataStatus.runtime.apiEnabled ? '开发版连接本机服务' : '发布版读取离线数据'
     }
   ];
 }

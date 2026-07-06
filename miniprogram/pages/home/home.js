@@ -12,17 +12,17 @@ function buildTpgNextSteps(summary) {
     },
     {
       status: hasCourses ? 'READY' : 'CHECKING',
-      title: hasCourses ? '课程结构可查看' : '课程结构核验中',
+      title: hasCourses ? '课程结构可查看' : '课程清单待开放',
       copy: hasCourses
         ? `${summary.statusLabel}，可以先浏览必修/选修分组。`
-        : '已保留 Programme 入口，后续补齐课程组后会直接显示。'
+        : '已保留 Programme 入口；课程组完成复核后会直接显示。'
     },
     {
       status: hasCourses ? 'NEXT' : 'SAFE',
-      title: hasCourses ? '下一步：对照官方要求' : '下一步：等待课程拆分',
+      title: hasCourses ? '下一步：对照官方要求' : '下一步：查看资料来源',
       copy: hasCourses
         ? '毕业检查页会展示课程组，但正式选课前仍以学校官网为准。'
-        : '为避免误导，暂不生成未核验 Programme 的毕业完成度。'
+        : '课程组未开放前，暂不生成该 Programme 的毕业完成度。'
     }
   ];
 }

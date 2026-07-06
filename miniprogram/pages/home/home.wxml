@@ -125,6 +125,6 @@
       <view class="progress-bar" style="width: {{audit.totalProgress}}%;"></view>
     </view>
     <view class="subtitle">已记录 {{audit.completedCredits}} / {{audit.totalCreditRequired}} credits</view>
-    <view class="source-line">数据源：{{dataSource === 'api' ? '本地 API' : '本地缓存'}}</view>
+    <view class="source-line">数据源：{{dataSource === 'api' ? '开发环境服务' : '离线数据'}}</view>
   </view>
 </view>

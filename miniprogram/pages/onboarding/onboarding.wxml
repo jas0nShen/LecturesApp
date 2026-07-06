@@ -110,7 +110,7 @@
         <view class="result-code">{{item.programmeCode || item.universityCode}}</view>
         <view class="result-main">
           <view class="result-name">{{item.name}}</view>
-          <view class="result-meta">{{item.faculty || 'Faculty 整理中'}} · {{item.creditsRequired ? item.creditsRequired + ' credits / units' : '学分待核验'}}</view>
+          <view class="result-meta">{{item.faculty || 'Faculty 待确认'}} · {{item.creditsRequired ? item.creditsRequired + ' credits / units' : '学分待确认'}}</view>
         </view>
       </view>
     </view>
@@ -124,7 +124,7 @@
       <view class="proof-main">
         <view class="proof-label">当前数据状态</view>
         <view class="proof-value">{{tpgCourseStatus}}</view>
-        <view class="proof-meta">{{selectedTpgUniversity.academicYear}} · {{selectedTpgProgramme.creditsRequired ? selectedTpgProgramme.creditsRequired + ' credits / units' : '学分待核验'}}</view>
+        <view class="proof-meta">{{selectedTpgUniversity.academicYear}} · {{selectedTpgProgramme.creditsRequired ? selectedTpgProgramme.creditsRequired + ' credits / units' : '学分待确认'}}</view>
       </view>
     </view>
 

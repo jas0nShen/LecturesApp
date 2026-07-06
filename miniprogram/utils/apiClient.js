@@ -22,7 +22,7 @@ function getRuntimeConfig() {
     envLabel: labels[envVersion] || envVersion,
     apiBaseUrl,
     apiEnabled: Boolean(apiBaseUrl),
-    modeLabel: apiBaseUrl ? '本地 API + 离线回退' : '离线数据'
+    modeLabel: apiBaseUrl ? '本机服务 + 离线回退' : '离线数据'
   };
 }
 

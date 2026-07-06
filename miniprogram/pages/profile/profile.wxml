@@ -78,7 +78,7 @@
         <view class="trust-copy">{{item.copy}}</view>
       </view>
     </view>
-    <view class="trust-note">资料随小程序离线发布；未完成课程拆分的 Programme 只展示索引，不生成毕业判断。</view>
+    <view class="trust-note">资料随小程序离线发布；课程组尚未开放的 Programme 只展示索引与来源，暂不生成毕业判断。</view>
   </view>
 
   <view class="section notes-entry" bindtap="goCourseNotes">
@@ -120,6 +120,6 @@
 
   <view class="section panel">
     <view class="panel-title">数据说明</view>
-    <view class="subtitle">{{isTpg ? '六校授课硕士资料来自你提供的 PDF 与本地核验流程；未拆分课程的 Programme 只展示索引，不做毕业判断。' : '官方开课数据来自香港大学官网；毕业检查规则仍在持续核验，仅供规划参考，以大学官方要求为准。'}}</view>
+    <view class="subtitle">{{isTpg ? '六校授课硕士资料来自 PDF 与本地复核；课程组尚未开放的 Programme 只展示索引与来源，暂不生成毕业判断。' : '官方开课数据来自香港大学官网；毕业检查仅供规划参考，以大学官方要求为准。'}}</view>
   </view>
 </view>
