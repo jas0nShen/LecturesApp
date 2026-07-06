@@ -114,3 +114,10 @@ test('TPG course page avoids misleading zero-course hero copy', () => {
   assert(coursesLogic.includes("status.hasCourseGroups ? allCourses.length : '待开放'"));
   assert(!coursesPage.includes('<view class="tpg-number">{{tpgCourseCount}}</view>'));
 });
+
+test('TPG catalogue copy describes availability instead of completeness', () => {
+  const cataloguePage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'tpg-catalog', 'tpg-catalog.wxml'), 'utf8');
+
+  assert(cataloguePage.includes('课程组开放状态'));
+  assert(!cataloguePage.includes('资料完整度'));
+});

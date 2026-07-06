@@ -2,7 +2,7 @@
   <view class="hero">
     <view class="hero-index">TPG / SIX SCHOOLS</view>
     <view class="hero-title">先找到你的 Programme</view>
-    <view class="hero-copy">已从六校资料建立 Programme 索引。必修与选修课程仍在逐项核验，页面会明确标记资料完整度。</view>
+    <view class="hero-copy">已从六校资料建立 Programme 索引。必修与选修课程仍在逐项核验，页面会明确标记课程组开放状态。</view>
     <view class="hero-stats">
       <view class="hero-stat">
         <view class="hero-stat-value">{{universities.length}}</view>
