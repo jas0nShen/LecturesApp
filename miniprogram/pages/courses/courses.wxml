@@ -32,8 +32,8 @@
       <view class="tpg-subtitle">{{tpgProgramme.faculty || 'Faculty 待确认'}}</view>
       <view class="tpg-hero-foot">
         <view>
-          <view class="tpg-number">{{tpgCourseCount}}</view>
-          <view class="tpg-number-label">已开放课程</view>
+          <view class="tpg-number {{tpgCourseCount ? '' : 'text-status'}}">{{tpgCourseCountDisplay}}</view>
+          <view class="tpg-number-label">{{tpgCourseCountLabel}}</view>
         </view>
         <view class="tpg-seal">{{tpgCourseCount ? 'COURSES' : 'INDEX'}}</view>
       </view>

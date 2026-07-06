@@ -442,6 +442,11 @@
   letter-spacing: -2rpx;
 }
 
+.tpg-number.text-status {
+  font-size: 40rpx;
+  letter-spacing: 0;
+}
+
 .tpg-number-label {
   color: #a9c1b8;
   font-size: 20rpx;

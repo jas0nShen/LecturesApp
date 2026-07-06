@@ -104,3 +104,13 @@ test('TPG audit page avoids misleading zero-course copy', () => {
   assert(auditLogic.includes('点击查看 Programme 来源、学分与收录状态'));
   assert(!auditPage.includes('{{tpgAudit.courseCount}} 门课程已开放'));
 });
+
+test('TPG course page avoids misleading zero-course hero copy', () => {
+  const coursesPage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'courses', 'courses.wxml'), 'utf8');
+  const coursesLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'courses', 'courses.js'), 'utf8');
+
+  assert(coursesPage.includes('tpgCourseCountDisplay'));
+  assert(coursesPage.includes('tpgCourseCountLabel'));
+  assert(coursesLogic.includes("status.hasCourseGroups ? allCourses.length : '待开放'"));
+  assert(!coursesPage.includes('<view class="tpg-number">{{tpgCourseCount}}</view>'));
+});

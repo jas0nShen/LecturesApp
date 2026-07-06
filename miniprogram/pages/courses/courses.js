@@ -50,6 +50,8 @@ Page({
     tpgUniversity: null,
     tpgCourses: [],
     tpgCourseCount: 0,
+    tpgCourseCountDisplay: '',
+    tpgCourseCountLabel: '',
     tpgStatusTitle: '',
     tpgStatusCopy: '',
     needsSetup: false,
@@ -80,6 +82,8 @@ Page({
         tpgUniversity: null,
         tpgCourses: [],
         tpgCourseCount: 0,
+        tpgCourseCountDisplay: '',
+        tpgCourseCountLabel: '',
         courses: [],
         offerings: [],
         searching: false,
@@ -104,6 +108,8 @@ Page({
         tpgUniversity,
         tpgCourses,
         tpgCourseCount: allCourses.length,
+        tpgCourseCountDisplay: status.hasCourseGroups ? allCourses.length : '待开放',
+        tpgCourseCountLabel: status.hasCourseGroups ? '已开放课程' : '课程清单',
         tpgStatusTitle: status.hasCourseGroups ? '课程结构已开放' : '课程清单待开放',
         tpgStatusCopy: status.hasCourseGroups
           ? '这里显示你所选授课硕士 Programme 已拆分出的必修、选修或项目课程。'
@@ -120,7 +126,9 @@ Page({
       tpgProgramme: null,
       tpgUniversity: null,
       tpgCourses: [],
-      tpgCourseCount: 0
+      tpgCourseCount: 0,
+      tpgCourseCountDisplay: '',
+      tpgCourseCountLabel: ''
     });
 
     if (this.data.viewMode === 'offerings') {
