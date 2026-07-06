@@ -47,3 +47,13 @@ test('TPG programme search matches names, codes, faculties and course text', () 
     (programme) => programme.name.includes('Computer Science')
   ));
 });
+
+test('TPG programme source text is copyable even without a direct URL', () => {
+  const programme = tpgService.getProgramme('HKU-TPG-001');
+  const sourceText = tpgService.buildProgrammeSourceText(programme);
+
+  assert(sourceText.includes('HKU · Master of Architecture'));
+  assert(sourceText.includes('Source file: HKU_Master_Course_Guide.pdf'));
+  assert(sourceText.includes('Academic year: 2025-26'));
+  assert(sourceText.includes('For planning reference only'));
+});

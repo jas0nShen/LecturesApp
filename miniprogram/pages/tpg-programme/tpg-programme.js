@@ -47,15 +47,13 @@ Page({
   },
 
   copyOfficialLink() {
-    const url = this.data.programme && this.data.programme.sourceUrl;
-    if (!url) {
-      wx.showToast({ title: '来源链接待补充', icon: 'none' });
-      return;
-    }
+    const programme = this.data.programme;
+    if (!programme) return;
+    const data = programme.sourceUrl || tpgService.buildProgrammeSourceText(programme);
     wx.setClipboardData({
-      data: url,
-      success() {
-        wx.showToast({ title: '官方链接已复制' });
+      data,
+      success: () => {
+        wx.showToast({ title: programme.sourceUrl ? '官方链接已复制' : '资料来源已复制' });
       }
     });
   },

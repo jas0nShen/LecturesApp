@@ -146,14 +146,12 @@ Page({
 
   copyTpgSource() {
     const programme = this.data.tpgAudit && this.data.tpgAudit.programme;
-    if (!programme || !programme.sourceUrl) {
-      wx.showToast({ title: '来源链接待补充', icon: 'none' });
-      return;
-    }
+    if (!programme) return;
+    const data = programme.sourceUrl || tpgService.buildProgrammeSourceText(programme);
     wx.setClipboardData({
-      data: programme.sourceUrl,
-      success() {
-        wx.showToast({ title: '官方链接已复制' });
+      data,
+      success: () => {
+        wx.showToast({ title: programme.sourceUrl ? '官方链接已复制' : '资料来源已复制' });
       }
     });
   }

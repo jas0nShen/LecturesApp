@@ -36,6 +36,20 @@ function getProgrammeUniversity(programme) {
   return getUniversity(programme && programme.universityCode);
 }
 
+function buildProgrammeSourceText(programme) {
+  if (!programme) return '';
+  const university = getProgrammeUniversity(programme);
+  return [
+    `${programme.universityCode} · ${programme.name}`,
+    programme.faculty ? `Faculty: ${programme.faculty}` : '',
+    programme.creditsRequired ? `Credits / units: ${programme.creditsRequired}` : '',
+    programme.sourceUrl ? `Official URL: ${programme.sourceUrl}` : '',
+    `Source file: ${university.sourceFile || 'PDF source pending'}`,
+    `Academic year: ${university.academicYear || '待确认'}`,
+    'Note: For planning reference only. Please confirm final requirements with the university official website and course selection system.'
+  ].filter(Boolean).join('\n');
+}
+
 function flattenCourses(programme, keyword = '') {
   if (!programme) return [];
   const normalized = normalizeKeyword(keyword);
@@ -149,6 +163,7 @@ function getSchoolCoverage() {
 }
 
 module.exports = {
+  buildProgrammeSourceText,
   flattenCourses,
   getProgramme,
   getProgrammeUniversity,

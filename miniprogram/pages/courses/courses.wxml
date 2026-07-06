@@ -86,7 +86,7 @@
 
     <view class="tpg-actions">
       <view class="tpg-action" bindtap="goTpgProgramme">查看 Programme 详情</view>
-      <view class="tpg-action primary" bindtap="copyTpgSource">复制官方链接</view>
+      <view class="tpg-action primary" bindtap="copyTpgSource">{{tpgProgramme.sourceUrl ? '复制官方链接' : '复制资料来源'}}</view>
     </view>
     <view class="tpg-catalog-link" bindtap="goTpgCatalog">切换学校或浏览六校 Programme 目录</view>
   </block>
