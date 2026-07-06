@@ -1,12 +1,17 @@
 const service = require('../../utils/courseService');
+const tpgService = require('../../utils/tpgService');
 
 Page({
   data: {
-    status: null
+    status: null,
+    tpgStatus: null
   },
 
   onLoad() {
-    this.setData({ status: service.getDataStatus() });
+    this.setData({
+      status: service.getDataStatus(),
+      tpgStatus: tpgService.getSchoolCoverage()
+    });
   },
 
   copySource(event) {
@@ -14,6 +19,15 @@ Page({
       data: event.currentTarget.dataset.url,
       success() {
         wx.showToast({ title: '官方来源已复制' });
+      }
+    });
+  },
+
+  copyTpgSources() {
+    wx.setClipboardData({
+      data: this.data.tpgStatus.sourceSummary,
+      success() {
+        wx.showToast({ title: '六校来源已复制' });
       }
     });
   }

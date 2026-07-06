@@ -1,15 +1,16 @@
-const catalogue = require('../../utils/tpgCatalog');
+const tpgService = require('../../utils/tpgService');
 
 const ALL_SCHOOLS = 'ALL';
 
 Page({
   data: {
-    universities: catalogue.universities,
+    universities: tpgService.listUniversities(),
     selectedUniversity: ALL_SCHOOLS,
     keyword: '',
     visibleProgrammes: [],
     resultCount: 0,
-    totalProgrammes: catalogue.programmes.length
+    totalProgrammes: tpgService.getSchoolCoverage().programmeCount,
+    totalCourses: tpgService.getSchoolCoverage().courseCount
   },
 
   onLoad() {
@@ -40,21 +41,24 @@ Page({
 
   refresh() {
     const selected = this.data.selectedUniversity;
-    const keyword = this.data.keyword.trim().toLowerCase();
-    const programmes = catalogue.programmes.filter((programme) => {
-      const matchesSchool = selected === ALL_SCHOOLS || programme.universityCode === selected;
-      const haystack = [
-        programme.name,
-        programme.programmeCode,
-        programme.faculty,
-        ...programme.courseGroups.flatMap((group) =>
-          group.courses.flatMap((course) => [course.code, course.name])
-        )
-      ].join(' ').toLowerCase();
-      return matchesSchool && (!keyword || haystack.includes(keyword));
-    });
+    const programmes = tpgService.searchProgrammes(
+      tpgService.listProgrammes(selected === ALL_SCHOOLS ? '' : selected),
+      this.data.keyword
+    );
     this.setData({
-      visibleProgrammes: programmes.slice(0, 120),
+      visibleProgrammes: programmes.slice(0, 120).map((programme) => {
+        const status = tpgService.getStatus(programme);
+        const university = tpgService.getProgrammeUniversity(programme);
+        return {
+          ...programme,
+          academicYear: university.academicYear,
+          courseCount: status.courseCount,
+          statusLabel: status.hasCourseGroups
+            ? `${status.courseCount} 门课程`
+            : status.hasStructure ? '结构待拆分' : '索引已导入',
+          statusBadge: status.hasCourseGroups ? 'COURSES' : status.hasStructure ? 'STRUCTURE' : 'INDEX'
+        };
+      }),
       resultCount: programmes.length
     });
   }

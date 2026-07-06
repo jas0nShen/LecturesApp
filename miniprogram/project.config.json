@@ -38,6 +38,10 @@
             {
                 "type": "file",
                 "value": "utils/courseService.test.js"
+            },
+            {
+                "type": "file",
+                "value": "utils/tpgService.test.js"
             }
         ],
         "include": []

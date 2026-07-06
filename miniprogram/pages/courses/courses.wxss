@@ -284,3 +284,235 @@
   padding: 13rpx 18rpx;
 }
 .empty-action.primary { background: #0b6b55; border-color: #0b6b55; color: #ffffff; }
+
+.setup-card {
+  background: #17352c;
+  border-radius: 24rpx;
+  box-shadow: 0 16rpx 34rpx rgba(8, 45, 35, 0.18);
+  color: #ffffff;
+  overflow: hidden;
+  padding: 34rpx 30rpx;
+  position: relative;
+}
+
+.setup-card::after {
+  border: 1rpx solid rgba(180, 215, 203, 0.32);
+  border-radius: 50%;
+  content: '';
+  height: 210rpx;
+  position: absolute;
+  right: -74rpx;
+  top: -70rpx;
+  width: 210rpx;
+}
+
+.setup-kicker {
+  color: #9fd1c2;
+  font-size: 20rpx;
+  font-weight: 850;
+  letter-spacing: 2rpx;
+}
+
+.setup-title {
+  color: #ffffff;
+  font-size: 40rpx;
+  font-weight: 850;
+  letter-spacing: -1rpx;
+  line-height: 1.18;
+  margin-top: 16rpx;
+  position: relative;
+  z-index: 1;
+}
+
+.setup-copy {
+  color: #bdd6ce;
+  font-size: 23rpx;
+  line-height: 1.55;
+  margin-top: 14rpx;
+}
+
+.setup-stats {
+  background: rgba(232, 241, 237, 0.09);
+  border: 1rpx solid rgba(143, 196, 180, 0.22);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 26rpx;
+  padding: 20rpx;
+}
+
+.setup-stats > view + view {
+  border-left: 1rpx solid rgba(143, 196, 180, 0.28);
+  padding-left: 16rpx;
+}
+
+.setup-number {
+  color: #ffffff;
+  font-size: 36rpx;
+  font-weight: 900;
+}
+
+.setup-label {
+  color: #a8c5bb;
+  font-size: 19rpx;
+}
+
+.setup-actions {
+  display: grid;
+  gap: 14rpx;
+  grid-template-columns: 1.1fr 0.9fr;
+  margin-top: 26rpx;
+}
+
+.setup-action {
+  align-items: center;
+  background: #e4f0eb;
+  border-radius: 14rpx;
+  color: #0b6b55;
+  display: flex;
+  font-size: 25rpx;
+  font-weight: 800;
+  justify-content: center;
+  min-height: 82rpx;
+  text-align: center;
+}
+
+.setup-action.primary {
+  background: #ffffff;
+  color: #0b5d4b;
+}
+
+.tpg-hero {
+  background: #17352c;
+  border-radius: 24rpx;
+  box-shadow: 0 16rpx 34rpx rgba(8, 45, 35, 0.18);
+  color: #ffffff;
+  margin-bottom: 18rpx;
+  overflow: hidden;
+  padding: 34rpx 30rpx;
+  position: relative;
+}
+
+.tpg-hero::after {
+  border: 1rpx solid rgba(180, 215, 203, 0.32);
+  border-radius: 50%;
+  content: '';
+  height: 210rpx;
+  position: absolute;
+  right: -74rpx;
+  top: -70rpx;
+  width: 210rpx;
+}
+
+.tpg-eyebrow {
+  color: #9fd1c2;
+  font-size: 20rpx;
+  font-weight: 850;
+  letter-spacing: 2rpx;
+}
+
+.tpg-title {
+  font-size: 39rpx;
+  font-weight: 850;
+  letter-spacing: -1rpx;
+  line-height: 1.18;
+  margin-top: 16rpx;
+  position: relative;
+  z-index: 1;
+}
+
+.tpg-subtitle {
+  color: #bdd6ce;
+  font-size: 23rpx;
+  line-height: 1.45;
+  margin-top: 14rpx;
+}
+
+.tpg-hero-foot {
+  align-items: flex-end;
+  border-top: 1rpx solid #426258;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28rpx;
+  padding-top: 22rpx;
+}
+
+.tpg-number {
+  font-size: 54rpx;
+  font-weight: 900;
+  letter-spacing: -2rpx;
+}
+
+.tpg-number-label {
+  color: #a9c1b8;
+  font-size: 20rpx;
+}
+
+.tpg-seal {
+  border: 2rpx solid #82b4a5;
+  color: #dcebe5;
+  font-size: 18rpx;
+  font-weight: 850;
+  letter-spacing: 1rpx;
+  padding: 11rpx 14rpx;
+  transform: rotate(3deg);
+}
+
+.tpg-status {
+  align-items: center;
+  background: #e4f0eb;
+  border: 1rpx solid #bcd7cb;
+  border-radius: 16rpx;
+  display: flex;
+  gap: 20rpx;
+}
+
+.tpg-status-copy {
+  flex: 1;
+}
+
+.tpg-course-card {
+  background: #ffffff;
+}
+
+.tpg-course-card .term-badge {
+  max-width: 250rpx;
+  overflow: hidden;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tpg-empty {
+  margin-top: 0;
+}
+
+.tpg-actions {
+  display: grid;
+  gap: 14rpx;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 18rpx;
+}
+
+.tpg-action {
+  background: #e4f0eb;
+  border-radius: 14rpx;
+  color: #0b6b55;
+  font-size: 25rpx;
+  font-weight: 800;
+  padding: 24rpx 18rpx;
+  text-align: center;
+}
+
+.tpg-action.primary {
+  background: #0b6b55;
+  color: #ffffff;
+}
+
+.tpg-catalog-link {
+  color: #53665d;
+  font-size: 23rpx;
+  margin-top: 22rpx;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #b7cbc2;
+}

@@ -12,6 +12,10 @@
         <view class="hero-stat-value">{{totalProgrammes}}</view>
         <view class="hero-stat-label">个 Programme</view>
       </view>
+      <view class="hero-stat">
+        <view class="hero-stat-value">{{totalCourses}}</view>
+        <view class="hero-stat-label">门已拆课程</view>
+      </view>
     </view>
   </view>
 
@@ -59,12 +63,16 @@
       <view class="programme-top">
         <view class="school-stamp">{{item.universityCode}}</view>
         <view class="programme-badges">
-          <view class="data-level">{{item.dataLevel === 'structure' ? '含结构' : '索引'}}</view>
+          <view class="data-level {{item.courseCount ? 'data-level-ready' : ''}}">{{item.statusBadge}}</view>
           <view class="programme-arrow">›</view>
         </view>
       </view>
       <view class="programme-name">{{item.name}}</view>
       <view wx:if="{{item.faculty}}" class="programme-faculty">{{item.faculty}}</view>
+      <view class="programme-status">
+        <view class="status-pill {{item.courseCount ? 'status-pill-ready' : ''}}">{{item.statusLabel}}</view>
+        <view class="status-year">{{item.academicYear}}</view>
+      </view>
       <view class="programme-meta">
         <text wx:if="{{item.programmeCode}}">{{item.programmeCode}}</text>
         <text wx:if="{{item.creditsRequired}}">{{item.creditsRequired}} credits / units</text>

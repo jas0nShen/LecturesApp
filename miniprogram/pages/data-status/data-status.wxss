@@ -92,6 +92,146 @@
   background: #0b6b55;
 }
 
+.tpg-passport {
+  background: #17352c;
+  border-radius: 22rpx;
+  box-shadow: 0 14rpx 32rpx rgba(8, 45, 35, 0.18);
+  color: #ffffff;
+  padding: 32rpx;
+}
+
+.tpg-passport-head {
+  align-items: flex-start;
+  display: flex;
+  gap: 22rpx;
+  justify-content: space-between;
+}
+
+.tpg-title {
+  color: #ffffff;
+  font-size: 36rpx;
+  font-weight: 850;
+  letter-spacing: -1rpx;
+  margin-top: 8rpx;
+}
+
+.tpg-copy {
+  color: #b9d0c8;
+  font-size: 21rpx;
+  line-height: 1.5;
+  margin-top: 8rpx;
+}
+
+.tpg-seal {
+  border: 3rpx double #8fc4b4;
+  color: #a9d4c7;
+  flex: none;
+  font-size: 17rpx;
+  font-weight: 850;
+  letter-spacing: 1rpx;
+  line-height: 1.2;
+  padding: 14rpx 10rpx;
+  text-align: center;
+  transform: rotate(4deg);
+}
+
+.tpg-metrics {
+  background: rgba(232, 241, 237, 0.09);
+  border: 1rpx solid rgba(143, 196, 180, 0.22);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 26rpx;
+  padding: 20rpx;
+}
+
+.tpg-metric + .tpg-metric {
+  border-left: 1rpx solid rgba(143, 196, 180, 0.28);
+  padding-left: 18rpx;
+}
+
+.tpg-passport .stat-value {
+  color: #ffffff;
+}
+
+.tpg-passport .stat-label {
+  color: #a8c5bb;
+}
+
+.tpg-note-line {
+  color: #a9c1b8;
+  font-size: 21rpx;
+  line-height: 1.55;
+  margin-top: 18rpx;
+}
+
+.tpg-source-action {
+  border-top: 1rpx solid #426258;
+  color: #dcebe5;
+  margin-top: 18rpx;
+  padding-top: 18rpx;
+}
+
+.school-ledger {
+  background: #fbfcfa;
+  border: 1rpx solid #dce6e0;
+  border-radius: 18rpx;
+  padding: 28rpx;
+}
+
+.school-row {
+  align-items: flex-start;
+  border-top: 1rpx solid #e5ebe8;
+  display: flex;
+  gap: 18rpx;
+  padding: 20rpx 0;
+}
+
+.school-row:first-of-type {
+  border-top: 0;
+  margin-top: 18rpx;
+}
+
+.school-badge {
+  border: 1rpx solid #9fb8ad;
+  color: #6b7e75;
+  flex: none;
+  font-size: 16rpx;
+  font-weight: 850;
+  letter-spacing: 1rpx;
+  min-width: 96rpx;
+  padding: 8rpx 6rpx;
+  text-align: center;
+}
+
+.school-badge.ready {
+  border-color: #0b6b55;
+  color: #0b6b55;
+}
+
+.school-main {
+  flex: 1;
+}
+
+.school-title {
+  color: #17352c;
+  font-size: 25rpx;
+  font-weight: 850;
+}
+
+.school-copy {
+  color: #53665d;
+  font-size: 21rpx;
+  line-height: 1.45;
+  margin-top: 6rpx;
+}
+
+.school-source {
+  color: #89978f;
+  font-size: 19rpx;
+  line-height: 1.45;
+  margin-top: 7rpx;
+}
+
 .source-card {
   background: #fbfcfa;
   border: 1rpx solid #dce6e0;

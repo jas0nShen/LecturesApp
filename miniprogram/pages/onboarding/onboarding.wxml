@@ -24,7 +24,10 @@
   </view>
 
   <view wx:if="{{mode === 'undergraduate'}}" class="section panel">
-    <view class="scope-note">当前本科培养方案开放 HKU BEng Computer Science。</view>
+    <view class="scope-note ug-note">
+      当前本科培养方案只用于 HKU BEng Computer Science 示例验证；六校授课硕士 Programme 请切换到 TPG。
+      <view class="inline-link" bindtap="switchToTpg">查看六校授课硕士</view>
+    </view>
 
     <view class="field">
       <view class="label">大学</view>
@@ -78,23 +81,57 @@
 
     <view class="field">
       <view class="label">Programme</view>
-      <picker range="{{tpgProgrammes}}" range-key="name" bindchange="onTpgProgrammeChange">
-        <view class="select select-programme">{{selectedTpgProgramme.name || '请选择 Programme'}}</view>
+      <view class="programme-search">
+        <input
+          class="programme-input"
+          value="{{tpgKeyword}}"
+          placeholder="搜索 Programme 名称、代码或学院"
+          confirm-type="search"
+          bindinput="onTpgKeyword"
+        />
+        <view wx:if="{{tpgKeyword}}" class="programme-clear" bindtap="clearTpgKeyword">×</view>
+      </view>
+      <picker range="{{filteredTpgProgrammes}}" range-key="name" bindchange="onTpgProgrammeChange">
+        <view class="select select-programme">
+          <view class="select-programme-name">{{selectedTpgProgramme.name || '请选择 Programme'}}</view>
+          <view class="select-programme-meta">{{filteredTpgProgrammes.length}} 个匹配结果 · 当前 {{tpgSelectedIndexLabel}}</view>
+        </view>
       </picker>
+    </view>
+
+    <view wx:if="{{filteredTpgProgrammes.length}}" class="programme-results">
+      <view
+        wx:for="{{visibleTpgProgrammes}}"
+        wx:key="id"
+        class="programme-result {{selectedTpgProgramme.id === item.id ? 'programme-result-active' : ''}}"
+        data-id="{{item.id}}"
+        bindtap="selectTpgProgramme"
+      >
+        <view class="result-code">{{item.programmeCode || item.universityCode}}</view>
+        <view class="result-main">
+          <view class="result-name">{{item.name}}</view>
+          <view class="result-meta">{{item.faculty || 'Faculty 整理中'}} · {{item.creditsRequired ? item.creditsRequired + ' credits / units' : '学分待核验'}}</view>
+        </view>
+      </view>
+    </view>
+
+    <view wx:else class="programme-empty">
+      没有找到匹配 Programme。试试输入 MSc、Finance、Computer 或学院关键词。
     </view>
 
     <view class="programme-proof">
       <view class="proof-stamp">{{selectedTpgUniversity.code}}</view>
       <view class="proof-main">
         <view class="proof-label">当前数据状态</view>
-        <view class="proof-value">{{tpgCourseCount ? '已录入 ' + tpgCourseCount + ' 门课程' : 'Programme 索引已录入，课程待核验'}}</view>
+        <view class="proof-value">{{tpgCourseStatus}}</view>
         <view class="proof-meta">{{selectedTpgUniversity.academicYear}} · {{selectedTpgProgramme.creditsRequired ? selectedTpgProgramme.creditsRequired + ' credits / units' : '学分待核验'}}</view>
       </view>
     </view>
 
     <view class="tpg-explain">授课硕士通常以 Programme 或 Stream 区分方向，因此不再额外套用本科 Major。</view>
 
-    <view class="button-space">
+    <view class="button-space tpg-actions">
+      <view class="preview-button" bindtap="previewTpgProgramme">预览 Programme</view>
       <view class="button" bindtap="save">保存授课硕士 Programme</view>
     </view>
   </view>

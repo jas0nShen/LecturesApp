@@ -1,4 +1,5 @@
 const service = require('../../utils/courseService');
+const tpgService = require('../../utils/tpgService');
 
 Page({
   data: {
@@ -10,12 +11,15 @@ Page({
     },
     dataSource: 'loading',
     recentCourses: [],
-    isTpg: false
+    isTpg: false,
+    tpgProfile: null,
+    tpgCoverage: tpgService.getSchoolCoverage()
   },
 
   async onShow() {
     const profile = service.getProfile();
     const isTpg = profile && profile.profileType === 'tpg';
+    const tpgProfile = tpgService.getProfileSummary(profile);
     const auditResult = isTpg
       ? {
           data: {
@@ -33,6 +37,7 @@ Page({
     this.setData({
       profile,
       isTpg,
+      tpgProfile,
       audit: auditResult.data,
       recentCourses,
       dataSource: auditResult.source

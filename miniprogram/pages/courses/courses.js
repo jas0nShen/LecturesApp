@@ -1,4 +1,5 @@
 const service = require('../../utils/courseService');
+const tpgService = require('../../utils/tpgService');
 
 Page({
   data: {
@@ -43,7 +44,16 @@ Page({
       { value: 'major_elective', label: '专业选修' },
       { value: 'common_core', label: '通识' },
       { value: 'capstone', label: '毕业项目' }
-    ]
+    ],
+    isTpg: false,
+    tpgProgramme: null,
+    tpgUniversity: null,
+    tpgCourses: [],
+    tpgCourseCount: 0,
+    tpgStatusTitle: '',
+    tpgStatusCopy: '',
+    needsSetup: false,
+    tpgCoverage: tpgService.getSchoolCoverage()
   },
 
   onShow() {
@@ -59,6 +69,59 @@ Page({
     const requestId = (this._requestId || 0) + 1;
     this._requestId = requestId;
     this.setData({ searching: true });
+
+    const profile = service.getProfile();
+    if (!profile) {
+      if (requestId !== this._requestId) return;
+      this.setData({
+        needsSetup: true,
+        isTpg: false,
+        tpgProgramme: null,
+        tpgUniversity: null,
+        tpgCourses: [],
+        tpgCourseCount: 0,
+        courses: [],
+        offerings: [],
+        searching: false,
+        dataSource: 'catalogue'
+      });
+      return;
+    }
+
+    const tpgProgramme = profile && profile.profileType === 'tpg'
+      ? tpgService.getProgramme(profile.programmeId)
+      : null;
+    if (tpgProgramme) {
+      const tpgUniversity = tpgService.getProgrammeUniversity(tpgProgramme);
+      const allCourses = tpgService.flattenCourses(tpgProgramme);
+      const tpgCourses = tpgService.flattenCourses(tpgProgramme, this.data.keyword);
+      const status = tpgService.getStatus(tpgProgramme);
+      if (requestId !== this._requestId) return;
+      this.setData({
+        needsSetup: false,
+        isTpg: true,
+        tpgProgramme,
+        tpgUniversity,
+        tpgCourses,
+        tpgCourseCount: allCourses.length,
+        tpgStatusTitle: status.hasCourseGroups ? '已录入课程结构' : '课程清单正在核验',
+        tpgStatusCopy: status.hasCourseGroups
+          ? '这里显示你所选授课硕士 Programme 已拆分出的必修、选修或项目课程。'
+          : '这个 Programme 已进入六校索引，但课程分组还没完成复核，先展示状态避免误导选课。',
+        dataSource: 'catalogue',
+        searching: false
+      });
+      return;
+    }
+
+    this.setData({
+      needsSetup: false,
+      isTpg: false,
+      tpgProgramme: null,
+      tpgUniversity: null,
+      tpgCourses: [],
+      tpgCourseCount: 0
+    });
 
     if (this.data.viewMode === 'offerings') {
       const result = await service.listCourseOfferingsRemote({
@@ -86,7 +149,6 @@ Page({
       return;
     }
 
-    const profile = service.getProfile() || { programmeId: 1, majorId: 1 };
     const result = await service.listCoursesRemote({
       programmeId: profile.programmeId,
       majorId: profile.majorId,
@@ -107,7 +169,8 @@ Page({
   },
 
   refreshLocal() {
-    const profile = service.getProfile() || { programmeId: 1, majorId: 1 };
+    const profile = service.getProfile();
+    if (!profile) return;
     this.setData({
       courses: service.listCourses({
         programmeId: profile.programmeId,
@@ -223,6 +286,36 @@ Page({
   goOfferingDetail(event) {
     wx.navigateTo({
       url: `/pages/offering-detail/offering-detail?code=${event.currentTarget.dataset.code}`
+    });
+  },
+
+  goTpgProgramme() {
+    const programme = this.data.tpgProgramme;
+    if (!programme) return;
+    wx.navigateTo({
+      url: `/pages/tpg-programme/tpg-programme?id=${encodeURIComponent(programme.id)}`
+    });
+  },
+
+  goTpgCatalog() {
+    wx.navigateTo({ url: '/pages/tpg-catalog/tpg-catalog' });
+  },
+
+  goOnboarding() {
+    wx.navigateTo({ url: '/pages/onboarding/onboarding' });
+  },
+
+  copyTpgSource() {
+    const programme = this.data.tpgProgramme;
+    if (!programme || !programme.sourceUrl) {
+      wx.showToast({ title: '官方链接整理中', icon: 'none' });
+      return;
+    }
+    wx.setClipboardData({
+      data: programme.sourceUrl,
+      success() {
+        wx.showToast({ title: '官方链接已复制' });
+      }
     });
   },
 

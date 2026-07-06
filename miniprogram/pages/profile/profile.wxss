@@ -27,6 +27,119 @@
 .label { color: #687970; font-size: 23rpx; font-weight: 650; }
 .panel-title { color: #17352c; font-weight: 800; }
 
+.tpg-profile-card {
+  background: #17352c;
+  border-radius: 22rpx;
+  box-shadow: 0 14rpx 32rpx rgba(8, 45, 35, 0.18);
+  color: #ffffff;
+  overflow: hidden;
+  padding: 32rpx;
+  position: relative;
+}
+
+.tpg-profile-card::after {
+  border: 1rpx solid rgba(180, 215, 203, 0.28);
+  border-radius: 50%;
+  content: '';
+  height: 210rpx;
+  position: absolute;
+  right: -70rpx;
+  top: -72rpx;
+  width: 210rpx;
+}
+
+.tpg-profile-head {
+  align-items: flex-start;
+  display: flex;
+  gap: 18rpx;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+.tpg-kicker {
+  color: #9fd1c2;
+  font-size: 19rpx;
+  font-weight: 850;
+  letter-spacing: 2rpx;
+}
+
+.tpg-name {
+  color: #ffffff;
+  font-size: 36rpx;
+  font-weight: 850;
+  letter-spacing: -1rpx;
+  line-height: 1.2;
+  margin-top: 12rpx;
+}
+
+.tpg-profile-seal {
+  border: 2rpx solid #82b4a5;
+  color: #dcebe5;
+  flex: none;
+  font-size: 18rpx;
+  font-weight: 850;
+  letter-spacing: 1rpx;
+  padding: 10rpx 13rpx;
+  transform: rotate(3deg);
+}
+
+.tpg-profile-meta {
+  color: #bdd6ce;
+  font-size: 22rpx;
+  line-height: 1.45;
+  margin-top: 16rpx;
+}
+
+.tpg-profile-foot {
+  align-items: center;
+  border-top: 1rpx solid #426258;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24rpx;
+  padding-top: 20rpx;
+}
+
+.tpg-status {
+  color: #ffffff;
+  font-size: 26rpx;
+  font-weight: 800;
+}
+
+.tpg-hint {
+  color: #a9c1b8;
+  font-size: 20rpx;
+  margin-top: 6rpx;
+}
+
+.tpg-profile-card .notes-arrow {
+  color: #a9c1b8;
+}
+
+.tpg-mini-actions {
+  display: grid;
+  gap: 12rpx;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.mini-action {
+  align-items: center;
+  background: #e4f0eb;
+  border-radius: 14rpx;
+  color: #0b6b55;
+  display: flex;
+  font-size: 24rpx;
+  font-weight: 800;
+  justify-content: center;
+  min-height: 76rpx;
+  text-align: center;
+}
+
+.mini-action.primary {
+  background: #0b6b55;
+  color: #ffffff;
+}
+
 .vault {
   background: #17352c;
   border-radius: 20rpx;

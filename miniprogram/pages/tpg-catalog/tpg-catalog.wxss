@@ -190,6 +190,11 @@
   padding: 6rpx 13rpx;
 }
 
+.data-level-ready {
+  background: #dceee7;
+  color: #0b6b55;
+}
+
 .programme-badges {
   align-items: center;
   display: flex;
@@ -215,6 +220,34 @@
   font-size: 22rpx;
   line-height: 1.45;
   margin-top: 9rpx;
+}
+
+.programme-status {
+  align-items: center;
+  display: flex;
+  gap: 12rpx;
+  margin-top: 15rpx;
+}
+
+.status-pill {
+  background: #eef3f0;
+  border: 1rpx solid #d3e0da;
+  border-radius: 999rpx;
+  color: #60736a;
+  font-size: 20rpx;
+  font-weight: 750;
+  padding: 8rpx 14rpx;
+}
+
+.status-pill-ready {
+  background: #0b6b55;
+  border-color: #0b6b55;
+  color: #ffffff;
+}
+
+.status-year {
+  color: #7e8d86;
+  font-size: 20rpx;
 }
 
 .programme-meta {

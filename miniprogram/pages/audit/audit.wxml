@@ -1,4 +1,87 @@
 <view class="page">
+  <block wx:if="{{needsSetup}}">
+    <view class="section setup-card">
+      <view class="audit-kicker light">TPG FIRST</view>
+      <view class="setup-title">先选择 Programme，再看毕业检查</view>
+      <view class="setup-copy">授课硕士毕业要求必须按 Programme 判断。未设置前，这里不会默认显示本科示例 audit。</view>
+      <view class="setup-stats">
+        <view>
+          <view class="setup-number">{{tpgCoverage.schoolCount}}</view>
+          <view class="setup-label">所大学</view>
+        </view>
+        <view>
+          <view class="setup-number">{{tpgCoverage.programmeCount}}</view>
+          <view class="setup-label">个 Programme</view>
+        </view>
+        <view>
+          <view class="setup-number">{{tpgCoverage.programmeWithCoursesCount}}</view>
+          <view class="setup-label">已拆课程项目</view>
+        </view>
+      </view>
+    </view>
+
+    <view class="tpg-actions">
+      <view class="tpg-action" bindtap="goTpgCatalog">浏览六校目录</view>
+      <view class="tpg-action primary" bindtap="goOnboarding">开始选择</view>
+    </view>
+  </block>
+
+  <block wx:elif="{{isTpg && tpgAudit}}">
+    <view class="section tpg-audit-hero">
+      <view class="audit-kicker light">{{tpgAudit.programme.universityCode}} · {{tpgAudit.university.academicYear}}</view>
+      <view class="tpg-audit-title">{{tpgAudit.programme.name}}</view>
+      <view class="tpg-audit-faculty">{{tpgAudit.programme.faculty || 'Faculty 整理中'}}</view>
+      <view class="tpg-audit-meter">
+        <view>
+          <view class="big-number">{{tpgAudit.totalCredits || '--'}}</view>
+          <view class="subtitle">毕业学分 / units</view>
+        </view>
+        <view class="verified-seal">{{tpgAudit.hasCourseGroups ? 'STRUCTURE' : 'REVIEW'}}<br/>TPG</view>
+      </view>
+      <view class="curriculum-note">{{tpgAudit.statusCopy}}</view>
+      <view class="source-line">数据源：六校授课硕士本地目录</view>
+    </view>
+
+    <view class="section completed-entry" bindtap="goTpgProgramme">
+      <view class="completed-icon">↗</view>
+      <view class="completed-copy">
+        <view class="panel-title">{{tpgAudit.statusTitle}}</view>
+        <view class="subtitle">{{tpgAudit.courseCount}} 门课程已录入 · 点击查看 Programme 详情</view>
+      </view>
+      <view class="completed-arrow">›</view>
+    </view>
+
+    <view wx:if="{{tpgAudit.hasCourseGroups}}" class="section">
+      <view class="section-heading">已录入的课程组</view>
+      <view wx:for="{{tpgAudit.groups}}" wx:key="name" class="panel requirement tpg-group">
+        <view class="row">
+          <view class="panel-title">{{item.name}}</view>
+          <view class="muted">{{item.courseCount}} 门</view>
+        </view>
+        <view wx:if="{{item.creditsRequired}}" class="partial-label">{{item.creditsRequired}} CREDITS / UNITS REQUIRED</view>
+        <view class="tpg-course-preview">
+          <view wx:for="{{item.courses}}" wx:key="rowKey" wx:for-item="course" class="missing-course">{{course.code}} · {{course.name}}</view>
+        </view>
+      </view>
+    </view>
+
+    <view wx:else class="section panel tpg-pending-panel">
+      <view class="audit-kicker">NEXT DATA STEP</view>
+      <view class="panel-title">先不计算毕业进度</view>
+      <view class="subtitle">这个 Programme 还没有完成必修/选修拆分。为避免给出错误 degree audit，当前只展示资料收录状态。</view>
+      <view class="recommendation">
+        <view class="course-code">下一步</view>
+        <view class="subtitle">继续从 PDF/官网核验课程组，再开放逐项毕业检查。</view>
+      </view>
+    </view>
+
+    <view class="tpg-actions">
+      <view class="tpg-action" bindtap="goTpgCatalog">浏览六校目录</view>
+      <view class="tpg-action primary" bindtap="copyTpgSource">复制官方链接</view>
+    </view>
+  </block>
+
+  <block wx:else>
   <view class="section panel">
     <view class="audit-kicker">RECORDED CREDITS</view>
     <view class="panel-title">已录入学分</view>
@@ -63,4 +146,5 @@
     </view>
     <view wx:if="{{audit.recommendations.length === 0}}" class="subtitle">当前示例规则下暂无缺口。</view>
   </view>
+  </block>
 </view>

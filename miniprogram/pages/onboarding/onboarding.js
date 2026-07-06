@@ -1,9 +1,9 @@
 const service = require('../../utils/courseService');
-const tpgCatalogue = require('../../utils/tpgCatalog');
+const tpgService = require('../../utils/tpgService');
 
 Page({
   data: {
-    mode: 'undergraduate',
+    mode: 'tpg',
     universities: [],
     programmes: [],
     majors: [],
@@ -14,21 +14,26 @@ Page({
     curriculumYear: '2025-26',
     yearOptions: ['1', '2', '3', '4'],
     currentYear: '1',
-    tpgUniversities: tpgCatalogue.universities,
-    tpgTotalProgrammes: tpgCatalogue.programmes.length,
+    tpgUniversities: tpgService.listUniversities(),
+    tpgTotalProgrammes: tpgService.getSchoolCoverage().programmeCount,
     tpgProgrammes: [],
+    filteredTpgProgrammes: [],
+    visibleTpgProgrammes: [],
+    tpgKeyword: '',
     selectedTpgUniversity: {},
     selectedTpgProgramme: {},
-    tpgCourseCount: 0
+    tpgCourseCount: 0,
+    tpgCourseStatus: '',
+    tpgSelectedIndexLabel: ''
   },
 
   async onLoad() {
     const profile = service.getProfile();
-    await this.loadUndergraduate(profile);
     this.loadTpg(profile);
     this.setData({
-      mode: profile && profile.profileType === 'tpg' ? 'tpg' : 'undergraduate'
+      mode: 'tpg'
     });
+    await this.loadUndergraduate(profile);
   },
 
   async loadUndergraduate(profile) {
@@ -60,12 +65,10 @@ Page({
   },
 
   loadTpg(profile) {
-    const selectedTpgUniversity = tpgCatalogue.universities.find(
+    const selectedTpgUniversity = tpgService.listUniversities().find(
       (item) => item.code === (profile && profile.universityCode)
-    ) || tpgCatalogue.universities[0];
-    const tpgProgrammes = tpgCatalogue.programmes.filter(
-      (item) => item.universityCode === selectedTpgUniversity.code
-    );
+    ) || tpgService.listUniversities()[0];
+    const tpgProgrammes = tpgService.listProgrammes(selectedTpgUniversity.code);
     const selectedTpgProgramme = tpgProgrammes.find(
       (item) => item.id === (profile && profile.programmeId)
     ) || tpgProgrammes[0] || {};
@@ -74,6 +77,10 @@ Page({
 
   selectMode(event) {
     this.setData({ mode: event.currentTarget.dataset.mode });
+  },
+
+  switchToTpg() {
+    this.setData({ mode: 'tpg' });
   },
 
   async onUniversityChange(event) {
@@ -137,31 +144,84 @@ Page({
 
   onTpgUniversityChange(event) {
     const selectedTpgUniversity = this.data.tpgUniversities[Number(event.detail.value)];
-    const tpgProgrammes = tpgCatalogue.programmes.filter(
-      (item) => item.universityCode === selectedTpgUniversity.code
-    );
-    this.setTpgSelection(selectedTpgUniversity, tpgProgrammes, tpgProgrammes[0] || {});
+    const tpgProgrammes = tpgService.listProgrammes(selectedTpgUniversity.code);
+    this.setTpgSelection(selectedTpgUniversity, tpgProgrammes, tpgProgrammes[0] || {}, '');
   },
 
   onTpgProgrammeChange(event) {
-    const selectedTpgProgramme = this.data.tpgProgrammes[Number(event.detail.value)];
+    const selectedTpgProgramme = this.data.filteredTpgProgrammes[Number(event.detail.value)];
     this.setTpgSelection(
       this.data.selectedTpgUniversity,
       this.data.tpgProgrammes,
-      selectedTpgProgramme
+      selectedTpgProgramme,
+      this.data.tpgKeyword
     );
   },
 
-  setTpgSelection(selectedTpgUniversity, tpgProgrammes, selectedTpgProgramme) {
-    const tpgCourseCount = (selectedTpgProgramme.courseGroups || []).reduce(
-      (total, group) => total + group.courses.length,
-      0
+  onTpgKeyword(event) {
+    const keyword = event.detail.value;
+    const filteredTpgProgrammes = tpgService.searchProgrammes(this.data.tpgProgrammes, keyword);
+    const selectedTpgProgramme = filteredTpgProgrammes.find(
+      (item) => item.id === this.data.selectedTpgProgramme.id
+    ) || filteredTpgProgrammes[0] || {};
+    this.setTpgSelection(
+      this.data.selectedTpgUniversity,
+      this.data.tpgProgrammes,
+      selectedTpgProgramme,
+      keyword
     );
+  },
+
+  clearTpgKeyword() {
+    this.setTpgSelection(
+      this.data.selectedTpgUniversity,
+      this.data.tpgProgrammes,
+      this.data.tpgProgrammes[0] || {},
+      ''
+    );
+  },
+
+  selectTpgProgramme(event) {
+    const programme = this.data.filteredTpgProgrammes.find(
+      (item) => item.id === event.currentTarget.dataset.id
+    );
+    if (!programme) return;
+    this.setTpgSelection(
+      this.data.selectedTpgUniversity,
+      this.data.tpgProgrammes,
+      programme,
+      this.data.tpgKeyword
+    );
+  },
+
+  previewTpgProgramme() {
+    const programme = this.data.selectedTpgProgramme;
+    if (!programme || !programme.id) {
+      wx.showToast({ title: '请选择 Programme', icon: 'none' });
+      return;
+    }
+    wx.navigateTo({
+      url: `/pages/tpg-programme/tpg-programme?id=${encodeURIComponent(programme.id)}`
+    });
+  },
+
+  setTpgSelection(selectedTpgUniversity, tpgProgrammes, selectedTpgProgramme, tpgKeyword = this.data.tpgKeyword) {
+    const filteredTpgProgrammes = tpgService.searchProgrammes(tpgProgrammes, tpgKeyword);
+    const effectiveProgramme = selectedTpgProgramme && selectedTpgProgramme.id
+      ? selectedTpgProgramme
+      : filteredTpgProgrammes[0] || {};
+    const tpgCourseCount = tpgService.flattenCourses(effectiveProgramme).length;
+    const selectedIndex = filteredTpgProgrammes.findIndex((item) => item.id === effectiveProgramme.id);
     this.setData({
       selectedTpgUniversity,
       tpgProgrammes,
-      selectedTpgProgramme,
-      tpgCourseCount
+      filteredTpgProgrammes,
+      visibleTpgProgrammes: filteredTpgProgrammes.slice(0, 5),
+      tpgKeyword,
+      selectedTpgProgramme: effectiveProgramme,
+      tpgCourseCount,
+      tpgCourseStatus: tpgCourseCount ? `已录入 ${tpgCourseCount} 门课程` : 'Programme 索引已录入，课程待核验',
+      tpgSelectedIndexLabel: selectedIndex >= 0 ? `${selectedIndex + 1} / ${filteredTpgProgrammes.length}` : `0 / ${filteredTpgProgrammes.length}`
     });
   },
 

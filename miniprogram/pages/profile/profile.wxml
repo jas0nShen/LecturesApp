@@ -4,6 +4,24 @@
     <view class="subtitle">资料暂时保存在本机，可使用下方数据保险箱备份。</view>
   </view>
 
+  <view wx:if="{{isTpg && tpgProfile}}" class="section tpg-profile-card" bindtap="goSelectedTpg">
+    <view class="tpg-profile-head">
+      <view>
+        <view class="tpg-kicker">{{profile.universityCode}} · {{tpgProfile.yearLabel}}</view>
+        <view class="tpg-name">{{profile.programmeName}}</view>
+      </view>
+      <view class="tpg-profile-seal">TPG</view>
+    </view>
+    <view class="tpg-profile-meta">{{tpgProfile.schoolLabel}} · {{tpgProfile.creditsLabel}}</view>
+    <view class="tpg-profile-foot">
+      <view>
+        <view class="tpg-status">{{tpgProfile.statusLabel}}</view>
+        <view class="tpg-hint">点击查看 Programme 课程结构和官方来源</view>
+      </view>
+      <view class="notes-arrow">›</view>
+    </view>
+  </view>
+
   <view class="section panel" wx:if="{{profile}}">
     <view class="profile-row">
       <view class="label">大学</view>
@@ -40,6 +58,11 @@
     <view class="button" bindtap="goOnboarding">{{profile ? '修改资料' : '开始设置'}}</view>
   </view>
 
+  <view wx:if="{{isTpg}}" class="section tpg-mini-actions">
+    <view class="mini-action" bindtap="goTpgCatalog">浏览六校 Programme</view>
+    <view class="mini-action primary" bindtap="goDataStatus">查看数据覆盖</view>
+  </view>
+
   <view class="section notes-entry" bindtap="goCourseNotes">
     <view class="notes-mark">NOTES</view>
     <view class="notes-main">
@@ -53,7 +76,7 @@
     <view class="data-dot {{dataStatus.status}}"></view>
     <view class="notes-main">
       <view class="panel-title">数据状态</view>
-      <view class="subtitle">{{dataStatus.statusLabel}} · 开课目录更新于 {{dataStatus.offering.updatedDate}}</view>
+      <view class="subtitle">{{isTpg ? '六校 TPG 覆盖状态与 PDF 来源' : dataStatus.statusLabel + ' · 开课目录更新于 ' + dataStatus.offering.updatedDate}}</view>
     </view>
     <view class="notes-arrow">›</view>
   </view>
@@ -79,6 +102,6 @@
 
   <view class="section panel">
     <view class="panel-title">数据说明</view>
-    <view class="subtitle">官方开课数据来自香港大学官网；毕业检查规则仍在持续核验，仅供规划参考，以大学官方要求为准。</view>
+    <view class="subtitle">{{isTpg ? '六校授课硕士资料来自你提供的 PDF 与本地核验流程；未拆分课程的 Programme 只展示索引，不做毕业判断。' : '官方开课数据来自香港大学官网；毕业检查规则仍在持续核验，仅供规划参考，以大学官方要求为准。'}}</view>
   </view>
 </view>

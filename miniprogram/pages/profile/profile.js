@@ -1,8 +1,11 @@
 const service = require('../../utils/courseService');
+const tpgService = require('../../utils/tpgService');
 
 Page({
   data: {
     profile: null,
+    isTpg: false,
+    tpgProfile: null,
     noteCount: 0,
     noteSummary: '集中整理选课理由和注意事项',
     dataStatus: null
@@ -10,8 +13,12 @@ Page({
 
   onShow() {
     const noteCount = service.getCourseNotes().length;
+    const profile = service.getProfile();
+    const tpgProfile = tpgService.getProfileSummary(profile);
     this.setData({
-      profile: service.getProfile(),
+      profile,
+      isTpg: !!tpgProfile,
+      tpgProfile,
       noteCount,
       noteSummary: noteCount ? `已记录 ${noteCount} 门课程` : '集中整理选课理由和注意事项',
       dataStatus: service.getDataStatus()
@@ -28,6 +35,21 @@ Page({
 
   goDataStatus() {
     wx.navigateTo({ url: '/pages/data-status/data-status' });
+  },
+
+  goSelectedTpg() {
+    const programme = this.data.tpgProfile && this.data.tpgProfile.programme;
+    if (!programme) {
+      wx.navigateTo({ url: '/pages/tpg-catalog/tpg-catalog' });
+      return;
+    }
+    wx.navigateTo({
+      url: `/pages/tpg-programme/tpg-programme?id=${encodeURIComponent(programme.id)}`
+    });
+  },
+
+  goTpgCatalog() {
+    wx.navigateTo({ url: '/pages/tpg-catalog/tpg-catalog' });
   },
 
   goPrivacyData() {
