@@ -47,6 +47,10 @@ Page({
     wx.navigateTo({ url: '/pages/study-plan/study-plan' });
   },
 
+  goTpgCatalog() {
+    wx.navigateTo({ url: '/pages/tpg-catalog/tpg-catalog' });
+  },
+
   goRecentCourse(event) {
     wx.navigateTo({
       url: `/pages/offering-detail/offering-detail?code=${event.currentTarget.dataset.code}`

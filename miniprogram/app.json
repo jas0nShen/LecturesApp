@@ -9,6 +9,7 @@
     "pages/study-plan/study-plan",
     "pages/course-notes/course-notes",
     "pages/course-compare/course-compare",
+    "pages/tpg-catalog/tpg-catalog",
     "pages/audit/audit",
     "pages/completed-courses/completed-courses",
     "pages/favorites/favorites",

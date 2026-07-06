@@ -53,6 +53,13 @@
     </view>
   </view>
 
+  <view class="section tpg-entry" bindtap="goTpgCatalog">
+    <view class="tpg-entry-mark">6 SCHOOLS · TPG</view>
+    <view class="tpg-entry-title">授课硕士资料库</view>
+    <view class="tpg-entry-copy">浏览六校 Programme，课程结构正在逐批核验</view>
+    <view class="tpg-entry-arrow">›</view>
+  </view>
+
   <view wx:if="{{recentCourses.length}}" class="section recent-section">
     <view class="recent-heading">
       <view class="panel-title">最近查看</view>

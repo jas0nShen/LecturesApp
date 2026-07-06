@@ -1,4 +1,4 @@
-# 香港大学生课程选择助手 MVP
+# 香港高校课程选择助手 MVP
 
 这是一个先跑通核心闭环的 MVP 骨架：
 
@@ -12,6 +12,7 @@
 
 - `miniprogram/`：微信小程序源码
 - `data/seed.json`：首批示例数据
+- `data/tpg-programmes.json`：六校授课硕士 Programme 索引
 - `server/index.js`：本地 API mock server
 - `database/schema.sql`：核心数据库表结构
 - `admin/README.md`：后台管理端规划
@@ -61,6 +62,22 @@ npm run check
 第一条命令会生成 `miniprogram/utils/mockData.js`，第二条命令会检查数据引用、官方链接、学分覆盖以及 API 和离线逻辑。
 
 当前课程目录参考 HKU 官方课程说明及 2025–26 Sample Study Plan；毕业检查规则仍是用于验证产品流程的简化示例，不能替代学校官方 Degree Audit。
+
+六校授课硕士资料来自用户提供的 HKU、CUHK、HKUST、PolyU、CityU 和 HKBU PDF。当前已导入 Programme 索引，必修及选修课程仍需逐项对照官网复核。修改 `data/tpg-programmes.json` 后运行：
+
+```bash
+npm run sync:tpg
+npm run check
+```
+
+如需从原始 PDF 重新生成索引（本机须安装 `pypdf`）：
+
+```bash
+python3 scripts/import-tpg-pdfs.py \
+  --pdf-dir "/path/to/pdf-directory" \
+  --output data/tpg-programmes.json
+npm run sync:tpg
+```
 
 HKU Computing and Data Science 的学年开课表可通过以下命令从官网重新导入：
 

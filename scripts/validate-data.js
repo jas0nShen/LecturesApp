@@ -1,7 +1,9 @@
 const assert = require('node:assert/strict');
 const seed = require('../data/seed.json');
 const hkuCdsOfferings = require('../data/hku-cds-offerings-2025.json');
+const tpgCatalogue = require('../data/tpg-programmes.json');
 const mock = require('../miniprogram/utils/mockData');
+const tpgMock = require('../miniprogram/utils/tpgCatalog');
 
 function assertUniqueIds(items, label) {
   const ids = items.map((item) => item.id);
@@ -18,6 +20,7 @@ function assertReferences(items, foreignKey, validIds, label) {
 }
 
 assert.deepEqual(mock, seed, 'API seed and mini-program fallback data have drifted');
+assert.deepEqual(tpgMock, tpgCatalogue, 'TPG source and mini-program catalogue have drifted');
 
 Object.entries(seed).forEach(([label, items]) => assertUniqueIds(items, label));
 
@@ -96,6 +99,18 @@ hkuCdsOfferings.courses.forEach((course) => {
   assert(course.details.exclusions, `${course.courseCode} has no exclusion status`);
 });
 
+assert.equal(tpgCatalogue.scope, 'taught_postgraduate');
+assert.equal(tpgCatalogue.universities.length, 6);
+assert(tpgCatalogue.programmes.length >= 300, 'TPG programme import is unexpectedly small');
+assertUniqueIds(tpgCatalogue.programmes, 'TPG programmes');
+const tpgUniversityCodes = new Set(tpgCatalogue.universities.map((item) => item.code));
+tpgCatalogue.programmes.forEach((programme) => {
+  assert(tpgUniversityCodes.has(programme.universityCode));
+  assert(programme.name, `${programme.id} is missing a programme name`);
+  assert(['programme', 'structure'].includes(programme.dataLevel));
+  assert(Array.isArray(programme.courseGroups));
+});
+
 console.log(JSON.stringify({
   ok: true,
   universities: seed.universities.length,
@@ -103,5 +118,7 @@ console.log(JSON.stringify({
   majors: seed.majors.length,
   courses: seed.courses.length,
   requirements: seed.requirements.length,
-  hkuCdsOfferings: hkuCdsOfferings.courses.length
+  hkuCdsOfferings: hkuCdsOfferings.courses.length,
+  tpgUniversities: tpgCatalogue.universities.length,
+  tpgProgrammes: tpgCatalogue.programmes.length
 }));
