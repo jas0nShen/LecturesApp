@@ -3,7 +3,7 @@
 这是一个面向香港高校学生的课程规划微信小程序 MVP：
 
 - 微信小程序原生页面
-- 六校授课硕士 Programme 离线资料库
+- 授课硕士 Programme 离线资料库
 - HKU 官方开课示例数据
 - 零依赖 Node 本机调试服务
 - PostgreSQL 表结构草案
@@ -13,7 +13,7 @@
 
 - `miniprogram/`：微信小程序源码
 - `data/seed.json`：首批示例数据
-- `data/tpg-programmes.json`：六校授课硕士 Programme 索引
+- `data/tpg-programmes.json`：授课硕士 Programme 索引
 - `server/index.js`：本机调试服务
 - `database/schema.sql`：核心数据库表结构
 - `admin/README.md`：后台管理端规划
@@ -64,7 +64,7 @@ npm run check
 
 当前 HKU 课程目录参考 HKU 官方课程说明及 2025–26 Sample Study Plan；毕业检查仅用于规划参考，不能替代学校官网、选课系统或学校正式审核结果。
 
-六校授课硕士资料来自 HKU、CUHK、HKUST、PolyU、CityU 和 HKBU PDF。当前已导入 Programme 索引，部分 Programme 已开放课程组；课程组尚未开放的 Programme 只展示索引与来源，暂不生成毕业判断。修改 `data/tpg-programmes.json` 后运行：
+授课硕士资料来自公开资料 PDF。当前已导入 Programme 索引，部分 Programme 已开放课程组；课程组尚未开放的 Programme 只展示索引与来源，暂不生成毕业判断。修改 `data/tpg-programmes.json` 后运行：
 
 ```bash
 npm run sync:tpg

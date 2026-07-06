@@ -133,7 +133,7 @@ Page({
           ? '仅显示课程组尚未开放或仍待拆分的 Programme'
       : selectedSchool
         ? `${selectedSchool.name} · ${selectedSchool.programmeCount} 个 Programme`
-        : `六校合计 ${this.data.totalProgrammes} 个 Programme`;
+        : `当前资料库共 ${this.data.totalProgrammes} 个 Programme`;
     const limitHint = programmes.length > visibleProgrammes.length
       ? keyword
         ? '结果仍较多，可以输入更具体的 Programme、课程名或代码。'

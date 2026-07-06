@@ -25,8 +25,8 @@
 
   <view wx:if="{{mode === 'undergraduate'}}" class="section panel">
     <view class="scope-note ug-note">
-      当前本科培养方案只用于 HKU BEng Computer Science 示例验证；六校授课硕士 Programme 请切换到 TPG。
-      <view class="inline-link" bindtap="switchToTpg">查看六校授课硕士</view>
+      当前本科培养方案只用于 HKU BEng Computer Science 示例验证；授课硕士 Programme 请切换到 TPG。
+      <view class="inline-link" bindtap="switchToTpg">查看授课硕士</view>
     </view>
 
     <view class="field">
@@ -70,7 +70,7 @@
   </view>
 
   <view wx:else class="section panel tpg-panel">
-    <view class="scope-note tpg-note">六校已导入 {{tpgUniversities.length}} 所大学、{{tpgTotalProgrammes}} 个 Programme；已开放课程组的项目会显示课程结构。</view>
+    <view class="scope-note tpg-note">选择学校与 Programme 后，已开放课程组的项目会显示课程结构；未开放的项目会保留资料来源。</view>
 
     <view wx:if="{{savedTpgProfile}}" class="saved-scope-card" bindtap="previewSavedTpgProgramme">
       <view class="saved-scope-mark">CURRENT</view>

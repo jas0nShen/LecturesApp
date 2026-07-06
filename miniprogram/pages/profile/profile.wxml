@@ -59,26 +59,8 @@
   </view>
 
   <view wx:if="{{isTpg}}" class="section tpg-mini-actions">
-    <view class="mini-action" bindtap="goTpgCatalog">浏览六校 Programme</view>
-    <view class="mini-action primary" bindtap="goDataStatus">查看数据覆盖</view>
-  </view>
-
-  <view class="section launch-trust-card" bindtap="goDataStatus">
-    <view class="launch-trust-head">
-      <view>
-        <view class="trust-kicker">LAUNCH DATA</view>
-        <view class="panel-title">首发数据范围</view>
-      </view>
-      <view class="trust-link">详情 ›</view>
-    </view>
-    <view class="trust-grid">
-      <view wx:for="{{trustCards}}" wx:key="label" class="trust-item">
-        <view class="trust-value">{{item.value}}</view>
-        <view class="trust-label">{{item.label}}</view>
-        <view class="trust-copy">{{item.copy}}</view>
-      </view>
-    </view>
-    <view class="trust-note">资料随小程序离线发布；课程组尚未开放的 Programme 只展示索引与来源，暂不生成毕业判断。</view>
+    <view class="mini-action" bindtap="goTpgCatalog">浏览 Programme</view>
+    <view class="mini-action primary" bindtap="goDataStatus">查看资料来源</view>
   </view>
 
   <view class="section notes-entry" bindtap="goCourseNotes">
@@ -94,7 +76,7 @@
     <view class="data-dot {{dataStatus.status}}"></view>
     <view class="notes-main">
       <view class="panel-title">数据状态</view>
-    <view class="subtitle">{{isTpg ? '六校 TPG 覆盖、版本与资料来源' : dataStatus.statusLabel + ' · 开课目录更新于 ' + dataStatus.offering.updatedDate}}</view>
+    <view class="subtitle">{{isTpg ? 'Programme 资料来源、版本与本地数据状态' : dataStatus.statusLabel + ' · 开课目录更新于 ' + dataStatus.offering.updatedDate}}</view>
     </view>
     <view class="notes-arrow">›</view>
   </view>
@@ -150,6 +132,6 @@
 
   <view class="section panel">
     <view class="panel-title">数据说明</view>
-    <view class="subtitle">{{isTpg ? '六校授课硕士资料来自 PDF 与本地复核；课程组尚未开放的 Programme 只展示索引与来源，暂不生成毕业判断。' : '官方开课数据来自香港大学官网；毕业检查仅供规划参考，以大学官方要求为准。'}}</view>
+    <view class="subtitle">{{isTpg ? '授课硕士资料来自公开资料与本地复核；课程组尚未开放的 Programme 只展示索引与来源，暂不生成毕业判断。' : '官方开课数据来自香港大学官网；毕业检查仅供规划参考，以大学官方要求为准。'}}</view>
   </view>
 </view>

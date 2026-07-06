@@ -2,26 +2,6 @@ const service = require('../../utils/courseService');
 const feedbackService = require('../../utils/feedbackService');
 const tpgService = require('../../utils/tpgService');
 
-function buildTrustCards(tpgCoverage, dataStatus) {
-  return [
-    {
-      label: '六校 Programme',
-      value: tpgCoverage.programmeCount,
-      copy: `${tpgCoverage.schoolCount} 所大学已导入`
-    },
-    {
-      label: '已拆课程',
-      value: tpgCoverage.courseCount,
-      copy: `${tpgCoverage.programmeWithCoursesCount} 个 Programme 可看课程组`
-    },
-    {
-      label: '运行模式',
-      value: dataStatus.runtime.apiEnabled ? 'DEV' : 'OFFLINE',
-      copy: dataStatus.runtime.apiEnabled ? '开发版连接本机服务' : '发布版读取离线数据'
-    }
-  ];
-}
-
 Page({
   data: {
     profile: null,
@@ -30,9 +10,7 @@ Page({
     noteCount: 0,
     noteSummary: '集中整理选课理由和注意事项',
     userSummary: null,
-    dataStatus: null,
-    tpgCoverage: tpgService.getSchoolCoverage(),
-    trustCards: []
+    dataStatus: null
   },
 
   onShow() {
@@ -40,7 +18,6 @@ Page({
     const profile = service.getProfile();
     const tpgProfile = tpgService.getProfileSummary(profile);
     const dataStatus = service.getDataStatus();
-    const tpgCoverage = tpgService.getSchoolCoverage();
     const userSummary = service.getUserDataSummary();
     this.setData({
       profile,
@@ -49,9 +26,7 @@ Page({
       noteCount,
       noteSummary: noteCount ? `已记录 ${noteCount} 门课程` : '集中整理选课理由和注意事项',
       userSummary,
-      dataStatus,
-      tpgCoverage,
-      trustCards: buildTrustCards(tpgCoverage, dataStatus)
+      dataStatus
     });
   },
 

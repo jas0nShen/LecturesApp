@@ -74,8 +74,7 @@ Page({
     dataSource: 'loading',
     isTpg: false,
     tpgAudit: null,
-    needsSetup: false,
-    tpgCoverage: tpgService.getSchoolCoverage()
+    needsSetup: false
   },
 
   onShow() {

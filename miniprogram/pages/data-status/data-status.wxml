@@ -26,55 +26,14 @@
   <view class="section tpg-passport" wx:if="{{tpgStatus}}">
     <view class="tpg-passport-head">
       <view>
-        <view class="status-kicker">TPG DATA PASSPORT · 6 SCHOOLS</view>
+        <view class="status-kicker">TPG DATA PASSPORT</view>
         <view class="tpg-title">授课硕士资料库</view>
-        <view class="tpg-copy">用于首发版本的六校 Programme 索引；已开放课程组的项目会显示课程结构。</view>
+        <view class="tpg-copy">用于当前版本的 Programme 索引；已开放课程组的项目会显示课程结构。</view>
       </view>
       <view class="tpg-seal">PDF<br/>IMPORT</view>
     </view>
-    <view class="tpg-metrics">
-      <view class="tpg-metric">
-        <view class="stat-value">{{tpgStatus.schoolCount}}</view>
-        <view class="stat-label">所大学</view>
-      </view>
-      <view class="tpg-metric">
-        <view class="stat-value">{{tpgStatus.programmeCount}}</view>
-        <view class="stat-label">个 Programme</view>
-      </view>
-      <view class="tpg-metric">
-        <view class="stat-value">{{tpgStatus.courseCount}}</view>
-        <view class="stat-label">门已拆课程</view>
-      </view>
-    </view>
-    <view class="tpg-note-line">{{tpgStatus.programmeWithCoursesCount}} 个 Programme 已开放课程组；其余 Programme 先展示索引与来源，暂不生成毕业判断。</view>
-    <view class="source-action tpg-source-action" bindtap="copyTpgSources">复制六校 PDF 来源清单</view>
-  </view>
-
-  <view class="section launch-boundary" wx:if="{{tpgStatus}}">
-    <view class="source-kicker">LAUNCH BOUNDARY</view>
-    <view class="source-title">首发版如何避免误判</view>
-    <view class="boundary-list">
-      <view wx:for="{{launchBoundaries}}" wx:key="mark" class="boundary-row">
-        <view class="boundary-mark">{{item.mark}}</view>
-        <view>
-          <view class="boundary-title">{{item.title}}</view>
-          <view class="boundary-copy">{{item.copy}}</view>
-        </view>
-      </view>
-    </view>
-  </view>
-
-  <view class="section school-ledger" wx:if="{{tpgStatus}}">
-    <view class="source-kicker">SCHOOL COVERAGE</view>
-    <view class="source-title">六校导入状态</view>
-    <view wx:for="{{tpgStatus.schools}}" wx:key="code" class="school-row">
-      <view class="school-badge {{item.courseCount ? 'ready' : ''}}">{{item.badge}}</view>
-      <view class="school-main">
-        <view class="school-title">{{item.shortName}} · {{item.code}}</view>
-        <view class="school-copy">{{item.programmeCount}} 个 Programme · {{item.coverageLabel}}</view>
-        <view class="school-source">{{item.academicYear}} · {{item.sourceFile}}</view>
-      </view>
-    </view>
+    <view class="tpg-note-line">已开放课程组的 Programme 会显示课程结构；其余 Programme 先展示索引与来源，暂不生成毕业判断。</view>
+    <view class="source-action tpg-source-action" bindtap="copyTpgSources">复制 PDF 来源清单</view>
   </view>
 
   <view class="section source-card">

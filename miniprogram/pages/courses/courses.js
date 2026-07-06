@@ -54,8 +54,7 @@ Page({
     tpgCourseCountLabel: '',
     tpgStatusTitle: '',
     tpgStatusCopy: '',
-    needsSetup: false,
-    tpgCoverage: tpgService.getSchoolCoverage()
+    needsSetup: false
   },
 
   onShow() {
@@ -113,7 +112,7 @@ Page({
         tpgStatusTitle: status.hasCourseGroups ? '课程结构已开放' : '课程清单待开放',
         tpgStatusCopy: status.hasCourseGroups
           ? '这里显示你所选授课硕士 Programme 已拆分出的必修、选修或项目课程。'
-          : '这个 Programme 已进入六校索引；课程组完成复核后会在这里显示。',
+          : '这个 Programme 已进入资料库；课程组完成复核后会在这里显示。',
         dataSource: 'catalogue',
         searching: false
       });

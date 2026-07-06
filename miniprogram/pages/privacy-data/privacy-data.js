@@ -1,13 +1,12 @@
 const service = require('../../utils/courseService');
 const releaseInfo = require('../../utils/releaseInfo');
-const tpgService = require('../../utils/tpgService');
 
-function buildLaunchBoundaries(dataStatus, tpgCoverage) {
+function buildLocalBoundaries(dataStatus) {
   return [
     {
       mark: '01',
       title: '不要求登录',
-      copy: '首发版本不需要微信登录或学校账号登录；你的 Programme、收藏和计划保存在本机。'
+      copy: '当前版本不需要微信登录或学校账号登录；你的 Programme、收藏和计划保存在本机。'
     },
     {
       mark: '02',
@@ -18,8 +17,8 @@ function buildLaunchBoundaries(dataStatus, tpgCoverage) {
     },
     {
       mark: '03',
-      title: `${tpgCoverage.schoolCount} 校 ${tpgCoverage.programmeCount} 个 Programme`,
-      copy: `${tpgCoverage.courseCount} 门课程已拆分；未拆分项目只展示索引与来源，不生成毕业判断。`
+      title: '课程资料分层开放',
+      copy: '已开放课程组的 Programme 会展示课程结构；未开放项目只展示索引与来源，不生成毕业判断。'
     }
   ];
 }
@@ -29,18 +28,15 @@ Page({
     summary: null,
     dataStatus: null,
     releaseInfo,
-    tpgCoverage: null,
-    launchBoundaries: []
+    localBoundaries: []
   },
 
   onShow() {
     const dataStatus = service.getDataStatus();
-    const tpgCoverage = tpgService.getSchoolCoverage();
     this.setData({
       summary: service.getUserDataSummary(),
       dataStatus,
-      tpgCoverage,
-      launchBoundaries: buildLaunchBoundaries(dataStatus, tpgCoverage)
+      localBoundaries: buildLocalBoundaries(dataStatus)
     });
   },
 

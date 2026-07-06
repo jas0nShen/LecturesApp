@@ -39,8 +39,7 @@ Page({
     recentCourses: [],
     isTpg: false,
     tpgProfile: null,
-    tpgNextSteps: [],
-    tpgCoverage: tpgService.getSchoolCoverage()
+    tpgNextSteps: []
   },
 
   async onShow() {

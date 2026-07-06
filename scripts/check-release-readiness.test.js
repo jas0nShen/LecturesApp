@@ -20,7 +20,7 @@ test('current mini-program passes automated release readiness checks', () => {
   assert.equal(result.ready, true);
   assert.deepEqual(result.errors, []);
   assert.equal(result.release.version, '0.1.0');
-  assert.equal(result.release.target, '六校授课硕士首发版');
+  assert.equal(result.release.target, '授课硕士课程规划首发版');
   assert.equal(result.release.dataMode, '体验版 / 正式版离线数据');
   assert(result.metrics.pageCount >= 10);
   assert.equal(result.metrics.offeringCount, 56);
@@ -56,9 +56,9 @@ test('WeChat review version description stays within the 200 character limit', (
   assert(versionDescription.length <= 200);
 });
 
-test('MVP spec documents the six-school TPG launch scope', () => {
+test('MVP spec documents the TPG launch scope without user-facing school lock-in', () => {
   const mvpSpec = fs.readFileSync(path.join(ROOT, 'docs', 'MVP_SPEC.md'), 'utf8');
-  assert(mvpSpec.includes('六校授课硕士'));
+  assert(mvpSpec.includes('授课硕士课程规划助手'));
   assert(mvpSpec.includes('348 个 TPG Programme'));
   assert(!mvpSpec.includes('多学校完整数据覆盖'));
   assert(!mvpSpec.includes('本地 API mock 固定接口'));

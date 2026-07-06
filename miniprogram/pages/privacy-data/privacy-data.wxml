@@ -5,12 +5,12 @@
     <view class="subtitle">当前版本不要求登录，个人规划资料主要保存在这台设备的微信本地存储中。</view>
   </view>
 
-  <view class="section launch-boundary-card">
-    <view class="privacy-kicker dark">RELEASE BOUNDARY · {{releaseInfo.version}}</view>
-    <view class="panel-title">首发版数据边界</view>
+  <view class="section local-boundary-card">
+    <view class="privacy-kicker dark">LOCAL DATA · {{releaseInfo.version}}</view>
+    <view class="panel-title">本机数据边界</view>
     <view class="boundary-summary">{{releaseInfo.target}} · {{releaseInfo.dataMode}}</view>
     <view class="boundary-list">
-      <view wx:for="{{launchBoundaries}}" wx:key="mark" class="boundary-row">
+      <view wx:for="{{localBoundaries}}" wx:key="mark" class="boundary-row">
         <view class="boundary-mark">{{item.mark}}</view>
         <view>
           <view class="boundary-title">{{item.title}}</view>
