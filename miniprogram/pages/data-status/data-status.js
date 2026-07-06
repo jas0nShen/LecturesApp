@@ -1,8 +1,10 @@
 const service = require('../../utils/courseService');
+const releaseInfo = require('../../utils/releaseInfo');
 const tpgService = require('../../utils/tpgService');
 
 Page({
   data: {
+    releaseInfo,
     status: null,
     tpgStatus: null
   },

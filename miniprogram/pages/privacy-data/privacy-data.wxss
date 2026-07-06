@@ -4,6 +4,7 @@
 .privacy-head .title { color: #ffffff; font-size: 38rpx; margin-top: 12rpx; }
 .privacy-head .subtitle { color: #b9d0c8; }
 .launch-boundary-card { background: #fbfcfa; border: 1rpx solid #dce6e0; border-radius: 18rpx; box-shadow: 0 8rpx 22rpx rgba(15, 64, 51, 0.045); padding: 28rpx; }
+.boundary-summary { color: #65766e; font-size: 21rpx; line-height: 1.45; margin-top: 8rpx; }
 .boundary-list { display: flex; flex-direction: column; gap: 14rpx; margin-top: 20rpx; }
 .boundary-row { background: #f3f7f5; border: 1rpx solid #e0e9e4; border-radius: 16rpx; display: grid; gap: 16rpx; grid-template-columns: 56rpx 1fr; padding: 18rpx; }
 .boundary-mark { align-items: center; background: #0b6b55; border-radius: 50%; color: #ffffff; display: flex; font-size: 19rpx; font-weight: 850; height: 48rpx; justify-content: center; width: 48rpx; }

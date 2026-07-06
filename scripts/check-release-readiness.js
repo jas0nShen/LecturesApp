@@ -42,6 +42,7 @@ function checkReleaseReadiness(now = new Date()) {
   const seed = readJson(path.join(ROOT, 'data', 'seed.json'));
   const offerings = readJson(path.join(ROOT, 'data', 'hku-cds-offerings-2025.json'));
   const tpgCatalogue = readJson(path.join(ROOT, 'data', 'tpg-programmes.json'));
+  const releaseInfo = require(path.join(MINI_ROOT, 'utils', 'releaseInfo'));
   const tpgSummary = summarizeTpgCatalogue(tpgCatalogue);
   const errors = [];
   const warnings = [];
@@ -51,6 +52,9 @@ function checkReleaseReadiness(now = new Date()) {
   }
   if (project.setting && project.setting.uploadWithSourceMap !== false) {
     errors.push('Source map upload must be disabled for the release build');
+  }
+  if (releaseInfo.version !== packageJson.version) {
+    errors.push(`releaseInfo version ${releaseInfo.version} does not match package version ${packageJson.version}`);
   }
   if (!sitemap.rules || !sitemap.rules.some((rule) => (
     rule.action === 'disallow' && rule.page === '*'
@@ -132,9 +136,9 @@ function checkReleaseReadiness(now = new Date()) {
   return {
     ready: errors.length === 0,
     release: {
-      version: packageJson.version,
-      target: 'six-school taught postgraduate MVP',
-      dataMode: 'offline bundle for trial and release'
+      version: releaseInfo.version,
+      target: releaseInfo.target,
+      dataMode: releaseInfo.dataMode
     },
     errors,
     warnings,

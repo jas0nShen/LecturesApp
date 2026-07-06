@@ -7,7 +7,8 @@ test('current mini-program passes automated release readiness checks', () => {
   assert.equal(result.ready, true);
   assert.deepEqual(result.errors, []);
   assert.equal(result.release.version, '0.1.0');
-  assert.equal(result.release.target, 'six-school taught postgraduate MVP');
+  assert.equal(result.release.target, '六校授课硕士首发版');
+  assert.equal(result.release.dataMode, '体验版 / 正式版离线数据');
   assert(result.metrics.pageCount >= 10);
   assert.equal(result.metrics.offeringCount, 56);
   assert.equal(result.metrics.tpgSchoolCount, 6);

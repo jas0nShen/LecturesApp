@@ -1,4 +1,5 @@
 const service = require('../../utils/courseService');
+const releaseInfo = require('../../utils/releaseInfo');
 const tpgService = require('../../utils/tpgService');
 
 function buildLaunchBoundaries(dataStatus, tpgCoverage) {
@@ -27,6 +28,7 @@ Page({
   data: {
     summary: null,
     dataStatus: null,
+    releaseInfo,
     tpgCoverage: null,
     launchBoundaries: []
   },

@@ -1,3 +1,32 @@
+.release-card {
+  background: #fbfcfa;
+  border: 1rpx solid #dce6e0;
+  border-radius: 18rpx;
+  box-shadow: 0 8rpx 22rpx rgba(15, 64, 51, 0.045);
+  padding: 26rpx;
+}
+
+.release-kicker {
+  color: #0b6b55;
+  font-size: 18rpx;
+  font-weight: 850;
+  letter-spacing: 2rpx;
+}
+
+.release-title {
+  color: #17352c;
+  font-size: 30rpx;
+  font-weight: 850;
+  margin-top: 8rpx;
+}
+
+.release-copy {
+  color: #667970;
+  font-size: 21rpx;
+  line-height: 1.5;
+  margin-top: 8rpx;
+}
+
 .status-head {
   align-items: center;
   background: #17352c;

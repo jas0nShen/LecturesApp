@@ -1,4 +1,10 @@
 <view class="page" wx:if="{{status}}">
+  <view class="section release-card">
+    <view class="release-kicker">RELEASE · {{releaseInfo.version}}</view>
+    <view class="release-title">{{releaseInfo.target}}</view>
+    <view class="release-copy">{{releaseInfo.dataMode}} · {{releaseInfo.releaseNote}}</view>
+  </view>
+
   <view class="section status-head {{status.status}}">
     <view class="status-seal">{{status.status === 'current' ? 'VERIFIED' : 'REVIEW'}}</view>
     <view>
