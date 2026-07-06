@@ -76,3 +76,12 @@ test('release-facing docs avoid stale launch terminology', () => {
     assert(!content.includes('本地 API mock'), `${relativePath} still mentions 本地 API mock`);
   });
 });
+
+test('release checklist includes an iOS and Android acceptance matrix', () => {
+  const checklist = fs.readFileSync(path.join(ROOT, 'docs', 'RELEASE_CHECKLIST.md'), 'utf8');
+  assert(checklist.includes('## 真机验收记录模板'));
+  assert(checklist.includes('| 检查项 | iOS | Android | 预期结果 |'));
+  ['授课硕士选择', 'Programme 详情', '数据与隐私', '备份恢复', '清除本机数据'].forEach((item) => {
+    assert(checklist.includes(item), `Missing acceptance item: ${item}`);
+  });
+});
