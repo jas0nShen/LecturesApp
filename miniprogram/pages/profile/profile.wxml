@@ -108,6 +108,18 @@
     <view class="notes-arrow">›</view>
   </view>
 
+  <view class="section feedback-entry">
+    <view class="feedback-head">
+      <view>
+        <view class="feedback-kicker">FEEDBACK</view>
+        <view class="panel-title">反馈与纠错</view>
+      </view>
+      <view class="feedback-tag">不上云</view>
+    </view>
+    <view class="feedback-copy">发现 Programme、课程组或页面显示有问题，可以复制一份带当前资料范围的反馈模板，再发给开发者。</view>
+    <view class="feedback-button" bindtap="copyFeedbackTemplate">复制反馈模板</view>
+  </view>
+
   <view class="section vault">
     <view class="vault-mark">LOCAL VAULT</view>
     <view class="panel-title">数据保险箱</view>

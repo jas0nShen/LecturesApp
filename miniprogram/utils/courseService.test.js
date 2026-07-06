@@ -315,6 +315,25 @@ test('course search history is deduplicated, capped, backed up and clearable', (
   assert.deepEqual(service.getCourseSearchHistory(), []);
 });
 
+test('TPG programme search history is local, deduplicated, backed up and clearable', () => {
+  service.recordTpgProgrammeSearch('data science');
+  service.recordTpgProgrammeSearch('finance');
+  service.recordTpgProgrammeSearch('DATA SCIENCE');
+
+  assert.deepEqual(service.getTpgProgrammeSearchHistory(), ['DATA SCIENCE', 'finance']);
+  assert.equal(service.getUserDataSummary().searchCount, 2);
+
+  const backup = service.exportUserData();
+  assert.deepEqual(backup.data.tpgProgrammeSearchHistory, ['DATA SCIENCE', 'finance']);
+
+  service.clearTpgProgrammeSearchHistory();
+  assert.deepEqual(service.getTpgProgrammeSearchHistory(), []);
+
+  service.importUserData(backup);
+  assert.deepEqual(service.getTpgProgrammeSearchHistory(), ['DATA SCIENCE', 'finance']);
+  assert.deepEqual(service.clearUserData().searchCount, 0);
+});
+
 test('data status reports source coverage and freshness', () => {
   const status = service.getDataStatus(new Date('2026-07-05T12:00:00+08:00'));
   assert.equal(status.status, 'current');
@@ -338,6 +357,7 @@ test('user data summary counts local records and clear removes every user key', 
   service.saveCourseNote('COMP1117', 'Remember this.');
   service.recordRecentlyViewed('COMP1117');
   service.recordCourseSearch('COMP');
+  service.recordTpgProgrammeSearch('finance');
 
   assert.deepEqual(service.getUserDataSummary(), {
     hasProfile: true,
@@ -346,7 +366,7 @@ test('user data summary counts local records and clear removes every user key', 
     studyPlanCount: 1,
     noteCount: 1,
     recentCount: 1,
-    searchCount: 1
+    searchCount: 2
   });
   assert.deepEqual(service.clearUserData(), {
     hasProfile: false,
@@ -370,6 +390,7 @@ test('all declared local user keys are backup and restore aware', () => {
     'studyPlanItems',
     'recentlyViewedCourseCodes',
     'courseSearchHistory',
+    'tpgProgrammeSearchHistory',
     'courseNotes'
   ]);
 
@@ -385,6 +406,7 @@ test('all declared local user keys are backup and restore aware', () => {
       studyPlanItems: [{ courseCode: 'COMP3278', year: 2, term: '1' }],
       recentlyViewedCourseCodes: ['COMP4801'],
       courseSearchHistory: ['security'],
+      tpgProgrammeSearchHistory: ['data science'],
       courseNotes: { COMP1117: 'Check project deadline.' }
     }
   };

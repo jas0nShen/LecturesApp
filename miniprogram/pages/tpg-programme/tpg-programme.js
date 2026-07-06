@@ -1,4 +1,5 @@
 const service = require('../../utils/courseService');
+const feedbackService = require('../../utils/feedbackService');
 const tpgService = require('../../utils/tpgService');
 
 Page({
@@ -54,6 +55,18 @@ Page({
       data,
       success: () => {
         wx.showToast({ title: programme.sourceUrl ? '官方链接已复制' : '资料来源已复制' });
+      }
+    });
+  },
+
+  copyFeedbackTemplate() {
+    const programme = this.data.programme;
+    if (!programme) return;
+    const template = feedbackService.buildFeedbackTemplate(service.getProfile(), { programme });
+    wx.setClipboardData({
+      data: template,
+      success() {
+        wx.showToast({ title: '反馈模板已复制' });
       }
     });
   },

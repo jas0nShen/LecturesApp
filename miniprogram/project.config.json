@@ -42,6 +42,10 @@
             {
                 "type": "file",
                 "value": "utils/tpgService.test.js"
+            },
+            {
+                "type": "file",
+                "value": "utils/feedbackService.test.js"
             }
         ],
         "include": []

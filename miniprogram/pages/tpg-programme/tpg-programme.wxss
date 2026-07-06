@@ -336,6 +336,21 @@
   color: #738078;
 }
 
+.feedback-button {
+  background: #fff8ea;
+  border: 1rpx solid #e4d6b5;
+  border-radius: 18rpx;
+  color: #795b2d;
+  font-size: 25rpx;
+  font-weight: 750;
+  line-height: 84rpx;
+  margin-top: 14rpx;
+}
+
+.feedback-button::after {
+  border: 0;
+}
+
 .home-button {
   background: #123f34;
   border: 0;

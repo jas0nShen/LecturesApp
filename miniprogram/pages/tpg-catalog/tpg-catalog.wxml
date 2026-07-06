@@ -51,9 +51,35 @@
       class="search-input"
       value="{{keyword}}"
       placeholder="搜索 Programme、课程或代码"
+      confirm-type="search"
       bindinput="onKeywordInput"
+      bindconfirm="commitKeywordSearch"
     />
     <view wx:if="{{keyword}}" class="search-clear" bindtap="clearKeyword">清除</view>
+  </view>
+
+  <view wx:if="{{!keyword && searchHistory.length}}" class="history-row">
+    <view class="history-label">最近搜索</view>
+    <view class="history-chips">
+      <view
+        wx:for="{{searchHistory}}"
+        wx:key="*this"
+        class="history-chip"
+        data-keyword="{{item}}"
+        bindtap="useHistoryKeyword"
+      >{{item}}</view>
+    </view>
+    <view class="history-clear" bindtap="clearSearchHistory">清空</view>
+  </view>
+
+  <view class="availability-row">
+    <view
+      wx:for="{{availabilityFilters}}"
+      wx:key="value"
+      class="availability-chip {{availabilityFilter === item.value ? 'availability-chip-active' : ''}}"
+      data-value="{{item.value}}"
+      bindtap="selectAvailability"
+    >{{item.label}}</view>
   </view>
 
   <view class="result-head">

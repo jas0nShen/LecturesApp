@@ -20,6 +20,7 @@ const USER_DATA_KEYS = [
   'studyPlanItems',
   'recentlyViewedCourseCodes',
   'courseSearchHistory',
+  'tpgProgrammeSearchHistory',
   'courseNotes'
 ];
 
@@ -99,6 +100,24 @@ function clearCourseSearchHistory() {
   return [];
 }
 
+function getTpgProgrammeSearchHistory() {
+  return wx.getStorageSync('tpgProgrammeSearchHistory') || [];
+}
+
+function recordTpgProgrammeSearch(keyword) {
+  const value = String(keyword || '').trim();
+  if (!value) return getTpgProgrammeSearchHistory();
+  const history = getTpgProgrammeSearchHistory();
+  const next = [value].concat(history.filter((item) => item.toLowerCase() !== value.toLowerCase())).slice(0, 8);
+  wx.setStorageSync('tpgProgrammeSearchHistory', next);
+  return next;
+}
+
+function clearTpgProgrammeSearchHistory() {
+  wx.setStorageSync('tpgProgrammeSearchHistory', []);
+  return [];
+}
+
 function exportUserData() {
   const dataSnapshot = {};
   USER_DATA_KEYS.forEach((key) => {
@@ -124,7 +143,7 @@ function getUserDataSummary() {
     studyPlanCount: getStudyPlanItems().length,
     noteCount: getCourseNotes().length,
     recentCount: getRecentlyViewedOfferings().length,
-    searchCount: getCourseSearchHistory().length
+    searchCount: getCourseSearchHistory().length + getTpgProgrammeSearchHistory().length
   };
 }
 
@@ -146,7 +165,8 @@ function importUserData(snapshot) {
     'completedOfferingCodes',
     'studyPlanItems',
     'recentlyViewedCourseCodes',
-    'courseSearchHistory'
+    'courseSearchHistory',
+    'tpgProgrammeSearchHistory'
   ]);
   USER_DATA_KEYS.forEach((key) => {
     if (!Object.prototype.hasOwnProperty.call(parsed.data, key)) return;
@@ -841,6 +861,7 @@ module.exports = {
   getCourseNote,
   getCourseNotes,
   getCourseSearchHistory,
+  getTpgProgrammeSearchHistory,
   getCourseShareInfo,
   getCourseRemote,
   getCourseOffering,
@@ -872,11 +893,13 @@ module.exports = {
   listUniversitiesRemote,
   removeStudyPlanItem,
   recordCourseSearch,
+  recordTpgProgrammeSearch,
   recordRecentlyViewed,
   saveStudyPlanItem,
   saveCourseNote,
   saveProfile,
   clearCourseSearchHistory,
+  clearTpgProgrammeSearchHistory,
   clearUserData,
   toggleCompleted,
   toggleFavorite,

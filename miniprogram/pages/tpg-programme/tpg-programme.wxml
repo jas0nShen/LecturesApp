@@ -86,6 +86,8 @@
     >{{programme.sourceUrl ? '复制官方链接' : '复制资料来源'}}</button>
   </view>
 
+  <button class="feedback-button" bindtap="copyFeedbackTemplate">反馈这个 Programme</button>
+
   <button wx:if="{{isCurrentProgramme}}" class="home-button" bindtap="goHome">返回首页查看我的 Programme</button>
 
   <view class="disclaimer">资料用于辅助规划，不替代学校官网、选课系统或学校正式审核结果。</view>

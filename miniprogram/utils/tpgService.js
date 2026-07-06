@@ -105,6 +105,16 @@ function searchProgrammes(programmes, keyword = '') {
   });
 }
 
+function filterProgrammesByAvailability(programmes, availability = 'all') {
+  if (availability === 'courses') {
+    return programmes.filter(hasCourseGroups);
+  }
+  if (availability === 'pending') {
+    return programmes.filter((programme) => !hasCourseGroups(programme));
+  }
+  return programmes;
+}
+
 function getProfileSummary(profile) {
   if (!profile || profile.profileType !== 'tpg') return null;
   const programme = getProgramme(profile.programmeId);
@@ -172,6 +182,7 @@ module.exports = {
   getStatus,
   getUniversity,
   hasCourseGroups,
+  filterProgrammesByAvailability,
   listProgrammes,
   listUniversities,
   searchProgrammes

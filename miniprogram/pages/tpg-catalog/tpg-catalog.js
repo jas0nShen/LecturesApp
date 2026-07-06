@@ -9,6 +9,13 @@ Page({
     universities: coverage.schools,
     selectedUniversity: ALL_SCHOOLS,
     keyword: '',
+    searchHistory: [],
+    availabilityFilter: 'all',
+    availabilityFilters: [
+      { value: 'all', label: '全部' },
+      { value: 'courses', label: '课程组已开放' },
+      { value: 'pending', label: '待拆分' }
+    ],
     visibleProgrammes: [],
     resultCount: 0,
     resultScope: '全部学校',
@@ -27,7 +34,8 @@ Page({
     const profile = courseService.getProfile();
     const selectedProfile = tpgService.getProfileSummary(profile);
     this.setData({
-      selectedProfile: selectedProfile && selectedProfile.programme ? selectedProfile : null
+      selectedProfile: selectedProfile && selectedProfile.programme ? selectedProfile : null,
+      searchHistory: courseService.getTpgProgrammeSearchHistory()
     });
     this.refresh();
   },
@@ -47,7 +55,36 @@ Page({
     this.refresh();
   },
 
+  commitKeywordSearch() {
+    const keyword = this.data.keyword.trim();
+    if (!keyword) return;
+    this.setData({
+      searchHistory: courseService.recordTpgProgrammeSearch(keyword)
+    });
+  },
+
+  useHistoryKeyword(event) {
+    const keyword = event.currentTarget.dataset.keyword || '';
+    this.setData({
+      keyword,
+      searchHistory: courseService.recordTpgProgrammeSearch(keyword)
+    });
+    this.refresh();
+  },
+
+  clearSearchHistory() {
+    this.setData({
+      searchHistory: courseService.clearTpgProgrammeSearchHistory()
+    });
+  },
+
+  selectAvailability(event) {
+    this.setData({ availabilityFilter: event.currentTarget.dataset.value || 'all' });
+    this.refresh();
+  },
+
   goProgramme(event) {
+    this.commitKeywordSearch();
     const id = event.currentTarget.dataset.id;
     wx.navigateTo({
       url: `/pages/tpg-programme/tpg-programme?id=${encodeURIComponent(id)}`
@@ -68,15 +105,32 @@ Page({
     const selectedSchool = selected === ALL_SCHOOLS
       ? null
       : this.data.universities.find((university) => university.code === selected);
-    const programmes = tpgService.searchProgrammes(
+    const searchedProgrammes = tpgService.searchProgrammes(
       tpgService.listProgrammes(selected === ALL_SCHOOLS ? '' : selected),
       keyword
     );
+    const programmes = tpgService.filterProgrammesByAvailability(
+      searchedProgrammes,
+      this.data.availabilityFilter
+    );
     const visibleProgrammes = programmes.slice(0, 120);
     const scopeName = selectedSchool ? selectedSchool.nameCn : '全部学校';
-    const resultScope = keyword ? `${scopeName} · “${keyword}”` : scopeName;
+    const filterCopy = this.data.availabilityFilter === 'courses'
+      ? '课程组已开放'
+      : this.data.availabilityFilter === 'pending'
+        ? '待拆分'
+        : '';
+    const resultScope = [
+      scopeName,
+      keyword ? `“${keyword}”` : '',
+      filterCopy
+    ].filter(Boolean).join(' · ');
     const resultHint = keyword
       ? '正在匹配 Programme、课程名与代码'
+      : this.data.availabilityFilter === 'courses'
+        ? '仅显示已录入必修、选修或课程清单的 Programme'
+        : this.data.availabilityFilter === 'pending'
+          ? '仅显示课程组尚未开放或仍待拆分的 Programme'
       : selectedSchool
         ? `${selectedSchool.name} · ${selectedSchool.programmeCount} 个 Programme`
         : `六校合计 ${this.data.totalProgrammes} 个 Programme`;

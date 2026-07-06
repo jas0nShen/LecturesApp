@@ -48,6 +48,18 @@ test('TPG programme search matches names, codes, faculties and course text', () 
   ));
 });
 
+test('TPG programmes can be filtered by course availability', () => {
+  const hkuProgrammes = tpgService.listProgrammes('HKU');
+  const withCourses = tpgService.filterProgrammesByAvailability(hkuProgrammes, 'courses');
+  const pending = tpgService.filterProgrammesByAvailability(hkuProgrammes, 'pending');
+
+  assert.equal(withCourses.length, 6);
+  assert.equal(withCourses.every(tpgService.hasCourseGroups), true);
+  assert.equal(pending.length, hkuProgrammes.length - withCourses.length);
+  assert.equal(pending.some(tpgService.hasCourseGroups), false);
+  assert.equal(tpgService.filterProgrammesByAvailability(hkuProgrammes, 'all').length, hkuProgrammes.length);
+});
+
 test('TPG programme source text is copyable even without a direct URL', () => {
   const programme = tpgService.getProgramme('HKU-TPG-001');
   const sourceText = tpgService.buildProgrammeSourceText(programme);

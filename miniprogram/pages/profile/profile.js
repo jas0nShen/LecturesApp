@@ -1,4 +1,5 @@
 const service = require('../../utils/courseService');
+const feedbackService = require('../../utils/feedbackService');
 const tpgService = require('../../utils/tpgService');
 
 function buildTrustCards(tpgCoverage, dataStatus) {
@@ -83,6 +84,16 @@ Page({
 
   goPrivacyData() {
     wx.navigateTo({ url: '/pages/privacy-data/privacy-data' });
+  },
+
+  copyFeedbackTemplate() {
+    const template = feedbackService.buildFeedbackTemplate(this.data.profile);
+    wx.setClipboardData({
+      data: template,
+      success() {
+        wx.showToast({ title: '反馈模板已复制' });
+      }
+    });
   },
 
   copyBackup() {
