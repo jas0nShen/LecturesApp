@@ -49,8 +49,9 @@
 
   <view class="section action-card">
     <view class="panel-title">带走或删除数据</view>
-    <view class="action-copy">清除前可以先复制文本备份，以后仍能从“我的”页面恢复。</view>
+    <view class="action-copy">换手机、重装微信或清除前，先复制文本备份。恢复时不会联网，只会写回这台设备的本地存储。</view>
     <view class="backup-button" bindtap="copyBackup">复制完整备份</view>
+    <view class="restore-button" bindtap="restoreBackup">从剪贴板恢复</view>
     <view class="delete-button" bindtap="clearAllData">清除全部本机数据</view>
   </view>
 

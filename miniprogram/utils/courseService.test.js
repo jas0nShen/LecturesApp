@@ -359,3 +359,40 @@ test('user data summary counts local records and clear removes every user key', 
   });
   assert.deepEqual(service.exportUserData().data, {});
 });
+
+test('all declared local user keys are backup and restore aware', () => {
+  assert.deepEqual(service.USER_DATA_KEYS, [
+    'userProfile',
+    'favoriteCourseIds',
+    'favoriteOfferingCodes',
+    'completedCourseIds',
+    'completedOfferingCodes',
+    'studyPlanItems',
+    'recentlyViewedCourseCodes',
+    'courseSearchHistory',
+    'courseNotes'
+  ]);
+
+  const backup = {
+    app: 'lectures-app',
+    version: 1,
+    data: {
+      userProfile: { universityCode: 'HKU', programmeId: 'hku-msc-cs' },
+      favoriteCourseIds: [1],
+      favoriteOfferingCodes: ['COMP1117'],
+      completedCourseIds: [2],
+      completedOfferingCodes: ['COMP2113'],
+      studyPlanItems: [{ courseCode: 'COMP3278', year: 2, term: '1' }],
+      recentlyViewedCourseCodes: ['COMP4801'],
+      courseSearchHistory: ['security'],
+      courseNotes: { COMP1117: 'Check project deadline.' }
+    }
+  };
+
+  assert.equal(service.importUserData(backup), true);
+  assert.deepEqual(service.exportUserData().data, backup.data);
+  assert.throws(
+    () => service.importUserData({ app: 'lectures-app', version: 1, data: { favoriteOfferingCodes: 'COMP1117' } }),
+    /Invalid favoriteOfferingCodes/
+  );
+});

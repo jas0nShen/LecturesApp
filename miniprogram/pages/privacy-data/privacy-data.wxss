@@ -26,7 +26,8 @@
 .flow-copy { color: #718079; font-size: 21rpx; line-height: 1.55; margin-top: 5rpx; }
 .action-card { background: #f3f5f4; border-radius: 18rpx; padding: 28rpx; }
 .action-copy { color: #6c7c74; font-size: 22rpx; line-height: 1.5; margin-top: 8rpx; }
-.backup-button, .delete-button { align-items: center; border-radius: 13rpx; display: flex; font-size: 24rpx; font-weight: 750; height: 80rpx; justify-content: center; margin-top: 20rpx; }
+.backup-button, .restore-button, .delete-button { align-items: center; border-radius: 13rpx; display: flex; font-size: 24rpx; font-weight: 750; height: 80rpx; justify-content: center; margin-top: 20rpx; }
 .backup-button { background: #0b6b55; color: #ffffff; }
+.restore-button { background: #e4eee9; color: #0b6b55; margin-top: 12rpx; }
 .delete-button { border: 1rpx solid #c99993; color: #9b443d; margin-top: 12rpx; }
 .legal-note { color: #86928c; font-size: 19rpx; line-height: 1.55; padding: 0 10rpx; text-align: center; }

@@ -53,6 +53,40 @@ Page({
     });
   },
 
+  restoreBackup() {
+    wx.getClipboardData({
+      success: ({ data }) => {
+        let backup;
+        try {
+          backup = JSON.parse(data);
+          if (!backup || backup.app !== 'lectures-app' || backup.version !== 1) throw new Error('invalid');
+        } catch (error) {
+          wx.showToast({ title: '剪贴板中没有有效备份', icon: 'none' });
+          return;
+        }
+
+        wx.showModal({
+          title: '恢复本机数据',
+          content: '备份中的学校专业、收藏、已修记录、Study Plan、笔记和搜索记录会写入当前设备。确认继续？',
+          confirmText: '恢复',
+          success: (result) => {
+            if (!result.confirm) return;
+            try {
+              service.importUserData(backup);
+              this.onShow();
+              wx.showToast({ title: '数据已恢复' });
+            } catch (error) {
+              wx.showToast({ title: '备份格式不正确', icon: 'none' });
+            }
+          }
+        });
+      },
+      fail() {
+        wx.showToast({ title: '无法读取剪贴板', icon: 'none' });
+      }
+    });
+  },
+
   clearAllData() {
     wx.showModal({
       title: '清除全部本机数据？',

@@ -826,6 +826,7 @@ function buildAuditRemote(profile, completedCourseIds) {
 
 module.exports = {
   TYPE_LABELS,
+  USER_DATA_KEYS,
   data,
   buildAudit,
   buildAuditRemote,
