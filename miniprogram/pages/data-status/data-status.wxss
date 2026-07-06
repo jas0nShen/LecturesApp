@@ -200,6 +200,54 @@
   padding-top: 18rpx;
 }
 
+.launch-boundary {
+  background: #fffaf0;
+  border: 1rpx solid #e8d6ad;
+  border-radius: 18rpx;
+  padding: 28rpx;
+}
+
+.boundary-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14rpx;
+  margin-top: 22rpx;
+}
+
+.boundary-row {
+  background: rgba(255, 255, 255, 0.58);
+  border: 1rpx solid #eadbb7;
+  border-radius: 16rpx;
+  display: grid;
+  gap: 16rpx;
+  grid-template-columns: 92rpx 1fr;
+  padding: 18rpx;
+}
+
+.boundary-mark {
+  align-items: center;
+  border: 2rpx solid #9b7840;
+  color: #795b2d;
+  display: flex;
+  font-size: 16rpx;
+  font-weight: 900;
+  justify-content: center;
+  min-height: 42rpx;
+}
+
+.boundary-title {
+  color: #17352c;
+  font-size: 24rpx;
+  font-weight: 850;
+}
+
+.boundary-copy {
+  color: #786b50;
+  font-size: 21rpx;
+  line-height: 1.45;
+  margin-top: 6rpx;
+}
+
 .school-ledger {
   background: #fbfcfa;
   border: 1rpx solid #dce6e0;

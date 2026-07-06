@@ -50,6 +50,20 @@
     <view class="source-action tpg-source-action" bindtap="copyTpgSources">复制六校 PDF 来源清单</view>
   </view>
 
+  <view class="section launch-boundary" wx:if="{{tpgStatus}}">
+    <view class="source-kicker">LAUNCH BOUNDARY</view>
+    <view class="source-title">首发版如何避免误判</view>
+    <view class="boundary-list">
+      <view wx:for="{{launchBoundaries}}" wx:key="mark" class="boundary-row">
+        <view class="boundary-mark">{{item.mark}}</view>
+        <view>
+          <view class="boundary-title">{{item.title}}</view>
+          <view class="boundary-copy">{{item.copy}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
   <view class="section school-ledger" wx:if="{{tpgStatus}}">
     <view class="source-kicker">SCHOOL COVERAGE</view>
     <view class="source-title">六校导入状态</view>
