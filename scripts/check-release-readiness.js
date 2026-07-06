@@ -16,12 +16,33 @@ function walkFiles(directory) {
   });
 }
 
+function summarizeTpgCatalogue(tpgCatalogue) {
+  const programmeWithCourses = tpgCatalogue.programmes.filter((programme) => (
+    (programme.courseGroups || []).some((group) => (group.courses || []).length > 0)
+  ));
+  const courseCount = tpgCatalogue.programmes.reduce((total, programme) => (
+    total + (programme.courseGroups || []).reduce((groupTotal, group) => (
+      groupTotal + (group.courses || []).length
+    ), 0)
+  ), 0);
+  return {
+    schoolCount: tpgCatalogue.universities.length,
+    programmeCount: tpgCatalogue.programmes.length,
+    programmeWithCoursesCount: programmeWithCourses.length,
+    courseCount,
+    schoolCodes: tpgCatalogue.universities.map((university) => university.code)
+  };
+}
+
 function checkReleaseReadiness(now = new Date()) {
+  const packageJson = readJson(path.join(ROOT, 'package.json'));
   const project = readJson(path.join(MINI_ROOT, 'project.config.json'));
   const app = readJson(path.join(MINI_ROOT, 'app.json'));
   const sitemap = readJson(path.join(MINI_ROOT, app.sitemapLocation || 'sitemap.json'));
   const seed = readJson(path.join(ROOT, 'data', 'seed.json'));
   const offerings = readJson(path.join(ROOT, 'data', 'hku-cds-offerings-2025.json'));
+  const tpgCatalogue = readJson(path.join(ROOT, 'data', 'tpg-programmes.json'));
+  const tpgSummary = summarizeTpgCatalogue(tpgCatalogue);
   const errors = [];
   const warnings = [];
 
@@ -76,6 +97,12 @@ function checkReleaseReadiness(now = new Date()) {
   if (offerings.courses.some((course) => !course.details || !course.officialUrl)) {
     errors.push('One or more official offerings are missing details or source URLs');
   }
+  if (tpgSummary.schoolCount < 6) {
+    errors.push(`TPG catalogue includes ${tpgSummary.schoolCount} schools, expected at least 6`);
+  }
+  if (tpgSummary.programmeCount < 300) {
+    errors.push(`TPG catalogue includes ${tpgSummary.programmeCount} programmes, expected at least 300`);
+  }
 
   const uploadFiles = walkFiles(MINI_ROOT).filter((file) => {
     const relative = path.relative(MINI_ROOT, file);
@@ -104,15 +131,30 @@ function checkReleaseReadiness(now = new Date()) {
 
   return {
     ready: errors.length === 0,
+    release: {
+      version: packageJson.version,
+      target: 'six-school taught postgraduate MVP',
+      dataMode: 'offline bundle for trial and release'
+    },
     errors,
     warnings,
     metrics: {
       pageCount: app.pages.length,
       offeringCount: offerings.courses.length,
       offeringAgeDays: Math.max(0, sourceAgeDays),
+      tpgSchoolCount: tpgSummary.schoolCount,
+      tpgProgrammeCount: tpgSummary.programmeCount,
+      tpgProgrammeWithCoursesCount: tpgSummary.programmeWithCoursesCount,
+      tpgCourseCount: tpgSummary.courseCount,
       uploadFileCount: uploadFiles.length,
       packageBytes,
       sensitiveApiCount: sensitiveApis.length
+    },
+    manualChecklist: {
+      privacyDeclaration: 'Confirm storage, clipboard read/write, share, and offline data behavior in WeChat admin',
+      categoryAndFiling: 'Confirm service category, ICP/filing, app name, avatar, and description',
+      deviceTesting: 'Run the TPG setup, catalogue, programme detail, audit, profile, data status, and privacy flows on iOS and Android',
+      reviewMaterial: 'Use docs/REVIEW_SUBMISSION.md for the version description and reviewer path'
     }
   };
 }
@@ -125,5 +167,6 @@ if (require.main === module) {
 
 module.exports = {
   checkReleaseReadiness,
+  summarizeTpgCatalogue,
   walkFiles
 };
