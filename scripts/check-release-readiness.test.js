@@ -32,6 +32,14 @@ test('current mini-program passes automated release readiness checks', () => {
   assert.match(result.manualChecklist.reviewMaterial, /REVIEW_SUBMISSION/);
 });
 
+test('WeChat project metadata matches the launch positioning', () => {
+  const projectConfig = JSON.parse(fs.readFileSync(
+    path.join(ROOT, 'miniprogram', 'project.config.json'),
+    'utf8'
+  ));
+  assert.equal(projectConfig.description, '香港高校授课硕士课程规划助手 MVP');
+});
+
 test('stale official course data blocks release readiness', () => {
   const result = checkReleaseReadiness(new Date('2026-11-01T12:00:00+08:00'));
   assert.equal(result.ready, false);
