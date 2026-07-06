@@ -5,6 +5,20 @@
     <view class="subtitle">当前版本不要求登录，个人规划资料主要保存在这台设备的微信本地存储中。</view>
   </view>
 
+  <view class="section launch-boundary-card">
+    <view class="privacy-kicker dark">RELEASE BOUNDARY</view>
+    <view class="panel-title">首发版数据边界</view>
+    <view class="boundary-list">
+      <view wx:for="{{launchBoundaries}}" wx:key="mark" class="boundary-row">
+        <view class="boundary-mark">{{item.mark}}</view>
+        <view>
+          <view class="boundary-title">{{item.title}}</view>
+          <view class="boundary-copy">{{item.copy}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
   <view class="section panel">
     <view class="panel-title">本机数据概览</view>
     <view class="summary-grid">
@@ -24,7 +38,7 @@
     </view>
     <view class="flow-row">
       <view class="flow-mark api">API</view>
-      <view><view class="flow-name">课程查询与毕业检查</view><view class="flow-copy">查询会发送筛选条件；毕业检查会发送专业、培养年份和已修课程标识，不包含姓名或课程笔记。</view></view>
+      <view><view class="flow-name">课程查询与毕业检查</view><view class="flow-copy">{{dataStatus.runtime.apiEnabled ? '开发版可能请求本地 API；查询只包含筛选条件、专业、培养年份和课程标识，不包含姓名或课程笔记。' : '体验版与正式版跳过 localhost，直接读取离线数据；课程笔记不会上传。'}}</view></view>
     </view>
     <view class="flow-row">
       <view class="flow-mark copy">复制</view>
@@ -39,5 +53,5 @@
     <view class="delete-button" bindtap="clearAllData">清除全部本机数据</view>
   </view>
 
-  <view class="section legal-note">这是当前版本的产品数据说明，不替代小程序正式发布时需要配置的平台隐私保护指引。</view>
+  <view class="section legal-note">这是当前版本的产品数据说明，不替代小程序正式发布时需要配置的平台隐私保护指引；发布前仍需要在微信公众平台完成隐私与类目配置。</view>
 </view>

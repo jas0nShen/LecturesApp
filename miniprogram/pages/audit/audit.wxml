@@ -42,6 +42,14 @@
       <view class="source-line">数据源：六校授课硕士本地目录</view>
     </view>
 
+    <view class="section tpg-snapshot">
+      <view wx:for="{{tpgAudit.snapshot}}" wx:key="label" class="tpg-snapshot-item">
+        <view class="tpg-snapshot-value">{{item.value}}</view>
+        <view class="tpg-snapshot-label">{{item.label}}</view>
+        <view class="tpg-snapshot-state">{{item.state}}</view>
+      </view>
+    </view>
+
     <view class="section completed-entry" bindtap="goTpgProgramme">
       <view class="completed-icon">↗</view>
       <view class="completed-copy">
@@ -72,6 +80,14 @@
       <view class="recommendation">
         <view class="course-code">下一步</view>
         <view class="subtitle">继续从 PDF/官网核验课程组，再开放逐项毕业检查。</view>
+      </view>
+    </view>
+
+    <view class="section panel tpg-next-panel">
+      <view class="audit-kicker">WHAT TO DO NEXT</view>
+      <view wx:for="{{tpgAudit.nextChecks}}" wx:key="index" class="tpg-next-row">
+        <view class="tpg-next-index">{{index + 1}}</view>
+        <view class="subtitle">{{item}}</view>
       </view>
     </view>
 

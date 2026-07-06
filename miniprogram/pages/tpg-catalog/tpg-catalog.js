@@ -1,16 +1,20 @@
 const tpgService = require('../../utils/tpgService');
 
 const ALL_SCHOOLS = 'ALL';
+const coverage = tpgService.getSchoolCoverage();
 
 Page({
   data: {
-    universities: tpgService.listUniversities(),
+    universities: coverage.schools,
     selectedUniversity: ALL_SCHOOLS,
     keyword: '',
     visibleProgrammes: [],
     resultCount: 0,
-    totalProgrammes: tpgService.getSchoolCoverage().programmeCount,
-    totalCourses: tpgService.getSchoolCoverage().courseCount
+    resultScope: '全部学校',
+    resultHint: '可按学校或关键词继续缩小范围',
+    limitHint: '',
+    totalProgrammes: coverage.programmeCount,
+    totalCourses: coverage.courseCount
   },
 
   onLoad() {
@@ -41,12 +45,29 @@ Page({
 
   refresh() {
     const selected = this.data.selectedUniversity;
+    const keyword = this.data.keyword.trim();
+    const selectedSchool = selected === ALL_SCHOOLS
+      ? null
+      : this.data.universities.find((university) => university.code === selected);
     const programmes = tpgService.searchProgrammes(
       tpgService.listProgrammes(selected === ALL_SCHOOLS ? '' : selected),
-      this.data.keyword
+      keyword
     );
+    const visibleProgrammes = programmes.slice(0, 120);
+    const scopeName = selectedSchool ? selectedSchool.nameCn : '全部学校';
+    const resultScope = keyword ? `${scopeName} · “${keyword}”` : scopeName;
+    const resultHint = keyword
+      ? '正在匹配 Programme、课程名与代码'
+      : selectedSchool
+        ? `${selectedSchool.name} · ${selectedSchool.programmeCount} 个 Programme`
+        : `六校合计 ${this.data.totalProgrammes} 个 Programme`;
+    const limitHint = programmes.length > visibleProgrammes.length
+      ? keyword
+        ? '结果仍较多，可以输入更具体的 Programme、课程名或代码。'
+        : '当前只展示前 120 项，建议先选择学校或输入 Programme / 课程关键词。'
+      : '';
     this.setData({
-      visibleProgrammes: programmes.slice(0, 120).map((programme) => {
+      visibleProgrammes: visibleProgrammes.map((programme) => {
         const status = tpgService.getStatus(programme);
         const university = tpgService.getProgrammeUniversity(programme);
         return {
@@ -59,7 +80,10 @@ Page({
           statusBadge: status.hasCourseGroups ? 'COURSES' : status.hasStructure ? 'STRUCTURE' : 'INDEX'
         };
       }),
-      resultCount: programmes.length
+      resultCount: programmes.length,
+      resultScope,
+      resultHint,
+      limitHint
     });
   }
 });

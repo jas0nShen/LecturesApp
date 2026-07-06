@@ -13,10 +13,40 @@ function buildTpgAudit(programme, university) {
   const status = tpgService.getStatus(programme);
   const courseCount = status.courseCount;
   const totalCredits = programme.creditsRequired || 0;
+  const snapshot = [
+    {
+      label: '毕业学分 / units',
+      value: totalCredits || '--',
+      state: totalCredits ? '已收录' : '待核验'
+    },
+    {
+      label: '已拆课程',
+      value: courseCount,
+      state: status.hasCourseGroups ? '可查看' : '整理中'
+    },
+    {
+      label: '资料年份',
+      value: university.academicYear || '待核验',
+      state: programme.sourceUrl ? '可追溯' : '本地 PDF'
+    }
+  ];
+  const nextChecks = status.hasCourseGroups
+    ? [
+        '查看已拆出的必修/选修课程组',
+        '对照 Programme Handbook 与学校选课系统',
+        '后续版本再开放逐门完成度勾选'
+      ]
+    : [
+        '先确认 Programme 与官方来源是否匹配',
+        '等待课程组拆分完成后再计算毕业进度',
+        '可先去资料库查看同校其他 Programme'
+      ];
   return {
     programme,
     university,
     groups,
+    snapshot,
+    nextChecks,
     courseCount,
     totalCredits,
     hasCourseGroups: status.hasCourseGroups,

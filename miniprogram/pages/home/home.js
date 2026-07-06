@@ -1,6 +1,32 @@
 const service = require('../../utils/courseService');
 const tpgService = require('../../utils/tpgService');
 
+function buildTpgNextSteps(summary) {
+  if (!summary) return [];
+  const hasCourses = summary.courseCount > 0;
+  return [
+    {
+      status: 'DONE',
+      title: 'Programme 已选择',
+      copy: `${summary.schoolLabel} · ${summary.yearLabel}`
+    },
+    {
+      status: hasCourses ? 'READY' : 'CHECKING',
+      title: hasCourses ? '课程结构可查看' : '课程结构核验中',
+      copy: hasCourses
+        ? `${summary.statusLabel}，可以先浏览必修/选修分组。`
+        : '已保留 Programme 入口，后续补齐课程组后会直接显示。'
+    },
+    {
+      status: hasCourses ? 'NEXT' : 'SAFE',
+      title: hasCourses ? '下一步：对照官方要求' : '下一步：等待课程拆分',
+      copy: hasCourses
+        ? '毕业检查页会展示课程组，但正式选课前仍以学校官网为准。'
+        : '为避免误导，暂不生成未核验 Programme 的毕业完成度。'
+    }
+  ];
+}
+
 Page({
   data: {
     profile: null,
@@ -13,6 +39,7 @@ Page({
     recentCourses: [],
     isTpg: false,
     tpgProfile: null,
+    tpgNextSteps: [],
     tpgCoverage: tpgService.getSchoolCoverage()
   },
 
@@ -38,6 +65,7 @@ Page({
       profile,
       isTpg,
       tpgProfile,
+      tpgNextSteps: buildTpgNextSteps(tpgProfile),
       audit: auditResult.data,
       recentCourses,
       dataSource: auditResult.source

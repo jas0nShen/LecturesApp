@@ -1,12 +1,45 @@
 const service = require('../../utils/courseService');
+const tpgService = require('../../utils/tpgService');
+
+function buildLaunchBoundaries(dataStatus, tpgCoverage) {
+  return [
+    {
+      mark: '01',
+      title: '不要求登录',
+      copy: '首发版本不需要微信登录或学校账号登录；你的 Programme、收藏和计划保存在本机。'
+    },
+    {
+      mark: '02',
+      title: dataStatus.runtime.apiEnabled ? '开发版可连本地 API' : '正式版离线运行',
+      copy: dataStatus.runtime.apiEnabled
+        ? '开发环境会优先请求本地 API；体验版和正式版会跳过 localhost，避免发布后请求失败。'
+        : '发布环境直接读取随包发布的数据快照，不请求 localhost。'
+    },
+    {
+      mark: '03',
+      title: `${tpgCoverage.schoolCount} 校 ${tpgCoverage.programmeCount} 个 Programme`,
+      copy: `${tpgCoverage.courseCount} 门课程已拆分；未拆分项目只展示索引与来源，不生成毕业判断。`
+    }
+  ];
+}
 
 Page({
   data: {
-    summary: null
+    summary: null,
+    dataStatus: null,
+    tpgCoverage: null,
+    launchBoundaries: []
   },
 
   onShow() {
-    this.setData({ summary: service.getUserDataSummary() });
+    const dataStatus = service.getDataStatus();
+    const tpgCoverage = tpgService.getSchoolCoverage();
+    this.setData({
+      summary: service.getUserDataSummary(),
+      dataStatus,
+      tpgCoverage,
+      launchBoundaries: buildLaunchBoundaries(dataStatus, tpgCoverage)
+    });
   },
 
   copyBackup() {

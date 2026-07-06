@@ -245,6 +245,14 @@
   padding: 8rpx 13rpx;
 }
 
+.action-grid {
+  display: grid;
+  gap: 14rpx;
+  grid-template-columns: 1.2fr 1fr;
+  margin-top: 20rpx;
+}
+
+.save-button,
 .official-button {
   background: #0b6b55;
   border: 0;
@@ -253,16 +261,42 @@
   font-size: 27rpx;
   font-weight: 700;
   line-height: 92rpx;
-  margin-top: 20rpx;
+  margin: 0;
 }
 
+.save-button::after,
 .official-button::after {
   border: 0;
+}
+
+.official-button {
+  background: #e4f0eb;
+  color: #0b6b55;
+}
+
+.save-button-current {
+  background: #dbe4df;
+  color: #64756e;
 }
 
 .official-button-muted {
   background: #dbe4df;
   color: #738078;
+}
+
+.home-button {
+  background: #123f34;
+  border: 0;
+  border-radius: 18rpx;
+  color: #ffffff;
+  font-size: 26rpx;
+  font-weight: 750;
+  line-height: 88rpx;
+  margin-top: 14rpx;
+}
+
+.home-button::after {
+  border: 0;
 }
 
 .disclaimer {

@@ -63,6 +63,24 @@
     <view class="mini-action primary" bindtap="goDataStatus">查看数据覆盖</view>
   </view>
 
+  <view class="section launch-trust-card" bindtap="goDataStatus">
+    <view class="launch-trust-head">
+      <view>
+        <view class="trust-kicker">LAUNCH DATA</view>
+        <view class="panel-title">首发数据范围</view>
+      </view>
+      <view class="trust-link">详情 ›</view>
+    </view>
+    <view class="trust-grid">
+      <view wx:for="{{trustCards}}" wx:key="label" class="trust-item">
+        <view class="trust-value">{{item.value}}</view>
+        <view class="trust-label">{{item.label}}</view>
+        <view class="trust-copy">{{item.copy}}</view>
+      </view>
+    </view>
+    <view class="trust-note">资料随小程序离线发布；未完成课程拆分的 Programme 只展示索引，不生成毕业判断。</view>
+  </view>
+
   <view class="section notes-entry" bindtap="goCourseNotes">
     <view class="notes-mark">NOTES</view>
     <view class="notes-main">

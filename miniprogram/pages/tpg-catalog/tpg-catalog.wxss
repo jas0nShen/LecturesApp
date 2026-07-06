@@ -95,18 +95,37 @@
 }
 
 .school-chip {
+  align-items: center;
   background: #ffffff;
   border: 1rpx solid #cedbd5;
   border-radius: 999rpx;
   color: #53635c;
+  display: inline-flex;
   font-size: 23rpx;
   font-weight: 600;
+  gap: 10rpx;
   padding: 17rpx 25rpx;
+}
+
+.school-chip-count {
+  background: #edf4f0;
+  border-radius: 999rpx;
+  color: #0b6b55;
+  font-size: 18rpx;
+  font-weight: 850;
+  min-width: 38rpx;
+  padding: 3rpx 8rpx;
+  text-align: center;
 }
 
 .school-chip-active {
   background: #0b6b55;
   border-color: #0b6b55;
+  color: #ffffff;
+}
+
+.school-chip-active .school-chip-count {
+  background: rgba(255, 255, 255, 0.18);
   color: #ffffff;
 }
 
@@ -134,8 +153,9 @@
 }
 
 .result-head {
-  align-items: center;
+  align-items: flex-end;
   display: flex;
+  gap: 20rpx;
   justify-content: space-between;
   margin: 28rpx 4rpx 16rpx;
 }
@@ -148,6 +168,17 @@
 .result-note {
   color: #7b8983;
   font-size: 20rpx;
+  line-height: 1.45;
+  max-width: 360rpx;
+  text-align: right;
+}
+
+.result-scope {
+  color: #0b6b55;
+  font-size: 21rpx;
+  font-weight: 650;
+  line-height: 1.45;
+  margin-top: 5rpx;
 }
 
 .programme-list {

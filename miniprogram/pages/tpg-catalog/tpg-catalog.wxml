@@ -32,7 +32,10 @@
         class="school-chip {{selectedUniversity === item.code ? 'school-chip-active' : ''}}"
         data-code="{{item.code}}"
         bindtap="selectUniversity"
-      >{{item.code}}</view>
+      >
+        <text>{{item.code}}</text>
+        <text class="school-chip-count">{{item.programmeCount}}</text>
+      </view>
     </view>
   </scroll-view>
 
@@ -47,8 +50,11 @@
   </view>
 
   <view class="result-head">
-    <view class="result-count">{{resultCount}} 个结果</view>
-    <view class="result-note">PDF 导入 · 待官网复核</view>
+    <view>
+      <view class="result-count">{{resultCount}} 个结果</view>
+      <view class="result-scope">{{resultScope}}</view>
+    </view>
+    <view class="result-note">{{resultHint}}</view>
   </view>
 
   <view class="programme-list">
@@ -82,7 +88,7 @@
   </view>
 
   <view wx:if="{{resultCount > visibleProgrammes.length}}" class="limit-note">
-    当前先展示前 {{visibleProgrammes.length}} 项，请使用学校筛选或关键词缩小范围。
+    已显示前 {{visibleProgrammes.length}} 项。{{limitHint}}
   </view>
 
   <view wx:if="{{resultCount === 0}}" class="empty">

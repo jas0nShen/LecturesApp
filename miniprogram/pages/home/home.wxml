@@ -76,6 +76,25 @@
     <view class="tpg-entry-arrow">›</view>
   </view>
 
+  <view wx:if="{{isTpg}}" class="section tpg-next-card">
+    <view class="row">
+      <view>
+        <view class="start-kicker">MVP STATUS</view>
+        <view class="panel-title">你的 Programme 现在可以这样用</view>
+      </view>
+      <view class="tpg-credits-pill">{{tpgProfile.creditsLabel}}</view>
+    </view>
+    <view class="tpg-step-list">
+      <view wx:for="{{tpgNextSteps}}" wx:key="title" class="tpg-step">
+        <view class="tpg-step-status {{item.status === 'READY' || item.status === 'DONE' ? 'tpg-step-status-ready' : ''}}">{{item.status}}</view>
+        <view>
+          <view class="tpg-step-title">{{item.title}}</view>
+          <view class="tpg-step-copy">{{item.copy}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
   <view class="section tpg-entry" bindtap="goTpgCatalog">
     <view class="tpg-entry-mark">6 SCHOOLS · TPG</view>
     <view class="tpg-entry-title">授课硕士资料库</view>

@@ -140,6 +140,81 @@
   color: #ffffff;
 }
 
+.launch-trust-card {
+  background: #fbfcfa;
+  border: 1rpx solid #dce6e0;
+  border-radius: 20rpx;
+  box-shadow: 0 8rpx 22rpx rgba(15, 64, 51, 0.045);
+  padding: 28rpx;
+}
+
+.launch-trust-head {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trust-kicker {
+  color: #0b6b55;
+  font-size: 18rpx;
+  font-weight: 850;
+  letter-spacing: 2rpx;
+  margin-bottom: 7rpx;
+}
+
+.trust-link {
+  color: #0b6b55;
+  font-size: 22rpx;
+  font-weight: 800;
+}
+
+.trust-grid {
+  display: grid;
+  gap: 12rpx;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 22rpx;
+}
+
+.trust-item {
+  background: #f2f7f4;
+  border: 1rpx solid #e0e9e4;
+  border-radius: 16rpx;
+  min-height: 144rpx;
+  padding: 18rpx 14rpx;
+}
+
+.trust-value {
+  color: #0b6b55;
+  font-size: 31rpx;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.trust-label {
+  color: #17352c;
+  font-size: 20rpx;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-top: 10rpx;
+}
+
+.trust-copy {
+  color: #718079;
+  font-size: 18rpx;
+  line-height: 1.35;
+  margin-top: 7rpx;
+}
+
+.trust-note {
+  background: #e8f1ed;
+  border-radius: 14rpx;
+  color: #60766c;
+  font-size: 21rpx;
+  line-height: 1.5;
+  margin-top: 16rpx;
+  padding: 18rpx;
+}
+
 .vault {
   background: #17352c;
   border-radius: 20rpx;
