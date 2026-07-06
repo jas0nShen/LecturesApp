@@ -1,0 +1,74 @@
+<view wx:if="{{programme}}" class="page">
+  <view class="identity">
+    <view class="identity-top">
+      <view class="school-stamp">{{programme.universityCode}}</view>
+      <view class="year">{{university.academicYear}}</view>
+    </view>
+    <view class="programme-name">{{programme.name}}</view>
+    <view wx:if="{{programme.faculty}}" class="faculty">{{programme.faculty}}</view>
+    <view class="identity-rule"></view>
+    <view class="facts">
+      <view class="fact">
+        <view class="fact-label">Programme code</view>
+        <view class="fact-value">{{programme.programmeCode || '整理中'}}</view>
+      </view>
+      <view class="fact">
+        <view class="fact-label">毕业学分</view>
+        <view class="fact-value">{{programme.creditsRequired ? programme.creditsRequired + ' credits / units' : '待核验'}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="status-card {{hasCourseGroups ? 'status-ready' : ''}}">
+    <view class="status-mark">{{hasCourseGroups ? 'VERIFIED' : 'IN REVIEW'}}</view>
+    <view class="status-content">
+      <view class="status-title">{{statusTitle}}</view>
+      <view class="status-copy">{{statusCopy}}</view>
+    </view>
+  </view>
+
+  <view wx:if="{{hasCourseGroups}}" class="section">
+    <view class="section-kicker">COURSE STRUCTURE</view>
+    <view
+      wx:for="{{programme.courseGroups}}"
+      wx:key="name"
+      wx:for-item="group"
+      class="course-group"
+    >
+      <view class="group-head">
+        <view class="group-name">{{group.name}}</view>
+        <view wx:if="{{group.creditsRequired}}" class="group-credit">{{group.creditsRequired}} credits</view>
+      </view>
+      <view wx:for="{{group.courses}}" wx:key="code" wx:for-item="course" class="course-row">
+        <view class="course-code">{{course.code}}</view>
+        <view class="course-name">{{course.name}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view wx:else class="section pending">
+    <view class="section-kicker">COURSE STRUCTURE</view>
+    <view class="pending-title">课程清单正在核验</view>
+    <view class="pending-copy">我们会把课程分为必修、选修及项目要求。未核验完成前，这里不会展示可能误导选课的信息。</view>
+    <view class="pending-steps">
+      <view class="pending-step"><text>01</text> 对照 Programme 官方页面</view>
+      <view class="pending-step"><text>02</text> 拆分必修与选修课程</view>
+      <view class="pending-step"><text>03</text> 复核学分与毕业要求</view>
+    </view>
+  </view>
+
+  <view class="source-card">
+    <view>
+      <view class="source-label">资料来源</view>
+      <view class="source-name">{{university.shortName}} · {{university.sourceFile}}</view>
+    </view>
+    <view class="source-status">PDF 已导入</view>
+  </view>
+
+  <button
+    class="official-button {{programme.sourceUrl ? '' : 'official-button-muted'}}"
+    bindtap="copyOfficialLink"
+  >{{programme.sourceUrl ? '复制官方链接' : '官方链接整理中'}}</button>
+
+  <view class="disclaimer">资料用于辅助规划，不替代学校官网、选课系统或正式 Degree Audit。</view>
+</view>

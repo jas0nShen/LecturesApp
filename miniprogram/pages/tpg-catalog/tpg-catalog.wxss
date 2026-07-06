@@ -161,6 +161,12 @@
   border: 1rpx solid #d8e2dd;
   border-radius: 18rpx;
   padding: 24rpx 26rpx 25rpx;
+  transition: background 120ms ease, transform 120ms ease;
+}
+
+.programme-card-active {
+  background: #f7faf8;
+  transform: scale(0.99);
 }
 
 .programme-top {
@@ -182,6 +188,19 @@
   color: #65756e;
   font-size: 18rpx;
   padding: 6rpx 13rpx;
+}
+
+.programme-badges {
+  align-items: center;
+  display: flex;
+  gap: 15rpx;
+}
+
+.programme-arrow {
+  color: #0b6b55;
+  font-size: 34rpx;
+  font-weight: 500;
+  line-height: 1;
 }
 
 .programme-name {

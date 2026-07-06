@@ -1,0 +1,275 @@
+.page {
+  background: #f2f6f3;
+  box-sizing: border-box;
+  color: #17231f;
+  min-height: 100vh;
+  padding: 24rpx 24rpx 68rpx;
+}
+
+.identity {
+  background: #123f34;
+  border-radius: 24rpx;
+  color: #f7fbf8;
+  overflow: hidden;
+  padding: 34rpx;
+  position: relative;
+}
+
+.identity::after {
+  border: 2rpx solid rgba(179, 222, 205, 0.17);
+  border-radius: 50%;
+  content: "";
+  height: 230rpx;
+  position: absolute;
+  right: -85rpx;
+  top: -82rpx;
+  width: 230rpx;
+}
+
+.identity-top,
+.facts,
+.group-head,
+.source-card {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.school-stamp {
+  color: #a8d4c3;
+  font-size: 21rpx;
+  font-weight: 800;
+  letter-spacing: 4rpx;
+}
+
+.year {
+  color: #b9ccc4;
+  font-size: 21rpx;
+}
+
+.programme-name {
+  font-size: 40rpx;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-top: 25rpx;
+  max-width: 590rpx;
+  position: relative;
+  z-index: 1;
+}
+
+.faculty {
+  color: #c1d3cb;
+  font-size: 23rpx;
+  line-height: 1.5;
+  margin-top: 14rpx;
+}
+
+.identity-rule {
+  background: rgba(215, 235, 226, 0.17);
+  height: 1rpx;
+  margin: 28rpx 0 23rpx;
+}
+
+.facts {
+  align-items: flex-start;
+  gap: 32rpx;
+}
+
+.fact {
+  flex: 1;
+}
+
+.fact-label {
+  color: #92aea2;
+  font-size: 19rpx;
+  text-transform: uppercase;
+}
+
+.fact-value {
+  font-size: 24rpx;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-top: 8rpx;
+}
+
+.status-card {
+  align-items: flex-start;
+  background: #f8f1df;
+  border: 1rpx solid #e4d6b5;
+  border-radius: 20rpx;
+  display: flex;
+  gap: 24rpx;
+  margin-top: 20rpx;
+  padding: 27rpx;
+}
+
+.status-ready {
+  background: #e6f2ec;
+  border-color: #bdd9cc;
+}
+
+.status-mark {
+  border: 2rpx solid #9b7840;
+  color: #795b2d;
+  font-size: 17rpx;
+  font-weight: 800;
+  letter-spacing: 2rpx;
+  padding: 8rpx 10rpx;
+  transform: rotate(-2deg);
+}
+
+.status-ready .status-mark {
+  border-color: #17705a;
+  color: #0b6b55;
+}
+
+.status-content {
+  flex: 1;
+}
+
+.status-title {
+  font-size: 27rpx;
+  font-weight: 700;
+}
+
+.status-copy {
+  color: #665d4a;
+  font-size: 22rpx;
+  line-height: 1.55;
+  margin-top: 8rpx;
+}
+
+.status-ready .status-copy {
+  color: #51665c;
+}
+
+.section,
+.source-card {
+  background: #ffffff;
+  border: 1rpx solid #d8e2dd;
+  border-radius: 20rpx;
+  margin-top: 20rpx;
+  padding: 28rpx;
+}
+
+.section-kicker,
+.source-label {
+  color: #0b6b55;
+  font-size: 19rpx;
+  font-weight: 800;
+  letter-spacing: 3rpx;
+}
+
+.pending-title {
+  font-size: 31rpx;
+  font-weight: 750;
+  margin-top: 18rpx;
+}
+
+.pending-copy {
+  color: #617069;
+  font-size: 23rpx;
+  line-height: 1.65;
+  margin-top: 12rpx;
+}
+
+.pending-steps {
+  border-top: 1rpx solid #e4ebe7;
+  margin-top: 24rpx;
+  padding-top: 10rpx;
+}
+
+.pending-step {
+  color: #394a42;
+  font-size: 23rpx;
+  padding: 13rpx 0;
+}
+
+.pending-step text {
+  color: #8aa096;
+  font-size: 18rpx;
+  font-weight: 700;
+  letter-spacing: 2rpx;
+  margin-right: 18rpx;
+}
+
+.course-group + .course-group {
+  border-top: 1rpx solid #e4ebe7;
+  margin-top: 25rpx;
+  padding-top: 25rpx;
+}
+
+.group-head {
+  margin: 20rpx 0 8rpx;
+}
+
+.group-name {
+  font-size: 28rpx;
+  font-weight: 700;
+}
+
+.group-credit {
+  color: #6c7b74;
+  font-size: 20rpx;
+}
+
+.course-row {
+  border-top: 1rpx solid #edf1ef;
+  padding: 20rpx 0;
+}
+
+.course-code {
+  color: #0b6b55;
+  font-size: 21rpx;
+  font-weight: 800;
+}
+
+.course-name {
+  font-size: 24rpx;
+  line-height: 1.4;
+  margin-top: 6rpx;
+}
+
+.source-name {
+  color: #53635b;
+  font-size: 22rpx;
+  margin-top: 8rpx;
+  max-width: 470rpx;
+}
+
+.source-status {
+  background: #edf4f0;
+  border-radius: 999rpx;
+  color: #607169;
+  font-size: 18rpx;
+  padding: 8rpx 13rpx;
+}
+
+.official-button {
+  background: #0b6b55;
+  border: 0;
+  border-radius: 18rpx;
+  color: #ffffff;
+  font-size: 27rpx;
+  font-weight: 700;
+  line-height: 92rpx;
+  margin-top: 20rpx;
+}
+
+.official-button::after {
+  border: 0;
+}
+
+.official-button-muted {
+  background: #dbe4df;
+  color: #738078;
+}
+
+.disclaimer {
+  color: #7a8881;
+  font-size: 20rpx;
+  line-height: 1.55;
+  margin-top: 20rpx;
+  padding: 0 16rpx;
+  text-align: center;
+}

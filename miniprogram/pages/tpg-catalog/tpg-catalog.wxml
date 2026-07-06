@@ -48,10 +48,20 @@
   </view>
 
   <view class="programme-list">
-    <view wx:for="{{visibleProgrammes}}" wx:key="id" class="programme-card">
+    <view
+      wx:for="{{visibleProgrammes}}"
+      wx:key="id"
+      class="programme-card"
+      data-id="{{item.id}}"
+      bindtap="goProgramme"
+      hover-class="programme-card-active"
+    >
       <view class="programme-top">
         <view class="school-stamp">{{item.universityCode}}</view>
-        <view class="data-level">{{item.dataLevel === 'structure' ? '含结构' : '索引'}}</view>
+        <view class="programme-badges">
+          <view class="data-level">{{item.dataLevel === 'structure' ? '含结构' : '索引'}}</view>
+          <view class="programme-arrow">›</view>
+        </view>
       </view>
       <view class="programme-name">{{item.name}}</view>
       <view wx:if="{{item.faculty}}" class="programme-faculty">{{item.faculty}}</view>

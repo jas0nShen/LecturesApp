@@ -31,6 +31,13 @@ Page({
     this.refresh();
   },
 
+  goProgramme(event) {
+    const id = event.currentTarget.dataset.id;
+    wx.navigateTo({
+      url: `/pages/tpg-programme/tpg-programme?id=${encodeURIComponent(id)}`
+    });
+  },
+
   refresh() {
     const selected = this.data.selectedUniversity;
     const keyword = this.data.keyword.trim().toLowerCase();
