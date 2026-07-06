@@ -81,21 +81,6 @@
       <view class="saved-scope-arrow">›</view>
     </view>
 
-    <view class="setup-guide">
-      <view class="setup-guide-item">
-        <view class="guide-index">1</view>
-        <view>选择学校</view>
-      </view>
-      <view class="setup-guide-item">
-        <view class="guide-index">2</view>
-        <view>搜索 Programme</view>
-      </view>
-      <view class="setup-guide-item">
-        <view class="guide-index">3</view>
-        <view>保存后查看课程状态</view>
-      </view>
-    </view>
-
     <view class="field">
       <view class="label">大学</view>
       <picker range="{{tpgUniversities}}" range-key="shortName" bindchange="onTpgUniversityChange">
