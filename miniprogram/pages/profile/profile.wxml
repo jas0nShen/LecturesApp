@@ -112,6 +112,24 @@
     <view class="vault-mark">LOCAL VAULT</view>
     <view class="panel-title">数据保险箱</view>
     <view class="vault-copy">把资料、收藏、已修记录和 Study Plan 复制成一份文本备份。数据不会上传服务器，也不会自动同步到其他设备。</view>
+    <view wx:if="{{userSummary}}" class="vault-summary">
+      <view class="vault-summary-item">
+        <view class="vault-summary-value">{{userSummary.favoriteCount}}</view>
+        <view class="vault-summary-label">收藏</view>
+      </view>
+      <view class="vault-summary-item">
+        <view class="vault-summary-value">{{userSummary.studyPlanCount}}</view>
+        <view class="vault-summary-label">计划</view>
+      </view>
+      <view class="vault-summary-item">
+        <view class="vault-summary-value">{{userSummary.noteCount}}</view>
+        <view class="vault-summary-label">笔记</view>
+      </view>
+      <view class="vault-summary-item">
+        <view class="vault-summary-value">{{userSummary.searchCount}}</view>
+        <view class="vault-summary-label">搜索</view>
+      </view>
+    </view>
     <view class="vault-actions">
       <view class="vault-button primary" bindtap="copyBackup">复制备份</view>
       <view class="vault-button" bindtap="restoreBackup">从剪贴板恢复</view>

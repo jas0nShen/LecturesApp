@@ -28,6 +28,7 @@ Page({
     tpgProfile: null,
     noteCount: 0,
     noteSummary: '集中整理选课理由和注意事项',
+    userSummary: null,
     dataStatus: null,
     tpgCoverage: tpgService.getSchoolCoverage(),
     trustCards: []
@@ -39,12 +40,14 @@ Page({
     const tpgProfile = tpgService.getProfileSummary(profile);
     const dataStatus = service.getDataStatus();
     const tpgCoverage = tpgService.getSchoolCoverage();
+    const userSummary = service.getUserDataSummary();
     this.setData({
       profile,
       isTpg: !!tpgProfile,
       tpgProfile,
       noteCount,
       noteSummary: noteCount ? `已记录 ${noteCount} 门课程` : '集中整理选课理由和注意事项',
+      userSummary,
       dataStatus,
       tpgCoverage,
       trustCards: buildTrustCards(tpgCoverage, dataStatus)
@@ -106,7 +109,7 @@ Page({
 
         wx.showModal({
           title: '恢复本机数据',
-          content: '备份中的资料、收藏、已修记录和 Study Plan 将写入当前设备。确认继续？',
+          content: '备份中的学校专业、收藏、已修记录、Study Plan、笔记和搜索记录将写入当前设备。确认继续？',
           confirmText: '恢复',
           success: (result) => {
             if (!result.confirm) return;
