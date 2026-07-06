@@ -1,10 +1,11 @@
 # 香港高校课程选择助手 MVP
 
-这是一个先跑通核心闭环的 MVP 骨架：
+这是一个面向香港高校学生的课程规划微信小程序 MVP：
 
 - 微信小程序原生页面
-- 本地 mock 课程数据
-- 零依赖 Node API mock server
+- 六校授课硕士 Programme 离线资料库
+- HKU 官方开课示例数据
+- 零依赖 Node 本机调试服务
 - PostgreSQL 表结构草案
 - MVP 产品与开发说明
 
@@ -18,7 +19,7 @@
 - `admin/README.md`：后台管理端规划
 - `docs/MVP_SPEC.md`：MVP 说明
 
-## 本地 API
+## 本机调试服务
 
 ```bash
 npm run dev:api
@@ -40,11 +41,11 @@ npm run dev:api
 
 使用微信开发者工具导入 `miniprogram/` 目录即可。
 
-开发版会优先请求 `http://localhost:3000`，如果 API 没启动或开发者工具拦截本地请求，会自动回退到本地 mock 数据。
+开发版会优先请求 `http://localhost:3000`，如果本机服务没启动或开发者工具拦截本地请求，会自动回退到离线数据。
 
-体验版和正式版在尚未配置生产 HTTPS API 时直接使用离线数据，不会请求用户设备上的 `localhost`。将来接入生产服务时，在 `miniprogram/utils/apiClient.js` 中为对应环境配置已加入微信合法域名的 HTTPS 地址。
+体验版和正式版在尚未配置生产 HTTPS 服务时直接使用离线数据，不会请求用户设备上的 `localhost`。将来接入生产服务时，在 `miniprogram/utils/apiClient.js` 中为对应环境配置已加入微信合法域名的 HTTPS 地址。
 
-如果想在开发者工具里看到“数据源：本地 API”，需要在微信开发者工具里勾选：
+如果想在开发者工具里看到“数据源：开发环境服务”，需要在微信开发者工具里勾选：
 
 ```text
 详情 -> 本地设置 -> 不校验合法域名、web-view（业务域名）、TLS 版本以及 HTTPS 证书
@@ -61,9 +62,9 @@ npm run check
 
 第一条命令会生成 `miniprogram/utils/mockData.js`，第二条命令会检查数据引用、官方链接、学分覆盖以及 API 和离线逻辑。
 
-当前课程目录参考 HKU 官方课程说明及 2025–26 Sample Study Plan；毕业检查规则仍是用于验证产品流程的简化示例，不能替代学校官方 Degree Audit。
+当前 HKU 课程目录参考 HKU 官方课程说明及 2025–26 Sample Study Plan；毕业检查仅用于规划参考，不能替代学校官网、选课系统或学校正式审核结果。
 
-六校授课硕士资料来自用户提供的 HKU、CUHK、HKUST、PolyU、CityU 和 HKBU PDF。当前已导入 Programme 索引，必修及选修课程仍需逐项对照官网复核。修改 `data/tpg-programmes.json` 后运行：
+六校授课硕士资料来自 HKU、CUHK、HKUST、PolyU、CityU 和 HKBU PDF。当前已导入 Programme 索引，部分 Programme 已开放课程组；课程组尚未开放的 Programme 只展示索引与来源，暂不生成毕业判断。修改 `data/tpg-programmes.json` 后运行：
 
 ```bash
 npm run sync:tpg
@@ -92,6 +93,7 @@ npm run sync:data
 ## 发布前检查
 
 ```bash
+npm run check
 npm run check:release
 ```
 
