@@ -16,5 +16,9 @@ output/
 data/polyu/
 *.log
 
+# Local research scratch files
+scripts/.keep
+scripts/build_polyu_ug_pdf.py
+
 # macOS
 .DS_Store
