@@ -17,6 +17,12 @@ npm run check
 npm run check:release
 ```
 
+也可以直接运行合并版上传前预检：
+
+```bash
+npm run check:ship
+```
+
 `check:release` 当前检查：
 
 - 微信 AppID 格式；
