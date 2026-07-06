@@ -72,6 +72,15 @@
   <view wx:else class="section panel tpg-panel">
     <view class="scope-note tpg-note">六校已导入 {{tpgUniversities.length}} 所大学、{{tpgTotalProgrammes}} 个 Programme；已开放课程组的项目会显示课程结构。</view>
 
+    <view wx:if="{{savedTpgProfile}}" class="saved-scope-card" bindtap="previewSavedTpgProgramme">
+      <view class="saved-scope-mark">CURRENT</view>
+      <view class="saved-scope-main">
+        <view class="saved-scope-title">当前本机保存：{{savedTpgProfile.programme.name}}</view>
+        <view class="saved-scope-copy">{{savedTpgProfile.schoolLabel}} · {{savedTpgProfile.yearLabel}} · {{savedTpgProfile.statusLabel}}</view>
+      </view>
+      <view class="saved-scope-arrow">›</view>
+    </view>
+
     <view class="setup-guide">
       <view class="setup-guide-item">
         <view class="guide-index">1</view>

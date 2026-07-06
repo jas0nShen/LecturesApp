@@ -24,14 +24,17 @@ Page({
     selectedTpgProgramme: {},
     tpgCourseCount: 0,
     tpgCourseStatus: '',
-    tpgSelectedIndexLabel: ''
+    tpgSelectedIndexLabel: '',
+    savedTpgProfile: null
   },
 
   async onLoad() {
     const profile = service.getProfile();
+    const savedTpgProfile = tpgService.getProfileSummary(profile);
     this.loadTpg(profile);
     this.setData({
-      mode: 'tpg'
+      mode: 'tpg',
+      savedTpgProfile: savedTpgProfile && savedTpgProfile.programme ? savedTpgProfile : null
     });
     await this.loadUndergraduate(profile);
   },
@@ -202,6 +205,14 @@ Page({
     }
     wx.navigateTo({
       url: `/pages/tpg-programme/tpg-programme?id=${encodeURIComponent(programme.id)}`
+    });
+  },
+
+  previewSavedTpgProgramme() {
+    const saved = this.data.savedTpgProfile;
+    if (!saved || !saved.programme) return;
+    wx.navigateTo({
+      url: `/pages/tpg-programme/tpg-programme?id=${encodeURIComponent(saved.programme.id)}`
     });
   },
 

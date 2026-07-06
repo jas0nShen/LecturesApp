@@ -98,6 +98,50 @@
   color: #31594a;
 }
 
+.saved-scope-card {
+  align-items: center;
+  background: #fffaf0;
+  border: 1rpx solid #e8d6ad;
+  border-radius: 16rpx;
+  display: flex;
+  gap: 16rpx;
+  margin: -10rpx 0 26rpx;
+  padding: 20rpx;
+}
+
+.saved-scope-mark {
+  border: 2rpx solid #9b7840;
+  color: #795b2d;
+  flex: none;
+  font-size: 16rpx;
+  font-weight: 900;
+  letter-spacing: 1rpx;
+  padding: 8rpx 9rpx;
+}
+
+.saved-scope-main {
+  flex: 1;
+}
+
+.saved-scope-title {
+  color: #17352c;
+  font-size: 23rpx;
+  font-weight: 850;
+  line-height: 1.35;
+}
+
+.saved-scope-copy {
+  color: #786b50;
+  font-size: 20rpx;
+  line-height: 1.4;
+  margin-top: 5rpx;
+}
+
+.saved-scope-arrow {
+  color: #8a6a25;
+  font-size: 36rpx;
+}
+
 .setup-guide {
   display: grid;
   gap: 10rpx;
