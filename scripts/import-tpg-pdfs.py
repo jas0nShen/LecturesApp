@@ -178,6 +178,44 @@ def parse_hku(text: str, university_code: str) -> list[dict]:
             },
         ]
 
+    artificial_intelligence = next(
+        (
+            item
+            for item in programmes
+            if item["name"] == "Master of Science in Artificial Intelligence (MSc(AI))"
+        ),
+        None,
+    )
+    if artificial_intelligence:
+        section = text.split(
+            "Master of Science in Artificial Intelligence (MSc(AI))", 1
+        )[1]
+        section = section.split(
+            "Master of Arts in Creative Artificial Intelligence", 1
+        )[0]
+        section_lines = [clean(line) for line in section.splitlines()]
+        courses = []
+        for index, line in enumerate(section_lines[:-1]):
+            if not re.fullmatch(r"[A-Z]{4}\d{4}", line):
+                continue
+            title = section_lines[index + 1]
+            if not title or title.startswith(("THE UNIVERSITY", "TAUGHT MASTER", "Confidential", "Page ")):
+                continue
+            courses.append({"code": line, "name": title})
+        project_codes = {"ARIN7600"}
+        artificial_intelligence["courseGroups"] = [
+            {
+                "name": "Artificial Intelligence Project",
+                "creditsRequired": None,
+                "courses": [course for course in courses if course["code"] in project_codes],
+            },
+            {
+                "name": "Selectable Courses",
+                "creditsRequired": None,
+                "courses": [course for course in courses if course["code"] not in project_codes],
+            },
+        ]
+
     computer_science_section = text.split(
         "Master of Science in Computer Science - Cyber Security", 1
     )

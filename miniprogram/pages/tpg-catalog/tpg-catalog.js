@@ -46,7 +46,10 @@ Page({
       const haystack = [
         programme.name,
         programme.programmeCode,
-        programme.faculty
+        programme.faculty,
+        ...programme.courseGroups.flatMap((group) =>
+          group.courses.flatMap((course) => [course.code, course.name])
+        )
       ].join(' ').toLowerCase();
       return matchesSchool && (!keyword || haystack.includes(keyword));
     });

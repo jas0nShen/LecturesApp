@@ -36,7 +36,7 @@
     <input
       class="search-input"
       value="{{keyword}}"
-      placeholder="搜索 Programme、学院或代码"
+      placeholder="搜索 Programme、课程或代码"
       bindinput="onKeywordInput"
     />
     <view wx:if="{{keyword}}" class="search-clear" bindtap="clearKeyword">清除</view>

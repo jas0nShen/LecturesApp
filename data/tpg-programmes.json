@@ -590,7 +590,108 @@
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseGroups": [
+        {
+          "name": "Artificial Intelligence Project",
+          "creditsRequired": null,
+          "courses": [
+            {
+              "code": "ARIN7600",
+              "name": "Artificial intelligence project"
+            }
+          ]
+        },
+        {
+          "name": "Selectable Courses",
+          "creditsRequired": null,
+          "courses": [
+            {
+              "code": "ARIN7001",
+              "name": "Foundations of artificial intelligence"
+            },
+            {
+              "code": "ARIN7011",
+              "name": "Optimization in artificial intelligence"
+            },
+            {
+              "code": "ARIN7013",
+              "name": "Numerical methods in artificial intelligence"
+            },
+            {
+              "code": "ARIN7101",
+              "name": "Statistics in artificial intelligence"
+            },
+            {
+              "code": "ARIN7102",
+              "name": "Applied data mining and text analytics"
+            },
+            {
+              "code": "COMP7404",
+              "name": "Computational intelligence and machine learning"
+            },
+            {
+              "code": "DASC7606",
+              "name": "Deep learning"
+            },
+            {
+              "code": "ARIN7014",
+              "name": "Topics in advanced numerical analysis"
+            },
+            {
+              "code": "ARIN7015",
+              "name": "Topics in artificial intelligence and machine learning"
+            },
+            {
+              "code": "MATH7224",
+              "name": "Topics in advanced probability theory"
+            },
+            {
+              "code": "MATH7502",
+              "name": "Topics in applied discrete mathematics"
+            },
+            {
+              "code": "MATH7503",
+              "name": "Topics in advanced optimization"
+            },
+            {
+              "code": "COMP7308",
+              "name": "Introduction to unmanned systems"
+            },
+            {
+              "code": "COMP7309",
+              "name": "Quantum computing and artificial intelligence"
+            },
+            {
+              "code": "COMP7409",
+              "name": "Machine learning in trading and finance"
+            },
+            {
+              "code": "COMP7502",
+              "name": "Image processing and computer vision"
+            },
+            {
+              "code": "ARIN7017",
+              "name": "Legal issues in artificial intelligence and data science"
+            },
+            {
+              "code": "STAT6011",
+              "name": "Computational statistics and Bayesian learning"
+            },
+            {
+              "code": "STAT7008",
+              "name": "Programming for data science"
+            },
+            {
+              "code": "STAT8020",
+              "name": "Quantitative strategies and algorithmic trading"
+            },
+            {
+              "code": "STAT8307",
+              "name": "Natural language processing and text analytics"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "HKU-TPG-049",
