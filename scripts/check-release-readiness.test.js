@@ -85,3 +85,13 @@ test('release checklist includes an iOS and Android acceptance matrix', () => {
     assert(checklist.includes(item), `Missing acceptance item: ${item}`);
   });
 });
+
+test('local-first user data copy is explicit in user-facing pages', () => {
+  const profilePage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'profile', 'profile.wxml'), 'utf8');
+  const privacyPage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'privacy-data', 'privacy-data.wxml'), 'utf8');
+
+  assert(profilePage.includes('资料保存在本机'));
+  assert(profilePage.includes('数据不会上传服务器'));
+  assert(profilePage.includes('不会自动同步到其他设备'));
+  assert(privacyPage.includes('不会自动同步到云端或其他设备'));
+});
