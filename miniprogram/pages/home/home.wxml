@@ -31,29 +31,6 @@
     </view>
   </view>
 
-  <view wx:if="{{!profile}}" class="section launch-guide-card">
-    <view class="row">
-      <view>
-        <view class="start-kicker">REVIEW PATH</view>
-        <view class="panel-title">第一次打开，按这 3 步体验</view>
-      </view>
-      <view class="guide-badge">0.1.0</view>
-    </view>
-    <view class="guide-list">
-      <view wx:for="{{launchSteps}}" wx:key="mark" class="guide-row">
-        <view class="guide-mark">{{item.mark}}</view>
-        <view>
-          <view class="guide-title">{{item.title}}</view>
-          <view class="guide-copy">{{item.copy}}</view>
-        </view>
-      </view>
-    </view>
-    <view class="guide-actions">
-      <view class="guide-primary" bindtap="goOnboarding">现在开始</view>
-      <view class="guide-secondary" bindtap="goPrivacyData">数据说明</view>
-    </view>
-  </view>
-
   <view wx:else class="section panel">
     <view class="row">
       <view>
