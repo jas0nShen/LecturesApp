@@ -54,6 +54,9 @@ function buildTpgAudit(programme, university) {
     statusCopy: status.hasCourseGroups
       ? '已展示从资料中拆出的课程组。正式选课前，仍建议与学校官网及 Programme Handbook 对照。'
       : '目前先确认学校、Programme 与资料来源；课程组尚未开放前，暂不生成毕业完成度。',
+    detailEntryCopy: status.hasCourseGroups
+      ? `${courseCount} 门课程已开放 · 点击查看 Programme 详情`
+      : '点击查看 Programme 来源、学分与收录状态',
     progressLabel: status.hasCourseGroups ? '可查看课程组' : '暂不计算进度'
   };
 }

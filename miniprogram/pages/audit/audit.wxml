@@ -54,7 +54,7 @@
       <view class="completed-icon">↗</view>
       <view class="completed-copy">
         <view class="panel-title">{{tpgAudit.statusTitle}}</view>
-        <view class="subtitle">{{tpgAudit.courseCount}} 门课程已开放 · 点击查看 Programme 详情</view>
+        <view class="subtitle">{{tpgAudit.detailEntryCopy}}</view>
       </view>
       <view class="completed-arrow">›</view>
     </view>

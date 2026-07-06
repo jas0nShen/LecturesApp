@@ -95,3 +95,12 @@ test('local-first user data copy is explicit in user-facing pages', () => {
   assert(profilePage.includes('不会自动同步到其他设备'));
   assert(privacyPage.includes('不会自动同步到云端或其他设备'));
 });
+
+test('TPG audit page avoids misleading zero-course copy', () => {
+  const auditPage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'audit', 'audit.wxml'), 'utf8');
+  const auditLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'audit', 'audit.js'), 'utf8');
+
+  assert(auditPage.includes('tpgAudit.detailEntryCopy'));
+  assert(auditLogic.includes('点击查看 Programme 来源、学分与收录状态'));
+  assert(!auditPage.includes('{{tpgAudit.courseCount}} 门课程已开放'));
+});
