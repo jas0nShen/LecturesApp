@@ -202,7 +202,10 @@ test('undergraduate onboarding shows the saved local profile summary', () => {
   assert(onboardingLogic.includes("profile.profileType === 'undergraduate'"));
   assert(onboardingLogic.includes('ugService.getMajorProfile(profile.programmeId, profile.majorId, profile.curriculumYear)'));
   assert(onboardingPage.includes('wx:if="{{savedUgProfile}}"'));
+  assert(onboardingPage.includes('bindtap="previewSavedUgProfile"'));
   assert(onboardingPage.includes('当前本机保存：{{savedUgProfile.programme.nameEn}}'));
+  assert(onboardingLogic.includes('previewSavedUgProfile()'));
+  assert(onboardingLogic.includes("wx.switchTab({ url: '/pages/courses/courses' })"));
 });
 
 test('undergraduate onboarding programme results show major-level course availability', () => {

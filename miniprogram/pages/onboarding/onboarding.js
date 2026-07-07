@@ -308,6 +308,11 @@ Page({
     });
   },
 
+  previewSavedUgProfile() {
+    if (!this.data.savedUgProfile) return;
+    wx.switchTab({ url: '/pages/courses/courses' });
+  },
+
   decorateTpgProgrammes(programmes) {
     return programmes.map((programme) => {
       const courseCount = tpgService.flattenCourses(programme).length;
