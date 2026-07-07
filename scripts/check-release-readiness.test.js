@@ -126,6 +126,7 @@ test('home page hides graduation progress until a profile is saved', () => {
   const homePage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'home', 'home.wxml'), 'utf8');
   const homeLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'home', 'home.js'), 'utf8');
 
+  assert(homePage.includes('wx:if="{{profile && !isTpg}}"'));
   assert(homePage.includes('wx:if="{{profile && !isTpg && !isUgCatalogue}}"'));
   assert(homeLogic.includes('const auditResult = !profile || isTpg || isUgCatalogue'));
 });

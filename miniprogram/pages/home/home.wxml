@@ -27,7 +27,7 @@
     </view>
   </view>
 
-  <view wx:if="{{!isTpg}}" class="section grid">
+  <view wx:if="{{profile && !isTpg}}" class="section grid">
     <view class="action-card" bindtap="goCourses">
       <view class="action-index">01</view>
       <view class="action-title">查课程</view>
