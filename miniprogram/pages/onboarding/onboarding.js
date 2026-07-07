@@ -38,17 +38,62 @@ function resolveInitialMode(profile, options = {}) {
   return profile && profile.profileType === 'undergraduate' ? 'undergraduate' : 'tpg';
 }
 
+function decodeOption(value) {
+  if (value === undefined || value === null) return value;
+  try {
+    return decodeURIComponent(value);
+  } catch (error) {
+    return value;
+  }
+}
+
+function mergeProfileOptions(profile, options = {}) {
+  const optionProfile = {
+    profileType: decodeOption(options.profileType || options.mode),
+    universityId: decodeOption(options.universityId),
+    universityCode: decodeOption(options.universityCode),
+    programmeId: decodeOption(options.programmeId),
+    programmeName: decodeOption(options.programmeName),
+    majorId: decodeOption(options.majorId),
+    majorCode: decodeOption(options.majorCode),
+    curriculumYear: decodeOption(options.curriculumYear),
+    currentYear: decodeOption(options.currentYear)
+  };
+  const hasOptionProfile = Object.keys(optionProfile).some((key) => optionProfile[key]);
+  if (!hasOptionProfile) return profile;
+  return { ...(profile || {}), ...optionProfile };
+}
+
 function resolveSavedUgUniversity(profile, universities = []) {
   if (!profile || profile.profileType !== 'undergraduate') {
     return universities[0];
   }
   const profileProgramme = ugService.getProgramme(profile.programmeId);
+  const normalizedUniversityCode = String(profile.universityCode || '').toUpperCase();
   return universities.find((item) => (
     item.id === profile.universityId
     || item.code === profile.universityCode
+    || String(item.code || '').toUpperCase() === normalizedUniversityCode
     || (profileProgramme && item.id === profileProgramme.universityId)
     || (profileProgramme && item.code === profileProgramme.universityCode)
   )) || universities[0];
+}
+
+function resolveSavedUgProgramme(profile, programmes = []) {
+  if (!profile || profile.profileType !== 'undergraduate') {
+    return programmes[0];
+  }
+  const profileProgramme = ugService.getProgramme(profile.programmeId);
+  const savedProgrammeName = String(profile.programmeName || '').trim();
+  const savedProgrammeId = String(profile.programmeId || '').trim();
+  return programmes.find((item) => (
+    item.id === profile.programmeId
+    || String(item.id) === savedProgrammeId
+    || item.code === profile.programmeId
+    || item.nameEn === savedProgrammeName
+    || item.nameZh === savedProgrammeName
+    || (profileProgramme && item.id === profileProgramme.id)
+  )) || profileProgramme || programmes[0];
 }
 
 const INITIAL_UG_UNIVERSITIES = ugService.listUniversities();
@@ -68,6 +113,7 @@ const INITIAL_TPG_PROGRAMMES = INITIAL_TPG_UNIVERSITY.code
   ? tpgService.listProgrammes(INITIAL_TPG_UNIVERSITY.code)
   : [];
 const INITIAL_TPG_PROGRAMME = INITIAL_TPG_PROGRAMMES[0] || {};
+const INITIAL_TPG_SCHOOL_COVERAGE = tpgService.getSchoolCoverage();
 
 Page({
   data: {
@@ -106,7 +152,7 @@ Page({
     showCurrentYearSheet: false,
     tpgUniversities: INITIAL_TPG_UNIVERSITIES,
     tpgUniversityOptions: INITIAL_TPG_UNIVERSITIES.map(formatTpgUniversityOption),
-    tpgSchoolCoverage: tpgService.getSchoolCoverage(),
+    tpgSchoolCoverage: INITIAL_TPG_SCHOOL_COVERAGE.schools || [],
     tpgProgrammes: INITIAL_TPG_PROGRAMMES,
     tpgProgrammeOptions: INITIAL_TPG_PROGRAMMES.map(formatTpgProgrammeOption),
     filteredTpgProgrammes: INITIAL_TPG_PROGRAMMES,
@@ -129,7 +175,8 @@ Page({
 
   async onLoad(options = {}) {
     this._modeTouchedByUser = false;
-    const profile = service.getProfile();
+    this._launchOptions = options;
+    const profile = mergeProfileOptions(service.getProfile(), options);
     const initialMode = resolveInitialMode(profile, options);
     const savedTpgProfile = tpgService.getProfileSummary(profile);
     const savedUgProfile = profile && profile.profileType === 'undergraduate'
@@ -146,8 +193,9 @@ Page({
 
   onShow() {
     if (this._modeTouchedByUser) return;
-    const profile = service.getProfile();
-    const initialMode = resolveInitialMode(profile, this.options || {});
+    const options = this._launchOptions || this.options || {};
+    const profile = mergeProfileOptions(service.getProfile(), options);
+    const initialMode = resolveInitialMode(profile, options);
     if (initialMode !== this.data.mode) {
       this.setData({ mode: initialMode });
     }
@@ -176,7 +224,7 @@ Page({
       return;
     }
     const programmes = ugService.listProgrammes({ universityId: selectedUniversity.id, degreeLevel: 'undergraduate' });
-    const selectedProgramme = programmes.find((item) => item.id === (profile && profile.programmeId)) || programmes[0];
+    const selectedProgramme = resolveSavedUgProgramme(profile, programmes);
     const currentYear = profile && profile.profileType !== 'tpg' ? String(profile.currentYear) : '1';
     const currentYearIndex = this.data.yearOptions.findIndex((item) => item === currentYear);
     this.setData({
@@ -612,7 +660,8 @@ Page({
       : filteredTpgProgrammes[0] || {};
     const tpgCourseCount = tpgService.flattenCourses(effectiveProgramme).length;
     const selectedIndex = filteredTpgProgrammes.findIndex((item) => item.id === effectiveProgramme.id);
-    const selectedTpgCoverage = this.data.tpgSchoolCoverage.find((item) => item.code === selectedTpgUniversity.code) || null;
+    const tpgSchoolCoverage = Array.isArray(this.data.tpgSchoolCoverage) ? this.data.tpgSchoolCoverage : [];
+    const selectedTpgCoverage = tpgSchoolCoverage.find((item) => item.code === selectedTpgUniversity.code) || null;
     const tpgUniversityIndex = this.data.tpgUniversities.findIndex((item) => item.code === selectedTpgUniversity.code);
     const hasSchoolProgrammes = tpgProgrammes.length > 0;
     this.setData({

@@ -38,6 +38,27 @@ function saveProfile(profile) {
   wx.setStorageSync('userProfile', profile);
 }
 
+function buildOnboardingUrl(profile = getProfile()) {
+  const mode = profile && profile.profileType === 'undergraduate' ? 'undergraduate' : 'tpg';
+  const params = {
+    mode,
+    profileType: profile && profile.profileType,
+    universityId: profile && profile.universityId,
+    universityCode: profile && profile.universityCode,
+    programmeId: profile && profile.programmeId,
+    programmeName: profile && profile.programmeName,
+    majorId: profile && profile.majorId,
+    majorCode: profile && profile.majorCode,
+    curriculumYear: profile && profile.curriculumYear,
+    currentYear: profile && profile.currentYear
+  };
+  const query = Object.keys(params)
+    .filter((key) => params[key] !== undefined && params[key] !== null && params[key] !== '')
+    .map((key) => `${key}=${encodeURIComponent(params[key])}`)
+    .join('&');
+  return `/pages/onboarding/onboarding?${query || `mode=${mode}`}`;
+}
+
 function daysSince(dateValue, now) {
   const timestamp = new Date(dateValue).getTime();
   return Math.max(0, Math.floor((now.getTime() - timestamp) / 86400000));
@@ -879,6 +900,7 @@ module.exports = {
   getFavoriteOfferings,
   getFavorites,
   getProfile,
+  buildOnboardingUrl,
   getPrerequisiteCourseStatus,
   getRecentlyViewedOfferings,
   getStudyPlanCourses,

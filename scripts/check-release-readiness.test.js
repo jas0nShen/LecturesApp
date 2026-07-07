@@ -303,14 +303,21 @@ test('undergraduate onboarding shows the saved local profile summary', () => {
   assert(onboardingLogic.includes('const initialMode = resolveInitialMode(profile, options)'));
   assert(onboardingLogic.includes('onShow()'));
   assert(onboardingLogic.includes('if (this._modeTouchedByUser) return'));
-  assert(onboardingLogic.includes('resolveInitialMode(profile, this.options || {})'));
+  assert(onboardingLogic.includes('this._launchOptions = options'));
+  assert(onboardingLogic.includes('mergeProfileOptions(service.getProfile(), options)'));
+  assert(onboardingLogic.includes('resolveInitialMode(profile, options)'));
   assert(onboardingLogic.includes('this._modeTouchedByUser = true'));
+  assert(onboardingLogic.includes('function mergeProfileOptions(profile, options = {})'));
   assert(onboardingLogic.includes('function resolveSavedUgUniversity(profile, universities = [])'));
   assert(onboardingLogic.includes('const profileProgramme = ugService.getProgramme(profile.programmeId)'));
   assert(onboardingLogic.includes('item.id === profile.universityId'));
   assert(onboardingLogic.includes('item.code === profile.universityCode'));
+  assert(onboardingLogic.includes("String(item.code || '').toUpperCase() === normalizedUniversityCode"));
   assert(onboardingLogic.includes('profileProgramme && item.id === profileProgramme.universityId'));
+  assert(onboardingLogic.includes('function resolveSavedUgProgramme(profile, programmes = [])'));
+  assert(onboardingLogic.includes('item.nameEn === savedProgrammeName'));
   assert(onboardingLogic.includes('const selectedUniversity = resolveSavedUgUniversity(profile, universities)'));
+  assert(onboardingLogic.includes('const selectedProgramme = resolveSavedUgProgramme(profile, programmes)'));
   assert(onboardingLogic.includes('mode: initialMode'));
   assert(onboardingLogic.includes("profile.profileType === 'undergraduate'"));
   assert(onboardingLogic.includes('ugService.getMajorProfile(profile.programmeId, profile.majorId, profile.curriculumYear)'));
@@ -322,6 +329,12 @@ test('undergraduate onboarding shows the saved local profile summary', () => {
 });
 
 test('profile edit entry keeps the saved profile type when opening onboarding', () => {
+  const serviceLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'utils', 'courseService.js'), 'utf8');
+  assert(serviceLogic.includes('function buildOnboardingUrl(profile = getProfile())'));
+  assert(serviceLogic.includes("universityCode: profile && profile.universityCode"));
+  assert(serviceLogic.includes("programmeId: profile && profile.programmeId"));
+  assert(serviceLogic.includes("majorId: profile && profile.majorId"));
+  assert(serviceLogic.includes("return `/pages/onboarding/onboarding?${query || `mode=${mode}`}`"));
   [
     'home',
     'courses',
@@ -329,9 +342,7 @@ test('profile edit entry keeps the saved profile type when opening onboarding', 
     'profile'
   ].forEach((pageName) => {
     const pageLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', pageName, `${pageName}.js`), 'utf8');
-    assert(pageLogic.includes('const profile = service.getProfile()'), `${pageName} does not read the saved profile before onboarding`);
-    assert(pageLogic.includes("profile.profileType === 'undergraduate' ? 'undergraduate' : 'tpg'"), `${pageName} does not preserve the saved profile mode`);
-    assert(pageLogic.includes('`/pages/onboarding/onboarding?mode=${mode}`'), `${pageName} does not pass onboarding mode`);
+    assert(pageLogic.includes('service.buildOnboardingUrl()'), `${pageName} does not pass the saved profile to onboarding`);
   });
 });
 
@@ -351,7 +362,8 @@ test('TPG onboarding previews selected school data coverage', () => {
   const onboardingPage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'onboarding', 'onboarding.wxml'), 'utf8');
   const onboardingLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'onboarding', 'onboarding.js'), 'utf8');
 
-  assert(onboardingLogic.includes('tpgSchoolCoverage: tpgService.getSchoolCoverage()'));
+  assert(onboardingLogic.includes('const INITIAL_TPG_SCHOOL_COVERAGE = tpgService.getSchoolCoverage()'));
+  assert(onboardingLogic.includes('tpgSchoolCoverage: INITIAL_TPG_SCHOOL_COVERAGE.schools || []'));
   assert(onboardingLogic.includes('tpgUniversityIndex: 0'));
   assert(onboardingLogic.includes('tpgProgrammeIndex: 0'));
   assert(onboardingLogic.includes('const INITIAL_TPG_UNIVERSITIES = tpgService.listUniversities()'));
