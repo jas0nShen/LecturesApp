@@ -3640,8 +3640,171 @@
       "faculty": "School of Computing and Data Science (SCDS)",
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61036-fbt-pbt",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "name": "Core Subjects",
+          "creditsRequired": 18,
+          "courses": [
+            {
+              "code": "COMP5521",
+              "name": "Distributed Ledger Technology, Cryptocurrency and E-Payment"
+            },
+            {
+              "code": "COMP5563",
+              "name": "Applied Cryptography for Financial Applications"
+            },
+            {
+              "code": "COMP5564",
+              "name": "Machine Learning and Applications in Finance"
+            },
+            {
+              "code": "COMP5565",
+              "name": "Decentralized Apps Fundamentals and Development"
+            },
+            {
+              "code": "COMP5566",
+              "name": "Blockchain and Smart Contract Security"
+            },
+            {
+              "code": "COMP5567",
+              "name": "Distributed Algorithms and Protocols for Blockchains"
+            },
+            {
+              "code": "COMP5568",
+              "name": "Decentralized Finance"
+            },
+            {
+              "code": "COMP5569",
+              "name": "Fintech Regulation and Compliance"
+            }
+          ]
+        },
+        {
+          "name": "Elective / Project / Dissertation Options",
+          "creditsRequired": 12,
+          "courses": [
+            {
+              "code": "AF5115",
+              "name": "Accounting for Business Analysis"
+            },
+            {
+              "code": "AF5312",
+              "name": "Principles of Corporate Finance"
+            },
+            {
+              "code": "AF5344",
+              "name": "Investments"
+            },
+            {
+              "code": "AF5341",
+              "name": "Economics for Financial Analysis"
+            },
+            {
+              "code": "AF5343",
+              "name": "Quantitative Methods for Finance"
+            },
+            {
+              "code": "AF5347",
+              "name": "Financial Analysis and Valuation"
+            },
+            {
+              "code": "AF5351",
+              "name": "Derivatives Securities"
+            },
+            {
+              "code": "COMP5112",
+              "name": "Data Structures and Database Systems"
+            },
+            {
+              "code": "COMP5152",
+              "name": "Advanced Data Analytics"
+            },
+            {
+              "code": "COMP5221",
+              "name": "Software Project Management"
+            },
+            {
+              "code": "COMP5241",
+              "name": "Software Engineering and Development"
+            },
+            {
+              "code": "COMP5311",
+              "name": "Internet Infrastructure and Protocols"
+            },
+            {
+              "code": "COMP5355",
+              "name": "Cyber and Internet Security"
+            },
+            {
+              "code": "COMP5423",
+              "name": "Natural Language Processing"
+            },
+            {
+              "code": "COMP5434",
+              "name": "Big Data Computing"
+            },
+            {
+              "code": "COMP5511",
+              "name": "Artificial Intelligence Concepts"
+            },
+            {
+              "code": "COMP5523",
+              "name": "Computer Vision and Image Processing"
+            },
+            {
+              "code": "COMP5541",
+              "name": "Machine Learning and Data Analytics"
+            },
+            {
+              "code": "COMP5542",
+              "name": "Optimization and Applications"
+            },
+            {
+              "code": "COMP5574",
+              "name": "Computational Economics and Algorithms"
+            },
+            {
+              "code": "COMP5576",
+              "name": "Modern Cryptography"
+            },
+            {
+              "code": "COMP5577",
+              "name": "AI Security"
+            },
+            {
+              "code": "COMP5579",
+              "name": "IoT Security: Principles, Protocols, and Practice"
+            },
+            {
+              "code": "COMP5583",
+              "name": "Agentic Computing, Systems, and Applications"
+            },
+            {
+              "code": "COMP5584",
+              "name": "Large Language Models for Agents"
+            },
+            {
+              "code": "COMP5933",
+              "name": "Project"
+            },
+            {
+              "code": "COMP5940",
+              "name": "Dissertation"
+            }
+          ]
+        },
+        {
+          "name": "Academic Integrity and Ethics",
+          "creditsRequired": 1,
+          "courses": [
+            {
+              "code": "DSAI5T09",
+              "name": "Academic Integrity and Ethics in Computer and Mathematical Sciences"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "POLYU-TPG-091",

@@ -21,8 +21,8 @@ test('release status summarizes TPG and UG metrics', () => {
     metrics: {
       tpgSchoolCount: 8,
       tpgProgrammeCount: 348,
-      tpgProgrammeWithCoursesCount: 6,
-      tpgCourseCount: 257,
+      tpgProgrammeWithCoursesCount: 7,
+      tpgCourseCount: 293,
       ugSchoolCount: 8,
       ugProgrammeCount: 444,
       ugMajorCount: 689,

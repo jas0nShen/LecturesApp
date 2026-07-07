@@ -8,8 +8,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 348);
-  assert.equal(coverage.programmeWithCoursesCount, 6);
-  assert.equal(coverage.courseCount, 257);
+  assert.equal(coverage.programmeWithCoursesCount, 7);
+  assert.equal(coverage.courseCount, 293);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -23,6 +23,22 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
       ['LINGNAN', 0]
     ]
   );
+});
+
+test('PolyU Blockchain Technology exposes official curriculum subjects', () => {
+  const programme = tpgService.getProgramme('POLYU-TPG-090');
+  const status = tpgService.getStatus(programme);
+  const courses = tpgService.flattenCourses(programme);
+  const coreCourses = tpgService.flattenCourses(programme, 'COMP5566');
+
+  assert.equal(programme.name, 'Blockchain Technology');
+  assert.equal(programme.dataLevel, 'structure');
+  assert.equal(programme.courseGroups.length, 3);
+  assert.equal(status.hasCourseGroups, true);
+  assert.equal(status.courseCount, 36);
+  assert.equal(courses.length, 36);
+  assert.equal(coreCourses.length, 1);
+  assert.equal(coreCourses[0].name, 'Blockchain and Smart Contract Security');
 });
 
 test('TPG programme helpers expose course status and searchable courses', () => {
