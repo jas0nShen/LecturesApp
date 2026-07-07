@@ -65,7 +65,7 @@
   <view wx:if="{{isTpg}}" class="section tpg-next-card">
     <view class="row">
       <view>
-        <view class="start-kicker">MVP STATUS</view>
+        <view class="start-kicker">资料状态</view>
         <view class="panel-title">你的 Programme 现在可以这样用</view>
       </view>
       <view class="tpg-credits-pill">{{tpgProfile.creditsLabel}}</view>
@@ -91,7 +91,7 @@
   <view wx:if="{{isUgCatalogue && ugProfile}}" class="section tpg-next-card">
     <view class="row">
       <view>
-        <view class="start-kicker">UG STATUS</view>
+        <view class="start-kicker">资料状态</view>
         <view class="panel-title">你的本科资料现在可以这样用</view>
       </view>
       <view class="tpg-credits-pill">{{ugProfile.codedCourseCount ? ugProfile.codedCourseCount + ' courses' : 'Index'}}</view>
