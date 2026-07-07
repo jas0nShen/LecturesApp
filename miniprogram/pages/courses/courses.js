@@ -388,7 +388,10 @@ Page({
   copyUgSource() {
     const profile = this.data.ugProfile;
     const sourceUrl = profile && profile.sourceUrl;
-    if (!sourceUrl) return;
+    if (!sourceUrl) {
+      wx.showToast({ title: '暂无官方链接', icon: 'none' });
+      return;
+    }
     wx.setClipboardData({
       data: sourceUrl,
       success: () => {
@@ -399,7 +402,10 @@ Page({
 
   copyUgCourseSource(event) {
     const sourceUrl = event.currentTarget.dataset.url;
-    if (!sourceUrl) return;
+    if (!sourceUrl) {
+      wx.showToast({ title: '暂无课程来源', icon: 'none' });
+      return;
+    }
     wx.setClipboardData({
       data: sourceUrl,
       success: () => {

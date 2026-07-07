@@ -131,6 +131,19 @@ test('home page hides graduation progress until a profile is saved', () => {
   assert(homeLogic.includes('const auditResult = !profile || isTpg || isUgCatalogue'));
 });
 
+test('saved programme profiles keep source links for review and feedback', () => {
+  const onboardingLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'onboarding', 'onboarding.js'), 'utf8');
+  const tpgProgrammeLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'tpg-programme', 'tpg-programme.js'), 'utf8');
+  const coursesLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'courses', 'courses.js'), 'utf8');
+  const auditLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'audit', 'audit.js'), 'utf8');
+
+  assert(onboardingLogic.includes("sourceUrl: programme.sourceUrl || ''"));
+  assert(onboardingLogic.includes('sourceUrl: this.data.ugMajorProfile && this.data.ugMajorProfile.sourceUrl'));
+  assert(tpgProgrammeLogic.includes("sourceUrl: programme.sourceUrl || ''"));
+  assert(coursesLogic.includes("wx.showToast({ title: '暂无官方链接', icon: 'none' })"));
+  assert(auditLogic.includes("wx.showToast({ title: '暂无官方链接', icon: 'none' })"));
+});
+
 test('TPG catalogue copy describes availability instead of completeness', () => {
   const cataloguePage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'tpg-catalog', 'tpg-catalog.wxml'), 'utf8');
 

@@ -195,7 +195,10 @@ Page({
 
   copyUgSource() {
     const profile = this.data.ugAudit && this.data.ugAudit.profile;
-    if (!profile || !profile.sourceUrl) return;
+    if (!profile || !profile.sourceUrl) {
+      wx.showToast({ title: '暂无官方链接', icon: 'none' });
+      return;
+    }
     wx.setClipboardData({
       data: profile.sourceUrl,
       success: () => {

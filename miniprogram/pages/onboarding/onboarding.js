@@ -312,7 +312,8 @@ Page({
         faculty: programme.faculty,
         curriculumYear: university.academicYear,
         creditsRequired: programme.creditsRequired,
-        courseCount: this.data.tpgCourseCount
+        courseCount: this.data.tpgCourseCount,
+        sourceUrl: programme.sourceUrl || ''
       });
       wx.showToast({ title: '授课硕士资料已保存' });
       wx.switchTab({ url: '/pages/home/home' });
@@ -334,7 +335,8 @@ Page({
       majorCode: this.data.selectedMajor.code,
       majorName: this.data.selectedMajor.nameEn,
       curriculumYear: this.data.curriculumYear,
-      currentYear: Number(this.data.currentYear)
+      currentYear: Number(this.data.currentYear),
+      sourceUrl: this.data.ugMajorProfile && this.data.ugMajorProfile.sourceUrl
     });
 
     wx.showToast({ title: '本科培养方案已保存' });

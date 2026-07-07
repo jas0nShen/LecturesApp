@@ -89,7 +89,8 @@ Page({
       faculty: programme.faculty,
       curriculumYear: university.academicYear,
       creditsRequired: programme.creditsRequired,
-      courseCount: this.data.courseCount
+      courseCount: this.data.courseCount,
+      sourceUrl: programme.sourceUrl || ''
     });
     this.setData({ isCurrentProgramme: true });
     wx.showToast({ title: '已设为我的 Programme' });
