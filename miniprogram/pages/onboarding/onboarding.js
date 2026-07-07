@@ -289,6 +289,16 @@ Page({
     });
   },
 
+  decorateTpgProgrammes(programmes) {
+    return programmes.map((programme) => {
+      const courseCount = tpgService.flattenCourses(programme).length;
+      return {
+        ...programme,
+        courseStatusLabel: courseCount ? `${courseCount} 门课程` : '课程清单待开放'
+      };
+    });
+  },
+
   setTpgSelection(selectedTpgUniversity, tpgProgrammes, selectedTpgProgramme, tpgKeyword = this.data.tpgKeyword) {
     const filteredTpgProgrammes = tpgService.searchProgrammes(tpgProgrammes, tpgKeyword);
     const effectiveProgramme = selectedTpgProgramme && selectedTpgProgramme.id
@@ -302,7 +312,7 @@ Page({
       selectedTpgCoverage,
       tpgProgrammes,
       filteredTpgProgrammes,
-      visibleTpgProgrammes: filteredTpgProgrammes.slice(0, 5),
+      visibleTpgProgrammes: this.decorateTpgProgrammes(filteredTpgProgrammes.slice(0, 5)),
       tpgKeyword,
       selectedTpgProgramme: effectiveProgramme,
       tpgCourseCount,

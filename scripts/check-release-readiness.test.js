@@ -202,6 +202,16 @@ test('TPG onboarding previews selected school data coverage', () => {
   assert(onboardingPage.includes('{{selectedTpgCoverage.courseCount ? selectedTpgCoverage.courseCount + \' courses\' : \'课程待开放\'}}'));
 });
 
+test('TPG onboarding programme results show course availability', () => {
+  const onboardingPage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'onboarding', 'onboarding.wxml'), 'utf8');
+  const onboardingLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'onboarding', 'onboarding.js'), 'utf8');
+
+  assert(onboardingLogic.includes('decorateTpgProgrammes'));
+  assert(onboardingLogic.includes("courseStatusLabel: courseCount ? `${courseCount} 门课程` : '课程清单待开放'"));
+  assert(onboardingLogic.includes('visibleTpgProgrammes: this.decorateTpgProgrammes(filteredTpgProgrammes.slice(0, 5))'));
+  assert(onboardingPage.includes('{{item.courseStatusLabel}}'));
+});
+
 test('TPG catalogue copy describes availability instead of completeness', () => {
   const cataloguePage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'tpg-catalog', 'tpg-catalog.wxml'), 'utf8');
 
