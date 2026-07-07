@@ -30,6 +30,28 @@ test('UG catalogue exposes the multi-school hierarchy needed for onboarding', ()
   assert.deepEqual(ugService.listCurriculumYears(programme.id, major.id), ['2026']);
 });
 
+test('UG per-school coverage stays visible for setup validation', () => {
+  const coverage = Object.fromEntries(ugService.listUniversities().map((university) => {
+    const programmes = ugService.listProgrammes({ universityId: university.id, degreeLevel: 'undergraduate' });
+    const majors = programmes.flatMap((programme) => ugService.listMajors(programme.id));
+    const codedCourseCount = programmes.reduce((sum, programme) => sum + (programme.codedCourseCount || 0), 0);
+    return [university.code, {
+      programmeCount: programmes.length,
+      majorCount: majors.length,
+      codedCourseCount
+    }];
+  }));
+
+  assert.deepEqual(coverage, {
+    HKU: { programmeCount: 137, majorCount: 137, codedCourseCount: 0 },
+    CUHK: { programmeCount: 84, majorCount: 84, codedCourseCount: 0 },
+    HKUST: { programmeCount: 50, majorCount: 64, codedCourseCount: 0 },
+    POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 172 },
+    CITYU: { programmeCount: 58, majorCount: 201, codedCourseCount: 0 },
+    HKBU: { programmeCount: 22, majorCount: 46, codedCourseCount: 0 }
+  });
+});
+
 test('UG major profile groups requirements with traceable courses and sources', () => {
   const profile = ugService.getMajorProfile(1, 1, '2025-26');
   const capstone = profile.requirementGroups.find((group) => group.type === 'capstone');
