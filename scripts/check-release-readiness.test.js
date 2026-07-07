@@ -129,6 +129,16 @@ test('TPG course page avoids misleading zero-course hero copy', () => {
   assert(!coursesPage.includes('<view class="tpg-number">{{tpgCourseCount}}</view>'));
 });
 
+test('TPG programme detail uses user-facing status labels', () => {
+  const programmePage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'tpg-programme', 'tpg-programme.wxml'), 'utf8');
+  assert(programmePage.includes("{{hasCourseGroups ? '已开放' : '复核中'}}"));
+  assert(programmePage.includes("{{isCurrentProgramme ? '本机已保存' : '尚未保存'}}"));
+  assert(programmePage.includes('课程结构'));
+  ['VERIFIED', 'IN REVIEW', 'SAVED LOCALLY', 'NOT SAVED YET', 'COURSE STRUCTURE'].forEach((label) => {
+    assert(!programmePage.includes(label), `Programme detail still exposes internal label: ${label}`);
+  });
+});
+
 test('home page hides graduation progress until a profile is saved', () => {
   const homePage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'home', 'home.wxml'), 'utf8');
   const homeLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'home', 'home.js'), 'utf8');

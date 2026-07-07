@@ -20,7 +20,7 @@
   </view>
 
   <view class="status-card {{hasCourseGroups ? 'status-ready' : ''}}">
-    <view class="status-mark">{{hasCourseGroups ? 'VERIFIED' : 'IN REVIEW'}}</view>
+    <view class="status-mark">{{hasCourseGroups ? '已开放' : '复核中'}}</view>
     <view class="status-content">
       <view class="status-title">{{statusTitle}}</view>
       <view class="status-copy">{{statusCopy}}</view>
@@ -28,7 +28,7 @@
   </view>
 
   <view class="current-range-card {{isCurrentProgramme ? 'current-range-active' : ''}}">
-    <view class="current-range-mark">{{isCurrentProgramme ? 'SAVED LOCALLY' : 'NOT SAVED YET'}}</view>
+    <view class="current-range-mark">{{isCurrentProgramme ? '本机已保存' : '尚未保存'}}</view>
     <view class="current-range-main">
       <view class="current-range-title">{{isCurrentProgramme ? '这是你当前的课程范围' : '保存后可作为你的课程范围'}}</view>
       <view class="current-range-copy">
@@ -38,7 +38,7 @@
   </view>
 
   <view wx:if="{{hasCourseGroups}}" class="section">
-    <view class="section-kicker">COURSE STRUCTURE</view>
+    <view class="section-kicker">课程结构</view>
     <view
       wx:for="{{programme.courseGroups}}"
       wx:key="name"
@@ -57,7 +57,7 @@
   </view>
 
   <view wx:else class="section pending">
-    <view class="section-kicker">COURSE STRUCTURE</view>
+    <view class="section-kicker">课程结构</view>
     <view class="pending-title">课程清单待开放</view>
     <view class="pending-copy">课程组会按必修、选修及项目要求展示。复核完成前，这里先保留 Programme 与来源信息。</view>
     <view class="pending-steps">
