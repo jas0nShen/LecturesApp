@@ -4,6 +4,7 @@ const path = require('node:path');
 const DEFAULT_SOURCE_DIR = '/Users/shenjingsong/Documents/Codex/2026-07-06/pdf/outputs';
 const OUTPUT_PATH = path.join(__dirname, '..', 'miniprogram', 'utils', 'ugCatalogue.js');
 const HKU_CDS_OFFERINGS_PATH = path.join(__dirname, '..', 'data', 'hku-cds-offerings-2025.json');
+const HKUST_COMP_REQUIREMENTS_PATH = path.join(__dirname, '..', 'data', 'hkust-comp-requirements-2025.json');
 
 const HKU_CDS_PROGRAMME_NAMES = new Set([
   'Computing and Data Science',
@@ -248,6 +249,56 @@ function addHkuCdsSupplements(programmes, majors, courses) {
     });
 }
 
+function getHkustCourseType(groups = []) {
+  if (groups.includes('foundation')) return 'foundation';
+  if (groups.includes('required')) return 'core';
+  return 'major_elective';
+}
+
+function addHkustComputerScienceSupplements(programmes, majors, courses) {
+  const requirements = JSON.parse(fs.readFileSync(HKUST_COMP_REQUIREMENTS_PATH, 'utf8'));
+  const programme = programmes.find((item) => (
+    item.universityCode === 'HKUST'
+    && item.nameEn === 'BEng/BSc in Computer Science'
+  ));
+  if (!programme) return;
+
+  const programmeMajors = majors.filter((major) => major.programmeId === programme.id);
+  requirements.programmes.forEach((requirement) => {
+    const major = programmeMajors.find((item) => item.nameEn === requirement.majorName);
+    if (!major) return;
+    const supplementCourses = requirement.courses.map((course, index) => ({
+      id: `${major.id}-HKUST-COMP-${index + 1}`,
+      programmeId: programme.id,
+      majorId: major.id,
+      courseCode: course.code,
+      titleEn: course.title,
+      titleZh: course.title,
+      credits: course.credits,
+      recommendedYear: 0,
+      semester: '',
+      courseType: getHkustCourseType(course.groups),
+      requirementGroups: course.groups,
+      sourceUrl: requirement.pdfUrl,
+      officialUrl: requirement.catalogUrl,
+      sourceProvider: requirements.provider,
+      academicYear: requirements.academicYear
+    }));
+    courses.push(...supplementCourses);
+    major.courseCount = supplementCourses.length;
+    major.codedCourseCount = supplementCourses.length;
+    major.officialUrl = requirement.catalogUrl;
+  });
+
+  const programmeCourseCount = programmeMajors.reduce((sum, major) => sum + (major.codedCourseCount || 0), 0);
+  if (programmeCourseCount) {
+    programme.sourceStatus = 'course_codes_available';
+    programme.courseCount = programmeCourseCount;
+    programme.codedCourseCount = programmeCourseCount;
+    programme.courseSourceUrl = requirements.programmes[0]?.pdfUrl || programme.officialUrl;
+  }
+}
+
 function normalizeSource(source, sourceDir) {
   const raw = JSON.parse(fs.readFileSync(path.join(sourceDir, source.file), 'utf8'));
   const university = {
@@ -352,6 +403,9 @@ function normalizeSource(source, sourceDir) {
 
   if (source.code === 'HKU') {
     addHkuCdsSupplements(programmes, majors, courses);
+  }
+  if (source.code === 'HKUST') {
+    addHkustComputerScienceSupplements(programmes, majors, courses);
   }
 
   return { university, faculties, programmes, majors, courses };

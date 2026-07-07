@@ -1,0 +1,1002 @@
+{
+  "universityCode": "HKUST",
+  "provider": "Department of Computer Science and Engineering",
+  "academicYear": "2025-26",
+  "retrievedAt": "2026-07-07",
+  "sourceNote": "Extracted from HKUST Program & Course Catalog major requirement PDFs for 2025-26 intake.",
+  "programmes": [
+    {
+      "majorName": "BEng in Computer Science",
+      "catalogUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/COMP",
+      "pdfUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26comp.pdf",
+      "courses": [
+        {
+          "code": "COMP1023",
+          "credits": 3,
+          "title": "Introduction to Python Programming",
+          "groups": [
+            "foundation"
+          ]
+        },
+        {
+          "code": "MATH1013",
+          "credits": 3,
+          "title": "Calculus I",
+          "groups": [
+            "foundation"
+          ]
+        },
+        {
+          "code": "MATH1014",
+          "credits": 3,
+          "title": "Calculus II",
+          "groups": [
+            "foundation"
+          ]
+        },
+        {
+          "code": "MATH1020",
+          "credits": 4,
+          "title": "Accelerated Calculus",
+          "groups": [
+            "foundation"
+          ]
+        },
+        {
+          "code": "MATH1023",
+          "credits": 3,
+          "title": "Honors Calculus I",
+          "groups": [
+            "foundation"
+          ]
+        },
+        {
+          "code": "MATH1024",
+          "credits": 3,
+          "title": "Honors Calculus II",
+          "groups": [
+            "foundation"
+          ]
+        },
+        {
+          "code": "MATH2111",
+          "credits": 3,
+          "title": "Matrix Algebra and Applications",
+          "groups": [
+            "foundation"
+          ]
+        },
+        {
+          "code": "MATH2121",
+          "credits": 4,
+          "title": "Linear Algebra",
+          "groups": [
+            "foundation"
+          ]
+        },
+        {
+          "code": "MATH2131",
+          "credits": 4,
+          "title": "Honors in Linear and Abstract Algebra I",
+          "groups": [
+            "foundation"
+          ]
+        },
+        {
+          "code": "COMP1991",
+          "credits": 0,
+          "title": "Industrial Experience",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "COMP4910",
+          "credits": 6,
+          "title": "Co-op Program",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "COMP4981",
+          "credits": 6,
+          "title": "Final Year Project",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "COMP4981H",
+          "credits": 6,
+          "title": "Final Year Thesis",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "COMP2011",
+          "credits": 4,
+          "title": "Programming with C++",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "COMP2012",
+          "credits": 4,
+          "title": "Object-Oriented Programming and Data Structures",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "COMP2012H",
+          "credits": 5,
+          "title": "Honors Object-Oriented Programming and Data Structures",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "COMP2611",
+          "credits": 4,
+          "title": "Computer Organization",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "COMP2711",
+          "credits": 4,
+          "title": "Discrete Mathematical Tools for Computer Science",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "COMP2711H",
+          "credits": 4,
+          "title": "Honors Discrete Mathematical Tools for Computer Science",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "COMP3111",
+          "credits": 4,
+          "title": "Software Engineering",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "COMP3111H",
+          "credits": 4,
+          "title": "Honors Software Engineering",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "COMP3511",
+          "credits": 3,
+          "title": "Operating Systems",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "COMP3711",
+          "credits": 3,
+          "title": "Design and Analysis of Algorithms",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "COMP3711H",
+          "credits": 4,
+          "title": "Honors Design and Analysis of Algorithms",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "COMP4900",
+          "credits": 0,
+          "title": "Academic and Professional Development",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "ELEC2600",
+          "credits": 4,
+          "title": "Probability and Random Processes in Engineering",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "ELEC2600H",
+          "credits": 4,
+          "title": "Honors Probability and Random Processes in Engineering",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "IEDA2520",
+          "credits": 3,
+          "title": "Probability for Engineers",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "IEDA2540",
+          "credits": 3,
+          "title": "Statistics for Engineers",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "MATH2411",
+          "credits": 4,
+          "title": "Applied Statistics",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "MATH2421",
+          "credits": 4,
+          "title": "Probability",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "MATH2431",
+          "credits": 4,
+          "title": "Honors Probability",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "COMP3211",
+          "credits": 3,
+          "title": "Learning, Reasoning, and Decision Making in AI",
+          "groups": [
+            "ai_theory"
+          ]
+        },
+        {
+          "code": "COMP3721",
+          "credits": 3,
+          "title": "Theory of Computation",
+          "groups": [
+            "ai_theory"
+          ]
+        },
+        {
+          "code": "COMP4211",
+          "credits": 3,
+          "title": "Machine Learning",
+          "groups": [
+            "ai_theory"
+          ]
+        },
+        {
+          "code": "COMP4221",
+          "credits": 3,
+          "title": "Introduction to Natural Language Processing",
+          "groups": [
+            "ai_theory"
+          ]
+        },
+        {
+          "code": "COMP4222",
+          "credits": 3,
+          "title": "Machine Learning with Structured Data",
+          "groups": [
+            "ai_theory"
+          ]
+        },
+        {
+          "code": "COMP4331",
+          "credits": 3,
+          "title": "Data Mining",
+          "groups": [
+            "ai_theory",
+            "software_database"
+          ]
+        },
+        {
+          "code": "COMP4332",
+          "credits": 3,
+          "title": "Big Data Mining and Management",
+          "groups": [
+            "ai_theory",
+            "software_database"
+          ]
+        },
+        {
+          "code": "COMP4421",
+          "credits": 3,
+          "title": "Image Processing",
+          "groups": [
+            "ai_theory",
+            "vision_graphics"
+          ]
+        },
+        {
+          "code": "COMP4471",
+          "credits": 3,
+          "title": "Deep Learning in Computer Vision",
+          "groups": [
+            "ai_theory",
+            "vision_graphics"
+          ]
+        },
+        {
+          "code": "COMP4541",
+          "credits": 3,
+          "title": "Blockchain, Cryptocurrencies and Smart Contracts",
+          "groups": [
+            "ai_theory",
+            "systems_networking"
+          ]
+        },
+        {
+          "code": "COMP4551",
+          "credits": 3,
+          "title": "Large-Scale Machine Learning System for Foundation Models",
+          "groups": [
+            "ai_theory"
+          ]
+        },
+        {
+          "code": "COMP4901B",
+          "credits": 3,
+          "title": "Large Language Models",
+          "groups": [
+            "ai_theory"
+          ]
+        },
+        {
+          "code": "COMP4901L",
+          "credits": 3,
+          "title": "Foundations of Computer Vision",
+          "groups": [
+            "ai_theory"
+          ]
+        },
+        {
+          "code": "COMP4901R",
+          "credits": 3,
+          "title": "Algorithmic Game Theory",
+          "groups": [
+            "ai_theory"
+          ]
+        },
+        {
+          "code": "COMP4901T",
+          "credits": 3,
+          "title": "Introduction to Computer Vision",
+          "groups": [
+            "ai_theory",
+            "vision_graphics"
+          ]
+        },
+        {
+          "code": "COMP4901V",
+          "credits": 3,
+          "title": "Large-Scale Deep Perception, Localization, and Planning for Autonomous Vehicles",
+          "groups": [
+            "ai_theory"
+          ]
+        },
+        {
+          "code": "COMP4901X",
+          "credits": 3,
+          "title": "Formal Reasoning about Programs",
+          "groups": [
+            "ai_theory"
+          ]
+        },
+        {
+          "code": "COMP4901Z",
+          "credits": 3,
+          "title": "Reinforcement Learning",
+          "groups": [
+            "ai_theory"
+          ]
+        },
+        {
+          "code": "COMP5211",
+          "credits": 3,
+          "title": "Advanced Artificial Intelligence",
+          "groups": [
+            "ai_theory"
+          ]
+        },
+        {
+          "code": "COMP5212",
+          "credits": 3,
+          "title": "Machine Learning",
+          "groups": [
+            "ai_theory"
+          ]
+        },
+        {
+          "code": "COMP5214",
+          "credits": 3,
+          "title": "Advanced Deep Learning Architectures",
+          "groups": [
+            "ai_theory"
+          ]
+        },
+        {
+          "code": "COMP5215",
+          "credits": 3,
+          "title": "Perception and Information Processing for Robotics",
+          "groups": [
+            "ai_theory"
+          ]
+        },
+        {
+          "code": "COMP5221",
+          "credits": 3,
+          "title": "Natural Language Processing",
+          "groups": [
+            "ai_theory"
+          ]
+        },
+        {
+          "code": "COMP5331",
+          "credits": 3,
+          "title": "Knowledge Discovery in Databases",
+          "groups": [
+            "ai_theory",
+            "software_database"
+          ]
+        },
+        {
+          "code": "COMP5421",
+          "credits": 3,
+          "title": "Computer Vision",
+          "groups": [
+            "ai_theory",
+            "vision_graphics"
+          ]
+        },
+        {
+          "code": "COMP5711",
+          "credits": 3,
+          "title": "Introduction to Advanced Algorithmic Techniques",
+          "groups": [
+            "ai_theory"
+          ]
+        },
+        {
+          "code": "COMP5712",
+          "credits": 3,
+          "title": "Introduction to Combinatorial Optimization",
+          "groups": [
+            "ai_theory"
+          ]
+        },
+        {
+          "code": "COMP5713",
+          "credits": 3,
+          "title": "Computational Geometry",
+          "groups": [
+            "ai_theory"
+          ]
+        },
+        {
+          "code": "COMP4411",
+          "credits": 3,
+          "title": "Computer Graphics",
+          "groups": [
+            "vision_graphics"
+          ]
+        },
+        {
+          "code": "COMP4431",
+          "credits": 3,
+          "title": "Multimedia Computing",
+          "groups": [
+            "vision_graphics"
+          ]
+        },
+        {
+          "code": "COMP4441",
+          "credits": 3,
+          "title": "Music Video Creation",
+          "groups": [
+            "vision_graphics"
+          ]
+        },
+        {
+          "code": "COMP4451",
+          "credits": 3,
+          "title": "Game Programming",
+          "groups": [
+            "vision_graphics"
+          ]
+        },
+        {
+          "code": "COMP4461",
+          "credits": 3,
+          "title": "Human-Computer Interaction",
+          "groups": [
+            "vision_graphics"
+          ]
+        },
+        {
+          "code": "COMP4462",
+          "credits": 3,
+          "title": "Data Visualization",
+          "groups": [
+            "vision_graphics"
+          ]
+        },
+        {
+          "code": "COMP5411",
+          "credits": 3,
+          "title": "Advanced Computer Graphics",
+          "groups": [
+            "vision_graphics"
+          ]
+        },
+        {
+          "code": "COMP3021",
+          "credits": 3,
+          "title": "Java Programming",
+          "groups": [
+            "software_database"
+          ]
+        },
+        {
+          "code": "COMP3031",
+          "credits": 3,
+          "title": "Principles of Programming Languages",
+          "groups": [
+            "software_database"
+          ]
+        },
+        {
+          "code": "COMP3311",
+          "credits": 3,
+          "title": "Database Management Systems",
+          "groups": [
+            "software_database"
+          ]
+        },
+        {
+          "code": "COMP4021",
+          "credits": 3,
+          "title": "Internet Computing",
+          "groups": [
+            "software_database"
+          ]
+        },
+        {
+          "code": "COMP4121",
+          "credits": 3,
+          "title": "Modern Compiler Construction",
+          "groups": [
+            "software_database"
+          ]
+        },
+        {
+          "code": "COMP4321",
+          "credits": 3,
+          "title": "Search Engines for Web and Enterprise Data",
+          "groups": [
+            "software_database"
+          ]
+        },
+        {
+          "code": "COMP4521",
+          "credits": 3,
+          "title": "Mobile Application Development",
+          "groups": [
+            "software_database",
+            "systems_networking"
+          ]
+        },
+        {
+          "code": "COMP4651",
+          "credits": 3,
+          "title": "Cloud Computing and Big Data Systems",
+          "groups": [
+            "software_database",
+            "systems_networking"
+          ]
+        },
+        {
+          "code": "COMP4901A",
+          "credits": 3,
+          "title": "Distributed Systems",
+          "groups": [
+            "software_database",
+            "systems_networking"
+          ]
+        },
+        {
+          "code": "COMP5111",
+          "credits": 3,
+          "title": "Fundamentals of Software Analysis",
+          "groups": [
+            "software_database"
+          ]
+        },
+        {
+          "code": "COMP5112",
+          "credits": 3,
+          "title": "Parallel Programming",
+          "groups": [
+            "software_database"
+          ]
+        },
+        {
+          "code": "COMP5311",
+          "credits": 3,
+          "title": "Database Architecture and Implementation",
+          "groups": [
+            "software_database"
+          ]
+        },
+        {
+          "code": "COMP3631",
+          "credits": 3,
+          "title": "Cryptography",
+          "groups": [
+            "systems_networking"
+          ]
+        },
+        {
+          "code": "COMP4511",
+          "credits": 3,
+          "title": "System and Kernel Programming in Linux",
+          "groups": [
+            "systems_networking"
+          ]
+        },
+        {
+          "code": "COMP4531",
+          "credits": 3,
+          "title": "IoT and Smart Sensing",
+          "groups": [
+            "systems_networking"
+          ]
+        },
+        {
+          "code": "COMP4611",
+          "credits": 3,
+          "title": "Design and Analysis of Computer Architectures",
+          "groups": [
+            "systems_networking"
+          ]
+        },
+        {
+          "code": "COMP4621",
+          "credits": 3,
+          "title": "Computer and Communication Networks",
+          "groups": [
+            "systems_networking"
+          ]
+        },
+        {
+          "code": "COMP4632",
+          "credits": 3,
+          "title": "Practicing Cybersecurity: Attacks and Counter-measures",
+          "groups": [
+            "systems_networking"
+          ]
+        },
+        {
+          "code": "COMP4634",
+          "credits": 3,
+          "title": "Cybersecurity",
+          "groups": [
+            "systems_networking"
+          ]
+        },
+        {
+          "code": "COMP4635",
+          "credits": 3,
+          "title": "Practical Cloud Computing Security",
+          "groups": [
+            "systems_networking"
+          ]
+        },
+        {
+          "code": "COMP4641",
+          "credits": 3,
+          "title": "Social Information Network Analysis and Engineering",
+          "groups": [
+            "systems_networking"
+          ]
+        },
+        {
+          "code": "COMP4901Q",
+          "credits": 3,
+          "title": "High Performance Computing",
+          "groups": [
+            "systems_networking"
+          ]
+        },
+        {
+          "code": "COMP5621",
+          "credits": 3,
+          "title": "Computer Networks",
+          "groups": [
+            "systems_networking"
+          ]
+        },
+        {
+          "code": "COMP5631",
+          "credits": 3,
+          "title": "Cryptography and Security",
+          "groups": [
+            "systems_networking"
+          ]
+        },
+        {
+          "code": "COMP4911",
+          "credits": 3,
+          "title": "IT Entrepreneurship",
+          "groups": [
+            "other"
+          ]
+        }
+      ]
+    },
+    {
+      "majorName": "BSc in Computer Science",
+      "catalogUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/COSC",
+      "pdfUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26cosc.pdf",
+      "courses": [
+        {
+          "code": "COMP1023",
+          "credits": 3,
+          "title": "Introduction to Python Programming",
+          "groups": [
+            "foundation"
+          ]
+        },
+        {
+          "code": "MATH1013",
+          "credits": 3,
+          "title": "Calculus I",
+          "groups": [
+            "foundation"
+          ]
+        },
+        {
+          "code": "MATH1014",
+          "credits": 3,
+          "title": "Calculus II",
+          "groups": [
+            "foundation"
+          ]
+        },
+        {
+          "code": "MATH1020",
+          "credits": 4,
+          "title": "Accelerated Calculus",
+          "groups": [
+            "foundation"
+          ]
+        },
+        {
+          "code": "MATH1023",
+          "credits": 3,
+          "title": "Honors Calculus I",
+          "groups": [
+            "foundation"
+          ]
+        },
+        {
+          "code": "MATH1024",
+          "credits": 3,
+          "title": "Honors Calculus II",
+          "groups": [
+            "foundation"
+          ]
+        },
+        {
+          "code": "MATH2111",
+          "credits": 3,
+          "title": "Matrix Algebra and Applications",
+          "groups": [
+            "foundation"
+          ]
+        },
+        {
+          "code": "MATH2121",
+          "credits": 4,
+          "title": "Linear Algebra",
+          "groups": [
+            "foundation"
+          ]
+        },
+        {
+          "code": "MATH2131",
+          "credits": 4,
+          "title": "Honors in Linear and Abstract Algebra I",
+          "groups": [
+            "foundation"
+          ]
+        },
+        {
+          "code": "COMP2011",
+          "credits": 4,
+          "title": "Programming with C++",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "COMP2012",
+          "credits": 4,
+          "title": "Object-Oriented Programming and Data Structures",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "COMP2012H",
+          "credits": 5,
+          "title": "Honors Object-Oriented Programming and Data Structures",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "COMP2611",
+          "credits": 4,
+          "title": "Computer Organization",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "COMP2711",
+          "credits": 4,
+          "title": "Discrete Mathematical Tools for Computer Science",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "COMP2711H",
+          "credits": 4,
+          "title": "Honors Discrete Mathematical Tools for Computer Science",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "COMP3111",
+          "credits": 4,
+          "title": "Software Engineering",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "COMP3111H",
+          "credits": 4,
+          "title": "Honors Software Engineering",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "COMP3511",
+          "credits": 3,
+          "title": "Operating Systems",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "COMP3711",
+          "credits": 3,
+          "title": "Design and Analysis of Algorithms",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "COMP3711H",
+          "credits": 4,
+          "title": "Honors Design and Analysis of Algorithms",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "COMP4900",
+          "credits": 0,
+          "title": "Academic and Professional Development",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "ELEC2600",
+          "credits": 4,
+          "title": "Probability and Random Processes in Engineering",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "ELEC2600H",
+          "credits": 4,
+          "title": "Honors Probability and Random Processes in Engineering",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "IEDA2520",
+          "credits": 3,
+          "title": "Probability for Engineers",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "IEDA2540",
+          "credits": 3,
+          "title": "Statistics for Engineers",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "ISOM2500",
+          "credits": 3,
+          "title": "Business Statistics",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "MATH2411",
+          "credits": 4,
+          "title": "Applied Statistics",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "MATH2421",
+          "credits": 4,
+          "title": "Probability",
+          "groups": [
+            "required"
+          ]
+        },
+        {
+          "code": "MATH2431",
+          "credits": 4,
+          "title": "Honors Probability",
+          "groups": [
+            "required"
+          ]
+        }
+      ]
+    }
+  ]
+}
