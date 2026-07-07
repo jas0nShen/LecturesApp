@@ -2,15 +2,38 @@ const service = require('../../utils/courseService');
 const tpgService = require('../../utils/tpgService');
 const ugService = require('../../utils/ugService');
 
+function formatUgUniversityOption(university = {}) {
+  return university.nameZh || university.shortName || university.nameEn || university.code || '学校待确认';
+}
+
+function formatTpgUniversityOption(university = {}) {
+  return university.shortName || university.name || university.code || '学校待确认';
+}
+
+function formatUgProgrammeOption(programme = {}) {
+  return programme.nameZh || programme.nameEn || programme.code || 'Programme 待确认';
+}
+
+function formatTpgProgrammeOption(programme = {}) {
+  return programme.name || programme.programmeCode || 'Programme 待确认';
+}
+
+function formatMajorOption(major = {}) {
+  return major.nameZh || major.nameEn || major.code || 'Major 待确认';
+}
+
 Page({
   data: {
     mode: 'tpg',
     universities: [],
+    universityOptions: [],
     ugSchoolCoverage: [],
     programmes: [],
+    programmeOptions: [],
     filteredUgProgrammes: [],
     visibleUgProgrammes: [],
     majors: [],
+    majorOptions: [],
     selectedUniversity: {},
     selectedUgCoverage: null,
     selectedProgramme: {},
@@ -30,8 +53,10 @@ Page({
     ugCourseStatus: '',
     savedUgProfile: null,
     tpgUniversities: tpgService.listUniversities(),
+    tpgUniversityOptions: tpgService.listUniversities().map(formatTpgUniversityOption),
     tpgSchoolCoverage: tpgService.getSchoolCoverage(),
     tpgProgrammes: [],
+    tpgProgrammeOptions: [],
     filteredTpgProgrammes: [],
     visibleTpgProgrammes: [],
     tpgKeyword: '',
@@ -66,12 +91,31 @@ Page({
     const universities = ugService.listUniversities();
     const ugSchoolCoverage = ugService.getSchoolCoverage();
     const selectedUniversity = universities.find((item) => item.id === (profile && profile.universityId)) || universities[0];
+    if (!selectedUniversity) {
+      this.setData({
+        universities: [],
+        universityOptions: [],
+        ugSchoolCoverage,
+        selectedUniversity: {},
+        selectedUgCoverage: null,
+        programmes: [],
+        programmeOptions: [],
+        filteredUgProgrammes: [],
+        visibleUgProgrammes: [],
+        selectedProgramme: {},
+        majors: [],
+        majorOptions: [],
+        selectedMajor: {}
+      });
+      return;
+    }
     const programmes = ugService.listProgrammes({ universityId: selectedUniversity.id, degreeLevel: 'undergraduate' });
     const selectedProgramme = programmes.find((item) => item.id === (profile && profile.programmeId)) || programmes[0];
     const currentYear = profile && profile.profileType !== 'tpg' ? String(profile.currentYear) : '1';
     const currentYearIndex = this.data.yearOptions.findIndex((item) => item === currentYear);
     this.setData({
       universities,
+      universityOptions: universities.map(formatUgUniversityOption),
       ugSchoolCoverage,
       selectedUniversity,
       currentYear,
@@ -166,6 +210,7 @@ Page({
     this.setData({
       selectedProgramme,
       majors,
+      majorOptions: majors.map(formatMajorOption),
       selectedMajor,
       curriculumYears,
       curriculumYear,
@@ -210,6 +255,7 @@ Page({
       selectedUgCoverage,
       programmes,
       filteredUgProgrammes,
+      programmeOptions: filteredUgProgrammes.map(formatUgProgrammeOption),
       visibleUgProgrammes: this.decorateUgProgrammes(filteredUgProgrammes.slice(0, 5)),
       ugKeyword,
       ugUniversityIndex: selectedUniversityIndex >= 0 ? selectedUniversityIndex : 0,
@@ -380,6 +426,8 @@ Page({
       selectedTpgCoverage,
       tpgProgrammes,
       filteredTpgProgrammes,
+      tpgUniversityOptions: this.data.tpgUniversities.map(formatTpgUniversityOption),
+      tpgProgrammeOptions: filteredTpgProgrammes.map(formatTpgProgrammeOption),
       visibleTpgProgrammes: this.decorateTpgProgrammes(filteredTpgProgrammes.slice(0, 5)),
       tpgKeyword,
       tpgUniversityIndex: tpgUniversityIndex >= 0 ? tpgUniversityIndex : 0,
