@@ -168,6 +168,32 @@ function listCourses(programme) {
   return rows;
 }
 
+function mergeCodedCourses(courses) {
+  const byCode = new Map();
+  courses
+    .filter((course) => course.code)
+    .forEach((course) => {
+      const existing = byCode.get(course.code);
+      if (!existing) {
+        byCode.set(course.code, {
+          ...course,
+          semesters: course.semester ? [course.semester] : [],
+          years: course.year ? [course.year] : []
+        });
+        return;
+      }
+      if (course.title && course.title.length > existing.title.length) existing.title = course.title;
+      if (course.sourceUrl && !existing.sourceUrl) existing.sourceUrl = course.sourceUrl;
+      if (course.semester && !existing.semesters.includes(course.semester)) existing.semesters.push(course.semester);
+      if (course.year && !existing.years.includes(course.year)) existing.years.push(course.year);
+    });
+  return [...byCode.values()].map((course) => ({
+    ...course,
+    semester: course.semesters.join(' / '),
+    year: course.years[0] || course.year
+  }));
+}
+
 function getRecommendedYear(categories = []) {
   const matchedCategory = categories.find((category) => /Year\s+\d/i.test(category));
   return Number(String(matchedCategory || '').match(/Year\s+(\d)/i)?.[1] || 0);
@@ -246,7 +272,7 @@ function normalizeSource(source, sourceDir) {
     const programmeCourses = listCourses(programme);
     const codedProgrammeCourses = programmeCourses.filter((course) => course.code);
 
-    programmes.push({
+    const programmeRecord = {
       id: programmeId,
       universityId: source.code,
       universityCode: source.code,
@@ -264,27 +290,30 @@ function normalizeSource(source, sourceDir) {
       sourceStatus: codedProgrammeCourses.length ? 'course_codes_available' : 'programme_summary_only',
       courseCount: programmeCourses.length,
       codedCourseCount: codedProgrammeCourses.length
-    });
+    };
+    programmes.push(programmeRecord);
 
     const tracks = Array.isArray(programme.majors_or_tracks) && programme.majors_or_tracks.length
       ? programme.majors_or_tracks
       : [programme.programme_name];
+    let programmeCodedCourseCount = 0;
     tracks.forEach((track, trackIndex) => {
       const majorId = `${programmeId}-M${trackIndex + 1}`;
       const trackCourses = programmeCourses.filter((course) => !course.track || course.track === track);
       const effectiveCourses = trackCourses.length ? trackCourses : programmeCourses;
+      const codedCourses = mergeCodedCourses(effectiveCourses);
+      programmeCodedCourseCount += codedCourses.length;
       majors.push({
         id: majorId,
         programmeId,
         code: slug(track) || `M${trackIndex + 1}`,
         nameEn: track,
         nameZh: track,
-        courseCount: effectiveCourses.length,
-        codedCourseCount: effectiveCourses.filter((course) => course.code).length,
+        courseCount: codedCourses.length || effectiveCourses.length,
+        codedCourseCount: codedCourses.length,
         officialUrl: programme.official_url || programme.source_url || ''
       });
-      effectiveCourses
-        .filter((course) => course.code)
+      codedCourses
         .forEach((course, courseIndex) => {
           courses.push({
             id: `${majorId}-C${courseIndex + 1}`,
@@ -300,6 +329,10 @@ function normalizeSource(source, sourceDir) {
           });
         });
     });
+    if (programmeCodedCourseCount) {
+      programmeRecord.courseCount = programmeCodedCourseCount;
+      programmeRecord.codedCourseCount = programmeCodedCourseCount;
+    }
   });
 
   const faculties = [...facultySet].sort().map((faculty) => ({

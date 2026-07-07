@@ -11,9 +11,9 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert(summary.programmeCount >= 445);
   assert(summary.majorCount >= 690);
   assert.equal(summary.requirementCount, 4);
-  assert(summary.courseCount >= 298);
+  assert(summary.courseCount >= 292);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 284);
+  assert.equal(summary.codedCourseCount, 278);
 });
 
 test('UG catalogue exposes the multi-school hierarchy needed for onboarding', () => {
@@ -46,7 +46,7 @@ test('UG per-school coverage stays visible for setup validation', () => {
     HKU: { programmeCount: 137, majorCount: 137, codedCourseCount: 112 },
     CUHK: { programmeCount: 84, majorCount: 84, codedCourseCount: 0 },
     HKUST: { programmeCount: 50, majorCount: 64, codedCourseCount: 0 },
-    POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 172 },
+    POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 166 },
     CITYU: { programmeCount: 58, majorCount: 201, codedCourseCount: 0 },
     HKBU: { programmeCount: 22, majorCount: 46, codedCourseCount: 0 },
     EDUHK: { programmeCount: 25, majorCount: 25, codedCourseCount: 0 },
@@ -66,7 +66,7 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert.equal(hku.codedCourseCount, 112);
   assert.equal(hku.badge, 'COURSES');
   assert.equal(polyu.programmeWithCoursesCount, 1);
-  assert.equal(polyu.codedCourseCount, 172);
+  assert.equal(polyu.codedCourseCount, 166);
   assert.equal(polyu.badge, 'COURSES');
   assert(polyu.coverageLabel.includes('课程代码'));
 });
@@ -144,6 +144,21 @@ test('imported UG coded courses are searchable when public course rows exist', (
 
   assert(profile.codedCourseCount > 0);
   assert(ugService.listMajorCourses(computing.id, computerScience.id, { keyword: 'Artificial Intelligence' }).length > 0);
+});
+
+test('imported UG coded courses are deduplicated by course code within a major', () => {
+  const polyu = ugService.listUniversities().find((item) => item.code === 'POLYU');
+  const programmes = ugService.listProgrammes({ universityId: polyu.id, degreeLevel: 'undergraduate' });
+  const computing = programmes.find((programme) => programme.code === 'JS3868');
+  const computerScience = ugService.listMajors(computing.id).find((major) => major.nameEn === 'Computer Science');
+  const courses = ugService.listMajorCourses(computing.id, computerScience.id);
+  const comp1004 = courses.filter((course) => course.courseCode === 'COMP1004');
+
+  assert.equal(computing.codedCourseCount, 166);
+  assert.equal(computerScience.codedCourseCount, 83);
+  assert.equal(courses.length, 83);
+  assert.equal(comp1004.length, 1);
+  assert.equal(comp1004[0].semester, 'Semester 1 / Semester 2');
 });
 
 test('imported UG programmes can be searched by title, code and faculty', () => {
