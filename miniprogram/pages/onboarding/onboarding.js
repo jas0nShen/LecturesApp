@@ -71,6 +71,8 @@ Page({
     ugCourseStatus: '',
     savedUgProfile: null,
     showUgUniversitySheet: false,
+    showUgProgrammeSheet: false,
+    showUgMajorSheet: false,
     tpgUniversities: INITIAL_TPG_UNIVERSITIES,
     tpgUniversityOptions: INITIAL_TPG_UNIVERSITIES.map(formatTpgUniversityOption),
     tpgSchoolCoverage: tpgService.getSchoolCoverage(),
@@ -88,7 +90,8 @@ Page({
     tpgCourseStatus: '',
     tpgSelectedIndexLabel: '',
     savedTpgProfile: null,
-    showTpgUniversitySheet: false
+    showTpgUniversitySheet: false,
+    showTpgProgrammeSheet: false
   },
 
   async onLoad() {
@@ -190,8 +193,25 @@ Page({
   },
 
   async onProgrammeChange(event) {
-    const index = Number(event.detail.value);
+    this.selectUgProgrammeByIndex(Number(event.detail.value));
+  },
+
+  openUgProgrammeSheet() {
+    if (!this.data.filteredUgProgrammes.length) return;
+    this.setData({ showUgProgrammeSheet: true });
+  },
+
+  closeUgProgrammeSheet() {
+    this.setData({ showUgProgrammeSheet: false });
+  },
+
+  selectUgProgrammeFromSheet(event) {
+    this.selectUgProgrammeByIndex(Number(event.currentTarget.dataset.index));
+  },
+
+  selectUgProgrammeByIndex(index) {
     const selectedProgramme = this.data.filteredUgProgrammes[index] || this.data.filteredUgProgrammes[0] || {};
+    this.setData({ showUgProgrammeSheet: false });
     this.applyUgProgrammeSelection(selectedProgramme);
   },
 
@@ -305,7 +325,23 @@ Page({
   },
 
   onMajorChange(event) {
-    const index = Number(event.detail.value);
+    this.selectMajorByIndex(Number(event.detail.value));
+  },
+
+  openUgMajorSheet() {
+    if (!this.data.majors.length) return;
+    this.setData({ showUgMajorSheet: true });
+  },
+
+  closeUgMajorSheet() {
+    this.setData({ showUgMajorSheet: false });
+  },
+
+  selectUgMajor(event) {
+    this.selectMajorByIndex(Number(event.currentTarget.dataset.index));
+  },
+
+  selectMajorByIndex(index) {
     const safeIndex = this.data.majors[index] ? index : 0;
     const selectedMajor = this.data.majors[safeIndex] || {};
     const curriculumYears = ugService.listCurriculumYears(this.data.selectedProgramme.id, selectedMajor.id);
@@ -318,7 +354,8 @@ Page({
       ugMajorIndex: safeIndex,
       ugCurriculumYearIndex: 0,
       ugMajorProfile,
-      ugCourseStatus: this.buildUgCourseStatus(ugMajorProfile)
+      ugCourseStatus: this.buildUgCourseStatus(ugMajorProfile),
+      showUgMajorSheet: false
     });
   },
 
@@ -393,8 +430,25 @@ Page({
   },
 
   onTpgProgrammeChange(event) {
-    const index = Number(event.detail.value);
+    this.selectTpgProgrammeByIndex(Number(event.detail.value));
+  },
+
+  openTpgProgrammeSheet() {
+    if (!this.data.filteredTpgProgrammes.length) return;
+    this.setData({ showTpgProgrammeSheet: true });
+  },
+
+  closeTpgProgrammeSheet() {
+    this.setData({ showTpgProgrammeSheet: false });
+  },
+
+  selectTpgProgrammeFromSheet(event) {
+    this.selectTpgProgrammeByIndex(Number(event.currentTarget.dataset.index));
+  },
+
+  selectTpgProgrammeByIndex(index) {
     const selectedTpgProgramme = this.data.filteredTpgProgrammes[index] || this.data.filteredTpgProgrammes[0] || {};
+    this.setData({ showTpgProgrammeSheet: false });
     this.setTpgSelection(
       this.data.selectedTpgUniversity,
       this.data.tpgProgrammes,

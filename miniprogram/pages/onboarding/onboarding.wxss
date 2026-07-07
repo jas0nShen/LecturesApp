@@ -501,6 +501,10 @@
   max-height: 560rpx;
 }
 
+.sheet-list-tall {
+  max-height: 680rpx;
+}
+
 .sheet-option {
   align-items: center;
   border-bottom: 1rpx solid #f0f3f1;
@@ -510,6 +514,14 @@
   font-size: 29rpx;
   min-height: 92rpx;
   padding: 0 34rpx;
+}
+
+.sheet-option-multiline {
+  align-items: flex-start;
+  line-height: 1.35;
+  min-height: 98rpx;
+  padding-bottom: 24rpx;
+  padding-top: 24rpx;
 }
 
 .sheet-option-active {

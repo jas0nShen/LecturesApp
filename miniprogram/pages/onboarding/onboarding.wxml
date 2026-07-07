@@ -66,12 +66,10 @@
         />
         <view wx:if="{{ugKeyword}}" class="programme-clear" bindtap="clearUgKeyword">×</view>
       </view>
-      <picker wx:if="{{filteredUgProgrammes.length}}" range="{{programmeOptions}}" value="{{ugProgrammeIndex}}" bindchange="onProgrammeChange">
-        <view class="select select-programme">
-          <view class="select-programme-name">{{selectedProgramme.nameZh || '请选择 Programme'}}</view>
-          <view class="select-programme-meta">{{filteredUgProgrammes.length}} 个匹配结果 · 当前 {{ugSelectedIndexLabel}}</view>
-        </view>
-      </picker>
+      <view wx:if="{{filteredUgProgrammes.length}}" class="select select-programme select-arrow" bindtap="openUgProgrammeSheet">
+        <view class="select-programme-name">{{selectedProgramme.nameZh || '请选择 Programme'}}</view>
+        <view class="select-programme-meta">{{filteredUgProgrammes.length}} 个匹配结果 · 当前 {{ugSelectedIndexLabel}}</view>
+      </view>
     </view>
 
     <view wx:if="{{filteredUgProgrammes.length}}" class="programme-results">
@@ -98,9 +96,7 @@
     <view wx:if="{{selectedProgramme.id}}">
       <view class="field">
         <view class="label">Major</view>
-        <picker range="{{majorOptions}}" value="{{ugMajorIndex}}" bindchange="onMajorChange">
-          <view class="select">{{selectedMajor.nameZh || '请选择 Major'}}</view>
-        </picker>
+        <view class="select select-arrow" bindtap="openUgMajorSheet">{{selectedMajor.nameZh || '请选择 Major'}}</view>
       </view>
 
       <view class="field">
@@ -173,12 +169,10 @@
         />
         <view wx:if="{{tpgKeyword}}" class="programme-clear" bindtap="clearTpgKeyword">×</view>
       </view>
-      <picker wx:if="{{filteredTpgProgrammes.length}}" range="{{tpgProgrammeOptions}}" value="{{tpgProgrammeIndex}}" bindchange="onTpgProgrammeChange">
-        <view class="select select-programme">
-          <view class="select-programme-name">{{selectedTpgProgramme.name || '请选择 Programme'}}</view>
-          <view class="select-programme-meta">{{filteredTpgProgrammes.length}} 个匹配结果 · 当前 {{tpgSelectedIndexLabel}}</view>
-        </view>
-      </picker>
+      <view wx:if="{{filteredTpgProgrammes.length}}" class="select select-programme select-arrow" bindtap="openTpgProgrammeSheet">
+        <view class="select-programme-name">{{selectedTpgProgramme.name || '请选择 Programme'}}</view>
+        <view class="select-programme-meta">{{filteredTpgProgrammes.length}} 个匹配结果 · 当前 {{tpgSelectedIndexLabel}}</view>
+      </view>
     </view>
 
     <view wx:if="{{filteredTpgProgrammes.length}}" class="programme-results">
@@ -240,6 +234,44 @@
     </view>
   </view>
 
+  <view wx:if="{{showUgProgrammeSheet}}" class="sheet-mask" bindtap="closeUgProgrammeSheet">
+    <view class="sheet" catchtap="noop">
+      <view class="sheet-head">
+        <view class="sheet-cancel" bindtap="closeUgProgrammeSheet">取消</view>
+        <view class="sheet-title">选择 Programme</view>
+        <view class="sheet-placeholder"></view>
+      </view>
+      <scroll-view class="sheet-list sheet-list-tall" scroll-y>
+        <view
+          wx:for="{{programmeOptions}}"
+          wx:key="*this"
+          class="sheet-option sheet-option-multiline {{ugProgrammeIndex === index ? 'sheet-option-active' : ''}}"
+          data-index="{{index}}"
+          bindtap="selectUgProgrammeFromSheet"
+        >{{item}}</view>
+      </scroll-view>
+    </view>
+  </view>
+
+  <view wx:if="{{showUgMajorSheet}}" class="sheet-mask" bindtap="closeUgMajorSheet">
+    <view class="sheet" catchtap="noop">
+      <view class="sheet-head">
+        <view class="sheet-cancel" bindtap="closeUgMajorSheet">取消</view>
+        <view class="sheet-title">选择 Major</view>
+        <view class="sheet-placeholder"></view>
+      </view>
+      <scroll-view class="sheet-list" scroll-y>
+        <view
+          wx:for="{{majorOptions}}"
+          wx:key="*this"
+          class="sheet-option sheet-option-multiline {{ugMajorIndex === index ? 'sheet-option-active' : ''}}"
+          data-index="{{index}}"
+          bindtap="selectUgMajor"
+        >{{item}}</view>
+      </scroll-view>
+    </view>
+  </view>
+
   <view wx:if="{{showTpgUniversitySheet}}" class="sheet-mask" bindtap="closeTpgUniversitySheet">
     <view class="sheet" catchtap="noop">
       <view class="sheet-head">
@@ -254,6 +286,25 @@
           class="sheet-option {{tpgUniversityIndex === index ? 'sheet-option-active' : ''}}"
           data-index="{{index}}"
           bindtap="selectTpgUniversity"
+        >{{item}}</view>
+      </scroll-view>
+    </view>
+  </view>
+
+  <view wx:if="{{showTpgProgrammeSheet}}" class="sheet-mask" bindtap="closeTpgProgrammeSheet">
+    <view class="sheet" catchtap="noop">
+      <view class="sheet-head">
+        <view class="sheet-cancel" bindtap="closeTpgProgrammeSheet">取消</view>
+        <view class="sheet-title">选择 Programme</view>
+        <view class="sheet-placeholder"></view>
+      </view>
+      <scroll-view class="sheet-list sheet-list-tall" scroll-y>
+        <view
+          wx:for="{{tpgProgrammeOptions}}"
+          wx:key="*this"
+          class="sheet-option sheet-option-multiline {{tpgProgrammeIndex === index ? 'sheet-option-active' : ''}}"
+          data-index="{{index}}"
+          bindtap="selectTpgProgrammeFromSheet"
         >{{item}}</view>
       </scroll-view>
     </view>
