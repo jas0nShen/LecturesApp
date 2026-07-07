@@ -22,24 +22,42 @@ function formatMajorOption(major = {}) {
   return major.nameZh || major.nameEn || major.code || 'Major 待确认';
 }
 
+const INITIAL_UG_UNIVERSITIES = ugService.listUniversities();
+const INITIAL_UG_UNIVERSITY = INITIAL_UG_UNIVERSITIES[0] || {};
+const INITIAL_UG_PROGRAMMES = INITIAL_UG_UNIVERSITY.id
+  ? ugService.listProgrammes({ universityId: INITIAL_UG_UNIVERSITY.id, degreeLevel: 'undergraduate' })
+  : [];
+const INITIAL_UG_PROGRAMME = INITIAL_UG_PROGRAMMES[0] || {};
+const INITIAL_UG_MAJORS = INITIAL_UG_PROGRAMME.id ? ugService.listMajors(INITIAL_UG_PROGRAMME.id) : [];
+const INITIAL_UG_MAJOR = INITIAL_UG_MAJORS[0] || {};
+const INITIAL_UG_YEARS = INITIAL_UG_MAJOR.id
+  ? ugService.listCurriculumYears(INITIAL_UG_PROGRAMME.id, INITIAL_UG_MAJOR.id)
+  : [];
+const INITIAL_TPG_UNIVERSITIES = tpgService.listUniversities();
+const INITIAL_TPG_UNIVERSITY = INITIAL_TPG_UNIVERSITIES[0] || {};
+const INITIAL_TPG_PROGRAMMES = INITIAL_TPG_UNIVERSITY.code
+  ? tpgService.listProgrammes(INITIAL_TPG_UNIVERSITY.code)
+  : [];
+const INITIAL_TPG_PROGRAMME = INITIAL_TPG_PROGRAMMES[0] || {};
+
 Page({
   data: {
     mode: 'tpg',
-    universities: [],
-    universityOptions: [],
+    universities: INITIAL_UG_UNIVERSITIES,
+    universityOptions: INITIAL_UG_UNIVERSITIES.map(formatUgUniversityOption),
     ugSchoolCoverage: [],
-    programmes: [],
-    programmeOptions: [],
-    filteredUgProgrammes: [],
+    programmes: INITIAL_UG_PROGRAMMES,
+    programmeOptions: INITIAL_UG_PROGRAMMES.map(formatUgProgrammeOption),
+    filteredUgProgrammes: INITIAL_UG_PROGRAMMES,
     visibleUgProgrammes: [],
-    majors: [],
-    majorOptions: [],
-    selectedUniversity: {},
+    majors: INITIAL_UG_MAJORS,
+    majorOptions: INITIAL_UG_MAJORS.map(formatMajorOption),
+    selectedUniversity: INITIAL_UG_UNIVERSITY,
     selectedUgCoverage: null,
-    selectedProgramme: {},
-    selectedMajor: {},
-    curriculumYears: [],
-    curriculumYear: '2025-26',
+    selectedProgramme: INITIAL_UG_PROGRAMME,
+    selectedMajor: INITIAL_UG_MAJOR,
+    curriculumYears: INITIAL_UG_YEARS,
+    curriculumYear: INITIAL_UG_YEARS[0] || INITIAL_UG_PROGRAMME.curriculumYear || '2025-26',
     yearOptions: ['1', '2', '3', '4'],
     currentYear: '1',
     ugUniversityIndex: 0,
@@ -52,19 +70,19 @@ Page({
     ugMajorProfile: null,
     ugCourseStatus: '',
     savedUgProfile: null,
-    tpgUniversities: tpgService.listUniversities(),
-    tpgUniversityOptions: tpgService.listUniversities().map(formatTpgUniversityOption),
+    tpgUniversities: INITIAL_TPG_UNIVERSITIES,
+    tpgUniversityOptions: INITIAL_TPG_UNIVERSITIES.map(formatTpgUniversityOption),
     tpgSchoolCoverage: tpgService.getSchoolCoverage(),
-    tpgProgrammes: [],
-    tpgProgrammeOptions: [],
-    filteredTpgProgrammes: [],
+    tpgProgrammes: INITIAL_TPG_PROGRAMMES,
+    tpgProgrammeOptions: INITIAL_TPG_PROGRAMMES.map(formatTpgProgrammeOption),
+    filteredTpgProgrammes: INITIAL_TPG_PROGRAMMES,
     visibleTpgProgrammes: [],
     tpgKeyword: '',
     tpgUniversityIndex: 0,
     tpgProgrammeIndex: 0,
-    selectedTpgUniversity: {},
+    selectedTpgUniversity: INITIAL_TPG_UNIVERSITY,
     selectedTpgCoverage: null,
-    selectedTpgProgramme: {},
+    selectedTpgProgramme: INITIAL_TPG_PROGRAMME,
     tpgCourseCount: 0,
     tpgCourseStatus: '',
     tpgSelectedIndexLabel: '',
@@ -322,12 +340,17 @@ Page({
 
   onTpgUniversityChange(event) {
     const index = Number(event.detail.value);
-    const selectedTpgUniversity = this.data.tpgUniversities[index] || this.data.tpgUniversities[0] || {};
+    const tpgUniversities = tpgService.listUniversities();
+    const selectedTpgUniversity = tpgUniversities[index] || tpgUniversities[0] || {};
     if (!selectedTpgUniversity.code) {
       wx.showToast({ title: '请选择大学', icon: 'none' });
       return;
     }
     const tpgProgrammes = tpgService.listProgrammes(selectedTpgUniversity.code);
+    this.setData({
+      tpgUniversities,
+      tpgUniversityOptions: tpgUniversities.map(formatTpgUniversityOption)
+    });
     this.setTpgSelection(selectedTpgUniversity, tpgProgrammes, tpgProgrammes[0] || {}, '');
   },
 
