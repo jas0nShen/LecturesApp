@@ -118,14 +118,14 @@ function checkReleaseReadiness(now = new Date()) {
   if (offerings.courses.some((course) => !course.details || !course.officialUrl)) {
     errors.push('One or more official offerings are missing details or source URLs');
   }
-  if (tpgSummary.schoolCount < 6) {
-    errors.push(`TPG catalogue includes ${tpgSummary.schoolCount} schools, expected at least 6`);
+  if (tpgSummary.schoolCount < 8) {
+    errors.push(`TPG catalogue includes ${tpgSummary.schoolCount} schools, expected at least 8`);
   }
   if (tpgSummary.programmeCount < 300) {
     errors.push(`TPG catalogue includes ${tpgSummary.programmeCount} programmes, expected at least 300`);
   }
-  if (ugSummary.universityCount < 6) {
-    errors.push(`UG catalogue includes ${ugSummary.universityCount} schools, expected at least 6`);
+  if (ugSummary.universityCount < 8) {
+    errors.push(`UG catalogue includes ${ugSummary.universityCount} schools, expected at least 8`);
   }
   if (ugSummary.programmeCount < 390) {
     errors.push(`UG catalogue includes ${ugSummary.programmeCount} programmes, expected at least 390`);

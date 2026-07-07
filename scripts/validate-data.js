@@ -100,7 +100,7 @@ hkuCdsOfferings.courses.forEach((course) => {
 });
 
 assert.equal(tpgCatalogue.scope, 'taught_postgraduate');
-assert.equal(tpgCatalogue.universities.length, 6);
+assert.equal(tpgCatalogue.universities.length, 8);
 assert(tpgCatalogue.programmes.length >= 300, 'TPG programme import is unexpectedly small');
 assertUniqueIds(tpgCatalogue.programmes, 'TPG programmes');
 const tpgUniversityCodes = new Set(tpgCatalogue.universities.map((item) => item.code));

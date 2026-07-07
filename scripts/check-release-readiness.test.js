@@ -24,11 +24,11 @@ test('current mini-program passes automated release readiness checks', () => {
   assert.equal(result.release.dataMode, '体验版 / 正式版离线数据');
   assert(result.metrics.pageCount >= 10);
   assert.equal(result.metrics.offeringCount, 56);
-  assert.equal(result.metrics.tpgSchoolCount, 6);
+  assert.equal(result.metrics.tpgSchoolCount, 8);
   assert.equal(result.metrics.tpgProgrammeCount, 348);
   assert.equal(result.metrics.tpgProgrammeWithCoursesCount, 6);
   assert.equal(result.metrics.tpgCourseCount, 257);
-  assert.equal(result.metrics.ugSchoolCount, 6);
+  assert.equal(result.metrics.ugSchoolCount, 8);
   assert.equal(result.metrics.ugProgrammeCount, 396);
   assert.equal(result.metrics.ugMajorCount, 641);
   assert.equal(result.metrics.ugCodedCourseCount, 172);
@@ -66,7 +66,7 @@ test('MVP spec documents the TPG launch scope without user-facing school lock-in
   assert(mvpSpec.includes('授课硕士课程规划助手'));
   assert(mvpSpec.includes('348 个 TPG Programme'));
   assert(mvpSpec.includes('本科 Programme / Major 目录'));
-  assert(mvpSpec.includes('UG 目录至少包含 6 所学校'));
+  assert(mvpSpec.includes('UG 目录至少包含 8 所学校'));
   assert(!mvpSpec.includes('多学校完整数据覆盖'));
   assert(!mvpSpec.includes('本地 API mock 固定接口'));
 });

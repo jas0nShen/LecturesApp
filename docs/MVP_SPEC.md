@@ -49,7 +49,7 @@ npm run check:release
 - `ready: true`；
 - 已整理 TPG 学校数量与 Programme 数量符合当前数据快照；
 - 348 个 TPG Programme；
-- UG 目录至少包含 6 所学校、390 个 Programme 和 600 个 Major / Track；
+- UG 目录至少包含 8 所学校、390 个 Programme 和 600 个 Major / Track；
 - 0 个敏感 API；
 - `releaseInfo.version` 与 `package.json` 版本一致；
 - 微信项目描述与授课硕士课程规划定位一致。

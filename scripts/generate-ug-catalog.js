@@ -43,6 +43,27 @@ const SOURCES = [
   }
 ];
 
+const STATIC_UNIVERSITIES = [
+  {
+    id: 'EDUHK',
+    code: 'EDUHK',
+    shortName: 'EdUHK',
+    nameEn: 'The Education University of Hong Kong',
+    nameZh: '香港教育大学',
+    academicYear: '2026',
+    sourceStatus: 'university_index_only'
+  },
+  {
+    id: 'LINGNAN',
+    code: 'LINGNAN',
+    shortName: 'Lingnan',
+    nameEn: 'Lingnan University',
+    nameZh: '岭南大学',
+    academicYear: '2026',
+    sourceStatus: 'university_index_only'
+  }
+];
+
 function slug(value) {
   return String(value || '')
     .toUpperCase()
@@ -193,7 +214,7 @@ function buildCatalogue(sourceDir = DEFAULT_SOURCE_DIR) {
   return {
     generatedFrom: 'programme_year_semester_courses_2026',
     generatedAt: new Date().toISOString(),
-    universities: pieces.map((piece) => piece.university),
+    universities: pieces.map((piece) => piece.university).concat(STATIC_UNIVERSITIES),
     faculties: pieces.flatMap((piece) => piece.faculties),
     programmes: pieces.flatMap((piece) => piece.programmes),
     majors: pieces.flatMap((piece) => piece.majors),
@@ -221,5 +242,6 @@ module.exports = {
   listCourses,
   normalizeSource,
   SOURCES,
+  STATIC_UNIVERSITIES,
   validateSourceDir
 };

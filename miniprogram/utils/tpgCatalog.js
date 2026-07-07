@@ -62,6 +62,26 @@ module.exports = {
       "sourcePages": 29,
       "programmeCount": 48,
       "verificationStatus": "pdf_imported"
+    },
+    {
+      "code": "EDUHK",
+      "name": "The Education University of Hong Kong",
+      "shortName": "香港教育大学",
+      "academicYear": "待确认",
+      "sourceFile": "",
+      "sourcePages": 0,
+      "programmeCount": 0,
+      "verificationStatus": "university_index_only"
+    },
+    {
+      "code": "LINGNAN",
+      "name": "Lingnan University",
+      "shortName": "岭南大学",
+      "academicYear": "待确认",
+      "sourceFile": "",
+      "sourcePages": 0,
+      "programmeCount": 0,
+      "verificationStatus": "university_index_only"
     }
   ],
   "programmes": [

@@ -3,10 +3,10 @@ const { test } = require('node:test');
 
 const tpgService = require('./tpgService');
 
-test('TPG catalogue coverage summarizes six-school MVP data', () => {
+test('TPG catalogue coverage summarizes eight-school MVP data', () => {
   const coverage = tpgService.getSchoolCoverage();
 
-  assert.equal(coverage.schoolCount, 6);
+  assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 348);
   assert.equal(coverage.programmeWithCoursesCount, 6);
   assert.equal(coverage.courseCount, 257);
@@ -18,7 +18,9 @@ test('TPG catalogue coverage summarizes six-school MVP data', () => {
       ['HKUST', 53],
       ['POLYU', 105],
       ['CITYU', 62],
-      ['HKBU', 48]
+      ['HKBU', 48],
+      ['EDUHK', 0],
+      ['LINGNAN', 0]
     ]
   );
 });

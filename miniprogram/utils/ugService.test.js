@@ -6,7 +6,7 @@ const ugService = require('./ugService');
 test('UG catalogue summarizes current undergraduate seed data', () => {
   const summary = ugService.getCatalogueSummary();
 
-  assert.equal(summary.universityCount, 6);
+  assert.equal(summary.universityCount, 8);
   assert(summary.facultyCount > 20);
   assert(summary.programmeCount >= 396);
   assert(summary.majorCount >= 642);
@@ -23,7 +23,7 @@ test('UG catalogue exposes the multi-school hierarchy needed for onboarding', ()
   const programme = ugService.listProgrammes({ universityId: university.id, facultyId: faculty.id })[0];
   const major = ugService.listMajors(programme.id)[0];
 
-  assert.deepEqual(universities.map((item) => item.code), ['HKU', 'CUHK', 'HKUST', 'POLYU', 'CITYU', 'HKBU']);
+  assert.deepEqual(universities.map((item) => item.code), ['HKU', 'CUHK', 'HKUST', 'POLYU', 'CITYU', 'HKBU', 'EDUHK', 'LINGNAN']);
   assert.equal(university.nameZh, '香港理工大学');
   assert(programme.nameEn);
   assert(major.nameEn);
@@ -48,7 +48,9 @@ test('UG per-school coverage stays visible for setup validation', () => {
     HKUST: { programmeCount: 50, majorCount: 64, codedCourseCount: 0 },
     POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 172 },
     CITYU: { programmeCount: 58, majorCount: 201, codedCourseCount: 0 },
-    HKBU: { programmeCount: 22, majorCount: 46, codedCourseCount: 0 }
+    HKBU: { programmeCount: 22, majorCount: 46, codedCourseCount: 0 },
+    EDUHK: { programmeCount: 0, majorCount: 0, codedCourseCount: 0 },
+    LINGNAN: { programmeCount: 0, majorCount: 0, codedCourseCount: 0 }
   });
 });
 
@@ -57,7 +59,7 @@ test('UG school coverage summarizes imported source data for the status page', (
   const hku = coverage.find((school) => school.code === 'HKU');
   const polyu = coverage.find((school) => school.code === 'POLYU');
 
-  assert.equal(coverage.length, 6);
+  assert.equal(coverage.length, 8);
   assert.equal(hku.programmeCount, 136);
   assert.equal(hku.majorCount, 136);
   assert.equal(hku.badge, 'INDEX');
