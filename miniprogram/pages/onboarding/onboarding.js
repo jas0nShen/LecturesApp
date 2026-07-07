@@ -38,6 +38,19 @@ function resolveInitialMode(profile, options = {}) {
   return profile && profile.profileType === 'undergraduate' ? 'undergraduate' : 'tpg';
 }
 
+function resolveSavedUgUniversity(profile, universities = []) {
+  if (!profile || profile.profileType !== 'undergraduate') {
+    return universities[0];
+  }
+  const profileProgramme = ugService.getProgramme(profile.programmeId);
+  return universities.find((item) => (
+    item.id === profile.universityId
+    || item.code === profile.universityCode
+    || (profileProgramme && item.id === profileProgramme.universityId)
+    || (profileProgramme && item.code === profileProgramme.universityCode)
+  )) || universities[0];
+}
+
 const INITIAL_UG_UNIVERSITIES = ugService.listUniversities();
 const INITIAL_UG_UNIVERSITY = INITIAL_UG_UNIVERSITIES[0] || {};
 const INITIAL_UG_PROGRAMMES = INITIAL_UG_UNIVERSITY.id
@@ -143,7 +156,7 @@ Page({
   async loadUndergraduate(profile) {
     const universities = ugService.listUniversities();
     const ugSchoolCoverage = ugService.getSchoolCoverage();
-    const selectedUniversity = universities.find((item) => item.id === (profile && profile.universityId)) || universities[0];
+    const selectedUniversity = resolveSavedUgUniversity(profile, universities);
     if (!selectedUniversity) {
       this.setData({
         universities: [],
