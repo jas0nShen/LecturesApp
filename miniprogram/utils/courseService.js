@@ -620,11 +620,13 @@ function buildAudit(profile, completedCourseIds) {
     && item.majorId === Number(effectiveProfile.majorId)
     && item.curriculumYear === effectiveProfile.curriculumYear
   ));
+  let resolvedCurriculumYear = effectiveProfile.curriculumYear;
   if (!requirements.length) {
+    resolvedCurriculumYear = programme.curriculumYear;
     requirements = data.requirements.filter((item) => (
       item.programmeId === Number(effectiveProfile.programmeId)
       && item.majorId === Number(effectiveProfile.majorId)
-      && item.curriculumYear === programme.curriculumYear
+      && item.curriculumYear === resolvedCurriculumYear
     ));
   }
 
@@ -663,7 +665,7 @@ function buildAudit(profile, completedCourseIds) {
     totalCreditRequired: programme.totalCreditRequired,
     completedCredits,
     totalProgress: Math.min(100, Math.round((completedCredits / programme.totalCreditRequired) * 100)),
-    curriculumYear: programme.curriculumYear,
+    curriculumYear: resolvedCurriculumYear,
     curriculumStructure: programme.curriculumStructure || [],
     curriculumSourceUrl: programme.curriculumSourceUrl || programme.officialUrl,
     curriculumVerifiedAt: programme.curriculumVerifiedAt || '',

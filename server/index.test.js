@@ -151,3 +151,19 @@ test('invalid JSON is rejected', async () => {
   assert.equal(response.status, 400);
   assert.deepEqual(await response.json(), { error: 'Invalid JSON body' });
 });
+
+test('oversized graduation audit payload is rejected', async () => {
+  const response = await fetch(`${baseUrl}/api/graduation-audit`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      programmeId: 1,
+      majorId: 1,
+      curriculumYear: '2025-26',
+      note: 'x'.repeat(70 * 1024)
+    })
+  });
+
+  assert.equal(response.status, 413);
+  assert.deepEqual(await response.json(), { error: 'Request body too large' });
+});

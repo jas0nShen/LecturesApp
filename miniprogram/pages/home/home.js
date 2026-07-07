@@ -54,14 +54,14 @@ Page({
       ? ugService.getMajorProfile(profile.programmeId, profile.majorId, profile.curriculumYear)
       : null;
     const isUgCatalogue = Boolean(ugProfile && ugProfile.sourceStatus);
-    const auditResult = isTpg || isUgCatalogue
+    const auditResult = !profile || isTpg || isUgCatalogue
       ? {
           data: {
             completedCredits: 0,
             totalCreditRequired: isTpg ? profile.creditsRequired || 0 : 0,
             totalProgress: 0
           },
-          source: 'catalogue'
+          source: profile ? 'catalogue' : 'none'
         }
       : await service.buildAuditRemote(profile);
     const recentCourses = service.getRecentlyViewedOfferings().slice(0, 3).map((course) => ({

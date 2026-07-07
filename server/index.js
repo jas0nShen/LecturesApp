@@ -6,6 +6,7 @@ const seedPath = path.join(__dirname, '..', 'data', 'seed.json');
 const seed = JSON.parse(fs.readFileSync(seedPath, 'utf8'));
 const offeringsPath = path.join(__dirname, '..', 'data', 'hku-cds-offerings-2025.json');
 const hkuCdsOfferings = JSON.parse(fs.readFileSync(offeringsPath, 'utf8'));
+const MAX_JSON_BODY_BYTES = 64 * 1024;
 
 function sendJson(res, statusCode, payload) {
   res.writeHead(statusCode, {
@@ -25,13 +26,25 @@ function sendHtml(res, statusCode, html) {
   res.end(html);
 }
 
-function readBody(req) {
+function readBody(req, maxBytes = MAX_JSON_BODY_BYTES) {
   return new Promise((resolve, reject) => {
     let body = '';
+    let receivedBytes = 0;
+    let rejected = false;
     req.on('data', (chunk) => {
+      if (rejected) return;
+      receivedBytes += Buffer.byteLength(chunk);
+      if (receivedBytes > maxBytes) {
+        rejected = true;
+        const error = new Error('Request body too large');
+        error.statusCode = 413;
+        reject(error);
+        return;
+      }
       body += chunk;
     });
     req.on('end', () => {
+      if (rejected) return;
       if (!body) {
         resolve({});
         return;
@@ -288,7 +301,11 @@ async function handleRequest(req, res) {
       const payload = await readBody(req);
       sendJson(res, 200, buildAudit(payload));
     } catch (error) {
-      sendJson(res, 400, { error: 'Invalid JSON body' });
+      if (error.statusCode === 413) {
+        sendJson(res, 413, { error: 'Request body too large' });
+      } else {
+        sendJson(res, 400, { error: 'Invalid JSON body' });
+      }
     }
     return;
   }
@@ -314,5 +331,6 @@ module.exports = {
   buildOfferingCourse,
   createServer,
   listCourseOfferings,
-  listCourses
+  listCourses,
+  MAX_JSON_BODY_BYTES
 };

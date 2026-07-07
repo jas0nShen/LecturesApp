@@ -98,6 +98,17 @@ test('remote graduation audit falls back to the local rule engine', async () => 
   assert.equal(result.data.curriculumYear, '2025-26');
 });
 
+test('local graduation audit reports the resolved fallback curriculum year', () => {
+  const audit = service.buildAudit({
+    programmeId: 1,
+    majorId: 1,
+    curriculumYear: '2099-00'
+  });
+
+  assert.equal(audit.curriculumYear, '2025-26');
+  assert(audit.sections.length > 0);
+});
+
 test('official HKU offerings can be filtered offline by term and keyword', async () => {
   const result = await service.listCourseOfferingsRemote({
     academicYear: '2025-26',

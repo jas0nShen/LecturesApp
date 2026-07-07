@@ -128,7 +128,7 @@
     </view>
   </view>
 
-  <view wx:if="{{!isTpg && !isUgCatalogue}}" class="section panel">
+  <view wx:if="{{profile && !isTpg && !isUgCatalogue}}" class="section panel">
     <view class="progress-heading">
       <view class="panel-title">毕业进度预览</view>
       <view class="progress-number">{{audit.totalProgress}}%</view>
