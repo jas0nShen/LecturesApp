@@ -1,0 +1,72 @@
+{
+  "provider": "Lingnan University official undergraduate course pages",
+  "academicYear": "2026",
+  "supplements": [
+    {
+      "universityCode": "LINGNAN",
+      "jupasCode": "JS7606",
+      "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/bacs",
+      "officialUrl": "https://www.ln.edu.hk/admissions/ug/programme/jupas-applicants/cultural-studies",
+      "courses": [
+        { "code": "CUS2406", "title": "Becoming a Social Media Influencer in Hong Kong", "credits": 3, "group": "cultural studies course" },
+        { "code": "CUS2407", "title": "Creating Urban Commons: A Global Perspective", "credits": 3, "group": "cultural studies course" },
+        { "code": "CUS2408", "title": "Cyber Fandom and Everyday Culture", "credits": 3, "group": "cultural studies course" },
+        { "code": "CUS2409", "title": "Digital Marketing for Social Causes", "credits": 3, "group": "cultural studies course" },
+        { "code": "CUS2410", "title": "Digital Technology and Creative Commons", "credits": 3, "group": "cultural studies course" },
+        { "code": "CUS2411", "title": "Food, Technology and Environments", "credits": 3, "group": "cultural studies course" },
+        { "code": "CUS2412", "title": "The Platform Society: Power, Politics and Alternatives", "credits": 3, "group": "cultural studies course" },
+        { "code": "CUS2413", "title": "Make a Difference through Social Innovation", "credits": 3, "group": "cultural studies course" },
+        { "code": "CUS2414", "title": "Social Value and Social Impact Assessment: A Critical Introduction", "credits": 3, "group": "cultural studies course" },
+        { "code": "CUS2415", "title": "Theories of Cultural Innovations", "credits": 3, "group": "cultural studies course" },
+        { "code": "CUS3001", "title": "Curating Digital Practice", "credits": 3, "group": "cultural studies course" },
+        { "code": "CUS3003", "title": "Media and Creative Industries", "credits": 3, "group": "cultural studies course" },
+        { "code": "CUS3004", "title": "Media, Gender, and Sexuality", "credits": 3, "group": "cultural studies course" },
+        { "code": "CUS3005", "title": "Media Networks and Everyday Life", "credits": 3, "group": "cultural studies course" },
+        { "code": "CUS3007", "title": "Social Media Literacy", "credits": 3, "group": "cultural studies course" },
+        { "code": "CUS3009", "title": "Special Topics in Digital Culture & Media Practices", "credits": 3, "group": "cultural studies course" },
+        { "code": "CUS3013", "title": "Techno-culture", "credits": 3, "group": "cultural studies course" },
+        { "code": "CUS3310", "title": "Media, Culture and Society", "credits": 3, "group": "cultural studies course" },
+        { "code": "CUS3314", "title": "Hong Kong Popular Culture Policy and Governance", "credits": 3, "group": "cultural studies course" },
+        { "code": "CUS3322", "title": "City Cultures Policy and Governance", "credits": 3, "group": "cultural studies course" },
+        { "code": "CUS3325", "title": "Making Documentaries for Social Change", "credits": 3, "group": "cultural studies course" },
+        { "code": "CUS3409", "title": "Education and Cultural Politics", "credits": 3, "group": "cultural studies course" },
+        { "code": "CUS3410", "title": "Cultural Policy & Community Practice", "credits": 3, "group": "cultural studies course" },
+        { "code": "CUS3411", "title": "Media Creativity", "credits": 3, "group": "cultural studies course" }
+      ]
+    },
+    {
+      "universityCode": "LINGNAN",
+      "jupasCode": "JS7215",
+      "sourceUrl": "https://www.ln.edu.hk/mkt/programmes-and-courses/undergraduate-courses",
+      "officialUrl": "https://www.ln.edu.hk/admissions/ug/programme/jupas-applicants/marketing-and-social-media",
+      "courses": [
+        { "code": "BUS2105", "title": "Microeconomics for Business", "credits": 3, "group": "business foundation course" },
+        { "code": "ECO2101", "title": "Introduction to Economics", "credits": 3, "group": "business foundation course" },
+        { "code": "BUS2108", "title": "Global Business Environment", "credits": 3, "group": "business foundation course" },
+        { "code": "GLA2003", "title": "Global Business and Management", "credits": 3, "group": "business foundation course" },
+        { "code": "GDS1004", "title": "Global Business and Sustainable Development", "credits": 3, "group": "business foundation course" },
+        { "code": "BUS2205", "title": "Marketing Management", "credits": 3, "group": "marketing course" },
+        { "code": "MKT2221", "title": "Marketing in the Chinese Mainland", "credits": 3, "group": "marketing course" },
+        { "code": "MKT2231", "title": "Advertising and Integrated Marketing Communications", "credits": 3, "group": "marketing course" },
+        { "code": "MKT2241", "title": "International Business Management", "credits": 3, "group": "marketing course" },
+        { "code": "MKT2242", "title": "Digital Innovation", "credits": 3, "group": "marketing course" },
+        { "code": "MKT2243", "title": "Doing Business in Emerging Markets", "credits": 3, "group": "marketing course" },
+        { "code": "MKT2244", "title": "Green Marketing: ESG and Sustainability", "credits": 3, "group": "marketing course" },
+        { "code": "MKT2245", "title": "Crisis Communication and Social Media", "credits": 3, "group": "marketing course" },
+        { "code": "MKT2246", "title": "International Event Marketing: Social Media and Societal Impact", "credits": 3, "group": "marketing course" },
+        { "code": "MKT3001", "title": "Social Media Marketing", "credits": 3, "group": "marketing course" },
+        { "code": "MKT3006", "title": "Marketing Analytics", "credits": 3, "group": "marketing course" },
+        { "code": "CDS1003", "title": "Probability and Statistics 1", "credits": 3, "group": "business foundation course" },
+        { "code": "BUS1102", "title": "Statistics for Business", "credits": 3, "group": "business foundation course" },
+        { "code": "MKT3201", "title": "Consumer Behaviour", "credits": 3, "group": "marketing course" },
+        { "code": "PSY2101", "title": "Introduction to Psychology", "credits": 3, "group": "business foundation course" },
+        { "code": "MKT3203", "title": "Marketing Research", "credits": 3, "group": "marketing course" },
+        { "code": "MKT3301", "title": "e-Marketing", "credits": 3, "group": "marketing course" },
+        { "code": "MKT3321", "title": "International Marketing Management", "credits": 3, "group": "marketing course" },
+        { "code": "MKT3351", "title": "Retailing and Distribution Management", "credits": 3, "group": "marketing course" },
+        { "code": "MKT3353", "title": "Services Marketing", "credits": 3, "group": "marketing course" },
+        { "code": "MKT4312", "title": "Strategic Brand Management", "credits": 3, "group": "marketing course" }
+      ]
+    }
+  ]
+}

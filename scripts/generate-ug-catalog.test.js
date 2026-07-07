@@ -3,7 +3,7 @@ const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
 const test = require('node:test');
-const { buildStaticCatalogue, validateSourceDir } = require('./generate-ug-catalog');
+const { addGenericCourseSupplements, buildStaticCatalogue, validateSourceDir } = require('./generate-ug-catalog');
 const { summarizeSourceFile } = require('./report-ug-source-coverage');
 
 test('UG catalogue generator reports missing source files clearly', () => {
@@ -94,5 +94,68 @@ test('UG source coverage report counts only rows with course codes as coded cour
   assert.equal(summary.programmeCount, 2);
   assert.equal(summary.courseRowCount, 3);
   assert.equal(summary.codedCourseCount, 1);
+  assert.equal(summary.uncodedCourseRowCount, 2);
   assert.equal(summary.programmeWithCodedCoursesCount, 1);
+  assert.equal(summary.programmeSummaryOnlyCount, 1);
+  assert.equal(summary.importReady, true);
+});
+
+test('UG generic course supplements can add non-computing undergraduate courses', () => {
+  const catalogue = {
+    programmes: [
+      {
+        id: 'LINGNAN-UG-JS7802-1',
+        universityCode: 'LINGNAN',
+        code: 'JS7802',
+        jupasCode: 'JS7802',
+        nameEn: 'Bachelor of Arts (Honours) in Philosophy',
+        curriculumYear: '2026',
+        officialUrl: 'https://example.test/philosophy',
+        sourceStatus: 'programme_summary_only',
+        courseCount: 0,
+        codedCourseCount: 0
+      }
+    ],
+    majors: [
+      {
+        id: 'LINGNAN-UG-JS7802-1-M1',
+        programmeId: 'LINGNAN-UG-JS7802-1',
+        nameEn: 'Bachelor of Arts (Honours) in Philosophy',
+        courseCount: 0,
+        codedCourseCount: 0
+      }
+    ],
+    courses: []
+  };
+
+  addGenericCourseSupplements(catalogue, [
+    {
+      provider: 'official curriculum page',
+      academicYear: '2026',
+      universityCode: 'LINGNAN',
+      jupasCode: 'JS7802',
+      sourceUrl: 'https://example.test/philosophy/courses',
+      courses: [
+        {
+          code: 'PHI1001',
+          title: 'Introduction to Philosophy',
+          credits: 3,
+          group: 'core'
+        },
+        {
+          code: 'PHI2001',
+          title: 'Ethics and Society',
+          credits: 3,
+          group: 'elective'
+        }
+      ]
+    }
+  ]);
+
+  assert.equal(catalogue.programmes[0].sourceStatus, 'course_codes_available');
+  assert.equal(catalogue.programmes[0].codedCourseCount, 2);
+  assert.equal(catalogue.majors[0].codedCourseCount, 2);
+  assert.deepEqual(catalogue.courses.map((course) => course.courseCode), ['PHI1001', 'PHI2001']);
+  assert.equal(catalogue.courses[0].courseType, 'core');
+  assert.equal(catalogue.courses[0].sourceProvider, 'official curriculum page');
 });

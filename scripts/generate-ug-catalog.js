@@ -6,11 +6,32 @@ const OUTPUT_PATH = path.join(__dirname, '..', 'miniprogram', 'utils', 'ugCatalo
 const HKU_CDS_OFFERINGS_PATH = path.join(__dirname, '..', 'data', 'hku-cds-offerings-2025.json');
 const HKUST_COMP_REQUIREMENTS_PATH = path.join(__dirname, '..', 'data', 'hkust-comp-requirements-2025.json');
 const CUHK_CSE_COURSES_PATH = path.join(__dirname, '..', 'data', 'cuhk-cse-ug-courses-2026.json');
+const CITYU_CS_COURSES_PATH = path.join(__dirname, '..', 'data', 'cityu-cs-ug-courses-2025.json');
+const LINGNAN_DATA_SCIENCE_COURSES_PATH = path.join(__dirname, '..', 'data', 'lingnan-data-science-courses-2025.json');
+const UG_COURSE_SUPPLEMENTS_DIR = path.join(__dirname, '..', 'data', 'ug-course-supplements');
 
 const HKU_CDS_PROGRAMME_NAMES = new Set([
   'Computing and Data Science',
   'Computing and Data Science (Delta+)'
 ]);
+
+const CUHK_CSE_PROGRAMME_COURSE_PREFIXES = [
+  {
+    programmeName: 'Computer Science',
+    majorName: 'Computer Science',
+    prefixes: ['CSCI', 'ENGG']
+  },
+  {
+    programmeName: 'Computer Engineering',
+    majorName: 'Computer Engineering',
+    prefixes: ['CENG', 'ENGG']
+  },
+  {
+    programmeName: 'Artificial Intelligence: Systems and Technologies',
+    majorName: 'Artificial Intelligence: Systems and Technologies',
+    prefixes: ['AIST', 'ENGG']
+  }
+];
 
 const SOURCES = [
   {
@@ -304,41 +325,280 @@ function getPrimaryCourseCode(courseCode) {
   return String(courseCode || '').split('/')[0].trim();
 }
 
-function addCuhkComputerScienceSupplements(programmes, majors, courses) {
+function getCoursePrefix(courseCode) {
+  return getPrimaryCourseCode(courseCode).match(/^[A-Z]+/)?.[0] || '';
+}
+
+function addCuhkCseSupplements(programmes, majors, courses) {
   const source = JSON.parse(fs.readFileSync(CUHK_CSE_COURSES_PATH, 'utf8'));
-  const programme = programmes.find((item) => (
-    item.universityCode === 'CUHK'
-    && item.nameEn === 'Computer Science'
+  CUHK_CSE_PROGRAMME_COURSE_PREFIXES.forEach((mapping) => {
+    const programme = programmes.find((item) => (
+      item.universityCode === 'CUHK'
+      && item.nameEn === mapping.programmeName
+    ));
+    if (!programme) return;
+    const major = majors.find((item) => item.programmeId === programme.id && item.nameEn === mapping.majorName);
+    if (!major) return;
+
+    const allowedPrefixes = new Set(mapping.prefixes);
+    const supplementCourses = source.courses
+      .filter((course) => allowedPrefixes.has(getCoursePrefix(course.code)))
+      .map((course, index) => ({
+        id: `${major.id}-CUHK-CSE-${index + 1}`,
+        programmeId: programme.id,
+        majorId: major.id,
+        courseCode: course.code,
+        titleEn: course.title,
+        titleZh: course.title,
+        credits: course.units,
+        recommendedYear: Number(String(getPrimaryCourseCode(course.code)).match(/\d/)?.[0] || 0),
+        semester: '',
+        courseType: getCoursePrefix(course.code) === 'ENGG' ? 'foundation' : 'programme_course',
+        sourceUrl: course.sourceUrl || source.sourceUrl,
+        officialUrl: source.sourceUrl,
+        sourceProvider: source.provider,
+        academicYear: source.academicYear
+      }));
+    courses.push(...supplementCourses);
+    major.courseCount = supplementCourses.length;
+    major.codedCourseCount = supplementCourses.length;
+    major.officialUrl = source.sourceUrl;
+    programme.sourceStatus = 'course_codes_available';
+    programme.courseCount = supplementCourses.length;
+    programme.codedCourseCount = supplementCourses.length;
+    programme.courseSourceUrl = source.sourceUrl;
+  });
+}
+
+function getCityuCourseType(group = '') {
+  if (group.includes('core')) return 'core';
+  if (group.includes('capstone') || group.includes('project')) return 'capstone';
+  if (group.includes('internship')) return 'internship';
+  if (group.includes('supporting') || group.includes('college') || group.includes('gateway')) return 'foundation';
+  return 'major_elective';
+}
+
+function getCityuRecommendedYear(level = '') {
+  return Number(String(level || '').match(/\d/)?.[0] || 0);
+}
+
+function getCourseTypeFromGroup(group = '') {
+  if (group.includes('capstone') || group.includes('project')) return 'capstone';
+  if (group.includes('core') || group.includes('required') || group.includes('compulsory') || group.includes('elementary') || group.includes('intermediate')) return 'core';
+  if (group.includes('supporting') || group.includes('college') || group.includes('gateway')) return 'foundation';
+  if (group.includes('internship')) return 'internship';
+  return 'major_elective';
+}
+
+function normalizeComparableText(value = '') {
+  return String(value || '')
+    .toLowerCase()
+    .replace(/&/g, 'and')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function matchesText(value, expected) {
+  if (!expected) return true;
+  return normalizeComparableText(value) === normalizeComparableText(expected);
+}
+
+function includesText(value, expected) {
+  if (!expected) return true;
+  return normalizeComparableText(value).includes(normalizeComparableText(expected));
+}
+
+function getSupplementFiles(dir = UG_COURSE_SUPPLEMENTS_DIR) {
+  if (!fs.existsSync(dir)) return [];
+  return fs.readdirSync(dir)
+    .filter((fileName) => fileName.endsWith('.json'))
+    .sort()
+    .map((fileName) => path.join(dir, fileName));
+}
+
+function loadGenericCourseSupplements(dir = UG_COURSE_SUPPLEMENTS_DIR) {
+  return getSupplementFiles(dir).flatMap((filePath) => {
+    const raw = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    const supplements = Array.isArray(raw) ? raw : raw.supplements || [];
+    return supplements.map((supplement) => ({
+      provider: supplement.provider || raw.provider || path.basename(filePath),
+      academicYear: supplement.academicYear || raw.academicYear || raw.curriculumYear || '',
+      sourceUrl: supplement.sourceUrl || raw.sourceUrl || '',
+      officialUrl: supplement.officialUrl || raw.officialUrl || supplement.sourceUrl || raw.sourceUrl || '',
+      ...supplement
+    }));
+  });
+}
+
+function findSupplementProgramme(catalogue, supplement) {
+  return catalogue.programmes.find((programme) => {
+    if (supplement.universityCode && programme.universityCode !== supplement.universityCode) return false;
+    if (supplement.programmeId && programme.id !== supplement.programmeId) return false;
+    if (supplement.programmeCode && programme.code !== supplement.programmeCode) return false;
+    if (supplement.jupasCode && programme.jupasCode !== supplement.jupasCode) return false;
+    if (supplement.programmeName && !matchesText(programme.nameEn, supplement.programmeName)) return false;
+    if (supplement.programmeNameIncludes && !includesText(programme.nameEn, supplement.programmeNameIncludes)) return false;
+    return true;
+  });
+}
+
+function findSupplementMajors(catalogue, programme, supplement) {
+  const programmeMajors = catalogue.majors.filter((major) => major.programmeId === programme.id);
+  if (supplement.majorId) return programmeMajors.filter((major) => major.id === supplement.majorId);
+  if (supplement.majorName) return programmeMajors.filter((major) => matchesText(major.nameEn, supplement.majorName));
+  if (supplement.majorNameIncludes) return programmeMajors.filter((major) => includesText(major.nameEn, supplement.majorNameIncludes));
+  return programmeMajors;
+}
+
+function buildGenericSupplementCourse({ course, courseIndex, major, programme, supplement }) {
+  const code = String(course.code || course.courseCode || course.course_code || '').trim();
+  const title = compactText(course.title || course.titleEn || course.courseTitle || course.course_title || '');
+  return {
+    id: `${major.id}-SUP-${slug(code || title || courseIndex + 1)}-${courseIndex + 1}`,
+    programmeId: programme.id,
+    majorId: major.id,
+    courseCode: code,
+    titleEn: title,
+    titleZh: compactText(course.titleZh || title),
+    credits: Number(course.credits || course.units || 0),
+    recommendedYear: Number(course.recommendedYear || course.year || String(code).match(/\d/)?.[0] || 0),
+    semester: course.semester || '',
+    courseType: course.courseType || getCourseTypeFromGroup(String(course.group || course.category || '')),
+    requirementGroups: [course.group || course.category || 'programme_course'].filter(Boolean),
+    prerequisites: course.prerequisites || '',
+    exclusions: course.exclusions || '',
+    description: course.description || '',
+    sourceUrl: course.sourceUrl || supplement.sourceUrl || programme.officialUrl,
+    officialUrl: course.officialUrl || supplement.officialUrl || supplement.sourceUrl || programme.officialUrl,
+    sourceProvider: supplement.provider,
+    academicYear: course.academicYear || supplement.academicYear || programme.curriculumYear
+  };
+}
+
+function addGenericCourseSupplements(catalogue, supplements = loadGenericCourseSupplements()) {
+  supplements.forEach((supplement) => {
+    const programme = findSupplementProgramme(catalogue, supplement);
+    if (!programme) return;
+    const targetMajors = findSupplementMajors(catalogue, programme, supplement);
+    if (!targetMajors.length) return;
+
+    targetMajors.forEach((major) => {
+      const existingCodes = new Set(catalogue.courses
+        .filter((course) => course.majorId === major.id)
+        .map((course) => course.courseCode)
+        .filter(Boolean));
+      const supplementCourses = (supplement.courses || [])
+        .map((course, courseIndex) => buildGenericSupplementCourse({
+          course,
+          courseIndex,
+          major,
+          programme,
+          supplement
+        }))
+        .filter((course) => course.courseCode && !existingCodes.has(course.courseCode));
+
+      supplementCourses.forEach((course) => existingCodes.add(course.courseCode));
+      catalogue.courses.push(...supplementCourses);
+      major.courseCount = (major.courseCount || 0) + supplementCourses.length;
+      major.codedCourseCount = (major.codedCourseCount || 0) + supplementCourses.length;
+      major.officialUrl = supplement.officialUrl || major.officialUrl;
+    });
+
+    const programmeMajors = catalogue.majors.filter((major) => major.programmeId === programme.id);
+    const programmeCourseCount = programmeMajors.reduce((sum, major) => sum + (major.codedCourseCount || 0), 0);
+    if (programmeCourseCount) {
+      programme.sourceStatus = 'course_codes_available';
+      programme.courseCount = programmeCourseCount;
+      programme.codedCourseCount = programmeCourseCount;
+      programme.courseSourceUrl = supplement.sourceUrl || supplement.officialUrl || programme.courseSourceUrl || programme.officialUrl;
+    }
+  });
+}
+
+function addCityuCsSupplements(programmes, majors, courses) {
+  const source = JSON.parse(fs.readFileSync(CITYU_CS_COURSES_PATH, 'utf8'));
+  source.programmes.forEach((requirement) => {
+    const programme = programmes.find((item) => (
+      item.universityCode === 'CITYU'
+      && item.nameEn.includes(requirement.matchName)
+    ));
+    if (!programme) return;
+    const programmeMajors = majors.filter((major) => major.programmeId === programme.id);
+    if (!programmeMajors.length) return;
+
+    programmeMajors.forEach((major) => {
+      const supplementCourses = requirement.courses.map((course, index) => ({
+        id: `${major.id}-CITYU-CS-${index + 1}`,
+        programmeId: programme.id,
+        majorId: major.id,
+        courseCode: course.code,
+        titleEn: course.title,
+        titleZh: course.title,
+        credits: course.credits,
+        recommendedYear: getCityuRecommendedYear(course.level),
+        semester: '',
+        courseType: getCityuCourseType(course.group),
+        requirementGroups: [course.group],
+        sourceUrl: requirement.pdfUrl || requirement.officialUrl,
+        officialUrl: requirement.officialUrl || source.catalogueUrl,
+        sourceProvider: source.provider,
+        academicYear: source.academicYear
+      }));
+      courses.push(...supplementCourses);
+      major.courseCount = supplementCourses.length;
+      major.codedCourseCount = supplementCourses.length;
+      major.officialUrl = requirement.officialUrl;
+    });
+
+    const programmeCourseCount = programmeMajors.reduce((sum, major) => sum + (major.codedCourseCount || 0), 0);
+    if (programmeCourseCount) {
+      programme.sourceStatus = 'course_codes_available';
+      programme.courseCount = programmeCourseCount;
+      programme.codedCourseCount = programmeCourseCount;
+      programme.courseSourceUrl = requirement.pdfUrl || requirement.officialUrl;
+    }
+  });
+}
+
+function addLingnanDataScienceSupplements(catalogue) {
+  const source = JSON.parse(fs.readFileSync(LINGNAN_DATA_SCIENCE_COURSES_PATH, 'utf8'));
+  const programme = catalogue.programmes.find((item) => (
+    item.universityCode === 'LINGNAN'
+    && item.jupasCode === source.programmeCode
   ));
   if (!programme) return;
-  const major = majors.find((item) => item.programmeId === programme.id && item.nameEn === 'Computer Science');
-  if (!major) return;
+  const programmeMajors = catalogue.majors.filter((major) => major.programmeId === programme.id);
+  if (!programmeMajors.length) return;
 
-  const supplementCourses = source.courses
-    .filter((course) => /^(CSCI|ENGG)/.test(getPrimaryCourseCode(course.code)))
-    .map((course, index) => ({
-      id: `${major.id}-CUHK-CSE-${index + 1}`,
+  programmeMajors.forEach((major) => {
+    const supplementCourses = source.courses.map((course, index) => ({
+      id: `${major.id}-LINGNAN-DS-${index + 1}`,
       programmeId: programme.id,
       majorId: major.id,
       courseCode: course.code,
       titleEn: course.title,
       titleZh: course.title,
-      credits: course.units,
+      credits: course.credits,
       recommendedYear: Number(String(getPrimaryCourseCode(course.code)).match(/\d/)?.[0] || 0),
       semester: '',
-      courseType: getPrimaryCourseCode(course.code).startsWith('ENGG') ? 'foundation' : 'programme_course',
+      courseType: getCourseTypeFromGroup(course.group),
+      requirementGroups: [course.group],
       sourceUrl: course.sourceUrl || source.sourceUrl,
-      officialUrl: source.sourceUrl,
+      officialUrl: source.programmeUrl || source.sourceUrl,
       sourceProvider: source.provider,
       academicYear: source.academicYear
     }));
-  courses.push(...supplementCourses);
-  major.courseCount = supplementCourses.length;
-  major.codedCourseCount = supplementCourses.length;
-  major.officialUrl = source.sourceUrl;
+    catalogue.courses.push(...supplementCourses);
+    major.courseCount = supplementCourses.length;
+    major.codedCourseCount = supplementCourses.length;
+    major.officialUrl = source.programmeUrl || source.sourceUrl;
+  });
+
+  const programmeCourseCount = programmeMajors.reduce((sum, major) => sum + (major.codedCourseCount || 0), 0);
   programme.sourceStatus = 'course_codes_available';
-  programme.courseCount = supplementCourses.length;
-  programme.codedCourseCount = supplementCourses.length;
+  programme.courseCount = programmeCourseCount;
+  programme.codedCourseCount = programmeCourseCount;
   programme.courseSourceUrl = source.sourceUrl;
 }
 
@@ -451,7 +711,10 @@ function normalizeSource(source, sourceDir) {
     addHkustComputerScienceSupplements(programmes, majors, courses);
   }
   if (source.code === 'CUHK') {
-    addCuhkComputerScienceSupplements(programmes, majors, courses);
+    addCuhkCseSupplements(programmes, majors, courses);
+  }
+  if (source.code === 'CITYU') {
+    addCityuCsSupplements(programmes, majors, courses);
   }
 
   return { university, faculties, programmes, majors, courses };
@@ -527,7 +790,7 @@ function buildCatalogue(sourceDir = DEFAULT_SOURCE_DIR) {
   validateSourceDir(sourceDir);
   const pieces = SOURCES.map((source) => normalizeSource(source, sourceDir));
   const staticCatalogue = buildStaticCatalogue();
-  return {
+  const catalogue = {
     generatedFrom: 'programme_year_semester_courses_2026',
     generatedAt: new Date().toISOString(),
     universities: pieces.map((piece) => piece.university).concat(STATIC_UNIVERSITIES),
@@ -536,6 +799,9 @@ function buildCatalogue(sourceDir = DEFAULT_SOURCE_DIR) {
     majors: pieces.flatMap((piece) => piece.majors).concat(staticCatalogue.majors),
     courses: pieces.flatMap((piece) => piece.courses).concat(staticCatalogue.courses)
   };
+  addLingnanDataScienceSupplements(catalogue);
+  addGenericCourseSupplements(catalogue);
+  return catalogue;
 }
 
 function main() {
@@ -556,7 +822,9 @@ if (require.main === module) {
 module.exports = {
   buildCatalogue,
   buildStaticCatalogue,
+  addGenericCourseSupplements,
   listCourses,
+  loadGenericCourseSupplements,
   normalizeSource,
   STATIC_PROGRAMME_GROUPS,
   SOURCES,

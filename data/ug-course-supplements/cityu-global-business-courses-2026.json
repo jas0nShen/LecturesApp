@@ -1,0 +1,50 @@
+{
+  "provider": "CityUHK College of Business BBA Global Business curriculum",
+  "academicYear": "2026",
+  "sourceUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum",
+  "officialUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum",
+  "supplements": [
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1001",
+      "sourceUrl": "https://prog.cb.cityu.edu.hk/-/media/project/cityuhk/academic/cb-prog/academics/bbagbu/curriculum/files/bbagbu-structure-for-4-yr-for-cohort-2025-20250916.pdf",
+      "officialUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum",
+      "courses": [
+        { "code": "CB2100", "title": "Introduction to Financial Accounting", "credits": 3, "group": "college core" },
+        { "code": "CB2601", "title": "Marketing", "credits": 3, "group": "college core" },
+        { "code": "GE1401", "title": "University English or EAP", "credits": 3, "group": "gateway education" },
+        { "code": "CHIN1001", "title": "University Chinese I", "credits": 3, "group": "gateway education" },
+        { "code": "GE1601", "title": "Whole-Person Development", "credits": 3, "group": "gateway education" },
+        { "code": "CB2201", "title": "Operations Management", "credits": 3, "group": "college core" },
+        { "code": "CB2400", "title": "Microeconomics", "credits": 3, "group": "college core" },
+        { "code": "GE2402", "title": "English for Business Communication", "credits": 3, "group": "gateway education" },
+        { "code": "CB3601", "title": "Global Perspectives on Contemporary Issues", "credits": 3, "group": "college core" },
+        { "code": "CB3302", "title": "International Corporate Social Responsibility", "credits": 3, "group": "major course" },
+        { "code": "CB3645", "title": "Marketing Research", "credits": 3, "group": "major course" },
+        { "code": "CB2240", "title": "Introduction to Business Programming in Python", "credits": 3, "group": "college-specified course" },
+        { "code": "CB3410", "title": "Financial Management", "credits": 3, "group": "college core" },
+        { "code": "CB3041", "title": "Financial Statement Analysis", "credits": 3, "group": "major course" },
+        { "code": "CB2402", "title": "Macroeconomics", "credits": 3, "group": "college core" },
+        { "code": "CB2203", "title": "Data-driven Business Modeling", "credits": 3, "group": "college-specified course" },
+        { "code": "CB4605", "title": "Business Consultancy Project", "credits": 6, "group": "capstone course" },
+        { "code": "CB4604", "title": "Global Business Consultancy Project", "credits": 3, "group": "capstone course" },
+        { "code": "CB4601", "title": "Global Marketing", "credits": 3, "group": "major course" },
+        { "code": "CB4303", "title": "Strategy and Policy", "credits": 3, "group": "capstone course" },
+        { "code": "LC2930", "title": "Japanese 1", "credits": 3, "group": "college elective" },
+        { "code": "LC2973", "title": "Korean 1", "credits": 3, "group": "college elective" },
+        { "code": "LC2956", "title": "Mandarin for Non-Chinese Speakers I", "credits": 3, "group": "college elective" },
+        { "code": "LC2401", "title": "French 1", "credits": 3, "group": "college elective" },
+        { "code": "LC2501", "title": "German 1", "credits": 3, "group": "college elective" },
+        { "code": "LC2601", "title": "Spanish 1", "credits": 3, "group": "college elective" },
+        { "code": "MGT3305", "title": "Corporate Social Responsibility", "credits": 3, "group": "equivalent course" },
+        { "code": "GE1501", "title": "Chinese Civilization - History & Philosophy", "credits": 3, "group": "gateway education" },
+        { "code": "CB4606", "title": "Social Innovation and Entrepreneurship", "credits": 3, "group": "major course" },
+        { "code": "CB2300", "title": "Management", "credits": 3, "group": "college core" },
+        { "code": "CB2500", "title": "Information Management", "credits": 3, "group": "college core" },
+        { "code": "CB3042", "title": "China Business Environment", "credits": 3, "group": "major course" },
+        { "code": "CB2200", "title": "Business Statistics", "credits": 3, "group": "college core" },
+        { "code": "CB2101", "title": "Introduction to Managerial Accounting", "credits": 3, "group": "college core" }
+      ]
+    }
+  ]
+}

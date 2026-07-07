@@ -1,0 +1,61 @@
+{
+  "provider": "Lingnan University official undergraduate programme pages",
+  "academicYear": "2026",
+  "supplements": [
+    {
+      "universityCode": "LINGNAN",
+      "jupasCode": "JS7302",
+      "sourceUrl": "https://www.ln.edu.hk/gia/course-offerings",
+      "officialUrl": "https://www.ln.edu.hk/admissions/ug/programme/jupas-applicants/government-and-international-affairs",
+      "courses": [
+        { "code": "GOV2101", "title": "Introduction to Political Science", "credits": 3, "group": "government and international affairs course" },
+        { "code": "GOV3101", "title": "Empirical Political Analysis: Approaches and Methods", "credits": 3, "group": "government and international affairs course" },
+        { "code": "GOV3104", "title": "Media, Data and Politics", "credits": 3, "group": "government and international affairs course" },
+        { "code": "GOV3105", "title": "Political Economy of Development", "credits": 3, "group": "government and international affairs course" },
+        { "code": "GOV3106", "title": "Small States in World Politics", "credits": 3, "group": "government and international affairs course" },
+        { "code": "GOV3201", "title": "Government and Politics of Contemporary China", "credits": 3, "group": "government and international affairs course" },
+        { "code": "GOV3203", "title": "International Politics", "credits": 3, "group": "government and international affairs course" },
+        { "code": "GOV3205", "title": "Global Governance", "credits": 3, "group": "government and international affairs course" },
+        { "code": "GOV3208", "title": "Public Policy: Values and Processes", "credits": 3, "group": "government and international affairs course" },
+        { "code": "GOV3210", "title": "Comparative Politics", "credits": 3, "group": "government and international affairs course" },
+        { "code": "GOV3214", "title": "Government and Politics of Hong Kong", "credits": 3, "group": "government and international affairs course" },
+        { "code": "GOV3216", "title": "American Foreign Policy", "credits": 3, "group": "government and international affairs course" },
+        { "code": "GOV3217", "title": "Modern Political Ideologies", "credits": 3, "group": "government and international affairs course" },
+        { "code": "GOV3218", "title": "War and Peace", "credits": 3, "group": "government and international affairs course" },
+        { "code": "GOV3219", "title": "Introduction to Computational Political Science", "credits": 3, "group": "government and international affairs course" },
+        { "code": "GOV3221", "title": "Ethics and Public Affairs", "credits": 3, "group": "government and international affairs course" },
+        { "code": "GOV4001", "title": "Seminar in International Political Economy", "credits": 3, "group": "government and international affairs course" },
+        { "code": "GOV4004", "title": "Elections, Party Competition and Electioneering", "credits": 3, "group": "government and international affairs course" },
+        { "code": "GOV4005", "title": "Religion and Political Conflicts", "credits": 3, "group": "government and international affairs course" },
+        { "code": "GOV4305", "title": "Chinese Foreign Policy", "credits": 3, "group": "government and international affairs course" },
+        { "code": "GOV4319", "title": "International Politics of Northeast Asia", "credits": 3, "group": "government and international affairs course" },
+        { "code": "GOV4320", "title": "International Politics of Southeast Asia", "credits": 3, "group": "government and international affairs course" },
+        { "code": "SSC3319", "title": "Junior Research Project", "credits": 3, "group": "research project" },
+        { "code": "SSC4319", "title": "Senior Thesis", "credits": 3, "group": "research project" }
+      ]
+    },
+    {
+      "universityCode": "LINGNAN",
+      "jupasCode": "JS7133",
+      "sourceUrl": "https://www.ln.edu.hk/daci/ada/programme-curriculum/programme-structure",
+      "officialUrl": "https://www.ln.edu.hk/admissions/ug/programme/jupas-applicants/animation-and-digital-arts",
+      "courses": [
+        { "code": "ADA1001", "title": "2D Animation", "credits": 3, "recommendedYear": 1, "semester": "Term 2", "group": "required major course" },
+        { "code": "ADA1003", "title": "Computer Graphics", "credits": 3, "recommendedYear": 1, "semester": "Term 1", "group": "required major course" },
+        { "code": "FVA2105", "title": "Film Art and Storytelling", "credits": 3, "recommendedYear": 1, "semester": "Term 2", "group": "required major course" },
+        { "code": "FVA2107", "title": "Arts of Europe", "credits": 3, "recommendedYear": 1, "semester": "Term 1", "group": "required major course" },
+        { "code": "ADA2001", "title": "History of Animation", "credits": 3, "recommendedYear": 2, "group": "digital animation concentration" },
+        { "code": "ADA2002", "title": "3D Animation Workshop", "credits": 3, "recommendedYear": 2, "group": "digital animation concentration" },
+        { "code": "ADA2003", "title": "Digital Modeling and Rendering", "credits": 3, "recommendedYear": 2, "semester": "Term 1", "group": "required major course" },
+        { "code": "ADA2006", "title": "Storytelling and Storyboarding", "credits": 3, "recommendedYear": 2, "group": "digital animation concentration" },
+        { "code": "ADA2008", "title": "An Introduction to Arts and Technology", "credits": 3, "recommendedYear": 2, "group": "arts and technology concentration" },
+        { "code": "ADA3001", "title": "3D Character Animation Workshop", "credits": 3, "recommendedYear": 3, "group": "digital animation concentration" },
+        { "code": "ADA3002", "title": "Concepts of Expanded Reality", "credits": 3, "recommendedYear": 3, "semester": "Term 2", "group": "required major course" },
+        { "code": "ADA3004", "title": "Interactive Art", "credits": 3, "recommendedYear": 2, "group": "arts and technology concentration" },
+        { "code": "ADA3009", "title": "Visual Programming", "credits": 3, "recommendedYear": 2, "group": "arts and technology concentration" },
+        { "code": "ADA4001", "title": "Capstone Project", "credits": 6, "recommendedYear": 4, "semester": "Term 1 & 2", "group": "capstone project" },
+        { "code": "ADA4005", "title": "VR/AR Workshop", "credits": 3, "recommendedYear": 3, "group": "arts and technology concentration" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "provider": "Lingnan University School of Data Science",
+  "academicYear": "2025-26",
+  "retrievedAt": "2026-07-07T21:36:00+08:00",
+  "sourceUrl": "https://www.ln.edu.hk/sds/dai/ds/programme-overview/course-list",
+  "programmeUrl": "https://www.ln.edu.hk/sds/dai/ds/programme-overview/major-programme-in-data-science",
+  "programmeName": "Bachelor of Science (Honours) in Data Science",
+  "programmeCode": "JS7225",
+  "courses": [
+    { "code": "CDS1001", "title": "Introduction to Programming for Data Science", "credits": 3, "group": "elementary", "sourceUrl": "https://www.ln.edu.hk/sds/dai/ds/f/page/105561/CDS1001%20Introduction%20to%20Programming%20for%20Data%20Science%20%28Required%29.190825.pdf" },
+    { "code": "CDS1002", "title": "Calculus", "credits": 3, "group": "elementary", "sourceUrl": "https://www.ln.edu.hk/sds/dai/ds/f/page/105561/CDS1002%20Calculus%20%28Required%29.190825.pdf" },
+    { "code": "CDS1003", "title": "Probability and Statistics 1", "credits": 3, "group": "elementary", "sourceUrl": "https://www.ln.edu.hk/sds/dai/ds/f/page/105561/CDS1003%20Probability%20and%20Statistics%201%20%28Required%29.190825.pdf" },
+    { "code": "CDS2001", "title": "Probability and Statistics 2", "credits": 3, "group": "elementary", "sourceUrl": "https://www.ln.edu.hk/sds/dai/ds/f/page/105561/CDS2001%20Probability%20and%20Statistics%202%20%28Required%29.190825.pdf" },
+    { "code": "CDS2002", "title": "Introduction to Artificial Intelligence", "credits": 3, "group": "elementary", "sourceUrl": "https://www.ln.edu.hk/sds/dai/ds/f/page/105561/CDS2002%20Introduction%20to%20Artificial%20Intelligence%20%28Required%29.190825.pdf" },
+    { "code": "SSC2113", "title": "Linear Algebra", "credits": 3, "group": "elementary", "sourceUrl": "https://www.ln.edu.hk/econ/f/page/109277/SSC2113_T12425.pdf" },
+    { "code": "CDS2003", "title": "Data Structures and Object-Oriented Programming", "credits": 3, "group": "intermediate", "sourceUrl": "https://www.ln.edu.hk/sds/dai/ds/f/page/105561/CDS2003%20Data%20Structures%20and%20Object-oriented%20Programming%20%28Required%29.190825.pdf" },
+    { "code": "CDS2004", "title": "Quantitative Decision Making", "credits": 3, "group": "intermediate", "sourceUrl": "https://www.ln.edu.hk/sds/dai/ds/f/page/105561/CDS2004%20Quantitative%20Decision%20Making%20%28Required%29.190825.pdf" },
+    { "code": "CDS3001", "title": "Databases and Data Warehouses", "credits": 3, "group": "intermediate", "sourceUrl": "https://www.ln.edu.hk/sds/dai/ds/f/page/105561/CDS3001%20Databases%20and%20Data%20Warehouses%20%28Required%29.190825.pdf" },
+    { "code": "CDS3002", "title": "Operations Simulation with Decision Analysis", "credits": 3, "group": "intermediate", "sourceUrl": "https://www.ln.edu.hk/sds/dai/ds/f/page/105561/CDS3002%20Operations%20Simulation%20with%20Decision%20Analysis%202025-26%20T2.090126.pdf" },
+    { "code": "CDS3003", "title": "Machine Learning", "credits": 3, "group": "intermediate", "sourceUrl": "https://www.ln.edu.hk/sds/dai/ds/f/page/105561/CDS3003%20Machine%20Learning%20%28Required%29%202025-26%20T2.090126.pdf" },
+    { "code": "CDS3004", "title": "Data Mining", "credits": 3, "group": "intermediate", "sourceUrl": "https://www.ln.edu.hk/sds/dai/ds/f/page/105561/CDS3004%20Data%20Mining%20%28Required%29.190825.pdf" },
+    { "code": "CDS4001", "title": "Best Practices of Data Science", "credits": 3, "group": "capstone", "sourceUrl": "https://www.ln.edu.hk/sds/dai/ds/f/page/105561/CDS4001%20Best%20Practices%20of%20Data%20Science%20%28Required%29_2025%20term%201.190825.pdf" },
+    { "code": "CDS3005", "title": "Data Science Project Management", "credits": 3, "group": "application_oriented", "sourceUrl": "https://www.ln.edu.hk/sds/dai/ds/programme-overview/course-list" },
+    { "code": "CDS4002", "title": "Data Management", "credits": 3, "group": "application_oriented", "sourceUrl": "https://www.ln.edu.hk/sds/dai/ds/programme-overview/course-list" },
+    { "code": "ECO4203", "title": "Applied Econometrics", "credits": 3, "group": "application_oriented", "sourceUrl": "https://www.ln.edu.hk/econ/f/page/109277/ECO4203_T12425.pdf" },
+    { "code": "SCI3001", "title": "Location Intelligence", "credits": 3, "group": "application_oriented", "sourceUrl": "https://www.ln.edu.hk/scienceunit/f/upload/109663/SCI3001.pdf" },
+    { "code": "CDS4005", "title": "Big Data Analytics", "credits": 3, "group": "advanced", "sourceUrl": "https://www.ln.edu.hk/sds/dai/ds/f/page/105561/CDS4005%20Big%20Data%20Analytics%20%28Elective%29.190825.pdf" },
+    { "code": "CDS4006", "title": "Deep Learning", "credits": 3, "group": "advanced", "sourceUrl": "https://www.ln.edu.hk/sds/dai/ds/f/page/105561/CDS4006%20Deep%20Learning%20%28Elective%29.190825.pdf" },
+    { "code": "CDS4007", "title": "Stochastic Process", "credits": 3, "group": "advanced", "sourceUrl": "https://www.ln.edu.hk/sds/dai/ds/f/page/105561/CDS4007%20Stochastic%20Process%20%28Elective%29%202025-26%20T2%20N.170126.pdf" },
+    { "code": "CDS4008", "title": "Optimization", "credits": 3, "group": "advanced", "sourceUrl": "https://www.ln.edu.hk/sds/dai/ds/f/page/105561/CDS4008%20Optimization%20%28Elective%29%202025-26%20T2.090126.pdf" },
+    { "code": "CDS/BAI4010", "title": "Web Programming for E-Business", "credits": 3, "group": "advanced", "sourceUrl": "https://www.ln.edu.hk/sds/dai/ds/f/page/105561/CDS4010.pdf" }
+  ]
+}
