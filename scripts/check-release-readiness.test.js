@@ -170,6 +170,16 @@ test('data status source copy handles missing source text', () => {
   assert(dataStatusLogic.includes("copyTextOrToast(this.data.tpgStatus && this.data.tpgStatus.sourceSummary, '资料来源已复制', '暂无资料来源')"));
 });
 
+test('data status page exposes undergraduate school coverage details', () => {
+  const dataStatusPage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'data-status', 'data-status.wxml'), 'utf8');
+  const dataStatusLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'data-status', 'data-status.js'), 'utf8');
+
+  assert(dataStatusLogic.includes('ugSchools: ugService.getSchoolCoverage()'));
+  assert(dataStatusPage.includes('wx:for="{{ugSchools}}"'));
+  assert(dataStatusPage.includes('{{item.programmeCount}} Programme · {{item.majorCount}} Major / Track'));
+  assert(dataStatusPage.includes('{{item.codedCourseCount ? item.codedCourseCount + \' codes\' : \'待开放\'}}'));
+});
+
 test('TPG catalogue copy describes availability instead of completeness', () => {
   const cataloguePage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'tpg-catalog', 'tpg-catalog.wxml'), 'utf8');
 

@@ -249,12 +249,35 @@ function getCatalogueSummary() {
   };
 }
 
+function getSchoolCoverage() {
+  return listUniversities().map((university) => {
+    const sourceProgrammes = catalogue.programmes.filter((programme) => sameId(programme.universityId, university.id));
+    const sourceProgrammeIds = new Set(sourceProgrammes.map((programme) => programme.id));
+    const sourceMajors = catalogue.majors.filter((major) => sourceProgrammeIds.has(major.programmeId));
+    const codedCourseCount = sourceProgrammes.reduce((sum, programme) => sum + (programme.codedCourseCount || 0), 0);
+    const programmeWithCoursesCount = sourceProgrammes.filter((programme) => (programme.codedCourseCount || 0) > 0).length;
+
+    return {
+      ...university,
+      programmeCount: sourceProgrammes.length,
+      majorCount: sourceMajors.length,
+      codedCourseCount,
+      programmeWithCoursesCount,
+      badge: codedCourseCount ? 'COURSES' : 'INDEX',
+      coverageLabel: codedCourseCount
+        ? `${programmeWithCoursesCount} 个 Programme 已开放课程代码`
+        : 'Programme / Major 索引已导入'
+    };
+  });
+}
+
 module.exports = {
   getCatalogueSummary,
   getFaculty,
   getMajor,
   getMajorProfile,
   getProgramme,
+  getSchoolCoverage,
   getUniversity,
   listCurriculumYears,
   listFaculties,

@@ -193,6 +193,75 @@
   margin-top: 18rpx;
 }
 
+.ug-school-list {
+  border: 1rpx solid rgba(143, 196, 180, 0.22);
+  border-radius: 16rpx;
+  margin-top: 20rpx;
+  overflow: hidden;
+}
+
+.ug-school-row {
+  align-items: center;
+  background: rgba(232, 241, 237, 0.07);
+  display: flex;
+  gap: 18rpx;
+  justify-content: space-between;
+  padding: 18rpx 20rpx;
+}
+
+.ug-school-row + .ug-school-row {
+  border-top: 1rpx solid rgba(143, 196, 180, 0.18);
+}
+
+.ug-school-code {
+  color: #a9d4c7;
+  font-size: 18rpx;
+  font-weight: 850;
+  letter-spacing: 2rpx;
+}
+
+.ug-school-name {
+  color: #ffffff;
+  font-size: 24rpx;
+  font-weight: 800;
+  margin-top: 4rpx;
+}
+
+.ug-school-meta {
+  color: #a8c5bb;
+  font-size: 19rpx;
+  margin-top: 4rpx;
+}
+
+.ug-school-side {
+  flex: none;
+  text-align: right;
+}
+
+.ug-school-badge {
+  border: 1rpx solid rgba(169, 212, 199, 0.5);
+  border-radius: 999rpx;
+  color: #a9d4c7;
+  display: inline-block;
+  font-size: 16rpx;
+  font-weight: 850;
+  letter-spacing: 1rpx;
+  padding: 5rpx 12rpx;
+}
+
+.ug-school-badge.ready {
+  background: #dcebe5;
+  border-color: #dcebe5;
+  color: #0b6b55;
+}
+
+.ug-school-course {
+  color: #dcebe5;
+  font-size: 19rpx;
+  font-weight: 750;
+  margin-top: 8rpx;
+}
+
 .tpg-source-action {
   border-top: 1rpx solid #426258;
   color: #dcebe5;

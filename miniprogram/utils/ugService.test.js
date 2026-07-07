@@ -52,6 +52,21 @@ test('UG per-school coverage stays visible for setup validation', () => {
   });
 });
 
+test('UG school coverage summarizes imported source data for the status page', () => {
+  const coverage = ugService.getSchoolCoverage();
+  const hku = coverage.find((school) => school.code === 'HKU');
+  const polyu = coverage.find((school) => school.code === 'POLYU');
+
+  assert.equal(coverage.length, 6);
+  assert.equal(hku.programmeCount, 136);
+  assert.equal(hku.majorCount, 136);
+  assert.equal(hku.badge, 'INDEX');
+  assert.equal(polyu.programmeWithCoursesCount, 1);
+  assert.equal(polyu.codedCourseCount, 172);
+  assert.equal(polyu.badge, 'COURSES');
+  assert(polyu.coverageLabel.includes('课程代码'));
+});
+
 test('UG major profile groups requirements with traceable courses and sources', () => {
   const profile = ugService.getMajorProfile(1, 1, '2025-26');
   const capstone = profile.requirementGroups.find((group) => group.type === 'capstone');

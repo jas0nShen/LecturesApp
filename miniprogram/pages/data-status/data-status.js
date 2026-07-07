@@ -22,14 +22,16 @@ Page({
     releaseInfo,
     status: null,
     tpgStatus: null,
-    ugStatus: null
+    ugStatus: null,
+    ugSchools: []
   },
 
   onLoad() {
     this.setData({
       status: service.getDataStatus(),
       tpgStatus: tpgService.getSchoolCoverage(),
-      ugStatus: ugService.getCatalogueSummary()
+      ugStatus: ugService.getCatalogueSummary(),
+      ugSchools: ugService.getSchoolCoverage()
     });
   },
 

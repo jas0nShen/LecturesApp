@@ -60,6 +60,19 @@
       </view>
     </view>
     <view class="tpg-note-line">当前已录入 {{ugStatus.codedCourseCount}} 条本科课程代码；未开放课程的 Programme 只展示索引与来源，暂不生成毕业判断。</view>
+    <view class="ug-school-list" wx:if="{{ugSchools.length}}">
+      <view wx:for="{{ugSchools}}" wx:key="code" class="ug-school-row">
+        <view class="ug-school-main">
+          <view class="ug-school-code">{{item.code}}</view>
+          <view class="ug-school-name">{{item.nameZh || item.nameEn}}</view>
+          <view class="ug-school-meta">{{item.programmeCount}} Programme · {{item.majorCount}} Major / Track</view>
+        </view>
+        <view class="ug-school-side">
+          <view class="ug-school-badge {{item.codedCourseCount ? 'ready' : ''}}">{{item.badge}}</view>
+          <view class="ug-school-course">{{item.codedCourseCount ? item.codedCourseCount + ' codes' : '待开放'}}</view>
+        </view>
+      </view>
+    </view>
     <view class="source-action tpg-source-action" bindtap="copyUgSummary">复制本科数据状态</view>
   </view>
 
