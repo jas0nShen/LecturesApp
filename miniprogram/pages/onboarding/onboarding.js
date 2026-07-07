@@ -30,6 +30,8 @@ Page({
     filteredTpgProgrammes: [],
     visibleTpgProgrammes: [],
     tpgKeyword: '',
+    tpgUniversityIndex: 0,
+    tpgProgrammeIndex: 0,
     selectedTpgUniversity: {},
     selectedTpgCoverage: null,
     selectedTpgProgramme: {},
@@ -238,13 +240,19 @@ Page({
   },
 
   onTpgUniversityChange(event) {
-    const selectedTpgUniversity = this.data.tpgUniversities[Number(event.detail.value)];
+    const index = Number(event.detail.value);
+    const selectedTpgUniversity = this.data.tpgUniversities[index] || this.data.tpgUniversities[0] || {};
+    if (!selectedTpgUniversity.code) {
+      wx.showToast({ title: '请选择大学', icon: 'none' });
+      return;
+    }
     const tpgProgrammes = tpgService.listProgrammes(selectedTpgUniversity.code);
     this.setTpgSelection(selectedTpgUniversity, tpgProgrammes, tpgProgrammes[0] || {}, '');
   },
 
   onTpgProgrammeChange(event) {
-    const selectedTpgProgramme = this.data.filteredTpgProgrammes[Number(event.detail.value)];
+    const index = Number(event.detail.value);
+    const selectedTpgProgramme = this.data.filteredTpgProgrammes[index] || this.data.filteredTpgProgrammes[0] || {};
     this.setTpgSelection(
       this.data.selectedTpgUniversity,
       this.data.tpgProgrammes,
@@ -331,6 +339,7 @@ Page({
     const tpgCourseCount = tpgService.flattenCourses(effectiveProgramme).length;
     const selectedIndex = filteredTpgProgrammes.findIndex((item) => item.id === effectiveProgramme.id);
     const selectedTpgCoverage = this.data.tpgSchoolCoverage.find((item) => item.code === selectedTpgUniversity.code) || null;
+    const tpgUniversityIndex = this.data.tpgUniversities.findIndex((item) => item.code === selectedTpgUniversity.code);
     this.setData({
       selectedTpgUniversity,
       selectedTpgCoverage,
@@ -338,6 +347,8 @@ Page({
       filteredTpgProgrammes,
       visibleTpgProgrammes: this.decorateTpgProgrammes(filteredTpgProgrammes.slice(0, 5)),
       tpgKeyword,
+      tpgUniversityIndex: tpgUniversityIndex >= 0 ? tpgUniversityIndex : 0,
+      tpgProgrammeIndex: selectedIndex >= 0 ? selectedIndex : 0,
       selectedTpgProgramme: effectiveProgramme,
       tpgCourseCount,
       tpgCourseStatus: tpgCourseCount ? `已录入 ${tpgCourseCount} 门课程` : 'Programme 索引已录入，课程清单待开放',

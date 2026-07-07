@@ -157,7 +157,7 @@
 
     <view class="field">
       <view class="label">大学</view>
-      <picker range="{{tpgUniversities}}" range-key="shortName" bindchange="onTpgUniversityChange">
+      <picker range="{{tpgUniversities}}" range-key="shortName" value="{{tpgUniversityIndex}}" bindchange="onTpgUniversityChange">
         <view class="select select-arrow">{{selectedTpgUniversity.shortName || '请选择大学'}}</view>
       </picker>
     </view>
@@ -174,7 +174,7 @@
         />
         <view wx:if="{{tpgKeyword}}" class="programme-clear" bindtap="clearTpgKeyword">×</view>
       </view>
-      <picker range="{{filteredTpgProgrammes}}" range-key="name" bindchange="onTpgProgrammeChange">
+      <picker range="{{filteredTpgProgrammes}}" range-key="name" value="{{tpgProgrammeIndex}}" bindchange="onTpgProgrammeChange">
         <view class="select select-programme">
           <view class="select-programme-name">{{selectedTpgProgramme.name || '请选择 Programme'}}</view>
           <view class="select-programme-meta">{{filteredTpgProgrammes.length}} 个匹配结果 · 当前 {{tpgSelectedIndexLabel}}</view>

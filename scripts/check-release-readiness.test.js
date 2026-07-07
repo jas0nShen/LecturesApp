@@ -224,6 +224,11 @@ test('TPG onboarding previews selected school data coverage', () => {
   const onboardingLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'onboarding', 'onboarding.js'), 'utf8');
 
   assert(onboardingLogic.includes('tpgSchoolCoverage: tpgService.getSchoolCoverage()'));
+  assert(onboardingLogic.includes('tpgUniversityIndex: 0'));
+  assert(onboardingLogic.includes('tpgProgrammeIndex: 0'));
+  assert(onboardingLogic.includes('tpgUniversityIndex: tpgUniversityIndex >= 0 ? tpgUniversityIndex : 0'));
+  assert(onboardingPage.includes('value="{{tpgUniversityIndex}}"'));
+  assert(onboardingPage.includes('value="{{tpgProgrammeIndex}}"'));
   assert(onboardingLogic.includes('selectedTpgCoverage'));
   assert(onboardingPage.includes('{{selectedTpgCoverage.programmeCount}} Programme · {{selectedTpgCoverage.programmeWithCoursesCount}} 个已开放课程组'));
   assert(onboardingPage.includes('{{selectedTpgCoverage.courseCount ? selectedTpgCoverage.courseCount + \' courses\' : \'课程待开放\'}}'));
