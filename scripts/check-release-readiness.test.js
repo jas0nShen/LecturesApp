@@ -295,10 +295,16 @@ test('undergraduate onboarding shows the saved local profile summary', () => {
 
   assert(onboardingLogic.includes('savedUgProfile: null'));
   assert(onboardingLogic.includes('function resolveInitialMode(profile, options = {})'));
+  assert(onboardingLogic.includes("profile && profile.profileType === 'undergraduate'"));
   assert(onboardingLogic.includes("options.mode === 'undergraduate'"));
   assert(onboardingLogic.includes("options.mode === 'tpg'"));
+  assert(onboardingLogic.includes('this._modeTouchedByUser = false'));
   assert(onboardingLogic.includes('async onLoad(options = {})'));
   assert(onboardingLogic.includes('const initialMode = resolveInitialMode(profile, options)'));
+  assert(onboardingLogic.includes('onShow()'));
+  assert(onboardingLogic.includes('if (this._modeTouchedByUser) return'));
+  assert(onboardingLogic.includes('resolveInitialMode(profile, this.options || {})'));
+  assert(onboardingLogic.includes('this._modeTouchedByUser = true'));
   assert(onboardingLogic.includes('mode: initialMode'));
   assert(onboardingLogic.includes("profile.profileType === 'undergraduate'"));
   assert(onboardingLogic.includes('ugService.getMajorProfile(profile.programmeId, profile.majorId, profile.curriculumYear)'));

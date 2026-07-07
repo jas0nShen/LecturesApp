@@ -23,6 +23,12 @@ function formatMajorOption(major = {}) {
 }
 
 function resolveInitialMode(profile, options = {}) {
+  if (profile && profile.profileType === 'undergraduate') {
+    return 'undergraduate';
+  }
+  if (profile && profile.profileType === 'tpg') {
+    return 'tpg';
+  }
   if (options.mode === 'undergraduate' || options.profileType === 'undergraduate') {
     return 'undergraduate';
   }
@@ -109,6 +115,7 @@ Page({
   },
 
   async onLoad(options = {}) {
+    this._modeTouchedByUser = false;
     const profile = service.getProfile();
     const initialMode = resolveInitialMode(profile, options);
     const savedTpgProfile = tpgService.getProfileSummary(profile);
@@ -122,6 +129,15 @@ Page({
       savedTpgProfile: savedTpgProfile && savedTpgProfile.programme ? savedTpgProfile : null
     });
     await this.loadUndergraduate(profile);
+  },
+
+  onShow() {
+    if (this._modeTouchedByUser) return;
+    const profile = service.getProfile();
+    const initialMode = resolveInitialMode(profile, this.options || {});
+    if (initialMode !== this.data.mode) {
+      this.setData({ mode: initialMode });
+    }
   },
 
   async loadUndergraduate(profile) {
@@ -173,6 +189,7 @@ Page({
   },
 
   selectMode(event) {
+    this._modeTouchedByUser = true;
     this.setData({ mode: event.currentTarget.dataset.mode });
   },
 
