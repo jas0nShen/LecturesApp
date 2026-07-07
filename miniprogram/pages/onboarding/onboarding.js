@@ -19,6 +19,7 @@ Page({
     currentYear: '1',
     ugKeyword: '',
     ugSelectedIndexLabel: '',
+    ugSchoolStats: null,
     ugMajorProfile: null,
     ugCourseStatus: '',
     tpgUniversities: tpgService.listUniversities(),
@@ -154,13 +155,23 @@ Page({
       ? selectedProgramme
       : filteredUgProgrammes[0] || {};
     const selectedIndex = filteredUgProgrammes.findIndex((item) => item.id === effectiveProgramme.id);
+    const programmeIds = new Set(programmes.map((programme) => programme.id));
+    const majorCount = programmes.reduce((sum, programme) => sum + ugService.listMajors(programme.id).length, 0);
+    const codedCourseCount = programmes.reduce((sum, programme) => sum + (programme.codedCourseCount || 0), 0);
     this.setData({
       selectedUniversity,
       programmes,
       filteredUgProgrammes,
       visibleUgProgrammes: filteredUgProgrammes.slice(0, 5),
       ugKeyword,
-      ugSelectedIndexLabel: selectedIndex >= 0 ? `${selectedIndex + 1} / ${filteredUgProgrammes.length}` : `0 / ${filteredUgProgrammes.length}`
+      ugSelectedIndexLabel: selectedIndex >= 0 ? `${selectedIndex + 1} / ${filteredUgProgrammes.length}` : `0 / ${filteredUgProgrammes.length}`,
+      ugSchoolStats: {
+        schoolCount: this.data.universities.length || ugService.listUniversities().length,
+        programmeCount: programmes.length,
+        majorCount,
+        codedCourseCount,
+        hasDuplicateProgrammeIds: programmeIds.size !== programmes.length
+      }
     });
     this.applyUgProgrammeSelection(effectiveProgramme, profile);
   },

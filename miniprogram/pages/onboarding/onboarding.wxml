@@ -29,6 +29,25 @@
       <view class="inline-link" bindtap="switchToTpg">查看授课硕士</view>
     </view>
 
+    <view wx:if="{{ugSchoolStats}}" class="ug-stats">
+      <view class="ug-stat">
+        <view class="ug-stat-value">{{ugSchoolStats.schoolCount}}</view>
+        <view class="ug-stat-label">所大学</view>
+      </view>
+      <view class="ug-stat">
+        <view class="ug-stat-value">{{ugSchoolStats.programmeCount}}</view>
+        <view class="ug-stat-label">当前校 Programme</view>
+      </view>
+      <view class="ug-stat">
+        <view class="ug-stat-value">{{ugSchoolStats.majorCount}}</view>
+        <view class="ug-stat-label">Major / Track</view>
+      </view>
+      <view class="ug-stat">
+        <view class="ug-stat-value">{{ugSchoolStats.codedCourseCount}}</view>
+        <view class="ug-stat-label">课程代码</view>
+      </view>
+    </view>
+
     <view class="field">
       <view class="label">大学</view>
       <picker range="{{universities}}" range-key="nameZh" bindchange="onUniversityChange">
