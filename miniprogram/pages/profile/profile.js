@@ -40,7 +40,9 @@ Page({
   },
 
   goOnboarding() {
-    wx.navigateTo({ url: '/pages/onboarding/onboarding' });
+    const profile = service.getProfile();
+    const mode = profile && profile.profileType === 'undergraduate' ? 'undergraduate' : 'tpg';
+    wx.navigateTo({ url: `/pages/onboarding/onboarding?mode=${mode}` });
   },
 
   goCourseNotes() {

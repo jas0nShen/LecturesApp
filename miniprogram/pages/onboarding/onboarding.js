@@ -22,6 +22,16 @@ function formatMajorOption(major = {}) {
   return major.nameZh || major.nameEn || major.code || 'Major 待确认';
 }
 
+function resolveInitialMode(profile, options = {}) {
+  if (options.mode === 'undergraduate' || options.profileType === 'undergraduate') {
+    return 'undergraduate';
+  }
+  if (options.mode === 'tpg' || options.profileType === 'tpg') {
+    return 'tpg';
+  }
+  return profile && profile.profileType === 'undergraduate' ? 'undergraduate' : 'tpg';
+}
+
 const INITIAL_UG_UNIVERSITIES = ugService.listUniversities();
 const INITIAL_UG_UNIVERSITY = INITIAL_UG_UNIVERSITIES[0] || {};
 const INITIAL_UG_PROGRAMMES = INITIAL_UG_UNIVERSITY.id
@@ -98,9 +108,9 @@ Page({
     showTpgProgrammeSheet: false
   },
 
-  async onLoad() {
+  async onLoad(options = {}) {
     const profile = service.getProfile();
-    const initialMode = profile && profile.profileType === 'undergraduate' ? 'undergraduate' : 'tpg';
+    const initialMode = resolveInitialMode(profile, options);
     const savedTpgProfile = tpgService.getProfileSummary(profile);
     const savedUgProfile = profile && profile.profileType === 'undergraduate'
       ? ugService.getMajorProfile(profile.programmeId, profile.majorId, profile.curriculumYear)

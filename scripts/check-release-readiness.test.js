@@ -294,7 +294,11 @@ test('undergraduate onboarding shows the saved local profile summary', () => {
   const onboardingLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'onboarding', 'onboarding.js'), 'utf8');
 
   assert(onboardingLogic.includes('savedUgProfile: null'));
-  assert(onboardingLogic.includes("const initialMode = profile && profile.profileType === 'undergraduate' ? 'undergraduate' : 'tpg'"));
+  assert(onboardingLogic.includes('function resolveInitialMode(profile, options = {})'));
+  assert(onboardingLogic.includes("options.mode === 'undergraduate'"));
+  assert(onboardingLogic.includes("options.mode === 'tpg'"));
+  assert(onboardingLogic.includes('async onLoad(options = {})'));
+  assert(onboardingLogic.includes('const initialMode = resolveInitialMode(profile, options)'));
   assert(onboardingLogic.includes('mode: initialMode'));
   assert(onboardingLogic.includes("profile.profileType === 'undergraduate'"));
   assert(onboardingLogic.includes('ugService.getMajorProfile(profile.programmeId, profile.majorId, profile.curriculumYear)'));
@@ -303,6 +307,20 @@ test('undergraduate onboarding shows the saved local profile summary', () => {
   assert(onboardingPage.includes('当前本机保存：{{savedUgProfile.programme.nameEn}}'));
   assert(onboardingLogic.includes('previewSavedUgProfile()'));
   assert(onboardingLogic.includes("wx.switchTab({ url: '/pages/courses/courses' })"));
+});
+
+test('profile edit entry keeps the saved profile type when opening onboarding', () => {
+  [
+    'home',
+    'courses',
+    'audit',
+    'profile'
+  ].forEach((pageName) => {
+    const pageLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', pageName, `${pageName}.js`), 'utf8');
+    assert(pageLogic.includes('const profile = service.getProfile()'), `${pageName} does not read the saved profile before onboarding`);
+    assert(pageLogic.includes("profile.profileType === 'undergraduate' ? 'undergraduate' : 'tpg'"), `${pageName} does not preserve the saved profile mode`);
+    assert(pageLogic.includes('`/pages/onboarding/onboarding?mode=${mode}`'), `${pageName} does not pass onboarding mode`);
+  });
 });
 
 test('undergraduate onboarding programme results show major-level course availability', () => {
