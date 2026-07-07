@@ -126,9 +126,13 @@ test('TPG audit page avoids misleading zero-course copy', () => {
 });
 
 test('TPG course page avoids misleading zero-course hero copy', () => {
+  const homePage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'home', 'home.wxml'), 'utf8');
   const coursesPage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'courses', 'courses.wxml'), 'utf8');
   const coursesLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'courses', 'courses.js'), 'utf8');
 
+  assert(homePage.includes('先选择你的课程范围。'));
+  assert(homePage.includes('选择你的学校与 Programme'));
+  assert(!homePage.includes('选择你的授课硕士 Programme'));
   assert(coursesPage.includes('tpgCourseCountDisplay'));
   assert(coursesPage.includes('tpgCourseCountLabel'));
   assert(coursesPage.includes("{{tpgCourseCount ? '课程已开放' : '复核中'}}"));
@@ -136,6 +140,8 @@ test('TPG course page avoids misleading zero-course hero copy', () => {
   assert(coursesPage.includes("{{tpgCourseCount ? '课程' : '索引'}}"));
   assert(coursesPage.includes("{{ugCourseCount ? '课程' : '索引'}}"));
   assert(coursesPage.includes('先选范围'));
+  assert(coursesPage.includes('先选择你的课程范围'));
+  assert(!coursesPage.includes('先选择你的授课硕士 Programme'));
   ['TPG FIRST', 'TPG READY', 'UG READY', 'IN REVIEW', 'PROGRAMME ADDED', 'NO MATCH', 'NO OFFERING'].forEach((label) => {
     assert(!coursesPage.includes(label), `Courses page still exposes internal label: ${label}`);
   });

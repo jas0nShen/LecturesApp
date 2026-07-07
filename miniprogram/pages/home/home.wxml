@@ -2,15 +2,15 @@
   <view class="section hero">
     <view>
       <view class="hero-kicker">COURSE DESK · {{profile.universityCode || 'TPG'}}</view>
-      <view class="title">先找到你的 Programme。</view>
-      <view class="subtitle">保存你的授课硕士 Programme 后，可以查看课程资料状态与已开放课程组。</view>
+      <view class="title">先选择你的课程范围。</view>
+      <view class="subtitle">选择本科或授课硕士，保存学校与 Programme 后再查看课程资料状态。</view>
     </view>
   </view>
 
   <view wx:if="{{!profile}}" class="section tpg-start-card">
     <view class="start-kicker">FIRST SETUP</view>
-    <view class="panel-title">选择你的授课硕士 Programme</view>
-    <view class="subtitle">从已整理的授课硕士资料开始；保存 Programme 后即可查看课程状态。</view>
+    <view class="panel-title">选择你的学校与 Programme</view>
+    <view class="subtitle">先选择本科或授课硕士；保存后即可查看对应课程状态。</view>
     <view class="button-space start-actions">
       <view class="button" bindtap="goOnboarding">开始选择</view>
       <view class="secondary-button" bindtap="goTpgCatalog">先浏览资料库</view>
