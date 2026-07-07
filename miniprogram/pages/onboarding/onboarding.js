@@ -73,6 +73,8 @@ Page({
     showUgUniversitySheet: false,
     showUgProgrammeSheet: false,
     showUgMajorSheet: false,
+    showUgCurriculumYearSheet: false,
+    showCurrentYearSheet: false,
     tpgUniversities: INITIAL_TPG_UNIVERSITIES,
     tpgUniversityOptions: INITIAL_TPG_UNIVERSITIES.map(formatTpgUniversityOption),
     tpgSchoolCoverage: tpgService.getSchoolCoverage(),
@@ -359,8 +361,24 @@ Page({
     });
   },
 
+  openUgCurriculumYearSheet() {
+    if (!this.data.curriculumYears.length) return;
+    this.setData({ showUgCurriculumYearSheet: true });
+  },
+
+  closeUgCurriculumYearSheet() {
+    this.setData({ showUgCurriculumYearSheet: false });
+  },
+
+  selectUgCurriculumYear(event) {
+    this.selectCurriculumYearByIndex(Number(event.currentTarget.dataset.index));
+  },
+
   onCurriculumYearChange(event) {
-    const index = Number(event.detail.value);
+    this.selectCurriculumYearByIndex(Number(event.detail.value));
+  },
+
+  selectCurriculumYearByIndex(index) {
     const safeIndex = this.data.curriculumYears[index] ? index : 0;
     const curriculumYear = this.data.curriculumYears[safeIndex] || '';
     const ugMajorProfile = ugService.getMajorProfile(
@@ -372,16 +390,34 @@ Page({
       curriculumYear,
       ugCurriculumYearIndex: safeIndex,
       ugMajorProfile,
-      ugCourseStatus: this.buildUgCourseStatus(ugMajorProfile)
+      ugCourseStatus: this.buildUgCourseStatus(ugMajorProfile),
+      showUgCurriculumYearSheet: false
     });
   },
 
+  openCurrentYearSheet() {
+    if (!this.data.yearOptions.length) return;
+    this.setData({ showCurrentYearSheet: true });
+  },
+
+  closeCurrentYearSheet() {
+    this.setData({ showCurrentYearSheet: false });
+  },
+
+  selectCurrentYear(event) {
+    this.selectCurrentYearByIndex(Number(event.currentTarget.dataset.index));
+  },
+
   onCurrentYearChange(event) {
-    const index = Number(event.detail.value);
+    this.selectCurrentYearByIndex(Number(event.detail.value));
+  },
+
+  selectCurrentYearByIndex(index) {
     const safeIndex = this.data.yearOptions[index] ? index : 0;
     this.setData({
       currentYear: this.data.yearOptions[safeIndex],
-      currentYearIndex: safeIndex
+      currentYearIndex: safeIndex,
+      showCurrentYearSheet: false
     });
   },
 

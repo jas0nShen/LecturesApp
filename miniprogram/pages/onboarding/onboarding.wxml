@@ -101,16 +101,12 @@
 
       <view class="field">
         <view class="label">Curriculum Year</view>
-        <picker range="{{curriculumYears}}" value="{{ugCurriculumYearIndex}}" bindchange="onCurriculumYearChange">
-          <view class="select">{{curriculumYear}}</view>
-        </picker>
+        <view class="select select-arrow" bindtap="openUgCurriculumYearSheet">{{curriculumYear}}</view>
       </view>
 
       <view class="field">
         <view class="label">当前年级</view>
-        <picker range="{{yearOptions}}" value="{{currentYearIndex}}" bindchange="onCurrentYearChange">
-          <view class="select">Year {{currentYear}}</view>
-        </picker>
+        <view class="select select-arrow" bindtap="openCurrentYearSheet">Year {{currentYear}}</view>
       </view>
 
       <view class="ug-proof">
@@ -268,6 +264,44 @@
           data-index="{{index}}"
           bindtap="selectUgMajor"
         >{{item}}</view>
+      </scroll-view>
+    </view>
+  </view>
+
+  <view wx:if="{{showUgCurriculumYearSheet}}" class="sheet-mask" bindtap="closeUgCurriculumYearSheet">
+    <view class="sheet" catchtap="noop">
+      <view class="sheet-head">
+        <view class="sheet-cancel" bindtap="closeUgCurriculumYearSheet">取消</view>
+        <view class="sheet-title">选择 Curriculum Year</view>
+        <view class="sheet-placeholder"></view>
+      </view>
+      <scroll-view class="sheet-list" scroll-y>
+        <view
+          wx:for="{{curriculumYears}}"
+          wx:key="*this"
+          class="sheet-option {{ugCurriculumYearIndex === index ? 'sheet-option-active' : ''}}"
+          data-index="{{index}}"
+          bindtap="selectUgCurriculumYear"
+        >{{item}}</view>
+      </scroll-view>
+    </view>
+  </view>
+
+  <view wx:if="{{showCurrentYearSheet}}" class="sheet-mask" bindtap="closeCurrentYearSheet">
+    <view class="sheet" catchtap="noop">
+      <view class="sheet-head">
+        <view class="sheet-cancel" bindtap="closeCurrentYearSheet">取消</view>
+        <view class="sheet-title">选择当前年级</view>
+        <view class="sheet-placeholder"></view>
+      </view>
+      <scroll-view class="sheet-list" scroll-y>
+        <view
+          wx:for="{{yearOptions}}"
+          wx:key="*this"
+          class="sheet-option {{currentYearIndex === index ? 'sheet-option-active' : ''}}"
+          data-index="{{index}}"
+          bindtap="selectCurrentYear"
+        >Year {{item}}</view>
       </scroll-view>
     </view>
   </view>
