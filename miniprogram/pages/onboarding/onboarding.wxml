@@ -134,6 +134,18 @@
       <view class="saved-scope-arrow">›</view>
     </view>
 
+    <view wx:if="{{selectedTpgCoverage}}" class="ug-coverage-card tpg-coverage-card">
+      <view>
+        <view class="coverage-kicker">当前学校数据</view>
+        <view class="coverage-title">{{selectedTpgUniversity.shortName}}</view>
+        <view class="coverage-copy">{{selectedTpgCoverage.programmeCount}} Programme · {{selectedTpgCoverage.programmeWithCoursesCount}} 个已开放课程组</view>
+      </view>
+      <view class="coverage-status {{selectedTpgCoverage.courseCount ? 'coverage-status-ready' : ''}}">
+        <view class="coverage-badge">{{selectedTpgCoverage.badge}}</view>
+        <view class="coverage-count">{{selectedTpgCoverage.courseCount ? selectedTpgCoverage.courseCount + ' courses' : '课程待开放'}}</view>
+      </view>
+    </view>
+
     <view class="field">
       <view class="label">大学</view>
       <picker range="{{tpgUniversities}}" range-key="shortName" bindchange="onTpgUniversityChange">

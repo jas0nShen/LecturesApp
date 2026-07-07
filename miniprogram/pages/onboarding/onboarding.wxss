@@ -148,6 +148,19 @@
   margin-top: 9rpx;
 }
 
+.tpg-coverage-card {
+  background: #0b6b55;
+}
+
+.tpg-coverage-card .coverage-kicker,
+.tpg-coverage-card .coverage-badge {
+  color: #dcebe5;
+}
+
+.tpg-coverage-card .coverage-copy {
+  color: #cce1d9;
+}
+
 .tpg-note {
   background: #e4f0eb;
   color: #31594a;

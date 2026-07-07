@@ -192,6 +192,16 @@ test('undergraduate onboarding previews selected school data coverage', () => {
   assert(onboardingPage.includes('{{selectedUgCoverage.programmeCount}} Programme · {{selectedUgCoverage.majorCount}} Major / Track'));
 });
 
+test('TPG onboarding previews selected school data coverage', () => {
+  const onboardingPage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'onboarding', 'onboarding.wxml'), 'utf8');
+  const onboardingLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'onboarding', 'onboarding.js'), 'utf8');
+
+  assert(onboardingLogic.includes('tpgSchoolCoverage: tpgService.getSchoolCoverage()'));
+  assert(onboardingLogic.includes('selectedTpgCoverage'));
+  assert(onboardingPage.includes('{{selectedTpgCoverage.programmeCount}} Programme · {{selectedTpgCoverage.programmeWithCoursesCount}} 个已开放课程组'));
+  assert(onboardingPage.includes('{{selectedTpgCoverage.courseCount ? selectedTpgCoverage.courseCount + \' courses\' : \'课程待开放\'}}'));
+});
+
 test('TPG catalogue copy describes availability instead of completeness', () => {
   const cataloguePage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'tpg-catalog', 'tpg-catalog.wxml'), 'utf8');
 

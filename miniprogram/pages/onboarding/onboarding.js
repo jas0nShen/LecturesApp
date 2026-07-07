@@ -24,11 +24,13 @@ Page({
     ugMajorProfile: null,
     ugCourseStatus: '',
     tpgUniversities: tpgService.listUniversities(),
+    tpgSchoolCoverage: tpgService.getSchoolCoverage(),
     tpgProgrammes: [],
     filteredTpgProgrammes: [],
     visibleTpgProgrammes: [],
     tpgKeyword: '',
     selectedTpgUniversity: {},
+    selectedTpgCoverage: null,
     selectedTpgProgramme: {},
     tpgCourseCount: 0,
     tpgCourseStatus: '',
@@ -294,8 +296,10 @@ Page({
       : filteredTpgProgrammes[0] || {};
     const tpgCourseCount = tpgService.flattenCourses(effectiveProgramme).length;
     const selectedIndex = filteredTpgProgrammes.findIndex((item) => item.id === effectiveProgramme.id);
+    const selectedTpgCoverage = this.data.tpgSchoolCoverage.find((item) => item.code === selectedTpgUniversity.code) || null;
     this.setData({
       selectedTpgUniversity,
+      selectedTpgCoverage,
       tpgProgrammes,
       filteredTpgProgrammes,
       visibleTpgProgrammes: filteredTpgProgrammes.slice(0, 5),
