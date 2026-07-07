@@ -19,6 +19,11 @@ Page({
     curriculumYear: '2025-26',
     yearOptions: ['1', '2', '3', '4'],
     currentYear: '1',
+    ugUniversityIndex: 0,
+    ugProgrammeIndex: 0,
+    ugMajorIndex: 0,
+    ugCurriculumYearIndex: 0,
+    currentYearIndex: 0,
     ugKeyword: '',
     ugSelectedIndexLabel: '',
     ugMajorProfile: null,
@@ -63,11 +68,14 @@ Page({
     const selectedUniversity = universities.find((item) => item.id === (profile && profile.universityId)) || universities[0];
     const programmes = ugService.listProgrammes({ universityId: selectedUniversity.id, degreeLevel: 'undergraduate' });
     const selectedProgramme = programmes.find((item) => item.id === (profile && profile.programmeId)) || programmes[0];
+    const currentYear = profile && profile.profileType !== 'tpg' ? String(profile.currentYear) : '1';
+    const currentYearIndex = this.data.yearOptions.findIndex((item) => item === currentYear);
     this.setData({
       universities,
       ugSchoolCoverage,
       selectedUniversity,
-      currentYear: profile && profile.profileType !== 'tpg' ? String(profile.currentYear) : '1'
+      currentYear,
+      currentYearIndex: currentYearIndex >= 0 ? currentYearIndex : 0
     });
     this.setUgSelection(selectedUniversity, programmes, selectedProgramme, '', profile, ugSchoolCoverage);
   },
@@ -88,13 +96,19 @@ Page({
   },
 
   async onUniversityChange(event) {
-    const selectedUniversity = this.data.universities[Number(event.detail.value)];
+    const index = Number(event.detail.value);
+    const selectedUniversity = this.data.universities[index] || this.data.universities[0] || {};
+    if (!selectedUniversity.id) {
+      wx.showToast({ title: '请选择大学', icon: 'none' });
+      return;
+    }
     const programmes = ugService.listProgrammes({ universityId: selectedUniversity.id, degreeLevel: 'undergraduate' });
     this.setUgSelection(selectedUniversity, programmes, programmes[0] || {}, '');
   },
 
   async onProgrammeChange(event) {
-    const selectedProgramme = this.data.filteredUgProgrammes[Number(event.detail.value)];
+    const index = Number(event.detail.value);
+    const selectedProgramme = this.data.filteredUgProgrammes[index] || this.data.filteredUgProgrammes[0] || {};
     this.applyUgProgrammeSelection(selectedProgramme);
   },
 
@@ -134,7 +148,7 @@ Page({
     );
   },
 
-  applyUgProgrammeSelection(selectedProgramme = {}, profile = null) {
+  applyUgProgrammeSelection(selectedProgramme = {}, profile = null, filteredUgProgrammes = this.data.filteredUgProgrammes) {
     const majors = selectedProgramme.id ? ugService.listMajors(selectedProgramme.id) : [];
     const selectedMajor = majors.find((item) => item.id === (profile && profile.majorId)) || majors[0] || {};
     const curriculumYears = selectedMajor.id
@@ -146,12 +160,18 @@ Page({
     const ugMajorProfile = selectedMajor.id
       ? ugService.getMajorProfile(selectedProgramme.id, selectedMajor.id, curriculumYear)
       : null;
+    const selectedProgrammeIndex = filteredUgProgrammes.findIndex((item) => item.id === selectedProgramme.id);
+    const selectedMajorIndex = majors.findIndex((item) => item.id === selectedMajor.id);
+    const curriculumYearIndex = curriculumYears.findIndex((item) => item === curriculumYear);
     this.setData({
       selectedProgramme,
       majors,
       selectedMajor,
       curriculumYears,
       curriculumYear,
+      ugProgrammeIndex: selectedProgrammeIndex >= 0 ? selectedProgrammeIndex : 0,
+      ugMajorIndex: selectedMajorIndex >= 0 ? selectedMajorIndex : 0,
+      ugCurriculumYearIndex: curriculumYearIndex >= 0 ? curriculumYearIndex : 0,
       ugMajorProfile,
       ugCourseStatus: this.buildUgCourseStatus(ugMajorProfile)
     });
@@ -184,6 +204,7 @@ Page({
       : filteredUgProgrammes[0] || {};
     const selectedIndex = filteredUgProgrammes.findIndex((item) => item.id === effectiveProgramme.id);
     const selectedUgCoverage = ugSchoolCoverage.find((item) => item.code === selectedUniversity.code) || null;
+    const selectedUniversityIndex = this.data.universities.findIndex((item) => item.id === selectedUniversity.id);
     this.setData({
       selectedUniversity,
       selectedUgCoverage,
@@ -191,13 +212,17 @@ Page({
       filteredUgProgrammes,
       visibleUgProgrammes: this.decorateUgProgrammes(filteredUgProgrammes.slice(0, 5)),
       ugKeyword,
+      ugUniversityIndex: selectedUniversityIndex >= 0 ? selectedUniversityIndex : 0,
+      ugProgrammeIndex: selectedIndex >= 0 ? selectedIndex : 0,
       ugSelectedIndexLabel: selectedIndex >= 0 ? `${selectedIndex + 1} / ${filteredUgProgrammes.length}` : `0 / ${filteredUgProgrammes.length}`
     });
-    this.applyUgProgrammeSelection(effectiveProgramme, profile);
+    this.applyUgProgrammeSelection(effectiveProgramme, profile, filteredUgProgrammes);
   },
 
   onMajorChange(event) {
-    const selectedMajor = this.data.majors[Number(event.detail.value)];
+    const index = Number(event.detail.value);
+    const safeIndex = this.data.majors[index] ? index : 0;
+    const selectedMajor = this.data.majors[safeIndex] || {};
     const curriculumYears = ugService.listCurriculumYears(this.data.selectedProgramme.id, selectedMajor.id);
     const curriculumYear = curriculumYears[0] || '';
     const ugMajorProfile = ugService.getMajorProfile(this.data.selectedProgramme.id, selectedMajor.id, curriculumYear);
@@ -205,13 +230,17 @@ Page({
       selectedMajor,
       curriculumYears,
       curriculumYear,
+      ugMajorIndex: safeIndex,
+      ugCurriculumYearIndex: 0,
       ugMajorProfile,
       ugCourseStatus: this.buildUgCourseStatus(ugMajorProfile)
     });
   },
 
   onCurriculumYearChange(event) {
-    const curriculumYear = this.data.curriculumYears[Number(event.detail.value)];
+    const index = Number(event.detail.value);
+    const safeIndex = this.data.curriculumYears[index] ? index : 0;
+    const curriculumYear = this.data.curriculumYears[safeIndex] || '';
     const ugMajorProfile = ugService.getMajorProfile(
       this.data.selectedProgramme.id,
       this.data.selectedMajor.id,
@@ -219,13 +248,19 @@ Page({
     );
     this.setData({
       curriculumYear,
+      ugCurriculumYearIndex: safeIndex,
       ugMajorProfile,
       ugCourseStatus: this.buildUgCourseStatus(ugMajorProfile)
     });
   },
 
   onCurrentYearChange(event) {
-    this.setData({ currentYear: this.data.yearOptions[Number(event.detail.value)] });
+    const index = Number(event.detail.value);
+    const safeIndex = this.data.yearOptions[index] ? index : 0;
+    this.setData({
+      currentYear: this.data.yearOptions[safeIndex],
+      currentYearIndex: safeIndex
+    });
   },
 
   buildUgCourseStatus(majorProfile) {

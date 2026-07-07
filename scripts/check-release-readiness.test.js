@@ -185,8 +185,19 @@ test('undergraduate onboarding previews selected school data coverage', () => {
   const onboardingLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'onboarding', 'onboarding.js'), 'utf8');
 
   assert(onboardingLogic.includes('ugSchoolCoverage: []'));
+  assert(onboardingLogic.includes('ugUniversityIndex: 0'));
+  assert(onboardingLogic.includes('ugProgrammeIndex: 0'));
+  assert(onboardingLogic.includes('ugMajorIndex: 0'));
+  assert(onboardingLogic.includes('ugCurriculumYearIndex: 0'));
+  assert(onboardingLogic.includes('currentYearIndex: 0'));
   assert(onboardingLogic.includes('const ugSchoolCoverage = ugService.getSchoolCoverage()'));
   assert(onboardingLogic.includes('ugSchoolCoverage = this.data.ugSchoolCoverage'));
+  assert(onboardingLogic.includes('applyUgProgrammeSelection(selectedProgramme = {}, profile = null, filteredUgProgrammes = this.data.filteredUgProgrammes)'));
+  assert(onboardingPage.includes('value="{{ugUniversityIndex}}"'));
+  assert(onboardingPage.includes('value="{{ugProgrammeIndex}}"'));
+  assert(onboardingPage.includes('value="{{ugMajorIndex}}"'));
+  assert(onboardingPage.includes('value="{{ugCurriculumYearIndex}}"'));
+  assert(onboardingPage.includes('value="{{currentYearIndex}}"'));
   assert(onboardingLogic.includes('selectedUgCoverage'));
   assert(onboardingPage.includes('当前学校数据'));
   assert(onboardingPage.includes('{{selectedUgCoverage.programmeCount}} Programme · {{selectedUgCoverage.majorCount}} Major / Track'));

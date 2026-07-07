@@ -51,7 +51,7 @@
 
     <view class="field">
       <view class="label">大学</view>
-      <picker range="{{universities}}" range-key="nameZh" bindchange="onUniversityChange">
+      <picker range="{{universities}}" range-key="nameZh" value="{{ugUniversityIndex}}" bindchange="onUniversityChange">
         <view class="select">{{selectedUniversity.nameZh || '请选择大学'}}</view>
       </picker>
     </view>
@@ -68,7 +68,7 @@
         />
         <view wx:if="{{ugKeyword}}" class="programme-clear" bindtap="clearUgKeyword">×</view>
       </view>
-      <picker range="{{filteredUgProgrammes}}" range-key="nameZh" bindchange="onProgrammeChange">
+      <picker range="{{filteredUgProgrammes}}" range-key="nameZh" value="{{ugProgrammeIndex}}" bindchange="onProgrammeChange">
         <view class="select select-programme">
           <view class="select-programme-name">{{selectedProgramme.nameZh || '请选择 Programme'}}</view>
           <view class="select-programme-meta">{{filteredUgProgrammes.length}} 个匹配结果 · 当前 {{ugSelectedIndexLabel}}</view>
@@ -98,21 +98,21 @@
 
     <view class="field">
       <view class="label">Major</view>
-      <picker range="{{majors}}" range-key="nameZh" bindchange="onMajorChange">
+      <picker range="{{majors}}" range-key="nameZh" value="{{ugMajorIndex}}" bindchange="onMajorChange">
         <view class="select">{{selectedMajor.nameZh || '请选择 Major'}}</view>
       </picker>
     </view>
 
     <view class="field">
       <view class="label">Curriculum Year</view>
-      <picker range="{{curriculumYears}}" bindchange="onCurriculumYearChange">
+      <picker range="{{curriculumYears}}" value="{{ugCurriculumYearIndex}}" bindchange="onCurriculumYearChange">
         <view class="select">{{curriculumYear}}</view>
       </picker>
     </view>
 
     <view class="field">
       <view class="label">当前年级</view>
-      <picker range="{{yearOptions}}" bindchange="onCurrentYearChange">
+      <picker range="{{yearOptions}}" value="{{currentYearIndex}}" bindchange="onCurrentYearChange">
         <view class="select">Year {{currentYear}}</view>
       </picker>
     </view>
