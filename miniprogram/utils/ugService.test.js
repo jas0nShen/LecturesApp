@@ -11,9 +11,9 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert(summary.programmeCount >= 445);
   assert(summary.majorCount >= 690);
   assert.equal(summary.requirementCount, 4);
-  assert(summary.courseCount >= 413);
+  assert(summary.courseCount >= 482);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 399);
+  assert.equal(summary.codedCourseCount, 468);
 });
 
 test('UG catalogue exposes the multi-school hierarchy needed for onboarding', () => {
@@ -44,7 +44,7 @@ test('UG per-school coverage stays visible for setup validation', () => {
 
   assert.deepEqual(coverage, {
     HKU: { programmeCount: 137, majorCount: 137, codedCourseCount: 112 },
-    CUHK: { programmeCount: 84, majorCount: 84, codedCourseCount: 0 },
+    CUHK: { programmeCount: 84, majorCount: 84, codedCourseCount: 69 },
     HKUST: { programmeCount: 50, majorCount: 64, codedCourseCount: 121 },
     POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 166 },
     CITYU: { programmeCount: 58, majorCount: 201, codedCourseCount: 0 },
@@ -177,6 +177,21 @@ test('HKUST Computer Science majors expose official programme requirement course
   assert.equal(bscCourses.length, 29);
   assert(bengCourses.some((course) => course.courseCode === 'COMP4211' && course.titleEn === 'Machine Learning'));
   assert(bscCourses.some((course) => course.courseCode === 'COMP4900' && course.credits === 0));
+});
+
+test('CUHK Computer Science exposes official CSE undergraduate course list', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const computerScience = programmes.find((programme) => programme.nameEn === 'Computer Science');
+  const major = ugService.listMajors(computerScience.id)[0];
+  const courses = ugService.listMajorCourses(computerScience.id, major.id);
+  const machineLearning = ugService.listMajorCourses(computerScience.id, major.id, { keyword: 'machine learning' });
+
+  assert.equal(computerScience.sourceStatus, 'course_codes_available');
+  assert.equal(computerScience.codedCourseCount, 69);
+  assert.equal(courses.length, 69);
+  assert(courses.some((course) => course.courseCode.startsWith('CSCI2100') && course.titleEn === 'Data Structures'));
+  assert(machineLearning.some((course) => course.courseCode === 'CSCI3320'));
 });
 
 test('imported UG programmes can be searched by title, code and faculty', () => {

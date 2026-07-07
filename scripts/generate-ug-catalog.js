@@ -5,6 +5,7 @@ const DEFAULT_SOURCE_DIR = '/Users/shenjingsong/Documents/Codex/2026-07-06/pdf/o
 const OUTPUT_PATH = path.join(__dirname, '..', 'miniprogram', 'utils', 'ugCatalogue.js');
 const HKU_CDS_OFFERINGS_PATH = path.join(__dirname, '..', 'data', 'hku-cds-offerings-2025.json');
 const HKUST_COMP_REQUIREMENTS_PATH = path.join(__dirname, '..', 'data', 'hkust-comp-requirements-2025.json');
+const CUHK_CSE_COURSES_PATH = path.join(__dirname, '..', 'data', 'cuhk-cse-ug-courses-2026.json');
 
 const HKU_CDS_PROGRAMME_NAMES = new Set([
   'Computing and Data Science',
@@ -299,6 +300,48 @@ function addHkustComputerScienceSupplements(programmes, majors, courses) {
   }
 }
 
+function getPrimaryCourseCode(courseCode) {
+  return String(courseCode || '').split('/')[0].trim();
+}
+
+function addCuhkComputerScienceSupplements(programmes, majors, courses) {
+  const source = JSON.parse(fs.readFileSync(CUHK_CSE_COURSES_PATH, 'utf8'));
+  const programme = programmes.find((item) => (
+    item.universityCode === 'CUHK'
+    && item.nameEn === 'Computer Science'
+  ));
+  if (!programme) return;
+  const major = majors.find((item) => item.programmeId === programme.id && item.nameEn === 'Computer Science');
+  if (!major) return;
+
+  const supplementCourses = source.courses
+    .filter((course) => /^(CSCI|ENGG)/.test(getPrimaryCourseCode(course.code)))
+    .map((course, index) => ({
+      id: `${major.id}-CUHK-CSE-${index + 1}`,
+      programmeId: programme.id,
+      majorId: major.id,
+      courseCode: course.code,
+      titleEn: course.title,
+      titleZh: course.title,
+      credits: course.units,
+      recommendedYear: Number(String(getPrimaryCourseCode(course.code)).match(/\d/)?.[0] || 0),
+      semester: '',
+      courseType: getPrimaryCourseCode(course.code).startsWith('ENGG') ? 'foundation' : 'programme_course',
+      sourceUrl: course.sourceUrl || source.sourceUrl,
+      officialUrl: source.sourceUrl,
+      sourceProvider: source.provider,
+      academicYear: source.academicYear
+    }));
+  courses.push(...supplementCourses);
+  major.courseCount = supplementCourses.length;
+  major.codedCourseCount = supplementCourses.length;
+  major.officialUrl = source.sourceUrl;
+  programme.sourceStatus = 'course_codes_available';
+  programme.courseCount = supplementCourses.length;
+  programme.codedCourseCount = supplementCourses.length;
+  programme.courseSourceUrl = source.sourceUrl;
+}
+
 function normalizeSource(source, sourceDir) {
   const raw = JSON.parse(fs.readFileSync(path.join(sourceDir, source.file), 'utf8'));
   const university = {
@@ -406,6 +449,9 @@ function normalizeSource(source, sourceDir) {
   }
   if (source.code === 'HKUST') {
     addHkustComputerScienceSupplements(programmes, majors, courses);
+  }
+  if (source.code === 'CUHK') {
+    addCuhkComputerScienceSupplements(programmes, majors, courses);
   }
 
   return { university, faculties, programmes, majors, courses };

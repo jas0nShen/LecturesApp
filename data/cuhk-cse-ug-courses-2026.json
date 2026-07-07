@@ -1,0 +1,604 @@
+{
+  "universityCode": "CUHK",
+  "provider": "Department of Computer Science and Engineering",
+  "academicYear": "2026-27",
+  "retrievedAt": "2026-07-07",
+  "sourceUrl": "https://www.cse.cuhk.edu.hk/academics/ug-course-list/",
+  "sourceNote": "Extracted from CUHK CSE official Undergraduate Course List.",
+  "courses": [
+    {
+      "code": "AIST1000",
+      "title": "Introduction to Artificial Intelligence and Machine Learning",
+      "units": 1,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/AIST1000.pdf"
+    },
+    {
+      "code": "AIST1110",
+      "title": "Introduction to Computing using Python",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/AIST1110.pdf"
+    },
+    {
+      "code": "AIST2010",
+      "title": "Introduction to Computer Music: From Analysis to Algorithmic Music",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/AIST2010.pdf"
+    },
+    {
+      "code": "AIST2601",
+      "title": "Technology, Society and Engineering Practice",
+      "units": 2,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/AIST2601.pdf"
+    },
+    {
+      "code": "AIST2602",
+      "title": "Engineering Practicum",
+      "units": 1,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/AIST2602.pdf"
+    },
+    {
+      "code": "AIST3010 / ESTR3112",
+      "title": "Numerical Optimization",
+      "units": 2,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/AIST3010.pdf"
+    },
+    {
+      "code": "AIST3020",
+      "title": "Introduction to Computer Systems",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/AIST3020.pdf"
+    },
+    {
+      "code": "AIST3030 / ESTR3114",
+      "title": "Numerical Optimization",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/AIST3030.pdf"
+    },
+    {
+      "code": "AIST3110",
+      "title": "Music Information Retrieval",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/AIST3110.pdf"
+    },
+    {
+      "code": "AIST3120",
+      "title": "Introduction to Natural Language Processing",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/AIST3120.pdf"
+    },
+    {
+      "code": "AIST3510 / SEEM3510",
+      "title": "Human-computer Interaction",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/AIST3510.pdf"
+    },
+    {
+      "code": "AIST4010 / ESTR4140",
+      "title": "Foundation of Applied Deep Learning",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/AIST4010.pdf"
+    },
+    {
+      "code": "AIST4020 *",
+      "title": "Agentic AI and LLM Serving *(New in 2026-27)",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/academics/ug-course-list/"
+    },
+    {
+      "code": "AIST4030 *",
+      "title": "Structured Data Modeling and Graph Neural Network *(New in 2026-27)",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/academics/ug-course-list/"
+    },
+    {
+      "code": "AIST4040 *",
+      "title": "Mathematical Foundations of Deep Learning *(New in 2026-27)",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/academics/ug-course-list/"
+    },
+    {
+      "code": "AIST4050 *",
+      "title": "Embodied Intelligence: Algorithms and Applications *(New in 2026-27)",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/academics/ug-course-list/"
+    },
+    {
+      "code": "AIST4060 *",
+      "title": "AI-Native Software Engineering *(New in 2026-27)",
+      "units": 2,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/academics/ug-course-list/"
+    },
+    {
+      "code": "AIST4998 / ESTR4998",
+      "title": "Final Year Project I",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/AIST4998.pdf"
+    },
+    {
+      "code": "AIST4999 / ESTR4999",
+      "title": "Final Year Project II",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/AIST4999.pdf"
+    },
+    {
+      "code": "CDAS4998",
+      "title": "Final Year Project I",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CDAS4998.pdf"
+    },
+    {
+      "code": "CDAS4999",
+      "title": "Final Year Project II",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CDAS4999.pdf"
+    },
+    {
+      "code": "CENG2010",
+      "title": "Digital Logic Design Laboratory",
+      "units": 1,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CENG2010.pdf"
+    },
+    {
+      "code": "CENG2030",
+      "title": "Fundamentals of Embedded Systems",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CENG2030.pdf"
+    },
+    {
+      "code": "CENG2400 / ESTR2100",
+      "title": "Embedded System Design",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CENG2400.pdf"
+    },
+    {
+      "code": "CENG3420",
+      "title": "Computer Organization and Design",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CENG3420.pdf"
+    },
+    {
+      "code": "CENG3430 / ESTR3100",
+      "title": "Rapid Prototyping of Digital Systems",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CENG3430.pdf"
+    },
+    {
+      "code": "CENG4120",
+      "title": "Computer-aided Design for Very Large Scale Integrated Circuits",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CENG4120.pdf"
+    },
+    {
+      "code": "CENG4480",
+      "title": "Embedded System Development and Applications",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CENG4480.pdf"
+    },
+    {
+      "code": "CENG4998 / ESTR4998",
+      "title": "Final Year Project I",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CENG4998.pdf"
+    },
+    {
+      "code": "CENG4999 / ESTR4999",
+      "title": "Final Year Project II",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CENG4999.pdf"
+    },
+    {
+      "code": "CSCI1020",
+      "title": "Hands-on Introduction to C++",
+      "units": 1,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI1020.pdf"
+    },
+    {
+      "code": "CSCI1030",
+      "title": "Hands-on Introduction to Java",
+      "units": 1,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI1030.pdf"
+    },
+    {
+      "code": "CSCI1120 / ESTR1100",
+      "title": "Introduction to Computing Using C++",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI1120.pdf"
+    },
+    {
+      "code": "CSCI1130 / ESTR1102",
+      "title": "Introduction to Computing Using Java",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI1130.pdf"
+    },
+    {
+      "code": "CSCI1510",
+      "title": "Computer Principles and C Programming",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI1510.pdf"
+    },
+    {
+      "code": "CSCI1520",
+      "title": "Computer Principles and C++ Programming",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI1520.pdf"
+    },
+    {
+      "code": "CSCI1530",
+      "title": "Computer Principles and Java Programming",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI1530.pdf"
+    },
+    {
+      "code": "CSCI1540",
+      "title": "Fundamental Computing With C++",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI1540.pdf"
+    },
+    {
+      "code": "CSCI1550",
+      "title": "Computer Principles and Python Programming",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI1550.pdf"
+    },
+    {
+      "code": "CSCI1580",
+      "title": "Visual Programming",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI1580.pdf"
+    },
+    {
+      "code": "CSCI2040",
+      "title": "Introduction to Python",
+      "units": 2,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI2040.pdf"
+    },
+    {
+      "code": "CSCI2100 / ESTR2102",
+      "title": "Data Structures",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI2100.pdf"
+    },
+    {
+      "code": "CSCI2510",
+      "title": "Computer Organization",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI2510.pdf"
+    },
+    {
+      "code": "CSCI2520",
+      "title": "Data Structures and Applications",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI2520.pdf"
+    },
+    {
+      "code": "CSCI2720 / ESTR2106",
+      "title": "Building Web Applications",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI2720.pdf"
+    },
+    {
+      "code": "CSCI2730",
+      "title": "Introduction to Blockchain Technologies and Applications",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI2730.pdf"
+    },
+    {
+      "code": "CSCI2740",
+      "title": "Competitive Programming",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI2740.pdf"
+    },
+    {
+      "code": "CSCI2750",
+      "title": "Data Mining and Information Processing",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI2750.pdf"
+    },
+    {
+      "code": "CSCI3100",
+      "title": "Software Engineering",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI3100.pdf"
+    },
+    {
+      "code": "CSCI3120",
+      "title": "Compiler Construction",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI3120.pdf"
+    },
+    {
+      "code": "CSCI3130",
+      "title": "Formal Languages and Automata Theory",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI3130.pdf"
+    },
+    {
+      "code": "CSCI3150 / ESTR3102",
+      "title": "Introduction to Operating Systems",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI3150.pdf"
+    },
+    {
+      "code": "CSCI3160 / ESTR3104",
+      "title": "Design and Analysis of Algorithms",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI3160.pdf"
+    },
+    {
+      "code": "CSCI3170",
+      "title": "Introduction to Database Systems",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI3170.pdf"
+    },
+    {
+      "code": "CSCI3180 / ESTR3106",
+      "title": "Principles of Programming Languages",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI3180.pdf"
+    },
+    {
+      "code": "CSCI3190",
+      "title": "Introduction to Discrete Mathematics and Algorithms",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI3190.pdf"
+    },
+    {
+      "code": "CSCI3220/ ESTR3110",
+      "title": "Algorithms for Bioinformatics",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI3220.pdf"
+    },
+    {
+      "code": "CSCI3230 / ESTR3108",
+      "title": "Fundamentals of Artificial Intelligence",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI3230.pdf"
+    },
+    {
+      "code": "CSCI3250",
+      "title": "Computers and Society",
+      "units": 2,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI3250.pdf"
+    },
+    {
+      "code": "CSCI3251",
+      "title": "Engineering Practicum",
+      "units": 1,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI3251.pdf"
+    },
+    {
+      "code": "CSCI3260",
+      "title": "Principles of Computer Graphics",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI3260.pdf"
+    },
+    {
+      "code": "CSCI3270",
+      "title": "Advanced Programming Laboratory",
+      "units": 2,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI3270.pdf"
+    },
+    {
+      "code": "CSCI3280",
+      "title": "Introduction to Multimedia Systems",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI3280.pdf"
+    },
+    {
+      "code": "CSCI3290",
+      "title": "Computational Imaging and Vision",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI3290.pdf"
+    },
+    {
+      "code": "CSCI3310",
+      "title": "Mobile Computing and Applications Development",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI3310.pdf"
+    },
+    {
+      "code": "CSCI3320",
+      "title": "Fundamentals of Machine Learning",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI3320.pdf"
+    },
+    {
+      "code": "CSCI3330",
+      "title": "Fundamentals of Applied Computer Vision",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI3330.pdf"
+    },
+    {
+      "code": "CSCI3340",
+      "title": "Scientific Computing",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI3340.pdf"
+    },
+    {
+      "code": "CSCI3350",
+      "title": "Introduction to Quantum Computing",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI3350.pdf"
+    },
+    {
+      "code": "CSCI3360",
+      "title": "Introduction to Computational Complexity",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI3360.pdf"
+    },
+    {
+      "code": "CSCI4120",
+      "title": "Principles of Computer Game Software",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI4120.pdf"
+    },
+    {
+      "code": "CSCI4130 / IERG4130",
+      "title": "Introduction to Cyber Security",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI4130.pdf"
+    },
+    {
+      "code": "CSCI4140",
+      "title": "Open-Source Software Project Development",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI4140.pdf"
+    },
+    {
+      "code": "CSCI4160 / ESTR4104",
+      "title": "Distributed and Parallel Computing",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI4160.pdf"
+    },
+    {
+      "code": "CSCI4180 / ESTR4106",
+      "title": "Introduction to Cloud Computing and Storage",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI4180.pdf"
+    },
+    {
+      "code": "CSCI4190",
+      "title": "Introduction to Social Networks",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI4190.pdf"
+    },
+    {
+      "code": "CSCI4200",
+      "title": "Operating System Engineering",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI4200.pdf"
+    },
+    {
+      "code": "CSCI4230",
+      "title": "Computational Learning Theory",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI4230.pdf"
+    },
+    {
+      "code": "CSCI4240 *",
+      "title": "Advanced Algorithms: Randomization and Approximation *(New in 2026-27)",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/academics/ug-course-list/"
+    },
+    {
+      "code": "CSCI4430 / ESTR4120",
+      "title": "Data Communication and Computer Networks",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI4430.pdf"
+    },
+    {
+      "code": "CSCI4998 / ESTR4998",
+      "title": "Final Year Project I",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI4998.pdf"
+    },
+    {
+      "code": "CSCI4999 / ESTR4999",
+      "title": "Final Year Project II",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/CSCI4999.pdf"
+    },
+    {
+      "code": "ENGG1003",
+      "title": "Digital Literacy and Computational Thinking—P (offered by the Office of Digital Literacy Education)",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/ENGG1003.pdf"
+    },
+    {
+      "code": "ENGG1004",
+      "title": "Digital Literacy and Computational Thinking—R (offered by the Office of Digital Literacy Education)",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/ENGG1004.pdf"
+    },
+    {
+      "code": "ENGG1110 / ESTR1002",
+      "title": "Problem Solving By Programming (offered by the Faculty of Engineering)",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/ENGG1110.pdf"
+    },
+    {
+      "code": "ENGG1111",
+      "title": "AI Literacy Workshop (offered by the Faculty of Engineering)",
+      "units": 0,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/ENGG1111.pdf"
+    },
+    {
+      "code": "ENGG1120 / ESTR1005",
+      "title": "Linear Algebra for Engineers (offered by the Faculty of Engineering)",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/ENGG1120.pdf"
+    },
+    {
+      "code": "ENGG1125 / ESTR1007 (New)",
+      "title": "Single Variable Calculus for Engineers (offered by the Faculty of Engineering)",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/ENGG1125.pdf"
+    },
+    {
+      "code": "ENGG1130 / ESTR1006",
+      "title": "Multivariable Calculus for Engineers (offered by the Faculty of Engineering)",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/ENGG1130.pdf"
+    },
+    {
+      "code": "ENGG1310 / ESTR1003",
+      "title": "Engineering Physics: Electromagnetics, Optics and Modern Physics (offered by the Faculty of Engineering)",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/ENGG1310.pdf"
+    },
+    {
+      "code": "ENGG1820",
+      "title": "Engineering Internship",
+      "units": 1,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/ENGG1820.pdf"
+    },
+    {
+      "code": "ENGG2020 / ESTR2104",
+      "title": "Digital Logic and Systems",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/ENGG2020.pdf"
+    },
+    {
+      "code": "ENGG2440 / ESTR2004",
+      "title": "Discrete Mathematics for Engineers (offered by the Faculty of Engineering)",
+      "units": 3,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/ENGG2440.pdf"
+    },
+    {
+      "code": "ENGG2720 / ESTR2014",
+      "title": "Complex Variables for Engineers (offered by the Faculty of Engineering)",
+      "units": 2,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/ENGG2720.pdf"
+    },
+    {
+      "code": "ENGG2740 / ESTR2016",
+      "title": "Differential Equations for Engineers (offered by the Faculty of Engineering)",
+      "units": 2,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/ENGG2740.pdf"
+    },
+    {
+      "code": "ENGG2760 / ESTR2018",
+      "title": "Probability for Engineers (offered by the Faculty of Engineering)",
+      "units": 2,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/ENGG2760.pdf"
+    },
+    {
+      "code": "ENGG2780 / ESTR2020",
+      "title": "Statistics for Engineers (offered by the Faculty of Engineering)",
+      "units": 2,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/ENGG2780.pdf"
+    },
+    {
+      "code": "ENGG3802",
+      "title": "Introduction to Engineering Entrepreneurship (offered by other Engineering Dept)",
+      "units": 1,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/ENGG3802.pdf"
+    },
+    {
+      "code": "ENGG3803",
+      "title": "Engineering Entrepreneurship Development Project (offered by other Engineering Dept)",
+      "units": 2,
+      "sourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Courses/ENGG3803.pdf"
+    }
+  ]
+}
