@@ -152,6 +152,15 @@ test('backup copy actions use the readable backup formatter', () => {
   assert(privacyLogic.includes('service.formatUserDataBackup()'));
 });
 
+test('feedback copy includes only count-based local context', () => {
+  const profileLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'profile', 'profile.js'), 'utf8');
+  const feedbackLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'utils', 'feedbackService.js'), 'utf8');
+
+  assert(profileLogic.includes('userSummary: this.data.userSummary'));
+  assert(feedbackLogic.includes('本机数据摘要'));
+  assert(feedbackLogic.includes('只包含数量，不包含具体课程或笔记内容'));
+});
+
 test('TPG catalogue copy describes availability instead of completeness', () => {
   const cataloguePage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'tpg-catalog', 'tpg-catalog.wxml'), 'utf8');
 

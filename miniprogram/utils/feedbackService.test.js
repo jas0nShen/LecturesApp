@@ -22,6 +22,32 @@ test('feedback template includes launch context without uploading local user dat
   assert(!template.includes('should-not-leak'));
 });
 
+test('feedback template can include only count-based local data summary', () => {
+  const template = feedbackService.buildFeedbackTemplate({
+    profileType: 'tpg',
+    universityCode: 'HKU',
+    programmeId: 'HKU-TPG-048',
+    programmeName: 'Master of Science in Artificial Intelligence (MSc(AI))',
+    curriculumYear: '2025-26'
+  }, {
+    userSummary: {
+      hasProfile: true,
+      favoriteCount: 2,
+      completedCount: 1,
+      studyPlanCount: 3,
+      noteCount: 4,
+      searchCount: 5,
+      noteText: 'private note should not leak',
+      courseCodes: ['COMP1117']
+    }
+  });
+
+  assert(template.includes('本机数据摘要：已设置资料：是 · 收藏 2 · 已修 1 · 计划 3 · 笔记 4 · 搜索 5'));
+  assert(template.includes('只包含数量，不包含具体课程或笔记内容'));
+  assert(!template.includes('private note should not leak'));
+  assert(!template.includes('COMP1117'));
+});
+
 test('feedback template works before a programme is saved', () => {
   const template = feedbackService.buildFeedbackTemplate(null);
 

@@ -71,7 +71,9 @@ Page({
   },
 
   copyFeedbackTemplate() {
-    const template = feedbackService.buildFeedbackTemplate(this.data.profile);
+    const template = feedbackService.buildFeedbackTemplate(this.data.profile, {
+      userSummary: this.data.userSummary
+    });
     wx.setClipboardData({
       data: template,
       success() {
