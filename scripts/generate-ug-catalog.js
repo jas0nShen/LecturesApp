@@ -174,7 +174,21 @@ function normalizeSource(source, sourceDir) {
   return { university, faculties, programmes, majors, courses };
 }
 
+function validateSourceDir(sourceDir) {
+  const missing = SOURCES
+    .map((source) => path.join(sourceDir, source.file))
+    .filter((filePath) => !fs.existsSync(filePath));
+  if (missing.length) {
+    throw new Error([
+      `Missing UG source JSON files in ${sourceDir}`,
+      'Run with --source-dir /path/to/pdf/outputs or place the generated JSON files there.',
+      ...missing.map((filePath) => `- ${path.basename(filePath)}`)
+    ].join('\n'));
+  }
+}
+
 function buildCatalogue(sourceDir = DEFAULT_SOURCE_DIR) {
+  validateSourceDir(sourceDir);
   const pieces = SOURCES.map((source) => normalizeSource(source, sourceDir));
   return {
     generatedFrom: 'programme_year_semester_courses_2026',
@@ -205,5 +219,6 @@ if (require.main === module) {
 module.exports = {
   buildCatalogue,
   listCourses,
-  normalizeSource
+  normalizeSource,
+  validateSourceDir
 };

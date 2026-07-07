@@ -79,6 +79,12 @@ npm run check
 npm run sync:ug-catalog
 ```
 
+如果 JSON 文件不在默认目录，可显式传入：
+
+```bash
+npm run sync:ug-catalog -- --source-dir "/path/to/pdf/outputs"
+```
+
 如需从原始 PDF 重新生成索引（本机须安装 `pypdf`）：
 
 ```bash
