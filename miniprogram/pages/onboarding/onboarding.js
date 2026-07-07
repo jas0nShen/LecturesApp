@@ -19,11 +19,9 @@ Page({
     currentYear: '1',
     ugKeyword: '',
     ugSelectedIndexLabel: '',
-    ugSchoolStats: null,
     ugMajorProfile: null,
     ugCourseStatus: '',
     tpgUniversities: tpgService.listUniversities(),
-    tpgTotalProgrammes: tpgService.getSchoolCoverage().programmeCount,
     tpgProgrammes: [],
     filteredTpgProgrammes: [],
     visibleTpgProgrammes: [],
@@ -73,10 +71,6 @@ Page({
 
   selectMode(event) {
     this.setData({ mode: event.currentTarget.dataset.mode });
-  },
-
-  switchToTpg() {
-    this.setData({ mode: 'tpg' });
   },
 
   async onUniversityChange(event) {
@@ -155,23 +149,13 @@ Page({
       ? selectedProgramme
       : filteredUgProgrammes[0] || {};
     const selectedIndex = filteredUgProgrammes.findIndex((item) => item.id === effectiveProgramme.id);
-    const programmeIds = new Set(programmes.map((programme) => programme.id));
-    const majorCount = programmes.reduce((sum, programme) => sum + ugService.listMajors(programme.id).length, 0);
-    const codedCourseCount = programmes.reduce((sum, programme) => sum + (programme.codedCourseCount || 0), 0);
     this.setData({
       selectedUniversity,
       programmes,
       filteredUgProgrammes,
       visibleUgProgrammes: filteredUgProgrammes.slice(0, 5),
       ugKeyword,
-      ugSelectedIndexLabel: selectedIndex >= 0 ? `${selectedIndex + 1} / ${filteredUgProgrammes.length}` : `0 / ${filteredUgProgrammes.length}`,
-      ugSchoolStats: {
-        schoolCount: this.data.universities.length || ugService.listUniversities().length,
-        programmeCount: programmes.length,
-        majorCount,
-        codedCourseCount,
-        hasDuplicateProgrammeIds: programmeIds.size !== programmes.length
-      }
+      ugSelectedIndexLabel: selectedIndex >= 0 ? `${selectedIndex + 1} / ${filteredUgProgrammes.length}` : `0 / ${filteredUgProgrammes.length}`
     });
     this.applyUgProgrammeSelection(effectiveProgramme, profile);
   },

@@ -87,43 +87,6 @@
   border: 1rpx dashed #c7d5ce;
 }
 
-.ug-stats {
-  background: #17352c;
-  border-radius: 18rpx;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  margin: -8rpx 0 28rpx;
-  overflow: hidden;
-}
-
-.ug-stat {
-  padding: 18rpx 10rpx;
-  text-align: center;
-}
-
-.ug-stat + .ug-stat {
-  border-left: 1rpx solid rgba(185, 216, 207, 0.22);
-}
-
-.ug-stat-value {
-  color: #ffffff;
-  font-size: 30rpx;
-  font-weight: 900;
-}
-
-.ug-stat-label {
-  color: #a9c1b8;
-  font-size: 17rpx;
-  line-height: 1.25;
-  margin-top: 6rpx;
-}
-
-.inline-link {
-  color: #0b6b55;
-  font-weight: 800;
-  margin-top: 10rpx;
-}
-
 .tpg-note {
   background: #e4f0eb;
   color: #31594a;

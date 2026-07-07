@@ -21,8 +21,6 @@ Page({
     resultScope: '全部学校',
     resultHint: '可按学校或关键词继续缩小范围',
     limitHint: '',
-    totalProgrammes: coverage.programmeCount,
-    totalCourses: coverage.courseCount,
     selectedProfile: null
   },
 
@@ -129,11 +127,11 @@ Page({
       ? '正在匹配 Programme、课程名与代码'
       : this.data.availabilityFilter === 'courses'
         ? '仅显示已录入必修、选修或课程清单的 Programme'
-        : this.data.availabilityFilter === 'pending'
-          ? '仅显示课程组尚未开放或仍待拆分的 Programme'
+      : this.data.availabilityFilter === 'pending'
+        ? '仅显示课程组尚未开放或仍待拆分的 Programme'
       : selectedSchool
-        ? `${selectedSchool.name} · ${selectedSchool.programmeCount} 个 Programme`
-        : `当前资料库共 ${this.data.totalProgrammes} 个 Programme`;
+        ? `${selectedSchool.name} · 可继续输入 Programme、课程名或代码`
+        : '可选择学校，或输入 Programme、课程名与代码';
     const limitHint = programmes.length > visibleProgrammes.length
       ? keyword
         ? '结果仍较多，可以输入更具体的 Programme、课程名或代码。'

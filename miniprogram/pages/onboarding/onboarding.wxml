@@ -25,27 +25,7 @@
 
   <view wx:if="{{mode === 'undergraduate'}}" class="section panel">
     <view class="scope-note ug-note">
-      本科资料库已接入多校 Programme 和 Major；课程清单会在公开资料复核后逐步开放。
-      <view class="inline-link" bindtap="switchToTpg">查看授课硕士</view>
-    </view>
-
-    <view wx:if="{{ugSchoolStats}}" class="ug-stats">
-      <view class="ug-stat">
-        <view class="ug-stat-value">{{ugSchoolStats.schoolCount}}</view>
-        <view class="ug-stat-label">所大学</view>
-      </view>
-      <view class="ug-stat">
-        <view class="ug-stat-value">{{ugSchoolStats.programmeCount}}</view>
-        <view class="ug-stat-label">当前校 Programme</view>
-      </view>
-      <view class="ug-stat">
-        <view class="ug-stat-value">{{ugSchoolStats.majorCount}}</view>
-        <view class="ug-stat-label">Major / Track</view>
-      </view>
-      <view class="ug-stat">
-        <view class="ug-stat-value">{{ugSchoolStats.codedCourseCount}}</view>
-        <view class="ug-stat-label">课程代码</view>
-      </view>
+      选择你的大学、Programme 和 Major；课程清单未开放时，也可以先保存资料。
     </view>
 
     <view class="field">

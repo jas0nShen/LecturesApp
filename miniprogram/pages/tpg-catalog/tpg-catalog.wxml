@@ -3,20 +3,6 @@
     <view class="hero-index">TPG PROGRAMMES</view>
     <view class="hero-title">先找到你的 Programme</view>
     <view class="hero-copy">从已整理的授课硕士资料中查找 Programme。必修与选修课程仍在逐项核验，页面会明确标记课程组开放状态。</view>
-    <view class="hero-stats">
-      <view class="hero-stat">
-        <view class="hero-stat-value">{{universities.length}}</view>
-        <view class="hero-stat-label">所大学</view>
-      </view>
-      <view class="hero-stat">
-        <view class="hero-stat-value">{{totalProgrammes}}</view>
-        <view class="hero-stat-label">个 Programme</view>
-      </view>
-      <view class="hero-stat">
-        <view class="hero-stat-value">{{totalCourses}}</view>
-        <view class="hero-stat-label">门已拆课程</view>
-      </view>
-    </view>
   </view>
 
   <view wx:if="{{selectedProfile}}" class="selected-card" bindtap="goSelectedProgramme">
@@ -41,7 +27,6 @@
         bindtap="selectUniversity"
       >
         <text>{{item.code}}</text>
-        <text class="school-chip-count">{{item.programmeCount}}</text>
       </view>
     </view>
   </scroll-view>
