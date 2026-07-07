@@ -70,6 +70,7 @@ Page({
     ugMajorProfile: null,
     ugCourseStatus: '',
     savedUgProfile: null,
+    showUgUniversitySheet: false,
     tpgUniversities: INITIAL_TPG_UNIVERSITIES,
     tpgUniversityOptions: INITIAL_TPG_UNIVERSITIES.map(formatTpgUniversityOption),
     tpgSchoolCoverage: tpgService.getSchoolCoverage(),
@@ -86,7 +87,8 @@ Page({
     tpgCourseCount: 0,
     tpgCourseStatus: '',
     tpgSelectedIndexLabel: '',
-    savedTpgProfile: null
+    savedTpgProfile: null,
+    showTpgUniversitySheet: false
   },
 
   async onLoad() {
@@ -157,15 +159,34 @@ Page({
     this.setData({ mode: event.currentTarget.dataset.mode });
   },
 
-  async onUniversityChange(event) {
-    const index = Number(event.detail.value);
+  noop() {},
+
+  openUgUniversitySheet() {
+    this.setData({ showUgUniversitySheet: true });
+  },
+
+  closeUgUniversitySheet() {
+    this.setData({ showUgUniversitySheet: false });
+  },
+
+  selectUgUniversity(event) {
+    const index = Number(event.currentTarget.dataset.index);
+    this.selectUgUniversityByIndex(index);
+  },
+
+  selectUgUniversityByIndex(index) {
     const selectedUniversity = this.data.universities[index] || this.data.universities[0] || {};
     if (!selectedUniversity.id) {
       wx.showToast({ title: '请选择大学', icon: 'none' });
       return;
     }
     const programmes = ugService.listProgrammes({ universityId: selectedUniversity.id, degreeLevel: 'undergraduate' });
+    this.setData({ showUgUniversitySheet: false });
     this.setUgSelection(selectedUniversity, programmes, programmes[0] || {}, '');
+  },
+
+  async onUniversityChange(event) {
+    this.selectUgUniversityByIndex(Number(event.detail.value));
   },
 
   async onProgrammeChange(event) {
@@ -338,8 +359,20 @@ Page({
     return `${majorProfile.courseCount} 门课程 · ${majorProfile.trackedRequirementCount} 个要求组 · ${majorProfile.curriculumYear}`;
   },
 
-  onTpgUniversityChange(event) {
-    const index = Number(event.detail.value);
+  openTpgUniversitySheet() {
+    this.setData({ showTpgUniversitySheet: true });
+  },
+
+  closeTpgUniversitySheet() {
+    this.setData({ showTpgUniversitySheet: false });
+  },
+
+  selectTpgUniversity(event) {
+    const index = Number(event.currentTarget.dataset.index);
+    this.selectTpgUniversityByIndex(index);
+  },
+
+  selectTpgUniversityByIndex(index) {
     const tpgUniversities = tpgService.listUniversities();
     const selectedTpgUniversity = tpgUniversities[index] || tpgUniversities[0] || {};
     if (!selectedTpgUniversity.code) {
@@ -349,9 +382,14 @@ Page({
     const tpgProgrammes = tpgService.listProgrammes(selectedTpgUniversity.code);
     this.setData({
       tpgUniversities,
-      tpgUniversityOptions: tpgUniversities.map(formatTpgUniversityOption)
+      tpgUniversityOptions: tpgUniversities.map(formatTpgUniversityOption),
+      showTpgUniversitySheet: false
     });
     this.setTpgSelection(selectedTpgUniversity, tpgProgrammes, tpgProgrammes[0] || {}, '');
+  },
+
+  onTpgUniversityChange(event) {
+    this.selectTpgUniversityByIndex(Number(event.detail.value));
   },
 
   onTpgProgrammeChange(event) {

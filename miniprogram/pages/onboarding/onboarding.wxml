@@ -51,9 +51,7 @@
 
     <view class="field">
       <view class="label">大学</view>
-      <picker range="{{universityOptions}}" value="{{ugUniversityIndex}}" bindchange="onUniversityChange">
-        <view class="select">{{selectedUniversity.nameZh || '请选择大学'}}</view>
-      </picker>
+      <view class="select select-arrow" bindtap="openUgUniversitySheet">{{selectedUniversity.nameZh || '请选择大学'}}</view>
     </view>
 
     <view class="field">
@@ -160,9 +158,7 @@
 
     <view class="field">
       <view class="label">大学</view>
-      <picker range="{{tpgUniversityOptions}}" value="{{tpgUniversityIndex}}" bindchange="onTpgUniversityChange">
-        <view class="select select-arrow">{{selectedTpgUniversity.shortName || '请选择大学'}}</view>
-      </picker>
+      <view class="select select-arrow" bindtap="openTpgUniversitySheet">{{selectedTpgUniversity.shortName || '请选择大学'}}</view>
     </view>
 
     <view class="field">
@@ -222,6 +218,44 @@
         <view class="preview-button" bindtap="previewTpgProgramme">预览 Programme</view>
         <view class="button" bindtap="save">保存授课硕士 Programme</view>
       </view>
+    </view>
+  </view>
+
+  <view wx:if="{{showUgUniversitySheet}}" class="sheet-mask" bindtap="closeUgUniversitySheet">
+    <view class="sheet" catchtap="noop">
+      <view class="sheet-head">
+        <view class="sheet-cancel" bindtap="closeUgUniversitySheet">取消</view>
+        <view class="sheet-title">选择大学</view>
+        <view class="sheet-placeholder"></view>
+      </view>
+      <scroll-view class="sheet-list" scroll-y>
+        <view
+          wx:for="{{universityOptions}}"
+          wx:key="*this"
+          class="sheet-option {{ugUniversityIndex === index ? 'sheet-option-active' : ''}}"
+          data-index="{{index}}"
+          bindtap="selectUgUniversity"
+        >{{item}}</view>
+      </scroll-view>
+    </view>
+  </view>
+
+  <view wx:if="{{showTpgUniversitySheet}}" class="sheet-mask" bindtap="closeTpgUniversitySheet">
+    <view class="sheet" catchtap="noop">
+      <view class="sheet-head">
+        <view class="sheet-cancel" bindtap="closeTpgUniversitySheet">取消</view>
+        <view class="sheet-title">选择大学</view>
+        <view class="sheet-placeholder"></view>
+      </view>
+      <scroll-view class="sheet-list" scroll-y>
+        <view
+          wx:for="{{tpgUniversityOptions}}"
+          wx:key="*this"
+          class="sheet-option {{tpgUniversityIndex === index ? 'sheet-option-active' : ''}}"
+          data-index="{{index}}"
+          bindtap="selectTpgUniversity"
+        >{{item}}</view>
+      </scroll-view>
     </view>
   </view>
 </view>
