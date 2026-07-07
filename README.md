@@ -112,5 +112,11 @@ npm run check:ship
 
 `check:ship` 会依次执行功能/数据测试和 release readiness 检查。若需要单独排查，也可以分别运行 `npm run check` 和 `npm run check:release`。
 
+如果只想快速查看当前发布状态摘要，可运行：
+
+```bash
+npm run status:release
+```
+
 人工发布步骤见 [`docs/RELEASE_CHECKLIST.md`](docs/RELEASE_CHECKLIST.md)。
 可直接复制到微信后台的首发说明见 [`docs/REVIEW_SUBMISSION.md`](docs/REVIEW_SUBMISSION.md)。
