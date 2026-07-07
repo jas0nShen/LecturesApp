@@ -131,6 +131,14 @@ test('TPG course page avoids misleading zero-course hero copy', () => {
 
   assert(coursesPage.includes('tpgCourseCountDisplay'));
   assert(coursesPage.includes('tpgCourseCountLabel'));
+  assert(coursesPage.includes("{{tpgCourseCount ? '课程已开放' : '复核中'}}"));
+  assert(coursesPage.includes("{{ugCourseCount ? '课程已开放' : '复核中'}}"));
+  assert(coursesPage.includes("{{tpgCourseCount ? '课程' : '索引'}}"));
+  assert(coursesPage.includes("{{ugCourseCount ? '课程' : '索引'}}"));
+  assert(coursesPage.includes('先选范围'));
+  ['TPG FIRST', 'TPG READY', 'UG READY', 'IN REVIEW', 'PROGRAMME ADDED', 'NO MATCH', 'NO OFFERING'].forEach((label) => {
+    assert(!coursesPage.includes(label), `Courses page still exposes internal label: ${label}`);
+  });
   assert(coursesLogic.includes("status.hasCourseGroups ? allCourses.length : '待开放'"));
   assert(!coursesPage.includes('<view class="tpg-number">{{tpgCourseCount}}</view>'));
 });

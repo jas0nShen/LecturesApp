@@ -1,7 +1,7 @@
 <view class="page">
   <block wx:if="{{needsSetup}}">
     <view class="setup-card">
-      <view class="setup-kicker">TPG FIRST</view>
+      <view class="setup-kicker">先选范围</view>
       <view class="setup-title">先选择你的授课硕士 Programme</view>
       <view class="setup-copy">课程页会根据你保存的 Programme 显示课程状态；未设置前不会默认展示其他示例数据。</view>
       <view class="setup-actions">
@@ -21,12 +21,12 @@
           <view class="tpg-number {{tpgCourseCount ? '' : 'text-status'}}">{{tpgCourseCountDisplay}}</view>
           <view class="tpg-number-label">{{tpgCourseCountLabel}}</view>
         </view>
-        <view class="tpg-seal">{{tpgCourseCount ? 'COURSES' : 'INDEX'}}</view>
+        <view class="tpg-seal">{{tpgCourseCount ? '课程' : '索引'}}</view>
       </view>
     </view>
 
     <view class="section tpg-status">
-      <view class="stamp-mark">{{tpgCourseCount ? 'TPG READY' : 'IN REVIEW'}}</view>
+      <view class="stamp-mark">{{tpgCourseCount ? '课程已开放' : '复核中'}}</view>
       <view class="tpg-status-copy">
         <view class="stamp-title">{{tpgStatusTitle}}</view>
         <view class="stamp-copy">{{tpgStatusCopy}}</view>
@@ -55,13 +55,13 @@
       </view>
 
       <view wx:if="{{tpgCourseCount === 0}}" class="empty tpg-empty">
-        <view class="empty-mark">PROGRAMME ADDED</view>
+        <view class="empty-mark">已收录</view>
         <view class="empty-title">Programme 已收录，课程清单待开放</view>
         <view class="empty-copy">你可以先查看 Programme 详情和资料来源；课程组完成复核后会在这里显示。</view>
       </view>
 
       <view wx:elif="{{tpgCourses.length === 0}}" class="empty">
-        <view class="empty-mark">NO MATCH</view>
+        <view class="empty-mark">无匹配</view>
         <view class="empty-title">没有找到匹配课程</view>
         <view class="empty-copy">试试只输入课程代码前缀，或清除关键词。</view>
         <view class="empty-actions">
@@ -87,12 +87,12 @@
           <view class="tpg-number {{ugCourseCount ? '' : 'text-status'}}">{{ugCourseCountDisplay}}</view>
           <view class="tpg-number-label">本科课程清单</view>
         </view>
-        <view class="tpg-seal">{{ugCourseCount ? 'COURSES' : 'INDEX'}}</view>
+        <view class="tpg-seal">{{ugCourseCount ? '课程' : '索引'}}</view>
       </view>
     </view>
 
     <view class="section tpg-status">
-      <view class="stamp-mark">{{ugCourseCount ? 'UG READY' : 'IN REVIEW'}}</view>
+      <view class="stamp-mark">{{ugCourseCount ? '课程已开放' : '复核中'}}</view>
       <view class="tpg-status-copy">
         <view class="stamp-title">{{ugStatusTitle}}</view>
         <view class="stamp-copy">{{ugStatusCopy}}</view>
@@ -122,13 +122,13 @@
       </view>
 
       <view wx:if="{{ugCourseCount === 0}}" class="empty tpg-empty">
-        <view class="empty-mark">PROGRAMME ADDED</view>
+        <view class="empty-mark">已收录</view>
         <view class="empty-title">Programme / Major 已收录，课程清单待开放</view>
         <view class="empty-copy">当前先保存你的本科范围；课程代码和毕业规则完成复核后会在这里显示。</view>
       </view>
 
       <view wx:elif="{{ugCourses.length === 0}}" class="empty">
-        <view class="empty-mark">NO MATCH</view>
+        <view class="empty-mark">无匹配</view>
         <view class="empty-title">没有找到匹配课程</view>
         <view class="empty-copy">试试只输入课程代码前缀，或清除关键词。</view>
         <view class="empty-actions">
@@ -212,7 +212,7 @@
       </view>
     </view>
     <view wx:if="{{courses.length === 0}}" class="empty">
-      <view class="empty-mark">NO MATCH</view>
+      <view class="empty-mark">无匹配</view>
       <view class="empty-title">没有找到匹配课程</view>
       <view class="empty-copy">试试只输入课程代码前缀，或清除当前筛选条件。</view>
       <view class="empty-actions">
@@ -263,7 +263,7 @@
         </view>
       </view>
       <view wx:if="{{offerings.length === 0}}" class="empty">
-        <view class="empty-mark">NO OFFERING</view>
+        <view class="empty-mark">暂无开课</view>
         <view class="empty-title">没有匹配的官方开课</view>
         <view class="empty-copy">课程可能在另一学期开设，也可以尝试只搜索 Course Code。</view>
         <view class="empty-actions">
