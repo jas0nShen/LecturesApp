@@ -220,5 +220,6 @@ module.exports = {
   buildCatalogue,
   listCourses,
   normalizeSource,
+  SOURCES,
   validateSourceDir
 };
