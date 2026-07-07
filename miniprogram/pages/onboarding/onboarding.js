@@ -41,13 +41,14 @@ Page({
 
   async onLoad() {
     const profile = service.getProfile();
+    const initialMode = profile && profile.profileType === 'undergraduate' ? 'undergraduate' : 'tpg';
     const savedTpgProfile = tpgService.getProfileSummary(profile);
     const savedUgProfile = profile && profile.profileType === 'undergraduate'
       ? ugService.getMajorProfile(profile.programmeId, profile.majorId, profile.curriculumYear)
       : null;
     this.loadTpg(profile);
     this.setData({
-      mode: 'tpg',
+      mode: initialMode,
       savedUgProfile,
       savedTpgProfile: savedTpgProfile && savedTpgProfile.programme ? savedTpgProfile : null
     });

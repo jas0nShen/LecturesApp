@@ -197,6 +197,8 @@ test('undergraduate onboarding shows the saved local profile summary', () => {
   const onboardingLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'onboarding', 'onboarding.js'), 'utf8');
 
   assert(onboardingLogic.includes('savedUgProfile: null'));
+  assert(onboardingLogic.includes("const initialMode = profile && profile.profileType === 'undergraduate' ? 'undergraduate' : 'tpg'"));
+  assert(onboardingLogic.includes('mode: initialMode'));
   assert(onboardingLogic.includes("profile.profileType === 'undergraduate'"));
   assert(onboardingLogic.includes('ugService.getMajorProfile(profile.programmeId, profile.majorId, profile.curriculumYear)'));
   assert(onboardingPage.includes('wx:if="{{savedUgProfile}}"'));
