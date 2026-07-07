@@ -6,11 +6,13 @@ Page({
   data: {
     mode: 'tpg',
     universities: [],
+    ugSchoolCoverage: [],
     programmes: [],
     filteredUgProgrammes: [],
     visibleUgProgrammes: [],
     majors: [],
     selectedUniversity: {},
+    selectedUgCoverage: null,
     selectedProgramme: {},
     selectedMajor: {},
     curriculumYears: [],
@@ -47,15 +49,17 @@ Page({
 
   async loadUndergraduate(profile) {
     const universities = ugService.listUniversities();
+    const ugSchoolCoverage = ugService.getSchoolCoverage();
     const selectedUniversity = universities.find((item) => item.id === (profile && profile.universityId)) || universities[0];
     const programmes = ugService.listProgrammes({ universityId: selectedUniversity.id, degreeLevel: 'undergraduate' });
     const selectedProgramme = programmes.find((item) => item.id === (profile && profile.programmeId)) || programmes[0];
     this.setData({
       universities,
+      ugSchoolCoverage,
       selectedUniversity,
       currentYear: profile && profile.profileType !== 'tpg' ? String(profile.currentYear) : '1'
     });
-    this.setUgSelection(selectedUniversity, programmes, selectedProgramme, '', profile);
+    this.setUgSelection(selectedUniversity, programmes, selectedProgramme, '', profile, ugSchoolCoverage);
   },
 
   loadTpg(profile) {
@@ -143,14 +147,23 @@ Page({
     });
   },
 
-  setUgSelection(selectedUniversity, programmes, selectedProgramme, ugKeyword = this.data.ugKeyword, profile = null) {
+  setUgSelection(
+    selectedUniversity,
+    programmes,
+    selectedProgramme,
+    ugKeyword = this.data.ugKeyword,
+    profile = null,
+    ugSchoolCoverage = this.data.ugSchoolCoverage
+  ) {
     const filteredUgProgrammes = ugService.searchProgrammes(programmes, ugKeyword);
     const effectiveProgramme = selectedProgramme && selectedProgramme.id
       ? selectedProgramme
       : filteredUgProgrammes[0] || {};
     const selectedIndex = filteredUgProgrammes.findIndex((item) => item.id === effectiveProgramme.id);
+    const selectedUgCoverage = ugSchoolCoverage.find((item) => item.code === selectedUniversity.code) || null;
     this.setData({
       selectedUniversity,
+      selectedUgCoverage,
       programmes,
       filteredUgProgrammes,
       visibleUgProgrammes: filteredUgProgrammes.slice(0, 5),

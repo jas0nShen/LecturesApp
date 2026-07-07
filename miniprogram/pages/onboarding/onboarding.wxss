@@ -87,6 +87,67 @@
   border: 1rpx dashed #c7d5ce;
 }
 
+.ug-coverage-card {
+  align-items: center;
+  background: #17352c;
+  border-radius: 18rpx;
+  box-shadow: 0 10rpx 24rpx rgba(8, 45, 35, 0.12);
+  color: #ffffff;
+  display: flex;
+  gap: 18rpx;
+  justify-content: space-between;
+  margin: -8rpx 0 28rpx;
+  padding: 24rpx;
+}
+
+.coverage-kicker {
+  color: #9dc7b9;
+  font-size: 17rpx;
+  font-weight: 850;
+  letter-spacing: 2rpx;
+}
+
+.coverage-title {
+  font-size: 28rpx;
+  font-weight: 850;
+  margin-top: 7rpx;
+}
+
+.coverage-copy {
+  color: #b8d0c7;
+  font-size: 20rpx;
+  margin-top: 7rpx;
+}
+
+.coverage-status {
+  flex: none;
+  text-align: right;
+}
+
+.coverage-badge {
+  border: 1rpx solid #92c3b3;
+  border-radius: 999rpx;
+  color: #a9d4c7;
+  display: inline-block;
+  font-size: 16rpx;
+  font-weight: 900;
+  letter-spacing: 1rpx;
+  padding: 6rpx 13rpx;
+}
+
+.coverage-status-ready .coverage-badge {
+  background: #dcebe5;
+  border-color: #dcebe5;
+  color: #0b6b55;
+}
+
+.coverage-count {
+  color: #e2eee9;
+  font-size: 19rpx;
+  font-weight: 750;
+  margin-top: 9rpx;
+}
+
 .tpg-note {
   background: #e4f0eb;
   color: #31594a;
