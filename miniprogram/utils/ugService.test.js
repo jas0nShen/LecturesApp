@@ -11,9 +11,9 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert(summary.programmeCount >= 445);
   assert(summary.majorCount >= 690);
   assert.equal(summary.requirementCount, 4);
-  assert(summary.courseCount >= 186);
+  assert(summary.courseCount >= 298);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 172);
+  assert.equal(summary.codedCourseCount, 284);
 });
 
 test('UG catalogue exposes the multi-school hierarchy needed for onboarding', () => {
@@ -43,7 +43,7 @@ test('UG per-school coverage stays visible for setup validation', () => {
   }));
 
   assert.deepEqual(coverage, {
-    HKU: { programmeCount: 137, majorCount: 137, codedCourseCount: 0 },
+    HKU: { programmeCount: 137, majorCount: 137, codedCourseCount: 112 },
     CUHK: { programmeCount: 84, majorCount: 84, codedCourseCount: 0 },
     HKUST: { programmeCount: 50, majorCount: 64, codedCourseCount: 0 },
     POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 172 },
@@ -62,11 +62,30 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert.equal(coverage.length, 8);
   assert.equal(hku.programmeCount, 136);
   assert.equal(hku.majorCount, 136);
-  assert.equal(hku.badge, 'INDEX');
+  assert.equal(hku.programmeWithCoursesCount, 2);
+  assert.equal(hku.codedCourseCount, 112);
+  assert.equal(hku.badge, 'COURSES');
   assert.equal(polyu.programmeWithCoursesCount, 1);
   assert.equal(polyu.codedCourseCount, 172);
   assert.equal(polyu.badge, 'COURSES');
   assert(polyu.coverageLabel.includes('课程代码'));
+});
+
+test('HKU Computing and Data Science catalogue profiles expose official course offerings', () => {
+  const hku = ugService.listUniversities().find((item) => item.code === 'HKU');
+  const programmes = ugService.listProgrammes({ universityId: hku.id, degreeLevel: 'undergraduate' });
+  const cds = programmes.find((programme) => programme.nameEn === 'Computing and Data Science');
+  const delta = programmes.find((programme) => programme.nameEn === 'Computing and Data Science (Delta+)');
+  const major = ugService.listMajors(cds.id)[0];
+  const profile = ugService.getMajorProfile(cds.id, major.id, '2026');
+  const machineLearning = ugService.listMajorCourses(cds.id, major.id, { keyword: 'machine learning' });
+
+  assert.equal(cds.sourceStatus, 'course_codes_available');
+  assert.equal(cds.codedCourseCount, 56);
+  assert.equal(delta.codedCourseCount, 56);
+  assert.equal(profile.courseCount, 56);
+  assert.equal(profile.codedCourseCount, 56);
+  assert(machineLearning.some((course) => course.courseCode === 'COMP3314'));
 });
 
 test('UG major profile groups requirements with traceable courses and sources', () => {

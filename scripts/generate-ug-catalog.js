@@ -3,6 +3,12 @@ const path = require('node:path');
 
 const DEFAULT_SOURCE_DIR = '/Users/shenjingsong/Documents/Codex/2026-07-06/pdf/outputs';
 const OUTPUT_PATH = path.join(__dirname, '..', 'miniprogram', 'utils', 'ugCatalogue.js');
+const HKU_CDS_OFFERINGS_PATH = path.join(__dirname, '..', 'data', 'hku-cds-offerings-2025.json');
+
+const HKU_CDS_PROGRAMME_NAMES = new Set([
+  'Computing and Data Science',
+  'Computing and Data Science (Delta+)'
+]);
 
 const SOURCES = [
   {
@@ -162,6 +168,60 @@ function listCourses(programme) {
   return rows;
 }
 
+function getRecommendedYear(categories = []) {
+  const matchedCategory = categories.find((category) => /Year\s+\d/i.test(category));
+  return Number(String(matchedCategory || '').match(/Year\s+(\d)/i)?.[1] || 0);
+}
+
+function getCourseType(categories = [], title = '') {
+  const searchable = `${categories.join(' ')} ${title}`.toLowerCase();
+  if (searchable.includes('elective')) return 'major_elective';
+  if (searchable.includes('project') || searchable.includes('final year')) return 'capstone';
+  return 'core';
+}
+
+function buildHkuCdsSupplementCourses(programmeId, majorId) {
+  const offerings = JSON.parse(fs.readFileSync(HKU_CDS_OFFERINGS_PATH, 'utf8'));
+  return offerings.courses.map((course, index) => ({
+    id: `${majorId}-HKU-CDS-${index + 1}`,
+    programmeId,
+    majorId,
+    courseCode: course.courseCode,
+    titleEn: course.title,
+    titleZh: course.title,
+    credits: course.details?.credits || 0,
+    recommendedYear: getRecommendedYear(course.categories),
+    semester: (course.terms || []).join(' / '),
+    courseType: getCourseType(course.categories, course.title),
+    prerequisites: course.details?.prerequisites || '',
+    exclusions: course.details?.exclusions || '',
+    description: course.details?.description || '',
+    sourceUrl: course.officialUrl || offerings.sourceUrl,
+    officialUrl: course.officialUrl || offerings.sourceUrl,
+    sourceProvider: offerings.provider,
+    academicYear: offerings.academicYear
+  }));
+}
+
+function addHkuCdsSupplements(programmes, majors, courses) {
+  programmes
+    .filter((programme) => programme.universityCode === 'HKU' && HKU_CDS_PROGRAMME_NAMES.has(programme.nameEn))
+    .forEach((programme) => {
+      const programmeMajors = majors.filter((major) => major.programmeId === programme.id);
+      programmeMajors.forEach((major) => {
+        const supplementCourses = buildHkuCdsSupplementCourses(programme.id, major.id);
+        courses.push(...supplementCourses);
+        major.courseCount = supplementCourses.length;
+        major.codedCourseCount = supplementCourses.length;
+      });
+      const programmeCourseCount = programmeMajors.reduce((sum, major) => sum + (major.codedCourseCount || 0), 0);
+      programme.sourceStatus = 'course_codes_available';
+      programme.courseCount = programmeCourseCount;
+      programme.codedCourseCount = programmeCourseCount;
+      programme.courseSourceUrl = 'https://www.cs.hku.hk/programmes/course-offered';
+    });
+}
+
 function normalizeSource(source, sourceDir) {
   const raw = JSON.parse(fs.readFileSync(path.join(sourceDir, source.file), 'utf8'));
   const university = {
@@ -255,6 +315,10 @@ function normalizeSource(source, sourceDir) {
       nameEn: 'General',
       nameZh: 'General'
     });
+  }
+
+  if (source.code === 'HKU') {
+    addHkuCdsSupplements(programmes, majors, courses);
   }
 
   return { university, faculties, programmes, majors, courses };
