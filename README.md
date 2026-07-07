@@ -4,6 +4,7 @@
 
 - 微信小程序原生页面
 - 授课硕士 Programme 离线资料库
+- 本科 Programme / Major 目录预览
 - HKU 官方开课示例数据
 - 零依赖 Node 本机调试服务
 - PostgreSQL 表结构草案
@@ -14,6 +15,7 @@
 - `miniprogram/`：微信小程序源码
 - `data/seed.json`：首批示例数据
 - `data/tpg-programmes.json`：授课硕士 Programme 索引
+- `miniprogram/utils/ugCatalogue.js`：本科 Programme / Major 离线目录
 - `server/index.js`：本机调试服务
 - `database/schema.sql`：核心数据库表结构
 - `admin/README.md`：后台管理端规划
@@ -69,6 +71,12 @@ npm run check
 ```bash
 npm run sync:tpg
 npm run check
+```
+
+本科资料来自整理后的 Programme / Major JSON，并生成到小程序离线目录。当前本科目录用于选择学校、Programme 与 Major；只有已公开并复核到课程代码的项目会显示课程清单，未开放项目不生成毕业进度。重新生成本科目录可运行：
+
+```bash
+npm run sync:ug-catalog
 ```
 
 如需从原始 PDF 重新生成索引（本机须安装 `pypdf`）：
