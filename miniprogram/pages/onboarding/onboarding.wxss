@@ -177,6 +177,20 @@
   padding: 20rpx;
 }
 
+.ug-saved-scope-card {
+  background: #eef6f2;
+  border-color: #c7ddd2;
+}
+
+.ug-saved-scope-card .saved-scope-mark {
+  border-color: #0b6b55;
+  color: #0b6b55;
+}
+
+.ug-saved-scope-card .saved-scope-copy {
+  color: #526b60;
+}
+
 .saved-scope-mark {
   border: 2rpx solid #9b7840;
   color: #795b2d;

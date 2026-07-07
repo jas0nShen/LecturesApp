@@ -28,6 +28,14 @@
       选择你的大学、Programme 和 Major；课程清单未开放时，也可以先保存资料。
     </view>
 
+    <view wx:if="{{savedUgProfile}}" class="saved-scope-card ug-saved-scope-card">
+      <view class="saved-scope-mark">CURRENT</view>
+      <view class="saved-scope-main">
+        <view class="saved-scope-title">当前本机保存：{{savedUgProfile.programme.nameEn}}</view>
+        <view class="saved-scope-copy">{{savedUgProfile.university.nameZh || savedUgProfile.university.code}} · {{savedUgProfile.major.nameEn}} · {{savedUgProfile.codedCourseCount ? '已开放 ' + savedUgProfile.codedCourseCount + ' 门课程' : '课程清单待开放'}}</view>
+      </view>
+    </view>
+
     <view wx:if="{{selectedUgCoverage}}" class="ug-coverage-card">
       <view>
         <view class="coverage-kicker">当前学校数据</view>

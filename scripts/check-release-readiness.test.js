@@ -192,6 +192,17 @@ test('undergraduate onboarding previews selected school data coverage', () => {
   assert(onboardingPage.includes('{{selectedUgCoverage.programmeCount}} Programme · {{selectedUgCoverage.majorCount}} Major / Track'));
 });
 
+test('undergraduate onboarding shows the saved local profile summary', () => {
+  const onboardingPage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'onboarding', 'onboarding.wxml'), 'utf8');
+  const onboardingLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'onboarding', 'onboarding.js'), 'utf8');
+
+  assert(onboardingLogic.includes('savedUgProfile: null'));
+  assert(onboardingLogic.includes("profile.profileType === 'undergraduate'"));
+  assert(onboardingLogic.includes('ugService.getMajorProfile(profile.programmeId, profile.majorId, profile.curriculumYear)'));
+  assert(onboardingPage.includes('wx:if="{{savedUgProfile}}"'));
+  assert(onboardingPage.includes('当前本机保存：{{savedUgProfile.programme.nameEn}}'));
+});
+
 test('undergraduate onboarding programme results show major-level course availability', () => {
   const onboardingPage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'onboarding', 'onboarding.wxml'), 'utf8');
   const onboardingLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'onboarding', 'onboarding.js'), 'utf8');
