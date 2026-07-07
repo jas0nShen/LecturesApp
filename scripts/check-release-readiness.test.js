@@ -192,6 +192,17 @@ test('undergraduate onboarding previews selected school data coverage', () => {
   assert(onboardingPage.includes('{{selectedUgCoverage.programmeCount}} Programme · {{selectedUgCoverage.majorCount}} Major / Track'));
 });
 
+test('undergraduate onboarding programme results show major-level course availability', () => {
+  const onboardingPage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'onboarding', 'onboarding.wxml'), 'utf8');
+  const onboardingLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'onboarding', 'onboarding.js'), 'utf8');
+
+  assert(onboardingLogic.includes('decorateUgProgrammes'));
+  assert(onboardingLogic.includes('ugService.listMajorCourses(programme.id, major.id).length'));
+  assert(onboardingLogic.includes('visibleUgProgrammes: this.decorateUgProgrammes(filteredUgProgrammes.slice(0, 5))'));
+  assert(onboardingPage.includes('{{item.courseStatusLabel}}'));
+  assert(!onboardingPage.includes("{{item.codedCourseCount ? item.codedCourseCount + ' 门课程' : '课程清单待开放'}}"));
+});
+
 test('TPG onboarding previews selected school data coverage', () => {
   const onboardingPage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'onboarding', 'onboarding.wxml'), 'utf8');
   const onboardingLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'onboarding', 'onboarding.js'), 'utf8');

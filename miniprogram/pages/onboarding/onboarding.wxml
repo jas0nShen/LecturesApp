@@ -78,7 +78,7 @@
         <view class="result-code">{{item.code || item.jupasCode || selectedUniversity.code}}</view>
         <view class="result-main">
           <view class="result-name">{{item.nameZh}}</view>
-          <view class="result-meta">{{item.faculty || 'Faculty 待确认'}} · {{item.codedCourseCount ? item.codedCourseCount + ' 门课程' : '课程清单待开放'}}</view>
+          <view class="result-meta">{{item.faculty || 'Faculty 待确认'}} · {{item.courseStatusLabel}}</view>
         </view>
       </view>
     </view>

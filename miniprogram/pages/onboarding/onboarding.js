@@ -149,6 +149,19 @@ Page({
     });
   },
 
+  decorateUgProgrammes(programmes) {
+    return programmes.map((programme) => {
+      const majors = programme.id ? ugService.listMajors(programme.id) : [];
+      const courseCount = programme.codedCourseCount || majors.reduce((sum, major) => (
+        sum + ugService.listMajorCourses(programme.id, major.id).length
+      ), 0);
+      return {
+        ...programme,
+        courseStatusLabel: courseCount ? `${courseCount} 门课程` : '课程清单待开放'
+      };
+    });
+  },
+
   setUgSelection(
     selectedUniversity,
     programmes,
@@ -168,7 +181,7 @@ Page({
       selectedUgCoverage,
       programmes,
       filteredUgProgrammes,
-      visibleUgProgrammes: filteredUgProgrammes.slice(0, 5),
+      visibleUgProgrammes: this.decorateUgProgrammes(filteredUgProgrammes.slice(0, 5)),
       ugKeyword,
       ugSelectedIndexLabel: selectedIndex >= 0 ? `${selectedIndex + 1} / ${filteredUgProgrammes.length}` : `0 / ${filteredUgProgrammes.length}`
     });
