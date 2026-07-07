@@ -246,6 +246,7 @@ test('undergraduate onboarding previews selected school data coverage', () => {
   assert(onboardingLogic.includes('openUgCurriculumYearSheet()'));
   assert(onboardingLogic.includes('openCurrentYearSheet()'));
   assert(onboardingLogic.includes('selectUgUniversityByIndex(index)'));
+  assert(onboardingLogic.includes("wx.showToast({ title: '请选择你的学校', icon: 'none' })"));
   assert(onboardingLogic.includes('selectUgProgrammeByIndex(index)'));
   assert(onboardingLogic.includes('selectMajorByIndex(index)'));
   assert(onboardingLogic.includes('selectCurriculumYearByIndex(index)'));
@@ -293,6 +294,7 @@ test('undergraduate onboarding previews selected school data coverage', () => {
   assert(onboardingLogic.includes('selectedUgCoverage'));
   assert(onboardingPage.includes('当前学校数据'));
   assert(onboardingPage.includes('{{selectedUgCoverage.programmeCount}} Programme · {{selectedUgCoverage.majorCount}} Major / Track'));
+  assert(!onboardingLogic.includes("title: '请选择大学'"));
 });
 
 test('undergraduate onboarding shows the saved local profile summary', () => {

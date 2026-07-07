@@ -299,7 +299,7 @@ Page({
   selectUgUniversityByIndex(index) {
     const selectedUniversity = this.data.universities[index] || this.data.universities[0] || {};
     if (!selectedUniversity.id) {
-      wx.showToast({ title: '请选择大学', icon: 'none' });
+      wx.showToast({ title: '请选择你的学校', icon: 'none' });
       return;
     }
     const programmes = ugService.listProgrammes({ universityId: selectedUniversity.id, degreeLevel: 'undergraduate' });
@@ -566,7 +566,7 @@ Page({
     const tpgUniversities = tpgService.listUniversities();
     const selectedTpgUniversity = tpgUniversities[index] || tpgUniversities[0] || {};
     if (!selectedTpgUniversity.code) {
-      wx.showToast({ title: '请选择大学', icon: 'none' });
+      wx.showToast({ title: '请选择你的学校', icon: 'none' });
       return;
     }
     const tpgProgrammes = tpgService.listProgrammes(selectedTpgUniversity.code);
