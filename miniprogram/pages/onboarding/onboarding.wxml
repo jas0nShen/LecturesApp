@@ -97,38 +97,40 @@
       <view wx:if="{{ugKeyword}}" class="programme-empty-action" bindtap="clearUgKeyword">清除搜索</view>
     </view>
 
-    <view class="field">
-      <view class="label">Major</view>
-      <picker range="{{majors}}" range-key="nameZh" value="{{ugMajorIndex}}" bindchange="onMajorChange">
-        <view class="select">{{selectedMajor.nameZh || '请选择 Major'}}</view>
-      </picker>
-    </view>
-
-    <view class="field">
-      <view class="label">Curriculum Year</view>
-      <picker range="{{curriculumYears}}" value="{{ugCurriculumYearIndex}}" bindchange="onCurriculumYearChange">
-        <view class="select">{{curriculumYear}}</view>
-      </picker>
-    </view>
-
-    <view class="field">
-      <view class="label">当前年级</view>
-      <picker range="{{yearOptions}}" value="{{currentYearIndex}}" bindchange="onCurrentYearChange">
-        <view class="select">Year {{currentYear}}</view>
-      </picker>
-    </view>
-
-    <view class="ug-proof">
-      <view class="proof-stamp">{{selectedUniversity.code || 'UG'}}</view>
-      <view class="proof-main">
-        <view class="proof-label">本科资料状态</view>
-        <view class="proof-value">{{ugCourseStatus}}</view>
-        <view class="proof-meta">{{selectedProgramme.nameEn || 'Programme 待选择'}} · {{selectedMajor.nameEn || 'Major 待选择'}}</view>
+    <view wx:if="{{selectedProgramme.id}}">
+      <view class="field">
+        <view class="label">Major</view>
+        <picker range="{{majors}}" range-key="nameZh" value="{{ugMajorIndex}}" bindchange="onMajorChange">
+          <view class="select">{{selectedMajor.nameZh || '请选择 Major'}}</view>
+        </picker>
       </view>
-    </view>
 
-    <view class="button-space">
-      <view class="button" bindtap="save">保存本科培养方案</view>
+      <view class="field">
+        <view class="label">Curriculum Year</view>
+        <picker range="{{curriculumYears}}" value="{{ugCurriculumYearIndex}}" bindchange="onCurriculumYearChange">
+          <view class="select">{{curriculumYear}}</view>
+        </picker>
+      </view>
+
+      <view class="field">
+        <view class="label">当前年级</view>
+        <picker range="{{yearOptions}}" value="{{currentYearIndex}}" bindchange="onCurrentYearChange">
+          <view class="select">Year {{currentYear}}</view>
+        </picker>
+      </view>
+
+      <view class="ug-proof">
+        <view class="proof-stamp">{{selectedUniversity.code || 'UG'}}</view>
+        <view class="proof-main">
+          <view class="proof-label">本科资料状态</view>
+          <view class="proof-value">{{ugCourseStatus}}</view>
+          <view class="proof-meta">{{selectedProgramme.nameEn || 'Programme 待选择'}} · {{selectedMajor.nameEn || 'Major 待选择'}}</view>
+        </view>
+      </view>
+
+      <view class="button-space">
+        <view class="button" bindtap="save">保存本科培养方案</view>
+      </view>
     </view>
   </view>
 
@@ -204,20 +206,22 @@
       <view wx:if="{{tpgKeyword}}" class="programme-empty-action" bindtap="clearTpgKeyword">清除搜索</view>
     </view>
 
-    <view class="programme-proof">
-      <view class="proof-stamp">{{selectedTpgUniversity.code}}</view>
-      <view class="proof-main">
-        <view class="proof-label">当前数据状态</view>
-        <view class="proof-value">{{tpgCourseStatus}}</view>
-        <view class="proof-meta">{{selectedTpgUniversity.academicYear}} · {{selectedTpgProgramme.creditsRequired ? selectedTpgProgramme.creditsRequired + ' credits / units' : '学分待确认'}}</view>
+    <view wx:if="{{selectedTpgProgramme.id}}">
+      <view class="programme-proof">
+        <view class="proof-stamp">{{selectedTpgUniversity.code}}</view>
+        <view class="proof-main">
+          <view class="proof-label">当前数据状态</view>
+          <view class="proof-value">{{tpgCourseStatus}}</view>
+          <view class="proof-meta">{{selectedTpgUniversity.academicYear}} · {{selectedTpgProgramme.creditsRequired ? selectedTpgProgramme.creditsRequired + ' credits / units' : '学分待确认'}}</view>
+        </view>
       </view>
-    </view>
 
-    <view class="tpg-explain">授课硕士通常以 Programme 或 Stream 区分方向，因此不再额外套用本科 Major。</view>
+      <view class="tpg-explain">授课硕士通常以 Programme 或 Stream 区分方向，因此不再额外套用本科 Major。</view>
 
-    <view class="button-space tpg-actions">
-      <view class="preview-button" bindtap="previewTpgProgramme">预览 Programme</view>
-      <view class="button" bindtap="save">保存授课硕士 Programme</view>
+      <view class="button-space tpg-actions">
+        <view class="preview-button" bindtap="previewTpgProgramme">预览 Programme</view>
+        <view class="button" bindtap="save">保存授课硕士 Programme</view>
+      </view>
     </view>
   </view>
 </view>

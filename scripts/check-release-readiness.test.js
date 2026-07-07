@@ -196,6 +196,7 @@ test('undergraduate onboarding previews selected school data coverage', () => {
   assert(onboardingPage.includes('value="{{ugUniversityIndex}}"'));
   assert(onboardingPage.includes('picker wx:if="{{filteredUgProgrammes.length}}"'));
   assert(onboardingPage.includes('value="{{ugProgrammeIndex}}"'));
+  assert(onboardingPage.includes('wx:if="{{selectedProgramme.id}}"'));
   assert(onboardingPage.includes('value="{{ugMajorIndex}}"'));
   assert(onboardingPage.includes('value="{{ugCurriculumYearIndex}}"'));
   assert(onboardingPage.includes('value="{{currentYearIndex}}"'));
@@ -243,6 +244,7 @@ test('TPG onboarding previews selected school data coverage', () => {
   assert(onboardingPage.includes('value="{{tpgUniversityIndex}}"'));
   assert(onboardingPage.includes('picker wx:if="{{filteredTpgProgrammes.length}}"'));
   assert(onboardingPage.includes('value="{{tpgProgrammeIndex}}"'));
+  assert(onboardingPage.includes('wx:if="{{selectedTpgProgramme.id}}"'));
   assert(onboardingLogic.includes('selectedTpgCoverage'));
   assert(onboardingPage.includes('{{selectedTpgCoverage.programmeCount}} Programme · {{selectedTpgCoverage.programmeWithCoursesCount}} 个已开放课程组'));
   assert(onboardingPage.includes('{{selectedTpgCoverage.courseCount ? selectedTpgCoverage.courseCount + \' courses\' : \'课程待开放\'}}'));
