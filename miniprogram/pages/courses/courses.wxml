@@ -118,6 +118,7 @@
         </view>
         <view class="course-title">{{item.titleEn}}</view>
         <view class="subtitle">Year {{item.recommendedYear || '-'}} · {{ugProfile.major.nameEn}}</view>
+        <view wx:if="{{item.sourceUrl}}" class="ug-source-link" data-url="{{item.sourceUrl}}" catchtap="copyUgCourseSource">复制课程来源</view>
       </view>
 
       <view wx:if="{{ugCourseCount === 0}}" class="empty tpg-empty">

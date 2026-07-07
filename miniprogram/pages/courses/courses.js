@@ -397,6 +397,17 @@ Page({
     });
   },
 
+  copyUgCourseSource(event) {
+    const sourceUrl = event.currentTarget.dataset.url;
+    if (!sourceUrl) return;
+    wx.setClipboardData({
+      data: sourceUrl,
+      success: () => {
+        wx.showToast({ title: '课程来源已复制' });
+      }
+    });
+  },
+
   onUnload() {
     if (this._searchTimer) clearTimeout(this._searchTimer);
     this._requestId = (this._requestId || 0) + 1;
