@@ -227,6 +227,7 @@ test('undergraduate onboarding programme results show major-level course availab
   assert(onboardingLogic.includes('ugService.listMajorCourses(programme.id, major.id).length'));
   assert(onboardingLogic.includes('visibleUgProgrammes: this.decorateUgProgrammes(filteredUgProgrammes.slice(0, 5))'));
   assert(onboardingPage.includes('{{item.courseStatusLabel}}'));
+  assert(onboardingPage.includes('wx:if="{{ugKeyword}}" class="programme-empty-action" bindtap="clearUgKeyword"'));
   assert(!onboardingPage.includes("{{item.codedCourseCount ? item.codedCourseCount + ' 门课程' : '课程清单待开放'}}"));
 });
 
@@ -253,6 +254,7 @@ test('TPG onboarding programme results show course availability', () => {
   assert(onboardingLogic.includes("courseStatusLabel: courseCount ? `${courseCount} 门课程` : '课程清单待开放'"));
   assert(onboardingLogic.includes('visibleTpgProgrammes: this.decorateTpgProgrammes(filteredTpgProgrammes.slice(0, 5))'));
   assert(onboardingPage.includes('{{item.courseStatusLabel}}'));
+  assert(onboardingPage.includes('wx:if="{{tpgKeyword}}" class="programme-empty-action" bindtap="clearTpgKeyword"'));
 });
 
 test('TPG catalogue copy describes availability instead of completeness', () => {

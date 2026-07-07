@@ -342,6 +342,13 @@
   padding: 22rpx;
 }
 
+.programme-empty-action {
+  color: #0b6b55;
+  font-size: 22rpx;
+  font-weight: 850;
+  margin-top: 14rpx;
+}
+
 .programme-proof,
 .ug-proof {
   align-items: flex-start;
