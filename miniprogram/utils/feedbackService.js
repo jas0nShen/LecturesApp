@@ -1,5 +1,6 @@
 const releaseInfo = require('./releaseInfo');
 const tpgService = require('./tpgService');
+const ugService = require('./ugService');
 
 function valueOrDash(value) {
   const text = String(value || '').trim();
@@ -53,6 +54,21 @@ function buildProgrammeFields(profile, programmeOverride) {
         ? `${status.title} · ${status.courseCount ? `${status.courseCount} 门课程` : '课程清单待开放'}`
         : '课程状态待确认',
       source: sourceParts.length ? sourceParts.join(' · ') : '资料来源待确认'
+    };
+  }
+
+  const ugProfile = profile.profileType === 'undergraduate'
+    ? ugService.getMajorProfile(profile.programmeId, profile.majorId, profile.curriculumYear)
+    : null;
+  if (ugProfile && ugProfile.sourceStatus) {
+    return {
+      university: valueOrDash((ugProfile.university && ugProfile.university.nameZh) || profile.universityCode),
+      programme: valueOrDash((ugProfile.programme && ugProfile.programme.nameEn) || profile.programmeName),
+      curriculumYear: valueOrDash(ugProfile.curriculumYear),
+      status: ugProfile.codedCourseCount
+        ? `${ugProfile.major.nameEn} · 已开放 ${ugProfile.codedCourseCount} 门课程`
+        : `${ugProfile.major.nameEn} · 课程清单待开放`,
+      source: valueOrDash(ugProfile.sourceUrl)
     };
   }
 

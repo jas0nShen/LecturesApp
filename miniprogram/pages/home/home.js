@@ -1,5 +1,6 @@
 const service = require('../../utils/courseService');
 const tpgService = require('../../utils/tpgService');
+const ugService = require('../../utils/ugService');
 
 function buildTpgNextSteps(summary) {
   if (!summary) return [];
@@ -39,18 +40,25 @@ Page({
     recentCourses: [],
     isTpg: false,
     tpgProfile: null,
-    tpgNextSteps: []
+    tpgNextSteps: [],
+    isUgCatalogue: false,
+    ugProfile: null,
+    ugNextSteps: []
   },
 
   async onShow() {
     const profile = service.getProfile();
     const isTpg = profile && profile.profileType === 'tpg';
     const tpgProfile = tpgService.getProfileSummary(profile);
-    const auditResult = isTpg
+    const ugProfile = profile && profile.profileType === 'undergraduate'
+      ? ugService.getMajorProfile(profile.programmeId, profile.majorId, profile.curriculumYear)
+      : null;
+    const isUgCatalogue = Boolean(ugProfile && ugProfile.sourceStatus);
+    const auditResult = isTpg || isUgCatalogue
       ? {
           data: {
             completedCredits: 0,
-            totalCreditRequired: profile.creditsRequired || 0,
+            totalCreditRequired: isTpg ? profile.creditsRequired || 0 : 0,
             totalProgress: 0
           },
           source: 'catalogue'
@@ -65,6 +73,27 @@ Page({
       isTpg,
       tpgProfile,
       tpgNextSteps: buildTpgNextSteps(tpgProfile),
+      isUgCatalogue,
+      ugProfile,
+      ugNextSteps: ugProfile ? [
+        {
+          status: 'DONE',
+          title: '本科范围已选择',
+          copy: `${ugProfile.university.nameZh || ugProfile.university.code} · ${ugProfile.curriculumYear}`
+        },
+        {
+          status: ugProfile.codedCourseCount > 0 ? 'READY' : 'CHECKING',
+          title: ugProfile.codedCourseCount > 0 ? '课程代码可查看' : '课程清单待开放',
+          copy: ugProfile.codedCourseCount > 0
+            ? `已开放 ${ugProfile.codedCourseCount} 门课程代码，可先在课程页浏览。`
+            : '已保留 Programme / Major 入口；课程清单复核后会直接显示。'
+        },
+        {
+          status: 'SAFE',
+          title: '毕业进度暂不自动判断',
+          copy: '本科规则差异较大，完成复核前不会生成误导性的百分比。'
+        }
+      ] : [],
       audit: auditResult.data,
       recentCourses,
       dataSource: auditResult.source
@@ -104,6 +133,10 @@ Page({
     wx.navigateTo({
       url: `/pages/tpg-programme/tpg-programme?id=${encodeURIComponent(profile.programmeId)}`
     });
+  },
+
+  goSelectedUg() {
+    wx.switchTab({ url: '/pages/courses/courses' });
   },
 
   goRecentCourse(event) {

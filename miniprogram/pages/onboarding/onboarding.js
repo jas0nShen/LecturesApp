@@ -7,6 +7,8 @@ Page({
     mode: 'tpg',
     universities: [],
     programmes: [],
+    filteredUgProgrammes: [],
+    visibleUgProgrammes: [],
     majors: [],
     selectedUniversity: {},
     selectedProgramme: {},
@@ -15,6 +17,8 @@ Page({
     curriculumYear: '2025-26',
     yearOptions: ['1', '2', '3', '4'],
     currentYear: '1',
+    ugKeyword: '',
+    ugSelectedIndexLabel: '',
     ugMajorProfile: null,
     ugCourseStatus: '',
     tpgUniversities: tpgService.listUniversities(),
@@ -47,31 +51,12 @@ Page({
     const selectedUniversity = universities.find((item) => item.id === (profile && profile.universityId)) || universities[0];
     const programmes = ugService.listProgrammes({ universityId: selectedUniversity.id, degreeLevel: 'undergraduate' });
     const selectedProgramme = programmes.find((item) => item.id === (profile && profile.programmeId)) || programmes[0];
-    const majors = selectedProgramme ? ugService.listMajors(selectedProgramme.id) : [];
-    const selectedMajor = majors.find((item) => item.id === (profile && profile.majorId)) || majors[0];
-    const curriculumYears = selectedProgramme && selectedMajor
-      ? ugService.listCurriculumYears(selectedProgramme.id, selectedMajor.id)
-      : [];
-    const curriculumYear = profile && curriculumYears.includes(profile.curriculumYear)
-      ? profile.curriculumYear
-      : curriculumYears[0] || '';
-    const ugMajorProfile = selectedProgramme && selectedMajor
-      ? ugService.getMajorProfile(selectedProgramme.id, selectedMajor.id, curriculumYear)
-      : null;
-
     this.setData({
       universities,
-      programmes,
-      majors,
       selectedUniversity,
-      selectedProgramme,
-      selectedMajor,
-      curriculumYears,
-      curriculumYear,
-      currentYear: profile && profile.profileType !== 'tpg' ? String(profile.currentYear) : '1',
-      ugMajorProfile,
-      ugCourseStatus: this.buildUgCourseStatus(ugMajorProfile)
+      currentYear: profile && profile.profileType !== 'tpg' ? String(profile.currentYear) : '1'
     });
+    this.setUgSelection(selectedUniversity, programmes, selectedProgramme, '', profile);
   },
 
   loadTpg(profile) {
@@ -96,19 +81,63 @@ Page({
   async onUniversityChange(event) {
     const selectedUniversity = this.data.universities[Number(event.detail.value)];
     const programmes = ugService.listProgrammes({ universityId: selectedUniversity.id, degreeLevel: 'undergraduate' });
-    const selectedProgramme = programmes[0] || {};
+    this.setUgSelection(selectedUniversity, programmes, programmes[0] || {}, '');
+  },
+
+  async onProgrammeChange(event) {
+    const selectedProgramme = this.data.filteredUgProgrammes[Number(event.detail.value)];
+    this.applyUgProgrammeSelection(selectedProgramme);
+  },
+
+  onUgKeyword(event) {
+    const keyword = event.detail.value;
+    const filteredUgProgrammes = ugService.searchProgrammes(this.data.programmes, keyword);
+    const selectedProgramme = filteredUgProgrammes.find(
+      (item) => item.id === this.data.selectedProgramme.id
+    ) || filteredUgProgrammes[0] || {};
+    this.setUgSelection(
+      this.data.selectedUniversity,
+      this.data.programmes,
+      selectedProgramme,
+      keyword
+    );
+  },
+
+  clearUgKeyword() {
+    this.setUgSelection(
+      this.data.selectedUniversity,
+      this.data.programmes,
+      this.data.programmes[0] || {},
+      ''
+    );
+  },
+
+  selectUgProgramme(event) {
+    const programme = this.data.filteredUgProgrammes.find(
+      (item) => item.id === event.currentTarget.dataset.id
+    );
+    if (!programme) return;
+    this.setUgSelection(
+      this.data.selectedUniversity,
+      this.data.programmes,
+      programme,
+      this.data.ugKeyword
+    );
+  },
+
+  applyUgProgrammeSelection(selectedProgramme = {}, profile = null) {
     const majors = selectedProgramme.id ? ugService.listMajors(selectedProgramme.id) : [];
-    const selectedMajor = majors[0] || {};
+    const selectedMajor = majors.find((item) => item.id === (profile && profile.majorId)) || majors[0] || {};
     const curriculumYears = selectedMajor.id
       ? ugService.listCurriculumYears(selectedProgramme.id, selectedMajor.id)
       : [];
-    const curriculumYear = curriculumYears[0] || '';
+    const curriculumYear = profile && curriculumYears.includes(profile.curriculumYear)
+      ? profile.curriculumYear
+      : curriculumYears[0] || '';
     const ugMajorProfile = selectedMajor.id
       ? ugService.getMajorProfile(selectedProgramme.id, selectedMajor.id, curriculumYear)
       : null;
     this.setData({
-      selectedUniversity,
-      programmes,
       selectedProgramme,
       majors,
       selectedMajor,
@@ -119,26 +148,21 @@ Page({
     });
   },
 
-  async onProgrammeChange(event) {
-    const selectedProgramme = this.data.programmes[Number(event.detail.value)];
-    const majors = ugService.listMajors(selectedProgramme.id);
-    const selectedMajor = majors[0] || {};
-    const curriculumYears = selectedMajor.id
-      ? ugService.listCurriculumYears(selectedProgramme.id, selectedMajor.id)
-      : [];
-    const curriculumYear = curriculumYears[0] || '';
-    const ugMajorProfile = selectedMajor.id
-      ? ugService.getMajorProfile(selectedProgramme.id, selectedMajor.id, curriculumYear)
-      : null;
+  setUgSelection(selectedUniversity, programmes, selectedProgramme, ugKeyword = this.data.ugKeyword, profile = null) {
+    const filteredUgProgrammes = ugService.searchProgrammes(programmes, ugKeyword);
+    const effectiveProgramme = selectedProgramme && selectedProgramme.id
+      ? selectedProgramme
+      : filteredUgProgrammes[0] || {};
+    const selectedIndex = filteredUgProgrammes.findIndex((item) => item.id === effectiveProgramme.id);
     this.setData({
-      selectedProgramme,
-      majors,
-      selectedMajor,
-      curriculumYears,
-      curriculumYear,
-      ugMajorProfile,
-      ugCourseStatus: this.buildUgCourseStatus(ugMajorProfile)
+      selectedUniversity,
+      programmes,
+      filteredUgProgrammes,
+      visibleUgProgrammes: filteredUgProgrammes.slice(0, 5),
+      ugKeyword,
+      ugSelectedIndexLabel: selectedIndex >= 0 ? `${selectedIndex + 1} / ${filteredUgProgrammes.length}` : `0 / ${filteredUgProgrammes.length}`
     });
+    this.applyUgProgrammeSelection(effectiveProgramme, profile);
   },
 
   onMajorChange(event) {
@@ -175,6 +199,12 @@ Page({
 
   buildUgCourseStatus(majorProfile) {
     if (!majorProfile) return '当前专业还没有可用培养方案';
+    if (majorProfile.codedCourseCount > 0) {
+      return `已录入 ${majorProfile.codedCourseCount} 门课程 · ${majorProfile.curriculumYear}`;
+    }
+    if (majorProfile.sourceStatus === 'programme_summary_only') {
+      return `Programme / Major 已录入 · 课程清单待开放 · ${majorProfile.curriculumYear}`;
+    }
     return `${majorProfile.courseCount} 门课程 · ${majorProfile.trackedRequirementCount} 个要求组 · ${majorProfile.curriculumYear}`;
   },
 

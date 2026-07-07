@@ -83,6 +83,55 @@
     </view>
   </block>
 
+  <block wx:elif="{{isUgCatalogue && ugAudit}}">
+    <view class="section tpg-audit-hero">
+      <view class="audit-kicker light">{{ugAudit.profile.university.code}} · {{ugAudit.profile.curriculumYear}}</view>
+      <view class="tpg-audit-title">{{ugAudit.profile.programme.nameEn}}</view>
+      <view class="tpg-audit-faculty">{{ugAudit.profile.major.nameEn}}</view>
+      <view class="tpg-audit-meter">
+        <view>
+          <view class="big-number">{{ugAudit.hasCourses ? ugAudit.courseCount : '--'}}</view>
+          <view class="subtitle">已开放课程</view>
+        </view>
+        <view class="verified-seal">{{ugAudit.hasCourses ? 'COURSES' : 'REVIEW'}}<br/>UG</view>
+      </view>
+      <view class="curriculum-note">{{ugAudit.statusCopy}}</view>
+      <view class="source-line">数据源：本科本地资料库</view>
+    </view>
+
+    <view class="section completed-entry" bindtap="goOnboarding">
+      <view class="completed-icon">↗</view>
+      <view class="completed-copy">
+        <view class="panel-title">{{ugAudit.statusTitle}}</view>
+        <view class="subtitle">点击可切换本科 Programme / Major。</view>
+      </view>
+      <view class="completed-arrow">›</view>
+    </view>
+
+    <view class="section panel tpg-pending-panel">
+      <view class="audit-kicker">GRAD CHECK</view>
+      <view class="panel-title">暂不计算毕业进度</view>
+      <view class="subtitle">本科不同学校和专业的毕业规则差异很大。规则没有完成复核前，这里只展示资料收录状态，不生成百分比。</view>
+      <view class="recommendation">
+        <view class="course-code">当前状态</view>
+        <view class="subtitle">{{ugAudit.statusTitle}}</view>
+      </view>
+    </view>
+
+    <view class="section panel tpg-next-panel">
+      <view class="audit-kicker">WHAT TO DO NEXT</view>
+      <view wx:for="{{ugAudit.nextChecks}}" wx:key="index" class="tpg-next-row">
+        <view class="tpg-next-index">{{index + 1}}</view>
+        <view class="subtitle">{{item}}</view>
+      </view>
+    </view>
+
+    <view class="tpg-actions">
+      <view class="tpg-action" bindtap="goOnboarding">修改本科范围</view>
+      <view class="tpg-action primary" bindtap="copyUgSource">复制官方链接</view>
+    </view>
+  </block>
+
   <block wx:else>
   <view class="section panel">
     <view class="audit-kicker">RECORDED CREDITS</view>

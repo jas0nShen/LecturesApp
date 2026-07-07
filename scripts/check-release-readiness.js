@@ -34,6 +34,18 @@ function summarizeTpgCatalogue(tpgCatalogue) {
   };
 }
 
+function summarizeUgCatalogue(ugCatalogue) {
+  const programmeWithCourses = new Set((ugCatalogue.courses || []).map((course) => course.programmeId));
+  return {
+    universityCount: (ugCatalogue.universities || []).length,
+    programmeCount: (ugCatalogue.programmes || []).length,
+    majorCount: (ugCatalogue.majors || []).length,
+    codedCourseCount: (ugCatalogue.courses || []).length,
+    programmeWithCoursesCount: programmeWithCourses.size,
+    universityCodes: (ugCatalogue.universities || []).map((university) => university.code)
+  };
+}
+
 function checkReleaseReadiness(now = new Date()) {
   const packageJson = readJson(path.join(ROOT, 'package.json'));
   const project = readJson(path.join(MINI_ROOT, 'project.config.json'));
@@ -43,7 +55,9 @@ function checkReleaseReadiness(now = new Date()) {
   const offerings = readJson(path.join(ROOT, 'data', 'hku-cds-offerings-2025.json'));
   const tpgCatalogue = readJson(path.join(ROOT, 'data', 'tpg-programmes.json'));
   const releaseInfo = require(path.join(MINI_ROOT, 'utils', 'releaseInfo'));
+  const ugCatalogue = require(path.join(MINI_ROOT, 'utils', 'ugCatalogue'));
   const tpgSummary = summarizeTpgCatalogue(tpgCatalogue);
+  const ugSummary = summarizeUgCatalogue(ugCatalogue);
   const errors = [];
   const warnings = [];
 
@@ -110,6 +124,15 @@ function checkReleaseReadiness(now = new Date()) {
   if (tpgSummary.programmeCount < 300) {
     errors.push(`TPG catalogue includes ${tpgSummary.programmeCount} programmes, expected at least 300`);
   }
+  if (ugSummary.universityCount < 6) {
+    errors.push(`UG catalogue includes ${ugSummary.universityCount} schools, expected at least 6`);
+  }
+  if (ugSummary.programmeCount < 390) {
+    errors.push(`UG catalogue includes ${ugSummary.programmeCount} programmes, expected at least 390`);
+  }
+  if (ugSummary.majorCount < 600) {
+    errors.push(`UG catalogue includes ${ugSummary.majorCount} majors/tracks, expected at least 600`);
+  }
 
   const uploadFiles = walkFiles(MINI_ROOT).filter((file) => {
     const relative = path.relative(MINI_ROOT, file);
@@ -153,6 +176,11 @@ function checkReleaseReadiness(now = new Date()) {
       tpgProgrammeCount: tpgSummary.programmeCount,
       tpgProgrammeWithCoursesCount: tpgSummary.programmeWithCoursesCount,
       tpgCourseCount: tpgSummary.courseCount,
+      ugSchoolCount: ugSummary.universityCount,
+      ugProgrammeCount: ugSummary.programmeCount,
+      ugMajorCount: ugSummary.majorCount,
+      ugCodedCourseCount: ugSummary.codedCourseCount,
+      ugProgrammeWithCoursesCount: ugSummary.programmeWithCoursesCount,
       uploadFileCount: uploadFiles.length,
       packageBytes,
       sensitiveApiCount: sensitiveApis.length
@@ -174,6 +202,7 @@ if (require.main === module) {
 
 module.exports = {
   checkReleaseReadiness,
+  summarizeUgCatalogue,
   summarizeTpgCatalogue,
   walkFiles
 };

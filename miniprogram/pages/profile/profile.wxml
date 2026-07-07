@@ -47,6 +47,10 @@
       <view class="label">课程资料</view>
       <view>{{profile.courseCount ? '已开放 ' + profile.courseCount + ' 门' : '课程清单待开放'}}</view>
     </view>
+    <view wx:if="{{isUgCatalogue && ugProfile}}" class="profile-row">
+      <view class="label">本科资料</view>
+      <view>{{ugProfile.codedCourseCount ? '已开放 ' + ugProfile.codedCourseCount + ' 门' : 'Programme / Major 已收录'}}</view>
+    </view>
   </view>
 
   <view class="section panel" wx:else>
@@ -76,7 +80,7 @@
     <view class="data-dot {{dataStatus.status}}"></view>
     <view class="notes-main">
       <view class="panel-title">数据状态</view>
-    <view class="subtitle">{{isTpg ? 'Programme 资料来源、版本与本地数据状态' : dataStatus.statusLabel + ' · 开课目录更新于 ' + dataStatus.offering.updatedDate}}</view>
+    <view class="subtitle">{{isTpg ? 'Programme 资料来源、版本与本地数据状态' : (isUgCatalogue ? '本科 Programme / Major 索引与本地数据状态' : dataStatus.statusLabel + ' · 开课目录更新于 ' + dataStatus.offering.updatedDate)}}</view>
     </view>
     <view class="notes-arrow">›</view>
   </view>
@@ -132,6 +136,6 @@
 
   <view class="section panel">
     <view class="panel-title">数据说明</view>
-    <view class="subtitle">{{isTpg ? '授课硕士资料来自公开资料与本地复核；课程组尚未开放的 Programme 只展示索引与来源，暂不生成毕业判断。' : '官方开课数据来自香港大学官网；毕业检查仅供规划参考，以大学官方要求为准。'}}</view>
+    <view class="subtitle">{{isTpg ? '授课硕士资料来自公开资料与本地复核；课程组尚未开放的 Programme 只展示索引与来源，暂不生成毕业判断。' : (isUgCatalogue ? '本科资料先展示 Programme / Major 索引和已公开课程代码；毕业规则完成复核前不会生成进度判断。' : '官方开课数据来自香港大学官网；毕业检查仅供规划参考，以大学官方要求为准。')}}</view>
   </view>
 </view>

@@ -7,6 +7,8 @@
     "dev:api": "node server/index.js",
     "import:hku:cds": "node scripts/import-hku-cds-offerings.js",
     "import:hku:details": "node scripts/import-hku-cds-details.js",
+    "import:hku:ug": "node scripts/import-hku-ug-programmes.js",
+    "sync:ug-catalog": "node scripts/generate-ug-catalog.js",
     "sync:tpg": "node scripts/generate-tpg-catalog.js",
     "sync:data": "node scripts/generate-mock-data.js",
     "check:release": "node scripts/check-release-readiness.js",

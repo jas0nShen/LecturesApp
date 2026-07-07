@@ -31,12 +31,12 @@
     <view class="action-card" bindtap="goCourses">
       <view class="action-index">01</view>
       <view class="action-title">查课程</view>
-      <view class="action-copy">Core、Elective、Common Core</view>
+      <view class="action-copy">{{isUgCatalogue ? '查看课程清单状态' : 'Core、Elective、Common Core'}}</view>
     </view>
     <view class="action-card" bindtap="goAudit">
       <view class="action-index">02</view>
       <view class="action-title">毕业检查</view>
-      <view class="action-copy">看看还差哪些要求</view>
+      <view class="action-copy">{{isUgCatalogue ? '查看复核状态' : '看看还差哪些要求'}}</view>
     </view>
     <view class="action-card" bindtap="goFavorites">
       <view class="action-index">03</view>
@@ -81,6 +81,32 @@
     </view>
   </view>
 
+  <view wx:if="{{isUgCatalogue && ugProfile}}" class="section tpg-entry selected-tpg" bindtap="goSelectedUg">
+    <view class="tpg-entry-mark">MY UG · {{ugProfile.curriculumYear}}</view>
+    <view class="tpg-entry-title">查看本科课程状态</view>
+    <view class="tpg-entry-copy">{{ugProfile.codedCourseCount ? '已开放 ' + ugProfile.codedCourseCount + ' 门课程代码' : 'Programme / Major 已收录，课程清单待开放'}}</view>
+    <view class="tpg-entry-arrow">›</view>
+  </view>
+
+  <view wx:if="{{isUgCatalogue && ugProfile}}" class="section tpg-next-card">
+    <view class="row">
+      <view>
+        <view class="start-kicker">UG STATUS</view>
+        <view class="panel-title">你的本科资料现在可以这样用</view>
+      </view>
+      <view class="tpg-credits-pill">{{ugProfile.codedCourseCount ? ugProfile.codedCourseCount + ' courses' : 'Index'}}</view>
+    </view>
+    <view class="tpg-step-list">
+      <view wx:for="{{ugNextSteps}}" wx:key="title" class="tpg-step">
+        <view class="tpg-step-status {{item.status === 'READY' || item.status === 'DONE' ? 'tpg-step-status-ready' : ''}}">{{item.status}}</view>
+        <view>
+          <view class="tpg-step-title">{{item.title}}</view>
+          <view class="tpg-step-copy">{{item.copy}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
   <view class="section tpg-entry" bindtap="goTpgCatalog">
     <view class="tpg-entry-mark">TPG PROGRAMMES</view>
     <view class="tpg-entry-title">授课硕士资料库</view>
@@ -102,7 +128,7 @@
     </view>
   </view>
 
-  <view wx:if="{{!isTpg}}" class="section panel">
+  <view wx:if="{{!isTpg && !isUgCatalogue}}" class="section panel">
     <view class="progress-heading">
       <view class="panel-title">毕业进度预览</view>
       <view class="progress-number">{{audit.totalProgress}}%</view>

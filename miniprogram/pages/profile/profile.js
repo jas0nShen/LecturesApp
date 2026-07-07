@@ -1,12 +1,15 @@
 const service = require('../../utils/courseService');
 const feedbackService = require('../../utils/feedbackService');
 const tpgService = require('../../utils/tpgService');
+const ugService = require('../../utils/ugService');
 
 Page({
   data: {
     profile: null,
     isTpg: false,
     tpgProfile: null,
+    isUgCatalogue: false,
+    ugProfile: null,
     noteCount: 0,
     noteSummary: '集中整理选课理由和注意事项',
     userSummary: null,
@@ -17,12 +20,18 @@ Page({
     const noteCount = service.getCourseNotes().length;
     const profile = service.getProfile();
     const tpgProfile = tpgService.getProfileSummary(profile);
+    const ugProfile = profile && profile.profileType === 'undergraduate'
+      ? ugService.getMajorProfile(profile.programmeId, profile.majorId, profile.curriculumYear)
+      : null;
+    const isUgCatalogue = Boolean(ugProfile && ugProfile.sourceStatus);
     const dataStatus = service.getDataStatus();
     const userSummary = service.getUserDataSummary();
     this.setData({
       profile,
       isTpg: !!tpgProfile,
       tpgProfile,
+      isUgCatalogue,
+      ugProfile,
       noteCount,
       noteSummary: noteCount ? `已记录 ${noteCount} 门课程` : '集中整理选课理由和注意事项',
       userSummary,

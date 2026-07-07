@@ -1,5 +1,6 @@
 const service = require('../../utils/courseService');
 const tpgService = require('../../utils/tpgService');
+const ugService = require('../../utils/ugService');
 
 Page({
   data: {
@@ -54,6 +55,13 @@ Page({
     tpgCourseCountLabel: '',
     tpgStatusTitle: '',
     tpgStatusCopy: '',
+    isUgCatalogue: false,
+    ugProfile: null,
+    ugCourses: [],
+    ugCourseCount: 0,
+    ugCourseCountDisplay: '',
+    ugStatusTitle: '',
+    ugStatusCopy: '',
     needsSetup: false
   },
 
@@ -83,6 +91,11 @@ Page({
         tpgCourseCount: 0,
         tpgCourseCountDisplay: '',
         tpgCourseCountLabel: '',
+        isUgCatalogue: false,
+        ugProfile: null,
+        ugCourses: [],
+        ugCourseCount: 0,
+        ugCourseCountDisplay: '',
         courses: [],
         offerings: [],
         searching: false,
@@ -103,6 +116,7 @@ Page({
       this.setData({
         needsSetup: false,
         isTpg: true,
+        isUgCatalogue: false,
         tpgProgramme,
         tpgUniversity,
         tpgCourses,
@@ -122,6 +136,11 @@ Page({
     this.setData({
       needsSetup: false,
       isTpg: false,
+      isUgCatalogue: false,
+      ugProfile: null,
+      ugCourses: [],
+      ugCourseCount: 0,
+      ugCourseCountDisplay: '',
       tpgProgramme: null,
       tpgUniversity: null,
       tpgCourses: [],
@@ -129,6 +148,48 @@ Page({
       tpgCourseCountDisplay: '',
       tpgCourseCountLabel: ''
     });
+
+    const ugProfile = profile && profile.profileType === 'undergraduate'
+      ? ugService.getMajorProfile(profile.programmeId, profile.majorId, profile.curriculumYear)
+      : null;
+    if (ugProfile && ugProfile.sourceStatus === 'programme_summary_only') {
+      if (requestId !== this._requestId) return;
+      this.setData({
+        isUgCatalogue: true,
+        ugProfile,
+        ugCourses: [],
+        ugCourseCount: 0,
+        ugCourseCountDisplay: '待开放',
+        ugStatusTitle: 'Programme / Major 已收录',
+        ugStatusCopy: '当前先展示本科 Programme 与 Major 索引；课程清单完成复核后会在这里显示。',
+        courses: [],
+        offerings: [],
+        dataSource: 'catalogue',
+        searching: false
+      });
+      return;
+    }
+
+    if (ugProfile && ugProfile.sourceStatus === 'course_codes_available') {
+      const ugCourses = ugService.listMajorCourses(profile.programmeId, profile.majorId, {
+        keyword: this.data.keyword
+      });
+      if (requestId !== this._requestId) return;
+      this.setData({
+        isUgCatalogue: true,
+        ugProfile,
+        ugCourses,
+        ugCourseCount: ugProfile.codedCourseCount,
+        ugCourseCountDisplay: ugProfile.codedCourseCount,
+        ugStatusTitle: '课程清单已开放',
+        ugStatusCopy: '这里显示从公开资料中整理出的本科课程代码。正式选课前仍以学校系统为准。',
+        courses: [],
+        offerings: [],
+        dataSource: 'catalogue',
+        searching: false
+      });
+      return;
+    }
 
     if (this.data.viewMode === 'offerings') {
       const result = await service.listCourseOfferingsRemote({
@@ -320,6 +381,18 @@ Page({
       data,
       success: () => {
         wx.showToast({ title: programme.sourceUrl ? '官方链接已复制' : '资料来源已复制' });
+      }
+    });
+  },
+
+  copyUgSource() {
+    const profile = this.data.ugProfile;
+    const sourceUrl = profile && profile.sourceUrl;
+    if (!sourceUrl) return;
+    wx.setClipboardData({
+      data: sourceUrl,
+      success: () => {
+        wx.showToast({ title: '官方链接已复制' });
       }
     });
   },

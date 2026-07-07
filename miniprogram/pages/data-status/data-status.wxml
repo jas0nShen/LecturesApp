@@ -36,6 +36,33 @@
     <view class="source-action tpg-source-action" bindtap="copyTpgSources">复制 PDF 来源清单</view>
   </view>
 
+  <view class="section tpg-passport ug-passport" wx:if="{{ugStatus}}">
+    <view class="tpg-passport-head">
+      <view>
+        <view class="status-kicker">UG DATA PASSPORT</view>
+        <view class="tpg-title">本科资料库</view>
+        <view class="tpg-copy">用于本科 Programme / Major 选择；课程代码和毕业规则会按公开资料复核后逐步开放。</view>
+      </view>
+      <view class="tpg-seal">JSON<br/>IMPORT</view>
+    </view>
+    <view class="tpg-metrics">
+      <view class="tpg-metric">
+        <view class="stat-value">{{ugStatus.universityCount}}</view>
+        <view class="stat-label">所大学</view>
+      </view>
+      <view class="tpg-metric">
+        <view class="stat-value">{{ugStatus.sourceProgrammeCount}}</view>
+        <view class="stat-label">Programme</view>
+      </view>
+      <view class="tpg-metric">
+        <view class="stat-value">{{ugStatus.majorCount}}</view>
+        <view class="stat-label">Major / Track</view>
+      </view>
+    </view>
+    <view class="tpg-note-line">当前已录入 {{ugStatus.codedCourseCount}} 条本科课程代码；未开放课程的 Programme 只展示索引与来源，暂不生成毕业判断。</view>
+    <view class="source-action tpg-source-action" bindtap="copyUgSummary">复制本科数据状态</view>
+  </view>
+
   <view class="section source-card">
     <view class="source-index">01</view>
     <view class="source-kicker">COURSE OFFERINGS</view>

@@ -1,5 +1,6 @@
 const service = require('../../utils/courseService');
 const tpgService = require('../../utils/tpgService');
+const ugService = require('../../utils/ugService');
 
 function buildTpgAudit(programme, university) {
   const groups = (programme.courseGroups || []).map((group, groupIndex) => ({
@@ -74,6 +75,8 @@ Page({
     dataSource: 'loading',
     isTpg: false,
     tpgAudit: null,
+    isUgCatalogue: false,
+    ugAudit: null,
     needsSetup: false
   },
 
@@ -88,6 +91,8 @@ Page({
         needsSetup: true,
         isTpg: false,
         tpgAudit: null,
+        isUgCatalogue: false,
+        ugAudit: null,
         dataSource: 'catalogue'
       });
       return;
@@ -101,6 +106,34 @@ Page({
         needsSetup: false,
         isTpg: true,
         tpgAudit: buildTpgAudit(tpgProgramme, tpgService.getProgrammeUniversity(tpgProgramme)),
+        isUgCatalogue: false,
+        ugAudit: null,
+        dataSource: 'catalogue'
+      });
+      return;
+    }
+
+    const ugProfile = profile && profile.profileType === 'undergraduate'
+      ? ugService.getMajorProfile(profile.programmeId, profile.majorId, profile.curriculumYear)
+      : null;
+    if (ugProfile && ugProfile.sourceStatus) {
+      this.setData({
+        needsSetup: false,
+        isTpg: false,
+        tpgAudit: null,
+        isUgCatalogue: true,
+        ugAudit: {
+          profile: ugProfile,
+          hasCourses: ugProfile.codedCourseCount > 0,
+          courseCount: ugProfile.codedCourseCount || 0,
+          statusTitle: ugProfile.codedCourseCount > 0 ? '课程清单已开放' : '课程清单待开放',
+          statusCopy: ugProfile.codedCourseCount > 0
+            ? '当前显示已从公开资料整理出的课程代码；毕业进度规则仍需继续复核。'
+            : '当前先确认学校、Programme 与 Major；课程代码和毕业规则完成复核后再开放进度计算。',
+          nextChecks: ugProfile.codedCourseCount > 0
+            ? ['浏览课程页查看已录入课程代码', '对照学校系统确认选课要求', '后续版本再开放逐项毕业进度']
+            : ['确认 Programme / Major 是否选择正确', '复制官方来源与学校页面对照', '等待课程清单和毕业规则复核']
+        },
         dataSource: 'catalogue'
       });
       return;
@@ -112,6 +145,8 @@ Page({
       needsSetup: false,
       isTpg: false,
       tpgAudit: null,
+      isUgCatalogue: false,
+      ugAudit: null,
       audit: auditResult.data,
       dataSource: auditResult.source
     });
@@ -154,6 +189,17 @@ Page({
       data,
       success: () => {
         wx.showToast({ title: programme.sourceUrl ? '官方链接已复制' : '资料来源已复制' });
+      }
+    });
+  },
+
+  copyUgSource() {
+    const profile = this.data.ugAudit && this.data.ugAudit.profile;
+    if (!profile || !profile.sourceUrl) return;
+    wx.setClipboardData({
+      data: profile.sourceUrl,
+      success: () => {
+        wx.showToast({ title: '官方链接已复制' });
       }
     });
   }

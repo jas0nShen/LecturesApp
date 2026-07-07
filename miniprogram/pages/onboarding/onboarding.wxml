@@ -25,7 +25,7 @@
 
   <view wx:if="{{mode === 'undergraduate'}}" class="section panel">
     <view class="scope-note ug-note">
-      当前本科资料库先从已整理的 Programme 开始；后续可继续扩展更多学校、学院和专业。
+      本科资料库已接入多校 Programme 和 Major；课程清单会在公开资料复核后逐步开放。
       <view class="inline-link" bindtap="switchToTpg">查看授课硕士</view>
     </view>
 
@@ -38,9 +38,42 @@
 
     <view class="field">
       <view class="label">Programme</view>
-      <picker range="{{programmes}}" range-key="nameZh" bindchange="onProgrammeChange">
-        <view class="select">{{selectedProgramme.nameZh || '请选择 Programme'}}</view>
+      <view class="programme-search">
+        <input
+          class="programme-input"
+          value="{{ugKeyword}}"
+          placeholder="搜索 Programme、代码、学院"
+          confirm-type="search"
+          bindinput="onUgKeyword"
+        />
+        <view wx:if="{{ugKeyword}}" class="programme-clear" bindtap="clearUgKeyword">×</view>
+      </view>
+      <picker range="{{filteredUgProgrammes}}" range-key="nameZh" bindchange="onProgrammeChange">
+        <view class="select select-programme">
+          <view class="select-programme-name">{{selectedProgramme.nameZh || '请选择 Programme'}}</view>
+          <view class="select-programme-meta">{{filteredUgProgrammes.length}} 个匹配结果 · 当前 {{ugSelectedIndexLabel}}</view>
+        </view>
       </picker>
+    </view>
+
+    <view wx:if="{{filteredUgProgrammes.length}}" class="programme-results">
+      <view
+        wx:for="{{visibleUgProgrammes}}"
+        wx:key="id"
+        class="programme-result {{selectedProgramme.id === item.id ? 'programme-result-active' : ''}}"
+        data-id="{{item.id}}"
+        bindtap="selectUgProgramme"
+      >
+        <view class="result-code">{{item.code || item.jupasCode || selectedUniversity.code}}</view>
+        <view class="result-main">
+          <view class="result-name">{{item.nameZh}}</view>
+          <view class="result-meta">{{item.faculty || 'Faculty 待确认'}} · {{item.codedCourseCount ? item.codedCourseCount + ' 门课程' : '课程清单待开放'}}</view>
+        </view>
+      </view>
+    </view>
+
+    <view wx:else class="programme-empty">
+      没有找到匹配 Programme。试试输入 Computer、Engineering、Business 或代码。
     </view>
 
     <view class="field">

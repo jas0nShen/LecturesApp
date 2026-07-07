@@ -40,3 +40,20 @@ test('feedback template can target an unsaved programme detail', () => {
   assert(template.includes('当前资料状态：结构资料待拆分 · 课程清单待开放'));
   assert(template.includes('HKU_Master_Course_Guide.pdf'));
 });
+
+test('feedback template includes imported undergraduate catalogue context', () => {
+  const template = feedbackService.buildFeedbackTemplate({
+    profileType: 'undergraduate',
+    universityCode: 'HKU',
+    programmeId: 'HKU-UG-6004-1',
+    programmeName: 'Bachelor of Arts in Architectural Studies',
+    majorId: 'HKU-UG-6004-1-M1',
+    majorName: 'Bachelor of Arts in Architectural Studies',
+    curriculumYear: '2026'
+  });
+
+  assert(template.includes('学校：香港大学'));
+  assert(template.includes('Programme：Bachelor of Arts in Architectural Studies'));
+  assert(template.includes('当前资料状态：Bachelor of Arts in Architectural Studies · 课程清单待开放'));
+  assert(template.includes('https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-architectural-studies'));
+});

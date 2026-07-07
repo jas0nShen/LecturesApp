@@ -4,27 +4,30 @@ const { test } = require('node:test');
 const ugService = require('./ugService');
 
 test('UG catalogue summarizes current undergraduate seed data', () => {
-  assert.deepEqual(ugService.getCatalogueSummary(), {
-    universityCount: 1,
-    facultyCount: 1,
-    programmeCount: 1,
-    majorCount: 1,
-    courseCount: 14,
-    requirementCount: 4
-  });
+  const summary = ugService.getCatalogueSummary();
+
+  assert.equal(summary.universityCount, 6);
+  assert(summary.facultyCount > 20);
+  assert(summary.programmeCount >= 396);
+  assert(summary.majorCount >= 642);
+  assert.equal(summary.requirementCount, 4);
+  assert(summary.courseCount >= 186);
+  assert.equal(summary.sourceProgrammeCount, 396);
+  assert.equal(summary.codedCourseCount, 172);
 });
 
-test('UG catalogue exposes the hierarchy needed for future imports', () => {
-  const university = ugService.listUniversities()[0];
+test('UG catalogue exposes the multi-school hierarchy needed for onboarding', () => {
+  const universities = ugService.listUniversities();
+  const university = universities.find((item) => item.code === 'POLYU');
   const faculty = ugService.listFaculties(university.id)[0];
   const programme = ugService.listProgrammes({ universityId: university.id, facultyId: faculty.id })[0];
   const major = ugService.listMajors(programme.id)[0];
 
-  assert.equal(university.code, 'HKU');
-  assert.equal(faculty.nameEn, 'Faculty of Engineering');
-  assert.equal(programme.nameEn, 'Bachelor of Engineering');
-  assert.equal(major.nameEn, 'Computer Science');
-  assert.deepEqual(ugService.listCurriculumYears(programme.id, major.id), ['2025-26']);
+  assert.deepEqual(universities.map((item) => item.code), ['HKU', 'CUHK', 'HKUST', 'POLYU', 'CITYU', 'HKBU']);
+  assert.equal(university.nameZh, '香港理工大学');
+  assert(programme.nameEn);
+  assert(major.nameEn);
+  assert.deepEqual(ugService.listCurriculumYears(programme.id, major.id), ['2026']);
 });
 
 test('UG major profile groups requirements with traceable courses and sources', () => {
@@ -55,6 +58,43 @@ test('UG course and major search support the next import workflow', () => {
       .map((course) => course.courseCode),
     ['COMP3314']
   );
-  assert.deepEqual(ugService.searchMajors('engineering').map((major) => major.code), ['COMP']);
+  assert(ugService.searchMajors('engineering').some((major) => major.code === 'COMP'));
   assert.equal(ugService.getMajorProfile(1, 999), null);
+});
+
+test('imported UG programme profiles preserve source status without faking course rules', () => {
+  const hku = ugService.listUniversities().find((item) => item.code === 'HKU');
+  const programmes = ugService.listProgrammes({ universityId: hku.id, degreeLevel: 'undergraduate' });
+  const hkuArchitecture = programmes.find((programme) => programme.code === '6004');
+  const major = ugService.listMajors(hkuArchitecture.id)[0];
+  const profile = ugService.getMajorProfile(hkuArchitecture.id, major.id, '2026');
+
+  assert.equal(programmes.filter((programme) => typeof programme.id === 'string').length, 136);
+  assert.equal(profile.sourceStatus, 'programme_summary_only');
+  assert.equal(profile.codedCourseCount, 0);
+  assert.equal(profile.trackedRequirementCount, 0);
+  assert.equal(profile.courseCount, 0);
+  assert(profile.sourceUrl.startsWith('https://'));
+});
+
+test('imported UG coded courses are searchable when public course rows exist', () => {
+  const polyu = ugService.listUniversities().find((item) => item.code === 'POLYU');
+  const programmes = ugService.listProgrammes({ universityId: polyu.id, degreeLevel: 'undergraduate' });
+  const computing = programmes.find((programme) => programme.code === 'JS3868');
+  const computerScience = ugService.listMajors(computing.id).find((major) => major.nameEn === 'Computer Science');
+  const profile = ugService.getMajorProfile(computing.id, computerScience.id, '2026');
+
+  assert(profile.codedCourseCount > 0);
+  assert(ugService.listMajorCourses(computing.id, computerScience.id, { keyword: 'Artificial Intelligence' }).length > 0);
+});
+
+test('imported UG programmes can be searched by title, code and faculty', () => {
+  const hku = ugService.listUniversities().find((item) => item.code === 'HKU');
+  const hkuProgrammes = ugService.listProgrammes({ universityId: hku.id, degreeLevel: 'undergraduate' });
+  const architecture = ugService.searchProgrammes(hkuProgrammes, '6004');
+  const engineering = ugService.searchProgrammes(hkuProgrammes, 'Engineering');
+
+  assert(architecture.some((programme) => programme.nameEn === 'Bachelor of Arts in Architectural Studies'));
+  assert(engineering.length > 0);
+  assert(ugService.searchProgrammes(hkuProgrammes, '').length >= hkuProgrammes.length);
 });
