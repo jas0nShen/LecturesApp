@@ -267,8 +267,10 @@ test('user data can be exported and restored from a validated backup', () => {
   service.saveCourseNote('COMP1117', 'Check the assessment details.');
 
   const backup = service.exportUserData();
+  const backupText = service.formatUserDataBackup(backup);
   storage.clear();
-  assert.equal(service.importUserData(JSON.stringify(backup)), true);
+  assert(backupText.includes('\n  "app": "lectures-app"'));
+  assert.equal(service.importUserData(backupText), true);
   assert.deepEqual(service.getProfile(), { universityCode: 'HKU', currentYear: 2 });
   assert.deepEqual(service.getFavoriteOfferingCodes(), ['COMP1117']);
   assert.equal(service.isCoursePlanned('COMP1117'), true);

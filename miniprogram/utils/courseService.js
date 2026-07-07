@@ -132,6 +132,10 @@ function exportUserData() {
   };
 }
 
+function formatUserDataBackup(snapshot = exportUserData()) {
+  return JSON.stringify(snapshot, null, 2);
+}
+
 function getUserDataSummary() {
   const favoriteCodes = new Set(
     getFavoriteOfferingCodes().concat(getFavoriteCourses().map((course) => course.courseCode))
@@ -853,6 +857,7 @@ module.exports = {
   buildAudit,
   buildAuditRemote,
   exportUserData,
+  formatUserDataBackup,
   formatStudyPlanText,
   getCompletedCourseIds,
   getCompletedOfferingCodes,

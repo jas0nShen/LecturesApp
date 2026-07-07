@@ -81,7 +81,7 @@ Page({
   },
 
   copyBackup() {
-    const backup = JSON.stringify(service.exportUserData());
+    const backup = service.formatUserDataBackup();
     wx.setClipboardData({
       data: backup,
       success() {

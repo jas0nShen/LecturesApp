@@ -144,6 +144,14 @@ test('saved programme profiles keep source links for review and feedback', () =>
   assert(auditLogic.includes("wx.showToast({ title: '暂无官方链接', icon: 'none' })"));
 });
 
+test('backup copy actions use the readable backup formatter', () => {
+  const profileLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'profile', 'profile.js'), 'utf8');
+  const privacyLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'privacy-data', 'privacy-data.js'), 'utf8');
+
+  assert(profileLogic.includes('service.formatUserDataBackup()'));
+  assert(privacyLogic.includes('service.formatUserDataBackup()'));
+});
+
 test('TPG catalogue copy describes availability instead of completeness', () => {
   const cataloguePage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'tpg-catalog', 'tpg-catalog.wxml'), 'utf8');
 

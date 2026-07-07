@@ -42,7 +42,7 @@ Page({
 
   copyBackup() {
     wx.setClipboardData({
-      data: JSON.stringify(service.exportUserData()),
+      data: service.formatUserDataBackup(),
       success() {
         wx.showToast({ title: '备份已复制' });
       }
