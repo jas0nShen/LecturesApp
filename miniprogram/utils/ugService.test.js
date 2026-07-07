@@ -8,11 +8,11 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
 
   assert.equal(summary.universityCount, 8);
   assert(summary.facultyCount > 20);
-  assert(summary.programmeCount >= 396);
-  assert(summary.majorCount >= 642);
+  assert(summary.programmeCount >= 445);
+  assert(summary.majorCount >= 690);
   assert.equal(summary.requirementCount, 4);
   assert(summary.courseCount >= 186);
-  assert.equal(summary.sourceProgrammeCount, 396);
+  assert.equal(summary.sourceProgrammeCount, 444);
   assert.equal(summary.codedCourseCount, 172);
 });
 
@@ -49,8 +49,8 @@ test('UG per-school coverage stays visible for setup validation', () => {
     POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 172 },
     CITYU: { programmeCount: 58, majorCount: 201, codedCourseCount: 0 },
     HKBU: { programmeCount: 22, majorCount: 46, codedCourseCount: 0 },
-    EDUHK: { programmeCount: 0, majorCount: 0, codedCourseCount: 0 },
-    LINGNAN: { programmeCount: 0, majorCount: 0, codedCourseCount: 0 }
+    EDUHK: { programmeCount: 25, majorCount: 25, codedCourseCount: 0 },
+    LINGNAN: { programmeCount: 23, majorCount: 23, codedCourseCount: 0 }
   });
 });
 

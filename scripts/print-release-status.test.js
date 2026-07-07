@@ -24,8 +24,8 @@ test('release status summarizes TPG and UG metrics', () => {
       tpgProgrammeWithCoursesCount: 6,
       tpgCourseCount: 257,
       ugSchoolCount: 8,
-      ugProgrammeCount: 396,
-      ugMajorCount: 641,
+      ugProgrammeCount: 444,
+      ugMajorCount: 689,
       ugCodedCourseCount: 172,
       offeringCount: 56,
       offeringAgeDays: 2,
@@ -41,6 +41,6 @@ test('release status summarizes TPG and UG metrics', () => {
 
   assert.match(output, /READY/);
   assert.match(output, /TPG：8 所学校 · 348 Programme/);
-  assert.match(output, /UG：8 所学校 · 396 Programme · 641 Major\/Track/);
+  assert.match(output, /UG：8 所学校 · 444 Programme · 689 Major\/Track/);
   assert.match(output, /上传包：83 个文件 · 1\.12 MB/);
 });

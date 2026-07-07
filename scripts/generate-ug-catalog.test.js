@@ -3,7 +3,7 @@ const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
 const test = require('node:test');
-const { validateSourceDir } = require('./generate-ug-catalog');
+const { buildStaticCatalogue, validateSourceDir } = require('./generate-ug-catalog');
 const { summarizeSourceFile } = require('./report-ug-source-coverage');
 
 test('UG catalogue generator reports missing source files clearly', () => {
@@ -18,6 +18,21 @@ test('UG catalogue generator reports missing source files clearly', () => {
       return true;
     }
   );
+});
+
+test('UG catalogue generator includes static EdUHK and Lingnan undergraduate programme indexes', () => {
+  const catalogue = buildStaticCatalogue();
+  const eduhkProgrammes = catalogue.programmes.filter((programme) => programme.universityCode === 'EDUHK');
+  const lingnanProgrammes = catalogue.programmes.filter((programme) => programme.universityCode === 'LINGNAN');
+
+  assert.equal(eduhkProgrammes.length, 25);
+  assert.equal(lingnanProgrammes.length, 23);
+  assert.equal(catalogue.majors.length, 48);
+  assert.equal(catalogue.courses.length, 0);
+  assert(eduhkProgrammes.some((programme) => programme.code === 'JS8714' && programme.nameEn.includes('Artificial Intelligence')));
+  assert(lingnanProgrammes.some((programme) => programme.code === 'JS7225' && programme.nameEn.includes('Data Science')));
+  assert(eduhkProgrammes.every((programme) => programme.sourceStatus === 'programme_summary_only'));
+  assert(lingnanProgrammes.every((programme) => programme.officialUrl.startsWith('https://www.jupas.edu.hk/en/programme/lingnanu/JS')));
 });
 
 test('UG source coverage report counts only rows with course codes as coded courses', () => {
