@@ -72,7 +72,7 @@
     </view>
     <view class="tpg-step-list">
       <view wx:for="{{tpgNextSteps}}" wx:key="title" class="tpg-step">
-        <view class="tpg-step-status {{item.status === 'READY' || item.status === 'DONE' ? 'tpg-step-status-ready' : ''}}">{{item.status}}</view>
+        <view class="tpg-step-status {{item.status === 'READY' || item.status === 'DONE' ? 'tpg-step-status-ready' : ''}}">{{item.statusLabel}}</view>
         <view>
           <view class="tpg-step-title">{{item.title}}</view>
           <view class="tpg-step-copy">{{item.copy}}</view>
@@ -98,7 +98,7 @@
     </view>
     <view class="tpg-step-list">
       <view wx:for="{{ugNextSteps}}" wx:key="title" class="tpg-step">
-        <view class="tpg-step-status {{item.status === 'READY' || item.status === 'DONE' ? 'tpg-step-status-ready' : ''}}">{{item.status}}</view>
+        <view class="tpg-step-status {{item.status === 'READY' || item.status === 'DONE' ? 'tpg-step-status-ready' : ''}}">{{item.statusLabel}}</view>
         <view>
           <view class="tpg-step-title">{{item.title}}</view>
           <view class="tpg-step-copy">{{item.copy}}</view>

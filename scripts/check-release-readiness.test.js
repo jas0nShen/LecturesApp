@@ -86,9 +86,15 @@ test('release-facing docs avoid stale launch terminology', () => {
 
 test('home page avoids internal launch status labels', () => {
   const homePage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'home', 'home.wxml'), 'utf8');
+  const homeLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'home', 'home.js'), 'utf8');
   assert(homePage.includes('资料状态'));
+  assert(homePage.includes('{{item.statusLabel}}'));
+  assert(homeLogic.includes("statusLabel: '已选择'"));
+  assert(homeLogic.includes("statusLabel: hasCourses ? '可查看' : '复核中'"));
+  assert(homeLogic.includes("statusLabel: hasCourses ? '下一步' : '安全提示'"));
   assert(!homePage.includes('MVP STATUS'));
   assert(!homePage.includes('UG STATUS'));
+  assert(!homePage.includes('{{item.status}}'));
 });
 
 test('release checklist includes an iOS and Android acceptance matrix', () => {
