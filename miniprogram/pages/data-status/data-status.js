@@ -3,6 +3,20 @@ const releaseInfo = require('../../utils/releaseInfo');
 const tpgService = require('../../utils/tpgService');
 const ugService = require('../../utils/ugService');
 
+function copyTextOrToast(text, successTitle, emptyTitle = '暂无可复制内容') {
+  const data = String(text || '').trim();
+  if (!data) {
+    wx.showToast({ title: emptyTitle, icon: 'none' });
+    return;
+  }
+  wx.setClipboardData({
+    data,
+    success() {
+      wx.showToast({ title: successTitle });
+    }
+  });
+}
+
 Page({
   data: {
     releaseInfo,
@@ -20,21 +34,11 @@ Page({
   },
 
   copySource(event) {
-    wx.setClipboardData({
-      data: event.currentTarget.dataset.url,
-      success() {
-        wx.showToast({ title: '官方来源已复制' });
-      }
-    });
+    copyTextOrToast(event.currentTarget.dataset.url, '官方来源已复制', '暂无官方来源');
   },
 
   copyTpgSources() {
-    wx.setClipboardData({
-      data: this.data.tpgStatus.sourceSummary,
-      success() {
-        wx.showToast({ title: '资料来源已复制' });
-      }
-    });
+    copyTextOrToast(this.data.tpgStatus && this.data.tpgStatus.sourceSummary, '资料来源已复制', '暂无资料来源');
   },
 
   copyUgSummary() {
@@ -47,11 +51,6 @@ Page({
       `已录入课程代码：${status.codedCourseCount}`,
       '说明：Programme / Major 已接入；毕业规则和课程清单按公开资料逐步复核开放。'
     ].join('\n');
-    wx.setClipboardData({
-      data: text,
-      success() {
-        wx.showToast({ title: '本科状态已复制' });
-      }
-    });
+    copyTextOrToast(text, '本科状态已复制');
   }
 });

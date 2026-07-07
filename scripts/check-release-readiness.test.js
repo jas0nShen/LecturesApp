@@ -161,6 +161,15 @@ test('feedback copy includes only count-based local context', () => {
   assert(feedbackLogic.includes('只包含数量，不包含具体课程或笔记内容'));
 });
 
+test('data status source copy handles missing source text', () => {
+  const dataStatusLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'data-status', 'data-status.js'), 'utf8');
+
+  assert(dataStatusLogic.includes('function copyTextOrToast'));
+  assert(dataStatusLogic.includes("wx.showToast({ title: emptyTitle, icon: 'none' })"));
+  assert(dataStatusLogic.includes("copyTextOrToast(event.currentTarget.dataset.url, '官方来源已复制', '暂无官方来源')"));
+  assert(dataStatusLogic.includes("copyTextOrToast(this.data.tpgStatus && this.data.tpgStatus.sourceSummary, '资料来源已复制', '暂无资料来源')"));
+});
+
 test('TPG catalogue copy describes availability instead of completeness', () => {
   const cataloguePage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'tpg-catalog', 'tpg-catalog.wxml'), 'utf8');
 
