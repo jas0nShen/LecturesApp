@@ -331,6 +331,10 @@ test('TPG onboarding previews selected school data coverage', () => {
   assert(onboardingLogic.includes('tpgProgrammes: INITIAL_TPG_PROGRAMMES'));
   assert(onboardingLogic.includes('tpgProgrammeOptions: INITIAL_TPG_PROGRAMMES.map(formatTpgProgrammeOption)'));
   assert(onboardingLogic.includes('tpgProgrammeOptions: filteredTpgProgrammes.map(formatTpgProgrammeOption)'));
+  assert(onboardingLogic.includes('tpgEmptyTitle'));
+  assert(onboardingLogic.includes('const hasSchoolProgrammes = tpgProgrammes.length > 0'));
+  assert(onboardingLogic.includes("`${selectedTpgUniversity.shortName || selectedTpgUniversity.code} Programme 资料待开放`"));
+  assert(onboardingLogic.includes('这所学校已经加入选择范围；Programme 和课程资料整理完成后会在这里显示。'));
   assert(onboardingLogic.includes('showTpgUniversitySheet: false'));
   assert(onboardingLogic.includes('showTpgProgrammeSheet: false'));
   assert(onboardingLogic.includes('openTpgUniversitySheet()'));
@@ -349,6 +353,9 @@ test('TPG onboarding previews selected school data coverage', () => {
   assert(onboardingPage.includes('wx:if="{{showTpgProgrammeSheet}}"'));
   assert(onboardingPage.includes('wx:for="{{tpgProgrammeOptions}}"'));
   assert(onboardingPage.includes('bindtap="selectTpgProgrammeFromSheet"'));
+  assert(onboardingPage.includes('{{tpgEmptyTitle}}'));
+  assert(onboardingPage.includes('{{tpgEmptyCopy}}'));
+  assert(onboardingPage.includes('wx:if="{{tpgKeyword && tpgProgrammes.length}}" class="programme-empty-action" bindtap="clearTpgKeyword"'));
   assert(onboardingPage.includes("{{tpgProgrammeIndex === index ? 'sheet-option-active' : ''}}"));
   assert(!onboardingPage.includes('range="{{tpgProgrammeOptions}}"'));
   assert(onboardingPage.includes('wx:if="{{selectedTpgProgramme.id}}"'));
@@ -365,7 +372,7 @@ test('TPG onboarding programme results show course availability', () => {
   assert(onboardingLogic.includes("courseStatusLabel: courseCount ? `${courseCount} 门课程` : '课程清单待开放'"));
   assert(onboardingLogic.includes('visibleTpgProgrammes: this.decorateTpgProgrammes(filteredTpgProgrammes.slice(0, 5))'));
   assert(onboardingPage.includes('{{item.courseStatusLabel}}'));
-  assert(onboardingPage.includes('wx:if="{{tpgKeyword}}" class="programme-empty-action" bindtap="clearTpgKeyword"'));
+  assert(onboardingPage.includes('wx:if="{{tpgKeyword && tpgProgrammes.length}}" class="programme-empty-action" bindtap="clearTpgKeyword"'));
 });
 
 test('TPG catalogue copy describes availability instead of completeness', () => {

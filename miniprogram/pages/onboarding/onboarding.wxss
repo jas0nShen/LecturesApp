@@ -349,6 +349,12 @@
   margin-top: 14rpx;
 }
 
+.programme-empty-copy {
+  color: #7c8f86;
+  font-size: 21rpx;
+  margin-top: 6rpx;
+}
+
 .programme-proof,
 .ug-proof {
   align-items: flex-start;

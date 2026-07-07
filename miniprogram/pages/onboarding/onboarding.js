@@ -91,6 +91,8 @@ Page({
     tpgCourseCount: 0,
     tpgCourseStatus: '',
     tpgSelectedIndexLabel: '',
+    tpgEmptyTitle: '',
+    tpgEmptyCopy: '',
     savedTpgProfile: null,
     showTpgUniversitySheet: false,
     showTpgProgrammeSheet: false
@@ -572,6 +574,7 @@ Page({
     const selectedIndex = filteredTpgProgrammes.findIndex((item) => item.id === effectiveProgramme.id);
     const selectedTpgCoverage = this.data.tpgSchoolCoverage.find((item) => item.code === selectedTpgUniversity.code) || null;
     const tpgUniversityIndex = this.data.tpgUniversities.findIndex((item) => item.code === selectedTpgUniversity.code);
+    const hasSchoolProgrammes = tpgProgrammes.length > 0;
     this.setData({
       selectedTpgUniversity,
       selectedTpgCoverage,
@@ -586,6 +589,10 @@ Page({
       selectedTpgProgramme: effectiveProgramme,
       tpgCourseCount,
       tpgCourseStatus: tpgCourseCount ? `已录入 ${tpgCourseCount} 门课程` : 'Programme 索引已录入，课程清单待开放',
+      tpgEmptyTitle: hasSchoolProgrammes ? '没有找到匹配 Programme' : `${selectedTpgUniversity.shortName || selectedTpgUniversity.code} Programme 资料待开放`,
+      tpgEmptyCopy: hasSchoolProgrammes
+        ? '试试输入 MSc、Finance、Computer 或学院关键词。'
+        : '这所学校已经加入选择范围；Programme 和课程资料整理完成后会在这里显示。',
       tpgSelectedIndexLabel: selectedIndex >= 0 ? `${selectedIndex + 1} / ${filteredTpgProgrammes.length}` : `0 / ${filteredTpgProgrammes.length}`
     });
   },
