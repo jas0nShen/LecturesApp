@@ -222,8 +222,10 @@ test('undergraduate onboarding previews selected school data coverage', () => {
   assert(onboardingLogic.includes('ugCurriculumYearIndex: 0'));
   assert(onboardingLogic.includes('currentYearIndex: 0'));
   assert(onboardingLogic.includes('const INITIAL_UG_UNIVERSITIES = ugService.listUniversities()'));
-  assert(onboardingLogic.includes('const INITIAL_UG_PROGRAMMES = INITIAL_UG_UNIVERSITY.id'));
-  assert(onboardingLogic.includes('const INITIAL_UG_MAJORS = INITIAL_UG_PROGRAMME.id'));
+  assert(onboardingLogic.includes('const INITIAL_UG_UNIVERSITY = {}'));
+  assert(onboardingLogic.includes('const INITIAL_UG_PROGRAMMES = []'));
+  assert(onboardingLogic.includes('const INITIAL_UG_PROGRAMME = {}'));
+  assert(onboardingLogic.includes('const INITIAL_UG_MAJORS = []'));
   assert(onboardingLogic.includes('universities: INITIAL_UG_UNIVERSITIES'));
   assert(onboardingLogic.includes('universityOptions: INITIAL_UG_UNIVERSITIES.map(formatUgUniversityOption)'));
   assert(onboardingLogic.includes('programmes: INITIAL_UG_PROGRAMMES'));
@@ -252,6 +254,10 @@ test('undergraduate onboarding previews selected school data coverage', () => {
   assert(onboardingLogic.includes('ugSchoolCoverage = this.data.ugSchoolCoverage'));
   assert(onboardingLogic.includes('applyUgProgrammeSelection(selectedProgramme = {}, profile = null, filteredUgProgrammes = this.data.filteredUgProgrammes)'));
   assert(onboardingPage.includes('bindtap="openUgUniversitySheet"'));
+  assert(onboardingPage.includes("{{selectedUniversity.nameZh || '请选择你的学校'}}"));
+  assert(onboardingPage.includes('请先选择你的学校，然后再选择 Programme 和 Major。'));
+  assert(onboardingPage.includes('wx:if="{{selectedUniversity.id}}" class="field"'));
+  assert(onboardingPage.includes('wx:if="{{selectedUniversity.id && filteredUgProgrammes.length}}"'));
   assert(onboardingPage.includes('wx:if="{{showUgUniversitySheet}}"'));
   assert(onboardingPage.includes('wx:for="{{universityOptions}}"'));
   assert(onboardingPage.includes('bindtap="selectUgUniversity"'));
@@ -308,6 +314,8 @@ test('undergraduate onboarding shows the saved local profile summary', () => {
   assert(onboardingLogic.includes('resolveInitialMode(profile, options)'));
   assert(onboardingLogic.includes('this._modeTouchedByUser = true'));
   assert(onboardingLogic.includes('function mergeProfileOptions(profile, options = {})'));
+  assert(onboardingLogic.includes('const rawOptionProfile = {'));
+  assert(onboardingLogic.includes("rawOptionProfile[key] !== undefined && rawOptionProfile[key] !== null && rawOptionProfile[key] !== ''"));
   assert(onboardingLogic.includes('function resolveSavedUgUniversity(profile, universities = [])'));
   assert(onboardingLogic.includes('const profileProgramme = ugService.getProgramme(profile.programmeId)'));
   assert(onboardingLogic.includes('item.id === profile.universityId'));
@@ -367,7 +375,9 @@ test('TPG onboarding previews selected school data coverage', () => {
   assert(onboardingLogic.includes('tpgUniversityIndex: 0'));
   assert(onboardingLogic.includes('tpgProgrammeIndex: 0'));
   assert(onboardingLogic.includes('const INITIAL_TPG_UNIVERSITIES = tpgService.listUniversities()'));
-  assert(onboardingLogic.includes('const INITIAL_TPG_PROGRAMMES = INITIAL_TPG_UNIVERSITY.code'));
+  assert(onboardingLogic.includes('const INITIAL_TPG_UNIVERSITY = {}'));
+  assert(onboardingLogic.includes('const INITIAL_TPG_PROGRAMMES = []'));
+  assert(onboardingLogic.includes('const INITIAL_TPG_PROGRAMME = {}'));
   assert(onboardingLogic.includes('tpgUniversities: INITIAL_TPG_UNIVERSITIES'));
   assert(onboardingLogic.includes('tpgUniversityOptions: INITIAL_TPG_UNIVERSITIES.map(formatTpgUniversityOption)'));
   assert(onboardingLogic.includes('tpgProgrammes: INITIAL_TPG_PROGRAMMES'));
@@ -382,6 +392,10 @@ test('TPG onboarding previews selected school data coverage', () => {
   assert(onboardingLogic.includes('openTpgUniversitySheet()'));
   assert(onboardingLogic.includes('openTpgProgrammeSheet()'));
   assert(onboardingLogic.includes('selectTpgUniversityByIndex(index)'));
+  assert(onboardingPage.includes("{{selectedTpgUniversity.shortName || '请选择你的学校'}}"));
+  assert(onboardingPage.includes('请先选择你的学校，然后再搜索或选择 Programme。'));
+  assert(onboardingPage.includes('wx:if="{{selectedTpgUniversity.code}}" class="field"'));
+  assert(onboardingPage.includes('wx:if="{{selectedTpgUniversity.code && filteredTpgProgrammes.length}}"'));
   assert(onboardingLogic.includes('selectTpgProgrammeByIndex(index)'));
   assert(onboardingLogic.includes('const tpgUniversities = tpgService.listUniversities()'));
   assert(onboardingLogic.includes('tpgUniversityIndex: tpgUniversityIndex >= 0 ? tpgUniversityIndex : 0'));

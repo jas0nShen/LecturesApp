@@ -51,10 +51,14 @@
 
     <view class="field">
       <view class="label">大学</view>
-      <view class="select select-arrow" bindtap="openUgUniversitySheet">{{selectedUniversity.nameZh || '请选择大学'}}</view>
+      <view class="select select-arrow" bindtap="openUgUniversitySheet">{{selectedUniversity.nameZh || '请选择你的学校'}}</view>
     </view>
 
-    <view class="field">
+    <view wx:if="{{!selectedUniversity.id}}" class="programme-empty">
+      <view>请先选择你的学校，然后再选择 Programme 和 Major。</view>
+    </view>
+
+    <view wx:if="{{selectedUniversity.id}}" class="field">
       <view class="label">Programme</view>
       <view class="programme-search">
         <input
@@ -72,7 +76,7 @@
       </view>
     </view>
 
-    <view wx:if="{{filteredUgProgrammes.length}}" class="programme-results">
+    <view wx:if="{{selectedUniversity.id && filteredUgProgrammes.length}}" class="programme-results">
       <view
         wx:for="{{visibleUgProgrammes}}"
         wx:key="id"
@@ -88,7 +92,7 @@
       </view>
     </view>
 
-    <view wx:else class="programme-empty">
+    <view wx:if="{{selectedUniversity.id && !filteredUgProgrammes.length}}" class="programme-empty">
       <view>没有找到匹配 Programme。试试输入 Computer、Engineering、Business 或代码。</view>
       <view wx:if="{{ugKeyword}}" class="programme-empty-action" bindtap="clearUgKeyword">清除搜索</view>
     </view>
@@ -150,10 +154,14 @@
 
     <view class="field">
       <view class="label">大学</view>
-      <view class="select select-arrow" bindtap="openTpgUniversitySheet">{{selectedTpgUniversity.shortName || '请选择大学'}}</view>
+      <view class="select select-arrow" bindtap="openTpgUniversitySheet">{{selectedTpgUniversity.shortName || '请选择你的学校'}}</view>
     </view>
 
-    <view class="field">
+    <view wx:if="{{!selectedTpgUniversity.code}}" class="programme-empty">
+      <view>请先选择你的学校，然后再搜索或选择 Programme。</view>
+    </view>
+
+    <view wx:if="{{selectedTpgUniversity.code}}" class="field">
       <view class="label">Programme</view>
       <view class="programme-search">
         <input
@@ -171,7 +179,7 @@
       </view>
     </view>
 
-    <view wx:if="{{filteredTpgProgrammes.length}}" class="programme-results">
+    <view wx:if="{{selectedTpgUniversity.code && filteredTpgProgrammes.length}}" class="programme-results">
       <view
         wx:for="{{visibleTpgProgrammes}}"
         wx:key="id"
@@ -187,7 +195,7 @@
       </view>
     </view>
 
-    <view wx:else class="programme-empty">
+    <view wx:if="{{selectedTpgUniversity.code && !filteredTpgProgrammes.length}}" class="programme-empty">
       <view>{{tpgEmptyTitle}}</view>
       <view class="programme-empty-copy">{{tpgEmptyCopy}}</view>
       <view wx:if="{{tpgKeyword && tpgProgrammes.length}}" class="programme-empty-action" bindtap="clearTpgKeyword">清除搜索</view>

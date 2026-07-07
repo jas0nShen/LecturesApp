@@ -48,7 +48,7 @@ function decodeOption(value) {
 }
 
 function mergeProfileOptions(profile, options = {}) {
-  const optionProfile = {
+  const rawOptionProfile = {
     profileType: decodeOption(options.profileType || options.mode),
     universityId: decodeOption(options.universityId),
     universityCode: decodeOption(options.universityCode),
@@ -59,6 +59,12 @@ function mergeProfileOptions(profile, options = {}) {
     curriculumYear: decodeOption(options.curriculumYear),
     currentYear: decodeOption(options.currentYear)
   };
+  const optionProfile = Object.keys(rawOptionProfile).reduce((result, key) => {
+    if (rawOptionProfile[key] !== undefined && rawOptionProfile[key] !== null && rawOptionProfile[key] !== '') {
+      result[key] = rawOptionProfile[key];
+    }
+    return result;
+  }, {});
   const hasOptionProfile = Object.keys(optionProfile).some((key) => optionProfile[key]);
   if (!hasOptionProfile) return profile;
   return { ...(profile || {}), ...optionProfile };
@@ -66,7 +72,7 @@ function mergeProfileOptions(profile, options = {}) {
 
 function resolveSavedUgUniversity(profile, universities = []) {
   if (!profile || profile.profileType !== 'undergraduate') {
-    return universities[0];
+    return null;
   }
   const profileProgramme = ugService.getProgramme(profile.programmeId);
   const normalizedUniversityCode = String(profile.universityCode || '').toUpperCase();
@@ -76,12 +82,12 @@ function resolveSavedUgUniversity(profile, universities = []) {
     || String(item.code || '').toUpperCase() === normalizedUniversityCode
     || (profileProgramme && item.id === profileProgramme.universityId)
     || (profileProgramme && item.code === profileProgramme.universityCode)
-  )) || universities[0];
+  )) || null;
 }
 
 function resolveSavedUgProgramme(profile, programmes = []) {
   if (!profile || profile.profileType !== 'undergraduate') {
-    return programmes[0];
+    return null;
   }
   const profileProgramme = ugService.getProgramme(profile.programmeId);
   const savedProgrammeName = String(profile.programmeName || '').trim();
@@ -93,26 +99,20 @@ function resolveSavedUgProgramme(profile, programmes = []) {
     || item.nameEn === savedProgrammeName
     || item.nameZh === savedProgrammeName
     || (profileProgramme && item.id === profileProgramme.id)
-  )) || profileProgramme || programmes[0];
+  )) || profileProgramme || null;
 }
 
 const INITIAL_UG_UNIVERSITIES = ugService.listUniversities();
-const INITIAL_UG_UNIVERSITY = INITIAL_UG_UNIVERSITIES[0] || {};
-const INITIAL_UG_PROGRAMMES = INITIAL_UG_UNIVERSITY.id
-  ? ugService.listProgrammes({ universityId: INITIAL_UG_UNIVERSITY.id, degreeLevel: 'undergraduate' })
-  : [];
-const INITIAL_UG_PROGRAMME = INITIAL_UG_PROGRAMMES[0] || {};
-const INITIAL_UG_MAJORS = INITIAL_UG_PROGRAMME.id ? ugService.listMajors(INITIAL_UG_PROGRAMME.id) : [];
-const INITIAL_UG_MAJOR = INITIAL_UG_MAJORS[0] || {};
-const INITIAL_UG_YEARS = INITIAL_UG_MAJOR.id
-  ? ugService.listCurriculumYears(INITIAL_UG_PROGRAMME.id, INITIAL_UG_MAJOR.id)
-  : [];
+const INITIAL_UG_UNIVERSITY = {};
+const INITIAL_UG_PROGRAMMES = [];
+const INITIAL_UG_PROGRAMME = {};
+const INITIAL_UG_MAJORS = [];
+const INITIAL_UG_MAJOR = {};
+const INITIAL_UG_YEARS = [];
 const INITIAL_TPG_UNIVERSITIES = tpgService.listUniversities();
-const INITIAL_TPG_UNIVERSITY = INITIAL_TPG_UNIVERSITIES[0] || {};
-const INITIAL_TPG_PROGRAMMES = INITIAL_TPG_UNIVERSITY.code
-  ? tpgService.listProgrammes(INITIAL_TPG_UNIVERSITY.code)
-  : [];
-const INITIAL_TPG_PROGRAMME = INITIAL_TPG_PROGRAMMES[0] || {};
+const INITIAL_TPG_UNIVERSITY = {};
+const INITIAL_TPG_PROGRAMMES = [];
+const INITIAL_TPG_PROGRAMME = {};
 const INITIAL_TPG_SCHOOL_COVERAGE = tpgService.getSchoolCoverage();
 
 Page({
@@ -207,8 +207,8 @@ Page({
     const selectedUniversity = resolveSavedUgUniversity(profile, universities);
     if (!selectedUniversity) {
       this.setData({
-        universities: [],
-        universityOptions: [],
+        universities,
+        universityOptions: universities.map(formatUgUniversityOption),
         ugSchoolCoverage,
         selectedUniversity: {},
         selectedUgCoverage: null,
@@ -219,7 +219,14 @@ Page({
         selectedProgramme: {},
         majors: [],
         majorOptions: [],
-        selectedMajor: {}
+        selectedMajor: {},
+        curriculumYears: [],
+        curriculumYear: '',
+        ugUniversityIndex: 0,
+        ugProgrammeIndex: 0,
+        ugMajorIndex: 0,
+        ugCurriculumYearIndex: 0,
+        ugSelectedIndexLabel: ''
       });
       return;
     }
@@ -239,9 +246,29 @@ Page({
   },
 
   loadTpg(profile) {
-    const selectedTpgUniversity = tpgService.listUniversities().find(
+    const tpgUniversities = tpgService.listUniversities();
+    const selectedTpgUniversity = tpgUniversities.find(
       (item) => item.code === (profile && profile.universityCode)
-    ) || tpgService.listUniversities()[0];
+    );
+    if (!selectedTpgUniversity) {
+      this.setData({
+        tpgUniversities,
+        tpgUniversityOptions: tpgUniversities.map(formatTpgUniversityOption),
+        selectedTpgUniversity: {},
+        selectedTpgCoverage: null,
+        tpgProgrammes: [],
+        tpgProgrammeOptions: [],
+        filteredTpgProgrammes: [],
+        visibleTpgProgrammes: [],
+        selectedTpgProgramme: {},
+        tpgCourseCount: 0,
+        tpgCourseStatus: '',
+        tpgSelectedIndexLabel: '',
+        tpgEmptyTitle: '',
+        tpgEmptyCopy: ''
+      });
+      return;
+    }
     const tpgProgrammes = tpgService.listProgrammes(selectedTpgUniversity.code);
     const selectedTpgProgramme = tpgProgrammes.find(
       (item) => item.id === (profile && profile.programmeId)
@@ -690,6 +717,10 @@ Page({
     if (this.data.mode === 'tpg') {
       const university = this.data.selectedTpgUniversity;
       const programme = this.data.selectedTpgProgramme;
+      if (!university.code) {
+        wx.showToast({ title: '请选择你的学校', icon: 'none' });
+        return;
+      }
       if (!programme.id) {
         wx.showToast({ title: '请选择 Programme', icon: 'none' });
         return;
@@ -709,6 +740,11 @@ Page({
       });
       wx.showToast({ title: '授课硕士资料已保存' });
       wx.switchTab({ url: '/pages/home/home' });
+      return;
+    }
+
+    if (!this.data.selectedUniversity.id) {
+      wx.showToast({ title: '请选择你的学校', icon: 'none' });
       return;
     }
 
