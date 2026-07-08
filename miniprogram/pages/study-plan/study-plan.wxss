@@ -226,6 +226,17 @@
   line-height: 1.5;
   margin-top: 12rpx;
 }
+.core-gap-copy-action {
+  background: #dcebe5;
+  border: 1rpx solid #b8d4c8;
+  border-radius: 12rpx;
+  color: #0b6b55;
+  display: inline-flex;
+  font-size: 20rpx;
+  font-weight: 850;
+  margin-top: 14rpx;
+  padding: 12rpx 16rpx;
+}
 .gap-groups {
   display: grid;
   gap: 8rpx;

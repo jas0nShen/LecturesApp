@@ -413,10 +413,13 @@ test('study plan page exposes local planning states and quick actions', () => {
   assert(serviceLogic.includes('categoryStats: STUDY_PLAN_CATEGORY_DEFS'));
   assert(serviceLogic.includes('function getStudyPlanSuggestions'));
   assert(serviceLogic.includes('function getStudyPlanCoreGapSummary'));
+  assert(serviceLogic.includes('function formatStudyPlanCoreGapText'));
   assert(serviceLogic.includes('(course.categories || []).some((category) => /core/i.test(category))'));
   assert(planLogic.includes('completedCount: courses.filter((item) => item.completed).length'));
   assert(planLogic.includes('const suggestions = service.getStudyPlanSuggestions(5);'));
   assert(planLogic.includes('const coreGapSummary = service.getStudyPlanCoreGapSummary();'));
+  assert(planLogic.includes('copyCoreGap()'));
+  assert(planLogic.includes('service.formatStudyPlanCoreGapText()'));
   assert(planLogic.includes('planSuggestion(event)'));
   assert(planLogic.includes('toggleCompleted(event)'));
   assert(planLogic.includes('toggleFavorite(event)'));
@@ -427,6 +430,8 @@ test('study plan page exposes local planning states and quick actions', () => {
   assert(planPage.includes('wx:for="{{review.categoryStats}}"'));
   assert(planPage.includes('{{course.credits}} credits · {{course.categoryLabel}}'));
   assert(planPage.includes('未安排的核心课'));
+  assert(planPage.includes('bindtap="copyCoreGap"'));
+  assert(planPage.includes('复制核心课清单'));
   assert(planPage.includes('{{coreGapSummary.courseCount}}'));
   assert(planPage.includes('wx:for="{{coreGapSummary.groups}}"'));
   assert(planPage.includes('可尝试调整'));

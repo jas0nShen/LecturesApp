@@ -371,6 +371,30 @@ test('study plan can be formatted as grouped shareable text with checks', () => 
   assert(!text.includes('Confirm official timetable, prerequisites and degree requirements with HKU.'));
 });
 
+test('study plan remaining core checklist can be copied separately', () => {
+  service.saveProfile({
+    profileType: 'undergraduate',
+    universityCode: 'HKU',
+    universityName: '香港大学',
+    programmeId: 1,
+    programmeName: 'BEng(CompSc)',
+    majorName: 'Computer Science',
+    curriculumYear: '2025-26',
+    currentYear: 1
+  });
+  service.saveStudyPlanItem('COMP1117', 1, '1');
+
+  const text = service.formatStudyPlanCoreGapText(new Date('2026-07-05T00:00:00Z'));
+
+  assert(text.startsWith('香港大学 · BEng(CompSc) · Study Plan · Remaining Core Checklist'));
+  assert(text.includes('Generated: 2026-07-05'));
+  assert(text.includes('Remaining Core:'));
+  assert(text.includes('Year 2 ·'));
+  assert(text.includes('- COMP2113 Programming Technologies'));
+  assert(!text.includes('courseNotes'));
+  assert(text.includes('For planning reference only.'));
+});
+
 test('study plan share text includes overload move suggestions when available', () => {
   ['COMP1117', 'COMP2113', 'COMP2119', 'COMP2121', 'COMP2501', 'COMP3234', 'COMP3278']
     .forEach((code) => service.saveStudyPlanItem(code, 1, '1'));

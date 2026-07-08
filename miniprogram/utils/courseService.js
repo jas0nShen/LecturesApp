@@ -670,6 +670,32 @@ function getStudyPlanCoreGapSummary() {
   };
 }
 
+function formatStudyPlanCoreGapText(now = new Date()) {
+  const summary = getStudyPlanCoreGapSummary();
+  const profileContext = getStudyPlanProfileContext();
+  const lines = [
+    `${profileContext.title} · Remaining Core Checklist`,
+    `Generated: ${now.toISOString().slice(0, 10)}`,
+    `Remaining Core: ${summary.courseCount} courses · ${summary.credits} credits`,
+    ''
+  ];
+
+  if (!summary.courseCount) {
+    lines.push('No remaining core courses detected from current completed records and Study Plan.');
+  } else {
+    summary.groups.forEach((group) => {
+      lines.push(`${group.yearLabel} · ${group.courseCount} courses · ${group.credits} credits`);
+      group.courses.forEach((course) => {
+        lines.push(`- ${course.courseCode} ${course.title} (${course.credits} credits · ${course.termLabel || 'Term TBC'})`);
+      });
+      lines.push('');
+    });
+  }
+
+  lines.push('For planning reference only. Confirm official timetable, prerequisites and degree requirements with your university.');
+  return lines.join('\n').trim();
+}
+
 function resolveProfileLabel(profile, key, resolver) {
   if (!profile) return '';
   if (profile[key]) return profile[key];
@@ -1104,6 +1130,7 @@ module.exports = {
   buildAuditRemote,
   exportUserData,
   formatUserDataBackup,
+  formatStudyPlanCoreGapText,
   formatStudyPlanText,
   getCompletedCourseIds,
   getCompletedOfferingCodes,

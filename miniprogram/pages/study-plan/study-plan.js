@@ -80,6 +80,19 @@ Page({
     });
   },
 
+  copyCoreGap() {
+    if (!this.data.coreGapSummary.courseCount) {
+      wx.showToast({ title: '暂无未安排核心课', icon: 'none' });
+      return;
+    }
+    wx.setClipboardData({
+      data: service.formatStudyPlanCoreGapText(),
+      success() {
+        wx.showToast({ title: '核心课清单已复制' });
+      }
+    });
+  },
+
   editCourse(event) {
     wx.navigateTo({
       url: `/pages/plan-course/plan-course?code=${event.currentTarget.dataset.code}`

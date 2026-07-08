@@ -89,6 +89,7 @@
       <view class="suggestion-count">{{coreGapSummary.courseCount}}</view>
     </view>
     <view class="suggestion-copy">根据当前已修记录和 Study Plan，还有 {{coreGapSummary.courseCount}} 门 core 未安排，共 {{coreGapSummary.credits}} credits；正式毕业要求仍以学校审核为准。</view>
+    <view class="core-gap-copy-action" bindtap="copyCoreGap">复制核心课清单</view>
     <view wx:if="{{coreGapSummary.groups.length}}" class="gap-groups">
       <view wx:for="{{coreGapSummary.groups}}" wx:key="yearLabel" class="gap-group">
         <view class="gap-year">{{item.yearLabel}}</view>
