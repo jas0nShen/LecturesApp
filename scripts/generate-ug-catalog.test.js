@@ -217,7 +217,8 @@ test('UG source coverage report distinguishes raw coded rows from importable tra
 test('UG source coverage report can focus raw source diagnostics by school', () => {
   const args = parseArgs(['--school', 'polyu', '--importable-only']);
   const summary = summarizeSources('/Users/shenjingsong/Documents/Codex/2026-07-06/pdf/outputs', args);
-  const importable = listImportableProgrammes(summary);
+  const generatedSummary = summarizeGeneratedCatalogue(args);
+  const importable = listImportableProgrammes(summary, generatedSummary);
 
   assert.equal(args.importableOnly, true);
   assert.deepEqual(summary.schools.map((school) => school.code), ['POLYU']);
@@ -229,6 +230,8 @@ test('UG source coverage report can focus raw source diagnostics by school', () 
     importable[0].programmeName,
     'Bachelor of Science (Honours) Scheme in Computing and AI (Computer Science / Enterprise Information Systems)'
   );
+  assert.equal(importable[0].importStatus, 'already-open');
+  assert.equal(importable[0].generatedCodedCourseCount, 166);
 });
 
 test('UG source coverage report includes generated catalogue supplement coverage', () => {
@@ -241,7 +244,9 @@ test('UG source coverage report includes generated catalogue supplement coverage
   assert.equal(summary.totals.programmeWithCoursesCount, 50);
   assert.equal(cityu.programmeWithCoursesCount, 20);
   assert.equal(cityu.codedCourseCount, 1966);
+  assert(cityu.courseProgrammes.some((programme) => programme.code === 'JS1001' && programme.codedCourseCount > 0));
   assert.equal(lingnan.missingProgrammeCount, 0);
+  assert.equal(lingnan.courseProgrammes.length, 23);
 });
 
 test('UG source coverage report can focus missing programme work by school', () => {
