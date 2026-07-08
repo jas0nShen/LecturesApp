@@ -14,6 +14,9 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert(summary.courseCount >= 4630);
   assert.equal(summary.sourceProgrammeCount, 444);
   assert.equal(summary.codedCourseCount, 4616);
+  assert.equal(summary.programmeWithCoursesCount, 69);
+  assert.equal(summary.pendingProgrammeCount, 375);
+  assert.equal(summary.coveragePercent, 16);
   assert.match(summary.generatedAt, /^2026-07-08T/);
   assert.equal(summary.generatedDate, '2026-07-08');
 });

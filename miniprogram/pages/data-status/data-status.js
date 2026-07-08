@@ -53,6 +53,7 @@ Page({
       `学校：${status.universityCount}`,
       `Programme：${status.sourceProgrammeCount}`,
       `Major / Track：${status.majorCount}`,
+      `总覆盖率：${status.programmeWithCoursesCount}/${status.sourceProgrammeCount} Programme 已开放 · ${status.coveragePercent}% · ${status.pendingProgrammeCount} 个待补`,
       `已录入课程代码：${status.codedCourseCount}`,
       `数据更新时间：${status.generatedDate || '待确认'}`,
       '学校覆盖：',

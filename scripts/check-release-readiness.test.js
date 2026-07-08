@@ -216,9 +216,11 @@ test('data status page exposes undergraduate school coverage details', () => {
   assert(dataStatusLogic.includes('ugSchools: ugService.getSchoolCoverage()'));
   assert(dataStatusLogic.includes('school.pendingProgrammeCount'));
   assert(dataStatusLogic.includes('school.updatedLabel'));
+  assert(dataStatusLogic.includes("`总覆盖率：${status.programmeWithCoursesCount}/${status.sourceProgrammeCount} Programme 已开放 · ${status.coveragePercent}% · ${status.pendingProgrammeCount} 个待补`"));
   assert(dataStatusLogic.includes("`数据更新时间：${status.generatedDate || '待确认'}`"));
   assert(dataStatusPage.includes('wx:for="{{ugSchools}}"'));
   assert(dataStatusPage.includes("本科数据更新时间：{{ugStatus.generatedDate || '待确认'}}"));
+  assert(dataStatusPage.includes('本科总覆盖率：{{ugStatus.programmeWithCoursesCount}}/{{ugStatus.sourceProgrammeCount}} Programme 已开放 · {{ugStatus.coveragePercent}}% · {{ugStatus.pendingProgrammeCount}} 个待补'));
   assert(dataStatusPage.includes('{{item.programmeWithCoursesCount}}/{{item.programmeCount}} Programme 已开放 · {{item.pendingProgrammeCount}} 个待补'));
   assert(dataStatusPage.includes('{{item.coveragePercent}}%'));
   assert(dataStatusPage.includes('{{item.majorCount}} Major / Track · {{item.coverageLabel}}'));

@@ -253,7 +253,13 @@ function searchProgrammes(programmes, keyword = '') {
 
 function getCatalogueSummary() {
   const undergraduateProgrammes = listProgrammes({ degreeLevel: 'undergraduate' });
+  const sourceProgrammes = catalogue.programmes || [];
   const majorIds = new Set();
+  const programmeWithCoursesCount = sourceProgrammes.filter((programme) => (programme.codedCourseCount || 0) > 0).length;
+  const pendingProgrammeCount = Math.max(sourceProgrammes.length - programmeWithCoursesCount, 0);
+  const coveragePercent = sourceProgrammes.length
+    ? Math.round((programmeWithCoursesCount / sourceProgrammes.length) * 100)
+    : 0;
   undergraduateProgrammes.forEach((programme) => {
     listMajors(programme.id).forEach((major) => majorIds.add(major.id));
   });
@@ -265,6 +271,9 @@ function getCatalogueSummary() {
     courseCount: getCatalogueCourseCount() + data.courses.length,
     requirementCount: data.requirements.length,
     codedCourseCount: getCatalogueCourseCount(),
+    programmeWithCoursesCount,
+    pendingProgrammeCount,
+    coveragePercent,
     sourceProgrammeCount: catalogue.programmes.length,
     generatedAt: catalogue.generatedAt || '',
     generatedDate: getCatalogueGeneratedDate()
