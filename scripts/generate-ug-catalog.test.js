@@ -11,6 +11,7 @@ const {
 } = require('./generate-ug-catalog');
 const {
   filterSchools,
+  listImportableProgrammes,
   parseArgs,
   parseCsv,
   summarizeGeneratedCatalogue,
@@ -214,14 +215,18 @@ test('UG source coverage report distinguishes raw coded rows from importable tra
 });
 
 test('UG source coverage report can focus raw source diagnostics by school', () => {
-  const summary = summarizeSources('/Users/shenjingsong/Documents/Codex/2026-07-06/pdf/outputs', { school: 'POLYU' });
+  const args = parseArgs(['--school', 'polyu', '--importable-only']);
+  const summary = summarizeSources('/Users/shenjingsong/Documents/Codex/2026-07-06/pdf/outputs', args);
+  const importable = listImportableProgrammes(summary);
 
+  assert.equal(args.importableOnly, true);
   assert.deepEqual(summary.schools.map((school) => school.code), ['POLYU']);
   assert.equal(summary.totals.programmeCount, 46);
   assert.equal(summary.totals.codedCourseCount, 172);
   assert.equal(summary.totals.importableCodedCourseCount, 166);
+  assert.deepEqual(importable.map((programme) => programme.schoolCode), ['POLYU']);
   assert.equal(
-    summary.schools[0].importableProgrammes[0].programmeName,
+    importable[0].programmeName,
     'Bachelor of Science (Honours) Scheme in Computing and AI (Computer Science / Enterprise Information Systems)'
   );
 });

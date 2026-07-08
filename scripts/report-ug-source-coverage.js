@@ -16,6 +16,7 @@ function parseArgs(argv = process.argv.slice(2)) {
     school: schoolIndex === -1 ? '' : String(argv[schoolIndex + 1] || '').trim().toUpperCase(),
     missingLimit: missingLimitIndex === -1 ? 20 : Number(argv[missingLimitIndex + 1]),
     missingOnly: argv.includes('--missing-only'),
+    importableOnly: argv.includes('--importable-only'),
     json: argv.includes('--json')
   };
 }
@@ -311,7 +312,46 @@ function summarizeGeneratedCatalogue(options = {}) {
   };
 }
 
-function printReport(summary) {
+function listImportableProgrammes(summary) {
+  if (!summary.schools && Array.isArray(summary.importableProgrammes)) {
+    return summary.importableProgrammes.map((programme) => ({
+      schoolCode: summary.code || summary.file || 'SOURCE',
+      ...programme
+    }));
+  }
+  return (summary.schools || []).flatMap((school) => (
+    (school.importableProgrammes || []).map((programme) => ({
+      schoolCode: school.code,
+      ...programme
+    }))
+  ));
+}
+
+function printImportableProgrammes(summary) {
+  const importableProgrammes = listImportableProgrammes(summary);
+  console.log(`Importable UG source programmes: ${summary.sourceDir || summary.filePath}`);
+  if (!importableProgrammes.length) {
+    console.log('No importable programme course rows found. Keep index/source only until course-code evidence is available.');
+    return;
+  }
+  importableProgrammes.forEach((programme) => {
+    console.log([
+      programme.schoolCode,
+      programme.programmeCode,
+      programme.programmeName,
+      `${programme.importableCodedCourseCount} importable`,
+      `${programme.codedCourseCount} raw coded rows`,
+      programme.duplicateWithinTrackRowCount ? `${programme.duplicateWithinTrackRowCount} duplicate rows within track` : '',
+      programme.officialUrl
+    ].filter(Boolean).join(' · '));
+  });
+}
+
+function printReport(summary, options = {}) {
+  if (options.importableOnly) {
+    printImportableProgrammes(summary);
+    return;
+  }
   console.log(`UG source coverage: ${summary.sourceDir || summary.filePath}`);
   summary.schools.forEach((school) => {
     console.log([
@@ -426,12 +466,12 @@ function printMissingProgrammes(summary, options = {}) {
 
 function main() {
   const options = parseArgs();
-  const sourceSummary = options.missingOnly
+  const sourceSummary = options.missingOnly && !options.importableOnly
     ? null
     : options.sourceFile
       ? summarizeSourceFilePath(options.sourceFile)
       : summarizeSources(options.sourceDir, options);
-  const generatedSummary = summarizeGeneratedCatalogue(options);
+  const generatedSummary = options.importableOnly ? null : summarizeGeneratedCatalogue(options);
 
   if (options.json) {
     console.log(JSON.stringify({
@@ -442,10 +482,11 @@ function main() {
   }
 
   if (sourceSummary) {
-    if (options.sourceFile) printSingleSourceReport(sourceSummary);
-    else printReport(sourceSummary);
+    if (options.sourceFile && options.importableOnly) printImportableProgrammes(sourceSummary);
+    else if (options.sourceFile) printSingleSourceReport(sourceSummary);
+    else printReport(sourceSummary, options);
   }
-  printGeneratedCatalogueReport(generatedSummary, options);
+  if (generatedSummary) printGeneratedCatalogueReport(generatedSummary, options);
 }
 
 if (require.main === module) {
@@ -460,5 +501,6 @@ module.exports = {
   summarizeSources,
   summarizeGeneratedCatalogue,
   filterSchools,
+  listImportableProgrammes,
   printGeneratedCatalogueReport
 };
