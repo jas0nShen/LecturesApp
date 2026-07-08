@@ -274,19 +274,57 @@ test('study plan analysis flags unavailable terms, missing corequisites and heav
 });
 
 test('study plan can be formatted as grouped shareable text with checks', () => {
-  service.saveProfile({ programmeId: 1, curriculumYear: '2025-26' });
+  service.saveProfile({
+    profileType: 'undergraduate',
+    universityCode: 'HKU',
+    universityName: '香港大学',
+    programmeId: 1,
+    programmeName: 'BEng(CompSc)',
+    majorName: 'Computer Science',
+    curriculumYear: '2025-26',
+    currentYear: 1
+  });
   service.saveStudyPlanItem('COMP2113', 2, '2');
   service.saveStudyPlanItem('COMP1117', 1, '1');
 
   const text = service.formatStudyPlanText(new Date('2026-07-05T00:00:00Z'));
-  assert(text.includes('HKU BEng(CompSc) Study Plan'));
+  assert(text.includes('香港大学 · BEng(CompSc) · Study Plan'));
+  assert(text.includes('Type: UG'));
+  assert(text.includes('University: 香港大学'));
+  assert(text.includes('Programme: BEng(CompSc)'));
+  assert(text.includes('Major: Computer Science'));
   assert(text.includes('Curriculum: 2025-26'));
+  assert(text.includes('Current Year: Year 1'));
   assert(text.includes('Generated: 2026-07-05'));
   assert(text.indexOf('Year 1') < text.indexOf('Year 2'));
   assert(text.includes('- COMP1117 Computer Programming (6 credits)'));
   assert(text.includes('Total: 2 courses · 12 credits'));
   assert(text.includes('Plan checks:'));
   assert(!text.includes('courseNotes'));
+  assert(!text.includes('Confirm official timetable, prerequisites and degree requirements with HKU.'));
+});
+
+test('study plan share text uses the saved school and programme context', () => {
+  service.saveProfile({
+    profileType: 'undergraduate',
+    universityCode: 'POLYU',
+    universityName: '香港理工大学',
+    programmeName: 'Applied Mathematics',
+    majorName: 'Investment Science and Finance Analytics',
+    curriculumYear: '2026',
+    currentYear: 2
+  });
+  service.saveStudyPlanItem('COMP1117', 2, '1');
+
+  const text = service.formatStudyPlanText(new Date('2026-07-05T00:00:00Z'));
+
+  assert(text.startsWith('香港理工大学 · Applied Mathematics · Study Plan'));
+  assert(text.includes('University: 香港理工大学'));
+  assert(text.includes('Programme: Applied Mathematics'));
+  assert(text.includes('Major: Investment Science and Finance Analytics'));
+  assert(text.includes('Current Year: Year 2'));
+  assert(!text.includes('HKU BEng(CompSc) Study Plan'));
+  assert(text.includes('Confirm official timetable, prerequisites and degree requirements with your university.'));
 });
 
 test('user data can be exported and restored from a validated backup', () => {

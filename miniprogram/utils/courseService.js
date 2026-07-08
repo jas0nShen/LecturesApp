@@ -1,5 +1,6 @@
 const data = require('./mockData');
 const hkuOfferings = require('./hkuOfferings');
+const ugService = require('./ugService');
 const api = require('./apiClient');
 
 const TYPE_LABELS = {
@@ -550,19 +551,61 @@ function getStudyPlanSuggestions(limit = 5) {
     .slice(0, Number(limit) || 5);
 }
 
+function resolveProfileLabel(profile, key, resolver) {
+  if (!profile) return '';
+  if (profile[key]) return profile[key];
+  const resolved = typeof resolver === 'function' ? resolver() : null;
+  return resolved && (resolved.shortName || resolved.nameZh || resolved.nameEn || resolved.name || resolved.code) || '';
+}
+
+function getStudyPlanProfileContext(profile = getProfile()) {
+  const typeLabel = profile && profile.profileType === 'tpg' ? 'TPG' : 'UG';
+  const university = resolveProfileLabel(profile, 'universityName', () => (
+    profile && (ugService.getUniversity(profile.universityId) || ugService.getUniversity(profile.universityCode))
+  ));
+  const programme = resolveProfileLabel(profile, 'programmeName', () => (
+    profile && ugService.getProgramme(profile.programmeId)
+  ));
+  const major = resolveProfileLabel(profile, 'majorName', () => (
+    profile && ugService.getMajor(profile.majorId)
+  ));
+  const curriculum = profile && profile.curriculumYear ? profile.curriculumYear : '未设置';
+  const year = profile && profile.currentYear ? `Year ${profile.currentYear}` : '';
+  const titleParts = [
+    university || 'Selected University',
+    programme || 'Selected Programme',
+    'Study Plan'
+  ];
+
+  return {
+    title: titleParts.join(' · '),
+    typeLabel,
+    university: university || '未设置',
+    programme: programme || '未设置',
+    major: major || '',
+    curriculum,
+    year
+  };
+}
+
 function formatStudyPlanText(now = new Date()) {
   const courses = getStudyPlanCourses().slice().sort((left, right) => (
     studyPlanPosition(left) - studyPlanPosition(right)
     || left.courseCode.localeCompare(right.courseCode)
   ));
   const review = analyzeStudyPlan();
-  const profile = getProfile();
+  const profileContext = getStudyPlanProfileContext();
   const lines = [
-    'HKU BEng(CompSc) Study Plan',
-    `Curriculum: ${(profile && profile.curriculumYear) || '2025-26'}`,
+    profileContext.title,
+    `Type: ${profileContext.typeLabel}`,
+    `University: ${profileContext.university}`,
+    `Programme: ${profileContext.programme}`,
+    profileContext.major ? `Major: ${profileContext.major}` : '',
+    `Curriculum: ${profileContext.curriculum}`,
+    profileContext.year ? `Current Year: ${profileContext.year}` : '',
     `Generated: ${now.toISOString().slice(0, 10)}`,
     ''
-  ];
+  ].filter((line) => line !== '');
 
   [1, 2, 3, 4].forEach((year) => {
     const yearCourses = courses.filter((course) => course.plannedYear === year);
@@ -587,7 +630,7 @@ function formatStudyPlanText(now = new Date()) {
   } else {
     lines.push('', 'Plan checks: no current reminders');
   }
-  lines.push('', 'For planning reference only. Confirm official timetable, prerequisites and degree requirements with HKU.');
+  lines.push('', 'For planning reference only. Confirm official timetable, prerequisites and degree requirements with your university.');
   return lines.join('\n');
 }
 
