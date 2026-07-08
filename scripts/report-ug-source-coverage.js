@@ -119,7 +119,8 @@ function summarizeGeneratedCatalogue(options = {}) {
       .map((programme) => ({
         code: programme.jupasCode || programme.code,
         name: programme.nameEn,
-        faculty: programme.faculty || ''
+        faculty: programme.faculty || '',
+        officialUrl: programme.officialUrl || ''
       }));
     const missingProgrammes = shouldLimitMissing
       ? allMissingProgrammes.slice(0, missingLimit)
@@ -224,7 +225,8 @@ function printMissingProgrammes(summary, options = {}) {
       programme.schoolCode,
       programme.code,
       programme.name,
-      programme.faculty
+      programme.faculty,
+      programme.officialUrl
     ].filter(Boolean).join(' · '));
   });
 }

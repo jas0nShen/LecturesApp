@@ -178,6 +178,7 @@ test('UG source coverage report supports machine-readable JSON mode', () => {
   assert.equal(summary.schools[0].missingProgrammeCount, 38);
   assert.equal(summary.schools[0].missingProgrammes.length, 3);
   assert.equal(summary.schools[0].missingProgrammes[0].code, 'JS1050');
+  assert.match(summary.schools[0].missingProgrammes[0].officialUrl, /jupas\.edu\.hk\/en\/programme\/cityuhk\/JS1050/);
   assert(summary.totals.codedCourseCount > 0);
 });
 
