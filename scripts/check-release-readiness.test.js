@@ -379,6 +379,25 @@ test('undergraduate onboarding programme results show major-level course availab
   assert(!onboardingPage.includes("{{item.codedCourseCount ? item.codedCourseCount + ' 门课程' : '课程清单待开放'}}"));
 });
 
+test('study plan page exposes local planning states and quick actions', () => {
+  const planPage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'study-plan', 'study-plan.wxml'), 'utf8');
+  const planLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'study-plan', 'study-plan.js'), 'utf8');
+  const serviceLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'utils', 'courseService.js'), 'utf8');
+
+  assert(serviceLogic.includes('completed: isOfferingCompleted(item.courseCode)'));
+  assert(serviceLogic.includes('favorite: isOfferingFavorite(item.courseCode)'));
+  assert(serviceLogic.includes('hasNote: Boolean(note)'));
+  assert(planLogic.includes('completedCount: courses.filter((item) => item.completed).length'));
+  assert(planLogic.includes('toggleCompleted(event)'));
+  assert(planLogic.includes('toggleFavorite(event)'));
+  assert(planPage.includes('已修 {{review.completedCount}}'));
+  assert(planPage.includes('收藏 {{review.favoriteCount}}'));
+  assert(planPage.includes('笔记 {{review.noteCount}}'));
+  assert(planPage.includes('{{course.completed ? \'取消已修\' : \'标记已修\'}}'));
+  assert(planPage.includes('{{course.favorite ? \'取消收藏\' : \'收藏\'}}'));
+  assert(planPage.includes('详情/笔记'));
+});
+
 test('TPG onboarding previews selected school data coverage', () => {
   const onboardingPage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'onboarding', 'onboarding.wxml'), 'utf8');
   const onboardingLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'onboarding', 'onboarding.js'), 'utf8');

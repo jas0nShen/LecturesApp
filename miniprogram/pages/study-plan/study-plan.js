@@ -6,6 +6,9 @@ Page({
     review: {
       courseCount: 0,
       totalCredits: 0,
+      completedCount: 0,
+      favoriteCount: 0,
+      noteCount: 0,
       noticeCount: 0,
       noticeCounts: {},
       issueCodes: [],
@@ -36,7 +39,15 @@ Page({
         semesterTwo
       };
     });
-    this.setData({ groups, review });
+    this.setData({
+      groups,
+      review: {
+        ...review,
+        completedCount: courses.filter((item) => item.completed).length,
+        favoriteCount: courses.filter((item) => item.favorite).length,
+        noteCount: courses.filter((item) => item.hasNote).length
+      }
+    });
   },
 
   goCourses() {
@@ -66,5 +77,25 @@ Page({
     service.removeStudyPlanItem(event.currentTarget.dataset.code);
     this.onShow();
     wx.showToast({ title: '已移出计划' });
+  },
+
+  toggleCompleted(event) {
+    const code = event.currentTarget.dataset.code;
+    const completed = service.toggleOfferingCompleted(code).includes(String(code).toUpperCase());
+    this.onShow();
+    wx.showToast({ title: completed ? '已标记已修' : '已取消已修' });
+  },
+
+  toggleFavorite(event) {
+    const code = event.currentTarget.dataset.code;
+    const favorite = service.toggleOfferingFavorite(code).includes(String(code).toUpperCase());
+    this.onShow();
+    wx.showToast({ title: favorite ? '已收藏' : '已取消收藏' });
+  },
+
+  openDetail(event) {
+    wx.navigateTo({
+      url: `/pages/offering-detail/offering-detail?code=${event.currentTarget.dataset.code}`
+    });
   }
 });

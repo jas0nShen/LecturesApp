@@ -20,6 +20,12 @@
     </view>
   </view>
 
+  <view wx:if="{{review.courseCount}}" class="plan-state-strip">
+    <view class="plan-state completed">已修 {{review.completedCount}}</view>
+    <view class="plan-state favorite">收藏 {{review.favoriteCount}}</view>
+    <view class="plan-state note">笔记 {{review.noteCount}}</view>
+  </view>
+
   <view class="plan-export {{review.courseCount ? '' : 'disabled'}}" bindtap="copyPlan">
     <view>
       <view class="export-title">复制四年计划</view>
@@ -64,10 +70,21 @@
               <view class="course-code">{{course.courseCode}} <text wx:if="{{course.hasIssue}}" class="issue-mark">需核对</text></view>
               <view class="course-title">{{course.offering.title}}</view>
               <view class="course-credits">{{course.credits}} credits</view>
+              <view class="course-tags">
+                <text wx:if="{{course.completed}}" class="course-tag completed">✓ 已修</text>
+                <text wx:if="{{course.favorite}}" class="course-tag favorite">★ 收藏</text>
+                <text wx:if="{{course.hasNote}}" class="course-tag note">✎ 笔记</text>
+              </view>
+              <view wx:if="{{course.notePreview}}" class="note-preview">{{course.notePreview}}</view>
             </view>
             <view class="term">{{course.termLabel}}</view>
           </view>
-          <view class="remove" data-code="{{course.courseCode}}" catchtap="removeCourse">移除</view>
+          <view class="plan-actions">
+            <view class="plan-action" data-code="{{course.courseCode}}" catchtap="toggleCompleted">{{course.completed ? '取消已修' : '标记已修'}}</view>
+            <view class="plan-action" data-code="{{course.courseCode}}" catchtap="toggleFavorite">{{course.favorite ? '取消收藏' : '收藏'}}</view>
+            <view class="plan-action" data-code="{{course.courseCode}}" catchtap="openDetail">详情/笔记</view>
+            <view class="plan-action danger" data-code="{{course.courseCode}}" catchtap="removeCourse">移除</view>
+          </view>
         </view>
         <view wx:if="{{item.courses.length === 0}}" class="year-empty">还没有安排课程</view>
       </view>

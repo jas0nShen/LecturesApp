@@ -395,7 +395,16 @@ function removeStudyPlanItem(courseCode) {
 function getStudyPlanCourses() {
   return getStudyPlanItems().map((item) => {
     const offering = hkuOfferings.courses.find((course) => course.courseCode === item.courseCode);
-    return offering ? { ...item, offering } : null;
+    if (!offering) return null;
+    const note = getCourseNote(item.courseCode);
+    return {
+      ...item,
+      offering,
+      completed: isOfferingCompleted(item.courseCode),
+      favorite: isOfferingFavorite(item.courseCode),
+      hasNote: Boolean(note),
+      notePreview: note ? note.slice(0, 42) : ''
+    };
   }).filter(Boolean);
 }
 

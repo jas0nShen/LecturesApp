@@ -13,6 +13,21 @@
 .summary-value { color: #17352c; font-size: 34rpx; font-weight: 850; }
 .summary-label { color: #7a8982; font-size: 20rpx; margin-top: 4rpx; }
 .summary-item.attention .summary-value { color: #a66b13; }
+.plan-state-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rpx;
+  margin: -12rpx 0 26rpx;
+}
+.plan-state {
+  border-radius: 999rpx;
+  font-size: 20rpx;
+  font-weight: 800;
+  padding: 10rpx 16rpx;
+}
+.plan-state.completed { background: #dcebe5; color: #0b6b55; }
+.plan-state.favorite { background: #fff2d5; color: #9a640f; }
+.plan-state.note { background: #e7ecf4; color: #536487; }
 .plan-export {
   align-items: center;
   background: #17352c;
@@ -85,8 +100,43 @@
 .issue-mark { background: #fff0d5; border-radius: 999rpx; color: #966014; font-size: 17rpx; margin-left: 7rpx; padding: 5rpx 9rpx; }
 .course-title { font-size: 25rpx; font-weight: 750; line-height: 1.35; margin-top: 6rpx; max-width: 390rpx; }
 .course-credits { color: #829088; font-size: 20rpx; margin-top: 8rpx; }
+.course-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8rpx;
+  margin-top: 10rpx;
+}
+.course-tag {
+  border-radius: 999rpx;
+  font-size: 17rpx;
+  font-weight: 800;
+  padding: 5rpx 9rpx;
+}
+.course-tag.completed { background: #dcebe5; color: #0b6b55; }
+.course-tag.favorite { background: #fff2d5; color: #9a640f; }
+.course-tag.note { background: #e7ecf4; color: #536487; }
+.note-preview {
+  color: #667970;
+  font-size: 20rpx;
+  line-height: 1.45;
+  margin-top: 10rpx;
+  max-width: 430rpx;
+}
 .term { color: #687970; font-size: 20rpx; white-space: nowrap; }
-.remove { border-top: 1rpx solid #e7ece9; color: #8b5b51; font-size: 21rpx; padding: 12rpx 22rpx; text-align: right; }
+.plan-actions {
+  border-top: 1rpx solid #e7ece9;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.plan-action {
+  color: #0b6b55;
+  font-size: 20rpx;
+  font-weight: 750;
+  padding: 14rpx 4rpx;
+  text-align: center;
+}
+.plan-action + .plan-action { border-left: 1rpx solid #e7ece9; }
+.plan-action.danger { color: #8b5b51; }
 .year-empty { border: 1rpx dashed #c6d5ce; border-radius: 14rpx; color: #89978f; font-size: 23rpx; padding: 24rpx; }
 .add-course {
   background: #e2eee9;

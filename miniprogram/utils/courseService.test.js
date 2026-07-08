@@ -229,6 +229,21 @@ test('study plan analysis totals credits and flags prerequisite sequencing evide
   assert.equal(service.analyzeStudyPlan().noticeCount, 0);
 });
 
+test('study plan courses expose local completed favorite and note state', () => {
+  service.saveStudyPlanItem('COMP1117', 1, '1');
+  service.toggleOfferingCompleted('COMP1117');
+  service.toggleOfferingFavorite('COMP1117');
+  service.saveCourseNote('COMP1117', 'Ask whether the tutorial time clashes.');
+
+  const [course] = service.getStudyPlanCourses();
+
+  assert.equal(course.courseCode, 'COMP1117');
+  assert.equal(course.completed, true);
+  assert.equal(course.favorite, true);
+  assert.equal(course.hasNote, true);
+  assert.equal(course.notePreview, 'Ask whether the tutorial time clashes.');
+});
+
 test('study plan analysis flags unavailable terms, missing corequisites and heavy semesters', () => {
   service.saveStudyPlanItem('COMP3230', 3, '2');
   service.saveStudyPlanItem('COMP2120', 2, '2');
