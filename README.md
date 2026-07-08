@@ -87,6 +87,14 @@ npm run status:ug-sources -- --school cityu --missing-only --missing-limit 10
 
 报告会区分原始课程行数、按 track 可导入课程数和已开放 Programme 数；后续补数据时优先以该报告定位缺口。
 
+如果只想检查某个用户提供的 JSON 或 CSV 文件是否真的包含可导入课程代码，可以运行：
+
+```bash
+npm run status:ug-sources -- --source-file "/path/to/programme_courses.csv" --school polyu --missing-limit 5
+```
+
+单文件报告会显示 raw course rows、coded rows、importable coded rows、summary-only programmes；只有带真实课程码的行才会进入后续 supplement 导入。
+
 如果 JSON 文件不在默认目录，可显式传入：
 
 ```bash

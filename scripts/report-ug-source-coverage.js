@@ -7,14 +7,151 @@ const DEFAULT_SOURCE_DIR = '/Users/shenjingsong/Documents/Codex/2026-07-06/pdf/o
 
 function parseArgs(argv = process.argv.slice(2)) {
   const sourceDirIndex = argv.indexOf('--source-dir');
+  const sourceFileIndex = argv.indexOf('--source-file');
   const schoolIndex = argv.indexOf('--school');
   const missingLimitIndex = argv.indexOf('--missing-limit');
   return {
     sourceDir: sourceDirIndex === -1 ? DEFAULT_SOURCE_DIR : path.resolve(argv[sourceDirIndex + 1]),
+    sourceFile: sourceFileIndex === -1 ? '' : path.resolve(argv[sourceFileIndex + 1]),
     school: schoolIndex === -1 ? '' : String(argv[schoolIndex + 1] || '').trim().toUpperCase(),
     missingLimit: missingLimitIndex === -1 ? 20 : Number(argv[missingLimitIndex + 1]),
     missingOnly: argv.includes('--missing-only'),
     json: argv.includes('--json')
+  };
+}
+
+function parseCsv(text) {
+  const rows = [];
+  let row = [];
+  let value = '';
+  let quoted = false;
+
+  for (let index = 0; index < text.length; index += 1) {
+    const char = text[index];
+    const next = text[index + 1];
+    if (quoted) {
+      if (char === '"' && next === '"') {
+        value += '"';
+        index += 1;
+      } else if (char === '"') {
+        quoted = false;
+      } else {
+        value += char;
+      }
+      continue;
+    }
+    if (char === '"') {
+      quoted = true;
+    } else if (char === ',') {
+      row.push(value);
+      value = '';
+    } else if (char === '\n') {
+      row.push(value);
+      rows.push(row);
+      row = [];
+      value = '';
+    } else if (char !== '\r') {
+      value += char;
+    }
+  }
+  if (value || row.length) {
+    row.push(value);
+    rows.push(row);
+  }
+  if (!rows.length) return [];
+
+  const headers = rows[0].map((header) => String(header || '').replace(/^\uFEFF/, '').trim());
+  return rows.slice(1)
+    .filter((cells) => cells.some((cell) => String(cell || '').trim()))
+    .map((cells) => Object.fromEntries(headers.map((header, index) => [header, cells[index] || ''])));
+}
+
+function summarizeRows(rows, getProgrammeCode, getProgrammeName, getCourseCode, getTrack = () => '') {
+  const groups = new Map();
+  rows.forEach((row) => {
+    const programmeCode = String(getProgrammeCode(row) || '').trim();
+    const programmeName = String(getProgrammeName(row) || '').trim();
+    const key = programmeCode || programmeName || '__UNKNOWN__';
+    if (!groups.has(key)) {
+      groups.set(key, {
+        programmeCode,
+        programmeName,
+        courseRows: []
+      });
+    }
+    groups.get(key).courseRows.push(row);
+  });
+
+  const programmeRows = Array.from(groups.values()).map((programme) => {
+    const codedCourses = programme.courseRows.filter((row) => String(getCourseCode(row) || '').trim());
+    const uncodedCourses = programme.courseRows.filter((row) => !String(getCourseCode(row) || '').trim());
+    const uniqueCourseCodes = new Set(codedCourses.map((row) => String(getCourseCode(row)).trim()));
+    const courseCodesByTrack = codedCourses.reduce((groups, row) => {
+      const track = String(getTrack(row) || '').trim() || '__PROGRAMME__';
+      if (!groups.has(track)) groups.set(track, []);
+      groups.get(track).push(String(getCourseCode(row)).trim());
+      return groups;
+    }, new Map());
+    const importableCodedCourseCount = Array.from(courseCodesByTrack.values())
+      .reduce((sum, codes) => sum + new Set(codes).size, 0);
+    return {
+      programmeCode: programme.programmeCode,
+      programmeName: programme.programmeName,
+      courseRowCount: programme.courseRows.length,
+      codedCourseCount: codedCourses.length,
+      uniqueCodedCourseCount: uniqueCourseCodes.size,
+      duplicateCodedCourseRowCount: codedCourses.length - uniqueCourseCodes.size,
+      importableCodedCourseCount,
+      duplicateWithinTrackRowCount: codedCourses.length - importableCodedCourseCount,
+      uncodedCourseRowCount: uncodedCourses.length
+    };
+  });
+
+  return {
+    programmeRows,
+    programmeCount: programmeRows.length,
+    courseRowCount: programmeRows.reduce((sum, row) => sum + row.courseRowCount, 0),
+    codedCourseCount: programmeRows.reduce((sum, row) => sum + row.codedCourseCount, 0),
+    uniqueCodedCourseCount: programmeRows.reduce((sum, row) => sum + row.uniqueCodedCourseCount, 0),
+    duplicateCodedCourseRowCount: programmeRows.reduce((sum, row) => sum + row.duplicateCodedCourseRowCount, 0),
+    importableCodedCourseCount: programmeRows.reduce((sum, row) => sum + row.importableCodedCourseCount, 0),
+    duplicateWithinTrackRowCount: programmeRows.reduce((sum, row) => sum + row.duplicateWithinTrackRowCount, 0),
+    uncodedCourseRowCount: programmeRows.reduce((sum, row) => sum + row.uncodedCourseRowCount, 0),
+    programmeWithCodedCoursesCount: programmeRows.filter((row) => row.codedCourseCount > 0).length,
+    programmeSummaryOnlyCount: programmeRows.filter((row) => row.codedCourseCount === 0 && row.courseRowCount > 0).length
+  };
+}
+
+function summarizeSourceFilePath(filePath) {
+  const ext = path.extname(filePath).toLowerCase();
+  const text = fs.readFileSync(filePath, 'utf8');
+  if (ext === '.csv') {
+    const rows = parseCsv(text);
+    const summary = summarizeRows(
+      rows,
+      (row) => row.programme_code || row.programmeCode || row.jupasCode || row['Programme Code'],
+      (row) => row.programme || row.programme_name || row.programmeName || row['Programme'],
+      (row) => row.subject_code || row.code || row.courseCode || row['Subject Code'],
+      (row) => row.track_or_award || row.track || row.majorName || row['Track']
+    );
+    return {
+      file: path.basename(filePath),
+      filePath,
+      format: 'csv',
+      ...summary,
+      importReady: summary.programmeWithCodedCoursesCount > 0
+    };
+  }
+
+  const raw = JSON.parse(text);
+  const source = {
+    code: raw.university_code || raw.universityCode || raw.university || path.basename(filePath, ext).toUpperCase(),
+    file: path.basename(filePath)
+  };
+  return {
+    ...summarizeSourceFile(source, path.dirname(filePath)),
+    filePath,
+    format: 'json'
   };
 }
 
@@ -145,7 +282,7 @@ function summarizeGeneratedCatalogue(options = {}) {
 }
 
 function printReport(summary) {
-  console.log(`UG source coverage: ${summary.sourceDir}`);
+  console.log(`UG source coverage: ${summary.sourceDir || summary.filePath}`);
   summary.schools.forEach((school) => {
     console.log([
       school.code,
@@ -168,6 +305,23 @@ function printReport(summary) {
     `${summary.totals.duplicateWithinTrackRowCount} duplicate rows within track`,
     `${summary.totals.programmeWithCodedCoursesCount} programmes with courses`,
     `${summary.totals.programmeSummaryOnlyCount} summary-only programmes`
+  ].join(' · '));
+}
+
+function printSingleSourceReport(summary) {
+  console.log(`UG source file coverage: ${summary.filePath}`);
+  console.log([
+    summary.file,
+    summary.format,
+    `${summary.programmeCount} programmes`,
+    `${summary.courseRowCount} raw course rows`,
+    `${summary.codedCourseCount} coded rows`,
+    `${summary.importableCodedCourseCount} importable coded rows`,
+    `${summary.uniqueCodedCourseCount} unique course codes`,
+    `${summary.duplicateWithinTrackRowCount} duplicate rows`,
+    `${summary.programmeWithCodedCoursesCount} programmes with courses`,
+    `${summary.programmeSummaryOnlyCount} summary-only programmes`,
+    summary.importReady ? 'import-ready' : 'needs course-code source'
   ].join(' · '));
 }
 
@@ -233,7 +387,11 @@ function printMissingProgrammes(summary, options = {}) {
 
 function main() {
   const options = parseArgs();
-  const sourceSummary = options.missingOnly ? null : summarizeSources(options.sourceDir);
+  const sourceSummary = options.missingOnly
+    ? null
+    : options.sourceFile
+      ? summarizeSourceFilePath(options.sourceFile)
+      : summarizeSources(options.sourceDir);
   const generatedSummary = summarizeGeneratedCatalogue(options);
 
   if (options.json) {
@@ -244,7 +402,10 @@ function main() {
     return;
   }
 
-  if (sourceSummary) printReport(sourceSummary);
+  if (sourceSummary) {
+    if (options.sourceFile) printSingleSourceReport(sourceSummary);
+    else printReport(sourceSummary);
+  }
   printGeneratedCatalogueReport(generatedSummary, options);
 }
 
@@ -254,7 +415,9 @@ if (require.main === module) {
 
 module.exports = {
   parseArgs,
+  parseCsv,
   summarizeSourceFile,
+  summarizeSourceFilePath,
   summarizeSources,
   summarizeGeneratedCatalogue,
   filterSchools,

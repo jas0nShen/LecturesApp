@@ -12,8 +12,10 @@ const {
 const {
   filterSchools,
   parseArgs,
+  parseCsv,
   summarizeGeneratedCatalogue,
   summarizeSourceFile,
+  summarizeSourceFilePath,
   summarizeSources
 } = require('./report-ug-source-coverage');
 
@@ -123,6 +125,76 @@ test('UG source coverage report counts only rows with course codes as coded cour
   assert.equal(summary.uncodedCourseRowCount, 2);
   assert.equal(summary.programmeWithCodedCoursesCount, 1);
   assert.equal(summary.programmeSummaryOnlyCount, 1);
+  assert.equal(summary.importReady, true);
+});
+
+test('UG source coverage report can diagnose a standalone CSV source file', () => {
+  const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'ug-catalog-csv-'));
+  const csvPath = path.join(tempDir, 'standalone.csv');
+  fs.writeFileSync(csvPath, [
+    'programme_code,programme,track_or_award,year_level,subject_code,subject_title_or_description',
+    'JSTEST,Bachelor of CSV Testing,Testing,Year 1,CSV1001,CSV Fundamentals',
+    'JSTEST,Bachelor of CSV Testing,Testing,Year 1,CSV1001,CSV Fundamentals duplicate',
+    'JSTEST,Bachelor of CSV Testing,Quality Assurance,Year 1,CSV1001,CSV Fundamentals in another track',
+    'JSTEST,Bachelor of CSV Testing,Testing,Year 2,CSV2001,Advanced CSV',
+    'JSINFO,Bachelor of Summary Only,Summary,Year 1,,Summary text only'
+  ].join('\n'));
+
+  const args = parseArgs(['--source-file', csvPath, '--json']);
+  const parsed = parseCsv(fs.readFileSync(csvPath, 'utf8'));
+  const summary = summarizeSourceFilePath(args.sourceFile);
+
+  assert.equal(args.sourceFile, csvPath);
+  assert.equal(args.json, true);
+  assert.equal(parsed.length, 5);
+  assert.equal(summary.format, 'csv');
+  assert.equal(summary.programmeCount, 2);
+  assert.equal(summary.courseRowCount, 5);
+  assert.equal(summary.codedCourseCount, 4);
+  assert.equal(summary.uniqueCodedCourseCount, 2);
+  assert.equal(summary.importableCodedCourseCount, 3);
+  assert.equal(summary.duplicateWithinTrackRowCount, 1);
+  assert.equal(summary.programmeWithCodedCoursesCount, 1);
+  assert.equal(summary.programmeSummaryOnlyCount, 1);
+  assert.equal(summary.importReady, true);
+});
+
+test('UG source coverage report can diagnose a standalone JSON source file', () => {
+  const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'ug-catalog-json-'));
+  const jsonPath = path.join(tempDir, 'standalone.json');
+  fs.writeFileSync(jsonPath, JSON.stringify({
+    university: 'Standalone University',
+    programmes: [
+      {
+        programme_code: 'JSJSON',
+        programme_name: 'Bachelor of JSON Testing',
+        years: [
+          {
+            year: 'Year 1',
+            semesters: [
+              {
+                semester: 'Semester 1',
+                courses: [
+                  { code: 'JSON1001', title: 'JSON Fundamentals' },
+                  { code: '', title: 'Summary row' }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }));
+
+  const summary = summarizeSourceFilePath(jsonPath);
+
+  assert.equal(summary.format, 'json');
+  assert.equal(summary.file, 'standalone.json');
+  assert.equal(summary.programmeCount, 1);
+  assert.equal(summary.courseRowCount, 2);
+  assert.equal(summary.codedCourseCount, 1);
+  assert.equal(summary.importableCodedCourseCount, 1);
+  assert.equal(summary.uncodedCourseRowCount, 1);
   assert.equal(summary.importReady, true);
 });
 
