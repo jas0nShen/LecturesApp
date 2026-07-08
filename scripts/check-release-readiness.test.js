@@ -196,6 +196,8 @@ test('feedback copy includes only count-based local context', () => {
   assert(profileLogic.includes('userSummary: this.data.userSummary'));
   assert(feedbackLogic.includes('本机数据摘要'));
   assert(feedbackLogic.includes('只包含数量，不包含具体课程或笔记内容'));
+  assert(feedbackLogic.includes('数据补充模板'));
+  assert(feedbackLogic.includes('需要补充的课程代码 / 课程名'));
 });
 
 test('data status source copy handles missing source text', () => {

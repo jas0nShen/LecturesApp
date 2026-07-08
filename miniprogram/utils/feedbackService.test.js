@@ -18,6 +18,8 @@ test('feedback template includes launch context without uploading local user dat
   assert(template.includes('学校：香港大学'));
   assert(template.includes('Programme：Master of Science in Artificial Intelligence (MSc(AI))'));
   assert(template.includes('当前资料状态：课程结构已录入 · 22 门课程'));
+  assert(template.includes('数据补充模板：'));
+  assert(template.includes('- 当前 Programme / Major：Master of Science in Artificial Intelligence (MSc(AI))'));
   assert(template.includes('不会自动上传本机资料、收藏、笔记或 Study Plan'));
   assert(!template.includes('should-not-leak'));
 });
@@ -64,6 +66,7 @@ test('feedback template can target an unsaved programme detail', () => {
   assert(template.includes('学校：香港大学'));
   assert(template.includes('Programme：Master of Architecture (Design) (MArch (Design))'));
   assert(template.includes('当前资料状态：结构资料待拆分 · 课程清单待开放'));
+  assert(template.includes('- 需要补充的课程代码 / 课程名：这个 Programme 课程清单待开放，请补充官方课程表'));
   assert(template.includes('HKU_Master_Course_Guide.pdf'));
 });
 
@@ -81,5 +84,23 @@ test('feedback template includes imported undergraduate catalogue context', () =
   assert(template.includes('学校：香港大学'));
   assert(template.includes('Programme：Bachelor of Arts in Architectural Studies'));
   assert(template.includes('当前资料状态：Bachelor of Arts in Architectural Studies · 已开放 24 门课程'));
+  assert(template.includes('- 官方链接 / 截图来源：待填写'));
   assert(template.includes('https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-architectural-studies'));
+});
+
+test('feedback template highlights missing undergraduate course lists for data collection', () => {
+  const template = feedbackService.buildFeedbackTemplate({
+    profileType: 'undergraduate',
+    universityCode: 'CITYU',
+    programmeId: 'CITYU-UG-INSPIRE-19',
+    programmeName: 'International Sustainability Programme for Innovation, Research & Entrepreneurship(INSPIRE)',
+    majorId: 'CITYU-UG-INSPIRE-19-M1',
+    majorName: 'BEng Energy Science & Engineering',
+    curriculumYear: '2026'
+  });
+
+  assert(template.includes('学校：香港城市大学'));
+  assert(template.includes('课程清单待开放'));
+  assert(template.includes('- 需要补充的课程代码 / 课程名：这个 Programme 课程清单待开放，请补充官方课程表'));
+  assert(template.includes('- 官方链接 / 截图来源：待填写'));
 });

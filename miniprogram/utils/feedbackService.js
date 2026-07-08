@@ -96,6 +96,7 @@ function buildLocalSummaryLine(userSummary) {
 function buildFeedbackTemplate(profile, options = {}) {
   const fields = buildProgrammeFields(profile, options.programme);
   const localSummary = buildLocalSummaryLine(options.userSummary);
+  const isCourseDataPending = fields.status.includes('课程清单待开放') || fields.status.includes('待确认');
 
   return [
     '【选课港反馈 / 纠错】',
@@ -106,6 +107,13 @@ function buildFeedbackTemplate(profile, options = {}) {
     `当前资料状态：${fields.status}`,
     `资料来源：${fields.source}`,
     ...(localSummary ? [`本机数据摘要：${localSummary}`] : []),
+    '',
+    '数据补充模板：',
+    `- 当前 Programme / Major：${fields.programme}`,
+    `- 当前资料状态：${fields.status}`,
+    `- 需要补充的课程代码 / 课程名：${isCourseDataPending ? '这个 Programme 课程清单待开放，请补充官方课程表' : '待填写'}`,
+    '- 官方链接 / 截图来源：待填写',
+    '- 备注：待填写',
     '',
     '问题类型：数据纠错 / 功能问题 / 界面建议 / 其他',
     '问题位置：首页 / 选择专业 / 课程 / 毕业检查 / 我的',
