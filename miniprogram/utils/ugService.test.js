@@ -13,7 +13,7 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.requirementCount, 4);
   assert(summary.courseCount >= 3231);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 3217);
+  assert.equal(summary.codedCourseCount, 3241);
   assert.match(summary.generatedAt, /^2026-07-08T/);
   assert.equal(summary.generatedDate, '2026-07-08');
 });
@@ -45,7 +45,7 @@ test('UG per-school coverage stays visible for setup validation', () => {
   }));
 
   assert.deepEqual(coverage, {
-    HKU: { programmeCount: 137, majorCount: 137, codedCourseCount: 112 },
+    HKU: { programmeCount: 137, majorCount: 137, codedCourseCount: 136 },
     CUHK: { programmeCount: 84, majorCount: 84, codedCourseCount: 131 },
     HKUST: { programmeCount: 50, majorCount: 64, codedCourseCount: 121 },
     POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 166 },
@@ -66,10 +66,10 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert.equal(coverage.length, 8);
   assert.equal(hku.programmeCount, 136);
   assert.equal(hku.majorCount, 136);
-  assert.equal(hku.programmeWithCoursesCount, 2);
-  assert.equal(hku.pendingProgrammeCount, 134);
-  assert.equal(hku.coveragePercent, 1);
-  assert.equal(hku.codedCourseCount, 112);
+  assert.equal(hku.programmeWithCoursesCount, 3);
+  assert.equal(hku.pendingProgrammeCount, 133);
+  assert.equal(hku.coveragePercent, 2);
+  assert.equal(hku.codedCourseCount, 136);
   assert.equal(hku.generatedDate, '2026-07-08');
   assert.equal(hku.updatedLabel, '更新于 2026-07-08');
   assert.equal(hku.badge, 'COURSES');
@@ -149,9 +149,9 @@ test('UG course and major search support the next import workflow', () => {
 test('imported UG programme profiles preserve source status without faking course rules', () => {
   const hku = ugService.listUniversities().find((item) => item.code === 'HKU');
   const programmes = ugService.listProgrammes({ universityId: hku.id, degreeLevel: 'undergraduate' });
-  const hkuArchitecture = programmes.find((programme) => programme.code === '6004');
-  const major = ugService.listMajors(hkuArchitecture.id)[0];
-  const profile = ugService.getMajorProfile(hkuArchitecture.id, major.id, '2026');
+  const hkuSurveying = programmes.find((programme) => programme.code === '6016');
+  const major = ugService.listMajors(hkuSurveying.id)[0];
+  const profile = ugService.getMajorProfile(hkuSurveying.id, major.id, '2026');
 
   assert.equal(programmes.filter((programme) => typeof programme.id === 'string').length, 136);
   assert.equal(profile.sourceStatus, 'programme_summary_only');
@@ -713,4 +713,21 @@ test('imported UG programmes can be searched by title, code and faculty', () => 
   assert(architecture.some((programme) => programme.nameEn === 'Bachelor of Arts in Architectural Studies'));
   assert(engineering.length > 0);
   assert(ugService.searchProgrammes(hkuProgrammes, '').length >= hkuProgrammes.length);
+});
+
+test('HKU Architectural Studies exposes official BA(AS) timetable courses', () => {
+  const hku = ugService.listUniversities().find((item) => item.code === 'HKU');
+  const programmes = ugService.listProgrammes({ universityId: hku.id, degreeLevel: 'undergraduate' });
+  const architecture = programmes.find((programme) => programme.code === '6004');
+  const major = ugService.listMajors(architecture.id)[0];
+  const profile = ugService.getMajorProfile(architecture.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(architecture.id, major.id);
+
+  assert.equal(architecture.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 24);
+  assert.equal(courses.length, 24);
+  assert(courses.some((course) => course.courseCode === 'ARCH1079' && course.semester === 'Semester 1'));
+  assert(courses.some((course) => course.courseCode === 'ARCH1080' && course.semester === 'Semester 2'));
+  assert(courses.some((course) => course.courseCode === 'ARCH4603' && course.courseType === 'capstone'));
+  assert(ugService.listMajorCourses(architecture.id, major.id, { keyword: 'Building Technology' }).some((course) => course.courseCode === 'ARCH2056'));
 });

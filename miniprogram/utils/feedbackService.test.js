@@ -80,6 +80,6 @@ test('feedback template includes imported undergraduate catalogue context', () =
 
   assert(template.includes('学校：香港大学'));
   assert(template.includes('Programme：Bachelor of Arts in Architectural Studies'));
-  assert(template.includes('当前资料状态：Bachelor of Arts in Architectural Studies · 课程清单待开放'));
+  assert(template.includes('当前资料状态：Bachelor of Arts in Architectural Studies · 已开放 24 门课程'));
   assert(template.includes('https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-architectural-studies'));
 });

@@ -1,0 +1,52 @@
+{
+  "provider": "HKU Faculty of Architecture BA(AS) timetables",
+  "academicYear": "2025-26",
+  "sourceUrl": "https://www.arch.hku.hk/programmes/arch/bachelor-of-arts-in-architectural-studies/baas_regulations_syllabus/",
+  "officialUrl": "https://www.arch.hku.hk/programmes/arch/bachelor-of-arts-in-architectural-studies/",
+  "supplements": [
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6004",
+      "programmeName": "Bachelor of Arts in Architectural Studies",
+      "majorName": "Bachelor of Arts in Architectural Studies",
+      "sourceUrl": "https://foa-media.arch.hku.hk/media/upload/2025/08/BAAS_timetable-lecture_and_tutorials_2025-26_1nd_sem.pdf",
+      "officialUrl": "https://www.arch.hku.hk/programmes/arch/bachelor-of-arts-in-architectural-studies/baas_regulations_syllabus/",
+      "courses": [
+        { "code": "AILT1001", "title": "Artificial Intelligence Literacy I", "recommendedYear": 1, "semester": "Semester 1", "group": "programme timetable" },
+        { "code": "AFIC1005", "title": "Introduction to the Built Environment", "recommendedYear": 1, "semester": "Semester 1", "group": "programme timetable" },
+        { "code": "ARCH1079", "title": "Design 1", "recommendedYear": 1, "semester": "Semester 1", "group": "architectural design studio" },
+        { "code": "ARCH2055", "title": "Visual Communication 1 - Drawing", "recommendedYear": 1, "semester": "Semester 1", "group": "visual communication" },
+        { "code": "ARCH2079", "title": "Design 3", "recommendedYear": 2, "semester": "Semester 1", "group": "architectural design studio" },
+        { "code": "CAES9121", "title": "Communication Course for Architecture Students", "recommendedYear": 2, "semester": "Semester 1", "group": "communication course" },
+        { "code": "ARCH2058", "title": "Architectural History and Theory 1 - Modern Architecture", "recommendedYear": 2, "semester": "Semester 1", "group": "architectural history and theory" },
+        { "code": "ARCH3064", "title": "Building Technology 2 - Building Structures", "recommendedYear": 3, "semester": "Semester 1", "group": "technology" },
+        { "code": "ARCH3056", "title": "Visual Communication 2 - Visual Content", "recommendedYear": 3, "semester": "Semester 1", "group": "visual communication" },
+        { "code": "ARCH3079", "title": "Design 5", "recommendedYear": 3, "semester": "Semester 1", "group": "architectural design studio" },
+        { "code": "ARCH4603", "title": "Architectural History and Theory 4 - The City", "recommendedYear": 4, "semester": "Semester 1", "group": "capstone course" },
+        { "code": "ARCH4079", "title": "Design 7", "recommendedYear": 4, "semester": "Semester 1", "group": "architectural design studio" },
+        { "code": "ARCH4602", "title": "Building Technology 5 - Building Construction and Practice", "recommendedYear": 4, "semester": "Semester 1", "group": "capstone course" }
+      ]
+    },
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6004",
+      "programmeName": "Bachelor of Arts in Architectural Studies",
+      "majorName": "Bachelor of Arts in Architectural Studies",
+      "sourceUrl": "https://foa-media.arch.hku.hk/media/upload/2025/08/BAAS_timetable-lecture_and_tutorials_2025-26_2nd_sem.pdf",
+      "officialUrl": "https://www.arch.hku.hk/programmes/arch/bachelor-of-arts-in-architectural-studies/baas_regulations_syllabus/",
+      "courses": [
+        { "code": "ARCH1080", "title": "Design 2", "recommendedYear": 1, "semester": "Semester 2", "group": "architectural design studio" },
+        { "code": "CARC9001", "title": "Practical Chinese for Architecture and Landscape Students", "recommendedYear": 1, "semester": "Semester 2", "group": "communication course" },
+        { "code": "ARCH2080", "title": "Design 4", "recommendedYear": 2, "semester": "Semester 2", "group": "architectural design studio" },
+        { "code": "ARCH2056", "title": "Building Technology 1 - Building Principles", "recommendedYear": 2, "semester": "Semester 2", "group": "technology" },
+        { "code": "ARCH3062", "title": "Architectural History and Theory 3 - Global Perspectives II", "recommendedYear": 3, "semester": "Semester 2", "group": "architectural history and theory" },
+        { "code": "ARCH3065", "title": "Building Technology 3 - Building Sustainability", "recommendedYear": 3, "semester": "Semester 2", "group": "technology" },
+        { "code": "ARCH3060", "title": "Visual Communication 3 - Animate Systems", "recommendedYear": 3, "semester": "Semester 2", "group": "capstone course" },
+        { "code": "ARCH3080", "title": "Design 6", "recommendedYear": 3, "semester": "Semester 2", "group": "architectural design studio" },
+        { "code": "ARCH4605", "title": "Building Technology 5 - Building Integration", "recommendedYear": 4, "semester": "Semester 2", "group": "technology" },
+        { "code": "ARCH4080", "title": "Design 8", "recommendedYear": 4, "semester": "Semester 2", "group": "architectural design studio" },
+        { "code": "ARCH4606", "title": "Architectural History and Theory 5 - Contemporary Issues in Architecture", "recommendedYear": 4, "semester": "Semester 2", "group": "architectural history and theory" }
+      ]
+    }
+  ]
+}

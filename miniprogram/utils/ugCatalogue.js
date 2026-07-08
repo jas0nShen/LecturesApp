@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-08T03:28:38.397Z",
+  "generatedAt": "2026-07-08T09:33:42.143Z",
   "universities": [
     {
       "id": "HKU",
@@ -509,9 +509,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-architectural-studies",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 24,
+      "codedCourseCount": 24,
+      "courseSourceUrl": "https://foa-media.arch.hku.hk/media/upload/2025/08/BAAS_timetable-lecture_and_tutorials_2025-26_2nd_sem.pdf"
     },
     {
       "id": "HKU-UG-6016-2",
@@ -9035,9 +9036,9 @@ const catalogue = {
       "code": "BACHELOR-OF-ARTS-IN-ARCHITECTURAL-STUDIES",
       "nameEn": "Bachelor of Arts in Architectural Studies",
       "nameZh": "Bachelor of Arts in Architectural Studies",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-architectural-studies"
+      "courseCount": 25,
+      "codedCourseCount": 24,
+      "officialUrl": "https://www.arch.hku.hk/programmes/arch/bachelor-of-arts-in-architectural-studies/baas_regulations_syllabus/"
     },
     {
       "id": "HKU-UG-6016-2-M1",
@@ -15923,12 +15924,12 @@ const catalogue = {
   "courseShardCounts": {
     "CITYU": 1966,
     "CUHK": 131,
-    "HKU": 112,
+    "HKU": 136,
     "HKUST": 121,
     "LINGNAN": 721,
     "POLYU": 166
   },
-  "codedCourseCount": 3217
+  "codedCourseCount": 3241
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
