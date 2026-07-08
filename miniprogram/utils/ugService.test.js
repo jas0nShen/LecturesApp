@@ -16,9 +16,28 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.codedCourseCount, 4616);
   assert.equal(summary.programmeWithCoursesCount, 69);
   assert.equal(summary.pendingProgrammeCount, 375);
+  assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
+  assert(summary.sourceReadiness.indexOnly > 0);
+  assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
   assert.equal(summary.coveragePercent, 16);
   assert.match(summary.generatedAt, /^2026-07-08T/);
   assert.equal(summary.generatedDate, '2026-07-08');
+});
+
+test('UG pending source readiness labels summarize index-only catalogue gaps', () => {
+  assert.deepEqual(ugService.summarizePendingSourceReadiness([
+    { codedCourseCount: 3, sourceStatus: 'course_codes_available' },
+    { codedCourseCount: 0, sourceStatus: 'programme_summary_only', courseCount: 1 },
+    { codedCourseCount: 0, officialUrl: 'https://example.test/programme' },
+    { codedCourseCount: 0 }
+  ]), {
+    indexOnly: 2,
+    noSource: 1
+  });
+  assert.equal(
+    ugService.formatPendingSourceReadiness({ indexOnly: 2, noSource: 1 }),
+    '2 个仅索引 / 来源 · 1 个缺来源'
+  );
 });
 
 test('UG catalogue exposes the multi-school hierarchy needed for onboarding', () => {
@@ -76,6 +95,8 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert.equal(hku.generatedDate, '2026-07-08');
   assert.equal(hku.updatedLabel, '更新于 2026-07-08');
   assert.equal(hku.badge, 'COURSES');
+  assert.equal(hku.sourceReadiness.indexOnly + hku.sourceReadiness.noSource, hku.pendingProgrammeCount);
+  assert.match(hku.sourceReadinessLabel, /仅索引 \/ 来源/);
   const cuhk = coverage.find((school) => school.code === 'CUHK');
   assert.equal(cuhk.programmeWithCoursesCount, 3);
   assert(cuhk.pendingProgrammeCount > 0);
@@ -87,6 +108,7 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert.equal(polyu.coveragePercent, 2);
   assert.equal(polyu.codedCourseCount, 166);
   assert.equal(polyu.badge, 'COURSES');
+  assert.equal(polyu.sourceReadiness.indexOnly, polyu.pendingProgrammeCount);
   assert.equal(cityu.programmeWithCoursesCount, 20);
   assert.equal(cityu.pendingProgrammeCount, 38);
   assert.equal(cityu.coveragePercent, 34);
@@ -97,6 +119,7 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert.equal(lingnan.coveragePercent, 100);
   assert.equal(lingnan.codedCourseCount, 721);
   assert.equal(lingnan.badge, 'COURSES');
+  assert.deepEqual(lingnan.sourceReadiness, { indexOnly: 0, noSource: 0 });
   assert(polyu.coverageLabel.includes('课程代码'));
 });
 

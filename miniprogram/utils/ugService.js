@@ -43,6 +43,25 @@ function getCatalogueGeneratedDate() {
   return catalogue.generatedAt ? String(catalogue.generatedAt).slice(0, 10) : '';
 }
 
+function summarizePendingSourceReadiness(programmes = []) {
+  return programmes.reduce((summary, programme) => {
+    if (programme.codedCourseCount || 0) return summary;
+    if (programme.sourceStatus || programme.courseCount || programme.officialUrl) {
+      summary.indexOnly += 1;
+    } else {
+      summary.noSource += 1;
+    }
+    return summary;
+  }, {
+    indexOnly: 0,
+    noSource: 0
+  });
+}
+
+function formatPendingSourceReadiness(sourceReadiness = {}) {
+  return `${sourceReadiness.indexOnly || 0} 个仅索引 / 来源 · ${sourceReadiness.noSource || 0} 个缺来源`;
+}
+
 function listUniversities() {
   return catalogue.universities.length ? catalogue.universities : data.universities;
 }
@@ -257,6 +276,7 @@ function getCatalogueSummary() {
   const majorIds = new Set();
   const programmeWithCoursesCount = sourceProgrammes.filter((programme) => (programme.codedCourseCount || 0) > 0).length;
   const pendingProgrammeCount = Math.max(sourceProgrammes.length - programmeWithCoursesCount, 0);
+  const sourceReadiness = summarizePendingSourceReadiness(sourceProgrammes);
   const coveragePercent = sourceProgrammes.length
     ? Math.round((programmeWithCoursesCount / sourceProgrammes.length) * 100)
     : 0;
@@ -273,6 +293,8 @@ function getCatalogueSummary() {
     codedCourseCount: getCatalogueCourseCount(),
     programmeWithCoursesCount,
     pendingProgrammeCount,
+    sourceReadiness,
+    sourceReadinessLabel: formatPendingSourceReadiness(sourceReadiness),
     coveragePercent,
     sourceProgrammeCount: catalogue.programmes.length,
     generatedAt: catalogue.generatedAt || '',
@@ -289,6 +311,7 @@ function getSchoolCoverage() {
     const codedCourseCount = sourceProgrammes.reduce((sum, programme) => sum + (programme.codedCourseCount || 0), 0);
     const programmeWithCoursesCount = sourceProgrammes.filter((programme) => (programme.codedCourseCount || 0) > 0).length;
     const pendingProgrammeCount = Math.max(sourceProgrammes.length - programmeWithCoursesCount, 0);
+    const sourceReadiness = summarizePendingSourceReadiness(sourceProgrammes);
     const coveragePercent = sourceProgrammes.length
       ? Math.round((programmeWithCoursesCount / sourceProgrammes.length) * 100)
       : 0;
@@ -300,6 +323,8 @@ function getSchoolCoverage() {
       codedCourseCount,
       programmeWithCoursesCount,
       pendingProgrammeCount,
+      sourceReadiness,
+      sourceReadinessLabel: formatPendingSourceReadiness(sourceReadiness),
       coveragePercent,
       generatedDate,
       updatedLabel: generatedDate ? `更新于 ${generatedDate}` : '更新时间待确认',
@@ -312,6 +337,7 @@ function getSchoolCoverage() {
 }
 
 module.exports = {
+  formatPendingSourceReadiness,
   getCatalogueSummary,
   getFaculty,
   getMajor,
@@ -326,6 +352,7 @@ module.exports = {
   listProgrammes,
   listRequirementGroups,
   listUniversities,
+  summarizePendingSourceReadiness,
   searchMajors,
   searchProgrammes
 };
