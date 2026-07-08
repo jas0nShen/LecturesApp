@@ -62,6 +62,12 @@ function formatPendingSourceReadiness(sourceReadiness = {}) {
   return `${sourceReadiness.indexOnly || 0} 个仅索引 / 来源 · ${sourceReadiness.noSource || 0} 个缺来源`;
 }
 
+function getPendingSourceStatus(programme = {}) {
+  if (programme.codedCourseCount || 0) return '已开放课程';
+  if (programme.sourceStatus || programme.courseCount || programme.officialUrl) return '仅索引 / 来源';
+  return '缺来源';
+}
+
 function listUniversities() {
   return catalogue.universities.length ? catalogue.universities : data.universities;
 }
@@ -336,15 +342,78 @@ function getSchoolCoverage() {
   });
 }
 
+function listPendingProgrammes(options = {}) {
+  const universityCode = String(options.universityCode || options.schoolCode || '').trim().toUpperCase();
+  const limit = Number.isFinite(Number(options.limit)) ? Number(options.limit) : 12;
+  const shouldLimit = limit >= 0;
+  const rows = catalogue.programmes
+    .filter((programme) => !(programme.codedCourseCount || 0))
+    .map((programme) => {
+      const university = getUniversity(programme.universityId) || {};
+      const faculty = getFaculty(programme.facultyId) || {};
+      return {
+        universityCode: university.code || programme.universityCode || '',
+        universityName: university.nameZh || university.nameEn || '',
+        code: programme.jupasCode || programme.code || '',
+        name: programme.nameEn || programme.nameZh || '',
+        faculty: programme.faculty || faculty.nameEn || faculty.nameZh || '',
+        officialUrl: programme.officialUrl || '',
+        sourceStatus: programme.sourceStatus || '',
+        sourceStatusLabel: getPendingSourceStatus(programme),
+        curriculumYear: programme.curriculumYear || ''
+      };
+    })
+    .filter((programme) => !universityCode || programme.universityCode === universityCode);
+  return shouldLimit ? rows.slice(0, limit) : rows;
+}
+
+function buildPendingCollectionText(options = {}) {
+  const pending = listPendingProgrammes(options);
+  const totalPending = listPendingProgrammes({
+    universityCode: options.universityCode || options.schoolCode || '',
+    limit: -1
+  }).length;
+  const scope = String(options.universityCode || options.schoolCode || '').trim().toUpperCase() || '全部学校';
+  const lines = [
+    '【本科课程资料待补清单】',
+    `范围：${scope}`,
+    `待补 Programme：${totalPending}`,
+    '',
+    '采集要求：',
+    '- 只补官方来源或可信资料能验证的课程。',
+    '- 尽量包含课程代码、课程名、学分/units、Year/Semester、课程类别和来源链接。',
+    '- 如果只有 Programme 简介但没有课程码，保持“课程清单待开放”，不要推测课程。',
+    '',
+    `待补项目（前 ${pending.length} 个）：`
+  ];
+
+  if (!pending.length) {
+    lines.push('- 暂无待补 Programme。');
+  } else {
+    pending.forEach((programme, index) => {
+      lines.push(`${index + 1}. ${programme.universityCode} · ${programme.code} · ${programme.name}`);
+      if (programme.faculty) lines.push(`   学院：${programme.faculty}`);
+      lines.push(`   当前状态：${programme.sourceStatusLabel}`);
+      lines.push(`   官方入口：${programme.officialUrl || '待查'}`);
+      lines.push('   待补资料：课程代码 / 课程名 / 学分 / Year / Semester / 课程类别 / 来源链接');
+    });
+  }
+
+  return lines.join('\n');
+}
+
 module.exports = {
+  buildPendingCollectionText,
   formatPendingSourceReadiness,
   getCatalogueSummary,
   getFaculty,
   getMajor,
   getMajorProfile,
   getProgramme,
+  getPendingSourceStatus,
   getSchoolCoverage,
   getUniversity,
+  listPendingProgrammes,
   listCurriculumYears,
   listFaculties,
   listMajorCourses,

@@ -62,5 +62,10 @@ Page({
       '说明：Programme / Major 已接入；毕业规则和课程清单按公开资料逐步复核开放。'
     ].join('\n');
     copyTextOrToast(text, '本科状态已复制');
+  },
+
+  copyUgPendingCollection() {
+    const text = ugService.buildPendingCollectionText({ limit: 12 });
+    copyTextOrToast(text, '待补清单已复制');
   }
 });

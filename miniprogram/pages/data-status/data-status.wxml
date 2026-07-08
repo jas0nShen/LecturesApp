@@ -80,7 +80,10 @@
         </view>
       </view>
     </view>
-    <view class="source-action tpg-source-action" bindtap="copyUgSummary">复制本科数据状态</view>
+    <view class="ug-source-actions">
+      <view class="source-action tpg-source-action" bindtap="copyUgSummary">复制本科数据状态</view>
+      <view class="source-action tpg-source-action" bindtap="copyUgPendingCollection">复制待补资料清单</view>
+    </view>
   </view>
 
   <view class="section source-card">

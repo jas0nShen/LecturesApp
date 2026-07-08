@@ -40,6 +40,23 @@ test('UG pending source readiness labels summarize index-only catalogue gaps', (
   );
 });
 
+test('UG pending programme collection text is copy-ready for data sourcing', () => {
+  const pending = ugService.listPendingProgrammes({ universityCode: 'POLYU', limit: 2 });
+  const allPending = ugService.listPendingProgrammes({ universityCode: 'POLYU', limit: -1 });
+  const text = ugService.buildPendingCollectionText({ universityCode: 'POLYU', limit: 2 });
+
+  assert.equal(pending.length, 2);
+  assert.equal(allPending.length, 45);
+  assert.equal(pending[0].universityCode, 'POLYU');
+  assert.equal(pending[0].sourceStatusLabel, '仅索引 / 来源');
+  assert.match(pending[0].officialUrl, /^https:\/\//);
+  assert.match(text, /【本科课程资料待补清单】/);
+  assert.match(text, /范围：POLYU/);
+  assert.match(text, /待补 Programme：45/);
+  assert.match(text, /课程代码 \/ 课程名 \/ 学分 \/ Year \/ Semester \/ 课程类别 \/ 来源链接/);
+  assert.match(text, /不要推测课程/);
+});
+
 test('UG catalogue exposes the multi-school hierarchy needed for onboarding', () => {
   const universities = ugService.listUniversities();
   const university = universities.find((item) => item.code === 'POLYU');
