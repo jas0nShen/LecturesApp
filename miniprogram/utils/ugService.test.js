@@ -11,9 +11,9 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert(summary.programmeCount >= 445);
   assert(summary.majorCount >= 690);
   assert.equal(summary.requirementCount, 4);
-  assert(summary.courseCount >= 4380);
+  assert(summary.courseCount >= 4440);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 4374);
+  assert.equal(summary.codedCourseCount, 4426);
   assert.match(summary.generatedAt, /^2026-07-08T/);
   assert.equal(summary.generatedDate, '2026-07-08');
 });
@@ -45,7 +45,7 @@ test('UG per-school coverage stays visible for setup validation', () => {
   }));
 
   assert.deepEqual(coverage, {
-    HKU: { programmeCount: 137, majorCount: 137, codedCourseCount: 1269 },
+    HKU: { programmeCount: 137, majorCount: 137, codedCourseCount: 1321 },
     CUHK: { programmeCount: 84, majorCount: 84, codedCourseCount: 131 },
     HKUST: { programmeCount: 50, majorCount: 64, codedCourseCount: 121 },
     POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 166 },
@@ -66,10 +66,10 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert.equal(coverage.length, 8);
   assert.equal(hku.programmeCount, 136);
   assert.equal(hku.majorCount, 136);
-  assert.equal(hku.programmeWithCoursesCount, 17);
-  assert.equal(hku.pendingProgrammeCount, 119);
+  assert.equal(hku.programmeWithCoursesCount, 18);
+  assert.equal(hku.pendingProgrammeCount, 118);
   assert.equal(hku.coveragePercent, 13);
-  assert.equal(hku.codedCourseCount, 1269);
+  assert.equal(hku.codedCourseCount, 1321);
   assert.equal(hku.generatedDate, '2026-07-08');
   assert.equal(hku.updatedLabel, '更新于 2026-07-08');
   assert.equal(hku.badge, 'COURSES');
@@ -149,7 +149,7 @@ test('UG course and major search support the next import workflow', () => {
 test('imported UG programme profiles preserve source status without faking course rules', () => {
   const hku = ugService.listUniversities().find((item) => item.code === 'HKU');
   const programmes = ugService.listProgrammes({ universityId: hku.id, degreeLevel: 'undergraduate' });
-  const hkuArts = programmes.find((programme) => programme.code === '6054' && programme.nameEn === 'Bachelor of Arts (Major in Korean Studies)');
+  const hkuArts = programmes.find((programme) => programme.code === '6054' && programme.nameEn === 'Bachelor of Arts (Major in Music)');
   const major = ugService.listMajors(hkuArts.id)[0];
   const profile = ugService.getMajorProfile(hkuArts.id, major.id, '2026');
 
@@ -986,4 +986,26 @@ test('HKU Japanese Studies exposes official BA syllabus courses', () => {
   assert(ugService.listMajorCourses(japaneseStudies.id, major.id, { keyword: 'manga' }).some((course) => course.courseCode === 'JAPN3062'));
   assert(ugService.listMajorCourses(japaneseStudies.id, major.id, { keyword: 'video game' }).some((course) => course.courseCode === 'GCIN2013'));
   assert(ugService.listMajorCourses(japaneseStudies.id, major.id, { keyword: 'World city Tokyo' }).some((course) => course.courseCode === 'SOCI2090'));
+});
+
+test('HKU Korean Studies exposes official BA syllabus courses', () => {
+  const hku = ugService.listUniversities().find((item) => item.code === 'HKU');
+  const programmes = ugService.listProgrammes({ universityId: hku.id, degreeLevel: 'undergraduate' });
+  const koreanStudies = programmes.find((programme) => programme.code === '6054' && programme.nameEn === 'Bachelor of Arts (Major in Korean Studies)');
+  const major = ugService.listMajors(koreanStudies.id).find((item) => item.nameEn === 'Korean Studies');
+  const profile = ugService.getMajorProfile(koreanStudies.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(koreanStudies.id, major.id);
+
+  assert.equal(koreanStudies.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 52);
+  assert.equal(courses.length, 52);
+  ['KORE1001', 'KORE2001', 'KORE3044', 'KORE4008', 'KORE2028', 'KORE2038', 'KORE3043', 'ARTH2097', 'GEOG2153', 'GEOG3403'].forEach((courseCode) => {
+    assert(courses.some((course) => course.courseCode === courseCode));
+  });
+  assert(courses.some((course) => course.courseCode === 'KORE2001' && course.courseType === 'core'));
+  assert(courses.some((course) => course.courseCode === 'KORE4008' && course.courseType === 'capstone'));
+  assert(ugService.listMajorCourses(koreanStudies.id, major.id, { keyword: 'K-pop' }).some((course) => course.courseCode === 'GEOG2153'));
+  assert(ugService.listMajorCourses(koreanStudies.id, major.id, { keyword: 'North Korea' }).some((course) => course.courseCode === 'KORE2028'));
+  assert(ugService.listMajorCourses(koreanStudies.id, major.id, { keyword: 'Korean War' }).some((course) => course.courseCode === 'KORE2044'));
+  assert(ugService.listMajorCourses(koreanStudies.id, major.id, { keyword: 'urban planning' }).some((course) => course.courseCode === 'GEOG3403'));
 });
