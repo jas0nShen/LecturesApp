@@ -16,6 +16,7 @@ function parseArgs(argv = process.argv.slice(2)) {
     school: schoolIndex === -1 ? '' : String(argv[schoolIndex + 1] || '').trim().toUpperCase(),
     missingLimit: missingLimitIndex === -1 ? 20 : Number(argv[missingLimitIndex + 1]),
     missingOnly: argv.includes('--missing-only'),
+    missingSummary: argv.includes('--missing-summary'),
     importableOnly: argv.includes('--importable-only'),
     needsImportOnly: argv.includes('--needs-import-only'),
     json: argv.includes('--json')
@@ -291,13 +292,40 @@ function filterSchools(schools, schoolCode = '') {
 }
 
 function buildGeneratedTotals(schools) {
+  const sourceReadiness = schools.reduce((totals, school) => {
+    Object.entries(school.sourceReadiness || {}).forEach(([key, value]) => {
+      totals[key] = (totals[key] || 0) + value;
+    });
+    return totals;
+  }, {});
   return {
     programmeCount: schools.reduce((sum, school) => sum + school.programmeCount, 0),
     majorCount: schools.reduce((sum, school) => sum + school.majorCount, 0),
     programmeWithCoursesCount: schools.reduce((sum, school) => sum + school.programmeWithCoursesCount, 0),
     missingProgrammeCount: schools.reduce((sum, school) => sum + school.missingProgrammeCount, 0),
-    codedCourseCount: schools.reduce((sum, school) => sum + school.codedCourseCount, 0)
+    codedCourseCount: schools.reduce((sum, school) => sum + school.codedCourseCount, 0),
+    sourceReadiness
   };
+}
+
+function sourceReadinessKey(programme) {
+  if (programme.sourceStatus === 'source_importable_rows') return 'sourceImportableRows';
+  if (programme.sourceStatus === 'source_coded_rows_not_importable') return 'sourceCodedRowsNotImportable';
+  if (programme.sourceStatus === 'source_index_only') return 'sourceIndexOnly';
+  return 'noSource';
+}
+
+function summarizeMissingSourceReadiness(missingProgrammes = []) {
+  return missingProgrammes.reduce((summary, programme) => {
+    const key = sourceReadinessKey(programme);
+    summary[key] = (summary[key] || 0) + 1;
+    return summary;
+  }, {
+    sourceImportableRows: 0,
+    sourceCodedRowsNotImportable: 0,
+    sourceIndexOnly: 0,
+    noSource: 0
+  });
 }
 
 function summarizeGeneratedCatalogue(options = {}) {
@@ -332,6 +360,7 @@ function summarizeGeneratedCatalogue(options = {}) {
     const missingProgrammes = shouldLimitMissing
       ? allMissingProgrammes.slice(0, missingLimit)
       : allMissingProgrammes;
+    const sourceReadiness = summarizeMissingSourceReadiness(allMissingProgrammes);
 
     return {
       code: university.code,
@@ -342,6 +371,7 @@ function summarizeGeneratedCatalogue(options = {}) {
       missingProgrammeCount: allMissingProgrammes.length,
       codedCourseCount,
       courseProgrammes,
+      sourceReadiness,
       missingProgrammes
     };
   }), options.school);
@@ -491,6 +521,7 @@ function printGeneratedCatalogueReport(summary, options = {}) {
     return;
   }
   if (options.missingOnly) {
+    if (options.missingSummary) printMissingSourceReadiness(summary);
     printMissingProgrammes(summary, options);
     return;
   }
@@ -516,7 +547,34 @@ function printGeneratedCatalogueReport(summary, options = {}) {
     `${summary.totals.missingProgrammeCount} programmes pending`
   ].join(' · '));
 
+  if (options.missingSummary) printMissingSourceReadiness(summary);
   printMissingProgrammes(summary, options);
+}
+
+function formatSourceReadinessSummary(sourceReadiness = {}) {
+  return [
+    `${sourceReadiness.sourceImportableRows || 0} source importable`,
+    `${sourceReadiness.sourceCodedRowsNotImportable || 0} coded not importable`,
+    `${sourceReadiness.sourceIndexOnly || 0} index only`,
+    `${sourceReadiness.noSource || 0} no source`
+  ].join(' · ');
+}
+
+function printMissingSourceReadiness(summary) {
+  console.log('');
+  console.log('UG missing programme source readiness:');
+  summary.schools.forEach((school) => {
+    console.log([
+      school.code,
+      `${school.missingProgrammeCount} pending`,
+      formatSourceReadinessSummary(school.sourceReadiness)
+    ].join(' · '));
+  });
+  console.log([
+    'TOTAL',
+    `${summary.totals.missingProgrammeCount} pending`,
+    formatSourceReadinessSummary(summary.totals.sourceReadiness)
+  ].join(' · '));
 }
 
 function printMissingProgrammes(summary, options = {}) {
@@ -590,5 +648,7 @@ module.exports = {
   getGeneratedCourseProgrammeMap,
   listImportableProgrammes,
   formatMissingSourceStatus,
+  formatSourceReadinessSummary,
+  summarizeMissingSourceReadiness,
   printGeneratedCatalogueReport
 };

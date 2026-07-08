@@ -13,11 +13,13 @@ const {
   filterImportableProgrammes,
   filterSchools,
   formatMissingSourceStatus,
+  formatSourceReadinessSummary,
   getSourceProgrammeMap,
   listImportableProgrammes,
   parseArgs,
   parseCsv,
   summarizeGeneratedCatalogue,
+  summarizeMissingSourceReadiness,
   summarizeSourceFile,
   summarizeSourceFilePath,
   summarizeSources
@@ -297,6 +299,31 @@ test('UG source coverage report annotates missing programmes with source-code re
   assert.equal(firstMissing.sourceImportableCodedCourseCount, 0);
   assert.match(formatMissingSourceStatus(firstMissing), /source index only/);
   assert.equal(sourceProgrammes.get('HKU::6066').sourceStatus, 'source_index_only');
+});
+
+test('UG source coverage report summarizes missing source readiness', () => {
+  const args = parseArgs(['--school', 'hku', '--missing-limit', '2', '--missing-only', '--missing-summary']);
+  const sourceSummary = summarizeSources('/Users/shenjingsong/Documents/Codex/2026-07-06/pdf/outputs', args);
+  const summary = summarizeGeneratedCatalogue({ ...args, sourceSummary });
+  const hku = summary.schools[0];
+  const totalReadiness = Object.values(hku.sourceReadiness).reduce((sum, count) => sum + count, 0);
+
+  assert.equal(args.missingSummary, true);
+  assert.equal(totalReadiness, hku.missingProgrammeCount);
+  assert(hku.sourceReadiness.sourceIndexOnly > 0);
+  assert.equal(summary.totals.sourceReadiness.sourceIndexOnly, hku.sourceReadiness.sourceIndexOnly);
+  assert.match(formatSourceReadinessSummary(hku.sourceReadiness), /index only/);
+  assert.deepEqual(summarizeMissingSourceReadiness([
+    { sourceStatus: 'source_importable_rows' },
+    { sourceStatus: 'source_coded_rows_not_importable' },
+    { sourceStatus: 'source_index_only' },
+    {}
+  ]), {
+    sourceImportableRows: 1,
+    sourceCodedRowsNotImportable: 1,
+    sourceIndexOnly: 1,
+    noSource: 1
+  });
 });
 
 test('UG source coverage report supports machine-readable JSON mode', () => {
