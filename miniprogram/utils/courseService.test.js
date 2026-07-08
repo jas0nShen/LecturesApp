@@ -244,6 +244,20 @@ test('study plan courses expose local completed favorite and note state', () => 
   assert.equal(course.notePreview, 'Ask whether the tutorial time clashes.');
 });
 
+test('study plan suggestions surface unplanned unfinished core courses', () => {
+  service.saveStudyPlanItem('COMP1117', 1, '1');
+  service.toggleOfferingCompleted('COMP1110');
+
+  const suggestions = service.getStudyPlanSuggestions(4);
+
+  assert.equal(suggestions.length, 4);
+  assert(!suggestions.some((item) => item.courseCode === 'COMP1117'));
+  assert(!suggestions.some((item) => item.courseCode === 'COMP1110'));
+  assert(suggestions[0].recommendedYear <= suggestions[1].recommendedYear);
+  assert(suggestions.every((item) => item.categories.some((category) => category.includes('Core'))));
+  assert(suggestions.every((item) => item.credits > 0));
+});
+
 test('study plan analysis flags unavailable terms, missing corequisites and heavy semesters', () => {
   service.saveStudyPlanItem('COMP3230', 3, '2');
   service.saveStudyPlanItem('COMP2120', 2, '2');

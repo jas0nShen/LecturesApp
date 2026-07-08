@@ -387,12 +387,18 @@ test('study plan page exposes local planning states and quick actions', () => {
   assert(serviceLogic.includes('completed: isOfferingCompleted(item.courseCode)'));
   assert(serviceLogic.includes('favorite: isOfferingFavorite(item.courseCode)'));
   assert(serviceLogic.includes('hasNote: Boolean(note)'));
+  assert(serviceLogic.includes('function getStudyPlanSuggestions'));
+  assert(serviceLogic.includes('(course.categories || []).some((category) => /core/i.test(category))'));
   assert(planLogic.includes('completedCount: courses.filter((item) => item.completed).length'));
+  assert(planLogic.includes('const suggestions = service.getStudyPlanSuggestions(5);'));
+  assert(planLogic.includes('planSuggestion(event)'));
   assert(planLogic.includes('toggleCompleted(event)'));
   assert(planLogic.includes('toggleFavorite(event)'));
   assert(planPage.includes('已修 {{review.completedCount}}'));
   assert(planPage.includes('收藏 {{review.favoriteCount}}'));
   assert(planPage.includes('笔记 {{review.noteCount}}'));
+  assert(planPage.includes('未安排的核心课'));
+  assert(planPage.includes('wx:for="{{suggestions}}"'));
   assert(planPage.includes('{{course.completed ? \'取消已修\' : \'标记已修\'}}'));
   assert(planPage.includes('{{course.favorite ? \'取消收藏\' : \'收藏\'}}'));
   assert(planPage.includes('详情/笔记'));

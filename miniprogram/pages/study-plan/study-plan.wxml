@@ -49,6 +49,25 @@
     <view class="review-disclaimer">根据 2025–26 开课资料、已修记录和计划顺序提示；等价课程、成绩门槛、正式课表及学院审批仍以官方信息为准。</view>
   </view>
 
+  <view wx:if="{{suggestions.length}}" class="suggestion-card">
+    <view class="suggestion-head">
+      <view>
+        <view class="suggestion-kicker">NEXT CORE COURSES</view>
+        <view class="suggestion-title">未安排的核心课</view>
+      </view>
+      <view class="suggestion-count">{{suggestions.length}}</view>
+    </view>
+    <view class="suggestion-copy">根据当前已修记录和 Study Plan，仅提示已开放课程资料中的 core 课程；正式毕业要求仍以学校审核为准。</view>
+    <view wx:for="{{suggestions}}" wx:key="courseCode" class="suggestion-row" data-code="{{item.courseCode}}" bindtap="planSuggestion">
+      <view>
+        <view class="suggestion-code">{{item.courseCode}} · Year {{item.recommendedYear || '-'}}</view>
+        <view class="suggestion-name">{{item.title}}</view>
+        <view class="suggestion-meta">{{item.credits}} credits · {{item.termLabel}}</view>
+      </view>
+      <view class="suggestion-action">安排</view>
+    </view>
+  </view>
+
   <view class="timeline">
     <view wx:for="{{groups}}" wx:key="year" class="year-group">
       <view class="year-rail">

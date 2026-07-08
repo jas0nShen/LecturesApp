@@ -3,6 +3,7 @@ const service = require('../../utils/courseService');
 Page({
   data: {
     groups: [],
+    suggestions: [],
     review: {
       courseCount: 0,
       totalCredits: 0,
@@ -20,6 +21,7 @@ Page({
   onShow() {
     const courses = service.getStudyPlanCourses();
     const review = service.analyzeStudyPlan();
+    const suggestions = service.getStudyPlanSuggestions(5);
     const groups = [1, 2, 3, 4].map((year) => {
       const yearCourses = courses
         .filter((item) => item.plannedYear === year)
@@ -41,6 +43,7 @@ Page({
     });
     this.setData({
       groups,
+      suggestions,
       review: {
         ...review,
         completedCount: courses.filter((item) => item.completed).length,
@@ -96,6 +99,12 @@ Page({
   openDetail(event) {
     wx.navigateTo({
       url: `/pages/offering-detail/offering-detail?code=${event.currentTarget.dataset.code}`
+    });
+  },
+
+  planSuggestion(event) {
+    wx.navigateTo({
+      url: `/pages/plan-course/plan-course?code=${event.currentTarget.dataset.code}`
     });
   }
 });

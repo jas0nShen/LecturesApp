@@ -519,6 +519,37 @@ function analyzeStudyPlan() {
   };
 }
 
+function extractRecommendedYear(offering) {
+  const categoryText = (offering.categories || []).join(' ');
+  const match = categoryText.match(/Year\s+(\d+)/i);
+  return match ? Number(match[1]) : 0;
+}
+
+function getStudyPlanSuggestions(limit = 5) {
+  const plannedCodes = new Set(getStudyPlanItems().map((item) => item.courseCode));
+  const completedCodes = new Set(getCompletedOfferingCodes());
+  return hkuOfferings.courses
+    .filter((course) => (
+      (course.categories || []).some((category) => /core/i.test(category))
+      && !plannedCodes.has(course.courseCode)
+      && !completedCodes.has(course.courseCode)
+    ))
+    .map((course) => ({
+      courseCode: course.courseCode,
+      title: course.title,
+      credits: Number((course.details && course.details.credits) || 0),
+      recommendedYear: extractRecommendedYear(course),
+      categories: course.categories || [],
+      terms: course.terms || [],
+      termLabel: (course.terms || []).map((term) => term === 'full year' ? 'Full Year' : `Semester ${term}`).join(' / ')
+    }))
+    .sort((left, right) => (
+      (left.recommendedYear || 99) - (right.recommendedYear || 99)
+      || left.courseCode.localeCompare(right.courseCode)
+    ))
+    .slice(0, Number(limit) || 5);
+}
+
 function formatStudyPlanText(now = new Date()) {
   const courses = getStudyPlanCourses().slice().sort((left, right) => (
     studyPlanPosition(left) - studyPlanPosition(right)
@@ -915,6 +946,7 @@ module.exports = {
   getStudyPlanCourses,
   getStudyPlanItem,
   getStudyPlanItems,
+  getStudyPlanSuggestions,
   getUserDataSummary,
   isFavorite,
   isOfferingCompleted,
