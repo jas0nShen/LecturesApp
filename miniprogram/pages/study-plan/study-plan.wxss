@@ -28,6 +28,71 @@
 .plan-state.completed { background: #dcebe5; color: #0b6b55; }
 .plan-state.favorite { background: #fff2d5; color: #9a640f; }
 .plan-state.note { background: #e7ecf4; color: #536487; }
+.category-card {
+  background: #fbfcfa;
+  border: 1rpx solid #dbe5df;
+  border-radius: 18rpx;
+  box-shadow: 0 8rpx 24rpx rgba(15, 64, 51, 0.045);
+  margin: -8rpx 0 26rpx;
+  padding: 22rpx;
+}
+.category-head {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+}
+.category-kicker {
+  color: #0b6b55;
+  font-size: 17rpx;
+  font-weight: 900;
+  letter-spacing: 2rpx;
+}
+.category-title {
+  color: #17352c;
+  font-size: 26rpx;
+  font-weight: 850;
+  margin-top: 6rpx;
+}
+.category-total {
+  background: #e7efeb;
+  border-radius: 999rpx;
+  color: #5f756b;
+  font-size: 19rpx;
+  font-weight: 800;
+  padding: 8rpx 12rpx;
+}
+.category-grid {
+  display: grid;
+  gap: 10rpx;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 18rpx;
+}
+.category-pill {
+  border: 1rpx solid #e2eae6;
+  border-radius: 14rpx;
+  padding: 16rpx;
+}
+.category-pill.core { background: #eef7f3; }
+.category-pill.elective { background: #f4f8f7; }
+.category-pill.capstone { background: #fff7e8; border-color: #ecd5a9; }
+.category-pill.other { background: #f6f6f2; }
+.category-label {
+  color: #17352c;
+  font-size: 21rpx;
+  font-weight: 850;
+}
+.category-value {
+  color: #667970;
+  font-size: 19rpx;
+  line-height: 1.35;
+  margin-top: 6rpx;
+}
+.category-completed {
+  color: #0b6b55;
+  font-size: 17rpx;
+  font-weight: 800;
+  margin-top: 7rpx;
+}
 .plan-export {
   align-items: center;
   background: #17352c;

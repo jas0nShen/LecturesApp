@@ -273,6 +273,26 @@ test('study plan analysis flags unavailable terms, missing corequisites and heav
   assert(review.termLoads.some((load) => load.year === 1 && load.term === '1' && load.overloaded));
 });
 
+test('study plan analysis summarizes core elective and capstone mix', () => {
+  service.saveStudyPlanItem('COMP1117', 1, '1');
+  service.saveStudyPlanItem('COMP3258', 3, '1');
+  service.saveStudyPlanItem('COMP4801', 4, '2');
+  service.toggleOfferingCompleted('COMP1117');
+
+  const review = service.analyzeStudyPlan();
+  const byKey = Object.fromEntries(review.categoryStats.map((item) => [item.key, item]));
+  const plannedCourses = service.getStudyPlanCourses();
+
+  assert.equal(byKey.core.courseCount, 1);
+  assert.equal(byKey.core.credits, 6);
+  assert.equal(byKey.core.completedCount, 1);
+  assert.equal(byKey.elective.courseCount, 1);
+  assert.equal(byKey.capstone.courseCount, 1);
+  assert.equal(plannedCourses.find((course) => course.courseCode === 'COMP1117').categoryLabel, 'Core');
+  assert.equal(plannedCourses.find((course) => course.courseCode === 'COMP3258').categoryLabel, 'Elective');
+  assert.equal(plannedCourses.find((course) => course.courseCode === 'COMP4801').categoryLabel, 'Capstone');
+});
+
 test('study plan can be formatted as grouped shareable text with checks', () => {
   service.saveProfile({
     profileType: 'undergraduate',
@@ -297,8 +317,10 @@ test('study plan can be formatted as grouped shareable text with checks', () => 
   assert(text.includes('Current Year: Year 1'));
   assert(text.includes('Generated: 2026-07-05'));
   assert(text.indexOf('Year 1') < text.indexOf('Year 2'));
-  assert(text.includes('- COMP1117 Computer Programming (6 credits)'));
+  assert(text.includes('- COMP1117 Computer Programming (6 credits · Core)'));
   assert(text.includes('Total: 2 courses · 12 credits'));
+  assert(text.includes('Categories:'));
+  assert(text.includes('- Core: 2 courses · 12 credits'));
   assert(text.includes('Plan checks:'));
   assert(!text.includes('courseNotes'));
   assert(!text.includes('Confirm official timetable, prerequisites and degree requirements with HKU.'));

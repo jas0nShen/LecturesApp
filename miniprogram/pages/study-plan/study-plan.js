@@ -11,6 +11,7 @@ Page({
       favoriteCount: 0,
       noteCount: 0,
       noticeCount: 0,
+      categoryStats: [],
       noticeCounts: {},
       issueCodes: [],
       termLoads: [],
@@ -29,6 +30,7 @@ Page({
           ...item,
           credits: Number((item.offering.details && item.offering.details.credits) || 0),
           termLabel: item.plannedTerm === 'full year' ? 'Full Year' : `Semester ${item.plannedTerm}`,
+          categoryLabel: item.categoryLabel,
           hasIssue: review.issueCodes.includes(item.courseCode)
         }));
       const semesterOne = review.termLoads.find((item) => item.year === year && item.term === '1');

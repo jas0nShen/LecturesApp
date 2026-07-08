@@ -12,6 +12,13 @@ const TYPE_LABELS = {
   free_elective: '自由选修'
 };
 
+const STUDY_PLAN_CATEGORY_DEFS = [
+  { key: 'core', label: 'Core' },
+  { key: 'elective', label: 'Elective' },
+  { key: 'capstone', label: 'Capstone' },
+  { key: 'other', label: 'Other' }
+];
+
 const USER_DATA_KEYS = [
   'userProfile',
   'favoriteCourseIds',
@@ -398,9 +405,12 @@ function getStudyPlanCourses() {
     const offering = hkuOfferings.courses.find((course) => course.courseCode === item.courseCode);
     if (!offering) return null;
     const note = getCourseNote(item.courseCode);
+    const categoryKey = classifyStudyPlanCourse(offering);
     return {
       ...item,
       offering,
+      categoryKey,
+      categoryLabel: getStudyPlanCategoryLabel(categoryKey),
       completed: isOfferingCompleted(item.courseCode),
       favorite: isOfferingFavorite(item.courseCode),
       hasNote: Boolean(note),
@@ -419,6 +429,22 @@ function requirementClauses(text) {
   return String(text).split(/;\s*(?:and\s+)?/i).map((clause) => (
     [...new Set(clause.toUpperCase().match(/[A-Z]{4}\d{4}/g) || [])]
   )).filter((codes) => codes.length);
+}
+
+function classifyStudyPlanCourse(offering = {}) {
+  const text = [
+    offering.title,
+    ...(offering.categories || [])
+  ].join(' ').toLowerCase();
+  if (/capstone|final year project|project|dissertation|thesis/.test(text)) return 'capstone';
+  if (/\bcore\b|required|compulsory/.test(text)) return 'core';
+  if (/elective|optional|choice/.test(text)) return 'elective';
+  return 'other';
+}
+
+function getStudyPlanCategoryLabel(categoryKey) {
+  const found = STUDY_PLAN_CATEGORY_DEFS.find((item) => item.key === categoryKey);
+  return found ? found.label : 'Other';
 }
 
 function analyzeStudyPlan() {
@@ -508,10 +534,31 @@ function analyzeStudyPlan() {
     ...counts,
     [notice.type]: (counts[notice.type] || 0) + 1
   }), {});
+  const categoryMap = STUDY_PLAN_CATEGORY_DEFS.reduce((map, category) => ({
+    ...map,
+    [category.key]: {
+      ...category,
+      courseCount: 0,
+      credits: 0,
+      completedCount: 0
+    }
+  }), {});
+
+  courses.forEach((item) => {
+    const categoryKey = classifyStudyPlanCourse(item.offering);
+    const bucket = categoryMap[categoryKey] || categoryMap.other;
+    const credits = Number((item.offering.details && item.offering.details.credits) || 0);
+    bucket.courseCount += 1;
+    bucket.credits += credits;
+    if (item.completed) bucket.completedCount += 1;
+  });
 
   return {
     courseCount: courses.length,
     totalCredits,
+    categoryStats: STUDY_PLAN_CATEGORY_DEFS
+      .map((category) => categoryMap[category.key])
+      .filter((category) => category.courseCount > 0),
     noticeCount: notices.length,
     noticeCounts,
     issueCodes: [...new Set(notices.map((notice) => notice.courseCode).filter(Boolean))],
@@ -617,13 +664,20 @@ function formatStudyPlanText(now = new Date()) {
       lines.push(term === 'full year' ? 'Full Year' : `Semester ${term}`);
       termCourses.forEach((course) => {
         const credits = Number((course.offering.details && course.offering.details.credits) || 0);
-        lines.push(`- ${course.courseCode} ${course.offering.title} (${credits} credits)`);
+        const categoryLabel = getStudyPlanCategoryLabel(classifyStudyPlanCourse(course.offering));
+        lines.push(`- ${course.courseCode} ${course.offering.title} (${credits} credits · ${categoryLabel})`);
       });
     });
     lines.push('');
   });
 
   lines.push(`Total: ${review.courseCount} courses · ${review.totalCredits} credits`);
+  if (review.categoryStats.length) {
+    lines.push('Categories:');
+    review.categoryStats.forEach((category) => {
+      lines.push(`- ${category.label}: ${category.courseCount} courses · ${category.credits} credits`);
+    });
+  }
   if (review.notices.length) {
     lines.push('', `Plan checks: ${review.noticeCount}`);
     review.notices.forEach((notice) => lines.push(`- ${notice.message}`));
