@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-08T14:34:37.109Z",
+  "generatedAt": "2026-07-08T14:42:06.505Z",
   "universities": [
     {
       "id": "HKU",
@@ -789,9 +789,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 75,
+      "codedCourseCount": 75,
+      "courseSourceUrl": "https://arts.hku.hk/wp-content/uploads/2026/02/BA_syl_2025-26.pdf"
     },
     {
       "id": "HKU-UG-6054-16",
@@ -9189,9 +9190,9 @@ const catalogue = {
       "code": "JAPANESE-STUDIES",
       "nameEn": "Japanese Studies",
       "nameZh": "Japanese Studies",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts"
+      "courseCount": 76,
+      "codedCourseCount": 75,
+      "officialUrl": "https://arts.hku.hk/current-students/undergraduate/regulations/"
     },
     {
       "id": "HKU-UG-6054-16-M1",
@@ -15937,12 +15938,12 @@ const catalogue = {
   "courseShardCounts": {
     "CITYU": 1966,
     "CUHK": 131,
-    "HKU": 1194,
+    "HKU": 1269,
     "HKUST": 121,
     "LINGNAN": 721,
     "POLYU": 166
   },
-  "codedCourseCount": 4299
+  "codedCourseCount": 4374
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
