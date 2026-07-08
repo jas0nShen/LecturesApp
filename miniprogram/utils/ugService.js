@@ -272,6 +272,7 @@ function getCatalogueSummary() {
 }
 
 function getSchoolCoverage() {
+  const generatedDate = getCatalogueGeneratedDate();
   return listUniversities().map((university) => {
     const sourceProgrammes = catalogue.programmes.filter((programme) => sameId(programme.universityId, university.id));
     const sourceProgrammeIds = new Set(sourceProgrammes.map((programme) => programme.id));
@@ -291,6 +292,8 @@ function getSchoolCoverage() {
       programmeWithCoursesCount,
       pendingProgrammeCount,
       coveragePercent,
+      generatedDate,
+      updatedLabel: generatedDate ? `更新于 ${generatedDate}` : '更新时间待确认',
       badge: codedCourseCount ? 'COURSES' : 'INDEX',
       coverageLabel: codedCourseCount
         ? `${programmeWithCoursesCount} 个 Programme 已开放课程代码`

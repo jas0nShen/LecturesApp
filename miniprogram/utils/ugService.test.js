@@ -70,6 +70,8 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert.equal(hku.pendingProgrammeCount, 134);
   assert.equal(hku.coveragePercent, 1);
   assert.equal(hku.codedCourseCount, 112);
+  assert.equal(hku.generatedDate, '2026-07-08');
+  assert.equal(hku.updatedLabel, '更新于 2026-07-08');
   assert.equal(hku.badge, 'COURSES');
   const cuhk = coverage.find((school) => school.code === 'CUHK');
   assert.equal(cuhk.programmeWithCoursesCount, 3);

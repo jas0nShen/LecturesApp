@@ -68,6 +68,7 @@
           <view class="ug-school-name">{{item.nameZh || item.nameEn}}</view>
           <view class="ug-school-meta">{{item.programmeWithCoursesCount}}/{{item.programmeCount}} Programme 已开放 · {{item.pendingProgrammeCount}} 个待补</view>
           <view class="ug-school-meta muted">{{item.majorCount}} Major / Track · {{item.coverageLabel}}</view>
+          <view class="ug-school-updated">{{item.updatedLabel}}</view>
         </view>
         <view class="ug-school-side">
           <view class="ug-school-percent">{{item.coveragePercent}}%</view>

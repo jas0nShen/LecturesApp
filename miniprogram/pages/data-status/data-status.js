@@ -46,7 +46,7 @@ Page({
   copyUgSummary() {
     const status = this.data.ugStatus;
     const schools = (this.data.ugSchools || []).map((school) => (
-      `${school.code}：${school.programmeWithCoursesCount}/${school.programmeCount} Programme 已开放课程 · ${school.pendingProgrammeCount} 个待补 · ${school.codedCourseCount} codes`
+      `${school.code}：${school.programmeWithCoursesCount}/${school.programmeCount} Programme 已开放课程 · ${school.pendingProgrammeCount} 个待补 · ${school.codedCourseCount} codes · ${school.updatedLabel}`
     ));
     const text = [
       '本科资料库状态',
