@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-08T09:33:42.143Z",
+  "generatedAt": "2026-07-08T09:39:40.937Z",
   "universities": [
     {
       "id": "HKU",
@@ -529,9 +529,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science-surveying",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 31,
+      "codedCourseCount": 31,
+      "courseSourceUrl": "https://foa-media.arch.hku.hk/media/upload/2015/01/BScSurv_syl_from-2024-intake_r4_20250211-Final_clean.pdf"
     },
     {
       "id": "HKU-UG-6028-3",
@@ -567,9 +568,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-urban-studies",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 22,
+      "codedCourseCount": 22,
+      "courseSourceUrl": "https://foa-media.arch.hku.hk/media/upload/2015/02/BAUS-Syl-for-2024-intake-and-thereafter_20250206-Final.pdf"
     },
     {
       "id": "HKU-UG-6054-5",
@@ -9046,9 +9048,9 @@ const catalogue = {
       "code": "BACHELOR-OF-SCIENCE-IN-SURVEYING",
       "nameEn": "Bachelor of Science in Surveying",
       "nameZh": "Bachelor of Science in Surveying",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science-surveying"
+      "courseCount": 32,
+      "codedCourseCount": 31,
+      "officialUrl": "https://www.arch.hku.hk/programmes/rec/bachelor-of-science-in-surveying/regulations-syllabus-timetables/"
     },
     {
       "id": "HKU-UG-6028-3-M1",
@@ -9066,9 +9068,9 @@ const catalogue = {
       "code": "BACHELOR-OF-ARTS-IN-URBAN-STUDIES",
       "nameEn": "Bachelor of Arts in Urban Studies",
       "nameZh": "Bachelor of Arts in Urban Studies",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-urban-studies"
+      "courseCount": 23,
+      "codedCourseCount": 22,
+      "officialUrl": "https://www.arch.hku.hk/programmes/upad/bachelor-of-arts-in-urban-studies/regulations-syllabus/"
     },
     {
       "id": "HKU-UG-6054-5-M1",
@@ -15924,12 +15926,12 @@ const catalogue = {
   "courseShardCounts": {
     "CITYU": 1966,
     "CUHK": 131,
-    "HKU": 136,
+    "HKU": 189,
     "HKUST": 121,
     "LINGNAN": 721,
     "POLYU": 166
   },
-  "codedCourseCount": 3241
+  "codedCourseCount": 3294
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
