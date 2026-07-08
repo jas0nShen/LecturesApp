@@ -66,7 +66,7 @@ function parseCsv(text) {
     .map((cells) => Object.fromEntries(headers.map((header, index) => [header, cells[index] || ''])));
 }
 
-function summarizeRows(rows, getProgrammeCode, getProgrammeName, getCourseCode, getTrack = () => '') {
+function summarizeRows(rows, getProgrammeCode, getProgrammeName, getCourseCode, getTrack = () => '', getOfficialUrl = () => '') {
   const groups = new Map();
   rows.forEach((row) => {
     const programmeCode = String(getProgrammeCode(row) || '').trim();
@@ -76,6 +76,7 @@ function summarizeRows(rows, getProgrammeCode, getProgrammeName, getCourseCode, 
       groups.set(key, {
         programmeCode,
         programmeName,
+        officialUrl: String(getOfficialUrl(row) || '').trim(),
         courseRows: []
       });
     }
@@ -97,6 +98,7 @@ function summarizeRows(rows, getProgrammeCode, getProgrammeName, getCourseCode, 
     return {
       programmeCode: programme.programmeCode,
       programmeName: programme.programmeName,
+      officialUrl: programme.officialUrl || '',
       courseRowCount: programme.courseRows.length,
       codedCourseCount: codedCourses.length,
       uniqueCodedCourseCount: uniqueCourseCodes.size,
@@ -106,6 +108,17 @@ function summarizeRows(rows, getProgrammeCode, getProgrammeName, getCourseCode, 
       uncodedCourseRowCount: uncodedCourses.length
     };
   });
+
+  const importableProgrammes = programmeRows
+    .filter((row) => row.importableCodedCourseCount > 0)
+    .map((row) => ({
+      programmeCode: row.programmeCode,
+      programmeName: row.programmeName,
+      officialUrl: row.officialUrl,
+      codedCourseCount: row.codedCourseCount,
+      importableCodedCourseCount: row.importableCodedCourseCount,
+      duplicateWithinTrackRowCount: row.duplicateWithinTrackRowCount
+    }));
 
   return {
     programmeRows,
@@ -118,7 +131,8 @@ function summarizeRows(rows, getProgrammeCode, getProgrammeName, getCourseCode, 
     duplicateWithinTrackRowCount: programmeRows.reduce((sum, row) => sum + row.duplicateWithinTrackRowCount, 0),
     uncodedCourseRowCount: programmeRows.reduce((sum, row) => sum + row.uncodedCourseRowCount, 0),
     programmeWithCodedCoursesCount: programmeRows.filter((row) => row.codedCourseCount > 0).length,
-    programmeSummaryOnlyCount: programmeRows.filter((row) => row.codedCourseCount === 0 && row.courseRowCount > 0).length
+    programmeSummaryOnlyCount: programmeRows.filter((row) => row.codedCourseCount === 0 && row.courseRowCount > 0).length,
+    importableProgrammes
   };
 }
 
@@ -132,7 +146,8 @@ function summarizeSourceFilePath(filePath) {
       (row) => row.programme_code || row.programmeCode || row.jupasCode || row['Programme Code'],
       (row) => row.programme || row.programme_name || row.programmeName || row['Programme'],
       (row) => row.subject_code || row.code || row.courseCode || row['Subject Code'],
-      (row) => row.track_or_award || row.track || row.majorName || row['Track']
+      (row) => row.track_or_award || row.track || row.majorName || row['Track'],
+      (row) => row.official_url || row.officialUrl || row.source_url || row.sourceUrl || row['Official URL']
     );
     return {
       file: path.basename(filePath),
@@ -175,6 +190,7 @@ function summarizeSourceFile(source, sourceDir) {
     return {
       programmeCode: programme.programme_code || programme.jupas_code || '',
       programmeName: programme.programme_name || '',
+      officialUrl: programme.official_url || programme.source_url || '',
       courseRowCount: courses.length,
       codedCourseCount: codedCourses.length,
       uniqueCodedCourseCount: uniqueCourseCodes.size,
@@ -186,6 +202,16 @@ function summarizeSourceFile(source, sourceDir) {
   });
   const programmeWithCodedCoursesCount = rows.filter((row) => row.codedCourseCount > 0).length;
   const programmeSummaryOnlyCount = rows.filter((row) => row.codedCourseCount === 0 && row.courseRowCount > 0).length;
+  const importableProgrammes = rows
+    .filter((row) => row.importableCodedCourseCount > 0)
+    .map((row) => ({
+      programmeCode: row.programmeCode,
+      programmeName: row.programmeName,
+      officialUrl: row.officialUrl,
+      codedCourseCount: row.codedCourseCount,
+      importableCodedCourseCount: row.importableCodedCourseCount,
+      duplicateWithinTrackRowCount: row.duplicateWithinTrackRowCount
+    }));
 
   return {
     code: source.code,
@@ -200,13 +226,17 @@ function summarizeSourceFile(source, sourceDir) {
     uncodedCourseRowCount: rows.reduce((sum, row) => sum + row.uncodedCourseRowCount, 0),
     programmeWithCodedCoursesCount,
     programmeSummaryOnlyCount,
+    importableProgrammes,
     importReady: programmeWithCodedCoursesCount > 0
   };
 }
 
-function summarizeSources(sourceDir) {
+function summarizeSources(sourceDir, options = {}) {
   validateSourceDir(sourceDir);
-  const schools = SOURCES.map((source) => summarizeSourceFile(source, sourceDir));
+  const schools = filterSchools(
+    SOURCES.map((source) => summarizeSourceFile(source, sourceDir)),
+    options.school
+  );
   return {
     sourceDir,
     schools,
@@ -295,6 +325,15 @@ function printReport(summary) {
       `${school.programmeSummaryOnlyCount} summary-only programmes`,
       school.importReady ? 'import-ready' : 'needs course-code source'
     ].join(' · '));
+    (school.importableProgrammes || []).slice(0, 5).forEach((programme) => {
+      console.log([
+        '  importable',
+        programme.programmeCode,
+        programme.programmeName,
+        `${programme.importableCodedCourseCount} importable`,
+        programme.officialUrl
+      ].filter(Boolean).join(' · '));
+    });
   });
   console.log([
     'TOTAL',
@@ -391,7 +430,7 @@ function main() {
     ? null
     : options.sourceFile
       ? summarizeSourceFilePath(options.sourceFile)
-      : summarizeSources(options.sourceDir);
+      : summarizeSources(options.sourceDir, options);
   const generatedSummary = summarizeGeneratedCatalogue(options);
 
   if (options.json) {

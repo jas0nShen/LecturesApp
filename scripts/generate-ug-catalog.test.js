@@ -132,12 +132,12 @@ test('UG source coverage report can diagnose a standalone CSV source file', () =
   const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'ug-catalog-csv-'));
   const csvPath = path.join(tempDir, 'standalone.csv');
   fs.writeFileSync(csvPath, [
-    'programme_code,programme,track_or_award,year_level,subject_code,subject_title_or_description',
-    'JSTEST,Bachelor of CSV Testing,Testing,Year 1,CSV1001,CSV Fundamentals',
-    'JSTEST,Bachelor of CSV Testing,Testing,Year 1,CSV1001,CSV Fundamentals duplicate',
-    'JSTEST,Bachelor of CSV Testing,Quality Assurance,Year 1,CSV1001,CSV Fundamentals in another track',
-    'JSTEST,Bachelor of CSV Testing,Testing,Year 2,CSV2001,Advanced CSV',
-    'JSINFO,Bachelor of Summary Only,Summary,Year 1,,Summary text only'
+    'programme_code,programme,official_url,track_or_award,year_level,subject_code,subject_title_or_description',
+    'JSTEST,Bachelor of CSV Testing,https://example.test/csv-testing,Testing,Year 1,CSV1001,CSV Fundamentals',
+    'JSTEST,Bachelor of CSV Testing,https://example.test/csv-testing,Testing,Year 1,CSV1001,CSV Fundamentals duplicate',
+    'JSTEST,Bachelor of CSV Testing,https://example.test/csv-testing,Quality Assurance,Year 1,CSV1001,CSV Fundamentals in another track',
+    'JSTEST,Bachelor of CSV Testing,https://example.test/csv-testing,Testing,Year 2,CSV2001,Advanced CSV',
+    'JSINFO,Bachelor of Summary Only,https://example.test/summary,Summary,Year 1,,Summary text only'
   ].join('\n'));
 
   const args = parseArgs(['--source-file', csvPath, '--json']);
@@ -156,6 +156,7 @@ test('UG source coverage report can diagnose a standalone CSV source file', () =
   assert.equal(summary.duplicateWithinTrackRowCount, 1);
   assert.equal(summary.programmeWithCodedCoursesCount, 1);
   assert.equal(summary.programmeSummaryOnlyCount, 1);
+  assert.equal(summary.importableProgrammes[0].officialUrl, 'https://example.test/csv-testing');
   assert.equal(summary.importReady, true);
 });
 
@@ -205,8 +206,24 @@ test('UG source coverage report distinguishes raw coded rows from importable tra
   assert.equal(polyu.codedCourseCount, 172);
   assert.equal(polyu.importableCodedCourseCount, 166);
   assert.equal(polyu.duplicateWithinTrackRowCount, 6);
+  assert.equal(polyu.importableProgrammes.length, 1);
+  assert.equal(polyu.importableProgrammes[0].programmeCode, 'JS3868');
+  assert.match(polyu.importableProgrammes[0].officialUrl, /polyu\.edu\.hk\/study\/ug\/jupas\/2026\/js3868/);
   assert.equal(polyu.importReady, true);
   assert.equal(summary.totals.importableCodedCourseCount, 166);
+});
+
+test('UG source coverage report can focus raw source diagnostics by school', () => {
+  const summary = summarizeSources('/Users/shenjingsong/Documents/Codex/2026-07-06/pdf/outputs', { school: 'POLYU' });
+
+  assert.deepEqual(summary.schools.map((school) => school.code), ['POLYU']);
+  assert.equal(summary.totals.programmeCount, 46);
+  assert.equal(summary.totals.codedCourseCount, 172);
+  assert.equal(summary.totals.importableCodedCourseCount, 166);
+  assert.equal(
+    summary.schools[0].importableProgrammes[0].programmeName,
+    'Bachelor of Science (Honours) Scheme in Computing and AI (Computer Science / Enterprise Information Systems)'
+  );
 });
 
 test('UG source coverage report includes generated catalogue supplement coverage', () => {
