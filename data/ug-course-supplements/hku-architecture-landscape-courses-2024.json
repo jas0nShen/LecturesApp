@@ -1,0 +1,51 @@
+{
+  "provider": "HKU Faculty of Architecture BA(LS) syllabus",
+  "academicYear": "2024-25 and thereafter",
+  "sourceUrl": "https://www.arch.hku.hk/programmes/dla/bachelor-of-arts-in-landscape-studies/regulations-syllabus/",
+  "officialUrl": "https://www.arch.hku.hk/programmes/dla/bachelor-of-arts-in-landscape-studies/",
+  "supplements": [
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6028",
+      "programmeName": "Bachelor of Arts in Landscape Studies",
+      "majorName": "Bachelor of Arts in Landscape Studies",
+      "sourceUrl": "https://foa-media.arch.hku.hk/media/upload/2015/02/BALS_Syl-for-2024-intake-and-thereafter.pdf",
+      "officialUrl": "https://www.arch.hku.hk/programmes/dla/bachelor-of-arts-in-landscape-studies/regulations-syllabus/",
+      "courses": [
+        { "code": "CAES1000", "title": "Core University English", "credits": 6, "recommendedYear": 1, "group": "language course" },
+        { "code": "CARC9001", "title": "Practical Chinese for Architecture and Landscape Students", "credits": 6, "recommendedYear": 1, "group": "language course" },
+        { "code": "AFIC1003", "title": "On Agendas", "credits": 6, "recommendedYear": 1, "group": "faculty interdisciplinary course" },
+        { "code": "AFIC1004", "title": "On Methods", "credits": 6, "recommendedYear": 1, "group": "faculty interdisciplinary course" },
+        { "code": "ARCH1029", "title": "History and Theory 1: Introduction to Landscape Design", "credits": 6, "recommendedYear": 1, "group": "landscape history and theory" },
+        { "code": "ARCH1102", "title": "Landscape Technology 1: Plants & Planting Design 1", "credits": 6, "recommendedYear": 1, "group": "landscape technology and science" },
+        { "code": "ARCH1103", "title": "Landscape Representation 1: Conceptual and Abstract Representation", "credits": 6, "recommendedYear": 1, "group": "visual communications" },
+        { "code": "ARCH1104", "title": "Landscape Representation 2: Operations and Fabrication", "credits": 6, "recommendedYear": 1, "group": "visual communications" },
+        { "code": "CAES9121", "title": "Communication Course for Architecture Students", "credits": 6, "recommendedYear": 2, "group": "language course" },
+        { "code": "ARCH2113", "title": "Landscape Design Studio 1", "credits": 12, "recommendedYear": 2, "group": "landscape design studio" },
+        { "code": "ARCH2202", "title": "Landscape Design Studio 2", "credits": 12, "recommendedYear": 2, "group": "landscape design studio" },
+        { "code": "ARCH2106", "title": "History and Theory 2: Theories and Practices of Contemporary Landscape Architecture", "credits": 6, "recommendedYear": 2, "group": "landscape history and theory" },
+        { "code": "ARCH2203", "title": "History and Theory 3: Environment, Community & Design", "credits": 6, "recommendedYear": 2, "group": "landscape history and theory" },
+        { "code": "ARCH2108", "title": "Landscape Representation 3: Forms and Methods", "credits": 6, "recommendedYear": 2, "group": "visual communications" },
+        { "code": "ARCH3203", "title": "Landscape Design Studio 3", "credits": 12, "recommendedYear": 3, "group": "landscape design studio" },
+        { "code": "ARCH3204", "title": "Landscape Design Studio 4", "credits": 12, "recommendedYear": 3, "group": "landscape design studio" },
+        { "code": "ARCH3116", "title": "Landscape Technology 2: Ecology and Sustainability", "credits": 6, "recommendedYear": 3, "group": "landscape technology and science" },
+        { "code": "ARCH3102", "title": "Landscape Technology 3: Technology in Landscape Architecture", "credits": 6, "recommendedYear": 3, "group": "landscape technology and science" },
+        { "code": "ARCH3115", "title": "Landscape Representation 4: Systems and Simulations", "credits": 6, "recommendedYear": 3, "group": "visual communications" },
+        { "code": "ARCH3205", "title": "History and Theory 4: Strategic Landscape Planning", "credits": 6, "recommendedYear": 3, "group": "landscape history and theory" },
+        { "code": "ARCH4201", "title": "Landscape Design Studio 5", "credits": 12, "recommendedYear": 4, "group": "capstone course" },
+        { "code": "ARCH4202", "title": "Landscape Design Studio 6", "credits": 12, "recommendedYear": 4, "group": "capstone course" },
+        { "code": "ARCH4702", "title": "Landscape Technology 4: Plants & Planting Design 2", "credits": 6, "recommendedYear": 4, "group": "landscape technology and science" },
+        { "code": "ARCH4708", "title": "Advanced Topics in Landscape Technology", "credits": 6, "recommendedYear": 4, "group": "elective course" },
+        { "code": "ARCH4709", "title": "Advanced Topics in Landscape Representation", "credits": 6, "recommendedYear": 4, "group": "elective course" },
+        { "code": "ARCH4710", "title": "Landscape Practicum", "credits": 6, "recommendedYear": 4, "group": "elective course" },
+        { "code": "ARCH4711", "title": "Independent Study in Landscape Studies", "credits": 6, "recommendedYear": 4, "group": "elective course" },
+        { "code": "ARCH4712", "title": "Advanced Topics in Landscape History", "credits": 6, "recommendedYear": 4, "group": "elective course" },
+        { "code": "ARCH4713", "title": "Advanced Topics in Landscape Theory", "credits": 6, "recommendedYear": 4, "group": "elective course" },
+        { "code": "ARCH4714", "title": "Advanced Topics in Digital Media and Fabrication", "credits": 6, "recommendedYear": 4, "group": "elective course" },
+        { "code": "ARCH4715", "title": "Special Topics in Sustainability", "credits": 6, "recommendedYear": 4, "group": "elective course" },
+        { "code": "ARCH4716", "title": "Advanced Topics in Planting Design", "credits": 6, "recommendedYear": 4, "group": "elective course" },
+        { "code": "ARCH4717", "title": "Advanced Topics in Landscape Ecology", "credits": 6, "recommendedYear": 4, "group": "elective course" }
+      ]
+    }
+  ]
+}

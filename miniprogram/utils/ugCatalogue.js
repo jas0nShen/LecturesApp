@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-08T09:39:40.937Z",
+  "generatedAt": "2026-07-08T09:47:09.143Z",
   "universities": [
     {
       "id": "HKU",
@@ -549,9 +549,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-landscape-studies",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 33,
+      "codedCourseCount": 33,
+      "courseSourceUrl": "https://foa-media.arch.hku.hk/media/upload/2015/02/BALS_Syl-for-2024-intake-and-thereafter.pdf"
     },
     {
       "id": "HKU-UG-6042-4",
@@ -9058,9 +9059,9 @@ const catalogue = {
       "code": "BACHELOR-OF-ARTS-IN-LANDSCAPE-STUDIES",
       "nameEn": "Bachelor of Arts in Landscape Studies",
       "nameZh": "Bachelor of Arts in Landscape Studies",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-landscape-studies"
+      "courseCount": 34,
+      "codedCourseCount": 33,
+      "officialUrl": "https://www.arch.hku.hk/programmes/dla/bachelor-of-arts-in-landscape-studies/regulations-syllabus/"
     },
     {
       "id": "HKU-UG-6042-4-M1",
@@ -15926,12 +15927,12 @@ const catalogue = {
   "courseShardCounts": {
     "CITYU": 1966,
     "CUHK": 131,
-    "HKU": 189,
+    "HKU": 222,
     "HKUST": 121,
     "LINGNAN": 721,
     "POLYU": 166
   },
-  "codedCourseCount": 3294
+  "codedCourseCount": 3327
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
