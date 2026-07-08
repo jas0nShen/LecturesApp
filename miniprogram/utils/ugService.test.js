@@ -11,9 +11,9 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert(summary.programmeCount >= 445);
   assert(summary.majorCount >= 690);
   assert.equal(summary.requirementCount, 4);
-  assert(summary.courseCount >= 3600);
+  assert(summary.courseCount >= 3700);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 3617);
+  assert.equal(summary.codedCourseCount, 3742);
   assert.match(summary.generatedAt, /^2026-07-08T/);
   assert.equal(summary.generatedDate, '2026-07-08');
 });
@@ -45,7 +45,7 @@ test('UG per-school coverage stays visible for setup validation', () => {
   }));
 
   assert.deepEqual(coverage, {
-    HKU: { programmeCount: 137, majorCount: 137, codedCourseCount: 512 },
+    HKU: { programmeCount: 137, majorCount: 137, codedCourseCount: 637 },
     CUHK: { programmeCount: 84, majorCount: 84, codedCourseCount: 131 },
     HKUST: { programmeCount: 50, majorCount: 64, codedCourseCount: 121 },
     POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 166 },
@@ -66,10 +66,10 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert.equal(coverage.length, 8);
   assert.equal(hku.programmeCount, 136);
   assert.equal(hku.majorCount, 136);
-  assert.equal(hku.programmeWithCoursesCount, 10);
-  assert.equal(hku.pendingProgrammeCount, 126);
-  assert.equal(hku.coveragePercent, 7);
-  assert.equal(hku.codedCourseCount, 512);
+  assert.equal(hku.programmeWithCoursesCount, 11);
+  assert.equal(hku.pendingProgrammeCount, 125);
+  assert.equal(hku.coveragePercent, 8);
+  assert.equal(hku.codedCourseCount, 637);
   assert.equal(hku.generatedDate, '2026-07-08');
   assert.equal(hku.updatedLabel, '更新于 2026-07-08');
   assert.equal(hku.badge, 'COURSES');
@@ -149,7 +149,7 @@ test('UG course and major search support the next import workflow', () => {
 test('imported UG programme profiles preserve source status without faking course rules', () => {
   const hku = ugService.listUniversities().find((item) => item.code === 'HKU');
   const programmes = ugService.listProgrammes({ universityId: hku.id, degreeLevel: 'undergraduate' });
-  const hkuArts = programmes.find((programme) => programme.code === '6054' && programme.nameEn.includes('English Studies'));
+  const hkuArts = programmes.find((programme) => programme.code === '6054' && programme.nameEn.includes('Gender Studies'));
   const major = ugService.listMajors(hkuArts.id)[0];
   const profile = ugService.getMajorProfile(hkuArts.id, major.id, '2026');
 
@@ -844,4 +844,23 @@ test('HKU Comparative Literature exposes official BA syllabus courses', () => {
   assert(courses.some((course) => course.courseCode === 'CLIT3020' && course.courseType === 'capstone'));
   assert(ugService.listMajorCourses(comparativeLiterature.id, major.id, { keyword: 'Cantopop' }).some((course) => course.courseCode === 'HKGS2008'));
   assert(ugService.listMajorCourses(comparativeLiterature.id, major.id, { keyword: 'World heritage' }).some((course) => course.courseCode === 'SINO2008'));
+});
+
+test('HKU English Studies exposes official BA syllabus courses', () => {
+  const hku = ugService.listUniversities().find((item) => item.code === 'HKU');
+  const programmes = ugService.listProgrammes({ universityId: hku.id, degreeLevel: 'undergraduate' });
+  const englishStudies = programmes.find((programme) => programme.code === '6054' && programme.nameEn.includes('English Studies'));
+  const major = ugService.listMajors(englishStudies.id).find((item) => item.nameEn === 'English Studies');
+  const profile = ugService.getMajorProfile(englishStudies.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(englishStudies.id, major.id);
+
+  assert.equal(englishStudies.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 125);
+  assert.equal(courses.length, 125);
+  ['ENGL1011', 'ENGL2079', 'ENGL3041', 'ENGL2187'].forEach((courseCode) => {
+    assert(courses.some((course) => course.courseCode === courseCode));
+  });
+  assert(courses.some((course) => course.courseCode === 'ENGL3041' && course.courseType === 'capstone'));
+  assert(ugService.listMajorCourses(englishStudies.id, major.id, { keyword: 'Shakespeare' }).some((course) => course.courseCode === 'ENGL2079'));
+  assert(ugService.listMajorCourses(englishStudies.id, major.id, { keyword: 'World Englishes' }).some((course) => course.courseCode === 'ENGL1042'));
 });
