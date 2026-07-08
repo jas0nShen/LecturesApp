@@ -72,9 +72,15 @@
         <view class="suggestion-kicker">NEXT CORE COURSES</view>
         <view class="suggestion-title">未安排的核心课</view>
       </view>
-      <view class="suggestion-count">{{suggestions.length}}</view>
+      <view class="suggestion-count">{{coreGapSummary.courseCount}}</view>
     </view>
-    <view class="suggestion-copy">根据当前已修记录和 Study Plan，仅提示已开放课程资料中的 core 课程；正式毕业要求仍以学校审核为准。</view>
+    <view class="suggestion-copy">根据当前已修记录和 Study Plan，还有 {{coreGapSummary.courseCount}} 门 core 未安排，共 {{coreGapSummary.credits}} credits；正式毕业要求仍以学校审核为准。</view>
+    <view wx:if="{{coreGapSummary.groups.length}}" class="gap-groups">
+      <view wx:for="{{coreGapSummary.groups}}" wx:key="yearLabel" class="gap-group">
+        <view class="gap-year">{{item.yearLabel}}</view>
+        <view class="gap-meta">{{item.courseCount}} 门 · {{item.credits}} credits</view>
+      </view>
+    </view>
     <view wx:for="{{suggestions}}" wx:key="courseCode" class="suggestion-row" data-code="{{item.courseCode}}" bindtap="planSuggestion">
       <view>
         <view class="suggestion-code">{{item.courseCode}} · Year {{item.recommendedYear || '-'}}</view>

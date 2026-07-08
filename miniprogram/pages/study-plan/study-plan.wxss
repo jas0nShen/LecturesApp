@@ -167,6 +167,28 @@
   line-height: 1.5;
   margin-top: 12rpx;
 }
+.gap-groups {
+  display: grid;
+  gap: 8rpx;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 16rpx;
+}
+.gap-group {
+  background: #fbfcfa;
+  border: 1rpx solid #d8e5df;
+  border-radius: 12rpx;
+  padding: 12rpx 14rpx;
+}
+.gap-year {
+  color: #17352c;
+  font-size: 20rpx;
+  font-weight: 850;
+}
+.gap-meta {
+  color: #70837a;
+  font-size: 18rpx;
+  margin-top: 4rpx;
+}
 .suggestion-row {
   align-items: center;
   background: #fbfcfa;

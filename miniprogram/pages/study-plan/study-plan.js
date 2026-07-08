@@ -4,6 +4,11 @@ Page({
   data: {
     groups: [],
     suggestions: [],
+    coreGapSummary: {
+      courseCount: 0,
+      credits: 0,
+      groups: []
+    },
     review: {
       courseCount: 0,
       totalCredits: 0,
@@ -23,6 +28,7 @@ Page({
     const courses = service.getStudyPlanCourses();
     const review = service.analyzeStudyPlan();
     const suggestions = service.getStudyPlanSuggestions(5);
+    const coreGapSummary = service.getStudyPlanCoreGapSummary();
     const groups = [1, 2, 3, 4].map((year) => {
       const yearCourses = courses
         .filter((item) => item.plannedYear === year)
@@ -46,6 +52,7 @@ Page({
     this.setData({
       groups,
       suggestions,
+      coreGapSummary,
       review: {
         ...review,
         completedCount: courses.filter((item) => item.completed).length,

@@ -574,6 +574,10 @@ function extractRecommendedYear(offering) {
 }
 
 function getStudyPlanSuggestions(limit = 5) {
+  return getStudyPlanCoreGaps().slice(0, Number(limit) || 5);
+}
+
+function getStudyPlanCoreGaps() {
   const plannedCodes = new Set(getStudyPlanItems().map((item) => item.courseCode));
   const completedCodes = new Set(getCompletedOfferingCodes());
   return hkuOfferings.courses
@@ -594,8 +598,27 @@ function getStudyPlanSuggestions(limit = 5) {
     .sort((left, right) => (
       (left.recommendedYear || 99) - (right.recommendedYear || 99)
       || left.courseCode.localeCompare(right.courseCode)
-    ))
-    .slice(0, Number(limit) || 5);
+    ));
+}
+
+function getStudyPlanCoreGapSummary() {
+  const gaps = getStudyPlanCoreGaps();
+  const groups = [1, 2, 3, 4, 0].map((year) => {
+    const courses = gaps.filter((course) => (course.recommendedYear || 0) === year);
+    return {
+      year,
+      yearLabel: year ? `Year ${year}` : 'Unspecified',
+      courseCount: courses.length,
+      credits: courses.reduce((sum, course) => sum + course.credits, 0),
+      courses
+    };
+  }).filter((group) => group.courseCount > 0);
+
+  return {
+    courseCount: gaps.length,
+    credits: gaps.reduce((sum, course) => sum + course.credits, 0),
+    groups
+  };
 }
 
 function resolveProfileLabel(profile, key, resolver) {
@@ -676,6 +699,13 @@ function formatStudyPlanText(now = new Date()) {
     lines.push('Categories:');
     review.categoryStats.forEach((category) => {
       lines.push(`- ${category.label}: ${category.courseCount} courses · ${category.credits} credits`);
+    });
+  }
+  const coreGapSummary = getStudyPlanCoreGapSummary();
+  if (coreGapSummary.courseCount) {
+    lines.push('', `Remaining Core: ${coreGapSummary.courseCount} courses · ${coreGapSummary.credits} credits`);
+    coreGapSummary.groups.forEach((group) => {
+      lines.push(`- ${group.yearLabel}: ${group.courseCount} courses · ${group.credits} credits`);
     });
   }
   if (review.notices.length) {
@@ -1041,6 +1071,8 @@ module.exports = {
   getPrerequisiteCourseStatus,
   getRecentlyViewedOfferings,
   getStudyPlanCourses,
+  getStudyPlanCoreGapSummary,
+  getStudyPlanCoreGaps,
   getStudyPlanItem,
   getStudyPlanItems,
   getStudyPlanSuggestions,

@@ -249,13 +249,34 @@ test('study plan suggestions surface unplanned unfinished core courses', () => {
   service.toggleOfferingCompleted('COMP1110');
 
   const suggestions = service.getStudyPlanSuggestions(4);
+  const summary = service.getStudyPlanCoreGapSummary();
 
   assert.equal(suggestions.length, 4);
+  assert(summary.courseCount > suggestions.length);
+  assert(summary.credits > 0);
+  assert(summary.groups.some((group) => group.year === 2 && group.courseCount > 0));
   assert(!suggestions.some((item) => item.courseCode === 'COMP1117'));
   assert(!suggestions.some((item) => item.courseCode === 'COMP1110'));
   assert(suggestions[0].recommendedYear <= suggestions[1].recommendedYear);
   assert(suggestions.every((item) => item.categories.some((category) => category.includes('Core'))));
   assert(suggestions.every((item) => item.credits > 0));
+});
+
+test('study plan core gap summary groups remaining core courses by recommended year', () => {
+  service.saveStudyPlanItem('COMP1117', 1, '1');
+  service.saveStudyPlanItem('COMP2113', 2, '1');
+  service.toggleOfferingCompleted('COMP1110');
+
+  const gaps = service.getStudyPlanCoreGaps();
+  const summary = service.getStudyPlanCoreGapSummary();
+
+  assert(!gaps.some((course) => course.courseCode === 'COMP1117'));
+  assert(!gaps.some((course) => course.courseCode === 'COMP2113'));
+  assert(!gaps.some((course) => course.courseCode === 'COMP1110'));
+  assert.equal(summary.courseCount, gaps.length);
+  assert.equal(summary.credits, gaps.reduce((sum, course) => sum + course.credits, 0));
+  assert(summary.groups.every((group) => group.courseCount === group.courses.length));
+  assert(summary.groups.some((group) => group.yearLabel === 'Year 2'));
 });
 
 test('study plan analysis flags unavailable terms, missing corequisites and heavy semesters', () => {
@@ -321,6 +342,8 @@ test('study plan can be formatted as grouped shareable text with checks', () => 
   assert(text.includes('Total: 2 courses · 12 credits'));
   assert(text.includes('Categories:'));
   assert(text.includes('- Core: 2 courses · 12 credits'));
+  assert(text.includes('Remaining Core:'));
+  assert(text.includes('- Year 2:'));
   assert(text.includes('Plan checks:'));
   assert(!text.includes('courseNotes'));
   assert(!text.includes('Confirm official timetable, prerequisites and degree requirements with HKU.'));
