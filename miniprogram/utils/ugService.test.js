@@ -11,9 +11,9 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert(summary.programmeCount >= 445);
   assert(summary.majorCount >= 690);
   assert.equal(summary.requirementCount, 4);
-  assert(summary.courseCount >= 3358);
+  assert(summary.courseCount >= 3420);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 3421);
+  assert.equal(summary.codedCourseCount, 3483);
   assert.match(summary.generatedAt, /^2026-07-08T/);
   assert.equal(summary.generatedDate, '2026-07-08');
 });
@@ -45,7 +45,7 @@ test('UG per-school coverage stays visible for setup validation', () => {
   }));
 
   assert.deepEqual(coverage, {
-    HKU: { programmeCount: 137, majorCount: 137, codedCourseCount: 316 },
+    HKU: { programmeCount: 137, majorCount: 137, codedCourseCount: 378 },
     CUHK: { programmeCount: 84, majorCount: 84, codedCourseCount: 131 },
     HKUST: { programmeCount: 50, majorCount: 64, codedCourseCount: 121 },
     POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 166 },
@@ -66,10 +66,10 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert.equal(coverage.length, 8);
   assert.equal(hku.programmeCount, 136);
   assert.equal(hku.majorCount, 136);
-  assert.equal(hku.programmeWithCoursesCount, 7);
-  assert.equal(hku.pendingProgrammeCount, 129);
-  assert.equal(hku.coveragePercent, 5);
-  assert.equal(hku.codedCourseCount, 316);
+  assert.equal(hku.programmeWithCoursesCount, 8);
+  assert.equal(hku.pendingProgrammeCount, 128);
+  assert.equal(hku.coveragePercent, 6);
+  assert.equal(hku.codedCourseCount, 378);
   assert.equal(hku.generatedDate, '2026-07-08');
   assert.equal(hku.updatedLabel, '更新于 2026-07-08');
   assert.equal(hku.badge, 'COURSES');
@@ -149,7 +149,7 @@ test('UG course and major search support the next import workflow', () => {
 test('imported UG programme profiles preserve source status without faking course rules', () => {
   const hku = ugService.listUniversities().find((item) => item.code === 'HKU');
   const programmes = ugService.listProgrammes({ universityId: hku.id, degreeLevel: 'undergraduate' });
-  const hkuArts = programmes.find((programme) => programme.code === '6054' && programme.nameEn.includes('Chinese History and Culture'));
+  const hkuArts = programmes.find((programme) => programme.code === '6054' && programme.nameEn.includes('Chinese Language and Literature'));
   const major = ugService.listMajors(hkuArts.id)[0];
   const profile = ugService.getMajorProfile(hkuArts.id, major.id, '2026');
 
@@ -789,4 +789,22 @@ test('HKU Art History exposes official BA syllabus courses', () => {
   });
   assert(courses.some((course) => course.courseCode === 'ARTH4005' && course.courseType === 'capstone'));
   assert(ugService.listMajorCourses(artHistory.id, major.id, { keyword: 'museum' }).some((course) => course.courseCode === 'ARTH2056'));
+});
+
+test('HKU Chinese History and Culture exposes official BA syllabus courses', () => {
+  const hku = ugService.listUniversities().find((item) => item.code === 'HKU');
+  const programmes = ugService.listProgrammes({ universityId: hku.id, degreeLevel: 'undergraduate' });
+  const chineseHistory = programmes.find((programme) => programme.code === '6054' && programme.nameEn.includes('Chinese History and Culture'));
+  const major = ugService.listMajors(chineseHistory.id).find((item) => item.nameEn === 'Chinese History and Culture');
+  const profile = ugService.getMajorProfile(chineseHistory.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(chineseHistory.id, major.id);
+
+  assert.equal(chineseHistory.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 62);
+  assert.equal(courses.length, 62);
+  ['CHIN1201', 'CHIN3221', 'HIST2018'].forEach((courseCode) => {
+    assert(courses.some((course) => course.courseCode === courseCode));
+  });
+  assert(courses.some((course) => course.courseCode === 'CHIN3221' && course.courseType === 'capstone'));
+  assert(ugService.listMajorCourses(chineseHistory.id, major.id, { keyword: 'Silk Road' }).some((course) => course.courseCode === 'CHIN2276'));
 });
