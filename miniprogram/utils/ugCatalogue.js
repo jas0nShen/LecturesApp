@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-08T14:10:56.096Z",
+  "generatedAt": "2026-07-08T14:20:28.028Z",
   "universities": [
     {
       "id": "HKU",
@@ -729,9 +729,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 189,
+      "codedCourseCount": 189,
+      "courseSourceUrl": "https://arts.hku.hk/wp-content/uploads/2026/02/BA_syl_2025-26.pdf"
     },
     {
       "id": "HKU-UG-6054-13",
@@ -9156,9 +9157,9 @@ const catalogue = {
       "code": "GLOBAL-AND-AREA-STUDIES",
       "nameEn": "Global and Area Studies",
       "nameZh": "Global and Area Studies",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts"
+      "courseCount": 190,
+      "codedCourseCount": 189,
+      "officialUrl": "https://arts.hku.hk/current-students/undergraduate/regulations/"
     },
     {
       "id": "HKU-UG-6054-13-M1",
@@ -15934,12 +15935,12 @@ const catalogue = {
   "courseShardCounts": {
     "CITYU": 1966,
     "CUHK": 131,
-    "HKU": 766,
+    "HKU": 955,
     "HKUST": 121,
     "LINGNAN": 721,
     "POLYU": 166
   },
-  "codedCourseCount": 3871
+  "codedCourseCount": 4060
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
