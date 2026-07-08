@@ -17,6 +17,7 @@ function parseArgs(argv = process.argv.slice(2)) {
     missingLimit: missingLimitIndex === -1 ? 20 : Number(argv[missingLimitIndex + 1]),
     missingOnly: argv.includes('--missing-only'),
     importableOnly: argv.includes('--importable-only'),
+    needsImportOnly: argv.includes('--needs-import-only'),
     json: argv.includes('--json')
   };
 }
@@ -351,11 +352,22 @@ function listImportableProgrammes(summary, generatedSummary = null) {
   ));
 }
 
-function printImportableProgrammes(summary, generatedSummary = null) {
-  const importableProgrammes = listImportableProgrammes(summary, generatedSummary);
-  console.log(`Importable UG source programmes: ${summary.sourceDir || summary.filePath}`);
+function filterImportableProgrammes(programmes, options = {}) {
+  return options.needsImportOnly
+    ? programmes.filter((programme) => programme.importStatus === 'needs-import')
+    : programmes;
+}
+
+function printImportableProgrammes(summary, generatedSummary = null, options = {}) {
+  const importableProgrammes = filterImportableProgrammes(
+    listImportableProgrammes(summary, generatedSummary),
+    options
+  );
+  console.log(`${options.needsImportOnly ? 'Needs-import' : 'Importable'} UG source programmes: ${summary.sourceDir || summary.filePath}`);
   if (!importableProgrammes.length) {
-    console.log('No importable programme course rows found. Keep index/source only until course-code evidence is available.');
+    console.log(options.needsImportOnly
+      ? 'No needs-import programme course rows found. Existing importable rows are already open, or source files only contain indexes/summaries.'
+      : 'No importable programme course rows found. Keep index/source only until course-code evidence is available.');
     return;
   }
   importableProgrammes.forEach((programme) => {
@@ -374,8 +386,8 @@ function printImportableProgrammes(summary, generatedSummary = null) {
 }
 
 function printReport(summary, options = {}, generatedSummary = null) {
-  if (options.importableOnly) {
-    printImportableProgrammes(summary, generatedSummary);
+  if (options.importableOnly || options.needsImportOnly) {
+    printImportableProgrammes(summary, generatedSummary, options);
     return;
   }
   console.log(`UG source coverage: ${summary.sourceDir || summary.filePath}`);
@@ -492,7 +504,7 @@ function printMissingProgrammes(summary, options = {}) {
 
 function main() {
   const options = parseArgs();
-  const sourceSummary = options.missingOnly && !options.importableOnly
+  const sourceSummary = options.missingOnly && !options.importableOnly && !options.needsImportOnly
     ? null
     : options.sourceFile
       ? summarizeSourceFilePath(options.sourceFile)
@@ -503,19 +515,22 @@ function main() {
     console.log(JSON.stringify({
       source: sourceSummary,
       generated: generatedSummary,
-      ...(options.importableOnly && sourceSummary ? {
-        importableProgrammes: listImportableProgrammes(sourceSummary, generatedSummary)
+      ...((options.importableOnly || options.needsImportOnly) && sourceSummary ? {
+        importableProgrammes: filterImportableProgrammes(
+          listImportableProgrammes(sourceSummary, generatedSummary),
+          options
+        )
       } : {})
     }, null, 2));
     return;
   }
 
   if (sourceSummary) {
-    if (options.sourceFile && options.importableOnly) printImportableProgrammes(sourceSummary, generatedSummary);
+    if (options.sourceFile && (options.importableOnly || options.needsImportOnly)) printImportableProgrammes(sourceSummary, generatedSummary, options);
     else if (options.sourceFile) printSingleSourceReport(sourceSummary);
     else printReport(sourceSummary, options, generatedSummary);
   }
-  if (!options.importableOnly) printGeneratedCatalogueReport(generatedSummary, options);
+  if (!options.importableOnly && !options.needsImportOnly) printGeneratedCatalogueReport(generatedSummary, options);
 }
 
 if (require.main === module) {
@@ -530,6 +545,7 @@ module.exports = {
   summarizeSources,
   summarizeGeneratedCatalogue,
   filterSchools,
+  filterImportableProgrammes,
   getGeneratedCourseProgrammeMap,
   listImportableProgrammes,
   printGeneratedCatalogueReport

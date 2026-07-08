@@ -10,6 +10,7 @@ const {
   validateSourceDir
 } = require('./generate-ug-catalog');
 const {
+  filterImportableProgrammes,
   filterSchools,
   listImportableProgrammes,
   parseArgs,
@@ -232,6 +233,20 @@ test('UG source coverage report can focus raw source diagnostics by school', () 
   );
   assert.equal(importable[0].importStatus, 'already-open');
   assert.equal(importable[0].generatedCodedCourseCount, 166);
+});
+
+test('UG source coverage report can list only not-yet-imported source programmes', () => {
+  const args = parseArgs(['--school', 'polyu', '--needs-import-only']);
+  const sourceSummary = summarizeSources('/Users/shenjingsong/Documents/Codex/2026-07-06/pdf/outputs', args);
+  const generatedSummary = summarizeGeneratedCatalogue(args);
+  const importable = listImportableProgrammes(sourceSummary, generatedSummary);
+  const needsImport = filterImportableProgrammes(importable, args);
+
+  assert.equal(args.needsImportOnly, true);
+  assert.equal(args.importableOnly, false);
+  assert.equal(importable.length, 1);
+  assert.equal(importable[0].importStatus, 'already-open');
+  assert.deepEqual(needsImport, []);
 });
 
 test('UG source coverage report includes generated catalogue supplement coverage', () => {
