@@ -218,6 +218,7 @@ function summarizeSourceFile(source, sourceDir) {
   return {
     code: source.code,
     file: source.file,
+    programmeRows: rows,
     programmeCount: programmes.length,
     courseRowCount: rows.reduce((sum, row) => sum + row.courseRowCount, 0),
     codedCourseCount: rows.reduce((sum, row) => sum + row.codedCourseCount, 0),
@@ -231,6 +232,33 @@ function summarizeSourceFile(source, sourceDir) {
     importableProgrammes,
     importReady: programmeWithCodedCoursesCount > 0
   };
+}
+
+function getSourceProgrammeMap(sourceSummary = null) {
+  const bySchoolAndCode = new Map();
+  const sourceSchools = sourceSummary?.schools
+    ? sourceSummary.schools
+    : sourceSummary
+      ? [sourceSummary]
+      : [];
+  sourceSchools.forEach((school) => {
+    (school.programmeRows || []).forEach((programme) => {
+      if (!programme.programmeCode) return;
+      const sourceStatus = programme.importableCodedCourseCount > 0
+        ? 'source_importable_rows'
+        : programme.codedCourseCount > 0
+          ? 'source_coded_rows_not_importable'
+          : 'source_index_only';
+      bySchoolAndCode.set(`${school.code}::${programme.programmeCode}`, {
+        sourceStatus,
+        sourceCourseRowCount: programme.courseRowCount,
+        sourceCodedCourseCount: programme.codedCourseCount,
+        sourceImportableCodedCourseCount: programme.importableCodedCourseCount,
+        sourceOfficialUrl: programme.officialUrl || ''
+      });
+    });
+  });
+  return bySchoolAndCode;
 }
 
 function summarizeSources(sourceDir, options = {}) {
@@ -275,6 +303,7 @@ function buildGeneratedTotals(schools) {
 function summarizeGeneratedCatalogue(options = {}) {
   const missingLimit = Number.isFinite(Number(options.missingLimit)) ? Number(options.missingLimit) : 20;
   const shouldLimitMissing = Number.isFinite(missingLimit) && missingLimit >= 0;
+  const sourceProgrammes = getSourceProgrammeMap(options.sourceSummary);
   const schools = filterSchools(ugService.listUniversities().map((university) => {
     const programmes = ugService.listProgrammes({
       universityId: university.id,
@@ -297,7 +326,8 @@ function summarizeGeneratedCatalogue(options = {}) {
         code: programme.jupasCode || programme.code,
         name: programme.nameEn,
         faculty: programme.faculty || '',
-        officialUrl: programme.officialUrl || ''
+        officialUrl: programme.officialUrl || '',
+        ...(sourceProgrammes.get(`${university.code}::${programme.jupasCode || programme.code}`) || {})
       }));
     const missingProgrammes = shouldLimitMissing
       ? allMissingProgrammes.slice(0, missingLimit)
@@ -320,6 +350,17 @@ function summarizeGeneratedCatalogue(options = {}) {
     schools,
     totals: buildGeneratedTotals(schools)
   };
+}
+
+function formatMissingSourceStatus(programme) {
+  if (!programme.sourceStatus) return '';
+  if (programme.sourceStatus === 'source_importable_rows') {
+    return `source importable: ${programme.sourceImportableCodedCourseCount} importable / ${programme.sourceCodedCourseCount} raw coded rows`;
+  }
+  if (programme.sourceStatus === 'source_coded_rows_not_importable') {
+    return `source coded rows not importable: ${programme.sourceCodedCourseCount} raw coded rows`;
+  }
+  return `source index only: ${programme.sourceCourseRowCount || 0} raw course rows`;
 }
 
 function getGeneratedCourseProgrammeMap(generatedSummary) {
@@ -497,6 +538,7 @@ function printMissingProgrammes(summary, options = {}) {
       programme.code,
       programme.name,
       programme.faculty,
+      formatMissingSourceStatus(programme),
       programme.officialUrl
     ].filter(Boolean).join(' · '));
   });
@@ -504,12 +546,10 @@ function printMissingProgrammes(summary, options = {}) {
 
 function main() {
   const options = parseArgs();
-  const sourceSummary = options.missingOnly && !options.importableOnly && !options.needsImportOnly
-    ? null
-    : options.sourceFile
+  const sourceSummary = options.sourceFile
       ? summarizeSourceFilePath(options.sourceFile)
       : summarizeSources(options.sourceDir, options);
-  const generatedSummary = summarizeGeneratedCatalogue(options);
+  const generatedSummary = summarizeGeneratedCatalogue({ ...options, sourceSummary });
 
   if (options.json) {
     console.log(JSON.stringify({
@@ -525,7 +565,7 @@ function main() {
     return;
   }
 
-  if (sourceSummary) {
+  if (sourceSummary && !(options.missingOnly && !options.importableOnly && !options.needsImportOnly)) {
     if (options.sourceFile && (options.importableOnly || options.needsImportOnly)) printImportableProgrammes(sourceSummary, generatedSummary, options);
     else if (options.sourceFile) printSingleSourceReport(sourceSummary);
     else printReport(sourceSummary, options, generatedSummary);
@@ -546,7 +586,9 @@ module.exports = {
   summarizeGeneratedCatalogue,
   filterSchools,
   filterImportableProgrammes,
+  getSourceProgrammeMap,
   getGeneratedCourseProgrammeMap,
   listImportableProgrammes,
+  formatMissingSourceStatus,
   printGeneratedCatalogueReport
 };

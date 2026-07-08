@@ -12,6 +12,8 @@ const {
 const {
   filterImportableProgrammes,
   filterSchools,
+  formatMissingSourceStatus,
+  getSourceProgrammeMap,
   listImportableProgrammes,
   parseArgs,
   parseCsv,
@@ -279,6 +281,22 @@ test('UG source coverage report can focus missing programme work by school', () 
   assert.equal(summary.schools[0].missingProgrammeCount, 38);
   assert.equal(summary.schools[0].missingProgrammes.length, 5);
   assert.equal(filterSchools(summary.schools, 'HKU').length, 0);
+});
+
+test('UG source coverage report annotates missing programmes with source-code readiness', () => {
+  const args = parseArgs(['--school', 'hku', '--missing-limit', '2', '--missing-only']);
+  const sourceSummary = summarizeSources('/Users/shenjingsong/Documents/Codex/2026-07-06/pdf/outputs', args);
+  const sourceProgrammes = getSourceProgrammeMap(sourceSummary);
+  const summary = summarizeGeneratedCatalogue({ ...args, sourceSummary });
+  const firstMissing = summary.schools[0].missingProgrammes[0];
+
+  assert.equal(firstMissing.code, '6066');
+  assert.equal(firstMissing.sourceStatus, 'source_index_only');
+  assert.equal(firstMissing.sourceCourseRowCount, 1);
+  assert.equal(firstMissing.sourceCodedCourseCount, 0);
+  assert.equal(firstMissing.sourceImportableCodedCourseCount, 0);
+  assert.match(formatMissingSourceStatus(firstMissing), /source index only/);
+  assert.equal(sourceProgrammes.get('HKU::6066').sourceStatus, 'source_index_only');
 });
 
 test('UG source coverage report supports machine-readable JSON mode', () => {
