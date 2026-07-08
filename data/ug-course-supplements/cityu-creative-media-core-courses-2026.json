@@ -1,0 +1,148 @@
+{
+  "provider": "CityUHK School of Creative Media undergraduate 2026 curriculum records",
+  "academicYear": "2026",
+  "sourceUrl": "https://www.scm.cityu.edu.hk/en/programmes/courses-n-curricula",
+  "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/courses-n-curricula",
+  "supplements": [
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1040",
+      "majorName": "Creative Media (School-based)",
+      "sourceUrl": "https://www.scm.cityu.edu.hk/en/programmes/courses-n-curricula",
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/courses-n-curricula",
+      "courses": [
+        { "code": "GE1401", "title": "University English", "credits": 3, "group": "gateway education" },
+        { "code": "GE2413", "title": "Word, Sound and Image: Writing for Creative Media", "credits": 3, "group": "gateway education" },
+        { "code": "GE1501", "title": "Chinese Civilisation – History and Philosophy", "credits": 3, "group": "gateway education" },
+        { "code": "GE1601", "title": "Whole-Person Development", "credits": 1, "group": "gateway education" },
+        { "code": "SM1701", "title": "New Media Art", "credits": 3, "group": "school-specified course" },
+        { "code": "SM1702A", "title": "Creative Media Studio IA", "credits": 3, "group": "school requirement" },
+        { "code": "SM1702B", "title": "Creative Media Studio IB", "credits": 3, "group": "school requirement" }
+      ]
+    },
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1040",
+      "majorName": "BA Creative Media",
+      "sourceUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bacm",
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bacm",
+      "copyCoursesFrom": { "universityCode": "CITYU", "jupasCode": "JS1042" }
+    },
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1040",
+      "majorName": "BSc Creative Media",
+      "sourceUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bsccm",
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bsccm",
+      "copyCoursesFrom": { "universityCode": "CITYU", "jupasCode": "JS1043" }
+    },
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1040",
+      "majorName": "BAS New Media",
+      "sourceUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bas",
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bas",
+      "copyCoursesFrom": { "universityCode": "CITYU", "jupasCode": "JS1044" }
+    },
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1041",
+      "majorName": "BA Creative Media",
+      "sourceUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bacm",
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bacm",
+      "copyCoursesFrom": { "universityCode": "CITYU", "jupasCode": "JS1042" }
+    },
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1041",
+      "majorName": "BSc Creative Media",
+      "sourceUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bsccm",
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bsccm",
+      "copyCoursesFrom": { "universityCode": "CITYU", "jupasCode": "JS1043" }
+    },
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1041",
+      "majorName": "BAS New Media",
+      "sourceUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bas",
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bas",
+      "copyCoursesFrom": { "universityCode": "CITYU", "jupasCode": "JS1044" }
+    },
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1042",
+      "sourceUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bacm",
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bacm",
+      "courses": [
+        { "code": "GE1401", "title": "University English", "credits": 3, "group": "gateway education" },
+        { "code": "GE2413", "title": "Word, Sound and Image: Writing for Creative Media", "credits": 3, "group": "gateway education" },
+        { "code": "GE1501", "title": "Chinese Civilisation – History and Philosophy", "credits": 3, "group": "gateway education" },
+        { "code": "GE1601", "title": "Whole-Person Development", "credits": 1, "group": "gateway education" },
+        { "code": "SM1701", "title": "New Media Art", "credits": 3, "group": "school-specified course" },
+        { "code": "SM1103A", "title": "Introduction to Media Computing", "credits": 3, "group": "school-specified course" },
+        { "code": "SM2715", "title": "Creative Coding", "credits": 3, "group": "school-specified course" },
+        { "code": "SM1702A", "title": "Creative Media Studio IA", "credits": 3, "group": "school requirement" },
+        { "code": "SM1702B", "title": "Creative Media Studio IB", "credits": 3, "group": "school requirement" },
+        { "code": "SM4712A", "title": "Graduation Thesis / Project", "credits": 6, "group": "capstone project" },
+        { "code": "SM2105", "title": "Narrative Strategies & Aesthetics of Time-based Media", "credits": 3, "group": "major core" },
+        { "code": "SM2704", "title": "Creative Media Studio II", "credits": 3, "group": "major core" },
+        { "code": "SM2706", "title": "Critical Theory & Socially Engaged Practices", "credits": 3, "group": "major core" },
+        { "code": "SM2716", "title": "Physical Computing and Tangible Media", "credits": 3, "group": "major core" }
+      ]
+    },
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1043",
+      "sourceUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bsccm",
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bsccm",
+      "courses": [
+        { "code": "GE1401", "title": "University English", "credits": 3, "group": "gateway education" },
+        { "code": "GE2413", "title": "Word, Sound and Image: Writing for Creative Media", "credits": 3, "group": "gateway education" },
+        { "code": "GE1501", "title": "Chinese Civilisation – History and Philosophy", "credits": 3, "group": "gateway education" },
+        { "code": "GE1601", "title": "Whole-Person Development", "credits": 1, "group": "gateway education" },
+        { "code": "SM1701", "title": "New Media Art", "credits": 3, "group": "school-specified course" },
+        { "code": "CS1103B", "title": "Media Computing", "credits": 3, "group": "school-specified course" },
+        { "code": "SM1702A", "title": "Creative Media Studio IA", "credits": 3, "group": "school requirement" },
+        { "code": "SM1702B", "title": "Creative Media Studio IB", "credits": 3, "group": "school requirement" },
+        { "code": "SM4712B", "title": "Graduation Thesis / Project", "credits": 6, "group": "capstone project" },
+        { "code": "SM2609", "title": "Visual Communication (UI/UX)", "credits": 3, "group": "major core" },
+        { "code": "SM2714", "title": "Fundamentals of Animation", "credits": 3, "group": "major core" },
+        { "code": "SM3601", "title": "Game Prototyping and Design", "credits": 3, "group": "major core" },
+        { "code": "SM3611", "title": "New Media for Installation, Events and Performance", "credits": 3, "group": "major core" },
+        { "code": "CS2116", "title": "Computer Systems", "credits": 3, "group": "major core" },
+        { "code": "CS2204", "title": "Fundamentals of Internet Applications Development", "credits": 3, "group": "major core" },
+        { "code": "CS2303", "title": "Data Structures for Media", "credits": 3, "group": "major core" },
+        { "code": "CS2313", "title": "Computer Programming", "credits": 3, "group": "major core" },
+        { "code": "CS2403", "title": "Data Management and Cloud Storage", "credits": 3, "group": "major core" },
+        { "code": "CS3301", "title": "Applied Algorithms", "credits": 3, "group": "major core" }
+      ]
+    },
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1044",
+      "sourceUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bas",
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bas",
+      "courses": [
+        { "code": "GE1401", "title": "University English", "credits": 3, "group": "gateway education" },
+        { "code": "GE2413", "title": "Word, Sound and Image: Writing for Creative Media", "credits": 3, "group": "gateway education" },
+        { "code": "GE1501", "title": "Chinese Civilisation – History and Philosophy", "credits": 3, "group": "gateway education" },
+        { "code": "GE1601", "title": "Whole-Person Development", "credits": 1, "group": "gateway education" },
+        { "code": "SM1701", "title": "New Media Art", "credits": 3, "group": "school-specified course" },
+        { "code": "SM1103A", "title": "Introduction to Media Computing", "credits": 3, "group": "school-specified course" },
+        { "code": "SM1702A", "title": "Creative Media Studio IA", "credits": 3, "group": "school requirement" },
+        { "code": "SM1702B", "title": "Creative Media Studio IB", "credits": 3, "group": "school requirement" },
+        { "code": "SM4712C", "title": "Graduation Thesis / Project", "credits": 6, "group": "capstone project" },
+        { "code": "SM2704", "title": "Creative Media Studio II", "credits": 3, "group": "major core" },
+        { "code": "SM2706", "title": "Critical Theory and Socially Engaged Practices", "credits": 3, "group": "major core" },
+        { "code": "SM2715", "title": "Creative Coding", "credits": 3, "group": "major core" },
+        { "code": "SM2716", "title": "Physical Computing and Tangible Media", "credits": 3, "group": "major core" },
+        { "code": "SM3804", "title": "Materials and Fabrication Studio", "credits": 6, "group": "art and science studio" },
+        { "code": "SM3805", "title": "Imaging Science Studio", "credits": 6, "group": "art and science studio" },
+        { "code": "SM3806", "title": "Special Topics in Art and Science Studio I", "credits": 6, "group": "art and science studio" },
+        { "code": "SM3807", "title": "Machine Learning and Robotics Studio", "credits": 6, "group": "art and science studio" },
+        { "code": "SM3808", "title": "Special Topics in Art and Science Studio II", "credits": 6, "group": "art and science studio" },
+        { "code": "SM3809", "title": "Software Art Studio", "credits": 6, "group": "art and science studio" }
+      ]
+    }
+  ]
+}

@@ -13,7 +13,8 @@ const {
   filterSchools,
   parseArgs,
   summarizeGeneratedCatalogue,
-  summarizeSourceFile
+  summarizeSourceFile,
+  summarizeSources
 } = require('./report-ug-source-coverage');
 
 test('UG catalogue generator reports missing source files clearly', () => {
@@ -65,7 +66,18 @@ test('UG source coverage report counts only rows with course codes as coded cour
                 courses: [
                   {
                     code: 'TEST1001',
-                    title: 'Testing Fundamentals'
+                    title: 'Testing Fundamentals',
+                    track: 'Testing'
+                  },
+                  {
+                    code: 'TEST1001',
+                    title: 'Testing Fundamentals duplicate row',
+                    track: 'Testing'
+                  },
+                  {
+                    code: 'TEST1001',
+                    title: 'Testing Fundamentals in another track',
+                    track: 'Quality Assurance'
                   },
                   {
                     code: '',
@@ -102,12 +114,27 @@ test('UG source coverage report counts only rows with course codes as coded cour
 
   const summary = summarizeSourceFile(source, tempDir);
   assert.equal(summary.programmeCount, 2);
-  assert.equal(summary.courseRowCount, 3);
-  assert.equal(summary.codedCourseCount, 1);
+  assert.equal(summary.courseRowCount, 5);
+  assert.equal(summary.codedCourseCount, 3);
+  assert.equal(summary.uniqueCodedCourseCount, 1);
+  assert.equal(summary.duplicateCodedCourseRowCount, 2);
+  assert.equal(summary.importableCodedCourseCount, 2);
+  assert.equal(summary.duplicateWithinTrackRowCount, 1);
   assert.equal(summary.uncodedCourseRowCount, 2);
   assert.equal(summary.programmeWithCodedCoursesCount, 1);
   assert.equal(summary.programmeSummaryOnlyCount, 1);
   assert.equal(summary.importReady, true);
+});
+
+test('UG source coverage report distinguishes raw coded rows from importable track courses', () => {
+  const summary = summarizeSources('/Users/shenjingsong/Documents/Codex/2026-07-06/pdf/outputs');
+  const polyu = summary.schools.find((school) => school.code === 'POLYU');
+
+  assert.equal(polyu.codedCourseCount, 172);
+  assert.equal(polyu.importableCodedCourseCount, 166);
+  assert.equal(polyu.duplicateWithinTrackRowCount, 6);
+  assert.equal(polyu.importReady, true);
+  assert.equal(summary.totals.importableCodedCourseCount, 166);
 });
 
 test('UG source coverage report includes generated catalogue supplement coverage', () => {
@@ -116,10 +143,10 @@ test('UG source coverage report includes generated catalogue supplement coverage
   const lingnan = summary.schools.find((school) => school.code === 'LINGNAN');
 
   assert.equal(summary.totals.programmeCount, 445);
-  assert.equal(summary.totals.codedCourseCount, 2543);
-  assert.equal(summary.totals.programmeWithCoursesCount, 38);
-  assert.equal(cityu.programmeWithCoursesCount, 8);
-  assert.equal(cityu.codedCourseCount, 1292);
+  assert.equal(summary.totals.codedCourseCount, 3217);
+  assert.equal(summary.totals.programmeWithCoursesCount, 50);
+  assert.equal(cityu.programmeWithCoursesCount, 20);
+  assert.equal(cityu.codedCourseCount, 1966);
   assert.equal(lingnan.missingProgrammeCount, 0);
 });
 
@@ -130,11 +157,28 @@ test('UG source coverage report can focus missing programme work by school', () 
   assert.equal(args.school, 'CITYU');
   assert.equal(args.missingLimit, 5);
   assert.equal(args.missingOnly, true);
+  assert.equal(args.json, false);
   assert.deepEqual(summary.schools.map((school) => school.code), ['CITYU']);
   assert.equal(summary.totals.programmeCount, 58);
-  assert.equal(summary.totals.programmeWithCoursesCount, 8);
-  assert.equal(summary.totals.missingProgrammeCount, 50);
+  assert.equal(summary.totals.programmeWithCoursesCount, 20);
+  assert.equal(summary.totals.missingProgrammeCount, 38);
+  assert.equal(summary.schools[0].missingProgrammeCount, 38);
+  assert.equal(summary.schools[0].missingProgrammes.length, 5);
   assert.equal(filterSchools(summary.schools, 'HKU').length, 0);
+});
+
+test('UG source coverage report supports machine-readable JSON mode', () => {
+  const args = parseArgs(['--school', 'cityu', '--missing-only', '--missing-limit', '3', '--json']);
+  const summary = summarizeGeneratedCatalogue(args);
+
+  assert.equal(args.school, 'CITYU');
+  assert.equal(args.missingOnly, true);
+  assert.equal(args.json, true);
+  assert.deepEqual(summary.schools.map((school) => school.code), ['CITYU']);
+  assert.equal(summary.schools[0].missingProgrammeCount, 38);
+  assert.equal(summary.schools[0].missingProgrammes.length, 3);
+  assert.equal(summary.schools[0].missingProgrammes[0].code, 'JS1050');
+  assert(summary.totals.codedCourseCount > 0);
 });
 
 test('UG generic course supplements can add non-computing undergraduate courses', () => {
@@ -195,6 +239,98 @@ test('UG generic course supplements can add non-computing undergraduate courses'
   assert.deepEqual(catalogue.courses.map((course) => course.courseCode), ['PHI1001', 'PHI2001']);
   assert.equal(catalogue.courses[0].courseType, 'core');
   assert.equal(catalogue.courses[0].sourceProvider, 'official curriculum page');
+});
+
+test('UG generic course supplements can reuse a degree-track course template', () => {
+  const catalogue = {
+    programmes: [
+      {
+        id: 'CITYU-UG-JS1042-1',
+        universityCode: 'CITYU',
+        code: 'JS1042',
+        jupasCode: 'JS1042',
+        nameEn: 'BA Creative Media',
+        curriculumYear: '2026',
+        officialUrl: 'https://example.test/bacm',
+        sourceStatus: 'programme_summary_only',
+        courseCount: 0,
+        codedCourseCount: 0
+      },
+      {
+        id: 'CITYU-UG-JS1041-1',
+        universityCode: 'CITYU',
+        code: 'JS1041',
+        jupasCode: 'JS1041',
+        nameEn: 'Creative Media',
+        curriculumYear: '2026',
+        officialUrl: 'https://example.test/scm',
+        sourceStatus: 'programme_summary_only',
+        courseCount: 0,
+        codedCourseCount: 0
+      }
+    ],
+    majors: [
+      {
+        id: 'CITYU-UG-JS1042-1-M1',
+        programmeId: 'CITYU-UG-JS1042-1',
+        nameEn: 'BA Creative Media',
+        courseCount: 0,
+        codedCourseCount: 0
+      },
+      {
+        id: 'CITYU-UG-JS1041-1-M1',
+        programmeId: 'CITYU-UG-JS1041-1',
+        nameEn: 'BA Creative Media',
+        courseCount: 0,
+        codedCourseCount: 0
+      }
+    ],
+    courses: []
+  };
+
+  addGenericCourseSupplements(catalogue, [
+    {
+      provider: 'SCM curriculum page',
+      academicYear: '2026',
+      universityCode: 'CITYU',
+      jupasCode: 'JS1042',
+      courses: [
+        {
+          code: 'SM2105',
+          title: 'Narrative Strategies & Aesthetics of Time-based Media',
+          credits: 3,
+          group: 'major core'
+        },
+        {
+          code: 'SM4712A',
+          title: 'Graduation Thesis / Project',
+          credits: 6,
+          group: 'capstone project'
+        }
+      ]
+    },
+    {
+      provider: 'SCM curriculum page',
+      academicYear: '2026',
+      universityCode: 'CITYU',
+      jupasCode: 'JS1041',
+      majorName: 'BA Creative Media',
+      officialUrl: 'https://example.test/bacm',
+      copyCoursesFrom: { universityCode: 'CITYU', jupasCode: 'JS1042' }
+    }
+  ]);
+
+  const sourceProgramme = catalogue.programmes.find((programme) => programme.jupasCode === 'JS1042');
+  const reusedProgramme = catalogue.programmes.find((programme) => programme.jupasCode === 'JS1041');
+  const reusedMajor = catalogue.majors.find((major) => major.programmeId === reusedProgramme.id);
+  const reusedCourses = catalogue.courses.filter((course) => course.programmeId === reusedProgramme.id);
+
+  assert.equal(sourceProgramme.codedCourseCount, 2);
+  assert.equal(reusedProgramme.sourceStatus, 'course_codes_available');
+  assert.equal(reusedProgramme.codedCourseCount, 2);
+  assert.equal(reusedMajor.codedCourseCount, 2);
+  assert.deepEqual(reusedCourses.map((course) => course.courseCode), ['SM2105', 'SM4712A']);
+  assert(reusedCourses.every((course) => course.officialUrl === 'https://example.test/bacm'));
 });
 
 test('UG catalogue generator groups course shards by programme university', () => {

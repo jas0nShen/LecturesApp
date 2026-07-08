@@ -479,19 +479,40 @@ function buildGenericSupplementCourse({ course, courseIndex, major, programme, s
   };
 }
 
+function getSupplementCourses(supplement, allSupplements) {
+  if (Array.isArray(supplement.courses)) return supplement.courses;
+
+  const copyFrom = supplement.copyCoursesFrom || {};
+  if (!copyFrom || !Object.keys(copyFrom).length) return [];
+
+  const template = allSupplements.find((candidate) => {
+    if (candidate === supplement) return false;
+    if (copyFrom.universityCode && candidate.universityCode !== copyFrom.universityCode) return false;
+    if (copyFrom.programmeId && candidate.programmeId !== copyFrom.programmeId) return false;
+    if (copyFrom.programmeCode && candidate.programmeCode !== copyFrom.programmeCode) return false;
+    if (copyFrom.jupasCode && candidate.jupasCode !== copyFrom.jupasCode) return false;
+    if (copyFrom.programmeName && !matchesText(candidate.programmeName || '', copyFrom.programmeName)) return false;
+    if (copyFrom.majorName && !matchesText(candidate.majorName || '', copyFrom.majorName)) return false;
+    return Array.isArray(candidate.courses);
+  });
+
+  return template ? template.courses.map((course) => ({ ...course })) : [];
+}
+
 function addGenericCourseSupplements(catalogue, supplements = loadGenericCourseSupplements()) {
   supplements.forEach((supplement) => {
     const programme = findSupplementProgramme(catalogue, supplement);
     if (!programme) return;
     const targetMajors = findSupplementMajors(catalogue, programme, supplement);
     if (!targetMajors.length) return;
+    const courses = getSupplementCourses(supplement, supplements);
 
     targetMajors.forEach((major) => {
       const existingCodes = new Set(catalogue.courses
         .filter((course) => course.majorId === major.id)
         .map((course) => course.courseCode)
         .filter(Boolean));
-      const supplementCourses = (supplement.courses || [])
+      const supplementCourses = courses
         .map((course, courseIndex) => buildGenericSupplementCourse({
           course,
           courseIndex,

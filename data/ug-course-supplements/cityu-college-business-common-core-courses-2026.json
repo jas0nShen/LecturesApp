@@ -1,0 +1,148 @@
+{
+  "provider": "CityUHK College of Business common undergraduate core courses",
+  "academicYear": "2026",
+  "sourceUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum",
+  "officialUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum",
+  "supplements": [
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1005",
+      "courses": [
+        { "code": "CB2100", "title": "Introduction to Financial Accounting", "credits": 3, "group": "college core" },
+        { "code": "CB2101", "title": "Introduction to Managerial Accounting", "credits": 3, "group": "college core" },
+        { "code": "CB2200", "title": "Business Statistics", "credits": 3, "group": "college core" },
+        { "code": "CB2201", "title": "Operations Management", "credits": 3, "group": "college core" },
+        { "code": "CB2203", "title": "Data-driven Business Modeling", "credits": 3, "group": "college-specified course" },
+        { "code": "CB2240", "title": "Introduction to Business Programming in Python", "credits": 3, "group": "college-specified course" },
+        { "code": "CB2300", "title": "Management", "credits": 3, "group": "college core" },
+        { "code": "CB2400", "title": "Micro-Economics", "credits": 3, "group": "college core" },
+        { "code": "CB2402", "title": "Macro-Economics", "credits": 3, "group": "college core" },
+        { "code": "CB2500", "title": "Information Management", "credits": 3, "group": "college core" },
+        { "code": "CB2601", "title": "Marketing", "credits": 3, "group": "college core" },
+        { "code": "CB3410", "title": "Financial Management", "credits": 3, "group": "college core" },
+        { "code": "CB3601", "title": "Global Perspectives on Contemporary Issues", "credits": 3, "group": "college core" },
+        { "code": "CB4303", "title": "Strategic Management", "credits": 3, "group": "college core" }
+      ]
+    },
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1012",
+      "courses": [
+        { "code": "CB2100", "title": "Introduction to Financial Accounting", "credits": 3, "group": "college core" },
+        { "code": "CB2101", "title": "Introduction to Managerial Accounting", "credits": 3, "group": "college core" },
+        { "code": "CB2200", "title": "Business Statistics", "credits": 3, "group": "college core" },
+        { "code": "CB2201", "title": "Operations Management", "credits": 3, "group": "college core" },
+        { "code": "CB2203", "title": "Data-driven Business Modeling", "credits": 3, "group": "college-specified course" },
+        { "code": "CB2240", "title": "Introduction to Business Programming in Python", "credits": 3, "group": "college-specified course" },
+        { "code": "CB2300", "title": "Management", "credits": 3, "group": "college core" },
+        { "code": "CB2400", "title": "Micro-Economics", "credits": 3, "group": "college core" },
+        { "code": "CB2402", "title": "Macro-Economics", "credits": 3, "group": "college core" },
+        { "code": "CB2500", "title": "Information Management", "credits": 3, "group": "college core" },
+        { "code": "CB2601", "title": "Marketing", "credits": 3, "group": "college core" },
+        { "code": "CB3410", "title": "Financial Management", "credits": 3, "group": "college core" },
+        { "code": "CB3601", "title": "Global Perspectives on Contemporary Issues", "credits": 3, "group": "college core" },
+        { "code": "CB4303", "title": "Strategic Management", "credits": 3, "group": "college core" }
+      ]
+    },
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1013",
+      "courses": [
+        { "code": "CB2100", "title": "Introduction to Financial Accounting", "credits": 3, "group": "college core" },
+        { "code": "CB2101", "title": "Introduction to Managerial Accounting", "credits": 3, "group": "college core" },
+        { "code": "CB2200", "title": "Business Statistics", "credits": 3, "group": "college core" },
+        { "code": "CB2201", "title": "Operations Management", "credits": 3, "group": "college core" },
+        { "code": "CB2203", "title": "Data-driven Business Modeling", "credits": 3, "group": "college-specified course" },
+        { "code": "CB2240", "title": "Introduction to Business Programming in Python", "credits": 3, "group": "college-specified course" },
+        { "code": "CB2300", "title": "Management", "credits": 3, "group": "college core" },
+        { "code": "CB2400", "title": "Micro-Economics", "credits": 3, "group": "college core" },
+        { "code": "CB2402", "title": "Macro-Economics", "credits": 3, "group": "college core" },
+        { "code": "CB2500", "title": "Information Management", "credits": 3, "group": "college core" },
+        { "code": "CB2601", "title": "Marketing", "credits": 3, "group": "college core" },
+        { "code": "CB3410", "title": "Financial Management", "credits": 3, "group": "college core" },
+        { "code": "CB3601", "title": "Global Perspectives on Contemporary Issues", "credits": 3, "group": "college core" },
+        { "code": "CB4303", "title": "Strategic Management", "credits": 3, "group": "college core" }
+      ]
+    },
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1014",
+      "courses": [
+        { "code": "CB2100", "title": "Introduction to Financial Accounting", "credits": 3, "group": "college core" },
+        { "code": "CB2101", "title": "Introduction to Managerial Accounting", "credits": 3, "group": "college core" },
+        { "code": "CB2200", "title": "Business Statistics", "credits": 3, "group": "college core" },
+        { "code": "CB2201", "title": "Operations Management", "credits": 3, "group": "college core" },
+        { "code": "CB2203", "title": "Data-driven Business Modeling", "credits": 3, "group": "college-specified course" },
+        { "code": "CB2240", "title": "Introduction to Business Programming in Python", "credits": 3, "group": "college-specified course" },
+        { "code": "CB2300", "title": "Management", "credits": 3, "group": "college core" },
+        { "code": "CB2400", "title": "Micro-Economics", "credits": 3, "group": "college core" },
+        { "code": "CB2402", "title": "Macro-Economics", "credits": 3, "group": "college core" },
+        { "code": "CB2500", "title": "Information Management", "credits": 3, "group": "college core" },
+        { "code": "CB2601", "title": "Marketing", "credits": 3, "group": "college core" },
+        { "code": "CB3410", "title": "Financial Management", "credits": 3, "group": "college core" },
+        { "code": "CB3601", "title": "Global Perspectives on Contemporary Issues", "credits": 3, "group": "college core" },
+        { "code": "CB4303", "title": "Strategic Management", "credits": 3, "group": "college core" }
+      ]
+    },
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1017",
+      "courses": [
+        { "code": "CB2100", "title": "Introduction to Financial Accounting", "credits": 3, "group": "college core" },
+        { "code": "CB2101", "title": "Introduction to Managerial Accounting", "credits": 3, "group": "college core" },
+        { "code": "CB2200", "title": "Business Statistics", "credits": 3, "group": "college core" },
+        { "code": "CB2201", "title": "Operations Management", "credits": 3, "group": "college core" },
+        { "code": "CB2203", "title": "Data-driven Business Modeling", "credits": 3, "group": "college-specified course" },
+        { "code": "CB2240", "title": "Introduction to Business Programming in Python", "credits": 3, "group": "college-specified course" },
+        { "code": "CB2300", "title": "Management", "credits": 3, "group": "college core" },
+        { "code": "CB2400", "title": "Micro-Economics", "credits": 3, "group": "college core" },
+        { "code": "CB2402", "title": "Macro-Economics", "credits": 3, "group": "college core" },
+        { "code": "CB2500", "title": "Information Management", "credits": 3, "group": "college core" },
+        { "code": "CB2601", "title": "Marketing", "credits": 3, "group": "college core" },
+        { "code": "CB3410", "title": "Financial Management", "credits": 3, "group": "college core" },
+        { "code": "CB3601", "title": "Global Perspectives on Contemporary Issues", "credits": 3, "group": "college core" },
+        { "code": "CB4303", "title": "Strategic Management", "credits": 3, "group": "college core" }
+      ]
+    },
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1018",
+      "courses": [
+        { "code": "CB2100", "title": "Introduction to Financial Accounting", "credits": 3, "group": "college core" },
+        { "code": "CB2101", "title": "Introduction to Managerial Accounting", "credits": 3, "group": "college core" },
+        { "code": "CB2200", "title": "Business Statistics", "credits": 3, "group": "college core" },
+        { "code": "CB2201", "title": "Operations Management", "credits": 3, "group": "college core" },
+        { "code": "CB2203", "title": "Data-driven Business Modeling", "credits": 3, "group": "college-specified course" },
+        { "code": "CB2240", "title": "Introduction to Business Programming in Python", "credits": 3, "group": "college-specified course" },
+        { "code": "CB2300", "title": "Management", "credits": 3, "group": "college core" },
+        { "code": "CB2400", "title": "Micro-Economics", "credits": 3, "group": "college core" },
+        { "code": "CB2402", "title": "Macro-Economics", "credits": 3, "group": "college core" },
+        { "code": "CB2500", "title": "Information Management", "credits": 3, "group": "college core" },
+        { "code": "CB2601", "title": "Marketing", "credits": 3, "group": "college core" },
+        { "code": "CB3410", "title": "Financial Management", "credits": 3, "group": "college core" },
+        { "code": "CB3601", "title": "Global Perspectives on Contemporary Issues", "credits": 3, "group": "college core" },
+        { "code": "CB4303", "title": "Strategic Management", "credits": 3, "group": "college core" }
+      ]
+    },
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1019",
+      "courses": [
+        { "code": "CB2100", "title": "Introduction to Financial Accounting", "credits": 3, "group": "college core" },
+        { "code": "CB2101", "title": "Introduction to Managerial Accounting", "credits": 3, "group": "college core" },
+        { "code": "CB2200", "title": "Business Statistics", "credits": 3, "group": "college core" },
+        { "code": "CB2201", "title": "Operations Management", "credits": 3, "group": "college core" },
+        { "code": "CB2203", "title": "Data-driven Business Modeling", "credits": 3, "group": "college-specified course" },
+        { "code": "CB2240", "title": "Introduction to Business Programming in Python", "credits": 3, "group": "college-specified course" },
+        { "code": "CB2300", "title": "Management", "credits": 3, "group": "college core" },
+        { "code": "CB2400", "title": "Micro-Economics", "credits": 3, "group": "college core" },
+        { "code": "CB2402", "title": "Macro-Economics", "credits": 3, "group": "college core" },
+        { "code": "CB2500", "title": "Information Management", "credits": 3, "group": "college core" },
+        { "code": "CB2601", "title": "Marketing", "credits": 3, "group": "college core" },
+        { "code": "CB3410", "title": "Financial Management", "credits": 3, "group": "college core" },
+        { "code": "CB3601", "title": "Global Perspectives on Contemporary Issues", "credits": 3, "group": "college core" },
+        { "code": "CB4303", "title": "Strategic Management", "credits": 3, "group": "college core" }
+      ]
+    }
+  ]
+}

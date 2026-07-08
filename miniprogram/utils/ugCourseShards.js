@@ -8,7 +8,7 @@ const loaders = {
   "POLYU": () => require('./ugCourseData/polyu'),
 };
 const counts = {
-  "CITYU": 1292,
+  "CITYU": 1966,
   "CUHK": 131,
   "HKU": 112,
   "HKUST": 121,

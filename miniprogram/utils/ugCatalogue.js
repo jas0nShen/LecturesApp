@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-08T02:44:13.260Z",
+  "generatedAt": "2026-07-08T03:28:38.397Z",
   "universities": [
     {
       "id": "HKU",
@@ -6579,9 +6579,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1005",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 28,
+      "codedCourseCount": 28,
+      "courseSourceUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum"
     },
     {
       "id": "CITYU-UG-BBAMKT-5",
@@ -6618,9 +6619,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1012",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 28,
+      "codedCourseCount": 28,
+      "courseSourceUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum"
     },
     {
       "id": "CITYU-UG-BBABE-7",
@@ -6637,9 +6639,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1013",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 56,
+      "codedCourseCount": 56,
+      "courseSourceUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum"
     },
     {
       "id": "CITYU-UG-BBAFIN-8",
@@ -6656,9 +6659,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1014",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 70,
+      "codedCourseCount": 70,
+      "courseSourceUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum"
     },
     {
       "id": "CITYU-UG-IIS-9",
@@ -6675,9 +6679,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1017",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 28,
+      "codedCourseCount": 28,
+      "courseSourceUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum"
     },
     {
       "id": "CITYU-UG-BBAGBSM-10",
@@ -6694,9 +6699,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1018",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 42,
+      "codedCourseCount": 42,
+      "courseSourceUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum"
     },
     {
       "id": "CITYU-UG-BBAAIB-11",
@@ -6713,9 +6719,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1019",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 56,
+      "codedCourseCount": 56,
+      "courseSourceUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum"
     },
     {
       "id": "CITYU-UG-BBABDAN-12",
@@ -6772,9 +6779,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1040",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 59,
+      "codedCourseCount": 59,
+      "courseSourceUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bas"
     },
     {
       "id": "CITYU-UG-SCM-15",
@@ -6791,9 +6799,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1041",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 52,
+      "codedCourseCount": 52,
+      "courseSourceUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bas"
     },
     {
       "id": "CITYU-UG-BACM-16",
@@ -6810,9 +6819,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1042",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 84,
+      "codedCourseCount": 84,
+      "courseSourceUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bacm"
     },
     {
       "id": "CITYU-UG-BSCCM-17",
@@ -6829,9 +6839,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1043",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 95,
+      "codedCourseCount": 95,
+      "courseSourceUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bsccm"
     },
     {
       "id": "CITYU-UG-BAS-18",
@@ -6848,9 +6859,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1044",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 76,
+      "codedCourseCount": 76,
+      "courseSourceUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bas"
     },
     {
       "id": "CITYU-UG-INSPIRE-19",
@@ -13053,9 +13065,9 @@ const catalogue = {
       "code": "HUMAN-RESOURCES-MANAGEMENT",
       "nameEn": "Human Resources Management",
       "nameZh": "Human Resources Management",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1005"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum"
     },
     {
       "id": "CITYU-UG-BBAMGMT-4-M2",
@@ -13063,9 +13075,9 @@ const catalogue = {
       "code": "STRATEGY-AND-INTERNATIONAL-MANAGEMENT",
       "nameEn": "Strategy and International Management",
       "nameZh": "Strategy and International Management",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1005"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum"
     },
     {
       "id": "CITYU-UG-BBAMKT-5-M1",
@@ -13093,9 +13105,9 @@ const catalogue = {
       "code": "BBA-BUSINESS-ECONOMICS",
       "nameEn": "BBA Business Economics",
       "nameZh": "BBA Business Economics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1012"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum"
     },
     {
       "id": "CITYU-UG-EF-6-M2",
@@ -13103,9 +13115,9 @@ const catalogue = {
       "code": "BBA-FINANCE",
       "nameEn": "BBA Finance",
       "nameZh": "BBA Finance",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1012"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum"
     },
     {
       "id": "CITYU-UG-BBABE-7-M1",
@@ -13113,9 +13125,9 @@ const catalogue = {
       "code": "ECONOMIC-THEORY",
       "nameEn": "Economic Theory",
       "nameZh": "Economic Theory",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1013"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum"
     },
     {
       "id": "CITYU-UG-BBABE-7-M2",
@@ -13123,9 +13135,9 @@ const catalogue = {
       "code": "INTERNATIONAL-ECONOMICS",
       "nameEn": "International Economics",
       "nameZh": "International Economics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1013"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum"
     },
     {
       "id": "CITYU-UG-BBABE-7-M3",
@@ -13133,9 +13145,9 @@ const catalogue = {
       "code": "ECONOMIC-AND-BUSINESS-FORECASTING",
       "nameEn": "Economic and Business Forecasting",
       "nameZh": "Economic and Business Forecasting",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1013"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum"
     },
     {
       "id": "CITYU-UG-BBABE-7-M4",
@@ -13143,9 +13155,9 @@ const catalogue = {
       "code": "QUANTITATIVE-ANALYSIS",
       "nameEn": "Quantitative Analysis",
       "nameZh": "Quantitative Analysis",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1013"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum"
     },
     {
       "id": "CITYU-UG-BBAFIN-8-M1",
@@ -13153,9 +13165,9 @@ const catalogue = {
       "code": "INVESTMENT-ANALYSIS",
       "nameEn": "Investment Analysis",
       "nameZh": "Investment Analysis",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1014"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum"
     },
     {
       "id": "CITYU-UG-BBAFIN-8-M2",
@@ -13163,9 +13175,9 @@ const catalogue = {
       "code": "FINANCIAL-MARKETS",
       "nameEn": "Financial Markets",
       "nameZh": "Financial Markets",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1014"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum"
     },
     {
       "id": "CITYU-UG-BBAFIN-8-M3",
@@ -13173,9 +13185,9 @@ const catalogue = {
       "code": "CORPORATE-FINANCE",
       "nameEn": "Corporate Finance",
       "nameZh": "Corporate Finance",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1014"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum"
     },
     {
       "id": "CITYU-UG-BBAFIN-8-M4",
@@ -13183,9 +13195,9 @@ const catalogue = {
       "code": "RISK-MANAGEMENT",
       "nameEn": "Risk Management",
       "nameZh": "Risk Management",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1014"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum"
     },
     {
       "id": "CITYU-UG-BBAFIN-8-M5",
@@ -13193,9 +13205,9 @@ const catalogue = {
       "code": "TRADING-ROOM-WORKSHOP",
       "nameEn": "Trading Room Workshop",
       "nameZh": "Trading Room Workshop",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1014"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum"
     },
     {
       "id": "CITYU-UG-IIS-9-M1",
@@ -13203,9 +13215,9 @@ const catalogue = {
       "code": "BBA-GLOBAL-BUSINESS-SYSTEMS-MANAGEMENT",
       "nameEn": "BBA Global Business Systems Management",
       "nameZh": "BBA Global Business Systems Management",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1017"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum"
     },
     {
       "id": "CITYU-UG-IIS-9-M2",
@@ -13213,9 +13225,9 @@ const catalogue = {
       "code": "BBA-ARTIFICIAL-INTELLIGENCE-IN-BUSINESS",
       "nameEn": "BBA Artificial Intelligence in Business]",
       "nameZh": "BBA Artificial Intelligence in Business]",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1017"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum"
     },
     {
       "id": "CITYU-UG-BBAGBSM-10-M1",
@@ -13223,9 +13235,9 @@ const catalogue = {
       "code": "INTELLIGENT-TECHNOLOGIES",
       "nameEn": "Intelligent Technologies",
       "nameZh": "Intelligent Technologies",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1018"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum"
     },
     {
       "id": "CITYU-UG-BBAGBSM-10-M2",
@@ -13233,9 +13245,9 @@ const catalogue = {
       "code": "GLOBAL-BUSINESS",
       "nameEn": "Global Business",
       "nameZh": "Global Business",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1018"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum"
     },
     {
       "id": "CITYU-UG-BBAGBSM-10-M3",
@@ -13243,9 +13255,9 @@ const catalogue = {
       "code": "STUDY-EXCHANGE",
       "nameEn": "Study Exchange",
       "nameZh": "Study Exchange",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1018"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum"
     },
     {
       "id": "CITYU-UG-BBAAIB-11-M1",
@@ -13253,9 +13265,9 @@ const catalogue = {
       "code": "BUSINESS-INTELLIGENCE",
       "nameEn": "Business Intelligence",
       "nameZh": "Business Intelligence",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1019"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum"
     },
     {
       "id": "CITYU-UG-BBAAIB-11-M2",
@@ -13263,9 +13275,9 @@ const catalogue = {
       "code": "INFORMATION-SYSTEMS-AUDITING",
       "nameEn": "Information Systems Auditing",
       "nameZh": "Information Systems Auditing",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1019"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum"
     },
     {
       "id": "CITYU-UG-BBAAIB-11-M3",
@@ -13273,9 +13285,9 @@ const catalogue = {
       "code": "INTERNET-SERVICES-AND-SOCIAL-NETWORKS",
       "nameEn": "Internet Services and Social Networks",
       "nameZh": "Internet Services and Social Networks",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1019"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum"
     },
     {
       "id": "CITYU-UG-BBAAIB-11-M4",
@@ -13283,9 +13295,9 @@ const catalogue = {
       "code": "DATA-INFORMATICS",
       "nameEn": "Data Informatics",
       "nameZh": "Data Informatics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1019"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://prog.cb.cityu.edu.hk/en/academics/bbagbu/curriculum"
     },
     {
       "id": "CITYU-UG-BBABDAN-12-M1",
@@ -13363,9 +13375,9 @@ const catalogue = {
       "code": "CREATIVE-MEDIA-SCHOOL-BASED",
       "nameEn": "Creative Media (School-based)",
       "nameZh": "Creative Media (School-based)",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1040"
+      "courseCount": 8,
+      "codedCourseCount": 7,
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/courses-n-curricula"
     },
     {
       "id": "CITYU-UG-CREATE-14-M2",
@@ -13373,9 +13385,9 @@ const catalogue = {
       "code": "BA-CREATIVE-MEDIA",
       "nameEn": "BA Creative Media",
       "nameZh": "BA Creative Media",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1040"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bacm"
     },
     {
       "id": "CITYU-UG-CREATE-14-M3",
@@ -13383,9 +13395,9 @@ const catalogue = {
       "code": "BSC-CREATIVE-MEDIA",
       "nameEn": "BSc Creative Media",
       "nameZh": "BSc Creative Media",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1040"
+      "courseCount": 20,
+      "codedCourseCount": 19,
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bsccm"
     },
     {
       "id": "CITYU-UG-CREATE-14-M4",
@@ -13393,9 +13405,9 @@ const catalogue = {
       "code": "BAS-NEW-MEDIA",
       "nameEn": "BAS New Media",
       "nameZh": "BAS New Media",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1040"
+      "courseCount": 20,
+      "codedCourseCount": 19,
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bas"
     },
     {
       "id": "CITYU-UG-SCM-15-M1",
@@ -13403,9 +13415,9 @@ const catalogue = {
       "code": "BA-CREATIVE-MEDIA",
       "nameEn": "BA Creative Media",
       "nameZh": "BA Creative Media",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1041"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bacm"
     },
     {
       "id": "CITYU-UG-SCM-15-M2",
@@ -13413,9 +13425,9 @@ const catalogue = {
       "code": "BSC-CREATIVE-MEDIA",
       "nameEn": "BSc Creative Media",
       "nameZh": "BSc Creative Media",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1041"
+      "courseCount": 20,
+      "codedCourseCount": 19,
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bsccm"
     },
     {
       "id": "CITYU-UG-SCM-15-M3",
@@ -13423,9 +13435,9 @@ const catalogue = {
       "code": "BAS-NEW-MEDIA",
       "nameEn": "BAS New Media",
       "nameZh": "BAS New Media",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1041"
+      "courseCount": 20,
+      "codedCourseCount": 19,
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bas"
     },
     {
       "id": "CITYU-UG-BACM-16-M1",
@@ -13433,9 +13445,9 @@ const catalogue = {
       "code": "ANIMATION",
       "nameEn": "Animation",
       "nameZh": "Animation",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1042"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bacm"
     },
     {
       "id": "CITYU-UG-BACM-16-M2",
@@ -13443,9 +13455,9 @@ const catalogue = {
       "code": "CINEMA-PHOTOGRAPHY",
       "nameEn": "Cinema & Photography",
       "nameZh": "Cinema & Photography",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1042"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bacm"
     },
     {
       "id": "CITYU-UG-BACM-16-M3",
@@ -13453,9 +13465,9 @@ const catalogue = {
       "code": "CRITICAL-THEORY-PRACTICES",
       "nameEn": "Critical Theory & Practices",
       "nameZh": "Critical Theory & Practices",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1042"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bacm"
     },
     {
       "id": "CITYU-UG-BACM-16-M4",
@@ -13463,9 +13475,9 @@ const catalogue = {
       "code": "GAME-PLAYABLE-MEDIA",
       "nameEn": "Game & Playable Media",
       "nameZh": "Game & Playable Media",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1042"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bacm"
     },
     {
       "id": "CITYU-UG-BACM-16-M5",
@@ -13473,9 +13485,9 @@ const catalogue = {
       "code": "NEW-MEDIA-ART",
       "nameEn": "New Media Art",
       "nameZh": "New Media Art",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1042"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bacm"
     },
     {
       "id": "CITYU-UG-BACM-16-M6",
@@ -13483,9 +13495,9 @@ const catalogue = {
       "code": "SOUND-ART",
       "nameEn": "Sound Art",
       "nameZh": "Sound Art",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1042"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bacm"
     },
     {
       "id": "CITYU-UG-BSCCM-17-M1",
@@ -13493,9 +13505,9 @@ const catalogue = {
       "code": "COMBINATION-OF-CREATIVE-MEDIA-AND-COMPUTER-SCIEN",
       "nameEn": "Combination of Creative Media and Computer Science Courses",
       "nameZh": "Combination of Creative Media and Computer Science Courses",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1043"
+      "courseCount": 20,
+      "codedCourseCount": 19,
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bsccm"
     },
     {
       "id": "CITYU-UG-BSCCM-17-M2",
@@ -13503,9 +13515,9 @@ const catalogue = {
       "code": "ANIMATION",
       "nameEn": "Animation",
       "nameZh": "Animation",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1043"
+      "courseCount": 20,
+      "codedCourseCount": 19,
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bsccm"
     },
     {
       "id": "CITYU-UG-BSCCM-17-M3",
@@ -13513,9 +13525,9 @@ const catalogue = {
       "code": "GAMES",
       "nameEn": "Games",
       "nameZh": "Games",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1043"
+      "courseCount": 20,
+      "codedCourseCount": 19,
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bsccm"
     },
     {
       "id": "CITYU-UG-BSCCM-17-M4",
@@ -13523,9 +13535,9 @@ const catalogue = {
       "code": "INSTALLATION",
       "nameEn": "Installation",
       "nameZh": "Installation",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1043"
+      "courseCount": 20,
+      "codedCourseCount": 19,
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bsccm"
     },
     {
       "id": "CITYU-UG-BSCCM-17-M5",
@@ -13533,9 +13545,9 @@ const catalogue = {
       "code": "INTERACTIVITY",
       "nameEn": "Interactivity",
       "nameZh": "Interactivity",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1043"
+      "courseCount": 20,
+      "codedCourseCount": 19,
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bsccm"
     },
     {
       "id": "CITYU-UG-BAS-18-M1",
@@ -13543,9 +13555,9 @@ const catalogue = {
       "code": "MEDIA-ART",
       "nameEn": "Media Art",
       "nameZh": "Media Art",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1044"
+      "courseCount": 20,
+      "codedCourseCount": 19,
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bas"
     },
     {
       "id": "CITYU-UG-BAS-18-M2",
@@ -13553,9 +13565,9 @@ const catalogue = {
       "code": "ROBOTICS-AI",
       "nameEn": "Robotics & AI",
       "nameZh": "Robotics & AI",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1044"
+      "courseCount": 20,
+      "codedCourseCount": 19,
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bas"
     },
     {
       "id": "CITYU-UG-BAS-18-M3",
@@ -13563,9 +13575,9 @@ const catalogue = {
       "code": "ART-TECHNOLOGY",
       "nameEn": "Art & Technology",
       "nameZh": "Art & Technology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1044"
+      "courseCount": 20,
+      "codedCourseCount": 19,
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bas"
     },
     {
       "id": "CITYU-UG-BAS-18-M4",
@@ -13573,9 +13585,9 @@ const catalogue = {
       "code": "MATERIALS-DIGITAL-FABRICATION",
       "nameEn": "Materials & Digital Fabrication",
       "nameZh": "Materials & Digital Fabrication",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1044"
+      "courseCount": 20,
+      "codedCourseCount": 19,
+      "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bas"
     },
     {
       "id": "CITYU-UG-INSPIRE-19-M1",
@@ -15909,14 +15921,14 @@ const catalogue = {
     }
   ],
   "courseShardCounts": {
-    "CITYU": 1292,
+    "CITYU": 1966,
     "CUHK": 131,
     "HKU": 112,
     "HKUST": 121,
     "LINGNAN": 721,
     "POLYU": 166
   },
-  "codedCourseCount": 2543
+  "codedCourseCount": 3217
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

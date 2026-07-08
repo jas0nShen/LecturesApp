@@ -11,9 +11,9 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert(summary.programmeCount >= 445);
   assert(summary.majorCount >= 690);
   assert.equal(summary.requirementCount, 4);
-  assert(summary.courseCount >= 2550);
+  assert(summary.courseCount >= 3231);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 2543);
+  assert.equal(summary.codedCourseCount, 3217);
 });
 
 test('UG catalogue exposes the multi-school hierarchy needed for onboarding', () => {
@@ -47,7 +47,7 @@ test('UG per-school coverage stays visible for setup validation', () => {
     CUHK: { programmeCount: 84, majorCount: 84, codedCourseCount: 131 },
     HKUST: { programmeCount: 50, majorCount: 64, codedCourseCount: 121 },
     POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 166 },
-    CITYU: { programmeCount: 58, majorCount: 201, codedCourseCount: 1292 },
+    CITYU: { programmeCount: 58, majorCount: 201, codedCourseCount: 1966 },
     HKBU: { programmeCount: 22, majorCount: 46, codedCourseCount: 0 },
     EDUHK: { programmeCount: 25, majorCount: 25, codedCourseCount: 0 },
     LINGNAN: { programmeCount: 23, majorCount: 23, codedCourseCount: 721 }
@@ -74,8 +74,8 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert.equal(polyu.programmeWithCoursesCount, 1);
   assert.equal(polyu.codedCourseCount, 166);
   assert.equal(polyu.badge, 'COURSES');
-  assert.equal(cityu.programmeWithCoursesCount, 8);
-  assert.equal(cityu.codedCourseCount, 1292);
+  assert.equal(cityu.programmeWithCoursesCount, 20);
+  assert.equal(cityu.codedCourseCount, 1966);
   assert.equal(cityu.badge, 'COURSES');
   assert.equal(lingnan.programmeWithCoursesCount, 23);
   assert.equal(lingnan.codedCourseCount, 721);
@@ -599,6 +599,95 @@ test('CityU BBA Marketing exposes stream-specific undergraduate courses', () => 
   assert(globalCourses.some((course) => course.courseCode === 'CB3042' && course.titleEn === 'China Business Environment'));
   assert(analyticsCourses.some((course) => course.courseCode === 'MKT3608' && course.titleEn === 'Marketing Intelligence and Applications of Analytics'));
   assert(analyticsCourses.some((course) => course.courseCode === 'IS3100' && course.titleEn === 'Techniques for Big Data'));
+});
+
+test('CityU College of Business pending programmes expose shared undergraduate core courses', () => {
+  const cityu = ugService.listUniversities().find((item) => item.code === 'CITYU');
+  const programmes = ugService.listProgrammes({ universityId: cityu.id, degreeLevel: 'undergraduate' });
+  const expectations = [
+    ['JS1005', 28, 2],
+    ['JS1012', 28, 2],
+    ['JS1013', 56, 4],
+    ['JS1014', 70, 5],
+    ['JS1017', 28, 2],
+    ['JS1018', 42, 3],
+    ['JS1019', 56, 4]
+  ];
+
+  expectations.forEach(([jupasCode, programmeCourseCount, majorCount]) => {
+    const programme = programmes.find((item) => item.jupasCode === jupasCode);
+    const majors = ugService.listMajors(programme.id);
+
+    assert.equal(programme.sourceStatus, 'course_codes_available');
+    assert.equal(programme.codedCourseCount, programmeCourseCount);
+    assert.equal(majors.length, majorCount);
+    majors.forEach((major) => {
+      const courses = ugService.listMajorCourses(programme.id, major.id);
+      assert.equal(courses.length, 14);
+      assert(courses.some((course) => course.courseCode === 'CB2100' && course.titleEn === 'Introduction to Financial Accounting'));
+      assert(courses.some((course) => course.courseCode === 'CB4303' && course.titleEn === 'Strategic Management'));
+    });
+  });
+});
+
+test('CityU School of Creative Media programmes expose official undergraduate core courses', () => {
+  const cityu = ugService.listUniversities().find((item) => item.code === 'CITYU');
+  const programmes = ugService.listProgrammes({ universityId: cityu.id, degreeLevel: 'undergraduate' });
+  const expectations = [
+    ['JS1042', 84, 6, 14, ['SM2105', 'SM4712A']],
+    ['JS1043', 95, 5, 19, ['CS2303', 'SM4712B']],
+    ['JS1044', 76, 4, 19, ['SM3807', 'SM4712C']]
+  ];
+
+  expectations.forEach(([jupasCode, programmeCourseCount, majorCount, coursesPerMajor, courseCodes]) => {
+    const programme = programmes.find((item) => item.jupasCode === jupasCode);
+    const majors = ugService.listMajors(programme.id);
+
+    assert.equal(programme.sourceStatus, 'course_codes_available');
+    assert.equal(programme.codedCourseCount, programmeCourseCount);
+    assert.equal(majors.length, majorCount);
+    majors.forEach((major) => {
+      const courses = ugService.listMajorCourses(programme.id, major.id);
+      assert.equal(courses.length, coursesPerMajor);
+      courseCodes.forEach((courseCode) => {
+        assert(courses.some((course) => course.courseCode === courseCode));
+      });
+    });
+  });
+});
+
+test('CityU School of Creative Media entry programmes reuse degree-track course templates', () => {
+  const cityu = ugService.listUniversities().find((item) => item.code === 'CITYU');
+  const programmes = ugService.listProgrammes({ universityId: cityu.id, degreeLevel: 'undergraduate' });
+  const expectations = [
+    ['JS1040', 59, [
+      ['Creative Media (School-based)', 7, ['SM1701', 'SM1702A']],
+      ['BA Creative Media', 14, ['SM2105', 'SM4712A']],
+      ['BSc Creative Media', 19, ['CS2303', 'SM4712B']],
+      ['BAS New Media', 19, ['SM3807', 'SM4712C']]
+    ]],
+    ['JS1041', 52, [
+      ['BA Creative Media', 14, ['SM2105', 'SM4712A']],
+      ['BSc Creative Media', 19, ['CS2303', 'SM4712B']],
+      ['BAS New Media', 19, ['SM3807', 'SM4712C']]
+    ]]
+  ];
+
+  expectations.forEach(([jupasCode, programmeCourseCount, majorExpectations]) => {
+    const programme = programmes.find((item) => item.jupasCode === jupasCode);
+    const majors = ugService.listMajors(programme.id);
+
+    assert.equal(programme.sourceStatus, 'course_codes_available');
+    assert.equal(programme.codedCourseCount, programmeCourseCount);
+    majorExpectations.forEach(([majorName, coursesPerMajor, courseCodes]) => {
+      const major = majors.find((item) => item.nameEn === majorName);
+      const courses = ugService.listMajorCourses(programme.id, major.id);
+      assert.equal(courses.length, coursesPerMajor);
+      courseCodes.forEach((courseCode) => {
+        assert(courses.some((course) => course.courseCode === courseCode));
+      });
+    });
+  });
 });
 
 test('imported UG programmes can be searched by title, code and faculty', () => {
