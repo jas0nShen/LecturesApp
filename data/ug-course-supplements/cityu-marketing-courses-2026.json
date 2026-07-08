@@ -1,0 +1,59 @@
+{
+  "provider": "CityUHK Department of Marketing BBA Marketing programme structure",
+  "academicYear": "2026",
+  "sourceUrl": "https://www.cb.cityu.edu.hk/mkt/bbamkt/about/Programme-Structure/",
+  "officialUrl": "https://www.cb.cityu.edu.hk/mkt/bbamkt/about/Programme-Structure/",
+  "supplements": [
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1007",
+      "majorNameIncludes": "Global Marketing",
+      "courses": [
+        { "code": "CB2100", "title": "Introduction to Financial Accounting", "credits": 3, "group": "college core" },
+        { "code": "CB2101", "title": "Introduction to Managerial Accounting", "credits": 3, "group": "college core" },
+        { "code": "CB2200", "title": "Business Statistics", "credits": 3, "group": "college core" },
+        { "code": "CB2201", "title": "Operations Management", "credits": 3, "group": "college core" },
+        { "code": "CB2203", "title": "Data-driven Business Modeling", "credits": 3, "group": "college-specified course" },
+        { "code": "CB2240", "title": "Introduction to Business Programming in Python", "credits": 3, "group": "college-specified course" },
+        { "code": "CB2300", "title": "Management", "credits": 3, "group": "college core" },
+        { "code": "CB2400", "title": "Micro-Economics", "credits": 3, "group": "college core" },
+        { "code": "CB2402", "title": "Macro-Economics", "credits": 3, "group": "college core" },
+        { "code": "CB2500", "title": "Information Management", "credits": 3, "group": "college core" },
+        { "code": "CB2601", "title": "Marketing", "credits": 3, "group": "college core" },
+        { "code": "CB3410", "title": "Financial Management", "credits": 3, "group": "college core" },
+        { "code": "CB3601", "title": "Global Perspectives on Contemporary Issues", "credits": 3, "group": "college core" },
+        { "code": "CB4303", "title": "Strategic Management", "credits": 3, "group": "college core" },
+        { "code": "CB3645", "title": "Marketing Research", "credits": 3, "group": "marketing core" },
+        { "code": "MKT3603", "title": "Consumer Behaviour", "credits": 3, "group": "marketing core" },
+        { "code": "CB4601", "title": "Global Marketing", "credits": 3, "group": "global marketing stream" },
+        { "code": "CB3042", "title": "China Business Environment", "credits": 3, "group": "global marketing stream" }
+      ]
+    },
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1007",
+      "majorNameIncludes": "Marketing Analytics",
+      "courses": [
+        { "code": "CB2100", "title": "Introduction to Financial Accounting", "credits": 3, "group": "college core" },
+        { "code": "CB2101", "title": "Introduction to Managerial Accounting", "credits": 3, "group": "college core" },
+        { "code": "CB2200", "title": "Business Statistics", "credits": 3, "group": "college core" },
+        { "code": "CB2201", "title": "Operations Management", "credits": 3, "group": "college core" },
+        { "code": "CB2203", "title": "Data-driven Business Modeling", "credits": 3, "group": "college-specified course" },
+        { "code": "CB2240", "title": "Introduction to Business Programming in Python", "credits": 3, "group": "college-specified course" },
+        { "code": "CB2300", "title": "Management", "credits": 3, "group": "college core" },
+        { "code": "CB2400", "title": "Micro-Economics", "credits": 3, "group": "college core" },
+        { "code": "CB2402", "title": "Macro-Economics", "credits": 3, "group": "college core" },
+        { "code": "CB2500", "title": "Information Management", "credits": 3, "group": "college core" },
+        { "code": "CB2601", "title": "Marketing", "credits": 3, "group": "college core" },
+        { "code": "CB3410", "title": "Financial Management", "credits": 3, "group": "college core" },
+        { "code": "CB3601", "title": "Global Perspectives on Contemporary Issues", "credits": 3, "group": "college core" },
+        { "code": "CB4303", "title": "Strategic Management", "credits": 3, "group": "college core" },
+        { "code": "CB3645", "title": "Marketing Research", "credits": 3, "group": "marketing core" },
+        { "code": "MKT3603", "title": "Consumer Behaviour", "credits": 3, "group": "marketing core" },
+        { "code": "MKT3608", "title": "Marketing Intelligence and Applications of Analytics", "credits": 3, "group": "marketing analytics stream" },
+        { "code": "IS2502", "title": "Social Media and Social Networks", "credits": 3, "group": "marketing analytics stream" },
+        { "code": "IS3100", "title": "Techniques for Big Data", "credits": 3, "group": "marketing analytics stream" }
+      ]
+    }
+  ]
+}

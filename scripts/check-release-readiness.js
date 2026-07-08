@@ -34,13 +34,18 @@ function summarizeTpgCatalogue(tpgCatalogue) {
   };
 }
 
-function summarizeUgCatalogue(ugCatalogue) {
-  const programmeWithCourses = new Set((ugCatalogue.courses || []).map((course) => course.programmeId));
+function summarizeUgCatalogue(ugCatalogue, ugCourseShards) {
+  const courses = ugCourseShards && typeof ugCourseShards.listAllCourses === 'function'
+    ? ugCourseShards.listAllCourses()
+    : (ugCatalogue.courses || []);
+  const programmeWithCourses = new Set(courses.map((course) => course.programmeId));
   return {
     universityCount: (ugCatalogue.universities || []).length,
     programmeCount: (ugCatalogue.programmes || []).length,
     majorCount: (ugCatalogue.majors || []).length,
-    codedCourseCount: (ugCatalogue.courses || []).length,
+    codedCourseCount: ugCourseShards && typeof ugCourseShards.getCourseCount === 'function'
+      ? ugCourseShards.getCourseCount()
+      : courses.length,
     programmeWithCoursesCount: programmeWithCourses.size,
     universityCodes: (ugCatalogue.universities || []).map((university) => university.code)
   };
@@ -56,8 +61,9 @@ function checkReleaseReadiness(now = new Date()) {
   const tpgCatalogue = readJson(path.join(ROOT, 'data', 'tpg-programmes.json'));
   const releaseInfo = require(path.join(MINI_ROOT, 'utils', 'releaseInfo'));
   const ugCatalogue = require(path.join(MINI_ROOT, 'utils', 'ugCatalogue'));
+  const ugCourseShards = require(path.join(MINI_ROOT, 'utils', 'ugCourseShards'));
   const tpgSummary = summarizeTpgCatalogue(tpgCatalogue);
-  const ugSummary = summarizeUgCatalogue(ugCatalogue);
+  const ugSummary = summarizeUgCatalogue(ugCatalogue, ugCourseShards);
   const errors = [];
   const warnings = [];
 

@@ -1,5 +1,6 @@
 const data = require('./mockData');
 const catalogue = require('./ugCatalogue');
+const ugCourseShards = require('./ugCourseShards');
 
 function normalizeKeyword(keyword = '') {
   return String(keyword).trim().toLowerCase();
@@ -19,6 +20,23 @@ function getSeedProgramme(programmeId) {
 
 function getSeedMajor(majorId) {
   return data.majors.find((major) => sameId(major.id, majorId)) || null;
+}
+
+function getCatalogueProgramme(programmeId) {
+  return catalogue.programmes.find((programme) => sameId(programme.id, programmeId)) || null;
+}
+
+function getCatalogueCoursesByProgramme(programmeId) {
+  const programme = getCatalogueProgramme(programmeId);
+  if (!programme) return [];
+  return ugCourseShards.getCoursesByUniversityCode(programme.universityCode || programme.universityId)
+    .filter((course) => sameId(course.programmeId, programmeId));
+}
+
+function getCatalogueCourseCount() {
+  return typeof ugCourseShards.getCourseCount === 'function'
+    ? ugCourseShards.getCourseCount()
+    : catalogue.courses.length;
 }
 
 function listUniversities() {
@@ -64,7 +82,7 @@ function getFaculty(facultyId) {
 }
 
 function getProgramme(programmeId) {
-  return catalogue.programmes.find((programme) => sameId(programme.id, programmeId))
+  return getCatalogueProgramme(programmeId)
     || getSeedProgramme(programmeId)
     || null;
 }
@@ -99,10 +117,8 @@ function listRequirementGroups(programmeId, majorId, curriculumYear) {
 }
 
 function listMajorCourses(programmeId, majorId, filters = {}) {
-  const catalogueCourses = catalogue.courses.filter((course) => (
-    sameId(course.programmeId, programmeId)
-    && sameId(course.majorId, majorId)
-  ));
+  const catalogueCourses = getCatalogueCoursesByProgramme(programmeId)
+    .filter((course) => sameId(course.majorId, majorId));
   if (catalogueCourses.length) {
     const keyword = normalizeKeyword(filters.keyword);
     return catalogueCourses.filter((course) => {
@@ -242,9 +258,9 @@ function getCatalogueSummary() {
     facultyCount: listFaculties().length,
     programmeCount: undergraduateProgrammes.length,
     majorCount: majorIds.size,
-    courseCount: catalogue.courses.length + data.courses.length,
+    courseCount: getCatalogueCourseCount() + data.courses.length,
     requirementCount: data.requirements.length,
-    codedCourseCount: catalogue.courses.length,
+    codedCourseCount: getCatalogueCourseCount(),
     sourceProgrammeCount: catalogue.programmes.length
   };
 }

@@ -3,8 +3,18 @@ const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
 const test = require('node:test');
-const { addGenericCourseSupplements, buildStaticCatalogue, validateSourceDir } = require('./generate-ug-catalog');
-const { summarizeSourceFile } = require('./report-ug-source-coverage');
+const {
+  addGenericCourseSupplements,
+  buildStaticCatalogue,
+  groupCoursesByUniversity,
+  validateSourceDir
+} = require('./generate-ug-catalog');
+const {
+  filterSchools,
+  parseArgs,
+  summarizeGeneratedCatalogue,
+  summarizeSourceFile
+} = require('./report-ug-source-coverage');
 
 test('UG catalogue generator reports missing source files clearly', () => {
   const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'ug-catalog-empty-'));
@@ -100,6 +110,33 @@ test('UG source coverage report counts only rows with course codes as coded cour
   assert.equal(summary.importReady, true);
 });
 
+test('UG source coverage report includes generated catalogue supplement coverage', () => {
+  const summary = summarizeGeneratedCatalogue();
+  const cityu = summary.schools.find((school) => school.code === 'CITYU');
+  const lingnan = summary.schools.find((school) => school.code === 'LINGNAN');
+
+  assert.equal(summary.totals.programmeCount, 445);
+  assert.equal(summary.totals.codedCourseCount, 2543);
+  assert.equal(summary.totals.programmeWithCoursesCount, 38);
+  assert.equal(cityu.programmeWithCoursesCount, 8);
+  assert.equal(cityu.codedCourseCount, 1292);
+  assert.equal(lingnan.missingProgrammeCount, 0);
+});
+
+test('UG source coverage report can focus missing programme work by school', () => {
+  const args = parseArgs(['--school', 'cityu', '--missing-limit', '5', '--missing-only']);
+  const summary = summarizeGeneratedCatalogue(args);
+
+  assert.equal(args.school, 'CITYU');
+  assert.equal(args.missingLimit, 5);
+  assert.equal(args.missingOnly, true);
+  assert.deepEqual(summary.schools.map((school) => school.code), ['CITYU']);
+  assert.equal(summary.totals.programmeCount, 58);
+  assert.equal(summary.totals.programmeWithCoursesCount, 8);
+  assert.equal(summary.totals.missingProgrammeCount, 50);
+  assert.equal(filterSchools(summary.schools, 'HKU').length, 0);
+});
+
 test('UG generic course supplements can add non-computing undergraduate courses', () => {
   const catalogue = {
     programmes: [
@@ -158,4 +195,24 @@ test('UG generic course supplements can add non-computing undergraduate courses'
   assert.deepEqual(catalogue.courses.map((course) => course.courseCode), ['PHI1001', 'PHI2001']);
   assert.equal(catalogue.courses[0].courseType, 'core');
   assert.equal(catalogue.courses[0].sourceProvider, 'official curriculum page');
+});
+
+test('UG catalogue generator groups course shards by programme university', () => {
+  const catalogue = {
+    programmes: [
+      { id: 'HKU-UG-BSC-1', universityCode: 'HKU' },
+      { id: 'CITYU-UG-BBA-1', universityCode: 'CITYU' }
+    ],
+    courses: [
+      { programmeId: 'CITYU-UG-BBA-1', courseCode: 'CB2100' },
+      { programmeId: 'HKU-UG-BSC-1', courseCode: 'COMP2119' },
+      { programmeId: 'CITYU-UG-BBA-1', courseCode: 'CB2200' }
+    ]
+  };
+
+  const grouped = groupCoursesByUniversity(catalogue);
+
+  assert.deepEqual([...grouped.keys()].sort(), ['CITYU', 'HKU']);
+  assert.deepEqual(grouped.get('CITYU').map((course) => course.courseCode), ['CB2100', 'CB2200']);
+  assert.deepEqual(grouped.get('HKU').map((course) => course.courseCode), ['COMP2119']);
 });
