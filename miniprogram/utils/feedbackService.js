@@ -7,6 +7,13 @@ function valueOrDash(value) {
   return text || '待填写';
 }
 
+function joinProgrammeMajor(programme, major) {
+  const programmeText = valueOrDash(programme);
+  const majorText = String(major || '').trim();
+  if (!majorText || majorText === programmeText) return programmeText;
+  return `${programmeText} / ${majorText}`;
+}
+
 function buildProgrammeFields(profile, programmeOverride) {
   if (programmeOverride) {
     const university = tpgService.getProgrammeUniversity(programmeOverride);
@@ -19,6 +26,7 @@ function buildProgrammeFields(profile, programmeOverride) {
     return {
       university: valueOrDash((university && university.shortName) || programmeOverride.universityCode),
       programme: valueOrDash(programmeOverride.name),
+      major: '',
       curriculumYear: valueOrDash((university && university.academicYear) || ''),
       status: `${status.title} · ${status.courseCount ? `${status.courseCount} 门课程` : '课程清单待开放'}`,
       source: sourceParts.length ? sourceParts.join(' · ') : '资料来源待确认'
@@ -29,6 +37,7 @@ function buildProgrammeFields(profile, programmeOverride) {
     return {
       university: '待填写',
       programme: '待填写',
+      major: '',
       curriculumYear: '待填写',
       status: '尚未设置 Programme',
       source: '待填写'
@@ -49,6 +58,7 @@ function buildProgrammeFields(profile, programmeOverride) {
     return {
       university: valueOrDash((university && university.shortName) || profile.universityCode),
       programme: valueOrDash((programme && programme.name) || profile.programmeName),
+      major: '',
       curriculumYear: valueOrDash((university && university.academicYear) || profile.curriculumYear),
       status: status
         ? `${status.title} · ${status.courseCount ? `${status.courseCount} 门课程` : '课程清单待开放'}`
@@ -64,6 +74,7 @@ function buildProgrammeFields(profile, programmeOverride) {
     return {
       university: valueOrDash((ugProfile.university && ugProfile.university.nameZh) || profile.universityCode),
       programme: valueOrDash((ugProfile.programme && ugProfile.programme.nameEn) || profile.programmeName),
+      major: valueOrDash((ugProfile.major && ugProfile.major.nameEn) || profile.majorName || profile.majorCode),
       curriculumYear: valueOrDash(ugProfile.curriculumYear),
       status: ugProfile.codedCourseCount
         ? `${ugProfile.major.nameEn} · 已开放 ${ugProfile.codedCourseCount} 门课程`
@@ -75,6 +86,7 @@ function buildProgrammeFields(profile, programmeOverride) {
   return {
     university: valueOrDash(profile.universityCode || profile.universityName),
     programme: valueOrDash(profile.programmeName),
+    major: valueOrDash(profile.majorName || profile.majorCode),
     curriculumYear: valueOrDash(profile.curriculumYear),
     status: valueOrDash(profile.majorName || profile.majorCode),
     source: 'HKU 官方开课目录 / 培养方案'
@@ -97,6 +109,8 @@ function buildFeedbackTemplate(profile, options = {}) {
   const fields = buildProgrammeFields(profile, options.programme);
   const localSummary = buildLocalSummaryLine(options.userSummary);
   const isCourseDataPending = fields.status.includes('课程清单待开放') || fields.status.includes('待确认');
+  const programmeMajor = joinProgrammeMajor(fields.programme, fields.major);
+  const sourceHint = fields.source && fields.source !== '待填写' ? fields.source : '待填写';
 
   return [
     '【选课港反馈 / 纠错】',
@@ -109,10 +123,10 @@ function buildFeedbackTemplate(profile, options = {}) {
     ...(localSummary ? [`本机数据摘要：${localSummary}`] : []),
     '',
     '数据补充模板：',
-    `- 当前 Programme / Major：${fields.programme}`,
+    `- 当前 Programme / Major：${programmeMajor}`,
     `- 当前资料状态：${fields.status}`,
     `- 需要补充的课程代码 / 课程名：${isCourseDataPending ? '这个 Programme 课程清单待开放，请补充官方课程表' : '待填写'}`,
-    '- 官方链接 / 截图来源：待填写',
+    `- 官方链接 / 截图来源：${sourceHint}`,
     '- 备注：待填写',
     '',
     '问题类型：数据纠错 / 功能问题 / 界面建议 / 其他',

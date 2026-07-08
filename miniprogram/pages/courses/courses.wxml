@@ -58,6 +58,9 @@
         <view class="empty-mark">已收录</view>
         <view class="empty-title">Programme 已收录，课程清单待开放</view>
         <view class="empty-copy">你可以先查看 Programme 详情和资料来源；课程组完成复核后会在这里显示。</view>
+        <view class="empty-actions">
+          <view class="empty-action primary" bindtap="copyTpgFeedback">复制补课反馈模板</view>
+        </view>
       </view>
 
       <view wx:elif="{{tpgCourses.length === 0}}" class="empty">
@@ -125,6 +128,9 @@
         <view class="empty-mark">已收录</view>
         <view class="empty-title">Programme / Major 已收录，课程清单待开放</view>
         <view class="empty-copy">当前先保存你的本科范围；课程代码和毕业规则完成复核后会在这里显示。</view>
+        <view class="empty-actions">
+          <view class="empty-action primary" bindtap="copyUgFeedback">复制补课反馈模板</view>
+        </view>
       </view>
 
       <view wx:elif="{{ugCourses.length === 0}}" class="empty">

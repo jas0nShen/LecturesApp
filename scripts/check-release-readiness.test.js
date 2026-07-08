@@ -191,13 +191,22 @@ test('backup copy actions use the readable backup formatter', () => {
 
 test('feedback copy includes only count-based local context', () => {
   const profileLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'profile', 'profile.js'), 'utf8');
+  const coursesLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'courses', 'courses.js'), 'utf8');
+  const coursesPage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'courses', 'courses.wxml'), 'utf8');
   const feedbackLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'utils', 'feedbackService.js'), 'utf8');
 
   assert(profileLogic.includes('userSummary: this.data.userSummary'));
+  assert(coursesLogic.includes("const feedbackService = require('../../utils/feedbackService')"));
+  assert(coursesLogic.includes('copyTpgFeedback()'));
+  assert(coursesLogic.includes('copyUgFeedback()'));
+  assert(coursesPage.includes('bindtap="copyTpgFeedback"'));
+  assert(coursesPage.includes('bindtap="copyUgFeedback"'));
+  assert(coursesPage.includes('复制补课反馈模板'));
   assert(feedbackLogic.includes('本机数据摘要'));
   assert(feedbackLogic.includes('只包含数量，不包含具体课程或笔记内容'));
   assert(feedbackLogic.includes('数据补充模板'));
   assert(feedbackLogic.includes('需要补充的课程代码 / 课程名'));
+  assert(feedbackLogic.includes('官方链接 / 截图来源'));
 });
 
 test('data status source copy handles missing source text', () => {

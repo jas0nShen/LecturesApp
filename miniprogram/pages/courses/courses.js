@@ -1,4 +1,5 @@
 const service = require('../../utils/courseService');
+const feedbackService = require('../../utils/feedbackService');
 const tpgService = require('../../utils/tpgService');
 const ugService = require('../../utils/ugService');
 
@@ -385,6 +386,20 @@ Page({
     });
   },
 
+  copyTpgFeedback() {
+    const programme = this.data.tpgProgramme;
+    if (!programme) return;
+    const template = feedbackService.buildFeedbackTemplate(service.getProfile(), {
+      programme
+    });
+    wx.setClipboardData({
+      data: template,
+      success: () => {
+        wx.showToast({ title: '反馈模板已复制' });
+      }
+    });
+  },
+
   copyUgSource() {
     const profile = this.data.ugProfile;
     const sourceUrl = profile && profile.sourceUrl;
@@ -396,6 +411,16 @@ Page({
       data: sourceUrl,
       success: () => {
         wx.showToast({ title: '官方链接已复制' });
+      }
+    });
+  },
+
+  copyUgFeedback() {
+    const template = feedbackService.buildFeedbackTemplate(service.getProfile());
+    wx.setClipboardData({
+      data: template,
+      success: () => {
+        wx.showToast({ title: '反馈模板已复制' });
       }
     });
   },
