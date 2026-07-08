@@ -10,11 +10,14 @@ const {
   validateSourceDir
 } = require('./generate-ug-catalog');
 const {
+  buildMissingCollectorTemplate,
   filterImportableProgrammes,
   filterSchools,
+  formatCollectorSourceStatus,
   formatMissingSourceStatus,
   formatSourceReadinessSummary,
   getSourceProgrammeMap,
+  listMissingProgrammesForCollection,
   listImportableProgrammes,
   parseArgs,
   parseCsv,
@@ -339,6 +342,27 @@ test('UG source coverage report supports machine-readable JSON mode', () => {
   assert.equal(summary.schools[0].missingProgrammes[0].code, 'JS1050');
   assert.match(summary.schools[0].missingProgrammes[0].officialUrl, /jupas\.edu\.hk\/en\/programme\/cityuhk\/JS1050/);
   assert(summary.totals.codedCourseCount > 0);
+});
+
+test('UG source coverage report can generate a collector template for missing programmes', () => {
+  const args = parseArgs(['--school', 'hku', '--missing-only', '--missing-limit', '2', '--collector-template']);
+  const sourceSummary = summarizeSources('/Users/shenjingsong/Documents/Codex/2026-07-06/pdf/outputs', args);
+  const summary = summarizeGeneratedCatalogue({ ...args, sourceSummary });
+  const missing = listMissingProgrammesForCollection(summary, args);
+  const template = buildMissingCollectorTemplate(summary, args);
+
+  assert.equal(args.collectorTemplate, true);
+  assert.equal(missing.length, 2);
+  assert.equal(missing[0].schoolCode, 'HKU');
+  assert.equal(formatCollectorSourceStatus(missing[0]), '仅有 Programme 索引：1 条');
+  assert.match(template, /【本科课程资料待补清单】/);
+  assert.match(template, /范围：HKU/);
+  assert.match(template, /待补 Programme：116/);
+  assert.match(template, /来源状态：0 source importable · 0 coded not importable · 106 index only · 10 no source/);
+  assert.match(template, /6066 · Bachelor of Arts and Bachelor of Education in Language Education - English/);
+  assert.match(template, /官方入口：https:\/\/admissions\.hku\.hk\/programmes\/undergraduate-programmes\/bachelor-of-arts-and-bachelor-of-education-language-education/);
+  assert.match(template, /不要自行推测课程/);
+  assert.match(template, /课程代码 \/ 课程名 \/ 学分 \/ Year \/ Semester \/ 课程类别 \/ 来源链接/);
 });
 
 test('UG generic course supplements can add non-computing undergraduate courses', () => {

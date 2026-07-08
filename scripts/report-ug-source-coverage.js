@@ -17,6 +17,7 @@ function parseArgs(argv = process.argv.slice(2)) {
     missingLimit: missingLimitIndex === -1 ? 20 : Number(argv[missingLimitIndex + 1]),
     missingOnly: argv.includes('--missing-only'),
     missingSummary: argv.includes('--missing-summary'),
+    collectorTemplate: argv.includes('--collector-template'),
     importableOnly: argv.includes('--importable-only'),
     needsImportOnly: argv.includes('--needs-import-only'),
     json: argv.includes('--json')
@@ -521,6 +522,10 @@ function printGeneratedCatalogueReport(summary, options = {}) {
     return;
   }
   if (options.missingOnly) {
+    if (options.collectorTemplate) {
+      printMissingCollectorTemplate(summary, options);
+      return;
+    }
     if (options.missingSummary) printMissingSourceReadiness(summary);
     printMissingProgrammes(summary, options);
     return;
@@ -558,6 +563,63 @@ function formatSourceReadinessSummary(sourceReadiness = {}) {
     `${sourceReadiness.sourceIndexOnly || 0} index only`,
     `${sourceReadiness.noSource || 0} no source`
   ].join(' · ');
+}
+
+function formatCollectorSourceStatus(programme) {
+  if (programme.sourceStatus === 'source_importable_rows') {
+    return `已有可导入课程码：${programme.sourceImportableCodedCourseCount || 0} 条`;
+  }
+  if (programme.sourceStatus === 'source_coded_rows_not_importable') {
+    return `已有 raw 课程码但需整理：${programme.sourceCodedCourseCount || 0} 条`;
+  }
+  if (programme.sourceStatus === 'source_index_only') {
+    return `仅有 Programme 索引：${programme.sourceCourseRowCount || 0} 条`;
+  }
+  return '暂无外部来源';
+}
+
+function listMissingProgrammesForCollection(summary, options = {}) {
+  const missingLimit = Number.isFinite(Number(options.missingLimit)) ? Number(options.missingLimit) : 20;
+  if (missingLimit <= 0) return [];
+  return summary.schools
+    .flatMap((school) => school.missingProgrammes.map((programme) => ({
+      schoolCode: school.code,
+      schoolNameZh: school.nameZh,
+      ...programme
+    })))
+    .slice(0, missingLimit);
+}
+
+function buildMissingCollectorTemplate(summary, options = {}) {
+  const programmes = listMissingProgrammesForCollection(summary, options);
+  const scope = options.school ? options.school : 'ALL';
+  const lines = [
+    '【本科课程资料待补清单】',
+    `范围：${scope}`,
+    `待补 Programme：${summary.totals.missingProgrammeCount}`,
+    `来源状态：${formatSourceReadinessSummary(summary.totals.sourceReadiness)}`,
+    '',
+    '采集要求：',
+    '- 只收集学校官网、官方课程手册、JUPAS/招生页或用户提供的可信资料。',
+    '- 需要尽量包含课程代码、课程名、学分/units、推荐 Year/Semester、core/elective/capstone 分类和官方链接。',
+    '- 如果官网只有 Programme 简介、没有课程码，请标记为“仅索引”，不要自行推测课程。',
+    '',
+    `待补项目（前 ${programmes.length} 个）：`
+  ];
+
+  if (!programmes.length) {
+    lines.push('- 暂无待补 Programme。');
+  } else {
+    programmes.forEach((programme, index) => {
+      lines.push(`${index + 1}. ${programme.schoolCode} · ${programme.code} · ${programme.name}`);
+      if (programme.faculty) lines.push(`   学院：${programme.faculty}`);
+      lines.push(`   当前来源状态：${formatCollectorSourceStatus(programme)}`);
+      lines.push(`   官方入口：${programme.officialUrl || '待查'}`);
+      lines.push('   待补资料：课程代码 / 课程名 / 学分 / Year / Semester / 课程类别 / 来源链接');
+    });
+  }
+
+  return lines.join('\n');
 }
 
 function printMissingSourceReadiness(summary) {
@@ -600,6 +662,10 @@ function printMissingProgrammes(summary, options = {}) {
       programme.officialUrl
     ].filter(Boolean).join(' · '));
   });
+}
+
+function printMissingCollectorTemplate(summary, options = {}) {
+  console.log(buildMissingCollectorTemplate(summary, options));
 }
 
 function main() {
@@ -649,6 +715,9 @@ module.exports = {
   listImportableProgrammes,
   formatMissingSourceStatus,
   formatSourceReadinessSummary,
+  formatCollectorSourceStatus,
+  listMissingProgrammesForCollection,
+  buildMissingCollectorTemplate,
   summarizeMissingSourceReadiness,
   printGeneratedCatalogueReport
 };

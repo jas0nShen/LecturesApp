@@ -29,6 +29,12 @@ npm run check:ship
 npm run status:ug-sources -- --missing-only --missing-limit 20
 ```
 
+生成可复制的本科课程资料采集任务单：
+
+```bash
+npm run status:ug-sources -- --school HKU --missing-only --missing-limit 10 --collector-template
+```
+
 `check:release` 当前检查：
 
 - 微信 AppID 格式；

@@ -37,10 +37,11 @@ npm run check:ship
 ## 数据补全默认流程
 
 1. 用 `npm run status:ug-sources -- --school <code> --missing-only --missing-limit 10` 找缺口。
-2. 对用户提供的单个资料文件，先跑 `npm run status:ug-sources -- --source-file "<file>" --school <code> --missing-limit 10`，确认 raw rows、importable coded rows 和 summary-only rows。
-3. 打开报告中的 `officialUrl` 或用户提供资料，确认是否有课程代码。
-4. 新增或更新 `data/ug-course-supplements/*.json`。
-5. 运行 `npm run sync:ug-catalog` 生成离线数据。
-6. 增加 programme count、关键 course code、search/profile 相关测试。
-7. 运行 `npm run check:ship`。
-8. 通过后再提交。
+2. 需要整理待采集清单时，运行 `npm run status:ug-sources -- --school <code> --missing-only --missing-limit 10 --collector-template`，复制包含官方入口、来源状态和待补字段的任务单。
+3. 对用户提供的单个资料文件，先跑 `npm run status:ug-sources -- --source-file "<file>" --school <code> --missing-limit 10`，确认 raw rows、importable coded rows 和 summary-only rows。
+4. 打开报告中的 `officialUrl` 或用户提供资料，确认是否有课程代码。
+5. 新增或更新 `data/ug-course-supplements/*.json`。
+6. 运行 `npm run sync:ug-catalog` 生成离线数据。
+7. 增加 programme count、关键 course code、search/profile 相关测试。
+8. 运行 `npm run check:ship`。
+9. 通过后再提交。
