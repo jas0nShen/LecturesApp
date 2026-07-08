@@ -193,6 +193,18 @@
   margin-top: 18rpx;
 }
 
+.data-updated-line {
+  background: rgba(232, 241, 237, 0.08);
+  border: 1rpx solid rgba(143, 196, 180, 0.18);
+  border-radius: 999rpx;
+  color: #dcebe5;
+  display: inline-flex;
+  font-size: 19rpx;
+  font-weight: 750;
+  margin-top: 16rpx;
+  padding: 9rpx 16rpx;
+}
+
 .ug-school-list {
   border: 1rpx solid rgba(143, 196, 180, 0.22);
   border-radius: 16rpx;
@@ -233,9 +245,22 @@
   margin-top: 4rpx;
 }
 
+.ug-school-meta.muted {
+  color: rgba(220, 235, 229, 0.68);
+  font-size: 18rpx;
+}
+
 .ug-school-side {
   flex: none;
   text-align: right;
+}
+
+.ug-school-percent {
+  color: #ffffff;
+  font-size: 28rpx;
+  font-weight: 900;
+  letter-spacing: -1rpx;
+  margin-bottom: 8rpx;
 }
 
 .ug-school-badge {

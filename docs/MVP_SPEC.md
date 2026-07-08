@@ -56,9 +56,11 @@ npm run check:release
 
 ## 上线后优先路线
 
-1. 根据首批用户反馈，优先补齐高频 Programme 的课程组；
-2. 增加更多学校官方链接和 Programme Handbook 来源；
-3. 逐步补齐本科高频 Programme 的课程代码和毕业规则；
-4. 将 TPG 课程结构从“展示”推进到“可勾选完成度”；
-5. 再考虑生产 HTTPS API、后台数据维护和云端同步；
-6. 最后才进入复杂毕业规则引擎和 transcript 自动导入。
+1. 稳定可发布版本：持续通过 `npm run check:ship`，保留本地存储和离线数据边界；
+2. 用 `npm run status:ug-sources` 定位本科 Programme 缺口，优先补资料可追溯和用户高频 Programme；
+3. 每批新增课程都通过 supplement JSON、重新生成 UG catalogue，并补充课程数量和关键课程码测试；
+4. 将 Study Plan 作为下一阶段核心功能，从课程清单推进到 Year / Semester 规划、收藏、已修和备注；
+5. 增强数据反馈入口和数据覆盖页，方便收集用户反馈与定位缺失课程；
+6. 云同步、生产 HTTPS API、复杂毕业规则引擎和 transcript 自动导入放到更后续阶段。
+
+详细路线见 [`ROADMAP.md`](ROADMAP.md)。

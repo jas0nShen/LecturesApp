@@ -23,6 +23,12 @@ npm run check:release
 npm run check:ship
 ```
 
+查看本科资料覆盖和后续补数缺口：
+
+```bash
+npm run status:ug-sources -- --missing-only --missing-limit 20
+```
+
 `check:release` 当前检查：
 
 - 微信 AppID 格式；
@@ -37,6 +43,7 @@ npm run check:ship
 - TPG Programme 索引覆盖是否正常；
 - TPG 已开放课程组和已拆课程数量；
 - UG Programme / Major 目录覆盖是否正常；
+- UG 缺口报告是否能显示待补 Programme、官方入口、raw coded rows 和可导入课程数；
 - 待上传文件数量和估算包体积。
 
 `check:release` 会输出当前版本、离线发布模式、TPG/UG 覆盖指标和仍需人工确认的微信后台事项。

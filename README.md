@@ -79,6 +79,14 @@ npm run check
 npm run sync:ug-catalog
 ```
 
+查看本科数据覆盖、待补 Programme 和官方入口可运行：
+
+```bash
+npm run status:ug-sources -- --school cityu --missing-only --missing-limit 10
+```
+
+报告会区分原始课程行数、按 track 可导入课程数和已开放 Programme 数；后续补数据时优先以该报告定位缺口。
+
 如果 JSON 文件不在默认目录，可显式传入：
 
 ```bash
@@ -120,3 +128,4 @@ npm run status:release
 
 人工发布步骤见 [`docs/RELEASE_CHECKLIST.md`](docs/RELEASE_CHECKLIST.md)。
 可直接复制到微信后台的首发说明见 [`docs/REVIEW_SUBMISSION.md`](docs/REVIEW_SUBMISSION.md)。
+后续开发路线见 [`docs/ROADMAP.md`](docs/ROADMAP.md)。

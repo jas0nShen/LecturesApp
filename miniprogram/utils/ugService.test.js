@@ -14,6 +14,8 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert(summary.courseCount >= 3231);
   assert.equal(summary.sourceProgrammeCount, 444);
   assert.equal(summary.codedCourseCount, 3217);
+  assert.match(summary.generatedAt, /^2026-07-08T/);
+  assert.equal(summary.generatedDate, '2026-07-08');
 });
 
 test('UG catalogue exposes the multi-school hierarchy needed for onboarding', () => {
@@ -65,19 +67,29 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert.equal(hku.programmeCount, 136);
   assert.equal(hku.majorCount, 136);
   assert.equal(hku.programmeWithCoursesCount, 2);
+  assert.equal(hku.pendingProgrammeCount, 134);
+  assert.equal(hku.coveragePercent, 1);
   assert.equal(hku.codedCourseCount, 112);
   assert.equal(hku.badge, 'COURSES');
   const cuhk = coverage.find((school) => school.code === 'CUHK');
   assert.equal(cuhk.programmeWithCoursesCount, 3);
+  assert(cuhk.pendingProgrammeCount > 0);
+  assert(cuhk.coveragePercent > 0);
   assert.equal(cuhk.codedCourseCount, 131);
   assert.equal(cuhk.badge, 'COURSES');
   assert.equal(polyu.programmeWithCoursesCount, 1);
+  assert.equal(polyu.pendingProgrammeCount, 45);
+  assert.equal(polyu.coveragePercent, 2);
   assert.equal(polyu.codedCourseCount, 166);
   assert.equal(polyu.badge, 'COURSES');
   assert.equal(cityu.programmeWithCoursesCount, 20);
+  assert.equal(cityu.pendingProgrammeCount, 38);
+  assert.equal(cityu.coveragePercent, 34);
   assert.equal(cityu.codedCourseCount, 1966);
   assert.equal(cityu.badge, 'COURSES');
   assert.equal(lingnan.programmeWithCoursesCount, 23);
+  assert.equal(lingnan.pendingProgrammeCount, 0);
+  assert.equal(lingnan.coveragePercent, 100);
   assert.equal(lingnan.codedCourseCount, 721);
   assert.equal(lingnan.badge, 'COURSES');
   assert(polyu.coverageLabel.includes('课程代码'));

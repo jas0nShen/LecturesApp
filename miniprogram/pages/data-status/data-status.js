@@ -45,12 +45,18 @@ Page({
 
   copyUgSummary() {
     const status = this.data.ugStatus;
+    const schools = (this.data.ugSchools || []).map((school) => (
+      `${school.code}：${school.programmeWithCoursesCount}/${school.programmeCount} Programme 已开放课程 · ${school.pendingProgrammeCount} 个待补 · ${school.codedCourseCount} codes`
+    ));
     const text = [
       '本科资料库状态',
       `学校：${status.universityCount}`,
       `Programme：${status.sourceProgrammeCount}`,
       `Major / Track：${status.majorCount}`,
       `已录入课程代码：${status.codedCourseCount}`,
+      `数据更新时间：${status.generatedDate || '待确认'}`,
+      '学校覆盖：',
+      ...schools,
       '说明：Programme / Major 已接入；毕业规则和课程清单按公开资料逐步复核开放。'
     ].join('\n');
     copyTextOrToast(text, '本科状态已复制');

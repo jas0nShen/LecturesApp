@@ -39,6 +39,10 @@ function getCatalogueCourseCount() {
     : catalogue.courses.length;
 }
 
+function getCatalogueGeneratedDate() {
+  return catalogue.generatedAt ? String(catalogue.generatedAt).slice(0, 10) : '';
+}
+
 function listUniversities() {
   return catalogue.universities.length ? catalogue.universities : data.universities;
 }
@@ -261,7 +265,9 @@ function getCatalogueSummary() {
     courseCount: getCatalogueCourseCount() + data.courses.length,
     requirementCount: data.requirements.length,
     codedCourseCount: getCatalogueCourseCount(),
-    sourceProgrammeCount: catalogue.programmes.length
+    sourceProgrammeCount: catalogue.programmes.length,
+    generatedAt: catalogue.generatedAt || '',
+    generatedDate: getCatalogueGeneratedDate()
   };
 }
 
@@ -272,6 +278,10 @@ function getSchoolCoverage() {
     const sourceMajors = catalogue.majors.filter((major) => sourceProgrammeIds.has(major.programmeId));
     const codedCourseCount = sourceProgrammes.reduce((sum, programme) => sum + (programme.codedCourseCount || 0), 0);
     const programmeWithCoursesCount = sourceProgrammes.filter((programme) => (programme.codedCourseCount || 0) > 0).length;
+    const pendingProgrammeCount = Math.max(sourceProgrammes.length - programmeWithCoursesCount, 0);
+    const coveragePercent = sourceProgrammes.length
+      ? Math.round((programmeWithCoursesCount / sourceProgrammes.length) * 100)
+      : 0;
 
     return {
       ...university,
@@ -279,6 +289,8 @@ function getSchoolCoverage() {
       majorCount: sourceMajors.length,
       codedCourseCount,
       programmeWithCoursesCount,
+      pendingProgrammeCount,
+      coveragePercent,
       badge: codedCourseCount ? 'COURSES' : 'INDEX',
       coverageLabel: codedCourseCount
         ? `${programmeWithCoursesCount} 个 Programme 已开放课程代码`
