@@ -63,6 +63,20 @@
       <view class="notice-type {{item.type}}">{{item.type === 'offering' ? '开课' : item.type === 'prerequisite' ? '先修' : item.type === 'corequisite' ? '共修' : '负担'}}</view>
       <view class="notice-message">{{item.message}}</view>
     </view>
+    <view wx:if="{{review.loadSuggestions.length}}" class="load-suggestions">
+      <view class="load-title">可尝试调整</view>
+      <view wx:for="{{review.loadSuggestions}}" wx:key="id" class="load-suggestion">
+        <view class="load-message">{{item.message}}</view>
+        <view wx:for="{{item.candidates}}" wx:for-item="candidate" wx:key="courseCode" class="load-candidate" data-code="{{candidate.courseCode}}" bindtap="editCourse">
+          <view>
+            <view class="load-code">{{candidate.courseCode}}</view>
+            <view class="load-name">{{candidate.title}}</view>
+            <view class="load-route">{{candidate.fromLabel}} → {{candidate.toLabel}}</view>
+          </view>
+          <view class="load-action">调整</view>
+        </view>
+      </view>
+    </view>
     <view class="review-disclaimer">根据 2025–26 开课资料、已修记录和计划顺序提示；等价课程、成绩门槛、正式课表及学院审批仍以官方信息为准。</view>
   </view>
 

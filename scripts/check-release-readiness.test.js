@@ -413,6 +413,9 @@ test('study plan page exposes local planning states and quick actions', () => {
   assert(planPage.includes('未安排的核心课'));
   assert(planPage.includes('{{coreGapSummary.courseCount}}'));
   assert(planPage.includes('wx:for="{{coreGapSummary.groups}}"'));
+  assert(planPage.includes('可尝试调整'));
+  assert(planPage.includes('wx:for="{{review.loadSuggestions}}"'));
+  assert(planPage.includes('{{candidate.fromLabel}} → {{candidate.toLabel}}'));
   assert(planPage.includes('wx:for="{{suggestions}}"'));
   assert(planPage.includes('{{course.completed ? \'取消已修\' : \'标记已修\'}}'));
   assert(planPage.includes('{{course.favorite ? \'取消收藏\' : \'收藏\'}}'));

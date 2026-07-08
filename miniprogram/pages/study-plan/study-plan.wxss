@@ -126,6 +126,65 @@
 .notice-type.corequisite { border-color: #7d89a7; color: #505f82; }
 .notice-type.load { border-color: #aa7652; color: #875938; }
 .notice-message { color: #684d24; font-size: 23rpx; line-height: 1.5; }
+.load-suggestions {
+  background: #fffaf0;
+  border: 1rpx solid #efd9ad;
+  border-radius: 14rpx;
+  margin-top: 18rpx;
+  padding: 16rpx;
+}
+.load-title {
+  color: #80520e;
+  font-size: 21rpx;
+  font-weight: 850;
+}
+.load-suggestion {
+  border-top: 1rpx solid #f0dfbd;
+  margin-top: 12rpx;
+  padding-top: 12rpx;
+}
+.load-message {
+  color: #684d24;
+  font-size: 21rpx;
+  line-height: 1.45;
+}
+.load-candidate {
+  align-items: center;
+  background: #ffffff;
+  border: 1rpx solid #eadbbd;
+  border-radius: 12rpx;
+  display: flex;
+  gap: 14rpx;
+  justify-content: space-between;
+  margin-top: 10rpx;
+  padding: 14rpx;
+}
+.load-code {
+  color: #0b6b55;
+  font-size: 20rpx;
+  font-weight: 850;
+}
+.load-name {
+  color: #17352c;
+  font-size: 21rpx;
+  font-weight: 800;
+  line-height: 1.35;
+  margin-top: 4rpx;
+}
+.load-route {
+  color: #8b7755;
+  font-size: 18rpx;
+  margin-top: 5rpx;
+}
+.load-action {
+  background: #f1e3c4;
+  border-radius: 999rpx;
+  color: #80520e;
+  flex: none;
+  font-size: 19rpx;
+  font-weight: 850;
+  padding: 9rpx 14rpx;
+}
 .review-disclaimer { color: #967a4f; font-size: 19rpx; line-height: 1.5; margin-top: 18rpx; }
 .suggestion-card {
   background: #eef7f3;

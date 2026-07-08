@@ -292,6 +292,28 @@ test('study plan analysis flags unavailable terms, missing corequisites and heav
   assert(review.notices.some((notice) => notice.type === 'load' && notice.message.includes('42 学分')));
   assert(review.issueCodes.includes('COMP3230'));
   assert(review.termLoads.some((load) => load.year === 1 && load.term === '1' && load.overloaded));
+  assert(review.loadSuggestions.some((suggestion) => (
+    suggestion.year === 1
+    && suggestion.term === '1'
+    && suggestion.candidates.some((candidate) => candidate.toTerm === '2')
+  )));
+});
+
+test('study plan load suggestions prefer movable courses in the alternate semester', () => {
+  ['COMP1117', 'COMP2113', 'COMP2119', 'COMP2121', 'COMP2501', 'COMP3234', 'COMP3278']
+    .forEach((code) => service.saveStudyPlanItem(code, 1, '1'));
+
+  const review = service.analyzeStudyPlan();
+  const suggestion = review.loadSuggestions.find((item) => item.year === 1 && item.term === '1');
+
+  assert(suggestion);
+  assert.equal(suggestion.credits, 42);
+  assert(suggestion.message.includes('Semester 2'));
+  assert(suggestion.candidates.length > 0);
+  assert(suggestion.candidates.length <= 3);
+  assert(suggestion.candidates.every((candidate) => candidate.fromLabel === 'Year 1 Semester 1'));
+  assert(suggestion.candidates.every((candidate) => candidate.toLabel === 'Year 1 Semester 2'));
+  assert(suggestion.candidates.every((candidate) => candidate.credits > 0));
 });
 
 test('study plan analysis summarizes core elective and capstone mix', () => {
@@ -347,6 +369,17 @@ test('study plan can be formatted as grouped shareable text with checks', () => 
   assert(text.includes('Plan checks:'));
   assert(!text.includes('courseNotes'));
   assert(!text.includes('Confirm official timetable, prerequisites and degree requirements with HKU.'));
+});
+
+test('study plan share text includes overload move suggestions when available', () => {
+  ['COMP1117', 'COMP2113', 'COMP2119', 'COMP2121', 'COMP2501', 'COMP3234', 'COMP3278']
+    .forEach((code) => service.saveStudyPlanItem(code, 1, '1'));
+
+  const text = service.formatStudyPlanText(new Date('2026-07-05T00:00:00Z'));
+
+  assert(text.includes('Load suggestions:'));
+  assert(text.includes('Year 1 Semester 1 可考虑移动'));
+  assert(text.includes('Year 1 Semester 1 -> Year 1 Semester 2'));
 });
 
 test('study plan share text uses the saved school and programme context', () => {

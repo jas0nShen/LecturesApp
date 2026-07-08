@@ -447,6 +447,53 @@ function getStudyPlanCategoryLabel(categoryKey) {
   return found ? found.label : 'Other';
 }
 
+function termLabel(term) {
+  return term === 'full year' ? 'Full Year' : `Semester ${term}`;
+}
+
+function buildStudyPlanLoadSuggestions(courses, termLoads) {
+  return termLoads
+    .filter((load) => load.overloaded)
+    .map((load) => {
+      const targetTerm = load.term === '1' ? '2' : '1';
+      const candidates = courses
+        .filter((item) => (
+          item.plannedYear === load.year
+          && item.plannedTerm === load.term
+          && !item.completed
+          && (item.offering.terms || []).includes(targetTerm)
+        ))
+        .map((item) => ({
+          courseCode: item.courseCode,
+          title: item.offering.title,
+          credits: Number((item.offering.details && item.offering.details.credits) || 0),
+          fromYear: load.year,
+          fromTerm: load.term,
+          toYear: load.year,
+          toTerm: targetTerm,
+          fromLabel: `Year ${load.year} ${termLabel(load.term)}`,
+          toLabel: `Year ${load.year} ${termLabel(targetTerm)}`
+        }))
+        .sort((left, right) => (
+          right.credits - left.credits
+          || left.courseCode.localeCompare(right.courseCode)
+        ))
+        .slice(0, 3);
+
+      return {
+        id: `load-suggestion-${load.year}-${load.term}`,
+        year: load.year,
+        term: load.term,
+        credits: load.credits,
+        targetTerm,
+        message: candidates.length
+          ? `Year ${load.year} Semester ${load.term} 可考虑移动 ${candidates[0].courseCode} 到 Semester ${targetTerm}。`
+          : `Year ${load.year} Semester ${load.term} 暂未找到同学年另一学期也开放的可移动课程。`,
+        candidates
+      };
+    });
+}
+
 function analyzeStudyPlan() {
   const courses = getStudyPlanCourses();
   const completedCodes = getCompletedOfferingCodes();
@@ -552,6 +599,7 @@ function analyzeStudyPlan() {
     bucket.credits += credits;
     if (item.completed) bucket.completedCount += 1;
   });
+  const loadSuggestions = buildStudyPlanLoadSuggestions(courses, termLoads);
 
   return {
     courseCount: courses.length,
@@ -563,6 +611,7 @@ function analyzeStudyPlan() {
     noticeCounts,
     issueCodes: [...new Set(notices.map((notice) => notice.courseCode).filter(Boolean))],
     termLoads,
+    loadSuggestions,
     notices
   };
 }
@@ -706,6 +755,15 @@ function formatStudyPlanText(now = new Date()) {
     lines.push('', `Remaining Core: ${coreGapSummary.courseCount} courses · ${coreGapSummary.credits} credits`);
     coreGapSummary.groups.forEach((group) => {
       lines.push(`- ${group.yearLabel}: ${group.courseCount} courses · ${group.credits} credits`);
+    });
+  }
+  if (review.loadSuggestions.length) {
+    lines.push('', 'Load suggestions:');
+    review.loadSuggestions.forEach((suggestion) => {
+      lines.push(`- ${suggestion.message}`);
+      suggestion.candidates.forEach((candidate) => {
+        lines.push(`  - ${candidate.courseCode} ${candidate.title} (${candidate.credits} credits): ${candidate.fromLabel} -> ${candidate.toLabel}`);
+      });
     });
   }
   if (review.notices.length) {

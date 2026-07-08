@@ -20,6 +20,7 @@ Page({
       noticeCounts: {},
       issueCodes: [],
       termLoads: [],
+      loadSuggestions: [],
       notices: []
     }
   },
