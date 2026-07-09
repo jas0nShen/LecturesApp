@@ -12,7 +12,7 @@
   </block>
 
   <block wx:elif="{{isTpg}}">
-    <view class="tpg-hero">
+    <view class="tpg-hero course-hero">
       <view class="tpg-eyebrow">{{tpgProgramme.universityCode}} · {{tpgUniversity.academicYear}}</view>
       <view class="tpg-title">{{tpgProgramme.name}}</view>
       <view class="tpg-subtitle">{{tpgProgramme.faculty || 'Faculty 待确认'}}</view>
@@ -25,7 +25,7 @@
       </view>
     </view>
 
-    <view class="section tpg-status">
+    <view class="section tpg-status course-status">
       <view class="stamp-mark">{{tpgCourseCount ? '课程已开放' : '复核中'}}</view>
       <view class="tpg-status-copy">
         <view class="stamp-title">{{tpgStatusTitle}}</view>
@@ -81,10 +81,10 @@
   </block>
 
   <block wx:elif="{{isUgCatalogue && ugProfile}}">
-    <view class="tpg-hero">
+    <view class="tpg-hero course-hero ug-course-hero">
       <view class="tpg-eyebrow">{{ugProfile.university.code}} · {{ugProfile.curriculumYear}}</view>
-      <view class="tpg-title">{{ugProfile.programme.nameEn}}</view>
-      <view class="tpg-subtitle">{{ugProfile.major.nameEn}}</view>
+      <view class="tpg-title">{{ugHeroTitle}}</view>
+      <view class="tpg-subtitle">{{ugHeroSubtitle}}</view>
       <view class="tpg-hero-foot">
         <view>
           <view class="tpg-number {{ugCourseCount ? '' : 'text-status'}}">{{ugCourseCountDisplay}}</view>
@@ -94,7 +94,7 @@
       </view>
     </view>
 
-    <view class="section tpg-status">
+    <view class="section tpg-status course-status">
       <view class="stamp-mark">{{ugCourseCount ? '课程已开放' : '复核中'}}</view>
       <view class="tpg-status-copy">
         <view class="stamp-title">{{ugStatusTitle}}</view>

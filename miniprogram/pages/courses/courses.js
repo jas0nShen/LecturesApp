@@ -61,6 +61,8 @@ Page({
     ugCourses: [],
     ugCourseCount: 0,
     ugCourseCountDisplay: '',
+    ugHeroTitle: '',
+    ugHeroSubtitle: '',
     ugStatusTitle: '',
     ugStatusCopy: '',
     needsSetup: false
@@ -97,6 +99,8 @@ Page({
         ugCourses: [],
         ugCourseCount: 0,
         ugCourseCountDisplay: '',
+        ugHeroTitle: '',
+        ugHeroSubtitle: '',
         courses: [],
         offerings: [],
         searching: false,
@@ -142,6 +146,8 @@ Page({
       ugCourses: [],
       ugCourseCount: 0,
       ugCourseCountDisplay: '',
+      ugHeroTitle: '',
+      ugHeroSubtitle: '',
       tpgProgramme: null,
       tpgUniversity: null,
       tpgCourses: [],
@@ -153,6 +159,7 @@ Page({
     const ugProfile = profile && profile.profileType === 'undergraduate'
       ? ugService.getMajorProfile(profile.programmeId, profile.majorId, profile.curriculumYear)
       : null;
+    const ugHero = ugProfile ? this.buildUgHero(ugProfile) : {};
     if (ugProfile && ugProfile.sourceStatus === 'programme_summary_only') {
       if (requestId !== this._requestId) return;
       this.setData({
@@ -161,8 +168,10 @@ Page({
         ugCourses: [],
         ugCourseCount: 0,
         ugCourseCountDisplay: '待开放',
+        ugHeroTitle: ugHero.title,
+        ugHeroSubtitle: ugHero.subtitle,
         ugStatusTitle: 'Programme / Major 已收录',
-        ugStatusCopy: '当前先展示本科 Programme 与 Major 索引；课程清单完成复核后会在这里显示。',
+        ugStatusCopy: '课程表还在复核中；当前先保留学校与 Programme 信息。',
         courses: [],
         offerings: [],
         dataSource: 'catalogue',
@@ -182,8 +191,10 @@ Page({
         ugCourses,
         ugCourseCount: ugProfile.codedCourseCount,
         ugCourseCountDisplay: ugProfile.codedCourseCount,
+        ugHeroTitle: ugHero.title,
+        ugHeroSubtitle: ugHero.subtitle,
         ugStatusTitle: '课程清单已开放',
-        ugStatusCopy: '这里显示从公开资料中整理出的本科课程代码。正式选课前仍以学校系统为准。',
+        ugStatusCopy: '已整理公开课程代码；正式选课仍以学校系统为准。',
         courses: [],
         offerings: [],
         dataSource: 'catalogue',
@@ -235,6 +246,18 @@ Page({
       dataSource: result.source,
       searching: false
     });
+  },
+
+  buildUgHero(ugProfile = {}) {
+    const majorName = ugProfile.major && ugProfile.major.nameEn;
+    const programmeName = ugProfile.programme && ugProfile.programme.nameEn;
+    const universityCode = ugProfile.university && ugProfile.university.code;
+    const programmeCode = ugProfile.programme && ugProfile.programme.code;
+    const sameTitle = String(majorName || '').trim().toLowerCase() === String(programmeName || '').trim().toLowerCase();
+    const title = majorName || programmeName || '本科课程';
+    const programmeLabel = sameTitle ? (programmeCode || 'Programme') : (programmeName || programmeCode || 'Programme');
+    const subtitle = [universityCode, ugProfile.curriculumYear, programmeLabel].filter(Boolean).join(' · ');
+    return { title, subtitle };
   },
 
   refreshLocal() {
