@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-09T15:14:35.477Z",
+  "generatedAt": "2026-07-09T15:22:28.033Z",
   "universities": [
     {
       "id": "HKU",
@@ -5741,9 +5741,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3140",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 2,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 88,
+      "codedCourseCount": 88,
+      "courseSourceUrl": "https://www.polyu.edu.hk/aae/study/subject-list/"
     },
     {
       "id": "POLYU-UG-JS3150-6",
@@ -12020,8 +12021,8 @@ const catalogue = {
       "code": "AERONAUTICAL-ENGINEERING",
       "nameEn": "Aeronautical Engineering",
       "nameZh": "Aeronautical Engineering",
-      "courseCount": 2,
-      "codedCourseCount": 0,
+      "courseCount": 46,
+      "codedCourseCount": 44,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3140"
     },
     {
@@ -12030,8 +12031,8 @@ const catalogue = {
       "code": "AIR-TRANSPORT-ENGINEERING",
       "nameEn": "Air Transport Engineering",
       "nameZh": "Air Transport Engineering",
-      "courseCount": 2,
-      "codedCourseCount": 0,
+      "courseCount": 46,
+      "codedCourseCount": 44,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3140"
     },
     {
@@ -15951,9 +15952,9 @@ const catalogue = {
     "HKU": 1511,
     "HKUST": 121,
     "LINGNAN": 721,
-    "POLYU": 1053
+    "POLYU": 1141
   },
-  "codedCourseCount": 5503
+  "codedCourseCount": 5591
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
