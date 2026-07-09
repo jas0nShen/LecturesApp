@@ -67,5 +67,15 @@ Page({
   copyUgPendingCollection() {
     const text = ugService.buildPendingCollectionText({ limit: 12 });
     copyTextOrToast(text, '待补清单已复制');
+  },
+
+  copyUgIndexOnlyCollection() {
+    const text = ugService.buildPendingCollectionText({ readiness: 'index-only', limit: 12 });
+    copyTextOrToast(text, '仅索引清单已复制');
+  },
+
+  copyUgNoSourceCollection() {
+    const text = ugService.buildPendingCollectionText({ readiness: 'no-source', limit: 12 });
+    copyTextOrToast(text, '缺来源清单已复制');
   }
 });
