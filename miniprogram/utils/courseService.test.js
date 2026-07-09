@@ -395,6 +395,39 @@ test('study plan remaining core checklist can be copied separately', () => {
   assert(text.includes('For planning reference only.'));
 });
 
+test('study plan status summary can be copied without leaking notes', () => {
+  service.saveProfile({
+    profileType: 'undergraduate',
+    universityCode: 'HKU',
+    universityName: '香港大学',
+    programmeId: 1,
+    programmeName: 'BEng(CompSc)',
+    majorName: 'Computer Science',
+    curriculumYear: '2025-26',
+    currentYear: 1
+  });
+  service.saveStudyPlanItem('COMP1117', 1, '1');
+  service.saveStudyPlanItem('COMP2113', 2, '2');
+  service.toggleOfferingCompleted('COMP1117');
+  service.toggleOfferingFavorite('COMP2113');
+  service.saveCourseNote('COMP2113', 'Private note should stay local.');
+
+  const text = service.formatStudyPlanStatusText(new Date('2026-07-05T00:00:00Z'));
+
+  assert(text.startsWith('香港大学 · BEng(CompSc) · Study Plan · Status Summary'));
+  assert(text.includes('Generated: 2026-07-05'));
+  assert(text.includes('Courses: 2'));
+  assert(text.includes('Credits: 12'));
+  assert(text.includes('Completed: 1'));
+  assert(text.includes('Favorites: 1'));
+  assert(text.includes('Courses with notes: 1'));
+  assert(text.includes('Category mix:'));
+  assert(text.includes('- Core: 2 courses · 12 credits · 1 completed'));
+  assert(text.includes('Privacy: this summary only includes counts and categories, not your course notes.'));
+  assert(!text.includes('Private note should stay local.'));
+  assert(!text.includes('courseNotes'));
+});
+
 test('study plan check reminders can be copied separately', () => {
   service.saveProfile({
     profileType: 'undergraduate',

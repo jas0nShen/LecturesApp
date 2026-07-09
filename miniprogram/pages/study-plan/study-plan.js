@@ -80,6 +80,19 @@ Page({
     });
   },
 
+  copyPlanStatus() {
+    if (!this.data.review.courseCount) {
+      wx.showToast({ title: '计划中还没有课程', icon: 'none' });
+      return;
+    }
+    wx.setClipboardData({
+      data: service.formatStudyPlanStatusText(),
+      success() {
+        wx.showToast({ title: '状态摘要已复制' });
+      }
+    });
+  },
+
   copyCoreGap() {
     if (!this.data.coreGapSummary.courseCount) {
       wx.showToast({ title: '暂无未安排核心课', icon: 'none' });

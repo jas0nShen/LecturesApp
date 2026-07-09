@@ -423,6 +423,7 @@ test('study plan page exposes local planning states and quick actions', () => {
   assert(serviceLogic.includes('function getStudyPlanCoreGapSummary'));
   assert(serviceLogic.includes('function formatStudyPlanCheckText'));
   assert(serviceLogic.includes('function formatStudyPlanCoreGapText'));
+  assert(serviceLogic.includes('function formatStudyPlanStatusText'));
   assert(serviceLogic.includes('(course.categories || []).some((category) => /core/i.test(category))'));
   assert(planLogic.includes('completedCount: courses.filter((item) => item.completed).length'));
   assert(planLogic.includes('const suggestions = service.getStudyPlanSuggestions(5);'));
@@ -431,6 +432,8 @@ test('study plan page exposes local planning states and quick actions', () => {
   assert(planLogic.includes('service.formatStudyPlanCoreGapText()'));
   assert(planLogic.includes('copyPlanChecks()'));
   assert(planLogic.includes('service.formatStudyPlanCheckText()'));
+  assert(planLogic.includes('copyPlanStatus()'));
+  assert(planLogic.includes('service.formatStudyPlanStatusText()'));
   assert(planLogic.includes('planSuggestion(event)'));
   assert(planLogic.includes('toggleCompleted(event)'));
   assert(planLogic.includes('toggleFavorite(event)'));
@@ -439,6 +442,9 @@ test('study plan page exposes local planning states and quick actions', () => {
   assert(planPage.includes('笔记 {{review.noteCount}}'));
   assert(planPage.includes('COURSE MIX'));
   assert(planPage.includes('wx:for="{{review.categoryStats}}"'));
+  assert(planPage.includes('bindtap="copyPlanStatus"'));
+  assert(planPage.includes('复制状态摘要'));
+  assert(planPage.includes('不复制笔记内容'));
   assert(planPage.includes('{{course.credits}} credits · {{course.categoryLabel}}'));
   assert(planPage.includes('未安排的核心课'));
   assert(planPage.includes('bindtap="copyPlanChecks"'));

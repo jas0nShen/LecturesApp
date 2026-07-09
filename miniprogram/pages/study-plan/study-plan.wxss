@@ -103,6 +103,14 @@
   margin: -10rpx 0 26rpx;
   padding: 22rpx 24rpx;
 }
+.status-export {
+  background: #edf7f3;
+  border: 1rpx solid #cfe4dc;
+  color: #17352c;
+  margin-top: -12rpx;
+}
+.status-export .export-copy { color: #647c73; }
+.status-export .export-mark { border-color: #a9cfc2; color: #0b6b55; }
 .plan-export.disabled { opacity: 0.45; }
 .export-title { font-size: 25rpx; font-weight: 800; }
 .export-copy { color: #a9c1b8; font-size: 19rpx; margin-top: 4rpx; }

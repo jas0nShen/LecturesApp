@@ -842,6 +842,39 @@ function formatStudyPlanText(now = new Date()) {
   return lines.join('\n');
 }
 
+function formatStudyPlanStatusText(now = new Date()) {
+  const courses = getStudyPlanCourses();
+  const review = analyzeStudyPlan();
+  const profileContext = getStudyPlanProfileContext();
+  const completedCount = courses.filter((course) => course.completed).length;
+  const favoriteCount = courses.filter((course) => course.favorite).length;
+  const noteCount = courses.filter((course) => course.hasNote).length;
+  const lines = [
+    `${profileContext.title} · Status Summary`,
+    `Generated: ${now.toISOString().slice(0, 10)}`,
+    `Courses: ${review.courseCount}`,
+    `Credits: ${review.totalCredits}`,
+    `Completed: ${completedCount}`,
+    `Favorites: ${favoriteCount}`,
+    `Courses with notes: ${noteCount}`,
+    `Plan checks: ${review.noticeCount}`,
+    ''
+  ];
+
+  if (review.categoryStats.length) {
+    lines.push('Category mix:');
+    review.categoryStats.forEach((category) => {
+      lines.push(`- ${category.label}: ${category.courseCount} courses · ${category.credits} credits · ${category.completedCount} completed`);
+    });
+  } else {
+    lines.push('Category mix: no planned courses yet');
+  }
+
+  lines.push('', 'Privacy: this summary only includes counts and categories, not your course notes.');
+  lines.push('For planning reference only. Confirm official timetable, prerequisites and degree requirements with your university.');
+  return lines.join('\n').trim();
+}
+
 function listCourses(filters = {}) {
   const keyword = (filters.keyword || '').trim().toLowerCase();
   return data.courses.filter((course) => {
@@ -1172,6 +1205,7 @@ module.exports = {
   formatUserDataBackup,
   formatStudyPlanCheckText,
   formatStudyPlanCoreGapText,
+  formatStudyPlanStatusText,
   formatStudyPlanText,
   getCompletedCourseIds,
   getCompletedOfferingCodes,

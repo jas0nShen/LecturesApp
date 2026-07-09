@@ -51,6 +51,14 @@
     <view class="export-mark">COPY ↗</view>
   </view>
 
+  <view class="plan-export status-export {{review.courseCount ? '' : 'disabled'}}" bindtap="copyPlanStatus">
+    <view>
+      <view class="export-title">复制状态摘要</view>
+      <view class="export-copy">只包含数量、学分和类别统计，不复制笔记内容</view>
+    </view>
+    <view class="export-mark">SAFE ↗</view>
+  </view>
+
   <view wx:if="{{review.notices.length}}" class="review-notes">
     <view class="review-head">
       <view class="review-title">计划检查</view>
