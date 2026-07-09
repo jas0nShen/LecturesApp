@@ -37,6 +37,14 @@ test('current mini-program passes automated release readiness checks', () => {
   assert.match(result.manualChecklist.reviewMaterial, /REVIEW_SUBMISSION/);
 });
 
+test('ship check validates undergraduate course supplements', () => {
+  const pkg = JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf8'));
+
+  assert.match(pkg.scripts.check, /validate-data\.js/);
+  assert.match(pkg.scripts.check, /validate-ug-supplements\.js/);
+  assert.match(pkg.scripts['check:ship'], /check:release/);
+});
+
 test('WeChat project metadata matches the launch positioning', () => {
   const projectConfig = JSON.parse(fs.readFileSync(
     path.join(ROOT, 'miniprogram', 'project.config.json'),

@@ -16,7 +16,7 @@
     "status:release": "node scripts/print-release-status.js",
     "check:ship": "npm run check && npm run check:release",
     "test": "node --test",
-    "check": "node scripts/validate-data.js && node server/index.js --check && node --test"
+    "check": "node scripts/validate-data.js && node scripts/validate-ug-supplements.js && node server/index.js --check && node --test"
   },
   "engines": {
     "node": ">=18"

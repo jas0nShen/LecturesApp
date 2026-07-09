@@ -32,6 +32,10 @@ const {
   summarizeSourceFilePath,
   summarizeSources
 } = require('./report-ug-source-coverage');
+const {
+  validateUgSupplements,
+  validateSupplement
+} = require('./validate-ug-supplements');
 
 test('UG catalogue generator reports missing source files clearly', () => {
   const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'ug-catalog-empty-'));
@@ -432,6 +436,33 @@ test('UG source coverage report can generate a safe supplement starter template'
   assert.match(template, /"jupasCode": "JS3011"/);
   assert.match(template, /"courses": \[\]/);
   assert.doesNotMatch(template, /TODO|PLACEHOLDER|TBC/);
+});
+
+test('UG supplement validator blocks placeholders and missing source evidence', () => {
+  const result = validateUgSupplements();
+  assert.equal(result.ok, true);
+  assert(result.supplements >= 60);
+  assert(result.explicitCourseSupplements > 0);
+  assert(result.copiedCourseSupplements > 0);
+
+  assert.throws(() => validateSupplement({
+    provider: 'Example supplement',
+    universityCode: 'POLYU',
+    jupasCode: 'JS3011',
+    sourceUrl: 'https://www.polyu.edu.hk/study/ug/jupas/2026/js3011',
+    courses: [
+      { code: 'TODO1001', title: 'Placeholder course', credits: 3, sourceUrl: 'https://www.polyu.edu.hk/study/ug/jupas/2026/js3011' }
+    ]
+  }, 0), /placeholder/i);
+
+  assert.throws(() => validateSupplement({
+    provider: 'Example supplement',
+    universityCode: 'POLYU',
+    jupasCode: 'JS3011',
+    courses: [
+      { code: 'ABCT1001', title: 'Verified Course', credits: 3 }
+    ]
+  }, 0), /HTTPS sourceUrl or officialUrl/);
 });
 
 test('UG generic course supplements can add non-computing undergraduate courses', () => {
