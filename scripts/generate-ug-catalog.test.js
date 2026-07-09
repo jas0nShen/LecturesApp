@@ -18,6 +18,8 @@ const {
   formatSourceReadinessSummary,
   getSourceProgrammeMap,
   isUmbrellaSchemeProgramme,
+  buildMissingSupplementTemplate,
+  buildSupplementFileName,
   listMissingProgrammesForCollection,
   listImportableProgrammes,
   normalizePriorityMode,
@@ -414,6 +416,22 @@ test('UG source coverage report can prioritize launch data collection batches', 
   assert.equal(isUmbrellaSchemeProgramme({ name: 'Bachelor of Science (Honours) Scheme in Biotechnology and Chemical Technology' }), false);
   assert.match(template, /优先级：launch/);
   assert.match(template, /1\. POLYU · JS3011 · Bachelor of Science \(Honours\) Scheme in Biotechnology and Chemical Technology/);
+});
+
+test('UG source coverage report can generate a safe supplement starter template', () => {
+  const args = parseArgs(['--missing-only', '--missing-limit', '4', '--priority', 'launch', '--supplement-template']);
+  const sourceSummary = summarizeSources('/Users/shenjingsong/Documents/Codex/2026-07-06/pdf/outputs', args);
+  const summary = summarizeGeneratedCatalogue({ ...args, sourceSummary });
+  const [missing] = listMissingProgrammesForCollection(summary, args);
+  const template = buildMissingSupplementTemplate(summary, args);
+
+  assert.equal(args.supplementTemplate, true);
+  assert.equal(buildSupplementFileName(missing), 'polyu-js3011-courses-2026.json');
+  assert.match(template, /建议文件：data\/ug-course-supplements\/polyu-js3011-courses-2026\.json/);
+  assert.match(template, /"provider": "POLYU JS3011 undergraduate course supplement"/);
+  assert.match(template, /"jupasCode": "JS3011"/);
+  assert.match(template, /"courses": \[\]/);
+  assert.doesNotMatch(template, /TODO|PLACEHOLDER|TBC/);
 });
 
 test('UG generic course supplements can add non-computing undergraduate courses', () => {

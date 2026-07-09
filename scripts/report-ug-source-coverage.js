@@ -22,6 +22,7 @@ function parseArgs(argv = process.argv.slice(2)) {
     missingOnly: argv.includes('--missing-only'),
     missingSummary: argv.includes('--missing-summary'),
     collectorTemplate: argv.includes('--collector-template'),
+    supplementTemplate: argv.includes('--supplement-template'),
     importableOnly: argv.includes('--importable-only'),
     needsImportOnly: argv.includes('--needs-import-only'),
     json: argv.includes('--json')
@@ -364,6 +365,14 @@ function isUmbrellaSchemeProgramme(programme = {}) {
   return /^Bachelor[’']s Degree Scheme in\b/i.test(String(programme.name || programme.programmeName || ''));
 }
 
+function fileSlug(value) {
+  return String(value || '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '')
+    .slice(0, 56);
+}
+
 function compareLaunchMissingProgrammes(a, b) {
   const schoolDelta = priorityIndex(LAUNCH_SCHOOL_PRIORITY, a.schoolCode) - priorityIndex(LAUNCH_SCHOOL_PRIORITY, b.schoolCode);
   if (schoolDelta) return schoolDelta;
@@ -422,6 +431,7 @@ function summarizeGeneratedCatalogue(options = {}) {
         code: programme.jupasCode || programme.code,
         name: programme.nameEn,
         faculty: programme.faculty || '',
+        curriculumYear: programme.curriculumYear || '',
         officialUrl: programme.officialUrl || '',
         ...(sourceProgrammes.get(`${university.code}::${programme.jupasCode || programme.code}`) || {})
       }));
@@ -606,6 +616,10 @@ function printGeneratedCatalogueReport(summary, options = {}) {
     return;
   }
   if (options.missingOnly) {
+    if (options.supplementTemplate) {
+      printMissingSupplementTemplate(summary, options);
+      return;
+    }
     if (options.collectorTemplate) {
       printMissingCollectorTemplate(summary, options);
       return;
@@ -713,6 +727,46 @@ function buildMissingCollectorTemplate(summary, options = {}) {
   return lines.join('\n');
 }
 
+function buildSupplementFileName(programme = {}) {
+  const school = fileSlug(programme.schoolCode || programme.universityCode || 'ug');
+  const code = fileSlug(programme.code || programme.jupasCode || programme.name || 'programme');
+  const year = fileSlug(programme.curriculumYear || '2026');
+  return `${school}-${code}-courses-${year}.json`;
+}
+
+function buildMissingSupplementTemplate(summary, options = {}) {
+  const [programme] = listMissingProgrammesForCollection(summary, { ...options, missingLimit: 1 });
+  if (!programme) return '暂无待补 Programme。';
+
+  const academicYear = programme.curriculumYear || '2026';
+  const template = {
+    _instructions: [
+      '只填入已由官方来源或可信资料核实的课程。',
+      'courses 为空时不会开放课程清单；不要用占位课程码。',
+      '每门课程建议包含 code, title, credits, year, semester, group, sourceUrl。'
+    ],
+    provider: `${programme.schoolCode} ${programme.code || programme.name} undergraduate course supplement`,
+    academicYear,
+    sourceUrl: programme.officialUrl || '',
+    officialUrl: programme.officialUrl || '',
+    supplements: [
+      {
+        universityCode: programme.schoolCode,
+        ...(programme.code ? { jupasCode: programme.code } : { programmeName: programme.name }),
+        programmeName: programme.name,
+        sourceUrl: programme.officialUrl || '',
+        officialUrl: programme.officialUrl || '',
+        courses: []
+      }
+    ]
+  };
+
+  return [
+    `建议文件：data/ug-course-supplements/${buildSupplementFileName(programme)}`,
+    JSON.stringify(template, null, 2)
+  ].join('\n');
+}
+
 function printMissingSourceReadiness(summary) {
   console.log('');
   console.log('UG missing programme source readiness:');
@@ -760,6 +814,10 @@ function printMissingCollectorTemplate(summary, options = {}) {
   console.log(buildMissingCollectorTemplate(summary, options));
 }
 
+function printMissingSupplementTemplate(summary, options = {}) {
+  console.log(buildMissingSupplementTemplate(summary, options));
+}
+
 function main() {
   const options = parseArgs();
   const sourceSummary = options.sourceFile
@@ -805,6 +863,8 @@ module.exports = {
   normalizeReadinessFilter,
   normalizePriorityMode,
   isUmbrellaSchemeProgramme,
+  buildSupplementFileName,
+  buildMissingSupplementTemplate,
   maybeSortMissingForPriority,
   getSourceProgrammeMap,
   getGeneratedCourseProgrammeMap,

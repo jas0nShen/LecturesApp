@@ -28,6 +28,7 @@ npm run check:ship
 ```bash
 npm run status:ug-sources -- --missing-only --missing-limit 20
 npm run status:ug-sources -- --missing-only --missing-limit 10 --priority launch --collector-template
+npm run status:ug-sources -- --missing-only --priority launch --supplement-template
 ```
 
 生成可复制的本科课程资料采集任务单：

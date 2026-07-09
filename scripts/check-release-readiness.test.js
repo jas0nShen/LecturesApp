@@ -102,6 +102,7 @@ test('release checklist includes an iOS and Android acceptance matrix', () => {
   assert(checklist.includes('## 真机验收记录模板'));
   assert(checklist.includes('| 检查项 | iOS | Android | 预期结果 |'));
   assert(checklist.includes('--priority launch --collector-template'));
+  assert(checklist.includes('--priority launch --supplement-template'));
   assert(checklist.includes('--readiness index-only --collector-template'));
   assert(checklist.includes('--readiness no-source --collector-template'));
   ['授课硕士选择', '本科目录预览', '本科保存后状态', 'Programme 详情', '数据状态', '数据与隐私', '备份恢复', '清除本机数据'].forEach((item) => {
