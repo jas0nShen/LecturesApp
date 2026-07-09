@@ -85,6 +85,7 @@ test('feedback template includes imported undergraduate catalogue context', () =
   assert(template.includes('Programme：Bachelor of Arts in Architectural Studies'));
   assert(template.includes('当前资料状态：Bachelor of Arts in Architectural Studies · 已开放 24 门课程'));
   assert(template.includes('- 当前 Programme / Major：Bachelor of Arts in Architectural Studies'));
+  assert(template.includes('- 资料采集方向：课程清单已开放，如发现课程缺漏或分类错误，请补充官方课程页或截图。'));
   assert(template.includes('- 官方链接 / 截图来源：https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-architectural-studies'));
   assert(template.includes('https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-architectural-studies'));
 });
@@ -104,6 +105,7 @@ test('feedback template highlights missing undergraduate course lists for data c
   assert(template.includes('课程清单待开放'));
   assert(template.includes('- 当前 Programme / Major：International Sustainability Programme for Innovation, Research & Entrepreneurship(INSPIRE)'));
   assert(template.includes('/ BEng Energy Science & Engineering'));
+  assert(template.includes('- 资料采集方向：已有 Programme 官方入口，优先补课程代码、课程名、学分、Year/Semester 和课程类别。'));
   assert(template.includes('- 需要补充的课程代码 / 课程名：这个 Programme 课程清单待开放，请补充官方课程表'));
   assert(template.includes('- 官方链接 / 截图来源：https://www.jupas.edu.hk/en/programme/cityuhk/JS1050'));
 });

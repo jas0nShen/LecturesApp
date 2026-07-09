@@ -79,7 +79,8 @@ function buildProgrammeFields(profile, programmeOverride) {
       status: ugProfile.codedCourseCount
         ? `${ugProfile.major.nameEn} · 已开放 ${ugProfile.codedCourseCount} 门课程`
         : `${ugProfile.major.nameEn} · 课程清单待开放`,
-      source: valueOrDash(ugProfile.sourceUrl)
+      source: valueOrDash(ugProfile.sourceUrl),
+      sourceReadiness: ugService.getPendingSourceReadinessKey(ugProfile.programme)
     };
   }
 
@@ -105,12 +106,27 @@ function buildLocalSummaryLine(userSummary) {
   ].join(' · ');
 }
 
+function buildDataCollectionHint(fields) {
+  if (!fields || !fields.sourceReadiness) return '';
+  if (fields.sourceReadiness === 'open') {
+    return '课程清单已开放，如发现课程缺漏或分类错误，请补充官方课程页或截图。';
+  }
+  if (fields.sourceReadiness === 'indexOnly') {
+    return '已有 Programme 官方入口，优先补课程代码、课程名、学分、Year/Semester 和课程类别。';
+  }
+  if (fields.sourceReadiness === 'noSource') {
+    return '先确认 Programme 官方入口，再补课程代码、课程名、学分、Year/Semester 和课程类别。';
+  }
+  return '';
+}
+
 function buildFeedbackTemplate(profile, options = {}) {
   const fields = buildProgrammeFields(profile, options.programme);
   const localSummary = buildLocalSummaryLine(options.userSummary);
   const isCourseDataPending = fields.status.includes('课程清单待开放') || fields.status.includes('待确认');
   const programmeMajor = joinProgrammeMajor(fields.programme, fields.major);
   const sourceHint = fields.source && fields.source !== '待填写' ? fields.source : '待填写';
+  const dataCollectionHint = buildDataCollectionHint(fields);
 
   return [
     '【选课港反馈 / 纠错】',
@@ -125,6 +141,7 @@ function buildFeedbackTemplate(profile, options = {}) {
     '数据补充模板：',
     `- 当前 Programme / Major：${programmeMajor}`,
     `- 当前资料状态：${fields.status}`,
+    ...(dataCollectionHint ? [`- 资料采集方向：${dataCollectionHint}`] : []),
     `- 需要补充的课程代码 / 课程名：${isCourseDataPending ? '这个 Programme 课程清单待开放，请补充官方课程表' : '待填写'}`,
     `- 官方链接 / 截图来源：${sourceHint}`,
     '- 备注：待填写',
