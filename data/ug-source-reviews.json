@@ -6,5 +6,13 @@
     "status": "no_public_course_codes",
     "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3011",
     "note": "Official PolyU JUPAS page describes the 2026 entry scheme, awards, curriculum structure and selected subject names, but does not publish stable subject codes or semester-by-semester course rows on the public page. Keep this programme as index/source-only until a coded curriculum source is available."
+  },
+  {
+    "universityCode": "POLYU",
+    "programmeCode": "JS3160",
+    "reviewedAt": "2026-07-09",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3160",
+    "note": "Official PolyU JUPAS page and BME programme/curriculum pages describe the 2026 entry award, 120-credit structure and broad requirement groups for Sports Science and Technology, but the public pages do not publish stable subject codes or a course table for the programme. Keep this programme as index/source-only until a coded curriculum source is available."
   }
 ]
