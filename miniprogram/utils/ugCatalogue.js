@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-09T15:22:28.033Z",
+  "generatedAt": "2026-07-09T15:29:33.892Z",
   "universities": [
     {
       "id": "HKU",
@@ -5761,9 +5761,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3150",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 7,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 58,
+      "codedCourseCount": 58,
+      "courseSourceUrl": "https://www.polyu.edu.hk/bme/study/undergraduate-programme/admissions/list-of-subjects-and-subject-description-forms/"
     },
     {
       "id": "POLYU-UG-JS3011-7",
@@ -12041,8 +12042,8 @@ const catalogue = {
       "code": "BACHELOR-OF-SCIENCE-HONOURS-IN-BIOMEDICAL-ENGINE",
       "nameEn": "Bachelor of Science (Honours) in Biomedical Engineering",
       "nameZh": "Bachelor of Science (Honours) in Biomedical Engineering",
-      "courseCount": 7,
-      "codedCourseCount": 0,
+      "courseCount": 65,
+      "codedCourseCount": 58,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3150"
     },
     {
@@ -15952,9 +15953,9 @@ const catalogue = {
     "HKU": 1511,
     "HKUST": 121,
     "LINGNAN": 721,
-    "POLYU": 1141
+    "POLYU": 1199
   },
-  "codedCourseCount": 5591
+  "codedCourseCount": 5649
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
