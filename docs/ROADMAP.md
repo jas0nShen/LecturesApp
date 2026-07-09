@@ -36,7 +36,7 @@ npm run check:ship
 
 ## 数据补全默认流程
 
-1. 用 `npm run status:ug-sources -- --missing-only --missing-limit 10 --priority launch` 先看下一批建议补的数据。
+1. 用 `npm run status:ug-sources -- --missing-only --missing-limit 10 --priority launch` 先看下一批建议补的数据；大类 Scheme 先保留索引，补课程时优先更具体的 Programme / Major 页面。
 2. 用 `npm run status:ug-sources -- --school <code> --missing-only --missing-limit 10` 找单校缺口。
 3. 需要按来源状态拆分时，加 `--readiness index-only` 或 `--readiness no-source`，先处理有官方入口但缺课程码的 Programme，再回头补完全缺来源的 Programme。
 4. 需要整理待采集清单时，运行 `npm run status:ug-sources -- --school <code> --missing-only --missing-limit 10 --collector-template`，复制包含官方入口、来源状态和待补字段的任务单；也可叠加 `--priority launch`、`--readiness index-only` 或 `--readiness no-source` 生成分组任务单。

@@ -98,9 +98,11 @@ test('UG pending programme collection can prioritize launch batches', () => {
   assert.throws(() => ugService.normalizePendingPriorityMode('random'), /Unknown pending priority/);
   assert.equal(pending.length, 4);
   assert(pending.every((programme) => programme.universityCode === 'POLYU'));
-  assert.equal(pending[0].code, 'JS3000');
+  assert.equal(pending[0].code, 'JS3011');
+  assert.equal(ugService.isUmbrellaSchemeProgramme({ name: 'Bachelor’s Degree Scheme in Interdisciplinary Studies' }), true);
+  assert.equal(ugService.isUmbrellaSchemeProgramme({ name: 'Bachelor of Science (Honours) Scheme in Biotechnology and Chemical Technology' }), false);
   assert.match(text, /优先级：launch/);
-  assert.match(text, /1\. POLYU · JS3000 · Bachelor’s Degree Scheme in Interdisciplinary Studies/);
+  assert.match(text, /1\. POLYU · JS3011 · Bachelor of Science \(Honours\) Scheme in Biotechnology and Chemical Technology/);
 });
 
 test('UG catalogue exposes the multi-school hierarchy needed for onboarding', () => {

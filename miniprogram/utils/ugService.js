@@ -110,6 +110,10 @@ function priorityIndex(values, value) {
   return index === -1 ? values.length : index;
 }
 
+function isUmbrellaSchemeProgramme(programme = {}) {
+  return /^Bachelor[’']s Degree Scheme in\b/i.test(String(programme.name || programme.nameEn || programme.programmeName || ''));
+}
+
 function sortPendingProgrammesByPriority(programmes = [], options = {}) {
   const priorityMode = normalizePendingPriorityMode(options.priority);
   if (priorityMode !== 'launch') return programmes;
@@ -118,6 +122,8 @@ function sortPendingProgrammesByPriority(programmes = [], options = {}) {
     if (schoolDelta) return schoolDelta;
     const readinessDelta = priorityIndex(LAUNCH_READINESS_PRIORITY, a.sourceReadiness) - priorityIndex(LAUNCH_READINESS_PRIORITY, b.sourceReadiness);
     if (readinessDelta) return readinessDelta;
+    const umbrellaDelta = Number(isUmbrellaSchemeProgramme(a)) - Number(isUmbrellaSchemeProgramme(b));
+    if (umbrellaDelta) return umbrellaDelta;
     return String(a.code || a.name || '').localeCompare(String(b.code || b.name || ''));
   });
 }
@@ -491,6 +497,7 @@ module.exports = {
   listUniversities,
   normalizePendingReadinessFilter,
   normalizePendingPriorityMode,
+  isUmbrellaSchemeProgramme,
   sortPendingProgrammesByPriority,
   summarizePendingSourceReadiness,
   searchMajors,

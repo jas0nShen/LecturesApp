@@ -360,12 +360,18 @@ function priorityIndex(values, value) {
   return index === -1 ? values.length : index;
 }
 
+function isUmbrellaSchemeProgramme(programme = {}) {
+  return /^Bachelor[’']s Degree Scheme in\b/i.test(String(programme.name || programme.programmeName || ''));
+}
+
 function compareLaunchMissingProgrammes(a, b) {
   const schoolDelta = priorityIndex(LAUNCH_SCHOOL_PRIORITY, a.schoolCode) - priorityIndex(LAUNCH_SCHOOL_PRIORITY, b.schoolCode);
   if (schoolDelta) return schoolDelta;
   const readinessDelta = priorityIndex(LAUNCH_READINESS_PRIORITY, sourceReadinessKey(a))
     - priorityIndex(LAUNCH_READINESS_PRIORITY, sourceReadinessKey(b));
   if (readinessDelta) return readinessDelta;
+  const umbrellaDelta = Number(isUmbrellaSchemeProgramme(a)) - Number(isUmbrellaSchemeProgramme(b));
+  if (umbrellaDelta) return umbrellaDelta;
   return String(a.code || a.name || '').localeCompare(String(b.code || b.name || ''));
 }
 
@@ -798,6 +804,7 @@ module.exports = {
   filterImportableProgrammes,
   normalizeReadinessFilter,
   normalizePriorityMode,
+  isUmbrellaSchemeProgramme,
   maybeSortMissingForPriority,
   getSourceProgrammeMap,
   getGeneratedCourseProgrammeMap,

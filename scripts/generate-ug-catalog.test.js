@@ -17,6 +17,7 @@ const {
   formatMissingSourceStatus,
   formatSourceReadinessSummary,
   getSourceProgrammeMap,
+  isUmbrellaSchemeProgramme,
   listMissingProgrammesForCollection,
   listImportableProgrammes,
   normalizePriorityMode,
@@ -408,9 +409,11 @@ test('UG source coverage report can prioritize launch data collection batches', 
   assert.deepEqual(summary.schools.slice(0, 3).map((school) => school.code), ['POLYU', 'LINGNAN', 'CITYU']);
   assert.equal(missing.length, 4);
   assert(missing.every((programme) => programme.schoolCode === 'POLYU'));
-  assert.equal(missing[0].code, 'JS3000');
+  assert.equal(missing[0].code, 'JS3011');
+  assert.equal(isUmbrellaSchemeProgramme({ name: 'Bachelor’s Degree Scheme in Interdisciplinary Studies' }), true);
+  assert.equal(isUmbrellaSchemeProgramme({ name: 'Bachelor of Science (Honours) Scheme in Biotechnology and Chemical Technology' }), false);
   assert.match(template, /优先级：launch/);
-  assert.match(template, /1\. POLYU · JS3000 · Bachelor’s Degree Scheme in Interdisciplinary Studies/);
+  assert.match(template, /1\. POLYU · JS3011 · Bachelor of Science \(Honours\) Scheme in Biotechnology and Chemical Technology/);
 });
 
 test('UG generic course supplements can add non-computing undergraduate courses', () => {
