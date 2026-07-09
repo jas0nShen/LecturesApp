@@ -13,15 +13,15 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.requirementCount, 4);
   assert(summary.courseCount >= 4630);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 4616);
-  assert.equal(summary.programmeWithCoursesCount, 69);
-  assert.equal(summary.pendingProgrammeCount, 375);
+  assert.equal(summary.codedCourseCount, 4633);
+  assert.equal(summary.programmeWithCoursesCount, 70);
+  assert.equal(summary.pendingProgrammeCount, 374);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
   assert.equal(summary.coveragePercent, 16);
-  assert.match(summary.generatedAt, /^2026-07-08T/);
-  assert.equal(summary.generatedDate, '2026-07-08');
+  assert.match(summary.generatedAt, /^2026-07-09T/);
+  assert.equal(summary.generatedDate, '2026-07-09');
 });
 
 test('UG pending source readiness labels summarize index-only catalogue gaps', () => {
@@ -46,13 +46,13 @@ test('UG pending programme collection text is copy-ready for data sourcing', () 
   const text = ugService.buildPendingCollectionText({ universityCode: 'POLYU', limit: 2 });
 
   assert.equal(pending.length, 2);
-  assert.equal(allPending.length, 45);
+  assert.equal(allPending.length, 44);
   assert.equal(pending[0].universityCode, 'POLYU');
   assert.equal(pending[0].sourceStatusLabel, '仅索引 / 来源');
   assert.match(pending[0].officialUrl, /^https:\/\//);
   assert.match(text, /【本科课程资料待补清单】/);
   assert.match(text, /范围：POLYU/);
-  assert.match(text, /待补 Programme：45/);
+  assert.match(text, /待补 Programme：44/);
   assert.match(text, /课程代码 \/ 课程名 \/ 学分 \/ Year \/ Semester \/ 课程类别 \/ 来源链接/);
   assert.match(text, /不要推测课程/);
 });
@@ -84,7 +84,7 @@ test('UG pending programme collection can be filtered by source readiness', () =
   assert.equal(polyuNoSource.length, 0);
   assert.equal(ugService.getPendingSourceReadinessKey({}), 'noSource');
   assert.equal(ugService.getPendingSourceStatus({}), '缺来源');
-  assert.match(text, /待补 Programme：45/);
+  assert.match(text, /待补 Programme：44/);
   assert.match(text, /当前筛选：no-source · 0 个/);
   assert.match(text, /暂无待补 Programme/);
 });
@@ -135,7 +135,7 @@ test('UG per-school coverage stays visible for setup validation', () => {
     HKU: { programmeCount: 137, majorCount: 137, codedCourseCount: 1511 },
     CUHK: { programmeCount: 84, majorCount: 84, codedCourseCount: 131 },
     HKUST: { programmeCount: 50, majorCount: 64, codedCourseCount: 121 },
-    POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 166 },
+    POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 183 },
     CITYU: { programmeCount: 58, majorCount: 201, codedCourseCount: 1966 },
     HKBU: { programmeCount: 22, majorCount: 46, codedCourseCount: 0 },
     EDUHK: { programmeCount: 25, majorCount: 25, codedCourseCount: 0 },
@@ -157,8 +157,8 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert.equal(hku.pendingProgrammeCount, 115);
   assert.equal(hku.coveragePercent, 15);
   assert.equal(hku.codedCourseCount, 1511);
-  assert.equal(hku.generatedDate, '2026-07-08');
-  assert.equal(hku.updatedLabel, '更新于 2026-07-08');
+  assert.equal(hku.generatedDate, '2026-07-09');
+  assert.equal(hku.updatedLabel, '更新于 2026-07-09');
   assert.equal(hku.badge, 'COURSES');
   assert.equal(hku.sourceReadiness.indexOnly + hku.sourceReadiness.noSource, hku.pendingProgrammeCount);
   assert.match(hku.sourceReadinessLabel, /仅索引 \/ 来源/);
@@ -168,10 +168,10 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert(cuhk.coveragePercent > 0);
   assert.equal(cuhk.codedCourseCount, 131);
   assert.equal(cuhk.badge, 'COURSES');
-  assert.equal(polyu.programmeWithCoursesCount, 1);
-  assert.equal(polyu.pendingProgrammeCount, 45);
-  assert.equal(polyu.coveragePercent, 2);
-  assert.equal(polyu.codedCourseCount, 166);
+  assert.equal(polyu.programmeWithCoursesCount, 2);
+  assert.equal(polyu.pendingProgrammeCount, 44);
+  assert.equal(polyu.coveragePercent, 4);
+  assert.equal(polyu.codedCourseCount, 183);
   assert.equal(polyu.badge, 'COURSES');
   assert.equal(polyu.sourceReadiness.indexOnly, polyu.pendingProgrammeCount);
   assert.equal(cityu.programmeWithCoursesCount, 20);
@@ -186,6 +186,26 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert.equal(lingnan.badge, 'COURSES');
   assert.deepEqual(lingnan.sourceReadiness, { indexOnly: 0, noSource: 0 });
   assert(polyu.coverageLabel.includes('课程代码'));
+});
+
+test('PolyU Physics with AIDA or IE exposes official secondary major courses', () => {
+  const polyu = ugService.listUniversities().find((item) => item.code === 'POLYU');
+  const programmes = ugService.listProgrammes({ universityId: polyu.id, degreeLevel: 'undergraduate' });
+  const physics = programmes.find((programme) => programme.code === 'JS3030');
+  const majors = ugService.listMajors(physics.id);
+  const aida = majors.find((major) => major.nameEn.includes('Artificial Intelligence and Data Analytics'));
+  const ie = majors.find((major) => major.nameEn.includes('Innovation and Entrepreneurship'));
+  const aidaCourses = ugService.listMajorCourses(physics.id, aida.id);
+  const ieCourses = ugService.listMajorCourses(physics.id, ie.id);
+
+  assert.equal(physics.sourceStatus, 'course_codes_available');
+  assert.equal(physics.codedCourseCount, 17);
+  assert.equal(aida.codedCourseCount, 9);
+  assert.equal(ie.codedCourseCount, 8);
+  assert(aidaCourses.some((course) => course.courseCode === 'COMP4431' && course.titleEn === 'Artificial Intelligence'));
+  assert(aidaCourses.some((course) => course.courseCode === 'AP40020' && course.courseType === 'capstone'));
+  assert(ieCourses.some((course) => course.courseCode === 'MM3161' && course.titleEn === 'Creativity, Innovation and Entrepreneurship'));
+  assert(ieCourses.some((course) => course.courseCode === 'AP40022' && course.credits === 6));
 });
 
 test('HKU Computing and Data Science catalogue profiles expose official course offerings', () => {

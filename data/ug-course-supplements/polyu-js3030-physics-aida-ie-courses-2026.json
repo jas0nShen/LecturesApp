@@ -1,0 +1,45 @@
+{
+  "provider": "PolyU Department of Physics and Materials JS3030 programme structures",
+  "academicYear": "2026",
+  "sourceUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3030",
+  "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3030",
+  "supplements": [
+    {
+      "universityCode": "POLYU",
+      "programmeCode": "JS3030",
+      "programmeName": "Bachelor of Science (Honours) in Physics with a Secondary Major in Artificial Intelligence & Data Analytics (AIDA) / Innovation and Entrepreneurship (IE)",
+      "majorName": "BSc (Hons) in Physics with a Secondary Major in Artificial Intelligence and Data Analytics",
+      "sourceUrl": "https://www.polyu.edu.hk/pm/study/undergraduate-programmes/js3030-bsc-physics-x-aida-or-ie/bsc-secondary-major_aida/",
+      "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3030",
+      "courses": [
+        { "code": "AMA1616", "title": "Quantitative Skills and Experimental Design for Scientists", "credits": 3, "year": 1, "semester": "Semester 2", "group": "secondary major compulsory" },
+        { "code": "AMA1606", "title": "Basic Statistics", "credits": 3, "year": 2, "semester": "Semester 1", "group": "secondary major compulsory" },
+        { "code": "COMP1012", "title": "Programming Fundamentals and Applications", "credits": 3, "year": 2, "semester": "Semester 1", "group": "secondary major compulsory" },
+        { "code": "AMA2111", "title": "Mathematics I", "credits": 3, "year": 2, "semester": "Semester 2", "group": "secondary major compulsory" },
+        { "code": "AP30019", "title": "Data Analysis Techniques for Scientists", "credits": 3, "year": 3, "semester": "Semester 1", "group": "secondary major compulsory" },
+        { "code": "DSAI2201", "title": "Data Structures and Algorithms", "credits": 3, "year": 3, "semester": "Semester 1", "group": "secondary major compulsory" },
+        { "code": "DSAI4203", "title": "Machine Learning", "credits": 3, "year": 3, "semester": "Semester 1", "group": "secondary major compulsory" },
+        { "code": "COMP4431", "title": "Artificial Intelligence", "credits": 3, "year": 3, "semester": "Semester 2", "group": "secondary major compulsory" },
+        { "code": "AP40020", "title": "Integrated Capstone Project", "credits": 6, "year": 4, "semester": "Semester 1 / 2", "group": "capstone" }
+      ]
+    },
+    {
+      "universityCode": "POLYU",
+      "programmeCode": "JS3030",
+      "programmeName": "Bachelor of Science (Honours) in Physics with a Secondary Major in Artificial Intelligence & Data Analytics (AIDA) / Innovation and Entrepreneurship (IE)",
+      "majorName": "BSc (Hons) in Physics with a Secondary Major in Innovation and Entrepreneurship",
+      "sourceUrl": "https://www.polyu.edu.hk/pm/study/undergraduate-programmes/js3030-bsc-physics-x-aida-or-ie/bsc-secondary-major_ie/",
+      "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3030",
+      "courses": [
+        { "code": "MM2021", "title": "Management and Organisation", "credits": 3, "year": 2, "semester": "Semester 2", "group": "secondary major compulsory" },
+        { "code": "MM2901", "title": "Greater Bay Area (GBA) Summer Immersion Programme", "credits": 3, "year": 2, "semester": "Semester 3", "group": "secondary major compulsory option" },
+        { "code": "MM2902", "title": "Field Study for Innovation Ecosystems", "credits": 3, "year": 2, "semester": "Semester 3", "group": "secondary major compulsory option" },
+        { "code": "MM3161", "title": "Creativity, Innovation and Entrepreneurship", "credits": 3, "year": 3, "semester": "Semester 1", "group": "secondary major compulsory" },
+        { "code": "MM3162", "title": "Innovation and Entrepreneurship Colloquium", "credits": 3, "year": 3, "semester": "Semester 1", "group": "secondary major compulsory" },
+        { "code": "MM4393", "title": "Business Innovation Project", "credits": 3, "year": 3, "semester": "Semester 2", "group": "secondary major compulsory" },
+        { "code": "MM2711", "title": "Introduction to Marketing", "credits": 3, "year": 3, "semester": "Semester 2", "group": "secondary major compulsory" },
+        { "code": "AP40022", "title": "Company Attachment", "credits": 6, "year": 3, "semester": "Semester 3", "group": "work-integrated education" }
+      ]
+    }
+  ]
+}

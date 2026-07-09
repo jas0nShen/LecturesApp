@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-08T15:05:22.500Z",
+  "generatedAt": "2026-07-09T06:52:04.558Z",
   "universities": [
     {
       "id": "HKU",
@@ -6367,9 +6367,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3030",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 3,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 17,
+      "codedCourseCount": 17,
+      "courseSourceUrl": "https://www.polyu.edu.hk/pm/study/undergraduate-programmes/js3030-bsc-physics-x-aida-or-ie/bsc-secondary-major_ie/"
     },
     {
       "id": "POLYU-UG-JS3636-39",
@@ -12874,8 +12875,8 @@ const catalogue = {
       "code": "BSC-HONS-IN-PHYSICS-WITH-A-SECONDARY-MAJOR-IN-AR",
       "nameEn": "BSc (Hons) in Physics with a Secondary Major in Artificial Intelligence and Data Analytics",
       "nameZh": "BSc (Hons) in Physics with a Secondary Major in Artificial Intelligence and Data Analytics",
-      "courseCount": 3,
-      "codedCourseCount": 0,
+      "courseCount": 12,
+      "codedCourseCount": 9,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3030"
     },
     {
@@ -12884,8 +12885,8 @@ const catalogue = {
       "code": "BSC-HONS-IN-PHYSICS-WITH-A-SECONDARY-MAJOR-IN-IN",
       "nameEn": "BSc (Hons) in Physics with a Secondary Major in Innovation and Entrepreneurship",
       "nameZh": "BSc (Hons) in Physics with a Secondary Major in Innovation and Entrepreneurship",
-      "courseCount": 3,
-      "codedCourseCount": 0,
+      "courseCount": 11,
+      "codedCourseCount": 8,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3030"
     },
     {
@@ -15945,9 +15946,9 @@ const catalogue = {
     "HKU": 1511,
     "HKUST": 121,
     "LINGNAN": 721,
-    "POLYU": 166
+    "POLYU": 183
   },
-  "codedCourseCount": 4616
+  "codedCourseCount": 4633
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
