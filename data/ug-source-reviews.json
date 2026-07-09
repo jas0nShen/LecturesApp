@@ -22,5 +22,13 @@
     "status": "no_public_course_codes",
     "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3211",
     "note": "Official PolyU JUPAS page and BEEE programme/brochure pages describe the 2026 entry award, 120-credit plus 11 training-credit structure, curriculum progression and broad building sciences subjects, but the public pages and image-based brochure do not publish stable subject codes or a course table. Keep this programme as index/source-only until a coded curriculum source is available."
+  },
+  {
+    "universityCode": "POLYU",
+    "programmeCode": "JS3214",
+    "reviewedAt": "2026-07-10",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3214",
+    "note": "Official PolyU JUPAS page and ARCH programme page describe the 2026 entry award, 120-credit plus 2 training-credit structure, 87-credit major subjects, GUR, free electives, capstone and broad architectural competence areas, but the public pages do not publish stable subject codes or a course table. Keep this programme as index/source-only until a coded curriculum source is available."
   }
 ]
