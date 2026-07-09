@@ -610,10 +610,16 @@ function listMissingProgrammesForCollection(summary, options = {}) {
 function buildMissingCollectorTemplate(summary, options = {}) {
   const programmes = listMissingProgrammesForCollection(summary, options);
   const scope = options.school ? options.school : 'ALL';
+  const filteredMissingCount = summary.schools.reduce((sum, school) => (
+    sum + (Number.isFinite(Number(school.filteredMissingProgrammeCount))
+      ? Number(school.filteredMissingProgrammeCount)
+      : Number(school.missingProgrammeCount || 0))
+  ), 0);
   const lines = [
     '【本科课程资料待补清单】',
     `范围：${scope}`,
     `待补 Programme：${summary.totals.missingProgrammeCount}`,
+    ...(options.readiness ? [`当前筛选：${options.readiness} · ${filteredMissingCount} 个`] : []),
     `来源状态：${formatSourceReadinessSummary(summary.totals.sourceReadiness)}`,
     '',
     '采集要求：',
@@ -628,7 +634,7 @@ function buildMissingCollectorTemplate(summary, options = {}) {
     lines.push('- 暂无待补 Programme。');
   } else {
     programmes.forEach((programme, index) => {
-      lines.push(`${index + 1}. ${programme.schoolCode} · ${programme.code} · ${programme.name}`);
+      lines.push(`${index + 1}. ${programme.schoolCode} · ${programme.code || '无代码'} · ${programme.name}`);
       if (programme.faculty) lines.push(`   学院：${programme.faculty}`);
       lines.push(`   当前来源状态：${formatCollectorSourceStatus(programme)}`);
       lines.push(`   官方入口：${programme.officialUrl || '待查'}`);

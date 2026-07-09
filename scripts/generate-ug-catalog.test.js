@@ -351,6 +351,10 @@ test('UG source coverage report can filter missing programmes by source readines
     'HKU-Geneva Graduate Institute Dual Degree Programme',
     'HKU-PKU Dual Degree Programme'
   ]);
+  const template = buildMissingCollectorTemplate(summary, args);
+  assert.match(template, /待补 Programme：116/);
+  assert.match(template, /当前筛选：no-source · 10 个/);
+  assert.match(template, /1\. HKU · 无代码 · HKU-Cambridge Joint Recruitment Scheme \(Engineering\)/);
 });
 
 test('UG source coverage report supports machine-readable JSON mode', () => {
