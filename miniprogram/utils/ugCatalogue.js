@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-09T14:53:47.079Z",
+  "generatedAt": "2026-07-09T15:08:00.982Z",
   "universities": [
     {
       "id": "HKU",
@@ -6237,9 +6237,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3080",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 3,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 118,
+      "codedCourseCount": 118,
+      "courseSourceUrl": "https://www.polyu.edu.hk/mm/study/subject-syllabi/"
     },
     {
       "id": "POLYU-UG-JS3741-32",
@@ -12788,8 +12789,8 @@ const catalogue = {
       "code": "MANAGEMENT",
       "nameEn": "Management",
       "nameZh": "Management",
-      "courseCount": 3,
-      "codedCourseCount": 0,
+      "courseCount": 62,
+      "codedCourseCount": 59,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3080"
     },
     {
@@ -12798,8 +12799,8 @@ const catalogue = {
       "code": "MARKETING",
       "nameEn": "Marketing",
       "nameZh": "Marketing",
-      "courseCount": 3,
-      "codedCourseCount": 0,
+      "courseCount": 62,
+      "codedCourseCount": 59,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3080"
     },
     {
@@ -15949,9 +15950,9 @@ const catalogue = {
     "HKU": 1511,
     "HKUST": 121,
     "LINGNAN": 721,
-    "POLYU": 821
+    "POLYU": 939
   },
-  "codedCourseCount": 5271
+  "codedCourseCount": 5389
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
