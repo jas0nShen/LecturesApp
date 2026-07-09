@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-09T15:29:33.892Z",
+  "generatedAt": "2026-07-09T15:43:49.277Z",
   "universities": [
     {
       "id": "HKU",
@@ -5990,9 +5990,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3170",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 10,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 74,
+      "codedCourseCount": 74,
+      "courseSourceUrl": "https://www.polyu.edu.hk/eee/study/information-for-current-students/subject-syllabi/"
     },
     {
       "id": "POLYU-UG-JS3005-19",
@@ -12402,8 +12403,8 @@ const catalogue = {
       "code": "ELECTRICAL-ENGINEERING",
       "nameEn": "Electrical Engineering",
       "nameZh": "Electrical Engineering",
-      "courseCount": 10,
-      "codedCourseCount": 0,
+      "courseCount": 47,
+      "codedCourseCount": 37,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3170"
     },
     {
@@ -12412,8 +12413,8 @@ const catalogue = {
       "code": "TRANSPORTATION-SYSTEMS-ENGINEERING",
       "nameEn": "Transportation Systems Engineering",
       "nameZh": "Transportation Systems Engineering",
-      "courseCount": 10,
-      "codedCourseCount": 0,
+      "courseCount": 47,
+      "codedCourseCount": 37,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3170"
     },
     {
@@ -15953,9 +15954,9 @@ const catalogue = {
     "HKU": 1511,
     "HKUST": 121,
     "LINGNAN": 721,
-    "POLYU": 1199
+    "POLYU": 1273
   },
-  "codedCourseCount": 5649
+  "codedCourseCount": 5723
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
