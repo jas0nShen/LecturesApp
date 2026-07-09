@@ -35,6 +35,13 @@ npm run status:ug-sources -- --missing-only --missing-limit 20
 npm run status:ug-sources -- --school HKU --missing-only --missing-limit 10 --collector-template
 ```
 
+按来源状态拆分采集任务单：
+
+```bash
+npm run status:ug-sources -- --school HKU --missing-only --missing-limit 10 --readiness index-only --collector-template
+npm run status:ug-sources -- --school HKU --missing-only --missing-limit 10 --readiness no-source --collector-template
+```
+
 `check:release` 当前检查：
 
 - 微信 AppID 格式；
