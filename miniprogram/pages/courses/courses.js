@@ -253,9 +253,8 @@ Page({
     const programmeName = ugProfile.programme && ugProfile.programme.nameEn;
     const universityCode = ugProfile.university && ugProfile.university.code;
     const programmeCode = ugProfile.programme && ugProfile.programme.code;
-    const sameTitle = String(majorName || '').trim().toLowerCase() === String(programmeName || '').trim().toLowerCase();
     const title = majorName || programmeName || '本科课程';
-    const programmeLabel = sameTitle ? (programmeCode || 'Programme') : (programmeName || programmeCode || 'Programme');
+    const programmeLabel = programmeCode || 'Undergraduate';
     const subtitle = [universityCode, ugProfile.curriculumYear, programmeLabel].filter(Boolean).join(' · ');
     return { title, subtitle };
   },
