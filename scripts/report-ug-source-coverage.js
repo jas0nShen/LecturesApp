@@ -11,12 +11,14 @@ function parseArgs(argv = process.argv.slice(2)) {
   const schoolIndex = argv.indexOf('--school');
   const missingLimitIndex = argv.indexOf('--missing-limit');
   const readinessIndex = argv.indexOf('--readiness');
+  const priorityIndex = argv.indexOf('--priority');
   return {
     sourceDir: sourceDirIndex === -1 ? DEFAULT_SOURCE_DIR : path.resolve(argv[sourceDirIndex + 1]),
     sourceFile: sourceFileIndex === -1 ? '' : path.resolve(argv[sourceFileIndex + 1]),
     school: schoolIndex === -1 ? '' : String(argv[schoolIndex + 1] || '').trim().toUpperCase(),
     missingLimit: missingLimitIndex === -1 ? 20 : Number(argv[missingLimitIndex + 1]),
     readiness: readinessIndex === -1 ? '' : String(argv[readinessIndex + 1] || '').trim(),
+    priority: priorityIndex === -1 ? '' : String(argv[priorityIndex + 1] || '').trim(),
     missingOnly: argv.includes('--missing-only'),
     missingSummary: argv.includes('--missing-summary'),
     collectorTemplate: argv.includes('--collector-template'),
@@ -328,6 +330,51 @@ function normalizeReadinessFilter(readiness = '') {
   throw new Error(`Unknown --readiness "${readiness}". Use all, importable, coded, index-only, or no-source.`);
 }
 
+function normalizePriorityMode(priority = '') {
+  const normalized = String(priority || '').trim().toLowerCase().replace(/_/g, '-');
+  if (!normalized || normalized === 'none') return '';
+  if (['launch', 'mvp', 'first-batch'].includes(normalized)) return 'launch';
+  throw new Error(`Unknown --priority "${priority}". Use launch or none.`);
+}
+
+const LAUNCH_SCHOOL_PRIORITY = [
+  'POLYU',
+  'LINGNAN',
+  'CITYU',
+  'HKU',
+  'HKUST',
+  'CUHK',
+  'HKBU',
+  'EDUHK'
+];
+
+const LAUNCH_READINESS_PRIORITY = [
+  'sourceImportableRows',
+  'sourceCodedRowsNotImportable',
+  'sourceIndexOnly',
+  'noSource'
+];
+
+function priorityIndex(values, value) {
+  const index = values.indexOf(value);
+  return index === -1 ? values.length : index;
+}
+
+function compareLaunchMissingProgrammes(a, b) {
+  const schoolDelta = priorityIndex(LAUNCH_SCHOOL_PRIORITY, a.schoolCode) - priorityIndex(LAUNCH_SCHOOL_PRIORITY, b.schoolCode);
+  if (schoolDelta) return schoolDelta;
+  const readinessDelta = priorityIndex(LAUNCH_READINESS_PRIORITY, sourceReadinessKey(a))
+    - priorityIndex(LAUNCH_READINESS_PRIORITY, sourceReadinessKey(b));
+  if (readinessDelta) return readinessDelta;
+  return String(a.code || a.name || '').localeCompare(String(b.code || b.name || ''));
+}
+
+function maybeSortMissingForPriority(programmes, options = {}) {
+  const priorityMode = normalizePriorityMode(options.priority);
+  if (priorityMode !== 'launch') return programmes;
+  return [...programmes].sort(compareLaunchMissingProgrammes);
+}
+
 function summarizeMissingSourceReadiness(missingProgrammes = []) {
   return missingProgrammes.reduce((summary, programme) => {
     const key = sourceReadinessKey(programme);
@@ -345,8 +392,9 @@ function summarizeGeneratedCatalogue(options = {}) {
   const missingLimit = Number.isFinite(Number(options.missingLimit)) ? Number(options.missingLimit) : 20;
   const shouldLimitMissing = Number.isFinite(missingLimit) && missingLimit >= 0;
   const readinessFilter = normalizeReadinessFilter(options.readiness);
+  const priorityMode = normalizePriorityMode(options.priority);
   const sourceProgrammes = getSourceProgrammeMap(options.sourceSummary);
-  const schools = filterSchools(ugService.listUniversities().map((university) => {
+  let schools = filterSchools(ugService.listUniversities().map((university) => {
     const programmes = ugService.listProgrammes({
       universityId: university.id,
       degreeLevel: 'undergraduate'
@@ -371,9 +419,16 @@ function summarizeGeneratedCatalogue(options = {}) {
         officialUrl: programme.officialUrl || '',
         ...(sourceProgrammes.get(`${university.code}::${programme.jupasCode || programme.code}`) || {})
       }));
-    const filteredMissingProgrammes = readinessFilter
+    let filteredMissingProgrammes = readinessFilter
       ? allMissingProgrammes.filter((programme) => sourceReadinessKey(programme) === readinessFilter)
       : allMissingProgrammes;
+    filteredMissingProgrammes = maybeSortMissingForPriority(
+      filteredMissingProgrammes.map((programme) => ({
+        schoolCode: university.code,
+        ...programme
+      })),
+      options
+    ).map(({ schoolCode, ...programme }) => programme);
     const missingProgrammes = shouldLimitMissing
       ? filteredMissingProgrammes.slice(0, missingLimit)
       : filteredMissingProgrammes;
@@ -393,6 +448,12 @@ function summarizeGeneratedCatalogue(options = {}) {
       missingProgrammes
     };
   }), options.school);
+
+  if (priorityMode === 'launch' && !options.school) {
+    schools = [...schools].sort((a, b) => (
+      priorityIndex(LAUNCH_SCHOOL_PRIORITY, a.code) - priorityIndex(LAUNCH_SCHOOL_PRIORITY, b.code)
+    ));
+  }
 
   return {
     schools,
@@ -598,13 +659,13 @@ function formatCollectorSourceStatus(programme) {
 function listMissingProgrammesForCollection(summary, options = {}) {
   const missingLimit = Number.isFinite(Number(options.missingLimit)) ? Number(options.missingLimit) : 20;
   if (missingLimit <= 0) return [];
-  return summary.schools
+  const programmes = summary.schools
     .flatMap((school) => school.missingProgrammes.map((programme) => ({
       schoolCode: school.code,
       schoolNameZh: school.nameZh,
       ...programme
-    })))
-    .slice(0, missingLimit);
+    })));
+  return maybeSortMissingForPriority(programmes, options).slice(0, missingLimit);
 }
 
 function buildMissingCollectorTemplate(summary, options = {}) {
@@ -620,6 +681,7 @@ function buildMissingCollectorTemplate(summary, options = {}) {
     `范围：${scope}`,
     `待补 Programme：${summary.totals.missingProgrammeCount}`,
     ...(options.readiness ? [`当前筛选：${options.readiness} · ${filteredMissingCount} 个`] : []),
+    ...(options.priority ? [`优先级：${normalizePriorityMode(options.priority)}`] : []),
     `来源状态：${formatSourceReadinessSummary(summary.totals.sourceReadiness)}`,
     '',
     '采集要求：',
@@ -669,13 +731,14 @@ function printMissingProgrammes(summary, options = {}) {
     .flatMap((school) => school.missingProgrammes.map((programme) => ({
       schoolCode: school.code,
       ...programme
-    })))
+    })));
+  const sortedMissing = maybeSortMissingForPriority(missing, options)
     .slice(0, missingLimit);
-  if (!missing.length) return;
+  if (!sortedMissing.length) return;
 
   console.log('');
-  console.log(`Next missing UG programmes${options.readiness ? ` matching ${options.readiness}` : ''} (first ${missing.length}):`);
-  missing.forEach((programme) => {
+  console.log(`Next missing UG programmes${options.readiness ? ` matching ${options.readiness}` : ''}${options.priority ? ` by ${normalizePriorityMode(options.priority)} priority` : ''} (first ${sortedMissing.length}):`);
+  sortedMissing.forEach((programme) => {
     console.log([
       programme.schoolCode,
       programme.code,
@@ -734,6 +797,8 @@ module.exports = {
   filterSchools,
   filterImportableProgrammes,
   normalizeReadinessFilter,
+  normalizePriorityMode,
+  maybeSortMissingForPriority,
   getSourceProgrammeMap,
   getGeneratedCourseProgrammeMap,
   listImportableProgrammes,

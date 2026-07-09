@@ -19,6 +19,7 @@ const {
   getSourceProgrammeMap,
   listMissingProgrammesForCollection,
   listImportableProgrammes,
+  normalizePriorityMode,
   normalizeReadinessFilter,
   parseArgs,
   parseCsv,
@@ -391,6 +392,25 @@ test('UG source coverage report can generate a collector template for missing pr
   assert.match(template, /官方入口：https:\/\/admissions\.hku\.hk\/programmes\/undergraduate-programmes\/bachelor-of-arts-and-bachelor-of-education-language-education/);
   assert.match(template, /不要自行推测课程/);
   assert.match(template, /课程代码 \/ 课程名 \/ 学分 \/ Year \/ Semester \/ 课程类别 \/ 来源链接/);
+});
+
+test('UG source coverage report can prioritize launch data collection batches', () => {
+  const args = parseArgs(['--missing-only', '--missing-limit', '4', '--priority', 'launch', '--collector-template']);
+  const sourceSummary = summarizeSources('/Users/shenjingsong/Documents/Codex/2026-07-06/pdf/outputs', args);
+  const summary = summarizeGeneratedCatalogue({ ...args, sourceSummary });
+  const missing = listMissingProgrammesForCollection(summary, args);
+  const template = buildMissingCollectorTemplate(summary, args);
+
+  assert.equal(args.priority, 'launch');
+  assert.equal(normalizePriorityMode('first_batch'), 'launch');
+  assert.equal(normalizePriorityMode('none'), '');
+  assert.throws(() => normalizePriorityMode('random'), /Unknown --priority/);
+  assert.deepEqual(summary.schools.slice(0, 3).map((school) => school.code), ['POLYU', 'LINGNAN', 'CITYU']);
+  assert.equal(missing.length, 4);
+  assert(missing.every((programme) => programme.schoolCode === 'POLYU'));
+  assert.equal(missing[0].code, 'JS3000');
+  assert.match(template, /优先级：launch/);
+  assert.match(template, /1\. POLYU · JS3000 · Bachelor’s Degree Scheme in Interdisciplinary Studies/);
 });
 
 test('UG generic course supplements can add non-computing undergraduate courses', () => {
