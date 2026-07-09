@@ -27,6 +27,7 @@ npm run check:ship
 
 ```bash
 npm run status:ug-sources -- --missing-only --missing-limit 20
+npm run status:ug-sources -- --missing-only --priority launch --missing-limit 10 --batch-plan
 npm run status:ug-sources -- --missing-only --missing-limit 10 --priority launch --collector-template
 npm run status:ug-sources -- --missing-only --priority launch --supplement-template
 ```

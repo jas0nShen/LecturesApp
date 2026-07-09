@@ -17,7 +17,9 @@ const {
   formatMissingSourceStatus,
   formatSourceReadinessSummary,
   getSourceProgrammeMap,
+  groupMissingProgrammesByReadiness,
   isUmbrellaSchemeProgramme,
+  buildMissingBatchPlan,
   buildMissingSupplementTemplate,
   buildSupplementFileName,
   listMissingProgrammesForCollection,
@@ -420,6 +422,28 @@ test('UG source coverage report can prioritize launch data collection batches', 
   assert.equal(isUmbrellaSchemeProgramme({ name: 'Bachelor of Science (Honours) Scheme in Biotechnology and Chemical Technology' }), false);
   assert.match(template, /优先级：launch/);
   assert.match(template, /1\. POLYU · JS3011 · Bachelor of Science \(Honours\) Scheme in Biotechnology and Chemical Technology/);
+});
+
+test('UG source coverage report can build a grouped missing data batch plan', () => {
+  const args = parseArgs(['--missing-only', '--missing-limit', '3', '--priority', 'launch', '--batch-plan']);
+  const sourceSummary = summarizeSources('/Users/shenjingsong/Documents/Codex/2026-07-06/pdf/outputs', args);
+  const summary = summarizeGeneratedCatalogue({ ...args, sourceSummary });
+  const groups = groupMissingProgrammesByReadiness(summary, args);
+  const plan = buildMissingBatchPlan(summary, args);
+
+  assert.equal(args.batchPlan, true);
+  assert.equal(groups.sourceIndexOnly.length, 205);
+  assert.equal(groups.noSource.length, 171);
+  assert.equal(groups.sourceIndexOnly[0].schoolCode, 'POLYU');
+  assert.equal(groups.sourceIndexOnly[0].code, 'JS3011');
+  assert.match(plan, /【本科课程补数批次计划】/);
+  assert.match(plan, /A\. 可直接导入候选：0 个/);
+  assert.match(plan, /C\. 需打开官方入口核实课程码：205 个/);
+  assert.match(plan, /D\. 需先寻找官方来源：171 个/);
+  assert.match(plan, /1\. POLYU · JS3011 · Bachelor of Science \(Honours\) Scheme in Biotechnology and Chemical Technology/);
+  assert.match(plan, /npm run status:ug-sources -- --missing-only --priority launch --missing-limit 3 --collector-template/);
+  assert.match(plan, /npm run sync:ug-catalog/);
+  assert.match(plan, /npm run check:ship/);
 });
 
 test('UG source coverage report can generate a safe supplement starter template', () => {

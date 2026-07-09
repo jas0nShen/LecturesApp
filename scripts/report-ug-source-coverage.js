@@ -23,6 +23,7 @@ function parseArgs(argv = process.argv.slice(2)) {
     missingSummary: argv.includes('--missing-summary'),
     collectorTemplate: argv.includes('--collector-template'),
     supplementTemplate: argv.includes('--supplement-template'),
+    batchPlan: argv.includes('--batch-plan'),
     importableOnly: argv.includes('--importable-only'),
     needsImportOnly: argv.includes('--needs-import-only'),
     json: argv.includes('--json')
@@ -445,7 +446,9 @@ function summarizeGeneratedCatalogue(options = {}) {
       })),
       options
     ).map(({ schoolCode, ...programme }) => programme);
-    const missingProgrammes = shouldLimitMissing
+    const missingProgrammes = options.batchPlan
+      ? filteredMissingProgrammes
+      : shouldLimitMissing
       ? filteredMissingProgrammes.slice(0, missingLimit)
       : filteredMissingProgrammes;
     const sourceReadiness = summarizeMissingSourceReadiness(allMissingProgrammes);
@@ -624,6 +627,10 @@ function printGeneratedCatalogueReport(summary, options = {}) {
       printMissingCollectorTemplate(summary, options);
       return;
     }
+    if (options.batchPlan) {
+      printMissingBatchPlan(summary, options);
+      return;
+    }
     if (options.missingSummary) printMissingSourceReadiness(summary);
     printMissingProgrammes(summary, options);
     return;
@@ -686,6 +693,86 @@ function listMissingProgrammesForCollection(summary, options = {}) {
       ...programme
     })));
   return maybeSortMissingForPriority(programmes, options).slice(0, missingLimit);
+}
+
+function groupMissingProgrammesByReadiness(summary, options = {}) {
+  const programmes = listMissingProgrammesForCollection(summary, {
+    ...options,
+    missingLimit: Number.MAX_SAFE_INTEGER
+  });
+  return programmes.reduce((groups, programme) => {
+    const key = sourceReadinessKey(programme);
+    if (!groups[key]) groups[key] = [];
+    groups[key].push(programme);
+    return groups;
+  }, {
+    sourceImportableRows: [],
+    sourceCodedRowsNotImportable: [],
+    sourceIndexOnly: [],
+    noSource: []
+  });
+}
+
+function formatBatchProgrammeLine(programme, index) {
+  return [
+    `${index + 1}. ${programme.schoolCode} · ${programme.code || '无代码'} · ${programme.name}`,
+    programme.faculty ? `学院：${programme.faculty}` : '',
+    `状态：${formatCollectorSourceStatus(programme)}`,
+    `入口：${programme.officialUrl || programme.sourceOfficialUrl || '待查'}`
+  ].filter(Boolean).join('\n   ');
+}
+
+function buildMissingBatchPlan(summary, options = {}) {
+  const limit = Number.isFinite(Number(options.missingLimit)) ? Number(options.missingLimit) : 20;
+  const sampleLimit = Math.max(0, limit);
+  const groups = groupMissingProgrammesByReadiness(summary, options);
+  const scope = options.school ? options.school : 'ALL';
+  const lines = [
+    '【本科课程补数批次计划】',
+    `范围：${scope}`,
+    ...(options.priority ? [`优先级：${normalizePriorityMode(options.priority)}`] : []),
+    `总缺口：${summary.totals.missingProgrammeCount}`,
+    `来源状态：${formatSourceReadinessSummary(summary.totals.sourceReadiness)}`,
+    '',
+    '建议处理顺序：',
+    '1. source importable：已有可导入课程码，优先转成 supplement JSON。',
+    '2. coded not importable：已有课程码但 track/重复行需整理，先人工清洗再导入。',
+    '3. index only：已有官方 Programme 入口，先打开官网确认是否有课程码。',
+    '4. no source：先补官方入口或可信资料；没有课程码时只保留索引。'
+  ];
+
+  const sections = [
+    ['sourceImportableRows', 'A. 可直接导入候选'],
+    ['sourceCodedRowsNotImportable', 'B. 需清洗后导入候选'],
+    ['sourceIndexOnly', 'C. 需打开官方入口核实课程码'],
+    ['noSource', 'D. 需先寻找官方来源']
+  ];
+
+  sections.forEach(([key, title]) => {
+    const programmes = groups[key] || [];
+    lines.push('', `${title}：${programmes.length} 个`);
+    if (!programmes.length) {
+      lines.push('- 暂无。');
+      return;
+    }
+    programmes.slice(0, sampleLimit).forEach((programme, index) => {
+      lines.push(formatBatchProgrammeLine(programme, index));
+    });
+    if (programmes.length > sampleLimit) {
+      lines.push(`... 还有 ${programmes.length - sampleLimit} 个，使用 --readiness ${key === 'sourceImportableRows' ? 'importable' : key === 'sourceCodedRowsNotImportable' ? 'coded' : key === 'sourceIndexOnly' ? 'index-only' : 'no-source'} 查看。`);
+    }
+  });
+
+  lines.push(
+    '',
+    '常用命令：',
+    `npm run status:ug-sources -- --missing-only --priority launch --missing-limit ${sampleLimit} --collector-template`,
+    `npm run status:ug-sources -- --missing-only --priority launch --missing-limit 1 --supplement-template`,
+    'npm run sync:ug-catalog',
+    'npm run check:ship'
+  );
+
+  return lines.join('\n');
 }
 
 function buildMissingCollectorTemplate(summary, options = {}) {
@@ -818,6 +905,10 @@ function printMissingSupplementTemplate(summary, options = {}) {
   console.log(buildMissingSupplementTemplate(summary, options));
 }
 
+function printMissingBatchPlan(summary, options = {}) {
+  console.log(buildMissingBatchPlan(summary, options));
+}
+
 function main() {
   const options = parseArgs();
   const sourceSummary = options.sourceFile
@@ -873,7 +964,9 @@ module.exports = {
   formatSourceReadinessSummary,
   formatCollectorSourceStatus,
   listMissingProgrammesForCollection,
+  groupMissingProgrammesByReadiness,
   buildMissingCollectorTemplate,
+  buildMissingBatchPlan,
   summarizeMissingSourceReadiness,
   printGeneratedCatalogueReport
 };

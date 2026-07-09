@@ -109,6 +109,7 @@ test('release checklist includes an iOS and Android acceptance matrix', () => {
   const checklist = fs.readFileSync(path.join(ROOT, 'docs', 'RELEASE_CHECKLIST.md'), 'utf8');
   assert(checklist.includes('## 真机验收记录模板'));
   assert(checklist.includes('| 检查项 | iOS | Android | 预期结果 |'));
+  assert(checklist.includes('--priority launch --missing-limit 10 --batch-plan'));
   assert(checklist.includes('--priority launch --collector-template'));
   assert(checklist.includes('--priority launch --supplement-template'));
   assert(checklist.includes('--readiness index-only --collector-template'));

@@ -36,15 +36,16 @@ npm run check:ship
 
 ## 数据补全默认流程
 
-1. 用 `npm run status:ug-sources -- --missing-only --missing-limit 10 --priority launch` 先看下一批建议补的数据；大类 Scheme 先保留索引，补课程时优先更具体的 Programme / Major 页面。
-2. 用 `npm run status:ug-sources -- --school <code> --missing-only --missing-limit 10` 找单校缺口。
-3. 需要按来源状态拆分时，加 `--readiness index-only` 或 `--readiness no-source`，先处理有官方入口但缺课程码的 Programme，再回头补完全缺来源的 Programme。
-4. 需要整理待采集清单时，运行 `npm run status:ug-sources -- --school <code> --missing-only --missing-limit 10 --collector-template`，复制包含官方入口、来源状态和待补字段的任务单；也可叠加 `--priority launch`、`--readiness index-only` 或 `--readiness no-source` 生成分组任务单。
-5. 需要生成补数文件起手模板时，运行 `npm run status:ug-sources -- --missing-only --priority launch --supplement-template`；模板默认 `courses: []`，必须人工填入可核实课程码后才会开放课程清单。
-6. 对用户提供的单个资料文件，先跑 `npm run status:ug-sources -- --source-file "<file>" --school <code> --missing-limit 10`，确认 raw rows、importable coded rows 和 summary-only rows。
-7. 打开报告中的 `officialUrl` 或用户提供资料，确认是否有课程代码。
-8. 新增或更新 `data/ug-course-supplements/*.json`。
-9. 运行 `npm run sync:ug-catalog` 生成离线数据。
-10. 增加 programme count、关键 course code、search/profile 相关测试。
-11. 运行 `npm run check:ship`。
-12. 通过后再提交。
+1. 用 `npm run status:ug-sources -- --missing-only --priority launch --missing-limit 10 --batch-plan` 先看按来源状态分组的补数批次；大类 Scheme 先保留索引，补课程时优先更具体的 Programme / Major 页面。
+2. 用 `npm run status:ug-sources -- --missing-only --missing-limit 10 --priority launch` 查看下一批具体缺口。
+3. 用 `npm run status:ug-sources -- --school <code> --missing-only --missing-limit 10` 找单校缺口。
+4. 需要按来源状态拆分时，加 `--readiness index-only` 或 `--readiness no-source`，先处理有官方入口但缺课程码的 Programme，再回头补完全缺来源的 Programme。
+5. 需要整理待采集清单时，运行 `npm run status:ug-sources -- --school <code> --missing-only --missing-limit 10 --collector-template`，复制包含官方入口、来源状态和待补字段的任务单；也可叠加 `--priority launch`、`--readiness index-only` 或 `--readiness no-source` 生成分组任务单。
+6. 需要生成补数文件起手模板时，运行 `npm run status:ug-sources -- --missing-only --priority launch --supplement-template`；模板默认 `courses: []`，必须人工填入可核实课程码后才会开放课程清单。
+7. 对用户提供的单个资料文件，先跑 `npm run status:ug-sources -- --source-file "<file>" --school <code> --missing-limit 10`，确认 raw rows、importable coded rows 和 summary-only rows。
+8. 打开报告中的 `officialUrl` 或用户提供资料，确认是否有课程代码。
+9. 新增或更新 `data/ug-course-supplements/*.json`。
+10. 运行 `npm run sync:ug-catalog` 生成离线数据。
+11. 增加 programme count、关键 course code、search/profile 相关测试。
+12. 运行 `npm run check:ship`。
+13. 通过后再提交。
