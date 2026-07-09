@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-09T07:13:09.141Z",
+  "generatedAt": "2026-07-09T14:53:47.079Z",
   "universities": [
     {
       "id": "HKU",
@@ -6103,9 +6103,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3070",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 7,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 71,
+      "codedCourseCount": 71,
+      "courseSourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
     },
     {
       "id": "POLYU-UG-JS3310-25",
@@ -12657,8 +12658,8 @@ const catalogue = {
       "code": "BACHELOR-OF-BUSINESS-ADMINISTRATION-HONOURS-SCHE",
       "nameEn": "Bachelor of Business Administration (Honours) Scheme in Global Business and Logistics, Aviation, Maritime, and Supply Chain Management",
       "nameZh": "Bachelor of Business Administration (Honours) Scheme in Global Business and Logistics, Aviation, Maritime, and Supply Chain Management",
-      "courseCount": 7,
-      "codedCourseCount": 0,
+      "courseCount": 78,
+      "codedCourseCount": 71,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3070"
     },
     {
@@ -15948,9 +15949,9 @@ const catalogue = {
     "HKU": 1511,
     "HKUST": 121,
     "LINGNAN": 721,
-    "POLYU": 750
+    "POLYU": 821
   },
-  "codedCourseCount": 5200
+  "codedCourseCount": 5271
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
