@@ -13,9 +13,9 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.requirementCount, 4);
   assert(summary.courseCount >= 4630);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 5389);
-  assert.equal(summary.programmeWithCoursesCount, 74);
-  assert.equal(summary.pendingProgrammeCount, 370);
+  assert.equal(summary.codedCourseCount, 5503);
+  assert.equal(summary.programmeWithCoursesCount, 75);
+  assert.equal(summary.pendingProgrammeCount, 369);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
@@ -46,13 +46,13 @@ test('UG pending programme collection text is copy-ready for data sourcing', () 
   const text = ugService.buildPendingCollectionText({ universityCode: 'POLYU', limit: 2 });
 
   assert.equal(pending.length, 2);
-  assert.equal(allPending.length, 40);
+  assert.equal(allPending.length, 39);
   assert.equal(pending[0].universityCode, 'POLYU');
   assert.equal(pending[0].sourceStatusLabel, '仅索引 / 来源');
   assert.match(pending[0].officialUrl, /^https:\/\//);
   assert.match(text, /【本科课程资料待补清单】/);
   assert.match(text, /范围：POLYU/);
-  assert.match(text, /待补 Programme：40/);
+  assert.match(text, /待补 Programme：39/);
   assert.match(text, /课程代码 \/ 课程名 \/ 学分 \/ Year \/ Semester \/ 课程类别 \/ 来源链接/);
   assert.match(text, /不要推测课程/);
 });
@@ -84,7 +84,7 @@ test('UG pending programme collection can be filtered by source readiness', () =
   assert.equal(polyuNoSource.length, 0);
   assert.equal(ugService.getPendingSourceReadinessKey({}), 'noSource');
   assert.equal(ugService.getPendingSourceStatus({}), '缺来源');
-  assert.match(text, /待补 Programme：40/);
+  assert.match(text, /待补 Programme：39/);
   assert.match(text, /当前筛选：no-source · 0 个/);
   assert.match(text, /暂无待补 Programme/);
 });
@@ -135,7 +135,7 @@ test('UG per-school coverage stays visible for setup validation', () => {
     HKU: { programmeCount: 137, majorCount: 137, codedCourseCount: 1511 },
     CUHK: { programmeCount: 84, majorCount: 84, codedCourseCount: 131 },
     HKUST: { programmeCount: 50, majorCount: 64, codedCourseCount: 121 },
-    POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 939 },
+    POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 1053 },
     CITYU: { programmeCount: 58, majorCount: 201, codedCourseCount: 1966 },
     HKBU: { programmeCount: 22, majorCount: 46, codedCourseCount: 0 },
     EDUHK: { programmeCount: 25, majorCount: 25, codedCourseCount: 0 },
@@ -168,10 +168,10 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert(cuhk.coveragePercent > 0);
   assert.equal(cuhk.codedCourseCount, 131);
   assert.equal(cuhk.badge, 'COURSES');
-  assert.equal(polyu.programmeWithCoursesCount, 6);
-  assert.equal(polyu.pendingProgrammeCount, 40);
-  assert.equal(polyu.coveragePercent, 13);
-  assert.equal(polyu.codedCourseCount, 939);
+  assert.equal(polyu.programmeWithCoursesCount, 7);
+  assert.equal(polyu.pendingProgrammeCount, 39);
+  assert.equal(polyu.coveragePercent, 15);
+  assert.equal(polyu.codedCourseCount, 1053);
   assert.equal(polyu.badge, 'COURSES');
   assert.equal(polyu.sourceReadiness.indexOnly, polyu.pendingProgrammeCount);
   assert.equal(cityu.programmeWithCoursesCount, 20);
@@ -290,6 +290,28 @@ test('PolyU Management and Marketing scheme exposes official undergraduate subje
   assert(marketingCourses.some((course) => course.courseCode === 'MM4942' && course.courseType === 'capstone'));
   assert(ugService.listMajorCourses(mmScheme.id, management.id, { keyword: 'Human Resource Management' }).some((course) => course.courseCode === 'MM3111'));
   assert(ugService.listMajorCourses(mmScheme.id, marketing.id, { keyword: 'Strategic Brand' }).some((course) => course.courseCode === 'MM4831'));
+});
+
+test('PolyU Spatial Data Science and Smart Cities scheme exposes official LSGS subject list courses', () => {
+  const polyu = ugService.listUniversities().find((item) => item.code === 'POLYU');
+  const programmes = ugService.listProgrammes({ universityId: polyu.id, degreeLevel: 'undergraduate' });
+  const lsgsScheme = programmes.find((programme) => programme.code === 'JS3130');
+  const majors = ugService.listMajors(lsgsScheme.id);
+  const landSurveying = majors.find((major) => major.nameEn === 'Land Surveying and Geo-Informatics');
+  const smartCities = majors.find((major) => major.nameEn === 'Urban Informatics and Smart Cities');
+  const landProfile = ugService.getMajorProfile(lsgsScheme.id, landSurveying.id, '2026');
+  const smartCityCourses = ugService.listMajorCourses(lsgsScheme.id, smartCities.id);
+
+  assert.equal(lsgsScheme.sourceStatus, 'course_codes_available');
+  assert.equal(lsgsScheme.codedCourseCount, 114);
+  assert.equal(landSurveying.codedCourseCount, 57);
+  assert.equal(smartCities.codedCourseCount, 57);
+  assert.equal(landProfile.codedCourseCount, 114);
+  assert.equal(smartCityCourses.length, 57);
+  assert(smartCityCourses.some((course) => course.courseCode === 'LSGI3802' && course.titleEn === 'Spatial Data Science'));
+  assert(smartCityCourses.some((course) => course.courseCode === 'LSGI4503' && course.courseType === 'capstone'));
+  assert(ugService.listMajorCourses(lsgsScheme.id, landSurveying.id, { keyword: 'Survey Adjustment' }).some((course) => course.courseCode === 'LSGI2341A'));
+  assert(ugService.listMajorCourses(lsgsScheme.id, smartCities.id, { keyword: 'Urban Big Data' }).some((course) => course.courseCode === 'LSGI3804'));
 });
 
 test('HKU Computing and Data Science catalogue profiles expose official course offerings', () => {

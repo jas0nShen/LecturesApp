@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-09T15:08:00.982Z",
+  "generatedAt": "2026-07-09T15:14:35.477Z",
   "universities": [
     {
       "id": "HKU",
@@ -6467,9 +6467,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3130",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 114,
+      "codedCourseCount": 114,
+      "courseSourceUrl": "https://www.polyu.edu.hk/lsgs/study/lsgi-subject-list/"
     },
     {
       "id": "POLYU-UG-JS3242-44",
@@ -12949,8 +12950,8 @@ const catalogue = {
       "code": "LAND-SURVEYING-AND-GEO-INFORMATICS",
       "nameEn": "Land Surveying and Geo-Informatics",
       "nameZh": "Land Surveying and Geo-Informatics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 58,
+      "codedCourseCount": 57,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3130"
     },
     {
@@ -12959,8 +12960,8 @@ const catalogue = {
       "code": "URBAN-INFORMATICS-AND-SMART-CITIES",
       "nameEn": "Urban Informatics and Smart Cities",
       "nameZh": "Urban Informatics and Smart Cities",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 58,
+      "codedCourseCount": 57,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3130"
     },
     {
@@ -15950,9 +15951,9 @@ const catalogue = {
     "HKU": 1511,
     "HKUST": 121,
     "LINGNAN": 721,
-    "POLYU": 939
+    "POLYU": 1053
   },
-  "codedCourseCount": 5389
+  "codedCourseCount": 5503
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
