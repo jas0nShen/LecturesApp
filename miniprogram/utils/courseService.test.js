@@ -395,6 +395,33 @@ test('study plan remaining core checklist can be copied separately', () => {
   assert(text.includes('For planning reference only.'));
 });
 
+test('study plan check reminders can be copied separately', () => {
+  service.saveProfile({
+    profileType: 'undergraduate',
+    universityCode: 'HKU',
+    universityName: '香港大学',
+    programmeId: 1,
+    programmeName: 'BEng(CompSc)',
+    majorName: 'Computer Science',
+    curriculumYear: '2025-26',
+    currentYear: 1
+  });
+  ['COMP1117', 'COMP2113', 'COMP2119', 'COMP2121', 'COMP2501', 'COMP3234', 'COMP3278']
+    .forEach((code) => service.saveStudyPlanItem(code, 1, '1'));
+
+  const text = service.formatStudyPlanCheckText(new Date('2026-07-05T00:00:00Z'));
+
+  assert(text.startsWith('香港大学 · BEng(CompSc) · Study Plan · Plan Check'));
+  assert(text.includes('Generated: 2026-07-05'));
+  assert(text.includes('Checks:'));
+  assert(text.includes('Reminders:'));
+  assert(text.includes('[Workload] Year 1 Semester 1 已安排'));
+  assert(text.includes('Possible load adjustments:'));
+  assert(text.includes('COMP2113 Programming Technologies'));
+  assert(!text.includes('courseNotes'));
+  assert(text.includes('For planning reference only.'));
+});
+
 test('study plan share text includes overload move suggestions when available', () => {
   ['COMP1117', 'COMP2113', 'COMP2119', 'COMP2121', 'COMP2501', 'COMP3234', 'COMP3278']
     .forEach((code) => service.saveStudyPlanItem(code, 1, '1'));

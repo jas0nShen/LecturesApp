@@ -696,6 +696,46 @@ function formatStudyPlanCoreGapText(now = new Date()) {
   return lines.join('\n').trim();
 }
 
+function formatStudyPlanCheckText(now = new Date()) {
+  const review = analyzeStudyPlan();
+  const profileContext = getStudyPlanProfileContext();
+  const lines = [
+    `${profileContext.title} · Plan Check`,
+    `Generated: ${now.toISOString().slice(0, 10)}`,
+    `Checks: ${review.noticeCount}`,
+    ''
+  ];
+
+  if (!review.noticeCount) {
+    lines.push('No current reminders from offering term, prerequisite, corequisite or workload checks.');
+  } else {
+    lines.push('Reminders:');
+    review.notices.forEach((notice) => {
+      const label = notice.type === 'offering'
+        ? 'Offering'
+        : notice.type === 'prerequisite'
+          ? 'Prerequisite'
+          : notice.type === 'corequisite'
+            ? 'Corequisite'
+            : 'Workload';
+      lines.push(`- [${label}] ${notice.message}`);
+    });
+  }
+
+  if (review.loadSuggestions.length) {
+    lines.push('', 'Possible load adjustments:');
+    review.loadSuggestions.forEach((suggestion) => {
+      lines.push(`- ${suggestion.message}`);
+      suggestion.candidates.forEach((candidate) => {
+        lines.push(`  - ${candidate.courseCode} ${candidate.title}: ${candidate.fromLabel} -> ${candidate.toLabel}`);
+      });
+    });
+  }
+
+  lines.push('', 'For planning reference only. Confirm official timetable, prerequisites and degree requirements with your university.');
+  return lines.join('\n').trim();
+}
+
 function resolveProfileLabel(profile, key, resolver) {
   if (!profile) return '';
   if (profile[key]) return profile[key];
@@ -1130,6 +1170,7 @@ module.exports = {
   buildAuditRemote,
   exportUserData,
   formatUserDataBackup,
+  formatStudyPlanCheckText,
   formatStudyPlanCoreGapText,
   formatStudyPlanText,
   getCompletedCourseIds,

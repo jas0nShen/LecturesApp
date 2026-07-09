@@ -52,7 +52,10 @@
   </view>
 
   <view wx:if="{{review.notices.length}}" class="review-notes">
-    <view class="review-title">计划检查</view>
+    <view class="review-head">
+      <view class="review-title">计划检查</view>
+      <view class="review-copy-action" bindtap="copyPlanChecks">复制检查清单</view>
+    </view>
     <view class="notice-legend">
       <view wx:if="{{review.noticeCounts.offering}}" class="legend-item offering">开课 {{review.noticeCounts.offering}}</view>
       <view wx:if="{{review.noticeCounts.prerequisite}}" class="legend-item prerequisite">先修 {{review.noticeCounts.prerequisite}}</view>

@@ -114,7 +114,23 @@
   margin-bottom: 30rpx;
   padding: 24rpx;
 }
+.review-head {
+  align-items: center;
+  display: flex;
+  gap: 16rpx;
+  justify-content: space-between;
+}
 .review-title { color: #80520e; font-size: 25rpx; font-weight: 800; }
+.review-copy-action {
+  background: #f1e3c4;
+  border: 1rpx solid #dfc48d;
+  border-radius: 999rpx;
+  color: #80520e;
+  flex: none;
+  font-size: 18rpx;
+  font-weight: 850;
+  padding: 9rpx 14rpx;
+}
 .notice-legend { display: flex; flex-wrap: wrap; gap: 8rpx; margin-top: 14rpx; }
 .legend-item { background: #f4e4c7; border-radius: 999rpx; color: #80520e; font-size: 19rpx; padding: 8rpx 12rpx; }
 .legend-item.offering { background: #f1ded8; color: #8b4b3f; }

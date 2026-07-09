@@ -93,6 +93,19 @@ Page({
     });
   },
 
+  copyPlanChecks() {
+    if (!this.data.review.noticeCount) {
+      wx.showToast({ title: '暂无计划提醒', icon: 'none' });
+      return;
+    }
+    wx.setClipboardData({
+      data: service.formatStudyPlanCheckText(),
+      success() {
+        wx.showToast({ title: '检查清单已复制' });
+      }
+    });
+  },
+
   editCourse(event) {
     wx.navigateTo({
       url: `/pages/plan-course/plan-course?code=${event.currentTarget.dataset.code}`
