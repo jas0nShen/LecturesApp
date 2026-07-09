@@ -89,6 +89,20 @@ test('UG pending programme collection can be filtered by source readiness', () =
   assert.match(text, /暂无待补 Programme/);
 });
 
+test('UG pending programme collection can prioritize launch batches', () => {
+  const pending = ugService.listPendingProgrammes({ priority: 'launch', limit: 4 });
+  const text = ugService.buildPendingCollectionText({ priority: 'launch', limit: 4 });
+
+  assert.equal(ugService.normalizePendingPriorityMode('first_batch'), 'launch');
+  assert.equal(ugService.normalizePendingPriorityMode('none'), '');
+  assert.throws(() => ugService.normalizePendingPriorityMode('random'), /Unknown pending priority/);
+  assert.equal(pending.length, 4);
+  assert(pending.every((programme) => programme.universityCode === 'POLYU'));
+  assert.equal(pending[0].code, 'JS3000');
+  assert.match(text, /优先级：launch/);
+  assert.match(text, /1\. POLYU · JS3000 · Bachelor’s Degree Scheme in Interdisciplinary Studies/);
+});
+
 test('UG catalogue exposes the multi-school hierarchy needed for onboarding', () => {
   const universities = ugService.listUniversities();
   const university = universities.find((item) => item.code === 'POLYU');

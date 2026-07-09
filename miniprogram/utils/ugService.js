@@ -82,6 +82,46 @@ function normalizePendingReadinessFilter(readiness = '') {
   throw new Error(`Unknown pending readiness "${readiness}". Use all, index-only, or no-source.`);
 }
 
+function normalizePendingPriorityMode(priority = '') {
+  const normalized = String(priority || '').trim().toLowerCase().replace(/_/g, '-');
+  if (!normalized || normalized === 'none') return '';
+  if (['launch', 'mvp', 'first-batch'].includes(normalized)) return 'launch';
+  throw new Error(`Unknown pending priority "${priority}". Use launch or none.`);
+}
+
+const LAUNCH_SCHOOL_PRIORITY = [
+  'POLYU',
+  'LINGNAN',
+  'CITYU',
+  'HKU',
+  'HKUST',
+  'CUHK',
+  'HKBU',
+  'EDUHK'
+];
+
+const LAUNCH_READINESS_PRIORITY = [
+  'indexOnly',
+  'noSource'
+];
+
+function priorityIndex(values, value) {
+  const index = values.indexOf(value);
+  return index === -1 ? values.length : index;
+}
+
+function sortPendingProgrammesByPriority(programmes = [], options = {}) {
+  const priorityMode = normalizePendingPriorityMode(options.priority);
+  if (priorityMode !== 'launch') return programmes;
+  return [...programmes].sort((a, b) => {
+    const schoolDelta = priorityIndex(LAUNCH_SCHOOL_PRIORITY, a.universityCode) - priorityIndex(LAUNCH_SCHOOL_PRIORITY, b.universityCode);
+    if (schoolDelta) return schoolDelta;
+    const readinessDelta = priorityIndex(LAUNCH_READINESS_PRIORITY, a.sourceReadiness) - priorityIndex(LAUNCH_READINESS_PRIORITY, b.sourceReadiness);
+    if (readinessDelta) return readinessDelta;
+    return String(a.code || a.name || '').localeCompare(String(b.code || b.name || ''));
+  });
+}
+
 function listUniversities() {
   return catalogue.universities.length ? catalogue.universities : data.universities;
 }
@@ -381,7 +421,8 @@ function listPendingProgrammes(options = {}) {
       };
     })
     .filter((programme) => !universityCode || programme.universityCode === universityCode);
-  return shouldLimit ? rows.slice(0, limit) : rows;
+  const sortedRows = sortPendingProgrammesByPriority(rows, options);
+  return shouldLimit ? sortedRows.slice(0, limit) : sortedRows;
 }
 
 function buildPendingCollectionText(options = {}) {
@@ -403,6 +444,7 @@ function buildPendingCollectionText(options = {}) {
     `范围：${scope}`,
     `待补 Programme：${totalPending}`,
     ...(options.readiness ? [`当前筛选：${options.readiness} · ${filteredTotal} 个`] : []),
+    ...(options.priority ? [`优先级：${normalizePendingPriorityMode(options.priority)}`] : []),
     '',
     '采集要求：',
     '- 只补官方来源或可信资料能验证的课程。',
@@ -448,6 +490,8 @@ module.exports = {
   listRequirementGroups,
   listUniversities,
   normalizePendingReadinessFilter,
+  normalizePendingPriorityMode,
+  sortPendingProgrammesByPriority,
   summarizePendingSourceReadiness,
   searchMajors,
   searchProgrammes

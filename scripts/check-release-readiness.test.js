@@ -227,9 +227,11 @@ test('data status page exposes undergraduate school coverage details', () => {
 
   assert(dataStatusLogic.includes('ugSchools: ugService.getSchoolCoverage()'));
   assert(dataStatusLogic.includes('ugService.buildPendingCollectionText({ limit: 12 })'));
+  assert(dataStatusLogic.includes("ugService.buildPendingCollectionText({ priority: 'launch', limit: 12 })"));
   assert(dataStatusLogic.includes("ugService.buildPendingCollectionText({ readiness: 'index-only', limit: 12 })"));
   assert(dataStatusLogic.includes("ugService.buildPendingCollectionText({ readiness: 'no-source', limit: 12 })"));
   assert(dataStatusLogic.includes('copyUgPendingCollection()'));
+  assert(dataStatusLogic.includes('copyUgPriorityCollection()'));
   assert(dataStatusLogic.includes('copyUgIndexOnlyCollection()'));
   assert(dataStatusLogic.includes('copyUgNoSourceCollection()'));
   assert(dataStatusLogic.includes('school.pendingProgrammeCount'));
@@ -249,6 +251,8 @@ test('data status page exposes undergraduate school coverage details', () => {
   assert(dataStatusPage.includes('{{item.codedCourseCount ? item.codedCourseCount + \' codes\' : \'待开放\'}}'));
   assert(dataStatusPage.includes('bindtap="copyUgPendingCollection"'));
   assert(dataStatusPage.includes('复制待补资料清单'));
+  assert(dataStatusPage.includes('bindtap="copyUgPriorityCollection"'));
+  assert(dataStatusPage.includes('复制优先补数清单'));
   assert(dataStatusPage.includes('bindtap="copyUgIndexOnlyCollection"'));
   assert(dataStatusPage.includes('复制仅索引清单'));
   assert(dataStatusPage.includes('bindtap="copyUgNoSourceCollection"'));

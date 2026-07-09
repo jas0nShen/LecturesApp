@@ -69,6 +69,11 @@ Page({
     copyTextOrToast(text, '待补清单已复制');
   },
 
+  copyUgPriorityCollection() {
+    const text = ugService.buildPendingCollectionText({ priority: 'launch', limit: 12 });
+    copyTextOrToast(text, '优先清单已复制');
+  },
+
   copyUgIndexOnlyCollection() {
     const text = ugService.buildPendingCollectionText({ readiness: 'index-only', limit: 12 });
     copyTextOrToast(text, '仅索引清单已复制');
