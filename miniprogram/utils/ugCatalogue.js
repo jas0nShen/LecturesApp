@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-09T15:50:54.463Z",
+  "generatedAt": "2026-07-09T16:12:08.816Z",
   "universities": [
     {
       "id": "HKU",
@@ -5684,9 +5684,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3220",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 10,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 264,
+      "codedCourseCount": 264,
+      "courseSourceUrl": "https://www.polyu.edu.hk/en/ama/study/subject-library/"
     },
     {
       "id": "POLYU-UG-JS3250-3",
@@ -11964,8 +11965,8 @@ const catalogue = {
       "code": "APPLIED-MATHEMATICS",
       "nameEn": "Applied Mathematics",
       "nameZh": "Applied Mathematics",
-      "courseCount": 10,
-      "codedCourseCount": 0,
+      "courseCount": 98,
+      "codedCourseCount": 88,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3220"
     },
     {
@@ -11974,8 +11975,8 @@ const catalogue = {
       "code": "INVESTMENT-SCIENCE-AND-FINANCE-ANALYTICS",
       "nameEn": "Investment Science and Finance Analytics",
       "nameZh": "Investment Science and Finance Analytics",
-      "courseCount": 10,
-      "codedCourseCount": 0,
+      "courseCount": 98,
+      "codedCourseCount": 88,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3220"
     },
     {
@@ -11984,8 +11985,8 @@ const catalogue = {
       "code": "QUANTITATIVE-FINANCE-AND-FINTECH",
       "nameEn": "Quantitative Finance and FinTech",
       "nameZh": "Quantitative Finance and FinTech",
-      "courseCount": 10,
-      "codedCourseCount": 0,
+      "courseCount": 98,
+      "codedCourseCount": 88,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3220"
     },
     {
@@ -15955,9 +15956,9 @@ const catalogue = {
     "HKU": 1511,
     "HKUST": 121,
     "LINGNAN": 721,
-    "POLYU": 1486
+    "POLYU": 1750
   },
-  "codedCourseCount": 5936
+  "codedCourseCount": 6200
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

@@ -13,9 +13,9 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.requirementCount, 4);
   assert(summary.courseCount >= 4630);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 5936);
-  assert.equal(summary.programmeWithCoursesCount, 79);
-  assert.equal(summary.pendingProgrammeCount, 365);
+  assert.equal(summary.codedCourseCount, 6200);
+  assert.equal(summary.programmeWithCoursesCount, 80);
+  assert.equal(summary.pendingProgrammeCount, 364);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
@@ -46,13 +46,13 @@ test('UG pending programme collection text is copy-ready for data sourcing', () 
   const text = ugService.buildPendingCollectionText({ universityCode: 'POLYU', limit: 2 });
 
   assert.equal(pending.length, 2);
-  assert.equal(allPending.length, 35);
+  assert.equal(allPending.length, 34);
   assert.equal(pending[0].universityCode, 'POLYU');
   assert.equal(pending[0].sourceStatusLabel, '仅索引 / 来源');
   assert.match(pending[0].officialUrl, /^https:\/\//);
   assert.match(text, /【本科课程资料待补清单】/);
   assert.match(text, /范围：POLYU/);
-  assert.match(text, /待补 Programme：35/);
+  assert.match(text, /待补 Programme：34/);
   assert.match(text, /课程代码 \/ 课程名 \/ 学分 \/ Year \/ Semester \/ 课程类别 \/ 来源链接/);
   assert.match(text, /不要推测课程/);
 });
@@ -84,7 +84,7 @@ test('UG pending programme collection can be filtered by source readiness', () =
   assert.equal(polyuNoSource.length, 0);
   assert.equal(ugService.getPendingSourceReadinessKey({}), 'noSource');
   assert.equal(ugService.getPendingSourceStatus({}), '缺来源');
-  assert.match(text, /待补 Programme：35/);
+  assert.match(text, /待补 Programme：34/);
   assert.match(text, /当前筛选：no-source · 0 个/);
   assert.match(text, /暂无待补 Programme/);
 });
@@ -135,7 +135,7 @@ test('UG per-school coverage stays visible for setup validation', () => {
     HKU: { programmeCount: 137, majorCount: 137, codedCourseCount: 1511 },
     CUHK: { programmeCount: 84, majorCount: 84, codedCourseCount: 131 },
     HKUST: { programmeCount: 50, majorCount: 64, codedCourseCount: 121 },
-    POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 1486 },
+    POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 1750 },
     CITYU: { programmeCount: 58, majorCount: 201, codedCourseCount: 1966 },
     HKBU: { programmeCount: 22, majorCount: 46, codedCourseCount: 0 },
     EDUHK: { programmeCount: 25, majorCount: 25, codedCourseCount: 0 },
@@ -168,10 +168,10 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert(cuhk.coveragePercent > 0);
   assert.equal(cuhk.codedCourseCount, 131);
   assert.equal(cuhk.badge, 'COURSES');
-  assert.equal(polyu.programmeWithCoursesCount, 11);
-  assert.equal(polyu.pendingProgrammeCount, 35);
-  assert.equal(polyu.coveragePercent, 24);
-  assert.equal(polyu.codedCourseCount, 1486);
+  assert.equal(polyu.programmeWithCoursesCount, 12);
+  assert.equal(polyu.pendingProgrammeCount, 34);
+  assert.equal(polyu.coveragePercent, 26);
+  assert.equal(polyu.codedCourseCount, 1750);
   assert.equal(polyu.badge, 'COURSES');
   assert.equal(polyu.sourceReadiness.indexOnly, polyu.pendingProgrammeCount);
   assert.equal(cityu.programmeWithCoursesCount, 20);
@@ -400,6 +400,30 @@ test('PolyU Information and Artificial Intelligence Engineering scheme exposes o
   assert(ugService.listMajorCourses(eieScheme.id, iot.id, { keyword: 'Internet of Things' }).some((course) => course.courseCode === 'EIE2113'));
   assert(ugService.listMajorCourses(eieScheme.id, ai.id, { keyword: 'Machine Learning' }).some((course) => course.courseCode === 'EIE4121'));
   assert(ugService.listMajorCourses(eieScheme.id, security.id, { keyword: 'Network Security' }).some((course) => course.courseCode === 'EIE3130'));
+});
+
+test('PolyU Applied Mathematics and Finance Analytics scheme exposes official AMA subject library courses', () => {
+  const polyu = ugService.listUniversities().find((item) => item.code === 'POLYU');
+  const programmes = ugService.listProgrammes({ universityId: polyu.id, degreeLevel: 'undergraduate' });
+  const amaScheme = programmes.find((programme) => programme.code === 'JS3220');
+  const majors = ugService.listMajors(amaScheme.id);
+  const appliedMath = majors.find((major) => major.nameEn === 'Applied Mathematics');
+  const investment = majors.find((major) => major.nameEn === 'Investment Science and Finance Analytics');
+  const qfft = majors.find((major) => major.nameEn === 'Quantitative Finance and FinTech');
+  const qfftCourses = ugService.listMajorCourses(amaScheme.id, qfft.id);
+  const appliedProfile = ugService.getMajorProfile(amaScheme.id, appliedMath.id, '2026');
+
+  assert.equal(amaScheme.sourceStatus, 'course_codes_available');
+  assert.equal(amaScheme.codedCourseCount, 264);
+  assert.equal(appliedMath.codedCourseCount, 88);
+  assert.equal(investment.codedCourseCount, 88);
+  assert.equal(qfft.codedCourseCount, 88);
+  assert.equal(appliedProfile.codedCourseCount, 264);
+  assert.equal(qfftCourses.length, 88);
+  assert(qfftCourses.some((course) => course.courseCode === 'AMA3340' && course.titleEn === 'Introduction to Blockchain and Cyber Security'));
+  assert(qfftCourses.some((course) => course.courseCode === 'AMA4951' && course.courseType === 'capstone'));
+  assert(ugService.listMajorCourses(amaScheme.id, investment.id, { keyword: 'Derivative Pricing' }).some((course) => course.courseCode === 'AMA4325'));
+  assert(ugService.listMajorCourses(amaScheme.id, appliedMath.id, { keyword: 'Optimization Methods' }).some((course) => course.courseCode === 'AMA4850'));
 });
 
 test('HKU Computing and Data Science catalogue profiles expose official course offerings', () => {
