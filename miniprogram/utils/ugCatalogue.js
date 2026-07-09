@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-09T15:43:49.277Z",
+  "generatedAt": "2026-07-09T15:50:54.463Z",
   "universities": [
     {
       "id": "HKU",
@@ -6164,9 +6164,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3180",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 9,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 213,
+      "codedCourseCount": 213,
+      "courseSourceUrl": "https://www.polyu.edu.hk/eee/study/information-for-current-students/subject-syllabi/"
     },
     {
       "id": "POLYU-UG-JS3237-28",
@@ -12713,8 +12714,8 @@ const catalogue = {
       "code": "INTERNET-OF-THINGS",
       "nameEn": "Internet-of-Things",
       "nameZh": "Internet-of-Things",
-      "courseCount": 9,
-      "codedCourseCount": 0,
+      "courseCount": 80,
+      "codedCourseCount": 71,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3180"
     },
     {
@@ -12723,8 +12724,8 @@ const catalogue = {
       "code": "ARTIFICIAL-INTELLIGENCE",
       "nameEn": "Artificial Intelligence",
       "nameZh": "Artificial Intelligence",
-      "courseCount": 9,
-      "codedCourseCount": 0,
+      "courseCount": 80,
+      "codedCourseCount": 71,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3180"
     },
     {
@@ -12733,8 +12734,8 @@ const catalogue = {
       "code": "INFORMATION-SECURITY",
       "nameEn": "Information Security",
       "nameZh": "Information Security",
-      "courseCount": 9,
-      "codedCourseCount": 0,
+      "courseCount": 80,
+      "codedCourseCount": 71,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3180"
     },
     {
@@ -15954,9 +15955,9 @@ const catalogue = {
     "HKU": 1511,
     "HKUST": 121,
     "LINGNAN": 721,
-    "POLYU": 1273
+    "POLYU": 1486
   },
-  "codedCourseCount": 5723
+  "codedCourseCount": 5936
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
