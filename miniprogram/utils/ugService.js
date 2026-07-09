@@ -68,6 +68,20 @@ function getPendingSourceStatus(programme = {}) {
   return '缺来源';
 }
 
+function getPendingSourceReadinessKey(programme = {}) {
+  if (programme.codedCourseCount || 0) return 'open';
+  if (programme.sourceStatus || programme.courseCount || programme.officialUrl) return 'indexOnly';
+  return 'noSource';
+}
+
+function normalizePendingReadinessFilter(readiness = '') {
+  const normalized = String(readiness || '').trim().toLowerCase().replace(/_/g, '-');
+  if (!normalized || normalized === 'all') return '';
+  if (['index', 'index-only', 'source-index', 'source-index-only'].includes(normalized)) return 'indexOnly';
+  if (['none', 'missing-source', 'no-source'].includes(normalized)) return 'noSource';
+  throw new Error(`Unknown pending readiness "${readiness}". Use all, index-only, or no-source.`);
+}
+
 function listUniversities() {
   return catalogue.universities.length ? catalogue.universities : data.universities;
 }
@@ -346,8 +360,10 @@ function listPendingProgrammes(options = {}) {
   const universityCode = String(options.universityCode || options.schoolCode || '').trim().toUpperCase();
   const limit = Number.isFinite(Number(options.limit)) ? Number(options.limit) : 12;
   const shouldLimit = limit >= 0;
+  const readinessFilter = normalizePendingReadinessFilter(options.readiness);
   const rows = catalogue.programmes
     .filter((programme) => !(programme.codedCourseCount || 0))
+    .filter((programme) => !readinessFilter || getPendingSourceReadinessKey(programme) === readinessFilter)
     .map((programme) => {
       const university = getUniversity(programme.universityId) || {};
       const faculty = getFaculty(programme.facultyId) || {};
@@ -359,6 +375,7 @@ function listPendingProgrammes(options = {}) {
         faculty: programme.faculty || faculty.nameEn || faculty.nameZh || '',
         officialUrl: programme.officialUrl || '',
         sourceStatus: programme.sourceStatus || '',
+        sourceReadiness: getPendingSourceReadinessKey(programme),
         sourceStatusLabel: getPendingSourceStatus(programme),
         curriculumYear: programme.curriculumYear || ''
       };
@@ -373,11 +390,19 @@ function buildPendingCollectionText(options = {}) {
     universityCode: options.universityCode || options.schoolCode || '',
     limit: -1
   }).length;
+  const filteredTotal = options.readiness
+    ? listPendingProgrammes({
+      universityCode: options.universityCode || options.schoolCode || '',
+      readiness: options.readiness,
+      limit: -1
+    }).length
+    : totalPending;
   const scope = String(options.universityCode || options.schoolCode || '').trim().toUpperCase() || '全部学校';
   const lines = [
     '【本科课程资料待补清单】',
     `范围：${scope}`,
     `待补 Programme：${totalPending}`,
+    ...(options.readiness ? [`当前筛选：${options.readiness} · ${filteredTotal} 个`] : []),
     '',
     '采集要求：',
     '- 只补官方来源或可信资料能验证的课程。',
@@ -411,6 +436,7 @@ module.exports = {
   getMajorProfile,
   getProgramme,
   getPendingSourceStatus,
+  getPendingSourceReadinessKey,
   getSchoolCoverage,
   getUniversity,
   listPendingProgrammes,
@@ -421,6 +447,7 @@ module.exports = {
   listProgrammes,
   listRequirementGroups,
   listUniversities,
+  normalizePendingReadinessFilter,
   summarizePendingSourceReadiness,
   searchMajors,
   searchProgrammes

@@ -57,6 +57,38 @@ test('UG pending programme collection text is copy-ready for data sourcing', () 
   assert.match(text, /不要推测课程/);
 });
 
+test('UG pending programme collection can be filtered by source readiness', () => {
+  const polyuIndexOnly = ugService.listPendingProgrammes({
+    universityCode: 'POLYU',
+    readiness: 'index-only',
+    limit: 3
+  });
+  const polyuNoSource = ugService.listPendingProgrammes({
+    universityCode: 'POLYU',
+    readiness: 'no-source',
+    limit: 2
+  });
+  const text = ugService.buildPendingCollectionText({
+    universityCode: 'POLYU',
+    readiness: 'no-source',
+    limit: 2
+  });
+
+  assert.equal(ugService.normalizePendingReadinessFilter('index_only'), 'indexOnly');
+  assert.equal(ugService.normalizePendingReadinessFilter('no-source'), 'noSource');
+  assert.equal(ugService.normalizePendingReadinessFilter('all'), '');
+  assert.throws(() => ugService.normalizePendingReadinessFilter('coded'), /Unknown pending readiness/);
+  assert.equal(polyuIndexOnly.length, 3);
+  assert(polyuIndexOnly.every((programme) => programme.sourceReadiness === 'indexOnly'));
+  assert(polyuIndexOnly.every((programme) => programme.sourceStatusLabel === '仅索引 / 来源'));
+  assert.equal(polyuNoSource.length, 0);
+  assert.equal(ugService.getPendingSourceReadinessKey({}), 'noSource');
+  assert.equal(ugService.getPendingSourceStatus({}), '缺来源');
+  assert.match(text, /待补 Programme：45/);
+  assert.match(text, /当前筛选：no-source · 0 个/);
+  assert.match(text, /暂无待补 Programme/);
+});
+
 test('UG catalogue exposes the multi-school hierarchy needed for onboarding', () => {
   const universities = ugService.listUniversities();
   const university = universities.find((item) => item.code === 'POLYU');
