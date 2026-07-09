@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-09T06:52:04.558Z",
+  "generatedAt": "2026-07-09T06:58:31.421Z",
   "universities": [
     {
       "id": "HKU",
@@ -6063,9 +6063,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3050",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 2,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 315,
+      "codedCourseCount": 315,
+      "courseSourceUrl": "https://www.polyu.edu.hk/sft/admissions/undergraduate-programmes/jupas-applicants/bachelor-of-arts-honours-scheme-in-fashion/"
     },
     {
       "id": "POLYU-UG-JS3255-23",
@@ -12585,8 +12586,8 @@ const catalogue = {
       "code": "FASHION-DESIGN",
       "nameEn": "Fashion Design",
       "nameZh": "Fashion Design",
-      "courseCount": 2,
-      "codedCourseCount": 0,
+      "courseCount": 65,
+      "codedCourseCount": 63,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3050"
     },
     {
@@ -12595,8 +12596,8 @@ const catalogue = {
       "code": "KNITWEAR-DESIGN",
       "nameEn": "Knitwear Design",
       "nameZh": "Knitwear Design",
-      "courseCount": 2,
-      "codedCourseCount": 0,
+      "courseCount": 65,
+      "codedCourseCount": 63,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3050"
     },
     {
@@ -12605,8 +12606,8 @@ const catalogue = {
       "code": "CONTOUR-FASHION-AND-ACTIVEWEAR",
       "nameEn": "Contour Fashion and Activewear",
       "nameZh": "Contour Fashion and Activewear",
-      "courseCount": 2,
-      "codedCourseCount": 0,
+      "courseCount": 65,
+      "codedCourseCount": 63,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3050"
     },
     {
@@ -12615,8 +12616,8 @@ const catalogue = {
       "code": "FASHION-BUSINESS",
       "nameEn": "Fashion Business",
       "nameZh": "Fashion Business",
-      "courseCount": 2,
-      "codedCourseCount": 0,
+      "courseCount": 65,
+      "codedCourseCount": 63,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3050"
     },
     {
@@ -12625,8 +12626,8 @@ const catalogue = {
       "code": "FASHION-INNOVATION-AND-TECHNOLOGY",
       "nameEn": "Fashion Innovation and Technology",
       "nameZh": "Fashion Innovation and Technology",
-      "courseCount": 2,
-      "codedCourseCount": 0,
+      "courseCount": 65,
+      "codedCourseCount": 63,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3050"
     },
     {
@@ -15946,9 +15947,9 @@ const catalogue = {
     "HKU": 1511,
     "HKUST": 121,
     "LINGNAN": 721,
-    "POLYU": 183
+    "POLYU": 498
   },
-  "codedCourseCount": 4633
+  "codedCourseCount": 4948
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
