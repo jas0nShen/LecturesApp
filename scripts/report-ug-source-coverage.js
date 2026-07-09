@@ -4,6 +4,7 @@ const { SOURCES, listCourses, validateSourceDir } = require('./generate-ug-catal
 const ugService = require('../miniprogram/utils/ugService');
 
 const DEFAULT_SOURCE_DIR = '/Users/shenjingsong/Documents/Codex/2026-07-06/pdf/outputs';
+const DEFAULT_SOURCE_REVIEW_FILE = path.join(__dirname, '..', 'data', 'ug-source-reviews.json');
 
 function parseArgs(argv = process.argv.slice(2)) {
   const sourceDirIndex = argv.indexOf('--source-dir');
@@ -269,6 +270,17 @@ function getSourceProgrammeMap(sourceSummary = null) {
   return bySchoolAndCode;
 }
 
+function loadSourceReviews(filePath = DEFAULT_SOURCE_REVIEW_FILE) {
+  if (!fs.existsSync(filePath)) return [];
+  return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+}
+
+function getSourceReviewMap(sourceReviews = loadSourceReviews()) {
+  return new Map(sourceReviews
+    .filter((review) => review.universityCode && review.programmeCode)
+    .map((review) => [`${String(review.universityCode).trim().toUpperCase()}::${String(review.programmeCode).trim()}`, review]));
+}
+
 function summarizeSources(sourceDir, options = {}) {
   validateSourceDir(sourceDir);
   const schools = filterSchools(
@@ -316,6 +328,7 @@ function buildGeneratedTotals(schools) {
 }
 
 function sourceReadinessKey(programme) {
+  if (programme.sourceReviewStatus === 'no_public_course_codes') return 'reviewedNoCourseCodes';
   if (programme.sourceStatus === 'source_importable_rows') return 'sourceImportableRows';
   if (programme.sourceStatus === 'source_coded_rows_not_importable') return 'sourceCodedRowsNotImportable';
   if (programme.sourceStatus === 'source_index_only') return 'sourceIndexOnly';
@@ -328,8 +341,9 @@ function normalizeReadinessFilter(readiness = '') {
   if (['source-importable', 'importable', 'source-importable-rows'].includes(normalized)) return 'sourceImportableRows';
   if (['coded', 'coded-not-importable', 'source-coded', 'source-coded-rows-not-importable'].includes(normalized)) return 'sourceCodedRowsNotImportable';
   if (['index', 'index-only', 'source-index', 'source-index-only'].includes(normalized)) return 'sourceIndexOnly';
+  if (['reviewed', 'reviewed-no-codes', 'reviewed-no-course-codes', 'no-public-course-codes'].includes(normalized)) return 'reviewedNoCourseCodes';
   if (['none', 'missing-source', 'no-source'].includes(normalized)) return 'noSource';
-  throw new Error(`Unknown --readiness "${readiness}". Use all, importable, coded, index-only, or no-source.`);
+  throw new Error(`Unknown --readiness "${readiness}". Use all, importable, coded, index-only, reviewed-no-codes, or no-source.`);
 }
 
 function normalizePriorityMode(priority = '') {
@@ -354,6 +368,7 @@ const LAUNCH_READINESS_PRIORITY = [
   'sourceImportableRows',
   'sourceCodedRowsNotImportable',
   'sourceIndexOnly',
+  'reviewedNoCourseCodes',
   'noSource'
 ];
 
@@ -400,6 +415,7 @@ function summarizeMissingSourceReadiness(missingProgrammes = []) {
     sourceImportableRows: 0,
     sourceCodedRowsNotImportable: 0,
     sourceIndexOnly: 0,
+    reviewedNoCourseCodes: 0,
     noSource: 0
   });
 }
@@ -410,6 +426,7 @@ function summarizeGeneratedCatalogue(options = {}) {
   const readinessFilter = normalizeReadinessFilter(options.readiness);
   const priorityMode = normalizePriorityMode(options.priority);
   const sourceProgrammes = getSourceProgrammeMap(options.sourceSummary);
+  const sourceReviews = getSourceReviewMap(options.sourceReviews);
   let schools = filterSchools(ugService.listUniversities().map((university) => {
     const programmes = ugService.listProgrammes({
       universityId: university.id,
@@ -434,7 +451,16 @@ function summarizeGeneratedCatalogue(options = {}) {
         faculty: programme.faculty || '',
         curriculumYear: programme.curriculumYear || '',
         officialUrl: programme.officialUrl || '',
-        ...(sourceProgrammes.get(`${university.code}::${programme.jupasCode || programme.code}`) || {})
+        ...(sourceProgrammes.get(`${university.code}::${programme.jupasCode || programme.code}`) || {}),
+        ...(() => {
+          const review = sourceReviews.get(`${university.code}::${programme.jupasCode || programme.code}`);
+          return review ? {
+            sourceReviewStatus: review.status,
+            sourceReviewDate: review.reviewedAt || '',
+            sourceReviewNote: review.note || '',
+            sourceReviewOfficialUrl: review.officialUrl || ''
+          } : {};
+        })()
       }));
     let filteredMissingProgrammes = readinessFilter
       ? allMissingProgrammes.filter((programme) => sourceReadinessKey(programme) === readinessFilter)
@@ -481,6 +507,9 @@ function summarizeGeneratedCatalogue(options = {}) {
 }
 
 function formatMissingSourceStatus(programme) {
+  if (programme.sourceReviewStatus === 'no_public_course_codes') {
+    return `reviewed no public course codes${programme.sourceReviewDate ? ` (${programme.sourceReviewDate})` : ''}`;
+  }
   if (!programme.sourceStatus) return '';
   if (programme.sourceStatus === 'source_importable_rows') {
     return `source importable: ${programme.sourceImportableCodedCourseCount} importable / ${programme.sourceCodedCourseCount} raw coded rows`;
@@ -666,11 +695,15 @@ function formatSourceReadinessSummary(sourceReadiness = {}) {
     `${sourceReadiness.sourceImportableRows || 0} source importable`,
     `${sourceReadiness.sourceCodedRowsNotImportable || 0} coded not importable`,
     `${sourceReadiness.sourceIndexOnly || 0} index only`,
+    `${sourceReadiness.reviewedNoCourseCodes || 0} reviewed no course codes`,
     `${sourceReadiness.noSource || 0} no source`
   ].join(' · ');
 }
 
 function formatCollectorSourceStatus(programme) {
+  if (programme.sourceReviewStatus === 'no_public_course_codes') {
+    return `已核实官网暂无公开课程码${programme.sourceReviewDate ? `：${programme.sourceReviewDate}` : ''}`;
+  }
   if (programme.sourceStatus === 'source_importable_rows') {
     return `已有可导入课程码：${programme.sourceImportableCodedCourseCount || 0} 条`;
   }
@@ -709,6 +742,7 @@ function groupMissingProgrammesByReadiness(summary, options = {}) {
     sourceImportableRows: [],
     sourceCodedRowsNotImportable: [],
     sourceIndexOnly: [],
+    reviewedNoCourseCodes: [],
     noSource: []
   });
 }
@@ -738,14 +772,16 @@ function buildMissingBatchPlan(summary, options = {}) {
     '1. source importable：已有可导入课程码，优先转成 supplement JSON。',
     '2. coded not importable：已有课程码但 track/重复行需整理，先人工清洗再导入。',
     '3. index only：已有官方 Programme 入口，先打开官网确认是否有课程码。',
-    '4. no source：先补官方入口或可信资料；没有课程码时只保留索引。'
+    '4. reviewed no course codes：已核实官网暂无公开课程码，继续保留索引和来源。',
+    '5. no source：先补官方入口或可信资料；没有课程码时只保留索引。'
   ];
 
   const sections = [
     ['sourceImportableRows', 'A. 可直接导入候选'],
     ['sourceCodedRowsNotImportable', 'B. 需清洗后导入候选'],
     ['sourceIndexOnly', 'C. 需打开官方入口核实课程码'],
-    ['noSource', 'D. 需先寻找官方来源']
+    ['reviewedNoCourseCodes', 'D. 已核实官网暂无公开课程码'],
+    ['noSource', 'E. 需先寻找官方来源']
   ];
 
   sections.forEach(([key, title]) => {
@@ -759,7 +795,7 @@ function buildMissingBatchPlan(summary, options = {}) {
       lines.push(formatBatchProgrammeLine(programme, index));
     });
     if (programmes.length > sampleLimit) {
-      lines.push(`... 还有 ${programmes.length - sampleLimit} 个，使用 --readiness ${key === 'sourceImportableRows' ? 'importable' : key === 'sourceCodedRowsNotImportable' ? 'coded' : key === 'sourceIndexOnly' ? 'index-only' : 'no-source'} 查看。`);
+      lines.push(`... 还有 ${programmes.length - sampleLimit} 个，使用 --readiness ${key === 'sourceImportableRows' ? 'importable' : key === 'sourceCodedRowsNotImportable' ? 'coded' : key === 'sourceIndexOnly' ? 'index-only' : key === 'reviewedNoCourseCodes' ? 'reviewed-no-codes' : 'no-source'} 查看。`);
     }
   });
 
