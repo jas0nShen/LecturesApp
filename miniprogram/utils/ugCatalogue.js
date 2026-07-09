@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-09T06:58:31.421Z",
+  "generatedAt": "2026-07-09T07:13:09.141Z",
   "universities": [
     {
       "id": "HKU",
@@ -5664,9 +5664,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3060",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 3,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 252,
+      "codedCourseCount": 252,
+      "courseSourceUrl": "https://www.polyu.edu.hk/af/-/media/department/af/content/study/ug/bachelor-of-business-administration-honours-in-accounting-and-finance/21453-prdbba-scheme-in-af-20252620250915.pdf?rev=e40f6cac7e8648f58f4156edb53289a9&hash=8C2A83B65FE49DB57E9DE1E91F617FEA"
     },
     {
       "id": "POLYU-UG-JS3220-2",
@@ -11896,8 +11897,8 @@ const catalogue = {
       "code": "ACCOUNTANCY",
       "nameEn": "Accountancy",
       "nameZh": "Accountancy",
-      "courseCount": 3,
-      "codedCourseCount": 0,
+      "courseCount": 42,
+      "codedCourseCount": 39,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3060"
     },
     {
@@ -11906,8 +11907,8 @@ const catalogue = {
       "code": "ACCOUNTING-AND-FINANCE",
       "nameEn": "Accounting and Finance",
       "nameZh": "Accounting and Finance",
-      "courseCount": 3,
-      "codedCourseCount": 0,
+      "courseCount": 50,
+      "codedCourseCount": 47,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3060"
     },
     {
@@ -11916,8 +11917,8 @@ const catalogue = {
       "code": "DIGITAL-FINANCE-AND-INVESTMENT",
       "nameEn": "Digital Finance and Investment",
       "nameZh": "Digital Finance and Investment",
-      "courseCount": 3,
-      "codedCourseCount": 0,
+      "courseCount": 43,
+      "codedCourseCount": 40,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3060"
     },
     {
@@ -11926,8 +11927,8 @@ const catalogue = {
       "code": "BA-HONS-IN-ACCOUNTANCY",
       "nameEn": "BA (Hons) in Accountancy",
       "nameZh": "BA (Hons) in Accountancy",
-      "courseCount": 3,
-      "codedCourseCount": 0,
+      "courseCount": 42,
+      "codedCourseCount": 39,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3060"
     },
     {
@@ -11936,8 +11937,8 @@ const catalogue = {
       "code": "BA-HONS-IN-ACCOUNTING-AND-FINANCE",
       "nameEn": "BA (Hons) in Accounting and Finance",
       "nameZh": "BA (Hons) in Accounting and Finance",
-      "courseCount": 3,
-      "codedCourseCount": 0,
+      "courseCount": 50,
+      "codedCourseCount": 47,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3060"
     },
     {
@@ -11946,8 +11947,8 @@ const catalogue = {
       "code": "BA-HONS-IN-DIGITAL-FINANCE-AND-INVESTMENT",
       "nameEn": "BA (Hons) in Digital Finance and Investment",
       "nameZh": "BA (Hons) in Digital Finance and Investment",
-      "courseCount": 3,
-      "codedCourseCount": 0,
+      "courseCount": 43,
+      "codedCourseCount": 40,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3060"
     },
     {
@@ -15947,9 +15948,9 @@ const catalogue = {
     "HKU": 1511,
     "HKUST": 121,
     "LINGNAN": 721,
-    "POLYU": 498
+    "POLYU": 750
   },
-  "codedCourseCount": 4948
+  "codedCourseCount": 5200
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
