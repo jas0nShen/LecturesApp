@@ -10,11 +10,13 @@ function parseArgs(argv = process.argv.slice(2)) {
   const sourceFileIndex = argv.indexOf('--source-file');
   const schoolIndex = argv.indexOf('--school');
   const missingLimitIndex = argv.indexOf('--missing-limit');
+  const readinessIndex = argv.indexOf('--readiness');
   return {
     sourceDir: sourceDirIndex === -1 ? DEFAULT_SOURCE_DIR : path.resolve(argv[sourceDirIndex + 1]),
     sourceFile: sourceFileIndex === -1 ? '' : path.resolve(argv[sourceFileIndex + 1]),
     school: schoolIndex === -1 ? '' : String(argv[schoolIndex + 1] || '').trim().toUpperCase(),
     missingLimit: missingLimitIndex === -1 ? 20 : Number(argv[missingLimitIndex + 1]),
+    readiness: readinessIndex === -1 ? '' : String(argv[readinessIndex + 1] || '').trim(),
     missingOnly: argv.includes('--missing-only'),
     missingSummary: argv.includes('--missing-summary'),
     collectorTemplate: argv.includes('--collector-template'),
@@ -316,6 +318,16 @@ function sourceReadinessKey(programme) {
   return 'noSource';
 }
 
+function normalizeReadinessFilter(readiness = '') {
+  const normalized = String(readiness || '').trim().toLowerCase().replace(/_/g, '-');
+  if (!normalized || normalized === 'all') return '';
+  if (['source-importable', 'importable', 'source-importable-rows'].includes(normalized)) return 'sourceImportableRows';
+  if (['coded', 'coded-not-importable', 'source-coded', 'source-coded-rows-not-importable'].includes(normalized)) return 'sourceCodedRowsNotImportable';
+  if (['index', 'index-only', 'source-index', 'source-index-only'].includes(normalized)) return 'sourceIndexOnly';
+  if (['none', 'missing-source', 'no-source'].includes(normalized)) return 'noSource';
+  throw new Error(`Unknown --readiness "${readiness}". Use all, importable, coded, index-only, or no-source.`);
+}
+
 function summarizeMissingSourceReadiness(missingProgrammes = []) {
   return missingProgrammes.reduce((summary, programme) => {
     const key = sourceReadinessKey(programme);
@@ -332,6 +344,7 @@ function summarizeMissingSourceReadiness(missingProgrammes = []) {
 function summarizeGeneratedCatalogue(options = {}) {
   const missingLimit = Number.isFinite(Number(options.missingLimit)) ? Number(options.missingLimit) : 20;
   const shouldLimitMissing = Number.isFinite(missingLimit) && missingLimit >= 0;
+  const readinessFilter = normalizeReadinessFilter(options.readiness);
   const sourceProgrammes = getSourceProgrammeMap(options.sourceSummary);
   const schools = filterSchools(ugService.listUniversities().map((university) => {
     const programmes = ugService.listProgrammes({
@@ -358,9 +371,12 @@ function summarizeGeneratedCatalogue(options = {}) {
         officialUrl: programme.officialUrl || '',
         ...(sourceProgrammes.get(`${university.code}::${programme.jupasCode || programme.code}`) || {})
       }));
-    const missingProgrammes = shouldLimitMissing
-      ? allMissingProgrammes.slice(0, missingLimit)
+    const filteredMissingProgrammes = readinessFilter
+      ? allMissingProgrammes.filter((programme) => sourceReadinessKey(programme) === readinessFilter)
       : allMissingProgrammes;
+    const missingProgrammes = shouldLimitMissing
+      ? filteredMissingProgrammes.slice(0, missingLimit)
+      : filteredMissingProgrammes;
     const sourceReadiness = summarizeMissingSourceReadiness(allMissingProgrammes);
 
     return {
@@ -370,6 +386,7 @@ function summarizeGeneratedCatalogue(options = {}) {
       majorCount: majors.length,
       programmeWithCoursesCount,
       missingProgrammeCount: allMissingProgrammes.length,
+      filteredMissingProgrammeCount: filteredMissingProgrammes.length,
       codedCourseCount,
       courseProgrammes,
       sourceReadiness,
@@ -651,7 +668,7 @@ function printMissingProgrammes(summary, options = {}) {
   if (!missing.length) return;
 
   console.log('');
-  console.log(`Next missing UG programmes (first ${missing.length}):`);
+  console.log(`Next missing UG programmes${options.readiness ? ` matching ${options.readiness}` : ''} (first ${missing.length}):`);
   missing.forEach((programme) => {
     console.log([
       programme.schoolCode,
@@ -710,6 +727,7 @@ module.exports = {
   summarizeGeneratedCatalogue,
   filterSchools,
   filterImportableProgrammes,
+  normalizeReadinessFilter,
   getSourceProgrammeMap,
   getGeneratedCourseProgrammeMap,
   listImportableProgrammes,

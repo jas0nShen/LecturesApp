@@ -19,6 +19,7 @@ const {
   getSourceProgrammeMap,
   listMissingProgrammesForCollection,
   listImportableProgrammes,
+  normalizeReadinessFilter,
   parseArgs,
   parseCsv,
   summarizeGeneratedCatalogue,
@@ -327,6 +328,29 @@ test('UG source coverage report summarizes missing source readiness', () => {
     sourceIndexOnly: 1,
     noSource: 1
   });
+});
+
+test('UG source coverage report can filter missing programmes by source readiness', () => {
+  const args = parseArgs(['--school', 'hku', '--missing-only', '--missing-limit', '3', '--readiness', 'no-source']);
+  const sourceSummary = summarizeSources('/Users/shenjingsong/Documents/Codex/2026-07-06/pdf/outputs', args);
+  const summary = summarizeGeneratedCatalogue({ ...args, sourceSummary });
+  const hku = summary.schools[0];
+
+  assert.equal(args.readiness, 'no-source');
+  assert.equal(normalizeReadinessFilter('index_only'), 'sourceIndexOnly');
+  assert.equal(normalizeReadinessFilter('coded-not-importable'), 'sourceCodedRowsNotImportable');
+  assert.equal(normalizeReadinessFilter('importable'), 'sourceImportableRows');
+  assert.equal(normalizeReadinessFilter('all'), '');
+  assert.throws(() => normalizeReadinessFilter('maybe'), /Unknown --readiness/);
+  assert.equal(hku.missingProgrammeCount, 116);
+  assert.equal(hku.filteredMissingProgrammeCount, 10);
+  assert.equal(hku.missingProgrammes.length, 3);
+  assert(hku.missingProgrammes.every((programme) => !programme.sourceStatus));
+  assert.deepEqual(hku.missingProgrammes.map((programme) => programme.name), [
+    'HKU-Cambridge Joint Recruitment Scheme (Engineering)',
+    'HKU-Geneva Graduate Institute Dual Degree Programme',
+    'HKU-PKU Dual Degree Programme'
+  ]);
 });
 
 test('UG source coverage report supports machine-readable JSON mode', () => {
