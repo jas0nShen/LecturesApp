@@ -43,6 +43,25 @@ test('CUHK Music exposes the verified 2025/26 required-course set', () => {
   assert(ugService.listMajorCourses(music.id, major.id, { keyword: 'Chinese Music' }).some((course) => course.courseCode === 'MUSC2562'));
 });
 
+test('CUHK Fine Arts exposes the official BA course pool without treating it as one fixed study plan', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const fineArts = programmes.find((programme) => programme.jupasCode === 'JS4044');
+  const major = ugService.listMajors(fineArts.id).find((item) => item.nameEn === 'Fine Arts');
+  const profile = ugService.getMajorProfile(fineArts.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(fineArts.id, major.id);
+
+  assert.equal(fineArts.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 53);
+  assert.equal(courses.length, 53);
+  ['FAAS1100', 'FAAS1900', 'FAAS2218', 'FAAS3114', 'FAAS4182', 'FAAS4282'].forEach((courseCode) => {
+    assert(courses.some((course) => course.courseCode === courseCode));
+  });
+  assert(courses.some((course) => course.courseCode === 'FAAS4101' && course.courseType === 'internship'));
+  assert(courses.some((course) => course.courseCode === 'FAAS4182' && course.courseType === 'capstone'));
+  assert(ugService.listMajorCourses(fineArts.id, major.id, { keyword: 'photography' }).some((course) => course.courseCode === 'FAAS2208'));
+});
+
 test('UG pending source readiness labels summarize index-only catalogue gaps', () => {
   assert.deepEqual(ugService.summarizePendingSourceReadiness([
     { codedCourseCount: 3, sourceStatus: 'course_codes_available' },

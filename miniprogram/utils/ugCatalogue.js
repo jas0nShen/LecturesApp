@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T15:58:24.495Z",
+  "generatedAt": "2026-07-10T16:01:21.344Z",
   "universities": [
     {
       "id": "HKU",
@@ -3219,9 +3219,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/faasn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 53,
+      "codedCourseCount": 53,
+      "courseSourceUrl": "https://www.arts.cuhk.edu.hk/~fadept/programmes/bachelor-of-art/"
     },
     {
       "id": "CUHK-UG-HISTN-7",
@@ -10513,9 +10514,9 @@ const catalogue = {
       "code": "FINE-ARTS",
       "nameEn": "Fine Arts",
       "nameZh": "Fine Arts",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admission.cuhk.edu.hk/programme/faasn/"
+      "courseCount": 54,
+      "codedCourseCount": 53,
+      "officialUrl": "https://www.arts.cuhk.edu.hk/~fadept/programmes/bachelor-of-art/"
     },
     {
       "id": "CUHK-UG-HISTN-7-M1",
@@ -15990,13 +15991,13 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 2362,
-    "CUHK": 177,
+    "CUHK": 230,
     "HKU": 1842,
     "HKUST": 121,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 7695
+  "codedCourseCount": 7748
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
