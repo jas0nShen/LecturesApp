@@ -420,11 +420,11 @@ test('UG source coverage report can prioritize launch data collection batches', 
   assert.deepEqual(summary.schools.slice(0, 3).map((school) => school.code), ['POLYU', 'LINGNAN', 'CITYU']);
   assert.equal(missing.length, 4);
   assert(missing.every((programme) => programme.schoolCode === 'POLYU'));
-  assert.equal(missing[0].code, 'JS3005');
+  assert.equal(missing[0].code, 'JS3006');
   assert.equal(isUmbrellaSchemeProgramme({ name: 'Bachelor’s Degree Scheme in Interdisciplinary Studies' }), true);
   assert.equal(isUmbrellaSchemeProgramme({ name: 'Bachelor of Science (Honours) Scheme in Biotechnology and Chemical Technology' }), false);
   assert.match(template, /优先级：launch/);
-  assert.match(template, /1\. POLYU · JS3005 · Bachelor’s Degree Scheme in Engineering/);
+  assert.match(template, /1\. POLYU · JS3006 · Bachelor’s Degree Scheme in Computer and Mathematical Sciences/);
 });
 
 test('UG source coverage report can build a grouped missing data batch plan', () => {
@@ -435,17 +435,17 @@ test('UG source coverage report can build a grouped missing data batch plan', ()
   const plan = buildMissingBatchPlan(summary, args);
 
   assert.equal(args.batchPlan, true);
-  assert.equal(groups.sourceIndexOnly.length, 164);
-  assert.equal(groups.reviewedNoCourseCodes.length, 15);
+  assert.equal(groups.sourceIndexOnly.length, 163);
+  assert.equal(groups.reviewedNoCourseCodes.length, 16);
   assert.equal(groups.noSource.length, 171);
   assert.equal(groups.sourceIndexOnly[0].schoolCode, 'POLYU');
-  assert.equal(groups.sourceIndexOnly[0].code, 'JS3005');
+  assert.equal(groups.sourceIndexOnly[0].code, 'JS3006');
   assert.equal(groups.reviewedNoCourseCodes[0].code, 'JS3011');
   assert.equal(groups.reviewedNoCourseCodes[0].sourceReviewStatus, 'no_public_course_codes');
   assert.match(plan, /【本科课程补数批次计划】/);
   assert.match(plan, /A\. 可直接导入候选：0 个/);
-  assert.match(plan, /C\. 需打开官方入口核实课程码：164 个/);
-  assert.match(plan, /D\. 已核实官网暂无公开课程码：15 个/);
+  assert.match(plan, /C\. 需打开官方入口核实课程码：163 个/);
+  assert.match(plan, /D\. 已核实官网暂无公开课程码：16 个/);
   assert.match(plan, /E\. 需先寻找官方来源：171 个/);
   assert.match(plan, /POLYU · JS3011 · Bachelor of Science \(Honours\) Scheme in Biotechnology and Chemical Technology/);
   assert.match(plan, /npm run status:ug-sources -- --missing-only --priority launch --missing-limit 3 --collector-template/);
@@ -460,7 +460,7 @@ test('UG source coverage report can filter reviewed no-code programmes', () => {
   const polyu = summary.schools[0];
   const template = buildMissingCollectorTemplate(summary, args);
 
-  assert.equal(polyu.filteredMissingProgrammeCount, 15);
+  assert.equal(polyu.filteredMissingProgrammeCount, 16);
   assert.equal(polyu.missingProgrammes.length, 10);
   assert.equal(polyu.missingProgrammes[0].code, 'JS3214');
   assert.equal(polyu.missingProgrammes[0].sourceReviewStatus, 'no_public_course_codes');
@@ -469,12 +469,11 @@ test('UG source coverage report can filter reviewed no-code programmes', () => {
   assert.equal(polyu.missingProgrammes[2].code, 'JS3791');
   assert.equal(polyu.missingProgrammes[2].sourceReviewStatus, 'no_public_course_codes');
   assert(polyu.missingProgrammes.some((programme) => programme.code === 'JS3255' && programme.sourceReviewStatus === 'no_public_course_codes'));
-  assert(polyu.missingProgrammes.some((programme) => programme.code === 'JS3337' && programme.sourceReviewStatus === 'no_public_course_codes'));
   assert(polyu.missingProgrammes.some((programme) => programme.code === 'JS3478' && programme.sourceReviewStatus === 'no_public_course_codes'));
   assert(polyu.missingProgrammes.some((programme) => programme.code === 'JS3569' && programme.sourceReviewStatus === 'no_public_course_codes'));
   assert.match(formatMissingSourceStatus(polyu.missingProgrammes[0]), /reviewed no public course codes/);
   assert.match(formatCollectorSourceStatus(polyu.missingProgrammes[0]), /已核实官网暂无公开课程码/);
-  assert.match(template, /当前筛选：reviewed-no-codes · 15 个/);
+  assert.match(template, /当前筛选：reviewed-no-codes · 16 个/);
 });
 
 test('UG source coverage report can generate a safe supplement starter template', () => {
@@ -485,10 +484,10 @@ test('UG source coverage report can generate a safe supplement starter template'
   const template = buildMissingSupplementTemplate(summary, args);
 
   assert.equal(args.supplementTemplate, true);
-  assert.equal(buildSupplementFileName(missing), 'polyu-js3005-courses-2026.json');
-  assert.match(template, /建议文件：data\/ug-course-supplements\/polyu-js3005-courses-2026\.json/);
-  assert.match(template, /"provider": "POLYU JS3005 undergraduate course supplement"/);
-  assert.match(template, /"jupasCode": "JS3005"/);
+  assert.equal(buildSupplementFileName(missing), 'polyu-js3006-courses-2026.json');
+  assert.match(template, /建议文件：data\/ug-course-supplements\/polyu-js3006-courses-2026\.json/);
+  assert.match(template, /"provider": "POLYU JS3006 undergraduate course supplement"/);
+  assert.match(template, /"jupasCode": "JS3006"/);
   assert.match(template, /"courses": \[\]/);
   assert.doesNotMatch(template, /TODO|PLACEHOLDER|TBC/);
 });
