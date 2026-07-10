@@ -1,0 +1,83 @@
+{
+  "provider": "PolyU Department of Chinese History and Culture JS3320 Programme Structure 2025-26",
+  "academicYear": "2026",
+  "sourceUrl": "https://www.polyu.edu.hk/chc/study/undergraduate-programmes/bachc/programme-structure--2025-2026/?sc_lang=en",
+  "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3320",
+  "supplements": [
+    {
+      "universityCode": "POLYU",
+      "programmeCode": "JS3320",
+      "majorName": "Bachelor of Arts (Honours) in Chinese History and Culture",
+      "sourceUrl": "https://www.polyu.edu.hk/chc/study/undergraduate-programmes/bachc/programme-structure--2025-2026/?sc_lang=en",
+      "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3320",
+      "courses": [
+        { "code": "COMP1004", "title": "Introduction to Artificial Intelligence and Data Analytics", "credits": 2, "recommendedYear": 0, "courseType": "core", "group": "General University Requirements" },
+        { "code": "MM1031", "title": "Introduction to Innovation and Entrepreneurship", "credits": 1, "recommendedYear": 0, "courseType": "core", "group": "General University Requirements" },
+        { "code": "ENGL2000", "title": "English for Effective Communication", "credits": 3, "recommendedYear": 0, "courseType": "core", "group": "General University Requirements" },
+        { "code": "ENGL2001", "title": "English for Professional Communication", "credits": 3, "recommendedYear": 0, "courseType": "core", "group": "General University Requirements" },
+        { "code": "CBS2901", "title": "Chinese for Language Professionals", "credits": 3, "recommendedYear": 0, "courseType": "core", "group": "General University Requirements" },
+        { "code": "APSS1L01", "title": "Tomorrow’s Leaders", "credits": 3, "recommendedYear": 0, "courseType": "core", "group": "General University Requirements" },
+
+        { "code": "FH1001", "title": "Language and Humanities Professionals in Society", "credits": 3, "recommendedYear": 0, "courseType": "core", "group": "Faculty compulsory subjects" },
+        { "code": "FH1101", "title": "Introduction to Language", "credits": 3, "recommendedYear": 0, "courseType": "core", "group": "Faculty compulsory subjects" },
+        { "code": "CHC134", "title": "Science and Civilisation in Pre-modern China", "credits": 3, "recommendedYear": 0, "courseType": "core", "group": "Faculty compulsory subjects" },
+
+        { "code": "CBS1402", "title": "Introduction to Translation", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Faculty elective subjects" },
+        { "code": "CBS2905", "title": "Introduction to Modern Chinese", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Faculty elective subjects" },
+        { "code": "CBS2201", "title": "Introduction to Speech Therapy", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Faculty elective subjects" },
+        { "code": "CHC131P", "title": "Major Trends in Chinese History", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Faculty elective subjects" },
+        { "code": "CHC234P", "title": "Modern and Contemporary Chinese Literature", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Faculty elective subjects" },
+        { "code": "ENGL1003", "title": "Introduction to English-Speaking Culture", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Faculty elective subjects" },
+        { "code": "ENGL1004", "title": "Communication Skills at Work", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Faculty elective subjects" },
+        { "code": "ENGL2016", "title": "Language in Social Contexts", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Faculty elective subjects" },
+
+        { "code": "ELC3321", "title": "English for Students of Chinese Cultural Studies", "credits": 3, "recommendedYear": 0, "courseType": "core", "group": "Discipline-specific language subject" },
+        { "code": "CHC133P", "title": "Pre-Modern Chinese Literature", "credits": 3, "recommendedYear": 0, "courseType": "core", "group": "Major core subjects" },
+        { "code": "CHC232", "title": "China and the World", "credits": 3, "recommendedYear": 0, "courseType": "core", "group": "Major core subjects" },
+        { "code": "CHC308P", "title": "Discovering Chinese Culture in Hong Kong", "credits": 3, "recommendedYear": 0, "courseType": "core", "group": "Major core subjects" },
+        { "code": "CHC318", "title": "Pre-Modern Chinese History and Culture", "credits": 3, "recommendedYear": 0, "courseType": "core", "group": "Major core subjects" },
+        { "code": "CHC322", "title": "History of Chinese Art", "credits": 3, "recommendedYear": 0, "courseType": "core", "group": "Major core subjects" },
+        { "code": "CHC327", "title": "History of Science and Technology in China", "credits": 3, "recommendedYear": 0, "courseType": "core", "group": "Major core subjects" },
+        { "code": "CHC3231", "title": "Major Religions in China", "credits": 3, "recommendedYear": 0, "courseType": "core", "group": "Major core subjects" },
+        { "code": "CHC4151", "title": "Museum Studies and Cultural Management", "credits": 3, "recommendedYear": 0, "courseType": "core", "group": "Major core subjects" },
+        { "code": "CHC422", "title": "Environmental History in China and Asia", "credits": 3, "recommendedYear": 0, "courseType": "core", "group": "Major core subjects" },
+
+        { "code": "CHC305P", "title": "Modern and Contemporary Chinese History and Culture", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-3 area specific elective: History and Institutions" },
+        { "code": "CHC312P", "title": "Women in China", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-3 area specific elective: History and Institutions" },
+        { "code": "CHC338", "title": "Chinese Ritual Theories", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-3 area specific elective: History and Institutions" },
+        { "code": "CHC307P", "title": "Chinese Folk Beliefs", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-3 area specific elective: Thought and Religion" },
+        { "code": "CHC320P", "title": "Ancient Chinese Thought and Philosophical Traditions", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-3 area specific elective: Thought and Religion" },
+        { "code": "CHC324P", "title": "Chinese Literature Before Print: Origins to the Sixth Century C.E.", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-3 area specific elective: Literature and Arts" },
+        { "code": "CHC332P", "title": "Global Chinese-Language Literature", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-3 area specific elective: Literature and Arts" },
+        { "code": "CHC334", "title": "The Art of Reading Texts, Images, and Objects in Chinese Culture", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-3 area specific elective: Literature and Arts" },
+        { "code": "CHC335", "title": "Understanding Chinese-Language Cinema", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-3 area specific elective: Literature and Arts" },
+        { "code": "APSS344", "title": "Self, Culture and Society", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-3 area specific elective: Environment and Society" },
+        { "code": "APSS360", "title": "Social Problems and Social Issues in Contemporary China", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-3 area specific elective: Environment and Society" },
+        { "code": "CHC325P", "title": "The Interaction Between East Asian Maritime World", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-3 area specific elective: Environment and Society" },
+        { "code": "CHC326P", "title": "China's Ethnic Relations: Past and Present", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-3 area specific elective: Environment and Society" },
+        { "code": "CHC336P", "title": "Science and Technology Development in Asia Through the Gender Lens", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-3 area specific elective: Science, Technology and Culture" },
+        { "code": "CHC337", "title": "History of Medicine in China", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-3 area specific elective: Science, Technology and Culture" },
+        { "code": "CHC339", "title": "Science Fiction and Digital Culture in Contemporary China", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-3 area specific elective: Science, Technology and Culture" },
+        { "code": "HTM3251", "title": "Tourism and the Chinese Culture", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-3 area specific elective: Cultural Heritage Management" },
+        { "code": "CHC330", "title": "Material Culture in China and East Asia", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-3 area specific elective: Cultural Heritage Management" },
+        { "code": "CHC331P", "title": "Oral History and Its Application", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-3 area specific elective: Cultural Heritage Management" },
+
+        { "code": "CHC409P", "title": "Confucianism, Classical Learning and the State", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-4 area specific elective: History and Institutions" },
+        { "code": "CHC419P", "title": "Revolutions in Twentieth-Century China and Asia", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-4 area specific elective: History and Institutions" },
+        { "code": "CHC423P", "title": "Institutions and Political Changes in Imperial China", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-4 area specific elective: History and Institutions" },
+        { "code": "CHC403P", "title": "Intellectual History of China", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-4 area specific elective: Thought and Religion" },
+        { "code": "CHC421P", "title": "Buddhism and Chinese Culture", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-4 area specific elective: Thought and Religion" },
+        { "code": "CHC404P", "title": "Art and Visual Cultures of China", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-4 area specific elective: Literature and Arts" },
+        { "code": "CHC4241P", "title": "Chinese Traditional Theatre and Performing Arts", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-4 area specific elective: Literature and Arts" },
+        { "code": "CHC405", "title": "Infrastructure, Politics, and Society in China and Asia", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-4 area specific elective: Environment and Society" },
+        { "code": "CHC406P", "title": "Urban Cultures in Asia", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-4 area specific elective: Environment and Society" },
+        { "code": "CHC407P", "title": "Digital Humanities and Chinese Studies", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-4 area specific elective: Science, Technology and Culture" },
+        { "code": "CHC425P", "title": "Modern Global History of Health and Development", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-4 area specific elective: Science, Technology and Culture" },
+        { "code": "CHC408P", "title": "History, Meditation, Imagination and Intangible Heritage - the Invention of Chinese Martial Arts Tradition", "credits": 3, "recommendedYear": 0, "courseType": "major_elective", "group": "Level-4 area specific elective: Cultural Heritage Management" },
+
+        { "code": "CHC313", "title": "Work-Integrated Education", "credits": 3, "recommendedYear": 0, "courseType": "internship", "group": "Work-Integrated Education" },
+        { "code": "CHC402", "title": "Capstone Project in Chinese History and Culture", "credits": 3, "recommendedYear": 0, "courseType": "capstone", "group": "Capstone Project" }
+      ]
+    }
+  ]
+}

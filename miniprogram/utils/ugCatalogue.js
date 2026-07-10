@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T04:15:45.080Z",
+  "generatedAt": "2026-07-10T07:11:11.220Z",
   "universities": [
     {
       "id": "HKU",
@@ -5859,9 +5859,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3320",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 60,
+      "codedCourseCount": 60,
+      "courseSourceUrl": "https://www.polyu.edu.hk/chc/study/undergraduate-programmes/bachc/programme-structure--2025-2026/?sc_lang=en"
     },
     {
       "id": "POLYU-UG-JS3739-12",
@@ -12104,8 +12105,8 @@ const catalogue = {
       "code": "BACHELOR-OF-ARTS-HONOURS-IN-CHINESE-HISTORY-AND-",
       "nameEn": "Bachelor of Arts (Honours) in Chinese History and Culture",
       "nameZh": "Bachelor of Arts (Honours) in Chinese History and Culture",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 61,
+      "codedCourseCount": 60,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3320"
     },
     {
@@ -15965,9 +15966,9 @@ const catalogue = {
     "HKU": 1511,
     "HKUST": 121,
     "LINGNAN": 721,
-    "POLYU": 2284
+    "POLYU": 2344
   },
-  "codedCourseCount": 6734
+  "codedCourseCount": 6794
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
