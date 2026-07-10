@@ -2881,5 +2881,203 @@ module.exports = [
     "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26ai.pdf",
     "sourceProvider": "HKUST 2025/26 BEng in Artificial Intelligence program and course catalog",
     "academicYear": "2025/26"
+  },
+  {
+    "id": "HKUST-UG-JS5212-BENG-IN-COMPUTER-ENGINEERING-JS5282-ENGIN-13-M1-SUP-CPEG1930-1",
+    "programmeId": "HKUST-UG-JS5212-BENG-IN-COMPUTER-ENGINEERING-JS5282-ENGIN-13",
+    "majorId": "HKUST-UG-JS5212-BENG-IN-COMPUTER-ENGINEERING-JS5282-ENGIN-13-M1",
+    "courseCode": "CPEG1930",
+    "titleEn": "Academic and Professional Development I",
+    "titleZh": "Academic and Professional Development I",
+    "credits": 0,
+    "recommendedYear": 1,
+    "semester": "",
+    "courseType": "core",
+    "requirementGroups": [
+      "major required"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/CPEG",
+    "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26cpeg.pdf",
+    "sourceProvider": "HKUST 2025/26 Computer Engineering undergraduate course catalog",
+    "academicYear": "2025/26"
+  },
+  {
+    "id": "HKUST-UG-JS5212-BENG-IN-COMPUTER-ENGINEERING-JS5282-ENGIN-13-M1-SUP-CPEG1971-2",
+    "programmeId": "HKUST-UG-JS5212-BENG-IN-COMPUTER-ENGINEERING-JS5282-ENGIN-13",
+    "majorId": "HKUST-UG-JS5212-BENG-IN-COMPUTER-ENGINEERING-JS5282-ENGIN-13-M1",
+    "courseCode": "CPEG1971",
+    "titleEn": "Industrial Experience",
+    "titleZh": "Industrial Experience",
+    "credits": 0,
+    "recommendedYear": 2,
+    "semester": "",
+    "courseType": "internship",
+    "requirementGroups": [
+      "internship"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/CPEG",
+    "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26cpeg.pdf",
+    "sourceProvider": "HKUST 2025/26 Computer Engineering undergraduate course catalog",
+    "academicYear": "2025/26"
+  },
+  {
+    "id": "HKUST-UG-JS5212-BENG-IN-COMPUTER-ENGINEERING-JS5282-ENGIN-13-M1-SUP-CPEG2930-3",
+    "programmeId": "HKUST-UG-JS5212-BENG-IN-COMPUTER-ENGINEERING-JS5282-ENGIN-13",
+    "majorId": "HKUST-UG-JS5212-BENG-IN-COMPUTER-ENGINEERING-JS5282-ENGIN-13-M1",
+    "courseCode": "CPEG2930",
+    "titleEn": "Academic and Professional Development II",
+    "titleZh": "Academic and Professional Development II",
+    "credits": 0,
+    "recommendedYear": 2,
+    "semester": "",
+    "courseType": "core",
+    "requirementGroups": [
+      "major required"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/CPEG",
+    "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26cpeg.pdf",
+    "sourceProvider": "HKUST 2025/26 Computer Engineering undergraduate course catalog",
+    "academicYear": "2025/26"
+  },
+  {
+    "id": "HKUST-UG-JS5212-BENG-IN-COMPUTER-ENGINEERING-JS5282-ENGIN-13-M1-SUP-CPEG3930-4",
+    "programmeId": "HKUST-UG-JS5212-BENG-IN-COMPUTER-ENGINEERING-JS5282-ENGIN-13",
+    "majorId": "HKUST-UG-JS5212-BENG-IN-COMPUTER-ENGINEERING-JS5282-ENGIN-13-M1",
+    "courseCode": "CPEG3930",
+    "titleEn": "Academic and Professional Development III",
+    "titleZh": "Academic and Professional Development III",
+    "credits": 0,
+    "recommendedYear": 3,
+    "semester": "",
+    "courseType": "core",
+    "requirementGroups": [
+      "major required"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/CPEG",
+    "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26cpeg.pdf",
+    "sourceProvider": "HKUST 2025/26 Computer Engineering undergraduate course catalog",
+    "academicYear": "2025/26"
+  },
+  {
+    "id": "HKUST-UG-JS5212-BENG-IN-COMPUTER-ENGINEERING-JS5282-ENGIN-13-M1-SUP-CPEG4901-5",
+    "programmeId": "HKUST-UG-JS5212-BENG-IN-COMPUTER-ENGINEERING-JS5282-ENGIN-13",
+    "majorId": "HKUST-UG-JS5212-BENG-IN-COMPUTER-ENGINEERING-JS5282-ENGIN-13-M1",
+    "courseCode": "CPEG4901",
+    "titleEn": "Computer Engineering Final Year Project in COMP",
+    "titleZh": "Computer Engineering Final Year Project in COMP",
+    "credits": 6,
+    "recommendedYear": 4,
+    "semester": "",
+    "courseType": "capstone",
+    "requirementGroups": [
+      "capstone alternative"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/CPEG",
+    "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26cpeg.pdf",
+    "sourceProvider": "HKUST 2025/26 Computer Engineering undergraduate course catalog",
+    "academicYear": "2025/26"
+  },
+  {
+    "id": "HKUST-UG-JS5212-BENG-IN-COMPUTER-ENGINEERING-JS5282-ENGIN-13-M1-SUP-CPEG4902-6",
+    "programmeId": "HKUST-UG-JS5212-BENG-IN-COMPUTER-ENGINEERING-JS5282-ENGIN-13",
+    "majorId": "HKUST-UG-JS5212-BENG-IN-COMPUTER-ENGINEERING-JS5282-ENGIN-13-M1",
+    "courseCode": "CPEG4902",
+    "titleEn": "Computer Engineering Final Year Thesis in COMP",
+    "titleZh": "Computer Engineering Final Year Thesis in COMP",
+    "credits": 6,
+    "recommendedYear": 4,
+    "semester": "",
+    "courseType": "capstone",
+    "requirementGroups": [
+      "capstone alternative"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/CPEG",
+    "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26cpeg.pdf",
+    "sourceProvider": "HKUST 2025/26 Computer Engineering undergraduate course catalog",
+    "academicYear": "2025/26"
+  },
+  {
+    "id": "HKUST-UG-JS5212-BENG-IN-COMPUTER-ENGINEERING-JS5282-ENGIN-13-M1-SUP-CPEG4910-7",
+    "programmeId": "HKUST-UG-JS5212-BENG-IN-COMPUTER-ENGINEERING-JS5282-ENGIN-13",
+    "majorId": "HKUST-UG-JS5212-BENG-IN-COMPUTER-ENGINEERING-JS5282-ENGIN-13-M1",
+    "courseCode": "CPEG4910",
+    "titleEn": "Co-op Program",
+    "titleZh": "Co-op Program",
+    "credits": 6,
+    "recommendedYear": 4,
+    "semester": "",
+    "courseType": "capstone",
+    "requirementGroups": [
+      "capstone alternative"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/CPEG",
+    "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26cpeg.pdf",
+    "sourceProvider": "HKUST 2025/26 Computer Engineering undergraduate course catalog",
+    "academicYear": "2025/26"
+  },
+  {
+    "id": "HKUST-UG-JS5212-BENG-IN-COMPUTER-ENGINEERING-JS5282-ENGIN-13-M1-SUP-CPEG4911-8",
+    "programmeId": "HKUST-UG-JS5212-BENG-IN-COMPUTER-ENGINEERING-JS5282-ENGIN-13",
+    "majorId": "HKUST-UG-JS5212-BENG-IN-COMPUTER-ENGINEERING-JS5282-ENGIN-13-M1",
+    "courseCode": "CPEG4911",
+    "titleEn": "Computer Engineering Final Year Project in ELEC",
+    "titleZh": "Computer Engineering Final Year Project in ELEC",
+    "credits": 6,
+    "recommendedYear": 4,
+    "semester": "",
+    "courseType": "capstone",
+    "requirementGroups": [
+      "capstone alternative"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/CPEG",
+    "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26cpeg.pdf",
+    "sourceProvider": "HKUST 2025/26 Computer Engineering undergraduate course catalog",
+    "academicYear": "2025/26"
+  },
+  {
+    "id": "HKUST-UG-JS5212-BENG-IN-COMPUTER-ENGINEERING-JS5282-ENGIN-13-M1-SUP-CPEG4912-9",
+    "programmeId": "HKUST-UG-JS5212-BENG-IN-COMPUTER-ENGINEERING-JS5282-ENGIN-13",
+    "majorId": "HKUST-UG-JS5212-BENG-IN-COMPUTER-ENGINEERING-JS5282-ENGIN-13-M1",
+    "courseCode": "CPEG4912",
+    "titleEn": "Computer Engineering Final Year Thesis in ELEC",
+    "titleZh": "Computer Engineering Final Year Thesis in ELEC",
+    "credits": 6,
+    "recommendedYear": 4,
+    "semester": "",
+    "courseType": "capstone",
+    "requirementGroups": [
+      "capstone alternative"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/CPEG",
+    "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26cpeg.pdf",
+    "sourceProvider": "HKUST 2025/26 Computer Engineering undergraduate course catalog",
+    "academicYear": "2025/26"
   }
 ];

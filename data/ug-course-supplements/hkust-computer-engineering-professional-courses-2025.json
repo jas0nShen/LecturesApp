@@ -1,0 +1,23 @@
+{
+  "provider": "HKUST 2025/26 Computer Engineering undergraduate course catalog",
+  "academicYear": "2025/26",
+  "sourceUrl": "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/CPEG",
+  "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26cpeg.pdf",
+  "supplements": [{
+    "universityCode": "HKUST",
+    "programmeName": "BEng in Computer Engineering",
+    "sourceUrl": "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/CPEG",
+    "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26cpeg.pdf",
+    "courses": [
+      { "code": "CPEG1930", "title": "Academic and Professional Development I", "credits": 0, "year": 1, "group": "major required" },
+      { "code": "CPEG1971", "title": "Industrial Experience", "credits": 0, "year": 2, "group": "internship" },
+      { "code": "CPEG2930", "title": "Academic and Professional Development II", "credits": 0, "year": 2, "group": "major required" },
+      { "code": "CPEG3930", "title": "Academic and Professional Development III", "credits": 0, "year": 3, "group": "major required" },
+      { "code": "CPEG4901", "title": "Computer Engineering Final Year Project in COMP", "credits": 6, "year": 4, "group": "capstone alternative" },
+      { "code": "CPEG4902", "title": "Computer Engineering Final Year Thesis in COMP", "credits": 6, "year": 4, "group": "capstone alternative" },
+      { "code": "CPEG4910", "title": "Co-op Program", "credits": 6, "year": 4, "group": "capstone alternative" },
+      { "code": "CPEG4911", "title": "Computer Engineering Final Year Project in ELEC", "credits": 6, "year": 4, "group": "capstone alternative" },
+      { "code": "CPEG4912", "title": "Computer Engineering Final Year Thesis in ELEC", "credits": 6, "year": 4, "group": "capstone alternative" }
+    ]
+  }]
+}

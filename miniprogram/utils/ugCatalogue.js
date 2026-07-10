@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T16:16:28.188Z",
+  "generatedAt": "2026-07-10T16:19:19.281Z",
   "universities": [
     {
       "id": "HKU",
@@ -4959,9 +4959,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BEng in Computer Engineering",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-engineering/computer-engineering",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 9,
+      "codedCourseCount": 9,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/CPEG"
     },
     {
       "id": "HKUST-UG-JS5240-DEPARTMENT-OF-COMPUTER-SCIENCE-AND-ENGINE-14",
@@ -11429,9 +11430,9 @@ const catalogue = {
       "code": "BENG-IN-COMPUTER-ENGINEERING",
       "nameEn": "BEng in Computer Engineering",
       "nameZh": "BEng in Computer Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-engineering/computer-engineering"
+      "courseCount": 10,
+      "codedCourseCount": 9,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26cpeg.pdf"
     },
     {
       "id": "HKUST-UG-JS5240-DEPARTMENT-OF-COMPUTER-SCIENCE-AND-ENGINE-14-M1",
@@ -15998,11 +15999,11 @@ const catalogue = {
     "CITYU": 2362,
     "CUHK": 294,
     "HKU": 1842,
-    "HKUST": 147,
+    "HKUST": 156,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 7838
+  "codedCourseCount": 7847
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

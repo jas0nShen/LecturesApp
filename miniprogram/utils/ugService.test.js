@@ -163,6 +163,16 @@ test('HKUST Artificial Intelligence exposes the verified 2025/26 core and capsto
   assert(ugService.listMajorCourses(ai.id, major.id, { keyword: 'Ethics' }).some((course) => course.courseCode === 'COMP1944'));
 });
 
+test('HKUST Computer Engineering exposes verified professional and capstone paths', () => {
+  const hkust = ugService.listUniversities().find((item) => item.code === 'HKUST');
+  const programme = ugService.listProgrammes({ universityId: hkust.id, degreeLevel: 'undergraduate' }).find((item) => item.nameEn === 'BEng in Computer Engineering');
+  const major = ugService.listMajors(programme.id).find((item) => item.nameEn === 'BEng in Computer Engineering');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  assert.equal(courses.length, 9);
+  assert(courses.some((course) => course.courseCode === 'CPEG1971' && course.courseType === 'internship'));
+  assert(courses.some((course) => course.courseCode === 'CPEG4912' && course.courseType === 'capstone'));
+});
+
 test('UG pending source readiness labels summarize index-only catalogue gaps', () => {
   assert.deepEqual(ugService.summarizePendingSourceReadiness([
     { codedCourseCount: 3, sourceStatus: 'course_codes_available' },
