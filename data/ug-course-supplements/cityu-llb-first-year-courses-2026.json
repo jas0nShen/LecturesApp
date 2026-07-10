@@ -1,0 +1,27 @@
+{
+  "provider": "CityUHK School of Law LLB suggested first-year study schedule",
+  "academicYear": "2026/27",
+  "sourceUrl": "https://www.cityu.edu.hk/admo/programmes/bachelor-laws",
+  "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bachelor-laws",
+  "supplements": [
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1061",
+      "sourceUrl": "https://www.cityu.edu.hk/admo/programmes/bachelor-laws",
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bachelor-laws",
+      "courses": [
+        { "code": "LW2605", "title": "Law School Survival Skills Workshop", "credits": 1.5, "recommendedYear": 1, "group": "school specified course" },
+        { "code": "LW2601", "title": "Hong Kong Legal System", "credits": 3, "recommendedYear": 1, "group": "core course" },
+        { "code": "LW2602A", "title": "Law of Contract I", "credits": 3, "recommendedYear": 1, "group": "core course" },
+        { "code": "LW2602B", "title": "Law of Contract II", "credits": 3, "recommendedYear": 1, "group": "core course" },
+        { "code": "LW2603A", "title": "Law of Tort I", "credits": 3, "recommendedYear": 1, "group": "core course" },
+        { "code": "LW2603B", "title": "Law of Tort II", "credits": 3, "recommendedYear": 1, "group": "core course" },
+        { "code": "LW2604", "title": "Legal Methods, Research and Writing", "credits": 3, "recommendedYear": 1, "group": "core course" },
+        { "code": "GE1401", "title": "University English", "credits": 3, "recommendedYear": 1, "group": "gateway education" },
+        { "code": "GE2411", "title": "Legal English", "credits": 3, "recommendedYear": 1, "group": "gateway education" },
+        { "code": "GE1501", "title": "Chinese Civilisation - History and Philosophy", "credits": 3, "recommendedYear": 1, "group": "gateway education" },
+        { "code": "GE1601", "title": "Whole-Person Development", "credits": 1, "recommendedYear": 1, "group": "gateway education" }
+      ]
+    }
+  ]
+}

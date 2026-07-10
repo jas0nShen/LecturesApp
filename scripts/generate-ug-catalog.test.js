@@ -273,10 +273,10 @@ test('UG source coverage report includes generated catalogue supplement coverage
   const lingnan = summary.schools.find((school) => school.code === 'LINGNAN');
 
   assert.equal(summary.totals.programmeCount, 445);
-  assert.equal(summary.totals.codedCourseCount, 7373);
-  assert.equal(summary.totals.programmeWithCoursesCount, 108);
-  assert.equal(cityu.programmeWithCoursesCount, 24);
-  assert.equal(cityu.codedCourseCount, 2086);
+  assert.equal(summary.totals.codedCourseCount, 7384);
+  assert.equal(summary.totals.programmeWithCoursesCount, 109);
+  assert.equal(cityu.programmeWithCoursesCount, 25);
+  assert.equal(cityu.codedCourseCount, 2097);
   assert(cityu.courseProgrammes.some((programme) => programme.code === 'JS1001' && programme.codedCourseCount > 0));
   assert.equal(lingnan.missingProgrammeCount, 0);
   assert.equal(lingnan.courseProgrammes.length, 23);
@@ -321,6 +321,20 @@ test('CityU Energy and Environment exposes verified common first-year courses', 
   });
 });
 
+test('CityU LLB exposes its verified suggested first-year study schedule', () => {
+  const catalogue = require('../miniprogram/utils/ugCatalogue');
+  const programme = catalogue.programmes.find((item) => item.jupasCode === 'JS1061');
+  const major = catalogue.majors.find((item) => item.programmeId === programme.id);
+  const courseCodes = catalogue.courses
+    .filter((course) => course.majorId === major.id)
+    .map((course) => course.courseCode);
+
+  assert.equal(courseCodes.length, 11);
+  assert(courseCodes.includes('LW2601'));
+  assert(courseCodes.includes('LW2604'));
+  assert(courseCodes.includes('GE2411'));
+});
+
 test('UG source coverage report can focus missing programme work by school', () => {
   const args = parseArgs(['--school', 'cityu', '--missing-limit', '5', '--missing-only']);
   const summary = summarizeGeneratedCatalogue(args);
@@ -331,9 +345,9 @@ test('UG source coverage report can focus missing programme work by school', () 
   assert.equal(args.json, false);
   assert.deepEqual(summary.schools.map((school) => school.code), ['CITYU']);
   assert.equal(summary.totals.programmeCount, 58);
-  assert.equal(summary.totals.programmeWithCoursesCount, 24);
-  assert.equal(summary.totals.missingProgrammeCount, 34);
-  assert.equal(summary.schools[0].missingProgrammeCount, 34);
+  assert.equal(summary.totals.programmeWithCoursesCount, 25);
+  assert.equal(summary.totals.missingProgrammeCount, 33);
+  assert.equal(summary.schools[0].missingProgrammeCount, 33);
   assert.equal(summary.schools[0].missingProgrammes.length, 5);
   assert.equal(filterSchools(summary.schools, 'HKU').length, 0);
 });
@@ -418,7 +432,7 @@ test('UG source coverage report supports machine-readable JSON mode', () => {
   assert.equal(args.missingOnly, true);
   assert.equal(args.json, true);
   assert.deepEqual(summary.schools.map((school) => school.code), ['CITYU']);
-  assert.equal(summary.schools[0].missingProgrammeCount, 34);
+  assert.equal(summary.schools[0].missingProgrammeCount, 33);
   assert.equal(summary.schools[0].missingProgrammes.length, 3);
   assert.equal(summary.schools[0].missingProgrammes[0].code, 'JS1050');
   assert.match(summary.schools[0].missingProgrammes[0].officialUrl, /jupas\.edu\.hk\/en\/programme\/cityuhk\/JS1050/);
@@ -477,7 +491,7 @@ test('UG source coverage report can build a grouped missing data batch plan', ()
   assert.equal(args.batchPlan, true);
   assert.equal(groups.sourceIndexOnly.length, 149);
   assert.equal(groups.reviewedNoCourseCodes.length, 21);
-  assert.equal(groups.noSource.length, 167);
+  assert.equal(groups.noSource.length, 166);
   assert.equal(groups.sourceIndexOnly[0].schoolCode, 'HKU');
   assert.equal(groups.sourceIndexOnly[0].code, '6274');
   assert.equal(groups.reviewedNoCourseCodes[0].code, 'JS3011');
@@ -486,7 +500,7 @@ test('UG source coverage report can build a grouped missing data batch plan', ()
   assert.match(plan, /A\. 可直接导入候选：0 个/);
   assert.match(plan, /C\. 需打开官方入口核实课程码：149 个/);
   assert.match(plan, /D\. 已核实官网暂无公开课程码：21 个/);
-  assert.match(plan, /E\. 需先寻找官方来源：167 个/);
+  assert.match(plan, /E\. 需先寻找官方来源：166 个/);
   assert.match(plan, /POLYU · JS3011 · Bachelor of Science \(Honours\) Scheme in Biotechnology and Chemical Technology/);
   assert.match(plan, /npm run status:ug-sources -- --missing-only --priority launch --missing-limit 3 --collector-template/);
   assert.match(plan, /npm run sync:ug-catalog/);

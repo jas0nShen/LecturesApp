@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T15:16:07.344Z",
+  "generatedAt": "2026-07-10T15:18:13.699Z",
   "universities": [
     {
       "id": "HKU",
@@ -7010,9 +7010,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1061",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 11,
+      "codedCourseCount": 11,
+      "courseSourceUrl": "https://www.cityu.edu.hk/admo/programmes/bachelor-laws"
     },
     {
       "id": "CITYU-UG-LLB-BBAAC-24",
@@ -13793,9 +13794,9 @@ const catalogue = {
       "code": "BACHELOR-OF-LAWS",
       "nameEn": "Bachelor of Laws",
       "nameZh": "Bachelor of Laws",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1061"
+      "courseCount": 12,
+      "codedCourseCount": 11,
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bachelor-laws"
     },
     {
       "id": "CITYU-UG-LLB-BBAAC-24-M1",
@@ -15979,14 +15980,14 @@ const catalogue = {
     }
   ],
   "courseShardCounts": {
-    "CITYU": 2086,
+    "CITYU": 2097,
     "CUHK": 131,
     "HKU": 1842,
     "HKUST": 121,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 7373
+  "codedCourseCount": 7384
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
