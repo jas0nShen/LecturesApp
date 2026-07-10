@@ -1,6 +1,14 @@
 [
   {
     "universityCode": "POLYU",
+    "programmeCode": "JS3791",
+    "reviewedAt": "2026-07-10",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3791",
+    "note": "Official PolyU JUPAS page confirms the 2026 four-year Building Engineering and Management degree, Common Year One, 121 academic credits plus 2 training credits, work-integrated education and accreditation. Publicly searchable coded subject records belong to separate SPEED or senior-year programmes with different programme codes and entry structures, so they cannot be assigned to JS3791. Keep this programme as index/source-only until a current four-year coded curriculum source is publicly available."
+  },
+  {
+    "universityCode": "POLYU",
     "programmeCode": "JS3789",
     "reviewedAt": "2026-07-10",
     "status": "no_public_course_codes",
