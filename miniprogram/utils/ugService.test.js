@@ -13,9 +13,9 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.requirementCount, 4);
   assert(summary.courseCount >= 4630);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 6558);
-  assert.equal(summary.programmeWithCoursesCount, 85);
-  assert.equal(summary.pendingProgrammeCount, 359);
+  assert.equal(summary.codedCourseCount, 6591);
+  assert.equal(summary.programmeWithCoursesCount, 86);
+  assert.equal(summary.pendingProgrammeCount, 358);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
@@ -46,13 +46,13 @@ test('UG pending programme collection text is copy-ready for data sourcing', () 
   const text = ugService.buildPendingCollectionText({ universityCode: 'POLYU', limit: 2 });
 
   assert.equal(pending.length, 2);
-  assert.equal(allPending.length, 29);
+  assert.equal(allPending.length, 28);
   assert.equal(pending[0].universityCode, 'POLYU');
   assert.equal(pending[0].sourceStatusLabel, '仅索引 / 来源');
   assert.match(pending[0].officialUrl, /^https:\/\//);
   assert.match(text, /【本科课程资料待补清单】/);
   assert.match(text, /范围：POLYU/);
-  assert.match(text, /待补 Programme：29/);
+  assert.match(text, /待补 Programme：28/);
   assert.match(text, /课程代码 \/ 课程名 \/ 学分 \/ Year \/ Semester \/ 课程类别 \/ 来源链接/);
   assert.match(text, /不要推测课程/);
 });
@@ -84,7 +84,7 @@ test('UG pending programme collection can be filtered by source readiness', () =
   assert.equal(polyuNoSource.length, 0);
   assert.equal(ugService.getPendingSourceReadinessKey({}), 'noSource');
   assert.equal(ugService.getPendingSourceStatus({}), '缺来源');
-  assert.match(text, /待补 Programme：29/);
+  assert.match(text, /待补 Programme：28/);
   assert.match(text, /当前筛选：no-source · 0 个/);
   assert.match(text, /暂无待补 Programme/);
 });
@@ -135,7 +135,7 @@ test('UG per-school coverage stays visible for setup validation', () => {
     HKU: { programmeCount: 137, majorCount: 137, codedCourseCount: 1511 },
     CUHK: { programmeCount: 84, majorCount: 84, codedCourseCount: 131 },
     HKUST: { programmeCount: 50, majorCount: 64, codedCourseCount: 121 },
-    POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 2108 },
+    POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 2141 },
     CITYU: { programmeCount: 58, majorCount: 201, codedCourseCount: 1966 },
     HKBU: { programmeCount: 22, majorCount: 46, codedCourseCount: 0 },
     EDUHK: { programmeCount: 25, majorCount: 25, codedCourseCount: 0 },
@@ -168,10 +168,10 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert(cuhk.coveragePercent > 0);
   assert.equal(cuhk.codedCourseCount, 131);
   assert.equal(cuhk.badge, 'COURSES');
-  assert.equal(polyu.programmeWithCoursesCount, 17);
-  assert.equal(polyu.pendingProgrammeCount, 29);
-  assert.equal(polyu.coveragePercent, 37);
-  assert.equal(polyu.codedCourseCount, 2108);
+  assert.equal(polyu.programmeWithCoursesCount, 18);
+  assert.equal(polyu.pendingProgrammeCount, 28);
+  assert.equal(polyu.coveragePercent, 39);
+  assert.equal(polyu.codedCourseCount, 2141);
   assert.equal(polyu.badge, 'COURSES');
   assert.equal(polyu.sourceReadiness.indexOnly, polyu.pendingProgrammeCount);
   assert.equal(cityu.programmeWithCoursesCount, 20);
@@ -523,6 +523,22 @@ test('PolyU Speech Therapy exposes its official curriculum with clinical educati
   assert(courses.some((course) => course.courseCode === 'CBS4209' && course.courseType === 'capstone' && course.credits === 3));
   assert(courses.some((course) => course.courseCode === 'CBS4295' && course.courseType === 'internship' && course.credits === 6));
   assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Evidence-Based' }).some((course) => course.courseCode === 'CBS4207'));
+});
+
+test('PolyU Language Science and Technology exposes verified curriculum subjects without placeholder codes', () => {
+  const polyu = ugService.listUniversities().find((item) => item.code === 'POLYU');
+  const programmes = ugService.listProgrammes({ universityId: polyu.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'JS3243');
+  const major = ugService.listMajors(programme.id)[0];
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(programme.codedCourseCount, 33);
+  assert.equal(courses.length, 33);
+  assert(courses.some((course) => course.courseCode === 'CBS3402' && course.titleEn === 'Psycholinguistics'));
+  assert(courses.some((course) => course.courseCode === 'CBS3410' && course.titleEn === 'Python for Language Analytics'));
+  assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Computational Linguistics' }).some((course) => course.courseCode === 'CBS4958'));
+  assert(!courses.some((course) => /LST\d?xxx/i.test(course.courseCode)));
 });
 
 test('HKU Computing and Data Science catalogue profiles expose official course offerings', () => {

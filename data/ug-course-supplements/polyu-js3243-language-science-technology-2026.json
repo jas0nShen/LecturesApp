@@ -1,0 +1,50 @@
+{
+  "provider": "PolyU LST JS3243 Language Science and Technology Curriculum 2026",
+  "academicYear": "2026",
+  "sourceUrl": "https://www.polyu.edu.hk/lst/study/undergraduate-programmes/bsc-hons-in-language-science-and-technology/curriculum_scheme/",
+  "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3243",
+  "supplements": [
+    {
+      "universityCode": "POLYU",
+      "programmeCode": "JS3243",
+      "majorName": "Bachelor of Science (Honours) in Language Science and Technology",
+      "sourceUrl": "https://www.polyu.edu.hk/lst/study/undergraduate-programmes/bsc-hons-in-language-science-and-technology/curriculum_scheme/",
+      "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3243",
+      "courses": [
+        { "code": "ENGL2000", "title": "English for Effective Communication", "credits": 3, "group": "General University Requirements" },
+        { "code": "ENGL2001", "title": "English for Professional Communication", "credits": 3, "group": "General University Requirements" },
+        { "code": "CBS2901", "title": "Chinese for Language Professionals", "credits": 3, "group": "General University Requirements" },
+        { "code": "CBS1903", "title": "Introduction to AI and Data Analytics for Language Professionals", "credits": 2, "group": "General University Requirements" },
+        { "code": "CBS1904", "title": "Introduction to Innovation and Entrepreneurship in Languages and Linguistics", "credits": 1, "group": "General University Requirements" },
+        { "code": "CHC134", "title": "Science and Civilisation in Pre-modern China", "credits": 3, "group": "Faculty compulsory subjects" },
+        { "code": "FH1101", "title": "Introduction to Language", "credits": 3, "group": "Faculty compulsory subjects" },
+        { "code": "FH1001", "title": "Language and Humanities Professionals in Society", "credits": 3, "group": "Faculty compulsory subjects" },
+        { "code": "CBS1402", "title": "Introduction to Translation", "credits": 3, "group": "Faculty electives" },
+        { "code": "CBS2201", "title": "Introduction to Speech Therapy", "credits": 3, "group": "Faculty electives" },
+        { "code": "CBS2905", "title": "Introduction to Modern Chinese", "credits": 3, "group": "Faculty electives" },
+        { "code": "CHC131P", "title": "Major Trends in Chinese History", "credits": 3, "group": "Faculty electives" },
+        { "code": "CHC234P", "title": "Modern and Contemporary Chinese Literature", "credits": 3, "group": "Faculty electives" },
+        { "code": "ENGL1003", "title": "Introduction to English-Speaking Culture", "credits": 3, "group": "Faculty electives" },
+        { "code": "ENGL1004", "title": "Communication Skills at Work", "credits": 3, "group": "Faculty electives" },
+        { "code": "ENGL2016", "title": "Language in Social Contexts", "credits": 3, "group": "Faculty electives" },
+        { "code": "CBS3402", "title": "Psycholinguistics", "credits": 3, "group": "LST compulsory subjects" },
+        { "code": "CBS3446", "title": "Corporate Communication: Theory and Practice", "credits": 3, "group": "LST compulsory subjects" },
+        { "code": "ENGL2003", "title": "English for Advanced Academic Writing", "credits": 3, "group": "LST compulsory subjects" },
+        { "code": "CBS3410", "title": "Python for Language Analytics", "credits": 3, "group": "AI and Language Technology electives" },
+        { "code": "CBS4702", "title": "Advanced Topics in Quantitative Language Studies", "credits": 3, "group": "AI and Language Technology electives" },
+        { "code": "CBS4954", "title": "Statistics for Language Studies", "credits": 3, "group": "AI and Language Technology electives" },
+        { "code": "CBS4958", "title": "Fundamentals of Computational Linguistics", "credits": 3, "group": "AI and Language Technology electives" },
+        { "code": "CBS4962", "title": "Corpus and Language Technology for Language Studies", "credits": 3, "group": "AI and Language Technology electives" },
+        { "code": "CBS3204", "title": "Anatomy and Physiology: Speech and Hearing Sciences I", "credits": 3, "group": "Psycholinguistics and Neuroscience electives" },
+        { "code": "CBS3404", "title": "Language, Cognition and Brain", "credits": 3, "group": "Psycholinguistics and Neuroscience electives" },
+        { "code": "CBS3408", "title": "Language Acquisition", "credits": 3, "group": "Psycholinguistics and Neuroscience electives" },
+        { "code": "CBS4902", "title": "Comparative and Contrastive Studies of Chinese and English Grammar", "credits": 3, "group": "Psycholinguistics and Neuroscience electives" },
+        { "code": "CBS4945", "title": "Analysis of Language Samples: Clinical Implications", "credits": 3, "group": "Psycholinguistics and Neuroscience electives" },
+        { "code": "CBS4953", "title": "Techniques in Language Sciences", "credits": 3, "group": "Psycholinguistics and Neuroscience electives" },
+        { "code": "CBS4963", "title": "Reading Development and Reading Disorders", "credits": 3, "group": "Psycholinguistics and Neuroscience electives" },
+        { "code": "CBS3843", "title": "Translation for Corporate Communication", "credits": 3, "group": "Technology-Enhanced Bilingual Business Communication and Translation electives" },
+        { "code": "CBS4446", "title": "Intercultural Communication in Corporate Context", "credits": 3, "group": "Technology-Enhanced Bilingual Business Communication and Translation electives" }
+      ]
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T03:43:45.696Z",
+  "generatedAt": "2026-07-10T03:47:27.234Z",
   "universities": [
     {
       "id": "HKU",
@@ -6226,9 +6226,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3243",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 33,
+      "codedCourseCount": 33,
+      "courseSourceUrl": "https://www.polyu.edu.hk/lst/study/undergraduate-programmes/bsc-hons-in-language-science-and-technology/curriculum_scheme/"
     },
     {
       "id": "POLYU-UG-JS3080-31",
@@ -12790,8 +12791,8 @@ const catalogue = {
       "code": "BACHELOR-OF-SCIENCE-HONOURS-IN-LANGUAGE-SCIENCE-",
       "nameEn": "Bachelor of Science (Honours) in Language Science and Technology",
       "nameZh": "Bachelor of Science (Honours) in Language Science and Technology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 34,
+      "codedCourseCount": 33,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3243"
     },
     {
@@ -15961,9 +15962,9 @@ const catalogue = {
     "HKU": 1511,
     "HKUST": 121,
     "LINGNAN": 721,
-    "POLYU": 2108
+    "POLYU": 2141
   },
-  "codedCourseCount": 6558
+  "codedCourseCount": 6591
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
