@@ -1,6 +1,14 @@
 [
   {
     "universityCode": "POLYU",
+    "programmeCode": "JS3789",
+    "reviewedAt": "2026-07-10",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3789",
+    "note": "Official PolyU JUPAS and programme pages confirm the 2026 four-year Surveying degree, Common Year One, five discipline choices, compulsory work-integrated education, capstone project and broad curriculum structure. The publicly accessible pages direct students to the department for subject information but do not publish a current stable subject-code table or semester-by-semester course rows. Keep this programme as index/source-only until a publicly accessible coded curriculum source is available."
+  },
+  {
+    "universityCode": "POLYU",
     "programmeCode": "JS3011",
     "reviewedAt": "2026-07-09",
     "status": "no_public_course_codes",
