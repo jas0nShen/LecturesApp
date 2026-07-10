@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T15:31:16.660Z",
+  "generatedAt": "2026-07-10T15:35:12.014Z",
   "universities": [
     {
       "id": "HKU",
@@ -7397,9 +7397,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1205",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 44,
+      "codedCourseCount": 44,
+      "courseSourceUrl": "https://www.ee.cityu.edu.hk/en/current_students/undergraduate/admission_bdee_firstyear_curriculum"
     },
     {
       "id": "CITYU-UG-BSCCM-44",
@@ -14397,9 +14398,9 @@ const catalogue = {
       "code": "BENG-COMPUTER-AND-DATA-ENGINEERING",
       "nameEn": "BEng Computer and Data Engineering",
       "nameZh": "BEng Computer and Data Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1205"
+      "courseCount": 12,
+      "codedCourseCount": 11,
+      "officialUrl": "https://www.ee.cityu.edu.hk/en/current_students/undergraduate/admission_bdee_firstyear_curriculum"
     },
     {
       "id": "CITYU-UG-EE-43-M2",
@@ -14407,9 +14408,9 @@ const catalogue = {
       "code": "BENG-ELECTRONIC-AND-ELECTRICAL-ENGINEERING",
       "nameEn": "BEng Electronic and Electrical Engineering",
       "nameZh": "BEng Electronic and Electrical Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1205"
+      "courseCount": 12,
+      "codedCourseCount": 11,
+      "officialUrl": "https://www.ee.cityu.edu.hk/en/current_students/undergraduate/admission_bdee_firstyear_curriculum"
     },
     {
       "id": "CITYU-UG-EE-43-M3",
@@ -14417,9 +14418,9 @@ const catalogue = {
       "code": "BENG-INFORMATION-ENGINEERING",
       "nameEn": "BEng Information Engineering",
       "nameZh": "BEng Information Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1205"
+      "courseCount": 12,
+      "codedCourseCount": 11,
+      "officialUrl": "https://www.ee.cityu.edu.hk/en/current_students/undergraduate/admission_bdee_firstyear_curriculum"
     },
     {
       "id": "CITYU-UG-EE-43-M4",
@@ -14427,9 +14428,9 @@ const catalogue = {
       "code": "BENG-MICROELECTRONICS-ENGINEERING",
       "nameEn": "BEng Microelectronics Engineering",
       "nameZh": "BEng Microelectronics Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1205"
+      "courseCount": 12,
+      "codedCourseCount": 11,
+      "officialUrl": "https://www.ee.cityu.edu.hk/en/current_students/undergraduate/admission_bdee_firstyear_curriculum"
     },
     {
       "id": "CITYU-UG-BSCCM-44-M1",
@@ -15983,14 +15984,14 @@ const catalogue = {
     }
   ],
   "courseShardCounts": {
-    "CITYU": 2190,
+    "CITYU": 2234,
     "CUHK": 131,
     "HKU": 1842,
     "HKUST": 121,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 7477
+  "codedCourseCount": 7521
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

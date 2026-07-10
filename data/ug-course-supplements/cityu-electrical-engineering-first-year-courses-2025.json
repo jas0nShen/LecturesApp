@@ -1,0 +1,27 @@
+{
+  "provider": "CityUHK Department of Electrical Engineering normative four-year first-year curriculum",
+  "academicYear": "2025/26",
+  "sourceUrl": "https://www.ee.cityu.edu.hk/en/current_students/undergraduate/admission_bdee_firstyear_curriculum",
+  "officialUrl": "https://www.ee.cityu.edu.hk/en/current_students/undergraduate/admission_bdee_firstyear_curriculum",
+  "supplements": [
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1205",
+      "sourceUrl": "https://www.ee.cityu.edu.hk/en/current_students/undergraduate/admission_bdee_firstyear_curriculum",
+      "officialUrl": "https://www.ee.cityu.edu.hk/en/current_students/undergraduate/admission_bdee_firstyear_curriculum",
+      "courses": [
+        { "code": "GE1401", "title": "University English", "credits": 3, "recommendedYear": 1, "semester": "Semester 1", "group": "gateway education" },
+        { "code": "GE2410", "title": "English for Engineering", "credits": 3, "recommendedYear": 1, "semester": "Semester 2", "group": "gateway education" },
+        { "code": "GE1601", "title": "Whole-Person Development", "credits": 1, "recommendedYear": 1, "semester": "Semester 1", "group": "university requirement" },
+        { "code": "MA1200", "title": "Calculus and Basic Linear Algebra I", "credits": 3, "recommendedYear": 1, "semester": "Semester 1", "group": "college specified requirement" },
+        { "code": "MA1201", "title": "Calculus and Basic Linear Algebra II", "credits": 3, "recommendedYear": 1, "semester": "Semester 2", "group": "college specified requirement" },
+        { "code": "CS1302", "title": "Introduction to Computer Programming", "credits": 3, "recommendedYear": 1, "semester": "Semester 1", "group": "college requirement" },
+        { "code": "PHY1101", "title": "Introductory Classical Mechanics", "credits": 3, "recommendedYear": 1, "semester": "Semester 2", "group": "college requirement" },
+        { "code": "EE1001", "title": "Foundations of Digital Techniques", "credits": 3, "recommendedYear": 1, "semester": "Semester 1 or 2", "group": "major requirement" },
+        { "code": "EE1002", "title": "Principles of Electrical Engineering", "credits": 3, "recommendedYear": 1, "semester": "Semester 1 or 2", "group": "major requirement" },
+        { "code": "EE1004", "title": "Foundations of Information Systems and Data Analysis", "credits": 3, "recommendedYear": 1, "semester": "Semester 1 or 2", "group": "major requirement" },
+        { "code": "GE1354", "title": "Introduction to Electronic Design", "credits": 3, "recommendedYear": 1, "semester": "Semester 1 or 2", "group": "major requirement" }
+      ]
+    }
+  ]
+}

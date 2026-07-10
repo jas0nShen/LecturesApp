@@ -380,6 +380,22 @@ test('CityU Computing Mathematics exposes the verified normative core study path
   });
 });
 
+test('CityU Electrical Engineering exposes the verified shared first-year curriculum', () => {
+  const catalogue = require('../miniprogram/utils/ugCatalogue');
+  const programme = catalogue.programmes.find((item) => item.jupasCode === 'JS1205');
+  const majors = catalogue.majors.filter((item) => item.programmeId === programme.id);
+
+  assert.equal(majors.length, 4);
+  majors.forEach((major) => {
+    const courses = catalogue.courses.filter((item) => item.majorId === major.id);
+    assert.equal(courses.length, 11);
+    assert(courses.some((item) => item.courseCode === 'EE1001' && item.semester === 'Semester 1 or 2'));
+    assert(courses.some((item) => item.courseCode === 'EE1004'));
+    assert(courses.some((item) => item.courseCode === 'GE2410' && item.semester === 'Semester 2'));
+    assert(courses.some((item) => item.courseCode === 'PHY1101'));
+  });
+});
+
 test('UG source coverage report can focus missing programme work by school', () => {
   const args = parseArgs(['--school', 'cityu', '--missing-limit', '5', '--missing-only']);
   const summary = summarizeGeneratedCatalogue(args);
