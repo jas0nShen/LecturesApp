@@ -2,6 +2,7 @@ const assert = require('node:assert/strict');
 const { test } = require('node:test');
 
 const ugService = require('./ugService');
+const ugCourseShards = require('./ugCourseShards');
 
 test('UG catalogue summarizes current undergraduate seed data', () => {
   const summary = ugService.getCatalogueSummary();
@@ -22,6 +23,18 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert(summary.coveragePercent >= 25);
   assert.match(summary.generatedAt, /^\d{4}-\d{2}-\d{2}T/);
   assert.match(summary.generatedDate, /^\d{4}-\d{2}-\d{2}$/);
+});
+
+test('split CityU and PolyU course shards aggregate through their stable university keys', () => {
+  const cityuCourses = ugCourseShards.getCoursesByUniversityCode('CITYU');
+  const polyuCourses = ugCourseShards.getCoursesByUniversityCode('POLYU');
+
+  assert(cityuCourses.length > 1000);
+  assert(polyuCourses.length > 1000);
+  assert.equal(ugCourseShards.getCourseCount('CITYU'), cityuCourses.length);
+  assert.equal(ugCourseShards.getCourseCount('POLYU'), polyuCourses.length);
+  ['CS2115', 'GE2401'].forEach((courseCode) => assert(cityuCourses.some((course) => course.courseCode === courseCode)));
+  ['COMP1004', 'ME39003'].forEach((courseCode) => assert(polyuCourses.some((course) => course.courseCode === courseCode)));
 });
 
 test('CUHK Music exposes the verified 2025/26 required-course set', () => {
