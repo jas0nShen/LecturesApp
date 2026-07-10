@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T03:26:41.757Z",
+  "generatedAt": "2026-07-10T03:38:20.320Z",
   "universities": [
     {
       "id": "HKU",
@@ -6031,9 +6031,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3240",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 3,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 62,
+      "codedCourseCount": 62,
+      "courseSourceUrl": "https://www.polyu.edu.hk/engl/study/undergraduate-programmes/ba-programmes/bachelor-of-arts-honours-in-english-and-applied-linguistics/curriculum2526/"
     },
     {
       "id": "POLYU-UG-JS3375-21",
@@ -12578,8 +12579,8 @@ const catalogue = {
       "code": "BACHELOR-OF-ARTS-HONOURS-IN-ENGLISH-AND-APPLIED-",
       "nameEn": "Bachelor of Arts (Honours) in English and Applied Linguistics",
       "nameZh": "Bachelor of Arts (Honours) in English and Applied Linguistics",
-      "courseCount": 3,
-      "codedCourseCount": 0,
+      "courseCount": 65,
+      "codedCourseCount": 62,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3240"
     },
     {
@@ -15959,9 +15960,9 @@ const catalogue = {
     "HKU": 1511,
     "HKUST": 121,
     "LINGNAN": 721,
-    "POLYU": 2009
+    "POLYU": 2071
   },
-  "codedCourseCount": 6459
+  "codedCourseCount": 6521
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
