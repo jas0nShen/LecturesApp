@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T07:53:15.219Z",
+  "generatedAt": "2026-07-10T07:59:15.813Z",
   "universities": [
     {
       "id": "HKU",
@@ -6271,9 +6271,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3741",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 6,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 8,
+      "codedCourseCount": 8,
+      "courseSourceUrl": "https://www.polyu.edu.hk/me/-/media/Department/ME/Content/Study/Programme-Documents/43499-BEng-Hons-Scheme-in-Mechanical-Engineering/43499-PRD-2025-26_20250902.pdf"
     },
     {
       "id": "POLYU-UG-JS3478-33",
@@ -12828,8 +12829,8 @@ const catalogue = {
       "code": "INTELLIGENT-ROBOTICS-ENGINEERING",
       "nameEn": "Intelligent Robotics Engineering",
       "nameZh": "Intelligent Robotics Engineering",
-      "courseCount": 6,
-      "codedCourseCount": 0,
+      "courseCount": 10,
+      "codedCourseCount": 4,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3741"
     },
     {
@@ -12838,8 +12839,8 @@ const catalogue = {
       "code": "MECHANICAL-ENGINEERING",
       "nameEn": "Mechanical Engineering",
       "nameZh": "Mechanical Engineering",
-      "courseCount": 6,
-      "codedCourseCount": 0,
+      "courseCount": 10,
+      "codedCourseCount": 4,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3741"
     },
     {
@@ -15969,9 +15970,9 @@ const catalogue = {
     "HKU": 1511,
     "HKUST": 121,
     "LINGNAN": 721,
-    "POLYU": 2394
+    "POLYU": 2402
   },
-  "codedCourseCount": 6844
+  "codedCourseCount": 6852
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

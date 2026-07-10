@@ -51007,5 +51007,181 @@ module.exports = [
     "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3739",
     "sourceProvider": "PolyU Industrial Centre CEE Cohort 2025/26 Training Table",
     "academicYear": "2026"
+  },
+  {
+    "id": "POLYU-UG-JS3741-32-M1-SUP-ME29004-1",
+    "programmeId": "POLYU-UG-JS3741-32",
+    "majorId": "POLYU-UG-JS3741-32-M1",
+    "courseCode": "ME29004",
+    "titleEn": "Fundamentals of Engineering Design & Prototyping",
+    "titleZh": "Fundamentals of Engineering Design & Prototyping",
+    "credits": 2,
+    "recommendedYear": 1,
+    "semester": "Semester 1 / Semester 2",
+    "courseType": "internship",
+    "requirementGroups": [
+      "Shared practical training"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://www.polyu.edu.hk/me/-/media/Department/ME/Content/Study/Programme-Documents/43499-BEng-Hons-Scheme-in-Mechanical-Engineering/43499-PRD-2025-26_20250902.pdf",
+    "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3741",
+    "sourceProvider": "PolyU Mechanical Engineering Programme Requirement Document 2025/26",
+    "academicYear": "2025-26"
+  },
+  {
+    "id": "POLYU-UG-JS3741-32-M1-SUP-ME39002-2",
+    "programmeId": "POLYU-UG-JS3741-32",
+    "majorId": "POLYU-UG-JS3741-32-M1",
+    "courseCode": "ME39002",
+    "titleEn": "Appreciation of Manufacturing Processes",
+    "titleZh": "Appreciation of Manufacturing Processes",
+    "credits": 3,
+    "recommendedYear": 2,
+    "semester": "Semester 1",
+    "courseType": "internship",
+    "requirementGroups": [
+      "Shared practical training"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://www.polyu.edu.hk/me/-/media/Department/ME/Content/Study/Programme-Documents/43499-BEng-Hons-Scheme-in-Mechanical-Engineering/43499-PRD-2025-26_20250902.pdf",
+    "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3741",
+    "sourceProvider": "PolyU Mechanical Engineering Programme Requirement Document 2025/26",
+    "academicYear": "2025-26"
+  },
+  {
+    "id": "POLYU-UG-JS3741-32-M1-SUP-ME39004-3",
+    "programmeId": "POLYU-UG-JS3741-32",
+    "majorId": "POLYU-UG-JS3741-32-M1",
+    "courseCode": "ME39004",
+    "titleEn": "Applied Engineering Essentials: Python, Safety Practices, and Advanced CAD Modelling",
+    "titleZh": "Applied Engineering Essentials: Python, Safety Practices, and Advanced CAD Modelling",
+    "credits": 2,
+    "recommendedYear": 2,
+    "semester": "Semester 2",
+    "courseType": "internship",
+    "requirementGroups": [
+      "Shared practical training"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://www.polyu.edu.hk/me/-/media/Department/ME/Content/Study/Programme-Documents/43499-BEng-Hons-Scheme-in-Mechanical-Engineering/43499-PRD-2025-26_20250902.pdf",
+    "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3741",
+    "sourceProvider": "PolyU Mechanical Engineering Programme Requirement Document 2025/26",
+    "academicYear": "2025-26"
+  },
+  {
+    "id": "POLYU-UG-JS3741-32-M1-SUP-ME39003-4",
+    "programmeId": "POLYU-UG-JS3741-32",
+    "majorId": "POLYU-UG-JS3741-32-M1",
+    "courseCode": "ME39003",
+    "titleEn": "Multidisciplinary Manufacturing Project",
+    "titleZh": "Multidisciplinary Manufacturing Project",
+    "credits": 3,
+    "recommendedYear": 3,
+    "semester": "Semester 1 / Semester 2",
+    "courseType": "internship",
+    "requirementGroups": [
+      "Shared practical training"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://www.polyu.edu.hk/me/-/media/Department/ME/Content/Study/Programme-Documents/43499-BEng-Hons-Scheme-in-Mechanical-Engineering/43499-PRD-2025-26_20250902.pdf",
+    "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3741",
+    "sourceProvider": "PolyU Mechanical Engineering Programme Requirement Document 2025/26",
+    "academicYear": "2025-26"
+  },
+  {
+    "id": "POLYU-UG-JS3741-32-M2-SUP-ME29004-1",
+    "programmeId": "POLYU-UG-JS3741-32",
+    "majorId": "POLYU-UG-JS3741-32-M2",
+    "courseCode": "ME29004",
+    "titleEn": "Fundamentals of Engineering Design & Prototyping",
+    "titleZh": "Fundamentals of Engineering Design & Prototyping",
+    "credits": 2,
+    "recommendedYear": 1,
+    "semester": "Semester 1 / Semester 2",
+    "courseType": "internship",
+    "requirementGroups": [
+      "Shared practical training"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://www.polyu.edu.hk/me/-/media/Department/ME/Content/Study/Programme-Documents/43499-BEng-Hons-Scheme-in-Mechanical-Engineering/43499-PRD-2025-26_20250902.pdf",
+    "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3741",
+    "sourceProvider": "PolyU Mechanical Engineering Programme Requirement Document 2025/26",
+    "academicYear": "2025-26"
+  },
+  {
+    "id": "POLYU-UG-JS3741-32-M2-SUP-ME39002-2",
+    "programmeId": "POLYU-UG-JS3741-32",
+    "majorId": "POLYU-UG-JS3741-32-M2",
+    "courseCode": "ME39002",
+    "titleEn": "Appreciation of Manufacturing Processes",
+    "titleZh": "Appreciation of Manufacturing Processes",
+    "credits": 3,
+    "recommendedYear": 2,
+    "semester": "Semester 1",
+    "courseType": "internship",
+    "requirementGroups": [
+      "Shared practical training"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://www.polyu.edu.hk/me/-/media/Department/ME/Content/Study/Programme-Documents/43499-BEng-Hons-Scheme-in-Mechanical-Engineering/43499-PRD-2025-26_20250902.pdf",
+    "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3741",
+    "sourceProvider": "PolyU Mechanical Engineering Programme Requirement Document 2025/26",
+    "academicYear": "2025-26"
+  },
+  {
+    "id": "POLYU-UG-JS3741-32-M2-SUP-ME39004-3",
+    "programmeId": "POLYU-UG-JS3741-32",
+    "majorId": "POLYU-UG-JS3741-32-M2",
+    "courseCode": "ME39004",
+    "titleEn": "Applied Engineering Essentials: Python, Safety Practices, and Advanced CAD Modelling",
+    "titleZh": "Applied Engineering Essentials: Python, Safety Practices, and Advanced CAD Modelling",
+    "credits": 2,
+    "recommendedYear": 2,
+    "semester": "Semester 2",
+    "courseType": "internship",
+    "requirementGroups": [
+      "Shared practical training"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://www.polyu.edu.hk/me/-/media/Department/ME/Content/Study/Programme-Documents/43499-BEng-Hons-Scheme-in-Mechanical-Engineering/43499-PRD-2025-26_20250902.pdf",
+    "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3741",
+    "sourceProvider": "PolyU Mechanical Engineering Programme Requirement Document 2025/26",
+    "academicYear": "2025-26"
+  },
+  {
+    "id": "POLYU-UG-JS3741-32-M2-SUP-ME39003-4",
+    "programmeId": "POLYU-UG-JS3741-32",
+    "majorId": "POLYU-UG-JS3741-32-M2",
+    "courseCode": "ME39003",
+    "titleEn": "Multidisciplinary Manufacturing Project",
+    "titleZh": "Multidisciplinary Manufacturing Project",
+    "credits": 3,
+    "recommendedYear": 3,
+    "semester": "Semester 1 / Semester 2",
+    "courseType": "internship",
+    "requirementGroups": [
+      "Shared practical training"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://www.polyu.edu.hk/me/-/media/Department/ME/Content/Study/Programme-Documents/43499-BEng-Hons-Scheme-in-Mechanical-Engineering/43499-PRD-2025-26_20250902.pdf",
+    "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3741",
+    "sourceProvider": "PolyU Mechanical Engineering Programme Requirement Document 2025/26",
+    "academicYear": "2025-26"
   }
 ];
