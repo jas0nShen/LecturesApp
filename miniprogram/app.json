@@ -22,7 +22,7 @@
     "navigationBarTitleText": "课程选择助手",
     "navigationBarBackgroundColor": "#0b5d4b",
     "navigationBarTextStyle": "white",
-    "backgroundColor": "#eef3f0"
+    "backgroundColor": "#f3f4f0"
   },
   "tabBar": {
     "color": "#6c756f",

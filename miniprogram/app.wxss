@@ -1,7 +1,7 @@
 page {
-  background: #eef3f0;
-  color: #14231e;
-  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", sans-serif;
+  background: #f3f4f0;
+  color: #17241f;
+  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", sans-serif;
 }
 
 .page {
@@ -15,16 +15,17 @@ page {
 }
 
 .panel {
-  background: #fbfcfa;
-  border: 1rpx solid #dce6e0;
-  border-radius: 20rpx;
-  box-shadow: 0 8rpx 26rpx rgba(15, 64, 51, 0.055);
+  background: rgba(255, 255, 253, 0.94);
+  border: 1rpx solid #dfe4dd;
+  border-radius: 18rpx;
+  box-shadow: 0 8rpx 24rpx rgba(28, 44, 36, 0.045);
   box-sizing: border-box;
   padding: 30rpx;
 }
 
 .title {
-  color: #102a22;
+  color: #172a23;
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", sans-serif;
   font-size: 42rpx;
   font-weight: 800;
   letter-spacing: -1rpx;
@@ -32,7 +33,7 @@ page {
 }
 
 .subtitle {
-  color: #66776f;
+  color: #68766e;
   font-size: 25rpx;
   line-height: 1.55;
   margin-top: 9rpx;
@@ -85,8 +86,8 @@ page {
 }
 
 .input {
-  background: #fbfcfa;
-  border: 1rpx solid #cad8d1;
+  background: rgba(255, 255, 253, 0.94);
+  border: 1rpx solid #d1dad3;
   border-radius: 14rpx;
   box-shadow: inset 0 1rpx 2rpx rgba(15, 64, 51, 0.03);
   box-sizing: border-box;

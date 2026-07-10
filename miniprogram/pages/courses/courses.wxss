@@ -1,7 +1,8 @@
 page {
   background:
-    linear-gradient(180deg, #f7f8f6 0%, #f2f5f2 54%, #f8f9f7 100%);
-  color: #1c2923;
+    radial-gradient(circle at 94% 0%, rgba(205, 221, 210, 0.38) 0, rgba(205, 221, 210, 0) 30%),
+    linear-gradient(180deg, #f7f8f5 0%, #f1f3ef 58%, #f6f7f4 100%);
+  color: #192720;
   font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", sans-serif;
 }
 
@@ -64,11 +65,11 @@ page {
 }
 
 .course-card {
-  background: rgba(255, 255, 255, 0.94);
-  border: 1rpx solid rgba(218, 225, 219, 0.9);
-  border-radius: 16rpx;
+  background: rgba(255, 255, 253, 0.9);
+  border: 1rpx solid rgba(218, 225, 219, 0.86);
+  border-radius: 18rpx;
   box-shadow:
-    0 6rpx 18rpx rgba(44, 63, 54, 0.022),
+    0 7rpx 20rpx rgba(35, 48, 41, 0.025),
     inset 0 1rpx 0 rgba(255, 255, 255, 0.86);
   margin-bottom: 16rpx;
   padding: 24rpx 26rpx 23rpx;
@@ -81,7 +82,7 @@ page {
 }
 
 .code {
-  color: #2d695b;
+  color: #27604f;
   font-family: "SF Mono", "Menlo", "Consolas", monospace;
   font-size: 22rpx;
   font-weight: 740;
@@ -123,11 +124,12 @@ page {
 }
 
 .course-title {
-  color: #1a2a23;
-  font-size: 25rpx;
-  font-weight: 620;
-  letter-spacing: -0.12rpx;
-  line-height: 1.48;
+  color: #1c2b24;
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", sans-serif;
+  font-size: 26rpx;
+  font-weight: 650;
+  letter-spacing: -0.24rpx;
+  line-height: 1.42;
   margin-top: 11rpx;
 }
 
@@ -278,8 +280,8 @@ page {
   z-index: 1;
 }
 .search-field .input {
-  background: rgba(255, 255, 253, 0.98);
-  border-color: rgba(211, 217, 210, 0.9);
+  background: rgba(255, 255, 253, 0.86);
+  border-color: rgba(208, 216, 209, 0.92);
   border-radius: 16rpx;
   box-shadow:
     0 6rpx 16rpx rgba(45, 58, 51, 0.018),
@@ -435,13 +437,13 @@ page {
 
 .tpg-hero {
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(247, 249, 247, 0.98) 100%);
-  border: 1rpx solid rgba(214, 223, 216, 0.94);
+    linear-gradient(132deg, #183c32 0%, #21483c 62%, #2d5547 100%);
+  border: 1rpx solid rgba(29, 67, 55, 0.9);
   border-radius: 18rpx;
   box-shadow:
-    0 8rpx 22rpx rgba(47, 61, 54, 0.032),
-    inset 0 1rpx 0 rgba(255, 255, 255, 0.85);
-  color: #1b2923;
+    0 13rpx 30rpx rgba(22, 55, 45, 0.13),
+    inset 0 1rpx 0 rgba(255, 255, 255, 0.08);
+  color: #f8fbf8;
   margin-bottom: 12rpx;
   overflow: hidden;
   padding: 24rpx 26rpx 20rpx;
@@ -449,7 +451,7 @@ page {
 }
 
 .tpg-hero::before {
-  background: #8ba99a;
+  background: rgba(202, 226, 214, 0.7);
   border-radius: 999rpx;
   content: '';
   height: 44rpx;
@@ -460,7 +462,8 @@ page {
 }
 
 .tpg-hero::after {
-  display: none;
+  border: 1rpx solid rgba(218, 235, 226, 0.2);
+  display: block;
   border-radius: 999rpx;
   bottom: auto;
   content: '';
@@ -472,7 +475,7 @@ page {
 }
 
 .tpg-eyebrow {
-  color: #6f8177;
+  color: #b6d0c3;
   font-family: "SF Mono", "Menlo", "Consolas", monospace;
   font-size: 17rpx;
   font-weight: 700;
@@ -482,13 +485,13 @@ page {
 }
 
 .tpg-title {
-  color: #1b2d25;
+  color: #fbfdfb;
   display: -webkit-box;
   font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif;
-  font-size: 29rpx;
+  font-size: 31rpx;
   font-weight: 680;
-  letter-spacing: -0.38rpx;
-  line-height: 1.3;
+  letter-spacing: -0.46rpx;
+  line-height: 1.24;
   margin-top: 14rpx;
   overflow: hidden;
   position: relative;
@@ -499,7 +502,7 @@ page {
 }
 
 .tpg-subtitle {
-  color: #6a7971;
+  color: #c8d7cf;
   display: -webkit-box;
   font-size: 19rpx;
   font-weight: 450;
@@ -516,11 +519,11 @@ page {
 }
 
 .tpg-hero-foot {
-  align-items: center;
+  align-items: flex-end;
   background: transparent;
   border: 0;
   border-radius: 0;
-  border-top: 1rpx solid #e4e9e4;
+  border-top: 1rpx solid rgba(222, 236, 228, 0.2);
   display: flex;
   justify-content: space-between;
   margin-top: 16rpx;
@@ -530,7 +533,7 @@ page {
 }
 
 .tpg-number {
-  color: #294d40;
+  color: #f4faf6;
   font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 22rpx;
   font-weight: 680;
@@ -538,22 +541,22 @@ page {
 }
 
 .tpg-number.text-status {
-  color: #5d6c64;
+  color: #d6e2db;
   font-size: 21rpx;
   letter-spacing: 0;
 }
 
 .tpg-number-label {
-  color: #84918a;
+  color: #aec3b8;
   font-size: 16rpx;
   margin-top: 3rpx;
 }
 
 .tpg-seal {
-  background: #eef3ef;
-  border: 1rpx solid #d8e2da;
+  background: rgba(236, 246, 239, 0.08);
+  border: 1rpx solid rgba(214, 232, 221, 0.36);
   border-radius: 999rpx;
-  color: #668073;
+  color: #d7e8de;
   font-size: 17rpx;
   font-weight: 640;
   letter-spacing: 0.35rpx;
@@ -562,9 +565,9 @@ page {
 
 .tpg-status {
   align-items: flex-start;
-  background: rgba(237, 243, 239, 0.7);
-  border: 1rpx solid rgba(214, 225, 217, 0.9);
-  border-radius: 13rpx;
+  background: rgba(238, 244, 239, 0.74);
+  border: 1rpx solid rgba(210, 222, 213, 0.9);
+  border-radius: 15rpx;
   box-shadow: none;
   display: flex;
   gap: 11rpx;
@@ -572,10 +575,10 @@ page {
 }
 
 .tpg-status .stamp-mark {
-  background: rgba(255, 255, 255, 0.72);
-  border: 1rpx solid rgba(207, 220, 211, 0.98);
+  background: rgba(255, 255, 253, 0.72);
+  border: 1rpx solid rgba(199, 215, 204, 0.98);
   border-radius: 999rpx;
-  color: #547164;
+  color: #527063;
   flex-shrink: 0;
   font-size: 15rpx;
   font-weight: 650;
@@ -585,13 +588,13 @@ page {
 }
 
 .tpg-status .stamp-title {
-  color: #40574c;
+  color: #3c5649;
   font-size: 21rpx;
   font-weight: 640;
 }
 
 .tpg-status .stamp-copy {
-  color: #77857d;
+  color: #748279;
   font-size: 18rpx;
   line-height: 1.45;
 }
@@ -601,7 +604,7 @@ page {
 }
 
 .tpg-course-card {
-  background: #ffffff;
+  background: rgba(255, 255, 253, 0.94);
 }
 
 .tpg-course-card .term-badge {
