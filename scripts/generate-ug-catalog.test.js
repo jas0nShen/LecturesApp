@@ -273,13 +273,36 @@ test('UG source coverage report includes generated catalogue supplement coverage
   const lingnan = summary.schools.find((school) => school.code === 'LINGNAN');
 
   assert.equal(summary.totals.programmeCount, 445);
-  assert.equal(summary.totals.codedCourseCount, 7253);
-  assert.equal(summary.totals.programmeWithCoursesCount, 104);
-  assert.equal(cityu.programmeWithCoursesCount, 20);
-  assert.equal(cityu.codedCourseCount, 1966);
+  assert.equal(summary.totals.codedCourseCount, 7343);
+  assert.equal(summary.totals.programmeWithCoursesCount, 107);
+  assert.equal(cityu.programmeWithCoursesCount, 23);
+  assert.equal(cityu.codedCourseCount, 2056);
   assert(cityu.courseProgrammes.some((programme) => programme.code === 'JS1001' && programme.codedCourseCount > 0));
   assert.equal(lingnan.missingProgrammeCount, 0);
   assert.equal(lingnan.courseProgrammes.length, 23);
+});
+
+test('CityU Data Science programmes expose the verified first-year curriculum', () => {
+  const summary = summarizeGeneratedCatalogue({ school: 'CITYU' });
+  const cityu = summary.schools.find((school) => school.code === 'CITYU');
+  const dataScienceProgrammes = cityu.courseProgrammes.filter((programme) => (
+    ['JS1071', 'JS1072', 'JS1074'].includes(programme.code)
+  ));
+
+  assert.equal(dataScienceProgrammes.length, 3);
+  assert(dataScienceProgrammes.every((programme) => programme.codedCourseCount >= 9));
+  assert(dataScienceProgrammes.some((programme) => programme.code === 'JS1074'));
+
+  const catalogue = require('../miniprogram/utils/ugCatalogue');
+  const programme = catalogue.programmes.find((item) => item.jupasCode === 'JS1074');
+  const major = catalogue.majors.find((item) => item.programmeId === programme.id);
+  const courseCodes = catalogue.courses
+    .filter((course) => course.majorId === major.id)
+    .map((course) => course.courseCode);
+
+  assert(courseCodes.includes('CS1315'));
+  assert(courseCodes.includes('SDSC2004'));
+  assert(courseCodes.includes('MA1508'));
 });
 
 test('UG source coverage report can focus missing programme work by school', () => {
@@ -292,9 +315,9 @@ test('UG source coverage report can focus missing programme work by school', () 
   assert.equal(args.json, false);
   assert.deepEqual(summary.schools.map((school) => school.code), ['CITYU']);
   assert.equal(summary.totals.programmeCount, 58);
-  assert.equal(summary.totals.programmeWithCoursesCount, 20);
-  assert.equal(summary.totals.missingProgrammeCount, 38);
-  assert.equal(summary.schools[0].missingProgrammeCount, 38);
+  assert.equal(summary.totals.programmeWithCoursesCount, 23);
+  assert.equal(summary.totals.missingProgrammeCount, 35);
+  assert.equal(summary.schools[0].missingProgrammeCount, 35);
   assert.equal(summary.schools[0].missingProgrammes.length, 5);
   assert.equal(filterSchools(summary.schools, 'HKU').length, 0);
 });
@@ -379,7 +402,7 @@ test('UG source coverage report supports machine-readable JSON mode', () => {
   assert.equal(args.missingOnly, true);
   assert.equal(args.json, true);
   assert.deepEqual(summary.schools.map((school) => school.code), ['CITYU']);
-  assert.equal(summary.schools[0].missingProgrammeCount, 38);
+  assert.equal(summary.schools[0].missingProgrammeCount, 35);
   assert.equal(summary.schools[0].missingProgrammes.length, 3);
   assert.equal(summary.schools[0].missingProgrammes[0].code, 'JS1050');
   assert.match(summary.schools[0].missingProgrammes[0].officialUrl, /jupas\.edu\.hk\/en\/programme\/cityuhk\/JS1050/);
@@ -438,7 +461,7 @@ test('UG source coverage report can build a grouped missing data batch plan', ()
   assert.equal(args.batchPlan, true);
   assert.equal(groups.sourceIndexOnly.length, 149);
   assert.equal(groups.reviewedNoCourseCodes.length, 21);
-  assert.equal(groups.noSource.length, 171);
+  assert.equal(groups.noSource.length, 168);
   assert.equal(groups.sourceIndexOnly[0].schoolCode, 'HKU');
   assert.equal(groups.sourceIndexOnly[0].code, '6274');
   assert.equal(groups.reviewedNoCourseCodes[0].code, 'JS3011');
@@ -447,7 +470,7 @@ test('UG source coverage report can build a grouped missing data batch plan', ()
   assert.match(plan, /A\. 可直接导入候选：0 个/);
   assert.match(plan, /C\. 需打开官方入口核实课程码：149 个/);
   assert.match(plan, /D\. 已核实官网暂无公开课程码：21 个/);
-  assert.match(plan, /E\. 需先寻找官方来源：171 个/);
+  assert.match(plan, /E\. 需先寻找官方来源：168 个/);
   assert.match(plan, /POLYU · JS3011 · Bachelor of Science \(Honours\) Scheme in Biotechnology and Chemical Technology/);
   assert.match(plan, /npm run status:ug-sources -- --missing-only --priority launch --missing-limit 3 --collector-template/);
   assert.match(plan, /npm run sync:ug-catalog/);

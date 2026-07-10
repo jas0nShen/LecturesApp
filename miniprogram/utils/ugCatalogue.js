@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T15:03:35.477Z",
+  "generatedAt": "2026-07-10T15:11:40.070Z",
   "universities": [
     {
       "id": "HKU",
@@ -7066,9 +7066,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1071",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 18,
+      "codedCourseCount": 18,
+      "courseSourceUrl": "https://www.cityu.edu.hk/admo/programmes/school-data-science-options-bsc-data-science-bsc-data-and-systems-engineering"
     },
     {
       "id": "CITYU-UG-BSCDSC-27",
@@ -7085,9 +7086,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1072",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 36,
+      "codedCourseCount": 36,
+      "courseSourceUrl": "https://www.cityu.edu.hk/admo/programmes/bsc-data-science"
     },
     {
       "id": "CITYU-UG-BSCDSE-28",
@@ -7104,9 +7106,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1074",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 36,
+      "codedCourseCount": 36,
+      "courseSourceUrl": "https://www.cityu.edu.hk/admo/programmes/bsc-data-and-systems-engineering"
     },
     {
       "id": "CITYU-UG-BSOCSCIRGA-29",
@@ -13869,9 +13872,9 @@ const catalogue = {
       "code": "BSC-DATA-SCIENCE",
       "nameEn": "BSc Data Science",
       "nameZh": "BSc Data Science",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1071"
+      "courseCount": 10,
+      "codedCourseCount": 9,
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/school-data-science-options-bsc-data-science-bsc-data-and-systems-engineering"
     },
     {
       "id": "CITYU-UG-DS-26-M2",
@@ -13879,9 +13882,9 @@ const catalogue = {
       "code": "BSC-DATA-AND-SYSTEMS-ENGINEERING",
       "nameEn": "BSc Data and Systems Engineering",
       "nameZh": "BSc Data and Systems Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1071"
+      "courseCount": 10,
+      "codedCourseCount": 9,
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/school-data-science-options-bsc-data-science-bsc-data-and-systems-engineering"
     },
     {
       "id": "CITYU-UG-BSCDSC-27-M1",
@@ -13889,9 +13892,9 @@ const catalogue = {
       "code": "DATA-SCIENCE",
       "nameEn": "Data Science",
       "nameZh": "Data Science",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1072"
+      "courseCount": 10,
+      "codedCourseCount": 9,
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bsc-data-science"
     },
     {
       "id": "CITYU-UG-BSCDSC-27-M2",
@@ -13899,9 +13902,9 @@ const catalogue = {
       "code": "MACHINE-LEARNING",
       "nameEn": "Machine Learning",
       "nameZh": "Machine Learning",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1072"
+      "courseCount": 10,
+      "codedCourseCount": 9,
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bsc-data-science"
     },
     {
       "id": "CITYU-UG-BSCDSC-27-M3",
@@ -13909,9 +13912,9 @@ const catalogue = {
       "code": "DATA-MINING",
       "nameEn": "Data Mining",
       "nameZh": "Data Mining",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1072"
+      "courseCount": 10,
+      "codedCourseCount": 9,
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bsc-data-science"
     },
     {
       "id": "CITYU-UG-BSCDSC-27-M4",
@@ -13919,9 +13922,9 @@ const catalogue = {
       "code": "BIG-DATA-ANALYSIS",
       "nameEn": "Big Data Analysis",
       "nameZh": "Big Data Analysis",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1072"
+      "courseCount": 10,
+      "codedCourseCount": 9,
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bsc-data-science"
     },
     {
       "id": "CITYU-UG-BSCDSE-28-M1",
@@ -13929,9 +13932,9 @@ const catalogue = {
       "code": "DATA-SCIENCE",
       "nameEn": "Data Science",
       "nameZh": "Data Science",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1074"
+      "courseCount": 10,
+      "codedCourseCount": 9,
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bsc-data-and-systems-engineering"
     },
     {
       "id": "CITYU-UG-BSCDSE-28-M2",
@@ -13939,9 +13942,9 @@ const catalogue = {
       "code": "FINTECH-DECISION-ANALYTICS",
       "nameEn": "FinTech & Decision Analytics",
       "nameZh": "FinTech & Decision Analytics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1074"
+      "courseCount": 10,
+      "codedCourseCount": 9,
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bsc-data-and-systems-engineering"
     },
     {
       "id": "CITYU-UG-BSCDSE-28-M3",
@@ -13949,9 +13952,9 @@ const catalogue = {
       "code": "INDUSTRIAL-AI",
       "nameEn": "Industrial AI",
       "nameZh": "Industrial AI",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1074"
+      "courseCount": 10,
+      "codedCourseCount": 9,
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bsc-data-and-systems-engineering"
     },
     {
       "id": "CITYU-UG-BSCDSE-28-M4",
@@ -13959,9 +13962,9 @@ const catalogue = {
       "code": "SMART-CITY",
       "nameEn": "Smart City",
       "nameZh": "Smart City",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1074"
+      "courseCount": 10,
+      "codedCourseCount": 9,
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bsc-data-and-systems-engineering"
     },
     {
       "id": "CITYU-UG-BSOCSCIRGA-29-M1",
@@ -15975,14 +15978,14 @@ const catalogue = {
     }
   ],
   "courseShardCounts": {
-    "CITYU": 1966,
+    "CITYU": 2056,
     "CUHK": 131,
     "HKU": 1842,
     "HKUST": 121,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 7253
+  "codedCourseCount": 7343
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

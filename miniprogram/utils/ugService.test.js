@@ -13,13 +13,13 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.requirementCount, 4);
   assert(summary.courseCount >= 4630);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 7253);
-  assert.equal(summary.programmeWithCoursesCount, 104);
-  assert.equal(summary.pendingProgrammeCount, 340);
+  assert.equal(summary.codedCourseCount, 7343);
+  assert.equal(summary.programmeWithCoursesCount, 107);
+  assert.equal(summary.pendingProgrammeCount, 337);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
-  assert.equal(summary.coveragePercent, 23);
+  assert.equal(summary.coveragePercent, 24);
   assert.match(summary.generatedAt, /^\d{4}-\d{2}-\d{2}T/);
   assert.match(summary.generatedDate, /^\d{4}-\d{2}-\d{2}$/);
 });
@@ -136,7 +136,7 @@ test('UG per-school coverage stays visible for setup validation', () => {
     CUHK: { programmeCount: 84, majorCount: 84, codedCourseCount: 131 },
     HKUST: { programmeCount: 50, majorCount: 64, codedCourseCount: 121 },
     POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 2472 },
-    CITYU: { programmeCount: 58, majorCount: 201, codedCourseCount: 1966 },
+    CITYU: { programmeCount: 58, majorCount: 201, codedCourseCount: 2056 },
     HKBU: { programmeCount: 22, majorCount: 46, codedCourseCount: 0 },
     EDUHK: { programmeCount: 25, majorCount: 25, codedCourseCount: 0 },
     LINGNAN: { programmeCount: 23, majorCount: 23, codedCourseCount: 721 }
@@ -174,10 +174,10 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert.equal(polyu.codedCourseCount, 2472);
   assert.equal(polyu.badge, 'COURSES');
   assert.equal(polyu.sourceReadiness.indexOnly, polyu.pendingProgrammeCount);
-  assert.equal(cityu.programmeWithCoursesCount, 20);
-  assert.equal(cityu.pendingProgrammeCount, 38);
-  assert.equal(cityu.coveragePercent, 34);
-  assert.equal(cityu.codedCourseCount, 1966);
+  assert.equal(cityu.programmeWithCoursesCount, 23);
+  assert.equal(cityu.pendingProgrammeCount, 35);
+  assert.equal(cityu.coveragePercent, 40);
+  assert.equal(cityu.codedCourseCount, 2056);
   assert.equal(cityu.badge, 'COURSES');
   assert.equal(lingnan.programmeWithCoursesCount, 23);
   assert.equal(lingnan.pendingProgrammeCount, 0);

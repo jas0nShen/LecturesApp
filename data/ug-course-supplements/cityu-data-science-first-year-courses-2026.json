@@ -1,0 +1,39 @@
+{
+  "provider": "CityUHK Department of Data Science first-year curriculum",
+  "academicYear": "2026/27",
+  "sourceUrl": "https://www.cityu.edu.hk/admo/programmes/school-data-science-options-bsc-data-science-bsc-data-and-systems-engineering",
+  "officialUrl": "https://www.cityu.edu.hk/admo/programmes/school-data-science-options-bsc-data-science-bsc-data-and-systems-engineering",
+  "supplements": [
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1071",
+      "sourceUrl": "https://www.cityu.edu.hk/admo/programmes/school-data-science-options-bsc-data-science-bsc-data-and-systems-engineering",
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/school-data-science-options-bsc-data-science-bsc-data-and-systems-engineering",
+      "courses": [
+        { "code": "GE1401", "title": "University English", "credits": 3, "recommendedYear": 1, "group": "gateway education" },
+        { "code": "GE1501", "title": "Chinese Civilisation - History and Philosophy", "credits": 3, "recommendedYear": 1, "group": "gateway education" },
+        { "code": "GE1601", "title": "Whole-Person Development", "credits": 1, "recommendedYear": 1, "group": "gateway education" },
+        { "code": "CS1315", "title": "Introduction to Computer Programming", "credits": 3, "recommendedYear": 1, "group": "college specified requirement" },
+        { "code": "SDSC2003", "title": "Human Contexts and Ethics in Data Science", "credits": 3, "recommendedYear": 1, "group": "college specified requirement" },
+        { "code": "CS3402", "title": "Database Systems", "credits": 3, "recommendedYear": 1, "group": "college specified requirement" },
+        { "code": "MA1503", "title": "Linear Algebra with Applications", "credits": 4, "recommendedYear": 1, "group": "major requirement" },
+        { "code": "MA1508", "title": "Calculus", "credits": 4, "recommendedYear": 1, "group": "major requirement" },
+        { "code": "SDSC2004", "title": "Data Visualization", "credits": 3, "recommendedYear": 1, "group": "major requirement" }
+      ]
+    },
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1072",
+      "sourceUrl": "https://www.cityu.edu.hk/admo/programmes/bsc-data-science",
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bsc-data-science",
+      "copyCoursesFrom": { "universityCode": "CITYU", "jupasCode": "JS1071" }
+    },
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1074",
+      "sourceUrl": "https://www.cityu.edu.hk/admo/programmes/bsc-data-and-systems-engineering",
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bsc-data-and-systems-engineering",
+      "copyCoursesFrom": { "universityCode": "CITYU", "jupasCode": "JS1071" }
+    }
+  ]
+}
