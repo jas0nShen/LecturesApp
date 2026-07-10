@@ -1,0 +1,39 @@
+{
+  "provider": "HKU BASc(GHD) official major curriculum",
+  "academicYear": "2025-26",
+  "sourceUrl": "https://ghd.sph.hku.hk/major-in-ghd",
+  "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-and-sciences-global-health-and-development",
+  "supplements": [
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6250",
+      "majorName": "Bachelor of Arts and Sciences in Global Health and Development",
+      "sourceUrl": "https://ghd.sph.hku.hk/major-in-ghd",
+      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-and-sciences-global-health-and-development",
+      "courses": [
+        { "code": "GHAD1001", "title": "Foundations in global health and development", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Anchoring Courses" },
+        { "code": "GHAD2001", "title": "Globalisation and health", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Anchoring Courses" },
+        { "code": "GHAD3001", "title": "Global health policy", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Anchoring Courses" },
+        { "code": "GHAD4001", "title": "Leadership and advocacy in global health and development", "credits": 6, "recommendedYear": 4, "courseType": "core", "group": "Anchoring Courses" },
+        { "code": "GHAD1002", "title": "Introductory economics and finance", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Compulsory Courses" },
+        { "code": "GHAD1003", "title": "Health systems and financing", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Compulsory Courses" },
+        { "code": "GHAD1004", "title": "Introduction to epidemiology and biostatistics", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Compulsory Courses" },
+        { "code": "GHAD2003", "title": "Global health governance", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Compulsory Courses" },
+        { "code": "GHAD2004", "title": "Health economics and evaluation", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Compulsory Courses" },
+        { "code": "BBMS2011", "title": "Research methods in medicine and health sciences", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Compulsory Courses" },
+        { "code": "URBS1003", "title": "Theories and global trends in urban development", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Core — select 4 of 11 (Years 2–4)" },
+        { "code": "POLI2106", "title": "Introduction to international relations", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Core — select 4 of 11 (Years 2–4)" },
+        { "code": "ECON2262", "title": "Economic development", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Core — select 4 of 11 (Years 2–4)" },
+        { "code": "GEOG2124", "title": "Environmental change and socio-political conflicts", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Core — select 4 of 11 (Years 2–4)" },
+        { "code": "GHAD2002", "title": "Legal foundations for global health and development", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Core — select 4 of 11 (Years 3–4)" },
+        { "code": "SOWK3099", "title": "Population and development", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Core — select 4 of 11 (Years 2–4)" },
+        { "code": "LLAW3027", "title": "International organisations", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Core — select 4 of 11 (Years 2–4)" },
+        { "code": "POLI3080", "title": "Global political economy", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Core — select 4 of 11 (Years 2–4)" },
+        { "code": "GHAD4002", "title": "The role and impact of private sector in health and development", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Core — select 4 of 11 (Years 3–4)" },
+        { "code": "GHAD4003", "title": "Seminar in major global health and development challenges", "credits": 6, "recommendedYear": 4, "courseType": "major_elective", "group": "Disciplinary Core — select 4 of 11" },
+        { "code": "GHAD4004", "title": "Bringing it all together: Seminar in planetary health", "credits": 6, "recommendedYear": 4, "courseType": "major_elective", "group": "Disciplinary Core — select 4 of 11" },
+        { "code": "GHAD4010", "title": "Capstone in global health and development (field placement)", "credits": 12, "courseType": "capstone", "group": "Capstone Experience (Years 3–4)" }
+      ]
+    }
+  ]
+}

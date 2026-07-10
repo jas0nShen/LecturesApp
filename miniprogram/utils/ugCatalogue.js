@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T14:32:15.441Z",
+  "generatedAt": "2026-07-10T14:37:10.365Z",
   "universities": [
     {
       "id": "HKU",
@@ -1087,9 +1087,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Interdisciplinary",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-and-sciences-global-health-and-development",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 22,
+      "codedCourseCount": 22,
+      "courseSourceUrl": "https://ghd.sph.hku.hk/major-in-ghd"
     },
     {
       "id": "HKU-UG-6274-31",
@@ -9378,8 +9379,8 @@ const catalogue = {
       "code": "BACHELOR-OF-ARTS-AND-SCIENCES-IN-GLOBAL-HEALTH-A",
       "nameEn": "Bachelor of Arts and Sciences in Global Health and Development",
       "nameZh": "Bachelor of Arts and Sciences in Global Health and Development",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 23,
+      "codedCourseCount": 22,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-and-sciences-global-health-and-development"
     },
     {
@@ -15976,12 +15977,12 @@ const catalogue = {
   "courseShardCounts": {
     "CITYU": 1966,
     "CUHK": 131,
-    "HKU": 1820,
+    "HKU": 1842,
     "HKUST": 121,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 7231
+  "codedCourseCount": 7253
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

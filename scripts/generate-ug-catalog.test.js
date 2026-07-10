@@ -273,8 +273,8 @@ test('UG source coverage report includes generated catalogue supplement coverage
   const lingnan = summary.schools.find((school) => school.code === 'LINGNAN');
 
   assert.equal(summary.totals.programmeCount, 445);
-  assert.equal(summary.totals.codedCourseCount, 7231);
-  assert.equal(summary.totals.programmeWithCoursesCount, 103);
+  assert.equal(summary.totals.codedCourseCount, 7253);
+  assert.equal(summary.totals.programmeWithCoursesCount, 104);
   assert.equal(cityu.programmeWithCoursesCount, 20);
   assert.equal(cityu.codedCourseCount, 1966);
   assert(cityu.courseProgrammes.some((programme) => programme.code === 'JS1001' && programme.codedCourseCount > 0));
@@ -356,7 +356,7 @@ test('UG source coverage report can filter missing programmes by source readines
   assert.equal(normalizeReadinessFilter('reviewed-no-codes'), 'reviewedNoCourseCodes');
   assert.equal(normalizeReadinessFilter('all'), '');
   assert.throws(() => normalizeReadinessFilter('maybe'), /Unknown --readiness/);
-  assert.equal(hku.missingProgrammeCount, 108);
+  assert.equal(hku.missingProgrammeCount, 107);
   assert.equal(hku.filteredMissingProgrammeCount, 10);
   assert.equal(hku.missingProgrammes.length, 3);
   assert(hku.missingProgrammes.every((programme) => !programme.sourceStatus));
@@ -366,7 +366,7 @@ test('UG source coverage report can filter missing programmes by source readines
     'HKU-PKU Dual Degree Programme'
   ]);
   const template = buildMissingCollectorTemplate(summary, args);
-  assert.match(template, /待补 Programme：108/);
+  assert.match(template, /待补 Programme：107/);
   assert.match(template, /当前筛选：no-source · 10 个/);
   assert.match(template, /1\. HKU · 无代码 · HKU-Cambridge Joint Recruitment Scheme \(Engineering\)/);
 });
@@ -399,8 +399,8 @@ test('UG source coverage report can generate a collector template for missing pr
   assert.equal(formatCollectorSourceStatus(missing[0]), '已核实官网暂无公开课程码：2026-07-10');
   assert.match(template, /【本科课程资料待补清单】/);
   assert.match(template, /范围：HKU/);
-  assert.match(template, /待补 Programme：108/);
-  assert.match(template, /来源状态：0 source importable · 0 coded not importable · 96 index only · 2 reviewed no course codes · 10 no source/);
+  assert.match(template, /待补 Programme：107/);
+  assert.match(template, /来源状态：0 source importable · 0 coded not importable · 95 index only · 2 reviewed no course codes · 10 no source/);
   assert.match(template, /6066 · Bachelor of Arts and Bachelor of Education in Language Education - English/);
   assert.match(template, /官方入口：https:\/\/admissions\.hku\.hk\/programmes\/undergraduate-programmes\/bachelor-of-arts-and-bachelor-of-education-language-education/);
   assert.match(template, /不要自行推测课程/);
@@ -436,16 +436,16 @@ test('UG source coverage report can build a grouped missing data batch plan', ()
   const plan = buildMissingBatchPlan(summary, args);
 
   assert.equal(args.batchPlan, true);
-  assert.equal(groups.sourceIndexOnly.length, 150);
+  assert.equal(groups.sourceIndexOnly.length, 149);
   assert.equal(groups.reviewedNoCourseCodes.length, 21);
   assert.equal(groups.noSource.length, 171);
   assert.equal(groups.sourceIndexOnly[0].schoolCode, 'HKU');
-  assert.equal(groups.sourceIndexOnly[0].code, '6250');
+  assert.equal(groups.sourceIndexOnly[0].code, '6274');
   assert.equal(groups.reviewedNoCourseCodes[0].code, 'JS3011');
   assert.equal(groups.reviewedNoCourseCodes[0].sourceReviewStatus, 'no_public_course_codes');
   assert.match(plan, /【本科课程补数批次计划】/);
   assert.match(plan, /A\. 可直接导入候选：0 个/);
-  assert.match(plan, /C\. 需打开官方入口核实课程码：150 个/);
+  assert.match(plan, /C\. 需打开官方入口核实课程码：149 个/);
   assert.match(plan, /D\. 已核实官网暂无公开课程码：21 个/);
   assert.match(plan, /E\. 需先寻找官方来源：171 个/);
   assert.match(plan, /POLYU · JS3011 · Bachelor of Science \(Honours\) Scheme in Biotechnology and Chemical Technology/);

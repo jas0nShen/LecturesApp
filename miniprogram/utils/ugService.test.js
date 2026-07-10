@@ -13,9 +13,9 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.requirementCount, 4);
   assert(summary.courseCount >= 4630);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 7231);
-  assert.equal(summary.programmeWithCoursesCount, 103);
-  assert.equal(summary.pendingProgrammeCount, 341);
+  assert.equal(summary.codedCourseCount, 7253);
+  assert.equal(summary.programmeWithCoursesCount, 104);
+  assert.equal(summary.pendingProgrammeCount, 340);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
@@ -132,7 +132,7 @@ test('UG per-school coverage stays visible for setup validation', () => {
   }));
 
   assert.deepEqual(coverage, {
-    HKU: { programmeCount: 137, majorCount: 137, codedCourseCount: 1820 },
+    HKU: { programmeCount: 137, majorCount: 137, codedCourseCount: 1842 },
     CUHK: { programmeCount: 84, majorCount: 84, codedCourseCount: 131 },
     HKUST: { programmeCount: 50, majorCount: 64, codedCourseCount: 121 },
     POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 2472 },
@@ -153,10 +153,10 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert.equal(coverage.length, 8);
   assert.equal(hku.programmeCount, 136);
   assert.equal(hku.majorCount, 136);
-  assert.equal(hku.programmeWithCoursesCount, 29);
-  assert.equal(hku.pendingProgrammeCount, 107);
-  assert.equal(hku.coveragePercent, 21);
-  assert.equal(hku.codedCourseCount, 1820);
+  assert.equal(hku.programmeWithCoursesCount, 30);
+  assert.equal(hku.pendingProgrammeCount, 106);
+  assert.equal(hku.coveragePercent, 22);
+  assert.equal(hku.codedCourseCount, 1842);
   assert.match(hku.generatedDate, /^\d{4}-\d{2}-\d{2}$/);
   assert.match(hku.updatedLabel, /^更新于 \d{4}-\d{2}-\d{2}$/);
   assert.equal(hku.badge, 'COURSES');
@@ -804,6 +804,25 @@ test('HKU Financial Technology exposes verified core, elective alternatives and 
   )));
   assert(courses.some((course) => course.courseCode === 'FITE4801' && course.credits === 12 && course.courseType === 'capstone'));
   assert(courses.every((course) => course.recommendedYear === 0));
+});
+
+test('HKU Global Health and Development exposes its official 2025-26 major curriculum', () => {
+  const hku = ugService.listUniversities().find((item) => item.code === 'HKU');
+  const programme = ugService.listProgrammes({ universityId: hku.id, degreeLevel: 'undergraduate' })
+    .find((item) => item.code === '6250');
+  const major = ugService.listMajors(programme.id)[0];
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(programme.codedCourseCount, 22);
+  assert.equal(courses.length, 22);
+  assert(courses.some((course) => course.courseCode === 'GHAD1001' && course.recommendedYear === 1));
+  assert(courses.some((course) => (
+    course.courseCode === 'URBS1003'
+    && course.requirementGroups.some((group) => group.includes('select 4 of 11'))
+    && course.recommendedYear === 0
+  )));
+  assert(courses.some((course) => course.courseCode === 'GHAD4010' && course.credits === 12 && course.courseType === 'capstone'));
 });
 
 test('HKU Design+ exposes official studio sequence, BASc core and language alternatives', () => {
