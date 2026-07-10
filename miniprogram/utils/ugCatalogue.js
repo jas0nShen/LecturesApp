@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T16:01:21.344Z",
+  "generatedAt": "2026-07-10T16:03:26.791Z",
   "universities": [
     {
       "id": "HKU",
@@ -3277,9 +3277,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/lingn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 41,
+      "codedCourseCount": 41,
+      "courseSourceUrl": "https://ling.cuhk.edu.hk/programmes/undergraduate-programme/major-programme-in-linguistics/"
     },
     {
       "id": "CUHK-UG-MUSCN-10",
@@ -10544,9 +10545,9 @@ const catalogue = {
       "code": "LINGUISTICS",
       "nameEn": "Linguistics",
       "nameZh": "Linguistics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admission.cuhk.edu.hk/programme/lingn/"
+      "courseCount": 42,
+      "codedCourseCount": 41,
+      "officialUrl": "https://ling.cuhk.edu.hk/programmes/undergraduate-programme/major-programme-in-linguistics/"
     },
     {
       "id": "CUHK-UG-MUSCN-10-M1",
@@ -15991,13 +15992,13 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 2362,
-    "CUHK": 230,
+    "CUHK": 271,
     "HKU": 1842,
     "HKUST": 121,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 7748
+  "codedCourseCount": 7789
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

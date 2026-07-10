@@ -62,6 +62,24 @@ test('CUHK Fine Arts exposes the official BA course pool without treating it as 
   assert(ugService.listMajorCourses(fineArts.id, major.id, { keyword: 'photography' }).some((course) => course.courseCode === 'FAAS2208'));
 });
 
+test('CUHK Linguistics exposes the official 2025/26 course areas and research projects', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const linguistics = programmes.find((programme) => programme.jupasCode === 'JS4070');
+  const major = ugService.listMajors(linguistics.id).find((item) => item.nameEn === 'Linguistics');
+  const profile = ugService.getMajorProfile(linguistics.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(linguistics.id, major.id);
+
+  assert.equal(linguistics.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 41);
+  assert.equal(courses.length, 41);
+  ['LING1000', 'LING2005', 'BMBL2001', 'LING3206', 'LING3403', 'LING4000'].forEach((courseCode) => {
+    assert(courses.some((course) => course.courseCode === courseCode));
+  });
+  assert(courses.some((course) => course.courseCode === 'LING4000' && course.courseType === 'capstone'));
+  assert(ugService.listMajorCourses(linguistics.id, major.id, { keyword: 'information technology' }).some((course) => course.courseCode === 'LING3401'));
+});
+
 test('UG pending source readiness labels summarize index-only catalogue gaps', () => {
   assert.deepEqual(ugService.summarizePendingSourceReadiness([
     { codedCourseCount: 3, sourceStatus: 'course_codes_available' },
