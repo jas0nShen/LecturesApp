@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T03:52:34.447Z",
+  "generatedAt": "2026-07-10T04:07:23.913Z",
   "universities": [
     {
       "id": "HKU",
@@ -6362,9 +6362,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3290",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 40,
+      "codedCourseCount": 40,
+      "courseSourceUrl": "https://www.polyu.edu.hk/so/current-student/syllabi/?sc_lang=en"
     },
     {
       "id": "POLYU-UG-JS3030-38",
@@ -12882,8 +12883,8 @@ const catalogue = {
       "code": "BACHELOR-OF-SCIENCE-HONOURS-IN-OPTOMETRY",
       "nameEn": "Bachelor of Science (Honours) in Optometry",
       "nameZh": "Bachelor of Science (Honours) in Optometry",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 41,
+      "codedCourseCount": 40,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3290"
     },
     {
@@ -15963,9 +15964,9 @@ const catalogue = {
     "HKU": 1511,
     "HKUST": 121,
     "LINGNAN": 721,
-    "POLYU": 2232
+    "POLYU": 2272
   },
-  "codedCourseCount": 6682
+  "codedCourseCount": 6722
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
