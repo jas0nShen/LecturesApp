@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T07:23:59.308Z",
+  "generatedAt": "2026-07-10T07:44:03.866Z",
   "universities": [
     {
       "id": "HKU",
@@ -6405,9 +6405,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3636",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 44,
+      "codedCourseCount": 44,
+      "courseSourceUrl": "https://www.polyu.edu.hk/rs/-/media/department/rs/content/internal/subject-library/undergraduate-programmes/bsc-in-physiotherapy-%2851456%29/prd_bscpt_25cohort_toweb.pdf"
     },
     {
       "id": "POLYU-UG-JS3236-40",
@@ -12916,8 +12917,8 @@ const catalogue = {
       "code": "BACHELOR-OF-SCIENCE-HONOURS-IN-PHYSIOTHERAPY",
       "nameEn": "Bachelor of Science (Honours) in Physiotherapy",
       "nameZh": "Bachelor of Science (Honours) in Physiotherapy",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 45,
+      "codedCourseCount": 44,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3636"
     },
     {
@@ -15967,9 +15968,9 @@ const catalogue = {
     "HKU": 1511,
     "HKUST": 121,
     "LINGNAN": 721,
-    "POLYU": 2347
+    "POLYU": 2391
   },
-  "codedCourseCount": 6797
+  "codedCourseCount": 6841
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
