@@ -13,9 +13,9 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.requirementCount, 4);
   assert(summary.courseCount >= 4630);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 6945);
-  assert.equal(summary.programmeWithCoursesCount, 96);
-  assert.equal(summary.pendingProgrammeCount, 348);
+  assert.equal(summary.codedCourseCount, 7008);
+  assert.equal(summary.programmeWithCoursesCount, 97);
+  assert.equal(summary.pendingProgrammeCount, 347);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
@@ -132,7 +132,7 @@ test('UG per-school coverage stays visible for setup validation', () => {
   }));
 
   assert.deepEqual(coverage, {
-    HKU: { programmeCount: 137, majorCount: 137, codedCourseCount: 1534 },
+    HKU: { programmeCount: 137, majorCount: 137, codedCourseCount: 1597 },
     CUHK: { programmeCount: 84, majorCount: 84, codedCourseCount: 131 },
     HKUST: { programmeCount: 50, majorCount: 64, codedCourseCount: 121 },
     POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 2472 },
@@ -153,10 +153,10 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert.equal(coverage.length, 8);
   assert.equal(hku.programmeCount, 136);
   assert.equal(hku.majorCount, 136);
-  assert.equal(hku.programmeWithCoursesCount, 22);
-  assert.equal(hku.pendingProgrammeCount, 114);
-  assert.equal(hku.coveragePercent, 16);
-  assert.equal(hku.codedCourseCount, 1534);
+  assert.equal(hku.programmeWithCoursesCount, 23);
+  assert.equal(hku.pendingProgrammeCount, 113);
+  assert.equal(hku.coveragePercent, 17);
+  assert.equal(hku.codedCourseCount, 1597);
   assert.match(hku.generatedDate, /^\d{4}-\d{2}-\d{2}$/);
   assert.match(hku.updatedLabel, /^更新于 \d{4}-\d{2}-\d{2}$/);
   assert.equal(hku.badge, 'COURSES');
@@ -706,6 +706,24 @@ test('HKU BA and LLB exposes official core law and interdisciplinary courses', (
   assert(courses.some((course) => course.courseCode === 'LLAW1016' && course.recommendedYear === 1 && course.credits === 6));
   assert(courses.some((course) => course.courseCode === 'LALS2001' && course.recommendedYear === 2));
   assert(courses.some((course) => course.courseCode === 'LALS5001' && course.courseType === 'capstone'));
+});
+
+test('HKU Chinese language education exposes the official Chinese major course pool', () => {
+  const hku = ugService.listUniversities().find((item) => item.code === 'HKU');
+  const programme = ugService.listProgrammes({ universityId: hku.id, degreeLevel: 'undergraduate' })
+    .find((item) => item.code === '6080');
+  const major = ugService.listMajors(programme.id)[0];
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(programme.codedCourseCount, 63);
+  assert.equal(courses.length, 63);
+  assert(courses.some((course) => course.courseCode === 'CHIN1116' && course.credits === 6));
+  assert(courses.some((course) => course.courseCode === 'CHIN2162' && course.recommendedYear === 2));
+  assert(courses.some((course) => course.courseCode === 'CHIN4101' && course.courseType === 'capstone'));
+  assert.equal(profile.programme.courseSourceUrl, 'https://web.chinese.hku.hk/en/undergraduate/programme_information/');
+  assert(courses.every((course) => course.sourceUrl === 'https://web.chinese.hku.hk/en/undergraduate/programme_information/'));
 });
 
 test('HKU Computing and Data Science catalogue profiles expose official course offerings', () => {

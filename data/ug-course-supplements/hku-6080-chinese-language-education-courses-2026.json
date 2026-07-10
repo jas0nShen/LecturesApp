@@ -1,0 +1,20 @@
+{
+  "provider": "HKU School of Chinese and Faculty of Education curriculum pages",
+  "academicYear": "2026",
+  "sourceUrl": "https://web.chinese.hku.hk/en/undergraduate/programme_information/",
+  "officialUrl": "https://web.edu.hku.hk/programme/babed_chi_6080/curriculum",
+  "supplements": [
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6080",
+      "majorName": "Bachelor of Arts and Bachelor of Education in Language Education - Chinese",
+      "sourceUrl": "https://web.chinese.hku.hk/en/undergraduate/programme_information/",
+      "officialUrl": "https://web.edu.hku.hk/programme/babed_chi_6080/curriculum",
+      "copyCoursesFrom": {
+        "universityCode": "HKU",
+        "programmeCode": "6054",
+        "majorName": "Chinese Language and Literature"
+      }
+    }
+  ]
+}

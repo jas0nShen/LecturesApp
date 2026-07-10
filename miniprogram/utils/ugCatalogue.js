@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T08:51:31.591Z",
+  "generatedAt": "2026-07-10T09:04:55.530Z",
   "universities": [
     {
       "id": "HKU",
@@ -928,9 +928,10 @@ const catalogue = {
       "studyPeriod": "5-year",
       "type": "Double Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-and-bachelor-of-education-language-education-0",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 63,
+      "codedCourseCount": 63,
+      "courseSourceUrl": "https://web.chinese.hku.hk/en/undergraduate/programme_information/"
     },
     {
       "id": "HKU-UG-6092-23",
@@ -9291,9 +9292,9 @@ const catalogue = {
       "code": "BACHELOR-OF-ARTS-AND-BACHELOR-OF-EDUCATION-IN-LA",
       "nameEn": "Bachelor of Arts and Bachelor of Education in Language Education - Chinese",
       "nameZh": "Bachelor of Arts and Bachelor of Education in Language Education - Chinese",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-and-bachelor-of-education-language-education-0"
+      "courseCount": 64,
+      "codedCourseCount": 63,
+      "officialUrl": "https://web.edu.hku.hk/programme/babed_chi_6080/curriculum"
     },
     {
       "id": "HKU-UG-6092-23-M1",
@@ -15969,12 +15970,12 @@ const catalogue = {
   "courseShardCounts": {
     "CITYU": 1966,
     "CUHK": 131,
-    "HKU": 1534,
+    "HKU": 1597,
     "HKUST": 121,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 6945
+  "codedCourseCount": 7008
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
