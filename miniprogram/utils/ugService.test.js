@@ -127,6 +127,25 @@ test('CUHK History exposes the verified 2025/26 required and capstone courses', 
   assert(ugService.listMajorCourses(history.id, major.id, { keyword: 'Western History' }).some((course) => course.courseCode === 'HIST1002'));
 });
 
+test('HKUST Aerospace Engineering exposes the verified 2025/26 major core', () => {
+  const hkust = ugService.listUniversities().find((item) => item.code === 'HKUST');
+  const programmes = ugService.listProgrammes({ universityId: hkust.id, degreeLevel: 'undergraduate' });
+  const aerospace = programmes.find((programme) => programme.nameEn === 'BEng in Aerospace Engineering');
+  const major = ugService.listMajors(aerospace.id).find((item) => item.nameEn === 'BEng in Aerospace Engineering');
+  const profile = ugService.getMajorProfile(aerospace.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(aerospace.id, major.id);
+
+  assert.equal(aerospace.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 20);
+  assert.equal(courses.length, 20);
+  ['MECH1910', 'MECH2007', 'MECH3640', 'MECH3690', 'MECH4980'].forEach((courseCode) => {
+    assert(courses.some((course) => course.courseCode === courseCode));
+  });
+  assert(courses.some((course) => course.courseCode === 'MECH1990' && course.courseType === 'internship'));
+  assert(courses.some((course) => course.courseCode === 'MECH4980' && course.courseType === 'capstone'));
+  assert(ugService.listMajorCourses(aerospace.id, major.id, { keyword: 'Aerodynamics' }).some((course) => course.courseCode === 'MECH3640'));
+});
+
 test('UG pending source readiness labels summarize index-only catalogue gaps', () => {
   assert.deepEqual(ugService.summarizePendingSourceReadiness([
     { codedCourseCount: 3, sourceStatus: 'course_codes_available' },

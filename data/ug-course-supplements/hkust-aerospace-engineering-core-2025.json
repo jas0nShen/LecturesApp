@@ -1,0 +1,36 @@
+{
+  "provider": "HKUST 2025/26 BEng in Aerospace Engineering program and course catalog",
+  "academicYear": "2025/26",
+  "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/AE",
+  "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26ae.pdf",
+  "supplements": [
+    {
+      "universityCode": "HKUST",
+      "programmeName": "BEng in Aerospace Engineering",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/AE",
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26ae.pdf",
+      "courses": [
+        { "code": "MECH1001", "title": "Academic and Professional Development I", "credits": 0, "year": 1, "group": "major required" },
+        { "code": "MECH1910", "title": "Foundations of Mechanical and Aerospace Engineering", "credits": 3, "year": 1, "group": "major required" },
+        { "code": "MECH1990", "title": "Industrial Training", "credits": 0, "year": 2, "group": "internship" },
+        { "code": "MECH2002", "title": "Academic and Professional Development II", "credits": 0, "year": 2, "group": "major required" },
+        { "code": "MECH2007", "title": "Aerospace Engineering: Principles and Systems", "credits": 3, "year": 2, "group": "major required" },
+        { "code": "MECH2020", "title": "Statics and Dynamics", "credits": 3, "year": 2, "group": "major required" },
+        { "code": "MECH2040", "title": "Solid Mechanics I", "credits": 3, "year": 2, "group": "major required" },
+        { "code": "MECH2210", "title": "Fluid Mechanics", "credits": 3, "year": 2, "group": "major required" },
+        { "code": "MECH2310", "title": "Thermodynamics", "credits": 3, "year": 2, "group": "major required" },
+        { "code": "ELEC2420", "title": "Basic Electronics", "credits": 3, "year": 2, "group": "major required" },
+        { "code": "MECH3400", "title": "Introduction to Composite Materials", "credits": 3, "year": 3, "group": "major required" },
+        { "code": "MECH3610", "title": "Control Principles", "credits": 3, "year": 3, "group": "major required" },
+        { "code": "MECH3620", "title": "Aircraft Design", "credits": 3, "year": 3, "group": "major required" },
+        { "code": "MECH3640", "title": "Aerodynamics", "credits": 3, "year": 3, "group": "major required" },
+        { "code": "MECH3650", "title": "Aircraft Structural Analysis", "credits": 3, "year": 3, "group": "major required" },
+        { "code": "MECH3660", "title": "Gas Turbines and Jet Propulsion", "credits": 3, "year": 3, "group": "major required" },
+        { "code": "MECH3670", "title": "Aircraft Performance and Stability", "credits": 3, "year": 3, "group": "major required" },
+        { "code": "MECH3680", "title": "Avionics Systems", "credits": 3, "year": 3, "group": "major required" },
+        { "code": "MECH3690", "title": "Aerospace Engineering Laboratory", "credits": 3, "year": 3, "group": "major required" },
+        { "code": "MECH4980", "title": "Final Year Aerospace Design Project", "credits": 6, "year": 4, "group": "capstone" }
+      ]
+    }
+  ]
+}

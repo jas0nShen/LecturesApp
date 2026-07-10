@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T16:09:20.945Z",
+  "generatedAt": "2026-07-10T16:15:01.159Z",
   "universities": [
     {
       "id": "HKU",
@@ -4729,9 +4729,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BEng in Aerospace Engineering",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-engineering/aerospace-engineering",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 20,
+      "codedCourseCount": 20,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/AE"
     },
     {
       "id": "HKUST-UG-JS5240-DEPARTMENT-OF-COMPUTER-SCIENCE-AND-ENGINE-2",
@@ -11307,9 +11308,9 @@ const catalogue = {
       "code": "BENG-IN-AEROSPACE-ENGINEERING",
       "nameEn": "BEng in Aerospace Engineering",
       "nameZh": "BEng in Aerospace Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-engineering/aerospace-engineering"
+      "courseCount": 21,
+      "codedCourseCount": 20,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26ae.pdf"
     },
     {
       "id": "HKUST-UG-JS5240-DEPARTMENT-OF-COMPUTER-SCIENCE-AND-ENGINE-2-M1",
@@ -15996,11 +15997,11 @@ const catalogue = {
     "CITYU": 2362,
     "CUHK": 294,
     "HKU": 1842,
-    "HKUST": 121,
+    "HKUST": 141,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 7812
+  "codedCourseCount": 7832
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
