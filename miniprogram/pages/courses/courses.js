@@ -374,6 +374,10 @@ Page({
     wx.navigateTo({ url: `/pages/course-detail/course-detail?id=${event.currentTarget.dataset.id}` });
   },
 
+  goUgDetail(event) {
+    wx.navigateTo({ url: `/pages/course-detail/course-detail?ugId=${event.currentTarget.dataset.id}` });
+  },
+
   goOfferingDetail(event) {
     wx.navigateTo({
       url: `/pages/offering-detail/offering-detail?code=${event.currentTarget.dataset.code}`

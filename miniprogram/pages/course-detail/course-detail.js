@@ -1,4 +1,5 @@
 const service = require('../../utils/courseService');
+const ugService = require('../../utils/ugService');
 
 Page({
   data: {
@@ -6,10 +7,23 @@ Page({
     typeLabel: '',
     favorite: false,
     completed: false,
-    dataSource: 'loading'
+    dataSource: 'loading',
+    isUgCourse: false
   },
 
   async onLoad(options) {
+    if (options.ugId) {
+      const course = ugService.getCatalogueCourse(options.ugId);
+      this.setData({
+        course,
+        typeLabel: course ? service.TYPE_LABELS[course.courseType] : '',
+        favorite: false,
+        completed: false,
+        dataSource: '本科本地资料库',
+        isUgCourse: true
+      });
+      return;
+    }
     const result = await service.getCourseRemote(options.id);
     const course = result.data;
     if (course) service.recordRecentlyViewed(course.courseCode);
@@ -18,7 +32,8 @@ Page({
       typeLabel: course ? service.TYPE_LABELS[course.courseType] : '',
       favorite: service.isFavorite(options.id),
       completed: service.getCompletedCourseIds().includes(Number(options.id)),
-      dataSource: result.source
+      dataSource: result.source,
+      isUgCourse: false
     });
   },
 

@@ -239,6 +239,11 @@ function listMajorCourses(programmeId, majorId, filters = {}) {
   });
 }
 
+function getCatalogueCourse(courseId) {
+  const id = String(courseId || '');
+  return ugCourseShards.listAllCourses().find((course) => String(course.id) === id) || null;
+}
+
 function getMajorProfile(programmeId, majorId, curriculumYear) {
   const programme = getProgramme(programmeId);
   const major = getMajor(majorId);
@@ -479,6 +484,7 @@ module.exports = {
   buildPendingCollectionText,
   formatPendingSourceReadiness,
   getCatalogueSummary,
+  getCatalogueCourse,
   getFaculty,
   getMajor,
   getMajorProfile,

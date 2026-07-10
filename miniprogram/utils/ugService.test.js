@@ -889,6 +889,16 @@ test('UG course and major search support the next import workflow', () => {
   assert.equal(ugService.getMajorProfile(1, 999), null);
 });
 
+test('UG catalogue courses can be resolved by their stable card id', () => {
+  const programme = ugService.listProgrammes({ universityCode: 'HKU' })
+    .find((item) => item.code === '6004');
+  const major = ugService.listMajors(programme.id)[0];
+  const course = ugService.listMajorCourses(programme.id, major.id)[0];
+
+  assert.deepEqual(ugService.getCatalogueCourse(course.id), course);
+  assert.equal(ugService.getCatalogueCourse('not-a-real-course'), null);
+});
+
 test('imported UG programme profiles preserve source status without faking course rules', () => {
   const hku = ugService.listUniversities().find((item) => item.code === 'HKU');
   const programmes = ugService.listProgrammes({ universityId: hku.id, degreeLevel: 'undergraduate' });

@@ -114,7 +114,7 @@
     </view>
 
     <view class="section">
-      <view wx:for="{{ugCourses}}" wx:key="id" class="course-card">
+      <view wx:for="{{ugCourses}}" wx:key="id" class="course-card" data-id="{{item.id}}" bindtap="goUgDetail">
         <view class="row">
           <view class="code">{{item.courseCode}}</view>
           <view class="term-badge">{{item.semester}}</view>
