@@ -47,6 +47,50 @@
         { "code": "ENG4001", "title": "Project Management", "credits": 3, "year": 4, "semester": "Sem 2", "group": "Programme compulsory subjects" },
         { "code": "ISE461", "title": "Green Legislation and Supply Chain Logistics", "credits": 3, "year": 4, "semester": "Sem 2", "group": "Programme compulsory subjects" }
       ]
+    },
+    {
+      "universityCode": "POLYU",
+      "programmeCode": "JS3237",
+      "majorName": "Engineering Management with Data Analytics",
+      "sourceUrl": "https://www.polyu.edu.hk/ise/study/undergraduate-programmes/bsc-hons-scheme-in-intelligent-supply-chain-and-engineering-management/bachelor-of-science-honours-in-engineering-management-with-data-analytics/programme-curriculum/",
+      "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3237",
+      "courses": [
+        { "code": "ENG1004", "title": "Engineering Professionals in Society I", "credits": 1, "year": 1, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "APSS1L01", "title": "Tomorrow's Leader", "credits": 3, "year": 1, "semester": "Sem 1", "group": "General University Requirements" },
+        { "code": "ENG2003", "title": "Information Technology", "credits": 3, "year": 1, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "AMA1110", "title": "Basic Mathematics I - Calculus and Probability and Statistics", "credits": 3, "year": 1, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "ISE2117", "title": "Applied Engineering Fundamentals", "credits": 1, "year": 1, "semester": "Sem 1 & Sem 2", "group": "Work-Integrated Education" },
+        { "code": "MM1031", "title": "Introduction to Innovation and Entrepreneurship", "credits": 1, "year": 1, "semester": "Sem 2", "group": "General University Requirements" },
+        { "code": "ISE1001", "title": "Basic Artificial Intelligence and Data Analytics for Efficiency and Effectiveness in Daily Life", "credits": 2, "year": 1, "semester": "Sem 2", "group": "General University Requirements" },
+        { "code": "ENG2002", "title": "Computer Programming", "credits": 3, "year": 1, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "AMA1120", "title": "Basic Mathematics II - Calculus and Linear Algebra", "credits": 3, "year": 1, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "ISE2003", "title": "Introduction to Intelligent Supply Chain", "credits": 3, "year": 2, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "MM2021", "title": "Management and Organization", "credits": 3, "year": 2, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "MM2711", "title": "Introduction to Marketing", "credits": 3, "year": 2, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "ISE318", "title": "Industrial Engineering Technique and Methods", "credits": 3, "year": 2, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "ISE328", "title": "Technology and Applications of E-Business Systems", "credits": 3, "year": 2, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "AF2111", "title": "Accounting for Decision Making", "credits": 3, "year": 2, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "AF3513", "title": "Business Law", "credits": 3, "year": 2, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "LGT3029", "title": "Shipping and Transport Logistics Operations", "credits": 3, "year": 2, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "ISE247", "title": "Fundamental of Enterprise Systems", "credits": 3, "year": 2, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "ISE2136", "title": "Industrial Safety and Web Intelligence", "credits": 1, "year": 2, "semester": "Sem 2", "group": "Work-Integrated Education" },
+        { "code": "AF3625", "title": "Engineering Economics", "credits": 3, "year": 3, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "ENG3003", "title": "Engineering Management", "credits": 3, "year": 3, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "ISE3011", "title": "Applied Quality and Reliability with AIDA", "credits": 3, "year": 3, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "ISE3022", "title": "Digital Transformation with Advanced Technology", "credits": 3, "year": 3, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "ISE4028", "title": "Business Process Management and Innovation I", "credits": 2, "year": 3, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "ISE3104", "title": "Integrated Multidisciplinary Project", "credits": 2, "year": 3, "semester": "Sem 1 & Sem 2", "group": "Work-Integrated Education" },
+        { "code": "ELC3531", "title": "Professional Communication in English for Engineering Students", "credits": 2, "year": 3, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "ISE3017", "title": "Applied AIDA in Operations Research and Management", "credits": 3, "year": 3, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "ISE4029", "title": "Business Process Management and Innovation II", "credits": 2, "year": 3, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "ISE4025", "title": "Enterprise Analytics", "credits": 3, "year": 4, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "ISE4027", "title": "Business Intelligence for Supply Chain", "credits": 3, "year": 4, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "ISE4004", "title": "Enterprise Resources Planning", "credits": 3, "year": 4, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "MM4311", "title": "Strategic Management", "credits": 3, "year": 4, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "ISE4008", "title": "Individual Project", "credits": 3, "year": 4, "semester": "Sem 1 & Sem 2", "group": "Capstone Project" },
+        { "code": "ENG4001", "title": "Project Management", "credits": 3, "year": 4, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "ISE431", "title": "Engineering Costing and Evaluation", "credits": 3, "year": 4, "semester": "Sem 2", "group": "Programme compulsory subjects" }
+      ]
     }
   ]
 }

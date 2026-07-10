@@ -13,7 +13,7 @@ const counts = {
   "HKU": 1511,
   "HKUST": 121,
   "LINGNAN": 721,
-  "POLYU": 1940
+  "POLYU": 1975
 };
 const cache = {};
 

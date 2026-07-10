@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T03:19:29.043Z",
+  "generatedAt": "2026-07-10T03:24:01.963Z",
   "universities": [
     {
       "id": "HKU",
@@ -6187,9 +6187,9 @@ const catalogue = {
       "type": "",
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3237",
       "sourceStatus": "course_codes_available",
-      "courseCount": 35,
-      "codedCourseCount": 35,
-      "courseSourceUrl": "https://www.polyu.edu.hk/ise/study/undergraduate-programmes/bsc-hons-scheme-in-intelligent-supply-chain-and-engineering-management/bachelor-of-science-honours-in-intelligent-supply-chain/programme-curriculum/"
+      "courseCount": 70,
+      "codedCourseCount": 70,
+      "courseSourceUrl": "https://www.polyu.edu.hk/ise/study/undergraduate-programmes/bsc-hons-scheme-in-intelligent-supply-chain-and-engineering-management/bachelor-of-science-honours-in-engineering-management-with-data-analytics/programme-curriculum/"
     },
     {
       "id": "POLYU-UG-JS3000-29",
@@ -12758,8 +12758,8 @@ const catalogue = {
       "code": "ENGINEERING-MANAGEMENT-WITH-DATA-ANALYTICS",
       "nameEn": "Engineering Management with Data Analytics",
       "nameZh": "Engineering Management with Data Analytics",
-      "courseCount": 5,
-      "codedCourseCount": 0,
+      "courseCount": 40,
+      "codedCourseCount": 35,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3237"
     },
     {
@@ -15959,9 +15959,9 @@ const catalogue = {
     "HKU": 1511,
     "HKUST": 121,
     "LINGNAN": 721,
-    "POLYU": 1940
+    "POLYU": 1975
   },
-  "codedCourseCount": 6390
+  "codedCourseCount": 6425
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
