@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T17:21:40.050Z",
+  "generatedAt": "2026-07-10T18:31:40.716Z",
   "universities": [
     {
       "id": "HKU",
@@ -4849,9 +4849,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BSc in Biotechnology and Business",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/joint-school-program/biotechnology-and-business",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 44,
+      "codedCourseCount": 44,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/BIBU"
     },
     {
       "id": "HKUST-UG-BUSINESS-WITH-EXTENDED-MAJOR-IN-ARTIFICIAL-INTEL-8",
@@ -11375,9 +11376,9 @@ const catalogue = {
       "code": "BSC-IN-BIOTECHNOLOGY-AND-BUSINESS",
       "nameEn": "BSc in Biotechnology and Business",
       "nameZh": "BSc in Biotechnology and Business",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/joint-school-program/biotechnology-and-business"
+      "courseCount": 45,
+      "codedCourseCount": 44,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26bibu.pdf"
     },
     {
       "id": "HKUST-UG-BUSINESS-WITH-EXTENDED-MAJOR-IN-ARTIFICIAL-INTEL-8-M1",
@@ -16004,11 +16005,11 @@ const catalogue = {
     "CITYU": 2362,
     "CUHK": 294,
     "HKU": 1842,
-    "HKUST": 413,
+    "HKUST": 457,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 8104
+  "codedCourseCount": 8148
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
