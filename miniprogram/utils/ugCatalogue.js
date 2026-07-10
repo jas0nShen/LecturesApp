@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T07:44:03.866Z",
+  "generatedAt": "2026-07-10T07:53:15.219Z",
   "universities": [
     {
       "id": "HKU",
@@ -5879,9 +5879,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3739",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 4,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 3,
+      "codedCourseCount": 3,
+      "courseSourceUrl": "https://www.polyu.edu.hk/ic/study/learning-activities/cohort2526/cee/?sc_lang=en"
     },
     {
       "id": "POLYU-UG-JS3006-13",
@@ -12117,8 +12118,8 @@ const catalogue = {
       "code": "BACHELOR-OF-ENGINEERING-HONOURS-IN-CIVIL-ENGINEE",
       "nameEn": "Bachelor of Engineering (Honours) in Civil Engineering",
       "nameZh": "Bachelor of Engineering (Honours) in Civil Engineering",
-      "courseCount": 4,
-      "codedCourseCount": 0,
+      "courseCount": 7,
+      "codedCourseCount": 3,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3739"
     },
     {
@@ -15968,9 +15969,9 @@ const catalogue = {
     "HKU": 1511,
     "HKUST": 121,
     "LINGNAN": 721,
-    "POLYU": 2391
+    "POLYU": 2394
   },
-  "codedCourseCount": 6841
+  "codedCourseCount": 6844
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

@@ -50941,5 +50941,71 @@ module.exports = [
     "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3636",
     "sourceProvider": "PolyU Rehabilitation Sciences BSc Physiotherapy Programme Requirement Document 2025/26",
     "academicYear": "2025-26"
+  },
+  {
+    "id": "POLYU-UG-JS3739-12-M1-SUP-CSE2706-1",
+    "programmeId": "POLYU-UG-JS3739-12",
+    "majorId": "POLYU-UG-JS3739-12-M1",
+    "courseCode": "CSE2706",
+    "titleEn": "Smart Construction Practices and Safety",
+    "titleZh": "Smart Construction Practices and Safety",
+    "credits": 2,
+    "recommendedYear": 2,
+    "semester": "Semester 1",
+    "courseType": "internship",
+    "requirementGroups": [
+      "Practical training modules"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://www.polyu.edu.hk/ic/study/learning-activities/cohort2526/cee/?sc_lang=en",
+    "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3739",
+    "sourceProvider": "PolyU Industrial Centre CEE Cohort 2025/26 Training Table",
+    "academicYear": "2026"
+  },
+  {
+    "id": "POLYU-UG-JS3739-12-M1-SUP-CSE2707-2",
+    "programmeId": "POLYU-UG-JS3739-12",
+    "majorId": "POLYU-UG-JS3739-12-M1",
+    "courseCode": "CSE2707",
+    "titleEn": "Building Information Modelling (BIM) Basic & Structure",
+    "titleZh": "Building Information Modelling (BIM) Basic & Structure",
+    "credits": 1,
+    "recommendedYear": 2,
+    "semester": "Semester 2",
+    "courseType": "internship",
+    "requirementGroups": [
+      "Practical training modules"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://www.polyu.edu.hk/ic/study/learning-activities/cohort2526/cee/?sc_lang=en",
+    "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3739",
+    "sourceProvider": "PolyU Industrial Centre CEE Cohort 2025/26 Training Table",
+    "academicYear": "2026"
+  },
+  {
+    "id": "POLYU-UG-JS3739-12-M1-SUP-CSE2708-3",
+    "programmeId": "POLYU-UG-JS3739-12",
+    "majorId": "POLYU-UG-JS3739-12-M1",
+    "courseCode": "CSE2708",
+    "titleEn": "Building Information Modelling (BIM) Management",
+    "titleZh": "Building Information Modelling (BIM) Management",
+    "credits": 1,
+    "recommendedYear": 4,
+    "semester": "Semester 1 / Semester 2",
+    "courseType": "internship",
+    "requirementGroups": [
+      "Practical training modules"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://www.polyu.edu.hk/ic/study/learning-activities/cohort2526/cee/?sc_lang=en",
+    "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3739",
+    "sourceProvider": "PolyU Industrial Centre CEE Cohort 2025/26 Training Table",
+    "academicYear": "2026"
   }
 ];

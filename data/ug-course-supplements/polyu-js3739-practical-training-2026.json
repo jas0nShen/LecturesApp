@@ -1,0 +1,20 @@
+{
+  "provider": "PolyU Industrial Centre CEE Cohort 2025/26 Training Table",
+  "academicYear": "2026",
+  "sourceUrl": "https://www.polyu.edu.hk/ic/study/learning-activities/cohort2526/cee/?sc_lang=en",
+  "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3739",
+  "supplements": [
+    {
+      "universityCode": "POLYU",
+      "programmeCode": "JS3739",
+      "majorName": "Bachelor of Engineering (Honours) in Civil Engineering",
+      "sourceUrl": "https://www.polyu.edu.hk/ic/study/learning-activities/cohort2526/cee/?sc_lang=en",
+      "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3739",
+      "courses": [
+        { "code": "CSE2706", "title": "Smart Construction Practices and Safety", "credits": 2, "recommendedYear": 2, "semester": "Semester 1", "courseType": "internship", "group": "Practical training modules" },
+        { "code": "CSE2707", "title": "Building Information Modelling (BIM) Basic & Structure", "credits": 1, "recommendedYear": 2, "semester": "Semester 2", "courseType": "internship", "group": "Practical training modules" },
+        { "code": "CSE2708", "title": "Building Information Modelling (BIM) Management", "credits": 1, "recommendedYear": 4, "semester": "Semester 1 / Semester 2", "courseType": "internship", "group": "Practical training modules" }
+      ]
+    }
+  ]
+}
