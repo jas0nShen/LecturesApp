@@ -13,7 +13,7 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.requirementCount, 4);
   assert(summary.courseCount >= 4630);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 6852);
+  assert.equal(summary.codedCourseCount, 6911);
   assert.equal(summary.programmeWithCoursesCount, 94);
   assert.equal(summary.pendingProgrammeCount, 350);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
@@ -135,7 +135,7 @@ test('UG per-school coverage stays visible for setup validation', () => {
     HKU: { programmeCount: 137, majorCount: 137, codedCourseCount: 1511 },
     CUHK: { programmeCount: 84, majorCount: 84, codedCourseCount: 131 },
     HKUST: { programmeCount: 50, majorCount: 64, codedCourseCount: 121 },
-    POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 2402 },
+    POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 2461 },
     CITYU: { programmeCount: 58, majorCount: 201, codedCourseCount: 1966 },
     HKBU: { programmeCount: 22, majorCount: 46, codedCourseCount: 0 },
     EDUHK: { programmeCount: 25, majorCount: 25, codedCourseCount: 0 },
@@ -171,7 +171,7 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert.equal(polyu.programmeWithCoursesCount, 26);
   assert.equal(polyu.pendingProgrammeCount, 20);
   assert.equal(polyu.coveragePercent, 57);
-  assert.equal(polyu.codedCourseCount, 2402);
+  assert.equal(polyu.codedCourseCount, 2461);
   assert.equal(polyu.badge, 'COURSES');
   assert.equal(polyu.sourceReadiness.indexOnly, polyu.pendingProgrammeCount);
   assert.equal(cityu.programmeWithCoursesCount, 20);
@@ -658,19 +658,25 @@ test('PolyU Civil Engineering exposes verified practical training modules', () =
   assert(courses.some((course) => course.courseCode === 'CSE2708' && course.recommendedYear === 4 && course.courseType === 'internship'));
 });
 
-test('PolyU Mechanical Engineering scheme exposes shared official practical training', () => {
+test('PolyU Mechanical Engineering scheme exposes official core courses and practical training', () => {
   const polyu = ugService.listUniversities().find((item) => item.code === 'POLYU');
   const programme = ugService.listProgrammes({ universityId: polyu.id, degreeLevel: 'undergraduate' })
     .find((item) => item.code === 'JS3741');
   const majors = ugService.listMajors(programme.id);
 
   assert.equal(programme.sourceStatus, 'course_codes_available');
-  assert.equal(programme.codedCourseCount, 8);
-  majors.forEach((major) => {
-    const courses = ugService.listMajorCourses(programme.id, major.id);
-    assert.equal(courses.length, 4);
-    assert(courses.some((course) => course.courseCode === 'ME39003' && course.courseType === 'internship' && course.credits === 3));
-  });
+  assert.equal(programme.codedCourseCount, 67);
+  const robotics = majors.find((major) => major.nameEn === 'Intelligent Robotics Engineering');
+  const mechanical = majors.find((major) => major.nameEn === 'Mechanical Engineering');
+  const roboticsCourses = ugService.listMajorCourses(programme.id, robotics.id);
+  const mechanicalCourses = ugService.listMajorCourses(programme.id, mechanical.id);
+
+  assert.equal(roboticsCourses.length, 34);
+  assert.equal(mechanicalCourses.length, 33);
+  assert(roboticsCourses.some((course) => course.courseCode === 'ME39003' && course.courseType === 'internship' && course.credits === 3));
+  assert(roboticsCourses.some((course) => course.courseCode === 'ME42011' && course.recommendedYear === 4 && course.semester === 'Semester 2'));
+  assert(mechanicalCourses.some((course) => course.courseCode === 'ME34004' && course.recommendedYear === 3 && course.semester === 'Semester 2'));
+  assert(mechanicalCourses.some((course) => course.courseCode === 'ME49001' && course.courseType === 'capstone' && course.credits === 6));
 });
 
 test('HKU Computing and Data Science catalogue profiles expose official course offerings', () => {

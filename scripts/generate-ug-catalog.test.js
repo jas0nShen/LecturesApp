@@ -273,7 +273,7 @@ test('UG source coverage report includes generated catalogue supplement coverage
   const lingnan = summary.schools.find((school) => school.code === 'LINGNAN');
 
   assert.equal(summary.totals.programmeCount, 445);
-  assert.equal(summary.totals.codedCourseCount, 6852);
+  assert.equal(summary.totals.codedCourseCount, 6911);
   assert.equal(summary.totals.programmeWithCoursesCount, 94);
   assert.equal(cityu.programmeWithCoursesCount, 20);
   assert.equal(cityu.codedCourseCount, 1966);
