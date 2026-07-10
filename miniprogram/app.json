@@ -19,7 +19,8 @@
     "pages/profile/profile"
   ],
   "subpackages": [
-    { "root": "subpackages/ug-data-cityu", "name": "ug-data-cityu", "pages": ["pages/loader/index"] },
+    { "root": "subpackages/ug-data-cityu-a", "name": "ug-data-cityu-a", "pages": ["pages/loader/index"] },
+    { "root": "subpackages/ug-data-cityu-b", "name": "ug-data-cityu-b", "pages": ["pages/loader/index"] },
     { "root": "subpackages/ug-data-cuhk", "name": "ug-data-cuhk", "pages": ["pages/loader/index"] },
     { "root": "subpackages/ug-data-hku", "name": "ug-data-hku", "pages": ["pages/loader/index"] },
     { "root": "subpackages/ug-data-hkust", "name": "ug-data-hkust", "pages": ["pages/loader/index"] },

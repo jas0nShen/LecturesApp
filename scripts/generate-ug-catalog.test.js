@@ -7,6 +7,7 @@ const {
   addGenericCourseSupplements,
   buildStaticCatalogue,
   groupCoursesByUniversity,
+  splitCourseShardEntries,
   validateSourceDir
 } = require('./generate-ug-catalog');
 const {
@@ -866,4 +867,10 @@ test('UG catalogue generator groups course shards by programme university', () =
   assert.deepEqual([...grouped.keys()].sort(), ['CITYU', 'HKU']);
   assert.deepEqual(grouped.get('CITYU').map((course) => course.courseCode), ['CB2100', 'CB2200']);
   assert.deepEqual(grouped.get('HKU').map((course) => course.courseCode), ['COMP2119']);
+});
+
+test('CityU course rows are split into two generated subpackage shards', () => {
+  const entries = splitCourseShardEntries(new Map([['CITYU', Array.from({ length: 5 }, (_, index) => ({ id: index }))]]));
+  assert.deepEqual(entries.map((entry) => entry.shardName), ['cityu-a', 'cityu-b']);
+  assert.deepEqual(entries.map((entry) => entry.courses.length), [3, 2]);
 });

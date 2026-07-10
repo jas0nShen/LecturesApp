@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T15:45:49.589Z",
+  "generatedAt": "2026-07-10T15:49:06.925Z",
   "universities": [
     {
       "id": "HKU",
