@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T04:07:23.913Z",
+  "generatedAt": "2026-07-10T04:15:45.080Z",
   "universities": [
     {
       "id": "HKU",
@@ -6130,9 +6130,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3310",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 8,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 12,
+      "codedCourseCount": 12,
+      "courseSourceUrl": "https://www.polyu.edu.hk/shtm/study/undergraduate-programmes/undergraduate-programme/bachelor-of-science-honours-scheme-in-hotel-and-tourism-management-specialism-programmes/programme-structure/"
     },
     {
       "id": "POLYU-UG-JS3007-26",
@@ -12683,8 +12684,8 @@ const catalogue = {
       "code": "HOTEL-MANAGEMENT",
       "nameEn": "Hotel Management",
       "nameZh": "Hotel Management",
-      "courseCount": 8,
-      "codedCourseCount": 0,
+      "courseCount": 14,
+      "codedCourseCount": 6,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3310"
     },
     {
@@ -12693,8 +12694,8 @@ const catalogue = {
       "code": "SMART-TOURISM-AND-HOSPITALITY",
       "nameEn": "Smart Tourism and Hospitality",
       "nameZh": "Smart Tourism and Hospitality",
-      "courseCount": 8,
-      "codedCourseCount": 0,
+      "courseCount": 14,
+      "codedCourseCount": 6,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3310"
     },
     {
@@ -15964,9 +15965,9 @@ const catalogue = {
     "HKU": 1511,
     "HKUST": 121,
     "LINGNAN": 721,
-    "POLYU": 2272
+    "POLYU": 2284
   },
-  "codedCourseCount": 6722
+  "codedCourseCount": 6734
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

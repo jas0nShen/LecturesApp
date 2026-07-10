@@ -1,0 +1,34 @@
+{
+  "provider": "PolyU SHTM JS3310 Programme Structure 2026",
+  "academicYear": "2026",
+  "sourceUrl": "https://www.polyu.edu.hk/shtm/study/undergraduate-programmes/undergraduate-programme/bachelor-of-science-honours-scheme-in-hotel-and-tourism-management-specialism-programmes/programme-structure/",
+  "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3310",
+  "supplements": [
+    {
+      "universityCode": "POLYU",
+      "programmeCode": "JS3310",
+      "majorName": "Hotel Management",
+      "courses": [
+        { "code": "HTM2303", "title": "Hotel Operations", "credits": 3, "courseType": "core", "group": "Hotel Management specialist subjects" },
+        { "code": "HTM3203", "title": "Managerial Concepts in Food and Beverage Operations", "credits": 3, "courseType": "core", "group": "Hotel Management specialist subjects" },
+        { "code": "HTM3230", "title": "Resort Management", "credits": 3, "courseType": "core", "group": "Hotel Management specialist subjects" },
+        { "code": "HTM4305", "title": "Food and Beverage Management", "credits": 3, "courseType": "core", "group": "Hotel Management specialist subjects" },
+        { "code": "HTM4337", "title": "Revenue Management", "credits": 3, "courseType": "core", "group": "Hotel Management specialist subjects" },
+        { "code": "HTM4359", "title": "Hospitality Asset Management", "credits": 3, "courseType": "core", "group": "Hotel Management specialist subjects" }
+      ]
+    },
+    {
+      "universityCode": "POLYU",
+      "programmeCode": "JS3310",
+      "majorName": "Smart Tourism and Hospitality",
+      "courses": [
+        { "code": "HTM2327", "title": "Digital Transformation in Tourism and Hospitality", "credits": 3, "courseType": "core", "group": "Smart Tourism and Hospitality specialist subjects" },
+        { "code": "HTM3228", "title": "Smart Service Design in Tourism and Hospitality", "credits": 3, "courseType": "core", "group": "Smart Tourism and Hospitality specialist subjects" },
+        { "code": "HTM3229", "title": "Tourism and Hospitality Management Information System", "credits": 3, "courseType": "core", "group": "Smart Tourism and Hospitality specialist subjects" },
+        { "code": "HTM4362", "title": "Artificial Intelligence in Tourism and Hospitality", "credits": 3, "courseType": "core", "group": "Smart Tourism and Hospitality specialist subjects" },
+        { "code": "HTM4363", "title": "Tourism Economics and Policy", "credits": 3, "courseType": "core", "group": "Smart Tourism and Hospitality specialist subjects" },
+        { "code": "HTM4364", "title": "Social Media and Digital Marketing Analytic", "credits": 3, "courseType": "core", "group": "Smart Tourism and Hospitality specialist subjects" }
+      ]
+    }
+  ]
+}
