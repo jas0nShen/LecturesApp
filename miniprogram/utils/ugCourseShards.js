@@ -10,7 +10,7 @@ const loaders = {
 const counts = {
   "CITYU": 1966,
   "CUHK": 131,
-  "HKU": 1623,
+  "HKU": 1647,
   "HKUST": 121,
   "LINGNAN": 721,
   "POLYU": 2472

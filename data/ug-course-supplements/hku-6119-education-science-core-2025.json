@@ -1,0 +1,41 @@
+{
+  "provider": "HKU BEd and BSc regulations and syllabuses",
+  "academicYear": "2025-26",
+  "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/ugdr2025-26/Education/BEd%26BSc.pdf",
+  "officialUrl": "https://web.edu.hku.hk/programme/bedbsc_6119/curriculum",
+  "supplements": [
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6119",
+      "majorName": "Bachelor of Education and Bachelor of Science",
+      "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/ugdr2025-26/Education/BEd%26BSc.pdf",
+      "officialUrl": "https://web.edu.hku.hk/programme/bedbsc_6119/curriculum",
+      "courses": [
+        { "code": "BBED1101", "title": "Becoming a Teaching Professional: Education in a Globalized Society 1", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Professional Core — Integrated Courses" },
+        { "code": "BBED1102", "title": "Becoming a Teaching Professional: Education in a Globalized Society 2", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Professional Core — Integrated Courses" },
+        { "code": "BBED2101", "title": "Becoming a Teaching Professional: Understanding Learning and Teaching 1", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Professional Core — Integrated Courses" },
+        { "code": "BBED2102", "title": "Becoming a Teaching Professional: Understanding Learning and Teaching 2", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Professional Core — Integrated Courses" },
+        { "code": "BBED3261", "title": "Science, Technology, Engineering, Arts and Mathematics (STEAM) Education", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Professional Core — Pedagogy" },
+        { "code": "BBED3281", "title": "Teaching and Learning Primary Science", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Professional Core — Pedagogy" },
+        { "code": "BBED3282", "title": "Teaching and Learning Junior Secondary Science", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Professional Core — Pedagogy" },
+        { "code": "BBED4281", "title": "Teaching and Learning Senior Secondary Science – Biology", "credits": 6, "recommendedYear": 4, "courseType": "major_elective", "group": "Professional Core — Biology Discipline Option" },
+        { "code": "BBED4282", "title": "Teaching and Learning Senior Secondary Science – Chemistry", "credits": 6, "recommendedYear": 4, "courseType": "major_elective", "group": "Professional Core — Chemistry Discipline Option" },
+        { "code": "BBED4283", "title": "Teaching and Learning Senior Secondary Science – Physics", "credits": 6, "recommendedYear": 4, "courseType": "major_elective", "group": "Professional Core — Physics Discipline Option" },
+        { "code": "BBED5263", "title": "Nature of Science and Socioscientific Issues", "credits": 6, "recommendedYear": 5, "courseType": "core", "group": "Professional Core — Pedagogy" },
+        { "code": "BBED5264", "title": "Language and Science Learning", "credits": 6, "recommendedYear": 5, "courseType": "core", "group": "Professional Core — Pedagogy" },
+        { "code": "BBED5363", "title": "Becoming a Scholarly Teacher", "credits": 6, "recommendedYear": 5, "courseType": "core", "group": "Professional Core — Pedagogy" },
+        { "code": "BBED3002", "title": "Learning Support 1 - Catering for Diverse Learning Needs", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Professional Core — Educational Studies" },
+        { "code": "BBED4001", "title": "Social and Philosophical Foundations of Education", "credits": 6, "recommendedYear": 4, "courseType": "core", "group": "Professional Core — Educational Studies" },
+        { "code": "BBED4003", "title": "Learning Support 2 - Understanding and Guiding Whole-Person Development", "credits": 6, "recommendedYear": 4, "courseType": "core", "group": "Professional Core — Educational Studies" },
+        { "code": "BBED5021", "title": "Professional Ethics in Teaching", "credits": 6, "recommendedYear": 5, "courseType": "major_elective", "group": "Professional Core — Educational Studies Elective" },
+        { "code": "BBED5025", "title": "Policy, Improvement, and Leadership in Schools", "credits": 6, "recommendedYear": 5, "courseType": "major_elective", "group": "Professional Core — Educational Studies Elective" },
+        { "code": "BBED5026", "title": "Diversity, Culture, and Justice in Education", "credits": 6, "recommendedYear": 5, "courseType": "major_elective", "group": "Professional Core — Educational Studies Elective" },
+        { "code": "BBED5027", "title": "Education for Sustainable Development: Schools as Community Centers", "credits": 6, "recommendedYear": 5, "courseType": "major_elective", "group": "Professional Core — Educational Studies Elective" },
+        { "code": "BBED4463", "title": "Professional Practicum I – Science", "credits": 12, "recommendedYear": 4, "courseType": "capstone", "group": "Professional Core — Capstone Practicum" },
+        { "code": "BBED5464", "title": "Professional Practicum II – Science", "credits": 12, "recommendedYear": 5, "courseType": "capstone", "group": "Professional Core — Capstone Practicum" },
+        { "code": "CAES9423", "title": "Academic English for Education Students", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "University Requirements — English in the Discipline" },
+        { "code": "CEDU9007", "title": "Practical Chinese for BEd&BSc Students", "credits": 6, "recommendedYear": 4, "courseType": "core", "group": "University Requirements — Chinese Language Enhancement" }
+      ]
+    }
+  ]
+}

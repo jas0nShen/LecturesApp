@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T09:15:21.734Z",
+  "generatedAt": "2026-07-10T09:21:09.319Z",
   "universities": [
     {
       "id": "HKU",
@@ -987,9 +987,10 @@ const catalogue = {
       "studyPeriod": "5-year",
       "type": "Double Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-education-and-bachelor-of-science",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 24,
+      "codedCourseCount": 24,
+      "courseSourceUrl": "https://www4.hku.hk/pubunit/drcd/files/ugdr2025-26/Education/BEd%26BSc.pdf"
     },
     {
       "id": "HKU-UG-6157-26",
@@ -9323,9 +9324,9 @@ const catalogue = {
       "code": "BACHELOR-OF-EDUCATION-AND-BACHELOR-OF-SCIENCE",
       "nameEn": "Bachelor of Education and Bachelor of Science",
       "nameZh": "Bachelor of Education and Bachelor of Science",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-education-and-bachelor-of-science"
+      "courseCount": 25,
+      "codedCourseCount": 24,
+      "officialUrl": "https://web.edu.hku.hk/programme/bedbsc_6119/curriculum"
     },
     {
       "id": "HKU-UG-6157-26-M1",
@@ -15971,12 +15972,12 @@ const catalogue = {
   "courseShardCounts": {
     "CITYU": 1966,
     "CUHK": 131,
-    "HKU": 1623,
+    "HKU": 1647,
     "HKUST": 121,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 7034
+  "codedCourseCount": 7058
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
