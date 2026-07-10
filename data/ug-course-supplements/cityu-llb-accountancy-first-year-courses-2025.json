@@ -1,0 +1,28 @@
+{
+  "provider": "CityUHK School of Law and Department of Accountancy double degree suggested study plan",
+  "academicYear": "2025/26",
+  "sourceUrl": "https://www.cityu.edu.hk/slw/system/files/2025-11/LLBBBAAC%20handbook%202025-26%20%28For%202025%20Cohort%29_confirmed.pdf",
+  "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bachelor-laws-and-bachelor-business-administration-accountancy",
+  "supplements": [
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1062",
+      "sourceUrl": "https://www.cityu.edu.hk/slw/system/files/2025-11/LLBBBAAC%20handbook%202025-26%20%28For%202025%20Cohort%29_confirmed.pdf",
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bachelor-laws-and-bachelor-business-administration-accountancy",
+      "courses": [
+        { "code": "GE1401", "title": "University English", "credits": 3, "recommendedYear": 1, "semester": "Semester A", "group": "gateway education" },
+        { "code": "GE1601", "title": "Whole-Person Development", "credits": 1, "recommendedYear": 1, "semester": "Semester A", "group": "gateway education" },
+        { "code": "LW2601", "title": "Hong Kong Legal System", "credits": 3, "recommendedYear": 1, "semester": "Semester A", "group": "law core" },
+        { "code": "LW2603A", "title": "Law of Tort I", "credits": 3, "recommendedYear": 1, "semester": "Semester A", "group": "law core" },
+        { "code": "LW2604", "title": "Legal Methods, Research and Writing", "credits": 3, "recommendedYear": 1, "semester": "Semester A", "group": "law core" },
+        { "code": "GE2402", "title": "English for Business Communication", "credits": 3, "recommendedYear": 1, "semester": "Semester B or Summer", "group": "English option" },
+        { "code": "GE2411", "title": "Legal English", "credits": 3, "recommendedYear": 1, "semester": "Semester B", "group": "English option" },
+        { "code": "GE2262", "title": "Business Statistics", "credits": 3, "recommendedYear": 1, "semester": "Semester B", "group": "gateway education" },
+        { "code": "CB2201", "title": "Operations Management", "credits": 3, "recommendedYear": 1, "semester": "Semester B", "group": "college requirement" },
+        { "code": "CB2300", "title": "Management", "credits": 3, "recommendedYear": 1, "semester": "Semester B", "group": "college requirement" },
+        { "code": "LW2603B", "title": "Law of Tort II", "credits": 3, "recommendedYear": 1, "semester": "Semester B", "group": "law core" },
+        { "code": "LW3605A", "title": "Constitutional Law", "credits": 3, "recommendedYear": 1, "semester": "Semester B", "group": "law core" }
+      ]
+    }
+  ]
+}

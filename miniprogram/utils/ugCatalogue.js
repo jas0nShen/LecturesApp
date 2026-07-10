@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T15:18:13.699Z",
+  "generatedAt": "2026-07-10T15:20:59.125Z",
   "universities": [
     {
       "id": "HKU",
@@ -7030,9 +7030,10 @@ const catalogue = {
       "studyPeriod": "5 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1062",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 12,
+      "codedCourseCount": 12,
+      "courseSourceUrl": "https://www.cityu.edu.hk/slw/system/files/2025-11/LLBBBAAC%20handbook%202025-26%20%28For%202025%20Cohort%29_confirmed.pdf"
     },
     {
       "id": "CITYU-UG-ACT-25",
@@ -13804,9 +13805,9 @@ const catalogue = {
       "code": "BACHELOR-OF-LAWS-AND-BBA-ACCOUNTANCY",
       "nameEn": "Bachelor of Laws and BBA Accountancy",
       "nameZh": "Bachelor of Laws and BBA Accountancy",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1062"
+      "courseCount": 13,
+      "codedCourseCount": 12,
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bachelor-laws-and-bachelor-business-administration-accountancy"
     },
     {
       "id": "CITYU-UG-ACT-25-M1",
@@ -15980,14 +15981,14 @@ const catalogue = {
     }
   ],
   "courseShardCounts": {
-    "CITYU": 2097,
+    "CITYU": 2109,
     "CUHK": 131,
     "HKU": 1842,
     "HKUST": 121,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 7384
+  "codedCourseCount": 7396
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
