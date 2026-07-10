@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T08:20:32.129Z",
+  "generatedAt": "2026-07-10T08:51:31.591Z",
   "universities": [
     {
       "id": "HKU",
@@ -908,9 +908,10 @@ const catalogue = {
       "studyPeriod": "5-year",
       "type": "Double Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-and-bachelor-of-laws",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 23,
+      "codedCourseCount": 23,
+      "courseSourceUrl": "https://arts.hku.hk/file/upload/6087/BALLB_syll2526_250730.pdf"
     },
     {
       "id": "HKU-UG-6080-22",
@@ -9280,8 +9281,8 @@ const catalogue = {
       "code": "BACHELOR-OF-ARTS-AND-BACHELOR-OF-LAWS",
       "nameEn": "Bachelor of Arts and Bachelor of Laws",
       "nameZh": "Bachelor of Arts and Bachelor of Laws",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 24,
+      "codedCourseCount": 23,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-and-bachelor-of-laws"
     },
     {
@@ -15968,12 +15969,12 @@ const catalogue = {
   "courseShardCounts": {
     "CITYU": 1966,
     "CUHK": 131,
-    "HKU": 1511,
+    "HKU": 1534,
     "HKUST": 121,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 6922
+  "codedCourseCount": 6945
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

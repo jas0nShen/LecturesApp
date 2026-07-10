@@ -1,0 +1,40 @@
+{
+  "provider": "HKU Syllabuses for the Double Degree of Bachelor of Arts and Bachelor of Laws 2025/26",
+  "academicYear": "2025-26",
+  "sourceUrl": "https://arts.hku.hk/file/upload/6087/BALLB_syll2526_250730.pdf",
+  "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-and-bachelor-of-laws",
+  "supplements": [
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6078",
+      "majorName": "Bachelor of Arts and Bachelor of Laws",
+      "sourceUrl": "https://arts.hku.hk/file/upload/6087/BALLB_syll2526_250730.pdf",
+      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-and-bachelor-of-laws",
+      "courses": [
+        { "code": "LLAW1001", "title": "Law of contract I", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Professional Core — Law" },
+        { "code": "LLAW1002", "title": "Law of contract II", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Professional Core — Law" },
+        { "code": "LLAW1008", "title": "The legal system of the Hong Kong SAR", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Professional Core — Law" },
+        { "code": "LLAW1014", "title": "Criminal law I", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Professional Core — Law" },
+        { "code": "LLAW1015", "title": "Criminal law II", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Professional Core — Law" },
+        { "code": "LLAW1016", "title": "Legal research and writing", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Professional Core — Law" },
+        { "code": "AILT1001", "title": "Artificial Intelligence Literacy I", "credits": 3, "recommendedYear": 1, "courseType": "core", "group": "University Requirements" },
+        { "code": "LLAW1005", "title": "Law of tort I", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Professional Core — Law" },
+        { "code": "LLAW1006", "title": "Law of tort II", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Professional Core — Law" },
+        { "code": "LLAW2001", "title": "Constitutional law", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Professional Core — Law" },
+        { "code": "LLAW3093", "title": "Administrative law", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Professional Core — Law" },
+        { "code": "LALS2001", "title": "Introduction to law and literary studies", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Interdisciplinary Core" },
+        { "code": "LLAW2009", "title": "Introduction to Chinese legal system", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Professional Core — Law" },
+        { "code": "LLAW2012", "title": "Commercial law", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Professional Core — Law" },
+        { "code": "LLAW2018", "title": "Land law I", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Professional Core — Law" },
+        { "code": "LLAW2019", "title": "Land law II", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Professional Core — Law" },
+        { "code": "LLAW3010", "title": "Business associations", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Professional Core — Law" },
+        { "code": "CDDL9001", "title": "Practical Chinese for Double Degree Law Students", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "University Requirements" },
+        { "code": "LLAW3001", "title": "Introduction to legal theory", "credits": 6, "recommendedYear": 4, "courseType": "core", "group": "Professional Core — Law" },
+        { "code": "LLAW3094", "title": "Equity & trusts I", "credits": 6, "recommendedYear": 4, "courseType": "core", "group": "Professional Core — Law" },
+        { "code": "LLAW3095", "title": "Equity & trusts II", "credits": 6, "recommendedYear": 4, "courseType": "core", "group": "Professional Core — Law" },
+        { "code": "LALS5001", "title": "Research project in law and literary studies", "credits": 6, "recommendedYear": 4, "courseType": "capstone", "group": "Advanced Interdisciplinary Core" },
+        { "code": "LALS5002", "title": "Internship in law and literary studies", "credits": 6, "recommendedYear": 4, "courseType": "capstone", "group": "Advanced Interdisciplinary Core" }
+      ]
+    }
+  ]
+}

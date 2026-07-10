@@ -13,13 +13,13 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.requirementCount, 4);
   assert(summary.courseCount >= 4630);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 6922);
-  assert.equal(summary.programmeWithCoursesCount, 95);
-  assert.equal(summary.pendingProgrammeCount, 349);
+  assert.equal(summary.codedCourseCount, 6945);
+  assert.equal(summary.programmeWithCoursesCount, 96);
+  assert.equal(summary.pendingProgrammeCount, 348);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
-  assert.equal(summary.coveragePercent, 21);
+  assert.equal(summary.coveragePercent, 22);
   assert.match(summary.generatedAt, /^\d{4}-\d{2}-\d{2}T/);
   assert.match(summary.generatedDate, /^\d{4}-\d{2}-\d{2}$/);
 });
@@ -132,7 +132,7 @@ test('UG per-school coverage stays visible for setup validation', () => {
   }));
 
   assert.deepEqual(coverage, {
-    HKU: { programmeCount: 137, majorCount: 137, codedCourseCount: 1511 },
+    HKU: { programmeCount: 137, majorCount: 137, codedCourseCount: 1534 },
     CUHK: { programmeCount: 84, majorCount: 84, codedCourseCount: 131 },
     HKUST: { programmeCount: 50, majorCount: 64, codedCourseCount: 121 },
     POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 2472 },
@@ -153,10 +153,10 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert.equal(coverage.length, 8);
   assert.equal(hku.programmeCount, 136);
   assert.equal(hku.majorCount, 136);
-  assert.equal(hku.programmeWithCoursesCount, 21);
-  assert.equal(hku.pendingProgrammeCount, 115);
-  assert.equal(hku.coveragePercent, 15);
-  assert.equal(hku.codedCourseCount, 1511);
+  assert.equal(hku.programmeWithCoursesCount, 22);
+  assert.equal(hku.pendingProgrammeCount, 114);
+  assert.equal(hku.coveragePercent, 16);
+  assert.equal(hku.codedCourseCount, 1534);
   assert.match(hku.generatedDate, /^\d{4}-\d{2}-\d{2}$/);
   assert.match(hku.updatedLabel, /^更新于 \d{4}-\d{2}-\d{2}$/);
   assert.equal(hku.badge, 'COURSES');
@@ -691,6 +691,21 @@ test('PolyU Business Administration scheme exposes official Common Year One cour
   assert.equal(courses.length, 11);
   assert(courses.some((course) => course.courseCode === 'MM1041' && course.credits === 2 && course.semester === 'Semester 1'));
   assert(courses.some((course) => course.courseCode === 'AF2108' && course.recommendedYear === 1 && course.semester === 'Semester 2'));
+});
+
+test('HKU BA and LLB exposes official core law and interdisciplinary courses', () => {
+  const hku = ugService.listUniversities().find((item) => item.code === 'HKU');
+  const programme = ugService.listProgrammes({ universityId: hku.id, degreeLevel: 'undergraduate' })
+    .find((item) => item.code === '6078');
+  const major = ugService.listMajors(programme.id)[0];
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(programme.codedCourseCount, 23);
+  assert.equal(courses.length, 23);
+  assert(courses.some((course) => course.courseCode === 'LLAW1016' && course.recommendedYear === 1 && course.credits === 6));
+  assert(courses.some((course) => course.courseCode === 'LALS2001' && course.recommendedYear === 2));
+  assert(courses.some((course) => course.courseCode === 'LALS5001' && course.courseType === 'capstone'));
 });
 
 test('HKU Computing and Data Science catalogue profiles expose official course offerings', () => {
