@@ -1,0 +1,66 @@
+{
+  "provider": "CityUHK Department of Chinese and History BA Chinese and History normative four-year study plan",
+  "academicYear": "2025/26",
+  "sourceUrl": "https://www.cah.cityu.edu.hk/programmes-courses/undergraduate/undergraduate-degree/bachis-2025-cohorts/study_plan",
+  "officialUrl": "https://www.cah.cityu.edu.hk/programmes-courses/undergraduate/undergraduate-degree/bachis-2025-cohorts/study_plan",
+  "supplements": [
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1103",
+      "sourceUrl": "https://www.cah.cityu.edu.hk/programmes-courses/undergraduate/undergraduate-degree/bachis-2025-cohorts/study_plan",
+      "officialUrl": "https://www.cah.cityu.edu.hk/programmes-courses/undergraduate/undergraduate-degree/bachis-2025-cohorts/study_plan",
+      "courses": [
+        { "code": "CAH2610", "title": "Sources of Chinese Tradition", "credits": 3, "recommendedYear": 1, "semester": "Semester 1", "group": "foundation-year core" },
+        { "code": "CAH2614", "title": "Methods for Studying Humanities", "credits": 3, "recommendedYear": 1, "semester": "Semester 1", "group": "foundation-year core" },
+        { "code": "CAH2611", "title": "Sources of Literature, Cultural Heritage and History", "credits": 3, "recommendedYear": 1, "semester": "Semester 2", "group": "foundation-year core" },
+        { "code": "CAH2612", "title": "Introduction to Sinology", "credits": 3, "recommendedYear": 1, "semester": "Semester 2", "group": "foundation-year core" },
+        { "code": "CAH2613", "title": "Chinese Writing for Academic Purpose", "credits": 3, "recommendedYear": 1, "semester": "Semester 2", "group": "foundation-year core" },
+        { "code": "EN2011", "title": "English on the Move", "credits": 3, "recommendedYear": 1, "group": "college foundation option" },
+        { "code": "LT1101", "title": "Amazing Things about Language", "credits": 3, "recommendedYear": 1, "group": "college foundation option" },
+        { "code": "COM1101", "title": "Media and Communication in the Digital Age", "credits": 3, "recommendedYear": 1, "group": "college foundation option" },
+        { "code": "PIA2801", "title": "Social Change and Governance Challenges: A Critical Appreciation Through Film", "credits": 3, "recommendedYear": 1, "group": "college foundation option" },
+        { "code": "SS1600", "title": "Discovering the Mystery of Applied Social Sciences", "credits": 3, "recommendedYear": 1, "group": "college foundation option" },
+        { "code": "GE1401", "title": "University English", "credits": 3, "recommendedYear": 1, "group": "gateway education" },
+        { "code": "GE1601", "title": "Whole-Person Development", "credits": 1, "recommendedYear": 1, "group": "gateway education" }
+      ]
+    },
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1103",
+      "majorNameIncludes": "Chinese",
+      "sourceUrl": "https://www.cah.cityu.edu.hk/programmes-courses/undergraduate/undergraduate-degree/bachis-2025-cohorts/study_plan",
+      "officialUrl": "https://www.cah.cityu.edu.hk/programmes-courses/undergraduate/undergraduate-degree/bachis-2025-cohorts/study_plan",
+      "courses": [
+        { "code": "CAH2140", "title": "Modern Chinese Literature", "credits": 3, "recommendedYear": 1, "group": "stream core option" },
+        { "code": "CAH2141", "title": "History of Chinese Literature", "credits": 3, "recommendedYear": 1, "group": "stream core option" },
+        { "code": "CAH2142", "title": "Introduction to Literary Theory and Criticism", "credits": 3, "recommendedYear": 1, "group": "stream core option" },
+        { "code": "CAH3131", "title": "Classical Chinese", "credits": 3, "recommendedYear": 2, "group": "stream core" },
+        { "code": "CAH3110", "title": "Readings in Pre-Qin Confucianism and Daoism", "credits": 3, "recommendedYear": 3, "group": "stream core" },
+        { "code": "CAH3132", "title": "Chinese Philology", "credits": 3, "recommendedYear": 3, "group": "stream core" },
+        { "code": "CAH3133", "title": "Introduction to Chinese Documentology", "credits": 3, "recommendedYear": 3, "group": "stream core" },
+        { "code": "CAH4150", "title": "Selected Readings in Chinese Shi and Ci", "credits": 3, "recommendedYear": 3, "group": "stream core" },
+        { "code": "CAH4499", "title": "Capstone Project in Chinese, History and Cultural Heritage I", "credits": 3, "recommendedYear": 4, "group": "capstone" }
+      ]
+    },
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1103",
+      "majorNameIncludes": "History and Cultural Heritage",
+      "sourceUrl": "https://www.cah.cityu.edu.hk/programmes-courses/undergraduate/undergraduate-degree/bachis-2025-cohorts/study_plan",
+      "officialUrl": "https://www.cah.cityu.edu.hk/programmes-courses/undergraduate/undergraduate-degree/bachis-2025-cohorts/study_plan",
+      "courses": [
+        { "code": "CAH2501", "title": "Art and Visual Culture", "credits": 3, "recommendedYear": 1, "group": "stream core option" },
+        { "code": "CAH2509", "title": "History and Heritage", "credits": 3, "recommendedYear": 1, "group": "stream core option" },
+        { "code": "CAH2536", "title": "Intangible Heritages and Indigenous Cultures", "credits": 3, "recommendedYear": 1, "group": "stream core option" },
+        { "code": "CAH2812", "title": "Early and Imperial China", "credits": 3, "recommendedYear": 1, "group": "stream core option" },
+        { "code": "CAH2840", "title": "Late Imperial and Modern China", "credits": 3, "recommendedYear": 1, "group": "stream core option" },
+        { "code": "CAH3511", "title": "Hong Kong's Culture and Heritage", "credits": 3, "recommendedYear": 3, "group": "stream core" },
+        { "code": "CAH3542", "title": "Museum Studies", "credits": 3, "recommendedYear": 3, "group": "stream core" },
+        { "code": "CAH4802", "title": "Chinese Historical Methods", "credits": 3, "recommendedYear": 3, "group": "stream core" },
+        { "code": "CAH4842", "title": "History of the Modern World", "credits": 3, "recommendedYear": 3, "group": "stream core" },
+        { "code": "CAH4813", "title": "History of the Ancient World", "credits": 3, "recommendedYear": 4, "group": "stream core" },
+        { "code": "CAH4499", "title": "Capstone Project in Chinese, History and Cultural Heritage I", "credits": 3, "recommendedYear": 4, "group": "capstone" }
+      ]
+    }
+  ]
+}

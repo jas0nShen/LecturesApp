@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T15:35:12.014Z",
+  "generatedAt": "2026-07-10T15:38:34.541Z",
   "universities": [
     {
       "id": "HKU",
@@ -7148,9 +7148,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1103",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 44,
+      "codedCourseCount": 44,
+      "courseSourceUrl": "https://www.cah.cityu.edu.hk/programmes-courses/undergraduate/undergraduate-degree/bachis-2025-cohorts/study_plan"
     },
     {
       "id": "CITYU-UG-BAEN-31",
@@ -14008,9 +14009,9 @@ const catalogue = {
       "code": "CHINESE",
       "nameEn": "Chinese",
       "nameZh": "Chinese",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1103"
+      "courseCount": 22,
+      "codedCourseCount": 21,
+      "officialUrl": "https://www.cah.cityu.edu.hk/programmes-courses/undergraduate/undergraduate-degree/bachis-2025-cohorts/study_plan"
     },
     {
       "id": "CITYU-UG-BACHIS-30-M2",
@@ -14018,9 +14019,9 @@ const catalogue = {
       "code": "HISTORY-AND-CULTURAL-HERITAGE",
       "nameEn": "History and Cultural Heritage",
       "nameZh": "History and Cultural Heritage",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1103"
+      "courseCount": 24,
+      "codedCourseCount": 23,
+      "officialUrl": "https://www.cah.cityu.edu.hk/programmes-courses/undergraduate/undergraduate-degree/bachis-2025-cohorts/study_plan"
     },
     {
       "id": "CITYU-UG-BAEN-31-M1",
@@ -15984,14 +15985,14 @@ const catalogue = {
     }
   ],
   "courseShardCounts": {
-    "CITYU": 2234,
+    "CITYU": 2278,
     "CUHK": 131,
     "HKU": 1842,
     "HKUST": 121,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 7521
+  "codedCourseCount": 7565
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

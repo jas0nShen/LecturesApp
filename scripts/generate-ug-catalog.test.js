@@ -396,6 +396,25 @@ test('CityU Electrical Engineering exposes the verified shared first-year curric
   });
 });
 
+test('CityU Chinese and History exposes the verified normative study plan', () => {
+  const catalogue = require('../miniprogram/utils/ugCatalogue');
+  const programme = catalogue.programmes.find((item) => item.jupasCode === 'JS1103');
+  const majors = catalogue.majors.filter((item) => item.programmeId === programme.id);
+
+  assert.equal(majors.length, 2);
+  const chinese = majors.find((item) => item.nameEn === 'Chinese');
+  const history = majors.find((item) => item.nameEn === 'History and Cultural Heritage');
+  const chineseCourses = catalogue.courses.filter((item) => item.majorId === chinese.id);
+  const historyCourses = catalogue.courses.filter((item) => item.majorId === history.id);
+
+  assert(chineseCourses.some((item) => item.courseCode === 'CAH2610' && item.semester === 'Semester 1'));
+  assert(chineseCourses.some((item) => item.courseCode === 'CAH3131' && item.recommendedYear === 2));
+  assert(chineseCourses.some((item) => item.courseCode === 'CAH4499' && item.courseType === 'capstone'));
+  assert(historyCourses.some((item) => item.courseCode === 'CAH2812'));
+  assert(historyCourses.some((item) => item.courseCode === 'CAH4802' && item.recommendedYear === 3));
+  assert(historyCourses.some((item) => item.courseCode === 'CAH4499' && item.courseType === 'capstone'));
+});
+
 test('UG source coverage report can focus missing programme work by school', () => {
   const args = parseArgs(['--school', 'cityu', '--missing-limit', '5', '--missing-only']);
   const summary = summarizeGeneratedCatalogue(args);
