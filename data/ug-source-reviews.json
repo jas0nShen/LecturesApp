@@ -54,5 +54,13 @@
     "status": "no_public_course_codes",
     "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3478",
     "note": "Official PolyU JUPAS and HTI pages describe the 2026 entry programme, four-year curriculum progression, 126 academic credits plus 10 clinical/field credits, clinical attachment and current subject names by year. The public subject-information link does not provide a current coded subject table; searchable coded records are from older curricula and cannot be treated as the 2026 curriculum. Keep this programme as index/source-only until a current coded curriculum source is available."
+  },
+  {
+    "universityCode": "POLYU",
+    "programmeCode": "JS3569",
+    "reviewedAt": "2026-07-10",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://www.polyu.edu.hk/sd/study/ug/scheme-in-design/programme-structure/",
+    "note": "Official PolyU JUPAS and School of Design pages confirm the 2026 Design Scheme, its common Year 1 foundation, Year 2 clusters and nine Year 3-4 specialisms. The public structure and specialism pages give curriculum descriptions and credit groups but do not publish a current coded subject table. The specialisms have dedicated pathways, so subjects from older or individual-track materials must not be assigned across the scheme. Keep this programme as index/source-only until a current coded curriculum source is available."
   }
 ]
