@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T16:19:19.281Z",
+  "generatedAt": "2026-07-10T16:53:28.484Z",
   "universities": [
     {
       "id": "HKU",
@@ -4788,9 +4788,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BEng in Bioengineering",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-engineering/bioengineering",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 64,
+      "codedCourseCount": 64,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/BIEN"
     },
     {
       "id": "HKUST-UG-JS5118-BSC-IN-BIOMEDICAL-AND-HEALTH-SCIENCES-5",
@@ -4940,9 +4941,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BEng in Civil Engineering",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-engineering/civil-engineering",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 39,
+      "codedCourseCount": 39,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/CIVL"
     },
     {
       "id": "HKUST-UG-JS5212-BENG-IN-COMPUTER-ENGINEERING-JS5282-ENGIN-13",
@@ -11340,9 +11342,9 @@ const catalogue = {
       "code": "BENG-IN-BIOENGINEERING",
       "nameEn": "BEng in Bioengineering",
       "nameZh": "BEng in Bioengineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-engineering/bioengineering"
+      "courseCount": 65,
+      "codedCourseCount": 64,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26bien.pdf"
     },
     {
       "id": "HKUST-UG-JS5118-BSC-IN-BIOMEDICAL-AND-HEALTH-SCIENCES-5-M1",
@@ -11420,9 +11422,9 @@ const catalogue = {
       "code": "BENG-IN-CIVIL-ENGINEERING",
       "nameEn": "BEng in Civil Engineering",
       "nameZh": "BEng in Civil Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-engineering/civil-engineering"
+      "courseCount": 40,
+      "codedCourseCount": 39,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26civl.pdf"
     },
     {
       "id": "HKUST-UG-JS5212-BENG-IN-COMPUTER-ENGINEERING-JS5282-ENGIN-13-M1",
@@ -15999,11 +16001,11 @@ const catalogue = {
     "CITYU": 2362,
     "CUHK": 294,
     "HKU": 1842,
-    "HKUST": 156,
+    "HKUST": 259,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 7847
+  "codedCourseCount": 7950
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

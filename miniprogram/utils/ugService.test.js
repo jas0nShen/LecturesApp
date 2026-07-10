@@ -173,6 +173,44 @@ test('HKUST Computer Engineering exposes verified professional and capstone path
   assert(courses.some((course) => course.courseCode === 'CPEG4912' && course.courseType === 'capstone'));
 });
 
+test('HKUST Civil Engineering exposes the verified 2025/26 foundation, core, internship and capstone paths', () => {
+  const hkust = ugService.listUniversities().find((item) => item.code === 'HKUST');
+  const programme = ugService.listProgrammes({ universityId: hkust.id, degreeLevel: 'undergraduate' }).find((item) => item.nameEn === 'BEng in Civil Engineering');
+  const major = ugService.listMajors(programme.id).find((item) => item.nameEn === 'BEng in Civil Engineering');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 39);
+  assert.equal(courses.length, 39);
+  ['CIVL1100', 'CIVL2510', 'CIVL3320', 'CIVL3740', 'CIVL4950'].forEach((courseCode) => {
+    assert(courses.some((course) => course.courseCode === courseCode));
+  });
+  assert(courses.some((course) => course.courseCode === 'COMP1023' && course.requirementGroups.includes('major required alternative')));
+  assert(courses.some((course) => course.courseCode === 'CIVL3020' && course.courseType === 'internship'));
+  assert(courses.some((course) => course.courseCode === 'CIVL4920' && course.courseType === 'capstone'));
+  assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Geotechnical' }).some((course) => course.courseCode === 'CIVL3740'));
+});
+
+test('HKUST Bioengineering exposes its verified 2025/26 core and elective course pool', () => {
+  const hkust = ugService.listUniversities().find((item) => item.code === 'HKUST');
+  const programme = ugService.listProgrammes({ universityId: hkust.id, degreeLevel: 'undergraduate' }).find((item) => item.nameEn === 'BEng in Bioengineering');
+  const major = ugService.listMajors(programme.id).find((item) => item.nameEn === 'BEng in Bioengineering');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 64);
+  assert.equal(courses.length, 64);
+  ['BIEN1600', 'BIEN3410', 'BIEN3910', 'CENG2320', 'CENG4650'].forEach((courseCode) => {
+    assert(courses.some((course) => course.courseCode === courseCode));
+  });
+  assert(courses.some((course) => course.courseCode === 'BIEN3320' && course.requirementGroups.includes('major required alternative')));
+  assert(courses.some((course) => course.courseCode === 'BIEN4930' && course.courseType === 'capstone'));
+  assert(courses.some((course) => course.courseCode === 'CENG5240' && course.courseType === 'major_elective'));
+  assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Pharmaceutical' }).some((course) => course.courseCode === 'CENG4670'));
+});
+
 test('UG pending source readiness labels summarize index-only catalogue gaps', () => {
   assert.deepEqual(ugService.summarizePendingSourceReadiness([
     { codedCourseCount: 3, sourceStatus: 'course_codes_available' },
