@@ -400,7 +400,7 @@ test('UG source coverage report can generate a collector template for missing pr
   assert.match(template, /【本科课程资料待补清单】/);
   assert.match(template, /范围：HKU/);
   assert.match(template, /待补 Programme：114/);
-  assert.match(template, /来源状态：0 source importable · 0 coded not importable · 103 index only · 1 reviewed no course codes · 10 no source/);
+  assert.match(template, /来源状态：0 source importable · 0 coded not importable · 102 index only · 2 reviewed no course codes · 10 no source/);
   assert.match(template, /6066 · Bachelor of Arts and Bachelor of Education in Language Education - English/);
   assert.match(template, /官方入口：https:\/\/admissions\.hku\.hk\/programmes\/undergraduate-programmes\/bachelor-of-arts-and-bachelor-of-education-language-education/);
   assert.match(template, /不要自行推测课程/);
@@ -436,17 +436,17 @@ test('UG source coverage report can build a grouped missing data batch plan', ()
   const plan = buildMissingBatchPlan(summary, args);
 
   assert.equal(args.batchPlan, true);
-  assert.equal(groups.sourceIndexOnly.length, 157);
-  assert.equal(groups.reviewedNoCourseCodes.length, 20);
+  assert.equal(groups.sourceIndexOnly.length, 156);
+  assert.equal(groups.reviewedNoCourseCodes.length, 21);
   assert.equal(groups.noSource.length, 171);
   assert.equal(groups.sourceIndexOnly[0].schoolCode, 'HKU');
-  assert.equal(groups.sourceIndexOnly[0].code, '6092');
+  assert.equal(groups.sourceIndexOnly[0].code, '6107');
   assert.equal(groups.reviewedNoCourseCodes[0].code, 'JS3011');
   assert.equal(groups.reviewedNoCourseCodes[0].sourceReviewStatus, 'no_public_course_codes');
   assert.match(plan, /【本科课程补数批次计划】/);
   assert.match(plan, /A\. 可直接导入候选：0 个/);
-  assert.match(plan, /C\. 需打开官方入口核实课程码：157 个/);
-  assert.match(plan, /D\. 已核实官网暂无公开课程码：20 个/);
+  assert.match(plan, /C\. 需打开官方入口核实课程码：156 个/);
+  assert.match(plan, /D\. 已核实官网暂无公开课程码：21 个/);
   assert.match(plan, /E\. 需先寻找官方来源：171 个/);
   assert.match(plan, /POLYU · JS3011 · Bachelor of Science \(Honours\) Scheme in Biotechnology and Chemical Technology/);
   assert.match(plan, /npm run status:ug-sources -- --missing-only --priority launch --missing-limit 3 --collector-template/);

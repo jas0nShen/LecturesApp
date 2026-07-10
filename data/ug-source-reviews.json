@@ -1,6 +1,14 @@
 [
   {
     "universityCode": "HKU",
+    "programmeCode": "6092",
+    "reviewedAt": "2026-07-10",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://web.edu.hku.hk/programme/becese/curriculum",
+    "note": "Official HKU Faculty of Education curriculum page confirms the 300-credit BEd in Early Childhood Education and Special Education structure, including a 246-credit professional core, specialised electives, language enhancement, common core and AI literacy. It publishes examples of core and elective course names but not a stable coded course table or a semester-by-semester curriculum. Do not infer course codes from names; keep this programme as index/source-only until a public coded curriculum source is available."
+  },
+  {
+    "universityCode": "HKU",
     "programmeCode": "6066",
     "reviewedAt": "2026-07-10",
     "status": "no_public_course_codes",
