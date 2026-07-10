@@ -386,6 +386,7 @@ function getCityuRecommendedYear(level = '') {
 }
 
 function getCourseTypeFromGroup(group = '') {
+  group = String(group || '').toLowerCase();
   if (group.includes('capstone') || group.includes('project')) return 'capstone';
   if (group.includes('core') || group.includes('required') || group.includes('compulsory') || group.includes('elementary') || group.includes('intermediate')) return 'core';
   if (group.includes('supporting') || group.includes('college') || group.includes('gateway')) return 'foundation';

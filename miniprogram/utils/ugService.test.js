@@ -13,15 +13,15 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.requirementCount, 4);
   assert(summary.courseCount >= 4630);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 6200);
-  assert.equal(summary.programmeWithCoursesCount, 80);
-  assert.equal(summary.pendingProgrammeCount, 364);
+  assert.equal(summary.codedCourseCount, 6285);
+  assert.equal(summary.programmeWithCoursesCount, 81);
+  assert.equal(summary.pendingProgrammeCount, 363);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
   assert.equal(summary.coveragePercent, 18);
-  assert.match(summary.generatedAt, /^2026-07-09T/);
-  assert.equal(summary.generatedDate, '2026-07-09');
+  assert.match(summary.generatedAt, /^\d{4}-\d{2}-\d{2}T/);
+  assert.match(summary.generatedDate, /^\d{4}-\d{2}-\d{2}$/);
 });
 
 test('UG pending source readiness labels summarize index-only catalogue gaps', () => {
@@ -46,13 +46,13 @@ test('UG pending programme collection text is copy-ready for data sourcing', () 
   const text = ugService.buildPendingCollectionText({ universityCode: 'POLYU', limit: 2 });
 
   assert.equal(pending.length, 2);
-  assert.equal(allPending.length, 34);
+  assert.equal(allPending.length, 33);
   assert.equal(pending[0].universityCode, 'POLYU');
   assert.equal(pending[0].sourceStatusLabel, '仅索引 / 来源');
   assert.match(pending[0].officialUrl, /^https:\/\//);
   assert.match(text, /【本科课程资料待补清单】/);
   assert.match(text, /范围：POLYU/);
-  assert.match(text, /待补 Programme：34/);
+  assert.match(text, /待补 Programme：33/);
   assert.match(text, /课程代码 \/ 课程名 \/ 学分 \/ Year \/ Semester \/ 课程类别 \/ 来源链接/);
   assert.match(text, /不要推测课程/);
 });
@@ -84,7 +84,7 @@ test('UG pending programme collection can be filtered by source readiness', () =
   assert.equal(polyuNoSource.length, 0);
   assert.equal(ugService.getPendingSourceReadinessKey({}), 'noSource');
   assert.equal(ugService.getPendingSourceStatus({}), '缺来源');
-  assert.match(text, /待补 Programme：34/);
+  assert.match(text, /待补 Programme：33/);
   assert.match(text, /当前筛选：no-source · 0 个/);
   assert.match(text, /暂无待补 Programme/);
 });
@@ -135,7 +135,7 @@ test('UG per-school coverage stays visible for setup validation', () => {
     HKU: { programmeCount: 137, majorCount: 137, codedCourseCount: 1511 },
     CUHK: { programmeCount: 84, majorCount: 84, codedCourseCount: 131 },
     HKUST: { programmeCount: 50, majorCount: 64, codedCourseCount: 121 },
-    POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 1750 },
+    POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 1835 },
     CITYU: { programmeCount: 58, majorCount: 201, codedCourseCount: 1966 },
     HKBU: { programmeCount: 22, majorCount: 46, codedCourseCount: 0 },
     EDUHK: { programmeCount: 25, majorCount: 25, codedCourseCount: 0 },
@@ -157,8 +157,8 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert.equal(hku.pendingProgrammeCount, 115);
   assert.equal(hku.coveragePercent, 15);
   assert.equal(hku.codedCourseCount, 1511);
-  assert.equal(hku.generatedDate, '2026-07-09');
-  assert.equal(hku.updatedLabel, '更新于 2026-07-09');
+  assert.match(hku.generatedDate, /^\d{4}-\d{2}-\d{2}$/);
+  assert.match(hku.updatedLabel, /^更新于 \d{4}-\d{2}-\d{2}$/);
   assert.equal(hku.badge, 'COURSES');
   assert.equal(hku.sourceReadiness.indexOnly + hku.sourceReadiness.noSource, hku.pendingProgrammeCount);
   assert.match(hku.sourceReadinessLabel, /仅索引 \/ 来源/);
@@ -168,10 +168,10 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert(cuhk.coveragePercent > 0);
   assert.equal(cuhk.codedCourseCount, 131);
   assert.equal(cuhk.badge, 'COURSES');
-  assert.equal(polyu.programmeWithCoursesCount, 12);
-  assert.equal(polyu.pendingProgrammeCount, 34);
-  assert.equal(polyu.coveragePercent, 26);
-  assert.equal(polyu.codedCourseCount, 1750);
+  assert.equal(polyu.programmeWithCoursesCount, 13);
+  assert.equal(polyu.pendingProgrammeCount, 33);
+  assert.equal(polyu.coveragePercent, 28);
+  assert.equal(polyu.codedCourseCount, 1835);
   assert.equal(polyu.badge, 'COURSES');
   assert.equal(polyu.sourceReadiness.indexOnly, polyu.pendingProgrammeCount);
   assert.equal(cityu.programmeWithCoursesCount, 20);
@@ -424,6 +424,29 @@ test('PolyU Applied Mathematics and Finance Analytics scheme exposes official AM
   assert(qfftCourses.some((course) => course.courseCode === 'AMA4951' && course.courseType === 'capstone'));
   assert(ugService.listMajorCourses(amaScheme.id, investment.id, { keyword: 'Derivative Pricing' }).some((course) => course.courseCode === 'AMA4325'));
   assert(ugService.listMajorCourses(amaScheme.id, appliedMath.id, { keyword: 'Optimization Methods' }).some((course) => course.courseCode === 'AMA4850'));
+});
+
+test('PolyU Data Science and Artificial Intelligence scheme exposes official major curricula', () => {
+  const polyu = ugService.listUniversities().find((item) => item.code === 'POLYU');
+  const programmes = ugService.listProgrammes({ universityId: polyu.id, degreeLevel: 'undergraduate' });
+  const dsaiScheme = programmes.find((programme) => programme.code === 'JS3223');
+  const majors = ugService.listMajors(dsaiScheme.id);
+  const ai = majors.find((major) => major.nameEn === 'Artificial Intelligence');
+  const aift = majors.find((major) => major.nameEn === 'Artificial Intelligence with Financial Technology');
+  const dsa = majors.find((major) => major.nameEn === 'Data Science and Analytics');
+  const aiCourses = ugService.listMajorCourses(dsaiScheme.id, ai.id);
+  const aiftCourses = ugService.listMajorCourses(dsaiScheme.id, aift.id);
+  const dsaCourses = ugService.listMajorCourses(dsaiScheme.id, dsa.id);
+
+  assert.equal(dsaiScheme.sourceStatus, 'course_codes_available');
+  assert.equal(majors.length, 3);
+  assert(aiCourses.some((course) => course.courseCode === 'DSAI4209' && course.titleEn === 'Introduction Generative AI and Foundation Models'));
+  assert(aiCourses.some((course) => course.courseCode === 'DSAI4901' && course.courseType === 'capstone' && course.credits === 6));
+  assert(aiftCourses.some((course) => course.courseCode === 'DSAI4206' && course.titleEn === 'Emerging Topics in FinTech'));
+  assert(aiftCourses.some((course) => course.courseCode === 'AF2108'));
+  assert(aiftCourses.some((course) => course.courseCode === 'AF2111'));
+  assert(dsaCourses.some((course) => course.courseCode === 'DSAI3101' && course.titleEn === 'Bayesian Methods for Data Science'));
+  assert(ugService.listMajorCourses(dsaiScheme.id, dsa.id, { keyword: 'Optimization' }).some((course) => course.courseCode === 'AMA4850'));
 });
 
 test('HKU Computing and Data Science catalogue profiles expose official course offerings', () => {

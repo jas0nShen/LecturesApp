@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-09T16:12:08.816Z",
+  "generatedAt": "2026-07-10T03:08:43.041Z",
   "universities": [
     {
       "id": "HKU",
@@ -5953,9 +5953,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3223",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 4,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 85,
+      "codedCourseCount": 85,
+      "courseSourceUrl": "https://www.polyu.edu.hk/dsai/study/ug/prospective-students/bsc-scheme-in-data-science-and-artificial-intelligence/curriculum/"
     },
     {
       "id": "POLYU-UG-JS3569-17",
@@ -12285,8 +12286,8 @@ const catalogue = {
       "code": "ARTIFICIAL-INTELLIGENCE",
       "nameEn": "Artificial Intelligence",
       "nameZh": "Artificial Intelligence",
-      "courseCount": 4,
-      "codedCourseCount": 0,
+      "courseCount": 31,
+      "codedCourseCount": 27,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3223"
     },
     {
@@ -12295,8 +12296,8 @@ const catalogue = {
       "code": "ARTIFICIAL-INTELLIGENCE-WITH-FINANCIAL-TECHNOLOG",
       "nameEn": "Artificial Intelligence with Financial Technology",
       "nameZh": "Artificial Intelligence with Financial Technology",
-      "courseCount": 4,
-      "codedCourseCount": 0,
+      "courseCount": 35,
+      "codedCourseCount": 31,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3223"
     },
     {
@@ -12305,8 +12306,8 @@ const catalogue = {
       "code": "DATA-SCIENCE-AND-ANALYTICS",
       "nameEn": "Data Science and Analytics",
       "nameZh": "Data Science and Analytics",
-      "courseCount": 4,
-      "codedCourseCount": 0,
+      "courseCount": 31,
+      "codedCourseCount": 27,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3223"
     },
     {
@@ -15956,9 +15957,9 @@ const catalogue = {
     "HKU": 1511,
     "HKUST": 121,
     "LINGNAN": 721,
-    "POLYU": 1750
+    "POLYU": 1835
   },
-  "codedCourseCount": 6200
+  "codedCourseCount": 6285
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
