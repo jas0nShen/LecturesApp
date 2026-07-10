@@ -257,13 +257,15 @@ test('HKUST Biomedical and Health Sciences exposes its verified 2025/26 core and
   const courses = ugService.listMajorCourses(programme.id, major.id);
 
   assert.equal(programme.sourceStatus, 'course_codes_available');
-  assert.equal(profile.codedCourseCount, 28);
-  assert.equal(courses.length, 28);
+  assert.equal(profile.codedCourseCount, 65);
+  assert.equal(courses.length, 65);
   ['LIFS1980', 'LIFS2901', 'LIFS4380', 'CHEM1011', 'COMP1021'].forEach((courseCode) => {
     assert(courses.some((course) => course.courseCode === courseCode));
   });
   assert(courses.some((course) => course.courseCode === 'LIFS3904' && course.requirementGroups.includes('major required alternative')));
   assert(courses.some((course) => course.courseCode === 'LIFS4976' && course.courseType === 'capstone'));
+  assert(courses.some((course) => course.courseCode === 'LIFS4320' && course.courseType === 'major_elective'));
+  assert(courses.some((course) => course.courseCode === 'LIFS3180' && course.requirementGroups.includes('major elective subject to approval')));
   assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Pharmacology' }).some((course) => course.courseCode === 'LIFS4380'));
 });
 

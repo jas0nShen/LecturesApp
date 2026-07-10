@@ -11,7 +11,7 @@ const counts = {
   "CITYU": 2362,
   "CUHK": 294,
   "HKU": 1842,
-  "HKUST": 376,
+  "HKUST": 413,
   "LINGNAN": 721,
   "POLYU": 2472
 };

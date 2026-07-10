@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T17:02:15.032Z",
+  "generatedAt": "2026-07-10T17:21:40.050Z",
   "universities": [
     {
       "id": "HKU",
@@ -4810,8 +4810,8 @@ const catalogue = {
       "type": "BSc in Biomedical and Health Sciences",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-science/biomedical-and-health-sciences",
       "sourceStatus": "course_codes_available",
-      "courseCount": 28,
-      "codedCourseCount": 28,
+      "courseCount": 65,
+      "codedCourseCount": 65,
       "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/BMH"
     },
     {
@@ -11355,8 +11355,8 @@ const catalogue = {
       "code": "BIOMEDICAL-AND-HEALTH-SCIENCES",
       "nameEn": "Biomedical and Health Sciences",
       "nameZh": "Biomedical and Health Sciences",
-      "courseCount": 29,
-      "codedCourseCount": 28,
+      "courseCount": 66,
+      "codedCourseCount": 65,
       "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26bmh.pdf"
     },
     {
@@ -16004,11 +16004,11 @@ const catalogue = {
     "CITYU": 2362,
     "CUHK": 294,
     "HKU": 1842,
-    "HKUST": 376,
+    "HKUST": 413,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 8067
+  "codedCourseCount": 8104
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
