@@ -1,6 +1,14 @@
 [
   {
     "universityCode": "POLYU",
+    "programmeCode": "JS3008",
+    "reviewedAt": "2026-07-10",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3008",
+    "note": "Official PolyU JUPAS and Faculty of Science pages publish the 30-credit Common Year One structure, including named faculty compulsory, professionals-in-society, GUR and free-elective components, for five potential majors. However, the public curriculum pages do not provide stable subject codes or a semester-by-semester coded table. Do not infer codes from subject names or assign courses from individual science programmes to this umbrella scheme. Keep JS3008 as index/source-only until a public coded Common Year One curriculum is available."
+  },
+  {
+    "universityCode": "POLYU",
     "programmeCode": "JS3007",
     "reviewedAt": "2026-07-10",
     "status": "no_public_course_codes",
