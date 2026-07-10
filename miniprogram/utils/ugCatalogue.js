@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T03:47:27.234Z",
+  "generatedAt": "2026-07-10T03:52:34.447Z",
   "universities": [
     {
       "id": "HKU",
@@ -5704,9 +5704,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3250",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 3,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 91,
+      "codedCourseCount": 91,
+      "courseSourceUrl": "https://www.polyu.edu.hk/apss/docdrive/epro/JS3250_Programme%20Curriculum%20for%20CMS%20e-Pro_2627.pdf"
     },
     {
       "id": "POLYU-UG-JS3214-4",
@@ -12001,8 +12002,8 @@ const catalogue = {
       "code": "SOCIAL-WORK",
       "nameEn": "Social Work",
       "nameZh": "Social Work",
-      "courseCount": 3,
-      "codedCourseCount": 0,
+      "courseCount": 47,
+      "codedCourseCount": 44,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3250"
     },
     {
@@ -12011,8 +12012,8 @@ const catalogue = {
       "code": "SOCIAL-POLICY-AND-SOCIAL-ENTREPRENEURSHIP",
       "nameEn": "Social Policy and Social Entrepreneurship",
       "nameZh": "Social Policy and Social Entrepreneurship",
-      "courseCount": 3,
-      "codedCourseCount": 0,
+      "courseCount": 50,
+      "codedCourseCount": 47,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3250"
     },
     {
@@ -15962,9 +15963,9 @@ const catalogue = {
     "HKU": 1511,
     "HKUST": 121,
     "LINGNAN": 721,
-    "POLYU": 2141
+    "POLYU": 2232
   },
-  "codedCourseCount": 6591
+  "codedCourseCount": 6682
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
