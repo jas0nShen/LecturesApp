@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T15:20:59.125Z",
+  "generatedAt": "2026-07-10T15:28:10.389Z",
   "universities": [
     {
       "id": "HKU",
@@ -7186,9 +7186,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1106",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 12,
+      "codedCourseCount": 12,
+      "courseSourceUrl": "https://www.cityu.edu.hk/admo/programmes/department-media-and-communication-options-ba-digital-television-and-broadcasting-ba"
     },
     {
       "id": "CITYU-UG-BSOCSCPAFM-33",
@@ -14045,9 +14046,9 @@ const catalogue = {
       "code": "BA-DIGITAL-TELEVISION-AND-BROADCASTING",
       "nameEn": "BA Digital Television and Broadcasting",
       "nameZh": "BA Digital Television and Broadcasting",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1106"
+      "courseCount": 7,
+      "codedCourseCount": 6,
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/department-media-and-communication-options-ba-digital-television-and-broadcasting-ba"
     },
     {
       "id": "CITYU-UG-COM-32-M2",
@@ -14055,9 +14056,9 @@ const catalogue = {
       "code": "BA-MEDIA-AND-COMMUNICATION",
       "nameEn": "BA Media and Communication",
       "nameZh": "BA Media and Communication",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1106"
+      "courseCount": 7,
+      "codedCourseCount": 6,
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/department-media-and-communication-options-ba-digital-television-and-broadcasting-ba"
     },
     {
       "id": "CITYU-UG-BSOCSCPAFM-33-M1",
@@ -15981,14 +15982,14 @@ const catalogue = {
     }
   ],
   "courseShardCounts": {
-    "CITYU": 2109,
+    "CITYU": 2121,
     "CUHK": 131,
     "HKU": 1842,
     "HKUST": 121,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 7396
+  "codedCourseCount": 7408
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

@@ -348,6 +348,21 @@ test('CityU law and accountancy double degree exposes its verified first-year st
   assert(courses.some((course) => course.courseCode === 'GE2402' && course.semester === 'Semester B or Summer'));
 });
 
+test('CityU Media and Communication exposes verified first-year foundation courses', () => {
+  const catalogue = require('../miniprogram/utils/ugCatalogue');
+  const programme = catalogue.programmes.find((item) => item.jupasCode === 'JS1106');
+  const majors = catalogue.majors.filter((item) => item.programmeId === programme.id);
+
+  assert.equal(majors.length, 2);
+  majors.forEach((major) => {
+    const courses = catalogue.courses.filter((course) => course.majorId === major.id);
+    const courseCodes = courses.map((course) => course.courseCode);
+    assert(courseCodes.includes('COM2105'));
+    assert(courseCodes.includes('COM2118'));
+    assert(courses.some((course) => course.courseCode === 'GE2412' && course.semester === 'Semester 2'));
+  });
+});
+
 test('UG source coverage report can focus missing programme work by school', () => {
   const args = parseArgs(['--school', 'cityu', '--missing-limit', '5', '--missing-only']);
   const summary = summarizeGeneratedCatalogue(args);

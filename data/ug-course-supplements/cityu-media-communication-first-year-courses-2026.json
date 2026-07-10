@@ -1,0 +1,22 @@
+{
+  "provider": "CityUHK Department of Media and Communication first-year curriculum",
+  "academicYear": "2026/27",
+  "sourceUrl": "https://www.cityu.edu.hk/admo/programmes/department-media-and-communication-options-ba-digital-television-and-broadcasting-ba",
+  "officialUrl": "https://www.cityu.edu.hk/admo/programmes/department-media-and-communication-options-ba-digital-television-and-broadcasting-ba",
+  "supplements": [
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1106",
+      "sourceUrl": "https://www.cityu.edu.hk/admo/programmes/department-media-and-communication-options-ba-digital-television-and-broadcasting-ba",
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/department-media-and-communication-options-ba-digital-television-and-broadcasting-ba",
+      "courses": [
+        { "code": "GE1401", "title": "University English", "credits": 3, "recommendedYear": 1, "semester": "Semester 1", "group": "university requirement" },
+        { "code": "GE1501", "title": "Chinese Civilisation - History and Philosophy", "credits": 3, "recommendedYear": 1, "semester": "Semester 1", "group": "university requirement" },
+        { "code": "GE1601", "title": "Whole-Person Development", "credits": 1, "recommendedYear": 1, "semester": "Semester 1", "group": "university requirement" },
+        { "code": "COM2105", "title": "Visual Communication", "credits": 3, "recommendedYear": 1, "semester": "Semester 1", "group": "foundation-year course" },
+        { "code": "GE2412", "title": "English for the Humanities and Social Sciences", "credits": 3, "recommendedYear": 1, "semester": "Semester 2", "group": "university requirement" },
+        { "code": "COM2118", "title": "Media and Society", "credits": 3, "recommendedYear": 1, "semester": "Semester 2", "group": "foundation-year course" }
+      ]
+    }
+  ]
+}
