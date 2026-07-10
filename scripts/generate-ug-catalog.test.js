@@ -445,6 +445,19 @@ test('CUHK Anthropology exposes the verified major required courses', () => {
   assert(courses.some((item) => item.courseCode === 'ANTH4301'));
 });
 
+test('CUHK Philosophy exposes the verified required and capstone courses', () => {
+  const catalogue = require('../miniprogram/utils/ugCatalogue');
+  const programme = catalogue.programmes.find((item) => item.universityCode === 'CUHK' && item.jupasCode === 'JS4094');
+  const major = catalogue.majors.find((item) => item.programmeId === programme.id);
+  const courses = catalogue.courses.filter((item) => item.majorId === major.id);
+
+  assert.equal(courses.length, 10);
+  assert(courses.some((item) => item.courseCode === 'PHIL1310'));
+  assert(courses.some((item) => item.courseCode === 'PHIL2020'));
+  assert(courses.some((item) => item.courseCode === 'PHIL2050'));
+  assert(courses.some((item) => item.courseCode === 'PHIL4800' && item.courseType === 'capstone'));
+});
+
 test('UG source coverage report can focus missing programme work by school', () => {
   const args = parseArgs(['--school', 'cityu', '--missing-limit', '5', '--missing-only']);
   const summary = summarizeGeneratedCatalogue(args);

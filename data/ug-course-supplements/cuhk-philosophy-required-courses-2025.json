@@ -1,0 +1,26 @@
+{
+  "provider": "CUHK Department of Philosophy undergraduate study scheme and course list",
+  "academicYear": "2025/26",
+  "sourceUrl": "https://www.phil.arts.cuhk.edu.hk/web/undergraduate/undergraduate-study-scheme/",
+  "officialUrl": "https://www.phil.arts.cuhk.edu.hk/web/courses/",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "jupasCode": "JS4094",
+      "sourceUrl": "https://www.phil.arts.cuhk.edu.hk/web/undergraduate/undergraduate-study-scheme/",
+      "officialUrl": "https://www.phil.arts.cuhk.edu.hk/web/courses/",
+      "courses": [
+        { "code": "PHIL1110", "title": "Introduction to Philosophy", "credits": 3, "group": "faculty package" },
+        { "code": "PHIL1310", "title": "Logic", "credits": 3, "group": "major required" },
+        { "code": "PHIL2020", "title": "History of Chinese Philosophy I", "credits": 3, "group": "major required" },
+        { "code": "PHIL2030", "title": "History of Chinese Philosophy II", "credits": 3, "group": "major required" },
+        { "code": "PHIL2040", "title": "History of Western Philosophy I", "credits": 3, "group": "major required" },
+        { "code": "PHIL2050", "title": "History of Western Philosophy II", "credits": 3, "group": "major required" },
+        { "code": "PHIL2000", "title": "Ethics", "credits": 3, "group": "major required" },
+        { "code": "PHIL3800", "title": "Metaphysics", "credits": 3, "group": "major required" },
+        { "code": "PHIL3820", "title": "Epistemology", "credits": 3, "group": "major required" },
+        { "code": "PHIL4800", "title": "Thesis", "credits": 3, "group": "capstone" }
+      ]
+    }
+  ]
+}

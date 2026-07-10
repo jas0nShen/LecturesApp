@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T15:42:34.987Z",
+  "generatedAt": "2026-07-10T15:45:49.589Z",
   "universities": [
     {
       "id": "HKU",
@@ -3314,9 +3314,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/philn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 10,
+      "codedCourseCount": 10,
+      "courseSourceUrl": "https://www.phil.arts.cuhk.edu.hk/web/undergraduate/undergraduate-study-scheme/"
     },
     {
       "id": "CUHK-UG-HISTN-PUH-12",
@@ -10561,9 +10562,9 @@ const catalogue = {
       "code": "PHILOSOPHY",
       "nameEn": "Philosophy",
       "nameZh": "Philosophy",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admission.cuhk.edu.hk/programme/philn/"
+      "courseCount": 11,
+      "codedCourseCount": 10,
+      "officialUrl": "https://www.phil.arts.cuhk.edu.hk/web/courses/"
     },
     {
       "id": "CUHK-UG-HISTN-PUH-12-M1",
@@ -15988,13 +15989,13 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 2362,
-    "CUHK": 142,
+    "CUHK": 152,
     "HKU": 1842,
     "HKUST": 121,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 7660
+  "codedCourseCount": 7670
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
