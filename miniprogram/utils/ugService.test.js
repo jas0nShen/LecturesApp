@@ -24,6 +24,25 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.match(summary.generatedDate, /^\d{4}-\d{2}-\d{2}$/);
 });
 
+test('CUHK Music exposes the verified 2025/26 required-course set', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const music = programmes.find((programme) => programme.jupasCode === 'JS4082');
+  const major = ugService.listMajors(music.id).find((item) => item.nameEn === 'Music');
+  const profile = ugService.getMajorProfile(music.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(music.id, major.id);
+
+  assert.equal(music.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 25);
+  assert.equal(courses.length, 25);
+  ['MUSC1000', 'MUSC1001', 'MUSC1011', 'MUSC1212', 'MUSC2552', 'MUSC2872', 'MUSC2262'].forEach((courseCode) => {
+    assert(courses.some((course) => course.courseCode === courseCode));
+  });
+  assert(courses.some((course) => course.courseCode === 'MUSC1000' && course.semester === 'Term 1'));
+  assert(courses.some((course) => course.courseCode === 'MUSC1011' && course.requirementGroups.includes('major required alternative')));
+  assert(ugService.listMajorCourses(music.id, major.id, { keyword: 'Chinese Music' }).some((course) => course.courseCode === 'MUSC2562'));
+});
+
 test('UG pending source readiness labels summarize index-only catalogue gaps', () => {
   assert.deepEqual(ugService.summarizePendingSourceReadiness([
     { codedCourseCount: 3, sourceStatus: 'course_codes_available' },

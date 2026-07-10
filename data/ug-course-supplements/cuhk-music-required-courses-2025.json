@@ -1,0 +1,41 @@
+{
+  "provider": "CUHK Department of Music BA in Music study scheme and undergraduate course offering",
+  "academicYear": "2025/26",
+  "sourceUrl": "https://www.arts.cuhk.edu.hk/~music/files/BA_MUSIC_studyscheme_2025_26.pdf",
+  "officialUrl": "https://www.arts.cuhk.edu.hk/~music/undergraduate-studies-course-offering",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "jupasCode": "JS4082",
+      "sourceUrl": "https://www.arts.cuhk.edu.hk/~music/files/BA_MUSIC_studyscheme_2025_26.pdf",
+      "officialUrl": "https://www.arts.cuhk.edu.hk/~music/undergraduate-studies-course-offering",
+      "courses": [
+        { "code": "MUSC1000", "title": "The Study of Music", "credits": 3, "year": 1, "semester": "Term 1", "group": "faculty package" },
+        { "code": "MUSC1001", "title": "Choral Singing I", "credits": 1, "year": 1, "semester": "Term 1", "group": "major required" },
+        { "code": "MUSC1002", "title": "Choral Singing II", "credits": 1, "year": 1, "semester": "Term 2", "group": "major required" },
+        { "code": "MUSC2001", "title": "Choral Singing III", "credits": 1, "year": 2, "group": "major required" },
+        { "code": "MUSC2002", "title": "Choral Singing IV", "credits": 1, "year": 2, "group": "major required" },
+        { "code": "MUSC1011", "title": "Applied Music (Minor I)", "credits": 2, "year": 1, "semester": "Term 1", "group": "major required alternative" },
+        { "code": "MUSC1051", "title": "Applied Music (Major I)", "credits": 2, "year": 1, "semester": "Term 1", "group": "major required alternative" },
+        { "code": "MUSC1012", "title": "Applied Music (Major IX)", "credits": 2, "year": 1, "semester": "Term 1", "group": "major required alternative" },
+        { "code": "MUSC1021", "title": "Applied Music (Minor II)", "credits": 2, "year": 1, "semester": "Term 2", "group": "major required alternative" },
+        { "code": "MUSC1061", "title": "Applied Music (Major II)", "credits": 2, "year": 1, "semester": "Term 2", "group": "major required alternative" },
+        { "code": "MUSC1022", "title": "Applied Music (Major X)", "credits": 2, "year": 1, "semester": "Term 2", "group": "major required alternative" },
+        { "code": "MUSC2011", "title": "Applied Music (Minor III)", "credits": 2, "year": 2, "group": "major required alternative" },
+        { "code": "MUSC2051", "title": "Applied Music (Major III)", "credits": 2, "year": 2, "group": "major required alternative" },
+        { "code": "MUSC2012", "title": "Applied Music (Major XI)", "credits": 2, "year": 2, "group": "major required alternative" },
+        { "code": "MUSC2021", "title": "Applied Music (Minor IV)", "credits": 2, "year": 2, "group": "major required alternative" },
+        { "code": "MUSC2061", "title": "Applied Music (Major IV)", "credits": 2, "year": 2, "group": "major required alternative" },
+        { "code": "MUSC2022", "title": "Applied Music (Major XII)", "credits": 2, "year": 2, "group": "major required alternative" },
+        { "code": "MUSC2552", "title": "Music, Culture and Society", "credits": 2, "group": "major required" },
+        { "code": "MUSC2562", "title": "Foundations of Chinese Music", "credits": 2, "group": "major required" },
+        { "code": "MUSC2872", "title": "History of Western Music I", "credits": 2, "group": "major required" },
+        { "code": "MUSC2882", "title": "History of Western Music II", "credits": 2, "group": "major required" },
+        { "code": "MUSC1212", "title": "Fundamentals of Tonal Music I", "credits": 2, "year": 1, "semester": "Term 1", "group": "major required" },
+        { "code": "MUSC1222", "title": "Fundamentals of Tonal Music II", "credits": 2, "year": 1, "semester": "Term 2", "group": "major required" },
+        { "code": "MUSC2252", "title": "Materials and Structures of Music", "credits": 2, "group": "major required" },
+        { "code": "MUSC2262", "title": "Advanced Harmonic Practice", "credits": 2, "group": "major required" }
+      ]
+    }
+  ]
+}

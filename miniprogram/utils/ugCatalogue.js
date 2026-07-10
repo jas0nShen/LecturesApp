@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T15:49:06.925Z",
+  "generatedAt": "2026-07-10T15:58:24.495Z",
   "universities": [
     {
       "id": "HKU",
@@ -3295,9 +3295,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/muscn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 25,
+      "codedCourseCount": 25,
+      "courseSourceUrl": "https://www.arts.cuhk.edu.hk/~music/files/BA_MUSIC_studyscheme_2025_26.pdf"
     },
     {
       "id": "CUHK-UG-PHILN-11",
@@ -10552,9 +10553,9 @@ const catalogue = {
       "code": "MUSIC",
       "nameEn": "Music",
       "nameZh": "Music",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admission.cuhk.edu.hk/programme/muscn/"
+      "courseCount": 26,
+      "codedCourseCount": 25,
+      "officialUrl": "https://www.arts.cuhk.edu.hk/~music/undergraduate-studies-course-offering"
     },
     {
       "id": "CUHK-UG-PHILN-11-M1",
@@ -15989,13 +15990,13 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 2362,
-    "CUHK": 152,
+    "CUHK": 177,
     "HKU": 1842,
     "HKUST": 121,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 7670
+  "codedCourseCount": 7695
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
