@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T03:38:20.320Z",
+  "generatedAt": "2026-07-10T03:43:45.696Z",
   "universities": [
     {
       "id": "HKU",
@@ -6496,9 +6496,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3242",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 37,
+      "codedCourseCount": 37,
+      "courseSourceUrl": "https://www.polyu.edu.hk/lst/study/undergraduate-programmes/bachelor-of-science-honours-in-speech-therapy/curriculum_bscst/"
     },
     {
       "id": "POLYU-UG-JS3160-45",
@@ -12979,8 +12980,8 @@ const catalogue = {
       "code": "BACHELOR-OF-SCIENCE-HONOURS-IN-SPEECH-THERAPY",
       "nameEn": "Bachelor of Science (Honours) in Speech Therapy",
       "nameZh": "Bachelor of Science (Honours) in Speech Therapy",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 38,
+      "codedCourseCount": 37,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3242"
     },
     {
@@ -15960,9 +15961,9 @@ const catalogue = {
     "HKU": 1511,
     "HKUST": 121,
     "LINGNAN": 721,
-    "POLYU": 2071
+    "POLYU": 2108
   },
-  "codedCourseCount": 6521
+  "codedCourseCount": 6558
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
