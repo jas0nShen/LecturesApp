@@ -1,6 +1,14 @@
 [
   {
     "universityCode": "POLYU",
+    "programmeCode": "JS3000",
+    "reviewedAt": "2026-07-10",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3000",
+    "note": "Official PolyU JUPAS page confirms that Interdisciplinary Studies is a flexible university scheme in which students design their own Major under a curriculum framework, with a graduation range of 120 to 150 credits. The public page provides no stable course-code table or single required-course list because individual study pathways differ. Keep this scheme as index/source-only and do not assign courses from other programmes to it."
+  },
+  {
+    "universityCode": "POLYU",
     "programmeCode": "JS3791",
     "reviewedAt": "2026-07-10",
     "status": "no_public_course_codes",
