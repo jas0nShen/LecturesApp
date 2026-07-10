@@ -25,7 +25,8 @@
     { "root": "subpackages/ug-data-hku", "name": "ug-data-hku", "pages": ["pages/loader/index"] },
     { "root": "subpackages/ug-data-hkust", "name": "ug-data-hkust", "pages": ["pages/loader/index"] },
     { "root": "subpackages/ug-data-lingnan", "name": "ug-data-lingnan", "pages": ["pages/loader/index"] },
-    { "root": "subpackages/ug-data-polyu", "name": "ug-data-polyu", "pages": ["pages/loader/index"] }
+    { "root": "subpackages/ug-data-polyu-a", "name": "ug-data-polyu-a", "pages": ["pages/loader/index"] },
+    { "root": "subpackages/ug-data-polyu-b", "name": "ug-data-polyu-b", "pages": ["pages/loader/index"] }
   ],
   "window": {
     "navigationBarTitleText": "课程选择助手",

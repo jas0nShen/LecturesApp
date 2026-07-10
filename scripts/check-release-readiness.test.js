@@ -36,7 +36,7 @@ test('current mini-program passes automated release readiness checks', () => {
   assert(result.metrics.packageBytes > 0);
   assert(result.metrics.mainPackageBytes > 0);
   assert(result.metrics.mainPackageBytes <= 2 * 1024 * 1024);
-  assert.equal(result.metrics.subpackageBytes.length, 7);
+  assert.equal(result.metrics.subpackageBytes.length, 8);
   assert(result.metrics.subpackageBytes.every((subpackage) => subpackage.bytes <= 2 * 1024 * 1024));
   assert.match(result.manualChecklist.reviewMaterial, /REVIEW_SUBMISSION/);
 });

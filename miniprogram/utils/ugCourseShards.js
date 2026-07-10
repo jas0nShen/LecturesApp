@@ -5,7 +5,7 @@ const loaders = {
   "HKU": () => [].concat(require('../subpackages/ug-data-hku/ugCourseData/hku')),
   "HKUST": () => [].concat(require('../subpackages/ug-data-hkust/ugCourseData/hkust')),
   "LINGNAN": () => [].concat(require('../subpackages/ug-data-lingnan/ugCourseData/lingnan')),
-  "POLYU": () => [].concat(require('../subpackages/ug-data-polyu/ugCourseData/polyu')),
+  "POLYU": () => [].concat(require('../subpackages/ug-data-polyu-a/ugCourseData/polyu-a'), require('../subpackages/ug-data-polyu-b/ugCourseData/polyu-b')),
 };
 const counts = {
   "CITYU": 2362,
