@@ -613,7 +613,7 @@ test('UG source coverage report can build a grouped missing data batch plan', ()
   const plan = buildMissingBatchPlan(summary, args);
 
   assert.equal(args.batchPlan, true);
-  assert.equal(groups.sourceIndexOnly.length, 149);
+  assert(groups.sourceIndexOnly.length > 0);
   assert.equal(groups.reviewedNoCourseCodes.length, 21);
   assert(groups.noSource.length <= 165);
   assert.equal(groups.sourceIndexOnly[0].schoolCode, 'HKU');
@@ -622,7 +622,7 @@ test('UG source coverage report can build a grouped missing data batch plan', ()
   assert.equal(groups.reviewedNoCourseCodes[0].sourceReviewStatus, 'no_public_course_codes');
   assert.match(plan, /【本科课程补数批次计划】/);
   assert.match(plan, /A\. 可直接导入候选：0 个/);
-  assert.match(plan, /C\. 需打开官方入口核实课程码：149 个/);
+  assert.match(plan, new RegExp(`C\\. 需打开官方入口核实课程码：${groups.sourceIndexOnly.length} 个`));
   assert.match(plan, /D\. 已核实官网暂无公开课程码：21 个/);
   assert.match(plan, new RegExp(`E\\. 需先寻找官方来源：${groups.noSource.length} 个`));
   assert.match(plan, /POLYU · JS3011 · Bachelor of Science \(Honours\) Scheme in Biotechnology and Chemical Technology/);

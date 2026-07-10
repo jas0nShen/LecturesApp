@@ -80,6 +80,24 @@ test('CUHK Linguistics exposes the official 2025/26 course areas and research pr
   assert(ugService.listMajorCourses(linguistics.id, major.id, { keyword: 'information technology' }).some((course) => course.courseCode === 'LING3401'));
 });
 
+test('CUHK Bimodal Bilingual Studies exposes its senior-entry 2025/26 study scheme', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const bimodal = programmes.find((programme) => programme.code === 'BMBLN');
+  const major = ugService.listMajors(bimodal.id).find((item) => item.nameEn === 'Bimodal Bilingual Studies');
+  const profile = ugService.getMajorProfile(bimodal.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(bimodal.id, major.id);
+
+  assert.equal(bimodal.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 18);
+  assert.equal(courses.length, 18);
+  ['BMBL1001', 'BMBL2004', 'HKSL1003', 'BMBL3002', 'BMBL4102'].forEach((courseCode) => {
+    assert(courses.some((course) => course.courseCode === courseCode));
+  });
+  assert(courses.some((course) => course.courseCode === 'BMBL4000' && course.courseType === 'internship'));
+  assert(courses.some((course) => course.courseCode === 'BMBL4102' && course.courseType === 'capstone'));
+});
+
 test('UG pending source readiness labels summarize index-only catalogue gaps', () => {
   assert.deepEqual(ugService.summarizePendingSourceReadiness([
     { codedCourseCount: 3, sourceStatus: 'course_codes_available' },

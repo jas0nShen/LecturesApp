@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T16:03:26.791Z",
+  "generatedAt": "2026-07-10T16:04:59.269Z",
   "universities": [
     {
       "id": "HKU",
@@ -3143,9 +3143,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/bmbln/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 18,
+      "codedCourseCount": 18,
+      "courseSourceUrl": "https://ling.cuhk.edu.hk/programmes/undergraduate-programme/major-programme-in-bimodal-bilingual-studies-copy/"
     },
     {
       "id": "CUHK-UG-CHLLN-3",
@@ -10475,9 +10476,9 @@ const catalogue = {
       "code": "BIMODAL-BILINGUAL-STUDIES",
       "nameEn": "Bimodal Bilingual Studies",
       "nameZh": "Bimodal Bilingual Studies",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admission.cuhk.edu.hk/programme/bmbln/"
+      "courseCount": 19,
+      "codedCourseCount": 18,
+      "officialUrl": "https://ling.cuhk.edu.hk/programmes/undergraduate-programme/major-programme-in-bimodal-bilingual-studies-copy/"
     },
     {
       "id": "CUHK-UG-CHLLN-3-M1",
@@ -15992,13 +15993,13 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 2362,
-    "CUHK": 271,
+    "CUHK": 289,
     "HKU": 1842,
     "HKUST": 121,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 7789
+  "codedCourseCount": 7807
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

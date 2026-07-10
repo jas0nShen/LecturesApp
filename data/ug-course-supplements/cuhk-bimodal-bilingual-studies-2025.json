@@ -1,0 +1,34 @@
+{
+  "provider": "CUHK Department of Linguistics and Modern Languages Bimodal Bilingual Studies study scheme and course list",
+  "academicYear": "2025/26",
+  "sourceUrl": "https://ling.cuhk.edu.hk/programmes/undergraduate-programme/major-programme-in-bimodal-bilingual-studies-copy/",
+  "officialUrl": "https://ling.cuhk.edu.hk/programmes/undergraduate-programme/major-programme-in-bimodal-bilingual-studies-copy/",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "BMBLN",
+      "sourceUrl": "https://ling.cuhk.edu.hk/programmes/undergraduate-programme/major-programme-in-bimodal-bilingual-studies-copy/",
+      "officialUrl": "https://ling.cuhk.edu.hk/programmes/undergraduate-programme/major-programme-in-bimodal-bilingual-studies-copy/",
+      "courses": [
+        { "code": "BMBL1001", "title": "Introduction to Sign Language and Bimodal Bilingualism", "credits": 3, "year": 1, "semester": "Term 1", "group": "major required" },
+        { "code": "BMBL1002", "title": "Sign Language in Education", "credits": 3, "year": 1, "semester": "Term 1", "group": "major required" },
+        { "code": "BMBL2001", "title": "Sign Linguistics I: Phonetics and Phonology", "credits": 3, "year": 1, "semester": "Term 2", "group": "major required" },
+        { "code": "BMBL2002", "title": "Sign Linguistics II: Morphology and Morpho-syntax", "credits": 3, "year": 1, "semester": "Term 2", "group": "major required" },
+        { "code": "BMBL2003", "title": "Sign Linguistics III: Syntax, Semantics and Pragmatics", "credits": 3, "year": 2, "semester": "Term 1", "group": "major required" },
+        { "code": "BMBL2004", "title": "Language Acquisition of Deaf Children", "credits": 3, "year": 2, "semester": "Term 1", "group": "major required" },
+        { "code": "HKSL1003", "title": "Hong Kong Sign Language I & II", "credits": 6, "year": 1, "semester": "Term 1", "group": "major required" },
+        { "code": "HKSL2003", "title": "Hong Kong Sign Language III & IV", "credits": 6, "year": 1, "semester": "Term 2", "group": "major required" },
+        { "code": "HKSL3001", "title": "Hong Kong Sign Language V", "credits": 3, "year": 2, "semester": "Term 1", "group": "major required" },
+        { "code": "HKSL3002", "title": "Hong Kong Sign Language VI", "credits": 3, "year": 2, "semester": "Term 2", "group": "major required" },
+        { "code": "BMBL2005", "title": "Sign Language and the Mind", "credits": 3, "year": 2, "group": "major elective" },
+        { "code": "BMBL3002", "title": "Introduction to Sign Language Interpreting", "credits": 3, "year": 2, "group": "major elective" },
+        { "code": "BMBL3003", "title": "Special Topics in Sign Language Studies", "credits": 3, "year": 2, "group": "major elective" },
+        { "code": "BMBL4000", "title": "Sign Language Research Internship", "credits": 1, "year": 1, "group": "internship" },
+        { "code": "BMBL4101", "title": "Research Project I", "credits": 0, "year": 2, "group": "capstone" },
+        { "code": "BMBL4102", "title": "Research Project II", "credits": 3, "year": 2, "group": "capstone" },
+        { "code": "BMBL4201", "title": "Service Learning I", "credits": 0, "year": 2, "group": "capstone" },
+        { "code": "BMBL4202", "title": "Service Learning II", "credits": 3, "year": 2, "group": "capstone" }
+      ]
+    }
+  ]
+}
