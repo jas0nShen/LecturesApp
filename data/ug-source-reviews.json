@@ -1,5 +1,13 @@
 [
   {
+    "universityCode": "HKU",
+    "programmeCode": "6066",
+    "reviewedAt": "2026-07-10",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://web.edu.hku.hk/programme/babed_6066/curriculum",
+    "note": "Official HKU Faculty of Education curriculum page confirms the five-year BA and BEd English programme's degree components and credit totals, including English Language and Linguistics, professional core, practicum, common core and electives. The public page does not provide a stable coded course list or semester-by-semester table, and its linked programme pamphlet is not publicly retrievable through the source endpoint. Keep this programme as index/source-only until an official coded curriculum source is available."
+  },
+  {
     "universityCode": "POLYU",
     "programmeCode": "JS3008",
     "reviewedAt": "2026-07-10",
