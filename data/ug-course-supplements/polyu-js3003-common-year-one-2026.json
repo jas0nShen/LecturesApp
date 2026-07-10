@@ -1,0 +1,28 @@
+{
+  "provider": "PolyU Faculty of Business Bachelor’s Degree Scheme in Business Administration Programme Structure",
+  "academicYear": "2026",
+  "sourceUrl": "https://www.polyu.edu.hk/fb/study/ug/bba-schemes/ba-fb/programme-structure/",
+  "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3003",
+  "supplements": [
+    {
+      "universityCode": "POLYU",
+      "programmeCode": "JS3003",
+      "majorName": "Bachelor’s Degree Scheme in Business Administration",
+      "sourceUrl": "https://www.polyu.edu.hk/fb/study/ug/bba-schemes/ba-fb/programme-structure/",
+      "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3003",
+      "courses": [
+        { "code": "AF/LGT/MM1003", "title": "Business Professionals in Society", "credits": 3, "recommendedYear": 1, "semester": "Semester 1", "group": "Common Year One" },
+        { "code": "AF1605", "title": "Introduction to Economics", "credits": 3, "recommendedYear": 1, "semester": "Semester 1", "group": "Common Year One" },
+        { "code": "MM1051", "title": "Tango! Managing Self & Leading Others", "credits": 3, "recommendedYear": 1, "semester": "Semester 1", "group": "Common Year One" },
+        { "code": "MM1031", "title": "Introduction to Innovation and Entrepreneurship", "credits": 1, "recommendedYear": 1, "semester": "Semester 1", "group": "General University Requirements" },
+        { "code": "MM1041", "title": "Introduction to Artificial Intelligence and Data Analytics in Business", "credits": 2, "recommendedYear": 1, "semester": "Semester 1", "group": "General University Requirements" },
+        { "code": "APSS111", "title": "Introduction to Psychology", "credits": 3, "recommendedYear": 1, "semester": "Semester 1", "group": "Common Year One" },
+        { "code": "AMA1501", "title": "Introduction to Statistics for Business", "credits": 3, "recommendedYear": 1, "semester": "Semester 2", "group": "Common Year One" },
+        { "code": "LGT2106", "title": "Principles of Operations Management", "credits": 3, "recommendedYear": 1, "semester": "Semester 2", "group": "Common Year One" },
+        { "code": "MM2711", "title": "Introduction to Marketing", "credits": 3, "recommendedYear": 1, "semester": "Semester 2", "group": "Common Year One" },
+        { "code": "AF2108", "title": "Financial Accounting", "credits": 3, "recommendedYear": 1, "semester": "Semester 2", "group": "Common Year One" },
+        { "code": "MM2021", "title": "Management & Organisation", "credits": 3, "recommendedYear": 1, "semester": "Semester 2", "group": "Common Year One" }
+      ]
+    }
+  ]
+}

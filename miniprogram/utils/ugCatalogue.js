@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T08:06:31.945Z",
+  "generatedAt": "2026-07-10T08:20:32.129Z",
   "universities": [
     {
       "id": "HKU",
@@ -5840,9 +5840,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3003",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 3,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 11,
+      "codedCourseCount": 11,
+      "courseSourceUrl": "https://www.polyu.edu.hk/fb/study/ug/bba-schemes/ba-fb/programme-structure/"
     },
     {
       "id": "POLYU-UG-JS3320-11",
@@ -12099,8 +12100,8 @@ const catalogue = {
       "code": "BACHELOR-S-DEGREE-SCHEME-IN-BUSINESS-ADMINISTRAT",
       "nameEn": "Bachelor’s Degree Scheme in Business Administration",
       "nameZh": "Bachelor’s Degree Scheme in Business Administration",
-      "courseCount": 3,
-      "codedCourseCount": 0,
+      "courseCount": 14,
+      "codedCourseCount": 11,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3003"
     },
     {
@@ -15970,9 +15971,9 @@ const catalogue = {
     "HKU": 1511,
     "HKUST": 121,
     "LINGNAN": 721,
-    "POLYU": 2461
+    "POLYU": 2472
   },
-  "codedCourseCount": 6911
+  "codedCourseCount": 6922
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
