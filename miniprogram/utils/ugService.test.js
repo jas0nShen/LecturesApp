@@ -98,6 +98,22 @@ test('CUHK Bimodal Bilingual Studies exposes its senior-entry 2025/26 study sche
   assert(courses.some((course) => course.courseCode === 'BMBL4102' && course.courseType === 'capstone'));
 });
 
+test('CUHK History exposes the verified 2025/26 required and capstone courses', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const history = programmes.find((programme) => programme.jupasCode === 'JS4056');
+  const major = ugService.listMajors(history.id).find((item) => item.nameEn === 'History');
+  const profile = ugService.getMajorProfile(history.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(history.id, major.id);
+
+  assert.equal(history.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 5);
+  assert.equal(courses.length, 5);
+  assert(courses.some((course) => course.courseCode === 'HIST1001' && course.courseType === 'core'));
+  assert(courses.some((course) => course.courseCode === 'HIST4812' && course.courseType === 'capstone' && course.credits === 5));
+  assert(ugService.listMajorCourses(history.id, major.id, { keyword: 'Western History' }).some((course) => course.courseCode === 'HIST1002'));
+});
+
 test('UG pending source readiness labels summarize index-only catalogue gaps', () => {
   assert.deepEqual(ugService.summarizePendingSourceReadiness([
     { codedCourseCount: 3, sourceStatus: 'course_codes_available' },

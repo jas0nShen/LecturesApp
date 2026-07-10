@@ -1,0 +1,21 @@
+{
+  "provider": "CUHK Department of History 2025/26 BA study scheme and graduation thesis guidance",
+  "academicYear": "2025/26",
+  "sourceUrl": "https://www.history.cuhk.edu.hk/en/study/ba-programme/study-scheme/major-programme/",
+  "officialUrl": "https://www.history.cuhk.edu.hk/en/study/course-list/",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "jupasCode": "JS4056",
+      "sourceUrl": "https://www.history.cuhk.edu.hk/en/study/ba-programme/study-scheme/major-programme/",
+      "officialUrl": "https://www.history.cuhk.edu.hk/en/study/course-list/",
+      "courses": [
+        { "code": "HIST1000", "title": "History for Today", "credits": 3, "year": 1, "group": "faculty package" },
+        { "code": "HIST1001", "title": "Tradition and Transformation in Chinese History", "credits": 3, "year": 1, "group": "major required" },
+        { "code": "HIST1002", "title": "Tradition and Transformation in Western History", "credits": 3, "year": 1, "group": "major required" },
+        { "code": "HIST4811", "title": "Graduation Thesis Guidance", "credits": 1, "year": 4, "semester": "Term 1", "group": "capstone" },
+        { "code": "HIST4812", "title": "Graduation Thesis", "credits": 5, "year": 4, "semester": "Term 2", "group": "capstone", "prerequisites": "HIST4811" }
+      ]
+    }
+  ]
+}

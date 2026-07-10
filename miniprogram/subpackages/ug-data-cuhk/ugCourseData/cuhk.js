@@ -3901,6 +3901,116 @@ module.exports = [
     "academicYear": "2025/26"
   },
   {
+    "id": "CUHK-UG-HISTN-7-M1-SUP-HIST1000-1",
+    "programmeId": "CUHK-UG-HISTN-7",
+    "majorId": "CUHK-UG-HISTN-7-M1",
+    "courseCode": "HIST1000",
+    "titleEn": "History for Today",
+    "titleZh": "History for Today",
+    "credits": 3,
+    "recommendedYear": 1,
+    "semester": "",
+    "courseType": "major_elective",
+    "requirementGroups": [
+      "faculty package"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://www.history.cuhk.edu.hk/en/study/ba-programme/study-scheme/major-programme/",
+    "officialUrl": "https://www.history.cuhk.edu.hk/en/study/course-list/",
+    "sourceProvider": "CUHK Department of History 2025/26 BA study scheme and graduation thesis guidance",
+    "academicYear": "2025/26"
+  },
+  {
+    "id": "CUHK-UG-HISTN-7-M1-SUP-HIST1001-2",
+    "programmeId": "CUHK-UG-HISTN-7",
+    "majorId": "CUHK-UG-HISTN-7-M1",
+    "courseCode": "HIST1001",
+    "titleEn": "Tradition and Transformation in Chinese History",
+    "titleZh": "Tradition and Transformation in Chinese History",
+    "credits": 3,
+    "recommendedYear": 1,
+    "semester": "",
+    "courseType": "core",
+    "requirementGroups": [
+      "major required"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://www.history.cuhk.edu.hk/en/study/ba-programme/study-scheme/major-programme/",
+    "officialUrl": "https://www.history.cuhk.edu.hk/en/study/course-list/",
+    "sourceProvider": "CUHK Department of History 2025/26 BA study scheme and graduation thesis guidance",
+    "academicYear": "2025/26"
+  },
+  {
+    "id": "CUHK-UG-HISTN-7-M1-SUP-HIST1002-3",
+    "programmeId": "CUHK-UG-HISTN-7",
+    "majorId": "CUHK-UG-HISTN-7-M1",
+    "courseCode": "HIST1002",
+    "titleEn": "Tradition and Transformation in Western History",
+    "titleZh": "Tradition and Transformation in Western History",
+    "credits": 3,
+    "recommendedYear": 1,
+    "semester": "",
+    "courseType": "core",
+    "requirementGroups": [
+      "major required"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://www.history.cuhk.edu.hk/en/study/ba-programme/study-scheme/major-programme/",
+    "officialUrl": "https://www.history.cuhk.edu.hk/en/study/course-list/",
+    "sourceProvider": "CUHK Department of History 2025/26 BA study scheme and graduation thesis guidance",
+    "academicYear": "2025/26"
+  },
+  {
+    "id": "CUHK-UG-HISTN-7-M1-SUP-HIST4811-4",
+    "programmeId": "CUHK-UG-HISTN-7",
+    "majorId": "CUHK-UG-HISTN-7-M1",
+    "courseCode": "HIST4811",
+    "titleEn": "Graduation Thesis Guidance",
+    "titleZh": "Graduation Thesis Guidance",
+    "credits": 1,
+    "recommendedYear": 4,
+    "semester": "Term 1",
+    "courseType": "capstone",
+    "requirementGroups": [
+      "capstone"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://www.history.cuhk.edu.hk/en/study/ba-programme/study-scheme/major-programme/",
+    "officialUrl": "https://www.history.cuhk.edu.hk/en/study/course-list/",
+    "sourceProvider": "CUHK Department of History 2025/26 BA study scheme and graduation thesis guidance",
+    "academicYear": "2025/26"
+  },
+  {
+    "id": "CUHK-UG-HISTN-7-M1-SUP-HIST4812-5",
+    "programmeId": "CUHK-UG-HISTN-7",
+    "majorId": "CUHK-UG-HISTN-7-M1",
+    "courseCode": "HIST4812",
+    "titleEn": "Graduation Thesis",
+    "titleZh": "Graduation Thesis",
+    "credits": 5,
+    "recommendedYear": 4,
+    "semester": "Term 2",
+    "courseType": "capstone",
+    "requirementGroups": [
+      "capstone"
+    ],
+    "prerequisites": "HIST4811",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://www.history.cuhk.edu.hk/en/study/ba-programme/study-scheme/major-programme/",
+    "officialUrl": "https://www.history.cuhk.edu.hk/en/study/course-list/",
+    "sourceProvider": "CUHK Department of History 2025/26 BA study scheme and graduation thesis guidance",
+    "academicYear": "2025/26"
+  },
+  {
     "id": "CUHK-UG-LINGN-9-M1-SUP-LING1000-1",
     "programmeId": "CUHK-UG-LINGN-9",
     "majorId": "CUHK-UG-LINGN-9-M1",

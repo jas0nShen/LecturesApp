@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T16:04:59.269Z",
+  "generatedAt": "2026-07-10T16:07:01.393Z",
   "universities": [
     {
       "id": "HKU",
@@ -3240,9 +3240,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/histn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 5,
+      "codedCourseCount": 5,
+      "courseSourceUrl": "https://www.history.cuhk.edu.hk/en/study/ba-programme/study-scheme/major-programme/"
     },
     {
       "id": "CUHK-UG-JASPN-8",
@@ -10526,9 +10527,9 @@ const catalogue = {
       "code": "HISTORY",
       "nameEn": "History",
       "nameZh": "History",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admission.cuhk.edu.hk/programme/histn/"
+      "courseCount": 6,
+      "codedCourseCount": 5,
+      "officialUrl": "https://www.history.cuhk.edu.hk/en/study/course-list/"
     },
     {
       "id": "CUHK-UG-JASPN-8-M1",
@@ -15993,13 +15994,13 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 2362,
-    "CUHK": 289,
+    "CUHK": 294,
     "HKU": 1842,
     "HKUST": 121,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 7807
+  "codedCourseCount": 7812
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
