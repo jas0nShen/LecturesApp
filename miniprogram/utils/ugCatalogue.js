@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T16:53:28.484Z",
+  "generatedAt": "2026-07-10T16:56:06.464Z",
   "universities": [
     {
       "id": "HKU",
@@ -4769,9 +4769,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BSc in Biochemistry and Cell Biology",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-science/biochemistry-and-cell-biology",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 37,
+      "codedCourseCount": 37,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/BCB"
     },
     {
       "id": "HKUST-UG-JS5220-DEPARTMENT-OF-CHEMICAL-AND-BIOLOGICAL-ENG-4",
@@ -11332,9 +11333,9 @@ const catalogue = {
       "code": "BSC-IN-BIOCHEMISTRY-AND-CELL-BIOLOGY",
       "nameEn": "BSc in Biochemistry and Cell Biology",
       "nameZh": "BSc in Biochemistry and Cell Biology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-science/biochemistry-and-cell-biology"
+      "courseCount": 38,
+      "codedCourseCount": 37,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26bcb.pdf"
     },
     {
       "id": "HKUST-UG-JS5220-DEPARTMENT-OF-CHEMICAL-AND-BIOLOGICAL-ENG-4-M1",
@@ -16001,11 +16002,11 @@ const catalogue = {
     "CITYU": 2362,
     "CUHK": 294,
     "HKU": 1842,
-    "HKUST": 259,
+    "HKUST": 296,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 7950
+  "codedCourseCount": 7987
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

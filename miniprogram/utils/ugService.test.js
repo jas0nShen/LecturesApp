@@ -211,6 +211,25 @@ test('HKUST Bioengineering exposes its verified 2025/26 core and elective course
   assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Pharmaceutical' }).some((course) => course.courseCode === 'CENG4670'));
 });
 
+test('HKUST Biochemistry and Cell Biology exposes verified 2025/26 prerequisites, curriculum and IRE track courses', () => {
+  const hkust = ugService.listUniversities().find((item) => item.code === 'HKUST');
+  const programme = ugService.listProgrammes({ universityId: hkust.id, degreeLevel: 'undergraduate' }).find((item) => item.nameEn === 'BSc in Biochemistry and Cell Biology');
+  const major = ugService.listMajors(programme.id).find((item) => item.nameEn === 'BSc in Biochemistry and Cell Biology');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 37);
+  assert.equal(courses.length, 37);
+  ['LIFS2010', 'LIFS3140', 'CHEM1011', 'CHEM3320', 'LIFS3110'].forEach((courseCode) => {
+    assert(courses.some((course) => course.courseCode === courseCode));
+  });
+  assert(courses.some((course) => course.courseCode === 'LIFS1901' && course.requirementGroups.includes('major prerequisite exemption')));
+  assert(courses.some((course) => course.courseCode === 'LIFS4961' && course.courseType === 'capstone'));
+  assert(courses.some((course) => course.courseCode === 'LIFS3070' && course.courseType === 'core'));
+  assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Genetics' }).some((course) => course.courseCode === 'LIFS3140'));
+});
+
 test('UG pending source readiness labels summarize index-only catalogue gaps', () => {
   assert.deepEqual(ugService.summarizePendingSourceReadiness([
     { codedCourseCount: 3, sourceStatus: 'course_codes_available' },
