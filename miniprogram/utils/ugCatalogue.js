@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T15:11:40.070Z",
+  "generatedAt": "2026-07-10T15:16:07.344Z",
   "universities": [
     {
       "id": "HKU",
@@ -6952,9 +6952,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1051",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 30,
+      "codedCourseCount": 30,
+      "courseSourceUrl": "https://www.cityu.edu.hk/admo/programmes/school-energy-and-environment-options-beng-energy-science-and-engineering-beng"
     },
     {
       "id": "CITYU-UG-BENGESE-BBAFIN-21",
@@ -13682,9 +13683,9 @@ const catalogue = {
       "code": "BENG-ENERGY-SCIENCE-AND-ENGINEERING",
       "nameEn": "BEng Energy Science and Engineering",
       "nameZh": "BEng Energy Science and Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1051"
+      "courseCount": 16,
+      "codedCourseCount": 15,
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/school-energy-and-environment-options-beng-energy-science-and-engineering-beng"
     },
     {
       "id": "CITYU-UG-SEE-20-M2",
@@ -13692,9 +13693,9 @@ const catalogue = {
       "code": "BENG-ENVIRONMENTAL-SCIENCE-AND-ENGINEERING",
       "nameEn": "BEng Environmental Science and Engineering",
       "nameZh": "BEng Environmental Science and Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1051"
+      "courseCount": 16,
+      "codedCourseCount": 15,
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/school-energy-and-environment-options-beng-energy-science-and-engineering-beng"
     },
     {
       "id": "CITYU-UG-BENGESE-BBAFIN-21-M1",
@@ -15978,14 +15979,14 @@ const catalogue = {
     }
   ],
   "courseShardCounts": {
-    "CITYU": 2056,
+    "CITYU": 2086,
     "CUHK": 131,
     "HKU": 1842,
     "HKUST": 121,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 7343
+  "codedCourseCount": 7373
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

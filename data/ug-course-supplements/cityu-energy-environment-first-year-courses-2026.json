@@ -1,0 +1,31 @@
+{
+  "provider": "CityUHK School of Energy and Environment first-year curriculum",
+  "academicYear": "2026/27",
+  "sourceUrl": "https://www.cityu.edu.hk/admo/programmes/school-energy-and-environment-options-beng-energy-science-and-engineering-beng",
+  "officialUrl": "https://www.cityu.edu.hk/admo/programmes/school-energy-and-environment-options-beng-energy-science-and-engineering-beng",
+  "supplements": [
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1051",
+      "sourceUrl": "https://www.cityu.edu.hk/admo/programmes/school-energy-and-environment-options-beng-energy-science-and-engineering-beng",
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/school-energy-and-environment-options-beng-energy-science-and-engineering-beng",
+      "courses": [
+        { "code": "GE1401", "title": "University English", "credits": 3, "recommendedYear": 1, "group": "gateway education" },
+        { "code": "GE2410", "title": "English for Engineering", "credits": 3, "recommendedYear": 1, "group": "gateway education" },
+        { "code": "GE1501", "title": "Chinese Civilisation - History and Philosophy", "credits": 3, "recommendedYear": 1, "group": "gateway education" },
+        { "code": "GE1601", "title": "Whole-Person Development", "credits": 1, "recommendedYear": 1, "group": "gateway education" },
+        { "code": "MA1200", "title": "Calculus and Basic Linear Algebra I", "credits": 3, "recommendedYear": 1, "group": "mathematics option" },
+        { "code": "MA1300", "title": "Enhanced Calculus and Linear Algebra I", "credits": 3, "recommendedYear": 1, "group": "mathematics option" },
+        { "code": "MA1201", "title": "Calculus and Basic Linear Algebra II", "credits": 3, "recommendedYear": 1, "group": "mathematics option" },
+        { "code": "MA1301", "title": "Enhanced Calculus and Linear Algebra II", "credits": 3, "recommendedYear": 1, "group": "mathematics option" },
+        { "code": "SEE1002", "title": "Introduction to Computing for Energy and Environment", "credits": 3, "recommendedYear": 1, "group": "school requirement" },
+        { "code": "CA1167", "title": "Engineering Communication", "credits": 3, "recommendedYear": 1, "group": "school requirement" },
+        { "code": "SEE1003", "title": "Introduction to Sustainable Energy and Environmental Engineering", "credits": 3, "recommendedYear": 1, "group": "school requirement" },
+        { "code": "SEE3002", "title": "Energy and Environmental Economics", "credits": 3, "recommendedYear": 1, "group": "school requirement" },
+        { "code": "PHY1201", "title": "General Physics I", "credits": 3, "recommendedYear": 1, "group": "science requirement" },
+        { "code": "CHEM1300", "title": "Principles of General Chemistry", "credits": 3, "recommendedYear": 1, "group": "science requirement" },
+        { "code": "CHEM1200", "title": "Discovery in Biology", "credits": 3, "recommendedYear": 1, "group": "science requirement" }
+      ]
+    }
+  ]
+}
