@@ -1,6 +1,14 @@
 [
   {
     "universityCode": "POLYU",
+    "programmeCode": "JS3004",
+    "reviewedAt": "2026-07-10",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3004",
+    "note": "Official PolyU JUPAS page confirms that Construction and Environment is a common-entry scheme with nine potential majors and a Common Year One before programme selection. It does not publish a stable coded table for the shared first-year curriculum. The individual major pages and secondary-major/minor structures have different requirements, so their courses must not be assigned to the umbrella scheme. Keep this scheme as index/source-only until a public coded Common Year One curriculum is available."
+  },
+  {
+    "universityCode": "POLYU",
     "programmeCode": "JS3000",
     "reviewedAt": "2026-07-10",
     "status": "no_public_course_codes",
