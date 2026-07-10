@@ -96,6 +96,13 @@ test('release-facing docs avoid stale launch terminology', () => {
   });
 });
 
+test('release checklist documents stale-cache recovery for WeChat subpackage upload errors', () => {
+  const checklist = fs.readFileSync(path.join(ROOT, 'docs', 'RELEASE_CHECKLIST.md'), 'utf8');
+  assert(checklist.includes('上传失败：分包大小或旧缓存'));
+  assert(checklist.includes('ug-data-polyu-a'));
+  assert(checklist.includes('2MB'));
+});
+
 test('home page avoids internal launch status labels', () => {
   const homePage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'home', 'home.wxml'), 'utf8');
   const homeLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'home', 'home.js'), 'utf8');

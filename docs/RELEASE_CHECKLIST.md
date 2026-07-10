@@ -64,6 +64,16 @@ npm run status:ug-sources -- --school HKU --missing-only --missing-limit 10 --re
 
 `check:release` 会输出当前版本、离线发布模式、TPG/UG 覆盖指标和仍需人工确认的微信后台事项。
 
+## 上传失败：分包大小或旧缓存
+
+若微信开发者工具提示 `source size ... exceed max limit 2MB`，先不要反复点击上传。当前课程数据已拆为多个小于 2MB 的分包；报错仍显示旧的 `ug-data` 分包时，通常是开发者工具仍在读取旧项目或缓存。
+
+1. 通过“项目 → 重新打开项目”确认导入目录是本仓库的 `miniprogram/`；
+2. 在“详情 / 本地设置”清除全部缓存；
+3. 完全退出并重启开发者工具，再重新编译；
+4. 在资源管理器确认 `subpackages` 下存在 `ug-data-cityu-a`、`ug-data-cityu-b`、`ug-data-polyu-a`、`ug-data-polyu-b`，而不是旧的 `ug-data` 或 `ug-data-polyu`；
+5. 重新执行 `npm run check:ship`，确认每个 `subpackageBytes` 都不超过 2MB 后再上传。
+
 ## 微信后台人工检查
 
 - 小程序名称、头像、简介和服务类目；
