@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T16:56:06.464Z",
+  "generatedAt": "2026-07-10T16:58:11.741Z",
   "universities": [
     {
       "id": "HKU",
@@ -4828,9 +4828,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BSc in Biotechnology",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-science/biotechnology",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 52,
+      "codedCourseCount": 52,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/BIOT"
     },
     {
       "id": "HKUST-UG-JS5811-BSC-IN-BIOTECHNOLOGY-AND-BUSINESS-7",
@@ -11363,9 +11364,9 @@ const catalogue = {
       "code": "BSC-IN-BIOTECHNOLOGY",
       "nameEn": "BSc in Biotechnology",
       "nameZh": "BSc in Biotechnology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-science/biotechnology"
+      "courseCount": 53,
+      "codedCourseCount": 52,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26biot.pdf"
     },
     {
       "id": "HKUST-UG-JS5811-BSC-IN-BIOTECHNOLOGY-AND-BUSINESS-7-M1",
@@ -16002,11 +16003,11 @@ const catalogue = {
     "CITYU": 2362,
     "CUHK": 294,
     "HKU": 1842,
-    "HKUST": 296,
+    "HKUST": 348,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 7987
+  "codedCourseCount": 8039
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
