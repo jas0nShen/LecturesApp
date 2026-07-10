@@ -1,0 +1,47 @@
+{
+  "provider": "HKU BASc(Design+) syllabuses",
+  "academicYear": "2025-26",
+  "sourceUrl": "https://foa-media.arch.hku.hk/media/upload/2026/06/Approved-20250627_BAScDesign-Syllabuses-AR158-625-v8-updated-Clean.pdf",
+  "officialUrl": "https://www4.hku.hk/pubunit/drcd/undergraduate-2025-2026",
+  "supplements": [
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6236",
+      "majorName": "Bachelor of Arts and Sciences in Design+",
+      "sourceUrl": "https://foa-media.arch.hku.hk/media/upload/2026/06/Approved-20250627_BAScDesign-Syllabuses-AR158-625-v8-updated-Clean.pdf",
+      "officialUrl": "https://www4.hku.hk/pubunit/drcd/undergraduate-2025-2026",
+      "courses": [
+        { "code": "UGRE1001", "title": "Introduction to the Constitution, the Basic Law and the National Security Law", "credits": 0, "recommendedYear": 1, "courseType": "core", "group": "University Requirements — National Education and National Security" },
+        { "code": "AILT1001", "title": "Artificial Intelligence Literacy I", "credits": 3, "recommendedYear": 1, "courseType": "core", "group": "University Requirements — Artificial Intelligence Literacy" },
+        { "code": "AILT9010", "title": "AI in the Built Environment", "credits": 3, "recommendedYear": 1, "courseType": "core", "group": "University Requirements — Artificial Intelligence Literacy" },
+        { "code": "CAES1001", "title": "Academic Communication in English", "credits": 0, "recommendedYear": 1, "courseType": "core", "group": "University Requirements — Academic Communication" },
+        { "code": "CAES9121", "title": "Communication Course for Architecture Students", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "University Requirements — English in the Discipline" },
+        { "code": "CARC9001", "title": "Practical Chinese for Architecture and Landscape Students", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "University Requirements — Chinese Language Enhancement" },
+        { "code": "CUND9001", "title": "Basic Spoken and Written Cantonese for Mandarin Speakers", "credits": 6, "recommendedYear": 2, "courseType": "major_elective", "group": "University Requirements — Chinese Language Enhancement Alternative" },
+        { "code": "CUND9002", "title": "Practical Chinese and Hong Kong Society", "credits": 6, "recommendedYear": 2, "courseType": "major_elective", "group": "University Requirements — Chinese Language Enhancement Alternative" },
+        { "code": "CUND9003", "title": "Cantonese for Non-Cantonese Speaking Students", "credits": 6, "recommendedYear": 2, "courseType": "major_elective", "group": "University Requirements — Chinese Language Enhancement Alternative" },
+        { "code": "CUND9004", "title": "Practical Applied Chinese Writing and Effective Presentation Skills for Non-local Mandarin Speaking Students", "credits": 6, "recommendedYear": 2, "courseType": "major_elective", "group": "University Requirements — Chinese Language Enhancement Alternative" },
+        { "code": "CHIN9501", "title": "Chinese as a Foreign Language I", "credits": 6, "recommendedYear": 2, "courseType": "major_elective", "group": "University Requirements — Chinese Language Enhancement Alternative" },
+        { "code": "CHIN9511", "title": "Cantonese as a Foreign Language I", "credits": 6, "recommendedYear": 2, "courseType": "major_elective", "group": "University Requirements — Chinese Language Enhancement Alternative" },
+        { "code": "CHIN9521", "title": "The Fundamentals of Chinese Characters", "credits": 6, "recommendedYear": 2, "courseType": "major_elective", "group": "University Requirements — Chinese Language Enhancement Alternative" },
+        { "code": "CHIN9522", "title": "Exploration of Major Cultural Themes across Chinese History", "credits": 6, "recommendedYear": 2, "courseType": "major_elective", "group": "University Requirements — Chinese Language Enhancement Alternative" },
+        { "code": "BASC9001", "title": "Approaching Interdisciplinarity: Knowledge Beyond Disciplines", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "BASc Core" },
+        { "code": "SDST1016", "title": "Data Science 101", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "BASc Core" },
+        { "code": "BASC9002", "title": "Leadership in Practice: Project-based Approaches to Interdisciplinary Challenges", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "BASc Core" },
+        { "code": "DESN1001", "title": "Ideas", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Design+ Major" },
+        { "code": "DESN1002", "title": "Representation", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Design+ Major" },
+        { "code": "DESN1004", "title": "Contemporary Issues in Design", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Design+ Major" },
+        { "code": "DESN2001", "title": "Material Science and Engineering", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Design+ Major" },
+        { "code": "DESN2002", "title": "Data for Interdisciplinary Innovation", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Design+ Major" },
+        { "code": "DESN2003", "title": "Research for Innovation", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Design+ Major" },
+        { "code": "DESN2004", "title": "Design+ Studio 1 — Ideation", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Design+ Major — Studio" },
+        { "code": "DESN3001", "title": "Design+ Studio 2 — Rationale", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Design+ Major — Studio" },
+        { "code": "DESN3002", "title": "Design+ Studio 3 — Process", "credits": 12, "recommendedYear": 3, "courseType": "core", "group": "Design+ Major — Studio" },
+        { "code": "DESN4001", "title": "Design+ Studio 4 — Expertise", "credits": 12, "recommendedYear": 4, "courseType": "capstone", "group": "Design+ Major — Studio" },
+        { "code": "DESN4002", "title": "Law, Innovation, Technology, Entrepreneurship: Tech Startup Law", "credits": 6, "recommendedYear": 4, "courseType": "core", "group": "Design+ Major" },
+        { "code": "DESN4003", "title": "Design+ Studio 5 — Capstone", "credits": 12, "recommendedYear": 4, "courseType": "capstone", "group": "Design+ Major — Capstone Studio" },
+        { "code": "DESN4004", "title": "Interdisciplinary Processes and Applications", "credits": 6, "recommendedYear": 4, "courseType": "core", "group": "Design+ Major" }
+      ]
+    }
+  ]
+}

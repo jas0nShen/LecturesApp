@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T09:21:09.319Z",
+  "generatedAt": "2026-07-10T14:14:17.366Z",
   "universities": [
     {
       "id": "HKU",
@@ -1007,9 +1007,10 @@ const catalogue = {
       "studyPeriod": "5-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science-speech-language-pathology",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 43,
+      "codedCourseCount": 43,
+      "courseSourceUrl": "https://www4.hku.hk/pubunit/drcd/files/ugdr2025-26/Education/BSc%28SLP%29.pdf"
     },
     {
       "id": "HKU-UG-6224-27",
@@ -1026,9 +1027,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Interdisciplinary",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-and-sciences-applied-artificial-intelligence",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 62,
+      "codedCourseCount": 62,
+      "courseSourceUrl": "https://csai.cds.hku.hk/RegulationAndSyllabus/Regulations%20%26%20Syllabus%20BASc%28AppliedAI%29%202025-26_202603.pdf"
     },
     {
       "id": "HKU-UG-6236-28",
@@ -1045,9 +1047,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-and-sciences-design",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 30,
+      "codedCourseCount": 30,
+      "courseSourceUrl": "https://foa-media.arch.hku.hk/media/upload/2026/06/Approved-20250627_BAScDesign-Syllabuses-AR158-625-v8-updated-Clean.pdf"
     },
     {
       "id": "HKU-UG-6248-29",
@@ -9334,9 +9337,9 @@ const catalogue = {
       "code": "BACHELOR-OF-SCIENCE-IN-SPEECH-LANGUAGE-PATHOLOGY",
       "nameEn": "Bachelor of Science in Speech-Language Pathology",
       "nameZh": "Bachelor of Science in Speech-Language Pathology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science-speech-language-pathology"
+      "courseCount": 44,
+      "codedCourseCount": 43,
+      "officialUrl": "https://web.edu.hku.hk/programme/bsslp_6157/admissions"
     },
     {
       "id": "HKU-UG-6224-27-M1",
@@ -9344,9 +9347,9 @@ const catalogue = {
       "code": "BACHELOR-OF-ARTS-AND-SCIENCES-IN-APPLIED-ARTIFIC",
       "nameEn": "Bachelor of Arts and Sciences in Applied Artificial Intelligence",
       "nameZh": "Bachelor of Arts and Sciences in Applied Artificial Intelligence",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-and-sciences-applied-artificial-intelligence"
+      "courseCount": 63,
+      "codedCourseCount": 62,
+      "officialUrl": "https://www4.hku.hk/pubunit/drcd/undergraduate-2025-2026/1091-computingdatascience"
     },
     {
       "id": "HKU-UG-6236-28-M1",
@@ -9354,9 +9357,9 @@ const catalogue = {
       "code": "BACHELOR-OF-ARTS-AND-SCIENCES-IN-DESIGN",
       "nameEn": "Bachelor of Arts and Sciences in Design+",
       "nameZh": "Bachelor of Arts and Sciences in Design+",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-and-sciences-design"
+      "courseCount": 31,
+      "codedCourseCount": 30,
+      "officialUrl": "https://www4.hku.hk/pubunit/drcd/undergraduate-2025-2026"
     },
     {
       "id": "HKU-UG-6248-29-M1",
@@ -15972,12 +15975,12 @@ const catalogue = {
   "courseShardCounts": {
     "CITYU": 1966,
     "CUHK": 131,
-    "HKU": 1647,
+    "HKU": 1782,
     "HKUST": 121,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 7058
+  "codedCourseCount": 7193
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
