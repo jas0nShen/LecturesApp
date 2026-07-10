@@ -1,0 +1,30 @@
+{
+  "provider": "CityUHK Department of Physics BSc Physics normative four-year recommended study plan",
+  "academicYear": "2025/26",
+  "sourceUrl": "https://www.cityu.edu.hk/phy_portal/download/1_BScAP/3_Recommended%20Study%20Plan/admitted%20to%20the%20major%20in%20202526/Normative%204-year%202526.pdf",
+  "officialUrl": "https://www.cityu.edu.hk/phy_portal/download/1_BScAP/3_Recommended%20Study%20Plan/admitted%20to%20the%20major%20in%20202526/Normative%204-year%202526.pdf",
+  "supplements": [
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1208",
+      "sourceUrl": "https://www.cityu.edu.hk/phy_portal/download/1_BScAP/3_Recommended%20Study%20Plan/admitted%20to%20the%20major%20in%20202526/Normative%204-year%202526.pdf",
+      "officialUrl": "https://www.cityu.edu.hk/phy_portal/download/1_BScAP/3_Recommended%20Study%20Plan/admitted%20to%20the%20major%20in%20202526/Normative%204-year%202526.pdf",
+      "courses": [
+        { "code": "PHY1101", "title": "Introductory Classical Mechanics", "credits": 3, "recommendedYear": 1, "semester": "Semester 1", "group": "major requirement" },
+        { "code": "CS1302", "title": "Introduction to Computer Programming", "credits": 3, "recommendedYear": 1, "semester": "Semester 1", "group": "college specified requirement" },
+        { "code": "CSCI1001", "title": "Employability for Scientists", "credits": 0, "recommendedYear": 1, "semester": "Semester 1", "group": "college requirement" },
+        { "code": "MA1200", "title": "Calculus and Basic Linear Algebra I", "credits": 3, "recommendedYear": 1, "semester": "Semester 1", "group": "mathematics option" },
+        { "code": "MA1300", "title": "Enhanced Calculus and Linear Algebra I", "credits": 3, "recommendedYear": 1, "semester": "Semester 1", "group": "mathematics option" },
+        { "code": "GE1401", "title": "University English", "credits": 3, "recommendedYear": 1, "semester": "Semester 1", "group": "gateway education" },
+        { "code": "GE1601", "title": "Whole-Person Development", "credits": 1, "recommendedYear": 1, "semester": "Semester 1", "group": "gateway education" },
+        { "code": "PHY1202", "title": "General Physics II", "credits": 3, "recommendedYear": 1, "semester": "Semester 2", "group": "major requirement" },
+        { "code": "PHY1203", "title": "General Physics Laboratory", "credits": 3, "recommendedYear": 1, "semester": "Semester 2", "group": "major requirement" },
+        { "code": "CHEM1101", "title": "Introduction to Chemistry", "credits": 3, "recommendedYear": 1, "semester": "Semester 2", "group": "college requirement" },
+        { "code": "CSCI1002", "title": "Career Lab for Scientists", "credits": 0, "recommendedYear": 1, "semester": "Semester 2", "group": "college requirement" },
+        { "code": "MA1201", "title": "Calculus and Basic Linear Algebra II", "credits": 3, "recommendedYear": 1, "semester": "Semester 2", "group": "mathematics option" },
+        { "code": "MA1301", "title": "Enhanced Calculus and Linear Algebra II", "credits": 3, "recommendedYear": 1, "semester": "Semester 2", "group": "mathematics option" },
+        { "code": "GE2401", "title": "English for Science", "credits": 3, "recommendedYear": 1, "semester": "Semester 2", "group": "gateway education" }
+      ]
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T15:38:34.541Z",
+  "generatedAt": "2026-07-10T15:40:33.797Z",
   "universities": [
     {
       "id": "HKU",
@@ -7457,9 +7457,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1208",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 84,
+      "codedCourseCount": 84,
+      "courseSourceUrl": "https://www.cityu.edu.hk/phy_portal/download/1_BScAP/3_Recommended%20Study%20Plan/admitted%20to%20the%20major%20in%20202526/Normative%204-year%202526.pdf"
     },
     {
       "id": "CITYU-UG-BENGMASE-47",
@@ -14499,9 +14500,9 @@ const catalogue = {
       "code": "CLASSICAL-PHYSICS",
       "nameEn": "Classical Physics",
       "nameZh": "Classical Physics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1208"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://www.cityu.edu.hk/phy_portal/download/1_BScAP/3_Recommended%20Study%20Plan/admitted%20to%20the%20major%20in%20202526/Normative%204-year%202526.pdf"
     },
     {
       "id": "CITYU-UG-BSCPHY-46-M2",
@@ -14509,9 +14510,9 @@ const catalogue = {
       "code": "MODERN-PHYSICS",
       "nameEn": "Modern Physics",
       "nameZh": "Modern Physics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1208"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://www.cityu.edu.hk/phy_portal/download/1_BScAP/3_Recommended%20Study%20Plan/admitted%20to%20the%20major%20in%20202526/Normative%204-year%202526.pdf"
     },
     {
       "id": "CITYU-UG-BSCPHY-46-M3",
@@ -14519,9 +14520,9 @@ const catalogue = {
       "code": "EXPERIMENTAL-AND-COMPUTATIONAL-PHYSICS",
       "nameEn": "Experimental and Computational Physics",
       "nameZh": "Experimental and Computational Physics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1208"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://www.cityu.edu.hk/phy_portal/download/1_BScAP/3_Recommended%20Study%20Plan/admitted%20to%20the%20major%20in%20202526/Normative%204-year%202526.pdf"
     },
     {
       "id": "CITYU-UG-BSCPHY-46-M4",
@@ -14529,9 +14530,9 @@ const catalogue = {
       "code": "MEDICAL-PHYSICS",
       "nameEn": "Medical Physics",
       "nameZh": "Medical Physics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1208"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://www.cityu.edu.hk/phy_portal/download/1_BScAP/3_Recommended%20Study%20Plan/admitted%20to%20the%20major%20in%20202526/Normative%204-year%202526.pdf"
     },
     {
       "id": "CITYU-UG-BSCPHY-46-M5",
@@ -14539,9 +14540,9 @@ const catalogue = {
       "code": "CONDENSED-MATTER-PHYSICS",
       "nameEn": "Condensed Matter Physics",
       "nameZh": "Condensed Matter Physics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1208"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://www.cityu.edu.hk/phy_portal/download/1_BScAP/3_Recommended%20Study%20Plan/admitted%20to%20the%20major%20in%20202526/Normative%204-year%202526.pdf"
     },
     {
       "id": "CITYU-UG-BSCPHY-46-M6",
@@ -14549,9 +14550,9 @@ const catalogue = {
       "code": "GLOBAL-RESEARCH-ENRICHMENT-AND-TECHNOPRENEURSHIP",
       "nameEn": "Global Research Enrichment and Technopreneurship (GREAT)]",
       "nameZh": "Global Research Enrichment and Technopreneurship (GREAT)]",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1208"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://www.cityu.edu.hk/phy_portal/download/1_BScAP/3_Recommended%20Study%20Plan/admitted%20to%20the%20major%20in%20202526/Normative%204-year%202526.pdf"
     },
     {
       "id": "CITYU-UG-BENGMASE-47-M1",
@@ -15985,14 +15986,14 @@ const catalogue = {
     }
   ],
   "courseShardCounts": {
-    "CITYU": 2278,
+    "CITYU": 2362,
     "CUHK": 131,
     "HKU": 1842,
     "HKUST": 121,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 7565
+  "codedCourseCount": 7649
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

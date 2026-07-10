@@ -415,6 +415,23 @@ test('CityU Chinese and History exposes the verified normative study plan', () =
   assert(historyCourses.some((item) => item.courseCode === 'CAH4499' && item.courseType === 'capstone'));
 });
 
+test('CityU Physics exposes the verified common first-year study plan', () => {
+  const catalogue = require('../miniprogram/utils/ugCatalogue');
+  const programme = catalogue.programmes.find((item) => item.jupasCode === 'JS1208');
+  const majors = catalogue.majors.filter((item) => item.programmeId === programme.id);
+
+  assert.equal(majors.length, 6);
+  majors.forEach((major) => {
+    const courses = catalogue.courses.filter((item) => item.majorId === major.id);
+    assert.equal(courses.length, 14);
+    assert(courses.some((item) => item.courseCode === 'PHY1101' && item.semester === 'Semester 1'));
+    assert(courses.some((item) => item.courseCode === 'PHY1203' && item.semester === 'Semester 2'));
+    assert(courses.some((item) => item.courseCode === 'MA1200'));
+    assert(courses.some((item) => item.courseCode === 'MA1300'));
+    assert(courses.some((item) => item.courseCode === 'GE2401'));
+  });
+});
+
 test('UG source coverage report can focus missing programme work by school', () => {
   const args = parseArgs(['--school', 'cityu', '--missing-limit', '5', '--missing-only']);
   const summary = summarizeGeneratedCatalogue(args);
