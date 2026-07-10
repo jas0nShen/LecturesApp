@@ -1,6 +1,14 @@
 [
   {
     "universityCode": "POLYU",
+    "programmeCode": "JS3006",
+    "reviewedAt": "2026-07-10",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3006",
+    "note": "Official PolyU JUPAS and FCMS curriculum pages confirm that Computer and Mathematical Sciences is a Common Year One entry scheme with seven potential majors and a competitive programme-selection process. The public pages do not publish a stable coded table for the shared first-year curriculum. Courses already verified for the underlying Applied Mathematics, Computing and AI, and Data Science schemes must remain bound to their respective programmes, not assigned to the umbrella scheme. Keep JS3006 as index/source-only until a public coded Common Year One curriculum is available."
+  },
+  {
+    "universityCode": "POLYU",
     "programmeCode": "JS3005",
     "reviewedAt": "2026-07-10",
     "status": "no_public_course_codes",
