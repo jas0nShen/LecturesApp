@@ -2749,5 +2749,137 @@ module.exports = [
     "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26ae.pdf",
     "sourceProvider": "HKUST 2025/26 BEng in Aerospace Engineering program and course catalog",
     "academicYear": "2025/26"
+  },
+  {
+    "id": "HKUST-UG-JS5240-DEPARTMENT-OF-COMPUTER-SCIENCE-AND-ENGINE-2-M1-SUP-COMP1023-1",
+    "programmeId": "HKUST-UG-JS5240-DEPARTMENT-OF-COMPUTER-SCIENCE-AND-ENGINE-2",
+    "majorId": "HKUST-UG-JS5240-DEPARTMENT-OF-COMPUTER-SCIENCE-AND-ENGINE-2-M1",
+    "courseCode": "COMP1023",
+    "titleEn": "Introduction to Python Programming",
+    "titleZh": "Introduction to Python Programming",
+    "credits": 3,
+    "recommendedYear": 1,
+    "semester": "",
+    "courseType": "major_elective",
+    "requirementGroups": [
+      "engineering fundamental"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/AI",
+    "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26ai.pdf",
+    "sourceProvider": "HKUST 2025/26 BEng in Artificial Intelligence program and course catalog",
+    "academicYear": "2025/26"
+  },
+  {
+    "id": "HKUST-UG-JS5240-DEPARTMENT-OF-COMPUTER-SCIENCE-AND-ENGINE-2-M1-SUP-COMP1944-2",
+    "programmeId": "HKUST-UG-JS5240-DEPARTMENT-OF-COMPUTER-SCIENCE-AND-ENGINE-2",
+    "majorId": "HKUST-UG-JS5240-DEPARTMENT-OF-COMPUTER-SCIENCE-AND-ENGINE-2-M1",
+    "courseCode": "COMP1944",
+    "titleEn": "Artificial Intelligence Ethics",
+    "titleZh": "Artificial Intelligence Ethics",
+    "credits": 3,
+    "recommendedYear": 1,
+    "semester": "",
+    "courseType": "core",
+    "requirementGroups": [
+      "major required"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/AI",
+    "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26ai.pdf",
+    "sourceProvider": "HKUST 2025/26 BEng in Artificial Intelligence program and course catalog",
+    "academicYear": "2025/26"
+  },
+  {
+    "id": "HKUST-UG-JS5240-DEPARTMENT-OF-COMPUTER-SCIENCE-AND-ENGINE-2-M1-SUP-COMP1991-3",
+    "programmeId": "HKUST-UG-JS5240-DEPARTMENT-OF-COMPUTER-SCIENCE-AND-ENGINE-2",
+    "majorId": "HKUST-UG-JS5240-DEPARTMENT-OF-COMPUTER-SCIENCE-AND-ENGINE-2-M1",
+    "courseCode": "COMP1991",
+    "titleEn": "Industrial Experience",
+    "titleZh": "Industrial Experience",
+    "credits": 0,
+    "recommendedYear": 2,
+    "semester": "",
+    "courseType": "internship",
+    "requirementGroups": [
+      "internship"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/AI",
+    "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26ai.pdf",
+    "sourceProvider": "HKUST 2025/26 BEng in Artificial Intelligence program and course catalog",
+    "academicYear": "2025/26"
+  },
+  {
+    "id": "HKUST-UG-JS5240-DEPARTMENT-OF-COMPUTER-SCIENCE-AND-ENGINE-2-M1-SUP-COMP4910-4",
+    "programmeId": "HKUST-UG-JS5240-DEPARTMENT-OF-COMPUTER-SCIENCE-AND-ENGINE-2",
+    "majorId": "HKUST-UG-JS5240-DEPARTMENT-OF-COMPUTER-SCIENCE-AND-ENGINE-2-M1",
+    "courseCode": "COMP4910",
+    "titleEn": "Co-op Program",
+    "titleZh": "Co-op Program",
+    "credits": 6,
+    "recommendedYear": 4,
+    "semester": "",
+    "courseType": "capstone",
+    "requirementGroups": [
+      "capstone alternative"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/AI",
+    "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26ai.pdf",
+    "sourceProvider": "HKUST 2025/26 BEng in Artificial Intelligence program and course catalog",
+    "academicYear": "2025/26"
+  },
+  {
+    "id": "HKUST-UG-JS5240-DEPARTMENT-OF-COMPUTER-SCIENCE-AND-ENGINE-2-M1-SUP-COMP4981-5",
+    "programmeId": "HKUST-UG-JS5240-DEPARTMENT-OF-COMPUTER-SCIENCE-AND-ENGINE-2",
+    "majorId": "HKUST-UG-JS5240-DEPARTMENT-OF-COMPUTER-SCIENCE-AND-ENGINE-2-M1",
+    "courseCode": "COMP4981",
+    "titleEn": "Final Year Project",
+    "titleZh": "Final Year Project",
+    "credits": 6,
+    "recommendedYear": 4,
+    "semester": "",
+    "courseType": "capstone",
+    "requirementGroups": [
+      "capstone alternative"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/AI",
+    "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26ai.pdf",
+    "sourceProvider": "HKUST 2025/26 BEng in Artificial Intelligence program and course catalog",
+    "academicYear": "2025/26"
+  },
+  {
+    "id": "HKUST-UG-JS5240-DEPARTMENT-OF-COMPUTER-SCIENCE-AND-ENGINE-2-M1-SUP-COMP4981H-6",
+    "programmeId": "HKUST-UG-JS5240-DEPARTMENT-OF-COMPUTER-SCIENCE-AND-ENGINE-2",
+    "majorId": "HKUST-UG-JS5240-DEPARTMENT-OF-COMPUTER-SCIENCE-AND-ENGINE-2-M1",
+    "courseCode": "COMP4981H",
+    "titleEn": "Final Year Thesis",
+    "titleZh": "Final Year Thesis",
+    "credits": 6,
+    "recommendedYear": 4,
+    "semester": "",
+    "courseType": "capstone",
+    "requirementGroups": [
+      "capstone alternative"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/AI",
+    "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26ai.pdf",
+    "sourceProvider": "HKUST 2025/26 BEng in Artificial Intelligence program and course catalog",
+    "academicYear": "2025/26"
   }
 ];

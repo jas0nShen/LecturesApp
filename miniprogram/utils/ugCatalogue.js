@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T16:15:01.159Z",
+  "generatedAt": "2026-07-10T16:16:28.188Z",
   "universities": [
     {
       "id": "HKU",
@@ -4749,9 +4749,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BEng in Artificial Intelligence",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-engineering/artificial-intelligence",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 6,
+      "codedCourseCount": 6,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/AI"
     },
     {
       "id": "HKUST-UG-JS5103-SCIENCE-GROUP-B-3",
@@ -11318,9 +11319,9 @@ const catalogue = {
       "code": "BENG-IN-ARTIFICIAL-INTELLIGENCE",
       "nameEn": "BEng in Artificial Intelligence",
       "nameZh": "BEng in Artificial Intelligence",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-engineering/artificial-intelligence"
+      "courseCount": 7,
+      "codedCourseCount": 6,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26ai.pdf"
     },
     {
       "id": "HKUST-UG-JS5103-SCIENCE-GROUP-B-3-M1",
@@ -15997,11 +15998,11 @@ const catalogue = {
     "CITYU": 2362,
     "CUHK": 294,
     "HKU": 1842,
-    "HKUST": 141,
+    "HKUST": 147,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 7832
+  "codedCourseCount": 7838
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

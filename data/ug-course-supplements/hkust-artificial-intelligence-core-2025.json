@@ -1,0 +1,22 @@
+{
+  "provider": "HKUST 2025/26 BEng in Artificial Intelligence program and course catalog",
+  "academicYear": "2025/26",
+  "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/AI",
+  "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26ai.pdf",
+  "supplements": [
+    {
+      "universityCode": "HKUST",
+      "programmeName": "BEng in Artificial Intelligence",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/AI",
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26ai.pdf",
+      "courses": [
+        { "code": "COMP1023", "title": "Introduction to Python Programming", "credits": 3, "year": 1, "group": "engineering fundamental" },
+        { "code": "COMP1944", "title": "Artificial Intelligence Ethics", "credits": 3, "year": 1, "group": "major required" },
+        { "code": "COMP1991", "title": "Industrial Experience", "credits": 0, "year": 2, "group": "internship" },
+        { "code": "COMP4910", "title": "Co-op Program", "credits": 6, "year": 4, "group": "capstone alternative" },
+        { "code": "COMP4981", "title": "Final Year Project", "credits": 6, "year": 4, "group": "capstone alternative" },
+        { "code": "COMP4981H", "title": "Final Year Thesis", "credits": 6, "year": 4, "group": "capstone alternative" }
+      ]
+    }
+  ]
+}

@@ -146,6 +146,23 @@ test('HKUST Aerospace Engineering exposes the verified 2025/26 major core', () =
   assert(ugService.listMajorCourses(aerospace.id, major.id, { keyword: 'Aerodynamics' }).some((course) => course.courseCode === 'MECH3640'));
 });
 
+test('HKUST Artificial Intelligence exposes the verified 2025/26 core and capstone paths', () => {
+  const hkust = ugService.listUniversities().find((item) => item.code === 'HKUST');
+  const programmes = ugService.listProgrammes({ universityId: hkust.id, degreeLevel: 'undergraduate' });
+  const ai = programmes.find((programme) => programme.nameEn === 'BEng in Artificial Intelligence');
+  const major = ugService.listMajors(ai.id).find((item) => item.nameEn === 'BEng in Artificial Intelligence');
+  const profile = ugService.getMajorProfile(ai.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(ai.id, major.id);
+
+  assert.equal(ai.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 6);
+  assert.equal(courses.length, 6);
+  assert(courses.some((course) => course.courseCode === 'COMP1944' && course.courseType === 'core'));
+  assert(courses.some((course) => course.courseCode === 'COMP1991' && course.courseType === 'internship'));
+  assert(courses.some((course) => course.courseCode === 'COMP4981H' && course.courseType === 'capstone'));
+  assert(ugService.listMajorCourses(ai.id, major.id, { keyword: 'Ethics' }).some((course) => course.courseCode === 'COMP1944'));
+});
+
 test('UG pending source readiness labels summarize index-only catalogue gaps', () => {
   assert.deepEqual(ugService.summarizePendingSourceReadiness([
     { codedCourseCount: 3, sourceStatus: 'course_codes_available' },
