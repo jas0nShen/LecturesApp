@@ -13,9 +13,9 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.requirementCount, 4);
   assert(summary.courseCount >= 4630);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 7193);
-  assert.equal(summary.programmeWithCoursesCount, 102);
-  assert.equal(summary.pendingProgrammeCount, 342);
+  assert.equal(summary.codedCourseCount, 7231);
+  assert.equal(summary.programmeWithCoursesCount, 103);
+  assert.equal(summary.pendingProgrammeCount, 341);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
@@ -132,7 +132,7 @@ test('UG per-school coverage stays visible for setup validation', () => {
   }));
 
   assert.deepEqual(coverage, {
-    HKU: { programmeCount: 137, majorCount: 137, codedCourseCount: 1782 },
+    HKU: { programmeCount: 137, majorCount: 137, codedCourseCount: 1820 },
     CUHK: { programmeCount: 84, majorCount: 84, codedCourseCount: 131 },
     HKUST: { programmeCount: 50, majorCount: 64, codedCourseCount: 121 },
     POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 2472 },
@@ -153,10 +153,10 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert.equal(coverage.length, 8);
   assert.equal(hku.programmeCount, 136);
   assert.equal(hku.majorCount, 136);
-  assert.equal(hku.programmeWithCoursesCount, 28);
-  assert.equal(hku.pendingProgrammeCount, 108);
+  assert.equal(hku.programmeWithCoursesCount, 29);
+  assert.equal(hku.pendingProgrammeCount, 107);
   assert.equal(hku.coveragePercent, 21);
-  assert.equal(hku.codedCourseCount, 1782);
+  assert.equal(hku.codedCourseCount, 1820);
   assert.match(hku.generatedDate, /^\d{4}-\d{2}-\d{2}$/);
   assert.match(hku.updatedLabel, /^更新于 \d{4}-\d{2}-\d{2}$/);
   assert.equal(hku.badge, 'COURSES');
@@ -785,6 +785,25 @@ test('HKU applied artificial intelligence exposes official core, concentration a
   assert(courses.some((course) => course.courseCode === 'ASAI1001' && course.courseType === 'core'));
   assert(courses.some((course) => course.courseCode === 'GEOG3430' && course.courseType === 'major_elective'));
   assert(courses.some((course) => course.courseCode === 'ASAI4798' && course.credits === 12 && course.courseType === 'capstone'));
+});
+
+test('HKU Financial Technology exposes verified core, elective alternatives and capstone courses', () => {
+  const hku = ugService.listUniversities().find((item) => item.code === 'HKU');
+  const programme = ugService.listProgrammes({ universityId: hku.id, degreeLevel: 'undergraduate' })
+    .find((item) => item.code === '6248');
+  const major = ugService.listMajors(programme.id)[0];
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(programme.codedCourseCount, 38);
+  assert.equal(courses.length, 38);
+  assert(courses.some((course) => course.courseCode === 'FITE1010' && course.courseType === 'core'));
+  assert(courses.some((course) => (
+    course.courseCode === 'COMP3314'
+    && course.requirementGroups.some((group) => group.includes('choose 1'))
+  )));
+  assert(courses.some((course) => course.courseCode === 'FITE4801' && course.credits === 12 && course.courseType === 'capstone'));
+  assert(courses.every((course) => course.recommendedYear === 0));
 });
 
 test('HKU Design+ exposes official studio sequence, BASc core and language alternatives', () => {

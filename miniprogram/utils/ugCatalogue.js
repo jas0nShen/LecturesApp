@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T14:14:17.366Z",
+  "generatedAt": "2026-07-10T14:32:15.441Z",
   "universities": [
     {
       "id": "HKU",
@@ -1067,9 +1067,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Interdisciplinary",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-and-sciences-financial-technology",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 38,
+      "codedCourseCount": 38,
+      "courseSourceUrl": "https://csai.cds.hku.hk/RegulationAndSyllabus/Regulation%20and%20Syllabus%20BASc%28FinTech%29%202025-26%20%28Clean%29.pdf"
     },
     {
       "id": "HKU-UG-6250-30",
@@ -9367,8 +9368,8 @@ const catalogue = {
       "code": "BACHELOR-OF-ARTS-AND-SCIENCES-IN-FINANCIAL-TECHN",
       "nameEn": "Bachelor of Arts and Sciences in Financial Technology",
       "nameZh": "Bachelor of Arts and Sciences in Financial Technology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 39,
+      "codedCourseCount": 38,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-and-sciences-financial-technology"
     },
     {
@@ -15975,12 +15976,12 @@ const catalogue = {
   "courseShardCounts": {
     "CITYU": 1966,
     "CUHK": 131,
-    "HKU": 1782,
+    "HKU": 1820,
     "HKUST": 121,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 7193
+  "codedCourseCount": 7231
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

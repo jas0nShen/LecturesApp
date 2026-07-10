@@ -468,7 +468,7 @@ function buildGenericSupplementCourse({ course, courseIndex, major, programme, s
     credits: Number(course.credits || course.units || 0),
     recommendedYear: course.recommendedYear !== undefined
       ? Number(course.recommendedYear)
-      : (course.year !== undefined ? Number(course.year) : Number(String(code).match(/\d/)?.[0] || 0)),
+      : (course.year !== undefined ? Number(course.year) : 0),
     semester: course.semester || '',
     courseType: course.courseType || getCourseTypeFromGroup(String(course.group || course.category || '')),
     requirementGroups: [course.group || course.category || 'programme_course'].filter(Boolean),

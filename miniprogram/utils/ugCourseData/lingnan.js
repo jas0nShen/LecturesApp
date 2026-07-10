@@ -426,7 +426,7 @@ module.exports = [
     "titleEn": "Critical Thinking: Analysis and Argumentation",
     "titleZh": "Critical Thinking: Analysis and Argumentation",
     "credits": 3,
-    "recommendedYear": 8,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -448,7 +448,7 @@ module.exports = [
     "titleEn": "The Making of Hong Kong",
     "titleZh": "The Making of Hong Kong",
     "credits": 3,
-    "recommendedYear": 8,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -470,7 +470,7 @@ module.exports = [
     "titleEn": "Generative Artificial Intelligence",
     "titleZh": "Generative Artificial Intelligence",
     "credits": 3,
-    "recommendedYear": 8,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -492,7 +492,7 @@ module.exports = [
     "titleEn": "Chinese Communication I",
     "titleZh": "Chinese Communication I",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -514,7 +514,7 @@ module.exports = [
     "titleEn": "University English I",
     "titleZh": "University English I",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -536,7 +536,7 @@ module.exports = [
     "titleEn": "University English II",
     "titleZh": "University English II",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -558,7 +558,7 @@ module.exports = [
     "titleEn": "The Process of Science",
     "titleZh": "The Process of Science",
     "credits": 3,
-    "recommendedYear": 8,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -580,7 +580,7 @@ module.exports = [
     "titleEn": "China in World History",
     "titleZh": "China in World History",
     "credits": 3,
-    "recommendedYear": 8,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -602,7 +602,7 @@ module.exports = [
     "titleEn": "Chinese Communication II",
     "titleZh": "Chinese Communication II",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -624,7 +624,7 @@ module.exports = [
     "titleEn": "Professional Communication in English for Business",
     "titleZh": "Professional Communication in English for Business",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -646,7 +646,7 @@ module.exports = [
     "titleEn": "Statistics for Business",
     "titleZh": "Statistics for Business",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -668,7 +668,7 @@ module.exports = [
     "titleEn": "Financial Accounting",
     "titleZh": "Financial Accounting",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -690,7 +690,7 @@ module.exports = [
     "titleEn": "Managerial Accounting",
     "titleZh": "Managerial Accounting",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -712,7 +712,7 @@ module.exports = [
     "titleEn": "Microeconomics for Business",
     "titleZh": "Microeconomics for Business",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -734,7 +734,7 @@ module.exports = [
     "titleEn": "Legal Aspects of Business",
     "titleZh": "Legal Aspects of Business",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -756,7 +756,7 @@ module.exports = [
     "titleEn": "Global Business Environment",
     "titleZh": "Global Business Environment",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -778,7 +778,7 @@ module.exports = [
     "titleEn": "Financial Management",
     "titleZh": "Financial Management",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -800,7 +800,7 @@ module.exports = [
     "titleEn": "Organisational Behaviour",
     "titleZh": "Organisational Behaviour",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -822,7 +822,7 @@ module.exports = [
     "titleEn": "Marketing Management",
     "titleZh": "Marketing Management",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -844,7 +844,7 @@ module.exports = [
     "titleEn": "Information Systems Management",
     "titleZh": "Information Systems Management",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -866,7 +866,7 @@ module.exports = [
     "titleEn": "Operations Management",
     "titleZh": "Operations Management",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -888,7 +888,7 @@ module.exports = [
     "titleEn": "Strategic Management",
     "titleZh": "Strategic Management",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -910,7 +910,7 @@ module.exports = [
     "titleEn": "Intermediate Accounting I",
     "titleZh": "Intermediate Accounting I",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -932,7 +932,7 @@ module.exports = [
     "titleEn": "Intermediate Accounting II",
     "titleZh": "Intermediate Accounting II",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -954,7 +954,7 @@ module.exports = [
     "titleEn": "Cost Accounting",
     "titleZh": "Cost Accounting",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -976,7 +976,7 @@ module.exports = [
     "titleEn": "Taxation I",
     "titleZh": "Taxation I",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -998,7 +998,7 @@ module.exports = [
     "titleEn": "Company Law",
     "titleZh": "Company Law",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -1020,7 +1020,7 @@ module.exports = [
     "titleEn": "Auditing I",
     "titleZh": "Auditing I",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -1042,7 +1042,7 @@ module.exports = [
     "titleEn": "Advanced Accounting",
     "titleZh": "Advanced Accounting",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -1064,7 +1064,7 @@ module.exports = [
     "titleEn": "Corporate Financial Reporting",
     "titleZh": "Corporate Financial Reporting",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -1086,7 +1086,7 @@ module.exports = [
     "titleEn": "Environmental, Social and Governance (ESG) Issues in Business and Accounting",
     "titleZh": "Environmental, Social and Governance (ESG) Issues in Business and Accounting",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -1108,7 +1108,7 @@ module.exports = [
     "titleEn": "Corporate Governance and Business Ethics",
     "titleZh": "Corporate Governance and Business Ethics",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -1130,7 +1130,7 @@ module.exports = [
     "titleEn": "Securities Law and Regulations",
     "titleZh": "Securities Law and Regulations",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -1152,7 +1152,7 @@ module.exports = [
     "titleEn": "Principles of Risk Management",
     "titleZh": "Principles of Risk Management",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -1174,7 +1174,7 @@ module.exports = [
     "titleEn": "Statistics for Business",
     "titleZh": "Statistics for Business",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -1196,7 +1196,7 @@ module.exports = [
     "titleEn": "Financial Accounting",
     "titleZh": "Financial Accounting",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -1218,7 +1218,7 @@ module.exports = [
     "titleEn": "Managerial Accounting",
     "titleZh": "Managerial Accounting",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -1240,7 +1240,7 @@ module.exports = [
     "titleEn": "Microeconomics for Business",
     "titleZh": "Microeconomics for Business",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -1262,7 +1262,7 @@ module.exports = [
     "titleEn": "Legal Aspects of Business",
     "titleZh": "Legal Aspects of Business",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -1284,7 +1284,7 @@ module.exports = [
     "titleEn": "Global Business Environment",
     "titleZh": "Global Business Environment",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -1306,7 +1306,7 @@ module.exports = [
     "titleEn": "Financial Management",
     "titleZh": "Financial Management",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -1328,7 +1328,7 @@ module.exports = [
     "titleEn": "Organisational Behaviour",
     "titleZh": "Organisational Behaviour",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -1350,7 +1350,7 @@ module.exports = [
     "titleEn": "Marketing Management",
     "titleZh": "Marketing Management",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -1372,7 +1372,7 @@ module.exports = [
     "titleEn": "Information Systems Management",
     "titleZh": "Information Systems Management",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -1394,7 +1394,7 @@ module.exports = [
     "titleEn": "Operations Management",
     "titleZh": "Operations Management",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -1416,7 +1416,7 @@ module.exports = [
     "titleEn": "Strategic Management",
     "titleZh": "Strategic Management",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -1438,7 +1438,7 @@ module.exports = [
     "titleEn": "Introduction to e-Business",
     "titleZh": "Introduction to e-Business",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -1460,7 +1460,7 @@ module.exports = [
     "titleEn": "e-Business Models and Start-ups",
     "titleZh": "e-Business Models and Start-ups",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -1482,7 +1482,7 @@ module.exports = [
     "titleEn": "e-Marketing",
     "titleZh": "e-Marketing",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -1504,7 +1504,7 @@ module.exports = [
     "titleEn": "Business Analytics for e-Business",
     "titleZh": "Business Analytics for e-Business",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -1526,7 +1526,7 @@ module.exports = [
     "titleEn": "Social Media and Customer Relationship Management for e-Business",
     "titleZh": "Social Media and Customer Relationship Management for e-Business",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -1548,7 +1548,7 @@ module.exports = [
     "titleEn": "Web Programming for e-Business",
     "titleZh": "Web Programming for e-Business",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -1570,7 +1570,7 @@ module.exports = [
     "titleEn": "Introduction to Programming for Data Science",
     "titleZh": "Introduction to Programming for Data Science",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -1592,7 +1592,7 @@ module.exports = [
     "titleEn": "Digital Innovation",
     "titleZh": "Digital Innovation",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -1614,7 +1614,7 @@ module.exports = [
     "titleEn": "Social Media Marketing",
     "titleZh": "Social Media Marketing",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -1636,7 +1636,7 @@ module.exports = [
     "titleEn": "Consumer Behaviour",
     "titleZh": "Consumer Behaviour",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -1658,7 +1658,7 @@ module.exports = [
     "titleEn": "Statistics for Business",
     "titleZh": "Statistics for Business",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -1680,7 +1680,7 @@ module.exports = [
     "titleEn": "Financial Accounting",
     "titleZh": "Financial Accounting",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -1702,7 +1702,7 @@ module.exports = [
     "titleEn": "Managerial Accounting",
     "titleZh": "Managerial Accounting",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -1724,7 +1724,7 @@ module.exports = [
     "titleEn": "Microeconomics for Business",
     "titleZh": "Microeconomics for Business",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -1746,7 +1746,7 @@ module.exports = [
     "titleEn": "Legal Aspects of Business",
     "titleZh": "Legal Aspects of Business",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -1768,7 +1768,7 @@ module.exports = [
     "titleEn": "Global Business Environment",
     "titleZh": "Global Business Environment",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -1790,7 +1790,7 @@ module.exports = [
     "titleEn": "Financial Management",
     "titleZh": "Financial Management",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -1812,7 +1812,7 @@ module.exports = [
     "titleEn": "Organisational Behaviour",
     "titleZh": "Organisational Behaviour",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -1834,7 +1834,7 @@ module.exports = [
     "titleEn": "Marketing Management",
     "titleZh": "Marketing Management",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -1856,7 +1856,7 @@ module.exports = [
     "titleEn": "Information Systems Management",
     "titleZh": "Information Systems Management",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -1878,7 +1878,7 @@ module.exports = [
     "titleEn": "Operations Management",
     "titleZh": "Operations Management",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -1900,7 +1900,7 @@ module.exports = [
     "titleEn": "Strategic Management",
     "titleZh": "Strategic Management",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -1922,7 +1922,7 @@ module.exports = [
     "titleEn": "Corporate Finance",
     "titleZh": "Corporate Finance",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -1944,7 +1944,7 @@ module.exports = [
     "titleEn": "Hong Kong Monetary and Financial Systems",
     "titleZh": "Hong Kong Monetary and Financial Systems",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -1966,7 +1966,7 @@ module.exports = [
     "titleEn": "Investment and Portfolio Management",
     "titleZh": "Investment and Portfolio Management",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -1988,7 +1988,7 @@ module.exports = [
     "titleEn": "Introduction to Financial Technology",
     "titleZh": "Introduction to Financial Technology",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -2010,7 +2010,7 @@ module.exports = [
     "titleEn": "Introduction to Financial Econometrics",
     "titleZh": "Introduction to Financial Econometrics",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -2032,7 +2032,7 @@ module.exports = [
     "titleEn": "International Financial Management",
     "titleZh": "International Financial Management",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -2054,7 +2054,7 @@ module.exports = [
     "titleEn": "Management of Financial Institutions",
     "titleZh": "Management of Financial Institutions",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -2076,7 +2076,7 @@ module.exports = [
     "titleEn": "Derivative Securities and Hedging Strategies",
     "titleZh": "Derivative Securities and Hedging Strategies",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -2098,7 +2098,7 @@ module.exports = [
     "titleEn": "Fixed Income Securities",
     "titleZh": "Fixed Income Securities",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -2120,7 +2120,7 @@ module.exports = [
     "titleEn": "Real Portfolio Management",
     "titleZh": "Real Portfolio Management",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -2142,7 +2142,7 @@ module.exports = [
     "titleEn": "Selected Topics in Finance",
     "titleZh": "Selected Topics in Finance",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -2164,7 +2164,7 @@ module.exports = [
     "titleEn": "Organisational Behaviour",
     "titleZh": "Organisational Behaviour",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -2186,7 +2186,7 @@ module.exports = [
     "titleEn": "International Entrepreneurship",
     "titleZh": "International Entrepreneurship",
     "credits": 3,
-    "recommendedYear": 9,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -2208,7 +2208,7 @@ module.exports = [
     "titleEn": "Global Leadership Development with Analytics",
     "titleZh": "Global Leadership Development with Analytics",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -2230,7 +2230,7 @@ module.exports = [
     "titleEn": "Management of Innovation and Change",
     "titleZh": "Management of Innovation and Change",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -2252,7 +2252,7 @@ module.exports = [
     "titleEn": "Digital & Sustainability Transformation",
     "titleZh": "Digital & Sustainability Transformation",
     "credits": 3,
-    "recommendedYear": 9,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -2274,7 +2274,7 @@ module.exports = [
     "titleEn": "International Financial Management",
     "titleZh": "International Financial Management",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -2296,7 +2296,7 @@ module.exports = [
     "titleEn": "Compensation and Performance Management with Analytics",
     "titleZh": "Compensation and Performance Management with Analytics",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -2318,7 +2318,7 @@ module.exports = [
     "titleEn": "Global Talent Management",
     "titleZh": "Global Talent Management",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -2340,7 +2340,7 @@ module.exports = [
     "titleEn": "Human Resources Analytics",
     "titleZh": "Human Resources Analytics",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -2362,7 +2362,7 @@ module.exports = [
     "titleEn": "Industrial Relations and Employment Law",
     "titleZh": "Industrial Relations and Employment Law",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -2384,7 +2384,7 @@ module.exports = [
     "titleEn": "Be Future Ready! Work and Organisation in the Digital Era",
     "titleZh": "Be Future Ready! Work and Organisation in the Digital Era",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -2406,7 +2406,7 @@ module.exports = [
     "titleEn": "Human Resource Planning and Staffing",
     "titleZh": "Human Resource Planning and Staffing",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -2428,7 +2428,7 @@ module.exports = [
     "titleEn": "Quality and People",
     "titleZh": "Quality and People",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -2450,7 +2450,7 @@ module.exports = [
     "titleEn": "Introduction to Psychology",
     "titleZh": "Introduction to Psychology",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -2472,7 +2472,7 @@ module.exports = [
     "titleEn": "Psychology Applied to Occupational Safety and Health",
     "titleZh": "Psychology Applied to Occupational Safety and Health",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -2494,7 +2494,7 @@ module.exports = [
     "titleEn": "Social Psychology",
     "titleZh": "Social Psychology",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -2516,7 +2516,7 @@ module.exports = [
     "titleEn": "Industrial and Organisational Psychology",
     "titleZh": "Industrial and Organisational Psychology",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -2538,7 +2538,7 @@ module.exports = [
     "titleEn": "Critical Thinking: Analysis and Argumentation",
     "titleZh": "Critical Thinking: Analysis and Argumentation",
     "credits": 3,
-    "recommendedYear": 8,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -2560,7 +2560,7 @@ module.exports = [
     "titleEn": "The Making of Hong Kong",
     "titleZh": "The Making of Hong Kong",
     "credits": 3,
-    "recommendedYear": 8,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -2582,7 +2582,7 @@ module.exports = [
     "titleEn": "Generative Artificial Intelligence",
     "titleZh": "Generative Artificial Intelligence",
     "credits": 3,
-    "recommendedYear": 8,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -2604,7 +2604,7 @@ module.exports = [
     "titleEn": "Chinese Communication I",
     "titleZh": "Chinese Communication I",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -2626,7 +2626,7 @@ module.exports = [
     "titleEn": "University English I",
     "titleZh": "University English I",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -2648,7 +2648,7 @@ module.exports = [
     "titleEn": "University English II",
     "titleZh": "University English II",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -2670,7 +2670,7 @@ module.exports = [
     "titleEn": "The Process of Science",
     "titleZh": "The Process of Science",
     "credits": 3,
-    "recommendedYear": 8,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -2692,7 +2692,7 @@ module.exports = [
     "titleEn": "China in World History",
     "titleZh": "China in World History",
     "credits": 3,
-    "recommendedYear": 8,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -2714,7 +2714,7 @@ module.exports = [
     "titleEn": "Chinese Communication II",
     "titleZh": "Chinese Communication II",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -2736,7 +2736,7 @@ module.exports = [
     "titleEn": "Professional Communication in English for Business",
     "titleZh": "Professional Communication in English for Business",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -2758,7 +2758,7 @@ module.exports = [
     "titleEn": "Statistics for Business",
     "titleZh": "Statistics for Business",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -2780,7 +2780,7 @@ module.exports = [
     "titleEn": "Financial Accounting",
     "titleZh": "Financial Accounting",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -2802,7 +2802,7 @@ module.exports = [
     "titleEn": "Managerial Accounting",
     "titleZh": "Managerial Accounting",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -2824,7 +2824,7 @@ module.exports = [
     "titleEn": "Microeconomics for Business",
     "titleZh": "Microeconomics for Business",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -2846,7 +2846,7 @@ module.exports = [
     "titleEn": "Legal Aspects of Business",
     "titleZh": "Legal Aspects of Business",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -2868,7 +2868,7 @@ module.exports = [
     "titleEn": "Global Business Environment",
     "titleZh": "Global Business Environment",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -2890,7 +2890,7 @@ module.exports = [
     "titleEn": "Financial Management",
     "titleZh": "Financial Management",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -2912,7 +2912,7 @@ module.exports = [
     "titleEn": "Organisational Behaviour",
     "titleZh": "Organisational Behaviour",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -2934,7 +2934,7 @@ module.exports = [
     "titleEn": "Marketing Management",
     "titleZh": "Marketing Management",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -2956,7 +2956,7 @@ module.exports = [
     "titleEn": "Information Systems Management",
     "titleZh": "Information Systems Management",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -2978,7 +2978,7 @@ module.exports = [
     "titleEn": "Operations Management",
     "titleZh": "Operations Management",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -3000,7 +3000,7 @@ module.exports = [
     "titleEn": "Strategic Management",
     "titleZh": "Strategic Management",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -3022,7 +3022,7 @@ module.exports = [
     "titleEn": "Principles of Risk Management",
     "titleZh": "Principles of Risk Management",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -3044,7 +3044,7 @@ module.exports = [
     "titleEn": "Principles of Insurance",
     "titleZh": "Principles of Insurance",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -3066,7 +3066,7 @@ module.exports = [
     "titleEn": "Fundamentals of Actuarial Science",
     "titleZh": "Fundamentals of Actuarial Science",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -3088,7 +3088,7 @@ module.exports = [
     "titleEn": "Personal Risk and Financial Planning",
     "titleZh": "Personal Risk and Financial Planning",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -3110,7 +3110,7 @@ module.exports = [
     "titleEn": "Life and Health Insurance",
     "titleZh": "Life and Health Insurance",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -3132,7 +3132,7 @@ module.exports = [
     "titleEn": "Property and Liability Insurance",
     "titleZh": "Property and Liability Insurance",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -3154,7 +3154,7 @@ module.exports = [
     "titleEn": "Reinsurance",
     "titleZh": "Reinsurance",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -3176,7 +3176,7 @@ module.exports = [
     "titleEn": "Risk Modeling and AI Applications",
     "titleZh": "Risk Modeling and AI Applications",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -3198,7 +3198,7 @@ module.exports = [
     "titleEn": "Big Data Analytics and Insurance Technologies",
     "titleZh": "Big Data Analytics and Insurance Technologies",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -3220,7 +3220,7 @@ module.exports = [
     "titleEn": "Modern Chinese Literature",
     "titleZh": "Modern Chinese Literature",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -3242,7 +3242,7 @@ module.exports = [
     "titleEn": "Introduction to Literature",
     "titleZh": "Introduction to Literature",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -3264,7 +3264,7 @@ module.exports = [
     "titleEn": "Chinese Etymology",
     "titleZh": "Chinese Etymology",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -3286,7 +3286,7 @@ module.exports = [
     "titleEn": "Chinese Phonology",
     "titleZh": "Chinese Phonology",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -3308,7 +3308,7 @@ module.exports = [
     "titleEn": "Classical Chinese Literary History",
     "titleZh": "Classical Chinese Literary History",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -3330,7 +3330,7 @@ module.exports = [
     "titleEn": "Modes of Chinese Writing",
     "titleZh": "Modes of Chinese Writing",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -3352,7 +3352,7 @@ module.exports = [
     "titleEn": "Research Methodology and Bibliography in Chinese Studies",
     "titleZh": "Research Methodology and Bibliography in Chinese Studies",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -3374,7 +3374,7 @@ module.exports = [
     "titleEn": "Directed Thesis",
     "titleZh": "Directed Thesis",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -3396,7 +3396,7 @@ module.exports = [
     "titleEn": "Emotions and Writing",
     "titleZh": "Emotions and Writing",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -3418,7 +3418,7 @@ module.exports = [
     "titleEn": "Creative Writing in Chinese",
     "titleZh": "Creative Writing in Chinese",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -3440,7 +3440,7 @@ module.exports = [
     "titleEn": "Visual Image and Writing",
     "titleZh": "Visual Image and Writing",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -3462,7 +3462,7 @@ module.exports = [
     "titleEn": "Directed Thesis (Creative Writing)",
     "titleZh": "Directed Thesis (Creative Writing)",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -3484,7 +3484,7 @@ module.exports = [
     "titleEn": "Interdisciplinary Inquiry for Global Challenges",
     "titleZh": "Interdisciplinary Inquiry for Global Challenges",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -3506,7 +3506,7 @@ module.exports = [
     "titleEn": "International Development and Peace in the Global Age",
     "titleZh": "International Development and Peace in the Global Age",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -3528,7 +3528,7 @@ module.exports = [
     "titleEn": "Cultural Diversity and Community Well-Being",
     "titleZh": "Cultural Diversity and Community Well-Being",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -3550,7 +3550,7 @@ module.exports = [
     "titleEn": "Global Business and Sustainable Development",
     "titleZh": "Global Business and Sustainable Development",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -3572,7 +3572,7 @@ module.exports = [
     "titleEn": "Environmental Sustainability and Human Action",
     "titleZh": "Environmental Sustainability and Human Action",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -3594,7 +3594,7 @@ module.exports = [
     "titleEn": "Global Action: Capstone Project",
     "titleZh": "Global Action: Capstone Project",
     "credits": 6,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -3616,7 +3616,7 @@ module.exports = [
     "titleEn": "Global Inquiry and Research",
     "titleZh": "Global Inquiry and Research",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -3638,7 +3638,7 @@ module.exports = [
     "titleEn": "Global Perspectives from the Arts",
     "titleZh": "Global Perspectives from the Arts",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -3660,7 +3660,7 @@ module.exports = [
     "titleEn": "Globalisation: Social Sciences Perspective Part I- Political Economy in the Global Age",
     "titleZh": "Globalisation: Social Sciences Perspective Part I- Political Economy in the Global Age",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -3682,7 +3682,7 @@ module.exports = [
     "titleEn": "Global Business and Management",
     "titleZh": "Global Business and Management",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -3704,7 +3704,7 @@ module.exports = [
     "titleEn": "Transpacific Literature in a Global World",
     "titleZh": "Transpacific Literature in a Global World",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -3726,7 +3726,7 @@ module.exports = [
     "titleEn": "Global Business and Management",
     "titleZh": "Global Business and Management",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -3748,7 +3748,7 @@ module.exports = [
     "titleEn": "Critical Visual and Media Studies",
     "titleZh": "Critical Visual and Media Studies",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "core",
     "requirementGroups": [
@@ -3770,7 +3770,7 @@ module.exports = [
     "titleEn": "The Making of Hong Kong",
     "titleZh": "The Making of Hong Kong",
     "credits": 3,
-    "recommendedYear": 8,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -3792,7 +3792,7 @@ module.exports = [
     "titleEn": "Economics of Culture and Creativity",
     "titleZh": "Economics of Culture and Creativity",
     "credits": 3,
-    "recommendedYear": 9,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -3814,7 +3814,7 @@ module.exports = [
     "titleEn": "Social Problem Solving and Decision Making in the Modern World",
     "titleZh": "Social Problem Solving and Decision Making in the Modern World",
     "credits": 3,
-    "recommendedYear": 9,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -3836,7 +3836,7 @@ module.exports = [
     "titleEn": "Finance and Politics: Public Interests and Private Manipulation",
     "titleZh": "Finance and Politics: Public Interests and Private Manipulation",
     "credits": 3,
-    "recommendedYear": 9,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -3858,7 +3858,7 @@ module.exports = [
     "titleEn": "Understanding Social & Economic Indicators",
     "titleZh": "Understanding Social & Economic Indicators",
     "credits": 3,
-    "recommendedYear": 9,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -3880,7 +3880,7 @@ module.exports = [
     "titleEn": "The Value of Sport",
     "titleZh": "The Value of Sport",
     "credits": 3,
-    "recommendedYear": 9,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -3902,7 +3902,7 @@ module.exports = [
     "titleEn": "Understanding Life and Happiness: An Interdisciplinary Approach",
     "titleZh": "Understanding Life and Happiness: An Interdisciplinary Approach",
     "credits": 3,
-    "recommendedYear": 9,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -3924,7 +3924,7 @@ module.exports = [
     "titleEn": "Introduction to Economics",
     "titleZh": "Introduction to Economics",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -3946,7 +3946,7 @@ module.exports = [
     "titleEn": "Introduction to Banks and Financial Institutions",
     "titleZh": "Introduction to Banks and Financial Institutions",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -3968,7 +3968,7 @@ module.exports = [
     "titleEn": "Introduction to Microeconomics",
     "titleZh": "Introduction to Microeconomics",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -3990,7 +3990,7 @@ module.exports = [
     "titleEn": "Tools for Economic Analysis",
     "titleZh": "Tools for Economic Analysis",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4012,7 +4012,7 @@ module.exports = [
     "titleEn": "Introduction to Statistics and Econometrics",
     "titleZh": "Introduction to Statistics and Econometrics",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4034,7 +4034,7 @@ module.exports = [
     "titleEn": "Principles of Public Policy",
     "titleZh": "Principles of Public Policy",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4056,7 +4056,7 @@ module.exports = [
     "titleEn": "Globalisation & Econ Integration",
     "titleZh": "Globalisation & Econ Integration",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4078,7 +4078,7 @@ module.exports = [
     "titleEn": "Economics of the Family",
     "titleZh": "Economics of the Family",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4100,7 +4100,7 @@ module.exports = [
     "titleEn": "Economics of Markets and Regulation",
     "titleZh": "Economics of Markets and Regulation",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4122,7 +4122,7 @@ module.exports = [
     "titleEn": "Applied Econometrics",
     "titleZh": "Applied Econometrics",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4144,7 +4144,7 @@ module.exports = [
     "titleEn": "Money and Banking",
     "titleZh": "Money and Banking",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4166,7 +4166,7 @@ module.exports = [
     "titleEn": "International Trade & Trade Policy",
     "titleZh": "International Trade & Trade Policy",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4188,7 +4188,7 @@ module.exports = [
     "titleEn": "Game Theory and Strategic Behaviour",
     "titleZh": "Game Theory and Strategic Behaviour",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4210,7 +4210,7 @@ module.exports = [
     "titleEn": "Financial Economics",
     "titleZh": "Financial Economics",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4232,7 +4232,7 @@ module.exports = [
     "titleEn": "Linear Algebra",
     "titleZh": "Linear Algebra",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "foundation",
     "requirementGroups": [
@@ -4254,7 +4254,7 @@ module.exports = [
     "titleEn": "International Political Economy",
     "titleZh": "International Political Economy",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "foundation",
     "requirementGroups": [
@@ -4276,7 +4276,7 @@ module.exports = [
     "titleEn": "Contemporary Socio-Economic Issues",
     "titleZh": "Contemporary Socio-Economic Issues",
     "credits": 3,
-    "recommendedYear": 9,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4298,7 +4298,7 @@ module.exports = [
     "titleEn": "Rethinking Global Issues",
     "titleZh": "Rethinking Global Issues",
     "credits": 3,
-    "recommendedYear": 9,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4320,7 +4320,7 @@ module.exports = [
     "titleEn": "Financial Information and Management",
     "titleZh": "Financial Information and Management",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4342,7 +4342,7 @@ module.exports = [
     "titleEn": "Introduction to Macroeconomics",
     "titleZh": "Introduction to Macroeconomics",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4364,7 +4364,7 @@ module.exports = [
     "titleEn": "The Hong Kong Housing Market",
     "titleZh": "The Hong Kong Housing Market",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4386,7 +4386,7 @@ module.exports = [
     "titleEn": "The Economics of the Digital Economy",
     "titleZh": "The Economics of the Digital Economy",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4408,7 +4408,7 @@ module.exports = [
     "titleEn": "Public Economics, Finance and Policymaking",
     "titleZh": "Public Economics, Finance and Policymaking",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4430,7 +4430,7 @@ module.exports = [
     "titleEn": "Intermediate Microeconomics",
     "titleZh": "Intermediate Microeconomics",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4452,7 +4452,7 @@ module.exports = [
     "titleEn": "Intermediate Macroeconomics",
     "titleZh": "Intermediate Macroeconomics",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4474,7 +4474,7 @@ module.exports = [
     "titleEn": "Labour Economics",
     "titleZh": "Labour Economics",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4496,7 +4496,7 @@ module.exports = [
     "titleEn": "The Hong Kong Economy",
     "titleZh": "The Hong Kong Economy",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4518,7 +4518,7 @@ module.exports = [
     "titleEn": "Behavioral Economics",
     "titleZh": "Behavioral Economics",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4540,7 +4540,7 @@ module.exports = [
     "titleEn": "International Finance",
     "titleZh": "International Finance",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4562,7 +4562,7 @@ module.exports = [
     "titleEn": "Environmental Economics and Policy",
     "titleZh": "Environmental Economics and Policy",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4584,7 +4584,7 @@ module.exports = [
     "titleEn": "Calculus",
     "titleZh": "Calculus",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "foundation",
     "requirementGroups": [
@@ -4606,7 +4606,7 @@ module.exports = [
     "titleEn": "Seminar in Social and Public Policy Issues",
     "titleZh": "Seminar in Social and Public Policy Issues",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "foundation",
     "requirementGroups": [
@@ -4628,7 +4628,7 @@ module.exports = [
     "titleEn": "Becoming a Social Media Influencer in Hong Kong",
     "titleZh": "Becoming a Social Media Influencer in Hong Kong",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4650,7 +4650,7 @@ module.exports = [
     "titleEn": "Creating Urban Commons: A Global Perspective",
     "titleZh": "Creating Urban Commons: A Global Perspective",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4672,7 +4672,7 @@ module.exports = [
     "titleEn": "Cyber Fandom and Everyday Culture",
     "titleZh": "Cyber Fandom and Everyday Culture",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4694,7 +4694,7 @@ module.exports = [
     "titleEn": "Digital Marketing for Social Causes",
     "titleZh": "Digital Marketing for Social Causes",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4716,7 +4716,7 @@ module.exports = [
     "titleEn": "Digital Technology and Creative Commons",
     "titleZh": "Digital Technology and Creative Commons",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4738,7 +4738,7 @@ module.exports = [
     "titleEn": "Food, Technology and Environments",
     "titleZh": "Food, Technology and Environments",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4760,7 +4760,7 @@ module.exports = [
     "titleEn": "The Platform Society: Power, Politics and Alternatives",
     "titleZh": "The Platform Society: Power, Politics and Alternatives",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4782,7 +4782,7 @@ module.exports = [
     "titleEn": "Make a Difference through Social Innovation",
     "titleZh": "Make a Difference through Social Innovation",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4804,7 +4804,7 @@ module.exports = [
     "titleEn": "Social Value and Social Impact Assessment: A Critical Introduction",
     "titleZh": "Social Value and Social Impact Assessment: A Critical Introduction",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4826,7 +4826,7 @@ module.exports = [
     "titleEn": "Theories of Cultural Innovations",
     "titleZh": "Theories of Cultural Innovations",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4848,7 +4848,7 @@ module.exports = [
     "titleEn": "Curating Digital Practice",
     "titleZh": "Curating Digital Practice",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4870,7 +4870,7 @@ module.exports = [
     "titleEn": "Media and Creative Industries",
     "titleZh": "Media and Creative Industries",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4892,7 +4892,7 @@ module.exports = [
     "titleEn": "Media, Gender, and Sexuality",
     "titleZh": "Media, Gender, and Sexuality",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4914,7 +4914,7 @@ module.exports = [
     "titleEn": "Media Networks and Everyday Life",
     "titleZh": "Media Networks and Everyday Life",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4936,7 +4936,7 @@ module.exports = [
     "titleEn": "Social Media Literacy",
     "titleZh": "Social Media Literacy",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4958,7 +4958,7 @@ module.exports = [
     "titleEn": "Special Topics in Digital Culture & Media Practices",
     "titleZh": "Special Topics in Digital Culture & Media Practices",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -4980,7 +4980,7 @@ module.exports = [
     "titleEn": "Techno-culture",
     "titleZh": "Techno-culture",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5002,7 +5002,7 @@ module.exports = [
     "titleEn": "Media, Culture and Society",
     "titleZh": "Media, Culture and Society",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5024,7 +5024,7 @@ module.exports = [
     "titleEn": "Hong Kong Popular Culture Policy and Governance",
     "titleZh": "Hong Kong Popular Culture Policy and Governance",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5046,7 +5046,7 @@ module.exports = [
     "titleEn": "City Cultures Policy and Governance",
     "titleZh": "City Cultures Policy and Governance",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5068,7 +5068,7 @@ module.exports = [
     "titleEn": "Making Documentaries for Social Change",
     "titleZh": "Making Documentaries for Social Change",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5090,7 +5090,7 @@ module.exports = [
     "titleEn": "Education and Cultural Politics",
     "titleZh": "Education and Cultural Politics",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5112,7 +5112,7 @@ module.exports = [
     "titleEn": "Cultural Policy & Community Practice",
     "titleZh": "Cultural Policy & Community Practice",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5134,7 +5134,7 @@ module.exports = [
     "titleEn": "Media Creativity",
     "titleZh": "Media Creativity",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5156,7 +5156,7 @@ module.exports = [
     "titleEn": "Microeconomics for Business",
     "titleZh": "Microeconomics for Business",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5178,7 +5178,7 @@ module.exports = [
     "titleEn": "Introduction to Economics",
     "titleZh": "Introduction to Economics",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5200,7 +5200,7 @@ module.exports = [
     "titleEn": "Global Business Environment",
     "titleZh": "Global Business Environment",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5222,7 +5222,7 @@ module.exports = [
     "titleEn": "Global Business and Management",
     "titleZh": "Global Business and Management",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5244,7 +5244,7 @@ module.exports = [
     "titleEn": "Global Business and Sustainable Development",
     "titleZh": "Global Business and Sustainable Development",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5266,7 +5266,7 @@ module.exports = [
     "titleEn": "Marketing Management",
     "titleZh": "Marketing Management",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5288,7 +5288,7 @@ module.exports = [
     "titleEn": "Marketing in the Chinese Mainland",
     "titleZh": "Marketing in the Chinese Mainland",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5310,7 +5310,7 @@ module.exports = [
     "titleEn": "Advertising and Integrated Marketing Communications",
     "titleZh": "Advertising and Integrated Marketing Communications",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5332,7 +5332,7 @@ module.exports = [
     "titleEn": "International Business Management",
     "titleZh": "International Business Management",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5354,7 +5354,7 @@ module.exports = [
     "titleEn": "Digital Innovation",
     "titleZh": "Digital Innovation",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5376,7 +5376,7 @@ module.exports = [
     "titleEn": "Doing Business in Emerging Markets",
     "titleZh": "Doing Business in Emerging Markets",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5398,7 +5398,7 @@ module.exports = [
     "titleEn": "Green Marketing: ESG and Sustainability",
     "titleZh": "Green Marketing: ESG and Sustainability",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5420,7 +5420,7 @@ module.exports = [
     "titleEn": "Crisis Communication and Social Media",
     "titleZh": "Crisis Communication and Social Media",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5442,7 +5442,7 @@ module.exports = [
     "titleEn": "International Event Marketing: Social Media and Societal Impact",
     "titleZh": "International Event Marketing: Social Media and Societal Impact",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5464,7 +5464,7 @@ module.exports = [
     "titleEn": "Social Media Marketing",
     "titleZh": "Social Media Marketing",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5486,7 +5486,7 @@ module.exports = [
     "titleEn": "Marketing Analytics",
     "titleZh": "Marketing Analytics",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5508,7 +5508,7 @@ module.exports = [
     "titleEn": "Probability and Statistics 1",
     "titleZh": "Probability and Statistics 1",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5530,7 +5530,7 @@ module.exports = [
     "titleEn": "Statistics for Business",
     "titleZh": "Statistics for Business",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5552,7 +5552,7 @@ module.exports = [
     "titleEn": "Consumer Behaviour",
     "titleZh": "Consumer Behaviour",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5574,7 +5574,7 @@ module.exports = [
     "titleEn": "Introduction to Psychology",
     "titleZh": "Introduction to Psychology",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5596,7 +5596,7 @@ module.exports = [
     "titleEn": "Marketing Research",
     "titleZh": "Marketing Research",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5618,7 +5618,7 @@ module.exports = [
     "titleEn": "e-Marketing",
     "titleZh": "e-Marketing",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5640,7 +5640,7 @@ module.exports = [
     "titleEn": "International Marketing Management",
     "titleZh": "International Marketing Management",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5662,7 +5662,7 @@ module.exports = [
     "titleEn": "Retailing and Distribution Management",
     "titleZh": "Retailing and Distribution Management",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5684,7 +5684,7 @@ module.exports = [
     "titleEn": "Services Marketing",
     "titleZh": "Services Marketing",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5706,7 +5706,7 @@ module.exports = [
     "titleEn": "Strategic Brand Management",
     "titleZh": "Strategic Brand Management",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5728,7 +5728,7 @@ module.exports = [
     "titleEn": "Introduction to the Study of Language",
     "titleZh": "Introduction to the Study of Language",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5750,7 +5750,7 @@ module.exports = [
     "titleEn": "Practical Phonetics",
     "titleZh": "Practical Phonetics",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5772,7 +5772,7 @@ module.exports = [
     "titleEn": "Introduction to Literature I",
     "titleZh": "Introduction to Literature I",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5794,7 +5794,7 @@ module.exports = [
     "titleEn": "Introduction to Literature II",
     "titleZh": "Introduction to Literature II",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5816,7 +5816,7 @@ module.exports = [
     "titleEn": "Introduction to Research Methods in English Studies",
     "titleZh": "Introduction to Research Methods in English Studies",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5838,7 +5838,7 @@ module.exports = [
     "titleEn": "Language, Gender and Sexuality",
     "titleZh": "Language, Gender and Sexuality",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5860,7 +5860,7 @@ module.exports = [
     "titleEn": "Tragic Drama across Time and Space",
     "titleZh": "Tragic Drama across Time and Space",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5882,7 +5882,7 @@ module.exports = [
     "titleEn": "Twentieth-Century American Literature",
     "titleZh": "Twentieth-Century American Literature",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5904,7 +5904,7 @@ module.exports = [
     "titleEn": "Final Year Project Preparation",
     "titleZh": "Final Year Project Preparation",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -5926,7 +5926,7 @@ module.exports = [
     "titleEn": "Picturing Language: Literary Studies in Ekphrasis",
     "titleZh": "Picturing Language: Literary Studies in Ekphrasis",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5948,7 +5948,7 @@ module.exports = [
     "titleEn": "English as a Global Language",
     "titleZh": "English as a Global Language",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5970,7 +5970,7 @@ module.exports = [
     "titleEn": "Critical Approaches to Media Discourse",
     "titleZh": "Critical Approaches to Media Discourse",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -5992,7 +5992,7 @@ module.exports = [
     "titleEn": "Multimodal Writing from Paper to Screen",
     "titleZh": "Multimodal Writing from Paper to Screen",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6014,7 +6014,7 @@ module.exports = [
     "titleEn": "Making It New: Introduction to Modernism",
     "titleZh": "Making It New: Introduction to Modernism",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6036,7 +6036,7 @@ module.exports = [
     "titleEn": "Second Language Acquisition and Teaching",
     "titleZh": "Second Language Acquisition and Teaching",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6058,7 +6058,7 @@ module.exports = [
     "titleEn": "Introduction to Corpus Linguistics",
     "titleZh": "Introduction to Corpus Linguistics",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6080,7 +6080,7 @@ module.exports = [
     "titleEn": "Pedagogical Grammar",
     "titleZh": "Pedagogical Grammar",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6102,7 +6102,7 @@ module.exports = [
     "titleEn": "Language, Society and the Media",
     "titleZh": "Language, Society and the Media",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6124,7 +6124,7 @@ module.exports = [
     "titleEn": "Discourse Analysis",
     "titleZh": "Discourse Analysis",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6146,7 +6146,7 @@ module.exports = [
     "titleEn": "Critical Perspectives in Literary Studies",
     "titleZh": "Critical Perspectives in Literary Studies",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6168,7 +6168,7 @@ module.exports = [
     "titleEn": "Contemporary Literature in English: Drama and Poetry",
     "titleZh": "Contemporary Literature in English: Drama and Poetry",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6190,7 +6190,7 @@ module.exports = [
     "titleEn": "Critical Literacies",
     "titleZh": "Critical Literacies",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6212,7 +6212,7 @@ module.exports = [
     "titleEn": "European and Chinese Essay Forms: Attempts at Persuasion",
     "titleZh": "European and Chinese Essay Forms: Attempts at Persuasion",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6234,7 +6234,7 @@ module.exports = [
     "titleEn": "Asian Voices in English (Fiction & Film)",
     "titleZh": "Asian Voices in English (Fiction & Film)",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6256,7 +6256,7 @@ module.exports = [
     "titleEn": "Organisational Communication",
     "titleZh": "Organisational Communication",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6278,7 +6278,7 @@ module.exports = [
     "titleEn": "Psycholinguistics",
     "titleZh": "Psycholinguistics",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6300,7 +6300,7 @@ module.exports = [
     "titleEn": "English Phonology",
     "titleZh": "English Phonology",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6322,7 +6322,7 @@ module.exports = [
     "titleEn": "Intercultural Communication",
     "titleZh": "Intercultural Communication",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6344,7 +6344,7 @@ module.exports = [
     "titleEn": "Literature and Adaptation",
     "titleZh": "Literature and Adaptation",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6366,7 +6366,7 @@ module.exports = [
     "titleEn": "English Drama Performance",
     "titleZh": "English Drama Performance",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6388,7 +6388,7 @@ module.exports = [
     "titleEn": "Professional Communication",
     "titleZh": "Professional Communication",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6410,7 +6410,7 @@ module.exports = [
     "titleEn": "The Graphic Novel",
     "titleZh": "The Graphic Novel",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6432,7 +6432,7 @@ module.exports = [
     "titleEn": "Language as Play",
     "titleZh": "Language as Play",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6454,7 +6454,7 @@ module.exports = [
     "titleEn": "Contemporary Poetry as Text and Experience",
     "titleZh": "Contemporary Poetry as Text and Experience",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6476,7 +6476,7 @@ module.exports = [
     "titleEn": "Cross-Cultural Studies of Literature",
     "titleZh": "Cross-Cultural Studies of Literature",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6498,7 +6498,7 @@ module.exports = [
     "titleEn": "Words: Their Form and Meaning",
     "titleZh": "Words: Their Form and Meaning",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6520,7 +6520,7 @@ module.exports = [
     "titleEn": "Introduction to Children's Literature in English",
     "titleZh": "Introduction to Children's Literature in English",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6542,7 +6542,7 @@ module.exports = [
     "titleEn": "The Language of Literature",
     "titleZh": "The Language of Literature",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6564,7 +6564,7 @@ module.exports = [
     "titleEn": "Lifewriting",
     "titleZh": "Lifewriting",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6586,7 +6586,7 @@ module.exports = [
     "titleEn": "Theoretical Positions and Interpretive Practices",
     "titleZh": "Theoretical Positions and Interpretive Practices",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6608,7 +6608,7 @@ module.exports = [
     "titleEn": "New Literacies in the Digital Age",
     "titleZh": "New Literacies in the Digital Age",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6630,7 +6630,7 @@ module.exports = [
     "titleEn": "Final Year Project",
     "titleZh": "Final Year Project",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -6652,7 +6652,7 @@ module.exports = [
     "titleEn": "Introduction to Sociology",
     "titleZh": "Introduction to Sociology",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6674,7 +6674,7 @@ module.exports = [
     "titleEn": "Principles and Practice of Social Policy",
     "titleZh": "Principles and Practice of Social Policy",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6696,7 +6696,7 @@ module.exports = [
     "titleEn": "Ethnicity and Ethnic Minorities",
     "titleZh": "Ethnicity and Ethnic Minorities",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6718,7 +6718,7 @@ module.exports = [
     "titleEn": "Sociological Research Methods",
     "titleZh": "Sociological Research Methods",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6740,7 +6740,7 @@ module.exports = [
     "titleEn": "Classical Sociological Theory",
     "titleZh": "Classical Sociological Theory",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6762,7 +6762,7 @@ module.exports = [
     "titleEn": "Contemporary Sociological Theory",
     "titleZh": "Contemporary Sociological Theory",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6784,7 +6784,7 @@ module.exports = [
     "titleEn": "Social Gerontology",
     "titleZh": "Social Gerontology",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6806,7 +6806,7 @@ module.exports = [
     "titleEn": "Society and Social Change",
     "titleZh": "Society and Social Change",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6828,7 +6828,7 @@ module.exports = [
     "titleEn": "Hong Kong Society",
     "titleZh": "Hong Kong Society",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6850,7 +6850,7 @@ module.exports = [
     "titleEn": "Urban Sociology",
     "titleZh": "Urban Sociology",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6872,7 +6872,7 @@ module.exports = [
     "titleEn": "Social Welfare and Social Problems in Hong Kong",
     "titleZh": "Social Welfare and Social Problems in Hong Kong",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6894,7 +6894,7 @@ module.exports = [
     "titleEn": "Crime and Delinquency",
     "titleZh": "Crime and Delinquency",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6916,7 +6916,7 @@ module.exports = [
     "titleEn": "Digital Society",
     "titleZh": "Digital Society",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6938,7 +6938,7 @@ module.exports = [
     "titleEn": "Smart Cities Seminar",
     "titleZh": "Smart Cities Seminar",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6960,7 +6960,7 @@ module.exports = [
     "titleEn": "Social Stratification",
     "titleZh": "Social Stratification",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -6982,7 +6982,7 @@ module.exports = [
     "titleEn": "Consumption and Society",
     "titleZh": "Consumption and Society",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7004,7 +7004,7 @@ module.exports = [
     "titleEn": "Social Innovation Seminar",
     "titleZh": "Social Innovation Seminar",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7026,7 +7026,7 @@ module.exports = [
     "titleEn": "Non-Profit Organization and Voluntary Sector",
     "titleZh": "Non-Profit Organization and Voluntary Sector",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7048,7 +7048,7 @@ module.exports = [
     "titleEn": "Measuring Society",
     "titleZh": "Measuring Society",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7070,7 +7070,7 @@ module.exports = [
     "titleEn": "Gender and Society",
     "titleZh": "Gender and Society",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7092,7 +7092,7 @@ module.exports = [
     "titleEn": "Qualitative Research Methods",
     "titleZh": "Qualitative Research Methods",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7114,7 +7114,7 @@ module.exports = [
     "titleEn": "Social Issue in Contemporary Chinese Societies",
     "titleZh": "Social Issue in Contemporary Chinese Societies",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7136,7 +7136,7 @@ module.exports = [
     "titleEn": "Sociological Analysis",
     "titleZh": "Sociological Analysis",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7158,7 +7158,7 @@ module.exports = [
     "titleEn": "Quantitative Research Methods",
     "titleZh": "Quantitative Research Methods",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7180,7 +7180,7 @@ module.exports = [
     "titleEn": "Work and Occupation",
     "titleZh": "Work and Occupation",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7202,7 +7202,7 @@ module.exports = [
     "titleEn": "Ageing, Adaptation and Change",
     "titleZh": "Ageing, Adaptation and Change",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7224,7 +7224,7 @@ module.exports = [
     "titleEn": "Global Health",
     "titleZh": "Global Health",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7246,7 +7246,7 @@ module.exports = [
     "titleEn": "Junior Research Project",
     "titleZh": "Junior Research Project",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -7268,7 +7268,7 @@ module.exports = [
     "titleEn": "Senior Thesis",
     "titleZh": "Senior Thesis",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -7290,7 +7290,7 @@ module.exports = [
     "titleEn": "Introduction to Health and Social Care",
     "titleZh": "Introduction to Health and Social Care",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7312,7 +7312,7 @@ module.exports = [
     "titleEn": "Health and Social Service Provisions for Special Populations",
     "titleZh": "Health and Social Service Provisions for Special Populations",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7334,7 +7334,7 @@ module.exports = [
     "titleEn": "Community-based Social Services",
     "titleZh": "Community-based Social Services",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7356,7 +7356,7 @@ module.exports = [
     "titleEn": "Modern Technology in Health and Social Services",
     "titleZh": "Modern Technology in Health and Social Services",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7378,7 +7378,7 @@ module.exports = [
     "titleEn": "Leading and Managing Health and Social Services",
     "titleZh": "Leading and Managing Health and Social Services",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7400,7 +7400,7 @@ module.exports = [
     "titleEn": "Health and Social Service Project",
     "titleZh": "Health and Social Service Project",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -7422,7 +7422,7 @@ module.exports = [
     "titleEn": "Fundraising and Programme Evaluation",
     "titleZh": "Fundraising and Programme Evaluation",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7444,7 +7444,7 @@ module.exports = [
     "titleEn": "Social and Healthcare Policies in Hong Kong and China",
     "titleZh": "Social and Healthcare Policies in Hong Kong and China",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7466,7 +7466,7 @@ module.exports = [
     "titleEn": "Social Innovation and Social Enterprises",
     "titleZh": "Social Innovation and Social Enterprises",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7488,7 +7488,7 @@ module.exports = [
     "titleEn": "Junior Research Project",
     "titleZh": "Junior Research Project",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -7510,7 +7510,7 @@ module.exports = [
     "titleEn": "Senior Thesis",
     "titleZh": "Senior Thesis",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -7532,7 +7532,7 @@ module.exports = [
     "titleEn": "Principles and Practice of Social Policy",
     "titleZh": "Principles and Practice of Social Policy",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7554,7 +7554,7 @@ module.exports = [
     "titleEn": "Social Gerontology",
     "titleZh": "Social Gerontology",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7576,7 +7576,7 @@ module.exports = [
     "titleEn": "Society and Social Change",
     "titleZh": "Society and Social Change",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7598,7 +7598,7 @@ module.exports = [
     "titleEn": "Urban Sociology",
     "titleZh": "Urban Sociology",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7620,7 +7620,7 @@ module.exports = [
     "titleEn": "Social Welfare and Social Problems in Hong Kong",
     "titleZh": "Social Welfare and Social Problems in Hong Kong",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7642,7 +7642,7 @@ module.exports = [
     "titleEn": "Digital Society",
     "titleZh": "Digital Society",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7664,7 +7664,7 @@ module.exports = [
     "titleEn": "Smart Cities Seminar",
     "titleZh": "Smart Cities Seminar",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7686,7 +7686,7 @@ module.exports = [
     "titleEn": "Social Stratification",
     "titleZh": "Social Stratification",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7708,7 +7708,7 @@ module.exports = [
     "titleEn": "Social Innovation Seminar",
     "titleZh": "Social Innovation Seminar",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7730,7 +7730,7 @@ module.exports = [
     "titleEn": "Non-Profit Organization and Voluntary Sector",
     "titleZh": "Non-Profit Organization and Voluntary Sector",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7752,7 +7752,7 @@ module.exports = [
     "titleEn": "Measuring Society",
     "titleZh": "Measuring Society",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7774,7 +7774,7 @@ module.exports = [
     "titleEn": "Gender and Society",
     "titleZh": "Gender and Society",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7796,7 +7796,7 @@ module.exports = [
     "titleEn": "Social Issue in Contemporary Chinese Societies",
     "titleZh": "Social Issue in Contemporary Chinese Societies",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7818,7 +7818,7 @@ module.exports = [
     "titleEn": "Ageing, Adaptation and Change",
     "titleZh": "Ageing, Adaptation and Change",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7840,7 +7840,7 @@ module.exports = [
     "titleEn": "Global Health",
     "titleZh": "Global Health",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7862,7 +7862,7 @@ module.exports = [
     "titleEn": "Social and Healthcare Policies in Hong Kong and China",
     "titleZh": "Social and Healthcare Policies in Hong Kong and China",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7884,7 +7884,7 @@ module.exports = [
     "titleEn": "Social Innovation and Social Enterprises",
     "titleZh": "Social Innovation and Social Enterprises",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7906,7 +7906,7 @@ module.exports = [
     "titleEn": "Social and Public Policy Issues",
     "titleZh": "Social and Public Policy Issues",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7928,7 +7928,7 @@ module.exports = [
     "titleEn": "Junior Research Project",
     "titleZh": "Junior Research Project",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -7950,7 +7950,7 @@ module.exports = [
     "titleEn": "Senior Thesis",
     "titleZh": "Senior Thesis",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -7972,7 +7972,7 @@ module.exports = [
     "titleEn": "Introduction to Social Data Science",
     "titleZh": "Introduction to Social Data Science",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -7994,7 +7994,7 @@ module.exports = [
     "titleEn": "Introduction to Economics",
     "titleZh": "Introduction to Economics",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8016,7 +8016,7 @@ module.exports = [
     "titleEn": "Introduction to Microeconomics",
     "titleZh": "Introduction to Microeconomics",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8038,7 +8038,7 @@ module.exports = [
     "titleEn": "Introduction to Macroeconomics",
     "titleZh": "Introduction to Macroeconomics",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8060,7 +8060,7 @@ module.exports = [
     "titleEn": "Microeconomics for Business",
     "titleZh": "Microeconomics for Business",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8082,7 +8082,7 @@ module.exports = [
     "titleEn": "Introduction to Political Science",
     "titleZh": "Introduction to Political Science",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8104,7 +8104,7 @@ module.exports = [
     "titleEn": "Introduction to Psychology",
     "titleZh": "Introduction to Psychology",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8126,7 +8126,7 @@ module.exports = [
     "titleEn": "Introduction to Sociology",
     "titleZh": "Introduction to Sociology",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8148,7 +8148,7 @@ module.exports = [
     "titleEn": "Culture, Power and Government",
     "titleZh": "Culture, Power and Government",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8170,7 +8170,7 @@ module.exports = [
     "titleEn": "Introduction to Programming for Data Science",
     "titleZh": "Introduction to Programming for Data Science",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8192,7 +8192,7 @@ module.exports = [
     "titleEn": "Introduction to Artificial Intelligence",
     "titleZh": "Introduction to Artificial Intelligence",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8214,7 +8214,7 @@ module.exports = [
     "titleEn": "The Economics of the Digital Economy",
     "titleZh": "The Economics of the Digital Economy",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8236,7 +8236,7 @@ module.exports = [
     "titleEn": "Introduction to Computational Political Science",
     "titleZh": "Introduction to Computational Political Science",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8258,7 +8258,7 @@ module.exports = [
     "titleEn": "Psychology of Human Performance and Technology",
     "titleZh": "Psychology of Human Performance and Technology",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8280,7 +8280,7 @@ module.exports = [
     "titleEn": "Science, Technology and Society",
     "titleZh": "Science, Technology and Society",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8302,7 +8302,7 @@ module.exports = [
     "titleEn": "Digital Society",
     "titleZh": "Digital Society",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8324,7 +8324,7 @@ module.exports = [
     "titleEn": "Junior Research Project",
     "titleZh": "Junior Research Project",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -8346,7 +8346,7 @@ module.exports = [
     "titleEn": "Senior Thesis",
     "titleZh": "Senior Thesis",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -8368,7 +8368,7 @@ module.exports = [
     "titleEn": "Histories of Chinese Art",
     "titleZh": "Histories of Chinese Art",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8390,7 +8390,7 @@ module.exports = [
     "titleEn": "Film Art and Storytelling",
     "titleZh": "Film Art and Storytelling",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8412,7 +8412,7 @@ module.exports = [
     "titleEn": "Understanding Drawing",
     "titleZh": "Understanding Drawing",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8434,7 +8434,7 @@ module.exports = [
     "titleEn": "Arts of Europe",
     "titleZh": "Arts of Europe",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8456,7 +8456,7 @@ module.exports = [
     "titleEn": "Studio Art Practice",
     "titleZh": "Studio Art Practice",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8478,7 +8478,7 @@ module.exports = [
     "titleEn": "Video Art",
     "titleZh": "Video Art",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8500,7 +8500,7 @@ module.exports = [
     "titleEn": "Internship",
     "titleZh": "Internship",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "internship",
     "requirementGroups": [
@@ -8522,7 +8522,7 @@ module.exports = [
     "titleEn": "East Asian Cinemas",
     "titleZh": "East Asian Cinemas",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8544,7 +8544,7 @@ module.exports = [
     "titleEn": "Film and Visual Studies Research",
     "titleZh": "Film and Visual Studies Research",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8566,7 +8566,7 @@ module.exports = [
     "titleEn": "Cinematography",
     "titleZh": "Cinematography",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8588,7 +8588,7 @@ module.exports = [
     "titleEn": "Contemporary Chinese Art",
     "titleZh": "Contemporary Chinese Art",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8610,7 +8610,7 @@ module.exports = [
     "titleEn": "Cultural Transmissions of East Asian Art",
     "titleZh": "Cultural Transmissions of East Asian Art",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8632,7 +8632,7 @@ module.exports = [
     "titleEn": "Art from Antiquity to the Enlightenment",
     "titleZh": "Art from Antiquity to the Enlightenment",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8654,7 +8654,7 @@ module.exports = [
     "titleEn": "Art from Romanticism to Modernism",
     "titleZh": "Art from Romanticism to Modernism",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8676,7 +8676,7 @@ module.exports = [
     "titleEn": "Film History I: Film Styles before the 1940s",
     "titleZh": "Film History I: Film Styles before the 1940s",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8698,7 +8698,7 @@ module.exports = [
     "titleEn": "Exploring Visual Media",
     "titleZh": "Exploring Visual Media",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8720,7 +8720,7 @@ module.exports = [
     "titleEn": "Studio Practice with Artist-in-Residence",
     "titleZh": "Studio Practice with Artist-in-Residence",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8742,7 +8742,7 @@ module.exports = [
     "titleEn": "Film Genres and Hollywood",
     "titleZh": "Film Genres and Hollywood",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8764,7 +8764,7 @@ module.exports = [
     "titleEn": "Non-fiction Film and Video",
     "titleZh": "Non-fiction Film and Video",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8786,7 +8786,7 @@ module.exports = [
     "titleEn": "From Abstract Art to Postmodernism",
     "titleZh": "From Abstract Art to Postmodernism",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8808,7 +8808,7 @@ module.exports = [
     "titleEn": "Korean Cinema",
     "titleZh": "Korean Cinema",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8830,7 +8830,7 @@ module.exports = [
     "titleEn": "Special Topics in Film Art",
     "titleZh": "Special Topics in Film Art",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8852,7 +8852,7 @@ module.exports = [
     "titleEn": "Special Topics in Studio Practice",
     "titleZh": "Special Topics in Studio Practice",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8874,7 +8874,7 @@ module.exports = [
     "titleEn": "Collecting Chinese Art",
     "titleZh": "Collecting Chinese Art",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8896,7 +8896,7 @@ module.exports = [
     "titleEn": "Curating Film Festivals for Alternative Cinema",
     "titleZh": "Curating Film Festivals for Alternative Cinema",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8918,7 +8918,7 @@ module.exports = [
     "titleEn": "Curating Art Exhibitions",
     "titleZh": "Curating Art Exhibitions",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8940,7 +8940,7 @@ module.exports = [
     "titleEn": "Independent Cinema",
     "titleZh": "Independent Cinema",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8962,7 +8962,7 @@ module.exports = [
     "titleEn": "Film Aesthetics",
     "titleZh": "Film Aesthetics",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -8984,7 +8984,7 @@ module.exports = [
     "titleEn": "Global Contemporary Art: Theories and Practices",
     "titleZh": "Global Contemporary Art: Theories and Practices",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9006,7 +9006,7 @@ module.exports = [
     "titleEn": "Art and Its Institutions",
     "titleZh": "Art and Its Institutions",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9028,7 +9028,7 @@ module.exports = [
     "titleEn": "Major Figures in Film Art",
     "titleZh": "Major Figures in Film Art",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9050,7 +9050,7 @@ module.exports = [
     "titleEn": "Directed Research Project",
     "titleZh": "Directed Research Project",
     "credits": 6,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -9072,7 +9072,7 @@ module.exports = [
     "titleEn": "Capstone Project: Research Dissertation",
     "titleZh": "Capstone Project: Research Dissertation",
     "credits": 6,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -9094,7 +9094,7 @@ module.exports = [
     "titleEn": "Capstone Project: Research Dissertation",
     "titleZh": "Capstone Project: Research Dissertation",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -9116,7 +9116,7 @@ module.exports = [
     "titleEn": "Capstone Project: Creative Project",
     "titleZh": "Capstone Project: Creative Project",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -9138,7 +9138,7 @@ module.exports = [
     "titleEn": "Capstone Project: Curatorial Project",
     "titleZh": "Capstone Project: Curatorial Project",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -9160,7 +9160,7 @@ module.exports = [
     "titleEn": "Women, Art and Society in China",
     "titleZh": "Women, Art and Society in China",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9182,7 +9182,7 @@ module.exports = [
     "titleEn": "Film Theory and Criticism",
     "titleZh": "Film Theory and Criticism",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9204,7 +9204,7 @@ module.exports = [
     "titleEn": "Film History II: Global New Waves",
     "titleZh": "Film History II: Global New Waves",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9226,7 +9226,7 @@ module.exports = [
     "titleEn": "Introduction to Psychology",
     "titleZh": "Introduction to Psychology",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9248,7 +9248,7 @@ module.exports = [
     "titleEn": "Stress and Coping: Theory and Practices",
     "titleZh": "Stress and Coping: Theory and Practices",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9270,7 +9270,7 @@ module.exports = [
     "titleEn": "Research Methods and Statistics for Psychology I",
     "titleZh": "Research Methods and Statistics for Psychology I",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9292,7 +9292,7 @@ module.exports = [
     "titleEn": "Exploring Psychology in Western and Chinese Cultures",
     "titleZh": "Exploring Psychology in Western and Chinese Cultures",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9314,7 +9314,7 @@ module.exports = [
     "titleEn": "Psychology of Human Performance and Technology",
     "titleZh": "Psychology of Human Performance and Technology",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9336,7 +9336,7 @@ module.exports = [
     "titleEn": "Human Development and Psychology of Adulthood",
     "titleZh": "Human Development and Psychology of Adulthood",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9358,7 +9358,7 @@ module.exports = [
     "titleEn": "Psychology Applied to Occupational Safety and Health",
     "titleZh": "Psychology Applied to Occupational Safety and Health",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9380,7 +9380,7 @@ module.exports = [
     "titleEn": "Social Psychology",
     "titleZh": "Social Psychology",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9402,7 +9402,7 @@ module.exports = [
     "titleEn": "Abnormal Psychology",
     "titleZh": "Abnormal Psychology",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9424,7 +9424,7 @@ module.exports = [
     "titleEn": "Health Psychology",
     "titleZh": "Health Psychology",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9446,7 +9446,7 @@ module.exports = [
     "titleEn": "Personality and Individual Differences",
     "titleZh": "Personality and Individual Differences",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9468,7 +9468,7 @@ module.exports = [
     "titleEn": "Cognitive Psychology",
     "titleZh": "Cognitive Psychology",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9490,7 +9490,7 @@ module.exports = [
     "titleEn": "Positive Psychology and Positive Living",
     "titleZh": "Positive Psychology and Positive Living",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9512,7 +9512,7 @@ module.exports = [
     "titleEn": "Environmental Psychology",
     "titleZh": "Environmental Psychology",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9534,7 +9534,7 @@ module.exports = [
     "titleEn": "Educational Psychology",
     "titleZh": "Educational Psychology",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9556,7 +9556,7 @@ module.exports = [
     "titleEn": "Biological Psychology",
     "titleZh": "Biological Psychology",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9578,7 +9578,7 @@ module.exports = [
     "titleEn": "Sensation and Perception",
     "titleZh": "Sensation and Perception",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9600,7 +9600,7 @@ module.exports = [
     "titleEn": "Psychological Testing and Assessment",
     "titleZh": "Psychological Testing and Assessment",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9622,7 +9622,7 @@ module.exports = [
     "titleEn": "Research Methods and Statistics for Psychology II",
     "titleZh": "Research Methods and Statistics for Psychology II",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9644,7 +9644,7 @@ module.exports = [
     "titleEn": "Cross-cultural Psychology",
     "titleZh": "Cross-cultural Psychology",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9666,7 +9666,7 @@ module.exports = [
     "titleEn": "Counseling Psychology",
     "titleZh": "Counseling Psychology",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9688,7 +9688,7 @@ module.exports = [
     "titleEn": "Industrial and Organisational Psychology",
     "titleZh": "Industrial and Organisational Psychology",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9710,7 +9710,7 @@ module.exports = [
     "titleEn": "The Neuroscience of Social Behaviour",
     "titleZh": "The Neuroscience of Social Behaviour",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9732,7 +9732,7 @@ module.exports = [
     "titleEn": "Introduction to Political Science",
     "titleZh": "Introduction to Political Science",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9754,7 +9754,7 @@ module.exports = [
     "titleEn": "Empirical Political Analysis: Approaches and Methods",
     "titleZh": "Empirical Political Analysis: Approaches and Methods",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9776,7 +9776,7 @@ module.exports = [
     "titleEn": "Media, Data and Politics",
     "titleZh": "Media, Data and Politics",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9798,7 +9798,7 @@ module.exports = [
     "titleEn": "Political Economy of Development",
     "titleZh": "Political Economy of Development",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9820,7 +9820,7 @@ module.exports = [
     "titleEn": "Small States in World Politics",
     "titleZh": "Small States in World Politics",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9842,7 +9842,7 @@ module.exports = [
     "titleEn": "Government and Politics of Contemporary China",
     "titleZh": "Government and Politics of Contemporary China",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9864,7 +9864,7 @@ module.exports = [
     "titleEn": "International Politics",
     "titleZh": "International Politics",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9886,7 +9886,7 @@ module.exports = [
     "titleEn": "Global Governance",
     "titleZh": "Global Governance",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9908,7 +9908,7 @@ module.exports = [
     "titleEn": "Public Policy: Values and Processes",
     "titleZh": "Public Policy: Values and Processes",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9930,7 +9930,7 @@ module.exports = [
     "titleEn": "Comparative Politics",
     "titleZh": "Comparative Politics",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9952,7 +9952,7 @@ module.exports = [
     "titleEn": "Government and Politics of Hong Kong",
     "titleZh": "Government and Politics of Hong Kong",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9974,7 +9974,7 @@ module.exports = [
     "titleEn": "American Foreign Policy",
     "titleZh": "American Foreign Policy",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -9996,7 +9996,7 @@ module.exports = [
     "titleEn": "Modern Political Ideologies",
     "titleZh": "Modern Political Ideologies",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -10018,7 +10018,7 @@ module.exports = [
     "titleEn": "War and Peace",
     "titleZh": "War and Peace",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -10040,7 +10040,7 @@ module.exports = [
     "titleEn": "Introduction to Computational Political Science",
     "titleZh": "Introduction to Computational Political Science",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -10062,7 +10062,7 @@ module.exports = [
     "titleEn": "Ethics and Public Affairs",
     "titleZh": "Ethics and Public Affairs",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -10084,7 +10084,7 @@ module.exports = [
     "titleEn": "Seminar in International Political Economy",
     "titleZh": "Seminar in International Political Economy",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -10106,7 +10106,7 @@ module.exports = [
     "titleEn": "Elections, Party Competition and Electioneering",
     "titleZh": "Elections, Party Competition and Electioneering",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -10128,7 +10128,7 @@ module.exports = [
     "titleEn": "Religion and Political Conflicts",
     "titleZh": "Religion and Political Conflicts",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -10150,7 +10150,7 @@ module.exports = [
     "titleEn": "Chinese Foreign Policy",
     "titleZh": "Chinese Foreign Policy",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -10172,7 +10172,7 @@ module.exports = [
     "titleEn": "International Politics of Northeast Asia",
     "titleZh": "International Politics of Northeast Asia",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -10194,7 +10194,7 @@ module.exports = [
     "titleEn": "International Politics of Southeast Asia",
     "titleZh": "International Politics of Southeast Asia",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -10216,7 +10216,7 @@ module.exports = [
     "titleEn": "Junior Research Project",
     "titleZh": "Junior Research Project",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -10238,7 +10238,7 @@ module.exports = [
     "titleEn": "Senior Thesis",
     "titleZh": "Senior Thesis",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -10590,7 +10590,7 @@ module.exports = [
     "titleEn": "Historian’s Craft",
     "titleZh": "Historian’s Craft",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -10612,7 +10612,7 @@ module.exports = [
     "titleEn": "Ideas in Modern History",
     "titleZh": "Ideas in Modern History",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -10634,7 +10634,7 @@ module.exports = [
     "titleEn": "Introduction to the History of the USA",
     "titleZh": "Introduction to the History of the USA",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -10656,7 +10656,7 @@ module.exports = [
     "titleEn": "Introduction to European History",
     "titleZh": "Introduction to European History",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -10678,7 +10678,7 @@ module.exports = [
     "titleEn": "Introduction to Chinese History",
     "titleZh": "Introduction to Chinese History",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -10700,7 +10700,7 @@ module.exports = [
     "titleEn": "History of Modern East Asia",
     "titleZh": "History of Modern East Asia",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -10722,7 +10722,7 @@ module.exports = [
     "titleEn": "East-West Value Clashes in Modern History",
     "titleZh": "East-West Value Clashes in Modern History",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -10744,7 +10744,7 @@ module.exports = [
     "titleEn": "Human-Animal Relationship in History",
     "titleZh": "Human-Animal Relationship in History",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -10766,7 +10766,7 @@ module.exports = [
     "titleEn": "History of Russia and Central Asia",
     "titleZh": "History of Russia and Central Asia",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -10788,7 +10788,7 @@ module.exports = [
     "titleEn": "Modern Revolutions and Musical Performance",
     "titleZh": "Modern Revolutions and Musical Performance",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -10810,7 +10810,7 @@ module.exports = [
     "titleEn": "Aerial Technologies in History",
     "titleZh": "Aerial Technologies in History",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -10832,7 +10832,7 @@ module.exports = [
     "titleEn": "History of Early China: From Prehistory to the Han Dynasty",
     "titleZh": "History of Early China: From Prehistory to the Han Dynasty",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -10854,7 +10854,7 @@ module.exports = [
     "titleEn": "Russia and Eastern Europe: History through the Arts",
     "titleZh": "Russia and Eastern Europe: History through the Arts",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -10876,7 +10876,7 @@ module.exports = [
     "titleEn": "Historical Ideas and Methods",
     "titleZh": "Historical Ideas and Methods",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -10898,7 +10898,7 @@ module.exports = [
     "titleEn": "Historical Research and Writing",
     "titleZh": "Historical Research and Writing",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -10920,7 +10920,7 @@ module.exports = [
     "titleEn": "Ancient Civilisations",
     "titleZh": "Ancient Civilisations",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -10942,7 +10942,7 @@ module.exports = [
     "titleEn": "Hong Kong’s Heritage",
     "titleZh": "Hong Kong’s Heritage",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -10964,7 +10964,7 @@ module.exports = [
     "titleEn": "History of China in the Twentieth Century",
     "titleZh": "History of China in the Twentieth Century",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -10986,7 +10986,7 @@ module.exports = [
     "titleEn": "History of Hong Kong before 1841",
     "titleZh": "History of Hong Kong before 1841",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11008,7 +11008,7 @@ module.exports = [
     "titleEn": "History of Hong Kong from 1841 to 1941",
     "titleZh": "History of Hong Kong from 1841 to 1941",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11030,7 +11030,7 @@ module.exports = [
     "titleEn": "Introduction to Japanese History",
     "titleZh": "Introduction to Japanese History",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11052,7 +11052,7 @@ module.exports = [
     "titleEn": "Introduction to Korean History",
     "titleZh": "Introduction to Korean History",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11074,7 +11074,7 @@ module.exports = [
     "titleEn": "Introduction to Southeast Asian History",
     "titleZh": "Introduction to Southeast Asian History",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11096,7 +11096,7 @@ module.exports = [
     "titleEn": "World Environmental History",
     "titleZh": "World Environmental History",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11118,7 +11118,7 @@ module.exports = [
     "titleEn": "The Historical Experience in Film",
     "titleZh": "The Historical Experience in Film",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11140,7 +11140,7 @@ module.exports = [
     "titleEn": "History of the Modern Middle East",
     "titleZh": "History of the Modern Middle East",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11162,7 +11162,7 @@ module.exports = [
     "titleEn": "Introduction to South Asian History",
     "titleZh": "Introduction to South Asian History",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11184,7 +11184,7 @@ module.exports = [
     "titleEn": "History of Modern Islamic Societies",
     "titleZh": "History of Modern Islamic Societies",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11206,7 +11206,7 @@ module.exports = [
     "titleEn": "Tibet: History, Culture and Politics",
     "titleZh": "Tibet: History, Culture and Politics",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11228,7 +11228,7 @@ module.exports = [
     "titleEn": "Chinese Social and Economic History",
     "titleZh": "Chinese Social and Economic History",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11250,7 +11250,7 @@ module.exports = [
     "titleEn": "History of Science and Technology in China",
     "titleZh": "History of Science and Technology in China",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11272,7 +11272,7 @@ module.exports = [
     "titleEn": "History of Nineteenth Century Europe",
     "titleZh": "History of Nineteenth Century Europe",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11294,7 +11294,7 @@ module.exports = [
     "titleEn": "History of Twentieth Century Europe",
     "titleZh": "History of Twentieth Century Europe",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11316,7 +11316,7 @@ module.exports = [
     "titleEn": "History of Modern Germany",
     "titleZh": "History of Modern Germany",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11338,7 +11338,7 @@ module.exports = [
     "titleEn": "History of Modern Britain",
     "titleZh": "History of Modern Britain",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11360,7 +11360,7 @@ module.exports = [
     "titleEn": "Aerial Technologies in History",
     "titleZh": "Aerial Technologies in History",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11382,7 +11382,7 @@ module.exports = [
     "titleEn": "The ‘long 1970s’: Britain, Hong Kong, and the United States",
     "titleZh": "The ‘long 1970s’: Britain, Hong Kong, and the United States",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11404,7 +11404,7 @@ module.exports = [
     "titleEn": "History of Central Asia: From the Silk Road to the Belt and Road",
     "titleZh": "History of Central Asia: From the Silk Road to the Belt and Road",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11426,7 +11426,7 @@ module.exports = [
     "titleEn": "Russia and Eastern Europe: History through the Arts",
     "titleZh": "Russia and Eastern Europe: History through the Arts",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11448,7 +11448,7 @@ module.exports = [
     "titleEn": "Early Chinese Political and Ethical Thought",
     "titleZh": "Early Chinese Political and Ethical Thought",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11470,7 +11470,7 @@ module.exports = [
     "titleEn": "Late Imperial and Modern China: Issues and Approaches",
     "titleZh": "Late Imperial and Modern China: Issues and Approaches",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11492,7 +11492,7 @@ module.exports = [
     "titleEn": "Varieties of History: Global History of Historical Writings",
     "titleZh": "Varieties of History: Global History of Historical Writings",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11514,7 +11514,7 @@ module.exports = [
     "titleEn": "Gender and Sexuality in History",
     "titleZh": "Gender and Sexuality in History",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11536,7 +11536,7 @@ module.exports = [
     "titleEn": "History of Human Rights",
     "titleZh": "History of Human Rights",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11558,7 +11558,7 @@ module.exports = [
     "titleEn": "Gender and Religion in History",
     "titleZh": "Gender and Religion in History",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11580,7 +11580,7 @@ module.exports = [
     "titleEn": "Practicum in History",
     "titleZh": "Practicum in History",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11602,7 +11602,7 @@ module.exports = [
     "titleEn": "History of Information",
     "titleZh": "History of Information",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11624,7 +11624,7 @@ module.exports = [
     "titleEn": "Introduction to the History of the USA",
     "titleZh": "Introduction to the History of the USA",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11646,7 +11646,7 @@ module.exports = [
     "titleEn": "Introduction to European History",
     "titleZh": "Introduction to European History",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11668,7 +11668,7 @@ module.exports = [
     "titleEn": "Introduction to Chinese History",
     "titleZh": "Introduction to Chinese History",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11690,7 +11690,7 @@ module.exports = [
     "titleEn": "History of Modern East Asia",
     "titleZh": "History of Modern East Asia",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11712,7 +11712,7 @@ module.exports = [
     "titleEn": "Ancient Civilisations",
     "titleZh": "Ancient Civilisations",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11734,7 +11734,7 @@ module.exports = [
     "titleEn": "“Clashes of Civilisations” in Modern History: Value Confrontations between Asia and the West",
     "titleZh": "“Clashes of Civilisations” in Modern History: Value Confrontations between Asia and the West",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11756,7 +11756,7 @@ module.exports = [
     "titleEn": "History of the Ming and Qing Dynasties",
     "titleZh": "History of the Ming and Qing Dynasties",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11778,7 +11778,7 @@ module.exports = [
     "titleEn": "History of China in the Twentieth Century",
     "titleZh": "History of China in the Twentieth Century",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11800,7 +11800,7 @@ module.exports = [
     "titleEn": "History of Hong Kong from 1941",
     "titleZh": "History of Hong Kong from 1941",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11822,7 +11822,7 @@ module.exports = [
     "titleEn": "Hong Kong Public History",
     "titleZh": "Hong Kong Public History",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11844,7 +11844,7 @@ module.exports = [
     "titleEn": "History of Hong Kong before 1841",
     "titleZh": "History of Hong Kong before 1841",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11866,7 +11866,7 @@ module.exports = [
     "titleEn": "History of Hong Kong from 1841 to 1941",
     "titleZh": "History of Hong Kong from 1841 to 1941",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11888,7 +11888,7 @@ module.exports = [
     "titleEn": "Empire, Slavery, and Capitalism in North America to 1865",
     "titleZh": "Empire, Slavery, and Capitalism in North America to 1865",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11910,7 +11910,7 @@ module.exports = [
     "titleEn": "Critical Intersections in U.S. History since 1865: Race, Class, Gender, and Sexuality",
     "titleZh": "Critical Intersections in U.S. History since 1865: Race, Class, Gender, and Sexuality",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11932,7 +11932,7 @@ module.exports = [
     "titleEn": "Introduction to Japanese History",
     "titleZh": "Introduction to Japanese History",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11954,7 +11954,7 @@ module.exports = [
     "titleEn": "Introduction to Korean History",
     "titleZh": "Introduction to Korean History",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11976,7 +11976,7 @@ module.exports = [
     "titleEn": "Introduction to Southeast Asian History",
     "titleZh": "Introduction to Southeast Asian History",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -11998,7 +11998,7 @@ module.exports = [
     "titleEn": "History of the Modern Middle East",
     "titleZh": "History of the Modern Middle East",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12020,7 +12020,7 @@ module.exports = [
     "titleEn": "Introduction to South Asian History",
     "titleZh": "Introduction to South Asian History",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12042,7 +12042,7 @@ module.exports = [
     "titleEn": "History of Modern Islamic Societies",
     "titleZh": "History of Modern Islamic Societies",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12064,7 +12064,7 @@ module.exports = [
     "titleEn": "Europe and Europeans in Historical Perspective",
     "titleZh": "Europe and Europeans in Historical Perspective",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12086,7 +12086,7 @@ module.exports = [
     "titleEn": "Cities Across Civilisations",
     "titleZh": "Cities Across Civilisations",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12108,7 +12108,7 @@ module.exports = [
     "titleEn": "A Cultural History of Water",
     "titleZh": "A Cultural History of Water",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12130,7 +12130,7 @@ module.exports = [
     "titleEn": "Critical Themes in the History of China’s Cultural Interchange",
     "titleZh": "Critical Themes in the History of China’s Cultural Interchange",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12152,7 +12152,7 @@ module.exports = [
     "titleEn": "Russia and the Former Soviet Union: Politics, Economy and Society",
     "titleZh": "Russia and the Former Soviet Union: Politics, Economy and Society",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12174,7 +12174,7 @@ module.exports = [
     "titleEn": "History of Religions in China",
     "titleZh": "History of Religions in China",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12196,7 +12196,7 @@ module.exports = [
     "titleEn": "History of U.S. – China Relations",
     "titleZh": "History of U.S. – China Relations",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12218,7 +12218,7 @@ module.exports = [
     "titleEn": "History of Women and Children in China",
     "titleZh": "History of Women and Children in China",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12240,7 +12240,7 @@ module.exports = [
     "titleEn": "Historical Geography of China",
     "titleZh": "Historical Geography of China",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12262,7 +12262,7 @@ module.exports = [
     "titleEn": "History of Russia and Central Asia",
     "titleZh": "History of Russia and Central Asia",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12284,7 +12284,7 @@ module.exports = [
     "titleEn": "The End of the British Empire",
     "titleZh": "The End of the British Empire",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12306,7 +12306,7 @@ module.exports = [
     "titleEn": "Senior Research Seminar",
     "titleZh": "Senior Research Seminar",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12328,7 +12328,7 @@ module.exports = [
     "titleEn": "Development Theories and Development Aid in History",
     "titleZh": "Development Theories and Development Aid in History",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12350,7 +12350,7 @@ module.exports = [
     "titleEn": "Chinese Historiography",
     "titleZh": "Chinese Historiography",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12372,7 +12372,7 @@ module.exports = [
     "titleEn": "China and the Global Opium Trade",
     "titleZh": "China and the Global Opium Trade",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12394,7 +12394,7 @@ module.exports = [
     "titleEn": "Cities in East Asian History",
     "titleZh": "Cities in East Asian History",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12416,7 +12416,7 @@ module.exports = [
     "titleEn": "War, Gender, and Society in 20th-century Europe",
     "titleZh": "War, Gender, and Society in 20th-century Europe",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12438,7 +12438,7 @@ module.exports = [
     "titleEn": "Gender and the British Empire",
     "titleZh": "Gender and the British Empire",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12460,7 +12460,7 @@ module.exports = [
     "titleEn": "Comparative Modern Revolutions",
     "titleZh": "Comparative Modern Revolutions",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12482,7 +12482,7 @@ module.exports = [
     "titleEn": "History of Hong Kong from 1941",
     "titleZh": "History of Hong Kong from 1941",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12504,7 +12504,7 @@ module.exports = [
     "titleEn": "Senior History Directed Research Project A",
     "titleZh": "Senior History Directed Research Project A",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12526,7 +12526,7 @@ module.exports = [
     "titleEn": "Senior History Directed Research Project",
     "titleZh": "Senior History Directed Research Project",
     "credits": 6,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12548,7 +12548,7 @@ module.exports = [
     "titleEn": "Chinese Social and Economic History",
     "titleZh": "Chinese Social and Economic History",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12570,7 +12570,7 @@ module.exports = [
     "titleEn": "History of Science and Technology in China",
     "titleZh": "History of Science and Technology in China",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12592,7 +12592,7 @@ module.exports = [
     "titleEn": "History of Nineteenth Century Europe",
     "titleZh": "History of Nineteenth Century Europe",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12614,7 +12614,7 @@ module.exports = [
     "titleEn": "History of Twentieth Century Europe",
     "titleZh": "History of Twentieth Century Europe",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12636,7 +12636,7 @@ module.exports = [
     "titleEn": "History of Women and Children in China",
     "titleZh": "History of Women and Children in China",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12658,7 +12658,7 @@ module.exports = [
     "titleEn": "Historical Geography of China",
     "titleZh": "Historical Geography of China",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12680,7 +12680,7 @@ module.exports = [
     "titleEn": "Critical Themes in Pre-Modern Chinese History",
     "titleZh": "Critical Themes in Pre-Modern Chinese History",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12702,7 +12702,7 @@ module.exports = [
     "titleEn": "History of Modern Germany",
     "titleZh": "History of Modern Germany",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12724,7 +12724,7 @@ module.exports = [
     "titleEn": "History of Modern Britain",
     "titleZh": "History of Modern Britain",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12746,7 +12746,7 @@ module.exports = [
     "titleEn": "The End of the British Empire",
     "titleZh": "The End of the British Empire",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12768,7 +12768,7 @@ module.exports = [
     "titleEn": "Special Topics in History",
     "titleZh": "Special Topics in History",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12790,7 +12790,7 @@ module.exports = [
     "titleEn": "History Capstone Seminar",
     "titleZh": "History Capstone Seminar",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12812,7 +12812,7 @@ module.exports = [
     "titleEn": "Introduction to Chinese Thought 中國思想導論",
     "titleZh": "Introduction to Chinese Thought 中國思想導論",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12834,7 +12834,7 @@ module.exports = [
     "titleEn": "Introduction to Philosophy 哲學導論",
     "titleZh": "Introduction to Philosophy 哲學導論",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12856,7 +12856,7 @@ module.exports = [
     "titleEn": "Ethics: East and West 東方及西方倫理學導論",
     "titleZh": "Ethics: East and West 東方及西方倫理學導論",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12878,7 +12878,7 @@ module.exports = [
     "titleEn": "Puzzles and Paradoxes 謎題和悖論",
     "titleZh": "Puzzles and Paradoxes 謎題和悖論",
     "credits": 3,
-    "recommendedYear": 1,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12900,7 +12900,7 @@ module.exports = [
     "titleEn": "The Philosophy of Zhuangzi 莊子哲學",
     "titleZh": "The Philosophy of Zhuangzi 莊子哲學",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12922,7 +12922,7 @@ module.exports = [
     "titleEn": "History of Chinese Philosophy: From Pre-Qin to Han 中國哲學史：先秦至漢",
     "titleZh": "History of Chinese Philosophy: From Pre-Qin to Han 中國哲學史：先秦至漢",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12944,7 +12944,7 @@ module.exports = [
     "titleEn": "History of Western Philosophy: Ancient Greek Philosophy 西方哲學史：古希臘哲學",
     "titleZh": "History of Western Philosophy: Ancient Greek Philosophy 西方哲學史：古希臘哲學",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12966,7 +12966,7 @@ module.exports = [
     "titleEn": "Metaphysics 形上學",
     "titleZh": "Metaphysics 形上學",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -12988,7 +12988,7 @@ module.exports = [
     "titleEn": "History of Chinese Philosophy: From Wei-Jin to Ming 中國哲學史：魏晉至明",
     "titleZh": "History of Chinese Philosophy: From Wei-Jin to Ming 中國哲學史：魏晉至明",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13010,7 +13010,7 @@ module.exports = [
     "titleEn": "History of Western Philosophy: From Descartes to Kant 西方哲學史：笛卡兒至康德",
     "titleZh": "History of Western Philosophy: From Descartes to Kant 西方哲學史：笛卡兒至康德",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13032,7 +13032,7 @@ module.exports = [
     "titleEn": "A Philosophical Introduction to Artificial Intelligence",
     "titleZh": "A Philosophical Introduction to Artificial Intelligence",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13054,7 +13054,7 @@ module.exports = [
     "titleEn": "Causation, Explanation and Causal Inference 因果解釋和因果推理",
     "titleZh": "Causation, Explanation and Causal Inference 因果解釋和因果推理",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13076,7 +13076,7 @@ module.exports = [
     "titleEn": "The Philosophy of Zhuangzi 莊子哲學",
     "titleZh": "The Philosophy of Zhuangzi 莊子哲學",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13098,7 +13098,7 @@ module.exports = [
     "titleEn": "Deductive Logic 演繹邏輯",
     "titleZh": "Deductive Logic 演繹邏輯",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13120,7 +13120,7 @@ module.exports = [
     "titleEn": "Chinese Political Philosophy 中國政治哲學",
     "titleZh": "Chinese Political Philosophy 中國政治哲學",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13142,7 +13142,7 @@ module.exports = [
     "titleEn": "Advanced Western Ethics 高級西方倫理學",
     "titleZh": "Advanced Western Ethics 高級西方倫理學",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13164,7 +13164,7 @@ module.exports = [
     "titleEn": "Western Political Philosophy 西方政治哲學",
     "titleZh": "Western Political Philosophy 西方政治哲學",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13186,7 +13186,7 @@ module.exports = [
     "titleEn": "Philosophy of Happiness 幸福哲學",
     "titleZh": "Philosophy of Happiness 幸福哲學",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13208,7 +13208,7 @@ module.exports = [
     "titleEn": "Applied Ethics 應用倫理學",
     "titleZh": "Applied Ethics 應用倫理學",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13230,7 +13230,7 @@ module.exports = [
     "titleEn": "Social and Political Philosophy 社會與政治哲學",
     "titleZh": "Social and Political Philosophy 社會與政治哲學",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13252,7 +13252,7 @@ module.exports = [
     "titleEn": "Law and Society 法律與社會",
     "titleZh": "Law and Society 法律與社會",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13274,7 +13274,7 @@ module.exports = [
     "titleEn": "Morality and Markets 道德與市場",
     "titleZh": "Morality and Markets 道德與市場",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13296,7 +13296,7 @@ module.exports = [
     "titleEn": "Life and Death 生死學",
     "titleZh": "Life and Death 生死學",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13318,7 +13318,7 @@ module.exports = [
     "titleEn": "Bioethics 生命倫理學",
     "titleZh": "Bioethics 生命倫理學",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13340,7 +13340,7 @@ module.exports = [
     "titleEn": "Epistemology 知識論",
     "titleZh": "Epistemology 知識論",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13362,7 +13362,7 @@ module.exports = [
     "titleEn": "Ethics: The Chinese Tradition 倫理學：中國傳統",
     "titleZh": "Ethics: The Chinese Tradition 倫理學：中國傳統",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13384,7 +13384,7 @@ module.exports = [
     "titleEn": "Contingencies and Necessities in Life 生命中的必然與偶然",
     "titleZh": "Contingencies and Necessities in Life 生命中的必然與偶然",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13406,7 +13406,7 @@ module.exports = [
     "titleEn": "Philosophical Perspectives on Human Rights 人權問題的哲學探究",
     "titleZh": "Philosophical Perspectives on Human Rights 人權問題的哲學探究",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13428,7 +13428,7 @@ module.exports = [
     "titleEn": "Philosophy and Literature 哲學與文學",
     "titleZh": "Philosophy and Literature 哲學與文學",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13450,7 +13450,7 @@ module.exports = [
     "titleEn": "Philosophy of Mind 心靈哲學",
     "titleZh": "Philosophy of Mind 心靈哲學",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13472,7 +13472,7 @@ module.exports = [
     "titleEn": "Continental Aesthetic Theories 歐陸美學理論",
     "titleZh": "Continental Aesthetic Theories 歐陸美學理論",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13494,7 +13494,7 @@ module.exports = [
     "titleEn": "History of Aesthetics 西方美學史",
     "titleZh": "History of Aesthetics 西方美學史",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13516,7 +13516,7 @@ module.exports = [
     "titleEn": "Metaethics 元倫理學",
     "titleZh": "Metaethics 元倫理學",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13538,7 +13538,7 @@ module.exports = [
     "titleEn": "Philosophy of Technology 科技哲學",
     "titleZh": "Philosophy of Technology 科技哲學",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13560,7 +13560,7 @@ module.exports = [
     "titleEn": "Philosophy of Religion 宗教哲學",
     "titleZh": "Philosophy of Religion 宗教哲學",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13582,7 +13582,7 @@ module.exports = [
     "titleEn": "Philosophy of Photography 攝影哲學",
     "titleZh": "Philosophy of Photography 攝影哲學",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13604,7 +13604,7 @@ module.exports = [
     "titleEn": "Philosophy of History 歷史哲學",
     "titleZh": "Philosophy of History 歷史哲學",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13626,7 +13626,7 @@ module.exports = [
     "titleEn": "Philosophy of Social Science 社會科學哲學",
     "titleZh": "Philosophy of Social Science 社會科學哲學",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13648,7 +13648,7 @@ module.exports = [
     "titleEn": "The Philosophy of Mozi 墨子哲學",
     "titleZh": "The Philosophy of Mozi 墨子哲學",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13670,7 +13670,7 @@ module.exports = [
     "titleEn": "Philosophy of Psychiatry 精神醫學哲學",
     "titleZh": "Philosophy of Psychiatry 精神醫學哲學",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13692,7 +13692,7 @@ module.exports = [
     "titleEn": "Philosophy of Science 科學哲學",
     "titleZh": "Philosophy of Science 科學哲學",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13714,7 +13714,7 @@ module.exports = [
     "titleEn": "Probability and Scientific Method 或然性與科學方法",
     "titleZh": "Probability and Scientific Method 或然性與科學方法",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13736,7 +13736,7 @@ module.exports = [
     "titleEn": "Personal Identity 個人認同",
     "titleZh": "Personal Identity 個人認同",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13758,7 +13758,7 @@ module.exports = [
     "titleEn": "Intergenerational Ethics and The Future of Humanity",
     "titleZh": "Intergenerational Ethics and The Future of Humanity",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13780,7 +13780,7 @@ module.exports = [
     "titleEn": "Social Epistemology in a Digital Age",
     "titleZh": "Social Epistemology in a Digital Age",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13802,7 +13802,7 @@ module.exports = [
     "titleEn": "The Ethics of War and Peace",
     "titleZh": "The Ethics of War and Peace",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13824,7 +13824,7 @@ module.exports = [
     "titleEn": "Animal Ethics",
     "titleZh": "Animal Ethics",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13846,7 +13846,7 @@ module.exports = [
     "titleEn": "Environmental Ethics",
     "titleZh": "Environmental Ethics",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13868,7 +13868,7 @@ module.exports = [
     "titleEn": "Research Seminar",
     "titleZh": "Research Seminar",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13890,7 +13890,7 @@ module.exports = [
     "titleEn": "Modal Logic 模態邏輯",
     "titleZh": "Modal Logic 模態邏輯",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13912,7 +13912,7 @@ module.exports = [
     "titleEn": "Contemporary Continental Philosophy 當代歐陸哲學",
     "titleZh": "Contemporary Continental Philosophy 當代歐陸哲學",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13934,7 +13934,7 @@ module.exports = [
     "titleEn": "Pre-Qin Taoism 先秦道家",
     "titleZh": "Pre-Qin Taoism 先秦道家",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13956,7 +13956,7 @@ module.exports = [
     "titleEn": "Philosophy of Architecture 建築哲學",
     "titleZh": "Philosophy of Architecture 建築哲學",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -13978,7 +13978,7 @@ module.exports = [
     "titleEn": "Schopenhauer and Nietzsche 叔本華與尼采",
     "titleZh": "Schopenhauer and Nietzsche 叔本華與尼采",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14000,7 +14000,7 @@ module.exports = [
     "titleEn": "Utopia 烏托邦",
     "titleZh": "Utopia 烏托邦",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14022,7 +14022,7 @@ module.exports = [
     "titleEn": "Contemporary Neo-Confucianism 當代新儒學",
     "titleZh": "Contemporary Neo-Confucianism 當代新儒學",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14044,7 +14044,7 @@ module.exports = [
     "titleEn": "Confucianism and the Modern World 儒學與現代世界",
     "titleZh": "Confucianism and the Modern World 儒學與現代世界",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14066,7 +14066,7 @@ module.exports = [
     "titleEn": "Analytic Philosophy of Art 分析的藝術哲學",
     "titleZh": "Analytic Philosophy of Art 分析的藝術哲學",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14088,7 +14088,7 @@ module.exports = [
     "titleEn": "Man and Heaven in Chinese Philosophy 中國哲學中的天人關係",
     "titleZh": "Man and Heaven in Chinese Philosophy 中國哲學中的天人關係",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14110,7 +14110,7 @@ module.exports = [
     "titleEn": "Philosophy of Action 行動哲學",
     "titleZh": "Philosophy of Action 行動哲學",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14132,7 +14132,7 @@ module.exports = [
     "titleEn": "Philosophy of Language 語言哲學",
     "titleZh": "Philosophy of Language 語言哲學",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14154,7 +14154,7 @@ module.exports = [
     "titleEn": "Philosophy of Law 法律哲學",
     "titleZh": "Philosophy of Law 法律哲學",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14176,7 +14176,7 @@ module.exports = [
     "titleEn": "Postmodern Philosophy 後現代哲學",
     "titleZh": "Postmodern Philosophy 後現代哲學",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14198,7 +14198,7 @@ module.exports = [
     "titleEn": "Theories of Justice 公正理論",
     "titleZh": "Theories of Justice 公正理論",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14220,7 +14220,7 @@ module.exports = [
     "titleEn": "Cinema and Philosophy 電影與哲學",
     "titleZh": "Cinema and Philosophy 電影與哲學",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14242,7 +14242,7 @@ module.exports = [
     "titleEn": "Value Theory 價值理論",
     "titleZh": "Value Theory 價值理論",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14264,7 +14264,7 @@ module.exports = [
     "titleEn": "Philosophy of Artificial Intelligence 人工智能的哲學",
     "titleZh": "Philosophy of Artificial Intelligence 人工智能的哲學",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14286,7 +14286,7 @@ module.exports = [
     "titleEn": "Special Topics 專題課程",
     "titleZh": "Special Topics 專題課程",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14308,7 +14308,7 @@ module.exports = [
     "titleEn": "Introduction to Computer-aided Translation",
     "titleZh": "Introduction to Computer-aided Translation",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14330,7 +14330,7 @@ module.exports = [
     "titleEn": "Introduction to Cantonese-English Interpreting",
     "titleZh": "Introduction to Cantonese-English Interpreting",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14352,7 +14352,7 @@ module.exports = [
     "titleEn": "Introduction to English-Cantonese Interpreting",
     "titleZh": "Introduction to English-Cantonese Interpreting",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14374,7 +14374,7 @@ module.exports = [
     "titleEn": "Introduction to Translation (C-E)",
     "titleZh": "Introduction to Translation (C-E)",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14396,7 +14396,7 @@ module.exports = [
     "titleEn": "Introduction to Translation (E-C)",
     "titleZh": "Introduction to Translation (E-C)",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14418,7 +14418,7 @@ module.exports = [
     "titleEn": "The Sound of Language: Phonetics and Phonology",
     "titleZh": "The Sound of Language: Phonetics and Phonology",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14440,7 +14440,7 @@ module.exports = [
     "titleEn": "The Structure of Language: Morphology and Syntax",
     "titleZh": "The Structure of Language: Morphology and Syntax",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14462,7 +14462,7 @@ module.exports = [
     "titleEn": "Digital and Audiovisual Translation",
     "titleZh": "Digital and Audiovisual Translation",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14484,7 +14484,7 @@ module.exports = [
     "titleEn": "Introduction to Communication and Translation",
     "titleZh": "Introduction to Communication and Translation",
     "credits": 3,
-    "recommendedYear": 2,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14506,7 +14506,7 @@ module.exports = [
     "titleEn": "Chinese Writing Workshop for Translators",
     "titleZh": "Chinese Writing Workshop for Translators",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14528,7 +14528,7 @@ module.exports = [
     "titleEn": "English Through Subtitles",
     "titleZh": "English Through Subtitles",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14550,7 +14550,7 @@ module.exports = [
     "titleEn": "Literature, Culture and Translation",
     "titleZh": "Literature, Culture and Translation",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14572,7 +14572,7 @@ module.exports = [
     "titleEn": "General Interpreting (C-E)",
     "titleZh": "General Interpreting (C-E)",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14594,7 +14594,7 @@ module.exports = [
     "titleEn": "General Interpreting (E-C)",
     "titleZh": "General Interpreting (E-C)",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14616,7 +14616,7 @@ module.exports = [
     "titleEn": "Introduction to Translation Studies",
     "titleZh": "Introduction to Translation Studies",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14638,7 +14638,7 @@ module.exports = [
     "titleEn": "Translation Criticism in Digital Age",
     "titleZh": "Translation Criticism in Digital Age",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14660,7 +14660,7 @@ module.exports = [
     "titleEn": "Literary Translation",
     "titleZh": "Literary Translation",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14682,7 +14682,7 @@ module.exports = [
     "titleEn": "Literary Translation (E-C)",
     "titleZh": "Literary Translation (E-C)",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14704,7 +14704,7 @@ module.exports = [
     "titleEn": "Digital Media Translation",
     "titleZh": "Digital Media Translation",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14726,7 +14726,7 @@ module.exports = [
     "titleEn": "Bilingual Communication in Popular Culture",
     "titleZh": "Bilingual Communication in Popular Culture",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14748,7 +14748,7 @@ module.exports = [
     "titleEn": "Digital Translation in Creative Industries",
     "titleZh": "Digital Translation in Creative Industries",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14770,7 +14770,7 @@ module.exports = [
     "titleEn": "Bilingual Digital Publication Workshop",
     "titleZh": "Bilingual Digital Publication Workshop",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14792,7 +14792,7 @@ module.exports = [
     "titleEn": "Bilingual Communication Workshop",
     "titleZh": "Bilingual Communication Workshop",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14814,7 +14814,7 @@ module.exports = [
     "titleEn": "Bilingual Studies in Modern Fiction and Prose",
     "titleZh": "Bilingual Studies in Modern Fiction and Prose",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14836,7 +14836,7 @@ module.exports = [
     "titleEn": "Bilingual Studies in Modern Poetry and Drama",
     "titleZh": "Bilingual Studies in Modern Poetry and Drama",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14858,7 +14858,7 @@ module.exports = [
     "titleEn": "Translating Cultures",
     "titleZh": "Translating Cultures",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14880,7 +14880,7 @@ module.exports = [
     "titleEn": "Translation in the Hong Kong Context",
     "titleZh": "Translation in the Hong Kong Context",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14902,7 +14902,7 @@ module.exports = [
     "titleEn": "Literature, Culture and Translation (II)",
     "titleZh": "Literature, Culture and Translation (II)",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14924,7 +14924,7 @@ module.exports = [
     "titleEn": "Topics in Bilingual Studies: Love in Chinese and Western Literatures",
     "titleZh": "Topics in Bilingual Studies: Love in Chinese and Western Literatures",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14946,7 +14946,7 @@ module.exports = [
     "titleEn": "AI-assisted Business Writing and Translation",
     "titleZh": "AI-assisted Business Writing and Translation",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14968,7 +14968,7 @@ module.exports = [
     "titleEn": "Financial Translation",
     "titleZh": "Financial Translation",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -14990,7 +14990,7 @@ module.exports = [
     "titleEn": "Introduction to Putonghua and English Interpreting",
     "titleZh": "Introduction to Putonghua and English Interpreting",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -15012,7 +15012,7 @@ module.exports = [
     "titleEn": "Studies in Comparative Literature",
     "titleZh": "Studies in Comparative Literature",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -15034,7 +15034,7 @@ module.exports = [
     "titleEn": "English Writing Workshop for Translators",
     "titleZh": "English Writing Workshop for Translators",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -15056,7 +15056,7 @@ module.exports = [
     "titleEn": "Liaison Interpreting",
     "titleZh": "Liaison Interpreting",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -15078,7 +15078,7 @@ module.exports = [
     "titleEn": "Cross-cultural Perspectives in Film: Thematic Comparisons",
     "titleZh": "Cross-cultural Perspectives in Film: Thematic Comparisons",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -15100,7 +15100,7 @@ module.exports = [
     "titleEn": "Corporate Communication and Translation",
     "titleZh": "Corporate Communication and Translation",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -15122,7 +15122,7 @@ module.exports = [
     "titleEn": "Digital Marketing and Content Creation with AI",
     "titleZh": "Digital Marketing and Content Creation with AI",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -15144,7 +15144,7 @@ module.exports = [
     "titleEn": "Studies on Translators",
     "titleZh": "Studies on Translators",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -15166,7 +15166,7 @@ module.exports = [
     "titleEn": "Translation and Sino-Western Cultural Exchange",
     "titleZh": "Translation and Sino-Western Cultural Exchange",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -15188,7 +15188,7 @@ module.exports = [
     "titleEn": "Translation and AI Industries",
     "titleZh": "Translation and AI Industries",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -15210,7 +15210,7 @@ module.exports = [
     "titleEn": "Translating Travel Literature",
     "titleZh": "Translating Travel Literature",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -15232,7 +15232,7 @@ module.exports = [
     "titleEn": "Adaptation as Translation",
     "titleZh": "Adaptation as Translation",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -15254,7 +15254,7 @@ module.exports = [
     "titleEn": "AI-Assisted Interpreting",
     "titleZh": "AI-Assisted Interpreting",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -15276,7 +15276,7 @@ module.exports = [
     "titleEn": "Public Relations in Practice",
     "titleZh": "Public Relations in Practice",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -15298,7 +15298,7 @@ module.exports = [
     "titleEn": "Children's Literature in Translation",
     "titleZh": "Children's Literature in Translation",
     "credits": 3,
-    "recommendedYear": 3,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -15320,7 +15320,7 @@ module.exports = [
     "titleEn": "Advanced Interpreting (C-E)",
     "titleZh": "Advanced Interpreting (C-E)",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -15342,7 +15342,7 @@ module.exports = [
     "titleEn": "Advanced Interpreting (E-C)",
     "titleZh": "Advanced Interpreting (E-C)",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -15364,7 +15364,7 @@ module.exports = [
     "titleEn": "Research and Writing",
     "titleZh": "Research and Writing",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -15386,7 +15386,7 @@ module.exports = [
     "titleEn": "Literary Translation B (C-E)",
     "titleZh": "Literary Translation B (C-E)",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -15408,7 +15408,7 @@ module.exports = [
     "titleEn": "Literary Translation B (E-C)",
     "titleZh": "Literary Translation B (E-C)",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -15430,7 +15430,7 @@ module.exports = [
     "titleEn": "Gender, Language and Translation",
     "titleZh": "Gender, Language and Translation",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -15452,7 +15452,7 @@ module.exports = [
     "titleEn": "History of Translation",
     "titleZh": "History of Translation",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -15474,7 +15474,7 @@ module.exports = [
     "titleEn": "Translation for Science and Technology",
     "titleZh": "Translation for Science and Technology",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -15496,7 +15496,7 @@ module.exports = [
     "titleEn": "Selected Research Topics",
     "titleZh": "Selected Research Topics",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -15518,7 +15518,7 @@ module.exports = [
     "titleEn": "Translation Project (E-C) and (C-E)",
     "titleZh": "Translation Project (E-C) and (C-E)",
     "credits": 6,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -15540,7 +15540,7 @@ module.exports = [
     "titleEn": "Translation Project (E-C)",
     "titleZh": "Translation Project (E-C)",
     "credits": 6,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -15562,7 +15562,7 @@ module.exports = [
     "titleEn": "Translation Project (C-E)",
     "titleZh": "Translation Project (C-E)",
     "credits": 6,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -15584,7 +15584,7 @@ module.exports = [
     "titleEn": "Selected Translation Project (E-C)",
     "titleZh": "Selected Translation Project (E-C)",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -15606,7 +15606,7 @@ module.exports = [
     "titleEn": "Selected Translation Project (C-E)",
     "titleZh": "Selected Translation Project (C-E)",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -15628,7 +15628,7 @@ module.exports = [
     "titleEn": "Legal Translation (C-E)",
     "titleZh": "Legal Translation (C-E)",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -15650,7 +15650,7 @@ module.exports = [
     "titleEn": "Legal Translation (E-C)",
     "titleZh": "Legal Translation (E-C)",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -15672,7 +15672,7 @@ module.exports = [
     "titleEn": "Translation Studies Research Project",
     "titleZh": "Translation Studies Research Project",
     "credits": 6,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "capstone",
     "requirementGroups": [
@@ -15694,7 +15694,7 @@ module.exports = [
     "titleEn": "Conference Interpreting",
     "titleZh": "Conference Interpreting",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -15716,7 +15716,7 @@ module.exports = [
     "titleEn": "Eco-translation",
     "titleZh": "Eco-translation",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -15738,7 +15738,7 @@ module.exports = [
     "titleEn": "Translation of Court Documents",
     "titleZh": "Translation of Court Documents",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -15760,7 +15760,7 @@ module.exports = [
     "titleEn": "World Literature and Translation",
     "titleZh": "World Literature and Translation",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
@@ -15782,7 +15782,7 @@ module.exports = [
     "titleEn": "Large Language Models and Translation Technology",
     "titleZh": "Large Language Models and Translation Technology",
     "credits": 3,
-    "recommendedYear": 4,
+    "recommendedYear": 0,
     "semester": "",
     "courseType": "major_elective",
     "requirementGroups": [
