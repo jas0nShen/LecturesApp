@@ -13,13 +13,13 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.requirementCount, 4);
   assert(summary.courseCount >= 4630);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 6355);
-  assert.equal(summary.programmeWithCoursesCount, 82);
-  assert.equal(summary.pendingProgrammeCount, 362);
+  assert.equal(summary.codedCourseCount, 6390);
+  assert.equal(summary.programmeWithCoursesCount, 83);
+  assert.equal(summary.pendingProgrammeCount, 361);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
-  assert.equal(summary.coveragePercent, 18);
+  assert.equal(summary.coveragePercent, 19);
   assert.match(summary.generatedAt, /^\d{4}-\d{2}-\d{2}T/);
   assert.match(summary.generatedDate, /^\d{4}-\d{2}-\d{2}$/);
 });
@@ -46,13 +46,13 @@ test('UG pending programme collection text is copy-ready for data sourcing', () 
   const text = ugService.buildPendingCollectionText({ universityCode: 'POLYU', limit: 2 });
 
   assert.equal(pending.length, 2);
-  assert.equal(allPending.length, 32);
+  assert.equal(allPending.length, 31);
   assert.equal(pending[0].universityCode, 'POLYU');
   assert.equal(pending[0].sourceStatusLabel, '仅索引 / 来源');
   assert.match(pending[0].officialUrl, /^https:\/\//);
   assert.match(text, /【本科课程资料待补清单】/);
   assert.match(text, /范围：POLYU/);
-  assert.match(text, /待补 Programme：32/);
+  assert.match(text, /待补 Programme：31/);
   assert.match(text, /课程代码 \/ 课程名 \/ 学分 \/ Year \/ Semester \/ 课程类别 \/ 来源链接/);
   assert.match(text, /不要推测课程/);
 });
@@ -84,7 +84,7 @@ test('UG pending programme collection can be filtered by source readiness', () =
   assert.equal(polyuNoSource.length, 0);
   assert.equal(ugService.getPendingSourceReadinessKey({}), 'noSource');
   assert.equal(ugService.getPendingSourceStatus({}), '缺来源');
-  assert.match(text, /待补 Programme：32/);
+  assert.match(text, /待补 Programme：31/);
   assert.match(text, /当前筛选：no-source · 0 个/);
   assert.match(text, /暂无待补 Programme/);
 });
@@ -135,7 +135,7 @@ test('UG per-school coverage stays visible for setup validation', () => {
     HKU: { programmeCount: 137, majorCount: 137, codedCourseCount: 1511 },
     CUHK: { programmeCount: 84, majorCount: 84, codedCourseCount: 131 },
     HKUST: { programmeCount: 50, majorCount: 64, codedCourseCount: 121 },
-    POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 1905 },
+    POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 1940 },
     CITYU: { programmeCount: 58, majorCount: 201, codedCourseCount: 1966 },
     HKBU: { programmeCount: 22, majorCount: 46, codedCourseCount: 0 },
     EDUHK: { programmeCount: 25, majorCount: 25, codedCourseCount: 0 },
@@ -168,10 +168,10 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert(cuhk.coveragePercent > 0);
   assert.equal(cuhk.codedCourseCount, 131);
   assert.equal(cuhk.badge, 'COURSES');
-  assert.equal(polyu.programmeWithCoursesCount, 14);
-  assert.equal(polyu.pendingProgrammeCount, 32);
-  assert.equal(polyu.coveragePercent, 30);
-  assert.equal(polyu.codedCourseCount, 1905);
+  assert.equal(polyu.programmeWithCoursesCount, 15);
+  assert.equal(polyu.pendingProgrammeCount, 31);
+  assert.equal(polyu.coveragePercent, 33);
+  assert.equal(polyu.codedCourseCount, 1940);
   assert.equal(polyu.badge, 'COURSES');
   assert.equal(polyu.sourceReadiness.indexOnly, polyu.pendingProgrammeCount);
   assert.equal(cityu.programmeWithCoursesCount, 20);
@@ -466,6 +466,25 @@ test('PolyU Product Innovation and Smart Manufacturing scheme exposes official c
   assert(productInnovationCourses.some((course) => course.courseCode === 'ISE4008' && course.courseType === 'capstone'));
   assert(smartManufacturingCourses.some((course) => course.courseCode === 'ISE4024' && course.titleEn === 'Robotics and Automation Systems'));
   assert(ugService.listMajorCourses(scheme.id, smartManufacturing.id, { keyword: 'Computer-Aided Product Design' }).some((course) => course.courseCode === 'ISE418'));
+});
+
+test('PolyU Intelligent Supply Chain exposes its official curriculum without opening unverified tracks', () => {
+  const polyu = ugService.listUniversities().find((item) => item.code === 'POLYU');
+  const programmes = ugService.listProgrammes({ universityId: polyu.id, degreeLevel: 'undergraduate' });
+  const scheme = programmes.find((programme) => programme.code === 'JS3237');
+  const majors = ugService.listMajors(scheme.id);
+  const supplyChain = majors.find((major) => major.nameEn === 'Intelligent Supply Chain');
+  const engineeringManagement = majors.find((major) => major.nameEn === 'Engineering Management with Data Analytics');
+  const aviation = majors.find((major) => major.nameEn === 'Aviation Operations and Systems');
+  const courses = ugService.listMajorCourses(scheme.id, supplyChain.id);
+
+  assert.equal(scheme.sourceStatus, 'course_codes_available');
+  assert.equal(courses.length, 35);
+  assert(courses.some((course) => course.courseCode === 'ISE2003' && course.recommendedYear === 2));
+  assert(courses.some((course) => course.courseCode === 'ISE4008' && course.courseType === 'capstone'));
+  assert(ugService.listMajorCourses(scheme.id, supplyChain.id, { keyword: 'Supply Chain Analytics' }).some((course) => course.courseCode === 'LGT4306'));
+  assert.equal(ugService.listMajorCourses(scheme.id, engineeringManagement.id).length, 0);
+  assert.equal(ugService.listMajorCourses(scheme.id, aviation.id).length, 0);
 });
 
 test('HKU Computing and Data Science catalogue profiles expose official course offerings', () => {

@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T03:14:43.225Z",
+  "generatedAt": "2026-07-10T03:19:29.043Z",
   "universities": [
     {
       "id": "HKU",
@@ -6186,9 +6186,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3237",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 5,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 35,
+      "codedCourseCount": 35,
+      "courseSourceUrl": "https://www.polyu.edu.hk/ise/study/undergraduate-programmes/bsc-hons-scheme-in-intelligent-supply-chain-and-engineering-management/bachelor-of-science-honours-in-intelligent-supply-chain/programme-curriculum/"
     },
     {
       "id": "POLYU-UG-JS3000-29",
@@ -12747,8 +12748,8 @@ const catalogue = {
       "code": "INTELLIGENT-SUPPLY-CHAIN",
       "nameEn": "Intelligent Supply Chain",
       "nameZh": "Intelligent Supply Chain",
-      "courseCount": 5,
-      "codedCourseCount": 0,
+      "courseCount": 40,
+      "codedCourseCount": 35,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3237"
     },
     {
@@ -15958,9 +15959,9 @@ const catalogue = {
     "HKU": 1511,
     "HKUST": 121,
     "LINGNAN": 721,
-    "POLYU": 1905
+    "POLYU": 1940
   },
-  "codedCourseCount": 6355
+  "codedCourseCount": 6390
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
