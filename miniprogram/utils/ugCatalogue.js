@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T09:04:55.530Z",
+  "generatedAt": "2026-07-10T09:15:21.734Z",
   "universities": [
     {
       "id": "HKU",
@@ -967,9 +967,10 @@ const catalogue = {
       "studyPeriod": "6-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-dental-surgery",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 26,
+      "codedCourseCount": 26,
+      "courseSourceUrl": "https://www4.hku.hk/pubunit/drcd/files/ugdr2025-26/Dentistry/BDS.pdf"
     },
     {
       "id": "HKU-UG-6119-25",
@@ -9312,9 +9313,9 @@ const catalogue = {
       "code": "BACHELOR-OF-DENTAL-SURGERY",
       "nameEn": "Bachelor of Dental Surgery",
       "nameZh": "Bachelor of Dental Surgery",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-dental-surgery"
+      "courseCount": 27,
+      "codedCourseCount": 26,
+      "officialUrl": "https://facdent.hku.hk/learning/undergraduate.php"
     },
     {
       "id": "HKU-UG-6119-25-M1",
@@ -15970,12 +15971,12 @@ const catalogue = {
   "courseShardCounts": {
     "CITYU": 1966,
     "CUHK": 131,
-    "HKU": 1597,
+    "HKU": 1623,
     "HKUST": 121,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 7008
+  "codedCourseCount": 7034
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

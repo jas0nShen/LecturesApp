@@ -1,0 +1,43 @@
+{
+  "provider": "HKU Faculty of Dentistry BDS regulations and syllabuses",
+  "academicYear": "2025-26",
+  "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/ugdr2025-26/Dentistry/BDS.pdf",
+  "officialUrl": "https://facdent.hku.hk/learning/undergraduate.php",
+  "supplements": [
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6107",
+      "majorName": "Bachelor of Dental Surgery",
+      "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/ugdr2025-26/Dentistry/BDS.pdf",
+      "officialUrl": "https://facdent.hku.hk/learning/undergraduate.php",
+      "courses": [
+        { "code": "DENT1003", "title": "Dentistry: Basic Medical Science Knowledge", "credits": 18, "recommendedYear": 1, "courseType": "core", "group": "Professional Core — Knowledge and Reasoning" },
+        { "code": "DENT1004", "title": "Dentistry: Knowledge and Reasoning I", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Professional Core — Knowledge and Reasoning" },
+        { "code": "DENT1005", "title": "Dentistry: Practical Skill Learning I", "credits": 3, "recommendedYear": 1, "courseType": "core", "group": "Professional Core — Practical Skill Learning" },
+        { "code": "DENT1006", "title": "Clinical Learning in Dentistry I", "credits": 3, "recommendedYear": 1, "courseType": "core", "group": "Professional Core — Clinical Learning" },
+        { "code": "CDEN9001", "title": "Chinese Language Enhancement", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "University Requirements — Chinese Language Enhancement" },
+        { "code": "CDEN9002", "title": "Chinese Language Enhancement", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "University Requirements — Chinese Language Enhancement" },
+        { "code": "AILT1001", "title": "Artificial Intelligence Literacy I", "credits": 3, "recommendedYear": 1, "courseType": "core", "group": "University Requirements — AI Literacy" },
+        { "code": "DENT2003", "title": "Dentistry: Knowledge and Reasoning II", "credits": 15, "recommendedYear": 2, "courseType": "core", "group": "Professional Core — Knowledge and Reasoning" },
+        { "code": "DENT2004", "title": "Dentistry: Practical Skill Learning II", "credits": 21, "recommendedYear": 2, "courseType": "core", "group": "Professional Core — Practical Skill Learning" },
+        { "code": "DENT2005", "title": "Clinical Learning in Dentistry II", "credits": 12, "recommendedYear": 2, "courseType": "core", "group": "Professional Core — Clinical Learning" },
+        { "code": "DENT3003", "title": "Dentistry: Knowledge and Reasoning III", "credits": 18, "recommendedYear": 3, "courseType": "core", "group": "Professional Core — Knowledge and Reasoning" },
+        { "code": "DENT3004", "title": "Dentistry: Practical Skill Learning III", "credits": 24, "recommendedYear": 3, "courseType": "core", "group": "Professional Core — Practical Skill Learning" },
+        { "code": "DENT3005", "title": "Clinical Learning in Dentistry III", "credits": 24, "recommendedYear": 3, "courseType": "core", "group": "Professional Core — Clinical Learning" },
+        { "code": "DENT4003", "title": "Dentistry: Knowledge and Reasoning IV", "credits": 18, "recommendedYear": 4, "courseType": "core", "group": "Professional Core — Knowledge and Reasoning" },
+        { "code": "DENT4004", "title": "Dentistry: Practical Skill Learning IV", "credits": 18, "recommendedYear": 4, "courseType": "core", "group": "Professional Core — Practical Skill Learning" },
+        { "code": "DENT4005", "title": "Clinical Learning in Dentistry IV", "credits": 30, "recommendedYear": 4, "courseType": "core", "group": "Professional Core — Clinical Learning" },
+        { "code": "DENT5003", "title": "Dentistry: Knowledge and Reasoning V", "credits": 12, "recommendedYear": 5, "courseType": "core", "group": "Professional Core — Knowledge and Reasoning" },
+        { "code": "DENT5004", "title": "Dentistry: Practical Skill Learning V", "credits": 3, "recommendedYear": 5, "courseType": "core", "group": "Professional Core — Practical Skill Learning" },
+        { "code": "DENT5005", "title": "Clinical Learning in Dentistry V", "credits": 39, "recommendedYear": 5, "courseType": "core", "group": "Professional Core — Clinical Learning" },
+        { "code": "DENT5032", "title": "Community Health", "credits": 9, "recommendedYear": 5, "courseType": "core", "group": "Professional Core — Integrative Projects" },
+        { "code": "CAES9350", "title": "Academic English for Dentistry", "credits": 6, "recommendedYear": 5, "courseType": "core", "group": "University Requirements — English in the Discipline" },
+        { "code": "DENT6103", "title": "Dentistry: Knowledge and Reasoning VI", "credits": 9, "recommendedYear": 6, "courseType": "core", "group": "Professional Core — Knowledge and Reasoning" },
+        { "code": "DENT6104", "title": "Dentistry: Practical Skill Learning VI", "credits": 3, "recommendedYear": 6, "courseType": "core", "group": "Professional Core — Practical Skill Learning" },
+        { "code": "DENT6105", "title": "Clinical Learning in Dentistry VI", "credits": 36, "recommendedYear": 6, "courseType": "core", "group": "Professional Core — Clinical Learning" },
+        { "code": "DENT6131", "title": "International Capstone Experience", "credits": 6, "recommendedYear": 6, "courseType": "capstone", "group": "Professional Core — Capstone" },
+        { "code": "DENT6132", "title": "Capstone Portfolio", "credits": 6, "recommendedYear": 6, "courseType": "capstone", "group": "Professional Core — Capstone" }
+      ]
+    }
+  ]
+}
