@@ -70,8 +70,8 @@ function checkReleaseReadiness(now = new Date()) {
   if (!/^wx[a-f0-9]{16}$/i.test(project.appid || '')) {
     errors.push('project.config.json does not contain a valid WeChat AppID');
   }
-  if (!String(project.description || '').includes('香港高校') || !String(project.description || '').includes('授课硕士')) {
-    errors.push('project.config.json description must match the taught postgraduate launch positioning');
+  if (!String(project.description || '').includes('香港高校') || !String(project.description || '').includes('课程规划')) {
+    errors.push('project.config.json description must match the 1.0.0 course-planning positioning');
   }
   if (project.setting && project.setting.uploadWithSourceMap !== false) {
     errors.push('Source map upload must be disabled for the release build');
@@ -194,7 +194,7 @@ function checkReleaseReadiness(now = new Date()) {
     manualChecklist: {
       privacyDeclaration: 'Confirm storage, clipboard read/write, share, and offline data behavior in WeChat admin',
       categoryAndFiling: 'Confirm service category, ICP/filing, app name, avatar, and description',
-      deviceTesting: 'Run the TPG setup, catalogue, programme detail, audit, profile, data status, and privacy flows on iOS and Android',
+      deviceTesting: 'Run TPG and UG setup, course detail, audit, profile, data status, and privacy flows on iOS and Android',
       reviewMaterial: 'Use docs/REVIEW_SUBMISSION.md for the version description and reviewer path'
     }
   };

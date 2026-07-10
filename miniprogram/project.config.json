@@ -1,5 +1,5 @@
 {
-    "description": "香港高校授课硕士课程规划助手 MVP",
+    "description": "香港高校课程规划助手",
     "miniprogramRoot": "./",
     "compileType": "miniprogram",
     "setting": {

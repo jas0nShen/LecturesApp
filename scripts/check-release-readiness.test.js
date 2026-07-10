@@ -19,8 +19,8 @@ test('current mini-program passes automated release readiness checks', () => {
   const result = checkReleaseReadiness(new Date('2026-07-05T12:00:00+08:00'));
   assert.equal(result.ready, true);
   assert.deepEqual(result.errors, []);
-  assert.equal(result.release.version, '0.1.0');
-  assert.equal(result.release.target, '授课硕士课程规划与本科目录预览版');
+  assert.equal(result.release.version, '1.0.0');
+  assert.equal(result.release.target, '香港高校课程规划助手正式版');
   assert.equal(result.release.dataMode, '体验版 / 正式版离线数据');
   assert(result.metrics.pageCount >= 10);
   assert.equal(result.metrics.offeringCount, 56);
@@ -50,7 +50,7 @@ test('WeChat project metadata matches the launch positioning', () => {
     path.join(ROOT, 'miniprogram', 'project.config.json'),
     'utf8'
   ));
-  assert.equal(projectConfig.description, '香港高校授课硕士课程规划助手 MVP');
+  assert.equal(projectConfig.description, '香港高校课程规划助手');
 });
 
 test('stale official course data blocks release readiness', () => {
@@ -65,7 +65,7 @@ test('WeChat review version description stays within the 200 character limit', (
     reviewDoc,
     '### 提交审核版本描述（200 字以内）'
   );
-  assert(versionDescription.includes('0.1.0'));
+  assert(versionDescription.includes('1.0.0'));
   assert(versionDescription.length <= 200);
 });
 
@@ -114,7 +114,7 @@ test('release checklist includes an iOS and Android acceptance matrix', () => {
   assert(checklist.includes('--priority launch --supplement-template'));
   assert(checklist.includes('--readiness index-only --collector-template'));
   assert(checklist.includes('--readiness no-source --collector-template'));
-  ['授课硕士选择', '本科目录预览', '本科保存后状态', 'Programme 详情', '数据状态', '数据与隐私', '备份恢复', '清除本机数据'].forEach((item) => {
+  ['授课硕士选择', '本科目录预览', '本科保存后状态', '本科课程详情', 'Programme 详情', '数据状态', '数据与隐私', '备份恢复', '清除本机数据'].forEach((item) => {
     assert(checklist.includes(item), `Missing acceptance item: ${item}`);
   });
 });

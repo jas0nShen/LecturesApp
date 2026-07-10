@@ -1,8 +1,8 @@
 {
   "name": "hong-kong-course-planner-mvp",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
-  "description": "MVP for a WeChat mini program helping Hong Kong university students plan courses.",
+  "description": "A local-first WeChat mini program helping Hong Kong university students plan courses.",
   "scripts": {
     "dev:api": "node server/index.js",
     "import:hku:cds": "node scripts/import-hku-cds-offerings.js",
