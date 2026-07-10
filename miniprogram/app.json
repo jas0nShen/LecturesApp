@@ -19,11 +19,12 @@
     "pages/profile/profile"
   ],
   "subpackages": [
-    {
-      "root": "subpackages/ug-data",
-      "name": "ug-data",
-      "pages": ["pages/loader/index"]
-    }
+    { "root": "subpackages/ug-data-cityu", "name": "ug-data-cityu", "pages": ["pages/loader/index"] },
+    { "root": "subpackages/ug-data-cuhk", "name": "ug-data-cuhk", "pages": ["pages/loader/index"] },
+    { "root": "subpackages/ug-data-hku", "name": "ug-data-hku", "pages": ["pages/loader/index"] },
+    { "root": "subpackages/ug-data-hkust", "name": "ug-data-hkust", "pages": ["pages/loader/index"] },
+    { "root": "subpackages/ug-data-lingnan", "name": "ug-data-lingnan", "pages": ["pages/loader/index"] },
+    { "root": "subpackages/ug-data-polyu", "name": "ug-data-polyu", "pages": ["pages/loader/index"] }
   ],
   "window": {
     "navigationBarTitleText": "课程选择助手",

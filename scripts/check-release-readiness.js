@@ -151,6 +151,21 @@ function checkReleaseReadiness(now = new Date()) {
   if (mainPackageBytes > 2 * 1024 * 1024) {
     errors.push(`Main package is ${mainPackageBytes} bytes and exceeds the 2MB upload limit`);
   }
+  const subpackageBytes = (app.subpackages || []).map((subpackage) => {
+    const root = String(subpackage.root || '');
+    const prefix = `${root}${path.sep}`;
+    const bytes = uploadFiles
+      .filter((file) => path.relative(MINI_ROOT, file).startsWith(prefix))
+      .reduce((sum, file) => sum + fs.statSync(file).size, 0);
+    if (bytes > 2 * 1024 * 1024) {
+      errors.push(`Subpackage ${root} is ${bytes} bytes and exceeds the 2MB upload limit`);
+    }
+    return {
+      name: subpackage.name || root,
+      root,
+      bytes
+    };
+  });
   const sourceText = walkFiles(MINI_ROOT)
     .filter((file) => file.endsWith('.js') && !file.endsWith('.test.js'))
     .map((file) => fs.readFileSync(file, 'utf8'))
@@ -196,6 +211,7 @@ function checkReleaseReadiness(now = new Date()) {
       uploadFileCount: uploadFiles.length,
       packageBytes,
       mainPackageBytes,
+      subpackageBytes,
       sensitiveApiCount: sensitiveApis.length
     },
     manualChecklist: {
