@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T18:31:40.716Z",
+  "generatedAt": "2026-07-10T18:38:33.901Z",
   "universities": [
     {
       "id": "HKU",
@@ -4888,9 +4888,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BEng in Chemical Engineering",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-engineering/chemical-engineering",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 35,
+      "codedCourseCount": 35,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/CENG"
     },
     {
       "id": "HKUST-UG-JS5102-SCIENCE-GROUP-A-JS5103-SCIENCE-GROUP-B-10",
@@ -11396,9 +11397,9 @@ const catalogue = {
       "code": "BENG-IN-CHEMICAL-ENGINEERING",
       "nameEn": "BEng in Chemical Engineering",
       "nameZh": "BEng in Chemical Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-engineering/chemical-engineering"
+      "courseCount": 36,
+      "codedCourseCount": 35,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26ceng.pdf"
     },
     {
       "id": "HKUST-UG-JS5102-SCIENCE-GROUP-A-JS5103-SCIENCE-GROUP-B-10-M1",
@@ -16005,11 +16006,11 @@ const catalogue = {
     "CITYU": 2362,
     "CUHK": 294,
     "HKU": 1842,
-    "HKUST": 457,
+    "HKUST": 492,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 8148
+  "codedCourseCount": 8183
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
