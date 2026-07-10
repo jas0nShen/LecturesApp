@@ -145,6 +145,12 @@ function checkReleaseReadiness(now = new Date()) {
     return !ignoredFiles.has(relative) && relative !== 'project.private.config.json';
   });
   const packageBytes = uploadFiles.reduce((sum, file) => sum + fs.statSync(file).size, 0);
+  const mainPackageBytes = uploadFiles
+    .filter((file) => !path.relative(MINI_ROOT, file).startsWith(`subpackages${path.sep}`))
+    .reduce((sum, file) => sum + fs.statSync(file).size, 0);
+  if (mainPackageBytes > 2 * 1024 * 1024) {
+    errors.push(`Main package is ${mainPackageBytes} bytes and exceeds the 2MB upload limit`);
+  }
   const sourceText = walkFiles(MINI_ROOT)
     .filter((file) => file.endsWith('.js') && !file.endsWith('.test.js'))
     .map((file) => fs.readFileSync(file, 'utf8'))
@@ -189,6 +195,7 @@ function checkReleaseReadiness(now = new Date()) {
       ugProgrammeWithCoursesCount: ugSummary.programmeWithCoursesCount,
       uploadFileCount: uploadFiles.length,
       packageBytes,
+      mainPackageBytes,
       sensitiveApiCount: sensitiveApis.length
     },
     manualChecklist: {

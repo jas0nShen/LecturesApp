@@ -31,6 +31,7 @@ test('release status summarizes TPG and UG metrics', () => {
       offeringAgeDays: 2,
       uploadFileCount: 83,
       packageBytes: 1173489,
+      mainPackageBytes: 1048576,
       sensitiveApiCount: 0
     },
     manualChecklist: {
@@ -42,5 +43,5 @@ test('release status summarizes TPG and UG metrics', () => {
   assert.match(output, /READY/);
   assert.match(output, /TPG：8 所学校 · 348 Programme/);
   assert.match(output, /UG：8 所学校 · 444 Programme · 689 Major\/Track/);
-  assert.match(output, /上传包：83 个文件 · 1\.12 MB/);
+  assert.match(output, /上传包：83 个文件 · 总计 1\.12 MB · 主包 1\.00 MB/);
 });

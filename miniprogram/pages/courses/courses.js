@@ -74,6 +74,8 @@ Page({
   },
 
   async refresh() {
+    const app = getApp();
+    if (app.globalData.ugDataReady) await app.globalData.ugDataReady;
     if (this._searchTimer) {
       clearTimeout(this._searchTimer);
       this._searchTimer = null;

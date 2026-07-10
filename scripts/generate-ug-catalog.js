@@ -5,7 +5,7 @@ const DEFAULT_SOURCE_DIR = '/Users/shenjingsong/Documents/Codex/2026-07-06/pdf/o
 const OUTPUT_DIR = path.join(__dirname, '..', 'miniprogram', 'utils');
 const OUTPUT_PATH = path.join(OUTPUT_DIR, 'ugCatalogue.js');
 const COURSE_SHARDS_PATH = path.join(OUTPUT_DIR, 'ugCourseShards.js');
-const COURSE_DATA_DIR = path.join(OUTPUT_DIR, 'ugCourseData');
+const COURSE_DATA_DIR = path.join(__dirname, '..', 'miniprogram', 'subpackages', 'ug-data', 'ugCourseData');
 const HKU_CDS_OFFERINGS_PATH = path.join(__dirname, '..', 'data', 'hku-cds-offerings-2025.json');
 const HKUST_COMP_REQUIREMENTS_PATH = path.join(__dirname, '..', 'data', 'hkust-comp-requirements-2025.json');
 const CUHK_CSE_COURSES_PATH = path.join(__dirname, '..', 'data', 'cuhk-cse-ug-courses-2026.json');
@@ -869,7 +869,7 @@ function writeCourseShards(catalogue) {
     });
 
   const loaderLines = shardEntries.map((entry) => (
-    `  ${JSON.stringify(entry.universityCode)}: () => require('./ugCourseData/${entry.shardName}'),`
+    `  ${JSON.stringify(entry.universityCode)}: () => require('../subpackages/ug-data/ugCourseData/${entry.shardName}'),`
   ));
   const counts = Object.fromEntries(shardEntries.map((entry) => [entry.universityCode, entry.courseCount]));
   fs.writeFileSync(COURSE_SHARDS_PATH, [

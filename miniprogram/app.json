@@ -18,6 +18,13 @@
     "pages/privacy-data/privacy-data",
     "pages/profile/profile"
   ],
+  "subpackages": [
+    {
+      "root": "subpackages/ug-data",
+      "name": "ug-data",
+      "pages": ["pages/loader/index"]
+    }
+  ],
   "window": {
     "navigationBarTitleText": "课程选择助手",
     "navigationBarBackgroundColor": "#0b5d4b",
