@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T03:08:43.041Z",
+  "generatedAt": "2026-07-10T03:14:43.225Z",
   "universities": [
     {
       "id": "HKU",
@@ -6416,9 +6416,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3236",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 5,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 70,
+      "codedCourseCount": 70,
+      "courseSourceUrl": "https://www.polyu.edu.hk/ise/study/undergraduate-programmes/beng-hons-scheme-in-product-innovation-and-smart-manufacturing/bachelor-of-engineering-honours-in-smart-manufacturing/programme-curriculum/"
     },
     {
       "id": "POLYU-UG-JS3612-41",
@@ -12916,8 +12917,8 @@ const catalogue = {
       "code": "PRODUCT-INNOVATION-WITH-MARKETING",
       "nameEn": "Product Innovation with Marketing",
       "nameZh": "Product Innovation with Marketing",
-      "courseCount": 5,
-      "codedCourseCount": 0,
+      "courseCount": 40,
+      "codedCourseCount": 35,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3236"
     },
     {
@@ -12926,8 +12927,8 @@ const catalogue = {
       "code": "SMART-MANUFACTURING",
       "nameEn": "Smart Manufacturing",
       "nameZh": "Smart Manufacturing",
-      "courseCount": 5,
-      "codedCourseCount": 0,
+      "courseCount": 40,
+      "codedCourseCount": 35,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3236"
     },
     {
@@ -15957,9 +15958,9 @@ const catalogue = {
     "HKU": 1511,
     "HKUST": 121,
     "LINGNAN": 721,
-    "POLYU": 1835
+    "POLYU": 1905
   },
-  "codedCourseCount": 6285
+  "codedCourseCount": 6355
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

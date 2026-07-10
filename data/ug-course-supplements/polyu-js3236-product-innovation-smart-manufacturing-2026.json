@@ -1,0 +1,60 @@
+{
+  "provider": "PolyU ISE JS3236 Programme Curricula 2026",
+  "academicYear": "2026",
+  "sourceUrl": "https://www.polyu.edu.hk/ise/study/undergraduate-programmes/beng-hons-scheme-in-product-innovation-and-smart-manufacturing/bachelor-of-engineering-honours-in-product-innovation-with-marketing/programme-curriculum/",
+  "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3236",
+  "supplements": [
+    {
+      "universityCode": "POLYU",
+      "programmeCode": "JS3236",
+      "majorName": "Product Innovation with Marketing",
+      "sourceUrl": "https://www.polyu.edu.hk/ise/study/undergraduate-programmes/beng-hons-scheme-in-product-innovation-and-smart-manufacturing/bachelor-of-engineering-honours-in-product-innovation-with-marketing/programme-curriculum/",
+      "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3236",
+      "courses": [
+        { "code": "ENG1004", "title": "Engineering Professionals in Society I", "credits": 1, "year": 1, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "APSS1L01", "title": "Tomorrow's Leader", "credits": 3, "year": 1, "semester": "Sem 1", "group": "General University Requirements" },
+        { "code": "AMA1110", "title": "Basic Mathematics I - Calculus and Probability and Statistics", "credits": 3, "year": 1, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "ISE2117", "title": "Applied Engineering Fundamentals", "credits": 1, "year": 1, "semester": "Sem 1 & Sem 2", "group": "Work-Integrated Education" },
+        { "code": "MM1031", "title": "Introduction to Innovation and Entrepreneurship", "credits": 1, "year": 1, "semester": "Sem 2", "group": "General University Requirements" },
+        { "code": "ISE1001", "title": "Basic Artificial Intelligence and Data Analytics for Efficiency and Effectiveness in Daily Life", "credits": 2, "year": 1, "semester": "Sem 2", "group": "General University Requirements" },
+        { "code": "AP10005", "title": "Physics I", "credits": 3, "year": 1, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "AMA1120", "title": "Basic Mathematics II - Calculus and Linear Algebra", "credits": 3, "year": 1, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "ENG2002", "title": "Computer Programming", "credits": 3, "year": 1, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "ENG2001", "title": "Fundamentals of Materials Science and Engineering", "credits": 3, "year": 2, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "AMA2111", "title": "Mathematics I", "credits": 3, "year": 2, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "AP10006", "title": "Physics II", "credits": 3, "year": 2, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "ISE2137", "title": "Product Development with Manufacturing Processes", "credits": 2, "year": 2, "semester": "Sem 1 & Sem 2", "group": "Work-Integrated Education" },
+        { "code": "MM2711", "title": "Introduction to Marketing", "credits": 3, "year": 2, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "EIE2302", "title": "Electricity and Electronics", "credits": 3, "year": 2, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "ISE3024", "title": "Quality Engineering for Product Improvement", "credits": 3, "year": 2, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "ISE3006", "title": "Materials and Processes Selection", "credits": 3, "year": 3, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "ENG3003", "title": "Engineering Management", "credits": 3, "year": 3, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "SD348", "title": "Introduction to Industrial Design", "credits": 3, "year": 3, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "MM3761", "title": "Marketing Research", "credits": 3, "year": 3, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "ISE3104", "title": "Integrated Multidisciplinary Project", "credits": 2, "year": 3, "semester": "Sem 1 & Sem 2", "group": "Work-Integrated Education" },
+        { "code": "ISE2002", "title": "Instrumentation and Automation Systems", "credits": 3, "year": 3, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "ISE386", "title": "Integrated Design for Manufacture", "credits": 3, "year": 3, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "ISE4026", "title": "Eco-design and Sustainable Manufacture", "credits": 3, "year": 3, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "ELC3531", "title": "Professional Communication in English for Engineering Students", "credits": 2, "year": 3, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "ISE418", "title": "Computer-Aided Product Design", "credits": 3, "year": 4, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "ISE430", "title": "New Product Planning and Development", "credits": 3, "year": 4, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "ISE4028", "title": "Business Process Management and Innovation I", "credits": 2, "year": 4, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "ISE3019", "title": "Industrial Control Systems and Their Applications", "credits": 3, "year": 4, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "SD4041", "title": "Design in Business for Engineering", "credits": 3, "year": 4, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "ISE4008", "title": "Individual Project", "credits": 3, "year": 4, "semester": "Sem 1 & Sem 2", "group": "Capstone Project" },
+        { "code": "ISE330", "title": "Product Safety and Reliability", "credits": 3, "year": 4, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "ISE4029", "title": "Business Process Management and Innovation II", "credits": 2, "year": 4, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "MM4711", "title": "Business to Business Marketing", "credits": 3, "year": 4, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "ISE4024", "title": "Robotics and Automation Systems", "credits": 3, "year": 4, "semester": "Sem 2", "group": "Programme compulsory subjects" }
+      ]
+    },
+    {
+      "universityCode": "POLYU",
+      "programmeCode": "JS3236",
+      "majorName": "Smart Manufacturing",
+      "sourceUrl": "https://www.polyu.edu.hk/ise/study/undergraduate-programmes/beng-hons-scheme-in-product-innovation-and-smart-manufacturing/bachelor-of-engineering-honours-in-smart-manufacturing/programme-curriculum/",
+      "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3236",
+      "copyCoursesFrom": { "universityCode": "POLYU", "programmeCode": "JS3236", "majorName": "Product Innovation with Marketing" }
+    }
+  ]
+}
