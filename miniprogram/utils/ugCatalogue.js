@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T07:11:11.220Z",
+  "generatedAt": "2026-07-10T07:23:59.308Z",
   "universities": [
     {
       "id": "HKU",
@@ -6053,9 +6053,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3375",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 4,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 3,
+      "codedCourseCount": 3,
+      "courseSourceUrl": "https://www.polyu.edu.hk/ic/study/learning-activities/cohort2526/cee/?sc_lang=en"
     },
     {
       "id": "POLYU-UG-JS3050-22",
@@ -12595,8 +12596,8 @@ const catalogue = {
       "code": "BACHELOR-OF-ENGINEERING-HONOURS-IN-ENVIRONMENTAL",
       "nameEn": "Bachelor of Engineering (Honours) in Environmental Engineering and Sustainable Development",
       "nameZh": "Bachelor of Engineering (Honours) in Environmental Engineering and Sustainable Development",
-      "courseCount": 4,
-      "codedCourseCount": 0,
+      "courseCount": 7,
+      "codedCourseCount": 3,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3375"
     },
     {
@@ -15966,9 +15967,9 @@ const catalogue = {
     "HKU": 1511,
     "HKUST": 121,
     "LINGNAN": 721,
-    "POLYU": 2344
+    "POLYU": 2347
   },
-  "codedCourseCount": 6794
+  "codedCourseCount": 6797
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
