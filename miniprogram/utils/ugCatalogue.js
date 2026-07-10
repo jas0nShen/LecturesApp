@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T03:24:01.963Z",
+  "generatedAt": "2026-07-10T03:26:41.757Z",
   "universities": [
     {
       "id": "HKU",
@@ -6187,9 +6187,9 @@ const catalogue = {
       "type": "",
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3237",
       "sourceStatus": "course_codes_available",
-      "courseCount": 70,
-      "codedCourseCount": 70,
-      "courseSourceUrl": "https://www.polyu.edu.hk/ise/study/undergraduate-programmes/bsc-hons-scheme-in-intelligent-supply-chain-and-engineering-management/bachelor-of-science-honours-in-engineering-management-with-data-analytics/programme-curriculum/"
+      "courseCount": 104,
+      "codedCourseCount": 104,
+      "courseSourceUrl": "https://www.polyu.edu.hk/ise/study/undergraduate-programmes/bsc-hons-scheme-in-intelligent-supply-chain-and-engineering-management/bachelor-of-science-honours-in-aviation-operations-and-systems/programme-curriculum"
     },
     {
       "id": "POLYU-UG-JS3000-29",
@@ -12768,8 +12768,8 @@ const catalogue = {
       "code": "AVIATION-OPERATIONS-AND-SYSTEMS",
       "nameEn": "Aviation Operations and Systems",
       "nameZh": "Aviation Operations and Systems",
-      "courseCount": 5,
-      "codedCourseCount": 0,
+      "courseCount": 39,
+      "codedCourseCount": 34,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3237"
     },
     {
@@ -15959,9 +15959,9 @@ const catalogue = {
     "HKU": 1511,
     "HKUST": 121,
     "LINGNAN": 721,
-    "POLYU": 1975
+    "POLYU": 2009
   },
-  "codedCourseCount": 6425
+  "codedCourseCount": 6459
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

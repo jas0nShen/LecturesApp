@@ -13,7 +13,7 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.requirementCount, 4);
   assert(summary.courseCount >= 4630);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 6425);
+  assert.equal(summary.codedCourseCount, 6459);
   assert.equal(summary.programmeWithCoursesCount, 83);
   assert.equal(summary.pendingProgrammeCount, 361);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
@@ -135,7 +135,7 @@ test('UG per-school coverage stays visible for setup validation', () => {
     HKU: { programmeCount: 137, majorCount: 137, codedCourseCount: 1511 },
     CUHK: { programmeCount: 84, majorCount: 84, codedCourseCount: 131 },
     HKUST: { programmeCount: 50, majorCount: 64, codedCourseCount: 121 },
-    POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 1975 },
+    POLYU: { programmeCount: 46, majorCount: 110, codedCourseCount: 2009 },
     CITYU: { programmeCount: 58, majorCount: 201, codedCourseCount: 1966 },
     HKBU: { programmeCount: 22, majorCount: 46, codedCourseCount: 0 },
     EDUHK: { programmeCount: 25, majorCount: 25, codedCourseCount: 0 },
@@ -171,7 +171,7 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert.equal(polyu.programmeWithCoursesCount, 15);
   assert.equal(polyu.pendingProgrammeCount, 31);
   assert.equal(polyu.coveragePercent, 33);
-  assert.equal(polyu.codedCourseCount, 1975);
+  assert.equal(polyu.codedCourseCount, 2009);
   assert.equal(polyu.badge, 'COURSES');
   assert.equal(polyu.sourceReadiness.indexOnly, polyu.pendingProgrammeCount);
   assert.equal(cityu.programmeWithCoursesCount, 20);
@@ -487,7 +487,11 @@ test('PolyU Intelligent Supply Chain exposes its official curriculum without ope
   assert.equal(engineeringManagementCourses.length, 35);
   assert(engineeringManagementCourses.some((course) => course.courseCode === 'ISE3022' && course.titleEn === 'Digital Transformation with Advanced Technology'));
   assert(engineeringManagementCourses.some((course) => course.courseCode === 'ISE4008' && course.courseType === 'capstone'));
-  assert.equal(ugService.listMajorCourses(scheme.id, aviation.id).length, 0);
+  const aviationCourses = ugService.listMajorCourses(scheme.id, aviation.id);
+  assert.equal(aviationCourses.length, 34);
+  assert(aviationCourses.some((course) => course.courseCode === 'ISE3016' && course.titleEn === 'Aviation Safety and Security Management'));
+  assert(aviationCourses.some((course) => course.courseCode === 'ISE4008' && course.courseType === 'capstone'));
+  assert(ugService.listMajorCourses(scheme.id, aviation.id, { keyword: 'Airline Strategy' }).some((course) => course.courseCode === 'LGT4800'));
 });
 
 test('HKU Computing and Data Science catalogue profiles expose official course offerings', () => {

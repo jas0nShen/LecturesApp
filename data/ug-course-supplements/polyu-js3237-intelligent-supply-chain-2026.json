@@ -91,6 +91,49 @@
         { "code": "ENG4001", "title": "Project Management", "credits": 3, "year": 4, "semester": "Sem 2", "group": "Programme compulsory subjects" },
         { "code": "ISE431", "title": "Engineering Costing and Evaluation", "credits": 3, "year": 4, "semester": "Sem 2", "group": "Programme compulsory subjects" }
       ]
+    },
+    {
+      "universityCode": "POLYU",
+      "programmeCode": "JS3237",
+      "majorName": "Aviation Operations and Systems",
+      "sourceUrl": "https://www.polyu.edu.hk/ise/study/undergraduate-programmes/bsc-hons-scheme-in-intelligent-supply-chain-and-engineering-management/bachelor-of-science-honours-in-aviation-operations-and-systems/programme-curriculum",
+      "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3237",
+      "courses": [
+        { "code": "ENG1004", "title": "Engineering Professionals in Society I", "credits": 1, "year": 1, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "APSS1L01", "title": "Tomorrow's Leader", "credits": 3, "year": 1, "semester": "Sem 1", "group": "General University Requirements" },
+        { "code": "ENG2003", "title": "Information Technology", "credits": 3, "year": 1, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "AMA1110", "title": "Basic Mathematics I - Calculus and Probability and Statistics", "credits": 3, "year": 1, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "ISE2117", "title": "Applied Engineering Fundamentals", "credits": 1, "year": 1, "semester": "Sem 1 & Sem 2", "group": "Work-Integrated Education" },
+        { "code": "MM1031", "title": "Introduction to Innovation and Entrepreneurship", "credits": 1, "year": 1, "semester": "Sem 2", "group": "General University Requirements" },
+        { "code": "ISE1001", "title": "Basic Artificial Intelligence and Data Analytics for Efficiency and Effectiveness in Daily Life", "credits": 2, "year": 1, "semester": "Sem 2", "group": "General University Requirements" },
+        { "code": "ENG2002", "title": "Computer Programming", "credits": 3, "year": 1, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "AMA1120", "title": "Basic Mathematics II - Calculus and Linear Algebra", "credits": 3, "year": 1, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "ISE2003", "title": "Introduction to Intelligent Supply Chain", "credits": 3, "year": 2, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "MM2021", "title": "Management and Organization", "credits": 3, "year": 2, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "MM2711", "title": "Introduction to Marketing", "credits": 3, "year": 2, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "ISE318", "title": "Industrial Engineering Technique and Methods", "credits": 3, "year": 2, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "AF2111", "title": "Accounting for Decision Making", "credits": 3, "year": 2, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "AF3513", "title": "Business Law", "credits": 3, "year": 2, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "LGT3029", "title": "Shipping and Transport Logistics Operations", "credits": 3, "year": 2, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "ISE247", "title": "Fundamental of Enterprise Systems", "credits": 3, "year": 2, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "ISE2136", "title": "Industrial Safety and Web Intelligence", "credits": 1, "year": 2, "semester": "Sem 2", "group": "Work-Integrated Education" },
+        { "code": "ISE3015", "title": "Applications of Operations Research in Aviation", "credits": 3, "year": 3, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "ISE3020", "title": "Introduction to Aviation Management", "credits": 3, "year": 3, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "ISE3021", "title": "Warehousing Technologies and Operations", "credits": 3, "year": 3, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "ISE4028", "title": "Business Process Management and Innovation I", "credits": 2, "year": 3, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "ISE3010", "title": "Integrated Aviation Systems Project", "credits": 2, "year": 3, "semester": "Sem 1 & Sem 2", "group": "Work-Integrated Education" },
+        { "code": "ELC3531", "title": "Professional Communication in English for Engineering Students", "credits": 2, "year": 3, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "ISE3004", "title": "Systems Modeling and Simulation", "credits": 3, "year": 3, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "ISE3016", "title": "Aviation Safety and Security Management", "credits": 3, "year": 3, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "ENG4001", "title": "Project Management", "credits": 3, "year": 3, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "ISE431", "title": "Engineering Costing and Evaluation", "credits": 3, "year": 3, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "ISE4015", "title": "Airport Logistics Engineering", "credits": 3, "year": 4, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "ISE4022", "title": "Fleet and Flight Management", "credits": 3, "year": 4, "semester": "Sem 1", "group": "Programme compulsory subjects" },
+        { "code": "ISE4008", "title": "Individual Project", "credits": 3, "year": 4, "semester": "Sem 1 & Sem 2", "group": "Capstone Project" },
+        { "code": "ISE404", "title": "Total Quality Management", "credits": 3, "year": 4, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "LGT4012", "title": "Airport Management", "credits": 3, "year": 4, "semester": "Sem 2", "group": "Programme compulsory subjects" },
+        { "code": "LGT4800", "title": "Airline Strategy and Management", "credits": 3, "year": 4, "semester": "Sem 2", "group": "Programme compulsory subjects" }
+      ]
     }
   ]
 }
