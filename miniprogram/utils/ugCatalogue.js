@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T16:58:11.741Z",
+  "generatedAt": "2026-07-10T17:02:15.032Z",
   "universities": [
     {
       "id": "HKU",
@@ -4809,9 +4809,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BSc in Biomedical and Health Sciences",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-science/biomedical-and-health-sciences",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 28,
+      "codedCourseCount": 28,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/BMH"
     },
     {
       "id": "HKUST-UG-JS5103-SCIENCE-GROUP-B-6",
@@ -11354,9 +11355,9 @@ const catalogue = {
       "code": "BIOMEDICAL-AND-HEALTH-SCIENCES",
       "nameEn": "Biomedical and Health Sciences",
       "nameZh": "Biomedical and Health Sciences",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-science/biomedical-and-health-sciences"
+      "courseCount": 29,
+      "codedCourseCount": 28,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26bmh.pdf"
     },
     {
       "id": "HKUST-UG-JS5103-SCIENCE-GROUP-B-6-M1",
@@ -16003,11 +16004,11 @@ const catalogue = {
     "CITYU": 2362,
     "CUHK": 294,
     "HKU": 1842,
-    "HKUST": 348,
+    "HKUST": 376,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 8039
+  "codedCourseCount": 8067
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

@@ -249,6 +249,24 @@ test('HKUST Biotechnology exposes its verified 2025/26 major and track curriculu
   assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Entrepreneurship' }).some((course) => course.courseCode === 'BIBU4820'));
 });
 
+test('HKUST Biomedical and Health Sciences exposes its verified 2025/26 core and capstone paths', () => {
+  const hkust = ugService.listUniversities().find((item) => item.code === 'HKUST');
+  const programme = ugService.listProgrammes({ universityId: hkust.id, degreeLevel: 'undergraduate' }).find((item) => item.nameEn === 'Biomedical and Health Sciences');
+  const major = ugService.listMajors(programme.id).find((item) => item.nameEn === 'Biomedical and Health Sciences');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 28);
+  assert.equal(courses.length, 28);
+  ['LIFS1980', 'LIFS2901', 'LIFS4380', 'CHEM1011', 'COMP1021'].forEach((courseCode) => {
+    assert(courses.some((course) => course.courseCode === courseCode));
+  });
+  assert(courses.some((course) => course.courseCode === 'LIFS3904' && course.requirementGroups.includes('major required alternative')));
+  assert(courses.some((course) => course.courseCode === 'LIFS4976' && course.courseType === 'capstone'));
+  assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Pharmacology' }).some((course) => course.courseCode === 'LIFS4380'));
+});
+
 test('UG pending source readiness labels summarize index-only catalogue gaps', () => {
   assert.deepEqual(ugService.summarizePendingSourceReadiness([
     { codedCourseCount: 3, sourceStatus: 'course_codes_available' },

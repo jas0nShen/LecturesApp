@@ -1,0 +1,23 @@
+{
+  "provider": "HKUST 2025/26 BSc in Biomedical and Health Sciences program and course catalog",
+  "academicYear": "2025/26",
+  "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/BMH",
+  "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26bmh.pdf",
+  "supplements": [{
+    "universityCode": "HKUST",
+    "programmeName": "Biomedical and Health Sciences",
+    "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/BMH",
+    "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26bmh.pdf",
+    "courses": [
+      { "code": "LIFS1901", "title": "General Biology I", "credits": 3, "group": "major prerequisite exemption" }, { "code": "LIFS1902", "title": "General Biology II", "credits": 3, "group": "major prerequisite" },
+      { "code": "LIFS1903", "title": "Laboratory for General Biology I", "credits": 1, "group": "major required exemption" }, { "code": "LIFS1904", "title": "Laboratory for General Biology II", "credits": 1, "group": "major required" }, { "code": "LIFS1980", "title": "Guided Study on Biomedical and Health Sciences", "credits": 1, "group": "major required" },
+      { "code": "LIFS2010", "title": "Modern Approaches to Biochemical and Cell Biological Research", "credits": 3, "group": "major required" }, { "code": "LIFS2040", "title": "Cell Biology", "credits": 3, "group": "major required" }, { "code": "LIFS2210", "title": "Biochemistry I", "credits": 3, "group": "major required" }, { "code": "LIFS2220", "title": "Biochemistry II", "credits": 3, "group": "major required" },
+      { "code": "LIFS2901", "title": "Case Study on Biomedical and Health Sciences I: From Proposal to Practice", "credits": 3, "group": "major required" }, { "code": "LIFS3040", "title": "Animal Physiology", "credits": 3, "group": "major required" },
+      { "code": "LIFS3901", "title": "Case Study on Biomedical and Health Sciences IIA - Generation of Disease Models by Genome Editing", "credits": 4, "group": "major required alternative" }, { "code": "LIFS3902", "title": "Case Study on Biomedical and Health Sciences IIB - Phenotypic Analysis of Mutant Animal Models", "credits": 4, "group": "major required alternative" }, { "code": "LIFS3903", "title": "Case Study on Biomedical and Health Sciences IIC - Genome-wide Association Studies in Practice", "credits": 4, "group": "major required alternative" }, { "code": "LIFS3904", "title": "Case Study on Biomedical and Health Sciences IID - Analysis of Next-generation Sequencing Data", "credits": 4, "group": "major required alternative" },
+      { "code": "LIFS4370", "title": "Human Genetics and Personalized Medicine", "credits": 3, "group": "major required" }, { "code": "LIFS4380", "title": "Pharmacology and Toxicology", "credits": 3, "group": "major required" },
+      { "code": "LIFS4966", "title": "Biomedical and Health Sciences Capstone Project", "credits": 3, "group": "capstone alternative" }, { "code": "LIFS4976", "title": "Biomedical and Health Sciences Project Research I", "credits": 3, "group": "capstone alternative" }, { "code": "LIFS4986", "title": "Biomedical and Health Sciences Project Research II", "credits": 4, "group": "capstone alternative" },
+      { "code": "CHEM1011", "title": "General Chemistry A: Reactions, Thermodynamics, and Reaction Kinetics", "credits": 3, "group": "major required" }, { "code": "CHEM1012", "title": "General Chemistry B: Atomic Structure, Molecules, and Bonding Theories", "credits": 3, "group": "major required" }, { "code": "CHEM1051", "title": "Laboratory for General Chemistry A", "credits": 1, "group": "major required" }, { "code": "CHEM1052", "title": "Laboratory for General Chemistry B", "credits": 1, "group": "major required" },
+      { "code": "MATH1005", "title": "Calculus and Statistics", "credits": 4, "group": "major required alternative" }, { "code": "MATH1006", "title": "Calculus, Vectors, and Matrices", "credits": 4, "group": "major required alternative" }, { "code": "MATH1013", "title": "Calculus I", "credits": 3, "group": "major required alternative" }, { "code": "COMP1021", "title": "Introduction to Computer Science", "credits": 3, "group": "major required" }
+    ]
+  }]
+}
