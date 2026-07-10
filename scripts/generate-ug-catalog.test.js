@@ -363,6 +363,23 @@ test('CityU Media and Communication exposes verified first-year foundation cours
   });
 });
 
+test('CityU Computing Mathematics exposes the verified normative core study path', () => {
+  const catalogue = require('../miniprogram/utils/ugCatalogue');
+  const programme = catalogue.programmes.find((item) => item.universityCode === 'CITYU' && item.jupasCode === 'JS1206');
+  assert.ok(programme);
+
+  const majors = catalogue.majors.filter((item) => item.programmeId === programme.id);
+  assert.equal(majors.length, 3);
+  majors.forEach((major) => {
+    const courses = catalogue.courses.filter((item) => item.majorId === major.id);
+    assert.ok(courses.length >= 23);
+    assert.ok(courses.some((item) => item.courseCode === 'MA1300' && item.recommendedYear === 1));
+    assert.ok(courses.some((item) => item.courseCode === 'CS1302' && item.recommendedYear === 1));
+    assert.ok(courses.some((item) => item.courseCode === 'MA2503' && item.recommendedYear === 2));
+    assert.ok(courses.some((item) => item.courseCode === 'MA3517' && item.recommendedYear === 3 && item.semester === 'Semester 2'));
+  });
+});
+
 test('UG source coverage report can focus missing programme work by school', () => {
   const args = parseArgs(['--school', 'cityu', '--missing-limit', '5', '--missing-only']);
   const summary = summarizeGeneratedCatalogue(args);

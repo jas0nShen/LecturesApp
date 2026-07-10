@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T15:28:10.389Z",
+  "generatedAt": "2026-07-10T15:31:16.660Z",
   "universities": [
     {
       "id": "HKU",
@@ -7416,9 +7416,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1206",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 69,
+      "codedCourseCount": 69,
+      "courseSourceUrl": "https://www.cityu.edu.hk/ma/programmes/undergraduate/bsc-computing-mathematics/curriculum/10991"
     },
     {
       "id": "CITYU-UG-MNE-45",
@@ -14436,9 +14437,9 @@ const catalogue = {
       "code": "ENRICHED-MATHEMATICS",
       "nameEn": "Enriched Mathematics",
       "nameZh": "Enriched Mathematics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1206"
+      "courseCount": 24,
+      "codedCourseCount": 23,
+      "officialUrl": "https://www.cityu.edu.hk/ma/programmes/undergraduate/bsc-computing-mathematics/curriculum/10991"
     },
     {
       "id": "CITYU-UG-BSCCM-44-M2",
@@ -14446,9 +14447,9 @@ const catalogue = {
       "code": "FINANCIAL-MATHEMATICS",
       "nameEn": "Financial Mathematics",
       "nameZh": "Financial Mathematics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1206"
+      "courseCount": 24,
+      "codedCourseCount": 23,
+      "officialUrl": "https://www.cityu.edu.hk/ma/programmes/undergraduate/bsc-computing-mathematics/curriculum/10991"
     },
     {
       "id": "CITYU-UG-BSCCM-44-M3",
@@ -14456,9 +14457,9 @@ const catalogue = {
       "code": "GLOBAL-RESEARCH-ENRICHMENT-AND-TECHNOPRENEURSHIP",
       "nameEn": "Global Research Enrichment and Technopreneurship (GREAT)",
       "nameZh": "Global Research Enrichment and Technopreneurship (GREAT)",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1206"
+      "courseCount": 24,
+      "codedCourseCount": 23,
+      "officialUrl": "https://www.cityu.edu.hk/ma/programmes/undergraduate/bsc-computing-mathematics/curriculum/10991"
     },
     {
       "id": "CITYU-UG-MNE-45-M1",
@@ -15982,14 +15983,14 @@ const catalogue = {
     }
   ],
   "courseShardCounts": {
-    "CITYU": 2121,
+    "CITYU": 2190,
     "CUHK": 131,
     "HKU": 1842,
     "HKUST": 121,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 7408
+  "codedCourseCount": 7477
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

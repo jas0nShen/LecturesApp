@@ -1,0 +1,39 @@
+{
+  "provider": "CityUHK Department of Mathematics BSc Computing Mathematics normative four-year curriculum",
+  "academicYear": "2025/26",
+  "sourceUrl": "https://www.cityu.edu.hk/ma/programmes/undergraduate/bsc-computing-mathematics/curriculum/10991",
+  "officialUrl": "https://www.cityu.edu.hk/ma/programmes/undergraduate/bsc-computing-mathematics/curriculum/10991",
+  "supplements": [
+    {
+      "universityCode": "CITYU",
+      "jupasCode": "JS1206",
+      "sourceUrl": "https://www.cityu.edu.hk/ma/programmes/undergraduate/bsc-computing-mathematics/curriculum/10991",
+      "officialUrl": "https://www.cityu.edu.hk/ma/programmes/undergraduate/bsc-computing-mathematics/curriculum/10991",
+      "courses": [
+        { "code": "GE1401", "title": "University English", "credits": 3, "recommendedYear": 1, "semester": "Semester 1", "group": "gateway education" },
+        { "code": "GE1501", "title": "Chinese Civilisation - History and Philosophy", "credits": 3, "recommendedYear": 1, "semester": "Semester 1", "group": "gateway education" },
+        { "code": "GE1601", "title": "Whole-Person Development", "credits": 1, "recommendedYear": 1, "semester": "Semester 1", "group": "gateway education" },
+        { "code": "MA1300", "title": "Enhanced Calculus and Linear Algebra I", "credits": 3, "recommendedYear": 1, "semester": "Semester 1", "group": "major requirement" },
+        { "code": "CS1302", "title": "Introduction to Computer Programming", "credits": 3, "recommendedYear": 1, "semester": "Semester 1", "group": "major requirement" },
+        { "code": "CSCI1001", "title": "Employability for Scientists", "credits": 0, "recommendedYear": 1, "semester": "Semester 1", "group": "college requirement" },
+        { "code": "GE2401", "title": "English for Science", "credits": 3, "recommendedYear": 1, "semester": "Semester 2", "group": "gateway education" },
+        { "code": "MA1301", "title": "Enhanced Calculus and Linear Algebra II", "credits": 3, "recommendedYear": 1, "semester": "Semester 2", "group": "major requirement" },
+        { "code": "CSCI1002", "title": "Career Lab for Scientists", "credits": 0, "recommendedYear": 1, "semester": "Semester 2", "group": "college requirement" },
+        { "code": "MA2503", "title": "Linear Algebra", "credits": 4, "recommendedYear": 2, "semester": "Semester 1", "group": "major requirement" },
+        { "code": "MA2508", "title": "Multi-variable Calculus", "credits": 4, "recommendedYear": 2, "semester": "Semester 1", "group": "major requirement" },
+        { "code": "MA2509", "title": "Discrete Mathematics", "credits": 3, "recommendedYear": 2, "semester": "Semester 1", "group": "major requirement" },
+        { "code": "CS2360", "title": "Java Programming", "credits": 3, "recommendedYear": 2, "semester": "Semester 1", "group": "major requirement" },
+        { "code": "MA2507", "title": "Computing Mathematics Laboratory", "credits": 1, "recommendedYear": 2, "semester": "Semester 2", "group": "major requirement" },
+        { "code": "MA2510", "title": "Probability and Statistics", "credits": 3, "recommendedYear": 2, "semester": "Semester 2", "group": "major requirement" },
+        { "code": "MA3511", "title": "Ordinary Differential Equations", "credits": 3, "recommendedYear": 2, "semester": "Semester 2", "group": "major requirement" },
+        { "code": "MA3526", "title": "Analysis", "credits": 3, "recommendedYear": 2, "semester": "Semester 2", "group": "major requirement" },
+        { "code": "MA3512", "title": "Partial Differential Equations", "credits": 3, "recommendedYear": 3, "semester": "Semester 1", "group": "major requirement" },
+        { "code": "MA3518", "title": "Applied Statistics", "credits": 3, "recommendedYear": 3, "semester": "Semester 1", "group": "major requirement" },
+        { "code": "MA3525", "title": "Elementary Numerical Methods", "credits": 4, "recommendedYear": 3, "semester": "Semester 1", "group": "major requirement" },
+        { "code": "MA3514", "title": "Numerical Methods for Differential Equations", "credits": 3, "recommendedYear": 3, "semester": "Semester 2", "group": "major requirement" },
+        { "code": "MA3515", "title": "Introduction to Optimization", "credits": 3, "recommendedYear": 3, "semester": "Semester 2", "group": "major requirement" },
+        { "code": "MA3517", "title": "Complex Analysis", "credits": 3, "recommendedYear": 3, "semester": "Semester 2", "group": "major requirement" }
+      ]
+    }
+  ]
+}
