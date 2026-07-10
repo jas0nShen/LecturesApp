@@ -1,6 +1,14 @@
 [
   {
     "universityCode": "POLYU",
+    "programmeCode": "JS3007",
+    "reviewedAt": "2026-07-10",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3007",
+    "note": "Official PolyU JUPAS and Faculty of Humanities pages confirm that Humanities is a Common Year One entry scheme with four potential majors and programme selection after Year One. The public pages do not publish a stable coded table for the shared first-year curriculum. Courses verified for Chinese History and Culture, English and Applied Linguistics, Language Science and Technology, and Speech Therapy must remain bound to their respective programmes, not assigned to the umbrella scheme. Keep JS3007 as index/source-only until a public coded Common Year One curriculum is available."
+  },
+  {
+    "universityCode": "POLYU",
     "programmeCode": "JS3006",
     "reviewedAt": "2026-07-10",
     "status": "no_public_course_codes",
