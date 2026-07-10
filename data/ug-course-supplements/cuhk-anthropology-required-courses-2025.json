@@ -1,0 +1,27 @@
+{
+  "provider": "CUHK Department of Anthropology undergraduate study scheme and course syllabus",
+  "academicYear": "2025/26",
+  "sourceUrl": "https://www.arts.cuhk.edu.hk/~ant/wp-content/uploads/PDF/StudyScheme/ANTHNENG2025-26.pdf",
+  "officialUrl": "https://www.arts.cuhk.edu.hk/~ant/en/programmes/undergraduate-programmes/ug-course-syllabus/",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "jupasCode": "JS4006",
+      "sourceUrl": "https://www.arts.cuhk.edu.hk/~ant/wp-content/uploads/PDF/StudyScheme/ANTHNENG2025-26.pdf",
+      "officialUrl": "https://www.arts.cuhk.edu.hk/~ant/en/programmes/undergraduate-programmes/ug-course-syllabus/",
+      "courses": [
+        { "code": "ANTH1010", "title": "Humans and Culture", "credits": 3, "semester": "Term 1 or 2", "group": "major required" },
+        { "code": "ANTH1100", "title": "Understanding Anthropology", "credits": 3, "semester": "Term 1", "group": "major required" },
+        { "code": "ANTH1710", "title": "Understanding Archaeology", "credits": 3, "semester": "Term 2", "group": "major required" },
+        { "code": "ANTH2110", "title": "History of Anthropological Theory", "credits": 3, "group": "major required" },
+        { "code": "ANTH2111", "title": "Contemporary Anthropological Theory", "credits": 3, "semester": "Term 1", "group": "major required" },
+        { "code": "ANTH2200", "title": "World Ethnography", "credits": 3, "semester": "Term 2", "group": "major required" },
+        { "code": "ANTH2210", "title": "Anthropological Field Methods", "credits": 3, "semester": "Term 2", "group": "major required" },
+        { "code": "ANTH3380", "title": "Economy, Culture and Power", "credits": 3, "group": "major required" },
+        { "code": "ANTH3630", "title": "Language, Symbols and Society", "credits": 3, "semester": "Term 2", "group": "major required" },
+        { "code": "ANTH4300", "title": "Field Project I", "credits": 3, "semester": "Term 1 or 2", "group": "major required" },
+        { "code": "ANTH4301", "title": "Field Project II", "credits": 3, "semester": "Term 1 or 2", "group": "major required" }
+      ]
+    }
+  ]
+}

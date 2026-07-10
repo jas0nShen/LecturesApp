@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-10T15:40:33.797Z",
+  "generatedAt": "2026-07-10T15:42:34.987Z",
   "universities": [
     {
       "id": "HKU",
@@ -3123,9 +3123,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/anthn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 11,
+      "codedCourseCount": 11,
+      "courseSourceUrl": "https://www.arts.cuhk.edu.hk/~ant/wp-content/uploads/PDF/StudyScheme/ANTHNENG2025-26.pdf"
     },
     {
       "id": "CUHK-UG-BMBLN-2",
@@ -10460,9 +10461,9 @@ const catalogue = {
       "code": "ANTHROPOLOGY",
       "nameEn": "Anthropology",
       "nameZh": "Anthropology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admission.cuhk.edu.hk/programme/anthn/"
+      "courseCount": 12,
+      "codedCourseCount": 11,
+      "officialUrl": "https://www.arts.cuhk.edu.hk/~ant/en/programmes/undergraduate-programmes/ug-course-syllabus/"
     },
     {
       "id": "CUHK-UG-BMBLN-2-M1",
@@ -15987,13 +15988,13 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 2362,
-    "CUHK": 131,
+    "CUHK": 142,
     "HKU": 1842,
     "HKUST": 121,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 7649
+  "codedCourseCount": 7660
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
