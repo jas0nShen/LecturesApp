@@ -1,6 +1,7 @@
 <view wx:if="{{loadError}}" class="page state">
   <view class="state-title">课程数据加载失败</view>
-  <view class="state-copy">请返回课程页后重新加载；已保存的资料不会丢失。</view>
+  <view class="state-copy">请重新加载；已保存的资料不会丢失。</view>
+  <view class="button" bindtap="retryUgLoad">重新加载</view>
 </view>
 <view class="page" wx:elif="{{course}}">
   <view class="section panel">

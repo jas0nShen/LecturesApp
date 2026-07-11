@@ -9,17 +9,23 @@ Page({
     completed: false,
     dataSource: 'loading',
     isUgCourse: false,
-    loadError: false
+    loadError: false,
+    routeOptions: null
   },
 
-  async onLoad(options) {
+  onLoad(options) {
+    return this.loadCourse(options);
+  },
+
+  async loadCourse(options = this.data.routeOptions || {}) {
+    this.setData({ loadError: false, dataSource: 'loading', routeOptions: options });
     if (options.ugId) {
       const app = typeof getApp === 'function' ? getApp() : {};
       const universityCode = options.universityCode || ugService.inferUniversityCodeFromCourseId(options.ugId);
       try {
         if (universityCode && app.ensureUniversityLoaded) await app.ensureUniversityLoaded(universityCode);
       } catch (error) {
-        this.setData({ dataSource: 'error', isUgCourse: true, loadError: true });
+        this.setData({ dataSource: 'error', isUgCourse: true, loadError: true, routeOptions: options });
         wx.showToast({ title: '课程数据加载失败，请重试', icon: 'none' });
         return;
       }
@@ -45,6 +51,10 @@ Page({
       dataSource: result.source,
       isUgCourse: false
     });
+  },
+
+  retryUgLoad() {
+    return this.loadCourse(this.data.routeOptions || {});
   },
 
   toggleFavorite() {
