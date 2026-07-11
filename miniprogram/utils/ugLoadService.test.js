@@ -1,6 +1,7 @@
 const assert = require('node:assert/strict');
 const test = require('node:test');
 const { createUniversityLoader } = require('./ugLoadService');
+const { getPackageNames } = require('./ugCourseShards');
 
 function deferred() {
   let resolve;
@@ -73,4 +74,32 @@ test('marks universities with no course package as not required', async () => {
     code: 'EDUHK', state: 'not_required', packageNames: []
   });
   assert.equal(loader.getUniversityLoadState('EDUHK'), 'not_required');
+});
+
+test('all eight launch schools resolve either their own course package or an explicit not-required state', async () => {
+  const loaded = [];
+  const activated = [];
+  const loader = createUniversityLoader({
+    getPackageNames,
+    loadSubPackage: (name) => { loaded.push(name); return Promise.resolve(); },
+    activatePackage: (name) => { activated.push(name); return Promise.resolve(); }
+  });
+  const expectedStates = {
+    HKU: 'ready',
+    CUHK: 'ready',
+    HKUST: 'ready',
+    POLYU: 'ready',
+    CITYU: 'ready',
+    LINGNAN: 'ready',
+    HKBU: 'not_required',
+    EDUHK: 'not_required'
+  };
+
+  for (const [universityCode, state] of Object.entries(expectedStates)) {
+    const result = await loader.ensureUniversityLoaded(universityCode);
+    assert.equal(result.state, state, universityCode);
+    assert.equal(loader.getUniversityLoadState(universityCode), state, universityCode);
+  }
+  assert.deepEqual(activated, loaded);
+  assert.equal(loaded.length, 8);
 });
