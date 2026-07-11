@@ -9,15 +9,17 @@ function clone(value) {
   return JSON.parse(JSON.stringify(value));
 }
 
-function loadOnboardingPage(profile = null) {
+function loadOnboardingPage(profile = null, app = {}) {
   delete require.cache[require.resolve(ONBOARDING_PATH)];
   global.wx = {
     getStorageSync: (key) => (key === 'userProfile' ? profile : null),
     setStorageSync: () => {},
     navigateTo: () => {},
     switchTab: () => {},
-    showToast: () => {}
+    showToast: () => {},
+    showModal: () => {}
   };
+  global.getApp = () => app;
   let page = null;
   global.Page = (config) => {
     page = {
@@ -46,6 +48,28 @@ test('first onboarding visit does not preselect a university or programme', asyn
   assert.equal(page.data.filteredTpgProgrammes.length, 0);
   assert(page.data.universities.length >= 8);
   assert(page.data.tpgUniversities.length >= 8);
+});
+
+test('rapid undergraduate school switching ignores the stale package result', async () => {
+  let resolveHku;
+  const app = {
+    ensureUniversityLoaded(code) {
+      if (code === 'HKU') return new Promise((resolve) => { resolveHku = resolve; });
+      return Promise.resolve({ state: 'ready' });
+    }
+  };
+  const page = loadOnboardingPage(null, app);
+  await page.onLoad({});
+  const hkuIndex = page.data.universities.findIndex((item) => item.code === 'HKU');
+  const polyuIndex = page.data.universities.findIndex((item) => item.code === 'POLYU');
+
+  const staleRequest = page.selectUgUniversityByIndex(hkuIndex);
+  const currentRequest = page.selectUgUniversityByIndex(polyuIndex);
+  await currentRequest;
+  resolveHku({ state: 'ready' });
+  await staleRequest;
+
+  assert.equal(page.data.selectedUniversity.code, 'POLYU');
 });
 
 test('editing a saved undergraduate profile keeps the saved school and programme', async () => {
