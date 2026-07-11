@@ -268,8 +268,10 @@ function getMajorProfile(programmeId, majorId, curriculumYear) {
       trackedCredits: 0,
       sourceUrl: programme.officialUrl || major.officialUrl,
       verifiedAt: catalogue.generatedAt ? catalogue.generatedAt.slice(0, 10) : '',
-      sourceStatus: programme.sourceStatus,
-      codedCourseCount: programme.codedCourseCount || 0
+      // A programme may contain several majors with different coverage.  UI
+      // callers must use the selected major's course set, not the aggregate.
+      sourceStatus: courses.length ? 'course_codes_available' : 'programme_summary_only',
+      codedCourseCount: courses.length
     };
   }
   const university = getUniversity(programme.universityId);

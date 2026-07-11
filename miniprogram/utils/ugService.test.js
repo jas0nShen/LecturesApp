@@ -546,7 +546,7 @@ test('PolyU Management and Marketing scheme exposes official undergraduate subje
   assert.equal(mmScheme.codedCourseCount, 118);
   assert.equal(management.codedCourseCount, 59);
   assert.equal(marketing.codedCourseCount, 59);
-  assert.equal(managementProfile.codedCourseCount, 118);
+  assert.equal(managementProfile.codedCourseCount, 59);
   assert.equal(marketingCourses.length, 59);
   assert(marketingCourses.some((course) => course.courseCode === 'MM3842' && course.titleEn === 'Digital Marketing'));
   assert(marketingCourses.some((course) => course.courseCode === 'MM4942' && course.courseType === 'capstone'));
@@ -568,7 +568,7 @@ test('PolyU Spatial Data Science and Smart Cities scheme exposes official LSGS s
   assert.equal(lsgsScheme.codedCourseCount, 114);
   assert.equal(landSurveying.codedCourseCount, 57);
   assert.equal(smartCities.codedCourseCount, 57);
-  assert.equal(landProfile.codedCourseCount, 114);
+  assert.equal(landProfile.codedCourseCount, 57);
   assert.equal(smartCityCourses.length, 57);
   assert(smartCityCourses.some((course) => course.courseCode === 'LSGI3802' && course.titleEn === 'Spatial Data Science'));
   assert(smartCityCourses.some((course) => course.courseCode === 'LSGI4503' && course.courseType === 'capstone'));
@@ -590,7 +590,7 @@ test('PolyU Aviation Engineering scheme exposes official AAE subject list course
   assert.equal(aviationScheme.codedCourseCount, 88);
   assert.equal(aeronautical.codedCourseCount, 44);
   assert.equal(airTransport.codedCourseCount, 44);
-  assert.equal(aeronauticalProfile.codedCourseCount, 88);
+  assert.equal(aeronauticalProfile.codedCourseCount, 44);
   assert.equal(airTransportCourses.length, 44);
   assert(airTransportCourses.some((course) => course.courseCode === 'AAE3001' && course.titleEn === 'Fundamentals of Aerodynamics'));
   assert(airTransportCourses.some((course) => course.courseCode === 'AAE4012' && course.courseType === 'capstone'));
@@ -631,7 +631,7 @@ test('PolyU Electrical Engineering scheme exposes official EEE undergraduate sub
   assert.equal(eeScheme.codedCourseCount, 74);
   assert.equal(electrical.codedCourseCount, 37);
   assert.equal(transportation.codedCourseCount, 37);
-  assert.equal(electricalProfile.codedCourseCount, 74);
+  assert.equal(electricalProfile.codedCourseCount, 37);
   assert.equal(transportationCourses.length, 37);
   assert(transportationCourses.some((course) => course.courseCode === 'EE4019' && course.titleEn === 'Intelligent Transportation Systems (EE4019B variant)'));
   assert(transportationCourses.some((course) => course.courseCode === 'EE4006' && course.courseType === 'capstone'));
@@ -655,7 +655,7 @@ test('PolyU Information and Artificial Intelligence Engineering scheme exposes o
   assert.equal(iot.codedCourseCount, 71);
   assert.equal(ai.codedCourseCount, 71);
   assert.equal(security.codedCourseCount, 71);
-  assert.equal(iotProfile.codedCourseCount, 213);
+  assert.equal(iotProfile.codedCourseCount, 71);
   assert.equal(securityCourses.length, 71);
   assert(securityCourses.some((course) => course.courseCode === 'EIE4117' && course.courseType === 'capstone'));
   assert(securityCourses.some((course) => course.courseCode === 'EIE4122' && course.titleEn === 'Deep Learning and Deep Neural Networks'));
@@ -680,7 +680,7 @@ test('PolyU Applied Mathematics and Finance Analytics scheme exposes official AM
   assert.equal(appliedMath.codedCourseCount, 88);
   assert.equal(investment.codedCourseCount, 88);
   assert.equal(qfft.codedCourseCount, 88);
-  assert.equal(appliedProfile.codedCourseCount, 264);
+  assert.equal(appliedProfile.codedCourseCount, 88);
   assert.equal(qfftCourses.length, 88);
   assert(qfftCourses.some((course) => course.courseCode === 'AMA3340' && course.titleEn === 'Introduction to Blockchain and Cyber Security'));
   assert(qfftCourses.some((course) => course.courseCode === 'AMA4951' && course.courseType === 'capstone'));
