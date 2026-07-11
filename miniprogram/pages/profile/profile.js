@@ -13,12 +13,29 @@ Page({
     noteCount: 0,
     noteSummary: '集中整理选课理由和注意事项',
     userSummary: null,
-    dataStatus: null
+    dataStatus: null,
+    ugLoadError: false
   },
 
-  onShow() {
+  async onShow() {
     const noteCount = service.getCourseNotes().length;
     const profile = service.getProfile();
+    const requestId = (this._requestId || 0) + 1;
+    this._requestId = requestId;
+    if (profile && profile.profileType === 'undergraduate') {
+      const programme = ugService.getProgramme(profile.programmeId);
+      const universityCode = profile.universityCode || (programme && programme.universityCode);
+      const app = typeof getApp === 'function' ? getApp() : {};
+      if (universityCode && app.ensureUniversityLoaded) {
+        try {
+          await app.ensureUniversityLoaded(universityCode);
+        } catch (error) {
+          if (requestId !== this._requestId) return;
+          this.setData({ profile, isTpg: false, tpgProfile: null, isUgCatalogue: false, ugProfile: null, ugLoadError: true });
+          return;
+        }
+      }
+    }
     const tpgProfile = tpgService.getProfileSummary(profile);
     const ugProfile = profile && profile.profileType === 'undergraduate'
       ? ugService.getMajorProfile(profile.programmeId, profile.majorId, profile.curriculumYear)
@@ -32,6 +49,7 @@ Page({
       tpgProfile,
       isUgCatalogue,
       ugProfile,
+      ugLoadError: false,
       noteCount,
       noteSummary: noteCount ? `已记录 ${noteCount} 门课程` : '集中整理选课理由和注意事项',
       userSummary,
@@ -41,6 +59,17 @@ Page({
 
   goOnboarding() {
     wx.navigateTo({ url: service.buildOnboardingUrl() });
+  },
+
+  retryUgLoad() {
+    const profile = service.getProfile();
+    const programme = profile && ugService.getProgramme(profile.programmeId);
+    const code = profile && (profile.universityCode || (programme && programme.universityCode));
+    const app = typeof getApp === 'function' ? getApp() : {};
+    if (!code || !app.retryUniversityLoad) return this.onShow();
+    app.retryUniversityLoad(code).then(() => this.onShow()).catch(() => {
+      wx.showToast({ title: '暂时无法加载，请稍后重试', icon: 'none' });
+    });
   },
 
   goCourseNotes() {

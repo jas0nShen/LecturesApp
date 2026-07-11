@@ -62,6 +62,12 @@
     <view class="button" bindtap="goOnboarding">{{profile ? '修改资料' : '开始设置'}}</view>
   </view>
 
+  <view wx:if="{{ugLoadError}}" class="section panel">
+    <view class="panel-title">本科课程数据暂时无法加载</view>
+    <view class="subtitle">你的本机资料仍已保留，可重新加载后查看课程状态。</view>
+    <view class="button" bindtap="retryUgLoad">重新加载</view>
+  </view>
+
   <view wx:if="{{isTpg}}" class="section tpg-mini-actions">
     <view class="mini-action" bindtap="goTpgCatalog">浏览 Programme</view>
     <view class="mini-action primary" bindtap="goDataStatus">查看资料来源</view>

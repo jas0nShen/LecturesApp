@@ -12,6 +12,18 @@
     </view>
   </block>
 
+  <block wx:elif="{{dataSource === 'error'}}">
+    <view class="section setup-card">
+      <view class="audit-kicker light">LOCAL DATA</view>
+      <view class="setup-title">本科课程数据加载失败</view>
+      <view class="setup-copy">请稍后重试；已保存的学校和专业资料不会丢失。</view>
+    </view>
+    <view class="tpg-actions">
+      <view class="tpg-action primary" bindtap="retryUgLoad">重新加载</view>
+      <view class="tpg-action" bindtap="goOnboarding">检查资料</view>
+    </view>
+  </block>
+
   <block wx:elif="{{isTpg && tpgAudit}}">
     <view class="section tpg-audit-hero">
       <view class="audit-kicker light">{{tpgAudit.programme.universityCode}} · {{tpgAudit.university.academicYear}}</view>

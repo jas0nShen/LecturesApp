@@ -18,6 +18,7 @@ Page({
     note: '',
     noteLength: 0,
     noteSaved: true,
+    planningCapability: { supported: false },
     dataSource: 'loading'
   },
 
@@ -29,6 +30,7 @@ Page({
     }
 
     const data = result.data;
+    const planningCapability = service.getPlanningCapability();
     service.recordRecentlyViewed(data.offering.courseCode);
     this.setData({
       loading: false,
@@ -38,10 +40,11 @@ Page({
       academicYear: data.academicYear,
       termLabel: data.offering.terms.join(' / '),
       categoryLabel: data.offering.categories.join(' · '),
-      favorite: service.isOfferingFavorite(data.offering.courseCode),
-      completed: service.isOfferingCompleted(data.offering.courseCode),
-      planned: service.isCoursePlanned(data.offering.courseCode),
-      planLabel: service.isCoursePlanned(data.offering.courseCode) ? '调整 Study Plan' : '加入 Study Plan',
+      favorite: planningCapability.supported && service.isOfferingFavorite(data.offering.courseCode),
+      completed: planningCapability.supported && service.isOfferingCompleted(data.offering.courseCode),
+      planned: planningCapability.supported && service.isCoursePlanned(data.offering.courseCode),
+      planLabel: planningCapability.supported && service.isCoursePlanned(data.offering.courseCode) ? '调整 Study Plan' : '加入 Study Plan',
+      planningCapability,
       prerequisiteCourses: service.getPrerequisiteCourseStatus(data.course.prerequisites),
       note: service.getCourseNote(data.offering.courseCode),
       noteLength: service.getCourseNote(data.offering.courseCode).length,
@@ -50,7 +53,7 @@ Page({
   },
 
   onShow() {
-    if (!this.data.offering) return;
+    if (!this.data.offering || !this.data.planningCapability.supported) return;
     const planned = service.isCoursePlanned(this.data.offering.courseCode);
     this.setData({
       planned,

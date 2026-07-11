@@ -11,6 +11,18 @@
     </view>
   </block>
 
+  <block wx:elif="{{dataSource === 'error'}}">
+    <view class="setup-card">
+      <view class="setup-kicker">LOCAL DATA</view>
+      <view class="setup-title">{{ugStatusTitle}}</view>
+      <view class="setup-copy">{{ugStatusCopy}}</view>
+      <view class="setup-actions">
+        <view class="setup-action primary" bindtap="retryUgLoad">重新加载</view>
+        <view class="setup-action" bindtap="goOnboarding">检查资料</view>
+      </view>
+    </view>
+  </block>
+
   <block wx:elif="{{isTpg}}">
     <view class="tpg-hero course-hero">
       <view class="tpg-eyebrow">{{tpgProgramme.universityCode}} · {{tpgUniversity.academicYear}}</view>

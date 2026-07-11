@@ -239,9 +239,21 @@ function listMajorCourses(programmeId, majorId, filters = {}) {
   });
 }
 
-function getCatalogueCourse(courseId) {
+function inferUniversityCodeFromCourseId(courseId) {
+  const id = String(courseId || '').toUpperCase();
+  return listUniversities()
+    .map((university) => university.code)
+    .filter(Boolean)
+    .sort((left, right) => right.length - left.length)
+    .find((code) => id.startsWith(`${String(code).toUpperCase()}-`)) || '';
+}
+
+function getCatalogueCourse(courseId, universityCode) {
   const id = String(courseId || '');
-  return ugCourseShards.listAllCourses().find((course) => String(course.id) === id) || null;
+  const code = String(universityCode || inferUniversityCodeFromCourseId(id)).toUpperCase();
+  if (!code) return null;
+  return ugCourseShards.getCoursesByUniversityCode(code)
+    .find((course) => String(course.id) === id) || null;
 }
 
 function getMajorProfile(programmeId, majorId, curriculumYear) {
@@ -487,6 +499,7 @@ module.exports = {
   formatPendingSourceReadiness,
   getCatalogueSummary,
   getCatalogueCourse,
+  inferUniversityCodeFromCourseId,
   getFaculty,
   getMajor,
   getMajorProfile,

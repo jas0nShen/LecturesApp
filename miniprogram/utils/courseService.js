@@ -67,6 +67,31 @@ function buildOnboardingUrl(profile = getProfile()) {
   return `/pages/onboarding/onboarding?${query || `mode=${mode}`}`;
 }
 
+function getPlanningCapability(profile = getProfile()) {
+  if (!profile) {
+    return {
+      supported: false,
+      reason: '请先在“我的资料”中设置学校和专业。',
+      settingsUrl: buildOnboardingUrl(profile)
+    };
+  }
+  const isBuiltInHkuCompSc = profile.profileType === 'undergraduate'
+    && String(profile.programmeId) === '1'
+    && String(profile.majorId) === '1';
+  if (isBuiltInHkuCompSc) {
+    return {
+      supported: true,
+      reason: '',
+      settingsUrl: buildOnboardingUrl(profile)
+    };
+  }
+  return {
+    supported: false,
+    reason: '当前专业的毕业规则尚未完成官方复核，因此暂不提供收藏、已修和 Study Plan 建议。你仍可浏览课程与资料状态。',
+    settingsUrl: buildOnboardingUrl(profile)
+  };
+}
+
 function daysSince(dateValue, now) {
   const timestamp = new Date(dateValue).getTime();
   return Math.max(0, Math.floor((now.getTime() - timestamp) / 86400000));
@@ -1227,6 +1252,7 @@ module.exports = {
   getFavoriteOfferings,
   getFavorites,
   getProfile,
+  getPlanningCapability,
   buildOnboardingUrl,
   getPrerequisiteCourseStatus,
   getRecentlyViewedOfferings,

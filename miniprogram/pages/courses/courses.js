@@ -74,8 +74,7 @@ Page({
   },
 
   async refresh() {
-    const app = getApp();
-    if (app.globalData.ugDataReady) await app.globalData.ugDataReady;
+    const app = typeof getApp === 'function' ? getApp() : {};
     if (this._searchTimer) {
       clearTimeout(this._searchTimer);
       this._searchTimer = null;
@@ -85,6 +84,19 @@ Page({
     this.setData({ searching: true });
 
     const profile = service.getProfile();
+    if (profile && profile.profileType === 'undergraduate') {
+      const programme = ugService.getProgramme(profile.programmeId);
+      const universityCode = profile.universityCode || (programme && programme.universityCode);
+      if (universityCode && app.ensureUniversityLoaded) {
+        try {
+          await app.ensureUniversityLoaded(universityCode);
+        } catch (error) {
+          if (requestId !== this._requestId) return;
+          this.setData({ needsSetup: false, isTpg: false, isUgCatalogue: false, ugProfile: null, searching: false, dataSource: 'error', ugStatusTitle: '课程数据加载失败', ugStatusCopy: '请稍后重试；本地资料未被删除。' });
+          return;
+        }
+      }
+    }
     if (!profile) {
       if (requestId !== this._requestId) return;
       this.setData({
@@ -377,7 +389,8 @@ Page({
   },
 
   goUgDetail(event) {
-    wx.navigateTo({ url: `/pages/course-detail/course-detail?ugId=${event.currentTarget.dataset.id}` });
+    const universityCode = this.data.ugProfile && this.data.ugProfile.university && this.data.ugProfile.university.code;
+    wx.navigateTo({ url: `/pages/course-detail/course-detail?ugId=${event.currentTarget.dataset.id}&universityCode=${encodeURIComponent(universityCode || '')}` });
   },
 
   goOfferingDetail(event) {
@@ -400,6 +413,17 @@ Page({
 
   goOnboarding() {
     wx.navigateTo({ url: service.buildOnboardingUrl() });
+  },
+
+  retryUgLoad() {
+    const profile = service.getProfile();
+    const programme = profile && ugService.getProgramme(profile.programmeId);
+    const universityCode = profile && (profile.universityCode || (programme && programme.universityCode));
+    const app = typeof getApp === 'function' ? getApp() : {};
+    if (!universityCode || !app.retryUniversityLoad) return this.refresh();
+    app.retryUniversityLoad(universityCode).then(() => this.refresh()).catch(() => {
+      wx.showToast({ title: '暂时无法加载，请检查网络后重试', icon: 'none' });
+    });
   },
 
   copyTpgSource() {

@@ -1,4 +1,8 @@
-<view class="page" wx:if="{{course}}">
+<view wx:if="{{loadError}}" class="page state">
+  <view class="state-title">课程数据加载失败</view>
+  <view class="state-copy">请返回课程页后重新加载；已保存的资料不会丢失。</view>
+</view>
+<view class="page" wx:elif="{{course}}">
   <view class="section panel">
     <view class="row">
       <view class="code">{{course.courseCode}}</view>
@@ -53,4 +57,8 @@
     <view class="copy-hint" bindtap="copyOfficialUrl">点击复制官方链接</view>
     <view class="subtitle">最后核验：{{course.lastVerifiedAt}}</view>
   </view>
+</view>
+<view wx:else class="page state">
+  <view class="state-title">没有找到这门课</view>
+  <view class="state-copy">请返回课程页重新选择。</view>
 </view>

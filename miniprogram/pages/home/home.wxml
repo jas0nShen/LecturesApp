@@ -27,6 +27,12 @@
     </view>
   </view>
 
+  <view wx:if="{{ugLoadError}}" class="section panel">
+    <view class="panel-title">本科课程数据暂时无法加载</view>
+    <view class="subtitle">已保存的学校与专业没有丢失。请重新加载，或稍后再试。</view>
+    <view class="button" bindtap="retryUgLoad">重新加载</view>
+  </view>
+
   <view wx:if="{{profile && !isTpg}}" class="section grid">
     <view class="action-card" bindtap="goCourses">
       <view class="action-index">01</view>
@@ -38,7 +44,7 @@
       <view class="action-title">毕业检查</view>
       <view class="action-copy">{{isUgCatalogue ? '查看复核状态' : '看看还差哪些要求'}}</view>
     </view>
-    <view class="action-card" bindtap="goFavorites">
+    <view wx:if="{{planningCapability.supported}}" class="action-card" bindtap="goFavorites">
       <view class="action-index">03</view>
       <view class="action-title">收藏课程</view>
       <view class="action-copy">保存想修的课程</view>
@@ -48,7 +54,7 @@
       <view class="action-title">我的资料</view>
       <view class="action-copy">学校、专业、年级</view>
     </view>
-    <view class="action-card plan-card" bindtap="goStudyPlan">
+    <view wx:if="{{planningCapability.supported}}" class="action-card plan-card" bindtap="goStudyPlan">
       <view class="action-index">PLAN · 4 YEARS</view>
       <view class="action-title">我的 Study Plan</view>
       <view class="action-copy">按学年和学期安排想修的课程</view>

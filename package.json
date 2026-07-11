@@ -14,7 +14,7 @@
     "sync:data": "node scripts/generate-mock-data.js",
     "check:release": "node scripts/check-release-readiness.js",
     "status:release": "node scripts/print-release-status.js",
-    "check:ug-sync": "npm run sync:ug-catalog && git diff --exit-code -I '\"generatedAt\"' -- miniprogram/utils/ugCatalogue.js miniprogram/utils/ugCourseShards.js miniprogram/subpackages",
+    "check:ug-sync": "node scripts/generate-ug-catalog.js --check",
     "check:ship": "npm run check:ug-sync && npm run check && npm run check:release",
     "test": "node --test",
     "check": "node scripts/validate-data.js && node scripts/validate-ug-supplements.js && node server/index.js --check && node --test"

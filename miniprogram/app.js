@@ -6,9 +6,16 @@ App({
   onLaunch() {
     const profile = wx.getStorageSync('userProfile');
     this.globalData.userProfile = profile || null;
-    const ugPackages = ['ug-data-cityu-a', 'ug-data-cityu-b', 'ug-data-cuhk', 'ug-data-hku', 'ug-data-hkust', 'ug-data-lingnan', 'ug-data-polyu-a', 'ug-data-polyu-b'];
-    this.globalData.ugDataReady = Promise.all(ugPackages.map((name) => new Promise((resolve) => {
-      wx.loadSubPackage({ name, success: resolve, fail: resolve });
-    })));
+    const { createUniversityLoader } = require('./utils/ugLoadService');
+    const { getPackageNames } = require('./utils/ugCourseShards');
+    const loader = createUniversityLoader({
+      getPackageNames,
+      loadSubPackage(name) {
+        return new Promise((resolve, reject) => wx.loadSubPackage({ name, success: resolve, fail: reject }));
+      }
+    });
+    this.ensureUniversityLoaded = loader.ensureUniversityLoaded;
+    this.getUniversityLoadState = loader.getUniversityLoadState;
+    this.retryUniversityLoad = loader.retryUniversityLoad;
   }
 });

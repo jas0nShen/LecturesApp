@@ -30,6 +30,17 @@ test('legacy curriculum profiles migrate to the verified intake label', () => {
   assert.equal(storage.get('userProfile').curriculumYear, '2025-26');
 });
 
+test('Study Plan capability is limited to the built-in HKU BEng CompSc sample', () => {
+  assert.equal(service.getPlanningCapability().supported, false);
+  assert.equal(service.getPlanningCapability({
+    profileType: 'undergraduate', universityCode: 'HKU', programmeId: 1, majorId: 1
+  }).supported, true);
+  assert.equal(service.getPlanningCapability({
+    profileType: 'undergraduate', universityCode: 'HKU', programmeId: 'HKU-UG-6004-1', majorId: 'HKU-UG-6004-1-M1'
+  }).supported, false);
+  assert.equal(service.getPlanningCapability({ profileType: 'tpg', programmeId: 1 }).supported, false);
+});
+
 test('local course filters match programme, major, type, prerequisite and keyword', () => {
   const courses = service.listCourses({
     programmeId: 1,

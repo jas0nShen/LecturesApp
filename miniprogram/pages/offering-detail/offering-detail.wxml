@@ -23,7 +23,7 @@
       </view>
     </view>
 
-    <view class="section completion-strip {{completed ? 'done' : ''}}">
+    <view wx:if="{{planningCapability.supported}}" class="section completion-strip {{completed ? 'done' : ''}}">
       <view>
         <view class="completion-label">我的修读记录</view>
         <view class="completion-value">{{completed ? '已记录为已修' : '尚未记录为已修'}}</view>
@@ -31,7 +31,7 @@
       <view class="completion-dot">{{completed ? '✓' : '—'}}</view>
     </view>
 
-    <view wx:if="{{planned}}" class="section planned-strip">
+    <view wx:if="{{planningCapability.supported && planned}}" class="section planned-strip">
       <view class="planned-symbol">◆</view>
       <view>
         <view class="planned-label">Study Plan</view>
@@ -114,9 +114,9 @@
     <view class="section detail-actions">
       <view class="button secondary" bindtap="copyOfficialUrl">复制官方链接</view>
       <button class="button secondary share-action" open-type="share">分享给好友</button>
-      <view class="button favorite-action" bindtap="toggleFavorite">{{favorite ? '取消收藏' : '收藏课程'}}</view>
-      <view class="button completion-action {{completed ? 'secondary' : ''}}" bindtap="toggleCompleted">{{completed ? '取消已修标记' : '标记为已修'}}</view>
-      <view class="button plan-action" bindtap="goPlanCourse">{{planLabel}}</view>
+      <view wx:if="{{planningCapability.supported}}" class="button favorite-action" bindtap="toggleFavorite">{{favorite ? '取消收藏' : '收藏课程'}}</view>
+      <view wx:if="{{planningCapability.supported}}" class="button completion-action {{completed ? 'secondary' : ''}}" bindtap="toggleCompleted">{{completed ? '取消已修标记' : '标记为已修'}}</view>
+      <view wx:if="{{planningCapability.supported}}" class="button plan-action" bindtap="goPlanCourse">{{planLabel}}</view>
       <view class="source-note">数据源：{{dataSource === 'api' ? '开发环境服务' : '离线数据'}}</view>
     </view>
   </block>

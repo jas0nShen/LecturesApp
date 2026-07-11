@@ -46,12 +46,31 @@ Page({
     tpgNextSteps: [],
     isUgCatalogue: false,
     ugProfile: null,
-    ugNextSteps: []
+    ugNextSteps: [],
+    planningCapability: { supported: false },
+    ugLoadError: false
   },
 
   async onShow() {
     const profile = service.getProfile();
     const isTpg = profile && profile.profileType === 'tpg';
+    const planningCapability = service.getPlanningCapability(profile);
+    const requestId = (this._requestId || 0) + 1;
+    this._requestId = requestId;
+    if (profile && profile.profileType === 'undergraduate') {
+      const programme = ugService.getProgramme(profile.programmeId);
+      const universityCode = profile.universityCode || (programme && programme.universityCode);
+      const app = typeof getApp === 'function' ? getApp() : {};
+      if (universityCode && app.ensureUniversityLoaded) {
+        try {
+          await app.ensureUniversityLoaded(universityCode);
+        } catch (error) {
+          if (requestId !== this._requestId) return;
+          this.setData({ profile, planningCapability, dataSource: 'error', isUgCatalogue: false, ugProfile: null, ugNextSteps: [], ugLoadError: true });
+          return;
+        }
+      }
+    }
     const tpgProfile = tpgService.getProfileSummary(profile);
     const ugProfile = profile && profile.profileType === 'undergraduate'
       ? ugService.getMajorProfile(profile.programmeId, profile.majorId, profile.curriculumYear)
@@ -73,6 +92,8 @@ Page({
     }));
     this.setData({
       profile,
+      ugLoadError: false,
+      planningCapability,
       isTpg,
       tpgProfile,
       tpgNextSteps: buildTpgNextSteps(tpgProfile),
@@ -112,6 +133,17 @@ Page({
 
   goCourses() {
     wx.switchTab({ url: '/pages/courses/courses' });
+  },
+
+  retryUgLoad() {
+    const profile = service.getProfile();
+    const programme = profile && ugService.getProgramme(profile.programmeId);
+    const code = profile && (profile.universityCode || (programme && programme.universityCode));
+    const app = typeof getApp === 'function' ? getApp() : {};
+    if (!code || !app.retryUniversityLoad) return this.onShow();
+    app.retryUniversityLoad(code).then(() => this.onShow()).catch(() => {
+      wx.showToast({ title: '暂时无法加载，请稍后重试', icon: 'none' });
+    });
   },
 
   goAudit() {

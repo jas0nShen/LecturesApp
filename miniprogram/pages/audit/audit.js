@@ -97,6 +97,22 @@ Page({
       });
       return;
     }
+    const requestId = (this._requestId || 0) + 1;
+    this._requestId = requestId;
+    if (profile.profileType === 'undergraduate') {
+      const programme = ugService.getProgramme(profile.programmeId);
+      const universityCode = profile.universityCode || (programme && programme.universityCode);
+      const app = typeof getApp === 'function' ? getApp() : {};
+      if (universityCode && app.ensureUniversityLoaded) {
+        try {
+          await app.ensureUniversityLoaded(universityCode);
+        } catch (error) {
+          if (requestId !== this._requestId) return;
+          this.setData({ needsSetup: false, isTpg: false, isUgCatalogue: false, ugAudit: null, dataSource: 'error' });
+          return;
+        }
+      }
+    }
 
     const tpgProgramme = profile && profile.profileType === 'tpg'
       ? tpgService.getProgramme(profile.programmeId)
@@ -179,6 +195,17 @@ Page({
 
   goOnboarding() {
     wx.navigateTo({ url: service.buildOnboardingUrl() });
+  },
+
+  retryUgLoad() {
+    const profile = service.getProfile();
+    const programme = profile && ugService.getProgramme(profile.programmeId);
+    const universityCode = profile && (profile.universityCode || (programme && programme.universityCode));
+    const app = typeof getApp === 'function' ? getApp() : {};
+    if (!universityCode || !app.retryUniversityLoad) return this.refresh();
+    app.retryUniversityLoad(universityCode).then(() => this.refresh()).catch(() => {
+      wx.showToast({ title: '暂时无法加载，请稍后重试', icon: 'none' });
+    });
   },
 
   copyTpgSource() {

@@ -179,9 +179,7 @@ Page({
     const profile = mergeProfileOptions(service.getProfile(), options);
     const initialMode = resolveInitialMode(profile, options);
     const savedTpgProfile = tpgService.getProfileSummary(profile);
-    const savedUgProfile = profile && profile.profileType === 'undergraduate'
-      ? ugService.getMajorProfile(profile.programmeId, profile.majorId, profile.curriculumYear)
-      : null;
+    const savedUgProfile = null;
     this.loadTpg(profile);
     this.setData({
       mode: initialMode,
@@ -230,6 +228,11 @@ Page({
       });
       return;
     }
+    const loaded = await this.ensureUgUniversityLoaded(selectedUniversity.code);
+    if (!loaded) return;
+    const savedUgProfile = profile && profile.profileType === 'undergraduate'
+      ? ugService.getMajorProfile(profile.programmeId, profile.majorId, profile.curriculumYear)
+      : null;
     const programmes = ugService.listProgrammes({ universityId: selectedUniversity.id, degreeLevel: 'undergraduate' });
     const selectedProgramme = resolveSavedUgProgramme(profile, programmes);
     const currentYear = profile && profile.profileType !== 'tpg' ? String(profile.currentYear) : '1';
@@ -239,10 +242,40 @@ Page({
       universityOptions: universities.map(formatUgUniversityOption),
       ugSchoolCoverage,
       selectedUniversity,
+      savedUgProfile,
       currentYear,
       currentYearIndex: currentYearIndex >= 0 ? currentYearIndex : 0
     });
-    this.setUgSelection(selectedUniversity, programmes, selectedProgramme, '', profile, ugSchoolCoverage);
+    await this.setUgSelection(selectedUniversity, programmes, selectedProgramme, '', profile, ugSchoolCoverage);
+  },
+
+  async ensureUgUniversityLoaded(universityCode) {
+    const requestId = (this._ugLoadRequestId || 0) + 1;
+    this._ugLoadRequestId = requestId;
+    const app = typeof getApp === 'function' ? getApp() : {};
+    if (!universityCode || !app.ensureUniversityLoaded) return true;
+    try {
+      await app.ensureUniversityLoaded(universityCode);
+      return requestId === this._ugLoadRequestId;
+    } catch (error) {
+      if (requestId === this._ugLoadRequestId) {
+        wx.showModal({
+          title: '本科课程数据加载失败',
+          content: '已保存的资料不会丢失。请检查网络后重新加载。',
+          confirmText: '重新加载',
+          success: async (result) => {
+            if (!result.confirm || requestId !== this._ugLoadRequestId || !app.retryUniversityLoad) return;
+            try {
+              await app.retryUniversityLoad(universityCode);
+              if (requestId === this._ugLoadRequestId) this.loadUndergraduate(service.getProfile());
+            } catch (retryError) {
+              wx.showToast({ title: '仍无法加载，请稍后再试', icon: 'none' });
+            }
+          }
+        });
+      }
+      return false;
+    }
   },
 
   loadTpg(profile) {
@@ -296,15 +329,17 @@ Page({
     this.selectUgUniversityByIndex(index);
   },
 
-  selectUgUniversityByIndex(index) {
+  async selectUgUniversityByIndex(index) {
     const selectedUniversity = this.data.universities[index] || this.data.universities[0] || {};
     if (!selectedUniversity.id) {
       wx.showToast({ title: '请选择你的学校', icon: 'none' });
       return;
     }
+    const loaded = await this.ensureUgUniversityLoaded(selectedUniversity.code);
+    if (!loaded) return;
     const programmes = ugService.listProgrammes({ universityId: selectedUniversity.id, degreeLevel: 'undergraduate' });
     this.setData({ showUgUniversitySheet: false });
-    this.setUgSelection(selectedUniversity, programmes, programmes[0] || {}, '');
+    await this.setUgSelection(selectedUniversity, programmes, programmes[0] || {}, '');
   },
 
   async onUniversityChange(event) {
@@ -328,10 +363,10 @@ Page({
     this.selectUgProgrammeByIndex(Number(event.currentTarget.dataset.index));
   },
 
-  selectUgProgrammeByIndex(index) {
+  async selectUgProgrammeByIndex(index) {
     const selectedProgramme = this.data.filteredUgProgrammes[index] || this.data.filteredUgProgrammes[0] || {};
     this.setData({ showUgProgrammeSheet: false });
-    this.applyUgProgrammeSelection(selectedProgramme);
+    await this.applyUgProgrammeSelection(selectedProgramme);
   },
 
   onUgKeyword(event) {
@@ -370,7 +405,10 @@ Page({
     );
   },
 
-  applyUgProgrammeSelection(selectedProgramme = {}, profile = null, filteredUgProgrammes = this.data.filteredUgProgrammes) {
+  async applyUgProgrammeSelection(selectedProgramme = {}, profile = null, filteredUgProgrammes = this.data.filteredUgProgrammes) {
+    const selectedUniversity = this.data.selectedUniversity || {};
+    const loaded = await this.ensureUgUniversityLoaded(selectedUniversity.code);
+    if (!loaded) return;
     const majors = selectedProgramme.id ? ugService.listMajors(selectedProgramme.id) : [];
     const selectedMajor = majors.find((item) => item.id === (profile && profile.majorId)) || majors[0] || {};
     const curriculumYears = selectedMajor.id
@@ -413,7 +451,7 @@ Page({
     });
   },
 
-  setUgSelection(
+  async setUgSelection(
     selectedUniversity,
     programmes,
     selectedProgramme,
@@ -440,7 +478,7 @@ Page({
       ugProgrammeIndex: selectedIndex >= 0 ? selectedIndex : 0,
       ugSelectedIndexLabel: selectedIndex >= 0 ? `${selectedIndex + 1} / ${filteredUgProgrammes.length}` : `0 / ${filteredUgProgrammes.length}`
     });
-    this.applyUgProgrammeSelection(effectiveProgramme, profile, filteredUgProgrammes);
+    await this.applyUgProgrammeSelection(effectiveProgramme, profile, filteredUgProgrammes);
   },
 
   onMajorChange(event) {

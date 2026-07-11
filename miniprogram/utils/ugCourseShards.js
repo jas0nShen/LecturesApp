@@ -15,6 +15,28 @@ const counts = {
   "LINGNAN": 721,
   "POLYU": 2472
 };
+const packageNames = {
+  "CITYU": [
+    "ug-data-cityu-a",
+    "ug-data-cityu-b"
+  ],
+  "CUHK": [
+    "ug-data-cuhk"
+  ],
+  "HKU": [
+    "ug-data-hku"
+  ],
+  "HKUST": [
+    "ug-data-hkust"
+  ],
+  "LINGNAN": [
+    "ug-data-lingnan"
+  ],
+  "POLYU": [
+    "ug-data-polyu-a",
+    "ug-data-polyu-b"
+  ]
+};
 const cache = {};
 
 function getCoursesByUniversityCode(universityCode) {
@@ -33,8 +55,13 @@ function getCourseCount(universityCode) {
   return Object.values(counts).reduce((sum, count) => sum + count, 0);
 }
 
+function getPackageNames(universityCode) {
+  return packageNames[String(universityCode || '').toUpperCase()] || [];
+}
+
 module.exports = {
   getCourseCount,
+  getPackageNames,
   getCoursesByUniversityCode,
   listAllCourses
 };

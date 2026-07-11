@@ -50,6 +50,10 @@
             {
                 "type": "file",
                 "value": "utils/ugService.test.js"
+            },
+            {
+                "type": "file",
+                "value": "utils/ugLoadService.test.js"
             }
         ],
         "include": []

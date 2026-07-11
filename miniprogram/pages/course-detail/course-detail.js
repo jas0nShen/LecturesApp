@@ -8,12 +8,22 @@ Page({
     favorite: false,
     completed: false,
     dataSource: 'loading',
-    isUgCourse: false
+    isUgCourse: false,
+    loadError: false
   },
 
   async onLoad(options) {
     if (options.ugId) {
-      const course = ugService.getCatalogueCourse(options.ugId);
+      const app = typeof getApp === 'function' ? getApp() : {};
+      const universityCode = options.universityCode || ugService.inferUniversityCodeFromCourseId(options.ugId);
+      try {
+        if (universityCode && app.ensureUniversityLoaded) await app.ensureUniversityLoaded(universityCode);
+      } catch (error) {
+        this.setData({ dataSource: 'error', isUgCourse: true, loadError: true });
+        wx.showToast({ title: '课程数据加载失败，请重试', icon: 'none' });
+        return;
+      }
+      const course = ugService.getCatalogueCourse(options.ugId, universityCode);
       this.setData({
         course,
         typeLabel: course ? service.TYPE_LABELS[course.courseType] : '',
@@ -38,11 +48,13 @@ Page({
   },
 
   toggleFavorite() {
+    if (this.data.isUgCourse || !this.data.course) return;
     service.toggleFavorite(this.data.course.id);
     this.setData({ favorite: service.isFavorite(this.data.course.id) });
   },
 
   toggleCompleted() {
+    if (this.data.isUgCourse || !this.data.course) return;
     service.toggleCompleted(this.data.course.id);
     this.setData({ completed: service.getCompletedCourseIds().includes(this.data.course.id) });
   },

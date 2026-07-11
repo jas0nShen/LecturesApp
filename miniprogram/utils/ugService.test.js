@@ -2089,3 +2089,11 @@ test('HKU Translation exposes official BA syllabus courses', () => {
   assert(ugService.listMajorCourses(translation.id, major.id, { keyword: 'legal interpreting' }).some((course) => course.courseCode === 'CHIN2343'));
   assert(ugService.listMajorCourses(translation.id, major.id, { keyword: 'Journey to the West' }).some((course) => course.courseCode === 'CHIN2377'));
 });
+
+test('catalogue course detail resolves only the requested university shard', () => {
+  const cityu = ugService.listMajorCourses('CITYU-UG-BSCCS-42', 'CITYU-UG-BSCCS-42-M1')[0];
+  assert(cityu);
+  assert.equal(ugService.getCatalogueCourse(cityu.id, 'CITYU').courseCode, cityu.courseCode);
+  assert.equal(ugService.getCatalogueCourse(cityu.id).courseCode, cityu.courseCode);
+  assert.equal(ugService.getCatalogueCourse(cityu.id, 'HKU'), null);
+});

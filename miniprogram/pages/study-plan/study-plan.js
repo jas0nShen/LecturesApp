@@ -2,6 +2,8 @@ const service = require('../../utils/courseService');
 
 Page({
   data: {
+    supported: false,
+    unsupportedMessage: '',
     groups: [],
     suggestions: [],
     coreGapSummary: {
@@ -26,6 +28,11 @@ Page({
   },
 
   onShow() {
+    const capability = service.getPlanningCapability();
+    if (!capability.supported) {
+      this.setData({ supported: false, unsupportedMessage: capability.reason, groups: [], suggestions: [], coreGapSummary: { courseCount: 0, credits: 0, groups: [] }, review: { courseCount: 0, totalCredits: 0, completedCount: 0, favoriteCount: 0, noteCount: 0, noticeCount: 0, categoryStats: [], noticeCounts: {}, issueCodes: [], termLoads: [], loadSuggestions: [], notices: [] } });
+      return;
+    }
     const courses = service.getStudyPlanCourses();
     const review = service.analyzeStudyPlan();
     const suggestions = service.getStudyPlanSuggestions(5);
@@ -51,6 +58,7 @@ Page({
       };
     });
     this.setData({
+      supported: true,
       groups,
       suggestions,
       coreGapSummary,
@@ -65,6 +73,10 @@ Page({
 
   goCourses() {
     wx.switchTab({ url: '/pages/courses/courses' });
+  },
+
+  goSettings() {
+    wx.navigateTo({ url: service.buildOnboardingUrl() });
   },
 
   copyPlan() {

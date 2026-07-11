@@ -1,4 +1,12 @@
 <view class="page">
+  <view wx:if="{{!supported}}" class="section">
+    <view class="plan-kicker">PLANNING STATUS</view>
+    <view class="title">Study Plan 暂不可用</view>
+    <view class="subtitle">{{unsupportedMessage}}</view>
+    <view class="plan-export" bindtap="goCourses"><view><view class="export-title">去查看课程</view><view class="export-copy">浏览已公开的课程资料</view></view><view class="export-mark">→</view></view>
+    <view class="plan-export status-export" bindtap="goSettings"><view><view class="export-title">修改学校与专业</view><view class="export-copy">查看或更新你的课程范围</view></view><view class="export-mark">SET →</view></view>
+  </view>
+  <block wx:else>
   <view class="section">
     <view class="plan-kicker">FOUR-YEAR ROUTE</view>
     <view class="title">我的 Study Plan</view>
@@ -160,4 +168,5 @@
   </view>
 
   <view class="section add-course" bindtap="goCourses">＋ 从官方开课目录添加课程</view>
+  </block>
 </view>
