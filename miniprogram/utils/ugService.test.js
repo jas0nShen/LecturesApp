@@ -1,8 +1,18 @@
 const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
 const { test } = require('node:test');
 
 const ugService = require('./ugService');
 const ugCourseShards = require('./ugCourseShards');
+
+test('runtime UG shards are registered inside their own subpackage instead of statically required by the main package', () => {
+  const shardIndex = fs.readFileSync(path.join(__dirname, 'ugCourseShards.js'), 'utf8');
+  const hkuLoader = fs.readFileSync(path.join(__dirname, '..', 'subpackages', 'ug-data-hku', 'pages', 'loader', 'index.js'), 'utf8');
+
+  assert.doesNotMatch(shardIndex, /require\(['"]\.\.\/subpackages\//);
+  assert.match(hkuLoader, /registerUgCourseShard\(\{ universityCode, packageName, courses \}\)/);
+});
 
 test('UG catalogue summarizes current undergraduate seed data', () => {
   const summary = ugService.getCatalogueSummary();
