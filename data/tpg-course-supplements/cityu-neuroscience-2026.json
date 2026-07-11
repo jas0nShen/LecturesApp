@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-11",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-004",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-neuroscience/p98",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five Core Courses (15 credit units). The 2026 admissions page states that the new programme curriculum is subject to University approval.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-neuroscience/p98",
+          "courses": [
+            { "code": "NS5001", "name": "Research Methodology and Ethics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-neuroscience/p98" },
+            { "code": "NS5002", "name": "Neurobiology of Disease", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-neuroscience/p98" },
+            { "code": "NS5003", "name": "Neural Basis of Learning and Memory", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-neuroscience/p98" },
+            { "code": "NS5004", "name": "Molecular and Cellular Neuroscience", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-neuroscience/p98" },
+            { "code": "NS8002", "name": "Advanced Neuroscience", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-neuroscience/p98" }
+          ]
+        },
+        {
+          "id": "electives",
+          "name": "Elective Courses (including Research Project)",
+          "type": "elective_project",
+          "creditsRequired": 15,
+          "ruleText": "Complete 15 credit units from the official elective pool. NS6001 Research Project in Neuroscience carries 6 credit units, normally spans at most two semesters, and is subject to laboratory availability. Other electives may depend on enrolment or be offered every two years.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-neuroscience/p98",
+          "courses": [
+            { "code": "NS5005", "name": "Sensory and Motor Neuroscience", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-neuroscience/p98" },
+            { "code": "NS5006", "name": "Cognitive and Behavioral Neuroscience", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-neuroscience/p98" },
+            { "code": "NS5007", "name": "Human and Artificial Intelligence", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-neuroscience/p98" },
+            { "code": "NS5008", "name": "Neuropharmacology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-neuroscience/p98" },
+            { "code": "NS6001", "name": "Research Project in Neuroscience", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-neuroscience/p98" },
+            { "code": "NS6002", "name": "Advanced Computational Neuroscience", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-neuroscience/p98" },
+            { "code": "BMS8106", "name": "Stem Cell and Regenerative Medicine", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-neuroscience/p98" },
+            { "code": "BMS8110", "name": "Genomics and Bioinformatics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-neuroscience/p98" }
+          ]
+        }
+      ]
+    }
+  ]
+}

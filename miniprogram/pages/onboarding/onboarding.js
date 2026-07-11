@@ -22,6 +22,10 @@ function formatMajorOption(major = {}) {
   return major.nameZh || major.nameEn || major.code || 'Major 待确认';
 }
 
+function formatTpgTrackOption(track = {}) {
+  return track.name || track.type || 'Track 待确认';
+}
+
 function resolveInitialMode(profile, options = {}) {
   if (profile && profile.profileType === 'undergraduate') {
     return 'undergraduate';
@@ -53,6 +57,7 @@ function mergeProfileOptions(profile, options = {}) {
     universityId: decodeOption(options.universityId),
     universityCode: decodeOption(options.universityCode),
     programmeId: decodeOption(options.programmeId),
+    trackId: decodeOption(options.trackId),
     programmeName: decodeOption(options.programmeName),
     majorId: decodeOption(options.majorId),
     majorCode: decodeOption(options.majorCode),
@@ -163,6 +168,10 @@ Page({
     selectedTpgUniversity: INITIAL_TPG_UNIVERSITY,
     selectedTpgCoverage: null,
     selectedTpgProgramme: INITIAL_TPG_PROGRAMME,
+    tpgTracks: [],
+    tpgTrackOptions: [],
+    selectedTpgTrack: {},
+    tpgTrackIndex: 0,
     tpgCourseCount: 0,
     tpgCourseStatus: '',
     tpgSelectedIndexLabel: '',
@@ -170,7 +179,8 @@ Page({
     tpgEmptyCopy: '',
     savedTpgProfile: null,
     showTpgUniversitySheet: false,
-    showTpgProgrammeSheet: false
+    showTpgProgrammeSheet: false,
+    showTpgTrackSheet: false
   },
 
   async onLoad(options = {}) {
@@ -180,7 +190,7 @@ Page({
     const initialMode = resolveInitialMode(profile, options);
     const savedTpgProfile = tpgService.getProfileSummary(profile);
     const savedUgProfile = null;
-    this.loadTpg(profile);
+    await this.loadTpg(profile);
     this.setData({
       mode: initialMode,
       savedUgProfile,
@@ -228,8 +238,6 @@ Page({
       });
       return;
     }
-    const loaded = await this.ensureUgUniversityLoaded(selectedUniversity.code);
-    if (!loaded) return;
     const savedUgProfile = profile && profile.profileType === 'undergraduate'
       ? ugService.getMajorProfile(profile.programmeId, profile.majorId, profile.curriculumYear)
       : null;
@@ -278,7 +286,7 @@ Page({
     }
   },
 
-  loadTpg(profile) {
+  async loadTpg(profile) {
     const tpgUniversities = tpgService.listUniversities();
     const selectedTpgUniversity = tpgUniversities.find(
       (item) => item.code === (profile && profile.universityCode)
@@ -302,11 +310,41 @@ Page({
       });
       return;
     }
+    await this.ensureTpgUniversityLoaded(selectedTpgUniversity.code);
     const tpgProgrammes = tpgService.listProgrammes(selectedTpgUniversity.code);
     const selectedTpgProgramme = tpgProgrammes.find(
       (item) => item.id === (profile && profile.programmeId)
     ) || tpgProgrammes[0] || {};
     this.setTpgSelection(selectedTpgUniversity, tpgProgrammes, selectedTpgProgramme);
+  },
+
+  async ensureTpgUniversityLoaded(universityCode) {
+    const requestId = (this._tpgLoadRequestId || 0) + 1;
+    this._tpgLoadRequestId = requestId;
+    const app = typeof getApp === 'function' ? getApp() : {};
+    if (!universityCode || !app.ensureTpgUniversityLoaded) return true;
+    try {
+      await app.ensureTpgUniversityLoaded(universityCode);
+      return requestId === this._tpgLoadRequestId;
+    } catch (error) {
+      if (requestId === this._tpgLoadRequestId) {
+        wx.showModal({
+          title: '硕士课程数据加载失败',
+          content: 'Programme 选择仍可使用，但课程数量和 Track 课程需重新加载后确认。',
+          confirmText: '重新加载',
+          success: async (result) => {
+            if (!result.confirm || requestId !== this._tpgLoadRequestId || !app.retryTpgUniversityLoad) return;
+            try {
+              await app.retryTpgUniversityLoad(universityCode);
+              if (requestId === this._tpgLoadRequestId) this.loadTpg(service.getProfile());
+            } catch (retryError) {
+              wx.showToast({ title: '仍无法加载，请稍后再试', icon: 'none' });
+            }
+          }
+        });
+      }
+      return false;
+    }
   },
 
   selectMode(event) {
@@ -335,8 +373,6 @@ Page({
       wx.showToast({ title: '请选择你的学校', icon: 'none' });
       return;
     }
-    const loaded = await this.ensureUgUniversityLoaded(selectedUniversity.code);
-    if (!loaded) return;
     const programmes = ugService.listProgrammes({ universityId: selectedUniversity.id, degreeLevel: 'undergraduate' });
     this.setData({ showUgUniversitySheet: false });
     await this.setUgSelection(selectedUniversity, programmes, programmes[0] || {}, '');
@@ -407,8 +443,6 @@ Page({
 
   async applyUgProgrammeSelection(selectedProgramme = {}, profile = null, filteredUgProgrammes = this.data.filteredUgProgrammes) {
     const selectedUniversity = this.data.selectedUniversity || {};
-    const loaded = await this.ensureUgUniversityLoaded(selectedUniversity.code);
-    if (!loaded) return;
     const majors = selectedProgramme.id ? ugService.listMajors(selectedProgramme.id) : [];
     const selectedMajor = majors.find((item) => item.id === (profile && profile.majorId)) || majors[0] || {};
     const curriculumYears = selectedMajor.id
@@ -600,13 +634,14 @@ Page({
     this.selectTpgUniversityByIndex(index);
   },
 
-  selectTpgUniversityByIndex(index) {
+  async selectTpgUniversityByIndex(index) {
     const tpgUniversities = tpgService.listUniversities();
     const selectedTpgUniversity = tpgUniversities[index] || tpgUniversities[0] || {};
     if (!selectedTpgUniversity.code) {
       wx.showToast({ title: '请选择你的学校', icon: 'none' });
       return;
     }
+    await this.ensureTpgUniversityLoaded(selectedTpgUniversity.code);
     const tpgProgrammes = tpgService.listProgrammes(selectedTpgUniversity.code);
     this.setData({
       tpgUniversities,
@@ -631,6 +666,32 @@ Page({
 
   closeTpgProgrammeSheet() {
     this.setData({ showTpgProgrammeSheet: false });
+  },
+
+  openTpgTrackSheet() {
+    if (!this.data.tpgTracks.length) return;
+    this.setData({ showTpgTrackSheet: true });
+  },
+
+  closeTpgTrackSheet() {
+    this.setData({ showTpgTrackSheet: false });
+  },
+
+  selectTpgTrack(event) {
+    const index = Number(event.currentTarget.dataset.index);
+    const selectedTpgTrack = this.data.tpgTracks[index] || {};
+    const tpgCourseCount = tpgService.flattenCourses(
+      this.data.selectedTpgProgramme,
+      '',
+      selectedTpgTrack.id || ''
+    ).length;
+    this.setData({
+      selectedTpgTrack,
+      tpgTrackIndex: index,
+      showTpgTrackSheet: false,
+      tpgCourseCount,
+      tpgCourseStatus: tpgCourseCount ? `已录入 ${tpgCourseCount} 门课程` : 'Programme 索引已录入，课程清单待开放'
+    });
   },
 
   selectTpgProgrammeFromSheet(event) {
@@ -710,7 +771,7 @@ Page({
 
   decorateTpgProgrammes(programmes) {
     return programmes.map((programme) => {
-      const courseCount = tpgService.flattenCourses(programme).length;
+      const courseCount = tpgService.getStatus(programme).courseCount;
       return {
         ...programme,
         courseStatusLabel: courseCount ? `${courseCount} 门课程` : '课程清单待开放'
@@ -723,7 +784,20 @@ Page({
     const effectiveProgramme = selectedTpgProgramme && selectedTpgProgramme.id
       ? selectedTpgProgramme
       : filteredTpgProgrammes[0] || {};
-    const tpgCourseCount = tpgService.flattenCourses(effectiveProgramme).length;
+    const tpgTracks = tpgService.listTracks(effectiveProgramme);
+    const savedProfile = service.getProfile();
+    const selectedTpgTrack = tpgTracks.find((track) => (
+      effectiveProgramme.id === (savedProfile && savedProfile.programmeId)
+      && track.id === savedProfile.trackId
+    )) || {};
+    const loadedCourseCount = tpgService.flattenCourses(
+      effectiveProgramme,
+      '',
+      selectedTpgTrack.id || ''
+    ).length;
+    const tpgCourseCount = loadedCourseCount || (!selectedTpgTrack.id
+      ? tpgService.getStatus(effectiveProgramme).courseCount
+      : 0);
     const selectedIndex = filteredTpgProgrammes.findIndex((item) => item.id === effectiveProgramme.id);
     const tpgSchoolCoverage = Array.isArray(this.data.tpgSchoolCoverage) ? this.data.tpgSchoolCoverage : [];
     const selectedTpgCoverage = tpgSchoolCoverage.find((item) => item.code === selectedTpgUniversity.code) || null;
@@ -741,6 +815,10 @@ Page({
       tpgUniversityIndex: tpgUniversityIndex >= 0 ? tpgUniversityIndex : 0,
       tpgProgrammeIndex: selectedIndex >= 0 ? selectedIndex : 0,
       selectedTpgProgramme: effectiveProgramme,
+      tpgTracks,
+      tpgTrackOptions: tpgTracks.map(formatTpgTrackOption),
+      selectedTpgTrack,
+      tpgTrackIndex: selectedTpgTrack.id ? tpgTracks.findIndex((track) => track.id === selectedTpgTrack.id) : 0,
       tpgCourseCount,
       tpgCourseStatus: tpgCourseCount ? `已录入 ${tpgCourseCount} 门课程` : 'Programme 索引已录入，课程清单待开放',
       tpgEmptyTitle: hasSchoolProgrammes ? '没有找到匹配 Programme' : `${selectedTpgUniversity.shortName || selectedTpgUniversity.code} Programme 资料待开放`,
@@ -763,6 +841,12 @@ Page({
         wx.showToast({ title: '请选择 Programme', icon: 'none' });
         return;
       }
+      const tracks = this.data.tpgTracks;
+      const track = this.data.selectedTpgTrack;
+      if (tracks.length && !programme.trackSelectionOptional && !track.id) {
+        wx.showToast({ title: '请选择 Track', icon: 'none' });
+        return;
+      }
       service.saveProfile({
         profileType: 'tpg',
         universityCode: university.code,
@@ -770,9 +854,12 @@ Page({
         programmeId: programme.id,
         programmeName: programme.name,
         programmeCode: programme.programmeCode,
+        trackId: track.id || '',
+        trackName: track.name || '',
+        trackType: track.type || '',
         faculty: programme.faculty,
-        curriculumYear: university.academicYear,
-        creditsRequired: programme.creditsRequired,
+        curriculumYear: programme.academicYear || university.academicYear,
+        creditsRequired: tpgService.getCreditsRequired(programme, track.id || ''),
         courseCount: this.data.tpgCourseCount,
         sourceUrl: programme.sourceUrl || ''
       });

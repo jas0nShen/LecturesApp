@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-11",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-021",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p53",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [
+        { "id": "CITYU-TPG-021-AI", "name": "Artificial Intelligence", "type": "Stream", "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+        { "id": "CITYU-TPG-021-DATA-SCIENCE", "name": "Data Science", "type": "Stream", "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+        { "id": "CITYU-TPG-021-INFORMATION-SECURITY", "name": "Information Security", "type": "Stream", "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+        { "id": "CITYU-TPG-021-NO-CONCENTRATION", "name": "No declared concentration", "type": "Official study option", "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" }
+      ],
+      "courseGroups": [
+        {
+          "id": "core",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete all three Core Courses (9 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures",
+          "courses": [
+            { "code": "CS5222", "name": "Computer Networks and Internets", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS5351", "name": "Software Engineering", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS5481", "name": "Data Engineering", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" }
+          ]
+        },
+        {
+          "id": "elective-group-i",
+          "name": "Elective Courses — Group I",
+          "type": "elective_project_internship",
+          "creditsRequired": 3,
+          "ruleText": "Complete 21 elective credit units in total, including at least 3 credit units from Group I. Project and Research/Internship Project courses may carry 6 or 3 credit units as listed.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures",
+          "courses": [
+            { "code": "CS5487", "name": "Machine Learning: Principles and Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS6493", "name": "Natural Language Processing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS6535", "name": "Guided Study in Artificial Intelligence", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS5286", "name": "Algorithms & Techniques for Web Searching", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS5296", "name": "Cloud Computing: Theory and Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS5489", "name": "Machine Learning: Algorithms and Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS6536", "name": "Guided Study in Data Science", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS5293", "name": "Topics on Information Security", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS6290", "name": "Privacy-enhancing Technologies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS6537", "name": "Guided Study in Information Security", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS5188", "name": "Virtual Reality Technologies and Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS5367", "name": "Computer Games Design", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS6187", "name": "Vision and Language", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS6382", "name": "Algorithm Analysis and Game Theory", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS6487", "name": "Topics in Machine Learning", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS6520", "name": "Project", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS6521", "name": "Research/Internship Project", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS6538", "name": "Research/Internship Project", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" }
+          ]
+        },
+        {
+          "id": "elective-group-ii",
+          "name": "Elective Courses — Group II",
+          "type": "elective",
+          "ruleText": "Group II contributes to the 21-credit elective requirement. To claim a Stream, complete at least 12 credit units of that Stream's designated courses, including its Stream Core where applicable, and no more than 3 credit units from each other Stream. Otherwise select No declared concentration.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures",
+          "courses": [
+            { "code": "CS5491", "name": "Artificial Intelligence", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS5187", "name": "Vision and Image", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS5486", "name": "Intelligent Systems", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS5483", "name": "Data Warehousing and Data Mining", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS5488", "name": "Big Data Algorithms and Techniques", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS5285", "name": "Information Security for eCommerce", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS5288", "name": "Cryptography: Theory and Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS5294", "name": "Information Security Technology Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS5182", "name": "Computer Graphics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS5185", "name": "Multimedia Technologies and Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS5282", "name": "Practical Optimization Algorithms and Techniques", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS5348", "name": "Software Quality Engineering", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS6175", "name": "Virtual Reality and Game-Engine Technologies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "CS6491", "name": "Topics in Optimization and its Applications in Computer Science", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" },
+            { "code": "EC5001", "name": "Introduction to eCommerce", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures" }
+          ]
+        }
+      ]
+    }
+  ]
+}

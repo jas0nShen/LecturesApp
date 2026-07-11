@@ -6,7 +6,12 @@ const PAGE_PATH = path.join(__dirname, '..', 'miniprogram', 'pages', 'course-det
 
 function loadCourseDetailPage(app) {
   delete require.cache[require.resolve(PAGE_PATH)];
-  global.wx = { showToast: () => {} };
+  const storage = {};
+  global.wx = {
+    showToast: () => {},
+    getStorageSync: (key) => storage[key],
+    setStorageSync: (key, value) => { storage[key] = value; }
+  };
   global.getApp = () => app;
   let page;
   global.Page = (config) => {
@@ -40,4 +45,19 @@ test('undergraduate course detail exposes a retry after a package load failure',
   assert.equal(page.data.loadError, false);
   assert.equal(page.data.course.courseCode, 'ARCH1079');
   assert.equal(attempts, 2);
+});
+
+test('TPG course detail opens the selected programme course with per-course credits', async () => {
+  const page = loadCourseDetailPage({});
+
+  await page.onLoad({ tpgProgrammeId: 'POLYU-TPG-105', courseCode: 'SO5100' });
+
+  assert.equal(page.data.isTpgCourse, true);
+  assert.equal(page.data.course.courseCode, 'SO5100');
+  assert.equal(page.data.course.titleEn, 'Research Project');
+  assert.equal(page.data.course.credits, 6);
+  page.toggleFavorite();
+  assert.equal(page.data.favorite, true);
+  page.toggleCompleted();
+  assert.equal(page.data.completed, true);
 });

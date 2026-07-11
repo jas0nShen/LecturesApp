@@ -1,4 +1,9 @@
-<view wx:if="{{programme}}" class="page">
+<view wx:if="{{loadError}}" class="page pending">
+  <view class="pending-title">硕士课程数据加载失败</view>
+  <view class="pending-copy">请重新加载；已保存的 Programme、收藏和已修记录不会丢失。</view>
+  <button class="save-button" bindtap="retryLoad">重新加载</button>
+</view>
+<view wx:elif="{{programme}}" class="page">
   <view class="identity">
     <view class="identity-top">
       <view class="school-stamp">{{programme.universityCode}}</view>

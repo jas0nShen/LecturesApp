@@ -67,6 +67,12 @@
     >{{item.label}}</view>
   </view>
 
+  <view wx:if="{{courseSearchLoadError}}" class="empty">
+    <view class="empty-title">课程搜索数据加载失败</view>
+    <view class="empty-copy">Programme 名称仍可搜索；课程名称和代码结果可能不完整。</view>
+    <button class="secondary-button" bindtap="retryCourseSearchLoad">重新加载</button>
+  </view>
+
   <view class="result-head">
     <view>
       <view class="result-count">{{resultCount}} 个结果</view>

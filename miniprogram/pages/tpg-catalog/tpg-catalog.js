@@ -21,6 +21,7 @@ Page({
     resultScope: '全部学校',
     resultHint: '可按学校或关键词继续缩小范围',
     limitHint: '',
+    courseSearchLoadError: false,
     selectedProfile: null
   },
 
@@ -38,8 +39,10 @@ Page({
     this.refresh();
   },
 
-  selectUniversity(event) {
-    this.setData({ selectedUniversity: event.currentTarget.dataset.code });
+  async selectUniversity(event) {
+    const selectedUniversity = event.currentTarget.dataset.code;
+    this.setData({ selectedUniversity, courseSearchLoadError: false });
+    if (selectedUniversity !== ALL_SCHOOLS) await this.ensureCourseSearchData([selectedUniversity]);
     this.refresh();
   },
 
@@ -53,20 +56,23 @@ Page({
     this.refresh();
   },
 
-  commitKeywordSearch() {
+  async commitKeywordSearch() {
     const keyword = this.data.keyword.trim();
     if (!keyword) return;
     this.setData({
       searchHistory: courseService.recordTpgProgrammeSearch(keyword)
     });
+    await this.loadCourseSearchData();
+    this.refresh();
   },
 
-  useHistoryKeyword(event) {
+  async useHistoryKeyword(event) {
     const keyword = event.currentTarget.dataset.keyword || '';
     this.setData({
       keyword,
       searchHistory: courseService.recordTpgProgrammeSearch(keyword)
     });
+    await this.loadCourseSearchData();
     this.refresh();
   },
 
@@ -95,6 +101,44 @@ Page({
     wx.navigateTo({
       url: `/pages/tpg-programme/tpg-programme?id=${encodeURIComponent(summary.programme.id)}`
     });
+  },
+
+  async ensureCourseSearchData(universityCodes) {
+    const app = typeof getApp === 'function' ? getApp() : {};
+    if (!app.ensureTpgUniversityLoaded) return true;
+    try {
+      for (const code of universityCodes) await app.ensureTpgUniversityLoaded(code);
+      this.setData({ courseSearchLoadError: false });
+      return true;
+    } catch (error) {
+      this.setData({ courseSearchLoadError: true });
+      return false;
+    }
+  },
+
+  loadCourseSearchData() {
+    const selected = this.data.selectedUniversity;
+    const codes = selected === ALL_SCHOOLS
+      ? this.data.universities.map((item) => item.code)
+      : [selected];
+    return this.ensureCourseSearchData(codes);
+  },
+
+  async retryCourseSearchLoad() {
+    const app = typeof getApp === 'function' ? getApp() : {};
+    if (!app.retryTpgUniversityLoad) return this.loadCourseSearchData();
+    const selected = this.data.selectedUniversity;
+    const codes = selected === ALL_SCHOOLS
+      ? this.data.universities.map((item) => item.code)
+      : [selected];
+    try {
+      for (const code of codes) await app.retryTpgUniversityLoad(code);
+      this.setData({ courseSearchLoadError: false });
+      this.refresh();
+    } catch (error) {
+      this.setData({ courseSearchLoadError: true });
+      wx.showToast({ title: '课程搜索数据加载失败', icon: 'none' });
+    }
   },
 
   refresh() {

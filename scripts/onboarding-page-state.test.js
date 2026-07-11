@@ -11,12 +11,14 @@ function clone(value) {
 
 function loadOnboardingPage(profile = null, app = {}) {
   delete require.cache[require.resolve(ONBOARDING_PATH)];
+  const storageWrites = [];
+  const toasts = [];
   global.wx = {
     getStorageSync: (key) => (key === 'userProfile' ? profile : null),
-    setStorageSync: () => {},
+    setStorageSync: (key, value) => storageWrites.push({ key, value }),
     navigateTo: () => {},
     switchTab: () => {},
-    showToast: () => {},
+    showToast: (value) => toasts.push(value),
     showModal: () => {}
   };
   global.getApp = () => app;
@@ -31,6 +33,7 @@ function loadOnboardingPage(profile = null, app = {}) {
     };
   };
   require(ONBOARDING_PATH);
+  page.__events = { storageWrites, toasts };
   return page;
 }
 
@@ -50,24 +53,72 @@ test('first onboarding visit does not preselect a university or programme', asyn
   assert(page.data.tpgUniversities.length >= 8);
 });
 
-test('rapid undergraduate school switching ignores the stale package result', async () => {
-  let resolveHku;
-  const app = {
-    ensureUniversityLoaded(code) {
-      if (code === 'HKU') return new Promise((resolve) => { resolveHku = resolve; });
-      return Promise.resolve({ state: 'ready' });
-    }
-  };
-  const page = loadOnboardingPage(null, app);
+test('saved TPG Track is restored and switching to a no-Track Programme clears it', async () => {
+  const programmeId = 'EDUHK-TPG-DIR-MED';
+  const page = loadOnboardingPage({
+    profileType: 'tpg',
+    universityCode: 'EDUHK',
+    programmeId,
+    trackId: `${programmeId}-CTA`
+  });
+  await page.onLoad({ mode: 'tpg' });
+  assert.equal(page.data.selectedTpgProgramme.id, programmeId);
+  assert.equal(page.data.selectedTpgTrack.id, `${programmeId}-CTA`);
+  assert.equal(page.data.tpgTracks.length, 10);
+
+  const polyu = page.data.tpgUniversities.find((item) => item.code === 'POLYU');
+  const programmes = require('../miniprogram/utils/tpgService').listProgrammes('POLYU');
+  page.setTpgSelection(polyu, programmes, programmes.find((item) => item.id === 'POLYU-TPG-093'), '');
+  assert.equal(page.data.tpgTracks.length, 0);
+  assert.equal(page.data.selectedTpgTrack.id, undefined);
+});
+
+test('selecting a TPG Track refreshes the Track-specific course count', async () => {
+  const page = loadOnboardingPage();
+  await page.onLoad({ mode: 'tpg' });
+  const cityu = page.data.tpgUniversities.find((item) => item.code === 'CITYU');
+  const programmes = require('../miniprogram/utils/tpgService').listProgrammes('CITYU');
+  const programme = programmes.find((item) => item.id === 'CITYU-TPG-057');
+  page.setTpgSelection(cityu, programmes, programme, '');
+
+  assert.equal(page.data.tpgCourseCount, 20);
+  const noConcentrationIndex = page.data.tpgTracks.findIndex((track) => track.id === 'CITYU-TPG-057-NO-CONCENTRATION');
+  page.selectTpgTrack({ currentTarget: { dataset: { index: noConcentrationIndex } } });
+  assert.equal(page.data.tpgCourseCount, 24);
+  assert.equal(page.data.tpgCourseStatus, '已录入 24 门课程');
+});
+
+test('optional Concentrations can be saved empty while Award Paths remain required', async () => {
+  const tpgService = require('../miniprogram/utils/tpgService');
+  const optionalPage = loadOnboardingPage();
+  await optionalPage.onLoad({ mode: 'tpg' });
+  const hkust = optionalPage.data.tpgUniversities.find((item) => item.code === 'HKUST');
+  const programmes = tpgService.listProgrammes('HKUST');
+  optionalPage.setTpgSelection(hkust, programmes, programmes.find((item) => item.id === 'HKUST-TPG-036'), '');
+  optionalPage.save();
+  const optionalProfile = optionalPage.__events.storageWrites.find((item) => item.key === 'userProfile');
+  assert(optionalProfile);
+  assert.equal(optionalProfile.value.trackId, '');
+  assert.equal(optionalPage.__events.toasts.some((item) => item.title === '请选择 Track'), false);
+
+  const requiredPage = loadOnboardingPage();
+  await requiredPage.onLoad({ mode: 'tpg' });
+  const requiredHkust = requiredPage.data.tpgUniversities.find((item) => item.code === 'HKUST');
+  const requiredProgrammes = tpgService.listProgrammes('HKUST');
+  requiredPage.setTpgSelection(requiredHkust, requiredProgrammes, requiredProgrammes.find((item) => item.id === 'HKUST-TPG-044'), '');
+  requiredPage.save();
+  assert.equal(requiredPage.__events.toasts.at(-1).title, '请选择 Track');
+  assert.equal(requiredPage.__events.storageWrites.some((item) => item.key === 'userProfile'), false);
+});
+
+test('undergraduate school switching does not wait for course packages', async () => {
+  const page = loadOnboardingPage();
   await page.onLoad({});
   const hkuIndex = page.data.universities.findIndex((item) => item.code === 'HKU');
   const polyuIndex = page.data.universities.findIndex((item) => item.code === 'POLYU');
 
-  const staleRequest = page.selectUgUniversityByIndex(hkuIndex);
-  const currentRequest = page.selectUgUniversityByIndex(polyuIndex);
-  await currentRequest;
-  resolveHku({ state: 'ready' });
-  await staleRequest;
+  await page.selectUgUniversityByIndex(hkuIndex);
+  await page.selectUgUniversityByIndex(polyuIndex);
 
   assert.equal(page.data.selectedUniversity.code, 'POLYU');
 });

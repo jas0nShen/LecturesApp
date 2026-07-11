@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-11",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-009",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscoscm/structure/curriculum/",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "For cohorts 2025 and thereafter, complete all four Core Courses (12 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscoscm/structure/curriculum/",
+          "courses": [
+            { "code": "MS5313", "name": "Managerial Decision Modeling", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscoscm/structure/curriculum/" },
+            { "code": "MS5318", "name": "Predictive Analytics with Excel and R", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscoscm/structure/curriculum/" },
+            { "code": "MS6325", "name": "Operations Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscoscm/structure/curriculum/" },
+            { "code": "MS6721", "name": "Supply Chain Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscoscm/structure/curriculum/" }
+          ]
+        },
+        {
+          "id": "required-electives",
+          "name": "Required Elective Pool (including Internship Project)",
+          "type": "elective_internship",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Complete 18 credit units from the official required-elective pool. The programme structure permits no more than 6 credit units of other College of Business electives; those external electives are not enumerated here because the official curriculum page does not publish a fixed list. MS6324 is a 3-credit Internship Project for the current catalogue term.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscoscm/structure/curriculum/",
+          "courses": [
+            { "code": "MS5215", "name": "AI-Enhanced Business Analytics with Excel and Python", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscoscm/structure/curriculum/" },
+            { "code": "MS5223", "name": "Project Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscoscm/structure/curriculum/" },
+            { "code": "MS5225", "name": "Business Process Modeling and Simulation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscoscm/structure/curriculum/" },
+            { "code": "MS5314", "name": "Service Quality Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscoscm/structure/curriculum/" },
+            { "code": "MS5411", "name": "Healthcare Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscoscm/structure/curriculum/" },
+            { "code": "MS6211", "name": "Statistical Modeling in Risk Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscoscm/structure/curriculum/" },
+            { "code": "MS6233", "name": "E-logistics and Enterprise Resource Planning", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscoscm/structure/curriculum/" },
+            { "code": "MS6322", "name": "Transportation Logistics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscoscm/structure/curriculum/" },
+            { "code": "MS6323", "name": "Strategic Sourcing and Procurement", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscoscm/structure/curriculum/" },
+            { "code": "MS6324", "name": "Internship Project", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/current/course/MS6324.htm" },
+            { "code": "MS6722", "name": "Advanced Case Analysis for Supply Chain Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscoscm/structure/curriculum/" }
+          ]
+        }
+      ]
+    }
+  ]
+}

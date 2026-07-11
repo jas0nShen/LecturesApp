@@ -15,7 +15,7 @@
     <view class="meta-grid">
       <view>
         <view class="meta-label">Credits</view>
-        <view class="meta-value">{{course.credits}}</view>
+        <view class="meta-value">{{course.creditLabel || course.credits || '待确认'}}</view>
       </view>
       <view>
         <view class="meta-label">Semester</view>
@@ -32,7 +32,11 @@
     </view>
   </view>
 
-  <view wx:if="{{!isUgCourse}}" class="section action-row">
+  <view wx:if="{{!isUgCourse && !isTpgCourse}}" class="section action-row">
+    <view class="button secondary" bindtap="toggleFavorite">{{favorite ? '取消收藏' : '收藏课程'}}</view>
+    <view class="button" bindtap="toggleCompleted">{{completed ? '标记未修' : '标记已修'}}</view>
+  </view>
+  <view wx:if="{{isTpgCourse}}" class="section action-row">
     <view class="button secondary" bindtap="toggleFavorite">{{favorite ? '取消收藏' : '收藏课程'}}</view>
     <view class="button" bindtap="toggleCompleted">{{completed ? '标记未修' : '标记已修'}}</view>
   </view>

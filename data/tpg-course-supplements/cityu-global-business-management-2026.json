@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-11",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-008",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAGBM.htm",
+      "ruleReviewStatus": "verified",
+      "courseGroups": [
+        {
+          "id": "core",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 24,
+          "coursesRequired": 8,
+          "ruleText": "Complete all eight Core Courses (24 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAGBM.htm",
+          "courses": [
+            { "code": "AC5803", "name": "Financial Statement Analysis in Global Context", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAGBM.htm" },
+            { "code": "EF5043", "name": "Finance for the Global Manager", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAGBM.htm" },
+            { "code": "MGT5313", "name": "International Organizational Behavior", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAGBM.htm" },
+            { "code": "MGT6314", "name": "Global Human Resources Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAGBM.htm" },
+            { "code": "MGT6323", "name": "Cross-Cultural Negotiation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAGBM.htm" },
+            { "code": "MGT6325", "name": "Entrepreneurship & Intrapreneurship", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAGBM.htm" },
+            { "code": "MGT6326", "name": "Managing International Business", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAGBM.htm" },
+            { "code": "MGT6066", "name": "Business Ethics & Social Responsibility", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAGBM.htm" }
+          ]
+        },
+        {
+          "id": "core-elective",
+          "name": "Core Elective",
+          "type": "core_elective",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Choose one of the two Core Electives (3 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAGBM.htm",
+          "courses": [
+            { "code": "MGT6324", "name": "Doing Business in Asia", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAGBM.htm" },
+            { "code": "MGT6904", "name": "Overseas Business Discovery", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAGBM.htm" }
+          ]
+        },
+        {
+          "id": "elective",
+          "name": "Programme Electives",
+          "type": "elective",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Choose one Programme Elective (3 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAGBM.htm",
+          "courses": [
+            { "code": "MGT6202", "name": "Entrepreneurial Leadership", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAGBM.htm" },
+            { "code": "MGT6209", "name": "Transformative Collaboration", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAGBM.htm" },
+            { "code": "MGT6532", "name": "Organizational Development and Change", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAGBM.htm" },
+            { "code": "MGT6310", "name": "People Analytics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAGBM.htm" },
+            { "code": "MGT6514", "name": "Strategic Management and Business Policy", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAGBM.htm" },
+            { "code": "IS6200", "name": "Blockchain Technology and Business Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAGBM.htm" }
+          ]
+        }
+      ]
+    }
+  ]
+}

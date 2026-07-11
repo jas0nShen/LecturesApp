@@ -17,7 +17,7 @@ test('feedback template includes launch context without uploading local user dat
   assert(template.includes('版本：1.0.0'));
   assert(template.includes('学校：香港大学'));
   assert(template.includes('Programme：Master of Science in Artificial Intelligence (MSc(AI))'));
-  assert(template.includes('当前资料状态：课程结构已录入 · 22 门课程'));
+  assert(template.includes('当前资料状态：课程清单已录入，结构复核中 · 22 门课程'));
   assert(template.includes('数据补充模板：'));
   assert(template.includes('- 当前 Programme / Major：Master of Science in Artificial Intelligence (MSc(AI))'));
   assert(template.includes('不会自动上传本机资料、收藏、笔记或 Study Plan'));

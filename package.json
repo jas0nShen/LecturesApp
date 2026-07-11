@@ -10,14 +10,21 @@
     "import:hku:ug": "node scripts/import-hku-ug-programmes.js",
     "sync:ug-catalog": "node scripts/generate-ug-catalog.js",
     "status:ug-sources": "node scripts/report-ug-source-coverage.js",
-    "sync:tpg": "node scripts/generate-tpg-catalog.js",
+    "import:tpg-directories": "node scripts/import-tpg-directory-supplements.js",
+    "import:tpg-courses": "node scripts/import-tpg-course-supplements.js",
+    "check:tpg-directory-sync": "node scripts/import-tpg-directory-supplements.js --check",
+    "check:tpg-course-sync": "node scripts/import-tpg-course-supplements.js --check",
+    "check:tpg-catalog-sync": "node scripts/generate-tpg-catalog.js --check && node scripts/generate-tpg-course-shards.js --check",
+    "status:tpg-courses": "node scripts/report-tpg-course-coverage.js",
+    "status:catalogue": "node scripts/audit-programme-directory.js",
+    "sync:tpg": "node scripts/generate-tpg-catalog.js && node scripts/generate-tpg-course-shards.js",
     "sync:data": "node scripts/generate-mock-data.js",
     "check:release": "node scripts/check-release-readiness.js",
     "status:release": "node scripts/print-release-status.js",
     "check:ug-sync": "node scripts/generate-ug-catalog.js --check",
-    "check:ship": "npm run check:ug-sync && npm run check && npm run check:release",
+    "check:ship": "npm run check:ug-sync && npm run check:tpg-directory-sync && npm run check:tpg-course-sync && npm run check:tpg-catalog-sync && npm run check && npm run check:release",
     "test": "node --test",
-    "check": "node scripts/validate-data.js && node scripts/validate-ug-supplements.js && node server/index.js --check && node --test"
+    "check": "node scripts/validate-data.js && node scripts/validate-ug-supplements.js && node scripts/audit-programme-directory.js --check && node server/index.js --check && node --test"
   },
   "engines": {
     "node": ">=18"

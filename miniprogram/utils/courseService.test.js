@@ -41,6 +41,55 @@ test('Study Plan capability is limited to the built-in HKU BEng CompSc sample', 
   assert.equal(service.getPlanningCapability({ profileType: 'tpg', programmeId: 1 }).supported, false);
 });
 
+test('opening profile settings falls back to reLaunch when navigateTo fails', () => {
+  const calls = [];
+  const originalNavigateTo = global.wx.navigateTo;
+  const originalReLaunch = global.wx.reLaunch;
+  const originalShowToast = global.wx.showToast;
+  global.wx.navigateTo = ({ url, fail }) => {
+    calls.push({ type: 'navigateTo', url });
+    fail({ errMsg: 'navigateTo:fail page limit exceed' });
+  };
+  global.wx.reLaunch = ({ url }) => calls.push({ type: 'reLaunch', url });
+  global.wx.showToast = () => calls.push({ type: 'showToast' });
+
+  try {
+    const url = service.openOnboarding({
+      profileType: 'undergraduate',
+      universityId: 4,
+      universityCode: 'POLYU',
+      programmeId: 'POLYU-UG-12',
+      programmeName: 'A deliberately long programme name that should stay out of the route',
+      majorId: 'POLYU-UG-12-M1',
+      majorCode: 'APPLIED-MATHEMATICS',
+      curriculumYear: '2026',
+      currentYear: '1'
+    });
+    assert.equal(calls.length, 2);
+    assert.equal(calls[0].type, 'navigateTo');
+    assert.equal(calls[1].type, 'reLaunch');
+    assert.equal(calls[0].url, calls[1].url);
+    assert.equal(calls[0].url, url);
+    assert.equal(url.includes('programmeName='), false);
+    assert.equal(url.includes('universityCode=POLYU'), true);
+    assert.equal(url.includes('programmeId=POLYU-UG-12'), true);
+  } finally {
+    global.wx.navigateTo = originalNavigateTo;
+    global.wx.reLaunch = originalReLaunch;
+    global.wx.showToast = originalShowToast;
+  }
+});
+
+test('TPG Track is preserved in the profile settings route', () => {
+  const url = service.buildOnboardingUrl({
+    profileType: 'tpg',
+    universityCode: 'EDUHK',
+    programmeId: 'EDUHK-TPG-DIR-MED',
+    trackId: 'EDUHK-TPG-DIR-MED-CTA'
+  });
+  assert(url.includes('trackId=EDUHK-TPG-DIR-MED-CTA'));
+});
+
 test('local course filters match programme, major, type, prerequisite and keyword', () => {
   const courses = service.listCourses({
     programmeId: 1,
@@ -605,7 +654,9 @@ test('data status reports source coverage and freshness', () => {
 test('user data summary counts local records and clear removes every user key', () => {
   service.saveProfile({ programmeId: 1, curriculumYear: '2025-26' });
   service.toggleOfferingFavorite('COMP1117');
+  service.toggleTpgCourseFavorite('POLYU-TPG-090', 'COMP5521');
   service.toggleOfferingCompleted('COMP1117');
+  service.toggleTpgCourseCompleted('POLYU-TPG-090', 'COMP5521');
   service.saveStudyPlanItem('COMP1117', 1, '1');
   service.saveCourseNote('COMP1117', 'Remember this.');
   service.recordRecentlyViewed('COMP1117');
@@ -614,8 +665,8 @@ test('user data summary counts local records and clear removes every user key', 
 
   assert.deepEqual(service.getUserDataSummary(), {
     hasProfile: true,
-    favoriteCount: 1,
-    completedCount: 1,
+    favoriteCount: 2,
+    completedCount: 2,
     studyPlanCount: 1,
     noteCount: 1,
     recentCount: 1,
@@ -638,8 +689,10 @@ test('all declared local user keys are backup and restore aware', () => {
     'userProfile',
     'favoriteCourseIds',
     'favoriteOfferingCodes',
+    'favoriteTpgCourseKeys',
     'completedCourseIds',
     'completedOfferingCodes',
+    'completedTpgCourseKeys',
     'studyPlanItems',
     'recentlyViewedCourseCodes',
     'courseSearchHistory',
@@ -654,8 +707,10 @@ test('all declared local user keys are backup and restore aware', () => {
       userProfile: { universityCode: 'HKU', programmeId: 'hku-msc-cs' },
       favoriteCourseIds: [1],
       favoriteOfferingCodes: ['COMP1117'],
+      favoriteTpgCourseKeys: ['POLYU-TPG-090:COMP5521'],
       completedCourseIds: [2],
       completedOfferingCodes: ['COMP2113'],
+      completedTpgCourseKeys: ['POLYU-TPG-090:COMP5521'],
       studyPlanItems: [{ courseCode: 'COMP3278', year: 2, term: '1' }],
       recentlyViewedCourseCodes: ['COMP4801'],
       courseSearchHistory: ['security'],
@@ -670,4 +725,26 @@ test('all declared local user keys are backup and restore aware', () => {
     () => service.importUserData({ app: 'lectures-app', version: 1, data: { favoriteOfferingCodes: 'COMP1117' } }),
     /Invalid favoriteOfferingCodes/
   );
+});
+
+test('backup import accepts legacy TPG profiles and validates optional Track ownership', () => {
+  const programmeId = 'EDUHK-TPG-DIR-MED';
+  assert.equal(service.importUserData({
+    app: 'lectures-app', version: 1, data: { userProfile: { profileType: 'tpg', programmeId } }
+  }), true);
+  assert.equal(service.importUserData({
+    app: 'lectures-app', version: 1, data: {
+      userProfile: { profileType: 'tpg', programmeId, trackId: `${programmeId}-CTA` }
+    }
+  }), true);
+  assert.throws(() => service.importUserData({
+    app: 'lectures-app', version: 1, data: {
+      userProfile: { profileType: 'tpg', programmeId, trackId: 'POLYU-TRACK' }
+    }
+  }), /Invalid TPG track/);
+  assert.throws(() => service.importUserData({
+    app: 'lectures-app', version: 1, data: {
+      userProfile: { profileType: 'tpg', programmeId: 'MISSING' }
+    }
+  }), /Invalid TPG programme/);
 });

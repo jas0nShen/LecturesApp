@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-11",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-034",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [
+        { "id": "CITYU-TPG-034-MECHANICAL", "name": "Mechanical", "type": "Stream", "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66" },
+        { "id": "CITYU-TPG-034-ROBOTICS", "name": "Robotics", "type": "Stream", "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66" },
+        { "id": "CITYU-TPG-034-NUCLEAR", "name": "Nuclear", "type": "Stream", "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66" }
+      ],
+      "courseGroups": [
+        {
+          "id": "stream-core",
+          "name": "Stream Core Courses",
+          "type": "track_core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Core Courses assigned to the selected Stream (12 credit units). Students select a Stream when applying.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66",
+          "courses": [
+            { "code": "MNE6116", "name": "Applied Engineering Mechanics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66" },
+            { "code": "MNE6110", "name": "Mechanical Behaviour of Materials: From Metallic to Biomedical/ Biological Materials", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-034-MECHANICAL"], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66" },
+            { "code": "MNE6113", "name": "Advanced Thermo-fluid", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-034-MECHANICAL"], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66" },
+            { "code": "MNE6125", "name": "Engineering Methods", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-034-MECHANICAL"], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66" },
+            { "code": "MNE6007", "name": "Advanced Automation Technology", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-034-ROBOTICS"], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66" },
+            { "code": "MNE6126", "name": "Sensors for Robotics, AI, and Control Systems", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-034-ROBOTICS"], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66" },
+            { "code": "MNE6130", "name": "Modern Robotics", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-034-ROBOTICS"], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66" },
+            { "code": "MNE6131", "name": "Nuclear Reactor Systems, Safety and Waste Management", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-034-NUCLEAR"], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66" },
+            { "code": "MNE6132", "name": "Materials in Nuclear Engineering", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-034-NUCLEAR"], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66" },
+            { "code": "MNE6138", "name": "Fundamentals of Nuclear Engineering", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-034-NUCLEAR"], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66" }
+          ]
+        },
+        {
+          "id": "electives",
+          "name": "Elective Courses",
+          "type": "elective_project_dissertation",
+          "creditsRequired": 18,
+          "ruleText": "Choose either six taught elective courses, or MNE6008 Dissertation (9 credit units) plus three taught elective courses. The dissertation route normally extends the study duration to 1.5 years.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66",
+          "courses": [
+            { "code": "MNE5101", "name": "Principles of Nuclear Engineering", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66" },
+            { "code": "MNE5103", "name": "Risk and Reliability Engineering", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66" },
+            { "code": "MNE5112", "name": "Mechanical Design with Advanced Material & Additive Manufacturing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66" },
+            { "code": "MNE6001", "name": "CAD/CAM Integration", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66" },
+            { "code": "MNE6002", "name": "Computer Controlled Systems", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66" },
+            { "code": "MNE6005", "name": "Micro Systems Technology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66" },
+            { "code": "MNE6008", "name": "Dissertation", "credits": 9, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66" },
+            { "code": "MNE6115", "name": "Bio-inspired Robots", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66" },
+            { "code": "MNE6119", "name": "Electron Microscopy", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66" },
+            { "code": "MNE6124", "name": "Advanced Micro/Nano Robotics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66" },
+            { "code": "MNE6127", "name": "Microfluidics: From Fundamentals to Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66" },
+            { "code": "MNE6128", "name": "Advanced Machine Learning and Quantum Computation for Engineering", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66" },
+            { "code": "MNE6129", "name": "Sustainable Engineering Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66" },
+            { "code": "MNE6133", "name": "Physical Effects of Radiation Damage", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66" },
+            { "code": "MNE6134", "name": "Advanced Risk and Resilience Assessment", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66" },
+            { "code": "MNE6135", "name": "Two-phase Flow and Boiling Heat Transfer", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66" }
+          ]
+        }
+      ]
+    }
+  ]
+}

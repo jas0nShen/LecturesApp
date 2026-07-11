@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-11",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-003",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-003-BIOMEDICINE-RESEARCH",
+          "name": "Biomedicine Research Training Stream",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95"
+        },
+        {
+          "id": "CITYU-TPG-003-HEALTH-SCIENCES",
+          "name": "Health Sciences Training Stream",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95"
+        }
+      ],
+      "courseGroups": [
+        {
+          "id": "core",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Choose six of the eight Core Courses (18 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95",
+          "courses": [
+            { "code": "BMS5001", "name": "Common Diseases and Genomic Medicine", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95" },
+            { "code": "BMS5002", "name": "Infectious Disease Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95" },
+            { "code": "BMS5007", "name": "Pharmacology Principles in Drug Discovery and Development", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95" },
+            { "code": "BMS5008", "name": "Fundamental and Advanced Multi-omics Research", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95" },
+            { "code": "BMS5009", "name": "Ageing and the Science of Human Longevity", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95" },
+            { "code": "BMS5010", "name": "Artificial Intelligence in Health Science Research and Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95" },
+            { "code": "BMS5011", "name": "Wearable Technologies and Digital Medicine", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95" },
+            { "code": "BMS5012", "name": "Nutrition Science and Stress Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95" }
+          ]
+        },
+        {
+          "id": "biomedicine-research-project",
+          "name": "Biomedicine Research Training — Major Elective",
+          "type": "track_project",
+          "creditsRequired": 9,
+          "coursesRequired": 1,
+          "ruleText": "Biomedicine Research Training Stream students must complete BMS5100 (9 credit units), then choose one 3-credit elective from the Stream's official pool.",
+          "appliesToTrackIds": ["CITYU-TPG-003-BIOMEDICINE-RESEARCH"],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95",
+          "courses": [
+            { "code": "BMS5100", "name": "Research Project Study in Biomedical Sciences, Life Sciences and Relevant Disciplines", "credits": 9, "appliesToTrackIds": ["CITYU-TPG-003-BIOMEDICINE-RESEARCH"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95" }
+          ]
+        },
+        {
+          "id": "shared-stream-electives",
+          "name": "Shared Stream Elective Pool",
+          "type": "track_elective",
+          "ruleText": "These courses appear in both official Stream elective pools. Biomedicine Research Training students choose one 3-credit elective after BMS5100; Health Sciences Training students complete 12 credit units across the shared and Health Sciences pools.",
+          "appliesToTrackIds": ["CITYU-TPG-003-BIOMEDICINE-RESEARCH", "CITYU-TPG-003-HEALTH-SCIENCES"],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95",
+          "courses": [
+            { "code": "BIOS5801", "name": "Statistical Computing", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-003-BIOMEDICINE-RESEARCH", "CITYU-TPG-003-HEALTH-SCIENCES"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95" },
+            { "code": "BMS5013", "name": "Storytelling of Health Science Data with Analysis and Visualization", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-003-BIOMEDICINE-RESEARCH", "CITYU-TPG-003-HEALTH-SCIENCES"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95" },
+            { "code": "BMS8103", "name": "Cell and Molecular Biology Research", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-003-BIOMEDICINE-RESEARCH", "CITYU-TPG-003-HEALTH-SCIENCES"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95" },
+            { "code": "BMS8105", "name": "Biotherapy and Nanomedicine", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-003-BIOMEDICINE-RESEARCH", "CITYU-TPG-003-HEALTH-SCIENCES"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95" },
+            { "code": "BMS8106", "name": "Stem Cell and Regenerative Medicine", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-003-BIOMEDICINE-RESEARCH", "CITYU-TPG-003-HEALTH-SCIENCES"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95" },
+            { "code": "BMS8107", "name": "Cancer Biology and Precision Medicine", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-003-BIOMEDICINE-RESEARCH", "CITYU-TPG-003-HEALTH-SCIENCES"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95" },
+            { "code": "BMS8110", "name": "Genomics and Bioinformatics", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-003-BIOMEDICINE-RESEARCH", "CITYU-TPG-003-HEALTH-SCIENCES"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95" },
+            { "code": "BMS8111", "name": "Immunology and Infectious Diseases", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-003-BIOMEDICINE-RESEARCH", "CITYU-TPG-003-HEALTH-SCIENCES"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95" },
+            { "code": "BMS8113", "name": "Advanced Biomedical Materials and Devices", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-003-BIOMEDICINE-RESEARCH", "CITYU-TPG-003-HEALTH-SCIENCES"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95" }
+          ]
+        },
+        {
+          "id": "biomedicine-research-exclusive-electives",
+          "name": "Biomedicine Research Training — Additional Elective",
+          "type": "track_elective",
+          "ruleText": "This course is listed only in the Biomedicine Research Training Stream elective pool; quota and background conditions apply as stated by CityUHK.",
+          "appliesToTrackIds": ["CITYU-TPG-003-BIOMEDICINE-RESEARCH"],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95",
+          "courses": [
+            { "code": "BMS8112", "name": "Viruses, Immunity and Ageing", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-003-BIOMEDICINE-RESEARCH"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95" }
+          ]
+        },
+        {
+          "id": "health-sciences-exclusive-electives",
+          "name": "Health Sciences Training — Additional Elective Pool",
+          "type": "track_elective_project",
+          "ruleText": "Health Sciences Training Stream students complete 12 credit units across this pool and the Shared Stream Elective Pool. Departmental quotas, sufficient enrolment and possible timetable conflicts apply.",
+          "appliesToTrackIds": ["CITYU-TPG-003-HEALTH-SCIENCES"],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95",
+          "courses": [
+            { "code": "BIOS5800", "name": "Probability", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-003-HEALTH-SCIENCES"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95" },
+            { "code": "BIOS6900", "name": "Time Series Analysis", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-003-HEALTH-SCIENCES"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95" },
+            { "code": "BMS5101", "name": "Project Study in Management and Relevant Disciplines", "credits": 6, "appliesToTrackIds": ["CITYU-TPG-003-HEALTH-SCIENCES"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95" },
+            { "code": "MS5216", "name": "Decision Analytics", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-003-HEALTH-SCIENCES"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95" },
+            { "code": "MS5217", "name": "Statistical Data Analysis", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-003-HEALTH-SCIENCES"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95" },
+            { "code": "MS5411", "name": "Healthcare Management", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-003-HEALTH-SCIENCES"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95" },
+            { "code": "SYE5006", "name": "Operations Management", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-003-HEALTH-SCIENCES"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95" },
+            { "code": "SYE5010", "name": "Engineering Management Principles and Concepts", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-003-HEALTH-SCIENCES"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95" },
+            { "code": "SYE6009", "name": "Project Management", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-003-HEALTH-SCIENCES"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95" },
+            { "code": "SYE6012", "name": "Technological Innovation and Entrepreneurship", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-003-HEALTH-SCIENCES"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95" },
+            { "code": "SYE6037", "name": "Managing Strategic Quality", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-003-HEALTH-SCIENCES"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95" }
+          ]
+        }
+      ]
+    }
+  ]
+}

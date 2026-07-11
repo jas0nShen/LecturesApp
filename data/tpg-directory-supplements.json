@@ -1,0 +1,167 @@
+{
+  "lastVerifiedAt": "2026-07-11",
+  "universities": [
+    {
+      "code": "EDUHK",
+      "academicYear": "2026-27",
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "programmes": [
+        ["EMPAL", "Executive Master of Public Administration and Leadership"],
+        ["MA(BRBCA)", "Master of Arts in Belt and Road Business Communication and Administration"],
+        ["MA(CVBLE)", "Master of Arts in Chinese Values-Based Leadership Education"],
+        ["MA(CECI)", "Master of Arts in Comparative Education and Collaborative Innovation"],
+        ["MA(DHRMOM)", "Master of Arts in Digital Human Resource Management and Organisational Marketing"],
+        ["MA(DMEC)", "Master of Arts in Digital Marketing and E-Commerce"],
+        ["MA(ETFW)", "Master of Arts in Emerging Technology for Future Workforce"],
+        ["MA(ESM)", "Master of Arts in E-Sports Management"],
+        ["MA(GlobalHE)", "Master of Arts in Global Higher Education"],
+        ["MA(MLE)", "Master of Arts in Mindfulness and Life Education"],
+        ["MA(NMSM)", "Master of Arts in New Media and Social Media"],
+        ["MA(SRE)", "Master of Arts in Science and Robotics Education"],
+        ["MGM", "Master of Global Management", "2027-28"],
+        ["LLM(NSL)", "Master of Laws in National Security Law"],
+        ["LLM(DG)", "Master of Laws in Digital Governance"],
+        ["MM", "Master of Management", "2027-28"],
+        ["MOT", "Master of Occupational Therapy"],
+        ["MSc(AIEP)", "Master of Science in Artificial Intelligence for Executive Professionals"],
+        ["MSc(EdN)", "Master of Science in Educational Neuroscience"],
+        ["MSc(ESGSD)", "Master of Science in Environmental, Social and Governance for Sustainable Development"],
+        ["MEd", "Master of Education"],
+        ["MA(CFE)", "Master of Arts in Child and Family Education"],
+        ["MACSLE", "Master of Arts in Chinese Studies (Language Education)"],
+        ["MA(CHEM)", "Master of Arts in Cultural Heritage Education and Management"],
+        ["MADHCP", "Master of Arts in Digital Humanities for Cultural Professionals"],
+        ["MA(EfS)", "Master of Arts in Education for Sustainability"],
+        ["MA(EC)", "Master of Arts in Educational Counselling"],
+        ["MAGHE", "Master of Arts in Global Histories of Education"],
+        ["MA(GSE)", "Master of Arts in Global Studies in Education"],
+        ["MA(IECE)", "Master of Arts in Inclusive Early Childhood Education"],
+        ["MAICT", "Master of Arts in Intercultural Communication and Translation"],
+        ["MA(MP)", "Master of Arts in Mathematics and Pedagogy"],
+        ["MA(ME)", "Master of Arts in Music Education"],
+        ["MA(PFE)", "Master of Arts in Personal Finance Education"],
+        ["MA(PPE)", "Master of Arts in Positive Psychology in Education"],
+        ["MA(STEM Ed)", "Master of Arts in STEM Education"],
+        ["MATCIL", "Master of Arts in Teaching Chinese as an International Language"],
+        ["MATESOL", "Master of Arts in Teaching English to Speakers of Other Languages"],
+        ["MA(VAECP)", "Master of Arts in Visual Arts Education and Creative Practice"],
+        ["MPPM", "Master of Public Policy and Management"],
+        ["MSc(ADS)", "Master of Science in Applied Data Science"],
+        ["MSc(AI&EdTech)", "Master of Science in Artificial Intelligence and Educational Technology"],
+        ["MSc(EPM)-EN", "Master of Science in Education Policy and Management (English)"],
+        ["MSc(EPM)-ZH", "Master of Science in Education Policy and Management (Chinese)"],
+        ["MScESLPLD", "Master of Science in Educational Speech-Language Pathology and Learning Disabilities"],
+        ["MSc(LSSE)", "Master of Science in Learning Sciences and Smart Education"],
+        ["MSocSc(EP)", "Master of Social Sciences in Educational Psychology"],
+        ["MSocScP(SCS)", "Master of Social Sciences in Psychology (Schools and Community Settings)"],
+        ["MSocSc(SCM)", "Master of Social Sciences in Sports Coaching and Management"],
+        ["MSocSc(TPWB)", "Master of Social Sciences in Therapeutic Play and Well-Being"],
+        ["MTeach", "Master of Teaching"]
+      ]
+    },
+    {
+      "code": "LINGNAN",
+      "academicYear": "2026-27",
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "programmes": [
+        { "programmeCode": "08/000497/6", "name": "Master of Arts in Chinese", "tracks": [
+          { "code": "25/000001/L6", "name": "Global Chinese Studies", "type": "specialism" }
+        ] },
+        { "programmeCode": "08/000498/6", "name": "Master of Cultural Studies", "tracks": [
+          { "code": "22/001017/L6", "name": "Digital and Cultural Innovation", "type": "specialism" },
+          { "code": "25/001273/L6", "name": "Digital Media and Culture", "type": "specialism" }
+        ] },
+        { "programmeCode": "08/000500/6", "name": "Master of Science in International Banking and Finance" },
+        { "programmeCode": "08/000501/6", "name": "Master of Accountancy" },
+        { "programmeCode": "13/000684/L6", "name": "Master of Science in Marketing and International Business" },
+        { "programmeCode": "15/003341/L6", "name": "Master of Science in eBusiness and Supply Chain Management" },
+        { "programmeCode": "16/000107/L6", "name": "Master of Science in Finance" },
+        { "programmeCode": "16/000936/L6", "name": "Master of Science in Work and Organisational Psychology" },
+        { "programmeCode": "17/000204/L6", "name": "Master of Social Sciences in Comparative Social Policy (International)", "tracks": [
+          { "code": "25/000017/L6", "name": "Social Innovation", "type": "specialism" },
+          { "code": "25/000023/L6", "name": "Social Research", "type": "specialism" }
+        ] },
+        { "programmeCode": "17/000487/L6", "name": "Master of Arts in International Higher Education and Management", "tracks": [
+          { "code": "24/000294/L6", "name": "Managing Education Change in International Context", "type": "specialism" }
+        ] },
+        { "programmeCode": "17/001035/L6", "name": "Master of Arts in International Affairs" },
+        { "programmeCode": "18/000444/L6", "name": "Master of Science in International and Development Economics" },
+        { "programmeCode": "19/000062/L6", "name": "Master of Social Sciences in Organisational Psychology and Education Management" },
+        { "programmeCode": "19/000493/L6", "name": "Master of Social Sciences in Health and Social Services Management" },
+        { "programmeCode": "19/000888/L6", "name": "Master of Arts in Translation Studies" },
+        { "programmeCode": "19/001288/L6", "name": "Master of Cities and Governance", "tracks": [
+          { "code": "21/000488/L6", "name": "Environment and Sustainability", "type": "specialism" }
+        ] },
+        { "programmeCode": "20/000103/L6", "name": "Master of Arts in Curating and Art History" },
+        { "programmeCode": "20/000373/L6", "name": "Master of Science in Business Innovation and Entrepreneurship" },
+        { "programmeCode": "20/000658/L6", "name": "Master of Science in Artificial Intelligence and Business Analytics" },
+        { "programmeCode": "21/000086/L6", "name": "Master of Arts in Creative and Media Industries" },
+        { "programmeCode": "21/001281/L6", "name": "Master of Science in Health Analytics and Management" },
+        { "programmeCode": "22/000098/L6", "name": "Master of Arts in Social Entrepreneurship and Innovation Management", "tracks": [
+          { "code": "23/000254/L6", "name": "Art and Design for Social Impact", "type": "specialism" }
+        ] },
+        { "programmeCode": "22/000158/L6", "name": "Master of Social Sciences in Applied Psychology", "tracks": [
+          { "code": "23/000260/L6", "name": "Counselling Psychology", "type": "specialism" }
+        ] },
+        { "programmeCode": "22/000916/L6", "name": "Master of Social Sciences in Comparative Public Administration", "tracks": [
+          { "code": "24/000501/L6", "name": "Digital and Smart Governance", "type": "specialism" }
+        ] },
+        { "programmeCode": "22/001024/L6", "name": "Master of Arts in Arts and Cultural Heritage Management", "tracks": [
+          { "code": "22/001024/L6", "name": "Heritage Tourism and Management", "type": "specialism" },
+          { "code": "23/000255/L6", "name": "Cultural Management and Digital Future", "type": "specialism" }
+        ] },
+        { "programmeCode": "23/000221/L6", "name": "Master of Science in Arts Technology and Business" },
+        { "programmeCode": "23/000452/L6", "name": "Master of Science in Humanitarian Technology and Inclusive Business" },
+        { "programmeCode": "23/000472/L6", "name": "Master of Housing Policy and Management" },
+        { "programmeCode": "23/000864/L6", "name": "Master of Science in Environmental, Social, and Governance Management", "tracks": [
+          { "code": "24/000454/L6", "name": "Sustainable Technology", "type": "specialism" }
+        ] },
+        { "programmeCode": "24/000101/L6", "name": "Master of Science in Data Science" },
+        { "programmeCode": "24/000108/L6", "name": "Master of Arts in Digital History in Global Asia" },
+        { "programmeCode": "24/000242/L6", "name": "Master of Arts in Artificial Intelligence and the Future" },
+        { "programmeCode": "24/000463/L6", "name": "Master of Science in Sustainability and Environmental Analytics" },
+        { "programmeCode": "24/000464/L6", "name": "Master of Science in Cross-disciplinary Technologies+", "tracks": [
+          { "code": "25/000352/L6", "name": "Statistics and Data Analysis", "type": "specialism" },
+          { "code": "25/000353/L6", "name": "Product Design", "type": "specialism" },
+          { "code": "25/000354/L6", "name": "Business and Finance Management", "type": "specialism" },
+          { "code": "25/000355/L6", "name": "Renewable Energy Management", "type": "specialism" },
+          { "code": "25/000356/L6", "name": "Carbon Neutralisation and Sustainability", "type": "specialism" },
+          { "code": "25/000357/L6", "name": "Computer Science", "type": "specialism" },
+          { "code": "25/000358/L6", "name": "Digital Media Business Management", "type": "specialism" },
+          { "code": "25/000359/L6", "name": "International e-Business", "type": "specialism" },
+          { "code": "25/000360/L6", "name": "Automotive and Advanced Manufacturing", "type": "specialism" },
+          { "code": "25/000361/L6", "name": "Advanced Material Science", "type": "specialism" }
+        ] },
+        { "programmeCode": "24/000550/L6", "name": "Master of China and Regional Development Studies", "tracks": [
+          { "code": "24/000551/L6", "name": "China-Africa Studies", "type": "specialism" },
+          { "code": "24/000552/L6", "name": "China and East Asia Studies", "type": "specialism" },
+          { "code": "24/000553/L6", "name": "Greater Bay Area Studies", "type": "specialism" }
+        ] },
+        { "programmeCode": "24/000812/L6", "name": "Master of Science in Human Resource and Organisational Management", "tracks": [
+          { "code": "25/000384/L6", "name": "Human Resource Analytics and Digital Transformation", "type": "specialism" }
+        ] },
+        { "programmeCode": "25/000019/L6", "name": "Master of Science in Risk, Insurance and Actuarial Analytics" },
+        { "programmeCode": "25/000168/L6", "name": "Master of Management" },
+        { "programmeCode": "25/000294/L6", "name": "Master of Science in Industrial Data Analytics" },
+        { "programmeCode": "25/000304/L6", "name": "Master of Artificial Intelligence Studies", "tracks": [
+          { "code": "26/000453/L6", "name": "Chinese", "type": "medium" }
+        ] },
+        { "programmeCode": "25/000348/L6", "name": "Master of Research in Advanced Data Science" },
+        { "programmeCode": "25/000350/L6", "name": "Master of Science in Smart City Technologies and Applications" },
+        { "programmeCode": "25/000400/L6", "name": "Master of Business Studies" },
+        { "programmeCode": "25/000634/L6", "name": "Master of Arts in Digital English Studies" },
+        { "programmeCode": "25/000888/L6", "name": "Master of Liberal Sciences", "tracks": [
+          { "code": "25/000889/L6", "name": "Applied Sports and Health Science", "type": "specialism" },
+          { "code": "25/000890/L6", "name": "Music and Performance", "type": "specialism" },
+          { "code": "25/000891/L6", "name": "Applied Arts in TechMedia", "type": "specialism" }
+        ] },
+        { "programmeCode": "25/001304/L6", "name": "Master of Science in Global Humanitarian Innovation and Technology" },
+        { "programmeCode": "26/000201/L6", "name": "Master of Social Sciences in Sociology and Data Analytics" },
+        { "programmeCode": "26/000261/L6", "name": "Master of Smart Manufacturing" },
+        { "programmeCode": "", "name": "Master of Science in Smart Ageing and Gerontology", "sourceUrl": "https://scholars.ln.edu.hk/en/organisations/school-of-graduate-studies/" }
+      ]
+    }
+  ]
+}

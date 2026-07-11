@@ -1,4 +1,5 @@
 const catalogue = require('./tpgCatalog');
+const courseShards = require('./tpgCourseShards');
 
 const EMPTY_UNIVERSITY = {
   code: '',
@@ -18,11 +19,39 @@ function listUniversities() {
 function listProgrammes(universityCode) {
   return catalogue.programmes.filter(
     (programme) => !universityCode || programme.universityCode === universityCode
-  );
+  ).map(hydrateProgramme);
 }
 
 function getProgramme(programmeId) {
-  return catalogue.programmes.find((programme) => programme.id === programmeId) || null;
+  const programme = catalogue.programmes.find((item) => item.id === programmeId) || null;
+  return hydrateProgramme(programme);
+}
+
+function hydrateProgramme(programme) {
+  if (!programme || (Array.isArray(programme.courseGroups) && programme.courseGroups.length)) return programme;
+  if (!Number(programme.courseCount)) return programme;
+  const structure = courseShards.getProgrammesByUniversityCode(programme.universityCode).find((item) => item.id === programme.id);
+  return structure ? { ...programme, courseGroups: structure.courseGroups } : programme;
+}
+
+function listTracks(programmeOrId) {
+  const programme = typeof programmeOrId === 'string' ? getProgramme(programmeOrId) : programmeOrId;
+  return programme && Array.isArray(programme.tracks) ? programme.tracks : [];
+}
+
+function getTrack(programmeId, trackId) {
+  return listTracks(programmeId).find((track) => track.id === trackId) || null;
+}
+
+function isValidTrack(programmeId, trackId) {
+  if (!trackId) return true;
+  return Boolean(getTrack(programmeId, trackId));
+}
+
+function getCreditsRequired(programmeOrId, trackId = '') {
+  const programme = typeof programmeOrId === 'string' ? getProgramme(programmeOrId) : programmeOrId;
+  const track = programme && trackId ? getTrack(programme.id, trackId) : null;
+  return Number((track && track.creditsRequired) || (programme && programme.creditsRequired) || 0);
 }
 
 function getUniversity(universityCode) {
@@ -34,6 +63,31 @@ function getUniversity(universityCode) {
 
 function getProgrammeUniversity(programme) {
   return getUniversity(programme && programme.universityCode);
+}
+
+function resolveCourseCredits(course = {}) {
+  if (course.credits !== undefined && course.credits !== null && course.credits !== '' && Number.isFinite(Number(course.credits)) && Number(course.credits) >= 0) return Number(course.credits);
+  return null;
+}
+
+function resolveAuditCredits(course = {}) {
+  if (course.countsTowardProgrammeCredits === false) return 0;
+  if (course.programmeCredits !== undefined && Number.isFinite(Number(course.programmeCredits)) && Number(course.programmeCredits) >= 0) return Number(course.programmeCredits);
+  return resolveCourseCredits(course);
+}
+
+function getCourseCreditLabel(course = {}) {
+  const unit = course.creditUnit || 'credits';
+  if (course.credits !== undefined && course.credits !== null && course.credits !== '' && Number.isFinite(Number(course.credits)) && Number(course.credits) >= 0) return `${Number(course.credits)} ${unit}`;
+  if (Number(course.creditsMin) > 0 && Number(course.creditsMax) >= Number(course.creditsMin)) {
+    return course.creditsMin === course.creditsMax ? `${course.creditsMin} ${unit}` : `${course.creditsMin}–${course.creditsMax} ${unit}`;
+  }
+  return '学分待确认';
+}
+
+function appliesToTrack(item = {}, trackId = '') {
+  const trackIds = Array.isArray(item.appliesToTrackIds) ? item.appliesToTrackIds : [];
+  return trackIds.length === 0 || Boolean(trackId && trackIds.includes(trackId));
 }
 
 function buildProgrammeSourceText(programme) {
@@ -50,22 +104,39 @@ function buildProgrammeSourceText(programme) {
   ].filter(Boolean).join('\n');
 }
 
-function flattenCourses(programme, keyword = '') {
+function flattenCourses(programme, keyword = '', trackId = '') {
   if (!programme) return [];
   const normalized = normalizeKeyword(keyword);
-  return (programme.courseGroups || []).flatMap((group, groupIndex) => (
-    (group.courses || []).map((course, courseIndex) => ({
+  return (programme.courseGroups || []).filter((group) => appliesToTrack(group, trackId)).flatMap((group, groupIndex) => (
+    (group.courses || []).filter((course) => appliesToTrack(course, trackId)).map((course, courseIndex) => ({
       ...course,
       rowKey: `${groupIndex}-${course.code}-${courseIndex}`,
       groupName: group.name,
-      creditsRequired: group.creditsRequired,
+      credits: resolveCourseCredits(course),
+      creditStatus: course.credits !== undefined && course.credits !== null && Number.isFinite(Number(course.credits)) && Number(course.credits) >= 0 ? 'official' : Number(course.creditsMin) > 0 ? 'official_range' : 'unknown',
+      creditLabel: getCourseCreditLabel(course),
+      groupCreditsRequired: group.creditsRequired,
+      groupType: group.type || '',
+      ruleText: group.ruleText || '',
       searchableText: `${course.code} ${course.name} ${group.name}`.toLowerCase()
     }))
   )).filter((course) => !normalized || course.searchableText.includes(normalized));
 }
 
+function getProgrammeCourse(programmeId, courseCode, trackId = '') {
+  const programme = getProgramme(programmeId);
+  if (!programme) return null;
+  const normalizedCode = String(courseCode || '').trim().toUpperCase();
+  return flattenCourses(programme, '', trackId).find((course) => String(course.code || '').toUpperCase() === normalizedCode) || null;
+}
+
 function countCourses(programme) {
-  return flattenCourses(programme).length;
+  if (!programme) return 0;
+  if (!Array.isArray(programme.courseGroups) && Number.isFinite(Number(programme.courseCount))) return Number(programme.courseCount);
+  return (programme.courseGroups || []).reduce(
+    (total, group) => total + (Array.isArray(group.courses) ? group.courses.length : 0),
+    0
+  );
 }
 
 function hasCourseGroups(programme) {
@@ -75,16 +146,24 @@ function hasCourseGroups(programme) {
 function getStatus(programme) {
   const courseCount = countCourses(programme);
   const hasStructure = programme && programme.dataLevel === 'structure';
+  const isComplete = Boolean(programme && programme.courseVerificationStatus === 'verified' && courseCount > 0);
+  const isBlocked = Boolean(programme && ['blocked', 'archived'].includes(programme.courseVerificationStatus));
   return {
     courseCount,
     hasCourseGroups: courseCount > 0,
     hasStructure,
-    title: courseCount ? '课程结构已录入' : hasStructure ? '结构资料待拆分' : 'Programme 索引',
-    copy: courseCount
-      ? '以下必修与选修课程已从资料中录入，仍建议在选课前对照学校官网。'
+    isComplete,
+    isBlocked,
+    title: isComplete ? '课程结构已开放' : courseCount ? '课程清单已录入，结构复核中' : isBlocked ? '课程来源待解决' : hasStructure ? '结构资料待拆分' : 'Programme 索引',
+    copy: isComplete
+      ? '以下课程结构已按官方资料核验，正式选课前仍应对照学校系统。'
+      : courseCount
+        ? '课程代码可供浏览，但学分或分组规则尚未达到完整开放标准。'
       : hasStructure
         ? 'PDF 中包含部分结构信息，课程名称与分组仍在逐项整理。'
-        : '当前已确认 Programme 基本资料，必修与选修课程尚未完成核验。'
+        : isBlocked
+          ? programme.courseStatusNote || '当前官方来源不足，暂不生成课程结构。'
+          : '当前已确认 Programme 基本资料，必修与选修课程尚未完成核验。'
   };
 }
 
@@ -120,15 +199,17 @@ function getProfileSummary(profile) {
   const programme = getProgramme(profile.programmeId);
   const university = programme ? getProgrammeUniversity(programme) : getUniversity(profile.universityCode);
   const courseCount = programme ? countCourses(programme) : profile.courseCount || 0;
+  const track = programme && profile.trackId ? getTrack(programme.id, profile.trackId) : null;
   return {
     programme,
+    track,
     university,
     courseCount,
     schoolLabel: university.shortName || profile.universityName || profile.universityCode,
-    yearLabel: university.academicYear || profile.curriculumYear,
+    yearLabel: (programme && programme.academicYear) || university.academicYear || profile.curriculumYear,
     statusLabel: courseCount ? `已录入 ${courseCount} 门课程` : '课程清单待开放',
-    creditsLabel: programme && programme.creditsRequired
-      ? `${programme.creditsRequired} credits / units`
+    creditsLabel: programme && getCreditsRequired(programme, profile.trackId)
+      ? `${getCreditsRequired(programme, profile.trackId)} credits / units`
       : profile.creditsRequired
         ? `${profile.creditsRequired} credits / units`
         : '学分待确认'
@@ -176,6 +257,10 @@ module.exports = {
   buildProgrammeSourceText,
   flattenCourses,
   getProgramme,
+  getProgrammeCourse,
+  getTrack,
+  getCourseCreditLabel,
+  getCreditsRequired,
   getProgrammeUniversity,
   getProfileSummary,
   getSchoolCoverage,
@@ -184,6 +269,12 @@ module.exports = {
   hasCourseGroups,
   filterProgrammesByAvailability,
   listProgrammes,
+  listTracks,
   listUniversities,
-  searchProgrammes
+  isValidTrack,
+  appliesToTrack,
+  resolveCourseCredits,
+  resolveAuditCredits,
+  searchProgrammes,
+  hydrateProgramme
 };

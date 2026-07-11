@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-11",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-054",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/ma/programmes/postgraduate/msc-financial-mathematics-and-statistics-msfms",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five Core Courses (15 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/ma/programmes/postgraduate/msc-financial-mathematics-and-statistics-msfms",
+          "courses": [
+            { "code": "MA5616", "name": "Financial Mathematics in Derivative Markets", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/ma/programmes/postgraduate/msc-financial-mathematics-and-statistics-msfms" },
+            { "code": "MA5617", "name": "Statistical Data Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/ma/programmes/postgraduate/msc-financial-mathematics-and-statistics-msfms" },
+            { "code": "MA5618", "name": "Stochastic Analysis in Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/ma/programmes/postgraduate/msc-financial-mathematics-and-statistics-msfms" },
+            { "code": "MA6629", "name": "Advanced Stochastic Analysis in Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/ma/programmes/postgraduate/msc-financial-mathematics-and-statistics-msfms" },
+            { "code": "MA6633", "name": "Statistical Modelling for Data Mining", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/ma/programmes/postgraduate/msc-financial-mathematics-and-statistics-msfms" }
+          ]
+        },
+        {
+          "id": "electives",
+          "name": "Elective Courses (including Project / Dissertation)",
+          "type": "elective_project_dissertation",
+          "creditsRequired": 15,
+          "ruleText": "Select 15 or 16 credit units from the official elective pool. The normal award total is therefore 30 or 31 credit units. MA6616 Project carries 1 credit unit and MA6617 Dissertation carries 6 credit units; course availability is subject to the host department's final decision.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/ma/programmes/postgraduate/msc-financial-mathematics-and-statistics-msfms",
+          "courses": [
+            { "code": "BIOS6900", "name": "Time Series Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/ma/programmes/postgraduate/msc-financial-mathematics-and-statistics-msfms" },
+            { "code": "EF5042", "name": "Corporate Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/ma/programmes/postgraduate/msc-financial-mathematics-and-statistics-msfms" },
+            { "code": "MA5601", "name": "Applied Partial Differential Equations", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/ma/programmes/postgraduate/msc-financial-mathematics-and-statistics-msfms" },
+            { "code": "MA6612", "name": "Numerical Partial Differential Equations", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/ma/programmes/postgraduate/msc-financial-mathematics-and-statistics-msfms" },
+            { "code": "MA6616", "name": "Project", "credits": 1, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/ma/programmes/postgraduate/msc-financial-mathematics-and-statistics-msfms" },
+            { "code": "MA6617", "name": "Dissertation", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/ma/programmes/postgraduate/msc-financial-mathematics-and-statistics-msfms" },
+            { "code": "MA6622", "name": "Statistical Methods and Calibration in Finance and Actuarial Science", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/ma/programmes/postgraduate/msc-financial-mathematics-and-statistics-msfms" },
+            { "code": "MA6627", "name": "Stochastic Interest Rate Models", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/ma/programmes/postgraduate/msc-financial-mathematics-and-statistics-msfms" },
+            { "code": "MA6628", "name": "Programming and Computing in Financial Engineering", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/ma/programmes/postgraduate/msc-financial-mathematics-and-statistics-msfms" },
+            { "code": "MA6630", "name": "Introduction to Statistical Learning", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/ma/programmes/postgraduate/msc-financial-mathematics-and-statistics-msfms" },
+            { "code": "MA6631", "name": "Special Topics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/ma/programmes/postgraduate/msc-financial-mathematics-and-statistics-msfms" },
+            { "code": "MA6632", "name": "Statistical Analysis of Financial Big Data", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/ma/programmes/postgraduate/msc-financial-mathematics-and-statistics-msfms" },
+            { "code": "MA6634", "name": "Reinforcement Learning and Its Applications in Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/ma/programmes/postgraduate/msc-financial-mathematics-and-statistics-msfms" },
+            { "code": "MA6635", "name": "Mathematical Foundations of Data Science", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/ma/programmes/postgraduate/msc-financial-mathematics-and-statistics-msfms" }
+          ]
+        }
+      ]
+    }
+  ]
+}

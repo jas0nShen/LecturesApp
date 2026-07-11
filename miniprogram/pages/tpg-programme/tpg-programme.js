@@ -10,16 +10,27 @@ Page({
     statusCopy: '',
     hasCourseGroups: false,
     courseCount: 0,
-    isCurrentProgramme: false
+    isCurrentProgramme: false,
+    loadError: false,
+    programmeId: ''
   },
 
-  onLoad(options) {
+  async onLoad(options) {
     const id = decodeURIComponent(options.id || '');
-    const programme = tpgService.getProgramme(id);
+    this.setData({ programmeId: id, loadError: false });
+    let programme = tpgService.getProgramme(id);
     if (!programme) {
       wx.showToast({ title: 'Programme 不存在', icon: 'none' });
       return;
     }
+    const app = typeof getApp === 'function' ? getApp() : {};
+    try {
+      if (app.ensureTpgUniversityLoaded) await app.ensureTpgUniversityLoaded(programme.universityCode);
+    } catch (error) {
+      this.setData({ loadError: true });
+      return;
+    }
+    programme = tpgService.getProgramme(id);
 
     const university = tpgService.getProgrammeUniversity(programme);
     const status = tpgService.getStatus(programme);
@@ -32,6 +43,17 @@ Page({
       statusCopy: status.copy
     });
     this.refreshCurrentProgrammeState();
+  },
+
+  retryLoad() {
+    const programme = tpgService.getProgramme(this.data.programmeId);
+    const app = typeof getApp === 'function' ? getApp() : {};
+    if (!programme || !app.retryTpgUniversityLoad) return this.onLoad({ id: encodeURIComponent(this.data.programmeId) });
+    this.setData({ loadError: false });
+    app.retryTpgUniversityLoad(programme.universityCode).then(() => this.onLoad({ id: encodeURIComponent(this.data.programmeId) })).catch(() => {
+      this.setData({ loadError: true });
+      wx.showToast({ title: '暂时无法加载，请稍后重试', icon: 'none' });
+    });
   },
 
   onShow() {

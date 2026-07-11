@@ -76,7 +76,7 @@ Page({
   },
 
   goSettings() {
-    wx.navigateTo({ url: service.buildOnboardingUrl() });
+    service.openOnboarding();
   },
 
   copyPlan() {

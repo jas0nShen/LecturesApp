@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-11",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-030",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-engineering/department-of-materials-science-and-engineering/p58",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete all three Required Courses (9 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-engineering/department-of-materials-science-and-engineering/p58",
+          "courses": [
+            { "code": "MSE5301", "name": "Instrumentation for Materials Characterization", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSMEN2.htm" },
+            { "code": "MSE5303", "name": "Structure and Deformation of Materials", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSMEN2.htm" },
+            { "code": "MSE6265", "name": "Quantum Theory of Semiconductors", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSMEN2.htm" }
+          ]
+        },
+        {
+          "id": "electives",
+          "name": "Elective Courses",
+          "type": "elective_research",
+          "creditsRequired": 21,
+          "ruleText": "Complete 21 credit units of Elective Courses. MSE6309 Advanced Research carries 9 credit units and is intended for qualified students; other listed electives carry 3 credit units. Course availability may vary.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-engineering/department-of-materials-science-and-engineering/p58",
+          "courses": [
+            { "code": "MSE5304", "name": "Thermodynamics of Materials", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSMEN2.htm" },
+            { "code": "MSE6121", "name": "Thin Film Technology and Nanocrystalline Coatings", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSMEN2.htm" },
+            { "code": "MSE6176", "name": "Nanomaterials Design for Energy Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSMEN2.htm" },
+            { "code": "MSE6181", "name": "Photonics in Nanomaterial Systems and Devices", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSMEN2.htm" },
+            { "code": "MSE6182", "name": "Polymers and Composites and Nano-applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSMEN2.htm" },
+            { "code": "MSE6183", "name": "Computational Methods for Materials Science", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSMEN2.htm" },
+            { "code": "MSE6184", "name": "Biomedical Materials and Devices with Nano-applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSMEN2.htm" },
+            { "code": "MSE6185", "name": "Advanced Structural Materials", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSMEN2.htm" },
+            { "code": "MSE6187", "name": "Electrochemical Energy Storage", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSMEN2.htm" },
+            { "code": "MSE6266", "name": "Semiconductor Materials and Devices", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSMEN2.htm" },
+            { "code": "MSE6303", "name": "Corrosion and Surface Engineering", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSMEN2.htm" },
+            { "code": "MSE6309", "name": "Advanced Research", "credits": 9, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSMEN2.htm" },
+            { "code": "MSE8015", "name": "Theory and Practice of Transmission Electron Microscopy and Related Spectroscopy", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSMEN2.htm" },
+            { "code": "MSE8020", "name": "Structural Properties of Materials", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSMEN2.htm" },
+            { "code": "MSE8021", "name": "Kinetic and Thermodynamic Properties of Materials", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSMEN2.htm" }
+          ]
+        }
+      ]
+    }
+  ]
+}

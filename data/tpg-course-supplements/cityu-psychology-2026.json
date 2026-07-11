@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-11",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-048",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p76",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-048-APPLIED-PSYCHOLOGY",
+          "name": "Applied Psychology",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p76"
+        },
+        {
+          "id": "CITYU-TPG-048-EDUCATION",
+          "name": "Education",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p76"
+        }
+      ],
+      "courseGroups": [
+        {
+          "id": "common-core",
+          "name": "Common Core Courses",
+          "type": "core",
+          "creditsRequired": 21,
+          "ruleText": "Complete the common core requirements and either SS5799 Capstone Project in Psychology or, subject to approval, SS5798B Dissertation. The published alternative-credit path requires manual confirmation.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p76",
+          "courses": [
+            { "code": "SS5750", "name": "Perception and Cognition", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p76" },
+            { "code": "SS5752", "name": "Life Span Development", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p76" },
+            { "code": "SS5753", "name": "Advanced Social Psychology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p76" },
+            { "code": "SS5756", "name": "Biological Basis of Behavior", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p76" },
+            { "code": "SS5757", "name": "Personality Theories and Assessment", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p76" },
+            { "code": "SS5783", "name": "Psychological Research Design and Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p76" },
+            { "code": "SS5799", "name": "Capstone Project in Psychology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p76" },
+            { "code": "SS5798B", "name": "Dissertation", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p76" }
+          ]
+        },
+        {
+          "id": "applied-psychology-stream",
+          "name": "Applied Psychology Stream Courses",
+          "type": "track_core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Students in the Applied Psychology Stream take any 9 credit units from this list.",
+          "appliesToTrackIds": ["CITYU-TPG-048-APPLIED-PSYCHOLOGY"],
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p76",
+          "courses": [
+            { "code": "SS5755", "name": "Applying Psychology to Contemporary Issues", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p76" },
+            { "code": "SS5782", "name": "Psychopathology and Diagnosis of Mental Disorder", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p76" },
+            { "code": "SS5791", "name": "Advanced Health Psychology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p76" },
+            { "code": "SS5794", "name": "Psychological Testing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p76" }
+          ]
+        },
+        {
+          "id": "education-stream",
+          "name": "Education Stream Courses",
+          "type": "track_core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Students in the Education Stream take any 9 credit units from this list.",
+          "appliesToTrackIds": ["CITYU-TPG-048-EDUCATION"],
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p76",
+          "courses": [
+            { "code": "SS5751", "name": "Learning and Behavior", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p76" },
+            { "code": "SS5758", "name": "Educational Psychology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p76" },
+            { "code": "SS5759", "name": "Educational Assessment and Evaluation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p76" },
+            { "code": "SS5763", "name": "Special Topics in Psychology of Education", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p76" }
+          ]
+        }
+      ]
+    }
+  ]
+}

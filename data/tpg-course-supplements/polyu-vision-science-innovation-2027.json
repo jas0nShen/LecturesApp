@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "POLYU",
+  "academicYear": "2027-28",
+  "verifiedAt": "2026-07-11",
+  "programmes": [
+    {
+      "programmeId": "POLYU-TPG-105",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm",
+      "ruleReviewStatus": "verified",
+      "courseGroups": [
+        {
+          "id": "compulsory",
+          "name": "Compulsory Subjects",
+          "type": "core",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five Compulsory Subjects.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm",
+          "courses": [
+            { "code": "SO5001", "name": "Digital Health: Transforming Healthcare through Technology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm" },
+            { "code": "SO5002", "name": "Adaptive Technology in Vision Science", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm" },
+            { "code": "SO5003", "name": "Entrepreneurship in Ophthalmic Industry", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm" },
+            { "code": "SO5004", "name": "Principle and Practice of Ophthalmic Health Care", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm" },
+            { "code": "SO5005", "name": "Quantitative and Qualitative Research Methods", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm" }
+          ]
+        },
+        {
+          "id": "elective",
+          "name": "Elective Subjects",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Choose three Elective Subjects according to the student's background.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm",
+          "courses": [
+            { "code": "SO5006", "name": "Advanced Vision Science", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm" },
+            { "code": "SO5008", "name": "Cutting-edge Investigations in Eye and Biomedical Research", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm" },
+            { "code": "SO6006", "name": "Visual Neuroscience", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm" },
+            { "code": "SO5009", "name": "Contemporary Myopia Control and Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm" },
+            { "code": "BME5150", "name": "Medical Artificial Intelligence and Data Analytics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm" },
+            { "code": "COMP5511", "name": "Artificial Intelligence Concept", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm" },
+            { "code": "COMP5517", "name": "Human Computer Interface", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm" },
+            { "code": "COMP5523", "name": "Computer Vision and Image Processing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm" },
+            { "code": "COMP5554", "name": "Advanced Artificial Intelligence", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm" },
+            { "code": "HTI5052", "name": "Bioinformatics in Health Sciences", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm" },
+            { "code": "SD5116", "name": "Design for Transformation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm" },
+            { "code": "SD5132", "name": "Lab Studies in Human Cyber-Physical Systems", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm" },
+            { "code": "SD5414", "name": "Systemic Innovation and Designing Future Services", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm" }
+          ]
+        },
+        {
+          "id": "research-project",
+          "name": "Research Project",
+          "type": "project",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Complete the Research Project.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm",
+          "courses": [
+            { "code": "SO5100", "name": "Research Project", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm" }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Academic Integrity and Ethics",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete the compulsory AIE subject.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm",
+          "courses": [
+            { "code": "HTI5T04", "name": "Academic Integrity and Ethics (Health and Social Sciences)", "credits": 1, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm" }
+          ]
+        }
+      ]
+    }
+  ]
+}

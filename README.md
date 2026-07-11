@@ -73,6 +73,27 @@ npm run sync:tpg
 npm run check
 ```
 
+授课硕士课程结构按学校维护在 `data/tpg-course-supplements/`。候选提取结果不能直接发布；只有课程代码、名称、显式学分、分组规则、官方来源和核验日期齐全的 Programme 才可标记为 `verified`：
+
+```bash
+npm run import:tpg-courses
+npm run sync:tpg
+npm run status:tpg-courses
+npm run check:ship
+```
+
+覆盖报告将“已有课程行”和“完整课程结构”分开统计。未知学分不会默认按 3 学分累计，复杂路径规则会继续提示人工核对。
+
+EdUHK 与 Lingnan 的当前 TPG Programme 目录维护在 `data/tpg-directory-supplements.json`。更新官方目录后运行：
+
+```bash
+npm run import:tpg-directories
+npm run sync:tpg
+npm run status:catalogue -- --check
+```
+
+统一目录审计会报告本科 Programme/Major 与硕士 Programme/Track 的重复 ID、孤儿关系、缺失来源、缺失官方代码和招生年度问题。缺少公开代码只进入报告，不会自动生成代码。
+
 本科资料来自整理后的 Programme / Major JSON，并生成到小程序离线目录。当前本科目录用于选择学校、Programme 与 Major；只有已公开并复核到课程代码的项目会显示课程清单，未开放项目不生成毕业进度。重新生成本科目录可运行：
 
 ```bash

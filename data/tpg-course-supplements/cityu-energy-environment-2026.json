@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-11",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-057",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [
+        { "id": "CITYU-TPG-057-ENERGY", "name": "Energy", "type": "Stream", "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63" },
+        { "id": "CITYU-TPG-057-ENVIRONMENT", "name": "Environment", "type": "Stream", "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63" },
+        { "id": "CITYU-TPG-057-NO-CONCENTRATION", "name": "No declared concentration", "type": "Official study option", "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63" }
+      ],
+      "courseGroups": [
+        {
+          "id": "programme-core",
+          "name": "Programme Core Courses",
+          "type": "core",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Complete both Programme Core Courses (6 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63",
+          "courses": [
+            { "code": "SEE5114", "name": "Energy, Environment and Sustainable Development", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63" },
+            { "code": "SEE6201", "name": "Environmental and Energy Policy", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63" }
+          ]
+        },
+        {
+          "id": "stream-core",
+          "name": "Stream Core Courses",
+          "type": "track_core",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Take any 6 credit units. Energy or Environment Stream students must take the two courses of their declared Stream; students with no declared concentration may choose from all four courses.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63",
+          "courses": [
+            { "code": "SEE5211", "name": "Data Analysis in Environmental Applications", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-057-ENVIRONMENT", "CITYU-TPG-057-NO-CONCENTRATION"], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63" },
+            { "code": "SEE5212", "name": "Environmental Pollution: Theories, Measurement and Mitigation", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-057-ENVIRONMENT", "CITYU-TPG-057-NO-CONCENTRATION"], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63" },
+            { "code": "SEE6103", "name": "Energy Conversion: Theory and Methodology", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-057-ENERGY", "CITYU-TPG-057-NO-CONCENTRATION"], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63" },
+            { "code": "SEE6104", "name": "Energy Conservation and Audit", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-057-ENERGY", "CITYU-TPG-057-NO-CONCENTRATION"], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63" }
+          ]
+        },
+        {
+          "id": "electives",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 18,
+          "ruleText": "Take any 18 credit units. A declared Stream requires 6 credit units from that Stream's electives plus 12 credit units from any Stream or general electives. SEE6999 Dissertation carries 6 credit units. Availability depends on resources and enrolment.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63",
+          "courses": [
+            { "code": "SEE6118", "name": "Emerging Energy Technologies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63" },
+            { "code": "SEE6123", "name": "Electrochemical Energy Storage", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63" },
+            { "code": "SEE6124", "name": "Fuel Processing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63" },
+            { "code": "SEE6125", "name": "Carbon Capture Use and Storage", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63" },
+            { "code": "SEE6128", "name": "Renewable Energy Generation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63" },
+            { "code": "SEE5201", "name": "Air Pollution and Atmospheric Chemistry", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63" },
+            { "code": "SEE6203", "name": "Environmental Impact Assessment: Principles and Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63" },
+            { "code": "SEE6212", "name": "Environmental Modelling", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63" },
+            { "code": "SEE6213", "name": "Wastewater Engineering and Water Quality Assessment", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63" },
+            { "code": "SEE6214", "name": "Solid Waste Treatment and Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63" },
+            { "code": "SEE6224", "name": "Environmental Engineering Science", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63" },
+            { "code": "SEE5202", "name": "Climate Change: Science, Adaptation and Mitigation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63" },
+            { "code": "SEE6101", "name": "Energy Generation and Storage Systems", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63" },
+            { "code": "SEE6115", "name": "Carbon Audit and Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63" },
+            { "code": "SEE6122", "name": "Advanced Thermosciences for Energy Engineering", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63" },
+            { "code": "SEE6225", "name": "Environmental Assessment", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63" },
+            { "code": "SEE6999", "name": "Dissertation", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63" },
+            { "code": "LW6959", "name": "Energy and Environmental Law", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63" }
+          ]
+        }
+      ]
+    }
+  ]
+}

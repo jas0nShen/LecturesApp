@@ -97,6 +97,19 @@ Page({
         }
       }
     }
+    if (profile && profile.profileType === 'tpg') {
+      const programme = tpgService.getProgramme(profile.programmeId);
+      const universityCode = profile.universityCode || (programme && programme.universityCode);
+      if (universityCode && app.ensureTpgUniversityLoaded) {
+        try {
+          await app.ensureTpgUniversityLoaded(universityCode);
+        } catch (error) {
+          if (requestId !== this._requestId) return;
+          this.setData({ needsSetup: false, isTpg: false, isUgCatalogue: false, searching: false, dataSource: 'error', ugStatusTitle: '硕士课程数据加载失败', ugStatusCopy: '请重新加载；收藏、已修和本地资料不会丢失。' });
+          return;
+        }
+      }
+    }
     if (!profile) {
       if (requestId !== this._requestId) return;
       this.setData({
@@ -128,8 +141,8 @@ Page({
       : null;
     if (tpgProgramme) {
       const tpgUniversity = tpgService.getProgrammeUniversity(tpgProgramme);
-      const allCourses = tpgService.flattenCourses(tpgProgramme);
-      const tpgCourses = tpgService.flattenCourses(tpgProgramme, this.data.keyword);
+      const allCourses = tpgService.flattenCourses(tpgProgramme, '', profile.trackId || '');
+      const tpgCourses = tpgService.flattenCourses(tpgProgramme, this.data.keyword, profile.trackId || '');
       const status = tpgService.getStatus(tpgProgramme);
       if (requestId !== this._requestId) return;
       this.setData({
@@ -142,10 +155,8 @@ Page({
         tpgCourseCount: allCourses.length,
         tpgCourseCountDisplay: status.hasCourseGroups ? allCourses.length : '待开放',
         tpgCourseCountLabel: status.hasCourseGroups ? '已开放课程' : '课程清单',
-        tpgStatusTitle: status.hasCourseGroups ? '课程结构已开放' : '课程清单待开放',
-        tpgStatusCopy: status.hasCourseGroups
-          ? '这里显示你所选授课硕士 Programme 已拆分出的必修、选修或项目课程。'
-          : '这个 Programme 已进入资料库；课程组完成复核后会在这里显示。',
+        tpgStatusTitle: status.title,
+        tpgStatusCopy: status.copy,
         dataSource: 'catalogue',
         searching: false
       });
@@ -393,6 +404,15 @@ Page({
     wx.navigateTo({ url: `/pages/course-detail/course-detail?ugId=${event.currentTarget.dataset.id}&universityCode=${encodeURIComponent(universityCode || '')}` });
   },
 
+  goTpgCourseDetail(event) {
+    const programme = this.data.tpgProgramme;
+    const courseCode = event.currentTarget.dataset.code;
+    if (!programme || !courseCode) return;
+    wx.navigateTo({
+      url: `/pages/course-detail/course-detail?tpgProgrammeId=${encodeURIComponent(programme.id)}&courseCode=${encodeURIComponent(courseCode)}`
+    });
+  },
+
   goOfferingDetail(event) {
     wx.navigateTo({
       url: `/pages/offering-detail/offering-detail?code=${event.currentTarget.dataset.code}`
@@ -412,14 +432,23 @@ Page({
   },
 
   goOnboarding() {
-    wx.navigateTo({ url: service.buildOnboardingUrl() });
+    service.openOnboarding();
   },
 
   retryUgLoad() {
     const profile = service.getProfile();
+    const app = typeof getApp === 'function' ? getApp() : {};
+    if (profile && profile.profileType === 'tpg') {
+      const programme = tpgService.getProgramme(profile.programmeId);
+      const universityCode = profile.universityCode || (programme && programme.universityCode);
+      if (!universityCode || !app.retryTpgUniversityLoad) return this.refresh();
+      app.retryTpgUniversityLoad(universityCode).then(() => this.refresh()).catch(() => {
+        wx.showToast({ title: '暂时无法加载，请稍后重试', icon: 'none' });
+      });
+      return;
+    }
     const programme = profile && ugService.getProgramme(profile.programmeId);
     const universityCode = profile && (profile.universityCode || (programme && programme.universityCode));
-    const app = typeof getApp === 'function' ? getApp() : {};
     if (!universityCode || !app.retryUniversityLoad) return this.refresh();
     app.retryUniversityLoad(universityCode).then(() => this.refresh()).catch(() => {
       wx.showToast({ title: '暂时无法加载，请检查网络后重试', icon: 'none' });

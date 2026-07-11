@@ -237,6 +237,13 @@
   margin-left: 12rpx;
 }
 
+.tpg-course-completed {
+  color: #08785e;
+  font-weight: 700;
+  text-decoration: line-through;
+  text-decoration-color: rgba(8, 120, 94, 0.35);
+}
+
 .setup-card {
   background: #17352c;
   border-radius: 24rpx;

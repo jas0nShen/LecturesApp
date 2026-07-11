@@ -2,8 +2,8 @@
   <view class="section hero">
     <view>
       <view class="hero-kicker">COURSE DESK · {{profile.universityCode || 'TPG'}}</view>
-      <view class="title">先选择你的课程范围。</view>
-      <view class="subtitle">选择本科或授课硕士，保存学校与 Programme 后再查看课程资料状态。</view>
+      <view class="title">{{profile ? '已保存你的课程范围。' : '先选择你的课程范围。'}}</view>
+      <view class="subtitle">{{profile ? '点击“修改资料”可切换学校、Programme 或 Major；资料保存在本机。' : '选择本科或授课硕士，保存学校与 Programme 后再查看课程资料状态。'}}</view>
     </view>
   </view>
 
@@ -17,21 +17,15 @@
     </view>
   </view>
 
-  <view wx:else class="section panel">
+  <navigator wx:else class="section panel profile-edit-card" url="{{onboardingUrl}}" open-type="reLaunch" hover-class="profile-edit-card-active">
     <view class="row">
       <view>
         <view class="panel-title">{{profile.universityCode}} · {{isTpg ? 'TPG' : profile.majorCode}}</view>
         <view class="subtitle">{{profile.programmeName}}{{isTpg ? '' : ' · Year ' + profile.currentYear}}</view>
       </view>
-      <view class="edit-link" bindtap="goOnboarding">修改</view>
+      <view class="edit-link">修改资料</view>
     </view>
-  </view>
-
-  <view wx:if="{{ugLoadError}}" class="section panel">
-    <view class="panel-title">本科课程数据暂时无法加载</view>
-    <view class="subtitle">已保存的学校与专业没有丢失。请重新加载，或稍后再试。</view>
-    <view class="button" bindtap="retryUgLoad">重新加载</view>
-  </view>
+  </navigator>
 
   <view wx:if="{{profile && !isTpg}}" class="section grid">
     <view class="action-card" bindtap="goCourses">
@@ -50,7 +44,7 @@
       <view class="action-copy">保存想修的课程</view>
     </view>
     <view class="action-card" bindtap="goProfile">
-      <view class="action-index">04</view>
+      <view class="action-index">03</view>
       <view class="action-title">我的资料</view>
       <view class="action-copy">学校、专业、年级</view>
     </view>

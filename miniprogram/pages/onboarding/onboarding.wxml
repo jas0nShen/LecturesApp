@@ -202,16 +202,20 @@
     </view>
 
     <view wx:if="{{selectedTpgProgramme.id}}">
+      <view wx:if="{{tpgTracks.length}}" class="field">
+        <view class="label">Track</view>
+        <view class="select select-arrow" bindtap="openTpgTrackSheet">{{selectedTpgTrack.name || '请选择 Track'}}</view>
+      </view>
       <view class="programme-proof">
         <view class="proof-stamp">{{selectedTpgUniversity.code}}</view>
         <view class="proof-main">
           <view class="proof-label">当前数据状态</view>
           <view class="proof-value">{{tpgCourseStatus}}</view>
-          <view class="proof-meta">{{selectedTpgUniversity.academicYear}} · {{selectedTpgProgramme.creditsRequired ? selectedTpgProgramme.creditsRequired + ' credits / units' : '学分待确认'}}</view>
+          <view class="proof-meta">{{selectedTpgProgramme.academicYear || selectedTpgUniversity.academicYear}} · {{selectedTpgProgramme.creditsRequired ? selectedTpgProgramme.creditsRequired + ' credits / units' : '学分待确认'}}</view>
         </view>
       </view>
 
-      <view class="tpg-explain">授课硕士通常以 Programme 或 Stream 区分方向，因此不再额外套用本科 Major。</view>
+      <view class="tpg-explain">授课硕士方向按学校官方名称显示为 Track；没有官方 Stream、Specialism 或 Concentration 的 Programme 不创建占位 Track。</view>
 
       <view class="button-space tpg-actions">
         <view class="preview-button" bindtap="previewTpgProgramme">预览 Programme</view>
@@ -348,6 +352,25 @@
           class="sheet-option sheet-option-multiline {{tpgProgrammeIndex === index ? 'sheet-option-active' : ''}}"
           data-index="{{index}}"
           bindtap="selectTpgProgrammeFromSheet"
+        >{{item}}</view>
+      </scroll-view>
+    </view>
+  </view>
+
+  <view wx:if="{{showTpgTrackSheet}}" class="sheet-mask" bindtap="closeTpgTrackSheet">
+    <view class="sheet" catchtap="noop">
+      <view class="sheet-head">
+        <view class="sheet-cancel" bindtap="closeTpgTrackSheet">取消</view>
+        <view class="sheet-title">选择 Track</view>
+        <view class="sheet-placeholder"></view>
+      </view>
+      <scroll-view class="sheet-list" scroll-y>
+        <view
+          wx:for="{{tpgTrackOptions}}"
+          wx:key="*this"
+          class="sheet-option {{tpgTrackIndex === index ? 'sheet-option-active' : ''}}"
+          data-index="{{index}}"
+          bindtap="selectTpgTrack"
         >{{item}}</view>
       </scroll-view>
     </view>

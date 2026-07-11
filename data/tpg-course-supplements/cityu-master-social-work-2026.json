@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-11",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-047",
+      "status": "verified",
+      "creditsRequired": 55,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p71",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core",
+          "name": "Core Courses (including Fieldwork)",
+          "type": "core_fieldwork",
+          "creditsRequired": 49,
+          "coursesRequired": 15,
+          "ruleText": "Complete all 15 Core Courses (49 credit units), including two 8-credit fieldwork placements and three 1-credit practicum-related workshops.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p71",
+          "courses": [
+            { "code": "SS5111", "name": "Social Welfare Policy System and Reform", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p71" },
+            { "code": "SS5112", "name": "Social Welfare Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p71" },
+            { "code": "SS5114", "name": "Legal Issues for the Social Worker", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p71" },
+            { "code": "SS5117", "name": "Social Work as a Profession", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p71" },
+            { "code": "SS5209", "name": "Social Work Theories and Practice I: Working with Individuals and Families", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p71" },
+            { "code": "SS5210", "name": "Social Work Theories and Practice II: Working with Groups", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p71" },
+            { "code": "SS5211", "name": "Social Work Theories and Practice III: Community Work and Marco-level Social Work Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p71" },
+            { "code": "SS5212", "name": "Human Behaviour and Diversity", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p71" },
+            { "code": "SS5213", "name": "Social Work Research Methods", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p71" },
+            { "code": "SS6219", "name": "Practicum Related Workshop I", "credits": 1, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p71" },
+            { "code": "SS6220", "name": "Practicum Related Workshop II", "credits": 1, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p71" },
+            { "code": "SS6221", "name": "Practicum Related Workshop III", "credits": 1, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p71" },
+            { "code": "SS6291", "name": "Fieldwork I", "credits": 8, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p71" },
+            { "code": "SS6292", "name": "Fieldwork II", "credits": 8, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p71" },
+            { "code": "SS6293", "name": "Integrative Social Work Seminar", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p71" }
+          ]
+        },
+        {
+          "id": "electives",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 6,
+          "ruleText": "Complete 6 credit units from the credit-bearing elective pool. Course availability may vary.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p71",
+          "courses": [
+            { "code": "SS5110", "name": "Assessment and Interventions in Mental Health Counselling", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p71" },
+            { "code": "SS5208", "name": "Cognitive-Behavioural Interventions", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p71" },
+            { "code": "SS5215", "name": "Diversity and Social Work", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p71" },
+            { "code": "SS5216", "name": "Contemporary Intervention Approaches", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p71" },
+            { "code": "SS5802", "name": "Group Counselling and Therapy", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p71" },
+            { "code": "SS5803", "name": "Psychopathology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p71" },
+            { "code": "SS5821", "name": "Counselling Children and Youth", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p71" },
+            { "code": "SS5832", "name": "Counselling Older Adults", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p71" }
+          ]
+        },
+        {
+          "id": "conditional-non-credit",
+          "name": "Conditional Non-credit Workshop",
+          "type": "non_credit",
+          "ruleText": "SS5115 is required for students who are non-social-sciences graduates, or who studied either psychology or sociology but not the other. It carries zero credit units and does not satisfy the 6-credit elective requirement.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p71",
+          "courses": [
+            { "code": "SS5115", "name": "Social Sciences Theories for Social Work", "credits": 0, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p71" }
+          ]
+        }
+      ]
+    }
+  ]
+}

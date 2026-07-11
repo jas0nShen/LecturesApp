@@ -25,9 +25,9 @@ test('current mini-program passes automated release readiness checks', () => {
   assert(result.metrics.pageCount >= 10);
   assert.equal(result.metrics.offeringCount, 56);
   assert.equal(result.metrics.tpgSchoolCount, 8);
-  assert.equal(result.metrics.tpgProgrammeCount, 348);
-  assert.equal(result.metrics.tpgProgrammeWithCoursesCount, 7);
-  assert.equal(result.metrics.tpgCourseCount, 293);
+  assert.equal(result.metrics.tpgProgrammeCount, 448);
+  assert.equal(result.metrics.tpgProgrammeWithCoursesCount, 76);
+  assert.equal(result.metrics.tpgCourseCount, 1499);
   assert.equal(result.metrics.ugSchoolCount, 8);
   assert.equal(result.metrics.ugProgrammeCount, 444);
   assert.equal(result.metrics.ugMajorCount, 689);
@@ -36,7 +36,7 @@ test('current mini-program passes automated release readiness checks', () => {
   assert(result.metrics.packageBytes > 0);
   assert(result.metrics.mainPackageBytes > 0);
   assert(result.metrics.mainPackageBytes <= 2 * 1024 * 1024);
-  assert.equal(result.metrics.subpackageBytes.length, 8);
+  assert.equal(result.metrics.subpackageBytes.length, 12);
   assert(result.metrics.subpackageBytes.every((subpackage) => subpackage.bytes <= 2 * 1024 * 1024));
   assert.match(result.manualChecklist.reviewMaterial, /REVIEW_SUBMISSION/);
 });
@@ -76,7 +76,7 @@ test('WeChat review version description stays within the 200 character limit', (
 test('MVP spec documents the TPG launch scope without user-facing school lock-in', () => {
   const mvpSpec = fs.readFileSync(path.join(ROOT, 'docs', 'MVP_SPEC.md'), 'utf8');
   assert(mvpSpec.includes('授课硕士课程规划助手'));
-  assert(mvpSpec.includes('348 个 TPG Programme'));
+  assert(mvpSpec.includes('448 个 TPG Programme'));
   assert(mvpSpec.includes('本科 Programme / Major 目录'));
   assert(mvpSpec.includes('UG 目录至少包含 8 所学校'));
   assert(!mvpSpec.includes('多学校完整数据覆盖'));
@@ -376,7 +376,9 @@ test('undergraduate onboarding shows the saved local profile summary', () => {
   assert(onboardingLogic.includes("options.mode === 'undergraduate'"));
   assert(onboardingLogic.includes("options.mode === 'tpg'"));
   assert(onboardingLogic.includes('this._modeTouchedByUser = false'));
-  assert(onboardingLogic.includes('async onLoad(options = {})'));
+  assert(onboardingLogic.includes('onLoad(options = {})'));
+  assert(onboardingLogic.includes('this.loadUndergraduate(profile)'));
+  assert(!onboardingLogic.includes('onReady()'));
   assert(onboardingLogic.includes('const initialMode = resolveInitialMode(profile, options)'));
   assert(onboardingLogic.includes('onShow()'));
   assert(onboardingLogic.includes('if (this._modeTouchedByUser) return'));
@@ -409,11 +411,14 @@ test('undergraduate onboarding shows the saved local profile summary', () => {
 
 test('profile edit entry keeps the saved profile type when opening onboarding', () => {
   const serviceLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'utils', 'courseService.js'), 'utf8');
+  const homePage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'home', 'home.wxml'), 'utf8');
   assert(serviceLogic.includes('function buildOnboardingUrl(profile = getProfile())'));
   assert(serviceLogic.includes("universityCode: profile && profile.universityCode"));
   assert(serviceLogic.includes("programmeId: profile && profile.programmeId"));
   assert(serviceLogic.includes("majorId: profile && profile.majorId"));
   assert(serviceLogic.includes("return `/pages/onboarding/onboarding?${query || `mode=${mode}`}`"));
+  assert(serviceLogic.includes('function openOnboarding(profile = getProfile())'));
+  assert(homePage.includes('class="section panel profile-edit-card" url="{{onboardingUrl}}" open-type="reLaunch"'));
   [
     'home',
     'courses',
@@ -421,7 +426,7 @@ test('profile edit entry keeps the saved profile type when opening onboarding', 
     'profile'
   ].forEach((pageName) => {
     const pageLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', pageName, `${pageName}.js`), 'utf8');
-    assert(pageLogic.includes('service.buildOnboardingUrl()'), `${pageName} does not pass the saved profile to onboarding`);
+    assert(pageLogic.includes('service.openOnboarding()'), `${pageName} does not pass the saved profile to onboarding`);
   });
 });
 

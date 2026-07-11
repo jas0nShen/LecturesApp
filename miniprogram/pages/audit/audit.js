@@ -2,40 +2,49 @@ const service = require('../../utils/courseService');
 const tpgService = require('../../utils/tpgService');
 const ugService = require('../../utils/ugService');
 
-function buildTpgAudit(programme, university) {
-  const groups = (programme.courseGroups || []).map((group, groupIndex) => ({
+function buildTpgAudit(programme, university, trackId = '') {
+  const groups = (programme.courseGroups || []).filter((group) => tpgService.appliesToTrack(group, trackId)).map((group, groupIndex) => ({
     ...group,
-    courses: (group.courses || []).map((course, courseIndex) => ({
+    courses: (group.courses || []).filter((course) => tpgService.appliesToTrack(course, trackId)).map((course, courseIndex) => ({
       ...course,
-      rowKey: `${groupIndex}-${course.code}-${courseIndex}`
+      rowKey: `${groupIndex}-${course.code}-${courseIndex}`,
+      credits: tpgService.resolveAuditCredits(course),
+      creditStatus: course.credits !== undefined ? 'official' : course.creditsMin ? 'official_range' : 'unknown',
+      creditLabel: tpgService.getCourseCreditLabel(course),
+      completed: service.isTpgCourseCompleted(programme.id, course.code)
     })),
     courseCount: (group.courses || []).length
   }));
   const status = tpgService.getStatus(programme);
   const courseCount = status.courseCount;
-  const totalCredits = programme.creditsRequired || 0;
+  const totalCredits = tpgService.getCreditsRequired(programme, trackId);
+  const completedCourses = groups.flatMap((group) => group.courses).filter((course) => course.completed);
+  const completedCredits = completedCourses.reduce((sum, course) => sum + (course.credits || 0), 0);
+  const unknownCompletedCredits = completedCourses.filter((course) => course.creditStatus !== 'official').length;
+  const canCalculateRemaining = status.isComplete && totalCredits > 0 && unknownCompletedCredits === 0;
+  const remainingCredits = canCalculateRemaining ? Math.max(0, totalCredits - completedCredits) : null;
   const snapshot = [
     {
-      label: '毕业学分 / units',
-      value: totalCredits || '--',
-      state: totalCredits ? '已收录' : '待确认'
+      label: '已修学分',
+      value: completedCredits,
+      state: unknownCompletedCredits ? `${unknownCompletedCredits} 门学分未知未计入` : totalCredits ? `共需 ${totalCredits}` : '总要求待确认'
     },
     {
-      label: '已拆课程',
-      value: courseCount,
-      state: status.hasCourseGroups ? '可查看' : '待开放'
+      label: '剩余学分',
+      value: remainingCredits === null ? '--' : remainingCredits,
+      state: canCalculateRemaining ? '按已核验规则估算' : '规则或学分需人工核对'
     },
     {
-      label: '资料年份',
-      value: university.academicYear || '待确认',
-      state: programme.sourceUrl ? '可追溯' : '本地 PDF'
+      label: '已修课程',
+      value: completedCourses.length,
+      state: `共 ${courseCount} 门可选`
     }
   ];
   const nextChecks = status.hasCourseGroups
     ? [
         '查看已拆出的必修/选修课程组',
         '对照 Programme Handbook 与学校选课系统',
-        '后续版本再开放逐门完成度勾选'
+        '点击下方课程记录已修状态'
       ]
     : [
         '先确认 Programme 与官方来源是否匹配',
@@ -50,11 +59,14 @@ function buildTpgAudit(programme, university) {
     nextChecks,
     courseCount,
     totalCredits,
+    completedCourseCount: completedCourses.length,
+    completedCredits,
+    remainingCredits,
+    unknownCompletedCredits,
+    needsManualReview: !status.isComplete || programme.ruleReviewStatus === 'manual_review_required' || unknownCompletedCredits > 0,
     hasCourseGroups: status.hasCourseGroups,
-    statusTitle: status.hasCourseGroups ? '课程结构已录入' : '课程清单待开放',
-    statusCopy: status.hasCourseGroups
-      ? '已展示从资料中拆出的课程组。正式选课前，仍建议与学校官网及 Programme Handbook 对照。'
-      : '目前先确认学校、Programme 与资料来源；课程组尚未开放前，暂不生成毕业完成度。',
+    statusTitle: status.title,
+    statusCopy: status.copy,
     detailEntryCopy: status.hasCourseGroups
       ? `${courseCount} 门课程已开放 · 点击查看 Programme 详情`
       : '点击查看 Programme 来源、学分与收录状态',
@@ -113,6 +125,20 @@ Page({
         }
       }
     }
+    if (profile.profileType === 'tpg') {
+      const programme = tpgService.getProgramme(profile.programmeId);
+      const universityCode = profile.universityCode || (programme && programme.universityCode);
+      const app = typeof getApp === 'function' ? getApp() : {};
+      if (universityCode && app.ensureTpgUniversityLoaded) {
+        try {
+          await app.ensureTpgUniversityLoaded(universityCode);
+        } catch (error) {
+          if (requestId !== this._requestId) return;
+          this.setData({ needsSetup: false, isTpg: false, tpgAudit: null, isUgCatalogue: false, ugAudit: null, dataSource: 'error' });
+          return;
+        }
+      }
+    }
 
     const tpgProgramme = profile && profile.profileType === 'tpg'
       ? tpgService.getProgramme(profile.programmeId)
@@ -121,7 +147,7 @@ Page({
       this.setData({
         needsSetup: false,
         isTpg: true,
-        tpgAudit: buildTpgAudit(tpgProgramme, tpgService.getProgrammeUniversity(tpgProgramme)),
+        tpgAudit: buildTpgAudit(tpgProgramme, tpgService.getProgrammeUniversity(tpgProgramme), profile.trackId || ''),
         isUgCatalogue: false,
         ugAudit: null,
         dataSource: 'catalogue'
@@ -172,6 +198,16 @@ Page({
     wx.navigateTo({ url: '/pages/completed-courses/completed-courses' });
   },
 
+  toggleTpgCourseCompleted(event) {
+    const programme = this.data.tpgAudit && this.data.tpgAudit.programme;
+    const courseCode = event.currentTarget.dataset.code;
+    if (!programme || !courseCode) return;
+    service.toggleTpgCourseCompleted(programme.id, courseCode);
+    this.setData({
+      tpgAudit: buildTpgAudit(programme, this.data.tpgAudit.university, (service.getProfile() || {}).trackId || '')
+    });
+  },
+
   copyCurriculumSource() {
     wx.setClipboardData({
       data: this.data.audit.curriculumSourceUrl,
@@ -194,14 +230,23 @@ Page({
   },
 
   goOnboarding() {
-    wx.navigateTo({ url: service.buildOnboardingUrl() });
+    service.openOnboarding();
   },
 
   retryUgLoad() {
     const profile = service.getProfile();
+    const app = typeof getApp === 'function' ? getApp() : {};
+    if (profile && profile.profileType === 'tpg') {
+      const programme = tpgService.getProgramme(profile.programmeId);
+      const universityCode = profile.universityCode || (programme && programme.universityCode);
+      if (!universityCode || !app.retryTpgUniversityLoad) return this.refresh();
+      app.retryTpgUniversityLoad(universityCode).then(() => this.refresh()).catch(() => {
+        wx.showToast({ title: '暂时无法加载，请稍后重试', icon: 'none' });
+      });
+      return;
+    }
     const programme = profile && ugService.getProgramme(profile.programmeId);
     const universityCode = profile && (profile.universityCode || (programme && programme.universityCode));
-    const app = typeof getApp === 'function' ? getApp() : {};
     if (!universityCode || !app.retryUniversityLoad) return this.refresh();
     app.retryUniversityLoad(universityCode).then(() => this.refresh()).catch(() => {
       wx.showToast({ title: '暂时无法加载，请稍后重试', icon: 'none' });

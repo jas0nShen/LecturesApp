@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-11",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-052",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-science/department-of-physics/p50",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Core Courses (12 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/phy/taught-postgraduate/msc-physics/course-descriptions",
+          "courses": [
+            { "code": "PHY5503", "name": "Introduction to Quantum Technology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/phy/taught-postgraduate/msc-physics/course-descriptions" },
+            { "code": "PHY5504", "name": "Data Acquisition and Processing Skills for Physicists I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/phy/taught-postgraduate/msc-physics/course-descriptions" },
+            { "code": "PHY6604", "name": "Machine Learning in Physics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/phy/taught-postgraduate/msc-physics/course-descriptions" },
+            { "code": "PHY6505", "name": "Modern Topics in Physics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/phy/taught-postgraduate/msc-physics/course-descriptions" }
+          ]
+        },
+        {
+          "id": "electives",
+          "name": "Elective Courses",
+          "type": "elective_research",
+          "creditsRequired": 18,
+          "ruleText": "Complete 18 credit units from the Elective Courses. PHY6528 Advanced Research in Physics carries 9 credit units and is intended for motivated students; all other listed electives carry 3 credit units. Course offering varies by term.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/phy/taught-postgraduate/msc-physics/course-descriptions",
+          "courses": [
+            { "code": "PHY5501", "name": "Modern Characterization Techniques for Materials Physics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/phy/taught-postgraduate/msc-physics/course-descriptions" },
+            { "code": "PHY5502", "name": "Frontiers in Physics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/phy/taught-postgraduate/msc-physics/course-descriptions" },
+            { "code": "PHY5505", "name": "Data Acquisition and Processing Skills for Physicists II", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/phy/taught-postgraduate/msc-physics/course-descriptions" },
+            { "code": "PHY5506", "name": "Data Analysis and Modelling in Physics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/phy/taught-postgraduate/msc-physics/course-descriptions" },
+            { "code": "PHY5507", "name": "Physical Methods in Financial Data Modelling", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/phy/taught-postgraduate/msc-physics/course-descriptions" },
+            { "code": "PHY6180", "name": "Modern Scattering Methods in Materials Science", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/phy/taught-postgraduate/msc-physics/course-descriptions" },
+            { "code": "PHY6251", "name": "Advanced Quantum Mechanics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/phy/taught-postgraduate/msc-physics/course-descriptions" },
+            { "code": "PHY6252", "name": "Statistical Mechanics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/phy/taught-postgraduate/msc-physics/course-descriptions" },
+            { "code": "PHY6253", "name": "Introduction to Biophysics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/phy/taught-postgraduate/msc-physics/course-descriptions" },
+            { "code": "PHY6255", "name": "Introduction to Quantum Optics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/phy/taught-postgraduate/msc-physics/course-descriptions" },
+            { "code": "PHY6501", "name": "Advanced Instrumentation and Measurement Methods for Experimental Physics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/phy/taught-postgraduate/msc-physics/course-descriptions" },
+            { "code": "PHY6502", "name": "Advanced Computational Methods for Simulation and Modelling", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/phy/taught-postgraduate/msc-physics/course-descriptions" },
+            { "code": "PHY6503", "name": "Mathematical Methods for Scientists and Engineers", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/phy/taught-postgraduate/msc-physics/course-descriptions" },
+            { "code": "PHY6504", "name": "Physics at Nanoscale", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/phy/taught-postgraduate/msc-physics/course-descriptions" },
+            { "code": "PHY6506", "name": "Advanced Electrodynamics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/phy/taught-postgraduate/msc-physics/course-descriptions" },
+            { "code": "PHY6521", "name": "Advanced Solid State Physics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/phy/taught-postgraduate/msc-physics/course-descriptions" },
+            { "code": "PHY6526", "name": "Energy Materials: Physics and Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/phy/taught-postgraduate/msc-physics/course-descriptions" },
+            { "code": "PHY6603", "name": "Introduction to Quantum Information", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/phy/taught-postgraduate/msc-physics/course-descriptions" },
+            { "code": "PHY6528", "name": "Advanced Research in Physics", "credits": 9, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/phy/taught-postgraduate/msc-physics/course-descriptions" }
+          ]
+        }
+      ]
+    }
+  ]
+}

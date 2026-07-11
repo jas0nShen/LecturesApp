@@ -1,6 +1,7 @@
 const data = require('./mockData');
 const hkuOfferings = require('./hkuOfferings');
 const ugService = require('./ugService');
+const tpgService = require('./tpgService');
 const api = require('./apiClient');
 
 const TYPE_LABELS = {
@@ -23,8 +24,10 @@ const USER_DATA_KEYS = [
   'userProfile',
   'favoriteCourseIds',
   'favoriteOfferingCodes',
+  'favoriteTpgCourseKeys',
   'completedCourseIds',
   'completedOfferingCodes',
+  'completedTpgCourseKeys',
   'studyPlanItems',
   'recentlyViewedCourseCodes',
   'courseSearchHistory',
@@ -54,7 +57,7 @@ function buildOnboardingUrl(profile = getProfile()) {
     universityId: profile && profile.universityId,
     universityCode: profile && profile.universityCode,
     programmeId: profile && profile.programmeId,
-    programmeName: profile && profile.programmeName,
+    trackId: profile && profile.trackId,
     majorId: profile && profile.majorId,
     majorCode: profile && profile.majorCode,
     curriculumYear: profile && profile.curriculumYear,
@@ -65,6 +68,23 @@ function buildOnboardingUrl(profile = getProfile()) {
     .map((key) => `${key}=${encodeURIComponent(params[key])}`)
     .join('&');
   return `/pages/onboarding/onboarding?${query || `mode=${mode}`}`;
+}
+
+function openOnboarding(profile = getProfile()) {
+  const url = buildOnboardingUrl(profile);
+  wx.navigateTo({
+    url,
+    fail() {
+      // navigateTo can fail when the page stack is full, especially after repeated edits in DevTools.
+      wx.reLaunch({
+        url,
+        fail() {
+          wx.showToast({ title: '无法打开资料设置，请重新进入小程序后再试', icon: 'none' });
+        }
+      });
+    }
+  });
+  return url;
 }
 
 function getPlanningCapability(profile = getProfile()) {
@@ -196,8 +216,8 @@ function getUserDataSummary() {
   );
   return {
     hasProfile: Boolean(getProfile()),
-    favoriteCount: favoriteCodes.size,
-    completedCount: getCompletedOfferingCodes().length,
+    favoriteCount: favoriteCodes.size + getFavoriteTpgCourseKeys().length,
+    completedCount: getCompletedOfferingCodes().length + getCompletedTpgCourseKeys().length,
     studyPlanCount: getStudyPlanItems().length,
     noteCount: getCourseNotes().length,
     recentCount: getRecentlyViewedOfferings().length,
@@ -219,8 +239,10 @@ function importUserData(snapshot) {
   const arrayKeys = new Set([
     'favoriteCourseIds',
     'favoriteOfferingCodes',
+    'favoriteTpgCourseKeys',
     'completedCourseIds',
     'completedOfferingCodes',
+    'completedTpgCourseKeys',
     'studyPlanItems',
     'recentlyViewedCourseCodes',
     'courseSearchHistory',
@@ -237,6 +259,14 @@ function importUserData(snapshot) {
       throw new Error('Invalid courseNotes');
     }
   });
+  const importedProfile = parsed.data.userProfile;
+  if (importedProfile && importedProfile.profileType === 'tpg') {
+    const programme = tpgService.getProgramme(importedProfile.programmeId);
+    if (!programme) throw new Error('Invalid TPG programme');
+    if (!tpgService.isValidTrack(programme.id, importedProfile.trackId || '')) {
+      throw new Error('Invalid TPG track');
+    }
+  }
 
   USER_DATA_KEYS.forEach((key) => {
     if (Object.prototype.hasOwnProperty.call(parsed.data, key)) {
@@ -328,6 +358,46 @@ function toggleOfferingCompleted(courseCode) {
     : completed.concat(code);
   wx.setStorageSync('completedOfferingCodes', next);
   return getCompletedOfferingCodes();
+}
+
+function getCompletedTpgCourseKeys() {
+  return wx.getStorageSync('completedTpgCourseKeys') || [];
+}
+
+function buildTpgCourseKey(programmeId, courseCode) {
+  return `${programmeId}:${String(courseCode || '').trim().toUpperCase()}`;
+}
+
+function getFavoriteTpgCourseKeys() {
+  return wx.getStorageSync('favoriteTpgCourseKeys') || [];
+}
+
+function isTpgCourseFavorite(programmeId, courseCode) {
+  return getFavoriteTpgCourseKeys().includes(buildTpgCourseKey(programmeId, courseCode));
+}
+
+function toggleTpgCourseFavorite(programmeId, courseCode) {
+  const key = buildTpgCourseKey(programmeId, courseCode);
+  const favorites = getFavoriteTpgCourseKeys();
+  const next = favorites.includes(key)
+    ? favorites.filter((item) => item !== key)
+    : favorites.concat(key);
+  wx.setStorageSync('favoriteTpgCourseKeys', next);
+  return next;
+}
+
+function isTpgCourseCompleted(programmeId, courseCode) {
+  return getCompletedTpgCourseKeys().includes(buildTpgCourseKey(programmeId, courseCode));
+}
+
+function toggleTpgCourseCompleted(programmeId, courseCode) {
+  const key = buildTpgCourseKey(programmeId, courseCode);
+  const completed = getCompletedTpgCourseKeys();
+  const next = completed.includes(key)
+    ? completed.filter((item) => item !== key)
+    : completed.concat(key);
+  wx.setStorageSync('completedTpgCourseKeys', next);
+  return next;
 }
 
 function getPrerequisiteCourseStatus(prerequisiteText) {
@@ -1235,6 +1305,7 @@ module.exports = {
   getCompletedCourseIds,
   getCompletedOfferingCodes,
   getCompletedOfferings,
+  getCompletedTpgCourseKeys,
   analyzeStudyPlan,
   getCourse,
   getDataStatus,
@@ -1249,11 +1320,13 @@ module.exports = {
   getFavoriteCourses,
   getFavoriteCoursesRemote,
   getFavoriteOfferingCodes,
+  getFavoriteTpgCourseKeys,
   getFavoriteOfferings,
   getFavorites,
   getProfile,
   getPlanningCapability,
   buildOnboardingUrl,
+  openOnboarding,
   getPrerequisiteCourseStatus,
   getRecentlyViewedOfferings,
   getStudyPlanCourses,
@@ -1266,6 +1339,8 @@ module.exports = {
   isFavorite,
   isOfferingCompleted,
   isOfferingFavorite,
+  isTpgCourseCompleted,
+  isTpgCourseFavorite,
   isCoursePlanned,
   importUserData,
   listCourses,
@@ -1289,5 +1364,7 @@ module.exports = {
   toggleCompleted,
   toggleFavorite,
   toggleOfferingCompleted,
-  toggleOfferingFavorite
+  toggleOfferingFavorite,
+  toggleTpgCourseCompleted,
+  toggleTpgCourseFavorite
 };

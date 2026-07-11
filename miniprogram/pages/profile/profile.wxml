@@ -47,6 +47,10 @@
       <view class="label">课程资料</view>
       <view>{{profile.courseCount ? '已开放 ' + profile.courseCount + ' 门' : '课程清单待开放'}}</view>
     </view>
+    <view wx:if="{{profile.profileType === 'tpg' && profile.trackId}}" class="profile-row">
+      <view class="profile-key">Track</view>
+      <view>{{profile.trackName}}</view>
+    </view>
     <view wx:if="{{isUgCatalogue && ugProfile}}" class="profile-row">
       <view class="label">本科资料</view>
       <view>{{ugProfile.codedCourseCount ? '已开放 ' + ugProfile.codedCourseCount + ' 门' : 'Programme / Major 已收录'}}</view>

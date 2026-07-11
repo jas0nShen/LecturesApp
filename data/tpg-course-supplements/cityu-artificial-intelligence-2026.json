@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-11",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-023",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p75",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [
+        { "id": "CITYU-TPG-023-AUTONOMOUS-DRIVING", "name": "Autonomous Driving", "type": "Stream", "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum" },
+        { "id": "CITYU-TPG-023-GENERATIVE-AI", "name": "Generative AI", "type": "Stream", "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum" },
+        { "id": "CITYU-TPG-023-TRUSTWORTHY-AI", "name": "Trustworthy AI", "type": "Stream", "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum" },
+        { "id": "CITYU-TPG-023-NO-CONCENTRATION", "name": "No declared concentration", "type": "Official study option", "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum" }
+      ],
+      "courseGroups": [
+        {
+          "id": "core",
+          "name": "Core Courses",
+          "type": "core_academic_integrity",
+          "creditsRequired": 10,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Core Courses (10 credit units), including the 1-credit Seminar on AI Ethics.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum",
+          "courses": [
+            { "code": "CS5491", "name": "Artificial Intelligence", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum" },
+            { "code": "CS5486", "name": "Intelligent Systems", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum" },
+            { "code": "CS5489", "name": "Machine Learning: Algorithms and Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum" },
+            { "code": "CS5611", "name": "Seminar on AI Ethics", "credits": 1, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum" }
+          ]
+        },
+        {
+          "id": "elective-group-i",
+          "name": "Elective Courses — Group I",
+          "type": "track_elective_project_internship",
+          "ruleText": "Complete at least 21 elective credit units across Groups I and II. To claim a Stream, take 12 credits comprising its two 3-credit Stream Core Courses and either its 6-credit Project or Internship, with no more than 3 credits from each other Stream. All Project and Internship courses are mutually exclusive.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum",
+          "courses": [
+            { "code": "CS5493", "name": "Topics in Autonomous Driving", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum" },
+            { "code": "SDSC6007", "name": "Dynamic Programming and Reinforcement Learning", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum" },
+            { "code": "CS6522", "name": "Project in Autonomous Driving", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum" },
+            { "code": "CS6523", "name": "Internship in Autonomous Driving", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum" },
+            { "code": "CS6493", "name": "Natural Language Processing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum" },
+            { "code": "CS5494", "name": "Topics in Generative AI", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum" },
+            { "code": "CS6524", "name": "Project in Generative AI", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum" },
+            { "code": "CS6525", "name": "Internship in Generative AI", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum" },
+            { "code": "CS5495", "name": "Explainable AI", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum" },
+            { "code": "CS5297", "name": "Topics in AI Security", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum" },
+            { "code": "CS6526", "name": "Project in Trustworthy AI", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum" },
+            { "code": "CS6527", "name": "Internship in Trustworthy AI", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum" },
+            { "code": "CS6528", "name": "Internship in Artificial Intelligence", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum" },
+            { "code": "CS6529", "name": "Project in Artificial Intelligence", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum" }
+          ]
+        },
+        {
+          "id": "elective-group-ii",
+          "name": "Elective Courses — Group II",
+          "type": "elective",
+          "ruleText": "Group II contributes to the 21-credit elective requirement. Students may take at most three Group II courses.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum",
+          "courses": [
+            { "code": "CS5187", "name": "Vision and Image", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum" },
+            { "code": "CS5487", "name": "Machine Learning: Principles and Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum" },
+            { "code": "CS6187", "name": "Vision and Language", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum" },
+            { "code": "CS6487", "name": "Topics in Machine Learning", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum" },
+            { "code": "CS6535", "name": "Guided Study in Artificial Intelligence", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum" },
+            { "code": "CS6491", "name": "Topics in Optimization and its Applications in Computer Science", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum" }
+          ]
+        }
+      ]
+    }
+  ]
+}

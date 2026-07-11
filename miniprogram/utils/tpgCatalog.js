@@ -11,7 +11,8 @@ module.exports = {
       "sourceFile": "HKU_Master_Course_Guide.pdf",
       "sourcePages": 251,
       "programmeCount": 62,
-      "verificationStatus": "pdf_imported"
+      "verificationStatus": "pdf_imported",
+      "sourceUrl": "https://admissions.hku.hk/tpg/programme-list"
     },
     {
       "code": "CUHK",
@@ -21,7 +22,8 @@ module.exports = {
       "sourceFile": "cuhk_postgraduate_programmes.pdf",
       "sourcePages": 20,
       "programmeCount": 18,
-      "verificationStatus": "pdf_imported"
+      "verificationStatus": "pdf_imported",
+      "sourceUrl": "https://www.gs.cuhk.edu.hk/admissions/programme"
     },
     {
       "code": "HKUST",
@@ -31,7 +33,8 @@ module.exports = {
       "sourceFile": "hkust_pg_catalog_2026_27.pdf",
       "sourcePages": 109,
       "programmeCount": 53,
-      "verificationStatus": "pdf_imported"
+      "verificationStatus": "pdf_imported",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/"
     },
     {
       "code": "POLYU",
@@ -41,7 +44,8 @@ module.exports = {
       "sourceFile": "PolyU_Taught_Masters_2027.pdf",
       "sourcePages": 72,
       "programmeCount": 105,
-      "verificationStatus": "pdf_imported"
+      "verificationStatus": "pdf_imported",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/"
     },
     {
       "code": "CITYU",
@@ -51,7 +55,8 @@ module.exports = {
       "sourceFile": "CityUHK_Master_Programmes_Guide_2026.pdf",
       "sourcePages": 42,
       "programmeCount": 62,
-      "verificationStatus": "pdf_imported"
+      "verificationStatus": "pdf_imported",
+      "sourceUrl": "https://www.cityu.edu.hk/pg/taught-postgraduate-programmes"
     },
     {
       "code": "HKBU",
@@ -61,27 +66,30 @@ module.exports = {
       "sourceFile": "HKBU_Taught_Masters_Guide_2025.pdf",
       "sourcePages": 29,
       "programmeCount": 48,
-      "verificationStatus": "pdf_imported"
+      "verificationStatus": "pdf_imported",
+      "sourceUrl": "https://gs.hkbu.edu.hk/programmes"
     },
     {
       "code": "EDUHK",
       "name": "The Education University of Hong Kong",
       "shortName": "香港教育大学",
-      "academicYear": "待确认",
-      "sourceFile": "",
-      "sourcePages": 0,
-      "programmeCount": 0,
-      "verificationStatus": "university_index_only"
+      "academicYear": "2026-27",
+      "sourceFile": "tpg-directory-supplements.json",
+      "sourcePages": 1,
+      "programmeCount": 51,
+      "verificationStatus": "official_directory_imported",
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html"
     },
     {
       "code": "LINGNAN",
       "name": "Lingnan University",
       "shortName": "岭南大学",
-      "academicYear": "待确认",
-      "sourceFile": "",
-      "sourcePages": 0,
-      "programmeCount": 0,
-      "verificationStatus": "university_index_only"
+      "academicYear": "2026-27",
+      "sourceFile": "tpg-directory-supplements.json",
+      "sourcePages": 1,
+      "programmeCount": 49,
+      "verificationStatus": "official_directory_imported",
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm"
     }
   ],
   "programmes": [
@@ -94,7 +102,7 @@ module.exports = {
       "creditsRequired": 204,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-002",
@@ -105,7 +113,7 @@ module.exports = {
       "creditsRequired": 144,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-003",
@@ -116,7 +124,7 @@ module.exports = {
       "creditsRequired": 144,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-004",
@@ -127,7 +135,7 @@ module.exports = {
       "creditsRequired": 69,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-005",
@@ -138,7 +146,7 @@ module.exports = {
       "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-006",
@@ -149,7 +157,7 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-007",
@@ -160,7 +168,7 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-008",
@@ -171,7 +179,7 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-009",
@@ -182,7 +190,7 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-010",
@@ -193,7 +201,7 @@ module.exports = {
       "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-011",
@@ -204,7 +212,7 @@ module.exports = {
       "creditsRequired": 69,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-012",
@@ -215,7 +223,7 @@ module.exports = {
       "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-013",
@@ -226,7 +234,7 @@ module.exports = {
       "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-014",
@@ -237,7 +245,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-015",
@@ -248,7 +256,7 @@ module.exports = {
       "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-016",
@@ -259,7 +267,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-017",
@@ -270,7 +278,7 @@ module.exports = {
       "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-018",
@@ -281,7 +289,7 @@ module.exports = {
       "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-019",
@@ -292,7 +300,7 @@ module.exports = {
       "creditsRequired": 66,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-020",
@@ -303,7 +311,7 @@ module.exports = {
       "creditsRequired": 63,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-021",
@@ -314,7 +322,7 @@ module.exports = {
       "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-022",
@@ -325,7 +333,7 @@ module.exports = {
       "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-023",
@@ -336,7 +344,7 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-024",
@@ -347,7 +355,7 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-025",
@@ -358,7 +366,7 @@ module.exports = {
       "creditsRequired": 66,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-026",
@@ -369,7 +377,7 @@ module.exports = {
       "creditsRequired": 66,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-027",
@@ -380,7 +388,7 @@ module.exports = {
       "creditsRequired": 120,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-028",
@@ -391,7 +399,7 @@ module.exports = {
       "creditsRequired": 69,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-029",
@@ -402,7 +410,7 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-030",
@@ -413,7 +421,7 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-031",
@@ -424,7 +432,7 @@ module.exports = {
       "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-032",
@@ -435,7 +443,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-033",
@@ -446,7 +454,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-034",
@@ -457,7 +465,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-035",
@@ -468,7 +476,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-036",
@@ -479,7 +487,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-037",
@@ -490,7 +498,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-038",
@@ -501,7 +509,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-039",
@@ -512,7 +520,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-040",
@@ -523,7 +531,7 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-041",
@@ -534,7 +542,7 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-042",
@@ -545,7 +553,7 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-043",
@@ -556,7 +564,7 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-044",
@@ -567,7 +575,7 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-045",
@@ -578,7 +586,7 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-046",
@@ -589,7 +597,7 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-047",
@@ -600,7 +608,7 @@ module.exports = {
       "creditsRequired": 78,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-048",
@@ -611,108 +619,7 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": [
-        {
-          "name": "Artificial Intelligence Project",
-          "creditsRequired": null,
-          "courses": [
-            {
-              "code": "ARIN7600",
-              "name": "Artificial intelligence project"
-            }
-          ]
-        },
-        {
-          "name": "Selectable Courses",
-          "creditsRequired": null,
-          "courses": [
-            {
-              "code": "ARIN7001",
-              "name": "Foundations of artificial intelligence"
-            },
-            {
-              "code": "ARIN7011",
-              "name": "Optimization in artificial intelligence"
-            },
-            {
-              "code": "ARIN7013",
-              "name": "Numerical methods in artificial intelligence"
-            },
-            {
-              "code": "ARIN7101",
-              "name": "Statistics in artificial intelligence"
-            },
-            {
-              "code": "ARIN7102",
-              "name": "Applied data mining and text analytics"
-            },
-            {
-              "code": "COMP7404",
-              "name": "Computational intelligence and machine learning"
-            },
-            {
-              "code": "DASC7606",
-              "name": "Deep learning"
-            },
-            {
-              "code": "ARIN7014",
-              "name": "Topics in advanced numerical analysis"
-            },
-            {
-              "code": "ARIN7015",
-              "name": "Topics in artificial intelligence and machine learning"
-            },
-            {
-              "code": "MATH7224",
-              "name": "Topics in advanced probability theory"
-            },
-            {
-              "code": "MATH7502",
-              "name": "Topics in applied discrete mathematics"
-            },
-            {
-              "code": "MATH7503",
-              "name": "Topics in advanced optimization"
-            },
-            {
-              "code": "COMP7308",
-              "name": "Introduction to unmanned systems"
-            },
-            {
-              "code": "COMP7309",
-              "name": "Quantum computing and artificial intelligence"
-            },
-            {
-              "code": "COMP7409",
-              "name": "Machine learning in trading and finance"
-            },
-            {
-              "code": "COMP7502",
-              "name": "Image processing and computer vision"
-            },
-            {
-              "code": "ARIN7017",
-              "name": "Legal issues in artificial intelligence and data science"
-            },
-            {
-              "code": "STAT6011",
-              "name": "Computational statistics and Bayesian learning"
-            },
-            {
-              "code": "STAT7008",
-              "name": "Programming for data science"
-            },
-            {
-              "code": "STAT8020",
-              "name": "Quantitative strategies and algorithmic trading"
-            },
-            {
-              "code": "STAT8307",
-              "name": "Natural language processing and text analytics"
-            }
-          ]
-        }
-      ]
+      "courseCount": 22
     },
     {
       "id": "HKU-TPG-049",
@@ -723,7 +630,7 @@ module.exports = {
       "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-050",
@@ -734,7 +641,7 @@ module.exports = {
       "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-051",
@@ -745,7 +652,7 @@ module.exports = {
       "creditsRequired": 120,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-052",
@@ -756,7 +663,7 @@ module.exports = {
       "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-053",
@@ -767,7 +674,7 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-054",
@@ -778,7 +685,7 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-055",
@@ -789,7 +696,7 @@ module.exports = {
       "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-056",
@@ -800,144 +707,7 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": [
-        {
-          "name": "Capstone / Project Options",
-          "creditsRequired": 12,
-          "courses": [
-            {
-              "code": "DASC8088",
-              "name": "Course Seminar / Capstone / Project"
-            },
-            {
-              "code": "DASC7600",
-              "name": "Data science project"
-            }
-          ]
-        },
-        {
-          "name": "Selectable Courses",
-          "creditsRequired": null,
-          "courses": [
-            {
-              "code": "COMP7404",
-              "name": "Computational intelligence and machine learning"
-            },
-            {
-              "code": "DASC7011",
-              "name": "Statistical inference for data science"
-            },
-            {
-              "code": "DASC7102",
-              "name": "Advanced statistical modelling for data science"
-            },
-            {
-              "code": "DASC7104",
-              "name": "Advanced database systems"
-            },
-            {
-              "code": "COMP7107",
-              "name": "Management of complex data types"
-            },
-            {
-              "code": "COMP7305",
-              "name": "Cluster and cloud computing"
-            },
-            {
-              "code": "COMP7409",
-              "name": "Machine learning in trading and finance"
-            },
-            {
-              "code": "COMP7503",
-              "name": "Multimedia technologies"
-            },
-            {
-              "code": "COMP7506",
-              "name": "Smart phone apps development"
-            },
-            {
-              "code": "COMP7507",
-              "name": "Visualization and visual analytics"
-            },
-            {
-              "code": "COMP7906",
-              "name": "Introduction to cyber security"
-            },
-            {
-              "code": "DASC7606",
-              "name": "Deep learning"
-            },
-            {
-              "code": "FITE7410",
-              "name": "Financial fraud analytics"
-            },
-            {
-              "code": "ICOM6044",
-              "name": "Data science for business"
-            },
-            {
-              "code": "ICOM7128",
-              "name": "Knowledge graphs"
-            },
-            {
-              "code": "STAT6008",
-              "name": "Advanced statistical inference"
-            },
-            {
-              "code": "STAT6013",
-              "name": "Financial data analysis"
-            },
-            {
-              "code": "STAT6015",
-              "name": "Advanced quantitative risk management"
-            },
-            {
-              "code": "STAT6016",
-              "name": "Spatial data analysis"
-            },
-            {
-              "code": "STAT6019",
-              "name": "Current topics in statistics"
-            },
-            {
-              "code": "STAT7008",
-              "name": "Programming for data science"
-            },
-            {
-              "code": "STAT8003",
-              "name": "Time series forecasting"
-            },
-            {
-              "code": "STAT8017",
-              "name": "Data mining techniques"
-            },
-            {
-              "code": "STAT8019",
-              "name": "Marketing analytics"
-            },
-            {
-              "code": "STAT8300",
-              "name": "Career development and communication workshop (Non-credit-bearing)"
-            },
-            {
-              "code": "STAT8306",
-              "name": "Statistical methods for network data"
-            },
-            {
-              "code": "STAT8307",
-              "name": "Natural language processing and text analytics"
-            },
-            {
-              "code": "STAT8308",
-              "name": "Blockchain data analytics"
-            },
-            {
-              "code": "STAT8309",
-              "name": "Monte Carlo simulation in finance"
-            }
-          ]
-        }
-      ]
+      "courseCount": 31
     },
     {
       "id": "HKU-TPG-057",
@@ -948,224 +718,7 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": [
-        {
-          "name": "Seminar / Capstone / Project Options",
-          "creditsRequired": null,
-          "courses": [
-            {
-              "code": "COMP7706",
-              "name": "Course Seminar / Capstone / Project"
-            },
-            {
-              "code": "COMP7412",
-              "name": "Course Seminar / Capstone / Project"
-            },
-            {
-              "code": "COMP7415",
-              "name": "Course Seminar / Capstone / Project"
-            }
-          ]
-        },
-        {
-          "name": "Selectable Courses",
-          "creditsRequired": null,
-          "courses": [
-            {
-              "code": "COMP7806",
-              "name": "Topic in information security"
-            },
-            {
-              "code": "COMP7901",
-              "name": "Legal protection of digital property"
-            },
-            {
-              "code": "COMP7903",
-              "name": "Digital investigation and forensics"
-            },
-            {
-              "code": "COMP7904",
-              "name": "Information security: attacks and defense"
-            },
-            {
-              "code": "COMP7905",
-              "name": "Reverse engineering and malware analysis"
-            },
-            {
-              "code": "COMP7906",
-              "name": "Introduction to cyber security"
-            },
-            {
-              "code": "FITE7410",
-              "name": "Financial fraud analytics"
-            },
-            {
-              "code": "COMP7103",
-              "name": "Data mining"
-            },
-            {
-              "code": "COMP7408",
-              "name": "Distributed ledger and blockchain technology"
-            },
-            {
-              "code": "COMP7802",
-              "name": "Introduction to financial computing"
-            },
-            {
-              "code": "COMP7808",
-              "name": "Topic in financial computing"
-            },
-            {
-              "code": "FITE7413",
-              "name": "Smart banking and innovative finance"
-            },
-            {
-              "code": "FITE7414",
-              "name": "Generative AI in financial services"
-            },
-            {
-              "code": "COMP7502",
-              "name": "Image processing and computer vision"
-            },
-            {
-              "code": "COMP7503",
-              "name": "Multimedia technologies"
-            },
-            {
-              "code": "COMP7504",
-              "name": "Pattern recognition and applications"
-            },
-            {
-              "code": "COMP7505",
-              "name": "User interface design and development"
-            },
-            {
-              "code": "COMP7506",
-              "name": "Smart phone apps development"
-            },
-            {
-              "code": "COMP7507",
-              "name": "Visualization and visual analytics"
-            },
-            {
-              "code": "COMP7604",
-              "name": "Game design and development"
-            },
-            {
-              "code": "COMP7807",
-              "name": "Topic in multimedia computing"
-            },
-            {
-              "code": "COMP7104",
-              "name": "Advanced database systems"
-            },
-            {
-              "code": "COMP7105",
-              "name": "Advanced topics in data science"
-            },
-            {
-              "code": "COMP7106",
-              "name": "Big data management"
-            },
-            {
-              "code": "COMP7107",
-              "name": "Management of complex data types"
-            },
-            {
-              "code": "COMP7108",
-              "name": "Network data analytics"
-            },
-            {
-              "code": "COMP7201",
-              "name": "Analysis and design of enterprise applications in UML"
-            },
-            {
-              "code": "COMP7305",
-              "name": "Cluster and cloud computing"
-            },
-            {
-              "code": "COMP7308",
-              "name": "Introduction to unmanned systems"
-            },
-            {
-              "code": "COMP7309",
-              "name": "Quantum computing and artificial intelligence"
-            },
-            {
-              "code": "COMP7310",
-              "name": "Artificial intelligence of things"
-            },
-            {
-              "code": "COMP7311",
-              "name": "Legal issues in artificial intelligence and data science"
-            },
-            {
-              "code": "COMP7404",
-              "name": "Computational intelligence and machine learning"
-            },
-            {
-              "code": "COMP7416",
-              "name": "FinTech and digital currencies"
-            },
-            {
-              "code": "COMP7602",
-              "name": "Introduction to bioinformatics"
-            },
-            {
-              "code": "COMP7607",
-              "name": "Natural language processing"
-            },
-            {
-              "code": "COMP7608",
-              "name": "Large language models"
-            },
-            {
-              "code": "COMP7610",
-              "name": "Introduction to Web3 and blockchain"
-            },
-            {
-              "code": "COMP7611",
-              "name": "Security and privacy in AI systems"
-            },
-            {
-              "code": "COMP7801",
-              "name": "Topic in computer science"
-            },
-            {
-              "code": "COMP7809",
-              "name": "Topic in artificial intelligence"
-            },
-            {
-              "code": "FITE7411",
-              "name": "RegTech in finance"
-            },
-            {
-              "code": "COMP7805",
-              "name": "Topic in computer network and systems"
-            },
-            {
-              "code": "COMP3311",
-              "name": "Legal aspects of computing"
-            },
-            {
-              "code": "DASC7606",
-              "name": "Deep learning"
-            },
-            {
-              "code": "FITE7405",
-              "name": "Techniques in computational finance"
-            },
-            {
-              "code": "FITE7406",
-              "name": "Software development for quantitative finance"
-            },
-            {
-              "code": "FITE7407",
-              "name": "Securities transaction banking"
-            }
-          ]
-        }
-      ]
+      "courseCount": 51
     },
     {
       "id": "HKU-TPG-058",
@@ -1176,224 +729,7 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": [
-        {
-          "name": "Seminar / Capstone / Project Options",
-          "creditsRequired": null,
-          "courses": [
-            {
-              "code": "COMP7706",
-              "name": "Course Seminar / Capstone / Project"
-            },
-            {
-              "code": "COMP7412",
-              "name": "Course Seminar / Capstone / Project"
-            },
-            {
-              "code": "COMP7415",
-              "name": "Course Seminar / Capstone / Project"
-            }
-          ]
-        },
-        {
-          "name": "Selectable Courses",
-          "creditsRequired": null,
-          "courses": [
-            {
-              "code": "COMP7806",
-              "name": "Topic in information security"
-            },
-            {
-              "code": "COMP7901",
-              "name": "Legal protection of digital property"
-            },
-            {
-              "code": "COMP7903",
-              "name": "Digital investigation and forensics"
-            },
-            {
-              "code": "COMP7904",
-              "name": "Information security: attacks and defense"
-            },
-            {
-              "code": "COMP7905",
-              "name": "Reverse engineering and malware analysis"
-            },
-            {
-              "code": "COMP7906",
-              "name": "Introduction to cyber security"
-            },
-            {
-              "code": "FITE7410",
-              "name": "Financial fraud analytics"
-            },
-            {
-              "code": "COMP7103",
-              "name": "Data mining"
-            },
-            {
-              "code": "COMP7408",
-              "name": "Distributed ledger and blockchain technology"
-            },
-            {
-              "code": "COMP7802",
-              "name": "Introduction to financial computing"
-            },
-            {
-              "code": "COMP7808",
-              "name": "Topic in financial computing"
-            },
-            {
-              "code": "FITE7413",
-              "name": "Smart banking and innovative finance"
-            },
-            {
-              "code": "FITE7414",
-              "name": "Generative AI in financial services"
-            },
-            {
-              "code": "COMP7502",
-              "name": "Image processing and computer vision"
-            },
-            {
-              "code": "COMP7503",
-              "name": "Multimedia technologies"
-            },
-            {
-              "code": "COMP7504",
-              "name": "Pattern recognition and applications"
-            },
-            {
-              "code": "COMP7505",
-              "name": "User interface design and development"
-            },
-            {
-              "code": "COMP7506",
-              "name": "Smart phone apps development"
-            },
-            {
-              "code": "COMP7507",
-              "name": "Visualization and visual analytics"
-            },
-            {
-              "code": "COMP7604",
-              "name": "Game design and development"
-            },
-            {
-              "code": "COMP7807",
-              "name": "Topic in multimedia computing"
-            },
-            {
-              "code": "COMP7104",
-              "name": "Advanced database systems"
-            },
-            {
-              "code": "COMP7105",
-              "name": "Advanced topics in data science"
-            },
-            {
-              "code": "COMP7106",
-              "name": "Big data management"
-            },
-            {
-              "code": "COMP7107",
-              "name": "Management of complex data types"
-            },
-            {
-              "code": "COMP7108",
-              "name": "Network data analytics"
-            },
-            {
-              "code": "COMP7201",
-              "name": "Analysis and design of enterprise applications in UML"
-            },
-            {
-              "code": "COMP7305",
-              "name": "Cluster and cloud computing"
-            },
-            {
-              "code": "COMP7308",
-              "name": "Introduction to unmanned systems"
-            },
-            {
-              "code": "COMP7309",
-              "name": "Quantum computing and artificial intelligence"
-            },
-            {
-              "code": "COMP7310",
-              "name": "Artificial intelligence of things"
-            },
-            {
-              "code": "COMP7311",
-              "name": "Legal issues in artificial intelligence and data science"
-            },
-            {
-              "code": "COMP7404",
-              "name": "Computational intelligence and machine learning"
-            },
-            {
-              "code": "COMP7416",
-              "name": "FinTech and digital currencies"
-            },
-            {
-              "code": "COMP7602",
-              "name": "Introduction to bioinformatics"
-            },
-            {
-              "code": "COMP7607",
-              "name": "Natural language processing"
-            },
-            {
-              "code": "COMP7608",
-              "name": "Large language models"
-            },
-            {
-              "code": "COMP7610",
-              "name": "Introduction to Web3 and blockchain"
-            },
-            {
-              "code": "COMP7611",
-              "name": "Security and privacy in AI systems"
-            },
-            {
-              "code": "COMP7801",
-              "name": "Topic in computer science"
-            },
-            {
-              "code": "COMP7809",
-              "name": "Topic in artificial intelligence"
-            },
-            {
-              "code": "FITE7411",
-              "name": "RegTech in finance"
-            },
-            {
-              "code": "COMP7805",
-              "name": "Topic in computer network and systems"
-            },
-            {
-              "code": "COMP3311",
-              "name": "Legal aspects of computing"
-            },
-            {
-              "code": "DASC7606",
-              "name": "Deep learning"
-            },
-            {
-              "code": "FITE7405",
-              "name": "Techniques in computational finance"
-            },
-            {
-              "code": "FITE7406",
-              "name": "Software development for quantitative finance"
-            },
-            {
-              "code": "FITE7407",
-              "name": "Securities transaction banking"
-            }
-          ]
-        }
-      ]
+      "courseCount": 51
     },
     {
       "id": "HKU-TPG-059",
@@ -1404,224 +740,7 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": [
-        {
-          "name": "Seminar / Capstone / Project Options",
-          "creditsRequired": null,
-          "courses": [
-            {
-              "code": "COMP7706",
-              "name": "Course Seminar / Capstone / Project"
-            },
-            {
-              "code": "COMP7412",
-              "name": "Course Seminar / Capstone / Project"
-            },
-            {
-              "code": "COMP7415",
-              "name": "Course Seminar / Capstone / Project"
-            }
-          ]
-        },
-        {
-          "name": "Selectable Courses",
-          "creditsRequired": null,
-          "courses": [
-            {
-              "code": "COMP7806",
-              "name": "Topic in information security"
-            },
-            {
-              "code": "COMP7901",
-              "name": "Legal protection of digital property"
-            },
-            {
-              "code": "COMP7903",
-              "name": "Digital investigation and forensics"
-            },
-            {
-              "code": "COMP7904",
-              "name": "Information security: attacks and defense"
-            },
-            {
-              "code": "COMP7905",
-              "name": "Reverse engineering and malware analysis"
-            },
-            {
-              "code": "COMP7906",
-              "name": "Introduction to cyber security"
-            },
-            {
-              "code": "FITE7410",
-              "name": "Financial fraud analytics"
-            },
-            {
-              "code": "COMP7103",
-              "name": "Data mining"
-            },
-            {
-              "code": "COMP7408",
-              "name": "Distributed ledger and blockchain technology"
-            },
-            {
-              "code": "COMP7802",
-              "name": "Introduction to financial computing"
-            },
-            {
-              "code": "COMP7808",
-              "name": "Topic in financial computing"
-            },
-            {
-              "code": "FITE7413",
-              "name": "Smart banking and innovative finance"
-            },
-            {
-              "code": "FITE7414",
-              "name": "Generative AI in financial services"
-            },
-            {
-              "code": "COMP7502",
-              "name": "Image processing and computer vision"
-            },
-            {
-              "code": "COMP7503",
-              "name": "Multimedia technologies"
-            },
-            {
-              "code": "COMP7504",
-              "name": "Pattern recognition and applications"
-            },
-            {
-              "code": "COMP7505",
-              "name": "User interface design and development"
-            },
-            {
-              "code": "COMP7506",
-              "name": "Smart phone apps development"
-            },
-            {
-              "code": "COMP7507",
-              "name": "Visualization and visual analytics"
-            },
-            {
-              "code": "COMP7604",
-              "name": "Game design and development"
-            },
-            {
-              "code": "COMP7807",
-              "name": "Topic in multimedia computing"
-            },
-            {
-              "code": "COMP7104",
-              "name": "Advanced database systems"
-            },
-            {
-              "code": "COMP7105",
-              "name": "Advanced topics in data science"
-            },
-            {
-              "code": "COMP7106",
-              "name": "Big data management"
-            },
-            {
-              "code": "COMP7107",
-              "name": "Management of complex data types"
-            },
-            {
-              "code": "COMP7108",
-              "name": "Network data analytics"
-            },
-            {
-              "code": "COMP7201",
-              "name": "Analysis and design of enterprise applications in UML"
-            },
-            {
-              "code": "COMP7305",
-              "name": "Cluster and cloud computing"
-            },
-            {
-              "code": "COMP7308",
-              "name": "Introduction to unmanned systems"
-            },
-            {
-              "code": "COMP7309",
-              "name": "Quantum computing and artificial intelligence"
-            },
-            {
-              "code": "COMP7310",
-              "name": "Artificial intelligence of things"
-            },
-            {
-              "code": "COMP7311",
-              "name": "Legal issues in artificial intelligence and data science"
-            },
-            {
-              "code": "COMP7404",
-              "name": "Computational intelligence and machine learning"
-            },
-            {
-              "code": "COMP7416",
-              "name": "FinTech and digital currencies"
-            },
-            {
-              "code": "COMP7602",
-              "name": "Introduction to bioinformatics"
-            },
-            {
-              "code": "COMP7607",
-              "name": "Natural language processing"
-            },
-            {
-              "code": "COMP7608",
-              "name": "Large language models"
-            },
-            {
-              "code": "COMP7610",
-              "name": "Introduction to Web3 and blockchain"
-            },
-            {
-              "code": "COMP7611",
-              "name": "Security and privacy in AI systems"
-            },
-            {
-              "code": "COMP7801",
-              "name": "Topic in computer science"
-            },
-            {
-              "code": "COMP7809",
-              "name": "Topic in artificial intelligence"
-            },
-            {
-              "code": "FITE7411",
-              "name": "RegTech in finance"
-            },
-            {
-              "code": "COMP7805",
-              "name": "Topic in computer network and systems"
-            },
-            {
-              "code": "COMP3311",
-              "name": "Legal aspects of computing"
-            },
-            {
-              "code": "DASC7606",
-              "name": "Deep learning"
-            },
-            {
-              "code": "FITE7405",
-              "name": "Techniques in computational finance"
-            },
-            {
-              "code": "FITE7406",
-              "name": "Software development for quantitative finance"
-            },
-            {
-              "code": "FITE7407",
-              "name": "Securities transaction banking"
-            }
-          ]
-        }
-      ]
+      "courseCount": 51
     },
     {
       "id": "HKU-TPG-060",
@@ -1632,224 +751,7 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": [
-        {
-          "name": "Seminar / Capstone / Project Options",
-          "creditsRequired": null,
-          "courses": [
-            {
-              "code": "COMP7706",
-              "name": "Course Seminar / Capstone / Project"
-            },
-            {
-              "code": "COMP7412",
-              "name": "Course Seminar / Capstone / Project"
-            },
-            {
-              "code": "COMP7415",
-              "name": "Course Seminar / Capstone / Project"
-            }
-          ]
-        },
-        {
-          "name": "Selectable Courses",
-          "creditsRequired": null,
-          "courses": [
-            {
-              "code": "COMP7806",
-              "name": "Topic in information security"
-            },
-            {
-              "code": "COMP7901",
-              "name": "Legal protection of digital property"
-            },
-            {
-              "code": "COMP7903",
-              "name": "Digital investigation and forensics"
-            },
-            {
-              "code": "COMP7904",
-              "name": "Information security: attacks and defense"
-            },
-            {
-              "code": "COMP7905",
-              "name": "Reverse engineering and malware analysis"
-            },
-            {
-              "code": "COMP7906",
-              "name": "Introduction to cyber security"
-            },
-            {
-              "code": "FITE7410",
-              "name": "Financial fraud analytics"
-            },
-            {
-              "code": "COMP7103",
-              "name": "Data mining"
-            },
-            {
-              "code": "COMP7408",
-              "name": "Distributed ledger and blockchain technology"
-            },
-            {
-              "code": "COMP7802",
-              "name": "Introduction to financial computing"
-            },
-            {
-              "code": "COMP7808",
-              "name": "Topic in financial computing"
-            },
-            {
-              "code": "FITE7413",
-              "name": "Smart banking and innovative finance"
-            },
-            {
-              "code": "FITE7414",
-              "name": "Generative AI in financial services"
-            },
-            {
-              "code": "COMP7502",
-              "name": "Image processing and computer vision"
-            },
-            {
-              "code": "COMP7503",
-              "name": "Multimedia technologies"
-            },
-            {
-              "code": "COMP7504",
-              "name": "Pattern recognition and applications"
-            },
-            {
-              "code": "COMP7505",
-              "name": "User interface design and development"
-            },
-            {
-              "code": "COMP7506",
-              "name": "Smart phone apps development"
-            },
-            {
-              "code": "COMP7507",
-              "name": "Visualization and visual analytics"
-            },
-            {
-              "code": "COMP7604",
-              "name": "Game design and development"
-            },
-            {
-              "code": "COMP7807",
-              "name": "Topic in multimedia computing"
-            },
-            {
-              "code": "COMP7104",
-              "name": "Advanced database systems"
-            },
-            {
-              "code": "COMP7105",
-              "name": "Advanced topics in data science"
-            },
-            {
-              "code": "COMP7106",
-              "name": "Big data management"
-            },
-            {
-              "code": "COMP7107",
-              "name": "Management of complex data types"
-            },
-            {
-              "code": "COMP7108",
-              "name": "Network data analytics"
-            },
-            {
-              "code": "COMP7201",
-              "name": "Analysis and design of enterprise applications in UML"
-            },
-            {
-              "code": "COMP7305",
-              "name": "Cluster and cloud computing"
-            },
-            {
-              "code": "COMP7308",
-              "name": "Introduction to unmanned systems"
-            },
-            {
-              "code": "COMP7309",
-              "name": "Quantum computing and artificial intelligence"
-            },
-            {
-              "code": "COMP7310",
-              "name": "Artificial intelligence of things"
-            },
-            {
-              "code": "COMP7311",
-              "name": "Legal issues in artificial intelligence and data science"
-            },
-            {
-              "code": "COMP7404",
-              "name": "Computational intelligence and machine learning"
-            },
-            {
-              "code": "COMP7416",
-              "name": "FinTech and digital currencies"
-            },
-            {
-              "code": "COMP7602",
-              "name": "Introduction to bioinformatics"
-            },
-            {
-              "code": "COMP7607",
-              "name": "Natural language processing"
-            },
-            {
-              "code": "COMP7608",
-              "name": "Large language models"
-            },
-            {
-              "code": "COMP7610",
-              "name": "Introduction to Web3 and blockchain"
-            },
-            {
-              "code": "COMP7611",
-              "name": "Security and privacy in AI systems"
-            },
-            {
-              "code": "COMP7801",
-              "name": "Topic in computer science"
-            },
-            {
-              "code": "COMP7809",
-              "name": "Topic in artificial intelligence"
-            },
-            {
-              "code": "FITE7411",
-              "name": "RegTech in finance"
-            },
-            {
-              "code": "COMP7805",
-              "name": "Topic in computer network and systems"
-            },
-            {
-              "code": "COMP3311",
-              "name": "Legal aspects of computing"
-            },
-            {
-              "code": "DASC7606",
-              "name": "Deep learning"
-            },
-            {
-              "code": "FITE7405",
-              "name": "Techniques in computational finance"
-            },
-            {
-              "code": "FITE7406",
-              "name": "Software development for quantitative finance"
-            },
-            {
-              "code": "FITE7407",
-              "name": "Securities transaction banking"
-            }
-          ]
-        }
-      ]
+      "courseCount": 51
     },
     {
       "id": "HKU-TPG-061",
@@ -1860,7 +762,7 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKU-TPG-062",
@@ -1871,7 +773,7 @@ module.exports = {
       "creditsRequired": 66,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CUHK-TPG-001",
@@ -1882,7 +784,7 @@ module.exports = {
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CUHK-TPG-002",
@@ -1893,7 +795,7 @@ module.exports = {
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CUHK-TPG-003",
@@ -1904,7 +806,7 @@ module.exports = {
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CUHK-TPG-004",
@@ -1915,7 +817,7 @@ module.exports = {
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CUHK-TPG-005",
@@ -1926,7 +828,7 @@ module.exports = {
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CUHK-TPG-006",
@@ -1937,7 +839,7 @@ module.exports = {
       "creditsRequired": 36,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CUHK-TPG-007",
@@ -1948,7 +850,7 @@ module.exports = {
       "creditsRequired": 36,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CUHK-TPG-008",
@@ -1959,7 +861,7 @@ module.exports = {
       "creditsRequired": 36,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CUHK-TPG-009",
@@ -1970,7 +872,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CUHK-TPG-010",
@@ -1981,7 +883,7 @@ module.exports = {
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CUHK-TPG-011",
@@ -1992,7 +894,7 @@ module.exports = {
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CUHK-TPG-012",
@@ -2003,7 +905,7 @@ module.exports = {
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CUHK-TPG-013",
@@ -2014,7 +916,7 @@ module.exports = {
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CUHK-TPG-014",
@@ -2025,7 +927,7 @@ module.exports = {
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CUHK-TPG-015",
@@ -2036,7 +938,7 @@ module.exports = {
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CUHK-TPG-016",
@@ -2047,7 +949,7 @@ module.exports = {
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CUHK-TPG-017",
@@ -2058,7 +960,7 @@ module.exports = {
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CUHK-TPG-018",
@@ -2069,7 +971,7 @@ module.exports = {
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKUST-TPG-001",
@@ -2080,7 +982,12 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "archived",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/",
+      "courseStatusNote": "No unique matching Programme was found in the current 2026/27 official directory; archive status requires final manual confirmation.",
+      "courseCount": 0
     },
     {
       "id": "HKUST-TPG-002",
@@ -2088,10 +995,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Family Office and Family Business",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-fofb/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 5
     },
     {
       "id": "HKUST-TPG-003",
@@ -2099,10 +1013,17 @@ module.exports = {
       "programmeCode": "",
       "name": "HKUST Executive Master of Business Administration Program",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/hkust-emba/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 10
     },
     {
       "id": "HKUST-TPG-004",
@@ -2110,10 +1031,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Finance",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-fina/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 6
     },
     {
       "id": "HKUST-TPG-005",
@@ -2121,10 +1049,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Kellogg-HKUST Executive Master of Business Administration Program",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/kh-emba/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 12
     },
     {
       "id": "HKUST-TPG-006",
@@ -2135,7 +1070,12 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/",
+      "courseStatusNote": "The official curriculum was collected, but course-detail or rule-group review is still incomplete.",
+      "courseCount": 0
     },
     {
       "id": "HKUST-TPG-007",
@@ -2143,10 +1083,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Arts Program in Arts and Machine Creativity",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 27,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-amc/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 24
     },
     {
       "id": "HKUST-TPG-008",
@@ -2154,10 +1101,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Financial Technology",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-fintech/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 10
     },
     {
       "id": "HKUST-TPG-009",
@@ -2165,10 +1119,34 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Arts Program in Chinese Culture",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 24,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-cc/",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "HKUST-TPG-009-CHINESE-LANGUAGE-LITERATURE",
+          "name": "Chinese Language and Literature",
+          "type": "Concentration",
+          "ruleText": "Complete four courses (12 credits) in the Concentration, including at least one required course (3 credits). The intake-specific Concentration elective list is not published on the official curriculum page.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-cc/"
+        },
+        {
+          "id": "HKUST-TPG-009-CHINESE-HISTORY-ANTHROPOLOGY",
+          "name": "Chinese History and Anthropology",
+          "type": "Concentration",
+          "ruleText": "Complete four courses (12 credits) in the Concentration, including at least one required course (3 credits). The intake-specific Concentration elective list is not published on the official curriculum page.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-cc/"
+        }
+      ],
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "trackSelectionOptional": true,
+      "courseCount": 11
     },
     {
       "id": "HKUST-TPG-010",
@@ -2179,7 +1157,12 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+      "courseStatusNote": "The official curriculum was collected, but course-detail or rule-group review is still incomplete.",
+      "courseCount": 0
     },
     {
       "id": "HKUST-TPG-011",
@@ -2190,7 +1173,12 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/",
+      "courseStatusNote": "The official curriculum was collected, but course-detail or rule-group review is still incomplete.",
+      "courseCount": 0
     },
     {
       "id": "HKUST-TPG-012",
@@ -2198,10 +1186,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Global Finance",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 24,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gfin/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 6
     },
     {
       "id": "HKUST-TPG-013",
@@ -2212,7 +1207,12 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/",
+      "courseStatusNote": "The official curriculum was collected, but course-detail or rule-group review is still incomplete.",
+      "courseCount": 0
     },
     {
       "id": "HKUST-TPG-014",
@@ -2220,10 +1220,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Global Marine Resources Management",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 45,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gmrm/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 18
     },
     {
       "id": "HKUST-TPG-015",
@@ -2231,10 +1238,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Public Management Program",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 27,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpm/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 17
     },
     {
       "id": "HKUST-TPG-016",
@@ -2242,10 +1256,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Global Operations",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-go/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 9
     },
     {
       "id": "HKUST-TPG-017",
@@ -2253,10 +1274,38 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Public Policy Program",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 48,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpp/",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "HKUST-TPG-017-ESP",
+          "name": "Environmental and Sustainability Policy",
+          "type": "Concentration",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpp/"
+        },
+        {
+          "id": "HKUST-TPG-017-STP",
+          "name": "Science and Technology Policy",
+          "type": "Concentration",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpp/"
+        },
+        {
+          "id": "HKUST-TPG-017-PEPM",
+          "name": "Policy Economics and Public Management",
+          "type": "Concentration",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpp/"
+        }
+      ],
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "trackSelectionOptional": true,
+      "courseCount": 35
     },
     {
       "id": "HKUST-TPG-018",
@@ -2264,10 +1313,41 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Information Systems Management",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ism/",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "HKUST-TPG-018-FINANCIAL-TECHNOLOGY",
+          "name": "Financial Technology",
+          "type": "Concentration",
+          "ruleText": "Complete four approved Financial Technology electives (8 credits). The official curriculum page does not publish a fixed course-code list.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ism/"
+        },
+        {
+          "id": "HKUST-TPG-018-TECHNOLOGY-INNOVATION-ENTREPRENEURSHIP",
+          "name": "Technology Innovation and Entrepreneurship",
+          "type": "Concentration",
+          "ruleText": "Complete four approved Technology Innovation and Entrepreneurship electives (8 credits). The official curriculum page does not publish a fixed course-code list.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ism/"
+        },
+        {
+          "id": "HKUST-TPG-018-ARTIFICIAL-INTELLIGENCE",
+          "name": "Artificial Intelligence",
+          "type": "Concentration",
+          "ruleText": "Complete four approved Artificial Intelligence electives (8 credits). The official curriculum page does not publish a fixed course-code list.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ism/"
+        }
+      ],
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "trackSelectionOptional": true,
+      "courseCount": 8
     },
     {
       "id": "HKUST-TPG-019",
@@ -2275,10 +1355,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in AI and Entrepreneurship",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 36,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-aie/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 16
     },
     {
       "id": "HKUST-TPG-020",
@@ -2286,10 +1373,26 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Information Technology",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-it/",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "HKUST-TPG-020-CYBERSECURITY",
+          "name": "Cybersecurity",
+          "type": "Concentration",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-it/"
+        }
+      ],
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "trackSelectionOptional": true,
+      "courseCount": 8
     },
     {
       "id": "HKUST-TPG-021",
@@ -2297,10 +1400,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Accounting",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-acct/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 6
     },
     {
       "id": "HKUST-TPG-022",
@@ -2308,10 +1418,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Information and Cyber Security Management",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-icsm/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 7
     },
     {
       "id": "HKUST-TPG-023",
@@ -2319,10 +1436,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Aeronautical Engineering",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ae/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 20
     },
     {
       "id": "HKUST-TPG-024",
@@ -2330,10 +1454,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Integrated Circuits",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 25,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ic/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 11
     },
     {
       "id": "HKUST-TPG-025",
@@ -2341,10 +1472,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Analytical Chemistry",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-anchem/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 13
     },
     {
       "id": "HKUST-TPG-026",
@@ -2352,10 +1490,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Intelligent Building Technology and Management",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ibtm/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 4
     },
     {
       "id": "HKUST-TPG-027",
@@ -2363,10 +1508,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Artificial Intelligence",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ai/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 15
     },
     {
       "id": "HKUST-TPG-028",
@@ -2374,10 +1526,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in International Management",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 34,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-imt/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 17
     },
     {
       "id": "HKUST-TPG-029",
@@ -2385,10 +1544,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Big Data Technology",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-bdt/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 23
     },
     {
       "id": "HKUST-TPG-030",
@@ -2396,10 +1562,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Marketing",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mark/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 7
     },
     {
       "id": "HKUST-TPG-031",
@@ -2407,10 +1580,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Biomolecular Engineering and Health Informatics",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-behi/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 17
     },
     {
       "id": "HKUST-TPG-032",
@@ -2418,10 +1598,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Materials Engineering",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mate/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 18
     },
     {
       "id": "HKUST-TPG-033",
@@ -2429,10 +1616,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Biotechnology",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 26,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-biot/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 21
     },
     {
       "id": "HKUST-TPG-034",
@@ -2440,10 +1634,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Mathematics for Educators",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 27,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-maed/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 17
     },
     {
       "id": "HKUST-TPG-035",
@@ -2451,10 +1652,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Business Analytics",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ba/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 8
     },
     {
       "id": "HKUST-TPG-036",
@@ -2462,10 +1670,27 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Mechanical Engineering",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mech/",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "HKUST-TPG-036-MATERIALS-TECHNOLOGY",
+          "name": "Materials Technology",
+          "type": "Concentration",
+          "ruleText": "Optional Concentration: complete at least 18 credits from the approved Materials Technology course list as part of the 30-credit Programme requirement.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mech/"
+        }
+      ],
+      "trackSelectionOptional": true,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 9
     },
     {
       "id": "HKUST-TPG-037",
@@ -2473,10 +1698,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Chemical and Energy Engineering",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-cee/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 17
     },
     {
       "id": "HKUST-TPG-038",
@@ -2484,10 +1716,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Physics",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 25,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-phys/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 21
     },
     {
       "id": "HKUST-TPG-039",
@@ -2495,10 +1734,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Data-Driven Modeling",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 31,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ddm/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 16
     },
     {
       "id": "HKUST-TPG-040",
@@ -2506,10 +1752,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Technology Leadership and Entrepreneurship",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-tle/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 4
     },
     {
       "id": "HKUST-TPG-041",
@@ -2517,10 +1770,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Drug Regulatory Affairs and Policy",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-drap/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 22
     },
     {
       "id": "HKUST-TPG-042",
@@ -2531,7 +1791,12 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-telecom/",
+      "courseStatusNote": "The official curriculum was collected, but course-detail or rule-group review is still incomplete.",
+      "courseCount": 0
     },
     {
       "id": "HKUST-TPG-043",
@@ -2542,7 +1807,12 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/",
+      "courseStatusNote": "The official curriculum was collected, but course-detail or rule-group review is still incomplete.",
+      "courseCount": 0
     },
     {
       "id": "HKUST-TPG-044",
@@ -2550,10 +1820,35 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science and Master of Engineering Programs in Digital and Sustainable Cities",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-meng-disc/",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "HKUST-TPG-044-MSC",
+          "name": "Master of Science",
+          "type": "Award Path",
+          "creditsRequired": 30,
+          "ruleText": "Complete 24 course-pool credits and the 6-credit MSc Project.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-meng-disc/"
+        },
+        {
+          "id": "HKUST-TPG-044-MENG",
+          "name": "Master of Engineering",
+          "type": "Award Path",
+          "creditsRequired": 36,
+          "ruleText": "Complete the 30-credit MSc requirements and the 6-credit year-long Industrial Placement.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-meng-disc/"
+        }
+      ],
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 23
     },
     {
       "id": "HKUST-TPG-045",
@@ -2561,10 +1856,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Electronic Engineering",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 24,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eleg/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 17
     },
     {
       "id": "HKUST-TPG-046",
@@ -2572,10 +1874,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Part-time Master of Business Administration Program (Bi-weekly)",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 45,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pt-mba-biweekly/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 9
     },
     {
       "id": "HKUST-TPG-047",
@@ -2583,10 +1892,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Engineering Enterprise Management",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eem/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 18
     },
     {
       "id": "HKUST-TPG-048",
@@ -2594,10 +1910,27 @@ module.exports = {
       "programmeCode": "",
       "name": "Postgraduate Diploma and Master of Arts Programs in Social Science",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 24,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-ma-sosc/",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "HKUST-TPG-048-PSYCHOLOGY",
+          "name": "Psychology",
+          "type": "Concentration",
+          "ruleText": "Optional Concentration: complete at least three courses (9 credits) from the official Psychology required-course list.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-ma-sosc/"
+        }
+      ],
+      "trackSelectionOptional": true,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 6
     },
     {
       "id": "HKUST-TPG-049",
@@ -2605,10 +1938,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Entrepreneurial Leadership in Biotechnology",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-elbt/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 20
     },
     {
       "id": "HKUST-TPG-050",
@@ -2616,10 +1956,69 @@ module.exports = {
       "programmeCode": "",
       "name": "Postgraduate Diploma and Master of Science Programs in Civil Infrastructural Engineering and Management",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "HKUST-TPG-050-INFRASTRUCTURAL-SYSTEMS",
+          "name": "Infrastructural System Engineering and Management",
+          "type": "Concentration",
+          "ruleText": "Optional MSc Concentration: complete at least 12 credits in the selected sub-area. The Programme itself requires breadth across at least three sub-areas.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/"
+        },
+        {
+          "id": "HKUST-TPG-050-MATERIAL",
+          "name": "Material Engineering",
+          "type": "Concentration",
+          "ruleText": "Optional MSc Concentration: complete at least 12 credits in the selected sub-area. The Programme itself requires breadth across at least three sub-areas.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/"
+        },
+        {
+          "id": "HKUST-TPG-050-STRUCTURAL",
+          "name": "Structural Engineering",
+          "type": "Concentration",
+          "ruleText": "Optional MSc Concentration: complete at least 12 credits in the selected sub-area. The Programme itself requires breadth across at least three sub-areas.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/"
+        },
+        {
+          "id": "HKUST-TPG-050-ENVIRONMENTAL",
+          "name": "Environmental Engineering",
+          "type": "Concentration",
+          "ruleText": "Optional MSc Concentration: complete at least 12 credits in the selected sub-area. The Programme itself requires breadth across at least three sub-areas.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/"
+        },
+        {
+          "id": "HKUST-TPG-050-WATER-RESOURCES",
+          "name": "Water Resources Engineering",
+          "type": "Concentration",
+          "ruleText": "Optional MSc Concentration: complete at least 12 credits in the selected sub-area. The Programme itself requires breadth across at least three sub-areas.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/"
+        },
+        {
+          "id": "HKUST-TPG-050-TRANSPORTATION",
+          "name": "Transportation Engineering",
+          "type": "Concentration",
+          "ruleText": "Optional MSc Concentration: complete at least 12 credits in the selected sub-area. The Programme itself requires breadth across at least three sub-areas.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/"
+        },
+        {
+          "id": "HKUST-TPG-050-GEOTECHNICAL",
+          "name": "Geotechnical Engineering",
+          "type": "Concentration",
+          "ruleText": "Optional MSc Concentration: complete at least 12 credits in the selected sub-area. The Programme itself requires breadth across at least three sub-areas.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/"
+        }
+      ],
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "trackSelectionOptional": true,
+      "courseCount": 25
     },
     {
       "id": "HKUST-TPG-051",
@@ -2627,10 +2026,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Environmental Health and Safety",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ehs/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 19
     },
     {
       "id": "HKUST-TPG-052",
@@ -2638,10 +2044,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Postgraduate Diploma and Master of Science Programs in Environmental Engineering and Management",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-evem/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 16
     },
     {
       "id": "HKUST-TPG-053",
@@ -2649,10 +2062,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Environmental Science, Management and Sustainability",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-evsm/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 22
     },
     {
       "id": "POLYU-TPG-001",
@@ -2663,7 +2083,12 @@ module.exports = {
       "creditsRequired": 22,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21046-maf-paf-mae-pap",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21046-maf-paf-mae-pap",
+      "courseStatusNote": "The official Programme page could not be fetched during the 2026-07-11 verification: Client network socket disconnected before secure TLS connection was established",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-002",
@@ -2674,7 +2099,12 @@ module.exports = {
       "creditsRequired": 19,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21047-cgf-cgp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21047-cgf-cgp",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-003",
@@ -2685,7 +2115,12 @@ module.exports = {
       "creditsRequired": 9,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21049-afm-apm",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21049-afm-apm",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-004",
@@ -2696,7 +2131,12 @@ module.exports = {
       "creditsRequired": 19,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21050-fcf-cfp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21050-fcf-cfp",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-005",
@@ -2707,7 +2147,12 @@ module.exports = {
       "creditsRequired": 19,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21050-fim-imp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21050-fim-imp",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-006",
@@ -2718,7 +2163,12 @@ module.exports = {
       "creditsRequired": 9,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21052-fam-pam",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21052-fam-pam",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-007",
@@ -2729,7 +2179,12 @@ module.exports = {
       "creditsRequired": 9,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21054-efm-epm",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21054-efm-epm",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-008",
@@ -2740,7 +2195,12 @@ module.exports = {
       "creditsRequired": 34,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21055-aem-dem",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21055-aem-dem",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-009",
@@ -2751,7 +2211,12 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48006-amf-amp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48006-amf-amp",
+      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-010",
@@ -2762,7 +2227,12 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48005-omf-omp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48005-omf-omp",
+      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-011",
@@ -2773,7 +2243,12 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48007-lmf-lmp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48007-lmf-lmp",
+      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-012",
@@ -2784,7 +2259,12 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48008-smf-smp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48008-smf-smp",
+      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-013",
@@ -2795,7 +2275,12 @@ module.exports = {
       "creditsRequired": 6,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt",
+      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-014",
@@ -2806,7 +2291,12 @@ module.exports = {
       "creditsRequired": 3,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt",
+      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-015",
@@ -2817,7 +2307,12 @@ module.exports = {
       "creditsRequired": 22,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063",
+      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-016",
@@ -2828,7 +2323,12 @@ module.exports = {
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/11044",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/11044",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-017",
@@ -2839,7 +2339,12 @@ module.exports = {
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/11045-mft-mpt",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/11045-mft-mpt",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-018",
@@ -2850,7 +2355,12 @@ module.exports = {
       "creditsRequired": 22,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54047-fmh-pmh",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54047-fmh-pmh",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-019",
@@ -2861,7 +2371,12 @@ module.exports = {
       "creditsRequired": 13,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54047-fmf-pmf",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54047-fmf-pmf",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-020",
@@ -2872,7 +2387,12 @@ module.exports = {
       "creditsRequired": 37,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54047-msw",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54047-msw",
+      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-021",
@@ -2883,7 +2403,12 @@ module.exports = {
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54055-sdf-sdp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54055-sdf-sdp",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-022",
@@ -2894,7 +2419,12 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54057-ft-pt",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54057-ft-pt",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-023",
@@ -2905,7 +2435,12 @@ module.exports = {
       "creditsRequired": 9,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54057-lnf-lnp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54057-lnf-lnp",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-024",
@@ -2916,7 +2451,12 @@ module.exports = {
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54072-ft-pt",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54072-ft-pt",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-025",
@@ -2927,7 +2467,12 @@ module.exports = {
       "creditsRequired": 22,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54047-gcf-gcp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54047-gcf-gcp",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-026",
@@ -2938,7 +2483,12 @@ module.exports = {
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/47002-bmf-bmp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/47002-bmf-bmp",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-027",
@@ -2949,7 +2499,12 @@ module.exports = {
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/47005-stf-stp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/47005-stf-stp",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-028",
@@ -2960,7 +2515,12 @@ module.exports = {
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/47007-bmf-bmp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/47007-bmf-bmp",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-029",
@@ -2971,7 +2531,12 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/33084-bem-bsm",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/33084-bem-bsm",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-030",
@@ -2982,7 +2547,12 @@ module.exports = {
       "creditsRequired": 9,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/33085-fam-fmm",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/33085-fam-fmm",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-031",
@@ -2993,7 +2563,12 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/33086-fem-fsm",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/33086-fem-fsm",
+      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-032",
@@ -3004,7 +2579,12 @@ module.exports = {
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/33088-cfm-cpm",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/33088-cfm-cpm",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-033",
@@ -3015,7 +2595,12 @@ module.exports = {
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/32111-rfm-rpm",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/32111-rfm-rpm",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-034",
@@ -3026,7 +2611,12 @@ module.exports = {
       "creditsRequired": 9,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/32113-pfm-ppm",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/32113-pfm-ppm",
+      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-035",
@@ -3037,7 +2627,12 @@ module.exports = {
       "creditsRequired": 9,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/32114-ifm-ipm",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/32114-ifm-ipm",
+      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-036",
@@ -3048,7 +2643,12 @@ module.exports = {
       "creditsRequired": 9,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72017-bcf-bcp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72017-bcf-bcp",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-037",
@@ -3059,7 +2659,12 @@ module.exports = {
       "creditsRequired": 9,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72017-clf-clp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72017-clf-clp",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-038",
@@ -3070,7 +2675,12 @@ module.exports = {
       "creditsRequired": 9,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72017-llf-llp-pdp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72017-llf-llp-pdp",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-039",
@@ -3081,7 +2691,12 @@ module.exports = {
       "creditsRequired": 9,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72017-tlf-tlp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72017-tlf-tlp",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-040",
@@ -3092,7 +2707,12 @@ module.exports = {
       "creditsRequired": 9,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72029-ehf-ehp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72029-ehf-ehp",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-041",
@@ -3103,7 +2723,12 @@ module.exports = {
       "creditsRequired": 9,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72030-ttf-ttp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72030-ttf-ttp",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-042",
@@ -3114,7 +2739,12 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/31077-cfm-cpm",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/31077-cfm-cpm",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-043",
@@ -3125,7 +2755,12 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/31078-efm-epm",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/31078-efm-epm",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-044",
@@ -3136,7 +2771,12 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46010-ee-eet",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46010-ee-eet",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-045",
@@ -3147,7 +2787,12 @@ module.exports = {
       "creditsRequired": 9,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46011-eie-eit",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46011-eie-eit",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-046",
@@ -3158,7 +2803,12 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46012-ev-evt",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46012-ev-evt",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-047",
@@ -3169,7 +2819,12 @@ module.exports = {
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46013-mq-mqt",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46013-mq-mqt",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-048",
@@ -3180,7 +2835,12 @@ module.exports = {
       "creditsRequired": 6,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15057-mft",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15057-mft",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-049",
@@ -3191,7 +2851,12 @@ module.exports = {
       "creditsRequired": 3,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15058-mft",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15058-mft",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-050",
@@ -3202,7 +2867,12 @@ module.exports = {
       "creditsRequired": 3,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15058-npf",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15058-npf",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-051",
@@ -3213,7 +2883,12 @@ module.exports = {
       "creditsRequired": 3,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15060",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15060",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-052",
@@ -3224,7 +2899,12 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45080-efm-efd-eqm-eqp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45080-efm-efd-eqm-eqp",
+      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-053",
@@ -3235,7 +2915,12 @@ module.exports = {
       "creditsRequired": 9,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mls-ml",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mls-ml",
+      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-054",
@@ -3246,7 +2931,12 @@ module.exports = {
       "creditsRequired": 9,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt",
+      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-055",
@@ -3257,7 +2947,12 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-smf-smp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-smf-smp",
+      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-056",
@@ -3268,7 +2963,12 @@ module.exports = {
       "creditsRequired": 15,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/34084-gfm-gpm",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/34084-gfm-gpm",
+      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-057",
@@ -3279,7 +2979,12 @@ module.exports = {
       "creditsRequired": 9,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/34083-ifm-ipm",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/34083-ifm-ipm",
+      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-058",
@@ -3290,7 +2995,12 @@ module.exports = {
       "creditsRequired": 9,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-ifm-tfp-ipm-tpp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-ifm-tfp-ipm-tpp",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-059",
@@ -3301,7 +3011,12 @@ module.exports = {
       "creditsRequired": 34,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-iss",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-iss",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-060",
@@ -3312,7 +3027,12 @@ module.exports = {
       "creditsRequired": 9,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44089-sfm-sfp-gpm-spp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44089-sfm-sfp-gpm-spp",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-061",
@@ -3323,7 +3043,12 @@ module.exports = {
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44092-ofm-opm",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44092-ofm-opm",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-062",
@@ -3334,7 +3059,12 @@ module.exports = {
       "creditsRequired": 19,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44094-bfm-bpm",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44094-bfm-bpm",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-063",
@@ -3345,7 +3075,12 @@ module.exports = {
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23090-maf-map",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23090-maf-map",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-064",
@@ -3356,7 +3091,12 @@ module.exports = {
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23090-mhf-mhp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23090-mhf-mhp",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-065",
@@ -3367,7 +3107,12 @@ module.exports = {
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23090-mkf-mkp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23090-mkf-mkp",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-066",
@@ -3378,7 +3123,12 @@ module.exports = {
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23090-mif",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23090-mif",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-067",
@@ -3389,7 +3139,12 @@ module.exports = {
       "creditsRequired": 18,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/62027-dfm-dpm",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/62027-dfm-dpm",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-068",
@@ -3400,7 +3155,12 @@ module.exports = {
       "creditsRequired": 15,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/62037-fai-pai",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/62037-fai-pai",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-069",
@@ -3411,7 +3171,12 @@ module.exports = {
       "creditsRequired": 9,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43100-me-met",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43100-me-met",
+      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-070",
@@ -3422,7 +3187,12 @@ module.exports = {
       "creditsRequired": 9,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43101-ir-irt",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43101-ir-irt",
+      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-071",
@@ -3433,7 +3203,12 @@ module.exports = {
       "creditsRequired": 9,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43102-se-set",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43102-se-set",
+      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-072",
@@ -3444,7 +3219,12 @@ module.exports = {
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp",
+      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-073",
@@ -3455,7 +3235,12 @@ module.exports = {
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp",
+      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-074",
@@ -3466,7 +3251,12 @@ module.exports = {
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp",
+      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-075",
@@ -3477,7 +3267,12 @@ module.exports = {
       "creditsRequired": 18,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63032-afm-apm",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63032-afm-apm",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-076",
@@ -3488,7 +3283,12 @@ module.exports = {
       "creditsRequired": 21,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63024-ofm-opm",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63024-ofm-opm",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-077",
@@ -3499,7 +3299,12 @@ module.exports = {
       "creditsRequired": 18,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63029-qfm-qpm",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63029-qfm-qpm",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-078",
@@ -3510,7 +3315,12 @@ module.exports = {
       "creditsRequired": 21,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63031-afm-apm",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63031-afm-apm",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-079",
@@ -3521,7 +3331,12 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/06003-hif-hip",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/06003-hif-hip",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-080",
@@ -3532,7 +3347,12 @@ module.exports = {
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-fmm-pmm",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-fmm-pmm",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-081",
@@ -3543,7 +3363,12 @@ module.exports = {
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-frm-prm",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-frm-prm",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-082",
@@ -3554,7 +3379,12 @@ module.exports = {
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-msf-msp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-msf-msp",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-083",
@@ -3565,7 +3395,12 @@ module.exports = {
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-mfd-mpd",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-mfd-mpd",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-084",
@@ -3576,7 +3411,12 @@ module.exports = {
       "creditsRequired": 91,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55006",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55006",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-085",
@@ -3587,7 +3427,12 @@ module.exports = {
       "creditsRequired": 37,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/07001-fte-pte",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/07001-fte-pte",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-086",
@@ -3598,7 +3443,12 @@ module.exports = {
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/77002-maf-map",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/77002-maf-map",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-087",
@@ -3609,7 +3459,12 @@ module.exports = {
       "creditsRequired": 43,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/02022",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/02022",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-088",
@@ -3620,7 +3475,12 @@ module.exports = {
       "creditsRequired": 9,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/02029-dfm-dpm-ffm-fpm",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/02029-dfm-dpm-ffm-fpm",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-089",
@@ -3631,7 +3491,12 @@ module.exports = {
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61030-fit-pit",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61030-fit-pit",
+      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-090",
@@ -3642,170 +3507,14 @@ module.exports = {
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61036-fbt-pbt",
       "dataLevel": "structure",
-      "courseGroups": [
-        {
-          "name": "Core Subjects",
-          "creditsRequired": 18,
-          "courses": [
-            {
-              "code": "COMP5521",
-              "name": "Distributed Ledger Technology, Cryptocurrency and E-Payment"
-            },
-            {
-              "code": "COMP5563",
-              "name": "Applied Cryptography for Financial Applications"
-            },
-            {
-              "code": "COMP5564",
-              "name": "Machine Learning and Applications in Finance"
-            },
-            {
-              "code": "COMP5565",
-              "name": "Decentralized Apps Fundamentals and Development"
-            },
-            {
-              "code": "COMP5566",
-              "name": "Blockchain and Smart Contract Security"
-            },
-            {
-              "code": "COMP5567",
-              "name": "Distributed Algorithms and Protocols for Blockchains"
-            },
-            {
-              "code": "COMP5568",
-              "name": "Decentralized Finance"
-            },
-            {
-              "code": "COMP5569",
-              "name": "Fintech Regulation and Compliance"
-            }
-          ]
-        },
-        {
-          "name": "Elective / Project / Dissertation Options",
-          "creditsRequired": 12,
-          "courses": [
-            {
-              "code": "AF5115",
-              "name": "Accounting for Business Analysis"
-            },
-            {
-              "code": "AF5312",
-              "name": "Principles of Corporate Finance"
-            },
-            {
-              "code": "AF5344",
-              "name": "Investments"
-            },
-            {
-              "code": "AF5341",
-              "name": "Economics for Financial Analysis"
-            },
-            {
-              "code": "AF5343",
-              "name": "Quantitative Methods for Finance"
-            },
-            {
-              "code": "AF5347",
-              "name": "Financial Analysis and Valuation"
-            },
-            {
-              "code": "AF5351",
-              "name": "Derivatives Securities"
-            },
-            {
-              "code": "COMP5112",
-              "name": "Data Structures and Database Systems"
-            },
-            {
-              "code": "COMP5152",
-              "name": "Advanced Data Analytics"
-            },
-            {
-              "code": "COMP5221",
-              "name": "Software Project Management"
-            },
-            {
-              "code": "COMP5241",
-              "name": "Software Engineering and Development"
-            },
-            {
-              "code": "COMP5311",
-              "name": "Internet Infrastructure and Protocols"
-            },
-            {
-              "code": "COMP5355",
-              "name": "Cyber and Internet Security"
-            },
-            {
-              "code": "COMP5423",
-              "name": "Natural Language Processing"
-            },
-            {
-              "code": "COMP5434",
-              "name": "Big Data Computing"
-            },
-            {
-              "code": "COMP5511",
-              "name": "Artificial Intelligence Concepts"
-            },
-            {
-              "code": "COMP5523",
-              "name": "Computer Vision and Image Processing"
-            },
-            {
-              "code": "COMP5541",
-              "name": "Machine Learning and Data Analytics"
-            },
-            {
-              "code": "COMP5542",
-              "name": "Optimization and Applications"
-            },
-            {
-              "code": "COMP5574",
-              "name": "Computational Economics and Algorithms"
-            },
-            {
-              "code": "COMP5576",
-              "name": "Modern Cryptography"
-            },
-            {
-              "code": "COMP5577",
-              "name": "AI Security"
-            },
-            {
-              "code": "COMP5579",
-              "name": "IoT Security: Principles, Protocols, and Practice"
-            },
-            {
-              "code": "COMP5583",
-              "name": "Agentic Computing, Systems, and Applications"
-            },
-            {
-              "code": "COMP5584",
-              "name": "Large Language Models for Agents"
-            },
-            {
-              "code": "COMP5933",
-              "name": "Project"
-            },
-            {
-              "code": "COMP5940",
-              "name": "Dissertation"
-            }
-          ]
-        },
-        {
-          "name": "Academic Integrity and Ethics",
-          "creditsRequired": 1,
-          "courses": [
-            {
-              "code": "DSAI5T09",
-              "name": "Academic Integrity and Ethics in Computer and Mathematical Sciences"
-            }
-          ]
-        }
-      ]
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 36
     },
     {
       "id": "POLYU-TPG-091",
@@ -3816,7 +3525,12 @@ module.exports = {
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61038",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61038",
+      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-092",
@@ -3826,8 +3540,15 @@ module.exports = {
       "faculty": "School of Computing and Data Science (SCDS)",
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61039-fcy-pcy",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 39
     },
     {
       "id": "POLYU-TPG-093",
@@ -3837,8 +3558,16 @@ module.exports = {
       "faculty": "School of Computing and Data Science (SCDS)",
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61040-fas-pas",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "courseSourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en",
+      "courseLastVerifiedAt": "2026-07-11",
+      "dataLevel": "structure",
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 32
     },
     {
       "id": "POLYU-TPG-094",
@@ -3849,7 +3578,12 @@ module.exports = {
       "creditsRequired": 9,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/74001-atf-atp-lcf-lcp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/74001-atf-atp-lcf-lcp",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-095",
@@ -3860,7 +3594,12 @@ module.exports = {
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/73040-ftm-ptm",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/73040-ftm-ptm",
+      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-096",
@@ -3871,7 +3610,12 @@ module.exports = {
       "creditsRequired": 37,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/73035-ibd-ibp-isd-isp-ssd-ssp-ted-tep",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/73035-ibd-ibp-isd-isp-ssd-ssp-ted-tep",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-097",
@@ -3882,7 +3626,12 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14111-fpp-dfi",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14111-fpp-dfi",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-098",
@@ -3893,7 +3642,12 @@ module.exports = {
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14105-ftg-ptg",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14105-ftg-ptg",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-099",
@@ -3904,7 +3658,12 @@ module.exports = {
       "creditsRequired": 15,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14107-ffs-pfs",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14107-ffs-pfs",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-100",
@@ -3915,7 +3674,12 @@ module.exports = {
       "creditsRequired": 9,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14110-iwt-pwt-pgd",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14110-iwt-pwt-pgd",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-101",
@@ -3926,7 +3690,12 @@ module.exports = {
       "creditsRequired": 3,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24043",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24043",
+      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-102",
@@ -3937,7 +3706,12 @@ module.exports = {
       "creditsRequired": 32,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-103",
@@ -3948,7 +3722,12 @@ module.exports = {
       "creditsRequired": 19,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/71026-mcf-mcp-mlf-mlp",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/71026-mcf-mcp-mlf-mlp",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-104",
@@ -3959,7 +3738,12 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/53070-fts-pt",
       "dataLevel": "programme",
-      "courseGroups": []
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/53070-fts-pt",
+      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseCount": 0
     },
     {
       "id": "POLYU-TPG-105",
@@ -3967,10 +3751,17 @@ module.exports = {
       "programmeCode": "52049",
       "name": "Vision Science and Innovation",
       "faculty": "School of Optometry (SO)",
-      "creditsRequired": 30,
+      "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2027-28",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified",
+      "courseCount": 20
     },
     {
       "id": "CITYU-TPG-001",
@@ -3981,7 +3772,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/cityuhk-academy-of-innovation/cityuhk-academy-of-innovation/p88",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-002",
@@ -3991,8 +3782,15 @@ module.exports = {
       "faculty": "College Of Biomedicine",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-engineering/p69",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/",
+      "courseStatusNote": "",
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 28
     },
     {
       "id": "CITYU-TPG-003",
@@ -4003,7 +3801,28 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95",
       "dataLevel": "structure",
-      "courseGroups": []
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-003-BIOMEDICINE-RESEARCH",
+          "name": "Biomedicine Research Training Stream",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95"
+        },
+        {
+          "id": "CITYU-TPG-003-HEALTH-SCIENCES",
+          "name": "Health Sciences Training Stream",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-biomedical-sciences/p95"
+        }
+      ],
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 30
     },
     {
       "id": "CITYU-TPG-004",
@@ -4013,8 +3832,15 @@ module.exports = {
       "faculty": "College Of Biomedicine",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-biomedicine/department-of-neuroscience/p98",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-biomedicine/department-of-neuroscience/p98",
+      "courseStatusNote": "",
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 13
     },
     {
       "id": "CITYU-TPG-005",
@@ -4025,7 +3851,7 @@ module.exports = {
       "creditsRequired": 40,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p01a",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-006",
@@ -4036,7 +3862,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/department-of-accountancy/p02",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-007",
@@ -4046,8 +3872,15 @@ module.exports = {
       "faculty": "College Of Business",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/department-of-economics-and-finance/p04",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.cb.cityu.edu.hk/ef/msc/?category=programme&page=2017_onwards_structure",
+      "courseStatusNote": "",
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 8
     },
     {
       "id": "CITYU-TPG-008",
@@ -4057,8 +3890,15 @@ module.exports = {
       "faculty": "College Of Business",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/department-of-management/p07",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAGBM.htm",
+      "courseStatusNote": "",
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "verified",
+      "courseCount": 16
     },
     {
       "id": "CITYU-TPG-009",
@@ -4068,8 +3908,15 @@ module.exports = {
       "faculty": "College Of Business",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/department-of-decision-analytics-and-operations/p09",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.cb.cityu.edu.hk/dao/mscoscm/structure/curriculum/",
+      "courseStatusNote": "",
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 15
     },
     {
       "id": "CITYU-TPG-010",
@@ -4080,7 +3927,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/department-of-accountancy/p10",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-011",
@@ -4091,7 +3938,7 @@ module.exports = {
       "creditsRequired": 40,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p11",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-012",
@@ -4102,7 +3949,7 @@ module.exports = {
       "creditsRequired": 40,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-013",
@@ -4113,7 +3960,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/department-of-economics-and-finance/p13",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-014",
@@ -4123,8 +3970,15 @@ module.exports = {
       "faculty": "College Of Business",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/department-of-economics-and-finance/p15",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.cb.cityu.edu.hk/ef/msc/?category=programme&page=2017_onwards_structure",
+      "courseStatusNote": "",
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 8
     },
     {
       "id": "CITYU-TPG-015",
@@ -4135,7 +3989,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/department-of-information-systems/p16",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-016",
@@ -4146,7 +4000,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/department-of-marketing/p18",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-017",
@@ -4156,8 +4010,15 @@ module.exports = {
       "faculty": "College Of Business",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/department-of-management/p19",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights",
+      "courseStatusNote": "",
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 32
     },
     {
       "id": "CITYU-TPG-018",
@@ -4168,7 +4029,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p84",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-019",
@@ -4179,7 +4040,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/department-of-information-systems/p85",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-020",
@@ -4190,7 +4051,7 @@ module.exports = {
       "creditsRequired": 33,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p17",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-021",
@@ -4200,8 +4061,41 @@ module.exports = {
       "faculty": "College Of Computing",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p53",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p53",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-021-AI",
+          "name": "Artificial Intelligence",
+          "type": "Stream",
+          "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures"
+        },
+        {
+          "id": "CITYU-TPG-021-DATA-SCIENCE",
+          "name": "Data Science",
+          "type": "Stream",
+          "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures"
+        },
+        {
+          "id": "CITYU-TPG-021-INFORMATION-SECURITY",
+          "name": "Information Security",
+          "type": "Stream",
+          "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures"
+        },
+        {
+          "id": "CITYU-TPG-021-NO-CONCENTRATION",
+          "name": "No declared concentration",
+          "type": "Official study option",
+          "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-computer-science/curriculum/structures"
+        }
+      ],
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 36
     },
     {
       "id": "CITYU-TPG-022",
@@ -4212,7 +4106,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-data-science/p70",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-023",
@@ -4222,8 +4116,41 @@ module.exports = {
       "faculty": "College Of Computing",
       "creditsRequired": 31,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p75",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p75",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-023-AUTONOMOUS-DRIVING",
+          "name": "Autonomous Driving",
+          "type": "Stream",
+          "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum"
+        },
+        {
+          "id": "CITYU-TPG-023-GENERATIVE-AI",
+          "name": "Generative AI",
+          "type": "Stream",
+          "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum"
+        },
+        {
+          "id": "CITYU-TPG-023-TRUSTWORTHY-AI",
+          "name": "Trustworthy AI",
+          "type": "Stream",
+          "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum"
+        },
+        {
+          "id": "CITYU-TPG-023-NO-CONCENTRATION",
+          "name": "No declared concentration",
+          "type": "Official study option",
+          "sourceUrl": "https://www.cs.cityu.edu.hk/academic-programmes/msc-artificial-intelligence/curriculum"
+        }
+      ],
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 24
     },
     {
       "id": "CITYU-TPG-024",
@@ -4234,7 +4161,40 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-data-science/p79",
       "dataLevel": "structure",
-      "courseGroups": []
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-computing/department-of-data-science/p79",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-024-SCIENTIFIC-DISCOVERY",
+          "name": "AI for Scientific Discovery",
+          "type": "Focused Track",
+          "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs"
+        },
+        {
+          "id": "CITYU-TPG-024-DIGITAL-MEDICINE",
+          "name": "AI for Digital Medicine",
+          "type": "Focused Track",
+          "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs"
+        },
+        {
+          "id": "CITYU-TPG-024-SUSTAINABILITY",
+          "name": "AI for Sustainability",
+          "type": "Focused Track",
+          "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs"
+        },
+        {
+          "id": "CITYU-TPG-024-APPLIED-AI",
+          "name": "Applied AI",
+          "type": "Focused Track",
+          "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs"
+        }
+      ],
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 56
     },
     {
       "id": "CITYU-TPG-025",
@@ -4244,8 +4204,15 @@ module.exports = {
       "faculty": "College Of Computing",
       "creditsRequired": 31,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p91",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p91",
+      "courseStatusNote": "",
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 21
     },
     {
       "id": "CITYU-TPG-026",
@@ -4256,7 +4223,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-biostatistics/p97",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-027",
@@ -4267,7 +4234,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-architecture-and-civil-engineering/p52",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-028",
@@ -4278,7 +4245,7 @@ module.exports = {
       "creditsRequired": 45,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-electrical-engineering/p54",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-029",
@@ -4289,7 +4256,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p56",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-030",
@@ -4299,8 +4266,15 @@ module.exports = {
       "faculty": "College Of Engineering",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-materials-science-and-engineering/p58",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-engineering/department-of-materials-science-and-engineering/p58",
+      "courseStatusNote": "",
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 18
     },
     {
       "id": "CITYU-TPG-031",
@@ -4311,7 +4285,7 @@ module.exports = {
       "creditsRequired": 45,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-electrical-engineering/p59",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-032",
@@ -4322,7 +4296,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-architecture-and-civil-engineering/p60",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-033",
@@ -4333,7 +4307,7 @@ module.exports = {
       "creditsRequired": 60,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-architecture-and-civil-engineering/p64",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-034",
@@ -4344,7 +4318,34 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66",
       "dataLevel": "structure",
-      "courseGroups": []
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-034-MECHANICAL",
+          "name": "Mechanical",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66"
+        },
+        {
+          "id": "CITYU-TPG-034-ROBOTICS",
+          "name": "Robotics",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66"
+        },
+        {
+          "id": "CITYU-TPG-034-NUCLEAR",
+          "name": "Nuclear",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-mechanical-engineering/p66"
+        }
+      ],
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 26
     },
     {
       "id": "CITYU-TPG-035",
@@ -4355,7 +4356,7 @@ module.exports = {
       "creditsRequired": 55,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-architecture-and-civil-engineering/p82",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-036",
@@ -4366,7 +4367,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p86",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-037",
@@ -4377,7 +4378,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-038",
@@ -4388,7 +4389,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-039",
@@ -4399,7 +4400,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-media-and-communication/p25",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-040",
@@ -4410,7 +4411,7 @@ module.exports = {
       "creditsRequired": 36,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-public-and-international-affairs/p27",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-041",
@@ -4421,7 +4422,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-linguistics-and-translation/p30",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-042",
@@ -4432,7 +4433,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-chinese-and-history/p34",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-043",
@@ -4443,7 +4444,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-public-and-international-affairs/p37",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-044",
@@ -4454,7 +4455,7 @@ module.exports = {
       "creditsRequired": 24,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-public-and-international-affairs/p38",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-045",
@@ -4465,7 +4466,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-media-and-communication/p39",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-046",
@@ -4476,7 +4477,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-english/p40",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-047",
@@ -4487,7 +4488,14 @@ module.exports = {
       "creditsRequired": 55,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p71",
       "dataLevel": "structure",
-      "courseGroups": []
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p71",
+      "courseStatusNote": "",
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 24
     },
     {
       "id": "CITYU-TPG-048",
@@ -4498,7 +4506,28 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p76",
       "dataLevel": "structure",
-      "courseGroups": []
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p76",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-048-APPLIED-PSYCHOLOGY",
+          "name": "Applied Psychology",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p76"
+        },
+        {
+          "id": "CITYU-TPG-048-EDUCATION",
+          "name": "Education",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p76"
+        }
+      ],
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 16
     },
     {
       "id": "CITYU-TPG-049",
@@ -4509,7 +4538,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p77",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-050",
@@ -4520,7 +4549,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-public-and-international-affairs/p78",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-051",
@@ -4531,7 +4560,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/college-of-liberal-arts-and-social-sciences/p92",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-052",
@@ -4541,8 +4570,15 @@ module.exports = {
       "faculty": "College Of Science",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-science/department-of-physics/p50",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-science/department-of-physics/p50",
+      "courseStatusNote": "",
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 23
     },
     {
       "id": "CITYU-TPG-053",
@@ -4553,7 +4589,14 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-science/department-of-chemistry/p67",
       "dataLevel": "structure",
-      "courseGroups": []
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-science/department-of-chemistry/p67",
+      "courseStatusNote": "",
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 15
     },
     {
       "id": "CITYU-TPG-054",
@@ -4563,8 +4606,15 @@ module.exports = {
       "faculty": "College Of Science",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-science/department-of-mathematics/p68",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.cityu.edu.hk/ma/programmes/postgraduate/msc-financial-mathematics-and-statistics-msfms",
+      "courseStatusNote": "",
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 19
     },
     {
       "id": "CITYU-TPG-055",
@@ -4575,7 +4625,7 @@ module.exports = {
       "creditsRequired": 54,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-creative-media/school-of-creative-media/p80",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-056",
@@ -4586,7 +4636,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-creative-media/school-of-creative-media/p81",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-057",
@@ -4597,7 +4647,34 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63",
       "dataLevel": "structure",
-      "courseGroups": []
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-11",
+      "courseSourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-057-ENERGY",
+          "name": "Energy",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63"
+        },
+        {
+          "id": "CITYU-TPG-057-ENVIRONMENT",
+          "name": "Environment",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63"
+        },
+        {
+          "id": "CITYU-TPG-057-NO-CONCENTRATION",
+          "name": "No declared concentration",
+          "type": "Official study option",
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-energy-and-environment/school-of-energy-and-environment/p63"
+        }
+      ],
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 24
     },
     {
       "id": "CITYU-TPG-058",
@@ -4608,7 +4685,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-law/school-of-law/p41",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-059",
@@ -4619,7 +4696,7 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-law/school-of-law/p43",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-060",
@@ -4630,7 +4707,7 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-law/school-of-law/p45",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-061",
@@ -4641,7 +4718,7 @@ module.exports = {
       "creditsRequired": 24,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-law/school-of-law/p46",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "CITYU-TPG-062",
@@ -4652,7 +4729,7 @@ module.exports = {
       "creditsRequired": 12,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-law/school-of-law/p93",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-001",
@@ -4663,7 +4740,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-002",
@@ -4674,7 +4751,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-003",
@@ -4685,7 +4762,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-004",
@@ -4696,7 +4773,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-005",
@@ -4707,7 +4784,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-006",
@@ -4718,7 +4795,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-007",
@@ -4729,7 +4806,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-008",
@@ -4740,7 +4817,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-009",
@@ -4751,7 +4828,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-010",
@@ -4762,7 +4839,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-011",
@@ -4773,7 +4850,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-012",
@@ -4784,7 +4861,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-013",
@@ -4795,7 +4872,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-014",
@@ -4806,7 +4883,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-015",
@@ -4817,7 +4894,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-016",
@@ -4828,7 +4905,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-017",
@@ -4839,7 +4916,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-018",
@@ -4850,7 +4927,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-019",
@@ -4861,7 +4938,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-020",
@@ -4872,7 +4949,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-021",
@@ -4883,7 +4960,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-022",
@@ -4894,7 +4971,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-023",
@@ -4905,7 +4982,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-024",
@@ -4916,7 +4993,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-025",
@@ -4927,7 +5004,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-026",
@@ -4938,7 +5015,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-027",
@@ -4949,7 +5026,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-028",
@@ -4960,7 +5037,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-029",
@@ -4971,7 +5048,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-030",
@@ -4982,7 +5059,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-031",
@@ -4993,7 +5070,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-032",
@@ -5004,7 +5081,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-033",
@@ -5015,7 +5092,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-034",
@@ -5026,7 +5103,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-035",
@@ -5037,7 +5114,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-036",
@@ -5048,7 +5125,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-037",
@@ -5059,7 +5136,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-038",
@@ -5070,7 +5147,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-039",
@@ -5081,7 +5158,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-040",
@@ -5092,7 +5169,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-041",
@@ -5103,7 +5180,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-042",
@@ -5114,7 +5191,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-043",
@@ -5125,7 +5202,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-044",
@@ -5136,7 +5213,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-045",
@@ -5147,7 +5224,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-046",
@@ -5158,7 +5235,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-047",
@@ -5169,7 +5246,7 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
     },
     {
       "id": "HKBU-TPG-048",
@@ -5180,7 +5257,2151 @@ module.exports = {
       "creditsRequired": null,
       "sourceUrl": "",
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-EMPAL",
+      "universityCode": "EDUHK",
+      "programmeCode": "EMPAL",
+      "name": "Executive Master of Public Administration and Leadership",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MA-BRBCA",
+      "universityCode": "EDUHK",
+      "programmeCode": "MA(BRBCA)",
+      "name": "Master of Arts in Belt and Road Business Communication and Administration",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MA-CVBLE",
+      "universityCode": "EDUHK",
+      "programmeCode": "MA(CVBLE)",
+      "name": "Master of Arts in Chinese Values-Based Leadership Education",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MA-CECI",
+      "universityCode": "EDUHK",
+      "programmeCode": "MA(CECI)",
+      "name": "Master of Arts in Comparative Education and Collaborative Innovation",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MA-DHRMOM",
+      "universityCode": "EDUHK",
+      "programmeCode": "MA(DHRMOM)",
+      "name": "Master of Arts in Digital Human Resource Management and Organisational Marketing",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MA-DMEC",
+      "universityCode": "EDUHK",
+      "programmeCode": "MA(DMEC)",
+      "name": "Master of Arts in Digital Marketing and E-Commerce",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MA-ETFW",
+      "universityCode": "EDUHK",
+      "programmeCode": "MA(ETFW)",
+      "name": "Master of Arts in Emerging Technology for Future Workforce",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MA-ESM",
+      "universityCode": "EDUHK",
+      "programmeCode": "MA(ESM)",
+      "name": "Master of Arts in E-Sports Management",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MA-GLOBALHE",
+      "universityCode": "EDUHK",
+      "programmeCode": "MA(GlobalHE)",
+      "name": "Master of Arts in Global Higher Education",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MA-MLE",
+      "universityCode": "EDUHK",
+      "programmeCode": "MA(MLE)",
+      "name": "Master of Arts in Mindfulness and Life Education",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MA-NMSM",
+      "universityCode": "EDUHK",
+      "programmeCode": "MA(NMSM)",
+      "name": "Master of Arts in New Media and Social Media",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MA-SRE",
+      "universityCode": "EDUHK",
+      "programmeCode": "MA(SRE)",
+      "name": "Master of Arts in Science and Robotics Education",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MGM",
+      "universityCode": "EDUHK",
+      "programmeCode": "MGM",
+      "name": "Master of Global Management",
+      "academicYear": "2027-28",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-LLM-NSL",
+      "universityCode": "EDUHK",
+      "programmeCode": "LLM(NSL)",
+      "name": "Master of Laws in National Security Law",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-LLM-DG",
+      "universityCode": "EDUHK",
+      "programmeCode": "LLM(DG)",
+      "name": "Master of Laws in Digital Governance",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MM",
+      "universityCode": "EDUHK",
+      "programmeCode": "MM",
+      "name": "Master of Management",
+      "academicYear": "2027-28",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MOT",
+      "universityCode": "EDUHK",
+      "programmeCode": "MOT",
+      "name": "Master of Occupational Therapy",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MSC-AIEP",
+      "universityCode": "EDUHK",
+      "programmeCode": "MSc(AIEP)",
+      "name": "Master of Science in Artificial Intelligence for Executive Professionals",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MSC-EDN",
+      "universityCode": "EDUHK",
+      "programmeCode": "MSc(EdN)",
+      "name": "Master of Science in Educational Neuroscience",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MSC-ESGSD",
+      "universityCode": "EDUHK",
+      "programmeCode": "MSc(ESGSD)",
+      "name": "Master of Science in Environmental, Social and Governance for Sustainable Development",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MED",
+      "universityCode": "EDUHK",
+      "programmeCode": "MEd",
+      "name": "Master of Education",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": 24,
+      "sourceUrl": "https://gs.eduhk.hk/prospective/med/",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [
+        {
+          "id": "EDUHK-TPG-DIR-MED-BH",
+          "code": "BH",
+          "name": "Business Education and Human Resources Development",
+          "type": "area_of_focus",
+          "sourceUrl": "https://gs.eduhk.hk/prospective/med/",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "EDUHK-TPG-DIR-MED-CTA",
+          "code": "CTA",
+          "name": "Curriculum, Teaching and Assessment",
+          "type": "area_of_focus",
+          "sourceUrl": "https://gs.eduhk.hk/prospective/med/",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "EDUHK-TPG-DIR-MED-EC",
+          "code": "EC",
+          "name": "Early Childhood Education",
+          "type": "area_of_focus",
+          "sourceUrl": "https://gs.eduhk.hk/prospective/med/",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "EDUHK-TPG-DIR-MED-EDP",
+          "code": "EDP",
+          "name": "Educational and Developmental Psychology",
+          "type": "area_of_focus",
+          "sourceUrl": "https://gs.eduhk.hk/prospective/med/",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "EDUHK-TPG-DIR-MED-ELS",
+          "code": "ELS",
+          "name": "Educational Leadership",
+          "type": "area_of_focus",
+          "sourceUrl": "https://gs.eduhk.hk/prospective/med/",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "EDUHK-TPG-DIR-MED-EDS",
+          "code": "EDS",
+          "name": "Educational Studies",
+          "type": "area_of_focus",
+          "sourceUrl": "https://gs.eduhk.hk/prospective/med/",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "EDUHK-TPG-DIR-MED-EAP",
+          "code": "EAP",
+          "name": "English for Academic Purposes",
+          "type": "area_of_focus",
+          "sourceUrl": "https://gs.eduhk.hk/prospective/med/",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "EDUHK-TPG-DIR-MED-HPE",
+          "code": "HPE",
+          "name": "Health and Physical Education",
+          "type": "area_of_focus",
+          "sourceUrl": "https://gs.eduhk.hk/prospective/med/",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "EDUHK-TPG-DIR-MED-MTSE",
+          "code": "MTSE",
+          "name": "Mathematics, Technology, Science and Environment",
+          "type": "area_of_focus",
+          "sourceUrl": "https://gs.eduhk.hk/prospective/med/",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "EDUHK-TPG-DIR-MED-SNC",
+          "code": "SNC",
+          "name": "Special Needs, Giftedness and Counselling",
+          "type": "area_of_focus",
+          "sourceUrl": "https://gs.eduhk.hk/prospective/med/",
+          "lastVerifiedAt": "2026-07-11"
+        }
+      ],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MA-CFE",
+      "universityCode": "EDUHK",
+      "programmeCode": "MA(CFE)",
+      "name": "Master of Arts in Child and Family Education",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MACSLE",
+      "universityCode": "EDUHK",
+      "programmeCode": "MACSLE",
+      "name": "Master of Arts in Chinese Studies (Language Education)",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MA-CHEM",
+      "universityCode": "EDUHK",
+      "programmeCode": "MA(CHEM)",
+      "name": "Master of Arts in Cultural Heritage Education and Management",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MADHCP",
+      "universityCode": "EDUHK",
+      "programmeCode": "MADHCP",
+      "name": "Master of Arts in Digital Humanities for Cultural Professionals",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MA-EFS",
+      "universityCode": "EDUHK",
+      "programmeCode": "MA(EfS)",
+      "name": "Master of Arts in Education for Sustainability",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MA-EC",
+      "universityCode": "EDUHK",
+      "programmeCode": "MA(EC)",
+      "name": "Master of Arts in Educational Counselling",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MAGHE",
+      "universityCode": "EDUHK",
+      "programmeCode": "MAGHE",
+      "name": "Master of Arts in Global Histories of Education",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MA-GSE",
+      "universityCode": "EDUHK",
+      "programmeCode": "MA(GSE)",
+      "name": "Master of Arts in Global Studies in Education",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MA-IECE",
+      "universityCode": "EDUHK",
+      "programmeCode": "MA(IECE)",
+      "name": "Master of Arts in Inclusive Early Childhood Education",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MAICT",
+      "universityCode": "EDUHK",
+      "programmeCode": "MAICT",
+      "name": "Master of Arts in Intercultural Communication and Translation",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MA-MP",
+      "universityCode": "EDUHK",
+      "programmeCode": "MA(MP)",
+      "name": "Master of Arts in Mathematics and Pedagogy",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MA-ME",
+      "universityCode": "EDUHK",
+      "programmeCode": "MA(ME)",
+      "name": "Master of Arts in Music Education",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MA-PFE",
+      "universityCode": "EDUHK",
+      "programmeCode": "MA(PFE)",
+      "name": "Master of Arts in Personal Finance Education",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MA-PPE",
+      "universityCode": "EDUHK",
+      "programmeCode": "MA(PPE)",
+      "name": "Master of Arts in Positive Psychology in Education",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MA-STEM-ED",
+      "universityCode": "EDUHK",
+      "programmeCode": "MA(STEM Ed)",
+      "name": "Master of Arts in STEM Education",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MATCIL",
+      "universityCode": "EDUHK",
+      "programmeCode": "MATCIL",
+      "name": "Master of Arts in Teaching Chinese as an International Language",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MATESOL",
+      "universityCode": "EDUHK",
+      "programmeCode": "MATESOL",
+      "name": "Master of Arts in Teaching English to Speakers of Other Languages",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MA-VAECP",
+      "universityCode": "EDUHK",
+      "programmeCode": "MA(VAECP)",
+      "name": "Master of Arts in Visual Arts Education and Creative Practice",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MPPM",
+      "universityCode": "EDUHK",
+      "programmeCode": "MPPM",
+      "name": "Master of Public Policy and Management",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MSC-ADS",
+      "universityCode": "EDUHK",
+      "programmeCode": "MSc(ADS)",
+      "name": "Master of Science in Applied Data Science",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MSC-AI-EDTECH",
+      "universityCode": "EDUHK",
+      "programmeCode": "MSc(AI&EdTech)",
+      "name": "Master of Science in Artificial Intelligence and Educational Technology",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MSC-EPM-EN",
+      "universityCode": "EDUHK",
+      "programmeCode": "MSc(EPM)-EN",
+      "name": "Master of Science in Education Policy and Management (English)",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MSC-EPM-ZH",
+      "universityCode": "EDUHK",
+      "programmeCode": "MSc(EPM)-ZH",
+      "name": "Master of Science in Education Policy and Management (Chinese)",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MSCESLPLD",
+      "universityCode": "EDUHK",
+      "programmeCode": "MScESLPLD",
+      "name": "Master of Science in Educational Speech-Language Pathology and Learning Disabilities",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MSC-LSSE",
+      "universityCode": "EDUHK",
+      "programmeCode": "MSc(LSSE)",
+      "name": "Master of Science in Learning Sciences and Smart Education",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MSOCSC-EP",
+      "universityCode": "EDUHK",
+      "programmeCode": "MSocSc(EP)",
+      "name": "Master of Social Sciences in Educational Psychology",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MSOCSCP-SCS",
+      "universityCode": "EDUHK",
+      "programmeCode": "MSocScP(SCS)",
+      "name": "Master of Social Sciences in Psychology (Schools and Community Settings)",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MSOCSC-SCM",
+      "universityCode": "EDUHK",
+      "programmeCode": "MSocSc(SCM)",
+      "name": "Master of Social Sciences in Sports Coaching and Management",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MSOCSC-TPWB",
+      "universityCode": "EDUHK",
+      "programmeCode": "MSocSc(TPWB)",
+      "name": "Master of Social Sciences in Therapeutic Play and Well-Being",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "EDUHK-TPG-DIR-MTEACH",
+      "universityCode": "EDUHK",
+      "programmeCode": "MTeach",
+      "name": "Master of Teaching",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceLabel": "EdUHK official taught postgraduate programme directory",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-08-000497-6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "08/000497/6",
+      "name": "Master of Arts in Chinese",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [
+        {
+          "id": "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6",
+          "code": "25/000001/L6",
+          "name": "Global Chinese Studies",
+          "type": "specialism",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        }
+      ],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-08-000498-6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "08/000498/6",
+      "name": "Master of Cultural Studies",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [
+        {
+          "id": "LINGNAN-TPG-DIR-08-000498-6-22-001017-L6",
+          "code": "22/001017/L6",
+          "name": "Digital and Cultural Innovation",
+          "type": "specialism",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "LINGNAN-TPG-DIR-08-000498-6-25-001273-L6",
+          "code": "25/001273/L6",
+          "name": "Digital Media and Culture",
+          "type": "specialism",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        }
+      ],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-08-000500-6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "08/000500/6",
+      "name": "Master of Science in International Banking and Finance",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-08-000501-6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "08/000501/6",
+      "name": "Master of Accountancy",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-13-000684-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "13/000684/L6",
+      "name": "Master of Science in Marketing and International Business",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-15-003341-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "15/003341/L6",
+      "name": "Master of Science in eBusiness and Supply Chain Management",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-16-000107-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "16/000107/L6",
+      "name": "Master of Science in Finance",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-16-000936-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "16/000936/L6",
+      "name": "Master of Science in Work and Organisational Psychology",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-17-000204-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "17/000204/L6",
+      "name": "Master of Social Sciences in Comparative Social Policy (International)",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [
+        {
+          "id": "LINGNAN-TPG-DIR-17-000204-L6-25-000017-L6",
+          "code": "25/000017/L6",
+          "name": "Social Innovation",
+          "type": "specialism",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "LINGNAN-TPG-DIR-17-000204-L6-25-000023-L6",
+          "code": "25/000023/L6",
+          "name": "Social Research",
+          "type": "specialism",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        }
+      ],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-17-000487-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "17/000487/L6",
+      "name": "Master of Arts in International Higher Education and Management",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [
+        {
+          "id": "LINGNAN-TPG-DIR-17-000487-L6-24-000294-L6",
+          "code": "24/000294/L6",
+          "name": "Managing Education Change in International Context",
+          "type": "specialism",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        }
+      ],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-17-001035-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "17/001035/L6",
+      "name": "Master of Arts in International Affairs",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-18-000444-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "18/000444/L6",
+      "name": "Master of Science in International and Development Economics",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-19-000062-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "19/000062/L6",
+      "name": "Master of Social Sciences in Organisational Psychology and Education Management",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-19-000493-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "19/000493/L6",
+      "name": "Master of Social Sciences in Health and Social Services Management",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-19-000888-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "19/000888/L6",
+      "name": "Master of Arts in Translation Studies",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-19-001288-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "19/001288/L6",
+      "name": "Master of Cities and Governance",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [
+        {
+          "id": "LINGNAN-TPG-DIR-19-001288-L6-21-000488-L6",
+          "code": "21/000488/L6",
+          "name": "Environment and Sustainability",
+          "type": "specialism",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        }
+      ],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-20-000103-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "20/000103/L6",
+      "name": "Master of Arts in Curating and Art History",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-20-000373-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "20/000373/L6",
+      "name": "Master of Science in Business Innovation and Entrepreneurship",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-20-000658-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "20/000658/L6",
+      "name": "Master of Science in Artificial Intelligence and Business Analytics",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-21-000086-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "21/000086/L6",
+      "name": "Master of Arts in Creative and Media Industries",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-21-001281-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "21/001281/L6",
+      "name": "Master of Science in Health Analytics and Management",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-22-000098-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "22/000098/L6",
+      "name": "Master of Arts in Social Entrepreneurship and Innovation Management",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [
+        {
+          "id": "LINGNAN-TPG-DIR-22-000098-L6-23-000254-L6",
+          "code": "23/000254/L6",
+          "name": "Art and Design for Social Impact",
+          "type": "specialism",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        }
+      ],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-22-000158-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "22/000158/L6",
+      "name": "Master of Social Sciences in Applied Psychology",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [
+        {
+          "id": "LINGNAN-TPG-DIR-22-000158-L6-23-000260-L6",
+          "code": "23/000260/L6",
+          "name": "Counselling Psychology",
+          "type": "specialism",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        }
+      ],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-22-000916-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "22/000916/L6",
+      "name": "Master of Social Sciences in Comparative Public Administration",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [
+        {
+          "id": "LINGNAN-TPG-DIR-22-000916-L6-24-000501-L6",
+          "code": "24/000501/L6",
+          "name": "Digital and Smart Governance",
+          "type": "specialism",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        }
+      ],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-22-001024-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "22/001024/L6",
+      "name": "Master of Arts in Arts and Cultural Heritage Management",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [
+        {
+          "id": "LINGNAN-TPG-DIR-22-001024-L6-22-001024-L6",
+          "code": "22/001024/L6",
+          "name": "Heritage Tourism and Management",
+          "type": "specialism",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "LINGNAN-TPG-DIR-22-001024-L6-23-000255-L6",
+          "code": "23/000255/L6",
+          "name": "Cultural Management and Digital Future",
+          "type": "specialism",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        }
+      ],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-23-000221-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "23/000221/L6",
+      "name": "Master of Science in Arts Technology and Business",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-23-000452-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "23/000452/L6",
+      "name": "Master of Science in Humanitarian Technology and Inclusive Business",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-23-000472-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "23/000472/L6",
+      "name": "Master of Housing Policy and Management",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-23-000864-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "23/000864/L6",
+      "name": "Master of Science in Environmental, Social, and Governance Management",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [
+        {
+          "id": "LINGNAN-TPG-DIR-23-000864-L6-24-000454-L6",
+          "code": "24/000454/L6",
+          "name": "Sustainable Technology",
+          "type": "specialism",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        }
+      ],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-24-000101-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "24/000101/L6",
+      "name": "Master of Science in Data Science",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-24-000108-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "24/000108/L6",
+      "name": "Master of Arts in Digital History in Global Asia",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-24-000242-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "24/000242/L6",
+      "name": "Master of Arts in Artificial Intelligence and the Future",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-24-000463-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "24/000463/L6",
+      "name": "Master of Science in Sustainability and Environmental Analytics",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-24-000464-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "24/000464/L6",
+      "name": "Master of Science in Cross-disciplinary Technologies+",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [
+        {
+          "id": "LINGNAN-TPG-DIR-24-000464-L6-25-000352-L6",
+          "code": "25/000352/L6",
+          "name": "Statistics and Data Analysis",
+          "type": "specialism",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "LINGNAN-TPG-DIR-24-000464-L6-25-000353-L6",
+          "code": "25/000353/L6",
+          "name": "Product Design",
+          "type": "specialism",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "LINGNAN-TPG-DIR-24-000464-L6-25-000354-L6",
+          "code": "25/000354/L6",
+          "name": "Business and Finance Management",
+          "type": "specialism",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "LINGNAN-TPG-DIR-24-000464-L6-25-000355-L6",
+          "code": "25/000355/L6",
+          "name": "Renewable Energy Management",
+          "type": "specialism",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "LINGNAN-TPG-DIR-24-000464-L6-25-000356-L6",
+          "code": "25/000356/L6",
+          "name": "Carbon Neutralisation and Sustainability",
+          "type": "specialism",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "LINGNAN-TPG-DIR-24-000464-L6-25-000357-L6",
+          "code": "25/000357/L6",
+          "name": "Computer Science",
+          "type": "specialism",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "LINGNAN-TPG-DIR-24-000464-L6-25-000358-L6",
+          "code": "25/000358/L6",
+          "name": "Digital Media Business Management",
+          "type": "specialism",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "LINGNAN-TPG-DIR-24-000464-L6-25-000359-L6",
+          "code": "25/000359/L6",
+          "name": "International e-Business",
+          "type": "specialism",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "LINGNAN-TPG-DIR-24-000464-L6-25-000360-L6",
+          "code": "25/000360/L6",
+          "name": "Automotive and Advanced Manufacturing",
+          "type": "specialism",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "LINGNAN-TPG-DIR-24-000464-L6-25-000361-L6",
+          "code": "25/000361/L6",
+          "name": "Advanced Material Science",
+          "type": "specialism",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        }
+      ],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-24-000550-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "24/000550/L6",
+      "name": "Master of China and Regional Development Studies",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [
+        {
+          "id": "LINGNAN-TPG-DIR-24-000550-L6-24-000551-L6",
+          "code": "24/000551/L6",
+          "name": "China-Africa Studies",
+          "type": "specialism",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "LINGNAN-TPG-DIR-24-000550-L6-24-000552-L6",
+          "code": "24/000552/L6",
+          "name": "China and East Asia Studies",
+          "type": "specialism",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "LINGNAN-TPG-DIR-24-000550-L6-24-000553-L6",
+          "code": "24/000553/L6",
+          "name": "Greater Bay Area Studies",
+          "type": "specialism",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        }
+      ],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-24-000812-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "24/000812/L6",
+      "name": "Master of Science in Human Resource and Organisational Management",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [
+        {
+          "id": "LINGNAN-TPG-DIR-24-000812-L6-25-000384-L6",
+          "code": "25/000384/L6",
+          "name": "Human Resource Analytics and Digital Transformation",
+          "type": "specialism",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        }
+      ],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-25-000019-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "25/000019/L6",
+      "name": "Master of Science in Risk, Insurance and Actuarial Analytics",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-25-000168-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "25/000168/L6",
+      "name": "Master of Management",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-25-000294-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "25/000294/L6",
+      "name": "Master of Science in Industrial Data Analytics",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-25-000304-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "25/000304/L6",
+      "name": "Master of Artificial Intelligence Studies",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [
+        {
+          "id": "LINGNAN-TPG-DIR-25-000304-L6-26-000453-L6",
+          "code": "26/000453/L6",
+          "name": "Chinese",
+          "type": "medium",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        }
+      ],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-25-000348-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "25/000348/L6",
+      "name": "Master of Research in Advanced Data Science",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-25-000350-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "25/000350/L6",
+      "name": "Master of Science in Smart City Technologies and Applications",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-25-000400-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "25/000400/L6",
+      "name": "Master of Business Studies",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-25-000634-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "25/000634/L6",
+      "name": "Master of Arts in Digital English Studies",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-25-000888-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "25/000888/L6",
+      "name": "Master of Liberal Sciences",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [
+        {
+          "id": "LINGNAN-TPG-DIR-25-000888-L6-25-000889-L6",
+          "code": "25/000889/L6",
+          "name": "Applied Sports and Health Science",
+          "type": "specialism",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "LINGNAN-TPG-DIR-25-000888-L6-25-000890-L6",
+          "code": "25/000890/L6",
+          "name": "Music and Performance",
+          "type": "specialism",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "LINGNAN-TPG-DIR-25-000888-L6-25-000891-L6",
+          "code": "25/000891/L6",
+          "name": "Applied Arts in TechMedia",
+          "type": "specialism",
+          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "lastVerifiedAt": "2026-07-11"
+        }
+      ],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-25-001304-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "25/001304/L6",
+      "name": "Master of Science in Global Humanitarian Innovation and Technology",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-26-000201-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "26/000201/L6",
+      "name": "Master of Social Sciences in Sociology and Data Analytics",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-26-000261-L6",
+      "universityCode": "LINGNAN",
+      "programmeCode": "26/000261/L6",
+      "name": "Master of Smart Manufacturing",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
+    },
+    {
+      "id": "LINGNAN-TPG-DIR-MASTER-OF-SCIENCE-IN-SMART-AGEING-AND-GERONTOLOG",
+      "universityCode": "LINGNAN",
+      "programmeCode": "",
+      "name": "Master of Science in Smart Ageing and Gerontology",
+      "academicYear": "2026-27",
+      "faculty": "Faculty / School shown on official programme page",
+      "creditsRequired": null,
+      "sourceUrl": "https://scholars.ln.edu.hk/en/organisations/school-of-graduate-studies/",
+      "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
+      "nameKind": "official_programme_name",
+      "lastVerifiedAt": "2026-07-11",
+      "sourceStatus": "programme_directory_verified",
+      "directorySupplement": true,
+      "tracks": [],
+      "dataLevel": "programme",
+      "courseCount": 0
     }
   ]
 };

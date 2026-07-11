@@ -1,0 +1,614 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "POLYU",
+  "academicYear": "2027-28",
+  "verifiedAt": "2026-07-11",
+  "programmes": [
+    {
+      "programmeId": "POLYU-TPG-001",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21046-maf-paf-mae-pap",
+      "statusNote": "The official Programme page could not be fetched during the 2026-07-11 verification: Client network socket disconnected before secure TLS connection was established"
+    },
+    {
+      "programmeId": "POLYU-TPG-002",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21047-cgf-cgp",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-003",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21049-afm-apm",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-004",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21050-fcf-cfp",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-005",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21050-fim-imp",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-006",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21052-fam-pam",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-007",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21054-efm-epm",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-008",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21055-aem-dem",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-009",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48006-amf-amp",
+      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-010",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48005-omf-omp",
+      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-011",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48007-lmf-lmp",
+      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-012",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48008-smf-smp",
+      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-013",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt",
+      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-014",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt",
+      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-015",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063",
+      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-016",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/11044",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-017",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/11045-mft-mpt",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-018",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54047-fmh-pmh",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-019",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54047-fmf-pmf",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-020",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54047-msw",
+      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-021",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54055-sdf-sdp",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-022",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54057-ft-pt",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-023",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54057-lnf-lnp",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-024",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54072-ft-pt",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-025",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54047-gcf-gcp",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-026",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/47002-bmf-bmp",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-027",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/47005-stf-stp",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-028",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/47007-bmf-bmp",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-029",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/33084-bem-bsm",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-030",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/33085-fam-fmm",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-031",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/33086-fem-fsm",
+      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-032",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/33088-cfm-cpm",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-033",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/32111-rfm-rpm",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-034",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/32113-pfm-ppm",
+      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-035",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/32114-ifm-ipm",
+      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-036",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72017-bcf-bcp",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-037",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72017-clf-clp",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-038",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72017-llf-llp-pdp",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-039",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72017-tlf-tlp",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-040",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72029-ehf-ehp",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-041",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72030-ttf-ttp",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-042",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/31077-cfm-cpm",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-043",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/31078-efm-epm",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-044",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46010-ee-eet",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-045",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46011-eie-eit",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-046",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46012-ev-evt",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-047",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46013-mq-mqt",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-048",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15057-mft",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-049",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15058-mft",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-050",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15058-npf",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-051",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15060",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-052",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45080-efm-efd-eqm-eqp",
+      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-053",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mls-ml",
+      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-054",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt",
+      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-055",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-smf-smp",
+      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-056",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/34084-gfm-gpm",
+      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-057",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/34083-ifm-ipm",
+      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-058",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-ifm-tfp-ipm-tpp",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-059",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-iss",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-060",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44089-sfm-sfp-gpm-spp",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-061",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44092-ofm-opm",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-062",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44094-bfm-bpm",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-063",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23090-maf-map",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-064",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23090-mhf-mhp",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-065",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23090-mkf-mkp",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-066",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23090-mif",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-067",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/62027-dfm-dpm",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-068",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/62037-fai-pai",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-069",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43100-me-met",
+      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-070",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43101-ir-irt",
+      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-071",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43102-se-set",
+      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-072",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp",
+      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-073",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp",
+      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-074",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp",
+      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-075",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63032-afm-apm",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-076",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63024-ofm-opm",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-077",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63029-qfm-qpm",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-078",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63031-afm-apm",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-079",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/06003-hif-hip",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-080",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-fmm-pmm",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-081",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-frm-prm",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-082",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-msf-msp",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-083",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-mfd-mpd",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-084",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55006",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-085",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/07001-fte-pte",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-086",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/77002-maf-map",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-087",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/02022",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-088",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/02029-dfm-dpm-ffm-fpm",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-089",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61030-fit-pit",
+      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-091",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61038",
+      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-094",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/74001-atf-atp-lcf-lcp",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-095",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/73040-ftm-ptm",
+      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-096",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/73035-ibd-ibp-isd-isp-ssd-ssp-ted-tep",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-097",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14111-fpp-dfi",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-098",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14105-ftg-ptg",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-099",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14107-ffs-pfs",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-100",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14110-iwt-pwt-pgd",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-101",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24043",
+      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-102",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-103",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/71026-mcf-mcp-mlf-mlp",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    },
+    {
+      "programmeId": "POLYU-TPG-104",
+      "status": "blocked",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/53070-fts-pt",
+      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+    }
+  ]
+}

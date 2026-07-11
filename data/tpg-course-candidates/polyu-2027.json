@@ -1,0 +1,2806 @@
+{
+  "schemaVersion": 1,
+  "academicYear": "2027-28",
+  "generatedAt": "2026-07-11T10:09:15.518Z",
+  "programmes": [
+    {
+      "programmeId": "POLYU-TPG-001",
+      "officialSubjectArea": "",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21046-maf-paf-mae-pap",
+      "error": "Client network socket disconnected before secure TLS connection was established",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-002",
+      "officialSubjectArea": "Corporate Governance",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21047-cgf-cgp",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-003",
+      "officialSubjectArea": "Accountancy",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21049-afm-apm",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-004",
+      "officialSubjectArea": "Finance (Corporate Finance)",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21050-fcf-cfp",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-005",
+      "officialSubjectArea": "Finance (Investment Management)",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21050-fim-imp",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-006",
+      "officialSubjectArea": "Accounting and Finance Analytics",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21052-fam-pam",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-007",
+      "officialSubjectArea": "ESG and Sustainability",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21054-efm-epm",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-008",
+      "officialSubjectArea": "Economics",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21055-aem-dem",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-009",
+      "officialSubjectArea": "Aerospace Engineering",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48006-amf-amp",
+      "error": "",
+      "courses": [
+        {
+          "code": "EEE5T03",
+          "name": "# Students are required to complete the compulsory 1-credit subject \" Engineering Ethics and Academic Integrity\" to satisfy the Academic Integrity and Ethics (AIE) requirement for graduation. No credit fee will be charged for this subject.",
+          "credits": null,
+          "evidenceText": "# Students are required to complete the compulsory 1-credit subject \"EEE5T03 Engineering Ethics and Academic Integrity\" to satisfy the Academic Integrity and Ethics (AIE) requirement for graduation. No credit fee will be charged for this subject. Students may apply to and exit from the MSc programme with a Postgraduate Diploma (PgD) subject to meeting the specified requirements. There are 12 subjects in the MSc in Aerospace Engineering (Subject to change):",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48006-amf-amp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5001",
+          "name": "Guidance, Navigation and Advanced Avionics System",
+          "credits": null,
+          "evidenceText": "AAE5001 Guidance, Navigation and Advanced Avionics System AAE5202 Advanced Aircraft Structures and Materials AAE5204 Autonomous Flight - Mechanics and Control",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48006-amf-amp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5202",
+          "name": "Advanced Aircraft Structures and Materials",
+          "credits": null,
+          "evidenceText": "AAE5202 Advanced Aircraft Structures and Materials AAE5204 Autonomous Flight - Mechanics and Control AAE5205 Aircraft Engine Systems and Combustion",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48006-amf-amp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5204",
+          "name": "Autonomous Flight - Mechanics and Control",
+          "credits": null,
+          "evidenceText": "AAE5204 Autonomous Flight - Mechanics and Control AAE5205 Aircraft Engine Systems and Combustion AAE5207 Compressible Aerodynamics",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48006-amf-amp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5205",
+          "name": "Aircraft Engine Systems and Combustion",
+          "credits": null,
+          "evidenceText": "AAE5205 Aircraft Engine Systems and Combustion AAE5207 Compressible Aerodynamics AAE5208 Satellite Engineering",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48006-amf-amp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5207",
+          "name": "Compressible Aerodynamics",
+          "credits": null,
+          "evidenceText": "AAE5207 Compressible Aerodynamics AAE5208 Satellite Engineering Elective Subject List",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48006-amf-amp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5208",
+          "name": "Satellite Engineering",
+          "credits": null,
+          "evidenceText": "AAE5208 Satellite Engineering Elective Subject List AAE5203 Aircraft Design and Certification",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48006-amf-amp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5203",
+          "name": "Aircraft Design and Certification",
+          "credits": null,
+          "evidenceText": "AAE5203 Aircraft Design and Certification AAE5206 Artificial Intelligence in Aerospace Engineering AAE5209 Computational Fluid Dynamics",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48006-amf-amp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5206",
+          "name": "Artificial Intelligence in Aerospace Engineering",
+          "credits": null,
+          "evidenceText": "AAE5206 Artificial Intelligence in Aerospace Engineering AAE5209 Computational Fluid Dynamics AAE5210 Space Vehicle Propulsion Systems",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48006-amf-amp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5209",
+          "name": "Computational Fluid Dynamics",
+          "credits": null,
+          "evidenceText": "AAE5209 Computational Fluid Dynamics AAE5210 Space Vehicle Propulsion Systems AAE5211 Spacecraft Dynamics",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48006-amf-amp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5210",
+          "name": "Space Vehicle Propulsion Systems",
+          "credits": null,
+          "evidenceText": "AAE5210 Space Vehicle Propulsion Systems AAE5211 Spacecraft Dynamics AAE5212 Engineering Computations and Modelling",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48006-amf-amp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5211",
+          "name": "Spacecraft Dynamics",
+          "credits": null,
+          "evidenceText": "AAE5211 Spacecraft Dynamics AAE5212 Engineering Computations and Modelling ",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48006-amf-amp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5212",
+          "name": "Engineering Computations and Modelling",
+          "credits": null,
+          "evidenceText": "AAE5212 Engineering Computations and Modelling  ",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48006-amf-amp",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-010",
+      "officialSubjectArea": "Aviation Engineering and Operations Management",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48005-omf-omp",
+      "error": "",
+      "courses": [
+        {
+          "code": "EEE5T03",
+          "name": "# Students are required to complete the compulsory 1-credit subject \" Engineering Ethics and Academic Integrity\" to satisfy the Academic Integrity and Ethics Requirement (AIE) for graduation. No credit fee will be charged for this subject.",
+          "credits": null,
+          "evidenceText": "# Students are required to complete the compulsory 1-credit subject \"EEE5T03 Engineering Ethics and Academic Integrity\" to satisfy the Academic Integrity and Ethics Requirement (AIE) for graduation. No credit fee will be charged for this subject. Students may apply to and exit from the MSc programme with a Postgraduate Diploma (PgD) subject to meeting the specified requirements. There are 13 subjects in the MSc in Aviation Engineering and Operations Management (subject to change).",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48005-omf-omp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5102",
+          "name": "Operations Research, Resource Planning and Engineering Management in Aviation",
+          "credits": null,
+          "evidenceText": "AAE5102 Operations Research, Resource Planning and Engineering Management in Aviation AAE5103 Artificial Intelligence in the Aviation Industry AAE5106 Flight Standards and Airworthiness",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48005-omf-omp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5103",
+          "name": "Artificial Intelligence in the Aviation Industry",
+          "credits": null,
+          "evidenceText": "AAE5103 Artificial Intelligence in the Aviation Industry AAE5106 Flight Standards and Airworthiness AAE5110 Air Transport Economics and Policy",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48005-omf-omp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5106",
+          "name": "Flight Standards and Airworthiness",
+          "credits": null,
+          "evidenceText": "AAE5106 Flight Standards and Airworthiness AAE5110 Air Transport Economics and Policy AAE5111 Human Factors, Accident Prevention and Aviation Safety Risk Management",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48005-omf-omp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5110",
+          "name": "Air Transport Economics and Policy",
+          "credits": null,
+          "evidenceText": "AAE5110 Air Transport Economics and Policy AAE5111 Human Factors, Accident Prevention and Aviation Safety Risk Management AAE5112 Airport Operations and Management",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48005-omf-omp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5111",
+          "name": "Human Factors, Accident Prevention and Aviation Safety Risk Management",
+          "credits": null,
+          "evidenceText": "AAE5111 Human Factors, Accident Prevention and Aviation Safety Risk Management AAE5112 Airport Operations and Management Elective Subject List",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48005-omf-omp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5112",
+          "name": "Airport Operations and Management",
+          "credits": null,
+          "evidenceText": "AAE5112 Airport Operations and Management Elective Subject List AAE5101 Next-generation Air Traffic Control and Air Traffic Flow Management",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48005-omf-omp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5101",
+          "name": "Next-generation Air Traffic Control and Air Traffic Flow Management",
+          "credits": null,
+          "evidenceText": "AAE5101 Next-generation Air Traffic Control and Air Traffic Flow Management AAE5105 Fleet Management and Aviation Sustainability AAE5108 Future Air Mobility and Low-Altitude Airspace Management",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48005-omf-omp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5105",
+          "name": "Fleet Management and Aviation Sustainability",
+          "credits": null,
+          "evidenceText": "AAE5105 Fleet Management and Aviation Sustainability AAE5108 Future Air Mobility and Low-Altitude Airspace Management AAE5109 Advanced Neuro-ergonomics and Cognitive Science in Aviation",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48005-omf-omp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5108",
+          "name": "Future Air Mobility and Low-Altitude Airspace Management",
+          "credits": null,
+          "evidenceText": "AAE5108 Future Air Mobility and Low-Altitude Airspace Management AAE5109 Advanced Neuro-ergonomics and Cognitive Science in Aviation AAE5113 Modern Treasury and Finance Strategies in Aviation",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48005-omf-omp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5109",
+          "name": "Advanced Neuro-ergonomics and Cognitive Science in Aviation",
+          "credits": null,
+          "evidenceText": "AAE5109 Advanced Neuro-ergonomics and Cognitive Science in Aviation AAE5113 Modern Treasury and Finance Strategies in Aviation AAE5114 Aircraft Leasing Management",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48005-omf-omp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5113",
+          "name": "Modern Treasury and Finance Strategies in Aviation",
+          "credits": null,
+          "evidenceText": "AAE5113 Modern Treasury and Finance Strategies in Aviation AAE5114 Aircraft Leasing Management ISE5022 Financial Decision Analysis for Technology Management",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48005-omf-omp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5114",
+          "name": "Aircraft Leasing Management",
+          "credits": null,
+          "evidenceText": "AAE5114 Aircraft Leasing Management ISE5022 Financial Decision Analysis for Technology Management ",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48005-omf-omp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ISE5022",
+          "name": "Financial Decision Analysis for Technology Management",
+          "credits": null,
+          "evidenceText": "ISE5022 Financial Decision Analysis for Technology Management  ",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48005-omf-omp",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-011",
+      "officialSubjectArea": "Low-altitude Economy",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48007-lmf-lmp",
+      "error": "",
+      "courses": [
+        {
+          "code": "EEE5T03",
+          "name": "# Students are required to complete the compulsory 1-credit subject \" Engineering Ethics and Academic Integrity\" to satisfy the Academic Integrity and Ethics Requirement (AIE) for graduation. No credit fee will be charged for this subject.",
+          "credits": null,
+          "evidenceText": "# Students are required to complete the compulsory 1-credit subject \"EEE5T03 Engineering Ethics and Academic Integrity\" to satisfy the Academic Integrity and Ethics Requirement (AIE) for graduation. No credit fee will be charged for this subject. Students may apply for and attend the MSc programme with a Postgraduate Diploma (PgD) subject to meeting the specified requirements. There are 15 subjects in the MSc in Low-altitude Economy (subject to change).",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48007-lmf-lmp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5108",
+          "name": "Future Air Mobility and Low-Altitude Airspace Management",
+          "credits": null,
+          "evidenceText": "AAE5108 Future Air Mobility and Low-Altitude Airspace Management AAE5301 Service Design and Fleet Management for Low-altitude Economy AAE5302 U-space Design, Air Traffic Service and Urban Aircraft System Traffic Management",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48007-lmf-lmp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5301",
+          "name": "Service Design and Fleet Management for Low-altitude Economy",
+          "credits": null,
+          "evidenceText": "AAE5301 Service Design and Fleet Management for Low-altitude Economy AAE5302 U-space Design, Air Traffic Service and Urban Aircraft System Traffic Management AAE5303 Robust Control Technology in Low-altitude Aerial Vehicle",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48007-lmf-lmp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5302",
+          "name": "U-space Design, Air Traffic Service and Urban Aircraft System Traffic Management",
+          "credits": null,
+          "evidenceText": "AAE5302 U-space Design, Air Traffic Service and Urban Aircraft System Traffic Management AAE5303 Robust Control Technology in Low-altitude Aerial Vehicle AAE5304 Safety, Reliability and Airworthiness Requirement for Low Altitude Aerial Vehicle",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48007-lmf-lmp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5303",
+          "name": "Robust Control Technology in Low-altitude Aerial Vehicle",
+          "credits": null,
+          "evidenceText": "AAE5303 Robust Control Technology in Low-altitude Aerial Vehicle AAE5304 Safety, Reliability and Airworthiness Requirement for Low Altitude Aerial Vehicle AAE5305 Low-altitude Aerial Vehicle Mechanics and Control",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48007-lmf-lmp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5304",
+          "name": "Safety, Reliability and Airworthiness Requirement for Low Altitude Aerial Vehicle",
+          "credits": null,
+          "evidenceText": "AAE5304 Safety, Reliability and Airworthiness Requirement for Low Altitude Aerial Vehicle AAE5305 Low-altitude Aerial Vehicle Mechanics and Control AAE5306 Electronics Design and Informatics for Low-altitude Economy",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48007-lmf-lmp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5305",
+          "name": "Low-altitude Aerial Vehicle Mechanics and Control",
+          "credits": null,
+          "evidenceText": "AAE5305 Low-altitude Aerial Vehicle Mechanics and Control AAE5306 Electronics Design and Informatics for Low-altitude Economy LSGI545 Urban Informatics",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48007-lmf-lmp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5306",
+          "name": "Electronics Design and Informatics for Low-altitude Economy",
+          "credits": null,
+          "evidenceText": "AAE5306 Electronics Design and Informatics for Low-altitude Economy LSGI545 Urban Informatics Elective Subject List",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48007-lmf-lmp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "LSGI545",
+          "name": "Urban Informatics",
+          "credits": null,
+          "evidenceText": "LSGI545 Urban Informatics Elective Subject List AAE5103 Artificial Intelligence in the Aviation Industry",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48007-lmf-lmp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5103",
+          "name": "Artificial Intelligence in the Aviation Industry",
+          "credits": null,
+          "evidenceText": "AAE5103 Artificial Intelligence in the Aviation Industry AAE5110 Air Transport Economics and Policy AAE5111 Human Factors, Accident Prevention and Aviation Safety Risk Management",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48007-lmf-lmp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5110",
+          "name": "Air Transport Economics and Policy",
+          "credits": null,
+          "evidenceText": "AAE5110 Air Transport Economics and Policy AAE5111 Human Factors, Accident Prevention and Aviation Safety Risk Management AAE5206 Artificial Intelligence in Aerospace Engineering",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48007-lmf-lmp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5111",
+          "name": "Human Factors, Accident Prevention and Aviation Safety Risk Management",
+          "credits": null,
+          "evidenceText": "AAE5111 Human Factors, Accident Prevention and Aviation Safety Risk Management AAE5206 Artificial Intelligence in Aerospace Engineering ISE5606 Business Intelligence and Data Mining",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48007-lmf-lmp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5206",
+          "name": "Artificial Intelligence in Aerospace Engineering",
+          "credits": null,
+          "evidenceText": "AAE5206 Artificial Intelligence in Aerospace Engineering ISE5606 Business Intelligence and Data Mining LSGI521 Principles of GIS",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48007-lmf-lmp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ISE5606",
+          "name": "Business Intelligence and Data Mining",
+          "credits": null,
+          "evidenceText": "ISE5606 Business Intelligence and Data Mining LSGI521 Principles of GIS LSGI533 Satellite Positioning & Navigation",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48007-lmf-lmp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "LSGI521",
+          "name": "Principles of GIS",
+          "credits": null,
+          "evidenceText": "LSGI521 Principles of GIS LSGI533 Satellite Positioning & Navigation ",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48007-lmf-lmp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "LSGI533",
+          "name": "Satellite Positioning & Navigation",
+          "credits": null,
+          "evidenceText": "LSGI533 Satellite Positioning & Navigation  ",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48007-lmf-lmp",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-012",
+      "officialSubjectArea": "Satellite Engineering",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48008-smf-smp",
+      "error": "",
+      "courses": [
+        {
+          "code": "EEE5T03",
+          "name": "# Students are required to complete the compulsory 1-credit subject \" Engineering Ethics and Academic Integrity\" to satisfy the Academic Integrity and Ethics Requirement (AIE) for graduation. No credit fee will be charged for this subject.",
+          "credits": null,
+          "evidenceText": "# Students are required to complete the compulsory 1-credit subject \"EEE5T03 Engineering Ethics and Academic Integrity\" to satisfy the Academic Integrity and Ethics Requirement (AIE) for graduation. No credit fee will be charged for this subject. Students may apply to and exit from the MSc programme with a Postgraduate Diploma (PgD), subject to meeting the specified requirements. There are 12 subjects in the MSc in Satellite Engineering (subject to change).",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48008-smf-smp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5208",
+          "name": "Satellite Engineering",
+          "credits": null,
+          "evidenceText": "AAE5208 Satellite Engineering AAE5210 Space Vehicle Propulsion Systems AAE5211 Spacecraft Dynamics",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48008-smf-smp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5210",
+          "name": "Space Vehicle Propulsion Systems",
+          "credits": null,
+          "evidenceText": "AAE5210 Space Vehicle Propulsion Systems AAE5211 Spacecraft Dynamics AAE5401   New Space Economy",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48008-smf-smp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5211",
+          "name": "Spacecraft Dynamics",
+          "credits": null,
+          "evidenceText": "AAE5211 Spacecraft Dynamics AAE5401   New Space Economy LSGI533 Satellite Positioning & Navigation",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48008-smf-smp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5401",
+          "name": "New Space Economy",
+          "credits": null,
+          "evidenceText": "AAE5401   New Space Economy LSGI533 Satellite Positioning & Navigation LSGI536 Remote Sensing Image Processing",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48008-smf-smp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "LSGI533",
+          "name": "Satellite Positioning & Navigation",
+          "credits": null,
+          "evidenceText": "LSGI533 Satellite Positioning & Navigation LSGI536 Remote Sensing Image Processing Elective Subject List",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48008-smf-smp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "LSGI536",
+          "name": "Remote Sensing Image Processing",
+          "credits": null,
+          "evidenceText": "LSGI536 Remote Sensing Image Processing Elective Subject List AAE5206 Artificial Intelligence in Aerospace Engineering",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48008-smf-smp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5206",
+          "name": "Artificial Intelligence in Aerospace Engineering",
+          "credits": null,
+          "evidenceText": "AAE5206 Artificial Intelligence in Aerospace Engineering AAE5212 Engineering Computations and Modelling AAE5402 Ground Segment and Satellite Operations",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48008-smf-smp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5212",
+          "name": "Engineering Computations and Modelling",
+          "credits": null,
+          "evidenceText": "AAE5212 Engineering Computations and Modelling AAE5402 Ground Segment and Satellite Operations AAE5403 Spacecraft Testing and Verification",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48008-smf-smp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5402",
+          "name": "Ground Segment and Satellite Operations",
+          "credits": null,
+          "evidenceText": "AAE5402 Ground Segment and Satellite Operations AAE5403 Spacecraft Testing and Verification LSGI549 Advanced Photogrammetry and Computer Vision",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48008-smf-smp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AAE5403",
+          "name": "Spacecraft Testing and Verification",
+          "credits": null,
+          "evidenceText": "AAE5403 Spacecraft Testing and Verification LSGI549 Advanced Photogrammetry and Computer Vision LSGI581 Satellite Payload and Sensor Instrumentation",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48008-smf-smp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "LSGI549",
+          "name": "Advanced Photogrammetry and Computer Vision",
+          "credits": null,
+          "evidenceText": "LSGI549 Advanced Photogrammetry and Computer Vision LSGI581 Satellite Payload and Sensor Instrumentation ",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48008-smf-smp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "LSGI581",
+          "name": "Satellite Payload and Sensor Instrumentation",
+          "credits": null,
+          "evidenceText": "LSGI581 Satellite Payload and Sensor Instrumentation  ",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48008-smf-smp",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-013",
+      "officialSubjectArea": "Sustainable Technology for Carbon Neutrality",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt",
+      "error": "",
+      "courses": [
+        {
+          "code": "ABCT5031",
+          "name": "",
+          "credits": null,
+          "evidenceText": "ABCT5031 Ecological Approaches for Carbon Management 3",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ABCT5032",
+          "name": "CEF Course code: 42Z16125A ( Materials Science for Carbon Neutrality Applications) and 42Z161268 (ABCT5033 Renewable Energies and Technologies I: Hydrogen and Biofuels)",
+          "credits": null,
+          "evidenceText": "CEF Course code: 42Z16125A (ABCT5032 Materials Science for Carbon Neutrality Applications) and 42Z161268 (ABCT5033 Renewable Energies and Technologies I: Hydrogen and Biofuels) For the details and application of reimbursement of Continuing Education Fund, please refer to https://www.wfsfaa.gov.hk/tc/ce/cef/overview.php",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ABCT5033",
+          "name": "",
+          "credits": null,
+          "evidenceText": "ABCT5033 Renewable Energies and Technologies I: Hydrogen and Biofuels ^ 3",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ABCT5042",
+          "name": "",
+          "credits": null,
+          "evidenceText": "ABCT5042 Quantitation and Reporting of Greenhouse Gases and Carbon Footprint and Climate Action Methodologies* 6",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ABCT5T01",
+          "name": "",
+          "credits": null,
+          "evidenceText": "ABCT5T01 Academic Integrity and Ethics in Science 1",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AF5130",
+          "name": "",
+          "credits": null,
+          "evidenceText": "AF5130 Sustainable Finance * 3",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AP5021",
+          "name": "",
+          "credits": null,
+          "evidenceText": "AP5021 Renewable Energies and Technologies II: Energy Conversion and Storage 3",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ABCT5039",
+          "name": "3-credit Project and at least 6 credits from the list below; OR",
+          "credits": 6,
+          "evidenceText": "3-credit Project (ABCT5039) and at least 6 credits from the list below; OR 6-credit Research Project (ABCT5040) and at least 3 credits from the list below. Subject Code",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ABCT5040",
+          "name": "6-credit Research Project and at least 3 credits from the list below.",
+          "credits": 3,
+          "evidenceText": "6-credit Research Project (ABCT5040) and at least 3 credits from the list below. Subject Code Subject Title",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ABCT5037",
+          "name": "",
+          "credits": null,
+          "evidenceText": "ABCT5037 Green Chemistry for Sustainable Products Development 3",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ABCT5038",
+          "name": "",
+          "credits": null,
+          "evidenceText": "ABCT5038 Expert Seminars: Special Topics in Sustainable Science and Technology 3",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ABCT5041",
+          "name": "",
+          "credits": null,
+          "evidenceText": "ABCT5041 Sustainable Chemistry for Circular Economy 3",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AMA569",
+          "name": "",
+          "credits": null,
+          "evidenceText": "AMA569 Stochastic Models for Carbon Pricing and Trading * 3",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "AP5022",
+          "name": "",
+          "credits": null,
+          "evidenceText": "AP5022 Energy Efficient Lighting and Control 3",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "BSE542",
+          "name": "",
+          "credits": null,
+          "evidenceText": "BSE542 Energy Efficient Buildings 3",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "EE546",
+          "name": "",
+          "credits": null,
+          "evidenceText": "EE546 Electric Energy Storage and New Energy Sources for Electric Vehicles 3",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-014",
+      "officialSubjectArea": "Biopharmaceutical Development and Commercialization",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt",
+      "error": "",
+      "courses": [
+        {
+          "code": "ABCT5101",
+          "name": "Modern Approaches in Biopharmaceutical Development",
+          "credits": null,
+          "evidenceText": "ABCT5101 Modern Approaches in Biopharmaceutical Development ABCT5102 Pharmacology and Toxicology in Biotherapeutics ABCT5103 Intellectual Property Strategy for Biotech Entrepreneurship",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ABCT5102",
+          "name": "Pharmacology and Toxicology in Biotherapeutics",
+          "credits": null,
+          "evidenceText": "ABCT5102 Pharmacology and Toxicology in Biotherapeutics ABCT5103 Intellectual Property Strategy for Biotech Entrepreneurship ABCT5104 Regulatory Science for Biotech Products",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ABCT5103",
+          "name": "Intellectual Property Strategy for Biotech Entrepreneurship",
+          "credits": null,
+          "evidenceText": "ABCT5103 Intellectual Property Strategy for Biotech Entrepreneurship ABCT5104 Regulatory Science for Biotech Products ABCT5105 Ethics and Management in Life Sciences",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ABCT5104",
+          "name": "Regulatory Science for Biotech Products",
+          "credits": null,
+          "evidenceText": "ABCT5104 Regulatory Science for Biotech Products ABCT5105 Ethics and Management in Life Sciences ABCT5106 Technology Platforms in Drug Discovery",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ABCT5105",
+          "name": "Ethics and Management in Life Sciences",
+          "credits": null,
+          "evidenceText": "ABCT5105 Ethics and Management in Life Sciences ABCT5106 Technology Platforms in Drug Discovery ABCT5107 Advanced Therapeutic Products",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ABCT5106",
+          "name": "Technology Platforms in Drug Discovery",
+          "credits": null,
+          "evidenceText": "ABCT5106 Technology Platforms in Drug Discovery ABCT5107 Advanced Therapeutic Products Choose one subject in each pool",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ABCT5107",
+          "name": "Advanced Therapeutic Products",
+          "credits": null,
+          "evidenceText": "ABCT5107 Advanced Therapeutic Products Choose one subject in each pool Pool 1: ABCT5108 Investment Financing and Risk Management in Biobusiness OR",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ABCT5108",
+          "name": "Pool 1: Investment Financing and Risk Management in Biobusiness OR",
+          "credits": 6,
+          "evidenceText": "Pool 1: ABCT5108 Investment Financing and Risk Management in Biobusiness OR ABCT5109 Entrepreneurship- From Lab to Launch Pool 2: ABCT5110 Industrial Attachment (6 credits) OR",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ABCT5109",
+          "name": "Entrepreneurship- From Lab to Launch",
+          "credits": 6,
+          "evidenceText": "ABCT5109 Entrepreneurship- From Lab to Launch Pool 2: ABCT5110 Industrial Attachment (6 credits) OR ABCT5113 Research Project (6 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ABCT5110",
+          "name": "Pool 2: Industrial Attachment OR",
+          "credits": 6,
+          "evidenceText": "Pool 2: ABCT5110 Industrial Attachment (6 credits) OR ABCT5113 Research Project (6 credits) Academic Integrity and Ethics (AIE) Requirement Subject (1 credit)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ABCT5113",
+          "name": "Research Project",
+          "credits": 6,
+          "evidenceText": "ABCT5113 Research Project (6 credits) Academic Integrity and Ethics (AIE) Requirement Subject (1 credit) Academic Integrity and Ethics in Science",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-015",
+      "officialSubjectArea": "Biopharmaceutical Development and Commercialization (internship in Greater Bay Area via PolyU-Zhongshan Technology and Innovation Research Institute)",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063",
+      "error": "",
+      "courses": [
+        {
+          "code": "ABCT5101",
+          "name": "Modern Approaches in Biopharmaceutical Development",
+          "credits": null,
+          "evidenceText": "ABCT5101 Modern Approaches in Biopharmaceutical Development ABCT5103 Intellectual Property Strategy for Biotech Entrepreneurship ABCT5104 Regulatory Science for Biotech Products",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ABCT5103",
+          "name": "Intellectual Property Strategy for Biotech Entrepreneurship",
+          "credits": null,
+          "evidenceText": "ABCT5103 Intellectual Property Strategy for Biotech Entrepreneurship ABCT5104 Regulatory Science for Biotech Products ABCT5105 Ethics and Management in Life Sciences",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ABCT5104",
+          "name": "Regulatory Science for Biotech Products",
+          "credits": null,
+          "evidenceText": "ABCT5104 Regulatory Science for Biotech Products ABCT5105 Ethics and Management in Life Sciences ABCT5106 Technology Platforms in Drug Discovery",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ABCT5105",
+          "name": "Ethics and Management in Life Sciences",
+          "credits": null,
+          "evidenceText": "ABCT5105 Ethics and Management in Life Sciences ABCT5106 Technology Platforms in Drug Discovery ABCT5107 Advanced Therapeutic Products",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ABCT5106",
+          "name": "Technology Platforms in Drug Discovery",
+          "credits": null,
+          "evidenceText": "ABCT5106 Technology Platforms in Drug Discovery ABCT5107 Advanced Therapeutic Products ABCT5108 Investment Financing and Risk Management in Biobusiness OR ABCT5109 Entrepreneurship- From Lab to Launch",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ABCT5107",
+          "name": "Advanced Therapeutic Products",
+          "credits": 1,
+          "evidenceText": "ABCT5107 Advanced Therapeutic Products ABCT5108 Investment Financing and Risk Management in Biobusiness OR ABCT5109 Entrepreneurship- From Lab to Launch Academic Integrity and Ethics (AIE) Subject (1 credit)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ABCT5108",
+          "name": "Investment Financing and Risk Management in Biobusiness OR ABCT5109 Entrepreneurship- From Lab to Launch",
+          "credits": 1,
+          "evidenceText": "ABCT5108 Investment Financing and Risk Management in Biobusiness OR ABCT5109 Entrepreneurship- From Lab to Launch Academic Integrity and Ethics (AIE) Subject (1 credit) ABCT5T01 Academic Integrity and Ethics in Science",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ABCT5T01",
+          "name": "Academic Integrity and Ethics in Science",
+          "credits": 9,
+          "evidenceText": "ABCT5T01 Academic Integrity and Ethics in Science Subjects to be completed in PolyU-Zhongshan Technology and Innovation Research Institute (PolyU-ZSRI) (9 credits) - taught in Putonghua ABCT5115P Industrial Attachment (GBA) (6 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ABCT5115P",
+          "name": "Industrial Attachment (GBA)",
+          "credits": 6,
+          "evidenceText": "ABCT5115P Industrial Attachment (GBA) (6 credits) ABCT5102P Pharmacology and Toxicology in Biotherapeutics (3 credits) ",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ABCT5102P",
+          "name": "Pharmacology and Toxicology in Biotherapeutics",
+          "credits": 3,
+          "evidenceText": "ABCT5102P Pharmacology and Toxicology in Biotherapeutics (3 credits)  ",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-016",
+      "officialSubjectArea": "Microelectronics Technology and Materials",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/11044",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-017",
+      "officialSubjectArea": "Advanced Photonic Technology and Materials",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/11045-mft-mpt",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-018",
+      "officialSubjectArea": "Mental Health",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54047-fmh-pmh",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-019",
+      "officialSubjectArea": "Marriage and Family Therapy",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54047-fmf-pmf",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-020",
+      "officialSubjectArea": "Social Work",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54047-msw",
+      "error": "",
+      "courses": [
+        {
+          "code": "HTI5T04",
+          "name": "In addition to the above subjects, students are required to complete a 1-credit subject on Academic Integrity and Ethics (AIE) - Academic Integrity and Ethics (Health and Social Sciences). No tuition fee is required for this subject.",
+          "credits": null,
+          "evidenceText": "In addition to the above subjects, students are required to complete a 1-credit subject on Academic Integrity and Ethics (AIE) - HTI5T04 Academic Integrity and Ethics (Health and Social Sciences). No tuition fee is required for this subject.  ",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54047-msw",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-021",
+      "officialSubjectArea": "Social Policy and Social Development",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54055-sdf-sdp",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-022",
+      "officialSubjectArea": "Applied Psychology",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54057-ft-pt",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-023",
+      "officialSubjectArea": "Applied Psychology (Diverse Learning Needs)",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54057-lnf-lnp",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-024",
+      "officialSubjectArea": "School and Community Psychology",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54072-ft-pt",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-025",
+      "officialSubjectArea": "Guidance and Counselling",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54047-gcf-gcp",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-026",
+      "officialSubjectArea": "Biomedical Engineering",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/47002-bmf-bmp",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-027",
+      "officialSubjectArea": "Sports Technology and Management",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/47005-stf-stp",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-028",
+      "officialSubjectArea": "Brain-Machine Interface",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/47007-bmf-bmp",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-029",
+      "officialSubjectArea": "Building Services Engineering",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/33084-bem-bsm",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-030",
+      "officialSubjectArea": "Facility Management",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/33085-fam-fmm",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-031",
+      "officialSubjectArea": "Fire and Safety Engineering",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/33086-fem-fsm",
+      "error": "",
+      "courses": [
+        {
+          "code": "BSE558",
+          "name": "Students must complete 7 taught subjects, including 3 specified Compulsory Subjects, and at least 3 other Core Subjects, including Accident Prevention, Hazard Assessment and Control and/or Safety Management Systems and Safety Auditing (BSE559), plus a Dissertation that is relevant to their area of specialisation, and a 1-credit Academic Integrity and Ethics (AIE) subject.",
+          "credits": null,
+          "evidenceText": "Students must complete 7 taught subjects, including 3 specified Compulsory Subjects, and at least 3 other Core Subjects, including Accident Prevention, Hazard Assessment and Control (BSE558) and/or Safety Management Systems and Safety Auditing (BSE559), plus a Dissertation that is relevant to their area of specialisation, and a 1-credit Academic Integrity and Ethics (AIE) subject. For the MSc without a Dissertation Students must complete 10 taught subjects, including 3 specified Compulsory Subjects and at least 4 other Core Subjects, including Accident Prevention, Hazard Assessment and Control (BSE558) and/or Safety Management Systems and Safety Auditing (BSE559), and a 1-credit Academic Integrity and Ethics (AIE) subject.",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/33086-fem-fsm",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-032",
+      "officialSubjectArea": "Carbon Neutral Cities and Urban Sustainability",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/33088-cfm-cpm",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-033",
+      "officialSubjectArea": "Construction and Real Estate",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/32111-rfm-rpm",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-034",
+      "officialSubjectArea": "Project Management",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/32113-pfm-ppm",
+      "error": "",
+      "courses": [
+        {
+          "code": "CSE565",
+          "name": "Applicants whose educational background is not in a construction-related area are recommended to take Construction Technology, or BRE550 Statutory Framework for Construction Practice or its equivalent (as designated by the Programme Leader) as an elective subject.",
+          "credits": 0,
+          "evidenceText": "Applicants whose educational background is not in a construction-related area are recommended to take CSE565 Construction Technology, or BRE550 Statutory Framework for Construction Practice or its equivalent (as designated by the Programme Leader) as an elective subject. Students also must complete a 1-credit bearing subject on Academic Integrity and Ethics (no credit fee will be charged) and a non-credit bearing e-learning module on National Education, which are University's requirements. Full-time students are recommended to complete 7 subjects and a Dissertation within the normal duration of one academic year.",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/32113-pfm-ppm",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "BRE587",
+          "name": "@ Students opting for dissertation (normal period is 3 semesters including a summer term) are required to take either in parallel or in advance. Students opting not to take the dissertation are still required to take BRE587 which is a compulsory core subject.",
+          "credits": null,
+          "evidenceText": "@  Students opting for dissertation (normal period is 3 semesters including a summer term) are required to take BRE587 either in parallel or in advance. Students opting not to take the dissertation are still required to take BRE587 which is a compulsory core subject.  ",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/32113-pfm-ppm",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-035",
+      "officialSubjectArea": "Intelligent Construction",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/32114-ifm-ipm",
+      "error": "",
+      "courses": [
+        {
+          "code": "BRE506",
+          "name": "Non-dissertation path: 9 Compulsory Subjects (3 credits each), including the dissertation-replacement subject “Integrated Project in Intelligent Construction”, PLUS an Elective Subject (Recommended Elective: (Principles of Project Management)).",
+          "credits": 3,
+          "evidenceText": "Non-dissertation path: 9 Compulsory Subjects (3 credits each), including the dissertation-replacement subject “Integrated Project in Intelligent Construction”, PLUS an Elective Subject (3 credits) (Recommended Elective: BRE506 (Principles of Project Management)). Students also must complete a 1-credit bearing subject on Academic Integrity and Ethics (no credit fee will be charged) and a non-credit bearing e-learning module on National Education, which are University's requirements. In general, each subject will involve either weekly 3-hour evening classes over a 13-week semester, or 3-4 full day classes on weekend (Saturdays and/or Sundays). Daytime classes held during weekdays will be offered to full-time students for designated subjects if necessary.",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/32114-ifm-ipm",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-036",
+      "officialSubjectArea": "Bilingual Corporate Communication",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72017-bcf-bcp",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-037",
+      "officialSubjectArea": "Chinese Linguistics",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72017-clf-clp",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-038",
+      "officialSubjectArea": "Chinese Language and Literature",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72017-llf-llp-pdp",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-039",
+      "officialSubjectArea": "Teaching Chinese as a Foreign Language",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72017-tlf-tlp",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-040",
+      "officialSubjectArea": "Global Communication and Event Hosting Arts",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72029-ehf-ehp",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-041",
+      "officialSubjectArea": "Translation and Language Technology",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72030-ttf-ttp",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-042",
+      "officialSubjectArea": "Civil Engineering",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/31077-cfm-cpm",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-043",
+      "officialSubjectArea": "Environmental Management and Engineering",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/31078-efm-epm",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-044",
+      "officialSubjectArea": "Electrical Engineering",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46010-ee-eet",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-045",
+      "officialSubjectArea": "Electronic and Information Engineering",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46011-eie-eit",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-046",
+      "officialSubjectArea": "Electric Vehicles",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46012-ev-evt",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-047",
+      "officialSubjectArea": "Microelectronics and Quantum Systems Engineering",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46013-mq-mqt",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-048",
+      "officialSubjectArea": "Global Food Safety Management and Risk Analysis",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15057-mft",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-049",
+      "officialSubjectArea": "Nutrition and Healthy Ageing",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15058-mft",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-050",
+      "officialSubjectArea": "Nutrition and Healthy Ageing (Nutrition in Practice)",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15058-npf",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-051",
+      "officialSubjectArea": "Dietetics",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15060",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-052",
+      "officialSubjectArea": "Engineering Business Management",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45080-efm-efd-eqm-eqp",
+      "error": "",
+      "courses": [
+        {
+          "code": "EEE5T03",
+          "name": "Students are required to complete the compulsory 1-credit subject “ Engineering Ethics and Academic Integrity” to satisfy the Academic Integrity and Ethics (AIE) requirement for graduation. No credit fee will be charged for this subject.",
+          "credits": null,
+          "evidenceText": "Students are required to complete the compulsory 1-credit subject “EEE5T03 Engineering Ethics and Academic Integrity” to satisfy the Academic Integrity and Ethics (AIE) requirement for graduation. No credit fee will be charged for this subject.  ",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45080-efm-efd-eqm-eqp",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-053",
+      "officialSubjectArea": "Industrial Logistics Systems",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mls-ml",
+      "error": "",
+      "courses": [
+        {
+          "code": "ISE550",
+          "name": "Students must complete 7 taught subjects - 4 Compulsory Subjects, at least 1 Core and at most 2 Elective Subjects plus a Dissertation (equivalent to 3 subjects, 9 credits); OR 10 taught subjects - 4 Compulsory Subjects, at least 3 Core (incl. field trip study) and at most 3 Elective Subjects.",
+          "credits": 9,
+          "evidenceText": "Students must complete 7 taught subjects - 4 Compulsory Subjects, at least 1 Core and at most 2 Elective Subjects plus a Dissertation (equivalent to 3 subjects, 9 credits); OR 10 taught subjects - 4 Compulsory Subjects, at least 3 Core (incl. ISE550 field trip study) and at most 3 Elective Subjects. Students are required to complete the compulsory 1-credit subject “EEE5T03 Engineering Ethics and Academic Integrity” to satisfy the Academic Integrity and Ethics (AIE) requirement for graduation. No credit fee will be charged for this subject. Core Areas of Study",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mls-ml",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "EEE5T03",
+          "name": "Students are required to complete the compulsory 1-credit subject “ Engineering Ethics and Academic Integrity” to satisfy the Academic Integrity and Ethics (AIE) requirement for graduation. No credit fee will be charged for this subject.",
+          "credits": null,
+          "evidenceText": "Students are required to complete the compulsory 1-credit subject “EEE5T03 Engineering Ethics and Academic Integrity” to satisfy the Academic Integrity and Ethics (AIE) requirement for graduation. No credit fee will be charged for this subject. Core Areas of Study The following is a sample of major subjects for the various core areas of study. Students are provided with more subjects for selection upon registration.",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mls-ml",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ISE525",
+          "name": "Global Operations & Logistics Management",
+          "credits": null,
+          "evidenceText": "Global Operations & Logistics Management (ISE525) Enterprise Resources Planning (ISE526) Logistics Information Systems (ISE527)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mls-ml",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ISE526",
+          "name": "Enterprise Resources Planning",
+          "credits": null,
+          "evidenceText": "Enterprise Resources Planning (ISE526) Logistics Information Systems (ISE527) Supply Chain Management Enabling Technologies (ISE544)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mls-ml",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ISE527",
+          "name": "Logistics Information Systems",
+          "credits": null,
+          "evidenceText": "Logistics Information Systems (ISE527) Supply Chain Management Enabling Technologies (ISE544) Warehousing & Material Handling Systems (ISE512)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mls-ml",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ISE544",
+          "name": "Supply Chain Management Enabling Technologies",
+          "credits": null,
+          "evidenceText": "Supply Chain Management Enabling Technologies (ISE544) Warehousing & Material Handling Systems (ISE512) Contemporary Logistics Issues in China (ISE550*)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mls-ml",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ISE512",
+          "name": "Warehousing & Material Handling Systems",
+          "credits": null,
+          "evidenceText": "Warehousing & Material Handling Systems (ISE512) Contemporary Logistics Issues in China (ISE550*) Risk & Crisis Management (ISE548)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mls-ml",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ISE548",
+          "name": "Risk & Crisis Management",
+          "credits": null,
+          "evidenceText": "Risk & Crisis Management (ISE548) Workflow Design & Management (ISE518) Optimisation Modeling & Applications (ISE5019)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mls-ml",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ISE518",
+          "name": "Workflow Design & Management",
+          "credits": null,
+          "evidenceText": "Workflow Design & Management (ISE518) Optimisation Modeling & Applications (ISE5019) Business Intelligence and Data Mining (ISE5606)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mls-ml",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ISE5019",
+          "name": "Optimisation Modeling & Applications",
+          "credits": null,
+          "evidenceText": "Optimisation Modeling & Applications (ISE5019) Business Intelligence and Data Mining (ISE5606) Details of the offered subjects are available at www.polyu.edu.hk/ise .",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mls-ml",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ISE5606",
+          "name": "Business Intelligence and Data Mining",
+          "credits": null,
+          "evidenceText": "Business Intelligence and Data Mining (ISE5606) Details of the offered subjects are available at www.polyu.edu.hk/ise . * Students pursuing the MSc award must take this subject if they do not opt for the dissertation.",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mls-ml",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-054",
+      "officialSubjectArea": "Knowledge and Technology Management",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt",
+      "error": "",
+      "courses": [
+        {
+          "code": "ISE5001",
+          "name": "Technology Transfer and Commercialisation",
+          "credits": null,
+          "evidenceText": "Technology Transfer and Commercialisation (ISE5001) Managing Knowledge (ISE542) Management of Innovation and Technology (ISE549)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ISE542",
+          "name": "Managing Knowledge",
+          "credits": null,
+          "evidenceText": "Managing Knowledge (ISE542) Management of Innovation and Technology (ISE549) Managing and Measuring Intellectual Capital (ISE5601)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ISE549",
+          "name": "Management of Innovation and Technology",
+          "credits": null,
+          "evidenceText": "Management of Innovation and Technology (ISE549) Managing and Measuring Intellectual Capital (ISE5601) Core Subjects",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ISE5601",
+          "name": "Managing and Measuring Intellectual Capital",
+          "credits": null,
+          "evidenceText": "Managing and Measuring Intellectual Capital (ISE5601) Core Subjects Field Study of Technology Organisations (ISE5002*)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ISE5002",
+          "name": "Field Study of Technology Organisations",
+          "credits": null,
+          "evidenceText": "Field Study of Technology Organisations (ISE5002*) Technology Project Management (ISE5021) Workflow Design and Management (ISE518)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ISE5021",
+          "name": "Technology Project Management",
+          "credits": null,
+          "evidenceText": "Technology Project Management (ISE5021) Workflow Design and Management (ISE518) Global Operations and Logistics Management (ISE525)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ISE518",
+          "name": "Workflow Design and Management",
+          "credits": null,
+          "evidenceText": "Workflow Design and Management (ISE518) Global Operations and Logistics Management (ISE525) Technology Audit and Assessment (ISE559)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ISE525",
+          "name": "Global Operations and Logistics Management",
+          "credits": null,
+          "evidenceText": "Global Operations and Logistics Management (ISE525) Technology Audit and Assessment (ISE559) Business Intelligence and Data Mining (ISE5606)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ISE559",
+          "name": "Technology Audit and Assessment",
+          "credits": null,
+          "evidenceText": "Technology Audit and Assessment (ISE559) Business Intelligence and Data Mining (ISE5606) Elective Subjects",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ISE5606",
+          "name": "Business Intelligence and Data Mining",
+          "credits": null,
+          "evidenceText": "Business Intelligence and Data Mining (ISE5606) Elective Subjects Financial Decision Analysis for Technology Management (ISE5022)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ISE5022",
+          "name": "Financial Decision Analysis for Technology Management",
+          "credits": null,
+          "evidenceText": "Financial Decision Analysis for Technology Management (ISE5022) Technology Entrepreneurship and Innovation in Practice (ISE5026) Industrial Human-Robot Systems and Automation (ISE5312)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ISE5026",
+          "name": "Technology Entrepreneurship and Innovation in Practice",
+          "credits": null,
+          "evidenceText": "Technology Entrepreneurship and Innovation in Practice (ISE5026) Industrial Human-Robot Systems and Automation (ISE5312) Smart Product-Service Systems (ISE5323)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ISE5312",
+          "name": "Industrial Human-Robot Systems and Automation",
+          "credits": null,
+          "evidenceText": "Industrial Human-Robot Systems and Automation (ISE5312) Smart Product-Service Systems (ISE5323) Smart Manufacturing Operations Management (ISE5332)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ISE5323",
+          "name": "Smart Product-Service Systems",
+          "credits": null,
+          "evidenceText": "Smart Product-Service Systems (ISE5323) Smart Manufacturing Operations Management (ISE5332) Industrial Blockchain and Applications (ISE5333)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ISE5332",
+          "name": "Smart Manufacturing Operations Management",
+          "credits": null,
+          "evidenceText": "Smart Manufacturing Operations Management (ISE5332) Industrial Blockchain and Applications (ISE5333) Shipping Economics and Markets (LGT5007)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "ISE5333",
+          "name": "Industrial Blockchain and Applications",
+          "credits": null,
+          "evidenceText": "Industrial Blockchain and Applications (ISE5333) Shipping Economics and Markets (LGT5007) Supply Chain Management (LGT5015)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "LGT5007",
+          "name": "Shipping Economics and Markets",
+          "credits": null,
+          "evidenceText": "Shipping Economics and Markets (LGT5007) Supply Chain Management (LGT5015) Management Operations Systems (LGT5105)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "LGT5015",
+          "name": "Supply Chain Management",
+          "credits": null,
+          "evidenceText": "Supply Chain Management (LGT5015) Management Operations Systems (LGT5105) Organisation and Management (MM5112)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "LGT5105",
+          "name": "Management Operations Systems",
+          "credits": null,
+          "evidenceText": "Management Operations Systems (LGT5105) Organisation and Management (MM5112) *Students pursuing the MSc award must take this subject if they do not opt for the dissertation.",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "MM5112",
+          "name": "Organisation and Management",
+          "credits": null,
+          "evidenceText": "Organisation and Management (MM5112) *Students pursuing the MSc award must take this subject if they do not opt for the dissertation. ^ Students are required to complete the compulsory 1-credit subject “EEE5T03 Engineering Ethics and Academic Integrity” to satisfy the Academic Integrity and Ethics (AIE) requirement for graduation. No credit fee will be charged for this subject.",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "EEE5T03",
+          "name": "^ Students are required to complete the compulsory 1-credit subject “ Engineering Ethics and Academic Integrity” to satisfy the Academic Integrity and Ethics (AIE) requirement for graduation. No credit fee will be charged for this subject.",
+          "credits": null,
+          "evidenceText": "^ Students are required to complete the compulsory 1-credit subject “EEE5T03 Engineering Ethics and Academic Integrity” to satisfy the Academic Integrity and Ethics (AIE) requirement for graduation. No credit fee will be charged for this subject. Information on the subjects offered can be obtained at  www.polyu.edu.hk/ise . ",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-055",
+      "officialSubjectArea": "Smart Manufacturing",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-smf-smp",
+      "error": "",
+      "courses": [
+        {
+          "code": "EEE5T03",
+          "name": "^ Students are required to complete the compulsory 1-credit subject “ Engineering Ethics and Academic Integrity” to satisfy the Academic Integrity and Ethics (AIE) requirement for graduation. No credit fee will be charged for this subject.",
+          "credits": null,
+          "evidenceText": "^ Students are required to complete the compulsory 1-credit subject “EEE5T03 Engineering Ethics and Academic Integrity” to satisfy the Academic Integrity and Ethics (AIE) requirement for graduation. No credit fee will be charged for this subject. Information on the subjects offered can be obtained at  www.polyu.edu.hk/ise . ",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-smf-smp",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-056",
+      "officialSubjectArea": "Geomatics",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/34084-gfm-gpm",
+      "error": "",
+      "courses": [
+        {
+          "code": "LSGI551",
+          "name": "Dissertation route: Compulsory Subjects + Dissertation + 2 Subjects 1 + 1 AIE Subject*",
+          "credits": 15,
+          "evidenceText": "Dissertation route: Compulsory Subjects (15 credits) + LSGI551 Dissertation (9 credits) + 2 Subjects 1 (6 credits) + 1 AIE Subject* (1 credit); OR Project route: Compulsory Subjects (15 credits) + LSGI552 Project (6 credits) + 3 Subjects 1 (9 credits) + 1 AIE Subject* (1 credit);",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/34084-gfm-gpm",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "LSGI552",
+          "name": "Project route: Compulsory Subjects + Project + 3 Subjects 1 + 1 AIE Subject*",
+          "credits": 15,
+          "evidenceText": "Project route: Compulsory Subjects (15 credits) + LSGI552 Project (6 credits) + 3 Subjects 1 (9 credits) + 1 AIE Subject* (1 credit); OR Non-dissertation/project route: Compulsory Subjects (15 credits) + 5 Subjects 2 (15 credits) + 1 AIE Subject* (1 credit)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/34084-gfm-gpm",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-057",
+      "officialSubjectArea": "Urban Informatics and Smart Cities",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/34083-ifm-ipm",
+      "error": "",
+      "courses": [
+        {
+          "code": "LSGI551",
+          "name": "Compulsory Subjects + Dissertation + 4 Subjects 1 + 1 AIE Subject*",
+          "credits": 9,
+          "evidenceText": "Compulsory Subjects (9 credits) + LSGI551 Dissertation (9 credits) + 4 Subjects 1 (12 credits) + 1 AIE Subject* (1 credit); OR Project route:",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/34083-ifm-ipm",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "LSGI552",
+          "name": "Compulsory Subjects + Project + 5 Subjects 2 + 1 AIE Subject*",
+          "credits": 9,
+          "evidenceText": "Compulsory Subjects (9 credits) + LSGI552 Project (6 credits) + 5 Subjects (15 credits) 2 + 1 AIE Subject* (1 credit); OR Non-dissertation/project route:",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/34083-ifm-ipm",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-058",
+      "officialSubjectArea": "International Shipping and Transport Logistics",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-ifm-tfp-ipm-tpp",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-059",
+      "officialSubjectArea": "International Shipping and Transport Logistics",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-iss",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-060",
+      "officialSubjectArea": "Global Supply Chain Management",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44089-sfm-sfp-gpm-spp",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-061",
+      "officialSubjectArea": "Operations Management",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44092-ofm-opm",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-062",
+      "officialSubjectArea": "Global Business and Decision Analysis",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44094-bfm-bpm",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-063",
+      "officialSubjectArea": "Business Analytics",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23090-maf-map",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-064",
+      "officialSubjectArea": "Human Resource Management",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23090-mhf-mhp",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-065",
+      "officialSubjectArea": "Marketing Management",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23090-mkf-mkp",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-066",
+      "officialSubjectArea": "International Management and Leadership",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23090-mif",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-067",
+      "officialSubjectArea": "Data Science and Analytics",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/62027-dfm-dpm",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-068",
+      "officialSubjectArea": "Artificial Intelligence and Big Data Computing",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/62037-fai-pai",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-069",
+      "officialSubjectArea": "Mechanical Engineering",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43100-me-met",
+      "error": "",
+      "courses": [
+        {
+          "code": "EEE5T03",
+          "name": "Students are required to complete the compulsory 1-credit subject “ Engineering Ethics and Academic Integrity” to satisfy the Academic Integrity and Ethics (AIE) requirement for graduation. No credit fee will be charged for this subject.",
+          "credits": null,
+          "evidenceText": "Students are required to complete the compulsory 1-credit subject “EEE5T03 Engineering Ethics and Academic Integrity” to satisfy the Academic Integrity and Ethics (AIE) requirement for graduation. No credit fee will be charged for this subject. For the MSc in Mechanical Engineering Students must complete:",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43100-me-met",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-070",
+      "officialSubjectArea": "Intelligent Robotics Engineering",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43101-ir-irt",
+      "error": "",
+      "courses": [
+        {
+          "code": "EEE5T03",
+          "name": "Students are required to complete the compulsory 1-credit subject “ Engineering Ethics and Academic Integrity” to satisfy the Academic Integrity and Ethics (AIE) requirement for graduation. No credit fee will be charged for this subject.",
+          "credits": null,
+          "evidenceText": "Students are required to complete the compulsory 1-credit subject “EEE5T03 Engineering Ethics and Academic Integrity” to satisfy the Academic Integrity and Ethics (AIE) requirement for graduation. No credit fee will be charged for this subject. For the MSc in Intelligent Robotics Engineering Students must complete:",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43101-ir-irt",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-071",
+      "officialSubjectArea": "Sustainable Energy",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43102-se-set",
+      "error": "",
+      "courses": [
+        {
+          "code": "EEE5T03",
+          "name": "Students are required to complete the compulsory 1-credit subject “ Engineering Ethics and Academic Integrity” to satisfy the Academic Integrity and Ethics (AIE) requirement for graduation. No credit fee will be charged for this subject.",
+          "credits": null,
+          "evidenceText": "Students are required to complete the compulsory 1-credit subject “EEE5T03 Engineering Ethics and Academic Integrity” to satisfy the Academic Integrity and Ethics (AIE) requirement for graduation. No credit fee will be charged for this subject. For the MSc in Sustainable Energy Students must complete:",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43102-se-set",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-072",
+      "officialSubjectArea": "Advanced Occupational Therapy",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp",
+      "error": "",
+      "courses": [
+        {
+          "code": "RS517",
+          "name": "Research Methods and Data Analysis",
+          "credits": null,
+          "evidenceText": "RS517 Research Methods and Data Analysis 3 RS5200 Advanced Occupational Therapy Study",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS5200",
+          "name": "Advanced Occupational Therapy Study",
+          "credits": null,
+          "evidenceText": "RS5200 Advanced Occupational Therapy Study 3 HTI5T04 Academic Integrity and Ethics (Health and Social Sciences)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTI5T04",
+          "name": "Academic Integrity and Ethics (Health and Social Sciences)",
+          "credits": null,
+          "evidenceText": "HTI5T04 Academic Integrity and Ethics (Health and Social Sciences) 1 Project study",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS567",
+          "name": "Project Study",
+          "credits": null,
+          "evidenceText": "RS567 Project Study 6 Core subjects for the three specialisms",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS5201",
+          "name": "",
+          "credits": null,
+          "evidenceText": "RS5201 Current Development in Neurological Rehabilitation RS5228",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS5228",
+          "name": "",
+          "credits": null,
+          "evidenceText": "RS5228 Principles and Concepts in the Diagnostic Procedures of Mental Disorders RS5216",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS5216",
+          "name": "",
+          "credits": null,
+          "evidenceText": "RS5216 Musculoskeletal Injury and Repair 3",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS5202",
+          "name": "",
+          "credits": null,
+          "evidenceText": "RS5202 OT Management for Upper Extremity Participation in Neurological Conditions RS607",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS607",
+          "name": "",
+          "credits": null,
+          "evidenceText": "RS607 Brain and Behaviour RS5212",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS5212",
+          "name": "",
+          "credits": null,
+          "evidenceText": "RS5212 Advanced OT Practice in Hand Rehabilitation 3",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS510",
+          "name": "",
+          "credits": null,
+          "evidenceText": "RS510 Neuro-psychological Rehabilitation RS520",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS520",
+          "name": "",
+          "credits": null,
+          "evidenceText": "RS520 Vocational Rehabilitation RS520",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS593",
+          "name": "Sensory and Motor Intervention for People with Developmental Disabilities",
+          "credits": null,
+          "evidenceText": "RS593 Sensory and Motor Intervention for People with Developmental Disabilities RS5223 Management of Executive Function Deficits for People with Developmental Disabilities RS537 Psychosocial Rehabilitation for People with Developmental Disabilities",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS5223",
+          "name": "Management of Executive Function Deficits for People with Developmental Disabilities",
+          "credits": null,
+          "evidenceText": "RS5223 Management of Executive Function Deficits for People with Developmental Disabilities RS537 Psychosocial Rehabilitation for People with Developmental Disabilities RS5225 Primary Healthcare for Rehabilitation Professionals",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS537",
+          "name": "Psychosocial Rehabilitation for People with Developmental Disabilities",
+          "credits": null,
+          "evidenceText": "RS537 Psychosocial Rehabilitation for People with Developmental Disabilities RS5225 Primary Healthcare for Rehabilitation Professionals RS52261 Theory and Practice of Robotics and Smart Systems for Rehabilitation",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS5225",
+          "name": "Primary Healthcare for Rehabilitation Professionals",
+          "credits": null,
+          "evidenceText": "RS5225 Primary Healthcare for Rehabilitation Professionals RS52261 Theory and Practice of Robotics and Smart Systems for Rehabilitation 18 for the generic programme",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS52261",
+          "name": "Theory and Practice of Robotics and Smart Systems for Rehabilitation",
+          "credits": null,
+          "evidenceText": "RS52261 Theory and Practice of Robotics and Smart Systems for Rehabilitation 18 for the generic programme 9 for the three programmes with specialism",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-073",
+      "officialSubjectArea": "Advanced Rehabilitation Sciences",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp",
+      "error": "",
+      "courses": [
+        {
+          "code": "RS517",
+          "name": "Research Methods and Data Analysis",
+          "credits": null,
+          "evidenceText": "RS517 Research Methods and Data Analysis 3 RS5224 Research Seminar in Rehabilitation Sciences",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS5224",
+          "name": "Research Seminar in Rehabilitation Sciences",
+          "credits": null,
+          "evidenceText": "RS5224 Research Seminar in Rehabilitation Sciences 3 HTI5T04 Academic Integrity and Ethics (Health and Social Sciences)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTI5T04",
+          "name": "Academic Integrity and Ethics (Health and Social Sciences)",
+          "credits": null,
+          "evidenceText": "HTI5T04 Academic Integrity and Ethics (Health and Social Sciences) 1 Project study",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS567",
+          "name": "Project Study",
+          "credits": null,
+          "evidenceText": "RS567 Project Study 6 Core subjects for the specialisms",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS594",
+          "name": "",
+          "credits": null,
+          "evidenceText": "RS594 Recent Advances in Rehabilitation for People with Developmental Disabilities 3",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS593",
+          "name": "",
+          "credits": null,
+          "evidenceText": "RS593 Sensory and Motor Intervention for People with Developmental Disabilities 3",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS537",
+          "name": "",
+          "credits": null,
+          "evidenceText": "RS537 Psychosocial Rehabilitation for People with Developmental Disabilities 3",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-074",
+      "officialSubjectArea": "Advanced Physiotherapy",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp",
+      "error": "",
+      "courses": [
+        {
+          "code": "RS517",
+          "name": "Research Methods and Data Analysis",
+          "credits": 3,
+          "evidenceText": "RS517 Research Methods and Data Analysis (3 credits) RS6005 Diagnostic Procedures in Physiotherapy (3 credits) HTI5T04 Academic Integrity and Ethics (Health and Social Sciences) (1 credit)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS6005",
+          "name": "Diagnostic Procedures in Physiotherapy",
+          "credits": 3,
+          "evidenceText": "RS6005 Diagnostic Procedures in Physiotherapy (3 credits) HTI5T04 Academic Integrity and Ethics (Health and Social Sciences) (1 credit) Project Study (6 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTI5T04",
+          "name": "Academic Integrity and Ethics (Health and Social Sciences)",
+          "credits": 1,
+          "evidenceText": "HTI5T04 Academic Integrity and Ethics (Health and Social Sciences) (1 credit) Project Study (6 credits) Six eligible elective subjects from the list of postgraduate subjects of the Department of Rehabilitation Sciences",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS5229",
+          "name": "",
+          "credits": null,
+          "evidenceText": "RS5229 Outcome Measures for Neurological Dysfunctions RS5230",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS5230",
+          "name": "",
+          "credits": null,
+          "evidenceText": "RS5230 Evidence-based Neurological Physiotherapy I RS5231",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS5231",
+          "name": "",
+          "credits": null,
+          "evidenceText": "RS5231 Evidence-based Neurological Physiotherapy II RS5216",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS5216",
+          "name": "",
+          "credits": null,
+          "evidenceText": "RS5216 Musculoskeletal Injury and Repair RS553",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS553",
+          "name": "",
+          "credits": null,
+          "evidenceText": "RS553 Pain management: a multidimensional approach RS581",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS581",
+          "name": "",
+          "credits": null,
+          "evidenceText": "RS581 Advanced Practice and Clinical Integration in Sports Physiotherapy RS52101",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS52101",
+          "name": "",
+          "credits": null,
+          "evidenceText": "RS52101 Contemporary Issues in Exercise Science and Prescription RS5216",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS554",
+          "name": "",
+          "credits": null,
+          "evidenceText": "RS554 Physical Diagnosis of Neuro-Musculoskeletal Disorders RS555",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS555",
+          "name": "",
+          "credits": null,
+          "evidenceText": "RS555 Advanced Principle and Practice of Manual and Neuromusculoskeletal Physiotherapy (Lower Quarter) RS556",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS556",
+          "name": "",
+          "credits": null,
+          "evidenceText": "RS556 Advanced Principle and Practice of Manual and Neuromusculoskeletal Physiotherapy (Upper Quarter) Three Elective Subjects",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS5981",
+          "name": "",
+          "credits": null,
+          "evidenceText": "RS5981 Practicum I in Sports Physiotherapy RS5991",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS5991",
+          "name": "",
+          "credits": null,
+          "evidenceText": "RS5991 Practicum II in Sports Physiotherapy RS5220",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS5220",
+          "name": "",
+          "credits": null,
+          "evidenceText": "RS5220 Advanced Manual and Neuromusculoskeletal Physiotherapy Practice I RS5221",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "RS5221",
+          "name": "",
+          "credits": null,
+          "evidenceText": "RS5221 Advanced Manual and Neuromusculoskeletal Physiotherapy Practice II ",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-075",
+      "officialSubjectArea": "Actuarial and Investment Science",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63032-afm-apm",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-076",
+      "officialSubjectArea": "Operational Research and Risk Analysis",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63024-ofm-opm",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-077",
+      "officialSubjectArea": "Quantitative Finance and FinTech",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63029-qfm-qpm",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-078",
+      "officialSubjectArea": "Mathematics for Artificial Intelligence Technology",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63031-afm-apm",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-079",
+      "officialSubjectArea": "Health Informatics",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/06003-hif-hip",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-080",
+      "officialSubjectArea": "Medical Laboratory Science",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-fmm-pmm",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-081",
+      "officialSubjectArea": "Medical Imaging and Radiation Science",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-frm-prm",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-082",
+      "officialSubjectArea": "Medical Physics",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-msf-msp",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-083",
+      "officialSubjectArea": "Medical Data Science",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-mfd-mpd",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-084",
+      "officialSubjectArea": "Medical Imaging",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55006",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-085",
+      "officialSubjectArea": "Technology Entrepreneurship",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/07001-fte-pte",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-086",
+      "officialSubjectArea": "Chinese Culture",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/77002-maf-map",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-087",
+      "officialSubjectArea": "Business Management",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/02022",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-088",
+      "officialSubjectArea": "Asset and Wealth Management",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/02029-dfm-dpm-ffm-fpm",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-089",
+      "officialSubjectArea": "Information Technology",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61030-fit-pit",
+      "error": "",
+      "courses": [
+        {
+          "code": "DSAI5T09",
+          "name": "Students are required to complete the compulsory 1-credit subject \" Academic Integrity and Ethics in Computer and Mathematical Sciences\" to satisfy the Academic Integrity and Ethics (AIE) requirement for graduation. No credit fee will be charged for this subject.",
+          "credits": null,
+          "evidenceText": "Students are required to complete the compulsory 1-credit subject \"DSAI5T09 Academic Integrity and Ethics in Computer and Mathematical Sciences\" to satisfy the Academic Integrity and Ethics (AIE) requirement for graduation. No credit fee will be charged for this subject. Programme Core subjects: P-core Awards",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61030-fit-pit",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-090",
+      "officialSubjectArea": "Blockchain Technology",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61036-fbt-pbt",
+      "error": "",
+      "courses": [
+        {
+          "code": "DSAI5T09",
+          "name": "Students are required to complete the compulsory 1-credit subject \" Academic Integrity and Ethics in Computer and Mathematical Sciences\" to satisfy the Academic Integrity and Ethics (AIE) requirement for graduation. No credit fee will be charged for this subject.",
+          "credits": null,
+          "evidenceText": "Students are required to complete the compulsory 1-credit subject \"DSAI5T09 Academic Integrity and Ethics in Computer and Mathematical Sciences\" to satisfy the Academic Integrity and Ethics (AIE) requirement for graduation. No credit fee will be charged for this subject. The award requirements are summarised in the table below: Awards",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61036-fbt-pbt",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-091",
+      "officialSubjectArea": "Metaverse Technology",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61038",
+      "error": "",
+      "courses": [
+        {
+          "code": "DSAI5T09",
+          "name": "Students are required to complete the compulsory 1-credit subject \" Academic Integrity and Ethics in Computer and Mathematical Sciences\" to satisfy the Academic Integrity and Ethics (AIE) requirement for graduation. No credit fee will be charged for this subject.",
+          "credits": 12,
+          "evidenceText": "Students are required to complete the compulsory 1-credit subject \"DSAI5T09 Academic Integrity and Ethics in Computer and Mathematical Sciences\" to satisfy the Academic Integrity and Ethics (AIE) requirement for graduation. No credit fee will be charged for this subject. The subject composition is summarised below: 12 credits of Metaverse Programme core (including Metaverse Project I and II)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61038",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-092",
+      "officialSubjectArea": "Cybersecurity",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61039-fcy-pcy",
+      "error": "",
+      "courses": [
+        {
+          "code": "DSAI5T09",
+          "name": "Students are required to complete the compulsory 1-credit subject \" Academic Integrity and Ethics in Computer and Mathematical Sciences\" to satisfy the Academic Integrity and Ethics (AIE) requirement for graduation. No credit fee will be charged for this subject.",
+          "credits": null,
+          "evidenceText": "Students are required to complete the compulsory 1-credit subject \"DSAI5T09 Academic Integrity and Ethics in Computer and Mathematical Sciences\" to satisfy the Academic Integrity and Ethics (AIE) requirement for graduation. No credit fee will be charged for this subject. The award requirements are summarised in the table below: Awards",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61039-fcy-pcy",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-093",
+      "officialSubjectArea": "Agentic AI Systems",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61040-fas-pas",
+      "error": "",
+      "courses": [
+        {
+          "code": "DSAI5T09",
+          "name": "Students are required to complete the compulsory 1-credit subject \" Academic Integrity and Ethics in Computer and Mathematical Sciences\" to satisfy the Academic Integrity and Ethics (AIE) requirement for graduation. No credit fee will be charged for this subject.",
+          "credits": null,
+          "evidenceText": "Students are required to complete the compulsory 1-credit subject \"DSAI5T09 Academic Integrity and Ethics in Computer and Mathematical Sciences\" to satisfy the Academic Integrity and Ethics (AIE) requirement for graduation. No credit fee will be charged for this subject. The award requirements are summarised in the table below: Awards",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61040-fas-pas",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-094",
+      "officialSubjectArea": "Generative AI and the Humanities",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/74001-atf-atp-lcf-lcp",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-095",
+      "officialSubjectArea": "Innovative Multimedia Entertainment",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/73040-ftm-ptm",
+      "error": "",
+      "courses": [
+        {
+          "code": "ABCT5T01",
+          "name": "Except for , all other classes are conducted face-to-face, and attendance requirements may be enforced.",
+          "credits": null,
+          "evidenceText": "Except for ABCT5T01, all other classes are conducted face-to-face, and attendance requirements may be enforced. Classes are normally held during the day on weekdays, except for a few core subjects and electives. One academic year consists of three semesters, including the summer term. The summer term is an intensive semester in which classes are held twice a week.",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/73040-ftm-ptm",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-096",
+      "officialSubjectArea": "Design",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/73035-ibd-ibp-isd-isp-ssd-ssp-ted-tep",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-097",
+      "officialSubjectArea": "Fashion Design",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14111-fpp-dfi",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-098",
+      "officialSubjectArea": "Global Fashion Management",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14105-ftg-ptg",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-099",
+      "officialSubjectArea": "Sustainable Fashion and Innovation",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14107-ffs-pfs",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-100",
+      "officialSubjectArea": "Intelligent Wearable Technology",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14110-iwt-pwt-pgd",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-101",
+      "officialSubjectArea": "Global Hospitality Business",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24043",
+      "error": "",
+      "courses": [
+        {
+          "code": "HTM5T02",
+          "name": "Academic Integrity and Ethics in Business Studies and Research",
+          "credits": 1,
+          "evidenceText": "HTM5T02 Academic Integrity and Ethics in Business Studies and Research (1 credit) HTM562 Marketing Management in the Hospitality & Tourism Industry (3 credits) HTM563 Revenue Management in Hospitality Industry (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24043",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM562",
+          "name": "Marketing Management in the Hospitality & Tourism Industry",
+          "credits": 3,
+          "evidenceText": "HTM562 Marketing Management in the Hospitality & Tourism Industry (3 credits) HTM563 Revenue Management in Hospitality Industry (3 credits) HTM564 Quality Service Management for the Hospitality & Tourism Industry (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24043",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM563",
+          "name": "Revenue Management in Hospitality Industry",
+          "credits": 3,
+          "evidenceText": "HTM563 Revenue Management in Hospitality Industry (3 credits) HTM564 Quality Service Management for the Hospitality & Tourism Industry (3 credits) HTM565 Hospitality Business Strategies in Asia - China Hotel & Tourism Business Studies (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24043",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM564",
+          "name": "Quality Service Management for the Hospitality & Tourism Industry",
+          "credits": 3,
+          "evidenceText": "HTM564 Quality Service Management for the Hospitality & Tourism Industry (3 credits) HTM565 Hospitality Business Strategies in Asia - China Hotel & Tourism Business Studies (3 credits) HTM566 Capstone Consulting Project (Academic Business Project ABP) (6 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24043",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM565",
+          "name": "Hospitality Business Strategies in Asia - China Hotel & Tourism Business Studies",
+          "credits": 3,
+          "evidenceText": "HTM565 Hospitality Business Strategies in Asia - China Hotel & Tourism Business Studies (3 credits) HTM566 Capstone Consulting Project (Academic Business Project ABP) (6 credits) Compulsory Subjects taken at the  University of Houston (UH) (3rd semester)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24043",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM566",
+          "name": "Capstone Consulting Project (Academic Business Project ABP)",
+          "credits": 6,
+          "evidenceText": "HTM566 Capstone Consulting Project (Academic Business Project ABP) (6 credits) Compulsory Subjects taken at the  University of Houston (UH) (3rd semester) Hospitality Business Strategies in the Americas & the Caribbean (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24043",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-102",
+      "officialSubjectArea": "Hospitality and Tourism Management",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+      "error": "",
+      "courses": [
+        {
+          "code": "HTM5002",
+          "name": "Introductory Workshop",
+          "credits": 1,
+          "evidenceText": "HTM5002 – Introductory Workshop (1 credit) HTM5T02 - Academic Integrity and Ethics (AIE) in Business Studies and Research (1 credit) 2. Compulsory Subjects (Common to the MSc/PgD in AIH, IEH, IHM, ITEM and LEM )",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM5T02",
+          "name": "Academic Integrity and Ethics (AIE) in Business Studies and Research",
+          "credits": 1,
+          "evidenceText": "HTM5T02 - Academic Integrity and Ethics (AIE) in Business Studies and Research (1 credit) 2. Compulsory Subjects (Common to the MSc/PgD in AIH, IEH, IHM, ITEM and LEM ) HTM533 – Managing Human Resources in the Hospitality & Tourism Industry (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM533",
+          "name": "Managing Human Resources in the Hospitality & Tourism Industry",
+          "credits": 3,
+          "evidenceText": "HTM533 – Managing Human Resources in the Hospitality & Tourism Industry (3 credits) HTM534 – Managing Marketing in the Hospitality & Tourism Industry (3 credits) HTM535 – Hospitality & Tourism Financial Management (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM534",
+          "name": "Managing Marketing in the Hospitality & Tourism Industry",
+          "credits": 3,
+          "evidenceText": "HTM534 – Managing Marketing in the Hospitality & Tourism Industry (3 credits) HTM535 – Hospitality & Tourism Financial Management (3 credits) HTM582 – Research Methods (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM535",
+          "name": "Hospitality & Tourism Financial Management",
+          "credits": 3,
+          "evidenceText": "HTM535 – Hospitality & Tourism Financial Management (3 credits) HTM582 – Research Methods (3 credits) 3. Specialisation Subjects for the MSc/PgD in AIH only",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM582",
+          "name": "Research Methods",
+          "credits": 3,
+          "evidenceText": "HTM582 – Research Methods (3 credits) 3. Specialisation Subjects for the MSc/PgD in AIH only HTM592 – AI for Hospitality: Foundations, Applications, and Ethics (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM592",
+          "name": "AI for Hospitality: Foundations, Applications, and Ethics",
+          "credits": 3,
+          "evidenceText": "HTM592 – AI for Hospitality: Foundations, Applications, and Ethics (3 credits) HTM593 – Machine Learning and Emerging Technologies in Hospitality (3 credits) HTM594 – Big Data Analytics and Intelligence in Hospitality (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM593",
+          "name": "Machine Learning and Emerging Technologies in Hospitality",
+          "credits": 3,
+          "evidenceText": "HTM593 – Machine Learning and Emerging Technologies in Hospitality (3 credits) HTM594 – Big Data Analytics and Intelligence in Hospitality (3 credits) HTM595 – AI-Powered Service Design for Hospitality (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM594",
+          "name": "Big Data Analytics and Intelligence in Hospitality",
+          "credits": 3,
+          "evidenceText": "HTM594 – Big Data Analytics and Intelligence in Hospitality (3 credits) HTM595 – AI-Powered Service Design for Hospitality (3 credits) 4. Specialisation Subjects for the MSc/PgD in IEH only",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM595",
+          "name": "AI-Powered Service Design for Hospitality",
+          "credits": 3,
+          "evidenceText": "HTM595 – AI-Powered Service Design for Hospitality (3 credits) 4. Specialisation Subjects for the MSc/PgD in IEH only HTM569 – Innovation and Entrepreneurship in Hospitality Industry (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM569",
+          "name": "Innovation and Entrepreneurship in Hospitality Industry",
+          "credits": 3,
+          "evidenceText": "HTM569 – Innovation and Entrepreneurship in Hospitality Industry (3 credits) HTM570 – Innovative Experience Design (3 credits) HTM571 – Business Models in Hospitality Entrepreneurship (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM570",
+          "name": "Innovative Experience Design",
+          "credits": 3,
+          "evidenceText": "HTM570 – Innovative Experience Design (3 credits) HTM571 – Business Models in Hospitality Entrepreneurship (3 credits) HTM572 – Innovation in Hospitality in the Digital Age (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM571",
+          "name": "Business Models in Hospitality Entrepreneurship",
+          "credits": 3,
+          "evidenceText": "HTM571 – Business Models in Hospitality Entrepreneurship (3 credits) HTM572 – Innovation in Hospitality in the Digital Age (3 credits) 5. Specialisation Subjects for the MSc/PgD in IHM only",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM572",
+          "name": "Innovation in Hospitality in the Digital Age",
+          "credits": 3,
+          "evidenceText": "HTM572 – Innovation in Hospitality in the Digital Age (3 credits) 5. Specialisation Subjects for the MSc/PgD in IHM only HTM536 – Strategic Management for Hospitality Businesses (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM536",
+          "name": "Strategic Management for Hospitality Businesses",
+          "credits": 3,
+          "evidenceText": "HTM536 – Strategic Management for Hospitality Businesses (3 credits) HTM537 – Design for Hospitality (3 credits) HTM538 – Multi-Unit Hospitality Management (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM537",
+          "name": "Design for Hospitality",
+          "credits": 3,
+          "evidenceText": "HTM537 – Design for Hospitality (3 credits) HTM538 – Multi-Unit Hospitality Management (3 credits) HTM539 – Hospitality Revenue Management (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM538",
+          "name": "Multi-Unit Hospitality Management",
+          "credits": 3,
+          "evidenceText": "HTM538 – Multi-Unit Hospitality Management (3 credits) HTM539 – Hospitality Revenue Management (3 credits) 6. Specialisation Subjects for the MSc/PgD in ITEM only",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM539",
+          "name": "Hospitality Revenue Management",
+          "credits": 3,
+          "evidenceText": "HTM539 – Hospitality Revenue Management (3 credits) 6. Specialisation Subjects for the MSc/PgD in ITEM only HTM520 – Meetings and Exhibition Management (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM520",
+          "name": "Meetings and Exhibition Management",
+          "credits": 3,
+          "evidenceText": "HTM520 – Meetings and Exhibition Management (3 credits) HTM544 – Strategic Management for Travel and Tourism Businesses (3 credits) HTM545 – Tourism Policy and Development (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM544",
+          "name": "Strategic Management for Travel and Tourism Businesses",
+          "credits": 3,
+          "evidenceText": "HTM544 – Strategic Management for Travel and Tourism Businesses (3 credits) HTM545 – Tourism Policy and Development (3 credits) HTM561 – Business Events: Concepts, Issues and Trends (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM545",
+          "name": "Tourism Policy and Development",
+          "credits": 3,
+          "evidenceText": "HTM545 – Tourism Policy and Development (3 credits) HTM561 – Business Events: Concepts, Issues and Trends (3 credits) 7. Specialisation Subjects for the MSc/PgD in LEM only",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM561",
+          "name": "Business Events: Concepts, Issues and Trends",
+          "credits": 3,
+          "evidenceText": "HTM561 – Business Events: Concepts, Issues and Trends (3 credits) 7. Specialisation Subjects for the MSc/PgD in LEM only HTM541 – Luxury Management (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM541",
+          "name": "Luxury Management",
+          "credits": 3,
+          "evidenceText": "HTM541 – Luxury Management (3 credits) HTM574 – Luxury Consumption Experience and Communication (3 credits) HTM575 – Sustainable Luxury and Design (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM574",
+          "name": "Luxury Consumption Experience and Communication",
+          "credits": 3,
+          "evidenceText": "HTM574 – Luxury Consumption Experience and Communication (3 credits) HTM575 – Sustainable Luxury and Design (3 credits) HTM576 – Luxury Service Management in Asia (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM575",
+          "name": "Sustainable Luxury and Design",
+          "credits": 3,
+          "evidenceText": "HTM575 – Sustainable Luxury and Design (3 credits) HTM576 – Luxury Service Management in Asia (3 credits) 8. Project Options",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM576",
+          "name": "Luxury Service Management in Asia",
+          "credits": 3,
+          "evidenceText": "HTM576 – Luxury Service Management in Asia (3 credits) 8. Project Options HTM598 – Consultancy Project (3 credits) or",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM598",
+          "name": "Consultancy Project or",
+          "credits": 3,
+          "evidenceText": "HTM598 – Consultancy Project (3 credits) or HTM599 – Research Project (6 credits) 9. Elective Subjects (Note: choose only one elective if you are taking HTM598 – Consultancy Project)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM599",
+          "name": "Research Project",
+          "credits": 6,
+          "evidenceText": "HTM599 – Research Project (6 credits) 9. Elective Subjects (Note: choose only one elective if you are taking HTM598 – Consultancy Project) HTM507 – Cultural Tourism (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM507",
+          "name": "Cultural Tourism",
+          "credits": 3,
+          "evidenceText": "HTM507 – Cultural Tourism (3 credits) HTM513 – China Hotel and Tourism Business Studies (3 credits) HTM528 –Trends and Issues in Global Tourism (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM513",
+          "name": "China Hotel and Tourism Business Studies",
+          "credits": 3,
+          "evidenceText": "HTM513 – China Hotel and Tourism Business Studies (3 credits) HTM528 –Trends and Issues in Global Tourism (3 credits) HTM540 – Hospitality and Tourism Technology and Innovation (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM528",
+          "name": "Trends and Issues in Global Tourism",
+          "credits": 3,
+          "evidenceText": "HTM528 –Trends and Issues in Global Tourism (3 credits) HTM540 – Hospitality and Tourism Technology and Innovation (3 credits) HTM541 – Luxury Management (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM540",
+          "name": "Hospitality and Tourism Technology and Innovation",
+          "credits": 3,
+          "evidenceText": "HTM540 – Hospitality and Tourism Technology and Innovation (3 credits) HTM541 – Luxury Management (3 credits) HTM557 – Residential Study Trip (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM557",
+          "name": "Residential Study Trip",
+          "credits": 3,
+          "evidenceText": "HTM557 – Residential Study Trip (3 credits) HTM568 – Smart Tourism and Big Data Analytics (3 credits) HTM573 – Business Development and Branding (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM568",
+          "name": "Smart Tourism and Big Data Analytics",
+          "credits": 3,
+          "evidenceText": "HTM568 – Smart Tourism and Big Data Analytics (3 credits) HTM573 – Business Development and Branding (3 credits) HTM577 – Luxury Service Management in Practice (including residential workshop) (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM573",
+          "name": "Business Development and Branding",
+          "credits": 3,
+          "evidenceText": "HTM573 – Business Development and Branding (3 credits) HTM577 – Luxury Service Management in Practice (including residential workshop) (3 credits) HTM5003 – Management Practice (no credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM577",
+          "name": "Luxury Service Management in Practice (including residential workshop)",
+          "credits": 3,
+          "evidenceText": "HTM577 – Luxury Service Management in Practice (including residential workshop) (3 credits) HTM5003 – Management Practice (no credits) Note: Management Practice is an optional, non-credit-bearing internship subject.",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM5003",
+          "name": "Management Practice (no credits)",
+          "credits": 0,
+          "evidenceText": "HTM5003 – Management Practice (no credits) Note: Management Practice is an optional, non-credit-bearing internship subject. ​ B. Programme Structure of the MSc/PgD in International Wine Management (IWM)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM554",
+          "name": "Viticulture and Oenology",
+          "credits": 3,
+          "evidenceText": "HTM554 – Viticulture and Oenology (3 credits) HTM555 – Wine Business Environment (3 credits) HTM556 – Wines of the World (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM555",
+          "name": "Wine Business Environment",
+          "credits": 3,
+          "evidenceText": "HTM555 – Wine Business Environment (3 credits) HTM556 – Wines of the World (3 credits) 4. Project Options",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM556",
+          "name": "Wines of the World",
+          "credits": 3,
+          "evidenceText": "HTM556 – Wines of the World (3 credits) 4. Project Options HTM598 – Consultancy Project (3 credits) or",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM558",
+          "name": "Brand Management and Communication in Wine Business",
+          "credits": 3,
+          "evidenceText": "HTM558 – Brand Management and Communication in Wine Business (3 credits) HTM560 – Wine Economics (3 credits) HTM561 – Business Events: Concepts, Issues, and Trends (3 credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTM560",
+          "name": "Wine Economics",
+          "credits": 3,
+          "evidenceText": "HTM560 – Wine Economics (3 credits) HTM561 – Business Events: Concepts, Issues, and Trends (3 credits) HTM5003 – Management Practice (no credits)",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "reviewStatus": "candidate"
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-103",
+      "officialSubjectArea": "English Studies for the Professions",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/71026-mcf-mcp-mlf-mlp",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-104",
+      "officialSubjectArea": "Nursing",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/53070-fts-pt",
+      "error": "",
+      "courses": []
+    },
+    {
+      "programmeId": "POLYU-TPG-105",
+      "officialSubjectArea": "Vision Science and Innovation",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm",
+      "error": "",
+      "courses": [
+        {
+          "code": "SO5001",
+          "name": "Digital Health: Transforming Healthcare through Technology",
+          "credits": 3,
+          "evidenceText": "SO5001 Digital Health: Transforming Healthcare through Technology (3 credits) SO5002 Adaptive Technology in Vision Science",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "SO5002",
+          "name": "Adaptive Technology in Vision Science",
+          "credits": 3,
+          "evidenceText": "SO5002 Adaptive Technology in Vision Science (3 credits) SO5003 Entrepreneurship in Ophthalmic Industry",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "SO5003",
+          "name": "Entrepreneurship in Ophthalmic Industry",
+          "credits": 3,
+          "evidenceText": "SO5003 Entrepreneurship in Ophthalmic Industry (3 credits) SO5004 Principle and Practice of Ophthalmic Health Care",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "SO5004",
+          "name": "Principle and Practice of Ophthalmic Health Care",
+          "credits": 3,
+          "evidenceText": "SO5004 Principle and Practice of Ophthalmic Health Care (3 credits) SO5005 Quantitative and Qualitative Research Methods",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "SO5005",
+          "name": "Quantitative and Qualitative Research Methods",
+          "credits": 3,
+          "evidenceText": "SO5005 Quantitative and Qualitative Research Methods (3 credits) Elective Subjects (three to choose from the following, based on students’ specific backgrounds):",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "SO5006",
+          "name": "Advanced Vision Science",
+          "credits": 3,
+          "evidenceText": "SO5006 Advanced Vision Science (3 credits) SO5008 Cutting-edge Investigations in Eye and Biomedical Research",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "SO5008",
+          "name": "Cutting-edge Investigations in Eye and Biomedical Research",
+          "credits": 3,
+          "evidenceText": "SO5008 Cutting-edge Investigations in Eye and Biomedical Research (3 credits) SO6006 Visual Neuroscience",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "SO6006",
+          "name": "Visual Neuroscience",
+          "credits": 3,
+          "evidenceText": "SO6006 Visual Neuroscience (3 credits) SO5009 Contemporary Myopia Control and Management",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "SO5009",
+          "name": "Contemporary Myopia Control and Management",
+          "credits": 3,
+          "evidenceText": "SO5009 Contemporary Myopia Control and Management (3 credits) BME5150 Medical Artificial Intelligence and Data Analytics",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "BME5150",
+          "name": "Medical Artificial Intelligence and Data Analytics",
+          "credits": 3,
+          "evidenceText": "BME5150 Medical Artificial Intelligence and Data Analytics (3 credits) COMP5511 Artificial Intelligence Concept",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "COMP5511",
+          "name": "Artificial Intelligence Concept",
+          "credits": 3,
+          "evidenceText": "COMP5511 Artificial Intelligence Concept (3 credits) COMP5517 Human Computer Interface",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "COMP5517",
+          "name": "Human Computer Interface",
+          "credits": 3,
+          "evidenceText": "COMP5517 Human Computer Interface (3 credits) COMP5523 Computer Vision and Image Processing",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "COMP5523",
+          "name": "Computer Vision and Image Processing",
+          "credits": 3,
+          "evidenceText": "COMP5523 Computer Vision and Image Processing (3 credits) COMP5554 Advanced Artificial Intelligence",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "COMP5554",
+          "name": "Advanced Artificial Intelligence",
+          "credits": 3,
+          "evidenceText": "COMP5554 Advanced Artificial Intelligence (3 credits) HTI5052 Bioinformatics in Health Sciences",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTI5052",
+          "name": "Bioinformatics in Health Sciences",
+          "credits": 3,
+          "evidenceText": "HTI5052 Bioinformatics in Health Sciences (3 credits) SD5116 Design for Transformation",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "SD5116",
+          "name": "Design for Transformation",
+          "credits": 3,
+          "evidenceText": "SD5116 Design for Transformation (3 credits) SD5132 Lab Studies in Human Cyber-Physical Systems",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "SD5132",
+          "name": "Lab Studies in Human Cyber-Physical Systems",
+          "credits": 3,
+          "evidenceText": "SD5132 Lab Studies in Human Cyber-Physical Systems (3 credits) SD5414 Systemic Innovation and Designing Future Services",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "SD5414",
+          "name": "Systemic Innovation and Designing Future Services",
+          "credits": 3,
+          "evidenceText": "SD5414 Systemic Innovation and Designing Future Services (3 credits) Research Project:",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "SO5100",
+          "name": "Research Project",
+          "credits": 6,
+          "evidenceText": "SO5100 Research Project (6 credits) AIE Subject:",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm",
+          "reviewStatus": "candidate"
+        },
+        {
+          "code": "HTI5T04",
+          "name": "Academic Integrity and Ethics (Health and Social Sciences)",
+          "credits": 1,
+          "evidenceText": "HTI5T04 Academic Integrity and Ethics (Health and Social Sciences) (1 credit) Remarks :",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm",
+          "reviewStatus": "candidate"
+        }
+      ]
+    }
+  ]
+}

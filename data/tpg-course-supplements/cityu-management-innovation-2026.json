@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-11",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-017",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Core Courses (12 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights",
+          "courses": [
+            { "code": "MGT5204", "name": "Management and Organizations", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" },
+            { "code": "MGT5205", "name": "Strategic Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" },
+            { "code": "MGT6202", "name": "Entrepreneurial Leadership", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" },
+            { "code": "MGT6310", "name": "People Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" }
+          ]
+        },
+        {
+          "id": "programme-electives",
+          "name": "Programme Electives",
+          "type": "elective_project_internship",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Complete at least 6 credit units from Programme Electives. Electives total 18 credit units across the Programme Elective and College of Business pools.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights",
+          "courses": [
+            { "code": "MGT5507", "name": "Decision-Making in Management and Innovation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" },
+            { "code": "MGT5508", "name": "Management and Innovation Consulting Skills", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" },
+            { "code": "MGT6066", "name": "Business Ethics & Social Responsibility", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" },
+            { "code": "MGT6209", "name": "Transformative Collaborations", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" },
+            { "code": "MGT6314", "name": "Global Human Resources Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" },
+            { "code": "MGT6318", "name": "Employee Engagement and Performance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" },
+            { "code": "MGT6324", "name": "Doing Business in Asia", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" },
+            { "code": "MGT6325", "name": "Entrepreneurship & Intrapreneurship", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" },
+            { "code": "MGT6532", "name": "Organizational Development and Change", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" },
+            { "code": "MGT6800", "name": "Entrepreneurial Project/Internship", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" },
+            { "code": "MGT6904", "name": "Overseas Business Discovery", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" }
+          ]
+        },
+        {
+          "id": "college-business-electives",
+          "name": "College of Business Electives",
+          "type": "elective",
+          "ruleText": "Use courses from this official pool together with Programme Electives to complete 18 elective credit units in total. Elective availability and quotas are subject to demand and staffing constraints.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights",
+          "courses": [
+            { "code": "AC5511", "name": "Financial and Management Accounting", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" },
+            { "code": "AC5690", "name": "Corporate Governance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" },
+            { "code": "AC6531", "name": "Financial Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" },
+            { "code": "AC6533", "name": "Corporate Finance and Policies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" },
+            { "code": "AC6560", "name": "Accounting Information Systems", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" },
+            { "code": "AC6691", "name": "Companies and Securities Regulations and Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" },
+            { "code": "EF5042", "name": "Corporate Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" },
+            { "code": "EF5043", "name": "Finance for the Global Manager", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" },
+            { "code": "EF5342", "name": "Financial Systems, Markets and Instruments", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" },
+            { "code": "IS5940", "name": "Innovation and Technology Entrepreneurship", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" },
+            { "code": "IS6921", "name": "Knowledge Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" },
+            { "code": "MKT5610", "name": "Marketing Strategy and Planning", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" },
+            { "code": "MKT5641", "name": "Chinese Business Culture and Marketing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" },
+            { "code": "MKT5644", "name": "Digital Marketing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" },
+            { "code": "MKT5648", "name": "Social Media Marketing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" },
+            { "code": "MKT5649", "name": "Managing Services and Experiences", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" },
+            { "code": "MS5223", "name": "Project Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/en/mgt/programmes/msc-management-and-innovation/programme-highlights" }
+          ]
+        }
+      ]
+    }
+  ]
+}

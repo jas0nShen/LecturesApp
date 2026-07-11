@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-11",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-024",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-computing/department-of-data-science/p79",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [
+        { "id": "CITYU-TPG-024-SCIENTIFIC-DISCOVERY", "name": "AI for Scientific Discovery", "type": "Focused Track", "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+        { "id": "CITYU-TPG-024-DIGITAL-MEDICINE", "name": "AI for Digital Medicine", "type": "Focused Track", "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+        { "id": "CITYU-TPG-024-SUSTAINABILITY", "name": "AI for Sustainability", "type": "Focused Track", "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+        { "id": "CITYU-TPG-024-APPLIED-AI", "name": "Applied AI", "type": "Focused Track", "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" }
+      ],
+      "courseGroups": [
+        {
+          "id": "core",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five Core Courses (15 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-computing/department-of-data-science/p79",
+          "courses": [
+            { "code": "DSC5001", "name": "Statistical Machine Learning I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-computing/department-of-data-science/p79" },
+            { "code": "DSC6008", "name": "Design of Experiments", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-computing/department-of-data-science/p79" },
+            { "code": "DSC6020", "name": "Artificial Intelligence for Scientific Knowledge Discovery", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-computing/department-of-data-science/p79" },
+            { "code": "DSC6021", "name": "Generative Artificial Intelligence", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-computing/department-of-data-science/p79" },
+            { "code": "DSC6022", "name": "Research Projects for Artificial Intelligence for Sciences", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-computing/department-of-data-science/p79" }
+          ]
+        },
+        {
+          "id": "scientific-discovery-electives",
+          "name": "AI for Scientific Discovery Electives",
+          "type": "track_elective",
+          "creditsRequired": 15,
+          "ruleText": "Complete 15 elective credit units within this focused Track. MSE courses marked in the official list are subject to approval. Dissertation or Internship may form part of the focused-track experiential path and requires manual rule confirmation.",
+          "appliesToTrackIds": ["CITYU-TPG-024-SCIENTIFIC-DISCOVERY"],
+          "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs",
+          "courses": [
+            { "code": "CHEM6134", "name": "AI for Chemistry", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "PHY5503", "name": "Introduction to Quantum Technology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "PHY5504", "name": "Data Acquisition & Processing Skills for Physicists I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "PHY5505", "name": "Data Acquisition & Processing Skills for Physicists II", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "PHY5506", "name": "Data Analysis and Modelling in Physics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "PHY6502", "name": "Advanced Computational Methods for Simulation and Modelling", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "PHY6603", "name": "Introduction to Quantum Information", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "PHY6604", "name": "Machine Learning in Physics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "MSE5301", "name": "Instrumentation for Materials Characterization", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "MSE5303", "name": "Structure and Deformation of Materials", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "MSE6181", "name": "Photonics in Nanomaterial Systems and Devices", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "MSE6183", "name": "Computational Methods for Materials Science", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "MSE6265", "name": "Quantum Theory of Semiconductors", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "DSC6025", "name": "AI for Materials Science", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" }
+          ]
+        },
+        {
+          "id": "digital-medicine-electives",
+          "name": "AI for Digital Medicine Electives",
+          "type": "track_elective",
+          "creditsRequired": 15,
+          "ruleText": "Complete 15 elective credit units within this focused Track. Dissertation or Internship may form part of the focused-track experiential path and requires manual rule confirmation.",
+          "appliesToTrackIds": ["CITYU-TPG-024-DIGITAL-MEDICINE"],
+          "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs",
+          "courses": [
+            { "code": "BMS5001", "name": "Common Disease and Genomic Medicine", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "BMS5002", "name": "Infectious Disease Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "BMS5007", "name": "Pharmacology Principles in Drug Discovery and Development", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "BMS5008", "name": "Fundamental and Advanced Multi-omics Research", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "BMS5009", "name": "Ageing and the Science of Human Longevity", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "BMS5010", "name": "Artificial Intelligence in Health Science Research and Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "BMS5011", "name": "Wearable Technologies and Digital Medicine", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "BMS5012", "name": "Nutrition Science and Stress Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "BMS5013", "name": "Storytelling of Health Science Data with Analysis and Visualization", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "BMS8111", "name": "Immunology and Infectious Diseases", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "BMS8112", "name": "Viruses, Immunity and Ageing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" }
+          ]
+        },
+        {
+          "id": "sustainability-electives",
+          "name": "AI for Sustainability Electives",
+          "type": "track_elective",
+          "creditsRequired": 15,
+          "ruleText": "Complete 15 elective credit units within this focused Track. Dissertation or Internship may form part of the focused-track experiential path and requires manual rule confirmation.",
+          "appliesToTrackIds": ["CITYU-TPG-024-SUSTAINABILITY"],
+          "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs",
+          "courses": [
+            { "code": "SEE5201", "name": "Air Pollution and Atmospheric Chemistry", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "SEE5202", "name": "Climate Change: Science, Adaptation and Mitigation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "SEE5211", "name": "Data Analysis in Environmental Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "SEE5212", "name": "Environmental Pollution: Theories, Measurement and Mitigation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "SEE6101", "name": "Energy Generation and Storage Systems", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "SEE6103", "name": "Energy Conversion: Theory and Methodology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "SEE6104", "name": "Energy Conservation and Audit", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "SEE6115", "name": "Carbon Audit and Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "SEE6118", "name": "Emerging Energy Technologies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "SEE6122", "name": "Advanced Thermosciences for Energy Engineering", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "SEE6124", "name": "Fuel Processing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "SEE6125", "name": "Carbon Capture Use and Storage", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "SEE6212", "name": "Environmental Modelling", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "SEE6213", "name": "Wastewater Engineering and Water Quality Assessment", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "SEE6214", "name": "Solid Waste Treatment and Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "SEE6224", "name": "Environmental Engineering Science", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "SEE6225", "name": "Environmental Assessment", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" }
+          ]
+        },
+        {
+          "id": "applied-ai-electives",
+          "name": "Applied AI Electives",
+          "type": "track_elective",
+          "creditsRequired": 15,
+          "ruleText": "Complete 15 elective credit units within this focused Track. Dissertation or Internship may form part of the focused-track experiential path and requires manual rule confirmation.",
+          "appliesToTrackIds": ["CITYU-TPG-024-APPLIED-AI"],
+          "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs",
+          "courses": [
+            { "code": "DSC6004", "name": "Topics of Artificial Intelligence for Smart Cities", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "DSC6019", "name": "Embodied AI and Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "DSC6026", "name": "Social Network Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "DSC6027", "name": "Topics of AI for Computational Social Sciences", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "DSC6028", "name": "Medical Image and Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "DSC6029", "name": "Topics of Artificial Intelligence for Biomedical Studies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "DSC6030", "name": "Quantum Machine Learning", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" }
+          ]
+        },
+        {
+          "id": "experiential-options",
+          "name": "Dissertation and Internship Courses",
+          "type": "dissertation_internship",
+          "ruleText": "Students may take either the 6-credit two-semester Dissertation or the 3-credit Summer Internship within their focused Track. These courses are mutually exclusive and require the student to find a suitable supervisor or placement.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs",
+          "courses": [
+            { "code": "DSC6023", "name": "Internship in Artificial Intelligence for Sciences", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" },
+            { "code": "DSC6024", "name": "Dissertation for Artificial Intelligence for Sciences", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msaifs" }
+          ]
+        }
+      ]
+    }
+  ]
+}

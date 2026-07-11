@@ -57,13 +57,13 @@
     </view>
 
     <view class="section">
-      <view wx:for="{{tpgCourses}}" wx:key="rowKey" class="course-card tpg-course-card">
+      <view wx:for="{{tpgCourses}}" wx:key="rowKey" class="course-card tpg-course-card" data-code="{{item.code}}" bindtap="goTpgCourseDetail">
         <view class="row">
           <view class="code">{{item.code}}</view>
           <view class="term-badge">{{item.groupName}}</view>
         </view>
         <view class="course-title">{{item.name}}</view>
-        <view wx:if="{{item.creditsRequired}}" class="subtitle">课程组要求：{{item.creditsRequired}} credits / units</view>
+        <view class="subtitle">{{item.creditLabel}} · 点击查看课程详情</view>
       </view>
 
       <view wx:if="{{tpgCourseCount === 0}}" class="empty tpg-empty">

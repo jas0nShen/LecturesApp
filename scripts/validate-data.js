@@ -20,7 +20,18 @@ function assertReferences(items, foreignKey, validIds, label) {
 }
 
 assert.deepEqual(mock, seed, 'API seed and mini-program fallback data have drifted');
-assert.deepEqual(tpgMock, tpgCatalogue, 'TPG source and mini-program catalogue have drifted');
+const expectedTpgIndex = {
+  ...tpgCatalogue,
+  programmes: tpgCatalogue.programmes.map((programme) => {
+    const courseCount = (programme.courseGroups || []).reduce(
+      (sum, group) => sum + (Array.isArray(group.courses) ? group.courses.length : 0),
+      0
+    );
+    const { courseGroups, ...indexEntry } = programme;
+    return { ...indexEntry, courseCount };
+  })
+};
+assert.deepEqual(tpgMock, expectedTpgIndex, 'TPG source and mini-program catalogue have drifted');
 
 Object.entries(seed).forEach(([label, items]) => assertUniqueIds(items, label));
 
@@ -104,11 +115,37 @@ assert.equal(tpgCatalogue.universities.length, 8);
 assert(tpgCatalogue.programmes.length >= 300, 'TPG programme import is unexpectedly small');
 assertUniqueIds(tpgCatalogue.programmes, 'TPG programmes');
 const tpgUniversityCodes = new Set(tpgCatalogue.universities.map((item) => item.code));
+tpgCatalogue.universities.forEach((university) => {
+  assert.match(university.academicYear, /^\d{4}-\d{2}$/, `${university.code} needs an academic year`);
+  assert.match(university.sourceUrl, /^https:\/\//, `${university.code} needs an official source URL`);
+  assert(
+    tpgCatalogue.programmes.some((programme) => programme.universityCode === university.code),
+    `${university.code} has no TPG programmes`
+  );
+});
+const tpgTrackIds = new Set();
 tpgCatalogue.programmes.forEach((programme) => {
   assert(tpgUniversityCodes.has(programme.universityCode));
   assert(programme.name, `${programme.id} is missing a programme name`);
+  if (programme.academicYear) {
+    assert.match(programme.academicYear, /^\d{4}-\d{2}$/, `${programme.id} has an invalid academic year`);
+  }
   assert(['programme', 'structure'].includes(programme.dataLevel));
   assert(Array.isArray(programme.courseGroups));
+  assert(Array.isArray(programme.tracks || []));
+  assert.match(
+    programme.sourceUrl || tpgCatalogue.universities.find((item) => item.code === programme.universityCode).sourceUrl,
+    /^https:\/\//,
+    `${programme.id} needs an official source URL`
+  );
+  (programme.tracks || []).forEach((track) => {
+    assert(track.id, `${programme.id} has a Track without an ID`);
+    assert(!tpgTrackIds.has(track.id), `Duplicate TPG Track ID ${track.id}`);
+    tpgTrackIds.add(track.id);
+    assert(track.name, `${track.id} is missing a name`);
+    assert(track.type, `${track.id} is missing a type`);
+    assert.match(track.sourceUrl, /^https:\/\//, `${track.id} needs an official source URL`);
+  });
   const courseCodes = [];
   programme.courseGroups.forEach((group) => {
     assert(group.name, `${programme.id} has an unnamed course group`);
@@ -119,6 +156,26 @@ tpgCatalogue.programmes.forEach((programme) => {
       courseCodes.push(course.code);
     });
   });
+  if (programme.courseVerificationStatus === 'verified') {
+    assert.match(programme.courseVerifiedAt || '', /^\d{4}-\d{2}-\d{2}$/, `${programme.id} needs a course verification date`);
+    assert.match(programme.courseSourceUrl || '', /^https:\/\//, `${programme.id} needs an official course source`);
+    assert(programme.creditUnit, `${programme.id} needs a credit unit`);
+    assert(programme.courseGroups.length > 0, `${programme.id} needs verified course groups`);
+    const trackIds = new Set((programme.tracks || []).map((track) => track.id));
+    programme.courseGroups.forEach((group) => {
+      assert(group.id && group.type, `${programme.id} has an incomplete verified group`);
+      assert.match(group.sourceUrl || '', /^https:\/\//, `${programme.id}/${group.id} needs an official source`);
+      (group.appliesToTrackIds || []).forEach((trackId) => assert(trackIds.has(trackId), `${programme.id}/${group.id} has unknown Track ${trackId}`));
+      group.courses.forEach((course) => {
+        assert(
+          (course.credits !== undefined && Number.isFinite(Number(course.credits)) && Number(course.credits) >= 0) || (Number(course.creditsMin) > 0 && Number(course.creditsMax) >= Number(course.creditsMin)),
+          `${programme.id}/${course.code} needs official credits`
+        );
+        assert.match(course.sourceUrl || '', /^https:\/\//, `${programme.id}/${course.code} needs an official source`);
+        (course.appliesToTrackIds || []).forEach((trackId) => assert(trackIds.has(trackId), `${programme.id}/${course.code} has unknown Track ${trackId}`));
+      });
+    });
+  }
   assert.equal(
     new Set(courseCodes).size,
     courseCodes.length,

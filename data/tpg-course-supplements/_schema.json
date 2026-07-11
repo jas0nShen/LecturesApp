@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "POLYU",
+  "academicYear": "2027-28",
+  "verifiedAt": "2026-07-11",
+  "programmes": [
+    {
+      "programmeId": "POLYU-TPG-EXAMPLE",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credits",
+      "sourceUrl": "https://official.example/programme",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core",
+          "name": "Core Subjects",
+          "type": "core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete three subjects.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://official.example/curriculum",
+          "courses": [
+            {
+              "code": "COMP5000",
+              "name": "Example Subject",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://official.example/course"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

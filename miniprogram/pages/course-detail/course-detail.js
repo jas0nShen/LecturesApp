@@ -1,4 +1,5 @@
 const service = require('../../utils/courseService');
+const tpgService = require('../../utils/tpgService');
 const ugService = require('../../utils/ugService');
 
 Page({
@@ -9,6 +10,8 @@ Page({
     completed: false,
     dataSource: 'loading',
     isUgCourse: false,
+    isTpgCourse: false,
+    tpgProgrammeId: '',
     loadError: false,
     routeOptions: null
   },
@@ -19,6 +22,45 @@ Page({
 
   async loadCourse(options = this.data.routeOptions || {}) {
     this.setData({ loadError: false, dataSource: 'loading', routeOptions: options });
+    if (options.tpgProgrammeId && options.courseCode) {
+      let programme = tpgService.getProgramme(options.tpgProgrammeId);
+      const app = typeof getApp === 'function' ? getApp() : {};
+      try {
+        if (programme && app.ensureTpgUniversityLoaded) await app.ensureTpgUniversityLoaded(programme.universityCode);
+      } catch (error) {
+        this.setData({ dataSource: 'error', isTpgCourse: true, tpgProgrammeId: options.tpgProgrammeId, loadError: true, routeOptions: options });
+        wx.showToast({ title: '硕士课程数据加载失败，请重试', icon: 'none' });
+        return;
+      }
+      programme = tpgService.getProgramme(options.tpgProgrammeId);
+      const university = tpgService.getProgrammeUniversity(programme);
+      const item = tpgService.getProgrammeCourse(options.tpgProgrammeId, options.courseCode);
+      const course = item ? {
+        courseCode: item.code,
+        titleEn: item.name,
+        titleZh: '',
+        credits: item.credits,
+        semester: '以学校选课系统为准',
+        department: programme && programme.faculty || '',
+        language: '以学校公布为准',
+        prerequisites: '请查阅 Programme Handbook',
+        exclusions: '请查阅学校选课系统',
+        description: `${item.groupName} · ${programme ? programme.name : ''}`,
+        officialUrl: programme && programme.sourceUrl || '',
+        lastVerifiedAt: university && university.academicYear || ''
+      } : null;
+      this.setData({
+        course,
+        typeLabel: item ? item.groupName : '',
+        favorite: item ? service.isTpgCourseFavorite(options.tpgProgrammeId, item.code) : false,
+        completed: item ? service.isTpgCourseCompleted(options.tpgProgrammeId, item.code) : false,
+        dataSource: '授课硕士本地资料库',
+        isUgCourse: false,
+        isTpgCourse: true,
+        tpgProgrammeId: options.tpgProgrammeId
+      });
+      return;
+    }
     if (options.ugId) {
       const app = typeof getApp === 'function' ? getApp() : {};
       const universityCode = options.universityCode || ugService.inferUniversityCodeFromCourseId(options.ugId);
@@ -36,7 +78,8 @@ Page({
         favorite: false,
         completed: false,
         dataSource: '本科本地资料库',
-        isUgCourse: true
+        isUgCourse: true,
+        isTpgCourse: false
       });
       return;
     }
@@ -49,22 +92,43 @@ Page({
       favorite: service.isFavorite(options.id),
       completed: service.getCompletedCourseIds().includes(Number(options.id)),
       dataSource: result.source,
-      isUgCourse: false
+      isUgCourse: false,
+      isTpgCourse: false
     });
   },
 
   retryUgLoad() {
+    const options = this.data.routeOptions || {};
+    if (options.tpgProgrammeId) {
+      const programme = tpgService.getProgramme(options.tpgProgrammeId);
+      const app = typeof getApp === 'function' ? getApp() : {};
+      if (programme && app.retryTpgUniversityLoad) {
+        return app.retryTpgUniversityLoad(programme.universityCode).then(() => this.loadCourse(options)).catch(() => {
+          wx.showToast({ title: '暂时无法加载，请稍后重试', icon: 'none' });
+        });
+      }
+    }
     return this.loadCourse(this.data.routeOptions || {});
   },
 
   toggleFavorite() {
     if (this.data.isUgCourse || !this.data.course) return;
+    if (this.data.isTpgCourse) {
+      service.toggleTpgCourseFavorite(this.data.tpgProgrammeId, this.data.course.courseCode);
+      this.setData({ favorite: service.isTpgCourseFavorite(this.data.tpgProgrammeId, this.data.course.courseCode) });
+      return;
+    }
     service.toggleFavorite(this.data.course.id);
     this.setData({ favorite: service.isFavorite(this.data.course.id) });
   },
 
   toggleCompleted() {
     if (this.data.isUgCourse || !this.data.course) return;
+    if (this.data.isTpgCourse) {
+      service.toggleTpgCourseCompleted(this.data.tpgProgrammeId, this.data.course.courseCode);
+      this.setData({ completed: service.isTpgCourseCompleted(this.data.tpgProgrammeId, this.data.course.courseCode) });
+      return;
+    }
     service.toggleCompleted(this.data.course.id);
     this.setData({ completed: service.getCompletedCourseIds().includes(this.data.course.id) });
   },

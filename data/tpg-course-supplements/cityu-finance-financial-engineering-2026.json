@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-11",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-007",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cb.cityu.edu.hk/ef/msc/?category=programme&page=2017_onwards_structure",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core",
+          "name": "Required Core Courses",
+          "type": "core",
+          "creditsRequired": 24,
+          "coursesRequired": 8,
+          "ruleText": "Complete all eight required core courses (24 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cb.cityu.edu.hk/ef/msc/?category=programme&page=2017_onwards_structure",
+          "courses": [
+            { "code": "EF5063", "name": "Professional Seminars in Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/ef/msc/?category=programme&page=2017_onwards_structure" },
+            { "code": "EF5042", "name": "Corporate Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/ef/msc/?category=programme&page=2017_onwards_structure" },
+            { "code": "EF5052", "name": "Investments", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/ef/msc/?category=programme&page=2017_onwards_structure" },
+            { "code": "EF5070", "name": "Financial Econometrics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/ef/msc/?category=programme&page=2017_onwards_structure" },
+            { "code": "EF5050", "name": "Derivatives and Risk Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/ef/msc/?category=programme&page=2017_onwards_structure" },
+            { "code": "EF5142", "name": "Advanced Corporate Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/ef/msc/?category=programme&page=2017_onwards_structure" },
+            { "code": "EF5143", "name": "International Financial Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/ef/msc/?category=programme&page=2017_onwards_structure" },
+            { "code": "EF5157", "name": "Fixed Income Securities", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/ef/msc/?category=programme&page=2017_onwards_structure" }
+          ]
+        },
+        {
+          "id": "elective",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Choose two elective courses: either two Finance electives, or one Finance elective and one course offered by the Department or another College of Business department. The official programme page does not publish a fixed elective-code pool; selection requires manual confirmation against the current course catalogue.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cb.cityu.edu.hk/ef/msc/?category=programme&page=2017_onwards_structure",
+          "courses": []
+        }
+      ]
+    },
+    {
+      "programmeId": "CITYU-TPG-014",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cb.cityu.edu.hk/ef/msc/?category=programme&page=2017_onwards_structure",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core",
+          "name": "Required Core Courses",
+          "type": "core",
+          "creditsRequired": 24,
+          "coursesRequired": 8,
+          "ruleText": "Complete all eight required core courses (24 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cb.cityu.edu.hk/ef/msc/?category=programme&page=2017_onwards_structure",
+          "courses": [
+            { "code": "EF5063", "name": "Professional Seminars in Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/ef/msc/?category=programme&page=2017_onwards_structure" },
+            { "code": "EF5250", "name": "Stochastic Calculus for Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/ef/msc/?category=programme&page=2017_onwards_structure" },
+            { "code": "EF5042", "name": "Corporate Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/ef/msc/?category=programme&page=2017_onwards_structure" },
+            { "code": "EF5052", "name": "Investments", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/ef/msc/?category=programme&page=2017_onwards_structure" },
+            { "code": "EF5050", "name": "Derivatives and Risk Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/ef/msc/?category=programme&page=2017_onwards_structure" },
+            { "code": "EF5157", "name": "Fixed Income Securities", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/ef/msc/?category=programme&page=2017_onwards_structure" },
+            { "code": "EF5210", "name": "Option Pricing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/ef/msc/?category=programme&page=2017_onwards_structure" },
+            { "code": "EF5213", "name": "Financial Computing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cb.cityu.edu.hk/ef/msc/?category=programme&page=2017_onwards_structure" }
+          ]
+        },
+        {
+          "id": "elective",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Choose two elective courses: either two Finance electives, or one Finance elective and one course offered by the Department or another College of Business department. The official programme page does not publish a fixed elective-code pool; selection requires manual confirmation against the current course catalogue.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cb.cityu.edu.hk/ef/msc/?category=programme&page=2017_onwards_structure",
+          "courses": []
+        }
+      ]
+    }
+  ]
+}

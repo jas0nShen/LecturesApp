@@ -12,6 +12,9 @@ test('runtime UG shards are registered inside their own subpackage instead of st
 
   assert.doesNotMatch(shardIndex, /require\(['"]\.\.\/subpackages\//);
   assert.match(hkuLoader, /registerUgCourseShard\(\{ universityCode, packageName, courses \}\)/);
+  assert.match(hkuLoader, /completeUgCourseShardActivation\(packageName\)/);
+  assert.match(hkuLoader, /wx\.navigateBack\(\{/);
+  assert.match(hkuLoader, /returnToCaller\(attempt \+ 1\)/);
 });
 
 test('UG catalogue summarizes current undergraduate seed data', () => {

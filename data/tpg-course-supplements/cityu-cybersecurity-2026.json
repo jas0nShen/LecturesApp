@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-11",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-025",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p91",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 10,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Core Courses (10 credit units). CS5612 carries 1 credit unit; the other Core Courses carry 3 credit units each.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p91",
+          "courses": [
+            { "code": "CS5285", "name": "Introduction to Cybersecurity", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p91" },
+            { "code": "CS5293", "name": "Topics in Information Security and Privacy", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p91" },
+            { "code": "CS5294", "name": "Information Security Technology Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p91" },
+            { "code": "CS5612", "name": "Seminar on Contemporary Cybersecurity", "credits": 1, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p91" }
+          ]
+        },
+        {
+          "id": "elective-group-i",
+          "name": "Elective Courses — Group I",
+          "type": "elective_project_internship",
+          "creditsRequired": 12,
+          "ruleText": "Complete at least 12 credit units from Group I as part of the 21-credit elective requirement. Project and Internship courses are mutually exclusive. CS6531 Project carries 6 credit units; other listed courses carry 3 credit units.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p91",
+          "courses": [
+            { "code": "CS5288", "name": "Cryptography: Theory and Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202425/course/CS5288.htm" },
+            { "code": "CS5291", "name": "Cybersecurity Forensics and Incident Response", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p91" },
+            { "code": "CS5292", "name": "Cybersecurity Audits and Compliance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p91" },
+            { "code": "CS6283", "name": "Advanced Topics in Mobile and IoT Security", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p91" },
+            { "code": "CS5295", "name": "Network and Cloud Security", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p91" },
+            { "code": "CS6290", "name": "Privacy-enhancing Technologies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p91" },
+            { "code": "CS6284", "name": "Advanced Topics in Software Security", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p91" },
+            { "code": "CS5297", "name": "Topics in AI security", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p91" },
+            { "code": "CS5298", "name": "Blockchain and Web3.0 Security", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p91" },
+            { "code": "CS6537", "name": "Guided Study in Information Security", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p91" },
+            { "code": "CS6532", "name": "Internship in Cybersecurity", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p91" },
+            { "code": "CS6531", "name": "Project in Cybersecurity", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p91" }
+          ]
+        },
+        {
+          "id": "elective-group-ii",
+          "name": "Elective Courses — Group II",
+          "type": "elective",
+          "ruleText": "Use no more than 9 credit units from Group II toward the 21-credit elective requirement.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p91",
+          "courses": [
+            { "code": "CS5296", "name": "Cloud Computing: Theory and Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p91" },
+            { "code": "CS5222", "name": "Computer Networks and Internets", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p91" },
+            { "code": "CS5483", "name": "Data Warehousing and Data Mining", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p91" },
+            { "code": "CS5351", "name": "Software Engineering", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p91" },
+            { "code": "CS5489", "name": "Machine Learning: Algorithms and Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p91" }
+          ]
+        }
+      ]
+    }
+  ]
+}

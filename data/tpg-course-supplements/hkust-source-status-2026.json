@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKUST",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-11",
+  "programmes": [
+    {
+      "programmeId": "HKUST-TPG-001",
+      "status": "archived",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/",
+      "statusNote": "No unique matching Programme was found in the current 2026/27 official directory; archive status requires final manual confirmation."
+    },
+    {
+      "programmeId": "HKUST-TPG-006",
+      "status": "blocked",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/",
+      "statusNote": "The official curriculum was collected, but course-detail or rule-group review is still incomplete."
+    },
+    {
+      "programmeId": "HKUST-TPG-010",
+      "status": "blocked",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+      "statusNote": "The official curriculum was collected, but course-detail or rule-group review is still incomplete."
+    },
+    {
+      "programmeId": "HKUST-TPG-011",
+      "status": "blocked",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/",
+      "statusNote": "The official curriculum was collected, but course-detail or rule-group review is still incomplete."
+    },
+    {
+      "programmeId": "HKUST-TPG-013",
+      "status": "blocked",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/",
+      "statusNote": "The official curriculum was collected, but course-detail or rule-group review is still incomplete."
+    },
+    {
+      "programmeId": "HKUST-TPG-042",
+      "status": "blocked",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-telecom/",
+      "statusNote": "The official curriculum was collected, but course-detail or rule-group review is still incomplete."
+    },
+    {
+      "programmeId": "HKUST-TPG-043",
+      "status": "blocked",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/",
+      "statusNote": "The official curriculum was collected, but course-detail or rule-group review is still incomplete."
+    }
+  ]
+}

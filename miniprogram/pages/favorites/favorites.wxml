@@ -13,6 +13,10 @@
       <view class="folder-count">{{courses.length}}</view>
       <view class="folder-label">培养方案</view>
     </view>
+    <view class="folder-tab {{viewMode === 'tpg' ? 'active' : ''}}" data-value="tpg" bindtap="onModeTap">
+      <view class="folder-count">{{tpgCourses.length}}</view>
+      <view class="folder-label">授课硕士</view>
+    </view>
   </view>
 
   <view wx:if="{{viewMode === 'offerings'}}" class="section">
@@ -35,7 +39,7 @@
     </view>
   </view>
 
-  <view wx:else class="section">
+  <view wx:elif="{{viewMode === 'curriculum'}}" class="section">
     <view wx:for="{{courses}}" wx:key="id" class="course-card" data-id="{{item.id}}" bindtap="goDetail">
       <view class="row">
         <view class="code">{{item.courseCode}}</view>
@@ -48,6 +52,28 @@
       <view class="empty-title">还没有培养方案收藏</view>
       <view class="empty-copy">在课程详情中收藏后，会出现在这里。</view>
       <view class="empty-action" bindtap="goCourses">查看培养方案</view>
+    </view>
+  </view>
+
+  <view wx:elif="{{viewMode === 'tpg' && tpgLoadError}}" class="section empty">
+    <view class="empty-title">硕士课程数据加载失败</view>
+    <view class="empty-copy">收藏记录仍保存在本机，请重新加载课程分包。</view>
+    <view class="empty-action" bindtap="retryTpgLoad">重新加载</view>
+  </view>
+
+  <view wx:else class="section">
+    <view wx:for="{{tpgCourses}}" wx:key="rowKey" class="course-card" data-programme-id="{{item.programmeId}}" data-code="{{item.code}}" bindtap="goTpgCourseDetail">
+      <view class="row">
+        <view class="code">{{item.code}}</view>
+        <view class="credits">{{item.credits}} credits</view>
+      </view>
+      <view class="course-title">{{item.name}}</view>
+      <view class="subtitle">{{item.programmeName}}</view>
+    </view>
+    <view wx:if="{{tpgCourses.length === 0}}" class="empty">
+      <view class="empty-title">还没有授课硕士收藏</view>
+      <view class="empty-copy">在授课硕士课程详情中收藏后，会出现在这里。</view>
+      <view class="empty-action" bindtap="goCourses">查看课程</view>
     </view>
   </view>
 

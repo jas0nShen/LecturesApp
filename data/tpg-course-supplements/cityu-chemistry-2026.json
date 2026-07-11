@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-11",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-053",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-science/department-of-chemistry/p67",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five Core Courses (15 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-science/department-of-chemistry/p67",
+          "courses": [
+            { "code": "CHEM6118", "name": "Advanced Chemical Instrumentation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-science/department-of-chemistry/p67" },
+            { "code": "CHEM6119", "name": "Frontiers in Chemical Biology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-science/department-of-chemistry/p67" },
+            { "code": "CHEM6121", "name": "Academic and Industrial Research, Development and Innovation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-science/department-of-chemistry/p67" },
+            { "code": "CHEM6125", "name": "Selected Topics in Chemistry & Molecular Sciences", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-science/department-of-chemistry/p67" },
+            { "code": "CHEM6126", "name": "Advanced Seminar Series", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-science/department-of-chemistry/p67" }
+          ]
+        },
+        {
+          "id": "elective-group-a",
+          "name": "Elective Courses — Group A",
+          "type": "project_dissertation",
+          "creditsRequired": 6,
+          "ruleText": "The Programme requires 15 elective credit units in total, including at least 6 credit units from Group A. Dissertation enrolment is subject to CGPA, quota and approval conditions published by CityUHK.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-science/department-of-chemistry/p67",
+          "courses": [
+            { "code": "CHEM6127", "name": "Dissertation", "credits": 14, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-science/department-of-chemistry/p67" },
+            { "code": "CHEM6129", "name": "Advanced Directed Studies", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-science/department-of-chemistry/p67" }
+          ]
+        },
+        {
+          "id": "elective-group-b",
+          "name": "Elective Courses — Group B",
+          "type": "elective",
+          "ruleText": "Use Group B courses together with the Group A requirement to complete 15 elective credit units in total.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-science/department-of-chemistry/p67",
+          "courses": [
+            { "code": "CHEM6114", "name": "Food Processing and Food Chemistry", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-science/department-of-chemistry/p67" },
+            { "code": "CHEM6123", "name": "Postgraduate Symposium", "credits": 1, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-science/department-of-chemistry/p67" },
+            { "code": "CHEM6128", "name": "Environmental Health & Risk Assessment", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-science/department-of-chemistry/p67" },
+            { "code": "CHEM6130", "name": "Cosmetic Product Development and Formulation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-science/department-of-chemistry/p67" },
+            { "code": "CHEM6131", "name": "Frontiers in Modern Synthetic Chemistry", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-science/department-of-chemistry/p67" },
+            { "code": "CHEM6132", "name": "Frontiers in Sustainable Energy Conversion and Storage", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-science/department-of-chemistry/p67" },
+            { "code": "CHEM6133", "name": "Advanced Entrepreneurship Programme in Chemistry", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-science/department-of-chemistry/p67" },
+            { "code": "CHEM6134", "name": "AI for Chemistry", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-science/department-of-chemistry/p67" }
+          ]
+        }
+      ]
+    }
+  ]
+}

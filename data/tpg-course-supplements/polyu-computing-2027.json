@@ -1,0 +1,911 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "POLYU",
+  "academicYear": "2027-28",
+  "verifiedAt": "2026-07-11",
+  "programmes": [
+    {
+      "programmeId": "POLYU-TPG-090",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core",
+          "name": "Core Subjects",
+          "type": "core",
+          "creditsRequired": 18,
+          "ruleText": "Choose any six of the eight Core Subjects.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/",
+          "courses": [
+            {
+              "code": "COMP5521",
+              "name": "Distributed Ledger Technology, Cryptocurrency and E-Payment",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "COMP5563",
+              "name": "Applied Cryptography for Financial Applications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "COMP5564",
+              "name": "Machine Learning and Applications in Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "COMP5565",
+              "name": "Decentralized Apps Fundamentals and Development",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "COMP5566",
+              "name": "Blockchain and Smart Contract Security",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "COMP5567",
+              "name": "Distributed Algorithms and Protocols for Blockchains",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "COMP5568",
+              "name": "Decentralized Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "COMP5569",
+              "name": "Fintech Regulation and Compliance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            }
+          ]
+        },
+        {
+          "id": "elective-options",
+          "name": "Elective / Project / Dissertation Options",
+          "type": "elective",
+          "creditsRequired": 12,
+          "ruleText": "Complete the dissertation, project, or taught-subject path stated in the official award requirements.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/",
+          "courses": [
+            {
+              "code": "AF5115",
+              "name": "Accounting for Business Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "AF5312",
+              "name": "Principles of Corporate Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "AF5344",
+              "name": "Investments",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "AF5341",
+              "name": "Economics for Financial Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "AF5343",
+              "name": "Quantitative Methods for Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "AF5347",
+              "name": "Financial Analysis and Valuation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "AF5351",
+              "name": "Derivatives Securities",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "COMP5112",
+              "name": "Data Structures and Database Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "COMP5152",
+              "name": "Advanced Data Analytics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "COMP5221",
+              "name": "Software Project Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "COMP5241",
+              "name": "Software Engineering and Development",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "COMP5311",
+              "name": "Internet Infrastructure and Protocols",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "COMP5355",
+              "name": "Cyber and Internet Security",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "COMP5423",
+              "name": "Natural Language Processing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "COMP5434",
+              "name": "Big Data Computing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "COMP5511",
+              "name": "Artificial Intelligence Concepts",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "COMP5523",
+              "name": "Computer Vision and Image Processing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "COMP5541",
+              "name": "Machine Learning and Data Analytics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "COMP5542",
+              "name": "Optimization and Applications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "COMP5574",
+              "name": "Computational Economics and Algorithms",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "COMP5576",
+              "name": "Modern Cryptography",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "COMP5577",
+              "name": "AI Security",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "COMP5579",
+              "name": "IoT Security: Principles, Protocols, and Practice",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "COMP5583",
+              "name": "Agentic Computing, Systems, and Applications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "COMP5584",
+              "name": "Large Language Models for Agents",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "COMP5933",
+              "name": "Project",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            },
+            {
+              "code": "COMP5940",
+              "name": "Dissertation",
+              "credits": 9,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Academic Integrity and Ethics",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "ruleText": "Complete the compulsory AIE subject.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/",
+          "courses": [
+            {
+              "code": "DSAI5T09",
+              "name": "Academic Integrity and Ethics in Computer and Mathematical Sciences",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msc-bt/curriculum/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-092",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core",
+          "name": "Core Subjects",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete four Core Subjects.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en",
+          "courses": [
+            {
+              "code": "COMP5576",
+              "name": "Modern Cryptography",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "COMP5577",
+              "name": "AI Security",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "COMP5578",
+              "name": "Cybersecurity Risk Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "EEE541",
+              "name": "Privacy Technologies and Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            }
+          ]
+        },
+        {
+          "id": "disciplinary-elective",
+          "name": "Disciplinary-specific Electives",
+          "type": "disciplinary_elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete three Disciplinary-specific Electives.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en",
+          "courses": [
+            {
+              "code": "COMP5355",
+              "name": "Cyber and Internet Security",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "COMP5579",
+              "name": "IoT Security: Principles, Protocols, and Practice",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "COMP5580",
+              "name": "Mobile and Wireless Security",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "EEE542",
+              "name": "Digital Forensics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "EEE543",
+              "name": "Cybersecurity Testing and Intrusion Prevention",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            }
+          ]
+        },
+        {
+          "id": "elective-options",
+          "name": "Elective / Project / Dissertation Options",
+          "type": "elective",
+          "creditsRequired": 9,
+          "ruleText": "Complete the dissertation, project, or taught-subject path stated in the official award requirements.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en",
+          "courses": [
+            {
+              "code": "COMP5112",
+              "name": "Data Structures and Database Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "COMP5113",
+              "name": "AIBD Programming",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "COMP5140",
+              "name": "Metaverse Fundamentals",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "COMP5241",
+              "name": "Software Engineering and Development",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "COMP5311",
+              "name": "Internet Infrastructure and Protocols",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "COMP5327",
+              "name": "Wireless Networking and Mobile Computing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "COMP5521",
+              "name": "Distributed Ledger Technology, Cryptocurrency and E-Payment",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "COMP5523",
+              "name": "Computer Vision and Image Processing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "COMP5554",
+              "name": "Advanced Artificial Intelligence",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "COMP5563",
+              "name": "Applied Cryptography for Financial Applications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "COMP5565",
+              "name": "Decentralized Apps Fundamentals and Development",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "COMP5566",
+              "name": "Blockchain and Smart Contract Security",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "COMP5569",
+              "name": "Fintech Regulation and Compliance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "DSAI5101",
+              "name": "Statistical Data Mining",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "DSAI5201",
+              "name": "Artificial Intelligence and Big Data Computing in Practice",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "EEE513",
+              "name": "Introduction to Quantum Computing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "EEE531",
+              "name": "Spoken Language Processing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "EIE522",
+              "name": "Pattern Recognition: Theory & Applications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "EIE546",
+              "name": "Video Technology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "EIE553",
+              "name": "Security in Data Communication",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "EIE557",
+              "name": "Computational Intelligence and its Applications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "EIE558",
+              "name": "Speech Processing and Recognition",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "EIE568",
+              "name": "IoT - Tools and Applications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "EIE569",
+              "name": "Sensor Networks",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "EIE573",
+              "name": "Mobile Edge Computing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "COMP5933",
+              "name": "Project",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "COMP5940",
+              "name": "Dissertation",
+              "credits": 9,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "DSAI5901",
+              "name": "Dissertation",
+              "credits": 9,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "EIE590",
+              "name": "MSc Dissertation",
+              "credits": 9,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Academic Integrity and Ethics",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete the compulsory AIE subject.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en",
+          "courses": [
+            {
+              "code": "DSAI5T09",
+              "name": "Academic Integrity and Ethics in Computer and Mathematical Sciences",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/msccys/curriculum/?sc_lang=en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-093",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core",
+          "name": "Core Subjects",
+          "type": "core",
+          "creditsRequired": 9,
+          "ruleText": "Choose three Core Subjects.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en",
+          "courses": [
+            {
+              "code": "COMP5582",
+              "name": "Artificial Intelligence of Things",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "COMP5583",
+              "name": "Agentic Computing, Systems, and Applications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "COMP5584",
+              "name": "Large Language Models for Agents",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "DSAI5205",
+              "name": "Introduction to Artificial Intelligence",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "DSAI5208",
+              "name": "Trustworthy AI Systems and Technologies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            }
+          ]
+        },
+        {
+          "id": "disciplinary-elective",
+          "name": "Disciplinary-specific Electives",
+          "type": "disciplinary_elective",
+          "creditsRequired": 9,
+          "ruleText": "Choose three Disciplinary-specific Electives.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en",
+          "courses": [
+            {
+              "code": "COMP5434",
+              "name": "Big Data Computing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "COMP5517",
+              "name": "Human Computer Interaction",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "COMP5523",
+              "name": "Computer Vision and Image Processing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "COMP5554",
+              "name": "Advanced Artificial Intelligence",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "COMP5585",
+              "name": "Cloud Computing and Hyperscale AI Infrastructure",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "COMP5586",
+              "name": "Embedded Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "AMA577",
+              "name": "Theoretical Aspects of Reinforcement Learning",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "DSAI5201",
+              "name": "Artificial Intelligence and Big Data Computing in Practice",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "DSAI5203",
+              "name": "Brain-inspired Computing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "DSAI5204",
+              "name": "Efficient Data Processing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "DSAI5207",
+              "name": "Modern Deep Learning",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "ME5301",
+              "name": "Embodied Robot Intelligence",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            }
+          ]
+        },
+        {
+          "id": "elective-options",
+          "name": "Elective / Project / Dissertation Options",
+          "type": "elective",
+          "creditsRequired": 12,
+          "ruleText": "Complete the dissertation, project, or taught-subject path stated in the official award requirements.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en",
+          "courses": [
+            {
+              "code": "COMP5423",
+              "name": "Natural Language Processing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "COMP5542",
+              "name": "Optimization and Applications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "COMP5577",
+              "name": "AI Security",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "AMA528",
+              "name": "Probability and Stochastic Models",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "AMA529",
+              "name": "Statistical Inference",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "DSAI5101",
+              "name": "Statistical Data Mining",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "DSAI5105",
+              "name": "Hands-on AI for Science and Technology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "DSAI5202",
+              "name": "Emerging Topics in Artificial Intelligence and Big Data Computing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "EIE568",
+              "name": "IoT Tools and Applications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "ISE5312",
+              "name": "Industrial Human-Robot Systems and Automation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "SD5132",
+              "name": "Lab Studies in Human Cyber-Physical Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "COMP5934",
+              "name": "Agentic AI Systems Project",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "COMP5940",
+              "name": "Dissertation",
+              "credits": 9,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            },
+            {
+              "code": "DSAI5901",
+              "name": "Dissertation",
+              "credits": 9,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Academic Integrity and Ethics",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "ruleText": "Complete the compulsory AIE subject.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en",
+          "courses": [
+            {
+              "code": "DSAI5T09",
+              "name": "Academic Integrity and Ethics in Computer and Mathematical Sciences",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscas/curriculum/?sc_lang=en"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

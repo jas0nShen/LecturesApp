@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-11",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-002",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "electives",
+          "name": "Elective Courses (including Dissertation)",
+          "type": "elective_dissertation",
+          "creditsRequired": 30,
+          "ruleText": "For cohorts 2025 and thereafter, complete either ten taught elective courses (30 credit units), or BME6008 Dissertation (9 credit units) plus seven taught elective courses (21 credit units). Dissertation selection is subject to the published CGPA and approval conditions. Courses marked by the department as not offered remain part of the official curriculum pool but are not guaranteed to run.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/",
+          "courses": [
+            { "code": "BME5108", "name": "Human Machine Interface", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/" },
+            { "code": "BME5110", "name": "Biomedical Engineering Design", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/" },
+            { "code": "BME5111", "name": "Regenerative Medicine", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/" },
+            { "code": "BME6005", "name": "Micro Systems Technology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/" },
+            { "code": "BME6008", "name": "Dissertation", "credits": 9, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/" },
+            { "code": "BME6022", "name": "Project Development Study", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/" },
+            { "code": "BME6045", "name": "Industrial Case Study", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/" },
+            { "code": "BME6101", "name": "Manufacturing of Biomedical Devices", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/" },
+            { "code": "BME6111", "name": "Biomedical Instrumentation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/" },
+            { "code": "BME6114", "name": "Advanced Control Systems", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/" },
+            { "code": "BME6115", "name": "Biorobotics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/" },
+            { "code": "BME6117", "name": "Biomedical Safety and Risk Assessment", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/" },
+            { "code": "BME6118", "name": "Biomedical Imaging and Biophotonics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/" },
+            { "code": "BME6121", "name": "Biomechanics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/" },
+            { "code": "BME6122", "name": "Physiological Modeling", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/" },
+            { "code": "BME6123", "name": "Flexible Bioelectronics for Medical Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/" },
+            { "code": "BME6135", "name": "Engineering Principles for Drug Delivery", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/" },
+            { "code": "BME6136", "name": "Advanced Biomaterials for Healthcare and Biomedical Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/" },
+            { "code": "BME6137", "name": "Medical Diagnostics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/" },
+            { "code": "BME6138", "name": "Robotics in Minimally Invasive Healthcare", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/" },
+            { "code": "BME6139", "name": "AI in Medical Imaging", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/" },
+            { "code": "BME6140", "name": "Advanced Optical Microscopy for Biomedical Engineering", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/" },
+            { "code": "BME6141", "name": "Fundamentals and Applications of Single-molecule Biophysics in Rapid Diagnostics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/" },
+            { "code": "BME6142", "name": "Rapid Diagnostic Devices for Personalized Healthcare", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/" },
+            { "code": "BME6145", "name": "Applied Artificial Intelligence for Biomedical and Healthcare Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/" },
+            { "code": "BME6146", "name": "GenAI Technologies for Biomedical and Healthcare Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/" },
+            { "code": "SYE6110", "name": "Data Analysis and Artificial Intelligence for Systems Engineering", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/" },
+            { "code": "SYE6601", "name": "Introduction to Artificial Intelligence: Concepts and Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/bme/prg-msbme.htm/" }
+          ]
+        }
+      ]
+    }
+  ]
+}

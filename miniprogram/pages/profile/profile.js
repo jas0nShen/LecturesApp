@@ -58,7 +58,7 @@ Page({
   },
 
   goOnboarding() {
-    wx.navigateTo({ url: service.buildOnboardingUrl() });
+    service.openOnboarding();
   },
 
   retryUgLoad() {

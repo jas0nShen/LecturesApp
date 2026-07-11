@@ -9,6 +9,20 @@ Page({
     if (typeof app.registerUgCourseShard === 'function') {
       app.registerUgCourseShard({ universityCode, packageName, courses });
     }
-    setTimeout(() => wx.navigateBack({ delta: 1 }), 0);
+    const completeActivation = () => {
+      if (typeof app.completeUgCourseShardActivation === 'function') {
+        app.completeUgCourseShardActivation(packageName);
+      }
+    };
+    const returnToCaller = (attempt = 0) => wx.navigateBack({
+      delta: 1,
+      success: completeActivation,
+      fail() {
+        if (attempt < 4) {
+          setTimeout(() => returnToCaller(attempt + 1), 100);
+        }
+      }
+    });
+    setTimeout(() => returnToCaller(), 100);
   }
 });
