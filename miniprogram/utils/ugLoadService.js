@@ -2,7 +2,7 @@ function normalizeUniversityCode(code) {
   return String(code || '').trim().toUpperCase();
 }
 
-function createUniversityLoader({ getPackageNames, loadSubPackage }) {
+function createUniversityLoader({ getPackageNames, loadSubPackage, activatePackage = () => Promise.resolve() }) {
   const states = Object.create(null);
   const promises = Object.create(null);
   const attempts = Object.create(null);
@@ -31,7 +31,16 @@ function createUniversityLoader({ getPackageNames, loadSubPackage }) {
     const attempt = (attempts[key] || 0) + 1;
     attempts[key] = attempt;
     states[key] = 'loading';
-    const promise = Promise.all(packageNames.map((name) => loadSubPackage(name)))
+    // A package activates its own data from an internal loader page.  Keep
+    // activation sequential: only one temporary loader page may be on the
+    // navigation stack at a time, while the university remains atomic.
+    const [firstPackage, ...remainingPackages] = packageNames;
+    const loadAndActivate = (name) => Promise.resolve(loadSubPackage(name))
+      .then(() => activatePackage(name));
+    const promise = remainingPackages.reduce(
+      (chain, name) => chain.then(() => loadAndActivate(name)),
+      loadAndActivate(firstPackage)
+    )
       .then(() => {
         if (attempts[key] === attempt) states[key] = 'ready';
         return { code: key, state: 'ready', packageNames };

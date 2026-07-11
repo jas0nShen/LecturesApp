@@ -16,7 +16,7 @@ test('loads one university package once and deduplicates concurrent callers', as
   const pending = deferred();
   const calls = [];
   const loader = createUniversityLoader({
-    getPackageNames: (code) => (code === 'HKU' ? ['ug-data-hku'] : []),
+    getPackageNames: (code) => (code === 'HKU' ? ['subpackages/ug-data-hku'] : []),
     loadSubPackage: (name) => { calls.push(name); return pending.promise; }
   });
 
@@ -24,7 +24,7 @@ test('loads one university package once and deduplicates concurrent callers', as
   const second = loader.ensureUniversityLoaded('HKU');
   assert.strictEqual(first, second);
   assert.equal(loader.getUniversityLoadState('HKU'), 'loading');
-  assert.deepEqual(calls, ['ug-data-hku']);
+  assert.deepEqual(calls, ['subpackages/ug-data-hku']);
   pending.resolve();
   assert.equal((await first).state, 'ready');
   assert.equal(loader.getUniversityLoadState('HKU'), 'ready');
@@ -32,20 +32,23 @@ test('loads one university package once and deduplicates concurrent callers', as
 
 test('treats all CityU or PolyU shards as one atomic university load', async () => {
   const calls = [];
+  const activations = [];
   const loader = createUniversityLoader({
-    getPackageNames: (code) => (code === 'POLYU' ? ['ug-data-polyu-a', 'ug-data-polyu-b'] : []),
-    loadSubPackage: (name) => { calls.push(name); return Promise.resolve(); }
+    getPackageNames: (code) => (code === 'POLYU' ? ['subpackages/ug-data-polyu-a', 'subpackages/ug-data-polyu-b'] : []),
+    loadSubPackage: (name) => { calls.push(name); return Promise.resolve(); },
+    activatePackage: (name) => { activations.push(name); return Promise.resolve(); }
   });
 
   await loader.ensureUniversityLoaded('POLYU');
-  assert.deepEqual(calls, ['ug-data-polyu-a', 'ug-data-polyu-b']);
+  assert.deepEqual(calls, ['subpackages/ug-data-polyu-a', 'subpackages/ug-data-polyu-b']);
+  assert.deepEqual(activations, ['subpackages/ug-data-polyu-a', 'subpackages/ug-data-polyu-b']);
   assert.equal(loader.getUniversityLoadState('POLYU'), 'ready');
 });
 
 test('records failures and retries the same university cleanly', async () => {
   let attempts = 0;
   const loader = createUniversityLoader({
-    getPackageNames: () => ['ug-data-cityu-a', 'ug-data-cityu-b'],
+    getPackageNames: () => ['subpackages/ug-data-cityu-a', 'subpackages/ug-data-cityu-b'],
     loadSubPackage: () => {
       attempts += 1;
       return attempts === 1 ? Promise.reject(new Error('offline')) : Promise.resolve();
@@ -57,7 +60,7 @@ test('records failures and retries the same university cleanly', async () => {
   await assert.rejects(loader.ensureUniversityLoaded('CITYU'));
   await loader.retryUniversityLoad('CITYU');
   assert.equal(loader.getUniversityLoadState('CITYU'), 'ready');
-  assert.equal(attempts, 4);
+  assert.equal(attempts, 3);
 });
 
 test('marks universities with no course package as not required', async () => {
