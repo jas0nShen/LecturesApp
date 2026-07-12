@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-011",
+      "status": "verified",
+      "creditsRequired": 40,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p11",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [],
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 19,
+          "coursesRequired": 10,
+          "ruleText": "Complete all ten Core Courses (19 credit units). The 2026 MBA curriculum retains the 19-credit Core structure; course offerings remain subject to University review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm",
+          "courses": [
+            { "code": "FB5001", "name": "Managerial Decision Making", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB5003", "name": "Information Systems for Managers", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB5040", "name": "Corporate Finance", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB5560", "name": "FinTech and Cryptocurrency", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB5601", "name": "Principles of Marketing", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB5700", "name": "MBA Orientation", "credits": 1, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB5721", "name": "Operations Management", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB5731", "name": "Business Analytics and Decision Modelling", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB5810", "name": "Financial Reporting Analysis for Business Decisions", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6502B", "name": "Strategic Management", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" }
+          ]
+        },
+        {
+          "id": "global-learning",
+          "name": "Global Learning",
+          "type": "global_learning",
+          "creditsMin": 6,
+          "ruleText": "Complete at least 6 credit units of Global Learning. Industry On-site Workshop enrolment requires Programme Director approval; language used in residential and exchange settings may vary with the host organisation.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm",
+          "courses": [
+            { "code": "FB6701A", "name": "MBA Enterprise Diagnostic Residential Trip I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6701B", "name": "MBA Enterprise Diagnostic Residential Trip II", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6701C", "name": "MBA Enterprise Diagnostic Residential Trip III", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6712A", "name": "Industry On-site Workshop", "credits": 1, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6712B", "name": "Industry On-site Workshop", "credits": 1, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6712C", "name": "Industry On-site Workshop", "credits": 1, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6709", "name": "Entrepreneurship and Venture Plan Development", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6777", "name": "Global Brand Management Workshop", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6773A", "name": "Global Exchange I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6773B", "name": "Global Exchange II", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6773C", "name": "Global Exchange III", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" }
+          ]
+        },
+        {
+          "id": "mba-electives",
+          "name": "MBA Electives",
+          "type": "elective",
+          "creditsMin": 6,
+          "ruleText": "Complete at least 6 credit units from MBA Electives. The 40-credit General Curriculum includes 19 Core credits and minimum 6-credit requirements in both Global Learning and MBA Electives; the remaining credits are selected from eligible offerings under Programme rules. No Concentration or Dual Degree Track is published for the 2026 intake, and none is inferred from the older catalogue.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm",
+          "courses": [
+            { "code": "FB5142B", "name": "Advanced Corporate Finance", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB5153B", "name": "Investment Analysis and Portfolio Management", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB5223B", "name": "Project Management", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB5612B", "name": "Applied Marketing Research and Consulting Skills", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB5632B", "name": "Digital Marketing & e-Commerce", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB5690B", "name": "Corporate Governance", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB5692", "name": "Equity Capital Market Operation and Governance: A Global Perspective", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB5771", "name": "Sustainability in Business", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB5772A", "name": "Applied Financial Analytics for Risk Management", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6311B", "name": "Strategic Human Resources Management", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6508B", "name": "Global Business Management", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6603B", "name": "Consumer Behaviour", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6622B", "name": "Services Marketing", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6700", "name": "MBA Project", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6702", "name": "Professional Forum", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6710B", "name": "Practical FinTech Applications", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6711B", "name": "Data Analytics with Business Applications", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6721B", "name": "Supply Chain Management", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6726B", "name": "Service Operations Management", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6774", "name": "MBA Internship/Community Service", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6776A", "name": "Special Topics in Business I", "credits": 1, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6776B", "name": "Special Topics in Business I", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6776C", "name": "Special Topics in Business I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6778A", "name": "AI and Blockchain Application in Business", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6779B", "name": "Special Topics in Business II", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6780B", "name": "Marketing Technology and Analytics for Startups and Entrepreneurs", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6781", "name": "Special Topics in Business III", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6782", "name": "Agile Leadership in a Transformative World", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6783", "name": "Applications of Advanced Derivatives and AI in Finance", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "FB6784", "name": "Hands-on AI Project", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "LW5602", "name": "Law of Contract", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "LW5602A", "name": "Law of Contract I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "LW5602B", "name": "Law of Contract II", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "LW5656", "name": "Company Law I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "LW5657", "name": "Company Law II", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" },
+            { "code": "LW5658", "name": "Commercial Law", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MBANUGC.htm" }
+          ]
+        }
+      ]
+    }
+  ]
+}

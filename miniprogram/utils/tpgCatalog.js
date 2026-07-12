@@ -3981,8 +3981,16 @@ module.exports = {
       "faculty": "College Of Business",
       "creditsRequired": 40,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p01a",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p01a",
+      "courseStatusNote": "",
+      "tracks": [],
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 60
     },
     {
       "id": "CITYU-TPG-006",
@@ -4098,8 +4106,16 @@ module.exports = {
       "faculty": "College Of Business",
       "creditsRequired": 40,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p11",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p11",
+      "courseStatusNote": "",
+      "tracks": [],
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 57
     },
     {
       "id": "CITYU-TPG-012",
@@ -4109,8 +4125,16 @@ module.exports = {
       "faculty": "College Of Business",
       "creditsRequired": 40,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12",
+      "courseStatusNote": "",
+      "tracks": [],
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 36
     },
     {
       "id": "CITYU-TPG-013",
@@ -5441,8 +5465,59 @@ module.exports = {
       "faculty": "School Of Law",
       "creditsRequired": 24,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-law/school-of-law/p46",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-law/school-of-law/p46",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-061-CHINESE-COMPARATIVE-LAW",
+          "name": "Chinese and Comparative Law",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm"
+        },
+        {
+          "id": "CITYU-TPG-061-INTERNATIONAL-ECONOMIC-LAW",
+          "name": "International Economic Law",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm"
+        },
+        {
+          "id": "CITYU-TPG-061-COMMON-LAW",
+          "name": "Common Law",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm"
+        },
+        {
+          "id": "CITYU-TPG-061-IP-TECHNOLOGY-LAW",
+          "name": "Intellectual Property and Technology Law",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm"
+        },
+        {
+          "id": "CITYU-TPG-061-CORPORATE-FINANCIAL-LAW",
+          "name": "Corporate and Financial Law",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm"
+        },
+        {
+          "id": "CITYU-TPG-061-GENERAL",
+          "name": "General",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm"
+        },
+        {
+          "id": "CITYU-TPG-061-MARITIME-TRANSPORTATION-LAW",
+          "name": "Maritime and Transportation Law",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm"
+        }
+      ],
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 62
     },
     {
       "id": "CITYU-TPG-062",

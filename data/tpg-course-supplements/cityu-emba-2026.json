@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-012",
+      "status": "verified",
+      "creditsRequired": 40,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [],
+      "courseGroups": [
+        {
+          "id": "residential-courses",
+          "name": "Residential Courses",
+          "type": "core_pool",
+          "creditsMin": 16,
+          "ruleText": "Complete at least 16 credit units from Residential Courses. Every listed Residential Course carries 4 credit units, and FB6890 Management, Strategy and Leadership (including Student Orientation) is compulsory.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12",
+          "courses": [
+            { "code": "FB6890", "name": "Management, Strategy and Leadership (including Student Orientation)", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB6891", "name": "Strategic Issues on Fintech and Financial Services", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB6892", "name": "Strategic Innovation Management", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB6893", "name": "Innovations in Marketing", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB6894", "name": "Digitalization and Technology Management", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB6895", "name": "Venture Capital and Private Equity", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB6896", "name": "Strategies on Initial Public Offering and Debt Financing", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB6897", "name": "Strategies on Merger, Acquisitions and Turnaround", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB6898", "name": "Modern Logistics and Supply Chain", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB6878", "name": "Corporate Sustainability and ESG Strategies", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" }
+          ]
+        },
+        {
+          "id": "online-courses",
+          "name": "Online Courses",
+          "type": "core_pool",
+          "creditsMin": 8,
+          "ruleText": "Complete at least 8 credit units from Online Courses. Each listed Online Course carries 2 credit units.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12",
+          "courses": [
+            { "code": "FB6931", "name": "Corporate Financial Strategy", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB6932", "name": "Marketing Strategies for Business Impacts", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB6933", "name": "Global Economic Environments and Business Strategies", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB6934", "name": "Accounting, Strategy and Control", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB6935", "name": "Applied Microeconomics for Business Leaders", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB6936", "name": "IT Leadership for Executives", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB6937", "name": "Business Models and Operational Strategies", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" }
+          ]
+        },
+        {
+          "id": "global-learning-tours",
+          "name": "Global Learning Tours",
+          "type": "global_learning",
+          "creditsMin": 4,
+          "ruleText": "Complete at least 4 credit units from Global Learning Tours. Each Tour carries 4 credit units and includes online preparation, a field study and post-tour assessed work.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12",
+          "courses": [
+            { "code": "FB6801", "name": "Business Innovations: Asia Field Study 1", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB6802", "name": "Business Innovations: Asia Field Study 2", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB6803", "name": "Business Innovations: Global Field Study 1", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB6804", "name": "Business Innovations: Global Field Study 2", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "ruleText": "The Programme requires at least 40 credit units overall after satisfying the three Pillar minimums. Electives marked on the official page require Programme Director approval. Existing courses in other College of Business Master's programmes may also be approved, but no fixed external course-code pool is published.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12",
+          "courses": [
+            { "code": "FB6873", "name": "Innovation Internship 1", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB6874", "name": "Innovation Internship 2", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB6875", "name": "Crypto Assets: Valuation, Accounting and Auditing", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB6876", "name": "Family Business Innovation and Succession", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB6877", "name": "Modern Project Management", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB6938", "name": "Topics in Global and Asia Business", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB6939", "name": "Topics in Sustainability", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB6941", "name": "Topics in Marketing and Management", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB6943", "name": "Topics in Business and Technology", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB6944", "name": "Topics in Innovation and Entrepreneurship", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB6945", "name": "Corporate Governance, Directorship and Business Ethics", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB6812", "name": "EMBA Consulting Project", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB8001D", "name": "Methodology for Applied Business Research I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB8002D", "name": "Methodology for Applied Business Research II", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" },
+            { "code": "FB8004D", "name": "Residential Workshop I", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12" }
+          ]
+        },
+        {
+          "id": "dba-preparation-path",
+          "name": "DBA Preparation Elective Path",
+          "type": "elective_path",
+          "ruleText": "Participants intending to pursue the CityUHK DBA after graduation should complete FB6812, FB8001D, FB8002D and FB8004D (12 credit units). These courses remain stored in the Elective group to preserve Programme-level course-code uniqueness; this group records the conditional path only.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p12",
+          "courses": []
+        }
+      ]
+    }
+  ]
+}

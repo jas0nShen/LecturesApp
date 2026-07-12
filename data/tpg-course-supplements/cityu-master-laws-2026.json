@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-061",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-law/school-of-law/p46",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [
+        { "id": "CITYU-TPG-061-CHINESE-COMPARATIVE-LAW", "name": "Chinese and Comparative Law", "type": "Stream", "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+        { "id": "CITYU-TPG-061-INTERNATIONAL-ECONOMIC-LAW", "name": "International Economic Law", "type": "Stream", "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+        { "id": "CITYU-TPG-061-COMMON-LAW", "name": "Common Law", "type": "Stream", "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+        { "id": "CITYU-TPG-061-IP-TECHNOLOGY-LAW", "name": "Intellectual Property and Technology Law", "type": "Stream", "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+        { "id": "CITYU-TPG-061-CORPORATE-FINANCIAL-LAW", "name": "Corporate and Financial Law", "type": "Stream", "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+        { "id": "CITYU-TPG-061-GENERAL", "name": "General", "type": "Stream", "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+        { "id": "CITYU-TPG-061-MARITIME-TRANSPORTATION-LAW", "name": "Maritime and Transportation Law", "type": "Stream", "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" }
+      ],
+      "courseGroups": [
+        {
+          "id": "conditional-common-law-methodology",
+          "name": "Conditional Common Law Methodology",
+          "type": "conditional_core",
+          "ruleText": "Students whose LLB was obtained from a non-common-law jurisdiction must complete LW6102E before Semester A. This background condition applies across the relevant English Module structures and requires manual profile review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm",
+          "courses": [
+            { "code": "LW6102E", "name": "Introduction to Common Law System and Methodology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" }
+          ]
+        },
+        {
+          "id": "common-law-core",
+          "name": "Common Law Stream Core Courses",
+          "type": "track_core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Common Law Stream students complete these three courses (9 credit units). Together with conditional LW6102E, the official Core requirement is 12 credit units; the remaining 12 credit units are electives.",
+          "appliesToTrackIds": ["CITYU-TPG-061-COMMON-LAW"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm",
+          "courses": [
+            { "code": "LW6119E", "name": "Constitutional Law", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-061-COMMON-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6164E", "name": "Law of Contract", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-061-COMMON-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6165E", "name": "Law of Tort", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-061-COMMON-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" }
+          ]
+        },
+        {
+          "id": "maritime-foundation",
+          "name": "Maritime Stream Conditional Foundation Courses",
+          "type": "conditional_core",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Only Maritime and Transportation Law Stream students who do not have a law degree must complete these two Foundation Courses (6 credit units). They are a background condition, not a universal Stream requirement.",
+          "appliesToTrackIds": ["CITYU-TPG-061-MARITIME-TRANSPORTATION-LAW"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm",
+          "courses": [
+            { "code": "LW5303", "name": "Commercial Contracts", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-061-MARITIME-TRANSPORTATION-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW5400", "name": "Legal Concepts", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-061-MARITIME-TRANSPORTATION-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" }
+          ]
+        },
+        {
+          "id": "english-module-required-elective-pool",
+          "name": "English Module Required-elective Pool",
+          "type": "track_elective_pool",
+          "ruleText": "Courses are stored once even when they appear in more than one Stream list. countsTowardTrackIds records the official Stream roles. Chinese and Comparative Law, International Economic Law, Intellectual Property and Technology Law, and Corporate and Financial Law each require four courses (12 credit units) from their respective list; Maritime and Transportation Law requires five courses (15 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm",
+          "courses": [
+            { "code": "LW6115E", "name": "Selected Issues on Chinese IP Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-CHINESE-COMPARATIVE-LAW", "CITYU-TPG-061-IP-TECHNOLOGY-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6121E", "name": "Constitutional and Administrative Law of China", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6129E", "name": "Chinese and Comparative Environmental Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6132E", "name": "Theory and Practice of Comparative Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6134E", "name": "Chinese and Comparative Company Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-CHINESE-COMPARATIVE-LAW", "CITYU-TPG-061-CORPORATE-FINANCIAL-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6138E", "name": "Chinese and Comparative Contract Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6141E", "name": "Chinese Foreign Trade and Investment Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6150E", "name": "Chinese and Comparative Trade Secrets Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-CHINESE-COMPARATIVE-LAW", "CITYU-TPG-061-IP-TECHNOLOGY-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6153E", "name": "International Economic Dispute Resolution: Law and Politics", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-CHINESE-COMPARATIVE-LAW", "CITYU-TPG-061-INTERNATIONAL-ECONOMIC-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6161E", "name": "Comparative Competition Law: China, HKSAR and the US", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-CHINESE-COMPARATIVE-LAW", "CITYU-TPG-061-CORPORATE-FINANCIAL-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6172E", "name": "Law and Society in China", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6108E", "name": "International Finance: Law and Regulation", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-INTERNATIONAL-ECONOMIC-LAW", "CITYU-TPG-061-CORPORATE-FINANCIAL-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6142E", "name": "International Investment Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-INTERNATIONAL-ECONOMIC-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6143E", "name": "International Tax Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-INTERNATIONAL-ECONOMIC-LAW", "CITYU-TPG-061-CORPORATE-FINANCIAL-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6144E", "name": "World Trade Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-INTERNATIONAL-ECONOMIC-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6145E", "name": "Legal Problems of Economic Globalisation", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-INTERNATIONAL-ECONOMIC-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6160E", "name": "Investor-State Dispute Settlement", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-INTERNATIONAL-ECONOMIC-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6167E", "name": "International Economic Law and Relations", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-INTERNATIONAL-ECONOMIC-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6173E", "name": "Private International Law: Basic Principles and Advanced Application in the Digital Economy", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-INTERNATIONAL-ECONOMIC-LAW", "CITYU-TPG-061-MARITIME-TRANSPORTATION-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6207E", "name": "Comparative Arbitration in Asia", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-INTERNATIONAL-ECONOMIC-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6113E", "name": "Law and Technology", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-IP-TECHNOLOGY-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6118E", "name": "Entertainment Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-IP-TECHNOLOGY-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6148E", "name": "Law and Technology: Theory and Application", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-IP-TECHNOLOGY-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6152E", "name": "Cyber Governance and Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-IP-TECHNOLOGY-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6157E", "name": "Digital Money: Law, Finance, and Technology", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-IP-TECHNOLOGY-LAW", "CITYU-TPG-061-CORPORATE-FINANCIAL-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6195E", "name": "International and Comparative Law of Copyright, Designs and Allied Rights", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-IP-TECHNOLOGY-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6196E", "name": "International and Comparative Law of Trade Marks and Patents", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-IP-TECHNOLOGY-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6198E", "name": "Intellectual Property: Law, Practice and Procedure", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-IP-TECHNOLOGY-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6199E", "name": "Commercialisation of Intellectual Property", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-IP-TECHNOLOGY-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6201E", "name": "Law and Technology: Addressing Challenges in the Digital Era", "credits": 1.5, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-IP-TECHNOLOGY-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6103E", "name": "Company Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-CORPORATE-FINANCIAL-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6105E", "name": "Cross-Border Restructuring and Insolvency", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-CORPORATE-FINANCIAL-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6106E", "name": "Comparative Corporate Governance", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-CORPORATE-FINANCIAL-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6107E", "name": "Capital Markets and Securities Regulation", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-CORPORATE-FINANCIAL-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6109E", "name": "Banking and Finance Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-CORPORATE-FINANCIAL-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6128E", "name": "Mergers and Acquisitions", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-CORPORATE-FINANCIAL-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6177E", "name": "Commercial Application of Equity and Trusts", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-CORPORATE-FINANCIAL-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6146E", "name": "Principles of Maritime Law and Governance for Sustainable Shipping", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-MARITIME-TRANSPORTATION-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6147E", "name": "Carriage of Goods by Sea Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-MARITIME-TRANSPORTATION-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6162E", "name": "Admiralty Law: Liability and Enforcement", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-MARITIME-TRANSPORTATION-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6163E", "name": "International Commercial Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-MARITIME-TRANSPORTATION-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6170E", "name": "Principles of Insurance Law (Marine and General)", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-MARITIME-TRANSPORTATION-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6188E", "name": "Chinese and Comparative Maritime Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-MARITIME-TRANSPORTATION-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6405", "name": "Arbitration Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-061-MARITIME-TRANSPORTATION-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" }
+          ]
+        },
+        {
+          "id": "chinese-module-course-pool",
+          "name": "Chinese Module Course Pool",
+          "type": "module_course_pool",
+          "ruleText": "Chinese Module rules are available for Chinese and Comparative Law, International Economic Law and General Stream. The Module is a second curriculum dimension and is therefore retained in rule text rather than invented as another Track. Chinese and Comparative Law requires 15 credits from its listed pool plus 9 elective credits; International Economic Law requires LW6143C and LW6144C plus 18 elective credits, including at least 6 credits from its designated pool; General requires 24 offered LLM credits.",
+          "appliesToTrackIds": ["CITYU-TPG-061-CHINESE-COMPARATIVE-LAW", "CITYU-TPG-061-INTERNATIONAL-ECONOMIC-LAW", "CITYU-TPG-061-GENERAL"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm",
+          "courses": [
+            { "code": "LW6121C", "name": "Constitutional and Administrative Law of China", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-061-CHINESE-COMPARATIVE-LAW", "CITYU-TPG-061-GENERAL"], "countsTowardTrackIds": ["CITYU-TPG-061-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6122C", "name": "Chinese and Comparative Financial Law", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-061-CHINESE-COMPARATIVE-LAW", "CITYU-TPG-061-GENERAL"], "countsTowardTrackIds": ["CITYU-TPG-061-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6129C", "name": "Chinese and Comparative Environmental Law", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-061-CHINESE-COMPARATIVE-LAW", "CITYU-TPG-061-GENERAL"], "countsTowardTrackIds": ["CITYU-TPG-061-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6136C", "name": "Property Rights in China: Legal, Economic, and Policy Analysis", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-061-CHINESE-COMPARATIVE-LAW", "CITYU-TPG-061-GENERAL"], "countsTowardTrackIds": ["CITYU-TPG-061-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6138C", "name": "Chinese Law of Obligations", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-061-CHINESE-COMPARATIVE-LAW", "CITYU-TPG-061-GENERAL"], "countsTowardTrackIds": ["CITYU-TPG-061-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6161C", "name": "Chinese and Comparative Competition Law", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-061-CHINESE-COMPARATIVE-LAW", "CITYU-TPG-061-GENERAL"], "countsTowardTrackIds": ["CITYU-TPG-061-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6143C", "name": "International Investment Law", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-061-INTERNATIONAL-ECONOMIC-LAW", "CITYU-TPG-061-GENERAL"], "countsTowardTrackIds": ["CITYU-TPG-061-INTERNATIONAL-ECONOMIC-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6144C", "name": "International Trade Law", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-061-INTERNATIONAL-ECONOMIC-LAW", "CITYU-TPG-061-GENERAL"], "countsTowardTrackIds": ["CITYU-TPG-061-INTERNATIONAL-ECONOMIC-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6131C", "name": "Legal Systems in South East Asia", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-061-INTERNATIONAL-ECONOMIC-LAW", "CITYU-TPG-061-GENERAL"], "countsTowardTrackIds": ["CITYU-TPG-061-INTERNATIONAL-ECONOMIC-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6146C", "name": "Transnational Corporate Law", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-061-INTERNATIONAL-ECONOMIC-LAW", "CITYU-TPG-061-GENERAL"], "countsTowardTrackIds": ["CITYU-TPG-061-INTERNATIONAL-ECONOMIC-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6160C", "name": "Advanced Study of Antidumping and Countervailing Measures", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-061-INTERNATIONAL-ECONOMIC-LAW", "CITYU-TPG-061-GENERAL"], "countsTowardTrackIds": ["CITYU-TPG-061-INTERNATIONAL-ECONOMIC-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" },
+            { "code": "LW6173C", "name": "Private International Law", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-061-INTERNATIONAL-ECONOMIC-LAW", "CITYU-TPG-061-GENERAL"], "countsTowardTrackIds": ["CITYU-TPG-061-INTERNATIONAL-ECONOMIC-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm" }
+          ]
+        },
+        {
+          "id": "stream-credit-rules",
+          "name": "Stream Credit and Elective Rules",
+          "type": "rule_summary",
+          "ruleText": "English Module: Chinese and Comparative Law, International Economic Law, Intellectual Property and Technology Law, and Corporate and Financial Law complete 12 required-elective credits plus 12 general elective credits. Common Law completes 12 Core credits including conditional LW6102E plus 12 electives. Maritime and Transportation Law completes 15 required-elective credits plus 9 electives. General completes 24 elective credits. Eligible JD/LLMArbDR courses are capped at 9 credits; normally no more than two JD courses may be taken, except Common Law Stream may take up to four. Offered-course lists and cross-language approvals vary by semester, so final completion requires manual review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLM3.htm",
+          "courses": []
+        }
+      ]
+    }
+  ]
+}

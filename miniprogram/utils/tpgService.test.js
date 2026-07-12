@@ -9,8 +9,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 117);
-  assert.equal(coverage.courseCount, 2726);
+  assert.equal(coverage.programmeWithCoursesCount, 121);
+  assert.equal(coverage.courseCount, 2941);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -29,8 +29,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 117);
-  assert.equal(rows.length, 117);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 121);
+  assert.equal(rows.length, 121);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
@@ -1749,6 +1749,138 @@ test('CityU Juris Doctor preserves optional specializations and conditional PCLL
   ]);
   assert.equal(courses.find((course) => course.code === 'LW5649B').credits, 6);
   assert.equal(courses.find((course) => course.code === 'FB5040').credits, 2);
+});
+
+test('CityU Master of Laws preserves seven Streams and conditional Module rules', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-061');
+  const tracks = tpgService.listTracks(programme);
+  const allCourses = tpgService.flattenCourses(programme);
+  const chinese = tpgService.flattenCourses(programme, '', 'CITYU-TPG-061-CHINESE-COMPARATIVE-LAW');
+  const international = tpgService.flattenCourses(programme, '', 'CITYU-TPG-061-INTERNATIONAL-ECONOMIC-LAW');
+  const common = tpgService.flattenCourses(programme, '', 'CITYU-TPG-061-COMMON-LAW');
+  const general = tpgService.flattenCourses(programme, '', 'CITYU-TPG-061-GENERAL');
+  const maritime = tpgService.flattenCourses(programme, '', 'CITYU-TPG-061-MARITIME-TRANSPORTATION-LAW');
+  const englishPool = programme.courseGroups.find((group) => group.id === 'english-module-required-elective-pool');
+  const chinesePool = programme.courseGroups.find((group) => group.id === 'chinese-module-course-pool');
+  const foundation = programme.courseGroups.find((group) => group.id === 'maritime-foundation');
+
+  assert.equal(programme.creditsRequired, 24);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tracks.length, 7);
+  assert.deepEqual(tracks.map((track) => track.name), [
+    'Chinese and Comparative Law',
+    'International Economic Law',
+    'Common Law',
+    'Intellectual Property and Technology Law',
+    'Corporate and Financial Law',
+    'General',
+    'Maritime and Transportation Law'
+  ]);
+  assert.equal(tpgService.getStatus(programme).courseCount, 62);
+  assert.equal(allCourses.length, 45);
+  assert.equal(new Set(programme.courseGroups.flatMap((group) => group.courses.map((course) => course.code))).size, 62);
+  assert.deepEqual([chinese.length, international.length, common.length, general.length, maritime.length], [51, 51, 48, 57, 47]);
+  assert.equal(englishPool.courses.length, 44);
+  assert.equal(chinesePool.courses.length, 12);
+  assert.equal(chinese.some((course) => course.code === 'LW6121C'), true);
+  assert.equal(international.some((course) => course.code === 'LW6143C'), true);
+  assert.equal(general.some((course) => course.code === 'LW6143C'), true);
+  assert.equal(common.some((course) => course.code === 'LW6164E'), true);
+  assert.equal(common.some((course) => course.code === 'LW5303'), false);
+  assert.equal(maritime.some((course) => course.code === 'LW5303'), true);
+  assert.equal(foundation.creditsRequired, 6);
+  assert.match(foundation.ruleText, /do not have a law degree/);
+  assert.equal(englishPool.courses.find((course) => course.code === 'LW6201E').credits, 1.5);
+  assert.deepEqual(englishPool.courses.find((course) => course.code === 'LW6157E').countsTowardTrackIds, [
+    'CITYU-TPG-061-IP-TECHNOLOGY-LAW',
+    'CITYU-TPG-061-CORPORATE-FINANCIAL-LAW'
+  ]);
+});
+
+test('CityU MBA publishes only the 2026 General Curriculum without stale Concentrations', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-011');
+  const courses = tpgService.flattenCourses(programme);
+  const core = programme.courseGroups.find((group) => group.id === 'core-courses');
+  const globalLearning = programme.courseGroups.find((group) => group.id === 'global-learning');
+  const electives = programme.courseGroups.find((group) => group.id === 'mba-electives');
+
+  assert.equal(programme.creditsRequired, 40);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.equal(tpgService.getStatus(programme).courseCount, 57);
+  assert.equal(courses.length, 57);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 57);
+  assert.equal(core.creditsRequired, 19);
+  assert.equal(core.coursesRequired, 10);
+  assert.equal(core.courses.reduce((sum, course) => sum + course.credits, 0), 19);
+  assert.equal(globalLearning.creditsMin, 6);
+  assert.equal(electives.creditsMin, 6);
+  assert.match(electives.ruleText, /No Concentration or Dual Degree Track is published for the 2026 intake/);
+  assert.equal(courses.find((course) => course.code === 'FB5700').credits, 1);
+  assert.equal(courses.find((course) => course.code === 'FB6712A').credits, 1);
+  assert.equal(courses.find((course) => course.code === 'FB6700').credits, 3);
+  assert.equal(courses.find((course) => course.code === 'FB6784').credits, 3);
+  assert.equal(courses.some((course) => course.code === 'AC6513'), false);
+});
+
+test('CityU EMBA preserves its three Pillars and conditional DBA elective path', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-012');
+  const courses = tpgService.flattenCourses(programme);
+  const residential = programme.courseGroups.find((group) => group.id === 'residential-courses');
+  const online = programme.courseGroups.find((group) => group.id === 'online-courses');
+  const tours = programme.courseGroups.find((group) => group.id === 'global-learning-tours');
+  const electives = programme.courseGroups.find((group) => group.id === 'elective-courses');
+  const dbaPath = programme.courseGroups.find((group) => group.id === 'dba-preparation-path');
+  const dbaCodes = ['FB6812', 'FB8001D', 'FB8002D', 'FB8004D'];
+
+  assert.equal(programme.creditsRequired, 40);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.equal(tpgService.getStatus(programme).courseCount, 36);
+  assert.equal(courses.length, 36);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 36);
+  assert.equal(residential.creditsMin, 16);
+  assert.equal(online.creditsMin, 8);
+  assert.equal(tours.creditsMin, 4);
+  assert.equal(residential.courses.every((course) => course.credits === 4), true);
+  assert.equal(online.courses.every((course) => course.credits === 2), true);
+  assert.equal(tours.courses.every((course) => course.credits === 4), true);
+  assert.match(residential.ruleText, /FB6890.*is compulsory/);
+  assert.deepEqual(dbaCodes.map((code) => electives.courses.find((course) => course.code === code).credits), [4, 3, 3, 2]);
+  assert.equal(dbaPath.creditsRequired, undefined);
+  assert.equal(dbaPath.courses.length, 0);
+  assert.match(dbaPath.ruleText, /12 credit units/);
+});
+
+test('CityU Chinese EMBA keeps its cross-role Core options unique', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-005');
+  const courses = tpgService.flattenCourses(programme);
+  const fixedCore = programme.courseGroups.find((group) => group.id === 'fixed-core-courses');
+  const options = programme.courseGroups.find((group) => group.id === 'core-completion-options');
+  const electives = programme.courseGroups.find((group) => group.id === 'elective-courses');
+
+  assert.equal(programme.creditsRequired, 40);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.equal(tpgService.getStatus(programme).courseCount, 60);
+  assert.equal(courses.length, 60);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 60);
+  assert.equal(fixedCore.creditsRequired, 16);
+  assert.equal(fixedCore.coursesRequired, 9);
+  assert.equal(fixedCore.courses.reduce((sum, course) => sum + course.credits, 0), 16);
+  assert.equal(options.creditsMin, 3);
+  assert.equal(options.coursesRequired, 1);
+  assert.deepEqual(options.courses.map((course) => [course.code, course.credits]), [
+    ['FB6816P', 3],
+    ['FB6843P', 3],
+    ['FB6812P', 4],
+    ['FB6813P', 4]
+  ]);
+  assert.equal(electives.creditsMin, 20);
+  assert.equal(electives.creditsMax, 21);
+  assert.equal(electives.courses.length, 47);
+  assert.equal(electives.courses.some((course) => course.code === 'FB6816P'), false);
+  assert.match(electives.ruleText, /cross-role elective candidates/);
 });
 
 test('TPG programme helpers expose course status and searchable courses', () => {
