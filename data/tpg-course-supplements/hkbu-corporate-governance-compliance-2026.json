@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-033",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "units",
+      "sourceUrl": "https://ar.hkbu.edu.hk/tpg-admissions/programmes/master-of-science-msc-in-corporate-governance-and-compliance",
+      "ruleReviewStatus": "verified",
+      "tracks": [],
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 24,
+          "coursesRequired": 8,
+          "ruleText": "Complete all eight Required Courses (24 units). Professional recognition by CGI and HKCGI is separate from the academic credit requirement.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance",
+          "courses": [
+            { "code": "ACCT7780", "name": "Corporate Law and Compliance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance" },
+            { "code": "ACCT7790", "name": "Corporate Governance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance" },
+            { "code": "ACCT7810", "name": "Securities Regulation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance" },
+            { "code": "ACCT7820", "name": "Taxation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance" },
+            { "code": "ACCT7960", "name": "Interpreting Financial and Accounting Information", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance" },
+            { "code": "ACCT7970", "name": "Board Dynamics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance" },
+            { "code": "ACCT7980", "name": "Risk Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance" },
+            { "code": "MGNT7740", "name": "Strategic Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Choose two Elective Courses (6 units) from the official ten-course pool. ACCT7170 Project is an optional elective and is not a compulsory Project or Dissertation.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance",
+          "courses": [
+            { "code": "ACCT7025", "name": "Stakeholder Governance and Compliance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance" },
+            { "code": "ACCT7035", "name": "Sustainability Governance and Reporting", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance" },
+            { "code": "ACCT7170", "name": "Project", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance" },
+            { "code": "ACCT7760", "name": "International Taxation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance" },
+            { "code": "ACCT7830", "name": "Risk, Compliance and Corporate Social Responsibility", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance" },
+            { "code": "ACCT7840", "name": "Financial Regulations and Crimes", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance" },
+            { "code": "ACCT7930", "name": "Strategic Corporate Communications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance" },
+            { "code": "ACCT7950", "name": "Investment Governance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance" },
+            { "code": "COMM7060", "name": "Issues in Corporate Communication", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance" },
+            { "code": "COMM7250", "name": "Strategic Public Relations and Crisis Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance" }
+          ]
+        }
+      ]
+    }
+  ]
+}

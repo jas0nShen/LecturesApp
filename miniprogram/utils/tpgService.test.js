@@ -9,8 +9,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 130);
-  assert.equal(coverage.courseCount, 3137);
+  assert.equal(coverage.programmeWithCoursesCount, 136);
+  assert.equal(coverage.courseCount, 3273);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -29,8 +29,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 130);
-  assert.equal(rows.length, 130);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 136);
+  assert.equal(rows.length, 136);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
@@ -2094,6 +2094,152 @@ test('HKBU Environmental and Public Health Management keeps the MSc Dissertation
     ['EPHM7312', 3]
   ]);
   assert.match(dissertation.ruleText, /required for the MSc award/);
+});
+
+test('HKBU Master of Accountancy keeps its restricted Integrated Project inside the elective pool', () => {
+  const programme = tpgService.getProgramme('HKBU-TPG-026');
+  const courses = tpgService.flattenCourses(programme);
+  const required = programme.courseGroups.find((group) => group.id === 'required-courses');
+  const electives = programme.courseGroups.find((group) => group.id === 'elective-courses');
+
+  assert.equal(programme.creditsRequired, 36);
+  assert.equal(programme.name, 'Master of Accountancy (MAcc)');
+  assert.equal(programme.creditUnit, 'units');
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.equal(tpgService.getStatus(programme).courseCount, 19);
+  assert.equal(courses.length, 19);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 19);
+  assert.deepEqual([required.creditsRequired, electives.creditsRequired], [21, 15]);
+  assert.deepEqual([required.coursesRequired, electives.coursesRequired], [7, 5]);
+  assert.equal(required.courses.every((course) => course.credits === 3), true);
+  assert.equal(electives.courses.length, 12);
+  assert.equal(electives.courses.every((course) => course.credits === 3), true);
+  assert.match(required.ruleText, /pre-core programme requirements/);
+  assert.match(required.ruleText, /non-unit-bearing/);
+  assert.equal(electives.courses.find((course) => course.code === 'ACCT7550').name, 'Integrated Project');
+  assert.match(electives.ruleText, /optional elective only/);
+  assert.match(electives.ruleText, /not a compulsory Project or Dissertation/);
+});
+
+test('HKBU Applied Accounting and Finance preserves its zero-unit required workshop and restricted projects', () => {
+  const programme = tpgService.getProgramme('HKBU-TPG-030');
+  const courses = tpgService.flattenCourses(programme);
+  const required = programme.courseGroups.find((group) => group.id === 'required-courses');
+  const electives = programme.courseGroups.find((group) => group.id === 'elective-courses');
+  const workshop = programme.courseGroups.find((group) => group.id === 'non-unit-bearing-course');
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.name, 'Master of Science (MSc) in Applied Accounting and Finance');
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.equal(tpgService.getStatus(programme).courseCount, 19);
+  assert.equal(courses.length, 19);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 19);
+  assert.deepEqual([required.creditsRequired, electives.creditsRequired, workshop.creditsRequired], [24, 6, 0]);
+  assert.deepEqual([required.coursesRequired, electives.coursesRequired, workshop.coursesRequired], [8, 2, 1]);
+  assert.equal(required.courses.every((course) => course.credits === 3), true);
+  assert.equal(electives.courses.length, 10);
+  assert.equal(electives.courses.find((course) => course.code === 'ACCT7280').credits, 3);
+  assert.equal(electives.courses.find((course) => course.code === 'FIN 7280').credits, 3);
+  assert.match(electives.ruleText, /optional Independent Study\/Integrative Project/);
+  assert.match(electives.ruleText, /neither is a compulsory Project or Dissertation/);
+  assert.deepEqual(workshop.courses.map((course) => [course.code, course.credits]), [['BUS 7510', 0]]);
+  assert.match(workshop.ruleText, /required but contributes zero units/);
+});
+
+test('HKBU Applied Economics preserves both mutually exclusive core choice pairs', () => {
+  const programme = tpgService.getProgramme('HKBU-TPG-031');
+  const courses = tpgService.flattenCourses(programme);
+  const required = programme.courseGroups.find((group) => group.id === 'required-courses');
+  const electives = programme.courseGroups.find((group) => group.id === 'elective-courses');
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.name, 'Master of Science (MSc) in Applied Economics');
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.equal(tpgService.getStatus(programme).courseCount, 40);
+  assert.equal(courses.length, 40);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 40);
+  assert.deepEqual([required.creditsRequired, required.coursesRequired, required.courses.length], [15, 5, 7]);
+  assert.deepEqual([electives.creditsRequired, electives.coursesRequired, electives.courses.length], [15, 5, 33]);
+  assert.equal(courses.every((course) => course.credits === 3), true);
+  assert.match(required.ruleText, /ECON7790 Microeconomics or ECON7820 Advanced Microeconomics/);
+  assert.match(required.ruleText, /ECON7800 Macroeconomics or ECON7830 Advanced Macroeconomics/);
+  assert.match(required.ruleText, /mutually exclusive choice pairs/);
+  assert.equal(electives.courses.find((course) => course.code === 'ECON7440').name, 'Applied Economics Research Paper');
+  assert.match(electives.ruleText, /one optional elective/);
+  assert.match(electives.ruleText, /no Project or Dissertation is compulsory/);
+});
+
+test('HKBU Corporate Governance and Compliance keeps its Project optional', () => {
+  const programme = tpgService.getProgramme('HKBU-TPG-033');
+  const courses = tpgService.flattenCourses(programme);
+  const required = programme.courseGroups.find((group) => group.id === 'required-courses');
+  const electives = programme.courseGroups.find((group) => group.id === 'elective-courses');
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.name, 'Master of Science (MSc) in Corporate Governance and Compliance');
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.equal(tpgService.getStatus(programme).courseCount, 18);
+  assert.equal(courses.length, 18);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 18);
+  assert.deepEqual([required.creditsRequired, required.coursesRequired, required.courses.length], [24, 8, 8]);
+  assert.deepEqual([electives.creditsRequired, electives.coursesRequired, electives.courses.length], [6, 2, 10]);
+  assert.equal(courses.every((course) => course.credits === 3), true);
+  assert.match(required.ruleText, /Professional recognition by CGI and HKCGI is separate/);
+  assert.equal(electives.courses.find((course) => course.code === 'ACCT7170').name, 'Project');
+  assert.match(electives.ruleText, /optional elective/);
+  assert.match(electives.ruleText, /not a compulsory Project or Dissertation/);
+});
+
+test('HKBU Data Analytics and Business Economics keeps Projects and Internship optional', () => {
+  const programme = tpgService.getProgramme('HKBU-TPG-034');
+  const courses = tpgService.flattenCourses(programme);
+  const required = programme.courseGroups.find((group) => group.id === 'required-courses');
+  const electives = programme.courseGroups.find((group) => group.id === 'elective-courses');
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.name, 'Master of Science (MSc) in Data Analytics and Business Economics');
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.equal(tpgService.getStatus(programme).courseCount, 24);
+  assert.equal(courses.length, 24);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 24);
+  assert.deepEqual([required.creditsRequired, required.coursesRequired, required.courses.length], [15, 5, 5]);
+  assert.deepEqual([electives.creditsRequired, electives.coursesRequired, electives.courses.length], [15, 5, 19]);
+  assert.equal(courses.every((course) => course.credits === 3), true);
+  assert.equal(electives.courses.find((course) => course.code === 'ECON7025').name, 'Business Economics Internship');
+  assert.equal(electives.courses.find((course) => course.code === 'ECON7055').name, 'Projects for Data Analytics');
+  assert.match(electives.ruleText, /optional electives/);
+  assert.match(electives.ruleText, /no Project, Internship or Dissertation is compulsory/);
+});
+
+test('HKBU Finance preserves the approved two-part Industry Project substitution', () => {
+  const programme = tpgService.getProgramme('HKBU-TPG-036');
+  const courses = tpgService.flattenCourses(programme);
+  const required = programme.courseGroups.find((group) => group.id === 'required-courses');
+  const electives = programme.courseGroups.find((group) => group.id === 'elective-courses');
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.name, 'Master of Science (MSc) in Finance (FinTech and Financial Analytics)');
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.equal(tpgService.getStatus(programme).courseCount, 16);
+  assert.equal(courses.length, 16);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 16);
+  assert.deepEqual([required.creditsRequired, required.coursesRequired, required.courses.length], [24, 8, 8]);
+  assert.equal(electives.creditsRequired, 6);
+  assert.equal(electives.coursesRequired, null);
+  assert.equal(electives.courses.length, 8);
+  assert.deepEqual(
+    electives.courses.filter((course) => course.code === 'FIN 7911' || course.code === 'FIN 7912').map((course) => [course.code, course.credits]),
+    [['FIN 7911', 1.5], ['FIN 7912', 1.5]]
+  );
+  assert.match(electives.ruleText, /together replace one 3-unit elective/);
+  assert.match(electives.ruleText, /both Project parts plus one other 3-unit elective/);
+  assert.match(required.ruleText, /preparatory study.*separate from the 30-unit award structure/);
 });
 
 test('TPG programme helpers expose course status and searchable courses', () => {

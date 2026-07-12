@@ -33617,10 +33617,176 @@
       "programmeCode": "",
       "name": "Master of Accountancy (MAcc)",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 36,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 21,
+          "coursesRequired": 7,
+          "ruleText": "Complete all seven Required Courses (21 units). The separate pre-core programme requirements in accounting, economics, information systems, intermediate accounting, management, marketing and statistics are non-unit-bearing competency requirements and require individual background review; they are not included as graduate-credit courses here.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy",
+          "courses": [
+            {
+              "code": "ACCT7015",
+              "name": "Introduction to Accounting Data Analytics and Visualization",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy"
+            },
+            {
+              "code": "ACCT7610",
+              "name": "Advanced Financial Accounting",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy"
+            },
+            {
+              "code": "ACCT7620",
+              "name": "Auditing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy"
+            },
+            {
+              "code": "ACCT7630",
+              "name": "Business and Company Law",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy"
+            },
+            {
+              "code": "ACCT7640",
+              "name": "Cost and Management Accounting",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy"
+            },
+            {
+              "code": "ACCT7650",
+              "name": "Financial Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy"
+            },
+            {
+              "code": "ACCT7660",
+              "name": "Taxation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective_with_restricted_project",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Choose five Elective Courses (15 units) from the twelve-course pool. ACCT7550 Integrated Project is an optional elective only for students with appropriate prior research training and advance approval from the MAcc Programme Office; it is not a compulsory Project or Dissertation.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy",
+          "courses": [
+            {
+              "code": "ACCT7045",
+              "name": "Accounting Data Analytics with Python",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy"
+            },
+            {
+              "code": "ACCT7055",
+              "name": "Sustainability Accounting and Reporting",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy"
+            },
+            {
+              "code": "ACCT7065",
+              "name": "Accounting Internship",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy"
+            },
+            {
+              "code": "ACCT7510",
+              "name": "Advanced Financial Reporting",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy"
+            },
+            {
+              "code": "ACCT7520",
+              "name": "Advanced Taxation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy"
+            },
+            {
+              "code": "ACCT7530",
+              "name": "Contemporary Issues in Business Assurance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy"
+            },
+            {
+              "code": "ACCT7540",
+              "name": "Corporate Financing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy"
+            },
+            {
+              "code": "ACCT7550",
+              "name": "Integrated Project",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy"
+            },
+            {
+              "code": "ACCT7760",
+              "name": "International Taxation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy"
+            },
+            {
+              "code": "ACCT7810",
+              "name": "Securities Regulation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy"
+            },
+            {
+              "code": "ACCT7850",
+              "name": "Contemporary Strategic Management Accounting Issues",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy"
+            },
+            {
+              "code": "ACCT7860",
+              "name": "Accounting Theory",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy"
+            }
+          ]
+        }
+      ],
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://ar.hkbu.edu.hk/tpg-admissions/programmes/master-of-accountancy-macc",
+      "courseStatusNote": "",
+      "tracks": [],
+      "creditUnit": "units",
+      "ruleReviewStatus": "manual_review_required"
     },
     {
       "id": "HKBU-TPG-027",
@@ -33661,10 +33827,188 @@
       "programmeCode": "",
       "name": "Master of Science (MSc) in Applied Accounting and Finance",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 24,
+          "coursesRequired": 8,
+          "ruleText": "Complete all eight Required Courses (24 units). The 2026 admissions page states that any foundation make-up for students without sufficient accounting or finance background, and any course exemption or unit transfer, is determined individually and requires manual review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance",
+          "courses": [
+            {
+              "code": "ACCT7210",
+              "name": "Advanced Corporate Financial Reporting",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance"
+            },
+            {
+              "code": "ACCT7220",
+              "name": "Strategic Management Accounting and Controls",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance"
+            },
+            {
+              "code": "ACCT7230",
+              "name": "Issues on Internal and External Auditing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance"
+            },
+            {
+              "code": "ACCT7240",
+              "name": "Accounting Theory and Policy",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance"
+            },
+            {
+              "code": "FIN 7210",
+              "name": "Corporate Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance"
+            },
+            {
+              "code": "FIN 7220",
+              "name": "Investment and Portfolio Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance"
+            },
+            {
+              "code": "FIN 7230",
+              "name": "Financial Strategy",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance"
+            },
+            {
+              "code": "FIN 7260",
+              "name": "Financial Statement Analysis and Business Valuation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective_with_restricted_projects",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Choose two Elective Courses (6 units) from the ten-course pool. ACCT7280 and FIN 7280 are optional Independent Study/Integrative Project choices that may replace an elective only under special circumstances and with advance approval; neither is a compulsory Project or Dissertation.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance",
+          "courses": [
+            {
+              "code": "ACCT7270",
+              "name": "Corporate Governance and Disclosures",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance"
+            },
+            {
+              "code": "ACCT7280",
+              "name": "Independent Study/Integrative Project (in Accounting)",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance"
+            },
+            {
+              "code": "ACCT7880",
+              "name": "Governance, Leadership and Ethics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance"
+            },
+            {
+              "code": "ACCT7910",
+              "name": "Hong Kong and International Taxation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance"
+            },
+            {
+              "code": "ACCT7920",
+              "name": "Commercial and Company Law",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance"
+            },
+            {
+              "code": "FIN 7240",
+              "name": "Derivative Securities and Risk Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance"
+            },
+            {
+              "code": "FIN 7280",
+              "name": "Independent Study/Integrative Project (in Finance)",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance"
+            },
+            {
+              "code": "FIN 7750",
+              "name": "FinTech, Digital Transformation and Web 3.0",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance"
+            },
+            {
+              "code": "FIN 7890",
+              "name": "Policy, Regulation and Compliance for Financial Technology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance"
+            },
+            {
+              "code": "ISEM7210",
+              "name": "Business Processes and Information Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance"
+            }
+          ]
+        },
+        {
+          "id": "non-unit-bearing-course",
+          "name": "Non-unit bearing Course",
+          "type": "non_credit_requirement",
+          "creditsRequired": 0,
+          "coursesRequired": 1,
+          "ruleText": "Complete the required non-unit-bearing BUS 7510 MScAAF Seminars and Workshops. It is required but contributes zero units to the 30-unit award requirement.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance",
+          "courses": [
+            {
+              "code": "BUS 7510",
+              "name": "MScAAF Seminars and Workshops",
+              "credits": 0,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance"
+            }
+          ]
+        }
+      ],
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://ar.hkbu.edu.hk/tpg-admissions/programmes/master-of-science-msc-in-applied-accounting-and-finance",
+      "courseStatusNote": "",
+      "tracks": [],
+      "creditUnit": "units",
+      "ruleReviewStatus": "manual_review_required"
     },
     {
       "id": "HKBU-TPG-031",
@@ -33672,10 +34016,323 @@
       "programmeCode": "",
       "name": "Master of Science (MSc) in Applied Economics",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core_with_choice_pairs",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete ECON7095, ECON7100 and ECON7810, plus one of ECON7790 Microeconomics or ECON7820 Advanced Microeconomics, and one of ECON7800 Macroeconomics or ECON7830 Advanced Macroeconomics (15 units total). The two mutually exclusive choice pairs require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics",
+          "courses": [
+            {
+              "code": "ECON7095",
+              "name": "Topics of ESG and Sustainability in Economics and Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7100",
+              "name": "Graduate Workshops and Seminars",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7790",
+              "name": "Microeconomics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7820",
+              "name": "Advanced Microeconomics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7800",
+              "name": "Macroeconomics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7830",
+              "name": "Advanced Macroeconomics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7810",
+              "name": "Econometric for Economic Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Choose five Elective Courses (15 units) from the official 33-course pool. ECON7440 Applied Economics Research Paper is one optional elective in this pool; no Project or Dissertation is compulsory.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics",
+          "courses": [
+            {
+              "code": "ECON7025",
+              "name": "Business Economics Internship",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7065",
+              "name": "Global Sustainable Investing and ESG Integration in Asia Pacific",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7105",
+              "name": "Urban Economics and Sustainable Cities",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7110",
+              "name": "Advanced Econometrics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7145",
+              "name": "Environmental Cost and Benefit Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7155",
+              "name": "Economic and Financial Management in Family Office",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7180",
+              "name": "Law and Economics for Competition Policy in the Digital World",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7210",
+              "name": "International Economics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7220",
+              "name": "International Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7230",
+              "name": "Monetary Economics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7240",
+              "name": "Economic Development and Growth",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7250",
+              "name": "Financial Economics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7260",
+              "name": "Economic Analysis of the Firm",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7270",
+              "name": "Topics in Microeconomics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7280",
+              "name": "Topics in Macroeconomics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7310",
+              "name": "Economic Institutions in China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7320",
+              "name": "Public Finance and Monetary Economics in China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7330",
+              "name": "Foreign Economic Policies of China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7340",
+              "name": "Productivity Analysis of the Chinese Economy",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7350",
+              "name": "Corporate Finance and Governance in China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7410",
+              "name": "Development and Policies of Hong Kong's Major Economic Sectors",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7420",
+              "name": "Applied Time Series Analysis and Forecasting",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7430",
+              "name": "Applied Cost-Benefit Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7440",
+              "name": "Applied Economics Research Paper",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7450",
+              "name": "Energy Economics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7460",
+              "name": "Banking and Capital Markets",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7470",
+              "name": "Environmental Economics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7480",
+              "name": "Industrial Organization",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7490",
+              "name": "Business Economics Field Study",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7640",
+              "name": "Economics of Digital Currencies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7780",
+              "name": "Economic and Financial Risk Management for Financial Institutions",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7840",
+              "name": "Big Data Analytics for Business",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            },
+            {
+              "code": "ECON7850",
+              "name": "Economics of Digital Markets",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics"
+            }
+          ]
+        }
+      ],
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://ar.hkbu.edu.hk/tpg-admissions/programmes/master-of-science-msc-in-applied-economics",
+      "courseStatusNote": "",
+      "tracks": [],
+      "creditUnit": "units",
+      "ruleReviewStatus": "manual_review_required"
     },
     {
       "id": "HKBU-TPG-032",
@@ -33694,10 +34351,169 @@
       "programmeCode": "",
       "name": "Master of Science (MSc) in Corporate Governance and Compliance",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 24,
+          "coursesRequired": 8,
+          "ruleText": "Complete all eight Required Courses (24 units). Professional recognition by CGI and HKCGI is separate from the academic credit requirement.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance",
+          "courses": [
+            {
+              "code": "ACCT7780",
+              "name": "Corporate Law and Compliance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance"
+            },
+            {
+              "code": "ACCT7790",
+              "name": "Corporate Governance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance"
+            },
+            {
+              "code": "ACCT7810",
+              "name": "Securities Regulation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance"
+            },
+            {
+              "code": "ACCT7820",
+              "name": "Taxation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance"
+            },
+            {
+              "code": "ACCT7960",
+              "name": "Interpreting Financial and Accounting Information",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance"
+            },
+            {
+              "code": "ACCT7970",
+              "name": "Board Dynamics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance"
+            },
+            {
+              "code": "ACCT7980",
+              "name": "Risk Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance"
+            },
+            {
+              "code": "MGNT7740",
+              "name": "Strategic Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Choose two Elective Courses (6 units) from the official ten-course pool. ACCT7170 Project is an optional elective and is not a compulsory Project or Dissertation.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance",
+          "courses": [
+            {
+              "code": "ACCT7025",
+              "name": "Stakeholder Governance and Compliance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance"
+            },
+            {
+              "code": "ACCT7035",
+              "name": "Sustainability Governance and Reporting",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance"
+            },
+            {
+              "code": "ACCT7170",
+              "name": "Project",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance"
+            },
+            {
+              "code": "ACCT7760",
+              "name": "International Taxation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance"
+            },
+            {
+              "code": "ACCT7830",
+              "name": "Risk, Compliance and Corporate Social Responsibility",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance"
+            },
+            {
+              "code": "ACCT7840",
+              "name": "Financial Regulations and Crimes",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance"
+            },
+            {
+              "code": "ACCT7930",
+              "name": "Strategic Corporate Communications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance"
+            },
+            {
+              "code": "ACCT7950",
+              "name": "Investment Governance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance"
+            },
+            {
+              "code": "COMM7060",
+              "name": "Issues in Corporate Communication",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance"
+            },
+            {
+              "code": "COMM7250",
+              "name": "Strategic Public Relations and Crisis Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/school-of-business/master-of-science-in-corporate-governance-and-compliance"
+            }
+          ]
+        }
+      ],
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://ar.hkbu.edu.hk/tpg-admissions/programmes/master-of-science-msc-in-corporate-governance-and-compliance",
+      "courseStatusNote": "",
+      "tracks": [],
+      "creditUnit": "units",
+      "ruleReviewStatus": "verified"
     },
     {
       "id": "HKBU-TPG-034",
@@ -33705,10 +34521,211 @@
       "programmeCode": "",
       "name": "Master of Science (MSc) in Data Analytics and Business Economics",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five Required Courses (15 units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics",
+          "courses": [
+            {
+              "code": "ECON7870",
+              "name": "Managerial Economics and Business Strategy",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics"
+            },
+            {
+              "code": "ECON7880",
+              "name": "Foundations in Big Data Analytics: Concepts and Techniques",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics"
+            },
+            {
+              "code": "ECON7890",
+              "name": "Foundations in Big Data Analytics: Programming",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics"
+            },
+            {
+              "code": "ECON7900",
+              "name": "Statistics for Data Science",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics"
+            },
+            {
+              "code": "ECON7920",
+              "name": "Executive Workshop Series",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Choose five Elective Courses (15 units) from the official nineteen-course pool. ECON7025 Business Economics Internship and ECON7055 Projects for Data Analytics are optional electives; no Project, Internship or Dissertation is compulsory.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics",
+          "courses": [
+            {
+              "code": "ECON7025",
+              "name": "Business Economics Internship",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics"
+            },
+            {
+              "code": "ECON7035",
+              "name": "Artificial Intelligence for Business",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics"
+            },
+            {
+              "code": "ECON7045",
+              "name": "Regulating Big Tech and Data Protection",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics"
+            },
+            {
+              "code": "ECON7055",
+              "name": "Projects for Data Analytics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics"
+            },
+            {
+              "code": "ECON7085",
+              "name": "Cloud Computing for Business Analytics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics"
+            },
+            {
+              "code": "ECON7110",
+              "name": "Advanced Econometrics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics"
+            },
+            {
+              "code": "ECON7135",
+              "name": "Data Solutions to Social Problems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics"
+            },
+            {
+              "code": "ECON7290",
+              "name": "Applied Database Management Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics"
+            },
+            {
+              "code": "ECON7430",
+              "name": "Applied Cost-Benefit Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics"
+            },
+            {
+              "code": "ECON7640",
+              "name": "Economics of Digital Currencies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics"
+            },
+            {
+              "code": "ECON7850",
+              "name": "Economics of Digital Markets",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics"
+            },
+            {
+              "code": "ECON7910",
+              "name": "Data Visualization with Story-telling",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics"
+            },
+            {
+              "code": "ECON7930",
+              "name": "Analytics for Spatial, Textual and Social Network Data",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics"
+            },
+            {
+              "code": "ECON7940",
+              "name": "Data-driven Decision Making",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics"
+            },
+            {
+              "code": "ECON7950",
+              "name": "Business and Economic Forecasting with Big Data",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics"
+            },
+            {
+              "code": "ECON7960",
+              "name": "User Experience and A/B Testing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics"
+            },
+            {
+              "code": "ECON7970",
+              "name": "Applied Predictive Modeling",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics"
+            },
+            {
+              "code": "ECON7980",
+              "name": "Innovation and Entrepreneurial Economy: China and Global Development",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics"
+            },
+            {
+              "code": "ECON7990",
+              "name": "Data Analytics for Smart Cities",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics"
+            }
+          ]
+        }
+      ],
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://ar.hkbu.edu.hk/tpg-admissions/programmes/master-of-science-msc-in-data-analytics-and-business-economics",
+      "courseStatusNote": "",
+      "tracks": [],
+      "creditUnit": "units",
+      "ruleReviewStatus": "verified"
     },
     {
       "id": "HKBU-TPG-035",
@@ -33727,10 +34744,155 @@
       "programmeCode": "",
       "name": "Master of Science (MSc) in Finance (FinTech and Financial Analytics)",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 24,
+          "coursesRequired": 8,
+          "ruleText": "Complete all eight Required Courses (24 units). Any preparatory study in quantitative methods, finance or economics required at admission is separate from the 30-unit award structure and is not represented as graduate-credit coursework.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial",
+          "courses": [
+            {
+              "code": "FIN 7780",
+              "name": "FinTech, Digital Transformation and Web 3.0",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial"
+            },
+            {
+              "code": "FIN 7790",
+              "name": "Machine Learning for Financial Market Modelling and Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial"
+            },
+            {
+              "code": "FIN 7800",
+              "name": "Corporate Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial"
+            },
+            {
+              "code": "FIN 7810",
+              "name": "Investment Management and Alternative Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial"
+            },
+            {
+              "code": "FIN 7830",
+              "name": "Financial Computing with Python",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial"
+            },
+            {
+              "code": "FIN 7840",
+              "name": "Blockchain Engineering and Virtual Assets",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial"
+            },
+            {
+              "code": "FIN 7870",
+              "name": "Financial Derivatives and Risk Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial"
+            },
+            {
+              "code": "FIN 7900",
+              "name": "Cybersecurity and Privacy for Financial Technology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective_with_project_substitution",
+          "creditsRequired": 6,
+          "coursesRequired": null,
+          "ruleText": "Complete 6 elective units. Normally choose two 3-unit electives. Under special circumstances and with advance approval, the two 1.5-unit Applied FinTech Industry Project parts FIN 7911 and FIN 7912 together replace one 3-unit elective, so the approved Project path consists of both Project parts plus one other 3-unit elective. The variable course count requires manual review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial",
+          "courses": [
+            {
+              "code": "FIN 7820",
+              "name": "Applied Financial Econometrics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial"
+            },
+            {
+              "code": "FIN 7850",
+              "name": "Algorithmic and High-Frequency Trading",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial"
+            },
+            {
+              "code": "FIN 7860",
+              "name": "International Financial Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial"
+            },
+            {
+              "code": "FIN 7880",
+              "name": "Data-Driven Decision with Big Data and AI",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial"
+            },
+            {
+              "code": "FIN 7890",
+              "name": "Policy, Regulation, Compliance for Financial Technology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial"
+            },
+            {
+              "code": "FIN 7911",
+              "name": "Applied FinTech Industry Project",
+              "credits": 1.5,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial"
+            },
+            {
+              "code": "FIN 7912",
+              "name": "Applied FinTech Industry Project",
+              "credits": 1.5,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial"
+            },
+            {
+              "code": "FIN 7960",
+              "name": "Smart Contract Engineering and Auditing in FinTech",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial"
+            }
+          ]
+        }
+      ],
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://ar.hkbu.edu.hk/tpg-admissions/programmes/master-of-science-msc-in-finance-fintech-and-financial-analytics",
+      "courseStatusNote": "",
+      "tracks": [],
+      "creditUnit": "units",
+      "ruleReviewStatus": "manual_review_required"
     },
     {
       "id": "HKBU-TPG-037",

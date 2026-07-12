@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-031",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "units",
+      "sourceUrl": "https://ar.hkbu.edu.hk/tpg-admissions/programmes/master-of-science-msc-in-applied-economics",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [],
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core_with_choice_pairs",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete ECON7095, ECON7100 and ECON7810, plus one of ECON7790 Microeconomics or ECON7820 Advanced Microeconomics, and one of ECON7800 Macroeconomics or ECON7830 Advanced Macroeconomics (15 units total). The two mutually exclusive choice pairs require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics",
+          "courses": [
+            { "code": "ECON7095", "name": "Topics of ESG and Sustainability in Economics and Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7100", "name": "Graduate Workshops and Seminars", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7790", "name": "Microeconomics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7820", "name": "Advanced Microeconomics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7800", "name": "Macroeconomics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7830", "name": "Advanced Macroeconomics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7810", "name": "Econometric for Economic Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Choose five Elective Courses (15 units) from the official 33-course pool. ECON7440 Applied Economics Research Paper is one optional elective in this pool; no Project or Dissertation is compulsory.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics",
+          "courses": [
+            { "code": "ECON7025", "name": "Business Economics Internship", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7065", "name": "Global Sustainable Investing and ESG Integration in Asia Pacific", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7105", "name": "Urban Economics and Sustainable Cities", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7110", "name": "Advanced Econometrics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7145", "name": "Environmental Cost and Benefit Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7155", "name": "Economic and Financial Management in Family Office", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7180", "name": "Law and Economics for Competition Policy in the Digital World", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7210", "name": "International Economics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7220", "name": "International Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7230", "name": "Monetary Economics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7240", "name": "Economic Development and Growth", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7250", "name": "Financial Economics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7260", "name": "Economic Analysis of the Firm", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7270", "name": "Topics in Microeconomics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7280", "name": "Topics in Macroeconomics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7310", "name": "Economic Institutions in China", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7320", "name": "Public Finance and Monetary Economics in China", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7330", "name": "Foreign Economic Policies of China", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7340", "name": "Productivity Analysis of the Chinese Economy", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7350", "name": "Corporate Finance and Governance in China", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7410", "name": "Development and Policies of Hong Kong's Major Economic Sectors", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7420", "name": "Applied Time Series Analysis and Forecasting", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7430", "name": "Applied Cost-Benefit Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7440", "name": "Applied Economics Research Paper", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7450", "name": "Energy Economics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7460", "name": "Banking and Capital Markets", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7470", "name": "Environmental Economics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7480", "name": "Industrial Organization", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7490", "name": "Business Economics Field Study", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7640", "name": "Economics of Digital Currencies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7780", "name": "Economic and Financial Risk Management for Financial Institutions", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7840", "name": "Big Data Analytics for Business", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" },
+            { "code": "ECON7850", "name": "Economics of Digital Markets", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-economics" }
+          ]
+        }
+      ]
+    }
+  ]
+}

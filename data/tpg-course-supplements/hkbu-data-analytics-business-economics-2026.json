@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-034",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "units",
+      "sourceUrl": "https://ar.hkbu.edu.hk/tpg-admissions/programmes/master-of-science-msc-in-data-analytics-and-business-economics",
+      "ruleReviewStatus": "verified",
+      "tracks": [],
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five Required Courses (15 units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics",
+          "courses": [
+            { "code": "ECON7870", "name": "Managerial Economics and Business Strategy", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics" },
+            { "code": "ECON7880", "name": "Foundations in Big Data Analytics: Concepts and Techniques", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics" },
+            { "code": "ECON7890", "name": "Foundations in Big Data Analytics: Programming", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics" },
+            { "code": "ECON7900", "name": "Statistics for Data Science", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics" },
+            { "code": "ECON7920", "name": "Executive Workshop Series", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Choose five Elective Courses (15 units) from the official nineteen-course pool. ECON7025 Business Economics Internship and ECON7055 Projects for Data Analytics are optional electives; no Project, Internship or Dissertation is compulsory.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics",
+          "courses": [
+            { "code": "ECON7025", "name": "Business Economics Internship", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics" },
+            { "code": "ECON7035", "name": "Artificial Intelligence for Business", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics" },
+            { "code": "ECON7045", "name": "Regulating Big Tech and Data Protection", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics" },
+            { "code": "ECON7055", "name": "Projects for Data Analytics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics" },
+            { "code": "ECON7085", "name": "Cloud Computing for Business Analytics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics" },
+            { "code": "ECON7110", "name": "Advanced Econometrics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics" },
+            { "code": "ECON7135", "name": "Data Solutions to Social Problems", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics" },
+            { "code": "ECON7290", "name": "Applied Database Management Systems", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics" },
+            { "code": "ECON7430", "name": "Applied Cost-Benefit Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics" },
+            { "code": "ECON7640", "name": "Economics of Digital Currencies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics" },
+            { "code": "ECON7850", "name": "Economics of Digital Markets", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics" },
+            { "code": "ECON7910", "name": "Data Visualization with Story-telling", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics" },
+            { "code": "ECON7930", "name": "Analytics for Spatial, Textual and Social Network Data", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics" },
+            { "code": "ECON7940", "name": "Data-driven Decision Making", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics" },
+            { "code": "ECON7950", "name": "Business and Economic Forecasting with Big Data", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics" },
+            { "code": "ECON7960", "name": "User Experience and A/B Testing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics" },
+            { "code": "ECON7970", "name": "Applied Predictive Modeling", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics" },
+            { "code": "ECON7980", "name": "Innovation and Entrepreneurial Economy: China and Global Development", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics" },
+            { "code": "ECON7990", "name": "Data Analytics for Smart Cities", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-data-analytics-and-business-economics" }
+          ]
+        }
+      ]
+    }
+  ]
+}

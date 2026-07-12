@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-026",
+      "status": "verified",
+      "creditsRequired": 36,
+      "creditUnit": "units",
+      "sourceUrl": "https://ar.hkbu.edu.hk/tpg-admissions/programmes/master-of-accountancy-macc",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [],
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 21,
+          "coursesRequired": 7,
+          "ruleText": "Complete all seven Required Courses (21 units). The separate pre-core programme requirements in accounting, economics, information systems, intermediate accounting, management, marketing and statistics are non-unit-bearing competency requirements and require individual background review; they are not included as graduate-credit courses here.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy",
+          "courses": [
+            { "code": "ACCT7015", "name": "Introduction to Accounting Data Analytics and Visualization", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy" },
+            { "code": "ACCT7610", "name": "Advanced Financial Accounting", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy" },
+            { "code": "ACCT7620", "name": "Auditing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy" },
+            { "code": "ACCT7630", "name": "Business and Company Law", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy" },
+            { "code": "ACCT7640", "name": "Cost and Management Accounting", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy" },
+            { "code": "ACCT7650", "name": "Financial Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy" },
+            { "code": "ACCT7660", "name": "Taxation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective_with_restricted_project",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Choose five Elective Courses (15 units) from the twelve-course pool. ACCT7550 Integrated Project is an optional elective only for students with appropriate prior research training and advance approval from the MAcc Programme Office; it is not a compulsory Project or Dissertation.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy",
+          "courses": [
+            { "code": "ACCT7045", "name": "Accounting Data Analytics with Python", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy" },
+            { "code": "ACCT7055", "name": "Sustainability Accounting and Reporting", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy" },
+            { "code": "ACCT7065", "name": "Accounting Internship", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy" },
+            { "code": "ACCT7510", "name": "Advanced Financial Reporting", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy" },
+            { "code": "ACCT7520", "name": "Advanced Taxation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy" },
+            { "code": "ACCT7530", "name": "Contemporary Issues in Business Assurance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy" },
+            { "code": "ACCT7540", "name": "Corporate Financing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy" },
+            { "code": "ACCT7550", "name": "Integrated Project", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy" },
+            { "code": "ACCT7760", "name": "International Taxation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy" },
+            { "code": "ACCT7810", "name": "Securities Regulation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy" },
+            { "code": "ACCT7850", "name": "Contemporary Strategic Management Accounting Issues", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy" },
+            { "code": "ACCT7860", "name": "Accounting Theory", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-accountancy" }
+          ]
+        }
+      ]
+    }
+  ]
+}

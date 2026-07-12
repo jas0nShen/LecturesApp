@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-030",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "units",
+      "sourceUrl": "https://ar.hkbu.edu.hk/tpg-admissions/programmes/master-of-science-msc-in-applied-accounting-and-finance",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [],
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 24,
+          "coursesRequired": 8,
+          "ruleText": "Complete all eight Required Courses (24 units). The 2026 admissions page states that any foundation make-up for students without sufficient accounting or finance background, and any course exemption or unit transfer, is determined individually and requires manual review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance",
+          "courses": [
+            { "code": "ACCT7210", "name": "Advanced Corporate Financial Reporting", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance" },
+            { "code": "ACCT7220", "name": "Strategic Management Accounting and Controls", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance" },
+            { "code": "ACCT7230", "name": "Issues on Internal and External Auditing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance" },
+            { "code": "ACCT7240", "name": "Accounting Theory and Policy", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance" },
+            { "code": "FIN 7210", "name": "Corporate Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance" },
+            { "code": "FIN 7220", "name": "Investment and Portfolio Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance" },
+            { "code": "FIN 7230", "name": "Financial Strategy", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance" },
+            { "code": "FIN 7260", "name": "Financial Statement Analysis and Business Valuation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective_with_restricted_projects",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Choose two Elective Courses (6 units) from the ten-course pool. ACCT7280 and FIN 7280 are optional Independent Study/Integrative Project choices that may replace an elective only under special circumstances and with advance approval; neither is a compulsory Project or Dissertation.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance",
+          "courses": [
+            { "code": "ACCT7270", "name": "Corporate Governance and Disclosures", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance" },
+            { "code": "ACCT7280", "name": "Independent Study/Integrative Project (in Accounting)", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance" },
+            { "code": "ACCT7880", "name": "Governance, Leadership and Ethics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance" },
+            { "code": "ACCT7910", "name": "Hong Kong and International Taxation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance" },
+            { "code": "ACCT7920", "name": "Commercial and Company Law", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance" },
+            { "code": "FIN 7240", "name": "Derivative Securities and Risk Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance" },
+            { "code": "FIN 7280", "name": "Independent Study/Integrative Project (in Finance)", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance" },
+            { "code": "FIN 7750", "name": "FinTech, Digital Transformation and Web 3.0", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance" },
+            { "code": "FIN 7890", "name": "Policy, Regulation and Compliance for Financial Technology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance" },
+            { "code": "ISEM7210", "name": "Business Processes and Information Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance" }
+          ]
+        },
+        {
+          "id": "non-unit-bearing-course",
+          "name": "Non-unit bearing Course",
+          "type": "non_credit_requirement",
+          "creditsRequired": 0,
+          "coursesRequired": 1,
+          "ruleText": "Complete the required non-unit-bearing BUS 7510 MScAAF Seminars and Workshops. It is required but contributes zero units to the 30-unit award requirement.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance",
+          "courses": [
+            { "code": "BUS 7510", "name": "MScAAF Seminars and Workshops", "credits": 0, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-applied-accounting-and-finance" }
+          ]
+        }
+      ]
+    }
+  ]
+}

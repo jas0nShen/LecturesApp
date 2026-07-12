@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-036",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "units",
+      "sourceUrl": "https://ar.hkbu.edu.hk/tpg-admissions/programmes/master-of-science-msc-in-finance-fintech-and-financial-analytics",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [],
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 24,
+          "coursesRequired": 8,
+          "ruleText": "Complete all eight Required Courses (24 units). Any preparatory study in quantitative methods, finance or economics required at admission is separate from the 30-unit award structure and is not represented as graduate-credit coursework.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial",
+          "courses": [
+            { "code": "FIN 7780", "name": "FinTech, Digital Transformation and Web 3.0", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial" },
+            { "code": "FIN 7790", "name": "Machine Learning for Financial Market Modelling and Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial" },
+            { "code": "FIN 7800", "name": "Corporate Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial" },
+            { "code": "FIN 7810", "name": "Investment Management and Alternative Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial" },
+            { "code": "FIN 7830", "name": "Financial Computing with Python", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial" },
+            { "code": "FIN 7840", "name": "Blockchain Engineering and Virtual Assets", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial" },
+            { "code": "FIN 7870", "name": "Financial Derivatives and Risk Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial" },
+            { "code": "FIN 7900", "name": "Cybersecurity and Privacy for Financial Technology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective_with_project_substitution",
+          "creditsRequired": 6,
+          "coursesRequired": null,
+          "ruleText": "Complete 6 elective units. Normally choose two 3-unit electives. Under special circumstances and with advance approval, the two 1.5-unit Applied FinTech Industry Project parts FIN 7911 and FIN 7912 together replace one 3-unit elective, so the approved Project path consists of both Project parts plus one other 3-unit elective. The variable course count requires manual review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial",
+          "courses": [
+            { "code": "FIN 7820", "name": "Applied Financial Econometrics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial" },
+            { "code": "FIN 7850", "name": "Algorithmic and High-Frequency Trading", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial" },
+            { "code": "FIN 7860", "name": "International Financial Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial" },
+            { "code": "FIN 7880", "name": "Data-Driven Decision with Big Data and AI", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial" },
+            { "code": "FIN 7890", "name": "Policy, Regulation, Compliance for Financial Technology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial" },
+            { "code": "FIN 7911", "name": "Applied FinTech Industry Project", "credits": 1.5, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial" },
+            { "code": "FIN 7912", "name": "Applied FinTech Industry Project", "credits": 1.5, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial" },
+            { "code": "FIN 7960", "name": "Smart Contract Engineering and Auditing in FinTech", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-accountancy-economics-and-finance-1/master-of-science-in-finance-fintech-and-financial" }
+          ]
+        }
+      ]
+    }
+  ]
+}
