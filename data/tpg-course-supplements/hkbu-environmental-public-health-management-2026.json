@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-023",
+      "status": "verified",
+      "creditsRequired": 27,
+      "creditUnit": "units",
+      "sourceUrl": "https://ar.hkbu.edu.hk/tpg-admissions/programmes/master-of-science-msc-in-environmental-and-public-health-management-approved-programme-under-ugc-s-targeted-tpg-programmes-fellowships-scheme",
+      "ruleReviewStatus": "verified",
+      "tracks": [],
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Complete both Required Courses (6 units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/faculty-of-science/master-of-science-in-environmental-and-public-health",
+          "courses": [
+            { "code": "EPHM7020", "name": "Management of Public Health Risks", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/faculty-of-science/master-of-science-in-environmental-and-public-health" },
+            { "code": "EPHM7110", "name": "Principles of Environmental Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/faculty-of-science/master-of-science-in-environmental-and-public-health" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Choose five 3-unit Elective Courses (15 units) from the seven-course official pool.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/faculty-of-science/master-of-science-in-environmental-and-public-health",
+          "courses": [
+            { "code": "EPHM7010", "name": "Sustainable Management Systems", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/faculty-of-science/master-of-science-in-environmental-and-public-health" },
+            { "code": "EPHM7040", "name": "Land and Water Resources Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/faculty-of-science/master-of-science-in-environmental-and-public-health" },
+            { "code": "EPHM7050", "name": "Integrated Waste Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/faculty-of-science/master-of-science-in-environmental-and-public-health" },
+            { "code": "EPHM7070", "name": "Research Methodologies in Environmental Monitoring and Public Health Protection", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/faculty-of-science/master-of-science-in-environmental-and-public-health" },
+            { "code": "EPHM7320", "name": "Occupational Health and Safety Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/faculty-of-science/master-of-science-in-environmental-and-public-health" },
+            { "code": "EPHM7330", "name": "Food Quality, Law and Safety Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/faculty-of-science/master-of-science-in-environmental-and-public-health" },
+            { "code": "EPHM7340", "name": "Carbon and Energy Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/faculty-of-science/master-of-science-in-environmental-and-public-health" }
+          ]
+        },
+        {
+          "id": "dissertation",
+          "name": "MSc Dissertation",
+          "type": "dissertation",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Complete both MSc Dissertation courses (6 units). The Dissertation is required for the MSc award; the separate Postgraduate Diploma exit award does not change this MSc requirement.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/faculty-of-science/master-of-science-in-environmental-and-public-health",
+          "courses": [
+            { "code": "EPHM7311", "name": "MSc Dissertation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/faculty-of-science/master-of-science-in-environmental-and-public-health" },
+            { "code": "EPHM7312", "name": "MSc Dissertation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/postgraduate-programmes/faculty-of-science/master-of-science-in-environmental-and-public-health" }
+          ]
+        }
+      ]
+    }
+  ]
+}

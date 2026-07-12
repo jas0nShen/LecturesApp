@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-017",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "units",
+      "sourceUrl": "https://ar.hkbu.edu.hk/tpg-admissions/programmes/master-of-science-msc-in-ai-and-digital-media-approved-programme-under-ugc-s-targeted-tpg-programmes-fellowships-scheme",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [],
+      "courseGroups": [
+        {
+          "id": "bridging-courses",
+          "name": "Bridging Courses",
+          "type": "bridging",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Complete both Bridging Courses (6 units). Transfer of units or course exemption is subject to formal Programme and Academic Registry approval and requires manual review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://comd.hkbu.edu.hk/masters/en/aidm",
+          "courses": [
+            { "code": "AIDM7320", "name": "Basics in Media and Communication", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://comd.hkbu.edu.hk/masters/en/aidm" },
+            { "code": "AIDM7330", "name": "Programming for Data Science", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://comd.hkbu.edu.hk/masters/en/aidm" }
+          ]
+        },
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Core Courses (12 units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://comd.hkbu.edu.hk/masters/en/aidm",
+          "courses": [
+            { "code": "AIDM7340", "name": "AI for Digital Media", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://comd.hkbu.edu.hk/masters/en/aidm" },
+            { "code": "AIDM7350", "name": "AI and Digital Media Workshop", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://comd.hkbu.edu.hk/masters/en/aidm" },
+            { "code": "AIDM7360", "name": "Big Data Management and Analytics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://comd.hkbu.edu.hk/masters/en/aidm" },
+            { "code": "AIDM7390", "name": "Data Mining & Knowledge Discovery for Digital Media", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://comd.hkbu.edu.hk/masters/en/aidm" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective_with_programme_minimum",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete four 3-unit electives (12 units), including at least 9 units from AIDM-coded Programme electives. Up to 3 units may therefore come from the listed COMM or COMP electives. AIDM7460 Digital Media Research Project is optional and no dissertation is compulsory. Programme-code allocation and approved transfer or exemption require manual review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://comd.hkbu.edu.hk/masters/en/aidm",
+          "courses": [
+            { "code": "AIDM7010", "name": "Media Psychology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://comd.hkbu.edu.hk/masters/en/aidm" },
+            { "code": "AIDM7020", "name": "AI and Big Data Applications in Financial Market Analytics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://comd.hkbu.edu.hk/masters/en/aidm" },
+            { "code": "AIDM7040", "name": "Generative AI for Digital Media", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://comd.hkbu.edu.hk/masters/en/aidm" },
+            { "code": "AIDM7380", "name": "Recommender Systems for Digital Media", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://comd.hkbu.edu.hk/masters/en/aidm" },
+            { "code": "AIDM7400", "name": "Data Analysis and Visualization Studio", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://comd.hkbu.edu.hk/masters/en/aidm" },
+            { "code": "AIDM7410", "name": "Computational Journalism", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://comd.hkbu.edu.hk/masters/en/aidm" },
+            { "code": "AIDM7420", "name": "News and Feature Writing for Digital Media", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://comd.hkbu.edu.hk/masters/en/aidm" },
+            { "code": "AIDM7450", "name": "Dynamic Web & Mobile Programming for Digital Media", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://comd.hkbu.edu.hk/masters/en/aidm" },
+            { "code": "AIDM7460", "name": "Digital Media Research Project", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://comd.hkbu.edu.hk/masters/en/aidm" },
+            { "code": "AIDM7470", "name": "Big Data and Social Media Marketing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://comd.hkbu.edu.hk/masters/en/aidm" },
+            { "code": "AIDM7620", "name": "Social Media and Online Social Networks", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://comd.hkbu.edu.hk/masters/en/aidm" },
+            { "code": "AIDM7840", "name": "Algorithmic Culture", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://comd.hkbu.edu.hk/masters/en/aidm" },
+            { "code": "AIDM7860", "name": "Human-Computer Interaction and User Experience", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://comd.hkbu.edu.hk/masters/en/aidm" },
+            { "code": "AIDM7880", "name": "AI for Social Good: Laws, Ethics, and Methods", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://comd.hkbu.edu.hk/masters/en/aidm" },
+            { "code": "COMM7020", "name": "Approaches & Methods in Communication Research", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://comd.hkbu.edu.hk/masters/en/aidm" },
+            { "code": "COMM7660", "name": "Statistical Analysis in Communication", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://comd.hkbu.edu.hk/masters/en/aidm" },
+            { "code": "COMP7045", "name": "Natural Language Processing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://comd.hkbu.edu.hk/masters/en/aidm" },
+            { "code": "COMP7810", "name": "Business Intelligence", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://comd.hkbu.edu.hk/masters/en/aidm" },
+            { "code": "COMP7990", "name": "Principles and Practices of Data Analytics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://comd.hkbu.edu.hk/masters/en/aidm" }
+          ]
+        }
+      ]
+    }
+  ]
+}

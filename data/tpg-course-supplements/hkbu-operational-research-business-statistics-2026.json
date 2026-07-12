@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-020",
+      "status": "verified",
+      "creditsRequired": 40,
+      "creditUnit": "units",
+      "sourceUrl": "https://ar.hkbu.edu.hk/tpg-admissions/programmes/master-of-science-msc-in-operational-research-and-business-statistics",
+      "ruleReviewStatus": "verified",
+      "tracks": [],
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 25,
+          "coursesRequired": 8,
+          "ruleText": "Complete all eight Required Courses (25 units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-operational-research-and-business",
+          "courses": [
+            { "code": "MATH7960", "name": "Applied Multivariate Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-operational-research-and-business" },
+            { "code": "MATH7790", "name": "Prescriptive Analytics for Decision Making", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-operational-research-and-business" },
+            { "code": "MATH7810", "name": "Business Statistics with Python", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-operational-research-and-business" },
+            { "code": "MATH7820", "name": "Simulation Modelling", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-operational-research-and-business" },
+            { "code": "MATH7830", "name": "Machine Learning and Forecasting", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-operational-research-and-business" },
+            { "code": "MATH7840", "name": "Advanced Spreadsheets and Decision Support Systems", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-operational-research-and-business" },
+            { "code": "MATH7970", "name": "Applied Time Series", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-operational-research-and-business" },
+            { "code": "MATH7990", "name": "Regression Analysis", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-operational-research-and-business" }
+          ]
+        },
+        {
+          "id": "dissertation",
+          "name": "MSc Dissertation",
+          "type": "dissertation",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Complete both Dissertation courses (6 units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-operational-research-and-business",
+          "courses": [
+            { "code": "MATH7941", "name": "Dissertation I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-operational-research-and-business" },
+            { "code": "MATH7942", "name": "Dissertation II", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-operational-research-and-business" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Choose three 3-unit Elective Courses (9 units) from the official pool. Annual offerings may vary.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-operational-research-and-business",
+          "courses": [
+            { "code": "MATH7800", "name": "Techniques of Production Operations Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-operational-research-and-business" },
+            { "code": "MATH7850", "name": "Managing Organisational Performance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-operational-research-and-business" },
+            { "code": "MATH7860", "name": "Quantitative Models for Marketing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-operational-research-and-business" },
+            { "code": "MATH7870", "name": "Big Data Analytics and Visualisation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-operational-research-and-business" },
+            { "code": "MATH7880", "name": "Survey Sampling and Experimental Design", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-operational-research-and-business" },
+            { "code": "MATH7890", "name": "Actuarial Statistics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-operational-research-and-business" },
+            { "code": "MATH7900", "name": "Network and Project Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-operational-research-and-business" },
+            { "code": "MATH7910", "name": "Derivatives", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-operational-research-and-business" },
+            { "code": "MATH7920", "name": "Work-based Learning", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-operational-research-and-business" },
+            { "code": "MATH7930", "name": "Risk and Portfolio Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-operational-research-and-business" },
+            { "code": "MATH7980", "name": "Advanced Operational Research", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-operational-research-and-business" },
+            { "code": "MATH7005", "name": "Data Analytics with Programming", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-operational-research-and-business" }
+          ]
+        }
+      ]
+    }
+  ]
+}

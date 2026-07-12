@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-021",
+      "status": "verified",
+      "creditsRequired": 39,
+      "creditUnit": "units",
+      "sourceUrl": "https://ar.hkbu.edu.hk/tpg-admissions/programmes/master-of-science-msc-in-mathematical-finance",
+      "ruleReviewStatus": "verified",
+      "tracks": [],
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 35,
+          "coursesRequired": 10,
+          "ruleText": "Complete all ten Required Courses (35 units) across the four-semester HKBU–University of Kent study schedule.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-mathematical-finance",
+          "courses": [
+            { "code": "MATH7680", "name": "Quantitative Methods for Finance", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-mathematical-finance" },
+            { "code": "MATH7690", "name": "Financial Markets and Instruments", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-mathematical-finance" },
+            { "code": "MATH7720", "name": "Investments Management", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-mathematical-finance" },
+            { "code": "MATH7760", "name": "Programming for Finance and Trading", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-mathematical-finance" },
+            { "code": "MATH7700", "name": "Risk Management", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-mathematical-finance" },
+            { "code": "MATH7620", "name": "Topics in Probability Theory & Stochastic Processes", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-mathematical-finance" },
+            { "code": "MATH7640", "name": "Computational Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-mathematical-finance" },
+            { "code": "MATH7650", "name": "Time Series Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-mathematical-finance" },
+            { "code": "MATH7660", "name": "Mathematical Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-mathematical-finance" },
+            { "code": "MATH7670", "name": "Derivatives II", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-mathematical-finance" }
+          ]
+        },
+        {
+          "id": "elective-course",
+          "name": "Elective Course",
+          "type": "elective",
+          "creditsRequired": 4,
+          "coursesRequired": 1,
+          "ruleText": "Choose one 4-unit Elective Course from the seven-course pool in Semester 3.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-mathematical-finance",
+          "courses": [
+            { "code": "MATH7630", "name": "Derivatives", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-mathematical-finance" },
+            { "code": "MATH7710", "name": "Financial Econometrics", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-mathematical-finance" },
+            { "code": "MATH7730", "name": "Investment Analysis", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-mathematical-finance" },
+            { "code": "MATH7740", "name": "Credit Risk", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-mathematical-finance" },
+            { "code": "MATH7750", "name": "Corporate Governance and Ethics", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-mathematical-finance" },
+            { "code": "MATH7770", "name": "Algorithmic Trading", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-mathematical-finance" },
+            { "code": "MATH7780", "name": "Financial Technology", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-mathematics/master-of-science-in-mathematical-finance" }
+          ]
+        }
+      ]
+    }
+  ]
+}

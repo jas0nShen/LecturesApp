@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-019",
+      "status": "verified",
+      "creditsRequired": 29,
+      "creditUnit": "units",
+      "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/itm/en/curriculum.php",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [],
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core_with_background_substitution",
+          "creditsRequired": 14,
+          "coursesRequired": 6,
+          "ruleText": "Complete six Core Courses (14 units). A student with an IT or closely related Bachelor's degree, or equivalent prior courses, must substitute COMP7510 Internet Computing and Programming with one 3-unit elective course. Background-based substitution requires manual review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf",
+          "courses": [
+            { "code": "COMP7025", "name": "Artificial Intelligence for Digital Transformation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7105", "name": "Business Data Analytics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7510", "name": "Internet Computing and Programming", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7520", "name": "Foundations of Management in the IT Context", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7530", "name": "IT Forum", "credits": 1, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7950", "name": "IT Project Skills", "credits": 1, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective_cross_stream_project_research",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete five 3-unit electives (15 units). Select at least three of the four official elective streams—IT Enterprise Management, Knowledge and Information Management, Internet and Web Technologies, and Business Analytics—and complete at least one course in each selected stream. MSc Project & Research courses are also in the official elective catalogue. Stream allocation, the background substitution for COMP7510, and annual offerings require manual review; these stream labels are not Programme Tracks.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf",
+          "courses": [
+            { "code": "COMP7075", "name": "Financial Technology Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7085", "name": "Digital Marketing and Analytics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7115", "name": "Digital Experience Design", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7540", "name": "IT Management: Principles and Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7550", "name": "IT Project Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7560", "name": "Information Systems Auditing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7580", "name": "Electronic Transformation in Business", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7770", "name": "Special Topics in IT Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7870", "name": "IT Innovation Management and Entrepreneurship", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7880", "name": "E-Business Strategies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7095", "name": "Big Data Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7640", "name": "Database Systems and Administration", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7650", "name": "Data Mining and Knowledge Discovery", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7780", "name": "Special Topics in Knowledge and Information Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7810", "name": "Business Intelligence", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7125", "name": "Prompt Engineering for Generative AI", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7680", "name": "Internet and World Wide Web", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7790", "name": "Special Topics in Internet and Web Technologies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7850", "name": "Information Security Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7940", "name": "Cloud Computing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7980", "name": "Dynamic Web and Mobile Programming", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7760", "name": "Special Topics in Business Analytics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7800", "name": "Analytic Models in IT Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7820", "name": "Visual Analytics and Decision Support", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7730", "name": "MSc Project", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7960", "name": "MSc Research I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7970", "name": "MSc Research II", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" }
+          ]
+        }
+      ]
+    }
+  ]
+}

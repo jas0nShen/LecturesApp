@@ -102,6 +102,13 @@
       "pages": [
         "pages/loader/index"
       ]
+    },
+    {
+      "root": "subpackages/tpg-data-hkbu",
+      "name": "tpg-data-hkbu",
+      "pages": [
+        "pages/loader/index"
+      ]
     }
   ],
   "window": {

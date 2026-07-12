@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-024",
+      "status": "verified",
+      "creditsRequired": 29,
+      "creditUnit": "units",
+      "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/daai/en/curriculum.php",
+      "ruleReviewStatus": "verified",
+      "tracks": [],
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 14,
+          "coursesRequired": 6,
+          "ruleText": "Complete all six Core Courses (14 units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf",
+          "courses": [
+            { "code": "COMP7015", "name": "Artificial Intelligence", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7035", "name": "Python for Data Analytics and Artificial Intelligence", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7180", "name": "Quantitative Methods for Data Analytics and Artificial Intelligence", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7990", "name": "Principles and Practices of Data Analytics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7155", "name": "Ethics of Data Analytics and Artificial Intelligence", "credits": 1, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7530", "name": "IT Forum", "credits": 1, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective_practicum_research",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete 15 units from the Data Analytics, Artificial Intelligence, and MSc Practicum & Research elective categories. Students may select freely across the categories; the category labels are not Tracks and do not create separate award requirements. Offerings may receive minor curriculum revisions.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf",
+          "courses": [
+            { "code": "COMP7065", "name": "Innovative Laboratory", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7135", "name": "Audio and Speech Processing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7170", "name": "Data Security and Privacy", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7200", "name": "Blockchain and Cryptocurrencies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7260", "name": "Special Topics in Data Analytics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7300", "name": "Financial Technology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7640", "name": "Database Systems and Administration", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7650", "name": "Data Mining and Knowledge Discovery", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7810", "name": "Business Intelligence", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7820", "name": "Visual Analytics and Decision Support", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7930", "name": "Big Data Analytics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7940", "name": "Cloud Computing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7045", "name": "Natural Language Processing and Large Language Models", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7055", "name": "Computer Vision", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7125", "name": "Prompt Engineering for Generative AI", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7220", "name": "Special Topics in Artificial Intelligence", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7240", "name": "Recommender Systems", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7250", "name": "Machine Learning", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7630", "name": "Web Intelligence and Its Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7145", "name": "Autonomous Robotics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7280", "name": "MSc Practicum", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7960", "name": "MSc Research I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" },
+            { "code": "COMP7970", "name": "MSc Research II", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.comp.hkbu.edu.hk/msc/msc_booklet.pdf" }
+          ]
+        }
+      ]
+    }
+  ]
+}

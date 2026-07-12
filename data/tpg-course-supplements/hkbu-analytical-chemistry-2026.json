@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-022",
+      "status": "verified",
+      "creditsRequired": 27,
+      "creditUnit": "units",
+      "sourceUrl": "https://ar.hkbu.edu.hk/tpg-admissions/programmes/master-of-science-msc-in-analytical-chemistry",
+      "ruleReviewStatus": "verified",
+      "tracks": [],
+      "courseGroups": [
+        {
+          "id": "required-taught-laboratory-seminar",
+          "name": "Required Taught, Laboratory and Seminar Courses",
+          "type": "core_laboratory_seminar",
+          "creditsRequired": 18,
+          "coursesRequired": 12,
+          "ruleText": "Complete all twelve Required taught, laboratory and seminar courses (18 units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-chemistry/master-of-science-in-analytical-chemistry",
+          "courses": [
+            { "code": "CHEM7210", "name": "Analytical Process and Applied Statistics", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-chemistry/master-of-science-in-analytical-chemistry" },
+            { "code": "CHEM7220", "name": "Chemical Instrumentation", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-chemistry/master-of-science-in-analytical-chemistry" },
+            { "code": "CHEM7250", "name": "Laboratory Management", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-chemistry/master-of-science-in-analytical-chemistry" },
+            { "code": "CHEM7401", "name": "Seminar I", "credits": 0.5, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-chemistry/master-of-science-in-analytical-chemistry" },
+            { "code": "CHEM7402", "name": "Seminar II", "credits": 0.5, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-chemistry/master-of-science-in-analytical-chemistry" },
+            { "code": "CHEM7403", "name": "Seminar III", "credits": 0.5, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-chemistry/master-of-science-in-analytical-chemistry" },
+            { "code": "CHEM7404", "name": "Seminar IV", "credits": 0.5, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-chemistry/master-of-science-in-analytical-chemistry" },
+            { "code": "CHEM7411", "name": "Advanced Analytical Laboratory I", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-chemistry/master-of-science-in-analytical-chemistry" },
+            { "code": "CHEM7412", "name": "Advanced Analytical Laboratory II", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-chemistry/master-of-science-in-analytical-chemistry" },
+            { "code": "CHEM7970", "name": "Applied Spectroscopy", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-chemistry/master-of-science-in-analytical-chemistry" },
+            { "code": "CHEM7980", "name": "Atomic Spectrometry", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-chemistry/master-of-science-in-analytical-chemistry" },
+            { "code": "CHEM7990", "name": "Separation Science", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-chemistry/master-of-science-in-analytical-chemistry" }
+          ]
+        },
+        {
+          "id": "dissertation",
+          "name": "Dissertation",
+          "type": "dissertation",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Complete both Dissertation courses (6 units). The Dissertation is an integral MSc requirement; it may be omitted only for the separate interim Postgraduate Diploma award.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-chemistry/master-of-science-in-analytical-chemistry",
+          "courses": [
+            { "code": "CHEM7331", "name": "Dissertation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-chemistry/master-of-science-in-analytical-chemistry" },
+            { "code": "CHEM7332", "name": "Dissertation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-chemistry/master-of-science-in-analytical-chemistry" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 3,
+          "coursesRequired": 3,
+          "ruleText": "Choose three 1-unit Elective Courses (3 units) from the official pool.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-chemistry/master-of-science-in-analytical-chemistry",
+          "courses": [
+            { "code": "CHEM7005", "name": "Food Nutrient Analysis", "credits": 1, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-chemistry/master-of-science-in-analytical-chemistry" },
+            { "code": "CHEM7015", "name": "Food Safety Analysis", "credits": 1, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-chemistry/master-of-science-in-analytical-chemistry" },
+            { "code": "CHEM7280", "name": "Surface Analysis", "credits": 1, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-chemistry/master-of-science-in-analytical-chemistry" },
+            { "code": "CHEM7340", "name": "Environmental Analysis", "credits": 1, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-chemistry/master-of-science-in-analytical-chemistry" },
+            { "code": "CHEM7350", "name": "Sample Pretreatment Methods", "credits": 1, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-chemistry/master-of-science-in-analytical-chemistry" },
+            { "code": "CHEM7430", "name": "Pharmaceutical Analysis", "credits": 1, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-chemistry/master-of-science-in-analytical-chemistry" },
+            { "code": "CHEM7440", "name": "Biomedical Analysis", "credits": 1, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-chemistry/master-of-science-in-analytical-chemistry" },
+            { "code": "CHEM7460", "name": "Forensic Analysis", "credits": 1, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-chemistry/master-of-science-in-analytical-chemistry" },
+            { "code": "CHEM7490", "name": "Nanomaterial Analysis", "credits": 1, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-science/department-of-chemistry/master-of-science-in-analytical-chemistry" }
+          ]
+        }
+      ]
+    }
+  ]
+}

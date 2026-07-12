@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-051",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/college-of-liberal-arts-and-social-sciences/p92",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [],
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 21,
+          "coursesRequired": 7,
+          "ruleText": "Complete all seven Core Courses (21 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/college-of-liberal-arts-and-social-sciences/p92",
+          "courses": [
+            { "code": "CLA5001", "name": "Cross Sectoral Leadership", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/college-of-liberal-arts-and-social-sciences/p92" },
+            { "code": "CLA5002", "name": "Research Design and Methods", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/college-of-liberal-arts-and-social-sciences/p92" },
+            { "code": "CLA5003", "name": "Innovative Finance for Global Leaders", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/college-of-liberal-arts-and-social-sciences/p92" },
+            { "code": "CLA5004", "name": "Impact Management and Evaluation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/college-of-liberal-arts-and-social-sciences/p92" },
+            { "code": "CLA5005", "name": "Marketing for Social Impact", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/college-of-liberal-arts-and-social-sciences/p92" },
+            { "code": "CLA5006", "name": "Technology for Social Transformation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/college-of-liberal-arts-and-social-sciences/p92" },
+            { "code": "CLA5007", "name": "Project Management and Capstone", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/college-of-liberal-arts-and-social-sciences/p92" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective_cross_group",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Choose two 3-credit courses from two different groups: Group 1 (CLA5008, COM5110 or COM5402), Group 2 (CLA5009 or CAH5741), or Group 3 (CLA5010). COM5110 and COM5402 are taught in English. Cross-group allocation and annual availability require manual review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/college-of-liberal-arts-and-social-sciences/p92",
+          "courses": [
+            { "code": "CLA5008", "name": "Public Sector Innovation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/college-of-liberal-arts-and-social-sciences/p92" },
+            { "code": "COM5110", "name": "Public Communication Campaign Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/college-of-liberal-arts-and-social-sciences/p92" },
+            { "code": "COM5402", "name": "Public Relations Strategies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/college-of-liberal-arts-and-social-sciences/p92" },
+            { "code": "CLA5009", "name": "Cultural Policy and Diplomacy", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/college-of-liberal-arts-and-social-sciences/p92" },
+            { "code": "CAH5741", "name": "Cultural Heritage Theories and Practices in China", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/college-of-liberal-arts-and-social-sciences/p92" },
+            { "code": "CLA5010", "name": "Social Entrepreneurship", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/college-of-liberal-arts-and-social-sciences/p92" }
+          ]
+        },
+        {
+          "id": "experiential-learning",
+          "name": "Experiential Learning",
+          "type": "experiential_learning",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Choose one 3-credit Experiential Learning course: CLA5011 Field Trip or CLA5012 Internship. Students bear the associated field-trip or internship expenses stated by the Programme.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/college-of-liberal-arts-and-social-sciences/p92",
+          "courses": [
+            { "code": "CLA5011", "name": "Experiential Learning - Field Trip", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/college-of-liberal-arts-and-social-sciences/p92" },
+            { "code": "CLA5012", "name": "Experiential Learning - Internship", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/college-of-liberal-arts-and-social-sciences/p92" }
+          ]
+        }
+      ]
+    }
+  ]
+}
