@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-038",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [
+        { "id": "CITYU-TPG-038-FULL-TIME-PROJECT", "name": "Full-time Project Path", "type": "Award Path", "creditsRequired": 30, "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20" },
+        { "id": "CITYU-TPG-038-PART-TIME-PROJECT", "name": "Part-time Project Path", "type": "Award Path", "creditsRequired": 30, "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20" },
+        { "id": "CITYU-TPG-038-PART-TIME-PRACTICUM", "name": "Part-time Counselling Practicum Path", "type": "Award Path", "creditsRequired": 30, "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20" }
+      ],
+      "courseGroups": [
+        {
+          "id": "shared-core",
+          "name": "Shared Core Courses",
+          "type": "core",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "All Master's Award Paths complete the six shared Core Courses (18 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20",
+          "courses": [
+            { "code": "SS5800", "name": "Counselling Theories and Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20" },
+            { "code": "SS5801", "name": "Counselling in Society and Across Culture", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20" },
+            { "code": "SS5802", "name": "Group Counselling and Therapy", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/SS5802.htm" },
+            { "code": "SS5803", "name": "Psychopathology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20" },
+            { "code": "SS5822", "name": "Family-based Service and Family Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20" },
+            { "code": "SS5841", "name": "Counselling Skills Laboratory and Ethics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20" }
+          ]
+        },
+        {
+          "id": "full-time-project",
+          "name": "Full-time Project",
+          "type": "track_project",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Full-time students must complete SS6805B Project in Semester B and Summer Term after satisfying the official credit and SS5302 prerequisite requirements.",
+          "appliesToTrackIds": ["CITYU-TPG-038-FULL-TIME-PROJECT"],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20",
+          "courses": [
+            { "code": "SS6805B", "name": "Project", "credits": 6, "appliesToTrackIds": ["CITYU-TPG-038-FULL-TIME-PROJECT"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/SS6805B.pdf" }
+          ]
+        },
+        {
+          "id": "part-time-project",
+          "name": "Part-time Project",
+          "type": "track_project",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Part-time students choosing the Project path complete SS6805 after at least 12 credits and take SS5302 concurrently if it has not already been completed, subject to the official rules.",
+          "appliesToTrackIds": ["CITYU-TPG-038-PART-TIME-PROJECT"],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20",
+          "courses": [
+            { "code": "SS6805", "name": "Project", "credits": 6, "appliesToTrackIds": ["CITYU-TPG-038-PART-TIME-PROJECT"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20" }
+          ]
+        },
+        {
+          "id": "part-time-practicum",
+          "name": "Part-time Counselling Practicum",
+          "type": "track_practicum",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Part-time students choosing the Practicum path complete SS6806 after at least 18 credits including SS5800, SS5802 and SS5841. Full-time students cannot take this path.",
+          "appliesToTrackIds": ["CITYU-TPG-038-PART-TIME-PRACTICUM"],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20",
+          "courses": [
+            { "code": "SS6806", "name": "Counselling Practicum", "credits": 6, "appliesToTrackIds": ["CITYU-TPG-038-PART-TIME-PRACTICUM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/SS6806.htm" }
+          ]
+        },
+        {
+          "id": "electives",
+          "name": "Programme Electives",
+          "type": "elective",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Choose two electives (6 credit units). All electives are subject to official review and may not be offered every term.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20",
+          "courses": [
+            { "code": "SS5208", "name": "Cognitive-behavioural Interventions", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20" },
+            { "code": "SS5216", "name": "Contemporary Intervention Approaches", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20" },
+            { "code": "SS5430", "name": "Case Management and Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20" },
+            { "code": "SS5752", "name": "Life Span Development", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20" },
+            { "code": "SS5757", "name": "Personality Theories and Assessment", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20" },
+            { "code": "SS5805", "name": "Narrative-based Therapeutic Conversations: Theory and Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20" },
+            { "code": "SS5302", "name": "Research Methods in Social Sciences", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20" },
+            { "code": "SS5110", "name": "Assessment and Interventions in Mental Health Counselling", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20" },
+            { "code": "SS5316", "name": "Aggressive Behaviour and Homicide", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20" },
+            { "code": "SS5814", "name": "Vocational Counselling and Assessment", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20" },
+            { "code": "SS5821", "name": "Counselling Children and Youth", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20" },
+            { "code": "SS5832", "name": "Counselling Older Adults", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-027",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-engineering/department-of-architecture-and-civil-engineering/p52",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-027-CPM",
+          "name": "Construction Project Management",
+          "type": "Stream",
+          "creditsRequired": 30,
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-engineering/department-of-architecture-and-civil-engineering/p52"
+        },
+        {
+          "id": "CITYU-TPG-027-DCM",
+          "name": "Digital Construction Management",
+          "type": "Stream",
+          "creditsRequired": 30,
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-engineering/department-of-architecture-and-civil-engineering/p52"
+        }
+      ],
+      "courseGroups": [
+        {
+          "id": "stream-taught-course-pools",
+          "name": "Stream Taught-course Pools",
+          "type": "track_elective",
+          "creditsRequired": null,
+          "coursesRequired": null,
+          "ruleText": "Complete 30 credit units in the selected Stream. Full-time students complete the two designated 3-credit Stream core courses, the 9-credit Stream Dissertation, and 15 credit units from their Stream taught-course pool. Part-time students complete the two designated 3-credit Stream core courses and 24 elective credit units. A part-time student may include the 9-credit Stream Dissertation as an elective; a student not taking the Dissertation must complete CA5603 Professional Research Methods. The mode and Dissertation branches require manual audit review.",
+          "appliesToTrackIds": ["CITYU-TPG-027-CPM", "CITYU-TPG-027-DCM"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202425/programme/MSCM2.htm",
+          "courses": [
+            { "code": "CA5018", "name": "Modelling and Computational Techniques for Built Environment", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-027-CPM", "CITYU-TPG-027-DCM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA5018.htm" },
+            { "code": "CA5101", "name": "Production Management", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-027-CPM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA5101.htm" },
+            { "code": "CA5104", "name": "Management Workshops", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-027-CPM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA5104.htm" },
+            { "code": "CA5106", "name": "Project Management", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-027-CPM", "CITYU-TPG-027-DCM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA5106.htm" },
+            { "code": "CA5108", "name": "Virtual Design and Construction", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-027-CPM", "CITYU-TPG-027-DCM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA5108.htm" },
+            { "code": "CA5217", "name": "Environmental Economics, Planning and Policy", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-027-CPM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA5217.htm" },
+            { "code": "CA5236", "name": "Transportation and Land Planning", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-027-CPM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA5236.htm" },
+            { "code": "CA5252", "name": "Building Environment Modelling for Sustainability Analysis", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-027-DCM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA5252.htm" },
+            { "code": "CA5325", "name": "Next-generation Smart Cities", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-027-DCM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA5325.htm" },
+            { "code": "CA5563", "name": "Advanced Digital Construction", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-027-DCM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA5563.htm" },
+            { "code": "CA5564", "name": "Sensing and Data Analytics for Smart Buildings", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-027-DCM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA5564.htm" },
+            { "code": "CA5603", "name": "Professional Research Methods", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-027-CPM", "CITYU-TPG-027-DCM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA5603.htm" },
+            { "code": "CA6110", "name": "Statistical Methods and Data Analytics", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-027-CPM", "CITYU-TPG-027-DCM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA6110.htm" },
+            { "code": "CA6120", "name": "Value Management for Construction", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-027-CPM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA6120.htm" },
+            { "code": "CA6220", "name": "Urban Economics and Regional Planning", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-027-DCM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA6220.htm" },
+            { "code": "CA6232", "name": "Contract Strategy and Administration", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-027-CPM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA6232.htm" },
+            { "code": "CA6233", "name": "Contract and Dispute Management", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-027-CPM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA6233.htm" },
+            { "code": "CA6241", "name": "Geographic Data Management and Planning Analysis", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-027-DCM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA6241.htm" },
+            { "code": "CA6318", "name": "Planning Practice, Law, and Ethics in Hong Kong", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-027-CPM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA6318.htm" },
+            { "code": "SEE6115", "name": "Carbon Audit and Management", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-027-DCM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/SEE6115.htm" },
+            { "code": "PIA5003", "name": "Project Planning and Management for Development", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-027-DCM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5003.htm" }
+          ]
+        },
+        {
+          "id": "stream-dissertations",
+          "name": "Stream Dissertation Options",
+          "type": "dissertation",
+          "creditsRequired": null,
+          "coursesRequired": null,
+          "ruleText": "The 9-credit Dissertation is required for full-time students and optional for part-time students in the matching Stream. Part-time students who do not take it must complete CA5603 Professional Research Methods instead.",
+          "appliesToTrackIds": ["CITYU-TPG-027-CPM", "CITYU-TPG-027-DCM"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202425/programme/MSCM2.htm",
+          "courses": [
+            { "code": "CA6537", "name": "Dissertation – Construction Project Management", "credits": 9, "appliesToTrackIds": ["CITYU-TPG-027-CPM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA6537.htm" },
+            { "code": "CA6538", "name": "Dissertation – Digital Construction Management", "credits": 9, "appliesToTrackIds": ["CITYU-TPG-027-DCM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA6538.htm" }
+          ]
+        }
+      ]
+    }
+  ]
+}

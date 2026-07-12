@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-058",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLMARBDR.htm",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [
+        { "id": "CITYU-TPG-058-EXEMPT", "name": "With Commercial Contracts and Legal Concepts Exemption", "type": "Award Path", "creditsRequired": 30, "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p41" },
+        { "id": "CITYU-TPG-058-NON-EXEMPT", "name": "Without Commercial Contracts and Legal Concepts Exemption", "type": "Award Path", "creditsRequired": 33, "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p41" }
+      ],
+      "courseGroups": [
+        {
+          "id": "common-core",
+          "name": "Common Core Courses",
+          "type": "core",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Both Award Paths complete the six common taught Core Courses (18 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLMARBDR.htm",
+          "courses": [
+            { "code": "LW6401", "name": "Dispute Resolution in Theory and Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLMARBDR.htm" },
+            { "code": "LW6402", "name": "Procedure and Proof", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLMARBDR.htm" },
+            { "code": "LW6405", "name": "Arbitration Law", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLMARBDR.htm" },
+            { "code": "LW6406", "name": "Mediation Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLMARBDR.htm" },
+            { "code": "LW6407", "name": "Arbitration Practice and Award Writing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLMARBDR.htm" },
+            { "code": "LW6408", "name": "International Arbitration", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLMARBDR.htm" }
+          ]
+        },
+        {
+          "id": "masters-research-choice",
+          "name": "Master's Research or Advanced Award Writing",
+          "type": "dissertation_project_choice",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "To obtain the Master's award, choose either LW6409A Dissertation or LW6409B Advanced Award Writing, subject to prerequisites. The two courses are mutually exclusive.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLMARBDR.htm",
+          "courses": [
+            { "code": "LW6409A", "name": "Dissertation", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLMARBDR.htm" },
+            { "code": "LW6409B", "name": "Advanced Award Writing", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLMARBDR.htm" }
+          ]
+        },
+        {
+          "id": "non-exempt-foundation",
+          "name": "Non-exempt Foundation Courses",
+          "type": "track_core",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Students without the exemption complete both Commercial Contracts and Legal Concepts. Holders of a qualifying common-law degree or equivalent may be exempted under the official rule.",
+          "appliesToTrackIds": ["CITYU-TPG-058-NON-EXEMPT"],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p41",
+          "courses": [
+            { "code": "LW5303", "name": "Commercial Contracts", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-058-NON-EXEMPT"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5303.htm" },
+            { "code": "LW5400", "name": "Legal Concepts", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-058-NON-EXEMPT"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5400.htm" }
+          ]
+        },
+        {
+          "id": "programme-electives",
+          "name": "Programme Electives",
+          "type": "track_elective",
+          "creditsRequired": 3,
+          "ruleText": "Exempt students complete 6 elective credit units; non-exempt students complete 3 elective credit units. The listed Programme electives may vary by semester; designated JD and LLM courses announced for the relevant academic year may also be approved. Automatic completion therefore requires manual review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLMARBDR.htm",
+          "courses": [
+            { "code": "LW6415", "name": "Negotiation and Mediation Advocacy", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6415.htm" },
+            { "code": "LW6418", "name": "Online Dispute Resolution", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLMARBDR.htm" },
+            { "code": "LW6420", "name": "International Conflict Analysis, Prevention and Resolution", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLMARBDR.htm" },
+            { "code": "LW6423", "name": "Construction Law and Dispute Resolution", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLMARBDR.htm" }
+          ]
+        }
+      ]
+    }
+  ]
+}

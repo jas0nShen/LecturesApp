@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-026",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-computing/department-of-biostatistics/p97",
+      "ruleReviewStatus": "verified",
+      "courseGroups": [
+        {
+          "id": "core",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 21,
+          "coursesRequired": 7,
+          "ruleText": "Complete all seven Core Courses (21 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-computing/department-of-biostatistics/p97",
+          "courses": [
+            { "code": "PH5102", "name": "Introduction to Biostatistics in One Health", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PH5102.htm" },
+            { "code": "PH5103", "name": "Principles of Epidemiology and One Health", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PH5103.htm" },
+            { "code": "BIOS5800", "name": "Probability", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/BIOS5800.htm" },
+            { "code": "BIOS5801", "name": "Statistical Computing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/BIOS5801.htm" },
+            { "code": "BIOS5802", "name": "Advanced Methods in Biostatistics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/BIOS5802.htm" },
+            { "code": "BIOS6902", "name": "Statistical Inference", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/BIOS6902.htm" },
+            { "code": "BIOS6903", "name": "Communication and Project Study", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/BIOS6903.htm" }
+          ]
+        },
+        {
+          "id": "electives",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Choose three Elective Courses (9 credit units) from the official Year of Entry 2026 pool.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-computing/department-of-biostatistics/p97",
+          "courses": [
+            { "code": "BIOS6900", "name": "Time Series Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/BIOS6900.htm" },
+            { "code": "BIOS6901", "name": "Spatial Data Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/BIOS6901.htm" },
+            { "code": "BIOS6904", "name": "Survival Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/BIOS6904.htm" },
+            { "code": "BIOS6905", "name": "Clinical Trials", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/BIOS6905.htm" },
+            { "code": "BIOS8005", "name": "Selected Topics in Biostatistics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/BIOS8005.htm" },
+            { "code": "BIOS8006", "name": "Longitudinal Data Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/BIOS8006.htm" },
+            { "code": "SDSC8013", "name": "Statistical Methods for Categorical Data Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/SDSC8013.htm" },
+            { "code": "MA6630", "name": "Introduction to Statistical Learning", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/MA6630.htm" },
+            { "code": "PH8001", "name": "Computational Biology, Experimental Design and Data Science", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PH8001.htm" },
+            { "code": "PH6202", "name": "Infectious Disease Epidemiology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PH6202.htm" },
+            { "code": "PH6204", "name": "Public Health Surveillance and Risk Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PH6204.htm" },
+            { "code": "PH6205", "name": "Intermediate Level Statistics for One Health", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PH6205.htm" }
+          ]
+        }
+      ]
+    }
+  ]
+}

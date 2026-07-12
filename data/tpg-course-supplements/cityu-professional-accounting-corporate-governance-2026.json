@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-010",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-business/department-of-accountancy/p10",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-010-PA",
+          "name": "Professional Accounting",
+          "type": "Stream",
+          "creditsRequired": 30,
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSPACG.htm"
+        },
+        {
+          "id": "CITYU-TPG-010-CG",
+          "name": "Corporate Governance",
+          "type": "Stream",
+          "creditsRequired": 30,
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSPACG.htm"
+        }
+      ],
+      "courseGroups": [
+        {
+          "id": "programme-core",
+          "name": "Programme Core Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Programme Core Courses (12 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSPACG.htm",
+          "courses": [
+            { "code": "AC5690", "name": "Corporate Governance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/AC5690.htm" },
+            { "code": "AC6551", "name": "Advanced Taxation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/AC6551.htm" },
+            { "code": "AC6560", "name": "Accounting Information Systems", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/AC6560.htm" },
+            { "code": "LW5962", "name": "Law Relating to Business and Companies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5962.htm" }
+          ]
+        },
+        {
+          "id": "stream-course-pools",
+          "name": "Stream Core Courses and Optional Electives",
+          "type": "track_core",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Choose one Stream and complete its six designated core courses (18 credit units). Professional Accounting core: AC5511, AC5512, AC5521, AC6513, AC6531 and AC6541. Corporate Governance core: AC5603, AC6533, AC6691, AC6692, AC6693 and MGT6514. Other courses visible for the selected Stream are optional electives and do not replace its six core courses. AC5890 and AC5891 may be prescribed for Professional Accounting students seeking full HKICPA QP exemption. The mixed core/elective roles require manual audit review.",
+          "appliesToTrackIds": ["CITYU-TPG-010-PA", "CITYU-TPG-010-CG"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSPACG.htm",
+          "courses": [
+            { "code": "AC5511", "name": "Financial and Management Accounting", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-010-PA"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/AC5511.htm" },
+            { "code": "AC5512", "name": "Financial Reporting", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-010-PA"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/AC5512.htm" },
+            { "code": "AC5521", "name": "Cost and Management Accounting", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-010-PA", "CITYU-TPG-010-CG"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/AC5521.htm" },
+            { "code": "AC6513", "name": "Corporate Accounting", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-010-PA"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/AC6513.htm" },
+            { "code": "AC6531", "name": "Financial Management", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-010-PA"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/AC6531.htm" },
+            { "code": "AC6541", "name": "Auditing", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-010-PA", "CITYU-TPG-010-CG"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/AC6541.htm" },
+            { "code": "AC5603", "name": "Corporate Financial Reporting", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-010-CG"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/AC5603.htm" },
+            { "code": "AC6533", "name": "Corporate Finance and Policies", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-010-CG"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/AC6533.htm" },
+            { "code": "AC6691", "name": "Companies and Securities Regulations and Practice", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-010-PA", "CITYU-TPG-010-CG"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/AC6691.htm" },
+            { "code": "AC6692", "name": "Risk Management", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-010-PA", "CITYU-TPG-010-CG"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/AC6692.htm" },
+            { "code": "AC6693", "name": "Credentials and Essential Soft Skills for Effective Board Management", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-010-PA", "CITYU-TPG-010-CG"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/AC6693.htm" },
+            { "code": "MGT6514", "name": "Strategic Management and Business Policy", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-010-PA", "CITYU-TPG-010-CG"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/MGT6514.htm" },
+            { "code": "AC5890", "name": "Business Management for Accountants", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-010-PA", "CITYU-TPG-010-CG"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/AC5890.htm" },
+            { "code": "AC5891", "name": "Business Economics and Statistics for Accountants", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-010-PA", "CITYU-TPG-010-CG"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/AC5891.htm" },
+            { "code": "AC6780", "name": "Professional Internship", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-010-PA", "CITYU-TPG-010-CG"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/AC6780.htm" }
+          ]
+        }
+      ]
+    }
+  ]
+}

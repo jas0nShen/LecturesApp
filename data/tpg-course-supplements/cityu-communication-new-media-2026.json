@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-039",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm",
+      "ruleReviewStatus": "verified",
+      "tracks": [
+        { "id": "CITYU-TPG-039-MEDIA-DATA-ANALYTICS", "name": "Media Data Analytics", "type": "Stream", "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" },
+        { "id": "CITYU-TPG-039-DIGITAL-MEDIA", "name": "Digital Media", "type": "Stream", "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" }
+      ],
+      "courseGroups": [
+        {
+          "id": "programme-core",
+          "name": "Programme Core Courses for All Streams",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Programme Core Courses (12 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm",
+          "courses": [
+            { "code": "COM5101", "name": "Communication Fundamentals", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" },
+            { "code": "COM5104", "name": "Research Methods for Communication and New Media", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" },
+            { "code": "COM5501", "name": "Internet Communication", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" },
+            { "code": "COM6601", "name": "Capstone Project", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" }
+          ]
+        },
+        {
+          "id": "media-data-analytics-compulsory",
+          "name": "Media Data Analytics Stream Compulsory Courses",
+          "type": "track_core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Media Data Analytics Stream students complete all three Stream Compulsory Courses (9 credit units).",
+          "appliesToTrackIds": ["CITYU-TPG-039-MEDIA-DATA-ANALYTICS"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm",
+          "courses": [
+            { "code": "COM5506", "name": "Social Network Analysis for Communication", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-039-MEDIA-DATA-ANALYTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" },
+            { "code": "COM5507", "name": "Social Media Data Acquisition and Processing", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-039-MEDIA-DATA-ANALYTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" },
+            { "code": "COM5508", "name": "Media Data Analytics", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-039-MEDIA-DATA-ANALYTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" }
+          ]
+        },
+        {
+          "id": "digital-media-compulsory",
+          "name": "Digital Media Stream Compulsory Courses",
+          "type": "track_core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Digital Media Stream students complete all three Stream Compulsory Courses (9 credit units).",
+          "appliesToTrackIds": ["CITYU-TPG-039-DIGITAL-MEDIA"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm",
+          "courses": [
+            { "code": "COM5102", "name": "Global Media in the Digital Era", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-039-DIGITAL-MEDIA"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" },
+            { "code": "COM5103", "name": "Policy and Regulations of New Media", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-039-DIGITAL-MEDIA"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" },
+            { "code": "COM5108", "name": "Psychological Processing of New Media", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-039-DIGITAL-MEDIA"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" }
+          ]
+        },
+        {
+          "id": "shared-stream-electives",
+          "name": "Shared Stream Elective Courses",
+          "type": "track_elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Students in either Stream choose three courses (9 credit units) from this shared official Stream Elective pool. Stream availability and individual course offerings remain subject to departmental availability.",
+          "appliesToTrackIds": ["CITYU-TPG-039-MEDIA-DATA-ANALYTICS", "CITYU-TPG-039-DIGITAL-MEDIA"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm",
+          "courses": [
+            { "code": "COM5105", "name": "Media Economics and Financial Markets", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-039-MEDIA-DATA-ANALYTICS", "CITYU-TPG-039-DIGITAL-MEDIA"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" },
+            { "code": "COM5106", "name": "Integrated Marketing Communication", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-039-MEDIA-DATA-ANALYTICS", "CITYU-TPG-039-DIGITAL-MEDIA"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" },
+            { "code": "COM5107", "name": "Professional Communication Skills", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-039-MEDIA-DATA-ANALYTICS", "CITYU-TPG-039-DIGITAL-MEDIA"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" },
+            { "code": "COM5110", "name": "Public Communication Campaign Management", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-039-MEDIA-DATA-ANALYTICS", "CITYU-TPG-039-DIGITAL-MEDIA"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" },
+            { "code": "COM5111", "name": "Generative AI for Digital Marketing", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-039-MEDIA-DATA-ANALYTICS", "CITYU-TPG-039-DIGITAL-MEDIA"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" },
+            { "code": "COM5112", "name": "Communication Research Seminar", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-039-MEDIA-DATA-ANALYTICS", "CITYU-TPG-039-DIGITAL-MEDIA"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" },
+            { "code": "COM5401", "name": "Advertising Production and Management", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-039-MEDIA-DATA-ANALYTICS", "CITYU-TPG-039-DIGITAL-MEDIA"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" },
+            { "code": "COM5402", "name": "Public Relations Strategies", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-039-MEDIA-DATA-ANALYTICS", "CITYU-TPG-039-DIGITAL-MEDIA"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" },
+            { "code": "COM5403", "name": "Crisis Communication and Management", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-039-MEDIA-DATA-ANALYTICS", "CITYU-TPG-039-DIGITAL-MEDIA"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" },
+            { "code": "COM5502", "name": "Multimedia Communication", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-039-MEDIA-DATA-ANALYTICS", "CITYU-TPG-039-DIGITAL-MEDIA"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" },
+            { "code": "COM5503", "name": "Dynamic Web Communication", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-039-MEDIA-DATA-ANALYTICS", "CITYU-TPG-039-DIGITAL-MEDIA"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" },
+            { "code": "COM5504", "name": "Advanced Multimedia Communication", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-039-MEDIA-DATA-ANALYTICS", "CITYU-TPG-039-DIGITAL-MEDIA"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" },
+            { "code": "COM5505", "name": "Digital Media for E-Marketing", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-039-MEDIA-DATA-ANALYTICS", "CITYU-TPG-039-DIGITAL-MEDIA"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" },
+            { "code": "COM5509", "name": "Digital Visual Media", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-039-MEDIA-DATA-ANALYTICS", "CITYU-TPG-039-DIGITAL-MEDIA"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" },
+            { "code": "COM5510", "name": "Introduction to Artificial Intelligence", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-039-MEDIA-DATA-ANALYTICS", "CITYU-TPG-039-DIGITAL-MEDIA"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" },
+            { "code": "COM5511", "name": "Social Media Influencer", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-039-MEDIA-DATA-ANALYTICS", "CITYU-TPG-039-DIGITAL-MEDIA"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" },
+            { "code": "COM5512", "name": "Human-AI Communication Workshop", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-039-MEDIA-DATA-ANALYTICS", "CITYU-TPG-039-DIGITAL-MEDIA"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" },
+            { "code": "COM5513", "name": "AI Communication Ethics and Governance", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-039-MEDIA-DATA-ANALYTICS", "CITYU-TPG-039-DIGITAL-MEDIA"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" },
+            { "code": "COM5514", "name": "Mobile Communication and Apps Design", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-039-MEDIA-DATA-ANALYTICS", "CITYU-TPG-039-DIGITAL-MEDIA"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" },
+            { "code": "COM5602", "name": "Directed Studies", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-039-MEDIA-DATA-ANALYTICS", "CITYU-TPG-039-DIGITAL-MEDIA"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" },
+            { "code": "COM5603", "name": "Dissertation", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-039-MEDIA-DATA-ANALYTICS", "CITYU-TPG-039-DIGITAL-MEDIA"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" },
+            { "code": "COM5604", "name": "Professional Internship", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-039-MEDIA-DATA-ANALYTICS", "CITYU-TPG-039-DIGITAL-MEDIA"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" },
+            { "code": "COM5605", "name": "Multimedia Practicum", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-039-MEDIA-DATA-ANALYTICS", "CITYU-TPG-039-DIGITAL-MEDIA"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm" }
+          ]
+        }
+      ]
+    }
+  ]
+}

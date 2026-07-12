@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-049",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [
+        { "id": "CITYU-TPG-049-SOCIOLOGY", "name": "Sociology", "type": "Stream", "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77" },
+        { "id": "CITYU-TPG-049-CRIMINOLOGY", "name": "Criminology", "type": "Stream", "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77" },
+        { "id": "CITYU-TPG-049-CLINICAL-MENTAL-HEALTH", "name": "Clinical Mental Health Practice", "type": "Stream", "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77" }
+      ],
+      "courseGroups": [
+        {
+          "id": "social-science-programme-core",
+          "name": "Sociology and Criminology Programme Core",
+          "type": "track_core",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Sociology and Criminology students complete both common Programme Core Courses (6 credit units).",
+          "appliesToTrackIds": ["CITYU-TPG-049-SOCIOLOGY", "CITYU-TPG-049-CRIMINOLOGY"],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77",
+          "courses": [
+            { "code": "SS5302", "name": "Research Methods in Social Sciences", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-049-SOCIOLOGY", "CITYU-TPG-049-CRIMINOLOGY"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77" },
+            { "code": "SS5426", "name": "Social Problems", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-049-SOCIOLOGY", "CITYU-TPG-049-CRIMINOLOGY"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77" }
+          ]
+        },
+        {
+          "id": "mental-health-programme-core",
+          "name": "Clinical Mental Health Practice Programme Core",
+          "type": "track_core",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Clinical Mental Health Practice students complete both Stream-specific Programme Core Courses (6 credit units).",
+          "appliesToTrackIds": ["CITYU-TPG-049-CLINICAL-MENTAL-HEALTH"],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77",
+          "courses": [
+            { "code": "SS5803", "name": "Psychopathology", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-049-CLINICAL-MENTAL-HEALTH"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77" },
+            { "code": "SS5837", "name": "Community Mental Health: Theory and Practice", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-049-CLINICAL-MENTAL-HEALTH"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77" }
+          ]
+        },
+        {
+          "id": "sociology-criminology-cross-role",
+          "name": "Sociology and Criminology Cross-role Courses",
+          "type": "track_core_elective_cross_role",
+          "ruleText": "Official role mapping: Sociology Core includes SS5423 and SS5428; Sociology Electives include SS5204, SS5303, SS5304, SS5305, SS5316 and SS5427. Criminology Core includes SS5204, SS5303, SS5304 and SS5305; Criminology Electives include SS5316, SS5423, SS5427 and SS5428. These courses are stored once to preserve Programme-level code uniqueness; role completion requires manual review.",
+          "appliesToTrackIds": ["CITYU-TPG-049-SOCIOLOGY", "CITYU-TPG-049-CRIMINOLOGY"],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77",
+          "courses": [
+            { "code": "SS5204", "name": "Penology & Rehabilitation of Offenders", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-049-SOCIOLOGY", "CITYU-TPG-049-CRIMINOLOGY"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77" },
+            { "code": "SS5303", "name": "Criminal Justice in Hong Kong and the Pacific", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-049-SOCIOLOGY", "CITYU-TPG-049-CRIMINOLOGY"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77" },
+            { "code": "SS5304", "name": "Psychology and Crime", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-049-SOCIOLOGY", "CITYU-TPG-049-CRIMINOLOGY"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77" },
+            { "code": "SS5305", "name": "Policing Studies", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-049-SOCIOLOGY", "CITYU-TPG-049-CRIMINOLOGY"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77" },
+            { "code": "SS5316", "name": "Aggressive Behavior and Homicide", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-049-SOCIOLOGY", "CITYU-TPG-049-CRIMINOLOGY"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77" },
+            { "code": "SS5423", "name": "Programme Design & Evaluation", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-049-SOCIOLOGY", "CITYU-TPG-049-CRIMINOLOGY"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77" },
+            { "code": "SS5427", "name": "Special Topics in Applied Sociology", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-049-SOCIOLOGY", "CITYU-TPG-049-CRIMINOLOGY"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77" },
+            { "code": "SS5428", "name": "Applied Social Statistical Analysis", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-049-SOCIOLOGY", "CITYU-TPG-049-CRIMINOLOGY"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77" }
+          ]
+        },
+        {
+          "id": "sociology-exclusive-core",
+          "name": "Sociology Exclusive Core Courses",
+          "type": "track_core",
+          "creditsRequired": 12,
+          "coursesRequired": 3,
+          "ruleText": "Complete these 12 credits together with SS5423 and SS5428 from the cross-role group to meet the 18-credit Sociology Stream Core requirement.",
+          "appliesToTrackIds": ["CITYU-TPG-049-SOCIOLOGY"],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77",
+          "courses": [
+            { "code": "SS5400", "name": "Applied Sociology", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-049-SOCIOLOGY"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77" },
+            { "code": "SS5401", "name": "Social Science Perspectives", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-049-SOCIOLOGY"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77" },
+            { "code": "SS6591", "name": "Integrative Project", "credits": 6, "appliesToTrackIds": ["CITYU-TPG-049-SOCIOLOGY"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77" }
+          ]
+        },
+        {
+          "id": "criminology-exclusive-core",
+          "name": "Criminology Exclusive Core Courses",
+          "type": "track_core_thesis",
+          "creditsRequired": 9,
+          "coursesRequired": 2,
+          "ruleText": "Complete these 9 credits together with SS5204, SS5303, SS5304 and SS5305 from the cross-role group to meet the 21-credit Criminology Stream Core requirement.",
+          "appliesToTrackIds": ["CITYU-TPG-049-CRIMINOLOGY"],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77",
+          "courses": [
+            { "code": "SS5301", "name": "Advanced Theories in Criminology", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-049-CRIMINOLOGY"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77" },
+            { "code": "SS6308", "name": "Master's Thesis in Criminology", "credits": 6, "appliesToTrackIds": ["CITYU-TPG-049-CRIMINOLOGY"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77" }
+          ]
+        },
+        {
+          "id": "criminology-additional-elective",
+          "name": "Additional Criminology Elective",
+          "type": "track_elective_pool",
+          "ruleText": "SS5424 is an additional Criminology elective candidate; the other candidates are stored in the cross-role group. Choose one 3-credit elective in total.",
+          "appliesToTrackIds": ["CITYU-TPG-049-CRIMINOLOGY"],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77",
+          "courses": [
+            { "code": "SS5424", "name": "Crime, Law and Security", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-049-CRIMINOLOGY"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77" }
+          ]
+        },
+        {
+          "id": "mental-health-core",
+          "name": "Clinical Mental Health Practice Stream Core",
+          "type": "track_core_project",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Complete all six Clinical Mental Health Practice Stream Core Courses (18 credit units).",
+          "appliesToTrackIds": ["CITYU-TPG-049-CLINICAL-MENTAL-HEALTH"],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77",
+          "courses": [
+            { "code": "SS5110", "name": "Assessment and Interventions in Mental Health Counselling", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-049-CLINICAL-MENTAL-HEALTH"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77" },
+            { "code": "SS5836", "name": "Evidence-based Assessment and Management of Mental Disorders", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-049-CLINICAL-MENTAL-HEALTH"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAASS.htm" },
+            { "code": "SS5838", "name": "Mental Health Crisis Intervention and Resolution", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-049-CLINICAL-MENTAL-HEALTH"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77" },
+            { "code": "SS5839", "name": "Neurodiversity, Students with Special Educational and Emotional Needs", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-049-CLINICAL-MENTAL-HEALTH"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77" },
+            { "code": "SS5840", "name": "Dementia Care and Mental Health Counselling for Older People", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-049-CLINICAL-MENTAL-HEALTH"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77" },
+            { "code": "SS6404", "name": "Master's Integrative Project in Clinical Mental Health Practice", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-049-CLINICAL-MENTAL-HEALTH"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77" }
+          ]
+        },
+        {
+          "id": "mental-health-electives",
+          "name": "Clinical Mental Health Practice Stream Electives",
+          "type": "track_elective",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Choose two Clinical Mental Health Practice electives (6 credit units).",
+          "appliesToTrackIds": ["CITYU-TPG-049-CLINICAL-MENTAL-HEALTH"],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77",
+          "courses": [
+            { "code": "SS5208", "name": "Cognitive-behavioural Interventions", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-049-CLINICAL-MENTAL-HEALTH"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77" },
+            { "code": "SS5216", "name": "Contemporary Intervention Approaches", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-049-CLINICAL-MENTAL-HEALTH"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77" },
+            { "code": "SS5801", "name": "Counselling in Society and Across Culture", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-049-CLINICAL-MENTAL-HEALTH"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77" },
+            { "code": "SS5825", "name": "Marital Preparation, Enrichment and Therapy", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-049-CLINICAL-MENTAL-HEALTH"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77" }
+          ]
+        },
+        {
+          "id": "cross-role-elective-requirements",
+          "name": "Sociology and Criminology Elective Requirements",
+          "type": "elective_rule",
+          "ruleText": "Sociology students choose 6 elective credit units; Criminology students choose 3 elective credit units. Candidate courses are stored in the cross-role group and, for Criminology, the additional elective group above.",
+          "appliesToTrackIds": ["CITYU-TPG-049-SOCIOLOGY", "CITYU-TPG-049-CRIMINOLOGY"],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77",
+          "courses": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-006",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-business/department-of-accountancy/p02",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 24,
+          "coursesRequired": 8,
+          "ruleText": "Complete all eight Core Courses (24 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-business/department-of-accountancy/p02",
+          "courses": [
+            { "code": "AC6560", "name": "Accounting Information Systems", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/AC6560.htm" },
+            { "code": "AC5710", "name": "Advanced International Financial Accounting", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/AC5710.htm" },
+            { "code": "AC6551", "name": "Advanced Taxation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSPACG.htm" },
+            { "code": "AC5690", "name": "Corporate Governance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/AC5690.htm" },
+            { "code": "AC6531", "name": "Financial Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/AC6531.htm" },
+            { "code": "EF5143", "name": "International Financial Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/EF5143.htm" },
+            { "code": "AC5711", "name": "International Financial Statement Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/AC5711.htm" },
+            { "code": "AC5720", "name": "Management Accounting Issues in Multinational Enterprises", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/AC5720.htm" }
+          ]
+        },
+        {
+          "id": "electives",
+          "name": "Optional Electives",
+          "type": "elective",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Complete two elective courses (6 credit units). The official 2026 admissions page explicitly lists these seven programme electives and also permits Master's courses offered by serving departments within the College of Business, subject to availability. The broader College pool is not enumerated here and must be checked manually.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-business/department-of-accountancy/p02",
+          "courses": [
+            { "code": "AC6541", "name": "Auditing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSPACG.htm" },
+            { "code": "AC5891", "name": "Business Economics and Statistics for Accountants", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSPACG.htm" },
+            { "code": "AC5890", "name": "Business Management for Accountants", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSPACG.htm" },
+            { "code": "AC6693", "name": "Credentials and Essential Soft Skills for Effective Board Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSPACG.htm" },
+            { "code": "AC6691", "name": "Companies and Securities Regulations and Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSPACG.htm" },
+            { "code": "LW5962", "name": "Law Relating to Business and Companies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSPACG.htm" },
+            { "code": "AC6692", "name": "Risk Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSPACG.htm" }
+          ]
+        }
+      ]
+    }
+  ]
+}

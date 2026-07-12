@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-001",
+      "status": "verified",
+      "creditsRequired": 36,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core",
+          "name": "Core Courses",
+          "type": "core_project",
+          "creditsRequired": 21,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Core Courses (21 credit units), including the 9-credit GRIT Integrated Study and 6-credit Innovation Project.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm",
+          "courses": [
+            { "code": "CAI6001", "name": "GRIT (Graduate Research and Innovation Trek) Integrated Study", "credits": 9, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm" },
+            { "code": "CAI6002", "name": "Venture Creation Seminar", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm" },
+            { "code": "CAI6003", "name": "Innovation Project", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm" },
+            { "code": "AC5813", "name": "Financial and Management Accounting", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm" }
+          ]
+        },
+        {
+          "id": "core-electives",
+          "name": "Core Elective Course Pool",
+          "type": "core_elective",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Choose two of the three Core Elective Courses (6 credit units); the full pool is not mandatory.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm",
+          "courses": [
+            { "code": "MGT6325", "name": "Entrepreneurship & Intrapreneurship", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm" },
+            { "code": "IS5940", "name": "Innovation and Technology Entrepreneurship", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm" },
+            { "code": "MKT5610", "name": "Marketing Strategy and Planning", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm" }
+          ]
+        },
+        {
+          "id": "electives",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsMin": 9,
+          "ruleText": "Complete at least 9 elective credit units. Up to two approved 3-credit free electives may be used; published offerings remain subject to approval and availability.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm",
+          "courses": [
+            { "code": "MGT5507", "name": "Decision-Making in Management and Innovation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm" },
+            { "code": "MGT6066", "name": "Business Ethics & Social Responsibility", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm" },
+            { "code": "MGT5205", "name": "Strategic Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm" },
+            { "code": "MGT6202", "name": "Entrepreneurial Leadership", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm" },
+            { "code": "MGT6324", "name": "Doing Business in Asia", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm" },
+            { "code": "MGT6310", "name": "People Analytics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm" },
+            { "code": "MGT6314", "name": "Global Human Resources Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm" },
+            { "code": "AC5690", "name": "Corporate Governance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm" },
+            { "code": "AC6533", "name": "Corporate Finance and Policies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm" },
+            { "code": "MKT5648", "name": "Social Media Marketing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm" },
+            { "code": "MKT5645", "name": "Customer Relationship Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm" },
+            { "code": "MKT5646", "name": "Advertising and Integrated Marketing Communications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm" },
+            { "code": "MKT5641", "name": "Chinese Business Culture and Marketing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm" },
+            { "code": "MKT5643", "name": "Global Marketing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm" },
+            { "code": "IS5010", "name": "Introduction to Financial Technologies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm" },
+            { "code": "IS6200", "name": "Blockchain Technology and Business Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm" },
+            { "code": "IS6620", "name": "Large Language Model with Prompt Engineering for Business", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm" },
+            { "code": "SEE5114", "name": "Energy, Environment and Sustainable Development", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm" },
+            { "code": "SEE6115", "name": "Carbon Audit and Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm" },
+            { "code": "SEE6225", "name": "Environmental Assessment", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm" },
+            { "code": "SEE6116", "name": "Building Performance Assessment", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm" },
+            { "code": "SEE6125", "name": "Carbon Capture Use and Storage", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm" },
+            { "code": "PIA5057", "name": "Collaborative Governance for Sustainability", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm" }
+          ]
+        }
+      ]
+    }
+  ]
+}

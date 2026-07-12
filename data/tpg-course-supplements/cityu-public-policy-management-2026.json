@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-040",
+      "status": "verified",
+      "creditsRequired": 36,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p27",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [
+        { "id": "CITYU-TPG-040-PP", "name": "Public Policy", "type": "Stream", "creditsRequired": 36, "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p27" },
+        { "id": "CITYU-TPG-040-PM", "name": "Public Management", "type": "Stream", "creditsRequired": 36, "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p27" },
+        { "id": "CITYU-TPG-040-SC", "name": "Smart Cities", "type": "Stream", "creditsRequired": 36, "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p27" },
+        { "id": "CITYU-TPG-040-GC", "name": "Governance in China", "type": "Stream", "creditsRequired": 36, "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p27" }
+      ],
+      "courseGroups": [
+        {
+          "id": "programme-core",
+          "name": "Programme Core Courses",
+          "type": "core",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Complete all six Programme Core Courses (18 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p27",
+          "courses": [
+            { "code": "PIA5101", "name": "Theories of Government and Public Administration", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5101.htm" },
+            { "code": "PIA5301", "name": "Managing Public Institutions and Organizations", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5301.htm" },
+            { "code": "PIA5401", "name": "Values and Choice in Public Policy", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5401.htm" },
+            { "code": "PIA5601", "name": "Policy Processes and Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5601.htm" },
+            { "code": "PIA6204", "name": "Statistical Analysis for Public Policy and Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA6204.htm" },
+            { "code": "PIA6603", "name": "Research Methods in Public Policy and Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA6603.htm" }
+          ]
+        },
+        {
+          "id": "public-policy-stream-core",
+          "name": "Public Policy Stream Core Courses",
+          "type": "track_core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Public Policy Stream students complete all four designated courses (12 credit units).",
+          "appliesToTrackIds": ["CITYU-TPG-040-PP"],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p27",
+          "courses": [
+            { "code": "PIA6201", "name": "Comparative Public Policy", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-040-PP"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA6201.htm" },
+            { "code": "PIA6202", "name": "Evidence-based Policy and Practice", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-040-PP"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA6202.htm" },
+            { "code": "PIA6203", "name": "Behavioral Insights in Public Policy", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-040-PP"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA6203.htm" },
+            { "code": "PIA6205", "name": "Practice in Public Policy", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-040-PP"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA6205.htm" }
+          ]
+        },
+        {
+          "id": "public-management-stream-pool",
+          "name": "Public Management Stream Course Pool",
+          "type": "track_core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete four Stream courses (12 credit units). The Department decides which four courses from this official pool will be offered at the beginning of each academic year, so the applicable four require manual confirmation.",
+          "appliesToTrackIds": ["CITYU-TPG-040-PM"],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p27",
+          "courses": [
+            { "code": "PIA6302", "name": "Public Budgeting and the Management of Financial Resources", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-040-PM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA6302.htm" },
+            { "code": "PIA6303", "name": "Comparative Public Sector Management", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-040-PM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA6303.htm" },
+            { "code": "PIA6306", "name": "Public Strategic Planning and Management", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-040-PM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA6306.htm" },
+            { "code": "PIA6304", "name": "Public Human Resource Management", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-040-PM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA6304.htm" },
+            { "code": "PIA6305", "name": "Practice in Public Management", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-040-PM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA6305.htm" }
+          ]
+        },
+        {
+          "id": "smart-cities-stream-pool",
+          "name": "Smart Cities Stream Course Pool",
+          "type": "track_core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete four Stream courses (12 credit units). The Department decides which four courses from this official pool will be offered at the beginning of each academic year, so the applicable four require manual confirmation.",
+          "appliesToTrackIds": ["CITYU-TPG-040-SC"],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p27",
+          "courses": [
+            { "code": "PIA5504", "name": "The Asian Metropolis: Issues in Urban Management", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-040-SC"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5504.htm" },
+            { "code": "PIA5509", "name": "The Urban Management Workshop: Exploring the Contemporary City", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-040-SC"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5509.htm" },
+            { "code": "PIA5510", "name": "Understanding and Managing Smart Cities", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-040-SC"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5510.htm" },
+            { "code": "PIA5605", "name": "Data Analytics for Public Policy and Management", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-040-SC"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5605.htm" },
+            { "code": "PIA6501", "name": "Urban Development and Sustainable Cities", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-040-SC"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA6501.htm" },
+            { "code": "PIA6504", "name": "Practice in Smart Cities Management", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-040-SC"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA6504.htm" },
+            { "code": "SEE6201", "name": "Environmental and Energy Policy", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-040-SC"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/SEE6201.htm" }
+          ]
+        },
+        {
+          "id": "governance-china-stream-core",
+          "name": "Governance in China Stream Core Courses",
+          "type": "track_core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Governance in China Stream students complete all four designated courses (12 credit units).",
+          "appliesToTrackIds": ["CITYU-TPG-040-GC"],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p27",
+          "courses": [
+            { "code": "PIA5708", "name": "Key Issues in Chinese Politics", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-040-GC"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5708.htm" },
+            { "code": "PIA5710", "name": "State and Market in China", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-040-GC"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5710.htm" },
+            { "code": "PIA5711", "name": "Environmental Governance in China", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-040-GC"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5711.htm" },
+            { "code": "PIA5716", "name": "Governance in the Greater China Region", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-040-GC"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5716.htm" }
+          ]
+        },
+        {
+          "id": "experiential-learning",
+          "name": "Experiential Learning Elective",
+          "type": "elective",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Complete one 3-credit Experiential Learning option.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p27",
+          "courses": [
+            { "code": "PIA5000", "name": "PIA Postgraduate Internship", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5000.htm" },
+            { "code": "PIA5802", "name": "MAPPM Action Report", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5802.htm" },
+            { "code": "PIA5803", "name": "MAPPM Overseas Study", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5803.htm" }
+          ]
+        },
+        {
+          "id": "research-elective",
+          "name": "Research Elective",
+          "type": "project",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Complete either PIA6604 MAPPM Capstone Project or PIA6903 MAPPM Dissertation (3 credit units). Dissertation admission is restricted to qualifying students and the two courses are mutually exclusive.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p27",
+          "courses": [
+            { "code": "PIA6604", "name": "MAPPM Capstone Project", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA6604.htm" },
+            { "code": "PIA6903", "name": "MAPPM Dissertation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA6903.htm" }
+          ]
+        },
+        {
+          "id": "exceptional-substitute",
+          "name": "Exceptional Substitute Course",
+          "type": "elective",
+          "creditsRequired": null,
+          "coursesRequired": null,
+          "ruleText": "PIA5603 may be offered only in special circumstances as a substitute for a Programme Core or Stream Core course. It is not an additional standard graduation requirement.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202324/programme/MAPPM.htm",
+          "courses": [
+            { "code": "PIA5603", "name": "Independent Project for Public Policy and Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5603.htm" }
+          ]
+        }
+      ]
+    }
+  ]
+}

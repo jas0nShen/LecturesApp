@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-035",
+      "status": "verified",
+      "creditsRequired": 55,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-engineering/department-of-architecture-and-civil-engineering/p82",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "themed-studios",
+          "name": "Themed Studios",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 2,
+          "ruleText": "Complete at least two 6-credit Themed Studios (12 credit units). Only one Themed Studio may be taken in a semester, and it cannot be taken in the same semester as CA6164 or CA6304.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202425/programme/MARCH2.htm",
+          "courses": [
+            { "code": "CA5150", "name": "Advanced Architectural Design Studio: Urban Design", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA5150.htm" },
+            { "code": "CA5152", "name": "Advanced Architectural Design Studio: Evidence-based Design", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA5152.htm" },
+            { "code": "CA5160", "name": "Advanced Architectural Design Studio: ESG of Sustainable Development", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA5160.htm" },
+            { "code": "CA5201", "name": "Advanced Architectural Design Studio: Digital Architecture", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA5201.htm" }
+          ]
+        },
+        {
+          "id": "other-core-courses",
+          "name": "Other Core Courses",
+          "type": "core",
+          "creditsRequired": 34,
+          "coursesRequired": 9,
+          "ruleText": "Complete all nine Other Core Courses (34 credit units), including both Architecture Thesis Studio parts.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202425/programme/MARCH2.htm",
+          "courses": [
+            { "code": "CA5148", "name": "Architecture and Urbanism", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA5148.htm" },
+            { "code": "CA5159", "name": "Design Representation and Building Information Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA5159.htm" },
+            { "code": "CA5203", "name": "Research Methods and Thesis Development Seminar in Architecture", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA5203.htm" },
+            { "code": "CA5301", "name": "Professional Practice – Building Controls, Contract Administration and Ethics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA5301.htm" },
+            { "code": "CA6164", "name": "Architecture Thesis Studio - Part 1", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA6164.htm" },
+            { "code": "CA6200", "name": "Thesis Writing Skills", "credits": 1, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA6200.htm" },
+            { "code": "CA6302", "name": "Theory and Criticism of Architecture", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA6302.htm" },
+            { "code": "CA6304", "name": "Architecture Thesis Studio – Part 2", "credits": 9, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA6304.htm" },
+            { "code": "CA6609", "name": "Green Building, Architecture and People", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA6609.htm" }
+          ]
+        },
+        {
+          "id": "electives",
+          "name": "Electives",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete at least three elective courses (9 credit units). Other courses offered by the Department of Architecture and Civil Engineering or other units may be taken with prior approval from both the Programme Leader and Course Leader; that wider approved pool requires manual review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202425/programme/MARCH2.htm",
+          "courses": [
+            { "code": "CA5147", "name": "Housing and Community Development", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA5147.htm" },
+            { "code": "CA5541", "name": "Internship", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA5541.htm" },
+            { "code": "CA5696", "name": "Advanced Topics in Structural and Material Design", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA5696.htm" },
+            { "code": "CA6167", "name": "Advanced Topics in Architectural History and Theory", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA6167.htm" },
+            { "code": "CA6242", "name": "Advanced Topics in Sustainable Urban Development", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA6242.htm" },
+            { "code": "CA6319", "name": "Advanced Topics in Architectural Practice and Law", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA6319.htm" },
+            { "code": "CA6701", "name": "Advanced Topics in Computational Design", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/CA6701.htm" }
+          ]
+        }
+      ]
+    }
+  ]
+}

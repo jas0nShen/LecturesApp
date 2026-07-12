@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-059",
+      "status": "verified",
+      "creditsRequired": 72,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-law/school-of-law/p43",
+      "ruleReviewStatus": "manual_review_required",
+      "trackSelectionOptional": true,
+      "tracks": [
+        { "id": "CITYU-TPG-059-INTERNATIONAL-COMMERCIAL-LAW", "name": "International Commercial Law", "type": "Specialization", "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/JD4.htm" },
+        { "id": "CITYU-TPG-059-ALTERNATIVE-DISPUTE-RESOLUTION", "name": "Alternative Dispute Resolution", "type": "Specialization", "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/JD4.htm" },
+        { "id": "CITYU-TPG-059-CHINESE-COMPARATIVE-LAW", "name": "Chinese and Comparative Law", "type": "Specialization", "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/JD4.htm" }
+      ],
+      "courseGroups": [
+        {
+          "id": "programme-core",
+          "name": "Programme Core Courses",
+          "type": "core",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Complete both Programme Core Courses (6 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/JD4.htm",
+          "courses": [
+            { "code": "LW5601", "name": "Hong Kong Legal System", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5601.htm" },
+            { "code": "LW5622", "name": "Legal Methods, Research and Writing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5622.htm" }
+          ]
+        },
+        {
+          "id": "pcll-admission-path",
+          "name": "PCLL Admission Course Path",
+          "type": "professional_path",
+          "ruleText": "These 16 courses are electives within the JD. They are required only for JD graduates who intend to apply for admission to the Postgraduate Certificate in Laws; they must not be treated as Programme Core for every JD student.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/JD4.htm",
+          "courses": [
+            { "code": "LW5602A", "name": "Law of Contract I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5602A.htm" },
+            { "code": "LW5602B", "name": "Law of Contract II", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5602B.htm" },
+            { "code": "LW5603A", "name": "Law of Tort I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5603A.htm" },
+            { "code": "LW5603B", "name": "Law of Tort II", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5603B.htm" },
+            { "code": "LW5606A", "name": "Criminal Law I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5606A.htm" },
+            { "code": "LW5606B", "name": "Criminal Law II", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5606B.htm" },
+            { "code": "LW5607A", "name": "Land Law I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5607A.htm" },
+            { "code": "LW5607B", "name": "Land Law II", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5607B.htm" },
+            { "code": "LW5608", "name": "Constitutional Law", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5608.htm" },
+            { "code": "LW5610", "name": "Administrative Law", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5610.htm" },
+            { "code": "LW5616", "name": "Law of Evidence", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5616.htm" },
+            { "code": "LW5630A", "name": "Equity & Trusts I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5630A.htm" },
+            { "code": "LW5630B", "name": "Equity & Trusts II", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5630B.htm" },
+            { "code": "LW5656", "name": "Company Law I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5656.htm" },
+            { "code": "LW5657", "name": "Company Law II", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5657.htm" },
+            { "code": "LW5658", "name": "Commercial Law", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5658.htm" }
+          ]
+        },
+        {
+          "id": "research-electives",
+          "name": "Research Elective Options",
+          "type": "elective_research",
+          "ruleText": "Students may take either Independent Research (3 credit units) or Dissertation (6 credit units) as an elective. The official catalogue permits flexible enrolment and does not make either option compulsory for every student.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/JD4.htm",
+          "courses": [
+            { "code": "LW5552", "name": "Independent Research", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5552.htm" },
+            { "code": "LW6137E", "name": "Dissertation", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6137E.htm" }
+          ]
+        },
+        {
+          "id": "jd-designated-electives",
+          "name": "JD Designated Electives",
+          "type": "elective",
+          "ruleText": "The Programme requires 66 elective credit units in total. This pool contains the JD-designated electives listed in the 2025/26 catalogue after separating the PCLL path, research options and approved MBA electives. Offerings and prerequisites remain subject to the official course syllabi.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/JD4.htm",
+          "courses": [
+            { "code": "LW5568", "name": "Selected Problems in International Investment Law", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5568.htm" },
+            { "code": "LW5600", "name": "Law School Survival Skills Workshop", "credits": 1.5, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5600.htm" },
+            { "code": "LW5611", "name": "Private Law of the PRC", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5611.htm" },
+            { "code": "LW5612", "name": "Legal Placement", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5612.htm" },
+            { "code": "LW5613", "name": "Public Law of the PRC", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5613.htm" },
+            { "code": "LW5614", "name": "Dispute Resolution", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-ALTERNATIVE-DISPUTE-RESOLUTION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5614.htm" },
+            { "code": "LW5615", "name": "Principles of Insurance Law (Marine and General)", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5615.htm" },
+            { "code": "LW5617", "name": "Family Law in Hong Kong", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5617.htm" },
+            { "code": "LW5618", "name": "Law and Gender", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5618.htm" },
+            { "code": "LW5620", "name": "International Trade Regulation", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-INTERNATIONAL-COMMERCIAL-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5620.htm" },
+            { "code": "LW5663", "name": "Intensive Seminar", "creditsMin": 1, "creditsMax": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5663.htm" },
+            { "code": "LW5664", "name": "European Competition Law and Policy", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-INTERNATIONAL-COMMERCIAL-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5664.htm" },
+            { "code": "LW5665", "name": "Aviation Law", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5665.htm" },
+            { "code": "LW5666", "name": "Mediation", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-ALTERNATIVE-DISPUTE-RESOLUTION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5666.htm" },
+            { "code": "LW5667", "name": "City University Law Review", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5667.htm" },
+            { "code": "LW5669", "name": "Employment Law in Hong Kong", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5669.htm" },
+            { "code": "LW5670", "name": "International Human Rights Law", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5670.htm" },
+            { "code": "LW5671", "name": "Consumer Law", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5671.htm" },
+            { "code": "LW5672", "name": "Introduction to Information Law", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5672.htm" },
+            { "code": "LW5673", "name": "Animal Law and Welfare", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5673.htm" },
+            { "code": "LW5674", "name": "Global Legal Education and Awareness Project", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5674.htm" },
+            { "code": "LW5678", "name": "Introduction to Law and Economics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5678.htm" },
+            { "code": "LW5680", "name": "Principles of Maritime Law and Governance for Sustainable Shipping", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5680.htm" },
+            { "code": "LW5681", "name": "Comparative Contract Law", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5681.htm" },
+            { "code": "LW5683", "name": "International Water Law, Policy and Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5683.htm" },
+            { "code": "LW6959", "name": "Energy and Environmental Law", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6959.htm" }
+          ]
+        },
+        {
+          "id": "specialization-elective-pool",
+          "name": "Optional Specialization Elective Pool",
+          "type": "track_elective",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "A specialization is optional. To have one of the three areas recorded on the transcript, take at least four electives and at least 12 credit units from that area's official list. Courses shared by multiple lists are stored once and identified by countsTowardTrackIds; the Programme award title remains Juris Doctor.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/JD4.htm",
+          "courses": [
+            { "code": "LW5631", "name": "Banking Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-INTERNATIONAL-COMMERCIAL-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/JD4.htm" },
+            { "code": "LW5632", "name": "International Financial Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-INTERNATIONAL-COMMERCIAL-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/JD4.htm" },
+            { "code": "LW5641", "name": "Intellectual Property: Theory, Copyright and Design", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-INTERNATIONAL-COMMERCIAL-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5641.htm" },
+            { "code": "LW5643", "name": "Cyber Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-INTERNATIONAL-COMMERCIAL-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5643.htm" },
+            { "code": "LW6108E", "name": "International Finance: Law and Regulation", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-INTERNATIONAL-COMMERCIAL-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/JD4.htm" },
+            { "code": "LW6109E", "name": "Banking and Finance Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-INTERNATIONAL-COMMERCIAL-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/JD4.htm" },
+            { "code": "LW6140E", "name": "Chinese and Comparative Commercial Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-INTERNATIONAL-COMMERCIAL-LAW", "CITYU-TPG-059-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6140E.htm" },
+            { "code": "LW6141E", "name": "Chinese Foreign Trade and Investment Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-INTERNATIONAL-COMMERCIAL-LAW", "CITYU-TPG-059-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6141E.htm" },
+            { "code": "LW6142E", "name": "International Investment Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-INTERNATIONAL-COMMERCIAL-LAW", "CITYU-TPG-059-ALTERNATIVE-DISPUTE-RESOLUTION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6142E.htm" },
+            { "code": "LW6144E", "name": "International Trade Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-INTERNATIONAL-COMMERCIAL-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6144E.htm" },
+            { "code": "LW6145E", "name": "Legal Problems of Economic Globalisation", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-INTERNATIONAL-COMMERCIAL-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/JD4.htm" },
+            { "code": "LW6153E", "name": "International Economic Dispute Resolution: Law and Politics", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-INTERNATIONAL-COMMERCIAL-LAW", "CITYU-TPG-059-ALTERNATIVE-DISPUTE-RESOLUTION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6153E.htm" },
+            { "code": "LW6160E", "name": "Investor-State Dispute Settlement", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-INTERNATIONAL-COMMERCIAL-LAW", "CITYU-TPG-059-ALTERNATIVE-DISPUTE-RESOLUTION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6160E.htm" },
+            { "code": "LW6161E", "name": "Comparative Competition Law: China, HKSAR and the US", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-INTERNATIONAL-COMMERCIAL-LAW", "CITYU-TPG-059-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6161E.htm" },
+            { "code": "LW6167E", "name": "Current Issues in WTO Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-INTERNATIONAL-COMMERCIAL-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6167E.htm" },
+            { "code": "LW6180E", "name": "International Commercial Contracts and Uniform Sales Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-INTERNATIONAL-COMMERCIAL-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6180E.htm" },
+            { "code": "LW5649", "name": "International Mooting and Advocacy", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-ALTERNATIVE-DISPUTE-RESOLUTION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5649.htm" },
+            { "code": "LW5649B", "name": "International Mooting and Advocacy", "credits": 6, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-ALTERNATIVE-DISPUTE-RESOLUTION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5649B.htm" },
+            { "code": "LW6126E", "name": "Dispute Resolution in Theory and Practice", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-ALTERNATIVE-DISPUTE-RESOLUTION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6126E.htm" },
+            { "code": "LW6168E", "name": "Selected Problems in International Investment Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-ALTERNATIVE-DISPUTE-RESOLUTION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6168E.htm" },
+            { "code": "LW6187E", "name": "Chinese and Comparative Alternative Dispute Resolution", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-ALTERNATIVE-DISPUTE-RESOLUTION", "CITYU-TPG-059-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6187E.htm" },
+            { "code": "LW6405", "name": "Arbitration Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-ALTERNATIVE-DISPUTE-RESOLUTION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6405.htm" },
+            { "code": "LW6406", "name": "Mediation Practice", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-ALTERNATIVE-DISPUTE-RESOLUTION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6406.htm" },
+            { "code": "LW6407", "name": "Arbitration Practice and Award Writing", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-ALTERNATIVE-DISPUTE-RESOLUTION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6407.htm" },
+            { "code": "LW6408", "name": "International Arbitration", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-ALTERNATIVE-DISPUTE-RESOLUTION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6408.htm" },
+            { "code": "LW5626", "name": "Comparative Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW5626.htm" },
+            { "code": "LW6115E", "name": "Selected Issues on Chinese IP Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6115E.htm" },
+            { "code": "LW6121E", "name": "Constitutional and Administrative Law of China", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6121E.htm" },
+            { "code": "LW6122E", "name": "Chinese and Comparative Financial Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/JD4.htm" },
+            { "code": "LW6123E", "name": "Chinese Criminal Law and Procedure", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6123E.htm" },
+            { "code": "LW6124E", "name": "Chinese Legal History and Legal Thought", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6124E.htm" },
+            { "code": "LW6127E", "name": "Chinese and Comparative Intellectual Property Law: Trademarks and Patents", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6127E.htm" },
+            { "code": "LW6129E", "name": "Chinese and Comparative Environmental Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6129E.htm" },
+            { "code": "LW6132E", "name": "Theory and Practice of Comparative Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6132E.htm" },
+            { "code": "LW6134E", "name": "Chinese and Comparative Company Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6134E.htm" },
+            { "code": "LW6136E", "name": "Property Rights in China: Legal, Economic, and Policy Analysis", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6136E.htm" },
+            { "code": "LW6138E", "name": "Chinese and Comparative Contract Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6138E.htm" },
+            { "code": "LW6139E", "name": "Advanced Issues on Chinese Civil Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6139E.htm" },
+            { "code": "LW6150E", "name": "Chinese and Comparative Trade Secrets Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6150E.htm" },
+            { "code": "LW6169E", "name": "Chinese and Comparative Labour Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6169E.htm" },
+            { "code": "LW6172E", "name": "Law and Society in China", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6172E.htm" },
+            { "code": "LW6188E", "name": "Chinese and Comparative Maritime Law", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CITYU-TPG-059-CHINESE-COMPARATIVE-LAW"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/LW6188E.htm" }
+          ]
+        },
+        {
+          "id": "approved-mba-electives",
+          "name": "Approved MBA Electives",
+          "type": "elective_external",
+          "ruleText": "These MBA electives are available only to JD students intending to pursue the MBA programme and require prior approval. They are not Programme Core and course availability is not guaranteed.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/JD4.htm",
+          "courses": [
+            { "code": "FB5040", "name": "Corporate Finance", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/FB5040.htm" },
+            { "code": "EF5143", "name": "International Financial Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/EF5143.htm" },
+            { "code": "FB5690", "name": "Corporate Governance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/FB5690.htm" },
+            { "code": "FB6508", "name": "Global Business Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/FB6508.htm" },
+            { "code": "FB6603", "name": "Consumer Behaviour", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/FB6603.htm" },
+            { "code": "FB6700", "name": "MBA Project", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/FB6700.htm" }
+          ]
+        }
+      ]
+    }
+  ]
+}

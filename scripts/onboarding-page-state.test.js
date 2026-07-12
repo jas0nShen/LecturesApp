@@ -1,4 +1,5 @@
 const assert = require('node:assert/strict');
+const fs = require('node:fs');
 const path = require('node:path');
 const test = require('node:test');
 
@@ -109,6 +110,59 @@ test('optional Concentrations can be saved empty while Award Paths remain requir
   requiredPage.save();
   assert.equal(requiredPage.__events.toasts.at(-1).title, '请选择 Track');
   assert.equal(requiredPage.__events.storageWrites.some((item) => item.key === 'userProfile'), false);
+});
+
+test('TPG Programme keyword input immediately matches Blockchain Technology', async () => {
+  const page = loadOnboardingPage({
+    profileType: 'tpg',
+    universityCode: 'POLYU',
+    programmeId: 'POLYU-TPG-001'
+  });
+  await page.onLoad({ mode: 'tpg' });
+
+  page.onTpgKeyword({ detail: { value: 'block' } });
+
+  assert.equal(page.data.tpgKeyword, 'block');
+  assert.equal(page.data.selectedTpgProgramme.name, 'Blockchain Technology');
+  assert.equal(page.data.filteredTpgProgrammes.some((item) => item.name === 'Blockchain Technology'), true);
+  assert.equal(page.data.visibleTpgProgrammes[0].name, 'Blockchain Technology');
+});
+
+test('Programme keyword handlers accept confirm text event fallbacks', async () => {
+  const page = loadOnboardingPage({
+    profileType: 'tpg',
+    universityCode: 'POLYU',
+    programmeId: 'POLYU-TPG-001'
+  });
+  await page.onLoad({ mode: 'tpg' });
+
+  page.onTpgKeyword({ detail: { text: 'block' } });
+
+  assert.equal(page.data.tpgKeyword, 'block');
+  assert.equal(page.data.selectedTpgProgramme.name, 'Blockchain Technology');
+});
+
+test('Programme inputs do not rebuild the selection on blur before a button tap completes', () => {
+  const wxml = fs.readFileSync(
+    path.join(ROOT, 'miniprogram', 'pages', 'onboarding', 'onboarding.wxml'),
+    'utf8'
+  );
+
+  assert.doesNotMatch(wxml, /bind:blur="on(?:Ug|Tpg)Keyword"/);
+  assert.match(wxml, /bind:input="onTpgKeyword"/);
+  assert.match(wxml, /bind:confirm="onTpgKeyword"/);
+});
+
+test('TPG Programme inputs stay embedded and actions keep their original two-column bindings', () => {
+  const wxml = fs.readFileSync(
+    path.join(ROOT, 'miniprogram', 'pages', 'onboarding', 'onboarding.wxml'),
+    'utf8'
+  );
+
+  assert.match(wxml, /always-embed="{{true}}"/);
+  assert.match(wxml, /<view class="button-space tpg-actions">/);
+  assert.match(wxml, /<view class="preview-button" bindtap="previewTpgProgramme">预览 Programme<\/view>/);
+  assert.match(wxml, /<view class="button" bindtap="save">保存授课硕士 Programme<\/view>/);
 });
 
 test('undergraduate school switching does not wait for course packages', async () => {

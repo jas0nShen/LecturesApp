@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-018",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p84",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-018-IAM",
+          "name": "Information Analytics Management",
+          "type": "Stream",
+          "creditsRequired": 30,
+          "sourceUrl": "https://www.cb.cityu.edu.hk/en/is/msbda"
+        },
+        {
+          "id": "CITYU-TPG-018-QAB",
+          "name": "Quantitative Analysis for Business",
+          "type": "Stream",
+          "creditsRequired": 30,
+          "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscbda_qab/programme/structure/"
+        }
+      ],
+      "courseGroups": [
+        {
+          "id": "programme-core",
+          "name": "Programme Core Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Programme Core Courses (12 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscbda_qab/programme/structure/",
+          "courses": [
+            { "code": "IS5413", "name": "Database Management Systems", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/IS5413.htm" },
+            { "code": "IS6335", "name": "Data Visualization", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/IS6335.htm" },
+            { "code": "MS5217", "name": "Statistical Data Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/MS5217.htm" },
+            { "code": "MS6711", "name": "Data Mining", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/MS6711.htm" }
+          ]
+        },
+        {
+          "id": "iam-stream-core",
+          "name": "IAM Stream Core Course",
+          "type": "track_core",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Information Analytics Management Stream students complete IS6941 (3 credit units).",
+          "appliesToTrackIds": ["CITYU-TPG-018-IAM"],
+          "sourceUrl": "https://www.cb.cityu.edu.hk/en/is/msbda",
+          "courses": [
+            { "code": "IS6941", "name": "Machine Learning and Social Media Analytics", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-018-IAM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/IS6941.htm" }
+          ]
+        },
+        {
+          "id": "iam-stream-electives",
+          "name": "IAM Stream Elective Courses",
+          "type": "track_elective",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete 15 elective credit units. At least 9 credit units must be selected from the official IAM Stream list; the remaining 6 credit units may be chosen from postgraduate electives offered by departments within the College of Business. IS5311 is the additional IS elective explicitly listed by the official page. IS6912 and IS6914 are optional Project courses within the elective pool, not compulsory Projects.",
+          "appliesToTrackIds": ["CITYU-TPG-018-IAM"],
+          "sourceUrl": "https://www.cb.cityu.edu.hk/en/is/postgraduate-degrees/taught-postgraduate/msc-business-and-data-analytics-iam-stream/electives",
+          "courses": [
+            { "code": "IS5113", "name": "AI Ethics and Regulations", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-018-IAM"], "sourceUrl": "https://www.cb.cityu.edu.hk/en/is/postgraduate-degrees/taught-postgraduate/msc-business-and-data-analytics-iam-stream/electives" },
+            { "code": "IS5238", "name": "Business Practice Internship", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-018-IAM"], "sourceUrl": "https://www.cb.cityu.edu.hk/en/is/postgraduate-degrees/taught-postgraduate/msc-business-and-data-analytics-iam-stream/electives" },
+            { "code": "IS5312", "name": "Analytical Programming with Python", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-018-IAM"], "sourceUrl": "https://www.cb.cityu.edu.hk/en/is/postgraduate-degrees/taught-postgraduate/msc-business-and-data-analytics-iam-stream/electives" },
+            { "code": "IS5313", "name": "Foundations of Information and Electronic Business Systems", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-018-IAM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/IS5313.htm" },
+            { "code": "IS5540", "name": "Project Management and Quality Assurance", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-018-IAM"], "sourceUrl": "https://www.cb.cityu.edu.hk/en/is/postgraduate-degrees/taught-postgraduate/msc-business-and-data-analytics-iam-stream/electives" },
+            { "code": "IS5542", "name": "Generative Artificial Intelligence for Business", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-018-IAM"], "sourceUrl": "https://www.cb.cityu.edu.hk/en/is/postgraduate-degrees/taught-postgraduate/msc-business-and-data-analytics-iam-stream/electives" },
+            { "code": "IS5740", "name": "Management Support and Business Intelligence Systems", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-018-IAM"], "sourceUrl": "https://www.cb.cityu.edu.hk/en/is/postgraduate-degrees/taught-postgraduate/msc-business-and-data-analytics-iam-stream/electives" },
+            { "code": "IS5940", "name": "Innovation and Technology Entrepreneurship", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-018-IAM"], "sourceUrl": "https://www.cb.cityu.edu.hk/en/is/postgraduate-degrees/taught-postgraduate/msc-business-and-data-analytics-iam-stream/electives" },
+            { "code": "IS6200", "name": "Blockchain Technology and Business Applications", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-018-IAM"], "sourceUrl": "https://www.cb.cityu.edu.hk/en/is/postgraduate-degrees/taught-postgraduate/msc-business-and-data-analytics-iam-stream/electives" },
+            { "code": "IS6400", "name": "Business Data Analytics", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-018-IAM"], "sourceUrl": "https://www.cb.cityu.edu.hk/en/is/postgraduate-degrees/taught-postgraduate/msc-business-and-data-analytics-iam-stream/electives" },
+            { "code": "IS6423", "name": "Artificial Intelligence for Business Applications", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-018-IAM"], "sourceUrl": "https://www.cb.cityu.edu.hk/en/is/postgraduate-degrees/taught-postgraduate/msc-business-and-data-analytics-iam-stream/electives" },
+            { "code": "IS6620", "name": "Large Language Model with Prompt Engineering for Business", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-018-IAM"], "sourceUrl": "https://www.cb.cityu.edu.hk/en/is/postgraduate-degrees/taught-postgraduate/msc-business-and-data-analytics-iam-stream/electives" },
+            { "code": "IS6912", "name": "Information Systems Project", "credits": 6, "appliesToTrackIds": ["CITYU-TPG-018-IAM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/IS6912.htm" },
+            { "code": "IS6914", "name": "Information Analytics Management Project", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-018-IAM"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/IS6914.htm" },
+            { "code": "IS5311", "name": "JAVA Programming for Business Applications", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-018-IAM"], "sourceUrl": "https://www.cb.cityu.edu.hk/en/is/postgraduate-degrees/taught-postgraduate/msc-business-and-data-analytics-iam-stream/electives" }
+          ]
+        },
+        {
+          "id": "qab-stream-core",
+          "name": "QAB Stream Core Course",
+          "type": "track_core",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Quantitative Analysis for Business Stream students complete MS5218 (3 credit units).",
+          "appliesToTrackIds": ["CITYU-TPG-018-QAB"],
+          "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscbda_qab/programme/structure/",
+          "courses": [
+            { "code": "MS5218", "name": "Applied Linear Statistical Models", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-018-QAB"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/MS5218.htm" }
+          ]
+        },
+        {
+          "id": "qab-stream-electives",
+          "name": "QAB Stream Elective Courses",
+          "type": "track_elective",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete 15 elective credit units. At least 12 credit units must be selected from the official QAB Stream list; the remaining 3 credit units may be chosen from postgraduate electives offered by any department in the College of Business.",
+          "appliesToTrackIds": ["CITYU-TPG-018-QAB"],
+          "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscbda_qab/programme/structure/",
+          "courses": [
+            { "code": "MS5215", "name": "AI-Enhanced Business Analytics with Excel and Python", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-018-QAB"], "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscbda_qab/programme/structure/" },
+            { "code": "MS5216", "name": "Decision Analytics", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-018-QAB"], "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscbda_qab/programme/structure/" },
+            { "code": "MS5223", "name": "Project Management", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-018-QAB"], "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscbda_qab/programme/structure/" },
+            { "code": "MS5318", "name": "Predictive Analytics with Excel and R", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-018-QAB"], "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscbda_qab/programme/structure/" },
+            { "code": "MS6211", "name": "Statistical Modelling in Risk Management", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-018-QAB"], "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscbda_qab/programme/structure/" },
+            { "code": "MS6219", "name": "Predictive Modeling and Forecasting for Business", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-018-QAB"], "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscbda_qab/programme/structure/" },
+            { "code": "MS6221", "name": "Predictive Modeling in Marketing", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-018-QAB"], "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscbda_qab/programme/structure/" },
+            { "code": "MS6601", "name": "Statistical Modelling in Economics and Finance", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-018-QAB"], "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscbda_qab/programme/structure/" },
+            { "code": "MS6712", "name": "Contemporary Topics in Quantitative Analysis for Business", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-018-QAB"], "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscbda_qab/programme/structure/" },
+            { "code": "EF5560", "name": "Fintech and AI in Finance", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-018-QAB"], "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscbda_qab/programme/structure/" }
+          ]
+        }
+      ]
+    }
+  ]
+}

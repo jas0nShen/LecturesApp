@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-041",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [
+        { "id": "CITYU-TPG-041-GENERAL-LINGUISTICS", "name": "General Linguistics", "type": "Stream", "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+        { "id": "CITYU-TPG-041-CORPUS-EMPIRICAL-LINGUISTICS", "name": "Corpus and Empirical Linguistics", "type": "Stream", "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+        { "id": "CITYU-TPG-041-PEDAGOGICAL-LINGUISTICS", "name": "Pedagogical Linguistics", "type": "Stream", "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+        { "id": "CITYU-TPG-041-TRANSLATION-INTERPRETATION", "name": "Translation and Interpretation", "type": "Stream", "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" }
+      ],
+      "courseGroups": [
+        {
+          "id": "programme-core-choice",
+          "name": "Programme Core — Group A",
+          "type": "core_choice",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Choose either LT5903 Language and its Applications or LT5904 Language and Culture in Society (3 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm",
+          "courses": [
+            { "code": "LT5903", "name": "Language and its Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5904", "name": "Language and Culture in Society", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" }
+          ]
+        },
+        {
+          "id": "project-capstone-choice",
+          "name": "Programme Core — Group B Project Path",
+          "type": "project_choice",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Choose either the 6-credit LT6580 Master's Project or the 3-credit LT6582 Capstone Project. Together with Group A, Programme Core contributes 9 credits on the Master's Project path or 6 credits on the Capstone Project path.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm",
+          "courses": [
+            { "code": "LT6580", "name": "Master's Project", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT6582", "name": "Capstone Project", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" }
+          ]
+        },
+        {
+          "id": "stream-core-cross-role-courses",
+          "name": "Stream Core Courses and Cross-Stream Elective Roles",
+          "type": "track_core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Each Stream requires its three named Core Courses (9 credits). Some of those courses are also official elective candidates in other Stream clusters, so they appear for every applicable Stream. Exact core sets: General Linguistics — LT5401, LT5402, LT5403; Corpus and Empirical Linguistics — LT5406, LT5411, LT5421; Pedagogical Linguistics — LT5407, LT5451, LT5458; Translation and Interpretation — LT5603, LT5604, LT5605. Automatic rule completion requires manual review because of these cross-Stream roles.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm",
+          "courses": [
+            { "code": "LT5401", "name": "Phonetics and Phonology", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-GENERAL-LINGUISTICS", "CITYU-TPG-041-CORPUS-EMPIRICAL-LINGUISTICS", "CITYU-TPG-041-PEDAGOGICAL-LINGUISTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5402", "name": "Syntax and Morphology", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-GENERAL-LINGUISTICS", "CITYU-TPG-041-CORPUS-EMPIRICAL-LINGUISTICS", "CITYU-TPG-041-PEDAGOGICAL-LINGUISTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5403", "name": "Semantics and Discourse", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-GENERAL-LINGUISTICS", "CITYU-TPG-041-CORPUS-EMPIRICAL-LINGUISTICS", "CITYU-TPG-041-PEDAGOGICAL-LINGUISTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5406", "name": "Psycholinguistics", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-GENERAL-LINGUISTICS", "CITYU-TPG-041-CORPUS-EMPIRICAL-LINGUISTICS", "CITYU-TPG-041-PEDAGOGICAL-LINGUISTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5411", "name": "Computational Linguistics", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-GENERAL-LINGUISTICS", "CITYU-TPG-041-CORPUS-EMPIRICAL-LINGUISTICS", "CITYU-TPG-041-PEDAGOGICAL-LINGUISTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5421", "name": "Corpus Linguistics", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-GENERAL-LINGUISTICS", "CITYU-TPG-041-CORPUS-EMPIRICAL-LINGUISTICS", "CITYU-TPG-041-PEDAGOGICAL-LINGUISTICS", "CITYU-TPG-041-TRANSLATION-INTERPRETATION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5407", "name": "Research Methodology for Applied Linguistics", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-GENERAL-LINGUISTICS", "CITYU-TPG-041-CORPUS-EMPIRICAL-LINGUISTICS", "CITYU-TPG-041-PEDAGOGICAL-LINGUISTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5451", "name": "Pedagogical Grammar: Chinese and English", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-GENERAL-LINGUISTICS", "CITYU-TPG-041-CORPUS-EMPIRICAL-LINGUISTICS", "CITYU-TPG-041-PEDAGOGICAL-LINGUISTICS", "CITYU-TPG-041-TRANSLATION-INTERPRETATION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5458", "name": "Computer-Assisted Language Learning", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-GENERAL-LINGUISTICS", "CITYU-TPG-041-CORPUS-EMPIRICAL-LINGUISTICS", "CITYU-TPG-041-PEDAGOGICAL-LINGUISTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5603", "name": "Theory of Translation", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-TRANSLATION-INTERPRETATION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5604", "name": "Translation Methodology", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-TRANSLATION-INTERPRETATION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5605", "name": "Interpretation Methodology", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-TRANSLATION-INTERPRETATION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" }
+          ]
+        },
+        {
+          "id": "stream-elective-pools",
+          "name": "Stream Elective Course Clusters",
+          "type": "track_elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Take three courses (9 credits) from the selected Stream's official elective cluster. Courses already listed above because they serve a Core role in another Stream are also valid elective candidates where shown by Track filtering.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm",
+          "courses": [
+            { "code": "LT5417", "name": "Language Universals and Linguistic Typology", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-GENERAL-LINGUISTICS", "CITYU-TPG-041-CORPUS-EMPIRICAL-LINGUISTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5431", "name": "Functional Approaches to Syntax", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-GENERAL-LINGUISTICS", "CITYU-TPG-041-CORPUS-EMPIRICAL-LINGUISTICS", "CITYU-TPG-041-PEDAGOGICAL-LINGUISTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5454", "name": "Grammar of Chinese", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-GENERAL-LINGUISTICS", "CITYU-TPG-041-CORPUS-EMPIRICAL-LINGUISTICS", "CITYU-TPG-041-PEDAGOGICAL-LINGUISTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5456", "name": "Text Linguistics", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-GENERAL-LINGUISTICS", "CITYU-TPG-041-CORPUS-EMPIRICAL-LINGUISTICS", "CITYU-TPG-041-TRANSLATION-INTERPRETATION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT6422", "name": "Advanced Topics in Semantics", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-GENERAL-LINGUISTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT6423", "name": "Advanced Topics in Syntax", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-GENERAL-LINGUISTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5457", "name": "Computational Lexicography", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-GENERAL-LINGUISTICS", "CITYU-TPG-041-CORPUS-EMPIRICAL-LINGUISTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5510", "name": "Contrastive Studies of Chinese and English Grammar", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-GENERAL-LINGUISTICS", "CITYU-TPG-041-CORPUS-EMPIRICAL-LINGUISTICS", "CITYU-TPG-041-PEDAGOGICAL-LINGUISTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5416", "name": "Historical Linguistics", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-GENERAL-LINGUISTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5432", "name": "Lexical Semantics", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-GENERAL-LINGUISTICS", "CITYU-TPG-041-CORPUS-EMPIRICAL-LINGUISTICS", "CITYU-TPG-041-PEDAGOGICAL-LINGUISTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5455", "name": "Pragmatics", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-GENERAL-LINGUISTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5408", "name": "Sociolinguistics", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-GENERAL-LINGUISTICS", "CITYU-TPG-041-CORPUS-EMPIRICAL-LINGUISTICS", "CITYU-TPG-041-PEDAGOGICAL-LINGUISTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5430", "name": "Special Topics in Linguistics", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-GENERAL-LINGUISTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5409", "name": "Systemic Functional Linguistics", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-GENERAL-LINGUISTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5413", "name": "Philosophy of Language", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-GENERAL-LINGUISTICS", "CITYU-TPG-041-CORPUS-EMPIRICAL-LINGUISTICS", "CITYU-TPG-041-PEDAGOGICAL-LINGUISTICS", "CITYU-TPG-041-TRANSLATION-INTERPRETATION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5462", "name": "Social Approaches to Language in Education", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-GENERAL-LINGUISTICS", "CITYU-TPG-041-CORPUS-EMPIRICAL-LINGUISTICS", "CITYU-TPG-041-PEDAGOGICAL-LINGUISTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5199", "name": "Professional Internship", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-GENERAL-LINGUISTICS", "CITYU-TPG-041-CORPUS-EMPIRICAL-LINGUISTICS", "CITYU-TPG-041-PEDAGOGICAL-LINGUISTICS", "CITYU-TPG-041-TRANSLATION-INTERPRETATION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5422", "name": "Neurocognition of Language", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-CORPUS-EMPIRICAL-LINGUISTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5459", "name": "Terminology and Translation", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-CORPUS-EMPIRICAL-LINGUISTICS", "CITYU-TPG-041-TRANSLATION-INTERPRETATION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT6421", "name": "Advanced Topics in Corpus and Empirical Linguistics", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-CORPUS-EMPIRICAL-LINGUISTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5412", "name": "Language Teaching", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-PEDAGOGICAL-LINGUISTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5418", "name": "Second Language Pronunciation Acquisition: from Theory to Practice", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-PEDAGOGICAL-LINGUISTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5452", "name": "Learning and Teaching Chinese as a Foreign Language", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-PEDAGOGICAL-LINGUISTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5460", "name": "Studies of Second Language Acquisition", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-PEDAGOGICAL-LINGUISTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5461", "name": "Cognition and Language Differences", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-PEDAGOGICAL-LINGUISTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5420", "name": "Language Arts and Literature", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-PEDAGOGICAL-LINGUISTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5453", "name": "The Cantonese Language: Pronunciation, Lexicon and Grammar", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-PEDAGOGICAL-LINGUISTICS"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5606", "name": "Translating Cultures", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-TRANSLATION-INTERPRETATION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5601", "name": "Stylistics and Translation", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-TRANSLATION-INTERPRETATION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5617", "name": "Bilingual Reading and Writing for Translators", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-TRANSLATION-INTERPRETATION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5627", "name": "Advanced Interpreting", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-TRANSLATION-INTERPRETATION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5621", "name": "Language and Literature in Translation", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-TRANSLATION-INTERPRETATION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5633", "name": "Performance and Translation", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-TRANSLATION-INTERPRETATION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5626", "name": "Translation and Comparative Literature", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-TRANSLATION-INTERPRETATION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5630", "name": "Special Topics in Translation and Interpretation", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-TRANSLATION-INTERPRETATION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT6505", "name": "Legal Translation", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-TRANSLATION-INTERPRETATION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT6514", "name": "Advanced Legal Translation", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-TRANSLATION-INTERPRETATION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" },
+            { "code": "LT5628", "name": "Human-Machine Interactive Translation", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-041-TRANSLATION-INTERPRETATION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm" }
+          ]
+        },
+        {
+          "id": "free-elective-requirement",
+          "name": "Free Elective Requirement",
+          "type": "elective_rule",
+          "creditsRequired": 3,
+          "ruleText": "Master's Project path: choose one additional 3-credit course offered by MA Language Studies. Capstone Project path: choose two additional 3-credit courses (6 credits). Courses are already listed in the official Stream and Programme pools above; this rule does not create duplicate course records.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm",
+          "courses": []
+        }
+      ]
+    }
+  ]
+}

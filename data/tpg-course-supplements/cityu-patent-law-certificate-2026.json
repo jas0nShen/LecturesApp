@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-062",
+      "status": "verified",
+      "creditsRequired": 12,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/school-of-law/school-of-law/p93",
+      "ruleReviewStatus": "verified",
+      "tracks": [
+        { "id": "CITYU-TPG-062-TRACK-A", "name": "Track A — Common Law Graduates", "type": "Track", "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/school-of-law/school-of-law/p93" },
+        { "id": "CITYU-TPG-062-TRACK-B", "name": "Track B — Non-law or Non-common Law Graduates", "type": "Track", "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/school-of-law/school-of-law/p93" }
+      ],
+      "courseGroups": [
+        {
+          "id": "shared-practice-core",
+          "name": "Shared Patent Practice Core Courses",
+          "type": "track_core",
+          "creditsRequired": 3,
+          "coursesRequired": 2,
+          "ruleText": "Students in both Tracks complete Patent Drafting and Litigation and Patent Procedures (1.5 credit units each).",
+          "appliesToTrackIds": ["CITYU-TPG-062-TRACK-A", "CITYU-TPG-062-TRACK-B"],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/school-of-law/school-of-law/p93",
+          "courses": [
+            { "code": "LW6208E", "name": "Patent Drafting and Litigation", "credits": 1.5, "appliesToTrackIds": ["CITYU-TPG-062-TRACK-A", "CITYU-TPG-062-TRACK-B"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/school-of-law/school-of-law/p93" },
+            { "code": "LW6209E", "name": "Patent Procedures", "credits": 1.5, "appliesToTrackIds": ["CITYU-TPG-062-TRACK-A", "CITYU-TPG-062-TRACK-B"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/school-of-law/school-of-law/p93" }
+          ]
+        },
+        {
+          "id": "track-a-core",
+          "name": "Track A Core Courses",
+          "type": "track_core",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Track A students complete both three-credit Core Courses.",
+          "appliesToTrackIds": ["CITYU-TPG-062-TRACK-A"],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/school-of-law/school-of-law/p93",
+          "courses": [
+            { "code": "LW6196E", "name": "International and Comparative Law of Trade Marks and Patents", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-062-TRACK-A"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/school-of-law/school-of-law/p93" },
+            { "code": "LW6199E", "name": "Commercialisation of Intellectual Property", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-062-TRACK-A"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/school-of-law/school-of-law/p93" }
+          ]
+        },
+        {
+          "id": "track-b-core",
+          "name": "Track B Core Courses",
+          "type": "track_core",
+          "creditsRequired": 3,
+          "coursesRequired": 2,
+          "ruleText": "Track B students complete both 1.5-credit Core Courses.",
+          "appliesToTrackIds": ["CITYU-TPG-062-TRACK-B"],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/school-of-law/school-of-law/p93",
+          "courses": [
+            { "code": "LW6210E", "name": "International and Comparative Law of Patents", "credits": 1.5, "appliesToTrackIds": ["CITYU-TPG-062-TRACK-B"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/school-of-law/school-of-law/p93" },
+            { "code": "LW6211E", "name": "Commercialisation of Patents", "credits": 1.5, "appliesToTrackIds": ["CITYU-TPG-062-TRACK-B"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/school-of-law/school-of-law/p93" }
+          ]
+        },
+        {
+          "id": "electives",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Choose one of the three Elective Courses (3 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/school-of-law/school-of-law/p93",
+          "courses": [
+            { "code": "LW6113E", "name": "Law and Technology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/school-of-law/school-of-law/p93" },
+            { "code": "LW6115E", "name": "Selected Issues on Chinese IP Law", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/school-of-law/school-of-law/p93" },
+            { "code": "LW6152E", "name": "Cyber Governance and Law", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/school-of-law/school-of-law/p93" }
+          ]
+        },
+        {
+          "id": "track-b-bridging",
+          "name": "Track B Bridging Course",
+          "type": "track_bridging_core",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Track B students must complete the three-credit Introduction to Common Law System and Methodology bridging course.",
+          "appliesToTrackIds": ["CITYU-TPG-062-TRACK-B"],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/school-of-law/school-of-law/p93",
+          "courses": [
+            { "code": "LW6102E", "name": "Introduction to Common Law System and Methodology", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-062-TRACK-B"], "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/school-of-law/school-of-law/p93" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-050",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [
+        { "id": "CITYU-TPG-050-HOUSING", "name": "Housing", "type": "Stream", "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" },
+        { "id": "CITYU-TPG-050-URBAN-MANAGEMENT", "name": "Urban Management", "type": "Stream", "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" }
+      ],
+      "courseGroups": [
+        {
+          "id": "programme-core",
+          "name": "Programme Core Courses",
+          "type": "core_capstone",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five Programme Core Courses (15 credit units), including the 2-credit Research Methods course and 4-credit MAHUM Capstone Project.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm",
+          "courses": [
+            { "code": "PIA5701", "name": "Comparative and International Housing and Urban Policy", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" },
+            { "code": "PIA5702", "name": "Finance and Economics in Housing and Urban Studies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" },
+            { "code": "PIA5703", "name": "Contemporary Issues of Housing and Urban Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" },
+            { "code": "PIA6803", "name": "Research Methods for Housing and Urban Management", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" },
+            { "code": "PIA6804", "name": "MAHUM Capstone Project", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" }
+          ]
+        },
+        {
+          "id": "cross-stream-role-courses",
+          "name": "Cross-stream Core and Elective Roles",
+          "type": "track_core_elective",
+          "ruleText": "LW5957 is a Housing Stream core and an Urban Management Stream elective. PIA5504 is an Urban Management Stream core and a Housing Stream elective. Both remain visible without duplicating course codes.",
+          "appliesToTrackIds": ["CITYU-TPG-050-HOUSING", "CITYU-TPG-050-URBAN-MANAGEMENT"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm",
+          "courses": [
+            { "code": "LW5957", "name": "Legal Studies for the Built Environment", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-050-HOUSING", "CITYU-TPG-050-URBAN-MANAGEMENT"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" },
+            { "code": "PIA5504", "name": "The Asian Metropolis: Issues in Urban Management", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-050-HOUSING", "CITYU-TPG-050-URBAN-MANAGEMENT"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" }
+          ]
+        },
+        {
+          "id": "housing-core",
+          "name": "Housing Stream Core Courses",
+          "type": "track_core",
+          "ruleText": "Housing Stream students complete these three courses plus LW5957, totaling 12 Stream Core credit units.",
+          "appliesToTrackIds": ["CITYU-TPG-050-HOUSING"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm",
+          "courses": [
+            { "code": "PIA5704", "name": "Building Services Systems and Maintenance for Housing Managers", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-050-HOUSING"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" },
+            { "code": "PIA6800", "name": "Contemporary Management for Housing Managers", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-050-HOUSING"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" },
+            { "code": "PIA6802", "name": "Advanced Housing Practice (and Residential)", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-050-HOUSING"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" }
+          ]
+        },
+        {
+          "id": "urban-core",
+          "name": "Urban Management Stream Core Courses",
+          "type": "track_core",
+          "ruleText": "Urban Management Stream students complete these three courses plus PIA5504, totaling 12 Stream Core credit units.",
+          "appliesToTrackIds": ["CITYU-TPG-050-URBAN-MANAGEMENT"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm",
+          "courses": [
+            { "code": "PIA5500", "name": "Understanding the Modern Metropolis", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-050-URBAN-MANAGEMENT"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" },
+            { "code": "PIA5510", "name": "Understanding and Managing Smart Cities", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-050-URBAN-MANAGEMENT"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" },
+            { "code": "PIA6501", "name": "Urban Development and Sustainable Cities", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-050-URBAN-MANAGEMENT"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" }
+          ]
+        },
+        {
+          "id": "shared-electives",
+          "name": "Shared Stream Electives",
+          "type": "track_elective",
+          "ruleText": "Each Stream requires one 3-credit elective. These courses are listed for both Streams; PIA5000 Postgraduate Internship is restricted to full-time students.",
+          "appliesToTrackIds": ["CITYU-TPG-050-HOUSING", "CITYU-TPG-050-URBAN-MANAGEMENT"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm",
+          "courses": [
+            { "code": "CA6220", "name": "Urban Economics and Regional Planning", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-050-HOUSING", "CITYU-TPG-050-URBAN-MANAGEMENT"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" },
+            { "code": "PIA5000", "name": "PIA Postgraduate Internship", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-050-HOUSING", "CITYU-TPG-050-URBAN-MANAGEMENT"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" },
+            { "code": "PIA5003", "name": "Project Planning and Management for Development", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-050-HOUSING", "CITYU-TPG-050-URBAN-MANAGEMENT"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" },
+            { "code": "PIA5711", "name": "Environmental Governance in China", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-050-HOUSING", "CITYU-TPG-050-URBAN-MANAGEMENT"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" },
+            { "code": "PIA6201", "name": "Comparative Public Policy", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-050-HOUSING", "CITYU-TPG-050-URBAN-MANAGEMENT"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" },
+            { "code": "PIA6302", "name": "Public Budgeting and the Management of Financial Resources", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-050-HOUSING", "CITYU-TPG-050-URBAN-MANAGEMENT"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" },
+            { "code": "PIA6304", "name": "Public Human Resource Management", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-050-HOUSING", "CITYU-TPG-050-URBAN-MANAGEMENT"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" },
+            { "code": "PIA6805", "name": "Housing Management, Local Politics and Public Relations", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-050-HOUSING", "CITYU-TPG-050-URBAN-MANAGEMENT"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" },
+            { "code": "SEE6201", "name": "Environmental and Energy Policy", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-050-HOUSING", "CITYU-TPG-050-URBAN-MANAGEMENT"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" }
+          ]
+        },
+        {
+          "id": "housing-exclusive-electives",
+          "name": "Housing Stream Additional Electives",
+          "type": "track_elective",
+          "ruleText": "Housing Stream students choose one 3-credit elective across this group, the Shared Stream Electives, or the cross-role PIA5504 course.",
+          "appliesToTrackIds": ["CITYU-TPG-050-HOUSING"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm",
+          "courses": [
+            { "code": "COM5101", "name": "Communication Fundamentals", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-050-HOUSING"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" },
+            { "code": "COM5106", "name": "Integrated Marketing Communication", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-050-HOUSING"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" },
+            { "code": "COM5107", "name": "Professional Communication Skills", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-050-HOUSING"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" },
+            { "code": "IS5540", "name": "Project Management and Quality Assurance", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-050-HOUSING"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" },
+            { "code": "LW6401", "name": "Dispute Resolution in Theory and Practice", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-050-HOUSING"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" },
+            { "code": "LW6405", "name": "Arbitration Law", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-050-HOUSING"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" },
+            { "code": "MS5223", "name": "Project Management", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-050-HOUSING"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" }
+          ]
+        },
+        {
+          "id": "urban-exclusive-electives",
+          "name": "Urban Management Stream Additional Electives",
+          "type": "track_elective",
+          "ruleText": "Urban Management Stream students choose one 3-credit elective across this group, the Shared Stream Electives, or the cross-role LW5957 course.",
+          "appliesToTrackIds": ["CITYU-TPG-050-URBAN-MANAGEMENT"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm",
+          "courses": [
+            { "code": "PIA5101", "name": "Theories of Government and Public Administration", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-050-URBAN-MANAGEMENT"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" },
+            { "code": "PIA6202", "name": "Evidence-based Policy and Practice", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-050-URBAN-MANAGEMENT"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" },
+            { "code": "SDSC6004", "name": "Data Analytics for Smart Cities", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-050-URBAN-MANAGEMENT"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm" }
+          ]
+        }
+      ]
+    }
+  ]
+}

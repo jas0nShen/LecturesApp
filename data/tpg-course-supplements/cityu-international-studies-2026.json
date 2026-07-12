@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-044",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p38",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core",
+          "name": "Core Courses and Research Path",
+          "type": "core_thesis_project",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete the four fixed Core Courses plus either the 3-credit PIA6015 Master’s Thesis or the 3-credit PIA6018 MAIS Capstone Project. The Thesis path requires PIA5026 Research Design for the Social Sciences with grade A or A+; this conditional alternative requires manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p38",
+          "courses": [
+            { "code": "PIA5021", "name": "Asian Regional Governance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5021.htm" },
+            { "code": "PIA5023", "name": "International Political Economy", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5023.htm" },
+            { "code": "PIA5025", "name": "Theory in International Studies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5025.htm" },
+            { "code": "PIA5045", "name": "International Relations of Northeast Asia", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5045.htm" },
+            { "code": "PIA6015", "name": "Master’s Thesis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA6015.htm" },
+            { "code": "PIA6018", "name": "MAIS Capstone Project", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA6018.htm" }
+          ]
+        },
+        {
+          "id": "electives",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Choose up to three Elective Courses, totaling 9 credit units, from the official Year of Entry 2026 pool. Course offerings are subject to availability.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p38",
+          "courses": [
+            { "code": "PIA5026", "name": "Research Design for the Social Sciences", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5026.htm" },
+            { "code": "PIA5031", "name": "Security Studies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5031.htm" },
+            { "code": "PIA5032", "name": "Authoritarian Resilience and Democratic Change in East Asia", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5032.htm" },
+            { "code": "PIA5038", "name": "Environmental Challenges in Asia and the World", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5038.htm" },
+            { "code": "PIA5039", "name": "Human Rights in Asia", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5039.htm" },
+            { "code": "PIA5040", "name": "BRIC Countries and the Emerging Global Order", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5040.htm" },
+            { "code": "PIA5041", "name": "Special Topics in Asian and International Studies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5041.htm" },
+            { "code": "PIA5044", "name": "Religion and Development", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5044.htm" },
+            { "code": "PIA5049", "name": "International Organisations", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5049.htm" },
+            { "code": "PIA5051", "name": "Women and Politics in Asia", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5051.htm" },
+            { "code": "PIA5304", "name": "Development Policy and Advocacy", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5304.htm" },
+            { "code": "PIA5308", "name": "Gender and Development", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5308.htm" },
+            { "code": "PIA5338", "name": "Indonesia: Politics and Society", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5338.htm" },
+            { "code": "PIA5339", "name": "Labour, Sustainability and Development", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5339.htm" },
+            { "code": "PIA5340", "name": "Infrastructure Development in China", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5340.htm" },
+            { "code": "PIA5057", "name": "Collaborative Governance for Sustainability", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5057.htm" },
+            { "code": "PIA5059", "name": "Food Governance and Sustainability", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5059.htm" },
+            { "code": "PIA5708", "name": "Key Issues in Chinese Politics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5708.htm" },
+            { "code": "PIA5711", "name": "Environmental Governance in China", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PIA5711.htm" }
+          ]
+        }
+      ]
+    }
+  ]
+}

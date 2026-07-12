@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-015",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSDTTI.htm",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Complete all six Core Courses (18 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSDTTI.htm",
+          "courses": [
+            { "code": "IS5313", "name": "Foundations of Information and Electronic Business Systems", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSDTTI.htm" },
+            { "code": "IS5940", "name": "Innovation and Technology Entrepreneurship", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSDTTI.htm" },
+            { "code": "IS6000", "name": "Research Methods for the IS Manager", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSDTTI.htm" },
+            { "code": "IS6602", "name": "Information Systems Consulting", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSDTTI.htm" },
+            { "code": "IS6608", "name": "Digital Transformation and Technological Innovation in the Organisation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSDTTI.htm" },
+            { "code": "IS6640", "name": "Information Systems Planning and Strategy", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSDTTI.htm" }
+          ]
+        },
+        {
+          "id": "electives",
+          "name": "Elective Courses",
+          "type": "elective_project",
+          "creditsRequired": 12,
+          "ruleText": "Complete 12 elective credit units from the official pool. IS6912 is a 6-credit Project option; the other listed electives carry 3 credit units.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSDTTI.htm",
+          "courses": [
+            { "code": "IS5238", "name": "Business Practice Internship", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSDTTI.htm" },
+            { "code": "IS5312", "name": "Analytical Programming with Python", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSDTTI.htm" },
+            { "code": "IS5413", "name": "Database Management Systems", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSDTTI.htm" },
+            { "code": "IS5540", "name": "Project Management and Quality Assurance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSDTTI.htm" },
+            { "code": "IS5542", "name": "Generative Artificial Intelligence for Business", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSDTTI.htm" },
+            { "code": "IS5740", "name": "Management Support and Business Intelligence Systems", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSDTTI.htm" },
+            { "code": "IS6200", "name": "Blockchain Technology and Business Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSDTTI.htm" },
+            { "code": "IS6335", "name": "Data Visualization", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSDTTI.htm" },
+            { "code": "IS6400", "name": "Business Data Analytics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSDTTI.htm" },
+            { "code": "IS6423", "name": "Artificial Intelligence for Business Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSDTTI.htm" },
+            { "code": "IS6523", "name": "Information Systems Infrastructure and Security Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSDTTI.htm" },
+            { "code": "IS6620", "name": "Large Language Model with Prompt Engineering for Business", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSDTTI.htm" },
+            { "code": "IS6912", "name": "Information Systems Project", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSDTTI.htm" },
+            { "code": "IS6940C", "name": "Information Technology Leadership Forum", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSDTTI.htm" }
+          ]
+        }
+      ]
+    }
+  ]
+}

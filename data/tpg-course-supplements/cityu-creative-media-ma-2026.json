@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-056",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm",
+      "ruleReviewStatus": "verified",
+      "tracks": [
+        { "id": "CITYU-TPG-056-TECHNOFUTURES", "name": "Technofutures: Theory and Culture", "type": "Stream", "creditsRequired": 30, "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+        { "id": "CITYU-TPG-056-INFLUENCER-STUDIES", "name": "Influencer Studies", "type": "Stream", "creditsRequired": 30, "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+        { "id": "CITYU-TPG-056-EXPANDED-CURATION", "name": "Expanded Curation", "type": "Stream", "creditsRequired": 30, "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" }
+      ],
+      "courseGroups": [
+        {
+          "id": "technofutures-core",
+          "name": "Technofutures Stream Core Courses",
+          "type": "track_core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Technofutures: Theory and Culture Stream students complete all four Stream Core Courses (12 credit units).",
+          "appliesToTrackIds": ["CITYU-TPG-056-TECHNOFUTURES"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm",
+          "courses": [
+            { "code": "SM5303", "name": "Technofutures: Critical Approaches to the Metaverse, AI, and Blockchain", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-056-TECHNOFUTURES"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM5325", "name": "Introduction to Media and Cultural Studies", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-056-TECHNOFUTURES"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM6325", "name": "Philosophy of Technology and New Media", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-056-TECHNOFUTURES"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM6333", "name": "World Making: Artistic Strategies for Contingent Systems", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-056-TECHNOFUTURES"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" }
+          ]
+        },
+        {
+          "id": "influencer-studies-core",
+          "name": "Influencer Studies Stream Core Courses",
+          "type": "track_core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Influencer Studies Stream students complete all four Stream Core Courses (12 credit units).",
+          "appliesToTrackIds": ["CITYU-TPG-056-INFLUENCER-STUDIES"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm",
+          "courses": [
+            { "code": "SM5351", "name": "Introduction to Influencer Studies", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-056-INFLUENCER-STUDIES"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM5352", "name": "Influencer Techniques: Aesthetics, Narratives, and Audience", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-056-INFLUENCER-STUDIES"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM6349", "name": "Platform Cultures", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-056-INFLUENCER-STUDIES"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM6350", "name": "Videographic Criticism", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-056-INFLUENCER-STUDIES"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" }
+          ]
+        },
+        {
+          "id": "expanded-curation-core",
+          "name": "Expanded Curation Stream Core Courses",
+          "type": "track_core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Expanded Curation Stream students complete all four Stream Core Courses (12 credit units).",
+          "appliesToTrackIds": ["CITYU-TPG-056-EXPANDED-CURATION"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm",
+          "courses": [
+            { "code": "SM5348", "name": "Curating Creative Media", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-056-EXPANDED-CURATION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM5349", "name": "Distributed Curation", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-056-EXPANDED-CURATION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM6346", "name": "Social Media, Aesthetics, and Curation", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-056-EXPANDED-CURATION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM6347", "name": "Protocols and Techniques for Decentralised Curation", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-056-EXPANDED-CURATION"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" }
+          ]
+        },
+        {
+          "id": "electives",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Complete 18 credit units of electives. Students may take courses from any of the three official concentrations. SM6317 Research Project in Media Studies is a 6-credit optional elective and requires at least 12 earned credit units before enrolment.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm",
+          "courses": [
+            { "code": "SM5312", "name": "Interactive Media I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM5313", "name": "Interactive Media II", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM5316", "name": "Topics in Media Art I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM5329", "name": "Arts Management and Curatorship", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM5333", "name": "Prototyping New Cinema: The Future Moving Image", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM5344", "name": "Abstract and Experimental Animation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM6305", "name": "Media Art: Theory and Practice I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM6316", "name": "Media Art: Theory and Practice II", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM6322", "name": "The Art Market: Transaction, Activism, Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM6329", "name": "History and Making of Exhibitions", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM6331", "name": "Digital Media for Curating", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM6343", "name": "Collaborative Topics in Media Art", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM6348", "name": "Under the Skin of Fashion", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM6351", "name": "Information Visualization", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM5318", "name": "Topics in Media History and Theory I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM5323", "name": "Topics in Media History and Theory II", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM5331", "name": "Topics in Media History and Theory III", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM5335", "name": "Archaeology of New Media Art", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM5336", "name": "Art in the Information Age: Creative Act, Art Object, Aesthetic Perception", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM5337", "name": "Aesthetics Beyond the Anthropocene", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM5356", "name": "Art, Technology, and Queering", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM5357", "name": "Media and Human Experiences: Anxiety, Nostalgia, and Transcendence", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM6317", "name": "Research Project in Media Studies", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM6323", "name": "Critical Ludology: Games, Playability and New Media Art", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM6344", "name": "Technology and Aesthetics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM5326", "name": "Gender in Popular Media", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/SM5326.htm" },
+            { "code": "SM5327", "name": "Chinese Cinema", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM5334", "name": "Navigating Social Media: Culture, Aesthetics, and Technology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM5339", "name": "Art and Activist Games Workshop", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM5343", "name": "Law, Policies and Global Media Platforms", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM5355", "name": "Korean Cinema", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM5358", "name": "Qualitative Research in Social Computing and Art Technology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM5359", "name": "Psychology of Interactive Media and Games", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM5360", "name": "Making Interactive Things", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM6319", "name": "Privacy and Surveillance in Art and Culture", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM6324", "name": "Sensory Ethnography: Critical and Creative Practices", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM6328", "name": "Analysis and Criticism of Computer Games", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM6332", "name": "Computer Games and Society", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" },
+            { "code": "SM6345", "name": "Media Cultures Theory X Practice Summer Seminar", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm" }
+          ]
+        }
+      ]
+    }
+  ]
+}

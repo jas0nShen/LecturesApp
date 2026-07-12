@@ -1067,15 +1067,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Financial Mathematics",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 36,
       "sourceUrl": "",
-      "dataLevel": "programme",
+      "dataLevel": "structure",
       "academicYear": "2026-27",
-      "courseVerificationStatus": "blocked",
+      "courseVerificationStatus": "verified",
       "courseVerifiedAt": "2026-07-11",
       "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/",
-      "courseStatusNote": "The official curriculum was collected, but course-detail or rule-group review is still incomplete.",
-      "courseCount": 0
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 24
     },
     {
       "id": "HKUST-TPG-007",
@@ -1154,15 +1156,60 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Global China Studies",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 24,
       "sourceUrl": "",
-      "dataLevel": "programme",
+      "dataLevel": "structure",
       "academicYear": "2026-27",
-      "courseVerificationStatus": "blocked",
+      "courseVerificationStatus": "verified",
       "courseVerifiedAt": "2026-07-11",
       "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
-      "courseStatusNote": "The official curriculum was collected, but course-detail or rule-group review is still incomplete.",
-      "courseCount": 0
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "HKUST-TPG-010-HISTORY-CULTURE",
+          "name": "History and Culture",
+          "type": "Concentration",
+          "creditsRequired": 24,
+          "ruleText": "Optional disciplinary Concentration: complete at least 9 credits (three courses) from the official History and Culture list.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/"
+        },
+        {
+          "id": "HKUST-TPG-010-POLITICAL-SCIENCE",
+          "name": "Political Science",
+          "type": "Concentration",
+          "creditsRequired": 24,
+          "ruleText": "Optional disciplinary Concentration: complete at least 9 credits (three courses) from the official Political Science list.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/"
+        },
+        {
+          "id": "HKUST-TPG-010-QUANTITATIVE-SOCIAL-SCIENCE",
+          "name": "Quantitative Social Science",
+          "type": "Concentration",
+          "creditsRequired": 24,
+          "ruleText": "Optional disciplinary Concentration: complete at least 9 credits (three courses) from the official Quantitative Social Science list.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/"
+        },
+        {
+          "id": "HKUST-TPG-010-SOCIOLOGY",
+          "name": "Sociology",
+          "type": "Concentration",
+          "creditsRequired": 24,
+          "ruleText": "Optional disciplinary Concentration: complete at least 9 credits (three courses) from the official Sociology list.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/"
+        },
+        {
+          "id": "HKUST-TPG-010-ACADEMIC-RESEARCH",
+          "name": "Academic Research",
+          "type": "Concentration",
+          "creditsRequired": 42,
+          "ruleText": "Complete the existing 24-credit coursework requirement plus 3 credits of Research Methodology, MGCS 6200 (3 credits), and MGCS 6980 with MGCS 6982 (12 credits).",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/"
+        }
+      ],
+      "trackSelectionOptional": true,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 36
     },
     {
       "id": "HKUST-TPG-011",
@@ -1170,15 +1217,33 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Arts Program in International Language Education",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 24,
       "sourceUrl": "",
-      "dataLevel": "programme",
+      "dataLevel": "structure",
       "academicYear": "2026-27",
-      "courseVerificationStatus": "blocked",
+      "courseVerificationStatus": "verified",
       "courseVerifiedAt": "2026-07-11",
       "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/",
-      "courseStatusNote": "The official curriculum was collected, but course-detail or rule-group review is still incomplete.",
-      "courseCount": 0
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "HKUST-TPG-011-TESL",
+          "name": "Teaching English as a Second Language",
+          "type": "Concentration",
+          "ruleText": "Complete at least two TESL Concentration elective courses (6 credits) within the 12-credit elective requirement.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/"
+        },
+        {
+          "id": "HKUST-TPG-011-TCSL",
+          "name": "Teaching Chinese as a Second Language",
+          "type": "Concentration",
+          "ruleText": "Complete at least two TCSL Concentration elective courses (6 credits) within the 12-credit elective requirement.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/"
+        }
+      ],
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 25
     },
     {
       "id": "HKUST-TPG-012",
@@ -1204,15 +1269,35 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Business Administration Program",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 45,
       "sourceUrl": "",
-      "dataLevel": "programme",
+      "dataLevel": "structure",
       "academicYear": "2026-27",
-      "courseVerificationStatus": "blocked",
+      "courseVerificationStatus": "verified",
       "courseVerifiedAt": "2026-07-11",
       "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/",
-      "courseStatusNote": "The official curriculum was collected, but course-detail or rule-group review is still incomplete.",
-      "courseCount": 0
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "HKUST-TPG-013-FULL-TIME",
+          "name": "Full-time MBA",
+          "type": "Award Path",
+          "creditsRequired": 52,
+          "ruleText": "Complete 52 credits: 2 Required Immersion, 16 Core, 33 Elective and 1 Required Wrap-up credit.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/"
+        },
+        {
+          "id": "HKUST-TPG-013-PART-TIME",
+          "name": "Part-time MBA",
+          "type": "Award Path",
+          "creditsRequired": 45,
+          "ruleText": "Complete 45 credits: 2 Required Immersion, 16 Core and 27 Elective credits.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/"
+        }
+      ],
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 10
     },
     {
       "id": "HKUST-TPG-014",
@@ -1788,15 +1873,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Telecommunications",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
+      "dataLevel": "structure",
       "academicYear": "2026-27",
-      "courseVerificationStatus": "blocked",
+      "courseVerificationStatus": "verified",
       "courseVerifiedAt": "2026-07-11",
       "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-telecom/",
-      "courseStatusNote": "The official curriculum was collected, but course-detail or rule-group review is still incomplete.",
-      "courseCount": 0
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 11
     },
     {
       "id": "HKUST-TPG-043",
@@ -1804,15 +1891,52 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science Program in Economics",
       "faculty": "",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
+      "dataLevel": "structure",
       "academicYear": "2026-27",
-      "courseVerificationStatus": "blocked",
+      "courseVerificationStatus": "verified",
       "courseVerifiedAt": "2026-07-11",
       "courseSourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/",
-      "courseStatusNote": "The official curriculum was collected, but course-detail or rule-group review is still incomplete.",
-      "courseCount": 0
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "HKUST-TPG-043-AI-DATA-ANALYTICS",
+          "name": "AI and Data Analytics",
+          "type": "Concentration",
+          "creditsRequired": 30,
+          "ruleText": "Optional professional Concentration: complete four approved courses (8 credits). The approved course list is not published on the Programme page.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/"
+        },
+        {
+          "id": "HKUST-TPG-043-ECONOMIC-POLICY",
+          "name": "Economic Policy",
+          "type": "Concentration",
+          "creditsRequired": 30,
+          "ruleText": "Optional professional Concentration: complete four approved courses (8 credits). The approved course list is not published on the Programme page.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/"
+        },
+        {
+          "id": "HKUST-TPG-043-FINANCIAL-ECONOMICS",
+          "name": "Financial Economics",
+          "type": "Concentration",
+          "creditsRequired": 30,
+          "ruleText": "Optional professional Concentration: complete four approved courses (8 credits). The approved course list is not published on the Programme page.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/"
+        },
+        {
+          "id": "HKUST-TPG-043-RESEARCH-PREPARATION",
+          "name": "Research Preparation",
+          "type": "Concentration",
+          "creditsRequired": 36,
+          "ruleText": "Complete at least 36 credits, including 14 Core, at least 16 Elective credits with 6 credits at PhD level, plus ECON 6980.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/"
+        }
+      ],
+      "trackSelectionOptional": true,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 6
     },
     {
       "id": "HKUST-TPG-044",
@@ -3767,12 +3891,19 @@ module.exports = {
       "id": "CITYU-TPG-001",
       "universityCode": "CITYU",
       "programmeCode": "P88",
-      "name": "Unknown Programme",
+      "name": "MSc Venture Creation",
       "faculty": "Cityuhk Academy Of Innovation",
-      "creditsRequired": null,
+      "creditsRequired": 36,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/cityuhk-academy-of-innovation/cityuhk-academy-of-innovation/p88",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSVC.htm",
+      "courseStatusNote": "",
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 30
     },
     {
       "id": "CITYU-TPG-002",
@@ -3861,8 +3992,15 @@ module.exports = {
       "faculty": "College Of Business",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/department-of-accountancy/p02",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-business/department-of-accountancy/p02",
+      "courseStatusNote": "",
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 15
     },
     {
       "id": "CITYU-TPG-007",
@@ -3926,8 +4064,31 @@ module.exports = {
       "faculty": "College Of Business",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/department-of-accountancy/p10",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-business/department-of-accountancy/p10",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-010-PA",
+          "name": "Professional Accounting",
+          "type": "Stream",
+          "creditsRequired": 30,
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSPACG.htm"
+        },
+        {
+          "id": "CITYU-TPG-010-CG",
+          "name": "Corporate Governance",
+          "type": "Stream",
+          "creditsRequired": 30,
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSPACG.htm"
+        }
+      ],
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 19
     },
     {
       "id": "CITYU-TPG-011",
@@ -3960,6 +4121,11 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/department-of-economics-and-finance/p13",
       "dataLevel": "programme",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/department-of-economics-and-finance/p13",
+      "courseStatusNote": "The official 2026 admissions page states a 30-credit graduation requirement but enumerates only five Core Courses (15 credits) and three Electives (9 credits). The missing 6-credit requirement is not identified by the current official source, so the structure cannot be published without manual confirmation.",
       "courseCount": 0
     },
     {
@@ -3988,8 +4154,15 @@ module.exports = {
       "faculty": "College Of Business",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/department-of-information-systems/p16",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSDTTI.htm",
+      "courseStatusNote": "",
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 20
     },
     {
       "id": "CITYU-TPG-016",
@@ -3999,8 +4172,15 @@ module.exports = {
       "faculty": "College Of Business",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/department-of-marketing/p18",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/department-of-marketing/p18",
+      "courseStatusNote": "",
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 18
     },
     {
       "id": "CITYU-TPG-017",
@@ -4028,8 +4208,31 @@ module.exports = {
       "faculty": "College Of Business",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p84",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/college-of-business/p84",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-018-IAM",
+          "name": "Information Analytics Management",
+          "type": "Stream",
+          "creditsRequired": 30,
+          "sourceUrl": "https://www.cb.cityu.edu.hk/en/is/msbda"
+        },
+        {
+          "id": "CITYU-TPG-018-QAB",
+          "name": "Quantitative Analysis for Business",
+          "type": "Stream",
+          "creditsRequired": 30,
+          "sourceUrl": "https://www.cb.cityu.edu.hk/dao/mscbda_qab/programme/structure/"
+        }
+      ],
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 31
     },
     {
       "id": "CITYU-TPG-019",
@@ -4039,8 +4242,15 @@ module.exports = {
       "faculty": "College Of Business",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/department-of-information-systems/p85",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSAIB.htm",
+      "courseStatusNote": "",
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 22
     },
     {
       "id": "CITYU-TPG-020",
@@ -4050,8 +4260,15 @@ module.exports = {
       "faculty": "College Of Computing",
       "creditsRequired": 33,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-computer-science/p17",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSEC4.htm",
+      "courseStatusNote": "",
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 36
     },
     {
       "id": "CITYU-TPG-021",
@@ -4105,8 +4322,15 @@ module.exports = {
       "faculty": "College Of Computing",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-data-science/p70",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds",
+      "courseStatusNote": "",
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 31
     },
     {
       "id": "CITYU-TPG-023",
@@ -4222,8 +4446,15 @@ module.exports = {
       "faculty": "College Of Computing",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-computing/department-of-biostatistics/p97",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-computing/department-of-biostatistics/p97",
+      "courseStatusNote": "",
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "verified",
+      "courseCount": 19
     },
     {
       "id": "CITYU-TPG-027",
@@ -4233,8 +4464,31 @@ module.exports = {
       "faculty": "College Of Engineering",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-architecture-and-civil-engineering/p52",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-engineering/department-of-architecture-and-civil-engineering/p52",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-027-CPM",
+          "name": "Construction Project Management",
+          "type": "Stream",
+          "creditsRequired": 30,
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-engineering/department-of-architecture-and-civil-engineering/p52"
+        },
+        {
+          "id": "CITYU-TPG-027-DCM",
+          "name": "Digital Construction Management",
+          "type": "Stream",
+          "creditsRequired": 30,
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-engineering/department-of-architecture-and-civil-engineering/p52"
+        }
+      ],
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 23
     },
     {
       "id": "CITYU-TPG-028",
@@ -4242,10 +4496,40 @@ module.exports = {
       "programmeCode": "P54",
       "name": "MSc Electrical and Electronic Engineering",
       "faculty": "College Of Engineering",
-      "creditsRequired": 45,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-electrical-engineering/p54",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mseee_curriculum",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-028-MSEEE",
+          "name": "MSc Electrical and Electronic Engineering",
+          "type": "Award Path",
+          "creditsRequired": 30,
+          "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mseee_curriculum"
+        },
+        {
+          "id": "CITYU-TPG-028-INDUSTRIAL-RESEARCH",
+          "name": "Industrial Research",
+          "type": "Award Path",
+          "creditsRequired": 45,
+          "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mseee_curriculum"
+        },
+        {
+          "id": "CITYU-TPG-028-BUSINESS-MANAGEMENT",
+          "name": "Business Management",
+          "type": "Award Path",
+          "creditsRequired": 45,
+          "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mseee_curriculum"
+        }
+      ],
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 44
     },
     {
       "id": "CITYU-TPG-029",
@@ -4255,8 +4539,15 @@ module.exports = {
       "faculty": "College Of Engineering",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p56",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/sye/msem.htm",
+      "courseStatusNote": "",
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 41
     },
     {
       "id": "CITYU-TPG-030",
@@ -4282,10 +4573,40 @@ module.exports = {
       "programmeCode": "P59",
       "name": "MSc Computer and Information Engineering",
       "faculty": "College Of Engineering",
-      "creditsRequired": 45,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-electrical-engineering/p59",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-031-MSCIE",
+          "name": "MSc Computer and Information Engineering",
+          "type": "Award Path",
+          "creditsRequired": 30,
+          "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum"
+        },
+        {
+          "id": "CITYU-TPG-031-INDUSTRIAL-RESEARCH",
+          "name": "Industrial Research",
+          "type": "Award Path",
+          "creditsRequired": 45,
+          "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum"
+        },
+        {
+          "id": "CITYU-TPG-031-BUSINESS-MANAGEMENT",
+          "name": "Business Management",
+          "type": "Award Path",
+          "creditsRequired": 45,
+          "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum"
+        }
+      ],
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 54
     },
     {
       "id": "CITYU-TPG-032",
@@ -4295,8 +4616,29 @@ module.exports = {
       "faculty": "College Of Engineering",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-architecture-and-civil-engineering/p60",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-032-CIVIL-ENGINEERING",
+          "name": "Civil Engineering",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm"
+        },
+        {
+          "id": "CITYU-TPG-032-BUILDING-ENVIRONMENT-SUSTAINABILITY",
+          "name": "Building Environment and Sustainability",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm"
+        }
+      ],
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 27
     },
     {
       "id": "CITYU-TPG-033",
@@ -4306,8 +4648,15 @@ module.exports = {
       "faculty": "College Of Engineering",
       "creditsRequired": 60,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-architecture-and-civil-engineering/p64",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-architecture-and-civil-engineering/p64",
+      "courseStatusNote": "",
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 36
     },
     {
       "id": "CITYU-TPG-034",
@@ -4355,8 +4704,15 @@ module.exports = {
       "faculty": "College Of Engineering",
       "creditsRequired": 55,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-architecture-and-civil-engineering/p82",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-engineering/department-of-architecture-and-civil-engineering/p82",
+      "courseStatusNote": "",
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 20
     },
     {
       "id": "CITYU-TPG-036",
@@ -4366,8 +4722,15 @@ module.exports = {
       "faculty": "College Of Engineering",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p86",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm",
+      "courseStatusNote": "",
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 27
     },
     {
       "id": "CITYU-TPG-037",
@@ -4378,7 +4741,14 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89",
+      "courseStatusNote": "",
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 37
     },
     {
       "id": "CITYU-TPG-038",
@@ -4389,7 +4759,37 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-038-FULL-TIME-PROJECT",
+          "name": "Full-time Project Path",
+          "type": "Award Path",
+          "creditsRequired": 30,
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20"
+        },
+        {
+          "id": "CITYU-TPG-038-PART-TIME-PROJECT",
+          "name": "Part-time Project Path",
+          "type": "Award Path",
+          "creditsRequired": 30,
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20"
+        },
+        {
+          "id": "CITYU-TPG-038-PART-TIME-PRACTICUM",
+          "name": "Part-time Counselling Practicum Path",
+          "type": "Award Path",
+          "creditsRequired": 30,
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p20"
+        }
+      ],
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 21
     },
     {
       "id": "CITYU-TPG-039",
@@ -4399,8 +4799,29 @@ module.exports = {
       "faculty": "College Of Liberal Arts And Social Sciences",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-media-and-communication/p25",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-039-MEDIA-DATA-ANALYTICS",
+          "name": "Media Data Analytics",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm"
+        },
+        {
+          "id": "CITYU-TPG-039-DIGITAL-MEDIA",
+          "name": "Digital Media",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACNM.htm"
+        }
+      ],
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "verified",
+      "courseCount": 33
     },
     {
       "id": "CITYU-TPG-040",
@@ -4410,8 +4831,45 @@ module.exports = {
       "faculty": "College Of Liberal Arts And Social Sciences",
       "creditsRequired": 36,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-public-and-international-affairs/p27",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/pg/programme/p27",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-040-PP",
+          "name": "Public Policy",
+          "type": "Stream",
+          "creditsRequired": 36,
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p27"
+        },
+        {
+          "id": "CITYU-TPG-040-PM",
+          "name": "Public Management",
+          "type": "Stream",
+          "creditsRequired": 36,
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p27"
+        },
+        {
+          "id": "CITYU-TPG-040-SC",
+          "name": "Smart Cities",
+          "type": "Stream",
+          "creditsRequired": 36,
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p27"
+        },
+        {
+          "id": "CITYU-TPG-040-GC",
+          "name": "Governance in China",
+          "type": "Stream",
+          "creditsRequired": 36,
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p27"
+        }
+      ],
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 32
     },
     {
       "id": "CITYU-TPG-041",
@@ -4421,8 +4879,41 @@ module.exports = {
       "faculty": "College Of Liberal Arts And Social Sciences",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-linguistics-and-translation/p30",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-041-GENERAL-LINGUISTICS",
+          "name": "General Linguistics",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm"
+        },
+        {
+          "id": "CITYU-TPG-041-CORPUS-EMPIRICAL-LINGUISTICS",
+          "name": "Corpus and Empirical Linguistics",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm"
+        },
+        {
+          "id": "CITYU-TPG-041-PEDAGOGICAL-LINGUISTICS",
+          "name": "Pedagogical Linguistics",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm"
+        },
+        {
+          "id": "CITYU-TPG-041-TRANSLATION-INTERPRETATION",
+          "name": "Translation and Interpretation",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MALS.htm"
+        }
+      ],
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 54
     },
     {
       "id": "CITYU-TPG-042",
@@ -4433,6 +4924,11 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-chinese-and-history/p34",
       "dataLevel": "programme",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cah.cityu.edu.hk/programmes-courses/postgraduate/master-degree/mach-2025/structure",
+      "courseStatusNote": "The CityUHK first-year curriculum is fully enumerated, but the official Peking University curriculum for the 15-credit second year of the Chinese History and Cultural Heritage Stream publishes course names and 1.5-credit values without official course codes. Codes cannot be invented, so the full Programme remains source-blocked.",
       "courseCount": 0
     },
     {
@@ -4443,8 +4939,29 @@ module.exports = {
       "faculty": "College Of Liberal Arts And Social Sciences",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-public-and-international-affairs/p37",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-043-DEVELOPMENT-CHALLENGES",
+          "name": "Development Challenges",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm"
+        },
+        {
+          "id": "CITYU-TPG-043-SUSTAINABILITY-STRATEGIES-POLICIES",
+          "name": "Sustainability Strategies and Policies",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm"
+        }
+      ],
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 29
     },
     {
       "id": "CITYU-TPG-044",
@@ -4454,8 +4971,15 @@ module.exports = {
       "faculty": "College Of Liberal Arts And Social Sciences",
       "creditsRequired": 24,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-public-and-international-affairs/p38",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/pg/programme/p38",
+      "courseStatusNote": "",
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 25
     },
     {
       "id": "CITYU-TPG-045",
@@ -4465,8 +4989,15 @@ module.exports = {
       "faculty": "College Of Liberal Arts And Social Sciences",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-media-and-communication/p39",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm",
+      "courseStatusNote": "",
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "verified",
+      "courseCount": 32
     },
     {
       "id": "CITYU-TPG-046",
@@ -4476,8 +5007,35 @@ module.exports = {
       "faculty": "College Of Liberal Arts And Social Sciences",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-english/p40",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-046-GENERAL",
+          "name": "General Track",
+          "type": "Official study option",
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-english/p40"
+        },
+        {
+          "id": "CITYU-TPG-046-TESL",
+          "name": "Teaching English as a Second Language",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-english/p40"
+        },
+        {
+          "id": "CITYU-TPG-046-LLC",
+          "name": "Literature, Language and Culture",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-english/p40"
+        }
+      ],
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 31
     },
     {
       "id": "CITYU-TPG-047",
@@ -4538,7 +5096,34 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-social-and-behavioural-sciences/p77",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/pg/programme/p77",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-049-SOCIOLOGY",
+          "name": "Sociology",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77"
+        },
+        {
+          "id": "CITYU-TPG-049-CRIMINOLOGY",
+          "name": "Criminology",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77"
+        },
+        {
+          "id": "CITYU-TPG-049-CLINICAL-MENTAL-HEALTH",
+          "name": "Clinical Mental Health Practice",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p77"
+        }
+      ],
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 28
     },
     {
       "id": "CITYU-TPG-050",
@@ -4548,8 +5133,29 @@ module.exports = {
       "faculty": "College Of Liberal Arts And Social Sciences",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-public-and-international-affairs/p78",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-050-HOUSING",
+          "name": "Housing",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm"
+        },
+        {
+          "id": "CITYU-TPG-050-URBAN-MANAGEMENT",
+          "name": "Urban Management",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAHUM.htm"
+        }
+      ],
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 32
     },
     {
       "id": "CITYU-TPG-051",
@@ -4624,8 +5230,38 @@ module.exports = {
       "faculty": "School Of Creative Media",
       "creditsRequired": 54,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-creative-media/school-of-creative-media/p80",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-055-MAIN",
+          "name": "MFACM Main (Without Stream Specification)",
+          "type": "Award Path",
+          "creditsRequired": 54,
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm"
+        },
+        {
+          "id": "CITYU-TPG-055-GAMES",
+          "name": "Games",
+          "type": "Stream",
+          "creditsRequired": 54,
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm"
+        },
+        {
+          "id": "CITYU-TPG-055-HCI",
+          "name": "Human-Computer Interaction",
+          "type": "Stream",
+          "creditsRequired": 54,
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm"
+        }
+      ],
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "verified",
+      "courseCount": 61
     },
     {
       "id": "CITYU-TPG-056",
@@ -4635,8 +5271,38 @@ module.exports = {
       "faculty": "School Of Creative Media",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-creative-media/school-of-creative-media/p81",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-056-TECHNOFUTURES",
+          "name": "Technofutures: Theory and Culture",
+          "type": "Stream",
+          "creditsRequired": 30,
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm"
+        },
+        {
+          "id": "CITYU-TPG-056-INFLUENCER-STUDIES",
+          "name": "Influencer Studies",
+          "type": "Stream",
+          "creditsRequired": 30,
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm"
+        },
+        {
+          "id": "CITYU-TPG-056-EXPANDED-CURATION",
+          "name": "Expanded Curation",
+          "type": "Stream",
+          "creditsRequired": 30,
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MACM.htm"
+        }
+      ],
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "verified",
+      "courseCount": 51
     },
     {
       "id": "CITYU-TPG-057",
@@ -4684,8 +5350,31 @@ module.exports = {
       "faculty": "School Of Law",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-law/school-of-law/p41",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/LLMARBDR.htm",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-058-EXEMPT",
+          "name": "With Commercial Contracts and Legal Concepts Exemption",
+          "type": "Award Path",
+          "creditsRequired": 30,
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p41"
+        },
+        {
+          "id": "CITYU-TPG-058-NON-EXEMPT",
+          "name": "Without Commercial Contracts and Legal Concepts Exemption",
+          "type": "Award Path",
+          "creditsRequired": 33,
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p41"
+        }
+      ],
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 14
     },
     {
       "id": "CITYU-TPG-059",
@@ -4695,8 +5384,36 @@ module.exports = {
       "faculty": "School Of Law",
       "creditsRequired": 72,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-law/school-of-law/p43",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-law/school-of-law/p43",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-059-INTERNATIONAL-COMMERCIAL-LAW",
+          "name": "International Commercial Law",
+          "type": "Specialization",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/JD4.htm"
+        },
+        {
+          "id": "CITYU-TPG-059-ALTERNATIVE-DISPUTE-RESOLUTION",
+          "name": "Alternative Dispute Resolution",
+          "type": "Specialization",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/JD4.htm"
+        },
+        {
+          "id": "CITYU-TPG-059-CHINESE-COMPARATIVE-LAW",
+          "name": "Chinese and Comparative Law",
+          "type": "Specialization",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/JD4.htm"
+        }
+      ],
+      "trackSelectionOptional": true,
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 94
     },
     {
       "id": "CITYU-TPG-060",
@@ -4706,8 +5423,15 @@ module.exports = {
       "faculty": "School Of Law",
       "creditsRequired": 30,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-law/school-of-law/p45",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-law/school-of-law/p45",
+      "courseStatusNote": "",
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "verified",
+      "courseCount": 18
     },
     {
       "id": "CITYU-TPG-061",
@@ -4728,8 +5452,29 @@ module.exports = {
       "faculty": "School Of Law",
       "creditsRequired": 12,
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-law/school-of-law/p93",
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-12",
+      "courseSourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/school-of-law/school-of-law/p93",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-062-TRACK-A",
+          "name": "Track A — Common Law Graduates",
+          "type": "Track",
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/school-of-law/school-of-law/p93"
+        },
+        {
+          "id": "CITYU-TPG-062-TRACK-B",
+          "name": "Track B — Non-law or Non-common Law Graduates",
+          "type": "Track",
+          "sourceUrl": "https://www.cityu.edu.hk/pg/programme/program-list/2026/school-of-law/school-of-law/p93"
+        }
+      ],
+      "creditUnit": "credit units",
+      "ruleReviewStatus": "verified",
+      "courseCount": 10
     },
     {
       "id": "HKBU-TPG-001",

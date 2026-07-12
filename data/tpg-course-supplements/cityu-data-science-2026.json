@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-022",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete the five listed Core Courses (15 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds",
+          "courses": [
+            { "code": "SDSC5001", "name": "Statistical Machine Learning I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" },
+            { "code": "SDSC5002", "name": "Exploratory Data Analysis and Visualization", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" },
+            { "code": "SDSC5003", "name": "Storing and Retrieving Data", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" },
+            { "code": "SDSC6001", "name": "Statistical Machine Learning II", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" },
+            { "code": "SDSC6002", "name": "Research Projects for Data Science", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" }
+          ]
+        },
+        {
+          "id": "electives",
+          "name": "Elective Courses",
+          "type": "elective_dissertation",
+          "creditsRequired": 15,
+          "ruleText": "Complete 15 elective credit units. The full MSc award may be completed with taught courses only, or with taught courses plus the 6-credit SDSC6006 Dissertation. Elective offerings remain subject to resources and enrolment.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds",
+          "courses": [
+            { "code": "CS5285", "name": "Information Security for eCommerce", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" },
+            { "code": "CS5487", "name": "Machine Learning: Principles and Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" },
+            { "code": "CS6290", "name": "Privacy-enhancing Technologies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" },
+            { "code": "CS6493", "name": "Natural Language Processing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" },
+            { "code": "SDSC6003", "name": "Bayesian Data Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" },
+            { "code": "SDSC6004", "name": "Topics of Artificial Intelligence for Smart Cities", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" },
+            { "code": "SDSC6006", "name": "Dissertation", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" },
+            { "code": "SDSC6007", "name": "Dynamic Programming and Reinforcement Learning", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" },
+            { "code": "SDSC6008", "name": "Design of Experiments", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" },
+            { "code": "SDSC6009", "name": "Machine Learning at Scale", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" },
+            { "code": "SDSC6011", "name": "Optimization for Data Science", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" },
+            { "code": "SDSC6012", "name": "Time Series and Recurrent Neural Networks", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" },
+            { "code": "SDSC6013", "name": "Topics in Financial Engineering and Technology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" },
+            { "code": "SDSC6014", "name": "Networked Life and Data Science", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" },
+            { "code": "SDSC6015", "name": "Stochastic Optimization for Machine Learning", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" },
+            { "code": "SDSC6016", "name": "Predictive Analytics and Financial Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" },
+            { "code": "SDSC6017", "name": "Internship Project", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" },
+            { "code": "SDSC6018", "name": "Health Data Analytics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" },
+            { "code": "SDSC6019", "name": "Embodied AI and Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" },
+            { "code": "SDSC8007", "name": "Deep Learning", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" },
+            { "code": "SDSC8008", "name": "Data-driven Operations Research", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" },
+            { "code": "SDSC8009", "name": "Data Mining and Knowledge Discovery", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" },
+            { "code": "SDSC8011", "name": "Social Foundations of Data Science", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" },
+            { "code": "SDSC8013", "name": "Statistical Methods for Categorical Data Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" },
+            { "code": "SDSC8014", "name": "Online Learning and Optimization", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" },
+            { "code": "SDSC8016", "name": "Deep Learning for Computer Vision", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ds.cityu.edu.hk/programmes/postgraduate-programmes/msds" }
+          ]
+        }
+      ]
+    }
+  ]
+}

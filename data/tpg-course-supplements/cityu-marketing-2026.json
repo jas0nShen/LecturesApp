@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-016",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/department-of-marketing/p18",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Complete all six Core Courses (18 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cb.cityu.edu.hk/mkt/mscmkt/about/ProgrammeStructure/",
+          "courses": [
+            { "code": "MKT5610", "name": "Marketing Strategy and Planning", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/MKT5610.htm" },
+            { "code": "MKT5611", "name": "Consumer / Buyer Behaviour", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/MKT5611.htm" },
+            { "code": "MKT5612", "name": "Applied Marketing Research", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/MKT5612.htm" },
+            { "code": "MKT5616", "name": "Marketing Innovation and Practicum", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/MKT5616.htm" },
+            { "code": "MKT6614", "name": "Advanced Marketing Analytics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/MKT6614.htm" },
+            { "code": "MKT6615", "name": "Marketing Engineering", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/MKT6615.htm" }
+          ]
+        },
+        {
+          "id": "programme-electives",
+          "name": "Programme Electives",
+          "type": "elective",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete at least 12 credit units of electives. The official programme structure lists these twelve Programme Electives. With Programme Director approval, up to 3 credit units may instead come from another taught postgraduate course offered by a College of Business department; that broader pool is not enumerated here and must be checked manually.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cb.cityu.edu.hk/mkt/mscmkt/about/ProgrammeStructure/",
+          "courses": [
+            { "code": "MKT5640", "name": "Forum on Marketing Practice and Career Development", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/MKT5640.htm" },
+            { "code": "MKT5641", "name": "Chinese Business Culture and Marketing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/MKT5641.htm" },
+            { "code": "MKT5642", "name": "Financial Services Marketing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/MKT5642.htm" },
+            { "code": "MKT5643", "name": "Global Marketing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/MKT5643.htm" },
+            { "code": "MKT5644", "name": "Digital Marketing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/MKT5644.htm" },
+            { "code": "MKT5645", "name": "Customer Relationship Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/MKT5645.htm" },
+            { "code": "MKT5646", "name": "Advertising and Integrated Marketing Communications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/MKT5646.htm" },
+            { "code": "MKT5647", "name": "Strategic Marketing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/MKT5647.htm" },
+            { "code": "MKT5648", "name": "Social Media Marketing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/MKT5648.htm" },
+            { "code": "MKT5649", "name": "Managing Services and Experiences", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/MKT5649.htm" },
+            { "code": "MKT6613", "name": "Brand Marketing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/MKT6613.htm" },
+            { "code": "MKT6648", "name": "Advanced Marketing Practices", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/MKT6648.htm" }
+          ]
+        }
+      ]
+    }
+  ]
+}

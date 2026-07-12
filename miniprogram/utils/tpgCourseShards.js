@@ -8,9 +8,9 @@ const nodeLoaders = {
 const counts = {
   "HKU": 6,
   "CUHK": 0,
-  "HKUST": 46,
+  "HKUST": 52,
   "POLYU": 4,
-  "CITYU": 20,
+  "CITYU": 55,
   "HKBU": 0,
   "EDUHK": 0,
   "LINGNAN": 0

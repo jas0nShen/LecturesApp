@@ -9,8 +9,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 76);
-  assert.equal(coverage.courseCount, 1499);
+  assert.equal(coverage.programmeWithCoursesCount, 117);
+  assert.equal(coverage.courseCount, 2726);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -29,8 +29,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 76);
-  assert.equal(rows.length, 76);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 117);
+  assert.equal(rows.length, 117);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
@@ -115,6 +115,137 @@ test('HKUST Social Science keeps the Psychology Concentration optional and does 
   assert.equal(tpgService.getProgrammeCourse(programme.id, 'MASS 5980', track.id).name, 'Understanding Personality');
   assert.equal(tpgService.getProgrammeCourse(programme.id, 'MASS 5980', track.id).credits, 3);
   assert.match(required.ruleText, /announced by the Programme Office each term/);
+});
+
+test('HKUST Telecommunications preserves its 24-credit pool and repeatable 6-credit Project', () => {
+  const programme = tpgService.getProgramme('HKUST-TPG-042');
+  const required = programme.courseGroups.find((group) => group.name === 'Required Courses');
+  const project = programme.courseGroups.find((group) => group.name === 'MSc Project');
+  const topics = required.courses.find((course) => course.code === 'EESM 5910');
+  const projectCourse = project.courses.find((course) => course.code === 'EESM 6980');
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(required.creditsRequired, 24);
+  assert.equal(topics.name, 'Topics in Telecommunications and Network Convergence');
+  assert.equal(topics.credits, 3);
+  assert.equal(project.creditsRequired, 6);
+  assert.equal(projectCourse.creditsMin, 1);
+  assert.equal(projectCourse.creditsMax, 4);
+  assert.match(project.ruleText, /repeat EESM 6980.*6 credits/);
+});
+
+test('HKUST International Language Education filters both official Concentrations', () => {
+  const programme = tpgService.getProgramme('HKUST-TPG-011');
+  const tracks = Object.fromEntries(tpgService.listTracks(programme).map((track) => [track.name, track.id]));
+  const foundation = programme.courseGroups.find((group) => group.name === 'Foundation Courses');
+  const tesl = programme.courseGroups.find((group) => group.name === 'TESL Concentration Elective Pool');
+  const tcsl = programme.courseGroups.find((group) => group.name === 'TCSL Concentration Elective Pool');
+
+  assert.equal(programme.creditsRequired, 24);
+  assert.equal(Object.keys(tracks).length, 2);
+  assert.equal(foundation.creditsRequired, 12);
+  assert.equal(tesl.creditsRequired, 6);
+  assert.equal(tesl.coursesRequired, 2);
+  assert.equal(tcsl.creditsRequired, 6);
+  assert.equal(tcsl.coursesRequired, 2);
+  assert.equal(tpgService.flattenCourses(programme, '', tracks['Teaching English as a Second Language']).length, 18);
+  assert.equal(tpgService.flattenCourses(programme, '', tracks['Teaching Chinese as a Second Language']).length, 16);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'MILE 5005', tracks['Teaching Chinese as a Second Language']), null);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'MILE 5006', tracks['Teaching English as a Second Language']), null);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'MILE 5306', tracks['Teaching Chinese as a Second Language']).credits, 3);
+});
+
+test('HKUST Financial Mathematics preserves minimum Required and maximum Elective credits', () => {
+  const programme = tpgService.getProgramme('HKUST-TPG-006');
+  const required = programme.courseGroups.find((group) => group.name === 'Required Courses');
+  const elective = programme.courseGroups.find((group) => group.name === 'Elective Courses');
+  const course = tpgService.getProgrammeCourse(programme.id, 'MAFS 5110');
+
+  assert.equal(programme.creditsRequired, 36);
+  assert.equal(required.creditsRequired, null);
+  assert.equal(required.creditsMin, 27);
+  assert.equal(required.courses.length, 23);
+  assert.equal(elective.creditsMin, 0);
+  assert.equal(elective.creditsMax, 9);
+  assert.equal(course.name, 'Advanced Data Analysis with Statistical Programming');
+  assert.equal(course.credits, 3);
+  assert.match(required.ruleText, /not all individually mandatory/);
+});
+
+test('HKUST MBA resolves Full-time and Part-time Award Path credits separately', () => {
+  const programme = tpgService.getProgramme('HKUST-TPG-013');
+  const tracks = Object.fromEntries(tpgService.listTracks(programme).map((track) => [track.name, track.id]));
+  const fullTimeGroups = programme.courseGroups.filter((group) => tpgService.appliesToTrack(group, tracks['Full-time MBA']));
+  const partTimeGroups = programme.courseGroups.filter((group) => tpgService.appliesToTrack(group, tracks['Part-time MBA']));
+
+  assert.equal(Object.keys(tracks).length, 2);
+  assert.equal(tpgService.getCreditsRequired(programme, tracks['Full-time MBA']), 52);
+  assert.equal(tpgService.getCreditsRequired(programme, tracks['Part-time MBA']), 45);
+  assert.equal(fullTimeGroups.find((group) => group.name === 'Full-time Advanced Electives').creditsRequired, 33);
+  assert.equal(fullTimeGroups.find((group) => group.name === 'Required Wrap-up Program').creditsRequired, 1);
+  assert.equal(partTimeGroups.find((group) => group.name === 'Part-time Advanced Electives').creditsRequired, 27);
+  assert.equal(partTimeGroups.some((group) => group.name === 'Required Wrap-up Program'), false);
+  assert.equal(tpgService.flattenCourses(programme, '', tracks['Full-time MBA']).length, 10);
+  assert.equal(tpgService.flattenCourses(programme, '', tracks['Part-time MBA']).length, 9);
+});
+
+test('HKUST Economics keeps professional Concentrations optional and Research Preparation at 36 credits', () => {
+  const programme = tpgService.getProgramme('HKUST-TPG-043');
+  const tracks = Object.fromEntries(tpgService.listTracks(programme).map((track) => [track.name, track.id]));
+  const researchGroups = programme.courseGroups.filter((group) => tpgService.appliesToTrack(group, tracks['Research Preparation']));
+  const project = researchGroups.find((group) => group.name === 'Research Preparation Independent Project');
+  const ai = programme.courseGroups.find((group) => group.name === 'AI and Data Analytics Concentration Requirement');
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.trackSelectionOptional, true);
+  assert.equal(Object.keys(tracks).length, 4);
+  assert.equal(tpgService.getCreditsRequired(programme, tracks['Research Preparation']), 36);
+  assert.equal(ai.creditsRequired, 8);
+  assert.equal(ai.coursesRequired, 4);
+  assert.equal(ai.courses.length, 0);
+  assert.equal(project.creditsRequired, 6);
+  assert.equal(project.courses[0].code, 'ECON 6980');
+  assert.equal(tpgService.flattenCourses(programme).length, 5);
+  assert.equal(tpgService.flattenCourses(programme, '', tracks['Research Preparation']).length, 6);
+});
+
+test('HKUST Global China Studies preserves conditional writing, optional disciplinary Concentrations, and the 42-credit research path', () => {
+  const programme = tpgService.getProgramme('HKUST-TPG-010');
+  const tracks = Object.fromEntries(tpgService.listTracks(programme).map((track) => [track.name, track.id]));
+  const writing = programme.courseGroups.find((group) => group.name === 'Conditional Academic Writing Course');
+  const elective = programme.courseGroups.find((group) => group.name === 'Elective Courses');
+  const optionalProject = programme.courseGroups.find((group) => group.name === 'Optional Extra Project');
+  const historyRequirement = programme.courseGroups.find((group) => group.name === 'History and Culture Concentration Requirement');
+  const researchGroups = programme.courseGroups.filter((group) => tpgService.appliesToTrack(group, tracks['Academic Research']));
+  const researchProject = researchGroups.find((group) => group.name === 'Academic Research Project');
+
+  assert.equal(programme.creditsRequired, 24);
+  assert.equal(programme.trackSelectionOptional, true);
+  assert.deepEqual(Object.keys(tracks), [
+    'History and Culture',
+    'Political Science',
+    'Quantitative Social Science',
+    'Sociology',
+    'Academic Research'
+  ]);
+  assert.equal(writing.creditsMin, 0);
+  assert.equal(writing.creditsMax, 3);
+  assert.equal(elective.creditsMin, 12);
+  assert.equal(elective.creditsMax, 15);
+  assert.equal(optionalProject.courses[0].code, 'MGCS 6981');
+  assert.equal(optionalProject.courses[0].credits, 1);
+  assert.equal(optionalProject.courses[0].countsTowardProgrammeCredits, false);
+  assert.equal(historyRequirement.creditsRequired, 9);
+  assert.equal(historyRequirement.coursesRequired, 3);
+  assert.match(historyRequirement.ruleText, /enumerates only four/);
+  assert.equal(tpgService.getCreditsRequired(programme, tracks['Academic Research']), 42);
+  assert.equal(researchGroups.find((group) => group.name === 'Academic Research Methodology').coursesRequired, 1);
+  assert.equal(researchGroups.find((group) => group.name === 'Academic Research Independent Study').courses[0].code, 'MGCS 6200');
+  assert.equal(researchProject.creditsRequired, 12);
+  assert.deepEqual(researchProject.courses.map((course) => course.code), ['MGCS 6980', 'MGCS 6982']);
+  assert.deepEqual(researchProject.courses.map((course) => course.credits), [6, 6]);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'HUMA 5696'), null);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'HUMA 5696', tracks['History and Culture']).credits, 3);
 });
 
 test('HKUST IBTM keeps its bounded core and dynamic official elective requirement', () => {
@@ -476,6 +607,136 @@ test('TPG Track filtering keeps common courses and the selected Track only', () 
   assert.deepEqual(tpgService.flattenCourses(programme).map((item) => item.code), ['C1']);
 });
 
+test('CityU Data Science preserves the current 15-plus-15 structure and optional Dissertation route', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-022');
+  const core = programme.courseGroups.find((group) => group.id === 'core');
+  const elective = programme.courseGroups.find((group) => group.id === 'electives');
+  const dissertation = tpgService.getProgrammeCourse(programme.id, 'SDSC6006');
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(tpgService.getStatus(programme).isComplete, true);
+  assert.equal(tpgService.getStatus(programme).courseCount, 31);
+  assert.equal(core.creditsRequired, 15);
+  assert.equal(core.coursesRequired, 5);
+  assert.equal(core.courses.length, 5);
+  assert.equal(elective.creditsRequired, 15);
+  assert.equal(elective.courses.length, 26);
+  assert.equal(dissertation.name, 'Dissertation');
+  assert.equal(dissertation.credits, 6);
+  assert.match(elective.ruleText, /taught courses only.*taught courses plus.*Dissertation/);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'SDSC6019').name, 'Embodied AI and Applications');
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'SDSC8016').credits, 3);
+});
+
+test('CityU Artificial Intelligence in Business keeps the Business Core as a choice pool', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-019');
+  const aiCore = programme.courseGroups.find((group) => group.id === 'ai-core');
+  const businessCore = programme.courseGroups.find((group) => group.id === 'business-core');
+  const elective = programme.courseGroups.find((group) => group.id === 'electives');
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(tpgService.getStatus(programme).isComplete, true);
+  assert.equal(tpgService.getStatus(programme).courseCount, 22);
+  assert.equal(aiCore.creditsRequired, 9);
+  assert.equal(aiCore.coursesRequired, 3);
+  assert.equal(aiCore.courses.length, 3);
+  assert.equal(businessCore.creditsRequired, 9);
+  assert.equal(businessCore.coursesRequired, 3);
+  assert.equal(businessCore.courses.length, 6);
+  assert.match(businessCore.ruleText, /choices, not all individually mandatory/);
+  assert.equal(elective.creditsRequired, 12);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'IS6912').name, 'Information Systems Project');
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'IS6912').credits, 6);
+});
+
+test('CityU Digital Transformation keeps its 18-plus-12 structure and Project option', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-015');
+  const core = programme.courseGroups.find((group) => group.id === 'core');
+  const elective = programme.courseGroups.find((group) => group.id === 'electives');
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(tpgService.getStatus(programme).courseCount, 20);
+  assert.equal(core.creditsRequired, 18);
+  assert.equal(core.coursesRequired, 6);
+  assert.equal(core.courses.length, 6);
+  assert.equal(elective.creditsRequired, 12);
+  assert.equal(elective.courses.length, 14);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'IS6608').name, 'Digital Transformation and Technological Innovation in the Organisation');
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'IS6912').credits, 6);
+});
+
+test('CityU Venture Creation replaces the stale unknown title and preserves its 21-plus-6-plus-9 structure', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-001');
+  const core = programme.courseGroups.find((group) => group.id === 'core');
+  const coreElectives = programme.courseGroups.find((group) => group.id === 'core-electives');
+  const electives = programme.courseGroups.find((group) => group.id === 'electives');
+
+  assert.equal(programme.name, 'MSc Venture Creation');
+  assert.equal(programme.creditsRequired, 36);
+  assert.equal(tpgService.getStatus(programme).courseCount, 30);
+  assert.equal(core.creditsRequired, 21);
+  assert.equal(core.coursesRequired, 4);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'CAI6001').credits, 9);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'CAI6003').credits, 6);
+  assert.equal(coreElectives.creditsRequired, 6);
+  assert.equal(coreElectives.coursesRequired, 2);
+  assert.equal(coreElectives.courses.length, 3);
+  assert.equal(electives.creditsMin, 9);
+  assert.equal(electives.courses.length, 23);
+});
+
+test('CityU AI-Driven Innovation preserves the complete 12-plus-18 official pool', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-037');
+  const core = programme.courseGroups.find((group) => group.id === 'core');
+  const electives = programme.courseGroups.find((group) => group.id === 'electives');
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(tpgService.getStatus(programme).courseCount, 37);
+  assert.equal(core.creditsRequired, 12);
+  assert.equal(core.coursesRequired, 4);
+  assert.equal(core.courses.length, 4);
+  assert.equal(electives.creditsRequired, 18);
+  assert.equal(electives.coursesRequired, 6);
+  assert.equal(electives.courses.length, 33);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'SYE6602').name, 'AI-Driven Innovation: Seminars and Projects');
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'SYE6610').name, 'AI Innovation Internships');
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'PH6204').credits, 3);
+});
+
+test('CityU Intelligent Semiconductor Manufacturing preserves the taught and Dissertation alternatives', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-036');
+  const core = programme.courseGroups.find((group) => group.id === 'core');
+  const electives = programme.courseGroups.find((group) => group.id === 'electives');
+  const dissertation = tpgService.getProgrammeCourse(programme.id, 'SYE6018');
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(tpgService.getStatus(programme).courseCount, 27);
+  assert.equal(core.creditsRequired, 12);
+  assert.equal(core.coursesRequired, 4);
+  assert.equal(electives.creditsRequired, 18);
+  assert.equal(electives.courses.length, 23);
+  assert.equal(dissertation.name, 'Dissertation');
+  assert.equal(dissertation.credits, 9);
+  assert.match(electives.ruleText, /six 3-credit.*three 3-credit.*9-credit.*Dissertation/);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'SYE6203').name, 'Internship Scheme in Semiconductor Industry');
+});
+
+test('CityU Engineering Management preserves the SYE minimum and Dissertation alternative', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-029');
+  const core = programme.courseGroups.find((group) => group.id === 'core');
+  const electives = programme.courseGroups.find((group) => group.id === 'electives');
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(tpgService.getStatus(programme).courseCount, 41);
+  assert.equal(core.creditsRequired, 12);
+  assert.equal(core.coursesRequired, 4);
+  assert.equal(electives.creditsRequired, 18);
+  assert.equal(electives.courses.length, 37);
+  assert.match(electives.ruleText, /at least 12 credit units of SYE courses/);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'SYE6018').credits, 9);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'SYE8205').name, 'Managerial Economics');
+});
+
 test('CityU Psychology exposes official Streams and filters their course groups', () => {
   const programme = tpgService.getProgramme('CITYU-TPG-048');
   const appliedTrackId = 'CITYU-TPG-048-APPLIED-PSYCHOLOGY';
@@ -822,6 +1083,672 @@ test('CityU Master of Social Work keeps zero-credit workshops outside elective c
   assert.equal(tpgService.getProgrammeCourse(programme.id, 'SS6219').credits, 1);
   assert.equal(tpgService.getProgrammeCourse(programme.id, 'SS5115').credits, 0);
   assert.match(nonCredit.ruleText, /does not satisfy the 6-credit elective requirement/);
+});
+
+test('CityU Civil and Architectural Engineering preserves both Streams and study-mode rules', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-032');
+  const civil = tpgService.flattenCourses(programme, '', 'CITYU-TPG-032-CIVIL-ENGINEERING');
+  const building = tpgService.flattenCourses(programme, '', 'CITYU-TPG-032-BUILDING-ENVIRONMENT-SUSTAINABILITY');
+  const civilCore = programme.courseGroups.find((group) => group.id === 'civil-core');
+  const buildingCore = programme.courseGroups.find((group) => group.id === 'building-core');
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.listTracks(programme).length, 2);
+  assert.equal(tpgService.getStatus(programme).courseCount, 27);
+  assert.deepEqual([civil.length, building.length], [14, 15]);
+  assert.match(civilCore.ruleText, /full-time students complete 15 core credit units/);
+  assert.match(buildingCore.ruleText, /Part-time students complete 6 core credit units/);
+  assert.equal(civil.some((course) => course.code === 'CA6535'), true);
+  assert.equal(civil.some((course) => course.code === 'CA6536'), false);
+  assert.equal(building.some((course) => course.code === 'CA6536'), true);
+  assert.equal(building.some((course) => course.code === 'CA6535'), false);
+  assert.equal([civil, building].every((courses) => courses.some((course) => course.code === 'CA5217')), true);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'CA6535', 'CITYU-TPG-032-CIVIL-ENGINEERING').credits, 9);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'CA6536', 'CITYU-TPG-032-BUILDING-ENVIRONMENT-SUSTAINABILITY').credits, 9);
+});
+
+test('CityU Electronic Commerce preserves its 15-plus-18 structure and project lengths', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-020');
+  const core = programme.courseGroups.find((group) => group.id === 'core');
+  const electives = programme.courseGroups.find((group) => group.id === 'electives');
+
+  assert.equal(programme.creditsRequired, 33);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.getStatus(programme).courseCount, 36);
+  assert.equal(core.creditsRequired, 15);
+  assert.equal(core.coursesRequired, 5);
+  assert.equal(core.courses.length, 5);
+  assert.equal(electives.creditsRequired, 18);
+  assert.equal(electives.courses.length, 31);
+  assert.match(electives.ruleText, /selected combination requires manual audit review/);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'CS6521').credits, 6);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'CS6538').credits, 3);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'EC6001').credits, 6);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'CS6290').name, 'Privacy-enhancing Technologies');
+});
+
+test('CityU Biostatistics uses the Year of Entry 2026 core and elective split', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-026');
+  const core = programme.courseGroups.find((group) => group.id === 'core');
+  const electives = programme.courseGroups.find((group) => group.id === 'electives');
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.equal(tpgService.getStatus(programme).courseCount, 19);
+  assert.deepEqual([core.creditsRequired, core.coursesRequired, core.courses.length], [21, 7, 7]);
+  assert.deepEqual([electives.creditsRequired, electives.coursesRequired, electives.courses.length], [9, 3, 12]);
+  assert.match(electives.ruleText, /Year of Entry 2026/);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'BIOS6903').name, 'Communication and Project Study');
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'PH6204').name, 'Public Health Surveillance and Risk Analysis');
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'BIOS6905').credits, 3);
+});
+
+test('CityU Communication and New Media filters both current Stream compulsory groups', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-039');
+  const analytics = tpgService.flattenCourses(programme, '', 'CITYU-TPG-039-MEDIA-DATA-ANALYTICS');
+  const digital = tpgService.flattenCourses(programme, '', 'CITYU-TPG-039-DIGITAL-MEDIA');
+  const shared = programme.courseGroups.find((group) => group.id === 'shared-stream-electives');
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.equal(tpgService.listTracks(programme).length, 2);
+  assert.equal(tpgService.getStatus(programme).courseCount, 33);
+  assert.deepEqual([analytics.length, digital.length], [30, 30]);
+  assert.deepEqual([shared.creditsRequired, shared.coursesRequired, shared.courses.length], [9, 3, 23]);
+  assert.equal(analytics.some((course) => course.code === 'COM5508'), true);
+  assert.equal(analytics.some((course) => course.code === 'COM5108'), false);
+  assert.equal(digital.some((course) => course.code === 'COM5108'), true);
+  assert.equal(digital.some((course) => course.code === 'COM5508'), false);
+  assert.equal([analytics, digital].every((courses) => courses.some((course) => course.code === 'COM6601')), true);
+  assert.equal([analytics, digital].every((courses) => courses.some((course) => course.code === 'COM5603')), true);
+});
+
+test('CityU Integrated Marketing Communication keeps its bounded 21-plus-9 structure', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-045');
+  const core = programme.courseGroups.find((group) => group.id === 'core');
+  const electives = programme.courseGroups.find((group) => group.id === 'electives');
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.equal(tpgService.getStatus(programme).courseCount, 32);
+  assert.deepEqual([core.creditsRequired, core.coursesRequired, core.courses.length], [21, 7, 7]);
+  assert.deepEqual([electives.creditsRequired, electives.coursesRequired, electives.courses.length], [9, 3, 25]);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'COM6601').name, 'Capstone Project');
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'COM5603').name, 'Dissertation');
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'COM5604').credits, 3);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'COM5513').name, 'AI Communication Ethics and Governance');
+});
+
+test('CityU English Studies preserves all three study paths and the research alternative', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-046');
+  const core = programme.courseGroups.find((group) => group.id === 'core');
+  const electives = programme.courseGroups.find((group) => group.id === 'electives');
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.listTracks(programme).length, 3);
+  assert.equal(tpgService.getStatus(programme).courseCount, 31);
+  assert.deepEqual([core.creditsRequired, core.coursesRequired, core.courses.length], [12, 3, 4]);
+  assert.deepEqual([electives.creditsRequired, electives.coursesRequired, electives.courses.length], [18, 6, 27]);
+  assert.match(core.ruleText, /mutually exclusive/);
+  assert.match(electives.ruleText, /TESL Stream students must include EN5465 and EN6495/);
+  assert.match(electives.ruleText, /Literature, Language and Culture Stream students must include EN6508 and EN6509/);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'EN6941').credits, 6);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'EN6943').name, 'Capstone Project');
+});
+
+test('CityU International Studies preserves its conditional Thesis and Capstone paths', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-044');
+  const core = programme.courseGroups.find((group) => group.id === 'core');
+  const electives = programme.courseGroups.find((group) => group.id === 'electives');
+
+  assert.equal(programme.creditsRequired, 24);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.getStatus(programme).courseCount, 25);
+  assert.deepEqual([core.creditsRequired, core.coursesRequired, core.courses.length], [15, 5, 6]);
+  assert.deepEqual([electives.creditsRequired, electives.coursesRequired, electives.courses.length], [9, 3, 19]);
+  assert.match(core.ruleText, /either the 3-credit PIA6015 Master’s Thesis or the 3-credit PIA6018 MAIS Capstone Project/);
+  assert.match(core.ruleText, /grade A or A\+/);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'PIA6015').credits, 3);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'PIA6018').name, 'MAIS Capstone Project');
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'PIA5026').name, 'Research Design for the Social Sciences');
+});
+
+test('CityU Sustainability and Development Studies filters its Stream research paths', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-043');
+  const development = tpgService.flattenCourses(programme, '', 'CITYU-TPG-043-DEVELOPMENT-CHALLENGES');
+  const sustainability = tpgService.flattenCourses(programme, '', 'CITYU-TPG-043-SUSTAINABILITY-STRATEGIES-POLICIES');
+  const streamPool = programme.courseGroups.find((group) => group.id === 'stream-core-pool');
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.listTracks(programme).length, 2);
+  assert.equal(tpgService.getStatus(programme).courseCount, 29);
+  assert.deepEqual([development.length, sustainability.length], [28, 27]);
+  assert.deepEqual([streamPool.creditsRequired, streamPool.coursesRequired, streamPool.courses.length], [15, 5, 12]);
+  assert.equal(development.some((course) => course.code === 'PIA6019'), true);
+  assert.equal(development.some((course) => course.code === 'PIA6021'), true);
+  assert.equal(development.some((course) => course.code === 'PIA6020'), false);
+  assert.equal(sustainability.some((course) => course.code === 'PIA6020'), true);
+  assert.equal(sustainability.some((course) => course.code === 'PIA6021'), false);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'PIA5058').credits, 2);
+  assert.match(programme.courseGroups.find((group) => group.id === 'exceptional-substitute').ruleText, /does not add an extra graduation requirement/);
+});
+
+test('CityU Housing and Urban Management keeps cross-Stream core and elective roles unique', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-050');
+  const housing = tpgService.flattenCourses(programme, '', 'CITYU-TPG-050-HOUSING');
+  const urban = tpgService.flattenCourses(programme, '', 'CITYU-TPG-050-URBAN-MANAGEMENT');
+  const crossRole = programme.courseGroups.find((group) => group.id === 'cross-stream-role-courses');
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.listTracks(programme).length, 2);
+  assert.equal(tpgService.getStatus(programme).courseCount, 32);
+  assert.deepEqual([housing.length, urban.length], [26, 22]);
+  assert.equal(crossRole.courses.length, 2);
+  assert.equal([housing, urban].every((courses) => courses.some((course) => course.code === 'LW5957')), true);
+  assert.equal([housing, urban].every((courses) => courses.some((course) => course.code === 'PIA5504')), true);
+  assert.equal(housing.some((course) => course.code === 'COM5101'), true);
+  assert.equal(urban.some((course) => course.code === 'COM5101'), false);
+  assert.equal(urban.some((course) => course.code === 'SDSC6004'), true);
+  assert.equal(housing.some((course) => course.code === 'SDSC6004'), false);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'PIA6803').credits, 2);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'PIA6804').credits, 4);
+});
+
+test('CityU Patent Law Certificate resolves both 12-credit Track structures', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-062');
+  const trackA = tpgService.flattenCourses(programme, '', 'CITYU-TPG-062-TRACK-A');
+  const trackB = tpgService.flattenCourses(programme, '', 'CITYU-TPG-062-TRACK-B');
+  const status = tpgService.getStatus(programme);
+
+  assert.equal(programme.creditsRequired, 12);
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.equal(tpgService.listTracks(programme).length, 2);
+  assert.equal(status.courseCount, 10);
+  assert.deepEqual([trackA.length, trackB.length], [7, 8]);
+
+  assert.equal(trackA.some((course) => course.code === 'LW6196E'), true);
+  assert.equal(trackA.some((course) => course.code === 'LW6210E'), false);
+  assert.equal(trackA.some((course) => course.code === 'LW6102E'), false);
+  assert.equal(trackB.some((course) => course.code === 'LW6196E'), false);
+  assert.equal(trackB.some((course) => course.code === 'LW6210E'), true);
+  assert.equal(trackB.some((course) => course.code === 'LW6102E'), true);
+
+  for (const courses of [trackA, trackB]) {
+    assert.equal(courses.some((course) => course.code === 'LW6208E'), true);
+    assert.equal(courses.some((course) => course.code === 'LW6209E'), true);
+    assert.equal(courses.some((course) => course.code === 'LW6113E'), true);
+  }
+  assert.equal(trackA.find((course) => course.code === 'LW6208E').credits, 1.5);
+  assert.equal(trackB.find((course) => course.code === 'LW6102E').credits, 3);
+});
+
+test('CityU Language Studies preserves four Stream pools and cross-Stream course roles', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-041');
+  const trackIds = [
+    'CITYU-TPG-041-GENERAL-LINGUISTICS',
+    'CITYU-TPG-041-CORPUS-EMPIRICAL-LINGUISTICS',
+    'CITYU-TPG-041-PEDAGOGICAL-LINGUISTICS',
+    'CITYU-TPG-041-TRANSLATION-INTERPRETATION'
+  ];
+  const pools = trackIds.map((trackId) => tpgService.flattenCourses(programme, '', trackId));
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.listTracks(programme).length, 4);
+  assert.equal(tpgService.getStatus(programme).courseCount, 54);
+  assert.deepEqual(pools.map((courses) => courses.length), [30, 27, 28, 24]);
+  assert.equal(new Set(programme.courseGroups.flatMap((group) => group.courses.map((course) => course.code))).size, 54);
+
+  assert.equal(pools[0].some((course) => course.code === 'LT5401'), true);
+  assert.equal(pools[1].some((course) => course.code === 'LT5422'), true);
+  assert.equal(pools[2].some((course) => course.code === 'LT5412'), true);
+  assert.equal(pools[3].some((course) => course.code === 'LT5603'), true);
+  assert.equal(pools[0].some((course) => course.code === 'LT5603'), false);
+  assert.equal(pools[3].some((course) => course.code === 'LT5412'), false);
+  assert.equal(pools.every((courses) => courses.some((course) => course.code === 'LT5413')), true);
+  assert.equal(pools.every((courses) => courses.some((course) => course.code === 'LT6580')), true);
+  assert.equal(pools[0].find((course) => course.code === 'LT6580').credits, 6);
+  assert.equal(pools[0].find((course) => course.code === 'LT6582').credits, 3);
+  assert.match(programme.courseGroups.find((group) => group.id === 'free-elective-requirement').ruleText, /Master's Project path/);
+});
+
+test('CityU Arbitration and Dispute Resolution resolves exempt and non-exempt Award Paths', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-058');
+  const exempt = tpgService.flattenCourses(programme, '', 'CITYU-TPG-058-EXEMPT');
+  const nonExempt = tpgService.flattenCourses(programme, '', 'CITYU-TPG-058-NON-EXEMPT');
+
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.getCreditsRequired(programme, 'CITYU-TPG-058-EXEMPT'), 30);
+  assert.equal(tpgService.getCreditsRequired(programme, 'CITYU-TPG-058-NON-EXEMPT'), 33);
+  assert.equal(tpgService.getStatus(programme).courseCount, 14);
+  assert.deepEqual([exempt.length, nonExempt.length], [12, 14]);
+  assert.equal(exempt.some((course) => course.code === 'LW5303'), false);
+  assert.equal(nonExempt.some((course) => course.code === 'LW5303'), true);
+  assert.equal(nonExempt.some((course) => course.code === 'LW5400'), true);
+  assert.equal(exempt.find((course) => course.code === 'LW6409A').credits, 6);
+  assert.equal(exempt.find((course) => course.code === 'LW6409B').credits, 6);
+  assert.match(programme.courseGroups.find((group) => group.id === 'masters-research-choice').ruleText, /mutually exclusive/);
+});
+
+test('CityU Applied Social Sciences filters three Streams without duplicating cross-role courses', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-049');
+  const sociology = tpgService.flattenCourses(programme, '', 'CITYU-TPG-049-SOCIOLOGY');
+  const criminology = tpgService.flattenCourses(programme, '', 'CITYU-TPG-049-CRIMINOLOGY');
+  const mentalHealth = tpgService.flattenCourses(programme, '', 'CITYU-TPG-049-CLINICAL-MENTAL-HEALTH');
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.listTracks(programme).length, 3);
+  assert.equal(tpgService.getStatus(programme).courseCount, 28);
+  assert.deepEqual([sociology.length, criminology.length, mentalHealth.length], [13, 13, 12]);
+  assert.equal(new Set(programme.courseGroups.flatMap((group) => group.courses.map((course) => course.code))).size, 28);
+  assert.equal(sociology.some((course) => course.code === 'SS6591'), true);
+  assert.equal(criminology.some((course) => course.code === 'SS6308'), true);
+  assert.equal(mentalHealth.some((course) => course.code === 'SS6404'), true);
+  assert.equal(sociology.some((course) => course.code === 'SS6308'), false);
+  assert.equal(mentalHealth.some((course) => course.code === 'SS5302'), false);
+  assert.equal(sociology.find((course) => course.code === 'SS6591').credits, 6);
+  assert.equal(criminology.find((course) => course.code === 'SS6308').credits, 6);
+});
+
+test('CityU Counselling separates full-time Project and part-time Project or Practicum paths', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-038');
+  const fullTime = tpgService.flattenCourses(programme, '', 'CITYU-TPG-038-FULL-TIME-PROJECT');
+  const partTimeProject = tpgService.flattenCourses(programme, '', 'CITYU-TPG-038-PART-TIME-PROJECT');
+  const practicum = tpgService.flattenCourses(programme, '', 'CITYU-TPG-038-PART-TIME-PRACTICUM');
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.listTracks(programme).length, 3);
+  assert.equal(tpgService.getStatus(programme).courseCount, 21);
+  assert.deepEqual([fullTime.length, partTimeProject.length, practicum.length], [19, 19, 19]);
+  assert.equal(fullTime.some((course) => course.code === 'SS6805B'), true);
+  assert.equal(fullTime.some((course) => course.code === 'SS6805'), false);
+  assert.equal(partTimeProject.some((course) => course.code === 'SS6805'), true);
+  assert.equal(practicum.some((course) => course.code === 'SS6806'), true);
+  assert.equal(practicum.some((course) => course.code === 'SS6805B'), false);
+  assert.equal(fullTime.find((course) => course.code === 'SS6805B').credits, 6);
+  assert.equal(practicum.find((course) => course.code === 'SS6806').credits, 6);
+});
+
+test('CityU Business and Data Analytics filters the official IAM and QAB Stream pools', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-018');
+  const iam = tpgService.flattenCourses(programme, '', 'CITYU-TPG-018-IAM');
+  const qab = tpgService.flattenCourses(programme, '', 'CITYU-TPG-018-QAB');
+  const iamElectives = programme.courseGroups.find((group) => group.id === 'iam-stream-electives');
+  const qabElectives = programme.courseGroups.find((group) => group.id === 'qab-stream-electives');
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.listTracks(programme).length, 2);
+  assert.equal(tpgService.getStatus(programme).courseCount, 31);
+  assert.deepEqual([iam.length, qab.length], [20, 15]);
+  assert.equal(new Set(programme.courseGroups.flatMap((group) => group.courses.map((course) => course.code))).size, 31);
+  assert.equal(iam.some((course) => course.code === 'IS6941'), true);
+  assert.equal(iam.some((course) => course.code === 'MS5218'), false);
+  assert.equal(qab.some((course) => course.code === 'MS5218'), true);
+  assert.equal(qab.some((course) => course.code === 'IS6941'), false);
+  assert.equal(iam.find((course) => course.code === 'IS6912').credits, 6);
+  assert.equal(iam.find((course) => course.code === 'IS6914').credits, 3);
+  assert.match(iamElectives.ruleText, /At least 9 credit units/);
+  assert.match(iamElectives.ruleText, /not compulsory Projects/);
+  assert.match(qabElectives.ruleText, /At least 12 credit units/);
+});
+
+test('CityU MA Creative Media filters three Stream cores and shares the complete elective pool', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-056');
+  const technofutures = tpgService.flattenCourses(programme, '', 'CITYU-TPG-056-TECHNOFUTURES');
+  const influencer = tpgService.flattenCourses(programme, '', 'CITYU-TPG-056-INFLUENCER-STUDIES');
+  const curation = tpgService.flattenCourses(programme, '', 'CITYU-TPG-056-EXPANDED-CURATION');
+  const electives = programme.courseGroups.find((group) => group.id === 'electives');
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.equal(tpgService.listTracks(programme).length, 3);
+  assert.equal(tpgService.getStatus(programme).courseCount, 51);
+  assert.deepEqual([technofutures.length, influencer.length, curation.length], [43, 43, 43]);
+  assert.equal(new Set(programme.courseGroups.flatMap((group) => group.courses.map((course) => course.code))).size, 51);
+  assert.equal(technofutures.some((course) => course.code === 'SM5303'), true);
+  assert.equal(technofutures.some((course) => course.code === 'SM5351'), false);
+  assert.equal(influencer.some((course) => course.code === 'SM5351'), true);
+  assert.equal(curation.some((course) => course.code === 'SM5348'), true);
+  assert.equal([technofutures, influencer, curation].every((courses) => courses.some((course) => course.code === 'SM6317')), true);
+  assert.equal(electives.courses.find((course) => course.code === 'SM6317').credits, 6);
+  assert.equal(electives.creditsRequired, 18);
+});
+
+test('CityU Electrical and Electronic Engineering preserves three Award Paths and cross-pool rules', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-028');
+  const mseee = tpgService.flattenCourses(programme, '', 'CITYU-TPG-028-MSEEE');
+  const industrialResearch = tpgService.flattenCourses(programme, '', 'CITYU-TPG-028-INDUSTRIAL-RESEARCH');
+  const businessManagement = tpgService.flattenCourses(programme, '', 'CITYU-TPG-028-BUSINESS-MANAGEMENT');
+  const core = programme.courseGroups.find((group) => group.id === 'core-courses');
+  const technical = programme.courseGroups.find((group) => group.id === 'technical-electives');
+  const business = programme.courseGroups.find((group) => group.id === 'business-management-electives');
+
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.getCreditsRequired(programme, 'CITYU-TPG-028-MSEEE'), 30);
+  assert.equal(tpgService.getCreditsRequired(programme, 'CITYU-TPG-028-INDUSTRIAL-RESEARCH'), 45);
+  assert.equal(tpgService.getCreditsRequired(programme, 'CITYU-TPG-028-BUSINESS-MANAGEMENT'), 45);
+  assert.equal(tpgService.listTracks(programme).length, 3);
+  assert.equal(tpgService.getStatus(programme).courseCount, 44);
+  assert.deepEqual([mseee.length, industrialResearch.length, businessManagement.length], [43, 41, 43]);
+  assert.equal(new Set(programme.courseGroups.flatMap((group) => group.courses.map((course) => course.code))).size, 44);
+  assert.equal(industrialResearch.some((course) => course.code === 'EE6691'), true);
+  assert.equal(mseee.some((course) => course.code === 'EE6691'), false);
+  assert.equal(industrialResearch.some((course) => course.code === 'EE6680'), false);
+  assert.equal(mseee.find((course) => course.code === 'EE6680').credits, 9);
+  assert.equal(industrialResearch.find((course) => course.code === 'EE6691').credits, 15);
+  assert.equal(core.creditsRequired, 9);
+  assert.equal(technical.creditsRequired, null);
+  assert.match(core.ruleText, /Core and Technical Elective courses.*24 credit units/);
+  assert.match(business.ruleText, /at least 15 and no more than 18/);
+});
+
+test('CityU Computer and Information Engineering preserves EE minimums across three Award Paths', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-031');
+  const mscie = tpgService.flattenCourses(programme, '', 'CITYU-TPG-031-MSCIE');
+  const industrialResearch = tpgService.flattenCourses(programme, '', 'CITYU-TPG-031-INDUSTRIAL-RESEARCH');
+  const businessManagement = tpgService.flattenCourses(programme, '', 'CITYU-TPG-031-BUSINESS-MANAGEMENT');
+  const core = programme.courseGroups.find((group) => group.id === 'core-courses');
+  const technical = programme.courseGroups.find((group) => group.id === 'technical-electives');
+
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.getCreditsRequired(programme, 'CITYU-TPG-031-MSCIE'), 30);
+  assert.equal(tpgService.getCreditsRequired(programme, 'CITYU-TPG-031-INDUSTRIAL-RESEARCH'), 45);
+  assert.equal(tpgService.getCreditsRequired(programme, 'CITYU-TPG-031-BUSINESS-MANAGEMENT'), 45);
+  assert.equal(tpgService.listTracks(programme).length, 3);
+  assert.equal(tpgService.getStatus(programme).courseCount, 54);
+  assert.deepEqual([mscie.length, industrialResearch.length, businessManagement.length], [53, 51, 53]);
+  assert.equal(new Set(programme.courseGroups.flatMap((group) => group.courses.map((course) => course.code))).size, 54);
+  assert.equal(industrialResearch.some((course) => course.code === 'EE6691'), true);
+  assert.equal(mscie.some((course) => course.code === 'EE6691'), false);
+  assert.equal(industrialResearch.some((course) => course.code === 'EE6680D'), false);
+  assert.equal(mscie.find((course) => course.code === 'EE6680D').credits, 9);
+  assert.equal(industrialResearch.find((course) => course.code === 'EE6691').credits, 15);
+  assert.equal(core.creditsRequired, 9);
+  assert.equal(technical.creditsRequired, null);
+  assert.match(core.ruleText, /at least 18 credit units of EE courses/);
+  assert.match(technical.ruleText, /EE6691 is excluded/);
+});
+
+test('CityU MFA Creative Media separates three Thesis Studio paths and shares electives', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-055');
+  const main = tpgService.flattenCourses(programme, '', 'CITYU-TPG-055-MAIN');
+  const games = tpgService.flattenCourses(programme, '', 'CITYU-TPG-055-GAMES');
+  const hci = tpgService.flattenCourses(programme, '', 'CITYU-TPG-055-HCI');
+  const electives = programme.courseGroups.find((group) => group.id === 'electives');
+
+  assert.equal(programme.creditsRequired, 54);
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.equal(tpgService.listTracks(programme).length, 3);
+  assert.equal(tpgService.getStatus(programme).courseCount, 61);
+  assert.deepEqual([main.length, games.length, hci.length], [50, 50, 50]);
+  assert.equal(new Set(programme.courseGroups.flatMap((group) => group.courses.map((course) => course.code))).size, 61);
+  assert.equal(main.some((course) => course.code === 'SM6300'), true);
+  assert.equal(main.some((course) => course.code === 'SM6300A'), false);
+  assert.equal(games.some((course) => course.code === 'SM6300A'), true);
+  assert.equal(hci.some((course) => course.code === 'SM6300B'), true);
+  assert.equal(main.some((course) => course.code === 'SM5345'), true);
+  assert.equal(hci.some((course) => course.code === 'SM5345'), true);
+  assert.equal(games.some((course) => course.code === 'SM5345'), false);
+  assert.equal(main.find((course) => course.code === 'SM6302').credits, 6);
+  assert.equal(electives.courses.find((course) => course.code === 'SM6317').credits, 6);
+  assert.equal(electives.courses.find((course) => course.code === 'SM6342').credits, 6);
+  assert.equal(electives.creditsRequired, 30);
+});
+
+test('CityU International Accounting uses the current 24-plus-6 structure', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-006');
+  const core = programme.courseGroups.find((group) => group.id === 'core-courses');
+  const electives = programme.courseGroups.find((group) => group.id === 'electives');
+  const courses = tpgService.flattenCourses(programme);
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.equal(tpgService.getStatus(programme).courseCount, 15);
+  assert.equal(courses.length, 15);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 15);
+  assert.equal(core.creditsRequired, 24);
+  assert.equal(core.coursesRequired, 8);
+  assert.equal(electives.creditsRequired, 6);
+  assert.equal(electives.coursesRequired, 2);
+  assert.equal(core.courses.some((course) => course.code === 'AC6531'), true);
+  assert.equal(core.courses.find((course) => course.code === 'EF5143').credits, 3);
+  assert.equal(electives.courses.some((course) => course.code === 'AC6693'), true);
+  assert.match(electives.ruleText, /broader College pool.*manually/);
+});
+
+test('CityU Marketing keeps the 18-plus-12 rule and external elective caveat', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-016');
+  const core = programme.courseGroups.find((group) => group.id === 'core-courses');
+  const electives = programme.courseGroups.find((group) => group.id === 'programme-electives');
+  const courses = tpgService.flattenCourses(programme);
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.equal(tpgService.getStatus(programme).courseCount, 18);
+  assert.equal(courses.length, 18);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 18);
+  assert.equal(core.creditsRequired, 18);
+  assert.equal(core.coursesRequired, 6);
+  assert.equal(electives.creditsRequired, 12);
+  assert.equal(electives.coursesRequired, 4);
+  assert.equal(core.courses.find((course) => course.code === 'MKT5616').name, 'Marketing Innovation and Practicum');
+  assert.equal(electives.courses.find((course) => course.code === 'MKT5648').name, 'Social Media Marketing');
+  assert.match(electives.ruleText, /up to 3 credit units.*broader pool.*manually/);
+});
+
+test('CityU Professional Accounting and Corporate Governance filters both official Streams', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-010');
+  const core = programme.courseGroups.find((group) => group.id === 'programme-core');
+  const streamPool = programme.courseGroups.find((group) => group.id === 'stream-course-pools');
+  const pa = tpgService.flattenCourses(programme, '', 'CITYU-TPG-010-PA');
+  const cg = tpgService.flattenCourses(programme, '', 'CITYU-TPG-010-CG');
+  const allCodes = programme.courseGroups.flatMap((group) => group.courses.map((course) => course.code));
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.listTracks(programme).length, 2);
+  assert.equal(tpgService.getStatus(programme).courseCount, 19);
+  assert.equal(new Set(allCodes).size, 19);
+  assert.equal(core.creditsRequired, 12);
+  assert.equal(streamPool.creditsRequired, 18);
+  assert.equal(streamPool.coursesRequired, 6);
+  assert.equal(pa.length, 17);
+  assert.equal(cg.length, 15);
+  assert.equal(pa.some((course) => course.code === 'AC5511'), true);
+  assert.equal(cg.some((course) => course.code === 'AC5511'), false);
+  assert.equal(cg.some((course) => course.code === 'AC5603'), true);
+  assert.equal(pa.some((course) => course.code === 'AC5603'), false);
+  assert.equal(pa.some((course) => course.code === 'AC5890'), true);
+  assert.equal(cg.some((course) => course.code === 'AC5890'), true);
+  assert.match(streamPool.ruleText, /mixed core\/elective roles require manual audit review/i);
+});
+
+test('CityU Construction Management preserves Stream and study-mode Dissertation branches', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-027');
+  const taught = programme.courseGroups.find((group) => group.id === 'stream-taught-course-pools');
+  const dissertations = programme.courseGroups.find((group) => group.id === 'stream-dissertations');
+  const cpm = tpgService.flattenCourses(programme, '', 'CITYU-TPG-027-CPM');
+  const dcm = tpgService.flattenCourses(programme, '', 'CITYU-TPG-027-DCM');
+  const allCodes = programme.courseGroups.flatMap((group) => group.courses.map((course) => course.code));
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.listTracks(programme).length, 2);
+  assert.equal(tpgService.getStatus(programme).courseCount, 23);
+  assert.equal(new Set(allCodes).size, 23);
+  assert.equal(cpm.length, 14);
+  assert.equal(dcm.length, 14);
+  assert.equal(cpm.some((course) => course.code === 'CA6537'), true);
+  assert.equal(cpm.some((course) => course.code === 'CA6538'), false);
+  assert.equal(dcm.some((course) => course.code === 'CA6538'), true);
+  assert.equal(dcm.some((course) => course.code === 'CA6537'), false);
+  assert.equal(dissertations.courses.find((course) => course.code === 'CA6537').credits, 9);
+  assert.equal(dissertations.courses.find((course) => course.code === 'CA6538').credits, 9);
+  assert.equal(taught.courses.find((course) => course.code === 'CA5603').credits, 3);
+  assert.match(taught.ruleText, /part-time student.*not taking the Dissertation.*CA5603/i);
+});
+
+test('CityU Urban Design and Regional Planning preserves the equivalent Studio choice', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-033');
+  const fixedCore = programme.courseGroups.find((group) => group.id === 'fixed-core-courses');
+  const studio = programme.courseGroups.find((group) => group.id === 'urban-design-studio-choice');
+  const electives = programme.courseGroups.find((group) => group.id === 'electives');
+  const courses = tpgService.flattenCourses(programme);
+
+  assert.equal(programme.creditsRequired, 60);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.equal(tpgService.getStatus(programme).courseCount, 36);
+  assert.equal(courses.length, 36);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 36);
+  assert.equal(fixedCore.creditsRequired, 24);
+  assert.equal(fixedCore.coursesRequired, 7);
+  assert.equal(studio.creditsRequired, 9);
+  assert.equal(studio.coursesRequired, 1);
+  assert.equal(studio.courses.length, 4);
+  assert.equal(studio.courses.every((course) => course.credits === 9), true);
+  assert.equal(electives.creditsRequired, 27);
+  assert.equal(electives.coursesRequired, null);
+  assert.equal(electives.courses.find((course) => course.code === 'CA6138').credits, 6);
+  assert.equal(electives.courses.find((course) => course.code === 'CA6533').credits, 9);
+  assert.match(electives.ruleText, /no fixed course count.*wider pool.*manual review/i);
+});
+
+test('CityU Master of Architecture preserves multi-credit Studios and Thesis courses', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-035');
+  const studios = programme.courseGroups.find((group) => group.id === 'themed-studios');
+  const otherCore = programme.courseGroups.find((group) => group.id === 'other-core-courses');
+  const electives = programme.courseGroups.find((group) => group.id === 'electives');
+  const courses = tpgService.flattenCourses(programme);
+
+  assert.equal(programme.creditsRequired, 55);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.getStatus(programme).courseCount, 20);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 20);
+  assert.equal(studios.creditsRequired, 12);
+  assert.equal(studios.coursesRequired, 2);
+  assert.equal(studios.courses.every((course) => course.credits === 6), true);
+  assert.equal(otherCore.creditsRequired, 34);
+  assert.equal(otherCore.coursesRequired, 9);
+  assert.equal(otherCore.courses.find((course) => course.code === 'CA6164').credits, 6);
+  assert.equal(otherCore.courses.find((course) => course.code === 'CA6200').credits, 1);
+  assert.equal(otherCore.courses.find((course) => course.code === 'CA6304').credits, 9);
+  assert.equal(electives.creditsRequired, 9);
+  assert.equal(electives.coursesRequired, 3);
+  assert.match(electives.ruleText, /wider approved pool requires manual review/i);
+});
+
+test('CityU Public Policy and Management filters four official Streams and research paths', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-040');
+  const pmPool = programme.courseGroups.find((group) => group.id === 'public-management-stream-pool');
+  const smartPool = programme.courseGroups.find((group) => group.id === 'smart-cities-stream-pool');
+  const research = programme.courseGroups.find((group) => group.id === 'research-elective');
+  const pp = tpgService.flattenCourses(programme, '', 'CITYU-TPG-040-PP');
+  const pm = tpgService.flattenCourses(programme, '', 'CITYU-TPG-040-PM');
+  const smart = tpgService.flattenCourses(programme, '', 'CITYU-TPG-040-SC');
+  const gc = tpgService.flattenCourses(programme, '', 'CITYU-TPG-040-GC');
+  const allCodes = programme.courseGroups.flatMap((group) => group.courses.map((course) => course.code));
+
+  assert.equal(programme.creditsRequired, 36);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.listTracks(programme).length, 4);
+  assert.equal(tpgService.getStatus(programme).courseCount, 32);
+  assert.equal(new Set(allCodes).size, 32);
+  assert.deepEqual([pp.length, pm.length, smart.length, gc.length], [16, 17, 19, 16]);
+  assert.equal(pmPool.creditsRequired, 12);
+  assert.equal(pmPool.coursesRequired, 4);
+  assert.equal(pmPool.courses.some((course) => course.code === 'PIA6306'), true);
+  assert.equal(smartPool.courses.some((course) => course.code === 'PIA6501'), true);
+  assert.equal(research.creditsRequired, 3);
+  assert.equal(research.coursesRequired, 1);
+  assert.equal(research.courses.find((course) => course.code === 'PIA6604').credits, 3);
+  assert.equal(research.courses.find((course) => course.code === 'PIA6903').credits, 3);
+  assert.match(pmPool.ruleText, /which four.*manual confirmation/i);
+  assert.match(smartPool.ruleText, /which four.*manual confirmation/i);
+});
+
+test('CityU source blockers remain explicit instead of publishing incomplete structures', () => {
+  const economics = tpgService.getProgramme('CITYU-TPG-013');
+  const chineseHistory = tpgService.getProgramme('CITYU-TPG-042');
+
+  assert.equal(economics.courseVerificationStatus, 'blocked');
+  assert.equal(tpgService.hasCourseGroups(economics), false);
+  assert.match(economics.courseStatusNote, /30-credit.*only.*24|missing 6-credit/i);
+  assert.equal(chineseHistory.courseVerificationStatus, 'blocked');
+  assert.equal(tpgService.hasCourseGroups(chineseHistory), false);
+  assert.match(chineseHistory.courseStatusNote, /Peking University.*without official course codes/i);
+});
+
+test('CityU PCLL preserves its mixed-credit 24-plus-6 structure', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-060');
+  const core = programme.courseGroups.find((group) => group.id === 'programme-core');
+  const electives = programme.courseGroups.find((group) => group.id === 'programme-electives');
+  const courses = tpgService.flattenCourses(programme);
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.equal(tpgService.getStatus(programme).courseCount, 18);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 18);
+  assert.equal(core.creditsRequired, 24);
+  assert.equal(core.coursesRequired, 9);
+  assert.equal(core.courses.find((course) => course.code === 'PLE5012').credits, 4);
+  assert.equal(core.courses.find((course) => course.code === 'PLE5016').credits, 2);
+  assert.equal(electives.creditsRequired, 6);
+  assert.equal(electives.coursesRequired, 3);
+  assert.equal(electives.courses.length, 9);
+  assert.equal(electives.courses.every((course) => course.credits === 2), true);
+});
+
+test('CityU Juris Doctor preserves optional specializations and conditional PCLL requirements', () => {
+  const programme = tpgService.getProgramme('CITYU-TPG-059');
+  const tracks = tpgService.listTracks(programme);
+  const courses = tpgService.flattenCourses(programme);
+  const core = programme.courseGroups.find((group) => group.id === 'programme-core');
+  const pcll = programme.courseGroups.find((group) => group.id === 'pcll-admission-path');
+  const research = programme.courseGroups.find((group) => group.id === 'research-electives');
+  const specializations = programme.courseGroups.find((group) => group.id === 'specialization-elective-pool');
+  const intensiveSeminar = courses.find((course) => course.code === 'LW5663');
+  const commercialLaw = courses.find((course) => course.code === 'LW6140E');
+
+  assert.equal(programme.creditsRequired, 72);
+  assert.equal(programme.trackSelectionOptional, true);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tracks.length, 3);
+  assert.deepEqual(tracks.map((track) => track.name), [
+    'International Commercial Law',
+    'Alternative Dispute Resolution',
+    'Chinese and Comparative Law'
+  ]);
+  assert.equal(tpgService.getStatus(programme).courseCount, 94);
+  assert.equal(courses.length, 94);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 94);
+  assert.equal(core.creditsRequired, 6);
+  assert.equal(core.coursesRequired, 2);
+  assert.equal(pcll.creditsRequired, undefined);
+  assert.match(pcll.ruleText, /required only.*intend to apply/i);
+  assert.equal(research.courses.find((course) => course.code === 'LW6137E').credits, 6);
+  assert.match(research.ruleText, /does not make either option compulsory/);
+  assert.equal(specializations.creditsRequired, 12);
+  assert.equal(specializations.coursesRequired, 4);
+  assert.deepEqual([intensiveSeminar.creditsMin, intensiveSeminar.creditsMax], [1, 2]);
+  assert.equal(intensiveSeminar.creditStatus, 'official_range');
+  assert.equal(intensiveSeminar.creditLabel, '1–2 credits');
+  assert.deepEqual(commercialLaw.countsTowardTrackIds, [
+    'CITYU-TPG-059-INTERNATIONAL-COMMERCIAL-LAW',
+    'CITYU-TPG-059-CHINESE-COMPARATIVE-LAW'
+  ]);
+  assert.equal(courses.find((course) => course.code === 'LW5649B').credits, 6);
+  assert.equal(courses.find((course) => course.code === 'FB5040').credits, 2);
 });
 
 test('TPG programme helpers expose course status and searchable courses', () => {

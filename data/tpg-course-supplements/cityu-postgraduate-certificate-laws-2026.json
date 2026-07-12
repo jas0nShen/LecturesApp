@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-060",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/school-of-law/school-of-law/p45",
+      "ruleReviewStatus": "verified",
+      "courseGroups": [
+        {
+          "id": "programme-core",
+          "name": "Programme Core Courses",
+          "type": "core",
+          "creditsRequired": 24,
+          "coursesRequired": 9,
+          "ruleText": "Complete all nine Programme Core Courses (24 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/PCLL.htm",
+          "courses": [
+            { "code": "PLE5012", "name": "Conveyancing Practice", "credits": 4, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PLE5012.htm" },
+            { "code": "PLE5013", "name": "Corporate and Commercial Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PLE5013.htm" },
+            { "code": "PLE5015", "name": "Professional Conduct and Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PLE5015.htm" },
+            { "code": "PLE5016", "name": "Wills and Probate Practice", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PLE5016.htm" },
+            { "code": "PLE5018", "name": "Civil Litigation Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PLE5018.htm" },
+            { "code": "PLE5019", "name": "Criminal Litigation Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PLE5019.htm" },
+            { "code": "PLE5050", "name": "Interlocutory Advocacy and Interviewing", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PLE5050.htm" },
+            { "code": "PLE5051", "name": "Mediation and Negotiation", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PLE5051.htm" },
+            { "code": "PLE5052", "name": "Trial Advocacy", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PLE5052.htm" }
+          ]
+        },
+        {
+          "id": "programme-electives",
+          "name": "Programme Electives",
+          "type": "elective",
+          "creditsRequired": 6,
+          "coursesRequired": 3,
+          "ruleText": "Complete three Programme Electives (6 credit units). Each listed elective carries 2 credit units; availability remains at the discretion of the School of Law.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/PCLL.htm",
+          "courses": [
+            { "code": "PLE5020", "name": "Bar Course", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PLE5020.htm" },
+            { "code": "PLE5022", "name": "Foundations in Mainland Related Legal Transactions", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PLE5022.htm" },
+            { "code": "PLE5026", "name": "Financial Regulatory Practice", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PLE5026.htm" },
+            { "code": "PLE5027", "name": "Family Law Practice", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PLE5027.htm" },
+            { "code": "PLE5028", "name": "Personal Injuries Practice", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PLE5028.htm" },
+            { "code": "PLE5029", "name": "Chinese for Legal Practice", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PLE5029.htm" },
+            { "code": "PLE5031", "name": "Law and Technology", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PLE5031.htm" },
+            { "code": "PLE5032", "name": "Corporate Fundraising for Lawyers", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PLE5032.htm" },
+            { "code": "PLE5054", "name": "Commercial Writing and Drafting", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/course/PLE5054.htm" }
+          ]
+        }
+      ]
+    }
+  ]
+}

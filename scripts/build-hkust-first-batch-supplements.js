@@ -12,9 +12,13 @@ const selectedIds = new Set([
   'HKUST-TPG-003',
   'HKUST-TPG-004',
   'HKUST-TPG-005',
+  'HKUST-TPG-006',
   'HKUST-TPG-008',
   'HKUST-TPG-009',
+  'HKUST-TPG-010',
+  'HKUST-TPG-011',
   'HKUST-TPG-012',
+  'HKUST-TPG-013',
   'HKUST-TPG-014',
   'HKUST-TPG-016',
   'HKUST-TPG-017',
@@ -45,6 +49,8 @@ const selectedIds = new Set([
   'HKUST-TPG-038',
   'HKUST-TPG-039',
   'HKUST-TPG-041',
+  'HKUST-TPG-042',
+  'HKUST-TPG-043',
   'HKUST-TPG-044',
   'HKUST-TPG-045',
   'HKUST-TPG-047',
@@ -88,6 +94,18 @@ const additionalGroups = new Map([
 ]);
 
 const groupRequirementOverrides = new Map([
+  ['HKUST-TPG-006/group-1', {
+    creditsMin: 27,
+    ruleText: 'Complete at least 27 credits from the official Required Course pool; the courses in the pool are not all individually mandatory.'
+  }],
+  ['HKUST-TPG-006/group-2', {
+    creditsMin: 0,
+    creditsMax: 9,
+    ruleText: 'Up to 9 elective credits may be taken from mathematics courses at 4000-level or above, courses outside the department at 5000-level or above, and/or MAFS 6100.'
+  }],
+  ['HKUST-TPG-042/group-2', {
+    ruleText: 'Complete 6 MSc Project credits. Students are required to repeat EESM 6980 until they have obtained 6 credits for graduation.'
+  }],
   ['HKUST-TPG-018/group-2', {
     name: 'Conditional Required Courses',
     creditsMin: 0,
@@ -126,7 +144,125 @@ const groupRequirementOverrides = new Map([
   }]
 ]);
 
+const courseDetailOverrides = new Map([
+  ['HKUST-TPG-006/MAFS 5110', {
+    name: 'Advanced Data Analysis with Statistical Programming',
+    credits: 3,
+    sourceUrl: 'https://prog-crs.hkust.edu.hk/pgcourse/2025-26/MAFS'
+  }],
+  ['HKUST-TPG-011/MILE 5306', {
+    name: 'Understanding Chinese Language in Global Context',
+    credits: 3,
+    sourceUrl: 'https://prog-crs.hkust.edu.hk/pgcourse/2023-24/MILE'
+  }],
+  ['HKUST-TPG-042/EESM 5910', {
+    name: 'Topics in Telecommunications and Network Convergence',
+    credits: 3
+  }]
+]);
+
+const programmeCreditOverrides = new Map([
+  ['HKUST-TPG-013', 45]
+]);
+
 const programmeTracks = new Map([
+  ['HKUST-TPG-010', [
+    {
+      id: 'HKUST-TPG-010-HISTORY-CULTURE',
+      name: 'History and Culture',
+      type: 'Concentration',
+      creditsRequired: 24,
+      ruleText: 'Optional disciplinary Concentration: complete at least 9 credits (three courses) from the official History and Culture list.'
+    },
+    {
+      id: 'HKUST-TPG-010-POLITICAL-SCIENCE',
+      name: 'Political Science',
+      type: 'Concentration',
+      creditsRequired: 24,
+      ruleText: 'Optional disciplinary Concentration: complete at least 9 credits (three courses) from the official Political Science list.'
+    },
+    {
+      id: 'HKUST-TPG-010-QUANTITATIVE-SOCIAL-SCIENCE',
+      name: 'Quantitative Social Science',
+      type: 'Concentration',
+      creditsRequired: 24,
+      ruleText: 'Optional disciplinary Concentration: complete at least 9 credits (three courses) from the official Quantitative Social Science list.'
+    },
+    {
+      id: 'HKUST-TPG-010-SOCIOLOGY',
+      name: 'Sociology',
+      type: 'Concentration',
+      creditsRequired: 24,
+      ruleText: 'Optional disciplinary Concentration: complete at least 9 credits (three courses) from the official Sociology list.'
+    },
+    {
+      id: 'HKUST-TPG-010-ACADEMIC-RESEARCH',
+      name: 'Academic Research',
+      type: 'Concentration',
+      creditsRequired: 42,
+      ruleText: 'Complete the existing 24-credit coursework requirement plus 3 credits of Research Methodology, MGCS 6200 (3 credits), and MGCS 6980 with MGCS 6982 (12 credits).'
+    }
+  ]],
+  ['HKUST-TPG-043', [
+    {
+      id: 'HKUST-TPG-043-AI-DATA-ANALYTICS',
+      name: 'AI and Data Analytics',
+      type: 'Concentration',
+      creditsRequired: 30,
+      ruleText: 'Optional professional Concentration: complete four approved courses (8 credits). The approved course list is not published on the Programme page.'
+    },
+    {
+      id: 'HKUST-TPG-043-ECONOMIC-POLICY',
+      name: 'Economic Policy',
+      type: 'Concentration',
+      creditsRequired: 30,
+      ruleText: 'Optional professional Concentration: complete four approved courses (8 credits). The approved course list is not published on the Programme page.'
+    },
+    {
+      id: 'HKUST-TPG-043-FINANCIAL-ECONOMICS',
+      name: 'Financial Economics',
+      type: 'Concentration',
+      creditsRequired: 30,
+      ruleText: 'Optional professional Concentration: complete four approved courses (8 credits). The approved course list is not published on the Programme page.'
+    },
+    {
+      id: 'HKUST-TPG-043-RESEARCH-PREPARATION',
+      name: 'Research Preparation',
+      type: 'Concentration',
+      creditsRequired: 36,
+      ruleText: 'Complete at least 36 credits, including 14 Core, at least 16 Elective credits with 6 credits at PhD level, plus ECON 6980.'
+    }
+  ]],
+  ['HKUST-TPG-013', [
+    {
+      id: 'HKUST-TPG-013-FULL-TIME',
+      name: 'Full-time MBA',
+      type: 'Award Path',
+      creditsRequired: 52,
+      ruleText: 'Complete 52 credits: 2 Required Immersion, 16 Core, 33 Elective and 1 Required Wrap-up credit.'
+    },
+    {
+      id: 'HKUST-TPG-013-PART-TIME',
+      name: 'Part-time MBA',
+      type: 'Award Path',
+      creditsRequired: 45,
+      ruleText: 'Complete 45 credits: 2 Required Immersion, 16 Core and 27 Elective credits.'
+    }
+  ]],
+  ['HKUST-TPG-011', [
+    {
+      id: 'HKUST-TPG-011-TESL',
+      name: 'Teaching English as a Second Language',
+      type: 'Concentration',
+      ruleText: 'Complete at least two TESL Concentration elective courses (6 credits) within the 12-credit elective requirement.'
+    },
+    {
+      id: 'HKUST-TPG-011-TCSL',
+      name: 'Teaching Chinese as a Second Language',
+      type: 'Concentration',
+      ruleText: 'Complete at least two TCSL Concentration elective courses (6 credits) within the 12-credit elective requirement.'
+    }
+  ]],
   ['HKUST-TPG-009', [
     {
       id: 'HKUST-TPG-009-CHINESE-LANGUAGE-LITERATURE',
@@ -203,10 +339,12 @@ const programmeTracks = new Map([
 
 const optionalTrackProgrammeIds = new Set([
   'HKUST-TPG-009',
+  'HKUST-TPG-010',
   'HKUST-TPG-017',
   'HKUST-TPG-018',
   'HKUST-TPG-020',
   'HKUST-TPG-036',
+  'HKUST-TPG-043',
   'HKUST-TPG-048',
   'HKUST-TPG-050'
 ]);
@@ -593,9 +731,354 @@ function buildSocialScienceGroups(candidate) {
   ];
 }
 
+function buildInternationalLanguageEducationGroups(candidate) {
+  const sourceUrl = candidate.sourceUrl;
+  const teslId = 'HKUST-TPG-011-TESL';
+  const tcslId = 'HKUST-TPG-011-TCSL';
+  const [foundation, general, tesl, tcsl] = candidate.courseGroups;
+  const decorateFoundation = (course) => {
+    const appliesToTrackIds = course.code === 'MILE 5005'
+      ? [teslId]
+      : course.code === 'MILE 5006'
+        ? [tcslId]
+        : [];
+    return { ...course, sourceUrl: course.sourceUrl || sourceUrl, appliesToTrackIds };
+  };
+  const decorateTrackCourse = (course, trackId) => ({
+    ...course,
+    sourceUrl: course.sourceUrl || sourceUrl,
+    appliesToTrackIds: [trackId],
+    countsTowardTrackIds: [trackId]
+  });
+  return [
+    {
+      ...foundation,
+      name: 'Foundation Courses',
+      creditsRequired: 12,
+      ruleText: 'Complete MILE 5000, MILE 5002 and MILE 5004, plus MILE 5005 for TESL or MILE 5006 for TCSL.',
+      sourceUrl,
+      appliesToTrackIds: [],
+      courses: foundation.courses.map(decorateFoundation)
+    },
+    {
+      ...general,
+      name: 'Elective Courses',
+      creditsRequired: 12,
+      ruleText: 'Complete 12 elective credits in total, including at least two courses (6 credits) from the selected Concentration pool.',
+      sourceUrl,
+      appliesToTrackIds: [],
+      courses: general.courses.map((course) => ({ ...course, sourceUrl: course.sourceUrl || sourceUrl, appliesToTrackIds: [] }))
+    },
+    {
+      ...tesl,
+      name: 'TESL Concentration Elective Pool',
+      creditsRequired: 6,
+      coursesRequired: 2,
+      ruleText: 'TESL students complete at least two courses (6 credits) from this pool as part of the 12-credit elective requirement.',
+      sourceUrl,
+      appliesToTrackIds: [teslId],
+      courses: tesl.courses.map((course) => decorateTrackCourse(course, teslId))
+    },
+    {
+      ...tcsl,
+      name: 'TCSL Concentration Elective Pool',
+      creditsRequired: 6,
+      coursesRequired: 2,
+      ruleText: 'TCSL students complete at least two courses (6 credits) from this pool as part of the 12-credit elective requirement.',
+      sourceUrl,
+      appliesToTrackIds: [tcslId],
+      courses: tcsl.courses.map((course) => decorateTrackCourse(course, tcslId))
+    }
+  ];
+}
+
+function buildMbaGroups(candidate) {
+  const sourceUrl = candidate.sourceUrl;
+  const fullTimeId = 'HKUST-TPG-013-FULL-TIME';
+  const partTimeId = 'HKUST-TPG-013-PART-TIME';
+  const [immersion, core, wrapUp] = candidate.courseGroups;
+  const common = (course) => ({ ...course, sourceUrl: course.sourceUrl || sourceUrl, appliesToTrackIds: [] });
+  return [
+    {
+      ...immersion,
+      creditsRequired: 2,
+      ruleText: 'Complete the 2-credit Required Immersion Program in both Award Paths.',
+      sourceUrl,
+      appliesToTrackIds: [],
+      courses: immersion.courses.map(common)
+    },
+    {
+      ...core,
+      creditsRequired: 16,
+      ruleText: 'Complete all eight 2-credit Core Courses in both Award Paths.',
+      sourceUrl,
+      appliesToTrackIds: [],
+      courses: core.courses.map(common)
+    },
+    {
+      id: 'group-3',
+      name: 'Full-time Advanced Electives',
+      type: 'elective',
+      creditsRequired: 33,
+      ruleText: 'Full-time MBA students complete 33 advanced elective credits. The official Programme page describes career-focus areas but does not publish a fixed course-code pool.',
+      sourceUrl,
+      appliesToTrackIds: [fullTimeId],
+      courses: []
+    },
+    {
+      id: 'group-4',
+      name: 'Part-time Advanced Electives',
+      type: 'elective',
+      creditsRequired: 27,
+      ruleText: 'Part-time MBA students complete 27 advanced elective credits. The official Programme page describes career-focus areas but does not publish a fixed course-code pool.',
+      sourceUrl,
+      appliesToTrackIds: [partTimeId],
+      courses: []
+    },
+    {
+      ...wrapUp,
+      id: 'group-5',
+      creditsRequired: 1,
+      ruleText: 'Full-time MBA students complete the 1-credit Required Wrap-up Program.',
+      sourceUrl,
+      appliesToTrackIds: [fullTimeId],
+      courses: wrapUp.courses.map((course) => ({ ...course, sourceUrl: course.sourceUrl || sourceUrl, appliesToTrackIds: [fullTimeId] }))
+    }
+  ];
+}
+
+function buildEconomicsGroups(candidate) {
+  const sourceUrl = candidate.sourceUrl;
+  const [core, elective, research] = candidate.courseGroups;
+  const professionalTracks = [
+    ['HKUST-TPG-043-AI-DATA-ANALYTICS', 'AI and Data Analytics'],
+    ['HKUST-TPG-043-ECONOMIC-POLICY', 'Economic Policy'],
+    ['HKUST-TPG-043-FINANCIAL-ECONOMICS', 'Financial Economics']
+  ];
+  const researchId = 'HKUST-TPG-043-RESEARCH-PREPARATION';
+  return [
+    {
+      ...core,
+      creditsRequired: 14,
+      ruleText: 'Complete 14 Core credits. Starred courses may be substituted by an equivalent course with prior approval.',
+      sourceUrl,
+      appliesToTrackIds: [],
+      courses: core.courses.map((course) => ({ ...course, name: course.name.replace(/^[*#@]+\s*/, ''), sourceUrl, appliesToTrackIds: [] }))
+    },
+    {
+      ...elective,
+      creditsMin: 16,
+      ruleText: 'Complete at least 16 Elective credits under the official level, department and approval limits. ECON 6950 may count as an elective; the full eligible course-code pool is not fixed on the Programme page.',
+      sourceUrl,
+      appliesToTrackIds: [],
+      courses: elective.courses.map((course) => ({ ...course, sourceUrl, appliesToTrackIds: [] }))
+    },
+    ...professionalTracks.map(([trackId, name], index) => ({
+      id: `group-${index + 3}`,
+      name: `${name} Concentration Requirement`,
+      type: 'elective',
+      creditsRequired: 8,
+      coursesRequired: 4,
+      ruleText: `Complete four approved ${name} elective courses (8 credits). The official page states that selections require Academic Director approval and does not publish the fixed pool.`,
+      sourceUrl,
+      appliesToTrackIds: [trackId],
+      courses: []
+    })),
+    {
+      id: 'group-6',
+      name: 'Research Preparation PhD-level Electives',
+      type: 'elective',
+      creditsRequired: 6,
+      ruleText: 'At least 6 of the minimum 16 Elective credits must be at PhD level; the Programme page does not publish a fixed course-code pool.',
+      sourceUrl,
+      appliesToTrackIds: [researchId],
+      courses: []
+    },
+    {
+      ...research,
+      id: 'group-7',
+      name: 'Research Preparation Independent Project',
+      type: 'project',
+      creditsRequired: 6,
+      ruleText: 'Research Preparation students complete the 6-credit ECON 6980 Independent Project.',
+      sourceUrl,
+      appliesToTrackIds: [researchId],
+      courses: research.courses.map((course) => ({ ...course, sourceUrl, appliesToTrackIds: [researchId], countsTowardTrackIds: [researchId] }))
+    }
+  ];
+}
+
+function buildGlobalChinaStudiesGroups(candidate) {
+  const sourceUrl = candidate.sourceUrl;
+  const groupsById = new Map(candidate.courseGroups.map((group) => [group.id, group]));
+  const core = groupsById.get('group-1');
+  const writing = groupsById.get('group-2');
+  const elective = groupsById.get('group-3');
+  const optionalProject = groupsById.get('group-4');
+  const historyOnly = groupsById.get('group-5');
+  const researchSubstitution = groupsById.get('group-6');
+  const methodology = groupsById.get('group-7');
+  const independentStudy = groupsById.get('group-8');
+  const researchProject = groupsById.get('group-9');
+  const trackIds = {
+    history: 'HKUST-TPG-010-HISTORY-CULTURE',
+    political: 'HKUST-TPG-010-POLITICAL-SCIENCE',
+    quantitative: 'HKUST-TPG-010-QUANTITATIVE-SOCIAL-SCIENCE',
+    sociology: 'HKUST-TPG-010-SOCIOLOGY',
+    research: 'HKUST-TPG-010-ACADEMIC-RESEARCH'
+  };
+  const disciplinaryTrackIds = [trackIds.history, trackIds.political, trackIds.quantitative, trackIds.sociology];
+  const memberships = new Map([
+    ['MGCS 5001', [trackIds.history, trackIds.quantitative, trackIds.sociology]],
+    ['MGCS 5010', [trackIds.quantitative, trackIds.sociology]],
+    ['MGCS 5024', [trackIds.political]],
+    ['MGCS 5033', [trackIds.history]],
+    ['MGCS 5101', [trackIds.history]],
+    ['MGCS 5520', [trackIds.political]],
+    ['MGCS 5006', [trackIds.political]],
+    ['MGCS 5008', [trackIds.history]],
+    ['MGCS 5009', [trackIds.history, trackIds.political]],
+    ['MGCS 5021', [trackIds.political]],
+    ['MGCS 5022', [trackIds.political]],
+    ['MGCS 5025', [trackIds.political]],
+    ['MGCS 5026', [trackIds.political]],
+    ['MGCS 5103', [trackIds.history]],
+    ['MGCS 5105', [trackIds.history]],
+    ['MGCS 5012', [trackIds.quantitative, trackIds.sociology]],
+    ['MGCS 5013', [trackIds.quantitative]],
+    ['MGCS 5032', [trackIds.sociology]],
+    ['MGCS 5036', [trackIds.history]],
+    ['MGCS 5037', [trackIds.history]],
+    ['MGCS 5102', [trackIds.history]],
+    ['MGCS 6000-6010', disciplinaryTrackIds]
+  ]);
+  const common = (course) => ({
+    ...course,
+    sourceUrl: course.sourceUrl || sourceUrl,
+    appliesToTrackIds: [],
+    ...(memberships.has(course.code) ? { countsTowardTrackIds: memberships.get(course.code) } : {})
+  });
+  return [
+    {
+      ...core,
+      creditsRequired: 9,
+      ruleText: 'Complete 9 Core credits from the official pool. Surplus Core credits count toward the Elective requirement.',
+      sourceUrl,
+      appliesToTrackIds: [],
+      courses: core.courses.map(common)
+    },
+    {
+      ...writing,
+      name: 'Conditional Academic Writing Course',
+      type: 'core',
+      creditsMin: 0,
+      creditsMax: 3,
+      ruleText: 'LANG 5070 is required only for students admitted with any IELTS sub-score of 5.5.',
+      sourceUrl,
+      appliesToTrackIds: [],
+      courses: writing.courses.map(common)
+    },
+    {
+      ...elective,
+      creditsMin: 12,
+      creditsMax: 15,
+      ruleText: 'Complete 12–15 Elective credits, covering at least two official subject areas and including at least two China-related courses. Up to 9 approved substitution credits may apply; surplus Core credits count here.',
+      sourceUrl,
+      appliesToTrackIds: [],
+      courses: elective.courses.map(common)
+    },
+    {
+      ...optionalProject,
+      name: 'Optional Extra Project',
+      creditsRequired: null,
+      ruleText: 'Selected students may take MGCS 6981 for 1 extra credit; it does not count toward the Programme credit requirement.',
+      countsTowardProgrammeCredits: false,
+      sourceUrl,
+      appliesToTrackIds: [],
+      courses: optionalProject.courses.map((course) => ({ ...common(course), countsTowardProgrammeCredits: false }))
+    },
+    {
+      id: 'group-5',
+      name: 'History and Culture Additional Course',
+      type: 'elective',
+      creditsRequired: null,
+      ruleText: 'HUMA 5696 is included in the official History and Culture Concentration list.',
+      sourceUrl,
+      appliesToTrackIds: [trackIds.history],
+      courses: historyOnly.courses.map((course) => ({ ...course, sourceUrl, appliesToTrackIds: [trackIds.history], countsTowardTrackIds: [trackIds.history] }))
+    },
+    ...[
+      [trackIds.history, 'History and Culture'],
+      [trackIds.political, 'Political Science'],
+      [trackIds.quantitative, 'Quantitative Social Science'],
+      [trackIds.sociology, 'Sociology']
+    ].map(([trackId, name], index) => ({
+      id: `group-${index + 6}`,
+      name: `${name} Concentration Requirement`,
+      type: 'elective',
+      creditsRequired: 9,
+      coursesRequired: 3,
+      ruleText: `Complete at least 9 credits (three courses) from courses marked for the ${name} Concentration. The official page says five disciplinary Concentrations but enumerates only four; no missing fifth Concentration has been inferred.`,
+      sourceUrl,
+      appliesToTrackIds: [trackId],
+      courses: []
+    })),
+    {
+      ...researchSubstitution,
+      id: 'group-10',
+      name: 'Academic Research Core Substitution',
+      creditsRequired: null,
+      ruleText: 'With prior approval, Academic Research students may substitute SOSC 5090 for the Core course MGCS 5010.',
+      sourceUrl,
+      appliesToTrackIds: [trackIds.research],
+      courses: researchSubstitution.courses.map((course) => ({ ...course, sourceUrl, appliesToTrackIds: [trackIds.research], countsTowardTrackIds: [trackIds.research] }))
+    },
+    {
+      ...methodology,
+      id: 'group-11',
+      name: 'Academic Research Methodology',
+      creditsRequired: 3,
+      coursesRequired: 1,
+      ruleText: 'Complete one approved postgraduate Research Methodology course (3 credits).',
+      sourceUrl,
+      appliesToTrackIds: [trackIds.research],
+      courses: methodology.courses.map((course) => ({ ...course, sourceUrl, appliesToTrackIds: [trackIds.research], countsTowardTrackIds: [trackIds.research] }))
+    },
+    {
+      ...independentStudy,
+      id: 'group-12',
+      name: 'Academic Research Independent Study',
+      creditsRequired: 3,
+      ruleText: 'Complete MGCS 6200 Independent Study (3 credits).',
+      sourceUrl,
+      appliesToTrackIds: [trackIds.research],
+      courses: independentStudy.courses.map((course) => ({ ...course, sourceUrl, appliesToTrackIds: [trackIds.research], countsTowardTrackIds: [trackIds.research] }))
+    },
+    {
+      ...researchProject,
+      id: 'group-13',
+      name: 'Academic Research Project',
+      creditsRequired: 12,
+      coursesRequired: 2,
+      ruleText: 'Complete MGCS 6980 and then MGCS 6982 for a two-term Research Project totaling 12 credits.',
+      sourceUrl,
+      appliesToTrackIds: [trackIds.research],
+      courses: researchProject.courses.map((course) => ({ ...course, sourceUrl, appliesToTrackIds: [trackIds.research], countsTowardTrackIds: [trackIds.research] }))
+    }
+  ];
+}
+
 function promote(candidate) {
   const groups = candidate.programmeId === 'HKUST-TPG-009'
     ? buildChineseCultureGroups(candidate)
+    : candidate.programmeId === 'HKUST-TPG-010'
+      ? buildGlobalChinaStudiesGroups(candidate)
+    : candidate.programmeId === 'HKUST-TPG-011'
+      ? buildInternationalLanguageEducationGroups(candidate)
+    : candidate.programmeId === 'HKUST-TPG-013'
+      ? buildMbaGroups(candidate)
+    : candidate.programmeId === 'HKUST-TPG-043'
+      ? buildEconomicsGroups(candidate)
     : candidate.programmeId === 'HKUST-TPG-017'
       ? buildPublicPolicyGroups(candidate)
       : candidate.programmeId === 'HKUST-TPG-028'
@@ -621,7 +1104,7 @@ function promote(candidate) {
     courses: group.courses.map((course) => ({
       ...course,
       name: course.name.replace(/^[*#@]+\s*/, ''),
-      sourceUrl: candidate.sourceUrl,
+      sourceUrl: course.sourceUrl || candidate.sourceUrl,
       appliesToTrackIds: []
     }))
                   }));
@@ -661,15 +1144,37 @@ function promote(candidate) {
   };
 }
 
+function applyCourseDetailOverrides(candidate) {
+  const overriddenCodes = new Set();
+  const courseGroups = (candidate.courseGroups || []).map((group) => ({
+    ...group,
+    courses: group.courses.map((course) => {
+      const override = courseDetailOverrides.get(`${candidate.programmeId}/${course.code}`);
+      if (!override) return course;
+      overriddenCodes.add(course.code.replace(/\s+/g, ''));
+      const { sourceError, ...rest } = course;
+      return { ...rest, ...override };
+    })
+  }));
+  return {
+    ...candidate,
+    creditsRequired: programmeCreditOverrides.get(candidate.programmeId) || candidate.creditsRequired,
+    courseGroups,
+    missingCourseDetails: (candidate.missingCourseDetails || []).filter((code) => !overriddenCodes.has(code.replace(/\s+/g, ''))),
+    ungroupedCourseRefs: candidate.ungroupedCourseRefs || []
+  };
+}
+
 function main() {
-  const selected = candidates.programmes.filter((item) => selectedIds.has(item.programmeId));
+  const preparedCandidates = candidates.programmes.map(applyCourseDetailOverrides);
+  const selected = preparedCandidates.filter((item) => selectedIds.has(item.programmeId));
   if (selected.length !== selectedIds.size) throw new Error('HKUST selected candidate is missing');
   selected.forEach((item) => {
     if (!item.creditsRequired || !item.courseGroups.length || item.missingCourseDetails.length || item.ungroupedCourseRefs.length) throw new Error(`${item.programmeId} is not ready for promotion`);
   });
   fs.writeFileSync(outputPath, `${JSON.stringify({ schemaVersion: 1, schoolCode: 'HKUST', academicYear: '2026-27', verifiedAt: '2026-07-11', programmes: selected.map(promote) }, null, 2)}\n`);
 
-  const blocked = candidates.programmes.filter((item) => !selectedIds.has(item.programmeId)).map((item) => ({
+  const blocked = preparedCandidates.filter((item) => !selectedIds.has(item.programmeId)).map((item) => ({
     programmeId: item.programmeId,
     status: item.error && /No unique current/.test(item.error) ? 'archived' : 'blocked',
     sourceUrl: item.sourceUrl || 'https://prog-crs.hkust.edu.hk/pgprog/2026-27/',

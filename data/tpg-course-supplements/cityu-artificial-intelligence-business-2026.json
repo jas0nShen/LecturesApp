@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-019",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSAIB.htm",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "ai-core",
+          "name": "AI Core Courses",
+          "type": "core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete all three AI Core Courses (9 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSAIB.htm",
+          "courses": [
+            { "code": "IS5113", "name": "AI Ethics and Regulations", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSAIB.htm" },
+            { "code": "IS5542", "name": "Generative Artificial Intelligence for Business", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSAIB.htm" },
+            { "code": "IS6423", "name": "Artificial Intelligence for Business Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSAIB.htm" }
+          ]
+        },
+        {
+          "id": "business-core",
+          "name": "Business Core Course Pool",
+          "type": "core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete 9 credit units (three courses) from the Business Core Course pool; the six listed courses are choices, not all individually mandatory.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSAIB.htm",
+          "courses": [
+            { "code": "EF5560", "name": "Fintech and AI in Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSAIB.htm" },
+            { "code": "AC6761", "name": "Artificial Intelligence Accounting", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSAIB.htm" },
+            { "code": "MKT6614", "name": "Advanced Marketing Analytics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSAIB.htm" },
+            { "code": "MGT6310", "name": "People Analytics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSAIB.htm" },
+            { "code": "MS5215", "name": "AI-Enhanced Business Analytics with Excel and Python", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSAIB.htm" },
+            { "code": "MS6219", "name": "Predictive Modeling and Forecasting for Business", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSAIB.htm" }
+          ]
+        },
+        {
+          "id": "electives",
+          "name": "Elective Courses",
+          "type": "elective_project",
+          "creditsRequired": 12,
+          "ruleText": "Complete 12 elective credit units. Up to two electives may be approved by the Programme Leader, with at most one offered outside Information Systems but within the College of Business. IS6912 is a 6-credit Project option.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSAIB.htm",
+          "courses": [
+            { "code": "IS5238", "name": "Business Practice Internship", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSAIB.htm" },
+            { "code": "IS5312", "name": "Analytical Programming with Python", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSAIB.htm" },
+            { "code": "IS5411", "name": "Systems Analysis and Design", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSAIB.htm" },
+            { "code": "IS5413", "name": "Database Management Systems", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSAIB.htm" },
+            { "code": "IS5540", "name": "Project Management and Quality Assurance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSAIB.htm" },
+            { "code": "IS5740", "name": "Management Support and Business Intelligence Systems", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSAIB.htm" },
+            { "code": "IS5940", "name": "Innovation and Technology Entrepreneurship", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSAIB.htm" },
+            { "code": "IS6335", "name": "Data Visualization", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSAIB.htm" },
+            { "code": "IS6400", "name": "Business Data Analytics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSAIB.htm" },
+            { "code": "IS6620", "name": "Large Language Model with Prompt Engineering for Business", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSAIB.htm" },
+            { "code": "IS6640", "name": "Information Systems Planning and Strategy", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSAIB.htm" },
+            { "code": "IS6912", "name": "Information Systems Project", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSAIB.htm" },
+            { "code": "IS6941", "name": "Machine Learning and Social Media Analytics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSAIB.htm" }
+          ]
+        }
+      ]
+    }
+  ]
+}

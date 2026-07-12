@@ -360,6 +360,211 @@
       ]
     },
     {
+      "programmeId": "HKUST-TPG-006",
+      "status": "verified",
+      "creditsRequired": 36,
+      "creditUnit": "credits",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "group-1",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": null,
+          "ruleText": "Complete at least 27 credits from the official Required Course pool; the courses in the pool are not all individually mandatory.",
+          "courses": [
+            {
+              "code": "MAFS 5010",
+              "name": "Stochastic Calculus",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
+            },
+            {
+              "code": "MAFS 5020",
+              "name": "Advanced Probability and Statistics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
+            },
+            {
+              "code": "MAFS 5030",
+              "name": "Quantitative Modeling of Derivatives Securities",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
+            },
+            {
+              "code": "MAFS 5040",
+              "name": "Quantitative Methods for Fixed-Income Instruments",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
+            },
+            {
+              "code": "MAFS 5110",
+              "name": "Advanced Data Analysis with Statistical Programming",
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgcourse/2025-26/MAFS",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAFS 5130",
+              "name": "Quantitative Analysis of Financial Time Series",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
+            },
+            {
+              "code": "MAFS 5140",
+              "name": "Statistical Methods in Quantitative Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
+            },
+            {
+              "code": "MAFS 5210",
+              "name": "Mathematical Models of Investment",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
+            },
+            {
+              "code": "MAFS 5220",
+              "name": "Quantitative Risk Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
+            },
+            {
+              "code": "MAFS 5240",
+              "name": "Software Development with C++ for Quantitative Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
+            },
+            {
+              "code": "MAFS 5270",
+              "name": "Mathematical Market Microstructure",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
+            },
+            {
+              "code": "MAFS 5280",
+              "name": "Financial Markets in Hong Kong and China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
+            },
+            {
+              "code": "MAFS 5310",
+              "name": "Portfolio Optimization: Theory and Application",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
+            },
+            {
+              "code": "MAFS 5330",
+              "name": "Structured Products: Analysis and Pricing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
+            },
+            {
+              "code": "MAFS 5340",
+              "name": "Machine Learning and Its Applications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
+            },
+            {
+              "code": "MAFS 5360",
+              "name": "Computing for Finance in Python",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
+            },
+            {
+              "code": "MAFS 5370",
+              "name": "Reinforcement Learning with Financial Applications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
+            },
+            {
+              "code": "MAFS 5380",
+              "name": "Entrepreneurship in Fintech",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
+            },
+            {
+              "code": "MAFS 5440",
+              "name": "Artificial Intelligence in Fintech",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
+            },
+            {
+              "code": "MAFS 6000",
+              "name": "Capstone Project in Financial Mathematics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
+            },
+            {
+              "code": "MAFS 6001",
+              "name": "Capstone Project in Financial Mathematics II",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
+            },
+            {
+              "code": "MAFS 6010",
+              "name": "Special Topics in Financial Mathematics",
+              "creditsMin": 2,
+              "creditsMax": 4,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
+            },
+            {
+              "code": "MATH 5311",
+              "name": "Advanced Numerical Methods I",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
+            }
+          ],
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/",
+          "appliesToTrackIds": [],
+          "creditsMin": 27
+        },
+        {
+          "id": "group-2",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": null,
+          "ruleText": "Up to 9 elective credits may be taken from mathematics courses at 4000-level or above, courses outside the department at 5000-level or above, and/or MAFS 6100.",
+          "courses": [
+            {
+              "code": "MAFS 6100",
+              "name": "Independent Project",
+              "creditsMin": 3,
+              "creditsMax": 6,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
+            }
+          ],
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/",
+          "appliesToTrackIds": [],
+          "creditsMin": 0,
+          "creditsMax": 9
+        }
+      ]
+    },
+    {
       "programmeId": "HKUST-TPG-007",
       "status": "verified",
       "creditsRequired": 27,
@@ -814,6 +1019,930 @@
       ]
     },
     {
+      "programmeId": "HKUST-TPG-010",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "credits",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+      "trackSelectionOptional": true,
+      "tracks": [
+        {
+          "id": "HKUST-TPG-010-HISTORY-CULTURE",
+          "name": "History and Culture",
+          "type": "Concentration",
+          "creditsRequired": 24,
+          "ruleText": "Optional disciplinary Concentration: complete at least 9 credits (three courses) from the official History and Culture list.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/"
+        },
+        {
+          "id": "HKUST-TPG-010-POLITICAL-SCIENCE",
+          "name": "Political Science",
+          "type": "Concentration",
+          "creditsRequired": 24,
+          "ruleText": "Optional disciplinary Concentration: complete at least 9 credits (three courses) from the official Political Science list.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/"
+        },
+        {
+          "id": "HKUST-TPG-010-QUANTITATIVE-SOCIAL-SCIENCE",
+          "name": "Quantitative Social Science",
+          "type": "Concentration",
+          "creditsRequired": 24,
+          "ruleText": "Optional disciplinary Concentration: complete at least 9 credits (three courses) from the official Quantitative Social Science list.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/"
+        },
+        {
+          "id": "HKUST-TPG-010-SOCIOLOGY",
+          "name": "Sociology",
+          "type": "Concentration",
+          "creditsRequired": 24,
+          "ruleText": "Optional disciplinary Concentration: complete at least 9 credits (three courses) from the official Sociology list.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/"
+        },
+        {
+          "id": "HKUST-TPG-010-ACADEMIC-RESEARCH",
+          "name": "Academic Research",
+          "type": "Concentration",
+          "creditsRequired": 42,
+          "ruleText": "Complete the existing 24-credit coursework requirement plus 3 credits of Research Methodology, MGCS 6200 (3 credits), and MGCS 6980 with MGCS 6982 (12 credits).",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/"
+        }
+      ],
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "group-1",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 9,
+          "ruleText": "Complete 9 Core credits from the official pool. Surplus Core credits count toward the Elective requirement.",
+          "courses": [
+            {
+              "code": "MGCS 5001",
+              "name": "Understanding China, 1700-2000: A Data-Analytic Approach",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-HISTORY-CULTURE",
+                "HKUST-TPG-010-QUANTITATIVE-SOCIAL-SCIENCE",
+                "HKUST-TPG-010-SOCIOLOGY"
+              ]
+            },
+            {
+              "code": "MGCS 5010",
+              "name": "Introduction to Social Statistics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-QUANTITATIVE-SOCIAL-SCIENCE",
+                "HKUST-TPG-010-SOCIOLOGY"
+              ]
+            },
+            {
+              "code": "MGCS 5024",
+              "name": "China in Comparative Perspective",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-POLITICAL-SCIENCE"
+              ]
+            },
+            {
+              "code": "MGCS 5033",
+              "name": "Literary and Cultural Studies Humanities Seminar",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-HISTORY-CULTURE"
+              ]
+            },
+            {
+              "code": "MGCS 5101",
+              "name": "A Comparative Perspective of Religion in Ancient Civilizations",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-HISTORY-CULTURE"
+              ]
+            },
+            {
+              "code": "MGCS 5520",
+              "name": "Comparative Politics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-POLITICAL-SCIENCE"
+              ]
+            },
+            {
+              "code": "MGCS 5880",
+              "name": "Growing Up the Chinese Way",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/"
+            }
+          ],
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+          "appliesToTrackIds": []
+        },
+        {
+          "id": "group-2",
+          "name": "Conditional Academic Writing Course",
+          "type": "core",
+          "creditsRequired": null,
+          "ruleText": "LANG 5070 is required only for students admitted with any IELTS sub-score of 5.5.",
+          "courses": [
+            {
+              "code": "LANG 5070",
+              "name": "Critical Writing for Global China Studies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/"
+            }
+          ],
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+          "appliesToTrackIds": [],
+          "creditsMin": 0,
+          "creditsMax": 3
+        },
+        {
+          "id": "group-3",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": null,
+          "ruleText": "Complete 12–15 Elective credits, covering at least two official subject areas and including at least two China-related courses. Up to 9 approved substitution credits may apply; surplus Core credits count here.",
+          "courses": [
+            {
+              "code": "MGCS 5006",
+              "name": "China and the World",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-POLITICAL-SCIENCE"
+              ]
+            },
+            {
+              "code": "MGCS 5008",
+              "name": "The Economic and Political Development of Modern Japan",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-HISTORY-CULTURE"
+              ]
+            },
+            {
+              "code": "MGCS 5009",
+              "name": "The Economic History of Late Imperial China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-HISTORY-CULTURE",
+                "HKUST-TPG-010-POLITICAL-SCIENCE"
+              ]
+            },
+            {
+              "code": "MGCS 5021",
+              "name": "Reform and Social Conflicts in Contemporary China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-POLITICAL-SCIENCE"
+              ]
+            },
+            {
+              "code": "MGCS 5022",
+              "name": "Political Economy of China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-POLITICAL-SCIENCE"
+              ]
+            },
+            {
+              "code": "MGCS 5025",
+              "name": "China and Africa",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-POLITICAL-SCIENCE"
+              ]
+            },
+            {
+              "code": "MGCS 5026",
+              "name": "International Law and China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-POLITICAL-SCIENCE"
+              ]
+            },
+            {
+              "code": "MGCS 5103",
+              "name": "Gender and Sexuality in Modern China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-HISTORY-CULTURE"
+              ]
+            },
+            {
+              "code": "MGCS 5105",
+              "name": "Science and Technology Studies in a Qualitative Perspective",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-HISTORY-CULTURE"
+              ]
+            },
+            {
+              "code": "MGCS 5881",
+              "name": "Psychology and Education in Chinese Society",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/"
+            },
+            {
+              "code": "MGCS 5012",
+              "name": "Quantitative Analysis of Social Data",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-QUANTITATIVE-SOCIAL-SCIENCE",
+                "HKUST-TPG-010-SOCIOLOGY"
+              ]
+            },
+            {
+              "code": "MGCS 5013",
+              "name": "Applied Regression Analysis of Social Data",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-QUANTITATIVE-SOCIAL-SCIENCE"
+              ]
+            },
+            {
+              "code": "MGCS 5032",
+              "name": "Ethnicity in Chinese Context",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-SOCIOLOGY"
+              ]
+            },
+            {
+              "code": "MGCS 5036",
+              "name": "Western Opera and Asia",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-HISTORY-CULTURE"
+              ]
+            },
+            {
+              "code": "MGCS 5037",
+              "name": "Western Classical Music and the World",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-HISTORY-CULTURE"
+              ]
+            },
+            {
+              "code": "MGCS 5102",
+              "name": "Daily Life in Ancient Civilizations: China, Egypt, Greece and Rome",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-HISTORY-CULTURE"
+              ]
+            },
+            {
+              "code": "MGCS 6000-6010",
+              "name": "Special Topics",
+              "creditUnit": "credits",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-HISTORY-CULTURE",
+                "HKUST-TPG-010-POLITICAL-SCIENCE",
+                "HKUST-TPG-010-QUANTITATIVE-SOCIAL-SCIENCE",
+                "HKUST-TPG-010-SOCIOLOGY"
+              ]
+            }
+          ],
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+          "appliesToTrackIds": [],
+          "creditsMin": 12,
+          "creditsMax": 15
+        },
+        {
+          "id": "group-4",
+          "name": "Optional Extra Project",
+          "type": "project",
+          "creditsRequired": null,
+          "ruleText": "Selected students may take MGCS 6981 for 1 extra credit; it does not count toward the Programme credit requirement.",
+          "courses": [
+            {
+              "code": "MGCS 6981",
+              "name": "Research Experience in Global China Studies",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardProgrammeCredits": false
+            }
+          ],
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+          "appliesToTrackIds": [],
+          "countsTowardProgrammeCredits": false
+        },
+        {
+          "id": "group-5",
+          "name": "History and Culture Additional Course",
+          "type": "elective",
+          "creditsRequired": null,
+          "ruleText": "HUMA 5696 is included in the official History and Culture Concentration list.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+          "appliesToTrackIds": [
+            "HKUST-TPG-010-HISTORY-CULTURE"
+          ],
+          "courses": [
+            {
+              "code": "HUMA 5696",
+              "name": "The Culture of Capitalism",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKUST-TPG-010-HISTORY-CULTURE"
+              ],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-HISTORY-CULTURE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "group-6",
+          "name": "History and Culture Concentration Requirement",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete at least 9 credits (three courses) from courses marked for the History and Culture Concentration. The official page says five disciplinary Concentrations but enumerates only four; no missing fifth Concentration has been inferred.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+          "appliesToTrackIds": [
+            "HKUST-TPG-010-HISTORY-CULTURE"
+          ],
+          "courses": []
+        },
+        {
+          "id": "group-7",
+          "name": "Political Science Concentration Requirement",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete at least 9 credits (three courses) from courses marked for the Political Science Concentration. The official page says five disciplinary Concentrations but enumerates only four; no missing fifth Concentration has been inferred.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+          "appliesToTrackIds": [
+            "HKUST-TPG-010-POLITICAL-SCIENCE"
+          ],
+          "courses": []
+        },
+        {
+          "id": "group-8",
+          "name": "Quantitative Social Science Concentration Requirement",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete at least 9 credits (three courses) from courses marked for the Quantitative Social Science Concentration. The official page says five disciplinary Concentrations but enumerates only four; no missing fifth Concentration has been inferred.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+          "appliesToTrackIds": [
+            "HKUST-TPG-010-QUANTITATIVE-SOCIAL-SCIENCE"
+          ],
+          "courses": []
+        },
+        {
+          "id": "group-9",
+          "name": "Sociology Concentration Requirement",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete at least 9 credits (three courses) from courses marked for the Sociology Concentration. The official page says five disciplinary Concentrations but enumerates only four; no missing fifth Concentration has been inferred.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+          "appliesToTrackIds": [
+            "HKUST-TPG-010-SOCIOLOGY"
+          ],
+          "courses": []
+        },
+        {
+          "id": "group-10",
+          "name": "Academic Research Core Substitution",
+          "type": "elective",
+          "creditsRequired": null,
+          "ruleText": "With prior approval, Academic Research students may substitute SOSC 5090 for the Core course MGCS 5010.",
+          "courses": [
+            {
+              "code": "SOSC 5090",
+              "name": "Quantitative Methods for Social Science Research",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKUST-TPG-010-ACADEMIC-RESEARCH"
+              ],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-ACADEMIC-RESEARCH"
+              ]
+            }
+          ],
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+          "appliesToTrackIds": [
+            "HKUST-TPG-010-ACADEMIC-RESEARCH"
+          ]
+        },
+        {
+          "id": "group-11",
+          "name": "Academic Research Methodology",
+          "type": "programme",
+          "creditsRequired": 3,
+          "ruleText": "Complete one approved postgraduate Research Methodology course (3 credits).",
+          "courses": [
+            {
+              "code": "HMMA 5001",
+              "name": "Fundamentals of Chinese Culture",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKUST-TPG-010-ACADEMIC-RESEARCH"
+              ],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-ACADEMIC-RESEARCH"
+              ]
+            },
+            {
+              "code": "MGCS 6100",
+              "name": "Research Foundations for Global China Studies",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKUST-TPG-010-ACADEMIC-RESEARCH"
+              ],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-ACADEMIC-RESEARCH"
+              ]
+            },
+            {
+              "code": "SOSC 5110",
+              "name": "Social Science Research Design and Methods",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKUST-TPG-010-ACADEMIC-RESEARCH"
+              ],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-ACADEMIC-RESEARCH"
+              ]
+            },
+            {
+              "code": "SOSC 5170",
+              "name": "Qualitative Research Methods",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKUST-TPG-010-ACADEMIC-RESEARCH"
+              ],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-ACADEMIC-RESEARCH"
+              ]
+            },
+            {
+              "code": "SOSC 5340",
+              "name": "Econometric Approaches to Social Science Research",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKUST-TPG-010-ACADEMIC-RESEARCH"
+              ],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-ACADEMIC-RESEARCH"
+              ]
+            }
+          ],
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+          "appliesToTrackIds": [
+            "HKUST-TPG-010-ACADEMIC-RESEARCH"
+          ],
+          "coursesRequired": 1
+        },
+        {
+          "id": "group-12",
+          "name": "Academic Research Independent Study",
+          "type": "programme",
+          "creditsRequired": 3,
+          "ruleText": "Complete MGCS 6200 Independent Study (3 credits).",
+          "courses": [
+            {
+              "code": "MGCS 6200",
+              "name": "Independent Study",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKUST-TPG-010-ACADEMIC-RESEARCH"
+              ],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-ACADEMIC-RESEARCH"
+              ]
+            }
+          ],
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+          "appliesToTrackIds": [
+            "HKUST-TPG-010-ACADEMIC-RESEARCH"
+          ]
+        },
+        {
+          "id": "group-13",
+          "name": "Academic Research Project",
+          "type": "project",
+          "creditsRequired": 12,
+          "ruleText": "Complete MGCS 6980 and then MGCS 6982 for a two-term Research Project totaling 12 credits.",
+          "courses": [
+            {
+              "code": "MGCS 6980",
+              "name": "Research Project in Global China Studies I",
+              "credits": 6,
+              "appliesToTrackIds": [
+                "HKUST-TPG-010-ACADEMIC-RESEARCH"
+              ],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-ACADEMIC-RESEARCH"
+              ]
+            },
+            {
+              "code": "MGCS 6982",
+              "name": "Research Project in Global China Studies II",
+              "credits": 6,
+              "appliesToTrackIds": [
+                "HKUST-TPG-010-ACADEMIC-RESEARCH"
+              ],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-010-ACADEMIC-RESEARCH"
+              ]
+            }
+          ],
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
+          "appliesToTrackIds": [
+            "HKUST-TPG-010-ACADEMIC-RESEARCH"
+          ],
+          "coursesRequired": 2
+        }
+      ]
+    },
+    {
+      "programmeId": "HKUST-TPG-011",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "credits",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/",
+      "tracks": [
+        {
+          "id": "HKUST-TPG-011-TESL",
+          "name": "Teaching English as a Second Language",
+          "type": "Concentration",
+          "ruleText": "Complete at least two TESL Concentration elective courses (6 credits) within the 12-credit elective requirement.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/"
+        },
+        {
+          "id": "HKUST-TPG-011-TCSL",
+          "name": "Teaching Chinese as a Second Language",
+          "type": "Concentration",
+          "ruleText": "Complete at least two TCSL Concentration elective courses (6 credits) within the 12-credit elective requirement.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/"
+        }
+      ],
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "group-1",
+          "name": "Foundation Courses",
+          "type": "programme",
+          "creditsRequired": 12,
+          "ruleText": "Complete MILE 5000, MILE 5002 and MILE 5004, plus MILE 5005 for TESL or MILE 5006 for TCSL.",
+          "courses": [
+            {
+              "code": "MILE 5000",
+              "name": "Language Learning",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/"
+            },
+            {
+              "code": "MILE 5002",
+              "name": "Language Teaching Methodology and Curriculum Design",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/"
+            },
+            {
+              "code": "MILE 5004",
+              "name": "Understanding Research in Language Education",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/"
+            },
+            {
+              "code": "MILE 5005",
+              "name": "Descriptions of Language for English Teachers",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKUST-TPG-011-TESL"
+              ],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/"
+            },
+            {
+              "code": "MILE 5006",
+              "name": "Descriptions of Language for Chinese Teachers",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKUST-TPG-011-TCSL"
+              ],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/"
+            }
+          ],
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/",
+          "appliesToTrackIds": []
+        },
+        {
+          "id": "group-2",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 12,
+          "ruleText": "Complete 12 elective credits in total, including at least two courses (6 credits) from the selected Concentration pool.",
+          "courses": [
+            {
+              "code": "MILE 5103",
+              "name": "Testing and Assessment",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/"
+            },
+            {
+              "code": "MILE 5106",
+              "name": "Contrastive Analysis between Chinese and English",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/"
+            },
+            {
+              "code": "MILE 5108",
+              "name": "* Foundations of Technology-enhanced Language Education",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/"
+            },
+            {
+              "code": "MILE 5109",
+              "name": "Bi/Multilingual Approaches to Language Education",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/"
+            },
+            {
+              "code": "MILE 6000",
+              "name": "Supervised Teaching Practicum",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/"
+            },
+            {
+              "code": "MILE 6980",
+              "name": "Research Project in International Language Education",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/"
+            }
+          ],
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/",
+          "appliesToTrackIds": []
+        },
+        {
+          "id": "group-3",
+          "name": "TESL Concentration Elective Pool",
+          "type": "elective",
+          "creditsRequired": 6,
+          "ruleText": "TESL students complete at least two courses (6 credits) from this pool as part of the 12-credit elective requirement.",
+          "courses": [
+            {
+              "code": "MILE 5201",
+              "name": "World Englishes",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKUST-TPG-011-TESL"
+              ],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-011-TESL"
+              ]
+            },
+            {
+              "code": "MILE 5202",
+              "name": "Teaching Second Language Vocabulary",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKUST-TPG-011-TESL"
+              ],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-011-TESL"
+              ]
+            },
+            {
+              "code": "MILE 5203",
+              "name": "Phonetics and Phonology for English Teachers",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKUST-TPG-011-TESL"
+              ],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-011-TESL"
+              ]
+            },
+            {
+              "code": "MILE 5205",
+              "name": "Grammar for English Teachers",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKUST-TPG-011-TESL"
+              ],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-011-TESL"
+              ]
+            },
+            {
+              "code": "MILE 5206",
+              "name": "Teaching English for Academic Purposes",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKUST-TPG-011-TESL"
+              ],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-011-TESL"
+              ]
+            },
+            {
+              "code": "MILE 5208",
+              "name": "Discourse Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKUST-TPG-011-TESL"
+              ],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-011-TESL"
+              ]
+            },
+            {
+              "code": "MILE 5209",
+              "name": "English-Medium Instruction and International Education",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKUST-TPG-011-TESL"
+              ],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-011-TESL"
+              ]
+            },
+            {
+              "code": "MILE 5210",
+              "name": "Functional Linguistics",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKUST-TPG-011-TESL"
+              ],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-011-TESL"
+              ]
+            }
+          ],
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/",
+          "appliesToTrackIds": [
+            "HKUST-TPG-011-TESL"
+          ],
+          "coursesRequired": 2
+        },
+        {
+          "id": "group-4",
+          "name": "TCSL Concentration Elective Pool",
+          "type": "elective",
+          "creditsRequired": 6,
+          "ruleText": "TCSL students complete at least two courses (6 credits) from this pool as part of the 12-credit elective requirement.",
+          "courses": [
+            {
+              "code": "MILE 5301",
+              "name": "Chinese Writing and Culture",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKUST-TPG-011-TCSL"
+              ],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-011-TCSL"
+              ]
+            },
+            {
+              "code": "MILE 5302",
+              "name": "* Mandarin Chinese Grammar for L2 Chinese Teachers",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKUST-TPG-011-TCSL"
+              ],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-011-TCSL"
+              ]
+            },
+            {
+              "code": "MILE 5303",
+              "name": "Advanced Phonetics and Phonology of the Chinese Language",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKUST-TPG-011-TCSL"
+              ],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-011-TCSL"
+              ]
+            },
+            {
+              "code": "MILE 5304",
+              "name": "Chinese Lexicology",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKUST-TPG-011-TCSL"
+              ],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-011-TCSL"
+              ]
+            },
+            {
+              "code": "MILE 5306",
+              "name": "Understanding Chinese Language in Global Context",
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgcourse/2023-24/MILE",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKUST-TPG-011-TCSL"
+              ],
+              "countsTowardTrackIds": [
+                "HKUST-TPG-011-TCSL"
+              ]
+            },
+            {
+              "code": "MILE 5308",
+              "name": "The Practice of Teaching International Chinese",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKUST-TPG-011-TCSL"
+              ],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-011-TCSL"
+              ]
+            }
+          ],
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/",
+          "appliesToTrackIds": [
+            "HKUST-TPG-011-TCSL"
+          ],
+          "coursesRequired": 2
+        }
+      ]
+    },
+    {
       "programmeId": "HKUST-TPG-012",
       "status": "verified",
       "creditsRequired": 24,
@@ -883,6 +2012,165 @@
           "courses": [],
           "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gfin/",
           "appliesToTrackIds": []
+        }
+      ]
+    },
+    {
+      "programmeId": "HKUST-TPG-013",
+      "status": "verified",
+      "creditsRequired": 45,
+      "creditUnit": "credits",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/",
+      "tracks": [
+        {
+          "id": "HKUST-TPG-013-FULL-TIME",
+          "name": "Full-time MBA",
+          "type": "Award Path",
+          "creditsRequired": 52,
+          "ruleText": "Complete 52 credits: 2 Required Immersion, 16 Core, 33 Elective and 1 Required Wrap-up credit.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/"
+        },
+        {
+          "id": "HKUST-TPG-013-PART-TIME",
+          "name": "Part-time MBA",
+          "type": "Award Path",
+          "creditsRequired": 45,
+          "ruleText": "Complete 45 credits: 2 Required Immersion, 16 Core and 27 Elective credits.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/"
+        }
+      ],
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "group-1",
+          "name": "Required Immersion Program",
+          "type": "core",
+          "creditsRequired": 2,
+          "ruleText": "Complete the 2-credit Required Immersion Program in both Award Paths.",
+          "courses": [
+            {
+              "code": "MGMT 5210",
+              "name": "Preparing to Lead",
+              "credits": 2,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/"
+            }
+          ],
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/",
+          "appliesToTrackIds": []
+        },
+        {
+          "id": "group-2",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 16,
+          "ruleText": "Complete all eight 2-credit Core Courses in both Award Paths.",
+          "courses": [
+            {
+              "code": "ACCT 5100",
+              "name": "Corporate Reporting",
+              "credits": 2,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/"
+            },
+            {
+              "code": "ECON 5110",
+              "name": "Managerial Microeconomics",
+              "credits": 2,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/"
+            },
+            {
+              "code": "FINA 5120",
+              "name": "Corporate Finance",
+              "credits": 2,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/"
+            },
+            {
+              "code": "ISOM 5020",
+              "name": "Technology Strategy and Management",
+              "credits": 2,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/"
+            },
+            {
+              "code": "ISOM 5700",
+              "name": "Operations Management",
+              "credits": 2,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/"
+            },
+            {
+              "code": "MARK 5120",
+              "name": "Marketing Strategy",
+              "credits": 2,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/"
+            },
+            {
+              "code": "MGMT 5410",
+              "name": "Strategic Management",
+              "credits": 2,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/"
+            },
+            {
+              "code": "MGMT 5590",
+              "name": "Responsible Leadership",
+              "credits": 2,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/"
+            }
+          ],
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/",
+          "appliesToTrackIds": []
+        },
+        {
+          "id": "group-3",
+          "name": "Full-time Advanced Electives",
+          "type": "elective",
+          "creditsRequired": 33,
+          "ruleText": "Full-time MBA students complete 33 advanced elective credits. The official Programme page describes career-focus areas but does not publish a fixed course-code pool.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/",
+          "appliesToTrackIds": [
+            "HKUST-TPG-013-FULL-TIME"
+          ],
+          "courses": []
+        },
+        {
+          "id": "group-4",
+          "name": "Part-time Advanced Electives",
+          "type": "elective",
+          "creditsRequired": 27,
+          "ruleText": "Part-time MBA students complete 27 advanced elective credits. The official Programme page describes career-focus areas but does not publish a fixed course-code pool.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/",
+          "appliesToTrackIds": [
+            "HKUST-TPG-013-PART-TIME"
+          ],
+          "courses": []
+        },
+        {
+          "id": "group-5",
+          "name": "Required Wrap-up Program",
+          "type": "core",
+          "creditsRequired": 1,
+          "ruleText": "Full-time MBA students complete the 1-credit Required Wrap-up Program.",
+          "courses": [
+            {
+              "code": "MGMT 5640",
+              "name": "Time to Lead",
+              "credits": 1,
+              "appliesToTrackIds": [
+                "HKUST-TPG-013-FULL-TIME"
+              ],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/"
+            }
+          ],
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/",
+          "appliesToTrackIds": [
+            "HKUST-TPG-013-FULL-TIME"
+          ]
         }
       ]
     },
@@ -5053,6 +6341,297 @@
           ],
           "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-drap/",
           "appliesToTrackIds": []
+        }
+      ]
+    },
+    {
+      "programmeId": "HKUST-TPG-042",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credits",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-telecom/",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "group-1",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 24,
+          "ruleText": "Required Courses: 24 credits",
+          "courses": [
+            {
+              "code": "EESM 5515",
+              "name": "IP Networks",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-telecom/"
+            },
+            {
+              "code": "EESM 5536",
+              "name": "Digital Communications: From Fundamentals to AI-Native Networks",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-telecom/"
+            },
+            {
+              "code": "EESM 5539",
+              "name": "Wireless Communication Networks",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-telecom/"
+            },
+            {
+              "code": "EESM 5540",
+              "name": "Introduction to Telecommunication Networks",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-telecom/"
+            },
+            {
+              "code": "EESM 5546",
+              "name": "Wireless Communication Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-telecom/"
+            },
+            {
+              "code": "EESM 5547",
+              "name": "Multimedia Signal Processing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-telecom/"
+            },
+            {
+              "code": "EESM 5548",
+              "name": "Mobile Edge Computing and Edge AI for 6G",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-telecom/"
+            },
+            {
+              "code": "EESM 5820",
+              "name": "Emerging Technologies in Telecommunications and 6G",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-telecom/"
+            },
+            {
+              "code": "EESM 5910",
+              "name": "Topics in Telecommunications and Network Convergence",
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-telecom/",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "EESM 6000-6009",
+              "name": "Special Topics",
+              "creditUnit": "credits",
+              "creditsMin": 1,
+              "creditsMax": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-telecom/"
+            }
+          ],
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-telecom/",
+          "appliesToTrackIds": []
+        },
+        {
+          "id": "group-2",
+          "name": "MSc Project",
+          "type": "project",
+          "creditsRequired": 6,
+          "ruleText": "Complete 6 MSc Project credits. Students are required to repeat EESM 6980 until they have obtained 6 credits for graduation.",
+          "courses": [
+            {
+              "code": "EESM 6980",
+              "name": "MSc Project",
+              "creditsMin": 1,
+              "creditsMax": 4,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-telecom/"
+            }
+          ],
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-telecom/",
+          "appliesToTrackIds": []
+        }
+      ]
+    },
+    {
+      "programmeId": "HKUST-TPG-043",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credits",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/",
+      "trackSelectionOptional": true,
+      "tracks": [
+        {
+          "id": "HKUST-TPG-043-AI-DATA-ANALYTICS",
+          "name": "AI and Data Analytics",
+          "type": "Concentration",
+          "creditsRequired": 30,
+          "ruleText": "Optional professional Concentration: complete four approved courses (8 credits). The approved course list is not published on the Programme page.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/"
+        },
+        {
+          "id": "HKUST-TPG-043-ECONOMIC-POLICY",
+          "name": "Economic Policy",
+          "type": "Concentration",
+          "creditsRequired": 30,
+          "ruleText": "Optional professional Concentration: complete four approved courses (8 credits). The approved course list is not published on the Programme page.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/"
+        },
+        {
+          "id": "HKUST-TPG-043-FINANCIAL-ECONOMICS",
+          "name": "Financial Economics",
+          "type": "Concentration",
+          "creditsRequired": 30,
+          "ruleText": "Optional professional Concentration: complete four approved courses (8 credits). The approved course list is not published on the Programme page.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/"
+        },
+        {
+          "id": "HKUST-TPG-043-RESEARCH-PREPARATION",
+          "name": "Research Preparation",
+          "type": "Concentration",
+          "creditsRequired": 36,
+          "ruleText": "Complete at least 36 credits, including 14 Core, at least 16 Elective credits with 6 credits at PhD level, plus ECON 6980.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/"
+        }
+      ],
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "group-1",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 14,
+          "ruleText": "Complete 14 Core credits. Starred courses may be substituted by an equivalent course with prior approval.",
+          "courses": [
+            {
+              "code": "ECON 5130",
+              "name": "Microeconomic Analysis",
+              "credits": 4,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/"
+            },
+            {
+              "code": "ECON 5140",
+              "name": "Macroeconomic Analysis",
+              "credits": 4,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/"
+            },
+            {
+              "code": "ECON 5150",
+              "name": "Mathematical Foundations for Economic Analysis",
+              "credits": 2,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/"
+            },
+            {
+              "code": "ECON 5280",
+              "name": "Applied Econometrics",
+              "credits": 4,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/"
+            }
+          ],
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/",
+          "appliesToTrackIds": []
+        },
+        {
+          "id": "group-2",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": null,
+          "ruleText": "Complete at least 16 Elective credits under the official level, department and approval limits. ECON 6950 may count as an elective; the full eligible course-code pool is not fixed on the Programme page.",
+          "courses": [
+            {
+              "code": "ECON 6950",
+              "name": "MSc Project",
+              "credits": 2,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/"
+            }
+          ],
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/",
+          "appliesToTrackIds": [],
+          "creditsMin": 16
+        },
+        {
+          "id": "group-3",
+          "name": "AI and Data Analytics Concentration Requirement",
+          "type": "elective",
+          "creditsRequired": 8,
+          "coursesRequired": 4,
+          "ruleText": "Complete four approved AI and Data Analytics elective courses (8 credits). The official page states that selections require Academic Director approval and does not publish the fixed pool.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/",
+          "appliesToTrackIds": [
+            "HKUST-TPG-043-AI-DATA-ANALYTICS"
+          ],
+          "courses": []
+        },
+        {
+          "id": "group-4",
+          "name": "Economic Policy Concentration Requirement",
+          "type": "elective",
+          "creditsRequired": 8,
+          "coursesRequired": 4,
+          "ruleText": "Complete four approved Economic Policy elective courses (8 credits). The official page states that selections require Academic Director approval and does not publish the fixed pool.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/",
+          "appliesToTrackIds": [
+            "HKUST-TPG-043-ECONOMIC-POLICY"
+          ],
+          "courses": []
+        },
+        {
+          "id": "group-5",
+          "name": "Financial Economics Concentration Requirement",
+          "type": "elective",
+          "creditsRequired": 8,
+          "coursesRequired": 4,
+          "ruleText": "Complete four approved Financial Economics elective courses (8 credits). The official page states that selections require Academic Director approval and does not publish the fixed pool.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/",
+          "appliesToTrackIds": [
+            "HKUST-TPG-043-FINANCIAL-ECONOMICS"
+          ],
+          "courses": []
+        },
+        {
+          "id": "group-6",
+          "name": "Research Preparation PhD-level Electives",
+          "type": "elective",
+          "creditsRequired": 6,
+          "ruleText": "At least 6 of the minimum 16 Elective credits must be at PhD level; the Programme page does not publish a fixed course-code pool.",
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/",
+          "appliesToTrackIds": [
+            "HKUST-TPG-043-RESEARCH-PREPARATION"
+          ],
+          "courses": []
+        },
+        {
+          "id": "group-7",
+          "name": "Research Preparation Independent Project",
+          "type": "project",
+          "creditsRequired": 6,
+          "ruleText": "Research Preparation students complete the 6-credit ECON 6980 Independent Project.",
+          "courses": [
+            {
+              "code": "ECON 6980",
+              "name": "Independent Project",
+              "credits": 6,
+              "appliesToTrackIds": [
+                "HKUST-TPG-043-RESEARCH-PREPARATION"
+              ],
+              "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/",
+              "countsTowardTrackIds": [
+                "HKUST-TPG-043-RESEARCH-PREPARATION"
+              ]
+            }
+          ],
+          "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/",
+          "appliesToTrackIds": [
+            "HKUST-TPG-043-RESEARCH-PREPARATION"
+          ]
         }
       ]
     },

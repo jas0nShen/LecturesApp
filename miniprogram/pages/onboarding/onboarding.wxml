@@ -66,7 +66,9 @@
           value="{{ugKeyword}}"
           placeholder="搜索 Programme、代码、学院"
           confirm-type="search"
-          bindinput="onUgKeyword"
+          always-embed="{{true}}"
+          bind:input="onUgKeyword"
+          bind:confirm="onUgKeyword"
         />
         <view wx:if="{{ugKeyword}}" class="programme-clear" bindtap="clearUgKeyword">×</view>
       </view>
@@ -169,7 +171,9 @@
           value="{{tpgKeyword}}"
           placeholder="搜索 Programme 名称、代码或学院"
           confirm-type="search"
-          bindinput="onTpgKeyword"
+          always-embed="{{true}}"
+          bind:input="onTpgKeyword"
+          bind:confirm="onTpgKeyword"
         />
         <view wx:if="{{tpgKeyword}}" class="programme-clear" bindtap="clearTpgKeyword">×</view>
       </view>

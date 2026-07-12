@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-045",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm",
+      "ruleReviewStatus": "verified",
+      "courseGroups": [
+        {
+          "id": "core",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 21,
+          "coursesRequired": 7,
+          "ruleText": "Complete all seven Core Courses (21 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm",
+          "courses": [
+            { "code": "COM5104", "name": "Research Methods for Communication and New Media", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" },
+            { "code": "COM5106", "name": "Integrated Marketing Communication", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" },
+            { "code": "COM5401", "name": "Advertising Production and Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" },
+            { "code": "COM5402", "name": "Public Relations Strategies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" },
+            { "code": "COM5403", "name": "Crisis Communication and Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" },
+            { "code": "COM5405", "name": "Consumer Behavior Insight", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" },
+            { "code": "COM6601", "name": "Capstone Project", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" }
+          ]
+        },
+        {
+          "id": "electives",
+          "name": "Elective Courses",
+          "type": "elective_dissertation_internship",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Choose three Elective Courses (9 credit units) from the official pool. COM5603 Dissertation and COM5604 Professional Internship are three-credit elective options.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm",
+          "courses": [
+            { "code": "COM5102", "name": "Global Media in the Digital Era", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" },
+            { "code": "COM5108", "name": "Psychological Processing of New Media", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" },
+            { "code": "COM5110", "name": "Public Communication Campaign Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" },
+            { "code": "COM5111", "name": "Generative AI for Digital Marketing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" },
+            { "code": "COM5112", "name": "Communication Research Seminar", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" },
+            { "code": "COM5404", "name": "Stakeholders Relationship Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" },
+            { "code": "COM5406", "name": "Entrepreneurship and Business Planning", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" },
+            { "code": "COM5407", "name": "Financial Communication and Promotion", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" },
+            { "code": "COM5408", "name": "Global Promotion and Branding", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" },
+            { "code": "COM5502", "name": "Multimedia Communication", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" },
+            { "code": "COM5503", "name": "Dynamic Web Communication", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" },
+            { "code": "COM5504", "name": "Advanced Multimedia Communication", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" },
+            { "code": "COM5505", "name": "Digital Media for E-Marketing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" },
+            { "code": "COM5506", "name": "Social Network Analysis for Communication", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" },
+            { "code": "COM5507", "name": "Social Media Data Acquisition and Processing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" },
+            { "code": "COM5508", "name": "Media Data Analytics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" },
+            { "code": "COM5509", "name": "Digital Visual Media", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" },
+            { "code": "COM5510", "name": "Introduction to Artificial Intelligence", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" },
+            { "code": "COM5511", "name": "Social Media Influencer", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" },
+            { "code": "COM5512", "name": "Human-AI Communication Workshop", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" },
+            { "code": "COM5513", "name": "AI Communication Ethics and Governance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" },
+            { "code": "COM5514", "name": "Mobile Communication and Apps Design", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" },
+            { "code": "COM5602", "name": "Directed Studies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" },
+            { "code": "COM5603", "name": "Dissertation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" },
+            { "code": "COM5604", "name": "Professional Internship", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAIMC.htm" }
+          ]
+        }
+      ]
+    }
+  ]
+}

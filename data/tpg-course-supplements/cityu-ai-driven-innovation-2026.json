@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-037",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core",
+          "name": "Required Core Courses",
+          "type": "core_project",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Required Core Courses (12 credit units), including the AI-Driven Innovation seminars and projects course.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89",
+          "courses": [
+            { "code": "SYE6012", "name": "Technological Innovation and Entrepreneurship", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "SYE6302", "name": "Design Science", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "SYE6601", "name": "Introduction to Artificial Intelligence: Concepts and Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "SYE6602", "name": "AI-Driven Innovation: Seminars and Projects", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" }
+          ]
+        },
+        {
+          "id": "electives",
+          "name": "Programme Electives",
+          "type": "elective_internship",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Complete 18 credit units (normally six courses) from the official Programme Elective pool. Course offerings remain subject to resource availability.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89",
+          "courses": [
+            { "code": "SYE5006", "name": "Operations Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "SYE5009", "name": "Industrial Marketing Management for Engineers", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "SYE5010", "name": "Engineering Management Principles and Concepts", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "SYE6009", "name": "Project Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "SYE6015", "name": "Supply Chain Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "SYE6037", "name": "Managing Strategic Quality", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "SYE6050", "name": "Engineering Economic Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "SYE6053", "name": "Business Process Improvement and Innovation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "SYE6102", "name": "Managerial Decision-Making Systems with Artificial Intelligence", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "SYE6103", "name": "Financial Engineering for Engineering Managers", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "SYE6105", "name": "Risk and Decision Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "SYE6106", "name": "Intelligent Manufacturing for Engineering Managers", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "SYE6110", "name": "Data Analysis and Artificial Intelligence for Systems Engineering", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "SYE6610", "name": "AI Innovation Internships", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "SYE6612", "name": "The Fourth Industrial Revolution", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "SYE6620", "name": "AI-Based Media Entrepreneurship", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "CAI6002", "name": "Venture Creation Seminar", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "SM5345", "name": "Introduction to Digital Processes: From Creative Computation to Fabrication", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "MNE6128", "name": "Advanced Machine Learning and Quantum Computation for Engineering", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "NS5007", "name": "Human and Artificial Intelligence", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "NS5009", "name": "Ethical Application of Artificial Intelligence in Biological Sciences and Healthcare", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "NS6002", "name": "Advanced Computational Neuroscience", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "BME5110", "name": "Biomedical Engineering Design", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "BME6135", "name": "Engineering Principles for Drug Delivery", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "BME6138", "name": "Robotics in Minimally Invasive Healthcare", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "BMS5010", "name": "AI in Health Science Research & Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "BMS5011", "name": "Wearable Technologies & Health Science Research", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "BMS8110", "name": "Genomics and Bioinformatics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "PH5101", "name": "Health Economics and Outcomes Research", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "PH5105", "name": "Basic Biostatistics in Public Health", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "PH5106", "name": "Fundamentals of Epidemiology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "PH6202", "name": "Infectious Disease Epidemiology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" },
+            { "code": "PH6204", "name": "Public Health Surveillance & Risk Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-engineering/department-of-systems-engineering/p89" }
+          ]
+        }
+      ]
+    }
+  ]
+}

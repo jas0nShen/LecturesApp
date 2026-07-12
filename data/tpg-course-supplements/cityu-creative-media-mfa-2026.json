@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-055",
+      "status": "verified",
+      "creditsRequired": 54,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm",
+      "ruleReviewStatus": "verified",
+      "tracks": [
+        { "id": "CITYU-TPG-055-MAIN", "name": "MFACM Main (Without Stream Specification)", "type": "Award Path", "creditsRequired": 54, "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+        { "id": "CITYU-TPG-055-GAMES", "name": "Games", "type": "Stream", "creditsRequired": 54, "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+        { "id": "CITYU-TPG-055-HCI", "name": "Human-Computer Interaction", "type": "Stream", "creditsRequired": 54, "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" }
+      ],
+      "courseGroups": [
+        {
+          "id": "main-studio-core",
+          "name": "MFACM Main Studio and Core Courses",
+          "type": "track_core",
+          "creditsRequired": 12,
+          "coursesRequired": 3,
+          "ruleText": "MFACM Main students complete these three Studio/Core courses (12 credit units), the shared 3-credit SM5345 Core Course, and the 9-credit Main Thesis Studio sequence, for 24 Core credit units in total.",
+          "appliesToTrackIds": ["CITYU-TPG-055-MAIN"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm",
+          "courses": [
+            { "code": "SM5301", "name": "Studio I", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-055-MAIN"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM5302", "name": "Studio II", "credits": 6, "appliesToTrackIds": ["CITYU-TPG-055-MAIN"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM6333", "name": "World Making: Artistic Strategies for Contingent Systems", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-055-MAIN"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" }
+          ]
+        },
+        {
+          "id": "games-studio-core",
+          "name": "Games Stream Studio and Core Courses",
+          "type": "track_core",
+          "creditsRequired": 15,
+          "coursesRequired": 4,
+          "ruleText": "Games Stream students complete all four Studio/Core courses (15 credit units) and the 9-credit Games Thesis Studio sequence, for 24 Core credit units in total.",
+          "appliesToTrackIds": ["CITYU-TPG-055-GAMES"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm",
+          "courses": [
+            { "code": "SM5301A", "name": "Studio I (Games)", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-055-GAMES"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM5302A", "name": "Studio II (Games)", "credits": 6, "appliesToTrackIds": ["CITYU-TPG-055-GAMES"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM5350", "name": "Game Design Fundamentals", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-055-GAMES"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM5339", "name": "Art and Activist Games Workshop", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-055-GAMES"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" }
+          ]
+        },
+        {
+          "id": "hci-studio-core",
+          "name": "HCI Stream Studio and Core Courses",
+          "type": "track_core",
+          "creditsRequired": 12,
+          "coursesRequired": 3,
+          "ruleText": "Human-Computer Interaction Stream students complete these three Studio/Core courses (12 credit units), the shared 3-credit SM5345 Core Course, and the 9-credit HCI Thesis Studio sequence, for 24 Core credit units in total.",
+          "appliesToTrackIds": ["CITYU-TPG-055-HCI"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm",
+          "courses": [
+            { "code": "SM5301B", "name": "Studio I (Human-Computer Interaction)", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-055-HCI"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM5302B", "name": "Studio II (Human-Computer Interaction)", "credits": 6, "appliesToTrackIds": ["CITYU-TPG-055-HCI"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM5354", "name": "Design Thinking and Innovation in Media", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-055-HCI"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" }
+          ]
+        },
+        {
+          "id": "main-hci-shared-core",
+          "name": "Main and HCI Shared Core Course",
+          "type": "track_core",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "SM5345 is a required Core Course for both MFACM Main and Human-Computer Interaction Stream students.",
+          "appliesToTrackIds": ["CITYU-TPG-055-MAIN", "CITYU-TPG-055-HCI"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm",
+          "courses": [
+            { "code": "SM5345", "name": "Introduction to Digital Processes: From Creative Computation to Fabrication", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-055-MAIN", "CITYU-TPG-055-HCI"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" }
+          ]
+        },
+        {
+          "id": "main-thesis",
+          "name": "MFACM Main Thesis Studio",
+          "type": "track_thesis",
+          "creditsRequired": 9,
+          "coursesRequired": 2,
+          "ruleText": "MFACM Main students complete both Thesis Project Studio courses (9 credit units).",
+          "appliesToTrackIds": ["CITYU-TPG-055-MAIN"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm",
+          "courses": [
+            { "code": "SM6300", "name": "Thesis Project - Studio I", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-055-MAIN"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM6302", "name": "Thesis Project - Studio II", "credits": 6, "appliesToTrackIds": ["CITYU-TPG-055-MAIN"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" }
+          ]
+        },
+        {
+          "id": "games-thesis",
+          "name": "Games Stream Thesis Studio",
+          "type": "track_thesis",
+          "creditsRequired": 9,
+          "coursesRequired": 2,
+          "ruleText": "Games Stream students complete both Games Thesis Project Studio courses (9 credit units).",
+          "appliesToTrackIds": ["CITYU-TPG-055-GAMES"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm",
+          "courses": [
+            { "code": "SM6300A", "name": "Thesis Project - Studio I (Games)", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-055-GAMES"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM6302A", "name": "Thesis Project - Studio II (Games)", "credits": 6, "appliesToTrackIds": ["CITYU-TPG-055-GAMES"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" }
+          ]
+        },
+        {
+          "id": "hci-thesis",
+          "name": "HCI Stream Thesis Studio",
+          "type": "track_thesis",
+          "creditsRequired": 9,
+          "coursesRequired": 2,
+          "ruleText": "Human-Computer Interaction Stream students complete both HCI Thesis Project Studio courses (9 credit units).",
+          "appliesToTrackIds": ["CITYU-TPG-055-HCI"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm",
+          "courses": [
+            { "code": "SM6300B", "name": "Thesis Project - Studio I (Human-Computer Interaction)", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-055-HCI"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM6302B", "name": "Thesis Project - Studio II (Human-Computer Interaction)", "credits": 6, "appliesToTrackIds": ["CITYU-TPG-055-HCI"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" }
+          ]
+        },
+        {
+          "id": "electives",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 30,
+          "coursesRequired": null,
+          "ruleText": "Complete 30 elective credit units from the official pool. Most courses carry 3 credit units; SM6317 and SM6342 carry 6 credit units, so the actual number of courses may be fewer than ten when either is selected. Permission and prerequisite remarks on individual courses remain applicable.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm",
+          "courses": [
+            { "code": "SM5306", "name": "Cinematic Arts Workshop", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM5307", "name": "Digital Media and Moving Images", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM5308", "name": "Art and Technology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM5312", "name": "Interactive Media I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM5313", "name": "Interactive Media II", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM5315", "name": "Independent Study I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM5316", "name": "Topics in Media Art I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM5317", "name": "Digital Sound and Computer Music", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM5318", "name": "Topics in Media History and Theory I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM5323", "name": "Topics in Media History and Theory II", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM5332", "name": "Making Things Blip, Blink & Move: Introduction to Physical Computing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM5334", "name": "Navigating Social Media: Culture, Aesthetics, and Technology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM5335", "name": "Archaeology of New Media Art", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM5336", "name": "Art in the Information Age: Creative Act, Art Object, Aesthetic Perception", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM5343", "name": "Law, Policies and Global Media Platforms", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM5344", "name": "Abstract and Experimental Animation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM5346", "name": "Topics in Interactive", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM5347", "name": "Topics in Media Worlding", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM5353", "name": "Creative Entrepreneurship in Media", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM5358", "name": "Qualitative Research in Social Computing and Art Technology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM5359", "name": "Psychology of Interactive Media and Games", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM5360", "name": "Making Interactive Things", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM6305", "name": "Media Art: Theory and Practice I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM6310", "name": "Independent Study II", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM6311", "name": "Topics in Media Art II", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM6316", "name": "Media Art: Theory and Practice II", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM6317", "name": "Research Project in Media Studies", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM6319", "name": "Privacy and Surveillance in Art and Culture", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM6323", "name": "Critical Ludology: Games, Playability and New Media Art", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM6324", "name": "Sensory Ethnography: Critical and Creative Practices", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM6325", "name": "Philosophy of Technology and New Media", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM6328", "name": "Analysis and Criticism of Computer Games", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM6332", "name": "Computer Games and Society", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM6341", "name": "Independent Documentary Production", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM6342", "name": "Transcultural Collaboration—A Hong Kong-Swiss International Exchange Project", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM6343", "name": "Collaborative Topics in Media Art", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM6344", "name": "Technology and Aesthetics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM6348", "name": "Under the Skin of Fashion", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "SM6351", "name": "Information Visualization", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "CS5182", "name": "Computer Graphics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "CS5187", "name": "Vision and Image", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "CS5188", "name": "Virtual Reality Technologies and Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "EE5410", "name": "Signal Processing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" },
+            { "code": "EE5437", "name": "Internet of Things Technologies for Future City Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MFACM.htm" }
+          ]
+        }
+      ]
+    }
+  ]
+}

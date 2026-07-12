@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-046",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [
+        { "id": "CITYU-TPG-046-GENERAL", "name": "General Track", "type": "Official study option", "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-english/p40" },
+        { "id": "CITYU-TPG-046-TESL", "name": "Teaching English as a Second Language", "type": "Stream", "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-english/p40" },
+        { "id": "CITYU-TPG-046-LLC", "name": "Literature, Language and Culture", "type": "Stream", "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-liberal-arts-and-social-sciences/department-of-english/p40" }
+      ],
+      "courseGroups": [
+        {
+          "id": "core",
+          "name": "Core Courses and Research Path",
+          "type": "core_dissertation_project",
+          "creditsRequired": 12,
+          "coursesRequired": 3,
+          "ruleText": "Complete EN5450 and EN5461, plus either the 6-credit EN6941 Dissertation or the 6-credit EN6943 Capstone Project. Dissertation and Capstone Project are mutually exclusive.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm",
+          "courses": [
+            { "code": "EN5450", "name": "Survey of Literary Genres", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" },
+            { "code": "EN5461", "name": "Language in Its Social Context", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" },
+            { "code": "EN6941", "name": "Dissertation", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" },
+            { "code": "EN6943", "name": "Capstone Project", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" }
+          ]
+        },
+        {
+          "id": "electives",
+          "name": "Elective Courses and Stream Requirements",
+          "type": "track_elective",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "General Track students choose any six electives. TESL Stream students must include EN5465 and EN6495, plus four other electives. Literature, Language and Culture Stream students must include EN6508 and EN6509, plus four other electives. Students may gain only one Stream; these inclusion rules require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm",
+          "courses": [
+            { "code": "EN5315", "name": "Analysing Specialised Texts for Applied Purposes", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" },
+            { "code": "EN5464", "name": "English Phonetics and Phonology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" },
+            { "code": "EN5465", "name": "Second Language Acquisition", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" },
+            { "code": "EN5466", "name": "Testing and Evaluation in Language Studies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" },
+            { "code": "EN5490", "name": "English Grammar", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" },
+            { "code": "EN5491", "name": "Discourse Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" },
+            { "code": "EN5495", "name": "Spoken Language Interactivity", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" },
+            { "code": "EN6471", "name": "Research Methods in English Studies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" },
+            { "code": "EN6483", "name": "Modern and Contemporary Drama", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" },
+            { "code": "EN6494", "name": "New Literacies and Language Learning", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" },
+            { "code": "EN6495", "name": "Approaches to Language Teaching", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" },
+            { "code": "EN6505", "name": "Curriculum Design in Language Studies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" },
+            { "code": "EN6508", "name": "Critical Approaches to Literature", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" },
+            { "code": "EN6509", "name": "World Literatures in English", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" },
+            { "code": "EN6510", "name": "Asian and Asian Diaspora Literature in English", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" },
+            { "code": "EN6511", "name": "Teaching English for Academic Purposes", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" },
+            { "code": "EN6512", "name": "Special Topics in English Studies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" },
+            { "code": "EN6513", "name": "Fantasy and Literature", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" },
+            { "code": "EN6517", "name": "Literature and the City", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" },
+            { "code": "EN6518", "name": "Travel Writing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" },
+            { "code": "EN6519", "name": "Studies in Literature and Film", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" },
+            { "code": "EN6520", "name": "The Graphic Novel", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" },
+            { "code": "EN6521", "name": "Discourse, Ideology and Power", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" },
+            { "code": "EN6522", "name": "Corpus Linguistics in English Studies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" },
+            { "code": "EN6523", "name": "Studies in Short Fiction", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" },
+            { "code": "EN6524", "name": "Teaching and Learning through English as a Medium of Instruction", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" },
+            { "code": "EN6942", "name": "English for Academic Research in English Studies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MAES.htm" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -18,6 +18,11 @@ function formatTpgProgrammeOption(programme = {}) {
   return programme.name || programme.programmeCode || 'Programme 待确认';
 }
 
+function getInputValue(event = {}) {
+  const detail = event.detail || {};
+  return String(detail.value ?? detail.text ?? '').trimStart();
+}
+
 function formatMajorOption(major = {}) {
   return major.nameZh || major.nameEn || major.code || 'Major 待确认';
 }
@@ -406,7 +411,7 @@ Page({
   },
 
   onUgKeyword(event) {
-    const keyword = event.detail.value;
+    const keyword = getInputValue(event);
     const filteredUgProgrammes = ugService.searchProgrammes(this.data.programmes, keyword);
     const selectedProgramme = filteredUgProgrammes.find(
       (item) => item.id === this.data.selectedProgramme.id
@@ -710,7 +715,7 @@ Page({
   },
 
   onTpgKeyword(event) {
-    const keyword = event.detail.value;
+    const keyword = getInputValue(event);
     const filteredTpgProgrammes = tpgService.searchProgrammes(this.data.tpgProgrammes, keyword);
     const selectedTpgProgramme = filteredTpgProgrammes.find(
       (item) => item.id === this.data.selectedTpgProgramme.id

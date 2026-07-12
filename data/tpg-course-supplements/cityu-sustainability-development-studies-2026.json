@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-043",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [
+        { "id": "CITYU-TPG-043-DEVELOPMENT-CHALLENGES", "name": "Development Challenges", "type": "Stream", "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" },
+        { "id": "CITYU-TPG-043-SUSTAINABILITY-STRATEGIES-POLICIES", "name": "Sustainability Strategies and Policies", "type": "Stream", "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" }
+      ],
+      "courseGroups": [
+        {
+          "id": "programme-core",
+          "name": "Programme Core Courses",
+          "type": "core",
+          "creditsRequired": 8,
+          "coursesRequired": 3,
+          "ruleText": "Complete all three fixed Programme Core Courses (8 credit units), then complete the applicable 4-credit Capstone or Thesis path.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm",
+          "courses": [
+            { "code": "PIA5001", "name": "Theories and Approaches in Development Studies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" },
+            { "code": "PIA5058", "name": "Sustainability Infrastructures and Measurements", "credits": 2, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" },
+            { "code": "PIA6502", "name": "Sustainable Development: Theory and Policy", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" }
+          ]
+        },
+        {
+          "id": "research-paths",
+          "name": "Stream Capstone and Thesis Paths",
+          "type": "track_capstone_thesis",
+          "creditsRequired": 4,
+          "coursesRequired": 1,
+          "ruleText": "Sustainability Strategies and Policies students complete PIA6020. Development Challenges students complete either PIA6019 or PIA6021; the PIA6021 Master’s Thesis requires grade A or above in PIA5026. These conditional paths require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm",
+          "courses": [
+            { "code": "PIA6020", "name": "SSP Capstone Project", "credits": 4, "appliesToTrackIds": ["CITYU-TPG-043-SUSTAINABILITY-STRATEGIES-POLICIES"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" },
+            { "code": "PIA6019", "name": "DS Capstone Project", "credits": 4, "appliesToTrackIds": ["CITYU-TPG-043-DEVELOPMENT-CHALLENGES"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" },
+            { "code": "PIA6021", "name": "Master's Thesis", "credits": 4, "appliesToTrackIds": ["CITYU-TPG-043-DEVELOPMENT-CHALLENGES"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" }
+          ]
+        },
+        {
+          "id": "stream-core-pool",
+          "name": "Stream Core Course Pools",
+          "type": "track_core_elective",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete five Stream Core Courses (15 credit units) from the declared Stream; the Department decides which five will be offered for each Stream each academic year. One course from the other Stream may instead satisfy the separate 3-credit Programme Elective requirement, so all official Stream courses remain visible and require manual allocation.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm",
+          "courses": [
+            { "code": "PIA5032", "name": "Authoritarian Resilience and Democratic Change in East Asia", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" },
+            { "code": "PIA5038", "name": "Environmental Challenges in Asia and the World", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" },
+            { "code": "PIA5048", "name": "China and the Developing World", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" },
+            { "code": "PIA5300", "name": "Politics and Social Movements in Developing Asia", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" },
+            { "code": "PIA5312", "name": "Comparative Development in Asia", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" },
+            { "code": "PIA5336", "name": "Cutting-edge Cases in Development under Late Capitalism", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" },
+            { "code": "PIA5057", "name": "Collaborative Governance for Sustainability", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" },
+            { "code": "PIA5059", "name": "Food Governance and Sustainable Development", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" },
+            { "code": "PIA5100", "name": "Managing Sustainable Development", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" },
+            { "code": "PIA5339", "name": "Labour, Sustainability and Development", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" },
+            { "code": "PIA6501", "name": "Urban Development and Sustainable Cities", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" },
+            { "code": "PIA6505", "name": "Financing Sustainability: Policy and Mechanisms", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" }
+          ]
+        },
+        {
+          "id": "programme-electives",
+          "name": "Programme Electives",
+          "type": "elective",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Choose one 3-credit Programme Elective from this pool, or one Stream Core Course from the Stream not declared by the student.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm",
+          "courses": [
+            { "code": "CA5240", "name": "Urban Design and Regional Planning History, Theory and Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" },
+            { "code": "CA5249", "name": "Energy Management for Building Sustainability", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" },
+            { "code": "CA5250", "name": "Renewable Energy for a Sustainable Building Performance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" },
+            { "code": "CA5251", "name": "Sustainable Building Development", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" },
+            { "code": "PIA5003", "name": "Project Planning and Management for Development", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" },
+            { "code": "PIA5026", "name": "Research Design for the Social Sciences", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" },
+            { "code": "PIA5051", "name": "Women and Politics in Asia", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" },
+            { "code": "PIA5510", "name": "Understanding and Managing Smart Cities", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" },
+            { "code": "PIA5711", "name": "Environmental Governance in China", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" },
+            { "code": "PIA6202", "name": "Evidence-based Policy and Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" }
+          ]
+        },
+        {
+          "id": "exceptional-substitute",
+          "name": "Exceptional Substitute Course",
+          "type": "conditional_substitute",
+          "ruleText": "PIA5511 may be offered only in exceptional circumstances as a substitute for either a Programme Core or a Stream Core Course; it does not add an extra graduation requirement.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm",
+          "courses": [
+            { "code": "PIA5511", "name": "Special Topics for Development and Sustainability", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSDS1.htm" }
+          ]
+        }
+      ]
+    }
+  ]
+}

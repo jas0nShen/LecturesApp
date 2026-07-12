@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-029",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core",
+          "name": "Required Core Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Required Core Courses (12 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm",
+          "courses": [
+            { "code": "SYE5006", "name": "Operations Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SYE5010", "name": "Engineering Management Principles and Concepts", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SYE6009", "name": "Project Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SYE6012", "name": "Technological Innovation and Entrepreneurship", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" }
+          ]
+        },
+        {
+          "id": "electives",
+          "name": "Programme Electives and Dissertation Path",
+          "type": "elective_dissertation",
+          "creditsRequired": 18,
+          "ruleText": "Complete 18 elective credit units, including at least 12 credit units of SYE courses. The award may be completed with taught courses only, or with three 3-credit electives plus the 9-credit SYE6018 Dissertation. Complex path and subject-code minimum require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm",
+          "courses": [
+            { "code": "EE6610", "name": "Queueing Theory with Telecommunications Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "EE6620", "name": "Linear Systems Theory and Design", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "MGT5313", "name": "International Organizational Behaviour", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "MGT6314", "name": "Global Human Resource Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "MGT6325", "name": "International Entrepreneurship & Intrapreneurship", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "MGT6326", "name": "Managing International Business", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "MS5217", "name": "Statistical Data Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "MS6219", "name": "Predictive Modeling and Forecasting for Business", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SDSC6004", "name": "Data Analytics for Smart Cities", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SDSC8009", "name": "Data Mining and Knowledge Discovery", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SYE5009", "name": "Industrial Marketing Management for Engineers", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SYE6014", "name": "Asset and Maintenance Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SYE6015", "name": "Supply Chain Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SYE6018", "name": "Dissertation", "credits": 9, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SYE6037", "name": "Managing Strategic Quality", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SYE6043", "name": "Quality and Reliability Engineering", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SYE6045", "name": "Industrial Case Study", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SYE6047", "name": "Quality Improvement: Systems and Methodologies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SYE6050", "name": "Engineering Economic Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SYE6053", "name": "Business Process Improvement and Innovation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SYE6101", "name": "Estimation and Control of Random Dynamic Systems", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SYE6102", "name": "Managerial Decision-making Systems with Artificial Intelligence", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SYE6103", "name": "Financial Engineering for Engineering Managers", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SYE6105", "name": "Risk and Decision Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SYE6106", "name": "Intelligent Manufacturing for Engineering Managers", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SYE6107", "name": "Contemporary Occupational Safety and Health Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SYE6108", "name": "Energy Conservation and Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SYE6109", "name": "Semiconductor Manufacturing and Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SYE6110", "name": "Data Analysis and Artificial Intelligence for Systems Engineering", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SYE6111", "name": "Transportation and Logistics Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SYE6301", "name": "Sustainability and Green Systems", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SYE6302", "name": "Design Science", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SYE6303", "name": "Multiscale Decision Making for Industrial Enterprise", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SYE6308", "name": "Statistical Learning in Manufacturing Quality Control", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SYE8202", "name": "Systems Modelling and Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SYE8204", "name": "Process Modelling and Control", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" },
+            { "code": "SYE8205", "name": "Managerial Economics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/sye/msem.htm" }
+          ]
+        }
+      ]
+    }
+  ]
+}

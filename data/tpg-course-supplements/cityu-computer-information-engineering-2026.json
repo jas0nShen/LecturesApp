@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-031",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [
+        { "id": "CITYU-TPG-031-MSCIE", "name": "MSc Computer and Information Engineering", "type": "Award Path", "creditsRequired": 30, "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+        { "id": "CITYU-TPG-031-INDUSTRIAL-RESEARCH", "name": "Industrial Research", "type": "Award Path", "creditsRequired": 45, "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+        { "id": "CITYU-TPG-031-BUSINESS-MANAGEMENT", "name": "Business Management", "type": "Award Path", "creditsRequired": 45, "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" }
+      ],
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Course Pool",
+          "type": "core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete at least 9 credit units (three courses) from the five-course Core Course pool. Across Core and Technical Elective courses, complete at least 24 credit units, including at least 12 credit units at Level 6 or Level 8 and at least 18 credit units of EE courses. Additional Core Courses beyond the 9-credit minimum count toward the combined 24-credit and EE requirements.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum",
+          "courses": [
+            { "code": "EE5607", "name": "Advanced Computer Architecture", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EE5608", "name": "Modern Cloud Architecture and Deployment Practices", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EE5609", "name": "Computer Networks: Architecture, Protocols, and Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EE5808", "name": "Topics in Computer Graphics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EE5815", "name": "Topics in Security Technology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" }
+          ]
+        },
+        {
+          "id": "technical-electives",
+          "name": "Technical Elective Course Pool",
+          "type": "elective",
+          "creditsRequired": null,
+          "coursesRequired": null,
+          "ruleText": "Core and Technical Elective courses together must contribute at least 24 credit units, with at least 12 credit units at Level 6 or Level 8 and at least 18 credit units of EE courses. The exact Technical Elective minimum depends on Core Courses taken beyond the 9-credit minimum. For Industrial Research, EE6691 is excluded from the combined 24-credit, level and 18-credit EE requirements. EE6680/EE6680D and EE6690 are listed for the MSCIE/Business Management paths, not Industrial Research. Course offering is subject to annual review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum",
+          "courses": [
+            { "code": "EE5410", "name": "Signal Processing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EE5412", "name": "Telecommunication Networks", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EE5415", "name": "Mobile Applications Design and Development", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EE5437", "name": "Internet of Things Technologies for Future City Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EE5438", "name": "Applied Deep Learning", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EE5606", "name": "Artificial Intelligence for Antennas in Wireless Communication", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EE5805", "name": "Java Network Programming", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EE5811", "name": "Topics in Computer Vision", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EE6428", "name": "Optical Communications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EE6435", "name": "Multi-Dimensional Data Modeling and its Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EE6450", "name": "Advanced Topics in Engineering I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EE6451", "name": "Advanced Topics in Engineering II", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EE6603", "name": "Wireless Communication Technologies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EE6605", "name": "Complex Networks: Modeling, Dynamics and Control", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EE6611", "name": "Directed Studies for Taught Postgraduate Students", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EE6619", "name": "Antenna Design for Wireless Communications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EE6620", "name": "Linear Systems Theory and Design", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EE6621", "name": "Computational Physiology and Neural Systems", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EE6623", "name": "Sustainable Energy Systems", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EE6625", "name": "Hardware Architectures for Artificial Intelligence and Machine Learning", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EE6626", "name": "AI-enabled Autonomous Driving", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EE6627", "name": "Quantitative Finance: Principles and Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EE6680", "name": "Dissertation", "credits": 9, "appliesToTrackIds": ["CITYU-TPG-031-MSCIE", "CITYU-TPG-031-BUSINESS-MANAGEMENT"], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EE6680D", "name": "Dissertation", "credits": 9, "appliesToTrackIds": ["CITYU-TPG-031-MSCIE", "CITYU-TPG-031-BUSINESS-MANAGEMENT"], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EE6690", "name": "Internship Scheme in Electrical Industry", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-031-MSCIE", "CITYU-TPG-031-BUSINESS-MANAGEMENT"], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EE8403", "name": "Machine Learning for Signal Processing Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EE8405", "name": "Queueing Theory with Telecommunications Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "SYE6204", "name": "VLSI/ULSI process integration", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "CS5282", "name": "Practical Optimization Algorithms and Techniques", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "CS5285", "name": "Introduction to Cybersecurity", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "CS5367", "name": "Computer Games Design", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "CS5481", "name": "Data Engineering", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "CS5487", "name": "Machine Learning: Principles and Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "CS6290", "name": "Privacy-enhancing Technologies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "SM5306", "name": "Cinematic Arts Workshop", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "SM5307", "name": "Digital Media and Moving Images", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "SM5332", "name": "Making Things Blip, Blink & Move: Introduction to Physical Computing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "SM6325", "name": "Philosophy of Technology and New Media", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" }
+          ]
+        },
+        {
+          "id": "industrial-research",
+          "name": "Industrial Research Requirement",
+          "type": "track_internship",
+          "creditsRequired": 15,
+          "coursesRequired": 1,
+          "ruleText": "Industrial Research students must complete EE6691 (15 credit units). EE6691 is restricted to full-time students on this Award Path and does not count toward the separate 24-credit Core/Technical, Level 6/8, or 18-credit EE requirements.",
+          "appliesToTrackIds": ["CITYU-TPG-031-INDUSTRIAL-RESEARCH"],
+          "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum",
+          "courses": [
+            { "code": "EE6691", "name": "Applied Research Internship Scheme in Electrical Engineering", "credits": 15, "appliesToTrackIds": ["CITYU-TPG-031-INDUSTRIAL-RESEARCH"], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" }
+          ]
+        },
+        {
+          "id": "business-management-electives",
+          "name": "Business Management Elective Course Pool",
+          "type": "elective",
+          "creditsRequired": null,
+          "coursesRequired": null,
+          "ruleText": "These courses are marked as Business Management electives by the official curriculum. Business Management Award Path students must complete at least 15 and no more than 18 credit units from this pool. The published table also makes these courses available outside that path, so they remain visible to all paths while the minimum applies only to Business Management.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum",
+          "courses": [
+            { "code": "SYE6015", "name": "Supply Chain Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "SYE6037", "name": "Managing Strategic Quality", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EF5010", "name": "Economics for Business", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EF5042", "name": "Corporate Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EF5052", "name": "Investments", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "EF5342", "name": "Financial Systems, Markets and Instruments", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "IS5414", "name": "Analysis and Design of ecommerce Systems", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "MGT5204", "name": "Management and Organizations", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "MGT5205", "name": "Strategic Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" },
+            { "code": "MGT5316", "name": "Human Resources Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ee.cityu.edu.hk/en/prospective_students/graduate_admission/mscie_curriculum" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-036",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core",
+          "name": "Required Core Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Required Core Courses (12 credit units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm",
+          "courses": [
+            { "code": "SYE6043", "name": "Quality and Reliability Engineering", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm" },
+            { "code": "SYE6109", "name": "Semiconductor Manufacturing and Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm" },
+            { "code": "SYE6201", "name": "3D IC Stacking and Advanced Packaging Technology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm" },
+            { "code": "SYE6202", "name": "Semiconductor Process Equipment and Materials", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm" }
+          ]
+        },
+        {
+          "id": "electives",
+          "name": "Programme Electives and Dissertation Path",
+          "type": "elective_dissertation",
+          "creditsRequired": 18,
+          "ruleText": "Complete either six 3-credit Programme Electives, or three 3-credit Programme Electives plus the 9-credit SYE6018 Dissertation. This mutually exclusive path requires manual audit review. Offerings remain subject to resource availability.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm",
+          "courses": [
+            { "code": "SYE6009", "name": "Project Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm" },
+            { "code": "SYE6012", "name": "Technological Innovation and Entrepreneurship", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm" },
+            { "code": "SYE6014", "name": "Asset and Maintenance Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm" },
+            { "code": "SYE6018", "name": "Dissertation", "credits": 9, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm" },
+            { "code": "SYE6045", "name": "Industrial Case Study", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm" },
+            { "code": "SYE6047", "name": "Quality Improvement: Systems and Methodologies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm" },
+            { "code": "SYE6105", "name": "Risk and Decision Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm" },
+            { "code": "SYE6106", "name": "Intelligent Manufacturing for Engineering Managers", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm" },
+            { "code": "SYE6110", "name": "Data Analysis and Artificial Intelligence for Systems Engineering", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm" },
+            { "code": "SYE6203", "name": "Internship Scheme in Semiconductor Industry", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm" },
+            { "code": "SYE6204", "name": "VLSI/ULSI Process Integration", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm" },
+            { "code": "SYE6205", "name": "Semiconductor Thin Film Engineering", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm" },
+            { "code": "SYE6206", "name": "Packaging for Nanoelectronics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm" },
+            { "code": "SYE6207", "name": "Characterization Techniques for Semiconductor Manufacturing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm" },
+            { "code": "SYE6301", "name": "Sustainability and Green Systems", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm" },
+            { "code": "SYE6303", "name": "Multiscale Decision Making for Industrial Enterprise", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm" },
+            { "code": "SYE6308", "name": "Statistical Learning in Manufacturing Quality Control", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm" },
+            { "code": "SYE6309", "name": "Smart City and IoT Technologies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm" },
+            { "code": "SYE8204", "name": "Process Modelling and Control", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm" },
+            { "code": "EE6615", "name": "Nanotechnology for Devices and Microsystems", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm" },
+            { "code": "MNE6005", "name": "Micro Systems Technology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm" },
+            { "code": "MNE6046", "name": "Nano-manufacturing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm" },
+            { "code": "MSE6121", "name": "Thin Film Technology and Nanocrystalline Coatings", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSSM.htm" }
+          ]
+        }
+      ]
+    }
+  ]
+}

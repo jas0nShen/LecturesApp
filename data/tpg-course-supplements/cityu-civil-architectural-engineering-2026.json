@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CITYU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-12",
+  "programmes": [
+    {
+      "programmeId": "CITYU-TPG-032",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit units",
+      "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [
+        {
+          "id": "CITYU-TPG-032-CIVIL-ENGINEERING",
+          "name": "Civil Engineering",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm"
+        },
+        {
+          "id": "CITYU-TPG-032-BUILDING-ENVIRONMENT-SUSTAINABILITY",
+          "name": "Building Environment and Sustainability",
+          "type": "Stream",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm"
+        }
+      ],
+      "courseGroups": [
+        {
+          "id": "cross-stream-courses",
+          "name": "Cross-stream Core and Elective Courses",
+          "type": "track_core_elective",
+          "ruleText": "CA5018 is a Civil Engineering core course and a Building Environment and Sustainability elective. CA5217 is an elective in both Streams. The different roles are retained here without duplicating either course code.",
+          "appliesToTrackIds": [
+            "CITYU-TPG-032-CIVIL-ENGINEERING",
+            "CITYU-TPG-032-BUILDING-ENVIRONMENT-SUSTAINABILITY"
+          ],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm",
+          "courses": [
+            { "code": "CA5018", "name": "Modelling and Computational Techniques for Built Environment", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-032-CIVIL-ENGINEERING", "CITYU-TPG-032-BUILDING-ENVIRONMENT-SUSTAINABILITY"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm" },
+            { "code": "CA5217", "name": "Environmental Economics, Planning and Policy", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-032-CIVIL-ENGINEERING", "CITYU-TPG-032-BUILDING-ENVIRONMENT-SUSTAINABILITY"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm" }
+          ]
+        },
+        {
+          "id": "civil-core",
+          "name": "Civil Engineering Stream Core",
+          "type": "track_core",
+          "ruleText": "Civil Engineering full-time students complete 15 core credit units: CA5018, CA5244 and the 9-credit CA6535 Dissertation. Part-time students complete 6 core credit units: CA5018 and CA5244.",
+          "appliesToTrackIds": ["CITYU-TPG-032-CIVIL-ENGINEERING"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm",
+          "courses": [
+            { "code": "CA5244", "name": "Geotechnics & Civil Engineering Infrastructures", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-032-CIVIL-ENGINEERING"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm" }
+          ]
+        },
+        {
+          "id": "civil-dissertation",
+          "name": "Civil Engineering Dissertation",
+          "type": "track_dissertation",
+          "ruleText": "CA6535 is a 9-credit core course for full-time Civil Engineering students and an elective for part-time Civil Engineering students.",
+          "appliesToTrackIds": ["CITYU-TPG-032-CIVIL-ENGINEERING"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm",
+          "courses": [
+            { "code": "CA6535", "name": "Dissertation - Civil Engineering", "credits": 9, "appliesToTrackIds": ["CITYU-TPG-032-CIVIL-ENGINEERING"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm" }
+          ]
+        },
+        {
+          "id": "civil-electives",
+          "name": "Civil Engineering Stream Electives",
+          "type": "track_elective",
+          "ruleText": "Full-time Civil Engineering students complete 15 elective credit units; part-time students complete 24 elective credit units. CA5217 is also in the shared pool, while CA6535 may be counted as a part-time elective. Study-mode-specific audit requires manual confirmation.",
+          "appliesToTrackIds": ["CITYU-TPG-032-CIVIL-ENGINEERING"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm",
+          "courses": [
+            { "code": "CA5106", "name": "Project Management", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-032-CIVIL-ENGINEERING"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm" },
+            { "code": "CA5108", "name": "Virtual Design and Construction", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-032-CIVIL-ENGINEERING"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm" },
+            { "code": "CA5236", "name": "Transportation and Land Planning", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-032-CIVIL-ENGINEERING"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm" },
+            { "code": "CA5601", "name": "Building Engineering Systems and Maintenance", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-032-CIVIL-ENGINEERING"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm" },
+            { "code": "CA5603", "name": "Professional Research Methods", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-032-CIVIL-ENGINEERING"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm" },
+            { "code": "CA5693", "name": "Geotechnical and Foundation Engineering", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-032-CIVIL-ENGINEERING"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm" },
+            { "code": "CA6110", "name": "Statistical Methods and Data Analytics", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-032-CIVIL-ENGINEERING"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm" },
+            { "code": "CA6232", "name": "Contract Strategy and Administration", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-032-CIVIL-ENGINEERING"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm" },
+            { "code": "CA6608", "name": "Modern Structural Engineering", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-032-CIVIL-ENGINEERING"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm" },
+            { "code": "CA6694", "name": "Geomechanics", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-032-CIVIL-ENGINEERING"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm" }
+          ]
+        },
+        {
+          "id": "building-core",
+          "name": "Building Environment and Sustainability Stream Core",
+          "type": "track_core",
+          "ruleText": "Building Environment and Sustainability full-time students complete 15 core credit units: CA5248, CA5249 and the 9-credit CA6536 Dissertation. Part-time students complete 6 core credit units: CA5248 and CA5249.",
+          "appliesToTrackIds": ["CITYU-TPG-032-BUILDING-ENVIRONMENT-SUSTAINABILITY"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm",
+          "courses": [
+            { "code": "CA5248", "name": "Indoor Environmental Quality", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-032-BUILDING-ENVIRONMENT-SUSTAINABILITY"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm" },
+            { "code": "CA5249", "name": "Energy Management for Building Sustainability", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-032-BUILDING-ENVIRONMENT-SUSTAINABILITY"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm" }
+          ]
+        },
+        {
+          "id": "building-dissertation",
+          "name": "Building Environment and Sustainability Dissertation",
+          "type": "track_dissertation",
+          "ruleText": "CA6536 is a 9-credit core course for full-time Building Environment and Sustainability students and an elective for part-time students in that Stream.",
+          "appliesToTrackIds": ["CITYU-TPG-032-BUILDING-ENVIRONMENT-SUSTAINABILITY"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm",
+          "courses": [
+            { "code": "CA6536", "name": "Dissertation - Building Environment and Sustainability", "credits": 9, "appliesToTrackIds": ["CITYU-TPG-032-BUILDING-ENVIRONMENT-SUSTAINABILITY"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm" }
+          ]
+        },
+        {
+          "id": "building-electives",
+          "name": "Building Environment and Sustainability Stream Electives",
+          "type": "track_elective",
+          "ruleText": "Full-time Building Environment and Sustainability students complete 15 elective credit units; part-time students complete 24 elective credit units. CA5018 and CA5217 are also in the shared pool, while CA6536 may be counted as a part-time elective. Study-mode-specific audit requires manual confirmation.",
+          "appliesToTrackIds": ["CITYU-TPG-032-BUILDING-ENVIRONMENT-SUSTAINABILITY"],
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm",
+          "courses": [
+            { "code": "CA5250", "name": "Renewable Energy for a Sustainable Building Performance", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-032-BUILDING-ENVIRONMENT-SUSTAINABILITY"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm" },
+            { "code": "CA5251", "name": "Sustainable Building Development", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-032-BUILDING-ENVIRONMENT-SUSTAINABILITY"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm" },
+            { "code": "CA5252", "name": "Building Environment Modelling for Sustainability Analysis", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-032-BUILDING-ENVIRONMENT-SUSTAINABILITY"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm" },
+            { "code": "CA5325", "name": "Next-generation Smart Cities", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-032-BUILDING-ENVIRONMENT-SUSTAINABILITY"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm" },
+            { "code": "SEE5114", "name": "Energy, Environment and Sustainable Development", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-032-BUILDING-ENVIRONMENT-SUSTAINABILITY"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm" },
+            { "code": "SEE6101", "name": "Energy Generation and Storage Systems", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-032-BUILDING-ENVIRONMENT-SUSTAINABILITY"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm" },
+            { "code": "SEE6102", "name": "Energy Efficiency and Conservation Technologies", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-032-BUILDING-ENVIRONMENT-SUSTAINABILITY"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm" },
+            { "code": "SEE6115", "name": "Carbon Audit and Management", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-032-BUILDING-ENVIRONMENT-SUSTAINABILITY"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm" },
+            { "code": "PIA5711", "name": "Environmental Governance in China", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-032-BUILDING-ENVIRONMENT-SUSTAINABILITY"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm" },
+            { "code": "PIA6502", "name": "Sustainable Development: Theory and Policy", "credits": 3, "appliesToTrackIds": ["CITYU-TPG-032-BUILDING-ENVIRONMENT-SUSTAINABILITY"], "sourceUrl": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/MSCAE1.htm" }
+          ]
+        }
+      ]
+    }
+  ]
+}
