@@ -145,7 +145,11 @@
         },
         ["MSc(EPM)-EN", "Master of Science in Education Policy and Management (English)"],
         ["MSc(EPM)-ZH", "Master of Science in Education Policy and Management (Chinese)"],
-        ["MScESLPLD", "Master of Science in Educational Speech-Language Pathology and Learning Disabilities"],
+        {
+          "programmeCode": "MScESLPLD",
+          "name": "Master of Science in Educational Speech-Language Pathology and Learning Disabilities",
+          "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=231"
+        },
         {
           "programmeCode": "MSc(LSSE)",
           "name": "Master of Science in Learning Sciences and Smart Education",
@@ -156,7 +160,11 @@
           "name": "Master of Social Sciences in Educational Psychology",
           "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=9859"
         },
-        ["MSocScP(SCS)", "Master of Social Sciences in Psychology (Schools and Community Settings)"],
+        {
+          "programmeCode": "MSocScP(SCS)",
+          "name": "Master of Social Sciences in Psychology (Schools and Community Settings)",
+          "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=826"
+        },
         {
           "programmeCode": "MSocSc(SCM)",
           "name": "Master of Social Sciences in Sports Coaching and Management",

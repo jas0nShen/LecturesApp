@@ -40182,7 +40182,7 @@
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
       "creditsRequired": null,
-      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=231",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
       "lastVerifiedAt": "2026-07-11",
@@ -40190,7 +40190,11 @@
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseGroups": [],
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=231",
+      "courseStatusNote": "The current 2026-27 Programme page confirms an 81-credit award with 48 credit points of Professional Study, 21 credit points of Practicum, 6 credit points of Research Methods and a 6-credit Evidence-based Capstone Project. The current Department of Special Education and Counselling course catalogue maps all 23 published titles to official codes SED6010-SED6026, SED6030-SED6032 and SED6065-SED6067. However, the Programme page states only that each of the four Practicum Courses carries 3-6 credit points and does not assign the exact credits of SED6026, SED6065, SED6066 and SED6067; only their combined 21-credit requirement is published. Keep the structure closed until current official outlines identify each Practicum credit value; do not infer one of the possible 3/6 distributions from the group total."
     },
     {
       "id": "EDUHK-TPG-DIR-MSC-LSSE",
@@ -40405,16 +40409,151 @@
       "name": "Master of Social Sciences in Psychology (Schools and Community Settings)",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
-      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "creditsRequired": 36,
+      "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=826",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
       "lastVerifiedAt": "2026-07-11",
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "conditional-bridging-course",
+          "name": "Conditional Bridging Course",
+          "type": "bridging",
+          "countsTowardProgrammeCredits": false,
+          "ruleText": "Applicants without prior formal training in introductory psychology must complete PSY6009 before taking other Programme courses. Its 3 credit points do not count toward the 36-credit Programme requirement.",
+          "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=826",
+          "courses": [
+            {
+              "code": "PSY6009",
+              "name": "Basic Principles of Psychology",
+              "credits": 3,
+              "countsTowardProgrammeCredits": false,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            }
+          ]
+        },
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 21,
+          "coursesRequired": 7,
+          "ruleText": "Complete all seven Core Courses (21 credit points).",
+          "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=826",
+          "courses": [
+            {
+              "code": "PSY6001",
+              "name": "Biological Psychology",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6008",
+              "name": "Cognitive Psychology",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6002",
+              "name": "Human Development across the Lifespan",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6004",
+              "name": "Personality Psychology",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6003",
+              "name": "Research Methods in Psychological Studies",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6007",
+              "name": "Social Psychology",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6006",
+              "name": "Statistical Methods in Psychological Studies",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 15,
+          "ruleText": "Complete 15 credit points from the eight-course Elective pool. Seven electives carry 3 credit points and PSY6011 Research Project in Psychological Studies carries 6 credit points, so the number of selected courses varies. The mixed-credit selection requires manual audit review and the Research Project must not be treated as compulsory.",
+          "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=826",
+          "courses": [
+            {
+              "code": "PSY6005",
+              "name": "Abnormal Psychology",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6012",
+              "name": "Educational Psychology",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6091",
+              "name": "Health Psychology",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6055",
+              "name": "Interpersonal Communication Skills",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6010",
+              "name": "Learning Theories and Processes",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6011",
+              "name": "Research Project in Psychological Studies",
+              "credits": 6,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6056",
+              "name": "Stress and Coping",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6097",
+              "name": "Counselling and Guidance",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            }
+          ]
+        }
+      ],
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=826",
+      "courseStatusNote": "",
+      "creditUnit": "credit points",
+      "ruleReviewStatus": "manual_review_required"
     },
     {
       "id": "EDUHK-TPG-DIR-MSOCSC-SCM",

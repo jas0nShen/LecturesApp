@@ -47,6 +47,12 @@
       "statusNote": "The current 2026-27 Programme page confirms a 24-credit award comprising four 3-credit Core Courses and four of seven 3-credit Elective Courses, and publishes every current title and credit value. The current official prospectus presents the same 12-plus-12 structure but notes that the courses offered remain subject to review. Neither source publishes the current course codes, and official searches for the named Core and Elective Courses do not locate a complete current code table or authenticated outlines. Keep the structure closed until EdUHK publishes official codes for all eleven courses; do not infer codes from similarly titled learning-sciences or educational-technology courses."
     },
     {
+      "programmeId": "EDUHK-TPG-DIR-MSCESLPLD",
+      "status": "blocked",
+      "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=231",
+      "statusNote": "The current 2026-27 Programme page confirms an 81-credit award with 48 credit points of Professional Study, 21 credit points of Practicum, 6 credit points of Research Methods and a 6-credit Evidence-based Capstone Project. The current Department of Special Education and Counselling course catalogue maps all 23 published titles to official codes SED6010-SED6026, SED6030-SED6032 and SED6065-SED6067. However, the Programme page states only that each of the four Practicum Courses carries 3-6 credit points and does not assign the exact credits of SED6026, SED6065, SED6066 and SED6067; only their combined 21-credit requirement is published. Keep the structure closed until current official outlines identify each Practicum credit value; do not infer one of the possible 3/6 distributions from the group total."
+    },
+    {
       "programmeId": "EDUHK-TPG-DIR-MSOCSC-TPWB",
       "status": "blocked",
       "sourceUrl": "https://hpe.eduhk.hk/programmes/master-of-social-sciences-in-therapeutic-play-and-well-being/",

@@ -9,8 +9,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 160);
-  assert.equal(coverage.courseCount, 3738);
+  assert.equal(coverage.programmeWithCoursesCount, 161);
+  assert.equal(coverage.courseCount, 3754);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -29,8 +29,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 160);
-  assert.equal(rows.length, 160);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 161);
+  assert.equal(rows.length, 161);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
@@ -1006,6 +1006,7 @@ test('EdUHK incomplete current code tables remain blocked instead of exposing pa
     ['EDUHK-TPG-DIR-MSOCSC-SCM', /superseded four-Core structure/, /do not carry forward the obsolete 2023-24 mapping/],
     ['EDUHK-TPG-DIR-MSC-ADS', /does not publish the course codes/, /do not infer codes from related MIT offerings/],
     ['EDUHK-TPG-DIR-MSC-LSSE', /subject to review/, /do not infer codes from similarly titled learning-sciences/],
+    ['EDUHK-TPG-DIR-MSCESLPLD', /maps all 23 published titles/, /do not infer one of the possible 3\/6 distributions/],
     ['EDUHK-TPG-DIR-MA-IECE', /both co-delivering departments/, /do not map the new curriculum onto similarly titled legacy courses/],
     ['EDUHK-TPG-DIR-MSOCSC-TPWB', /identify only a subset/, /do not publish a partial pool/],
     ['EDUHK-TPG-DIR-MA-CHEM', /Xiqu Specialisation is not open/, /do not treat the closed Xiqu path/]
@@ -1134,6 +1135,28 @@ test('EdUHK Educational Psychology preserves its complete 78-credit professional
   assert.equal(tpgService.getProgrammeCourse(programme.id, 'PSY6125').credits, 6);
   assert.equal(programme.courseGroups.reduce((total, group) => total + group.creditsRequired, 0), 78);
   assert.match(groups['practicum-courses'].ruleText, /1,200 hours/);
+});
+
+test('EdUHK Psychology in Schools and Community Settings uses the current 21-plus-15 structure', () => {
+  const programme = tpgService.getProgramme('EDUHK-TPG-DIR-MSOCSCP-SCS');
+  const groups = Object.fromEntries(programme.courseGroups.map((group) => [group.id, group]));
+  const courses = tpgService.flattenCourses(programme);
+
+  assert.equal(programme.creditsRequired, 36);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(programme.courseSourceUrl, 'https://www.eduhk.hk/fehd/en/programmes.php?id=826');
+  assert.deepEqual([groups['core-courses'].creditsRequired, groups['core-courses'].coursesRequired, groups['core-courses'].courses.length], [21, 7, 7]);
+  assert.deepEqual([groups['elective-courses'].creditsRequired, groups['elective-courses'].courses.length], [15, 8]);
+  assert.equal(groups['elective-courses'].coursesRequired, undefined);
+  assert.equal(groups['conditional-bridging-course'].countsTowardProgrammeCredits, false);
+  assert.equal(courses.length, 16);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 16);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'PSY6011').credits, 6);
+  const bridging = tpgService.getProgrammeCourse(programme.id, 'PSY6009');
+  assert.equal(bridging.countsTowardProgrammeCredits, false);
+  assert.equal(tpgService.resolveAuditCredits(bridging), 0);
+  assert.equal(programme.courseGroups.filter((group) => group.creditsRequired).reduce((total, group) => total + group.creditsRequired, 0), 36);
+  assert.match(groups['elective-courses'].ruleText, /Research Project must not be treated as compulsory/);
 });
 
 test('EdUHK future-intake programmes retain their Programme-level academic year', () => {
