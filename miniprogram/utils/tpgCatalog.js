@@ -6404,7 +6404,7 @@ module.exports = {
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
       "creditsRequired": null,
-      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-belt-and-road-business-communication-and-administration",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
       "lastVerifiedAt": "2026-07-11",
@@ -6412,6 +6412,10 @@ module.exports = {
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-belt-and-road-business-communication-and-administration",
+      "courseStatusNote": "The current 2026-27 Programme page confirms Programme code A1M135 and a 24-credit award comprising six required 3-credit Core Courses and two of five 3-credit Elective Courses, including a Capstone Project option. It publishes every current title, credit value and the extra English-language eligibility condition on two electives, but it does not publish any course codes. Public official curriculum-module searches do not expose a complete matching code table. Keep the structure closed until all eleven current course codes are officially available; do not infer codes from titles or publish the uncoded course pool.",
       "courseCount": 0
     },
     {
@@ -6422,7 +6426,7 @@ module.exports = {
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
       "creditsRequired": null,
-      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-chinese-values-based-leadership-education",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
       "lastVerifiedAt": "2026-07-11",
@@ -6430,6 +6434,10 @@ module.exports = {
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-chinese-values-based-leadership-education",
+      "courseStatusNote": "The current 2026-27 Programme page confirms Programme code A1M119 and a 24-credit award comprising four required 3-credit Core Courses and four of seven 3-credit Elective Courses. It publishes every current title and credit value and states that the seven electives may not all be offered every year, but it does not publish course codes. Public official curriculum-module searches do not provide a complete code mapping. Keep the structure closed until all eleven codes are officially verified; do not infer codes from titles or treat the full elective pool as a guaranteed annual offering.",
       "courseCount": 0
     },
     {
@@ -6440,7 +6448,7 @@ module.exports = {
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
       "creditsRequired": null,
-      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-comparative-education-and-collaborative-innovation",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
       "lastVerifiedAt": "2026-07-11",
@@ -6448,6 +6456,10 @@ module.exports = {
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-comparative-education-and-collaborative-innovation",
+      "courseStatusNote": "The current 2026-27 Programme page confirms Programme code A1M128 and a 24-credit award with four required 3-credit Core Courses. Pathway one selects four of five 3-credit electives; selected full-time students may instead complete the 6-credit Capstone Project plus two electives. The page publishes all current titles and credits. Three shared electives can be mapped elsewhere to PFS6061, PUA6027 and PFS6076, but the four new Core Courses, two other electives and Capstone Project do not have a complete public current code table. Keep the structure closed until every code is officially verified; do not publish the discoverable cross-Programme subset as a complete curriculum.",
       "courseCount": 0
     },
     {
@@ -6458,7 +6470,7 @@ module.exports = {
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
       "creditsRequired": null,
-      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-digital-human-resource-management-and-organisational-marketing",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
       "lastVerifiedAt": "2026-07-11",
@@ -6466,6 +6478,10 @@ module.exports = {
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-digital-human-resource-management-and-organisational-marketing",
+      "courseStatusNote": "The current 2026-27 Programme page confirms Programme code A1M129 and a 24-credit award comprising four required 3-credit Core Courses and four of seven 3-credit Elective Courses, including a Capstone Project option. It publishes all eleven current titles and credit values but no course codes. Although a few titles overlap other new management Programmes, the official public curriculum-module search does not expose a complete current mapping. Keep the structure closed until all eleven codes are verified; do not transfer codes from similarly titled cross-Programme courses without an official match.",
       "courseCount": 0
     },
     {
@@ -6612,7 +6628,7 @@ module.exports = {
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
       "creditsRequired": null,
-      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-science-and-robotics-education",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
       "lastVerifiedAt": "2026-07-11",
@@ -6620,6 +6636,10 @@ module.exports = {
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-science-and-robotics-education",
+      "courseStatusNote": "The current 2026-27 Programme page confirms Programme codes A1M132/C2M059 and a 24-credit award comprising five required 3-credit Core Courses and three of five 3-credit Elective Courses, including a Capstone Project option. It publishes every current title and credit value but no course codes, and public official searches do not expose a complete current curriculum-module mapping. Keep the structure closed until all ten course codes are officially available; do not infer a science, robotics or project code sequence from the course titles.",
       "courseCount": 0
     },
     {
@@ -6630,7 +6650,7 @@ module.exports = {
       "academicYear": "2027-28",
       "faculty": "Faculty / School shown on official programme page",
       "creditsRequired": null,
-      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-global-management",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
       "lastVerifiedAt": "2026-07-11",
@@ -6638,6 +6658,10 @@ module.exports = {
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-global-management",
+      "courseStatusNote": "The official first-intake 2027-28 Programme page confirms Programme code A1M143 and a 30-credit award comprising four required 3-credit Core Courses and six of sixteen 3-credit Elective Courses. It publishes every current title and credit value, including two optional Field Trip courses, but it does not publish course codes. As this Programme is first offered in 2027-28, no prior-year code table can establish the new curriculum. Keep the structure closed until EdUHK publishes official codes for all twenty courses; do not infer codes from shared management titles or treat Field Trips as required.",
       "courseCount": 0
     },
     {
@@ -6694,7 +6718,7 @@ module.exports = {
       "academicYear": "2027-28",
       "faculty": "Faculty / School shown on official programme page",
       "creditsRequired": null,
-      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-management",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
       "lastVerifiedAt": "2026-07-11",
@@ -6702,6 +6726,10 @@ module.exports = {
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-management",
+      "courseStatusNote": "The official first-intake 2027-28 Programme page confirms Programme code A1M142 and a 24-credit award comprising four required 3-credit Core Courses and four of eighteen 3-credit Elective Courses. It publishes every current title and credit value, including an optional Field Trip, but it does not publish course codes. As this Programme is first offered in 2027-28, overlapping titles in other Programmes do not establish a complete MM mapping. Keep the structure closed until EdUHK publishes official codes for all twenty-two courses; do not infer codes from titles or treat the elective pool as required coursework.",
       "courseCount": 0
     },
     {

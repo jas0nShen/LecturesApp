@@ -12,10 +12,26 @@
           "name": "Executive Master of Public Administration and Leadership",
           "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/empal"
         },
-        ["MA(BRBCA)", "Master of Arts in Belt and Road Business Communication and Administration"],
-        ["MA(CVBLE)", "Master of Arts in Chinese Values-Based Leadership Education"],
-        ["MA(CECI)", "Master of Arts in Comparative Education and Collaborative Innovation"],
-        ["MA(DHRMOM)", "Master of Arts in Digital Human Resource Management and Organisational Marketing"],
+        {
+          "programmeCode": "MA(BRBCA)",
+          "name": "Master of Arts in Belt and Road Business Communication and Administration",
+          "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-belt-and-road-business-communication-and-administration"
+        },
+        {
+          "programmeCode": "MA(CVBLE)",
+          "name": "Master of Arts in Chinese Values-Based Leadership Education",
+          "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-chinese-values-based-leadership-education"
+        },
+        {
+          "programmeCode": "MA(CECI)",
+          "name": "Master of Arts in Comparative Education and Collaborative Innovation",
+          "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-comparative-education-and-collaborative-innovation"
+        },
+        {
+          "programmeCode": "MA(DHRMOM)",
+          "name": "Master of Arts in Digital Human Resource Management and Organisational Marketing",
+          "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-digital-human-resource-management-and-organisational-marketing"
+        },
         {
           "programmeCode": "MA(DMEC)",
           "name": "Master of Arts in Digital Marketing and E-Commerce",
@@ -46,8 +62,17 @@
           "name": "Master of Arts in New Media and Social Media",
           "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-new-media-and-social-media"
         },
-        ["MA(SRE)", "Master of Arts in Science and Robotics Education"],
-        ["MGM", "Master of Global Management", "2027-28"],
+        {
+          "programmeCode": "MA(SRE)",
+          "name": "Master of Arts in Science and Robotics Education",
+          "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-science-and-robotics-education"
+        },
+        {
+          "programmeCode": "MGM",
+          "name": "Master of Global Management",
+          "academicYear": "2027-28",
+          "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-global-management"
+        },
         {
           "programmeCode": "LLM(NSL)",
           "name": "Master of Laws in National Security Law",
@@ -58,7 +83,12 @@
           "name": "Master of Laws in Digital Governance",
           "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/master-of-laws-in-digital-governance"
         },
-        ["MM", "Master of Management", "2027-28"],
+        {
+          "programmeCode": "MM",
+          "name": "Master of Management",
+          "academicYear": "2027-28",
+          "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-management"
+        },
         {
           "programmeCode": "MOT",
           "name": "Master of Occupational Therapy",

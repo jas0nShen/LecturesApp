@@ -1074,7 +1074,14 @@ test('EdUHK incomplete current code tables remain blocked instead of exposing pa
     ['EDUHK-TPG-DIR-MA-DMEC', /BUS6085 Introduction to E-commerce/, /do not map similarly named marketing/],
     ['EDUHK-TPG-DIR-MA-IECE', /both co-delivering departments/, /do not map the new curriculum onto similarly titled legacy courses/],
     ['EDUHK-TPG-DIR-MSOCSC-TPWB', /identify only a subset/, /do not publish a partial pool/],
-    ['EDUHK-TPG-DIR-MA-CHEM', /Xiqu Specialisation is not open/, /do not treat the closed Xiqu path/]
+    ['EDUHK-TPG-DIR-MA-CHEM', /Xiqu Specialisation is not open/, /do not treat the closed Xiqu path/],
+    ['EDUHK-TPG-DIR-MA-BRBCA', /six required 3-credit Core Courses/, /do not infer codes from titles/],
+    ['EDUHK-TPG-DIR-MA-CVBLE', /four of seven 3-credit Elective Courses/, /do not.*guaranteed annual offering/],
+    ['EDUHK-TPG-DIR-MA-CECI', /PFS6061, PUA6027 and PFS6076/, /do not publish the discoverable cross-Programme subset/],
+    ['EDUHK-TPG-DIR-MA-DHRMOM', /including a Capstone Project option/, /do not transfer codes from similarly titled/],
+    ['EDUHK-TPG-DIR-MA-SRE', /Programme codes A1M132\/C2M059/, /do not infer a science, robotics or project code sequence/],
+    ['EDUHK-TPG-DIR-MGM', /first-intake 2027-28/, /do not infer codes from shared management titles/],
+    ['EDUHK-TPG-DIR-MM', /four of eighteen 3-credit Elective Courses/, /do not infer codes from titles/]
   ];
 
   expectations.forEach(([id, evidence, safeguard]) => {

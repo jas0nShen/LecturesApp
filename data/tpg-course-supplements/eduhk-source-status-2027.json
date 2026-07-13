@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "EDUHK",
+  "academicYear": "2027-28",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "EDUHK-TPG-DIR-MGM",
+      "status": "blocked",
+      "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-global-management",
+      "statusNote": "The official first-intake 2027-28 Programme page confirms Programme code A1M143 and a 30-credit award comprising four required 3-credit Core Courses and six of sixteen 3-credit Elective Courses. It publishes every current title and credit value, including two optional Field Trip courses, but it does not publish course codes. As this Programme is first offered in 2027-28, no prior-year code table can establish the new curriculum. Keep the structure closed until EdUHK publishes official codes for all twenty courses; do not infer codes from shared management titles or treat Field Trips as required."
+    },
+    {
+      "programmeId": "EDUHK-TPG-DIR-MM",
+      "status": "blocked",
+      "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-management",
+      "statusNote": "The official first-intake 2027-28 Programme page confirms Programme code A1M142 and a 24-credit award comprising four required 3-credit Core Courses and four of eighteen 3-credit Elective Courses. It publishes every current title and credit value, including an optional Field Trip, but it does not publish course codes. As this Programme is first offered in 2027-28, overlapping titles in other Programmes do not establish a complete MM mapping. Keep the structure closed until EdUHK publishes official codes for all twenty-two courses; do not infer codes from titles or treat the elective pool as required coursework."
+    }
+  ]
+}
