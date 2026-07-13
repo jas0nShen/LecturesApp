@@ -195,8 +195,16 @@
           "name": "Master of Science in Artificial Intelligence and Educational Technology",
           "sourceUrl": "https://www.eduhk.hk/mit/en/mscait"
         },
-        ["MSc(EPM)-EN", "Master of Science in Education Policy and Management (English)"],
-        ["MSc(EPM)-ZH", "Master of Science in Education Policy and Management (Chinese)"],
+        {
+          "programmeCode": "MSc(EPM)-EN",
+          "name": "Master of Science in Education Policy and Management / Medium of Instruction: English",
+          "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=9861"
+        },
+        {
+          "programmeCode": "MSc(EPM)-ZH",
+          "name": "Master of Science in Education Policy and Management / Medium of Instruction: Chinese (mainly Putonghua)",
+          "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=10214"
+        },
         {
           "programmeCode": "MScESLPLD",
           "name": "Master of Science in Educational Speech-Language Pathology and Learning Disabilities",
@@ -227,7 +235,17 @@
           "name": "Master of Social Sciences in Therapeutic Play and Well-Being",
           "sourceUrl": "https://hpe.eduhk.hk/programmes/master-of-social-sciences-in-therapeutic-play-and-well-being/"
         },
-        ["MTeach", "Master of Teaching"]
+        {
+          "programmeCode": "MTeach",
+          "name": "Master of Teaching",
+          "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=724",
+          "trackSelectionOptional": false,
+          "tracks": [
+            { "name": "English Language Education", "type": "specialisation" },
+            { "name": "Learning and Teaching of Chinese Language and Literature", "type": "specialisation" },
+            { "name": "Curriculum Development", "type": "specialisation" }
+          ]
+        }
       ]
     },
     {

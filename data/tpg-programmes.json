@@ -38346,7 +38346,11 @@
         }
       ],
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseGroups": [],
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://gs.eduhk.hk/prospective/med/",
+      "courseStatusNote": "The current 2026-27 Programme page confirms Programme codes A1M043/C2M001 and a 24-credit award completed through eight 3-credit courses. It publishes the two-Core-plus-six-Specialist route, the alternative three-Specialist-plus-Research-Project route, and ten current Areas of Focus. Several public Area pages list current Specialist Course titles, but they omit course codes; the current Core Courses, Educational Studies and English for Academic Purposes files redirect to an authenticated EdUHK SharePoint sign-in. An official public 2024-25 course-list PDF maps the older curriculum to codes, but it is not evidence that the same Core assignments and Specialist pools apply in 2026-27. Keep the structure closed until the current authenticated files or a public 2026-27 catalogue provides the complete code table and Track ownership; do not carry forward the 2024-25 mapping as the current curriculum."
     },
     {
       "id": "EDUHK-TPG-DIR-MA-CFE",
@@ -40643,37 +40647,241 @@
       "id": "EDUHK-TPG-DIR-MSC-EPM-EN",
       "universityCode": "EDUHK",
       "programmeCode": "MSc(EPM)-EN",
-      "name": "Master of Science in Education Policy and Management (English)",
+      "name": "Master of Science in Education Policy and Management / Medium of Instruction: English",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
-      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "creditsRequired": 24,
+      "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=9861",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
       "lastVerifiedAt": "2026-07-11",
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four 3-credit Core Courses (12 credit points).",
+          "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=9861",
+          "courses": [
+            {
+              "code": "EDA6160",
+              "name": "Introduction to Education Policy and Management",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/EDA6160.html"
+            },
+            {
+              "code": "EDA6163",
+              "name": "Educational Governance and Policy Analysis",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/EDA6163.html"
+            },
+            {
+              "code": "EDA6161",
+              "name": "Education Leadership and Management: Evidence, Theory and Practice",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/EDA6161.html"
+            },
+            {
+              "code": "EDA6162",
+              "name": "Research Methods for Data-driven Decision-making in Education Policy and Management",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/EDA6162.html"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Choose any four of the nine 3-credit Elective Courses (12 credit points). The published pool is not a guarantee that every elective will run in every semester.",
+          "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=9861",
+          "courses": [
+            {
+              "code": "EDA6165",
+              "name": "Creating Policy Communities for Innovation in and beyond Education",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/EDA6165.html"
+            },
+            {
+              "code": "EDA6167",
+              "name": "Educational Innovation: From Ideas, Research-based Evidence to Impact",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/EDA6167.html"
+            },
+            {
+              "code": "EDA6166",
+              "name": "Strategic AI Integration for Education Leaders and Managers",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/EDA6166.html"
+            },
+            {
+              "code": "EDA6164",
+              "name": "Emerging Technologies, Ethics, and Governance in Education",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/EDA6164.html"
+            },
+            {
+              "code": "PFS6060",
+              "name": "Inequality in Education",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/PFS6060.html"
+            },
+            {
+              "code": "PFS6062",
+              "name": "Education Futures",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/PFS6062.html"
+            },
+            {
+              "code": "PFS6070",
+              "name": "Administration and Management in World-class Universities",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/PFS6070.html"
+            },
+            {
+              "code": "EDA6056",
+              "name": "Teacher Leadership and School Improvement",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/EDA6056.html"
+            },
+            {
+              "code": "EDA6168",
+              "name": "Independent Project for Research in Education Policy and Management",
+              "credits": 3,
+              "courseKind": "project",
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/EDA6168.html"
+            }
+          ]
+        }
+      ],
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=9861",
+      "courseStatusNote": "",
+      "creditUnit": "credit points",
+      "ruleReviewStatus": "verified"
     },
     {
       "id": "EDUHK-TPG-DIR-MSC-EPM-ZH",
       "universityCode": "EDUHK",
       "programmeCode": "MSc(EPM)-ZH",
-      "name": "Master of Science in Education Policy and Management (Chinese)",
+      "name": "Master of Science in Education Policy and Management / Medium of Instruction: Chinese (mainly Putonghua)",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
-      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "creditsRequired": 24,
+      "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=10214",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
       "lastVerifiedAt": "2026-07-11",
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four 3-credit Core Courses (12 credit points).",
+          "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=10214",
+          "courses": [
+            {
+              "code": "EDA6160",
+              "name": "Introduction to Education Policy and Management",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/EDA6160.html"
+            },
+            {
+              "code": "EDA6163",
+              "name": "Educational Governance and Policy Analysis",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/EDA6163.html"
+            },
+            {
+              "code": "EDA6161",
+              "name": "Education Leadership and Management: Evidence, Theory and Practice",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/EDA6161.html"
+            },
+            {
+              "code": "EDA6162",
+              "name": "Research Methods for Data-driven Decision-making in Education Policy and Management",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/EDA6162.html"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Choose any four of the seven 3-credit Elective Courses (12 credit points). This Chinese-medium pool excludes PFS6060 and PFS6062, which appear only on the English-medium Programme page. The published pool is not a guarantee that every elective will run in every semester.",
+          "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=10214",
+          "courses": [
+            {
+              "code": "EDA6165",
+              "name": "Creating Policy Communities for Innovation in and beyond Education",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/EDA6165.html"
+            },
+            {
+              "code": "EDA6167",
+              "name": "Educational Innovation: From Ideas, Research-based Evidence to Impact",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/EDA6167.html"
+            },
+            {
+              "code": "EDA6166",
+              "name": "Strategic AI Integration for Education Leaders and Managers",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/EDA6166.html"
+            },
+            {
+              "code": "EDA6164",
+              "name": "Emerging Technologies, Ethics, and Governance in Education",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/EDA6164.html"
+            },
+            {
+              "code": "PFS6070",
+              "name": "Administration and Management in World-class Universities",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/PFS6070.html"
+            },
+            {
+              "code": "EDA6056",
+              "name": "Teacher Leadership and School Improvement",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/EDA6056.html"
+            },
+            {
+              "code": "EDA6168",
+              "name": "Independent Project for Research in Education Policy and Management",
+              "credits": 3,
+              "courseKind": "project",
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/EDA6168.html"
+            }
+          ]
+        }
+      ],
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=10214",
+      "courseStatusNote": "",
+      "creditUnit": "credit points",
+      "ruleReviewStatus": "verified"
     },
     {
       "id": "EDUHK-TPG-DIR-MSCESLPLD",
@@ -41108,15 +41316,45 @@
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
       "creditsRequired": null,
-      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=724",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
       "lastVerifiedAt": "2026-07-11",
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
-      "tracks": [],
+      "tracks": [
+        {
+          "id": "EDUHK-TPG-DIR-MTEACH-ENGLISH-LANGUAGE-EDUCATION",
+          "code": "",
+          "name": "English Language Education",
+          "type": "specialisation",
+          "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=724",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "EDUHK-TPG-DIR-MTEACH-LEARNING-AND-TEACHING-OF-CHINESE-LANGUAGE-AND-LI",
+          "code": "",
+          "name": "Learning and Teaching of Chinese Language and Literature",
+          "type": "specialisation",
+          "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=724",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "EDUHK-TPG-DIR-MTEACH-CURRICULUM-DEVELOPMENT",
+          "code": "",
+          "name": "Curriculum Development",
+          "type": "specialisation",
+          "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=724",
+          "lastVerifiedAt": "2026-07-11"
+        }
+      ],
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseGroups": [],
+      "trackSelectionOptional": false,
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=724",
+      "courseStatusNote": "The current 2026-27 Programme page confirms Programme codes A1M087/C2M019, a 24-credit award, five required 3-credit Core Courses and three 3-credit courses from one Specialisation. It confirms that English Language Education, Learning and Teaching of Chinese Language and Literature, and Curriculum Development are the three Specialisations offered in 2026-27, while Digital Approaches for Teaching Advancement and Innovative Teaching and Learning are suspended. The public curriculum-module catalogue verifies the five Core codes TLS6036, EDA6056, SED6043, PRJ6002 and PRJ6003, but the official Course List and Course Outlines page does not expose the current Specialisation course table without the restricted site flow. Keep the structure closed until all nine current Specialisation course codes and their Track ownership are publicly verifiable; do not publish the five Core Courses as a complete Programme or reuse older Specialisation lists that include suspended paths."
     },
     {
       "id": "LINGNAN-TPG-DIR-08-000497-6",

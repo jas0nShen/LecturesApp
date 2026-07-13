@@ -111,6 +111,18 @@
       "status": "blocked",
       "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=9118",
       "statusNote": "The current 2026-27 Programme page confirms a 24-credit award comprising four 3-credit Core Courses and four 3-credit Specialisation Courses. It states that the Xiqu Specialisation is not open in 2026-27, but the public structure displays only the four Core titles and an isolated Internship in Xiqu line; it neither publishes the complete current Heritage Education and Management Specialisation course list nor any course codes. Keep the structure closed until EdUHK publishes the complete 2026-27 specialisation table and official codes; do not treat the closed Xiqu path or the incomplete page fragment as the current curriculum."
+    },
+    {
+      "programmeId": "EDUHK-TPG-DIR-MED",
+      "status": "blocked",
+      "sourceUrl": "https://gs.eduhk.hk/prospective/med/",
+      "statusNote": "The current 2026-27 Programme page confirms Programme codes A1M043/C2M001 and a 24-credit award completed through eight 3-credit courses. It publishes the two-Core-plus-six-Specialist route, the alternative three-Specialist-plus-Research-Project route, and ten current Areas of Focus. Several public Area pages list current Specialist Course titles, but they omit course codes; the current Core Courses, Educational Studies and English for Academic Purposes files redirect to an authenticated EdUHK SharePoint sign-in. An official public 2024-25 course-list PDF maps the older curriculum to codes, but it is not evidence that the same Core assignments and Specialist pools apply in 2026-27. Keep the structure closed until the current authenticated files or a public 2026-27 catalogue provides the complete code table and Track ownership; do not carry forward the 2024-25 mapping as the current curriculum."
+    },
+    {
+      "programmeId": "EDUHK-TPG-DIR-MTEACH",
+      "status": "blocked",
+      "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=724",
+      "statusNote": "The current 2026-27 Programme page confirms Programme codes A1M087/C2M019, a 24-credit award, five required 3-credit Core Courses and three 3-credit courses from one Specialisation. It confirms that English Language Education, Learning and Teaching of Chinese Language and Literature, and Curriculum Development are the three Specialisations offered in 2026-27, while Digital Approaches for Teaching Advancement and Innovative Teaching and Learning are suspended. The public curriculum-module catalogue verifies the five Core codes TLS6036, EDA6056, SED6043, PRJ6002 and PRJ6003, but the official Course List and Course Outlines page does not expose the current Specialisation course table without the restricted site flow. Keep the structure closed until all nine current Specialisation course codes and their Track ownership are publicly verifiable; do not publish the five Core Courses as a complete Programme or reuse older Specialisation lists that include suspended paths."
     }
   ]
 }

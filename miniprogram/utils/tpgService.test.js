@@ -9,8 +9,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 166);
-  assert.equal(coverage.courseCount, 3808);
+  assert.equal(coverage.programmeWithCoursesCount, 168);
+  assert.equal(coverage.courseCount, 3832);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -29,8 +29,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 166);
-  assert.equal(rows.length, 166);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 168);
+  assert.equal(rows.length, 168);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
@@ -947,6 +947,63 @@ test('EdUHK STEM Education remains blocked rather than inferring its omitted cou
   assert.match(programme.courseStatusNote, /publish every current title and credit value but omit the course codes/);
   assert.match(programme.courseStatusNote, /only a subset of codes/);
   assert.match(programme.courseStatusNote, /do not infer the missing codes from numbering patterns/);
+});
+
+test('EdUHK Master of Education remains blocked rather than carrying forward its 2024-25 code table', () => {
+  const programme = tpgService.getProgramme('EDUHK-TPG-DIR-MED');
+
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal(programme.dataLevel, 'programme');
+  assert.deepEqual(programme.courseGroups || [], []);
+  assert.equal(programme.creditsRequired, 24);
+  assert.equal(programme.tracks.length, 10);
+  assert.match(programme.courseStatusNote, /eight 3-credit courses/);
+  assert.match(programme.courseStatusNote, /SharePoint sign-in/);
+  assert.match(programme.courseStatusNote, /do not carry forward the 2024-25 mapping/);
+});
+
+test('EdUHK Master of Teaching exposes only its three current Specialisations and remains course-blocked', () => {
+  const programme = tpgService.getProgramme('EDUHK-TPG-DIR-MTEACH');
+
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal(programme.dataLevel, 'programme');
+  assert.deepEqual(programme.courseGroups || [], []);
+  assert.equal(programme.trackSelectionOptional, false);
+  assert.deepEqual(programme.tracks.map((track) => track.name), [
+    'English Language Education',
+    'Learning and Teaching of Chinese Language and Literature',
+    'Curriculum Development'
+  ]);
+  assert.equal(programme.tracks.every((track) => track.type === 'specialisation'), true);
+  assert.match(programme.courseStatusNote, /five Core codes TLS6036, EDA6056, SED6043, PRJ6002 and PRJ6003/);
+  assert.match(programme.courseStatusNote, /Digital Approaches.*Innovative Teaching.*suspended/);
+  assert.match(programme.courseStatusNote, /do not publish the five Core Courses as a complete Programme/);
+});
+
+test('EdUHK Education Policy and Management keeps the English and Chinese elective pools distinct', () => {
+  const english = tpgService.getProgramme('EDUHK-TPG-DIR-MSC-EPM-EN');
+  const chinese = tpgService.getProgramme('EDUHK-TPG-DIR-MSC-EPM-ZH');
+  const englishCore = english.courseGroups.find((group) => group.id === 'core-courses');
+  const englishElectives = english.courseGroups.find((group) => group.id === 'elective-courses');
+  const chineseCore = chinese.courseGroups.find((group) => group.id === 'core-courses');
+  const chineseElectives = chinese.courseGroups.find((group) => group.id === 'elective-courses');
+
+  assert.equal(english.creditsRequired, 24);
+  assert.equal(chinese.creditsRequired, 24);
+  assert.equal(english.ruleReviewStatus, 'verified');
+  assert.equal(chinese.ruleReviewStatus, 'verified');
+  assert.deepEqual([englishCore.creditsRequired, englishCore.coursesRequired, englishCore.courses.length], [12, 4, 4]);
+  assert.deepEqual([chineseCore.creditsRequired, chineseCore.coursesRequired, chineseCore.courses.length], [12, 4, 4]);
+  assert.deepEqual([englishElectives.creditsRequired, englishElectives.coursesRequired, englishElectives.courses.length], [12, 4, 9]);
+  assert.deepEqual([chineseElectives.creditsRequired, chineseElectives.coursesRequired, chineseElectives.courses.length], [12, 4, 7]);
+  assert.equal(englishElectives.courses.some((course) => course.code === 'PFS6060'), true);
+  assert.equal(englishElectives.courses.some((course) => course.code === 'PFS6062'), true);
+  assert.equal(chineseElectives.courses.some((course) => course.code === 'PFS6060'), false);
+  assert.equal(chineseElectives.courses.some((course) => course.code === 'PFS6062'), false);
+  assert.equal(tpgService.getProgrammeCourse(english.id, 'EDA6168').courseKind, 'project');
+  assert.equal(tpgService.getProgrammeCourse(chinese.id, 'EDA6168').courseKind, 'project');
+  assert.equal(tpgService.flattenCourses(english).every((course) => course.credits === 3), true);
+  assert.equal(tpgService.flattenCourses(chinese).every((course) => course.credits === 3), true);
 });
 
 test('EdUHK Education for Sustainability preserves its elective-or-thesis route', () => {
