@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "CUHK-TPG-002",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "units",
+      "sourceUrl": "https://www.gs.cuhk.edu.hk/programmes/arts/ma-english-applied-english-linguistics",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [],
+      "courseGroups": [
+        {
+          "id": "required-course",
+          "name": "Required Course",
+          "type": "core",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Complete ENGE5010 Theoretical Linguistics (3 units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/study-scheme/",
+          "courses": [
+            { "code": "ENGE5010", "name": "Theoretical Linguistics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective_with_optional_project",
+          "creditsRequired": 21,
+          "ruleText": "Complete 21 units from the official elective pool. Most electives carry 3 units; ENGE5640 Research Project in Applied English Linguistics carries 6 units, requires departmental approval, a cumulative GPA of at least 3.3 and ENGE5540 in the same academic year, and may not be offered every year. Therefore the number of courses needed varies and requires manual audit review. The Research Project is optional and must not be treated as a compulsory Project.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/study-scheme/",
+          "courses": [
+            { "code": "ENGE5410", "name": "Psycholinguistics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/" },
+            { "code": "ENGE5420", "name": "Sociolinguistics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/" },
+            { "code": "ENGE5430", "name": "Second Language Acquisition", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/" },
+            { "code": "ENGE5440", "name": "Language and Intercultural Communication", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/" },
+            { "code": "ENGE5450", "name": "Corpus Linguistics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/" },
+            { "code": "ENGE5460", "name": "Natural Language Processing for Applied Linguistics and Education", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/" },
+            { "code": "ENGE5520", "name": "Evaluation and Testing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/" },
+            { "code": "ENGE5540", "name": "Research Methods in Applied Linguistics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/" },
+            { "code": "ENGE5550", "name": "English for Specific Purposes", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/" },
+            { "code": "ENGE5560", "name": "Second Language Teaching", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/" },
+            { "code": "ENGE5570", "name": "Discourse and Pragmatics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/" },
+            { "code": "ENGE5580", "name": "Second Language Writing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/" },
+            { "code": "ENGE5590", "name": "Computer Applications in Second Language Teaching", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/" },
+            { "code": "ENGE5600", "name": "Special Topics in Applied English Linguistics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/" },
+            { "code": "ENGE5610", "name": "Issues in Contemporary Applied English Linguistics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/" },
+            { "code": "ENGE5620", "name": "The Acquisition and Teaching of L2 Pronunciation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/" },
+            { "code": "ENGE5630", "name": "Cognitive Linguistics and Its Applications in Language Teaching", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/" },
+            { "code": "ENGE5640", "name": "Research Project in Applied English Linguistics", "credits": 6, "appliesToTrackIds": [], "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/" },
+            { "code": "ENGE5660", "name": "Digital Literacies: Theory, Research, and Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/" },
+            { "code": "ENGE5670", "name": "Language Policy and Planning (LPP)", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/" },
+            { "code": "ENGE5680", "name": "Social Dimensions of Second Language Acquisition", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/" },
+            { "code": "ENGE5690", "name": "Second Language Reading Research and Teaching", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/" }
+          ]
+        }
+      ]
+    }
+  ]
+}

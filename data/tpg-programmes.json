@@ -1900,7 +1900,200 @@
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseGroups": [
+        {
+          "id": "required-course",
+          "name": "Required Course",
+          "type": "core",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Complete ENGE5010 Theoretical Linguistics (3 units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/study-scheme/",
+          "courses": [
+            {
+              "code": "ENGE5010",
+              "name": "Theoretical Linguistics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective_with_optional_project",
+          "creditsRequired": 21,
+          "ruleText": "Complete 21 units from the official elective pool. Most electives carry 3 units; ENGE5640 Research Project in Applied English Linguistics carries 6 units, requires departmental approval, a cumulative GPA of at least 3.3 and ENGE5540 in the same academic year, and may not be offered every year. Therefore the number of courses needed varies and requires manual audit review. The Research Project is optional and must not be treated as a compulsory Project.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/study-scheme/",
+          "courses": [
+            {
+              "code": "ENGE5410",
+              "name": "Psycholinguistics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/"
+            },
+            {
+              "code": "ENGE5420",
+              "name": "Sociolinguistics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/"
+            },
+            {
+              "code": "ENGE5430",
+              "name": "Second Language Acquisition",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/"
+            },
+            {
+              "code": "ENGE5440",
+              "name": "Language and Intercultural Communication",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/"
+            },
+            {
+              "code": "ENGE5450",
+              "name": "Corpus Linguistics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/"
+            },
+            {
+              "code": "ENGE5460",
+              "name": "Natural Language Processing for Applied Linguistics and Education",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/"
+            },
+            {
+              "code": "ENGE5520",
+              "name": "Evaluation and Testing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/"
+            },
+            {
+              "code": "ENGE5540",
+              "name": "Research Methods in Applied Linguistics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/"
+            },
+            {
+              "code": "ENGE5550",
+              "name": "English for Specific Purposes",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/"
+            },
+            {
+              "code": "ENGE5560",
+              "name": "Second Language Teaching",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/"
+            },
+            {
+              "code": "ENGE5570",
+              "name": "Discourse and Pragmatics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/"
+            },
+            {
+              "code": "ENGE5580",
+              "name": "Second Language Writing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/"
+            },
+            {
+              "code": "ENGE5590",
+              "name": "Computer Applications in Second Language Teaching",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/"
+            },
+            {
+              "code": "ENGE5600",
+              "name": "Special Topics in Applied English Linguistics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/"
+            },
+            {
+              "code": "ENGE5610",
+              "name": "Issues in Contemporary Applied English Linguistics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/"
+            },
+            {
+              "code": "ENGE5620",
+              "name": "The Acquisition and Teaching of L2 Pronunciation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/"
+            },
+            {
+              "code": "ENGE5630",
+              "name": "Cognitive Linguistics and Its Applications in Language Teaching",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/"
+            },
+            {
+              "code": "ENGE5640",
+              "name": "Research Project in Applied English Linguistics",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/"
+            },
+            {
+              "code": "ENGE5660",
+              "name": "Digital Literacies: Theory, Research, and Practice",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/"
+            },
+            {
+              "code": "ENGE5670",
+              "name": "Language Policy and Planning (LPP)",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/"
+            },
+            {
+              "code": "ENGE5680",
+              "name": "Social Dimensions of Second Language Acquisition",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/"
+            },
+            {
+              "code": "ENGE5690",
+              "name": "Second Language Reading Research and Teaching",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eng.cuhk.edu.hk/programmes/taught-postgraduate/ma-in-english-linguistics-programme/course-lists/course-list-and-descriptions/"
+            }
+          ]
+        }
+      ],
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.gs.cuhk.edu.hk/programmes/arts/ma-english-applied-english-linguistics",
+      "courseStatusNote": "",
+      "tracks": [],
+      "creditUnit": "units",
+      "ruleReviewStatus": "manual_review_required"
     },
     {
       "id": "CUHK-TPG-003",
@@ -2423,7 +2616,12 @@
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseGroups": [],
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.history.cuhk.edu.hk/en/study/ma-programme/study-scheme/",
+      "courseStatusNote": "The current MA in Comparative and Public History study scheme confirms 24 units: HIST5011 plus at least three units from Special Topics in Public History or Special Topics in Comparative History, followed by 18 elective units. However, the remaining pool is intentionally dynamic and is published only as HIST6015-HIST6017, HIST5000-level courses and, with approval and a minimum B- grade, at most three units of HIST4000-level courses. The page does not publish a complete current code-and-title list for those level-based pools. Keep the Programme closed until a current official course offering or catalogue identifies the applicable Special Topics, 5000-level and approved 4000-level courses; do not substitute the undergraduate catalogue or a prior-year timetable as a fixed MA list."
     },
     {
       "id": "CUHK-TPG-005",
@@ -2434,7 +2632,199 @@
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseGroups": [
+        {
+          "id": "required-course-options",
+          "name": "Required Course Options",
+          "type": "required_choice",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Complete any two of BUDS5013, BUDS5005 and BUDS5014 (6 units). The official course list additionally states that BUDS5014 is required for students who need to fulfil the English admission requirement, so that conditional rule requires manual review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.arts.cuhk.edu.hk/cshb/en/buddhist-studies/mabs/%E5%AD%B8%E5%88%86%E8%A6%81%E6%B1%82/",
+          "courses": [
+            {
+              "code": "BUDS5013",
+              "name": "Theory and Method in Buddhist Studies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.arts.cuhk.edu.hk/cshb/en/buddhist-studies/mabs/4-2/"
+            },
+            {
+              "code": "BUDS5005",
+              "name": "The Thoughts and History of Humanistic Buddhism",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.arts.cuhk.edu.hk/cshb/en/buddhist-studies/mabs/4-2/"
+            },
+            {
+              "code": "BUDS5014",
+              "name": "Buddhist Studies in the West",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.arts.cuhk.edu.hk/cshb/en/buddhist-studies/mabs/4-2/"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Choose five elective courses (15 units) from the four official areas. The published list is a course pool and does not guarantee that every course is offered in every academic year.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.arts.cuhk.edu.hk/cshb/en/buddhist-studies/mabs/4-2/",
+          "courses": [
+            {
+              "code": "BUDS5001",
+              "name": "Pure Land Buddhism",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.arts.cuhk.edu.hk/cshb/en/buddhist-studies/mabs/4-2/"
+            },
+            {
+              "code": "BUDS5002",
+              "name": "Chan Buddhism",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.arts.cuhk.edu.hk/cshb/en/buddhist-studies/mabs/4-2/"
+            },
+            {
+              "code": "BUDS5003",
+              "name": "Tiantai Buddhism",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.arts.cuhk.edu.hk/cshb/en/buddhist-studies/mabs/4-2/"
+            },
+            {
+              "code": "BUDS5004",
+              "name": "Special Topics in Chinese Buddhist Studies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.arts.cuhk.edu.hk/cshb/en/buddhist-studies/mabs/4-2/"
+            },
+            {
+              "code": "PHIL5531",
+              "name": "Topics in Buddhist Philosophy",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.arts.cuhk.edu.hk/cshb/en/buddhist-studies/mabs/4-2/"
+            },
+            {
+              "code": "RELS5118",
+              "name": "Studies on Chinese Buddhism",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.arts.cuhk.edu.hk/cshb/en/buddhist-studies/mabs/4-2/"
+            },
+            {
+              "code": "BUDS5006",
+              "name": "Dunhuang Buddhist Iconography",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.arts.cuhk.edu.hk/cshb/en/buddhist-studies/mabs/4-2/"
+            },
+            {
+              "code": "BUDS5007",
+              "name": "Chinese Buddhist Art",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.arts.cuhk.edu.hk/cshb/en/buddhist-studies/mabs/4-2/"
+            },
+            {
+              "code": "BUDS5015",
+              "name": "Buddhism and Religious Culture in China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.arts.cuhk.edu.hk/cshb/en/buddhist-studies/mabs/4-2/"
+            },
+            {
+              "code": "CHES6001",
+              "name": "A Critical Cultural History of China: Early China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.arts.cuhk.edu.hk/cshb/en/buddhist-studies/mabs/4-2/"
+            },
+            {
+              "code": "CHES6002",
+              "name": "A Critical Cultural History of China: Modern China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.arts.cuhk.edu.hk/cshb/en/buddhist-studies/mabs/4-2/"
+            },
+            {
+              "code": "RELS5314",
+              "name": "Buddhism and Culture",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.arts.cuhk.edu.hk/cshb/en/buddhist-studies/mabs/4-2/"
+            },
+            {
+              "code": "BUDS5008",
+              "name": "Buddhism and Contemporary Society",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.arts.cuhk.edu.hk/cshb/en/buddhist-studies/mabs/4-2/"
+            },
+            {
+              "code": "BUDS5009",
+              "name": "Special Topics in Buddhism and Society",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.arts.cuhk.edu.hk/cshb/en/buddhist-studies/mabs/4-2/"
+            },
+            {
+              "code": "BUDS5016",
+              "name": "Buddhist Meditations",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.arts.cuhk.edu.hk/cshb/en/buddhist-studies/mabs/4-2/"
+            },
+            {
+              "code": "BUDS5010",
+              "name": "Basic Pāli",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.arts.cuhk.edu.hk/cshb/en/buddhist-studies/mabs/4-2/"
+            },
+            {
+              "code": "BUDS5011",
+              "name": "Basic Sanskrit",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.arts.cuhk.edu.hk/cshb/en/buddhist-studies/mabs/4-2/"
+            }
+          ]
+        },
+        {
+          "id": "graduation-paper",
+          "name": "Project (Graduation Paper)",
+          "type": "project",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Complete BUDS5012 Graduation Paper (3 units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.arts.cuhk.edu.hk/cshb/en/buddhist-studies/mabs/%E5%AD%B8%E5%88%86%E8%A6%81%E6%B1%82/",
+          "courses": [
+            {
+              "code": "BUDS5012",
+              "name": "Graduation Paper",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.arts.cuhk.edu.hk/cshb/en/buddhist-studies/mabs/%E5%AD%B8%E5%88%86%E8%A6%81%E6%B1%82/"
+            }
+          ]
+        }
+      ],
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.gs.cuhk.edu.hk/programmes/arts/ma-buddhist-studies",
+      "courseStatusNote": "",
+      "tracks": [],
+      "creditUnit": "units",
+      "ruleReviewStatus": "manual_review_required"
     },
     {
       "id": "CUHK-TPG-006",
@@ -2477,7 +2867,12 @@
       "creditsRequired": 36,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseGroups": [],
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://masters.bschool.cuhk.edu.hk/programmes/mscmkt/curriculum/",
+      "courseStatusNote": "The current MSc in Marketing curriculum confirms 36 credits: four 3-credit Core Courses, four 3-credit Concentration Required Courses and four 3-credit Elective Courses. The current web page names Managerial Marketing and AI and Quantitative Marketing, while an official 2026-27 brochure search result still labels the quantitative path Big Data Marketing, so the stable official Track name needs clarification. The curriculum and brochures publish course titles but no complete current code table. Keep the Programme closed until the Track label is reconciled and every Core, Concentration and Elective title has an official code; do not infer codes or preserve the older concentration label."
     },
     {
       "id": "CUHK-TPG-009",
@@ -2488,7 +2883,12 @@
       "creditsRequired": 30,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseGroups": [],
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://masters.bschool.cuhk.edu.hk/programmes/mscitm/curriculum/",
+      "courseStatusNote": "The official 2026-27 part-time MSc in Information and Technology Management curriculum confirms 30 credits, comprising five Required Courses and five Elective Courses worth three credits each. It lists Programme elective titles and permits up to six credits from other CUHK Business School or Faculty of Engineering Master's programmes, subject to approval and availability, but does not publish a complete current course-code table for either the Programme pool or the approved cross-programme options. Keep the structure closed until the named courses and the bounded external choices can be mapped to official codes; do not copy codes from the separate full-time MSc in Information Science and Technology Management."
     },
     {
       "id": "CUHK-TPG-010",
@@ -2499,7 +2899,12 @@
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseGroups": [],
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://higherdegree.fed.cuhk.edu.hk/en/programme/ma-degree-in-early-childhood-education/",
+      "courseStatusNote": "The official 2026-27 MA in Early Childhood Education page confirms 24 units and publishes the Core, Elective and Research Methodology code pools. The current Faculty Course Information verifies titles and units for most listed courses, including the five MECM Core Courses and all eight 1.5-unit research-method courses, but it has no current entry for elective codes PEDU6072, PEDU6503 or PEDU6701. Older official handbooks and timetables are not sufficient evidence that their former titles and credits remain current. Keep the structure closed until those three codes are restored to the current course catalogue or the Programme publishes a revised elective pool."
     },
     {
       "id": "CUHK-TPG-011",
@@ -2548,7 +2953,12 @@
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseGroups": [],
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.law.cuhk.edu.hk/app/study-with-us/master-of-laws-llm-in-common-law/",
+      "courseStatusNote": "The official 2026-27 LLM in Common Law page confirms 24 units, including 12 units from four named Required Courses and 12 elective units. It publishes a Programme elective-title pool and also permits approved JD/other LLM courses, Independent Research and Independent Research Dissertation. However, the Programme page and current 2026-27 brochure do not provide a complete code-to-title-and-unit table for the full pool or state the units of both independent-research options. Some individual codes can be discovered elsewhere (for example LAWS6021 Principles of Contract and LAWS6223 Artificial Intelligence and the Common Law), but a partial mapping is not a complete current curriculum. Keep the structure closed until CUHK LAW publishes or supplies the consolidated current course-code and unit table."
     },
     {
       "id": "CUHK-TPG-015",
@@ -2559,7 +2969,12 @@
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseGroups": [],
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.law.cuhk.edu.hk/app/study-with-us/master-of-laws-llm-in-international-economic-law/",
+      "courseStatusNote": "The official 2026-27 LLM in International Economic Law page confirms 24 units: 12 units from four named Required Courses and 12 elective units. CUHK LAW separately identifies the required codes LAWS6301, LAWS6302, LAWS6303 and LAWS6311 and codes for many international-law electives, but the Programme also lists additional electives, approved JD/other LLM courses, Independent Research and Independent Research Dissertation without one complete current code-and-unit table. Do not publish the discoverable subset as if it were the full elective structure. Keep the Programme closed until every Programme-listed option and both research choices can be mapped to current official codes and units."
     },
     {
       "id": "CUHK-TPG-016",

@@ -9,8 +9,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 139);
-  assert.equal(coverage.courseCount, 3366);
+  assert.equal(coverage.programmeWithCoursesCount, 141);
+  assert.equal(coverage.courseCount, 3410);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -29,8 +29,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 139);
-  assert.equal(rows.length, 139);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 141);
+  assert.equal(rows.length, 141);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
@@ -499,6 +499,54 @@ test('CUHK Translation keeps all three Streams optional and preserves mutually e
   assert.match(electives.ruleText, /not all electives are offered every year/);
 });
 
+test('CUHK Applied English Linguistics keeps its 6-unit Research Project optional', () => {
+  const programme = tpgService.getProgramme('CUHK-TPG-002');
+  const required = programme.courseGroups.find((group) => group.id === 'required-course');
+  const electives = programme.courseGroups.find((group) => group.id === 'elective-courses');
+  const courses = tpgService.flattenCourses(programme);
+
+  assert.equal(programme.creditsRequired, 24);
+  assert.equal(programme.name, 'Applied English Linguistics');
+  assert.equal(programme.creditUnit, 'units');
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.deepEqual([required.creditsRequired, required.coursesRequired], [3, 1]);
+  assert.equal(electives.creditsRequired, 21);
+  assert.equal(electives.coursesRequired, undefined);
+  assert.equal(courses.length, 23);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 23);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'ENGE5010').name, 'Theoretical Linguistics');
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'ENGE5640').credits, 6);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'ENGE5460').credits, 3);
+  assert.match(electives.ruleText, /number of courses needed varies/);
+  assert.match(electives.ruleText, /optional and must not be treated as a compulsory Project/);
+  assert.match(electives.ruleText, /cumulative GPA of at least 3\.3/);
+});
+
+test('CUHK Buddhist Studies preserves the two-of-three required choice and mandatory Graduation Paper', () => {
+  const programme = tpgService.getProgramme('CUHK-TPG-005');
+  const required = programme.courseGroups.find((group) => group.id === 'required-course-options');
+  const electives = programme.courseGroups.find((group) => group.id === 'elective-courses');
+  const project = programme.courseGroups.find((group) => group.id === 'graduation-paper');
+  const courses = tpgService.flattenCourses(programme);
+
+  assert.equal(programme.creditsRequired, 24);
+  assert.equal(programme.name, 'Buddhist Studies');
+  assert.equal(programme.creditUnit, 'units');
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.deepEqual([required.creditsRequired, electives.creditsRequired, project.creditsRequired], [6, 15, 3]);
+  assert.deepEqual([required.coursesRequired, electives.coursesRequired, project.coursesRequired], [2, 5, 1]);
+  assert.equal(courses.length, 21);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 21);
+  assert.equal(courses.every((course) => course.credits === 3), true);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'BUDS5012').name, 'Graduation Paper');
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'CHES6002').name, 'A Critical Cultural History of China: Modern China');
+  assert.match(required.ruleText, /any two of BUDS5013, BUDS5005 and BUDS5014/);
+  assert.match(required.ruleText, /English admission requirement/);
+  assert.match(electives.ruleText, /does not guarantee that every course is offered/);
+});
+
 test('CUHK Data Science and Business Statistics keeps Research Workshop optional and exposes the current 9-plus-15 structure', () => {
   const programme = tpgService.getProgramme('CUHK-TPG-017');
   const core = programme.courseGroups.find((group) => group.id === 'core-courses');
@@ -520,6 +568,73 @@ test('CUHK Data Science and Business Statistics keeps Research Workshop optional
   assert.equal(electives.courses.find((course) => course.code === 'STAT6111').name, 'Research Workshop');
   assert.match(electives.ruleText, /optional and is not a compulsory Project or Dissertation/);
   assert.match(electives.ruleText, /full-time-only placement/);
+});
+
+test('CUHK History remains blocked while its level-based elective pools lack a current fixed course list', () => {
+  const programme = tpgService.getProgramme('CUHK-TPG-004');
+
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal((programme.courseGroups || []).length, 0);
+  assert.match(programme.courseStatusNote, /HIST5011/);
+  assert.match(programme.courseStatusNote, /HIST6015-HIST6017/);
+  assert.match(programme.courseStatusNote, /HIST5000-level courses/);
+  assert.match(programme.courseStatusNote, /do not substitute the undergraduate catalogue/);
+});
+
+test('CUHK Early Childhood Education remains blocked on three codes missing from the current course catalogue', () => {
+  const programme = tpgService.getProgramme('CUHK-TPG-010');
+
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal((programme.courseGroups || []).length, 0);
+  assert.match(programme.courseStatusNote, /24 units/);
+  assert.match(programme.courseStatusNote, /PEDU6072, PEDU6503 or PEDU6701/);
+  assert.match(programme.courseStatusNote, /eight 1\.5-unit research-method courses/);
+  assert.match(programme.courseStatusNote, /Older official handbooks and timetables are not sufficient/);
+});
+
+test('CUHK Marketing remains blocked while its Track label and course codes are unresolved', () => {
+  const programme = tpgService.getProgramme('CUHK-TPG-008');
+
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal((programme.courseGroups || []).length, 0);
+  assert.match(programme.courseStatusNote, /36 credits/);
+  assert.match(programme.courseStatusNote, /AI and Quantitative Marketing/);
+  assert.match(programme.courseStatusNote, /Big Data Marketing/);
+  assert.match(programme.courseStatusNote, /no complete current code table/);
+});
+
+test('CUHK Information and Technology Management remains blocked on its cross-programme code pool', () => {
+  const programme = tpgService.getProgramme('CUHK-TPG-009');
+
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal((programme.courseGroups || []).length, 0);
+  assert.match(programme.courseStatusNote, /30 credits/);
+  assert.match(programme.courseStatusNote, /five Required Courses and five Elective Courses/);
+  assert.match(programme.courseStatusNote, /up to six credits/);
+  assert.match(programme.courseStatusNote, /do not copy codes from the separate full-time/);
+});
+
+test('CUHK Common Law remains blocked until its cross-programme and research options have complete codes and units', () => {
+  const programme = tpgService.getProgramme('CUHK-TPG-014');
+
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal((programme.courseGroups || []).length, 0);
+  assert.match(programme.courseStatusNote, /24 units/);
+  assert.match(programme.courseStatusNote, /12 units from four named Required Courses/);
+  assert.match(programme.courseStatusNote, /Independent Research Dissertation/);
+  assert.match(programme.courseStatusNote, /LAWS6021 Principles of Contract/);
+  assert.match(programme.courseStatusNote, /partial mapping is not a complete current curriculum/);
+});
+
+test('CUHK International Economic Law remains blocked rather than exposing its discoverable code subset', () => {
+  const programme = tpgService.getProgramme('CUHK-TPG-015');
+
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal((programme.courseGroups || []).length, 0);
+  assert.match(programme.courseStatusNote, /24 units/);
+  assert.match(programme.courseStatusNote, /LAWS6301, LAWS6302, LAWS6303 and LAWS6311/);
+  assert.match(programme.courseStatusNote, /approved JD\/other LLM courses/);
+  assert.match(programme.courseStatusNote, /Do not publish the discoverable subset/);
 });
 
 test('CUHK Global Communication remains blocked while its current curriculum awaits final approval', () => {

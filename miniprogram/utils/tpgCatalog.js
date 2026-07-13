@@ -795,7 +795,15 @@ module.exports = {
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.gs.cuhk.edu.hk/programmes/arts/ma-english-applied-english-linguistics",
+      "courseStatusNote": "",
+      "tracks": [],
+      "creditUnit": "units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 23
     },
     {
       "id": "CUHK-TPG-003",
@@ -848,6 +856,11 @@ module.exports = {
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.history.cuhk.edu.hk/en/study/ma-programme/study-scheme/",
+      "courseStatusNote": "The current MA in Comparative and Public History study scheme confirms 24 units: HIST5011 plus at least three units from Special Topics in Public History or Special Topics in Comparative History, followed by 18 elective units. However, the remaining pool is intentionally dynamic and is published only as HIST6015-HIST6017, HIST5000-level courses and, with approval and a minimum B- grade, at most three units of HIST4000-level courses. The page does not publish a complete current code-and-title list for those level-based pools. Keep the Programme closed until a current official course offering or catalogue identifies the applicable Special Topics, 5000-level and approved 4000-level courses; do not substitute the undergraduate catalogue or a prior-year timetable as a fixed MA list.",
       "courseCount": 0
     },
     {
@@ -859,7 +872,15 @@ module.exports = {
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.gs.cuhk.edu.hk/programmes/arts/ma-buddhist-studies",
+      "courseStatusNote": "",
+      "tracks": [],
+      "creditUnit": "units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 21
     },
     {
       "id": "CUHK-TPG-006",
@@ -902,6 +923,11 @@ module.exports = {
       "creditsRequired": 36,
       "sourceUrl": "",
       "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://masters.bschool.cuhk.edu.hk/programmes/mscmkt/curriculum/",
+      "courseStatusNote": "The current MSc in Marketing curriculum confirms 36 credits: four 3-credit Core Courses, four 3-credit Concentration Required Courses and four 3-credit Elective Courses. The current web page names Managerial Marketing and AI and Quantitative Marketing, while an official 2026-27 brochure search result still labels the quantitative path Big Data Marketing, so the stable official Track name needs clarification. The curriculum and brochures publish course titles but no complete current code table. Keep the Programme closed until the Track label is reconciled and every Core, Concentration and Elective title has an official code; do not infer codes or preserve the older concentration label.",
       "courseCount": 0
     },
     {
@@ -913,6 +939,11 @@ module.exports = {
       "creditsRequired": 30,
       "sourceUrl": "",
       "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://masters.bschool.cuhk.edu.hk/programmes/mscitm/curriculum/",
+      "courseStatusNote": "The official 2026-27 part-time MSc in Information and Technology Management curriculum confirms 30 credits, comprising five Required Courses and five Elective Courses worth three credits each. It lists Programme elective titles and permits up to six credits from other CUHK Business School or Faculty of Engineering Master's programmes, subject to approval and availability, but does not publish a complete current course-code table for either the Programme pool or the approved cross-programme options. Keep the structure closed until the named courses and the bounded external choices can be mapped to official codes; do not copy codes from the separate full-time MSc in Information Science and Technology Management.",
       "courseCount": 0
     },
     {
@@ -924,6 +955,11 @@ module.exports = {
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://higherdegree.fed.cuhk.edu.hk/en/programme/ma-degree-in-early-childhood-education/",
+      "courseStatusNote": "The official 2026-27 MA in Early Childhood Education page confirms 24 units and publishes the Core, Elective and Research Methodology code pools. The current Faculty Course Information verifies titles and units for most listed courses, including the five MECM Core Courses and all eight 1.5-unit research-method courses, but it has no current entry for elective codes PEDU6072, PEDU6503 or PEDU6701. Older official handbooks and timetables are not sufficient evidence that their former titles and credits remain current. Keep the structure closed until those three codes are restored to the current course catalogue or the Programme publishes a revised elective pool.",
       "courseCount": 0
     },
     {
@@ -973,6 +1009,11 @@ module.exports = {
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.law.cuhk.edu.hk/app/study-with-us/master-of-laws-llm-in-common-law/",
+      "courseStatusNote": "The official 2026-27 LLM in Common Law page confirms 24 units, including 12 units from four named Required Courses and 12 elective units. It publishes a Programme elective-title pool and also permits approved JD/other LLM courses, Independent Research and Independent Research Dissertation. However, the Programme page and current 2026-27 brochure do not provide a complete code-to-title-and-unit table for the full pool or state the units of both independent-research options. Some individual codes can be discovered elsewhere (for example LAWS6021 Principles of Contract and LAWS6223 Artificial Intelligence and the Common Law), but a partial mapping is not a complete current curriculum. Keep the structure closed until CUHK LAW publishes or supplies the consolidated current course-code and unit table.",
       "courseCount": 0
     },
     {
@@ -984,6 +1025,11 @@ module.exports = {
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.law.cuhk.edu.hk/app/study-with-us/master-of-laws-llm-in-international-economic-law/",
+      "courseStatusNote": "The official 2026-27 LLM in International Economic Law page confirms 24 units: 12 units from four named Required Courses and 12 elective units. CUHK LAW separately identifies the required codes LAWS6301, LAWS6302, LAWS6303 and LAWS6311 and codes for many international-law electives, but the Programme also lists additional electives, approved JD/other LLM courses, Independent Research and Independent Research Dissertation without one complete current code-and-unit table. Do not publish the discoverable subset as if it were the full elective structure. Keep the Programme closed until every Programme-listed option and both research choices can be mapped to current official codes and units.",
       "courseCount": 0
     },
     {
