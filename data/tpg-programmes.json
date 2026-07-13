@@ -41776,7 +41776,7 @@
       "name": "Master of Science in Artificial Intelligence and Business Analytics",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -41784,8 +41784,200 @@
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses (2026-27 intake)",
+          "type": "core",
+          "creditsRequired": 21,
+          "coursesRequired": 7,
+          "ruleText": "Effective from the 2026-27 intake, complete all seven Core Courses (21 credits). The official transition note moves CDS529 Project for Artificial Intelligence and Business Analytics from the displayed Elective table into the required course set.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscaiba/programme-overview/curriculum",
+          "courses": [
+            {
+              "code": "CDS521",
+              "name": "Foundation of Artificial Intelligence",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscaiba/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS522",
+              "name": "Business Data Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscaiba/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS523",
+              "name": "Principle of Data Analytics and Programming",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscaiba/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS524",
+              "name": "Machine Learning for Business",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscaiba/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS525",
+              "name": "Practical Application of Deep Learning",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscaiba/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS527",
+              "name": "Big Data Analytics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscaiba/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS529",
+              "name": "Project for Artificial Intelligence and Business Analytics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscaiba/programme-overview/curriculum"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Choose three Elective Courses (9 credits) for the 2026-27 intake. CDS529 is excluded from this pool because the official transition note makes it required. Elective offering is subject to sufficient demand and faculty availability.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscaiba/programme-overview/curriculum",
+          "courses": [
+            {
+              "code": "ORM505",
+              "name": "Mobile Technology and Applications in eBusiness",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscaiba/programme-overview/curriculum"
+            },
+            {
+              "code": "ORM510",
+              "name": "Social Media for eBusiness",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscaiba/programme-overview/curriculum"
+            },
+            {
+              "code": "ORM511",
+              "name": "Project Management with Software",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscaiba/programme-overview/curriculum"
+            },
+            {
+              "code": "ORM515",
+              "name": "Business Decision Making with Software",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscaiba/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS526",
+              "name": "Artificial Intelligence Based Optimization",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscaiba/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS528",
+              "name": "Blockchain",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscaiba/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS530",
+              "name": "Healthcare Analytics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscaiba/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS531",
+              "name": "Marketing Analytics and Intelligence",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscaiba/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS538",
+              "name": "Cloud Computing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscaiba/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS539",
+              "name": "Natural Language Processing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscaiba/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS540",
+              "name": "Computer Vision",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscaiba/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS542",
+              "name": "Data Visualization",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscaiba/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS547",
+              "name": "Introduction to Large Language Models",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscaiba/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS550",
+              "name": "Programming with Generative Artificial Intelligence",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscaiba/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS555",
+              "name": "Agentic AI",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscaiba/programme-overview/curriculum"
+            },
+            {
+              "code": "SCI501",
+              "name": "Geospatial Intelligence for Sustainable Development",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscaiba/programme-overview/curriculum"
+            }
+          ]
+        }
+      ],
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.ln.edu.hk/sds/dai/mscaiba/programme-overview/curriculum",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified"
     },
     {
       "id": "LINGNAN-TPG-DIR-21-000086-L6",
@@ -42027,7 +42219,7 @@
       "name": "Master of Science in Data Science",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -42035,8 +42227,186 @@
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 21,
+          "coursesRequired": 7,
+          "ruleText": "Complete all seven Required Courses (21 credits), including the required CDS536 Data Science Project.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscds/programme-overview/curriculum",
+          "courses": [
+            {
+              "code": "CDS532",
+              "name": "Programming for Data Science",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscds/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS533",
+              "name": "Statistics for Data Science",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscds/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS534",
+              "name": "Database Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscds/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS535",
+              "name": "Data Mining",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscds/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS536",
+              "name": "Data Science Project",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscds/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS521",
+              "name": "Foundation of Artificial Intelligence",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscds/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS524",
+              "name": "Machine Learning for Business",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscds/programme-overview/curriculum"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Choose three Elective Courses (9 credits). Elective offering is subject to sufficient demand and division availability.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscds/programme-overview/curriculum",
+          "courses": [
+            {
+              "code": "CDS537",
+              "name": "Introduction to Cyber Security",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscds/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS538",
+              "name": "Cloud Computing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscds/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS539",
+              "name": "Natural Language Processing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscds/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS540",
+              "name": "Computer Vision",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscds/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS541",
+              "name": "Operations Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscds/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS542",
+              "name": "Data Visualization",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscds/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS543",
+              "name": "Social Computing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscds/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS544",
+              "name": "Mobile Edge Computing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscds/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS515",
+              "name": "Business Decision Making with Software",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscds/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS525",
+              "name": "Practical Application of Deep Learning",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscds/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS527",
+              "name": "Big Data Analytics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscds/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS528",
+              "name": "Blockchain",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscds/programme-overview/curriculum"
+            },
+            {
+              "code": "CDS530",
+              "name": "Healthcare Analytics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscds/programme-overview/curriculum"
+            },
+            {
+              "code": "SCI501",
+              "name": "Geospatial Intelligence for Sustainable Development",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscds/programme-overview/curriculum"
+            }
+          ]
+        }
+      ],
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.ln.edu.hk/sds/dai/mscds/programme-overview/curriculum",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified"
     },
     {
       "id": "LINGNAN-TPG-DIR-24-000108-L6",

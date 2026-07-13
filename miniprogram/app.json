@@ -123,6 +123,13 @@
       "pages": [
         "pages/loader/index"
       ]
+    },
+    {
+      "root": "subpackages/tpg-data-lingnan",
+      "name": "tpg-data-lingnan",
+      "pages": [
+        "pages/loader/index"
+      ]
     }
   ],
   "window": {

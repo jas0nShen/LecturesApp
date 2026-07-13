@@ -26,8 +26,8 @@ test('current mini-program passes automated release readiness checks', () => {
   assert.equal(result.metrics.offeringCount, 56);
   assert.equal(result.metrics.tpgSchoolCount, 8);
   assert.equal(result.metrics.tpgProgrammeCount, 448);
-  assert.equal(result.metrics.tpgProgrammeWithCoursesCount, 168);
-  assert.equal(result.metrics.tpgCourseCount, 3832);
+  assert.equal(result.metrics.tpgProgrammeWithCoursesCount, 170);
+  assert.equal(result.metrics.tpgCourseCount, 3876);
   assert.equal(result.metrics.ugSchoolCount, 8);
   assert.equal(result.metrics.ugProgrammeCount, 444);
   assert.equal(result.metrics.ugMajorCount, 689);
@@ -36,7 +36,7 @@ test('current mini-program passes automated release readiness checks', () => {
   assert(result.metrics.packageBytes > 0);
   assert(result.metrics.mainPackageBytes > 0);
   assert(result.metrics.mainPackageBytes <= 2 * 1024 * 1024);
-  assert.equal(result.metrics.subpackageBytes.length, 15);
+  assert.equal(result.metrics.subpackageBytes.length, 16);
   assert(result.metrics.subpackageBytes.every((subpackage) => subpackage.bytes <= 2 * 1024 * 1024));
   assert.match(result.manualChecklist.reviewMaterial, /REVIEW_SUBMISSION/);
 });

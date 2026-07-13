@@ -9,8 +9,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 168);
-  assert.equal(coverage.courseCount, 3832);
+  assert.equal(coverage.programmeWithCoursesCount, 170);
+  assert.equal(coverage.courseCount, 3876);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -29,8 +29,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 168);
-  assert.equal(rows.length, 168);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 170);
+  assert.equal(rows.length, 170);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
@@ -751,6 +751,54 @@ test('Lingnan Qualifications Register data exposes official Programme names and 
   assert.equal(tpgService.listTracks(appliedPsychology)[0].name, 'Counselling Psychology');
   assert.equal(programmes.some((item) => item.name === 'Policy Studies'), false);
   assert.equal(programmes.some((item) => item.name === 'Global Digital Economy and Governance'), false);
+});
+
+test('Lingnan AI and Business Analytics applies the 2026-27 CDS529 transition rule', () => {
+  const programme = tpgService.getProgramme('LINGNAN-TPG-DIR-20-000658-L6');
+  const courses = tpgService.flattenCourses(programme);
+  const core = programme.courseGroups.find((group) => group.id === 'core-courses');
+  const electives = programme.courseGroups.find((group) => group.id === 'elective-courses');
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.academicYear, '2026-27');
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.equal(tpgService.getStatus(programme).courseCount, 23);
+  assert.equal(courses.length, 23);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 23);
+  assert.deepEqual([core.creditsRequired, core.coursesRequired, core.courses.length], [21, 7, 7]);
+  assert.deepEqual([electives.creditsRequired, electives.coursesRequired, electives.courses.length], [9, 3, 16]);
+  assert.equal(courses.every((course) => course.credits === 3), true);
+  assert.equal(core.courses.find((course) => course.code === 'CDS529').name, 'Project for Artificial Intelligence and Business Analytics');
+  assert.equal(electives.courses.some((course) => course.code === 'CDS529'), false);
+  assert.equal(electives.courses.find((course) => course.code === 'CDS555').name, 'Agentic AI');
+  assert.match(core.ruleText, /Effective from the 2026-27 intake/);
+  assert.match(electives.ruleText, /subject to sufficient demand and faculty availability/);
+  assert.equal(programme.courseSourceUrl, 'https://www.ln.edu.hk/sds/dai/mscaiba/programme-overview/curriculum');
+});
+
+test('Lingnan Data Science keeps its Project inside the seven required courses', () => {
+  const programme = tpgService.getProgramme('LINGNAN-TPG-DIR-24-000101-L6');
+  const courses = tpgService.flattenCourses(programme);
+  const required = programme.courseGroups.find((group) => group.id === 'required-courses');
+  const electives = programme.courseGroups.find((group) => group.id === 'elective-courses');
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.academicYear, '2026-27');
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.equal(tpgService.getStatus(programme).courseCount, 21);
+  assert.equal(courses.length, 21);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 21);
+  assert.deepEqual([required.creditsRequired, required.coursesRequired, required.courses.length], [21, 7, 7]);
+  assert.deepEqual([electives.creditsRequired, electives.coursesRequired, electives.courses.length], [9, 3, 14]);
+  assert.equal(courses.every((course) => course.credits === 3), true);
+  assert.equal(required.courses.find((course) => course.code === 'CDS536').name, 'Data Science Project');
+  assert.equal(electives.courses.some((course) => course.code === 'CDS536'), false);
+  assert.match(electives.ruleText, /subject to sufficient demand and division availability/);
+  assert.equal(programme.courseSourceUrl, 'https://www.ln.edu.hk/sds/dai/mscds/programme-overview/curriculum');
 });
 
 test('EdUHK Master of Education exposes official Areas of Focus as Tracks', () => {

@@ -6,7 +6,8 @@ const nodeLoaders = {
   "POLYU": () => [].concat(getNodeRequire()("../subpackages/tpg-data-polyu/tpgCourseData/polyu")),
   "CITYU": () => [].concat(getNodeRequire()("../subpackages/tpg-data-cityu/tpgCourseData/cityu")),
   "HKBU": () => [].concat(getNodeRequire()("../subpackages/tpg-data-hkbu/tpgCourseData/hkbu")),
-  "EDUHK": () => [].concat(getNodeRequire()("../subpackages/tpg-data-eduhk/tpgCourseData/eduhk"))
+  "EDUHK": () => [].concat(getNodeRequire()("../subpackages/tpg-data-eduhk/tpgCourseData/eduhk")),
+  "LINGNAN": () => [].concat(getNodeRequire()("../subpackages/tpg-data-lingnan/tpgCourseData/lingnan"))
 };
 const counts = {
   "HKU": 6,
@@ -16,7 +17,7 @@ const counts = {
   "CITYU": 60,
   "HKBU": 14,
   "EDUHK": 24,
-  "LINGNAN": 0
+  "LINGNAN": 2
 };
 const packageNames = {
   "HKU": [
@@ -39,6 +40,9 @@ const packageNames = {
   ],
   "EDUHK": [
     "subpackages/tpg-data-eduhk"
+  ],
+  "LINGNAN": [
+    "subpackages/tpg-data-lingnan"
   ]
 };
 const cache = {};
