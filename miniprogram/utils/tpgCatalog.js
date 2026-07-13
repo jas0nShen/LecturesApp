@@ -7869,6 +7869,10 @@ module.exports = {
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.ln.edu.hk/orm/ebscm/about-us/programme-overview",
+      "courseStatusNote": "The live official Programme Overview publishes all course codes and the six-Required plus four-Elective 30-credit rule, but it does not publish per-course credits. Credits are not inferred from the 10-course total, so the course structure remains unavailable pending an official current credit table.",
       "courseCount": 0
     },
     {
@@ -8238,6 +8242,10 @@ module.exports = {
         }
       ],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure",
+      "courseStatusNote": "The live official Programme Structure publishes complete codes and credits for the mother Programme, but the Art and Design for Social Impact Concentration page omits the course codes for Design Innovation for Arts and Culture and Interactive Arts and Technology. The Track-specific codes are not inferred, so the Programme remains unavailable pending a complete official Track table.",
       "courseCount": 0
     },
     {
@@ -8334,6 +8342,10 @@ module.exports = {
         }
       ],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.ln.edu.hk/sgs/achm/programme-overview/programme-structure",
+      "courseStatusNote": "The live official Programme Structure publishes coded curricula for the dual-degree path without a Concentration and for the Heritage Tourism and Management Concentration, but the current directory also identifies a Cultural Management and Digital Future Track whose course structure is not published on the Programme site. The missing Track path is not inferred, so the Programme remains unavailable pending a complete official Track table.",
       "courseCount": 0
     },
     {
@@ -8454,7 +8466,7 @@ module.exports = {
       "name": "Master of Arts in Digital History in Global Asia",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -8462,8 +8474,14 @@ module.exports = {
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.ln.edu.hk/history/programmes/dhga",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified",
+      "courseCount": 13
     },
     {
       "id": "LINGNAN-TPG-DIR-24-000242-L6",
@@ -8490,7 +8508,7 @@ module.exports = {
       "name": "Master of Science in Sustainability and Environmental Analytics",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -8498,8 +8516,14 @@ module.exports = {
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified",
+      "courseCount": 17
     },
     {
       "id": "LINGNAN-TPG-DIR-24-000464-L6",
@@ -8686,6 +8710,10 @@ module.exports = {
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.ln.edu.hk/orm/mscriaa/programme-curriculum",
+      "courseStatusNote": "The live official Programme Curriculum publishes five 3-credit Core Courses and an Elective pool from which any five 3-credit courses are selected, but it does not publish any course codes. The titles are not converted into invented codes, so the course structure remains unavailable pending an official coded curriculum.",
       "courseCount": 0
     },
     {
@@ -8722,6 +8750,10 @@ module.exports = {
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.ln.edu.hk/sds/dids/ida/programme-overview/curriculum",
+      "courseStatusNote": "The live official AY2026/27 curriculum and course-description pages publish a 30-credit structure of five 3-credit Required Courses and any five 3-credit Electives, with every current course title, but neither page publishes course codes. The titles are not matched to codes from other Programmes, so the course structure remains unavailable pending an official coded curriculum.",
       "courseCount": 0
     },
     {
@@ -8785,6 +8817,10 @@ module.exports = {
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.ln.edu.hk/sds/dids/scta/programme-overview/curriculum",
+      "courseStatusNote": "The live official AY2026/27 curriculum and course-description pages publish a 30-credit structure of seven 3-credit Required Courses and any three 3-credit Electives, with every current course title, but neither page publishes course codes. The titles are not matched to codes from other Programmes, so the course structure remains unavailable pending an official coded curriculum.",
       "courseCount": 0
     },
     {
@@ -8864,6 +8900,10 @@ module.exports = {
         }
       ],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.ln.edu.hk/wjysis/mls/programme-overview/programme-structure",
+      "courseStatusNote": "The live official Programme Structure publishes the 30-credit mother Programme, three Concentrations and coded course tables, but the Applied Arts in TechMedia table requires three Concentration Courses while listing only LSC541 and LSC542. The missing third course is not invented, so the Programme remains unavailable pending a complete official Track table.",
       "courseCount": 0
     },
     {
@@ -8891,7 +8931,7 @@ module.exports = {
       "name": "Master of Social Sciences in Sociology and Data Analytics",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -8899,8 +8939,14 @@ module.exports = {
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified",
+      "courseCount": 12
     },
     {
       "id": "LINGNAN-TPG-DIR-26-000261-L6",

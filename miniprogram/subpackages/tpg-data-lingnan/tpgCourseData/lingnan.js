@@ -1128,5 +1128,412 @@ module.exports = [
         ]
       }
     ]
+  },
+  {
+    "id": "LINGNAN-TPG-DIR-24-000108-L6",
+    "courseGroups": [
+      {
+        "id": "required-courses",
+        "name": "Required Courses",
+        "type": "core",
+        "creditsRequired": 9,
+        "coursesRequired": 3,
+        "ruleText": "Complete all three Required Courses (9 credits).",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga",
+        "courses": [
+          {
+            "code": "DHG501",
+            "name": "Introduction to Digital History in Global Asia",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga"
+          },
+          {
+            "code": "DHG502",
+            "name": "Digital Approaches in Historical Research",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga"
+          },
+          {
+            "code": "DHG508",
+            "name": "Critical Digital History",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga"
+          }
+        ]
+      },
+      {
+        "id": "elective-courses",
+        "name": "Elective Courses",
+        "type": "elective",
+        "creditsRequired": 15,
+        "coursesRequired": 5,
+        "ruleText": "Choose any five Elective Courses (15 credits).",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga",
+        "courses": [
+          {
+            "code": "DHG503",
+            "name": "Digital Data Management in Asian Studies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga"
+          },
+          {
+            "code": "DHG504",
+            "name": "Visualisation and Digital Mapping of Asian Cities",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga"
+          },
+          {
+            "code": "DHG505",
+            "name": "Digital Public History",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga"
+          },
+          {
+            "code": "DHG506",
+            "name": "3D Remodelling of Asian Heritage",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga"
+          },
+          {
+            "code": "DHG507",
+            "name": "Rethinking the Historical Archive",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga"
+          },
+          {
+            "code": "DHG509",
+            "name": "Global History of Modern East Asia",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga"
+          },
+          {
+            "code": "DHG510",
+            "name": "Hong Kong and Global Asia",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga"
+          },
+          {
+            "code": "DHG511",
+            "name": "Southeast Asia in the World",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga"
+          },
+          {
+            "code": "DHG512",
+            "name": "Special Topics in History",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga"
+          }
+        ]
+      },
+      {
+        "id": "capstone-project",
+        "name": "Capstone Project",
+        "type": "project",
+        "creditsRequired": 6,
+        "coursesRequired": 1,
+        "ruleText": "Complete the required DHG601 Capstone Project (6 credits).",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga",
+        "courses": [
+          {
+            "code": "DHG601",
+            "name": "Capstone Project",
+            "credits": 6,
+            "courseKind": "project",
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LINGNAN-TPG-DIR-24-000463-L6",
+    "courseGroups": [
+      {
+        "id": "required-courses",
+        "name": "Required Courses",
+        "type": "core",
+        "creditsRequired": 24,
+        "coursesRequired": 8,
+        "ruleText": "Complete all eight Required Courses (24 credits).",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure",
+        "courses": [
+          {
+            "code": "SCI501",
+            "name": "Geospatial Intelligence for Sustainable Development",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure"
+          },
+          {
+            "code": "SCI502",
+            "name": "Climate Change Literacy and Science",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure"
+          },
+          {
+            "code": "SCI503",
+            "name": "Sustainability and Environmental Communication",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure"
+          },
+          {
+            "code": "SCI504",
+            "name": "Urban Ecology and Sustainable Planning",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure"
+          },
+          {
+            "code": "SCI505",
+            "name": "Introduction to Environmental, Social and Governance (ESG) Planning",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure"
+          },
+          {
+            "code": "SCI507",
+            "name": "Data Analysis and Modelling in the R Statistical Environment for Environmental Issues",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure"
+          },
+          {
+            "code": "SCI508",
+            "name": "Practical and Research Training: Topics in Environment, Society, and Sustainable Future",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure"
+          },
+          {
+            "code": "SCI509",
+            "name": "Green Energy and Sustainability",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure"
+          }
+        ]
+      },
+      {
+        "id": "sustainable-city-society-elective",
+        "name": "Sustainable City and Society Elective",
+        "type": "elective",
+        "creditsRequired": 3,
+        "coursesRequired": 1,
+        "ruleText": "Choose one course (3 credits) from the Sustainable City and Society Cluster.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure",
+        "courses": [
+          {
+            "code": "HTI503",
+            "name": "Rural Food-Energy-Water Systems (FEWS)",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure"
+          },
+          {
+            "code": "MCG503",
+            "name": "History, Heritage and Regional Perspectives",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure"
+          },
+          {
+            "code": "CDS548",
+            "name": "Introduction to Smart Cities",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure"
+          },
+          {
+            "code": "MHM504",
+            "name": "Modern Technology in Health and Social Services",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure"
+          }
+        ]
+      },
+      {
+        "id": "data-analytics-elective",
+        "name": "Data Analytics Elective",
+        "type": "elective",
+        "creditsRequired": 3,
+        "coursesRequired": 1,
+        "ruleText": "Choose one course (3 credits) from the Data Analytics Cluster.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure",
+        "courses": [
+          {
+            "code": "CDS521",
+            "name": "Foundation of Artificial Intelligence",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure"
+          },
+          {
+            "code": "ESG516",
+            "name": "ESG and Big Data",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure"
+          },
+          {
+            "code": "CDS525",
+            "name": "Practical Application of Deep Learning",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure"
+          },
+          {
+            "code": "CDS527",
+            "name": "Big Data Analytics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure"
+          },
+          {
+            "code": "MIB607",
+            "name": "Big Data Marketing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LINGNAN-TPG-DIR-26-000201-L6",
+    "courseGroups": [
+      {
+        "id": "compulsory-courses",
+        "name": "Compulsory Courses",
+        "type": "core",
+        "creditsRequired": 24,
+        "coursesRequired": 8,
+        "ruleText": "Complete all eight Compulsory Courses (24 credits): five courses in Term 1 and three courses in Term 2, including the required SOC619 research project.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure",
+        "courses": [
+          {
+            "code": "SOC611",
+            "name": "Sociology in Action: Issues and Applications",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure"
+          },
+          {
+            "code": "SOC612",
+            "name": "Data Analytics for Social Research",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure"
+          },
+          {
+            "code": "SOC613",
+            "name": "Applied Analytical Statistics for Social Scientists",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure"
+          },
+          {
+            "code": "SOC615",
+            "name": "Topical Seminars",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure"
+          },
+          {
+            "code": "SOC616",
+            "name": "Social Theory in the Digital Era",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure"
+          },
+          {
+            "code": "SOC617",
+            "name": "Social Networks Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure"
+          },
+          {
+            "code": "SOC618",
+            "name": "Machine Learning with Social Data",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure"
+          },
+          {
+            "code": "SOC619",
+            "name": "Sociology & Data Analytics Research Project",
+            "credits": 3,
+            "courseKind": "project",
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure"
+          }
+        ]
+      },
+      {
+        "id": "elective-courses",
+        "name": "Elective Courses",
+        "type": "elective",
+        "creditsRequired": 6,
+        "coursesRequired": 2,
+        "ruleText": "Choose two Elective Courses (6 credits). SOC607 and SOC608 are offered by IMCSP; CDS539 and CDS542 are offered by Data Science. All electives are subject to course offering.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure",
+        "courses": [
+          {
+            "code": "SOC607",
+            "name": "Applied Survey Methodology",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure"
+          },
+          {
+            "code": "SOC608",
+            "name": "Qualitative Methods for Policy Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure"
+          },
+          {
+            "code": "CDS539",
+            "name": "Natural Language Processing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure"
+          },
+          {
+            "code": "CDS542",
+            "name": "Data Visualization",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure"
+          }
+        ]
+      }
+    ]
   }
 ];

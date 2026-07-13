@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "LINGNAN",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "LINGNAN-TPG-DIR-24-000108-L6",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga",
+      "ruleReviewStatus": "verified",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete all three Required Courses (9 credits).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga",
+          "courses": [
+            { "code": "DHG501", "name": "Introduction to Digital History in Global Asia", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga" },
+            { "code": "DHG502", "name": "Digital Approaches in Historical Research", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga" },
+            { "code": "DHG508", "name": "Critical Digital History", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Choose any five Elective Courses (15 credits).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga",
+          "courses": [
+            { "code": "DHG503", "name": "Digital Data Management in Asian Studies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga" },
+            { "code": "DHG504", "name": "Visualisation and Digital Mapping of Asian Cities", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga" },
+            { "code": "DHG505", "name": "Digital Public History", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga" },
+            { "code": "DHG506", "name": "3D Remodelling of Asian Heritage", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga" },
+            { "code": "DHG507", "name": "Rethinking the Historical Archive", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga" },
+            { "code": "DHG509", "name": "Global History of Modern East Asia", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga" },
+            { "code": "DHG510", "name": "Hong Kong and Global Asia", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga" },
+            { "code": "DHG511", "name": "Southeast Asia in the World", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga" },
+            { "code": "DHG512", "name": "Special Topics in History", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga" }
+          ]
+        },
+        {
+          "id": "capstone-project",
+          "name": "Capstone Project",
+          "type": "project",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Complete the required DHG601 Capstone Project (6 credits).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga",
+          "courses": [
+            { "code": "DHG601", "name": "Capstone Project", "credits": 6, "courseKind": "project", "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/history/programmes/dhga" }
+          ]
+        }
+      ]
+    }
+  ]
+}

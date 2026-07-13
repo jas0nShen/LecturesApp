@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "LINGNAN",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "LINGNAN-TPG-DIR-26-000201-L6",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure",
+      "ruleReviewStatus": "verified",
+      "courseGroups": [
+        {
+          "id": "compulsory-courses",
+          "name": "Compulsory Courses",
+          "type": "core",
+          "creditsRequired": 24,
+          "coursesRequired": 8,
+          "ruleText": "Complete all eight Compulsory Courses (24 credits): five courses in Term 1 and three courses in Term 2, including the required SOC619 research project.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure",
+          "courses": [
+            { "code": "SOC611", "name": "Sociology in Action: Issues and Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure" },
+            { "code": "SOC612", "name": "Data Analytics for Social Research", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure" },
+            { "code": "SOC613", "name": "Applied Analytical Statistics for Social Scientists", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure" },
+            { "code": "SOC615", "name": "Topical Seminars", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure" },
+            { "code": "SOC616", "name": "Social Theory in the Digital Era", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure" },
+            { "code": "SOC617", "name": "Social Networks Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure" },
+            { "code": "SOC618", "name": "Machine Learning with Social Data", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure" },
+            { "code": "SOC619", "name": "Sociology & Data Analytics Research Project", "credits": 3, "courseKind": "project", "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Choose two Elective Courses (6 credits). SOC607 and SOC608 are offered by IMCSP; CDS539 and CDS542 are offered by Data Science. All electives are subject to course offering.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure",
+          "courses": [
+            { "code": "SOC607", "name": "Applied Survey Methodology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure" },
+            { "code": "SOC608", "name": "Qualitative Methods for Policy Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure" },
+            { "code": "CDS539", "name": "Natural Language Processing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure" },
+            { "code": "CDS542", "name": "Data Visualization", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure" }
+          ]
+        }
+      ]
+    }
+  ]
+}

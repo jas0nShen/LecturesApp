@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "LINGNAN",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "LINGNAN-TPG-DIR-24-000463-L6",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure",
+      "ruleReviewStatus": "verified",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 24,
+          "coursesRequired": 8,
+          "ruleText": "Complete all eight Required Courses (24 credits).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure",
+          "courses": [
+            { "code": "SCI501", "name": "Geospatial Intelligence for Sustainable Development", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure" },
+            { "code": "SCI502", "name": "Climate Change Literacy and Science", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure" },
+            { "code": "SCI503", "name": "Sustainability and Environmental Communication", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure" },
+            { "code": "SCI504", "name": "Urban Ecology and Sustainable Planning", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure" },
+            { "code": "SCI505", "name": "Introduction to Environmental, Social and Governance (ESG) Planning", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure" },
+            { "code": "SCI507", "name": "Data Analysis and Modelling in the R Statistical Environment for Environmental Issues", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure" },
+            { "code": "SCI508", "name": "Practical and Research Training: Topics in Environment, Society, and Sustainable Future", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure" },
+            { "code": "SCI509", "name": "Green Energy and Sustainability", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure" }
+          ]
+        },
+        {
+          "id": "sustainable-city-society-elective",
+          "name": "Sustainable City and Society Elective",
+          "type": "elective",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Choose one course (3 credits) from the Sustainable City and Society Cluster.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure",
+          "courses": [
+            { "code": "HTI503", "name": "Rural Food-Energy-Water Systems (FEWS)", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure" },
+            { "code": "MCG503", "name": "History, Heritage and Regional Perspectives", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure" },
+            { "code": "CDS548", "name": "Introduction to Smart Cities", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure" },
+            { "code": "MHM504", "name": "Modern Technology in Health and Social Services", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure" }
+          ]
+        },
+        {
+          "id": "data-analytics-elective",
+          "name": "Data Analytics Elective",
+          "type": "elective",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Choose one course (3 credits) from the Data Analytics Cluster.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure",
+          "courses": [
+            { "code": "CDS521", "name": "Foundation of Artificial Intelligence", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure" },
+            { "code": "ESG516", "name": "ESG and Big Data", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure" },
+            { "code": "CDS525", "name": "Practical Application of Deep Learning", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure" },
+            { "code": "CDS527", "name": "Big Data Analytics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure" },
+            { "code": "MIB607", "name": "Big Data Marketing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure" }
+          ]
+        }
+      ]
+    }
+  ]
+}
