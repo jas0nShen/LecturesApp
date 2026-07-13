@@ -33,6 +33,7 @@ const EDUHK_MED_TRACKS = [
 
 function applyDirectorySupplements(inputCatalogue, supplement) {
   const catalogue = JSON.parse(JSON.stringify(inputCatalogue));
+  const existingProgrammesById = new Map(catalogue.programmes.map((programme) => [programme.id, programme]));
   const supplementCodes = new Set(supplement.universities.map((item) => item.code));
   catalogue.programmes = catalogue.programmes.filter(
     (programme) => !supplementCodes.has(programme.universityCode) || !programme.directorySupplement
@@ -58,23 +59,8 @@ function applyDirectorySupplements(inputCatalogue, supplement) {
       ? `${source.code}-TPG-DIR-${String(index + 1).padStart(3, '0')}`
       : buildId(source.code, programmeCode, name, index);
     const isEduhkMed = source.code === 'EDUHK' && programmeCode === 'MEd';
-    return {
-    id,
-    universityCode: source.code,
-    programmeCode,
-    name,
-    academicYear: programmeYear || source.academicYear,
-    faculty: entry.faculty || 'Faculty / School shown on official programme page',
-    creditsRequired: isEduhkMed ? 24 : entry.creditsRequired || null,
-    sourceUrl: isEduhkMed ? 'https://gs.eduhk.hk/prospective/med/' : entry.sourceUrl || source.sourceUrl,
-    sourceLabel: source.sourceLabel,
-    nameKind: entry.nameKind || source.nameKind || 'official_programme_name',
-    lastVerifiedAt: supplement.lastVerifiedAt,
-    sourceStatus: source.nameKind === 'official_field_label'
-      ? 'official_field_index'
-      : 'programme_directory_verified',
-    directorySupplement: true,
-    tracks: isEduhkMed ? EDUHK_MED_TRACKS.map(([code, trackName]) => ({
+    const existingProgramme = existingProgrammesById.get(id);
+    const tracks = isEduhkMed ? EDUHK_MED_TRACKS.map(([code, trackName]) => ({
       id: `${id}-${code}`,
       code,
       name: trackName,
@@ -88,9 +74,36 @@ function applyDirectorySupplements(inputCatalogue, supplement) {
       type: track.type || 'specialism',
       sourceUrl: track.sourceUrl || entry.sourceUrl || source.sourceUrl,
       lastVerifiedAt: supplement.lastVerifiedAt
-    })),
-    dataLevel: 'programme',
-    courseGroups: []
+    }));
+    return {
+    ...(existingProgramme || {}),
+    id,
+    universityCode: source.code,
+    programmeCode,
+    name,
+    academicYear: programmeYear || source.academicYear,
+    faculty: entry.faculty || 'Faculty / School shown on official programme page',
+    creditsRequired: isEduhkMed
+      ? 24
+      : entry.creditsRequired || (existingProgramme && existingProgramme.creditsRequired) || null,
+    sourceUrl: isEduhkMed ? 'https://gs.eduhk.hk/prospective/med/' : entry.sourceUrl || source.sourceUrl,
+    sourceLabel: source.sourceLabel,
+    nameKind: entry.nameKind || source.nameKind || 'official_programme_name',
+    lastVerifiedAt: supplement.lastVerifiedAt,
+    sourceStatus: source.nameKind === 'official_field_label'
+      ? 'official_field_index'
+      : 'programme_directory_verified',
+    directorySupplement: true,
+    trackSelectionOptional: entry.trackSelectionOptional !== undefined
+      ? Boolean(entry.trackSelectionOptional)
+      : existingProgramme && existingProgramme.trackSelectionOptional,
+    tracks,
+    dataLevel: existingProgramme && existingProgramme.courseGroups && existingProgramme.courseGroups.length
+      ? existingProgramme.dataLevel
+      : 'programme',
+    courseGroups: existingProgramme && existingProgramme.courseGroups
+      ? existingProgramme.courseGroups
+      : []
   };
   });
   university.programmeCount = programmes.length;

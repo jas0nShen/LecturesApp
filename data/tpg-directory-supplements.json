@@ -44,7 +44,17 @@
         ["MA(PPE)", "Master of Arts in Positive Psychology in Education"],
         ["MA(STEM Ed)", "Master of Arts in STEM Education"],
         ["MATCIL", "Master of Arts in Teaching Chinese as an International Language"],
-        ["MATESOL", "Master of Arts in Teaching English to Speakers of Other Languages"],
+        {
+          "programmeCode": "MATESOL",
+          "name": "Master of Arts in Teaching English to Speakers of Other Languages",
+          "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-teaching-english-to-speakers-of-other-languages-matesol/programme-information/programme-structure",
+          "trackSelectionOptional": false,
+          "tracks": [
+            { "code": "GENERAL", "name": "MATESOL (General)", "type": "Degree Strand" },
+            { "code": "APPLIED-LINGUISTICS", "name": "MATESOL (Applied Linguistics)", "type": "Degree Strand" },
+            { "code": "DIGITAL-TECHNOLOGY", "name": "MATESOL (Digital Technology for English Learning and Teaching)", "type": "Degree Strand" }
+          ]
+        },
         ["MA(VAECP)", "Master of Arts in Visual Arts Education and Creative Practice"],
         ["MPPM", "Master of Public Policy and Management"],
         ["MSc(ADS)", "Master of Science in Applied Data Science"],

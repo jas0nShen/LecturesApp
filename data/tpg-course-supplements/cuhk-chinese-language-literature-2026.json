@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "CUHK-TPG-001",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "units",
+      "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/",
+      "ruleReviewStatus": "verified",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Complete CHLL5600 in Term 1 of the first year and CHLL5013 in the second year (6 units in total).",
+          "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/",
+          "courses": [
+            { "code": "CHLL5600", "name": "研究方法與論文寫作", "credits": 3 },
+            { "code": "CHLL5013", "name": "講論會", "credits": 3 }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Complete at least 18 units from the official elective pool. Individual courses may not be offered every academic year.",
+          "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/",
+          "courses": [
+            { "code": "CHLL5911", "name": "語文學專題", "credits": 3 },
+            { "code": "CHLL5912", "name": "語言學專題", "credits": 3 },
+            { "code": "CHLL5913", "name": "《廣雅》與《廣雅疏證》", "credits": 3 },
+            { "code": "CHLL5914", "name": "《說文解字》與現代語文學", "credits": 3 },
+            { "code": "CHLL5915", "name": "粵語普通話比較研究", "credits": 3 },
+            { "code": "CHLL5916", "name": "粵語語法研究", "credits": 3 },
+            { "code": "CHLL5917", "name": "漢語修辭與文體研究", "credits": 3 },
+            { "code": "CHLL5918", "name": "漢英比較語法專題", "credits": 3 },
+            { "code": "CHLL5919", "name": "漢語構詞與句法研究", "credits": 3 },
+            { "code": "CHLL5921", "name": "古代文獻專題", "credits": 3 },
+            { "code": "CHLL5922", "name": "古代文獻專書", "credits": 3 },
+            { "code": "CHLL5923", "name": "雜家文獻選讀：《呂氏春秋》與《淮南子》", "credits": 3 },
+            { "code": "CHLL5924", "name": "《莊》、《荀》異同", "credits": 3 },
+            { "code": "CHLL5925", "name": "出土文獻分類選讀", "credits": 3 },
+            { "code": "CHLL5926", "name": "互見文獻與古籍研究", "credits": 3 },
+            { "code": "CHLL5927", "name": "《論語》 《孟子》研究", "credits": 3 },
+            { "code": "CHLL5928", "name": "資治通鑒研究", "credits": 3 },
+            { "code": "CHLL5931", "name": "古典文學專題：韻文或散文", "credits": 3 },
+            { "code": "CHLL5932", "name": "古典文學專題：小說或戲劇", "credits": 3 },
+            { "code": "CHLL5933", "name": "古典文學專題：文學批評", "credits": 3 },
+            { "code": "CHLL5934", "name": "湯顯祖與《牡丹亭》", "credits": 3 },
+            { "code": "CHLL5935", "name": "古典詩歌鑒賞與批評", "credits": 3 },
+            { "code": "CHLL5936", "name": "中國詩學", "credits": 3 },
+            { "code": "CHLL5937", "name": "「三言」研究", "credits": 3 },
+            { "code": "CHLL5938", "name": "先秦神話", "credits": 3 },
+            { "code": "CHLL5939", "name": "《詩經》", "credits": 3 },
+            { "code": "CHLL5941", "name": "現代文學專題", "credits": 3 },
+            { "code": "CHLL5942", "name": "現代作家專題", "credits": 3 },
+            { "code": "CHLL5943", "name": "現代文學批評專題", "credits": 3 },
+            { "code": "CHLL5944", "name": "余光中研究", "credits": 3 },
+            { "code": "CHLL5945", "name": "「創造社」研究", "credits": 3 },
+            { "code": "CHLL5946", "name": "比較文學專題", "credits": 3 },
+            { "code": "CHLL5947", "name": "中國新時期小說及文藝思潮", "credits": 3 },
+            { "code": "CHLL5948", "name": "現代華文小說", "credits": 3 },
+            { "code": "CHLL5949", "name": "中國女性文學研究", "credits": 3 },
+            { "code": "CHLL5950", "name": "張愛玲研究", "credits": 3 },
+            { "code": "CHLL5951", "name": "中國文化專題", "credits": 3 },
+            { "code": "CHLL5961", "name": "粵語音韻與詩詞格律", "credits": 3 },
+            { "code": "CHLL5962", "name": "漢語方言的比較研究", "credits": 3 },
+            { "code": "CHLL5963", "name": "漢語語義與語用研究", "credits": 3 },
+            { "code": "CHLL5981", "name": "宋詞", "credits": 3 },
+            { "code": "CHLL5982", "name": "盛唐世界、人生、藝術——杜甫、李白、王維三家詩面面觀", "credits": 3 },
+            { "code": "CHLL5983", "name": "國變與文學、文化創新：明清之際詩人詩歌研究", "credits": 3 },
+            { "code": "CHLL5984", "name": "明清小說與視覺文化", "credits": 3 },
+            { "code": "CHLL5985", "name": "清中期小說與文人文化", "credits": 3 },
+            { "code": "CHLL5986", "name": "漢魏六朝詩選", "credits": 3 },
+            { "code": "CHLL5987", "name": "陶淵明：詩歌美學與人生哲學", "credits": 3 },
+            { "code": "CHLL5991", "name": "香港文學研究", "credits": 3 },
+            { "code": "CHLL5992", "name": "中國三十年代小說與文藝雜誌研究", "credits": 3 },
+            { "code": "CHLL5993", "name": "文藝思潮與港台電影", "credits": 3 },
+            { "code": "CHLL5994", "name": "中國現代文學、藝術與美育", "credits": 3 }
+          ]
+        }
+      ]
+    }
+  ]
+}

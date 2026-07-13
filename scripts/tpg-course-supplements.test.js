@@ -54,6 +54,16 @@ test('TPG course supplement import is deterministic and preserves Programme IDs'
   assert.deepEqual(applySupplements(imported, [{ file: 'fixture.json', value: supplement }]), imported);
 });
 
+test('TPG course supplement import materializes inherited official source URLs', () => {
+  const supplement = fixtureSupplement();
+  delete supplement.programmes[0].courseGroups[0].sourceUrl;
+  delete supplement.programmes[0].courseGroups[0].courses[0].sourceUrl;
+  validateSupplement(supplement, fixtureCatalogue(), 'fixture.json');
+  const imported = applySupplements(fixtureCatalogue(), [{ file: 'fixture.json', value: supplement }]);
+  assert.equal(imported.programmes[0].courseGroups[0].sourceUrl, 'https://example.edu/programme');
+  assert.equal(imported.programmes[0].courseGroups[0].courses[0].sourceUrl, 'https://example.edu/programme');
+});
+
 test('TPG course supplements can add official Tracks before validating course ownership', () => {
   const catalogue = fixtureCatalogue();
   catalogue.programmes[0].tracks = [];

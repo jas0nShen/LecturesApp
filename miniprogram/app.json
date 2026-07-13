@@ -116,6 +116,13 @@
       "pages": [
         "pages/loader/index"
       ]
+    },
+    {
+      "root": "subpackages/tpg-data-eduhk",
+      "name": "tpg-data-eduhk",
+      "pages": [
+        "pages/loader/index"
+      ]
     }
   ],
   "window": {

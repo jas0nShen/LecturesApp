@@ -113,7 +113,14 @@ function applySupplements(catalogue, supplementFiles) {
         if (entry.trackSelectionOptional !== undefined) programme.trackSelectionOptional = Boolean(entry.trackSelectionOptional);
         programme.creditsRequired = entry.creditsRequired;
         programme.creditUnit = entry.creditUnit;
-        programme.courseGroups = entry.courseGroups;
+        programme.courseGroups = entry.courseGroups.map((group) => ({
+          ...group,
+          sourceUrl: group.sourceUrl || entry.sourceUrl,
+          courses: group.courses.map((course) => ({
+            ...course,
+            sourceUrl: course.sourceUrl || group.sourceUrl || entry.sourceUrl
+          }))
+        }));
         programme.dataLevel = 'structure';
         programme.ruleReviewStatus = entry.ruleReviewStatus || 'manual_review_required';
       }

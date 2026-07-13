@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "EDUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "EDUHK-TPG-DIR-MAGHE",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "credit points",
+      "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-global-histories-of-education-maghe/programme-information/programme-structure",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete all three Core Courses (9 credit points).",
+          "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-global-histories-of-education-maghe/programme-information/maghe-courses",
+          "courses": [
+            { "code": "HIS6055", "name": "Educationalising the World (Eighteenth to Twenty-First Century)", "credits": 3 },
+            { "code": "HIS6056", "name": "Globalising History", "credits": 3 },
+            { "code": "PFS6064", "name": "Histories of Modernisation and Education Development", "credits": 3 }
+          ]
+        },
+        {
+          "id": "elective-or-research-project",
+          "name": "Elective Courses / Research Project",
+          "type": "elective_with_optional_project",
+          "creditsRequired": 15,
+          "ruleText": "Complete five 3-credit electives, or three 3-credit electives plus the 6-credit HIS6062 Research Project. The Research Project is optional, offered in Semester 2 with limited places, and must not be treated as compulsory. Not all electives are offered every year.",
+          "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-global-histories-of-education-maghe/programme-information/maghe-courses",
+          "courses": [
+            { "code": "HIS6054", "name": "Multiculturalism in Contemporary Education", "credits": 3 },
+            { "code": "HIS6058", "name": "Education in China", "credits": 3 },
+            { "code": "HIS6059", "name": "Histories of Technology and Learning", "credits": 3 },
+            { "code": "HIS6060", "name": "History of the University", "credits": 3 },
+            { "code": "HIS6061", "name": "The History of International Schooling in East Asia", "credits": 3 },
+            { "code": "PFS6062", "name": "Education Futures", "credits": 3 },
+            { "code": "HIS6063", "name": "Cultural Histories of Education: Ego-Documents, Images and Materialities", "credits": 3 },
+            { "code": "HIS6064", "name": "The East Asian Model of Education: Past, Present and Future", "credits": 3 },
+            { "code": "HIS6069", "name": "History of Gender and Education", "credits": 3 },
+            { "code": "HIS6081", "name": "Modern Germany in Global Contexts", "credits": 3 },
+            { "code": "HIS6082", "name": "Russia in Global Contexts: The History of Sino-Russian", "credits": 3 },
+            { "code": "HIS6083", "name": "Missionary Education in Modern East Asia", "credits": 3 },
+            { "code": "HIS6062", "name": "Research Project", "credits": 6 }
+          ]
+        }
+      ]
+    }
+  ]
+}

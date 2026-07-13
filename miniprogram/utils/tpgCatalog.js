@@ -784,7 +784,14 @@ module.exports = {
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/",
+      "courseStatusNote": "",
+      "creditUnit": "units",
+      "ruleReviewStatus": "verified",
+      "courseCount": 53
     },
     {
       "id": "CUHK-TPG-002",
@@ -987,7 +994,14 @@ module.exports = {
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.gs.cuhk.edu.hk/programmes/engineering/msc-systems-engineering-and-engineering-management",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 16
     },
     {
       "id": "CUHK-TPG-013",
@@ -998,7 +1012,38 @@ module.exports = {
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.gs.cuhk.edu.hk/programmes/engineering/msc-financial-technology",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CUHK-TPG-013-COURSE",
+          "name": "Course Track",
+          "type": "Track",
+          "creditsRequired": 24,
+          "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+        },
+        {
+          "id": "CUHK-TPG-013-PRACTICUM",
+          "name": "Practicum Track",
+          "type": "Track",
+          "creditsRequired": 24,
+          "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+        },
+        {
+          "id": "CUHK-TPG-013-INDUSTRIAL-PROJECT",
+          "name": "Industrial Project Track",
+          "type": "Track",
+          "creditsRequired": 24,
+          "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+        }
+      ],
+      "trackSelectionOptional": false,
+      "creditUnit": "units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 40
     },
     {
       "id": "CUHK-TPG-014",
@@ -6901,7 +6946,7 @@ module.exports = {
       "name": "Master of Arts in Global Histories of Education",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 24,
       "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
@@ -6909,8 +6954,14 @@ module.exports = {
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-global-histories-of-education-maghe/programme-information/programme-structure",
+      "courseStatusNote": "",
+      "creditUnit": "credit points",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 16
     },
     {
       "id": "EDUHK-TPG-DIR-MA-GSE",
@@ -7081,16 +7132,48 @@ module.exports = {
       "name": "Master of Arts in Teaching English to Speakers of Other Languages",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
-      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "creditsRequired": 24,
+      "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-teaching-english-to-speakers-of-other-languages-matesol/programme-information/programme-structure",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
       "lastVerifiedAt": "2026-07-11",
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
-      "tracks": [],
-      "dataLevel": "programme",
-      "courseCount": 0
+      "tracks": [
+        {
+          "id": "EDUHK-TPG-DIR-MATESOL-GENERAL",
+          "code": "GENERAL",
+          "name": "MATESOL (General)",
+          "type": "Degree Strand",
+          "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-teaching-english-to-speakers-of-other-languages-matesol/programme-information/programme-structure",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "EDUHK-TPG-DIR-MATESOL-APPLIED-LINGUISTICS",
+          "code": "APPLIED-LINGUISTICS",
+          "name": "MATESOL (Applied Linguistics)",
+          "type": "Degree Strand",
+          "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-teaching-english-to-speakers-of-other-languages-matesol/programme-information/programme-structure",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "EDUHK-TPG-DIR-MATESOL-DIGITAL-TECHNOLOGY",
+          "code": "DIGITAL-TECHNOLOGY",
+          "name": "MATESOL (Digital Technology for English Learning and Teaching)",
+          "type": "Degree Strand",
+          "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-teaching-english-to-speakers-of-other-languages-matesol/programme-information/programme-structure",
+          "lastVerifiedAt": "2026-07-11"
+        }
+      ],
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-teaching-english-to-speakers-of-other-languages-matesol/programme-information/programme-structure",
+      "courseStatusNote": "",
+      "trackSelectionOptional": false,
+      "creditUnit": "credit points",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 13
     },
     {
       "id": "EDUHK-TPG-DIR-MA-VAECP",

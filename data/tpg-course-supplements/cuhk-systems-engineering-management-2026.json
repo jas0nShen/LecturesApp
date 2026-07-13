@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "CUHK-TPG-012",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.gs.cuhk.edu.hk/programmes/engineering/msc-systems-engineering-and-engineering-management",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete all three required courses. An approved exemption must be replaced by an approved elective course.",
+          "sourceUrl": "https://msc-seem.se.cuhk.edu.hk/programme/course-structure/",
+          "courses": [
+            { "code": "SEEM5710", "name": "Principles of Operations Management", "credits": 3 },
+            { "code": "SEEM5730", "name": "Information Technology Management", "credits": 3 },
+            { "code": "SEEM5820", "name": "Introduction to Financial Engineering", "credits": 3 }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective_with_area_requirement",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete five elective courses, including at least one course from each of Area I, Area II and Area III. SEEM5910 and SEEM5920 may count in any area, but at most one of those two courses may count toward the minimum graduation requirement. Other Faculty of Engineering MSc courses require Division Head approval. The area constraint and approved external electives require manual audit review.",
+          "sourceUrl": "https://msc-seem.se.cuhk.edu.hk/programme/course-structure/",
+          "courses": [
+            { "code": "SEEM5910", "name": "Project in SEEM", "credits": 3 },
+            { "code": "SEEM5920", "name": "SEEM Internship", "credits": 3 },
+            { "code": "SEEM5740", "name": "Engineering Economics", "credits": 3, "area": "Area I: Operations Management" },
+            { "code": "SEEM5790", "name": "Project and Technology Management", "credits": 3, "area": "Area I: Operations Management" },
+            { "code": "SEEM5800", "name": "Logistics Management", "credits": 3, "area": "Area I: Operations Management" },
+            { "code": "SEEM5810", "name": "Machine Intelligence and Systems Engineering", "credits": 3, "area": "Area I / Area II" },
+            { "code": "SEEM5880", "name": "Supply Chain Management", "credits": 3, "area": "Area I: Operations Management" },
+            { "code": "SEEM5750", "name": "Expert Systems and Decision Support", "credits": 3, "area": "Area II: Information Systems" },
+            { "code": "SEEM5760", "name": "Client/Server Information Systems", "credits": 3, "area": "Area II: Information Systems" },
+            { "code": "SEEM5770", "name": "Open Systems and Electronic Commerce", "credits": 3, "area": "Area II: Information Systems" },
+            { "code": "SEEM5830", "name": "Stochastic Investment Models", "credits": 3, "area": "Area III: Financial Engineering" },
+            { "code": "SEEM5840", "name": "Quantitative Risk Management", "credits": 3, "area": "Area III: Financial Engineering" },
+            { "code": "SEEM5870", "name": "Computational Finance", "credits": 3, "area": "Area III: Financial Engineering" }
+          ]
+        }
+      ]
+    }
+  ]
+}

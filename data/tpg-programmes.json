@@ -1889,7 +1889,355 @@
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Complete CHLL5600 in Term 1 of the first year and CHLL5013 in the second year (6 units in total).",
+          "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/",
+          "courses": [
+            {
+              "code": "CHLL5600",
+              "name": "研究方法與論文寫作",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5013",
+              "name": "講論會",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Complete at least 18 units from the official elective pool. Individual courses may not be offered every academic year.",
+          "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/",
+          "courses": [
+            {
+              "code": "CHLL5911",
+              "name": "語文學專題",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5912",
+              "name": "語言學專題",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5913",
+              "name": "《廣雅》與《廣雅疏證》",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5914",
+              "name": "《說文解字》與現代語文學",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5915",
+              "name": "粵語普通話比較研究",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5916",
+              "name": "粵語語法研究",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5917",
+              "name": "漢語修辭與文體研究",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5918",
+              "name": "漢英比較語法專題",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5919",
+              "name": "漢語構詞與句法研究",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5921",
+              "name": "古代文獻專題",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5922",
+              "name": "古代文獻專書",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5923",
+              "name": "雜家文獻選讀：《呂氏春秋》與《淮南子》",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5924",
+              "name": "《莊》、《荀》異同",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5925",
+              "name": "出土文獻分類選讀",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5926",
+              "name": "互見文獻與古籍研究",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5927",
+              "name": "《論語》 《孟子》研究",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5928",
+              "name": "資治通鑒研究",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5931",
+              "name": "古典文學專題：韻文或散文",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5932",
+              "name": "古典文學專題：小說或戲劇",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5933",
+              "name": "古典文學專題：文學批評",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5934",
+              "name": "湯顯祖與《牡丹亭》",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5935",
+              "name": "古典詩歌鑒賞與批評",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5936",
+              "name": "中國詩學",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5937",
+              "name": "「三言」研究",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5938",
+              "name": "先秦神話",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5939",
+              "name": "《詩經》",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5941",
+              "name": "現代文學專題",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5942",
+              "name": "現代作家專題",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5943",
+              "name": "現代文學批評專題",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5944",
+              "name": "余光中研究",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5945",
+              "name": "「創造社」研究",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5946",
+              "name": "比較文學專題",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5947",
+              "name": "中國新時期小說及文藝思潮",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5948",
+              "name": "現代華文小說",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5949",
+              "name": "中國女性文學研究",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5950",
+              "name": "張愛玲研究",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5951",
+              "name": "中國文化專題",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5961",
+              "name": "粵語音韻與詩詞格律",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5962",
+              "name": "漢語方言的比較研究",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5963",
+              "name": "漢語語義與語用研究",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5981",
+              "name": "宋詞",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5982",
+              "name": "盛唐世界、人生、藝術——杜甫、李白、王維三家詩面面觀",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5983",
+              "name": "國變與文學、文化創新：明清之際詩人詩歌研究",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5984",
+              "name": "明清小說與視覺文化",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5985",
+              "name": "清中期小說與文人文化",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5986",
+              "name": "漢魏六朝詩選",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5987",
+              "name": "陶淵明：詩歌美學與人生哲學",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5991",
+              "name": "香港文學研究",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5992",
+              "name": "中國三十年代小說與文藝雜誌研究",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5993",
+              "name": "文藝思潮與港台電影",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            },
+            {
+              "code": "CHLL5994",
+              "name": "中國現代文學、藝術與美育",
+              "credits": 3,
+              "sourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/"
+            }
+          ]
+        }
+      ],
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.chi.cuhk.edu.hk/study/ma-in-chinese-language-and-literature/study-scheme-and-courses/",
+      "courseStatusNote": "",
+      "creditUnit": "units",
+      "ruleReviewStatus": "verified"
     },
     {
       "id": "CUHK-TPG-002",
@@ -2931,7 +3279,144 @@
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete all three required courses. An approved exemption must be replaced by an approved elective course.",
+          "sourceUrl": "https://msc-seem.se.cuhk.edu.hk/programme/course-structure/",
+          "courses": [
+            {
+              "code": "SEEM5710",
+              "name": "Principles of Operations Management",
+              "credits": 3,
+              "sourceUrl": "https://msc-seem.se.cuhk.edu.hk/programme/course-structure/"
+            },
+            {
+              "code": "SEEM5730",
+              "name": "Information Technology Management",
+              "credits": 3,
+              "sourceUrl": "https://msc-seem.se.cuhk.edu.hk/programme/course-structure/"
+            },
+            {
+              "code": "SEEM5820",
+              "name": "Introduction to Financial Engineering",
+              "credits": 3,
+              "sourceUrl": "https://msc-seem.se.cuhk.edu.hk/programme/course-structure/"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective_with_area_requirement",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete five elective courses, including at least one course from each of Area I, Area II and Area III. SEEM5910 and SEEM5920 may count in any area, but at most one of those two courses may count toward the minimum graduation requirement. Other Faculty of Engineering MSc courses require Division Head approval. The area constraint and approved external electives require manual audit review.",
+          "sourceUrl": "https://msc-seem.se.cuhk.edu.hk/programme/course-structure/",
+          "courses": [
+            {
+              "code": "SEEM5910",
+              "name": "Project in SEEM",
+              "credits": 3,
+              "sourceUrl": "https://msc-seem.se.cuhk.edu.hk/programme/course-structure/"
+            },
+            {
+              "code": "SEEM5920",
+              "name": "SEEM Internship",
+              "credits": 3,
+              "sourceUrl": "https://msc-seem.se.cuhk.edu.hk/programme/course-structure/"
+            },
+            {
+              "code": "SEEM5740",
+              "name": "Engineering Economics",
+              "credits": 3,
+              "area": "Area I: Operations Management",
+              "sourceUrl": "https://msc-seem.se.cuhk.edu.hk/programme/course-structure/"
+            },
+            {
+              "code": "SEEM5790",
+              "name": "Project and Technology Management",
+              "credits": 3,
+              "area": "Area I: Operations Management",
+              "sourceUrl": "https://msc-seem.se.cuhk.edu.hk/programme/course-structure/"
+            },
+            {
+              "code": "SEEM5800",
+              "name": "Logistics Management",
+              "credits": 3,
+              "area": "Area I: Operations Management",
+              "sourceUrl": "https://msc-seem.se.cuhk.edu.hk/programme/course-structure/"
+            },
+            {
+              "code": "SEEM5810",
+              "name": "Machine Intelligence and Systems Engineering",
+              "credits": 3,
+              "area": "Area I / Area II",
+              "sourceUrl": "https://msc-seem.se.cuhk.edu.hk/programme/course-structure/"
+            },
+            {
+              "code": "SEEM5880",
+              "name": "Supply Chain Management",
+              "credits": 3,
+              "area": "Area I: Operations Management",
+              "sourceUrl": "https://msc-seem.se.cuhk.edu.hk/programme/course-structure/"
+            },
+            {
+              "code": "SEEM5750",
+              "name": "Expert Systems and Decision Support",
+              "credits": 3,
+              "area": "Area II: Information Systems",
+              "sourceUrl": "https://msc-seem.se.cuhk.edu.hk/programme/course-structure/"
+            },
+            {
+              "code": "SEEM5760",
+              "name": "Client/Server Information Systems",
+              "credits": 3,
+              "area": "Area II: Information Systems",
+              "sourceUrl": "https://msc-seem.se.cuhk.edu.hk/programme/course-structure/"
+            },
+            {
+              "code": "SEEM5770",
+              "name": "Open Systems and Electronic Commerce",
+              "credits": 3,
+              "area": "Area II: Information Systems",
+              "sourceUrl": "https://msc-seem.se.cuhk.edu.hk/programme/course-structure/"
+            },
+            {
+              "code": "SEEM5830",
+              "name": "Stochastic Investment Models",
+              "credits": 3,
+              "area": "Area III: Financial Engineering",
+              "sourceUrl": "https://msc-seem.se.cuhk.edu.hk/programme/course-structure/"
+            },
+            {
+              "code": "SEEM5840",
+              "name": "Quantitative Risk Management",
+              "credits": 3,
+              "area": "Area III: Financial Engineering",
+              "sourceUrl": "https://msc-seem.se.cuhk.edu.hk/programme/course-structure/"
+            },
+            {
+              "code": "SEEM5870",
+              "name": "Computational Finance",
+              "credits": 3,
+              "area": "Area III: Financial Engineering",
+              "sourceUrl": "https://msc-seem.se.cuhk.edu.hk/programme/course-structure/"
+            }
+          ]
+        }
+      ],
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.gs.cuhk.edu.hk/programmes/engineering/msc-systems-engineering-and-engineering-management",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required"
     },
     {
       "id": "CUHK-TPG-013",
@@ -2942,7 +3427,367 @@
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete all three required courses (9 units). A student admitted with a finance-related background may be exempted from FINA6122, but must replace it with an additional elective to preserve the 24-unit total.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science",
+          "courses": [
+            {
+              "code": "FINA6122",
+              "name": "Financial Markets and Instruments",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "FTEC5510",
+              "name": "Advanced Financial Infrastructure",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "FTEC5520",
+              "name": "Applied Blockchain and Cryptocurrencies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            }
+          ]
+        },
+        {
+          "id": "technology-electives",
+          "name": "Technology-Oriented Electives",
+          "type": "elective",
+          "ruleText": "Together with the Business / Application-Oriented Electives, complete five courses for the Course Track, four for the Practicum Track, or three for the Industrial Project Track. The Track-dependent course count requires manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science",
+          "courses": [
+            {
+              "code": "AIMS5730",
+              "name": "Natural Language Processing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "CMSC5743",
+              "name": "Efficient Computing of Deep Neural Networks",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "ENGG5108",
+              "name": "Big Data Analytics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "FTEC5530",
+              "name": "Quantitative and Algorithmic Trading",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "FTEC5580",
+              "name": "Data Analytics for Financial Technology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "FTEC5610",
+              "name": "Computational Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "FTEC5660",
+              "name": "Agentic AI for Business and FinTech",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "FTEC5680",
+              "name": "AI Applications in FinTech",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "IEMS5710",
+              "name": "Cryptography, Information Security and Privacy",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "IEMS5726",
+              "name": "Data Science in Practice",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "IEMS5730",
+              "name": "Big Data Systems and Information Processing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "IERG5310",
+              "name": "Security & Privacy in Cyber Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "IERG5320",
+              "name": "Digital Forensics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "IERG5350",
+              "name": "Reinforcement Learning",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "SEEM5840",
+              "name": "Quantitative Risk Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            }
+          ]
+        },
+        {
+          "id": "business-application-electives",
+          "name": "Business / Application-Oriented Electives",
+          "type": "elective",
+          "ruleText": "Together with the Technology-Oriented Electives, complete five courses for the Course Track, four for the Practicum Track, or three for the Industrial Project Track. Course availability is not guaranteed every term.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science",
+          "courses": [
+            {
+              "code": "ACCT6141",
+              "name": "Accounting Data Analytics and Business Intelligence",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "CMSC5741",
+              "name": "Big Data Technology and Applications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "DOTE6100",
+              "name": "Managing Service Operation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "DOTE6751",
+              "name": "Database and Big Data Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "DOTE6756",
+              "name": "Machine Learning for Business I",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "ECLT5720",
+              "name": "Electronic Payments Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "FINA6250",
+              "name": "Fundamentals Derivatives Trading Strategies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "FTEC4006",
+              "name": "Internet Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "FTEC5550",
+              "name": "Elements of RegTech for the Financial Market",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "FTEC5560",
+              "name": "Topics in Financial Technology Innovations",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "FTEC5570",
+              "name": "Financial Technology Entrepreneurship",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "FTEC5590",
+              "name": "Intelligent Automation - Robotic Process Automation (RPA) & Artificial Intelligence (AI)",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "FTEC5620",
+              "name": "Wealth Management in Business and FinTech",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "FTEC5630",
+              "name": "Green FinTech",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "FTEC5640",
+              "name": "Decentralized Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "FTEC5650",
+              "name": "Topics in International FinTech",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "FTEC5670",
+              "name": "Financial Technology Entrepreneurship Field Trip",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "SEEM5730",
+              "name": "Information Technology Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "SEEM5820",
+              "name": "Introduction to Financial Engineering",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            }
+          ]
+        },
+        {
+          "id": "enrichment-training",
+          "name": "Enrichment Training",
+          "type": "internship_or_project",
+          "ruleText": "Practicum Track students complete FTEC5540 (3 units). Industrial Project Track students complete both FTEC5910 and FTEC5920 in consecutive semesters (6 units); Project I earns credit only when Project II is subsequently completed unless the Programme Director approves otherwise.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science",
+          "courses": [
+            {
+              "code": "FTEC5540",
+              "name": "Financial Technology Internship",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "CUHK-TPG-013-PRACTICUM"
+              ],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "FTEC5910",
+              "name": "Financial Technology Project I",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "CUHK-TPG-013-INDUSTRIAL-PROJECT"
+              ],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            },
+            {
+              "code": "FTEC5920",
+              "name": "Financial Technology Project II",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "CUHK-TPG-013-INDUSTRIAL-PROJECT"
+              ],
+              "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+            }
+          ]
+        }
+      ],
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.gs.cuhk.edu.hk/programmes/engineering/msc-financial-technology",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CUHK-TPG-013-COURSE",
+          "name": "Course Track",
+          "type": "Track",
+          "creditsRequired": 24,
+          "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+        },
+        {
+          "id": "CUHK-TPG-013-PRACTICUM",
+          "name": "Practicum Track",
+          "type": "Track",
+          "creditsRequired": 24,
+          "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+        },
+        {
+          "id": "CUHK-TPG-013-INDUSTRIAL-PROJECT",
+          "name": "Industrial Project Track",
+          "type": "Track",
+          "creditsRequired": 24,
+          "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+        }
+      ],
+      "trackSelectionOptional": false,
+      "creditUnit": "units",
+      "ruleReviewStatus": "manual_review_required"
     },
     {
       "id": "CUHK-TPG-014",
@@ -37117,7 +37962,7 @@
       "name": "Master of Arts in Global Histories of Education",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 24,
       "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
@@ -37125,8 +37970,132 @@
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete all three Core Courses (9 credit points).",
+          "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-global-histories-of-education-maghe/programme-information/maghe-courses",
+          "courses": [
+            {
+              "code": "HIS6055",
+              "name": "Educationalising the World (Eighteenth to Twenty-First Century)",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-global-histories-of-education-maghe/programme-information/maghe-courses"
+            },
+            {
+              "code": "HIS6056",
+              "name": "Globalising History",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-global-histories-of-education-maghe/programme-information/maghe-courses"
+            },
+            {
+              "code": "PFS6064",
+              "name": "Histories of Modernisation and Education Development",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-global-histories-of-education-maghe/programme-information/maghe-courses"
+            }
+          ]
+        },
+        {
+          "id": "elective-or-research-project",
+          "name": "Elective Courses / Research Project",
+          "type": "elective_with_optional_project",
+          "creditsRequired": 15,
+          "ruleText": "Complete five 3-credit electives, or three 3-credit electives plus the 6-credit HIS6062 Research Project. The Research Project is optional, offered in Semester 2 with limited places, and must not be treated as compulsory. Not all electives are offered every year.",
+          "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-global-histories-of-education-maghe/programme-information/maghe-courses",
+          "courses": [
+            {
+              "code": "HIS6054",
+              "name": "Multiculturalism in Contemporary Education",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-global-histories-of-education-maghe/programme-information/maghe-courses"
+            },
+            {
+              "code": "HIS6058",
+              "name": "Education in China",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-global-histories-of-education-maghe/programme-information/maghe-courses"
+            },
+            {
+              "code": "HIS6059",
+              "name": "Histories of Technology and Learning",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-global-histories-of-education-maghe/programme-information/maghe-courses"
+            },
+            {
+              "code": "HIS6060",
+              "name": "History of the University",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-global-histories-of-education-maghe/programme-information/maghe-courses"
+            },
+            {
+              "code": "HIS6061",
+              "name": "The History of International Schooling in East Asia",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-global-histories-of-education-maghe/programme-information/maghe-courses"
+            },
+            {
+              "code": "PFS6062",
+              "name": "Education Futures",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-global-histories-of-education-maghe/programme-information/maghe-courses"
+            },
+            {
+              "code": "HIS6063",
+              "name": "Cultural Histories of Education: Ego-Documents, Images and Materialities",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-global-histories-of-education-maghe/programme-information/maghe-courses"
+            },
+            {
+              "code": "HIS6064",
+              "name": "The East Asian Model of Education: Past, Present and Future",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-global-histories-of-education-maghe/programme-information/maghe-courses"
+            },
+            {
+              "code": "HIS6069",
+              "name": "History of Gender and Education",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-global-histories-of-education-maghe/programme-information/maghe-courses"
+            },
+            {
+              "code": "HIS6081",
+              "name": "Modern Germany in Global Contexts",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-global-histories-of-education-maghe/programme-information/maghe-courses"
+            },
+            {
+              "code": "HIS6082",
+              "name": "Russia in Global Contexts: The History of Sino-Russian",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-global-histories-of-education-maghe/programme-information/maghe-courses"
+            },
+            {
+              "code": "HIS6083",
+              "name": "Missionary Education in Modern East Asia",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-global-histories-of-education-maghe/programme-information/maghe-courses"
+            },
+            {
+              "code": "HIS6062",
+              "name": "Research Project",
+              "credits": 6,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-global-histories-of-education-maghe/programme-information/maghe-courses"
+            }
+          ]
+        }
+      ],
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-global-histories-of-education-maghe/programme-information/programme-structure",
+      "courseStatusNote": "",
+      "creditUnit": "credit points",
+      "ruleReviewStatus": "manual_review_required"
     },
     {
       "id": "EDUHK-TPG-DIR-MA-GSE",
@@ -37297,16 +38266,165 @@
       "name": "Master of Arts in Teaching English to Speakers of Other Languages",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
-      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "creditsRequired": 24,
+      "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-teaching-english-to-speakers-of-other-languages-matesol/programme-information/programme-structure",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
       "lastVerifiedAt": "2026-07-11",
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
-      "tracks": [],
-      "dataLevel": "programme",
-      "courseGroups": []
+      "tracks": [
+        {
+          "id": "EDUHK-TPG-DIR-MATESOL-GENERAL",
+          "code": "GENERAL",
+          "name": "MATESOL (General)",
+          "type": "Degree Strand",
+          "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-teaching-english-to-speakers-of-other-languages-matesol/programme-information/programme-structure",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "EDUHK-TPG-DIR-MATESOL-APPLIED-LINGUISTICS",
+          "code": "APPLIED-LINGUISTICS",
+          "name": "MATESOL (Applied Linguistics)",
+          "type": "Degree Strand",
+          "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-teaching-english-to-speakers-of-other-languages-matesol/programme-information/programme-structure",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "EDUHK-TPG-DIR-MATESOL-DIGITAL-TECHNOLOGY",
+          "code": "DIGITAL-TECHNOLOGY",
+          "name": "MATESOL (Digital Technology for English Learning and Teaching)",
+          "type": "Degree Strand",
+          "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-teaching-english-to-speakers-of-other-languages-matesol/programme-information/programme-structure",
+          "lastVerifiedAt": "2026-07-11"
+        }
+      ],
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "All Degree Strands complete both Core Courses (6 credit points).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-teaching-english-to-speakers-of-other-languages-matesol/programme-information/matesol-courses",
+          "courses": [
+            {
+              "code": "ENG6236",
+              "name": "ELT Methodology: Innovation and Change",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-teaching-english-to-speakers-of-other-languages-matesol/programme-information/matesol-courses"
+            },
+            {
+              "code": "ENG6361",
+              "name": "Second Language Research Methods",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-teaching-english-to-speakers-of-other-languages-matesol/programme-information/matesol-courses"
+            }
+          ]
+        },
+        {
+          "id": "degree-strand-electives",
+          "name": "Degree Strand Courses / Electives",
+          "type": "elective_with_strand_requirements",
+          "ruleText": "General completes any six electives. Applied Linguistics completes the 6-credit Dissertation plus any four electives. Digital Technology for English Learning and Teaching completes the Dissertation, ENG6395, ENG6421 and any two electives. Not all Degree Strands or courses are offered every year; the Dissertation requires grade B or above in ENG6361. Strand-specific combinations require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-teaching-english-to-speakers-of-other-languages-matesol/programme-information/matesol-courses",
+          "courses": [
+            {
+              "code": "ENG6210",
+              "name": "Psycholinguistics and Second Language Acquisition",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-teaching-english-to-speakers-of-other-languages-matesol/programme-information/matesol-courses"
+            },
+            {
+              "code": "ENG6211",
+              "name": "Sociolinguistics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-teaching-english-to-speakers-of-other-languages-matesol/programme-information/matesol-courses"
+            },
+            {
+              "code": "ENG6212",
+              "name": "English Phonetics and Phonology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-teaching-english-to-speakers-of-other-languages-matesol/programme-information/matesol-courses"
+            },
+            {
+              "code": "ENG6213",
+              "name": "Written and Spoken Discourse",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-teaching-english-to-speakers-of-other-languages-matesol/programme-information/matesol-courses"
+            },
+            {
+              "code": "ENG6214",
+              "name": "Pedagogical Grammar",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-teaching-english-to-speakers-of-other-languages-matesol/programme-information/matesol-courses"
+            },
+            {
+              "code": "ENG6216",
+              "name": "Lexis, Morphology and Semantics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-teaching-english-to-speakers-of-other-languages-matesol/programme-information/matesol-courses"
+            },
+            {
+              "code": "ENG6237",
+              "name": "English in the Global Context",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-teaching-english-to-speakers-of-other-languages-matesol/programme-information/matesol-courses"
+            },
+            {
+              "code": "ENG6358",
+              "name": "Curriculum and Assessment",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-teaching-english-to-speakers-of-other-languages-matesol/programme-information/matesol-courses"
+            },
+            {
+              "code": "ENG6395",
+              "name": "English Language Teaching in Action",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-teaching-english-to-speakers-of-other-languages-matesol/programme-information/matesol-courses"
+            },
+            {
+              "code": "ENG6421",
+              "name": "Digital Technology for English Studies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-teaching-english-to-speakers-of-other-languages-matesol/programme-information/matesol-courses"
+            },
+            {
+              "code": "ENG6359",
+              "name": "Dissertation",
+              "credits": 6,
+              "appliesToTrackIds": [
+                "EDUHK-TPG-DIR-MATESOL-APPLIED-LINGUISTICS",
+                "EDUHK-TPG-DIR-MATESOL-DIGITAL-TECHNOLOGY"
+              ],
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-teaching-english-to-speakers-of-other-languages-matesol/programme-information/matesol-courses"
+            }
+          ]
+        }
+      ],
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-teaching-english-to-speakers-of-other-languages-matesol/programme-information/programme-structure",
+      "courseStatusNote": "",
+      "trackSelectionOptional": false,
+      "creditUnit": "credit points",
+      "ruleReviewStatus": "manual_review_required"
     },
     {
       "id": "EDUHK-TPG-DIR-MA-VAECP",

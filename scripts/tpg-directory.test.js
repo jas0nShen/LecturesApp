@@ -35,6 +35,37 @@ test('TPG directory supplement import is deterministic and preserves unrelated p
   assert.equal(imported.programmes.find((item) => item.universityCode === 'EDUHK').academicYear, '2027-28');
 });
 
+test('TPG directory refresh preserves verified course structures for stable Programme IDs', () => {
+  const id = buildId('EDUHK', 'TEST', 'Master of Testing', 0);
+  const source = {
+    universities: [{ code: 'EDUHK', academicYear: '2026-27', sourceUrl: 'https://www.eduhk.hk/programmes' }],
+    programmes: [{
+      id,
+      universityCode: 'EDUHK',
+      programmeCode: 'TEST',
+      name: 'Master of Testing',
+      directorySupplement: true,
+      dataLevel: 'structure',
+      courseVerificationStatus: 'verified',
+      courseGroups: [{ id: 'core', courses: [{ code: 'TST6001' }] }]
+    }]
+  };
+  const supplement = {
+    lastVerifiedAt: '2026-07-13',
+    universities: [{
+      code: 'EDUHK',
+      academicYear: '2026-27',
+      sourceUrl: 'https://www.eduhk.hk/programmes',
+      sourceLabel: 'Official',
+      programmes: [['TEST', 'Master of Testing']]
+    }]
+  };
+  const imported = applyDirectorySupplements(source, supplement);
+  assert.equal(imported.programmes[0].courseVerificationStatus, 'verified');
+  assert.equal(imported.programmes[0].dataLevel, 'structure');
+  assert.deepEqual(imported.programmes[0].courseGroups, source.programmes[0].courseGroups);
+});
+
 test('field-label directory entries use name-independent stable IDs', () => {
   const source = {
     universities: [{ code: 'LINGNAN', academicYear: '2026-27', sourceUrl: 'https://ln.edu.hk' }],

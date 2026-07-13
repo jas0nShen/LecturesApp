@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "CUHK-TPG-013",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "units",
+      "sourceUrl": "https://www.gs.cuhk.edu.hk/programmes/engineering/msc-financial-technology",
+      "ruleReviewStatus": "manual_review_required",
+      "trackSelectionOptional": false,
+      "tracks": [
+        {
+          "id": "CUHK-TPG-013-COURSE",
+          "name": "Course Track",
+          "type": "Track",
+          "creditsRequired": 24,
+          "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+        },
+        {
+          "id": "CUHK-TPG-013-PRACTICUM",
+          "name": "Practicum Track",
+          "type": "Track",
+          "creditsRequired": 24,
+          "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+        },
+        {
+          "id": "CUHK-TPG-013-INDUSTRIAL-PROJECT",
+          "name": "Industrial Project Track",
+          "type": "Track",
+          "creditsRequired": 24,
+          "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science"
+        }
+      ],
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete all three required courses (9 units). A student admitted with a finance-related background may be exempted from FINA6122, but must replace it with an additional elective to preserve the 24-unit total.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science",
+          "courses": [
+            { "code": "FINA6122", "name": "Financial Markets and Instruments", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "FTEC5510", "name": "Advanced Financial Infrastructure", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "FTEC5520", "name": "Applied Blockchain and Cryptocurrencies", "credits": 3, "appliesToTrackIds": [] }
+          ]
+        },
+        {
+          "id": "technology-electives",
+          "name": "Technology-Oriented Electives",
+          "type": "elective",
+          "ruleText": "Together with the Business / Application-Oriented Electives, complete five courses for the Course Track, four for the Practicum Track, or three for the Industrial Project Track. The Track-dependent course count requires manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science",
+          "courses": [
+            { "code": "AIMS5730", "name": "Natural Language Processing", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "CMSC5743", "name": "Efficient Computing of Deep Neural Networks", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ENGG5108", "name": "Big Data Analytics", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "FTEC5530", "name": "Quantitative and Algorithmic Trading", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "FTEC5580", "name": "Data Analytics for Financial Technology", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "FTEC5610", "name": "Computational Finance", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "FTEC5660", "name": "Agentic AI for Business and FinTech", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "FTEC5680", "name": "AI Applications in FinTech", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "IEMS5710", "name": "Cryptography, Information Security and Privacy", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "IEMS5726", "name": "Data Science in Practice", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "IEMS5730", "name": "Big Data Systems and Information Processing", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "IERG5310", "name": "Security & Privacy in Cyber Systems", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "IERG5320", "name": "Digital Forensics", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "IERG5350", "name": "Reinforcement Learning", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "SEEM5840", "name": "Quantitative Risk Management", "credits": 3, "appliesToTrackIds": [] }
+          ]
+        },
+        {
+          "id": "business-application-electives",
+          "name": "Business / Application-Oriented Electives",
+          "type": "elective",
+          "ruleText": "Together with the Technology-Oriented Electives, complete five courses for the Course Track, four for the Practicum Track, or three for the Industrial Project Track. Course availability is not guaranteed every term.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science",
+          "courses": [
+            { "code": "ACCT6141", "name": "Accounting Data Analytics and Business Intelligence", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "CMSC5741", "name": "Big Data Technology and Applications", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "DOTE6100", "name": "Managing Service Operation", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "DOTE6751", "name": "Database and Big Data Management", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "DOTE6756", "name": "Machine Learning for Business I", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ECLT5720", "name": "Electronic Payments Systems", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "FINA6250", "name": "Fundamentals Derivatives Trading Strategies", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "FTEC4006", "name": "Internet Finance", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "FTEC5550", "name": "Elements of RegTech for the Financial Market", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "FTEC5560", "name": "Topics in Financial Technology Innovations", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "FTEC5570", "name": "Financial Technology Entrepreneurship", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "FTEC5590", "name": "Intelligent Automation - Robotic Process Automation (RPA) & Artificial Intelligence (AI)", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "FTEC5620", "name": "Wealth Management in Business and FinTech", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "FTEC5630", "name": "Green FinTech", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "FTEC5640", "name": "Decentralized Finance", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "FTEC5650", "name": "Topics in International FinTech", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "FTEC5670", "name": "Financial Technology Entrepreneurship Field Trip", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "SEEM5730", "name": "Information Technology Management", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "SEEM5820", "name": "Introduction to Financial Engineering", "credits": 3, "appliesToTrackIds": [] }
+          ]
+        },
+        {
+          "id": "enrichment-training",
+          "name": "Enrichment Training",
+          "type": "internship_or_project",
+          "ruleText": "Practicum Track students complete FTEC5540 (3 units). Industrial Project Track students complete both FTEC5910 and FTEC5920 in consecutive semesters (6 units); Project I earns credit only when Project II is subsequently completed unless the Programme Director approves otherwise.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://fintech.erg.cuhk.edu.hk/programme-information/master-science/master-science",
+          "courses": [
+            { "code": "FTEC5540", "name": "Financial Technology Internship", "credits": 3, "appliesToTrackIds": ["CUHK-TPG-013-PRACTICUM"] },
+            { "code": "FTEC5910", "name": "Financial Technology Project I", "credits": 3, "appliesToTrackIds": ["CUHK-TPG-013-INDUSTRIAL-PROJECT"] },
+            { "code": "FTEC5920", "name": "Financial Technology Project II", "credits": 3, "appliesToTrackIds": ["CUHK-TPG-013-INDUSTRIAL-PROJECT"] }
+          ]
+        }
+      ]
+    }
+  ]
+}
