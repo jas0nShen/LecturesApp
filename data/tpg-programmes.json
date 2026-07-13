@@ -41534,7 +41534,11 @@
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseGroups": [],
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.ln.edu.hk/fin/mfin/programme/master-of-science-in-finance",
+      "courseStatusNote": "The live official curriculum identifies seven Core Courses (all required) and an Elective pool from which any three are selected, but it does not publish per-course credits. Credits are not inferred from the 10-course completion pattern, so the course structure remains unavailable pending an official current credit table."
     },
     {
       "id": "LINGNAN-TPG-DIR-16-000936-L6",
@@ -41543,7 +41547,7 @@
       "name": "Master of Science in Work and Organisational Psychology",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -41551,8 +41555,144 @@
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five Required Courses (15 credits).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/programme-structure",
+          "courses": [
+            {
+              "code": "PSY511",
+              "name": "Psychology & Work Today: An Introduction to Work Psychology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/course-descriptions"
+            },
+            {
+              "code": "PSY512",
+              "name": "Personnel Psychology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/course-descriptions"
+            },
+            {
+              "code": "PSY513",
+              "name": "Organisational Psychology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/course-descriptions"
+            },
+            {
+              "code": "PSY514",
+              "name": "Occupational Health Psychology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/course-descriptions"
+            },
+            {
+              "code": "PSY515",
+              "name": "Research Methods in Work Psychology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/course-descriptions"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Choose any five Elective Courses (15 credits). PSY609 applies to students admitted from 2024-25 onward, and PSY613 applies to students admitted from 2025-26 onward. Elective offerings are subject to sufficient demand and faculty availability.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/programme-structure",
+          "courses": [
+            {
+              "code": "PSY601",
+              "name": "The Psychology of IT at Work",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/course-descriptions"
+            },
+            {
+              "code": "PSY602",
+              "name": "Human Relationship and Interpersonal Skills in Organisations",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/course-descriptions"
+            },
+            {
+              "code": "PSY603",
+              "name": "Seminar on Selected Issues in Work and Organisational Psychology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/course-descriptions"
+            },
+            {
+              "code": "PSY604",
+              "name": "Consumer Psychology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/course-descriptions"
+            },
+            {
+              "code": "PSY605",
+              "name": "Coaching and Counselling in the Workplace",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/course-descriptions"
+            },
+            {
+              "code": "PSY606",
+              "name": "Applied Positive Psychology at Work",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/course-descriptions"
+            },
+            {
+              "code": "PSY607",
+              "name": "Social Problem Solving and Decision Making in the Modern World",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/course-descriptions"
+            },
+            {
+              "code": "PSY608",
+              "name": "Guided Research",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/course-descriptions"
+            },
+            {
+              "code": "PSY609",
+              "name": "Workplace Diversity and Inclusion",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/course-descriptions"
+            },
+            {
+              "code": "PSY613",
+              "name": "Principles of Psychological Assessment",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/course-descriptions"
+            }
+          ]
+        }
+      ],
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/programme-structure",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified"
     },
     {
       "id": "LINGNAN-TPG-DIR-17-000204-L6",
@@ -41657,9 +41797,9 @@
       "universityCode": "LINGNAN",
       "programmeCode": "19/000062/L6",
       "name": "Master of Social Sciences in Organisational Psychology and Education Management",
-      "academicYear": "2026-27",
+      "academicYear": "2027-28",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -41667,8 +41807,158 @@
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Required Courses (12 credits).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/psy/opem/programme-overview/programme-structure",
+          "courses": [
+            {
+              "code": "PSY513",
+              "name": "Organisational Psychology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/opem/programme-overview/course-description"
+            },
+            {
+              "code": "PSY515",
+              "name": "Research Methods in Work Psychology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/opem/programme-overview/course-description"
+            },
+            {
+              "code": "PSY619",
+              "name": "Educational Psychology: Theory and Practice",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/opem/programme-overview/course-description"
+            },
+            {
+              "code": "MOP608",
+              "name": "Leadership in Educational Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/opem/programme-overview/course-description"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses (Psychology and Education Management Clusters)",
+          "type": "elective",
+          "creditsRequired": 18,
+          "coursesRequired": null,
+          "ruleText": "Complete 18 elective credits across the two official clusters, including at least 6 credits from the Psychology Cluster and at least 9 credits from the Education Management Cluster. The remaining 3 credits may come from either cluster. MOP602 carries 6 credits while the other electives carry 3 credits, so the final course count and cross-cluster combination require manual audit review. Elective courses are offered subject to sufficient demand and faculty availability.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/psy/opem/programme-overview/programme-structure",
+          "courses": [
+            {
+              "code": "PSY605",
+              "name": "Coaching and Counselling in the Workplace",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/opem/programme-overview/course-description"
+            },
+            {
+              "code": "PSY613",
+              "name": "Principles of Psychological Assessment",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/opem/programme-overview/course-description"
+            },
+            {
+              "code": "PSY618",
+              "name": "Personal Growth",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/opem/programme-overview/course-description"
+            },
+            {
+              "code": "PSY514",
+              "name": "Occupational Health Psychology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/opem/programme-overview/course-description"
+            },
+            {
+              "code": "MOP607",
+              "name": "Youth Mental Health: Developmental Risk and Resilience",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/opem/programme-overview/course-description"
+            },
+            {
+              "code": "MOP601",
+              "name": "Regional Study on Education Management in Greater China and East Asia",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/opem/programme-overview/course-description"
+            },
+            {
+              "code": "MOP602",
+              "name": "Applied Education Management Project (Term 1 & Term 2)",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/opem/programme-overview/course-description"
+            },
+            {
+              "code": "MOP605",
+              "name": "Guided Study in Education Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/opem/programme-overview/course-description"
+            },
+            {
+              "code": "MOP606",
+              "name": "Fostering Interculturality through Intercultural Education",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/opem/programme-overview/course-description"
+            },
+            {
+              "code": "MOP609",
+              "name": "Innovative Pedagogy: Frameworks & Application",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/opem/programme-overview/course-description"
+            },
+            {
+              "code": "MIH601",
+              "name": "Internationalising Education: Institutional Strategy and Development",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/opem/programme-overview/course-description"
+            },
+            {
+              "code": "MIH611",
+              "name": "Generative AI in Education: Applications and Challenges",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/opem/programme-overview/course-description"
+            },
+            {
+              "code": "CRS512",
+              "name": "Evolution of Early Childhood Education in China and the World",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/opem/programme-overview/course-description"
+            }
+          ]
+        }
+      ],
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.ln.edu.hk/psy/opem/programme-overview/programme-structure",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required"
     },
     {
       "id": "LINGNAN-TPG-DIR-19-000493-L6",
@@ -41686,7 +41976,11 @@
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseGroups": [],
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.ln.edu.hk/sgs/mhsm/programme/programme-structure",
+      "courseStatusNote": "The live official Programme Structure publishes six 3-credit Core Courses, any two 3-credit Electives and a 6-credit Capstone Project, with every current course title, but it does not publish any course codes. The titles are not converted into invented codes, so the course structure remains unavailable pending an official coded curriculum."
     },
     {
       "id": "LINGNAN-TPG-DIR-19-000888-L6",
@@ -42013,7 +42307,11 @@
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseGroups": [],
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.ln.edu.hk/sgs/ham/programme/programme-structure",
+      "courseStatusNote": "The live official Programme Structure publishes a 21-credit Core group, one 3-credit Elective and a 6-credit Capstone Project, with every current course title, but it does not publish any course codes. The titles are not converted into invented codes, so the course structure remains unavailable pending an official coded curriculum."
     },
     {
       "id": "LINGNAN-TPG-DIR-22-000098-L6",
@@ -42049,7 +42347,7 @@
       "name": "Master of Social Sciences in Applied Psychology",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -42061,13 +42359,183 @@
           "id": "LINGNAN-TPG-DIR-22-000158-L6-23-000260-L6",
           "code": "23/000260/L6",
           "name": "Counselling Psychology",
-          "type": "specialism",
-          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "type": "Concentration",
+          "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/programme-structure",
           "lastVerifiedAt": "2026-07-11"
         }
       ],
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five Required Courses (15 credits).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/programme-structure",
+          "courses": [
+            {
+              "code": "PSY501",
+              "name": "Research Methods in Psychology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions"
+            },
+            {
+              "code": "PSY502",
+              "name": "Cognitive Psychology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions"
+            },
+            {
+              "code": "PSY503",
+              "name": "Lifespan Developmental Psychology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions"
+            },
+            {
+              "code": "PSY504",
+              "name": "Personality Psychology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions"
+            },
+            {
+              "code": "PSY505",
+              "name": "Social Psychology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Choose any five Elective Courses (15 credits). To declare the Counselling Psychology Concentration at graduation, all four marked counselling courses PSY611, PSY612, PSY613 and PSY614 must be included among the five electives. The concentration declaration requires manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/programme-structure",
+          "courses": [
+            {
+              "code": "PSY611",
+              "name": "Theories and Models in Counselling Psychology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "LINGNAN-TPG-DIR-22-000158-L6-23-000260-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions"
+            },
+            {
+              "code": "PSY612",
+              "name": "Psychopathology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "LINGNAN-TPG-DIR-22-000158-L6-23-000260-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions"
+            },
+            {
+              "code": "PSY613",
+              "name": "Principles of Psychological Assessment",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "LINGNAN-TPG-DIR-22-000158-L6-23-000260-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions"
+            },
+            {
+              "code": "PSY614",
+              "name": "Interventions and Professional Ethics in Counselling",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "LINGNAN-TPG-DIR-22-000158-L6-23-000260-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions"
+            },
+            {
+              "code": "PSY617",
+              "name": "Guided Study in Psychology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions"
+            },
+            {
+              "code": "PSY618",
+              "name": "Personal Growth",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions"
+            },
+            {
+              "code": "PSY619",
+              "name": "Educational Psychology: Theory and Practice",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions"
+            },
+            {
+              "code": "PSY602",
+              "name": "Human Relationship and Interpersonal Skills in Organisations",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions"
+            },
+            {
+              "code": "PSY604",
+              "name": "Consumer Psychology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions"
+            },
+            {
+              "code": "PSY606",
+              "name": "Applied Positive Psychology at Work",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions"
+            },
+            {
+              "code": "HAM508",
+              "name": "Applied Health Psychology in Social Service Settings",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions"
+            },
+            {
+              "code": "HAM509",
+              "name": "Sleep, Health, and Everyday Life",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions"
+            },
+            {
+              "code": "SAG501",
+              "name": "Positive Gerontology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions"
+            }
+          ]
+        }
+      ],
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/programme-structure",
+      "courseStatusNote": "",
+      "trackSelectionOptional": true,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required"
     },
     {
       "id": "LINGNAN-TPG-DIR-22-000916-L6",
@@ -42174,7 +42642,7 @@
       "name": "Master of Housing Policy and Management",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -42182,8 +42650,135 @@
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 21,
+          "coursesRequired": 7,
+          "ruleText": "Complete all seven Core Courses (21 credits).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/mhpm/programme-overview/programme-structure",
+          "courses": [
+            {
+              "code": "HPM501",
+              "name": "Housing Economics and Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/mhpm/programme-overview/programme-structure"
+            },
+            {
+              "code": "HPM502",
+              "name": "Contemporary Issues in Housing Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/mhpm/programme-overview/programme-structure"
+            },
+            {
+              "code": "HPM503",
+              "name": "Building Studies for Housing Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/mhpm/programme-overview/programme-structure"
+            },
+            {
+              "code": "HPM504",
+              "name": "Facility and Asset Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/mhpm/programme-overview/programme-structure"
+            },
+            {
+              "code": "HPM601",
+              "name": "Legal Studies for Housing Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/mhpm/programme-overview/programme-structure"
+            },
+            {
+              "code": "HPM602",
+              "name": "Advanced Practices of Housing Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/mhpm/programme-overview/programme-structure"
+            },
+            {
+              "code": "MCG511",
+              "name": "Housing Policy and Development",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/mhpm/programme-overview/programme-structure"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Choose one Elective Course (3 credits). CDS527 and CDS556 are added to the pool effective from the 2026-27 intake. Elective offerings are subject to University approval before the start of the academic year.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/mhpm/programme-overview/programme-structure",
+          "courses": [
+            {
+              "code": "MCG501",
+              "name": "Cities and Social Change",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/mhpm/programme-overview/programme-structure"
+            },
+            {
+              "code": "MCG505",
+              "name": "Smart and Sustainable Cities",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/mhpm/programme-overview/programme-structure"
+            },
+            {
+              "code": "CDS527",
+              "name": "Big Data Analytics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/mhpm/programme-overview/programme-structure"
+            },
+            {
+              "code": "CDS556",
+              "name": "Urban Computing and Spatio-Temporal Analytics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/mhpm/programme-overview/programme-structure"
+            }
+          ]
+        },
+        {
+          "id": "capstone-project",
+          "name": "Capstone Project",
+          "type": "project",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Complete HPM603 Research Methods and Capstone Project (6 credits).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/mhpm/programme-overview/programme-structure",
+          "courses": [
+            {
+              "code": "HPM603",
+              "name": "Research Methods and Capstone Project",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/mhpm/programme-overview/programme-structure"
+            }
+          ]
+        }
+      ],
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.ln.edu.hk/sgs/mhpm/programme-overview/programme-structure",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified"
     },
     {
       "id": "LINGNAN-TPG-DIR-23-000864-L6",
@@ -42897,7 +43492,11 @@
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseGroups": [],
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.ln.edu.hk/sgs/sag/programme-overview",
+      "courseStatusNote": "The live official Programme page states a nine-course, 30-credit structure and lists the LU and HKMU course titles, but it does not publish any course codes. The titles are not converted into invented codes, so the course structure remains unavailable pending an official coded curriculum."
     }
   ]
 }

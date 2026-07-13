@@ -9,8 +9,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 170);
-  assert.equal(coverage.courseCount, 3876);
+  assert.equal(coverage.programmeWithCoursesCount, 174);
+  assert.equal(coverage.courseCount, 3938);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -29,8 +29,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 170);
-  assert.equal(rows.length, 170);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 174);
+  assert.equal(rows.length, 174);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
@@ -799,6 +799,132 @@ test('Lingnan Data Science keeps its Project inside the seven required courses',
   assert.equal(electives.courses.some((course) => course.code === 'CDS536'), false);
   assert.match(electives.ruleText, /subject to sufficient demand and division availability/);
   assert.equal(programme.courseSourceUrl, 'https://www.ln.edu.hk/sds/dai/mscds/programme-overview/curriculum');
+});
+
+test('Lingnan OPEM preserves the cross-cluster elective rule for manual audit', () => {
+  const programme = tpgService.getProgramme('LINGNAN-TPG-DIR-19-000062-L6');
+  const courses = tpgService.flattenCourses(programme);
+  const required = programme.courseGroups.find((group) => group.id === 'required-courses');
+  const electives = programme.courseGroups.find((group) => group.id === 'elective-courses');
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.academicYear, '2027-28');
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.equal(tpgService.getStatus(programme).courseCount, 17);
+  assert.equal(courses.length, 17);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 17);
+  assert.deepEqual([required.creditsRequired, required.coursesRequired, required.courses.length], [12, 4, 4]);
+  assert.deepEqual([electives.creditsRequired, electives.coursesRequired, electives.courses.length], [18, null, 13]);
+  assert.equal(electives.courses.find((course) => course.code === 'MOP602').credits, 6);
+  assert.equal(electives.courses.find((course) => course.code === 'MOP609').name, 'Innovative Pedagogy: Frameworks & Application');
+  assert.match(electives.ruleText, /at least 6 credits from the Psychology Cluster/);
+  assert.match(electives.ruleText, /at least 9 credits from the Education Management Cluster/);
+  assert.match(electives.ruleText, /require manual audit review/);
+  assert.equal(programme.courseSourceUrl, 'https://www.ln.edu.hk/psy/opem/programme-overview/programme-structure');
+});
+
+test('Lingnan Housing Policy and Management separates its Capstone from the elective pool', () => {
+  const programme = tpgService.getProgramme('LINGNAN-TPG-DIR-23-000472-L6');
+  const courses = tpgService.flattenCourses(programme);
+  const core = programme.courseGroups.find((group) => group.id === 'core-courses');
+  const electives = programme.courseGroups.find((group) => group.id === 'elective-courses');
+  const capstone = programme.courseGroups.find((group) => group.id === 'capstone-project');
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.academicYear, '2026-27');
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.equal(tpgService.getStatus(programme).courseCount, 12);
+  assert.equal(courses.length, 12);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 12);
+  assert.deepEqual([core.creditsRequired, core.coursesRequired, core.courses.length], [21, 7, 7]);
+  assert.deepEqual([electives.creditsRequired, electives.coursesRequired, electives.courses.length], [3, 1, 4]);
+  assert.deepEqual([capstone.creditsRequired, capstone.coursesRequired, capstone.courses.length], [6, 1, 1]);
+  assert.equal(capstone.courses[0].code, 'HPM603');
+  assert.equal(capstone.courses[0].credits, 6);
+  assert.equal(electives.courses.some((course) => course.code === 'HPM603'), false);
+  assert.match(electives.ruleText, /effective from the 2026-27 intake/);
+  assert.equal(programme.courseSourceUrl, 'https://www.ln.edu.hk/sgs/mhpm/programme-overview/programme-structure');
+});
+
+test('Lingnan incomplete official curricula remain explicit source blockers', () => {
+  const finance = tpgService.getProgramme('LINGNAN-TPG-DIR-16-000107-L6');
+  const smartAgeing = tpgService.getProgramme('LINGNAN-TPG-DIR-MASTER-OF-SCIENCE-IN-SMART-AGEING-AND-GERONTOLOG');
+  const healthAnalytics = tpgService.getProgramme('LINGNAN-TPG-DIR-21-001281-L6');
+  const healthServices = tpgService.getProgramme('LINGNAN-TPG-DIR-19-000493-L6');
+
+  assert.equal(finance.courseVerificationStatus, 'blocked');
+  assert.equal(tpgService.getStatus(finance).courseCount, 0);
+  assert.match(finance.courseStatusNote, /does not publish per-course credits/);
+  assert.match(finance.courseStatusNote, /Credits are not inferred/);
+  assert.equal(finance.courseSourceUrl, 'https://www.ln.edu.hk/fin/mfin/programme/master-of-science-in-finance');
+
+  assert.equal(smartAgeing.courseVerificationStatus, 'blocked');
+  assert.equal(tpgService.getStatus(smartAgeing).courseCount, 0);
+  assert.match(smartAgeing.courseStatusNote, /does not publish any course codes/);
+  assert.match(smartAgeing.courseStatusNote, /not converted into invented codes/);
+  assert.equal(smartAgeing.courseSourceUrl, 'https://www.ln.edu.hk/sgs/sag/programme-overview');
+
+  assert.equal(healthAnalytics.courseVerificationStatus, 'blocked');
+  assert.equal(tpgService.getStatus(healthAnalytics).courseCount, 0);
+  assert.match(healthAnalytics.courseStatusNote, /21-credit Core group/);
+  assert.match(healthAnalytics.courseStatusNote, /does not publish any course codes/);
+
+  assert.equal(healthServices.courseVerificationStatus, 'blocked');
+  assert.equal(tpgService.getStatus(healthServices).courseCount, 0);
+  assert.match(healthServices.courseStatusNote, /six 3-credit Core Courses/);
+  assert.match(healthServices.courseStatusNote, /does not publish any course codes/);
+});
+
+test('Lingnan Work and Organisational Psychology preserves the current five-plus-five rule', () => {
+  const programme = tpgService.getProgramme('LINGNAN-TPG-DIR-16-000936-L6');
+  const courses = tpgService.flattenCourses(programme);
+  const required = programme.courseGroups.find((group) => group.id === 'required-courses');
+  const electives = programme.courseGroups.find((group) => group.id === 'elective-courses');
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.academicYear, '2026-27');
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.equal(courses.length, 15);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 15);
+  assert.deepEqual([required.creditsRequired, required.coursesRequired, required.courses.length], [15, 5, 5]);
+  assert.deepEqual([electives.creditsRequired, electives.coursesRequired, electives.courses.length], [15, 5, 10]);
+  assert.equal(courses.every((course) => course.credits === 3), true);
+  assert.equal(electives.courses.find((course) => course.code === 'PSY609').name, 'Workplace Diversity and Inclusion');
+  assert.match(electives.ruleText, /PSY613 applies to students admitted from 2025-26 onward/);
+  assert.equal(programme.courseSourceUrl, 'https://www.ln.edu.hk/psy/mwop/programme-overview/programme-structure');
+});
+
+test('Lingnan Applied Psychology keeps the Counselling Concentration optional and reviewable', () => {
+  const programme = tpgService.getProgramme('LINGNAN-TPG-DIR-22-000158-L6');
+  const track = tpgService.listTracks(programme)[0];
+  const courses = tpgService.flattenCourses(programme);
+  const trackCourses = tpgService.flattenCourses(programme, '', track.id);
+  const required = programme.courseGroups.find((group) => group.id === 'required-courses');
+  const electives = programme.courseGroups.find((group) => group.id === 'elective-courses');
+  const counselling = electives.courses.filter((course) => (course.countsTowardTrackIds || []).includes(track.id));
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.academicYear, '2026-27');
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(programme.trackSelectionOptional, true);
+  assert.equal(track.name, 'Counselling Psychology');
+  assert.equal(track.type, 'Concentration');
+  assert.equal(courses.length, 18);
+  assert.equal(trackCourses.length, 18);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 18);
+  assert.deepEqual([required.creditsRequired, required.coursesRequired, required.courses.length], [15, 5, 5]);
+  assert.deepEqual([electives.creditsRequired, electives.coursesRequired, electives.courses.length], [15, 5, 13]);
+  assert.deepEqual(counselling.map((course) => course.code), ['PSY611', 'PSY612', 'PSY613', 'PSY614']);
+  assert.match(electives.ruleText, /all four marked counselling courses/);
+  assert.match(electives.ruleText, /requires manual audit review/);
+  assert.equal(programme.courseSourceUrl, 'https://www.ln.edu.hk/psy/mssap/programme-overview/programme-structure');
 });
 
 test('EdUHK Master of Education exposes official Areas of Focus as Tracks', () => {

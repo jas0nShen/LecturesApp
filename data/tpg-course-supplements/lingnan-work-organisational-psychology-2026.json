@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "LINGNAN",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "LINGNAN-TPG-DIR-16-000936-L6",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/programme-structure",
+      "ruleReviewStatus": "verified",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five Required Courses (15 credits).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/programme-structure",
+          "courses": [
+            { "code": "PSY511", "name": "Psychology & Work Today: An Introduction to Work Psychology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/course-descriptions" },
+            { "code": "PSY512", "name": "Personnel Psychology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/course-descriptions" },
+            { "code": "PSY513", "name": "Organisational Psychology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/course-descriptions" },
+            { "code": "PSY514", "name": "Occupational Health Psychology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/course-descriptions" },
+            { "code": "PSY515", "name": "Research Methods in Work Psychology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/course-descriptions" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Choose any five Elective Courses (15 credits). PSY609 applies to students admitted from 2024-25 onward, and PSY613 applies to students admitted from 2025-26 onward. Elective offerings are subject to sufficient demand and faculty availability.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/programme-structure",
+          "courses": [
+            { "code": "PSY601", "name": "The Psychology of IT at Work", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/course-descriptions" },
+            { "code": "PSY602", "name": "Human Relationship and Interpersonal Skills in Organisations", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/course-descriptions" },
+            { "code": "PSY603", "name": "Seminar on Selected Issues in Work and Organisational Psychology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/course-descriptions" },
+            { "code": "PSY604", "name": "Consumer Psychology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/course-descriptions" },
+            { "code": "PSY605", "name": "Coaching and Counselling in the Workplace", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/course-descriptions" },
+            { "code": "PSY606", "name": "Applied Positive Psychology at Work", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/course-descriptions" },
+            { "code": "PSY607", "name": "Social Problem Solving and Decision Making in the Modern World", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/course-descriptions" },
+            { "code": "PSY608", "name": "Guided Research", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/course-descriptions" },
+            { "code": "PSY609", "name": "Workplace Diversity and Inclusion", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/course-descriptions" },
+            { "code": "PSY613", "name": "Principles of Psychological Assessment", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/course-descriptions" }
+          ]
+        }
+      ]
+    }
+  ]
+}

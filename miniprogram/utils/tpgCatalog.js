@@ -7887,6 +7887,10 @@ module.exports = {
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.ln.edu.hk/fin/mfin/programme/master-of-science-in-finance",
+      "courseStatusNote": "The live official curriculum identifies seven Core Courses (all required) and an Elective pool from which any three are selected, but it does not publish per-course credits. Credits are not inferred from the 10-course completion pattern, so the course structure remains unavailable pending an official current credit table.",
       "courseCount": 0
     },
     {
@@ -7896,7 +7900,7 @@ module.exports = {
       "name": "Master of Science in Work and Organisational Psychology",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -7904,8 +7908,14 @@ module.exports = {
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.ln.edu.hk/psy/mwop/programme-overview/programme-structure",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified",
+      "courseCount": 15
     },
     {
       "id": "LINGNAN-TPG-DIR-17-000204-L6",
@@ -8010,9 +8020,9 @@ module.exports = {
       "universityCode": "LINGNAN",
       "programmeCode": "19/000062/L6",
       "name": "Master of Social Sciences in Organisational Psychology and Education Management",
-      "academicYear": "2026-27",
+      "academicYear": "2027-28",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -8020,8 +8030,14 @@ module.exports = {
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.ln.edu.hk/psy/opem/programme-overview/programme-structure",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 17
     },
     {
       "id": "LINGNAN-TPG-DIR-19-000493-L6",
@@ -8039,6 +8055,10 @@ module.exports = {
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.ln.edu.hk/sgs/mhsm/programme/programme-structure",
+      "courseStatusNote": "The live official Programme Structure publishes six 3-credit Core Courses, any two 3-credit Electives and a 6-credit Capstone Project, with every current course title, but it does not publish any course codes. The titles are not converted into invented codes, so the course structure remains unavailable pending an official coded curriculum.",
       "courseCount": 0
     },
     {
@@ -8180,6 +8200,10 @@ module.exports = {
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.ln.edu.hk/sgs/ham/programme/programme-structure",
+      "courseStatusNote": "The live official Programme Structure publishes a 21-credit Core group, one 3-credit Elective and a 6-credit Capstone Project, with every current course title, but it does not publish any course codes. The titles are not converted into invented codes, so the course structure remains unavailable pending an official coded curriculum.",
       "courseCount": 0
     },
     {
@@ -8216,7 +8240,7 @@ module.exports = {
       "name": "Master of Social Sciences in Applied Psychology",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -8228,13 +8252,20 @@ module.exports = {
           "id": "LINGNAN-TPG-DIR-22-000158-L6-23-000260-L6",
           "code": "23/000260/L6",
           "name": "Counselling Psychology",
-          "type": "specialism",
-          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "type": "Concentration",
+          "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/programme-structure",
           "lastVerifiedAt": "2026-07-11"
         }
       ],
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/programme-structure",
+      "courseStatusNote": "",
+      "trackSelectionOptional": true,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 18
     },
     {
       "id": "LINGNAN-TPG-DIR-22-000916-L6",
@@ -8341,7 +8372,7 @@ module.exports = {
       "name": "Master of Housing Policy and Management",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -8349,8 +8380,14 @@ module.exports = {
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.ln.edu.hk/sgs/mhpm/programme-overview/programme-structure",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified",
+      "courseCount": 12
     },
     {
       "id": "LINGNAN-TPG-DIR-23-000864-L6",
@@ -8892,6 +8929,10 @@ module.exports = {
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.ln.edu.hk/sgs/sag/programme-overview",
+      "courseStatusNote": "The live official Programme page states a nine-course, 30-credit structure and lists the LU and HKMU course titles, but it does not publish any course codes. The titles are not converted into invented codes, so the course structure remains unavailable pending an official coded curriculum.",
       "courseCount": 0
     }
   ]

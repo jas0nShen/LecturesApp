@@ -306,7 +306,7 @@
         ] },
         { "programmeCode": "17/001035/L6", "name": "Master of Arts in International Affairs" },
         { "programmeCode": "18/000444/L6", "name": "Master of Science in International and Development Economics" },
-        { "programmeCode": "19/000062/L6", "name": "Master of Social Sciences in Organisational Psychology and Education Management" },
+        { "programmeCode": "19/000062/L6", "name": "Master of Social Sciences in Organisational Psychology and Education Management", "academicYear": "2027-28" },
         { "programmeCode": "19/000493/L6", "name": "Master of Social Sciences in Health and Social Services Management" },
         { "programmeCode": "19/000888/L6", "name": "Master of Arts in Translation Studies" },
         { "programmeCode": "19/001288/L6", "name": "Master of Cities and Governance", "tracks": [
@@ -321,7 +321,7 @@
           { "code": "23/000254/L6", "name": "Art and Design for Social Impact", "type": "specialism" }
         ] },
         { "programmeCode": "22/000158/L6", "name": "Master of Social Sciences in Applied Psychology", "tracks": [
-          { "code": "23/000260/L6", "name": "Counselling Psychology", "type": "specialism" }
+          { "code": "23/000260/L6", "name": "Counselling Psychology", "type": "Concentration", "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/programme-structure" }
         ] },
         { "programmeCode": "22/000916/L6", "name": "Master of Social Sciences in Comparative Public Administration", "tracks": [
           { "code": "24/000501/L6", "name": "Digital and Smart Governance", "type": "specialism" }

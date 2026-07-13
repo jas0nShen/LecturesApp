@@ -26,8 +26,8 @@ test('current mini-program passes automated release readiness checks', () => {
   assert.equal(result.metrics.offeringCount, 56);
   assert.equal(result.metrics.tpgSchoolCount, 8);
   assert.equal(result.metrics.tpgProgrammeCount, 448);
-  assert.equal(result.metrics.tpgProgrammeWithCoursesCount, 170);
-  assert.equal(result.metrics.tpgCourseCount, 3876);
+  assert.equal(result.metrics.tpgProgrammeWithCoursesCount, 174);
+  assert.equal(result.metrics.tpgCourseCount, 3938);
   assert.equal(result.metrics.ugSchoolCount, 8);
   assert.equal(result.metrics.ugProgrammeCount, 444);
   assert.equal(result.metrics.ugMajorCount, 689);

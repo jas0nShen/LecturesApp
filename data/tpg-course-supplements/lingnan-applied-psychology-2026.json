@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "LINGNAN",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "LINGNAN-TPG-DIR-22-000158-L6",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/programme-structure",
+      "ruleReviewStatus": "manual_review_required",
+      "trackSelectionOptional": true,
+      "tracks": [
+        {
+          "id": "LINGNAN-TPG-DIR-22-000158-L6-23-000260-L6",
+          "code": "23/000260/L6",
+          "name": "Counselling Psychology",
+          "type": "Concentration",
+          "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/programme-structure",
+          "lastVerifiedAt": "2026-07-11"
+        }
+      ],
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five Required Courses (15 credits).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/programme-structure",
+          "courses": [
+            { "code": "PSY501", "name": "Research Methods in Psychology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions" },
+            { "code": "PSY502", "name": "Cognitive Psychology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions" },
+            { "code": "PSY503", "name": "Lifespan Developmental Psychology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions" },
+            { "code": "PSY504", "name": "Personality Psychology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions" },
+            { "code": "PSY505", "name": "Social Psychology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Choose any five Elective Courses (15 credits). To declare the Counselling Psychology Concentration at graduation, all four marked counselling courses PSY611, PSY612, PSY613 and PSY614 must be included among the five electives. The concentration declaration requires manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/programme-structure",
+          "courses": [
+            { "code": "PSY611", "name": "Theories and Models in Counselling Psychology", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["LINGNAN-TPG-DIR-22-000158-L6-23-000260-L6"], "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions" },
+            { "code": "PSY612", "name": "Psychopathology", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["LINGNAN-TPG-DIR-22-000158-L6-23-000260-L6"], "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions" },
+            { "code": "PSY613", "name": "Principles of Psychological Assessment", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["LINGNAN-TPG-DIR-22-000158-L6-23-000260-L6"], "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions" },
+            { "code": "PSY614", "name": "Interventions and Professional Ethics in Counselling", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["LINGNAN-TPG-DIR-22-000158-L6-23-000260-L6"], "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions" },
+            { "code": "PSY617", "name": "Guided Study in Psychology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions" },
+            { "code": "PSY618", "name": "Personal Growth", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions" },
+            { "code": "PSY619", "name": "Educational Psychology: Theory and Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions" },
+            { "code": "PSY602", "name": "Human Relationship and Interpersonal Skills in Organisations", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions" },
+            { "code": "PSY604", "name": "Consumer Psychology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions" },
+            { "code": "PSY606", "name": "Applied Positive Psychology at Work", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions" },
+            { "code": "HAM508", "name": "Applied Health Psychology in Social Service Settings", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions" },
+            { "code": "HAM509", "name": "Sleep, Health, and Everyday Life", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions" },
+            { "code": "SAG501", "name": "Positive Gerontology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/psy/mssap/programme-overview/course-descriptions" }
+          ]
+        }
+      ]
+    }
+  ]
+}

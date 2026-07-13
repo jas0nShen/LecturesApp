@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "LINGNAN",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "LINGNAN-TPG-DIR-16-000107-L6",
+      "status": "blocked",
+      "sourceUrl": "https://www.ln.edu.hk/fin/mfin/programme/master-of-science-in-finance",
+      "statusNote": "The live official curriculum identifies seven Core Courses (all required) and an Elective pool from which any three are selected, but it does not publish per-course credits. Credits are not inferred from the 10-course completion pattern, so the course structure remains unavailable pending an official current credit table."
+    },
+    {
+      "programmeId": "LINGNAN-TPG-DIR-MASTER-OF-SCIENCE-IN-SMART-AGEING-AND-GERONTOLOG",
+      "status": "blocked",
+      "sourceUrl": "https://www.ln.edu.hk/sgs/sag/programme-overview",
+      "statusNote": "The live official Programme page states a nine-course, 30-credit structure and lists the LU and HKMU course titles, but it does not publish any course codes. The titles are not converted into invented codes, so the course structure remains unavailable pending an official coded curriculum."
+    },
+    {
+      "programmeId": "LINGNAN-TPG-DIR-21-001281-L6",
+      "status": "blocked",
+      "sourceUrl": "https://www.ln.edu.hk/sgs/ham/programme/programme-structure",
+      "statusNote": "The live official Programme Structure publishes a 21-credit Core group, one 3-credit Elective and a 6-credit Capstone Project, with every current course title, but it does not publish any course codes. The titles are not converted into invented codes, so the course structure remains unavailable pending an official coded curriculum."
+    },
+    {
+      "programmeId": "LINGNAN-TPG-DIR-19-000493-L6",
+      "status": "blocked",
+      "sourceUrl": "https://www.ln.edu.hk/sgs/mhsm/programme/programme-structure",
+      "statusNote": "The live official Programme Structure publishes six 3-credit Core Courses, any two 3-credit Electives and a 6-credit Capstone Project, with every current course title, but it does not publish any course codes. The titles are not converted into invented codes, so the course structure remains unavailable pending an official coded curriculum."
+    }
+  ]
+}
