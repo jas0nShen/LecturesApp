@@ -66,6 +66,35 @@ test('TPG directory refresh preserves verified course structures for stable Prog
   assert.deepEqual(imported.programmes[0].courseGroups, source.programmes[0].courseGroups);
 });
 
+test('TPG directory supplements preserve optional official Track metadata', () => {
+  const source = {
+    universities: [{ code: 'EDUHK', academicYear: '2026-27', sourceUrl: 'https://www.eduhk.hk/programmes' }],
+    programmes: []
+  };
+  const supplement = {
+    lastVerifiedAt: '2026-07-13',
+    universities: [{
+      code: 'EDUHK',
+      academicYear: '2026-27',
+      sourceUrl: 'https://www.eduhk.hk/programmes',
+      sourceLabel: 'Official',
+      programmes: [{
+        programmeCode: 'MATCIL',
+        name: 'Master of Arts in Teaching Chinese as an International Language',
+        sourceUrl: 'https://www.eduhk.hk/fhm/matcil/programme-structure',
+        trackSelectionOptional: true,
+        tracks: [{ code: 'IB-TEACHING', name: 'IB Teaching Strand', type: 'Teaching Strand' }]
+      }]
+    }]
+  };
+  const programme = applyDirectorySupplements(source, supplement).programmes[0];
+  assert.equal(programme.trackSelectionOptional, true);
+  assert.equal(programme.tracks[0].id, 'EDUHK-TPG-DIR-MATCIL-IB-TEACHING');
+  assert.equal(programme.tracks[0].name, 'IB Teaching Strand');
+  assert.equal(programme.tracks[0].type, 'Teaching Strand');
+  assert.equal(programme.tracks[0].sourceUrl, 'https://www.eduhk.hk/fhm/matcil/programme-structure');
+});
+
 test('field-label directory entries use name-independent stable IDs', () => {
   const source = {
     universities: [{ code: 'LINGNAN', academicYear: '2026-27', sourceUrl: 'https://ln.edu.hk' }],

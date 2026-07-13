@@ -9,8 +9,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 146);
-  assert.equal(coverage.courseCount, 3548);
+  assert.equal(coverage.programmeWithCoursesCount, 151);
+  assert.equal(coverage.courseCount, 3620);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -29,8 +29,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 146);
-  assert.equal(rows.length, 146);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 151);
+  assert.equal(rows.length, 151);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
@@ -802,6 +802,151 @@ test('EdUHK Global Histories of Education keeps the 6-credit Research Project op
   assert.equal(tpgService.getProgrammeCourse(programme.id, 'PFS6062').credits, 3);
   assert.match(electives.ruleText, /Research Project is optional/);
   assert.match(electives.ruleText, /Not all electives are offered every year/);
+});
+
+test('EdUHK MATCIL preserves background-dependent requirements and the optional IB Teaching Strand', () => {
+  const programme = tpgService.getProgramme('EDUHK-TPG-DIR-MATCIL');
+  const track = tpgService.listTracks(programme)[0];
+  const core = programme.courseGroups.find((group) => group.id === 'core-courses');
+  const electives = programme.courseGroups.find((group) => group.id === 'elective-courses');
+  const courses = tpgService.flattenCourses(programme);
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.creditUnit, 'credit points');
+  assert.equal(programme.trackSelectionOptional, true);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(track.name, 'IB Teaching Strand');
+  assert.equal(track.type, 'Teaching Strand');
+  assert.deepEqual([core.creditsMin, core.creditsMax, core.courses.length], [12, 15, 5]);
+  assert.deepEqual([electives.creditsMin, electives.creditsMax, electives.courses.length], [15, 18, 13]);
+  assert.equal(courses.length, 18);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 18);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'CHI6608').credits, 6);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'FEX6118').credits, 6);
+  assert.deepEqual(tpgService.getProgrammeCourse(programme.id, 'CHI6709').countsTowardTrackIds, [track.id]);
+  assert.match(core.ruleText, /非中文主修背景学生另须修读 CHI6546/);
+  assert.match(electives.ruleText, /IB Teaching Strand 须修读 CHI6709/);
+  assert.match(electives.ruleText, /不得视为必修/);
+});
+
+test('EdUHK Music Education keeps Independent Project as a required 3-credit Core Course', () => {
+  const programme = tpgService.getProgramme('EDUHK-TPG-DIR-MA-ME');
+  const core = programme.courseGroups.find((group) => group.id === 'core-courses');
+  const electives = programme.courseGroups.find((group) => group.id === 'elective-courses');
+  const courses = tpgService.flattenCourses(programme);
+
+  assert.equal(programme.creditsRequired, 24);
+  assert.equal(programme.creditUnit, 'credit points');
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.deepEqual([core.creditsRequired, core.coursesRequired, core.courses.length], [9, 3, 3]);
+  assert.deepEqual([electives.creditsRequired, electives.coursesRequired, electives.courses.length], [15, 5, 10]);
+  assert.equal(courses.length, 13);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 13);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'MUS6333').credits, 3);
+  assert.equal(core.courses.some((course) => course.code === 'MUS6333'), true);
+  assert.equal(electives.courses.some((course) => course.code === 'MUS6333'), false);
+  assert.match(core.ruleText, /required Core Course worth 3 credit points/);
+});
+
+test('EdUHK Chinese Studies remains blocked while the current structure omits every course code', () => {
+  const programme = tpgService.getProgramme('EDUHK-TPG-DIR-MACSLE');
+
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal(programme.dataLevel, 'programme');
+  assert.deepEqual(programme.courseGroups || [], []);
+  assert.match(programme.courseStatusNote, /does not publish a course code for any Core or Elective Course/);
+  assert.match(programme.courseStatusNote, /do not infer codes from titles/);
+});
+
+test('EdUHK Intercultural Communication and Translation preserves the optional Dissertation route', () => {
+  const programme = tpgService.getProgramme('EDUHK-TPG-DIR-MAICT');
+  const core = programme.courseGroups.find((group) => group.id === 'core-courses');
+  const electives = programme.courseGroups.find((group) => group.id === 'elective-or-dissertation');
+  const courses = tpgService.flattenCourses(programme);
+
+  assert.equal(programme.creditsRequired, 24);
+  assert.equal(programme.creditUnit, 'credit points');
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.deepEqual([core.creditsRequired, core.coursesRequired, core.courses.length], [12, 4, 4]);
+  assert.deepEqual([electives.creditsRequired, electives.coursesRequired, electives.courses.length], [12, undefined, 10]);
+  assert.equal(courses.length, 14);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 14);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'LIN6069').credits, 6);
+  assert.match(electives.ruleText, /Dissertation is optional/);
+  assert.match(electives.ruleText, /grade B\+ or above in LIN6062/);
+  assert.match(electives.ruleText, /Not all Elective Courses are offered every year/);
+});
+
+test('EdUHK Mathematics and Pedagogy preserves both 12-credit domains and their bounded choices', () => {
+  const programme = tpgService.getProgramme('EDUHK-TPG-DIR-MA-MP');
+  const groups = Object.fromEntries(programme.courseGroups.map((group) => [group.id, group]));
+  const courses = tpgService.flattenCourses(programme);
+
+  assert.equal(programme.creditsRequired, 24);
+  assert.equal(programme.creditUnit, 'credit points');
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.deepEqual(
+    [groups['mathematical-studies-core'].creditsRequired, groups['mathematical-studies-core'].coursesRequired, groups['mathematical-studies-core'].courses.length],
+    [9, 3, 3]
+  );
+  assert.deepEqual(
+    [groups['mathematical-studies-elective'].creditsRequired, groups['mathematical-studies-elective'].coursesRequired, groups['mathematical-studies-elective'].courses.length],
+    [3, 1, 3]
+  );
+  assert.deepEqual(
+    [groups['pedagogy-in-mathematics-core'].creditsRequired, groups['pedagogy-in-mathematics-core'].coursesRequired, groups['pedagogy-in-mathematics-core'].courses.length],
+    [6, 2, 2]
+  );
+  assert.deepEqual(
+    [groups['pedagogy-in-mathematics-elective'].creditsRequired, groups['pedagogy-in-mathematics-elective'].coursesRequired, groups['pedagogy-in-mathematics-elective'].courses.length],
+    [6, 2, 5]
+  );
+  assert.equal(courses.length, 13);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 13);
+  assert.equal(courses.every((course) => course.credits === 3), true);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'MTH6198').name, 'Mathematical Principles for Machine Learning and Quantum Computing');
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'INT6065').name, 'Artificial Intelligence in Education');
+});
+
+test('EdUHK AI and Educational Technology preserves the complete five-plus-three course rule', () => {
+  const programme = tpgService.getProgramme('EDUHK-TPG-DIR-MSC-AI-EDTECH');
+  const core = programme.courseGroups.find((group) => group.id === 'core-courses');
+  const electives = programme.courseGroups.find((group) => group.id === 'elective-courses');
+  const courses = tpgService.flattenCourses(programme);
+
+  assert.equal(programme.creditsRequired, 24);
+  assert.equal(programme.creditUnit, 'credit points');
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.deepEqual([core.creditsRequired, core.coursesRequired, core.courses.length], [15, 5, 5]);
+  assert.deepEqual([electives.creditsRequired, electives.coursesRequired, electives.courses.length], [9, 3, 9]);
+  assert.equal(courses.length, 14);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 14);
+  assert.equal(courses.every((course) => course.credits === 3), true);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'INT6071').name, 'Independent Project');
+  assert.equal(core.courses.some((course) => course.code === 'INT6071'), false);
+  assert.match(core.ruleText, /semester distribution differs by study mode/);
+});
+
+test('EdUHK Personal Finance Education remains blocked on the official Internship credit conflict', () => {
+  const programme = tpgService.getProgramme('EDUHK-TPG-DIR-MA-PFE');
+
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal(programme.dataLevel, 'programme');
+  assert.deepEqual(programme.courseGroups || [], []);
+  assert.match(programme.courseStatusNote, /BUS6046.*6 credit points/);
+  assert.match(programme.courseStatusNote, /Publishing either value would contradict another current official source/);
+  assert.match(programme.courseStatusNote, /do not force BUS6046 into the 3-credit elective rule/);
+});
+
+test('EdUHK STEM Education remains blocked rather than inferring its omitted course codes', () => {
+  const programme = tpgService.getProgramme('EDUHK-TPG-DIR-MA-STEM-ED');
+
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal(programme.dataLevel, 'programme');
+  assert.deepEqual(programme.courseGroups || [], []);
+  assert.match(programme.courseStatusNote, /publish every current title and credit value but omit the course codes/);
+  assert.match(programme.courseStatusNote, /only a subset of codes/);
+  assert.match(programme.courseStatusNote, /do not infer the missing codes from numbering patterns/);
 });
 
 test('EdUHK future-intake programmes retain their Programme-level academic year', () => {

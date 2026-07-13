@@ -123,6 +123,498 @@ module.exports = [
     ]
   },
   {
+    "id": "EDUHK-TPG-DIR-MAICT",
+    "courseGroups": [
+      {
+        "id": "core-courses",
+        "name": "Core Courses",
+        "type": "core",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Complete all four Core Courses (12 credit points).",
+        "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-intercultural-communication-and-translation-maict/programme-information/maict-courses",
+        "courses": [
+          {
+            "code": "LIN6062",
+            "name": "Methods for Language and Communication Research",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-intercultural-communication-and-translation-maict/programme-information/maict-courses"
+          },
+          {
+            "code": "LIN6066",
+            "name": "Technology-Enhanced Translation for Professional Communication",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-intercultural-communication-and-translation-maict/programme-information/maict-courses"
+          },
+          {
+            "code": "LIN6077",
+            "name": "Linguistics and Intercultural Communication",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-intercultural-communication-and-translation-maict/programme-information/maict-courses"
+          },
+          {
+            "code": "LIN6078",
+            "name": "Multilingual Societies in the Digital Age",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-intercultural-communication-and-translation-maict/programme-information/maict-courses"
+          }
+        ]
+      },
+      {
+        "id": "elective-or-dissertation",
+        "name": "Elective Courses / Dissertation",
+        "type": "elective_with_optional_dissertation",
+        "creditsRequired": 12,
+        "ruleText": "Complete four 3-credit Elective Courses, or two 3-credit Elective Courses plus the 6-credit LIN6069 Master's Dissertation. The Dissertation is optional and requires grade B+ or above in LIN6062. Not all Elective Courses are offered every year, and the course list is subject to change; the alternative path requires manual audit review.",
+        "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-intercultural-communication-and-translation-maict/programme-information/maict-courses",
+        "courses": [
+          {
+            "code": "ENG6211",
+            "name": "Sociolinguistics",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-intercultural-communication-and-translation-maict/programme-information/maict-courses"
+          },
+          {
+            "code": "ENG6213",
+            "name": "Written and Spoken Discourse",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-intercultural-communication-and-translation-maict/programme-information/maict-courses"
+          },
+          {
+            "code": "ENG6237",
+            "name": "English in the Global Context",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-intercultural-communication-and-translation-maict/programme-information/maict-courses"
+          },
+          {
+            "code": "LIN6052",
+            "name": "Digital Technology for Language Studies",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-intercultural-communication-and-translation-maict/programme-information/maict-courses"
+          },
+          {
+            "code": "LIN6060",
+            "name": "Approaches to Foreign Language Learning",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-intercultural-communication-and-translation-maict/programme-information/maict-courses"
+          },
+          {
+            "code": "LIN6063",
+            "name": "Translation for Digital Media and Entertainment",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-intercultural-communication-and-translation-maict/programme-information/maict-courses"
+          },
+          {
+            "code": "LIN6064",
+            "name": "Multimodal Communication",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-intercultural-communication-and-translation-maict/programme-information/maict-courses"
+          },
+          {
+            "code": "LIN6067",
+            "name": "AI and Computer-assisted Approaches to Translation",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-intercultural-communication-and-translation-maict/programme-information/maict-courses"
+          },
+          {
+            "code": "LIN6068",
+            "name": "Conflict, Culture, and Negotiation",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-intercultural-communication-and-translation-maict/programme-information/maict-courses"
+          },
+          {
+            "code": "LIN6069",
+            "name": "Master's Dissertation",
+            "credits": 6,
+            "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-intercultural-communication-and-translation-maict/programme-information/maict-courses"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EDUHK-TPG-DIR-MA-MP",
+    "courseGroups": [
+      {
+        "id": "mathematical-studies-core",
+        "name": "Mathematical Studies — Core Courses",
+        "type": "core",
+        "creditsRequired": 9,
+        "coursesRequired": 3,
+        "ruleText": "Complete all three Mathematical Studies Core Courses (9 credit points).",
+        "courses": [
+          {
+            "code": "MTH6129",
+            "name": "Foundations of Geometry",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/mit/en/mamp"
+          },
+          {
+            "code": "MTH6130",
+            "name": "Probability and Statistics",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/mit/en/mamp"
+          },
+          {
+            "code": "MTH6128",
+            "name": "Algebra and Number Theory",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/mit/en/mamp"
+          }
+        ],
+        "sourceUrl": "https://www.eduhk.hk/mit/en/mamp"
+      },
+      {
+        "id": "mathematical-studies-elective",
+        "name": "Mathematical Studies — Elective Courses",
+        "type": "elective",
+        "creditsRequired": 3,
+        "coursesRequired": 1,
+        "ruleText": "Choose one of the three Mathematical Studies Elective Courses (3 credit points).",
+        "courses": [
+          {
+            "code": "MTH6131",
+            "name": "Calculus and Mathematical Modelling",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/mit/en/mamp"
+          },
+          {
+            "code": "MTH6132",
+            "name": "Combinatorics and Graph Theory",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/mit/en/mamp"
+          },
+          {
+            "code": "MTH6198",
+            "name": "Mathematical Principles for Machine Learning and Quantum Computing",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/mit/en/mamp"
+          }
+        ],
+        "sourceUrl": "https://www.eduhk.hk/mit/en/mamp"
+      },
+      {
+        "id": "pedagogy-in-mathematics-core",
+        "name": "Pedagogy in Mathematics — Core Courses",
+        "type": "core",
+        "creditsRequired": 6,
+        "coursesRequired": 2,
+        "ruleText": "Complete both Pedagogy in Mathematics Core Courses (6 credit points).",
+        "courses": [
+          {
+            "code": "MTH6133",
+            "name": "Instructional Design in Mathematics",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/mit/en/mamp"
+          },
+          {
+            "code": "MTH6134",
+            "name": "Technology for Mathematics Teaching: An Inquiry Approach",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/mit/en/mamp"
+          }
+        ],
+        "sourceUrl": "https://www.eduhk.hk/mit/en/mamp"
+      },
+      {
+        "id": "pedagogy-in-mathematics-elective",
+        "name": "Pedagogy in Mathematics — Elective Courses",
+        "type": "elective",
+        "creditsRequired": 6,
+        "coursesRequired": 2,
+        "ruleText": "Choose two of the five Pedagogy in Mathematics Elective Courses (6 credit points).",
+        "courses": [
+          {
+            "code": "INT6065",
+            "name": "Artificial Intelligence in Education",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/mit/en/mamp"
+          },
+          {
+            "code": "MTH6116",
+            "name": "Mathematical Thinking and Assessment",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/mit/en/mamp"
+          },
+          {
+            "code": "MTH6118",
+            "name": "History and Pedagogy of Mathematics",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/mit/en/mamp"
+          },
+          {
+            "code": "MTH6184",
+            "name": "Data Mining in STEM Education",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/mit/en/mamp"
+          },
+          {
+            "code": "MTH6197",
+            "name": "Researching Pedagogies in Mathematics Education",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/mit/en/mamp"
+          }
+        ],
+        "sourceUrl": "https://www.eduhk.hk/mit/en/mamp"
+      }
+    ]
+  },
+  {
+    "id": "EDUHK-TPG-DIR-MA-ME",
+    "courseGroups": [
+      {
+        "id": "core-courses",
+        "name": "Core Courses",
+        "type": "core",
+        "creditsRequired": 9,
+        "coursesRequired": 3,
+        "ruleText": "Complete all three Core Courses (9 credit points). MUS6333 Independent Project is a required Core Course worth 3 credit points.",
+        "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-music-education-mame/programme-information/mame-courses",
+        "courses": [
+          {
+            "code": "MUS6235",
+            "name": "Research Methods in Music",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-music-education-mame/programme-information/mame-courses"
+          },
+          {
+            "code": "MUS6288",
+            "name": "Socio-Psychological Perspectives in Music & the Arts",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-music-education-mame/programme-information/mame-courses"
+          },
+          {
+            "code": "MUS6333",
+            "name": "Independent Project",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-music-education-mame/programme-information/mame-courses"
+          }
+        ]
+      },
+      {
+        "id": "elective-courses",
+        "name": "Elective Courses",
+        "type": "elective",
+        "creditsRequired": 15,
+        "coursesRequired": 5,
+        "ruleText": "Choose any five Elective Courses (15 credit points). Course availability is subject to the Programme's current offering schedule.",
+        "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-music-education-mame/programme-information/mame-courses",
+        "courses": [
+          {
+            "code": "MUS6331",
+            "name": "Techniques & Styles in Contemporary Music",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-music-education-mame/programme-information/mame-courses"
+          },
+          {
+            "code": "MUS6344",
+            "name": "Performance Psychology and Research Issues",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-music-education-mame/programme-information/mame-courses"
+          },
+          {
+            "code": "MUS6247",
+            "name": "Conducting and Performance Leadership",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-music-education-mame/programme-information/mame-courses"
+          },
+          {
+            "code": "MUS6153",
+            "name": "Contemporary Approaches to Music Teaching and Learning",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-music-education-mame/programme-information/mame-courses"
+          },
+          {
+            "code": "MUS5221",
+            "name": "Music Performance Teaching and Learning",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-music-education-mame/programme-information/mame-courses"
+          },
+          {
+            "code": "MUS6334",
+            "name": "Pedagogies of Improvisation in Music Learning",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-music-education-mame/programme-information/mame-courses"
+          },
+          {
+            "code": "MUS6237",
+            "name": "Composition Pedagogy",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-music-education-mame/programme-information/mame-courses"
+          },
+          {
+            "code": "MUS6290",
+            "name": "Arts Management in Hong Kong",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-music-education-mame/programme-information/mame-courses"
+          },
+          {
+            "code": "MUS6343",
+            "name": "Technology in Music Teaching and Learning",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-music-education-mame/programme-information/mame-courses"
+          },
+          {
+            "code": "CAC6028",
+            "name": "Human Technology Interactions & Digital Media Literacy",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-music-education-mame/programme-information/mame-courses"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EDUHK-TPG-DIR-MATCIL",
+    "courseGroups": [
+      {
+        "id": "core-courses",
+        "name": "核心科目",
+        "type": "core_with_background_requirement",
+        "creditsMin": 12,
+        "creditsMax": 15,
+        "ruleText": "中文主修背景学生修读 CHI6493、CHI6497、CHI6498、CHI6499，共 12 学分；非中文主修背景学生另须修读 CHI6546，共 15 学分。是否属于中文主修背景须由课程团队确认。IB Teaching Strand 学生同样须完成四门共同核心科目；非中文主修背景学生另须修读 CHI6546。",
+        "sourceUrl": "https://www.eduhk.hk/fhm/sc/postgraduate-programme/master-of-arts-in-teaching-chinese-as-an-international-language-matcil/programme-structure",
+        "courses": [
+          {
+            "code": "CHI6493",
+            "name": "汉语课程、教材和教学设计",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/sc/postgraduate-programme/master-of-arts-in-teaching-chinese-as-an-international-language-matcil/programme-structure"
+          },
+          {
+            "code": "CHI6497",
+            "name": "国际汉语教学法：语音教学、听说教学",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/sc/postgraduate-programme/master-of-arts-in-teaching-chinese-as-an-international-language-matcil/programme-structure"
+          },
+          {
+            "code": "CHI6498",
+            "name": "国际汉语教学法：识字教学、读写教学",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/sc/postgraduate-programme/master-of-arts-in-teaching-chinese-as-an-international-language-matcil/programme-structure"
+          },
+          {
+            "code": "CHI6499",
+            "name": "第二语言习得与汉语学习",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/sc/postgraduate-programme/master-of-arts-in-teaching-chinese-as-an-international-language-matcil/programme-structure"
+          },
+          {
+            "code": "CHI6546",
+            "name": "现代汉语专题",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/sc/postgraduate-programme/master-of-arts-in-teaching-chinese-as-an-international-language-matcil/programme-structure"
+          }
+        ]
+      },
+      {
+        "id": "elective-courses",
+        "name": "选修科目、学校体验及专题研习",
+        "type": "elective_with_optional_field_experience_and_project",
+        "creditsMin": 15,
+        "creditsMax": 18,
+        "ruleText": "中文主修背景学生须修读 18 学分选修科目；非中文主修背景学生须修读 15 学分。CHI6608 专题研习及 FEX6118 学校体验各为 6 学分，均属有条件的选项，不得视为必修。IB Teaching Strand 须修读 CHI6709（3 学分）及 FEX6118（6 学分），并从 CHI6527、CHI6609、CHI6680 中至少选两门，再从课程选修池选一门，共 30 学分；Strand 设名额、测试或面试及实习安排条件，须人工核对。课程不保证每学年全部开设。",
+        "sourceUrl": "https://www.eduhk.hk/fhm/sc/postgraduate-programme/master-of-arts-in-teaching-chinese-as-an-international-language-matcil/field-experience-and-academic-project",
+        "courses": [
+          {
+            "code": "CHI6494",
+            "name": "语篇分析",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/sc/postgraduate-programme/master-of-arts-in-teaching-chinese-as-an-international-language-matcil/field-experience-and-academic-project"
+          },
+          {
+            "code": "CHI6503",
+            "name": "汉语言文化专题",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/sc/postgraduate-programme/master-of-arts-in-teaching-chinese-as-an-international-language-matcil/field-experience-and-academic-project"
+          },
+          {
+            "code": "CHI6505",
+            "name": "语言教学理论与外语教学法专题",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/sc/postgraduate-programme/master-of-arts-in-teaching-chinese-as-an-international-language-matcil/field-experience-and-academic-project"
+          },
+          {
+            "code": "CHI6527",
+            "name": "语文教学与资讯科技素养",
+            "credits": 3,
+            "countsTowardTrackIds": [
+              "EDUHK-TPG-DIR-MATCIL-IB-TEACHING"
+            ],
+            "sourceUrl": "https://www.eduhk.hk/fhm/sc/postgraduate-programme/master-of-arts-in-teaching-chinese-as-an-international-language-matcil/field-experience-and-academic-project"
+          },
+          {
+            "code": "CHI6608",
+            "name": "专题研习",
+            "credits": 6,
+            "sourceUrl": "https://www.eduhk.hk/fhm/sc/postgraduate-programme/master-of-arts-in-teaching-chinese-as-an-international-language-matcil/field-experience-and-academic-project"
+          },
+          {
+            "code": "CHI6609",
+            "name": "第二语言教学研究方法",
+            "credits": 3,
+            "countsTowardTrackIds": [
+              "EDUHK-TPG-DIR-MATCIL-IB-TEACHING"
+            ],
+            "sourceUrl": "https://www.eduhk.hk/fhm/sc/postgraduate-programme/master-of-arts-in-teaching-chinese-as-an-international-language-matcil/field-experience-and-academic-project"
+          },
+          {
+            "code": "CHI6680",
+            "name": "跨文化交际",
+            "credits": 3,
+            "countsTowardTrackIds": [
+              "EDUHK-TPG-DIR-MATCIL-IB-TEACHING"
+            ],
+            "sourceUrl": "https://www.eduhk.hk/fhm/sc/postgraduate-programme/master-of-arts-in-teaching-chinese-as-an-international-language-matcil/field-experience-and-academic-project"
+          },
+          {
+            "code": "CHI6709",
+            "name": "Diploma Programme (DP) of International Baccalaureate (IB) and Teaching Chinese as a Second Language",
+            "credits": 3,
+            "countsTowardTrackIds": [
+              "EDUHK-TPG-DIR-MATCIL-IB-TEACHING"
+            ],
+            "sourceUrl": "https://www.eduhk.hk/fhm/sc/postgraduate-programme/master-of-arts-in-teaching-chinese-as-an-international-language-matcil/field-experience-and-academic-project"
+          },
+          {
+            "code": "CHI6930",
+            "name": "中文教学与情意关怀",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/sc/postgraduate-programme/master-of-arts-in-teaching-chinese-as-an-international-language-matcil/field-experience-and-academic-project"
+          },
+          {
+            "code": "CHI6955",
+            "name": "国际教育视角下的中国语言和文学教学",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/sc/postgraduate-programme/master-of-arts-in-teaching-chinese-as-an-international-language-matcil/field-experience-and-academic-project"
+          },
+          {
+            "code": "FEX6118",
+            "name": "学校体验",
+            "credits": 6,
+            "countsTowardTrackIds": [
+              "EDUHK-TPG-DIR-MATCIL-IB-TEACHING"
+            ],
+            "sourceUrl": "https://www.eduhk.hk/fhm/sc/postgraduate-programme/master-of-arts-in-teaching-chinese-as-an-international-language-matcil/field-experience-and-academic-project"
+          },
+          {
+            "code": "LIT6031",
+            "name": "戏剧文学与语言艺术",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/sc/postgraduate-programme/master-of-arts-in-teaching-chinese-as-an-international-language-matcil/field-experience-and-academic-project"
+          },
+          {
+            "code": "LIT6032",
+            "name": "中国文学与影视改编",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/fhm/sc/postgraduate-programme/master-of-arts-in-teaching-chinese-as-an-international-language-matcil/field-experience-and-academic-project"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "EDUHK-TPG-DIR-MATESOL",
     "courseGroups": [
       {
@@ -240,6 +732,117 @@ module.exports = [
             "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-teaching-english-to-speakers-of-other-languages-matesol/programme-information/matesol-courses"
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": "EDUHK-TPG-DIR-MSC-AI-EDTECH",
+    "courseGroups": [
+      {
+        "id": "core-courses",
+        "name": "Core Courses",
+        "type": "core",
+        "creditsRequired": 15,
+        "coursesRequired": 5,
+        "ruleText": "Complete all five Core Courses (15 credit points). The semester distribution differs by study mode, but the award requirement is the same.",
+        "courses": [
+          {
+            "code": "INT6065",
+            "name": "Artificial Intelligence in Education",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/mit/en/mscait"
+          },
+          {
+            "code": "INT6066",
+            "name": "Design of Innovative Learning Environments with Technology",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/mit/en/mscait"
+          },
+          {
+            "code": "INT6067",
+            "name": "Research Methods and Inquiry",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/mit/en/mscait"
+          },
+          {
+            "code": "INT6068",
+            "name": "Neural Networks and Deep Learning",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/mit/en/mscait"
+          },
+          {
+            "code": "INT6064",
+            "name": "Coding and Computational Thinking",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/mit/en/mscait"
+          }
+        ],
+        "sourceUrl": "https://www.eduhk.hk/mit/en/mscait"
+      },
+      {
+        "id": "elective-courses",
+        "name": "Elective Courses",
+        "type": "elective",
+        "creditsRequired": 9,
+        "coursesRequired": 3,
+        "ruleText": "Choose three of the nine Elective Courses (9 credit points). Course offerings may change at the University's discretion.",
+        "courses": [
+          {
+            "code": "MTH6184",
+            "name": "Data Mining in STEM Education",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/mit/en/mscait"
+          },
+          {
+            "code": "INT6069",
+            "name": "Internet of Things",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/mit/en/mscait"
+          },
+          {
+            "code": "INT6071",
+            "name": "Independent Project",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/mit/en/mscait"
+          },
+          {
+            "code": "INT6110",
+            "name": "Creative Multimedia and Design",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/mit/en/mscait"
+          },
+          {
+            "code": "INT6111",
+            "name": "Metaverse in Education and Society",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/mit/en/mscait"
+          },
+          {
+            "code": "INT6112",
+            "name": "Mobile Applications Design and Development",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/mit/en/mscait"
+          },
+          {
+            "code": "INT6127",
+            "name": "Applied Programming Lab with Python",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/mit/en/mscait"
+          },
+          {
+            "code": "INT6128",
+            "name": "Cyber Security and the Application in Education",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/mit/en/mscait"
+          },
+          {
+            "code": "MTH6130",
+            "name": "Probability and Statistics",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/mit/en/mscait"
+          }
+        ],
+        "sourceUrl": "https://www.eduhk.hk/mit/en/mscait"
       }
     ]
   }

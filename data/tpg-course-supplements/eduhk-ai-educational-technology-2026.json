@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "EDUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "EDUHK-TPG-DIR-MSC-AI-EDTECH",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "credit points",
+      "sourceUrl": "https://www.eduhk.hk/mit/en/mscait",
+      "ruleReviewStatus": "verified",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five Core Courses (15 credit points). The semester distribution differs by study mode, but the award requirement is the same.",
+          "courses": [
+            { "code": "INT6065", "name": "Artificial Intelligence in Education", "credits": 3 },
+            { "code": "INT6066", "name": "Design of Innovative Learning Environments with Technology", "credits": 3 },
+            { "code": "INT6067", "name": "Research Methods and Inquiry", "credits": 3 },
+            { "code": "INT6068", "name": "Neural Networks and Deep Learning", "credits": 3 },
+            { "code": "INT6064", "name": "Coding and Computational Thinking", "credits": 3 }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Choose three of the nine Elective Courses (9 credit points). Course offerings may change at the University's discretion.",
+          "courses": [
+            { "code": "MTH6184", "name": "Data Mining in STEM Education", "credits": 3 },
+            { "code": "INT6069", "name": "Internet of Things", "credits": 3 },
+            { "code": "INT6071", "name": "Independent Project", "credits": 3 },
+            { "code": "INT6110", "name": "Creative Multimedia and Design", "credits": 3 },
+            { "code": "INT6111", "name": "Metaverse in Education and Society", "credits": 3 },
+            { "code": "INT6112", "name": "Mobile Applications Design and Development", "credits": 3 },
+            { "code": "INT6127", "name": "Applied Programming Lab with Python", "credits": 3 },
+            { "code": "INT6128", "name": "Cyber Security and the Application in Education", "credits": 3 },
+            { "code": "MTH6130", "name": "Probability and Statistics", "credits": 3 }
+          ]
+        }
+      ]
+    }
+  ]
+}

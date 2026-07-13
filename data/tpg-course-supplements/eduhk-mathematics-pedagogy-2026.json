@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "EDUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "EDUHK-TPG-DIR-MA-MP",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "credit points",
+      "sourceUrl": "https://www.eduhk.hk/mit/en/mamp",
+      "ruleReviewStatus": "verified",
+      "courseGroups": [
+        {
+          "id": "mathematical-studies-core",
+          "name": "Mathematical Studies — Core Courses",
+          "type": "core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete all three Mathematical Studies Core Courses (9 credit points).",
+          "courses": [
+            { "code": "MTH6129", "name": "Foundations of Geometry", "credits": 3 },
+            { "code": "MTH6130", "name": "Probability and Statistics", "credits": 3 },
+            { "code": "MTH6128", "name": "Algebra and Number Theory", "credits": 3 }
+          ]
+        },
+        {
+          "id": "mathematical-studies-elective",
+          "name": "Mathematical Studies — Elective Courses",
+          "type": "elective",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Choose one of the three Mathematical Studies Elective Courses (3 credit points).",
+          "courses": [
+            { "code": "MTH6131", "name": "Calculus and Mathematical Modelling", "credits": 3 },
+            { "code": "MTH6132", "name": "Combinatorics and Graph Theory", "credits": 3 },
+            { "code": "MTH6198", "name": "Mathematical Principles for Machine Learning and Quantum Computing", "credits": 3 }
+          ]
+        },
+        {
+          "id": "pedagogy-in-mathematics-core",
+          "name": "Pedagogy in Mathematics — Core Courses",
+          "type": "core",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Complete both Pedagogy in Mathematics Core Courses (6 credit points).",
+          "courses": [
+            { "code": "MTH6133", "name": "Instructional Design in Mathematics", "credits": 3 },
+            { "code": "MTH6134", "name": "Technology for Mathematics Teaching: An Inquiry Approach", "credits": 3 }
+          ]
+        },
+        {
+          "id": "pedagogy-in-mathematics-elective",
+          "name": "Pedagogy in Mathematics — Elective Courses",
+          "type": "elective",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Choose two of the five Pedagogy in Mathematics Elective Courses (6 credit points).",
+          "courses": [
+            { "code": "INT6065", "name": "Artificial Intelligence in Education", "credits": 3 },
+            { "code": "MTH6116", "name": "Mathematical Thinking and Assessment", "credits": 3 },
+            { "code": "MTH6118", "name": "History and Pedagogy of Mathematics", "credits": 3 },
+            { "code": "MTH6184", "name": "Data Mining in STEM Education", "credits": 3 },
+            { "code": "MTH6197", "name": "Researching Pedagogies in Mathematics Education", "credits": 3 }
+          ]
+        }
+      ]
+    }
+  ]
+}

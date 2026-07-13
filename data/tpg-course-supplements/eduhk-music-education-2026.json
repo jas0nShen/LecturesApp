@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "EDUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "EDUHK-TPG-DIR-MA-ME",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "credit points",
+      "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-music-education-mame/programme-information/mame-programme-structure",
+      "ruleReviewStatus": "verified",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete all three Core Courses (9 credit points). MUS6333 Independent Project is a required Core Course worth 3 credit points.",
+          "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-music-education-mame/programme-information/mame-courses",
+          "courses": [
+            { "code": "MUS6235", "name": "Research Methods in Music", "credits": 3 },
+            { "code": "MUS6288", "name": "Socio-Psychological Perspectives in Music & the Arts", "credits": 3 },
+            { "code": "MUS6333", "name": "Independent Project", "credits": 3 }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Choose any five Elective Courses (15 credit points). Course availability is subject to the Programme's current offering schedule.",
+          "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-music-education-mame/programme-information/mame-courses",
+          "courses": [
+            { "code": "MUS6331", "name": "Techniques & Styles in Contemporary Music", "credits": 3 },
+            { "code": "MUS6344", "name": "Performance Psychology and Research Issues", "credits": 3 },
+            { "code": "MUS6247", "name": "Conducting and Performance Leadership", "credits": 3 },
+            { "code": "MUS6153", "name": "Contemporary Approaches to Music Teaching and Learning", "credits": 3 },
+            { "code": "MUS5221", "name": "Music Performance Teaching and Learning", "credits": 3 },
+            { "code": "MUS6334", "name": "Pedagogies of Improvisation in Music Learning", "credits": 3 },
+            { "code": "MUS6237", "name": "Composition Pedagogy", "credits": 3 },
+            { "code": "MUS6290", "name": "Arts Management in Hong Kong", "credits": 3 },
+            { "code": "MUS6343", "name": "Technology in Music Teaching and Learning", "credits": 3 },
+            { "code": "CAC6028", "name": "Human Technology Interactions & Digital Media Literacy", "credits": 3 }
+          ]
+        }
+      ]
+    }
+  ]
+}

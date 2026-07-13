@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "EDUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "EDUHK-TPG-DIR-MATCIL",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit points",
+      "sourceUrl": "https://www.eduhk.hk/fhm/sc/postgraduate-programme/master-of-arts-in-teaching-chinese-as-an-international-language-matcil/programme-structure",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "核心科目",
+          "type": "core_with_background_requirement",
+          "creditsMin": 12,
+          "creditsMax": 15,
+          "ruleText": "中文主修背景学生修读 CHI6493、CHI6497、CHI6498、CHI6499，共 12 学分；非中文主修背景学生另须修读 CHI6546，共 15 学分。是否属于中文主修背景须由课程团队确认。IB Teaching Strand 学生同样须完成四门共同核心科目；非中文主修背景学生另须修读 CHI6546。",
+          "sourceUrl": "https://www.eduhk.hk/fhm/sc/postgraduate-programme/master-of-arts-in-teaching-chinese-as-an-international-language-matcil/programme-structure",
+          "courses": [
+            { "code": "CHI6493", "name": "汉语课程、教材和教学设计", "credits": 3 },
+            { "code": "CHI6497", "name": "国际汉语教学法：语音教学、听说教学", "credits": 3 },
+            { "code": "CHI6498", "name": "国际汉语教学法：识字教学、读写教学", "credits": 3 },
+            { "code": "CHI6499", "name": "第二语言习得与汉语学习", "credits": 3 },
+            { "code": "CHI6546", "name": "现代汉语专题", "credits": 3 }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "选修科目、学校体验及专题研习",
+          "type": "elective_with_optional_field_experience_and_project",
+          "creditsMin": 15,
+          "creditsMax": 18,
+          "ruleText": "中文主修背景学生须修读 18 学分选修科目；非中文主修背景学生须修读 15 学分。CHI6608 专题研习及 FEX6118 学校体验各为 6 学分，均属有条件的选项，不得视为必修。IB Teaching Strand 须修读 CHI6709（3 学分）及 FEX6118（6 学分），并从 CHI6527、CHI6609、CHI6680 中至少选两门，再从课程选修池选一门，共 30 学分；Strand 设名额、测试或面试及实习安排条件，须人工核对。课程不保证每学年全部开设。",
+          "sourceUrl": "https://www.eduhk.hk/fhm/sc/postgraduate-programme/master-of-arts-in-teaching-chinese-as-an-international-language-matcil/field-experience-and-academic-project",
+          "courses": [
+            { "code": "CHI6494", "name": "语篇分析", "credits": 3 },
+            { "code": "CHI6503", "name": "汉语言文化专题", "credits": 3 },
+            { "code": "CHI6505", "name": "语言教学理论与外语教学法专题", "credits": 3 },
+            { "code": "CHI6527", "name": "语文教学与资讯科技素养", "credits": 3, "countsTowardTrackIds": ["EDUHK-TPG-DIR-MATCIL-IB-TEACHING"] },
+            { "code": "CHI6608", "name": "专题研习", "credits": 6 },
+            { "code": "CHI6609", "name": "第二语言教学研究方法", "credits": 3, "countsTowardTrackIds": ["EDUHK-TPG-DIR-MATCIL-IB-TEACHING"] },
+            { "code": "CHI6680", "name": "跨文化交际", "credits": 3, "countsTowardTrackIds": ["EDUHK-TPG-DIR-MATCIL-IB-TEACHING"] },
+            { "code": "CHI6709", "name": "Diploma Programme (DP) of International Baccalaureate (IB) and Teaching Chinese as a Second Language", "credits": 3, "countsTowardTrackIds": ["EDUHK-TPG-DIR-MATCIL-IB-TEACHING"] },
+            { "code": "CHI6930", "name": "中文教学与情意关怀", "credits": 3 },
+            { "code": "CHI6955", "name": "国际教育视角下的中国语言和文学教学", "credits": 3 },
+            { "code": "FEX6118", "name": "学校体验", "credits": 6, "countsTowardTrackIds": ["EDUHK-TPG-DIR-MATCIL-IB-TEACHING"] },
+            { "code": "LIT6031", "name": "戏剧文学与语言艺术", "credits": 3 },
+            { "code": "LIT6032", "name": "中国文学与影视改编", "credits": 3 }
+          ]
+        }
+      ]
+    }
+  ]
+}

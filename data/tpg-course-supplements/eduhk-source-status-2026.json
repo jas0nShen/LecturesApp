@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "EDUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "EDUHK-TPG-DIR-MACSLE",
+      "status": "blocked",
+      "sourceUrl": "https://www.eduhk.hk/fhm/sc/postgraduate-programme/master-of-arts-in-chinese-studies-language-education-macsle/programme-structure",
+      "statusNote": "The current 2026-27 Programme Structure confirms 24 credit points, comprising four Core Courses (12 credit points) and four Elective Courses (12 credit points), and publishes the current course titles and credits. It does not publish a course code for any Core or Elective Course. Two shared Literature titles can be found with codes in another Programme, but that partial overlap is not evidence for the complete MACSLE code table. Keep the structure closed until the current official course catalogue or authenticated course outlines identify every code; do not infer codes from titles or publish a partial pool."
+    },
+    {
+      "programmeId": "EDUHK-TPG-DIR-MA-PFE",
+      "status": "blocked",
+      "sourceUrl": "https://www.eduhk.hk/ssps/mapfe",
+      "statusNote": "The current 2026-27 Programme page confirms a 24-credit award, seven 3-credit Core Courses, four named Elective options, and an approved 6-credit Research Project route. It describes the coursework path as seven Core Courses plus one 3-credit Elective, but the official BUS6046 Internship Programme in Personal Finance Education course outline linked from the same page states that BUS6046 is worth 6 credit points. Publishing either value would contradict another current official source. Keep the structure closed until EdUHK reconciles the Internship credit value or identifies a superseding outline; do not force BUS6046 into the 3-credit elective rule or treat its older 6-credit outline as the current award rule."
+    },
+    {
+      "programmeId": "EDUHK-TPG-DIR-MA-STEM-ED",
+      "status": "blocked",
+      "sourceUrl": "https://ses.eduhk.hk/en/programmes/stem_ed",
+      "statusNote": "The current 2026-27 Programme and detailed-course pages confirm 24 credit points: six 3-credit Core Courses, one of two 3-credit curriculum electives, and one of the 3-credit Research Project or Internship. They publish every current title and credit value but omit the course codes. Official search results and cross-Programme pages reveal only a subset of codes, which is not a complete Programme code table. Keep the structure closed until all ten current titles are mapped by a consolidated official catalogue or current course outlines; do not infer the missing codes from numbering patterns."
+    }
+  ]
+}

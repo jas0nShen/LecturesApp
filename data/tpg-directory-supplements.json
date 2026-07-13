@@ -37,13 +37,37 @@
         ["MAGHE", "Master of Arts in Global Histories of Education"],
         ["MA(GSE)", "Master of Arts in Global Studies in Education"],
         ["MA(IECE)", "Master of Arts in Inclusive Early Childhood Education"],
-        ["MAICT", "Master of Arts in Intercultural Communication and Translation"],
-        ["MA(MP)", "Master of Arts in Mathematics and Pedagogy"],
+        {
+          "programmeCode": "MAICT",
+          "name": "Master of Arts in Intercultural Communication and Translation",
+          "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-intercultural-communication-and-translation-maict/programme-information/programme-structure"
+        },
+        {
+          "programmeCode": "MA(MP)",
+          "name": "Master of Arts in Mathematics and Pedagogy",
+          "sourceUrl": "https://www.eduhk.hk/mit/en/mamp"
+        },
         ["MA(ME)", "Master of Arts in Music Education"],
-        ["MA(PFE)", "Master of Arts in Personal Finance Education"],
+        {
+          "programmeCode": "MA(PFE)",
+          "name": "Master of Arts in Personal Finance Education",
+          "sourceUrl": "https://www.eduhk.hk/ssps/mapfe"
+        },
         ["MA(PPE)", "Master of Arts in Positive Psychology in Education"],
-        ["MA(STEM Ed)", "Master of Arts in STEM Education"],
-        ["MATCIL", "Master of Arts in Teaching Chinese as an International Language"],
+        {
+          "programmeCode": "MA(STEM Ed)",
+          "name": "Master of Arts in STEM Education",
+          "sourceUrl": "https://ses.eduhk.hk/en/programmes/stem_ed"
+        },
+        {
+          "programmeCode": "MATCIL",
+          "name": "Master of Arts in Teaching Chinese as an International Language",
+          "sourceUrl": "https://www.eduhk.hk/fhm/sc/postgraduate-programme/master-of-arts-in-teaching-chinese-as-an-international-language-matcil/programme-structure",
+          "trackSelectionOptional": true,
+          "tracks": [
+            { "code": "IB-TEACHING", "name": "IB Teaching Strand", "type": "Teaching Strand" }
+          ]
+        },
         {
           "programmeCode": "MATESOL",
           "name": "Master of Arts in Teaching English to Speakers of Other Languages",
@@ -58,7 +82,11 @@
         ["MA(VAECP)", "Master of Arts in Visual Arts Education and Creative Practice"],
         ["MPPM", "Master of Public Policy and Management"],
         ["MSc(ADS)", "Master of Science in Applied Data Science"],
-        ["MSc(AI&EdTech)", "Master of Science in Artificial Intelligence and Educational Technology"],
+        {
+          "programmeCode": "MSc(AI&EdTech)",
+          "name": "Master of Science in Artificial Intelligence and Educational Technology",
+          "sourceUrl": "https://www.eduhk.hk/mit/en/mscait"
+        },
         ["MSc(EPM)-EN", "Master of Science in Education Policy and Management (English)"],
         ["MSc(EPM)-ZH", "Master of Science in Education Policy and Management (Chinese)"],
         ["MScESLPLD", "Master of Science in Educational Speech-Language Pathology and Learning Disabilities"],
