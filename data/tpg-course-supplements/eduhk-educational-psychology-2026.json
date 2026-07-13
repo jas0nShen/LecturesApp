@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "EDUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "EDUHK-TPG-DIR-MSOCSC-EP",
+      "status": "verified",
+      "creditsRequired": 78,
+      "creditUnit": "credit points",
+      "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=9859",
+      "ruleReviewStatus": "verified",
+      "courseGroups": [
+        {
+          "id": "taught-courses",
+          "name": "Taught Courses",
+          "type": "core",
+          "creditsRequired": 45,
+          "coursesRequired": 15,
+          "ruleText": "Complete all fifteen Taught Courses (45 credit points). Each Taught Course carries 3 credit points.",
+          "sourceUrl": "https://www.eduhk.hk/fehd/files/file/Admission/PG/MSocSc%28EP%29_Information_Session_2025_Revised.pdf",
+          "courses": [
+            { "code": "PSY6105", "name": "Research and Statistical Methods I", "credits": 3, "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses" },
+            { "code": "PSY6106", "name": "Research and Statistical Methods II", "credits": 3, "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses" },
+            { "code": "PSY6107", "name": "Psychoeducational Assessment: Learning and Cognitive Abilities", "credits": 3, "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses" },
+            { "code": "PSY6108", "name": "Psychoeducational Assessment: Socio-emotional and Behavioural Functioning", "credits": 3, "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses" },
+            { "code": "PSY6109", "name": "Children with Special Needs I", "credits": 3, "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses" },
+            { "code": "PSY6110", "name": "Children with Special Needs II", "credits": 3, "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses" },
+            { "code": "PSY6111", "name": "Psychoeducational Intervention I", "credits": 3, "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses" },
+            { "code": "PSY6112", "name": "Psychoeducational Intervention II", "credits": 3, "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses" },
+            { "code": "PSY6113", "name": "Skills Training Seminar I", "credits": 3, "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses" },
+            { "code": "PSY6114", "name": "Skills Training Seminar II", "credits": 3, "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses" },
+            { "code": "PSY6115", "name": "Skills Training Seminar III", "credits": 3, "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses" },
+            { "code": "PSY6116", "name": "Curriculum and Instruction", "credits": 3, "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses" },
+            { "code": "PSY6117", "name": "Professional Issues and Ethical Practices in Educational Psychology", "credits": 3, "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses" },
+            { "code": "PSY6118", "name": "Applied Developmental Psychology", "credits": 3, "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses" },
+            { "code": "PSY6119", "name": "Learning and Motivation", "credits": 3, "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses" }
+          ]
+        },
+        {
+          "id": "practicum-courses",
+          "name": "Practicum Courses",
+          "type": "practicum",
+          "creditsRequired": 27,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five Practicum Courses (27 credit points). The five Practicums carry 4, 2, 3, 9 and 9 credit points respectively and provide at least 180 days or 1,200 hours of supervised practice.",
+          "sourceUrl": "https://www.eduhk.hk/fehd/files/file/Admission/PG/MSocSc%28EP%29_Information_Session_2025_Revised.pdf",
+          "courses": [
+            { "code": "PSY6120", "name": "Practicum I", "credits": 4, "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses" },
+            { "code": "PSY6121", "name": "Practicum II", "credits": 2, "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses" },
+            { "code": "PSY6122", "name": "Practicum III", "credits": 3, "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses" },
+            { "code": "PSY6123", "name": "Practicum IV", "credits": 9, "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses" },
+            { "code": "PSY6124", "name": "Practicum V", "credits": 9, "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses" }
+          ]
+        },
+        {
+          "id": "research-experience-course",
+          "name": "Research Experience Course",
+          "type": "dissertation",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Complete the 6-credit Thesis as the required Research Experience Course.",
+          "sourceUrl": "https://www.eduhk.hk/fehd/files/file/Admission/PG/MSocSc%28EP%29_Information_Session_2025_Revised.pdf",
+          "courses": [
+            { "code": "PSY6125", "name": "Thesis", "credits": 6, "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses" }
+          ]
+        }
+      ]
+    }
+  ]
+}

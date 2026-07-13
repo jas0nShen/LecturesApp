@@ -37854,16 +37854,150 @@
       "name": "Master of Arts in Child and Family Education",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
-      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "creditsRequired": 24,
+      "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=705",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
       "lastVerifiedAt": "2026-07-11",
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
-      "tracks": [],
-      "dataLevel": "programme",
-      "courseGroups": []
+      "tracks": [
+        {
+          "id": "EDUHK-TPG-DIR-MA-CFE-THESIS",
+          "code": "THESIS",
+          "name": "Thesis Track",
+          "type": "Elective Track",
+          "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=705",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "EDUHK-TPG-DIR-MA-CFE-PRACTICE",
+          "code": "PRACTICE",
+          "name": "Practice Track",
+          "type": "Elective Track",
+          "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=705",
+          "lastVerifiedAt": "2026-07-11"
+        }
+      ],
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Students in both Elective Tracks complete all six Core Courses (18 credit points).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.eduhk.hk/ece/en/learning_teaching.php?s=courses",
+          "courses": [
+            {
+              "code": "ECE6175",
+              "name": "Understanding Families in Educational and Community Settings",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eduhk.hk/ece/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "ECE6176",
+              "name": "Early Child Development and Education across Cultures",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eduhk.hk/ece/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "ECE6177",
+              "name": "Current Research in Parent-child Relationships",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eduhk.hk/ece/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "ECE6178",
+              "name": "Family Education: Principles and Practices",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eduhk.hk/ece/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "ECE6179",
+              "name": "Designing and Evaluating Programmes for Children and Families",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eduhk.hk/ece/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "ECE6180",
+              "name": "Research Methods in Education",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.eduhk.hk/ece/en/learning_teaching.php?s=courses"
+            }
+          ]
+        },
+        {
+          "id": "thesis-track",
+          "name": "Thesis Track",
+          "type": "dissertation",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Students assigned to the Thesis Track complete the 6-credit ECE6181 Thesis.",
+          "appliesToTrackIds": [
+            "EDUHK-TPG-DIR-MA-CFE-THESIS"
+          ],
+          "sourceUrl": "https://www.eduhk.hk/ece/en/learning_teaching.php?s=courses",
+          "courses": [
+            {
+              "code": "ECE6181",
+              "name": "Thesis",
+              "credits": 6,
+              "appliesToTrackIds": [
+                "EDUHK-TPG-DIR-MA-CFE-THESIS"
+              ],
+              "sourceUrl": "https://www.eduhk.hk/ece/en/learning_teaching.php?s=courses"
+            }
+          ]
+        },
+        {
+          "id": "practice-track",
+          "name": "Practice Track",
+          "type": "practicum",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Students assigned to the Practice Track complete both 3-credit Practice Track courses (6 credit points). Track assignment considers student preference, background, qualities and course quota.",
+          "appliesToTrackIds": [
+            "EDUHK-TPG-DIR-MA-CFE-PRACTICE"
+          ],
+          "sourceUrl": "https://www.eduhk.hk/ece/en/learning_teaching.php?s=courses",
+          "courses": [
+            {
+              "code": "ECE6209",
+              "name": "Counselling in Child and Family Education: Theories and Skills",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "EDUHK-TPG-DIR-MA-CFE-PRACTICE"
+              ],
+              "sourceUrl": "https://www.eduhk.hk/ece/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "INS6040",
+              "name": "Field Attachment in Child and Family Education",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "EDUHK-TPG-DIR-MA-CFE-PRACTICE"
+              ],
+              "sourceUrl": "https://www.eduhk.hk/ece/en/learning_teaching.php?s=courses"
+            }
+          ]
+        }
+      ],
+      "trackSelectionOptional": false,
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=705",
+      "courseStatusNote": "",
+      "creditUnit": "credit points",
+      "ruleReviewStatus": "verified"
     },
     {
       "id": "EDUHK-TPG-DIR-MACSLE",
@@ -37895,7 +38029,7 @@
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
       "creditsRequired": null,
-      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=9118",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
       "lastVerifiedAt": "2026-07-11",
@@ -37903,7 +38037,11 @@
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseGroups": [],
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=9118",
+      "courseStatusNote": "The current 2026-27 Programme page confirms a 24-credit award comprising four 3-credit Core Courses and four 3-credit Specialisation Courses. It states that the Xiqu Specialisation is not open in 2026-27, but the public structure displays only the four Core titles and an isolated Internship in Xiqu line; it neither publishes the complete current Heritage Education and Management Specialisation course list nor any course codes. Keep the structure closed until EdUHK publishes the complete 2026-27 specialisation table and official codes; do not treat the closed Xiqu path or the incomplete page fragment as the current curriculum."
     },
     {
       "id": "EDUHK-TPG-DIR-MADHCP",
@@ -37912,16 +38050,123 @@
       "name": "Master of Arts in Digital Humanities for Cultural Professionals",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
-      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "creditsRequired": 24,
+      "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-digital-humanities-for-cultural-professionals-madhcp/programme-information/programme-structure",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
       "lastVerifiedAt": "2026-07-11",
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Complete both Core Courses (6 credit points).",
+          "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-digital-humanities-for-cultural-professionals-madhcp/programme-information/madhcp-courses",
+          "courses": [
+            {
+              "code": "CUS6031",
+              "name": "Digital Humanities Methods",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-digital-humanities-for-cultural-professionals-madhcp/programme-information/madhcp-courses"
+            },
+            {
+              "code": "CUS6032",
+              "name": "Doing Cultural Studies in the Digital Age",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-digital-humanities-for-cultural-professionals-madhcp/programme-information/madhcp-courses"
+            }
+          ]
+        },
+        {
+          "id": "elective-or-capstone-project",
+          "name": "Elective Courses / Capstone Project",
+          "type": "elective_with_optional_project",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Complete six 3-credit Elective Courses, or five 3-credit Elective Courses plus the 3-credit CUS6034 Digital Humanities Project. Not all electives are offered every year; the optional Project substitution requires manual audit review.",
+          "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-digital-humanities-for-cultural-professionals-madhcp/programme-information/madhcp-courses",
+          "courses": [
+            {
+              "code": "CAC6029",
+              "name": "Arts Management in the Digital Era",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-digital-humanities-for-cultural-professionals-madhcp/programme-information/madhcp-courses"
+            },
+            {
+              "code": "CHI6926",
+              "name": "Digital Literacy in Chinese Language Learning",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-digital-humanities-for-cultural-professionals-madhcp/programme-information/madhcp-courses"
+            },
+            {
+              "code": "CHI6931",
+              "name": "Language Databases and Cultural Studies",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-digital-humanities-for-cultural-professionals-madhcp/programme-information/madhcp-courses"
+            },
+            {
+              "code": "CUS6033",
+              "name": "Visualising Culture",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-digital-humanities-for-cultural-professionals-madhcp/programme-information/madhcp-courses"
+            },
+            {
+              "code": "ENG6452",
+              "name": "Game-based Learning Design for Educators",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-digital-humanities-for-cultural-professionals-madhcp/programme-information/madhcp-courses"
+            },
+            {
+              "code": "INT6111",
+              "name": "Metaverse in Education and Society",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-digital-humanities-for-cultural-professionals-madhcp/programme-information/madhcp-courses"
+            },
+            {
+              "code": "LIN6052",
+              "name": "Digital Technology for Language Studies",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-digital-humanities-for-cultural-professionals-madhcp/programme-information/madhcp-courses"
+            },
+            {
+              "code": "LIT6061",
+              "name": "English Literature and Data Analytics",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-digital-humanities-for-cultural-professionals-madhcp/programme-information/madhcp-courses"
+            },
+            {
+              "code": "VAC6003",
+              "name": "Contemporary Digital Media and Practices",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-digital-humanities-for-cultural-professionals-madhcp/programme-information/madhcp-courses"
+            },
+            {
+              "code": "VAC6009",
+              "name": "Curating Online Exhibitions for Visual Arts Learning",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-digital-humanities-for-cultural-professionals-madhcp/programme-information/madhcp-courses"
+            },
+            {
+              "code": "CUS6034",
+              "name": "Digital Humanities Project",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-digital-humanities-for-cultural-professionals-madhcp/programme-information/madhcp-courses"
+            }
+          ]
+        }
+      ],
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-digital-humanities-for-cultural-professionals-madhcp/programme-information/programme-structure",
+      "courseStatusNote": "",
+      "creditUnit": "credit points",
+      "ruleReviewStatus": "manual_review_required"
     },
     {
       "id": "EDUHK-TPG-DIR-MA-EFS",
@@ -37930,16 +38175,98 @@
       "name": "Master of Arts in Education for Sustainability",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
-      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "creditsRequired": 24,
+      "sourceUrl": "https://ses.eduhk.hk/en/programmes/maefs",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
       "lastVerifiedAt": "2026-07-11",
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Complete all six Core Courses (18 credit points): four in Semester 1 and two in Semester 2.",
+          "sourceUrl": "https://ses.eduhk.hk/en/programmes/maefs",
+          "courses": [
+            {
+              "code": "SES6020",
+              "name": "Sustainability Studies: An Overview",
+              "credits": 3,
+              "sourceUrl": "https://ses.eduhk.hk/en/programmes/maefs"
+            },
+            {
+              "code": "SES6021",
+              "name": "Global and Local Issues in Education for Sustainability",
+              "credits": 3,
+              "sourceUrl": "https://ses.eduhk.hk/en/programmes/maefs"
+            },
+            {
+              "code": "SES6022",
+              "name": "Learning and Teaching in Education for Sustainability",
+              "credits": 3,
+              "sourceUrl": "https://ses.eduhk.hk/en/programmes/maefs"
+            },
+            {
+              "code": "SES6024",
+              "name": "Research in Education for Sustainability",
+              "credits": 3,
+              "sourceUrl": "https://ses.eduhk.hk/en/programmes/maefs"
+            },
+            {
+              "code": "SES6023",
+              "name": "Assessment and Evaluation in EfS, Theory and Practice",
+              "credits": 3,
+              "sourceUrl": "https://ses.eduhk.hk/en/programmes/maefs"
+            },
+            {
+              "code": "SES6025",
+              "name": "Sustainable Campus Development",
+              "credits": 3,
+              "sourceUrl": "https://ses.eduhk.hk/en/programmes/maefs"
+            }
+          ]
+        },
+        {
+          "id": "elective-or-thesis",
+          "name": "Elective Courses / Thesis",
+          "type": "elective_with_optional_dissertation",
+          "creditsRequired": 6,
+          "ruleText": "Complete both 3-credit Elective Courses (SES6058 and SES6059), or complete the 6-credit SES6026 Thesis Writing Course and Research Thesis Project on EfS. The mutually exclusive path requires manual audit review.",
+          "sourceUrl": "https://ses.eduhk.hk/en/programmes/maefs",
+          "courses": [
+            {
+              "code": "SES6058",
+              "name": "Climate Change and Carbon Management",
+              "credits": 3,
+              "sourceUrl": "https://ses.eduhk.hk/en/programmes/maefs"
+            },
+            {
+              "code": "SES6059",
+              "name": "Sustainability Communications",
+              "credits": 3,
+              "sourceUrl": "https://ses.eduhk.hk/en/programmes/maefs"
+            },
+            {
+              "code": "SES6026",
+              "name": "Thesis Writing Course and Research Thesis Project on EfS",
+              "credits": 6,
+              "sourceUrl": "https://ses.eduhk.hk/en/programmes/maefs"
+            }
+          ]
+        }
+      ],
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://ses.eduhk.hk/en/programmes/maefs",
+      "courseStatusNote": "",
+      "creditUnit": "credit points",
+      "ruleReviewStatus": "manual_review_required"
     },
     {
       "id": "EDUHK-TPG-DIR-MA-EC",
@@ -37948,16 +38275,104 @@
       "name": "Master of Arts in Educational Counselling",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
-      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "creditsRequired": 30,
+      "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=230",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
       "lastVerifiedAt": "2026-07-11",
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 3,
+          "ruleText": "Complete all three 4-credit Core Courses (12 credit points).",
+          "sourceUrl": "https://www.eduhk.hk/sec/en/learning_teaching.php?s=courses",
+          "courses": [
+            {
+              "code": "COU6014",
+              "name": "Counselling Theories, Helping Process and Skills",
+              "credits": 4,
+              "sourceUrl": "https://www.eduhk.hk/sec/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "COU6015",
+              "name": "Child and Adolescent Counselling",
+              "credits": 4,
+              "sourceUrl": "https://www.eduhk.hk/sec/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "COU6016",
+              "name": "Counselling Ethics",
+              "credits": 4,
+              "sourceUrl": "https://www.eduhk.hk/sec/en/learning_teaching.php?s=courses"
+            }
+          ]
+        },
+        {
+          "id": "specialist-courses",
+          "name": "Specialist Courses",
+          "type": "specialist",
+          "creditsRequired": 12,
+          "coursesRequired": 3,
+          "ruleText": "Complete all three 4-credit Specialist Courses (12 credit points).",
+          "sourceUrl": "https://www.eduhk.hk/sec/en/learning_teaching.php?s=courses",
+          "courses": [
+            {
+              "code": "COU6017",
+              "name": "Group Work",
+              "credits": 4,
+              "sourceUrl": "https://www.eduhk.hk/sec/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "COU6018",
+              "name": "Contemporary Issues in Child and Adolescent Development",
+              "credits": 4,
+              "sourceUrl": "https://www.eduhk.hk/sec/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "COU6019",
+              "name": "Psychoeducational Assessment and Testing",
+              "credits": 4,
+              "sourceUrl": "https://www.eduhk.hk/sec/en/learning_teaching.php?s=courses"
+            }
+          ]
+        },
+        {
+          "id": "practicum-training",
+          "name": "Practicum Training",
+          "type": "practicum",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Complete both 3-credit Practicum courses (6 credit points).",
+          "sourceUrl": "https://www.eduhk.hk/sec/en/learning_teaching.php?s=courses",
+          "courses": [
+            {
+              "code": "COU6020",
+              "name": "Practicum I",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/sec/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "COU6021",
+              "name": "Practicum II",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/sec/en/learning_teaching.php?s=courses"
+            }
+          ]
+        }
+      ],
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=230",
+      "courseStatusNote": "",
+      "creditUnit": "credit points",
+      "ruleReviewStatus": "verified"
     },
     {
       "id": "EDUHK-TPG-DIR-MAGHE",
@@ -38108,16 +38523,105 @@
       "name": "Master of Arts in Global Studies in Education",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
-      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "creditsRequired": 24,
+      "sourceUrl": "https://www.eduhk.hk/magse",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
       "lastVerifiedAt": "2026-07-11",
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Core Courses (12 credit points).",
+          "sourceUrl": "https://www.eduhk.hk/epl/en/learning_teaching.php?s=courses",
+          "courses": [
+            {
+              "code": "PFS6055",
+              "name": "Research and Academic Writing in Global Studies in Education",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/epl/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PFS6056",
+              "name": "Local Education in a Globalized World",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/epl/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PFS6057",
+              "name": "Contemporary Global Challenges",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/epl/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PFS6058",
+              "name": "Key Issues in Education in Global Context",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/epl/en/learning_teaching.php?s=courses"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete four of the six Elective Courses (12 credit points). The official Programme page states that the listed electives may not be offered every year.",
+          "sourceUrl": "https://www.eduhk.hk/epl/en/learning_teaching.php?s=courses",
+          "courses": [
+            {
+              "code": "PFS6059",
+              "name": "Global Governance and Education Policy",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/epl/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PFS6060",
+              "name": "Inequality in Education",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/epl/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PFS6061",
+              "name": "Higher Education and International Development",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/epl/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PFS6062",
+              "name": "Education Futures",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/epl/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PFS6063",
+              "name": "Independent Project in Global Studies in Education",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/epl/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PFS6064",
+              "name": "Histories of Modernisation and Education Development",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/epl/en/learning_teaching.php?s=courses"
+            }
+          ]
+        }
+      ],
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.eduhk.hk/magse",
+      "courseStatusNote": "",
+      "creditUnit": "credit points",
+      "ruleReviewStatus": "verified"
     },
     {
       "id": "EDUHK-TPG-DIR-MA-IECE",
@@ -38127,7 +38631,7 @@
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
       "creditsRequired": null,
-      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=9840",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
       "lastVerifiedAt": "2026-07-11",
@@ -38135,7 +38639,11 @@
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseGroups": [],
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=9840",
+      "courseStatusNote": "The current 2026-27 Programme page confirms a 24-credit award with six 3-credit Core Courses and either two of four 3-credit Specialised Courses or a 6-credit Thesis. It publishes all eleven current titles and credit requirements but no course codes. The current Master course catalogues of both co-delivering departments, Early Childhood Education and Special Education and Counselling, do not contain a complete matching code table for these new titles; a few older courses have only similar wording and are not sufficient mapping evidence. Keep the structure closed until official current outlines identify every code and the Thesis code; do not map the new curriculum onto similarly titled legacy courses."
     },
     {
       "id": "EDUHK-TPG-DIR-MAICT",
@@ -38568,16 +39076,129 @@
       "name": "Master of Arts in Positive Psychology in Education",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
-      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "creditsRequired": 24,
+      "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=4788",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
       "lastVerifiedAt": "2026-07-11",
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five Core Courses (15 credit points).",
+          "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses",
+          "courses": [
+            {
+              "code": "PSY6064",
+              "name": "Positive Psychology",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6067",
+              "name": "Positive Education",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6071",
+              "name": "Positive Psychology Interventions",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6068",
+              "name": "Engagement, Meaning, and Happiness in Learning and Teaching",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6089",
+              "name": "Research Methods in Positive Psychology",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete three of the nine listed Elective Courses (9 credit points). Four electives are cross-listed with the Master of Social Sciences in Psychology (Schools and Community Settings).",
+          "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses",
+          "courses": [
+            {
+              "code": "PSY6069",
+              "name": "Mindfulness in Education",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6070",
+              "name": "Parenting and Child Flourishing",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6088",
+              "name": "Mental Health Support for Young People",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6072",
+              "name": "Capstone Project",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6090",
+              "name": "Cultural Perspectives on Well-being",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6097",
+              "name": "Counselling and Guidance",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6002",
+              "name": "Human Development across the Lifespan",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6056",
+              "name": "Stress and Coping",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6055",
+              "name": "Interpersonal Communication Skills",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            }
+          ]
+        }
+      ],
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=4788",
+      "courseStatusNote": "",
+      "creditUnit": "credit points",
+      "ruleReviewStatus": "verified"
     },
     {
       "id": "EDUHK-TPG-DIR-MA-STEM-ED",
@@ -38955,16 +39576,99 @@
       "name": "Master of Arts in Visual Arts Education and Creative Practice",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
-      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "creditsRequired": 24,
+      "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-visual-arts-education-and-creative-practice-mavaecp/programme-information/mavaecp-programme-structure",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
       "lastVerifiedAt": "2026-07-11",
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "core-courses-and-capstone",
+          "name": "Core Courses and Capstone Project",
+          "type": "core_capstone",
+          "creditsRequired": 15,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Core Courses (15 credit points), including the 6-credit VAC6004 Capstone Project.",
+          "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-visual-arts-education-and-creative-practice-mavaecp/programme-information/mavaecp-courses",
+          "courses": [
+            {
+              "code": "VAC6001",
+              "name": "Research Methods in Artistic Practices",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-visual-arts-education-and-creative-practice-mavaecp/programme-information/mavaecp-courses"
+            },
+            {
+              "code": "VAC6002",
+              "name": "Research Methods in Visual Arts Education",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-visual-arts-education-and-creative-practice-mavaecp/programme-information/mavaecp-courses"
+            },
+            {
+              "code": "VAC6003",
+              "name": "Contemporary Digital Media and Practices",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-visual-arts-education-and-creative-practice-mavaecp/programme-information/mavaecp-courses"
+            },
+            {
+              "code": "VAC6004",
+              "name": "Capstone Project",
+              "credits": 6,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-visual-arts-education-and-creative-practice-mavaecp/programme-information/mavaecp-courses"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete three Elective Courses (9 credit points). The official structure requires two of three Semester 1 electives and one of two Semester 2 electives, but the public course list does not label individual courses by semester; this semester-specific selection requires manual audit review.",
+          "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-visual-arts-education-and-creative-practice-mavaecp/programme-information/mavaecp-courses",
+          "courses": [
+            {
+              "code": "VAC6005",
+              "name": "Art Criticism and Museum Experience",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-visual-arts-education-and-creative-practice-mavaecp/programme-information/mavaecp-courses"
+            },
+            {
+              "code": "VAC6006",
+              "name": "Collaborative Art-making Practices",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-visual-arts-education-and-creative-practice-mavaecp/programme-information/mavaecp-courses"
+            },
+            {
+              "code": "VAC6007",
+              "name": "Critical Perspectives in Contemporary Arts Practices",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-visual-arts-education-and-creative-practice-mavaecp/programme-information/mavaecp-courses"
+            },
+            {
+              "code": "VAC6008",
+              "name": "Independent Studies in Visual Arts",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-visual-arts-education-and-creative-practice-mavaecp/programme-information/mavaecp-courses"
+            },
+            {
+              "code": "MUS6290",
+              "name": "Arts Management in Hong Kong",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-visual-arts-education-and-creative-practice-mavaecp/programme-information/mavaecp-courses"
+            }
+          ]
+        }
+      ],
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-visual-arts-education-and-creative-practice-mavaecp/programme-information/mavaecp-programme-structure",
+      "courseStatusNote": "",
+      "creditUnit": "credit points",
+      "ruleReviewStatus": "manual_review_required"
     },
     {
       "id": "EDUHK-TPG-DIR-MPPM",
@@ -38973,16 +39677,313 @@
       "name": "Master of Public Policy and Management",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
-      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "creditsRequired": 24,
+      "sourceUrl": "https://www.eduhk.hk/ssps/mppm",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
       "lastVerifiedAt": "2026-07-11",
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
-      "tracks": [],
-      "dataLevel": "programme",
-      "courseGroups": []
+      "tracks": [
+        {
+          "id": "EDUHK-TPG-DIR-MPPM-GOVERNANCE-PUBLIC-MANAGEMENT",
+          "code": "GOVERNANCE-PUBLIC-MANAGEMENT",
+          "name": "Specialisation I in Governance and Public Management",
+          "type": "Specialisation",
+          "sourceUrl": "https://www.eduhk.hk/ssps/mppm",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "EDUHK-TPG-DIR-MPPM-SOCIAL-POLICY",
+          "code": "SOCIAL-POLICY",
+          "name": "Specialisation II in Social Policy",
+          "type": "Specialisation",
+          "sourceUrl": "https://www.eduhk.hk/ssps/mppm",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "EDUHK-TPG-DIR-MPPM-HIGHER-EDUCATION-POLICY-MANAGEMENT",
+          "code": "HIGHER-EDUCATION-POLICY-MANAGEMENT",
+          "name": "Specialisation III in Higher Education Policy and Management",
+          "type": "Specialisation",
+          "sourceUrl": "https://www.eduhk.hk/ssps/mppm",
+          "lastVerifiedAt": "2026-07-11"
+        },
+        {
+          "id": "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION",
+          "code": "NO-SPECIALISATION",
+          "name": "No MPPM Specialisation",
+          "type": "Award Path",
+          "sourceUrl": "https://www.eduhk.hk/ssps/mppm",
+          "lastVerifiedAt": "2026-07-11"
+        }
+      ],
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Core Courses (12 credit points).",
+          "sourceUrl": "https://www.eduhk.hk/ssps/mppm",
+          "courses": [
+            {
+              "code": "PPG6001",
+              "name": "Research Methods for Policy Analysis and Evaluation",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ssps/mppm"
+            },
+            {
+              "code": "PPG6002",
+              "name": "Public Policy and Governance: Processes and Techniques",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ssps/mppm"
+            },
+            {
+              "code": "PPG6003",
+              "name": "Strategic Communication",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ssps/mppm"
+            },
+            {
+              "code": "PPG6013",
+              "name": "Organisational Behaviour and Development",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ssps/mppm"
+            }
+          ]
+        },
+        {
+          "id": "elective-block-a",
+          "name": "Elective Courses - Block A",
+          "type": "elective",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Choose one of the three Block A courses (3 credit points): Internship, Overseas Experiential Learning, or Advanced Thesis in Public Policy and Management.",
+          "sourceUrl": "https://www.eduhk.hk/ssps/zh-hans/mppm",
+          "courses": [
+            {
+              "code": "PPG6030",
+              "name": "Internship",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ssps/zh-hans/mppm"
+            },
+            {
+              "code": "PPG6031",
+              "name": "Overseas Experiential Learning",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ssps/zh-hans/mppm"
+            },
+            {
+              "code": "PPG6032",
+              "name": "Advanced Thesis in Public Policy and Management",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ssps/zh-hans/mppm"
+            }
+          ]
+        },
+        {
+          "id": "elective-block-b",
+          "name": "Elective Courses - Block B",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Choose three Block B courses (9 credit points) from one official Specialisation, or choose any three across the three Specialisations without an MPPM Specialisation. Course offering and quotas are subject to the Department's decision and enrolment.",
+          "sourceUrl": "https://www.eduhk.hk/ssps/mppm",
+          "courses": [
+            {
+              "code": "PPG6004",
+              "name": "Managing Public Finance",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "EDUHK-TPG-DIR-MPPM-GOVERNANCE-PUBLIC-MANAGEMENT",
+                "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"
+              ],
+              "sourceUrl": "https://www.eduhk.hk/ssps/mppm"
+            },
+            {
+              "code": "PPG6011",
+              "name": "Human Resource Management",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "EDUHK-TPG-DIR-MPPM-GOVERNANCE-PUBLIC-MANAGEMENT",
+                "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"
+              ],
+              "sourceUrl": "https://www.eduhk.hk/ssps/mppm"
+            },
+            {
+              "code": "PPG6012",
+              "name": "International Public Management",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "EDUHK-TPG-DIR-MPPM-GOVERNANCE-PUBLIC-MANAGEMENT",
+                "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"
+              ],
+              "sourceUrl": "https://www.eduhk.hk/ssps/mppm"
+            },
+            {
+              "code": "PPG6005",
+              "name": "Public Administration and Management in Asia",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "EDUHK-TPG-DIR-MPPM-GOVERNANCE-PUBLIC-MANAGEMENT",
+                "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"
+              ],
+              "sourceUrl": "https://www.eduhk.hk/ssps/mppm"
+            },
+            {
+              "code": "PPG6006",
+              "name": "Project Appraisal and Impact Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "EDUHK-TPG-DIR-MPPM-GOVERNANCE-PUBLIC-MANAGEMENT",
+                "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"
+              ],
+              "sourceUrl": "https://www.eduhk.hk/ssps/mppm"
+            },
+            {
+              "code": "PPG6014",
+              "name": "Regulation and Regulatory Governance",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "EDUHK-TPG-DIR-MPPM-GOVERNANCE-PUBLIC-MANAGEMENT",
+                "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"
+              ],
+              "sourceUrl": "https://www.eduhk.hk/ssps/mppm"
+            },
+            {
+              "code": "PPG6015",
+              "name": "Environmental Policy and Governance",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "EDUHK-TPG-DIR-MPPM-GOVERNANCE-PUBLIC-MANAGEMENT",
+                "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"
+              ],
+              "sourceUrl": "https://www.eduhk.hk/ssps/mppm"
+            },
+            {
+              "code": "PPG6007",
+              "name": "Managing of Social Services",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "EDUHK-TPG-DIR-MPPM-SOCIAL-POLICY",
+                "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"
+              ],
+              "sourceUrl": "https://www.eduhk.hk/ssps/mppm"
+            },
+            {
+              "code": "PPG6010",
+              "name": "Social Policy and Aging",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "EDUHK-TPG-DIR-MPPM-SOCIAL-POLICY",
+                "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"
+              ],
+              "sourceUrl": "https://www.eduhk.hk/ssps/mppm"
+            },
+            {
+              "code": "PPG6026",
+              "name": "Comparative Social Policy in Asia",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "EDUHK-TPG-DIR-MPPM-SOCIAL-POLICY",
+                "EDUHK-TPG-DIR-MPPM-HIGHER-EDUCATION-POLICY-MANAGEMENT",
+                "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"
+              ],
+              "sourceUrl": "https://www.eduhk.hk/ssps/mppm"
+            },
+            {
+              "code": "PPG6008",
+              "name": "Social Protection Arrangements",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "EDUHK-TPG-DIR-MPPM-SOCIAL-POLICY",
+                "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"
+              ],
+              "sourceUrl": "https://www.eduhk.hk/ssps/mppm"
+            },
+            {
+              "code": "PPG6009",
+              "name": "Comparative Health Policy",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "EDUHK-TPG-DIR-MPPM-SOCIAL-POLICY",
+                "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"
+              ],
+              "sourceUrl": "https://www.eduhk.hk/ssps/mppm"
+            },
+            {
+              "code": "PPG6021",
+              "name": "Poverty, Inequality and Social Policy",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "EDUHK-TPG-DIR-MPPM-SOCIAL-POLICY",
+                "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"
+              ],
+              "sourceUrl": "https://www.eduhk.hk/ssps/mppm"
+            },
+            {
+              "code": "PPG6017",
+              "name": "Advanced Seminar in Higher Education Policy and Governance",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "EDUHK-TPG-DIR-MPPM-HIGHER-EDUCATION-POLICY-MANAGEMENT",
+                "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"
+              ],
+              "sourceUrl": "https://www.eduhk.hk/ssps/mppm"
+            },
+            {
+              "code": "PPG6020",
+              "name": "Educational Leadership in the Tertiary Sector",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "EDUHK-TPG-DIR-MPPM-HIGHER-EDUCATION-POLICY-MANAGEMENT",
+                "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"
+              ],
+              "sourceUrl": "https://www.eduhk.hk/ssps/mppm"
+            },
+            {
+              "code": "PPG6018",
+              "name": "Managing Universities in the Global Context: Policies and Strategies",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "EDUHK-TPG-DIR-MPPM-HIGHER-EDUCATION-POLICY-MANAGEMENT",
+                "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"
+              ],
+              "sourceUrl": "https://www.eduhk.hk/ssps/mppm"
+            },
+            {
+              "code": "PPG6019",
+              "name": "Quality Assurance and Management in Higher Education",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "EDUHK-TPG-DIR-MPPM-HIGHER-EDUCATION-POLICY-MANAGEMENT",
+                "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"
+              ],
+              "sourceUrl": "https://www.eduhk.hk/ssps/mppm"
+            },
+            {
+              "code": "SSC6178",
+              "name": "Education and Society in Greater China and Asia",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "EDUHK-TPG-DIR-MPPM-HIGHER-EDUCATION-POLICY-MANAGEMENT",
+                "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"
+              ],
+              "sourceUrl": "https://www.eduhk.hk/ssps/mppm"
+            }
+          ]
+        }
+      ],
+      "trackSelectionOptional": false,
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.eduhk.hk/ssps/mppm",
+      "courseStatusNote": "",
+      "creditUnit": "credit points",
+      "ruleReviewStatus": "verified"
     },
     {
       "id": "EDUHK-TPG-DIR-MSC-ADS",
@@ -38992,7 +39993,7 @@
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
       "creditsRequired": null,
-      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceUrl": "https://www.eduhk.hk/mit/en/mscads",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
       "lastVerifiedAt": "2026-07-11",
@@ -39000,7 +40001,11 @@
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseGroups": [],
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.eduhk.hk/mit/en/mscads",
+      "courseStatusNote": "The current 2026-27 Programme page confirms a new 24-credit award comprising four 3-credit Core Courses and four of seven 3-credit Elective Courses, and publishes every current title and credit value. It does not publish the course codes. One overlapping Python course can be found under another Programme, but that isolated match is not evidence for the complete new MSc(ADS) code table. Keep the structure closed until EdUHK publishes the current course catalogue or official outlines for all eleven courses; do not infer codes from related MIT offerings."
     },
     {
       "id": "EDUHK-TPG-DIR-MSC-AI-EDTECH",
@@ -39195,7 +40200,7 @@
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
       "creditsRequired": null,
-      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=9112",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
       "lastVerifiedAt": "2026-07-11",
@@ -39203,7 +40208,11 @@
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseGroups": [],
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=9112",
+      "courseStatusNote": "The current 2026-27 Programme page confirms a 24-credit award comprising four 3-credit Core Courses and four of seven 3-credit Elective Courses, and publishes every current title and credit value. The current official prospectus presents the same 12-plus-12 structure but notes that the courses offered remain subject to review. Neither source publishes the current course codes, and official searches for the named Core and Elective Courses do not locate a complete current code table or authenticated outlines. Keep the structure closed until EdUHK publishes official codes for all eleven courses; do not infer codes from similarly titled learning-sciences or educational-technology courses."
     },
     {
       "id": "EDUHK-TPG-DIR-MSOCSC-EP",
@@ -39212,16 +40221,182 @@
       "name": "Master of Social Sciences in Educational Psychology",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
-      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "creditsRequired": 78,
+      "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=9859",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
       "lastVerifiedAt": "2026-07-11",
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "taught-courses",
+          "name": "Taught Courses",
+          "type": "core",
+          "creditsRequired": 45,
+          "coursesRequired": 15,
+          "ruleText": "Complete all fifteen Taught Courses (45 credit points). Each Taught Course carries 3 credit points.",
+          "sourceUrl": "https://www.eduhk.hk/fehd/files/file/Admission/PG/MSocSc%28EP%29_Information_Session_2025_Revised.pdf",
+          "courses": [
+            {
+              "code": "PSY6105",
+              "name": "Research and Statistical Methods I",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6106",
+              "name": "Research and Statistical Methods II",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6107",
+              "name": "Psychoeducational Assessment: Learning and Cognitive Abilities",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6108",
+              "name": "Psychoeducational Assessment: Socio-emotional and Behavioural Functioning",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6109",
+              "name": "Children with Special Needs I",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6110",
+              "name": "Children with Special Needs II",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6111",
+              "name": "Psychoeducational Intervention I",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6112",
+              "name": "Psychoeducational Intervention II",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6113",
+              "name": "Skills Training Seminar I",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6114",
+              "name": "Skills Training Seminar II",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6115",
+              "name": "Skills Training Seminar III",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6116",
+              "name": "Curriculum and Instruction",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6117",
+              "name": "Professional Issues and Ethical Practices in Educational Psychology",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6118",
+              "name": "Applied Developmental Psychology",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6119",
+              "name": "Learning and Motivation",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            }
+          ]
+        },
+        {
+          "id": "practicum-courses",
+          "name": "Practicum Courses",
+          "type": "practicum",
+          "creditsRequired": 27,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five Practicum Courses (27 credit points). The five Practicums carry 4, 2, 3, 9 and 9 credit points respectively and provide at least 180 days or 1,200 hours of supervised practice.",
+          "sourceUrl": "https://www.eduhk.hk/fehd/files/file/Admission/PG/MSocSc%28EP%29_Information_Session_2025_Revised.pdf",
+          "courses": [
+            {
+              "code": "PSY6120",
+              "name": "Practicum I",
+              "credits": 4,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6121",
+              "name": "Practicum II",
+              "credits": 2,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6122",
+              "name": "Practicum III",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6123",
+              "name": "Practicum IV",
+              "credits": 9,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            },
+            {
+              "code": "PSY6124",
+              "name": "Practicum V",
+              "credits": 9,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            }
+          ]
+        },
+        {
+          "id": "research-experience-course",
+          "name": "Research Experience Course",
+          "type": "dissertation",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Complete the 6-credit Thesis as the required Research Experience Course.",
+          "sourceUrl": "https://www.eduhk.hk/fehd/files/file/Admission/PG/MSocSc%28EP%29_Information_Session_2025_Revised.pdf",
+          "courses": [
+            {
+              "code": "PSY6125",
+              "name": "Thesis",
+              "credits": 6,
+              "sourceUrl": "https://www.eduhk.hk/ps/en/learning_teaching.php?s=courses"
+            }
+          ]
+        }
+      ],
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=9859",
+      "courseStatusNote": "",
+      "creditUnit": "credit points",
+      "ruleReviewStatus": "verified"
     },
     {
       "id": "EDUHK-TPG-DIR-MSOCSCP-SCS",
@@ -39249,7 +40424,7 @@
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
       "creditsRequired": null,
-      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceUrl": "https://hpe.eduhk.hk/programmes/master-of-social-sciences-in-sports-coaching-and-management/",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
       "lastVerifiedAt": "2026-07-11",
@@ -39257,7 +40432,11 @@
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseGroups": [],
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://hpe.eduhk.hk/programmes/master-of-social-sciences-in-sports-coaching-and-management/",
+      "courseStatusNote": "The current 2026-27 Programme page and official prospectus confirm a 24-credit award with three 3-credit Core Courses and either five 3-credit Elective Courses or three 3-credit Elective Courses plus a 6-credit Master's Thesis. They publish all current titles and credits but omit course codes. The older official handbook maps most titles to codes, but it has a superseded four-Core structure, a 9-credit PES6260 thesis, and no code for the new Sports Coaching and Management for Selected Populations elective. Keep the structure closed until a current official catalogue identifies every code and confirms the code for the revised 6-credit thesis; do not carry forward the obsolete 2023-24 mapping as current data."
     },
     {
       "id": "EDUHK-TPG-DIR-MSOCSC-TPWB",
@@ -39267,7 +40446,7 @@
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
       "creditsRequired": null,
-      "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
+      "sourceUrl": "https://hpe.eduhk.hk/programmes/master-of-social-sciences-in-therapeutic-play-and-well-being/",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
       "lastVerifiedAt": "2026-07-11",
@@ -39275,7 +40454,11 @@
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseGroups": [],
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://hpe.eduhk.hk/programmes/master-of-social-sciences-in-therapeutic-play-and-well-being/",
+      "courseStatusNote": "The current 2026-27 Programme page and official prospectus confirm 24 credit points: three 3-credit Core Courses, three of nine 3-credit Elective Courses, and the 6-credit Therapeutic Play Skills practicum. They publish all current titles and credits but omit the complete code table. Current official Moodle and course-sharing pages identify only a subset, including HCS6078-HCS6080, HCS6081-HCS6083, and HCS6086; the remaining cross-faculty electives are not fully mapped by a current consolidated official source. Keep the structure closed until all thirteen course codes are verified; do not publish a partial pool or infer the missing cross-faculty codes from titles."
     },
     {
       "id": "EDUHK-TPG-DIR-MTEACH",

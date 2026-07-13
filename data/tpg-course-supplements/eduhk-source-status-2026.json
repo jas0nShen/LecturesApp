@@ -21,6 +21,42 @@
       "status": "blocked",
       "sourceUrl": "https://ses.eduhk.hk/en/programmes/stem_ed",
       "statusNote": "The current 2026-27 Programme and detailed-course pages confirm 24 credit points: six 3-credit Core Courses, one of two 3-credit curriculum electives, and one of the 3-credit Research Project or Internship. They publish every current title and credit value but omit the course codes. Official search results and cross-Programme pages reveal only a subset of codes, which is not a complete Programme code table. Keep the structure closed until all ten current titles are mapped by a consolidated official catalogue or current course outlines; do not infer the missing codes from numbering patterns."
+    },
+    {
+      "programmeId": "EDUHK-TPG-DIR-MA-IECE",
+      "status": "blocked",
+      "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=9840",
+      "statusNote": "The current 2026-27 Programme page confirms a 24-credit award with six 3-credit Core Courses and either two of four 3-credit Specialised Courses or a 6-credit Thesis. It publishes all eleven current titles and credit requirements but no course codes. The current Master course catalogues of both co-delivering departments, Early Childhood Education and Special Education and Counselling, do not contain a complete matching code table for these new titles; a few older courses have only similar wording and are not sufficient mapping evidence. Keep the structure closed until official current outlines identify every code and the Thesis code; do not map the new curriculum onto similarly titled legacy courses."
+    },
+    {
+      "programmeId": "EDUHK-TPG-DIR-MSOCSC-SCM",
+      "status": "blocked",
+      "sourceUrl": "https://hpe.eduhk.hk/programmes/master-of-social-sciences-in-sports-coaching-and-management/",
+      "statusNote": "The current 2026-27 Programme page and official prospectus confirm a 24-credit award with three 3-credit Core Courses and either five 3-credit Elective Courses or three 3-credit Elective Courses plus a 6-credit Master's Thesis. They publish all current titles and credits but omit course codes. The older official handbook maps most titles to codes, but it has a superseded four-Core structure, a 9-credit PES6260 thesis, and no code for the new Sports Coaching and Management for Selected Populations elective. Keep the structure closed until a current official catalogue identifies every code and confirms the code for the revised 6-credit thesis; do not carry forward the obsolete 2023-24 mapping as current data."
+    },
+    {
+      "programmeId": "EDUHK-TPG-DIR-MSC-ADS",
+      "status": "blocked",
+      "sourceUrl": "https://www.eduhk.hk/mit/en/mscads",
+      "statusNote": "The current 2026-27 Programme page confirms a new 24-credit award comprising four 3-credit Core Courses and four of seven 3-credit Elective Courses, and publishes every current title and credit value. It does not publish the course codes. One overlapping Python course can be found under another Programme, but that isolated match is not evidence for the complete new MSc(ADS) code table. Keep the structure closed until EdUHK publishes the current course catalogue or official outlines for all eleven courses; do not infer codes from related MIT offerings."
+    },
+    {
+      "programmeId": "EDUHK-TPG-DIR-MSC-LSSE",
+      "status": "blocked",
+      "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=9112",
+      "statusNote": "The current 2026-27 Programme page confirms a 24-credit award comprising four 3-credit Core Courses and four of seven 3-credit Elective Courses, and publishes every current title and credit value. The current official prospectus presents the same 12-plus-12 structure but notes that the courses offered remain subject to review. Neither source publishes the current course codes, and official searches for the named Core and Elective Courses do not locate a complete current code table or authenticated outlines. Keep the structure closed until EdUHK publishes official codes for all eleven courses; do not infer codes from similarly titled learning-sciences or educational-technology courses."
+    },
+    {
+      "programmeId": "EDUHK-TPG-DIR-MSOCSC-TPWB",
+      "status": "blocked",
+      "sourceUrl": "https://hpe.eduhk.hk/programmes/master-of-social-sciences-in-therapeutic-play-and-well-being/",
+      "statusNote": "The current 2026-27 Programme page and official prospectus confirm 24 credit points: three 3-credit Core Courses, three of nine 3-credit Elective Courses, and the 6-credit Therapeutic Play Skills practicum. They publish all current titles and credits but omit the complete code table. Current official Moodle and course-sharing pages identify only a subset, including HCS6078-HCS6080, HCS6081-HCS6083, and HCS6086; the remaining cross-faculty electives are not fully mapped by a current consolidated official source. Keep the structure closed until all thirteen course codes are verified; do not publish a partial pool or infer the missing cross-faculty codes from titles."
+    },
+    {
+      "programmeId": "EDUHK-TPG-DIR-MA-CHEM",
+      "status": "blocked",
+      "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=9118",
+      "statusNote": "The current 2026-27 Programme page confirms a 24-credit award comprising four 3-credit Core Courses and four 3-credit Specialisation Courses. It states that the Xiqu Specialisation is not open in 2026-27, but the public structure displays only the four Core titles and an isolated Internship in Xiqu line; it neither publishes the complete current Heritage Education and Management Specialisation course list nor any course codes. Keep the structure closed until EdUHK publishes the complete 2026-27 specialisation table and official codes; do not treat the closed Xiqu path or the incomplete page fragment as the current curriculum."
     }
   ]
 }

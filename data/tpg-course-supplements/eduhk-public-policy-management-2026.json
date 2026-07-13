@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "EDUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "EDUHK-TPG-DIR-MPPM",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "credit points",
+      "sourceUrl": "https://www.eduhk.hk/ssps/mppm",
+      "ruleReviewStatus": "verified",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Core Courses (12 credit points).",
+          "sourceUrl": "https://www.eduhk.hk/ssps/mppm",
+          "courses": [
+            { "code": "PPG6001", "name": "Research Methods for Policy Analysis and Evaluation", "credits": 3 },
+            { "code": "PPG6002", "name": "Public Policy and Governance: Processes and Techniques", "credits": 3 },
+            { "code": "PPG6003", "name": "Strategic Communication", "credits": 3 },
+            { "code": "PPG6013", "name": "Organisational Behaviour and Development", "credits": 3 }
+          ]
+        },
+        {
+          "id": "elective-block-a",
+          "name": "Elective Courses - Block A",
+          "type": "elective",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Choose one of the three Block A courses (3 credit points): Internship, Overseas Experiential Learning, or Advanced Thesis in Public Policy and Management.",
+          "sourceUrl": "https://www.eduhk.hk/ssps/zh-hans/mppm",
+          "courses": [
+            { "code": "PPG6030", "name": "Internship", "credits": 3 },
+            { "code": "PPG6031", "name": "Overseas Experiential Learning", "credits": 3 },
+            { "code": "PPG6032", "name": "Advanced Thesis in Public Policy and Management", "credits": 3 }
+          ]
+        },
+        {
+          "id": "elective-block-b",
+          "name": "Elective Courses - Block B",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Choose three Block B courses (9 credit points) from one official Specialisation, or choose any three across the three Specialisations without an MPPM Specialisation. Course offering and quotas are subject to the Department's decision and enrolment.",
+          "sourceUrl": "https://www.eduhk.hk/ssps/mppm",
+          "courses": [
+            { "code": "PPG6004", "name": "Managing Public Finance", "credits": 3, "appliesToTrackIds": ["EDUHK-TPG-DIR-MPPM-GOVERNANCE-PUBLIC-MANAGEMENT", "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"] },
+            { "code": "PPG6011", "name": "Human Resource Management", "credits": 3, "appliesToTrackIds": ["EDUHK-TPG-DIR-MPPM-GOVERNANCE-PUBLIC-MANAGEMENT", "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"] },
+            { "code": "PPG6012", "name": "International Public Management", "credits": 3, "appliesToTrackIds": ["EDUHK-TPG-DIR-MPPM-GOVERNANCE-PUBLIC-MANAGEMENT", "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"] },
+            { "code": "PPG6005", "name": "Public Administration and Management in Asia", "credits": 3, "appliesToTrackIds": ["EDUHK-TPG-DIR-MPPM-GOVERNANCE-PUBLIC-MANAGEMENT", "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"] },
+            { "code": "PPG6006", "name": "Project Appraisal and Impact Analysis", "credits": 3, "appliesToTrackIds": ["EDUHK-TPG-DIR-MPPM-GOVERNANCE-PUBLIC-MANAGEMENT", "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"] },
+            { "code": "PPG6014", "name": "Regulation and Regulatory Governance", "credits": 3, "appliesToTrackIds": ["EDUHK-TPG-DIR-MPPM-GOVERNANCE-PUBLIC-MANAGEMENT", "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"] },
+            { "code": "PPG6015", "name": "Environmental Policy and Governance", "credits": 3, "appliesToTrackIds": ["EDUHK-TPG-DIR-MPPM-GOVERNANCE-PUBLIC-MANAGEMENT", "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"] },
+            { "code": "PPG6007", "name": "Managing of Social Services", "credits": 3, "appliesToTrackIds": ["EDUHK-TPG-DIR-MPPM-SOCIAL-POLICY", "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"] },
+            { "code": "PPG6010", "name": "Social Policy and Aging", "credits": 3, "appliesToTrackIds": ["EDUHK-TPG-DIR-MPPM-SOCIAL-POLICY", "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"] },
+            { "code": "PPG6026", "name": "Comparative Social Policy in Asia", "credits": 3, "appliesToTrackIds": ["EDUHK-TPG-DIR-MPPM-SOCIAL-POLICY", "EDUHK-TPG-DIR-MPPM-HIGHER-EDUCATION-POLICY-MANAGEMENT", "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"] },
+            { "code": "PPG6008", "name": "Social Protection Arrangements", "credits": 3, "appliesToTrackIds": ["EDUHK-TPG-DIR-MPPM-SOCIAL-POLICY", "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"] },
+            { "code": "PPG6009", "name": "Comparative Health Policy", "credits": 3, "appliesToTrackIds": ["EDUHK-TPG-DIR-MPPM-SOCIAL-POLICY", "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"] },
+            { "code": "PPG6021", "name": "Poverty, Inequality and Social Policy", "credits": 3, "appliesToTrackIds": ["EDUHK-TPG-DIR-MPPM-SOCIAL-POLICY", "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"] },
+            { "code": "PPG6017", "name": "Advanced Seminar in Higher Education Policy and Governance", "credits": 3, "appliesToTrackIds": ["EDUHK-TPG-DIR-MPPM-HIGHER-EDUCATION-POLICY-MANAGEMENT", "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"] },
+            { "code": "PPG6020", "name": "Educational Leadership in the Tertiary Sector", "credits": 3, "appliesToTrackIds": ["EDUHK-TPG-DIR-MPPM-HIGHER-EDUCATION-POLICY-MANAGEMENT", "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"] },
+            { "code": "PPG6018", "name": "Managing Universities in the Global Context: Policies and Strategies", "credits": 3, "appliesToTrackIds": ["EDUHK-TPG-DIR-MPPM-HIGHER-EDUCATION-POLICY-MANAGEMENT", "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"] },
+            { "code": "PPG6019", "name": "Quality Assurance and Management in Higher Education", "credits": 3, "appliesToTrackIds": ["EDUHK-TPG-DIR-MPPM-HIGHER-EDUCATION-POLICY-MANAGEMENT", "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"] },
+            { "code": "SSC6178", "name": "Education and Society in Greater China and Asia", "credits": 3, "appliesToTrackIds": ["EDUHK-TPG-DIR-MPPM-HIGHER-EDUCATION-POLICY-MANAGEMENT", "EDUHK-TPG-DIR-MPPM-NO-SPECIALISATION"] }
+          ]
+        }
+      ]
+    }
+  ]
+}

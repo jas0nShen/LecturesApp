@@ -28,15 +28,48 @@
         ["MSc(EdN)", "Master of Science in Educational Neuroscience"],
         ["MSc(ESGSD)", "Master of Science in Environmental, Social and Governance for Sustainable Development"],
         ["MEd", "Master of Education"],
-        ["MA(CFE)", "Master of Arts in Child and Family Education"],
+        {
+          "programmeCode": "MA(CFE)",
+          "name": "Master of Arts in Child and Family Education",
+          "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=705",
+          "trackSelectionOptional": false,
+          "tracks": [
+            { "code": "THESIS", "name": "Thesis Track", "type": "Elective Track" },
+            { "code": "PRACTICE", "name": "Practice Track", "type": "Elective Track" }
+          ]
+        },
         ["MACSLE", "Master of Arts in Chinese Studies (Language Education)"],
-        ["MA(CHEM)", "Master of Arts in Cultural Heritage Education and Management"],
-        ["MADHCP", "Master of Arts in Digital Humanities for Cultural Professionals"],
-        ["MA(EfS)", "Master of Arts in Education for Sustainability"],
-        ["MA(EC)", "Master of Arts in Educational Counselling"],
+        {
+          "programmeCode": "MA(CHEM)",
+          "name": "Master of Arts in Cultural Heritage Education and Management",
+          "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=9118"
+        },
+        {
+          "programmeCode": "MADHCP",
+          "name": "Master of Arts in Digital Humanities for Cultural Professionals",
+          "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-digital-humanities-for-cultural-professionals-madhcp/programme-information/programme-structure"
+        },
+        {
+          "programmeCode": "MA(EfS)",
+          "name": "Master of Arts in Education for Sustainability",
+          "sourceUrl": "https://ses.eduhk.hk/en/programmes/maefs"
+        },
+        {
+          "programmeCode": "MA(EC)",
+          "name": "Master of Arts in Educational Counselling",
+          "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=230"
+        },
         ["MAGHE", "Master of Arts in Global Histories of Education"],
-        ["MA(GSE)", "Master of Arts in Global Studies in Education"],
-        ["MA(IECE)", "Master of Arts in Inclusive Early Childhood Education"],
+        {
+          "programmeCode": "MA(GSE)",
+          "name": "Master of Arts in Global Studies in Education",
+          "sourceUrl": "https://www.eduhk.hk/magse"
+        },
+        {
+          "programmeCode": "MA(IECE)",
+          "name": "Master of Arts in Inclusive Early Childhood Education",
+          "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=9840"
+        },
         {
           "programmeCode": "MAICT",
           "name": "Master of Arts in Intercultural Communication and Translation",
@@ -53,7 +86,11 @@
           "name": "Master of Arts in Personal Finance Education",
           "sourceUrl": "https://www.eduhk.hk/ssps/mapfe"
         },
-        ["MA(PPE)", "Master of Arts in Positive Psychology in Education"],
+        {
+          "programmeCode": "MA(PPE)",
+          "name": "Master of Arts in Positive Psychology in Education",
+          "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=4788"
+        },
         {
           "programmeCode": "MA(STEM Ed)",
           "name": "Master of Arts in STEM Education",
@@ -79,9 +116,28 @@
             { "code": "DIGITAL-TECHNOLOGY", "name": "MATESOL (Digital Technology for English Learning and Teaching)", "type": "Degree Strand" }
           ]
         },
-        ["MA(VAECP)", "Master of Arts in Visual Arts Education and Creative Practice"],
-        ["MPPM", "Master of Public Policy and Management"],
-        ["MSc(ADS)", "Master of Science in Applied Data Science"],
+        {
+          "programmeCode": "MA(VAECP)",
+          "name": "Master of Arts in Visual Arts Education and Creative Practice",
+          "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-visual-arts-education-and-creative-practice-mavaecp/programme-information/mavaecp-programme-structure"
+        },
+        {
+          "programmeCode": "MPPM",
+          "name": "Master of Public Policy and Management",
+          "sourceUrl": "https://www.eduhk.hk/ssps/mppm",
+          "trackSelectionOptional": false,
+          "tracks": [
+            { "code": "GOVERNANCE-PUBLIC-MANAGEMENT", "name": "Specialisation I in Governance and Public Management", "type": "Specialisation" },
+            { "code": "SOCIAL-POLICY", "name": "Specialisation II in Social Policy", "type": "Specialisation" },
+            { "code": "HIGHER-EDUCATION-POLICY-MANAGEMENT", "name": "Specialisation III in Higher Education Policy and Management", "type": "Specialisation" },
+            { "code": "NO-SPECIALISATION", "name": "No MPPM Specialisation", "type": "Award Path" }
+          ]
+        },
+        {
+          "programmeCode": "MSc(ADS)",
+          "name": "Master of Science in Applied Data Science",
+          "sourceUrl": "https://www.eduhk.hk/mit/en/mscads"
+        },
         {
           "programmeCode": "MSc(AI&EdTech)",
           "name": "Master of Science in Artificial Intelligence and Educational Technology",
@@ -90,11 +146,27 @@
         ["MSc(EPM)-EN", "Master of Science in Education Policy and Management (English)"],
         ["MSc(EPM)-ZH", "Master of Science in Education Policy and Management (Chinese)"],
         ["MScESLPLD", "Master of Science in Educational Speech-Language Pathology and Learning Disabilities"],
-        ["MSc(LSSE)", "Master of Science in Learning Sciences and Smart Education"],
-        ["MSocSc(EP)", "Master of Social Sciences in Educational Psychology"],
+        {
+          "programmeCode": "MSc(LSSE)",
+          "name": "Master of Science in Learning Sciences and Smart Education",
+          "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=9112"
+        },
+        {
+          "programmeCode": "MSocSc(EP)",
+          "name": "Master of Social Sciences in Educational Psychology",
+          "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=9859"
+        },
         ["MSocScP(SCS)", "Master of Social Sciences in Psychology (Schools and Community Settings)"],
-        ["MSocSc(SCM)", "Master of Social Sciences in Sports Coaching and Management"],
-        ["MSocSc(TPWB)", "Master of Social Sciences in Therapeutic Play and Well-Being"],
+        {
+          "programmeCode": "MSocSc(SCM)",
+          "name": "Master of Social Sciences in Sports Coaching and Management",
+          "sourceUrl": "https://hpe.eduhk.hk/programmes/master-of-social-sciences-in-sports-coaching-and-management/"
+        },
+        {
+          "programmeCode": "MSocSc(TPWB)",
+          "name": "Master of Social Sciences in Therapeutic Play and Well-Being",
+          "sourceUrl": "https://hpe.eduhk.hk/programmes/master-of-social-sciences-in-therapeutic-play-and-well-being/"
+        },
         ["MTeach", "Master of Teaching"]
       ]
     },

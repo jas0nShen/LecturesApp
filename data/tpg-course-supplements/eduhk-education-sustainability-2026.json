@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "EDUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "EDUHK-TPG-DIR-MA-EFS",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "credit points",
+      "sourceUrl": "https://ses.eduhk.hk/en/programmes/maefs",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Complete all six Core Courses (18 credit points): four in Semester 1 and two in Semester 2.",
+          "sourceUrl": "https://ses.eduhk.hk/en/programmes/maefs",
+          "courses": [
+            { "code": "SES6020", "name": "Sustainability Studies: An Overview", "credits": 3 },
+            { "code": "SES6021", "name": "Global and Local Issues in Education for Sustainability", "credits": 3 },
+            { "code": "SES6022", "name": "Learning and Teaching in Education for Sustainability", "credits": 3 },
+            { "code": "SES6024", "name": "Research in Education for Sustainability", "credits": 3 },
+            { "code": "SES6023", "name": "Assessment and Evaluation in EfS, Theory and Practice", "credits": 3 },
+            { "code": "SES6025", "name": "Sustainable Campus Development", "credits": 3 }
+          ]
+        },
+        {
+          "id": "elective-or-thesis",
+          "name": "Elective Courses / Thesis",
+          "type": "elective_with_optional_dissertation",
+          "creditsRequired": 6,
+          "ruleText": "Complete both 3-credit Elective Courses (SES6058 and SES6059), or complete the 6-credit SES6026 Thesis Writing Course and Research Thesis Project on EfS. The mutually exclusive path requires manual audit review.",
+          "sourceUrl": "https://ses.eduhk.hk/en/programmes/maefs",
+          "courses": [
+            { "code": "SES6058", "name": "Climate Change and Carbon Management", "credits": 3 },
+            { "code": "SES6059", "name": "Sustainability Communications", "credits": 3 },
+            { "code": "SES6026", "name": "Thesis Writing Course and Research Thesis Project on EfS", "credits": 6 }
+          ]
+        }
+      ]
+    }
+  ]
+}

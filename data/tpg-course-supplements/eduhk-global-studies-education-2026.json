@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "EDUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "EDUHK-TPG-DIR-MA-GSE",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "credit points",
+      "sourceUrl": "https://www.eduhk.hk/magse",
+      "ruleReviewStatus": "verified",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Core Courses (12 credit points).",
+          "sourceUrl": "https://www.eduhk.hk/epl/en/learning_teaching.php?s=courses",
+          "courses": [
+            { "code": "PFS6055", "name": "Research and Academic Writing in Global Studies in Education", "credits": 3 },
+            { "code": "PFS6056", "name": "Local Education in a Globalized World", "credits": 3 },
+            { "code": "PFS6057", "name": "Contemporary Global Challenges", "credits": 3 },
+            { "code": "PFS6058", "name": "Key Issues in Education in Global Context", "credits": 3 }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete four of the six Elective Courses (12 credit points). The official Programme page states that the listed electives may not be offered every year.",
+          "sourceUrl": "https://www.eduhk.hk/epl/en/learning_teaching.php?s=courses",
+          "courses": [
+            { "code": "PFS6059", "name": "Global Governance and Education Policy", "credits": 3 },
+            { "code": "PFS6060", "name": "Inequality in Education", "credits": 3 },
+            { "code": "PFS6061", "name": "Higher Education and International Development", "credits": 3 },
+            { "code": "PFS6062", "name": "Education Futures", "credits": 3 },
+            { "code": "PFS6063", "name": "Independent Project in Global Studies in Education", "credits": 3 },
+            { "code": "PFS6064", "name": "Histories of Modernisation and Education Development", "credits": 3 }
+          ]
+        }
+      ]
+    }
+  ]
+}

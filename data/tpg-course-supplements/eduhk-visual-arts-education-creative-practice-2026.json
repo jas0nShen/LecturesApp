@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "EDUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "EDUHK-TPG-DIR-MA-VAECP",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "credit points",
+      "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-visual-arts-education-and-creative-practice-mavaecp/programme-information/mavaecp-programme-structure",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core-courses-and-capstone",
+          "name": "Core Courses and Capstone Project",
+          "type": "core_capstone",
+          "creditsRequired": 15,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Core Courses (15 credit points), including the 6-credit VAC6004 Capstone Project.",
+          "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-visual-arts-education-and-creative-practice-mavaecp/programme-information/mavaecp-courses",
+          "courses": [
+            { "code": "VAC6001", "name": "Research Methods in Artistic Practices", "credits": 3 },
+            { "code": "VAC6002", "name": "Research Methods in Visual Arts Education", "credits": 3 },
+            { "code": "VAC6003", "name": "Contemporary Digital Media and Practices", "credits": 3 },
+            { "code": "VAC6004", "name": "Capstone Project", "credits": 6 }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete three Elective Courses (9 credit points). The official structure requires two of three Semester 1 electives and one of two Semester 2 electives, but the public course list does not label individual courses by semester; this semester-specific selection requires manual audit review.",
+          "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-visual-arts-education-and-creative-practice-mavaecp/programme-information/mavaecp-courses",
+          "courses": [
+            { "code": "VAC6005", "name": "Art Criticism and Museum Experience", "credits": 3 },
+            { "code": "VAC6006", "name": "Collaborative Art-making Practices", "credits": 3 },
+            { "code": "VAC6007", "name": "Critical Perspectives in Contemporary Arts Practices", "credits": 3 },
+            { "code": "VAC6008", "name": "Independent Studies in Visual Arts", "credits": 3 },
+            { "code": "MUS6290", "name": "Arts Management in Hong Kong", "credits": 3 }
+          ]
+        }
+      ]
+    }
+  ]
+}

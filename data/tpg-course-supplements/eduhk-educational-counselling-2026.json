@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "EDUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "EDUHK-TPG-DIR-MA-EC",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credit points",
+      "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=230",
+      "ruleReviewStatus": "verified",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 3,
+          "ruleText": "Complete all three 4-credit Core Courses (12 credit points).",
+          "sourceUrl": "https://www.eduhk.hk/sec/en/learning_teaching.php?s=courses",
+          "courses": [
+            { "code": "COU6014", "name": "Counselling Theories, Helping Process and Skills", "credits": 4 },
+            { "code": "COU6015", "name": "Child and Adolescent Counselling", "credits": 4 },
+            { "code": "COU6016", "name": "Counselling Ethics", "credits": 4 }
+          ]
+        },
+        {
+          "id": "specialist-courses",
+          "name": "Specialist Courses",
+          "type": "specialist",
+          "creditsRequired": 12,
+          "coursesRequired": 3,
+          "ruleText": "Complete all three 4-credit Specialist Courses (12 credit points).",
+          "sourceUrl": "https://www.eduhk.hk/sec/en/learning_teaching.php?s=courses",
+          "courses": [
+            { "code": "COU6017", "name": "Group Work", "credits": 4 },
+            { "code": "COU6018", "name": "Contemporary Issues in Child and Adolescent Development", "credits": 4 },
+            { "code": "COU6019", "name": "Psychoeducational Assessment and Testing", "credits": 4 }
+          ]
+        },
+        {
+          "id": "practicum-training",
+          "name": "Practicum Training",
+          "type": "practicum",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Complete both 3-credit Practicum courses (6 credit points).",
+          "sourceUrl": "https://www.eduhk.hk/sec/en/learning_teaching.php?s=courses",
+          "courses": [
+            { "code": "COU6020", "name": "Practicum I", "credits": 3 },
+            { "code": "COU6021", "name": "Practicum II", "credits": 3 }
+          ]
+        }
+      ]
+    }
+  ]
+}

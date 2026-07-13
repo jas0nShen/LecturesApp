@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "EDUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "EDUHK-TPG-DIR-MA-CFE",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "credit points",
+      "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=705",
+      "ruleReviewStatus": "verified",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Students in both Elective Tracks complete all six Core Courses (18 credit points).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.eduhk.hk/ece/en/learning_teaching.php?s=courses",
+          "courses": [
+            { "code": "ECE6175", "name": "Understanding Families in Educational and Community Settings", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ECE6176", "name": "Early Child Development and Education across Cultures", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ECE6177", "name": "Current Research in Parent-child Relationships", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ECE6178", "name": "Family Education: Principles and Practices", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ECE6179", "name": "Designing and Evaluating Programmes for Children and Families", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ECE6180", "name": "Research Methods in Education", "credits": 3, "appliesToTrackIds": [] }
+          ]
+        },
+        {
+          "id": "thesis-track",
+          "name": "Thesis Track",
+          "type": "dissertation",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Students assigned to the Thesis Track complete the 6-credit ECE6181 Thesis.",
+          "appliesToTrackIds": ["EDUHK-TPG-DIR-MA-CFE-THESIS"],
+          "sourceUrl": "https://www.eduhk.hk/ece/en/learning_teaching.php?s=courses",
+          "courses": [
+            { "code": "ECE6181", "name": "Thesis", "credits": 6, "appliesToTrackIds": ["EDUHK-TPG-DIR-MA-CFE-THESIS"] }
+          ]
+        },
+        {
+          "id": "practice-track",
+          "name": "Practice Track",
+          "type": "practicum",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Students assigned to the Practice Track complete both 3-credit Practice Track courses (6 credit points). Track assignment considers student preference, background, qualities and course quota.",
+          "appliesToTrackIds": ["EDUHK-TPG-DIR-MA-CFE-PRACTICE"],
+          "sourceUrl": "https://www.eduhk.hk/ece/en/learning_teaching.php?s=courses",
+          "courses": [
+            { "code": "ECE6209", "name": "Counselling in Child and Family Education: Theories and Skills", "credits": 3, "appliesToTrackIds": ["EDUHK-TPG-DIR-MA-CFE-PRACTICE"] },
+            { "code": "INS6040", "name": "Field Attachment in Child and Family Education", "credits": 3, "appliesToTrackIds": ["EDUHK-TPG-DIR-MA-CFE-PRACTICE"] }
+          ]
+        }
+      ]
+    }
+  ]
+}

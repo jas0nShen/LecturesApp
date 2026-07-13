@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "EDUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "EDUHK-TPG-DIR-MADHCP",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "credit points",
+      "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-digital-humanities-for-cultural-professionals-madhcp/programme-information/programme-structure",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Complete both Core Courses (6 credit points).",
+          "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-digital-humanities-for-cultural-professionals-madhcp/programme-information/madhcp-courses",
+          "courses": [
+            { "code": "CUS6031", "name": "Digital Humanities Methods", "credits": 3 },
+            { "code": "CUS6032", "name": "Doing Cultural Studies in the Digital Age", "credits": 3 }
+          ]
+        },
+        {
+          "id": "elective-or-capstone-project",
+          "name": "Elective Courses / Capstone Project",
+          "type": "elective_with_optional_project",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Complete six 3-credit Elective Courses, or five 3-credit Elective Courses plus the 3-credit CUS6034 Digital Humanities Project. Not all electives are offered every year; the optional Project substitution requires manual audit review.",
+          "sourceUrl": "https://www.eduhk.hk/fhm/postgraduate-programme/master-of-arts-in-digital-humanities-for-cultural-professionals-madhcp/programme-information/madhcp-courses",
+          "courses": [
+            { "code": "CAC6029", "name": "Arts Management in the Digital Era", "credits": 3 },
+            { "code": "CHI6926", "name": "Digital Literacy in Chinese Language Learning", "credits": 3 },
+            { "code": "CHI6931", "name": "Language Databases and Cultural Studies", "credits": 3 },
+            { "code": "CUS6033", "name": "Visualising Culture", "credits": 3 },
+            { "code": "ENG6452", "name": "Game-based Learning Design for Educators", "credits": 3 },
+            { "code": "INT6111", "name": "Metaverse in Education and Society", "credits": 3 },
+            { "code": "LIN6052", "name": "Digital Technology for Language Studies", "credits": 3 },
+            { "code": "LIT6061", "name": "English Literature and Data Analytics", "credits": 3 },
+            { "code": "VAC6003", "name": "Contemporary Digital Media and Practices", "credits": 3 },
+            { "code": "VAC6009", "name": "Curating Online Exhibitions for Visual Arts Learning", "credits": 3 },
+            { "code": "CUS6034", "name": "Digital Humanities Project", "credits": 3 }
+          ]
+        }
+      ]
+    }
+  ]
+}
