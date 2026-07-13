@@ -1911,7 +1911,508 @@
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseGroups": [
+        {
+          "id": "required-course",
+          "name": "Required Course",
+          "type": "core",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Complete TRAN6001 Advanced Translation Studies (3 units). This course is common to the general 24-unit path and all three optional Streams.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31",
+          "courses": [
+            {
+              "code": "TRAN6001",
+              "name": "Advanced Translation Studies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING",
+                "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            }
+          ]
+        },
+        {
+          "id": "elective-course-pool",
+          "name": "Elective Course Pool",
+          "type": "elective_with_optional_streams",
+          "creditsRequired": 21,
+          "coursesRequired": 7,
+          "ruleText": "Without a Stream, choose any seven courses (21 units) from the official elective pool. Written Translation Stream requires TRAN6002, TRAN6003 and TRAN6117, one of TRAN6110 or TRAN6114, and three further Stream electives. Interpreting Stream requires one course from each of the four Cantonese/English or Putonghua/English interpreting pairs (TRAN6205/6305, 6206/6306, 6207/6307 and 6208/6308) plus three further electives. Computer-augmented Translation Stream requires TRAN6601, TRAN6824 and TRAN6825, one of TRAN6821 or TRAN6823, and three further Stream electives. Students may take both courses in a stated either/or pair, but only one fulfils that pair and the other counts as an elective. Stream availability, course quotas, prerequisites and mutually exclusive language versions require manual audit review; not all electives are offered every year.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31",
+          "courses": [
+            {
+              "code": "TRAN6002",
+              "name": "E-C Translation Workshop",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6003",
+              "name": "C-E Translation Workshop",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6101",
+              "name": "Advanced Business Translation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING",
+                "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6102",
+              "name": "Financial Translation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING",
+                "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6103",
+              "name": "Introduction to Legal Translation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING",
+                "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6104",
+              "name": "Government & Public Affairs Translation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING",
+                "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6106",
+              "name": "Translation of Public Relations Writings",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING",
+                "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6107",
+              "name": "Mass Media Translation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING",
+                "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6108",
+              "name": "Audiovisual Translation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING",
+                "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6109",
+              "name": "Science and Technology Translation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING",
+                "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6110",
+              "name": "Literary Translation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING",
+                "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6111",
+              "name": "Arts Translation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING",
+                "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6112",
+              "name": "Readings in Translated Works",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING",
+                "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6113",
+              "name": "History of Translation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING",
+                "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6114",
+              "name": "Translation Criticism",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING",
+                "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6115",
+              "name": "Translation Process and Methodology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING",
+                "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6116",
+              "name": "Comparative Language Studies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING",
+                "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6117",
+              "name": "Bilingual Editing Skills",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING",
+                "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6119",
+              "name": "Special Topics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING",
+                "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6120",
+              "name": "Advanced Legal Translation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING",
+                "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6205",
+              "name": "Consecutive Interpreting I: C/E",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6206",
+              "name": "Consecutive Interpreting II: C/E",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6207",
+              "name": "Simultaneous Interpreting I: C/E",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6208",
+              "name": "Simultaneous Interpreting II: C/E",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6305",
+              "name": "Consecutive Interpreting I: P/E",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6306",
+              "name": "Consecutive Interpreting II: P/E",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6307",
+              "name": "Simultaneous Interpreting I: P/E",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6308",
+              "name": "Simultaneous Interpreting II: P/E",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6601",
+              "name": "Introduction to Computer-aided Translation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6811",
+              "name": "Bilingual Lexicography",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING",
+                "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6821",
+              "name": "Translation Technologies in the Age of AI",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING",
+                "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6823",
+              "name": "Terminology Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING",
+                "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6824",
+              "name": "Post-editing for Machine Translation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING",
+                "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6825",
+              "name": "Project Management for Computer-aided Translation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING",
+                "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6826",
+              "name": "Game Localization",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING",
+                "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6827",
+              "name": "Translation as Data: Methods, Tools, and Insights",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING",
+                "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            },
+            {
+              "code": "TRAN6910",
+              "name": "Research Seminar in Translation I",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-003-WRITTEN-TRANSLATION",
+                "CUHK-TPG-003-INTERPRETING",
+                "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"
+              ],
+              "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+            }
+          ]
+        }
+      ],
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.gs.cuhk.edu.hk/programmes/arts/ma-translation",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CUHK-TPG-003-WRITTEN-TRANSLATION",
+          "name": "Written Translation Stream",
+          "type": "Stream",
+          "creditsRequired": 24,
+          "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+        },
+        {
+          "id": "CUHK-TPG-003-INTERPRETING",
+          "name": "Interpreting Stream",
+          "type": "Stream",
+          "creditsRequired": 24,
+          "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+        },
+        {
+          "id": "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION",
+          "name": "Computer-augmented Translation Stream",
+          "type": "Stream",
+          "creditsRequired": 24,
+          "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+        }
+      ],
+      "trackSelectionOptional": true,
+      "creditUnit": "units",
+      "ruleReviewStatus": "manual_review_required"
     },
     {
       "id": "CUHK-TPG-004",
@@ -1944,7 +2445,12 @@
       "creditsRequired": 36,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseGroups": [],
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://masters.bschool.cuhk.edu.hk/programmes/mscfin/curriculum/",
+      "courseStatusNote": "The official 2026-27 Finance curriculum publishes different award requirements for the full-time path (36 credits: seven Core Courses plus 15 elective credits) and the part-time path (30 credits: five Core Courses plus 15 elective credits), while the current directory record has a single 30-credit requirement. The public curriculum lists course titles and mixed 3-credit/1.5-credit offerings but does not expose a complete current code-to-title table. Do not publish one study mode as if it applied to both; add verified Award Paths and official course codes before opening the structure."
     },
     {
       "id": "CUHK-TPG-007",
@@ -1955,7 +2461,12 @@
       "creditsRequired": 36,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseGroups": [],
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://masters.bschool.cuhk.edu.hk/programmes/mscba/curriculum/",
+      "courseStatusNote": "The official 2026-27 Business Analytics curriculum confirms 30 credits, five Core Courses and five Elective Courses, but the public curriculum and brochure expose titles without a complete current course-code table (only selected examples such as DOTE6696BA are coded). The directory record still carries 36 credits. Keep the Programme closed until every published course title is mapped to an official current code and the stale total is corrected from authoritative evidence."
     },
     {
       "id": "CUHK-TPG-008",
@@ -1999,7 +2510,12 @@
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseGroups": [],
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://msc.ie.cuhk.edu.hk/academic/",
+      "courseStatusNote": "The Information Engineering academic page confirms the 24-unit, eight-course rule and three-unit course format, but its published course offering is explicitly applicable to 2025-26 while Graduate School admissions have moved to 2026-27. Do not present the prior-year offering list as the current curriculum. Recheck when the 2026-27 IEMS/ENGG/IERG offering list or Student Guidebook is published."
     },
     {
       "id": "CUHK-TPG-012",
@@ -2054,7 +2570,422 @@
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseGroups": [
+        {
+          "id": "mmat-course-pool",
+          "name": "MMAT Course Pool",
+          "type": "elective_with_stream_rules",
+          "creditsRequired": 24,
+          "coursesRequired": 8,
+          "ruleText": "Complete 24 units. Mathematics Stream students complete 24 units in MMAT5xxx. Big Data Analytics and Computations Stream students complete 24 units in MMAT5xxx, including at least 18 units from MMAT5210, MMAT5230, MMAT5240, MMAT5250 and MMAT53xx. For either Stream, at most 3 units may instead be selected from MATH3xxx-4xxx or MATH5xxx-6xxx. The code-range rule and any external MATH selection require manual audit review; the listed pool contains the official MMAT courses only and does not imply that every course is offered every year.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics",
+          "courses": [
+            {
+              "code": "MMAT5000",
+              "name": "Analysis I",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5010",
+              "name": "Linear Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5011",
+              "name": "Analysis II",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5020",
+              "name": "Algebra & Geometry",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5021",
+              "name": "Differential and Algebraic Methods in Geometry",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5030",
+              "name": "Fourier Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5110",
+              "name": "Topics in Number Theory",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5120",
+              "name": "Topics in Geometry",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5130",
+              "name": "Topics in Differential Equations",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5140",
+              "name": "Probability Theory",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5210",
+              "name": "Discrete Mathematics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS",
+                "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5220",
+              "name": "Complex Analysis and Its Applications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5230",
+              "name": "Mathematics for Logistics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS",
+                "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5240",
+              "name": "Optimization and Modeling",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS",
+                "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5250",
+              "name": "Financial Mathematics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS",
+                "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5260",
+              "name": "Calculus of Variations",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5270",
+              "name": "Introduction to Inverse Problems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5310",
+              "name": "Financial Analytics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS",
+                "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5320",
+              "name": "Computational Mathematics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS",
+                "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5330",
+              "name": "Econometric Principles and Data Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS",
+                "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5340",
+              "name": "Probability and Stochastic Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS",
+                "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5350",
+              "name": "Coding Theory",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS",
+                "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5360",
+              "name": "Game Theory",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS",
+                "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5370",
+              "name": "Social and Economic Networks: theory, Modelling and Computations",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS",
+                "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5380",
+              "name": "Graph Theory and Networks",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS",
+                "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5390",
+              "name": "Mathematical Image Processing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS",
+                "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5391",
+              "name": "Mathematical Theories of Machine Learning",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS",
+                "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5392",
+              "name": "Mathematical Principles of Artificial Intelligence",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS",
+                "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5393",
+              "name": "Numerical Linear Algebra and Applications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS",
+                "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5394",
+              "name": "Markov Chains and Algorithmic Applications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS",
+                "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5395",
+              "name": "Mathematics of Games of Chance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS",
+                "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5396",
+              "name": "Mathematics of Multivariate Data",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS",
+                "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5410",
+              "name": "Guided Studies I",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5420",
+              "name": "Guided Studies II",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5430",
+              "name": "Graduate Seminar I",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            },
+            {
+              "code": "MMAT5440",
+              "name": "Graduate Seminar II",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "countsTowardTrackIds": [
+                "CUHK-TPG-016-MATHEMATICS"
+              ],
+              "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+            }
+          ]
+        }
+      ],
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.gs.cuhk.edu.hk/programmes/science/msc-mathematics",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CUHK-TPG-016-MATHEMATICS",
+          "name": "Mathematics Stream",
+          "type": "Stream",
+          "creditsRequired": 24,
+          "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+        },
+        {
+          "id": "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS",
+          "name": "Big Data Analytics and Computations Stream",
+          "type": "Stream",
+          "creditsRequired": 24,
+          "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+        }
+      ],
+      "creditUnit": "units",
+      "ruleReviewStatus": "manual_review_required"
     },
     {
       "id": "CUHK-TPG-017",
@@ -2065,7 +2996,173 @@
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete all three Core Courses (9 credits). The official 2026-27 full-time and part-time study plans both name STAT5101, STAT5102 and STAT5106 as the three Core Courses.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/",
+          "courses": [
+            {
+              "code": "STAT5101",
+              "name": "Foundations of Data Science",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/"
+            },
+            {
+              "code": "STAT5102",
+              "name": "Regression in Practice",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/"
+            },
+            {
+              "code": "STAT5106",
+              "name": "Programming Techniques for Data Science",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective_with_optional_research_workshop",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Choose five Elective Courses (15 credits) from the official course pool. STAT6111 Research Workshop is listed in the full-time Elective pool and offers either an organization-assigned project or a supervised CUHK research project; it is optional and is not a compulsory Project or Dissertation. Its full-time-only placement and all course availability require manual review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/",
+          "courses": [
+            {
+              "code": "STAT5103",
+              "name": "High-dimensional Data Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/"
+            },
+            {
+              "code": "STAT5104",
+              "name": "Data Mining",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/"
+            },
+            {
+              "code": "STAT5105",
+              "name": "Applied Survival Data Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/"
+            },
+            {
+              "code": "STAT5107",
+              "name": "Discrete Data Analytics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/"
+            },
+            {
+              "code": "STAT6104",
+              "name": "Financial Time Series",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/"
+            },
+            {
+              "code": "STAT6105",
+              "name": "Basic Actuarial Principles and Their Applications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/"
+            },
+            {
+              "code": "STAT6106",
+              "name": "Applied Bayesian Methods",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/"
+            },
+            {
+              "code": "STAT6107",
+              "name": "Selected Topics on Data Science and Business Statistics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/"
+            },
+            {
+              "code": "STAT6108",
+              "name": "Official Statistics and Structural Equation Modelling",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/"
+            },
+            {
+              "code": "STAT6207",
+              "name": "Applied Deep Learning",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/"
+            },
+            {
+              "code": "STAT6111",
+              "name": "Research Workshop",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/"
+            },
+            {
+              "code": "RMSC5101",
+              "name": "Statistical Methods in Risk Management and Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/"
+            },
+            {
+              "code": "RMSC6001",
+              "name": "Interest Rate and Fixed Incomes Risk Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/"
+            },
+            {
+              "code": "RMSC6003",
+              "name": "Risk Management in Financial Institutions",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/"
+            },
+            {
+              "code": "RMSC6004",
+              "name": "Special Topics in Risk Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/"
+            },
+            {
+              "code": "RMSC6007",
+              "name": "Risk and Financial Data Analytics with Python",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/"
+            }
+          ]
+        }
+      ],
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.gs.cuhk.edu.hk/programmes/science/msc-data-science-and-business-statistics",
+      "courseStatusNote": "",
+      "tracks": [],
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required"
     },
     {
       "id": "CUHK-TPG-018",
@@ -2076,7 +3173,12 @@
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseGroups": [],
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/study-schemes/",
+      "courseStatusNote": "The official 2026-27 Global Communication study scheme and both new specialization Streams are explicitly subject to the University's final approval. The published Stream lists also reference new course codes COMM5947 and COMM5992 that are not yet present in the official Communication course list. Keep the Programme index and official sources visible, but do not publish the superseded 2025-26 curriculum as the current structure. Recheck after final approval and course catalogue publication."
     },
     {
       "id": "HKUST-TPG-001",

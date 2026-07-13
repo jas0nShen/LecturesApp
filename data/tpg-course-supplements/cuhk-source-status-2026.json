@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "CUHK-TPG-006",
+      "status": "blocked",
+      "sourceUrl": "https://masters.bschool.cuhk.edu.hk/programmes/mscfin/curriculum/",
+      "statusNote": "The official 2026-27 Finance curriculum publishes different award requirements for the full-time path (36 credits: seven Core Courses plus 15 elective credits) and the part-time path (30 credits: five Core Courses plus 15 elective credits), while the current directory record has a single 30-credit requirement. The public curriculum lists course titles and mixed 3-credit/1.5-credit offerings but does not expose a complete current code-to-title table. Do not publish one study mode as if it applied to both; add verified Award Paths and official course codes before opening the structure."
+    },
+    {
+      "programmeId": "CUHK-TPG-007",
+      "status": "blocked",
+      "sourceUrl": "https://masters.bschool.cuhk.edu.hk/programmes/mscba/curriculum/",
+      "statusNote": "The official 2026-27 Business Analytics curriculum confirms 30 credits, five Core Courses and five Elective Courses, but the public curriculum and brochure expose titles without a complete current course-code table (only selected examples such as DOTE6696BA are coded). The directory record still carries 36 credits. Keep the Programme closed until every published course title is mapped to an official current code and the stale total is corrected from authoritative evidence."
+    },
+    {
+      "programmeId": "CUHK-TPG-011",
+      "status": "blocked",
+      "sourceUrl": "https://msc.ie.cuhk.edu.hk/academic/",
+      "statusNote": "The Information Engineering academic page confirms the 24-unit, eight-course rule and three-unit course format, but its published course offering is explicitly applicable to 2025-26 while Graduate School admissions have moved to 2026-27. Do not present the prior-year offering list as the current curriculum. Recheck when the 2026-27 IEMS/ENGG/IERG offering list or Student Guidebook is published."
+    },
+    {
+      "programmeId": "CUHK-TPG-018",
+      "status": "blocked",
+      "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/study-schemes/",
+      "statusNote": "The official 2026-27 Global Communication study scheme and both new specialization Streams are explicitly subject to the University's final approval. The published Stream lists also reference new course codes COMM5947 and COMM5992 that are not yet present in the official Communication course list. Keep the Programme index and official sources visible, but do not publish the superseded 2025-26 curriculum as the current structure. Recheck after final approval and course catalogue publication."
+    }
+  ]
+}

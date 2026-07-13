@@ -83,6 +83,13 @@
       ]
     },
     {
+      "root": "subpackages/tpg-data-cuhk",
+      "name": "tpg-data-cuhk",
+      "pages": [
+        "pages/loader/index"
+      ]
+    },
+    {
       "root": "subpackages/tpg-data-hkust",
       "name": "tpg-data-hkust",
       "pages": [

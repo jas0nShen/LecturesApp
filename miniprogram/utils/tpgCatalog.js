@@ -806,7 +806,38 @@ module.exports = {
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.gs.cuhk.edu.hk/programmes/arts/ma-translation",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CUHK-TPG-003-WRITTEN-TRANSLATION",
+          "name": "Written Translation Stream",
+          "type": "Stream",
+          "creditsRequired": 24,
+          "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+        },
+        {
+          "id": "CUHK-TPG-003-INTERPRETING",
+          "name": "Interpreting Stream",
+          "type": "Stream",
+          "creditsRequired": 24,
+          "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+        },
+        {
+          "id": "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION",
+          "name": "Computer-augmented Translation Stream",
+          "type": "Stream",
+          "creditsRequired": 24,
+          "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+        }
+      ],
+      "trackSelectionOptional": true,
+      "creditUnit": "units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 38
     },
     {
       "id": "CUHK-TPG-004",
@@ -839,6 +870,11 @@ module.exports = {
       "creditsRequired": 36,
       "sourceUrl": "",
       "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://masters.bschool.cuhk.edu.hk/programmes/mscfin/curriculum/",
+      "courseStatusNote": "The official 2026-27 Finance curriculum publishes different award requirements for the full-time path (36 credits: seven Core Courses plus 15 elective credits) and the part-time path (30 credits: five Core Courses plus 15 elective credits), while the current directory record has a single 30-credit requirement. The public curriculum lists course titles and mixed 3-credit/1.5-credit offerings but does not expose a complete current code-to-title table. Do not publish one study mode as if it applied to both; add verified Award Paths and official course codes before opening the structure.",
       "courseCount": 0
     },
     {
@@ -850,6 +886,11 @@ module.exports = {
       "creditsRequired": 36,
       "sourceUrl": "",
       "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://masters.bschool.cuhk.edu.hk/programmes/mscba/curriculum/",
+      "courseStatusNote": "The official 2026-27 Business Analytics curriculum confirms 30 credits, five Core Courses and five Elective Courses, but the public curriculum and brochure expose titles without a complete current course-code table (only selected examples such as DOTE6696BA are coded). The directory record still carries 36 credits. Keep the Programme closed until every published course title is mapped to an official current code and the stale total is corrected from authoritative evidence.",
       "courseCount": 0
     },
     {
@@ -894,6 +935,11 @@ module.exports = {
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://msc.ie.cuhk.edu.hk/academic/",
+      "courseStatusNote": "The Information Engineering academic page confirms the 24-unit, eight-course rule and three-unit course format, but its published course offering is explicitly applicable to 2025-26 while Graduate School admissions have moved to 2026-27. Do not present the prior-year offering list as the current curriculum. Recheck when the 2026-27 IEMS/ENGG/IERG offering list or Student Guidebook is published.",
       "courseCount": 0
     },
     {
@@ -949,7 +995,30 @@ module.exports = {
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.gs.cuhk.edu.hk/programmes/science/msc-mathematics",
+      "courseStatusNote": "",
+      "tracks": [
+        {
+          "id": "CUHK-TPG-016-MATHEMATICS",
+          "name": "Mathematics Stream",
+          "type": "Stream",
+          "creditsRequired": 24,
+          "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+        },
+        {
+          "id": "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS",
+          "name": "Big Data Analytics and Computations Stream",
+          "type": "Stream",
+          "creditsRequired": 24,
+          "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+        }
+      ],
+      "creditUnit": "units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 36
     },
     {
       "id": "CUHK-TPG-017",
@@ -960,7 +1029,15 @@ module.exports = {
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.gs.cuhk.edu.hk/programmes/science/msc-data-science-and-business-statistics",
+      "courseStatusNote": "",
+      "tracks": [],
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 19
     },
     {
       "id": "CUHK-TPG-018",
@@ -971,6 +1048,11 @@ module.exports = {
       "creditsRequired": 24,
       "sourceUrl": "",
       "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/study-schemes/",
+      "courseStatusNote": "The official 2026-27 Global Communication study scheme and both new specialization Streams are explicitly subject to the University's final approval. The published Stream lists also reference new course codes COMM5947 and COMM5992 that are not yet present in the official Communication course list. Keep the Programme index and official sources visible, but do not publish the superseded 2025-26 curriculum as the current structure. Recheck after final approval and course catalogue publication.",
       "courseCount": 0
     },
     {

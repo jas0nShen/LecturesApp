@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "CUHK-TPG-003",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "units",
+      "sourceUrl": "https://www.gs.cuhk.edu.hk/programmes/arts/ma-translation",
+      "ruleReviewStatus": "manual_review_required",
+      "trackSelectionOptional": true,
+      "tracks": [
+        {
+          "id": "CUHK-TPG-003-WRITTEN-TRANSLATION",
+          "name": "Written Translation Stream",
+          "type": "Stream",
+          "creditsRequired": 24,
+          "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+        },
+        {
+          "id": "CUHK-TPG-003-INTERPRETING",
+          "name": "Interpreting Stream",
+          "type": "Stream",
+          "creditsRequired": 24,
+          "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+        },
+        {
+          "id": "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION",
+          "name": "Computer-augmented Translation Stream",
+          "type": "Stream",
+          "creditsRequired": 24,
+          "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31"
+        }
+      ],
+      "courseGroups": [
+        {
+          "id": "required-course",
+          "name": "Required Course",
+          "type": "core",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Complete TRAN6001 Advanced Translation Studies (3 units). This course is common to the general 24-unit path and all three optional Streams.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31",
+          "courses": [
+            { "code": "TRAN6001", "name": "Advanced Translation Studies", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING", "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" }
+          ]
+        },
+        {
+          "id": "elective-course-pool",
+          "name": "Elective Course Pool",
+          "type": "elective_with_optional_streams",
+          "creditsRequired": 21,
+          "coursesRequired": 7,
+          "ruleText": "Without a Stream, choose any seven courses (21 units) from the official elective pool. Written Translation Stream requires TRAN6002, TRAN6003 and TRAN6117, one of TRAN6110 or TRAN6114, and three further Stream electives. Interpreting Stream requires one course from each of the four Cantonese/English or Putonghua/English interpreting pairs (TRAN6205/6305, 6206/6306, 6207/6307 and 6208/6308) plus three further electives. Computer-augmented Translation Stream requires TRAN6601, TRAN6824 and TRAN6825, one of TRAN6821 or TRAN6823, and three further Stream electives. Students may take both courses in a stated either/or pair, but only one fulfils that pair and the other counts as an elective. Stream availability, course quotas, prerequisites and mutually exclusive language versions require manual audit review; not all electives are offered every year.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31",
+          "courses": [
+            { "code": "TRAN6002", "name": "E-C Translation Workshop", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6003", "name": "C-E Translation Workshop", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6101", "name": "Advanced Business Translation", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING", "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6102", "name": "Financial Translation", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING", "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6103", "name": "Introduction to Legal Translation", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING", "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6104", "name": "Government & Public Affairs Translation", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING", "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6106", "name": "Translation of Public Relations Writings", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING", "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6107", "name": "Mass Media Translation", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING", "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6108", "name": "Audiovisual Translation", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING", "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6109", "name": "Science and Technology Translation", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING", "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6110", "name": "Literary Translation", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING", "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6111", "name": "Arts Translation", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING", "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6112", "name": "Readings in Translated Works", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING", "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6113", "name": "History of Translation", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING", "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6114", "name": "Translation Criticism", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING", "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6115", "name": "Translation Process and Methodology", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING", "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6116", "name": "Comparative Language Studies", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING", "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6117", "name": "Bilingual Editing Skills", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING", "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6119", "name": "Special Topics", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING", "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6120", "name": "Advanced Legal Translation", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING", "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6205", "name": "Consecutive Interpreting I: C/E", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6206", "name": "Consecutive Interpreting II: C/E", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6207", "name": "Simultaneous Interpreting I: C/E", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6208", "name": "Simultaneous Interpreting II: C/E", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6305", "name": "Consecutive Interpreting I: P/E", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6306", "name": "Consecutive Interpreting II: P/E", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6307", "name": "Simultaneous Interpreting I: P/E", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6308", "name": "Simultaneous Interpreting II: P/E", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6601", "name": "Introduction to Computer-aided Translation", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6811", "name": "Bilingual Lexicography", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING", "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6821", "name": "Translation Technologies in the Age of AI", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING", "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6823", "name": "Terminology Management", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING", "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6824", "name": "Post-editing for Machine Translation", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING", "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6825", "name": "Project Management for Computer-aided Translation", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING", "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6826", "name": "Game Localization", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING", "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6827", "name": "Translation as Data: Methods, Tools, and Insights", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING", "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" },
+            { "code": "TRAN6910", "name": "Research Seminar in Translation I", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-003-WRITTEN-TRANSLATION", "CUHK-TPG-003-INTERPRETING", "CUHK-TPG-003-COMPUTER-AUGMENTED-TRANSLATION"], "sourceUrl": "https://traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=31" }
+          ]
+        }
+      ]
+    }
+  ]
+}

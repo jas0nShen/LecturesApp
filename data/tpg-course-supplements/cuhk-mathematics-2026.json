@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "CUHK-TPG-016",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "units",
+      "sourceUrl": "https://www.gs.cuhk.edu.hk/programmes/science/msc-mathematics",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [
+        {
+          "id": "CUHK-TPG-016-MATHEMATICS",
+          "name": "Mathematics Stream",
+          "type": "Stream",
+          "creditsRequired": 24,
+          "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+        },
+        {
+          "id": "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS",
+          "name": "Big Data Analytics and Computations Stream",
+          "type": "Stream",
+          "creditsRequired": 24,
+          "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics"
+        }
+      ],
+      "courseGroups": [
+        {
+          "id": "mmat-course-pool",
+          "name": "MMAT Course Pool",
+          "type": "elective_with_stream_rules",
+          "creditsRequired": 24,
+          "coursesRequired": 8,
+          "ruleText": "Complete 24 units. Mathematics Stream students complete 24 units in MMAT5xxx. Big Data Analytics and Computations Stream students complete 24 units in MMAT5xxx, including at least 18 units from MMAT5210, MMAT5230, MMAT5240, MMAT5250 and MMAT53xx. For either Stream, at most 3 units may instead be selected from MATH3xxx-4xxx or MATH5xxx-6xxx. The code-range rule and any external MATH selection require manual audit review; the listed pool contains the official MMAT courses only and does not imply that every course is offered every year.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics",
+          "courses": [
+            { "code": "MMAT5000", "name": "Analysis I", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5010", "name": "Linear Analysis", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5011", "name": "Analysis II", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5020", "name": "Algebra & Geometry", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5021", "name": "Differential and Algebraic Methods in Geometry", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5030", "name": "Fourier Analysis", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5110", "name": "Topics in Number Theory", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5120", "name": "Topics in Geometry", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5130", "name": "Topics in Differential Equations", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5140", "name": "Probability Theory", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5210", "name": "Discrete Mathematics", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS", "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5220", "name": "Complex Analysis and Its Applications", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5230", "name": "Mathematics for Logistics", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS", "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5240", "name": "Optimization and Modeling", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS", "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5250", "name": "Financial Mathematics", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS", "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5260", "name": "Calculus of Variations", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5270", "name": "Introduction to Inverse Problems", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5310", "name": "Financial Analytics", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS", "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5320", "name": "Computational Mathematics", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS", "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5330", "name": "Econometric Principles and Data Analysis", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS", "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5340", "name": "Probability and Stochastic Analysis", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS", "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5350", "name": "Coding Theory", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS", "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5360", "name": "Game Theory", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS", "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5370", "name": "Social and Economic Networks: theory, Modelling and Computations", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS", "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5380", "name": "Graph Theory and Networks", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS", "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5390", "name": "Mathematical Image Processing", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS", "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5391", "name": "Mathematical Theories of Machine Learning", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS", "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5392", "name": "Mathematical Principles of Artificial Intelligence", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS", "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5393", "name": "Numerical Linear Algebra and Applications", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS", "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5394", "name": "Markov Chains and Algorithmic Applications", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS", "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5395", "name": "Mathematics of Games of Chance", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS", "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5396", "name": "Mathematics of Multivariate Data", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS", "CUHK-TPG-016-BIG-DATA-ANALYTICS-COMPUTATIONS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5410", "name": "Guided Studies I", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5420", "name": "Guided Studies II", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5430", "name": "Graduate Seminar I", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" },
+            { "code": "MMAT5440", "name": "Graduate Seminar II", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-016-MATHEMATICS"], "sourceUrl": "https://www.math.cuhk.edu.hk/postgraduates/taught-programme/msc-mathematics" }
+          ]
+        }
+      ]
+    }
+  ]
+}

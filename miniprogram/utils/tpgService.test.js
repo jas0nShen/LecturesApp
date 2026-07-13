@@ -9,8 +9,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 136);
-  assert.equal(coverage.courseCount, 3273);
+  assert.equal(coverage.programmeWithCoursesCount, 139);
+  assert.equal(coverage.courseCount, 3366);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -29,8 +29,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 136);
-  assert.equal(rows.length, 136);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 139);
+  assert.equal(rows.length, 139);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
@@ -469,6 +469,97 @@ test('HKUST Mechanical Engineering keeps its Materials Technology Concentration 
   assert.equal(concentration.courses.length, 8);
   assert.equal(tpgService.getProgrammeCourse(programme.id, 'MESF 6950').countsTowardTrackIds[0], track.id);
   assert.equal(tpgService.getProgrammeCourse(programme.id, 'MESF 5010', track.id).credits, 3);
+});
+
+test('CUHK Translation keeps all three Streams optional and preserves mutually exclusive course paths', () => {
+  const programme = tpgService.getProgramme('CUHK-TPG-003');
+  const tracks = Object.fromEntries(tpgService.listTracks(programme).map((track) => [track.name, track]));
+  const required = programme.courseGroups.find((group) => group.id === 'required-course');
+  const electives = programme.courseGroups.find((group) => group.id === 'elective-course-pool');
+  const courses = tpgService.flattenCourses(programme);
+
+  assert.equal(programme.creditsRequired, 24);
+  assert.equal(programme.name, 'Translation');
+  assert.equal(programme.creditUnit, 'units');
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(programme.trackSelectionOptional, true);
+  assert.equal(tpgService.listTracks(programme).length, 3);
+  assert.equal(tracks['Written Translation Stream'].creditsRequired, 24);
+  assert.equal(tracks['Interpreting Stream'].creditsRequired, 24);
+  assert.equal(tracks['Computer-augmented Translation Stream'].creditsRequired, 24);
+  assert.deepEqual([required.creditsRequired, electives.creditsRequired], [3, 21]);
+  assert.deepEqual([required.coursesRequired, electives.coursesRequired], [1, 7]);
+  assert.equal(courses.length, 38);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 38);
+  assert.equal(courses.every((course) => course.credits === 3), true);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'TRAN6001').name, 'Advanced Translation Studies');
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'TRAN6825').name, 'Project Management for Computer-aided Translation');
+  assert.match(electives.ruleText, /TRAN6205\/6305/);
+  assert.match(electives.ruleText, /only one fulfils that pair/);
+  assert.match(electives.ruleText, /not all electives are offered every year/);
+});
+
+test('CUHK Data Science and Business Statistics keeps Research Workshop optional and exposes the current 9-plus-15 structure', () => {
+  const programme = tpgService.getProgramme('CUHK-TPG-017');
+  const core = programme.courseGroups.find((group) => group.id === 'core-courses');
+  const electives = programme.courseGroups.find((group) => group.id === 'elective-courses');
+  const courses = tpgService.flattenCourses(programme);
+
+  assert.equal(programme.creditsRequired, 24);
+  assert.equal(programme.name, 'Data Science & Business Stats');
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.deepEqual([core.creditsRequired, electives.creditsRequired], [9, 15]);
+  assert.deepEqual([core.coursesRequired, electives.coursesRequired], [3, 5]);
+  assert.equal(core.courses.length, 3);
+  assert.equal(electives.courses.length, 16);
+  assert.equal(courses.length, 19);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 19);
+  assert.equal(courses.every((course) => course.credits === 3), true);
+  assert.equal(electives.courses.find((course) => course.code === 'STAT6111').name, 'Research Workshop');
+  assert.match(electives.ruleText, /optional and is not a compulsory Project or Dissertation/);
+  assert.match(electives.ruleText, /full-time-only placement/);
+});
+
+test('CUHK Global Communication remains blocked while its current curriculum awaits final approval', () => {
+  const programme = tpgService.getProgramme('CUHK-TPG-018');
+
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal((programme.courseGroups || []).length, 0);
+  assert.match(programme.courseStatusNote, /subject to the University's final approval/);
+  assert.match(programme.courseStatusNote, /COMM5947 and COMM5992/);
+  assert.match(programme.courseStatusNote, /do not publish the superseded 2025-26 curriculum/);
+});
+
+test('CUHK Mathematics preserves both official Streams and the Big Data code-range rule', () => {
+  const programme = tpgService.getProgramme('CUHK-TPG-016');
+  const tracks = Object.fromEntries(tpgService.listTracks(programme).map((track) => [track.name, track]));
+  const group = programme.courseGroups.find((item) => item.id === 'mmat-course-pool');
+  const courses = tpgService.flattenCourses(programme);
+  const bigDataTrackId = tracks['Big Data Analytics and Computations Stream'].id;
+  const eligibleCodes = group.courses
+    .filter((course) => (course.countsTowardTrackIds || []).includes(bigDataTrackId))
+    .map((course) => course.code);
+
+  assert.equal(programme.creditsRequired, 24);
+  assert.equal(programme.name, 'Mathematics');
+  assert.equal(programme.creditUnit, 'units');
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.listTracks(programme).length, 2);
+  assert.equal(tracks['Mathematics Stream'].creditsRequired, 24);
+  assert.equal(tracks['Big Data Analytics and Computations Stream'].creditsRequired, 24);
+  assert.equal(group.creditsRequired, 24);
+  assert.equal(group.coursesRequired, 8);
+  assert.equal(courses.length, 36);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 36);
+  assert.equal(courses.every((course) => course.credits === 3), true);
+  assert.equal(eligibleCodes.includes('MMAT5210'), true);
+  assert.equal(eligibleCodes.includes('MMAT5396'), true);
+  assert.equal(eligibleCodes.includes('MMAT5220'), false);
+  assert.match(group.ruleText, /at least 18 units/);
+  assert.match(group.ruleText, /at most 3 units/);
+  assert.match(group.ruleText, /does not imply that every course is offered every year/);
 });
 
 test('Lingnan Qualifications Register data exposes official Programme names and Tracks', () => {

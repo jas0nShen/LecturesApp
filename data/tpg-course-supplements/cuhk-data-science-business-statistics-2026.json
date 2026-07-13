@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "CUHK-TPG-017",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.gs.cuhk.edu.hk/programmes/science/msc-data-science-and-business-statistics",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [],
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete all three Core Courses (9 credits). The official 2026-27 full-time and part-time study plans both name STAT5101, STAT5102 and STAT5106 as the three Core Courses.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/",
+          "courses": [
+            { "code": "STAT5101", "name": "Foundations of Data Science", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/" },
+            { "code": "STAT5102", "name": "Regression in Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/" },
+            { "code": "STAT5106", "name": "Programming Techniques for Data Science", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective_with_optional_research_workshop",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Choose five Elective Courses (15 credits) from the official course pool. STAT6111 Research Workshop is listed in the full-time Elective pool and offers either an organization-assigned project or a supervised CUHK research project; it is optional and is not a compulsory Project or Dissertation. Its full-time-only placement and all course availability require manual review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/",
+          "courses": [
+            { "code": "STAT5103", "name": "High-dimensional Data Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/" },
+            { "code": "STAT5104", "name": "Data Mining", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/" },
+            { "code": "STAT5105", "name": "Applied Survival Data Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/" },
+            { "code": "STAT5107", "name": "Discrete Data Analytics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/" },
+            { "code": "STAT6104", "name": "Financial Time Series", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/" },
+            { "code": "STAT6105", "name": "Basic Actuarial Principles and Their Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/" },
+            { "code": "STAT6106", "name": "Applied Bayesian Methods", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/" },
+            { "code": "STAT6107", "name": "Selected Topics on Data Science and Business Statistics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/" },
+            { "code": "STAT6108", "name": "Official Statistics and Structural Equation Modelling", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/" },
+            { "code": "STAT6207", "name": "Applied Deep Learning", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/" },
+            { "code": "STAT6111", "name": "Research Workshop", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/" },
+            { "code": "RMSC5101", "name": "Statistical Methods in Risk Management and Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/" },
+            { "code": "RMSC6001", "name": "Interest Rate and Fixed Incomes Risk Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/" },
+            { "code": "RMSC6003", "name": "Risk Management in Financial Institutions", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/" },
+            { "code": "RMSC6004", "name": "Special Topics in Risk Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/" },
+            { "code": "RMSC6007", "name": "Risk and Financial Data Analytics with Python", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://dsbs.cuhk.edu.hk/programme-details/" }
+          ]
+        }
+      ]
+    }
+  ]
+}
