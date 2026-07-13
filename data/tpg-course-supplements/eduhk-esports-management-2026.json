@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "EDUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "EDUHK-TPG-DIR-MA-ESM",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "credit points",
+      "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-e-sports-management",
+      "ruleReviewStatus": "verified",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Complete all six Core Courses (18 credit points). The current Programme page confirms every title and 3-credit value; the official EdUHK Moodle 2025/26 course records confirm the ESM6001-ESM6003 and ESM6006-ESM6008 code mappings.",
+          "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-e-sports-management",
+          "courses": [
+            { "code": "ESM6001", "name": "Introduction to E-Sports", "credits": 3, "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&page=6&ta=2&tag=AEDI&tc=1" },
+            { "code": "ESM6002", "name": "E-Sports Event Planning and Management", "credits": 3, "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&page=6&ta=2&tag=AEDI&tc=1" },
+            { "code": "ESM6003", "name": "Consumer Behaviour for E-Sports", "credits": 3, "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&page=6&ta=2&tag=AEDI&tc=1" },
+            { "code": "ESM6006", "name": "E-Sports Venue Management", "credits": 3, "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&ta=2&tag=AEDI&tc=1" },
+            { "code": "ESM6007", "name": "E-Sports Marketing Management", "credits": 3, "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&ta=2&tag=AEDI&tc=1" },
+            { "code": "ESM6008", "name": "Corporate Governance and Global Perspective for E-Sports", "credits": 3, "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&ta=2&tag=AEDI&tc=1" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Choose any two of the four 3-credit Elective Courses (6 credit points). The course pool is not represented as a guarantee that every elective will run in every semester.",
+          "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-e-sports-management",
+          "courses": [
+            { "code": "ESM6004", "name": "Psychological Aspects of E-Sports Performance", "credits": 3, "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&page=6&ta=2&tag=AEDI&tc=1" },
+            { "code": "ESM6005", "name": "Physiological Aspects for E-Sports Performance", "credits": 3, "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&page=6&ta=2&tag=AEDI&tc=1" },
+            { "code": "ESM6009", "name": "Research Methodology in E-Sports Management", "credits": 3, "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&ta=2&tag=AEDI&tc=1" },
+            { "code": "ESM6010", "name": "Experiential Learning in E-Sports Industry", "credits": 3, "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&ta=2&tag=AEDI&tc=1" }
+          ]
+        }
+      ]
+    }
+  ]
+}

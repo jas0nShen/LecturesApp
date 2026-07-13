@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "EDUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "EDUHK-TPG-DIR-LLM-DG",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "credit points",
+      "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/master-of-laws-in-digital-governance",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four 3-credit Core Courses (12 credit points).",
+          "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/master-of-laws-in-digital-governance",
+          "courses": [
+            { "code": "LAW6001", "name": "The Law, Policy, and Governance in Global Digitalization", "credits": 3, "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/master-of-laws-in-digital-governance" },
+            { "code": "LAW6002", "name": "Artificial Intelligence Literacy and Digital Competency for Legal Professionals and Executives", "credits": 3, "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/master-of-laws-in-digital-governance" },
+            { "code": "LAW6007", "name": "Administrative Law in Digital Era", "credits": 3, "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/master-of-laws-in-digital-governance" },
+            { "code": "LAW6008", "name": "National Security and Informational Security", "credits": 3, "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/master-of-laws-in-digital-governance" }
+          ]
+        },
+        {
+          "id": "elective-courses-and-independent-research",
+          "name": "Elective Courses / Independent Research",
+          "type": "elective",
+          "creditsRequired": 12,
+          "ruleText": "Complete either four 3-credit Elective Courses, or two 3-credit Elective Courses plus the 6-credit LAW6006 Independent Research (12 credit points). The alternative route requires manual audit review, and the published pool is not a guarantee that every elective will run in every semester.",
+          "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/master-of-laws-in-digital-governance",
+          "courses": [
+            { "code": "LAW6003", "name": "Artificial Intelligence, Entrepreneurship and Law", "credits": 3, "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/master-of-laws-in-digital-governance" },
+            { "code": "LAW6004", "name": "Intellectual and Data Property Law", "credits": 3, "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/master-of-laws-in-digital-governance" },
+            { "code": "LAW6005", "name": "Basic Law of HKSAR and Digital Regulation", "credits": 3, "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/master-of-laws-in-digital-governance" },
+            { "code": "LAW6009", "name": "Personal Information Protection and Privacy Law", "credits": 3, "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/master-of-laws-in-digital-governance" },
+            { "code": "LAW6010", "name": "Cyber Criminal Law and Practice in Hong Kong", "credits": 3, "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/master-of-laws-in-digital-governance" },
+            { "code": "LAW6011", "name": "Platform Regulation", "credits": 3, "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/master-of-laws-in-digital-governance" },
+            { "code": "LAW6006", "name": "Independent Research", "credits": 6, "courseKind": "project", "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/master-of-laws-in-digital-governance" }
+          ]
+        }
+      ]
+    }
+  ]
+}

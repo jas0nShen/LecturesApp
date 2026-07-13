@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "EDUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "EDUHK-TPG-DIR-MSC-EDN",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "credit points",
+      "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-science-in-educational-neuroscience",
+      "ruleReviewStatus": "verified",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 18,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five Core Courses (18 credit points). The current 2026/27 Programme page confirms the titles and credits; course codes were cross-checked against the official MScEdN Student Handbook, whose nine titles and credit values match the current curriculum exactly.",
+          "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-science-in-educational-neuroscience",
+          "courses": [
+            { "code": "PSY6092", "name": "Fundamentals of Educational Neuroscience", "credits": 3, "sourceUrl": "https://mscedn.eduhk.hk/doc/MScEdN-Student-Handbook.pdf" },
+            { "code": "EDS6010", "name": "Advances in Neuroscientific Studies of Learning and Teaching", "credits": 3, "sourceUrl": "https://mscedn.eduhk.hk/doc/MScEdN-Student-Handbook.pdf" },
+            { "code": "EDS6012", "name": "Educational Neuroscience Research Methods", "credits": 3, "sourceUrl": "https://mscedn.eduhk.hk/doc/MScEdN-Student-Handbook.pdf" },
+            { "code": "EDS6013", "name": "Educational Neuroscientific Studies, Data Analyses and Reports", "credits": 3, "sourceUrl": "https://mscedn.eduhk.hk/doc/MScEdN-Student-Handbook.pdf" },
+            { "code": "EDS6014", "name": "Capstone Project", "credits": 6, "sourceUrl": "https://mscedn.eduhk.hk/doc/MScEdN-Student-Handbook.pdf" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Choose any two of the four 3-credit Elective Courses (6 credit points). Course offerings are subject to the University's current availability and are not represented as guaranteed every semester.",
+          "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-science-in-educational-neuroscience",
+          "courses": [
+            { "code": "EDS6011", "name": "Cognitive, Language and Socioemotional Development and Education", "credits": 3, "sourceUrl": "https://mscedn.eduhk.hk/doc/MScEdN-Student-Handbook.pdf" },
+            { "code": "PSY6093", "name": "Application of Neuroscience in Mental Health and Education", "credits": 3, "sourceUrl": "https://mscedn.eduhk.hk/doc/MScEdN-Student-Handbook.pdf" },
+            { "code": "PSY6094", "name": "Application of Neuroscience in Special and Inclusive Education", "credits": 3, "sourceUrl": "https://mscedn.eduhk.hk/doc/MScEdN-Student-Handbook.pdf" },
+            { "code": "EDT6004", "name": "Application of Neuroscience in Technology and Media Education", "credits": 3, "sourceUrl": "https://mscedn.eduhk.hk/doc/MScEdN-Student-Handbook.pdf" }
+          ]
+        }
+      ]
+    }
+  ]
+}

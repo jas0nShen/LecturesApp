@@ -7,26 +7,78 @@
       "sourceUrl": "https://www.eduhk.hk/acadprog/postgrad/index.html",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "programmes": [
-        ["EMPAL", "Executive Master of Public Administration and Leadership"],
+        {
+          "programmeCode": "EMPAL",
+          "name": "Executive Master of Public Administration and Leadership",
+          "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/empal"
+        },
         ["MA(BRBCA)", "Master of Arts in Belt and Road Business Communication and Administration"],
         ["MA(CVBLE)", "Master of Arts in Chinese Values-Based Leadership Education"],
         ["MA(CECI)", "Master of Arts in Comparative Education and Collaborative Innovation"],
         ["MA(DHRMOM)", "Master of Arts in Digital Human Resource Management and Organisational Marketing"],
-        ["MA(DMEC)", "Master of Arts in Digital Marketing and E-Commerce"],
-        ["MA(ETFW)", "Master of Arts in Emerging Technology for Future Workforce"],
-        ["MA(ESM)", "Master of Arts in E-Sports Management"],
-        ["MA(GlobalHE)", "Master of Arts in Global Higher Education"],
-        ["MA(MLE)", "Master of Arts in Mindfulness and Life Education"],
-        ["MA(NMSM)", "Master of Arts in New Media and Social Media"],
+        {
+          "programmeCode": "MA(DMEC)",
+          "name": "Master of Arts in Digital Marketing and E-Commerce",
+          "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-digital-marketing-and-e-commerce"
+        },
+        {
+          "programmeCode": "MA(ETFW)",
+          "name": "Master of Arts in Emerging Technology for Future Workforce",
+          "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/master-of-arts-in-emerging-technology-for-future-workforce"
+        },
+        {
+          "programmeCode": "MA(ESM)",
+          "name": "Master of Arts in E-Sports Management",
+          "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-e-sports-management"
+        },
+        {
+          "programmeCode": "MA(GlobalHE)",
+          "name": "Master of Arts in Global Higher Education",
+          "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/master-of-arts-in-global-higher-education-maghe"
+        },
+        {
+          "programmeCode": "MA(MLE)",
+          "name": "Master of Arts in Mindfulness and Life Education",
+          "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-mindfulness-and-life-education"
+        },
+        {
+          "programmeCode": "MA(NMSM)",
+          "name": "Master of Arts in New Media and Social Media",
+          "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-new-media-and-social-media"
+        },
         ["MA(SRE)", "Master of Arts in Science and Robotics Education"],
         ["MGM", "Master of Global Management", "2027-28"],
-        ["LLM(NSL)", "Master of Laws in National Security Law"],
-        ["LLM(DG)", "Master of Laws in Digital Governance"],
+        {
+          "programmeCode": "LLM(NSL)",
+          "name": "Master of Laws in National Security Law",
+          "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/LLMNSL"
+        },
+        {
+          "programmeCode": "LLM(DG)",
+          "name": "Master of Laws in Digital Governance",
+          "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/master-of-laws-in-digital-governance"
+        },
         ["MM", "Master of Management", "2027-28"],
-        ["MOT", "Master of Occupational Therapy"],
-        ["MSc(AIEP)", "Master of Science in Artificial Intelligence for Executive Professionals"],
-        ["MSc(EdN)", "Master of Science in Educational Neuroscience"],
-        ["MSc(ESGSD)", "Master of Science in Environmental, Social and Governance for Sustainable Development"],
+        {
+          "programmeCode": "MOT",
+          "name": "Master of Occupational Therapy",
+          "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/master-of-occupational-therapy"
+        },
+        {
+          "programmeCode": "MSc(AIEP)",
+          "name": "Master of Science in Artificial Intelligence for Executive Professionals",
+          "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/master-of-science-in-artificial-intelligence-for-executive-professionals-msc-aiep"
+        },
+        {
+          "programmeCode": "MSc(EdN)",
+          "name": "Master of Science in Educational Neuroscience",
+          "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-science-in-educational-neuroscience"
+        },
+        {
+          "programmeCode": "MSc(ESGSD)",
+          "name": "Master of Science in Environmental, Social and Governance for Sustainable Development",
+          "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/ESGSD"
+        },
         ["MEd", "Master of Education"],
         {
           "programmeCode": "MA(CFE)",

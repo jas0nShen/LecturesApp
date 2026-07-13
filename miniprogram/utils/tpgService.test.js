@@ -9,8 +9,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 161);
-  assert.equal(coverage.courseCount, 3754);
+  assert.equal(coverage.programmeWithCoursesCount, 166);
+  assert.equal(coverage.courseCount, 3808);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -29,8 +29,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 161);
-  assert.equal(rows.length, 161);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 166);
+  assert.equal(rows.length, 166);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
@@ -1007,6 +1007,14 @@ test('EdUHK incomplete current code tables remain blocked instead of exposing pa
     ['EDUHK-TPG-DIR-MSC-ADS', /does not publish the course codes/, /do not infer codes from related MIT offerings/],
     ['EDUHK-TPG-DIR-MSC-LSSE', /subject to review/, /do not infer codes from similarly titled learning-sciences/],
     ['EDUHK-TPG-DIR-MSCESLPLD', /maps all 23 published titles/, /do not infer one of the possible 3\/6 distributions/],
+    ['EDUHK-TPG-DIR-MA-NMSM', /four of eight 3-credit Elective Courses/, /do not expose the old six-course elective pool/],
+    ['EDUHK-TPG-DIR-MSC-AIEP', /two required 3-credit Project Courses/, /do not infer codes from AI course titles/],
+    ['EDUHK-TPG-DIR-MA-ETFW', /INT6140 Future of Work/, /do not extrapolate the missing codes/],
+    ['EDUHK-TPG-DIR-MA-MLE', /five required 3-credit Core Courses/, /do not substitute the older PSY6069/],
+    ['EDUHK-TPG-DIR-MSC-ESGSD', /PUA6027 Technology and Innovation Policies/, /do not infer the missing codes/],
+    ['EDUHK-TPG-DIR-MOT', /87-credit professional award/, /do not substitute similarly themed rehabilitation/],
+    ['EDUHK-TPG-DIR-LLM-NSL', /LAW6008 National Security and Informational Security/, /do not infer the missing LAW codes/],
+    ['EDUHK-TPG-DIR-MA-DMEC', /BUS6085 Introduction to E-commerce/, /do not map similarly named marketing/],
     ['EDUHK-TPG-DIR-MA-IECE', /both co-delivering departments/, /do not map the new curriculum onto similarly titled legacy courses/],
     ['EDUHK-TPG-DIR-MSOCSC-TPWB', /identify only a subset/, /do not publish a partial pool/],
     ['EDUHK-TPG-DIR-MA-CHEM', /Xiqu Specialisation is not open/, /do not treat the closed Xiqu path/]
@@ -1157,6 +1165,117 @@ test('EdUHK Psychology in Schools and Community Settings uses the current 21-plu
   assert.equal(tpgService.resolveAuditCredits(bridging), 0);
   assert.equal(programme.courseGroups.filter((group) => group.creditsRequired).reduce((total, group) => total + group.creditsRequired, 0), 36);
   assert.match(groups['elective-courses'].ruleText, /Research Project must not be treated as compulsory/);
+});
+
+test('EdUHK Educational Neuroscience preserves the current 18-plus-6 curriculum', () => {
+  const programme = tpgService.getProgramme('EDUHK-TPG-DIR-MSC-EDN');
+  const groups = Object.fromEntries(programme.courseGroups.map((group) => [group.id, group]));
+  const courses = tpgService.flattenCourses(programme);
+
+  assert.equal(programme.academicYear, '2026-27');
+  assert.equal(programme.creditsRequired, 24);
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.equal(programme.courseSourceUrl, 'https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-science-in-educational-neuroscience');
+  assert.deepEqual([groups['core-courses'].creditsRequired, groups['core-courses'].coursesRequired, groups['core-courses'].courses.length], [18, 5, 5]);
+  assert.deepEqual([groups['elective-courses'].creditsRequired, groups['elective-courses'].coursesRequired, groups['elective-courses'].courses.length], [6, 2, 4]);
+  assert.equal(courses.length, 9);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 9);
+  assert.deepEqual(
+    courses.map((course) => course.code).sort(),
+    ['EDS6010', 'EDS6011', 'EDS6012', 'EDS6013', 'EDS6014', 'EDT6004', 'PSY6092', 'PSY6093', 'PSY6094']
+  );
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'EDS6014').credits, 6);
+  assert.equal(groups['core-courses'].courses.find((course) => course.code === 'EDS6014').name, 'Capstone Project');
+  assert.equal(programme.courseGroups.reduce((total, group) => total + group.creditsRequired, 0), 24);
+  assert.match(groups['elective-courses'].ruleText, /Choose any two/);
+});
+
+test('EdUHK E-Sports Management preserves its six-core and two-elective rule', () => {
+  const programme = tpgService.getProgramme('EDUHK-TPG-DIR-MA-ESM');
+  const groups = Object.fromEntries(programme.courseGroups.map((group) => [group.id, group]));
+  const courses = tpgService.flattenCourses(programme);
+
+  assert.equal(programme.academicYear, '2026-27');
+  assert.equal(programme.creditsRequired, 24);
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.equal(programme.courseSourceUrl, 'https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-e-sports-management');
+  assert.deepEqual([groups['core-courses'].creditsRequired, groups['core-courses'].coursesRequired, groups['core-courses'].courses.length], [18, 6, 6]);
+  assert.deepEqual([groups['elective-courses'].creditsRequired, groups['elective-courses'].coursesRequired, groups['elective-courses'].courses.length], [6, 2, 4]);
+  assert.deepEqual(
+    courses.map((course) => course.code).sort(),
+    ['ESM6001', 'ESM6002', 'ESM6003', 'ESM6004', 'ESM6005', 'ESM6006', 'ESM6007', 'ESM6008', 'ESM6009', 'ESM6010']
+  );
+  assert.equal(new Set(courses.map((course) => course.code)).size, 10);
+  assert(courses.every((course) => course.credits === 3));
+  assert.equal(programme.courseGroups.reduce((total, group) => total + group.creditsRequired, 0), 24);
+  assert.equal(groups['elective-courses'].courses.some((course) => course.code === 'ESM6009'), true);
+  assert.match(groups['elective-courses'].ruleText, /Choose any two/);
+});
+
+test('EdUHK EMPAL preserves the current five-core and three-of-nine elective rule', () => {
+  const programme = tpgService.getProgramme('EDUHK-TPG-DIR-EMPAL');
+  const groups = Object.fromEntries(programme.courseGroups.map((group) => [group.id, group]));
+  const courses = tpgService.flattenCourses(programme);
+
+  assert.equal(programme.academicYear, '2026-27');
+  assert.equal(programme.creditsRequired, 24);
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.equal(programme.courseSourceUrl, 'https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/empal');
+  assert.deepEqual([groups['core-courses'].creditsRequired, groups['core-courses'].coursesRequired, groups['core-courses'].courses.length], [15, 5, 5]);
+  assert.deepEqual([groups['elective-courses'].creditsRequired, groups['elective-courses'].coursesRequired, groups['elective-courses'].courses.length], [9, 3, 9]);
+  assert.deepEqual(
+    courses.map((course) => course.code).sort(),
+    ['ECO6002', 'POS6016', 'POS6017', 'PUA6022', 'PUA6023', 'PUA6024', 'PUA6025', 'PUA6026', 'PUA6027', 'PUA6028', 'PUA6029', 'PUA6031', 'PUA6032', 'PUA6033']
+  );
+  assert.equal(new Set(courses.map((course) => course.code)).size, 14);
+  assert(courses.every((course) => course.credits === 3));
+  assert.equal(programme.courseGroups.reduce((total, group) => total + group.creditsRequired, 0), 24);
+  assert.match(groups['elective-courses'].ruleText, /Choose any three/);
+});
+
+test('EdUHK Global Higher Education preserves the current four-core and four-of-six elective rule', () => {
+  const programme = tpgService.getProgramme('EDUHK-TPG-DIR-MA-GLOBALHE');
+  const groups = Object.fromEntries(programme.courseGroups.map((group) => [group.id, group]));
+  const courses = tpgService.flattenCourses(programme);
+
+  assert.equal(programme.academicYear, '2026-27');
+  assert.equal(programme.creditsRequired, 24);
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.equal(programme.courseSourceUrl, 'https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/master-of-arts-in-global-higher-education-maghe');
+  assert.deepEqual([groups['core-courses'].creditsRequired, groups['core-courses'].coursesRequired, groups['core-courses'].courses.length], [12, 4, 4]);
+  assert.deepEqual([groups['elective-courses'].creditsRequired, groups['elective-courses'].coursesRequired, groups['elective-courses'].courses.length], [12, 4, 6]);
+  assert.deepEqual(
+    courses.map((course) => course.code).sort(),
+    ['PFS6061', 'PFS6068', 'PFS6069', 'PFS6070', 'PFS6071', 'PFS6072', 'PFS6073', 'PFS6075', 'PFS6076', 'PFS6077']
+  );
+  assert.equal(new Set(courses.map((course) => course.code)).size, 10);
+  assert(courses.every((course) => course.credits === 3));
+  assert.equal(programme.courseGroups.reduce((total, group) => total + group.creditsRequired, 0), 24);
+  assert.match(groups['elective-courses'].ruleText, /Individual electives may not be offered every year/);
+});
+
+test('EdUHK Digital Governance preserves the elective or Independent Research routes', () => {
+  const programme = tpgService.getProgramme('EDUHK-TPG-DIR-LLM-DG');
+  const groups = Object.fromEntries(programme.courseGroups.map((group) => [group.id, group]));
+  const courses = tpgService.flattenCourses(programme);
+
+  assert.equal(programme.academicYear, '2026-27');
+  assert.equal(programme.creditsRequired, 24);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(programme.courseSourceUrl, 'https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/master-of-laws-in-digital-governance');
+  assert.deepEqual([groups['core-courses'].creditsRequired, groups['core-courses'].coursesRequired, groups['core-courses'].courses.length], [12, 4, 4]);
+  assert.deepEqual([groups['elective-courses-and-independent-research'].creditsRequired, groups['elective-courses-and-independent-research'].courses.length], [12, 7]);
+  assert.equal(groups['elective-courses-and-independent-research'].coursesRequired, undefined);
+  assert.deepEqual(
+    courses.map((course) => course.code).sort(),
+    ['LAW6001', 'LAW6002', 'LAW6003', 'LAW6004', 'LAW6005', 'LAW6006', 'LAW6007', 'LAW6008', 'LAW6009', 'LAW6010', 'LAW6011']
+  );
+  assert.equal(new Set(courses.map((course) => course.code)).size, 11);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'LAW6006').credits, 6);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'LAW6006').courseKind, 'project');
+  assert.equal(programme.courseGroups.reduce((total, group) => total + group.creditsRequired, 0), 24);
+  assert.match(groups['elective-courses-and-independent-research'].ruleText, /either four 3-credit Elective Courses, or two.*plus.*LAW6006/);
+  assert.match(groups['elective-courses-and-independent-research'].ruleText, /requires manual audit review/);
 });
 
 test('EdUHK future-intake programmes retain their Programme-level academic year', () => {

@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "EDUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-13",
+  "programmes": [
+    {
+      "programmeId": "EDUHK-TPG-DIR-EMPAL",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "credit points",
+      "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/empal",
+      "ruleReviewStatus": "verified",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five 3-credit Core Courses (15 credit points).",
+          "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/empal",
+          "courses": [
+            { "code": "PUA6022", "name": "China's National Governance and Development", "credits": 3, "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/empal" },
+            { "code": "PUA6023", "name": "Hong Kong SAR’s Governance and Development", "credits": 3, "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/empal" },
+            { "code": "POS6017", "name": "Chinese Diplomacy and International Relations: Challenges and Resolutions", "credits": 3, "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/empal" },
+            { "code": "ECO6002", "name": "China's Regional Economy and Hong Kong's Economic Development: Challenges and Opportunities", "credits": 3, "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/empal" },
+            { "code": "PUA6026", "name": "Public Administration, Management and Leadership Skills", "credits": 3, "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/empal" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Choose any three of the nine 3-credit Elective Courses (9 credit points). The published pool is not a guarantee that every elective will run in every semester.",
+          "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/empal",
+          "courses": [
+            { "code": "PUA6024", "name": "Public Policy and Public Finance", "credits": 3, "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/empal" },
+            { "code": "POS6016", "name": "Contemporary Security and Cyber Security Issues", "credits": 3, "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/empal" },
+            { "code": "PUA6025", "name": "Digital Government: Developments and Trends", "credits": 3, "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/empal" },
+            { "code": "PUA6027", "name": "Technology and Innovation Policies: Development and Trend", "credits": 3, "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/empal" },
+            { "code": "PUA6028", "name": "Communication, Media and Public Governance", "credits": 3, "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/empal" },
+            { "code": "PUA6029", "name": "Social Research and Social Practice", "credits": 3, "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/empal" },
+            { "code": "PUA6031", "name": "Government Business Relationships: Practices and Trends", "credits": 3, "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/empal" },
+            { "code": "PUA6032", "name": "Social Governance in the Greater Bay Area", "credits": 3, "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/empal" },
+            { "code": "PUA6033", "name": "Public Leader and Leadership: Practices and Challenges", "credits": 3, "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/empal" }
+          ]
+        }
+      ]
+    }
+  ]
+}
