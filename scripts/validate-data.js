@@ -166,6 +166,16 @@ tpgCatalogue.programmes.forEach((programme) => {
       assert(group.id && group.type, `${programme.id} has an incomplete verified group`);
       assert.match(group.sourceUrl || '', /^https:\/\//, `${programme.id}/${group.id} needs an official source`);
       (group.appliesToTrackIds || []).forEach((trackId) => assert(trackIds.has(trackId), `${programme.id}/${group.id} has unknown Track ${trackId}`));
+      (group.excludesTrackIds || []).forEach((trackId) => {
+        assert(trackIds.has(trackId), `${programme.id}/${group.id} excludes unknown Track ${trackId}`);
+        assert(!(group.appliesToTrackIds || []).includes(trackId), `${programme.id}/${group.id} both applies to and excludes Track ${trackId}`);
+      });
+      ['creditsRequiredByTrackIds', 'coursesRequiredByTrackIds'].forEach((field) => {
+        Object.entries(group[field] || {}).forEach(([trackId, value]) => {
+          assert(trackIds.has(trackId), `${programme.id}/${group.id}/${field} has unknown Track ${trackId}`);
+          assert(Number.isFinite(Number(value)) && Number(value) > 0, `${programme.id}/${group.id}/${field}/${trackId} has an invalid requirement`);
+        });
+      });
       group.courses.forEach((course) => {
         assert(
           (course.credits !== undefined && Number.isFinite(Number(course.credits)) && Number(course.credits) >= 0) || (Number(course.creditsMin) > 0 && Number(course.creditsMax) >= Number(course.creditsMin)),
@@ -173,6 +183,11 @@ tpgCatalogue.programmes.forEach((programme) => {
         );
         assert.match(course.sourceUrl || '', /^https:\/\//, `${programme.id}/${course.code} needs an official source`);
         (course.appliesToTrackIds || []).forEach((trackId) => assert(trackIds.has(trackId), `${programme.id}/${course.code} has unknown Track ${trackId}`));
+        (course.excludesTrackIds || []).forEach((trackId) => {
+          assert(trackIds.has(trackId), `${programme.id}/${course.code} excludes unknown Track ${trackId}`);
+          assert(!(course.appliesToTrackIds || []).includes(trackId), `${programme.id}/${course.code} both applies to and excludes Track ${trackId}`);
+        });
+        (course.countsTowardTrackIds || []).forEach((trackId) => assert(trackIds.has(trackId), `${programme.id}/${course.code} counts toward unknown Track ${trackId}`));
       });
     });
   }

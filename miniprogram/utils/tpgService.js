@@ -87,7 +87,36 @@ function getCourseCreditLabel(course = {}) {
 
 function appliesToTrack(item = {}, trackId = '') {
   const trackIds = Array.isArray(item.appliesToTrackIds) ? item.appliesToTrackIds : [];
+  const excludedTrackIds = Array.isArray(item.excludesTrackIds) ? item.excludesTrackIds : [];
+  if (trackId && excludedTrackIds.includes(trackId)) return false;
   return trackIds.length === 0 || Boolean(trackId && trackIds.includes(trackId));
+}
+
+function resolveTrackRequirement(item = {}, field, trackId = '') {
+  const overrides = item[`${field}ByTrackIds`];
+  if (trackId && overrides && typeof overrides === 'object' && !Array.isArray(overrides) && Object.prototype.hasOwnProperty.call(overrides, trackId)) {
+    return Number(overrides[trackId]);
+  }
+  const value = item[field];
+  return value === undefined || value === null || value === '' ? null : Number(value);
+}
+
+function getGroupCreditsRequired(group = {}, trackId = '') {
+  return resolveTrackRequirement(group, 'creditsRequired', trackId);
+}
+
+function getGroupCoursesRequired(group = {}, trackId = '') {
+  return resolveTrackRequirement(group, 'coursesRequired', trackId);
+}
+
+function resolveCourseGroups(programme, trackId = '') {
+  if (!programme) return [];
+  return (programme.courseGroups || []).filter((group) => appliesToTrack(group, trackId)).map((group) => ({
+    ...group,
+    creditsRequired: getGroupCreditsRequired(group, trackId),
+    coursesRequired: getGroupCoursesRequired(group, trackId),
+    courses: (group.courses || []).filter((course) => appliesToTrack(course, trackId))
+  }));
 }
 
 function buildProgrammeSourceText(programme) {
@@ -107,8 +136,8 @@ function buildProgrammeSourceText(programme) {
 function flattenCourses(programme, keyword = '', trackId = '') {
   if (!programme) return [];
   const normalized = normalizeKeyword(keyword);
-  return (programme.courseGroups || []).filter((group) => appliesToTrack(group, trackId)).flatMap((group, groupIndex) => (
-    (group.courses || []).filter((course) => appliesToTrack(course, trackId)).map((course, courseIndex) => ({
+  return resolveCourseGroups(programme, trackId).flatMap((group, groupIndex) => (
+    (group.courses || []).map((course, courseIndex) => ({
       ...course,
       rowKey: `${groupIndex}-${course.code}-${courseIndex}`,
       groupName: group.name,
@@ -261,6 +290,8 @@ module.exports = {
   getTrack,
   getCourseCreditLabel,
   getCreditsRequired,
+  getGroupCoursesRequired,
+  getGroupCreditsRequired,
   getProgrammeUniversity,
   getProfileSummary,
   getSchoolCoverage,
@@ -275,6 +306,7 @@ module.exports = {
   appliesToTrack,
   resolveCourseCredits,
   resolveAuditCredits,
+  resolveCourseGroups,
   searchProgrammes,
   hydrateProgramme
 };

@@ -10,6 +10,9 @@ Page({
     statusCopy: '',
     hasCourseGroups: false,
     courseCount: 0,
+    courseGroups: [],
+    creditsRequired: 0,
+    selectedTrack: null,
     isCurrentProgramme: false,
     loadError: false,
     programmeId: ''
@@ -34,11 +37,17 @@ Page({
 
     const university = tpgService.getProgrammeUniversity(programme);
     const status = tpgService.getStatus(programme);
+    const profile = service.getProfile();
+    const trackId = profile && profile.profileType === 'tpg' && profile.programmeId === programme.id ? profile.trackId || '' : '';
+    const courseGroups = tpgService.resolveCourseGroups(programme, trackId);
     this.setData({
       programme,
       university,
       hasCourseGroups: status.hasCourseGroups,
-      courseCount: status.courseCount,
+      courseCount: courseGroups.reduce((sum, group) => sum + group.courses.length, 0),
+      courseGroups,
+      creditsRequired: tpgService.getCreditsRequired(programme, trackId),
+      selectedTrack: trackId ? tpgService.getTrack(programme.id, trackId) : null,
       statusTitle: status.title,
       statusCopy: status.copy
     });
@@ -64,8 +73,15 @@ Page({
     const programme = this.data.programme;
     if (!programme) return;
     const profile = service.getProfile();
+    const isCurrentProgramme = Boolean(profile && profile.profileType === 'tpg' && profile.programmeId === programme.id);
+    const trackId = isCurrentProgramme ? profile.trackId || '' : '';
+    const courseGroups = tpgService.resolveCourseGroups(programme, trackId);
     this.setData({
-      isCurrentProgramme: profile && profile.profileType === 'tpg' && profile.programmeId === programme.id
+      isCurrentProgramme,
+      courseGroups,
+      courseCount: courseGroups.reduce((sum, group) => sum + group.courses.length, 0),
+      creditsRequired: tpgService.getCreditsRequired(programme, trackId),
+      selectedTrack: trackId ? tpgService.getTrack(programme.id, trackId) : null
     });
   },
 

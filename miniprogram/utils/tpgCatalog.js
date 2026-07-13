@@ -7959,7 +7959,7 @@ module.exports = {
       "name": "Master of Arts in International Higher Education and Management",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -7970,14 +7970,21 @@ module.exports = {
         {
           "id": "LINGNAN-TPG-DIR-17-000487-L6-24-000294-L6",
           "code": "24/000294/L6",
-          "name": "Managing Education Change in International Context",
-          "type": "specialism",
-          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "name": "Educational Technology and Digital Transformation, EdTech Concentration",
+          "type": "Concentration",
+          "sourceUrl": "https://www.ln.edu.hk/sgs/ihem/programme-overview/programme-structure",
           "lastVerifiedAt": "2026-07-11"
         }
       ],
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.ln.edu.hk/sgs/ihem/programme-overview/programme-structure",
+      "courseStatusNote": "",
+      "trackSelectionOptional": true,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified",
+      "courseCount": 17
     },
     {
       "id": "LINGNAN-TPG-DIR-17-001035-L6",

@@ -3,9 +3,9 @@ const tpgService = require('../../utils/tpgService');
 const ugService = require('../../utils/ugService');
 
 function buildTpgAudit(programme, university, trackId = '') {
-  const groups = (programme.courseGroups || []).filter((group) => tpgService.appliesToTrack(group, trackId)).map((group, groupIndex) => ({
+  const groups = tpgService.resolveCourseGroups(programme, trackId).map((group, groupIndex) => ({
     ...group,
-    courses: (group.courses || []).filter((course) => tpgService.appliesToTrack(course, trackId)).map((course, courseIndex) => ({
+    courses: (group.courses || []).map((course, courseIndex) => ({
       ...course,
       rowKey: `${groupIndex}-${course.code}-${courseIndex}`,
       credits: tpgService.resolveAuditCredits(course),

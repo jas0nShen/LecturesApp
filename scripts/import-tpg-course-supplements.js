@@ -21,6 +21,25 @@ function validateHttps(value, label) {
   assert.match(value || '', /^https:\/\//, `${label} needs an official HTTPS source`);
 }
 
+function validateTrackReferences(item, trackIds, label) {
+  const appliesToTrackIds = item.appliesToTrackIds || [];
+  const excludesTrackIds = item.excludesTrackIds || [];
+  assert(Array.isArray(appliesToTrackIds), `${label} has invalid appliesToTrackIds`);
+  assert(Array.isArray(excludesTrackIds), `${label} has invalid excludesTrackIds`);
+  appliesToTrackIds.forEach((trackId) => assert(trackIds.has(trackId), `${label} references unknown Track ${trackId}`));
+  excludesTrackIds.forEach((trackId) => assert(trackIds.has(trackId), `${label} excludes unknown Track ${trackId}`));
+  appliesToTrackIds.forEach((trackId) => assert(!excludesTrackIds.includes(trackId), `${label} both applies to and excludes Track ${trackId}`));
+  ['creditsRequiredByTrackIds', 'coursesRequiredByTrackIds'].forEach((field) => {
+    if (item[field] === undefined) return;
+    assert(item[field] && typeof item[field] === 'object' && !Array.isArray(item[field]), `${label} has invalid ${field}`);
+    Object.entries(item[field]).forEach(([trackId, value]) => {
+      assert(trackIds.has(trackId), `${label}/${field} references unknown Track ${trackId}`);
+      assert(Number.isFinite(Number(value)) && Number(value) > 0, `${label}/${field}/${trackId} has an invalid requirement`);
+      if (field === 'coursesRequiredByTrackIds') assert(Number.isInteger(Number(value)), `${label}/${field}/${trackId} must be an integer`);
+    });
+  });
+}
+
 function validateSupplement(supplement, catalogue, file = 'supplement') {
   assert.equal(supplement.schemaVersion, 1, `${file} has an unsupported schemaVersion`);
   assert.match(supplement.schoolCode || '', /^[A-Z]+$/, `${file} needs a schoolCode`);
@@ -70,9 +89,7 @@ function validateSupplement(supplement, catalogue, file = 'supplement') {
       assert(group.name && group.type, `${entry.programmeId}/${group.id} needs name and type`);
       validateHttps(group.sourceUrl || entry.sourceUrl, `${entry.programmeId}/${group.id}`);
       assert(Array.isArray(group.courses), `${entry.programmeId}/${group.id} needs courses`);
-      (group.appliesToTrackIds || []).forEach((trackId) => {
-        assert(trackIds.has(trackId), `${entry.programmeId}/${group.id} references unknown Track ${trackId}`);
-      });
+      validateTrackReferences(group, trackIds, `${entry.programmeId}/${group.id}`);
       group.courses.forEach((course) => {
         assert(course.code && course.name, `${entry.programmeId}/${group.id} has an incomplete course`);
         assert(!courseCodes.has(course.code), `${entry.programmeId} repeats course ${course.code}`);
@@ -82,9 +99,7 @@ function validateSupplement(supplement, catalogue, file = 'supplement') {
           `${entry.programmeId}/${course.code} needs official credits`
         );
         validateHttps(course.sourceUrl || group.sourceUrl || entry.sourceUrl, `${entry.programmeId}/${course.code}`);
-        (course.appliesToTrackIds || []).forEach((trackId) => {
-          assert(trackIds.has(trackId), `${entry.programmeId}/${course.code} references unknown Track ${trackId}`);
-        });
+        validateTrackReferences(course, trackIds, `${entry.programmeId}/${course.code}`);
         (course.countsTowardTrackIds || []).forEach((trackId) => {
           assert(trackIds.has(trackId), `${entry.programmeId}/${course.code} counts toward unknown Track ${trackId}`);
         });

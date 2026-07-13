@@ -26,8 +26,8 @@ test('current mini-program passes automated release readiness checks', () => {
   assert.equal(result.metrics.offeringCount, 56);
   assert.equal(result.metrics.tpgSchoolCount, 8);
   assert.equal(result.metrics.tpgProgrammeCount, 448);
-  assert.equal(result.metrics.tpgProgrammeWithCoursesCount, 174);
-  assert.equal(result.metrics.tpgCourseCount, 3938);
+  assert.equal(result.metrics.tpgProgrammeWithCoursesCount, 175);
+  assert.equal(result.metrics.tpgCourseCount, 3955);
   assert.equal(result.metrics.ugSchoolCount, 8);
   assert.equal(result.metrics.ugProgrammeCount, 444);
   assert.equal(result.metrics.ugMajorCount, 689);
@@ -565,4 +565,15 @@ test('TPG catalogue copy describes availability instead of completeness', () => 
 
   assert(cataloguePage.includes('课程组开放状态'));
   assert(!cataloguePage.includes('资料完整度'));
+});
+
+test('TPG Programme and audit pages resolve Track-specific groups and requirements', () => {
+  const programmeLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'tpg-programme', 'tpg-programme.js'), 'utf8');
+  const programmePage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'tpg-programme', 'tpg-programme.wxml'), 'utf8');
+  const auditLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'audit', 'audit.js'), 'utf8');
+
+  assert(programmeLogic.includes('tpgService.resolveCourseGroups(programme, trackId)'));
+  assert(programmePage.includes('wx:for="{{courseGroups}}"'));
+  assert(programmePage.includes('{{selectedTrack.name}}'));
+  assert(auditLogic.includes('tpgService.resolveCourseGroups(programme, trackId)'));
 });

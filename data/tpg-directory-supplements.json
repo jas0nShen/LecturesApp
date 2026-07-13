@@ -302,7 +302,7 @@
           { "code": "25/000023/L6", "name": "Social Research", "type": "specialism" }
         ] },
         { "programmeCode": "17/000487/L6", "name": "Master of Arts in International Higher Education and Management", "tracks": [
-          { "code": "24/000294/L6", "name": "Managing Education Change in International Context", "type": "specialism" }
+          { "code": "24/000294/L6", "name": "Educational Technology and Digital Transformation, EdTech Concentration", "type": "Concentration", "sourceUrl": "https://www.ln.edu.hk/sgs/ihem/programme-overview/programme-structure" }
         ] },
         { "programmeCode": "17/001035/L6", "name": "Master of Arts in International Affairs" },
         { "programmeCode": "18/000444/L6", "name": "Master of Science in International and Development Economics" },

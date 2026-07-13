@@ -9,8 +9,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 174);
-  assert.equal(coverage.courseCount, 3938);
+  assert.equal(coverage.programmeWithCoursesCount, 175);
+  assert.equal(coverage.courseCount, 3955);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -29,8 +29,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 174);
-  assert.equal(rows.length, 174);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 175);
+  assert.equal(rows.length, 175);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
@@ -3276,6 +3276,35 @@ test('TPG programme helpers expose course status and searchable courses', () => 
   assert.equal(status.courseCount, 22);
   assert.equal(courses.length, 1);
   assert.equal(courses[0].name, 'Artificial intelligence project');
+});
+
+test('Lingnan IHEM resolves the mother Programme and EdTech Concentration as distinct 30-credit paths', () => {
+  const programme = tpgService.getProgramme('LINGNAN-TPG-DIR-17-000487-L6');
+  const track = tpgService.listTracks(programme)[0];
+  const motherGroups = Object.fromEntries(tpgService.resolveCourseGroups(programme).map((group) => [group.id, group]));
+  const trackGroups = Object.fromEntries(tpgService.resolveCourseGroups(programme, track.id).map((group) => [group.id, group]));
+  const motherCourses = tpgService.flattenCourses(programme);
+  const trackCourses = tpgService.flattenCourses(programme, '', track.id);
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.academicYear, '2026-27');
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.equal(programme.trackSelectionOptional, true);
+  assert.equal(track.id, 'LINGNAN-TPG-DIR-17-000487-L6-24-000294-L6');
+  assert.equal(track.name, 'Educational Technology and Digital Transformation, EdTech Concentration');
+  assert.equal(track.type, 'Concentration');
+  assert.deepEqual(Object.keys(motherGroups), ['core-courses', 'elective-courses', 'capstone-course']);
+  assert.deepEqual(Object.keys(trackGroups), ['core-courses', 'elective-courses', 'edtech-concentration-courses']);
+  assert.deepEqual([motherGroups['elective-courses'].creditsRequired, motherGroups['elective-courses'].coursesRequired], [6, 2]);
+  assert.deepEqual([trackGroups['elective-courses'].creditsRequired, trackGroups['elective-courses'].coursesRequired], [3, 1]);
+  assert.deepEqual([trackGroups['edtech-concentration-courses'].creditsRequired, trackGroups['edtech-concentration-courses'].coursesRequired], [9, 3]);
+  assert.equal(motherCourses.some((course) => course.code === 'MIH606'), true);
+  assert.equal(motherCourses.some((course) => course.code === 'MIH620'), false);
+  assert.equal(trackCourses.some((course) => course.code === 'MIH606'), false);
+  assert.equal(trackCourses.some((course) => course.code === 'MIH620'), true);
+  assert.equal(motherCourses.length, 14);
+  assert.equal(trackCourses.length, 16);
+  assert.equal(new Set(programme.courseGroups.flatMap((group) => group.courses).map((course) => course.code)).size, 17);
 });
 
 test('TPG programme search matches names, codes, faculties and course text', () => {

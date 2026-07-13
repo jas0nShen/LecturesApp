@@ -6,6 +6,21 @@ function inspectProgramme(programme, today = new Date()) {
   const courses = groups.flatMap((group) => group.courses || []);
   const trackIds = new Set((programme.tracks || []).map((track) => track.id));
   const seenCodes = new Set();
+  const inspectTrackReferences = (item, label) => {
+    (item.appliesToTrackIds || []).forEach((id) => {
+      if (!trackIds.has(id)) issues.push(`${label}:unknown-track:${id}`);
+    });
+    (item.excludesTrackIds || []).forEach((id) => {
+      if (!trackIds.has(id)) issues.push(`${label}:unknown-excluded-track:${id}`);
+      if ((item.appliesToTrackIds || []).includes(id)) issues.push(`${label}:conflicting-track:${id}`);
+    });
+    ['creditsRequiredByTrackIds', 'coursesRequiredByTrackIds'].forEach((field) => {
+      Object.entries(item[field] || {}).forEach(([id, value]) => {
+        if (!trackIds.has(id)) issues.push(`${label}:${field}:unknown-track:${id}`);
+        if (!(Number.isFinite(Number(value)) && Number(value) > 0)) issues.push(`${label}:${field}:invalid:${id}`);
+      });
+    });
+  };
   if (programme.courseVerificationStatus === 'blocked') {
     return { programmeId: programme.id, universityCode: programme.universityCode, courseCount: courses.length, issues: ['source-blocked'] };
   }
@@ -19,9 +34,7 @@ function inspectProgramme(programme, today = new Date()) {
   groups.forEach((group) => {
     if (!group.type) issues.push(`group:${group.id || group.name}:missing-type`);
     if (!group.sourceUrl && !programme.courseSourceUrl && !programme.sourceUrl) issues.push(`group:${group.id || group.name}:missing-source`);
-    (group.appliesToTrackIds || []).forEach((id) => {
-      if (!trackIds.has(id)) issues.push(`group:${group.id || group.name}:unknown-track:${id}`);
-    });
+    inspectTrackReferences(group, `group:${group.id || group.name}`);
     (group.courses || []).forEach((course) => {
       if (!course.code) issues.push('course:missing-code');
       if (!course.name) issues.push(`course:${course.code || '?'}:missing-name`);
@@ -29,9 +42,7 @@ function inspectProgramme(programme, today = new Date()) {
       if (!course.sourceUrl && !group.sourceUrl && !programme.courseSourceUrl && !programme.sourceUrl) issues.push(`course:${course.code || '?'}:missing-source`);
       if (seenCodes.has(course.code)) issues.push(`course:${course.code}:duplicate`);
       seenCodes.add(course.code);
-      (course.appliesToTrackIds || []).forEach((id) => {
-        if (!trackIds.has(id)) issues.push(`course:${course.code}:unknown-track:${id}`);
-      });
+      inspectTrackReferences(course, `course:${course.code}`);
       (course.countsTowardTrackIds || []).forEach((id) => {
         if (!trackIds.has(id)) issues.push(`course:${course.code}:unknown-counts-toward-track:${id}`);
       });

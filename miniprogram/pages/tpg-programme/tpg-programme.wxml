@@ -19,7 +19,7 @@
       </view>
       <view class="fact">
         <view class="fact-label">毕业学分</view>
-        <view class="fact-value">{{programme.creditsRequired ? programme.creditsRequired + ' credits / units' : '待确认'}}</view>
+        <view class="fact-value">{{creditsRequired ? creditsRequired + ' credits / units' : '待确认'}}</view>
       </view>
     </view>
   </view>
@@ -44,8 +44,9 @@
 
   <view wx:if="{{hasCourseGroups}}" class="section">
     <view class="section-kicker">课程结构</view>
+    <view wx:if="{{selectedTrack}}" class="pending-copy">当前方向：{{selectedTrack.name}}</view>
     <view
-      wx:for="{{programme.courseGroups}}"
+      wx:for="{{courseGroups}}"
       wx:key="name"
       wx:for-item="group"
       class="course-group"

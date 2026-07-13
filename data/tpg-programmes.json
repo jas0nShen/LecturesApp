@@ -41736,7 +41736,7 @@
       "name": "Master of Arts in International Higher Education and Management",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -41747,14 +41747,206 @@
         {
           "id": "LINGNAN-TPG-DIR-17-000487-L6-24-000294-L6",
           "code": "24/000294/L6",
-          "name": "Managing Education Change in International Context",
-          "type": "specialism",
-          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "name": "Educational Technology and Digital Transformation, EdTech Concentration",
+          "type": "Concentration",
+          "sourceUrl": "https://www.ln.edu.hk/sgs/ihem/programme-overview/programme-structure",
           "lastVerifiedAt": "2026-07-11"
         }
       ],
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Complete all six Core Courses (18 credits) under both the mother Programme and the EdTech Concentration.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/ihem/programme-overview/programme-structure",
+          "courses": [
+            {
+              "code": "MIH501",
+              "name": "Globalisation, Policy and Society",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/ihem/programme-overview/programme-structure"
+            },
+            {
+              "code": "MIH502",
+              "name": "Comparative Social Policy Research Methods",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/ihem/programme-overview/programme-structure"
+            },
+            {
+              "code": "MIH504",
+              "name": "Internationalisation and Quality Management in Higher Education",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/ihem/programme-overview/programme-structure"
+            },
+            {
+              "code": "MIH601",
+              "name": "Internationalising Education: Institutional Strategy and Development",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/ihem/programme-overview/programme-structure"
+            },
+            {
+              "code": "MIH602",
+              "name": "Postgraduate Studies Seminar Series",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/ihem/programme-overview/programme-structure"
+            },
+            {
+              "code": "MIH605",
+              "name": "Managing Talents and Finance in Education Institutions",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/ihem/programme-overview/programme-structure"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "creditsRequiredByTrackIds": {
+            "LINGNAN-TPG-DIR-17-000487-L6-24-000294-L6": 3
+          },
+          "coursesRequiredByTrackIds": {
+            "LINGNAN-TPG-DIR-17-000487-L6-24-000294-L6": 1
+          },
+          "ruleText": "The mother Programme selects two Elective Courses (6 credits). The EdTech Concentration selects one course from the same pool (3 credits). Elective offerings are subject to student demand and faculty availability.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/ihem/programme-overview/programme-structure",
+          "courses": [
+            {
+              "code": "MIH506",
+              "name": "Branding and Marketing of Education",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/ihem/programme-overview/programme-structure"
+            },
+            {
+              "code": "MIH509",
+              "name": "Global Study on Education Management in Greater China and Beyond",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/ihem/programme-overview/programme-structure"
+            },
+            {
+              "code": "MIH603",
+              "name": "Cases and Workshop for Management Issues in Education",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/ihem/programme-overview/programme-structure"
+            },
+            {
+              "code": "MIH611",
+              "name": "Generative AI in Education: Applications and Challenges",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/ihem/programme-overview/programme-structure"
+            },
+            {
+              "code": "MOP606",
+              "name": "Fostering Interculturality through Intercultural Education",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/ihem/programme-overview/programme-structure"
+            },
+            {
+              "code": "CRS512",
+              "name": "Evolution of Early Childhood Education in China and the World",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/ihem/programme-overview/programme-structure"
+            },
+            {
+              "code": "PSY619",
+              "name": "Educational Psychology: Theory and Practice",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/ihem/programme-overview/programme-structure"
+            }
+          ]
+        },
+        {
+          "id": "edtech-concentration-courses",
+          "name": "EdTech Concentration Courses",
+          "type": "concentration",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Students in the EdTech Concentration complete all three Concentration Courses (9 credits).",
+          "appliesToTrackIds": [
+            "LINGNAN-TPG-DIR-17-000487-L6-24-000294-L6"
+          ],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/ihem/programme-overview/programme-structure",
+          "courses": [
+            {
+              "code": "MIH620",
+              "name": "Education Technology Policy Analysis and Management at Macro Level",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "LINGNAN-TPG-DIR-17-000487-L6-24-000294-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/ihem/programme-overview/programme-structure"
+            },
+            {
+              "code": "MIH621",
+              "name": "Leading and Implementing EdTech Policy at the School Level",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "LINGNAN-TPG-DIR-17-000487-L6-24-000294-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/ihem/programme-overview/programme-structure"
+            },
+            {
+              "code": "MIH622",
+              "name": "Innovative EdTech Practices for Classroom Teaching and Learning",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "LINGNAN-TPG-DIR-17-000487-L6-24-000294-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/ihem/programme-overview/programme-structure"
+            }
+          ]
+        },
+        {
+          "id": "capstone-course",
+          "name": "Capstone Course",
+          "type": "project",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Students in the mother Programme complete MIH606 (6 credits). This Capstone Course is not part of the EdTech Concentration path.",
+          "appliesToTrackIds": [],
+          "excludesTrackIds": [
+            "LINGNAN-TPG-DIR-17-000487-L6-24-000294-L6"
+          ],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/ihem/programme-overview/programme-structure",
+          "courses": [
+            {
+              "code": "MIH606",
+              "name": "Capstone Project in International Higher Education and Management",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/ihem/programme-overview/programme-structure"
+            }
+          ]
+        }
+      ],
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-13",
+      "courseSourceUrl": "https://www.ln.edu.hk/sgs/ihem/programme-overview/programme-structure",
+      "courseStatusNote": "",
+      "trackSelectionOptional": true,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified"
     },
     {
       "id": "LINGNAN-TPG-DIR-17-001035-L6",

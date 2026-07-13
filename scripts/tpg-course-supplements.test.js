@@ -88,6 +88,21 @@ test('TPG course supplements reject unknown Tracks and missing official credits'
   assert.throws(() => validateSupplement(badCredits, fixtureCatalogue()), /official credits/);
 });
 
+test('TPG course supplements validate Track exclusions and per-Track group requirements', () => {
+  const supplement = fixtureSupplement();
+  const group = supplement.programmes[0].courseGroups[0];
+  group.excludesTrackIds = [];
+  group.creditsRequiredByTrackIds = { 'TEST-TRACK-A': 6 };
+  group.coursesRequiredByTrackIds = { 'TEST-TRACK-A': 2 };
+  validateSupplement(supplement, fixtureCatalogue(), 'fixture.json');
+
+  group.excludesTrackIds = ['OTHER'];
+  assert.throws(() => validateSupplement(supplement, fixtureCatalogue()), /excludes unknown Track OTHER/);
+  group.excludesTrackIds = [];
+  group.creditsRequiredByTrackIds = { OTHER: 6 };
+  assert.throws(() => validateSupplement(supplement, fixtureCatalogue()), /creditsRequiredByTrackIds references unknown Track OTHER/);
+});
+
 test('TPG course supplements reject a Programme repeated across source files', () => {
   const supplement = fixtureSupplement();
   assert.throws(() => applySupplements(fixtureCatalogue(), [
