@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "LINGNAN",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "LINGNAN-TPG-DIR-08-000500-6",
+      "status": "blocked",
+      "sourceUrl": "https://www.ln.edu.hk/econ/mibf/programmeoverview/programme-structure",
+      "statusNote": "The live official AY2026/27 Programme Structure publishes six 3-credit Core Courses and requires another 12 Elective credits, while the current official List of Courses publishes the coded Elective pool but not each Elective course's credit value. The linked official Student Handbook is for AY2025/26 and includes IBF613, which is absent from the live current course list, so its credit table is not applied to the current intake. Elective credits are not inferred from the prior-year handbook; the structure remains unavailable pending an official AY2026/27 credit table."
+    }
+  ]
+}

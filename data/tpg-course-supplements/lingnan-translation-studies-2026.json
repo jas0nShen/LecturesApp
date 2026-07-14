@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "LINGNAN",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "LINGNAN-TPG-DIR-19-000888-L6",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete all three Required Courses (9 credits).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats",
+          "courses": [
+            { "code": "TRA501", "name": "Translation Theory: Traditional and Modern", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats" },
+            { "code": "TRA502", "name": "Methods in Translation and Interpreting Research", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats" },
+            { "code": "TRA503", "name": "Chinese-English Translation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats" }
+          ]
+        },
+        {
+          "id": "dissertation-or-translation-project",
+          "name": "Dissertation or Translation Project",
+          "type": "project_dissertation",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Complete either TRA516 Dissertation or TRA517 Translation Project (6 credits). The two year-long courses are mutually exclusive and require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats",
+          "courses": [
+            { "code": "TRA516", "name": "Dissertation", "credits": 6, "courseKind": "dissertation", "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats" },
+            { "code": "TRA517", "name": "Translation Project", "credits": 6, "courseKind": "project", "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Choose five Elective Courses (15 credits) from the official theoretical and practical course pool.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats",
+          "courses": [
+            { "code": "TRA504", "name": "Advanced Translation Studies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats" },
+            { "code": "TRA505", "name": "Business Translation (C-E)", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats" },
+            { "code": "TRA506", "name": "Comparative Language Studies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats" },
+            { "code": "TRA507", "name": "Computer-aided Translation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats" },
+            { "code": "TRA508", "name": "History of Translation and Interpreting in China", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats" },
+            { "code": "TRA509", "name": "Journalistic Translation (C-E)", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats" },
+            { "code": "TRA510", "name": "Legal Translation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats" },
+            { "code": "TRA511", "name": "Literary Translation (C-E)", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats" },
+            { "code": "TRA512", "name": "Translation and Culture", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats" },
+            { "code": "TRA513", "name": "Translation Criticism", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats" },
+            { "code": "TRA514", "name": "Translating for Popular Culture", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats" },
+            { "code": "TRA515", "name": "Translating for the Creative Industries", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats" },
+            { "code": "TRA518", "name": "Bilingual Verbal Communications Workshop", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats" },
+            { "code": "TRA519", "name": "Eco-translation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats" }
+          ]
+        }
+      ]
+    }
+  ]
+}

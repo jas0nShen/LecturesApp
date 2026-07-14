@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "LINGNAN",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "LINGNAN-TPG-DIR-22-000098-L6",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure",
+      "ruleReviewStatus": "manual_review_required",
+      "trackSelectionOptional": true,
+      "tracks": [
+        {
+          "id": "LINGNAN-TPG-DIR-22-000098-L6-23-000254-L6",
+          "code": "23/000254/L6",
+          "name": "Art and Design for Social Impact",
+          "type": "Concentration",
+          "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/adsi-concentration",
+          "lastVerifiedAt": "2026-07-11"
+        }
+      ],
+      "courseGroups": [
+        {
+          "id": "shared-core-courses",
+          "name": "Shared Core Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four shared Core Courses (12 credits) under both the mother Programme and the Art and Design for Social Impact Concentration.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure",
+          "courses": [
+            { "code": "SEI504", "name": "Innovation Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure" },
+            { "code": "SEI503", "name": "Entrepreneurial Leadership for Social Startups", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure" },
+            { "code": "MIH501", "name": "Globalization, Policy and Society", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure" },
+            { "code": "SEI507", "name": "Inclusive Entrepreneurship – Scaling-Up in Developing Markets", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure" }
+          ]
+        },
+        {
+          "id": "path-specific-core-and-adsi-elective",
+          "name": "Path-specific Core Courses and ADSI Elective",
+          "type": "core",
+          "creditsRequired": 9,
+          "coursesRequired": 2,
+          "creditsRequiredByTrackIds": {
+            "LINGNAN-TPG-DIR-22-000098-L6-23-000254-L6": 9
+          },
+          "coursesRequiredByTrackIds": {
+            "LINGNAN-TPG-DIR-22-000098-L6-23-000254-L6": 2
+          },
+          "ruleText": "The mother Programme completes SEI501 (6 credits) and SCI505 (3 credits). The ADSI Concentration instead completes SEI508 (6 credits) and SEI509 (3 credits); SCI505 moves into the ADSI elective pool. SCI505 is retained once in this combined group to keep course codes unique, so ADSI completion requires manual review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/adsi-concentration",
+          "courses": [
+            { "code": "SEI501", "name": "Design Methods for Creative Problem-Solving and Social Innovation", "credits": 6, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-22-000098-L6-23-000254-L6"], "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure" },
+            { "code": "SCI505", "name": "Introduction to Environmental, Social and Governance (ESG) Planning", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure" },
+            { "code": "SEI508", "name": "Design Innovation for Arts and Culture", "credits": 6, "appliesToTrackIds": ["LINGNAN-TPG-DIR-22-000098-L6-23-000254-L6"], "countsTowardTrackIds": ["LINGNAN-TPG-DIR-22-000098-L6-23-000254-L6"], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/SEI_TPG.pdf" },
+            { "code": "SEI509", "name": "Interactive Arts and Technology", "credits": 3, "appliesToTrackIds": ["LINGNAN-TPG-DIR-22-000098-L6-23-000254-L6"], "countsTowardTrackIds": ["LINGNAN-TPG-DIR-22-000098-L6-23-000254-L6"], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/SEI_TPG.pdf" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Choose one Elective Course (3 credits), subject to course availability. The ADSI Concentration may also choose SCI505, which is displayed in the path-specific group because the mother Programme requires it.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure",
+          "courses": [
+            { "code": "HTI504", "name": "Gerontechnology: Design for an Ageing Society", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure" },
+            { "code": "SEI506", "name": "Humanitarian Technology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure" },
+            { "code": "MHM502", "name": "Health and Social Services Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure" },
+            { "code": "CDS568", "name": "Strategic Visual Data Analytics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure" },
+            { "code": "CDS547", "name": "Introduction to Large Language Models", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure" },
+            { "code": "CDS567", "name": "Introduction to Embodied Intelligence", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure" }
+          ]
+        },
+        {
+          "id": "capstone-project",
+          "name": "Capstone Project",
+          "type": "project",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Complete SEI505 Design Innovation for Addressing Social Challenges (6 credits) under both paths.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure",
+          "courses": [
+            { "code": "SEI505", "name": "Design Innovation for Addressing Social Challenges", "credits": 6, "courseKind": "project", "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure" }
+          ]
+        }
+      ]
+    }
+  ]
+}

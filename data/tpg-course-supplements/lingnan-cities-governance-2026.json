@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "LINGNAN",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "LINGNAN-TPG-DIR-19-001288-L6",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure",
+      "ruleReviewStatus": "verified",
+      "trackSelectionOptional": true,
+      "tracks": [
+        {
+          "id": "LINGNAN-TPG-DIR-19-001288-L6-21-000488-L6",
+          "code": "21/000488/L6",
+          "name": "Environment and Sustainability",
+          "type": "Concentration",
+          "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure",
+          "lastVerifiedAt": "2026-07-11"
+        }
+      ],
+      "courseGroups": [
+        {
+          "id": "shared-core-courses",
+          "name": "Shared Core Courses",
+          "type": "core",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Complete all six shared Core Courses (18 credits) under both the mother Programme and the Environment and Sustainability Concentration.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure",
+          "courses": [
+            { "code": "MCG501", "name": "Cities and Social Change", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure" },
+            { "code": "MCG502", "name": "Regional Policy Study and Visit in the Greater Bay Area", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure" },
+            { "code": "MCG503", "name": "History, Heritage and Regional Perspectives", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure" },
+            { "code": "MCG505", "name": "Smart and Sustainable Cities", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure" },
+            { "code": "MCG507", "name": "Urban Issues and Policies: International Symposium", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure" },
+            { "code": "CRS501", "name": "China and Regional Studies: Politics, Policy, and International Development", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure" }
+          ]
+        },
+        {
+          "id": "mother-programme-core-courses",
+          "name": "Mother Programme Core Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Students who do not declare a Concentration complete all four mother Programme Core Courses (12 credits).",
+          "appliesToTrackIds": [],
+          "excludesTrackIds": [
+            "LINGNAN-TPG-DIR-19-001288-L6-21-000488-L6"
+          ],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure",
+          "courses": [
+            { "code": "MCG506", "name": "Ageing Policies in Greater China", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure" },
+            { "code": "MCG509", "name": "Understanding Metropolitan Indicators and Social Policies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure" },
+            { "code": "MCG510", "name": "Workshop for Smart Governance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure" },
+            { "code": "MCG511", "name": "Housing Policy and Development", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure" }
+          ]
+        },
+        {
+          "id": "environment-sustainability-concentration-courses",
+          "name": "Environment and Sustainability Concentration Courses",
+          "type": "concentration",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Students in the Environment and Sustainability Concentration complete all four Concentration Courses (12 credits).",
+          "appliesToTrackIds": [
+            "LINGNAN-TPG-DIR-19-001288-L6-21-000488-L6"
+          ],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure",
+          "courses": [
+            { "code": "SCI502", "name": "Climate Change Literacy and Science", "credits": 3, "appliesToTrackIds": ["LINGNAN-TPG-DIR-19-001288-L6-21-000488-L6"], "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure" },
+            { "code": "SCI503", "name": "Sustainability and Environmental Communication", "credits": 3, "appliesToTrackIds": ["LINGNAN-TPG-DIR-19-001288-L6-21-000488-L6"], "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure" },
+            { "code": "SCI504", "name": "Urban Ecology and Sustainable Planning", "credits": 3, "appliesToTrackIds": ["LINGNAN-TPG-DIR-19-001288-L6-21-000488-L6"], "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure" },
+            { "code": "SCI505", "name": "Introduction to Environmental, Social and Governance (ESG) Planning", "credits": 3, "appliesToTrackIds": ["LINGNAN-TPG-DIR-19-001288-L6-21-000488-L6"], "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure" }
+          ]
+        }
+      ]
+    }
+  ]
+}

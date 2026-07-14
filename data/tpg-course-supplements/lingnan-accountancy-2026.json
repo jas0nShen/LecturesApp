@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "LINGNAN",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "LINGNAN-TPG-DIR-08-000501-6",
+      "status": "verified",
+      "creditsRequired": 33,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum",
+      "ruleReviewStatus": "verified",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Complete all six Core Courses (18 credits). Each course carries 3 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum",
+          "courses": [
+            { "code": "ACT501", "name": "Auditing", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ACT502", "name": "Business and Company Law", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ACT503", "name": "Cost and Management Accounting", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ACT504", "name": "Financial Accounting and Reporting", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ACT505", "name": "Hong Kong Taxation and Tax Planning", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ACT506", "name": "Managerial Finance", "credits": 3, "appliesToTrackIds": [] }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Choose any five Elective Courses (15 credits). Each course carries 3 credits; offerings are subject to sufficient demand and faculty availability.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum",
+          "courses": [
+            { "code": "ACT601", "name": "Accounting Theory", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ACT602", "name": "Research Project in Accounting", "credits": 3, "courseKind": "project", "appliesToTrackIds": [] },
+            { "code": "ACT604", "name": "China Taxation: An International Perspective", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ACT605", "name": "Contemporary Issues in Management Accounting", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ACT606", "name": "Forensic Accounting and Fraud Examination", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ACT607", "name": "Financial Statement Interpretation and Analysis", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ACT608", "name": "The Economic Law of China", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ACT609", "name": "Advanced Auditing", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ACT610", "name": "Accounting Ethics and Corporate Governance", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ACT611", "name": "Comparative Legal Systems", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ACT612", "name": "Data Analytics for Accounting", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ACT613", "name": "Environmental, Social and Governance (ESG) Issues in Business and Accounting", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ACT614", "name": "Financial Regulatory Environments of Hong Kong and Mainland China", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "FIN545", "name": "Environmental Social and Governance (ESG) Investing and Sustainable Finance", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ESG503", "name": "Environmental Social and Governance (ESG) Accounting and Disclosure", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ACT615", "name": "Introduction to Python Programming", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ORM 545", "name": "Cloud-based Solutions for Digital Business Transformation", "credits": 3, "appliesToTrackIds": [] }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -71,7 +71,7 @@ function checkReleaseReadiness(now = new Date()) {
     errors.push('project.config.json does not contain a valid WeChat AppID');
   }
   if (!String(project.description || '').includes('香港高校') || !String(project.description || '').includes('课程规划')) {
-    errors.push('project.config.json description must match the 1.0.0 course-planning positioning');
+    errors.push('project.config.json description must match the 1.0.2 course-planning positioning');
   }
   if (project.setting && project.setting.uploadWithSourceMap !== false) {
     errors.push('Source map upload must be disabled for the release build');

@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "LINGNAN",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "LINGNAN-TPG-DIR-08-000497-6",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.ln.edu.hk/chi/machi",
+      "ruleReviewStatus": "manual_review_required",
+      "trackSelectionOptional": true,
+      "tracks": [
+        {
+          "id": "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6",
+          "code": "25/000001/L6",
+          "name": "Global Chinese Studies",
+          "type": "Concentration",
+          "sourceUrl": "https://www.ln.edu.hk/chi/machi/macgcs",
+          "lastVerifiedAt": "2026-07-14"
+        }
+      ],
+      "courseGroups": [
+        {
+          "id": "shared-required-courses",
+          "name": "Shared Required Courses",
+          "type": "core_thesis",
+          "creditsRequired": 9,
+          "coursesRequired": 2,
+          "ruleText": "Complete CHI502 Directed Thesis (6 credits) and CHI517 Seminar on Chinese Literature and Culture (3 credits) under both the mother Programme and the Global Chinese Studies Concentration.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/chi/machi",
+          "courses": [
+            { "code": "CHI502", "name": "Directed Thesis", "credits": 6, "courseKind": "thesis", "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/chi/machi" },
+            { "code": "CHI517", "name": "Seminar on Chinese Literature and Culture", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/chi/machi" }
+          ]
+        },
+        {
+          "id": "mother-programme-required-course",
+          "name": "Mother Programme Required Course",
+          "type": "core",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Students who do not declare the Global Chinese Studies Concentration complete CHI501 (3 credits); CHI501 is the prerequisite for CHI502 on the mother Programme path.",
+          "appliesToTrackIds": [],
+          "excludesTrackIds": [
+            "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"
+          ],
+          "sourceUrl": "https://www.ln.edu.hk/chi/machi",
+          "courses": [
+            { "code": "CHI501", "name": "Methodology of Literary Studies and Literary Theory", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/chi/machi" }
+          ]
+        },
+        {
+          "id": "global-chinese-studies-required-course",
+          "name": "Global Chinese Studies Required Course",
+          "type": "track_core",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Students in the Global Chinese Studies Concentration complete CHI551 (3 credits); CHI551 is the prerequisite for CHI502 on the Concentration path.",
+          "appliesToTrackIds": [
+            "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"
+          ],
+          "sourceUrl": "https://www.ln.edu.hk/chi/machi/macgcs",
+          "courses": [
+            { "code": "CHI551", "name": "Research Methodology and Theory in Global Chinese Literature", "credits": 3, "appliesToTrackIds": ["LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"], "sourceUrl": "https://www.ln.edu.hk/chi/machi/macgcs" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "creditsRequiredByTrackIds": {
+            "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6": 9
+          },
+          "coursesRequiredByTrackIds": {
+            "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6": 3
+          },
+          "ruleText": "The mother Programme chooses six Elective Courses (18 credits) from the full pool. Global Chinese Studies students choose three courses (9 credits) from CHI503, CHI507, CHI508, CHI510, CHI515 and CHI520. On the mother Programme path, CHI504 and CHI505 may each be taken twice for distinct topics, and CHI519 may be taken twice for distinct topics; repeat-credit cases require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/chi/machi",
+          "courses": [
+            { "code": "CHI503", "name": "Practical Criticism", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/chi/machi" },
+            { "code": "CHI504", "name": "Special Topics in Classical Chinese Literature", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"], "sourceUrl": "https://www.ln.edu.hk/chi/machi" },
+            { "code": "CHI505", "name": "Special Topics in Modern Literature in Chinese", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"], "sourceUrl": "https://www.ln.edu.hk/chi/machi" },
+            { "code": "CHI506", "name": "Creative Writing", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"], "sourceUrl": "https://www.ln.edu.hk/chi/machi" },
+            { "code": "CHI507", "name": "Chinese Literature in Comparative Perspective", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/chi/machi" },
+            { "code": "CHI508", "name": "Literature and Cinema", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/chi/machi" },
+            { "code": "CHI509", "name": "Chinese Stylistics", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"], "sourceUrl": "https://www.ln.edu.hk/chi/machi" },
+            { "code": "CHI510", "name": "Modern Fiction in Chinese", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/chi/machi" },
+            { "code": "CHI511", "name": "Cultural Criticism", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"], "sourceUrl": "https://www.ln.edu.hk/chi/machi" },
+            { "code": "CHI512", "name": "Studies in Chinese Classics", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"], "sourceUrl": "https://www.ln.edu.hk/chi/machi" },
+            { "code": "CHI513", "name": "Classical Chinese Dramatic Literature", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"], "sourceUrl": "https://www.ln.edu.hk/chi/machi" },
+            { "code": "CHI514", "name": "Special Topics in Narrative Writing", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"], "sourceUrl": "https://www.ln.edu.hk/chi/machi" },
+            { "code": "CHI515", "name": "Special Topics in Hong Kong Literature", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/chi/machi" },
+            { "code": "CHI516", "name": "Special Topics in Chinese Linguistics", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"], "sourceUrl": "https://www.ln.edu.hk/chi/machi" },
+            { "code": "CHI518", "name": "Selected Readings in World Literature", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"], "sourceUrl": "https://www.ln.edu.hk/chi/machi" },
+            { "code": "CHI519", "name": "Special Topics in Chinese Writing", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"], "sourceUrl": "https://www.ln.edu.hk/chi/machi" },
+            { "code": "CHI520", "name": "Modern and Contemporary Taiwan Literature", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/chi/machi" },
+            { "code": "CHI521", "name": "Literary Exhibition and Writing", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"], "sourceUrl": "https://www.ln.edu.hk/chi/machi" }
+          ]
+        },
+        {
+          "id": "global-chinese-studies-concentration-core",
+          "name": "Global Chinese Studies Concentration Core Courses",
+          "type": "concentration",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Global Chinese Studies students choose at least three Concentration Core Courses (9 credits). CHI554 and CHI555 may each be taken twice for distinct topics; repeat-credit cases require manual audit review.",
+          "appliesToTrackIds": [
+            "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"
+          ],
+          "sourceUrl": "https://www.ln.edu.hk/chi/machi/macgcs",
+          "courses": [
+            { "code": "CHI552", "name": "Frontiers of Global Chinese Studies", "credits": 3, "appliesToTrackIds": ["LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"], "sourceUrl": "https://www.ln.edu.hk/chi/machi/macgcs" },
+            { "code": "CHI553", "name": "Classical Chinese Literature in Translingual Practices", "credits": 3, "appliesToTrackIds": ["LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"], "sourceUrl": "https://www.ln.edu.hk/chi/machi/macgcs" },
+            { "code": "CHI554", "name": "Special Topics in Classical Chinese Literature from Global Perspectives", "credits": 3, "appliesToTrackIds": ["LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"], "sourceUrl": "https://www.ln.edu.hk/chi/machi/macgcs" },
+            { "code": "CHI555", "name": "Special Topics in Modern Chinese Literature from Global Perspectives", "credits": 3, "appliesToTrackIds": ["LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"], "sourceUrl": "https://www.ln.edu.hk/chi/machi/macgcs" },
+            { "code": "CHI556", "name": "Special Topics in Sinophone Studies", "credits": 3, "appliesToTrackIds": ["LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"], "sourceUrl": "https://www.ln.edu.hk/chi/machi/macgcs" },
+            { "code": "CHI557", "name": "Special Topics in World Literature", "credits": 3, "appliesToTrackIds": ["LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"], "sourceUrl": "https://www.ln.edu.hk/chi/machi/macgcs" },
+            { "code": "CHI558", "name": "Chinese Literature and the Medieval World", "credits": 3, "appliesToTrackIds": ["LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"], "sourceUrl": "https://www.ln.edu.hk/chi/machi/macgcs" },
+            { "code": "CHI559", "name": "Digital Humanities for Global Chinese Studies", "credits": 3, "appliesToTrackIds": ["LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"], "sourceUrl": "https://www.ln.edu.hk/chi/machi/macgcs" }
+          ]
+        }
+      ]
+    }
+  ]
+}

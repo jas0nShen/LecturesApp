@@ -7744,7 +7744,7 @@ module.exports = {
       "name": "Master of Arts in Chinese",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -7756,13 +7756,20 @@ module.exports = {
           "id": "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6",
           "code": "25/000001/L6",
           "name": "Global Chinese Studies",
-          "type": "specialism",
-          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
-          "lastVerifiedAt": "2026-07-11"
+          "type": "Concentration",
+          "sourceUrl": "https://www.ln.edu.hk/chi/machi/macgcs",
+          "lastVerifiedAt": "2026-07-14"
         }
       ],
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/chi/machi",
+      "courseStatusNote": "",
+      "trackSelectionOptional": true,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 30
     },
     {
       "id": "LINGNAN-TPG-DIR-08-000498-6",
@@ -7815,6 +7822,10 @@ module.exports = {
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/econ/mibf/programmeoverview/programme-structure",
+      "courseStatusNote": "The live official AY2026/27 Programme Structure publishes six 3-credit Core Courses and requires another 12 Elective credits, while the current official List of Courses publishes the coded Elective pool but not each Elective course's credit value. The linked official Student Handbook is for AY2025/26 and includes IBF613, which is absent from the live current course list, so its credit table is not applied to the current intake. Elective credits are not inferred from the prior-year handbook; the structure remains unavailable pending an official AY2026/27 credit table.",
       "courseCount": 0
     },
     {
@@ -7824,7 +7835,7 @@ module.exports = {
       "name": "Master of Accountancy",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 33,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -7832,8 +7843,14 @@ module.exports = {
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified",
+      "courseCount": 23
     },
     {
       "id": "LINGNAN-TPG-DIR-13-000684-L6",
@@ -7842,7 +7859,7 @@ module.exports = {
       "name": "Master of Science in Marketing and International Business",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -7850,8 +7867,14 @@ module.exports = {
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscmib/curriculum",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 18
     },
     {
       "id": "LINGNAN-TPG-DIR-15-003341-L6",
@@ -8004,7 +8027,7 @@ module.exports = {
       "name": "Master of Arts in International Affairs",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -8012,8 +8035,14 @@ module.exports = {
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified",
+      "courseCount": 16
     },
     {
       "id": "LINGNAN-TPG-DIR-18-000444-L6",
@@ -8022,7 +8051,7 @@ module.exports = {
       "name": "Master of Science in International and Development Economics",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -8030,8 +8059,14 @@ module.exports = {
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/econ/mide/programme-overview/programme-structure",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified",
+      "courseCount": 18
     },
     {
       "id": "LINGNAN-TPG-DIR-19-000062-L6",
@@ -8086,7 +8121,7 @@ module.exports = {
       "name": "Master of Arts in Translation Studies",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -8094,8 +8129,14 @@ module.exports = {
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/tran/programmes/mats",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 19
     },
     {
       "id": "LINGNAN-TPG-DIR-19-001288-L6",
@@ -8104,7 +8145,7 @@ module.exports = {
       "name": "Master of Cities and Governance",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -8116,13 +8157,20 @@ module.exports = {
           "id": "LINGNAN-TPG-DIR-19-001288-L6-21-000488-L6",
           "code": "21/000488/L6",
           "name": "Environment and Sustainability",
-          "type": "specialism",
-          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "type": "Concentration",
+          "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure",
           "lastVerifiedAt": "2026-07-11"
         }
       ],
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure",
+      "courseStatusNote": "",
+      "trackSelectionOptional": true,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified",
+      "courseCount": 14
     },
     {
       "id": "LINGNAN-TPG-DIR-20-000103-L6",
@@ -8231,7 +8279,7 @@ module.exports = {
       "name": "Master of Arts in Social Entrepreneurship and Innovation Management",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -8243,17 +8291,20 @@ module.exports = {
           "id": "LINGNAN-TPG-DIR-22-000098-L6-23-000254-L6",
           "code": "23/000254/L6",
           "name": "Art and Design for Social Impact",
-          "type": "specialism",
-          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "type": "Concentration",
+          "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/adsi-concentration",
           "lastVerifiedAt": "2026-07-11"
         }
       ],
-      "dataLevel": "programme",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-13",
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
       "courseSourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure",
-      "courseStatusNote": "The live official Programme Structure publishes complete codes and credits for the mother Programme, but the Art and Design for Social Impact Concentration page omits the course codes for Design Innovation for Arts and Culture and Interactive Arts and Technology. The Track-specific codes are not inferred, so the Programme remains unavailable pending a complete official Track table.",
-      "courseCount": 0
+      "courseStatusNote": "",
+      "trackSelectionOptional": true,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 15
     },
     {
       "id": "LINGNAN-TPG-DIR-22-000158-L6",
@@ -8296,7 +8347,7 @@ module.exports = {
       "name": "Master of Social Sciences in Comparative Public Administration",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -8308,13 +8359,20 @@ module.exports = {
           "id": "LINGNAN-TPG-DIR-22-000916-L6-24-000501-L6",
           "code": "24/000501/L6",
           "name": "Digital and Smart Governance",
-          "type": "specialism",
-          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "type": "Concentration",
+          "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure",
           "lastVerifiedAt": "2026-07-11"
         }
       ],
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure",
+      "courseStatusNote": "",
+      "trackSelectionOptional": true,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 17
     },
     {
       "id": "LINGNAN-TPG-DIR-22-001024-L6",

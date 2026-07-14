@@ -41391,7 +41391,7 @@
       "name": "Master of Arts in Chinese",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -41403,13 +41403,359 @@
           "id": "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6",
           "code": "25/000001/L6",
           "name": "Global Chinese Studies",
-          "type": "specialism",
-          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
-          "lastVerifiedAt": "2026-07-11"
+          "type": "Concentration",
+          "sourceUrl": "https://www.ln.edu.hk/chi/machi/macgcs",
+          "lastVerifiedAt": "2026-07-14"
         }
       ],
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "shared-required-courses",
+          "name": "Shared Required Courses",
+          "type": "core_thesis",
+          "creditsRequired": 9,
+          "coursesRequired": 2,
+          "ruleText": "Complete CHI502 Directed Thesis (6 credits) and CHI517 Seminar on Chinese Literature and Culture (3 credits) under both the mother Programme and the Global Chinese Studies Concentration.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/chi/machi",
+          "courses": [
+            {
+              "code": "CHI502",
+              "name": "Directed Thesis",
+              "credits": 6,
+              "courseKind": "thesis",
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/chi/machi"
+            },
+            {
+              "code": "CHI517",
+              "name": "Seminar on Chinese Literature and Culture",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/chi/machi"
+            }
+          ]
+        },
+        {
+          "id": "mother-programme-required-course",
+          "name": "Mother Programme Required Course",
+          "type": "core",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Students who do not declare the Global Chinese Studies Concentration complete CHI501 (3 credits); CHI501 is the prerequisite for CHI502 on the mother Programme path.",
+          "appliesToTrackIds": [],
+          "excludesTrackIds": [
+            "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"
+          ],
+          "sourceUrl": "https://www.ln.edu.hk/chi/machi",
+          "courses": [
+            {
+              "code": "CHI501",
+              "name": "Methodology of Literary Studies and Literary Theory",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/chi/machi"
+            }
+          ]
+        },
+        {
+          "id": "global-chinese-studies-required-course",
+          "name": "Global Chinese Studies Required Course",
+          "type": "track_core",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Students in the Global Chinese Studies Concentration complete CHI551 (3 credits); CHI551 is the prerequisite for CHI502 on the Concentration path.",
+          "appliesToTrackIds": [
+            "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"
+          ],
+          "sourceUrl": "https://www.ln.edu.hk/chi/machi/macgcs",
+          "courses": [
+            {
+              "code": "CHI551",
+              "name": "Research Methodology and Theory in Global Chinese Literature",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/chi/machi/macgcs"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "creditsRequiredByTrackIds": {
+            "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6": 9
+          },
+          "coursesRequiredByTrackIds": {
+            "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6": 3
+          },
+          "ruleText": "The mother Programme chooses six Elective Courses (18 credits) from the full pool. Global Chinese Studies students choose three courses (9 credits) from CHI503, CHI507, CHI508, CHI510, CHI515 and CHI520. On the mother Programme path, CHI504 and CHI505 may each be taken twice for distinct topics, and CHI519 may be taken twice for distinct topics; repeat-credit cases require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/chi/machi",
+          "courses": [
+            {
+              "code": "CHI503",
+              "name": "Practical Criticism",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/chi/machi"
+            },
+            {
+              "code": "CHI504",
+              "name": "Special Topics in Classical Chinese Literature",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "excludesTrackIds": [
+                "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/chi/machi"
+            },
+            {
+              "code": "CHI505",
+              "name": "Special Topics in Modern Literature in Chinese",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "excludesTrackIds": [
+                "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/chi/machi"
+            },
+            {
+              "code": "CHI506",
+              "name": "Creative Writing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "excludesTrackIds": [
+                "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/chi/machi"
+            },
+            {
+              "code": "CHI507",
+              "name": "Chinese Literature in Comparative Perspective",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/chi/machi"
+            },
+            {
+              "code": "CHI508",
+              "name": "Literature and Cinema",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/chi/machi"
+            },
+            {
+              "code": "CHI509",
+              "name": "Chinese Stylistics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "excludesTrackIds": [
+                "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/chi/machi"
+            },
+            {
+              "code": "CHI510",
+              "name": "Modern Fiction in Chinese",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/chi/machi"
+            },
+            {
+              "code": "CHI511",
+              "name": "Cultural Criticism",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "excludesTrackIds": [
+                "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/chi/machi"
+            },
+            {
+              "code": "CHI512",
+              "name": "Studies in Chinese Classics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "excludesTrackIds": [
+                "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/chi/machi"
+            },
+            {
+              "code": "CHI513",
+              "name": "Classical Chinese Dramatic Literature",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "excludesTrackIds": [
+                "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/chi/machi"
+            },
+            {
+              "code": "CHI514",
+              "name": "Special Topics in Narrative Writing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "excludesTrackIds": [
+                "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/chi/machi"
+            },
+            {
+              "code": "CHI515",
+              "name": "Special Topics in Hong Kong Literature",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/chi/machi"
+            },
+            {
+              "code": "CHI516",
+              "name": "Special Topics in Chinese Linguistics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "excludesTrackIds": [
+                "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/chi/machi"
+            },
+            {
+              "code": "CHI518",
+              "name": "Selected Readings in World Literature",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "excludesTrackIds": [
+                "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/chi/machi"
+            },
+            {
+              "code": "CHI519",
+              "name": "Special Topics in Chinese Writing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "excludesTrackIds": [
+                "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/chi/machi"
+            },
+            {
+              "code": "CHI520",
+              "name": "Modern and Contemporary Taiwan Literature",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/chi/machi"
+            },
+            {
+              "code": "CHI521",
+              "name": "Literary Exhibition and Writing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "excludesTrackIds": [
+                "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/chi/machi"
+            }
+          ]
+        },
+        {
+          "id": "global-chinese-studies-concentration-core",
+          "name": "Global Chinese Studies Concentration Core Courses",
+          "type": "concentration",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Global Chinese Studies students choose at least three Concentration Core Courses (9 credits). CHI554 and CHI555 may each be taken twice for distinct topics; repeat-credit cases require manual audit review.",
+          "appliesToTrackIds": [
+            "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"
+          ],
+          "sourceUrl": "https://www.ln.edu.hk/chi/machi/macgcs",
+          "courses": [
+            {
+              "code": "CHI552",
+              "name": "Frontiers of Global Chinese Studies",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/chi/machi/macgcs"
+            },
+            {
+              "code": "CHI553",
+              "name": "Classical Chinese Literature in Translingual Practices",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/chi/machi/macgcs"
+            },
+            {
+              "code": "CHI554",
+              "name": "Special Topics in Classical Chinese Literature from Global Perspectives",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/chi/machi/macgcs"
+            },
+            {
+              "code": "CHI555",
+              "name": "Special Topics in Modern Chinese Literature from Global Perspectives",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/chi/machi/macgcs"
+            },
+            {
+              "code": "CHI556",
+              "name": "Special Topics in Sinophone Studies",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/chi/machi/macgcs"
+            },
+            {
+              "code": "CHI557",
+              "name": "Special Topics in World Literature",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/chi/machi/macgcs"
+            },
+            {
+              "code": "CHI558",
+              "name": "Chinese Literature and the Medieval World",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/chi/machi/macgcs"
+            },
+            {
+              "code": "CHI559",
+              "name": "Digital Humanities for Global Chinese Studies",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "LINGNAN-TPG-DIR-08-000497-6-25-000001-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/chi/machi/macgcs"
+            }
+          ]
+        }
+      ],
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/chi/machi",
+      "courseStatusNote": "",
+      "trackSelectionOptional": true,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required"
     },
     {
       "id": "LINGNAN-TPG-DIR-08-000498-6",
@@ -41462,7 +41808,11 @@
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
-      "courseGroups": []
+      "courseGroups": [],
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/econ/mibf/programmeoverview/programme-structure",
+      "courseStatusNote": "The live official AY2026/27 Programme Structure publishes six 3-credit Core Courses and requires another 12 Elective credits, while the current official List of Courses publishes the coded Elective pool but not each Elective course's credit value. The linked official Student Handbook is for AY2025/26 and includes IBF613, which is absent from the live current course list, so its credit table is not applied to the current intake. Elective credits are not inferred from the prior-year handbook; the structure remains unavailable pending an official AY2026/27 credit table."
     },
     {
       "id": "LINGNAN-TPG-DIR-08-000501-6",
@@ -41471,7 +41821,7 @@
       "name": "Master of Accountancy",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 33,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -41479,8 +41829,201 @@
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Complete all six Core Courses (18 credits). Each course carries 3 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum",
+          "courses": [
+            {
+              "code": "ACT501",
+              "name": "Auditing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum"
+            },
+            {
+              "code": "ACT502",
+              "name": "Business and Company Law",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum"
+            },
+            {
+              "code": "ACT503",
+              "name": "Cost and Management Accounting",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum"
+            },
+            {
+              "code": "ACT504",
+              "name": "Financial Accounting and Reporting",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum"
+            },
+            {
+              "code": "ACT505",
+              "name": "Hong Kong Taxation and Tax Planning",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum"
+            },
+            {
+              "code": "ACT506",
+              "name": "Managerial Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Choose any five Elective Courses (15 credits). Each course carries 3 credits; offerings are subject to sufficient demand and faculty availability.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum",
+          "courses": [
+            {
+              "code": "ACT601",
+              "name": "Accounting Theory",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum"
+            },
+            {
+              "code": "ACT602",
+              "name": "Research Project in Accounting",
+              "credits": 3,
+              "courseKind": "project",
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum"
+            },
+            {
+              "code": "ACT604",
+              "name": "China Taxation: An International Perspective",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum"
+            },
+            {
+              "code": "ACT605",
+              "name": "Contemporary Issues in Management Accounting",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum"
+            },
+            {
+              "code": "ACT606",
+              "name": "Forensic Accounting and Fraud Examination",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum"
+            },
+            {
+              "code": "ACT607",
+              "name": "Financial Statement Interpretation and Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum"
+            },
+            {
+              "code": "ACT608",
+              "name": "The Economic Law of China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum"
+            },
+            {
+              "code": "ACT609",
+              "name": "Advanced Auditing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum"
+            },
+            {
+              "code": "ACT610",
+              "name": "Accounting Ethics and Corporate Governance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum"
+            },
+            {
+              "code": "ACT611",
+              "name": "Comparative Legal Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum"
+            },
+            {
+              "code": "ACT612",
+              "name": "Data Analytics for Accounting",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum"
+            },
+            {
+              "code": "ACT613",
+              "name": "Environmental, Social and Governance (ESG) Issues in Business and Accounting",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum"
+            },
+            {
+              "code": "ACT614",
+              "name": "Financial Regulatory Environments of Hong Kong and Mainland China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum"
+            },
+            {
+              "code": "FIN545",
+              "name": "Environmental Social and Governance (ESG) Investing and Sustainable Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum"
+            },
+            {
+              "code": "ESG503",
+              "name": "Environmental Social and Governance (ESG) Accounting and Disclosure",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum"
+            },
+            {
+              "code": "ACT615",
+              "name": "Introduction to Python Programming",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum"
+            },
+            {
+              "code": "ORM 545",
+              "name": "Cloud-based Solutions for Digital Business Transformation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum"
+            }
+          ]
+        }
+      ],
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified"
     },
     {
       "id": "LINGNAN-TPG-DIR-13-000684-L6",
@@ -41489,7 +42032,7 @@
       "name": "Master of Science in Marketing and International Business",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -41497,8 +42040,166 @@
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core_project",
+          "creditsRequired": 21,
+          "coursesRequired": 6,
+          "ruleText": "Complete all six Core Courses (21 credits), including the 6-credit year-long MIB506 Consulting Project. The other five Core Courses carry 3 credits each.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscmib/curriculum",
+          "courses": [
+            {
+              "code": "MIB501",
+              "name": "Consumer Behaviour",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscmib/curriculum"
+            },
+            {
+              "code": "MIB502",
+              "name": "Applied Marketing Research",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscmib/curriculum"
+            },
+            {
+              "code": "MIB503",
+              "name": "International Marketing Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscmib/curriculum"
+            },
+            {
+              "code": "MIB504",
+              "name": "International Trade and Investment",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscmib/curriculum"
+            },
+            {
+              "code": "MIB506",
+              "name": "Consulting Project",
+              "credits": 6,
+              "courseKind": "project",
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscmib/curriculum"
+            },
+            {
+              "code": "MIB605",
+              "name": "E-commerce and Social Media Marketing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscmib/curriculum"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Choose three Elective Courses (9 credits): either all three from the Marketing cluster, or two from Marketing plus one from International Business. The cluster combination requires manual audit review; offerings are subject to sufficient demand and faculty availability.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscmib/curriculum",
+          "courses": [
+            {
+              "code": "MIB505",
+              "name": "Services Marketing and Customer Relationship Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscmib/curriculum"
+            },
+            {
+              "code": "MIB601",
+              "name": "Innovation Management and Digital Transformation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscmib/curriculum"
+            },
+            {
+              "code": "MIB602",
+              "name": "Integrated Marketing Communications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscmib/curriculum"
+            },
+            {
+              "code": "MIB604",
+              "name": "Sales and Retail Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscmib/curriculum"
+            },
+            {
+              "code": "MIB606",
+              "name": "Financial Services Marketing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscmib/curriculum"
+            },
+            {
+              "code": "MIB607",
+              "name": "Big Data Marketing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscmib/curriculum"
+            },
+            {
+              "code": "MGT604",
+              "name": "Strategic Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscmib/curriculum"
+            },
+            {
+              "code": "ORM513",
+              "name": "Purchasing and Logistics Management for eBusiness",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscmib/curriculum"
+            },
+            {
+              "code": "ORM545",
+              "name": "Cloud-based Solutions for Digital Business Transformation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscmib/curriculum"
+            },
+            {
+              "code": "ACT615",
+              "name": "Introduction to Python Programming",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscmib/curriculum"
+            },
+            {
+              "code": "ESG503",
+              "name": "ESG Accounting and Disclosure",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscmib/curriculum"
+            },
+            {
+              "code": "ESG511",
+              "name": "Sustainability in Hong Kong and Mainland China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscmib/curriculum"
+            }
+          ]
+        }
+      ],
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscmib/curriculum",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required"
     },
     {
       "id": "LINGNAN-TPG-DIR-15-003341-L6",
@@ -42155,7 +42856,7 @@
       "name": "Master of Arts in International Affairs",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -42163,8 +42864,164 @@
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five Required Courses (15 credits) for the 2026-27 intake and thereafter.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure",
+          "courses": [
+            {
+              "code": "MIA501",
+              "name": "Theories and Approaches of International Relations",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure"
+            },
+            {
+              "code": "MIA502",
+              "name": "Theories and Approaches of Comparative Politics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure"
+            },
+            {
+              "code": "MIA503",
+              "name": "International Security",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure"
+            },
+            {
+              "code": "MIA504",
+              "name": "Politics of Global Economic Interdependence",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure"
+            },
+            {
+              "code": "MIA505",
+              "name": "Research Methods in International Affairs",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Choose any three Elective Courses (9 credits) for the 2026-27 intake and thereafter.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure",
+          "courses": [
+            {
+              "code": "MIA601",
+              "name": "Politics of Development in Asia Pacific",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure"
+            },
+            {
+              "code": "MIA602",
+              "name": "Greater China: Identity, Interaction, Integration and Diversity",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure"
+            },
+            {
+              "code": "MIA603",
+              "name": "International Organizations and Global Governance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure"
+            },
+            {
+              "code": "MIA604",
+              "name": "Environmental Politics and Global Governance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure"
+            },
+            {
+              "code": "MIA605",
+              "name": "International Politics of the Asia-Pacific",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure"
+            },
+            {
+              "code": "MIA606",
+              "name": "Foreign Policy and International Relations of China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure"
+            },
+            {
+              "code": "MIA607",
+              "name": "NGOs, Civil Society and the State",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure"
+            },
+            {
+              "code": "MIA608",
+              "name": "Ethnic Conflicts and Nationalist Crises",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure"
+            },
+            {
+              "code": "MIA609",
+              "name": "Youth Movements and Dissent Politics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure"
+            },
+            {
+              "code": "MIA610",
+              "name": "Selected Issues in Contemporary Chinese Politics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure"
+            }
+          ]
+        },
+        {
+          "id": "capstone-project",
+          "name": "Capstone Project",
+          "type": "project",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Complete the compulsory MIA615 Capstone Project (6 credits) for the 2026-27 intake and thereafter.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure",
+          "courses": [
+            {
+              "code": "MIA615",
+              "name": "Master of Arts in International Affairs Capstone Project",
+              "credits": 6,
+              "courseKind": "project",
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure"
+            }
+          ]
+        }
+      ],
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified"
     },
     {
       "id": "LINGNAN-TPG-DIR-18-000444-L6",
@@ -42173,7 +43030,7 @@
       "name": "Master of Science in International and Development Economics",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -42181,8 +43038,165 @@
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Complete all six Core Courses (18 credits).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/econ/mide/programme-overview/programme-structure",
+          "courses": [
+            {
+              "code": "IDE501",
+              "name": "Microeconomics for Development",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/econ/mide/programme-overview/programme-structure"
+            },
+            {
+              "code": "IDE502",
+              "name": "Macroeconomics for Development",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/econ/mide/programme-overview/programme-structure"
+            },
+            {
+              "code": "IDE503",
+              "name": "Development Economics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/econ/mide/programme-overview/programme-structure"
+            },
+            {
+              "code": "IDE504",
+              "name": "International Trade",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/econ/mide/programme-overview/programme-structure"
+            },
+            {
+              "code": "IDE505",
+              "name": "Current Issues in International and Development Economics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/econ/mide/programme-overview/programme-structure"
+            },
+            {
+              "code": "IDE515",
+              "name": "Research Methods",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/econ/mide/programme-overview/programme-structure"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Choose any four Elective Courses (12 credits). Courses marked as not offered in AY2025-26 remain part of the official elective pool.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/econ/mide/programme-overview/programme-structure",
+          "courses": [
+            {
+              "code": "IDE506",
+              "name": "International Money and Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/econ/mide/programme-overview/programme-structure"
+            },
+            {
+              "code": "IDE507",
+              "name": "Globalisation and Economic Development",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/econ/mide/programme-overview/programme-structure"
+            },
+            {
+              "code": "IDE508",
+              "name": "The World Economy",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/econ/mide/programme-overview/programme-structure"
+            },
+            {
+              "code": "IDE509",
+              "name": "International Political Economy",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/econ/mide/programme-overview/programme-structure"
+            },
+            {
+              "code": "IDE510",
+              "name": "The Belt and Road Initiative: History, Politics, Economy and Society",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/econ/mide/programme-overview/programme-structure"
+            },
+            {
+              "code": "IDE511",
+              "name": "Chinese Economic Development",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/econ/mide/programme-overview/programme-structure"
+            },
+            {
+              "code": "IDE512",
+              "name": "Political Economy of Economic Development",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/econ/mide/programme-overview/programme-structure"
+            },
+            {
+              "code": "IDE513",
+              "name": "Environmental Issues and Sustainable Development",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/econ/mide/programme-overview/programme-structure"
+            },
+            {
+              "code": "IDE514",
+              "name": "Globalisation and Economic Integration",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/econ/mide/programme-overview/programme-structure"
+            },
+            {
+              "code": "IDE518",
+              "name": "Industrial Economics and Policy",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/econ/mide/programme-overview/programme-structure"
+            },
+            {
+              "code": "IDE519",
+              "name": "Artificial Intelligence and Digital Economy",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/econ/mide/programme-overview/programme-structure"
+            },
+            {
+              "code": "IBF629",
+              "name": "Selected Seminars in Economics and Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/econ/mide/programme-overview/programme-structure"
+            }
+          ]
+        }
+      ],
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/econ/mide/programme-overview/programme-structure",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified"
     },
     {
       "id": "LINGNAN-TPG-DIR-19-000062-L6",
@@ -42381,7 +43395,7 @@
       "name": "Master of Arts in Translation Studies",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -42389,8 +43403,186 @@
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete all three Required Courses (9 credits).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats",
+          "courses": [
+            {
+              "code": "TRA501",
+              "name": "Translation Theory: Traditional and Modern",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats"
+            },
+            {
+              "code": "TRA502",
+              "name": "Methods in Translation and Interpreting Research",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats"
+            },
+            {
+              "code": "TRA503",
+              "name": "Chinese-English Translation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats"
+            }
+          ]
+        },
+        {
+          "id": "dissertation-or-translation-project",
+          "name": "Dissertation or Translation Project",
+          "type": "project_dissertation",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Complete either TRA516 Dissertation or TRA517 Translation Project (6 credits). The two year-long courses are mutually exclusive and require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats",
+          "courses": [
+            {
+              "code": "TRA516",
+              "name": "Dissertation",
+              "credits": 6,
+              "courseKind": "dissertation",
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats"
+            },
+            {
+              "code": "TRA517",
+              "name": "Translation Project",
+              "credits": 6,
+              "courseKind": "project",
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Choose five Elective Courses (15 credits) from the official theoretical and practical course pool.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats",
+          "courses": [
+            {
+              "code": "TRA504",
+              "name": "Advanced Translation Studies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats"
+            },
+            {
+              "code": "TRA505",
+              "name": "Business Translation (C-E)",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats"
+            },
+            {
+              "code": "TRA506",
+              "name": "Comparative Language Studies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats"
+            },
+            {
+              "code": "TRA507",
+              "name": "Computer-aided Translation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats"
+            },
+            {
+              "code": "TRA508",
+              "name": "History of Translation and Interpreting in China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats"
+            },
+            {
+              "code": "TRA509",
+              "name": "Journalistic Translation (C-E)",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats"
+            },
+            {
+              "code": "TRA510",
+              "name": "Legal Translation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats"
+            },
+            {
+              "code": "TRA511",
+              "name": "Literary Translation (C-E)",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats"
+            },
+            {
+              "code": "TRA512",
+              "name": "Translation and Culture",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats"
+            },
+            {
+              "code": "TRA513",
+              "name": "Translation Criticism",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats"
+            },
+            {
+              "code": "TRA514",
+              "name": "Translating for Popular Culture",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats"
+            },
+            {
+              "code": "TRA515",
+              "name": "Translating for the Creative Industries",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats"
+            },
+            {
+              "code": "TRA518",
+              "name": "Bilingual Verbal Communications Workshop",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats"
+            },
+            {
+              "code": "TRA519",
+              "name": "Eco-translation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/tran/programmes/mats"
+            }
+          ]
+        }
+      ],
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/tran/programmes/mats",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required"
     },
     {
       "id": "LINGNAN-TPG-DIR-19-001288-L6",
@@ -42399,7 +43591,7 @@
       "name": "Master of Cities and Governance",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -42411,13 +43603,168 @@
           "id": "LINGNAN-TPG-DIR-19-001288-L6-21-000488-L6",
           "code": "21/000488/L6",
           "name": "Environment and Sustainability",
-          "type": "specialism",
-          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "type": "Concentration",
+          "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure",
           "lastVerifiedAt": "2026-07-11"
         }
       ],
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "shared-core-courses",
+          "name": "Shared Core Courses",
+          "type": "core",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Complete all six shared Core Courses (18 credits) under both the mother Programme and the Environment and Sustainability Concentration.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure",
+          "courses": [
+            {
+              "code": "MCG501",
+              "name": "Cities and Social Change",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure"
+            },
+            {
+              "code": "MCG502",
+              "name": "Regional Policy Study and Visit in the Greater Bay Area",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure"
+            },
+            {
+              "code": "MCG503",
+              "name": "History, Heritage and Regional Perspectives",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure"
+            },
+            {
+              "code": "MCG505",
+              "name": "Smart and Sustainable Cities",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure"
+            },
+            {
+              "code": "MCG507",
+              "name": "Urban Issues and Policies: International Symposium",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure"
+            },
+            {
+              "code": "CRS501",
+              "name": "China and Regional Studies: Politics, Policy, and International Development",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure"
+            }
+          ]
+        },
+        {
+          "id": "mother-programme-core-courses",
+          "name": "Mother Programme Core Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Students who do not declare a Concentration complete all four mother Programme Core Courses (12 credits).",
+          "appliesToTrackIds": [],
+          "excludesTrackIds": [
+            "LINGNAN-TPG-DIR-19-001288-L6-21-000488-L6"
+          ],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure",
+          "courses": [
+            {
+              "code": "MCG506",
+              "name": "Ageing Policies in Greater China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure"
+            },
+            {
+              "code": "MCG509",
+              "name": "Understanding Metropolitan Indicators and Social Policies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure"
+            },
+            {
+              "code": "MCG510",
+              "name": "Workshop for Smart Governance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure"
+            },
+            {
+              "code": "MCG511",
+              "name": "Housing Policy and Development",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure"
+            }
+          ]
+        },
+        {
+          "id": "environment-sustainability-concentration-courses",
+          "name": "Environment and Sustainability Concentration Courses",
+          "type": "concentration",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Students in the Environment and Sustainability Concentration complete all four Concentration Courses (12 credits).",
+          "appliesToTrackIds": [
+            "LINGNAN-TPG-DIR-19-001288-L6-21-000488-L6"
+          ],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure",
+          "courses": [
+            {
+              "code": "SCI502",
+              "name": "Climate Change Literacy and Science",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "LINGNAN-TPG-DIR-19-001288-L6-21-000488-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure"
+            },
+            {
+              "code": "SCI503",
+              "name": "Sustainability and Environmental Communication",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "LINGNAN-TPG-DIR-19-001288-L6-21-000488-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure"
+            },
+            {
+              "code": "SCI504",
+              "name": "Urban Ecology and Sustainable Planning",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "LINGNAN-TPG-DIR-19-001288-L6-21-000488-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure"
+            },
+            {
+              "code": "SCI505",
+              "name": "Introduction to Environmental, Social and Governance (ESG) Planning",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "LINGNAN-TPG-DIR-19-001288-L6-21-000488-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure"
+            }
+          ]
+        }
+      ],
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure",
+      "courseStatusNote": "",
+      "trackSelectionOptional": true,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified"
     },
     {
       "id": "LINGNAN-TPG-DIR-20-000103-L6",
@@ -42712,7 +44059,7 @@
       "name": "Master of Arts in Social Entrepreneurship and Innovation Management",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -42724,17 +44071,194 @@
           "id": "LINGNAN-TPG-DIR-22-000098-L6-23-000254-L6",
           "code": "23/000254/L6",
           "name": "Art and Design for Social Impact",
-          "type": "specialism",
-          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "type": "Concentration",
+          "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/adsi-concentration",
           "lastVerifiedAt": "2026-07-11"
         }
       ],
-      "dataLevel": "programme",
-      "courseGroups": [],
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-13",
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "shared-core-courses",
+          "name": "Shared Core Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four shared Core Courses (12 credits) under both the mother Programme and the Art and Design for Social Impact Concentration.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure",
+          "courses": [
+            {
+              "code": "SEI504",
+              "name": "Innovation Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure"
+            },
+            {
+              "code": "SEI503",
+              "name": "Entrepreneurial Leadership for Social Startups",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure"
+            },
+            {
+              "code": "MIH501",
+              "name": "Globalization, Policy and Society",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure"
+            },
+            {
+              "code": "SEI507",
+              "name": "Inclusive Entrepreneurship – Scaling-Up in Developing Markets",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure"
+            }
+          ]
+        },
+        {
+          "id": "path-specific-core-and-adsi-elective",
+          "name": "Path-specific Core Courses and ADSI Elective",
+          "type": "core",
+          "creditsRequired": 9,
+          "coursesRequired": 2,
+          "creditsRequiredByTrackIds": {
+            "LINGNAN-TPG-DIR-22-000098-L6-23-000254-L6": 9
+          },
+          "coursesRequiredByTrackIds": {
+            "LINGNAN-TPG-DIR-22-000098-L6-23-000254-L6": 2
+          },
+          "ruleText": "The mother Programme completes SEI501 (6 credits) and SCI505 (3 credits). The ADSI Concentration instead completes SEI508 (6 credits) and SEI509 (3 credits); SCI505 moves into the ADSI elective pool. SCI505 is retained once in this combined group to keep course codes unique, so ADSI completion requires manual review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/adsi-concentration",
+          "courses": [
+            {
+              "code": "SEI501",
+              "name": "Design Methods for Creative Problem-Solving and Social Innovation",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "excludesTrackIds": [
+                "LINGNAN-TPG-DIR-22-000098-L6-23-000254-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure"
+            },
+            {
+              "code": "SCI505",
+              "name": "Introduction to Environmental, Social and Governance (ESG) Planning",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure"
+            },
+            {
+              "code": "SEI508",
+              "name": "Design Innovation for Arts and Culture",
+              "credits": 6,
+              "appliesToTrackIds": [
+                "LINGNAN-TPG-DIR-22-000098-L6-23-000254-L6"
+              ],
+              "countsTowardTrackIds": [
+                "LINGNAN-TPG-DIR-22-000098-L6-23-000254-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/SEI_TPG.pdf"
+            },
+            {
+              "code": "SEI509",
+              "name": "Interactive Arts and Technology",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "LINGNAN-TPG-DIR-22-000098-L6-23-000254-L6"
+              ],
+              "countsTowardTrackIds": [
+                "LINGNAN-TPG-DIR-22-000098-L6-23-000254-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/SEI_TPG.pdf"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Choose one Elective Course (3 credits), subject to course availability. The ADSI Concentration may also choose SCI505, which is displayed in the path-specific group because the mother Programme requires it.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure",
+          "courses": [
+            {
+              "code": "HTI504",
+              "name": "Gerontechnology: Design for an Ageing Society",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure"
+            },
+            {
+              "code": "SEI506",
+              "name": "Humanitarian Technology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure"
+            },
+            {
+              "code": "MHM502",
+              "name": "Health and Social Services Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure"
+            },
+            {
+              "code": "CDS568",
+              "name": "Strategic Visual Data Analytics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure"
+            },
+            {
+              "code": "CDS547",
+              "name": "Introduction to Large Language Models",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure"
+            },
+            {
+              "code": "CDS567",
+              "name": "Introduction to Embodied Intelligence",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure"
+            }
+          ]
+        },
+        {
+          "id": "capstone-project",
+          "name": "Capstone Project",
+          "type": "project",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Complete SEI505 Design Innovation for Addressing Social Challenges (6 credits) under both paths.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure",
+          "courses": [
+            {
+              "code": "SEI505",
+              "name": "Design Innovation for Addressing Social Challenges",
+              "credits": 6,
+              "courseKind": "project",
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure"
+            }
+          ]
+        }
+      ],
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
       "courseSourceUrl": "https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure",
-      "courseStatusNote": "The live official Programme Structure publishes complete codes and credits for the mother Programme, but the Art and Design for Social Impact Concentration page omits the course codes for Design Innovation for Arts and Culture and Interactive Arts and Technology. The Track-specific codes are not inferred, so the Programme remains unavailable pending a complete official Track table."
+      "courseStatusNote": "",
+      "trackSelectionOptional": true,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required"
     },
     {
       "id": "LINGNAN-TPG-DIR-22-000158-L6",
@@ -42940,7 +44464,7 @@
       "name": "Master of Social Sciences in Comparative Public Administration",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -42952,13 +44476,210 @@
           "id": "LINGNAN-TPG-DIR-22-000916-L6-24-000501-L6",
           "code": "24/000501/L6",
           "name": "Digital and Smart Governance",
-          "type": "specialism",
-          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "type": "Concentration",
+          "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure",
           "lastVerifiedAt": "2026-07-11"
         }
       ],
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five Core Courses (15 credits) under both the mother Programme and the Digital and Smart Governance Concentration.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure",
+          "courses": [
+            {
+              "code": "CPA501",
+              "name": "Policy Processes and Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure"
+            },
+            {
+              "code": "CPA502",
+              "name": "Research Methods in Public Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure"
+            },
+            {
+              "code": "CPA503",
+              "name": "Public Policy Lab",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure"
+            },
+            {
+              "code": "CPA509",
+              "name": "Theories and Approaches of Comparative Politics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure"
+            },
+            {
+              "code": "SOC601",
+              "name": "Governance, Management and Delivery",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure"
+            }
+          ]
+        },
+        {
+          "id": "mother-programme-elective-courses",
+          "name": "Mother Programme Elective Courses",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Students who do not declare a Concentration select three Elective Courses (9 credits).",
+          "appliesToTrackIds": [],
+          "excludesTrackIds": [
+            "LINGNAN-TPG-DIR-22-000916-L6-24-000501-L6"
+          ],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure",
+          "courses": [
+            {
+              "code": "CRS507",
+              "name": "China’s Regional Development: Comparative Perspectives",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure"
+            },
+            {
+              "code": "CRS508",
+              "name": "Social Development and Policy Change in Asia",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure"
+            },
+            {
+              "code": "MIH501",
+              "name": "Globalisation, Policy and Society",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure"
+            },
+            {
+              "code": "MIA607",
+              "name": "NGOs, Civil Society and the State",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure"
+            },
+            {
+              "code": "CPA504",
+              "name": "Chinese Politics, Policy and Governance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure"
+            },
+            {
+              "code": "CPA510",
+              "name": "Comparative Public Administration and Development in Asia",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure"
+            }
+          ]
+        },
+        {
+          "id": "digital-smart-governance-elective-courses",
+          "name": "Digital and Smart Governance Elective Courses",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Students in the Digital and Smart Governance Concentration select three Elective Courses (9 credits). CPA505, CPA507 and CDS532 are marked by the official Programme page as pending University approval, so the current Concentration path requires manual review.",
+          "appliesToTrackIds": [
+            "LINGNAN-TPG-DIR-22-000916-L6-24-000501-L6"
+          ],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure",
+          "courses": [
+            {
+              "code": "CPA505",
+              "name": "Politics, Law and Digital Governance",
+              "credits": 3,
+              "approvalStatus": "pending_university_approval",
+              "approvalNote": "Pending for University’s approval",
+              "appliesToTrackIds": [
+                "LINGNAN-TPG-DIR-22-000916-L6-24-000501-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure"
+            },
+            {
+              "code": "CPA506",
+              "name": "Digital Analysis in Public Management",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "LINGNAN-TPG-DIR-22-000916-L6-24-000501-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure"
+            },
+            {
+              "code": "CPA507",
+              "name": "Digital Politics and Cyberthreats in Global, National, Market and Individual Contexts",
+              "credits": 3,
+              "approvalStatus": "pending_university_approval",
+              "approvalNote": "Pending for University’s approval",
+              "appliesToTrackIds": [
+                "LINGNAN-TPG-DIR-22-000916-L6-24-000501-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure"
+            },
+            {
+              "code": "CPA508",
+              "name": "Digital Governance in Public Sector: Management Issues",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "LINGNAN-TPG-DIR-22-000916-L6-24-000501-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure"
+            },
+            {
+              "code": "CDS532",
+              "name": "Programming for Data Science",
+              "credits": 3,
+              "approvalStatus": "pending_university_approval",
+              "approvalNote": "Pending for University’s approval",
+              "appliesToTrackIds": [
+                "LINGNAN-TPG-DIR-22-000916-L6-24-000501-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure"
+            }
+          ]
+        },
+        {
+          "id": "capstone-project",
+          "name": "Capstone Project",
+          "type": "project",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Complete CPA601 Comparative Public Administration Capstone Project and Symposium Presentation (6 credits) under both paths.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure",
+          "courses": [
+            {
+              "code": "CPA601",
+              "name": "Comparative Public Administration Capstone Project and Symposium Presentation",
+              "credits": 6,
+              "courseKind": "project",
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure"
+            }
+          ]
+        }
+      ],
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure",
+      "courseStatusNote": "",
+      "trackSelectionOptional": true,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required"
     },
     {
       "id": "LINGNAN-TPG-DIR-22-001024-L6",

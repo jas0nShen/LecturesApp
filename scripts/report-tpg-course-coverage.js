@@ -42,6 +42,7 @@ function inspectProgramme(programme, today = new Date()) {
       if (!course.sourceUrl && !group.sourceUrl && !programme.courseSourceUrl && !programme.sourceUrl) issues.push(`course:${course.code || '?'}:missing-source`);
       if (seenCodes.has(course.code)) issues.push(`course:${course.code}:duplicate`);
       seenCodes.add(course.code);
+      if (course.approvalStatus === 'pending_university_approval') issues.push(`course:${course.code}:pending-approval`);
       inspectTrackReferences(course, `course:${course.code}`);
       (course.countsTowardTrackIds || []).forEach((id) => {
         if (!trackIds.has(id)) issues.push(`course:${course.code}:unknown-counts-toward-track:${id}`);

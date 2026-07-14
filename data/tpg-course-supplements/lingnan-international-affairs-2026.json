@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "LINGNAN",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "LINGNAN-TPG-DIR-17-001035-L6",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure",
+      "ruleReviewStatus": "verified",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five Required Courses (15 credits) for the 2026-27 intake and thereafter.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure",
+          "courses": [
+            { "code": "MIA501", "name": "Theories and Approaches of International Relations", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure" },
+            { "code": "MIA502", "name": "Theories and Approaches of Comparative Politics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure" },
+            { "code": "MIA503", "name": "International Security", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure" },
+            { "code": "MIA504", "name": "Politics of Global Economic Interdependence", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure" },
+            { "code": "MIA505", "name": "Research Methods in International Affairs", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Choose any three Elective Courses (9 credits) for the 2026-27 intake and thereafter.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure",
+          "courses": [
+            { "code": "MIA601", "name": "Politics of Development in Asia Pacific", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure" },
+            { "code": "MIA602", "name": "Greater China: Identity, Interaction, Integration and Diversity", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure" },
+            { "code": "MIA603", "name": "International Organizations and Global Governance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure" },
+            { "code": "MIA604", "name": "Environmental Politics and Global Governance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure" },
+            { "code": "MIA605", "name": "International Politics of the Asia-Pacific", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure" },
+            { "code": "MIA606", "name": "Foreign Policy and International Relations of China", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure" },
+            { "code": "MIA607", "name": "NGOs, Civil Society and the State", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure" },
+            { "code": "MIA608", "name": "Ethnic Conflicts and Nationalist Crises", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure" },
+            { "code": "MIA609", "name": "Youth Movements and Dissent Politics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure" },
+            { "code": "MIA610", "name": "Selected Issues in Contemporary Chinese Politics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure" }
+          ]
+        },
+        {
+          "id": "capstone-project",
+          "name": "Capstone Project",
+          "type": "project",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Complete the compulsory MIA615 Capstone Project (6 credits) for the 2026-27 intake and thereafter.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure",
+          "courses": [
+            { "code": "MIA615", "name": "Master of Arts in International Affairs Capstone Project", "credits": 6, "courseKind": "project", "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure" }
+          ]
+        }
+      ]
+    }
+  ]
+}

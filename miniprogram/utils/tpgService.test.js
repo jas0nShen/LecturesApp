@@ -9,8 +9,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 179);
-  assert.equal(coverage.courseCount, 4010);
+  assert.equal(coverage.programmeWithCoursesCount, 188);
+  assert.equal(coverage.courseCount, 4180);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -29,8 +29,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 179);
-  assert.equal(rows.length, 179);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 188);
+  assert.equal(rows.length, 188);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
@@ -861,7 +861,6 @@ test('Lingnan incomplete official curricula remain explicit source blockers', ()
   const liberalSciences = tpgService.getProgramme('LINGNAN-TPG-DIR-25-000888-L6');
   const artsHeritage = tpgService.getProgramme('LINGNAN-TPG-DIR-22-001024-L6');
   const ebusiness = tpgService.getProgramme('LINGNAN-TPG-DIR-15-003341-L6');
-  const socialEntrepreneurship = tpgService.getProgramme('LINGNAN-TPG-DIR-22-000098-L6');
 
   assert.equal(finance.courseVerificationStatus, 'blocked');
   assert.equal(tpgService.getStatus(finance).courseCount, 0);
@@ -915,10 +914,248 @@ test('Lingnan incomplete official curricula remain explicit source blockers', ()
   assert.match(ebusiness.courseStatusNote, /does not publish per-course credits/);
   assert.match(ebusiness.courseStatusNote, /not inferred from the 10-course total/);
 
-  assert.equal(socialEntrepreneurship.courseVerificationStatus, 'blocked');
-  assert.equal(tpgService.getStatus(socialEntrepreneurship).courseCount, 0);
-  assert.match(socialEntrepreneurship.courseStatusNote, /Art and Design for Social Impact Concentration/);
-  assert.match(socialEntrepreneurship.courseStatusNote, /omits the course codes/);
+});
+
+test('Lingnan Cities and Governance resolves the mother Programme and Environment and Sustainability Concentration', () => {
+  const programme = tpgService.getProgramme('LINGNAN-TPG-DIR-19-001288-L6');
+  const track = tpgService.listTracks(programme)[0];
+  const motherGroups = Object.fromEntries(tpgService.resolveCourseGroups(programme).map((group) => [group.id, group]));
+  const trackGroups = Object.fromEntries(tpgService.resolveCourseGroups(programme, track.id).map((group) => [group.id, group]));
+  const motherCourses = tpgService.flattenCourses(programme);
+  const trackCourses = tpgService.flattenCourses(programme, '', track.id);
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.academicYear, '2026-27');
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.equal(programme.trackSelectionOptional, true);
+  assert.equal(track.name, 'Environment and Sustainability');
+  assert.equal(track.type, 'Concentration');
+  assert.deepEqual(Object.keys(motherGroups), ['shared-core-courses', 'mother-programme-core-courses']);
+  assert.deepEqual(Object.keys(trackGroups), ['shared-core-courses', 'environment-sustainability-concentration-courses']);
+  assert.equal(motherCourses.length, 10);
+  assert.equal(trackCourses.length, 10);
+  assert.equal(motherCourses.reduce((sum, course) => sum + course.credits, 0), 30);
+  assert.equal(trackCourses.reduce((sum, course) => sum + course.credits, 0), 30);
+  assert.equal(motherCourses.some((course) => course.code === 'MCG506'), true);
+  assert.equal(motherCourses.some((course) => course.code === 'SCI502'), false);
+  assert.equal(trackCourses.some((course) => course.code === 'MCG506'), false);
+  assert.equal(trackCourses.some((course) => course.code === 'SCI502'), true);
+  assert.equal(new Set(programme.courseGroups.flatMap((group) => group.courses).map((course) => course.code)).size, 14);
+  assert.equal(programme.courseSourceUrl, 'https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure');
+});
+
+test('Lingnan SEIM exposes the ADSI Concentration without duplicating cross-role SCI505', () => {
+  const programme = tpgService.getProgramme('LINGNAN-TPG-DIR-22-000098-L6');
+  const track = tpgService.listTracks(programme)[0];
+  const motherGroups = Object.fromEntries(tpgService.resolveCourseGroups(programme).map((group) => [group.id, group]));
+  const trackGroups = Object.fromEntries(tpgService.resolveCourseGroups(programme, track.id).map((group) => [group.id, group]));
+  const motherCourses = tpgService.flattenCourses(programme);
+  const trackCourses = tpgService.flattenCourses(programme, '', track.id);
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.academicYear, '2026-27');
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(programme.trackSelectionOptional, true);
+  assert.equal(track.name, 'Art and Design for Social Impact');
+  assert.equal(track.type, 'Concentration');
+  assert.deepEqual([motherGroups['path-specific-core-and-adsi-elective'].creditsRequired, motherGroups['path-specific-core-and-adsi-elective'].coursesRequired], [9, 2]);
+  assert.deepEqual([trackGroups['path-specific-core-and-adsi-elective'].creditsRequired, trackGroups['path-specific-core-and-adsi-elective'].coursesRequired], [9, 2]);
+  assert.equal(motherCourses.length, 13);
+  assert.equal(trackCourses.length, 14);
+  assert.equal(motherCourses.some((course) => course.code === 'SEI501'), true);
+  assert.equal(motherCourses.some((course) => course.code === 'SEI508'), false);
+  assert.equal(motherCourses.some((course) => course.code === 'SEI509'), false);
+  assert.equal(trackCourses.some((course) => course.code === 'SEI501'), false);
+  assert.equal(trackCourses.some((course) => course.code === 'SEI508'), true);
+  assert.equal(trackCourses.some((course) => course.code === 'SEI509'), true);
+  assert.equal(trackCourses.some((course) => course.code === 'SCI505'), true);
+  assert.match(trackGroups['path-specific-core-and-adsi-elective'].ruleText, /manual review/);
+  assert.equal(new Set(programme.courseGroups.flatMap((group) => group.courses).map((course) => course.code)).size, 15);
+  assert.equal(programme.courseSourceUrl, 'https://www.ln.edu.hk/sgs/seim/courses-description/programme-structure');
+});
+
+test('Lingnan Comparative Public Administration filters the Digital and Smart Governance Concentration and preserves pending approvals', () => {
+  const programme = tpgService.getProgramme('LINGNAN-TPG-DIR-22-000916-L6');
+  const track = tpgService.listTracks(programme)[0];
+  const motherGroups = Object.fromEntries(tpgService.resolveCourseGroups(programme).map((group) => [group.id, group]));
+  const trackGroups = Object.fromEntries(tpgService.resolveCourseGroups(programme, track.id).map((group) => [group.id, group]));
+  const motherCourses = tpgService.flattenCourses(programme);
+  const trackCourses = tpgService.flattenCourses(programme, '', track.id);
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.academicYear, '2026-27');
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(programme.trackSelectionOptional, true);
+  assert.equal(track.name, 'Digital and Smart Governance');
+  assert.equal(track.type, 'Concentration');
+  assert.equal(Object.values(motherGroups).reduce((sum, group) => sum + group.creditsRequired, 0), 30);
+  assert.equal(Object.values(trackGroups).reduce((sum, group) => sum + group.creditsRequired, 0), 30);
+  assert.deepEqual(Object.keys(motherGroups), ['core-courses', 'mother-programme-elective-courses', 'capstone-project']);
+  assert.deepEqual(Object.keys(trackGroups), ['core-courses', 'digital-smart-governance-elective-courses', 'capstone-project']);
+  assert.equal(motherCourses.some((course) => course.code === 'CPA504'), true);
+  assert.equal(motherCourses.some((course) => course.code === 'CPA505'), false);
+  assert.equal(trackCourses.some((course) => course.code === 'CPA504'), false);
+  assert.equal(trackCourses.some((course) => course.code === 'CPA505'), true);
+  assert.deepEqual(
+    trackCourses
+      .filter((course) => course.approvalStatus === 'pending_university_approval')
+      .map((course) => course.code)
+      .sort(),
+    ['CDS532', 'CPA505', 'CPA507']
+  );
+  for (const code of ['CPA505', 'CPA507', 'CDS532']) {
+    const course = trackCourses.find((item) => item.code === code);
+    assert.equal(course.approvalNote, 'Pending for University’s approval');
+  }
+  const rawCodes = programme.courseGroups.flatMap((group) => group.courses).map((course) => course.code);
+  assert.equal(new Set(rawCodes).size, rawCodes.length);
+  assert.equal(programme.courseSourceUrl, 'https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure');
+});
+
+test('Lingnan International Affairs uses the current 15-plus-9-plus-6 curriculum', () => {
+  const programme = tpgService.getProgramme('LINGNAN-TPG-DIR-17-001035-L6');
+  const groups = Object.fromEntries(tpgService.resolveCourseGroups(programme).map((group) => [group.id, group]));
+  const courses = tpgService.flattenCourses(programme);
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.academicYear, '2026-27');
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.deepEqual(Object.keys(groups), ['required-courses', 'elective-courses', 'capstone-project']);
+  assert.deepEqual([groups['required-courses'].creditsRequired, groups['required-courses'].coursesRequired], [15, 5]);
+  assert.deepEqual([groups['elective-courses'].creditsRequired, groups['elective-courses'].coursesRequired], [9, 3]);
+  assert.deepEqual([groups['capstone-project'].creditsRequired, groups['capstone-project'].coursesRequired], [6, 1]);
+  assert.equal(groups['required-courses'].courses.some((course) => course.code === 'MIA505' && course.name === 'Research Methods in International Affairs'), true);
+  assert.equal(groups['capstone-project'].courses[0].code, 'MIA615');
+  assert.equal(groups['capstone-project'].courses[0].courseKind, 'project');
+  assert.equal(courses.length, 16);
+  assert.equal(new Set(courses.map((course) => course.code)).size, courses.length);
+  assert.equal(groups['required-courses'].creditsRequired + groups['elective-courses'].creditsRequired + groups['capstone-project'].creditsRequired, 30);
+  assert.equal(programme.courseSourceUrl, 'https://www.ln.edu.hk/gia/maia/programme-overview/programme-structure');
+});
+
+test('Lingnan Accountancy uses the verified six-plus-five curriculum', () => {
+  const programme = tpgService.getProgramme('LINGNAN-TPG-DIR-08-000501-6');
+  const groups = Object.fromEntries(tpgService.resolveCourseGroups(programme).map((group) => [group.id, group]));
+  const courses = tpgService.flattenCourses(programme);
+
+  assert.equal(programme.creditsRequired, 33);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.academicYear, '2026-27');
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.deepEqual(Object.keys(groups), ['core-courses', 'elective-courses']);
+  assert.deepEqual([groups['core-courses'].creditsRequired, groups['core-courses'].coursesRequired, groups['core-courses'].courses.length], [18, 6, 6]);
+  assert.deepEqual([groups['elective-courses'].creditsRequired, groups['elective-courses'].coursesRequired, groups['elective-courses'].courses.length], [15, 5, 17]);
+  assert.equal(courses.length, 23);
+  assert.equal(new Set(courses.map((course) => course.code)).size, courses.length);
+  assert.equal(courses.every((course) => course.credits === 3), true);
+  assert.equal(groups['elective-courses'].courses.some((course) => course.code === 'ACT602' && course.courseKind === 'project'), true);
+  assert.equal(groups['elective-courses'].courses.some((course) => course.code === 'ORM 545' && course.name === 'Cloud-based Solutions for Digital Business Transformation'), true);
+  assert.equal(groups['core-courses'].creditsRequired + groups['elective-courses'].creditsRequired, 33);
+  assert.equal(programme.courseSourceUrl, 'https://www.ln.edu.hk/fb/tpo/academic-programmes/macc/curriculum');
+});
+
+test('Lingnan Marketing and International Business preserves its two-cluster elective rule', () => {
+  const programme = tpgService.getProgramme('LINGNAN-TPG-DIR-13-000684-L6');
+  const groups = Object.fromEntries(tpgService.resolveCourseGroups(programme).map((group) => [group.id, group]));
+  const courses = tpgService.flattenCourses(programme);
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.academicYear, '2026-27');
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.deepEqual(Object.keys(groups), ['core-courses', 'elective-courses']);
+  assert.deepEqual([groups['core-courses'].creditsRequired, groups['core-courses'].coursesRequired, groups['core-courses'].courses.length], [21, 6, 6]);
+  assert.deepEqual([groups['elective-courses'].creditsRequired, groups['elective-courses'].coursesRequired, groups['elective-courses'].courses.length], [9, 3, 12]);
+  assert.equal(groups['core-courses'].courses.some((course) => course.code === 'MIB506' && course.credits === 6 && course.courseKind === 'project'), true);
+  assert.equal(courses.length, 18);
+  assert.equal(new Set(courses.map((course) => course.code)).size, courses.length);
+  assert.equal(Object.values(groups).reduce((sum, group) => sum + group.creditsRequired, 0), 30);
+  assert.match(groups['elective-courses'].ruleText, /manual audit review/);
+  assert.equal(programme.courseSourceUrl, 'https://www.ln.edu.hk/fb/tpo/academic-programmes/mscmib/curriculum');
+});
+
+test('Lingnan International and Development Economics uses the verified six-plus-four curriculum', () => {
+  const programme = tpgService.getProgramme('LINGNAN-TPG-DIR-18-000444-L6');
+  const groups = Object.fromEntries(tpgService.resolveCourseGroups(programme).map((group) => [group.id, group]));
+  const courses = tpgService.flattenCourses(programme);
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.academicYear, '2026-27');
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.deepEqual(Object.keys(groups), ['core-courses', 'elective-courses']);
+  assert.deepEqual([groups['core-courses'].creditsRequired, groups['core-courses'].coursesRequired, groups['core-courses'].courses.length], [18, 6, 6]);
+  assert.deepEqual([groups['elective-courses'].creditsRequired, groups['elective-courses'].coursesRequired, groups['elective-courses'].courses.length], [12, 4, 12]);
+  assert.equal(courses.length, 18);
+  assert.equal(new Set(courses.map((course) => course.code)).size, courses.length);
+  assert.equal(courses.every((course) => course.credits === 3), true);
+  assert.equal(groups['elective-courses'].courses.some((course) => course.code === 'IBF629' && course.name === 'Selected Seminars in Economics and Finance'), true);
+  assert.equal(groups['core-courses'].creditsRequired + groups['elective-courses'].creditsRequired, 30);
+  assert.equal(programme.courseSourceUrl, 'https://www.ln.edu.hk/econ/mide/programme-overview/programme-structure');
+});
+
+test('Lingnan Translation Studies preserves the Dissertation-or-Translation-Project path', () => {
+  const programme = tpgService.getProgramme('LINGNAN-TPG-DIR-19-000888-L6');
+  const groups = Object.fromEntries(tpgService.resolveCourseGroups(programme).map((group) => [group.id, group]));
+  const courses = tpgService.flattenCourses(programme);
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.academicYear, '2026-27');
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.deepEqual(Object.keys(groups), ['required-courses', 'dissertation-or-translation-project', 'elective-courses']);
+  assert.deepEqual([groups['required-courses'].creditsRequired, groups['required-courses'].coursesRequired, groups['required-courses'].courses.length], [9, 3, 3]);
+  assert.deepEqual([groups['dissertation-or-translation-project'].creditsRequired, groups['dissertation-or-translation-project'].coursesRequired, groups['dissertation-or-translation-project'].courses.length], [6, 1, 2]);
+  assert.deepEqual([groups['elective-courses'].creditsRequired, groups['elective-courses'].coursesRequired, groups['elective-courses'].courses.length], [15, 5, 14]);
+  assert.deepEqual(groups['dissertation-or-translation-project'].courses.map((course) => [course.code, course.credits, course.courseKind]), [
+    ['TRA516', 6, 'dissertation'],
+    ['TRA517', 6, 'project']
+  ]);
+  assert.match(groups['dissertation-or-translation-project'].ruleText, /mutually exclusive and require manual audit review/);
+  assert.equal(courses.length, 19);
+  assert.equal(new Set(courses.map((course) => course.code)).size, courses.length);
+  assert.equal(courses.filter((course) => course.credits === 3).length, 17);
+  assert.equal(Object.values(groups).reduce((sum, group) => sum + group.creditsRequired, 0), 30);
+  assert.equal(programme.courseSourceUrl, 'https://www.ln.edu.hk/tran/programmes/mats');
+});
+
+test('Lingnan Chinese filters the Global Chinese Studies Concentration without losing shared requirements', () => {
+  const programme = tpgService.getProgramme('LINGNAN-TPG-DIR-08-000497-6');
+  const track = tpgService.listTracks(programme)[0];
+  const motherGroups = Object.fromEntries(tpgService.resolveCourseGroups(programme).map((group) => [group.id, group]));
+  const trackGroups = Object.fromEntries(tpgService.resolveCourseGroups(programme, track.id).map((group) => [group.id, group]));
+  const motherCourses = tpgService.flattenCourses(programme);
+  const trackCourses = tpgService.flattenCourses(programme, '', track.id);
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.academicYear, '2026-27');
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(programme.trackSelectionOptional, true);
+  assert.equal(track.name, 'Global Chinese Studies');
+  assert.equal(track.type, 'Concentration');
+  assert.deepEqual(Object.keys(motherGroups), ['shared-required-courses', 'mother-programme-required-course', 'elective-courses']);
+  assert.deepEqual(Object.keys(trackGroups), ['shared-required-courses', 'global-chinese-studies-required-course', 'elective-courses', 'global-chinese-studies-concentration-core']);
+  assert.deepEqual([motherGroups['shared-required-courses'].creditsRequired, motherGroups['mother-programme-required-course'].creditsRequired, motherGroups['elective-courses'].creditsRequired], [9, 3, 18]);
+  assert.deepEqual([trackGroups['shared-required-courses'].creditsRequired, trackGroups['global-chinese-studies-required-course'].creditsRequired, trackGroups['elective-courses'].creditsRequired, trackGroups['global-chinese-studies-concentration-core'].creditsRequired], [9, 3, 9, 9]);
+  assert.deepEqual([motherGroups['elective-courses'].coursesRequired, motherGroups['elective-courses'].courses.length], [6, 18]);
+  assert.deepEqual([trackGroups['elective-courses'].coursesRequired, trackGroups['elective-courses'].courses.length], [3, 6]);
+  assert.deepEqual([trackGroups['global-chinese-studies-concentration-core'].coursesRequired, trackGroups['global-chinese-studies-concentration-core'].courses.length], [3, 8]);
+  assert.equal(motherCourses.length, 21);
+  assert.equal(trackCourses.length, 17);
+  assert.equal(new Set(programme.courseGroups.flatMap((group) => group.courses).map((course) => course.code)).size, 30);
+  assert.equal(motherCourses.some((course) => course.code === 'CHI501'), true);
+  assert.equal(motherCourses.some((course) => course.code === 'CHI551'), false);
+  assert.equal(trackCourses.some((course) => course.code === 'CHI501'), false);
+  assert.equal(trackCourses.some((course) => course.code === 'CHI551'), true);
+  assert.equal(Object.values(motherGroups).reduce((sum, group) => sum + group.creditsRequired, 0), 30);
+  assert.equal(Object.values(trackGroups).reduce((sum, group) => sum + group.creditsRequired, 0), 30);
+  assert.match(motherGroups['elective-courses'].ruleText, /repeat-credit cases require manual audit review/);
+  assert.equal(programme.courseSourceUrl, 'https://www.ln.edu.hk/chi/machi');
 });
 
 test('Lingnan Work and Organisational Psychology preserves the current five-plus-five rule', () => {

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "LINGNAN",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "LINGNAN-TPG-DIR-13-000684-L6",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscmib/curriculum",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core_project",
+          "creditsRequired": 21,
+          "coursesRequired": 6,
+          "ruleText": "Complete all six Core Courses (21 credits), including the 6-credit year-long MIB506 Consulting Project. The other five Core Courses carry 3 credits each.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscmib/curriculum",
+          "courses": [
+            { "code": "MIB501", "name": "Consumer Behaviour", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "MIB502", "name": "Applied Marketing Research", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "MIB503", "name": "International Marketing Management", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "MIB504", "name": "International Trade and Investment", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "MIB506", "name": "Consulting Project", "credits": 6, "courseKind": "project", "appliesToTrackIds": [] },
+            { "code": "MIB605", "name": "E-commerce and Social Media Marketing", "credits": 3, "appliesToTrackIds": [] }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Choose three Elective Courses (9 credits): either all three from the Marketing cluster, or two from Marketing plus one from International Business. The cluster combination requires manual audit review; offerings are subject to sufficient demand and faculty availability.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscmib/curriculum",
+          "courses": [
+            { "code": "MIB505", "name": "Services Marketing and Customer Relationship Management", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "MIB601", "name": "Innovation Management and Digital Transformation", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "MIB602", "name": "Integrated Marketing Communications", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "MIB604", "name": "Sales and Retail Management", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "MIB606", "name": "Financial Services Marketing", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "MIB607", "name": "Big Data Marketing", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "MGT604", "name": "Strategic Management", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ORM513", "name": "Purchasing and Logistics Management for eBusiness", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ORM545", "name": "Cloud-based Solutions for Digital Business Transformation", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ACT615", "name": "Introduction to Python Programming", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ESG503", "name": "ESG Accounting and Disclosure", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "ESG511", "name": "Sustainability in Hong Kong and Mainland China", "credits": 3, "appliesToTrackIds": [] }
+          ]
+        }
+      ]
+    }
+  ]
+}

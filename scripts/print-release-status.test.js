@@ -12,7 +12,7 @@ test('release status summarizes TPG and UG metrics', () => {
   const lines = buildReleaseStatusLines({
     ready: true,
     release: {
-      version: '1.0.0',
+      version: '1.0.2',
       target: '香港高校课程规划助手正式版',
       dataMode: '体验版 / 正式版离线数据'
     },

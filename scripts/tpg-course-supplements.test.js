@@ -119,3 +119,11 @@ test('TPG coverage distinguishes complete structures from manual-rule review', (
   assert.equal(report.complete, 1);
   assert.equal(report.schools[0].courses, 1);
 });
+
+test('TPG coverage reports courses pending official approval separately', () => {
+  const imported = applySupplements(fixtureCatalogue(), [{ file: 'fixture.json', value: fixtureSupplement() }]);
+  imported.programmes[0].courseGroups[0].courses[0].approvalStatus = 'pending_university_approval';
+  const row = inspectProgramme(imported.programmes[0], new Date('2026-07-11'));
+  assert.deepEqual(row.issues, ['course:TST5001:pending-approval', 'manual-rule-review']);
+  assert.equal(buildCoverageReport(imported.programmes).complete, 0);
+});

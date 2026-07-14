@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "LINGNAN",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "LINGNAN-TPG-DIR-22-000916-L6",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure",
+      "ruleReviewStatus": "manual_review_required",
+      "trackSelectionOptional": true,
+      "tracks": [
+        {
+          "id": "LINGNAN-TPG-DIR-22-000916-L6-24-000501-L6",
+          "code": "24/000501/L6",
+          "name": "Digital and Smart Governance",
+          "type": "Concentration",
+          "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure",
+          "lastVerifiedAt": "2026-07-11"
+        }
+      ],
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five Core Courses (15 credits) under both the mother Programme and the Digital and Smart Governance Concentration.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure",
+          "courses": [
+            { "code": "CPA501", "name": "Policy Processes and Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure" },
+            { "code": "CPA502", "name": "Research Methods in Public Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure" },
+            { "code": "CPA503", "name": "Public Policy Lab", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure" },
+            { "code": "CPA509", "name": "Theories and Approaches of Comparative Politics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure" },
+            { "code": "SOC601", "name": "Governance, Management and Delivery", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure" }
+          ]
+        },
+        {
+          "id": "mother-programme-elective-courses",
+          "name": "Mother Programme Elective Courses",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Students who do not declare a Concentration select three Elective Courses (9 credits).",
+          "appliesToTrackIds": [],
+          "excludesTrackIds": [
+            "LINGNAN-TPG-DIR-22-000916-L6-24-000501-L6"
+          ],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure",
+          "courses": [
+            { "code": "CRS507", "name": "China’s Regional Development: Comparative Perspectives", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure" },
+            { "code": "CRS508", "name": "Social Development and Policy Change in Asia", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure" },
+            { "code": "MIH501", "name": "Globalisation, Policy and Society", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure" },
+            { "code": "MIA607", "name": "NGOs, Civil Society and the State", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure" },
+            { "code": "CPA504", "name": "Chinese Politics, Policy and Governance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure" },
+            { "code": "CPA510", "name": "Comparative Public Administration and Development in Asia", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure" }
+          ]
+        },
+        {
+          "id": "digital-smart-governance-elective-courses",
+          "name": "Digital and Smart Governance Elective Courses",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Students in the Digital and Smart Governance Concentration select three Elective Courses (9 credits). CPA505, CPA507 and CDS532 are marked by the official Programme page as pending University approval, so the current Concentration path requires manual review.",
+          "appliesToTrackIds": [
+            "LINGNAN-TPG-DIR-22-000916-L6-24-000501-L6"
+          ],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure",
+          "courses": [
+            { "code": "CPA505", "name": "Politics, Law and Digital Governance", "credits": 3, "approvalStatus": "pending_university_approval", "approvalNote": "Pending for University’s approval", "appliesToTrackIds": ["LINGNAN-TPG-DIR-22-000916-L6-24-000501-L6"], "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure" },
+            { "code": "CPA506", "name": "Digital Analysis in Public Management", "credits": 3, "appliesToTrackIds": ["LINGNAN-TPG-DIR-22-000916-L6-24-000501-L6"], "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure" },
+            { "code": "CPA507", "name": "Digital Politics and Cyberthreats in Global, National, Market and Individual Contexts", "credits": 3, "approvalStatus": "pending_university_approval", "approvalNote": "Pending for University’s approval", "appliesToTrackIds": ["LINGNAN-TPG-DIR-22-000916-L6-24-000501-L6"], "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure" },
+            { "code": "CPA508", "name": "Digital Governance in Public Sector: Management Issues", "credits": 3, "appliesToTrackIds": ["LINGNAN-TPG-DIR-22-000916-L6-24-000501-L6"], "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure" },
+            { "code": "CDS532", "name": "Programming for Data Science", "credits": 3, "approvalStatus": "pending_university_approval", "approvalNote": "Pending for University’s approval", "appliesToTrackIds": ["LINGNAN-TPG-DIR-22-000916-L6-24-000501-L6"], "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure" }
+          ]
+        },
+        {
+          "id": "capstone-project",
+          "name": "Capstone Project",
+          "type": "project",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Complete CPA601 Comparative Public Administration Capstone Project and Symposium Presentation (6 credits) under both paths.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure",
+          "courses": [
+            { "code": "CPA601", "name": "Comparative Public Administration Capstone Project and Symposium Presentation", "credits": 6, "courseKind": "project", "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/cpa/unique-features/programme-structure" }
+          ]
+        }
+      ]
+    }
+  ]
+}

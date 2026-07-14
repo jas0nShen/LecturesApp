@@ -83,7 +83,12 @@ test('TPG directory supplements preserve optional official Track metadata', () =
         name: 'Master of Arts in Teaching Chinese as an International Language',
         sourceUrl: 'https://www.eduhk.hk/fhm/matcil/programme-structure',
         trackSelectionOptional: true,
-        tracks: [{ code: 'IB-TEACHING', name: 'IB Teaching Strand', type: 'Teaching Strand' }]
+        tracks: [{
+          code: 'IB-TEACHING',
+          name: 'IB Teaching Strand',
+          type: 'Teaching Strand',
+          lastVerifiedAt: '2026-07-14'
+        }]
       }]
     }]
   };
@@ -93,6 +98,7 @@ test('TPG directory supplements preserve optional official Track metadata', () =
   assert.equal(programme.tracks[0].name, 'IB Teaching Strand');
   assert.equal(programme.tracks[0].type, 'Teaching Strand');
   assert.equal(programme.tracks[0].sourceUrl, 'https://www.eduhk.hk/fhm/matcil/programme-structure');
+  assert.equal(programme.tracks[0].lastVerifiedAt, '2026-07-14');
 });
 
 test('field-label directory entries use name-independent stable IDs', () => {

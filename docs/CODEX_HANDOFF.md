@@ -4,7 +4,7 @@ Last verified: 2026-07-11 (Asia/Shanghai)
 
 ## Current project goal
 
-Ship and maintain version 1.0.0 of a local-first WeChat mini program for Hong Kong university students. The product lets users select an undergraduate or taught-postgraduate Programme, browse verified offline course data, keep local favourites/completion records, and use conservative planning/audit views without pretending that unreviewed rules are official graduation decisions.
+Ship and maintain version 1.0.2 of a local-first WeChat mini program for Hong Kong university students. The product lets users select an undergraduate or taught-postgraduate Programme, browse verified offline course data, keep local favourites/completion records, and use conservative planning/audit views without pretending that unreviewed rules are official graduation decisions.
 
 The immediate release goal is stability and truthful data boundaries, not adding social, login, cloud, rating, or analytics features. After release stabilization, the planned development direction is systematic undergraduate course-data completion followed by stronger Study Plan capabilities.
 
@@ -13,7 +13,7 @@ The immediate release goal is stability and truthful data boundaries, not adding
 - Working directory: `/Users/shenjingsong/Documents/develop/lecturesApp`
 - Branch: `main`
 - Upstream state at handoff start: `main...origin/main [ahead 9]`
-- Package version: `1.0.0`
+- Package version: `1.0.2`
 - Last committed revision: `d593750 Add retry for undergraduate course detail loading`
 - Repository had 34 modified tracked files before this handoff; no reset, checkout, stash, or discard was performed.
 - `AGENTS.md` and this handoff file were absent and are newly created by this handoff.
@@ -85,7 +85,7 @@ b297d79 2026-07-11 12:03:36 +0800 Harden undergraduate package loading for RC1
 
 ### Local-first offline release
 
-Trial/release builds read packaged data and local storage. The development build may use the zero-dependency local Node API, but release must not call a user's `localhost`. This keeps version 1.0.0 deployable without cloud infrastructure and matches the current privacy promise.
+Trial/release builds read packaged data and local storage. The development build may use the zero-dependency local Node API, but release must not call a user's `localhost`. This keeps version 1.0.2 deployable without cloud infrastructure and matches the current privacy promise.
 
 ### Source data vs generated artifacts
 

@@ -73,7 +73,7 @@ function applyDirectorySupplements(inputCatalogue, supplement) {
       name: track.name,
       type: track.type || 'specialism',
       sourceUrl: track.sourceUrl || entry.sourceUrl || source.sourceUrl,
-      lastVerifiedAt: supplement.lastVerifiedAt
+      lastVerifiedAt: track.lastVerifiedAt || supplement.lastVerifiedAt
     }));
     return {
     ...(existingProgramme || {}),
