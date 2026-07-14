@@ -1,0 +1,723 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKU",
+  "academicYear": "2025-26 and thereafter",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "HKU-TPG-021",
+      "status": "verified",
+      "creditsRequired": 60,
+      "creditUnit": "credits",
+      "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R273&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official Syllabuses apply to the 2025-26 intake and thereafter and are versioned Jul 18, 2025. The 60-credit curriculum requires both 9-credit Foundation Courses, five 6-credit Elective Courses and one 12-credit Capstone Experience. The Capstone is either BSTC8999 Dissertation or one of 33 subject-specific paths comprising an additional 6-credit elective plus a 6-credit portfolio. Annual offering, prerequisites, the one-Foundation-course Advanced Standing limit and the mutually exclusive Capstone paths require manual review.",
+      "courseGroups": [
+        {
+          "id": "foundation-courses",
+          "name": "Foundation Courses",
+          "type": "core",
+          "creditsRequired": 18,
+          "coursesRequired": 2,
+          "ruleText": "Complete both 9-credit Foundation Courses for 18 credits. Advanced Standing may be granted for at most one equivalent Foundation Course completed within five years before admission, subject to Faculty approval; the substitution requires manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R273&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "BSTC6079",
+              "name": "Early Buddhism",
+              "credits": 9,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC6002",
+              "name": "Mahayana Buddhism",
+              "credits": 9,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 30,
+          "coursesRequired": 5,
+          "ruleText": "Choose five 6-credit electives for 30 credits from the four official categories: Buddhist Languages; Buddhist Texts, Thought, and Culture; Applied Buddhism; and Other Courses. Not every listed elective is necessarily offered each year. Prerequisites and any elective paired with a portfolio Capstone require manual review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R273&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "BSTC7006",
+              "name": "Pāli I",
+              "credits": 6,
+              "subjectGroups": [
+                "buddhist-languages"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7007",
+              "name": "Pāli II",
+              "credits": 6,
+              "subjectGroups": [
+                "buddhist-languages"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC3044",
+              "name": "Pāli language III",
+              "credits": 6,
+              "subjectGroups": [
+                "buddhist-languages"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC3045",
+              "name": "Pāli language IV",
+              "credits": 6,
+              "subjectGroups": [
+                "buddhist-languages"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7008",
+              "name": "Sanskrit I",
+              "credits": 6,
+              "subjectGroups": [
+                "buddhist-languages"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7009",
+              "name": "Sanskrit II",
+              "credits": 6,
+              "subjectGroups": [
+                "buddhist-languages"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC3040",
+              "name": "Sanskrit language III",
+              "credits": 6,
+              "subjectGroups": [
+                "buddhist-languages"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC3041",
+              "name": "Sanskrit language IV",
+              "credits": 6,
+              "subjectGroups": [
+                "buddhist-languages"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7010",
+              "name": "Classical Tibetan I",
+              "credits": 6,
+              "subjectGroups": [
+                "buddhist-languages"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7011",
+              "name": "Classical Tibetan II",
+              "credits": 6,
+              "subjectGroups": [
+                "buddhist-languages"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC3042",
+              "name": "Tibetan language III",
+              "credits": 6,
+              "subjectGroups": [
+                "buddhist-languages"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC3043",
+              "name": "Tibetan language IV",
+              "credits": 6,
+              "subjectGroups": [
+                "buddhist-languages"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC6032",
+              "name": "History of Indian Buddhism: a general survey",
+              "credits": 6,
+              "subjectGroups": [
+                "texts-thought-culture"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC6044",
+              "name": "History of Chinese Buddhism",
+              "credits": 6,
+              "subjectGroups": [
+                "texts-thought-culture"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC6013",
+              "name": "Buddhism in Tibetan contexts: history and doctrines",
+              "credits": 6,
+              "subjectGroups": [
+                "texts-thought-culture"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC6039",
+              "name": "Abhidharma doctrines and controversies",
+              "credits": 6,
+              "subjectGroups": [
+                "texts-thought-culture"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC6012",
+              "name": "Japanese Buddhism: history and doctrines",
+              "credits": 6,
+              "subjectGroups": [
+                "texts-thought-culture"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC6052",
+              "name": "Study of important Buddhist meditation texts",
+              "credits": 6,
+              "subjectGroups": [
+                "texts-thought-culture"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC6066",
+              "name": "Doctrines of the early Indian Yogācāra",
+              "credits": 6,
+              "subjectGroups": [
+                "texts-thought-culture"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC6070",
+              "name": "Research methodology in Buddhist Studies",
+              "credits": 6,
+              "subjectGroups": [
+                "texts-thought-culture"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC6075",
+              "name": "The Pali commentarial literature",
+              "credits": 6,
+              "subjectGroups": [
+                "texts-thought-culture"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC6076",
+              "name": "The Buddha-concept and Bodhisatta Ideal in Theravada Buddhism",
+              "credits": 6,
+              "subjectGroups": [
+                "texts-thought-culture"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC6080",
+              "name": "Chinese Buddhist art along the Silk Road",
+              "credits": 6,
+              "subjectGroups": [
+                "texts-thought-culture"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7002",
+              "name": "Tantric meditation traditions in Tibet: a survey of Vajrayāna texts and practices",
+              "credits": 6,
+              "subjectGroups": [
+                "texts-thought-culture"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7003",
+              "name": "Dunhuang Buddhist art and culture",
+              "credits": 6,
+              "subjectGroups": [
+                "texts-thought-culture"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7110",
+              "name": "Reading early Buddhist discourses",
+              "credits": 6,
+              "subjectGroups": [
+                "texts-thought-culture"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7111",
+              "name": "Chan Buddhism: history, culture and thought",
+              "credits": 6,
+              "subjectGroups": [
+                "texts-thought-culture"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7119",
+              "name": "Reading Chinese Buddhist texts",
+              "credits": 6,
+              "subjectGroups": [
+                "texts-thought-culture"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7607",
+              "name": "Buddhist liturgy and rituals",
+              "credits": 6,
+              "subjectGroups": [
+                "texts-thought-culture"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7121",
+              "name": "Chinese Buddhist texts: a survey and sample readings",
+              "credits": 6,
+              "subjectGroups": [
+                "texts-thought-culture"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7122",
+              "name": "Yogācāra Models of Reality",
+              "credits": 6,
+              "subjectGroups": [
+                "texts-thought-culture"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7123",
+              "name": "The concept of emptiness in Buddhist literature",
+              "credits": 6,
+              "subjectGroups": [
+                "texts-thought-culture"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7124",
+              "name": "Anthropology of Buddhism",
+              "credits": 6,
+              "subjectGroups": [
+                "texts-thought-culture"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC6058",
+              "name": "Buddhism and contemporary society",
+              "credits": 6,
+              "subjectGroups": [
+                "applied-buddhism"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC6006",
+              "name": "Counselling and pastoral practice",
+              "credits": 6,
+              "subjectGroups": [
+                "applied-buddhism"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC6011",
+              "name": "Buddhist mediation",
+              "credits": 6,
+              "subjectGroups": [
+                "applied-buddhism"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC6034",
+              "name": "Mindfulness, stress reduction and well-being",
+              "credits": 6,
+              "subjectGroups": [
+                "applied-buddhism"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC6055",
+              "name": "Buddhist psychology I",
+              "credits": 6,
+              "subjectGroups": [
+                "applied-buddhism"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7004",
+              "name": "Buddhist psychology II",
+              "credits": 6,
+              "subjectGroups": [
+                "applied-buddhism"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7112",
+              "name": "Buddhist ethics",
+              "credits": 6,
+              "subjectGroups": [
+                "applied-buddhism"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7120",
+              "name": "Buddhist psychology and mental cultivation",
+              "credits": 6,
+              "subjectGroups": [
+                "applied-buddhism"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC6024",
+              "name": "Special topics in Buddhist studies (1)",
+              "credits": 6,
+              "subjectGroups": [
+                "other-courses"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC6030",
+              "name": "Special topics in Buddhist studies (2)",
+              "credits": 6,
+              "subjectGroups": [
+                "other-courses"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC6031",
+              "name": "Special topics in Buddhist studies (3)",
+              "credits": 6,
+              "subjectGroups": [
+                "other-courses"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC6056",
+              "name": "Special topics in Buddhist studies (4)",
+              "credits": 6,
+              "subjectGroups": [
+                "other-courses"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC6057",
+              "name": "Special topics in Buddhist studies (5)",
+              "credits": 6,
+              "subjectGroups": [
+                "other-courses"
+              ],
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "capstone-experience",
+          "name": "Capstone Experience",
+          "type": "project",
+          "creditsRequired": 12,
+          "coursesRequired": 1,
+          "ruleText": "Choose one 12-credit Capstone path. BSTC8999 is a 10,000-15,000-word Dissertation. Each subject-specific Capstone comprises the named additional elective for 6 credits plus a 10,000-12,000-word portfolio for 6 credits. These mutually exclusive paths, elective pairing, prerequisite and approval rules require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R273&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "BSTC8999",
+              "name": "Capstone Experience: Dissertation",
+              "credits": 12,
+              "courseKind": "dissertation",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8002",
+              "name": "Capstone Experience: Tantric meditation traditions in Tibet: a survey of Vajrayāna texts and practices",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8003",
+              "name": "Capstone Experience: Dunhuang Buddhist art and culture",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8004",
+              "name": "Capstone Experience: Buddhist psychology II",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8006",
+              "name": "Capstone Experience: Counselling and pastoral practice",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8011",
+              "name": "Capstone Experience: Buddhist mediation",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8012",
+              "name": "Capstone Experience: Japanese Buddhism: history and doctrines",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8013",
+              "name": "Capstone Experience: Buddhism in Tibetan contexts: history and doctrines",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8024",
+              "name": "Capstone Experience: Special topics in Buddhist studies (1)",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8030",
+              "name": "Capstone Experience: Special topics in Buddhist studies (2)",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8031",
+              "name": "Capstone Experience: Special topics in Buddhist studies (3)",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8032",
+              "name": "Capstone Experience: History of Indian Buddhism: a general survey",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8034",
+              "name": "Capstone Experience: Mindfulness, stress reduction and well-being",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8039",
+              "name": "Capstone Experience: Abhidharma doctrines and controversies",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8044",
+              "name": "Capstone Experience: History of Chinese Buddhism",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8052",
+              "name": "Capstone Experience: Study of important Buddhist meditation texts",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8055",
+              "name": "Capstone Experience: Buddhist psychology I",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8056",
+              "name": "Capstone Experience: Special topics in Buddhist studies (4)",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8057",
+              "name": "Capstone Experience: Special topics in Buddhist studies (5)",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8058",
+              "name": "Capstone Experience: Buddhism and contemporary society",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8066",
+              "name": "Capstone Experience: Doctrines of the early Indian Yogācāra",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8075",
+              "name": "Capstone Experience: The Pali commentarial literature",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8076",
+              "name": "Capstone Experience: The Buddha-concept and Bodhisatta Ideal in Theravada Buddhism",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8080",
+              "name": "Capstone Experience: Chinese Buddhist art along the Silk Road",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8110",
+              "name": "Capstone Experience: Reading early Buddhist discourses",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8111",
+              "name": "Capstone Experience: Chan Buddhism: history, culture and thought",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8112",
+              "name": "Capstone Experience: Buddhist ethics",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8119",
+              "name": "Capstone Experience: Reading Chinese Buddhist Texts",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8607",
+              "name": "Capstone Experience: Buddhist liturgy and rituals",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8120",
+              "name": "Capstone Experience: Buddhist psychology and mental cultivation",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8121",
+              "name": "Capstone Experience: Chinese Buddhist texts: a survey and sample readings",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8122",
+              "name": "Capstone Experience: Yogācāra Models of Reality",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8123",
+              "name": "Capstone Experience: The concept of emptiness in Buddhist literature",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC8124",
+              "name": "Capstone Experience: Anthropology of Buddhism",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            }
+          ]
+        }
+      ],
+      "additionalSources": [
+        "https://www.buddhism.hku.hk/ap/mbs/admission/",
+        "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-buddhist-studies-arts&mode=full-time"
+      ]
+    }
+  ]
+}

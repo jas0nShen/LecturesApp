@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "HKU-TPG-048",
+      "status": "verified",
+      "creditsRequired": 72,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.mscai.hku.hk/curriculum/",
+      "ruleReviewStatus": "verified",
+      "courseGroups": [
+        {
+          "id": "compulsory-courses",
+          "name": "Compulsory Courses",
+          "type": "core",
+          "creditsRequired": 42,
+          "coursesRequired": 7,
+          "ruleText": "Complete all seven Compulsory Courses (42 credits).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.mscai.hku.hk/curriculum/",
+          "courses": [
+            { "code": "ARIN7001", "name": "Foundations of artificial intelligence", "credits": 6, "appliesToTrackIds": [] },
+            { "code": "ARIN7011", "name": "Optimization in artificial intelligence", "credits": 6, "appliesToTrackIds": [] },
+            { "code": "ARIN7013", "name": "Numerical methods in artificial intelligence", "credits": 6, "appliesToTrackIds": [] },
+            { "code": "ARIN7101", "name": "Statistics in artificial intelligence", "credits": 6, "appliesToTrackIds": [] },
+            { "code": "ARIN7102", "name": "Applied data mining and text analytics", "credits": 6, "appliesToTrackIds": [] },
+            { "code": "COMP7404", "name": "Computational intelligence and machine learning", "credits": 6, "appliesToTrackIds": [] },
+            { "code": "DASC7606", "name": "Deep learning", "credits": 6, "appliesToTrackIds": [] }
+          ]
+        },
+        {
+          "id": "disciplinary-electives-list-a",
+          "name": "Disciplinary Electives - List A",
+          "type": "elective",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Complete at least one 6-credit course from List A as part of the 18-credit Disciplinary Electives requirement.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.mscai.hku.hk/curriculum/",
+          "courses": [
+            { "code": "ARIN7014", "name": "Topics in advanced numerical analysis", "credits": 6, "appliesToTrackIds": [] },
+            { "code": "ARIN7015", "name": "Topics in artificial intelligence and machine learning", "credits": 6, "appliesToTrackIds": [] },
+            { "code": "MATH7224", "name": "Topics in advanced probability theory", "credits": 6, "appliesToTrackIds": [] },
+            { "code": "MATH7502", "name": "Topics in applied discrete mathematics", "credits": 6, "appliesToTrackIds": [] },
+            { "code": "MATH7503", "name": "Topics in advanced optimization", "credits": 6, "appliesToTrackIds": [] }
+          ]
+        },
+        {
+          "id": "disciplinary-electives-list-b",
+          "name": "Disciplinary Electives - List B",
+          "type": "elective",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Complete at least one 6-credit course from List B as part of the 18-credit Disciplinary Electives requirement.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.mscai.hku.hk/curriculum/",
+          "courses": [
+            { "code": "STAT6011", "name": "Computational statistics and Bayesian learning", "credits": 6, "appliesToTrackIds": [] },
+            { "code": "STAT7008", "name": "Programming for data science", "credits": 6, "appliesToTrackIds": [] },
+            { "code": "STAT8020", "name": "Quantitative strategies and algorithmic trading", "credits": 6, "appliesToTrackIds": [] },
+            { "code": "STAT8307", "name": "Natural language processing and text analytics", "credits": 6, "appliesToTrackIds": [] }
+          ]
+        },
+        {
+          "id": "disciplinary-electives-list-c",
+          "name": "Disciplinary Electives - List C",
+          "type": "elective",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Complete at least one 6-credit course from List C as part of the 18-credit Disciplinary Electives requirement.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.mscai.hku.hk/curriculum/",
+          "courses": [
+            { "code": "COMP7308", "name": "Introduction to unmanned systems", "credits": 6, "appliesToTrackIds": [] },
+            { "code": "COMP7309", "name": "Quantum computing and artificial intelligence", "credits": 6, "appliesToTrackIds": [] },
+            { "code": "COMP7409", "name": "Machine learning in trading and finance", "credits": 6, "appliesToTrackIds": [] },
+            { "code": "COMP7502", "name": "Image processing and computer vision", "credits": 6, "appliesToTrackIds": [] },
+            { "code": "ARIN7017", "name": "Legal issues in artificial intelligence and data science", "credits": 6, "appliesToTrackIds": [] }
+          ]
+        },
+        {
+          "id": "capstone-project",
+          "name": "Capstone Project",
+          "type": "project",
+          "creditsRequired": 12,
+          "coursesRequired": 1,
+          "ruleText": "Complete the 12-credit Artificial intelligence project.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.mscai.hku.hk/curriculum/",
+          "courses": [
+            { "code": "ARIN7600", "name": "Artificial intelligence project", "credits": 12, "courseKind": "project", "appliesToTrackIds": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "programmeId": "HKU-TPG-056",
+      "status": "verified",
+      "creditsRequired": 72,
+      "creditUnit": "credits",
+      "sourceUrl": "https://mdasc.cds.hku.hk/programme/",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "compulsory-courses",
+          "name": "Compulsory Courses",
+          "type": "core",
+          "creditsRequired": 24,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Compulsory Courses (24 credits).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://mdasc.cds.hku.hk/programme/",
+          "courses": [
+            { "code": "COMP7404", "name": "Computational intelligence and machine learning", "credits": 6, "appliesToTrackIds": [] },
+            { "code": "DASC7011", "name": "Statistical inference for data science", "credits": 6, "appliesToTrackIds": [] },
+            { "code": "DASC7104", "name": "Advanced database systems", "credits": 6, "appliesToTrackIds": [] },
+            { "code": "DASC7102", "name": "Advanced statistical modelling for data science", "credits": 6, "appliesToTrackIds": [] }
+          ]
+        },
+        {
+          "id": "disciplinary-electives",
+          "name": "Disciplinary Electives",
+          "type": "elective",
+          "creditsRequired": 36,
+          "ruleText": "Complete 36 credits of Disciplinary Electives, including at least 12 credits from List A and at least 12 credits from List B. The remaining 12 credits may come from either list. Prior HKU study exemptions and the cross-list allocation require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://mdasc.cds.hku.hk/programme/",
+          "courses": [
+            { "code": "COMP7107", "name": "Management of complex data types", "credits": 6, "list": "A", "appliesToTrackIds": [] },
+            { "code": "COMP7305", "name": "Cluster and cloud computing", "credits": 6, "list": "A", "appliesToTrackIds": [] },
+            { "code": "COMP7409", "name": "Machine learning in trading and finance", "credits": 6, "list": "A", "appliesToTrackIds": [] },
+            { "code": "COMP7503", "name": "Multimedia technologies", "credits": 6, "list": "A", "appliesToTrackIds": [] },
+            { "code": "COMP7506", "name": "Smart phone apps development", "credits": 6, "list": "A", "appliesToTrackIds": [] },
+            { "code": "COMP7507", "name": "Visualization and visual analytics", "credits": 6, "list": "A", "appliesToTrackIds": [] },
+            { "code": "COMP7906", "name": "Introduction to cyber security", "credits": 6, "list": "A", "appliesToTrackIds": [] },
+            { "code": "DASC7606", "name": "Deep learning", "credits": 6, "list": "A", "appliesToTrackIds": [] },
+            { "code": "FITE7410", "name": "Financial fraud analytics", "credits": 6, "list": "A", "appliesToTrackIds": [] },
+            { "code": "ICOM6044", "name": "Data science for business", "credits": 6, "list": "A", "appliesToTrackIds": [] },
+            { "code": "ICOM7128", "name": "Knowledge graphs", "credits": 6, "list": "A", "appliesToTrackIds": [] },
+            { "code": "STAT6008", "name": "Advanced statistical inference", "credits": 6, "list": "B", "appliesToTrackIds": [] },
+            { "code": "STAT6013", "name": "Financial data analysis", "credits": 6, "list": "B", "appliesToTrackIds": [] },
+            { "code": "STAT6015", "name": "Advanced quantitative risk management", "credits": 6, "list": "B", "appliesToTrackIds": [] },
+            { "code": "STAT6016", "name": "Spatial data analysis", "credits": 6, "list": "B", "appliesToTrackIds": [] },
+            { "code": "STAT6019", "name": "Current topics in statistics", "credits": 6, "list": "B", "appliesToTrackIds": [] },
+            { "code": "STAT7008", "name": "Programming for data science", "credits": 6, "list": "B", "appliesToTrackIds": [] },
+            { "code": "STAT8003", "name": "Time series forecasting", "credits": 6, "list": "B", "appliesToTrackIds": [] },
+            { "code": "STAT8017", "name": "Data mining techniques", "credits": 6, "list": "B", "appliesToTrackIds": [] },
+            { "code": "STAT8019", "name": "Marketing analytics", "credits": 6, "list": "B", "appliesToTrackIds": [] },
+            { "code": "STAT8300", "name": "Career development and communication workshop", "credits": 0, "list": "B", "appliesToTrackIds": [] },
+            { "code": "STAT8306", "name": "Statistical methods for network data", "credits": 3, "list": "B", "appliesToTrackIds": [] },
+            { "code": "STAT8307", "name": "Natural language processing and text analytics", "credits": 6, "list": "B", "appliesToTrackIds": [] },
+            { "code": "STAT8308", "name": "Blockchain data analytics", "credits": 3, "list": "B", "appliesToTrackIds": [] },
+            { "code": "STAT8309", "name": "Monte Carlo simulation in finance", "credits": 6, "list": "B", "appliesToTrackIds": [] }
+          ]
+        },
+        {
+          "id": "capstone-requirement",
+          "name": "Capstone Requirement",
+          "type": "capstone_with_practicum_option",
+          "creditsRequired": 12,
+          "ruleText": "Complete DASC7600 Data science project (12 credits), or complete DASC8088 Data science practicum (6 credits) plus one additional 6-credit course from List A or List B. The alternative practicum path requires manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://mdasc.cds.hku.hk/programme/",
+          "courses": [
+            { "code": "DASC7600", "name": "Data science project", "credits": 12, "courseKind": "project", "appliesToTrackIds": [] },
+            { "code": "DASC8088", "name": "Data science practicum", "credits": 6, "courseKind": "practicum", "appliesToTrackIds": [] }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2311 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "HKU-TPG-057",
+      "status": "verified",
+      "creditsRequired": 72,
+      "creditUnit": "credits",
+      "sourceUrl": "https://master.cds.hku.hk/msccs/msc-in-computer-science-cyber-security-stream/",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "discipline-courses",
+          "name": "Discipline Courses",
+          "type": "discipline",
+          "creditsRequired": 60,
+          "coursesRequired": 10,
+          "ruleText": "Complete 60 discipline-course credits, including at least 24 credits (four 6-credit courses) tagged for the Cyber Security Stream. Up to 12 credits may instead come from approved postgraduate courses offered by departments in the Faculty of Engineering or the School of Computing and Data Science; those external approvals require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://master.cds.hku.hk/msccs/msc-in-computer-science-discipline-courses/",
+          "courses": [
+            {
+              "code": "COMP7409",
+              "name": "Machine learning in trading and finance",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt",
+                "finance"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7412",
+              "name": "Banking in Web3 – Metaverse, DeFi, NFTs and beyond",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt",
+                "finance"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7416",
+              "name": "FinTech and digital currencies",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7610",
+              "name": "Introduction to Web3 and blockchain",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7611",
+              "name": "Security and privacy in AI systems",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7612",
+              "name": "Visualization for AI and Web3 analytics",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7809",
+              "name": "Topic in artificial intelligence",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7810",
+              "name": "Topic in Web3",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7414",
+              "name": "Generative AI in financial services",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt",
+                "finance"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7806",
+              "name": "Topic in information security",
+              "credits": 6,
+              "subjectGroups": [
+                "cyber"
+              ],
+              "streamSpecific": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7901",
+              "name": "Legal protection of digital property",
+              "credits": 6,
+              "subjectGroups": [
+                "cyber"
+              ],
+              "streamSpecific": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7903",
+              "name": "Digital investigation and forensics",
+              "credits": 6,
+              "subjectGroups": [
+                "cyber"
+              ],
+              "streamSpecific": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7904",
+              "name": "Information security: attacks and defense",
+              "credits": 6,
+              "subjectGroups": [
+                "cyber"
+              ],
+              "streamSpecific": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7905",
+              "name": "Reverse engineering and malware analysis",
+              "credits": 6,
+              "subjectGroups": [
+                "cyber"
+              ],
+              "streamSpecific": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7906",
+              "name": "Introduction to cyber security",
+              "credits": 6,
+              "subjectGroups": [
+                "cyber",
+                "finance"
+              ],
+              "streamSpecific": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7410",
+              "name": "Financial fraud analytics",
+              "credits": 6,
+              "subjectGroups": [
+                "cyber",
+                "finance"
+              ],
+              "streamSpecific": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7103",
+              "name": "Data mining",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7408",
+              "name": "Distributed ledger and blockchain technology",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7415",
+              "name": "Financial analytics and algorithmic trading",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7802",
+              "name": "Introduction to financial computing",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7808",
+              "name": "Topic in financial computing",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7405",
+              "name": "Techniques in computational finance",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7406",
+              "name": "Software development for quantitative finance",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7407",
+              "name": "Securities transaction banking",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7413",
+              "name": "Smart banking and innovative finance",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7502",
+              "name": "Image processing and computer vision",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7503",
+              "name": "Multimedia technologies",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7504",
+              "name": "Pattern recognition and applications",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7505",
+              "name": "User interface design and development",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7506",
+              "name": "Smart phone apps development",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7507",
+              "name": "Visualization and visual analytics",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7508",
+              "name": "Data-driven computer animation",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7604",
+              "name": "Game design and development",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7807",
+              "name": "Topic in multimedia computing",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7104",
+              "name": "Advanced database systems",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7105",
+              "name": "Advanced topics in data science",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7106",
+              "name": "Big data management",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7107",
+              "name": "Management of complex data types",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7108",
+              "name": "Network data analytics",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7201",
+              "name": "Analysis and design of enterprise applications in UML",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7305",
+              "name": "Cluster and cloud computing",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7308",
+              "name": "Introduction to unmanned systems",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7309",
+              "name": "Quantum computing and artificial intelligence",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7310",
+              "name": "Artificial intelligence of things",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7311",
+              "name": "Legal issues in artificial intelligence and data science",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7404",
+              "name": "Computational intelligence and machine learning",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7602",
+              "name": "Introduction to bioinformatics",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7607",
+              "name": "Natural language processing",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7608",
+              "name": "Large language models",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7801",
+              "name": "Topic in computer science",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7805",
+              "name": "Topic in computer network and systems",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DASC7606",
+              "name": "Deep learning",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7411",
+              "name": "RegTech in finance",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "capstone-experience",
+          "name": "Capstone Experience",
+          "type": "project_or_practicum",
+          "creditsRequired": 12,
+          "coursesRequired": 1,
+          "ruleText": "Complete either COMP7705 Project or COMP7706 Computing technology practicum (12 credits), related to the Cyber Security Stream. The stream relationship and mutually exclusive choice require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://master.cds.hku.hk/msccs/msc-in-computer-science-discipline-courses/",
+          "courses": [
+            {
+              "code": "COMP7705",
+              "name": "Project",
+              "credits": 12,
+              "courseKind": "project",
+              "subjectGroups": [
+                "capstone"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7706",
+              "name": "Computing technology practicum",
+              "credits": 12,
+              "courseKind": "practicum",
+              "subjectGroups": [
+                "capstone"
+              ],
+              "appliesToTrackIds": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "programmeId": "HKU-TPG-058",
+      "status": "verified",
+      "creditsRequired": 72,
+      "creditUnit": "credits",
+      "sourceUrl": "https://master.cds.hku.hk/msccs/msc-in-computer-science-stream-financial-computing/",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "discipline-courses",
+          "name": "Discipline Courses",
+          "type": "discipline",
+          "creditsRequired": 60,
+          "coursesRequired": 10,
+          "ruleText": "Complete 60 discipline-course credits, including at least 24 credits (four 6-credit courses) tagged for the Financial Computing Stream. Up to 12 credits may instead come from approved postgraduate courses offered by departments in the Faculty of Engineering or the School of Computing and Data Science; those external approvals require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://master.cds.hku.hk/msccs/msc-in-computer-science-discipline-courses/",
+          "courses": [
+            {
+              "code": "COMP7409",
+              "name": "Machine learning in trading and finance",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt",
+                "finance"
+              ],
+              "streamSpecific": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7412",
+              "name": "Banking in Web3 – Metaverse, DeFi, NFTs and beyond",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt",
+                "finance"
+              ],
+              "streamSpecific": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7416",
+              "name": "FinTech and digital currencies",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7610",
+              "name": "Introduction to Web3 and blockchain",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7611",
+              "name": "Security and privacy in AI systems",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7612",
+              "name": "Visualization for AI and Web3 analytics",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7809",
+              "name": "Topic in artificial intelligence",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7810",
+              "name": "Topic in Web3",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7414",
+              "name": "Generative AI in financial services",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt",
+                "finance"
+              ],
+              "streamSpecific": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7806",
+              "name": "Topic in information security",
+              "credits": 6,
+              "subjectGroups": [
+                "cyber"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7901",
+              "name": "Legal protection of digital property",
+              "credits": 6,
+              "subjectGroups": [
+                "cyber"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7903",
+              "name": "Digital investigation and forensics",
+              "credits": 6,
+              "subjectGroups": [
+                "cyber"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7904",
+              "name": "Information security: attacks and defense",
+              "credits": 6,
+              "subjectGroups": [
+                "cyber"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7905",
+              "name": "Reverse engineering and malware analysis",
+              "credits": 6,
+              "subjectGroups": [
+                "cyber"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7906",
+              "name": "Introduction to cyber security",
+              "credits": 6,
+              "subjectGroups": [
+                "cyber",
+                "finance"
+              ],
+              "streamSpecific": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7410",
+              "name": "Financial fraud analytics",
+              "credits": 6,
+              "subjectGroups": [
+                "cyber",
+                "finance"
+              ],
+              "streamSpecific": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7103",
+              "name": "Data mining",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "streamSpecific": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7408",
+              "name": "Distributed ledger and blockchain technology",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "streamSpecific": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7415",
+              "name": "Financial analytics and algorithmic trading",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "streamSpecific": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7802",
+              "name": "Introduction to financial computing",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "streamSpecific": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7808",
+              "name": "Topic in financial computing",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "streamSpecific": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7405",
+              "name": "Techniques in computational finance",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "streamSpecific": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7406",
+              "name": "Software development for quantitative finance",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "streamSpecific": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7407",
+              "name": "Securities transaction banking",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "streamSpecific": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7413",
+              "name": "Smart banking and innovative finance",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "streamSpecific": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7502",
+              "name": "Image processing and computer vision",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7503",
+              "name": "Multimedia technologies",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7504",
+              "name": "Pattern recognition and applications",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7505",
+              "name": "User interface design and development",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7506",
+              "name": "Smart phone apps development",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7507",
+              "name": "Visualization and visual analytics",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7508",
+              "name": "Data-driven computer animation",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7604",
+              "name": "Game design and development",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7807",
+              "name": "Topic in multimedia computing",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7104",
+              "name": "Advanced database systems",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7105",
+              "name": "Advanced topics in data science",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7106",
+              "name": "Big data management",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7107",
+              "name": "Management of complex data types",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7108",
+              "name": "Network data analytics",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7201",
+              "name": "Analysis and design of enterprise applications in UML",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7305",
+              "name": "Cluster and cloud computing",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7308",
+              "name": "Introduction to unmanned systems",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7309",
+              "name": "Quantum computing and artificial intelligence",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7310",
+              "name": "Artificial intelligence of things",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7311",
+              "name": "Legal issues in artificial intelligence and data science",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7404",
+              "name": "Computational intelligence and machine learning",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7602",
+              "name": "Introduction to bioinformatics",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7607",
+              "name": "Natural language processing",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7608",
+              "name": "Large language models",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7801",
+              "name": "Topic in computer science",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7805",
+              "name": "Topic in computer network and systems",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DASC7606",
+              "name": "Deep learning",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7411",
+              "name": "RegTech in finance",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "capstone-experience",
+          "name": "Capstone Experience",
+          "type": "project_or_practicum",
+          "creditsRequired": 12,
+          "coursesRequired": 1,
+          "ruleText": "Complete either COMP7705 Project or COMP7706 Computing technology practicum (12 credits), related to the Financial Computing Stream. The stream relationship and mutually exclusive choice require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://master.cds.hku.hk/msccs/msc-in-computer-science-discipline-courses/",
+          "courses": [
+            {
+              "code": "COMP7705",
+              "name": "Project",
+              "credits": 12,
+              "courseKind": "project",
+              "subjectGroups": [
+                "capstone"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7706",
+              "name": "Computing technology practicum",
+              "credits": 12,
+              "courseKind": "practicum",
+              "subjectGroups": [
+                "capstone"
+              ],
+              "appliesToTrackIds": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "programmeId": "HKU-TPG-059",
+      "status": "verified",
+      "creditsRequired": 72,
+      "creditUnit": "credits",
+      "sourceUrl": "https://master.cds.hku.hk/msccs/msc-in-computer-science-stream-general-stream/",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "discipline-courses",
+          "name": "Discipline Courses",
+          "type": "discipline",
+          "creditsRequired": 60,
+          "coursesRequired": 10,
+          "ruleText": "Complete 60 discipline-course credits from any official subject group. Up to 12 credits may instead come from approved postgraduate courses offered by departments in the Faculty of Engineering or the School of Computing and Data Science; those external approvals require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://master.cds.hku.hk/msccs/msc-in-computer-science-discipline-courses/",
+          "courses": [
+            {
+              "code": "COMP7409",
+              "name": "Machine learning in trading and finance",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt",
+                "finance"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7412",
+              "name": "Banking in Web3 – Metaverse, DeFi, NFTs and beyond",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt",
+                "finance"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7416",
+              "name": "FinTech and digital currencies",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7610",
+              "name": "Introduction to Web3 and blockchain",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7611",
+              "name": "Security and privacy in AI systems",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7612",
+              "name": "Visualization for AI and Web3 analytics",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7809",
+              "name": "Topic in artificial intelligence",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7810",
+              "name": "Topic in Web3",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7414",
+              "name": "Generative AI in financial services",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt",
+                "finance"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7806",
+              "name": "Topic in information security",
+              "credits": 6,
+              "subjectGroups": [
+                "cyber"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7901",
+              "name": "Legal protection of digital property",
+              "credits": 6,
+              "subjectGroups": [
+                "cyber"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7903",
+              "name": "Digital investigation and forensics",
+              "credits": 6,
+              "subjectGroups": [
+                "cyber"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7904",
+              "name": "Information security: attacks and defense",
+              "credits": 6,
+              "subjectGroups": [
+                "cyber"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7905",
+              "name": "Reverse engineering and malware analysis",
+              "credits": 6,
+              "subjectGroups": [
+                "cyber"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7906",
+              "name": "Introduction to cyber security",
+              "credits": 6,
+              "subjectGroups": [
+                "cyber",
+                "finance"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7410",
+              "name": "Financial fraud analytics",
+              "credits": 6,
+              "subjectGroups": [
+                "cyber",
+                "finance"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7103",
+              "name": "Data mining",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7408",
+              "name": "Distributed ledger and blockchain technology",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7415",
+              "name": "Financial analytics and algorithmic trading",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7802",
+              "name": "Introduction to financial computing",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7808",
+              "name": "Topic in financial computing",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7405",
+              "name": "Techniques in computational finance",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7406",
+              "name": "Software development for quantitative finance",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7407",
+              "name": "Securities transaction banking",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7413",
+              "name": "Smart banking and innovative finance",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7502",
+              "name": "Image processing and computer vision",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7503",
+              "name": "Multimedia technologies",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7504",
+              "name": "Pattern recognition and applications",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7505",
+              "name": "User interface design and development",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7506",
+              "name": "Smart phone apps development",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7507",
+              "name": "Visualization and visual analytics",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7508",
+              "name": "Data-driven computer animation",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7604",
+              "name": "Game design and development",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7807",
+              "name": "Topic in multimedia computing",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7104",
+              "name": "Advanced database systems",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7105",
+              "name": "Advanced topics in data science",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7106",
+              "name": "Big data management",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7107",
+              "name": "Management of complex data types",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7108",
+              "name": "Network data analytics",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7201",
+              "name": "Analysis and design of enterprise applications in UML",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7305",
+              "name": "Cluster and cloud computing",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7308",
+              "name": "Introduction to unmanned systems",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7309",
+              "name": "Quantum computing and artificial intelligence",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7310",
+              "name": "Artificial intelligence of things",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7311",
+              "name": "Legal issues in artificial intelligence and data science",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7404",
+              "name": "Computational intelligence and machine learning",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7602",
+              "name": "Introduction to bioinformatics",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7607",
+              "name": "Natural language processing",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7608",
+              "name": "Large language models",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7801",
+              "name": "Topic in computer science",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7805",
+              "name": "Topic in computer network and systems",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DASC7606",
+              "name": "Deep learning",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7411",
+              "name": "RegTech in finance",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "capstone-experience",
+          "name": "Capstone Experience",
+          "type": "project_or_practicum",
+          "creditsRequired": 12,
+          "coursesRequired": 1,
+          "ruleText": "Complete either COMP7705 Project in any computer science area or COMP7706 Computing technology practicum (12 credits). The mutually exclusive choice requires manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://master.cds.hku.hk/msccs/msc-in-computer-science-discipline-courses/",
+          "courses": [
+            {
+              "code": "COMP7705",
+              "name": "Project",
+              "credits": 12,
+              "courseKind": "project",
+              "subjectGroups": [
+                "capstone"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7706",
+              "name": "Computing technology practicum",
+              "credits": 12,
+              "courseKind": "practicum",
+              "subjectGroups": [
+                "capstone"
+              ],
+              "appliesToTrackIds": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "programmeId": "HKU-TPG-060",
+      "status": "verified",
+      "creditsRequired": 72,
+      "creditUnit": "credits",
+      "sourceUrl": "https://master.cds.hku.hk/msccs/msc-in-computer-science-multimedia-computing-stream/",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "discipline-courses",
+          "name": "Discipline Courses",
+          "type": "discipline",
+          "creditsRequired": 60,
+          "coursesRequired": 10,
+          "ruleText": "Complete 60 discipline-course credits, including at least 24 credits (four 6-credit courses) tagged for the Multimedia Computing Stream. Up to 12 credits may instead come from approved postgraduate courses offered by departments in the Faculty of Engineering or the School of Computing and Data Science; those external approvals require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://master.cds.hku.hk/msccs/msc-in-computer-science-discipline-courses/",
+          "courses": [
+            {
+              "code": "COMP7409",
+              "name": "Machine learning in trading and finance",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt",
+                "finance"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7412",
+              "name": "Banking in Web3 – Metaverse, DeFi, NFTs and beyond",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt",
+                "finance"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7416",
+              "name": "FinTech and digital currencies",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7610",
+              "name": "Introduction to Web3 and blockchain",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7611",
+              "name": "Security and privacy in AI systems",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7612",
+              "name": "Visualization for AI and Web3 analytics",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7809",
+              "name": "Topic in artificial intelligence",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7810",
+              "name": "Topic in Web3",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7414",
+              "name": "Generative AI in financial services",
+              "credits": 6,
+              "subjectGroups": [
+                "aidt",
+                "finance"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7806",
+              "name": "Topic in information security",
+              "credits": 6,
+              "subjectGroups": [
+                "cyber"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7901",
+              "name": "Legal protection of digital property",
+              "credits": 6,
+              "subjectGroups": [
+                "cyber"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7903",
+              "name": "Digital investigation and forensics",
+              "credits": 6,
+              "subjectGroups": [
+                "cyber"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7904",
+              "name": "Information security: attacks and defense",
+              "credits": 6,
+              "subjectGroups": [
+                "cyber"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7905",
+              "name": "Reverse engineering and malware analysis",
+              "credits": 6,
+              "subjectGroups": [
+                "cyber"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7906",
+              "name": "Introduction to cyber security",
+              "credits": 6,
+              "subjectGroups": [
+                "cyber",
+                "finance"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7410",
+              "name": "Financial fraud analytics",
+              "credits": 6,
+              "subjectGroups": [
+                "cyber",
+                "finance"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7103",
+              "name": "Data mining",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7408",
+              "name": "Distributed ledger and blockchain technology",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7415",
+              "name": "Financial analytics and algorithmic trading",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7802",
+              "name": "Introduction to financial computing",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7808",
+              "name": "Topic in financial computing",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7405",
+              "name": "Techniques in computational finance",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7406",
+              "name": "Software development for quantitative finance",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7407",
+              "name": "Securities transaction banking",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7413",
+              "name": "Smart banking and innovative finance",
+              "credits": 6,
+              "subjectGroups": [
+                "finance"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7502",
+              "name": "Image processing and computer vision",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "streamSpecific": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7503",
+              "name": "Multimedia technologies",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "streamSpecific": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7504",
+              "name": "Pattern recognition and applications",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "streamSpecific": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7505",
+              "name": "User interface design and development",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "streamSpecific": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7506",
+              "name": "Smart phone apps development",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "streamSpecific": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7507",
+              "name": "Visualization and visual analytics",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "streamSpecific": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7508",
+              "name": "Data-driven computer animation",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "streamSpecific": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7604",
+              "name": "Game design and development",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "streamSpecific": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7807",
+              "name": "Topic in multimedia computing",
+              "credits": 6,
+              "subjectGroups": [
+                "multimedia"
+              ],
+              "streamSpecific": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7104",
+              "name": "Advanced database systems",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7105",
+              "name": "Advanced topics in data science",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7106",
+              "name": "Big data management",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7107",
+              "name": "Management of complex data types",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7108",
+              "name": "Network data analytics",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7201",
+              "name": "Analysis and design of enterprise applications in UML",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7305",
+              "name": "Cluster and cloud computing",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7308",
+              "name": "Introduction to unmanned systems",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7309",
+              "name": "Quantum computing and artificial intelligence",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7310",
+              "name": "Artificial intelligence of things",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7311",
+              "name": "Legal issues in artificial intelligence and data science",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7404",
+              "name": "Computational intelligence and machine learning",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7602",
+              "name": "Introduction to bioinformatics",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7607",
+              "name": "Natural language processing",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7608",
+              "name": "Large language models",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7801",
+              "name": "Topic in computer science",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7805",
+              "name": "Topic in computer network and systems",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DASC7606",
+              "name": "Deep learning",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7411",
+              "name": "RegTech in finance",
+              "credits": 6,
+              "subjectGroups": [
+                "other"
+              ],
+              "streamSpecific": false,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "capstone-experience",
+          "name": "Capstone Experience",
+          "type": "project_or_practicum",
+          "creditsRequired": 12,
+          "coursesRequired": 1,
+          "ruleText": "Complete either COMP7705 Project or COMP7706 Computing technology practicum (12 credits), related to the Multimedia Computing Stream. The stream relationship and mutually exclusive choice require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://master.cds.hku.hk/msccs/msc-in-computer-science-discipline-courses/",
+          "courses": [
+            {
+              "code": "COMP7705",
+              "name": "Project",
+              "credits": 12,
+              "courseKind": "project",
+              "subjectGroups": [
+                "capstone"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7706",
+              "name": "Computing technology practicum",
+              "credits": 12,
+              "courseKind": "practicum",
+              "subjectGroups": [
+                "capstone"
+              ],
+              "appliesToTrackIds": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

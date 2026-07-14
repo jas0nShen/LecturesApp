@@ -1,0 +1,369 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "HKU-TPG-004",
+      "status": "verified",
+      "creditsRequired": 69,
+      "creditUnit": "credits",
+      "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R404&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 36,
+          "coursesRequired": 6,
+          "ruleText": "Complete all six Core Courses for 36 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R404&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "MDUM1010",
+              "name": "Management of Urban Systems",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MDUM1020",
+              "name": "Urban Economics",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MDUM1030",
+              "name": "Municipal Finance for Urban Practitioners",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MDUM2010",
+              "name": "Urban Sustainability and ESG",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MDUM2020",
+              "name": "Digital Technologies and Smart Cities",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MDUM2030",
+              "name": "Urban Governance and Policymaking in the Digital Age",
+              "credits": 6,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 18,
+          "coursesRequired": 3,
+          "ruleText": "Complete three elective courses for 18 credits. Taking all three from one official category forms the corresponding optional Specialism on the transcript; candidates may also choose no Specialism. Course approval and the optional Specialism rule require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R404&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "URBP6002",
+              "name": "Urban Development Theories",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urban-policy-and-management"
+              ]
+            },
+            {
+              "code": "URBP6003",
+              "name": "Planning Practice, Law and Ethics in Hong Kong",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urban-policy-and-management"
+              ]
+            },
+            {
+              "code": "URBP6006",
+              "name": "Planning, Managing and Financing the Development Process",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urban-policy-and-management"
+              ]
+            },
+            {
+              "code": "URBP6131",
+              "name": "Transport Policy and Planning",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urban-policy-and-management"
+              ]
+            },
+            {
+              "code": "URBP6157",
+              "name": "Transport Economics",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urban-policy-and-management"
+              ]
+            },
+            {
+              "code": "URBP8002",
+              "name": "International Planning Policy and Practice",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urban-policy-and-management"
+              ]
+            },
+            {
+              "code": "URBP7005",
+              "name": "Planning Future Cities and Regions",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urban-policy-and-management"
+              ]
+            },
+            {
+              "code": "MHCD7002",
+              "name": "Principles of Healthy Cities",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urban-policy-and-management"
+              ]
+            },
+            {
+              "code": "MHMP8013",
+              "name": "Smart and Sustainable Cities",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urban-policy-and-management"
+              ]
+            },
+            {
+              "code": "URBA6002",
+              "name": "Urban Big Data Analytics",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urban-technology-and-analytics"
+              ]
+            },
+            {
+              "code": "URBA6004",
+              "name": "Spatial Mobilities Analytics",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urban-technology-and-analytics"
+              ]
+            },
+            {
+              "code": "URBA6006",
+              "name": "Science of Cities",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urban-technology-and-analytics"
+              ]
+            },
+            {
+              "code": "URBA6007",
+              "name": "Geographical Information System (GIS) for Urban and Regional Planning Development",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urban-technology-and-analytics"
+              ]
+            },
+            {
+              "code": "URBA6008",
+              "name": "Spatial Planning Analytics",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urban-technology-and-analytics"
+              ]
+            },
+            {
+              "code": "URBA6009",
+              "name": "Artificial Intelligence for Future Cities",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urban-technology-and-analytics"
+              ]
+            },
+            {
+              "code": "URBA6011",
+              "name": "Programming and Foundations in Urban Data Analysis",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urban-technology-and-analytics"
+              ]
+            },
+            {
+              "code": "MUDT5010",
+              "name": "Transport Network Analysis and Modelling",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urban-technology-and-analytics"
+              ]
+            },
+            {
+              "code": "MHCD7003",
+              "name": "Health Impact Assessment of Urban Development Projects",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urban-technology-and-analytics"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "capstone-experience",
+          "name": "Capstone Experience",
+          "type": "dissertation_or_project",
+          "creditsRequired": 15,
+          "coursesRequired": 1,
+          "ruleText": "Complete either MDUM8010 Dissertation or MDUM8020 Capstone Project, each worth 15 credits. The mutually exclusive choice requires manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R404&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "MDUM8010",
+              "name": "Dissertation",
+              "credits": 15,
+              "appliesToTrackIds": [],
+              "courseKind": "dissertation"
+            },
+            {
+              "code": "MDUM8020",
+              "name": "Capstone Project",
+              "credits": 15,
+              "appliesToTrackIds": [],
+              "courseKind": "project"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "programmeId": "HKU-TPG-009",
+      "status": "verified",
+      "creditsRequired": 72,
+      "creditUnit": "credits",
+      "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R378&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "common-prescribed-courses",
+          "name": "Common Prescribed Courses",
+          "type": "core",
+          "creditsRequired": 48,
+          "coursesRequired": 8,
+          "ruleText": "Complete the eight prescribed courses common to both completion paths for 48 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R378&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "RECO6004",
+              "name": "Construction Economics",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "RECO6018",
+              "name": "Modern Developments in the Law of Construction Contracts",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "RECO6028",
+              "name": "Procurement Systems",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "RECO6042",
+              "name": "Law for the Real Estate and Construction Industry",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "RECO6060",
+              "name": "Development Case Studies (QS)",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "RECO7074",
+              "name": "Management Theory and Projects",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "RECO7079",
+              "name": "Occupational Health, Safety and Well-being in Construction",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "RECO7098",
+              "name": "Project Risk Management",
+              "credits": 6,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "capstone-path",
+          "name": "Project Workshop or Dissertation Path",
+          "type": "project_or_dissertation",
+          "ruleText": "Project Workshop path: complete RECO6058 Project Workshop (6 credits) plus 18 elective credits. Dissertation path: complete RECO6020 Dissertation (18 credits) in lieu of RECO6058 and two elective courses, leaving 6 elective credits. The path choice and annual designated elective pool require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R378&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "RECO6058",
+              "name": "Project Workshop (CPM)",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "courseKind": "project"
+            },
+            {
+              "code": "RECO6020",
+              "name": "Dissertation",
+              "credits": 18,
+              "appliesToTrackIds": [],
+              "courseKind": "dissertation"
+            }
+          ]
+        },
+        {
+          "id": "designated-electives",
+          "name": "Designated Electives",
+          "type": "elective",
+          "ruleText": "Complete 18 elective credits on the Project Workshop path or 6 elective credits on the Dissertation path from the designated pool announced by the Programme Director at the beginning of the year. The current syllabus does not publish a fixed designated list.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R378&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": []
+        }
+      ]
+    }
+  ]
+}

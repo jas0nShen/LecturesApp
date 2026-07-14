@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKU",
+  "academicYear": "2022-23",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "HKU-TPG-007",
+      "status": "verified",
+      "creditsRequired": 72,
+      "creditUnit": "credits",
+      "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R54&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "common-core-courses",
+          "name": "Common Core Courses",
+          "type": "core",
+          "creditsRequired": 30,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five common Core Courses for 30 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R54&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "CONS8120",
+              "name": "Built Heritage and Its Significance",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CONS8103",
+              "name": "Charters and Legislation of Conservation",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CONS8124",
+              "name": "Conservation and Assessment Techniques",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CONS8117",
+              "name": "Methods of Heritage Research and Interpretation",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CONS8216",
+              "name": "Critical Issues in Heritage Conservation",
+              "credits": 6,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "stream-courses",
+          "name": "Conservation Planning and Management Stream Courses",
+          "type": "stream_core",
+          "creditsRequired": 18,
+          "coursesRequired": 2,
+          "ruleText": "Complete both prescribed Stream courses for 18 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R54&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "CONS8220",
+              "name": "Conservation Planning and Management Studio",
+              "credits": 12,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CONS8222",
+              "name": "Heritage Economics and Sustainable Development",
+              "credits": 6,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 12,
+          "coursesRequired": 2,
+          "ruleText": "Complete two 6-credit electives from cross-listed Faculty of Architecture courses with Programme Director approval. The syllabus lists the following suggested electives; the approval-dependent pool requires manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R54&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "CONS8109",
+              "name": "Cultural Landscapes",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CONS8224",
+              "name": "Digital Heritage: Theory and Application",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CONS8223",
+              "name": "Materials and Technologies in Conservation",
+              "credits": 6,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "capstone-experience",
+          "name": "Capstone Experience",
+          "type": "dissertation",
+          "creditsRequired": 12,
+          "coursesRequired": 1,
+          "ruleText": "Complete CONS8215 Conservation Thesis as the 12-credit Capstone experience.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R54&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "CONS8215",
+              "name": "Conservation Thesis",
+              "credits": 12,
+              "appliesToTrackIds": [],
+              "courseKind": "dissertation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "programmeId": "HKU-TPG-008",
+      "status": "verified",
+      "creditsRequired": 72,
+      "creditUnit": "credits",
+      "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R54&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "common-core-courses",
+          "name": "Common Core Courses",
+          "type": "core",
+          "creditsRequired": 30,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five common Core Courses for 30 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R54&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "CONS8120",
+              "name": "Built Heritage and Its Significance",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CONS8103",
+              "name": "Charters and Legislation of Conservation",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CONS8124",
+              "name": "Conservation and Assessment Techniques",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CONS8117",
+              "name": "Methods of Heritage Research and Interpretation",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CONS8216",
+              "name": "Critical Issues in Heritage Conservation",
+              "credits": 6,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "stream-courses",
+          "name": "Design for Conservation Stream Courses",
+          "type": "stream_core",
+          "creditsRequired": 18,
+          "coursesRequired": 2,
+          "ruleText": "Complete both prescribed Stream courses for 18 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R54&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "CONS8221",
+              "name": "Design for Conservation Studio",
+              "credits": 12,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CONS8223",
+              "name": "Materials and Technologies in Conservation",
+              "credits": 6,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 12,
+          "coursesRequired": 2,
+          "ruleText": "Complete two 6-credit electives from cross-listed Faculty of Architecture courses with Programme Director approval. The syllabus lists the following suggested electives; the approval-dependent pool requires manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R54&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "CONS8109",
+              "name": "Cultural Landscapes",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CONS8224",
+              "name": "Digital Heritage: Theory and Application",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CONS8222",
+              "name": "Heritage Economics and Sustainable Development",
+              "credits": 6,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "capstone-experience",
+          "name": "Capstone Experience",
+          "type": "dissertation",
+          "creditsRequired": 12,
+          "coursesRequired": 1,
+          "ruleText": "Complete CONS8215 Conservation Thesis as the 12-credit Capstone experience.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R54&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "CONS8215",
+              "name": "Conservation Thesis",
+              "credits": 12,
+              "appliesToTrackIds": [],
+              "courseKind": "dissertation"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

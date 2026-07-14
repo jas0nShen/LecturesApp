@@ -14,10 +14,10 @@ test('feedback template includes launch context without uploading local user dat
   });
 
   assert(template.includes('【选课港反馈 / 纠错】'));
-  assert(template.includes('版本：1.0.2'));
+  assert(template.includes('版本：1.0.3'));
   assert(template.includes('学校：香港大学'));
   assert(template.includes('Programme：Master of Science in Artificial Intelligence (MSc(AI))'));
-  assert(template.includes('当前资料状态：课程清单已录入，结构复核中 · 22 门课程'));
+  assert(template.includes('当前资料状态：课程结构已开放 · 22 门课程'));
   assert(template.includes('数据补充模板：'));
   assert(template.includes('- 当前 Programme / Major：Master of Science in Artificial Intelligence (MSc(AI))'));
   assert(template.includes('不会自动上传本机资料、收藏、笔记或 Study Plan'));
@@ -60,11 +60,11 @@ test('feedback template works before a programme is saved', () => {
 
 test('feedback template can target an unsaved programme detail', () => {
   const tpgService = require('./tpgService');
-  const programme = tpgService.getProgramme('HKU-TPG-001');
+  const programme = tpgService.getProgramme('HKU-TPG-024');
   const template = feedbackService.buildFeedbackTemplate(null, { programme });
 
   assert(template.includes('学校：香港大学'));
-  assert(template.includes('Programme：Master of Architecture (Design) (MArch (Design))'));
+  assert(template.includes('Programme：Master of Dental Surgery in Orthodontics and Dentofacial Orthopaedics (MDS(Orthodontics&DentofacialOrthopaedics;))'));
   assert(template.includes('当前资料状态：结构资料待拆分 · 课程清单待开放'));
   assert(template.includes('- 需要补充的课程代码 / 课程名：这个 Programme 课程清单待开放，请补充官方课程表'));
   assert(template.includes('HKU_Master_Course_Guide.pdf'));

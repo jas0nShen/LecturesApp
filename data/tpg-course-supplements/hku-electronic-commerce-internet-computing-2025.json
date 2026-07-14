@@ -1,0 +1,373 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "HKU-TPG-061",
+      "status": "verified",
+      "creditsRequired": 72,
+      "creditUnit": "credits",
+      "sourceUrl": "https://engg.hku.hk/Portals/0/TPG/MSc(ECIC)_Syl_2024-25_20241112.pdf",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "discipline-courses",
+          "name": "Discipline Courses",
+          "type": "discipline",
+          "creditsRequired": 36,
+          "ruleText": "For the Case Study Project path, complete at least 48 discipline-course credits; for the Dissertation path, complete at least 36 discipline-course credits. Both paths must include at least 24 credits (four courses) from the official Fundamental Courses list. At most 12 credits may be approved external electives. The path-dependent minimum and external approvals require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://engg.hku.hk/Portals/0/TPG/MSc(ECIC)_Syl_2024-25_20241112.pdf",
+          "courses": [
+            {
+              "code": "ECOM6004",
+              "name": "Legal aspects of I.T. and e-commerce",
+              "credits": 6,
+              "subjectGroups": [
+                "fundamental"
+              ],
+              "fundamental": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ECOM6008",
+              "name": "Supply chain and e-logistics management",
+              "credits": 6,
+              "subjectGroups": [
+                "fundamental"
+              ],
+              "fundamental": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ECOM6013",
+              "name": "E-commerce technologies",
+              "credits": 6,
+              "subjectGroups": [
+                "fundamental"
+              ],
+              "fundamental": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ECOM6014",
+              "name": "E-marketing",
+              "credits": 6,
+              "subjectGroups": [
+                "discipline"
+              ],
+              "fundamental": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ECOM6016",
+              "name": "Electronic payment systems",
+              "credits": 6,
+              "subjectGroups": [
+                "discipline"
+              ],
+              "fundamental": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ECOM6022",
+              "name": "Topics in electronic commerce",
+              "credits": 6,
+              "subjectGroups": [
+                "discipline"
+              ],
+              "fundamental": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ECOM6023",
+              "name": "E-financial services",
+              "credits": 6,
+              "subjectGroups": [
+                "discipline"
+              ],
+              "fundamental": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ECOM6029",
+              "name": "E-business transformation",
+              "credits": 6,
+              "subjectGroups": [
+                "discipline"
+              ],
+              "fundamental": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ECOM7121",
+              "name": "Dynamic digital capabilities",
+              "credits": 6,
+              "subjectGroups": [
+                "discipline"
+              ],
+              "fundamental": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ECOM7122",
+              "name": "Entrepreneurship development and ventures in Asia",
+              "credits": 6,
+              "subjectGroups": [
+                "discipline"
+              ],
+              "fundamental": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ECOM7123",
+              "name": "Building smart cities: an information system approach",
+              "credits": 6,
+              "subjectGroups": [
+                "discipline"
+              ],
+              "fundamental": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ECOM7124",
+              "name": "Mobile and IoT computing services and applications",
+              "credits": 6,
+              "subjectGroups": [
+                "discipline"
+              ],
+              "fundamental": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ECOM7126",
+              "name": "Machine learning for business and e-commerce",
+              "credits": 6,
+              "subjectGroups": [
+                "discipline"
+              ],
+              "fundamental": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ECOM7127",
+              "name": "Digital transformation: strategy and people",
+              "credits": 6,
+              "subjectGroups": [
+                "fundamental"
+              ],
+              "fundamental": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ICOM6012",
+              "name": "Internet infrastructure technologies",
+              "credits": 6,
+              "subjectGroups": [
+                "fundamental"
+              ],
+              "fundamental": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ICOM6027",
+              "name": "E-crimes: digital crime scenes and legal sanctions",
+              "credits": 6,
+              "subjectGroups": [
+                "discipline"
+              ],
+              "fundamental": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ICOM6029",
+              "name": "Topics in Internet computing",
+              "credits": 6,
+              "subjectGroups": [
+                "discipline"
+              ],
+              "fundamental": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ICOM6034",
+              "name": "Website engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "fundamental"
+              ],
+              "fundamental": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ICOM6044",
+              "name": "Data science for business",
+              "credits": 6,
+              "subjectGroups": [
+                "discipline"
+              ],
+              "fundamental": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ICOM6045",
+              "name": "Fundamentals of e-commerce security",
+              "credits": 6,
+              "subjectGroups": [
+                "fundamental"
+              ],
+              "fundamental": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ICOM7125",
+              "name": "Digital forensics",
+              "credits": 6,
+              "subjectGroups": [
+                "discipline"
+              ],
+              "fundamental": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ICOM7128",
+              "name": "Knowledge graphs",
+              "credits": 6,
+              "subjectGroups": [
+                "fundamental"
+              ],
+              "fundamental": true,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7311",
+              "name": "Legal issues in artificial intelligence and data science",
+              "credits": 6,
+              "subjectGroups": [
+                "discipline"
+              ],
+              "fundamental": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7404",
+              "name": "Computational intelligence and machine learning",
+              "credits": 6,
+              "subjectGroups": [
+                "discipline"
+              ],
+              "fundamental": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7412",
+              "name": "Banking in Web 3.0 - Metaverse, DeFi, NFTs and beyond",
+              "credits": 6,
+              "subjectGroups": [
+                "discipline"
+              ],
+              "fundamental": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7802",
+              "name": "Introduction to financial computing",
+              "credits": 6,
+              "subjectGroups": [
+                "discipline"
+              ],
+              "fundamental": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "COMP7901",
+              "name": "Legal protection of digital property",
+              "credits": 6,
+              "subjectGroups": [
+                "discipline"
+              ],
+              "fundamental": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7407",
+              "name": "Securities transaction banking",
+              "credits": 6,
+              "subjectGroups": [
+                "discipline"
+              ],
+              "fundamental": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7409",
+              "name": "Blockchain and cryptocurrency",
+              "credits": 6,
+              "subjectGroups": [
+                "discipline"
+              ],
+              "fundamental": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7410",
+              "name": "Financial fraud analytics",
+              "credits": 6,
+              "subjectGroups": [
+                "discipline"
+              ],
+              "fundamental": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7411",
+              "name": "RegTech in finance",
+              "credits": 6,
+              "subjectGroups": [
+                "discipline"
+              ],
+              "fundamental": false,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "FITE7413",
+              "name": "Smart banking and innovative finance",
+              "credits": 6,
+              "subjectGroups": [
+                "discipline"
+              ],
+              "fundamental": false,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "capstone-experience",
+          "name": "Capstone Experience",
+          "type": "case_study_project_or_dissertation",
+          "ruleText": "Complete either ECOM7001 Case study project (12 credits) with ten taught courses, or ECOM7000 Dissertation (24 credits) with eight taught courses. The mutually exclusive paths require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://engg.hku.hk/Portals/0/TPG/MSc(ECIC)_Syl_2024-25_20241112.pdf",
+          "courses": [
+            {
+              "code": "ECOM7000",
+              "name": "Dissertation",
+              "credits": 24,
+              "courseKind": "dissertation",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ECOM7001",
+              "name": "Case study project",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

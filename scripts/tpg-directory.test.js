@@ -101,6 +101,53 @@ test('TPG directory supplements preserve optional official Track metadata', () =
   assert.equal(programme.tracks[0].lastVerifiedAt, '2026-07-14');
 });
 
+test('TPG directory refresh preserves course-enriched metadata for stable Track IDs', () => {
+  const programmeId = buildId('LINGNAN', '08/000498/L6', 'Master of Cultural Studies', 0);
+  const trackId = `${programmeId}-25-001273-L6`;
+  const source = {
+    universities: [{ code: 'LINGNAN', academicYear: '2026-27', sourceUrl: 'https://www.ln.edu.hk/programmes' }],
+    programmes: [{
+      id: programmeId,
+      universityCode: 'LINGNAN',
+      programmeCode: '08/000498/L6',
+      name: 'Master of Cultural Studies',
+      directorySupplement: true,
+      tracks: [{
+        id: trackId,
+        code: '25/001273/L6',
+        name: 'Digital Media and Culture',
+        type: 'Concentration',
+        academicYear: '2026-27',
+        sourceStatus: 'verified',
+        statusNote: 'Current official Concentration.'
+      }]
+    }]
+  };
+  const supplement = {
+    lastVerifiedAt: '2026-07-14',
+    universities: [{
+      code: 'LINGNAN',
+      academicYear: '2026-27',
+      sourceUrl: 'https://www.ln.edu.hk/programmes',
+      sourceLabel: 'Official',
+      programmes: [{
+        programmeCode: '08/000498/L6',
+        name: 'Master of Cultural Studies',
+        tracks: [{ code: '25/001273/L6', name: 'Digital Media and Culture' }]
+      }]
+    }]
+  };
+
+  const imported = applyDirectorySupplements(source, supplement);
+  const track = imported.programmes[0].tracks[0];
+  assert.equal(track.id, trackId);
+  assert.equal(track.academicYear, '2026-27');
+  assert.equal(track.type, 'Concentration');
+  assert.equal(track.sourceStatus, 'verified');
+  assert.equal(track.statusNote, 'Current official Concentration.');
+  assert.deepEqual(applyDirectorySupplements(imported, supplement), imported);
+});
+
 test('field-label directory entries use name-independent stable IDs', () => {
   const source = {
     universities: [{ code: 'LINGNAN', academicYear: '2026-27', sourceUrl: 'https://ln.edu.hk' }],

@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKU",
+  "academicYear": "2026-27 and thereafter",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "HKU-TPG-017",
+      "status": "verified",
+      "creditsRequired": 60,
+      "creditUnit": "credits",
+      "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R420&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 2026-27 Regulations and Syllabuses require two Core Courses, six Elective Courses and HKGS7991 Capstone Experience for 60 credits. The elective pool contains ten MAHKCS courses and three cross-listed CHIN courses; no more than two cross-listed electives (12 credits) may count. HKGS7991 permits either an academic paper or a media project with analysis, so the cross-listed maximum and Capstone format require manual audit review.",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 2,
+          "ruleText": "Complete both 6-credit Core Courses for 12 credits. The Core Courses are offered in the first semester of the first academic year.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R420&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "HKGS7001",
+              "name": "Hong Kong Cultural Studies: Theories and Research Methods",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "HKGS7002",
+              "name": "Perspectives on Hong Kong Cultural Studies",
+              "credits": 6,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 36,
+          "coursesRequired": 6,
+          "ruleText": "Complete six 6-credit electives from the 13-course pool. A maximum of two cross-listed CHIN electives (12 credits) may be selected; those cross-listed courses are taught in Chinese. Not all listed electives are necessarily offered each year. The maximum requires manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R420&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "HKGS7121",
+              "name": "Screening Hong Kong",
+              "credits": 6,
+              "subjectGroups": [
+                "programme-elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "HKGS7122",
+              "name": "Hong Kong Identity: Cultural Symbols and Representation",
+              "credits": 6,
+              "subjectGroups": [
+                "programme-elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "HKGS7123",
+              "name": "Hong Kong Cantopop: The Sound of the City",
+              "credits": 6,
+              "subjectGroups": [
+                "programme-elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "HKGS7124",
+              "name": "The Study of Everyday Life in Hong Kong",
+              "credits": 6,
+              "subjectGroups": [
+                "programme-elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "HKGS7125",
+              "name": "The Controversy of Hong Kong’s Colonial Situation",
+              "credits": 6,
+              "subjectGroups": [
+                "programme-elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "HKGS7126",
+              "name": "Hong Kong Print Media: The Story of the City",
+              "credits": 6,
+              "subjectGroups": [
+                "programme-elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "HKGS7127",
+              "name": "Hong Kong Culture: An Interdisciplinary Perspective",
+              "credits": 6,
+              "subjectGroups": [
+                "programme-elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "HKGS7128",
+              "name": "Hong Kong Celebrity Culture",
+              "credits": 6,
+              "subjectGroups": [
+                "programme-elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "HKGS7129",
+              "name": "Capitalism in Hong Kong: Culture, Politics and Theory",
+              "credits": 6,
+              "subjectGroups": [
+                "programme-elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "HKGS7130",
+              "name": "Tasty Hong Kong: The Food Culture of the City",
+              "credits": 6,
+              "subjectGroups": [
+                "programme-elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7013",
+              "name": "Hong Kong since 1842",
+              "credits": 6,
+              "subjectGroups": [
+                "cross-listed"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7102",
+              "name": "Studies in Cantonese",
+              "credits": 6,
+              "subjectGroups": [
+                "cross-listed"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7114",
+              "name": "Topical Studies of Hong Kong Literature",
+              "credits": 6,
+              "subjectGroups": [
+                "cross-listed"
+              ],
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "capstone-experience",
+          "name": "Capstone Experience",
+          "type": "project",
+          "creditsRequired": 12,
+          "coursesRequired": 1,
+          "ruleText": "Complete HKGS7991 in the second semester for 12 credits. The official course permits either an academic paper of at least 7,000 English words or an 8-10 minute media production with an English analysis of at least 5,000 words; the format choice requires manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R420&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "HKGS7991",
+              "name": "Capstone Experience: MA Project in Hong Kong Cultural Studies",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            }
+          ]
+        }
+      ],
+      "additionalSources": [
+        "https://mahkcs.chinese.hku.hk/en/general/programme_structure/",
+        "https://mahkcs.chinese.hku.hk/en/general/coursework_requirement/",
+        "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-hong-kong-cultural-studies-arts"
+      ]
+    }
+  ]
+}

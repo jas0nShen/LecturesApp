@@ -60,21 +60,33 @@ function applyDirectorySupplements(inputCatalogue, supplement) {
       : buildId(source.code, programmeCode, name, index);
     const isEduhkMed = source.code === 'EDUHK' && programmeCode === 'MEd';
     const existingProgramme = existingProgrammesById.get(id);
-    const tracks = isEduhkMed ? EDUHK_MED_TRACKS.map(([code, trackName]) => ({
-      id: `${id}-${code}`,
-      code,
-      name: trackName,
-      type: 'area_of_focus',
-      sourceUrl: 'https://gs.eduhk.hk/prospective/med/',
-      lastVerifiedAt: supplement.lastVerifiedAt
-    })) : (entry.tracks || []).map((track, trackIndex) => ({
-      id: `${id}-${slug(track.code || track.name) || trackIndex + 1}`,
-      code: track.code || '',
-      name: track.name,
-      type: track.type || 'specialism',
-      sourceUrl: track.sourceUrl || entry.sourceUrl || source.sourceUrl,
-      lastVerifiedAt: track.lastVerifiedAt || supplement.lastVerifiedAt
-    }));
+    const existingTracksById = new Map(
+      ((existingProgramme && existingProgramme.tracks) || []).map((track) => [track.id, track])
+    );
+    const tracks = isEduhkMed ? EDUHK_MED_TRACKS.map(([code, trackName]) => {
+      const trackId = `${id}-${code}`;
+      return {
+        ...(existingTracksById.get(trackId) || {}),
+        id: trackId,
+        code,
+        name: trackName,
+        type: 'area_of_focus',
+        sourceUrl: 'https://gs.eduhk.hk/prospective/med/',
+        lastVerifiedAt: supplement.lastVerifiedAt
+      };
+    }) : (entry.tracks || []).map((track, trackIndex) => {
+      const trackId = `${id}-${slug(track.code || track.name) || trackIndex + 1}`;
+      const existingTrack = existingTracksById.get(trackId) || {};
+      return {
+        ...existingTrack,
+        id: trackId,
+        code: track.code || '',
+        name: track.name,
+        type: track.type || existingTrack.type || 'specialism',
+        sourceUrl: track.sourceUrl || entry.sourceUrl || source.sourceUrl,
+        lastVerifiedAt: track.lastVerifiedAt || supplement.lastVerifiedAt
+      };
+    });
     return {
     ...(existingProgramme || {}),
     id,

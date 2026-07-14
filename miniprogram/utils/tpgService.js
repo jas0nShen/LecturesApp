@@ -109,13 +109,34 @@ function getGroupCoursesRequired(group = {}, trackId = '') {
   return resolveTrackRequirement(group, 'coursesRequired', trackId);
 }
 
+function getGroupType(group = {}, trackId = '') {
+  const overrides = group.typeByTrackIds;
+  if (trackId && overrides && typeof overrides === 'object' && !Array.isArray(overrides) && Object.prototype.hasOwnProperty.call(overrides, trackId)) {
+    return overrides[trackId];
+  }
+  return group.type || '';
+}
+
+function getTrackResolvedName(item = {}, trackId = '') {
+  const overrides = item.nameByTrackIds;
+  if (trackId && overrides && typeof overrides === 'object' && !Array.isArray(overrides) && Object.prototype.hasOwnProperty.call(overrides, trackId)) {
+    return overrides[trackId];
+  }
+  return item.name || '';
+}
+
 function resolveCourseGroups(programme, trackId = '') {
   if (!programme) return [];
   return (programme.courseGroups || []).filter((group) => appliesToTrack(group, trackId)).map((group) => ({
     ...group,
+    name: getTrackResolvedName(group, trackId),
+    type: getGroupType(group, trackId),
     creditsRequired: getGroupCreditsRequired(group, trackId),
     coursesRequired: getGroupCoursesRequired(group, trackId),
-    courses: (group.courses || []).filter((course) => appliesToTrack(course, trackId))
+    courses: (group.courses || []).filter((course) => appliesToTrack(course, trackId)).map((course) => ({
+      ...course,
+      name: getTrackResolvedName(course, trackId)
+    }))
   }));
 }
 
@@ -292,6 +313,8 @@ module.exports = {
   getCreditsRequired,
   getGroupCoursesRequired,
   getGroupCreditsRequired,
+  getGroupType,
+  getTrackResolvedName,
   getProgrammeUniversity,
   getProfileSummary,
   getSchoolCoverage,

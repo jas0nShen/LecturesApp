@@ -1,0 +1,3787 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "HKU-TPG-032",
+      "status": "verified",
+      "creditsRequired": 72,
+      "creditUnit": "credits",
+      "sourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "discipline-courses",
+          "name": "Discipline Courses - Lists A and B",
+          "type": "discipline",
+          "ruleText": "Complete eight taught courses (48 credits), including at least three courses (18 credits) from List A. No more than three courses (18 credits) may be approved external electives. The List A minimum and external-elective approvals require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+          "courses": [
+            {
+              "code": "MEBS6000",
+              "name": "Utility services",
+              "credits": 6,
+              "subjectGroups": [
+                "list-a"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MEBS6001",
+              "name": "Electrical installations",
+              "credits": 6,
+              "subjectGroups": [
+                "list-a"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MEBS6002",
+              "name": "Lighting engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "list-a"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MEBS6003",
+              "name": "Project management",
+              "credits": 6,
+              "subjectGroups": [
+                "list-a"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MEBS7012",
+              "name": "Air conditioning and refrigeration",
+              "credits": 6,
+              "subjectGroups": [
+                "list-a"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MEBS7013",
+              "name": "Fire service installations",
+              "credits": 6,
+              "subjectGroups": [
+                "list-a"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MEBS6004",
+              "name": "Built environment",
+              "credits": 6,
+              "subjectGroups": [
+                "list-b"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MEBS6005",
+              "name": "Building automation systems",
+              "credits": 6,
+              "subjectGroups": [
+                "list-b"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MEBS6010",
+              "name": "Indoor air quality",
+              "credits": 6,
+              "subjectGroups": [
+                "list-b"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MEBS6011",
+              "name": "Maintenance and management of building facilities",
+              "credits": 6,
+              "subjectGroups": [
+                "list-b"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MEBS6013",
+              "name": "Testing and commissioning",
+              "credits": 6,
+              "subjectGroups": [
+                "list-b"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MEBS6014",
+              "name": "Computer modelling and simulation",
+              "credits": 6,
+              "subjectGroups": [
+                "list-b"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MEBS6015",
+              "name": "Natural and hybrid ventilation of buildings",
+              "credits": 6,
+              "subjectGroups": [
+                "list-b"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MEBS6016",
+              "name": "Energy performance of buildings",
+              "credits": 6,
+              "subjectGroups": [
+                "list-b"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MEBS6017",
+              "name": "Building intelligence",
+              "credits": 6,
+              "subjectGroups": [
+                "list-b"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MEBS6018",
+              "name": "Clean electrical energy and smart-grids for buildings",
+              "credits": 6,
+              "subjectGroups": [
+                "list-b"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MEBS6019",
+              "name": "Extra-low-voltage electrical systems in buildings",
+              "credits": 6,
+              "subjectGroups": [
+                "list-b"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MEBS6020",
+              "name": "Sustainable building design",
+              "credits": 6,
+              "subjectGroups": [
+                "list-b"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MEBS7010",
+              "name": "Vertical transportation and drive",
+              "credits": 6,
+              "subjectGroups": [
+                "list-b"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MEBS7011",
+              "name": "Communication technology in building services",
+              "credits": 6,
+              "subjectGroups": [
+                "list-b"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MEBS7014",
+              "name": "Advanced HVAC applications",
+              "credits": 6,
+              "subjectGroups": [
+                "list-b"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MEBS7015",
+              "name": "Fire science and smoke control",
+              "credits": 6,
+              "subjectGroups": [
+                "list-b"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MECH7012",
+              "name": "Principles of engineering management",
+              "credits": 6,
+              "subjectGroups": [
+                "list-b"
+              ],
+              "appliesToTrackIds": []
+            }
+          ],
+          "creditsRequired": 48,
+          "coursesRequired": 8
+        },
+        {
+          "id": "capstone-experience",
+          "name": "Capstone Experience",
+          "type": "dissertation",
+          "ruleText": "Complete MEBS6023 Dissertation (24 credits). Its prerequisite requires two specified List A courses; the co-requisite exception for full-time Year 1 students requires manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+          "courses": [
+            {
+              "code": "MEBS6023",
+              "name": "Dissertation",
+              "credits": 24,
+              "courseKind": "dissertation",
+              "appliesToTrackIds": []
+            }
+          ],
+          "creditsRequired": 24,
+          "coursesRequired": 1
+        }
+      ]
+    },
+    {
+      "programmeId": "HKU-TPG-033",
+      "status": "verified",
+      "creditsRequired": 72,
+      "creditUnit": "credits",
+      "sourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "discipline-courses",
+          "name": "Discipline Courses - Official Groups A to D",
+          "type": "discipline",
+          "ruleText": "Complete at least 36 discipline-course credits from official Groups A to D, including at least 24 credits (four courses) in the Environmental Engineering subject group. Complete eight taught courses (48 credits) in total; no more than 12 credits may be approved external electives.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+          "courses": [
+            {
+              "code": "CIVL6007",
+              "name": "Behavioural travel demand modelling",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6009",
+              "name": "Building planning and control",
+              "credits": 6,
+              "subjectGroups": [
+                "general",
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6014",
+              "name": "Construction dispute resolution",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "constructionManagement": true,
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6015",
+              "name": "Construction financial management",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "constructionManagement": true,
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6037",
+              "name": "Project management - human and organisational factors",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "constructionManagement": true,
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6046",
+              "name": "Theory of traffic flow",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6047",
+              "name": "Traffic management and control",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6049",
+              "name": "Urban development management by engineering approach",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "constructionManagement": true,
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6054",
+              "name": "Engineering for transport systems",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6058",
+              "name": "Management of infrastructure megaprojects",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "constructionManagement": true,
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6059",
+              "name": "Special topic in infrastructure project management",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6060",
+              "name": "Operation and maintenance of building and civil engineering works",
+              "credits": 6,
+              "subjectGroups": [
+                "general",
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7005",
+              "name": "Sustainable construction technology: principles and practices",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "constructionManagement": true,
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7006",
+              "name": "Optimization techniques for transportation applications",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7007",
+              "name": "Building information modelling (BIM): Theories, development and application",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "constructionManagement": true,
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7018",
+              "name": "Data science for civil engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7019",
+              "name": "Statistical methods for civil engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7021",
+              "name": "NEC contract management",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6005",
+              "name": "Data analysis in hydrology",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6006",
+              "name": "Advanced water and wastewater treatment",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6023",
+              "name": "Environmental chemistry",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6025",
+              "name": "Environmental impact assessment of engineering projects",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental",
+                "geotechnical",
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6029",
+              "name": "Groundwater hydrology",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6034",
+              "name": "Municipal wastewater treatment",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6040",
+              "name": "Solid and hazardous waste management engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6050",
+              "name": "Urban hydrology and hydraulics",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6053",
+              "name": "Wind engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental",
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6061",
+              "name": "Special topic in environmental engineering A",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6062",
+              "name": "Special topic in environmental engineering B",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6081",
+              "name": "Recent advances in water and environmental engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL7022",
+              "name": "Carbon neutral engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "MEBS6004",
+              "name": "Built environment",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "MEBS6010",
+              "name": "Indoor air quality",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "MECH6017",
+              "name": "Noise and vibration",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "MECH6019",
+              "name": "Sources and control of air pollution",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6004",
+              "name": "Advanced soil mechanics",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6026",
+              "name": "Finite element method",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical",
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6027",
+              "name": "Foundation engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical",
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6028",
+              "name": "Ground improvement",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6043",
+              "name": "Special topic in geotechnical engineering A",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6044",
+              "name": "Special topic in geotechnical engineering B",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6077",
+              "name": "Ground investigation and soil testing",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6078",
+              "name": "Rock mechanics and rock engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6079",
+              "name": "Slope engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6083",
+              "name": "Practical design and construction of tunnels in Hong Kong",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7002",
+              "name": "Geotechnical analysis and case histories",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7010",
+              "name": "Advanced engineering geology",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6003",
+              "name": "Advanced reinforced concrete structure design",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6008",
+              "name": "Bridge engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6013",
+              "name": "Concrete technology",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6045",
+              "name": "Tall building structures",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6063",
+              "name": "Special topic in structural engineering A",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6064",
+              "name": "Special topic in structural engineering B",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6080",
+              "name": "Fire engineering design of structures",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7003",
+              "name": "Space structures",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7008",
+              "name": "Seismic analysis for building structures",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7015",
+              "name": "Durability design of concrete structures",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7020",
+              "name": "Advanced prestressed concrete",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            }
+          ],
+          "creditsRequired": 36
+        },
+        {
+          "id": "capstone-experience",
+          "name": "Capstone Experience",
+          "type": "dissertation",
+          "ruleText": "Complete CIVL7009 Dissertation (24 credits) in the Environmental Engineering area. The dissertation-area requirement requires manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+          "courses": [
+            {
+              "code": "CIVL7009",
+              "name": "Dissertation",
+              "credits": 24,
+              "courseKind": "dissertation",
+              "appliesToTrackIds": []
+            }
+          ],
+          "creditsRequired": 24,
+          "coursesRequired": 1
+        }
+      ]
+    },
+    {
+      "programmeId": "HKU-TPG-034",
+      "status": "verified",
+      "creditsRequired": 72,
+      "creditUnit": "credits",
+      "sourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "discipline-courses",
+          "name": "Discipline Courses - Official Groups A to D",
+          "type": "discipline",
+          "ruleText": "Complete at least 36 discipline-course credits from official Groups A to D. Complete eight taught courses (48 credits) in total; no more than 12 credits may be approved external electives. General Stream students may take no more than four construction-management courses marked in Group A.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+          "courses": [
+            {
+              "code": "CIVL6007",
+              "name": "Behavioural travel demand modelling",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6009",
+              "name": "Building planning and control",
+              "credits": 6,
+              "subjectGroups": [
+                "general",
+                "structural"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6014",
+              "name": "Construction dispute resolution",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "constructionManagement": true
+            },
+            {
+              "code": "CIVL6015",
+              "name": "Construction financial management",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "constructionManagement": true
+            },
+            {
+              "code": "CIVL6037",
+              "name": "Project management - human and organisational factors",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "constructionManagement": true
+            },
+            {
+              "code": "CIVL6046",
+              "name": "Theory of traffic flow",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6047",
+              "name": "Traffic management and control",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6049",
+              "name": "Urban development management by engineering approach",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "constructionManagement": true
+            },
+            {
+              "code": "CIVL6054",
+              "name": "Engineering for transport systems",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6058",
+              "name": "Management of infrastructure megaprojects",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "constructionManagement": true
+            },
+            {
+              "code": "CIVL6059",
+              "name": "Special topic in infrastructure project management",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6060",
+              "name": "Operation and maintenance of building and civil engineering works",
+              "credits": 6,
+              "subjectGroups": [
+                "general",
+                "structural"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL7005",
+              "name": "Sustainable construction technology: principles and practices",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "constructionManagement": true
+            },
+            {
+              "code": "CIVL7006",
+              "name": "Optimization techniques for transportation applications",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL7007",
+              "name": "Building information modelling (BIM): Theories, development and application",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "constructionManagement": true
+            },
+            {
+              "code": "CIVL7018",
+              "name": "Data science for civil engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL7019",
+              "name": "Statistical methods for civil engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL7021",
+              "name": "NEC contract management",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6005",
+              "name": "Data analysis in hydrology",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6006",
+              "name": "Advanced water and wastewater treatment",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6023",
+              "name": "Environmental chemistry",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6025",
+              "name": "Environmental impact assessment of engineering projects",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental",
+                "geotechnical",
+                "structural"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6029",
+              "name": "Groundwater hydrology",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6034",
+              "name": "Municipal wastewater treatment",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6040",
+              "name": "Solid and hazardous waste management engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6050",
+              "name": "Urban hydrology and hydraulics",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6053",
+              "name": "Wind engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental",
+                "structural"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6061",
+              "name": "Special topic in environmental engineering A",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6062",
+              "name": "Special topic in environmental engineering B",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6081",
+              "name": "Recent advances in water and environmental engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL7022",
+              "name": "Carbon neutral engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MEBS6004",
+              "name": "Built environment",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MEBS6010",
+              "name": "Indoor air quality",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MECH6017",
+              "name": "Noise and vibration",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MECH6019",
+              "name": "Sources and control of air pollution",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6004",
+              "name": "Advanced soil mechanics",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6026",
+              "name": "Finite element method",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical",
+                "structural"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6027",
+              "name": "Foundation engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical",
+                "structural"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6028",
+              "name": "Ground improvement",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6043",
+              "name": "Special topic in geotechnical engineering A",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6044",
+              "name": "Special topic in geotechnical engineering B",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6077",
+              "name": "Ground investigation and soil testing",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6078",
+              "name": "Rock mechanics and rock engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6079",
+              "name": "Slope engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6083",
+              "name": "Practical design and construction of tunnels in Hong Kong",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL7002",
+              "name": "Geotechnical analysis and case histories",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL7010",
+              "name": "Advanced engineering geology",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6003",
+              "name": "Advanced reinforced concrete structure design",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6008",
+              "name": "Bridge engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6013",
+              "name": "Concrete technology",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6045",
+              "name": "Tall building structures",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6063",
+              "name": "Special topic in structural engineering A",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6064",
+              "name": "Special topic in structural engineering B",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL6080",
+              "name": "Fire engineering design of structures",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL7003",
+              "name": "Space structures",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL7008",
+              "name": "Seismic analysis for building structures",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL7015",
+              "name": "Durability design of concrete structures",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CIVL7020",
+              "name": "Advanced prestressed concrete",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": []
+            }
+          ],
+          "creditsRequired": 36
+        },
+        {
+          "id": "capstone-experience",
+          "name": "Capstone Experience",
+          "type": "dissertation",
+          "ruleText": "Complete CIVL7009 Dissertation (24 credits) in any area of civil engineering.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+          "courses": [
+            {
+              "code": "CIVL7009",
+              "name": "Dissertation",
+              "credits": 24,
+              "courseKind": "dissertation",
+              "appliesToTrackIds": []
+            }
+          ],
+          "creditsRequired": 24,
+          "coursesRequired": 1
+        }
+      ]
+    },
+    {
+      "programmeId": "HKU-TPG-035",
+      "status": "verified",
+      "creditsRequired": 72,
+      "creditUnit": "credits",
+      "sourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "discipline-courses",
+          "name": "Discipline Courses - Official Groups A to D",
+          "type": "discipline",
+          "ruleText": "Complete at least 36 discipline-course credits from official Groups A to D, including at least 24 credits (four courses) in the Geotechnical Engineering subject group. Complete eight taught courses (48 credits) in total; no more than 12 credits may be approved external electives.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+          "courses": [
+            {
+              "code": "CIVL6007",
+              "name": "Behavioural travel demand modelling",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6009",
+              "name": "Building planning and control",
+              "credits": 6,
+              "subjectGroups": [
+                "general",
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6014",
+              "name": "Construction dispute resolution",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "constructionManagement": true,
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6015",
+              "name": "Construction financial management",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "constructionManagement": true,
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6037",
+              "name": "Project management - human and organisational factors",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "constructionManagement": true,
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6046",
+              "name": "Theory of traffic flow",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6047",
+              "name": "Traffic management and control",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6049",
+              "name": "Urban development management by engineering approach",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "constructionManagement": true,
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6054",
+              "name": "Engineering for transport systems",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6058",
+              "name": "Management of infrastructure megaprojects",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "constructionManagement": true,
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6059",
+              "name": "Special topic in infrastructure project management",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6060",
+              "name": "Operation and maintenance of building and civil engineering works",
+              "credits": 6,
+              "subjectGroups": [
+                "general",
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7005",
+              "name": "Sustainable construction technology: principles and practices",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "constructionManagement": true,
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7006",
+              "name": "Optimization techniques for transportation applications",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7007",
+              "name": "Building information modelling (BIM): Theories, development and application",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "constructionManagement": true,
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7018",
+              "name": "Data science for civil engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7019",
+              "name": "Statistical methods for civil engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7021",
+              "name": "NEC contract management",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6005",
+              "name": "Data analysis in hydrology",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6006",
+              "name": "Advanced water and wastewater treatment",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6023",
+              "name": "Environmental chemistry",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6025",
+              "name": "Environmental impact assessment of engineering projects",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental",
+                "geotechnical",
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6029",
+              "name": "Groundwater hydrology",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6034",
+              "name": "Municipal wastewater treatment",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6040",
+              "name": "Solid and hazardous waste management engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6050",
+              "name": "Urban hydrology and hydraulics",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6053",
+              "name": "Wind engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental",
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6061",
+              "name": "Special topic in environmental engineering A",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6062",
+              "name": "Special topic in environmental engineering B",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6081",
+              "name": "Recent advances in water and environmental engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7022",
+              "name": "Carbon neutral engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "MEBS6004",
+              "name": "Built environment",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "MEBS6010",
+              "name": "Indoor air quality",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "MECH6017",
+              "name": "Noise and vibration",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "MECH6019",
+              "name": "Sources and control of air pollution",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6004",
+              "name": "Advanced soil mechanics",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6026",
+              "name": "Finite element method",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical",
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6027",
+              "name": "Foundation engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical",
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6028",
+              "name": "Ground improvement",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6043",
+              "name": "Special topic in geotechnical engineering A",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6044",
+              "name": "Special topic in geotechnical engineering B",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6077",
+              "name": "Ground investigation and soil testing",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6078",
+              "name": "Rock mechanics and rock engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6079",
+              "name": "Slope engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6083",
+              "name": "Practical design and construction of tunnels in Hong Kong",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL7002",
+              "name": "Geotechnical analysis and case histories",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL7010",
+              "name": "Advanced engineering geology",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6003",
+              "name": "Advanced reinforced concrete structure design",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6008",
+              "name": "Bridge engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6013",
+              "name": "Concrete technology",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6045",
+              "name": "Tall building structures",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6063",
+              "name": "Special topic in structural engineering A",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6064",
+              "name": "Special topic in structural engineering B",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6080",
+              "name": "Fire engineering design of structures",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7003",
+              "name": "Space structures",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7008",
+              "name": "Seismic analysis for building structures",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7015",
+              "name": "Durability design of concrete structures",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7020",
+              "name": "Advanced prestressed concrete",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            }
+          ],
+          "creditsRequired": 36
+        },
+        {
+          "id": "capstone-experience",
+          "name": "Capstone Experience",
+          "type": "dissertation",
+          "ruleText": "Complete CIVL7009 Dissertation (24 credits) in the Geotechnical Engineering area. The dissertation-area requirement requires manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+          "courses": [
+            {
+              "code": "CIVL7009",
+              "name": "Dissertation",
+              "credits": 24,
+              "courseKind": "dissertation",
+              "appliesToTrackIds": []
+            }
+          ],
+          "creditsRequired": 24,
+          "coursesRequired": 1
+        }
+      ]
+    },
+    {
+      "programmeId": "HKU-TPG-036",
+      "status": "verified",
+      "creditsRequired": 72,
+      "creditUnit": "credits",
+      "sourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "discipline-courses",
+          "name": "Discipline Courses - Official Groups A to D",
+          "type": "discipline",
+          "ruleText": "Complete at least 36 discipline-course credits from official Groups A to D, including at least 24 credits (four courses) in the Structural Engineering subject group. Complete eight taught courses (48 credits) in total; no more than 12 credits may be approved external electives.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+          "courses": [
+            {
+              "code": "CIVL6007",
+              "name": "Behavioural travel demand modelling",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6009",
+              "name": "Building planning and control",
+              "credits": 6,
+              "subjectGroups": [
+                "general",
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6014",
+              "name": "Construction dispute resolution",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "constructionManagement": true,
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6015",
+              "name": "Construction financial management",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "constructionManagement": true,
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6037",
+              "name": "Project management - human and organisational factors",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "constructionManagement": true,
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6046",
+              "name": "Theory of traffic flow",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6047",
+              "name": "Traffic management and control",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6049",
+              "name": "Urban development management by engineering approach",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "constructionManagement": true,
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6054",
+              "name": "Engineering for transport systems",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6058",
+              "name": "Management of infrastructure megaprojects",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "constructionManagement": true,
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6059",
+              "name": "Special topic in infrastructure project management",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6060",
+              "name": "Operation and maintenance of building and civil engineering works",
+              "credits": 6,
+              "subjectGroups": [
+                "general",
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL7005",
+              "name": "Sustainable construction technology: principles and practices",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "constructionManagement": true,
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7006",
+              "name": "Optimization techniques for transportation applications",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7007",
+              "name": "Building information modelling (BIM): Theories, development and application",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "constructionManagement": true,
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7018",
+              "name": "Data science for civil engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7019",
+              "name": "Statistical methods for civil engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7021",
+              "name": "NEC contract management",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6005",
+              "name": "Data analysis in hydrology",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6006",
+              "name": "Advanced water and wastewater treatment",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6023",
+              "name": "Environmental chemistry",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6025",
+              "name": "Environmental impact assessment of engineering projects",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental",
+                "geotechnical",
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6029",
+              "name": "Groundwater hydrology",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6034",
+              "name": "Municipal wastewater treatment",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6040",
+              "name": "Solid and hazardous waste management engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6050",
+              "name": "Urban hydrology and hydraulics",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6053",
+              "name": "Wind engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental",
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6061",
+              "name": "Special topic in environmental engineering A",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6062",
+              "name": "Special topic in environmental engineering B",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6081",
+              "name": "Recent advances in water and environmental engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7022",
+              "name": "Carbon neutral engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "MEBS6004",
+              "name": "Built environment",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "MEBS6010",
+              "name": "Indoor air quality",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "MECH6017",
+              "name": "Noise and vibration",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "MECH6019",
+              "name": "Sources and control of air pollution",
+              "credits": 6,
+              "subjectGroups": [
+                "environmental"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6004",
+              "name": "Advanced soil mechanics",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6026",
+              "name": "Finite element method",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical",
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6027",
+              "name": "Foundation engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical",
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6028",
+              "name": "Ground improvement",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6043",
+              "name": "Special topic in geotechnical engineering A",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6044",
+              "name": "Special topic in geotechnical engineering B",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6077",
+              "name": "Ground investigation and soil testing",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6078",
+              "name": "Rock mechanics and rock engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6079",
+              "name": "Slope engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6083",
+              "name": "Practical design and construction of tunnels in Hong Kong",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7002",
+              "name": "Geotechnical analysis and case histories",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL7010",
+              "name": "Advanced engineering geology",
+              "credits": 6,
+              "subjectGroups": [
+                "geotechnical"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": false
+            },
+            {
+              "code": "CIVL6003",
+              "name": "Advanced reinforced concrete structure design",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6008",
+              "name": "Bridge engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6013",
+              "name": "Concrete technology",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6045",
+              "name": "Tall building structures",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6063",
+              "name": "Special topic in structural engineering A",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6064",
+              "name": "Special topic in structural engineering B",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL6080",
+              "name": "Fire engineering design of structures",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL7003",
+              "name": "Space structures",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL7008",
+              "name": "Seismic analysis for building structures",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL7015",
+              "name": "Durability design of concrete structures",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            },
+            {
+              "code": "CIVL7020",
+              "name": "Advanced prestressed concrete",
+              "credits": 6,
+              "subjectGroups": [
+                "structural"
+              ],
+              "appliesToTrackIds": [],
+              "streamSpecific": true
+            }
+          ],
+          "creditsRequired": 36
+        },
+        {
+          "id": "capstone-experience",
+          "name": "Capstone Experience",
+          "type": "dissertation",
+          "ruleText": "Complete CIVL7009 Dissertation (24 credits) in the Structural Engineering area. The dissertation-area requirement requires manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+          "courses": [
+            {
+              "code": "CIVL7009",
+              "name": "Dissertation",
+              "credits": 24,
+              "courseKind": "dissertation",
+              "appliesToTrackIds": []
+            }
+          ],
+          "creditsRequired": 24,
+          "coursesRequired": 1
+        }
+      ]
+    },
+    {
+      "programmeId": "HKU-TPG-037",
+      "status": "verified",
+      "creditsRequired": 72,
+      "creditUnit": "credits",
+      "sourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "discipline-courses",
+          "name": "Discipline Courses - Communications Engineering Stream",
+          "type": "discipline",
+          "ruleText": "For the Project path, complete at least 36 credits from official Group B Communications Engineering; up to 24 credits may be approved electives. For the Dissertation path, complete at least 30 credits from official Group B Communications Engineering; up to 18 credits may be approved electives. The path-dependent minimum and external approvals require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+          "courses": [
+            {
+              "code": "ELEC6006",
+              "name": "Communications policy and regulations",
+              "credits": 6,
+              "subjectGroups": [
+                "communications"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6026",
+              "name": "Digital signal processing",
+              "credits": 6,
+              "subjectGroups": [
+                "communications"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6065",
+              "name": "Data compression",
+              "credits": 6,
+              "subjectGroups": [
+                "communications"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6080",
+              "name": "Telecommunications systems and management",
+              "credits": 6,
+              "subjectGroups": [
+                "communications"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6097",
+              "name": "IP networks",
+              "credits": 6,
+              "subjectGroups": [
+                "communications"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6098",
+              "name": "Electronic and mobile commerce",
+              "credits": 6,
+              "subjectGroups": [
+                "communications"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6099",
+              "name": "Wireless communications and networking",
+              "credits": 6,
+              "subjectGroups": [
+                "communications"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6100",
+              "name": "Digital communications",
+              "credits": 6,
+              "subjectGroups": [
+                "communications"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6103",
+              "name": "Satellite communications",
+              "credits": 6,
+              "subjectGroups": [
+                "communications"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7051",
+              "name": "Advanced topics in communication theory and systems",
+              "credits": 6,
+              "subjectGroups": [
+                "communications"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7077",
+              "name": "Advanced topics in multimedia signals and systems",
+              "credits": 6,
+              "subjectGroups": [
+                "communications"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7085",
+              "name": "Advanced satellite engineering and new space economy",
+              "credits": 6,
+              "subjectGroups": [
+                "communications"
+              ],
+              "appliesToTrackIds": []
+            }
+          ],
+          "creditsRequired": 30
+        },
+        {
+          "id": "capstone-experience",
+          "name": "Capstone Experience",
+          "type": "project_or_dissertation",
+          "ruleText": "Complete either ELEC7022 Project (12 credits) with ten taught courses, or ELEC7021 Dissertation (24 credits) with eight taught courses. ELEC7023 Capstone Workshop (0 credits) is also compulsory. The mutually exclusive paths require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+          "courses": [
+            {
+              "code": "ELEC7021",
+              "name": "Dissertation",
+              "credits": 24,
+              "courseKind": "dissertation",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7022",
+              "name": "Project",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7023",
+              "name": "Capstone Workshop",
+              "credits": 0,
+              "courseKind": "workshop",
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "professional-development",
+          "name": "Professional Development",
+          "type": "optional_non_counting",
+          "ruleText": "ELEC7900 is optional and does not count toward the curriculum requirements or degree classification.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+          "courses": [
+            {
+              "code": "ELEC7900",
+              "name": "Leadership training in engineering professionals",
+              "credits": 0,
+              "courseKind": "optional",
+              "appliesToTrackIds": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "programmeId": "HKU-TPG-038",
+      "status": "verified",
+      "creditsRequired": 72,
+      "creditUnit": "credits",
+      "sourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "discipline-courses",
+          "name": "Discipline Courses - General Stream",
+          "type": "discipline",
+          "ruleText": "For the Project path, complete at least 36 credits from official Groups A, B or C; up to 24 credits may be approved electives. For the Dissertation path, complete at least 30 credits from official Groups A, B or C; up to 18 credits may be approved electives. The path-dependent minimum and external approvals require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+          "courses": [
+            {
+              "code": "ELEC6008",
+              "name": "Pattern recognition and machine learning",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6027",
+              "name": "Integrated circuit systems design",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6036",
+              "name": "High-performance computer architecture",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6049",
+              "name": "Digital system design techniques",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6063",
+              "name": "Optoelectronics and lightwave technology",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6067",
+              "name": "Magnetic resonance imaging (MRI) technology and applications",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6079",
+              "name": "Biomedical ultrasound",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6081",
+              "name": "Biomedical signals and systems",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6092",
+              "name": "Green project management",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6105",
+              "name": "Magnetics engineering for data storage and emerging applications",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6106",
+              "name": "From AI software to hardware: an introduction of machine learning and EDA",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6601",
+              "name": "Industrial marketing",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6602",
+              "name": "Business venture in China",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6603",
+              "name": "Success in industrial entrepreneurship",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6604",
+              "name": "Neural networks, fuzzy systems and genetic algorithms",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7029",
+              "name": "Analog IC design, computing and memories",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7030",
+              "name": "Advanced CMOS analog/RF IC design",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7043",
+              "name": "Digital image processing and computer vision",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7075",
+              "name": "Advanced topics on circuits and systems",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7078",
+              "name": "Advanced topics in electrical and electronic engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7079",
+              "name": "Investment and trading for engineering students",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7080",
+              "name": "Algorithmic trading and high frequency trading",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7081",
+              "name": "Advanced topics in computational finance",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7082",
+              "name": "Artificial intelligence in finance",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7083",
+              "name": "Distributed systems",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7084",
+              "name": "Advanced database",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7086",
+              "name": "Analog and mixed-signal IC for AI circuits",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7088",
+              "name": "Artificial intelligence computing by edge processor",
+              "credits": 6,
+              "subjectGroups": [
+                "general"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6006",
+              "name": "Communications policy and regulations",
+              "credits": 6,
+              "subjectGroups": [
+                "communications"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6026",
+              "name": "Digital signal processing",
+              "credits": 6,
+              "subjectGroups": [
+                "communications"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6065",
+              "name": "Data compression",
+              "credits": 6,
+              "subjectGroups": [
+                "communications"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6080",
+              "name": "Telecommunications systems and management",
+              "credits": 6,
+              "subjectGroups": [
+                "communications"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6097",
+              "name": "IP networks",
+              "credits": 6,
+              "subjectGroups": [
+                "communications"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6098",
+              "name": "Electronic and mobile commerce",
+              "credits": 6,
+              "subjectGroups": [
+                "communications"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6099",
+              "name": "Wireless communications and networking",
+              "credits": 6,
+              "subjectGroups": [
+                "communications"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6100",
+              "name": "Digital communications",
+              "credits": 6,
+              "subjectGroups": [
+                "communications"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6103",
+              "name": "Satellite communications",
+              "credits": 6,
+              "subjectGroups": [
+                "communications"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7051",
+              "name": "Advanced topics in communication theory and systems",
+              "credits": 6,
+              "subjectGroups": [
+                "communications"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7077",
+              "name": "Advanced topics in multimedia signals and systems",
+              "credits": 6,
+              "subjectGroups": [
+                "communications"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7085",
+              "name": "Advanced satellite engineering and new space economy",
+              "credits": 6,
+              "subjectGroups": [
+                "communications"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6084",
+              "name": "Power delivery management for metropolitan cities",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6085",
+              "name": "The role of a computerized SCADA system in power system operation",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6095",
+              "name": "Smart grid",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7011",
+              "name": "Energy Internet",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7012",
+              "name": "Power systems practicum",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7013",
+              "name": "Leadership in future energy industry",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7014",
+              "name": "Building information modelling for E&M engineers",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7055",
+              "name": "Power distribution systems",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7402",
+              "name": "Advanced electric vehicle technology",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7403",
+              "name": "Advanced power electronics",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7404",
+              "name": "Advanced railway engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7405",
+              "name": "Advanced signaling systems for railway",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7408",
+              "name": "Power, control and signalling facilities for high-speed trains",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7456",
+              "name": "Advanced power system operation",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7466",
+              "name": "Advanced topics in power system engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7467",
+              "name": "Power system protection",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7468",
+              "name": "Metropolitan mass transit transportation",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7469",
+              "name": "Advanced electrical energy and power conversion systems",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7470",
+              "name": "Advanced optimization and control strategies in modern power systems",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MEBS6001",
+              "name": "Electrical installations",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MEBS6019",
+              "name": "Extra-low-voltage electrical systems in buildings",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            }
+          ],
+          "creditsRequired": 30
+        },
+        {
+          "id": "capstone-experience",
+          "name": "Capstone Experience",
+          "type": "project_or_dissertation",
+          "ruleText": "Complete either ELEC7022 Project (12 credits) with ten taught courses, or ELEC7021 Dissertation (24 credits) with eight taught courses. ELEC7023 Capstone Workshop (0 credits) is also compulsory. The mutually exclusive paths require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+          "courses": [
+            {
+              "code": "ELEC7021",
+              "name": "Dissertation",
+              "credits": 24,
+              "courseKind": "dissertation",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7022",
+              "name": "Project",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7023",
+              "name": "Capstone Workshop",
+              "credits": 0,
+              "courseKind": "workshop",
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "professional-development",
+          "name": "Professional Development",
+          "type": "optional_non_counting",
+          "ruleText": "ELEC7900 is optional and does not count toward the curriculum requirements or degree classification.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+          "courses": [
+            {
+              "code": "ELEC7900",
+              "name": "Leadership training in engineering professionals",
+              "credits": 0,
+              "courseKind": "optional",
+              "appliesToTrackIds": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "programmeId": "HKU-TPG-039",
+      "status": "verified",
+      "creditsRequired": 72,
+      "creditUnit": "credits",
+      "sourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "discipline-courses",
+          "name": "Discipline Courses - Power Engineering Stream",
+          "type": "discipline",
+          "ruleText": "For the Project path, complete at least 36 credits from official Group C Power Engineering; up to 24 credits may be approved electives. For the Dissertation path, complete at least 30 credits from official Group C Power Engineering; up to 18 credits may be approved electives. The path-dependent minimum and external approvals require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+          "courses": [
+            {
+              "code": "ELEC6084",
+              "name": "Power delivery management for metropolitan cities",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6085",
+              "name": "The role of a computerized SCADA system in power system operation",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC6095",
+              "name": "Smart grid",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7011",
+              "name": "Energy Internet",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7012",
+              "name": "Power systems practicum",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7013",
+              "name": "Leadership in future energy industry",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7014",
+              "name": "Building information modelling for E&M engineers",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7055",
+              "name": "Power distribution systems",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7402",
+              "name": "Advanced electric vehicle technology",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7403",
+              "name": "Advanced power electronics",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7404",
+              "name": "Advanced railway engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7405",
+              "name": "Advanced signaling systems for railway",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7408",
+              "name": "Power, control and signalling facilities for high-speed trains",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7456",
+              "name": "Advanced power system operation",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7466",
+              "name": "Advanced topics in power system engineering",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7467",
+              "name": "Power system protection",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7468",
+              "name": "Metropolitan mass transit transportation",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7469",
+              "name": "Advanced electrical energy and power conversion systems",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7470",
+              "name": "Advanced optimization and control strategies in modern power systems",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MEBS6001",
+              "name": "Electrical installations",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MEBS6019",
+              "name": "Extra-low-voltage electrical systems in buildings",
+              "credits": 6,
+              "subjectGroups": [
+                "power"
+              ],
+              "appliesToTrackIds": []
+            }
+          ],
+          "creditsRequired": 30
+        },
+        {
+          "id": "capstone-experience",
+          "name": "Capstone Experience",
+          "type": "project_or_dissertation",
+          "ruleText": "Complete either ELEC7022 Project (12 credits) with ten taught courses, or ELEC7021 Dissertation (24 credits) with eight taught courses. ELEC7023 Capstone Workshop (0 credits) is also compulsory. The mutually exclusive paths require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+          "courses": [
+            {
+              "code": "ELEC7021",
+              "name": "Dissertation",
+              "credits": 24,
+              "courseKind": "dissertation",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7022",
+              "name": "Project",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ELEC7023",
+              "name": "Capstone Workshop",
+              "credits": 0,
+              "courseKind": "workshop",
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "professional-development",
+          "name": "Professional Development",
+          "type": "optional_non_counting",
+          "ruleText": "ELEC7900 is optional and does not count toward the curriculum requirements or degree classification.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+          "courses": [
+            {
+              "code": "ELEC7900",
+              "name": "Leadership training in engineering professionals",
+              "credits": 0,
+              "courseKind": "optional",
+              "appliesToTrackIds": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

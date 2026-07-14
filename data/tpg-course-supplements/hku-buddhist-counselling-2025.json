@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKU",
+  "academicYear": "2023-24 and thereafter",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "HKU-TPG-020",
+      "status": "verified",
+      "creditsRequired": 63,
+      "creditUnit": "credits",
+      "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R337&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official Regulations apply to the 2022-23 intake and thereafter, while the detailed Syllabuses and course table apply to the 2023-24 intake and thereafter and are versioned Apr 16, 2025. The 63-credit curriculum requires all three 9-credit Core Courses, four 6-credit Elective Courses and BSTC8998 Capstone Experience. The official PDF also permits approved electives from the Master of Social Sciences (Counselling) programme without publishing a fixed code list, permits Advanced Standing for at most one equivalent Core Course, and offers four Capstone formats. Those variable approval-dependent paths remain marked for manual review and no unlisted course is invented.",
+      "courseGroups": [
+        {
+          "id": "compulsory-core-courses",
+          "name": "Compulsory Core Courses",
+          "type": "core",
+          "creditsRequired": 27,
+          "coursesRequired": 3,
+          "ruleText": "Complete all three 9-credit Core Courses for 27 credits. BSTC7601 has BSTC7600 as its official prerequisite. Advanced Standing may be granted for at most one equivalent Core Course completed within five years before admission, subject to Faculty approval; the substitution requires manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R337&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "BSTC7600",
+              "name": "Theories and practice in Buddhist counselling I",
+              "credits": 9,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7601",
+              "name": "Theories and practice in Buddhist counselling II",
+              "credits": 9,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7602",
+              "name": "Spiritual formation through contemplative practices",
+              "credits": 9,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 24,
+          "coursesRequired": 4,
+          "ruleText": "Choose four 6-credit electives for 24 credits. Not every listed elective is necessarily offered each year. With approval from both Programme Directors/Chairmen, students may select electives from the Master of Social Sciences (Counselling) programme, but the official MBC Syllabuses do not publish a fixed cross-listed course-code pool; those external choices require manual review and are not invented here.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R337&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "BSTC6055",
+              "name": "Buddhist psychology I",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7112",
+              "name": "Buddhist ethics",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7120",
+              "name": "Buddhist psychology and mental cultivation",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7603",
+              "name": "Dharma therapy",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7604",
+              "name": "Awareness training program",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7605",
+              "name": "Being with the elderly, sick and dying",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7606",
+              "name": "Buddhist homiletics: The art of presenting Buddhist teachings",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7607",
+              "name": "Buddhist liturgy and rituals",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7608",
+              "name": "Buddhist mediation",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7609",
+              "name": "Special topics in Buddhist counselling (1)",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7610",
+              "name": "Special topics in Buddhist counselling (2)",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "BSTC7611",
+              "name": "Group work in Buddhist and traditional counselling",
+              "credits": 6,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "capstone-experience",
+          "name": "Capstone Experience",
+          "type": "project",
+          "creditsRequired": 12,
+          "coursesRequired": 1,
+          "ruleText": "Complete BSTC8998 for 12 credits. The compulsory supervised project must use one of four official formats: contemplative and religious practices in Buddhism; a self-contemplative and reflective autobiography; Buddhist homiletics; or a Buddhist counselling case study. Topic approval, supervision and format-specific requirements require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R337&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "BSTC8998",
+              "name": "Capstone Experience",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            }
+          ]
+        }
+      ],
+      "additionalSources": [
+        "https://www.buddhism.hku.hk/ap/mbc/admission/",
+        "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-buddhist-counselling-arts&mode=full-time"
+      ]
+    }
+  ]
+}

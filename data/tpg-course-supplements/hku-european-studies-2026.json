@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKU",
+  "academicYear": "2026-27 and thereafter",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "HKU-TPG-016",
+      "status": "verified",
+      "creditsRequired": 60,
+      "creditUnit": "credits",
+      "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R422&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 2026-27 Regulations and Syllabuses establish a 60-credit curriculum, correcting the older 30-credit directory value. The Regulations PDF and official Courses page identify Area Studies: Europe as GLAS7002; the Curriculum Structure webpage currently labels it GLAS7003, so the PDF code is used and the source discrepancy is retained for manual review. Students take at least 12 elective credits from European Studies and choose one of two 12-credit Capstone courses.",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 30,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Core Courses for 30 credits. Every student is assigned to French, German, Russian or Spanish, with language-specific tutorials in GLAS7021 and GLAS7041.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R422&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "GLAS7001",
+              "name": "Advanced Research Skills",
+              "credits": 9,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GLAS7002",
+              "name": "Area Studies: Europe",
+              "credits": 9,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GLAS7021",
+              "name": "Perspectives on International Relations",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GLAS7041",
+              "name": "Making the Nation: Media, Culture and Identity",
+              "credits": 6,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 18,
+          "coursesRequired": 3,
+          "ruleText": "Complete three 6-credit electives from the published list, with at least two courses (12 credits) from European Studies. The remaining elective may be from European Studies, East Asian Studies or Global Studies. Not all listed electives are offered each year; the category minimum requires manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R422&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "GLAS7061",
+              "name": "The Atlantic: Columbus to NATO",
+              "credits": 6,
+              "subjectGroups": [
+                "european-studies"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GLAS7077",
+              "name": "The EU in a Changing World",
+              "credits": 6,
+              "subjectGroups": [
+                "european-studies"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GLAS7078",
+              "name": "World War II and “European Values”",
+              "credits": 6,
+              "subjectGroups": [
+                "european-studies"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GLAS7079",
+              "name": "From Postwar to War (and Back)? Central and Eastern Europe from 1945 to Today",
+              "credits": 6,
+              "subjectGroups": [
+                "european-studies"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GLAS7080",
+              "name": "Contemporary European Art, Culture, and Society",
+              "credits": 6,
+              "subjectGroups": [
+                "european-studies"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GLAS7064",
+              "name": "Language, Ethnicity, and Nationalism in East Asia",
+              "credits": 6,
+              "subjectGroups": [
+                "east-asian-studies"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GLAS7068",
+              "name": "Understanding Korea in the Age of Globalization",
+              "credits": 6,
+              "subjectGroups": [
+                "east-asian-studies"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GLAS7069",
+              "name": "Contemporary Korean Society and Globalization",
+              "credits": 6,
+              "subjectGroups": [
+                "east-asian-studies"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GLAS7070",
+              "name": "Understanding Popular Culture in Japan",
+              "credits": 6,
+              "subjectGroups": [
+                "east-asian-studies"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GLAS7071",
+              "name": "Contemporary Japanese Society and Culture",
+              "credits": 6,
+              "subjectGroups": [
+                "east-asian-studies"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GLAS7072",
+              "name": "Contemporary Japanese Literature and the World",
+              "credits": 6,
+              "subjectGroups": [
+                "east-asian-studies"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GLAS7073",
+              "name": "Critical Readings in Transnational Japanese Studies",
+              "credits": 6,
+              "subjectGroups": [
+                "east-asian-studies"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GLAS7074",
+              "name": "Literature and Politics in Modern East Asia",
+              "credits": 6,
+              "subjectGroups": [
+                "east-asian-studies"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GLAS7062",
+              "name": "Cultures and Politics in the Indian Ocean",
+              "credits": 6,
+              "subjectGroups": [
+                "global-studies"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GLAS7063",
+              "name": "Creative, Criminal, and Clandestine: Illicit Global Economies of Art and Crime",
+              "credits": 6,
+              "subjectGroups": [
+                "global-studies"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GLAS7065",
+              "name": "Asia Through the History and Literature of Travel",
+              "credits": 6,
+              "subjectGroups": [
+                "global-studies"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GLAS7066",
+              "name": "Gender, Religion, and Empire",
+              "credits": 6,
+              "subjectGroups": [
+                "global-studies"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GLAS7067",
+              "name": "Microhistory in a Global Age",
+              "credits": 6,
+              "subjectGroups": [
+                "global-studies"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GLAS7075",
+              "name": "Great Power Relations",
+              "credits": 6,
+              "subjectGroups": [
+                "global-studies"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GLAS7076",
+              "name": "Leadership in a Global Age",
+              "credits": 6,
+              "subjectGroups": [
+                "global-studies"
+              ],
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "capstone-experience",
+          "name": "Capstone Experience Courses",
+          "type": "project",
+          "creditsRequired": 12,
+          "coursesRequired": 1,
+          "ruleText": "Complete either GLAS7990 Capstone Individual Project or GLAS7998 Capstone Seminar: Europe for 12 credits. GLAS7990 is permission-based and is an impermissible combination with GLAS7998; the alternative requires manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R422&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "GLAS7990",
+              "name": "Capstone Individual Project",
+              "credits": 12,
+              "courseKind": "dissertation",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GLAS7998",
+              "name": "Capstone Seminar: Europe",
+              "credits": 12,
+              "courseKind": "dissertation",
+              "appliesToTrackIds": []
+            }
+          ]
+        }
+      ],
+      "additionalSources": [
+        "https://www.maeus.hku.hk/curriculumstructure",
+        "https://www.maeus.hku.hk/curriculumstructure/courses",
+        "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-european-studies-arts"
+      ]
+    }
+  ]
+}

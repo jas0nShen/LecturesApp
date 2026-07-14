@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "LINGNAN",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "LINGNAN-TPG-DIR-21-000086-L6",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.ln.edu.hk/daci/macmi/course-details",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five Required Courses (15 credits).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/daci/macmi/course-details",
+          "courses": [
+            { "code": "VSP501", "name": "Creative and Media Industries: Concepts and Histories", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "VSP502", "name": "Media Industries Research: Production, Practice, Policy", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "VSP503", "name": "Media Ethics", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "VSP504", "name": "Creative and Media Industries in Hong Kong", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "VSP514", "name": "Creative and Media Industries Proseminar: Voices from the Field", "credits": 3, "appliesToTrackIds": [] }
+          ]
+        },
+        {
+          "id": "programme-elective-or-capstone-path",
+          "name": "Programme Elective or Capstone Path",
+          "type": "elective",
+          "creditsRequired": 15,
+          "ruleText": "Complete either five 3-credit Programme Electives (15 credits), or three 3-credit Programme Electives plus the 6-credit VSP512 Capstone Project. The official page also labels the displayed pool 'Any 4 Courses'; because that label alone does not produce 15 credits without the Capstone, the two explicit 15-credit paths control and require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/daci/macmi/course-details",
+          "courses": [
+            { "code": "VSP505", "name": "Art and Technology", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "VSP506", "name": "Architectural Heritage and Creative Industries", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "VSP508", "name": "Mind, Creativity, and Imagination", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "VSP509", "name": "Film Conservation and Digital Humanities", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "VSP510", "name": "Creative Industries and Cultural Policies in East Asia", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "VSP511", "name": "Special Topics in Media and Creative Industries", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "VSP512", "name": "Capstone Project", "credits": 6, "courseKind": "project", "appliesToTrackIds": [] },
+            { "code": "VSP513", "name": "A.I. in Media and Creative Industries", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "VIS503", "name": "Approaches to Curating", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "VIS507", "name": "Digital Technologies and Museum Experience", "credits": 3, "appliesToTrackIds": [] }
+          ]
+        }
+      ]
+    }
+  ]
+}

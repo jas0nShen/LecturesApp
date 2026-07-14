@@ -1,0 +1,257 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKU",
+  "academicYear": "2024-25 and thereafter",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "HKU-TPG-012",
+      "status": "verified",
+      "creditsRequired": 60,
+      "creditUnit": "credits",
+      "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R300&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official regulations apply to 2024-25 and thereafter. Students complete eight 6-credit elective courses selected from the four published categories plus the 12-credit CHIN7995 Capstone Experience. The cross-category eight-course selection and cycle-dependent course offering require manual audit review.",
+      "courseGroups": [
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 48,
+          "coursesRequired": 8,
+          "ruleText": "Complete eight 6-credit elective courses selected from the published Chinese Language, Chinese Literature, Chinese Culture and Seminar categories. Courses are offered by cycle; this list does not imply that every course runs in every semester. The cross-category selection requires manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R300&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "CHIN6101",
+              "name": "Special Topics in Chinese Etymology",
+              "credits": 6,
+              "subjectGroups": [
+                "chinese-language"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN6104",
+              "name": "Special Topics in Ancient Chinese",
+              "credits": 6,
+              "subjectGroups": [
+                "chinese-language"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN6105",
+              "name": "Special Topics in Modern Chinese",
+              "credits": 6,
+              "subjectGroups": [
+                "chinese-language"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7102",
+              "name": "Studies in Cantonese",
+              "credits": 6,
+              "subjectGroups": [
+                "chinese-language"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7110",
+              "name": "Topics in Chinese Dialectology and Historical Linguistics",
+              "credits": 6,
+              "subjectGroups": [
+                "chinese-language"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7111",
+              "name": "Theory and Practice: Frontiers in Chinese Lexicology",
+              "credits": 6,
+              "subjectGroups": [
+                "chinese-language"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN6201",
+              "name": "Special Topics in Classical Poetry",
+              "credits": 6,
+              "subjectGroups": [
+                "chinese-literature"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN6202",
+              "name": "Special Topics in ci and qu Verse",
+              "credits": 6,
+              "subjectGroups": [
+                "chinese-literature"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN6203",
+              "name": "Special Topics in Ancient Prose",
+              "credits": 6,
+              "subjectGroups": [
+                "chinese-literature"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN6208",
+              "name": "Special Topics in Modern and Contemporary Literature",
+              "credits": 6,
+              "subjectGroups": [
+                "chinese-literature"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN6209",
+              "name": "Studies in Literary Creation",
+              "credits": 6,
+              "subjectGroups": [
+                "chinese-literature"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7105",
+              "name": "Studies in Classical Chinese Fiction",
+              "credits": 6,
+              "subjectGroups": [
+                "chinese-literature"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7108",
+              "name": "Topical Studies of Chinese Women's Literature",
+              "credits": 6,
+              "subjectGroups": [
+                "chinese-literature"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7112",
+              "name": "Love, Sex, and Gender in Traditional Chinese Popular Literature",
+              "credits": 6,
+              "subjectGroups": [
+                "chinese-literature"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7113",
+              "name": "Topics in Sinophone Studies",
+              "credits": 6,
+              "subjectGroups": [
+                "chinese-literature"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7114",
+              "name": "Topical Studies of Hong Kong Literature",
+              "credits": 6,
+              "subjectGroups": [
+                "chinese-literature"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN6301",
+              "name": "Special Topics in Confucian Classics",
+              "credits": 6,
+              "subjectGroups": [
+                "chinese-culture"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN6304",
+              "name": "Special Topics in Chinese Culture",
+              "credits": 6,
+              "subjectGroups": [
+                "chinese-culture"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7008",
+              "name": "Intellectual History of Pre-Qin China",
+              "credits": 6,
+              "subjectGroups": [
+                "chinese-culture"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7014",
+              "name": "History of Women and Gender in China",
+              "credits": 6,
+              "subjectGroups": [
+                "chinese-culture"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7109",
+              "name": "Exploring Chinese Culture: Field Study",
+              "credits": 6,
+              "subjectGroups": [
+                "chinese-culture"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7115",
+              "name": "Topics in Hong Kong Culture",
+              "credits": 6,
+              "subjectGroups": [
+                "chinese-culture"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7107",
+              "name": "Seminar: Special Topics in Chinese Language, Literature and Culture",
+              "credits": 6,
+              "subjectGroups": [
+                "seminar"
+              ],
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "capstone-experience",
+          "name": "Capstone Experience",
+          "type": "dissertation",
+          "creditsRequired": 12,
+          "coursesRequired": 1,
+          "ruleText": "Complete CHIN7995 Capstone Experience: Dissertation in Chinese Language and Literature for 12 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://macll.chinese.hku.hk/zh-hant/general/coursework_requirement/",
+          "courses": [
+            {
+              "code": "CHIN7995",
+              "name": "Capstone Experience: Dissertation in Chinese Language and Literature",
+              "credits": 12,
+              "courseKind": "dissertation",
+              "appliesToTrackIds": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

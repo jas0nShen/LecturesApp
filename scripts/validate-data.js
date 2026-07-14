@@ -128,7 +128,7 @@ tpgCatalogue.programmes.forEach((programme) => {
   assert(tpgUniversityCodes.has(programme.universityCode));
   assert(programme.name, `${programme.id} is missing a programme name`);
   if (programme.academicYear) {
-    assert.match(programme.academicYear, /^\d{4}-\d{2}$/, `${programme.id} has an invalid academic year`);
+    assert.match(programme.academicYear, /^\d{4}-\d{2}(?: and thereafter)?$/, `${programme.id} has an invalid academic year`);
   }
   assert(['programme', 'structure'].includes(programme.dataLevel));
   assert(Array.isArray(programme.courseGroups));
@@ -176,6 +176,14 @@ tpgCatalogue.programmes.forEach((programme) => {
           assert(Number.isFinite(Number(value)) && Number(value) > 0, `${programme.id}/${group.id}/${field}/${trackId} has an invalid requirement`);
         });
       });
+      Object.entries(group.typeByTrackIds || {}).forEach(([trackId, value]) => {
+        assert(trackIds.has(trackId), `${programme.id}/${group.id}/typeByTrackIds has unknown Track ${trackId}`);
+        assert(typeof value === 'string' && value.trim(), `${programme.id}/${group.id}/typeByTrackIds/${trackId} has an invalid type`);
+      });
+      Object.entries(group.nameByTrackIds || {}).forEach(([trackId, value]) => {
+        assert(trackIds.has(trackId), `${programme.id}/${group.id}/nameByTrackIds has unknown Track ${trackId}`);
+        assert(typeof value === 'string' && value.trim(), `${programme.id}/${group.id}/nameByTrackIds/${trackId} has an invalid name`);
+      });
       group.courses.forEach((course) => {
         assert(
           (course.credits !== undefined && Number.isFinite(Number(course.credits)) && Number(course.credits) >= 0) || (Number(course.creditsMin) > 0 && Number(course.creditsMax) >= Number(course.creditsMin)),
@@ -188,6 +196,10 @@ tpgCatalogue.programmes.forEach((programme) => {
           assert(!(course.appliesToTrackIds || []).includes(trackId), `${programme.id}/${course.code} both applies to and excludes Track ${trackId}`);
         });
         (course.countsTowardTrackIds || []).forEach((trackId) => assert(trackIds.has(trackId), `${programme.id}/${course.code} counts toward unknown Track ${trackId}`));
+        Object.entries(course.nameByTrackIds || {}).forEach(([trackId, value]) => {
+          assert(trackIds.has(trackId), `${programme.id}/${course.code}/nameByTrackIds has unknown Track ${trackId}`);
+          assert(typeof value === 'string' && value.trim(), `${programme.id}/${course.code}/nameByTrackIds/${trackId} has an invalid name`);
+        });
       });
     });
   }

@@ -1,0 +1,3154 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "HKU-TPG-001",
+      "status": "verified",
+      "creditsRequired": 204,
+      "creditUnit": "credits",
+      "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R344&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The detailed course table totals 168 Core credits plus 36 Elective credits, matching the 204-credit Programme total. The syllabus overview separately states 156 Core credits; this internal official-source conflict requires manual review.",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 168,
+          "coursesRequired": 18,
+          "ruleText": "Complete all 18 Core Courses shown in the detailed official course table. ARCH8084 Design 14 is the thesis-studio Capstone experience.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R344&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "ARCH7073",
+              "name": "Professional Practice I",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH7074",
+              "name": "Architecture and Its Discourses",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH7075",
+              "name": "Design and Technology of Sustainable Buildings",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH7076",
+              "name": "Advanced Structural Systems",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH7077",
+              "name": "Design and Construction Communication",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH7079",
+              "name": "Design 9",
+              "credits": 12,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH7080",
+              "name": "Design 10",
+              "credits": 12,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH7081",
+              "name": "Design 11",
+              "credits": 18,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH7082",
+              "name": "Design 12",
+              "credits": 18,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH7093",
+              "name": "Summer Studio",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH7117",
+              "name": "The Count-Down Town: Hong Kong Architecture & Urbanism from the 1840s to the Present",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH7330",
+              "name": "Principles of Building",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH7331",
+              "name": "Introduction to Building Structures",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH7465",
+              "name": "Digital Media and Methods",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH8073",
+              "name": "Professional Practice II",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH8075",
+              "name": "Design Methods",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH8083",
+              "name": "Design 13",
+              "credits": 18,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH8084",
+              "name": "Design 14",
+              "credits": 18,
+              "appliesToTrackIds": [],
+              "courseKind": "project"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 36,
+          "coursesRequired": 6,
+          "ruleText": "Complete six 6-credit electives, normally no more than two from any one of the five categories. Candidates without approved prior equivalents must include ARCH7332, ARCH7573, one of ARCH7094/ARCH7173, and one of ARCH7260/ARCH7264/ARCH7269. Equivalence waivers, category limits and up to two approved Faculty electives require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R344&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "ARCH7094",
+              "name": "Global Perspectives in Architectural History",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ],
+              "conditionalRequirement": true
+            },
+            {
+              "code": "ARCH7116",
+              "name": "Urban Acupuncture",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7118",
+              "name": "Buddhism, Architecture and Buddhist Architecture",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7119",
+              "name": "Politics of / Space / of Performance",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7124",
+              "name": "Utopian Architecture and the French Revolution",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7125",
+              "name": "History, Theory and Society",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7160",
+              "name": "The Modern Movement and Beyond",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7161",
+              "name": "Vernacular Architecture of Asia",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7162",
+              "name": "Architecture and Memory",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7163",
+              "name": "Architectural Histories: Typology and Spaces of Cave Temples",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7164",
+              "name": "ReBuilding Utopia: Visions of Architecture in the Post-War World",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7165",
+              "name": "Modern Architecture and the Visual Realm",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7166",
+              "name": "Research Seminar in Visual Cultures",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7167",
+              "name": "Topics in Modernism",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7173",
+              "name": "History of Modern Architecture",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ],
+              "conditionalRequirement": true
+            },
+            {
+              "code": "ARCH7175",
+              "name": "Architectural Studies Field Workshop",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7177",
+              "name": "Critical Readings in Modernism",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7179",
+              "name": "Architects and Politics: Exhibiting Politics",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7180",
+              "name": "Topics in Architectural History and Theory",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory",
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7183",
+              "name": "Topics in Architectural History, Theory and Criticism",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7184",
+              "name": "Beyond the Border: Early Modernist Chinese Architects in the South",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7269",
+              "name": "Architecture and the City",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ],
+              "conditionalRequirement": true
+            },
+            {
+              "code": "ARCH7380",
+              "name": "Republic of Excess: Korea and Contradiction",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7401",
+              "name": "Real Utopias",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7404",
+              "name": "Japan, Architecture, Myth: Unmasking Its Form and Content",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7406",
+              "name": "Architects and their Chairs",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7260",
+              "name": "Housing in Urban Development",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ],
+              "conditionalRequirement": true
+            },
+            {
+              "code": "ARCH7264",
+              "name": "Contemporary Urbanism",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ],
+              "conditionalRequirement": true
+            },
+            {
+              "code": "ARCH7266",
+              "name": "Globalization and Resistance in Architecture",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7268",
+              "name": "Urbanism Field Workshop",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7270",
+              "name": "The “Navel” of the Earth",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7271",
+              "name": "Composed Grounds",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7273",
+              "name": "Topics in Urban/Rural Studies",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7274",
+              "name": "Topics in Urban Studies",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7275",
+              "name": "A Visual Diary of Paris: Observe, Read, Collect, Draw, Record",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7276",
+              "name": "City Metamorphosis: Urban Residual Space",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7277",
+              "name": "Refugee Camp Design",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7278",
+              "name": "Open Building in Transition",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7282",
+              "name": "Urbanisation and Habitation",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7402",
+              "name": "Propositions for Planetary Living-II",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7265",
+              "name": "Inter Cities",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7332",
+              "name": "Building Construction and Practice",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ],
+              "conditionalRequirement": true
+            },
+            {
+              "code": "ARCH7355",
+              "name": "Designing Care in the Commons",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7356",
+              "name": "Nordic Latitudes",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7357",
+              "name": "Impossible Architecture",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7358",
+              "name": "Technology and Sustainability",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7360",
+              "name": "Building Structures and Systems",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7361",
+              "name": "Sustainable Building Systems",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7364",
+              "name": "Nonspace: Materials, Processes, and Constructions",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7365",
+              "name": "Design Research on Architecture and the Environment",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7375",
+              "name": "Design After Nature",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7376",
+              "name": "Inhabitable Territories",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7377",
+              "name": "Concrete Approximations",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7378",
+              "name": "Topics in Architectural Technologies",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7379",
+              "name": "Performative Envelopes",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7382",
+              "name": "Floating Marine Laboratory",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7384",
+              "name": "Deep Drawing",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7385",
+              "name": "Building in Common",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7403",
+              "name": "Material History",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7476",
+              "name": "Generative Design in Architecture",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7563",
+              "name": "Community Building Workshop",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability",
+                "practice-and-management"
+              ]
+            },
+            {
+              "code": "ARCH7460",
+              "name": "Computer Graphics for Architects",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7462",
+              "name": "Computer-Aided Architectural Design Methods (CAAD Methods)",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7466",
+              "name": "Parametric Structures",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7467",
+              "name": "Making Ways and Ways of Making",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7469",
+              "name": "Explorative Architecture Techniques",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7470",
+              "name": "Architecture By Nature",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7471",
+              "name": "Material Fabrications",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7472",
+              "name": "Topics in Advanced Technology",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7474",
+              "name": "Structural Research - Gridshells",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7475",
+              "name": "Visual Practices",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7477",
+              "name": "3D Printed Matter",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7478",
+              "name": "Bending Bamboo Rules",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7479",
+              "name": "Temporary Site-Specific Installation",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7480",
+              "name": "Transfer - Structural Transformations",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7481",
+              "name": "Prototyping Play",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7482",
+              "name": "Digital Media and Fabrication",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7405",
+              "name": "Research on Participatory Design in Architecture",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "practice-and-management"
+              ]
+            },
+            {
+              "code": "ARCH7560",
+              "name": "Aspects of Contract Management",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "practice-and-management"
+              ]
+            },
+            {
+              "code": "ARCH7561",
+              "name": "Principles and Practices of Building Codes",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "practice-and-management"
+              ]
+            },
+            {
+              "code": "ARCH7564",
+              "name": "Building Information Modelling in Architectural Practice",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "practice-and-management"
+              ]
+            },
+            {
+              "code": "ARCH7565",
+              "name": "Introduction to Building Information Modelling and Management",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "practice-and-management"
+              ]
+            },
+            {
+              "code": "ARCH7568",
+              "name": "Design Practice Field Workshop",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "practice-and-management"
+              ]
+            },
+            {
+              "code": "ARCH7569",
+              "name": "Materials, Services and Structure - A Comprehensive Study",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "practice-and-management"
+              ]
+            },
+            {
+              "code": "ARCH7570",
+              "name": "Project Management by Architect",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "practice-and-management"
+              ]
+            },
+            {
+              "code": "ARCH7571",
+              "name": "Practice and Management",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "practice-and-management"
+              ]
+            },
+            {
+              "code": "ARCH7573",
+              "name": "Architecture as Construction in Hong Kong",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "practice-and-management"
+              ],
+              "conditionalRequirement": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "programmeId": "HKU-TPG-002",
+      "status": "verified",
+      "creditsRequired": 144,
+      "creditUnit": "credits",
+      "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R84&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 120,
+          "coursesRequired": 12,
+          "ruleText": "Complete all 12 Core Courses for 120 credits. ARCH8084 Design 14 is the thesis-studio Capstone experience.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R84&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "ARCH7073",
+              "name": "Professional Practice I",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH7074",
+              "name": "Architecture and Its Discourses",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH7075",
+              "name": "Design and Technology of Sustainable Buildings",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH7076",
+              "name": "Advanced Structural Systems",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH7077",
+              "name": "Design and Construction Communication",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH7081",
+              "name": "Design 11",
+              "credits": 18,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH7082",
+              "name": "Design 12",
+              "credits": 18,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH7117",
+              "name": "The Count-Down Town: Hong Kong Architecture & Urbanism from the 1840s to the Present",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH8073",
+              "name": "Professional Practice II",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH8075",
+              "name": "Design Methods",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH8083",
+              "name": "Design 13",
+              "credits": 18,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH8084",
+              "name": "Design 14",
+              "credits": 18,
+              "appliesToTrackIds": [],
+              "courseKind": "project"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 24,
+          "coursesRequired": 4,
+          "ruleText": "Complete four 6-credit electives, normally no more than two from any one category. Prior-study gaps may require one or more of ARCH7094, ARCH7173, ARCH7330, ARCH7331 or ARCH7332, and ARCH7465 is required without an approved equivalent. Conditional gap courses, waivers and up to one approved Faculty elective require manual audit review and must not be added automatically to the 144-credit base total.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R84&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "ARCH7094",
+              "name": "Global Perspectives in Architectural History",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ],
+              "conditionalRequirement": true
+            },
+            {
+              "code": "ARCH7116",
+              "name": "Urban Acupuncture",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7118",
+              "name": "Buddhism, Architecture and Buddhist Architecture",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7119",
+              "name": "Politics of / Space / of Performance",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7124",
+              "name": "Utopian Architecture and the French Revolution",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7125",
+              "name": "History, Theory and Society",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7147",
+              "name": "Reflective Projections",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7160",
+              "name": "The Modern Movement and Beyond",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7161",
+              "name": "Vernacular Architecture of Asia",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7162",
+              "name": "Architecture and Memory",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7163",
+              "name": "Architectural Histories: Typology and Spaces of Cave Temples",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7164",
+              "name": "ReBuilding Utopia: Visions of Architecture in the Post-War World",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7165",
+              "name": "Modern Architecture and the Visual Realm",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7166",
+              "name": "Research Seminar in Visual Cultures",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7167",
+              "name": "Topics in Modernism",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7173",
+              "name": "History of Modern Architecture",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ],
+              "conditionalRequirement": true
+            },
+            {
+              "code": "ARCH7175",
+              "name": "Architectural Studies Field Workshop",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7177",
+              "name": "Critical Readings in Modernism",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7179",
+              "name": "Architects and Politics: Exhibiting Politics",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7180",
+              "name": "Topics in Architectural History and Theory",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory",
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7183",
+              "name": "Topics in Architectural History, Theory and Criticism",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7184",
+              "name": "Beyond the Border: Early Modernist Chinese Architects in the South",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7269",
+              "name": "Architecture and the City",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7380",
+              "name": "Republic of Excess: Korea and Contradiction",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7401",
+              "name": "Real Utopias",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7404",
+              "name": "Japan, Architecture, Myth: Unmasking Its Form and Content",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7406",
+              "name": "Architects and their Chairs",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7260",
+              "name": "Housing in Urban Development",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7264",
+              "name": "Contemporary Urbanism",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7266",
+              "name": "Globalization and Resistance in Architecture",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7268",
+              "name": "Urbanism Field Workshop",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7270",
+              "name": "The “Navel” of the Earth",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7271",
+              "name": "Composed Grounds",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7273",
+              "name": "Topics in Urban/Rural Studies",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7274",
+              "name": "Topics in Urban Studies",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7275",
+              "name": "A Visual Diary of Paris: Observe, Read, Collect, Draw, Record",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7276",
+              "name": "City Metamorphosis: Urban Residual Space",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7277",
+              "name": "Refugee Camp Design",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7278",
+              "name": "Open Building in Transition",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7279",
+              "name": "Matter, Density and Projection",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7280",
+              "name": "Territories of Spatial Rituals",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7282",
+              "name": "Urbanisation and Habitation",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7402",
+              "name": "Propositions for Planetary Living-II",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7265",
+              "name": "Inter Cities",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7330",
+              "name": "Principles of Building",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ],
+              "conditionalRequirement": true
+            },
+            {
+              "code": "ARCH7331",
+              "name": "Introduction to Building Structures",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ],
+              "conditionalRequirement": true
+            },
+            {
+              "code": "ARCH7332",
+              "name": "Building Construction and Practice",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ],
+              "conditionalRequirement": true
+            },
+            {
+              "code": "ARCH7355",
+              "name": "Designing Care in the Commons",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7356",
+              "name": "Nordic Latitudes",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7357",
+              "name": "Impossible Architecture",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7358",
+              "name": "Technology and Sustainability",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7360",
+              "name": "Building Structures and Systems",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7361",
+              "name": "Sustainable Building Systems",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7364",
+              "name": "Nonspace: Materials, Processes, and Constructions",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7365",
+              "name": "Design Research on Architecture and the Environment",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7375",
+              "name": "Design After Nature",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7376",
+              "name": "Inhabitable Territories",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7377",
+              "name": "Concrete Approximations",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7378",
+              "name": "Topics in Architectural Technologies",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7379",
+              "name": "Performative Envelopes",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7382",
+              "name": "Floating Marine Laboratory",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7384",
+              "name": "Deep Drawing",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7385",
+              "name": "Building in Common",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7403",
+              "name": "Material History",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7476",
+              "name": "Generative Design in Architecture",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7563",
+              "name": "Community Building Workshop",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability",
+                "practice-and-management"
+              ]
+            },
+            {
+              "code": "ARCH7460",
+              "name": "Computer Graphics for Architects",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7462",
+              "name": "Computer-Aided Architectural Design Methods (CAAD Methods)",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7465",
+              "name": "Digital Media and Methods",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ],
+              "conditionalRequirement": true
+            },
+            {
+              "code": "ARCH7466",
+              "name": "Parametric Structures",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7467",
+              "name": "Making Ways and Ways of Making",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7469",
+              "name": "Explorative Architecture Techniques",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7470",
+              "name": "Architecture By Nature",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7471",
+              "name": "Material Fabrications",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7472",
+              "name": "Topics in Advanced Technology",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7474",
+              "name": "Structural Research - Gridshells",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7475",
+              "name": "Visual Practices",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7477",
+              "name": "3D Printed Matter",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7478",
+              "name": "Bending Bamboo Rules",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7479",
+              "name": "Temporary Site-Specific Installation",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7480",
+              "name": "Transfer - Structural Transformations",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7481",
+              "name": "Prototyping Play",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7482",
+              "name": "Digital Media and Fabrication",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7405",
+              "name": "Research on Participatory Design in Architecture",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "practice-and-management"
+              ]
+            },
+            {
+              "code": "ARCH7560",
+              "name": "Aspects of Contract Management",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "practice-and-management"
+              ]
+            },
+            {
+              "code": "ARCH7561",
+              "name": "Principles and Practices of Building Codes",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "practice-and-management"
+              ]
+            },
+            {
+              "code": "ARCH7564",
+              "name": "Building Information Modelling in Architectural Practice",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "practice-and-management"
+              ]
+            },
+            {
+              "code": "ARCH7565",
+              "name": "Introduction to Building Information Modelling and Management",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "practice-and-management"
+              ]
+            },
+            {
+              "code": "ARCH7568",
+              "name": "Design Practice Field Workshop",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "practice-and-management"
+              ]
+            },
+            {
+              "code": "ARCH7569",
+              "name": "Materials, Services and Structure - A Comprehensive Study",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "practice-and-management"
+              ]
+            },
+            {
+              "code": "ARCH7570",
+              "name": "Project Management by Architect",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "practice-and-management"
+              ]
+            },
+            {
+              "code": "ARCH7571",
+              "name": "Practice and Management",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "practice-and-management"
+              ]
+            },
+            {
+              "code": "ARCH7573",
+              "name": "Architecture as Construction in Hong Kong",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "practice-and-management"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "programmeId": "HKU-TPG-003",
+      "status": "verified",
+      "creditsRequired": 144,
+      "creditUnit": "credits",
+      "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R399&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 120,
+          "coursesRequired": 12,
+          "ruleText": "Complete all 12 Core Courses for 120 credits. ARCH8084 Design 14 is the thesis-studio Capstone experience.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R399&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "ARCH7073",
+              "name": "Professional Practice I",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH7074",
+              "name": "Architecture and Its Discourses",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH7075",
+              "name": "Design and Technology of Sustainable Buildings",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH7076",
+              "name": "Advanced Structural Systems",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH7077",
+              "name": "Design and Construction Communication",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH7081",
+              "name": "Design 11",
+              "credits": 18,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH7082",
+              "name": "Design 12",
+              "credits": 18,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH7117",
+              "name": "The Count-Down Town: Hong Kong Architecture & Urbanism from the 1840s to the Present",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH8073",
+              "name": "Professional Practice II",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH8075",
+              "name": "Design Methods",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH8083",
+              "name": "Design 13",
+              "credits": 18,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ARCH8084",
+              "name": "Design 14",
+              "credits": 18,
+              "appliesToTrackIds": [],
+              "courseKind": "project"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 24,
+          "coursesRequired": 4,
+          "ruleText": "Complete four 6-credit electives, normally no more than two from any one category. Prior-study gaps may require one or more of ARCH7094, ARCH7173, ARCH7330, ARCH7331 or ARCH7332, and ARCH7465 is required without an approved equivalent. Conditional gap courses, waivers and up to one approved Faculty elective require manual audit review and must not be added automatically to the 144-credit base total.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R399&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "ARCH7094",
+              "name": "Global Perspectives in Architectural History",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ],
+              "conditionalRequirement": true
+            },
+            {
+              "code": "ARCH7116",
+              "name": "Urban Acupuncture",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7118",
+              "name": "Buddhism, Architecture and Buddhist Architecture",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7119",
+              "name": "Politics of / Space / of Performance",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7124",
+              "name": "Utopian Architecture and the French Revolution",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7125",
+              "name": "History, Theory and Society",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7147",
+              "name": "Reflective Projections",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7160",
+              "name": "The Modern Movement and Beyond",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7161",
+              "name": "Vernacular Architecture of Asia",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7162",
+              "name": "Architecture and Memory",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7163",
+              "name": "Architectural Histories: Typology and Spaces of Cave Temples",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7164",
+              "name": "ReBuilding Utopia: Visions of Architecture in the Post-War World",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7165",
+              "name": "Modern Architecture and the Visual Realm",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7166",
+              "name": "Research Seminar in Visual Cultures",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7167",
+              "name": "Topics in Modernism",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7173",
+              "name": "History of Modern Architecture",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ],
+              "conditionalRequirement": true
+            },
+            {
+              "code": "ARCH7175",
+              "name": "Architectural Studies Field Workshop",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7177",
+              "name": "Critical Readings in Modernism",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7179",
+              "name": "Architects and Politics: Exhibiting Politics",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7180",
+              "name": "Topics in Architectural History and Theory",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory",
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7183",
+              "name": "Topics in Architectural History, Theory and Criticism",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7184",
+              "name": "Beyond the Border: Early Modernist Chinese Architects in the South",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7269",
+              "name": "Architecture and the City",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7380",
+              "name": "Republic of Excess: Korea and Contradiction",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7401",
+              "name": "Real Utopias",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7404",
+              "name": "Japan, Architecture, Myth: Unmasking Its Form and Content",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7406",
+              "name": "Architects and their Chairs",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "ARCH7260",
+              "name": "Housing in Urban Development",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7264",
+              "name": "Contemporary Urbanism",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7266",
+              "name": "Globalization and Resistance in Architecture",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7268",
+              "name": "Urbanism Field Workshop",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7270",
+              "name": "The “Navel” of the Earth",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7271",
+              "name": "Composed Grounds",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7273",
+              "name": "Topics in Urban/Rural Studies",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7274",
+              "name": "Topics in Urban Studies",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7275",
+              "name": "A Visual Diary of Paris: Observe, Read, Collect, Draw, Record",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7276",
+              "name": "City Metamorphosis: Urban Residual Space",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7277",
+              "name": "Refugee Camp Design",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7278",
+              "name": "Open Building in Transition",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7279",
+              "name": "Matter, Density and Projection",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7280",
+              "name": "Territories of Spatial Rituals",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7282",
+              "name": "Urbanisation and Habitation",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7402",
+              "name": "Propositions for Planetary Living-II",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "urbanisation-and-habitation"
+              ]
+            },
+            {
+              "code": "ARCH7265",
+              "name": "Inter Cities",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7330",
+              "name": "Principles of Building",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ],
+              "conditionalRequirement": true
+            },
+            {
+              "code": "ARCH7331",
+              "name": "Introduction to Building Structures",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ],
+              "conditionalRequirement": true
+            },
+            {
+              "code": "ARCH7332",
+              "name": "Building Construction and Practice",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ],
+              "conditionalRequirement": true
+            },
+            {
+              "code": "ARCH7355",
+              "name": "Designing Care in the Commons",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7356",
+              "name": "Nordic Latitudes",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7357",
+              "name": "Impossible Architecture",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7358",
+              "name": "Technology and Sustainability",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7360",
+              "name": "Building Structures and Systems",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7361",
+              "name": "Sustainable Building Systems",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7364",
+              "name": "Nonspace: Materials, Processes, and Constructions",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7365",
+              "name": "Design Research on Architecture and the Environment",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7375",
+              "name": "Design After Nature",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7376",
+              "name": "Inhabitable Territories",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7377",
+              "name": "Concrete Approximations",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7378",
+              "name": "Topics in Architectural Technologies",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7379",
+              "name": "Performative Envelopes",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7382",
+              "name": "Floating Marine Laboratory",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7384",
+              "name": "Deep Drawing",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7385",
+              "name": "Building in Common",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7403",
+              "name": "Material History",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7476",
+              "name": "Generative Design in Architecture",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "ARCH7563",
+              "name": "Community Building Workshop",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability",
+                "practice-and-management"
+              ]
+            },
+            {
+              "code": "ARCH7460",
+              "name": "Computer Graphics for Architects",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7462",
+              "name": "Computer-Aided Architectural Design Methods (CAAD Methods)",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7465",
+              "name": "Digital Media and Methods",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ],
+              "conditionalRequirement": true
+            },
+            {
+              "code": "ARCH7466",
+              "name": "Parametric Structures",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7467",
+              "name": "Making Ways and Ways of Making",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7469",
+              "name": "Explorative Architecture Techniques",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7470",
+              "name": "Architecture By Nature",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7471",
+              "name": "Material Fabrications",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7472",
+              "name": "Topics in Advanced Technology",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7474",
+              "name": "Structural Research - Gridshells",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7475",
+              "name": "Visual Practices",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7477",
+              "name": "3D Printed Matter",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7478",
+              "name": "Bending Bamboo Rules",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7479",
+              "name": "Temporary Site-Specific Installation",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7480",
+              "name": "Transfer - Structural Transformations",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7481",
+              "name": "Prototyping Play",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7482",
+              "name": "Digital Media and Fabrication",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "ARCH7405",
+              "name": "Research on Participatory Design in Architecture",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "practice-and-management"
+              ]
+            },
+            {
+              "code": "ARCH7560",
+              "name": "Aspects of Contract Management",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "practice-and-management"
+              ]
+            },
+            {
+              "code": "ARCH7561",
+              "name": "Principles and Practices of Building Codes",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "practice-and-management"
+              ]
+            },
+            {
+              "code": "ARCH7564",
+              "name": "Building Information Modelling in Architectural Practice",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "practice-and-management"
+              ]
+            },
+            {
+              "code": "ARCH7565",
+              "name": "Introduction to Building Information Modelling and Management",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "practice-and-management"
+              ]
+            },
+            {
+              "code": "ARCH7568",
+              "name": "Design Practice Field Workshop",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "practice-and-management"
+              ]
+            },
+            {
+              "code": "ARCH7569",
+              "name": "Materials, Services and Structure - A Comprehensive Study",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "practice-and-management"
+              ]
+            },
+            {
+              "code": "ARCH7570",
+              "name": "Project Management by Architect",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "practice-and-management"
+              ]
+            },
+            {
+              "code": "ARCH7571",
+              "name": "Practice and Management",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "practice-and-management"
+              ]
+            },
+            {
+              "code": "ARCH7573",
+              "name": "Architecture as Construction in Hong Kong",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "practice-and-management"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "programmeId": "HKU-TPG-005",
+      "status": "verified",
+      "creditsRequired": 120,
+      "creditUnit": "credits",
+      "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R67&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "first-year-core-courses",
+          "name": "First Year Core Courses",
+          "type": "core",
+          "creditsRequired": 60,
+          "coursesRequired": 8,
+          "ruleText": "Complete all eight First Year Core Courses for 60 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R67&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "LAND7131",
+              "name": "MLA Design Studio I",
+              "credits": 12,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "LAND7132",
+              "name": "MLA Design Studio II",
+              "credits": 12,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "LAND7152",
+              "name": "Landscape Plants and Ecology I",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "LAND7151",
+              "name": "Landscape Technology I",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "LAND7255",
+              "name": "Landscape Plants and Ecology II",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "LAND7141",
+              "name": "Landscape History and Theory I",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "LAND7142",
+              "name": "Landscape History and Theory II",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "LAND7176",
+              "name": "Landscape Media",
+              "credits": 6,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "second-year-core-and-capstone",
+          "name": "Second Year Core and Capstone Courses",
+          "type": "core",
+          "creditsRequired": 42,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five listed Second Year courses for 42 credits. LAND7291 Thesis Prep and LAND7299 Landscape Thesis together form the Capstone experience.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R67&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "LAND7233",
+              "name": "MLA Design Studio III",
+              "credits": 12,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "LAND7291",
+              "name": "Thesis Prep",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "courseKind": "project"
+            },
+            {
+              "code": "LAND7299",
+              "name": "Landscape Thesis",
+              "credits": 12,
+              "appliesToTrackIds": [],
+              "courseKind": "project"
+            },
+            {
+              "code": "LAND7156",
+              "name": "Landscape Technology II",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "LAND7281",
+              "name": "Landscape Architecture Practice",
+              "credits": 6,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 18,
+          "coursesRequired": 3,
+          "ruleText": "Complete three 6-credit electives. No more than three may be chosen from any one of Categories I-IV and no more than two from Category V. Offering availability and approved Faculty electives require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R67&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "LAND7349",
+              "name": "Chinese Landscapes",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "LAND7348",
+              "name": "Case Studies in Contemporary Landscape Architecture",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "LAND7341",
+              "name": "Advanced Topics in Landscape Architecture History",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "LAND7342",
+              "name": "Advanced Topics in Landscape Architecture Theory",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "LAND7343",
+              "name": "Advanced Topics in Urbanism",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "LAND7344",
+              "name": "Research Seminar in Landscape Architectural History I",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "LAND7345",
+              "name": "Research Seminar in Landscape Architectural History II",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "LAND7346",
+              "name": "Reading Seminar in Landscape Architecture II",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "history-and-theory"
+              ]
+            },
+            {
+              "code": "LAND7359",
+              "name": "Components of Sustainable Landscape Design",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "LAND7305",
+              "name": "Horticulture and Design",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "LAND7389",
+              "name": "Landscape Practicum",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "LAND7306",
+              "name": "Urban Arboriculture",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "LAND7351",
+              "name": "Advanced Topics in Technology",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "LAND7307",
+              "name": "Advanced Topics in Sustainability",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "LAND7352",
+              "name": "Research Seminar in Landscape Technology",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "technology-and-sustainability"
+              ]
+            },
+            {
+              "code": "LAND7308",
+              "name": "Advanced Topics in Digital Media and Fabrication",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "LAND7309",
+              "name": "Research Seminar in Digital Media and Fabrication",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "digital-media-and-fabrication"
+              ]
+            },
+            {
+              "code": "LAND7381",
+              "name": "Advanced Topics in Landscape and Urban Research Methods",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "landscape-and-urban-research-methods"
+              ]
+            },
+            {
+              "code": "LAND7386",
+              "name": "Reading Topics in Landscape Architecture I",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "landscape-and-urban-research-methods"
+              ]
+            },
+            {
+              "code": "LAND7391",
+              "name": "Independent Study I",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "subjectGroups": [
+                "independent-studies"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

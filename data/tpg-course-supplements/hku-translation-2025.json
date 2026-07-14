@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "HKU-TPG-019",
+      "status": "verified",
+      "creditsRequired": 66,
+      "creditUnit": "credits",
+      "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R341&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official Regulations and Syllabuses apply to the 2024-25 and 2025-26 intakes and require 66 credits: three Core Courses, six Elective Courses and CHIN7996 Capstone Experience. The curriculum overview inside the PDF still says Module 2 contains 14 electives, but the same PDF has 19 current elective syllabuses and the official Programme Structure page explicitly says to choose six out of the same 19-course list. The 19-course official list is therefore retained, while the internal count conflict, Advanced Standing rules and three Capstone output formats remain marked for manual review.",
+      "courseGroups": [
+        {
+          "id": "module-1-core-courses",
+          "name": "Module 1: Core Courses",
+          "type": "core",
+          "creditsRequired": 18,
+          "coursesRequired": 3,
+          "ruleText": "Complete all three 6-credit Core Courses for 18 credits. CHIN7201 and CHIN7202 are Translation lecture courses; CHIN7203 combines interpreting lectures and workshops.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R341&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "CHIN7201",
+              "name": "Advanced Translation Studies",
+              "credits": 6,
+              "subjectGroups": [
+                "translation"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7202",
+              "name": "Approaches to Translation",
+              "credits": 6,
+              "subjectGroups": [
+                "translation"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7203",
+              "name": "Introduction to Interpreting",
+              "credits": 6,
+              "subjectGroups": [
+                "interpreting"
+              ],
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "module-2-elective-courses",
+          "name": "Module 2: Elective Courses",
+          "type": "elective",
+          "creditsRequired": 36,
+          "coursesRequired": 6,
+          "ruleText": "Choose six 6-credit electives from the current official 19-course pool for 36 credits. Seventeen are Translation lecture courses and CHIN7209/CHIN7210 are Interpreting workshop courses. The PDF overview retains an older 14-elective count while its detailed syllabuses and the current Programme Structure page both list 19, so the conflict requires manual review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://mat.chinese.hku.hk/en/general/programme_structure/",
+          "courses": [
+            {
+              "code": "CHIN7204",
+              "name": "Language Contrast for Translators",
+              "credits": 6,
+              "subjectGroups": [
+                "translation"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7205",
+              "name": "Culture and Translation",
+              "credits": 6,
+              "subjectGroups": [
+                "translation"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7206",
+              "name": "Translation of Government and Commercial Texts",
+              "credits": 6,
+              "subjectGroups": [
+                "translation"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7207",
+              "name": "Legal Translation",
+              "credits": 6,
+              "subjectGroups": [
+                "translation"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7208",
+              "name": "Mass Media Translation",
+              "credits": 6,
+              "subjectGroups": [
+                "translation"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7209",
+              "name": "English-Chinese Conference Interpreting (SI)",
+              "credits": 6,
+              "subjectGroups": [
+                "interpreting"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7210",
+              "name": "English-Cantonese Legal Interpreting",
+              "credits": 6,
+              "subjectGroups": [
+                "interpreting"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7212",
+              "name": "Translation of Music Writings and Lyrics",
+              "credits": 6,
+              "subjectGroups": [
+                "translation"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7213",
+              "name": "Financial Translation",
+              "credits": 6,
+              "subjectGroups": [
+                "translation"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7214",
+              "name": "Subtitling in Film, Television and Beyond",
+              "credits": 6,
+              "subjectGroups": [
+                "translation"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7215",
+              "name": "Translation of Social Science Writing",
+              "credits": 6,
+              "subjectGroups": [
+                "translation"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7216",
+              "name": "Literary Translation: Chinese to English",
+              "credits": 6,
+              "subjectGroups": [
+                "translation"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7217",
+              "name": "Literary Translation: English to Chinese",
+              "credits": 6,
+              "subjectGroups": [
+                "translation"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7218",
+              "name": "Translation Criticism (E-C & C-E)",
+              "credits": 6,
+              "subjectGroups": [
+                "translation"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7219",
+              "name": "AI-Assisted Translation of Case Law in Hong Kong",
+              "credits": 6,
+              "subjectGroups": [
+                "translation"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7220",
+              "name": "Functional Translation in the Digital Age",
+              "credits": 6,
+              "subjectGroups": [
+                "translation"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7221",
+              "name": "Theatre Translation",
+              "credits": 6,
+              "subjectGroups": [
+                "translation"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7222",
+              "name": "Translating Humour",
+              "credits": 6,
+              "subjectGroups": [
+                "translation"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CHIN7223",
+              "name": "Translation of Documents Relating to International Affairs",
+              "credits": 6,
+              "subjectGroups": [
+                "translation"
+              ],
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "module-3-capstone-experience",
+          "name": "Module 3: Capstone Experience",
+          "type": "project",
+          "creditsRequired": 12,
+          "coursesRequired": 1,
+          "ruleText": "Complete CHIN7996 for 12 credits. The official course permits a Translation project as either a long translation or a translation-studies paper, or an Interpreting project based on analysis of a recorded interpreted meeting. The format choice and supervision requirements require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R341&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "CHIN7996",
+              "name": "Capstone Experience: Translation / Interpreting Project",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            }
+          ]
+        }
+      ],
+      "additionalSources": [
+        "https://mat.chinese.hku.hk/en/general/programme_structure/",
+        "https://mat.chinese.hku.hk/en/general/coursework_requirement/",
+        "https://mat.chinese.hku.hk/",
+        "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-translation-arts"
+      ]
+    }
+  ]
+}

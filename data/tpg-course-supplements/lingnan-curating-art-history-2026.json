@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "LINGNAN",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "LINGNAN-TPG-DIR-20-000103-L6",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.ln.edu.hk/daci/macah/programme/curriculum",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Required Courses (12 credits).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/daci/macah/programme/curriculum",
+          "courses": [
+            { "code": "VIS501", "name": "Critical Perspectives in Art History", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "VIS502", "name": "Provenance Research", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "VIS503", "name": "Approaches of Curating", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "VIS505", "name": "Managing Art Collections", "credits": 3, "appliesToTrackIds": [] }
+          ]
+        },
+        {
+          "id": "programme-electives-and-capstone-options",
+          "name": "Programme Electives and Capstone Options",
+          "type": "elective",
+          "creditsRequired": 18,
+          "ruleText": "Complete 18 credits from the official Programme Elective structure: 6 to 18 credits of Special Topic Courses, 0 to 3 credits of Internship, and 0 to 9 credits from one mutually exclusive Capstone option (VIS510 Research Dissertation or VIS511 Curatorial Project). Students without a proven undergraduate art-history background must include one art-history elective. The variable-credit paths and background condition require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/daci/macah/programme/curriculum",
+          "courses": [
+            { "code": "VIS506", "name": "Learning in Museums", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "VIS507", "name": "Digital Technologies and the Museum Experience", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "VIS512", "name": "Special Topics in Curating and Art History", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "VIS514", "name": "Parallel Study of Euroamerican and Chinese Art Histories", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "VSP501", "name": "Creative and Media Industries: Concepts and History", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "VSP506", "name": "Architectural Heritage and Creative Industries", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "VIS508", "name": "Internship", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "VIS510", "name": "Research Dissertation", "credits": 9, "courseKind": "dissertation", "appliesToTrackIds": [] },
+            { "code": "VIS511", "name": "Curatorial Project", "credits": 9, "courseKind": "project", "appliesToTrackIds": [] }
+          ]
+        }
+      ]
+    }
+  ]
+}

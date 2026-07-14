@@ -288,8 +288,8 @@
           { "code": "25/000001/L6", "name": "Global Chinese Studies", "type": "Concentration", "sourceUrl": "https://www.ln.edu.hk/chi/machi/macgcs", "lastVerifiedAt": "2026-07-14" }
         ] },
         { "programmeCode": "08/000498/6", "name": "Master of Cultural Studies", "tracks": [
-          { "code": "22/001017/L6", "name": "Digital and Cultural Innovation", "type": "specialism" },
-          { "code": "25/001273/L6", "name": "Digital Media and Culture", "type": "specialism" }
+          { "code": "22/001017/L6", "name": "Digital and Cultural Innovation", "type": "Concentration", "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme" },
+          { "code": "25/001273/L6", "name": "Digital Media and Culture", "type": "Concentration", "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme" }
         ] },
         { "programmeCode": "08/000500/6", "name": "Master of Science in International Banking and Finance" },
         { "programmeCode": "08/000501/6", "name": "Master of Accountancy" },
@@ -334,7 +334,7 @@
         { "programmeCode": "23/000452/L6", "name": "Master of Science in Humanitarian Technology and Inclusive Business" },
         { "programmeCode": "23/000472/L6", "name": "Master of Housing Policy and Management" },
         { "programmeCode": "23/000864/L6", "name": "Master of Science in Environmental, Social, and Governance Management", "tracks": [
-          { "code": "24/000454/L6", "name": "Sustainable Technology", "type": "specialism" }
+          { "code": "24/000454/L6", "name": "Sustainable Technology", "type": "Concentration", "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum", "lastVerifiedAt": "2026-07-14" }
         ] },
         { "programmeCode": "24/000101/L6", "name": "Master of Science in Data Science" },
         { "programmeCode": "24/000108/L6", "name": "Master of Arts in Digital History in Global Asia" },

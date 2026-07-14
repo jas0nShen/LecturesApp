@@ -20,6 +20,10 @@ function inspectProgramme(programme, today = new Date()) {
         if (!(Number.isFinite(Number(value)) && Number(value) > 0)) issues.push(`${label}:${field}:invalid:${id}`);
       });
     });
+    Object.entries(item.typeByTrackIds || {}).forEach(([id, value]) => {
+      if (!trackIds.has(id)) issues.push(`${label}:typeByTrackIds:unknown-track:${id}`);
+      if (!(typeof value === 'string' && value.trim())) issues.push(`${label}:typeByTrackIds:invalid:${id}`);
+    });
   };
   if (programme.courseVerificationStatus === 'blocked') {
     return { programmeId: programme.id, universityCode: programme.universityCode, courseCount: courses.length, issues: ['source-blocked'] };
@@ -51,7 +55,8 @@ function inspectProgramme(programme, today = new Date()) {
   });
   const year = programme.academicYear || '';
   const startYear = Number(year.slice(0, 4));
-  if (startYear && startYear < today.getFullYear() - 1) issues.push('stale-academic-year');
+  const appliesThereafter = /\band thereafter\b/i.test(year);
+  if (startYear && !appliesThereafter && startYear < today.getFullYear() - 1) issues.push('stale-academic-year');
   if (programme.ruleReviewStatus === 'manual_review_required') issues.push('manual-rule-review');
   return { programmeId: programme.id, universityCode: programme.universityCode, courseCount: courses.length, issues: [...new Set(issues)] };
 }

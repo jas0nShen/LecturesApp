@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "LINGNAN",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "LINGNAN-TPG-DIR-08-000498-6",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme",
+      "ruleReviewStatus": "manual_review_required",
+      "trackSelectionOptional": true,
+      "tracks": [
+        {
+          "id": "LINGNAN-TPG-DIR-08-000498-6-22-001017-L6",
+          "name": "Digital and Cultural Innovation",
+          "type": "Concentration",
+          "academicYear": "2023-24 to 2025-26",
+          "sourceStatus": "archived",
+          "statusNote": "The official Programme page states that this Concentration ran from 2023-24 to 2025-26 and was revised to Digital Media and Culture from the 2026-27 intake.",
+          "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme"
+        },
+        {
+          "id": "LINGNAN-TPG-DIR-08-000498-6-25-001273-L6",
+          "name": "Digital Media and Culture",
+          "type": "Concentration",
+          "academicYear": "2026-27",
+          "sourceStatus": "verified",
+          "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme"
+        }
+      ],
+      "courseGroups": [
+        {
+          "id": "shared-core-courses",
+          "name": "Shared Core Courses",
+          "type": "core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete these three Core Courses in the mother Programme or either official Concentration.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme",
+          "courses": [
+            { "code": "CUS501", "name": "Perspectives in Cultural Studies", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "CUS503", "name": "Pedagogy and Cultural Studies", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "CUS505", "name": "Methods in Cultural Research", "credits": 3, "appliesToTrackIds": [] }
+          ]
+        },
+        {
+          "id": "mother-programme-additional-core-course",
+          "name": "Mother Programme Additional Core Course",
+          "type": "core",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "The mother Master of Cultural Studies completes CUS502 in addition to the three Shared Core Courses.",
+          "appliesToTrackIds": [],
+          "excludesTrackIds": [
+            "LINGNAN-TPG-DIR-08-000498-6-22-001017-L6",
+            "LINGNAN-TPG-DIR-08-000498-6-25-001273-L6"
+          ],
+          "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme",
+          "courses": [
+            { "code": "CUS502", "name": "Critical Thinking through Popular Culture", "credits": 3, "appliesToTrackIds": [] }
+          ]
+        },
+        {
+          "id": "mother-programme-elective-courses",
+          "name": "Mother Programme Elective Courses",
+          "type": "elective",
+          "creditsRequired": 12,
+          "ruleText": "Complete 12 elective credits by either taking four 3-credit courses or taking three 3-credit courses plus two 1.5-credit Special Topics enrolments. Not all Elective Courses are offered every year, and the repeated 1.5-credit path requires manual audit review.",
+          "appliesToTrackIds": [],
+          "excludesTrackIds": [
+            "LINGNAN-TPG-DIR-08-000498-6-22-001017-L6",
+            "LINGNAN-TPG-DIR-08-000498-6-25-001273-L6"
+          ],
+          "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme",
+          "courses": [
+            { "code": "CUS504", "name": "History in Cultural Studies", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "CUS506", "name": "Film and Television Culture", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "CUS507", "name": "Feminism and Cultural Politics", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "CUS508", "name": "Globalization and Contemporary Social Change", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "CUS509", "name": "Urban Culture of Hong Kong", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "CUS510", "name": "Workshop in Cultural Practices", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "CUS511", "name": "Topics in Cultural Institution and Policy", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "CUS512", "name": "Topics in Cultural Representation and Interpretation", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "CUS513", "name": "Research Seminar", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "CUS514", "name": "Independent Study", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "CUS515", "name": "Special Topics in Cultural Studies", "credits": 1.5, "appliesToTrackIds": [] },
+            { "code": "CUS580", "name": "Performance Studies: Genealogy and Challenges", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "CUS584", "name": "Performance Workshop with Artist", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "CUS585", "name": "Special Topics in Performance Studies", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "CUS586", "name": "Gender and Performance", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "CUS588", "name": "Drama, Theatre and Performance", "credits": 3, "appliesToTrackIds": [] }
+          ]
+        },
+        {
+          "id": "concentration-additional-core-courses",
+          "name": "Concentration Additional Core Courses",
+          "nameByTrackIds": {
+            "LINGNAN-TPG-DIR-08-000498-6-22-001017-L6": "Digital and Cultural Innovation Core Courses",
+            "LINGNAN-TPG-DIR-08-000498-6-25-001273-L6": "Digital Media and Culture Core Courses"
+          },
+          "type": "core",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete these five Concentration Core Courses in addition to the three Shared Core Courses. The Digital and Cultural Innovation titles apply only to its 2023-24 to 2025-26 intakes; Digital Media and Culture is the official title and course naming for 2026-27 and thereafter.",
+          "appliesToTrackIds": [
+            "LINGNAN-TPG-DIR-08-000498-6-22-001017-L6",
+            "LINGNAN-TPG-DIR-08-000498-6-25-001273-L6"
+          ],
+          "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme",
+          "courses": [
+            { "code": "CUS516", "name": "Digital Creativity", "credits": 3, "appliesToTrackIds": [] },
+            {
+              "code": "CUS517",
+              "name": "Digital Media and Creative Commons",
+              "nameByTrackIds": {
+                "LINGNAN-TPG-DIR-08-000498-6-22-001017-L6": "Culture/Creative Commons: Digital Technologies, Policies and Practices",
+                "LINGNAN-TPG-DIR-08-000498-6-25-001273-L6": "Digital Media and Creative Commons"
+              },
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CUS518",
+              "name": "Cultural Policy and New Media",
+              "nameByTrackIds": {
+                "LINGNAN-TPG-DIR-08-000498-6-22-001017-L6": "Cultural Policy and Community",
+                "LINGNAN-TPG-DIR-08-000498-6-25-001273-L6": "Cultural Policy and New Media"
+              },
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            { "code": "CUS519", "name": "Creating Urban Commons: Learning from International and Local Experiences", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "CUS525", "name": "The Cultural Politics of Labour: Digital Labour", "credits": 3, "appliesToTrackIds": [] }
+          ]
+        }
+      ]
+    }
+  ]
+}

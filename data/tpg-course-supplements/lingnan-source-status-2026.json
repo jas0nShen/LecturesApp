@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "schoolCode": "LINGNAN",
   "academicYear": "2026-27",
-  "verifiedAt": "2026-07-13",
+  "verifiedAt": "2026-07-14",
   "programmes": [
     {
       "programmeId": "LINGNAN-TPG-DIR-16-000107-L6",
@@ -63,6 +63,66 @@
       "status": "blocked",
       "sourceUrl": "https://www.ln.edu.hk/orm/ebscm/about-us/programme-overview",
       "statusNote": "The live official Programme Overview publishes all course codes and the six-Required plus four-Elective 30-credit rule, but it does not publish per-course credits. Credits are not inferred from the 10-course total, so the course structure remains unavailable pending an official current credit table."
+    },
+    {
+      "programmeId": "LINGNAN-TPG-DIR-25-001304-L6",
+      "status": "blocked",
+      "sourceUrl": "https://www.ln.edu.hk/sgs/ghit/programme-introduction/programme-structure",
+      "statusNote": "The live official Programme Structure publishes five Core Courses (18 credits), eight 3-credit Electives and a 6-credit Capstone Project, with every current course title and explicit credits, but it does not publish any course codes. The titles are not matched to codes from other Programmes, so the structure remains unavailable pending an official coded curriculum."
+    },
+    {
+      "programmeId": "LINGNAN-TPG-DIR-25-000634-L6",
+      "status": "blocked",
+      "sourceUrl": "https://www.ln.edu.hk/eng/mades",
+      "statusNote": "The live official Programme page publishes the 30-credit total and coded Required, Elective and Capstone course lists for the 2026-27 curriculum, but it does not publish per-course credits or the credit and course-count requirements for each group. Credits and group rules are not inferred from the Programme total, so the structure remains unavailable pending an official current credit table."
+    },
+    {
+      "programmeId": "LINGNAN-TPG-DIR-25-000348-L6",
+      "status": "blocked",
+      "sourceUrl": "https://www.ln.edu.hk/sds/dai/ads/peogramme-overview/curriculum",
+      "statusNote": "The live official curriculum publishes course titles and credits but no course codes. It also describes eight Required plus two Elective courses while the graduation text refers to eight Required plus three Electives and simultaneously states a ten-course, 45-credit total. Codes and a resolution to the conflicting course-count rules are not invented, so the structure remains unavailable pending a consistent official coded curriculum."
+    },
+    {
+      "programmeId": "LINGNAN-TPG-DIR-25-000304-L6",
+      "status": "blocked",
+      "sourceUrl": "https://www.ln.edu.hk/sds/dai/dais/programme-overview/curriculum",
+      "statusNote": "The live official Doctor of AI Studies curriculum publishes a 57-credit structure of four Core courses, four Application-driven courses, two Electives and a 27-credit Doctoral Thesis, but its text and official curriculum images publish course titles without any course codes. The current directory entry is also named Master of Artificial Intelligence Studies, which conflicts with the live official Doctor title. Codes and Programme identity are not inferred, so the structure remains unavailable pending an official coded curriculum and directory reconciliation."
+    },
+    {
+      "programmeId": "LINGNAN-TPG-DIR-23-000452-L6",
+      "status": "blocked",
+      "sourceUrl": "https://www.ln.edu.hk/sgs/programmes-on-offer",
+      "statusNote": "The Programme is absent from the live official 2026-27 Programmes-on-offer list. The official HTI course-description PDF at https://www.ln.edu.hk/sgs/f/page/114332/345754/HTI_TPG.pdf was last updated on 17 March 2023 and lists only HTI501-HTI505 for 21 credits, without a current complete graduation structure. The older partial course set is not carried forward to the current intake, so the Programme remains source-blocked pending current official confirmation."
+    },
+    {
+      "programmeId": "LINGNAN-TPG-DIR-24-000550-L6",
+      "status": "blocked",
+      "sourceUrl": "https://www.ln.edu.hk/sgs/programmes-on-offer/master-of-china-and-regional-development-studies",
+      "statusNote": "The live official 2026-27 offer page confirms the Programme and its three Concentrations, while the official CRS course-description PDF at https://www.ln.edu.hk/sgs/f/page/114332/345754/CRS_TPG.pdf lists CRS501-CRS517 as 3-credit courses. Neither source publishes the current Programme-wide and per-Concentration Core/Elective distribution or completion requirements. Track rules are not inferred from course titles, so the structure remains unavailable pending an official current curriculum table."
+    },
+    {
+      "programmeId": "LINGNAN-TPG-DIR-24-000812-L6",
+      "status": "blocked",
+      "sourceUrl": "https://www.ln.edu.hk/sgs/programmes-on-offer/master-of-science-in-human-resource-and-organisational-management",
+      "statusNote": "The live official 2026-27 offer page confirms the Programme and its Human Resource Analytics and Digital Transformation Concentration. The official HRM course-description PDF at https://www.ln.edu.hk/sgs/f/page/114332/345754/HRM_TPG.pdf was last updated on 18 October 2024 and lists only four 3-credit HRM541-HRM544 courses, without the mother Programme curriculum or a complete 30-credit Track structure. Missing courses and group rules are not invented, so the Programme remains source-blocked pending a complete current official curriculum."
+    },
+    {
+      "programmeId": "LINGNAN-TPG-DIR-25-000168-L6",
+      "status": "blocked",
+      "sourceUrl": "https://www.ln.edu.hk/sgs/programmes-on-offer",
+      "statusNote": "The directory Programme is absent from the live official 2026-27 Programmes-on-offer list, and the current official TPg Course Description index does not provide a valid MGT course-description PDF. No current coded curriculum or graduation structure can be verified, so the Programme remains source-blocked rather than carrying forward unconfirmed material."
+    },
+    {
+      "programmeId": "LINGNAN-TPG-DIR-25-000400-L6",
+      "status": "blocked",
+      "sourceUrl": "https://www.ln.edu.hk/sgs/programmes-on-offer",
+      "statusNote": "The directory Master of Business Studies is absent from the live official 2026-27 Programmes-on-offer list. The current official DBS course-description PDF describes the Doctor of Business Studies, including a 30-credit DBS715 Doctoral Thesis, and cannot be applied to this Master entry. Programme identity and course ownership are not inferred, so the entry remains source-blocked pending directory reconciliation and a matching official curriculum."
+    },
+    {
+      "programmeId": "LINGNAN-TPG-DIR-26-000261-L6",
+      "status": "blocked",
+      "sourceUrl": "https://www.ln.edu.hk/sgs/programmes-on-offer/doctor-of-smart-manufacturing",
+      "statusNote": "The live official 2026-27 Programmes-on-offer page identifies Doctor of Smart Manufacturing, while the maintained directory entry is Master of Smart Manufacturing. The live official Programme page and current directory therefore disagree on the award identity. No Doctor curriculum is reassigned to the Master entry, so the Programme remains source-blocked pending official directory reconciliation."
     }
   ]
 }

@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKU",
+  "academicYear": "2025-26 and thereafter",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "HKU-TPG-022",
+      "status": "verified",
+      "creditsRequired": 60,
+      "creditUnit": "credits",
+      "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R272&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "ruleReviewStatus": "verified",
+      "statusNote": "The official Syllabuses apply to the 2025-26 intake and thereafter and are versioned Jul 17, 2025. The 60-credit curriculum consists of four compulsory courses, three electives selected from the seven published elective courses, and the compulsory 12-credit Capstone Experience.",
+      "courseGroups": [
+        {
+          "id": "compulsory-courses",
+          "name": "Compulsory Courses",
+          "type": "core",
+          "creditsRequired": 30,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Compulsory Courses: two 6-credit courses and two 9-credit courses, for 30 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R272&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "ENGL7507",
+              "name": "Creative Foundations: Macro Structure and History",
+              "credits": 9,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ENGL7515",
+              "name": "Creative Writing Foundations: Poetry and Prose",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ENGL7516",
+              "name": "Creative Writing Foundations: Fiction and Nonfiction",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ENGL7517",
+              "name": "Creative Writing Workshop",
+              "credits": 9,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 18,
+          "coursesRequired": 3,
+          "ruleText": "Complete three 6-credit Elective Courses from the seven courses published in the official Syllabuses, for 18 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R272&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "ENGL7514",
+              "name": "Internship: The History of Practice",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ENGL7518",
+              "name": "Corporate Storytelling",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ENGL7519",
+              "name": "Building Characters Across Media",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ENGL7520",
+              "name": "(Re)framing Hong Kong",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ENGL7521",
+              "name": "Narrating Transnational Tales",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ENGL7522",
+              "name": "Writing Speculative Fiction",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ENGL7610",
+              "name": "Theatre and Performance",
+              "credits": 6,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "capstone-experience",
+          "name": "Capstone Experience",
+          "type": "project",
+          "creditsRequired": 12,
+          "coursesRequired": 1,
+          "ruleText": "Complete ENGL7993 Capstone Experience: Creative Dissertation and Showcase for 12 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R272&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "ENGL7993",
+              "name": "Capstone Experience: Creative Dissertation and Showcase",
+              "credits": 12,
+              "appliesToTrackIds": [],
+              "courseKind": "dissertation"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

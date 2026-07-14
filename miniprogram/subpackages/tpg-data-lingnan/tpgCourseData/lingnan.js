@@ -344,6 +344,256 @@ module.exports = [
     ]
   },
   {
+    "id": "LINGNAN-TPG-DIR-08-000498-6",
+    "courseGroups": [
+      {
+        "id": "shared-core-courses",
+        "name": "Shared Core Courses",
+        "type": "core",
+        "creditsRequired": 9,
+        "coursesRequired": 3,
+        "ruleText": "Complete these three Core Courses in the mother Programme or either official Concentration.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme",
+        "courses": [
+          {
+            "code": "CUS501",
+            "name": "Perspectives in Cultural Studies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme"
+          },
+          {
+            "code": "CUS503",
+            "name": "Pedagogy and Cultural Studies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme"
+          },
+          {
+            "code": "CUS505",
+            "name": "Methods in Cultural Research",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme"
+          }
+        ]
+      },
+      {
+        "id": "mother-programme-additional-core-course",
+        "name": "Mother Programme Additional Core Course",
+        "type": "core",
+        "creditsRequired": 3,
+        "coursesRequired": 1,
+        "ruleText": "The mother Master of Cultural Studies completes CUS502 in addition to the three Shared Core Courses.",
+        "appliesToTrackIds": [],
+        "excludesTrackIds": [
+          "LINGNAN-TPG-DIR-08-000498-6-22-001017-L6",
+          "LINGNAN-TPG-DIR-08-000498-6-25-001273-L6"
+        ],
+        "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme",
+        "courses": [
+          {
+            "code": "CUS502",
+            "name": "Critical Thinking through Popular Culture",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme"
+          }
+        ]
+      },
+      {
+        "id": "mother-programme-elective-courses",
+        "name": "Mother Programme Elective Courses",
+        "type": "elective",
+        "creditsRequired": 12,
+        "ruleText": "Complete 12 elective credits by either taking four 3-credit courses or taking three 3-credit courses plus two 1.5-credit Special Topics enrolments. Not all Elective Courses are offered every year, and the repeated 1.5-credit path requires manual audit review.",
+        "appliesToTrackIds": [],
+        "excludesTrackIds": [
+          "LINGNAN-TPG-DIR-08-000498-6-22-001017-L6",
+          "LINGNAN-TPG-DIR-08-000498-6-25-001273-L6"
+        ],
+        "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme",
+        "courses": [
+          {
+            "code": "CUS504",
+            "name": "History in Cultural Studies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme"
+          },
+          {
+            "code": "CUS506",
+            "name": "Film and Television Culture",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme"
+          },
+          {
+            "code": "CUS507",
+            "name": "Feminism and Cultural Politics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme"
+          },
+          {
+            "code": "CUS508",
+            "name": "Globalization and Contemporary Social Change",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme"
+          },
+          {
+            "code": "CUS509",
+            "name": "Urban Culture of Hong Kong",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme"
+          },
+          {
+            "code": "CUS510",
+            "name": "Workshop in Cultural Practices",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme"
+          },
+          {
+            "code": "CUS511",
+            "name": "Topics in Cultural Institution and Policy",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme"
+          },
+          {
+            "code": "CUS512",
+            "name": "Topics in Cultural Representation and Interpretation",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme"
+          },
+          {
+            "code": "CUS513",
+            "name": "Research Seminar",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme"
+          },
+          {
+            "code": "CUS514",
+            "name": "Independent Study",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme"
+          },
+          {
+            "code": "CUS515",
+            "name": "Special Topics in Cultural Studies",
+            "credits": 1.5,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme"
+          },
+          {
+            "code": "CUS580",
+            "name": "Performance Studies: Genealogy and Challenges",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme"
+          },
+          {
+            "code": "CUS584",
+            "name": "Performance Workshop with Artist",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme"
+          },
+          {
+            "code": "CUS585",
+            "name": "Special Topics in Performance Studies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme"
+          },
+          {
+            "code": "CUS586",
+            "name": "Gender and Performance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme"
+          },
+          {
+            "code": "CUS588",
+            "name": "Drama, Theatre and Performance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme"
+          }
+        ]
+      },
+      {
+        "id": "concentration-additional-core-courses",
+        "name": "Concentration Additional Core Courses",
+        "nameByTrackIds": {
+          "LINGNAN-TPG-DIR-08-000498-6-22-001017-L6": "Digital and Cultural Innovation Core Courses",
+          "LINGNAN-TPG-DIR-08-000498-6-25-001273-L6": "Digital Media and Culture Core Courses"
+        },
+        "type": "core",
+        "creditsRequired": 15,
+        "coursesRequired": 5,
+        "ruleText": "Complete these five Concentration Core Courses in addition to the three Shared Core Courses. The Digital and Cultural Innovation titles apply only to its 2023-24 to 2025-26 intakes; Digital Media and Culture is the official title and course naming for 2026-27 and thereafter.",
+        "appliesToTrackIds": [
+          "LINGNAN-TPG-DIR-08-000498-6-22-001017-L6",
+          "LINGNAN-TPG-DIR-08-000498-6-25-001273-L6"
+        ],
+        "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme",
+        "courses": [
+          {
+            "code": "CUS516",
+            "name": "Digital Creativity",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme"
+          },
+          {
+            "code": "CUS517",
+            "name": "Digital Media and Creative Commons",
+            "nameByTrackIds": {
+              "LINGNAN-TPG-DIR-08-000498-6-22-001017-L6": "Culture/Creative Commons: Digital Technologies, Policies and Practices",
+              "LINGNAN-TPG-DIR-08-000498-6-25-001273-L6": "Digital Media and Creative Commons"
+            },
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme"
+          },
+          {
+            "code": "CUS518",
+            "name": "Cultural Policy and New Media",
+            "nameByTrackIds": {
+              "LINGNAN-TPG-DIR-08-000498-6-22-001017-L6": "Cultural Policy and Community",
+              "LINGNAN-TPG-DIR-08-000498-6-25-001273-L6": "Cultural Policy and New Media"
+            },
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme"
+          },
+          {
+            "code": "CUS519",
+            "name": "Creating Urban Commons: Learning from International and Local Experiences",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme"
+          },
+          {
+            "code": "CUS525",
+            "name": "The Cultural Politics of Labour: Digital Labour",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "LINGNAN-TPG-DIR-08-000501-6",
     "courseGroups": [
       {
@@ -1992,6 +2242,127 @@ module.exports = [
     ]
   },
   {
+    "id": "LINGNAN-TPG-DIR-20-000103-L6",
+    "courseGroups": [
+      {
+        "id": "required-courses",
+        "name": "Required Courses",
+        "type": "core",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Complete all four Required Courses (12 credits).",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/daci/macah/programme/curriculum",
+        "courses": [
+          {
+            "code": "VIS501",
+            "name": "Critical Perspectives in Art History",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/daci/macah/programme/curriculum"
+          },
+          {
+            "code": "VIS502",
+            "name": "Provenance Research",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/daci/macah/programme/curriculum"
+          },
+          {
+            "code": "VIS503",
+            "name": "Approaches of Curating",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/daci/macah/programme/curriculum"
+          },
+          {
+            "code": "VIS505",
+            "name": "Managing Art Collections",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/daci/macah/programme/curriculum"
+          }
+        ]
+      },
+      {
+        "id": "programme-electives-and-capstone-options",
+        "name": "Programme Electives and Capstone Options",
+        "type": "elective",
+        "creditsRequired": 18,
+        "ruleText": "Complete 18 credits from the official Programme Elective structure: 6 to 18 credits of Special Topic Courses, 0 to 3 credits of Internship, and 0 to 9 credits from one mutually exclusive Capstone option (VIS510 Research Dissertation or VIS511 Curatorial Project). Students without a proven undergraduate art-history background must include one art-history elective. The variable-credit paths and background condition require manual audit review.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/daci/macah/programme/curriculum",
+        "courses": [
+          {
+            "code": "VIS506",
+            "name": "Learning in Museums",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/daci/macah/programme/curriculum"
+          },
+          {
+            "code": "VIS507",
+            "name": "Digital Technologies and the Museum Experience",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/daci/macah/programme/curriculum"
+          },
+          {
+            "code": "VIS512",
+            "name": "Special Topics in Curating and Art History",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/daci/macah/programme/curriculum"
+          },
+          {
+            "code": "VIS514",
+            "name": "Parallel Study of Euroamerican and Chinese Art Histories",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/daci/macah/programme/curriculum"
+          },
+          {
+            "code": "VSP501",
+            "name": "Creative and Media Industries: Concepts and History",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/daci/macah/programme/curriculum"
+          },
+          {
+            "code": "VSP506",
+            "name": "Architectural Heritage and Creative Industries",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/daci/macah/programme/curriculum"
+          },
+          {
+            "code": "VIS508",
+            "name": "Internship",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/daci/macah/programme/curriculum"
+          },
+          {
+            "code": "VIS510",
+            "name": "Research Dissertation",
+            "credits": 9,
+            "courseKind": "dissertation",
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/daci/macah/programme/curriculum"
+          },
+          {
+            "code": "VIS511",
+            "name": "Curatorial Project",
+            "credits": 9,
+            "courseKind": "project",
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/daci/macah/programme/curriculum"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "LINGNAN-TPG-DIR-20-000658-L6",
     "courseGroups": [
       {
@@ -2176,6 +2547,140 @@ module.exports = [
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://www.ln.edu.hk/sds/dai/mscaiba/programme-overview/curriculum"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LINGNAN-TPG-DIR-21-000086-L6",
+    "courseGroups": [
+      {
+        "id": "required-courses",
+        "name": "Required Courses",
+        "type": "core",
+        "creditsRequired": 15,
+        "coursesRequired": 5,
+        "ruleText": "Complete all five Required Courses (15 credits).",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/daci/macmi/course-details",
+        "courses": [
+          {
+            "code": "VSP501",
+            "name": "Creative and Media Industries: Concepts and Histories",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/daci/macmi/course-details"
+          },
+          {
+            "code": "VSP502",
+            "name": "Media Industries Research: Production, Practice, Policy",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/daci/macmi/course-details"
+          },
+          {
+            "code": "VSP503",
+            "name": "Media Ethics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/daci/macmi/course-details"
+          },
+          {
+            "code": "VSP504",
+            "name": "Creative and Media Industries in Hong Kong",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/daci/macmi/course-details"
+          },
+          {
+            "code": "VSP514",
+            "name": "Creative and Media Industries Proseminar: Voices from the Field",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/daci/macmi/course-details"
+          }
+        ]
+      },
+      {
+        "id": "programme-elective-or-capstone-path",
+        "name": "Programme Elective or Capstone Path",
+        "type": "elective",
+        "creditsRequired": 15,
+        "ruleText": "Complete either five 3-credit Programme Electives (15 credits), or three 3-credit Programme Electives plus the 6-credit VSP512 Capstone Project. The official page also labels the displayed pool 'Any 4 Courses'; because that label alone does not produce 15 credits without the Capstone, the two explicit 15-credit paths control and require manual audit review.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/daci/macmi/course-details",
+        "courses": [
+          {
+            "code": "VSP505",
+            "name": "Art and Technology",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/daci/macmi/course-details"
+          },
+          {
+            "code": "VSP506",
+            "name": "Architectural Heritage and Creative Industries",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/daci/macmi/course-details"
+          },
+          {
+            "code": "VSP508",
+            "name": "Mind, Creativity, and Imagination",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/daci/macmi/course-details"
+          },
+          {
+            "code": "VSP509",
+            "name": "Film Conservation and Digital Humanities",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/daci/macmi/course-details"
+          },
+          {
+            "code": "VSP510",
+            "name": "Creative Industries and Cultural Policies in East Asia",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/daci/macmi/course-details"
+          },
+          {
+            "code": "VSP511",
+            "name": "Special Topics in Media and Creative Industries",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/daci/macmi/course-details"
+          },
+          {
+            "code": "VSP512",
+            "name": "Capstone Project",
+            "credits": 6,
+            "courseKind": "project",
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/daci/macmi/course-details"
+          },
+          {
+            "code": "VSP513",
+            "name": "A.I. in Media and Creative Industries",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/daci/macmi/course-details"
+          },
+          {
+            "code": "VIS503",
+            "name": "Approaches to Curating",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/daci/macmi/course-details"
+          },
+          {
+            "code": "VIS507",
+            "name": "Digital Technologies and Museum Experience",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/daci/macmi/course-details"
           }
         ]
       }
@@ -2846,6 +3351,294 @@ module.exports = [
     ]
   },
   {
+    "id": "LINGNAN-TPG-DIR-23-000864-L6",
+    "courseGroups": [
+      {
+        "id": "shared-core-courses",
+        "name": "Shared Core Courses",
+        "type": "core",
+        "creditsRequired": 9,
+        "coursesRequired": 3,
+        "ruleText": "Complete all three shared Core Courses (9 credits) under both the mother Programme and the Sustainable Technology Concentration.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum",
+        "courses": [
+          {
+            "code": "ESG501",
+            "name": "The Economics of Environmental, Social, and Governance (ESG)",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum"
+          },
+          {
+            "code": "ESG502",
+            "name": "Sustainable Financial Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum"
+          },
+          {
+            "code": "ESG505",
+            "name": "ESG Management and Strategies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum"
+          }
+        ]
+      },
+      {
+        "id": "mother-programme-core-courses",
+        "name": "Mother Programme Core Courses",
+        "type": "core",
+        "creditsRequired": 6,
+        "coursesRequired": 2,
+        "ruleText": "The mother Programme completes both additional Core Courses (6 credits); this group does not apply to the Sustainable Technology Concentration.",
+        "appliesToTrackIds": [],
+        "excludesTrackIds": [
+          "LINGNAN-TPG-DIR-23-000864-L6-24-000454-L6"
+        ],
+        "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum",
+        "courses": [
+          {
+            "code": "ESG503",
+            "name": "ESG Accounting and Disclosure",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum"
+          },
+          {
+            "code": "ESG504",
+            "name": "Ethics, Law, and Policy for Environmental, Social, and Governance (ESG)",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum"
+          }
+        ]
+      },
+      {
+        "id": "mother-electives-and-sustainable-technology-core",
+        "name": "Mother Programme Electives / Sustainable Technology Core",
+        "type": "elective",
+        "typeByTrackIds": {
+          "LINGNAN-TPG-DIR-23-000864-L6-24-000454-L6": "core"
+        },
+        "creditsRequired": 15,
+        "coursesRequired": 5,
+        "creditsRequiredByTrackIds": {
+          "LINGNAN-TPG-DIR-23-000864-L6-24-000454-L6": 3
+        },
+        "coursesRequiredByTrackIds": {
+          "LINGNAN-TPG-DIR-23-000864-L6-24-000454-L6": 1
+        },
+        "ruleText": "The mother Programme chooses any five courses (15 credits) from this Elective pool. ESG522 is also a compulsory Core Course for the Sustainable Technology Concentration, so its group type and requirement resolve to Core / 3 credits / one course when that Concentration is selected; the other mother-Programme electives are hidden from that path.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum",
+        "courses": [
+          {
+            "code": "ESG511",
+            "name": "Sustainability in Hong Kong and Mainland China",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-23-000864-L6-24-000454-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum"
+          },
+          {
+            "code": "ESG512",
+            "name": "ESG Practices in Business",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-23-000864-L6-24-000454-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum"
+          },
+          {
+            "code": "ESG513",
+            "name": "ESG Investing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-23-000864-L6-24-000454-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum"
+          },
+          {
+            "code": "ESG514",
+            "name": "Green Innovation and Entrepreneurship",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-23-000864-L6-24-000454-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum"
+          },
+          {
+            "code": "ESG515",
+            "name": "ESG in Marketing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-23-000864-L6-24-000454-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum"
+          },
+          {
+            "code": "ESG516",
+            "name": "ESG and Big Data",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-23-000864-L6-24-000454-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum"
+          },
+          {
+            "code": "ESG517",
+            "name": "Sustainable Supply Chain Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-23-000864-L6-24-000454-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum"
+          },
+          {
+            "code": "ACT615",
+            "name": "Introduction to Python Programming",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-23-000864-L6-24-000454-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum"
+          },
+          {
+            "code": "ORM545",
+            "name": "Cloud-based Solutions for Digital Business Transformation",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-23-000864-L6-24-000454-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum"
+          },
+          {
+            "code": "ESG522",
+            "name": "Carbon Neutrality Strategies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "countsTowardTrackIds": [
+              "LINGNAN-TPG-DIR-23-000864-L6-24-000454-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum"
+          }
+        ]
+      },
+      {
+        "id": "sustainable-technology-additional-core-courses",
+        "name": "Sustainable Technology Additional Core Courses",
+        "type": "core",
+        "creditsRequired": 6,
+        "coursesRequired": 2,
+        "ruleText": "The Sustainable Technology Concentration completes both additional Core Courses (6 credits), alongside the shared Core Courses and ESG522.",
+        "appliesToTrackIds": [
+          "LINGNAN-TPG-DIR-23-000864-L6-24-000454-L6"
+        ],
+        "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum",
+        "courses": [
+          {
+            "code": "ESG521",
+            "name": "Conventional Energy and Renewable Energy",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "LINGNAN-TPG-DIR-23-000864-L6-24-000454-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum"
+          },
+          {
+            "code": "ESG523",
+            "name": "Clean Technology Innovation",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "LINGNAN-TPG-DIR-23-000864-L6-24-000454-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum"
+          }
+        ]
+      },
+      {
+        "id": "sustainable-technology-elective-courses",
+        "name": "Sustainable Technology Elective Courses",
+        "type": "elective",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Choose any four Sustainable Technology Elective Courses (12 credits), subject to student demand and faculty availability.",
+        "appliesToTrackIds": [
+          "LINGNAN-TPG-DIR-23-000864-L6-24-000454-L6"
+        ],
+        "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum",
+        "courses": [
+          {
+            "code": "ESG531",
+            "name": "Renewable Power Technologies",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "LINGNAN-TPG-DIR-23-000864-L6-24-000454-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum"
+          },
+          {
+            "code": "ESG532",
+            "name": "Energy Efficiency and Management",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "LINGNAN-TPG-DIR-23-000864-L6-24-000454-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum"
+          },
+          {
+            "code": "ESG533",
+            "name": "Green Logistics",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "LINGNAN-TPG-DIR-23-000864-L6-24-000454-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum"
+          },
+          {
+            "code": "ESG534",
+            "name": "Sustainable Power and Economic Assessment",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "LINGNAN-TPG-DIR-23-000864-L6-24-000454-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum"
+          },
+          {
+            "code": "ESG535",
+            "name": "Sustainable Urban Energy Planning",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "LINGNAN-TPG-DIR-23-000864-L6-24-000454-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum"
+          },
+          {
+            "code": "ESG536",
+            "name": "Green Finance and Investment",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "LINGNAN-TPG-DIR-23-000864-L6-24-000454-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "LINGNAN-TPG-DIR-24-000101-L6",
     "courseGroups": [
       {
@@ -3155,6 +3948,125 @@ module.exports = [
     ]
   },
   {
+    "id": "LINGNAN-TPG-DIR-24-000242-L6",
+    "courseGroups": [
+      {
+        "id": "core-courses",
+        "name": "Core Courses",
+        "type": "core",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Complete AIF501, AIF503 and AIF504, then choose exactly one of AIF502 or AIF603 as the fourth Core Course. The mutually exclusive fourth-course choice requires manual audit review.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/philoso/hkcrc/maaif/programme-information/course-details",
+        "courses": [
+          {
+            "code": "AIF501",
+            "name": "Contemporary Issues in AI",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/philoso/hkcrc/maaif/programme-information/course-details"
+          },
+          {
+            "code": "AIF503",
+            "name": "Ethics of AI",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/philoso/hkcrc/maaif/programme-information/course-details"
+          },
+          {
+            "code": "AIF504",
+            "name": "Minds & Machines",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/philoso/hkcrc/maaif/programme-information/course-details"
+          },
+          {
+            "code": "AIF502",
+            "name": "Introduction to Automated Reasoning",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/philoso/hkcrc/maaif/programme-information/course-details"
+          },
+          {
+            "code": "AIF603",
+            "name": "Sci-fi, AI, and Reality",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/philoso/hkcrc/maaif/programme-information/course-details"
+          }
+        ]
+      },
+      {
+        "id": "elective-courses",
+        "name": "Elective Courses",
+        "type": "elective",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Choose any four Elective Courses (12 credits) from the five-course official pool.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/philoso/hkcrc/maaif/programme-information/course-details",
+        "courses": [
+          {
+            "code": "AIF601",
+            "name": "Computability and Logic",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/philoso/hkcrc/maaif/programme-information/course-details"
+          },
+          {
+            "code": "AIF602",
+            "name": "AI and Risk",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/philoso/hkcrc/maaif/programme-information/course-details"
+          },
+          {
+            "code": "AIF604",
+            "name": "Policy, Business and Regulatory Issues in AI",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/philoso/hkcrc/maaif/programme-information/course-details"
+          },
+          {
+            "code": "AIF605",
+            "name": "Applications of AI in Science and Medicine",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/philoso/hkcrc/maaif/programme-information/course-details"
+          },
+          {
+            "code": "AIF606",
+            "name": "Anticipating AI Futures",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/philoso/hkcrc/maaif/programme-information/course-details"
+          }
+        ]
+      },
+      {
+        "id": "capstone-project",
+        "name": "Capstone Project",
+        "type": "project",
+        "creditsRequired": 6,
+        "coursesRequired": 1,
+        "ruleText": "Complete the 6-credit Capstone Project.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/philoso/hkcrc/maaif/programme-information/course-details",
+        "courses": [
+          {
+            "code": "AIF701",
+            "name": "Capstone Project",
+            "credits": 6,
+            "courseKind": "project",
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/philoso/hkcrc/maaif/programme-information/course-details"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "LINGNAN-TPG-DIR-24-000463-L6",
     "courseGroups": [
       {
@@ -3309,6 +4221,307 @@ module.exports = [
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://www.ln.edu.hk/dos/sea/prog-overview/prog-structure"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LINGNAN-TPG-DIR-24-000464-L6",
+    "courseGroups": [
+      {
+        "id": "core-courses",
+        "name": "Core Courses",
+        "type": "core",
+        "creditsRequired": 18,
+        "coursesRequired": 6,
+        "ruleText": "Complete all six Core Courses (18 credits).",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/CDT_TPG.pdf",
+        "courses": [
+          {
+            "code": "CDT501",
+            "name": "Computer Systems and Programming Basics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/CDT_TPG.pdf"
+          },
+          {
+            "code": "CDT502",
+            "name": "Principles of Data Analytics and Decision Making",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/CDT_TPG.pdf"
+          },
+          {
+            "code": "CDT503",
+            "name": "Control System and Artificial Intelligence Applications",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/CDT_TPG.pdf"
+          },
+          {
+            "code": "CDT504",
+            "name": "Product and Process Design and Implementation",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/CDT_TPG.pdf"
+          },
+          {
+            "code": "CDT505",
+            "name": "Project Management: Concepts and Tools",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/CDT_TPG.pdf"
+          },
+          {
+            "code": "CDT506",
+            "name": "Leadership and Interpersonal Skills for Technology Professionals",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/CDT_TPG.pdf"
+          }
+        ]
+      },
+      {
+        "id": "required-course-option",
+        "name": "Required Course Option",
+        "type": "required",
+        "creditsRequired": 3,
+        "coursesRequired": 1,
+        "ruleText": "Without a Specialism, choose either CDT507 or CDT508. With a Specialism, complete the one Required Course specified in the official Specialism table.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/wjysis/mct/programme-overview",
+        "courses": [
+          {
+            "code": "CDT507",
+            "name": "Master of Technology Field Trip",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000361-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000359-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000357-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000355-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000353-L6"
+            ],
+            "courseKind": "field_trip",
+            "sourceUrl": "https://www.ln.edu.hk/wjysis/mct/programme-overview"
+          },
+          {
+            "code": "CDT508",
+            "name": "Master of Technology Capstone Project",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000360-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000358-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000356-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000354-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000352-L6"
+            ],
+            "courseKind": "project",
+            "sourceUrl": "https://www.ln.edu.hk/wjysis/mct/programme-overview"
+          }
+        ]
+      },
+      {
+        "id": "elective-courses",
+        "name": "Elective Courses",
+        "type": "elective",
+        "creditsRequired": 9,
+        "coursesRequired": 3,
+        "ruleText": "Without a Specialism, choose three Elective Courses (9 credits) from the full Programme pool. With a Specialism, choose three courses from that Specialism's four-course official elective pool.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/wjysis/mct/programme-overview",
+        "courses": [
+          {
+            "code": "CDT511",
+            "name": "Material, Processing Technology and Equipment",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000352-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000354-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000355-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000356-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000357-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000358-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000359-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/wjysis/mct/programme-overview"
+          },
+          {
+            "code": "CDT512",
+            "name": "Automobile Construction",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000352-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000353-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000354-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000355-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000356-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000357-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000358-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000359-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/wjysis/mct/programme-overview"
+          },
+          {
+            "code": "CDT513",
+            "name": "Modern Electronic Business",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000352-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000354-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000355-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000356-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000360-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000361-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/wjysis/mct/programme-overview"
+          },
+          {
+            "code": "CDT514",
+            "name": "Supply Chain Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000352-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000354-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000355-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000357-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000358-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000360-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000361-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/wjysis/mct/programme-overview"
+          },
+          {
+            "code": "CDT515",
+            "name": "New Media and Video",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000353-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000354-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000355-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000356-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000357-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000359-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000360-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000361-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/wjysis/mct/programme-overview"
+          },
+          {
+            "code": "CDT516",
+            "name": "SAAS and Smart Manufacturing System Design",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000352-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000355-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000358-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000359-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000361-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/wjysis/mct/programme-overview"
+          },
+          {
+            "code": "CDT517",
+            "name": "Establish Business Mindset for Technology Professionals",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000352-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000353-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000356-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000357-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000360-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/wjysis/mct/programme-overview"
+          },
+          {
+            "code": "CDT518",
+            "name": "Economics and Financial Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000353-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000356-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000358-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000360-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000361-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/wjysis/mct/programme-overview"
+          },
+          {
+            "code": "CDT519",
+            "name": "Data-driven Critical and Analytical Thinking",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000353-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000354-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000355-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000356-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000358-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000359-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000360-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000361-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/wjysis/mct/programme-overview"
+          },
+          {
+            "code": "ESG521",
+            "name": "Conventional Energy and Renewable Energy",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000352-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000353-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000354-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000357-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000358-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000359-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000361-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/wjysis/mct/programme-overview"
+          },
+          {
+            "code": "ESG535",
+            "name": "Sustainable Urban Energy Planning",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000352-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000353-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000354-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000357-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000358-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000359-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000360-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/wjysis/mct/programme-overview"
+          },
+          {
+            "code": "ESG536",
+            "name": "Green Finance and Investment",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000353-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000355-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000356-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000357-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000359-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000360-L6",
+              "LINGNAN-TPG-DIR-24-000464-L6-25-000361-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/wjysis/mct/programme-overview"
           }
         ]
       }

@@ -53,7 +53,7 @@ function audit({ ugCatalogue = ug, tpgCatalogue = tpg } = {}) {
         (item) => !/^\d{4}-\d{2}$/.test(item.academicYear || '')
       ).map((item) => item.code),
       invalidProgrammeAcademicYearIds: tpgCatalogue.programmes.filter(
-        (item) => item.academicYear && !/^\d{4}-\d{2}$/.test(item.academicYear)
+        (item) => item.academicYear && !/^\d{4}-\d{2}(?: and thereafter)?$/.test(item.academicYear)
       ).map((item) => item.id),
       invalidTrackProgrammeIds: tracks.filter(
         (track) => !tpgCatalogue.programmes.some((programme) => programme.id === track.programmeId)

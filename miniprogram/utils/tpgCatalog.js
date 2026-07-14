@@ -102,7 +102,14 @@ module.exports = {
       "creditsRequired": 204,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R344&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "The detailed course table totals 168 Core credits plus 36 Elective credits, matching the 204-credit Programme total. The syllabus overview separately states 156 Core credits; this internal official-source conflict requires manual review.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 105
     },
     {
       "id": "HKU-TPG-002",
@@ -113,7 +120,14 @@ module.exports = {
       "creditsRequired": 144,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R84&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 105
     },
     {
       "id": "HKU-TPG-003",
@@ -124,7 +138,14 @@ module.exports = {
       "creditsRequired": 144,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R399&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 105
     },
     {
       "id": "HKU-TPG-004",
@@ -135,7 +156,14 @@ module.exports = {
       "creditsRequired": 69,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R404&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 26
     },
     {
       "id": "HKU-TPG-005",
@@ -143,10 +171,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Landscape Architecture (MLA)",
       "faculty": "FACULTY OF ARCHITECTURE",
-      "creditsRequired": 60,
+      "creditsRequired": 120,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R67&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 33
     },
     {
       "id": "HKU-TPG-006",
@@ -157,7 +192,14 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2024-25",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R393&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified",
+      "courseCount": 15
     },
     {
       "id": "HKU-TPG-007",
@@ -168,7 +210,14 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2022-23",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R54&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 11
     },
     {
       "id": "HKU-TPG-008",
@@ -179,7 +228,14 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2022-23",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R54&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 11
     },
     {
       "id": "HKU-TPG-009",
@@ -190,7 +246,14 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R378&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 10
     },
     {
       "id": "HKU-TPG-010",
@@ -198,10 +261,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science in Digital Management of Built Assets (MSc(DMBA))",
       "faculty": "FACULTY OF ARCHITECTURE",
-      "creditsRequired": 60,
+      "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2024-25",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R374&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 12
     },
     {
       "id": "HKU-TPG-011",
@@ -212,7 +282,14 @@ module.exports = {
       "creditsRequired": 69,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R83&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "The current MAAL curriculum page publishes 14 elective courses. The official regulations PDF also lists MAAL6017 Phonology and MAAL6036 Sociocultural dimensions of SLA, which are absent from the current curriculum page. The current web list is used here; the two-source elective-pool difference and the alternative capstone paths require manual review.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 21
     },
     {
       "id": "HKU-TPG-012",
@@ -223,7 +300,14 @@ module.exports = {
       "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2024-25 and thereafter",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R300&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "The official regulations apply to 2024-25 and thereafter. Students complete eight 6-credit elective courses selected from the four published categories plus the 12-credit CHIN7995 Capstone Experience. The cross-category eight-course selection and cycle-dependent course offering require manual audit review.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 24
     },
     {
       "id": "HKU-TPG-013",
@@ -234,7 +318,14 @@ module.exports = {
       "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://english.hku.hk/Postgraduate/MACC/MACC_2026-27_Full-time",
+      "courseStatusNote": "The official 2026-27 Programme page publishes the complete 60-credit structure and notes that not all listed electives will be offered every year.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified",
+      "courseCount": 23
     },
     {
       "id": "HKU-TPG-014",
@@ -242,10 +333,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Arts in the field of East Asian Studies (MA)",
       "faculty": "FACULTY OF ARTS",
-      "creditsRequired": 30,
+      "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.maeas.hku.hk/curriculumstructure",
+      "courseStatusNote": "The official curriculum totals 60 credits, correcting the older 30-credit directory value. Students take two East Asian Studies electives plus one additional elective from the East Asian Studies, European Studies or Global Studies lists, and choose one of two 12-credit Capstone courses. These nested and alternative rules require manual audit review. The official admissions page lists September 2026 as the expected start date.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 26
     },
     {
       "id": "HKU-TPG-015",
@@ -256,7 +354,14 @@ module.exports = {
       "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://english.hku.hk/Postgraduate/MAES/2026-27_Full-Time",
+      "courseStatusNote": "The current 2026-27 Programme page publishes ten seminar-course offerings for reference, five in Linguistics and five in Literature. The linked official 2025-26 Syllabuses PDF contains a broader catalogue, including courses absent from the current web offering table; the current web list is used here. A transcript specialisation requires at least three seminar courses and the Capstone completed in the same area, which requires manual audit review.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 14
     },
     {
       "id": "HKU-TPG-016",
@@ -264,10 +369,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Arts in the field of European Studies (MA)",
       "faculty": "FACULTY OF ARTS",
-      "creditsRequired": 30,
+      "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2026-27 and thereafter",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R422&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "The official 2026-27 Regulations and Syllabuses establish a 60-credit curriculum, correcting the older 30-credit directory value. The Regulations PDF and official Courses page identify Area Studies: Europe as GLAS7002; the Curriculum Structure webpage currently labels it GLAS7003, so the PDF code is used and the source discrepancy is retained for manual review. Students take at least 12 elective credits from European Studies and choose one of two 12-credit Capstone courses.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 26
     },
     {
       "id": "HKU-TPG-017",
@@ -278,7 +390,14 @@ module.exports = {
       "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2026-27 and thereafter",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R420&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "The official 2026-27 Regulations and Syllabuses require two Core Courses, six Elective Courses and HKGS7991 Capstone Experience for 60 credits. The elective pool contains ten MAHKCS courses and three cross-listed CHIN courses; no more than two cross-listed electives (12 credits) may count. HKGS7991 permits either an academic paper or a media project with analysis, so the cross-listed maximum and Capstone format require manual audit review.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 16
     },
     {
       "id": "HKU-TPG-018",
@@ -289,7 +408,29 @@ module.exports = {
       "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2025-26 and thereafter",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R302&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "The official 2025-26 Regulations and Syllabuses establish a 60-credit curriculum with optional Literary and Cultural Studies and Film and Media Studies Streams. A Stream is shown on the transcript only after at least three courses and the Capstone are completed in that Stream. The current official Programme course table adds CLIT7032 Reading the City: Mapping, Narrative, and Urban Space as an Elective; it is included as 6 credits under the Programme's published 6-credit elective structure. The Programme Stream guidance mentions CLIT7025, but no current course row or syllabus entry was found, so CLIT7025 is not included. The mutually exclusive Capstone paths, Stream recognition, and optional extra experiential-course limits require manual audit review.",
+      "tracks": [
+        {
+          "id": "HKU-TPG-018-LITERARY-CULTURAL-STUDIES",
+          "name": "Literary and Cultural Studies",
+          "type": "Stream",
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R302&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+        },
+        {
+          "id": "HKU-TPG-018-FILM-MEDIA-STUDIES",
+          "name": "Film and Media Studies",
+          "type": "Stream",
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R302&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+        }
+      ],
+      "trackSelectionOptional": true,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 31
     },
     {
       "id": "HKU-TPG-019",
@@ -300,7 +441,14 @@ module.exports = {
       "creditsRequired": 66,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R341&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "The official Regulations and Syllabuses apply to the 2024-25 and 2025-26 intakes and require 66 credits: three Core Courses, six Elective Courses and CHIN7996 Capstone Experience. The curriculum overview inside the PDF still says Module 2 contains 14 electives, but the same PDF has 19 current elective syllabuses and the official Programme Structure page explicitly says to choose six out of the same 19-course list. The 19-course official list is therefore retained, while the internal count conflict, Advanced Standing rules and three Capstone output formats remain marked for manual review.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 23
     },
     {
       "id": "HKU-TPG-020",
@@ -311,7 +459,14 @@ module.exports = {
       "creditsRequired": 63,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2023-24 and thereafter",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R337&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "The official Regulations apply to the 2022-23 intake and thereafter, while the detailed Syllabuses and course table apply to the 2023-24 intake and thereafter and are versioned Apr 16, 2025. The 63-credit curriculum requires all three 9-credit Core Courses, four 6-credit Elective Courses and BSTC8998 Capstone Experience. The official PDF also permits approved electives from the Master of Social Sciences (Counselling) programme without publishing a fixed code list, permits Advanced Standing for at most one equivalent Core Course, and offers four Capstone formats. Those variable approval-dependent paths remain marked for manual review and no unlisted course is invented.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 16
     },
     {
       "id": "HKU-TPG-021",
@@ -322,7 +477,14 @@ module.exports = {
       "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2025-26 and thereafter",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R273&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "The official Syllabuses apply to the 2025-26 intake and thereafter and are versioned Jul 18, 2025. The 60-credit curriculum requires both 9-credit Foundation Courses, five 6-credit Elective Courses and one 12-credit Capstone Experience. The Capstone is either BSTC8999 Dissertation or one of 33 subject-specific paths comprising an additional 6-credit elective plus a 6-credit portfolio. Annual offering, prerequisites, the one-Foundation-course Advanced Standing limit and the mutually exclusive Capstone paths require manual review.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 82
     },
     {
       "id": "HKU-TPG-022",
@@ -333,7 +495,14 @@ module.exports = {
       "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2025-26 and thereafter",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R272&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "The official Syllabuses apply to the 2025-26 intake and thereafter and are versioned Jul 17, 2025. The 60-credit curriculum consists of four compulsory courses, three electives selected from the seven published elective courses, and the compulsory 12-credit Capstone Experience.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified",
+      "courseCount": 12
     },
     {
       "id": "HKU-TPG-023",
@@ -341,10 +510,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Dental Surgery in Endodontics (MDS(Endo))",
       "faculty": "FACULTY OF DENTISTRY",
-      "creditsRequired": 72,
+      "creditsRequired": 270,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2023-24 and thereafter",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R293&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "The current official R293 Syllabuses state that all curriculum components are compulsory and publish a 270-credit total: 21 Faculty Core, 72 Discipline Specific, 99 Clinical, 63 Research and 15 Clinical Portfolio credits. This corrects the 72-credit directory value, which matches only the Discipline Specific subtotal. The Regulations apply to the 2023-24 intake and thereafter; the Syllabuses are dated Jan 13, 2023. The total-source conflict should remain visible for manual review.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 34
     },
     {
       "id": "HKU-TPG-024",
@@ -440,10 +616,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science in Engineering (Building Services Engineering) (MSc(Eng)(BSE))",
       "faculty": "FACULTY OF ENGINEERING",
-      "creditsRequired": 30,
+      "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 24
     },
     {
       "id": "HKU-TPG-033",
@@ -451,10 +634,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science in Engineering (Civil Engineering) Environmental Engineering Stream (MSc(Eng)(CivE))",
       "faculty": "FACULTY OF ENGINEERING",
-      "creditsRequired": 30,
+      "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 59
     },
     {
       "id": "HKU-TPG-034",
@@ -462,10 +652,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science in Engineering (Civil Engineering) General Stream (MSc(Eng)(CivE))",
       "faculty": "FACULTY OF ENGINEERING",
-      "creditsRequired": 30,
+      "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 59
     },
     {
       "id": "HKU-TPG-035",
@@ -473,10 +670,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science in Engineering (Civil Engineering) Geotechnical Engineering Stream (MSc(Eng)(CivE))",
       "faculty": "FACULTY OF ENGINEERING",
-      "creditsRequired": 30,
+      "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 59
     },
     {
       "id": "HKU-TPG-036",
@@ -484,10 +688,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science in Engineering (Civil Engineering) Structural Engineering Stream (MSc(Eng)(CivE))",
       "faculty": "FACULTY OF ENGINEERING",
-      "creditsRequired": 30,
+      "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 59
     },
     {
       "id": "HKU-TPG-037",
@@ -495,10 +706,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science in Engineering (Electrical and Electronic Engineering) - Communications Engineering Stream (MSc(Eng)(EEE))",
       "faculty": "FACULTY OF ENGINEERING",
-      "creditsRequired": 30,
+      "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 16
     },
     {
       "id": "HKU-TPG-038",
@@ -506,10 +724,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science in Engineering (Electrical and Electronic Engineering) - General Stream (MSc(Eng)(EEE))",
       "faculty": "FACULTY OF ENGINEERING",
-      "creditsRequired": 30,
+      "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 65
     },
     {
       "id": "HKU-TPG-039",
@@ -517,10 +742,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Science in Engineering (Electrical and Electronic Engineering) - Power Engineering Stream (MSc(Eng)(EEE))",
       "faculty": "FACULTY OF ENGINEERING",
-      "creditsRequired": 30,
+      "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://engg.hku.hk/Portals/0/MSc%28Eng%29_Syl_2025-26_20250812_v3_approved_1.pdf",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 25
     },
     {
       "id": "HKU-TPG-040",
@@ -619,6 +851,13 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.mscai.hku.hk/curriculum/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified",
       "courseCount": 22
     },
     {
@@ -707,6 +946,13 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://mdasc.cds.hku.hk/programme/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
       "courseCount": 31
     },
     {
@@ -718,7 +964,14 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 51
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://master.cds.hku.hk/msccs/msc-in-computer-science-cyber-security-stream/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 55
     },
     {
       "id": "HKU-TPG-058",
@@ -729,7 +982,14 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 51
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://master.cds.hku.hk/msccs/msc-in-computer-science-stream-financial-computing/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 55
     },
     {
       "id": "HKU-TPG-059",
@@ -740,7 +1000,14 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 51
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://master.cds.hku.hk/msccs/msc-in-computer-science-stream-general-stream/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 55
     },
     {
       "id": "HKU-TPG-060",
@@ -751,7 +1018,14 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 51
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://master.cds.hku.hk/msccs/msc-in-computer-science-multimedia-computing-stream/",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 55
     },
     {
       "id": "HKU-TPG-061",
@@ -762,7 +1036,14 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://engg.hku.hk/Portals/0/TPG/MSc(ECIC)_Syl_2024-25_20241112.pdf",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 34
     },
     {
       "id": "HKU-TPG-062",
@@ -773,7 +1054,14 @@ module.exports = {
       "creditsRequired": 66,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R424&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 21
     },
     {
       "id": "CUHK-TPG-001",
@@ -7778,7 +8066,7 @@ module.exports = {
       "name": "Master of Cultural Studies",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 24,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -7788,23 +8076,35 @@ module.exports = {
       "tracks": [
         {
           "id": "LINGNAN-TPG-DIR-08-000498-6-22-001017-L6",
-          "code": "22/001017/L6",
           "name": "Digital and Cultural Innovation",
-          "type": "specialism",
-          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "type": "Concentration",
+          "academicYear": "2023-24 to 2025-26",
+          "sourceStatus": "archived",
+          "statusNote": "The official Programme page states that this Concentration ran from 2023-24 to 2025-26 and was revised to Digital Media and Culture from the 2026-27 intake.",
+          "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme",
+          "code": "22/001017/L6",
           "lastVerifiedAt": "2026-07-11"
         },
         {
           "id": "LINGNAN-TPG-DIR-08-000498-6-25-001273-L6",
-          "code": "25/001273/L6",
           "name": "Digital Media and Culture",
-          "type": "specialism",
-          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "type": "Concentration",
+          "academicYear": "2026-27",
+          "sourceStatus": "verified",
+          "sourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme",
+          "code": "25/001273/L6",
           "lastVerifiedAt": "2026-07-11"
         }
       ],
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/cultural/programmes/mcs/programme",
+      "courseStatusNote": "",
+      "trackSelectionOptional": true,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 25
     },
     {
       "id": "LINGNAN-TPG-DIR-08-000500-6",
@@ -7893,7 +8193,7 @@ module.exports = {
       "tracks": [],
       "dataLevel": "programme",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-13",
+      "courseVerifiedAt": "2026-07-14",
       "courseSourceUrl": "https://www.ln.edu.hk/orm/ebscm/about-us/programme-overview",
       "courseStatusNote": "The live official Programme Overview publishes all course codes and the six-Required plus four-Elective 30-credit rule, but it does not publish per-course credits. Credits are not inferred from the 10-course total, so the course structure remains unavailable pending an official current credit table.",
       "courseCount": 0
@@ -7915,7 +8215,7 @@ module.exports = {
       "tracks": [],
       "dataLevel": "programme",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-13",
+      "courseVerifiedAt": "2026-07-14",
       "courseSourceUrl": "https://www.ln.edu.hk/fin/mfin/programme/master-of-science-in-finance",
       "courseStatusNote": "The live official curriculum identifies seven Core Courses (all required) and an Elective pool from which any three are selected, but it does not publish per-course credits. Credits are not inferred from the 10-course completion pattern, so the course structure remains unavailable pending an official current credit table.",
       "courseCount": 0
@@ -8109,7 +8409,7 @@ module.exports = {
       "tracks": [],
       "dataLevel": "programme",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-13",
+      "courseVerifiedAt": "2026-07-14",
       "courseSourceUrl": "https://www.ln.edu.hk/sgs/mhsm/programme/programme-structure",
       "courseStatusNote": "The live official Programme Structure publishes six 3-credit Core Courses, any two 3-credit Electives and a 6-credit Capstone Project, with every current course title, but it does not publish any course codes. The titles are not converted into invented codes, so the course structure remains unavailable pending an official coded curriculum.",
       "courseCount": 0
@@ -8179,7 +8479,7 @@ module.exports = {
       "name": "Master of Arts in Curating and Art History",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -8187,8 +8487,14 @@ module.exports = {
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/daci/macah/programme/curriculum",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 13
     },
     {
       "id": "LINGNAN-TPG-DIR-20-000373-L6",
@@ -8206,6 +8512,10 @@ module.exports = {
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscbie/curriculum",
+      "courseStatusNote": "The live official Curriculum publishes course titles but no course codes. It also labels seven Core Courses as 21 credits while assigning the Capstone Project 6 credits and each of the other six Core Courses 3 credits, which totals 24 credits. The official AY2026/27 Factsheet at https://www.ln.edu.hk/fb/tpo/f/page/107047/352747/Factsheet202627-MScBIE%20(20251014).pdf instead assigns the Capstone Project 3 credits and the seven Core Courses 21 credits. Codes and credits are not inferred across these conflicting official sources, so the structure remains unavailable pending a corrected coded curriculum.",
       "courseCount": 0
     },
     {
@@ -8239,7 +8549,7 @@ module.exports = {
       "name": "Master of Arts in Creative and Media Industries",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -8247,8 +8557,14 @@ module.exports = {
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/daci/macmi/course-details",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 15
     },
     {
       "id": "LINGNAN-TPG-DIR-21-001281-L6",
@@ -8267,7 +8583,7 @@ module.exports = {
       "tracks": [],
       "dataLevel": "programme",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-13",
+      "courseVerifiedAt": "2026-07-14",
       "courseSourceUrl": "https://www.ln.edu.hk/sgs/ham/programme/programme-structure",
       "courseStatusNote": "The live official Programme Structure publishes a 21-credit Core group, one 3-credit Elective and a 6-credit Capstone Project, with every current course title, but it does not publish any course codes. The titles are not converted into invented codes, so the course structure remains unavailable pending an official coded curriculum.",
       "courseCount": 0
@@ -8408,7 +8724,7 @@ module.exports = {
       ],
       "dataLevel": "programme",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-13",
+      "courseVerifiedAt": "2026-07-14",
       "courseSourceUrl": "https://www.ln.edu.hk/sgs/achm/programme-overview/programme-structure",
       "courseStatusNote": "The live official Programme Structure publishes coded curricula for the dual-degree path without a Concentration and for the Heritage Tourism and Management Concentration, but the current directory also identifies a Cultural Management and Digital Future Track whose course structure is not published on the Programme site. The missing Track path is not inferred, so the Programme remains unavailable pending a complete official Track table.",
       "courseCount": 0
@@ -8429,6 +8745,10 @@ module.exports = {
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscatb/curriculum",
+      "courseStatusNote": "The live official Curriculum publishes seven 3-credit Core Courses and an Elective pool from which any three 3-credit courses are selected, but it does not publish any course codes. Course codes are not inferred by matching titles from other Programmes, so the structure remains unavailable pending an official coded curriculum.",
       "courseCount": 0
     },
     {
@@ -8447,6 +8767,10 @@ module.exports = {
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/sgs/programmes-on-offer",
+      "courseStatusNote": "The Programme is absent from the live official 2026-27 Programmes-on-offer list. The official HTI course-description PDF at https://www.ln.edu.hk/sgs/f/page/114332/345754/HTI_TPG.pdf was last updated on 17 March 2023 and lists only HTI501-HTI505 for 21 credits, without a current complete graduation structure. The older partial course set is not carried forward to the current intake, so the Programme remains source-blocked pending current official confirmation.",
       "courseCount": 0
     },
     {
@@ -8480,7 +8804,7 @@ module.exports = {
       "name": "Master of Science in Environmental, Social, and Governance Management",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -8492,13 +8816,20 @@ module.exports = {
           "id": "LINGNAN-TPG-DIR-23-000864-L6-24-000454-L6",
           "code": "24/000454/L6",
           "name": "Sustainable Technology",
-          "type": "specialism",
-          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
-          "lastVerifiedAt": "2026-07-11"
+          "type": "Concentration",
+          "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum",
+          "lastVerifiedAt": "2026-07-14"
         }
       ],
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscesgm/curriculum",
+      "courseStatusNote": "",
+      "trackSelectionOptional": true,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified",
+      "courseCount": 23
     },
     {
       "id": "LINGNAN-TPG-DIR-24-000101-L6",
@@ -8555,7 +8886,7 @@ module.exports = {
       "name": "Master of Arts in Artificial Intelligence and the Future",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -8563,8 +8894,14 @@ module.exports = {
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/philoso/hkcrc/maaif/programme-information/course-details",
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 11
     },
     {
       "id": "LINGNAN-TPG-DIR-24-000463-L6",
@@ -8597,7 +8934,7 @@ module.exports = {
       "name": "Master of Science in Cross-disciplinary Technologies+",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -8686,8 +9023,15 @@ module.exports = {
           "lastVerifiedAt": "2026-07-11"
         }
       ],
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/wjysis/mct/programme-overview",
+      "courseStatusNote": "",
+      "trackSelectionOptional": true,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 20
     },
     {
       "id": "LINGNAN-TPG-DIR-24-000550-L6",
@@ -8730,6 +9074,10 @@ module.exports = {
         }
       ],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/sgs/programmes-on-offer/master-of-china-and-regional-development-studies",
+      "courseStatusNote": "The live official 2026-27 offer page confirms the Programme and its three Concentrations, while the official CRS course-description PDF at https://www.ln.edu.hk/sgs/f/page/114332/345754/CRS_TPG.pdf lists CRS501-CRS517 as 3-credit courses. Neither source publishes the current Programme-wide and per-Concentration Core/Elective distribution or completion requirements. Track rules are not inferred from course titles, so the structure remains unavailable pending an official current curriculum table.",
       "courseCount": 0
     },
     {
@@ -8757,6 +9105,10 @@ module.exports = {
         }
       ],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/sgs/programmes-on-offer/master-of-science-in-human-resource-and-organisational-management",
+      "courseStatusNote": "The live official 2026-27 offer page confirms the Programme and its Human Resource Analytics and Digital Transformation Concentration. The official HRM course-description PDF at https://www.ln.edu.hk/sgs/f/page/114332/345754/HRM_TPG.pdf was last updated on 18 October 2024 and lists only four 3-credit HRM541-HRM544 courses, without the mother Programme curriculum or a complete 30-credit Track structure. Missing courses and group rules are not invented, so the Programme remains source-blocked pending a complete current official curriculum.",
       "courseCount": 0
     },
     {
@@ -8776,7 +9128,7 @@ module.exports = {
       "tracks": [],
       "dataLevel": "programme",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-13",
+      "courseVerifiedAt": "2026-07-14",
       "courseSourceUrl": "https://www.ln.edu.hk/orm/mscriaa/programme-curriculum",
       "courseStatusNote": "The live official Programme Curriculum publishes five 3-credit Core Courses and an Elective pool from which any five 3-credit courses are selected, but it does not publish any course codes. The titles are not converted into invented codes, so the course structure remains unavailable pending an official coded curriculum.",
       "courseCount": 0
@@ -8797,6 +9149,10 @@ module.exports = {
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/sgs/programmes-on-offer",
+      "courseStatusNote": "The directory Programme is absent from the live official 2026-27 Programmes-on-offer list, and the current official TPg Course Description index does not provide a valid MGT course-description PDF. No current coded curriculum or graduation structure can be verified, so the Programme remains source-blocked rather than carrying forward unconfirmed material.",
       "courseCount": 0
     },
     {
@@ -8816,7 +9172,7 @@ module.exports = {
       "tracks": [],
       "dataLevel": "programme",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-13",
+      "courseVerifiedAt": "2026-07-14",
       "courseSourceUrl": "https://www.ln.edu.hk/sds/dids/ida/programme-overview/curriculum",
       "courseStatusNote": "The live official AY2026/27 curriculum and course-description pages publish a 30-credit structure of five 3-credit Required Courses and any five 3-credit Electives, with every current course title, but neither page publishes course codes. The titles are not matched to codes from other Programmes, so the course structure remains unavailable pending an official coded curriculum.",
       "courseCount": 0
@@ -8846,6 +9202,10 @@ module.exports = {
         }
       ],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/sds/dai/dais/programme-overview/curriculum",
+      "courseStatusNote": "The live official Doctor of AI Studies curriculum publishes a 57-credit structure of four Core courses, four Application-driven courses, two Electives and a 27-credit Doctoral Thesis, but its text and official curriculum images publish course titles without any course codes. The current directory entry is also named Master of Artificial Intelligence Studies, which conflicts with the live official Doctor title. Codes and Programme identity are not inferred, so the structure remains unavailable pending an official coded curriculum and directory reconciliation.",
       "courseCount": 0
     },
     {
@@ -8864,6 +9224,10 @@ module.exports = {
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/sds/dai/ads/peogramme-overview/curriculum",
+      "courseStatusNote": "The live official curriculum publishes course titles and credits but no course codes. It also describes eight Required plus two Elective courses while the graduation text refers to eight Required plus three Electives and simultaneously states a ten-course, 45-credit total. Codes and a resolution to the conflicting course-count rules are not invented, so the structure remains unavailable pending a consistent official coded curriculum.",
       "courseCount": 0
     },
     {
@@ -8883,7 +9247,7 @@ module.exports = {
       "tracks": [],
       "dataLevel": "programme",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-13",
+      "courseVerifiedAt": "2026-07-14",
       "courseSourceUrl": "https://www.ln.edu.hk/sds/dids/scta/programme-overview/curriculum",
       "courseStatusNote": "The live official AY2026/27 curriculum and course-description pages publish a 30-credit structure of seven 3-credit Required Courses and any three 3-credit Electives, with every current course title, but neither page publishes course codes. The titles are not matched to codes from other Programmes, so the course structure remains unavailable pending an official coded curriculum.",
       "courseCount": 0
@@ -8904,6 +9268,10 @@ module.exports = {
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/sgs/programmes-on-offer",
+      "courseStatusNote": "The directory Master of Business Studies is absent from the live official 2026-27 Programmes-on-offer list. The current official DBS course-description PDF describes the Doctor of Business Studies, including a 30-credit DBS715 Doctoral Thesis, and cannot be applied to this Master entry. Programme identity and course ownership are not inferred, so the entry remains source-blocked pending directory reconciliation and a matching official curriculum.",
       "courseCount": 0
     },
     {
@@ -8922,6 +9290,10 @@ module.exports = {
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/eng/mades",
+      "courseStatusNote": "The live official Programme page publishes the 30-credit total and coded Required, Elective and Capstone course lists for the 2026-27 curriculum, but it does not publish per-course credits or the credit and course-count requirements for each group. Credits and group rules are not inferred from the Programme total, so the structure remains unavailable pending an official current credit table.",
       "courseCount": 0
     },
     {
@@ -8966,7 +9338,7 @@ module.exports = {
       ],
       "dataLevel": "programme",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-13",
+      "courseVerifiedAt": "2026-07-14",
       "courseSourceUrl": "https://www.ln.edu.hk/wjysis/mls/programme-overview/programme-structure",
       "courseStatusNote": "The live official Programme Structure publishes the 30-credit mother Programme, three Concentrations and coded course tables, but the Applied Arts in TechMedia table requires three Concentration Courses while listing only LSC541 and LSC542. The missing third course is not invented, so the Programme remains unavailable pending a complete official Track table.",
       "courseCount": 0
@@ -8987,6 +9359,10 @@ module.exports = {
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/sgs/ghit/programme-introduction/programme-structure",
+      "courseStatusNote": "The live official Programme Structure publishes five Core Courses (18 credits), eight 3-credit Electives and a 6-credit Capstone Project, with every current course title and explicit credits, but it does not publish any course codes. The titles are not matched to codes from other Programmes, so the structure remains unavailable pending an official coded curriculum.",
       "courseCount": 0
     },
     {
@@ -9029,6 +9405,10 @@ module.exports = {
       "directorySupplement": true,
       "tracks": [],
       "dataLevel": "programme",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/sgs/programmes-on-offer/doctor-of-smart-manufacturing",
+      "courseStatusNote": "The live official 2026-27 Programmes-on-offer page identifies Doctor of Smart Manufacturing, while the maintained directory entry is Master of Smart Manufacturing. The live official Programme page and current directory therefore disagree on the award identity. No Doctor curriculum is reassigned to the Master entry, so the Programme remains source-blocked pending official directory reconciliation.",
       "courseCount": 0
     },
     {
@@ -9048,7 +9428,7 @@ module.exports = {
       "tracks": [],
       "dataLevel": "programme",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-13",
+      "courseVerifiedAt": "2026-07-14",
       "courseSourceUrl": "https://www.ln.edu.hk/sgs/sag/programme-overview",
       "courseStatusNote": "The live official Programme page states a nine-course, 30-credit structure and lists the LU and HKMU course titles, but it does not publish any course codes. The titles are not converted into invented codes, so the course structure remains unavailable pending an official coded curriculum.",
       "courseCount": 0

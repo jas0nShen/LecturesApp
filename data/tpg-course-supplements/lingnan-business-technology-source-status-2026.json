@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "LINGNAN",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "LINGNAN-TPG-DIR-20-000373-L6",
+      "status": "blocked",
+      "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscbie/curriculum",
+      "statusNote": "The live official Curriculum publishes course titles but no course codes. It also labels seven Core Courses as 21 credits while assigning the Capstone Project 6 credits and each of the other six Core Courses 3 credits, which totals 24 credits. The official AY2026/27 Factsheet at https://www.ln.edu.hk/fb/tpo/f/page/107047/352747/Factsheet202627-MScBIE%20(20251014).pdf instead assigns the Capstone Project 3 credits and the seven Core Courses 21 credits. Codes and credits are not inferred across these conflicting official sources, so the structure remains unavailable pending a corrected coded curriculum."
+    },
+    {
+      "programmeId": "LINGNAN-TPG-DIR-23-000221-L6",
+      "status": "blocked",
+      "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscatb/curriculum",
+      "statusNote": "The live official Curriculum publishes seven 3-credit Core Courses and an Elective pool from which any three 3-credit courses are selected, but it does not publish any course codes. Course codes are not inferred by matching titles from other Programmes, so the structure remains unavailable pending an official coded curriculum."
+    }
+  ]
+}

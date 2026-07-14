@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKU",
+  "academicYear": "2024-25",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "HKU-TPG-006",
+      "status": "verified",
+      "creditsRequired": 72,
+      "creditUnit": "credits",
+      "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R393&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "ruleReviewStatus": "verified",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 54,
+          "coursesRequired": 6,
+          "ruleText": "Complete all six Core Courses for 54 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R393&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "MAAD6101",
+              "name": "Design Research Studio I",
+              "credits": 12,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAAD6102",
+              "name": "Design Research Studio II",
+              "credits": 12,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAAD6103",
+              "name": "Design Research Studio III - Capstone Experience",
+              "credits": 12,
+              "appliesToTrackIds": [],
+              "courseKind": "project"
+            },
+            {
+              "code": "MAAD6201",
+              "name": "Research-based Design: Case Studies",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAAD6202",
+              "name": "Topics in Fabrication: Techniques and Technologies",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAAD6203",
+              "name": "Topics in Contemporary Sustainability",
+              "credits": 6,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 18,
+          "coursesRequired": 3,
+          "ruleText": "Complete three elective courses for 18 credits from the official list. Not all electives are offered every year and selection requires Programme Director approval.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R393&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "MAAD6301",
+              "name": "Fabrication Techniques I (Traditional)",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAAD6302",
+              "name": "New Materials",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAAD6303",
+              "name": "Experiments in Making",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAAD6304",
+              "name": "New Technologies in Design (AR/VR/AI)",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAAD6305",
+              "name": "Fabrication Techniques II (Robotic and Digital)",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAAD6306",
+              "name": "Sustainable Construction",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAAD6307",
+              "name": "Topics in Urbanization",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAAD6308",
+              "name": "Creative Practice 1",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAAD6309",
+              "name": "Creative Practice 2",
+              "credits": 6,
+              "appliesToTrackIds": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "programmeId": "HKU-TPG-010",
+      "status": "verified",
+      "creditsRequired": 72,
+      "creditUnit": "credits",
+      "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R374&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 60,
+          "coursesRequired": 10,
+          "ruleText": "Complete all ten Core Courses for 60 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R374&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "RECO7601",
+              "name": "Innovation and Processes",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "RECO7615",
+              "name": "International Construction Procurement",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "RECO7603",
+              "name": "Management Theory and Collaborative Project Management",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "RECO7616",
+              "name": "BIM Execution Planning",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "RECO7605",
+              "name": "Information Management",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "RECO7609",
+              "name": "Technologies and Innovation",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "RECO7610",
+              "name": "Virtual Facilities Management",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "RECO7617",
+              "name": "Capstone: Understanding Digital Management of Built Assets",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "courseKind": "project"
+            },
+            {
+              "code": "RECO7613",
+              "name": "Information Technology in Design and Construction",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "RECO7618",
+              "name": "Built Assets of the Metaverse: Gaming and VDC",
+              "credits": 6,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 12,
+          "coursesRequired": 2,
+          "ruleText": "Complete two 6-credit electives from MSc(DMBA) or other designated MSc programmes, subject to Programme Director approval. The syllabus names RECO7607 and RECO7608; additional designated courses are announced at the beginning of the year and require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R374&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "RECO7607",
+              "name": "Understanding Industry Practice",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "RECO7608",
+              "name": "Future Industry Directions",
+              "credits": 6,
+              "appliesToTrackIds": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "HKU-TPG-062",
+      "status": "verified",
+      "creditsRequired": 66,
+      "creditUnit": "credits",
+      "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R424&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "compulsory-courses",
+          "name": "Compulsory Courses",
+          "type": "core",
+          "creditsRequired": 36,
+          "coursesRequired": 6,
+          "ruleText": "Complete all six compulsory courses for 36 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R424&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "MGAP7001",
+              "name": "Public Governance and Policy Implementation: Comparative Perspective",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MGAP7002",
+              "name": "Economics Lessons from Turning Points and Crises",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MGAP7003",
+              "name": "Trust, Governance and Leadership",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MGAP7004",
+              "name": "Chinese Leadership and Governance",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MGAP7005",
+              "name": "Geoeconomics in a Multipolar World",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MGAP7006",
+              "name": "Political Ethics in China and the World: Ancient and Modern Perspectives on Public Policy",
+              "credits": 6,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 18,
+          "coursesRequired": 3,
+          "ruleText": "Complete at least three elective courses for 18 credits, including at least one course from Method and Data Analysis. The sub-group minimum requires manual audit review. Not all listed courses are necessarily offered every academic year.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R424&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "ECON6095",
+              "name": "Programme Evaluation for Policy Makers",
+              "credits": 6,
+              "subjectGroups": [
+                "method-and-data-analysis"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MPOP7004",
+              "name": "Methods for Policy Evaluation",
+              "credits": 6,
+              "subjectGroups": [
+                "method-and-data-analysis"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MGAP7101",
+              "name": "Policy Analysis and Microeconomic Theory",
+              "credits": 6,
+              "subjectGroups": [
+                "method-and-data-analysis"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CGRM7105",
+              "name": "Climate Change Law",
+              "credits": 6,
+              "subjectGroups": [
+                "climate-change"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "CGRM7106",
+              "name": "Sustainable Urban Planning and Green Building",
+              "credits": 6,
+              "subjectGroups": [
+                "climate-change"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "SOCI8028",
+              "name": "Cultural Policies and Global Cities",
+              "credits": 6,
+              "subjectGroups": [
+                "social-and-cultural-policy"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "SOWK6217",
+              "name": "Current Social Welfare Policy Issues",
+              "credits": 6,
+              "subjectGroups": [
+                "social-and-cultural-policy"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MGAP7102",
+              "name": "The Aging Mind: Neuroscience-informed Policy for Cognitive and Mental Health",
+              "credits": 6,
+              "subjectGroups": [
+                "social-and-cultural-policy"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "ECON6010",
+              "name": "Monetary Policy: Theory and Practice",
+              "credits": 6,
+              "subjectGroups": [
+                "monetary-policy"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MGAP7103",
+              "name": "Economic Policy and the World Economy",
+              "credits": 6,
+              "subjectGroups": [
+                "monetary-policy"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MGAP7104",
+              "name": "Introduction to Geopolitics, AI and Technology",
+              "credits": 6,
+              "subjectGroups": [
+                "artificial-intelligence"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MGAP7105",
+              "name": "International Political Economy: Global Collaboration and Leadership in a Rapidly Changing World Order",
+              "credits": 6,
+              "subjectGroups": [
+                "global-governance"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MGAP7106",
+              "name": "Global Macro Policy and Governance",
+              "credits": 6,
+              "subjectGroups": [
+                "global-governance"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MGAP7201",
+              "name": "Experiential Learning in Asia and the World",
+              "credits": 6,
+              "subjectGroups": [
+                "field-trip"
+              ],
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "capstone-project",
+          "name": "Capstone Project",
+          "type": "project",
+          "creditsRequired": 12,
+          "coursesRequired": 1,
+          "ruleText": "Complete MGAP8001 Capstone Project for 12 credits. The official course offers a research-based thesis option and an applied policy-project option within the same course code.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R424&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "MGAP8001",
+              "name": "Capstone Project",
+              "credits": 12,
+              "courseKind": "project",
+              "appliesToTrackIds": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

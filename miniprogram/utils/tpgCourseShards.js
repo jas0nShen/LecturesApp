@@ -10,14 +10,14 @@ const nodeLoaders = {
   "LINGNAN": () => [].concat(getNodeRequire()("../subpackages/tpg-data-lingnan/tpgCourseData/lingnan"))
 };
 const counts = {
-  "HKU": 6,
+  "HKU": 39,
   "CUHK": 8,
   "HKUST": 52,
   "POLYU": 4,
   "CITYU": 60,
   "HKBU": 14,
   "EDUHK": 24,
-  "LINGNAN": 20
+  "LINGNAN": 26
 };
 const packageNames = {
   "HKU": [

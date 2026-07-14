@@ -38,12 +38,26 @@ function validateTrackReferences(item, trackIds, label) {
       if (field === 'coursesRequiredByTrackIds') assert(Number.isInteger(Number(value)), `${label}/${field}/${trackId} must be an integer`);
     });
   });
+  if (item.typeByTrackIds !== undefined) {
+    assert(item.typeByTrackIds && typeof item.typeByTrackIds === 'object' && !Array.isArray(item.typeByTrackIds), `${label} has invalid typeByTrackIds`);
+    Object.entries(item.typeByTrackIds).forEach(([trackId, value]) => {
+      assert(trackIds.has(trackId), `${label}/typeByTrackIds references unknown Track ${trackId}`);
+      assert(typeof value === 'string' && value.trim(), `${label}/typeByTrackIds/${trackId} has an invalid type`);
+    });
+  }
+  if (item.nameByTrackIds !== undefined) {
+    assert(item.nameByTrackIds && typeof item.nameByTrackIds === 'object' && !Array.isArray(item.nameByTrackIds), `${label} has invalid nameByTrackIds`);
+    Object.entries(item.nameByTrackIds).forEach(([trackId, value]) => {
+      assert(trackIds.has(trackId), `${label}/nameByTrackIds references unknown Track ${trackId}`);
+      assert(typeof value === 'string' && value.trim(), `${label}/nameByTrackIds/${trackId} has an invalid name`);
+    });
+  }
 }
 
 function validateSupplement(supplement, catalogue, file = 'supplement') {
   assert.equal(supplement.schemaVersion, 1, `${file} has an unsupported schemaVersion`);
   assert.match(supplement.schoolCode || '', /^[A-Z]+$/, `${file} needs a schoolCode`);
-  assert.match(supplement.academicYear || '', /^\d{4}-\d{2}$/, `${file} needs an academicYear`);
+  assert.match(supplement.academicYear || '', /^\d{4}-\d{2}(?: and thereafter)?$/, `${file} needs an academicYear`);
   assert.match(supplement.verifiedAt || '', /^\d{4}-\d{2}-\d{2}$/, `${file} needs a verifiedAt date`);
   assert(Array.isArray(supplement.programmes), `${file} needs programmes`);
 
@@ -124,7 +138,13 @@ function applySupplements(catalogue, supplementFiles) {
       programme.courseSourceUrl = entry.sourceUrl;
       programme.courseStatusNote = entry.statusNote || '';
       if (entry.status === 'verified') {
-        if (entry.tracks !== undefined) programme.tracks = entry.tracks;
+        if (entry.tracks !== undefined) {
+          const existingTracksById = new Map((programme.tracks || []).map((track) => [track.id, track]));
+          programme.tracks = entry.tracks.map((track) => ({
+            ...(existingTracksById.get(track.id) || {}),
+            ...track
+          }));
+        }
         if (entry.trackSelectionOptional !== undefined) programme.trackSelectionOptional = Boolean(entry.trackSelectionOptional);
         programme.creditsRequired = entry.creditsRequired;
         programme.creditUnit = entry.creditUnit;

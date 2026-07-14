@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKU",
+  "academicYear": "2023-24 and thereafter",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "HKU-TPG-023",
+      "status": "verified",
+      "creditsRequired": 270,
+      "creditUnit": "credits",
+      "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R293&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The current official R293 Syllabuses state that all curriculum components are compulsory and publish a 270-credit total: 21 Faculty Core, 72 Discipline Specific, 99 Clinical, 63 Research and 15 Clinical Portfolio credits. This corrects the 72-credit directory value, which matches only the Discipline Specific subtotal. The Regulations apply to the 2023-24 intake and thereafter; the Syllabuses are dated Jan 13, 2023. The total-source conflict should remain visible for manual review.",
+      "courseGroups": [
+        {
+          "id": "faculty-core-courses",
+          "name": "Faculty Core Courses",
+          "type": "core",
+          "creditsRequired": 21,
+          "coursesRequired": 8,
+          "ruleText": "Complete all eight Faculty Core Courses. DENT7030 is compulsory but non-credit bearing; the other seven courses contribute 21 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R293&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "DENT7505",
+              "name": "Biomaterials I",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7506",
+              "name": "Biomaterials II",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT6023",
+              "name": "Oral epidemiology and clinical research methodology",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT6024",
+              "name": "Introduction to statistical analysis in dental research",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT6025",
+              "name": "Multivariable statistical analysis in dental research and use of statistical software",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7030",
+              "name": "Dissertation writing for Master of Dental Surgery and Master of Science - An Induction Course",
+              "credits": 0,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7031",
+              "name": "Insights into stem cells and tissue engineering in dentistry",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7032",
+              "name": "Diagnostic & Advanced Dental & Maxillofacial Imaging",
+              "credits": 3,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "discipline-specific-courses",
+          "name": "Discipline Specific Courses",
+          "type": "core",
+          "creditsRequired": 72,
+          "coursesRequired": 13,
+          "ruleText": "Complete all thirteen Discipline Specific Courses across Years 1, 2 and 3 for 72 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R293&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "DENT7110",
+              "name": "Operative technique fundamentals",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7106",
+              "name": "Endodontics introduction",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7111",
+              "name": "Practical endodontic techniques I",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7121",
+              "name": "Tutorials in the discipline - Year 1",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7159",
+              "name": "Implant Dentistry in Comprehensive Dental Care I",
+              "credits": 9,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7107",
+              "name": "Joint (interdisciplinary) seminars I",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7112",
+              "name": "Practical endodontic techniques II",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7122",
+              "name": "Tutorials in the discipline - Year 2",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7160",
+              "name": "Implant Dentistry in Comprehensive Dental Care II",
+              "credits": 9,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7108",
+              "name": "Joint (interdisciplinary) seminars II",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7113",
+              "name": "Practical endodontic techniques III",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7123",
+              "name": "Tutorials in the discipline - Year 3",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7109",
+              "name": "Joint (interdisciplinary) seminars III",
+              "credits": 3,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "clinical-components",
+          "name": "Clinical Components",
+          "type": "core",
+          "creditsRequired": 99,
+          "coursesRequired": 6,
+          "ruleText": "Complete Endodontic consultation clinic I-III and Supervised clinical practice I-III for 99 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R293&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "DENT7103",
+              "name": "Endodontic consultation clinic I",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7104",
+              "name": "Endodontic consultation clinic II",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7105",
+              "name": "Endodontic consultation clinic III",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7118",
+              "name": "Supervised clinical practice I",
+              "credits": 21,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7119",
+              "name": "Supervised clinical practice II",
+              "credits": 27,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7120",
+              "name": "Supervised clinical practice III",
+              "credits": 33,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "research-components",
+          "name": "Research Components",
+          "type": "dissertation",
+          "creditsRequired": 63,
+          "coursesRequired": 4,
+          "ruleText": "Complete Research I-III and Publication and presentations for 63 credits, culminating in a dissertation or research paper in publication format.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R293&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "DENT7115",
+              "name": "Research I",
+              "credits": 9,
+              "appliesToTrackIds": [],
+              "courseKind": "project"
+            },
+            {
+              "code": "DENT7116",
+              "name": "Research II",
+              "credits": 24,
+              "appliesToTrackIds": [],
+              "courseKind": "project"
+            },
+            {
+              "code": "DENT7117",
+              "name": "Research III",
+              "credits": 24,
+              "appliesToTrackIds": [],
+              "courseKind": "project"
+            },
+            {
+              "code": "DENT7114",
+              "name": "Publication and presentations",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "courseKind": "dissertation"
+            }
+          ]
+        },
+        {
+          "id": "clinical-portfolio-capstone",
+          "name": "Capstone Experience: Clinical Portfolio",
+          "type": "project",
+          "creditsRequired": 15,
+          "coursesRequired": 3,
+          "ruleText": "Complete Clinical Portfolio I, II and III throughout the three-year curriculum for 15 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R293&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "DENT7100",
+              "name": "Capstone Experience: Clinical Portfolio I",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "courseKind": "project"
+            },
+            {
+              "code": "DENT7101",
+              "name": "Capstone Experience: Clinical Portfolio II",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "courseKind": "project"
+            },
+            {
+              "code": "DENT7102",
+              "name": "Capstone Experience: Clinical Portfolio III",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "courseKind": "project"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

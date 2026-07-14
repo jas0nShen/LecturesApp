@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "LINGNAN",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-14",
+  "programmes": [
+    {
+      "programmeId": "LINGNAN-TPG-DIR-24-000464-L6",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.ln.edu.hk/wjysis/mct/programme-overview",
+      "ruleReviewStatus": "manual_review_required",
+      "trackSelectionOptional": true,
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Complete all six Core Courses (18 credits).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/CDT_TPG.pdf",
+          "courses": [
+            { "code": "CDT501", "name": "Computer Systems and Programming Basics", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "CDT502", "name": "Principles of Data Analytics and Decision Making", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "CDT503", "name": "Control System and Artificial Intelligence Applications", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "CDT504", "name": "Product and Process Design and Implementation", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "CDT505", "name": "Project Management: Concepts and Tools", "credits": 3, "appliesToTrackIds": [] },
+            { "code": "CDT506", "name": "Leadership and Interpersonal Skills for Technology Professionals", "credits": 3, "appliesToTrackIds": [] }
+          ]
+        },
+        {
+          "id": "required-course-option",
+          "name": "Required Course Option",
+          "type": "required",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Without a Specialism, choose either CDT507 or CDT508. With a Specialism, complete the one Required Course specified in the official Specialism table.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/wjysis/mct/programme-overview",
+          "courses": [
+            {
+              "code": "CDT507",
+              "name": "Master of Technology Field Trip",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "excludesTrackIds": [
+                "LINGNAN-TPG-DIR-24-000464-L6-25-000361-L6",
+                "LINGNAN-TPG-DIR-24-000464-L6-25-000359-L6",
+                "LINGNAN-TPG-DIR-24-000464-L6-25-000357-L6",
+                "LINGNAN-TPG-DIR-24-000464-L6-25-000355-L6",
+                "LINGNAN-TPG-DIR-24-000464-L6-25-000353-L6"
+              ],
+              "courseKind": "field_trip"
+            },
+            {
+              "code": "CDT508",
+              "name": "Master of Technology Capstone Project",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "excludesTrackIds": [
+                "LINGNAN-TPG-DIR-24-000464-L6-25-000360-L6",
+                "LINGNAN-TPG-DIR-24-000464-L6-25-000358-L6",
+                "LINGNAN-TPG-DIR-24-000464-L6-25-000356-L6",
+                "LINGNAN-TPG-DIR-24-000464-L6-25-000354-L6",
+                "LINGNAN-TPG-DIR-24-000464-L6-25-000352-L6"
+              ],
+              "courseKind": "project"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Without a Specialism, choose three Elective Courses (9 credits) from the full Programme pool. With a Specialism, choose three courses from that Specialism's four-course official elective pool.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/wjysis/mct/programme-overview",
+          "courses": [
+            { "code": "CDT511", "name": "Material, Processing Technology and Equipment", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-24-000464-L6-25-000352-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000354-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000355-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000356-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000357-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000358-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000359-L6"] },
+            { "code": "CDT512", "name": "Automobile Construction", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-24-000464-L6-25-000352-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000353-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000354-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000355-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000356-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000357-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000358-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000359-L6"] },
+            { "code": "CDT513", "name": "Modern Electronic Business", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-24-000464-L6-25-000352-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000354-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000355-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000356-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000360-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000361-L6"] },
+            { "code": "CDT514", "name": "Supply Chain Management", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-24-000464-L6-25-000352-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000354-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000355-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000357-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000358-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000360-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000361-L6"] },
+            { "code": "CDT515", "name": "New Media and Video", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-24-000464-L6-25-000353-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000354-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000355-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000356-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000357-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000359-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000360-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000361-L6"] },
+            { "code": "CDT516", "name": "SAAS and Smart Manufacturing System Design", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-24-000464-L6-25-000352-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000355-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000358-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000359-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000361-L6"] },
+            { "code": "CDT517", "name": "Establish Business Mindset for Technology Professionals", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-24-000464-L6-25-000352-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000353-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000356-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000357-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000360-L6"] },
+            { "code": "CDT518", "name": "Economics and Financial Analysis", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-24-000464-L6-25-000353-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000356-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000358-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000360-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000361-L6"] },
+            { "code": "CDT519", "name": "Data-driven Critical and Analytical Thinking", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-24-000464-L6-25-000353-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000354-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000355-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000356-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000358-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000359-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000360-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000361-L6"] },
+            { "code": "ESG521", "name": "Conventional Energy and Renewable Energy", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-24-000464-L6-25-000352-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000353-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000354-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000357-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000358-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000359-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000361-L6"] },
+            { "code": "ESG535", "name": "Sustainable Urban Energy Planning", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-24-000464-L6-25-000352-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000353-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000354-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000357-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000358-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000359-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000360-L6"] },
+            { "code": "ESG536", "name": "Green Finance and Investment", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-24-000464-L6-25-000353-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000355-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000356-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000357-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000359-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000360-L6", "LINGNAN-TPG-DIR-24-000464-L6-25-000361-L6"] }
+          ]
+        }
+      ]
+    }
+  ]
+}
