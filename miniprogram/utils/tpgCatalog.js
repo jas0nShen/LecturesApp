@@ -4290,13 +4290,66 @@ module.exports = {
       "faculty": "School of Hotel and Tourism Management (SHTM)",
       "creditsRequired": 32,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
-      "dataLevel": "programme",
+      "dataLevel": "structure",
       "academicYear": "2027-28",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
-      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
-      "courseCount": 0
+      "courseStatusNote": "The official page publishes six award paths under one subject area. Research versus Consultancy Project pathways and cross-listed specialisation/elective subjects require manual audit review; the app must not infer completion from the visible course pool.",
+      "tracks": [
+        {
+          "id": "POLYU-TPG-102-AIH",
+          "code": "AIH",
+          "name": "Artificial Intelligence in Hospitality",
+          "type": "Award Path",
+          "creditsRequired": 32,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp"
+        },
+        {
+          "id": "POLYU-TPG-102-IEH",
+          "code": "IEH",
+          "name": "Innovation and Entrepreneurship in Hospitality",
+          "type": "Award Path",
+          "creditsRequired": 32,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp"
+        },
+        {
+          "id": "POLYU-TPG-102-IHM",
+          "code": "IHM",
+          "name": "International Hospitality Management",
+          "type": "Award Path",
+          "creditsRequired": 32,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp"
+        },
+        {
+          "id": "POLYU-TPG-102-ITEM",
+          "code": "ITEM",
+          "name": "International Tourism and Event Management",
+          "type": "Award Path",
+          "creditsRequired": 32,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp"
+        },
+        {
+          "id": "POLYU-TPG-102-LEM",
+          "code": "LEM",
+          "name": "Luxury Experiences Management",
+          "type": "Award Path",
+          "creditsRequired": 32,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp"
+        },
+        {
+          "id": "POLYU-TPG-102-IWM",
+          "code": "IWM",
+          "name": "International Wine Management",
+          "type": "Award Path",
+          "creditsRequired": 32,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp"
+        }
+      ],
+      "trackSelectionOptional": false,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 42
     },
     {
       "id": "POLYU-TPG-103",

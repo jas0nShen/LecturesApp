@@ -1,0 +1,723 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "POLYU",
+  "academicYear": "2027-28",
+  "verifiedAt": "2026-07-15",
+  "programmes": [
+    {
+      "programmeId": "POLYU-TPG-102",
+      "status": "verified",
+      "creditsRequired": 32,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official page publishes six award paths under one subject area. Research versus Consultancy Project pathways and cross-listed specialisation/elective subjects require manual audit review; the app must not infer completion from the visible course pool.",
+      "trackSelectionOptional": false,
+      "tracks": [
+        {
+          "id": "POLYU-TPG-102-AIH",
+          "code": "AIH",
+          "name": "Artificial Intelligence in Hospitality",
+          "type": "Award Path",
+          "creditsRequired": 32,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp"
+        },
+        {
+          "id": "POLYU-TPG-102-IEH",
+          "code": "IEH",
+          "name": "Innovation and Entrepreneurship in Hospitality",
+          "type": "Award Path",
+          "creditsRequired": 32,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp"
+        },
+        {
+          "id": "POLYU-TPG-102-IHM",
+          "code": "IHM",
+          "name": "International Hospitality Management",
+          "type": "Award Path",
+          "creditsRequired": 32,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp"
+        },
+        {
+          "id": "POLYU-TPG-102-ITEM",
+          "code": "ITEM",
+          "name": "International Tourism and Event Management",
+          "type": "Award Path",
+          "creditsRequired": 32,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp"
+        },
+        {
+          "id": "POLYU-TPG-102-LEM",
+          "code": "LEM",
+          "name": "Luxury Experiences Management",
+          "type": "Award Path",
+          "creditsRequired": 32,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp"
+        },
+        {
+          "id": "POLYU-TPG-102-IWM",
+          "code": "IWM",
+          "name": "International Wine Management",
+          "type": "Award Path",
+          "creditsRequired": 32,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp"
+        }
+      ],
+      "courseGroups": [
+        {
+          "id": "workshop-and-academic-integrity",
+          "name": "Workshop and Academic Integrity",
+          "type": "core",
+          "creditsRequired": 2,
+          "coursesRequired": 2,
+          "ruleText": "All six MSc award paths complete HTM5002 and HTM5T02 for 2 credits in total.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "courses": [
+            {
+              "code": "HTM5002",
+              "name": "Introductory Workshop",
+              "credits": 1,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "HTM5T02",
+              "name": "Academic Integrity and Ethics (AIE) in Business Studies and Research",
+              "credits": 1,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "compulsory-subjects",
+          "name": "Compulsory Subjects",
+          "type": "core",
+          "creditsRequiredByTrackIds": {
+            "POLYU-TPG-102-AIH": 12,
+            "POLYU-TPG-102-IEH": 12,
+            "POLYU-TPG-102-IHM": 12,
+            "POLYU-TPG-102-ITEM": 12,
+            "POLYU-TPG-102-LEM": 12,
+            "POLYU-TPG-102-IWM": 9
+          },
+          "coursesRequiredByTrackIds": {
+            "POLYU-TPG-102-AIH": 4,
+            "POLYU-TPG-102-IEH": 4,
+            "POLYU-TPG-102-IHM": 4,
+            "POLYU-TPG-102-ITEM": 4,
+            "POLYU-TPG-102-LEM": 4,
+            "POLYU-TPG-102-IWM": 3
+          },
+          "ruleText": "AIH, IEH, IHM, ITEM and LEM complete HTM533, HTM534, HTM535 and HTM582 (12 credits). IWM completes HTM534, HTM535 and HTM582 (9 credits).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "courses": [
+            {
+              "code": "HTM533",
+              "name": "Managing Human Resources in the Hospitality & Tourism Industry",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-AIH",
+                "POLYU-TPG-102-IEH",
+                "POLYU-TPG-102-IHM",
+                "POLYU-TPG-102-ITEM",
+                "POLYU-TPG-102-LEM"
+              ]
+            },
+            {
+              "code": "HTM534",
+              "name": "Managing Marketing in the Hospitality & Tourism Industry",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "HTM535",
+              "name": "Hospitality & Tourism Financial Management",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "HTM582",
+              "name": "Research Methods",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "award-path-specialisation",
+          "name": "Award Path Specialisation Subjects",
+          "type": "track_core",
+          "creditsRequiredByTrackIds": {
+            "POLYU-TPG-102-AIH": 12,
+            "POLYU-TPG-102-IEH": 12,
+            "POLYU-TPG-102-IHM": 12,
+            "POLYU-TPG-102-IWM": 9
+          },
+          "coursesRequiredByTrackIds": {
+            "POLYU-TPG-102-AIH": 4,
+            "POLYU-TPG-102-IEH": 4,
+            "POLYU-TPG-102-IHM": 4,
+            "POLYU-TPG-102-IWM": 3
+          },
+          "ruleText": "AIH, IEH and IHM each complete their four listed specialisation subjects. ITEM completes HTM520, HTM544, HTM545 and HTM561. LEM completes HTM541 and HTM574-HTM576. IWM completes HTM554-HTM556. The three cross-listed subjects are stored separately to avoid duplicate course codes.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "courses": [
+            {
+              "code": "HTM592",
+              "name": "AI for Hospitality: Foundations, Applications, and Ethics",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-AIH"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-102-AIH"
+              ],
+              "subjectGroups": [
+                "specialisation"
+              ]
+            },
+            {
+              "code": "HTM593",
+              "name": "Machine Learning and Emerging Technologies in Hospitality",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-AIH"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-102-AIH"
+              ],
+              "subjectGroups": [
+                "specialisation"
+              ]
+            },
+            {
+              "code": "HTM594",
+              "name": "Big Data Analytics and Intelligence in Hospitality",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-AIH"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-102-AIH"
+              ],
+              "subjectGroups": [
+                "specialisation"
+              ]
+            },
+            {
+              "code": "HTM595",
+              "name": "AI-Powered Service Design for Hospitality",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-AIH"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-102-AIH"
+              ],
+              "subjectGroups": [
+                "specialisation"
+              ]
+            },
+            {
+              "code": "HTM569",
+              "name": "Innovation and Entrepreneurship in Hospitality Industry",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-IEH"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-102-IEH"
+              ],
+              "subjectGroups": [
+                "specialisation"
+              ]
+            },
+            {
+              "code": "HTM570",
+              "name": "Innovative Experience Design",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-IEH"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-102-IEH"
+              ],
+              "subjectGroups": [
+                "specialisation"
+              ]
+            },
+            {
+              "code": "HTM571",
+              "name": "Business Models in Hospitality Entrepreneurship",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-IEH"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-102-IEH"
+              ],
+              "subjectGroups": [
+                "specialisation"
+              ]
+            },
+            {
+              "code": "HTM572",
+              "name": "Innovation in Hospitality in the Digital Age",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-IEH"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-102-IEH"
+              ],
+              "subjectGroups": [
+                "specialisation"
+              ]
+            },
+            {
+              "code": "HTM536",
+              "name": "Strategic Management for Hospitality Businesses",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-IHM"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-102-IHM"
+              ],
+              "subjectGroups": [
+                "specialisation"
+              ]
+            },
+            {
+              "code": "HTM537",
+              "name": "Design for Hospitality",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-IHM"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-102-IHM"
+              ],
+              "subjectGroups": [
+                "specialisation"
+              ]
+            },
+            {
+              "code": "HTM538",
+              "name": "Multi-Unit Hospitality Management",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-IHM"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-102-IHM"
+              ],
+              "subjectGroups": [
+                "specialisation"
+              ]
+            },
+            {
+              "code": "HTM539",
+              "name": "Hospitality Revenue Management",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-IHM"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-102-IHM"
+              ],
+              "subjectGroups": [
+                "specialisation"
+              ]
+            },
+            {
+              "code": "HTM544",
+              "name": "Strategic Management for Travel and Tourism Businesses",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-ITEM"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-102-ITEM"
+              ],
+              "subjectGroups": [
+                "specialisation"
+              ]
+            },
+            {
+              "code": "HTM545",
+              "name": "Tourism Policy and Development",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-ITEM"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-102-ITEM"
+              ],
+              "subjectGroups": [
+                "specialisation"
+              ]
+            },
+            {
+              "code": "HTM574",
+              "name": "Luxury Consumption Experience and Communication",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-LEM"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-102-LEM"
+              ],
+              "subjectGroups": [
+                "specialisation"
+              ]
+            },
+            {
+              "code": "HTM575",
+              "name": "Sustainable Luxury and Design",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-LEM"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-102-LEM"
+              ],
+              "subjectGroups": [
+                "specialisation"
+              ]
+            },
+            {
+              "code": "HTM576",
+              "name": "Luxury Service Management in Asia",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-LEM"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-102-LEM"
+              ],
+              "subjectGroups": [
+                "specialisation"
+              ]
+            },
+            {
+              "code": "HTM554",
+              "name": "Viticulture and Oenology",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-IWM"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-102-IWM"
+              ],
+              "subjectGroups": [
+                "specialisation"
+              ]
+            },
+            {
+              "code": "HTM555",
+              "name": "Wine Business Environment",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-IWM"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-102-IWM"
+              ],
+              "subjectGroups": [
+                "specialisation"
+              ]
+            },
+            {
+              "code": "HTM556",
+              "name": "Wines of the World",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-IWM"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-102-IWM"
+              ],
+              "subjectGroups": [
+                "specialisation"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cross-listed-specialisation-electives",
+          "name": "Cross-listed Specialisation and Elective Subjects",
+          "type": "elective",
+          "ruleText": "HTM520 and HTM561 are ITEM specialisation subjects and IWM electives. HTM541 is a LEM specialisation subject and an elective for the other award paths. These roles must be checked by award path and must not be double counted.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "courses": [
+            {
+              "code": "HTM520",
+              "name": "Meetings and Exhibition Management",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-ITEM",
+                "POLYU-TPG-102-IWM"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-102-ITEM"
+              ],
+              "subjectGroups": [
+                "specialisation",
+                "elective"
+              ]
+            },
+            {
+              "code": "HTM561",
+              "name": "Business Events: Concepts, Issues and Trends",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-ITEM",
+                "POLYU-TPG-102-IWM"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-102-ITEM"
+              ],
+              "subjectGroups": [
+                "specialisation",
+                "elective"
+              ]
+            },
+            {
+              "code": "HTM541",
+              "name": "Luxury Management",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-AIH",
+                "POLYU-TPG-102-IEH",
+                "POLYU-TPG-102-IHM",
+                "POLYU-TPG-102-ITEM",
+                "POLYU-TPG-102-LEM",
+                "POLYU-TPG-102-IWM"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-102-LEM"
+              ],
+              "subjectGroups": [
+                "specialisation",
+                "elective"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "project-options",
+          "name": "Research or Consultancy Project Option",
+          "type": "project",
+          "coursesRequired": 1,
+          "ruleText": "Choose HTM599 Research Project (6 credits) for the Research Component, or HTM598 Consultancy Project (3 credits) for the Non-Research Component. The paired elective requirement differs by award path and component and requires manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "courses": [
+            {
+              "code": "HTM598",
+              "name": "Consultancy Project",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [],
+              "courseKind": "project",
+              "conditionalRequirement": true
+            },
+            {
+              "code": "HTM599",
+              "name": "Research Project",
+              "credits": 6,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [],
+              "courseKind": "research_project",
+              "conditionalRequirement": true
+            }
+          ]
+        },
+        {
+          "id": "elective-pool",
+          "name": "Elective Subject Pool",
+          "type": "elective",
+          "ruleText": "For AIH, IEH, IHM, ITEM and LEM, the Non-Research Component pairs HTM598 with one 3-credit elective; the Research Component uses HTM599 without an elective. For IWM, the Research Component requires two electives and HTM599, while the Non-Research Component requires three electives and HTM598. Cross-listed HTM520, HTM541 and HTM561 are stored in the separate cross-listed group.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "courses": [
+            {
+              "code": "HTM507",
+              "name": "Cultural Tourism",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-AIH",
+                "POLYU-TPG-102-IEH",
+                "POLYU-TPG-102-IHM",
+                "POLYU-TPG-102-ITEM",
+                "POLYU-TPG-102-LEM"
+              ]
+            },
+            {
+              "code": "HTM513",
+              "name": "China Hotel and Tourism Business Studies",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-AIH",
+                "POLYU-TPG-102-IEH",
+                "POLYU-TPG-102-IHM",
+                "POLYU-TPG-102-ITEM",
+                "POLYU-TPG-102-LEM"
+              ]
+            },
+            {
+              "code": "HTM528",
+              "name": "Trends and Issues in Global Tourism",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-AIH",
+                "POLYU-TPG-102-IEH",
+                "POLYU-TPG-102-IHM",
+                "POLYU-TPG-102-ITEM",
+                "POLYU-TPG-102-LEM"
+              ]
+            },
+            {
+              "code": "HTM568",
+              "name": "Smart Tourism and Big Data Analytics",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-AIH",
+                "POLYU-TPG-102-IEH",
+                "POLYU-TPG-102-IHM",
+                "POLYU-TPG-102-ITEM",
+                "POLYU-TPG-102-LEM"
+              ]
+            },
+            {
+              "code": "HTM573",
+              "name": "Business Development and Branding",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-AIH",
+                "POLYU-TPG-102-IEH",
+                "POLYU-TPG-102-IHM",
+                "POLYU-TPG-102-ITEM",
+                "POLYU-TPG-102-LEM"
+              ]
+            },
+            {
+              "code": "HTM577",
+              "name": "Luxury Service Management in Practice (including residential workshop)",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-AIH",
+                "POLYU-TPG-102-IEH",
+                "POLYU-TPG-102-IHM",
+                "POLYU-TPG-102-ITEM",
+                "POLYU-TPG-102-LEM"
+              ]
+            },
+            {
+              "code": "HTM540",
+              "name": "Hospitality and Tourism Technology and Innovation",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-AIH",
+                "POLYU-TPG-102-IEH",
+                "POLYU-TPG-102-IHM",
+                "POLYU-TPG-102-ITEM",
+                "POLYU-TPG-102-LEM",
+                "POLYU-TPG-102-IWM"
+              ]
+            },
+            {
+              "code": "HTM557",
+              "name": "Residential Study Trip",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-AIH",
+                "POLYU-TPG-102-IEH",
+                "POLYU-TPG-102-IHM",
+                "POLYU-TPG-102-ITEM",
+                "POLYU-TPG-102-LEM",
+                "POLYU-TPG-102-IWM"
+              ]
+            },
+            {
+              "code": "HTM558",
+              "name": "Brand Management and Communication in Wine Business",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-IWM"
+              ]
+            },
+            {
+              "code": "HTM560",
+              "name": "Wine Economics",
+              "credits": 3,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": [
+                "POLYU-TPG-102-IWM"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "optional-non-credit",
+          "name": "Optional Non-credit Subject",
+          "type": "optional",
+          "ruleText": "HTM5003 Management Practice is an optional, non-credit-bearing internship and is not part of the 32-credit graduation total.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+          "courses": [
+            {
+              "code": "HTM5003",
+              "name": "Management Practice",
+              "credits": 0,
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+              "appliesToTrackIds": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

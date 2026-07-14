@@ -21,6 +21,7 @@ const { buildSupplement: buildHkuBuddhistCounsellingSupplement } = require('./bu
 const { buildSupplement: buildHkuBuddhistStudiesSupplement } = require('./build-hku-buddhist-studies-supplement');
 const { buildSupplement: buildHkuCreativeWritingMfaSupplement } = require('./build-hku-creative-writing-mfa-supplement');
 const { buildSupplement: buildHkuEndodonticsSupplement } = require('./build-hku-endodontics-supplement');
+const { buildSupplement: buildPolyuHospitalityTourismManagementSupplement } = require('./build-polyu-hospitality-tourism-management-supplement');
 
 function fixtureCatalogue() {
   return {
@@ -678,4 +679,32 @@ test('HKU Endodontics preserves all five compulsory components and corrects the 
   assert.equal(research.courses.find((course) => course.code === 'DENT7114').courseKind, 'dissertation');
   assert.equal(capstone.courses.every((course) => course.courseKind === 'project'), true);
   assert.match(programme.statusNote, /corrects the 72-credit directory value/);
+});
+
+test('PolyU Hospitality and Tourism Management preserves six award paths and both project components', () => {
+  const supplement = buildPolyuHospitalityTourismManagementSupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'polyu-hospitality-tourism-management-2027.json');
+  const programme = supplement.programmes[0];
+  const [foundation, compulsory, specialisation, crossListed, projects, electives, optional] = programme.courseGroups;
+
+  assert.equal(programme.programmeId, 'POLYU-TPG-102');
+  assert.equal(supplement.academicYear, '2027-28');
+  assert.equal(programme.creditsRequired, 32);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(programme.trackSelectionOptional, false);
+  assert.equal(programme.tracks.length, 6);
+  assert.equal(programme.tracks.every((track) => track.type === 'Award Path' && track.creditsRequired === 32), true);
+  assert.deepEqual([foundation.courses.length, compulsory.courses.length, specialisation.courses.length, crossListed.courses.length, projects.courses.length, electives.courses.length, optional.courses.length], [2, 4, 20, 3, 2, 10, 1]);
+  assert.equal(new Set(programme.courseGroups.flatMap((group) => group.courses).map((course) => course.code)).size, 42);
+  assert.deepEqual(projects.courses.map((course) => [course.code, course.credits, course.courseKind]), [
+    ['HTM598', 3, 'project'],
+    ['HTM599', 6, 'research_project']
+  ]);
+  assert.equal(optional.courses[0].code, 'HTM5003');
+  assert.equal(optional.courses[0].credits, 0);
+  assert.equal(crossListed.courses.find((course) => course.code === 'HTM541').countsTowardTrackIds.length, 1);
+  assert.match(projects.ruleText, /Non-Research Component/);
+  assert.match(electives.ruleText, /IWM/);
+  assert.match(programme.statusNote, /must not infer completion/);
 });

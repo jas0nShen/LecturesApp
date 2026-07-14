@@ -9,8 +9,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 227);
-  assert.equal(coverage.courseCount, 5505);
+  assert.equal(coverage.programmeWithCoursesCount, 228);
+  assert.equal(coverage.courseCount, 5547);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -29,8 +29,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 227);
-  assert.equal(rows.length, 227);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 228);
+  assert.equal(rows.length, 228);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
@@ -4683,6 +4683,33 @@ test('HKU Endodontics exposes the complete 270-credit compulsory curriculum', ()
   assert.equal(tpgService.getProgrammeCourse(programme.id, 'DENT7114').courseKind, 'dissertation');
   assert.equal(tpgService.getProgrammeCourse(programme.id, 'DENT7102').courseKind, 'project');
   assert.match(programme.courseStatusNote, /72-credit directory value/);
+});
+
+test('PolyU Hospitality and Tourism Management filters six official Award Paths conservatively', () => {
+  const programme = tpgService.getProgramme('POLYU-TPG-102');
+  const tracks = Object.fromEntries(tpgService.listTracks(programme).map((track) => [track.code, track]));
+  const aihCourses = tpgService.flattenCourses(programme, '', tracks.AIH.id);
+  const iwmCourses = tpgService.flattenCourses(programme, '', tracks.IWM.id);
+
+  assert.equal(programme.creditsRequired, 32);
+  assert.equal(programme.academicYear, '2027-28');
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(programme.trackSelectionOptional, false);
+  assert.deepEqual(Object.keys(tracks).sort(), ['AIH', 'IEH', 'IHM', 'ITEM', 'IWM', 'LEM']);
+  assert.equal(tpgService.getStatus(programme).isComplete, true);
+  assert.equal(tpgService.getStatus(programme).courseCount, 42);
+  assert.equal(new Set(programme.courseGroups.flatMap((group) => group.courses).map((course) => course.code)).size, 42);
+  assert.equal(aihCourses.some((course) => course.code === 'HTM592'), true);
+  assert.equal(aihCourses.some((course) => course.code === 'HTM554'), false);
+  assert.equal(iwmCourses.some((course) => course.code === 'HTM554'), true);
+  assert.equal(iwmCourses.some((course) => course.code === 'HTM592'), false);
+  assert.equal(aihCourses.some((course) => course.code === 'HTM534'), true);
+  assert.equal(iwmCourses.some((course) => course.code === 'HTM534'), true);
+  assert.equal(aihCourses.some((course) => course.code === 'HTM598'), true);
+  assert.equal(iwmCourses.some((course) => course.code === 'HTM599'), true);
+  assert.deepEqual(tpgService.getProgrammeCourse(programme.id, 'HTM541', tracks.LEM.id).countsTowardTrackIds, [tracks.LEM.id]);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'HTM5003', tracks.IWM.id).credits, 0);
+  assert.match(programme.courseStatusNote, /must not infer completion/);
 });
 
 test('TPG programme search matches names, codes, faculties and course text', () => {
