@@ -298,8 +298,8 @@
         { "programmeCode": "16/000107/L6", "name": "Master of Science in Finance" },
         { "programmeCode": "16/000936/L6", "name": "Master of Science in Work and Organisational Psychology" },
         { "programmeCode": "17/000204/L6", "name": "Master of Social Sciences in Comparative Social Policy (International)", "tracks": [
-          { "code": "25/000017/L6", "name": "Social Innovation", "type": "specialism" },
-          { "code": "25/000023/L6", "name": "Social Research", "type": "specialism" }
+          { "code": "25/000017/L6", "name": "Social Innovation", "type": "Concentration", "sourceUrl": "https://www.ln.edu.hk/socsp/imcsp/programme-overview/programme-structure" },
+          { "code": "25/000023/L6", "name": "Social Research", "type": "Concentration", "sourceUrl": "https://www.ln.edu.hk/socsp/imcsp/programme-overview/programme-structure" }
         ] },
         { "programmeCode": "17/000487/L6", "name": "Master of Arts in International Higher Education and Management", "tracks": [
           { "code": "24/000294/L6", "name": "Educational Technology and Digital Transformation, EdTech Concentration", "type": "Concentration", "sourceUrl": "https://www.ln.edu.hk/sgs/ihem/programme-overview/programme-structure" }

@@ -41705,7 +41705,7 @@
       "name": "Master of Social Sciences in Comparative Social Policy (International)",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -41717,21 +41717,217 @@
           "id": "LINGNAN-TPG-DIR-17-000204-L6-25-000017-L6",
           "code": "25/000017/L6",
           "name": "Social Innovation",
-          "type": "specialism",
-          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "type": "Concentration",
+          "sourceUrl": "https://www.ln.edu.hk/socsp/imcsp/programme-overview/programme-structure",
           "lastVerifiedAt": "2026-07-11"
         },
         {
           "id": "LINGNAN-TPG-DIR-17-000204-L6-25-000023-L6",
           "code": "25/000023/L6",
           "name": "Social Research",
-          "type": "specialism",
-          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "type": "Concentration",
+          "sourceUrl": "https://www.ln.edu.hk/socsp/imcsp/programme-overview/programme-structure",
           "lastVerifiedAt": "2026-07-11"
         }
       ],
-      "dataLevel": "programme",
-      "courseGroups": []
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five Core Courses (15 credits) under the mother Programme and both Concentrations.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/socsp/imcsp/programme-overview/programme-structure",
+          "courses": [
+            {
+              "code": "SOC501",
+              "name": "Social Policy Analysis: Comparative Perspectives",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/socsp/imcsp/programme-overview/programme-structure"
+            },
+            {
+              "code": "SOC504",
+              "name": "Comparative Social Policy in Greater China and East Asia",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/socsp/imcsp/programme-overview/programme-structure"
+            },
+            {
+              "code": "SOC505",
+              "name": "Globalisation, Policy and Society",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/socsp/imcsp/programme-overview/programme-structure"
+            },
+            {
+              "code": "SOC506",
+              "name": "Policy Research and Evaluation Design",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/socsp/imcsp/programme-overview/programme-structure"
+            },
+            {
+              "code": "SOC604",
+              "name": "Comparative Social Policy Symposium",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/socsp/imcsp/programme-overview/programme-structure"
+            }
+          ]
+        },
+        {
+          "id": "parent-required-course",
+          "name": "Mother Programme Required Course",
+          "type": "core",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Students who do not declare a Concentration complete SOC601 (3 credits). This course is not part of either Concentration path.",
+          "appliesToTrackIds": [],
+          "excludesTrackIds": [
+            "LINGNAN-TPG-DIR-17-000204-L6-25-000017-L6",
+            "LINGNAN-TPG-DIR-17-000204-L6-25-000023-L6"
+          ],
+          "sourceUrl": "https://www.ln.edu.hk/socsp/imcsp/programme-overview/programme-structure",
+          "courses": [
+            {
+              "code": "SOC601",
+              "name": "Governance, Management and Delivery",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/socsp/imcsp/programme-overview/programme-structure"
+            }
+          ]
+        },
+        {
+          "id": "pathway-courses",
+          "name": "Elective and Concentration Courses",
+          "type": "elective",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "creditsRequiredByTrackIds": {
+            "LINGNAN-TPG-DIR-17-000204-L6-25-000017-L6": 9,
+            "LINGNAN-TPG-DIR-17-000204-L6-25-000023-L6": 9
+          },
+          "coursesRequiredByTrackIds": {
+            "LINGNAN-TPG-DIR-17-000204-L6-25-000017-L6": 3,
+            "LINGNAN-TPG-DIR-17-000204-L6-25-000023-L6": 3
+          },
+          "ruleText": "The mother Programme selects any two courses from the six-course pool (6 credits). The Social Research Concentration completes SOC606, SOC607 and SOC608 (9 credits). The Social Innovation Concentration completes SOC609, SOC610 and SOC602 (9 credits).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/socsp/imcsp/programme-overview/programme-structure",
+          "courses": [
+            {
+              "code": "SOC606",
+              "name": "Comparative Social Indicators and Research Methods",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "excludesTrackIds": [
+                "LINGNAN-TPG-DIR-17-000204-L6-25-000017-L6"
+              ],
+              "countsTowardTrackIds": [
+                "LINGNAN-TPG-DIR-17-000204-L6-25-000023-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/socsp/imcsp/programme-overview/programme-structure"
+            },
+            {
+              "code": "SOC607",
+              "name": "Applied Survey Methodology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "excludesTrackIds": [
+                "LINGNAN-TPG-DIR-17-000204-L6-25-000017-L6"
+              ],
+              "countsTowardTrackIds": [
+                "LINGNAN-TPG-DIR-17-000204-L6-25-000023-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/socsp/imcsp/programme-overview/programme-structure"
+            },
+            {
+              "code": "SOC608",
+              "name": "Qualitative Methods for Policy Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "excludesTrackIds": [
+                "LINGNAN-TPG-DIR-17-000204-L6-25-000017-L6"
+              ],
+              "countsTowardTrackIds": [
+                "LINGNAN-TPG-DIR-17-000204-L6-25-000023-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/socsp/imcsp/programme-overview/programme-structure"
+            },
+            {
+              "code": "SOC609",
+              "name": "Social Entrepreneurship & Social Impact",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "excludesTrackIds": [
+                "LINGNAN-TPG-DIR-17-000204-L6-25-000023-L6"
+              ],
+              "countsTowardTrackIds": [
+                "LINGNAN-TPG-DIR-17-000204-L6-25-000017-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/socsp/imcsp/programme-overview/programme-structure"
+            },
+            {
+              "code": "SOC610",
+              "name": "Non-Profit Organisations & the Voluntary Sector",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "excludesTrackIds": [
+                "LINGNAN-TPG-DIR-17-000204-L6-25-000023-L6"
+              ],
+              "countsTowardTrackIds": [
+                "LINGNAN-TPG-DIR-17-000204-L6-25-000017-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/socsp/imcsp/programme-overview/programme-structure"
+            },
+            {
+              "code": "SOC602",
+              "name": "Dialogue with Policy Practitioners: Theory and Practice",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "excludesTrackIds": [
+                "LINGNAN-TPG-DIR-17-000204-L6-25-000023-L6"
+              ],
+              "countsTowardTrackIds": [
+                "LINGNAN-TPG-DIR-17-000204-L6-25-000017-L6"
+              ],
+              "sourceUrl": "https://www.ln.edu.hk/socsp/imcsp/programme-overview/programme-structure"
+            }
+          ]
+        },
+        {
+          "id": "capstone-project",
+          "name": "Capstone Project",
+          "type": "project",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Complete SOC605 Comparative Social Policy Research Project (6 credits) under the mother Programme and both Concentrations.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/socsp/imcsp/programme-overview/programme-structure",
+          "courses": [
+            {
+              "code": "SOC605",
+              "name": "Comparative Social Policy Research Project",
+              "credits": 6,
+              "courseKind": "project",
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.ln.edu.hk/socsp/imcsp/programme-overview/programme-structure"
+            }
+          ]
+        }
+      ],
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/socsp/imcsp/programme-overview/programme-structure",
+      "courseStatusNote": "",
+      "trackSelectionOptional": true,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified"
     },
     {
       "id": "LINGNAN-TPG-DIR-17-000487-L6",

@@ -9,8 +9,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 178);
-  assert.equal(coverage.courseCount, 3997);
+  assert.equal(coverage.programmeWithCoursesCount, 179);
+  assert.equal(coverage.courseCount, 4010);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -29,8 +29,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 178);
-  assert.equal(rows.length, 178);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 179);
+  assert.equal(rows.length, 179);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
@@ -3347,6 +3347,44 @@ test('Lingnan IHEM resolves the mother Programme and EdTech Concentration as dis
   assert.equal(motherCourses.length, 14);
   assert.equal(trackCourses.length, 16);
   assert.equal(new Set(programme.courseGroups.flatMap((group) => group.courses).map((course) => course.code)).size, 17);
+});
+
+test('Lingnan Comparative Social Policy resolves the mother Programme and both Concentrations', () => {
+  const programme = tpgService.getProgramme('LINGNAN-TPG-DIR-17-000204-L6');
+  const tracks = Object.fromEntries(tpgService.listTracks(programme).map((track) => [track.name, track]));
+  const socialInnovationId = tracks['Social Innovation'].id;
+  const socialResearchId = tracks['Social Research'].id;
+  const motherGroups = Object.fromEntries(tpgService.resolveCourseGroups(programme).map((group) => [group.id, group]));
+  const innovationGroups = Object.fromEntries(tpgService.resolveCourseGroups(programme, socialInnovationId).map((group) => [group.id, group]));
+  const researchGroups = Object.fromEntries(tpgService.resolveCourseGroups(programme, socialResearchId).map((group) => [group.id, group]));
+  const motherCourses = tpgService.flattenCourses(programme);
+  const innovationCourses = tpgService.flattenCourses(programme, '', socialInnovationId);
+  const researchCourses = tpgService.flattenCourses(programme, '', socialResearchId);
+
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.academicYear, '2026-27');
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.equal(programme.trackSelectionOptional, true);
+  assert.equal(tpgService.getStatus(programme).isComplete, true);
+  assert.equal(tpgService.getStatus(programme).courseCount, 13);
+  assert.deepEqual(Object.keys(motherGroups), ['core-courses', 'parent-required-course', 'pathway-courses', 'capstone-project']);
+  assert.deepEqual(Object.keys(innovationGroups), ['core-courses', 'pathway-courses', 'capstone-project']);
+  assert.deepEqual(Object.keys(researchGroups), ['core-courses', 'pathway-courses', 'capstone-project']);
+  assert.deepEqual([motherGroups['pathway-courses'].creditsRequired, motherGroups['pathway-courses'].coursesRequired], [6, 2]);
+  assert.deepEqual([innovationGroups['pathway-courses'].creditsRequired, innovationGroups['pathway-courses'].coursesRequired], [9, 3]);
+  assert.deepEqual([researchGroups['pathway-courses'].creditsRequired, researchGroups['pathway-courses'].coursesRequired], [9, 3]);
+  assert.equal(motherCourses.length, 13);
+  assert.equal(innovationCourses.length, 9);
+  assert.equal(researchCourses.length, 9);
+  assert.equal(motherCourses.some((course) => course.code === 'SOC601'), true);
+  assert.equal(innovationCourses.some((course) => course.code === 'SOC601'), false);
+  assert.equal(researchCourses.some((course) => course.code === 'SOC601'), false);
+  assert.deepEqual(innovationGroups['pathway-courses'].courses.map((course) => course.code), ['SOC609', 'SOC610', 'SOC602']);
+  assert.deepEqual(researchGroups['pathway-courses'].courses.map((course) => course.code), ['SOC606', 'SOC607', 'SOC608']);
+  assert.equal(innovationCourses.reduce((sum, course) => sum + course.credits, 0), 30);
+  assert.equal(researchCourses.reduce((sum, course) => sum + course.credits, 0), 30);
+  assert.equal(new Set(programme.courseGroups.flatMap((group) => group.courses).map((course) => course.code)).size, 13);
+  assert.equal(programme.courseSourceUrl, 'https://www.ln.edu.hk/socsp/imcsp/programme-overview/programme-structure');
 });
 
 test('Lingnan Sociology and Data Analytics preserves its eight compulsory plus two elective rule', () => {

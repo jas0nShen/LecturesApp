@@ -17,7 +17,7 @@ const counts = {
   "CITYU": 60,
   "HKBU": 14,
   "EDUHK": 24,
-  "LINGNAN": 10
+  "LINGNAN": 11
 };
 const packageNames = {
   "HKU": [

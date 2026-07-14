@@ -7928,7 +7928,7 @@ module.exports = {
       "name": "Master of Social Sciences in Comparative Social Policy (International)",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -7940,21 +7940,28 @@ module.exports = {
           "id": "LINGNAN-TPG-DIR-17-000204-L6-25-000017-L6",
           "code": "25/000017/L6",
           "name": "Social Innovation",
-          "type": "specialism",
-          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "type": "Concentration",
+          "sourceUrl": "https://www.ln.edu.hk/socsp/imcsp/programme-overview/programme-structure",
           "lastVerifiedAt": "2026-07-11"
         },
         {
           "id": "LINGNAN-TPG-DIR-17-000204-L6-25-000023-L6",
           "code": "25/000023/L6",
           "name": "Social Research",
-          "type": "specialism",
-          "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
+          "type": "Concentration",
+          "sourceUrl": "https://www.ln.edu.hk/socsp/imcsp/programme-overview/programme-structure",
           "lastVerifiedAt": "2026-07-11"
         }
       ],
-      "dataLevel": "programme",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-14",
+      "courseSourceUrl": "https://www.ln.edu.hk/socsp/imcsp/programme-overview/programme-structure",
+      "courseStatusNote": "",
+      "trackSelectionOptional": true,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified",
+      "courseCount": 13
     },
     {
       "id": "LINGNAN-TPG-DIR-17-000487-L6",
