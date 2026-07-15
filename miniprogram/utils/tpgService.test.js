@@ -9,8 +9,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 238);
-  assert.equal(coverage.courseCount, 5743);
+  assert.equal(coverage.programmeWithCoursesCount, 239);
+  assert.equal(coverage.courseCount, 5782);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -29,8 +29,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 238);
-  assert.equal(rows.length, 238);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 239);
+  assert.equal(rows.length, 239);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
@@ -2036,6 +2036,39 @@ test('PolyU Health Informatics exposes official coded pools without combining co
   assert.equal(tpgService.getProgrammeCourse(programme.id, 'HTI5T04').credits, 1);
   assert.match(tpgService.getProgrammeCourse(programme.id, 'SN5023').sourceUrl, /sn5023\.pdf$/);
   assert.match(programme.courseStatusNote, /mutually exclusive/);
+});
+
+test('PolyU Chinese Culture exposes cross-area pools and separate full-time and part-time Dissertation codes', () => {
+  const programme = tpgService.getProgramme('POLYU-TPG-086');
+  const status = tpgService.getStatus(programme);
+  const courses = tpgService.flattenCourses(programme);
+  const area1 = programme.courseGroups.find((group) => group.id === 'core-area-1');
+  const area2 = programme.courseGroups.find((group) => group.id === 'core-area-2');
+  const area3 = programme.courseGroups.find((group) => group.id === 'core-area-3');
+  const freeElectives = programme.courseGroups.find((group) => group.id === 'free-electives');
+  const fullTimeDissertation = tpgService.getProgrammeCourse(programme.id, 'CHC5503');
+  const partTimeDissertation = tpgService.getProgrammeCourse(programme.id, 'CHC5504');
+
+  assert.equal(programme.creditsRequired, 31);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(status.isComplete, true);
+  assert.equal(status.courseCount, 39);
+  assert.equal(courses.length, 39);
+  assert.deepEqual([area1.creditsRequired, area1.coursesRequired, area1.courses.length], [3, 1, 11]);
+  assert.deepEqual([area2.creditsRequired, area2.coursesRequired, area2.courses.length], [3, 1, 9]);
+  assert.deepEqual([area3.creditsRequired, area3.coursesRequired, area3.courses.length], [3, 1, 9]);
+  assert.equal(freeElectives.courses.length, 5);
+  assert.equal(fullTimeDissertation.name, 'MA Dissertation (For full-time students)');
+  assert.equal(partTimeDissertation.name, 'MA Dissertation (For part-time students)');
+  assert.equal(fullTimeDissertation.credits, 9);
+  assert.equal(partTimeDissertation.credits, 9);
+  assert.equal(fullTimeDissertation.conditionalRequirement, true);
+  assert.equal(partTimeDissertation.conditionalRequirement, true);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'CHC5301').name, 'Expressions and Applications of Chinese Writing');
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'CHC5T06').credits, 1);
+  assert.match(fullTimeDissertation.sourceUrl, /chc5503_chc5504\.pdf$/);
+  assert.match(programme.courseStatusNote, /must not be combined/);
+  assert.match(programme.courseStatusNote, /PgD exit award is not modelled/);
 });
 
 test('PolyU Agentic AI Systems exposes the official 2027 curriculum choices', () => {

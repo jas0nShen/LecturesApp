@@ -14,6 +14,7 @@ const verifiedIds = new Set([
   'POLYU-TPG-077',
   'POLYU-TPG-078',
   'POLYU-TPG-079',
+  'POLYU-TPG-086',
   'POLYU-TPG-089',
   'POLYU-TPG-090',
   'POLYU-TPG-092',

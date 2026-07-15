@@ -29,6 +29,7 @@ const { SPECIALISM_ID: POLYU_REHAB_SPECIALISM_ID, buildSupplement: buildPolyuAdv
 const { buildSupplement: buildPolyuActuarialInvestmentScienceSupplement } = require('./build-polyu-actuarial-investment-science-supplement');
 const { buildSupplement: buildPolyuAmaFinanceAiSupplement } = require('./build-polyu-ama-finance-ai-supplements');
 const { buildSupplement: buildPolyuHealthInformaticsSupplement } = require('./build-polyu-health-informatics-supplement');
+const { buildSupplement: buildPolyuChineseCultureSupplement } = require('./build-polyu-chinese-culture-supplement');
 const { IT_TRACKS, buildInformationTechnology } = require('./build-polyu-comp-supplements');
 
 function fixtureCatalogue() {
@@ -425,6 +426,35 @@ test('PolyU Health Informatics preserves the Dissertation and taught completion 
   assert.match(core.courses.find((course) => course.code === 'COMP5511').sourceUrl, /comp5511\.pdf$/);
   assert.match(electives.courses.find((course) => course.code === 'BME5133').sourceUrl, /bme5133\.pdf$/);
   assert.match(programme.statusNote, /mutually exclusive/);
+});
+
+test('PolyU Chinese Culture preserves cross-area electives and mode-specific Dissertation codes', () => {
+  const supplement = buildPolyuChineseCultureSupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'polyu-chinese-culture-2027.json');
+  const programme = supplement.programmes[0];
+  const [compulsory, area1, area2, area3, freeElectives, dissertation, academicIntegrity] = programme.courseGroups;
+  const courses = programme.courseGroups.flatMap((group) => group.courses);
+
+  assert.equal(programme.programmeId, 'POLYU-TPG-086');
+  assert.equal(programme.creditsRequired, 31);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.deepEqual([compulsory.creditsRequired, compulsory.coursesRequired, compulsory.courses.length], [6, 2, 2]);
+  assert.deepEqual([area1.creditsRequired, area1.coursesRequired, area1.courses.length], [3, 1, 11]);
+  assert.deepEqual([area2.creditsRequired, area2.coursesRequired, area2.courses.length], [3, 1, 9]);
+  assert.deepEqual([area3.creditsRequired, area3.coursesRequired, area3.courses.length], [3, 1, 9]);
+  assert.equal(freeElectives.courses.length, 5);
+  assert.match(freeElectives.ruleText, /shared with additional subjects from Core Areas 1, 2 and 3/);
+  assert.deepEqual(dissertation.courses.map((course) => [course.code, course.name, course.credits, course.courseKind, course.conditionalRequirement]), [
+    ['CHC5503', 'MA Dissertation (For full-time students)', 9, 'dissertation', true],
+    ['CHC5504', 'MA Dissertation (For part-time students)', 9, 'dissertation', true]
+  ]);
+  assert.equal(academicIntegrity.courses[0].code, 'CHC5T06');
+  assert.equal(courses.length, 39);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 39);
+  assert.match(area3.courses.find((course) => course.code === 'CHC5301').name, /^Expressions and Applications/);
+  assert.match(programme.statusNote, /PgD exit award is not modelled/);
+  assert.match(programme.statusNote, /must not be combined/);
 });
 
 test('PolyU Information Technology preserves optional Streams and all three completion paths', () => {

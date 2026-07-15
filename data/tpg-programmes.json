@@ -31140,13 +31140,373 @@
       "faculty": "PhD, MSc (Research), BSc (MLS)",
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/77002-maf-map",
-      "dataLevel": "programme",
-      "courseGroups": [],
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "compulsory-subjects",
+          "name": "Compulsory Subjects",
+          "type": "core",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Complete both 3-credit Compulsory Subjects for either MA path.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/chc/study/ma/ma-list-of-all-subjects/?sc_lang=en",
+          "courses": [
+            {
+              "code": "CHC5001",
+              "name": "Introduction to the Study of Chinese Culture",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5001.pdf"
+            },
+            {
+              "code": "CHC5002",
+              "name": "Studying Chinese Culture through Fieldtrips",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5002.pdf"
+            }
+          ]
+        },
+        {
+          "id": "core-area-1",
+          "name": "Core Area 1: Society and Culture",
+          "type": "elective",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Complete at least one 3-credit subject from Core Area 1 for either MA path. Additional subjects from this area may count toward the shared cross-area elective quota.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/chc/study/ma/ma-list-of-all-subjects/?sc_lang=en",
+          "courses": [
+            {
+              "code": "CHC5101",
+              "name": "Chinese Dietary Culture",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5101.pdf"
+            },
+            {
+              "code": "CHC5102",
+              "name": "Chinese Customs and Etiquettes",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/ma/chc5102.pdf"
+            },
+            {
+              "code": "CHC5103",
+              "name": "Underground Societies in China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5103.pdf"
+            },
+            {
+              "code": "CHC5104",
+              "name": "Folk Beliefs and Occult Science",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5104.pdf"
+            },
+            {
+              "code": "CHC5105",
+              "name": "Gender and Sexuality in Modern China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5105.pdf"
+            },
+            {
+              "code": "CHC5107",
+              "name": "Special Topic on Society and Culture",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5107.pdf"
+            },
+            {
+              "code": "CHC5115",
+              "name": "Modern China’s Intra-Asian Political and Cultural Relations",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5115.pdf"
+            },
+            {
+              "code": "CHC5116",
+              "name": "China’s Frontiers: Society, History & Culture",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5116.pdf"
+            },
+            {
+              "code": "CHC5117",
+              "name": "The Culture of Work in Contemporary China: From Maoist China to Reform and Opening-Up to the Age of Artificial Intelligence",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5117.pdf"
+            },
+            {
+              "code": "CHC5118",
+              "name": "Society and Culture of Civil Service Examinations in Premodern China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5118.pdf"
+            },
+            {
+              "code": "CHC5119",
+              "name": "Chinese-Language Cinema and Society",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5119.pdf"
+            }
+          ]
+        },
+        {
+          "id": "core-area-2",
+          "name": "Core Area 2: Religions and Thought",
+          "type": "elective",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Complete at least one 3-credit subject from Core Area 2 for either MA path. Additional subjects from this area may count toward the shared cross-area elective quota.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/chc/study/ma/ma-list-of-all-subjects/?sc_lang=en",
+          "courses": [
+            {
+              "code": "CHC5201",
+              "name": "Government and Education in Confucianism",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5201.pdf"
+            },
+            {
+              "code": "CHC5202",
+              "name": "Buddhism and Chinese Culture",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/ma/chc5202.pdf"
+            },
+            {
+              "code": "CHC5203",
+              "name": "Daoism and Chinese Culture",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5203.pdf"
+            },
+            {
+              "code": "CHC5204",
+              "name": "Islam, Christianity and Chinese Culture",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5204.pdf"
+            },
+            {
+              "code": "CHC5205",
+              "name": "Special Topic on Religions and Thought",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5205.pdf"
+            },
+            {
+              "code": "CHC5211",
+              "name": "Early Chinese Thought, Belief, and Technology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5211.pdf"
+            },
+            {
+              "code": "CHC5212",
+              "name": "Song-Ming Confucianism",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5212.pdf"
+            },
+            {
+              "code": "CHC5213",
+              "name": "The Making of Chinese Martial Arts Tradition",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5213.pdf"
+            },
+            {
+              "code": "CHC5214",
+              "name": "Science, Technology and Thought in China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5214.pdf"
+            }
+          ]
+        },
+        {
+          "id": "core-area-3",
+          "name": "Core Area 3: Literature and Arts",
+          "type": "elective",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Complete at least one 3-credit subject from Core Area 3 for either MA path. Additional subjects from this area may count toward the shared cross-area elective quota.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/chc/study/ma/ma-list-of-all-subjects/?sc_lang=en",
+          "courses": [
+            {
+              "code": "CHC5301",
+              "name": "Expressions and Applications of Chinese Writing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5301.pdf"
+            },
+            {
+              "code": "CHC5302",
+              "name": "Appreciation of Chinese Classical Rhymed Writings",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5302.pdf"
+            },
+            {
+              "code": "CHC5304",
+              "name": "Chinese Traditional Theatre and Performing Arts",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5304.pdf"
+            },
+            {
+              "code": "CHC5305",
+              "name": "Special Topic on Literature and Arts",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/ma/chc5305.pdf"
+            },
+            {
+              "code": "CHC5311",
+              "name": "Classical Chinese Fiction",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5311.pdf"
+            },
+            {
+              "code": "CHC5312",
+              "name": "Modern Chinese Literature",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/ma/chc5312.pdf"
+            },
+            {
+              "code": "CHC5313",
+              "name": "Music and Language in Traditional Chinese Poetry and Drama",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5313.pdf"
+            },
+            {
+              "code": "CHC5314",
+              "name": "The Book of Poetry and Chinese Culture",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5314.pdf"
+            },
+            {
+              "code": "CHC5315",
+              "name": "A History of Chinese Calligraphy and Painting",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5315.pdf"
+            }
+          ]
+        },
+        {
+          "id": "free-electives",
+          "name": "Other Free Elective Subjects",
+          "type": "elective",
+          "ruleText": "These subjects may count toward the five additional electives required on the Non-Dissertation path or the two additional electives required on the Dissertation path. The quota is shared with additional subjects from Core Areas 1, 2 and 3, so it requires manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/chc/study/ma/ma-list-of-all-subjects/?sc_lang=en",
+          "courses": [
+            {
+              "code": "CHC5401",
+              "name": "Businessmen and Business Culture in China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5401.pdf"
+            },
+            {
+              "code": "CHC5405",
+              "name": "Special Topic on Business, Tourism and Cultural Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5405.pdf"
+            },
+            {
+              "code": "CHC5406",
+              "name": "Great Works on Chinese Geography and Travel",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/ma/chc5406.pdf"
+            },
+            {
+              "code": "CHC5409",
+              "name": "Chinese Studies and Generative AI: Opportunity, Challenge, and Ethics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/ma/chc5409.pdf"
+            },
+            {
+              "code": "CHC5502",
+              "name": "Selected Topics and Readings in Chinese Culture",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/ma/chc5502.pdf"
+            }
+          ]
+        },
+        {
+          "id": "dissertation-option",
+          "name": "MA Dissertation Option",
+          "type": "dissertation",
+          "ruleText": "On the Dissertation path, full-time students complete CHC5503 and part-time students complete CHC5504. Each is a 9-credit MA Dissertation; the two mode-specific codes are alternatives and must not be combined.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5503_chc5504.pdf",
+          "courses": [
+            {
+              "code": "CHC5503",
+              "name": "MA Dissertation (For full-time students)",
+              "credits": 9,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5503_chc5504.pdf",
+              "courseKind": "dissertation",
+              "conditionalRequirement": true
+            },
+            {
+              "code": "CHC5504",
+              "name": "MA Dissertation (For part-time students)",
+              "credits": 9,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5503_chc5504.pdf",
+              "courseKind": "dissertation",
+              "conditionalRequirement": true
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Academic Integrity and Ethics",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete CHC5T06 for 1 credit in either MA path.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/chc/study/ma/ma-list-of-all-subjects/?sc_lang=en",
+          "courses": [
+            {
+              "code": "CHC5T06",
+              "name": "Academic Integrity and Ethics in China-related Humanities",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/chc/-/media/department/chc/content/study/master-of-arts-ma/chc5t06.pdf"
+            }
+          ]
+        }
+      ],
       "academicYear": "2027-28",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/77002-maf-map",
-      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+      "courseStatusNote": "The official 2027 Programme page publishes both 31-credit MA paths and the current Department of Chinese History and Culture subject table publishes the matching codes, titles, credits and Subject Description PDFs. Both paths require the two Compulsory Subjects, the 1-credit AIE subject and at least one subject from each of the three Core Areas. The Non-Dissertation path then requires five additional electives from any published area; the Dissertation path requires two additional electives plus either CHC5503 for full-time students or CHC5504 for part-time students. The shared cross-area elective quota requires manual audit review, and the two mutually exclusive mode-specific Dissertation codes must not be combined. The PgD exit award is not modelled as an MA completion path. The current CHC table and CHC5301 Subject Description use “Expressions and Applications of Chinese Writing”, while the 2027 Programme page uses the singular “Expression and Application”; the current Subject Description title is retained.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required"
     },
     {
       "id": "POLYU-TPG-087",

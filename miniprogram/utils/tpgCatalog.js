@@ -4083,13 +4083,15 @@ module.exports = {
       "faculty": "PhD, MSc (Research), BSc (MLS)",
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/77002-maf-map",
-      "dataLevel": "programme",
+      "dataLevel": "structure",
       "academicYear": "2027-28",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/77002-maf-map",
-      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
-      "courseCount": 0
+      "courseStatusNote": "The official 2027 Programme page publishes both 31-credit MA paths and the current Department of Chinese History and Culture subject table publishes the matching codes, titles, credits and Subject Description PDFs. Both paths require the two Compulsory Subjects, the 1-credit AIE subject and at least one subject from each of the three Core Areas. The Non-Dissertation path then requires five additional electives from any published area; the Dissertation path requires two additional electives plus either CHC5503 for full-time students or CHC5504 for part-time students. The shared cross-area elective quota requires manual audit review, and the two mutually exclusive mode-specific Dissertation codes must not be combined. The PgD exit award is not modelled as an MA completion path. The current CHC table and CHC5301 Subject Description use “Expressions and Applications of Chinese Writing”, while the 2027 Programme page uses the singular “Expression and Application”; the current Subject Description title is retained.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 39
     },
     {
       "id": "POLYU-TPG-087",
