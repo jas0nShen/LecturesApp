@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "POLYU",
+  "academicYear": "2027-28",
+  "verifiedAt": "2026-07-15",
+  "programmes": [
+    {
+      "programmeId": "POLYU-TPG-001",
+      "programmeName": "Professional Accounting",
+      "faculty": "School of Accounting and Finance (AF)",
+      "status": "verified",
+      "creditsRequired": 37,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21046-maf-paf-mae-pap",
+      "ruleReviewStatus": "verified",
+      "statusNote": "The official 2027 Programme page publishes the 37-credit Master structure: eight Core Subjects for 22 credits, two additional Compulsory Subjects for 6 credits, and any three of seven Elective Subjects for 9 credits. The separate 22-credit Postgraduate Diploma exit award is not modelled as a Master completion path. The current public School of Accounting and Finance 2025/26 Taught Postgraduate Subject Syllabi catalogue publishes an MPA-labelled entry for every named subject and confirms the official code and credit value; the linked Subject Description Forms confirm that the MPA suffix is a catalogue context label rather than part of the subject code. Not all subjects are offered every year, and availability remains subject to staffing resources and student enrolment.",
+      "courseGroups": [
+        {
+          "id": "core-subjects",
+          "name": "Core Subjects",
+          "type": "core",
+          "creditsRequired": 22,
+          "coursesRequired": 8,
+          "ruleText": "Complete all eight Core Subjects for 22 credits. These subjects also form the separate Postgraduate Diploma curriculum, which is not modelled as a Master completion path.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21046-maf-paf-mae-pap",
+          "courses": [
+            {
+              "code": "AF5111",
+              "name": "Accounting for Corporations",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5113",
+              "name": "Accounting for Strategic Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5201",
+              "name": "Auditing Framework",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5902",
+              "name": "Financial Reporting Environment",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5206",
+              "name": "Hong Kong Tax Framework",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5112",
+              "name": "Management Accounting",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5326",
+              "name": "Managerial Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5T21",
+              "name": "Academic Integrity and Ethics in Business",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/",
+              "courseKind": "academic_integrity"
+            }
+          ]
+        },
+        {
+          "id": "compulsory-subjects",
+          "name": "Additional Compulsory Subjects",
+          "type": "core",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Complete both additional Compulsory Subjects for 6 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21046-maf-paf-mae-pap",
+          "courses": [
+            {
+              "code": "AF5102",
+              "name": "Accounting Theory",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5508",
+              "name": "Corporate Governance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            }
+          ]
+        },
+        {
+          "id": "elective-subjects",
+          "name": "Elective Subjects",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Choose any three Elective Subjects for 9 credits. Not all subjects are offered each year.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21046-maf-paf-mae-pap",
+          "courses": [
+            {
+              "code": "AF5122",
+              "name": "Business Analytics in Accounting and Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5373",
+              "name": "ESG Investment and Green Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5302",
+              "name": "Finance for Multinational Corporations",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5114",
+              "name": "Financial Statement Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5321",
+              "name": "Mergers and Acquisitions",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5222",
+              "name": "Strategic Tax Management in Hong Kong and China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5110",
+              "name": "Theory and Practice of Accounting in China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

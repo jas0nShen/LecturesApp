@@ -2663,17 +2663,19 @@ module.exports = {
       "id": "POLYU-TPG-001",
       "universityCode": "POLYU",
       "programmeCode": "21046",
-      "name": "Accounting",
-      "faculty": "Department of Accounting and Finance (AF)",
-      "creditsRequired": 22,
+      "name": "Professional Accounting",
+      "faculty": "School of Accounting and Finance (AF)",
+      "creditsRequired": 37,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21046-maf-paf-mae-pap",
-      "dataLevel": "programme",
+      "dataLevel": "structure",
       "academicYear": "2027-28",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21046-maf-paf-mae-pap",
-      "courseStatusNote": "The official Programme page could not be fetched during the 2026-07-11 verification: Client network socket disconnected before secure TLS connection was established",
-      "courseCount": 0
+      "courseStatusNote": "The official 2027 Programme page publishes the 37-credit Master structure: eight Core Subjects for 22 credits, two additional Compulsory Subjects for 6 credits, and any three of seven Elective Subjects for 9 credits. The separate 22-credit Postgraduate Diploma exit award is not modelled as a Master completion path. The current public School of Accounting and Finance 2025/26 Taught Postgraduate Subject Syllabi catalogue publishes an MPA-labelled entry for every named subject and confirms the official code and credit value; the linked Subject Description Forms confirm that the MPA suffix is a catalogue context label rather than part of the subject code. Not all subjects are offered every year, and availability remains subject to staffing resources and student enrolment.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified",
+      "courseCount": 17
     },
     {
       "id": "POLYU-TPG-002",
@@ -4554,15 +4556,33 @@ module.exports = {
       "universityCode": "POLYU",
       "programmeCode": "71026",
       "name": "English Studies for the Professions",
-      "faculty": "School of Law (SL)",
-      "creditsRequired": 19,
+      "faculty": "Faculty of Humanities",
+      "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/71026-mcf-mcp-mlf-mlp",
       "dataLevel": "programme",
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/71026-mcf-mcp-mlf-mlp",
-      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseStatusNote": "The official 2027 Programme page corrects the MA total to 31 credits, identifies the Faculty of Humanities, requires applicants to choose English for Professional Communication or English Language Teaching, and publishes the current Compulsory, Specialism-specific Core, Specialism-specific Elective and Common Elective subject-title pools. The current Department of English and Communication Full Subject List recovers exact code entries for 27 named taught subjects. It also publishes ENGL5012 Research Project in Language Studies, ENGL580 Research Project and ENGL587 Research Project; the linked official Subject Description Forms assign 6 credits to each, describe ENGL580 as professional-communication research and ENGL587 as classroom-based or classroom-oriented research, but the Programme page uses only generic or plural Research Project labels and does not explicitly assign those codes or state whether ENGL5012 is included. The current Full Subject List does not publish entries for Professional Ethics and Academic Integrity or the subject-to-approval Time in Second Language Teaching and Learning. In addition, the December 2025 official Programme flyer linked from the Department 2027/28 page publishes an all-coursework Route and a coursework-and-research Route with three Specialism-specific Core subjects for either Specialism, while the 2027 Programme page requires three such Core subjects for EPC but five for ELT and does not describe those two Routes. The Programme remains blocked rather than selecting the AIE or Time subject codes from another Programme, guessing the Research Project membership, or choosing between conflicting official completion paths.",
+      "tracks": [
+        {
+          "id": "POLYU-TPG-103-ENGLISH-FOR-PROFESSIONAL-COMMUNICATION",
+          "name": "English for Professional Communication",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/71026-mcf-mcp-mlf-mlp"
+        },
+        {
+          "id": "POLYU-TPG-103-ENGLISH-LANGUAGE-TEACHING",
+          "name": "English Language Teaching",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/71026-mcf-mcp-mlf-mlp"
+        }
+      ],
+      "trackSelectionOptional": false,
+      "creditUnit": "credits",
       "courseCount": 0
     },
     {

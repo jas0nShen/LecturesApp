@@ -9,8 +9,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 241);
-  assert.equal(coverage.courseCount, 5859);
+  assert.equal(coverage.programmeWithCoursesCount, 242);
+  assert.equal(coverage.courseCount, 5876);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -29,8 +29,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 241);
-  assert.equal(rows.length, 241);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 242);
+  assert.equal(rows.length, 242);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
@@ -268,6 +268,52 @@ test('PolyU Global Hospitality Business corrects its total while partner-institu
   assert.match(programme.courseStatusNote, /9 of the 12 credits completed at each partner institution/);
   assert.match(programme.courseStatusNote, /does not identify the University of Houston Elective title or code/);
   assert.match(programme.courseStatusNote, /rather than publishing only the six PolyU-coded subjects/);
+});
+
+test('PolyU English Studies corrects its faculty, total and Specialisms while official sources conflict', () => {
+  const programme = tpgService.getProgramme('POLYU-TPG-103');
+  const tracks = tpgService.listTracks(programme);
+
+  assert.equal(programme.faculty, 'Faculty of Humanities');
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal(programme.creditsRequired, 31);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.courseVerifiedAt, '2026-07-15');
+  assert.equal(programme.trackSelectionOptional, false);
+  assert.deepEqual(tracks.map((track) => track.name), [
+    'English for Professional Communication',
+    'English Language Teaching'
+  ]);
+  assert.equal((programme.courseGroups || []).length, 0);
+  assert.match(programme.courseStatusNote, /exact code entries for 27 named taught subjects/);
+  assert.match(programme.courseStatusNote, /ENGL5012 Research Project in Language Studies/);
+  assert.match(programme.courseStatusNote, /ENGL580 Research Project and ENGL587 Research Project/);
+  assert.match(programme.courseStatusNote, /Professional Ethics and Academic Integrity/);
+  assert.match(programme.courseStatusNote, /Time in Second Language Teaching and Learning/);
+  assert.match(programme.courseStatusNote, /conflicting official completion paths/);
+});
+
+test('PolyU Professional Accounting exposes the verified 22-plus-6-plus-9 Master structure', () => {
+  const programme = tpgService.getProgramme('POLYU-TPG-001');
+  const status = tpgService.getStatus(programme);
+
+  assert.equal(programme.name, 'Professional Accounting');
+  assert.equal(programme.faculty, 'School of Accounting and Finance (AF)');
+  assert.equal(programme.creditsRequired, 37);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.courseVerificationStatus, 'verified');
+  assert.equal(programme.courseVerifiedAt, '2026-07-15');
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.equal(programme.courseGroups.length, 3);
+  assert.equal(status.isComplete, true);
+  assert.equal(status.courseCount, 17);
+  assert.equal(programme.courseGroups.find((group) => group.id === 'core-subjects').creditsRequired, 22);
+  assert.equal(programme.courseGroups.find((group) => group.id === 'compulsory-subjects').creditsRequired, 6);
+  assert.equal(programme.courseGroups.find((group) => group.id === 'elective-subjects').coursesRequired, 3);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'AF5111').credits, 3);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'AF5T21').credits, 1);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'AF5508').name, 'Corporate Governance');
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'AF5122').name, 'Business Analytics in Accounting and Finance');
 });
 
 test('PolyU Generative AI and the Humanities filters both official Specialism elective pools', () => {

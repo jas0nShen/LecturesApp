@@ -5,6 +5,7 @@ const ROOT = path.join(__dirname, '..');
 const source = require('../data/tpg-source-snapshots/polyu-2027.json');
 const outputPath = path.join(ROOT, 'data', 'tpg-course-supplements', 'polyu-source-status-2027.json');
 const verifiedIds = new Set([
+  'POLYU-TPG-001',
   'POLYU-TPG-013',
   'POLYU-TPG-014',
   'POLYU-TPG-015',
@@ -169,6 +170,31 @@ const statusOverrides = {
     creditUnit: 'credits',
     sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/24043',
     statusNote: 'The official 2027 Programme page corrects the total to 37 credits and publishes the complete three-semester joint-degree structure. At EHL Hospitality Business School, students complete four named 3-credit Compulsory subjects. At PolyU, they complete HTM5T02 Academic Integrity and Ethics in Business Studies and Research (1 credit), HTM562-HTM565 (3 credits each) and HTM566 Capstone Consulting Project (6 credits). At the University of Houston, they complete three named 3-credit Compulsory subjects and one 3-credit Elective. The official transfer rule counts 9 of the 12 credits completed at each partner institution, for 18 transferred credits plus 19 PolyU credits. The public Programme page does not publish course codes for any EHL or University of Houston subject and does not identify the University of Houston Elective title or code. No current public official EHL or University of Houston Programme or course-catalogue page was found that maps these exact joint-degree titles to stable codes. The Programme remains blocked rather than publishing only the six PolyU-coded subjects, inventing partner-institution codes or treating all 24 partner credits as degree credits.'
+  },
+  'POLYU-TPG-103': {
+    verifiedAt: '2026-07-15',
+    faculty: 'Faculty of Humanities',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    trackSelectionOptional: false,
+    tracks: [
+      {
+        id: 'POLYU-TPG-103-ENGLISH-FOR-PROFESSIONAL-COMMUNICATION',
+        name: 'English for Professional Communication',
+        type: 'Specialism',
+        creditsRequired: 31,
+        sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/71026-mcf-mcp-mlf-mlp'
+      },
+      {
+        id: 'POLYU-TPG-103-ENGLISH-LANGUAGE-TEACHING',
+        name: 'English Language Teaching',
+        type: 'Specialism',
+        creditsRequired: 31,
+        sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/71026-mcf-mcp-mlf-mlp'
+      }
+    ],
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/71026-mcf-mcp-mlf-mlp',
+    statusNote: 'The official 2027 Programme page corrects the MA total to 31 credits, identifies the Faculty of Humanities, requires applicants to choose English for Professional Communication or English Language Teaching, and publishes the current Compulsory, Specialism-specific Core, Specialism-specific Elective and Common Elective subject-title pools. The current Department of English and Communication Full Subject List recovers exact code entries for 27 named taught subjects. It also publishes ENGL5012 Research Project in Language Studies, ENGL580 Research Project and ENGL587 Research Project; the linked official Subject Description Forms assign 6 credits to each, describe ENGL580 as professional-communication research and ENGL587 as classroom-based or classroom-oriented research, but the Programme page uses only generic or plural Research Project labels and does not explicitly assign those codes or state whether ENGL5012 is included. The current Full Subject List does not publish entries for Professional Ethics and Academic Integrity or the subject-to-approval Time in Second Language Teaching and Learning. In addition, the December 2025 official Programme flyer linked from the Department 2027/28 page publishes an all-coursework Route and a coursework-and-research Route with three Specialism-specific Core subjects for either Specialism, while the 2027 Programme page requires three such Core subjects for EPC but five for ELT and does not describe those two Routes. The Programme remains blocked rather than selecting the AIE or Time subject codes from another Programme, guessing the Research Project membership, or choosing between conflicting official completion paths.'
   },
   'POLYU-TPG-076': {
     verifiedAt: '2026-07-15',
