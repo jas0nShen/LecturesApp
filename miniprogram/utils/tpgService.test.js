@@ -502,6 +502,90 @@ test('PolyU AAE programmes preserve verified totals while their uncoded Disserta
   assert.match(satellite.courseStatusNote, /rather than deriving the missing LSGI credits from the 31-credit total/);
 });
 
+test('PolyU PM and APSS source-blocked programmes preserve verified 2027 metadata without inferring codes', () => {
+  const microelectronics = tpgService.getProgramme('POLYU-TPG-016');
+  const photonics = tpgService.getProgramme('POLYU-TPG-017');
+  const mentalHealth = tpgService.getProgramme('POLYU-TPG-018');
+  const familyTherapy = tpgService.getProgramme('POLYU-TPG-019');
+
+  [microelectronics, photonics, mentalHealth, familyTherapy].forEach((programme) => {
+    assert.equal(programme.courseVerificationStatus, 'blocked');
+    assert.equal(programme.creditsRequired, 31);
+    assert.equal(programme.creditUnit, 'credits');
+    assert.equal(programme.courseVerifiedAt, '2026-07-15');
+    assert.equal((programme.courseGroups || []).length, 0);
+  });
+
+  assert.equal(microelectronics.faculty, 'Department of Physics and Materials (PM)');
+  assert.match(microelectronics.courseStatusNote, /AP5020 Project/);
+  assert.match(microelectronics.courseStatusNote, /Wide Bandgap Semiconductors for Microelectronics/);
+  assert.match(microelectronics.courseStatusNote, /AP5T01 Academic Integrity and Ethics in Science/);
+  assert.match(microelectronics.courseStatusNote, /rather than substituting the differently titled AP5T01/);
+
+  assert.equal(photonics.faculty, 'Department of Physics and Materials (PM)');
+  assert.match(photonics.courseStatusNote, /any of the eight 2027 Core titles/);
+  assert.match(photonics.courseStatusNote, /AP5008 Microelectronics Packaging and Reliability/);
+  assert.match(photonics.courseStatusNote, /AP5022 Energy Efficient Lighting and Control/);
+  assert.match(photonics.courseStatusNote, /rather than inferring the new photonics codes/);
+
+  assert.equal(mentalHealth.name, 'Mental Health');
+  assert.match(mentalHealth.courseStatusNote, /22 credits as the optional Postgraduate Diploma early-exit award/);
+  assert.match(mentalHealth.courseStatusNote, /publishes the subject codes or an explicit credit value for each named taught subject/);
+  assert.match(mentalHealth.courseStatusNote, /rather than retaining the 22-credit exit-award total/);
+
+  assert.equal(familyTherapy.name, 'Marriage and Family Therapy');
+  assert.match(familyTherapy.courseStatusNote, /31-credit coursework path without clinical training/);
+  assert.match(familyTherapy.courseStatusNote, /32-credit path with 300-hour practicum training/);
+  assert.match(familyTherapy.courseStatusNote, /will not invite applications for 2027\/28/);
+  assert.match(familyTherapy.courseStatusNote, /rather than retaining the scraper-truncated title or 13-credit post-degree figure/);
+});
+
+test('PolyU APSS 020 to 025 correct scraper totals and preserve exact public code gaps', () => {
+  const socialWork = tpgService.getProgramme('POLYU-TPG-020');
+  const socialPolicy = tpgService.getProgramme('POLYU-TPG-021');
+  const appliedPsychology = tpgService.getProgramme('POLYU-TPG-022');
+  const diverseLearningNeeds = tpgService.getProgramme('POLYU-TPG-023');
+  const schoolPsychology = tpgService.getProgramme('POLYU-TPG-024');
+  const guidance = tpgService.getProgramme('POLYU-TPG-025');
+
+  [socialWork, socialPolicy, appliedPsychology, diverseLearningNeeds, schoolPsychology, guidance].forEach((programme) => {
+    assert.equal(programme.courseVerificationStatus, 'blocked');
+    assert.equal(programme.creditUnit, 'credits');
+    assert.equal(programme.courseVerifiedAt, '2026-07-15');
+    assert.equal(programme.faculty, 'Department of Applied Social Sciences (APSS)');
+    assert.equal((programme.courseGroups || []).length, 0);
+  });
+
+  assert.equal(socialWork.creditsRequired, 37);
+  assert.match(socialWork.courseStatusNote, /1-credit HTI5T04 Academic Integrity and Ethics/);
+  assert.match(socialWork.courseStatusNote, /8 clinical or field credits/);
+  assert.match(socialWork.courseStatusNote, /rather than splitting the aggregate 8 field credits/);
+
+  assert.equal(socialPolicy.name, 'Social Policy and Social Development');
+  assert.equal(socialPolicy.creditsRequired, 31);
+  assert.match(socialPolicy.courseStatusNote, /22-credit Postgraduate Diploma early-exit award/);
+  assert.match(socialPolicy.courseStatusNote, /rather than retaining the scraper-truncated title Development/);
+
+  assert.equal(appliedPsychology.name, 'Applied Psychology');
+  assert.equal(appliedPsychology.creditsRequired, 31);
+  assert.match(appliedPsychology.courseStatusNote, /6-credit Foundational Competencies subject/);
+  assert.match(appliedPsychology.courseStatusNote, /publishes any subject code, including the AIE code/);
+
+  assert.equal(diverseLearningNeeds.name, 'Applied Psychology (Diverse Learning Needs)');
+  assert.equal(diverseLearningNeeds.creditsRequired, 31);
+  assert.match(diverseLearningNeeds.courseStatusNote, /9 credits of MAP Common Core Subjects/);
+  assert.match(diverseLearningNeeds.courseStatusNote, /rather than retaining the 9-credit Common Core subtotal as the degree total/);
+
+  assert.equal(schoolPsychology.creditsRequired, 31);
+  assert.match(schoolPsychology.courseStatusNote, /at least one Elective marked for school settings/);
+  assert.match(schoolPsychology.courseStatusNote, /publishes any subject code, including the AIE code/);
+
+  assert.equal(guidance.creditsRequired, 31);
+  assert.match(guidance.courseStatusNote, /6-credit Counselling Practicum Practice Option/);
+  assert.match(guidance.courseStatusNote, /6-credit Research Option comprising Practice Research and Integrative Project/);
+  assert.match(guidance.courseStatusNote, /rather than retaining the 22-credit exit-award total/);
+});
+
 test('PolyU Generative AI and the Humanities filters both official Specialism elective pools', () => {
   const programme = tpgService.getProgramme('POLYU-TPG-094');
   const tracks = Object.fromEntries(tpgService.listTracks(programme).map((track) => [track.name, track.id]));

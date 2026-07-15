@@ -68,6 +68,94 @@ const statusOverrides = {
     sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/48008-smf-smp',
     statusNote: 'The official 2027 Programme page and current 2026/27 Satellite Engineering leaflet publish the complete twelve-subject Core and Elective pools and two 31-credit MSc routes: seven taught subjects including all six Core Subjects plus a 9-credit Dissertation, or ten taught subjects including all six Core Subjects, together with the 1-credit EEE5T03 AIE requirement. The current AAE Subject List publishes official Subject Description Forms for all six AAE-coded subjects, but the public Programme Requirement Documents page does not publish a document for Programme 48008 and the Programme sources do not state explicit per-course credits for the six LSGI subjects. They also identify the Dissertation only as a 9-credit dissertation and publish no subject code for it. The Programme remains blocked rather than deriving the missing LSGI credits from the 31-credit total, inventing a Dissertation code or exposing an incomplete course pool.'
   },
+  'POLYU-TPG-016': {
+    verifiedAt: '2026-07-15',
+    faculty: 'Department of Physics and Materials (PM)',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/11044',
+    statusNote: 'The official 2027 Programme page publishes the complete 31-credit Microelectronics Technology and Materials rule: six 3-credit Core Subjects for 18 credits, 12 credits selected from the Elective pool, and a 1-credit Academic Integrity and Ethics requirement. The current Department of Physics and Materials Master Programme Subject List publishes exact codes for all six Core Subjects, six of the seven named 3-credit Elective Subjects and the 6-credit AP5020 Project. It does not publish an entry for Wide Bandgap Semiconductors for Microelectronics. It publishes AP5T01 Academic Integrity and Ethics in Science, while the 2027 Programme requires Engineering Ethics and Academic Integrity and does not identify its code. The Programme remains blocked rather than substituting the differently titled AP5T01, inventing the Wide Bandgap subject code or exposing a partial Elective pool.'
+  },
+  'POLYU-TPG-017': {
+    verifiedAt: '2026-07-15',
+    faculty: 'Department of Physics and Materials (PM)',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/11045-mft-mpt',
+    statusNote: 'The official 2027 Programme page publishes the complete 31-credit Advanced Photonic Technology and Materials rule: eight 3-credit Core Subjects for 24 credits, 6 credits selected from the Elective pool, and a 1-credit Academic Integrity and Ethics requirement. The current Department of Physics and Materials Master Programme Subject List publishes exact entries for AP5017 Advanced Materials Analysis and Characterization, AP5007 MEMS (microelectromechanical systems) and Sensors, AP5002 Semiconductor Devices and Systems and AP5020 Project. It does not publish exact current entries for the remaining Elective title Wide Bandgap Semiconductors for Microelectronics, any of the eight 2027 Core titles, or the required Engineering Ethics and Academic Integrity subject. Similar current entries such as AP5008 Microelectronics Packaging and Reliability, AP5022 Energy Efficient Lighting and Control and AP5T01 Academic Integrity and Ethics in Science are differently titled and are not substituted. The Programme remains blocked rather than inferring the new photonics codes or exposing a partial course pool.'
+  },
+  'POLYU-TPG-018': {
+    verifiedAt: '2026-07-15',
+    programmeName: 'Mental Health',
+    faculty: 'Department of Applied Social Sciences (APSS)',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/54047-fmh-pmh',
+    statusNote: 'The official 2027 Programme page confirms that the Master of Arts in Mental Health requires 31 credits: five Required Subjects, five Elective Subjects and one 1-credit Academic Integrity and Ethics subject. It separately identifies 22 credits as the optional Postgraduate Diploma early-exit award, not the MA total. The page publishes the complete current Required and Elective title pools and the practicum prerequisite rule, but neither it nor the current Department of Applied Social Sciences curriculum page publishes the subject codes or an explicit credit value for each named taught subject. The Programme remains blocked rather than retaining the 22-credit exit-award total, deriving per-subject credits from the 31-credit total or exposing name-only courses.'
+  },
+  'POLYU-TPG-019': {
+    verifiedAt: '2026-07-15',
+    programmeName: 'Marriage and Family Therapy',
+    faculty: 'Department of Applied Social Sciences (APSS)',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/54047-fmf-pmf',
+    statusNote: 'The official 2027 Programme page corrects the title to Marriage and Family Therapy and publishes three MA study paths: a 31-credit coursework path without clinical training, a 31-credit path with 180-hour practicum training and a 32-credit path with 300-hour practicum training. It publishes the complete Required, Elective and Clinical Training title pools, states that subjects carry 3 credits unless otherwise specified, identifies the 1-credit AIE requirement, 2-credit Practicum A and 1-credit Pre-Practicum workshop, and separately identifies the 22-credit Postgraduate Diploma exit award and 12-credit post-degree AAMFT study. Neither the Programme page nor the current Department of Applied Social Sciences curriculum page publishes the subject codes. The Programme admits students in alternate years and will not invite applications for 2027/28. It remains blocked rather than retaining the scraper-truncated title or 13-credit post-degree figure, inventing subject codes or collapsing the 31- and 32-credit study paths into one completion rule.'
+  },
+  'POLYU-TPG-020': {
+    verifiedAt: '2026-07-15',
+    programmeName: 'Social Work',
+    faculty: 'Department of Applied Social Sciences (APSS)',
+    creditsRequired: 37,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/54047-msw',
+    statusNote: 'The official 2027 Programme page confirms the 37-credit Master of Social Work structure: twelve Required Subjects, one Elective Subject and the 1-credit HTI5T04 Academic Integrity and Ethics (Health and Social Sciences), with 8 clinical or field credits included in the total. It publishes the complete Required and Elective title pools and identifies HTI5T04, but it does not publish codes for the other thirteen named subjects or explicit individual credits for the taught and two Fieldwork subjects. The current Department of Applied Social Sciences curriculum page also publishes names without codes. The Programme remains blocked rather than splitting the aggregate 8 field credits between MSW Fieldwork I and II, inventing the taught-subject codes or exposing a one-code partial pool.'
+  },
+  'POLYU-TPG-021': {
+    verifiedAt: '2026-07-15',
+    programmeName: 'Social Policy and Social Development',
+    faculty: 'Department of Applied Social Sciences (APSS)',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/54055-sdf-sdp',
+    statusNote: 'The official 2027 Programme page corrects the title to Social Policy and Social Development and publishes the 31-credit MA rule: six Required Subjects including the Integrative Project, four Elective Subjects and one 1-credit Academic Integrity and Ethics subject. It separately identifies the 22-credit Postgraduate Diploma early-exit award and publishes the complete current Required and Elective title pools. Neither the Programme page nor the current Department of Applied Social Sciences curriculum page publishes the subject codes or explicit individual credits for the named taught subjects. The Programme remains blocked rather than retaining the scraper-truncated title Development, deriving course credits from the group counts or exposing name-only courses.'
+  },
+  'POLYU-TPG-022': {
+    verifiedAt: '2026-07-15',
+    programmeName: 'Applied Psychology',
+    faculty: 'Department of Applied Social Sciences (APSS)',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/54057-ft-pt',
+    statusNote: 'The official 2027 Programme page confirms the 31-credit Master of Applied Psychology structure: five Core Subjects, four Elective Subjects and a 1-credit Academic Integrity and Ethics requirement. Its current competency table publishes every Core and Elective title and explicit credit value, including the 6-credit Foundational Competencies subject and the 3-credit taught subjects. Neither that page nor the current Department of Applied Social Sciences curriculum page publishes any subject code, including the AIE code. The Programme remains blocked rather than leaving the total unknown, inventing codes from same-title subjects in other APSS awards or exposing a name-only course pool.'
+  },
+  'POLYU-TPG-023': {
+    verifiedAt: '2026-07-15',
+    programmeName: 'Applied Psychology (Diverse Learning Needs)',
+    faculty: 'Department of Applied Social Sciences (APSS)',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/54057-lnf-lnp',
+    statusNote: 'The official 2027 Programme page confirms the 31-credit Master of Applied Psychology (Diverse Learning Needs) structure: 9 credits of MAP Common Core Subjects, 15 credits of DLN Specialism Core Subjects, two Elective Subjects for 6 credits and a 1-credit Academic Integrity and Ethics requirement. It publishes the current subject-title pools and identifies Foundational Competencies as a 6-credit subject, but neither it nor the current Department of Applied Social Sciences curriculum page publishes the subject codes or explicit per-course credits for the remaining named subjects. The Programme remains blocked rather than retaining the 9-credit Common Core subtotal as the degree total, deriving individual credits from the group totals or mapping shared titles to another APSS award.'
+  },
+  'POLYU-TPG-024': {
+    verifiedAt: '2026-07-15',
+    programmeName: 'School and Community Psychology',
+    faculty: 'Department of Applied Social Sciences (APSS)',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/54072-ft-pt',
+    statusNote: 'The official 2027 Programme page publishes the complete 31-credit School and Community Psychology rule: eight Required Subjects for 24 credits, two Elective Subjects for 6 credits and a 1-credit Academic Integrity and Ethics requirement. It publishes the current Compulsory and Elective title pools and requires at least one Elective marked for school settings. Neither the Programme page nor the current Department of Applied Social Sciences curriculum page publishes any subject code, including the AIE code. The Programme remains blocked rather than inferring codes from overlapping psychology subjects in other awards or exposing name-only courses.'
+  },
+  'POLYU-TPG-025': {
+    verifiedAt: '2026-07-15',
+    programmeName: 'Guidance and Counselling',
+    faculty: 'Department of Applied Social Sciences (APSS)',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/54047-gcf-gcp',
+    statusNote: 'The official 2027 Programme page confirms the 31-credit Master of Arts in Guidance and Counselling structure: five Required Core Subjects for 15 credits, three Elective Subjects for 9 credits, a 1-credit Academic Integrity and Ethics subject, and either the 6-credit Counselling Practicum Practice Option or the 6-credit Research Option comprising Practice Research and Integrative Project. It separately identifies the 22-credit Postgraduate Diploma early-exit award, publishes the complete current title pools, and states that subjects carry 3 credits unless otherwise specified. Neither that page nor the current Department of Applied Social Sciences curriculum page publishes the subject codes. The Programme remains blocked rather than retaining the 22-credit exit-award total, inventing the AIE and option-subject codes or treating Practice Research as both Research Option Core and Elective in one completion path.'
+  },
   'POLYU-TPG-080': {
     verifiedAt: '2026-07-15',
     sourceUrl: 'https://www.polyu.edu.hk/hti/study/programmes/taught-postgraduate-programmes_list/master-of-science-in-medical-laboratory-science/',
