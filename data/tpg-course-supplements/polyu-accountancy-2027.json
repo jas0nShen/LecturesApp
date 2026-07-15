@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "POLYU",
+  "academicYear": "2027-28",
+  "verifiedAt": "2026-07-15",
+  "programmes": [
+    {
+      "programmeId": "POLYU-TPG-003",
+      "programmeName": "Accountancy",
+      "faculty": "School of Accounting and Finance (AF)",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21049-afm-apm",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 2027 Programme page and the official 2026/27 Programme brochure publish the same 31-credit Master structure: complete five Core Subjects, three Elective Subjects, and either the 9-credit AC Dissertation or three additional Elective Subjects. The separate 22-credit Postgraduate Diploma exit award is not modelled as a Master completion path. The current public School of Accounting and Finance Taught Postgraduate Subject Syllabi catalogue publishes an ACC-labelled entry for every named subject except the Programme-wide Academic Integrity subject, and confirms each official code and credit value. Its separate AF5T21 entry supplies the exact code and 1-credit value for Academic Integrity and Ethics in Business. The ACC suffix is a Programme context label rather than part of the subject code. The mutually exclusive Dissertation and taught-subject completion paths require manual audit review and must not be combined; not all subjects are offered every year.",
+      "courseGroups": [
+        {
+          "id": "core-subjects",
+          "name": "Core Subjects",
+          "type": "core",
+          "creditsRequired": 13,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five Core Subjects for 13 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21049-afm-apm",
+          "courses": [
+            {
+              "code": "AF5T21",
+              "name": "Academic Integrity and Ethics in Business",
+              "credits": 1,
+              "courseKind": "academic_integrity",
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5102",
+              "name": "Accounting Theory",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5908",
+              "name": "Applied Econometric Methods in Accounting and Finance Research",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5203",
+              "name": "Contemporary Issues in Accounting Information Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5110",
+              "name": "Theory and Practice of Accounting in China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            }
+          ]
+        },
+        {
+          "id": "elective-subjects",
+          "name": "Elective Subjects",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete at least three Elective Subjects for 9 credits. On the taught-subject path without AF5910 AC Dissertation, complete three additional Elective Subjects for a total of six Elective Subjects and 18 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21049-afm-apm",
+          "courses": [
+            {
+              "code": "AF5122",
+              "name": "Business Analytics in Accounting and Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5202",
+              "name": "Contemporary Issues in Attestation and Assurance Services",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5204",
+              "name": "Contemporary Issues in Information Systems Audit and Control",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5103",
+              "name": "Contemporary Issues in Managerial Accounting",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5373",
+              "name": "ESG Investment and Green Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5318",
+              "name": "Financial Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5104",
+              "name": "International Accounting",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "MM501",
+              "name": "Research Methods",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5325",
+              "name": "Seminar in Financial Reporting and Capital Markets Research",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5208",
+              "name": "Taxation Management in Hong Kong and China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5512",
+              "name": "The Legal System and Economic Law in China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5324",
+              "name": "Theories and Models in Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            }
+          ]
+        },
+        {
+          "id": "dissertation-option",
+          "name": "Dissertation Option",
+          "type": "dissertation",
+          "ruleText": "Complete AF5910 AC Dissertation for 9 credits together with three Elective Subjects, or omit the Dissertation and complete six Elective Subjects. The two completion paths are mutually exclusive.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21049-afm-apm",
+          "courses": [
+            {
+              "code": "AF5910",
+              "name": "AC Dissertation",
+              "credits": 9,
+              "courseKind": "dissertation",
+              "conditionalRequirement": true,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

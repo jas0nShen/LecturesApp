@@ -5,30 +5,6 @@
   "verifiedAt": "2026-07-11",
   "programmes": [
     {
-      "programmeId": "POLYU-TPG-002",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21047-cgf-cgp",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-003",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21049-afm-apm",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-004",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21050-fcf-cfp",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-005",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21050-fim-imp",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
-    },
-    {
       "programmeId": "POLYU-TPG-006",
       "status": "blocked",
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21052-fam-pam",

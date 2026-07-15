@@ -6,6 +6,10 @@ const source = require('../data/tpg-source-snapshots/polyu-2027.json');
 const outputPath = path.join(ROOT, 'data', 'tpg-course-supplements', 'polyu-source-status-2027.json');
 const verifiedIds = new Set([
   'POLYU-TPG-001',
+  'POLYU-TPG-002',
+  'POLYU-TPG-003',
+  'POLYU-TPG-004',
+  'POLYU-TPG-005',
   'POLYU-TPG-013',
   'POLYU-TPG-014',
   'POLYU-TPG-015',

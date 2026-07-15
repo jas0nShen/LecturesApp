@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "POLYU",
+  "academicYear": "2027-28",
+  "verifiedAt": "2026-07-15",
+  "programmes": [
+    {
+      "programmeId": "POLYU-TPG-004",
+      "programmeName": "Finance (Corporate Finance)",
+      "faculty": "School of Accounting and Finance (AF)",
+      "status": "verified",
+      "creditsRequired": 37,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21050-fcf-cfp",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 2027 Programme page and official 2026/27 Master of Finance brochure publish the same 37-credit Corporate Finance structure: seven Core Subjects for 19 credits, two Compulsory Capstone Subjects for 6 credits, and four Elective Subjects for 12 credits. The current School of Accounting and Finance Subject Syllabi catalogue maps every named subject to an official MoF code and credit value; FT and PT delivery variants share the same base subject code. The catalogue publishes the variable-scope Project as AF5932 for 3 credits and AF5933 for 6 credits. The official sources do not state how the 6-credit Project is counted against the simultaneous four-subject and 12-credit Elective requirements, so that rule remains subject to manual audit review rather than treating AF5933 as an ordinary one-subject elective. Not all Elective Subjects are offered every year.",
+      "courseGroups": [
+        {
+          "id": "core-subjects",
+          "name": "Core Subjects",
+          "type": "core",
+          "creditsRequired": 19,
+          "coursesRequired": 7,
+          "ruleText": "Complete all seven Core Subjects for 19 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21050-fcf-cfp",
+          "courses": [
+            { "code": "AF5T21", "name": "Academic Integrity and Ethics in Business", "credits": 1, "courseKind": "academic_integrity", "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5115", "name": "Accounting for Business Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5503", "name": "Corporate Governance, Disclosures and Implications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5341", "name": "Economics for Financial Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5344", "name": "Investments", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5312", "name": "Principles of Corporate Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5343", "name": "Quantitative Methods for Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" }
+          ]
+        },
+        {
+          "id": "compulsory-capstone-subjects",
+          "name": "Compulsory Capstone Subjects",
+          "type": "capstone",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Complete both Compulsory Capstone Subjects for 6 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21050-fcf-cfp",
+          "courses": [
+            { "code": "AF5355", "name": "Finance and Strategy", "credits": 3, "courseKind": "capstone", "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5362", "name": "International Financial Management", "credits": 3, "courseKind": "capstone", "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" }
+          ]
+        },
+        {
+          "id": "elective-subjects",
+          "name": "Elective Subjects",
+          "type": "elective",
+          "creditsRequired": 12,
+          "ruleText": "Complete four Elective Subjects for 12 credits. AF5932 is the 3-credit Project and AF5933 is the 6-credit Project; the official sources do not state how AF5933 is counted against the simultaneous subject-count and credit requirements, so the Project choice requires manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21050-fcf-cfp",
+          "courses": [
+            { "code": "AF5122", "name": "Business Analytics in Accounting and Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5322", "name": "Corporate Risk Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5346", "name": "Entrepreneurial Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5373", "name": "ESG Investment and Green Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5347", "name": "Financial Analysis and Valuation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5358", "name": "International Banking", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5321", "name": "Mergers and Acquisitions", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5386", "name": "Family Office and Wealth Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5932", "name": "Project", "credits": 3, "courseKind": "project", "conditionalRequirement": true, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5933", "name": "Project", "credits": 6, "courseKind": "project", "conditionalRequirement": true, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" }
+          ]
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-005",
+      "programmeName": "Finance (Investment Management)",
+      "faculty": "School of Accounting and Finance (AF)",
+      "status": "verified",
+      "creditsRequired": 37,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21050-fim-imp",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 2027 Programme page and official 2026/27 Master of Finance brochure publish the same 37-credit Investment Management structure: seven Core Subjects for 19 credits, two Compulsory Capstone Subjects for 6 credits, and four Elective Subjects for 12 credits. The current School of Accounting and Finance Subject Syllabi catalogue maps every named subject to an official MoF code and credit value; FT and PT delivery variants share the same base subject code. The catalogue publishes the variable-scope Project as AF5932 for 3 credits and AF5933 for 6 credits. The official sources do not state how the 6-credit Project is counted against the simultaneous four-subject and 12-credit Elective requirements, so that rule remains subject to manual audit review rather than treating AF5933 as an ordinary one-subject elective. Not all Elective Subjects are offered every year.",
+      "courseGroups": [
+        {
+          "id": "core-subjects",
+          "name": "Core Subjects",
+          "type": "core",
+          "creditsRequired": 19,
+          "coursesRequired": 7,
+          "ruleText": "Complete all seven Core Subjects for 19 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21050-fim-imp",
+          "courses": [
+            { "code": "AF5T21", "name": "Academic Integrity and Ethics in Business", "credits": 1, "courseKind": "academic_integrity", "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5115", "name": "Accounting for Business Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5341", "name": "Economics for Financial Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5344", "name": "Investments", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5312", "name": "Principles of Corporate Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5343", "name": "Quantitative Methods for Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5511", "name": "Regulatory Framework", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" }
+          ]
+        },
+        {
+          "id": "compulsory-capstone-subjects",
+          "name": "Compulsory Capstone Subjects",
+          "type": "capstone",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Complete both Compulsory Capstone Subjects for 6 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21050-fim-imp",
+          "courses": [
+            { "code": "AF5355", "name": "Finance and Strategy", "credits": 3, "courseKind": "capstone", "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5362", "name": "International Financial Management", "credits": 3, "courseKind": "capstone", "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" }
+          ]
+        },
+        {
+          "id": "elective-subjects",
+          "name": "Elective Subjects",
+          "type": "elective",
+          "creditsRequired": 12,
+          "ruleText": "Complete four Elective Subjects for 12 credits. AF5932 is the 3-credit Project and AF5933 is the 6-credit Project; the official sources do not state how AF5933 is counted against the simultaneous subject-count and credit requirements, so the Project choice requires manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21050-fim-imp",
+          "courses": [
+            { "code": "AF5122", "name": "Business Analytics in Accounting and Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5336", "name": "Business Risk Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5322", "name": "Corporate Risk Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5351", "name": "Derivatives Securities", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5373", "name": "ESG Investment and Green Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5347", "name": "Financial Analysis and Valuation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5323", "name": "Fixed Income Securities", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5358", "name": "International Banking", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5386", "name": "Family Office and Wealth Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5333", "name": "Risk Management for Corporations", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5353", "name": "Security Analysis and Portfolio Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5932", "name": "Project", "credits": 3, "courseKind": "project", "conditionalRequirement": true, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" },
+            { "code": "AF5933", "name": "Project", "credits": 6, "courseKind": "project", "conditionalRequirement": true, "appliesToTrackIds": [], "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/" }
+          ]
+        }
+      ]
+    }
+  ]
+}
