@@ -1751,6 +1751,805 @@ module.exports = [
     ]
   },
   {
+    "id": "POLYU-TPG-037",
+    "courseGroups": [
+      {
+        "id": "description-of-chinese-i",
+        "name": "Description of Chinese I",
+        "type": "core",
+        "creditsRequired": 3,
+        "coursesRequired": 1,
+        "ruleText": "Complete either CBS532 or CBS539 for 3 credits; the two codes are mutually exclusive alternatives.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/",
+        "courses": [
+          {
+            "code": "CBS532",
+            "name": "Description of Chinese I: Words and Sentences",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/",
+            "conditionalRequirement": true
+          },
+          {
+            "code": "CBS539",
+            "name": "Description of Chinese I: Words and Sentences",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/",
+            "conditionalRequirement": true
+          }
+        ]
+      },
+      {
+        "id": "description-of-chinese-ii",
+        "name": "Description of Chinese II",
+        "type": "core",
+        "creditsRequired": 3,
+        "coursesRequired": 1,
+        "ruleText": "Complete either CBS530 or CBS533 for 3 credits; the two codes are mutually exclusive alternatives.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/",
+        "courses": [
+          {
+            "code": "CBS530",
+            "name": "Description of Chinese II: Sounds and Script",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/",
+            "conditionalRequirement": true
+          },
+          {
+            "code": "CBS533",
+            "name": "Description of Chinese II: Sounds and Script",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/",
+            "conditionalRequirement": true
+          }
+        ]
+      },
+      {
+        "id": "fixed-compulsory-subjects",
+        "name": "Fixed Compulsory Subjects",
+        "type": "core",
+        "creditsRequired": 6,
+        "coursesRequired": 2,
+        "ruleText": "Complete CBS500 and CBS503 for 6 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/",
+        "courses": [
+          {
+            "code": "CBS500",
+            "name": "Semantics and Pragmatics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS503",
+            "name": "Language in Society",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          }
+        ]
+      },
+      {
+        "id": "language-sciences-electives",
+        "name": "Language Sciences Elective Subjects",
+        "type": "elective",
+        "ruleText": "These subjects contribute to the shared six-Elective requirement. CBS538 is a conditional 9-credit Dissertation subject.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/",
+        "courses": [
+          {
+            "code": "CBS509",
+            "name": "Sign Language and Linguistics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS514",
+            "name": "Introduction to Cantonese Studies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS516",
+            "name": "Contrastive Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS529",
+            "name": "Chinese Lexical Semantics and Corpus Linguistics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS538",
+            "name": "MACL Dissertation",
+            "credits": 9,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/",
+            "courseKind": "dissertation",
+            "conditionalRequirement": true
+          },
+          {
+            "code": "CBS574",
+            "name": "Second Language Acquisition and Foreign Language Learning",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS590",
+            "name": "Multimedia Applications for Language Professionals and Translators",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS592",
+            "name": "Psycholinguistics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS596",
+            "name": "Neurolinguistics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS598",
+            "name": "Experimental Phonetics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS599",
+            "name": "Statistical Methods in Language Research",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          }
+        ]
+      },
+      {
+        "id": "language-education-electives",
+        "name": "Language Education Elective Subjects",
+        "type": "elective",
+        "ruleText": "These subjects contribute to the shared six-Elective requirement.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/",
+        "courses": [
+          {
+            "code": "CBS5020",
+            "name": "Special Education Needs in Speaking, Listening, Reading and Writing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS5021",
+            "name": "Special Education Needs Associated with Cognitive, Physical and Sensory Disorders",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS505B",
+            "name": "Research Methods in Language Teaching and Language Studies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS506",
+            "name": "Introduction to Educational Linguistics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS512",
+            "name": "Introduction to Chinese Language Testing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS527",
+            "name": "Chinese Language Education in Primary and Secondary Schools",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS528B",
+            "name": "The Development and Implementation of School-Based Chinese Language Curriculum in Hong Kong",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS549",
+            "name": "Teaching the Uses of Media for Teaching Chinese to Foreigners",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS5801",
+            "name": "Teaching of Chinese: Reading and Writing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS5802",
+            "name": "Teaching of Chinese in International Schools",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS581",
+            "name": "Teaching Chinese Grammar to Non-native Speakers",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS586",
+            "name": "Teaching of Chinese Characters and Words to Non-native Learners",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS588",
+            "name": "Teaching of Chinese: Listening and Speaking",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          }
+        ]
+      },
+      {
+        "id": "other-electives",
+        "name": "Other Elective Subjects",
+        "type": "elective",
+        "ruleText": "These subjects contribute to the shared six-Elective requirement.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/",
+        "courses": [
+          {
+            "code": "CBS5413",
+            "name": "Digital Media Communication",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS544",
+            "name": "Poetry of the Tang and Song Era",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS561",
+            "name": "Translation: Text and Context",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS562",
+            "name": "Interpreting: Principles",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS564",
+            "name": "Translation: Discourse and the Translator",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS565",
+            "name": "Interpreting: Consecutive",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS566",
+            "name": "Translation Studies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS568",
+            "name": "Advanced Translation",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS591",
+            "name": "Intercultural Communication",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          },
+          {
+            "code": "CBS597",
+            "name": "Advanced Liaison Interpreting",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Professional Ethics and Academic Integrity",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete CBS5T01 Professional Ethics and Academic Integrity for 1 credit.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/",
+        "courses": [
+          {
+            "code": "CBS5T01",
+            "name": "Professional Ethics and Academic Integrity",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-linguistics/curriculum/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "POLYU-TPG-038",
+    "courseGroups": [
+      {
+        "id": "description-of-chinese-i",
+        "name": "Description of Chinese I",
+        "type": "core",
+        "creditsRequired": 3,
+        "coursesRequired": 1,
+        "ruleText": "Complete either CBS532 or CBS539 for 3 credits; the two codes are mutually exclusive alternatives.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/",
+        "courses": [
+          {
+            "code": "CBS532",
+            "name": "Description of Chinese I: Words and Sentences",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/",
+            "conditionalRequirement": true
+          },
+          {
+            "code": "CBS539",
+            "name": "Description of Chinese I: Words and Sentences",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/",
+            "conditionalRequirement": true
+          }
+        ]
+      },
+      {
+        "id": "description-of-chinese-ii",
+        "name": "Description of Chinese II",
+        "type": "core",
+        "creditsRequired": 3,
+        "coursesRequired": 1,
+        "ruleText": "Complete either CBS530 or CBS533 for 3 credits; the two codes are mutually exclusive alternatives.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/",
+        "courses": [
+          {
+            "code": "CBS530",
+            "name": "Description of Chinese II: Sounds and Script",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/",
+            "conditionalRequirement": true
+          },
+          {
+            "code": "CBS533",
+            "name": "Description of Chinese II: Sounds and Script",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/",
+            "conditionalRequirement": true
+          }
+        ]
+      },
+      {
+        "id": "chinese-literature-compulsory",
+        "name": "Chinese Literature Compulsory Subjects",
+        "type": "core",
+        "creditsRequired": 6,
+        "coursesRequired": 2,
+        "ruleText": "Complete both 3-credit Chinese Literature Compulsory Subjects.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/",
+        "courses": [
+          {
+            "code": "CBS552",
+            "name": "Literary Theory and Modern Chinese Literature",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS553",
+            "name": "Readings of Classical Literature",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          }
+        ]
+      },
+      {
+        "id": "chinese-culture-compulsory",
+        "name": "Chinese Culture Compulsory Subject",
+        "type": "core",
+        "creditsRequired": 3,
+        "coursesRequired": 1,
+        "ruleText": "Complete CBS554 for 3 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/",
+        "courses": [
+          {
+            "code": "CBS554",
+            "name": "Introduction to Chinese Culture and Classics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          }
+        ]
+      },
+      {
+        "id": "chinese-language-electives",
+        "name": "Chinese Language Block Elective Subjects",
+        "type": "elective",
+        "creditsRequired": 3,
+        "coursesRequired": 1,
+        "ruleText": "Complete at least one 3-credit Elective Subject from the Chinese Language Block; additional selections contribute to the shared five-Elective requirement.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/",
+        "courses": [
+          {
+            "code": "CBS500",
+            "name": "Semantics and Pragmatics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS5020",
+            "name": "Special Education Needs in Speaking, Listening, Reading and Writing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS5021",
+            "name": "Special Education Needs Associated with Cognitive, Physical and Sensory Disorders",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS503",
+            "name": "Language in Society",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS505B",
+            "name": "Research Methods in Language Teaching and Language Studies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS506",
+            "name": "Introduction to Educational Linguistics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS509",
+            "name": "Sign Language and Linguistics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS512",
+            "name": "Introduction to Chinese Language Testing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS514",
+            "name": "Introduction to Cantonese Studies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS516",
+            "name": "Contrastive Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS527",
+            "name": "Chinese Language Education in Primary and Secondary Schools",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS528B",
+            "name": "The Development and Implementation of School-Based Chinese Language Curriculum in Hong Kong",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS529",
+            "name": "Chinese Lexical Semantics and Corpus Linguistics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS549",
+            "name": "Teaching the Uses of Media for Teaching Chinese to Foreigners",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS574",
+            "name": "Second Language Acquisition and Foreign Language Learning",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS5801",
+            "name": "Teaching of Chinese: Reading and Writing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS5802",
+            "name": "Teaching of Chinese in International Schools",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS581",
+            "name": "Teaching Chinese Grammar to Non-native Speakers",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS586",
+            "name": "Teaching of Chinese Characters and Words to Non-native Learners",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS588",
+            "name": "Teaching of Chinese: Listening and Speaking",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS590",
+            "name": "Multimedia Applications for Language Professionals and Translators",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS592",
+            "name": "Psycholinguistics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS596",
+            "name": "Neurolinguistics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS598",
+            "name": "Experimental Phonetics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS599",
+            "name": "Statistical Methods in Language Research",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          }
+        ]
+      },
+      {
+        "id": "chinese-literature-electives",
+        "name": "Chinese Literature Block Elective Subjects",
+        "type": "elective",
+        "creditsRequired": 3,
+        "coursesRequired": 1,
+        "ruleText": "Complete at least one 3-credit Elective Subject from the Chinese Literature Block; additional selections contribute to the shared five-Elective requirement.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/",
+        "courses": [
+          {
+            "code": "CBS540",
+            "name": "Fiction in the Ming and Qing Era",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS543",
+            "name": "Selected Readings of the Eight Writers of the Tang and Song Era",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS544",
+            "name": "Poetry of the Tang and Song Era",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS545",
+            "name": "Selected Readings of Vernacular Fiction",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS546",
+            "name": "Hong Kong Literature",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS548",
+            "name": "Contemporary Chinese Society through Literature",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "LST541",
+            "name": "Chinese Opera: Literary and Cultural Evolution",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          }
+        ]
+      },
+      {
+        "id": "other-lst-electives",
+        "name": "Other LST Elective Subjects",
+        "type": "elective",
+        "ruleText": "These subjects contribute to the shared five-Elective requirement. CBS593 is a conditional 9-credit Dissertation subject.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/",
+        "courses": [
+          {
+            "code": "CBS5413",
+            "name": "Digital Media Communication",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CBS593",
+            "name": "MACLL Dissertation",
+            "credits": 9,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/",
+            "courseKind": "dissertation",
+            "conditionalRequirement": true
+          }
+        ]
+      },
+      {
+        "id": "non-lst-electives",
+        "name": "Non-LST Elective Subjects",
+        "type": "elective",
+        "ruleText": "These subjects contribute to the shared five-Elective requirement.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/",
+        "courses": [
+          {
+            "code": "CHC5204",
+            "name": "Islam, Christianity and Chinese Culture",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          },
+          {
+            "code": "CHC5302",
+            "name": "Appreciation of Chinese Classical Rhymed Writings",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Professional Ethics and Academic Integrity",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete CBS5T01 Professional Ethics and Academic Integrity for 1 credit.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/",
+        "courses": [
+          {
+            "code": "CBS5T01",
+            "name": "Professional Ethics and Academic Integrity",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/ma-scheme-in-chinese-linguistics-and-translation/chinese-language-and-literature/curriculum/"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "POLYU-TPG-072",
     "courseGroups": [
       {

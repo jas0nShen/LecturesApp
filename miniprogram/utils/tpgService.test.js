@@ -9,8 +9,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 248);
-  assert.equal(coverage.courseCount, 5995);
+  assert.equal(coverage.programmeWithCoursesCount, 250);
+  assert.equal(coverage.courseCount, 6080);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -29,8 +29,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 248);
-  assert.equal(rows.length, 248);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 250);
+  assert.equal(rows.length, 250);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
@@ -584,6 +584,70 @@ test('PolyU APSS 020 to 025 correct scraper totals and preserve exact public cod
   assert.match(guidance.courseStatusNote, /6-credit Counselling Practicum Practice Option/);
   assert.match(guidance.courseStatusNote, /6-credit Research Option comprising Practice Research and Integrative Project/);
   assert.match(guidance.courseStatusNote, /rather than retaining the 22-credit exit-award total/);
+});
+
+test('PolyU BME 026 to 028 preserve verified paths without inferring AIE or approved-course status', () => {
+  const biomedical = tpgService.getProgramme('POLYU-TPG-026');
+  const sports = tpgService.getProgramme('POLYU-TPG-027');
+  const brainMachine = tpgService.getProgramme('POLYU-TPG-028');
+
+  [biomedical, sports, brainMachine].forEach((programme) => {
+    assert.equal(programme.courseVerificationStatus, 'blocked');
+    assert.equal(programme.creditsRequired, 31);
+    assert.equal(programme.creditUnit, 'credits');
+    assert.equal(programme.courseVerifiedAt, '2026-07-15');
+    assert.equal(programme.faculty, 'Department of Biomedical Engineering (BME)');
+    assert.equal((programme.courseGroups || []).length, 0);
+  });
+
+  assert.match(biomedical.courseSourceUrl, /biomedical-engineering\/programme-structure/);
+  assert.match(biomedical.courseStatusNote, /generic Biomedical Engineering, Rehabilitation Engineering and Digital Health award paths/);
+  assert.match(biomedical.courseStatusNote, /BME5156 Dissertation/);
+  assert.match(biomedical.courseStatusNote, /BME5151 Intellectual Property, Standards & Regulations of Medical Devices/);
+  assert.match(biomedical.courseStatusNote, /official 2027 Programme Subject List omits that title/);
+  assert.match(biomedical.courseStatusNote, /EEE5T03 from another Engineering Programme is not inferred/);
+
+  assert.match(sports.courseSourceUrl, /sports-technology-and-management\/programme-structure/);
+  assert.match(sports.courseStatusNote, /complete 31-credit Sports Technology and Management rule/);
+  assert.match(sports.courseStatusNote, /BME5155 Research Methods and Biostatistics/);
+  assert.match(sports.courseStatusNote, /9-credit BME5356 Dissertation/);
+  assert.match(sports.courseStatusNote, /all twelve BME subjects/);
+  assert.match(sports.courseStatusNote, /Neither source identifies the compulsory AIE code/);
+
+  assert.match(brainMachine.courseSourceUrl, /brain-machine-interface\/programme-structure/);
+  assert.match(brainMachine.courseStatusNote, /complete twelve-subject BME code pool/);
+  assert.match(brainMachine.courseStatusNote, /BME5410, BME5420, BME5430, BME5440, BME5450 and BME5456 Dissertation as Pending approval/);
+  assert.match(brainMachine.courseStatusNote, /rather than treating pending subjects as approved/);
+});
+
+test('PolyU BEEE 029 to 031 correct totals while registration-only code pools stay blocked', () => {
+  const buildingServices = tpgService.getProgramme('POLYU-TPG-029');
+  const facilityManagement = tpgService.getProgramme('POLYU-TPG-030');
+  const fireSafety = tpgService.getProgramme('POLYU-TPG-031');
+
+  [buildingServices, facilityManagement, fireSafety].forEach((programme) => {
+    assert.equal(programme.courseVerificationStatus, 'blocked');
+    assert.equal(programme.creditsRequired, 31);
+    assert.equal(programme.creditUnit, 'credits');
+    assert.equal(programme.courseVerifiedAt, '2026-07-15');
+    assert.equal(programme.faculty, 'Department of Building Environment & Energy Engineering (BEEE)');
+    assert.equal((programme.courseGroups || []).length, 0);
+    assert.match(programme.courseStatusNote, /October 2025 Department of Building Environment and Energy Engineering brochure/);
+    assert.match(programme.courseStatusNote, /publishes no curriculum code table/);
+  });
+
+  assert.match(buildingServices.courseStatusNote, /seven taught subjects including four Compulsory Subjects and at least two other Core Subjects plus a Dissertation/);
+  assert.match(buildingServices.courseStatusNote, /five broad Core Areas of Study/);
+  assert.match(buildingServices.courseStatusNote, /rather than leaving the total unknown/);
+
+  assert.match(facilityManagement.courseStatusNote, /9-credit Facility Management Dissertation/);
+  assert.match(facilityManagement.courseStatusNote, /ten Core Areas of Study/);
+  assert.match(facilityManagement.courseStatusNote, /rather than retaining the scraped 9-credit Dissertation subtotal as the degree total/);
+
+  assert.match(fireSafety.courseStatusNote, /BSE558 Accident Prevention, Hazard Assessment and Control/);
+  assert.match(fireSafety.courseStatusNote, /BSE559 Safety Management Systems and Safety Auditing/);
+  assert.match(fireSafety.courseStatusNote, /remaining Compulsory and Core pool, explicit taught-subject credits, Dissertation code and AIE code are therefore unresolved/);
+  assert.match(fireSafety.courseStatusNote, /rather than leaving the total unknown, treating two published codes as a complete pool/);
 });
 
 test('PolyU Generative AI and the Humanities filters both official Specialism elective pools', () => {

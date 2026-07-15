@@ -15,6 +15,8 @@ const verifiedIds = new Set([
   'POLYU-TPG-013',
   'POLYU-TPG-014',
   'POLYU-TPG-015',
+  'POLYU-TPG-037',
+  'POLYU-TPG-038',
   'POLYU-TPG-072',
   'POLYU-TPG-073',
   'POLYU-TPG-075',
@@ -155,6 +157,48 @@ const statusOverrides = {
     creditUnit: 'credits',
     sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/54047-gcf-gcp',
     statusNote: 'The official 2027 Programme page confirms the 31-credit Master of Arts in Guidance and Counselling structure: five Required Core Subjects for 15 credits, three Elective Subjects for 9 credits, a 1-credit Academic Integrity and Ethics subject, and either the 6-credit Counselling Practicum Practice Option or the 6-credit Research Option comprising Practice Research and Integrative Project. It separately identifies the 22-credit Postgraduate Diploma early-exit award, publishes the complete current title pools, and states that subjects carry 3 credits unless otherwise specified. Neither that page nor the current Department of Applied Social Sciences curriculum page publishes the subject codes. The Programme remains blocked rather than retaining the 22-credit exit-award total, inventing the AIE and option-subject codes or treating Practice Research as both Research Option Core and Elective in one completion path.'
+  },
+  'POLYU-TPG-026': {
+    verifiedAt: '2026-07-15',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/bme/study/taught-postgraduate-programmes/master-of-science-in-biomedical-engineering/programme-structure/',
+    statusNote: 'The official 2027 Programme page and current Department of Biomedical Engineering Programme Structure page publish the 31-credit generic Biomedical Engineering, Rehabilitation Engineering and Digital Health award paths. The departmental page identifies fourteen BME-coded subjects and states that each carries 3 credits except the 9-credit BME5156 Dissertation. The required 1-credit Engineering Ethics and Academic Integrity subject has no code on either source, so EEE5T03 from another Engineering Programme is not inferred. The departmental code table also includes BME5151 Intellectual Property, Standards & Regulations of Medical Devices, while the official 2027 Programme Subject List omits that title. The Programme remains blocked rather than choosing between conflicting official course pools or exposing a structure without its compulsory AIE code.'
+  },
+  'POLYU-TPG-027': {
+    verifiedAt: '2026-07-15',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/bme/study/taught-postgraduate-programmes/master-of-science-in-sports-technology-and-management/programme-structure/',
+    statusNote: 'The official 2027 Programme page and current Department of Biomedical Engineering Programme Structure page publish the complete 31-credit Sports Technology and Management rule: five 3-credit Compulsory Subjects, five 3-credit Elective Subjects or one Elective plus BME5155 Research Methods and Biostatistics and the 9-credit BME5356 Dissertation, and a 1-credit Engineering Ethics and Academic Integrity requirement. The departmental code table identifies all twelve BME subjects in the Compulsory and Elective pools and states that each carries 3 credits except the Dissertation. Neither source identifies the compulsory AIE code, and the current September 2025 official programme pamphlet also publishes titles without codes. The Programme remains blocked rather than inferring EEE5T03 from another Engineering Programme or exposing a structure without its compulsory AIE subject.'
+  },
+  'POLYU-TPG-028': {
+    verifiedAt: '2026-07-15',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/bme/study/taught-postgraduate-programmes/master-of-science-in-brain-machine-interface/programme-structure/',
+    statusNote: 'The official 2027 Programme page and current Department of Biomedical Engineering Programme Structure page publish the 31-credit Brain-Machine Interface rule: the 1-credit Engineering Ethics and Academic Integrity requirement, 3-credit BME5155 Research Methods and Biostatistics, four Core Subjects for 12 credits, and five Elective Subjects or two Electives plus a 9-credit Dissertation for 15 credits. The departmental table identifies the complete twelve-subject BME code pool, but marks BME5410, BME5420, BME5430, BME5440, BME5450 and BME5456 Dissertation as Pending approval. Neither source identifies the compulsory AIE code. The Programme remains blocked rather than treating pending subjects as approved, inferring EEE5T03 from another Engineering Programme or exposing an incomplete compulsory structure.'
+  },
+  'POLYU-TPG-029': {
+    verifiedAt: '2026-07-15',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/33084-bem-bsm',
+    statusNote: 'The official 2027 Programme page confirms the 31-credit Building Services Engineering structure: seven taught subjects including four Compulsory Subjects and at least two other Core Subjects plus a Dissertation, or ten taught subjects including four Compulsory Subjects and at least three other Core Subjects, together with a 1-credit Academic Integrity and Ethics subject. It publishes only five broad Core Areas of Study and states that the detailed subjects available will be provided upon registration. The current October 2025 Department of Building Environment and Energy Engineering brochure confirms the Programme but publishes no curriculum code table. Public sources therefore do not identify the Compulsory and Core subject pools, their codes and explicit credits, or the Dissertation and AIE codes. The Programme remains blocked rather than leaving the total unknown, deriving taught-subject credits from the 31-credit total or exposing broad study areas as courses.'
+  },
+  'POLYU-TPG-030': {
+    verifiedAt: '2026-07-15',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/33085-fam-fmm',
+    statusNote: 'The official 2027 Programme page confirms the 31-credit Facility Management structure: ten taught subjects including four Compulsory Subjects and at least three other Core Subjects, or seven taught subjects including four Compulsory Subjects and at least two other Core Subjects plus the 9-credit Facility Management Dissertation, together with a 1-credit Academic Integrity and Ethics subject. It publishes ten Core Areas of Study but states that the detailed subjects available will be provided upon registration. The current October 2025 Department of Building Environment and Energy Engineering brochure confirms the Programme but publishes no curriculum code table. Public sources therefore do not identify the Compulsory and Core subject codes and explicit credits or the Dissertation and AIE codes. The Programme remains blocked rather than retaining the scraped 9-credit Dissertation subtotal as the degree total, deriving taught-subject credits from 31 credits or exposing broad study areas as courses.'
+  },
+  'POLYU-TPG-031': {
+    verifiedAt: '2026-07-15',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/33086-fem-fsm',
+    statusNote: 'The official 2027 Programme page confirms the 31-credit Fire and Safety Engineering structure: seven taught subjects including three specified Compulsory Subjects and at least three other Core Subjects plus a Dissertation, or ten taught subjects including three specified Compulsory Subjects and at least four other Core Subjects, together with a 1-credit Academic Integrity and Ethics subject. It requires the additional Core selection to include BSE558 Accident Prevention, Hazard Assessment and Control and/or BSE559 Safety Management Systems and Safety Auditing, but otherwise publishes only broad Fire Engineering and Safety Engineering study areas and says detailed subjects will be provided upon registration. The current October 2025 Department of Building Environment and Energy Engineering brochure publishes no curriculum code table. The remaining Compulsory and Core pool, explicit taught-subject credits, Dissertation code and AIE code are therefore unresolved. The Programme remains blocked rather than leaving the total unknown, treating two published codes as a complete pool or inventing the missing course structure.'
   },
   'POLYU-TPG-080': {
     verifiedAt: '2026-07-15',
