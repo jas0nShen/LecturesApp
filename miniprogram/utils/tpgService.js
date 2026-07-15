@@ -48,6 +48,15 @@ function isValidTrack(programmeId, trackId) {
   return Boolean(getTrack(programmeId, trackId));
 }
 
+function isTrackSelectionComplete(programmeOrId, trackId = '') {
+  const programme = typeof programmeOrId === 'string' ? getProgramme(programmeOrId) : programmeOrId;
+  if (!programme) return false;
+  const tracks = listTracks(programme);
+  if (!tracks.length) return true;
+  if (!trackId) return programme.trackSelectionOptional === true;
+  return Boolean(getTrack(programme.id, trackId));
+}
+
 function getCreditsRequired(programmeOrId, trackId = '') {
   const programme = typeof programmeOrId === 'string' ? getProgramme(programmeOrId) : programmeOrId;
   const track = programme && trackId ? getTrack(programme.id, trackId) : null;
@@ -325,6 +334,7 @@ module.exports = {
   listProgrammes,
   listTracks,
   listUniversities,
+  isTrackSelectionComplete,
   isValidTrack,
   appliesToTrack,
   resolveCourseCredits,

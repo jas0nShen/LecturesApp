@@ -46,6 +46,13 @@ function getProfile() {
 }
 
 function saveProfile(profile) {
+  if (profile && profile.profileType === 'tpg') {
+    const programme = tpgService.getProgramme(profile.programmeId);
+    if (!programme) throw new Error('Invalid TPG programme');
+    if (!tpgService.isTrackSelectionComplete(programme, profile.trackId || '')) {
+      throw new Error('TPG Track selection is required or invalid');
+    }
+  }
   wx.setStorageSync('userProfile', profile);
 }
 

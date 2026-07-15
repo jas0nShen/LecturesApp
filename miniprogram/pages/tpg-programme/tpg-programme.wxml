@@ -45,6 +45,7 @@
   <view wx:if="{{hasCourseGroups}}" class="section">
     <view class="section-kicker">课程结构</view>
     <view wx:if="{{selectedTrack}}" class="pending-copy">当前方向：{{selectedTrack.name}}</view>
+    <view wx:elif="{{trackSelectionRequired}}" class="pending-copy">此 Programme 必须先选择 Track，选择后才会显示对应课程范围。</view>
     <view
       wx:for="{{courseGroups}}"
       wx:key="name"
@@ -85,7 +86,7 @@
     <button
       class="save-button {{isCurrentProgramme ? 'save-button-current' : ''}}"
       bindtap="saveAsMyProgramme"
-    >{{isCurrentProgramme ? '当前 Programme' : '设为我的 Programme'}}</button>
+    >{{isCurrentProgramme ? '当前 Programme' : (trackSelectionRequired && !selectedTrack ? '选择 Track 并保存' : '设为我的 Programme')}}</button>
     <button
       class="official-button {{programme.sourceUrl ? '' : 'official-button-muted'}}"
       bindtap="copyOfficialLink"

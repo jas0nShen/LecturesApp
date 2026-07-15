@@ -13,6 +13,7 @@ Page({
     courseGroups: [],
     creditsRequired: 0,
     selectedTrack: null,
+    trackSelectionRequired: false,
     isCurrentProgramme: false,
     loadError: false,
     programmeId: ''
@@ -38,7 +39,8 @@ Page({
     const university = tpgService.getProgrammeUniversity(programme);
     const status = tpgService.getStatus(programme);
     const profile = service.getProfile();
-    const trackId = profile && profile.profileType === 'tpg' && profile.programmeId === programme.id ? profile.trackId || '' : '';
+    const savedTrackId = profile && profile.profileType === 'tpg' && profile.programmeId === programme.id ? profile.trackId || '' : '';
+    const trackId = tpgService.isTrackSelectionComplete(programme, savedTrackId) ? savedTrackId : '';
     const courseGroups = tpgService.resolveCourseGroups(programme, trackId);
     this.setData({
       programme,
@@ -48,6 +50,7 @@ Page({
       courseGroups,
       creditsRequired: tpgService.getCreditsRequired(programme, trackId),
       selectedTrack: trackId ? tpgService.getTrack(programme.id, trackId) : null,
+      trackSelectionRequired: tpgService.listTracks(programme).length > 0 && !programme.trackSelectionOptional,
       statusTitle: status.title,
       statusCopy: status.copy
     });
@@ -73,15 +76,18 @@ Page({
     const programme = this.data.programme;
     if (!programme) return;
     const profile = service.getProfile();
-    const isCurrentProgramme = Boolean(profile && profile.profileType === 'tpg' && profile.programmeId === programme.id);
-    const trackId = isCurrentProgramme ? profile.trackId || '' : '';
+    const isSavedProgramme = Boolean(profile && profile.profileType === 'tpg' && profile.programmeId === programme.id);
+    const savedTrackId = isSavedProgramme ? profile.trackId || '' : '';
+    const isCurrentProgramme = isSavedProgramme && tpgService.isTrackSelectionComplete(programme, savedTrackId);
+    const trackId = isCurrentProgramme ? savedTrackId : '';
     const courseGroups = tpgService.resolveCourseGroups(programme, trackId);
     this.setData({
       isCurrentProgramme,
       courseGroups,
       courseCount: courseGroups.reduce((sum, group) => sum + group.courses.length, 0),
       creditsRequired: tpgService.getCreditsRequired(programme, trackId),
-      selectedTrack: trackId ? tpgService.getTrack(programme.id, trackId) : null
+      selectedTrack: trackId ? tpgService.getTrack(programme.id, trackId) : null,
+      trackSelectionRequired: tpgService.listTracks(programme).length > 0 && !programme.trackSelectionOptional
     });
   },
 
@@ -117,6 +123,16 @@ Page({
     const programme = this.data.programme;
     const university = this.data.university;
     if (!programme || !university) return;
+    const trackId = this.data.selectedTrack ? this.data.selectedTrack.id : '';
+    if (!tpgService.isTrackSelectionComplete(programme, trackId)) {
+      wx.showToast({ title: '请先选择 Track', icon: 'none' });
+      service.openOnboarding({
+        profileType: 'tpg',
+        universityCode: university.code,
+        programmeId: programme.id
+      });
+      return;
+    }
     service.saveProfile({
       profileType: 'tpg',
       universityCode: university.code,
@@ -124,9 +140,12 @@ Page({
       programmeId: programme.id,
       programmeName: programme.name,
       programmeCode: programme.programmeCode,
+      trackId,
+      trackName: this.data.selectedTrack ? this.data.selectedTrack.name : '',
+      trackType: this.data.selectedTrack ? this.data.selectedTrack.type : '',
       faculty: programme.faculty,
       curriculumYear: university.academicYear,
-      creditsRequired: programme.creditsRequired,
+      creditsRequired: tpgService.getCreditsRequired(programme, trackId),
       courseCount: this.data.courseCount,
       sourceUrl: programme.sourceUrl || ''
     });

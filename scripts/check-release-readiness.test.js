@@ -190,6 +190,8 @@ test('home page hides graduation progress until a profile is saved', () => {
   assert(homePage.includes('wx:if="{{profile && !isTpg}}"'));
   assert(homePage.includes('wx:if="{{profile && !isTpg && !isUgCatalogue}}"'));
   assert(homeLogic.includes('const auditResult = !profile || isTpg || isUgCatalogue'));
+  assert(homeLogic.includes('const requestId = (this._requestId || 0) + 1'));
+  assert(homeLogic.includes('if (requestId !== this._requestId) return'));
 });
 
 test('saved programme profiles keep source links for review and feedback', () => {
@@ -573,7 +575,11 @@ test('TPG Programme and audit pages resolve Track-specific groups and requiremen
   const auditLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'audit', 'audit.js'), 'utf8');
 
   assert(programmeLogic.includes('tpgService.resolveCourseGroups(programme, trackId)'));
+  assert(programmeLogic.includes('tpgService.isTrackSelectionComplete(programme, trackId)'));
+  assert(programmeLogic.includes("wx.showToast({ title: '请先选择 Track', icon: 'none' })"));
+  assert(programmeLogic.includes('service.openOnboarding({'));
   assert(programmePage.includes('wx:for="{{courseGroups}}"'));
   assert(programmePage.includes('{{selectedTrack.name}}'));
+  assert(programmePage.includes('选择 Track 并保存'));
   assert(auditLogic.includes('tpgService.resolveCourseGroups(programme, trackId)'));
 });

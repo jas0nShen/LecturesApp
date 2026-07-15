@@ -52,6 +52,8 @@ Page({
   },
 
   async onShow() {
+    const requestId = (this._requestId || 0) + 1;
+    this._requestId = requestId;
     const profile = service.getProfile();
     this.setData({ onboardingUrl: service.buildOnboardingUrl(profile) });
     const isTpg = profile && profile.profileType === 'tpg';
@@ -71,6 +73,7 @@ Page({
           source: profile ? 'catalogue' : 'none'
         }
       : await service.buildAuditRemote(profile);
+    if (requestId !== this._requestId) return;
     const recentCourses = service.getRecentlyViewedOfferings().slice(0, 3).map((course) => ({
       ...course,
       termLabel: course.terms.join(' / ')

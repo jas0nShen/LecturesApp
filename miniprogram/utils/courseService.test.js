@@ -90,6 +90,22 @@ test('TPG Track is preserved in the profile settings route', () => {
   assert(url.includes('trackId=EDUHK-TPG-DIR-MED-CTA'));
 });
 
+test('saving a TPG profile cannot bypass a required Track selection', () => {
+  const programmeId = 'POLYU-TPG-094';
+  const trackId = 'POLYU-TPG-094-LANGUAGE-AND-COMMUNICATION';
+  assert.throws(
+    () => service.saveProfile({ profileType: 'tpg', programmeId }),
+    /TPG Track selection is required/
+  );
+  assert.throws(
+    () => service.saveProfile({ profileType: 'tpg', programmeId, trackId: 'OTHER-TRACK' }),
+    /TPG Track selection is required/
+  );
+
+  service.saveProfile({ profileType: 'tpg', programmeId, trackId });
+  assert.equal(service.getProfile().trackId, trackId);
+});
+
 test('local course filters match programme, major, type, prerequisite and keyword', () => {
   const courses = service.listCourses({
     programmeId: 1,

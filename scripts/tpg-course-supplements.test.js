@@ -82,6 +82,19 @@ test('TPG course supplement import is deterministic and preserves Programme IDs'
   assert.deepEqual(applySupplements(imported, [{ file: 'fixture.json', value: supplement }]), imported);
 });
 
+test('TPG course supplements preserve a newer Programme-level verification date', () => {
+  const supplement = fixtureSupplement();
+  supplement.verifiedAt = '2026-07-11';
+  supplement.programmes[0].verifiedAt = '2026-07-15';
+  validateSupplement(supplement, fixtureCatalogue(), 'fixture.json');
+
+  const imported = applySupplements(fixtureCatalogue(), [{ file: 'fixture.json', value: supplement }]);
+  assert.equal(imported.programmes[0].courseVerifiedAt, '2026-07-15');
+
+  supplement.programmes[0].verifiedAt = '15 July 2026';
+  assert.throws(() => validateSupplement(supplement, fixtureCatalogue(), 'fixture.json'), /invalid verifiedAt date/);
+});
+
 test('TPG course supplement import materializes inherited official source URLs', () => {
   const supplement = fixtureSupplement();
   delete supplement.programmes[0].courseGroups[0].sourceUrl;

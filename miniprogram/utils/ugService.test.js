@@ -1200,6 +1200,31 @@ test('imported UG coded courses are searchable when public course rows exist', (
   assert(ugService.listMajorCourses(computing.id, computerScience.id, { keyword: 'Artificial Intelligence' }).length > 0);
 });
 
+test('cold-start UG profiles use index coverage before their course shard is loaded', () => {
+  const originalGetApp = global.getApp;
+  global.getApp = () => ({ globalData: { ugCoursesByUniversity: {} } });
+  try {
+    const programme = ugService.listProgrammes({ universityCode: 'HKU' })
+      .find((item) => item.code === '6004');
+    const major = ugService.listMajors(programme.id)[0];
+    const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+
+    assert.equal(profile.courses.length, 0);
+    assert.equal(profile.sourceStatus, 'course_codes_available');
+    assert.equal(profile.codedCourseCount, 24);
+
+    const mixedProgramme = ugService.getProgramme('POLYU-UG-JS3310-25');
+    const pendingMajor = ugService.listMajors(mixedProgramme.id)
+      .find((item) => item.id === 'POLYU-UG-JS3310-25-M3');
+    const pendingProfile = ugService.getMajorProfile(mixedProgramme.id, pendingMajor.id, '2026');
+    assert.equal(pendingProfile.sourceStatus, 'programme_summary_only');
+    assert.equal(pendingProfile.codedCourseCount, 0);
+  } finally {
+    if (originalGetApp === undefined) delete global.getApp;
+    else global.getApp = originalGetApp;
+  }
+});
+
 test('imported UG coded courses are deduplicated by course code within a major', () => {
   const polyu = ugService.listUniversities().find((item) => item.code === 'POLYU');
   const programmes = ugService.listProgrammes({ universityId: polyu.id, degreeLevel: 'undergraduate' });

@@ -265,6 +265,10 @@ function getMajorProfile(programmeId, majorId, curriculumYear) {
     const university = getUniversity(programme.universityId);
     const faculty = getFaculty(programme.facultyId);
     const courses = listMajorCourses(programme.id, major.id);
+    const codedCourseCount = Number(major.codedCourseCount || 0);
+    const sourceStatus = codedCourseCount > 0
+      ? 'course_codes_available'
+      : 'programme_summary_only';
     return {
       university,
       faculty,
@@ -282,8 +286,8 @@ function getMajorProfile(programmeId, majorId, curriculumYear) {
       verifiedAt: catalogue.generatedAt ? catalogue.generatedAt.slice(0, 10) : '',
       // A programme may contain several majors with different coverage.  UI
       // callers must use the selected major's course set, not the aggregate.
-      sourceStatus: courses.length ? 'course_codes_available' : 'programme_summary_only',
-      codedCourseCount: courses.length
+      sourceStatus,
+      codedCourseCount
     };
   }
   const university = getUniversity(programme.universityId);

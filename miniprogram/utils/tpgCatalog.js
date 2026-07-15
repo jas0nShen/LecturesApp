@@ -3886,7 +3886,7 @@ module.exports = {
       "dataLevel": "programme",
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/rs/study/taught-postgraduate-studies/msc-programme-2026-or-after/msc-in-advanced-physiotherapy/curriculum/",
       "courseStatusNote": "The official 2027 Programme page, the current Department of Rehabilitation Sciences Curriculum page, and the July 2026 v14 Programme leaflet publish the 31-credit paths, three Specialisms, fixed Core and Clinical Practice subject codes, and per-course credits. All three sources label the compulsory 6-credit component only as Project Study and do not publish its subject code. RS567 must not be inferred from another Rehabilitation Sciences Programme.",
       "courseCount": 0
@@ -3920,7 +3920,7 @@ module.exports = {
       "dataLevel": "programme",
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/",
       "courseStatusNote": "The official 2027 Programme page publishes a 31-credit structure and an elective list that includes Advanced Topics in InsurTech and Supply Chain Management. The current AMA Curriculum code table does not identify those two current elective entries and instead includes Current Topics in Actuarial Science. The remaining compulsory, elective, Dissertation and AIE codes can be mapped, but this mismatch leaves the current elective pool incomplete; no code is inferred from another Programme.",
       "courseCount": 0
@@ -3990,7 +3990,7 @@ module.exports = {
       "dataLevel": "programme",
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/hti/study/programmes/taught-postgraduate-programmes_list/master-of-science-in-medical-laboratory-science/",
       "courseStatusNote": "The official 2027 Programme page and the September 2026 MSc Medical Laboratory Science leaflet publish the 31-credit generic and Molecular Diagnostics paths, course groups and current subject titles. Neither public source publishes the subject codes, and the leaflet directs readers to the Programme Requirement Document for curriculum details; that document is not publicly linked. The Programme remains blocked rather than inferring codes from other Health Technology awards.",
       "courseCount": 0
@@ -4006,7 +4006,7 @@ module.exports = {
       "dataLevel": "programme",
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/hti/study/programmes/taught-postgraduate-programmes_list/master-of-science-in-medical-imaging-and-radiation-science/",
       "courseStatusNote": "The official 2027 Programme page and the September 2026 MSc Medical Imaging and Radiation Science leaflet publish the 31-credit generic path, three Specialisms, course groups and current subject titles. Neither public source publishes the subject codes, and the leaflet directs readers to the Programme Requirement Document for curriculum details; that document is not publicly linked. The Programme remains blocked rather than inferring codes from another Health Technology award.",
       "courseCount": 0
@@ -4022,7 +4022,7 @@ module.exports = {
       "dataLevel": "programme",
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/hti/study/programmes/taught-postgraduate-programmes_list/master-of-science-in-medical-physics/",
       "courseStatusNote": "The official 2027 Programme page publishes the 31-credit rule, current course titles and per-course credits, while the September 2026 MSc Medical Physics leaflet confirms the public subject pools. Neither source publishes the subject codes, and the leaflet directs readers to the Programme Requirement Document for curriculum details; that document is not publicly linked. The Programme remains blocked rather than inferring codes from another Health Technology award.",
       "courseCount": 0
@@ -4038,7 +4038,7 @@ module.exports = {
       "dataLevel": "programme",
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/hti/study/programmes/taught-postgraduate-programmes_list/master-of-science-in-medical-data-science/",
       "courseStatusNote": "The official 2027 Programme page and the September 2026 MSc Medical Data Science leaflet publish the 31-credit rule, course groups and current subject titles. Neither public source publishes the complete subject codes and per-course credits, and the leaflet directs readers to the Programme Requirement Document for curriculum details; that document is not publicly linked. The Programme remains blocked rather than exposing a partial code pool assembled from overlapping awards.",
       "courseCount": 0
@@ -4054,7 +4054,7 @@ module.exports = {
       "dataLevel": "programme",
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/hti/study/programmes/taught-postgraduate-programmes_list/master-of-medical-imaging/",
       "courseStatusNote": "The official 2027 Programme page and the September 2026 Master of Medical Imaging leaflet publish the 91-credit professional structure and current Foundation, Professional and Clinical Practicum titles. Neither public source publishes the subject codes or per-course credit values, and the leaflet directs readers to the Programme Requirement Document for curriculum details; that document is not publicly linked. The Programme remains blocked rather than inventing the professional and practicum codes or splitting aggregate credits across courses.",
       "courseCount": 0
@@ -4070,7 +4070,7 @@ module.exports = {
       "dataLevel": "programme",
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/gs/prospective-students/tpg/master-of-technology-entrepreneurship/curriculum/",
       "courseStatusNote": "The official 2027 Programme page, Graduate School Curriculum page and 2027-28 Programme brochure consistently publish the 37-credit structure, current Technology Core, Entrepreneurship Core, Project, Elective and Academic Integrity and Ethics subject titles, and the explicit credit value of every subject. The three public sources do not publish any subject code, including the 6-credit Project Part 1: Research and the 15-credit Project Part 2: Start-up completed at an MTRI. The Programme remains blocked rather than inventing a new subject prefix or exposing name-only courses.",
       "courseCount": 0
@@ -4104,7 +4104,7 @@ module.exports = {
       "dataLevel": "programme",
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/fb/study/tpg-landing/tpg/bm/resources/",
       "courseStatusNote": "The official 2027 Programme page and 2027-28 MSc Business Management brochure publish the 43-credit structure, current subject titles, the 6-credit International Experience requirement and the two-of-eleven Elective rule. The public AF, LMS and MM Subject Syllabi catalogues recover many matching codes and 3-credit values, including BM-labelled AF entries, but they do not publish a uniquely identified code for International Experience. The MM catalogue also exposes two English AIE codes in one Subject Description and two different subjects named Marketing Management, so the current Programme-specific codes cannot be selected safely by title alone. The public Resources page links the 2025/26 Programme Requirement Document for Programme code 02022, but the document redirects to PolyU SSO. The Programme remains blocked rather than exposing an incomplete code pool or choosing among same-name subjects without the Programme Requirement Document.",
       "courseCount": 0
@@ -4120,7 +4120,7 @@ module.exports = {
       "dataLevel": "programme",
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/fb/study/tpg-landing/tpg/awm/",
       "courseStatusNote": "The official 2027 Programme page, the two current Faculty of Business Award Path pages and the 2027-28 MSc Asset and Wealth Management brochure consistently publish two 31-credit Award Paths, the 21-credit Compulsory Core requirement, the 1-credit AIE requirement, the 9-credit three-of-nine Elective requirement, the 6-credit Project and the 3-credit International Experience option. These public Programme sources publish subject titles but no subject codes. The public 2025/26 AF, LMS and MM Subject Syllabi catalogues recover codes for some overlapping titles, but they do not expose an AWM-labelled code table or exact current entries for Asset and Wealth Management, Asset and Wealth Management Operation, Digital Asset Management, Investment and Operations Management, or Wealth Planning and Family Office. The Programme uses singular Investment while the AF catalogue exposes AF5344 Investments, the MM catalogue exposes two different Marketing Management codes and multiple AIE variants, and its public International Experience entries are MBA-specific. The Programme remains blocked rather than mapping a future 2027 curriculum from partial, same-name or differently named 2025/26 subjects.",
       "tracks": [
@@ -4154,7 +4154,7 @@ module.exports = {
       "dataLevel": "structure",
       "academicYear": "2027-28",
       "courseVerificationStatus": "verified",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en",
       "courseStatusNote": "The official curriculum publishes optional Natural Language Processing and Visual Computing Streams plus Dissertation, Project and taught-subject completion paths. The Visual Computing Stream requires one of COMP5422 or COMP5425. Up to 6 credits of approved non-COMP electives may be used without a fixed code list. These mutually exclusive and approval-dependent paths require manual audit review, and no unlisted course is invented.",
       "tracks": [
@@ -4209,7 +4209,7 @@ module.exports = {
       "dataLevel": "programme",
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61038",
       "courseStatusNote": "The official 2027 Programme page publishes the 31-credit structure, the five required credit categories and the current 1-credit DSAI5T09 Academic Integrity and Ethics subject. The official 2026 MSc Metaverse Technology brochure publishes the complete grouped subject-title list, while the current COMP Subjects page and official COMP, EIE and MM catalogues recover codes for all but five cross-department subjects: Procedural Content Generation and AI in Games, Metaverse Economics & Ecosystems, UX Design Fundamentals, Advanced Visualisation and Interaction, and Entrepreneurship for Culture and Creative Industry. The older COMP curriculum page still names EEE5T03 as AIE, so the current 2027 Programme page takes precedence for the 2027-28 intake. None of the public official Programme, School of Design or subject-catalogue pages publishes codes for the five unresolved titles. The Programme remains blocked rather than exposing a partial pool or inferring codes from subject names.",
       "creditUnit": "credits",
@@ -4497,7 +4497,7 @@ module.exports = {
       "dataLevel": "programme",
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/sn/study/postgraduate-programmes/master-of-science-in-nursing/programme-structure/",
       "courseStatusNote": "The official 2027 Programme page, School of Nursing programme pamphlet and 2025-intake Subject Offering Pattern publish the 31-credit completion paths, eight specialisms, and coded Core, Dissertation, Practicum, specialty and general elective subjects. They do not publish the AIE subject code or explicit per-course credits for the taught subjects. Those fields must not be inferred from another FHSS Programme or from the aggregate group totals.",
       "courseCount": 0
