@@ -58,6 +58,30 @@ const statusOverrides = {
     sourceUrl: 'https://www.polyu.edu.hk/fb/study/tpg-landing/tpg/bm/resources/',
     statusNote: 'The official 2027 Programme page and 2027-28 MSc Business Management brochure publish the 43-credit structure, current subject titles, the 6-credit International Experience requirement and the two-of-eleven Elective rule. The public AF, LMS and MM Subject Syllabi catalogues recover many matching codes and 3-credit values, including BM-labelled AF entries, but they do not publish a uniquely identified code for International Experience. The MM catalogue also exposes two English AIE codes in one Subject Description and two different subjects named Marketing Management, so the current Programme-specific codes cannot be selected safely by title alone. The public Resources page links the 2025/26 Programme Requirement Document for Programme code 02022, but the document redirects to PolyU SSO. The Programme remains blocked rather than exposing an incomplete code pool or choosing among same-name subjects without the Programme Requirement Document.'
   },
+  'POLYU-TPG-088': {
+    verifiedAt: '2026-07-15',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    trackSelectionOptional: false,
+    tracks: [
+      {
+        id: 'POLYU-TPG-088-DIGITAL-ASSET-MANAGEMENT',
+        name: 'Digital Asset Management',
+        type: 'Award Path',
+        creditsRequired: 31,
+        sourceUrl: 'https://www.polyu.edu.hk/fb/study/tpg-landing/tpg/awm/programme_dam/'
+      },
+      {
+        id: 'POLYU-TPG-088-FAMILY-OFFICE-WEALTH-MANAGEMENT',
+        name: 'Family Office Wealth Management',
+        type: 'Award Path',
+        creditsRequired: 31,
+        sourceUrl: 'https://www.polyu.edu.hk/fb/study/tpg-landing/tpg/awm/programme_fowm/'
+      }
+    ],
+    sourceUrl: 'https://www.polyu.edu.hk/fb/study/tpg-landing/tpg/awm/',
+    statusNote: 'The official 2027 Programme page, the two current Faculty of Business Award Path pages and the 2027-28 MSc Asset and Wealth Management brochure consistently publish two 31-credit Award Paths, the 21-credit Compulsory Core requirement, the 1-credit AIE requirement, the 9-credit three-of-nine Elective requirement, the 6-credit Project and the 3-credit International Experience option. These public Programme sources publish subject titles but no subject codes. The public 2025/26 AF, LMS and MM Subject Syllabi catalogues recover codes for some overlapping titles, but they do not expose an AWM-labelled code table or exact current entries for Asset and Wealth Management, Asset and Wealth Management Operation, Digital Asset Management, Investment and Operations Management, or Wealth Planning and Family Office. The Programme uses singular Investment while the AF catalogue exposes AF5344 Investments, the MM catalogue exposes two different Marketing Management codes and multiple AIE variants, and its public International Experience entries are MBA-specific. The Programme remains blocked rather than mapping a future 2027 curriculum from partial, same-name or differently named 2025/26 subjects.'
+  },
   'POLYU-TPG-076': {
     verifiedAt: '2026-07-15',
     sourceUrl: 'https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/',
@@ -87,6 +111,10 @@ function main() {
         : row.courseCodes && row.courseCodes.length
           ? 'The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.'
           : 'The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.'),
+      ...(override.creditsRequired ? { creditsRequired: override.creditsRequired } : {}),
+      ...(override.creditUnit ? { creditUnit: override.creditUnit } : {}),
+      ...(override.trackSelectionOptional !== undefined ? { trackSelectionOptional: override.trackSelectionOptional } : {}),
+      ...(override.tracks ? { tracks: override.tracks } : {}),
       ...(override.verifiedAt ? { verifiedAt: override.verifiedAt } : {})
     };
   });

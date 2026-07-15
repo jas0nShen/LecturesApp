@@ -86,6 +86,13 @@ function validateSupplement(supplement, catalogue, file = 'supplement') {
         validateHttps(track.sourceUrl, track.id);
       });
     }
+    if (entry.creditsRequired !== undefined) {
+      assert(Number(entry.creditsRequired) > 0, `${entry.programmeId} has invalid creditsRequired`);
+      assert(entry.creditUnit, `${entry.programmeId} needs creditUnit when creditsRequired is provided`);
+    }
+    if (entry.trackSelectionOptional !== undefined) {
+      assert.equal(typeof entry.trackSelectionOptional, 'boolean', `${entry.programmeId} has invalid trackSelectionOptional`);
+    }
 
     if (entry.status !== 'verified') {
       assert(!(entry.courseGroups || []).length, `${entry.programmeId} cannot publish courses while ${entry.status}`);
@@ -141,15 +148,17 @@ function applySupplements(catalogue, supplementFiles) {
       programme.courseVerifiedAt = value.verifiedAt;
       programme.courseSourceUrl = entry.sourceUrl;
       programme.courseStatusNote = entry.statusNote || '';
+      if (entry.tracks !== undefined) {
+        const existingTracksById = new Map((programme.tracks || []).map((track) => [track.id, track]));
+        programme.tracks = entry.tracks.map((track) => ({
+          ...(existingTracksById.get(track.id) || {}),
+          ...track
+        }));
+      }
+      if (entry.trackSelectionOptional !== undefined) programme.trackSelectionOptional = Boolean(entry.trackSelectionOptional);
+      if (entry.creditsRequired !== undefined) programme.creditsRequired = entry.creditsRequired;
+      if (entry.creditUnit !== undefined) programme.creditUnit = entry.creditUnit;
       if (entry.status === 'verified') {
-        if (entry.tracks !== undefined) {
-          const existingTracksById = new Map((programme.tracks || []).map((track) => [track.id, track]));
-          programme.tracks = entry.tracks.map((track) => ({
-            ...(existingTracksById.get(track.id) || {}),
-            ...track
-          }));
-        }
-        if (entry.trackSelectionOptional !== undefined) programme.trackSelectionOptional = Boolean(entry.trackSelectionOptional);
         programme.creditsRequired = entry.creditsRequired;
         programme.creditUnit = entry.creditUnit;
         programme.courseGroups = entry.courseGroups.map((group) => ({

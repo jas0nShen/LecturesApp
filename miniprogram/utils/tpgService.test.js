@@ -98,6 +98,31 @@ test('PolyU Business Management remains blocked when its Programme Requirement D
   assert.match(programme.courseStatusNote, /rather than exposing an incomplete code pool/);
 });
 
+test('PolyU Asset and Wealth Management keeps its official total and Award Paths while code evidence is incomplete', () => {
+  const programme = tpgService.getProgramme('POLYU-TPG-088');
+
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal(programme.creditsRequired, 31);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.trackSelectionOptional, false);
+  assert.deepEqual(
+    programme.tracks.map((track) => [track.id, track.name, track.type, track.creditsRequired]),
+    [
+      ['POLYU-TPG-088-DIGITAL-ASSET-MANAGEMENT', 'Digital Asset Management', 'Award Path', 31],
+      ['POLYU-TPG-088-FAMILY-OFFICE-WEALTH-MANAGEMENT', 'Family Office Wealth Management', 'Award Path', 31]
+    ]
+  );
+  assert.equal((programme.courseGroups || []).length, 0);
+  assert.equal(programme.courseSourceUrl, 'https://www.polyu.edu.hk/fb/study/tpg-landing/tpg/awm/');
+  assert.match(programme.courseStatusNote, /two 31-credit Award Paths/);
+  assert.match(programme.courseStatusNote, /6-credit Project/);
+  assert.match(programme.courseStatusNote, /3-credit International Experience/);
+  assert.match(programme.courseStatusNote, /do not expose an AWM-labelled code table/);
+  assert.match(programme.courseStatusNote, /singular Investment/);
+  assert.match(programme.courseStatusNote, /two different Marketing Management codes/);
+  assert.match(programme.courseStatusNote, /rather than mapping a future 2027 curriculum/);
+});
+
 test('HKUST intake-announced electives retain official credit requirements without invented courses', () => {
   const financeTechnology = tpgService.getProgramme('HKUST-TPG-008');
   const globalFinance = tpgService.getProgramme('HKUST-TPG-012');

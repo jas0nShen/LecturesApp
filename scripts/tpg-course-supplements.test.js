@@ -136,6 +136,40 @@ test('TPG course supplements preserve directory metadata while enriching stable 
   assert.deepEqual(applySupplements(imported, [{ file: 'fixture.json', value: supplement }]), imported);
 });
 
+test('blocked TPG supplements can correct official totals and Award Paths without publishing courses', () => {
+  const catalogue = fixtureCatalogue();
+  catalogue.programmes[0].creditsRequired = 9;
+  catalogue.programmes[0].tracks = [];
+  const supplement = fixtureSupplement();
+  supplement.programmes[0] = {
+    programmeId: 'TEST-TPG-001',
+    status: 'blocked',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    trackSelectionOptional: false,
+    sourceUrl: 'https://example.edu/programme',
+    statusNote: 'Official course codes are not public.',
+    tracks: [{
+      id: 'TEST-TPG-001-PATH',
+      name: 'Official Award Path',
+      type: 'Award Path',
+      creditsRequired: 31,
+      sourceUrl: 'https://example.edu/programme/path'
+    }]
+  };
+
+  validateSupplement(supplement, catalogue, 'blocked.json');
+  const imported = applySupplements(catalogue, [{ file: 'blocked.json', value: supplement }]);
+  const programme = imported.programmes[0];
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal(programme.creditsRequired, 31);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.trackSelectionOptional, false);
+  assert.deepEqual(programme.tracks, supplement.programmes[0].tracks);
+  assert.deepEqual(programme.courseGroups, []);
+  assert.equal(programme.dataLevel, 'programme');
+});
+
 test('TPG course supplements can correct an official Programme name without changing its stable ID', () => {
   const catalogue = fixtureCatalogue();
   catalogue.programmes[0].name = 'Broken directory label';
