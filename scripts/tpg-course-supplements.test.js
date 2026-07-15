@@ -170,19 +170,25 @@ test('blocked TPG supplements can correct official totals and Award Paths withou
   assert.equal(programme.dataLevel, 'programme');
 });
 
-test('TPG course supplements can correct an official Programme name without changing its stable ID', () => {
+test('TPG course supplements can correct official Programme metadata without changing its stable ID', () => {
   const catalogue = fixtureCatalogue();
   catalogue.programmes[0].name = 'Broken directory label';
+  catalogue.programmes[0].faculty = 'Broken faculty label';
   const supplement = fixtureSupplement();
   supplement.programmes[0].programmeName = 'Official Programme Name';
+  supplement.programmes[0].faculty = 'Official Faculty';
 
   validateSupplement(supplement, catalogue, 'fixture.json');
   const imported = applySupplements(catalogue, [{ file: 'fixture.json', value: supplement }]);
   assert.equal(imported.programmes[0].id, 'TEST-TPG-001');
   assert.equal(imported.programmes[0].name, 'Official Programme Name');
+  assert.equal(imported.programmes[0].faculty, 'Official Faculty');
 
   supplement.programmes[0].programmeName = '   ';
   assert.throws(() => validateSupplement(supplement, catalogue, 'fixture.json'), /invalid programmeName/);
+  supplement.programmes[0].programmeName = 'Official Programme Name';
+  supplement.programmes[0].faculty = '   ';
+  assert.throws(() => validateSupplement(supplement, catalogue, 'fixture.json'), /invalid faculty/);
 });
 
 test('TPG course supplements reject unknown Tracks and missing official credits', () => {

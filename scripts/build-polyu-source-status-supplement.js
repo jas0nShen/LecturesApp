@@ -19,6 +19,7 @@ const verifiedIds = new Set([
   'POLYU-TPG-090',
   'POLYU-TPG-092',
   'POLYU-TPG-093',
+  'POLYU-TPG-094',
   'POLYU-TPG-102',
   'POLYU-TPG-105'
 ]);
@@ -81,6 +82,13 @@ const statusOverrides = {
     ],
     sourceUrl: 'https://www.polyu.edu.hk/fb/study/tpg-landing/tpg/awm/',
     statusNote: 'The official 2027 Programme page, the two current Faculty of Business Award Path pages and the 2027-28 MSc Asset and Wealth Management brochure consistently publish two 31-credit Award Paths, the 21-credit Compulsory Core requirement, the 1-credit AIE requirement, the 9-credit three-of-nine Elective requirement, the 6-credit Project and the 3-credit International Experience option. These public Programme sources publish subject titles but no subject codes. The public 2025/26 AF, LMS and MM Subject Syllabi catalogues recover codes for some overlapping titles, but they do not expose an AWM-labelled code table or exact current entries for Asset and Wealth Management, Asset and Wealth Management Operation, Digital Asset Management, Investment and Operations Management, or Wealth Planning and Family Office. The Programme uses singular Investment while the AF catalogue exposes AF5344 Investments, the MM catalogue exposes two different Marketing Management codes and multiple AIE variants, and its public International Experience entries are MBA-specific. The Programme remains blocked rather than mapping a future 2027 curriculum from partial, same-name or differently named 2025/26 subjects.'
+  },
+  'POLYU-TPG-091': {
+    verifiedAt: '2026-07-15',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/61038',
+    statusNote: 'The official 2027 Programme page publishes the 31-credit structure, the five required credit categories and the current 1-credit DSAI5T09 Academic Integrity and Ethics subject. The official 2026 MSc Metaverse Technology brochure publishes the complete grouped subject-title list, while the current COMP Subjects page and official COMP, EIE and MM catalogues recover codes for all but five cross-department subjects: Procedural Content Generation and AI in Games, Metaverse Economics & Ecosystems, UX Design Fundamentals, Advanced Visualisation and Interaction, and Entrepreneurship for Culture and Creative Industry. The older COMP curriculum page still names EEE5T03 as AIE, so the current 2027 Programme page takes precedence for the 2027-28 intake. None of the public official Programme, School of Design or subject-catalogue pages publishes codes for the five unresolved titles. The Programme remains blocked rather than exposing a partial pool or inferring codes from subject names.'
   },
   'POLYU-TPG-076': {
     verifiedAt: '2026-07-15',

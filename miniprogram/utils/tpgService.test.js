@@ -9,8 +9,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 239);
-  assert.equal(coverage.courseCount, 5782);
+  assert.equal(coverage.programmeWithCoursesCount, 240);
+  assert.equal(coverage.courseCount, 5823);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -29,8 +29,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 239);
-  assert.equal(rows.length, 239);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 240);
+  assert.equal(rows.length, 240);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
@@ -121,6 +121,57 @@ test('PolyU Asset and Wealth Management keeps its official total and Award Paths
   assert.match(programme.courseStatusNote, /singular Investment/);
   assert.match(programme.courseStatusNote, /two different Marketing Management codes/);
   assert.match(programme.courseStatusNote, /rather than mapping a future 2027 curriculum/);
+});
+
+test('PolyU Metaverse Technology records its official total and exact unresolved code gap without exposing a partial pool', () => {
+  const programme = tpgService.getProgramme('POLYU-TPG-091');
+
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal(programme.creditsRequired, 31);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal((programme.courseGroups || []).length, 0);
+  assert.equal(programme.courseSourceUrl, 'https://www.polyu.edu.hk/study/pg/tpg/2027/61038');
+  assert.match(programme.courseStatusNote, /five required credit categories/);
+  assert.match(programme.courseStatusNote, /current 1-credit DSAI5T09/);
+  assert.match(programme.courseStatusNote, /five cross-department subjects/);
+  assert.match(programme.courseStatusNote, /Procedural Content Generation and AI in Games/);
+  assert.match(programme.courseStatusNote, /Metaverse Economics & Ecosystems/);
+  assert.match(programme.courseStatusNote, /UX Design Fundamentals/);
+  assert.match(programme.courseStatusNote, /Advanced Visualisation and Interaction/);
+  assert.match(programme.courseStatusNote, /Entrepreneurship for Culture and Creative Industry/);
+  assert.match(programme.courseStatusNote, /current 2027 Programme page takes precedence/);
+  assert.match(programme.courseStatusNote, /rather than exposing a partial pool/);
+});
+
+test('PolyU Generative AI and the Humanities filters both official Specialism elective pools', () => {
+  const programme = tpgService.getProgramme('POLYU-TPG-094');
+  const tracks = Object.fromEntries(tpgService.listTracks(programme).map((track) => [track.name, track.id]));
+  const compulsory = programme.courseGroups.find((group) => group.id === 'compulsory-subjects');
+  const electives = programme.courseGroups.find((group) => group.id === 'specialism-elective-subjects');
+  const languageCourses = tpgService.flattenCourses(programme, '', tracks['Language and Communication']);
+  const artsCourses = tpgService.flattenCourses(programme, '', tracks['Arts and Culture']);
+
+  assert.equal(programme.courseVerificationStatus, 'verified');
+  assert.equal(programme.faculty, 'Faculty of Humanities');
+  assert.equal(programme.creditsRequired, 31);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.trackSelectionOptional, false);
+  assert.deepEqual(Object.keys(tracks).sort(), ['Arts and Culture', 'Language and Communication']);
+  assert.equal(compulsory.creditsRequired, 19);
+  assert.equal(compulsory.coursesRequired, 7);
+  assert.equal(compulsory.courses.find((course) => course.code === 'CBS5T01').credits, 1);
+  assert.equal(electives.creditsRequiredByTrackIds[tracks['Language and Communication']], 12);
+  assert.equal(electives.creditsRequiredByTrackIds[tracks['Arts and Culture']], 12);
+  assert.equal(languageCourses.length, 28);
+  assert.equal(artsCourses.length, 28);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'CBS5506', tracks['Arts and Culture']), null);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'CBS5507', tracks['Language and Communication']), null);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'CBS5508', tracks['Language and Communication']).credits, 9);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'CBS5509', tracks['Arts and Culture']).credits, 9);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'CBS5505', tracks['Language and Communication']).credits, 3);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'CBS5505', tracks['Arts and Culture']).credits, 3);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.match(programme.courseStatusNote, /21-credit PgD exit award is not modelled/);
 });
 
 test('HKUST intake-announced electives retain official credit requirements without invented courses', () => {

@@ -505,13 +505,10 @@
       "programmeId": "POLYU-TPG-091",
       "status": "blocked",
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61038",
-      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-094",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/74001-atf-atp-lcf-lcp",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+      "statusNote": "The official 2027 Programme page publishes the 31-credit structure, the five required credit categories and the current 1-credit DSAI5T09 Academic Integrity and Ethics subject. The official 2026 MSc Metaverse Technology brochure publishes the complete grouped subject-title list, while the current COMP Subjects page and official COMP, EIE and MM catalogues recover codes for all but five cross-department subjects: Procedural Content Generation and AI in Games, Metaverse Economics & Ecosystems, UX Design Fundamentals, Advanced Visualisation and Interaction, and Entrepreneurship for Culture and Creative Industry. The older COMP curriculum page still names EEE5T03 as AIE, so the current 2027 Programme page takes precedence for the 2027-28 intake. None of the public official Programme, School of Design or subject-catalogue pages publishes codes for the five unresolved titles. The Programme remains blocked rather than exposing a partial pool or inferring codes from subject names.",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "verifiedAt": "2026-07-15"
     },
     {
       "programmeId": "POLYU-TPG-095",

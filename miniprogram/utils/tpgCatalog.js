@@ -4211,7 +4211,8 @@ module.exports = {
       "courseVerificationStatus": "blocked",
       "courseVerifiedAt": "2026-07-11",
       "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61038",
-      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseStatusNote": "The official 2027 Programme page publishes the 31-credit structure, the five required credit categories and the current 1-credit DSAI5T09 Academic Integrity and Ethics subject. The official 2026 MSc Metaverse Technology brochure publishes the complete grouped subject-title list, while the current COMP Subjects page and official COMP, EIE and MM catalogues recover codes for all but five cross-department subjects: Procedural Content Generation and AI in Games, Metaverse Economics & Ecosystems, UX Design Fundamentals, Advanced Visualisation and Interaction, and Entrepreneurship for Culture and Creative Industry. The older COMP curriculum page still names EEE5T03 as AIE, so the current 2027 Programme page takes precedence for the 2027-28 intake. None of the public official Programme, School of Design or subject-catalogue pages publishes codes for the five unresolved titles. The Programme remains blocked rather than exposing a partial pool or inferring codes from subject names.",
+      "creditUnit": "credits",
       "courseCount": 0
     },
     {
@@ -4256,16 +4257,37 @@ module.exports = {
       "universityCode": "POLYU",
       "programmeCode": "74001",
       "name": "Generative AI and the Humanities",
-      "faculty": "School of Design (SD)",
-      "creditsRequired": 9,
+      "faculty": "Faculty of Humanities",
+      "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/74001-atf-atp-lcf-lcp",
-      "dataLevel": "programme",
+      "dataLevel": "structure",
       "academicYear": "2027-28",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/74001-atf-atp-lcf-lcp",
-      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
-      "courseCount": 0
+      "courseStatusNote": "The official 2027 Programme page publishes the two Specialisms, the 31-credit total, 18 tuition-bearing Compulsory credits, 12 Elective credits and the current subject-title pools. The current Department of Language Science and Technology Curriculum table publishes the matching codes and credits, including the additional compulsory 1-credit CBS5T01 AIE subject, so the full Compulsory total is 19 credits. Each student completes 12 Elective credits from the list for the selected Specialism. The 6-credit Capstone Project and 9-credit Dissertation entries create variable course-count combinations, and annual offering is subject to staff and viable enrolment, so the Elective requirement remains marked for manual audit review. The 21-credit PgD exit award is not modelled as an MSc completion path.",
+      "tracks": [
+        {
+          "id": "POLYU-TPG-094-LANGUAGE-AND-COMMUNICATION",
+          "code": "LC",
+          "name": "Language and Communication",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/74001-atf-atp-lcf-lcp"
+        },
+        {
+          "id": "POLYU-TPG-094-ARTS-AND-CULTURE",
+          "code": "AT",
+          "name": "Arts and Culture",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/74001-atf-atp-lcf-lcp"
+        }
+      ],
+      "trackSelectionOptional": false,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 41
     },
     {
       "id": "POLYU-TPG-095",

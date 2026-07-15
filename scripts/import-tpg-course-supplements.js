@@ -73,6 +73,9 @@ function validateSupplement(supplement, catalogue, file = 'supplement') {
     if (entry.programmeName !== undefined) {
       assert(typeof entry.programmeName === 'string' && entry.programmeName.trim(), `${entry.programmeId} has an invalid programmeName`);
     }
+    if (entry.faculty !== undefined) {
+      assert(typeof entry.faculty === 'string' && entry.faculty.trim(), `${entry.programmeId} has an invalid faculty`);
+    }
     validateHttps(entry.sourceUrl, entry.programmeId);
 
     if (entry.tracks !== undefined) {
@@ -143,6 +146,7 @@ function applySupplements(catalogue, supplementFiles) {
       supplementedProgrammeIds.add(entry.programmeId);
       const programme = programmesById.get(entry.programmeId);
       if (entry.programmeName !== undefined) programme.name = entry.programmeName;
+      if (entry.faculty !== undefined) programme.faculty = entry.faculty;
       programme.academicYear = value.academicYear;
       programme.courseVerificationStatus = entry.status;
       programme.courseVerifiedAt = value.verifiedAt;

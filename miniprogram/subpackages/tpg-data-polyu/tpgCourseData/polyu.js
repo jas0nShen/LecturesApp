@@ -3299,6 +3299,408 @@ module.exports = [
     ]
   },
   {
+    "id": "POLYU-TPG-094",
+    "courseGroups": [
+      {
+        "id": "compulsory-subjects",
+        "name": "Compulsory Subjects",
+        "type": "core",
+        "creditsRequired": 19,
+        "coursesRequired": 7,
+        "ruleText": "Complete all six 3-credit Compulsory Subjects and the 1-credit CBS5T01 Academic Integrity and Ethics subject for 19 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/",
+        "courses": [
+          {
+            "code": "CBS5501",
+            "name": "Computer Programming in Language and Communication",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "CBS5502",
+            "name": "Computational Linguistics and NLP Technologies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "CHC5904",
+            "name": "Digital Studies of Chinese Culture",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "COMP5572",
+            "name": "AI Applications in the Humanities",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "COMP5571",
+            "name": "Introduction to Generative AI and Its Applications",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "ENGL5035",
+            "name": "The Ethical Context of Generative AI",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "CBS5T01",
+            "name": "Professional Ethics and Academic Integrity",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/",
+            "courseKind": "academic_integrity"
+          }
+        ]
+      },
+      {
+        "id": "specialism-elective-subjects",
+        "name": "Specialism Elective Subjects",
+        "type": "elective",
+        "creditsRequiredByTrackIds": {
+          "POLYU-TPG-094-LANGUAGE-AND-COMMUNICATION": 12,
+          "POLYU-TPG-094-ARTS-AND-CULTURE": 12
+        },
+        "ruleText": "Complete 12 credits from the official Elective list for the selected Specialism. The lists include 3-credit taught subjects, a 6-credit Capstone Project and a 9-credit Dissertation; confirm the valid combination and annual offering with the Programme.",
+        "appliesToTrackIds": [
+          "POLYU-TPG-094-LANGUAGE-AND-COMMUNICATION",
+          "POLYU-TPG-094-ARTS-AND-CULTURE"
+        ],
+        "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/",
+        "courses": [
+          {
+            "code": "CBS5402",
+            "name": "Communication in Multicultural and Multilingual Contexts",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-LANGUAGE-AND-COMMUNICATION"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "CBS584",
+            "name": "Advanced Translation for Business and Commerce",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-LANGUAGE-AND-COMMUNICATION"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "CBS590",
+            "name": "Multimedia Applications for Language Professionals and Translators",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-LANGUAGE-AND-COMMUNICATION"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "CBS5503",
+            "name": "Bilingual Communication and Language Technology in Chinese Context",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-LANGUAGE-AND-COMMUNICATION"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "CBS5505",
+            "name": "Generative AI for Innovative Communications",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-LANGUAGE-AND-COMMUNICATION",
+              "POLYU-TPG-094-ARTS-AND-CULTURE"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "CBS5506",
+            "name": "Capstone Project in Language and Communication",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-LANGUAGE-AND-COMMUNICATION"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/",
+            "courseKind": "project"
+          },
+          {
+            "code": "CBS5508",
+            "name": "Dissertation in Language and Communication",
+            "credits": 9,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-LANGUAGE-AND-COMMUNICATION"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/",
+            "courseKind": "dissertation"
+          },
+          {
+            "code": "COMP5152",
+            "name": "Advanced Data Analytics",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-LANGUAGE-AND-COMMUNICATION",
+              "POLYU-TPG-094-ARTS-AND-CULTURE"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "COMP5423",
+            "name": "Natural Language Processing",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-LANGUAGE-AND-COMMUNICATION",
+              "POLYU-TPG-094-ARTS-AND-CULTURE"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "COMP5425",
+            "name": "Multimedia Coding and Networking",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-LANGUAGE-AND-COMMUNICATION",
+              "POLYU-TPG-094-ARTS-AND-CULTURE"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "COMP5511",
+            "name": "Artificial Intelligence Concepts",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-LANGUAGE-AND-COMMUNICATION",
+              "POLYU-TPG-094-ARTS-AND-CULTURE"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "COMP5517",
+            "name": "Human Computer Interaction",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-LANGUAGE-AND-COMMUNICATION"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "COMP5523",
+            "name": "Computer Vision and Image Processing",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-LANGUAGE-AND-COMMUNICATION",
+              "POLYU-TPG-094-ARTS-AND-CULTURE"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "COMP5541",
+            "name": "Machine Learning and Data Analytics",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-LANGUAGE-AND-COMMUNICATION"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "COMP5543",
+            "name": "Artificial Intelligence and Big Data Computing in Practice",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-LANGUAGE-AND-COMMUNICATION"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "COMP5554",
+            "name": "Advanced Artificial Intelligence",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-LANGUAGE-AND-COMMUNICATION",
+              "POLYU-TPG-094-ARTS-AND-CULTURE"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "COMP6434",
+            "name": "Big Data Analytics and Artificial Intelligence",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-LANGUAGE-AND-COMMUNICATION",
+              "POLYU-TPG-094-ARTS-AND-CULTURE"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "ENGL5036",
+            "name": "Corpus Linguistics and AI",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-LANGUAGE-AND-COMMUNICATION"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "ENGL5018",
+            "name": "Language and Intercultural Communication in the Workplace",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-LANGUAGE-AND-COMMUNICATION"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "ENGL5019",
+            "name": "Multimodality and Professional Communication",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-LANGUAGE-AND-COMMUNICATION"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "FH6058",
+            "name": "Data Analytics for Applied Language Scientists",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-LANGUAGE-AND-COMMUNICATION"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "CBS5504",
+            "name": "AI-Driven Cross-Cultural Linguistic Exploration: Preserving, Translating, and Interpreting Chinese and Bilingual Heritage",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-ARTS-AND-CULTURE"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "CBS5507",
+            "name": "Capstone Project in Arts and Culture",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-ARTS-AND-CULTURE"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/",
+            "courseKind": "project"
+          },
+          {
+            "code": "CBS5509",
+            "name": "Dissertation in Arts and Culture",
+            "credits": 9,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-ARTS-AND-CULTURE"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/",
+            "courseKind": "dissertation"
+          },
+          {
+            "code": "CHC5211",
+            "name": "Early Chinese Thought, Belief, and Technology",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-ARTS-AND-CULTURE"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "CHC5213",
+            "name": "The Making of Chinese Martial Arts Tradition",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-ARTS-AND-CULTURE"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "CHC5304",
+            "name": "Chinese Traditional Theatre and Performing Arts",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-ARTS-AND-CULTURE"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "CHC5409",
+            "name": "Chinese Studies and Generative AI: Opportunity, Challenge, and Ethics",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-ARTS-AND-CULTURE"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "ENGL543",
+            "name": "English Literature and Language Arts",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-ARTS-AND-CULTURE"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "ENGL5037",
+            "name": "AI-Powered Language Analysis and Communication Strategies",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-ARTS-AND-CULTURE"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "SD5974",
+            "name": "Digital Storytelling for Transmedia",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-ARTS-AND-CULTURE"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "SD5975",
+            "name": "Virtual and Augmented Reality",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-ARTS-AND-CULTURE"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "SD5976",
+            "name": "AI Tools for Creative Process and Transmedia",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-ARTS-AND-CULTURE"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          },
+          {
+            "code": "SD5984",
+            "name": "Digital Art Assets: Bringing Crafts to Markets and NFTs",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-094-ARTS-AND-CULTURE"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lst/study/taught-postgraduate-programmes/master-of-science-in-generative-ai-and-the-humanities/curriculum/"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "POLYU-TPG-102",
     "courseGroups": [
       {
