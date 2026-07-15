@@ -33955,9 +33955,27 @@
       "courseGroups": [],
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14105-ftg-ptg",
-      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+      "courseStatusNote": "The official 2027 Programme page publishes the complete 31-credit structure: three 9-credit Core subjects, one required 9-credit Global Immersion Study Pathway, four subjects selected from a 12-credit Elective pool, and a 1-credit Academic Integrity and Ethics requirement. Students must declare Study Option 1, comprising the New York, Paris and Hong Kong, China Fashion Seminars and Visits, or Study Option 2, comprising the Europe or North America and Asia International Study Tours and Workshops plus the Capstone Project - Innovative Business Proposal. The current official SFT Subject Synopsis table resolves SFT501-SFT503, SFT5041-SFT5043, SFT5051-SFT5053, SFT506, SFT508-SFT510, SFT512 and SFT513 for every named 3-credit curriculum subject. The same current table publishes both SFT5R08 and SFT5T08 as 1-credit Academic Integrity and Ethics in Design and Innovation subjects, and their June 2026 official Subject Description Forms are otherwise identical. Neither the Programme page nor another public Programme-specific official source identifies which AIE code belongs to Programme 14105. The Programme remains blocked rather than selecting an AIE code by prefix or exposing a structure with an ambiguous compulsory subject.",
+      "tracks": [
+        {
+          "id": "POLYU-TPG-098-GIP-STUDY-OPTION-1",
+          "name": "Study Option 1",
+          "type": "Global Immersion Study Pathway",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14105-ftg-ptg"
+        },
+        {
+          "id": "POLYU-TPG-098-GIP-STUDY-OPTION-2",
+          "name": "Study Option 2",
+          "type": "Global Immersion Study Pathway",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14105-ftg-ptg"
+        }
+      ],
+      "trackSelectionOptional": false,
+      "creditUnit": "credits"
     },
     {
       "id": "POLYU-TPG-099",
@@ -33965,15 +33983,16 @@
       "programmeCode": "14107",
       "name": "Sustainable Fashion and Innovation",
       "faculty": "School of Fashion and Textiles (FT)",
-      "creditsRequired": 15,
+      "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14107-ffs-pfs",
       "dataLevel": "programme",
       "courseGroups": [],
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14107-ffs-pfs",
-      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+      "courseStatusNote": "The official 2027 Programme page corrects the MA total to 31 credits and publishes five 15-credit Core subjects, the 9-credit Capstone Project of Sustainability and an eight-subject Elective pool from which MA students choose two. It separately publishes a 22-credit PgD exit award, which is not modelled as an MA completion path. The current official SFT Subject Synopsis table resolves SFT5100-SFT5108 for every SFT Core, Capstone and sustainability Elective title, ITC516 for Research Methodology, and SFT501, SFT503, SFT508 and SFT509 for the four cross-Programme Electives. The same current table publishes both SFT5R08 and SFT5T08 as 1-credit Academic Integrity and Ethics in Design and Innovation subjects, and their June 2026 official Subject Description Forms are otherwise identical. The 31-credit total requires the additional 1-credit AIE component, but neither the Programme page nor another public Programme-specific official source identifies which AIE code belongs to Programme 14107. The Programme remains blocked rather than retaining the stale 15-credit total, selecting an AIE code by prefix or exposing a structure with an ambiguous compulsory subject.",
+      "creditUnit": "credits"
     },
     {
       "id": "POLYU-TPG-100",

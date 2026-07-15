@@ -199,6 +199,43 @@ test('PolyU Fashion Design preserves both official Pathways while its new subjec
   assert.match(programme.courseStatusNote, /rather than exposing the partial Fashion Practice mapping/);
 });
 
+test('PolyU Global Fashion Management preserves both official GIP Study Options while its AIE code remains ambiguous', () => {
+  const programme = tpgService.getProgramme('POLYU-TPG-098');
+
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal(programme.creditsRequired, 31);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.courseVerifiedAt, '2026-07-15');
+  assert.equal(programme.trackSelectionOptional, false);
+  assert.deepEqual(tpgService.listTracks(programme).map((track) => [track.id, track.name, track.type, track.creditsRequired]), [
+    ['POLYU-TPG-098-GIP-STUDY-OPTION-1', 'Study Option 1', 'Global Immersion Study Pathway', 31],
+    ['POLYU-TPG-098-GIP-STUDY-OPTION-2', 'Study Option 2', 'Global Immersion Study Pathway', 31]
+  ]);
+  assert.equal((programme.courseGroups || []).length, 0);
+  assert.match(programme.courseStatusNote, /three 9-credit Core subjects/);
+  assert.match(programme.courseStatusNote, /SFT501-SFT503/);
+  assert.match(programme.courseStatusNote, /both SFT5R08 and SFT5T08/);
+  assert.match(programme.courseStatusNote, /otherwise identical/);
+  assert.match(programme.courseStatusNote, /rather than selecting an AIE code by prefix/);
+});
+
+test('PolyU Sustainable Fashion and Innovation corrects its MA total while the AIE code remains ambiguous', () => {
+  const programme = tpgService.getProgramme('POLYU-TPG-099');
+
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal(programme.creditsRequired, 31);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.courseVerifiedAt, '2026-07-15');
+  assert.equal((programme.courseGroups || []).length, 0);
+  assert.match(programme.courseStatusNote, /five 15-credit Core subjects/);
+  assert.match(programme.courseStatusNote, /9-credit Capstone Project of Sustainability/);
+  assert.match(programme.courseStatusNote, /22-credit PgD exit award/);
+  assert.match(programme.courseStatusNote, /SFT5100-SFT5108/);
+  assert.match(programme.courseStatusNote, /ITC516 for Research Methodology/);
+  assert.match(programme.courseStatusNote, /both SFT5R08 and SFT5T08/);
+  assert.match(programme.courseStatusNote, /rather than retaining the stale 15-credit total/);
+});
+
 test('PolyU Generative AI and the Humanities filters both official Specialism elective pools', () => {
   const programme = tpgService.getProgramme('POLYU-TPG-094');
   const tracks = Object.fromEntries(tpgService.listTracks(programme).map((track) => [track.name, track.id]));

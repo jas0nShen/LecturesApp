@@ -124,6 +124,37 @@ const statusOverrides = {
     sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/14111-fpp-dfi',
     statusNote: 'The official 2027 Programme page, the two current School of Fashion and Textiles Pathway pages and the official 2027-28 Programme leaflet publish two required 34-credit Pathways: 12 Common Core credits, 9 Pathway Specialist credits, a 9-credit Personal Major Project, one Elective subject and a 1-credit Academic Integrity and Ethics requirement. The current official SFT Subject Synopsis table recovers codes for several shared and Fashion Practice subjects, including SFT5970-SFT5974, SFT5976 and SFT5977CP, plus some listed Electives. It does not publish codes for Contextual Thesis Report or the three new Digital Fashion Innovation Studio subjects. The current Fashion Practice title Life Cycle Assessment for Fashion Design also differs from the public SFT5102 Life Cycle Assessment of Fashion Products entry, so that code cannot be substituted by title similarity. The Subject Synopsis table publishes both SFT5R08 and SFT5T08 with the same Academic Integrity and Ethics in Design and Innovation title, while the current Programme sources do not identify which code applies. The public Programme pages provide aggregate group credits but not an explicit credit value for every named subject. The Programme remains blocked rather than exposing the partial Fashion Practice mapping, inventing the new Digital Fashion Innovation codes or selecting between ambiguous AIE entries.'
   },
+  'POLYU-TPG-098': {
+    verifiedAt: '2026-07-15',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    trackSelectionOptional: false,
+    tracks: [
+      {
+        id: 'POLYU-TPG-098-GIP-STUDY-OPTION-1',
+        name: 'Study Option 1',
+        type: 'Global Immersion Study Pathway',
+        creditsRequired: 31,
+        sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/14105-ftg-ptg'
+      },
+      {
+        id: 'POLYU-TPG-098-GIP-STUDY-OPTION-2',
+        name: 'Study Option 2',
+        type: 'Global Immersion Study Pathway',
+        creditsRequired: 31,
+        sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/14105-ftg-ptg'
+      }
+    ],
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/14105-ftg-ptg',
+    statusNote: 'The official 2027 Programme page publishes the complete 31-credit structure: three 9-credit Core subjects, one required 9-credit Global Immersion Study Pathway, four subjects selected from a 12-credit Elective pool, and a 1-credit Academic Integrity and Ethics requirement. Students must declare Study Option 1, comprising the New York, Paris and Hong Kong, China Fashion Seminars and Visits, or Study Option 2, comprising the Europe or North America and Asia International Study Tours and Workshops plus the Capstone Project - Innovative Business Proposal. The current official SFT Subject Synopsis table resolves SFT501-SFT503, SFT5041-SFT5043, SFT5051-SFT5053, SFT506, SFT508-SFT510, SFT512 and SFT513 for every named 3-credit curriculum subject. The same current table publishes both SFT5R08 and SFT5T08 as 1-credit Academic Integrity and Ethics in Design and Innovation subjects, and their June 2026 official Subject Description Forms are otherwise identical. Neither the Programme page nor another public Programme-specific official source identifies which AIE code belongs to Programme 14105. The Programme remains blocked rather than selecting an AIE code by prefix or exposing a structure with an ambiguous compulsory subject.'
+  },
+  'POLYU-TPG-099': {
+    verifiedAt: '2026-07-15',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/14107-ffs-pfs',
+    statusNote: 'The official 2027 Programme page corrects the MA total to 31 credits and publishes five 15-credit Core subjects, the 9-credit Capstone Project of Sustainability and an eight-subject Elective pool from which MA students choose two. It separately publishes a 22-credit PgD exit award, which is not modelled as an MA completion path. The current official SFT Subject Synopsis table resolves SFT5100-SFT5108 for every SFT Core, Capstone and sustainability Elective title, ITC516 for Research Methodology, and SFT501, SFT503, SFT508 and SFT509 for the four cross-Programme Electives. The same current table publishes both SFT5R08 and SFT5T08 as 1-credit Academic Integrity and Ethics in Design and Innovation subjects, and their June 2026 official Subject Description Forms are otherwise identical. The 31-credit total requires the additional 1-credit AIE component, but neither the Programme page nor another public Programme-specific official source identifies which AIE code belongs to Programme 14107. The Programme remains blocked rather than retaining the stale 15-credit total, selecting an AIE code by prefix or exposing a structure with an ambiguous compulsory subject.'
+  },
   'POLYU-TPG-076': {
     verifiedAt: '2026-07-15',
     sourceUrl: 'https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/',
