@@ -47,6 +47,11 @@ const statusOverrides = {
     sourceUrl: 'https://www.polyu.edu.hk/hti/study/programmes/taught-postgraduate-programmes_list/master-of-medical-imaging/',
     statusNote: 'The official 2027 Programme page and the September 2026 Master of Medical Imaging leaflet publish the 91-credit professional structure and current Foundation, Professional and Clinical Practicum titles. Neither public source publishes the subject codes or per-course credit values, and the leaflet directs readers to the Programme Requirement Document for curriculum details; that document is not publicly linked. The Programme remains blocked rather than inventing the professional and practicum codes or splitting aggregate credits across courses.'
   },
+  'POLYU-TPG-085': {
+    verifiedAt: '2026-07-15',
+    sourceUrl: 'https://www.polyu.edu.hk/gs/prospective-students/tpg/master-of-technology-entrepreneurship/curriculum/',
+    statusNote: 'The official 2027 Programme page, Graduate School Curriculum page and 2027-28 Programme brochure consistently publish the 37-credit structure, current Technology Core, Entrepreneurship Core, Project, Elective and Academic Integrity and Ethics subject titles, and the explicit credit value of every subject. The three public sources do not publish any subject code, including the 6-credit Project Part 1: Research and the 15-credit Project Part 2: Start-up completed at an MTRI. The Programme remains blocked rather than inventing a new subject prefix or exposing name-only courses.'
+  },
   'POLYU-TPG-076': {
     verifiedAt: '2026-07-15',
     sourceUrl: 'https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/',

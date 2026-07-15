@@ -66,6 +66,21 @@ test('PolyU Health Technology Scheme awards remain blocked without the public Pr
   assert.match(tpgService.getProgramme('POLYU-TPG-084').courseStatusNote, /per-course credit values/);
 });
 
+test('PolyU Technology Entrepreneurship remains blocked when all public official sources omit subject codes', () => {
+  const programme = tpgService.getProgramme('POLYU-TPG-085');
+
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal((programme.courseGroups || []).length, 0);
+  assert.equal(
+    programme.courseSourceUrl,
+    'https://www.polyu.edu.hk/gs/prospective-students/tpg/master-of-technology-entrepreneurship/curriculum/'
+  );
+  assert.match(programme.courseStatusNote, /37-credit structure/);
+  assert.match(programme.courseStatusNote, /Project Part 2: Start-up/);
+  assert.match(programme.courseStatusNote, /do not publish any subject code/);
+  assert.match(programme.courseStatusNote, /rather than inventing/);
+});
+
 test('HKUST intake-announced electives retain official credit requirements without invented courses', () => {
   const financeTechnology = tpgService.getProgramme('HKUST-TPG-008');
   const globalFinance = tpgService.getProgramme('HKUST-TPG-012');

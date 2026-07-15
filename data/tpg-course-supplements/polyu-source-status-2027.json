@@ -464,8 +464,9 @@
     {
       "programmeId": "POLYU-TPG-085",
       "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/07001-fte-pte",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+      "sourceUrl": "https://www.polyu.edu.hk/gs/prospective-students/tpg/master-of-technology-entrepreneurship/curriculum/",
+      "statusNote": "The official 2027 Programme page, Graduate School Curriculum page and 2027-28 Programme brochure consistently publish the 37-credit structure, current Technology Core, Entrepreneurship Core, Project, Elective and Academic Integrity and Ethics subject titles, and the explicit credit value of every subject. The three public sources do not publish any subject code, including the 6-credit Project Part 1: Research and the 15-credit Project Part 2: Start-up completed at an MTRI. The Programme remains blocked rather than inventing a new subject prefix or exposing name-only courses.",
+      "verifiedAt": "2026-07-15"
     },
     {
       "programmeId": "POLYU-TPG-086",
