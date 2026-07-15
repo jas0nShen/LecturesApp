@@ -10,6 +10,9 @@ const verifiedIds = new Set([
   'POLYU-TPG-015',
   'POLYU-TPG-072',
   'POLYU-TPG-073',
+  'POLYU-TPG-075',
+  'POLYU-TPG-077',
+  'POLYU-TPG-078',
   'POLYU-TPG-089',
   'POLYU-TPG-090',
   'POLYU-TPG-092',
@@ -18,6 +21,11 @@ const verifiedIds = new Set([
   'POLYU-TPG-105'
 ]);
 const statusOverrides = {
+  'POLYU-TPG-076': {
+    verifiedAt: '2026-07-15',
+    sourceUrl: 'https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/',
+    statusNote: 'The official 2027 Programme page publishes a 31-credit structure and an elective list that includes Advanced Topics in InsurTech and Supply Chain Management. The current AMA Curriculum code table does not identify those two current elective entries and instead includes Current Topics in Actuarial Science. The remaining compulsory, elective, Dissertation and AIE codes can be mapped, but this mismatch leaves the current elective pool incomplete; no code is inferred from another Programme.'
+  },
   'POLYU-TPG-074': {
     verifiedAt: '2026-07-15',
     sourceUrl: 'https://www.polyu.edu.hk/rs/study/taught-postgraduate-studies/msc-programme-2026-or-after/msc-in-advanced-physiotherapy/curriculum/',

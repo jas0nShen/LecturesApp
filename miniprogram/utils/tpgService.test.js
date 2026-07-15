@@ -9,8 +9,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 234);
-  assert.equal(coverage.courseCount, 5640);
+  assert.equal(coverage.programmeWithCoursesCount, 237);
+  assert.equal(coverage.courseCount, 5705);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -29,8 +29,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 234);
-  assert.equal(rows.length, 234);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 237);
+  assert.equal(rows.length, 237);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
@@ -42,6 +42,16 @@ test('PolyU Nursing remains blocked when official evidence omits the AIE code an
   assert.equal(programme.courseVerificationStatus, 'blocked');
   assert.match(programme.courseStatusNote, /AIE subject code/);
   assert.match(programme.courseStatusNote, /per-course credits/);
+});
+
+test('PolyU Operational Research remains blocked on the mismatched current elective code table', () => {
+  const programme = tpgService.getProgramme('POLYU-TPG-076');
+
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal((programme.courseGroups || []).length, 0);
+  assert.match(programme.courseStatusNote, /Advanced Topics in InsurTech/);
+  assert.match(programme.courseStatusNote, /Supply Chain Management/);
+  assert.match(programme.courseStatusNote, /no code is inferred/);
 });
 
 test('HKUST intake-announced electives retain official credit requirements without invented courses', () => {
@@ -1929,6 +1939,54 @@ test('PolyU Advanced Occupational Therapy exposes only the selected Specialism c
   assert.equal(mentalHealthCourses.some((course) => course.code === 'RS520'), true);
   assert.equal(musculoskeletalCourses.some((course) => course.code === 'RS520'), true);
   assert.equal(neurologyCourses.some((course) => course.code === 'RS520'), false);
+});
+
+test('PolyU Actuarial and Investment Science exposes all coded mutually exclusive options conservatively', () => {
+  const programme = tpgService.getProgramme('POLYU-TPG-075');
+  const status = tpgService.getStatus(programme);
+  const courses = tpgService.flattenCourses(programme);
+  const additionalCore = programme.courseGroups.find((group) => group.id === 'additional-core-subjects');
+  const dissertation = tpgService.getProgrammeCourse(programme.id, 'AMA592');
+
+  assert.equal(programme.creditsRequired, 31);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(status.isComplete, true);
+  assert.equal(status.courseCount, 19);
+  assert.equal(courses.length, 19);
+  assert.equal(additionalCore.courses.length, 11);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'AMA534').credits, 3);
+  assert.equal(dissertation.credits, 9);
+  assert.equal(dissertation.conditionalRequirement, true);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'DSAI5T09').credits, 1);
+  assert.match(programme.courseStatusNote, /mutually exclusive/);
+});
+
+test('PolyU Quantitative Finance and FinTech preserves the GPA-gated Dissertation path', () => {
+  const programme = tpgService.getProgramme('POLYU-TPG-077');
+  const courses = tpgService.flattenCourses(programme);
+  const dissertation = tpgService.getProgrammeCourse(programme.id, 'AMA592');
+
+  assert.equal(programme.creditsRequired, 31);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(courses.length, 17);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'AMA576').credits, 3);
+  assert.equal(dissertation.credits, 9);
+  assert.equal(dissertation.conditionalRequirement, true);
+  assert.match(programme.courseStatusNote, /GPA eligibility rule/);
+});
+
+test('PolyU Mathematics for AI stores cross-listed options once and keeps both Dissertation codes', () => {
+  const programme = tpgService.getProgramme('POLYU-TPG-078');
+  const courses = tpgService.flattenCourses(programme);
+  const codes = courses.map((course) => course.code);
+
+  assert.equal(programme.creditsRequired, 31);
+  assert.equal(courses.length, 29);
+  assert.equal(codes.filter((code) => code === 'AMA528').length, 1);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'BME5150').credits, 3);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'AMA592').credits, 9);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'DSAI5901').credits, 9);
+  assert.match(programme.courseStatusNote, /must not be double counted/);
 });
 
 test('PolyU Agentic AI Systems exposes the official 2027 curriculum choices', () => {

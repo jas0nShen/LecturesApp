@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "POLYU",
+  "academicYear": "2027-28",
+  "verifiedAt": "2026-07-15",
+  "programmes": [
+    {
+      "programmeId": "POLYU-TPG-075",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63032-afm-apm",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 2027 Programme page publishes the 31-credit award requirements and the current AMA Curriculum page publishes the matching subject codes and titles. Students complete six compulsory subjects and either four additional core subjects, or one additional core subject plus AMA592 Dissertation. DSAI5T09 is compulsory in both paths. The mutually exclusive taught and Dissertation paths require manual audit review and must not be combined.",
+      "courseGroups": [
+        {
+          "id": "compulsory-subjects",
+          "name": "Compulsory Subjects",
+          "type": "core",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Complete all six Compulsory Subjects for 18 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/",
+          "courses": [
+            {
+              "code": "AMA534",
+              "name": "Credibility Theory",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+            },
+            {
+              "code": "AMA532",
+              "name": "Investment Science",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+            },
+            {
+              "code": "AMA533",
+              "name": "Life Contingencies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+            },
+            {
+              "code": "AMA531",
+              "name": "Loss Models and Risk Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+            },
+            {
+              "code": "AMA528",
+              "name": "Probability and Stochastic Models",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+            },
+            {
+              "code": "AMA529",
+              "name": "Statistical Inference",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+            }
+          ]
+        },
+        {
+          "id": "additional-core-subjects",
+          "name": "Additional Core Subjects",
+          "type": "elective",
+          "ruleText": "Choose four Additional Core Subjects for 12 credits on the taught path, or one Additional Core Subject for 3 credits together with AMA592 Dissertation. The two paths are mutually exclusive.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/",
+          "courses": [
+            {
+              "code": "AMA580",
+              "name": "Advanced Topics in InsurTech",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+            },
+            {
+              "code": "AMA568",
+              "name": "Advanced Topics in Quantitative Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+            },
+            {
+              "code": "AMA514A",
+              "name": "Applied Linear Models",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+            },
+            {
+              "code": "AMA570",
+              "name": "Current Topics in Actuarial Science",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+            },
+            {
+              "code": "AMA515A",
+              "name": "Forecasting and Applied Time Series Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+            },
+            {
+              "code": "AMA535",
+              "name": "Mathematics of Derivative Pricing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+            },
+            {
+              "code": "AMA530",
+              "name": "Mathematics of Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+            },
+            {
+              "code": "AMA505",
+              "name": "Optimization Methods",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+            },
+            {
+              "code": "AF5312",
+              "name": "Principles of Corporate Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+            },
+            {
+              "code": "AMA567",
+              "name": "Quantum Computing for Data Science",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+            },
+            {
+              "code": "DSAI5101",
+              "name": "Statistical Data Mining",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+            }
+          ]
+        },
+        {
+          "id": "dissertation-option",
+          "name": "Dissertation Option",
+          "type": "dissertation",
+          "ruleText": "AMA592 Dissertation is a 9-credit alternative to three of the four Additional Core Subjects and must be combined with one 3-credit Additional Core Subject.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/",
+          "courses": [
+            {
+              "code": "AMA592",
+              "name": "Dissertation",
+              "credits": 9,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/",
+              "courseKind": "dissertation",
+              "conditionalRequirement": true
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Academic Integrity and Ethics",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete DSAI5T09 for 1 credit in either award path.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/",
+          "courses": [
+            {
+              "code": "DSAI5T09",
+              "name": "Academic Integrity and Ethics in Computer and Mathematical Sciences",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -420,28 +420,11 @@
       "verifiedAt": "2026-07-15"
     },
     {
-      "programmeId": "POLYU-TPG-075",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63032-afm-apm",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
-    },
-    {
       "programmeId": "POLYU-TPG-076",
       "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63024-ofm-opm",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-077",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63029-qfm-qpm",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-078",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63031-afm-apm",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+      "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/",
+      "statusNote": "The official 2027 Programme page publishes a 31-credit structure and an elective list that includes Advanced Topics in InsurTech and Supply Chain Management. The current AMA Curriculum code table does not identify those two current elective entries and instead includes Current Topics in Actuarial Science. The remaining compulsory, elective, Dissertation and AIE codes can be mapped, but this mismatch leaves the current elective pool incomplete; no code is inferred from another Programme.",
+      "verifiedAt": "2026-07-15"
     },
     {
       "programmeId": "POLYU-TPG-079",

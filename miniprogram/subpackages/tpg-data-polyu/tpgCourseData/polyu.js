@@ -723,6 +723,616 @@ module.exports = [
     ]
   },
   {
+    "id": "POLYU-TPG-075",
+    "courseGroups": [
+      {
+        "id": "compulsory-subjects",
+        "name": "Compulsory Subjects",
+        "type": "core",
+        "creditsRequired": 18,
+        "coursesRequired": 6,
+        "ruleText": "Complete all six Compulsory Subjects for 18 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/",
+        "courses": [
+          {
+            "code": "AMA534",
+            "name": "Credibility Theory",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+          },
+          {
+            "code": "AMA532",
+            "name": "Investment Science",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+          },
+          {
+            "code": "AMA533",
+            "name": "Life Contingencies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+          },
+          {
+            "code": "AMA531",
+            "name": "Loss Models and Risk Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+          },
+          {
+            "code": "AMA528",
+            "name": "Probability and Stochastic Models",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+          },
+          {
+            "code": "AMA529",
+            "name": "Statistical Inference",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+          }
+        ]
+      },
+      {
+        "id": "additional-core-subjects",
+        "name": "Additional Core Subjects",
+        "type": "elective",
+        "ruleText": "Choose four Additional Core Subjects for 12 credits on the taught path, or one Additional Core Subject for 3 credits together with AMA592 Dissertation. The two paths are mutually exclusive.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/",
+        "courses": [
+          {
+            "code": "AMA580",
+            "name": "Advanced Topics in InsurTech",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+          },
+          {
+            "code": "AMA568",
+            "name": "Advanced Topics in Quantitative Finance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+          },
+          {
+            "code": "AMA514A",
+            "name": "Applied Linear Models",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+          },
+          {
+            "code": "AMA570",
+            "name": "Current Topics in Actuarial Science",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+          },
+          {
+            "code": "AMA515A",
+            "name": "Forecasting and Applied Time Series Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+          },
+          {
+            "code": "AMA535",
+            "name": "Mathematics of Derivative Pricing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+          },
+          {
+            "code": "AMA530",
+            "name": "Mathematics of Finance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+          },
+          {
+            "code": "AMA505",
+            "name": "Optimization Methods",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+          },
+          {
+            "code": "AF5312",
+            "name": "Principles of Corporate Finance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+          },
+          {
+            "code": "AMA567",
+            "name": "Quantum Computing for Data Science",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+          },
+          {
+            "code": "DSAI5101",
+            "name": "Statistical Data Mining",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+          }
+        ]
+      },
+      {
+        "id": "dissertation-option",
+        "name": "Dissertation Option",
+        "type": "dissertation",
+        "ruleText": "AMA592 Dissertation is a 9-credit alternative to three of the four Additional Core Subjects and must be combined with one 3-credit Additional Core Subject.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/",
+        "courses": [
+          {
+            "code": "AMA592",
+            "name": "Dissertation",
+            "credits": 9,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/",
+            "courseKind": "dissertation",
+            "conditionalRequirement": true
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Academic Integrity and Ethics",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete DSAI5T09 for 1 credit in either award path.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/",
+        "courses": [
+          {
+            "code": "DSAI5T09",
+            "name": "Academic Integrity and Ethics in Computer and Mathematical Sciences",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "POLYU-TPG-077",
+    "courseGroups": [
+      {
+        "id": "compulsory-subjects",
+        "name": "Compulsory Subjects",
+        "type": "core",
+        "creditsRequired": 18,
+        "coursesRequired": 6,
+        "ruleText": "Complete all 6 Compulsory Subjects for 18 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-quantitative-finance-and-fintech/curriculum/",
+        "courses": [
+          {
+            "code": "AMA576",
+            "name": "Advanced Topics in Algorithmic Trading",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-quantitative-finance-and-fintech/curriculum/"
+          },
+          {
+            "code": "AMA575",
+            "name": "Advanced Topics in Investment Science",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-quantitative-finance-and-fintech/curriculum/"
+          },
+          {
+            "code": "AMA568",
+            "name": "Advanced Topics in Quantitative Finance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-quantitative-finance-and-fintech/curriculum/"
+          },
+          {
+            "code": "AF5381",
+            "name": "Financial Markets",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-quantitative-finance-and-fintech/curriculum/"
+          },
+          {
+            "code": "AMA571",
+            "name": "Financial Technology",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-quantitative-finance-and-fintech/curriculum/"
+          },
+          {
+            "code": "AMA535A",
+            "name": "Mathematical Models of Derivative Pricing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-quantitative-finance-and-fintech/curriculum/"
+          }
+        ]
+      },
+      {
+        "id": "elective-subjects",
+        "name": "Elective Subjects",
+        "type": "elective",
+        "ruleText": "Choose 4 Elective Subjects for 12 credits on the taught path, or 1 Elective Subject for 3 credits with a 9-credit Dissertation.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-quantitative-finance-and-fintech/curriculum/",
+        "courses": [
+          {
+            "code": "AF5115",
+            "name": "Accounting for Business Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-quantitative-finance-and-fintech/curriculum/"
+          },
+          {
+            "code": "AMA570",
+            "name": "Current Topics in Actuarial Science",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-quantitative-finance-and-fintech/curriculum/"
+          },
+          {
+            "code": "AMA564",
+            "name": "Deep Learning",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-quantitative-finance-and-fintech/curriculum/"
+          },
+          {
+            "code": "AMA572",
+            "name": "Fixed-income and Credit Risk",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-quantitative-finance-and-fintech/curriculum/"
+          },
+          {
+            "code": "AMA515A",
+            "name": "Forecasting and Applied Time Series Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-quantitative-finance-and-fintech/curriculum/"
+          },
+          {
+            "code": "COMP5564",
+            "name": "Machine Learning and Applications in Finance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-quantitative-finance-and-fintech/curriculum/"
+          },
+          {
+            "code": "AMA538",
+            "name": "Principles of Risk Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-quantitative-finance-and-fintech/curriculum/"
+          },
+          {
+            "code": "AMA567",
+            "name": "Quantum Computing for Data Science",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-quantitative-finance-and-fintech/curriculum/"
+          },
+          {
+            "code": "AMA573",
+            "name": "Statistical Machine Learning",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-quantitative-finance-and-fintech/curriculum/"
+          }
+        ]
+      },
+      {
+        "id": "dissertation-option",
+        "name": "Dissertation Option",
+        "type": "dissertation",
+        "ruleText": "Complete one 9-credit Dissertation together with 1 Elective Subject for 3 credits as an alternative to the taught path.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-quantitative-finance-and-fintech/curriculum/",
+        "courses": [
+          {
+            "code": "AMA592",
+            "name": "Dissertation",
+            "credits": 9,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-quantitative-finance-and-fintech/curriculum/",
+            "courseKind": "dissertation",
+            "conditionalRequirement": true
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Academic Integrity and Ethics",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete DSAI5T09 for 1 credit in either award path.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-quantitative-finance-and-fintech/curriculum/",
+        "courses": [
+          {
+            "code": "DSAI5T09",
+            "name": "Academic Integrity and Ethics in Computer and Mathematical Sciences",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-quantitative-finance-and-fintech/curriculum/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "POLYU-TPG-078",
+    "courseGroups": [
+      {
+        "id": "compulsory-subjects",
+        "name": "Compulsory Subjects",
+        "type": "core",
+        "creditsRequired": 21,
+        "coursesRequired": 7,
+        "ruleText": "Complete all 7 Compulsory Subjects for 21 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/",
+        "courses": [
+          {
+            "code": "AMA564",
+            "name": "Deep Learning",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/"
+          },
+          {
+            "code": "AMA578",
+            "name": "Emerging Topics in Mathematics and AI",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/"
+          },
+          {
+            "code": "AMA574",
+            "name": "Generative AI and Foundation Models",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/"
+          },
+          {
+            "code": "DSAI5105",
+            "name": "Hands-on AI for Science and Technology",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/"
+          },
+          {
+            "code": "DSAI5104",
+            "name": "Optimization for Machine Learning",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/"
+          },
+          {
+            "code": "AMA528",
+            "name": "Probability and Stochastic Models",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/"
+          },
+          {
+            "code": "AMA577",
+            "name": "Theoretical Aspects of Reinforcement Learning",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/"
+          }
+        ]
+      },
+      {
+        "id": "elective-subjects",
+        "name": "Elective Subjects",
+        "type": "elective",
+        "ruleText": "Choose 3 Elective Subjects for 9 credits on the taught path, or complete one 9-credit Dissertation instead.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/",
+        "courses": [
+          {
+            "code": "AMA576",
+            "name": "Advanced Topics in Algorithmic Trading",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/"
+          },
+          {
+            "code": "AMA571",
+            "name": "Financial Technology",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/"
+          },
+          {
+            "code": "AMA579",
+            "name": "Learning Theory for AI",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/"
+          },
+          {
+            "code": "AMA567",
+            "name": "Quantum Computing for Data Science",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/"
+          },
+          {
+            "code": "AMA524",
+            "name": "Scientific Computing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/"
+          },
+          {
+            "code": "AMA569",
+            "name": "Stochastic Models for Carbon Pricing and Trading",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/"
+          },
+          {
+            "code": "BME5150",
+            "name": "Medical Artificial Intelligence and Data Analytics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/"
+          },
+          {
+            "code": "COMP5554",
+            "name": "Advanced Artificial Intelligence",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/"
+          },
+          {
+            "code": "COMP5434",
+            "name": "Big Data Computing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/"
+          },
+          {
+            "code": "COMP5523",
+            "name": "Computer Vision and Image Processing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/"
+          },
+          {
+            "code": "COMP5355",
+            "name": "Cyber and Internet Security",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/"
+          },
+          {
+            "code": "COMP5112",
+            "name": "Data Structures and Database Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/"
+          },
+          {
+            "code": "COMP5423",
+            "name": "Natural Language Processing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/"
+          },
+          {
+            "code": "DSAI5103",
+            "name": "Advanced High Dimensional Data Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/"
+          },
+          {
+            "code": "DSAI5203",
+            "name": "Brain-inspired Computing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/"
+          },
+          {
+            "code": "DSAI5204",
+            "name": "Efficient Data Processing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/"
+          },
+          {
+            "code": "DSAI5206",
+            "name": "Machine Vision and Intelligence",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/"
+          },
+          {
+            "code": "DSAI5208",
+            "name": "Trustworthy AI Systems and Technologies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/"
+          },
+          {
+            "code": "DSAI5209",
+            "name": "Visual Data Representation and Processing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/"
+          }
+        ]
+      },
+      {
+        "id": "dissertation-option",
+        "name": "Dissertation Option",
+        "type": "dissertation",
+        "ruleText": "Complete one 9-credit Dissertation as an alternative to three Elective Subjects.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/",
+        "courses": [
+          {
+            "code": "AMA592",
+            "name": "Dissertation",
+            "credits": 9,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/",
+            "courseKind": "dissertation",
+            "conditionalRequirement": true
+          },
+          {
+            "code": "DSAI5901",
+            "name": "Dissertation",
+            "credits": 9,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/",
+            "courseKind": "dissertation",
+            "conditionalRequirement": true
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Academic Integrity and Ethics",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete DSAI5T09 for 1 credit in either award path.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/",
+        "courses": [
+          {
+            "code": "DSAI5T09",
+            "name": "Academic Integrity and Ethics in Computer and Mathematical Sciences",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-mathematics-for-articificial-intellegence-technology/curriculum/"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "POLYU-TPG-089",
     "courseGroups": [
       {

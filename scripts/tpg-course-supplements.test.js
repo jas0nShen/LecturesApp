@@ -26,6 +26,8 @@ const { buildSupplement: buildPolyuSustainableTechnologyCarbonNeutralitySuppleme
 const { buildSupplement: buildPolyuBiopharmaceuticalDevelopmentSupplement } = require('./build-polyu-biopharmaceutical-development-supplements');
 const { TRACKS: POLYU_OT_TRACKS, buildSupplement: buildPolyuAdvancedOccupationalTherapySupplement } = require('./build-polyu-advanced-occupational-therapy-supplement');
 const { SPECIALISM_ID: POLYU_REHAB_SPECIALISM_ID, buildSupplement: buildPolyuAdvancedRehabilitationSciencesSupplement } = require('./build-polyu-advanced-rehabilitation-sciences-supplement');
+const { buildSupplement: buildPolyuActuarialInvestmentScienceSupplement } = require('./build-polyu-actuarial-investment-science-supplement');
+const { buildSupplement: buildPolyuAmaFinanceAiSupplement } = require('./build-polyu-ama-finance-ai-supplements');
 const { IT_TRACKS, buildInformationTechnology } = require('./build-polyu-comp-supplements');
 
 function fixtureCatalogue() {
@@ -346,6 +348,58 @@ test('PolyU Advanced Rehabilitation Sciences preserves generic and Specialism cr
   assert.equal(electives.courses.length, 0);
   assert.equal(new Set(programme.courseGroups.flatMap((group) => group.courses).map((course) => course.code)).size, 7);
   assert.match(programme.statusNote, /no elective is invented/);
+});
+
+test('PolyU Actuarial and Investment Science preserves taught and Dissertation paths', () => {
+  const supplement = buildPolyuActuarialInvestmentScienceSupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'polyu-actuarial-investment-science-2027.json');
+  const programme = supplement.programmes[0];
+  const [compulsory, additionalCore, dissertation, academicIntegrity] = programme.courseGroups;
+  const courses = programme.courseGroups.flatMap((group) => group.courses);
+
+  assert.equal(programme.programmeId, 'POLYU-TPG-075');
+  assert.equal(programme.creditsRequired, 31);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.deepEqual([compulsory.creditsRequired, compulsory.coursesRequired, compulsory.courses.length], [18, 6, 6]);
+  assert.equal(additionalCore.courses.length, 11);
+  assert.match(additionalCore.ruleText, /four Additional Core Subjects.*one Additional Core Subject.*AMA592 Dissertation/);
+  assert.deepEqual(dissertation.courses.map((course) => [course.code, course.credits, course.courseKind, course.conditionalRequirement]), [
+    ['AMA592', 9, 'dissertation', true]
+  ]);
+  assert.deepEqual([academicIntegrity.creditsRequired, academicIntegrity.coursesRequired], [1, 1]);
+  assert.equal(academicIntegrity.courses[0].code, 'DSAI5T09');
+  assert.equal(new Set(courses.map((course) => course.code)).size, 19);
+  assert.match(programme.statusNote, /must not be combined/);
+});
+
+test('PolyU AMA Finance and AI programmes preserve current coded completion paths', () => {
+  const supplement = buildPolyuAmaFinanceAiSupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'polyu-ama-finance-ai-2027.json');
+  const byId = Object.fromEntries(supplement.programmes.map((programme) => [programme.programmeId, programme]));
+
+  const quantitativeFinance = byId['POLYU-TPG-077'];
+  const [financeCompulsory, financeElectives, financeDissertation, financeAie] = quantitativeFinance.courseGroups;
+  assert.deepEqual([financeCompulsory.creditsRequired, financeCompulsory.coursesRequired, financeCompulsory.courses.length], [18, 6, 6]);
+  assert.equal(financeElectives.courses.length, 9);
+  assert.deepEqual(financeDissertation.courses.map((course) => [course.code, course.credits, course.conditionalRequirement]), [
+    ['AMA592', 9, true]
+  ]);
+  assert.equal(financeAie.courses[0].code, 'DSAI5T09');
+  assert.equal(new Set(quantitativeFinance.courseGroups.flatMap((group) => group.courses).map((course) => course.code)).size, 17);
+
+  const mathematicsAi = byId['POLYU-TPG-078'];
+  const [aiCompulsory, aiElectives, aiDissertations, aiAie] = mathematicsAi.courseGroups;
+  assert.deepEqual([aiCompulsory.creditsRequired, aiCompulsory.coursesRequired, aiCompulsory.courses.length], [21, 7, 7]);
+  assert.equal(aiElectives.courses.length, 19);
+  assert.equal(aiElectives.courses.some((course) => course.code === 'AMA528'), false);
+  assert.deepEqual(aiDissertations.courses.map((course) => [course.code, course.credits]), [
+    ['AMA592', 9], ['DSAI5901', 9]
+  ]);
+  assert.equal(aiAie.courses[0].code, 'DSAI5T09');
+  assert.equal(new Set(mathematicsAi.courseGroups.flatMap((group) => group.courses).map((course) => course.code)).size, 29);
+  assert.match(mathematicsAi.statusNote, /must not be double counted/);
 });
 
 test('PolyU Information Technology preserves optional Streams and all three completion paths', () => {
