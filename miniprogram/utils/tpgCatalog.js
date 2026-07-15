@@ -3967,15 +3967,17 @@ module.exports = {
       "programmeCode": "06003",
       "name": "Health Informatics",
       "faculty": "Faculty of Health and Social Sciences (FHSS)",
-      "creditsRequired": null,
+      "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/06003-hif-hip",
-      "dataLevel": "programme",
+      "dataLevel": "structure",
       "academicYear": "2027-28",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/06003-hif-hip",
-      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
-      "courseCount": 0
+      "courseStatusNote": "The official 2027 Programme page publishes the 31-credit structure and current course pools. The current FHSS curriculum page links each matching Subject Description Form, which confirms the subject codes and credits. Students always complete three 3-credit Compulsory Subjects, the 1-credit AIE subject, two Core Subjects and two Elective Subjects, then either HSS5903 Dissertation or three additional subjects from the combined Core and Elective pools. The mutually exclusive Dissertation and taught paths require manual audit review and must not be combined.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 38
     },
     {
       "id": "POLYU-TPG-080",
@@ -3989,8 +3991,8 @@ module.exports = {
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
       "courseVerifiedAt": "2026-07-11",
-      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-fmm-pmm",
-      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseSourceUrl": "https://www.polyu.edu.hk/hti/study/programmes/taught-postgraduate-programmes_list/master-of-science-in-medical-laboratory-science/",
+      "courseStatusNote": "The official 2027 Programme page and the September 2026 MSc Medical Laboratory Science leaflet publish the 31-credit generic and Molecular Diagnostics paths, course groups and current subject titles. Neither public source publishes the subject codes, and the leaflet directs readers to the Programme Requirement Document for curriculum details; that document is not publicly linked. The Programme remains blocked rather than inferring codes from other Health Technology awards.",
       "courseCount": 0
     },
     {
@@ -4005,8 +4007,8 @@ module.exports = {
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
       "courseVerifiedAt": "2026-07-11",
-      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-frm-prm",
-      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseSourceUrl": "https://www.polyu.edu.hk/hti/study/programmes/taught-postgraduate-programmes_list/master-of-science-in-medical-imaging-and-radiation-science/",
+      "courseStatusNote": "The official 2027 Programme page and the September 2026 MSc Medical Imaging and Radiation Science leaflet publish the 31-credit generic path, three Specialisms, course groups and current subject titles. Neither public source publishes the subject codes, and the leaflet directs readers to the Programme Requirement Document for curriculum details; that document is not publicly linked. The Programme remains blocked rather than inferring codes from another Health Technology award.",
       "courseCount": 0
     },
     {
@@ -4021,8 +4023,8 @@ module.exports = {
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
       "courseVerifiedAt": "2026-07-11",
-      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-msf-msp",
-      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseSourceUrl": "https://www.polyu.edu.hk/hti/study/programmes/taught-postgraduate-programmes_list/master-of-science-in-medical-physics/",
+      "courseStatusNote": "The official 2027 Programme page publishes the 31-credit rule, current course titles and per-course credits, while the September 2026 MSc Medical Physics leaflet confirms the public subject pools. Neither source publishes the subject codes, and the leaflet directs readers to the Programme Requirement Document for curriculum details; that document is not publicly linked. The Programme remains blocked rather than inferring codes from another Health Technology award.",
       "courseCount": 0
     },
     {
@@ -4037,8 +4039,8 @@ module.exports = {
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
       "courseVerifiedAt": "2026-07-11",
-      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-mfd-mpd",
-      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseSourceUrl": "https://www.polyu.edu.hk/hti/study/programmes/taught-postgraduate-programmes_list/master-of-science-in-medical-data-science/",
+      "courseStatusNote": "The official 2027 Programme page and the September 2026 MSc Medical Data Science leaflet publish the 31-credit rule, course groups and current subject titles. Neither public source publishes the complete subject codes and per-course credits, and the leaflet directs readers to the Programme Requirement Document for curriculum details; that document is not publicly linked. The Programme remains blocked rather than exposing a partial code pool assembled from overlapping awards.",
       "courseCount": 0
     },
     {
@@ -4053,8 +4055,8 @@ module.exports = {
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
       "courseVerifiedAt": "2026-07-11",
-      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55006",
-      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseSourceUrl": "https://www.polyu.edu.hk/hti/study/programmes/taught-postgraduate-programmes_list/master-of-medical-imaging/",
+      "courseStatusNote": "The official 2027 Programme page and the September 2026 Master of Medical Imaging leaflet publish the 91-credit professional structure and current Foundation, Professional and Clinical Practicum titles. Neither public source publishes the subject codes or per-course credit values, and the leaflet directs readers to the Programme Requirement Document for curriculum details; that document is not publicly linked. The Programme remains blocked rather than inventing the professional and practicum codes or splitting aggregate credits across courses.",
       "courseCount": 0
     },
     {

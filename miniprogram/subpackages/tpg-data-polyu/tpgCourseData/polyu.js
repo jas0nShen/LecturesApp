@@ -1333,6 +1333,337 @@ module.exports = [
     ]
   },
   {
+    "id": "POLYU-TPG-079",
+    "courseGroups": [
+      {
+        "id": "compulsory-subjects",
+        "name": "Compulsory Subjects",
+        "type": "core",
+        "creditsRequired": 9,
+        "coursesRequired": 3,
+        "ruleText": "Complete all three 3-credit Compulsory Subjects.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/fhss/study/postgraduate/mschi/",
+        "courses": [
+          {
+            "code": "SN5023",
+            "name": "Electronic Patient Records",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/sn5023.pdf"
+          },
+          {
+            "code": "SN6006",
+            "name": "Information Technology in Healthcare",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/sn6006_sdf_20230629.pdf"
+          },
+          {
+            "code": "SN5303B",
+            "name": "Professional Development in Health Informatics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/sn5303b.pdf"
+          }
+        ]
+      },
+      {
+        "id": "core-subjects",
+        "name": "Core Subjects",
+        "type": "core",
+        "creditsRequired": 6,
+        "coursesRequired": 2,
+        "ruleText": "Complete at least two Core Subjects for 6 credits. On the taught path without HSS5903 Dissertation, additional Core Subjects may count toward the three extra Core/Elective Subjects required in place of the Dissertation.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/fhss/study/postgraduate/mschi/",
+        "courses": [
+          {
+            "code": "COMP5511",
+            "name": "Artificial Intelligence Concepts",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/comp5511.pdf"
+          },
+          {
+            "code": "SN5897",
+            "name": "AI in Healthcare: Application and Innovation",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/sn5897.pdf"
+          },
+          {
+            "code": "MM5425",
+            "name": "Business Analytics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/mm5425.pdf"
+          },
+          {
+            "code": "SN5896",
+            "name": "Concepts and Technological Applications of Smart Hospitals",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/sn5896.pdf"
+          },
+          {
+            "code": "HTI5720",
+            "name": "Digital Imaging & PACS",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/hti5720.pdf"
+          },
+          {
+            "code": "HTI5601",
+            "name": "Epidemiology",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/hti5601-revised-2023.pdf"
+          },
+          {
+            "code": "HSS5304",
+            "name": "Knowledge Management for Clinical Applications",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/hss5304.pdf"
+          },
+          {
+            "code": "COMP5541",
+            "name": "Machine Learning & Data Analytics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/comp5541.pdf"
+          },
+          {
+            "code": "MM5424",
+            "name": "Management Information Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/mm5424.pdf"
+          },
+          {
+            "code": "BME5150",
+            "name": "Medical Artificial Intelligence and Data Analytics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/bme5150.pdf"
+          },
+          {
+            "code": "LGT5037",
+            "name": "Project Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/lgt5037.pdf"
+          },
+          {
+            "code": "COMP5241",
+            "name": "Software Engineering and Development",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/comp5241.pdf"
+          },
+          {
+            "code": "MM5451",
+            "name": "Technology Innovation & Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/mm5451.pdf"
+          }
+        ]
+      },
+      {
+        "id": "elective-subjects",
+        "name": "Elective Subjects",
+        "type": "elective",
+        "creditsRequired": 6,
+        "coursesRequired": 2,
+        "ruleText": "Complete at least two Elective Subjects for 6 credits. On the taught path without HSS5903 Dissertation, additional Elective Subjects may count toward the three extra Core/Elective Subjects required in place of the Dissertation.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/fhss/study/postgraduate/mschi/",
+        "courses": [
+          {
+            "code": "AMA601",
+            "name": "Advanced Statistics in Health Care Research",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/ama601.pdf"
+          },
+          {
+            "code": "HTI5725",
+            "name": "Advanced Technology & Clinical Application in Nuclear Medicine Imaging",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/hti5725-revised-2023.pdf"
+          },
+          {
+            "code": "COMP5434",
+            "name": "Big Data Computing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/comp5434.pdf"
+          },
+          {
+            "code": "HTI5052",
+            "name": "Bioinformatics in Health Sciences",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/hti5052.pdf"
+          },
+          {
+            "code": "COMP5112",
+            "name": "Data Structures & Database Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/comp5112.pdf"
+          },
+          {
+            "code": "BME5120",
+            "name": "Digital Design and Manufacturing for Biomedical Engineering",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/bme5120.pdf"
+          },
+          {
+            "code": "SN5180",
+            "name": "Ethics & Law in Clinical Practice",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/sn5180.pdf"
+          },
+          {
+            "code": "APSS601",
+            "name": "Health & Social Policy Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/apss601.pdf"
+          },
+          {
+            "code": "APSS6403",
+            "name": "Health Care Ethics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/apss6403.pdf"
+          },
+          {
+            "code": "COMP5322",
+            "name": "Internet Computing & Applications",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/comp5322.pdf"
+          },
+          {
+            "code": "APSS6402",
+            "name": "Issues in Health Sociology",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/apss6402.pdf"
+          },
+          {
+            "code": "HTI5003",
+            "name": "Medical Imaging Physics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/hti5003-revised-2023.pdf"
+          },
+          {
+            "code": "BME5133",
+            "name": "Modern Rehabilitation Engineering and Robotics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/bme5133.pdf"
+          },
+          {
+            "code": "SN5181",
+            "name": "Quality Management of Health Care Services",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/sn5181.pdf"
+          },
+          {
+            "code": "AP50002",
+            "name": "Radiation Protection and Radiation Safety",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/ap50002.pdf"
+          },
+          {
+            "code": "HTI5002",
+            "name": "Radiation Therapy Physics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/hti5002.pdf"
+          },
+          {
+            "code": "BME5155",
+            "name": "Research Methods & Biostatistics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/bme5155.pdf"
+          },
+          {
+            "code": "RS517",
+            "name": "Research Methods & Data Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/rs517.pdf"
+          },
+          {
+            "code": "SN5307",
+            "name": "Virtual Reality in Healthcare",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/sn5307.pdf"
+          },
+          {
+            "code": "BME5111",
+            "name": "Wearable Technology for Digital Health",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/bme5111.pdf"
+          }
+        ]
+      },
+      {
+        "id": "dissertation-option",
+        "name": "Dissertation Option",
+        "type": "dissertation",
+        "ruleText": "Complete HSS5903 Dissertation for 9 credits, or replace it with any three additional 3-credit subjects from the combined Core and Elective pools. The two paths are mutually exclusive.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/fhss/study/postgraduate/mschi/",
+        "courses": [
+          {
+            "code": "HSS5903",
+            "name": "Dissertation",
+            "credits": 9,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/-/media/department/fhss/content/study/postgraduate/mschi/hss5903.pdf",
+            "courseKind": "dissertation",
+            "conditionalRequirement": true
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Academic Integrity and Ethics",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete HTI5T04 Academic Integrity and Ethics (Health and Social Sciences) for 1 credit.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/06003-hif-hip",
+        "courses": [
+          {
+            "code": "HTI5T04",
+            "name": "Academic Integrity and Ethics (Health and Social Sciences)",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fhss/study/postgraduate/mschi/"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "POLYU-TPG-089",
     "courseGroups": [
       {
