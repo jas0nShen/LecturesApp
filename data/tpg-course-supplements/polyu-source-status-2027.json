@@ -216,37 +216,30 @@
       "programmeId": "POLYU-TPG-032",
       "status": "blocked",
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/33088-cfm-cpm",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-033",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/32111-rfm-rpm",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-034",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/32113-pfm-ppm",
-      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-035",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/32114-ifm-ipm",
-      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+      "statusNote": "The official 2027 Programme page publishes the complete 31-credit Carbon Neutral Cities and Urban Sustainability structure: four Compulsory Subjects, three Core Subjects and either three Elective Subjects or a 9-credit Dissertation, plus a 1-credit Academic Integrity and Ethics subject. It publishes the complete current Compulsory and Core title pools but no subject codes. The current October 2025 Department of Building Environment and Energy Engineering brochure also publishes no Programme-specific curriculum code table. Public sources therefore do not identify the codes for the four Compulsory Subjects, the complete cross-faculty Core pool, the Dissertation or the AIE subject. The Programme remains blocked rather than mapping overlapping titles to codes from other awards or exposing a partial pool.",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "verifiedAt": "2026-07-15"
     },
     {
       "programmeId": "POLYU-TPG-036",
       "status": "blocked",
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72017-bcf-bcp",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+      "statusNote": "The official 2027 Programme page publishes the complete 31-credit Bilingual Corporate Communication structure: five Compulsory Subjects, six Elective Subjects with at least two from the BCC Block, and a conditional three-subject replacement by the MABCC Supervised Project. The current Department of Language Science and Technology curriculum publishes codes and credits for most matching titles, but it has no entry for the new 2027 subject Analytic Skills and Techniques for Language and Communication Professionals. It also publishes CBS5412 as Crisis Communication and Management while the 2027 Programme page requires Crisis Management and Communication. The Programme remains blocked rather than treating the differently ordered title as an exact match, inventing the new subject code or exposing an incomplete Elective pool.",
+      "faculty": "Department of Language Science and Technology (LST)",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "verifiedAt": "2026-07-15"
     },
     {
       "programmeId": "POLYU-TPG-039",
       "status": "blocked",
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72017-tlf-tlp",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+      "statusNote": "The official 2027 Programme page publishes the complete 31-credit Teaching Chinese as a Foreign Language structure: five Compulsory Subjects, six Elective Subjects and a conditional three-subject replacement by either MATCFL Dissertation or Supervised International Chinese Teaching Internship II. The current Department of Language Science and Technology curriculum publishes codes and credits for most matching titles, but it has no entries for two subjects newly listed for 2027: Supervised International Chinese Teaching Internship I and Technology-Enhanced Foreign Language Teaching: Pedagogical Applications. The Programme remains blocked rather than inventing those codes or exposing an incomplete Elective pool.",
+      "faculty": "Department of Language Science and Technology (LST)",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "verifiedAt": "2026-07-15"
     },
     {
       "programmeId": "POLYU-TPG-040",

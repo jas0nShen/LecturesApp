@@ -9,8 +9,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 250);
-  assert.equal(coverage.courseCount, 6080);
+  assert.equal(coverage.programmeWithCoursesCount, 253);
+  assert.equal(coverage.courseCount, 6125);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -29,8 +29,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 250);
-  assert.equal(rows.length, 250);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 253);
+  assert.equal(rows.length, 253);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
@@ -648,6 +648,107 @@ test('PolyU BEEE 029 to 031 correct totals while registration-only code pools st
   assert.match(fireSafety.courseStatusNote, /BSE559 Safety Management Systems and Safety Auditing/);
   assert.match(fireSafety.courseStatusNote, /remaining Compulsory and Core pool, explicit taught-subject credits, Dissertation code and AIE code are therefore unresolved/);
   assert.match(fireSafety.courseStatusNote, /rather than leaving the total unknown, treating two published codes as a complete pool/);
+});
+
+test('PolyU 032, 036 and 039 preserve exact public code gaps without exposing partial pools', () => {
+  const carbonNeutralCities = tpgService.getProgramme('POLYU-TPG-032');
+  const bilingualCommunication = tpgService.getProgramme('POLYU-TPG-036');
+  const teachingChinese = tpgService.getProgramme('POLYU-TPG-039');
+
+  [carbonNeutralCities, bilingualCommunication, teachingChinese].forEach((programme) => {
+    assert.equal(programme.courseVerificationStatus, 'blocked');
+    assert.equal(programme.creditsRequired, 31);
+    assert.equal(programme.creditUnit, 'credits');
+    assert.equal(programme.courseVerifiedAt, '2026-07-15');
+    assert.equal((programme.courseGroups || []).length, 0);
+  });
+
+  assert.equal(carbonNeutralCities.faculty, 'Department of Building Environment & Energy Engineering (BEEE)');
+  assert.match(carbonNeutralCities.courseStatusNote, /four Compulsory Subjects, three Core Subjects/);
+  assert.match(carbonNeutralCities.courseStatusNote, /complete cross-faculty Core pool, the Dissertation or the AIE subject/);
+  assert.match(carbonNeutralCities.courseStatusNote, /rather than mapping overlapping titles to codes from other awards/);
+
+  assert.equal(bilingualCommunication.faculty, 'Department of Language Science and Technology (LST)');
+  assert.match(bilingualCommunication.courseStatusNote, /Analytic Skills and Techniques for Language and Communication Professionals/);
+  assert.match(bilingualCommunication.courseStatusNote, /CBS5412 as Crisis Communication and Management/);
+  assert.match(bilingualCommunication.courseStatusNote, /Crisis Management and Communication/);
+
+  assert.equal(teachingChinese.faculty, 'Department of Language Science and Technology (LST)');
+  assert.match(teachingChinese.courseStatusNote, /Supervised International Chinese Teaching Internship I/);
+  assert.match(teachingChinese.courseStatusNote, /Technology-Enhanced Foreign Language Teaching: Pedagogical Applications/);
+  assert.match(teachingChinese.courseStatusNote, /rather than inventing those codes/);
+});
+
+test('PolyU BRE 033 to 035 preserve official taught and Dissertation paths conservatively', () => {
+  const construction = tpgService.getProgramme('POLYU-TPG-033');
+  const projectManagement = tpgService.getProgramme('POLYU-TPG-034');
+  const intelligentConstruction = tpgService.getProgramme('POLYU-TPG-035');
+
+  [construction, projectManagement, intelligentConstruction].forEach((programme) => {
+    const courses = tpgService.flattenCourses(programme);
+    assert.equal(programme.courseVerificationStatus, 'verified');
+    assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+    assert.equal(programme.creditsRequired, 31);
+    assert.equal(programme.creditUnit, 'credits');
+    assert.equal(programme.courseVerifiedAt, '2026-07-15');
+    assert.equal(programme.faculty, 'Department of Building and Real Estate (BRE)');
+    assert.equal(new Set(courses.map((course) => course.code)).size, courses.length);
+    assert.equal(tpgService.getProgrammeCourse(programme.id, 'EEE5T03').credits, 1);
+    assert.equal(tpgService.getProgrammeCourse(programme.id, 'BRE591').credits, 9);
+  });
+
+  assert.equal(tpgService.getStatus(construction).courseCount, 18);
+  assert.equal(construction.courseGroups.find((group) => group.id === 'core-subjects').courses.length, 15);
+  assert.equal(tpgService.getProgrammeCourse(construction.id, 'BRE505').courseKind, 'project');
+  assert.match(construction.courseStatusNote, /seven taught subjects with at least four Core Subjects plus BRE591/);
+  assert.match(construction.courseStatusNote, /optional discipline advice require manual audit review/);
+
+  assert.equal(tpgService.getStatus(projectManagement).courseCount, 15);
+  assert.equal(projectManagement.courseGroups.find((group) => group.id === 'compulsory-core-subjects').creditsRequired, 15);
+  assert.equal(projectManagement.courseGroups.find((group) => group.id === 'additional-core-subjects').courses.length, 6);
+  assert.equal(tpgService.getProgrammeCourse(projectManagement.id, 'BRE550').credits, 3);
+  assert.equal(tpgService.getProgrammeCourse(projectManagement.id, 'CSE565').credits, 3);
+  assert.match(projectManagement.courseStatusNote, /broader Elective pool is explicitly dynamic/);
+
+  assert.equal(tpgService.getStatus(intelligentConstruction).courseCount, 12);
+  assert.equal(intelligentConstruction.courseGroups.find((group) => group.id === 'common-compulsory-subjects').creditsRequired, 21);
+  assert.equal(intelligentConstruction.courseGroups.find((group) => group.id === 'non-dissertation-compulsory-subjects').creditsRequired, 6);
+  assert.equal(tpgService.getProgrammeCourse(intelligentConstruction.id, 'BRE534').courseKind, 'project');
+  assert.equal(tpgService.getProgrammeCourse(intelligentConstruction.id, 'BRE506').credits, 3);
+  assert.match(intelligentConstruction.courseStatusNote, /another approved Elective from a dynamic University pool/);
+});
+
+test('PolyU LST 037 and 038 preserve complete code pools and manual Dissertation rules', () => {
+  const linguistics = tpgService.getProgramme('POLYU-TPG-037');
+  const languageLiterature = tpgService.getProgramme('POLYU-TPG-038');
+
+  [linguistics, languageLiterature].forEach((programme) => {
+    const courses = tpgService.flattenCourses(programme);
+    assert.equal(programme.courseVerificationStatus, 'verified');
+    assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+    assert.equal(programme.creditsRequired, 31);
+    assert.equal(programme.creditUnit, 'credits');
+    assert.equal(programme.courseVerifiedAt, '2026-07-15');
+    assert.equal(programme.faculty, 'Department of Language Science and Technology (LST)');
+    assert.equal(new Set(courses.map((course) => course.code)).size, courses.length);
+    assert.equal(tpgService.getProgrammeCourse(programme.id, 'CBS5T01').credits, 1);
+    assert.equal(programme.courseGroups.find((group) => group.id === 'description-of-chinese-i').coursesRequired, 1);
+    assert.equal(programme.courseGroups.find((group) => group.id === 'description-of-chinese-ii').coursesRequired, 1);
+  });
+
+  assert.equal(tpgService.getStatus(linguistics).courseCount, 41);
+  assert.equal(tpgService.getProgrammeCourse(linguistics.id, 'CBS538').credits, 9);
+  assert.equal(tpgService.getProgrammeCourse(linguistics.id, 'CBS538').conditionalRequirement, true);
+  assert.match(linguistics.courseStatusNote, /shared Elective quota and Dissertation equivalence/);
+
+  assert.equal(languageLiterature.name, 'Chinese Language and Literature');
+  assert.equal(tpgService.getStatus(languageLiterature).courseCount, 44);
+  assert.equal(tpgService.getProgrammeCourse(languageLiterature.id, 'CBS593').credits, 9);
+  assert.equal(tpgService.getProgrammeCourse(languageLiterature.id, 'CBS593').conditionalRequirement, true);
+  assert.equal(languageLiterature.courseGroups.find((group) => group.id === 'chinese-language-electives').coursesRequired, 1);
+  assert.equal(languageLiterature.courseGroups.find((group) => group.id === 'chinese-literature-electives').coursesRequired, 1);
+  assert.match(languageLiterature.courseStatusNote, /22-credit PgD exit award/);
+  assert.match(languageLiterature.courseStatusNote, /PgD is not modelled as an MA completion path/);
 });
 
 test('PolyU Generative AI and the Humanities filters both official Specialism elective pools', () => {

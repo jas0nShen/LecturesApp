@@ -168,6 +168,7 @@ function chineseLinguistics() {
   const programmeId = 'POLYU-TPG-037';
   return {
     programmeId,
+    faculty: 'Department of Language Science and Technology (LST)',
     status: 'verified',
     creditsRequired: 31,
     creditUnit: 'credits',
@@ -201,6 +202,7 @@ function chineseLanguageAndLiterature() {
   return {
     programmeId,
     programmeName: 'Chinese Language and Literature',
+    faculty: 'Department of Language Science and Technology (LST)',
     status: 'verified',
     creditsRequired: 31,
     creditUnit: 'credits',

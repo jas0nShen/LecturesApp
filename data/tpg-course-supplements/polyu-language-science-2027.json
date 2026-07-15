@@ -6,6 +6,7 @@
   "programmes": [
     {
       "programmeId": "POLYU-TPG-037",
+      "faculty": "Department of Language Science and Technology (LST)",
       "status": "verified",
       "creditsRequired": 31,
       "creditUnit": "credits",
@@ -389,6 +390,7 @@
     {
       "programmeId": "POLYU-TPG-038",
       "programmeName": "Chinese Language and Literature",
+      "faculty": "Department of Language Science and Technology (LST)",
       "status": "verified",
       "creditsRequired": 31,
       "creditUnit": "credits",

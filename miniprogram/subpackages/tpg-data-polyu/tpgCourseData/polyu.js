@@ -1751,6 +1751,503 @@ module.exports = [
     ]
   },
   {
+    "id": "POLYU-TPG-033",
+    "courseGroups": [
+      {
+        "id": "core-subjects",
+        "name": "Core Subjects",
+        "type": "core",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf",
+        "courses": [
+          {
+            "code": "BRE506",
+            "name": "Principles of Project Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf"
+          },
+          {
+            "code": "BRE511",
+            "name": "Information Management for Construction & Real Estate",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf"
+          },
+          {
+            "code": "BRE527",
+            "name": "Construction Practice in China",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf"
+          },
+          {
+            "code": "BRE533",
+            "name": "Value Management in Construction & Property",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf"
+          },
+          {
+            "code": "BRE5751",
+            "name": "Strategic Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf"
+          },
+          {
+            "code": "BRE581",
+            "name": "International Construction Projects",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf"
+          },
+          {
+            "code": "BRE524",
+            "name": "Urban Planning & Urban Design",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf"
+          },
+          {
+            "code": "BRE530",
+            "name": "Economics for Urban Studies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf"
+          },
+          {
+            "code": "BRE572",
+            "name": "Real Estate Development",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf"
+          },
+          {
+            "code": "BRE582",
+            "name": "Development Finance & Investment",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf"
+          },
+          {
+            "code": "BRE525",
+            "name": "Property Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf"
+          },
+          {
+            "code": "BRE532",
+            "name": "Maintenance Management & Operation",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf"
+          },
+          {
+            "code": "BRE565",
+            "name": "Real Estate Asset Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf"
+          },
+          {
+            "code": "BRE541",
+            "name": "Property Law",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf"
+          },
+          {
+            "code": "BRE587",
+            "name": "Research Methods for Construction & Real Estate",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf"
+          }
+        ],
+        "ruleText": "Complete at least four Core Subjects including BRE587 on the Dissertation path, or at least seven Core Subjects including BRE587 on the taught path. The three published disciplines are advisory selections, not required Tracks."
+      },
+      {
+        "id": "professional-workshop-option",
+        "name": "Professional Workshop and Project",
+        "type": "project",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf",
+        "courses": [
+          {
+            "code": "BRE505",
+            "name": "Professional Workshop & Project",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf",
+            "courseKind": "project",
+            "conditionalRequirement": true
+          }
+        ],
+        "coursesRequired": 1,
+        "ruleText": "BRE505 is compulsory on the ten-taught-subject non-Dissertation path and is mutually exclusive with BRE591 for completion."
+      },
+      {
+        "id": "dissertation-option",
+        "name": "Dissertation Option",
+        "type": "dissertation",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf",
+        "courses": [
+          {
+            "code": "BRE591",
+            "name": "MSc Dissertation",
+            "credits": 9,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf",
+            "courseKind": "dissertation",
+            "conditionalRequirement": true
+          }
+        ],
+        "coursesRequired": 1,
+        "ruleText": "BRE591 is required on the seven-taught-subject Dissertation path and is mutually exclusive with BRE505 for completion."
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Academic Integrity and Ethics",
+        "type": "academic_integrity",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf",
+        "courses": [
+          {
+            "code": "EEE5T03",
+            "name": "Engineering Ethics and Academic Integrity",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf"
+          }
+        ],
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete EEE5T03 for 1 credit in either award path."
+      }
+    ]
+  },
+  {
+    "id": "POLYU-TPG-034",
+    "courseGroups": [
+      {
+        "id": "compulsory-core-subjects",
+        "name": "Compulsory Core Subjects",
+        "type": "core",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf",
+        "courses": [
+          {
+            "code": "BRE572",
+            "name": "Real Estate Development",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf"
+          },
+          {
+            "code": "BRE5731",
+            "name": "Managing People in Projects",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf"
+          },
+          {
+            "code": "BRE574",
+            "name": "Construction Process Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf"
+          },
+          {
+            "code": "BRE5751",
+            "name": "Strategic Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf"
+          },
+          {
+            "code": "BRE587",
+            "name": "Research Methods for Construction & Real Estate",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf"
+          }
+        ],
+        "creditsRequired": 15,
+        "coursesRequired": 5,
+        "ruleText": "Complete all five Compulsory Core Subjects for 15 credits in either award path."
+      },
+      {
+        "id": "additional-core-subjects",
+        "name": "Additional Core Subjects",
+        "type": "core",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf",
+        "courses": [
+          {
+            "code": "BRE506",
+            "name": "Principles of Project Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf"
+          },
+          {
+            "code": "BRE533",
+            "name": "Value Management in Construction & Property",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf"
+          },
+          {
+            "code": "BRE562",
+            "name": "Project Appraisal",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf"
+          },
+          {
+            "code": "BRE581",
+            "name": "International Construction Projects",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf"
+          },
+          {
+            "code": "BRE582",
+            "name": "Development Finance & Investment",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf"
+          },
+          {
+            "code": "BRE586",
+            "name": "Construction Information Technology",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf"
+          }
+        ],
+        "ruleText": "The ten-subject taught path requires at least two subjects from this Additional Core pool. The Dissertation path requires seven taught subjects in total including all five Compulsory Core Subjects."
+      },
+      {
+        "id": "named-recommended-electives",
+        "name": "Named Recommended Elective Subjects",
+        "type": "elective",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf",
+        "courses": [
+          {
+            "code": "CSE565",
+            "name": "Construction Technology",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf"
+          },
+          {
+            "code": "BRE550",
+            "name": "Statutory Framework for Construction Practice",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf"
+          }
+        ],
+        "ruleText": "These are the two named recommendations for students without a construction background. The official Elective pool may include other subjects offered by BRE or sister departments and is not treated as a closed list."
+      },
+      {
+        "id": "dissertation-option",
+        "name": "Dissertation Option",
+        "type": "dissertation",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf",
+        "courses": [
+          {
+            "code": "BRE591",
+            "name": "MSc Dissertation",
+            "credits": 9,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf",
+            "courseKind": "dissertation",
+            "conditionalRequirement": true
+          }
+        ],
+        "coursesRequired": 1,
+        "ruleText": "BRE591 is required only on the seven-taught-subject Dissertation path and replaces three taught subjects."
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Academic Integrity and Ethics",
+        "type": "academic_integrity",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf",
+        "courses": [
+          {
+            "code": "EEE5T03",
+            "name": "Engineering Ethics and Academic Integrity",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32111%20%26%2032113_BRE_AY25-26_r25.08.28.pdf"
+          }
+        ],
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete EEE5T03 for 1 credit in either award path."
+      }
+    ]
+  },
+  {
+    "id": "POLYU-TPG-035",
+    "courseGroups": [
+      {
+        "id": "common-compulsory-subjects",
+        "name": "Common Compulsory Subjects",
+        "type": "core",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32114_BRE_AY25-26_r25.08.28.pdf",
+        "courses": [
+          {
+            "code": "BRE511",
+            "name": "Information Management for Construction and Real Estate",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32114_BRE_AY25-26_r25.08.28.pdf"
+          },
+          {
+            "code": "BRE586",
+            "name": "Construction Information Technology",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32114_BRE_AY25-26_r25.08.28.pdf"
+          },
+          {
+            "code": "BRE537",
+            "name": "Machine Learning and Data Mining for Construction",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32114_BRE_AY25-26_r25.08.28.pdf"
+          },
+          {
+            "code": "BRE536",
+            "name": "Automation and Robotics in Construction",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32114_BRE_AY25-26_r25.08.28.pdf"
+          },
+          {
+            "code": "BRE535",
+            "name": "Advanced Visualisation and Interactive Technologies for Construction",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32114_BRE_AY25-26_r25.08.28.pdf"
+          },
+          {
+            "code": "BRE538",
+            "name": "3D Printing in Construction: Principles and Applications",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32114_BRE_AY25-26_r25.08.28.pdf"
+          },
+          {
+            "code": "BRE587",
+            "name": "Research Methods for Construction and Real Estate",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32114_BRE_AY25-26_r25.08.28.pdf"
+          }
+        ],
+        "creditsRequired": 21,
+        "coursesRequired": 7,
+        "ruleText": "Complete all seven 3-credit Common Compulsory Subjects in either award path."
+      },
+      {
+        "id": "non-dissertation-compulsory-subjects",
+        "name": "Non-Dissertation Compulsory Subjects",
+        "type": "project",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32114_BRE_AY25-26_r25.08.28.pdf",
+        "courses": [
+          {
+            "code": "BRE534",
+            "name": "Integrated Project in Intelligent Construction",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32114_BRE_AY25-26_r25.08.28.pdf",
+            "courseKind": "project",
+            "conditionalRequirement": true
+          },
+          {
+            "code": "BRE5751",
+            "name": "Strategic Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32114_BRE_AY25-26_r25.08.28.pdf",
+            "conditionalRequirement": true
+          }
+        ],
+        "creditsRequired": 6,
+        "coursesRequired": 2,
+        "ruleText": "Complete BRE534 and BRE5751 only on the non-Dissertation path."
+      },
+      {
+        "id": "named-recommended-elective",
+        "name": "Named Recommended Elective Subject",
+        "type": "elective",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32114_BRE_AY25-26_r25.08.28.pdf",
+        "courses": [
+          {
+            "code": "BRE506",
+            "name": "Principles of Project Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32114_BRE_AY25-26_r25.08.28.pdf"
+          }
+        ],
+        "ruleText": "The non-Dissertation path requires one 3-credit Elective. BRE506 is the named recommendation, but another approved University subject may be selected; this is not a closed Elective pool."
+      },
+      {
+        "id": "dissertation-option",
+        "name": "Dissertation Option",
+        "type": "dissertation",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32114_BRE_AY25-26_r25.08.28.pdf",
+        "courses": [
+          {
+            "code": "BRE591",
+            "name": "Dissertation",
+            "credits": 9,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32114_BRE_AY25-26_r25.08.28.pdf",
+            "courseKind": "dissertation",
+            "conditionalRequirement": true
+          }
+        ],
+        "coursesRequired": 1,
+        "ruleText": "BRE591 is required only on the Dissertation path and is mutually exclusive with the non-Dissertation project and Elective requirements."
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Academic Integrity and Ethics",
+        "type": "academic_integrity",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32114_BRE_AY25-26_r25.08.28.pdf",
+        "courses": [
+          {
+            "code": "EEE5T03",
+            "name": "Engineering Ethics and Academic Integrity",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/PRD_32114_BRE_AY25-26_r25.08.28.pdf"
+          }
+        ],
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete EEE5T03 for 1 credit in either award path."
+      }
+    ]
+  },
+  {
     "id": "POLYU-TPG-037",
     "courseGroups": [
       {
