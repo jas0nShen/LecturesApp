@@ -236,6 +236,40 @@ test('PolyU Sustainable Fashion and Innovation corrects its MA total while the A
   assert.match(programme.courseStatusNote, /rather than retaining the stale 15-credit total/);
 });
 
+test('PolyU Intelligent Wearable Technology corrects its name and total while two official code gaps remain', () => {
+  const programme = tpgService.getProgramme('POLYU-TPG-100');
+
+  assert.equal(programme.name, 'Intelligent Wearable Technology');
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal(programme.creditsRequired, 34);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.courseVerifiedAt, '2026-07-15');
+  assert.equal((programme.courseGroups || []).length, 0);
+  assert.match(programme.courseStatusNote, /separate 22-credit PgD exit award/);
+  assert.match(programme.courseStatusNote, /SFT543-SFT549CP/);
+  assert.match(programme.courseStatusNote, /9-credit SFT549CP Research Project/);
+  assert.match(programme.courseStatusNote, /No public current official source identifies the code for Metaverse Applications/);
+  assert.match(programme.courseStatusNote, /totals 33 credits rather than the official 34/);
+  assert.match(programme.courseStatusNote, /both SFT5R08 and SFT5T08/);
+  assert.match(programme.courseStatusNote, /rather than publishing a partial course pool/);
+});
+
+test('PolyU Global Hospitality Business corrects its total while partner-institution codes remain unpublished', () => {
+  const programme = tpgService.getProgramme('POLYU-TPG-101');
+
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal(programme.creditsRequired, 37);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.courseVerifiedAt, '2026-07-15');
+  assert.equal((programme.courseGroups || []).length, 0);
+  assert.match(programme.courseStatusNote, /three-semester joint-degree structure/);
+  assert.match(programme.courseStatusNote, /HTM562-HTM565/);
+  assert.match(programme.courseStatusNote, /HTM566 Capstone Consulting Project \(6 credits\)/);
+  assert.match(programme.courseStatusNote, /9 of the 12 credits completed at each partner institution/);
+  assert.match(programme.courseStatusNote, /does not identify the University of Houston Elective title or code/);
+  assert.match(programme.courseStatusNote, /rather than publishing only the six PolyU-coded subjects/);
+});
+
 test('PolyU Generative AI and the Humanities filters both official Specialism elective pools', () => {
   const programme = tpgService.getProgramme('POLYU-TPG-094');
   const tracks = Object.fromEntries(tpgService.listTracks(programme).map((track) => [track.name, track.id]));

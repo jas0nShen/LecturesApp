@@ -155,6 +155,21 @@ const statusOverrides = {
     sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/14107-ffs-pfs',
     statusNote: 'The official 2027 Programme page corrects the MA total to 31 credits and publishes five 15-credit Core subjects, the 9-credit Capstone Project of Sustainability and an eight-subject Elective pool from which MA students choose two. It separately publishes a 22-credit PgD exit award, which is not modelled as an MA completion path. The current official SFT Subject Synopsis table resolves SFT5100-SFT5108 for every SFT Core, Capstone and sustainability Elective title, ITC516 for Research Methodology, and SFT501, SFT503, SFT508 and SFT509 for the four cross-Programme Electives. The same current table publishes both SFT5R08 and SFT5T08 as 1-credit Academic Integrity and Ethics in Design and Innovation subjects, and their June 2026 official Subject Description Forms are otherwise identical. The 31-credit total requires the additional 1-credit AIE component, but neither the Programme page nor another public Programme-specific official source identifies which AIE code belongs to Programme 14107. The Programme remains blocked rather than retaining the stale 15-credit total, selecting an AIE code by prefix or exposing a structure with an ambiguous compulsory subject.'
   },
+  'POLYU-TPG-100': {
+    verifiedAt: '2026-07-15',
+    programmeName: 'Intelligent Wearable Technology',
+    creditsRequired: 34,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/14110-iwt-pwt-pgd',
+    statusNote: 'The official 2027 Programme page corrects the Programme name to Intelligent Wearable Technology and publishes a 34-credit MSc and a separate 22-credit PgD exit award. MSc Learning Mode I comprises seven 3-credit Compulsory subjects, one 3-credit Elective and the 9-credit Research Project; Learning Mode II comprises the same seven Compulsory subjects and four 3-credit Electives. The current official SFT Subject Synopsis table resolves SFT543-SFT549CP, including SFT545 Advanced Fiber Materials and the 9-credit SFT549CP Research Project, plus ITC516, ITC523, ITC528, ITC545, SFT5101, SFT5107 and SFT5108. Current official COMP and EIE subject pages resolve COMP5140, COMP5511, COMP5517, EIE560 and EIE568. No public current official source identifies the code for Metaverse Applications: Design and Case Studies. Each published MSc mode also totals 33 credits rather than the official 34, and the Programme page does not name the additional 1-credit component. Although the SFT Subject Synopsis table publishes both SFT5R08 and SFT5T08 as 1-credit Academic Integrity and Ethics in Design and Innovation subjects, the Programme page neither lists AIE nor identifies either code for Programme 14110. The Programme remains blocked rather than publishing a partial course pool, inferring the Metaverse Applications code or assigning the unexplained credit to an AIE subject.'
+  },
+  'POLYU-TPG-101': {
+    verifiedAt: '2026-07-15',
+    creditsRequired: 37,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/24043',
+    statusNote: 'The official 2027 Programme page corrects the total to 37 credits and publishes the complete three-semester joint-degree structure. At EHL Hospitality Business School, students complete four named 3-credit Compulsory subjects. At PolyU, they complete HTM5T02 Academic Integrity and Ethics in Business Studies and Research (1 credit), HTM562-HTM565 (3 credits each) and HTM566 Capstone Consulting Project (6 credits). At the University of Houston, they complete three named 3-credit Compulsory subjects and one 3-credit Elective. The official transfer rule counts 9 of the 12 credits completed at each partner institution, for 18 transferred credits plus 19 PolyU credits. The public Programme page does not publish course codes for any EHL or University of Houston subject and does not identify the University of Houston Elective title or code. No current public official EHL or University of Houston Programme or course-catalogue page was found that maps these exact joint-degree titles to stable codes. The Programme remains blocked rather than publishing only the six PolyU-coded subjects, inventing partner-institution codes or treating all 24 partner credits as degree credits.'
+  },
   'POLYU-TPG-076': {
     verifiedAt: '2026-07-15',
     sourceUrl: 'https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/',
@@ -184,6 +199,8 @@ function main() {
         : row.courseCodes && row.courseCodes.length
           ? 'The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.'
           : 'The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.'),
+      ...(override.programmeName ? { programmeName: override.programmeName } : {}),
+      ...(override.faculty ? { faculty: override.faculty } : {}),
       ...(override.creditsRequired ? { creditsRequired: override.creditsRequired } : {}),
       ...(override.creditUnit ? { creditUnit: override.creditUnit } : {}),
       ...(override.trackSelectionOptional !== undefined ? { trackSelectionOptional: override.trackSelectionOptional } : {}),
