@@ -9,8 +9,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 246);
-  assert.equal(coverage.courseCount, 5952);
+  assert.equal(coverage.programmeWithCoursesCount, 248);
+  assert.equal(coverage.courseCount, 5995);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -29,8 +29,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 246);
-  assert.equal(rows.length, 246);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 248);
+  assert.equal(rows.length, 248);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
@@ -401,6 +401,105 @@ test('PolyU Investment Management preserves the verified 19-plus-6-plus-12 struc
   assert.equal(tpgService.getProgrammeCourse(programme.id, 'AF5511').name, 'Regulatory Framework');
   assert.equal(tpgService.getProgrammeCourse(programme.id, 'AF5333').name, 'Risk Management for Corporations');
   assert.equal(tpgService.getProgrammeCourse(programme.id, 'AF5933').courseKind, 'project');
+});
+
+test('PolyU Accounting and Finance Analytics exposes the verified 28-plus-3 structure', () => {
+  const programme = tpgService.getProgramme('POLYU-TPG-006');
+  const status = tpgService.getStatus(programme);
+  const core = programme.courseGroups.find((group) => group.id === 'compulsory-core-subjects');
+  const electives = programme.courseGroups.find((group) => group.id === 'elective-subjects');
+
+  assert.equal(programme.faculty, 'School of Accounting and Finance (AF)');
+  assert.equal(programme.creditsRequired, 31);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.courseVerificationStatus, 'verified');
+  assert.equal(programme.courseVerifiedAt, '2026-07-15');
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.equal(status.isComplete, true);
+  assert.equal(status.courseCount, 22);
+  assert.equal(core.creditsRequired, 28);
+  assert.equal(core.coursesRequired, 10);
+  assert.equal(electives.creditsRequired, 3);
+  assert.equal(electives.coursesRequired, 1);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'AF5T21').credits, 1);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'AF5937').name, 'Accounting and Finance Analytics Project');
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'AF5351').name, 'Derivatives Securities');
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'MM5412').name, 'Business Intelligence and Decisions');
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'AF5341').name, 'Economics for Financial Analysis');
+  assert.match(programme.courseStatusNote, /Postgraduate Diploma exit award is not modelled/);
+});
+
+test('PolyU ESG and Sustainability remains blocked on the unresolved split ESG core codes', () => {
+  const programme = tpgService.getProgramme('POLYU-TPG-007');
+
+  assert.equal(programme.faculty, 'School of Accounting and Finance (AF)');
+  assert.equal(programme.creditsRequired, 31);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal(programme.courseVerifiedAt, '2026-07-15');
+  assert.equal((programme.courseGroups || []).length, 0);
+  assert.match(programme.courseStatusNote, /ESG Rating and Data Analysis/);
+  assert.match(programme.courseStatusNote, /ESG Report and Disclosure/);
+  assert.match(programme.courseStatusNote, /AF5132 ESG Disclosure and Rating Analysis/);
+  assert.match(programme.courseStatusNote, /does not label AF5701 Artificial Intelligence for Business or AF5312 Principles of Corporate Finance for ESG/);
+  assert.match(programme.courseStatusNote, /rather than splitting AF5132/);
+});
+
+test('PolyU Economics filters both required Streams while preserving cross-role subjects once', () => {
+  const programme = tpgService.getProgramme('POLYU-TPG-008');
+  const tracks = Object.fromEntries(tpgService.listTracks(programme).map((track) => [track.name, track.id]));
+  const status = tpgService.getStatus(programme);
+  const appliedCourses = tpgService.flattenCourses(programme, '', tracks['Applied Economics']);
+  const digitalCourses = tpgService.flattenCourses(programme, '', tracks['Digital Economics']);
+  const crossRole = programme.courseGroups.find((group) => group.id === 'stream-compulsory-free-elective-cross-role');
+
+  assert.equal(programme.faculty, 'School of Accounting and Finance (AF)');
+  assert.equal(programme.creditsRequired, 34);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.courseVerificationStatus, 'verified');
+  assert.equal(programme.courseVerifiedAt, '2026-07-15');
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(programme.trackSelectionOptional, false);
+  assert.deepEqual(Object.keys(tracks).sort(), ['Applied Economics', 'Digital Economics']);
+  assert.equal(status.courseCount, 21);
+  assert.equal(appliedCourses.length, 17);
+  assert.equal(digitalCourses.length, 17);
+  assert.equal(crossRole.courses.length, 4);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'AF5943', tracks['Applied Economics']).courseKind, 'project');
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'AF5943', tracks['Digital Economics']), null);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'AF5944', tracks['Applied Economics']), null);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'AF5944', tracks['Digital Economics']).courseKind, 'project');
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'AF5643', tracks['Applied Economics']).credits, 3);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'AF5643', tracks['Digital Economics']).credits, 3);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'AF5644', tracks['Applied Economics']).credits, 3);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'AF5644', tracks['Digital Economics']).credits, 3);
+  assert.match(programme.courseStatusNote, /Postgraduate Diploma exit award is not modelled/);
+  assert.match(programme.courseStatusNote, /cross-role non-double-counting/);
+});
+
+test('PolyU AAE programmes preserve verified totals while their uncoded Dissertations remain blocked', () => {
+  const aerospace = tpgService.getProgramme('POLYU-TPG-009');
+  const aviationOperations = tpgService.getProgramme('POLYU-TPG-010');
+  const lowAltitude = tpgService.getProgramme('POLYU-TPG-011');
+  const satellite = tpgService.getProgramme('POLYU-TPG-012');
+
+  [aerospace, aviationOperations, lowAltitude, satellite].forEach((programme) => {
+    assert.equal(programme.courseVerificationStatus, 'blocked');
+    assert.equal(programme.creditsRequired, 31);
+    assert.equal(programme.creditUnit, 'credits');
+    assert.equal(programme.courseVerifiedAt, '2026-07-15');
+    assert.equal((programme.courseGroups || []).length, 0);
+    assert.match(programme.courseStatusNote, /9-credit Dissertation/);
+    assert.match(programme.courseStatusNote, /publish no subject code/);
+    assert.match(programme.courseStatusNote, /remains blocked rather than/);
+  });
+
+  assert.match(aerospace.courseStatusNote, /all twelve taught subjects/);
+  assert.match(aviationOperations.courseStatusNote, /all thirteen taught subjects, including ISE5022/);
+  assert.match(lowAltitude.courseStatusNote, /all fifteen taught subjects, including the cross-department ISE and LSGI subjects/);
+  assert.match(satellite.courseStatusNote, /does not publish a document for Programme 48008/);
+  assert.match(satellite.courseStatusNote, /do not state explicit per-course credits for the six LSGI subjects/);
+  assert.match(satellite.courseStatusNote, /rather than deriving the missing LSGI credits from the 31-credit total/);
 });
 
 test('PolyU Generative AI and the Humanities filters both official Specialism elective pools', () => {

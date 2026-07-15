@@ -10,6 +10,8 @@ const verifiedIds = new Set([
   'POLYU-TPG-003',
   'POLYU-TPG-004',
   'POLYU-TPG-005',
+  'POLYU-TPG-006',
+  'POLYU-TPG-008',
   'POLYU-TPG-013',
   'POLYU-TPG-014',
   'POLYU-TPG-015',
@@ -30,6 +32,42 @@ const verifiedIds = new Set([
   'POLYU-TPG-105'
 ]);
 const statusOverrides = {
+  'POLYU-TPG-007': {
+    verifiedAt: '2026-07-15',
+    faculty: 'School of Accounting and Finance (AF)',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/21054-efm-epm',
+    statusNote: 'The official 2027 Programme page publishes the complete 31-credit rule, nine Core Subject titles for 25 credits and any two Elective Subjects for 6 credits. The current School of Accounting and Finance 2025/26 Taught Postgraduate Subject Syllabi catalogue does not provide a complete Programme-specific code table for that curriculum. In particular, the 2027 page lists ESG Rating and Data Analysis and ESG Report and Disclosure as two separate Core Subjects, while the current official catalogue publishes only AF5132 ESG Disclosure and Rating Analysis as one 3-credit ESG-labelled subject. The catalogue also does not label AF5701 Artificial Intelligence for Business or AF5312 Principles of Corporate Finance for ESG. The Programme remains blocked rather than splitting AF5132, assigning one code to two subjects or exposing a partial course pool assembled from same-title courses in other awards.'
+  },
+  'POLYU-TPG-009': {
+    verifiedAt: '2026-07-15',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/48006-amf-amp',
+    statusNote: 'The official 2027 Programme page publishes the complete Aerospace Engineering title pools and two 31-credit MSc routes: seven taught subjects including all six Core Subjects plus a 9-credit Dissertation, or ten taught subjects including all six Core Subjects, together with the 1-credit EEE5T03 AIE requirement. The official 2025/26 Programme Requirement Document and current AAE Subject List publish exact codes, titles and 3-credit values for all twelve taught subjects and confirm EEE5T03. The Programme Requirement Document, current 2026/27 leaflet and current AAE Subject List identify the Dissertation only as a 9-credit dissertation and publish no subject code for it. The Programme remains blocked rather than inventing a Dissertation code or exposing only the coursework route while omitting an official completion path.'
+  },
+  'POLYU-TPG-010': {
+    verifiedAt: '2026-07-15',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/48005-omf-omp',
+    statusNote: 'The official 2027 Programme page publishes the complete Aviation Engineering and Operations Management pools and two 31-credit MSc routes: seven taught subjects including at least six Core Subjects plus a 9-credit Dissertation, or ten taught subjects including at least six Core Subjects, together with the 1-credit EEE5T03 AIE requirement. The official 2025/26 Programme Requirement Document and current AAE Subject List publish exact codes, titles and 3-credit values for all thirteen taught subjects, including ISE5022, and confirm EEE5T03. The Programme Requirement Document, current 2026/27 leaflet and current AAE Subject List identify the Dissertation only as a 9-credit dissertation and publish no subject code for it. The Programme remains blocked rather than inventing a Dissertation code or exposing only the coursework route while omitting an official completion path.'
+  },
+  'POLYU-TPG-011': {
+    verifiedAt: '2026-07-15',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/48007-lmf-lmp',
+    statusNote: 'The official 2027 Programme page publishes the complete Low-altitude Economy pools and two 31-credit MSc routes: seven taught subjects including at least six Core Subjects plus a 9-credit Dissertation, or ten taught subjects including at least six Core Subjects, together with the 1-credit EEE5T03 AIE requirement. The official 2025/26 Programme Requirement Document publishes exact codes, titles and 3-credit values for all fifteen taught subjects, including the cross-department ISE and LSGI subjects, and confirms EEE5T03. The Programme Requirement Document, current 2026/27 leaflet and current AAE Subject List identify the Dissertation only as a 9-credit dissertation and publish no subject code for it. The Programme remains blocked rather than inventing a Dissertation code or exposing only the coursework route while omitting an official completion path.'
+  },
+  'POLYU-TPG-012': {
+    verifiedAt: '2026-07-15',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/48008-smf-smp',
+    statusNote: 'The official 2027 Programme page and current 2026/27 Satellite Engineering leaflet publish the complete twelve-subject Core and Elective pools and two 31-credit MSc routes: seven taught subjects including all six Core Subjects plus a 9-credit Dissertation, or ten taught subjects including all six Core Subjects, together with the 1-credit EEE5T03 AIE requirement. The current AAE Subject List publishes official Subject Description Forms for all six AAE-coded subjects, but the public Programme Requirement Documents page does not publish a document for Programme 48008 and the Programme sources do not state explicit per-course credits for the six LSGI subjects. They also identify the Dissertation only as a 9-credit dissertation and publish no subject code for it. The Programme remains blocked rather than deriving the missing LSGI credits from the 31-credit total, inventing a Dissertation code or exposing an incomplete course pool.'
+  },
   'POLYU-TPG-080': {
     verifiedAt: '2026-07-15',
     sourceUrl: 'https://www.polyu.edu.hk/hti/study/programmes/taught-postgraduate-programmes_list/master-of-science-in-medical-laboratory-science/',

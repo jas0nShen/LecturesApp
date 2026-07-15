@@ -29023,48 +29023,525 @@
       "universityCode": "POLYU",
       "programmeCode": "21052",
       "name": "Accounting and Finance Analytics",
-      "faculty": "Department of Accounting and Finance (AF)",
-      "creditsRequired": 9,
+      "faculty": "School of Accounting and Finance (AF)",
+      "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21052-fam-pam",
-      "dataLevel": "programme",
-      "courseGroups": [],
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "compulsory-core-subjects",
+          "name": "Compulsory Core Subjects",
+          "type": "core",
+          "creditsRequired": 28,
+          "coursesRequired": 10,
+          "ruleText": "Complete all ten Compulsory Core Subjects for 28 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21052-fam-pam",
+          "courses": [
+            {
+              "code": "AF5115",
+              "name": "Accounting for Business Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5203",
+              "name": "Contemporary Issues in Accounting Information Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5344",
+              "name": "Investments",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5312",
+              "name": "Principles of Corporate Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5364",
+              "name": "Quantitative Methods for Accounting and Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5365",
+              "name": "Applications of Computing and Technology in Accounting and Finance I",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5122",
+              "name": "Business Analytics in Accounting and Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5123",
+              "name": "Financial Analysis and Valuation with Programming",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5366",
+              "name": "Applications of Computing and Technology in Accounting and Finance II",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5T21",
+              "name": "Academic Integrity and Ethics in Business",
+              "credits": 1,
+              "courseKind": "academic_integrity",
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            }
+          ]
+        },
+        {
+          "id": "elective-subjects",
+          "name": "Elective Subjects",
+          "type": "elective",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Choose any one Elective Subject for 3 credits. Not all subjects are offered every year.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21052-fam-pam",
+          "courses": [
+            {
+              "code": "AF5937",
+              "name": "Accounting and Finance Analytics Project",
+              "credits": 3,
+              "courseKind": "project",
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5201",
+              "name": "Auditing Framework",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5322",
+              "name": "Corporate Risk Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5351",
+              "name": "Derivatives Securities",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5323",
+              "name": "Fixed Income Securities",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5112",
+              "name": "Management Accounting",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5353",
+              "name": "Security Analysis and Portfolio Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "MM5412",
+              "name": "Business Intelligence and Decisions",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "COMP5112",
+              "name": "Data Structures and Database Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "COMP5511",
+              "name": "Artificial Intelligence Concepts",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5701",
+              "name": "Artificial Intelligence for Business",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5341",
+              "name": "Economics for Financial Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            }
+          ]
+        }
+      ],
       "academicYear": "2027-28",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21052-fam-pam",
-      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+      "courseStatusNote": "The official 2027 Programme page publishes the complete 31-credit MSc structure: ten Compulsory Core Subjects for 28 credits and any one Elective Subject for 3 credits. The current School of Accounting and Finance 2025/26 Taught Postgraduate Subject Syllabi catalogue publishes an AFA-labelled code and 3-credit value for every named subject except AF5341 Economics for Financial Analysis, whose exact title has a single current official AF catalogue code under the MoF label. The Programme page uses Accounting and Financial Analytics Project and Derivative Securities, while the current official catalogue publishes AF5937 Accounting and Finance Analytics Project and AF5351 Derivatives Securities; the catalogue titles are retained with the Programme-page wording difference recorded here. The separate 22-credit Postgraduate Diploma exit award is not modelled as an MSc completion path. Not all Elective Subjects are offered every year.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified"
     },
     {
       "id": "POLYU-TPG-007",
       "universityCode": "POLYU",
       "programmeCode": "21054",
       "name": "ESG and Sustainability",
-      "faculty": "Department of Accounting and Finance (AF)",
-      "creditsRequired": 9,
+      "faculty": "School of Accounting and Finance (AF)",
+      "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21054-efm-epm",
       "dataLevel": "programme",
       "courseGroups": [],
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21054-efm-epm",
-      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+      "courseStatusNote": "The official 2027 Programme page publishes the complete 31-credit rule, nine Core Subject titles for 25 credits and any two Elective Subjects for 6 credits. The current School of Accounting and Finance 2025/26 Taught Postgraduate Subject Syllabi catalogue does not provide a complete Programme-specific code table for that curriculum. In particular, the 2027 page lists ESG Rating and Data Analysis and ESG Report and Disclosure as two separate Core Subjects, while the current official catalogue publishes only AF5132 ESG Disclosure and Rating Analysis as one 3-credit ESG-labelled subject. The catalogue also does not label AF5701 Artificial Intelligence for Business or AF5312 Principles of Corporate Finance for ESG. The Programme remains blocked rather than splitting AF5132, assigning one code to two subjects or exposing a partial course pool assembled from same-title courses in other awards.",
+      "creditUnit": "credits"
     },
     {
       "id": "POLYU-TPG-008",
       "universityCode": "POLYU",
       "programmeCode": "21055",
       "name": "Economics",
-      "faculty": "Department of Accounting and Finance (AF)",
+      "faculty": "School of Accounting and Finance (AF)",
       "creditsRequired": 34,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21055-aem-dem",
-      "dataLevel": "programme",
-      "courseGroups": [],
+      "dataLevel": "structure",
+      "courseGroups": [
+        {
+          "id": "common-compulsory-subjects",
+          "name": "Common Compulsory Subjects",
+          "type": "track_core",
+          "creditsRequired": 10,
+          "coursesRequired": 4,
+          "ruleText": "Both Streams complete AF5T21, AF5637, AF5638 and AF5642 for 10 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21055-aem-dem",
+          "courses": [
+            {
+              "code": "AF5T21",
+              "name": "Academic Integrity and Ethics in Business",
+              "credits": 1,
+              "courseKind": "academic_integrity",
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5637",
+              "name": "Microeconomics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5638",
+              "name": "Macroeconomics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5642",
+              "name": "International Economics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            }
+          ]
+        },
+        {
+          "id": "stream-compulsory-free-elective-cross-role",
+          "name": "Stream Compulsory and Free Elective Cross-role Subjects",
+          "type": "track_core_elective_cross_role",
+          "ruleText": "Applied Economics requires AF5643 and AF5641 as its remaining two Compulsory Subjects; AF5644 and AF5645 are Applied Economics Free Elective candidates. Digital Economics requires AF5644 and AF5645 as its remaining two Compulsory Subjects; AF5643 and AF5641 are Digital Economics Free Elective candidates. A compulsory subject cannot be counted again as a Free Elective.",
+          "appliesToTrackIds": [
+            "POLYU-TPG-008-APPLIED-ECONOMICS",
+            "POLYU-TPG-008-DIGITAL-ECONOMICS"
+          ],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21055-aem-dem",
+          "courses": [
+            {
+              "code": "AF5643",
+              "name": "Advanced Topics in Applied Economics",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-008-APPLIED-ECONOMICS",
+                "POLYU-TPG-008-DIGITAL-ECONOMICS"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5641",
+              "name": "Econometrics for Data Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-008-APPLIED-ECONOMICS",
+                "POLYU-TPG-008-DIGITAL-ECONOMICS"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5644",
+              "name": "Advanced Topics in Digital Economics",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-008-APPLIED-ECONOMICS",
+                "POLYU-TPG-008-DIGITAL-ECONOMICS"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5645",
+              "name": "Managerial Economics and Digital Transformation",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-008-APPLIED-ECONOMICS",
+                "POLYU-TPG-008-DIGITAL-ECONOMICS"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            }
+          ]
+        },
+        {
+          "id": "applied-economics-core-electives",
+          "name": "Applied Economics Core Elective Subjects",
+          "type": "track_elective",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Applied Economics students choose any two Core Elective Subjects for 6 credits.",
+          "appliesToTrackIds": [
+            "POLYU-TPG-008-APPLIED-ECONOMICS"
+          ],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21055-aem-dem",
+          "courses": [
+            {
+              "code": "AF5646",
+              "name": "Development Economics",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-008-APPLIED-ECONOMICS"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5634",
+              "name": "Economics of Sustainability",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-008-APPLIED-ECONOMICS"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5647",
+              "name": "Labor Economics",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-008-APPLIED-ECONOMICS"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5943",
+              "name": "Research Project in Applied Economics",
+              "credits": 3,
+              "courseKind": "project",
+              "appliesToTrackIds": [
+                "POLYU-TPG-008-APPLIED-ECONOMICS"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            }
+          ]
+        },
+        {
+          "id": "digital-economics-core-electives",
+          "name": "Digital Economics Core Elective Subjects",
+          "type": "track_elective",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Digital Economics students choose any two Core Elective Subjects for 6 credits.",
+          "appliesToTrackIds": [
+            "POLYU-TPG-008-DIGITAL-ECONOMICS"
+          ],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21055-aem-dem",
+          "courses": [
+            {
+              "code": "COMP5511",
+              "name": "Artificial Intelligence Concepts",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-008-DIGITAL-ECONOMICS"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5122",
+              "name": "Business Analytics in Accounting and Finance",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-008-DIGITAL-ECONOMICS"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5640",
+              "name": "Metaverse Economics and Ecosystems",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-008-DIGITAL-ECONOMICS"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5944",
+              "name": "Research Project in Digital Economics",
+              "credits": 3,
+              "courseKind": "project",
+              "appliesToTrackIds": [
+                "POLYU-TPG-008-DIGITAL-ECONOMICS"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            }
+          ]
+        },
+        {
+          "id": "shared-free-elective-subjects",
+          "name": "Shared Free Elective Subjects",
+          "type": "track_elective_pool",
+          "ruleText": "These five subjects are Free Elective candidates for both Streams. Each student completes four Free Elective Subjects in total, combining this pool with the two opposite-Stream candidates in the cross-role group.",
+          "appliesToTrackIds": [
+            "POLYU-TPG-008-APPLIED-ECONOMICS",
+            "POLYU-TPG-008-DIGITAL-ECONOMICS"
+          ],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21055-aem-dem",
+          "courses": [
+            {
+              "code": "COMP5112",
+              "name": "Data Structures and Database Systems",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-008-APPLIED-ECONOMICS",
+                "POLYU-TPG-008-DIGITAL-ECONOMICS"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5373",
+              "name": "ESG Investment and Green Finance",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-008-APPLIED-ECONOMICS",
+                "POLYU-TPG-008-DIGITAL-ECONOMICS"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5344",
+              "name": "Investments",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-008-APPLIED-ECONOMICS",
+                "POLYU-TPG-008-DIGITAL-ECONOMICS"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5364",
+              "name": "Quantitative Methods for Accounting and Finance",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-008-APPLIED-ECONOMICS",
+                "POLYU-TPG-008-DIGITAL-ECONOMICS"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5343",
+              "name": "Quantitative Methods for Finance",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-008-APPLIED-ECONOMICS",
+                "POLYU-TPG-008-DIGITAL-ECONOMICS"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/af/study/subject-syllabi/"
+            }
+          ]
+        },
+        {
+          "id": "stream-free-elective-requirement",
+          "name": "Stream Free Elective Requirement",
+          "type": "elective_rule",
+          "ruleText": "Complete four Free Elective Subjects for 12 credits. Applied Economics candidates are AF5644, AF5645 and all five shared Free Electives. Digital Economics candidates are AF5643, AF5641 and all five shared Free Electives. Cross-role and non-double-counting must be confirmed during manual audit review.",
+          "appliesToTrackIds": [
+            "POLYU-TPG-008-APPLIED-ECONOMICS",
+            "POLYU-TPG-008-DIGITAL-ECONOMICS"
+          ],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21055-aem-dem",
+          "courses": []
+        }
+      ],
       "academicYear": "2027-28",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21055-aem-dem",
-      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+      "courseStatusNote": "The official 2027 Programme page publishes two required 34-credit Streams, Applied Economics and Digital Economics. Each Stream requires six Compulsory Subjects, two Core Elective Subjects and four Free Elective Subjects. The current School of Accounting and Finance 2025/26 Taught Postgraduate Subject Syllabi catalogue publishes the exact AEM/DEM codes, titles and 3-credit values, plus the shared 1-credit AF5T21 subject. Four subjects change role between Stream compulsory and Free Elective pools, so they are stored once in a cross-role group to preserve Programme-level code uniqueness. The Programme page uses Investment while the current official AEM/DEM catalogue publishes AF5344 Investments; the catalogue title is retained. The separate 25-credit Postgraduate Diploma exit award is not modelled as an MSc completion path. Exact cross-role non-double-counting remains subject to manual audit review, and not all subjects are offered every year.",
+      "tracks": [
+        {
+          "id": "POLYU-TPG-008-APPLIED-ECONOMICS",
+          "code": "AEM",
+          "name": "Applied Economics",
+          "type": "Stream",
+          "creditsRequired": 34,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21055-aem-dem"
+        },
+        {
+          "id": "POLYU-TPG-008-DIGITAL-ECONOMICS",
+          "code": "DEM",
+          "name": "Digital Economics",
+          "type": "Stream",
+          "creditsRequired": 34,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21055-aem-dem"
+        }
+      ],
+      "trackSelectionOptional": false,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required"
     },
     {
       "id": "POLYU-TPG-009",
@@ -29072,15 +29549,16 @@
       "programmeCode": "48006",
       "name": "Aerospace Engineering",
       "faculty": "Department of Aeronautical & Aviation Engineering (AAE)",
-      "creditsRequired": null,
+      "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48006-amf-amp",
       "dataLevel": "programme",
       "courseGroups": [],
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48006-amf-amp",
-      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+      "courseStatusNote": "The official 2027 Programme page publishes the complete Aerospace Engineering title pools and two 31-credit MSc routes: seven taught subjects including all six Core Subjects plus a 9-credit Dissertation, or ten taught subjects including all six Core Subjects, together with the 1-credit EEE5T03 AIE requirement. The official 2025/26 Programme Requirement Document and current AAE Subject List publish exact codes, titles and 3-credit values for all twelve taught subjects and confirm EEE5T03. The Programme Requirement Document, current 2026/27 leaflet and current AAE Subject List identify the Dissertation only as a 9-credit dissertation and publish no subject code for it. The Programme remains blocked rather than inventing a Dissertation code or exposing only the coursework route while omitting an official completion path.",
+      "creditUnit": "credits"
     },
     {
       "id": "POLYU-TPG-010",
@@ -29088,15 +29566,16 @@
       "programmeCode": "48005",
       "name": "Aviation Engineering and Operations Management",
       "faculty": "Department of Aeronautical & Aviation Engineering (AAE)",
-      "creditsRequired": null,
+      "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48005-omf-omp",
       "dataLevel": "programme",
       "courseGroups": [],
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48005-omf-omp",
-      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+      "courseStatusNote": "The official 2027 Programme page publishes the complete Aviation Engineering and Operations Management pools and two 31-credit MSc routes: seven taught subjects including at least six Core Subjects plus a 9-credit Dissertation, or ten taught subjects including at least six Core Subjects, together with the 1-credit EEE5T03 AIE requirement. The official 2025/26 Programme Requirement Document and current AAE Subject List publish exact codes, titles and 3-credit values for all thirteen taught subjects, including ISE5022, and confirm EEE5T03. The Programme Requirement Document, current 2026/27 leaflet and current AAE Subject List identify the Dissertation only as a 9-credit dissertation and publish no subject code for it. The Programme remains blocked rather than inventing a Dissertation code or exposing only the coursework route while omitting an official completion path.",
+      "creditUnit": "credits"
     },
     {
       "id": "POLYU-TPG-011",
@@ -29104,15 +29583,16 @@
       "programmeCode": "48007",
       "name": "Low-altitude Economy",
       "faculty": "Department of Aeronautical & Aviation Engineering (AAE)",
-      "creditsRequired": null,
+      "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48007-lmf-lmp",
       "dataLevel": "programme",
       "courseGroups": [],
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48007-lmf-lmp",
-      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+      "courseStatusNote": "The official 2027 Programme page publishes the complete Low-altitude Economy pools and two 31-credit MSc routes: seven taught subjects including at least six Core Subjects plus a 9-credit Dissertation, or ten taught subjects including at least six Core Subjects, together with the 1-credit EEE5T03 AIE requirement. The official 2025/26 Programme Requirement Document publishes exact codes, titles and 3-credit values for all fifteen taught subjects, including the cross-department ISE and LSGI subjects, and confirms EEE5T03. The Programme Requirement Document, current 2026/27 leaflet and current AAE Subject List identify the Dissertation only as a 9-credit dissertation and publish no subject code for it. The Programme remains blocked rather than inventing a Dissertation code or exposing only the coursework route while omitting an official completion path.",
+      "creditUnit": "credits"
     },
     {
       "id": "POLYU-TPG-012",
@@ -29120,15 +29600,16 @@
       "programmeCode": "48008",
       "name": "Satellite Engineering",
       "faculty": "Department of Aeronautical & Aviation Engineering (AAE)",
-      "creditsRequired": null,
+      "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48008-smf-smp",
       "dataLevel": "programme",
       "courseGroups": [],
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48008-smf-smp",
-      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+      "courseStatusNote": "The official 2027 Programme page and current 2026/27 Satellite Engineering leaflet publish the complete twelve-subject Core and Elective pools and two 31-credit MSc routes: seven taught subjects including all six Core Subjects plus a 9-credit Dissertation, or ten taught subjects including all six Core Subjects, together with the 1-credit EEE5T03 AIE requirement. The current AAE Subject List publishes official Subject Description Forms for all six AAE-coded subjects, but the public Programme Requirement Documents page does not publish a document for Programme 48008 and the Programme sources do not state explicit per-course credits for the six LSGI subjects. They also identify the Dissertation only as a 9-credit dissertation and publish no subject code for it. The Programme remains blocked rather than deriving the missing LSGI credits from the 31-credit total, inventing a Dissertation code or exposing an incomplete course pool.",
+      "creditUnit": "credits"
     },
     {
       "id": "POLYU-TPG-013",
