@@ -431,6 +431,391 @@ module.exports = [
     ]
   },
   {
+    "id": "POLYU-TPG-089",
+    "courseGroups": [
+      {
+        "id": "programme-core",
+        "name": "Programme Core Subjects",
+        "type": "core",
+        "creditsRequired": 9,
+        "coursesRequired": 3,
+        "ruleText": "Complete all three Programme Core Subjects.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en",
+        "courses": [
+          {
+            "code": "COMP5112",
+            "name": "Data Structures and Database Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en"
+          },
+          {
+            "code": "COMP5241",
+            "name": "Software Engineering and Development",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en"
+          },
+          {
+            "code": "COMP5311",
+            "name": "Internet Infrastructure and Protocols",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en"
+          }
+        ]
+      },
+      {
+        "id": "stream-core-shared-electives",
+        "name": "Stream Core / Shared Elective Subjects",
+        "type": "track_core",
+        "creditsRequiredByTrackIds": {
+          "POLYU-TPG-089-NLP": 12,
+          "POLYU-TPG-089-VC": 12
+        },
+        "coursesRequiredByTrackIds": {
+          "POLYU-TPG-089-NLP": 4,
+          "POLYU-TPG-089-VC": 4
+        },
+        "ruleText": "Natural Language Processing requires COMP5511, COMP5152, COMP5423 and COMP5517. Visual Computing requires COMP5511, COMP5523, COMP5541 and one of COMP5422 or COMP5425. Without a Stream, these subjects remain part of the published elective pool.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en",
+        "courses": [
+          {
+            "code": "COMP5511",
+            "name": "Artificial Intelligence Concepts",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en",
+            "subjectGroups": [
+              "stream_core",
+              "elective"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-089-NLP",
+              "POLYU-TPG-089-VC"
+            ]
+          },
+          {
+            "code": "COMP5152",
+            "name": "Advanced Data Analytics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en",
+            "subjectGroups": [
+              "stream_core",
+              "elective"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-089-NLP"
+            ]
+          },
+          {
+            "code": "COMP5423",
+            "name": "Natural Language Processing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en",
+            "subjectGroups": [
+              "stream_core",
+              "elective"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-089-NLP"
+            ]
+          },
+          {
+            "code": "COMP5517",
+            "name": "Human Computer Interaction",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en",
+            "subjectGroups": [
+              "stream_core",
+              "elective"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-089-NLP"
+            ]
+          },
+          {
+            "code": "COMP5422",
+            "name": "Multimedia Computing, Systems and Applications",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en",
+            "subjectGroups": [
+              "stream_core",
+              "elective"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-089-VC"
+            ],
+            "conditionalRequirement": true
+          },
+          {
+            "code": "COMP5425",
+            "name": "Multimedia Coding and Networking",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en",
+            "subjectGroups": [
+              "stream_core",
+              "elective"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-089-VC"
+            ],
+            "conditionalRequirement": true
+          },
+          {
+            "code": "COMP5523",
+            "name": "Computer Vision and Image Processing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en",
+            "subjectGroups": [
+              "stream_core",
+              "elective"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-089-VC"
+            ]
+          },
+          {
+            "code": "COMP5541",
+            "name": "Machine Learning and Data Analytics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en",
+            "subjectGroups": [
+              "stream_core",
+              "elective"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-089-VC"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "elective-subjects",
+        "name": "Elective Subjects",
+        "type": "elective",
+        "ruleText": "Without a Stream, complete four electives with Dissertation, five with Project, or seven on the taught-subject path. With a Stream, complete no additional elective with Dissertation, one with Project, or three on the taught-subject path. Up to 6 credits of approved non-COMP electives may replace listed electives and require manual review.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en",
+        "courses": [
+          {
+            "code": "COMP5513",
+            "name": "Financial Computing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en"
+          },
+          {
+            "code": "COMP5355",
+            "name": "Cyber and Internet Security",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en"
+          },
+          {
+            "code": "COMP5521",
+            "name": "Distributed Ledger Technology, Cryptocurrency and E-Payment",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en"
+          },
+          {
+            "code": "COMP5532",
+            "name": "Digital Twins & Virtual Human",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en"
+          },
+          {
+            "code": "COMP5533",
+            "name": "Game Engine and Programming",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en"
+          },
+          {
+            "code": "COMP5434",
+            "name": "Big Data Computing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en"
+          },
+          {
+            "code": "COMP5542",
+            "name": "Optimization and Applications",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en"
+          },
+          {
+            "code": "COMP5327",
+            "name": "Wireless Networking and Mobile Computing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en"
+          },
+          {
+            "code": "COMP5221",
+            "name": "Software Project Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en"
+          },
+          {
+            "code": "COMP5424",
+            "name": "Extended Reality",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en"
+          },
+          {
+            "code": "COMP5322",
+            "name": "Internet Computing and Applications",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en"
+          },
+          {
+            "code": "COMP5573",
+            "name": "Theory and Practice of Video Game Design",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en"
+          },
+          {
+            "code": "COMP5574",
+            "name": "Computational Economics and Algorithms",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en"
+          },
+          {
+            "code": "COMP5575",
+            "name": "Advanced Techniques for High-Dimensional Data Management and Analytics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en"
+          },
+          {
+            "code": "COMP5576",
+            "name": "Modern Cryptography",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en"
+          },
+          {
+            "code": "COMP5577",
+            "name": "AI Security",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en"
+          },
+          {
+            "code": "COMP5581",
+            "name": "Algorithmic Graph Theory",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en"
+          },
+          {
+            "code": "COMP5582",
+            "name": "Artificial Intelligence of Things",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en"
+          },
+          {
+            "code": "COMP5584",
+            "name": "Large Language Models for Agents",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en"
+          },
+          {
+            "code": "COMP5923",
+            "name": "Independent Study",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en"
+          },
+          {
+            "code": "COMP5924",
+            "name": "IT Startup: From Idea to Business Plan",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en"
+          }
+        ]
+      },
+      {
+        "id": "project-option",
+        "name": "Project Option",
+        "type": "project",
+        "ruleText": "COMP5933 Project is a 6-credit alternative to the Dissertation and taught-subject-only paths.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en",
+        "courses": [
+          {
+            "code": "COMP5933",
+            "name": "Project",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en",
+            "courseKind": "project",
+            "conditionalRequirement": true
+          }
+        ]
+      },
+      {
+        "id": "dissertation-option",
+        "name": "Dissertation Option",
+        "type": "dissertation",
+        "ruleText": "COMP5940 Dissertation is a 9-credit alternative to the Project and taught-subject-only paths.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en",
+        "courses": [
+          {
+            "code": "COMP5940",
+            "name": "Dissertation",
+            "credits": 9,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en",
+            "courseKind": "dissertation",
+            "conditionalRequirement": true
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Academic Integrity and Ethics",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "For the 2026/27 intake onwards, complete DSAI5T09.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en",
+        "courses": [
+          {
+            "code": "DSAI5T09",
+            "name": "Academic Integrity and Ethics in Computer and Mathematical Sciences",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "POLYU-TPG-090",
     "courseGroups": [
       {

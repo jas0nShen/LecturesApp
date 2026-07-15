@@ -4081,13 +4081,34 @@ module.exports = {
       "faculty": "School of Computing and Data Science (SCDS)",
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61030-fit-pit",
-      "dataLevel": "programme",
+      "dataLevel": "structure",
       "academicYear": "2027-28",
-      "courseVerificationStatus": "blocked",
+      "courseVerificationStatus": "verified",
       "courseVerifiedAt": "2026-07-11",
-      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61030-fit-pit",
-      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
-      "courseCount": 0
+      "courseSourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en",
+      "courseStatusNote": "The official curriculum publishes optional Natural Language Processing and Visual Computing Streams plus Dissertation, Project and taught-subject completion paths. The Visual Computing Stream requires one of COMP5422 or COMP5425. Up to 6 credits of approved non-COMP electives may be used without a fixed code list. These mutually exclusive and approval-dependent paths require manual audit review, and no unlisted course is invented.",
+      "tracks": [
+        {
+          "id": "POLYU-TPG-089-NLP",
+          "code": "NLP",
+          "name": "Natural Language Processing",
+          "type": "Stream",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en"
+        },
+        {
+          "id": "POLYU-TPG-089-VC",
+          "code": "VC",
+          "name": "Visual Computing",
+          "type": "Stream",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/comp/study/taught-postgraduate-programme/mscit/curriculum/?sc_lang=en"
+        }
+      ],
+      "trackSelectionOptional": true,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 35
     },
     {
       "id": "POLYU-TPG-090",
@@ -4385,8 +4406,8 @@ module.exports = {
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
       "courseVerifiedAt": "2026-07-11",
-      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/53070-fts-pt",
-      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseSourceUrl": "https://www.polyu.edu.hk/sn/study/postgraduate-programmes/master-of-science-in-nursing/programme-structure/",
+      "courseStatusNote": "The official 2027 Programme page, School of Nursing programme pamphlet and 2025-intake Subject Offering Pattern publish the 31-credit completion paths, eight specialisms, and coded Core, Dissertation, Practicum, specialty and general elective subjects. They do not publish the AIE subject code or explicit per-course credits for the taught subjects. Those fields must not be inferred from another FHSS Programme or from the aggregate group totals.",
       "courseCount": 0
     },
     {

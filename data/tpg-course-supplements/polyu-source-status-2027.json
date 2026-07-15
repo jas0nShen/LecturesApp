@@ -515,12 +515,6 @@
       "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
     },
     {
-      "programmeId": "POLYU-TPG-089",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61030-fit-pit",
-      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
-    },
-    {
       "programmeId": "POLYU-TPG-091",
       "status": "blocked",
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61038",
@@ -583,8 +577,9 @@
     {
       "programmeId": "POLYU-TPG-104",
       "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/53070-fts-pt",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+      "sourceUrl": "https://www.polyu.edu.hk/sn/study/postgraduate-programmes/master-of-science-in-nursing/programme-structure/",
+      "statusNote": "The official 2027 Programme page, School of Nursing programme pamphlet and 2025-intake Subject Offering Pattern publish the 31-credit completion paths, eight specialisms, and coded Core, Dissertation, Practicum, specialty and general elective subjects. They do not publish the AIE subject code or explicit per-course credits for the taught subjects. Those fields must not be inferred from another FHSS Programme or from the aggregate group totals.",
+      "verifiedAt": "2026-07-15"
     }
   ]
 }

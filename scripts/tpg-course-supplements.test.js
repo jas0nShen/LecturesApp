@@ -24,6 +24,7 @@ const { buildSupplement: buildHkuEndodonticsSupplement } = require('./build-hku-
 const { buildSupplement: buildPolyuHospitalityTourismManagementSupplement } = require('./build-polyu-hospitality-tourism-management-supplement');
 const { buildSupplement: buildPolyuSustainableTechnologyCarbonNeutralitySupplement } = require('./build-polyu-sustainable-technology-carbon-neutrality-supplement');
 const { buildSupplement: buildPolyuBiopharmaceuticalDevelopmentSupplement } = require('./build-polyu-biopharmaceutical-development-supplements');
+const { IT_TRACKS, buildInformationTechnology } = require('./build-polyu-comp-supplements');
 
 function fixtureCatalogue() {
   return {
@@ -268,6 +269,39 @@ test('PolyU Biopharmaceutical Development variants preserve official campus and 
   ]);
   assert.equal(new Set(gba.courseGroups.flatMap((group) => group.courses).map((course) => course.code)).size, 11);
   assert.equal(gba.courseGroups[3].courses.find((course) => course.code === 'ABCT5115P').courseKind, 'internship');
+});
+
+test('PolyU Information Technology preserves optional Streams and all three completion paths', () => {
+  const programme = buildInformationTechnology();
+  const supplement = {
+    schemaVersion: 1,
+    schoolCode: 'POLYU',
+    academicYear: '2027-28',
+    verifiedAt: '2026-07-11',
+    programmes: [programme]
+  };
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'polyu-computing-2027.json');
+
+  const courses = programme.courseGroups.flatMap((group) => group.courses);
+  const byCode = Object.fromEntries(courses.map((course) => [course.code, course]));
+  const streamCore = programme.courseGroups.find((group) => group.id === 'stream-core-shared-electives');
+
+  assert.equal(programme.trackSelectionOptional, true);
+  assert.deepEqual(programme.tracks.map((track) => [track.id, track.name]), [
+    [IT_TRACKS.NLP, 'Natural Language Processing'],
+    [IT_TRACKS.VC, 'Visual Computing']
+  ]);
+  assert.equal(courses.length, 35);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 35);
+  assert.deepEqual(streamCore.creditsRequiredByTrackIds, { [IT_TRACKS.NLP]: 12, [IT_TRACKS.VC]: 12 });
+  assert.deepEqual(byCode.COMP5511.countsTowardTrackIds.sort(), [IT_TRACKS.NLP, IT_TRACKS.VC].sort());
+  assert.equal(byCode.COMP5422.conditionalRequirement, true);
+  assert.equal(byCode.COMP5425.conditionalRequirement, true);
+  assert.equal(byCode.COMP5933.credits, 6);
+  assert.equal(byCode.COMP5940.credits, 9);
+  assert.equal(byCode.DSAI5T09.credits, 1);
+  assert.match(programme.statusNote, /Up to 6 credits of approved non-COMP electives/);
 });
 
 test('HKU Engineering supplement preserves official programme pools and path-dependent rules', () => {
