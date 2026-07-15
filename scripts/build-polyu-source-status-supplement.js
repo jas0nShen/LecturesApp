@@ -53,6 +53,11 @@ const statusOverrides = {
     sourceUrl: 'https://www.polyu.edu.hk/gs/prospective-students/tpg/master-of-technology-entrepreneurship/curriculum/',
     statusNote: 'The official 2027 Programme page, Graduate School Curriculum page and 2027-28 Programme brochure consistently publish the 37-credit structure, current Technology Core, Entrepreneurship Core, Project, Elective and Academic Integrity and Ethics subject titles, and the explicit credit value of every subject. The three public sources do not publish any subject code, including the 6-credit Project Part 1: Research and the 15-credit Project Part 2: Start-up completed at an MTRI. The Programme remains blocked rather than inventing a new subject prefix or exposing name-only courses.'
   },
+  'POLYU-TPG-087': {
+    verifiedAt: '2026-07-15',
+    sourceUrl: 'https://www.polyu.edu.hk/fb/study/tpg-landing/tpg/bm/resources/',
+    statusNote: 'The official 2027 Programme page and 2027-28 MSc Business Management brochure publish the 43-credit structure, current subject titles, the 6-credit International Experience requirement and the two-of-eleven Elective rule. The public AF, LMS and MM Subject Syllabi catalogues recover many matching codes and 3-credit values, including BM-labelled AF entries, but they do not publish a uniquely identified code for International Experience. The MM catalogue also exposes two English AIE codes in one Subject Description and two different subjects named Marketing Management, so the current Programme-specific codes cannot be selected safely by title alone. The public Resources page links the 2025/26 Programme Requirement Document for Programme code 02022, but the document redirects to PolyU SSO. The Programme remains blocked rather than exposing an incomplete code pool or choosing among same-name subjects without the Programme Requirement Document.'
+  },
   'POLYU-TPG-076': {
     verifiedAt: '2026-07-15',
     sourceUrl: 'https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/',

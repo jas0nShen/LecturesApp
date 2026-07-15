@@ -81,6 +81,23 @@ test('PolyU Technology Entrepreneurship remains blocked when all public official
   assert.match(programme.courseStatusNote, /rather than inventing/);
 });
 
+test('PolyU Business Management remains blocked when its Programme Requirement Document requires SSO', () => {
+  const programme = tpgService.getProgramme('POLYU-TPG-087');
+
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal((programme.courseGroups || []).length, 0);
+  assert.equal(
+    programme.courseSourceUrl,
+    'https://www.polyu.edu.hk/fb/study/tpg-landing/tpg/bm/resources/'
+  );
+  assert.match(programme.courseStatusNote, /43-credit structure/);
+  assert.match(programme.courseStatusNote, /International Experience/);
+  assert.match(programme.courseStatusNote, /two English AIE codes/);
+  assert.match(programme.courseStatusNote, /two different subjects named Marketing Management/);
+  assert.match(programme.courseStatusNote, /redirects to PolyU SSO/);
+  assert.match(programme.courseStatusNote, /rather than exposing an incomplete code pool/);
+});
+
 test('HKUST intake-announced electives retain official credit requirements without invented courses', () => {
   const financeTechnology = tpgService.getProgramme('HKUST-TPG-008');
   const globalFinance = tpgService.getProgramme('HKUST-TPG-012');

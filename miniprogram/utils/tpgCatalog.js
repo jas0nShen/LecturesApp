@@ -4105,8 +4105,8 @@ module.exports = {
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
       "courseVerifiedAt": "2026-07-11",
-      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/02022",
-      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseSourceUrl": "https://www.polyu.edu.hk/fb/study/tpg-landing/tpg/bm/resources/",
+      "courseStatusNote": "The official 2027 Programme page and 2027-28 MSc Business Management brochure publish the 43-credit structure, current subject titles, the 6-credit International Experience requirement and the two-of-eleven Elective rule. The public AF, LMS and MM Subject Syllabi catalogues recover many matching codes and 3-credit values, including BM-labelled AF entries, but they do not publish a uniquely identified code for International Experience. The MM catalogue also exposes two English AIE codes in one Subject Description and two different subjects named Marketing Management, so the current Programme-specific codes cannot be selected safely by title alone. The public Resources page links the 2025/26 Programme Requirement Document for Programme code 02022, but the document redirects to PolyU SSO. The Programme remains blocked rather than exposing an incomplete code pool or choosing among same-name subjects without the Programme Requirement Document.",
       "courseCount": 0
     },
     {
