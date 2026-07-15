@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "POLYU",
+  "academicYear": "2027-28",
+  "verifiedAt": "2026-07-15",
+  "programmes": [
+    {
+      "programmeId": "POLYU-TPG-013",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 31-credit structure has two mutually exclusive completion paths: ABCT5039 plus at least 6 elective credits, or ABCT5040 plus at least 3 elective credits. The app must not infer completion from the combined visible project and elective pools.",
+      "courseGroups": [
+        {
+          "id": "compulsory-subjects",
+          "name": "Compulsory Subjects",
+          "type": "core",
+          "creditsRequired": 22,
+          "coursesRequired": 7,
+          "ruleText": "Complete all seven Compulsory Subjects for 22 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt",
+          "courses": [
+            {
+              "code": "ABCT5031",
+              "name": "Ecological Approaches for Carbon Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt"
+            },
+            {
+              "code": "ABCT5032",
+              "name": "Materials Science for Carbon Neutrality Applications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt"
+            },
+            {
+              "code": "ABCT5033",
+              "name": "Renewable Energies and Technologies I: Hydrogen and Biofuels",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt"
+            },
+            {
+              "code": "ABCT5042",
+              "name": "Quantitation and Reporting of Greenhouse Gases and Carbon Footprint and Climate Action Methodologies",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt"
+            },
+            {
+              "code": "ABCT5T01",
+              "name": "Academic Integrity and Ethics in Science",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt"
+            },
+            {
+              "code": "AF5130",
+              "name": "Sustainable Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt"
+            },
+            {
+              "code": "AP5021",
+              "name": "Renewable Energies and Technologies II: Energy Conversion and Storage",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt"
+            }
+          ]
+        },
+        {
+          "id": "project-options",
+          "name": "Project or Research Project Option",
+          "type": "project",
+          "coursesRequired": 1,
+          "ruleText": "Choose either ABCT5039 Project (3 credits) with at least 6 credits from the Elective Subject pool, or ABCT5040 Research Project (6 credits) with at least 3 credits from the Elective Subject pool.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt",
+          "courses": [
+            {
+              "code": "ABCT5039",
+              "name": "Project",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt",
+              "courseKind": "project",
+              "conditionalRequirement": true
+            },
+            {
+              "code": "ABCT5040",
+              "name": "Research Project",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt",
+              "courseKind": "research_project",
+              "conditionalRequirement": true
+            }
+          ]
+        },
+        {
+          "id": "elective-subjects",
+          "name": "Elective Subjects",
+          "type": "elective",
+          "ruleText": "Complete at least 6 elective credits with ABCT5039, or at least 3 elective credits with ABCT5040. This conditional requirement must be checked together with the selected project path.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt",
+          "courses": [
+            {
+              "code": "ABCT5037",
+              "name": "Green Chemistry for Sustainable Products Development",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt"
+            },
+            {
+              "code": "ABCT5038",
+              "name": "Expert Seminars: Special Topics in Sustainable Science and Technology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt"
+            },
+            {
+              "code": "ABCT5041",
+              "name": "Sustainable Chemistry for Circular Economy",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt"
+            },
+            {
+              "code": "AMA569",
+              "name": "Stochastic Models for Carbon Pricing and Trading",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt"
+            },
+            {
+              "code": "AP5022",
+              "name": "Energy Efficient Lighting and Control",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt"
+            },
+            {
+              "code": "BSE542",
+              "name": "Energy Efficient Buildings",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt"
+            },
+            {
+              "code": "EE546",
+              "name": "Electric Energy Storage and New Energy Sources for Electric Vehicles",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -22,6 +22,8 @@ const { buildSupplement: buildHkuBuddhistStudiesSupplement } = require('./build-
 const { buildSupplement: buildHkuCreativeWritingMfaSupplement } = require('./build-hku-creative-writing-mfa-supplement');
 const { buildSupplement: buildHkuEndodonticsSupplement } = require('./build-hku-endodontics-supplement');
 const { buildSupplement: buildPolyuHospitalityTourismManagementSupplement } = require('./build-polyu-hospitality-tourism-management-supplement');
+const { buildSupplement: buildPolyuSustainableTechnologyCarbonNeutralitySupplement } = require('./build-polyu-sustainable-technology-carbon-neutrality-supplement');
+const { buildSupplement: buildPolyuBiopharmaceuticalDevelopmentSupplement } = require('./build-polyu-biopharmaceutical-development-supplements');
 
 function fixtureCatalogue() {
   return {
@@ -220,6 +222,52 @@ test('TPG coverage reports courses pending official approval separately', () => 
   const row = inspectProgramme(imported.programmes[0], new Date('2026-07-11'));
   assert.deepEqual(row.issues, ['course:TST5001:pending-approval', 'manual-rule-review']);
   assert.equal(buildCoverageReport(imported.programmes).complete, 0);
+});
+
+test('PolyU Sustainable Technology for Carbon Neutrality preserves both official project paths', () => {
+  const supplement = buildPolyuSustainableTechnologyCarbonNeutralitySupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'polyu-sustainable-technology-carbon-neutrality-2027.json');
+  const programme = supplement.programmes[0];
+  const [compulsory, projects, electives] = programme.courseGroups;
+
+  assert.equal(programme.programmeId, 'POLYU-TPG-013');
+  assert.equal(programme.creditsRequired, 31);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.deepEqual([compulsory.creditsRequired, compulsory.coursesRequired, compulsory.courses.length], [22, 7, 7]);
+  assert.deepEqual(projects.courses.map((course) => [course.code, course.credits, course.courseKind]), [
+    ['ABCT5039', 3, 'project'],
+    ['ABCT5040', 6, 'research_project']
+  ]);
+  assert.equal(electives.courses.length, 7);
+  assert.equal(new Set(programme.courseGroups.flatMap((group) => group.courses).map((course) => course.code)).size, 16);
+  assert.match(projects.ruleText, /ABCT5039.*at least 6 credits.*ABCT5040.*at least 3 credits/);
+  assert.match(programme.statusNote, /must not infer completion/);
+});
+
+test('PolyU Biopharmaceutical Development variants preserve official campus and completion choices', () => {
+  const supplement = buildPolyuBiopharmaceuticalDevelopmentSupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'polyu-biopharmaceutical-development-2027.json');
+  const byId = Object.fromEntries(supplement.programmes.map((programme) => [programme.programmeId, programme]));
+
+  const standard = byId['POLYU-TPG-014'];
+  assert.equal(standard.creditsRequired, 31);
+  assert.deepEqual(standard.courseGroups.map((group) => [group.creditsRequired, group.coursesRequired, group.courses.length]), [
+    [21, 7, 7], [3, 1, 2], [6, 1, 2], [1, 1, 1]
+  ]);
+  assert.deepEqual(standard.courseGroups[2].courses.map((course) => [course.code, course.credits, course.courseKind]), [
+    ['ABCT5110', 6, 'internship'], ['ABCT5113', 6, 'research_project']
+  ]);
+  assert.equal(new Set(standard.courseGroups.flatMap((group) => group.courses).map((course) => course.code)).size, 12);
+
+  const gba = byId['POLYU-TPG-015'];
+  assert.equal(gba.creditsRequired, 31);
+  assert.deepEqual(gba.courseGroups.map((group) => [group.creditsRequired, group.coursesRequired, group.courses.length]), [
+    [18, 6, 6], [3, 1, 2], [1, 1, 1], [9, 2, 2]
+  ]);
+  assert.equal(new Set(gba.courseGroups.flatMap((group) => group.courses).map((course) => course.code)).size, 11);
+  assert.equal(gba.courseGroups[3].courses.find((course) => course.code === 'ABCT5115P').courseKind, 'internship');
 });
 
 test('HKU Engineering supplement preserves official programme pools and path-dependent rules', () => {

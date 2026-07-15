@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "POLYU",
+  "academicYear": "2027-28",
+  "verifiedAt": "2026-07-15",
+  "programmes": [
+    {
+      "programmeId": "POLYU-TPG-014",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 31-credit structure requires one subject from each of two mutually exclusive pools. The AIE course code is verified from the official GBA variant page for the same 2027-28 subject area. Pool completion must remain subject to manual audit review.",
+      "courseGroups": [
+        {
+          "id": "core-subjects",
+          "name": "Core Subjects",
+          "type": "core",
+          "creditsRequired": 21,
+          "coursesRequired": 7,
+          "ruleText": "Complete all seven 3-credit Core Subjects.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt",
+          "courses": [
+            {
+              "code": "ABCT5101",
+              "name": "Modern Approaches in Biopharmaceutical Development",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt"
+            },
+            {
+              "code": "ABCT5102",
+              "name": "Pharmacology and Toxicology in Biotherapeutics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt"
+            },
+            {
+              "code": "ABCT5103",
+              "name": "Intellectual Property Strategy for Biotech Entrepreneurship",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt"
+            },
+            {
+              "code": "ABCT5104",
+              "name": "Regulatory Science for Biotech Products",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt"
+            },
+            {
+              "code": "ABCT5105",
+              "name": "Ethics and Management in Life Sciences",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt"
+            },
+            {
+              "code": "ABCT5106",
+              "name": "Technology Platforms in Drug Discovery",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt"
+            },
+            {
+              "code": "ABCT5107",
+              "name": "Advanced Therapeutic Products",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt"
+            }
+          ]
+        },
+        {
+          "id": "financing-or-entrepreneurship",
+          "name": "Financing or Entrepreneurship Pool",
+          "type": "elective",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Choose either ABCT5108 or ABCT5109.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt",
+          "courses": [
+            {
+              "code": "ABCT5108",
+              "name": "Investment Financing and Risk Management in Biobusiness",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt",
+              "conditionalRequirement": true
+            },
+            {
+              "code": "ABCT5109",
+              "name": "Entrepreneurship- From Lab to Launch",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt",
+              "conditionalRequirement": true
+            }
+          ]
+        },
+        {
+          "id": "attachment-or-research-project",
+          "name": "Industrial Attachment or Research Project Pool",
+          "type": "project",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Choose either ABCT5110 Industrial Attachment or ABCT5113 Research Project.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt",
+          "courses": [
+            {
+              "code": "ABCT5110",
+              "name": "Industrial Attachment",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt",
+              "courseKind": "internship",
+              "conditionalRequirement": true
+            },
+            {
+              "code": "ABCT5113",
+              "name": "Research Project",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt",
+              "courseKind": "research_project",
+              "conditionalRequirement": true
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Academic Integrity and Ethics",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete ABCT5T01 Academic Integrity and Ethics in Science. The standard page names the subject without its code; the code and credit are published on the official GBA variant page.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt",
+          "courses": [
+            {
+              "code": "ABCT5T01",
+              "name": "Academic Integrity and Ethics in Science",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-015",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official page separates 22 credits completed at the PolyU Hong Kong campus from 9 credits completed at PolyU-ZSRI. ABCT5108 and ABCT5109 form a one-subject choice and must remain subject to manual audit review.",
+      "courseGroups": [
+        {
+          "id": "hong-kong-core-subjects",
+          "name": "Hong Kong Campus Core Subjects",
+          "type": "core",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Complete the six listed 3-credit Core Subjects at the PolyU Hong Kong campus.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063",
+          "courses": [
+            {
+              "code": "ABCT5101",
+              "name": "Modern Approaches in Biopharmaceutical Development",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063"
+            },
+            {
+              "code": "ABCT5103",
+              "name": "Intellectual Property Strategy for Biotech Entrepreneurship",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063"
+            },
+            {
+              "code": "ABCT5104",
+              "name": "Regulatory Science for Biotech Products",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063"
+            },
+            {
+              "code": "ABCT5105",
+              "name": "Ethics and Management in Life Sciences",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063"
+            },
+            {
+              "code": "ABCT5106",
+              "name": "Technology Platforms in Drug Discovery",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063"
+            },
+            {
+              "code": "ABCT5107",
+              "name": "Advanced Therapeutic Products",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063"
+            }
+          ]
+        },
+        {
+          "id": "financing-or-entrepreneurship",
+          "name": "Financing or Entrepreneurship Pool",
+          "type": "elective",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Choose either ABCT5108 or ABCT5109 at the PolyU Hong Kong campus.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063",
+          "courses": [
+            {
+              "code": "ABCT5108",
+              "name": "Investment Financing and Risk Management in Biobusiness",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063",
+              "conditionalRequirement": true
+            },
+            {
+              "code": "ABCT5109",
+              "name": "Entrepreneurship- From Lab to Launch",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063",
+              "conditionalRequirement": true
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Academic Integrity and Ethics",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete ABCT5T01 Academic Integrity and Ethics in Science.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063",
+          "courses": [
+            {
+              "code": "ABCT5T01",
+              "name": "Academic Integrity and Ethics in Science",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063"
+            }
+          ]
+        },
+        {
+          "id": "polyu-zsri-subjects",
+          "name": "PolyU-ZSRI Subjects",
+          "type": "core",
+          "creditsRequired": 9,
+          "coursesRequired": 2,
+          "ruleText": "Complete ABCT5115P and ABCT5102P at PolyU-ZSRI; the official page states that these subjects are taught in Putonghua.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063",
+          "courses": [
+            {
+              "code": "ABCT5115P",
+              "name": "Industrial Attachment (GBA)",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063",
+              "courseKind": "internship"
+            },
+            {
+              "code": "ABCT5102P",
+              "name": "Pharmacology and Toxicology in Biotherapeutics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

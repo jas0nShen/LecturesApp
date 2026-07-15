@@ -9,8 +9,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 228);
-  assert.equal(coverage.courseCount, 5547);
+  assert.equal(coverage.programmeWithCoursesCount, 231);
+  assert.equal(coverage.courseCount, 5586);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -29,8 +29,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 228);
-  assert.equal(rows.length, 228);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 231);
+  assert.equal(rows.length, 231);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
@@ -4710,6 +4710,45 @@ test('PolyU Hospitality and Tourism Management filters six official Award Paths 
   assert.deepEqual(tpgService.getProgrammeCourse(programme.id, 'HTM541', tracks.LEM.id).countsTowardTrackIds, [tracks.LEM.id]);
   assert.equal(tpgService.getProgrammeCourse(programme.id, 'HTM5003', tracks.IWM.id).credits, 0);
   assert.match(programme.courseStatusNote, /must not infer completion/);
+});
+
+test('PolyU Sustainable Technology for Carbon Neutrality keeps project paths mutually reviewable', () => {
+  const programme = tpgService.getProgramme('POLYU-TPG-013');
+  const courses = tpgService.flattenCourses(programme);
+  const [compulsory, projects, electives] = programme.courseGroups;
+
+  assert.equal(programme.creditsRequired, 31);
+  assert.equal(programme.academicYear, '2027-28');
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.equal(tpgService.getStatus(programme).isComplete, true);
+  assert.equal(tpgService.getStatus(programme).courseCount, 16);
+  assert.equal(courses.length, 16);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 16);
+  assert.deepEqual([compulsory.creditsRequired, compulsory.coursesRequired, compulsory.courses.length], [22, 7, 7]);
+  assert.deepEqual(projects.courses.map((course) => [course.code, course.credits]), [['ABCT5039', 3], ['ABCT5040', 6]]);
+  assert.equal(electives.courses.length, 7);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'ABCT5042').credits, 6);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'ABCT5040').courseKind, 'research_project');
+  assert.match(programme.courseStatusNote, /must not infer completion/);
+});
+
+test('PolyU Biopharmaceutical Development variants keep official alternatives and campus split', () => {
+  const standard = tpgService.getProgramme('POLYU-TPG-014');
+  const gba = tpgService.getProgramme('POLYU-TPG-015');
+
+  assert.equal(standard.creditsRequired, 31);
+  assert.equal(tpgService.getStatus(standard).courseCount, 12);
+  assert.equal(tpgService.getProgrammeCourse(standard.id, 'ABCT5113').courseKind, 'research_project');
+  assert.match(standard.courseGroups[2].ruleText, /ABCT5110.*ABCT5113/);
+  assert.match(standard.courseStatusNote, /manual audit review/);
+
+  assert.equal(gba.name, 'Biopharmaceutical Development and Commercialization (internship in Greater Bay Area via PolyU-Zhongshan Technology and Innovation Research Institute)');
+  assert.equal(gba.creditsRequired, 31);
+  assert.equal(tpgService.getStatus(gba).courseCount, 11);
+  assert.deepEqual(gba.courseGroups[3].courses.map((course) => [course.code, course.credits]), [['ABCT5115P', 6], ['ABCT5102P', 3]]);
+  assert.equal(tpgService.getProgrammeCourse(gba.id, 'ABCT5115P').courseKind, 'internship');
+  assert.match(gba.courseGroups[3].ruleText, /taught in Putonghua/);
 });
 
 test('TPG programme search matches names, codes, faculties and course text', () => {
