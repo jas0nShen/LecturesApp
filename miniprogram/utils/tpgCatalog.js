@@ -3805,17 +3805,46 @@ module.exports = {
       "id": "POLYU-TPG-072",
       "universityCode": "POLYU",
       "programmeCode": "51069",
-      "name": "for admission in 2027/28. For programme details, please visit the RS homepage.)",
+      "name": "Advanced Occupational Therapy",
       "faculty": "Department of Rehabilitation Sciences (RS)",
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp",
-      "dataLevel": "programme",
+      "dataLevel": "structure",
       "academicYear": "2027-28",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp",
-      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
-      "courseCount": 0
+      "courseStatusNote": "The official 31-credit structure publishes the fixed Compulsory, Project and three Specialism Core paths with codes and credits. Generic students choose six electives, while Specialism students choose three, from the Department of Rehabilitation Sciences postgraduate subject list available at registration. The examples on the official page do not form a fixed elective list and do not publish per-course credits, so the elective pool remains empty and requires manual audit review; no elective credit is inferred.",
+      "tracks": [
+        {
+          "id": "POLYU-TPG-072-NEUROLOGY",
+          "code": "ON",
+          "name": "Neurology",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp"
+        },
+        {
+          "id": "POLYU-TPG-072-MENTAL-HEALTH",
+          "code": "MH",
+          "name": "Mental Health",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp"
+        },
+        {
+          "id": "POLYU-TPG-072-MUSCULOSKELETAL",
+          "code": "MS",
+          "name": "Musculoskeletal",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp"
+        }
+      ],
+      "trackSelectionOptional": true,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 12
     },
     {
       "id": "POLYU-TPG-073",
@@ -3825,13 +3854,26 @@ module.exports = {
       "faculty": "Department of Rehabilitation Sciences (RS)",
       "creditsRequired": 31,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp",
-      "dataLevel": "programme",
+      "dataLevel": "structure",
       "academicYear": "2027-28",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp",
-      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
-      "courseCount": 0
+      "courseStatusNote": "The official 31-credit structure publishes the fixed Common, Project and Developmental Disabilities Specialism subjects with codes and credits. Generic students choose six electives, while Specialism students choose three, from the Department of Rehabilitation Sciences postgraduate subject list available at registration. Because the official Programme page does not publish a fixed coded elective list, the elective pool remains empty and requires manual audit review; no elective is invented.",
+      "tracks": [
+        {
+          "id": "POLYU-TPG-073-DD",
+          "code": "DD",
+          "name": "Rehabilitation of People with Developmental Disabilities",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp"
+        }
+      ],
+      "trackSelectionOptional": true,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 7
     },
     {
       "id": "POLYU-TPG-074",
@@ -3845,8 +3887,8 @@ module.exports = {
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
       "courseVerifiedAt": "2026-07-11",
-      "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp",
-      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseSourceUrl": "https://www.polyu.edu.hk/rs/study/taught-postgraduate-studies/msc-programme-2026-or-after/msc-in-advanced-physiotherapy/curriculum/",
+      "courseStatusNote": "The official 2027 Programme page, the current Department of Rehabilitation Sciences Curriculum page, and the July 2026 v14 Programme leaflet publish the 31-credit paths, three Specialisms, fixed Core and Clinical Practice subject codes, and per-course credits. All three sources label the compulsory 6-credit component only as Project Study and do not publish its subject code. RS567 must not be inferred from another Rehabilitation Sciences Programme.",
       "courseCount": 0
     },
     {

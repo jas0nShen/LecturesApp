@@ -8,6 +8,8 @@ const verifiedIds = new Set([
   'POLYU-TPG-013',
   'POLYU-TPG-014',
   'POLYU-TPG-015',
+  'POLYU-TPG-072',
+  'POLYU-TPG-073',
   'POLYU-TPG-089',
   'POLYU-TPG-090',
   'POLYU-TPG-092',
@@ -16,6 +18,11 @@ const verifiedIds = new Set([
   'POLYU-TPG-105'
 ]);
 const statusOverrides = {
+  'POLYU-TPG-074': {
+    verifiedAt: '2026-07-15',
+    sourceUrl: 'https://www.polyu.edu.hk/rs/study/taught-postgraduate-studies/msc-programme-2026-or-after/msc-in-advanced-physiotherapy/curriculum/',
+    statusNote: 'The official 2027 Programme page, the current Department of Rehabilitation Sciences Curriculum page, and the July 2026 v14 Programme leaflet publish the 31-credit paths, three Specialisms, fixed Core and Clinical Practice subject codes, and per-course credits. All three sources label the compulsory 6-credit component only as Project Study and do not publish its subject code. RS567 must not be inferred from another Rehabilitation Sciences Programme.'
+  },
   'POLYU-TPG-104': {
     verifiedAt: '2026-07-15',
     sourceUrl: 'https://www.polyu.edu.hk/sn/study/postgraduate-programmes/master-of-science-in-nursing/programme-structure/',

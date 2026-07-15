@@ -413,22 +413,11 @@
       "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
     },
     {
-      "programmeId": "POLYU-TPG-072",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp",
-      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-073",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp",
-      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
-    },
-    {
       "programmeId": "POLYU-TPG-074",
       "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp",
-      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+      "sourceUrl": "https://www.polyu.edu.hk/rs/study/taught-postgraduate-studies/msc-programme-2026-or-after/msc-in-advanced-physiotherapy/curriculum/",
+      "statusNote": "The official 2027 Programme page, the current Department of Rehabilitation Sciences Curriculum page, and the July 2026 v14 Programme leaflet publish the 31-credit paths, three Specialisms, fixed Core and Clinical Practice subject codes, and per-course credits. All three sources label the compulsory 6-credit component only as Project Study and do not publish its subject code. RS567 must not be inferred from another Rehabilitation Sciences Programme.",
+      "verifiedAt": "2026-07-15"
     },
     {
       "programmeId": "POLYU-TPG-075",

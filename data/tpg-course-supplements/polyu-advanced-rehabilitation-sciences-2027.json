@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "POLYU",
+  "academicYear": "2027-28",
+  "verifiedAt": "2026-07-15",
+  "programmes": [
+    {
+      "programmeId": "POLYU-TPG-073",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 31-credit structure publishes the fixed Common, Project and Developmental Disabilities Specialism subjects with codes and credits. Generic students choose six electives, while Specialism students choose three, from the Department of Rehabilitation Sciences postgraduate subject list available at registration. Because the official Programme page does not publish a fixed coded elective list, the elective pool remains empty and requires manual audit review; no elective is invented.",
+      "trackSelectionOptional": true,
+      "tracks": [
+        {
+          "id": "POLYU-TPG-073-DD",
+          "code": "DD",
+          "name": "Rehabilitation of People with Developmental Disabilities",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp"
+        }
+      ],
+      "courseGroups": [
+        {
+          "id": "compulsory-subjects",
+          "name": "Compulsory Subjects",
+          "type": "core",
+          "creditsRequired": 7,
+          "coursesRequired": 3,
+          "ruleText": "Complete all three Compulsory Subjects for 7 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp",
+          "courses": [
+            {
+              "code": "RS517",
+              "name": "Research Methods and Data Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp"
+            },
+            {
+              "code": "RS5224",
+              "name": "Research Seminar in Rehabilitation Sciences",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp"
+            },
+            {
+              "code": "HTI5T04",
+              "name": "Academic Integrity and Ethics (Health and Social Sciences)",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp"
+            }
+          ]
+        },
+        {
+          "id": "project-study",
+          "name": "Project Study",
+          "type": "project",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Complete RS567 Project Study for 6 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp",
+          "courses": [
+            {
+              "code": "RS567",
+              "name": "Project Study",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp",
+              "courseKind": "project"
+            }
+          ]
+        },
+        {
+          "id": "developmental-disabilities-core",
+          "name": "Core Subjects for the Developmental Disabilities Specialism",
+          "type": "track_core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Students in the Developmental Disabilities Specialism complete all three Core Subjects for 9 credits.",
+          "appliesToTrackIds": [
+            "POLYU-TPG-073-DD"
+          ],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp",
+          "courses": [
+            {
+              "code": "RS594",
+              "name": "Recent Advances in Rehabilitation for People with Developmental Disabilities",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-073-DD"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp"
+            },
+            {
+              "code": "RS593",
+              "name": "Sensory and Motor Intervention for People with Developmental Disabilities",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-073-DD"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp"
+            },
+            {
+              "code": "RS537",
+              "name": "Psychosocial Rehabilitation for People with Developmental Disabilities",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-073-DD"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp"
+            }
+          ]
+        },
+        {
+          "id": "department-electives",
+          "name": "Department of Rehabilitation Sciences Elective Subjects",
+          "type": "elective",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "creditsRequiredByTrackIds": {
+            "POLYU-TPG-073-DD": 9
+          },
+          "coursesRequiredByTrackIds": {
+            "POLYU-TPG-073-DD": 3
+          },
+          "ruleText": "Generic students choose six eligible Department postgraduate subjects for 18 credits. Developmental Disabilities Specialism students choose three for 9 credits. The official page does not publish a fixed coded elective list; confirm the list and prerequisites at registration.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp",
+          "courses": []
+        }
+      ]
+    }
+  ]
+}

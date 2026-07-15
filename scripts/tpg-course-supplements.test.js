@@ -24,6 +24,8 @@ const { buildSupplement: buildHkuEndodonticsSupplement } = require('./build-hku-
 const { buildSupplement: buildPolyuHospitalityTourismManagementSupplement } = require('./build-polyu-hospitality-tourism-management-supplement');
 const { buildSupplement: buildPolyuSustainableTechnologyCarbonNeutralitySupplement } = require('./build-polyu-sustainable-technology-carbon-neutrality-supplement');
 const { buildSupplement: buildPolyuBiopharmaceuticalDevelopmentSupplement } = require('./build-polyu-biopharmaceutical-development-supplements');
+const { TRACKS: POLYU_OT_TRACKS, buildSupplement: buildPolyuAdvancedOccupationalTherapySupplement } = require('./build-polyu-advanced-occupational-therapy-supplement');
+const { SPECIALISM_ID: POLYU_REHAB_SPECIALISM_ID, buildSupplement: buildPolyuAdvancedRehabilitationSciencesSupplement } = require('./build-polyu-advanced-rehabilitation-sciences-supplement');
 const { IT_TRACKS, buildInformationTechnology } = require('./build-polyu-comp-supplements');
 
 function fixtureCatalogue() {
@@ -128,6 +130,21 @@ test('TPG course supplements preserve directory metadata while enriching stable 
   assert.equal(imported.programmes[0].tracks[0].name, 'Current A');
   assert.equal(imported.programmes[0].tracks[0].sourceStatus, 'verified');
   assert.deepEqual(applySupplements(imported, [{ file: 'fixture.json', value: supplement }]), imported);
+});
+
+test('TPG course supplements can correct an official Programme name without changing its stable ID', () => {
+  const catalogue = fixtureCatalogue();
+  catalogue.programmes[0].name = 'Broken directory label';
+  const supplement = fixtureSupplement();
+  supplement.programmes[0].programmeName = 'Official Programme Name';
+
+  validateSupplement(supplement, catalogue, 'fixture.json');
+  const imported = applySupplements(catalogue, [{ file: 'fixture.json', value: supplement }]);
+  assert.equal(imported.programmes[0].id, 'TEST-TPG-001');
+  assert.equal(imported.programmes[0].name, 'Official Programme Name');
+
+  supplement.programmes[0].programmeName = '   ';
+  assert.throws(() => validateSupplement(supplement, catalogue, 'fixture.json'), /invalid programmeName/);
 });
 
 test('TPG course supplements reject unknown Tracks and missing official credits', () => {
@@ -269,6 +286,66 @@ test('PolyU Biopharmaceutical Development variants preserve official campus and 
   ]);
   assert.equal(new Set(gba.courseGroups.flatMap((group) => group.courses).map((course) => course.code)).size, 11);
   assert.equal(gba.courseGroups[3].courses.find((course) => course.code === 'ABCT5115P').courseKind, 'internship');
+});
+
+test('PolyU Advanced Occupational Therapy preserves three Specialism paths and corrects its directory label', () => {
+  const supplement = buildPolyuAdvancedOccupationalTherapySupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'polyu-advanced-occupational-therapy-2027.json');
+  const programme = supplement.programmes[0];
+  const [compulsory, project, specialism, electives] = programme.courseGroups;
+
+  assert.equal(programme.programmeId, 'POLYU-TPG-072');
+  assert.equal(programme.programmeName, 'Advanced Occupational Therapy');
+  assert.equal(programme.creditsRequired, 31);
+  assert.equal(programme.trackSelectionOptional, true);
+  assert.deepEqual(programme.tracks.map((track) => [track.id, track.name]), [
+    [POLYU_OT_TRACKS.NEUROLOGY, 'Neurology'],
+    [POLYU_OT_TRACKS.MENTAL_HEALTH, 'Mental Health'],
+    [POLYU_OT_TRACKS.MUSCULOSKELETAL, 'Musculoskeletal']
+  ]);
+  assert.deepEqual([compulsory.creditsRequired, project.creditsRequired], [7, 6]);
+  assert.deepEqual([compulsory.courses.length, project.courses.length, specialism.courses.length], [3, 1, 8]);
+  assert.deepEqual(specialism.creditsRequiredByTrackIds, {
+    [POLYU_OT_TRACKS.NEUROLOGY]: 9,
+    [POLYU_OT_TRACKS.MENTAL_HEALTH]: 9,
+    [POLYU_OT_TRACKS.MUSCULOSKELETAL]: 9
+  });
+  assert.deepEqual(specialism.courses.find((course) => course.code === 'RS520').appliesToTrackIds.sort(), [
+    POLYU_OT_TRACKS.MENTAL_HEALTH,
+    POLYU_OT_TRACKS.MUSCULOSKELETAL
+  ].sort());
+  assert.equal(electives.creditsRequired, 18);
+  assert.equal(electives.creditsRequiredByTrackIds[POLYU_OT_TRACKS.NEUROLOGY], 9);
+  assert.equal(electives.courses.length, 0);
+  assert.equal(new Set(programme.courseGroups.flatMap((group) => group.courses).map((course) => course.code)).size, 12);
+  assert.match(programme.statusNote, /no elective credit is inferred/);
+});
+
+test('PolyU Advanced Rehabilitation Sciences preserves generic and Specialism credit paths without inventing electives', () => {
+  const supplement = buildPolyuAdvancedRehabilitationSciencesSupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'polyu-advanced-rehabilitation-sciences-2027.json');
+  const programme = supplement.programmes[0];
+  const [compulsory, project, specialism, electives] = programme.courseGroups;
+
+  assert.equal(programme.programmeId, 'POLYU-TPG-073');
+  assert.equal(programme.creditsRequired, 31);
+  assert.equal(programme.trackSelectionOptional, true);
+  assert.deepEqual(programme.tracks.map((track) => [track.id, track.name, track.type]), [[
+    POLYU_REHAB_SPECIALISM_ID,
+    'Rehabilitation of People with Developmental Disabilities',
+    'Specialism'
+  ]]);
+  assert.deepEqual([compulsory.creditsRequired, project.creditsRequired, specialism.creditsRequired], [7, 6, 9]);
+  assert.deepEqual([compulsory.courses.length, project.courses.length, specialism.courses.length], [3, 1, 3]);
+  assert.deepEqual(electives.creditsRequiredByTrackIds, { [POLYU_REHAB_SPECIALISM_ID]: 9 });
+  assert.deepEqual(electives.coursesRequiredByTrackIds, { [POLYU_REHAB_SPECIALISM_ID]: 3 });
+  assert.equal(electives.creditsRequired, 18);
+  assert.equal(electives.coursesRequired, 6);
+  assert.equal(electives.courses.length, 0);
+  assert.equal(new Set(programme.courseGroups.flatMap((group) => group.courses).map((course) => course.code)).size, 7);
+  assert.match(programme.statusNote, /no elective is invented/);
 });
 
 test('PolyU Information Technology preserves optional Streams and all three completion paths', () => {

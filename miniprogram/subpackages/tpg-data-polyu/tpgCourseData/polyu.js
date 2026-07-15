@@ -431,6 +431,298 @@ module.exports = [
     ]
   },
   {
+    "id": "POLYU-TPG-072",
+    "courseGroups": [
+      {
+        "id": "compulsory-subjects",
+        "name": "Compulsory Subjects",
+        "type": "core",
+        "creditsRequired": 7,
+        "coursesRequired": 3,
+        "ruleText": "Complete all three Compulsory Subjects for 7 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp",
+        "courses": [
+          {
+            "code": "RS517",
+            "name": "Research Methods and Data Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp"
+          },
+          {
+            "code": "RS5200",
+            "name": "Advanced Occupational Therapy Study",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp"
+          },
+          {
+            "code": "HTI5T04",
+            "name": "Academic Integrity and Ethics (Health and Social Sciences)",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp"
+          }
+        ]
+      },
+      {
+        "id": "project-study",
+        "name": "Project Study",
+        "type": "project",
+        "creditsRequired": 6,
+        "coursesRequired": 1,
+        "ruleText": "Complete RS567 Project Study for 6 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp",
+        "courses": [
+          {
+            "code": "RS567",
+            "name": "Project Study",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp",
+            "courseKind": "project"
+          }
+        ]
+      },
+      {
+        "id": "specialism-core-subjects",
+        "name": "Core Subjects for the Three Specialisms",
+        "type": "track_core",
+        "creditsRequiredByTrackIds": {
+          "POLYU-TPG-072-NEUROLOGY": 9,
+          "POLYU-TPG-072-MENTAL-HEALTH": 9,
+          "POLYU-TPG-072-MUSCULOSKELETAL": 9
+        },
+        "coursesRequiredByTrackIds": {
+          "POLYU-TPG-072-NEUROLOGY": 3,
+          "POLYU-TPG-072-MENTAL-HEALTH": 3,
+          "POLYU-TPG-072-MUSCULOSKELETAL": 3
+        },
+        "ruleText": "Each Specialism requires its three listed Core Subjects for 9 credits. RS520 Vocational Rehabilitation is shared by the Mental Health and Musculoskeletal Specialisms.",
+        "appliesToTrackIds": [
+          "POLYU-TPG-072-NEUROLOGY",
+          "POLYU-TPG-072-MENTAL-HEALTH",
+          "POLYU-TPG-072-MUSCULOSKELETAL"
+        ],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp",
+        "courses": [
+          {
+            "code": "RS5201",
+            "name": "Current Development in Neurological Rehabilitation",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-072-NEUROLOGY"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp"
+          },
+          {
+            "code": "RS5202",
+            "name": "OT Management for Upper Extremity Participation in Neurological Conditions",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-072-NEUROLOGY"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp"
+          },
+          {
+            "code": "RS510",
+            "name": "Neuro-psychological Rehabilitation",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-072-NEUROLOGY"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp"
+          },
+          {
+            "code": "RS5228",
+            "name": "Principles and Concepts in the Diagnostic Procedures of Mental Disorders",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-072-MENTAL-HEALTH"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp"
+          },
+          {
+            "code": "RS607",
+            "name": "Brain and Behaviour",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-072-MENTAL-HEALTH"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp"
+          },
+          {
+            "code": "RS5216",
+            "name": "Musculoskeletal Injury and Repair",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-072-MUSCULOSKELETAL"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp"
+          },
+          {
+            "code": "RS5212",
+            "name": "Advanced OT Practice in Hand Rehabilitation",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-072-MUSCULOSKELETAL"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp"
+          },
+          {
+            "code": "RS520",
+            "name": "Vocational Rehabilitation",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-072-MENTAL-HEALTH",
+              "POLYU-TPG-072-MUSCULOSKELETAL"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp"
+          }
+        ]
+      },
+      {
+        "id": "department-electives",
+        "name": "Department of Rehabilitation Sciences Elective Subjects",
+        "type": "elective",
+        "creditsRequired": 18,
+        "coursesRequired": 6,
+        "creditsRequiredByTrackIds": {
+          "POLYU-TPG-072-NEUROLOGY": 9,
+          "POLYU-TPG-072-MENTAL-HEALTH": 9,
+          "POLYU-TPG-072-MUSCULOSKELETAL": 9
+        },
+        "coursesRequiredByTrackIds": {
+          "POLYU-TPG-072-NEUROLOGY": 3,
+          "POLYU-TPG-072-MENTAL-HEALTH": 3,
+          "POLYU-TPG-072-MUSCULOSKELETAL": 3
+        },
+        "ruleText": "Generic students choose six eligible Department postgraduate subjects for 18 credits. Students in any Specialism choose three for 9 credits. The official page gives examples but does not publish a fixed coded elective list with per-course credits; confirm the list and prerequisites at registration.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp",
+        "courses": []
+      }
+    ]
+  },
+  {
+    "id": "POLYU-TPG-073",
+    "courseGroups": [
+      {
+        "id": "compulsory-subjects",
+        "name": "Compulsory Subjects",
+        "type": "core",
+        "creditsRequired": 7,
+        "coursesRequired": 3,
+        "ruleText": "Complete all three Compulsory Subjects for 7 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp",
+        "courses": [
+          {
+            "code": "RS517",
+            "name": "Research Methods and Data Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp"
+          },
+          {
+            "code": "RS5224",
+            "name": "Research Seminar in Rehabilitation Sciences",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp"
+          },
+          {
+            "code": "HTI5T04",
+            "name": "Academic Integrity and Ethics (Health and Social Sciences)",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp"
+          }
+        ]
+      },
+      {
+        "id": "project-study",
+        "name": "Project Study",
+        "type": "project",
+        "creditsRequired": 6,
+        "coursesRequired": 1,
+        "ruleText": "Complete RS567 Project Study for 6 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp",
+        "courses": [
+          {
+            "code": "RS567",
+            "name": "Project Study",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp",
+            "courseKind": "project"
+          }
+        ]
+      },
+      {
+        "id": "developmental-disabilities-core",
+        "name": "Core Subjects for the Developmental Disabilities Specialism",
+        "type": "track_core",
+        "creditsRequired": 9,
+        "coursesRequired": 3,
+        "ruleText": "Students in the Developmental Disabilities Specialism complete all three Core Subjects for 9 credits.",
+        "appliesToTrackIds": [
+          "POLYU-TPG-073-DD"
+        ],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp",
+        "courses": [
+          {
+            "code": "RS594",
+            "name": "Recent Advances in Rehabilitation for People with Developmental Disabilities",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-073-DD"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp"
+          },
+          {
+            "code": "RS593",
+            "name": "Sensory and Motor Intervention for People with Developmental Disabilities",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-073-DD"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp"
+          },
+          {
+            "code": "RS537",
+            "name": "Psychosocial Rehabilitation for People with Developmental Disabilities",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-073-DD"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp"
+          }
+        ]
+      },
+      {
+        "id": "department-electives",
+        "name": "Department of Rehabilitation Sciences Elective Subjects",
+        "type": "elective",
+        "creditsRequired": 18,
+        "coursesRequired": 6,
+        "creditsRequiredByTrackIds": {
+          "POLYU-TPG-073-DD": 9
+        },
+        "coursesRequiredByTrackIds": {
+          "POLYU-TPG-073-DD": 3
+        },
+        "ruleText": "Generic students choose six eligible Department postgraduate subjects for 18 credits. Developmental Disabilities Specialism students choose three for 9 credits. The official page does not publish a fixed coded elective list; confirm the list and prerequisites at registration.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp",
+        "courses": []
+      }
+    ]
+  },
+  {
     "id": "POLYU-TPG-089",
     "courseGroups": [
       {

@@ -70,6 +70,9 @@ function validateSupplement(supplement, catalogue, file = 'supplement') {
     assert(!seenProgrammeIds.has(entry.programmeId), `${file} repeats ${entry.programmeId}`);
     seenProgrammeIds.add(entry.programmeId);
     assert(['verified', 'blocked', 'archived'].includes(entry.status), `${entry.programmeId} has an invalid status`);
+    if (entry.programmeName !== undefined) {
+      assert(typeof entry.programmeName === 'string' && entry.programmeName.trim(), `${entry.programmeId} has an invalid programmeName`);
+    }
     validateHttps(entry.sourceUrl, entry.programmeId);
 
     if (entry.tracks !== undefined) {
@@ -132,6 +135,7 @@ function applySupplements(catalogue, supplementFiles) {
       assert(!supplementedProgrammeIds.has(entry.programmeId), `TPG course supplements repeat ${entry.programmeId} across files`);
       supplementedProgrammeIds.add(entry.programmeId);
       const programme = programmesById.get(entry.programmeId);
+      if (entry.programmeName !== undefined) programme.name = entry.programmeName;
       programme.academicYear = value.academicYear;
       programme.courseVerificationStatus = entry.status;
       programme.courseVerifiedAt = value.verifiedAt;

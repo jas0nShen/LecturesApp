@@ -9,8 +9,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 232);
-  assert.equal(coverage.courseCount, 5621);
+  assert.equal(coverage.programmeWithCoursesCount, 234);
+  assert.equal(coverage.courseCount, 5640);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -29,8 +29,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 232);
-  assert.equal(rows.length, 232);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 234);
+  assert.equal(rows.length, 234);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
@@ -1886,6 +1886,49 @@ test('PolyU Information Technology keeps optional Streams and cross-listed elect
   assert.equal(tpgService.getProgrammeCourse(programme.id, 'COMP5940').credits, 9);
   assert.equal(tpgService.getProgrammeCourse(programme.id, 'DSAI5T09').credits, 1);
   assert.match(programme.courseStatusNote, /no unlisted course is invented/);
+});
+
+test('PolyU Advanced Rehabilitation Sciences filters the Specialism core and preserves dynamic elective requirements', () => {
+  const programme = tpgService.getProgramme('POLYU-TPG-073');
+  const track = tpgService.listTracks(programme)[0];
+  const genericCourses = tpgService.flattenCourses(programme);
+  const specialismCourses = tpgService.flattenCourses(programme, '', track.id);
+  const electives = programme.courseGroups.find((group) => group.id === 'department-electives');
+
+  assert.equal(programme.trackSelectionOptional, true);
+  assert.equal(track.name, 'Rehabilitation of People with Developmental Disabilities');
+  assert.equal(track.type, 'Specialism');
+  assert.equal(genericCourses.length, 4);
+  assert.equal(specialismCourses.length, 7);
+  assert.equal(specialismCourses.some((course) => course.code === 'RS594'), true);
+  assert.equal(genericCourses.some((course) => course.code === 'RS594'), false);
+  assert.equal(electives.creditsRequired, 18);
+  assert.equal(electives.creditsRequiredByTrackIds[track.id], 9);
+  assert.equal(electives.courses.length, 0);
+  assert.match(electives.ruleText, /official page does not publish a fixed coded elective list/);
+});
+
+test('PolyU Advanced Occupational Therapy exposes only the selected Specialism core', () => {
+  const programme = tpgService.getProgramme('POLYU-TPG-072');
+  const tracks = Object.fromEntries(tpgService.listTracks(programme).map((track) => [track.name, track]));
+  const genericCourses = tpgService.flattenCourses(programme);
+  const neurologyCourses = tpgService.flattenCourses(programme, '', tracks.Neurology.id);
+  const mentalHealthCourses = tpgService.flattenCourses(programme, '', tracks['Mental Health'].id);
+  const musculoskeletalCourses = tpgService.flattenCourses(programme, '', tracks.Musculoskeletal.id);
+
+  assert.equal(programme.name, 'Advanced Occupational Therapy');
+  assert.equal(programme.trackSelectionOptional, true);
+  assert.deepEqual(Object.keys(tracks), ['Neurology', 'Mental Health', 'Musculoskeletal']);
+  assert.equal(genericCourses.length, 4);
+  assert.equal(neurologyCourses.length, 7);
+  assert.equal(mentalHealthCourses.length, 7);
+  assert.equal(musculoskeletalCourses.length, 7);
+  assert.equal(neurologyCourses.some((course) => course.code === 'RS5201'), true);
+  assert.equal(mentalHealthCourses.some((course) => course.code === 'RS5228'), true);
+  assert.equal(musculoskeletalCourses.some((course) => course.code === 'RS5216'), true);
+  assert.equal(mentalHealthCourses.some((course) => course.code === 'RS520'), true);
+  assert.equal(musculoskeletalCourses.some((course) => course.code === 'RS520'), true);
+  assert.equal(neurologyCourses.some((course) => course.code === 'RS520'), false);
 });
 
 test('PolyU Agentic AI Systems exposes the official 2027 curriculum choices', () => {
