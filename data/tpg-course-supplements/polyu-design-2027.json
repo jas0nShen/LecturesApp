@@ -1,0 +1,531 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "POLYU",
+  "academicYear": "2027-28",
+  "verifiedAt": "2026-07-15",
+  "programmes": [
+    {
+      "programmeId": "POLYU-TPG-096",
+      "status": "verified",
+      "creditsRequired": 37,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/73035-ibd-ibp-isd-isp-ssd-ssp-ted-tep",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 2027 Programme page and the four current School of Design Programme Structure pages publish the complete 37-credit curriculum for Innovative Business Design, Intelligent Systems Design, Smart Service Design and Transitional Environments Design. Every Specialism requires 6 Common credits, 15 Specialism credits, 12 credits from Elective Pool A, 3 credits from Elective Pool B and the 1-credit ABCT5T01 AIE subject. Several SD subjects change role between Specialism Core and Elective pools, and ISD and SSD each contain a one-of Specialism Major choice. The shared cross-role subjects are stored once to preserve Programme-level code uniqueness; the exact official role mapping and non-double-counting rule remain marked for manual audit review.",
+      "trackSelectionOptional": false,
+      "tracks": [
+        {
+          "id": "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN",
+          "code": "IBD",
+          "name": "Innovative Business Design",
+          "type": "Specialism",
+          "creditsRequired": 37,
+          "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/"
+        },
+        {
+          "id": "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN",
+          "code": "ISD",
+          "name": "Intelligent Systems Design",
+          "type": "Specialism",
+          "creditsRequired": 37,
+          "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/intelligent-systems-design/programme-structure/"
+        },
+        {
+          "id": "POLYU-TPG-096-SMART-SERVICE-DESIGN",
+          "code": "SSD",
+          "name": "Smart Service Design",
+          "type": "Specialism",
+          "creditsRequired": 37,
+          "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/smart-service-design/programme-structure/"
+        },
+        {
+          "id": "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN",
+          "code": "TED",
+          "name": "Transitional Environments Design",
+          "type": "Specialism",
+          "creditsRequired": 37,
+          "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/transitional-environments-design/programme-structure/"
+        }
+      ],
+      "courseGroups": [
+        {
+          "id": "compulsory-common-subjects",
+          "name": "Compulsory Common Subjects",
+          "type": "core",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Complete both 3-credit Compulsory Common subjects.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/",
+          "courses": [
+            {
+              "code": "SD5008",
+              "name": "Research and Analysis for Design",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/"
+            },
+            {
+              "code": "SD5009",
+              "name": "Research and Academic Writing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/"
+            }
+          ]
+        },
+        {
+          "id": "specialism-studio-and-project-subjects",
+          "name": "Compulsory Specialism Studio and Project Subjects",
+          "type": "track_core_project",
+          "creditsRequiredByTrackIds": {
+            "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN": 9,
+            "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN": 9,
+            "POLYU-TPG-096-SMART-SERVICE-DESIGN": 9,
+            "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN": 9
+          },
+          "coursesRequiredByTrackIds": {
+            "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN": 2,
+            "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN": 2,
+            "POLYU-TPG-096-SMART-SERVICE-DESIGN": 2,
+            "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN": 2
+          },
+          "ruleText": "Complete the two exclusive Specialism subjects for the selected Specialism: IBD completes SD5138 and SD5139; ISD completes SD5538 and SD5539; SSD completes SD5438 and SD5439; TED completes SD5738 and SD5739. Together with the 6 compulsory cross-role credits identified in the next group, these subjects satisfy the 15-credit Compulsory Specialism requirement.",
+          "appliesToTrackIds": [
+            "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN",
+            "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN",
+            "POLYU-TPG-096-SMART-SERVICE-DESIGN",
+            "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN"
+          ],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/73035-ibd-ibp-isd-isp-ssd-ssp-ted-tep",
+          "courses": [
+            {
+              "code": "SD5138",
+              "name": "Theme-Based Project",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/",
+              "courseKind": "project"
+            },
+            {
+              "code": "SD5139",
+              "name": "Entrepreneurship Project",
+              "credits": 6,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/",
+              "courseKind": "project"
+            },
+            {
+              "code": "SD5538",
+              "name": "ISD Specialism Studio",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/intelligent-systems-design/programme-structure/"
+            },
+            {
+              "code": "SD5539",
+              "name": "ISD Capstone Research Project",
+              "credits": 6,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/intelligent-systems-design/programme-structure/",
+              "courseKind": "project"
+            },
+            {
+              "code": "SD5438",
+              "name": "SSD Specialism Studio",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-SMART-SERVICE-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/smart-service-design/programme-structure/"
+            },
+            {
+              "code": "SD5439",
+              "name": "SSD Capstone Research Project",
+              "credits": 6,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-SMART-SERVICE-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/smart-service-design/programme-structure/",
+              "courseKind": "project"
+            },
+            {
+              "code": "SD5738",
+              "name": "Urban Systems and Strategies",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/transitional-environments-design/programme-structure/"
+            },
+            {
+              "code": "SD5739",
+              "name": "TED Capstone Research Project",
+              "credits": 6,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/transitional-environments-design/programme-structure/",
+              "courseKind": "project"
+            }
+          ]
+        },
+        {
+          "id": "specialism-core-and-elective-cross-role-subjects",
+          "name": "Specialism Core and Elective Cross-role Subjects",
+          "type": "track_core_elective_cross_role",
+          "creditsRequiredByTrackIds": {
+            "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN": 21,
+            "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN": 21,
+            "POLYU-TPG-096-SMART-SERVICE-DESIGN": 21,
+            "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN": 21
+          },
+          "coursesRequiredByTrackIds": {
+            "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN": 7,
+            "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN": 7,
+            "POLYU-TPG-096-SMART-SERVICE-DESIGN": 7,
+            "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN": 7
+          },
+          "ruleText": "Complete 21 credits in the selected Specialism: 6 compulsory cross-role credits, 12 credits from Elective Pool A and 3 credits from Elective Pool B. IBD compulsory cross-role subjects are SD5116 and SD5132. ISD completes SD5532 and one of SD5513 or SD5514. SSD completes SD5432 and one of SD5412, SD5413 or SD5414. TED completes SD5716 and SD5717. A subject used for the compulsory role must not be counted again toward either Elective pool. The remaining official Pool A and Pool B choices are listed in the selected Specialism page; confirm the valid non-duplicating combination during manual audit review.",
+          "appliesToTrackIds": [
+            "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN",
+            "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN",
+            "POLYU-TPG-096-SMART-SERVICE-DESIGN",
+            "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN"
+          ],
+          "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/",
+          "courses": [
+            {
+              "code": "SD5114",
+              "name": "Design Methods (Advanced)",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN",
+                "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN",
+                "POLYU-TPG-096-SMART-SERVICE-DESIGN",
+                "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/"
+            },
+            {
+              "code": "SD5115",
+              "name": "Design Project Management",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN",
+                "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN",
+                "POLYU-TPG-096-SMART-SERVICE-DESIGN",
+                "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/"
+            },
+            {
+              "code": "SD5116",
+              "name": "Design for Transformation",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN",
+                "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN",
+                "POLYU-TPG-096-SMART-SERVICE-DESIGN",
+                "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/"
+            },
+            {
+              "code": "SD5411",
+              "name": "Designing Services",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN",
+                "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN",
+                "POLYU-TPG-096-SMART-SERVICE-DESIGN",
+                "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/"
+            },
+            {
+              "code": "SD5511",
+              "name": "UX Design Fundamentals",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN",
+                "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN",
+                "POLYU-TPG-096-SMART-SERVICE-DESIGN",
+                "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/"
+            },
+            {
+              "code": "SD5512",
+              "name": "Prototyping and Scripting",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN",
+                "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN",
+                "POLYU-TPG-096-SMART-SERVICE-DESIGN",
+                "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/"
+            },
+            {
+              "code": "SD5711",
+              "name": "Design for the Biosphere",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN",
+                "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN",
+                "POLYU-TPG-096-SMART-SERVICE-DESIGN",
+                "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/"
+            },
+            {
+              "code": "SD5712",
+              "name": "Design for Change",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN",
+                "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN",
+                "POLYU-TPG-096-SMART-SERVICE-DESIGN",
+                "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/"
+            },
+            {
+              "code": "SD5713",
+              "name": "Design Systems Thinking",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN",
+                "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN",
+                "POLYU-TPG-096-SMART-SERVICE-DESIGN",
+                "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/"
+            },
+            {
+              "code": "SD5117",
+              "name": "Innovate with Lifestyle and Culture",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN",
+                "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN",
+                "POLYU-TPG-096-SMART-SERVICE-DESIGN",
+                "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/"
+            },
+            {
+              "code": "SD5412",
+              "name": "Advanced Service Design Methods and Tools",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN",
+                "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN",
+                "POLYU-TPG-096-SMART-SERVICE-DESIGN",
+                "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/"
+            },
+            {
+              "code": "SD5413",
+              "name": "Socio-Technical Service Ecosystem",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN",
+                "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN",
+                "POLYU-TPG-096-SMART-SERVICE-DESIGN",
+                "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/"
+            },
+            {
+              "code": "SD5414",
+              "name": "Systemic Innovation and Designing Future Services",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN",
+                "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN",
+                "POLYU-TPG-096-SMART-SERVICE-DESIGN",
+                "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/"
+            },
+            {
+              "code": "SD5513",
+              "name": "Theories in Interaction Design",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN",
+                "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN",
+                "POLYU-TPG-096-SMART-SERVICE-DESIGN",
+                "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/"
+            },
+            {
+              "code": "SD5514",
+              "name": "Advanced Visualisation and Interaction",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN",
+                "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN",
+                "POLYU-TPG-096-SMART-SERVICE-DESIGN",
+                "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/"
+            },
+            {
+              "code": "SD5716",
+              "name": "Regenerative Ecosystems Design",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN",
+                "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN",
+                "POLYU-TPG-096-SMART-SERVICE-DESIGN",
+                "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/"
+            },
+            {
+              "code": "SD5717",
+              "name": "Territories, Societies, and Spatial Complexes",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN",
+                "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN",
+                "POLYU-TPG-096-SMART-SERVICE-DESIGN",
+                "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/"
+            },
+            {
+              "code": "SD5131",
+              "name": "Interdisciplinary Project",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN",
+                "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN",
+                "POLYU-TPG-096-SMART-SERVICE-DESIGN",
+                "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/"
+            },
+            {
+              "code": "SD5431",
+              "name": "Interdisciplinary Studio",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN",
+                "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN",
+                "POLYU-TPG-096-SMART-SERVICE-DESIGN",
+                "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/"
+            },
+            {
+              "code": "SD5731",
+              "name": "Regenerative Environments Design",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN",
+                "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN",
+                "POLYU-TPG-096-SMART-SERVICE-DESIGN",
+                "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/"
+            },
+            {
+              "code": "SD5132",
+              "name": "Lab Studies in Human Cyber-Physical Systems",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN",
+                "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN",
+                "POLYU-TPG-096-SMART-SERVICE-DESIGN",
+                "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/"
+            },
+            {
+              "code": "SD5531",
+              "name": "Lab Studies in Systems Design",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN",
+                "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN",
+                "POLYU-TPG-096-SMART-SERVICE-DESIGN",
+                "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/"
+            },
+            {
+              "code": "SD5532",
+              "name": "Lab Studies in Intelligent Systems Construction",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN",
+                "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN",
+                "POLYU-TPG-096-SMART-SERVICE-DESIGN",
+                "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/"
+            },
+            {
+              "code": "SD5432",
+              "name": "Lab Studies in Data-Driven Service Design",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN",
+                "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN",
+                "POLYU-TPG-096-SMART-SERVICE-DESIGN",
+                "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/"
+            },
+            {
+              "code": "SD5732",
+              "name": "Lab Studies in Applied Technologies for Territorial Design",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN",
+                "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN",
+                "POLYU-TPG-096-SMART-SERVICE-DESIGN",
+                "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/"
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity-and-ethics",
+          "name": "Academic Integrity and Ethics Requirement",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete the 1-credit ABCT5T01 subject. Tuition fees are not charged for this subject.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/",
+          "courses": [
+            {
+              "code": "ABCT5T01",
+              "name": "Academic Integrity and Ethics in Science",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/",
+              "courseKind": "academic_integrity"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

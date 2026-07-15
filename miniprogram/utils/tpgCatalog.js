@@ -4300,9 +4300,10 @@ module.exports = {
       "dataLevel": "programme",
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/73040-ftm-ptm",
-      "courseStatusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required.",
+      "courseStatusNote": "The official 2027 Programme page and current School of Design Programme Structure page publish the 31-credit curriculum: 12 Core credits, 12 Elective credits, a 6-credit Capstone Project and a 1-credit Academic Integrity and Ethics requirement. They also publish the current Practice Pathway, the STEM-only Applied Research Pathway introduced for the 2027-28 cohort, the pathway selection rules, subject titles and explicit credits where applicable. The official 2026 School of Design MSc prospectus identifies ABCT5T01 as the 1-credit Academic Integrity and Ethics in Science subject, resolving the otherwise unlabelled attendance reference on the Programme page. The public sources do not publish codes for the Core subjects, Research Seminars, Practice and Applied Research subjects, Capstone Project or the complete Other Elective pool; the 2027 page also adds Study Trip beyond the 2026 prospectus. Official curriculum tables for another Programme recover codes for four shared electives only, which does not establish the complete current MScIME code list. The Programme remains blocked rather than exposing a partial pool or inferring the unresolved codes from titles.",
+      "creditUnit": "credits",
       "courseCount": 0
     },
     {
@@ -4313,13 +4314,50 @@ module.exports = {
       "faculty": "School of Design (SD)",
       "creditsRequired": 37,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/73035-ibd-ibp-isd-isp-ssd-ssp-ted-tep",
-      "dataLevel": "programme",
+      "dataLevel": "structure",
       "academicYear": "2027-28",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/73035-ibd-ibp-isd-isp-ssd-ssp-ted-tep",
-      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
-      "courseCount": 0
+      "courseStatusNote": "The official 2027 Programme page and the four current School of Design Programme Structure pages publish the complete 37-credit curriculum for Innovative Business Design, Intelligent Systems Design, Smart Service Design and Transitional Environments Design. Every Specialism requires 6 Common credits, 15 Specialism credits, 12 credits from Elective Pool A, 3 credits from Elective Pool B and the 1-credit ABCT5T01 AIE subject. Several SD subjects change role between Specialism Core and Elective pools, and ISD and SSD each contain a one-of Specialism Major choice. The shared cross-role subjects are stored once to preserve Programme-level code uniqueness; the exact official role mapping and non-double-counting rule remain marked for manual audit review.",
+      "tracks": [
+        {
+          "id": "POLYU-TPG-096-INNOVATIVE-BUSINESS-DESIGN",
+          "code": "IBD",
+          "name": "Innovative Business Design",
+          "type": "Specialism",
+          "creditsRequired": 37,
+          "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/innovative-business-design/programme-structure/"
+        },
+        {
+          "id": "POLYU-TPG-096-INTELLIGENT-SYSTEMS-DESIGN",
+          "code": "ISD",
+          "name": "Intelligent Systems Design",
+          "type": "Specialism",
+          "creditsRequired": 37,
+          "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/intelligent-systems-design/programme-structure/"
+        },
+        {
+          "id": "POLYU-TPG-096-SMART-SERVICE-DESIGN",
+          "code": "SSD",
+          "name": "Smart Service Design",
+          "type": "Specialism",
+          "creditsRequired": 37,
+          "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/smart-service-design/programme-structure/"
+        },
+        {
+          "id": "POLYU-TPG-096-TRANSITIONAL-ENVIRONMENTS-DESIGN",
+          "code": "TED",
+          "name": "Transitional Environments Design",
+          "type": "Specialism",
+          "creditsRequired": 37,
+          "sourceUrl": "https://www.polyu.edu.hk/sd/study/tpg/transitional-environments-design/programme-structure/"
+        }
+      ],
+      "trackSelectionOptional": false,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 36
     },
     {
       "id": "POLYU-TPG-097",
@@ -4327,14 +4365,34 @@ module.exports = {
       "programmeCode": "14111",
       "name": "Fashion Design",
       "faculty": "School of Fashion and Textiles (FT)",
-      "creditsRequired": null,
+      "creditsRequired": 34,
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14111-fpp-dfi",
       "dataLevel": "programme",
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-11",
+      "courseVerifiedAt": "2026-07-15",
       "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14111-fpp-dfi",
-      "courseStatusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required.",
+      "courseStatusNote": "The official 2027 Programme page, the two current School of Fashion and Textiles Pathway pages and the official 2027-28 Programme leaflet publish two required 34-credit Pathways: 12 Common Core credits, 9 Pathway Specialist credits, a 9-credit Personal Major Project, one Elective subject and a 1-credit Academic Integrity and Ethics requirement. The current official SFT Subject Synopsis table recovers codes for several shared and Fashion Practice subjects, including SFT5970-SFT5974, SFT5976 and SFT5977CP, plus some listed Electives. It does not publish codes for Contextual Thesis Report or the three new Digital Fashion Innovation Studio subjects. The current Fashion Practice title Life Cycle Assessment for Fashion Design also differs from the public SFT5102 Life Cycle Assessment of Fashion Products entry, so that code cannot be substituted by title similarity. The Subject Synopsis table publishes both SFT5R08 and SFT5T08 with the same Academic Integrity and Ethics in Design and Innovation title, while the current Programme sources do not identify which code applies. The public Programme pages provide aggregate group credits but not an explicit credit value for every named subject. The Programme remains blocked rather than exposing the partial Fashion Practice mapping, inventing the new Digital Fashion Innovation codes or selecting between ambiguous AIE entries.",
+      "tracks": [
+        {
+          "id": "POLYU-TPG-097-FASHION-PRACTICE",
+          "code": "FP",
+          "name": "Fashion Practice",
+          "type": "Pathway",
+          "creditsRequired": 34,
+          "sourceUrl": "https://www.polyu.edu.hk/sft/admissions/taught-postgraduate-programmes/master-of-arts-in-fashion-design---fashion-practice/"
+        },
+        {
+          "id": "POLYU-TPG-097-DIGITAL-FASHION-INNOVATION",
+          "code": "DFI",
+          "name": "Digital Fashion Innovation",
+          "type": "Pathway",
+          "creditsRequired": 34,
+          "sourceUrl": "https://www.polyu.edu.hk/sft/admissions/taught-postgraduate-programmes/master-of-arts-in-fashion-design---digital-fashion-innovation/"
+        }
+      ],
+      "trackSelectionOptional": false,
+      "creditUnit": "credits",
       "courseCount": 0
     },
     {

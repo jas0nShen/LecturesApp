@@ -20,6 +20,7 @@ const verifiedIds = new Set([
   'POLYU-TPG-092',
   'POLYU-TPG-093',
   'POLYU-TPG-094',
+  'POLYU-TPG-096',
   'POLYU-TPG-102',
   'POLYU-TPG-105'
 ]);
@@ -89,6 +90,39 @@ const statusOverrides = {
     creditUnit: 'credits',
     sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/61038',
     statusNote: 'The official 2027 Programme page publishes the 31-credit structure, the five required credit categories and the current 1-credit DSAI5T09 Academic Integrity and Ethics subject. The official 2026 MSc Metaverse Technology brochure publishes the complete grouped subject-title list, while the current COMP Subjects page and official COMP, EIE and MM catalogues recover codes for all but five cross-department subjects: Procedural Content Generation and AI in Games, Metaverse Economics & Ecosystems, UX Design Fundamentals, Advanced Visualisation and Interaction, and Entrepreneurship for Culture and Creative Industry. The older COMP curriculum page still names EEE5T03 as AIE, so the current 2027 Programme page takes precedence for the 2027-28 intake. None of the public official Programme, School of Design or subject-catalogue pages publishes codes for the five unresolved titles. The Programme remains blocked rather than exposing a partial pool or inferring codes from subject names.'
+  },
+  'POLYU-TPG-095': {
+    verifiedAt: '2026-07-15',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/73040-ftm-ptm',
+    statusNote: 'The official 2027 Programme page and current School of Design Programme Structure page publish the 31-credit curriculum: 12 Core credits, 12 Elective credits, a 6-credit Capstone Project and a 1-credit Academic Integrity and Ethics requirement. They also publish the current Practice Pathway, the STEM-only Applied Research Pathway introduced for the 2027-28 cohort, the pathway selection rules, subject titles and explicit credits where applicable. The official 2026 School of Design MSc prospectus identifies ABCT5T01 as the 1-credit Academic Integrity and Ethics in Science subject, resolving the otherwise unlabelled attendance reference on the Programme page. The public sources do not publish codes for the Core subjects, Research Seminars, Practice and Applied Research subjects, Capstone Project or the complete Other Elective pool; the 2027 page also adds Study Trip beyond the 2026 prospectus. Official curriculum tables for another Programme recover codes for four shared electives only, which does not establish the complete current MScIME code list. The Programme remains blocked rather than exposing a partial pool or inferring the unresolved codes from titles.'
+  },
+  'POLYU-TPG-097': {
+    verifiedAt: '2026-07-15',
+    creditsRequired: 34,
+    creditUnit: 'credits',
+    trackSelectionOptional: false,
+    tracks: [
+      {
+        id: 'POLYU-TPG-097-FASHION-PRACTICE',
+        code: 'FP',
+        name: 'Fashion Practice',
+        type: 'Pathway',
+        creditsRequired: 34,
+        sourceUrl: 'https://www.polyu.edu.hk/sft/admissions/taught-postgraduate-programmes/master-of-arts-in-fashion-design---fashion-practice/'
+      },
+      {
+        id: 'POLYU-TPG-097-DIGITAL-FASHION-INNOVATION',
+        code: 'DFI',
+        name: 'Digital Fashion Innovation',
+        type: 'Pathway',
+        creditsRequired: 34,
+        sourceUrl: 'https://www.polyu.edu.hk/sft/admissions/taught-postgraduate-programmes/master-of-arts-in-fashion-design---digital-fashion-innovation/'
+      }
+    ],
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/14111-fpp-dfi',
+    statusNote: 'The official 2027 Programme page, the two current School of Fashion and Textiles Pathway pages and the official 2027-28 Programme leaflet publish two required 34-credit Pathways: 12 Common Core credits, 9 Pathway Specialist credits, a 9-credit Personal Major Project, one Elective subject and a 1-credit Academic Integrity and Ethics requirement. The current official SFT Subject Synopsis table recovers codes for several shared and Fashion Practice subjects, including SFT5970-SFT5974, SFT5976 and SFT5977CP, plus some listed Electives. It does not publish codes for Contextual Thesis Report or the three new Digital Fashion Innovation Studio subjects. The current Fashion Practice title Life Cycle Assessment for Fashion Design also differs from the public SFT5102 Life Cycle Assessment of Fashion Products entry, so that code cannot be substituted by title similarity. The Subject Synopsis table publishes both SFT5R08 and SFT5T08 with the same Academic Integrity and Ethics in Design and Innovation title, while the current Programme sources do not identify which code applies. The public Programme pages provide aggregate group credits but not an explicit credit value for every named subject. The Programme remains blocked rather than exposing the partial Fashion Practice mapping, inventing the new Digital Fashion Innovation codes or selecting between ambiguous AIE entries.'
   },
   'POLYU-TPG-076': {
     verifiedAt: '2026-07-15',

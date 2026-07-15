@@ -30,6 +30,7 @@ const { buildSupplement: buildPolyuActuarialInvestmentScienceSupplement } = requ
 const { buildSupplement: buildPolyuAmaFinanceAiSupplement } = require('./build-polyu-ama-finance-ai-supplements');
 const { buildSupplement: buildPolyuHealthInformaticsSupplement } = require('./build-polyu-health-informatics-supplement');
 const { buildSupplement: buildPolyuChineseCultureSupplement } = require('./build-polyu-chinese-culture-supplement');
+const { TRACKS: POLYU_DESIGN_TRACKS, buildSupplement: buildPolyuDesignSupplement } = require('./build-polyu-design-supplement');
 const { IT_TRACKS, buildInformationTechnology } = require('./build-polyu-comp-supplements');
 
 function fixtureCatalogue() {
@@ -508,6 +509,34 @@ test('PolyU Chinese Culture preserves cross-area electives and mode-specific Dis
   assert.match(area3.courses.find((course) => course.code === 'CHC5301').name, /^Expressions and Applications/);
   assert.match(programme.statusNote, /PgD exit award is not modelled/);
   assert.match(programme.statusNote, /must not be combined/);
+});
+
+test('PolyU Design preserves four required Specialisms without duplicating cross-role course codes', () => {
+  const supplement = buildPolyuDesignSupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'polyu-design-2027.json');
+  const programme = supplement.programmes[0];
+  const courses = programme.courseGroups.flatMap((group) => group.courses);
+  const common = programme.courseGroups.find((group) => group.id === 'compulsory-common-subjects');
+  const projects = programme.courseGroups.find((group) => group.id === 'specialism-studio-and-project-subjects');
+  const crossRole = programme.courseGroups.find((group) => group.id === 'specialism-core-and-elective-cross-role-subjects');
+
+  assert.equal(programme.programmeId, 'POLYU-TPG-096');
+  assert.equal(programme.creditsRequired, 37);
+  assert.equal(programme.trackSelectionOptional, false);
+  assert.deepEqual(programme.tracks.map((track) => track.id), Object.values(POLYU_DESIGN_TRACKS).map((track) => track.id));
+  assert.deepEqual([common.creditsRequired, common.coursesRequired, common.courses.length], [6, 2, 2]);
+  assert.equal(projects.courses.length, 8);
+  assert.equal(crossRole.courses.length, 25);
+  Object.values(POLYU_DESIGN_TRACKS).forEach((track) => {
+    assert.equal(projects.creditsRequiredByTrackIds[track.id], 9);
+    assert.equal(crossRole.creditsRequiredByTrackIds[track.id], 21);
+    assert.equal(crossRole.coursesRequiredByTrackIds[track.id], 7);
+  });
+  assert.equal(courses.length, 36);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 36);
+  assert.match(crossRole.ruleText, /must not be counted again/);
+  assert.match(programme.statusNote, /one-of Specialism Major choice/);
 });
 
 test('PolyU Information Technology preserves optional Streams and all three completion paths', () => {

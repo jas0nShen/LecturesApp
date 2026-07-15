@@ -9,8 +9,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 240);
-  assert.equal(coverage.courseCount, 5823);
+  assert.equal(coverage.programmeWithCoursesCount, 241);
+  assert.equal(coverage.courseCount, 5859);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -29,8 +29,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 240);
-  assert.equal(rows.length, 240);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 241);
+  assert.equal(rows.length, 241);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
@@ -141,6 +141,62 @@ test('PolyU Metaverse Technology records its official total and exact unresolved
   assert.match(programme.courseStatusNote, /Entrepreneurship for Culture and Creative Industry/);
   assert.match(programme.courseStatusNote, /current 2027 Programme page takes precedence/);
   assert.match(programme.courseStatusNote, /rather than exposing a partial pool/);
+});
+
+test('PolyU Innovative Multimedia Entertainment records its official structure and exact public code gap', () => {
+  const programme = tpgService.getProgramme('POLYU-TPG-095');
+
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal(programme.creditsRequired, 31);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.courseVerifiedAt, '2026-07-15');
+  assert.equal((programme.courseGroups || []).length, 0);
+  assert.equal(programme.courseSourceUrl, 'https://www.polyu.edu.hk/study/pg/tpg/2027/73040-ftm-ptm');
+  assert.match(programme.courseStatusNote, /12 Core credits/);
+  assert.match(programme.courseStatusNote, /STEM-only Applied Research Pathway/);
+  assert.match(programme.courseStatusNote, /ABCT5T01.*Academic Integrity and Ethics in Science/);
+  assert.match(programme.courseStatusNote, /Study Trip beyond the 2026 prospectus/);
+  assert.match(programme.courseStatusNote, /four shared electives only/);
+  assert.match(programme.courseStatusNote, /rather than exposing a partial pool/);
+});
+
+test('PolyU Design filters all four required Specialisms while preserving unique cross-role subjects', () => {
+  const programme = tpgService.getProgramme('POLYU-TPG-096');
+  const tracks = tpgService.listTracks(programme);
+  const allCourses = programme.courseGroups.flatMap((group) => group.courses || []);
+
+  assert.equal(programme.courseVerificationStatus, 'verified');
+  assert.equal(programme.creditsRequired, 37);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.trackSelectionOptional, false);
+  assert.deepEqual(tracks.map((track) => track.code), ['IBD', 'ISD', 'SSD', 'TED']);
+  assert.equal(allCourses.length, 36);
+  assert.equal(new Set(allCourses.map((course) => course.code)).size, 36);
+  tracks.forEach((track) => {
+    assert.equal(tpgService.flattenCourses(programme, '', track.id).length, 30);
+  });
+  assert.match(programme.courseStatusNote, /shared cross-role subjects are stored once/);
+  assert.match(programme.courseStatusNote, /manual audit review/);
+});
+
+test('PolyU Fashion Design preserves both official Pathways while its new subject codes remain blocked', () => {
+  const programme = tpgService.getProgramme('POLYU-TPG-097');
+
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal(programme.creditsRequired, 34);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.courseVerifiedAt, '2026-07-15');
+  assert.equal(programme.trackSelectionOptional, false);
+  assert.deepEqual(tpgService.listTracks(programme).map((track) => [track.code, track.name, track.creditsRequired]), [
+    ['FP', 'Fashion Practice', 34],
+    ['DFI', 'Digital Fashion Innovation', 34]
+  ]);
+  assert.equal((programme.courseGroups || []).length, 0);
+  assert.match(programme.courseStatusNote, /Contextual Thesis Report/);
+  assert.match(programme.courseStatusNote, /three new Digital Fashion Innovation Studio subjects/);
+  assert.match(programme.courseStatusNote, /SFT5102.*cannot be substituted/);
+  assert.match(programme.courseStatusNote, /both SFT5R08 and SFT5T08/);
+  assert.match(programme.courseStatusNote, /rather than exposing the partial Fashion Practice mapping/);
 });
 
 test('PolyU Generative AI and the Humanities filters both official Specialism elective pools', () => {
