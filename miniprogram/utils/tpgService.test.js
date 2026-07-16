@@ -9,8 +9,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 310);
-  assert.equal(coverage.courseCount, 7794);
+  assert.equal(coverage.programmeWithCoursesCount, 317);
+  assert.equal(coverage.courseCount, 8537);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -29,11 +29,40 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 310);
-  assert.equal(rows.length, 310);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 317);
+  assert.equal(rows.length, 317);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
+});
+
+test('HKU Law curricula preserve blocked source conflicts and manual path-dependent pools', () => {
+  const mcl = tpgService.getProgramme('HKU-TPG-040');
+  const generalLlm = tpgService.getProgramme('HKU-TPG-041');
+  const arbitration = tpgService.getProgramme('HKU-TPG-042');
+  const technologyIp = tpgService.getProgramme('HKU-TPG-047');
+
+  assert.equal(mcl.courseVerificationStatus, 'blocked');
+  assert.equal((mcl.courseGroups || []).length, 0);
+  assert.match(mcl.courseStatusNote, /page 6 requires at least five designated electives/);
+  assert.match(mcl.courseStatusNote, /page 7 requires at least four/);
+
+  assert.equal(generalLlm.courseVerificationStatus, 'verified');
+  assert.equal(generalLlm.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.getStatus(generalLlm).courseCount, 174);
+  assert.deepEqual(tpgService.listTracks(generalLlm).map((track) => track.name), [
+    'General Focus', 'Competition Law and Policy', 'Maritime Law', 'Medical Ethics and Law'
+  ]);
+
+  assert.equal(arbitration.name, 'Master of Laws in Arbitration and Dispute Resolution (LLM(Arb&DR))');
+  assert.equal(tpgService.getStatus(arbitration).courseCount, 178);
+  assert.deepEqual(tpgService.listTracks(arbitration).map((track) => track.type), ['Qualification Path', 'Qualification Path']);
+
+  assert.equal(technologyIp.name, 'Master of Laws in Technology and Intellectual Property Law (LLM(T&IPL))');
+  assert.equal(technologyIp.creditsRequired, 72);
+  assert.equal(tpgService.getStatus(technologyIp).courseCount, 52);
+  assert.match(technologyIp.courseStatusNote, /taking both requires 75 credits/);
+  assert.equal(tpgService.getProgrammeCourse(technologyIp.id, 'ICOM7125').credits, 6);
 });
 
 test('PolyU Nursing remains blocked when official evidence omits the AIE code and taught-subject credits', () => {
@@ -6926,7 +6955,7 @@ test('TPG programmes can be filtered by course availability', () => {
   const withCourses = tpgService.filterProgrammesByAvailability(hkuProgrammes, 'courses');
   const pending = tpgService.filterProgrammesByAvailability(hkuProgrammes, 'pending');
 
-  assert.equal(withCourses.length, 45);
+  assert.equal(withCourses.length, 52);
   assert.equal(withCourses.every(tpgService.hasCourseGroups), true);
   assert.equal(pending.length, hkuProgrammes.length - withCourses.length);
   assert.equal(pending.some(tpgService.hasCourseGroups), false);

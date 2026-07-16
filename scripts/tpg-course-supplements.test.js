@@ -30,6 +30,8 @@ const { buildSupplement: buildHkuCommunityDentistrySourceStatusSupplement } = re
 const { buildSupplement: buildHkuDentalMaterialsScienceSupplement } = require('./build-hku-dental-materials-science-supplement');
 const { buildSupplement: buildHkuMatesolSupplement } = require('./build-hku-matesol-supplement');
 const { buildSupplement: buildHkuMedSupplement, TRACKS: HKU_MED_TRACKS } = require('./build-hku-med-supplement');
+const { buildSupplement: buildHkuLawFirstBatchSupplement } = require('./build-hku-law-first-batch-supplements');
+const { buildSupplement: buildHkuLawSecondBatchSupplement } = require('./build-hku-law-second-batch-supplements');
 const { TRACK_ID: HKBU_COMMUNICATION_TRACK_ID, buildSupplement: buildHkbuCommunicationSupplement } = require('./build-hkbu-communication-supplement');
 const { TRACKS: HKBU_MAIJS_TRACKS, buildSupplement: buildHkbuInternationalJournalismSupplement } = require('./build-hkbu-international-journalism-supplement');
 const { buildSupplement: buildHkbuMediaManagementSupplement } = require('./build-hkbu-media-management-supplement');
@@ -1476,6 +1478,87 @@ test('HKU MEd preserves all 19 paths and the complete 2025-26 course pool', () =
   assert.deepEqual(coursePool.courses.find((course) => course.code === 'MEDD8602').prerequisiteCodes, ['MEDD6248', 'MEDD8678']);
   assert.deepEqual(coursePool.courses.find((course) => course.code === 'MEDD8874').impermissibleWithCodes, ['MEDD6128', 'MEDD6131', 'MEDD8819', 'MEDD8820']);
   assert.deepEqual(coursePool.courses.find((course) => course.code === 'MEDD8889').excludesTrackIds, [HKU_MED_TRACKS.ADMINISTRATION]);
+});
+
+test('HKU Law first batch preserves the 2025-26 paths and blocks the contradictory MCL rules', () => {
+  const supplement = buildHkuLawFirstBatchSupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'hku-law-first-batch-2025.json');
+  const byId = Object.fromEntries(supplement.programmes.map((programme) => [programme.programmeId, programme]));
+
+  assert.equal(supplement.academicYear, '2025-26');
+  assert.deepEqual(supplement.programmes.map((programme) => programme.programmeId), [
+    'HKU-TPG-040', 'HKU-TPG-041', 'HKU-TPG-042', 'HKU-TPG-043'
+  ]);
+
+  const mcl = byId['HKU-TPG-040'];
+  assert.equal(mcl.status, 'blocked');
+  assert.equal(mcl.creditsRequired, 72);
+  assert.equal(mcl.courseGroups, undefined);
+  assert.match(mcl.statusNote, /page 6 requires at least five designated electives/);
+  assert.match(mcl.statusNote, /page 7 requires at least four/);
+
+  const llm = byId['HKU-TPG-041'];
+  const llmCourses = llm.courseGroups[0].courses;
+  assert.equal(llm.ruleReviewStatus, 'manual_review_required');
+  assert.equal(llm.trackSelectionOptional, false);
+  assert.deepEqual(llm.tracks.map((track) => track.name), [
+    'General Focus', 'Competition Law and Policy', 'Maritime Law', 'Medical Ethics and Law'
+  ]);
+  assert.equal(llmCourses.length, 174);
+  assert.equal(new Set(llmCourses.map((course) => course.code)).size, 174);
+  assert.equal(llmCourses.find((course) => course.code === 'LLAW6160').subjectGroups.includes('medical-ethics-foundational'), true);
+  assert.match(llm.statusNote, /current September 2026 Programme page lists only Competition Law and Policy and Maritime Law/);
+
+  const adr = byId['HKU-TPG-042'];
+  const adrCourses = adr.courseGroups[0].courses;
+  assert.equal(adr.programmeName, 'Master of Laws in Arbitration and Dispute Resolution (LLM(Arb&DR))');
+  assert.deepEqual(adr.tracks.map((track) => track.type), ['Qualification Path', 'Qualification Path']);
+  assert.equal(adrCourses.length, 178);
+  assert.equal(new Set(adrCourses.map((course) => course.code)).size, 178);
+  assert.equal(adrCourses.find((course) => course.code === 'LLAW6135').subjectGroups.includes('capstone'), true);
+  assert.equal(adrCourses.find((course) => course.code === 'LLAW6160').subjectGroups.includes('foundational-compulsory'), true);
+
+  const chineseLaw = byId['HKU-TPG-043'];
+  const chineseLawCourses = chineseLaw.courseGroups[0].courses;
+  assert.equal(chineseLawCourses.length, 173);
+  assert.equal(new Set(chineseLawCourses.map((course) => course.code)).size, 173);
+  assert.equal(chineseLawCourses.find((course) => course.code === 'LLAW6025').subjectGroups.includes('chinese-law-capstone'), true);
+  assert.equal(chineseLawCourses.find((course) => course.code === 'LLAW6025').subjectGroups.includes('chinese-law-designated-elective'), true);
+});
+
+test('HKU Law second batch preserves programme-local pools and dynamic completion rules', () => {
+  const supplement = buildHkuLawSecondBatchSupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'hku-law-second-batch-2025.json');
+  const byId = Object.fromEntries(supplement.programmes.map((programme) => [programme.programmeId, programme]));
+
+  assert.equal(supplement.academicYear, '2025-26 and thereafter');
+  assert.deepEqual(supplement.programmes.map((programme) => programme.programmeId), [
+    'HKU-TPG-044', 'HKU-TPG-045', 'HKU-TPG-046', 'HKU-TPG-047'
+  ]);
+  assert.deepEqual(supplement.programmes.map((programme) => programme.creditsRequired), [72, 72, 72, 72]);
+  assert.deepEqual(
+    supplement.programmes.map((programme) => programme.courseGroups.flatMap((group) => group.courses).length),
+    [64, 68, 34, 52]
+  );
+  supplement.programmes.forEach((programme) => {
+    const codes = programme.courseGroups.flatMap((group) => group.courses).map((course) => course.code);
+    assert.equal(new Set(codes).size, codes.length, `${programme.programmeId} repeats a course code`);
+    assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  });
+
+  const compliance = byId['HKU-TPG-044'];
+  assert.equal(compliance.courseGroups.flatMap((group) => group.courses).some((course) => course.code === 'LLAW6093'), false);
+  assert.match(compliance.statusNote, /LLAW6093 is expressly prohibited/);
+  assert.match(compliance.courseGroups.find((group) => group.id === 'capstone-courses').ruleText, /also belong to the Core list/);
+
+  const tipl = byId['HKU-TPG-047'];
+  assert.equal(tipl.programmeName, 'Master of Laws in Technology and Intellectual Property Law (LLM(T&IPL))');
+  assert.deepEqual(tipl.courseGroups.slice(0, 3).map((group) => group.coursesRequired), [1, 1, 1]);
+  assert.equal(tipl.courseGroups.flatMap((group) => group.courses).filter((course) => course.credits === 6).length, 2);
+  assert.match(tipl.statusNote, /one of the two 6-credit ICOM electives must complete 78 credits/);
+  assert.match(tipl.statusNote, /taking both requires 75 credits/);
 });
 
 test('PolyU Hospitality and Tourism Management preserves six award paths and both project components', () => {

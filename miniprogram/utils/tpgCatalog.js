@@ -953,6 +953,12 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-16",
+      "courseSourceUrl": "https://dm.law.hku.hk/wp-content/uploads/MCL_Reg_Syll_2025-26.pdf",
+      "courseStatusNote": "The official 2025-26 MCL Regulations and Syllabus is internally inconsistent about the designated-elective minimum: the Structure on page 6 requires at least five designated electives, while the Course List heading on page 7 requires at least four. The curriculum also permits 72-78 credits depending on approved 6-credit undergraduate selections. Because the required designated-elective count determines a completion path and cannot be resolved from the public official evidence without inference, no partial course structure is published.",
+      "creditUnit": "credits",
       "courseCount": 0
     },
     {
@@ -964,18 +970,80 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-16",
+      "courseSourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLM_Reg_Syll_2025-26.pdf",
+      "courseStatusNote": "The official 2025-26 Regulations and Syllabus publishes a 72-credit General Focus and three Specialisations: Competition Law and Policy, Maritime Law, and Medical Ethics and Law. The current September 2026 Programme page lists only Competition Law and Policy and Maritime Law, so this supplement is intentionally limited to academic year 2025-26 and must not be presented as the 2026-27 specialisation set. Courses with both capstone and elective roles appear once in the Programme-local pool and their official roles are recorded in subjectGroups. Dissertation approval and prerequisites, cross-cluster minima, cluster maxima, dual-role allocation, the 18-credit dissertation substitutions, and the qualification-dependent Medical Ethics foundational path require manual audit review. Not all listed courses are offered every year.",
+      "tracks": [
+        {
+          "id": "HKU-TPG-041-GENERAL",
+          "name": "General Focus",
+          "type": "Award Path",
+          "creditsRequired": 72,
+          "sourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLM_Reg_Syll_2025-26.pdf"
+        },
+        {
+          "id": "HKU-TPG-041-COMPETITION-LAW-POLICY",
+          "name": "Competition Law and Policy",
+          "type": "Specialisation",
+          "creditsRequired": 72,
+          "sourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLM_Reg_Syll_2025-26.pdf"
+        },
+        {
+          "id": "HKU-TPG-041-MARITIME-LAW",
+          "name": "Maritime Law",
+          "type": "Specialisation",
+          "creditsRequired": 72,
+          "sourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLM_Reg_Syll_2025-26.pdf"
+        },
+        {
+          "id": "HKU-TPG-041-MEDICAL-ETHICS-LAW",
+          "name": "Medical Ethics and Law",
+          "type": "Specialisation",
+          "creditsRequired": 72,
+          "sourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLM_Reg_Syll_2025-26.pdf"
+        }
+      ],
+      "trackSelectionOptional": false,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 174
     },
     {
       "id": "HKU-TPG-042",
       "universityCode": "HKU",
       "programmeCode": "",
-      "name": "Master of Laws in Arbitration and Dispute Resolution (LLM(Arb&DR;))",
+      "name": "Master of Laws in Arbitration and Dispute Resolution (LLM(Arb&DR))",
       "faculty": "FACULTY OF LAW",
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-16",
+      "courseSourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLMADR_Reg_Syll_2025-26.pdf",
+      "courseStatusNote": "The official 2025-26 Regulations and Syllabus publishes complete 72-credit paths for candidates with and without a law degree. Law-degree candidates complete three compulsory courses, LLAW6135, at least two designated electives, and up to two General LLM electives; candidates with a non-common-law law degree may substitute up to three foundational courses with approval. Non-law candidates complete three foundational compulsory courses and LLAW6135 in the first year, then three dispute-resolution compulsory courses and one designated elective in the second year. Qualification-path selection, approved foundational substitutions, dissertation approval and prerequisite, and General LLM cluster limits require manual audit review. Not all listed courses are offered every year.",
+      "tracks": [
+        {
+          "id": "HKU-TPG-042-LAW-DEGREE",
+          "name": "Candidates with a Degree in Law",
+          "type": "Qualification Path",
+          "creditsRequired": 72,
+          "sourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLMADR_Reg_Syll_2025-26.pdf"
+        },
+        {
+          "id": "HKU-TPG-042-NON-LAW-DEGREE",
+          "name": "Candidates without a Degree in Law",
+          "type": "Qualification Path",
+          "creditsRequired": 72,
+          "sourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLMADR_Reg_Syll_2025-26.pdf"
+        }
+      ],
+      "trackSelectionOptional": false,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 178
     },
     {
       "id": "HKU-TPG-043",
@@ -986,7 +1054,14 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-16",
+      "courseSourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLMCL_Reg_Syll_2025-26.pdf",
+      "courseStatusNote": "The official 2025-26 Regulations and Syllabus publishes a complete 72-credit structure: one capstone, at least five designated electives, and up to two electives from the General LLM list. Courses that may serve as either capstone or designated elective appear once in the Programme-local pool and their roles are recorded in subjectGroups. Dissertation approval and prerequisite, dual-role allocation, the 18-credit dissertation substitution, and the General LLM cluster limit require manual audit review. Not all listed courses are offered every year.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 173
     },
     {
       "id": "HKU-TPG-044",
@@ -997,7 +1072,14 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2025-26 and thereafter",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-16",
+      "courseSourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLMCR_Reg_Syll_2025-26.pdf",
+      "courseStatusNote": "The official 2025-26 Regulations and Syllabuses publish the complete 72-credit programme-specific course list: two compulsory 9-credit foundation courses, at least two 9-credit Core Compliance and Regulation courses, at least one 9-credit Specialized Topics course and one 9- or 18-credit capstone. LLAW6245, LLAW6127, LLAW6312 and LLAW6244 can serve as either capstone or Core; they are stored only in the Capstone group to keep course codes unique. The dissertation options are mutually exclusive and require prior completion of LLAW6022 and approval. Up to two General LLM electives may be used subject to a per-Cluster cap. LLAW6093 is expressly prohibited and is not included in the course pool. Overlapping roles, dissertation conditions and annual offerings require manual review.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 64
     },
     {
       "id": "HKU-TPG-045",
@@ -1008,7 +1090,14 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2025-26 and thereafter",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-16",
+      "courseSourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLMCFL_Reg_Syll_2025-26.pdf",
+      "courseStatusNote": "The official 2025-26 Regulations and Syllabuses publish the complete 72-credit programme-specific course list. Candidates take one 9- or 18-credit capstone and at least five designated electives, with at least six programme-list courses overall. Seven subject courses can serve as either capstone or designated electives and are stored only in the Capstone group to keep course codes unique. Up to two General LLM electives may be used, reduced to one with the 18-credit dissertation. Overlapping roles, dissertation conditions, the General LLM Cluster cap and annual offerings require manual review.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 68
     },
     {
       "id": "HKU-TPG-046",
@@ -1019,18 +1108,32 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2025-26 and thereafter",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-16",
+      "courseSourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLMHR_Reg_Syll_2025-26.pdf",
+      "courseStatusNote": "The official 2025-26 Regulations and Syllabuses publish the complete 72-credit programme-specific course list: two compulsory courses, one 9- or 18-credit capstone and at least three designated electives, with at least six programme-list courses overall. Six subject courses have dual capstone and designated-elective roles and are stored only in the Capstone group to keep course codes unique. Up to two General LLM electives may be used, reduced to one with the 18-credit dissertation. Overlapping roles, dissertation conditions, the General LLM Cluster cap and annual offerings require manual review.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 34
     },
     {
       "id": "HKU-TPG-047",
       "universityCode": "HKU",
       "programmeCode": "",
-      "name": "Master of Laws in Technology and Intellectual Property Law (LLM(T&IPL;))",
+      "name": "Master of Laws in Technology and Intellectual Property Law (LLM(T&IPL))",
       "faculty": "FACULTY OF LAW",
-      "creditsRequired": 78,
+      "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2025-26 and thereafter",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-16",
+      "courseSourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLMTIPL_Reg_Syll_2025-26.pdf",
+      "courseStatusNote": "The official 2025-26 Regulations and Syllabuses publish the complete programme-specific course list and a variable 72- to 78-credit curriculum. Candidates select one compulsory course from each of Intellectual Property, Technology and Artificial Intelligence, one capstone, and at least two designated electives, with at least six programme-list courses overall. The nine compulsory options and six subject capstones also have designated-elective roles and are stored only in their compulsory or Capstone group to keep course codes unique. A candidate taking either one of the two 6-credit ICOM electives must complete 78 credits, while taking both requires 75 credits; otherwise the normal minimum is 72 credits. Credit totals, overlapping roles, dissertation conditions, optional General LLM electives and annual offerings require manual review.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 52
     },
     {
       "id": "HKU-TPG-048",
