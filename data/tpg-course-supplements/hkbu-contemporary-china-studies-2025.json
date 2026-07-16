@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-010",
+      "status": "verified",
+      "programmeName": "Master of Social Sciences (MSocSc) (Contemporary China Studies)",
+      "faculty": "Faculty of Arts and Social Sciences",
+      "creditsRequired": 27,
+      "creditUnit": "units",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/master-of-social-sciences-contemporary-china-studies-1",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The latest publicly accessible HKBU Academic Registry handbook publishes the complete 2025-26 27-unit curriculum: POLS7010 (3 units), at least one Research Methods course (3 units), 6-9 units from Concentration A, 0-6 units from Concentration B Parallel Courses, and 9-12 units from Other Elective Courses. Students must complete at least three Concentration courses overall and at least one Other Elective. Many codes are printed in more than one category, including all four Research Methods courses in the Other Elective list and HIST7570 in both Concentration A and B. Each code is stored once with subjectGroups describing every published role. The variable category ranges, cross-category memberships and no-double-counting requirement require manual audit review.",
+      "courseGroups": [
+        {
+          "id": "required-course",
+          "name": "Required Course",
+          "type": "core",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Complete POLS7010 Advanced China Studies (3 units).",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/master-of-social-sciences-contemporary-china-studies-1",
+          "courses": [
+            { "code": "POLS7010", "name": "Advanced China Studies", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/POLS7010" }
+          ]
+        },
+        {
+          "id": "concentration-and-elective-course-pool",
+          "name": "Research Methods, Concentration and Other Elective Course Pool",
+          "type": "elective",
+          "creditsRequired": 24,
+          "coursesRequired": 8,
+          "ruleText": "Complete 24 units from the published pool: at least one Research Methods course (3 units), 6-9 units from Concentration A, 0-6 units from Concentration B Parallel Courses, and 9-12 units from Other Elective Courses. Complete at least three Concentration courses overall and at least one Other Elective. A course printed in multiple categories may satisfy an applicable category rule but must count only once toward the 24-unit total. subjectGroups preserve every official category and area membership; the combined ranges require manual audit review.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/master-of-social-sciences-contemporary-china-studies-1",
+          "courses": [
+            { "code": "POLS7060", "name": "Research Methods to Public Administration Practitioners", "credits": 3, "subjectGroups": ["research-methods", "other-elective"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/POLS7060" },
+            { "code": "SOSC7410", "name": "Research Methods for Global Studies", "credits": 3, "subjectGroups": ["research-methods", "other-elective"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOSC7410" },
+            { "code": "SOSC7430", "name": "Advanced Qualitative Methods", "credits": 3, "subjectGroups": ["research-methods", "other-elective"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOSC7430" },
+            { "code": "SOSC7440", "name": "Advanced Quantitative Methods", "credits": 3, "subjectGroups": ["research-methods", "other-elective"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOSC7440" },
+            { "code": "ECON7240", "name": "Economic Development and Growth", "credits": 3, "subjectGroups": ["concentration-a", "economic-development-and-reform", "other-elective"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ECON7240" },
+            { "code": "ECON7310", "name": "Economic Institutions in China", "credits": 3, "subjectGroups": ["concentration-a", "economic-development-and-reform", "other-elective"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ECON7310" },
+            { "code": "ECON7510", "name": "China's Economic Development and Reform", "credits": 3, "subjectGroups": ["concentration-a", "economic-development-and-reform", "other-elective"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ECON7510" },
+            { "code": "ECON7520", "name": "China's Foreign Trade and Investment", "credits": 3, "subjectGroups": ["concentration-a", "economic-development-and-reform", "other-elective"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ECON7520" },
+            { "code": "ECON7540", "name": "Graduate Workshops on China's Economy", "credits": 3, "subjectGroups": ["concentration-a", "economic-development-and-reform", "other-elective"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ECON7540" },
+            { "code": "HIST7510", "name": "South China Studies", "credits": 3, "subjectGroups": ["concentration-a", "history-and-culture", "other-elective"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HIST7510" },
+            { "code": "HIST7520", "name": "Chinese Culture in Transformation", "credits": 3, "subjectGroups": ["concentration-a", "history-and-culture", "other-elective"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HIST7520" },
+            { "code": "HIST7530", "name": "Graduate Seminar on Contemporary Chinese History", "credits": 3, "subjectGroups": ["concentration-a", "history-and-culture", "other-elective"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HIST7530" },
+            { "code": "HIST7550", "name": "History of Taiwan", "credits": 3, "subjectGroups": ["concentration-a", "history-and-culture"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HIST7550" },
+            { "code": "HIST7570", "name": "China and Asia since 1900", "credits": 3, "subjectGroups": ["concentration-a", "concentration-b", "history-and-culture", "other-elective"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HIST7570" },
+            { "code": "SOC7510", "name": "Social Networks in Contemporary Chinese Societies", "credits": 3, "subjectGroups": ["concentration-a", "society-and-community", "other-elective"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOC7510" },
+            { "code": "SOC7530", "name": "Graduate Seminar on Contemporary Social Issues in China", "credits": 3, "subjectGroups": ["concentration-a", "society-and-community", "other-elective"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOC7530" },
+            { "code": "SOC7540", "name": "Chinese Social Demography", "credits": 3, "subjectGroups": ["concentration-a", "society-and-community", "other-elective"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOC7540" },
+            { "code": "SOC7590", "name": "Popular Culture and Society in Contemporary China", "credits": 3, "subjectGroups": ["concentration-a", "society-and-community", "other-elective"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOC7590" },
+            { "code": "GEOG7520", "name": "Urban and Regional Development of China", "credits": 3, "subjectGroups": ["concentration-a", "urban-development-and-environmental-management", "other-elective"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/GEOG7520" },
+            { "code": "GEOG7530", "name": "Graduate Seminar on Geography of China", "credits": 3, "subjectGroups": ["concentration-a", "urban-development-and-environmental-management", "other-elective"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/GEOG7530" },
+            { "code": "ECON7320", "name": "Public Finance and Monetary Economics in China", "credits": 3, "subjectGroups": ["concentration-b", "economic-development-and-reform"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ECON7320" },
+            { "code": "ECON7550", "name": "Financial Markets and Corporate Governance in China", "credits": 3, "subjectGroups": ["concentration-b", "economic-development-and-reform"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ECON7550" },
+            { "code": "HIST7540", "name": "Contemporary Chinese Political Thought", "credits": 3, "subjectGroups": ["concentration-b", "history-and-culture"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HIST7540" },
+            { "code": "SOC7560", "name": "Sociological Issues in Urban and Rural Development", "credits": 3, "subjectGroups": ["concentration-b", "society-and-community"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOC7560" },
+            { "code": "SOC7570", "name": "Chinese Family and Kinship", "credits": 3, "subjectGroups": ["concentration-b", "society-and-community"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOC7570" },
+            { "code": "SOC7580", "name": "Gender in Contemporary China", "credits": 3, "subjectGroups": ["concentration-b", "society-and-community"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOC7580" },
+            { "code": "GEOG7510", "name": "Resource and Environmental Management in China", "credits": 3, "subjectGroups": ["concentration-b", "urban-development-and-environmental-management"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/GEOG7510" },
+            { "code": "GEOG7540", "name": "Sustainable Energy and Technological Innovation in China", "credits": 3, "subjectGroups": ["concentration-b", "urban-development-and-environmental-management"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/GEOG7540" },
+            { "code": "GEOG7560", "name": "Rural and Agricultural Development in China", "credits": 3, "subjectGroups": ["concentration-b", "urban-development-and-environmental-management"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/GEOG7560" },
+            { "code": "GEOG7570", "name": "Urban Development in China", "credits": 3, "subjectGroups": ["concentration-b", "urban-development-and-environmental-management"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/GEOG7570" },
+            { "code": "SOC7310", "name": "Globalization and Development: Visions and Issues", "credits": 3, "subjectGroups": ["other-elective"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOC7310" },
+            { "code": "SOSC7510", "name": "Project", "credits": 3, "courseKind": "project", "subjectGroups": ["other-elective"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOSC7510" },
+            { "code": "SOSC7520", "name": "Introduction to Academic, Policy, and Business Research Writing", "credits": 3, "subjectGroups": ["other-elective"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOSC7520" }
+          ]
+        }
+      ]
+    }
+  ]
+}

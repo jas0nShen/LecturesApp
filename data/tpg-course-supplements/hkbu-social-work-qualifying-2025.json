@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-014",
+      "status": "verified",
+      "creditsRequired": 37,
+      "creditUnit": "units",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-social-work-1",
+      "ruleReviewStatus": "verified",
+      "statusNote": "The latest publicly accessible HKBU Academic Registry handbook page publishes the complete 2025-26 37-unit qualifying curriculum: nine Social Work Courses (21 units, including the required zero-unit SOWK7810 Community Study), one Elective (3 units), three Integrative Tutorials (3 units), and two Fieldwork Placements (10 units). The protected 2026-27 handbook must be rechecked when it becomes publicly accessible; this curriculum record does not replace HKBU or Social Workers Registration Board professional-registration decisions.",
+      "courseGroups": [
+        {
+          "id": "social-work-courses",
+          "name": "Social Work Courses",
+          "type": "core",
+          "creditsRequired": 21,
+          "coursesRequired": 9,
+          "ruleText": "Complete all nine Social Work Courses. Their official credits total 21 units because SOWK7810 Community Study is a required zero-unit course.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-social-work-1",
+          "courses": [
+            { "code": "SOWK7040", "name": "Research and Programme Evaluation", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7040" },
+            { "code": "SOWK7610", "name": "Society and Social Policy", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7610" },
+            { "code": "SOWK7620", "name": "Human Development and Cultural Differences", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7620" },
+            { "code": "SOWK7630", "name": "Social Work Theory and Practice I", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7630" },
+            { "code": "SOWK7641", "name": "Social Work Theory and Practice II", "credits": 1, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7641" },
+            { "code": "SOWK7642", "name": "Social Work Theory and Practice II", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7642" },
+            { "code": "SOWK7650", "name": "Management in Human Service Organizations", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7650" },
+            { "code": "SOWK7770", "name": "Social Work, Law and Social Justice", "credits": 2, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7770" },
+            { "code": "SOWK7810", "name": "Community Study", "credits": 0, "countsTowardProgrammeCredits": false, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7810" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Complete one 3-unit Elective Course.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-social-work-1",
+          "courses": [
+            { "code": "SOWK7110", "name": "Mental Health, Mental Disorder and Social Work", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7110" },
+            { "code": "SOWK7120", "name": "Child and Adolescent Mental Health", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7120" },
+            { "code": "SOWK7430", "name": "Narrative Approach to Counselling", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7430" },
+            { "code": "SOWK7670", "name": "Social Work Project", "credits": 3, "courseKind": "project", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7670" },
+            { "code": "SOWK7720", "name": "Social Work with Older People", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7720" },
+            { "code": "SOWK7730", "name": "Social Work with Youth", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7730" },
+            { "code": "SOWK7740", "name": "Social Work with People with Mental Health Problems", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7740" },
+            { "code": "SOWK7750", "name": "Social Work with Disadvantaged Groups", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7750" },
+            { "code": "SOWK7760", "name": "Special Topics in Social Work", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7760" },
+            { "code": "SOWK7820", "name": "Social Work with Families", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7820" },
+            { "code": "SOWK7840", "name": "Data Methodology in Social Sciences Research", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7840" },
+            { "code": "SOWK7890", "name": "Career Facilitation and Counselling", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7890" }
+          ]
+        },
+        {
+          "id": "integrative-tutorials",
+          "name": "Integrative Tutorials",
+          "type": "core",
+          "creditsRequired": 3,
+          "coursesRequired": 3,
+          "ruleText": "Complete all three 1-unit Integrative Tutorials (3 units).",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-social-work-1",
+          "courses": [
+            { "code": "SOWK7680", "name": "Social Work Integrative Tutorial I", "credits": 1, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7680" },
+            { "code": "SOWK7690", "name": "Social Work Integrative Tutorial II", "credits": 1, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7690" },
+            { "code": "SOWK7780", "name": "Social Work Integrative Tutorial III", "credits": 1, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7780" }
+          ]
+        },
+        {
+          "id": "fieldwork-placements",
+          "name": "Fieldwork Placements",
+          "type": "placement",
+          "creditsRequired": 10,
+          "coursesRequired": 2,
+          "ruleText": "Complete both 5-unit Fieldwork Placements (10 units). The official page notes a summer placement in Year 1 and a Semester 2 placement in Year 2 for students selecting an overseas placement.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-social-work-1",
+          "courses": [
+            { "code": "SOWK7700", "name": "Fieldwork Practice I", "credits": 5, "courseKind": "placement", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7700" },
+            { "code": "SOWK7710", "name": "Fieldwork Practice II", "credits": 5, "courseKind": "placement", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7710" }
+          ]
+        }
+      ]
+    }
+  ]
+}

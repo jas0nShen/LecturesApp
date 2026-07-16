@@ -3,6 +3,7 @@ const { test } = require('node:test');
 
 const { applySupplements, validateSupplement } = require('./import-tpg-course-supplements');
 const { buildCoverageReport, inspectProgramme } = require('./report-tpg-course-coverage');
+const { parseCourseRefs: parseHkustCourseRefs } = require('./fetch-hkust-tpg-curricula');
 const { buildSupplement: buildHkuEngineeringSupplement } = require('./build-hku-engineering-supplement');
 const { buildSupplement: buildHkuEcicSupplement } = require('./build-hku-ecic-supplement');
 const { buildSupplement: buildHkuGovernancePolicySupplement } = require('./build-hku-governance-policy-supplement');
@@ -21,17 +22,32 @@ const { buildSupplement: buildHkuBuddhistCounsellingSupplement } = require('./bu
 const { buildSupplement: buildHkuBuddhistStudiesSupplement } = require('./build-hku-buddhist-studies-supplement');
 const { buildSupplement: buildHkuCreativeWritingMfaSupplement } = require('./build-hku-creative-writing-mfa-supplement');
 const { buildSupplement: buildHkuEndodonticsSupplement } = require('./build-hku-endodontics-supplement');
+const { TRACK_ID: HKBU_COMMUNICATION_TRACK_ID, buildSupplement: buildHkbuCommunicationSupplement } = require('./build-hkbu-communication-supplement');
+const { TRACKS: HKBU_MAIJS_TRACKS, buildSupplement: buildHkbuInternationalJournalismSupplement } = require('./build-hkbu-international-journalism-supplement');
+const { buildSupplement: buildHkbuMediaManagementSupplement } = require('./build-hkbu-media-management-supplement');
+const { buildSupplement: buildHkbuMbaMainlandSupplement } = require('./build-hkbu-mba-mainland-supplement');
+const { MCM_TRACKS: HKBU_MCM_TRACKS, buildSupplements: buildHkbuChineseMedicineSupplements } = require('./build-hkbu-chinese-medicine-supplements');
+const { MFA_TRACKS: HKBU_MFA_TRACKS, VISUAL_ARTS_TRACKS: HKBU_VISUAL_ARTS_TRACKS, buildSupplements: buildHkbuCreativeArtsSupplements } = require('./build-hkbu-creative-arts-supplements');
 const { buildSupplement: buildPolyuHospitalityTourismManagementSupplement } = require('./build-polyu-hospitality-tourism-management-supplement');
 const { buildSupplement: buildPolyuSustainableTechnologyCarbonNeutralitySupplement } = require('./build-polyu-sustainable-technology-carbon-neutrality-supplement');
 const { buildSupplement: buildPolyuBiopharmaceuticalDevelopmentSupplement } = require('./build-polyu-biopharmaceutical-development-supplements');
 const { TRACKS: POLYU_OT_TRACKS, buildSupplement: buildPolyuAdvancedOccupationalTherapySupplement } = require('./build-polyu-advanced-occupational-therapy-supplement');
 const { SPECIALISM_ID: POLYU_REHAB_SPECIALISM_ID, buildSupplement: buildPolyuAdvancedRehabilitationSciencesSupplement } = require('./build-polyu-advanced-rehabilitation-sciences-supplement');
 const { buildSupplement: buildPolyuActuarialInvestmentScienceSupplement } = require('./build-polyu-actuarial-investment-science-supplement');
+const { buildSupplement: buildPolyuOperationalResearchRiskAnalysisSupplement } = require('./build-polyu-operational-research-risk-analysis-supplement');
 const { buildSupplement: buildPolyuAmaFinanceAiSupplement } = require('./build-polyu-ama-finance-ai-supplements');
 const { buildSupplement: buildPolyuHealthInformaticsSupplement } = require('./build-polyu-health-informatics-supplement');
 const { buildSupplement: buildPolyuChineseCultureSupplement } = require('./build-polyu-chinese-culture-supplement');
 const { TRACKS: POLYU_DESIGN_TRACKS, buildSupplement: buildPolyuDesignSupplement } = require('./build-polyu-design-supplement');
 const { IT_TRACKS, buildInformationTechnology } = require('./build-polyu-comp-supplements');
+const { buildSupplement: buildPolyuFoodScienceNutritionSupplement } = require('./build-polyu-food-science-nutrition-supplement');
+const { buildSupplement: buildPolyuEngineeringBusinessManagementSupplement } = require('./build-polyu-engineering-business-management-supplement');
+const { buildSupplement: buildPolyuIndustrialSystemsEngineeringSupplement } = require('./build-polyu-industrial-systems-engineering-supplement');
+const { OM_TRACKS: POLYU_OM_TRACKS, buildSupplement: buildPolyuLogisticsManagementSupplement } = require('./build-polyu-logistics-management-supplement');
+const { buildSupplement: buildPolyuBusinessAnalyticsSupplement } = require('./build-polyu-business-analytics-supplement');
+const { buildSupplement: buildPolyuManagementMarketingSupplement } = require('./build-polyu-management-marketing-supplement');
+const { buildSupplement: buildPolyuDsaiSupplement } = require('./build-polyu-dsai-supplement');
+const { TRACKS: POLYU_ME_TRACKS, buildSupplement: buildPolyuMechanicalEngineeringSupplement } = require('./build-polyu-mechanical-engineering-supplement');
 
 function fixtureCatalogue() {
   return {
@@ -71,6 +87,18 @@ function fixtureSupplement() {
     }]
   };
 }
+
+test('HKUST course reference parsing trims official attribute whitespace', () => {
+  const [course] = parseHkustCourseRefs('<button data-crse-idx=" 108001 " data-acad-year="2026-27 " data-crse-code="OCES6111 " data-crse-prefix="OCES " data-crse-log-num="6111 ">Course</button>');
+
+  assert.deepEqual(course, {
+    idx: '108001',
+    academicYear: '2026-27',
+    code: 'OCES6111',
+    prefix: 'OCES',
+    number: '6111'
+  });
+});
 
 test('TPG course supplement import is deterministic and preserves Programme IDs', () => {
   const catalogue = fixtureCatalogue();
@@ -269,10 +297,35 @@ test('TPG course supplements reject a Programme repeated across source files', (
 test('TPG coverage distinguishes complete structures from manual-rule review', () => {
   const imported = applySupplements(fixtureCatalogue(), [{ file: 'fixture.json', value: fixtureSupplement() }]);
   const row = inspectProgramme(imported.programmes[0], new Date('2026-07-11'));
+  assert.equal(row.verificationStatus, 'verified');
   assert.deepEqual(row.issues, ['manual-rule-review']);
   const report = buildCoverageReport(imported.programmes);
   assert.equal(report.complete, 1);
+  assert.equal(report.sourceReviewed, 1);
+  assert.equal(report.sourceCoveragePercent, 100);
   assert.equal(report.schools[0].courses, 1);
+});
+
+test('TPG coverage separates source-blocked and archived Programmes from unreviewed work', () => {
+  const catalogue = fixtureCatalogue();
+  const blocked = { ...catalogue.programmes[0], id: 'TEST-TPG-002', courseVerificationStatus: 'blocked' };
+  const archived = { ...catalogue.programmes[0], id: 'TEST-TPG-003', courseVerificationStatus: 'archived' };
+  const report = buildCoverageReport([...catalogue.programmes, blocked, archived]);
+  const school = report.schools[0];
+
+  assert.deepEqual(report.rows.map((row) => row.verificationStatus), ['unreviewed', 'blocked', 'archived']);
+  assert.equal(report.sourceReviewed, 2);
+  assert.equal(report.sourceCoveragePercent, 66.7);
+  assert.equal(report.blocked, 1);
+  assert.equal(report.archived, 1);
+  assert.equal(report.unreviewed, 1);
+  assert.equal(school.sourceReviewed, 2);
+  assert.equal(school.sourceCoveragePercent, 66.7);
+  assert.equal(school.verified, 0);
+  assert.equal(school.blocked, 1);
+  assert.equal(school.archived, 1);
+  assert.equal(school.unreviewed, 1);
+  assert.equal(school.complete, 0);
 });
 
 test('TPG coverage keeps and-thereafter curricula current while flagging a fixed old academic year', () => {
@@ -298,6 +351,172 @@ test('TPG coverage reports courses pending official approval separately', () => 
   const row = inspectProgramme(imported.programmes[0], new Date('2026-07-11'));
   assert.deepEqual(row.issues, ['course:TST5001:pending-approval', 'manual-rule-review']);
   assert.equal(buildCoverageReport(imported.programmes).complete, 0);
+});
+
+test('HKBU Communication supplement preserves the optional Concentration and all official course pools', () => {
+  const supplement = buildHkbuCommunicationSupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'hkbu-communication-2025.json');
+  const programme = supplement.programmes[0];
+  const codes = programme.courseGroups.flatMap((group) => group.courses.map((course) => course.code));
+  const concentration = programme.courseGroups.find((group) => group.id === 'interactive-media-concentration-required');
+  const requirement = programme.courseGroups.find((group) => group.id === 'elective-requirement');
+  const programmePool = programme.courseGroups.find((group) => group.id === 'programme-elective-pool');
+  const externalPool = programme.courseGroups.find((group) => group.id === 'approved-external-elective-pool');
+  const optional = programme.courseGroups.find((group) => group.id === 'optional-zero-unit-courses');
+
+  assert.equal(programme.programmeId, 'HKBU-TPG-041');
+  assert.equal(programme.creditsRequired, 27);
+  assert.equal(programme.trackSelectionOptional, true);
+  assert.deepEqual(programme.tracks.map((track) => [track.id, track.name]), [[HKBU_COMMUNICATION_TRACK_ID, 'Interactive Media']]);
+  assert.deepEqual([codes.length, new Set(codes).size], [98, 98]);
+  assert.deepEqual([concentration.creditsRequired, concentration.coursesRequired, concentration.courses.length], [9, 3, 3]);
+  assert.deepEqual(requirement.creditsRequiredByTrackIds, { [HKBU_COMMUNICATION_TRACK_ID]: 12 });
+  assert.deepEqual(requirement.coursesRequiredByTrackIds, { [HKBU_COMMUNICATION_TRACK_ID]: 4 });
+  assert.equal(programmePool.courses.filter((course) => course.appliesToTrackIds.includes(HKBU_COMMUNICATION_TRACK_ID)).length, 7);
+  assert.deepEqual([externalPool.creditsMax, externalPool.coursesMax, externalPool.courses.length], [6, 2, 31]);
+  assert.deepEqual(optional.courses.map((course) => course.credits), [0, 0, 0]);
+});
+
+test('HKBU International Journalism preserves both Concentrations and cross-role course rules', () => {
+  const supplement = buildHkbuInternationalJournalismSupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'hkbu-international-journalism-2025.json');
+  const programme = supplement.programmes[0];
+  const codes = programme.courseGroups.flatMap((group) => group.courses.map((course) => course.code));
+  const requirement = programme.courseGroups.find((group) => group.id === 'concentration-required-requirement');
+  const crossRole = programme.courseGroups.find((group) => group.id === 'required-elective-cross-role-courses');
+  const electives = programme.courseGroups.find((group) => group.id === 'elective-requirement');
+  const programmePool = programme.courseGroups.find((group) => group.id === 'programme-elective-pool');
+  const externalPool = programme.courseGroups.find((group) => group.id === 'approved-external-elective-pool');
+
+  assert.equal(programme.programmeId, 'HKBU-TPG-042');
+  assert.equal(programme.creditsRequired, 27);
+  assert.equal(programme.trackSelectionOptional, false);
+  assert.deepEqual(programme.tracks.map((track) => track.id), Object.values(HKBU_MAIJS_TRACKS));
+  assert.deepEqual([codes.length, new Set(codes).size], [61, 61]);
+  assert.deepEqual(requirement.creditsRequiredByTrackIds, { [HKBU_MAIJS_TRACKS.IJ]: 15, [HKBU_MAIJS_TRACKS.BFJ]: 15 });
+  assert.deepEqual(electives.coursesRequiredByTrackIds, { [HKBU_MAIJS_TRACKS.IJ]: 4, [HKBU_MAIJS_TRACKS.BFJ]: 4 });
+  assert.equal(crossRole.courses.find((course) => course.code === 'JOUR7010').conditionalRequirement, true);
+  assert.deepEqual(crossRole.courses.find((course) => course.code === 'JOUR7150').requiredForTrackIds, [HKBU_MAIJS_TRACKS.BFJ]);
+  assert.deepEqual(programmePool.courses.find((course) => course.code === 'JOUR7120').appliesToTrackIds, [HKBU_MAIJS_TRACKS.IJ]);
+  assert.equal(programmePool.courses.find((course) => course.code === 'JOUR7130').courseKind, 'project_or_dissertation');
+  assert.deepEqual([externalPool.creditsMax, externalPool.coursesMax, externalPool.courses.length], [3, 1, 26]);
+});
+
+test('HKBU Media Management preserves the optional Project path and bounded external Electives', () => {
+  const supplement = buildHkbuMediaManagementSupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'hkbu-media-management-2025.json');
+  const programme = supplement.programmes[0];
+  const codes = programme.courseGroups.flatMap((group) => group.courses.map((course) => course.code));
+  const required = programme.courseGroups.find((group) => group.id === 'required-courses');
+  const electives = programme.courseGroups.find((group) => group.id === 'elective-requirement');
+  const business = programme.courseGroups.find((group) => group.id === 'business-electives');
+  const communication = programme.courseGroups.find((group) => group.id === 'communication-electives');
+  const external = programme.courseGroups.find((group) => group.id === 'other-programme-electives');
+  const project = programme.courseGroups.find((group) => group.id === 'project-or-additional-elective');
+
+  assert.equal(programme.programmeId, 'HKBU-TPG-043');
+  assert.equal(programme.creditsRequired, 27);
+  assert.deepEqual([codes.length, new Set(codes).size], [83, 83]);
+  assert.deepEqual([required.creditsRequired, required.coursesRequired, required.courses.length], [12, 4, 4]);
+  assert.deepEqual([electives.creditsRequired, electives.coursesRequired, electives.courses.length], [12, 4, 0]);
+  assert.deepEqual([business.courses.length, communication.courses.length], [9, 47]);
+  assert.deepEqual([external.creditsMax, external.coursesMax, external.courses.length], [6, 2, 22]);
+  assert.deepEqual([project.creditsRequired, project.coursesRequired, project.courses[0].code, project.courses[0].courseKind], [3, 1, 'COMM7290', 'project']);
+});
+
+test('HKBU Mainland MBA preserves its eleven Core, segmented Capstone and current Advanced Elective pool', () => {
+  const supplement = buildHkbuMbaMainlandSupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'hkbu-mba-mainland-2025.json');
+  const programme = supplement.programmes[0];
+  const codes = programme.courseGroups.flatMap((group) => group.courses.map((course) => course.code));
+  const core = programme.courseGroups.find((group) => group.id === 'core-courses');
+  const required = programme.courseGroups.find((group) => group.id === 'required-courses');
+  const electives = programme.courseGroups.find((group) => group.id === 'advanced-electives');
+
+  assert.equal(programme.programmeId, 'HKBU-TPG-027');
+  assert.equal(programme.creditsRequired, 45);
+  assert.equal(programme.creditUnit, 'units');
+  assert.deepEqual([codes.length, new Set(codes).size], [29, 29]);
+  assert.deepEqual([core.creditsRequired, core.coursesRequired, core.courses.length], [33, 11, 11]);
+  assert.deepEqual([required.creditsRequired, required.coursesRequired, required.courses.length], [6, 5, 5]);
+  assert.deepEqual(required.courses.map((course) => course.credits), [1, 1, 1, 0, 3]);
+  assert.equal(required.courses.filter((course) => course.courseKind === 'project').length, 3);
+  assert.deepEqual([electives.creditsRequired, electives.coursesRequired, electives.courses.length], [6, 2, 13]);
+  assert.match(electives.ruleText, /Recommended non-MBA Electives/);
+});
+
+test('HKBU Chinese Medicine supplements preserve official completion alternatives and MCM Concentrations', () => {
+  const supplements = buildHkbuChineseMedicineSupplements();
+  const catalogue = require('../data/tpg-programmes.json');
+  supplements.forEach(({ filename, value }) => validateSupplement(value, catalogue, filename));
+  const programmes = supplements.flatMap(({ value }) => value.programmes);
+  const byId = Object.fromEntries(programmes.map((programme) => [programme.programmeId, programme]));
+  const counts = programmes.map((programme) => {
+    const codes = programme.courseGroups.flatMap((group) => group.courses.map((course) => course.code));
+    return [programme.programmeId, codes.length, new Set(codes).size];
+  });
+
+  assert.deepEqual(counts, [
+    ['HKBU-TPG-037', 14, 14],
+    ['HKBU-TPG-038', 13, 13],
+    ['HKBU-TPG-039', 15, 15],
+    ['HKBU-TPG-040', 22, 22]
+  ]);
+  assert.deepEqual(byId['HKBU-TPG-037'].courseGroups.map((group) => group.creditsRequired || null), [27, 3, null]);
+  assert.deepEqual(
+    byId['HKBU-TPG-038'].courseGroups[0].courses.slice(-2).map((course) => [course.code, course.credits]),
+    [['MDD7130', 1.5], ['MDD7140', 1.5]]
+  );
+  assert.deepEqual(byId['HKBU-TPG-039'].courseGroups[1].courses.map((course) => course.linkedSequenceId), [
+    'MPS708-DISSERTATION',
+    'MPS708-DISSERTATION',
+    'MPS-TAUGHT-ALTERNATIVE',
+    'MPS-TAUGHT-ALTERNATIVE'
+  ]);
+  assert.deepEqual(byId['HKBU-TPG-040'].tracks.map((track) => track.id), Object.values(HKBU_MCM_TRACKS));
+  assert.equal(byId['HKBU-TPG-040'].trackSelectionOptional, false);
+  assert.deepEqual(
+    byId['HKBU-TPG-040'].courseGroups.find((group) => group.id === 'concentration-courses').courses.find((course) => course.code === 'MCM7080').appliesToTrackIds,
+    [HKBU_MCM_TRACKS.ACU, HKBU_MCM_TRACKS.OT]
+  );
+});
+
+test('HKBU Creative Arts supplements preserve the current MFA, Producing, Music and Visual Arts rules', () => {
+  const supplements = buildHkbuCreativeArtsSupplements();
+  const catalogue = require('../data/tpg-programmes.json');
+  supplements.forEach(({ filename, value }) => validateSupplement(value, catalogue, filename));
+  const programmes = supplements.flatMap(({ value }) => value.programmes);
+  const byId = Object.fromEntries(programmes.map((programme) => [programme.programmeId, programme]));
+  const counts = programmes.map((programme) => {
+    const codes = programme.courseGroups.flatMap((group) => group.courses.map((course) => course.code));
+    return [programme.programmeId, codes.length, new Set(codes).size];
+  });
+
+  assert.deepEqual(counts, [
+    ['HKBU-TPG-045', 50, 50],
+    ['HKBU-TPG-046', 36, 36],
+    ['HKBU-TPG-047', 45, 45],
+    ['HKBU-TPG-048', 12, 12]
+  ]);
+  assert.equal(byId['HKBU-TPG-045'].creditsRequired, 48);
+  assert.deepEqual(byId['HKBU-TPG-045'].tracks.map((track) => track.id), Object.values(HKBU_MFA_TRACKS));
+  assert.deepEqual(
+    byId['HKBU-TPG-045'].courseGroups.find((group) => group.id === 'core-courses').courses.slice(-2).map((course) => [course.code, course.credits]),
+    [['CTV7501', 3], ['CTV7502', 6]]
+  );
+  assert.deepEqual(
+    byId['HKBU-TPG-045'].courseGroups.find((group) => group.id === 'creativity-production-electives').courses.find((course) => course.code === 'CTV7413').requiredForTrackIds,
+    [HKBU_MFA_TRACKS.DOCUMENTARY]
+  );
+  assert.deepEqual([byId['HKBU-TPG-046'].courseGroups[3].creditsMax, byId['HKBU-TPG-046'].courseGroups[3].coursesMax], [6, 2]);
+  assert.deepEqual([byId['HKBU-TPG-047'].courseGroups[1].creditsRequired, byId['HKBU-TPG-047'].courseGroups[1].coursesRequired], [24, 8]);
+  assert.equal(byId['HKBU-TPG-047'].ruleReviewStatus, 'verified');
+  assert.deepEqual(byId['HKBU-TPG-048'].tracks.map((track) => track.id), Object.values(HKBU_VISUAL_ARTS_TRACKS));
+  assert.deepEqual(byId['HKBU-TPG-048'].courseGroups[1].courses.map((course) => course.credits), Array(8).fill(4.5));
 });
 
 test('PolyU Sustainable Technology for Carbon Neutrality preserves both official project paths', () => {
@@ -427,6 +646,32 @@ test('PolyU Actuarial and Investment Science preserves taught and Dissertation p
   assert.equal(academicIntegrity.courses[0].code, 'DSAI5T09');
   assert.equal(new Set(courses.map((course) => course.code)).size, 19);
   assert.match(programme.statusNote, /must not be combined/);
+});
+
+test('PolyU Operational Research and Risk Analysis resolves the 2027 InsurTech elective without retaining AMA570', () => {
+  const supplement = buildPolyuOperationalResearchRiskAnalysisSupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'polyu-operational-research-risk-analysis-2027.json');
+  const programme = supplement.programmes[0];
+  const [compulsory, electives, dissertation, academicIntegrity] = programme.courseGroups;
+  const courses = programme.courseGroups.flatMap((group) => group.courses);
+
+  assert.equal(programme.programmeId, 'POLYU-TPG-076');
+  assert.equal(programme.creditsRequired, 31);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.deepEqual([compulsory.creditsRequired, compulsory.coursesRequired, compulsory.courses.length], [21, 7, 7]);
+  assert.deepEqual([electives.creditsRequired, electives.coursesRequired, electives.courses.length], [9, 3, 15]);
+  assert.equal(electives.courses.find((course) => course.code === 'AMA580').name, 'Advanced Topics in InsurTech');
+  assert.equal(electives.courses.find((course) => course.code === 'AMA580').sourceUrl, 'https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/');
+  assert.equal(electives.courses.some((course) => course.code === 'AMA570'), false);
+  assert.equal(electives.courses.find((course) => course.name === 'Statistical Data Mining').code, 'DSAI5101');
+  assert.deepEqual(dissertation.courses.map((course) => [course.code, course.credits, course.courseKind, course.conditionalRequirement]), [
+    ['AMA592', 9, 'dissertation', true]
+  ]);
+  assert.equal(academicIntegrity.courses[0].code, 'DSAI5T09');
+  assert.equal(new Set(courses.map((course) => course.code)).size, 24);
+  assert.match(programme.statusNote, /AMA570 Current Topics in Actuarial Science entry.*not included/);
+  assert.match(programme.statusNote, /mutually exclusive/);
 });
 
 test('PolyU AMA Finance and AI programmes preserve current coded completion paths', () => {
@@ -1057,4 +1302,236 @@ test('PolyU Hospitality and Tourism Management preserves six award paths and bot
   assert.match(projects.ruleText, /Non-Research Component/);
   assert.match(electives.ruleText, /IWM/);
   assert.match(programme.statusNote, /must not infer completion/);
+});
+
+test('PolyU Food Science and Nutrition supplements preserve exact required credits and the Dietetics subtotal conflict', () => {
+  const supplement = buildPolyuFoodScienceNutritionSupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'polyu-food-science-nutrition-2027.json');
+  const byId = Object.fromEntries(supplement.programmes.map((programme) => [programme.programmeId, programme]));
+
+  assert.deepEqual(supplement.programmes.map((programme) => programme.programmeId), [
+    'POLYU-TPG-048',
+    'POLYU-TPG-049',
+    'POLYU-TPG-050',
+    'POLYU-TPG-051'
+  ]);
+  assert.deepEqual(supplement.programmes.map((programme) => programme.creditsRequired), [31, 31, 31, 64]);
+  assert.deepEqual(
+    supplement.programmes.map((programme) => programme.courseGroups.flatMap((group) => group.courses).length),
+    [8, 11, 11, 18]
+  );
+  assert.equal(byId['POLYU-TPG-048'].ruleReviewStatus, 'verified');
+  assert.equal(byId['POLYU-TPG-048'].courseGroups.find((group) => group.id === 'capstone-project').courses[0].credits, 6);
+  assert.equal(byId['POLYU-TPG-049'].courseGroups.flatMap((group) => group.courses).filter((course) => course.code === 'FSN5026').length, 1);
+  assert.equal(byId['POLYU-TPG-050'].courseGroups.flatMap((group) => group.courses).filter((course) => course.code === 'FSN5027').length, 1);
+  assert.deepEqual(
+    byId['POLYU-TPG-051'].courseGroups.find((group) => group.id === 'dietetic-placements').courses.map((course) => [course.code, course.credits]),
+    [['FSN5038', 3], ['FSN5039', 8], ['FSN5040', 7]]
+  );
+  assert.equal(byId['POLYU-TPG-051'].ruleReviewStatus, 'manual_review_required');
+  assert.match(byId['POLYU-TPG-051'].statusNote, /lists 16 credits.*prints a 15-credit subtotal/);
+  assert.match(byId['POLYU-TPG-051'].statusNote, /official 64-credit Programme total/);
+});
+
+test('PolyU Engineering Business Management preserves the corrected name and 37 PolyU-credit MSc path', () => {
+  const supplement = buildPolyuEngineeringBusinessManagementSupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'polyu-engineering-business-management-2027.json');
+  const programme = supplement.programmes[0];
+  const [core, electives, dissertation, integrity] = programme.courseGroups;
+
+  assert.equal(programme.programmeId, 'POLYU-TPG-052');
+  assert.equal(programme.programmeName, 'Engineering Business Management');
+  assert.equal(programme.creditsRequired, 37);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.deepEqual(programme.courseGroups.map((group) => group.creditsRequired), [21, 3, 12, 1]);
+  assert.deepEqual([core.courses.length, electives.courses.length, dissertation.courses.length, integrity.courses.length], [7, 2, 1, 1]);
+  assert.equal(new Set(programme.courseGroups.flatMap((group) => group.courses).map((course) => course.code)).size, 11);
+  assert.deepEqual(dissertation.courses.map((course) => [course.code, course.credits, course.courseKind]), [
+    ['ISE5771', 12, 'dissertation']
+  ]);
+  assert.equal(integrity.courses[0].code, 'EEE5T03');
+  assert.match(programme.statusNote, /Warwick credit values are not modelled as MSc completion paths/);
+});
+
+test('PolyU ISE supplements preserve both completion paths and official Dissertation codes', () => {
+  const supplement = buildPolyuIndustrialSystemsEngineeringSupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'polyu-industrial-systems-engineering-2027.json');
+  const byId = Object.fromEntries(supplement.programmes.map((programme) => [programme.programmeId, programme]));
+
+  assert.deepEqual(supplement.programmes.map((programme) => programme.programmeId), [
+    'POLYU-TPG-053',
+    'POLYU-TPG-054',
+    'POLYU-TPG-055'
+  ]);
+  assert.deepEqual(
+    supplement.programmes.map((programme) => programme.courseGroups.flatMap((group) => group.courses).length),
+    [23, 25, 16]
+  );
+  assert.equal(supplement.programmes.every((programme) => programme.creditsRequired === 31), true);
+  assert.equal(supplement.programmes.every((programme) => programme.ruleReviewStatus === 'manual_review_required'), true);
+  assert.deepEqual(
+    supplement.programmes.map((programme) => {
+      const course = programme.courseGroups.find((group) => group.id === 'dissertation-option').courses[0];
+      return [course.code, course.credits, course.courseKind];
+    }),
+    [['ISE529', 9, 'dissertation'], ['ISE5003', 9, 'dissertation'], ['ISE5699', 9, 'dissertation']]
+  );
+  supplement.programmes.forEach((programme) => {
+    assert.equal(programme.courseGroups.find((group) => group.id === 'compulsory-subjects').creditsRequired, 12);
+    assert.equal(programme.courseGroups.find((group) => group.id === 'academic-integrity').courses[0].code, 'EEE5T03');
+    assert.match(programme.statusNote, /seven taught subjects plus Dissertation or ten taught subjects/);
+  });
+  const smartManufacturingCourses = byId['POLYU-TPG-055'].courseGroups.flatMap((group) => group.courses);
+  assert.equal(smartManufacturingCourses.find((course) => course.code === 'ISE5334').name, 'Industrial Prompt Engineering for Generative Artificial Intelligence');
+  assert.equal(smartManufacturingCourses.find((course) => course.code === 'ISE538').name, 'Process and Performance Measurement');
+  assert.match(byId['POLYU-TPG-055'].statusNote, /Subject Syllabus is titled Process and Performance Management/);
+});
+
+test('PolyU LMS supplements preserve current codes, Stream ownership and Project paths', () => {
+  const supplement = buildPolyuLogisticsManagementSupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'polyu-logistics-management-2027.json');
+  const byId = Object.fromEntries(supplement.programmes.map((programme) => [programme.programmeId, programme]));
+
+  assert.deepEqual(supplement.programmes.map((programme) => programme.programmeId), [
+    'POLYU-TPG-058',
+    'POLYU-TPG-059',
+    'POLYU-TPG-060',
+    'POLYU-TPG-061',
+    'POLYU-TPG-062'
+  ]);
+  assert.deepEqual(supplement.programmes.map((programme) => programme.creditsRequired), [34, 46, 31, 31, 31]);
+  assert.deepEqual(
+    supplement.programmes.map((programme) => programme.courseGroups.flatMap((group) => group.courses).length),
+    [39, 41, 30, 32, 38]
+  );
+  assert.equal(supplement.programmes.every((programme) => programme.ruleReviewStatus === 'manual_review_required'), true);
+
+  const mixedMode = byId['POLYU-TPG-058'];
+  assert.equal(mixedMode.courseGroups.flatMap((group) => group.courses).find((course) => course.code === 'LGT5165').name, 'AI and Digitalisation in the Global Shipping Industry');
+  assert.equal(mixedMode.courseGroups.find((group) => group.id === 'free-electives-and-project').courses.find((course) => course.code === 'LGT5202').credits, 6);
+  assert.match(mixedMode.statusNote, /LGT5315/);
+
+  const fullTime = byId['POLYU-TPG-059'];
+  assert.deepEqual(fullTime.courseGroups.find((group) => group.id === 'maritime-industry-internship').courses.map((course) => [course.code, course.credits, course.courseKind]), [
+    ['LGT5222', 6, 'internship']
+  ]);
+  assert.match(fullTime.statusNote, /40-academic-credit plus 6-training-credit/);
+
+  const supplyChain = byId['POLYU-TPG-060'];
+  assert.equal(supplyChain.courseGroups.find((group) => group.id === 'restricted-electives').courses.length, 6);
+  assert.equal(supplyChain.courseGroups.find((group) => group.id === 'free-electives-and-project').courses.length, 20);
+
+  const operations = byId['POLYU-TPG-061'];
+  assert.equal(operations.trackSelectionOptional, false);
+  assert.deepEqual(operations.tracks.map((track) => track.id), Object.values(POLYU_OM_TRACKS));
+  assert.equal(operations.courseGroups.find((group) => group.id === 'specialised-subjects').courses.length, 12);
+  assert.deepEqual(
+    operations.courseGroups.find((group) => group.id === 'specialised-subjects').courses.find((course) => course.code === 'LGT5150').appliesToTrackIds,
+    [POLYU_OM_TRACKS.QUALITY]
+  );
+  assert.deepEqual(
+    operations.courseGroups.find((group) => group.id === 'specialised-subjects').courses.find((course) => course.code === 'LGT5425').subjectGroups,
+    ['specialised', 'free-elective']
+  );
+
+  const decisionAnalysis = byId['POLYU-TPG-062'];
+  assert.equal(decisionAnalysis.courseGroups.flatMap((group) => group.courses).find((course) => course.code === 'AF5627').name, 'Managerial Economics with an Application to China Business');
+  assert.deepEqual(
+    decisionAnalysis.courseGroups.find((group) => group.id === 'free-electives-and-projects').courses.filter((course) => course.courseKind).map((course) => [course.code, course.credits, course.courseKind]),
+    [['LGT5415', 3, 'research_project'], ['LGT5202', 6, 'project']]
+  );
+  assert.match(decisionAnalysis.statusNote, /would leave the published 31-credit total short/);
+});
+
+test('PolyU Business Analytics preserves both official 31-credit completion routes without duplicating MM501', () => {
+  const supplement = buildPolyuBusinessAnalyticsSupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'polyu-business-analytics-2027.json');
+  const programme = supplement.programmes[0];
+  const [compulsory, integrity, electives, dissertation] = programme.courseGroups;
+
+  assert.equal(programme.programmeId, 'POLYU-TPG-063');
+  assert.equal(programme.creditsRequired, 31);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.deepEqual([compulsory.courses.length, integrity.courses.length, electives.courses.length, dissertation.courses.length], [4, 1, 19, 1]);
+  assert.equal(new Set(programme.courseGroups.flatMap((group) => group.courses).map((course) => course.code)).size, 25);
+  assert.equal(electives.courses.filter((course) => course.code === 'MM501').length, 1);
+  assert.deepEqual(electives.courses.find((course) => course.code === 'MM501').subjectGroups, ['elective', 'research-methods']);
+  assert.deepEqual(electives.courses.find((course) => course.code === 'MM5995').credits, 0);
+  assert.deepEqual(dissertation.courses.map((course) => [course.code, course.credits, course.courseKind]), [
+    ['MM594', 9, 'dissertation']
+  ]);
+  assert.equal(integrity.courses[0].code, 'MM5T21');
+  assert.match(programme.statusNote, /Textual Analysis in Business/);
+  assert.match(programme.statusNote, /Textual Analytics in Business/);
+});
+
+test('PolyU Management and Marketing curricula preserve current coded paths and zero-credit workshops', () => {
+  const supplement = buildPolyuManagementMarketingSupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'polyu-management-marketing-2027.json');
+  const byId = Object.fromEntries(supplement.programmes.map((programme) => [programme.programmeId, programme]));
+
+  assert.deepEqual(supplement.programmes.map((programme) => programme.programmeId), [
+    'POLYU-TPG-064', 'POLYU-TPG-065', 'POLYU-TPG-066'
+  ]);
+  assert.deepEqual(
+    supplement.programmes.map((programme) => programme.courseGroups.flatMap((group) => group.courses).length),
+    [26, 32, 25]
+  );
+
+  const hrm = byId['POLYU-TPG-064'];
+  assert.equal(hrm.courseGroups.find((group) => group.id === 'elective-subjects').courses.filter((course) => course.code === 'MM501').length, 1);
+  assert.equal(hrm.courseGroups.find((group) => group.id === 'dissertation-option').courses[0].code, 'MM592');
+  assert.equal(hrm.courseGroups.flatMap((group) => group.courses).find((course) => course.code === 'MM5995').credits, 0);
+
+  const marketing = byId['POLYU-TPG-065'];
+  assert.equal(marketing.courseGroups.find((group) => group.id === 'elective-subjects').courses.length, 26);
+  assert.equal(marketing.courseGroups.find((group) => group.id === 'dissertation-option').courses[0].code, 'MM597');
+
+  const iml = byId['POLYU-TPG-066'];
+  assert.equal(iml.courseGroups.find((group) => group.id === 'core-subjects').courses.length, 6);
+  assert.equal(iml.courseGroups.find((group) => group.id === 'elective-subjects').courses.find((course) => course.code === 'AF5618').credits, 3);
+  assert.equal(iml.courseGroups.find((group) => group.id === 'academic-integrity').courses[0].code, 'MM5T21');
+});
+
+test('PolyU DSAI curricula preserve the official taught and Dissertation routes', () => {
+  const supplement = buildPolyuDsaiSupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'polyu-dsai-2027.json');
+  const [dsa, aibd] = supplement.programmes;
+
+  assert.deepEqual(supplement.programmes.map((programme) => programme.programmeId), ['POLYU-TPG-067', 'POLYU-TPG-068']);
+  assert.deepEqual(
+    supplement.programmes.map((programme) => programme.courseGroups.flatMap((group) => group.courses).length),
+    [26, 22]
+  );
+  assert.deepEqual(dsa.courseGroups.find((group) => group.id === 'compulsory-subjects').courses.map((course) => course.code), [
+    'COMP5434', 'DSAI5101', 'DSAI5102', 'DSAI5104', 'DSAI5204', 'DSAI5207'
+  ]);
+  assert.deepEqual(dsa.courseGroups.find((group) => group.id === 'dissertation-option').courses.map((course) => [course.code, course.credits]), [['DSAI5901', 9]]);
+  assert.deepEqual(aibd.courseGroups.find((group) => group.id === 'dissertation-option').courses.map((course) => [course.code, course.credits]), [['DSAI5902', 9]]);
+  assert.equal(aibd.courseGroups.find((group) => group.id === 'academic-integrity').courses[0].code, 'DSAI5T09');
+});
+
+test('PolyU Mechanical Engineering preserves current optional Specialisms and ME591 route', () => {
+  const supplement = buildPolyuMechanicalEngineeringSupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'polyu-mechanical-engineering-2027.json');
+  const programme = supplement.programmes[0];
+  const core = programme.courseGroups.find((group) => group.id === 'core-subjects');
+
+  assert.equal(programme.programmeId, 'POLYU-TPG-069');
+  assert.equal(programme.trackSelectionOptional, true);
+  assert.deepEqual(programme.tracks.map((track) => track.id), Object.values(POLYU_ME_TRACKS));
+  assert.equal(core.courses.length, 20);
+  assert.deepEqual(core.courses.find((course) => course.code === 'ME5510').countsTowardTrackIds, Object.values(POLYU_ME_TRACKS));
+  assert.deepEqual(core.courses.find((course) => course.code === 'ME576').subjectGroups, ['core', 'aerospace-compulsory']);
+  assert.deepEqual(programme.courseGroups.find((group) => group.id === 'dissertation-option').courses.map((course) => [course.code, course.credits]), [['ME591', 9]]);
+  assert.equal(programme.courseGroups.find((group) => group.id === 'academic-integrity').courses[0].code, 'EEE5T03');
+  assert.match(programme.statusNote, /former Green Energy Specialism/);
 });

@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "POLYU",
+  "academicYear": "2027-28",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "POLYU-TPG-052",
+      "programmeName": "Engineering Business Management",
+      "faculty": "Department of Industrial and Systems Engineering (ISE)",
+      "status": "verified",
+      "creditsRequired": 37,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45080-efm-efd-eqm-eqp",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 2027 Programme page corrects the corrupted directory label to Engineering Business Management and publishes the MSc rule of seven Core Modules, at least one Elective Module, a Project (Dissertation), and EEE5T03. The current official Integrated Graduate Development Scheme page publishes exact ISE codes, and each linked Module Outline publishes both the PolyU credit value and the corresponding Warwick credit value. The MSc therefore requires 21 PolyU Core credits, 3 Elective credits, the 12-credit ISE5771 IGDS Dissertation and the 1-credit EEE5T03 subject, for 37 PolyU credits. The PgD alternatives and Warwick credit values are not modelled as MSc completion paths and require manual review.",
+      "courseGroups": [
+        {
+          "id": "core-modules",
+          "name": "Core Modules",
+          "type": "core",
+          "creditsRequired": 21,
+          "coursesRequired": 7,
+          "ruleText": "Complete all seven Core Modules for 21 PolyU credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/igds/programme-mscebm.html",
+          "courses": [
+            {
+              "code": "ISE5756",
+              "name": "Big Data and Analytics for Industry",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/igds/pdf_file/ISE5756_BDA.pdf"
+            },
+            {
+              "code": "ISE5773",
+              "name": "Interdisciplinary Research Methods",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/igds/pdf_file/ISE5773_IRM.pdf"
+            },
+            {
+              "code": "ISE5757",
+              "name": "Logistics and Operations Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/igds/pdf_file/ISE5757_LOM.pdf"
+            },
+            {
+              "code": "ISE5758",
+              "name": "Managing Design and Manufacturing Technology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/igds/pdf_file/ISE5758_MDMT.pdf"
+            },
+            {
+              "code": "ISE5759",
+              "name": "Project Planning Management and Control",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/igds/pdf_file/ISE5759_PPMC.pdf"
+            },
+            {
+              "code": "ISE5760",
+              "name": "Quality, Reliability and Maintenance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/igds/pdf_file/ISE5760_QRM.pdf"
+            },
+            {
+              "code": "ISE5761",
+              "name": "Strategy and Finance for Engineering Organisations",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/igds/pdf_file/ISE5761_SFEO.pdf"
+            }
+          ]
+        },
+        {
+          "id": "elective-modules",
+          "name": "Elective Modules",
+          "type": "elective",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Complete at least one of the two published Elective Modules for 3 PolyU credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/igds/programme-mscebm.html",
+          "courses": [
+            {
+              "code": "ISE5767",
+              "name": "Leading Change",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/igds/pdf_file/ISE5767_LC.pdf"
+            },
+            {
+              "code": "ISE5768",
+              "name": "Organisations, People and Performance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/igds/pdf_file/ISE5768_OPP.pdf"
+            }
+          ]
+        },
+        {
+          "id": "project-dissertation",
+          "name": "Project (Dissertation)",
+          "type": "dissertation",
+          "creditsRequired": 12,
+          "coursesRequired": 1,
+          "ruleText": "Complete ISE5771 IGDS Dissertation for 12 PolyU credits. The linked Warwick value is 60 credits and is not added to the PolyU total.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/igds/programme-mscebm.html",
+          "courses": [
+            {
+              "code": "ISE5771",
+              "name": "IGDS Dissertation",
+              "credits": 12,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/igds/pdf_file/ISE5771_Dissertation.pdf",
+              "courseKind": "dissertation"
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Engineering Ethics and Academic Integrity",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete EEE5T03 Engineering Ethics and Academic Integrity for 1 credit.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45080-efm-efd-eqm-eqp",
+          "courses": [
+            {
+              "code": "EEE5T03",
+              "name": "Engineering Ethics and Academic Integrity",
+              "credits": 1,
+              "courseKind": "academic_integrity",
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45080-efm-efd-eqm-eqp"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

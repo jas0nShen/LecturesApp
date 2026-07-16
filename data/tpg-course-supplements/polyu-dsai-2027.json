@@ -1,0 +1,470 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "POLYU",
+  "academicYear": "2027-28",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "POLYU-TPG-067",
+      "faculty": "Department of Data Science and Artificial Intelligence (DSAI)",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/62027-dfm-dpm",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 2027 Programme page and the current DSAI curriculum for cohorts admitted in or after 2026/27 publish the complete 31-credit structure, exact codes and credits. Students complete six Compulsory Subjects, DSAI5T09 AIE, and either four Electives or one Elective plus the 9-credit DSAI5901 Dissertation. Dissertation admission normally requires completion of all six Compulsory Subjects and AIE with a GPA of 3.0 or above at the end of Semester Two. The mutually exclusive paths and GPA eligibility require manual audit review.",
+      "courseGroups": [
+        {
+          "id": "compulsory-subjects",
+          "name": "Compulsory Subjects",
+          "type": "core",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Complete all six 3-credit Compulsory Subjects for 18 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/",
+          "courses": [
+            {
+              "code": "COMP5434",
+              "name": "Big Data Computing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+            },
+            {
+              "code": "DSAI5101",
+              "name": "Statistical Data Mining",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+            },
+            {
+              "code": "DSAI5102",
+              "name": "Principles of Data Science",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+            },
+            {
+              "code": "DSAI5104",
+              "name": "Optimization for Machine Learning",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+            },
+            {
+              "code": "DSAI5204",
+              "name": "Efficient Data Processing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+            },
+            {
+              "code": "DSAI5207",
+              "name": "Modern Deep Learning",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+            }
+          ]
+        },
+        {
+          "id": "elective-subjects",
+          "name": "Elective Subjects",
+          "type": "elective",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "For the taught route, complete any four Elective Subjects for 12 credits. For the Dissertation route, complete any one Elective Subject for 3 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/",
+          "courses": [
+            {
+              "code": "AMA502",
+              "name": "Operations Research Methods",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+            },
+            {
+              "code": "AMA514A",
+              "name": "Applied Linear Models",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+            },
+            {
+              "code": "AMA515A",
+              "name": "Forecasting and Applied Time Series Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+            },
+            {
+              "code": "AMA524",
+              "name": "Scientific Computing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+            },
+            {
+              "code": "AMA528",
+              "name": "Probability and Stochastic Models",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+            },
+            {
+              "code": "AMA532",
+              "name": "Investment Science",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+            },
+            {
+              "code": "AMA568",
+              "name": "Advanced Topics in Quantitative Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+            },
+            {
+              "code": "COMP5152",
+              "name": "Advanced Data Analytics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+            },
+            {
+              "code": "COMP5423",
+              "name": "Natural Language Processing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+            },
+            {
+              "code": "DSAI5103",
+              "name": "Advanced High Dimensional Data Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+            },
+            {
+              "code": "DSAI5105",
+              "name": "Hands-on AI for Science and Technology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+            },
+            {
+              "code": "DSAI5201",
+              "name": "Artificial Intelligence and Big Data Computing in Practice",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+            },
+            {
+              "code": "DSAI5203",
+              "name": "Brain-inspired Computing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+            },
+            {
+              "code": "DSAI5205",
+              "name": "Introduction to Artificial Intelligence",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+            },
+            {
+              "code": "DSAI5206",
+              "name": "Machine Vision and Intelligence",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+            },
+            {
+              "code": "DSAI5208",
+              "name": "Trustworthy AI Systems and Technologies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+            },
+            {
+              "code": "DSAI5209",
+              "name": "Visual Data Representation and Processing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+            },
+            {
+              "code": "DSAI5210",
+              "name": "AI Security",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+            }
+          ]
+        },
+        {
+          "id": "dissertation-option",
+          "name": "Dissertation Option",
+          "type": "dissertation",
+          "creditsRequired": 9,
+          "coursesRequired": 1,
+          "ruleText": "The Dissertation route requires DSAI5901 Dissertation for 9 credits and one Elective. Eligibility normally requires the six Compulsory Subjects and AIE with a GPA of 3.0 or above at the end of Semester Two.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/",
+          "courses": [
+            {
+              "code": "DSAI5901",
+              "name": "Dissertation",
+              "credits": 9,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/",
+              "courseKind": "dissertation",
+              "conditionalRequirement": true
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Academic Integrity and Ethics",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete DSAI5T09 for 1 credit in either route.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/",
+          "courses": [
+            {
+              "code": "DSAI5T09",
+              "name": "Academic Integrity and Ethics in Computer and Mathematical Sciences",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/",
+              "courseKind": "academic_integrity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-068",
+      "faculty": "Department of Data Science and Artificial Intelligence (DSAI)",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/62037-fai-pai",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 2027 Programme page and the current DSAI curriculum for cohorts admitted in or after 2026/27 publish the complete 31-credit structure, exact codes and credits. Students complete five Compulsory Subjects, DSAI5T09 AIE, and either five Electives or two Electives plus the 9-credit DSAI5902 Dissertation. Dissertation admission normally requires completion of 12 credits and AIE with a GPA of 3.0 or above at the end of Semester One. The mutually exclusive paths and GPA eligibility require manual audit review.",
+      "courseGroups": [
+        {
+          "id": "compulsory-subjects",
+          "name": "Compulsory Subjects",
+          "type": "core",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five 3-credit Compulsory Subjects for 15 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/",
+          "courses": [
+            {
+              "code": "COMP5434",
+              "name": "Big Data Computing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+            },
+            {
+              "code": "DSAI5201",
+              "name": "Artificial Intelligence and Big Data Computing in Practice",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+            },
+            {
+              "code": "DSAI5204",
+              "name": "Efficient Data Processing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+            },
+            {
+              "code": "DSAI5205",
+              "name": "Introduction to Artificial Intelligence",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+            },
+            {
+              "code": "DSAI5207",
+              "name": "Modern Deep Learning",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+            }
+          ]
+        },
+        {
+          "id": "elective-subjects",
+          "name": "Elective Subjects",
+          "type": "elective",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "For the taught route, complete any five Elective Subjects for 15 credits. For the Dissertation route, complete any two Elective Subjects for 6 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/",
+          "courses": [
+            {
+              "code": "AMA524",
+              "name": "Scientific Computing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+            },
+            {
+              "code": "COMP5111",
+              "name": "Database Systems and Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+            },
+            {
+              "code": "COMP5221",
+              "name": "Software Project Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+            },
+            {
+              "code": "COMP5355",
+              "name": "Cyber and Internet Security",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+            },
+            {
+              "code": "COMP5423",
+              "name": "Natural Language Processing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+            },
+            {
+              "code": "DSAI5101",
+              "name": "Statistical Data Mining",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+            },
+            {
+              "code": "DSAI5102",
+              "name": "Principles of Data Science",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+            },
+            {
+              "code": "DSAI5103",
+              "name": "Advanced High Dimensional Data Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+            },
+            {
+              "code": "DSAI5104",
+              "name": "Optimization for Machine Learning",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+            },
+            {
+              "code": "DSAI5105",
+              "name": "Hands-on AI for Science and Technology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+            },
+            {
+              "code": "DSAI5203",
+              "name": "Brain-inspired Computing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+            },
+            {
+              "code": "DSAI5206",
+              "name": "Machine Vision and Intelligence",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+            },
+            {
+              "code": "DSAI5208",
+              "name": "Trustworthy AI Systems and Technologies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+            },
+            {
+              "code": "DSAI5209",
+              "name": "Visual Data Representation and Processing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+            },
+            {
+              "code": "DSAI5210",
+              "name": "AI Security",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+            }
+          ]
+        },
+        {
+          "id": "dissertation-option",
+          "name": "Dissertation Option",
+          "type": "dissertation",
+          "creditsRequired": 9,
+          "coursesRequired": 1,
+          "ruleText": "The Dissertation route requires DSAI5902 Dissertation for 9 credits and two Electives. Eligibility normally requires 12 credits and AIE with a GPA of 3.0 or above at the end of Semester One.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/",
+          "courses": [
+            {
+              "code": "DSAI5902",
+              "name": "Dissertation for Artificial Intelligence & Big Data Computing",
+              "credits": 9,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/",
+              "courseKind": "dissertation",
+              "conditionalRequirement": true
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Academic Integrity and Ethics",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete DSAI5T09 for 1 credit in either route.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/",
+          "courses": [
+            {
+              "code": "DSAI5T09",
+              "name": "Academic Integrity and Ethics in Computer and Mathematical Sciences",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/",
+              "courseKind": "academic_integrity"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

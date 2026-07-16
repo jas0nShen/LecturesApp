@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-003",
+      "programmeName": "Master of Arts (MA) in Chinese Literature, Language and Culture",
+      "faculty": "Academy of Chinese, History, Religion and Philosophy",
+      "status": "verified",
+      "creditsRequired": 27,
+      "creditUnit": "units",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-chinese-history-religion-and-philosophy-1/master-of-arts-in-chinese-literature-language-and-culture-1",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The latest publicly accessible HKBU Academic Registry handbook page publishes the complete 2025-26 curriculum: two Required Courses (6 units), CHI7390 Project Report (3 units), and six Electives (18 units). The six Electives must include at least one course from each of Literature, Language and Culture. Six courses are officially listed in both Literature and Culture and are stored once with a combined area label to preserve Programme-level course-code uniqueness. One approved taught-postgraduate course from the Academy of Language and Culture may replace one Elective. Cross-area counting, annual course availability and the approval-dependent external substitution require manual audit review; the protected 2026-27 handbook must be rechecked when it becomes publicly accessible.",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Complete both 3-unit Required Courses. Part-time students must take CHI7011 and CHI7012 in their first year of study.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-chinese-history-religion-and-philosophy-1/master-of-arts-in-chinese-literature-language-and-culture-1",
+          "courses": [
+            { "code": "CHI7011", "name": "Research Method and Seminar", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7011" },
+            { "code": "CHI7012", "name": "Research Method and Seminar", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7012" }
+          ]
+        },
+        {
+          "id": "project-report",
+          "name": "Project Report",
+          "type": "project",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Complete CHI7390 Project Report in the final semester. The research area must align with the student's specialisation.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-chinese-history-religion-and-philosophy-1/master-of-arts-in-chinese-literature-language-and-culture-1",
+          "courses": [
+            { "code": "CHI7390", "name": "Project Report", "credits": 3, "courseKind": "project", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7390" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Electives",
+          "type": "elective_with_area_requirement",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Complete six 3-unit Electives (18 units), including at least one course from each of Literature, Language and Culture. Courses labelled Literature / Culture appear in both official areas but are stored once. With approval from the Programme and the other department concerned, one taught-postgraduate course from the Academy of Language and Culture may replace one Elective. Area counting, the external substitution and annual availability require manual audit review.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-chinese-history-religion-and-philosophy-1/master-of-arts-in-chinese-literature-language-and-culture-1",
+          "courses": [
+            { "code": "CHI7020", "name": "Selected Masterpieces of Chinese Literature", "credits": 3, "area": "Literature", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7020" },
+            { "code": "CHI7030", "name": "Special Topics in Chinese Literature", "credits": 3, "area": "Literature", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7030" },
+            { "code": "CHI7100", "name": "Chinese Travel Literature and Human Scenery", "credits": 3, "area": "Literature / Culture", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7100" },
+            { "code": "CHI7110", "name": "Chinese Literature and Religion", "credits": 3, "area": "Literature / Culture", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7110" },
+            { "code": "CHI7130", "name": "Chinese Literature and Calligraphy and Painting", "credits": 3, "area": "Literature / Culture", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7130" },
+            { "code": "CHI7140", "name": "Literary Criticism", "credits": 3, "area": "Literature", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7140" },
+            { "code": "CHI7160", "name": "Chu Ci", "credits": 3, "area": "Literature", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7160" },
+            { "code": "CHI7170", "name": "Classical Chinese Drama", "credits": 3, "area": "Literature", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7170" },
+            { "code": "CHI7190", "name": "Studies in Selected Chinese Poets and/or Lyricists", "credits": 3, "area": "Literature", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7190" },
+            { "code": "CHI7240", "name": "Special Topics in Classical Chinese Fiction and Drama", "credits": 3, "area": "Literature", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7240" },
+            { "code": "CHI7250", "name": "Special Topics in Classical Chinese Literature", "credits": 3, "area": "Literature", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7250" },
+            { "code": "CHI7260", "name": "Special Topics in Modern and Contemporary Chinese Literature", "credits": 3, "area": "Literature", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7260" },
+            { "code": "CHI7290", "name": "Special Topics in the History of Chinese Literature (Classical Literature)", "credits": 3, "area": "Literature", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7290" },
+            { "code": "CHI7300", "name": "Single Chinese Author Forum (Modern or Contemporary Writer)", "credits": 3, "area": "Literature", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7300" },
+            { "code": "CHI7370", "name": "Chinese Thought and Literature", "credits": 3, "area": "Literature / Culture", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7370" },
+            { "code": "CHI7470", "name": "Shi Jing", "credits": 3, "area": "Literature", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7470" },
+            { "code": "CHI7590", "name": "Chinese Literature, Love, Movies", "credits": 3, "area": "Literature / Culture", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7590" },
+            { "code": "CHI7600", "name": "Vogue, Media, Literature", "credits": 3, "area": "Literature / Culture", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7600" },
+            { "code": "CHI7610", "name": "Guided Readings in Classical Literature", "credits": 3, "area": "Literature", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7610" },
+            { "code": "CHI7620", "name": "Guided Readings in Modern and Contemporary Chinese Literature", "credits": 3, "area": "Literature", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7620" },
+            { "code": "CHI7650", "name": "Creative Modern Chinese Writing", "credits": 3, "area": "Literature", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7650" },
+            { "code": "CHI7660", "name": "Masterpieces in Chinese Lyrical Works (Classical Literature)", "credits": 3, "area": "Literature", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7660" },
+            { "code": "CHI7670", "name": "Masterpieces in Chinese Lyrical Works (Modern Literature)", "credits": 3, "area": "Literature", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7670" },
+            { "code": "CHI7040", "name": "Selected Masterpieces of Chinese Linguistics and Etymology", "credits": 3, "area": "Language", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7040" },
+            { "code": "CHI7050", "name": "Special Topics in Chinese Linguistics", "credits": 3, "area": "Language", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7050" },
+            { "code": "CHI7320", "name": "Chinese Rhetoric", "credits": 3, "area": "Language", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7320" },
+            { "code": "CHI7340", "name": "Special Topics in Chinese Language", "credits": 3, "area": "Language", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7340" },
+            { "code": "CHI7060", "name": "Special Topics in Chinese Culture", "credits": 3, "area": "Culture", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7060" },
+            { "code": "CHI7070", "name": "Traditional Chinese Thought and Modern Society", "credits": 3, "area": "Culture", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7070" },
+            { "code": "CHI7090", "name": "Critical Thinking on Chinese Culture", "credits": 3, "area": "Culture", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7090" },
+            { "code": "CHI7120", "name": "Thinking through Chinese Culture", "credits": 3, "area": "Culture", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7120" },
+            { "code": "CHI7270", "name": "Selected Readings from Traditional Chinese Thinkers (Zi)", "credits": 3, "area": "Culture", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7270" },
+            { "code": "CHI7360", "name": "Modern Views on Traditional Chinese Culture", "credits": 3, "area": "Culture", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7360" },
+            { "code": "CHI7420", "name": "Western Sinology", "credits": 3, "area": "Culture", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7420" },
+            { "code": "CHI7530", "name": "Masterpieces in Chinese Historiography (Thought and Culture)", "credits": 3, "area": "Culture", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7530" },
+            { "code": "CHI7630", "name": "Guided Readings in Chinese Classics", "credits": 3, "area": "Culture", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7630" },
+            { "code": "CHI7640", "name": "Guided Readings in Chinese Culture", "credits": 3, "area": "Culture", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7640" },
+            { "code": "CHI7680", "name": "Selected Readings from Important Thinkers in Chinese Culture", "credits": 3, "area": "Culture", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7680" },
+            { "code": "CHI7690", "name": "Special Topic in Chinese Literature and Culture (Classical Literature)", "credits": 3, "area": "Culture", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7690" },
+            { "code": "CHI7700", "name": "Special Topic in Chinese Literature and Culture (Modern Literature)", "credits": 3, "area": "Culture", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CHI7700" }
+          ]
+        }
+      ]
+    }
+  ]
+}

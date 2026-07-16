@@ -1,0 +1,1134 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "POLYU",
+  "academicYear": "2027-28",
+  "verifiedAt": "2026-07-16",
+  "sourceUrl": "https://www.polyu.edu.hk/eee/study/information-for-current-students/subject-syllabi/",
+  "programmes": [
+    {
+      "programmeId": "POLYU-TPG-044",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46010-ee-eet",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 2027 Programme page and the current 2025/26 Programme Requirement Document publish matching 31-credit Electrical Engineering paths, the complete 31-subject Department Core pool, exact 3-credit values, the 9-credit EE590 Dissertation and the 1-credit EEE5T03 AIE subject. The current PRD also publishes exact Electrical Power Systems and Railway Systems Specialism Core memberships. Students may use approved subjects from other disciplines for the remaining taught-subject places, and the Dissertation and non-Dissertation paths have different Core and Specialism minima. The open external Elective choice, rolling subject schedule and mutually exclusive paths require manual audit review.",
+      "trackSelectionOptional": true,
+      "tracks": [
+        {
+          "id": "POLYU-TPG-044-ELECTRICAL-POWER-SYSTEMS",
+          "code": "EPS",
+          "name": "Electrical Power Systems",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf"
+        },
+        {
+          "id": "POLYU-TPG-044-RAILWAY-SYSTEMS",
+          "code": "RS",
+          "name": "Railway Systems",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf"
+        }
+      ],
+      "courseGroups": [
+        {
+          "id": "department-core-subjects",
+          "name": "Department Core Subjects",
+          "type": "core",
+          "ruleText": "Generic students complete at least four Core Subjects on the seven-taught-subject plus Dissertation path, or at least six Core Subjects on the ten-taught-subject path. Each Specialism requires at least four of its marked Core Subjects with a pertinent Dissertation, or at least eight Department Core Subjects including at least six marked for that Specialism on the ten-subject path.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+          "courses": [
+            {
+              "code": "EE501",
+              "name": "Alternative Energy Technologies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-044-ELECTRICAL-POWER-SYSTEMS"
+              ]
+            },
+            {
+              "code": "EE502",
+              "name": "Modern Protection Methods",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-044-ELECTRICAL-POWER-SYSTEMS"
+              ]
+            },
+            {
+              "code": "EE505",
+              "name": "Power System Control and Operation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-044-ELECTRICAL-POWER-SYSTEMS"
+              ]
+            },
+            {
+              "code": "EE509",
+              "name": "High Voltage Engineering",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-044-ELECTRICAL-POWER-SYSTEMS",
+                "POLYU-TPG-044-RAILWAY-SYSTEMS"
+              ]
+            },
+            {
+              "code": "EE510",
+              "name": "Electrical Traction Engineering",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-044-RAILWAY-SYSTEMS"
+              ]
+            },
+            {
+              "code": "EE512",
+              "name": "Electric Vehicles",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ]
+            },
+            {
+              "code": "EE514",
+              "name": "Real Time Computing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ]
+            },
+            {
+              "code": "EE520",
+              "name": "Intelligent Motion Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ]
+            },
+            {
+              "code": "EE521",
+              "name": "Industrial Power Electronics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ]
+            },
+            {
+              "code": "EE522",
+              "name": "Optical Fibre Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ]
+            },
+            {
+              "code": "EE524",
+              "name": "Open Electricity Market Operation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-044-ELECTRICAL-POWER-SYSTEMS"
+              ]
+            },
+            {
+              "code": "EE526",
+              "name": "Power System Analysis and Dynamics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-044-ELECTRICAL-POWER-SYSTEMS"
+              ]
+            },
+            {
+              "code": "EE528",
+              "name": "System Modelling and Optimal Control",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ]
+            },
+            {
+              "code": "EE530",
+              "name": "Electrical Energy Saving Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ]
+            },
+            {
+              "code": "EE533",
+              "name": "Railway Power Supply Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-044-RAILWAY-SYSTEMS"
+              ]
+            },
+            {
+              "code": "EE535",
+              "name": "Maintenance and Reliability Engineering",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-044-RAILWAY-SYSTEMS"
+              ]
+            },
+            {
+              "code": "EE536",
+              "name": "Signalling and Train Control Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-044-RAILWAY-SYSTEMS"
+              ]
+            },
+            {
+              "code": "EE537",
+              "name": "Railway Vehicles",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-044-RAILWAY-SYSTEMS"
+              ]
+            },
+            {
+              "code": "EE5381",
+              "name": "System Assurance and Safety in Railways",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-044-RAILWAY-SYSTEMS"
+              ]
+            },
+            {
+              "code": "EE539",
+              "name": "Aerospace Power Electronics and Actuation Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ]
+            },
+            {
+              "code": "EE545",
+              "name": "Modern Generation and Grid Integration Technologies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-044-ELECTRICAL-POWER-SYSTEMS"
+              ]
+            },
+            {
+              "code": "EE546",
+              "name": "Electric Energy Storage and New Energy Sources for Electric Vehicles",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ]
+            },
+            {
+              "code": "EE547",
+              "name": "Electric Vehicle Charging Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ]
+            },
+            {
+              "code": "EE548",
+              "name": "Advanced Electric Vehicle Technology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ]
+            },
+            {
+              "code": "EE549",
+              "name": "Modern Sensor Technologies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ]
+            },
+            {
+              "code": "EE552",
+              "name": "High Speed Rail",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-044-RAILWAY-SYSTEMS"
+              ]
+            },
+            {
+              "code": "EE553",
+              "name": "Railway Electronic Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-044-RAILWAY-SYSTEMS"
+              ]
+            },
+            {
+              "code": "EE560",
+              "name": "Metros in Hong Kong and China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-044-RAILWAY-SYSTEMS"
+              ]
+            },
+            {
+              "code": "EE570",
+              "name": "Design and Analysis of Smart Grids",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-044-ELECTRICAL-POWER-SYSTEMS"
+              ]
+            },
+            {
+              "code": "EEE523",
+              "name": "Economics and Markets in Power Systems and Electrified Transportation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ]
+            },
+            {
+              "code": "EEE525",
+              "name": "Smart Transportation in Green Cities",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-044-RAILWAY-SYSTEMS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "approved-external-electives",
+          "name": "Approved Subjects from Other Disciplines",
+          "type": "elective",
+          "ruleText": "Remaining taught-subject places may be filled with approved subjects from disciplines such as accounting, computing, construction and environment, and logistics. The official sources do not publish a closed Elective code list; confirm eligibility and availability during registration.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46010-ee-eet",
+          "courses": []
+        },
+        {
+          "id": "dissertation-option",
+          "name": "Dissertation Option",
+          "type": "dissertation",
+          "coursesRequired": 1,
+          "ruleText": "The 9-credit EE590 Dissertation is used only on the seven-taught-subject Dissertation path and replaces three taught subjects.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+          "courses": [
+            {
+              "code": "EE590",
+              "name": "EE Dissertation",
+              "credits": 9,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "courseKind": "dissertation",
+              "conditionalRequirement": true
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Academic Integrity and Ethics",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete the 1-credit EEE5T03 Engineering Ethics and Academic Integrity subject.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+          "courses": [
+            {
+              "code": "EEE5T03",
+              "name": "Engineering Ethics and Academic Integrity",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+              "courseKind": "academic_integrity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-045",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46011-eie-eit",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 2027 Programme page and the current 2025/26 Programme Requirement Document publish matching 31-credit Electronic and Information Engineering paths, the complete 28-subject Core pool, exact 3-credit values, the 9-credit EIE590 Dissertation and the 1-credit EEE5T03 AIE subject. The current PRD also publishes exact Internet of Things and Multimedia Signal Processing and Communications Specialism Core memberships. Students may use approved subjects from other disciplines for the remaining taught-subject places. The open external Elective choice and different generic, Specialism, Dissertation and non-Dissertation Core minima require manual audit review.",
+      "trackSelectionOptional": true,
+      "tracks": [
+        {
+          "id": "POLYU-TPG-045-INTERNET-OF-THINGS",
+          "code": "IOT",
+          "name": "Internet of Things",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf"
+        },
+        {
+          "id": "POLYU-TPG-045-MULTIMEDIA-SIGNAL-PROCESSING-AND-COMMUNICATIONS",
+          "code": "MSPC",
+          "name": "Multimedia Signal Processing and Communications",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf"
+        }
+      ],
+      "courseGroups": [
+        {
+          "id": "department-core-subjects",
+          "name": "Department Core Subjects",
+          "type": "core",
+          "ruleText": "Generic students complete at least four Core Subjects on the seven-taught-subject plus Dissertation path, or at least six Core Subjects on the ten-taught-subject path. Each Specialism requires at least five marked Core Subjects with a pertinent Dissertation, or at least seven marked Core Subjects on the ten-subject path.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+          "courses": [
+            {
+              "code": "EIE509",
+              "name": "Satellite Communications - Technology and Applications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+              "subjectGroups": [
+                "core"
+              ]
+            },
+            {
+              "code": "EIE511",
+              "name": "VLSI System Design",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+              "subjectGroups": [
+                "core"
+              ]
+            },
+            {
+              "code": "EIE515",
+              "name": "Advanced Optical Communication Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-045-INTERNET-OF-THINGS"
+              ]
+            },
+            {
+              "code": "EIE522",
+              "name": "Pattern Recognition: Theory and Applications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-045-MULTIMEDIA-SIGNAL-PROCESSING-AND-COMMUNICATIONS"
+              ]
+            },
+            {
+              "code": "EIE529",
+              "name": "Digital Image Processing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-045-MULTIMEDIA-SIGNAL-PROCESSING-AND-COMMUNICATIONS"
+              ]
+            },
+            {
+              "code": "EIE546",
+              "name": "Video Technology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-045-INTERNET-OF-THINGS",
+                "POLYU-TPG-045-MULTIMEDIA-SIGNAL-PROCESSING-AND-COMMUNICATIONS"
+              ]
+            },
+            {
+              "code": "EIE553",
+              "name": "Security in Data Communication",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-045-INTERNET-OF-THINGS",
+                "POLYU-TPG-045-MULTIMEDIA-SIGNAL-PROCESSING-AND-COMMUNICATIONS"
+              ]
+            },
+            {
+              "code": "EIE557",
+              "name": "Computational Intelligence and Its Applications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-045-INTERNET-OF-THINGS",
+                "POLYU-TPG-045-MULTIMEDIA-SIGNAL-PROCESSING-AND-COMMUNICATIONS"
+              ]
+            },
+            {
+              "code": "EIE558",
+              "name": "Speech Processing and Recognition",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-045-MULTIMEDIA-SIGNAL-PROCESSING-AND-COMMUNICATIONS"
+              ]
+            },
+            {
+              "code": "EIE560",
+              "name": "Microelectronics Processing and Technologies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-045-INTERNET-OF-THINGS"
+              ]
+            },
+            {
+              "code": "EIE563",
+              "name": "Digital Audio Processing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-045-MULTIMEDIA-SIGNAL-PROCESSING-AND-COMMUNICATIONS"
+              ]
+            },
+            {
+              "code": "EIE566",
+              "name": "Wireless Communications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-045-INTERNET-OF-THINGS",
+                "POLYU-TPG-045-MULTIMEDIA-SIGNAL-PROCESSING-AND-COMMUNICATIONS"
+              ]
+            },
+            {
+              "code": "EIE567",
+              "name": "Wireless Power Transfer Technologies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-045-INTERNET-OF-THINGS",
+                "POLYU-TPG-045-MULTIMEDIA-SIGNAL-PROCESSING-AND-COMMUNICATIONS"
+              ]
+            },
+            {
+              "code": "EIE568",
+              "name": "IoT - Tools and Applications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-045-INTERNET-OF-THINGS"
+              ]
+            },
+            {
+              "code": "EIE569",
+              "name": "Sensor Networks",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-045-INTERNET-OF-THINGS"
+              ]
+            },
+            {
+              "code": "EIE571",
+              "name": "Photonic System Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+              "subjectGroups": [
+                "core"
+              ]
+            },
+            {
+              "code": "EIE572",
+              "name": "Information Photonics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+              "subjectGroups": [
+                "core"
+              ]
+            },
+            {
+              "code": "EIE573",
+              "name": "Mobile Edge Computing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-045-INTERNET-OF-THINGS",
+                "POLYU-TPG-045-MULTIMEDIA-SIGNAL-PROCESSING-AND-COMMUNICATIONS"
+              ]
+            },
+            {
+              "code": "EIE575",
+              "name": "Vehicular Communications and Inter-Networking Technologies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-045-INTERNET-OF-THINGS",
+                "POLYU-TPG-045-MULTIMEDIA-SIGNAL-PROCESSING-AND-COMMUNICATIONS"
+              ]
+            },
+            {
+              "code": "EIE577",
+              "name": "Optoelectronic Devices",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+              "subjectGroups": [
+                "core"
+              ]
+            },
+            {
+              "code": "EIE579",
+              "name": "Advanced Telecommunication Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-045-INTERNET-OF-THINGS"
+              ]
+            },
+            {
+              "code": "EIE580",
+              "name": "Radio Frequency and Microwave Integrated Circuits for Communication System Applications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+              "subjectGroups": [
+                "core"
+              ]
+            },
+            {
+              "code": "EIE587",
+              "name": "Channel Coding",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+              "subjectGroups": [
+                "core"
+              ]
+            },
+            {
+              "code": "EIE589",
+              "name": "Wireless Data Network",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-045-INTERNET-OF-THINGS",
+                "POLYU-TPG-045-MULTIMEDIA-SIGNAL-PROCESSING-AND-COMMUNICATIONS"
+              ]
+            },
+            {
+              "code": "EEE508",
+              "name": "VLSI Technology and Design",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+              "subjectGroups": [
+                "core"
+              ]
+            },
+            {
+              "code": "EEE531",
+              "name": "Spoken Language Technologies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-045-MULTIMEDIA-SIGNAL-PROCESSING-AND-COMMUNICATIONS"
+              ]
+            },
+            {
+              "code": "EEE532",
+              "name": "Artificial Intelligence of Things Technology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-045-INTERNET-OF-THINGS"
+              ]
+            },
+            {
+              "code": "COMP5434",
+              "name": "Big Data Computing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+              "subjectGroups": [
+                "core"
+              ],
+              "countsTowardTrackIds": [
+                "POLYU-TPG-045-INTERNET-OF-THINGS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "approved-external-electives",
+          "name": "Approved Subjects from Other Disciplines",
+          "type": "elective",
+          "ruleText": "Remaining taught-subject places may be filled with approved subjects from other disciplines, including business and management. The official sources do not publish a closed Elective code list; confirm eligibility and availability during registration.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46011-eie-eit",
+          "courses": []
+        },
+        {
+          "id": "dissertation-option",
+          "name": "Dissertation Option",
+          "type": "dissertation",
+          "coursesRequired": 1,
+          "ruleText": "The 9-credit EIE590 Dissertation is used only on the seven-taught-subject Dissertation path and replaces three taught subjects.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+          "courses": [
+            {
+              "code": "EIE590",
+              "name": "Dissertation",
+              "credits": 9,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+              "courseKind": "dissertation",
+              "conditionalRequirement": true
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Academic Integrity and Ethics",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete the 1-credit EEE5T03 Engineering Ethics and Academic Integrity subject.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+          "courses": [
+            {
+              "code": "EEE5T03",
+              "name": "Engineering Ethics and Academic Integrity",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+              "courseKind": "academic_integrity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-046",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46012-ev-evt",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 2027 Programme page and the current 2025/26 Programme Requirement Document publish matching 31-credit Electric Vehicles paths, exact codes and 3-credit values for the complete taught-subject pool, the 9-credit EE590 Dissertation and the 1-credit EEE5T03 AIE subject. EEE521 is compulsory and students select any two of EE512, EE546 and EE548 as the remaining Core Subjects. The other taught places are Electives, and an unused Core choice may also serve as an Elective. The seven-subject plus Dissertation and ten-subject paths and the cross-role Core choices require manual audit review.",
+      "courseGroups": [
+        {
+          "id": "core-and-elective-subjects",
+          "name": "Core and Elective Subjects",
+          "type": "core_elective_cross_role",
+          "ruleText": "Complete EEE521 and any two of EE512, EE546 and EE548 as the three Core Subjects. Complete four Elective Subjects plus EE590 on the Dissertation path, or seven Elective Subjects on the ten-taught-subject path. A Core-choice subject not used toward the Core requirement may count as an Elective.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+          "courses": [
+            {
+              "code": "EE512",
+              "name": "Electric Vehicles",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core_choice",
+                "elective"
+              ]
+            },
+            {
+              "code": "EE520",
+              "name": "Intelligent Motion Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "elective"
+              ]
+            },
+            {
+              "code": "EE521",
+              "name": "Industrial Power Electronics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "elective"
+              ]
+            },
+            {
+              "code": "EE528",
+              "name": "System Modelling and Optimal Control",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "elective"
+              ]
+            },
+            {
+              "code": "EE530",
+              "name": "Electrical Energy Saving Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "elective"
+              ]
+            },
+            {
+              "code": "EE535",
+              "name": "Maintenance and Reliability Engineering",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "elective"
+              ]
+            },
+            {
+              "code": "EE545",
+              "name": "Modern Generation and Grid Integration Technologies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "elective"
+              ]
+            },
+            {
+              "code": "EE546",
+              "name": "Electric Energy Storage and New Energy Sources for Electric Vehicles",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core_choice",
+                "elective"
+              ]
+            },
+            {
+              "code": "EE548",
+              "name": "Advanced Electric Vehicle Technology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "core_choice",
+                "elective"
+              ]
+            },
+            {
+              "code": "EE570",
+              "name": "Design and Analysis of Smart Grids",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "elective"
+              ]
+            },
+            {
+              "code": "EIE568",
+              "name": "IoT - Tools and Applications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "elective"
+              ]
+            },
+            {
+              "code": "EIE575",
+              "name": "Vehicular Communications and Inter-Networking Technologies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "elective"
+              ]
+            },
+            {
+              "code": "EEE521",
+              "name": "Tomorrow’s Leader in Electric Vehicles",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "compulsory_core"
+              ]
+            },
+            {
+              "code": "EEE522",
+              "name": "Autonomous Vehicles",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "elective"
+              ]
+            },
+            {
+              "code": "EEE523",
+              "name": "Economics and Markets in Power Systems and Electrified Transportation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "elective"
+              ]
+            },
+            {
+              "code": "EEE524",
+              "name": "Green Technology and Policy in Electrical Engineering",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "elective"
+              ]
+            },
+            {
+              "code": "EEE525",
+              "name": "Smart Transportation in Green Cities",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+              "subjectGroups": [
+                "elective"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dissertation-option",
+          "name": "Dissertation Option",
+          "type": "dissertation",
+          "coursesRequired": 1,
+          "ruleText": "The 9-credit EE590 Dissertation is used only on the seven-taught-subject Dissertation path and replaces three taught subjects.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+          "courses": [
+            {
+              "code": "EE590",
+              "name": "EE Dissertation",
+              "credits": 9,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+              "courseKind": "dissertation",
+              "conditionalRequirement": true
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Academic Integrity and Ethics",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete the 1-credit EEE5T03 Engineering Ethics and Academic Integrity subject.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+          "courses": [
+            {
+              "code": "EEE5T03",
+              "name": "Engineering Ethics and Academic Integrity",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+              "courseKind": "academic_integrity"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

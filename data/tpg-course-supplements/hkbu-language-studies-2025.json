@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-005",
+      "status": "verified",
+      "creditsRequired": 27,
+      "creditUnit": "units",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-language-and-culture-1/master-of-arts-in-language-studies-1",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [
+        {
+          "id": "HKBU-TPG-005-DISSERTATION",
+          "name": "Dissertation Option",
+          "type": "Award Path",
+          "creditsRequired": 27,
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-language-and-culture-1/master-of-arts-in-language-studies-1"
+        },
+        {
+          "id": "HKBU-TPG-005-NON-DISSERTATION",
+          "name": "Non-dissertation Option",
+          "type": "Award Path",
+          "creditsRequired": 27,
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-language-and-culture-1/master-of-arts-in-language-studies-1"
+        }
+      ],
+      "trackSelectionOptional": false,
+      "statusNote": "The latest publicly accessible HKBU Academic Registry handbook page publishes the complete 2025-26 curriculum. Both 27-unit Award Paths require five Required Courses (15 units). The Dissertation Option then completes two Electives (6 units) and LANG7260 Dissertation (6 units), subject to Programme Director approval; the Non-dissertation Option completes four Electives (12 units). One approved course from another HKBU taught postgraduate Programme may replace one Elective. Dissertation approval, the external substitution and annual availability require manual audit review; the Interim Award is not modelled as an MA completion path, and the protected 2026-27 handbook must be rechecked when it becomes publicly accessible.",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "appliesToTrackIds": ["HKBU-TPG-005-DISSERTATION", "HKBU-TPG-005-NON-DISSERTATION"],
+          "ruleText": "Complete all five Required Courses (15 units) under either Award Path.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-language-and-culture-1/master-of-arts-in-language-studies-1",
+          "courses": [
+            { "code": "LANG7110", "name": "Research Methodology", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-005-DISSERTATION", "HKBU-TPG-005-NON-DISSERTATION"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LANG7110" },
+            { "code": "LANG7401", "name": "Introduction to the Study of Language I", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-005-DISSERTATION", "HKBU-TPG-005-NON-DISSERTATION"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LANG7401" },
+            { "code": "LANG7402", "name": "Introduction to the Study of Language II", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-005-DISSERTATION", "HKBU-TPG-005-NON-DISSERTATION"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LANG7402" },
+            { "code": "LANG7510", "name": "Language in Society", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-005-DISSERTATION", "HKBU-TPG-005-NON-DISSERTATION"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LANG7510" },
+            { "code": "LANG7610", "name": "Discourse Analysis", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-005-DISSERTATION", "HKBU-TPG-005-NON-DISSERTATION"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LANG7610" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "track_elective",
+          "creditsRequiredByTrackIds": {
+            "HKBU-TPG-005-DISSERTATION": 6,
+            "HKBU-TPG-005-NON-DISSERTATION": 12
+          },
+          "coursesRequiredByTrackIds": {
+            "HKBU-TPG-005-DISSERTATION": 2,
+            "HKBU-TPG-005-NON-DISSERTATION": 4
+          },
+          "appliesToTrackIds": ["HKBU-TPG-005-DISSERTATION", "HKBU-TPG-005-NON-DISSERTATION"],
+          "ruleText": "The Dissertation Option completes two 3-unit Electives (6 units); the Non-dissertation Option completes four (12 units). With both Programmes' approval, one external HKBU taught-postgraduate course may replace one Elective.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-language-and-culture-1/master-of-arts-in-language-studies-1",
+          "courses": [
+            { "code": "LANG7390", "name": "Special Topic in Language Studies", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-005-DISSERTATION", "HKBU-TPG-005-NON-DISSERTATION"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LANG7390" },
+            { "code": "LANG7530", "name": "Language Curriculum", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-005-DISSERTATION", "HKBU-TPG-005-NON-DISSERTATION"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LANG7530" },
+            { "code": "LANG7550", "name": "English as a World Language", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-005-DISSERTATION", "HKBU-TPG-005-NON-DISSERTATION"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LANG7550" },
+            { "code": "LANG7570", "name": "Language and Education", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-005-DISSERTATION", "HKBU-TPG-005-NON-DISSERTATION"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LANG7570" },
+            { "code": "LANG7580", "name": "Language Development", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-005-DISSERTATION", "HKBU-TPG-005-NON-DISSERTATION"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LANG7580" },
+            { "code": "LANG7590", "name": "Advanced Topics in Discourse Studies", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-005-DISSERTATION", "HKBU-TPG-005-NON-DISSERTATION"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LANG7590" },
+            { "code": "LANG7600", "name": "Comparative Studies of English and Chinese Grammar", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-005-DISSERTATION", "HKBU-TPG-005-NON-DISSERTATION"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LANG7600" },
+            { "code": "LANG7630", "name": "Pragmatics in Language Learning and Teaching", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-005-DISSERTATION", "HKBU-TPG-005-NON-DISSERTATION"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LANG7630" },
+            { "code": "LANG7640", "name": "Grammar of Modern English", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-005-DISSERTATION", "HKBU-TPG-005-NON-DISSERTATION"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LANG7640" },
+            { "code": "LANG7650", "name": "Advanced Seminar in Language, Gender, and Sexuality", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-005-DISSERTATION", "HKBU-TPG-005-NON-DISSERTATION"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LANG7650" },
+            { "code": "LANG7660", "name": "Linguistics and Liberal Thinking", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-005-DISSERTATION", "HKBU-TPG-005-NON-DISSERTATION"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LANG7660" },
+            { "code": "LANG7680", "name": "Language, Politics, and Identity", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-005-DISSERTATION", "HKBU-TPG-005-NON-DISSERTATION"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LANG7680" },
+            { "code": "LANG7690", "name": "The Pronunciation of English", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-005-DISSERTATION", "HKBU-TPG-005-NON-DISSERTATION"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LANG7690" },
+            { "code": "LANG7700", "name": "Critical Discourse Analysis and Public Policy Engagement", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-005-DISSERTATION", "HKBU-TPG-005-NON-DISSERTATION"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LANG7700" },
+            { "code": "LANG7710", "name": "Phonological Tone", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-005-DISSERTATION", "HKBU-TPG-005-NON-DISSERTATION"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LANG7710" },
+            { "code": "LANG7720", "name": "Second Language Pronunciation Pedagogy", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-005-DISSERTATION", "HKBU-TPG-005-NON-DISSERTATION"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LANG7720" }
+          ]
+        },
+        {
+          "id": "dissertation",
+          "name": "Dissertation",
+          "type": "dissertation",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "appliesToTrackIds": ["HKBU-TPG-005-DISSERTATION"],
+          "ruleText": "Complete LANG7260 Dissertation (6 units). Admission to the Dissertation Option is subject to the Programme Director's final approval based on academic results and the research proposal.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-language-and-culture-1/master-of-arts-in-language-studies-1",
+          "courses": [
+            { "code": "LANG7260", "name": "Dissertation", "credits": 6, "courseKind": "dissertation", "conditionalRequirement": true, "appliesToTrackIds": ["HKBU-TPG-005-DISSERTATION"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LANG7260" }
+          ]
+        }
+      ]
+    }
+  ]
+}

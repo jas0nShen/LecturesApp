@@ -1,0 +1,856 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-046",
+      "programmeName": "Master of Arts (MA) in Producing for Film, Television and New Media",
+      "faculty": "Academy of Film, School of Creative Arts",
+      "status": "verified",
+      "creditsRequired": 27,
+      "creditUnit": "units",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-creative-arts/academy-of-film/master-of-arts-in-producing-for-film-television-and-new",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [],
+      "statusNote": "The current September 2026 admissions page confirms the same 27-unit structure as the linked official 2025-26 Handbook. Students complete five Required Courses for 15 units and four Electives for 12 units. The Handbook publishes 21 Programme Electives and ten MFA Electives, but permits at most two courses (6 units) from other programmes and warns that listed Electives depend on Programme arrangements and may not be offered every year. The cross-pool maximum and annual availability require manual audit review.",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-creative-arts/academy-of-film/master-of-arts-in-producing-for-film-television-and-new",
+          "courses": [
+            {
+              "code": "AF7410",
+              "name": "Financial Management for Film, Television and New Media",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/AF7410"
+            },
+            {
+              "code": "AF7420",
+              "name": "Promotion, Advertising and Distribution for Film, Television and New Media",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/AF7420"
+            },
+            {
+              "code": "AF7430",
+              "name": "Law, and Film, Television and New Media",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/AF7430"
+            },
+            {
+              "code": "AF7440",
+              "name": "Script Analysis for the Producer",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/AF7440"
+            },
+            {
+              "code": "AF7510",
+              "name": "Fundamentals of Media Arts",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/AF7510"
+            }
+          ],
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five Required Courses for 15 units."
+        },
+        {
+          "id": "elective-requirement",
+          "name": "Elective Requirement",
+          "type": "elective_requirement",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-creative-arts/academy-of-film/master-of-arts-in-producing-for-film-television-and-new",
+          "courses": [],
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete four 3-unit Electives. At most two courses (6 units) may come from other programmes."
+        },
+        {
+          "id": "programme-electives",
+          "name": "Programme Electives",
+          "type": "elective",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-creative-arts/academy-of-film/master-of-arts-in-producing-for-film-television-and-new",
+          "courses": [
+            {
+              "code": "AF7450",
+              "name": "Case Studies in Production and the Market",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/AF7450"
+            },
+            {
+              "code": "AF7460",
+              "name": "Overview of New Media Contents and its Future: Internet Movie, Drama Series and Short Video",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/AF7460"
+            },
+            {
+              "code": "AF7470",
+              "name": "Seminar on Non-Mainstream Producing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/AF7470"
+            },
+            {
+              "code": "AF7480",
+              "name": "Film, Television, New Media and Globalization",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/AF7480"
+            },
+            {
+              "code": "AF7490",
+              "name": "Multimedia Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/AF7490"
+            },
+            {
+              "code": "AF7520",
+              "name": "Interactive Media Design",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/AF7520"
+            },
+            {
+              "code": "AF7530",
+              "name": "Principles and Applications of Computer Graphics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/AF7530"
+            },
+            {
+              "code": "AF7540",
+              "name": "The Art and Practice of Digital Media",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/AF7540"
+            },
+            {
+              "code": "AF7550",
+              "name": "Graduate Seminar on Chinese New Waves Cinema",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/AF7550"
+            },
+            {
+              "code": "AF7560",
+              "name": "Multimedia Platform Programming Positioning and Branding",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/AF7560"
+            },
+            {
+              "code": "AF7570",
+              "name": "Non-Scripted (Reality Show) Creation and Production",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/AF7570"
+            },
+            {
+              "code": "AF7580",
+              "name": "Graduate Seminar on a Director's Palette",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/AF7580"
+            },
+            {
+              "code": "AF7590",
+              "name": "Digital Multimedia Communication",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/AF7590"
+            },
+            {
+              "code": "AF7600",
+              "name": "Narrative Storytelling",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/AF7600"
+            },
+            {
+              "code": "AF7610",
+              "name": "Film Festival and Film Programme Curation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/AF7610"
+            },
+            {
+              "code": "COMM7040",
+              "name": "Issues in Intercultural Communication",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7040"
+            },
+            {
+              "code": "COMM7170",
+              "name": "Communication Campaign Workshop",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7170"
+            },
+            {
+              "code": "COMM7200",
+              "name": "New Media Workshop",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7200"
+            },
+            {
+              "code": "COMM7270",
+              "name": "Media Policies and Regulations",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7270"
+            },
+            {
+              "code": "COMM7300",
+              "name": "Consumer Insights",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7300"
+            },
+            {
+              "code": "JOUR7030",
+              "name": "Research Methods in Media and Communication",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7030"
+            }
+          ],
+          "ruleText": "Choose from the official Programme Elective pool, subject to annual Programme arrangements."
+        },
+        {
+          "id": "mfa-electives",
+          "name": "MFA Electives",
+          "type": "elective",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-creative-arts/academy-of-film/master-of-arts-in-producing-for-film-television-and-new",
+          "courses": [
+            {
+              "code": "CTV7230",
+              "name": "Seminar on Chinese Cinemas",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CTV7230"
+            },
+            {
+              "code": "CTV7270",
+              "name": "Current Issues of Asian Media",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CTV7270"
+            },
+            {
+              "code": "CTV7290",
+              "name": "Critique of Contemporary Arts",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CTV7290"
+            },
+            {
+              "code": "CTV7300",
+              "name": "Seminar on Great Works and Human Condition",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CTV7300"
+            },
+            {
+              "code": "CTV7450",
+              "name": "Alternative Cinema",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CTV7450"
+            },
+            {
+              "code": "CTV7460",
+              "name": "Film and Other Arts",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CTV7460"
+            },
+            {
+              "code": "CTV7480",
+              "name": "Special Topics - Aesthetics and Appreciation I",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CTV7480"
+            },
+            {
+              "code": "CTV7500",
+              "name": "Film and Literature",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CTV7500"
+            },
+            {
+              "code": "CTV7520",
+              "name": "Special Topics - Aesthetics and Appreciation II",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CTV7520"
+            },
+            {
+              "code": "CTV7540",
+              "name": "Seminar on Television and New Media",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CTV7540"
+            }
+          ],
+          "creditsMax": 6,
+          "coursesMax": 2,
+          "ruleText": "At most two MFA Electives (6 units) may count toward the award. Offerings depend on Programme arrangements and are not guaranteed every year."
+        }
+      ]
+    },
+    {
+      "programmeId": "HKBU-TPG-047",
+      "programmeName": "Master of Arts (MA) in Music",
+      "faculty": "Academy of Music, School of Creative Arts",
+      "status": "verified",
+      "creditsRequired": 27,
+      "creditUnit": "units",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-creative-arts/academy-of-music/master-of-arts-in-music",
+      "ruleReviewStatus": "verified",
+      "tracks": [],
+      "statusNote": "The current September 2026 admissions page confirms the same 27-unit structure as the linked official 2025-26 Handbook. Students complete MUS7260 Research Methods in Music for 3 units and choose any eight of the 44 published 3-unit Electives for 24 units. The Handbook states a direct eight-of-the-pool rule and does not impose a concentration or category minimum.",
+      "courseGroups": [
+        {
+          "id": "required-course",
+          "name": "Required Course",
+          "type": "core",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-creative-arts/academy-of-music/master-of-arts-in-music",
+          "courses": [
+            {
+              "code": "MUS7260",
+              "name": "Research Methods in Music",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7260"
+            }
+          ],
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Complete MUS7260 Research Methods in Music for 3 units."
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-creative-arts/academy-of-music/master-of-arts-in-music",
+          "courses": [
+            {
+              "code": "MUS7270",
+              "name": "Music Technology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7270"
+            },
+            {
+              "code": "MUS7280",
+              "name": "Creativity in Music",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7280"
+            },
+            {
+              "code": "MUS7290",
+              "name": "Psychology and Sociology in Music",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7290"
+            },
+            {
+              "code": "MUS7300",
+              "name": "Curriculum Development and Music Materials",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7300"
+            },
+            {
+              "code": "MUS7310",
+              "name": "Choral Pedagogy",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7310"
+            },
+            {
+              "code": "MUS7320",
+              "name": "Conducting Practicum",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7320"
+            },
+            {
+              "code": "MUS7340",
+              "name": "Virtual Music Classroom",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7340"
+            },
+            {
+              "code": "MUS7350",
+              "name": "Piano Pedagogy",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7350"
+            },
+            {
+              "code": "MUS7360",
+              "name": "Pedagogy Workshop",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7360"
+            },
+            {
+              "code": "MUS7370",
+              "name": "Music and Culture",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7370"
+            },
+            {
+              "code": "MUS7380",
+              "name": "The Teaching of Chinese Music",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7380"
+            },
+            {
+              "code": "MUS7390",
+              "name": "Composition Seminar",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7390"
+            },
+            {
+              "code": "MUS7400",
+              "name": "Current Practices in 21st Century Composition",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7400"
+            },
+            {
+              "code": "MUS7411",
+              "name": "Dissertation Project",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7411",
+              "courseKind": "dissertation_project"
+            },
+            {
+              "code": "MUS7412",
+              "name": "Dissertation Project",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7412",
+              "courseKind": "dissertation_project"
+            },
+            {
+              "code": "MUS7420",
+              "name": "Choral Training from a Kodály Perspective",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7420"
+            },
+            {
+              "code": "MUS7430",
+              "name": "Music in Early Childhood",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7430"
+            },
+            {
+              "code": "MUS7440",
+              "name": "Current Practices in Early Childhood Music Education",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7440"
+            },
+            {
+              "code": "MUS7450",
+              "name": "Sources, Genres, and Performance: Analytical Approaches",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7450"
+            },
+            {
+              "code": "MUS7460",
+              "name": "Sources, Genres, and Performance: Historical Perspectives",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7460"
+            },
+            {
+              "code": "MUS7470",
+              "name": "Advanced Piano Pedagogy Workshop",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7470"
+            },
+            {
+              "code": "MUS7480",
+              "name": "Advanced Studies in Chinese Music",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7480"
+            },
+            {
+              "code": "MUS7490",
+              "name": "Orff and Dalcroze Approaches to Music Teaching",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7490"
+            },
+            {
+              "code": "MUS7500",
+              "name": "Issues in the Study of Popular Music: Rock Music in Global Perspective",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7500"
+            },
+            {
+              "code": "MUS7510",
+              "name": "Arranging for Small Ensembles",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7510"
+            },
+            {
+              "code": "MUS7520",
+              "name": "Studies in Choral Literature",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7520"
+            },
+            {
+              "code": "MUS7530",
+              "name": "Studies in Piano Literature",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7530"
+            },
+            {
+              "code": "MUS7540",
+              "name": "Current Topics in World Music",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7540"
+            },
+            {
+              "code": "MUS7550",
+              "name": "Arranging for Choirs and Vocal Ensembles",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7550"
+            },
+            {
+              "code": "MUS7600",
+              "name": "Special Topics in Music I",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7600"
+            },
+            {
+              "code": "MUS7610",
+              "name": "Special Topics in Music II",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7610"
+            },
+            {
+              "code": "MUS7620",
+              "name": "Special Topics in Music III",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7620"
+            },
+            {
+              "code": "MUS7630",
+              "name": "Special Topics in Music IV",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7630"
+            },
+            {
+              "code": "MUS7660",
+              "name": "Advanced Music Ensemble I",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7660"
+            },
+            {
+              "code": "MUS7670",
+              "name": "Advanced Music Ensemble II",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7670"
+            },
+            {
+              "code": "MUS7680",
+              "name": "Recital Project I",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7680",
+              "courseKind": "recital_project"
+            },
+            {
+              "code": "MUS7690",
+              "name": "Recital Project II",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7690",
+              "courseKind": "recital_project"
+            },
+            {
+              "code": "MUS7700",
+              "name": "Performance Seminar I",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7700"
+            },
+            {
+              "code": "MUS7710",
+              "name": "Performance Seminar II",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7710"
+            },
+            {
+              "code": "MUS7720",
+              "name": "Post-Instrumental Practice",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7720"
+            },
+            {
+              "code": "MUS7730",
+              "name": "Performance Practice in Context",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7730"
+            },
+            {
+              "code": "MUS7740",
+              "name": "Music Business and Marketing Strategies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7740"
+            },
+            {
+              "code": "MUS7750",
+              "name": "Introduction to Film Scoring",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7750"
+            },
+            {
+              "code": "MUS7760",
+              "name": "Live Performance Workshop for Commercial Music",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUS7760"
+            }
+          ],
+          "creditsRequired": 24,
+          "coursesRequired": 8,
+          "ruleText": "Choose any eight 3-unit Electives from the published pool for 24 units."
+        }
+      ]
+    },
+    {
+      "programmeId": "HKBU-TPG-048",
+      "programmeName": "Master of Arts (MA) in Visual Arts",
+      "faculty": "Academy of Visual Arts, School of Creative Arts",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "units",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-creative-arts/academy-of-visual-arts/master-of-arts-in-visual-arts",
+      "ruleReviewStatus": "manual_review_required",
+      "trackSelectionOptional": false,
+      "tracks": [
+        {
+          "id": "HKBU-TPG-048-STUDIO-MEDIA-ARTS",
+          "name": "Studio and Media Arts",
+          "type": "Concentration",
+          "creditsRequired": 30,
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-creative-arts/academy-of-visual-arts/master-of-arts-in-visual-arts",
+          "lastVerifiedAt": "2026-07-16"
+        },
+        {
+          "id": "HKBU-TPG-048-CRAFT-DESIGN",
+          "name": "Craft and Design",
+          "type": "Concentration",
+          "creditsRequired": 30,
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-creative-arts/academy-of-visual-arts/master-of-arts-in-visual-arts",
+          "lastVerifiedAt": "2026-07-16"
+        }
+      ],
+      "statusNote": "The current September 2026 admissions page confirms the same 30-unit structure as the linked official 2025-26 Handbook and requires applicants to declare one of two Concentrations. All students complete four 3-unit Required Courses. Studio and Media Arts students complete VASA7010–VASA7040 and Craft and Design students complete VACD7010–VACD7040, each as four 4.5-unit Studio Project parts totalling 18 units. The Handbook states that Studio Project I must be completed before Studio Project II; the mandatory Concentration and linked project progression require manual audit review.",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-creative-arts/academy-of-visual-arts/master-of-arts-in-visual-arts",
+          "courses": [
+            {
+              "code": "VACC7010",
+              "name": "Research Methodology for the Visual Arts",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/VACC7010"
+            },
+            {
+              "code": "VACC7020",
+              "name": "Visual Arts Theory and Criticism",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/VACC7020"
+            },
+            {
+              "code": "VACC7030",
+              "name": "Critically Engaged: Creative Practices in Context",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/VACC7030"
+            },
+            {
+              "code": "VACC7040",
+              "name": "Arts and the Public: Interpretation and Presentation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/VACC7040"
+            }
+          ],
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Required Courses for 12 units."
+        },
+        {
+          "id": "concentration-studio-projects",
+          "name": "Concentration-based Studio Projects",
+          "type": "track_core_requirement",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-creative-arts/academy-of-visual-arts/master-of-arts-in-visual-arts",
+          "courses": [
+            {
+              "code": "VASA7010",
+              "name": "SMA Studio Project IA",
+              "credits": 4.5,
+              "appliesToTrackIds": [
+                "HKBU-TPG-048-STUDIO-MEDIA-ARTS"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/VASA7010",
+              "courseKind": "studio_project",
+              "linkedSequenceId": "VASA-STUDIO-PROJECT-I"
+            },
+            {
+              "code": "VASA7020",
+              "name": "SMA Studio Project IB",
+              "credits": 4.5,
+              "appliesToTrackIds": [
+                "HKBU-TPG-048-STUDIO-MEDIA-ARTS"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/VASA7020",
+              "courseKind": "studio_project",
+              "linkedSequenceId": "VASA-STUDIO-PROJECT-I"
+            },
+            {
+              "code": "VASA7030",
+              "name": "SMA Studio Project IIA",
+              "credits": 4.5,
+              "appliesToTrackIds": [
+                "HKBU-TPG-048-STUDIO-MEDIA-ARTS"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/VASA7030",
+              "courseKind": "studio_project",
+              "linkedSequenceId": "VASA-STUDIO-PROJECT-II"
+            },
+            {
+              "code": "VASA7040",
+              "name": "SMA Studio Project IIB",
+              "credits": 4.5,
+              "appliesToTrackIds": [
+                "HKBU-TPG-048-STUDIO-MEDIA-ARTS"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/VASA7040",
+              "courseKind": "studio_project",
+              "linkedSequenceId": "VASA-STUDIO-PROJECT-II"
+            },
+            {
+              "code": "VACD7010",
+              "name": "CD Studio Project IA",
+              "credits": 4.5,
+              "appliesToTrackIds": [
+                "HKBU-TPG-048-CRAFT-DESIGN"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/VACD7010",
+              "courseKind": "studio_project",
+              "linkedSequenceId": "VACD-STUDIO-PROJECT-I"
+            },
+            {
+              "code": "VACD7020",
+              "name": "CD Studio Project IB",
+              "credits": 4.5,
+              "appliesToTrackIds": [
+                "HKBU-TPG-048-CRAFT-DESIGN"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/VACD7020",
+              "courseKind": "studio_project",
+              "linkedSequenceId": "VACD-STUDIO-PROJECT-I"
+            },
+            {
+              "code": "VACD7030",
+              "name": "CD Studio Project IIA",
+              "credits": 4.5,
+              "appliesToTrackIds": [
+                "HKBU-TPG-048-CRAFT-DESIGN"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/VACD7030",
+              "courseKind": "studio_project",
+              "linkedSequenceId": "VACD-STUDIO-PROJECT-II"
+            },
+            {
+              "code": "VACD7040",
+              "name": "CD Studio Project IIB",
+              "credits": 4.5,
+              "appliesToTrackIds": [
+                "HKBU-TPG-048-CRAFT-DESIGN"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/VACD7040",
+              "courseKind": "studio_project",
+              "linkedSequenceId": "VACD-STUDIO-PROJECT-II"
+            }
+          ],
+          "creditsRequired": 18,
+          "coursesRequired": 4,
+          "creditsRequiredByTrackIds": {
+            "HKBU-TPG-048-STUDIO-MEDIA-ARTS": 18,
+            "HKBU-TPG-048-CRAFT-DESIGN": 18
+          },
+          "coursesRequiredByTrackIds": {
+            "HKBU-TPG-048-STUDIO-MEDIA-ARTS": 4,
+            "HKBU-TPG-048-CRAFT-DESIGN": 4
+          },
+          "ruleText": "Complete all four 4.5-unit Studio Project parts assigned to the declared Concentration. Studio Project I must be completed before Studio Project II."
+        }
+      ]
+    }
+  ]
+}

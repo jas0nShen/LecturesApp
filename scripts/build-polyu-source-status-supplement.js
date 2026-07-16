@@ -20,9 +20,33 @@ const verifiedIds = new Set([
   'POLYU-TPG-035',
   'POLYU-TPG-037',
   'POLYU-TPG-038',
+  'POLYU-TPG-044',
+  'POLYU-TPG-045',
+  'POLYU-TPG-046',
+  'POLYU-TPG-048',
+  'POLYU-TPG-049',
+  'POLYU-TPG-050',
+  'POLYU-TPG-051',
+  'POLYU-TPG-052',
+  'POLYU-TPG-053',
+  'POLYU-TPG-054',
+  'POLYU-TPG-055',
+  'POLYU-TPG-058',
+  'POLYU-TPG-059',
+  'POLYU-TPG-060',
+  'POLYU-TPG-061',
+  'POLYU-TPG-062',
+  'POLYU-TPG-063',
+  'POLYU-TPG-064',
+  'POLYU-TPG-065',
+  'POLYU-TPG-066',
+  'POLYU-TPG-067',
+  'POLYU-TPG-068',
+  'POLYU-TPG-069',
   'POLYU-TPG-072',
   'POLYU-TPG-073',
   'POLYU-TPG-075',
+  'POLYU-TPG-076',
   'POLYU-TPG-077',
   'POLYU-TPG-078',
   'POLYU-TPG-079',
@@ -37,6 +61,73 @@ const verifiedIds = new Set([
   'POLYU-TPG-105'
 ]);
 const statusOverrides = {
+  'POLYU-TPG-040': {
+    verifiedAt: '2026-07-16',
+    faculty: 'Department of Language Science and Technology (LST)',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/72029-ehf-ehp',
+    statusNote: 'The official 2027 Programme page publishes the complete 31-credit Global Communication and Event Hosting Arts structure: five Compulsory Subjects and six Elective Subjects with at least two from the GCEHA Block. The current Department of Language Science and Technology curriculum publishes exact codes for the established Non-GCEHA subjects, but the three GCEHA subjects Interpreting and Public Speech, Entrepreneurship Across Different Cultures and MAGCEHA Internship remain under the placeholder code LST5XXX, and it does not publish codes for the five new Compulsory Subjects. The Programme remains blocked rather than treating placeholder codes as unique course codes or exposing an incomplete compulsory structure.'
+  },
+  'POLYU-TPG-041': {
+    verifiedAt: '2026-07-16',
+    faculty: 'Department of Language Science and Technology (LST)',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/72030-ttf-ttp',
+    statusNote: 'The official 2027 Programme page publishes the complete 31-credit Translation and Language Technology structure: 19 Compulsory credits and 12 Elective credits, with optional Localisation and Interpreting Specialisms requiring two relevant Elective Subjects. It publishes the complete new AI-oriented subject-title pools but no course codes or explicit per-course credits. The current Department of Language Science and Technology curriculum page contains an empty curriculum component stating Please put at least one valid content allocate to this component. The Programme remains blocked rather than mapping the redesigned titles to older translation subjects or deriving individual credits from the group totals.'
+  },
+  'POLYU-TPG-042': {
+    verifiedAt: '2026-07-16',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/31077-cfm-cpm',
+    statusNote: 'The official 2027 Programme page publishes two 31-credit Civil Engineering paths: ten taught subjects including at least seven Core Subjects, or seven taught subjects including at least four Core Subjects plus a 9-credit Dissertation, together with a 1-credit AIE subject. The current Department of Civil and Environmental Engineering page publishes codes for all twenty-four Core Subjects, CSE590 CE Dissertation and four Recommended Electives, and the current official CSE syllabi confirm 3 credits for every listed CSE taught subject. However, the 2027 page additionally names Sustainable Finance and Low-Carbon Construction Materials as Recommended Electives while the current Civil Engineering code table omits them, and neither source identifies the required AIE code. The Programme remains blocked rather than importing codes from another Programme by title or exposing an incomplete Elective and AIE structure.'
+  },
+  'POLYU-TPG-043': {
+    verifiedAt: '2026-07-16',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/31078-efm-epm',
+    statusNote: 'The official 2027 Programme page publishes two 31-credit Environmental Management and Engineering paths: ten taught subjects including at least seven Core Subjects, or seven taught subjects including at least four Core Subjects plus a 9-credit Dissertation, together with a 1-credit AIE subject. The current Department of Civil and Environmental Engineering page publishes exact codes for the complete current Core and Elective title pools, and the current official CSE syllabi confirm 3 credits for every listed CSE taught subject. It identifies CSE591 with the conflicting title EV Dissertation rather than an Environmental Management and Engineering Dissertation, and neither source identifies the required AIE code. The Programme remains blocked rather than silently correcting the official Dissertation title or inferring the AIE code from another Engineering Programme.'
+  },
+  'POLYU-TPG-047': {
+    verifiedAt: '2026-07-16',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/46013-mq-mqt',
+    statusNote: 'The official 2027 Programme page publishes a 31-credit Microelectronics and Quantum Systems Engineering structure with six Core Subjects, four Elective Subjects or one Elective plus a 9-credit Dissertation, and the 1-credit AIE requirement. The current 2025/26 Department of Electrical and Electronic Engineering Programme Requirement Document instead publishes six Core Subjects, four Elective Subjects or two Electives plus the 6-credit EEE516 Research Project. It publishes exact codes and 3-credit values for the current Core and Elective pools and EEE5T03 for AIE, but no code for the new 2027 Dissertation and no current document confirming whether the Elective Streams remain unchanged for 2027. The Programme remains blocked rather than substituting EEE516 for a differently weighted Dissertation or carrying the older Elective structure forward.'
+  },
+  'POLYU-TPG-056': {
+    verifiedAt: '2026-07-16',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/34084-gfm-gpm',
+    statusNote: 'The official 2027 Programme page publishes three 31-credit Geomatics routes and requires 15 Compulsory credits, plus either LSGI551 Dissertation, LSGI552 Project or a taught-subject path, together with a 1-credit AIE subject. The current Department of Land Surveying and Geo-Informatics curriculum instead identifies six Compulsory Subjects for 18 credits. The current LSGI Subject List resolves the seven named 2027 Core-area titles and LSGI552, but does not list LSGI551, and neither source identifies the required AIE code. The Programme remains blocked rather than choosing between the 15- and 18-credit Compulsory structures, inventing the Dissertation or AIE code, or exposing only one completion route.'
+  },
+  'POLYU-TPG-057': {
+    verifiedAt: '2026-07-16',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/34083-ifm-ipm',
+    statusNote: 'The official 2027 Programme page publishes three 31-credit Urban Informatics and Smart Cities routes and requires 9 Compulsory credits, plus either LSGI551 Dissertation, LSGI552 Project or a taught-subject path, together with a 1-credit AIE subject. The current Department of Land Surveying and Geo-Informatics curriculum instead shows 12 Compulsory credits for its Dissertation route and 15 for the Project and taught routes. Its current LSGI Subject List does not identify codes for Urban Planning and Urban Design or several recommended cross-department Electives, does not list LSGI551, and neither source identifies the AIE code. The Programme remains blocked rather than reconciling the conflicting Compulsory totals, inventing missing codes or publishing an incomplete route.'
+  },
+  'POLYU-TPG-070': {
+    verifiedAt: '2026-07-16',
+    faculty: 'Department of Mechanical Engineering (ME)',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/43101-ir-irt',
+    statusNote: 'The official 2027 Programme page publishes the complete 31-credit Intelligent Robotics Engineering title pools, the six-of-six Core requirement, the Elective minima, the coursework and Dissertation routes, and EEE5T03 AIE. The current official ME Subject List maps all six Core titles to ME5301, ME5302, ME5303, ME5304, ME567 and ME570. Current official ME, EEE, COMP and ISE sources also map all seven Elective titles to ME548, ME558, ME573, EEE522, COMP5523, COMP5554 and ISE5312. However, the Programme page does not publish a Dissertation code, the public ME course page does not provide a Programme Requirement Document for Programme 43101, and the generic ME591 entry is not explicitly assigned to this award. The Programme remains blocked rather than inferring that 43101 uses ME591 from the older 43100 Mechanical Engineering document.',
+  },
+  'POLYU-TPG-071': {
+    verifiedAt: '2026-07-16',
+    faculty: 'Department of Mechanical Engineering (ME)',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/43102-se-set',
+    statusNote: 'The official 2027 Programme page publishes the complete 31-credit Sustainable Energy title pools, the Core and Elective minima, the coursework and Dissertation routes, and EEE5T03 AIE. The current official ME Subject List maps all eight Core titles to ME5111, ME5201, ME5202, ME5203, ME5205, ME5206, ME5207 and ME5208, and current official sources map five Electives to ME572, ME5510, BSE542, COMP5511 and COMP5541. Public sources do not identify the code for Applied Solar Energy in Buildings or a Programme-specific Dissertation code, and the public ME course page does not provide a Programme Requirement Document for Programme 43102. The Programme remains blocked rather than guessing the cross-department subject code or assigning generic ME591 from the older 43100 Mechanical Engineering document.',
+  },
   'POLYU-TPG-032': {
     verifiedAt: '2026-07-15',
     creditsRequired: 31,
@@ -227,32 +318,68 @@ const statusOverrides = {
     statusNote: 'The official 2027 Programme page confirms the 31-credit Fire and Safety Engineering structure: seven taught subjects including three specified Compulsory Subjects and at least three other Core Subjects plus a Dissertation, or ten taught subjects including three specified Compulsory Subjects and at least four other Core Subjects, together with a 1-credit Academic Integrity and Ethics subject. It requires the additional Core selection to include BSE558 Accident Prevention, Hazard Assessment and Control and/or BSE559 Safety Management Systems and Safety Auditing, but otherwise publishes only broad Fire Engineering and Safety Engineering study areas and says detailed subjects will be provided upon registration. The current October 2025 Department of Building Environment and Energy Engineering brochure publishes no curriculum code table. The remaining Compulsory and Core pool, explicit taught-subject credits, Dissertation code and AIE code are therefore unresolved. The Programme remains blocked rather than leaving the total unknown, treating two published codes as a complete pool or inventing the missing course structure.'
   },
   'POLYU-TPG-080': {
-    verifiedAt: '2026-07-15',
+    verifiedAt: '2026-07-16',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    trackSelectionOptional: true,
+    tracks: [{
+      id: 'POLYU-TPG-080-MOLECULAR-DIAGNOSTICS',
+      name: 'Molecular Diagnostics',
+      type: 'Specialism',
+      creditsRequired: 31,
+      sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/55005-fmm-pmm'
+    }],
     sourceUrl: 'https://www.polyu.edu.hk/hti/study/programmes/taught-postgraduate-programmes_list/master-of-science-in-medical-laboratory-science/',
     statusNote: 'The official 2027 Programme page and the September 2026 MSc Medical Laboratory Science leaflet publish the 31-credit generic and Molecular Diagnostics paths, course groups and current subject titles. Neither public source publishes the subject codes, and the leaflet directs readers to the Programme Requirement Document for curriculum details; that document is not publicly linked. The Programme remains blocked rather than inferring codes from other Health Technology awards.'
   },
   'POLYU-TPG-081': {
-    verifiedAt: '2026-07-15',
+    verifiedAt: '2026-07-16',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    trackSelectionOptional: true,
+    tracks: [
+      {
+        id: 'POLYU-TPG-081-COMPUTED-TOMOGRAPHY',
+        name: 'Computed Tomography',
+        type: 'Specialism',
+        creditsRequired: 31,
+        sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/55005-frm-prm'
+      },
+      {
+        id: 'POLYU-TPG-081-MAGNETIC-RESONANCE-IMAGING',
+        name: 'Magnetic Resonance Imaging',
+        type: 'Specialism',
+        creditsRequired: 31,
+        sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/55005-frm-prm'
+      },
+      {
+        id: 'POLYU-TPG-081-ULTRASONOGRAPHY',
+        name: 'Ultrasonography',
+        type: 'Specialism',
+        creditsRequired: 31,
+        sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/55005-frm-prm'
+      }
+    ],
     sourceUrl: 'https://www.polyu.edu.hk/hti/study/programmes/taught-postgraduate-programmes_list/master-of-science-in-medical-imaging-and-radiation-science/',
     statusNote: 'The official 2027 Programme page and the September 2026 MSc Medical Imaging and Radiation Science leaflet publish the 31-credit generic path, three Specialisms, course groups and current subject titles. Neither public source publishes the subject codes, and the leaflet directs readers to the Programme Requirement Document for curriculum details; that document is not publicly linked. The Programme remains blocked rather than inferring codes from another Health Technology award.'
   },
   'POLYU-TPG-082': {
-    verifiedAt: '2026-07-15',
+    verifiedAt: '2026-07-16',
     sourceUrl: 'https://www.polyu.edu.hk/hti/study/programmes/taught-postgraduate-programmes_list/master-of-science-in-medical-physics/',
     statusNote: 'The official 2027 Programme page publishes the 31-credit rule, current course titles and per-course credits, while the September 2026 MSc Medical Physics leaflet confirms the public subject pools. Neither source publishes the subject codes, and the leaflet directs readers to the Programme Requirement Document for curriculum details; that document is not publicly linked. The Programme remains blocked rather than inferring codes from another Health Technology award.'
   },
   'POLYU-TPG-083': {
-    verifiedAt: '2026-07-15',
+    verifiedAt: '2026-07-16',
     sourceUrl: 'https://www.polyu.edu.hk/hti/study/programmes/taught-postgraduate-programmes_list/master-of-science-in-medical-data-science/',
     statusNote: 'The official 2027 Programme page and the September 2026 MSc Medical Data Science leaflet publish the 31-credit rule, course groups and current subject titles. Neither public source publishes the complete subject codes and per-course credits, and the leaflet directs readers to the Programme Requirement Document for curriculum details; that document is not publicly linked. The Programme remains blocked rather than exposing a partial code pool assembled from overlapping awards.'
   },
   'POLYU-TPG-084': {
-    verifiedAt: '2026-07-15',
+    verifiedAt: '2026-07-16',
     sourceUrl: 'https://www.polyu.edu.hk/hti/study/programmes/taught-postgraduate-programmes_list/master-of-medical-imaging/',
     statusNote: 'The official 2027 Programme page and the September 2026 Master of Medical Imaging leaflet publish the 91-credit professional structure and current Foundation, Professional and Clinical Practicum titles. Neither public source publishes the subject codes or per-course credit values, and the leaflet directs readers to the Programme Requirement Document for curriculum details; that document is not publicly linked. The Programme remains blocked rather than inventing the professional and practicum codes or splitting aggregate credits across courses.'
   },
   'POLYU-TPG-085': {
-    verifiedAt: '2026-07-15',
+    verifiedAt: '2026-07-16',
     sourceUrl: 'https://www.polyu.edu.hk/gs/prospective-students/tpg/master-of-technology-entrepreneurship/curriculum/',
     statusNote: 'The official 2027 Programme page, Graduate School Curriculum page and 2027-28 Programme brochure consistently publish the 37-credit structure, current Technology Core, Entrepreneurship Core, Project, Elective and Academic Integrity and Ethics subject titles, and the explicit credit value of every subject. The three public sources do not publish any subject code, including the 6-credit Project Part 1: Research and the 15-credit Project Part 2: Start-up completed at an MTRI. The Programme remains blocked rather than inventing a new subject prefix or exposing name-only courses.'
   },
@@ -396,18 +523,54 @@ const statusOverrides = {
     sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/71026-mcf-mcp-mlf-mlp',
     statusNote: 'The official 2027 Programme page corrects the MA total to 31 credits, identifies the Faculty of Humanities, requires applicants to choose English for Professional Communication or English Language Teaching, and publishes the current Compulsory, Specialism-specific Core, Specialism-specific Elective and Common Elective subject-title pools. The current Department of English and Communication Full Subject List recovers exact code entries for 27 named taught subjects. It also publishes ENGL5012 Research Project in Language Studies, ENGL580 Research Project and ENGL587 Research Project; the linked official Subject Description Forms assign 6 credits to each, describe ENGL580 as professional-communication research and ENGL587 as classroom-based or classroom-oriented research, but the Programme page uses only generic or plural Research Project labels and does not explicitly assign those codes or state whether ENGL5012 is included. The current Full Subject List does not publish entries for Professional Ethics and Academic Integrity or the subject-to-approval Time in Second Language Teaching and Learning. In addition, the December 2025 official Programme flyer linked from the Department 2027/28 page publishes an all-coursework Route and a coursework-and-research Route with three Specialism-specific Core subjects for either Specialism, while the 2027 Programme page requires three such Core subjects for EPC but five for ELT and does not describe those two Routes. The Programme remains blocked rather than selecting the AIE or Time subject codes from another Programme, guessing the Research Project membership, or choosing between conflicting official completion paths.'
   },
-  'POLYU-TPG-076': {
-    verifiedAt: '2026-07-15',
-    sourceUrl: 'https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/',
-    statusNote: 'The official 2027 Programme page publishes a 31-credit structure and an elective list that includes Advanced Topics in InsurTech and Supply Chain Management. The current AMA Curriculum code table does not identify those two current elective entries and instead includes Current Topics in Actuarial Science. The remaining compulsory, elective, Dissertation and AIE codes can be mapped, but this mismatch leaves the current elective pool incomplete; no code is inferred from another Programme.'
-  },
   'POLYU-TPG-074': {
-    verifiedAt: '2026-07-15',
+    verifiedAt: '2026-07-16',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    trackSelectionOptional: true,
+    tracks: [
+      {
+        id: 'POLYU-TPG-074-NEUROLOGY',
+        name: 'Neurology',
+        type: 'Specialism',
+        creditsRequired: 31,
+        sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp'
+      },
+      {
+        id: 'POLYU-TPG-074-MUSCULOSKELETAL-AND-SPORTS',
+        name: 'Musculoskeletal and Sports',
+        type: 'Specialism',
+        creditsRequired: 31,
+        sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp'
+      },
+      {
+        id: 'POLYU-TPG-074-MANUAL-AND-NEUROMUSCULOSKELETAL',
+        name: 'Manual and Neuromusculoskeletal',
+        type: 'Specialism',
+        creditsRequired: 31,
+        sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp'
+      }
+    ],
     sourceUrl: 'https://www.polyu.edu.hk/rs/study/taught-postgraduate-studies/msc-programme-2026-or-after/msc-in-advanced-physiotherapy/curriculum/',
     statusNote: 'The official 2027 Programme page, the current Department of Rehabilitation Sciences Curriculum page, and the July 2026 v14 Programme leaflet publish the 31-credit paths, three Specialisms, fixed Core and Clinical Practice subject codes, and per-course credits. All three sources label the compulsory 6-credit component only as Project Study and do not publish its subject code. RS567 must not be inferred from another Rehabilitation Sciences Programme.'
   },
   'POLYU-TPG-104': {
-    verifiedAt: '2026-07-15',
+    verifiedAt: '2026-07-16',
+    creditsRequired: 31,
+    creditUnit: 'credits',
+    trackSelectionOptional: true,
+    tracks: [
+      { id: 'POLYU-TPG-104-CANCER-AND-PALLIATIVE-CARE', name: 'Cancer and Palliative Care', type: 'Specialism', creditsRequired: 31, sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/53070-fts-pt' },
+      { id: 'POLYU-TPG-104-COMMUNITY-HEALTH-NURSING', name: 'Community Health Nursing', type: 'Specialism', creditsRequired: 31, sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/53070-fts-pt' },
+      { id: 'POLYU-TPG-104-CRITICAL-CARE', name: 'Critical Care', type: 'Specialism', creditsRequired: 31, sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/53070-fts-pt' },
+      { id: 'POLYU-TPG-104-GERONTOLOGICAL-NURSING', name: 'Gerontological Nursing', type: 'Specialism', creditsRequired: 31, sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/53070-fts-pt' },
+      { id: 'POLYU-TPG-104-INFECTIOUS-DISEASES-AND-INFECTION-CONTROL', name: 'Infectious Diseases and Infection Control', type: 'Specialism', creditsRequired: 31, sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/53070-fts-pt' },
+      { id: 'POLYU-TPG-104-MENTAL-HEALTH-NURSING', name: 'Mental Health Nursing', type: 'Specialism', creditsRequired: 31, sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/53070-fts-pt' },
+      { id: 'POLYU-TPG-104-NURSING-EDUCATION', name: 'Nursing Education', type: 'Specialism', creditsRequired: 31, sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/53070-fts-pt' },
+      { id: 'POLYU-TPG-104-TRADITIONAL-CHINESE-MEDICINAL-NURSING', name: 'Traditional Chinese Medicinal Nursing', type: 'Specialism', creditsRequired: 31, sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/53070-fts-pt' },
+      { id: 'POLYU-TPG-104-GERONTOLOGICAL-AND-COMMUNITY-HEALTH-NURSING', name: 'Gerontological Nursing & Community Health Nursing', type: 'Combined Specialism', creditsRequired: 31, sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/53070-fts-pt' },
+      { id: 'POLYU-TPG-104-TRADITIONAL-CHINESE-MEDICINAL-NURSING-AND-CANCER-PALLIATIVE-CARE', name: 'Traditional Chinese Medicinal Nursing & Cancer and Palliative Care', type: 'Combined Specialism', creditsRequired: 31, sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/53070-fts-pt' }
+    ],
     sourceUrl: 'https://www.polyu.edu.hk/sn/study/postgraduate-programmes/master-of-science-in-nursing/programme-structure/',
     statusNote: 'The official 2027 Programme page, School of Nursing programme pamphlet and 2025-intake Subject Offering Pattern publish the 31-credit completion paths, eight specialisms, and coded Core, Dissertation, Practicum, specialty and general elective subjects. They do not publish the AIE subject code or explicit per-course credits for the taught subjects. Those fields must not be inferred from another FHSS Programme or from the aggregate group totals.'
   }

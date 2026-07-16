@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "POLYU",
+  "academicYear": "2027-28",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "POLYU-TPG-076",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63024-ofm-opm",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 2027 Programme page publishes the complete 31-credit structure and title pool. The current Operational Research and Risk Analysis Curriculum page maps the seven Compulsory Subjects, fourteen of the fifteen current Elective titles, DSAI5T09 and AMA592 to official codes. The current official AMA Actuarial and Investment Science curriculum independently maps the remaining exact-title Elective Advanced Topics in InsurTech to AMA580 for 3 credits. The older AMA570 Current Topics in Actuarial Science entry on the Operational Research curriculum page is not included because the 2027 Programme page omits it. Statistical Data Mining is stored under the current DSAI5101 code rather than duplicating the AMA546 cross-list. The three-Elective and Dissertation paths are mutually exclusive and require manual audit review.",
+      "courseGroups": [
+        {
+          "id": "compulsory-subjects",
+          "name": "Compulsory Subjects",
+          "type": "core",
+          "creditsRequired": 21,
+          "coursesRequired": 7,
+          "ruleText": "Complete all seven Compulsory Subjects for 21 credits during the first year of study.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/",
+          "courses": [
+            {
+              "code": "AMA542",
+              "name": "Advanced Operations Research Methods",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+            },
+            {
+              "code": "AMA540",
+              "name": "Business Forecasting",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+            },
+            {
+              "code": "AMA539",
+              "name": "Financial Modeling",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+            },
+            {
+              "code": "AMA502",
+              "name": "Operations Research Methods",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+            },
+            {
+              "code": "AMA538",
+              "name": "Principles of Risk Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+            },
+            {
+              "code": "AMA528",
+              "name": "Probability and Stochastic Models",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+            },
+            {
+              "code": "AMA541",
+              "name": "Simulation and Risk Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+            }
+          ]
+        },
+        {
+          "id": "elective-subjects",
+          "name": "Elective Subjects",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete three 3-credit Elective Subjects from the official 2027 pool. This taught path is mutually exclusive with AMA592 Dissertation.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63024-ofm-opm",
+          "courses": [
+            {
+              "code": "AMA580",
+              "name": "Advanced Topics in InsurTech",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+            },
+            {
+              "code": "AMA568",
+              "name": "Advanced Topics in Quantitative Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+            },
+            {
+              "code": "AF5322",
+              "name": "Corporate Risk Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+            },
+            {
+              "code": "AF5341",
+              "name": "Economics for Financial Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+            },
+            {
+              "code": "AMA532",
+              "name": "Investment Science",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+            },
+            {
+              "code": "AMA535",
+              "name": "Mathematics of Derivative Pricing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+            },
+            {
+              "code": "AMA530",
+              "name": "Mathematics of Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+            },
+            {
+              "code": "AMA505",
+              "name": "Optimisation Methods",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+            },
+            {
+              "code": "AF5312",
+              "name": "Principles of Corporate Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+            },
+            {
+              "code": "AMA567",
+              "name": "Quantum Computing for Data Science",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+            },
+            {
+              "code": "AMA524",
+              "name": "Scientific Computing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+            },
+            {
+              "code": "DSAI5101",
+              "name": "Statistical Data Mining",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+            },
+            {
+              "code": "AMA529",
+              "name": "Statistical Inference",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+            },
+            {
+              "code": "AMA569",
+              "name": "Stochastic Models for Carbon Pricing and Trading",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+            },
+            {
+              "code": "LGT5015",
+              "name": "Supply Chain Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+            }
+          ]
+        },
+        {
+          "id": "dissertation-option",
+          "name": "Dissertation Option",
+          "type": "dissertation",
+          "creditsRequired": 9,
+          "coursesRequired": 1,
+          "ruleText": "Complete AMA592 Dissertation for 9 credits instead of the three Elective Subjects.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/",
+          "courses": [
+            {
+              "code": "AMA592",
+              "name": "Dissertation",
+              "credits": 9,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/",
+              "courseKind": "dissertation",
+              "conditionalRequirement": true
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Academic Integrity and Ethics",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete DSAI5T09 for 1 credit in either award path.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/",
+          "courses": [
+            {
+              "code": "DSAI5T09",
+              "name": "Academic Integrity and Ethics in Computer and Mathematical Sciences",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

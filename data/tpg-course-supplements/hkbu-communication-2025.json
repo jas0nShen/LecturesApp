@@ -1,0 +1,837 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-041",
+      "programmeName": "Master of Arts (MA) in Communication",
+      "faculty": "School of Communication",
+      "status": "verified",
+      "creditsRequired": 27,
+      "creditUnit": "units",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-communication/master-of-arts-in-communication",
+      "ruleReviewStatus": "manual_review_required",
+      "trackSelectionOptional": true,
+      "tracks": [
+        {
+          "id": "HKBU-TPG-041-INTERACTIVE-MEDIA",
+          "name": "Interactive Media",
+          "type": "Concentration",
+          "creditsRequired": 27,
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-communication/master-of-arts-in-communication",
+          "lastVerifiedAt": "2026-07-16"
+        }
+      ],
+      "statusNote": "The latest publicly accessible 2025-26 HKBU Academic Registry handbook publishes the complete 27-unit MA structure and all 98 unique course codes. All students complete COMM7020 and either COMM7010 or COMM7030; the unselected foundation course may count as an Elective. Students without a Concentration complete 21 Elective units, including at least 15 units from this Programme. Interactive Media students complete COMM7920, COMM7930 and COMM7940 plus 12 Elective units; seven AIDM Electives are restricted to that Concentration. At most two approved external Electives may count, and three published workshop courses carry zero units. The foundation-course cross-role rule, optional Concentration and combined internal/external Elective quota require manual audit review.",
+      "courseGroups": [
+        {
+          "id": "required-foundation-choice",
+          "name": "Required Foundation Choice",
+          "type": "core_choice",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Complete either COMM7010 or COMM7030 for 3 units. The course not used for this requirement may count as a Programme Elective.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-communication/master-of-arts-in-communication",
+          "courses": [
+            {
+              "code": "COMM7010",
+              "name": "Foundations of Communication Study",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7010",
+              "conditionalRequirement": true,
+              "subjectGroups": [
+                "required_choice",
+                "programme_elective"
+              ]
+            },
+            {
+              "code": "COMM7030",
+              "name": "Perspectives on Media and Society",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7030",
+              "conditionalRequirement": true,
+              "subjectGroups": [
+                "required_choice",
+                "programme_elective"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "required-research-methods",
+          "name": "Required Research Methods",
+          "type": "core",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Complete COMM7020 Approaches and Methods in Communication Research for 3 units.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-communication/master-of-arts-in-communication",
+          "courses": [
+            {
+              "code": "COMM7020",
+              "name": "Approaches and Methods in Communication Research",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7020"
+            }
+          ]
+        },
+        {
+          "id": "interactive-media-concentration-required",
+          "name": "Interactive Media Concentration Required Courses",
+          "type": "track_core_requirement",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "appliesToTrackIds": [
+            "HKBU-TPG-041-INTERACTIVE-MEDIA"
+          ],
+          "ruleText": "Interactive Media Concentration students complete all three courses for 9 units.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-communication/master-of-arts-in-communication",
+          "courses": [
+            {
+              "code": "COMM7920",
+              "name": "Transnational Studies of Interactive Media",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-041-INTERACTIVE-MEDIA"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7920"
+            },
+            {
+              "code": "COMM7930",
+              "name": "Interactive Media Narrative and Storyboarding",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-041-INTERACTIVE-MEDIA"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7930"
+            },
+            {
+              "code": "COMM7940",
+              "name": "Interactive Media Studies Workshop",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-041-INTERACTIVE-MEDIA"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7940"
+            }
+          ]
+        },
+        {
+          "id": "elective-requirement",
+          "name": "Elective Requirement",
+          "type": "elective_requirement",
+          "creditsRequired": 21,
+          "coursesRequired": 7,
+          "creditsRequiredByTrackIds": {
+            "HKBU-TPG-041-INTERACTIVE-MEDIA": 12
+          },
+          "coursesRequiredByTrackIds": {
+            "HKBU-TPG-041-INTERACTIVE-MEDIA": 4
+          },
+          "ruleText": "Students without a Concentration complete seven Electives (21 units), including at least five Programme Electives (15 units). Interactive Media students complete four Electives (12 units). At most two approved external Electives (6 units) may count. The unused COMM7010 or COMM7030 foundation option may count as a Programme Elective.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-communication/master-of-arts-in-communication",
+          "courses": []
+        },
+        {
+          "id": "programme-elective-pool",
+          "name": "Programme Elective Pool",
+          "type": "elective",
+          "ruleText": "Choose from the official Programme Elective pool. AIDM-coded courses are available only to the Interactive Media Concentration. COMM7210 is a Project and COMM7890 is a Communication Research Thesis, but both remain Electives.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-communication/master-of-arts-in-communication",
+          "courses": [
+            {
+              "code": "AIDM7010",
+              "name": "Media Psychology",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-041-INTERACTIVE-MEDIA"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/AIDM7010"
+            },
+            {
+              "code": "AIDM7020",
+              "name": "AI and Big Data Applications in Financial Market Analytics",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-041-INTERACTIVE-MEDIA"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/AIDM7020"
+            },
+            {
+              "code": "AIDM7390",
+              "name": "Data Mining and Knowledge Discovery for Digital Media",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-041-INTERACTIVE-MEDIA"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/AIDM7390"
+            },
+            {
+              "code": "AIDM7420",
+              "name": "News and Feature Writing for Digital Media",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-041-INTERACTIVE-MEDIA"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/AIDM7420"
+            },
+            {
+              "code": "AIDM7450",
+              "name": "Dynamic Web and Mobile Programming for Digital Media",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-041-INTERACTIVE-MEDIA"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/AIDM7450"
+            },
+            {
+              "code": "AIDM7840",
+              "name": "Algorithmic Culture",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-041-INTERACTIVE-MEDIA"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/AIDM7840"
+            },
+            {
+              "code": "AIDM7860",
+              "name": "Human-Computer Interaction and User Experience",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-041-INTERACTIVE-MEDIA"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/AIDM7860"
+            },
+            {
+              "code": "COMM7040",
+              "name": "Issues in Intercultural Communication",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7040"
+            },
+            {
+              "code": "COMM7050",
+              "name": "Media and Communication in Chinese Societies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7050"
+            },
+            {
+              "code": "COMM7060",
+              "name": "Issues in Corporate Communication",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7060"
+            },
+            {
+              "code": "COMM7100",
+              "name": "Intelligent Communication: Cloud and AI Solutions for Small Organizations",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7100"
+            },
+            {
+              "code": "COMM7130",
+              "name": "Globalization of Media and Communication",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7130"
+            },
+            {
+              "code": "COMM7160",
+              "name": "Organizational Communication",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7160"
+            },
+            {
+              "code": "COMM7170",
+              "name": "Communication Campaign Workshop",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7170"
+            },
+            {
+              "code": "COMM7180",
+              "name": "Media Law and Ethics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7180"
+            },
+            {
+              "code": "COMM7190",
+              "name": "Issues and Cases in Mass Communication",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7190"
+            },
+            {
+              "code": "COMM7200",
+              "name": "New Media Workshop",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7200"
+            },
+            {
+              "code": "COMM7210",
+              "name": "Project",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7210",
+              "courseKind": "project"
+            },
+            {
+              "code": "COMM7220",
+              "name": "Advertising Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7220"
+            },
+            {
+              "code": "COMM7230",
+              "name": "Writing for Multimedia in Public Relations",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7230"
+            },
+            {
+              "code": "COMM7240",
+              "name": "Media Markets",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7240"
+            },
+            {
+              "code": "COMM7250",
+              "name": "Strategic Public Relations and Crisis Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7250"
+            },
+            {
+              "code": "COMM7270",
+              "name": "Media Policies and Regulations",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7270"
+            },
+            {
+              "code": "COMM7280",
+              "name": "Communication Technologies and Media Organizations",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7280"
+            },
+            {
+              "code": "COMM7300",
+              "name": "Consumer Insights",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7300"
+            },
+            {
+              "code": "COMM7310",
+              "name": "International Advertising",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7310"
+            },
+            {
+              "code": "COMM7510",
+              "name": "Public Administration and the Media",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7510"
+            },
+            {
+              "code": "COMM7550",
+              "name": "Advertising in China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7550"
+            },
+            {
+              "code": "COMM7560",
+              "name": "Political Communication and Public Opinion",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7560"
+            },
+            {
+              "code": "COMM7570",
+              "name": "Youth, Media and Consumption",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7570"
+            },
+            {
+              "code": "COMM7580",
+              "name": "Social Media Marketing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7580"
+            },
+            {
+              "code": "COMM7610",
+              "name": "Social Services Marketing and Communication",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7610"
+            },
+            {
+              "code": "COMM7620",
+              "name": "Social Media and Online Social Networks",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7620"
+            },
+            {
+              "code": "COMM7630",
+              "name": "Qualitative Research Methods",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7630"
+            },
+            {
+              "code": "COMM7640",
+              "name": "Introduction to the Chinese Internet",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7640"
+            },
+            {
+              "code": "COMM7650",
+              "name": "Introduction to Social Science Theories",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7650"
+            },
+            {
+              "code": "COMM7660",
+              "name": "Statistical Analysis in Communication",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7660"
+            },
+            {
+              "code": "COMM7750",
+              "name": "Using Social Networks: For the Communications Professional",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7750"
+            },
+            {
+              "code": "COMM7760",
+              "name": "Advertising and Society",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7760"
+            },
+            {
+              "code": "COMM7770",
+              "name": "Data Visualization",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7770"
+            },
+            {
+              "code": "COMM7780",
+              "name": "Big Data Analytics for Media and Communication",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7780"
+            },
+            {
+              "code": "COMM7790",
+              "name": "Communication and Technology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7790"
+            },
+            {
+              "code": "COMM7800",
+              "name": "New Media Design and Communication",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7800"
+            },
+            {
+              "code": "COMM7810",
+              "name": "Branding",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7810"
+            },
+            {
+              "code": "COMM7820",
+              "name": "Privacy, Data Protection, and Surveillance in the Communication and Media Context",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7820"
+            },
+            {
+              "code": "COMM7830",
+              "name": "Media Communications and Psychology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7830"
+            },
+            {
+              "code": "COMM7840",
+              "name": "Algorithmic Culture",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7840"
+            },
+            {
+              "code": "COMM7850",
+              "name": "Emerging Technology for Media and Communication",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7850"
+            },
+            {
+              "code": "COMM7860",
+              "name": "Communicating Data",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7860"
+            },
+            {
+              "code": "COMM7870",
+              "name": "Deceptive Communication",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7870"
+            },
+            {
+              "code": "COMM7880",
+              "name": "Advanced Quantitative Communication Research Methods",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7880"
+            },
+            {
+              "code": "COMM7890",
+              "name": "Communication Research Thesis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7890",
+              "courseKind": "dissertation"
+            },
+            {
+              "code": "COMM7900",
+              "name": "Media Convergence: Theory and Practice",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7900"
+            },
+            {
+              "code": "COMM7910",
+              "name": "Health Communication",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7910"
+            },
+            {
+              "code": "COMM7950",
+              "name": "Interactive Media Economy",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7950"
+            },
+            {
+              "code": "COMM7960",
+              "name": "AI for Interactive Media Design",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7960"
+            },
+            {
+              "code": "COMM7970",
+              "name": "Online Media Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7970"
+            },
+            {
+              "code": "COMM7980",
+              "name": "Interactive Media Cultures and Ethics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7980"
+            }
+          ]
+        },
+        {
+          "id": "approved-external-elective-pool",
+          "name": "Approved External Elective Pool",
+          "type": "elective",
+          "creditsMax": 6,
+          "coursesMax": 2,
+          "ruleText": "At most two 3-unit Electives from this official cross-Programme pool may count toward the MA Elective requirement.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-communication/master-of-arts-in-communication",
+          "courses": [
+            {
+              "code": "ACCT7770",
+              "name": "Corporate Accounting",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ACCT7770"
+            },
+            {
+              "code": "ACCT7780",
+              "name": "Corporate Law and Compliance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ACCT7780"
+            },
+            {
+              "code": "ACCT7820",
+              "name": "Taxation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ACCT7820"
+            },
+            {
+              "code": "ACCT7830",
+              "name": "Risk, Compliance and Corporate Social Responsibility",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ACCT7830"
+            },
+            {
+              "code": "BUSD7010",
+              "name": "Social Enterprise Management and Social Impact Strategies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/BUSD7010"
+            },
+            {
+              "code": "CTV7220",
+              "name": "World Cinema: History and Aesthetics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CTV7220"
+            },
+            {
+              "code": "CTV7230",
+              "name": "Seminar on Chinese Cinemas",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CTV7230"
+            },
+            {
+              "code": "CTV7270",
+              "name": "Current Issues of Asian Media",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CTV7270"
+            },
+            {
+              "code": "CTV7290",
+              "name": "Critique of Contemporary Arts",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CTV7290"
+            },
+            {
+              "code": "CTV7370",
+              "name": "Cinematography for Directors",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CTV7370"
+            },
+            {
+              "code": "CTV7380",
+              "name": "Dramaturgy and Directing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CTV7380"
+            },
+            {
+              "code": "CTV7540",
+              "name": "Seminar on Television and New Media",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/CTV7540"
+            },
+            {
+              "code": "EDUC7530",
+              "name": "Sociocultural Context of Human Development",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/EDUC7530"
+            },
+            {
+              "code": "EDUM7550",
+              "name": "Educational Psychology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/EDUM7550"
+            },
+            {
+              "code": "JOUR7010",
+              "name": "International Relations Theory and Practice",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7010"
+            },
+            {
+              "code": "JOUR7020",
+              "name": "Comparative and International News",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7020"
+            },
+            {
+              "code": "JOUR7030",
+              "name": "Research Methods in Media and Communication",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7030"
+            },
+            {
+              "code": "JOUR7040",
+              "name": "Multimedia Journalism",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7040"
+            },
+            {
+              "code": "JOUR7070",
+              "name": "Theories of Journalism and Communication",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7070"
+            },
+            {
+              "code": "JOUR7080",
+              "name": "Current Issues and Case Studies in International News",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7080"
+            },
+            {
+              "code": "JOUR7090",
+              "name": "International News Translation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7090"
+            },
+            {
+              "code": "JOUR7110",
+              "name": "Reporting International Conflict",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7110"
+            },
+            {
+              "code": "JOUR7120",
+              "name": "International Business and Financial Reporting",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7120"
+            },
+            {
+              "code": "JOUR7140",
+              "name": "Globalisation, Economics and Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7140"
+            },
+            {
+              "code": "JOUR7150",
+              "name": "Business News Writing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7150"
+            },
+            {
+              "code": "JOUR7160",
+              "name": "Principles of Economics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7160"
+            },
+            {
+              "code": "JOUR7170",
+              "name": "Business and Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7170"
+            },
+            {
+              "code": "JOUR7180",
+              "name": "Advanced Business News Writing and Production",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7180"
+            },
+            {
+              "code": "JOUR7250",
+              "name": "Reporting China and Hong Kong",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7250"
+            },
+            {
+              "code": "JOUR7260",
+              "name": "Reporting Southeast Asia",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7260"
+            },
+            {
+              "code": "JOUR7270",
+              "name": "The Journalism Business",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7270"
+            }
+          ]
+        },
+        {
+          "id": "optional-zero-unit-courses",
+          "name": "Optional Zero-unit Courses",
+          "type": "optional",
+          "ruleText": "These workshops are optional and carry zero units; they do not contribute to the 27-unit graduation requirement.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-communication/master-of-arts-in-communication",
+          "courses": [
+            {
+              "code": "COMM7520",
+              "name": "Cross-cultural Documentary Workshop",
+              "credits": 0,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7520"
+            },
+            {
+              "code": "COMM7530",
+              "name": "Information Design",
+              "credits": 0,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7530"
+            },
+            {
+              "code": "COMM7540",
+              "name": "Multimedia Production",
+              "credits": 0,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7540"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

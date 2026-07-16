@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-012",
+      "status": "verified",
+      "creditsRequired": 27,
+      "creditUnit": "units",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-psychology",
+      "ruleReviewStatus": "verified",
+      "statusNote": "The latest publicly accessible HKBU Academic Registry handbook page publishes the complete 2025-26 27-unit curriculum: seven Programme Required Courses (21 units) and two Electives (6 units) from a six-course pool. The protected 2026-27 handbook must be rechecked when it becomes publicly accessible.",
+      "courseGroups": [
+        {
+          "id": "programme-required-courses",
+          "name": "Programme Required Courses",
+          "type": "core",
+          "creditsRequired": 21,
+          "coursesRequired": 7,
+          "ruleText": "Complete all seven Programme Required Courses (21 units).",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-psychology",
+          "courses": [
+            { "code": "EDPY7010", "name": "Research Methods and Data Analysis", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/EDPY7010" },
+            { "code": "EDPY7020", "name": "Biopsychology and Health", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/EDPY7020" },
+            { "code": "EDPY7030", "name": "Development Psychology and Developmental Disorder", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/EDPY7030" },
+            { "code": "EDPY7040", "name": "Personality and Individual Differences", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/EDPY7040" },
+            { "code": "EDPY7050", "name": "Social Psychology", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/EDPY7050" },
+            { "code": "EDPY7060", "name": "Cognitive Psychology and Applications", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/EDPY7060" },
+            { "code": "EDPY7070", "name": "Historical and Contemporary Issues in Psychology", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/EDPY7070" }
+          ]
+        },
+        {
+          "id": "electives",
+          "name": "Electives",
+          "type": "elective",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Complete two 3-unit Electives (6 units).",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-psychology",
+          "courses": [
+            { "code": "EDUC7540", "name": "Psychology of Moral Development", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/EDUC7540" },
+            { "code": "EDUM7550", "name": "Educational Psychology", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/EDUM7550" },
+            { "code": "COMM7830", "name": "Media Communications and Psychology", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7830" },
+            { "code": "COMM7910", "name": "Health Communication", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7910" },
+            { "code": "SLM7080", "name": "Health Promotion", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SLM7080" },
+            { "code": "SOWK7120", "name": "Child & Adolescent Mental Health", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7120" }
+          ]
+        }
+      ]
+    }
+  ]
+}

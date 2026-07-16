@@ -229,18 +229,26 @@ function getStatus(programme) {
 function searchProgrammes(programmes, keyword = '') {
   const normalized = normalizeKeyword(keyword);
   if (!normalized) return programmes;
-  return programmes.filter((programme) => {
-    const courseText = (programme.courseGroups || []).flatMap((group) => (
-      (group.courses || []).flatMap((course) => [course.code, course.name])
-    ));
-    return [
-      programme.name,
-      programme.programmeCode,
-      programme.faculty,
-      programme.universityCode,
-      ...courseText
-    ].filter(Boolean).join(' ').toLowerCase().includes(normalized);
-  });
+  return programmes.map((programme, index) => {
+    const name = String(programme.name || '').toLowerCase();
+    const programmeCode = String(programme.programmeCode || '').toLowerCase();
+    const faculty = String(programme.faculty || '').toLowerCase();
+    const universityCode = String(programme.universityCode || '').toLowerCase();
+    const courses = (programme.courseGroups || []).flatMap((group) => group.courses || []);
+    let score = Number.POSITIVE_INFINITY;
+    if (name === normalized) score = 0;
+    else if (name.startsWith(normalized)) score = 1;
+    else if (name.includes(normalized)) score = 2;
+    else if (programmeCode === normalized) score = 3;
+    else if (programmeCode.includes(normalized)) score = 4;
+    else if (faculty.includes(normalized) || universityCode.includes(normalized)) score = 5;
+    else if (courses.some((course) => String(course.code || '').toLowerCase() === normalized)) score = 6;
+    else if (courses.some((course) => String(course.code || '').toLowerCase().includes(normalized))) score = 7;
+    else if (courses.some((course) => String(course.name || '').toLowerCase().includes(normalized))) score = 8;
+    return { programme, index, score };
+  }).filter((item) => Number.isFinite(item.score))
+    .sort((left, right) => left.score - right.score || left.index - right.index)
+    .map((item) => item.programme);
 }
 
 function filterProgrammesByAvailability(programmes, availability = 'all') {

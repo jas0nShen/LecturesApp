@@ -1,0 +1,502 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-045",
+      "programmeName": "Master of Fine Arts (MFA) in Cinematic Arts and Creative Practice",
+      "faculty": "Academy of Film, School of Creative Arts",
+      "status": "verified",
+      "creditsRequired": 48,
+      "creditUnit": "units",
+      "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html",
+      "ruleReviewStatus": "manual_review_required",
+      "trackSelectionOptional": false,
+      "tracks": [
+        {
+          "id": "HKBU-TPG-045-NARRATIVE-FILM-PRODUCTION",
+          "name": "Narrative Film Production",
+          "type": "Thesis Form",
+          "creditsRequired": 48,
+          "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html",
+          "lastVerifiedAt": "2026-07-16"
+        },
+        {
+          "id": "HKBU-TPG-045-DOCUMENTARY-FILM-PRODUCTION",
+          "name": "Documentary Film Production",
+          "type": "Thesis Form",
+          "creditsRequired": 48,
+          "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html",
+          "lastVerifiedAt": "2026-07-16"
+        },
+        {
+          "id": "HKBU-TPG-045-FILM-TV-SCRIPTWRITING",
+          "name": "Film or TV Scriptwriting",
+          "type": "Thesis Form",
+          "creditsRequired": 48,
+          "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html",
+          "lastVerifiedAt": "2026-07-16"
+        }
+      ],
+      "statusNote": "The current Academy of Film course list is explicitly applicable to the September 2026 intake and onwards and replaces the linked older 66-unit MFA Handbook structure. It publishes a 48-unit award: eleven Core codes for 36 units, including the 9-unit CTV7501/CTV7502 MFA Thesis Project sequence, plus four 3-unit Electives. The current 39-code Elective pool requires at least 6 units from Creativity and Production and at least 3 units from Theory and Specialised Topics. Each of the three Thesis Forms also requires its published two-course production or writing prerequisite pair, which counts within the Elective structure. Annual availability, quotas, category minima and Thesis-form prerequisites require manual audit review; the old CTV7081/CTV7082 Thesis codes are not retained.",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html",
+          "courses": [
+            {
+              "code": "CTV7101",
+              "name": "Introduction to Film Production",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7131",
+              "name": "Script Writing and Pre-production Planning with AI",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7121",
+              "name": "Film History and Aesthetics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7111",
+              "name": "Documentary Film Art and Style",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7370",
+              "name": "Cinematography for Directors",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7141",
+              "name": "Introduction to Cross-Media Creation and Application with AI and UE5",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7151",
+              "name": "Post-Production in the Age of AI",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7201",
+              "name": "Digital Production Design",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7020",
+              "name": "Digital Media Content Production",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7501",
+              "name": "MFA Thesis Project I (Conceptualization and Pre-Production Planning)",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html",
+              "courseKind": "thesis_project",
+              "linkedSequenceId": "CTV750-MFA-THESIS-PROJECT"
+            },
+            {
+              "code": "CTV7502",
+              "name": "MFA Thesis Project II (Enhance Your Cinematic Craft)",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html",
+              "courseKind": "thesis_project",
+              "linkedSequenceId": "CTV750-MFA-THESIS-PROJECT"
+            }
+          ],
+          "creditsRequired": 36,
+          "coursesRequired": 11,
+          "ruleText": "Complete all eleven Core codes for 36 units, including both MFA Thesis Project parts CTV7501 and CTV7502."
+        },
+        {
+          "id": "elective-requirement",
+          "name": "Elective Requirement",
+          "type": "elective_requirement",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html",
+          "courses": [],
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete four 3-unit Electives. At least two must come from Creativity and Production and at least one from Theory and Specialised Topics. The selected Thesis Form also requires its designated two-course prerequisite pair within this Elective structure."
+        },
+        {
+          "id": "creativity-production-electives",
+          "name": "Creativity and Production Electives",
+          "type": "elective",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html",
+          "courses": [
+            {
+              "code": "CTV7150",
+              "name": "Dramatic Film/TV Production",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html",
+              "conditionalRequirement": true,
+              "requiredForTrackIds": [
+                "HKBU-TPG-045-NARRATIVE-FILM-PRODUCTION"
+              ],
+              "typeByTrackIds": {
+                "HKBU-TPG-045-NARRATIVE-FILM-PRODUCTION": "track_core"
+              }
+            },
+            {
+              "code": "CTV7170",
+              "name": "Advanced Dramatic Film/TV Production",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html",
+              "conditionalRequirement": true,
+              "requiredForTrackIds": [
+                "HKBU-TPG-045-NARRATIVE-FILM-PRODUCTION"
+              ],
+              "typeByTrackIds": {
+                "HKBU-TPG-045-NARRATIVE-FILM-PRODUCTION": "track_core"
+              }
+            },
+            {
+              "code": "CTV7160",
+              "name": "Documentary Film/TV Production",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html",
+              "conditionalRequirement": true,
+              "requiredForTrackIds": [
+                "HKBU-TPG-045-DOCUMENTARY-FILM-PRODUCTION"
+              ],
+              "typeByTrackIds": {
+                "HKBU-TPG-045-DOCUMENTARY-FILM-PRODUCTION": "track_core"
+              }
+            },
+            {
+              "code": "CTV7413",
+              "name": "Advanced Documentary Film Production",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html",
+              "conditionalRequirement": true,
+              "requiredForTrackIds": [
+                "HKBU-TPG-045-DOCUMENTARY-FILM-PRODUCTION"
+              ],
+              "typeByTrackIds": {
+                "HKBU-TPG-045-DOCUMENTARY-FILM-PRODUCTION": "track_core"
+              }
+            },
+            {
+              "code": "CTV7110",
+              "name": "Advanced Script Writing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html",
+              "conditionalRequirement": true,
+              "requiredForTrackIds": [
+                "HKBU-TPG-045-FILM-TV-SCRIPTWRITING"
+              ],
+              "typeByTrackIds": {
+                "HKBU-TPG-045-FILM-TV-SCRIPTWRITING": "track_core"
+              }
+            },
+            {
+              "code": "CTV7403",
+              "name": "Drama Series Writing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html",
+              "conditionalRequirement": true,
+              "requiredForTrackIds": [
+                "HKBU-TPG-045-FILM-TV-SCRIPTWRITING"
+              ],
+              "typeByTrackIds": {
+                "HKBU-TPG-045-FILM-TV-SCRIPTWRITING": "track_core"
+              }
+            },
+            {
+              "code": "CTV7040",
+              "name": "Film Production II",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7050",
+              "name": "Advanced Television Studio Production",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7100",
+              "name": "Script Writing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7120",
+              "name": "Creativity Workshop",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7130",
+              "name": "Comedy: Theory and Practice",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7360",
+              "name": "Idea, Story, Script",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7380",
+              "name": "Dramaturgy and Directing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7400",
+              "name": "Explorations in Digital Media",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7410",
+              "name": "Digital Media Production",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7420",
+              "name": "Basic Acting Techniques",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7430",
+              "name": "Visual Effects",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7470",
+              "name": "Special Topics - Professional Development I",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7530",
+              "name": "Special Topics - Professional Development II",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7490",
+              "name": "Sound Design for Media",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7510",
+              "name": "Advertising Fundamentals and Promotional Film Production",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7202",
+              "name": "Writing for Games",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7550",
+              "name": "Vertical and Horizontal Screen Drama Production",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            }
+          ],
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "At least two Electives (6 units) must come from this category. Narrative Film Production requires CTV7150 and CTV7170; Documentary Film Production requires CTV7160 and CTV7413; Film or TV Scriptwriting requires CTV7110 and CTV7403."
+        },
+        {
+          "id": "theory-specialised-electives",
+          "name": "Theory and Specialised Topics Electives",
+          "type": "elective",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html",
+          "courses": [
+            {
+              "code": "CTV7070",
+              "name": "Media Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7230",
+              "name": "Seminar on Chinese Cinemas",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7240",
+              "name": "Film Theory and Criticism",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7260",
+              "name": "Hong Kong Media and Globalization",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7270",
+              "name": "Current Issues of Asian Media",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7290",
+              "name": "Critique of Contemporary Arts",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7300",
+              "name": "Seminar on Great Works and Human Condition",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7450",
+              "name": "Alternative Cinema",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7460",
+              "name": "Film and Other Arts",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7480",
+              "name": "Special Topics - Aesthetics and Appreciation I",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7500",
+              "name": "Film and Literature",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7520",
+              "name": "Special Topics - Aesthetics and Appreciation II",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7540",
+              "name": "Seminar on Television and New Media",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7560",
+              "name": "Film Festival: Creative Strategy and Global Practice",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            }
+          ],
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "At least one Elective (3 units) must come from this category."
+        },
+        {
+          "id": "other-electives",
+          "name": "Other Elective Courses",
+          "type": "elective",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html",
+          "courses": [
+            {
+              "code": "CTV7310",
+              "name": "Independent Study",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html"
+            },
+            {
+              "code": "CTV7330",
+              "name": "Internship",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://af.hkbu.edu.hk/en/programmes/mfa-cacp/mfacacp-programme-structure.html",
+              "courseKind": "internship"
+            }
+          ],
+          "ruleText": "These courses may be used for the remaining Elective space, subject to availability and quota."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,796 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "POLYU",
+  "academicYear": "2027-28",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "POLYU-TPG-064",
+      "faculty": "Department of Management and Marketing (MM)",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23090-mhf-mhp",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 2027 Programme page and the current Department of Management and Marketing curriculum for the 2025/26 cohort onwards publish the complete 31-credit structure, exact codes and credits. The MSc has either four Compulsory Subjects, AIE and six Electives, or four Compulsory Subjects, AIE, two Electives, MM501 Research Methods and the 9-credit MM592 HRM Dissertation. MM501 is also an ordinary Elective in the non-Dissertation route and is represented once. MM5995 carries zero credits. The shared Elective quota and Dissertation path require manual audit review; the 22-credit PgD is an early-exit award and is not modelled as MSc completion.",
+      "courseGroups": [
+        {
+          "id": "compulsory-subjects",
+          "name": "Compulsory Subjects",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four 3-credit Compulsory Subjects for 12 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/",
+          "courses": [
+            {
+              "code": "MM514",
+              "name": "Human Resource Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+            },
+            {
+              "code": "MM515",
+              "name": "Organizational Behaviour",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+            },
+            {
+              "code": "MM517",
+              "name": "Human Resource Development",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+            },
+            {
+              "code": "MM5112",
+              "name": "Organization and Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Academic Integrity and Business Ethics",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete MM5T21 Academic Integrity and Business Ethics for 1 credit.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/",
+          "courses": [
+            {
+              "code": "MM5T21",
+              "name": "Academic Integrity and Business Ethics",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/",
+              "courseKind": "academic_integrity"
+            }
+          ]
+        },
+        {
+          "id": "elective-subjects",
+          "name": "Elective Subjects",
+          "type": "elective",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "For the non-Dissertation route, complete any six 3-credit Elective Subjects for 18 credits. For the Dissertation route, complete any two ordinary Electives for 6 credits plus MM501 Research Methods for 3 credits. MM5995 carries 0 credits and cannot satisfy the credit minimum.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/",
+          "courses": [
+            {
+              "code": "MM501",
+              "name": "Research Methods",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/",
+              "subjectGroups": [
+                "elective",
+                "research-methods"
+              ]
+            },
+            {
+              "code": "MM516",
+              "name": "Management of Pay and Benefits",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+            },
+            {
+              "code": "MM5191",
+              "name": "Negotiation and Conflict Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+            },
+            {
+              "code": "MM5203",
+              "name": "Decision Making for Leadership",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+            },
+            {
+              "code": "MM5221",
+              "name": "Human Resource Management in China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+            },
+            {
+              "code": "MM5222",
+              "name": "HRM Seminars",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+            },
+            {
+              "code": "MM5231",
+              "name": "Strategic Human Resource Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+            },
+            {
+              "code": "MM5241",
+              "name": "Managing Volunteerism",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+            },
+            {
+              "code": "MM5271",
+              "name": "Wellbeing at Work",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+            },
+            {
+              "code": "MM5281",
+              "name": "Mediation at Workplace",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+            },
+            {
+              "code": "MM531",
+              "name": "Strategic Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+            },
+            {
+              "code": "MM534",
+              "name": "Entrepreneurship",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+            },
+            {
+              "code": "MM539",
+              "name": "International Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+            },
+            {
+              "code": "MM5425",
+              "name": "Business Analytics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+            },
+            {
+              "code": "MM5433",
+              "name": "Decision Analytics by Machine Learning",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+            },
+            {
+              "code": "MM5684",
+              "name": "Leading Global Sustainability",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+            },
+            {
+              "code": "MM576",
+              "name": "Marketing Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+            },
+            {
+              "code": "MM5913",
+              "name": "Field Study for Business Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+            },
+            {
+              "code": "MM5921",
+              "name": "Practice of Human Resource Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+            },
+            {
+              "code": "MM5995",
+              "name": "MM MSc Career Workshop",
+              "credits": 0,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/",
+              "subjectGroups": [
+                "elective",
+                "career-workshop"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dissertation-option",
+          "name": "Dissertation Option",
+          "type": "dissertation",
+          "creditsRequired": 9,
+          "coursesRequired": 1,
+          "ruleText": "The Dissertation route requires MM592 HRM Dissertation for 9 credits together with MM501 Research Methods and two ordinary Electives.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/",
+          "courses": [
+            {
+              "code": "MM592",
+              "name": "HRM Dissertation",
+              "credits": 9,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/",
+              "courseKind": "dissertation",
+              "conditionalRequirement": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-065",
+      "faculty": "Department of Management and Marketing (MM)",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23090-mkf-mkp",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 2027 Programme page and the current Department of Management and Marketing curriculum for the 2025/26 cohort onwards publish the complete 31-credit structure, exact codes and credits. The MSc has either four Compulsory Subjects, AIE and six Electives, or four Compulsory Subjects, AIE, two Electives, MM501 Research Methods and the 9-credit MM597 Marketing Management Dissertation. MM501 is also an ordinary Elective in the non-Dissertation route and is represented once. MM5995 carries zero credits. The shared Elective quota and Dissertation path require manual audit review; the 22-credit PgD is an early-exit award and is not modelled as MSc completion.",
+      "courseGroups": [
+        {
+          "id": "compulsory-subjects",
+          "name": "Compulsory Subjects",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four 3-credit Compulsory Subjects for 12 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/",
+          "courses": [
+            {
+              "code": "MM5112",
+              "name": "Organization and Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+            },
+            {
+              "code": "MM576",
+              "name": "Marketing Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+            },
+            {
+              "code": "MM5803",
+              "name": "Introduction to Customer Value",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+            },
+            {
+              "code": "MM587",
+              "name": "Consumer Behaviour",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Academic Integrity and Business Ethics",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete MM5T21 Academic Integrity and Business Ethics for 1 credit.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/",
+          "courses": [
+            {
+              "code": "MM5T21",
+              "name": "Academic Integrity and Business Ethics",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/",
+              "courseKind": "academic_integrity"
+            }
+          ]
+        },
+        {
+          "id": "elective-subjects",
+          "name": "Elective Subjects",
+          "type": "elective",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "For the non-Dissertation route, complete any six 3-credit Elective Subjects for 18 credits. For the Dissertation route, complete any two ordinary Electives for 6 credits plus MM501 Research Methods for 3 credits. MM5995 carries 0 credits and cannot satisfy the credit minimum.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/",
+          "courses": [
+            {
+              "code": "MM501",
+              "name": "Research Methods",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/",
+              "subjectGroups": [
+                "elective",
+                "research-methods"
+              ]
+            },
+            {
+              "code": "MM5203",
+              "name": "Decision Making for Leadership",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+            },
+            {
+              "code": "MM534",
+              "name": "Entrepreneurship",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+            },
+            {
+              "code": "MM539",
+              "name": "International Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+            },
+            {
+              "code": "MM5425",
+              "name": "Business Analytics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+            },
+            {
+              "code": "MM5433",
+              "name": "Decision Analytics by Machine Learning",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+            },
+            {
+              "code": "MM544",
+              "name": "E-Commerce",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+            },
+            {
+              "code": "MM5451",
+              "name": "Technology Innovation and Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+            },
+            {
+              "code": "MM5452",
+              "name": "Seminars in Emerging Technology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+            },
+            {
+              "code": "MM5712",
+              "name": "Marketing Management in China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+            },
+            {
+              "code": "MM573",
+              "name": "Marketing Strategy",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+            },
+            {
+              "code": "MM5751",
+              "name": "Content Marketing and Storytelling",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+            },
+            {
+              "code": "MM578",
+              "name": "Services Marketing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+            },
+            {
+              "code": "MM5791",
+              "name": "Global Marketing in Cross-Cultural Perspectives",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+            },
+            {
+              "code": "MM5811",
+              "name": "Marketing with Purpose: ESG and Sustainability",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+            },
+            {
+              "code": "MM582",
+              "name": "Business to Business Marketing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+            },
+            {
+              "code": "MM5831",
+              "name": "Social Media Marketing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+            },
+            {
+              "code": "MM584",
+              "name": "Sales Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+            },
+            {
+              "code": "MM5851",
+              "name": "Marketing Innovation and Industry Leadership",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+            },
+            {
+              "code": "MM5861",
+              "name": "Advanced Marketing Research",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+            },
+            {
+              "code": "MM5862",
+              "name": "Quantitative Methods for Marketing Intelligence",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+            },
+            {
+              "code": "MM588",
+              "name": "Brand Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+            },
+            {
+              "code": "MM589",
+              "name": "Promotion and Advertising",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+            },
+            {
+              "code": "MM5913",
+              "name": "Field Study for Business Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+            },
+            {
+              "code": "MM5971",
+              "name": "Practice of Marketing Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+            },
+            {
+              "code": "MM5995",
+              "name": "MM MSc Career Workshop",
+              "credits": 0,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/",
+              "subjectGroups": [
+                "elective",
+                "career-workshop"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dissertation-option",
+          "name": "Dissertation Option",
+          "type": "dissertation",
+          "creditsRequired": 9,
+          "coursesRequired": 1,
+          "ruleText": "The Dissertation route requires MM597 Marketing Management Dissertation for 9 credits together with MM501 Research Methods and two ordinary Electives.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/",
+          "courses": [
+            {
+              "code": "MM597",
+              "name": "Marketing Management Dissertation",
+              "credits": 9,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/",
+              "courseKind": "dissertation",
+              "conditionalRequirement": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-066",
+      "faculty": "Department of Management and Marketing (MM)",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23090-mif",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 2027 Programme page and the current Department of Management and Marketing curriculum for the 2026/27 cohort onwards publish the complete 31-credit structure, exact codes and credits. Students complete three 3-credit Compulsory Subjects, the 1-credit MM5T21 AIE subject, any three of six 3-credit Core Subjects and four 3-credit Elective Subjects. MM5995 carries zero credits and cannot satisfy the 12-credit Elective requirement. The three-of-six Core and four-Elective choices require manual audit review; the 22-credit PgD is an early-exit award and is not modelled as MSc completion.",
+      "courseGroups": [
+        {
+          "id": "compulsory-subjects",
+          "name": "Compulsory Subjects",
+          "type": "core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete all three 3-credit Compulsory Subjects for 9 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/",
+          "courses": [
+            {
+              "code": "MM5112",
+              "name": "Organization and Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+            },
+            {
+              "code": "MM5684",
+              "name": "Leading Global Sustainability",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+            },
+            {
+              "code": "MM5383",
+              "name": "International Business Policy",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Academic Integrity and Ethics in Business",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete MM5T21 Academic Integrity and Ethics in Business for 1 credit.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/",
+          "courses": [
+            {
+              "code": "MM5T21",
+              "name": "Academic Integrity and Business Ethics",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/",
+              "courseKind": "academic_integrity"
+            }
+          ]
+        },
+        {
+          "id": "core-subjects",
+          "name": "Core Subjects",
+          "type": "core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete any three of the six 3-credit Core Subjects for 9 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/",
+          "courses": [
+            {
+              "code": "MM5251",
+              "name": "Cross-Cultural Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+            },
+            {
+              "code": "MM539",
+              "name": "International Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+            },
+            {
+              "code": "MM5791",
+              "name": "Global Marketing in Cross-Cultural Perspectives",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+            },
+            {
+              "code": "MM5913",
+              "name": "Field Study for Business Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+            },
+            {
+              "code": "LGT5034",
+              "name": "Global Sourcing and Supply",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+            },
+            {
+              "code": "LGT5429",
+              "name": "Global Risk and Decision Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+            }
+          ]
+        },
+        {
+          "id": "elective-subjects",
+          "name": "Elective Subjects",
+          "type": "elective",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete four 3-credit Elective Subjects for 12 credits. MM5995 carries 0 credits and cannot satisfy the credit minimum.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/",
+          "courses": [
+            {
+              "code": "MM501",
+              "name": "Research Methods",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+            },
+            {
+              "code": "MM5191",
+              "name": "Negotiation and Conflict Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+            },
+            {
+              "code": "MM5203",
+              "name": "Decision Making for Leadership",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+            },
+            {
+              "code": "MM5221",
+              "name": "Human Resource Management in China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+            },
+            {
+              "code": "MM5241",
+              "name": "Managing Volunteerism",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+            },
+            {
+              "code": "MM5281",
+              "name": "Mediation at Workplace",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+            },
+            {
+              "code": "MM531",
+              "name": "Strategic Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+            },
+            {
+              "code": "MM534",
+              "name": "Entrepreneurship",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+            },
+            {
+              "code": "MM5384",
+              "name": "Cross-sectoral Leadership for International Business",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+            },
+            {
+              "code": "MM5433",
+              "name": "Decision Analytics by Machine Learning",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+            },
+            {
+              "code": "MM5712",
+              "name": "Marketing Management in China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+            },
+            {
+              "code": "MM5811",
+              "name": "Marketing with Purpose: ESG and Sustainability",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+            },
+            {
+              "code": "MM5935",
+              "name": "Independent Projects",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+            },
+            {
+              "code": "AF5618",
+              "name": "Global Economic Environment for Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+            },
+            {
+              "code": "MM5995",
+              "name": "MM MSc Career Workshop",
+              "credits": 0,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/",
+              "subjectGroups": [
+                "elective",
+                "career-workshop"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

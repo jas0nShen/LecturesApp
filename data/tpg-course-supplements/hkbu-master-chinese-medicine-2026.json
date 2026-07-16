@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-040",
+      "programmeName": "Master of Chinese Medicine (MCM)",
+      "faculty": "School of Chinese Medicine",
+      "status": "verified",
+      "creditsRequired": 32,
+      "creditUnit": "units",
+      "sourceUrl": "https://scm.hkbu.edu.hk/en/education/taught-postgraduate/MCM.html",
+      "ruleReviewStatus": "manual_review_required",
+      "trackSelectionOptional": false,
+      "tracks": [
+        {
+          "id": "HKBU-TPG-040-STUDIES-APPLICATIONS-INTERNAL-CHINESE-MEDICINE",
+          "name": "Studies and Applications of Internal Chinese Medicine",
+          "type": "Concentration",
+          "creditsRequired": 32,
+          "sourceUrl": "https://scm.hkbu.edu.hk/en/education/taught-postgraduate/MCM.html",
+          "lastVerifiedAt": "2026-07-16"
+        },
+        {
+          "id": "HKBU-TPG-040-STUDIES-APPLICATIONS-ACUPUNCTURE",
+          "name": "Studies and Applications of Acupuncture",
+          "type": "Concentration",
+          "creditsRequired": 32,
+          "sourceUrl": "https://scm.hkbu.edu.hk/en/education/taught-postgraduate/MCM.html",
+          "lastVerifiedAt": "2026-07-16"
+        },
+        {
+          "id": "HKBU-TPG-040-STUDIES-APPLICATIONS-ORTHOPAEDICS-TRAUMATOLOGY-TUI-NA",
+          "name": "Studies and Applications of Orthopaedics, Traumatology and Tui Na",
+          "type": "Concentration",
+          "creditsRequired": 32,
+          "sourceUrl": "https://scm.hkbu.edu.hk/en/education/taught-postgraduate/MCM.html",
+          "lastVerifiedAt": "2026-07-16"
+        }
+      ],
+      "statusNote": "The current September 2026 admissions page confirms a 32-unit award with 11 Common units and 21 Concentration units, and requires one of three Concentrations. The current School of Chinese Medicine Programme page publishes 22 unique codes: four Common Courses for 11 units; four Track-specific courses for 15 units in each Concentration; a 6-unit completion choice between the paired Dissertation codes MCM7370/MCM7380 and any two of four published taught alternatives; and optional MCM7280, whose 2 units and grade do not count toward the award or cGPA. MCM7080 is shared by the Acupuncture and Orthopaedics/Traumatology/Tui Na Concentrations. The paired Dissertation route, any-two taught route, mandatory Concentration and non-award optional course require manual audit review.",
+      "courseGroups": [
+        {
+          "id": "common-courses",
+          "name": "Common Courses",
+          "type": "core",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://scm.hkbu.edu.hk/en/education/taught-postgraduate/MCM.html",
+          "courses": [
+            {
+              "code": "MCM7030",
+              "name": "Thinking Approach and Methodology of Chinese Medicine",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MCM7030"
+            },
+            {
+              "code": "MCM7320",
+              "name": "Clinical Applications of the Different Theories of Chinese Medicine",
+              "credits": 2,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MCM7320"
+            },
+            {
+              "code": "MCM7040",
+              "name": "Research Methodology and Practice in Chinese Medicine",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MCM7040"
+            },
+            {
+              "code": "MCM7060",
+              "name": "Formulation Theories and Practices of Chinese Medicinal Formulae",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MCM7060"
+            }
+          ],
+          "creditsRequired": 11,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Common Courses for 11 units."
+        },
+        {
+          "id": "concentration-courses",
+          "name": "Concentration Courses",
+          "type": "track_core_requirement",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://scm.hkbu.edu.hk/en/education/taught-postgraduate/MCM.html",
+          "courses": [
+            {
+              "code": "MCM7100",
+              "name": "Theoretical and Clinical Studies on the Miscellaneous Diseases of Internal Medicine",
+              "credits": 4,
+              "appliesToTrackIds": [
+                "HKBU-TPG-040-STUDIES-APPLICATIONS-INTERNAL-CHINESE-MEDICINE"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MCM7100"
+            },
+            {
+              "code": "MCM7330",
+              "name": "Studies and Applications of the Theory of Zhong Jing",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-040-STUDIES-APPLICATIONS-INTERNAL-CHINESE-MEDICINE"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MCM7330"
+            },
+            {
+              "code": "MCM7070",
+              "name": "Studies and Applications of the Science of Seasonal Febrile Diseases",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-040-STUDIES-APPLICATIONS-INTERNAL-CHINESE-MEDICINE"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MCM7070"
+            },
+            {
+              "code": "MCM7120",
+              "name": "Clinical Practice—Studies and Applications of Internal Chinese Medicine",
+              "credits": 5,
+              "appliesToTrackIds": [
+                "HKBU-TPG-040-STUDIES-APPLICATIONS-INTERNAL-CHINESE-MEDICINE"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MCM7120",
+              "courseKind": "practicum"
+            },
+            {
+              "code": "MCM7130",
+              "name": "Clinical Acupuncture—Advanced Level",
+              "credits": 4,
+              "appliesToTrackIds": [
+                "HKBU-TPG-040-STUDIES-APPLICATIONS-ACUPUNCTURE"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MCM7130"
+            },
+            {
+              "code": "MCM7340",
+              "name": "Advances in Acupuncture Research",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-040-STUDIES-APPLICATIONS-ACUPUNCTURE"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MCM7340"
+            },
+            {
+              "code": "MCM7080",
+              "name": "Examination and Diagnosis of Musculoskeletal Disorders",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-040-STUDIES-APPLICATIONS-ACUPUNCTURE",
+                "HKBU-TPG-040-STUDIES-APPLICATIONS-ORTHOPAEDICS-TRAUMATOLOGY-TUI-NA"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MCM7080"
+            },
+            {
+              "code": "MCM7150",
+              "name": "Clinical Practice—Studies and Applications of Acupuncture",
+              "credits": 5,
+              "appliesToTrackIds": [
+                "HKBU-TPG-040-STUDIES-APPLICATIONS-ACUPUNCTURE"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MCM7150",
+              "courseKind": "practicum"
+            },
+            {
+              "code": "MCM7350",
+              "name": "Tui Na Therapy of Chinese Medicine",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-040-STUDIES-APPLICATIONS-ORTHOPAEDICS-TRAUMATOLOGY-TUI-NA"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MCM7350"
+            },
+            {
+              "code": "MCM7360",
+              "name": "Advanced Orthopaedics and Traumatology of Chinese Medicine",
+              "credits": 4,
+              "appliesToTrackIds": [
+                "HKBU-TPG-040-STUDIES-APPLICATIONS-ORTHOPAEDICS-TRAUMATOLOGY-TUI-NA"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MCM7360"
+            },
+            {
+              "code": "MCM7180",
+              "name": "Clinical Practice—Studies and Applications of Orthopaedics and Traumatology and Tui Na",
+              "credits": 5,
+              "appliesToTrackIds": [
+                "HKBU-TPG-040-STUDIES-APPLICATIONS-ORTHOPAEDICS-TRAUMATOLOGY-TUI-NA"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MCM7180",
+              "courseKind": "practicum"
+            }
+          ],
+          "creditsRequired": 15,
+          "coursesRequired": 4,
+          "creditsRequiredByTrackIds": {
+            "HKBU-TPG-040-STUDIES-APPLICATIONS-INTERNAL-CHINESE-MEDICINE": 15,
+            "HKBU-TPG-040-STUDIES-APPLICATIONS-ACUPUNCTURE": 15,
+            "HKBU-TPG-040-STUDIES-APPLICATIONS-ORTHOPAEDICS-TRAUMATOLOGY-TUI-NA": 15
+          },
+          "coursesRequiredByTrackIds": {
+            "HKBU-TPG-040-STUDIES-APPLICATIONS-INTERNAL-CHINESE-MEDICINE": 4,
+            "HKBU-TPG-040-STUDIES-APPLICATIONS-ACUPUNCTURE": 4,
+            "HKBU-TPG-040-STUDIES-APPLICATIONS-ORTHOPAEDICS-TRAUMATOLOGY-TUI-NA": 4
+          },
+          "ruleText": "Complete the four courses assigned to the selected Concentration for 15 units. MCM7080 is shared by the Acupuncture and Orthopaedics, Traumatology and Tui Na Concentrations."
+        },
+        {
+          "id": "dissertation-or-taught-courses",
+          "name": "Dissertation or Taught-course Option",
+          "type": "dissertation_or_taught_option",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://scm.hkbu.edu.hk/en/education/taught-postgraduate/MCM.html",
+          "courses": [
+            {
+              "code": "MCM7370",
+              "name": "專題論文",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://scm.hkbu.edu.hk/en/education/taught-postgraduate/MCM.html",
+              "courseKind": "dissertation",
+              "conditionalRequirement": true,
+              "linkedSequenceId": "MCM737-DISSERTATION"
+            },
+            {
+              "code": "MCM7380",
+              "name": "專題論文",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://scm.hkbu.edu.hk/en/education/taught-postgraduate/MCM.html",
+              "courseKind": "dissertation",
+              "conditionalRequirement": true,
+              "linkedSequenceId": "MCM737-DISSERTATION"
+            },
+            {
+              "code": "MCM7290",
+              "name": "Mechanism of Action and Safe Application of Chinese Medicines",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MCM7290",
+              "conditionalRequirement": true
+            },
+            {
+              "code": "MCM7390",
+              "name": "個體化健康管理概論",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://scm.hkbu.edu.hk/en/education/taught-postgraduate/MCM.html",
+              "conditionalRequirement": true
+            },
+            {
+              "code": "MCM7300",
+              "name": "Advances in Chinese Medicines Research",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MCM7300",
+              "conditionalRequirement": true
+            },
+            {
+              "code": "MCM7400",
+              "name": "創新藥物臨床轉化策略",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://scm.hkbu.edu.hk/en/education/taught-postgraduate/MCM.html",
+              "conditionalRequirement": true
+            }
+          ],
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Complete both Dissertation parts MCM7370 and MCM7380, or choose any two of MCM7290, MCM7390, MCM7300 and MCM7400, for 6 units. A mixed Dissertation/taught pair is not valid."
+        },
+        {
+          "id": "optional-non-award-course",
+          "name": "Optional Course Outside the Award Total",
+          "type": "optional_non_award",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://scm.hkbu.edu.hk/en/education/taught-postgraduate/MCM.html",
+          "courses": [
+            {
+              "code": "MCM7280",
+              "name": "Marketing and Management of Industry for Chinese Medicines",
+              "credits": 2,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MCM7280"
+            }
+          ],
+          "ruleText": "MCM7280 is optional. Its units do not count toward the 32-unit award and its grade does not count toward cGPA."
+        }
+      ]
+    }
+  ]
+}

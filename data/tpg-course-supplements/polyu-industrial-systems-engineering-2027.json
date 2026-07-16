@@ -1,0 +1,671 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "POLYU",
+  "academicYear": "2027-28",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "POLYU-TPG-053",
+      "faculty": "Department of Industrial and Systems Engineering (ISE)",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mls-ml",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 2027 Programme page, current ISE curriculum, current 2025/26 Scheme Handbook and official ISE Subject Syllabi publish the complete coded structure, including the 9-credit ISE529 Dissertation (ILS) and 1-credit EEE5T03. The MSc has either seven taught subjects plus Dissertation or ten taught subjects. Both paths require all four Compulsory Subjects; the Dissertation path requires at least one Core and at most two Electives, while the non-Dissertation path requires at least three Core Subjects including ISE550 and at most three Electives. The wider subject availability at registration, path-dependent Core minimum and ISE550 condition require manual audit review.",
+      "courseGroups": [
+        {
+          "id": "compulsory-subjects",
+          "name": "Compulsory Subjects",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Compulsory Subjects for 12 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/",
+          "courses": [
+            {
+              "code": "ISE512",
+              "name": "Warehousing & Material Handling Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+            },
+            {
+              "code": "ISE526",
+              "name": "Enterprise Resources Planning",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+            },
+            {
+              "code": "ISE527",
+              "name": "Logistics Information Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+            },
+            {
+              "code": "ISE544",
+              "name": "Supply Chain Management Enabling Technologies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+            }
+          ]
+        },
+        {
+          "id": "core-subjects",
+          "name": "Core Subjects",
+          "type": "core",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Complete at least one Core Subject on the Dissertation path or at least three Core Subjects on the non-Dissertation path. ISE550 is compulsory within the non-Dissertation Core selection.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/",
+          "courses": [
+            {
+              "code": "ISE518",
+              "name": "Workflow Design and Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+            },
+            {
+              "code": "ISE525",
+              "name": "Global Operations and Logistics Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+            },
+            {
+              "code": "ISE548",
+              "name": "Risk and Crisis Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+            },
+            {
+              "code": "ISE550",
+              "name": "Contemporary Logistics Issues in China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/",
+              "conditionalRequirement": true
+            },
+            {
+              "code": "ISE5019",
+              "name": "Optimization Modeling & Applications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+            },
+            {
+              "code": "ISE5606",
+              "name": "Business Intelligence and Data Mining",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+            }
+          ]
+        },
+        {
+          "id": "elective-subjects",
+          "name": "Elective Subjects",
+          "type": "elective",
+          "ruleText": "Use at most two Elective Subjects on the Dissertation path or at most three on the non-Dissertation path. Subject availability is confirmed during registration.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/",
+          "courses": [
+            {
+              "code": "ISE538",
+              "name": "Process and Performance Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+            },
+            {
+              "code": "ISE5312",
+              "name": "Industrial Human-Robot Systems and Automation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+            },
+            {
+              "code": "ISE5323",
+              "name": "Smart Product-Service Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+            },
+            {
+              "code": "ISE5332",
+              "name": "Smart Manufacturing Operations Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+            },
+            {
+              "code": "ISE5333",
+              "name": "Industrial Blockchain and Applications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+            },
+            {
+              "code": "LGT5002",
+              "name": "International Logistics Systems, Operations and Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+            },
+            {
+              "code": "LGT5007",
+              "name": "Shipping Economics and Markets",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+            },
+            {
+              "code": "LGT5010",
+              "name": "Port Policy and Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+            },
+            {
+              "code": "LGT5013",
+              "name": "Transport Logistics in China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+            },
+            {
+              "code": "LGT5017",
+              "name": "Maritime Logistics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+            },
+            {
+              "code": "LGT5164",
+              "name": "Aviation Safety Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+            }
+          ]
+        },
+        {
+          "id": "dissertation-option",
+          "name": "Dissertation Option",
+          "type": "dissertation",
+          "ruleText": "The 9-credit ISE529 Dissertation (ILS) is used only on the seven-taught-subject Dissertation path and replaces three taught subjects.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/ise/study/information-for-current-students/programme-related-info/subject-syllabi/",
+          "courses": [
+            {
+              "code": "ISE529",
+              "name": "Dissertation (ILS)",
+              "credits": 9,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/information-for-current-students/programme-related-info/subject-syllabi/",
+              "courseKind": "dissertation",
+              "conditionalRequirement": true
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Engineering Ethics and Academic Integrity",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete EEE5T03 Engineering Ethics and Academic Integrity for 1 credit.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mls-ml",
+          "courses": [
+            {
+              "code": "EEE5T03",
+              "name": "Engineering Ethics and Academic Integrity",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/",
+              "courseKind": "academic_integrity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-054",
+      "faculty": "Department of Industrial and Systems Engineering (ISE)",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 2027 Programme page, current ISE curriculum, current 2025/26 Scheme Handbook and official ISE Subject Syllabi publish the complete coded structure, including the 9-credit ISE5003 Dissertation (KTM) and 1-credit EEE5T03. The MSc has either seven taught subjects plus Dissertation or ten taught subjects. Both paths require all four Compulsory Subjects; the Dissertation path requires at least one Core and at most two Electives, while the non-Dissertation path requires at least three Core Subjects including ISE5002 and at most three Electives. The current curriculum also states that a wider ISE Elective selection is available at registration, so path-dependent minima, ISE5002 and dynamic availability require manual audit review.",
+      "courseGroups": [
+        {
+          "id": "compulsory-subjects",
+          "name": "Compulsory Subjects",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Compulsory Subjects for 12 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/",
+          "courses": [
+            {
+              "code": "ISE542",
+              "name": "Managing Knowledge",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+            },
+            {
+              "code": "ISE549",
+              "name": "Management of Innovation and Technology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+            },
+            {
+              "code": "ISE5001",
+              "name": "Technology Transfer and Commercialisation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+            },
+            {
+              "code": "ISE5601",
+              "name": "Managing and Measuring Intellectual Capital",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+            }
+          ]
+        },
+        {
+          "id": "core-subjects",
+          "name": "Core Subjects",
+          "type": "core",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Complete at least one Core Subject on the Dissertation path or at least three Core Subjects on the non-Dissertation path. ISE5002 is compulsory within the non-Dissertation Core selection.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/",
+          "courses": [
+            {
+              "code": "ISE518",
+              "name": "Workflow Design and Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+            },
+            {
+              "code": "ISE525",
+              "name": "Global Operations and Logistics Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+            },
+            {
+              "code": "ISE559",
+              "name": "Technology Audit and Assessment",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+            },
+            {
+              "code": "ISE5002",
+              "name": "Field Study of Technology Organisations",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/",
+              "conditionalRequirement": true
+            },
+            {
+              "code": "ISE5021",
+              "name": "Technology Project Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+            },
+            {
+              "code": "ISE5606",
+              "name": "Business Intelligence and Data Mining",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+            }
+          ]
+        },
+        {
+          "id": "elective-subjects",
+          "name": "Elective Subjects",
+          "type": "elective",
+          "ruleText": "Use at most two Elective Subjects on the Dissertation path or at most three on the non-Dissertation path. A wider ISE selection may be available during registration.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/",
+          "courses": [
+            {
+              "code": "ISE5022",
+              "name": "Financial Decision Analysis for Technology Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+            },
+            {
+              "code": "ISE5026",
+              "name": "Technology Entrepreneurship and Innovation in Practice",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+            },
+            {
+              "code": "ISE5312",
+              "name": "Industrial Human-Robot Systems and Automation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+            },
+            {
+              "code": "ISE5323",
+              "name": "Smart Product-Service Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+            },
+            {
+              "code": "ISE5332",
+              "name": "Smart Manufacturing Operations Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+            },
+            {
+              "code": "ISE5333",
+              "name": "Industrial Blockchain and Applications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+            },
+            {
+              "code": "AAE5105",
+              "name": "Fleet Management and Aviation Sustainability",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+            },
+            {
+              "code": "AAE5112",
+              "name": "Airport Operations and Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+            },
+            {
+              "code": "AAE5301",
+              "name": "Service Design and Fleet Management for Low-Altitude Economy",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+            },
+            {
+              "code": "LGT5007",
+              "name": "Shipping Economics and Markets",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+            },
+            {
+              "code": "LGT5015",
+              "name": "Supply Chain Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+            },
+            {
+              "code": "LGT5105",
+              "name": "Management Operations Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+            },
+            {
+              "code": "MM5112",
+              "name": "Organisation and Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+            }
+          ]
+        },
+        {
+          "id": "dissertation-option",
+          "name": "Dissertation Option",
+          "type": "dissertation",
+          "ruleText": "The 9-credit ISE5003 Dissertation (KTM) is used only on the seven-taught-subject Dissertation path and replaces three taught subjects.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/ise/study/information-for-current-students/programme-related-info/subject-syllabi/",
+          "courses": [
+            {
+              "code": "ISE5003",
+              "name": "Dissertation (KTM)",
+              "credits": 9,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/information-for-current-students/programme-related-info/subject-syllabi/",
+              "courseKind": "dissertation",
+              "conditionalRequirement": true
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Engineering Ethics and Academic Integrity",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete EEE5T03 Engineering Ethics and Academic Integrity for 1 credit.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt",
+          "courses": [
+            {
+              "code": "EEE5T03",
+              "name": "Engineering Ethics and Academic Integrity",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/",
+              "courseKind": "academic_integrity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-055",
+      "faculty": "Department of Industrial and Systems Engineering (ISE)",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-smf-smp",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 2027 Programme page, current ISE Programme Structure, current 2025/26 Scheme Handbook and official ISE Subject Syllabi publish the complete coded structure, including new ISE5334, the 9-credit ISE5699 Dissertation (SM) and 1-credit EEE5T03. The MSc has either seven taught subjects plus Dissertation or ten taught subjects. Both paths require all four Compulsory Subjects; the Dissertation path requires at least one Core and at most two Electives, while the non-Dissertation path requires at least three Core Subjects and at most three Electives. The current Programme Structure calls ISE538 Process and Performance Measurement while its linked Subject Syllabus is titled Process and Performance Management; the 2027 Programme title is retained and the title conflict and path rules require manual review.",
+      "courseGroups": [
+        {
+          "id": "compulsory-subjects",
+          "name": "Compulsory Subjects",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Compulsory Subjects for 12 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/",
+          "courses": [
+            {
+              "code": "ISE5301",
+              "name": "Frontiers in Industry 4.0",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/"
+            },
+            {
+              "code": "ISE5311",
+              "name": "Advanced Manufacturing Processes",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/"
+            },
+            {
+              "code": "ISE5321",
+              "name": "Cyber-Physical Industry 4.0 Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/"
+            },
+            {
+              "code": "ISE5331",
+              "name": "Optimization and Data Analytics for Industry 4.0",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/"
+            }
+          ]
+        },
+        {
+          "id": "core-subjects",
+          "name": "Core Subjects",
+          "type": "core",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Complete at least one Core Subject on the Dissertation path or at least three Core Subjects on the non-Dissertation path.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/",
+          "courses": [
+            {
+              "code": "ISE5312",
+              "name": "Industrial Human-Robot Systems and Automation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/"
+            },
+            {
+              "code": "ISE5322",
+              "name": "Industrial Metaverse and Mixed Reality",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/"
+            },
+            {
+              "code": "ISE5323",
+              "name": "Smart Product-Service Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/"
+            },
+            {
+              "code": "ISE5332",
+              "name": "Smart Manufacturing Operations Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/"
+            },
+            {
+              "code": "ISE5333",
+              "name": "Industrial Blockchain and Applications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/"
+            },
+            {
+              "code": "ISE538",
+              "name": "Process and Performance Measurement",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/"
+            },
+            {
+              "code": "ISE5021",
+              "name": "Technology Project Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/"
+            }
+          ]
+        },
+        {
+          "id": "elective-subjects",
+          "name": "Elective Subjects",
+          "type": "elective",
+          "ruleText": "Use at most two Elective Subjects on the Dissertation path or at most three on the non-Dissertation path.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/",
+          "courses": [
+            {
+              "code": "ISE5019",
+              "name": "Optimization Modeling & Applications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/"
+            },
+            {
+              "code": "ISE5026",
+              "name": "Technology Entrepreneurship and Innovation in Practice",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/"
+            },
+            {
+              "code": "ISE5334",
+              "name": "Industrial Prompt Engineering for Generative Artificial Intelligence",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/"
+            }
+          ]
+        },
+        {
+          "id": "dissertation-option",
+          "name": "Dissertation Option",
+          "type": "dissertation",
+          "ruleText": "The 9-credit ISE5699 Dissertation (SM) is used only on the seven-taught-subject Dissertation path and replaces three taught subjects.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/ise/study/information-for-current-students/programme-related-info/subject-syllabi/",
+          "courses": [
+            {
+              "code": "ISE5699",
+              "name": "Dissertation (SM)",
+              "credits": 9,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/information-for-current-students/programme-related-info/subject-syllabi/",
+              "courseKind": "dissertation",
+              "conditionalRequirement": true
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Engineering Ethics and Academic Integrity",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete EEE5T03 Engineering Ethics and Academic Integrity for 1 credit.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-smf-smp",
+          "courses": [
+            {
+              "code": "EEE5T03",
+              "name": "Engineering Ethics and Academic Integrity",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/",
+              "courseKind": "academic_integrity"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

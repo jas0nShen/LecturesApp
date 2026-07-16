@@ -245,249 +245,199 @@
       "programmeId": "POLYU-TPG-040",
       "status": "blocked",
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72029-ehf-ehp",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+      "statusNote": "The official 2027 Programme page publishes the complete 31-credit Global Communication and Event Hosting Arts structure: five Compulsory Subjects and six Elective Subjects with at least two from the GCEHA Block. The current Department of Language Science and Technology curriculum publishes exact codes for the established Non-GCEHA subjects, but the three GCEHA subjects Interpreting and Public Speech, Entrepreneurship Across Different Cultures and MAGCEHA Internship remain under the placeholder code LST5XXX, and it does not publish codes for the five new Compulsory Subjects. The Programme remains blocked rather than treating placeholder codes as unique course codes or exposing an incomplete compulsory structure.",
+      "faculty": "Department of Language Science and Technology (LST)",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "verifiedAt": "2026-07-16"
     },
     {
       "programmeId": "POLYU-TPG-041",
       "status": "blocked",
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72030-ttf-ttp",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+      "statusNote": "The official 2027 Programme page publishes the complete 31-credit Translation and Language Technology structure: 19 Compulsory credits and 12 Elective credits, with optional Localisation and Interpreting Specialisms requiring two relevant Elective Subjects. It publishes the complete new AI-oriented subject-title pools but no course codes or explicit per-course credits. The current Department of Language Science and Technology curriculum page contains an empty curriculum component stating Please put at least one valid content allocate to this component. The Programme remains blocked rather than mapping the redesigned titles to older translation subjects or deriving individual credits from the group totals.",
+      "faculty": "Department of Language Science and Technology (LST)",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "verifiedAt": "2026-07-16"
     },
     {
       "programmeId": "POLYU-TPG-042",
       "status": "blocked",
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/31077-cfm-cpm",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+      "statusNote": "The official 2027 Programme page publishes two 31-credit Civil Engineering paths: ten taught subjects including at least seven Core Subjects, or seven taught subjects including at least four Core Subjects plus a 9-credit Dissertation, together with a 1-credit AIE subject. The current Department of Civil and Environmental Engineering page publishes codes for all twenty-four Core Subjects, CSE590 CE Dissertation and four Recommended Electives, and the current official CSE syllabi confirm 3 credits for every listed CSE taught subject. However, the 2027 page additionally names Sustainable Finance and Low-Carbon Construction Materials as Recommended Electives while the current Civil Engineering code table omits them, and neither source identifies the required AIE code. The Programme remains blocked rather than importing codes from another Programme by title or exposing an incomplete Elective and AIE structure.",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "verifiedAt": "2026-07-16"
     },
     {
       "programmeId": "POLYU-TPG-043",
       "status": "blocked",
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/31078-efm-epm",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-044",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46010-ee-eet",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-045",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46011-eie-eit",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-046",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46012-ev-evt",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
+      "statusNote": "The official 2027 Programme page publishes two 31-credit Environmental Management and Engineering paths: ten taught subjects including at least seven Core Subjects, or seven taught subjects including at least four Core Subjects plus a 9-credit Dissertation, together with a 1-credit AIE subject. The current Department of Civil and Environmental Engineering page publishes exact codes for the complete current Core and Elective title pools, and the current official CSE syllabi confirm 3 credits for every listed CSE taught subject. It identifies CSE591 with the conflicting title EV Dissertation rather than an Environmental Management and Engineering Dissertation, and neither source identifies the required AIE code. The Programme remains blocked rather than silently correcting the official Dissertation title or inferring the AIE code from another Engineering Programme.",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "verifiedAt": "2026-07-16"
     },
     {
       "programmeId": "POLYU-TPG-047",
       "status": "blocked",
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46013-mq-mqt",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-048",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15057-mft",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-049",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15058-mft",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-050",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15058-npf",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-051",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15060",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-052",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45080-efm-efd-eqm-eqp",
-      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-053",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mls-ml",
-      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-054",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt",
-      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-055",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-smf-smp",
-      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+      "statusNote": "The official 2027 Programme page publishes a 31-credit Microelectronics and Quantum Systems Engineering structure with six Core Subjects, four Elective Subjects or one Elective plus a 9-credit Dissertation, and the 1-credit AIE requirement. The current 2025/26 Department of Electrical and Electronic Engineering Programme Requirement Document instead publishes six Core Subjects, four Elective Subjects or two Electives plus the 6-credit EEE516 Research Project. It publishes exact codes and 3-credit values for the current Core and Elective pools and EEE5T03 for AIE, but no code for the new 2027 Dissertation and no current document confirming whether the Elective Streams remain unchanged for 2027. The Programme remains blocked rather than substituting EEE516 for a differently weighted Dissertation or carrying the older Elective structure forward.",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "verifiedAt": "2026-07-16"
     },
     {
       "programmeId": "POLYU-TPG-056",
       "status": "blocked",
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/34084-gfm-gpm",
-      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+      "statusNote": "The official 2027 Programme page publishes three 31-credit Geomatics routes and requires 15 Compulsory credits, plus either LSGI551 Dissertation, LSGI552 Project or a taught-subject path, together with a 1-credit AIE subject. The current Department of Land Surveying and Geo-Informatics curriculum instead identifies six Compulsory Subjects for 18 credits. The current LSGI Subject List resolves the seven named 2027 Core-area titles and LSGI552, but does not list LSGI551, and neither source identifies the required AIE code. The Programme remains blocked rather than choosing between the 15- and 18-credit Compulsory structures, inventing the Dissertation or AIE code, or exposing only one completion route.",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "verifiedAt": "2026-07-16"
     },
     {
       "programmeId": "POLYU-TPG-057",
       "status": "blocked",
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/34083-ifm-ipm",
-      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-058",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-ifm-tfp-ipm-tpp",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-059",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-iss",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-060",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44089-sfm-sfp-gpm-spp",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-061",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44092-ofm-opm",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-062",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44094-bfm-bpm",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-063",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23090-maf-map",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-064",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23090-mhf-mhp",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-065",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23090-mkf-mkp",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-066",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23090-mif",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-067",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/62027-dfm-dpm",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-068",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/62037-fai-pai",
-      "statusNote": "The official Programme page does not publish a complete coded course list; a departmental curriculum or handbook is still required."
-    },
-    {
-      "programmeId": "POLYU-TPG-069",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43100-me-met",
-      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+      "statusNote": "The official 2027 Programme page publishes three 31-credit Urban Informatics and Smart Cities routes and requires 9 Compulsory credits, plus either LSGI551 Dissertation, LSGI552 Project or a taught-subject path, together with a 1-credit AIE subject. The current Department of Land Surveying and Geo-Informatics curriculum instead shows 12 Compulsory credits for its Dissertation route and 15 for the Project and taught routes. Its current LSGI Subject List does not identify codes for Urban Planning and Urban Design or several recommended cross-department Electives, does not list LSGI551, and neither source identifies the AIE code. The Programme remains blocked rather than reconciling the conflicting Compulsory totals, inventing missing codes or publishing an incomplete route.",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "verifiedAt": "2026-07-16"
     },
     {
       "programmeId": "POLYU-TPG-070",
       "status": "blocked",
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43101-ir-irt",
-      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+      "statusNote": "The official 2027 Programme page publishes the complete 31-credit Intelligent Robotics Engineering title pools, the six-of-six Core requirement, the Elective minima, the coursework and Dissertation routes, and EEE5T03 AIE. The current official ME Subject List maps all six Core titles to ME5301, ME5302, ME5303, ME5304, ME567 and ME570. Current official ME, EEE, COMP and ISE sources also map all seven Elective titles to ME548, ME558, ME573, EEE522, COMP5523, COMP5554 and ISE5312. However, the Programme page does not publish a Dissertation code, the public ME course page does not provide a Programme Requirement Document for Programme 43101, and the generic ME591 entry is not explicitly assigned to this award. The Programme remains blocked rather than inferring that 43101 uses ME591 from the older 43100 Mechanical Engineering document.",
+      "faculty": "Department of Mechanical Engineering (ME)",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "verifiedAt": "2026-07-16"
     },
     {
       "programmeId": "POLYU-TPG-071",
       "status": "blocked",
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43102-se-set",
-      "statusNote": "The official Programme page contains only a partial coded course list or lacks explicit per-course credits; a departmental curriculum or handbook is still required."
+      "statusNote": "The official 2027 Programme page publishes the complete 31-credit Sustainable Energy title pools, the Core and Elective minima, the coursework and Dissertation routes, and EEE5T03 AIE. The current official ME Subject List maps all eight Core titles to ME5111, ME5201, ME5202, ME5203, ME5205, ME5206, ME5207 and ME5208, and current official sources map five Electives to ME572, ME5510, BSE542, COMP5511 and COMP5541. Public sources do not identify the code for Applied Solar Energy in Buildings or a Programme-specific Dissertation code, and the public ME course page does not provide a Programme Requirement Document for Programme 43102. The Programme remains blocked rather than guessing the cross-department subject code or assigning generic ME591 from the older 43100 Mechanical Engineering document.",
+      "faculty": "Department of Mechanical Engineering (ME)",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "verifiedAt": "2026-07-16"
     },
     {
       "programmeId": "POLYU-TPG-074",
       "status": "blocked",
       "sourceUrl": "https://www.polyu.edu.hk/rs/study/taught-postgraduate-studies/msc-programme-2026-or-after/msc-in-advanced-physiotherapy/curriculum/",
       "statusNote": "The official 2027 Programme page, the current Department of Rehabilitation Sciences Curriculum page, and the July 2026 v14 Programme leaflet publish the 31-credit paths, three Specialisms, fixed Core and Clinical Practice subject codes, and per-course credits. All three sources label the compulsory 6-credit component only as Project Study and do not publish its subject code. RS567 must not be inferred from another Rehabilitation Sciences Programme.",
-      "verifiedAt": "2026-07-15"
-    },
-    {
-      "programmeId": "POLYU-TPG-076",
-      "status": "blocked",
-      "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/",
-      "statusNote": "The official 2027 Programme page publishes a 31-credit structure and an elective list that includes Advanced Topics in InsurTech and Supply Chain Management. The current AMA Curriculum code table does not identify those two current elective entries and instead includes Current Topics in Actuarial Science. The remaining compulsory, elective, Dissertation and AIE codes can be mapped, but this mismatch leaves the current elective pool incomplete; no code is inferred from another Programme.",
-      "verifiedAt": "2026-07-15"
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "trackSelectionOptional": true,
+      "tracks": [
+        {
+          "id": "POLYU-TPG-074-NEUROLOGY",
+          "name": "Neurology",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp"
+        },
+        {
+          "id": "POLYU-TPG-074-MUSCULOSKELETAL-AND-SPORTS",
+          "name": "Musculoskeletal and Sports",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp"
+        },
+        {
+          "id": "POLYU-TPG-074-MANUAL-AND-NEUROMUSCULOSKELETAL",
+          "name": "Manual and Neuromusculoskeletal",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp"
+        }
+      ],
+      "verifiedAt": "2026-07-16"
     },
     {
       "programmeId": "POLYU-TPG-080",
       "status": "blocked",
       "sourceUrl": "https://www.polyu.edu.hk/hti/study/programmes/taught-postgraduate-programmes_list/master-of-science-in-medical-laboratory-science/",
       "statusNote": "The official 2027 Programme page and the September 2026 MSc Medical Laboratory Science leaflet publish the 31-credit generic and Molecular Diagnostics paths, course groups and current subject titles. Neither public source publishes the subject codes, and the leaflet directs readers to the Programme Requirement Document for curriculum details; that document is not publicly linked. The Programme remains blocked rather than inferring codes from other Health Technology awards.",
-      "verifiedAt": "2026-07-15"
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "trackSelectionOptional": true,
+      "tracks": [
+        {
+          "id": "POLYU-TPG-080-MOLECULAR-DIAGNOSTICS",
+          "name": "Molecular Diagnostics",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-fmm-pmm"
+        }
+      ],
+      "verifiedAt": "2026-07-16"
     },
     {
       "programmeId": "POLYU-TPG-081",
       "status": "blocked",
       "sourceUrl": "https://www.polyu.edu.hk/hti/study/programmes/taught-postgraduate-programmes_list/master-of-science-in-medical-imaging-and-radiation-science/",
       "statusNote": "The official 2027 Programme page and the September 2026 MSc Medical Imaging and Radiation Science leaflet publish the 31-credit generic path, three Specialisms, course groups and current subject titles. Neither public source publishes the subject codes, and the leaflet directs readers to the Programme Requirement Document for curriculum details; that document is not publicly linked. The Programme remains blocked rather than inferring codes from another Health Technology award.",
-      "verifiedAt": "2026-07-15"
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "trackSelectionOptional": true,
+      "tracks": [
+        {
+          "id": "POLYU-TPG-081-COMPUTED-TOMOGRAPHY",
+          "name": "Computed Tomography",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-frm-prm"
+        },
+        {
+          "id": "POLYU-TPG-081-MAGNETIC-RESONANCE-IMAGING",
+          "name": "Magnetic Resonance Imaging",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-frm-prm"
+        },
+        {
+          "id": "POLYU-TPG-081-ULTRASONOGRAPHY",
+          "name": "Ultrasonography",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-frm-prm"
+        }
+      ],
+      "verifiedAt": "2026-07-16"
     },
     {
       "programmeId": "POLYU-TPG-082",
       "status": "blocked",
       "sourceUrl": "https://www.polyu.edu.hk/hti/study/programmes/taught-postgraduate-programmes_list/master-of-science-in-medical-physics/",
       "statusNote": "The official 2027 Programme page publishes the 31-credit rule, current course titles and per-course credits, while the September 2026 MSc Medical Physics leaflet confirms the public subject pools. Neither source publishes the subject codes, and the leaflet directs readers to the Programme Requirement Document for curriculum details; that document is not publicly linked. The Programme remains blocked rather than inferring codes from another Health Technology award.",
-      "verifiedAt": "2026-07-15"
+      "verifiedAt": "2026-07-16"
     },
     {
       "programmeId": "POLYU-TPG-083",
       "status": "blocked",
       "sourceUrl": "https://www.polyu.edu.hk/hti/study/programmes/taught-postgraduate-programmes_list/master-of-science-in-medical-data-science/",
       "statusNote": "The official 2027 Programme page and the September 2026 MSc Medical Data Science leaflet publish the 31-credit rule, course groups and current subject titles. Neither public source publishes the complete subject codes and per-course credits, and the leaflet directs readers to the Programme Requirement Document for curriculum details; that document is not publicly linked. The Programme remains blocked rather than exposing a partial code pool assembled from overlapping awards.",
-      "verifiedAt": "2026-07-15"
+      "verifiedAt": "2026-07-16"
     },
     {
       "programmeId": "POLYU-TPG-084",
       "status": "blocked",
       "sourceUrl": "https://www.polyu.edu.hk/hti/study/programmes/taught-postgraduate-programmes_list/master-of-medical-imaging/",
       "statusNote": "The official 2027 Programme page and the September 2026 Master of Medical Imaging leaflet publish the 91-credit professional structure and current Foundation, Professional and Clinical Practicum titles. Neither public source publishes the subject codes or per-course credit values, and the leaflet directs readers to the Programme Requirement Document for curriculum details; that document is not publicly linked. The Programme remains blocked rather than inventing the professional and practicum codes or splitting aggregate credits across courses.",
-      "verifiedAt": "2026-07-15"
+      "verifiedAt": "2026-07-16"
     },
     {
       "programmeId": "POLYU-TPG-085",
       "status": "blocked",
       "sourceUrl": "https://www.polyu.edu.hk/gs/prospective-students/tpg/master-of-technology-entrepreneurship/curriculum/",
       "statusNote": "The official 2027 Programme page, Graduate School Curriculum page and 2027-28 Programme brochure consistently publish the 37-credit structure, current Technology Core, Entrepreneurship Core, Project, Elective and Academic Integrity and Ethics subject titles, and the explicit credit value of every subject. The three public sources do not publish any subject code, including the 6-credit Project Part 1: Research and the 15-credit Project Part 2: Start-up completed at an MTRI. The Programme remains blocked rather than inventing a new subject prefix or exposing name-only courses.",
-      "verifiedAt": "2026-07-15"
+      "verifiedAt": "2026-07-16"
     },
     {
       "programmeId": "POLYU-TPG-087",
@@ -654,7 +604,82 @@
       "status": "blocked",
       "sourceUrl": "https://www.polyu.edu.hk/sn/study/postgraduate-programmes/master-of-science-in-nursing/programme-structure/",
       "statusNote": "The official 2027 Programme page, School of Nursing programme pamphlet and 2025-intake Subject Offering Pattern publish the 31-credit completion paths, eight specialisms, and coded Core, Dissertation, Practicum, specialty and general elective subjects. They do not publish the AIE subject code or explicit per-course credits for the taught subjects. Those fields must not be inferred from another FHSS Programme or from the aggregate group totals.",
-      "verifiedAt": "2026-07-15"
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "trackSelectionOptional": true,
+      "tracks": [
+        {
+          "id": "POLYU-TPG-104-CANCER-AND-PALLIATIVE-CARE",
+          "name": "Cancer and Palliative Care",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/53070-fts-pt"
+        },
+        {
+          "id": "POLYU-TPG-104-COMMUNITY-HEALTH-NURSING",
+          "name": "Community Health Nursing",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/53070-fts-pt"
+        },
+        {
+          "id": "POLYU-TPG-104-CRITICAL-CARE",
+          "name": "Critical Care",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/53070-fts-pt"
+        },
+        {
+          "id": "POLYU-TPG-104-GERONTOLOGICAL-NURSING",
+          "name": "Gerontological Nursing",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/53070-fts-pt"
+        },
+        {
+          "id": "POLYU-TPG-104-INFECTIOUS-DISEASES-AND-INFECTION-CONTROL",
+          "name": "Infectious Diseases and Infection Control",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/53070-fts-pt"
+        },
+        {
+          "id": "POLYU-TPG-104-MENTAL-HEALTH-NURSING",
+          "name": "Mental Health Nursing",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/53070-fts-pt"
+        },
+        {
+          "id": "POLYU-TPG-104-NURSING-EDUCATION",
+          "name": "Nursing Education",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/53070-fts-pt"
+        },
+        {
+          "id": "POLYU-TPG-104-TRADITIONAL-CHINESE-MEDICINAL-NURSING",
+          "name": "Traditional Chinese Medicinal Nursing",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/53070-fts-pt"
+        },
+        {
+          "id": "POLYU-TPG-104-GERONTOLOGICAL-AND-COMMUNITY-HEALTH-NURSING",
+          "name": "Gerontological Nursing & Community Health Nursing",
+          "type": "Combined Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/53070-fts-pt"
+        },
+        {
+          "id": "POLYU-TPG-104-TRADITIONAL-CHINESE-MEDICINAL-NURSING-AND-CANCER-PALLIATIVE-CARE",
+          "name": "Traditional Chinese Medicinal Nursing & Cancer and Palliative Care",
+          "type": "Combined Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/53070-fts-pt"
+        }
+      ],
+      "verifiedAt": "2026-07-16"
     }
   ]
 }

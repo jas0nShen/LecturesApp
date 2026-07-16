@@ -1,0 +1,474 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-037",
+      "programmeName": "Master of Science (MSc) in Personal Health Management (Chinese Medicine) (MHM)",
+      "faculty": "School of Chinese Medicine",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "units",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-chinese-medicine/master-of-science-in-personal-health-management-chinese",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [],
+      "statusNote": "The current September 2026 admissions page confirms the same 30-unit structure as the linked official 2025-26 Handbook. The Handbook publishes eleven Compulsory Courses for 27 units and a final 3-unit choice between MHM7180 Dissertation and MHM7170 Formulation Theories and Practices of Chinese Medicinal Formulae. Students without prior Chinese Medicine or Pharmacy in Chinese Medicine study must additionally complete the zero-unit MHM7200 supplementary course. The Dissertation/Elective alternative and background-dependent supplementary requirement require manual audit review.",
+      "courseGroups": [
+        {
+          "id": "compulsory-courses",
+          "name": "Compulsory Courses",
+          "type": "core",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-chinese-medicine/master-of-science-in-personal-health-management-chinese",
+          "courses": [
+            {
+              "code": "MHM7010",
+              "name": "Introduction of Personal Health Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MHM7010"
+            },
+            {
+              "code": "MHM7050",
+              "name": "Food Therapy in Chinese Medicine",
+              "credits": 2,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MHM7050"
+            },
+            {
+              "code": "MHM7060",
+              "name": "Exercises for Health Preservation in Chinese Medicine (Theory and Practice)",
+              "credits": 2,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MHM7060"
+            },
+            {
+              "code": "MHM7070",
+              "name": "Serial Lectures in Health Management",
+              "credits": 2,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MHM7070"
+            },
+            {
+              "code": "MHM7080",
+              "name": "Rehabilitative Nursing in Chinese Medicine",
+              "credits": 2,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MHM7080"
+            },
+            {
+              "code": "MHM7090",
+              "name": "Health Management of Common Urban Diseases",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MHM7090"
+            },
+            {
+              "code": "MHM7100",
+              "name": "Cosmetology in Chinese Medicine",
+              "credits": 2,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MHM7100"
+            },
+            {
+              "code": "MHM7110",
+              "name": "Overview on Public Health and Preventive Medicine",
+              "credits": 2,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MHM7110"
+            },
+            {
+              "code": "MHM7120",
+              "name": "Introduction of Nutriology",
+              "credits": 2,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MHM7120"
+            },
+            {
+              "code": "MHM7150",
+              "name": "Constitutional Theory of Chinese Medicine",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MHM7150"
+            },
+            {
+              "code": "MHM7160",
+              "name": "Practicum",
+              "credits": 4,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MHM7160",
+              "courseKind": "practicum"
+            }
+          ],
+          "creditsRequired": 27,
+          "coursesRequired": 11,
+          "ruleText": "Complete all eleven Compulsory Courses for 27 units."
+        },
+        {
+          "id": "dissertation-or-elective",
+          "name": "Dissertation or Elective Course",
+          "type": "dissertation_or_elective",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-chinese-medicine/master-of-science-in-personal-health-management-chinese",
+          "courses": [
+            {
+              "code": "MHM7180",
+              "name": "Dissertation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MHM7180",
+              "courseKind": "dissertation",
+              "conditionalRequirement": true
+            },
+            {
+              "code": "MHM7170",
+              "name": "Formulation Theories and Practices of Chinese Medicinal Formulae",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MHM7170",
+              "conditionalRequirement": true
+            }
+          ],
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Complete either MHM7180 Dissertation or MHM7170 Formulation Theories and Practices of Chinese Medicinal Formulae for 3 units."
+        },
+        {
+          "id": "background-supplementary-course",
+          "name": "Background-dependent Supplementary Course",
+          "type": "conditional_supplementary",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-chinese-medicine/master-of-science-in-personal-health-management-chinese",
+          "courses": [
+            {
+              "code": "MHM7200",
+              "name": "Overview on Chinese Medicine and Chinese Materia Medica",
+              "credits": 0,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MHM7200",
+              "conditionalRequirement": true
+            }
+          ],
+          "ruleText": "Students who have not previously studied Chinese Medicine or Pharmacy in Chinese Medicine must complete this additional zero-unit supplementary course."
+        }
+      ]
+    },
+    {
+      "programmeId": "HKBU-TPG-038",
+      "programmeName": "Master of Science (MSc) in Drug Discovery (Modernization of Chinese Medicine) (MDD)",
+      "faculty": "School of Chinese Medicine",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "units",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-chinese-medicine/master-of-science-in-drug-discovery-modernization-of",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [],
+      "statusNote": "The current September 2026 admissions page confirms the same 30-unit structure as the linked official 2025-26 Handbook. The Handbook publishes eight 3-unit taught Compulsory Courses plus the two consecutive 1.5-unit Practicum codes MDD7130 and MDD7140 for 27 units, followed by a 3-unit choice between MDD7100 Dissertation and MDD7110 Formulation Theories and Practices of Chinese Medicinal Formulae. Students without prior Chinese Medicine or Pharmacy in Chinese Medicine study must additionally complete zero-unit MDD7120. The Dissertation/Elective alternative, linked Practicum sequence and conditional supplementary course require manual audit review.",
+      "courseGroups": [
+        {
+          "id": "compulsory-courses",
+          "name": "Compulsory Courses",
+          "type": "core",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-chinese-medicine/master-of-science-in-drug-discovery-modernization-of",
+          "courses": [
+            {
+              "code": "MDD7010",
+              "name": "Artificial Intelligence and Drug Design",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MDD7010"
+            },
+            {
+              "code": "MDD7020",
+              "name": "Advances in Chinese Medicines Research",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MDD7020"
+            },
+            {
+              "code": "MDD7030",
+              "name": "Pharmaceutical Manufacture and Quality Control",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MDD7030"
+            },
+            {
+              "code": "MDD7040",
+              "name": "Medical Statistics and Clinical Trial Design",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MDD7040"
+            },
+            {
+              "code": "MDD7050",
+              "name": "Translational Medicine and Drug Discovery: Theory and Practice (Chinese Medicines)",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MDD7050"
+            },
+            {
+              "code": "MDD7060",
+              "name": "Mechanism of Action and Safe Application of Chinese Medicines",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MDD7060"
+            },
+            {
+              "code": "MDD7070",
+              "name": "Progress in Advanced Pharmacy and Pharmacokinetics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MDD7070"
+            },
+            {
+              "code": "MDD7080",
+              "name": "Clinical Translational Strategy of Innovative Drugs",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MDD7080"
+            },
+            {
+              "code": "MDD7130",
+              "name": "Practicum",
+              "credits": 1.5,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MDD7130",
+              "courseKind": "practicum",
+              "linkedSequenceId": "MDD713-PRACTICUM"
+            },
+            {
+              "code": "MDD7140",
+              "name": "Practicum",
+              "credits": 1.5,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MDD7140",
+              "courseKind": "practicum",
+              "linkedSequenceId": "MDD713-PRACTICUM"
+            }
+          ],
+          "creditsRequired": 27,
+          "coursesRequired": 10,
+          "ruleText": "Complete all eight taught Compulsory Courses and both consecutive Practicum parts for 27 units."
+        },
+        {
+          "id": "dissertation-or-elective",
+          "name": "Dissertation or Elective Course",
+          "type": "dissertation_or_elective",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-chinese-medicine/master-of-science-in-drug-discovery-modernization-of",
+          "courses": [
+            {
+              "code": "MDD7100",
+              "name": "Dissertation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MDD7100",
+              "courseKind": "dissertation",
+              "conditionalRequirement": true
+            },
+            {
+              "code": "MDD7110",
+              "name": "Formulation Theories and Practices of Chinese Medicinal Formulae",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MDD7110",
+              "conditionalRequirement": true
+            }
+          ],
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Complete either MDD7100 Dissertation or MDD7110 Formulation Theories and Practices of Chinese Medicinal Formulae for 3 units."
+        },
+        {
+          "id": "background-supplementary-course",
+          "name": "Background-dependent Supplementary Course",
+          "type": "conditional_supplementary",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-chinese-medicine/master-of-science-in-drug-discovery-modernization-of",
+          "courses": [
+            {
+              "code": "MDD7120",
+              "name": "Overview on Chinese Medicine and Chinese Materia Medica",
+              "credits": 0,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MDD7120",
+              "conditionalRequirement": true
+            }
+          ],
+          "ruleText": "Students who have not previously studied Chinese Medicine or Pharmacy in Chinese Medicine must complete this additional zero-unit supplementary course."
+        }
+      ]
+    },
+    {
+      "programmeId": "HKBU-TPG-039",
+      "programmeName": "Master of Pharmaceutical Sciences in Chinese Medicine (MPS)",
+      "faculty": "School of Chinese Medicine",
+      "status": "verified",
+      "creditsRequired": 29,
+      "creditUnit": "units",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-chinese-medicine/master-of-pharmaceutical-sciences-in-chinese-medicine",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [],
+      "statusNote": "The current September 2026 admissions page confirms the same 29-unit structure as the linked official 2025-26 Handbook. The Handbook publishes ten Required Course codes for 23 units, including the consecutive one-unit Laboratory Practice parts MPS7131 and MPS7132. Students then complete either the paired 3-unit Dissertation parts MPS7081 and MPS7082 or both 3-unit taught alternatives MPS7140 and MPS7150. Students without prior Chinese Medicine or Pharmacy in Chinese Medicine study additionally complete zero-unit MPS7520. The paired completion paths, linked laboratory sequence and background-dependent supplementary course require manual audit review.",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-chinese-medicine/master-of-pharmaceutical-sciences-in-chinese-medicine",
+          "courses": [
+            {
+              "code": "MPS7010",
+              "name": "Research Methodology and Practice in Chinese Medicine",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MPS7010"
+            },
+            {
+              "code": "MPS7020",
+              "name": "Utilization of Medicinal Plant Resources and Advanced Pharmacognosy",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MPS7020"
+            },
+            {
+              "code": "MPS7030",
+              "name": "Mechanism of Action and Safe Application of Chinese Medicines",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MPS7030"
+            },
+            {
+              "code": "MPS7040",
+              "name": "Methods and Techniques for Quality Control of Chinese Medicines",
+              "credits": 2,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MPS7040"
+            },
+            {
+              "code": "MPS7070",
+              "name": "Advances in Chinese Medicines Research",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MPS7070"
+            },
+            {
+              "code": "MPS7100",
+              "name": "Marketing and Management of Industry for Chinese Medicines",
+              "credits": 2,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MPS7100"
+            },
+            {
+              "code": "MPS7110",
+              "name": "Translational Medicine and Drug Discovery: Theory and Practice (Chinese Medicines)",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MPS7110"
+            },
+            {
+              "code": "MPS7120",
+              "name": "Advanced Pharmaceutics in Chinese Medicines",
+              "credits": 2,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MPS7120"
+            },
+            {
+              "code": "MPS7131",
+              "name": "Laboratory Practice in Chinese Medicines",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MPS7131",
+              "courseKind": "practicum",
+              "linkedSequenceId": "MPS713-LABORATORY-PRACTICE"
+            },
+            {
+              "code": "MPS7132",
+              "name": "Laboratory Practice in Chinese Medicines",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MPS7132",
+              "courseKind": "practicum",
+              "linkedSequenceId": "MPS713-LABORATORY-PRACTICE"
+            }
+          ],
+          "creditsRequired": 23,
+          "coursesRequired": 10,
+          "ruleText": "Complete all ten Required Course codes, including both Laboratory Practice parts, for 23 units."
+        },
+        {
+          "id": "dissertation-or-taught-pair",
+          "name": "Dissertation or Taught-course Pair",
+          "type": "dissertation_or_taught_option",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-chinese-medicine/master-of-pharmaceutical-sciences-in-chinese-medicine",
+          "courses": [
+            {
+              "code": "MPS7081",
+              "name": "Dissertation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MPS7081",
+              "courseKind": "dissertation",
+              "conditionalRequirement": true,
+              "linkedSequenceId": "MPS708-DISSERTATION"
+            },
+            {
+              "code": "MPS7082",
+              "name": "Dissertation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MPS7082",
+              "courseKind": "dissertation",
+              "conditionalRequirement": true,
+              "linkedSequenceId": "MPS708-DISSERTATION"
+            },
+            {
+              "code": "MPS7140",
+              "name": "Thinking Approach and Methodology of Chinese Medicine",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MPS7140",
+              "conditionalRequirement": true,
+              "linkedSequenceId": "MPS-TAUGHT-ALTERNATIVE"
+            },
+            {
+              "code": "MPS7150",
+              "name": "Formulation Theories and Practices of Chinese Medicinal Formulae",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MPS7150",
+              "conditionalRequirement": true,
+              "linkedSequenceId": "MPS-TAUGHT-ALTERNATIVE"
+            }
+          ],
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Complete either both Dissertation parts MPS7081 and MPS7082 or both taught alternatives MPS7140 and MPS7150 for 6 units; mixed pairs are not valid."
+        },
+        {
+          "id": "background-supplementary-course",
+          "name": "Background-dependent Supplementary Course",
+          "type": "conditional_supplementary",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-chinese-medicine/master-of-pharmaceutical-sciences-in-chinese-medicine",
+          "courses": [
+            {
+              "code": "MPS7520",
+              "name": "Overview on Chinese Medicine and Chinese Materia Medica",
+              "credits": 0,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MPS7520",
+              "conditionalRequirement": true
+            }
+          ],
+          "ruleText": "Students who have not previously studied Chinese Medicine or Pharmacy in Chinese Medicine must complete this additional zero-unit supplementary course."
+        }
+      ]
+    }
+  ]
+}

@@ -3047,6 +3047,5771 @@ module.exports = [
     ]
   },
   {
+    "id": "POLYU-TPG-044",
+    "courseGroups": [
+      {
+        "id": "department-core-subjects",
+        "name": "Department Core Subjects",
+        "type": "core",
+        "ruleText": "Generic students complete at least four Core Subjects on the seven-taught-subject plus Dissertation path, or at least six Core Subjects on the ten-taught-subject path. Each Specialism requires at least four of its marked Core Subjects with a pertinent Dissertation, or at least eight Department Core Subjects including at least six marked for that Specialism on the ten-subject path.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+        "courses": [
+          {
+            "code": "EE501",
+            "name": "Alternative Energy Technologies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-044-ELECTRICAL-POWER-SYSTEMS"
+            ]
+          },
+          {
+            "code": "EE502",
+            "name": "Modern Protection Methods",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-044-ELECTRICAL-POWER-SYSTEMS"
+            ]
+          },
+          {
+            "code": "EE505",
+            "name": "Power System Control and Operation",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-044-ELECTRICAL-POWER-SYSTEMS"
+            ]
+          },
+          {
+            "code": "EE509",
+            "name": "High Voltage Engineering",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-044-ELECTRICAL-POWER-SYSTEMS",
+              "POLYU-TPG-044-RAILWAY-SYSTEMS"
+            ]
+          },
+          {
+            "code": "EE510",
+            "name": "Electrical Traction Engineering",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-044-RAILWAY-SYSTEMS"
+            ]
+          },
+          {
+            "code": "EE512",
+            "name": "Electric Vehicles",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ]
+          },
+          {
+            "code": "EE514",
+            "name": "Real Time Computing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ]
+          },
+          {
+            "code": "EE520",
+            "name": "Intelligent Motion Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ]
+          },
+          {
+            "code": "EE521",
+            "name": "Industrial Power Electronics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ]
+          },
+          {
+            "code": "EE522",
+            "name": "Optical Fibre Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ]
+          },
+          {
+            "code": "EE524",
+            "name": "Open Electricity Market Operation",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-044-ELECTRICAL-POWER-SYSTEMS"
+            ]
+          },
+          {
+            "code": "EE526",
+            "name": "Power System Analysis and Dynamics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-044-ELECTRICAL-POWER-SYSTEMS"
+            ]
+          },
+          {
+            "code": "EE528",
+            "name": "System Modelling and Optimal Control",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ]
+          },
+          {
+            "code": "EE530",
+            "name": "Electrical Energy Saving Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ]
+          },
+          {
+            "code": "EE533",
+            "name": "Railway Power Supply Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-044-RAILWAY-SYSTEMS"
+            ]
+          },
+          {
+            "code": "EE535",
+            "name": "Maintenance and Reliability Engineering",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-044-RAILWAY-SYSTEMS"
+            ]
+          },
+          {
+            "code": "EE536",
+            "name": "Signalling and Train Control Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-044-RAILWAY-SYSTEMS"
+            ]
+          },
+          {
+            "code": "EE537",
+            "name": "Railway Vehicles",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-044-RAILWAY-SYSTEMS"
+            ]
+          },
+          {
+            "code": "EE5381",
+            "name": "System Assurance and Safety in Railways",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-044-RAILWAY-SYSTEMS"
+            ]
+          },
+          {
+            "code": "EE539",
+            "name": "Aerospace Power Electronics and Actuation Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ]
+          },
+          {
+            "code": "EE545",
+            "name": "Modern Generation and Grid Integration Technologies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-044-ELECTRICAL-POWER-SYSTEMS"
+            ]
+          },
+          {
+            "code": "EE546",
+            "name": "Electric Energy Storage and New Energy Sources for Electric Vehicles",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ]
+          },
+          {
+            "code": "EE547",
+            "name": "Electric Vehicle Charging Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ]
+          },
+          {
+            "code": "EE548",
+            "name": "Advanced Electric Vehicle Technology",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ]
+          },
+          {
+            "code": "EE549",
+            "name": "Modern Sensor Technologies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ]
+          },
+          {
+            "code": "EE552",
+            "name": "High Speed Rail",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-044-RAILWAY-SYSTEMS"
+            ]
+          },
+          {
+            "code": "EE553",
+            "name": "Railway Electronic Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-044-RAILWAY-SYSTEMS"
+            ]
+          },
+          {
+            "code": "EE560",
+            "name": "Metros in Hong Kong and China",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-044-RAILWAY-SYSTEMS"
+            ]
+          },
+          {
+            "code": "EE570",
+            "name": "Design and Analysis of Smart Grids",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-044-ELECTRICAL-POWER-SYSTEMS"
+            ]
+          },
+          {
+            "code": "EEE523",
+            "name": "Economics and Markets in Power Systems and Electrified Transportation",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ]
+          },
+          {
+            "code": "EEE525",
+            "name": "Smart Transportation in Green Cities",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-044-RAILWAY-SYSTEMS"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "approved-external-electives",
+        "name": "Approved Subjects from Other Disciplines",
+        "type": "elective",
+        "ruleText": "Remaining taught-subject places may be filled with approved subjects from disciplines such as accounting, computing, construction and environment, and logistics. The official sources do not publish a closed Elective code list; confirm eligibility and availability during registration.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46010-ee-eet",
+        "courses": []
+      },
+      {
+        "id": "dissertation-option",
+        "name": "Dissertation Option",
+        "type": "dissertation",
+        "coursesRequired": 1,
+        "ruleText": "The 9-credit EE590 Dissertation is used only on the seven-taught-subject Dissertation path and replaces three taught subjects.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+        "courses": [
+          {
+            "code": "EE590",
+            "name": "EE Dissertation",
+            "credits": 9,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "courseKind": "dissertation",
+            "conditionalRequirement": true
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Academic Integrity and Ethics",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete the 1-credit EEE5T03 Engineering Ethics and Academic Integrity subject.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+        "courses": [
+          {
+            "code": "EEE5T03",
+            "name": "Engineering Ethics and Academic Integrity",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ee/msc_ee_46010_prd_2025-26_final_202601.pdf",
+            "courseKind": "academic_integrity"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "POLYU-TPG-045",
+    "courseGroups": [
+      {
+        "id": "department-core-subjects",
+        "name": "Department Core Subjects",
+        "type": "core",
+        "ruleText": "Generic students complete at least four Core Subjects on the seven-taught-subject plus Dissertation path, or at least six Core Subjects on the ten-taught-subject path. Each Specialism requires at least five marked Core Subjects with a pertinent Dissertation, or at least seven marked Core Subjects on the ten-subject path.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+        "courses": [
+          {
+            "code": "EIE509",
+            "name": "Satellite Communications - Technology and Applications",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+            "subjectGroups": [
+              "core"
+            ]
+          },
+          {
+            "code": "EIE511",
+            "name": "VLSI System Design",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+            "subjectGroups": [
+              "core"
+            ]
+          },
+          {
+            "code": "EIE515",
+            "name": "Advanced Optical Communication Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-045-INTERNET-OF-THINGS"
+            ]
+          },
+          {
+            "code": "EIE522",
+            "name": "Pattern Recognition: Theory and Applications",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-045-MULTIMEDIA-SIGNAL-PROCESSING-AND-COMMUNICATIONS"
+            ]
+          },
+          {
+            "code": "EIE529",
+            "name": "Digital Image Processing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-045-MULTIMEDIA-SIGNAL-PROCESSING-AND-COMMUNICATIONS"
+            ]
+          },
+          {
+            "code": "EIE546",
+            "name": "Video Technology",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-045-INTERNET-OF-THINGS",
+              "POLYU-TPG-045-MULTIMEDIA-SIGNAL-PROCESSING-AND-COMMUNICATIONS"
+            ]
+          },
+          {
+            "code": "EIE553",
+            "name": "Security in Data Communication",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-045-INTERNET-OF-THINGS",
+              "POLYU-TPG-045-MULTIMEDIA-SIGNAL-PROCESSING-AND-COMMUNICATIONS"
+            ]
+          },
+          {
+            "code": "EIE557",
+            "name": "Computational Intelligence and Its Applications",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-045-INTERNET-OF-THINGS",
+              "POLYU-TPG-045-MULTIMEDIA-SIGNAL-PROCESSING-AND-COMMUNICATIONS"
+            ]
+          },
+          {
+            "code": "EIE558",
+            "name": "Speech Processing and Recognition",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-045-MULTIMEDIA-SIGNAL-PROCESSING-AND-COMMUNICATIONS"
+            ]
+          },
+          {
+            "code": "EIE560",
+            "name": "Microelectronics Processing and Technologies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-045-INTERNET-OF-THINGS"
+            ]
+          },
+          {
+            "code": "EIE563",
+            "name": "Digital Audio Processing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-045-MULTIMEDIA-SIGNAL-PROCESSING-AND-COMMUNICATIONS"
+            ]
+          },
+          {
+            "code": "EIE566",
+            "name": "Wireless Communications",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-045-INTERNET-OF-THINGS",
+              "POLYU-TPG-045-MULTIMEDIA-SIGNAL-PROCESSING-AND-COMMUNICATIONS"
+            ]
+          },
+          {
+            "code": "EIE567",
+            "name": "Wireless Power Transfer Technologies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-045-INTERNET-OF-THINGS",
+              "POLYU-TPG-045-MULTIMEDIA-SIGNAL-PROCESSING-AND-COMMUNICATIONS"
+            ]
+          },
+          {
+            "code": "EIE568",
+            "name": "IoT - Tools and Applications",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-045-INTERNET-OF-THINGS"
+            ]
+          },
+          {
+            "code": "EIE569",
+            "name": "Sensor Networks",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-045-INTERNET-OF-THINGS"
+            ]
+          },
+          {
+            "code": "EIE571",
+            "name": "Photonic System Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+            "subjectGroups": [
+              "core"
+            ]
+          },
+          {
+            "code": "EIE572",
+            "name": "Information Photonics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+            "subjectGroups": [
+              "core"
+            ]
+          },
+          {
+            "code": "EIE573",
+            "name": "Mobile Edge Computing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-045-INTERNET-OF-THINGS",
+              "POLYU-TPG-045-MULTIMEDIA-SIGNAL-PROCESSING-AND-COMMUNICATIONS"
+            ]
+          },
+          {
+            "code": "EIE575",
+            "name": "Vehicular Communications and Inter-Networking Technologies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-045-INTERNET-OF-THINGS",
+              "POLYU-TPG-045-MULTIMEDIA-SIGNAL-PROCESSING-AND-COMMUNICATIONS"
+            ]
+          },
+          {
+            "code": "EIE577",
+            "name": "Optoelectronic Devices",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+            "subjectGroups": [
+              "core"
+            ]
+          },
+          {
+            "code": "EIE579",
+            "name": "Advanced Telecommunication Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-045-INTERNET-OF-THINGS"
+            ]
+          },
+          {
+            "code": "EIE580",
+            "name": "Radio Frequency and Microwave Integrated Circuits for Communication System Applications",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+            "subjectGroups": [
+              "core"
+            ]
+          },
+          {
+            "code": "EIE587",
+            "name": "Channel Coding",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+            "subjectGroups": [
+              "core"
+            ]
+          },
+          {
+            "code": "EIE589",
+            "name": "Wireless Data Network",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-045-INTERNET-OF-THINGS",
+              "POLYU-TPG-045-MULTIMEDIA-SIGNAL-PROCESSING-AND-COMMUNICATIONS"
+            ]
+          },
+          {
+            "code": "EEE508",
+            "name": "VLSI Technology and Design",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+            "subjectGroups": [
+              "core"
+            ]
+          },
+          {
+            "code": "EEE531",
+            "name": "Spoken Language Technologies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-045-MULTIMEDIA-SIGNAL-PROCESSING-AND-COMMUNICATIONS"
+            ]
+          },
+          {
+            "code": "EEE532",
+            "name": "Artificial Intelligence of Things Technology",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-045-INTERNET-OF-THINGS"
+            ]
+          },
+          {
+            "code": "COMP5434",
+            "name": "Big Data Computing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+            "subjectGroups": [
+              "core"
+            ],
+            "countsTowardTrackIds": [
+              "POLYU-TPG-045-INTERNET-OF-THINGS"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "approved-external-electives",
+        "name": "Approved Subjects from Other Disciplines",
+        "type": "elective",
+        "ruleText": "Remaining taught-subject places may be filled with approved subjects from other disciplines, including business and management. The official sources do not publish a closed Elective code list; confirm eligibility and availability during registration.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46011-eie-eit",
+        "courses": []
+      },
+      {
+        "id": "dissertation-option",
+        "name": "Dissertation Option",
+        "type": "dissertation",
+        "coursesRequired": 1,
+        "ruleText": "The 9-credit EIE590 Dissertation is used only on the seven-taught-subject Dissertation path and replaces three taught subjects.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+        "courses": [
+          {
+            "code": "EIE590",
+            "name": "Dissertation",
+            "credits": 9,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+            "courseKind": "dissertation",
+            "conditionalRequirement": true
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Academic Integrity and Ethics",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete the 1-credit EEE5T03 Engineering Ethics and Academic Integrity subject.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+        "courses": [
+          {
+            "code": "EEE5T03",
+            "name": "Engineering Ethics and Academic Integrity",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-eie/msc_eie_46011_prd_2025-26_final_202601-v2.pdf",
+            "courseKind": "academic_integrity"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "POLYU-TPG-046",
+    "courseGroups": [
+      {
+        "id": "core-and-elective-subjects",
+        "name": "Core and Elective Subjects",
+        "type": "core_elective_cross_role",
+        "ruleText": "Complete EEE521 and any two of EE512, EE546 and EE548 as the three Core Subjects. Complete four Elective Subjects plus EE590 on the Dissertation path, or seven Elective Subjects on the ten-taught-subject path. A Core-choice subject not used toward the Core requirement may count as an Elective.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+        "courses": [
+          {
+            "code": "EE512",
+            "name": "Electric Vehicles",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core_choice",
+              "elective"
+            ]
+          },
+          {
+            "code": "EE520",
+            "name": "Intelligent Motion Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "elective"
+            ]
+          },
+          {
+            "code": "EE521",
+            "name": "Industrial Power Electronics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "elective"
+            ]
+          },
+          {
+            "code": "EE528",
+            "name": "System Modelling and Optimal Control",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "elective"
+            ]
+          },
+          {
+            "code": "EE530",
+            "name": "Electrical Energy Saving Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "elective"
+            ]
+          },
+          {
+            "code": "EE535",
+            "name": "Maintenance and Reliability Engineering",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "elective"
+            ]
+          },
+          {
+            "code": "EE545",
+            "name": "Modern Generation and Grid Integration Technologies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "elective"
+            ]
+          },
+          {
+            "code": "EE546",
+            "name": "Electric Energy Storage and New Energy Sources for Electric Vehicles",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core_choice",
+              "elective"
+            ]
+          },
+          {
+            "code": "EE548",
+            "name": "Advanced Electric Vehicle Technology",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "core_choice",
+              "elective"
+            ]
+          },
+          {
+            "code": "EE570",
+            "name": "Design and Analysis of Smart Grids",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "elective"
+            ]
+          },
+          {
+            "code": "EIE568",
+            "name": "IoT - Tools and Applications",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "elective"
+            ]
+          },
+          {
+            "code": "EIE575",
+            "name": "Vehicular Communications and Inter-Networking Technologies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "elective"
+            ]
+          },
+          {
+            "code": "EEE521",
+            "name": "Tomorrow’s Leader in Electric Vehicles",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "compulsory_core"
+            ]
+          },
+          {
+            "code": "EEE522",
+            "name": "Autonomous Vehicles",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "elective"
+            ]
+          },
+          {
+            "code": "EEE523",
+            "name": "Economics and Markets in Power Systems and Electrified Transportation",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "elective"
+            ]
+          },
+          {
+            "code": "EEE524",
+            "name": "Green Technology and Policy in Electrical Engineering",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "elective"
+            ]
+          },
+          {
+            "code": "EEE525",
+            "name": "Smart Transportation in Green Cities",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+            "subjectGroups": [
+              "elective"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "dissertation-option",
+        "name": "Dissertation Option",
+        "type": "dissertation",
+        "coursesRequired": 1,
+        "ruleText": "The 9-credit EE590 Dissertation is used only on the seven-taught-subject Dissertation path and replaces three taught subjects.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+        "courses": [
+          {
+            "code": "EE590",
+            "name": "EE Dissertation",
+            "credits": 9,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+            "courseKind": "dissertation",
+            "conditionalRequirement": true
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Academic Integrity and Ethics",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete the 1-credit EEE5T03 Engineering Ethics and Academic Integrity subject.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+        "courses": [
+          {
+            "code": "EEE5T03",
+            "name": "Engineering Ethics and Academic Integrity",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/eee/-/media/department/eee/content/study/programme-documents/msc-in-ev/msc_ev_46012_prd_2025-26_final_202601.pdf",
+            "courseKind": "academic_integrity"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "POLYU-TPG-048",
+    "courseGroups": [
+      {
+        "id": "required-taught-subjects",
+        "name": "Required Taught Subjects",
+        "type": "core",
+        "creditsRequired": 24,
+        "coursesRequired": 6,
+        "ruleText": "Complete all six required taught subjects for 24 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-global-food-safety-management-and-risk-analysis/",
+        "courses": [
+          {
+            "code": "FSN5011",
+            "name": "Food Safety Risk Analysis",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5011.pdf"
+          },
+          {
+            "code": "FSN5012",
+            "name": "Global Food Safety Management",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5012.pdf"
+          },
+          {
+            "code": "FSN5013",
+            "name": "Food Safety in Action",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5013.pdf"
+          },
+          {
+            "code": "FSN5014",
+            "name": "International Food Standards, Laws and Regulations",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5014.pdf"
+          },
+          {
+            "code": "FSN5015",
+            "name": "Foodborne Chemical and Microbial Hazards: Case Studies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5015.pdf"
+          },
+          {
+            "code": "FSN5016",
+            "name": "Global Food Security",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5016.pdf"
+          }
+        ]
+      },
+      {
+        "id": "capstone-project",
+        "name": "Capstone Project",
+        "type": "project",
+        "creditsRequired": 6,
+        "coursesRequired": 1,
+        "ruleText": "Complete FSN5017 Capstone Project for 6 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-global-food-safety-management-and-risk-analysis/",
+        "courses": [
+          {
+            "code": "FSN5017",
+            "name": "Capstone Project",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5017.pdf",
+            "courseKind": "project"
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Academic Integrity and Ethics in Science",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete FSN5T01 Academic Integrity and Ethics in Science for 1 credit.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-global-food-safety-management-and-risk-analysis/",
+        "courses": [
+          {
+            "code": "FSN5T01",
+            "name": "Academic Integrity and Ethics in Science",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5T01.pdf",
+            "courseKind": "academic_integrity"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "POLYU-TPG-049",
+    "courseGroups": [
+      {
+        "id": "required-taught-and-practicum-subjects",
+        "name": "Required Taught and Practicum Subjects",
+        "type": "core",
+        "creditsRequired": 27,
+        "coursesRequired": 9,
+        "ruleText": "Complete all nine required taught and Practicum subjects for 27 credits. FSN5026 Practicum I spans two 1.5-credit teaching periods and is represented once as a 3-credit subject.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-nutrition-and-healthy-ageing/",
+        "courses": [
+          {
+            "code": "FSN5021",
+            "name": "Food Preparation and Menu Planning",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5021.pdf"
+          },
+          {
+            "code": "FSN5022",
+            "name": "Nutritional Assessment",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5022.pdf"
+          },
+          {
+            "code": "FSN5023",
+            "name": "Public Health Nutrition",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5023.pdf"
+          },
+          {
+            "code": "FSN5024",
+            "name": "Nutrition and Health for Older Adults",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5024.pdf"
+          },
+          {
+            "code": "FSN5025",
+            "name": "Nutrition Education and Counselling",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5025.pdf"
+          },
+          {
+            "code": "FSN5026",
+            "name": "Practicum I",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5026.pdf",
+            "courseKind": "internship"
+          },
+          {
+            "code": "FSN5029",
+            "name": "Advanced Human Physiology and Anatomy",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5029.pdf"
+          },
+          {
+            "code": "APSS533",
+            "name": "Mental Health and the Aged",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-nutrition-and-healthy-ageing/"
+          },
+          {
+            "code": "RS517",
+            "name": "Research Methods & Data Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-nutrition-and-healthy-ageing/"
+          }
+        ]
+      },
+      {
+        "id": "capstone-project",
+        "name": "Capstone Project",
+        "type": "project",
+        "creditsRequired": 3,
+        "coursesRequired": 1,
+        "ruleText": "Complete FSN5028 Capstone Project for 3 credits across its two 1.5-credit teaching periods.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-nutrition-and-healthy-ageing/",
+        "courses": [
+          {
+            "code": "FSN5028",
+            "name": "Capstone Project",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5028.pdf",
+            "courseKind": "project"
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Academic Integrity and Ethics in Science",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete FSN5T01 Academic Integrity and Ethics in Science for 1 credit.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-nutrition-and-healthy-ageing/",
+        "courses": [
+          {
+            "code": "FSN5T01",
+            "name": "Academic Integrity and Ethics in Science",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5T01.pdf",
+            "courseKind": "academic_integrity"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "POLYU-TPG-050",
+    "courseGroups": [
+      {
+        "id": "required-taught-and-practicum-subjects",
+        "name": "Required Taught and Practicum Subjects",
+        "type": "core",
+        "creditsRequired": 27,
+        "coursesRequired": 9,
+        "ruleText": "Complete all nine required taught and Practicum subjects for 27 credits. FSN5026 and FSN5027 each span two 1.5-credit teaching periods and are represented once as 3-credit subjects.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-nutrition-and-healthy-ageing-nutrition-in-practice/",
+        "courses": [
+          {
+            "code": "FSN5021",
+            "name": "Food Preparation and Menu Planning",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5021.pdf"
+          },
+          {
+            "code": "FSN5022",
+            "name": "Nutritional Assessment",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5022.pdf"
+          },
+          {
+            "code": "FSN5023",
+            "name": "Public Health Nutrition",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5023.pdf"
+          },
+          {
+            "code": "FSN5024",
+            "name": "Nutrition and Health for Older Adults",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5024.pdf"
+          },
+          {
+            "code": "FSN5025",
+            "name": "Nutrition Education and Counselling",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5025.pdf"
+          },
+          {
+            "code": "FSN5026",
+            "name": "Practicum I",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5026.pdf",
+            "courseKind": "internship"
+          },
+          {
+            "code": "FSN5027",
+            "name": "Practicum II",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5027.pdf",
+            "courseKind": "internship"
+          },
+          {
+            "code": "FSN5029",
+            "name": "Advanced Human Physiology and Anatomy",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5029.pdf"
+          },
+          {
+            "code": "RS517",
+            "name": "Research Methods & Data Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-nutrition-and-healthy-ageing-nutrition-in-practice/"
+          }
+        ]
+      },
+      {
+        "id": "capstone-project",
+        "name": "Capstone Project",
+        "type": "project",
+        "creditsRequired": 3,
+        "coursesRequired": 1,
+        "ruleText": "Complete FSN5028 Capstone Project for 3 credits across its two 1.5-credit teaching periods.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-nutrition-and-healthy-ageing-nutrition-in-practice/",
+        "courses": [
+          {
+            "code": "FSN5028",
+            "name": "Capstone Project",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5028.pdf",
+            "courseKind": "project"
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Academic Integrity and Ethics in Science",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete FSN5T01 Academic Integrity and Ethics in Science for 1 credit.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-nutrition-and-healthy-ageing-nutrition-in-practice/",
+        "courses": [
+          {
+            "code": "FSN5T01",
+            "name": "Academic Integrity and Ethics in Science",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5T01.pdf",
+            "courseKind": "academic_integrity"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "POLYU-TPG-051",
+    "courseGroups": [
+      {
+        "id": "required-taught-subjects",
+        "name": "Required Taught Subjects",
+        "type": "core",
+        "creditsRequired": 42,
+        "coursesRequired": 13,
+        "ruleText": "Complete all thirteen required taught subjects for 42 credits. FSN5034 Clinical Dietetics and Medicine carries 6 credits across two teaching periods.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-dietetics/",
+        "courses": [
+          {
+            "code": "FSN5021",
+            "name": "Food Preparation and Menu Planning",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5021.pdf"
+          },
+          {
+            "code": "FSN5022",
+            "name": "Nutritional Assessment",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5022.pdf"
+          },
+          {
+            "code": "FSN5023",
+            "name": "Public Health Nutrition",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5023.pdf"
+          },
+          {
+            "code": "FSN5025",
+            "name": "Nutrition Education and Counselling",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5025.pdf"
+          },
+          {
+            "code": "FSN5029",
+            "name": "Advanced Human Physiology and Anatomy",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5029.pdf"
+          },
+          {
+            "code": "RS517",
+            "name": "Research Methods & Data Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-dietetics/"
+          },
+          {
+            "code": "FSN5030",
+            "name": "Applied Nutrition",
+            "credits": 4,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5030.pdf"
+          },
+          {
+            "code": "FSN5031",
+            "name": "Advanced Pharmacology and Nutrition",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5031.pdf"
+          },
+          {
+            "code": "FSN5032",
+            "name": "Chinese Medicine Based Diet Therapy",
+            "credits": 2,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5032.pdf"
+          },
+          {
+            "code": "FSN5033",
+            "name": "Clinical Biochemistry and Molecular Nutrition",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5033.pdf"
+          },
+          {
+            "code": "FSN5034",
+            "name": "Clinical Dietetics and Medicine",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5034.pdf"
+          },
+          {
+            "code": "FSN5036",
+            "name": "Dietetics in Practice",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5036.pdf"
+          },
+          {
+            "code": "FSN5037",
+            "name": "Professional Practice for Dietitians",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5037.pdf"
+          }
+        ]
+      },
+      {
+        "id": "dietetic-placements",
+        "name": "Dietetic Placements",
+        "type": "internship",
+        "creditsRequired": 18,
+        "coursesRequired": 3,
+        "ruleText": "Complete all three Dietetic Placements for 18 credits. Each placement is represented once even when its credits are delivered across more than one teaching period.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-dietetics/",
+        "courses": [
+          {
+            "code": "FSN5038",
+            "name": "Dietetics Placement I",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5038.pdf",
+            "courseKind": "internship"
+          },
+          {
+            "code": "FSN5039",
+            "name": "Dietetics Placement II",
+            "credits": 8,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5039.pdf",
+            "courseKind": "internship"
+          },
+          {
+            "code": "FSN5040",
+            "name": "Dietetics Placement III",
+            "credits": 7,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5040.pdf",
+            "courseKind": "internship"
+          }
+        ]
+      },
+      {
+        "id": "capstone-project",
+        "name": "Capstone Project",
+        "type": "project",
+        "creditsRequired": 3,
+        "coursesRequired": 1,
+        "ruleText": "Complete FSN5028 Capstone Project for 3 credits across its two 1.5-credit teaching periods.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-dietetics/",
+        "courses": [
+          {
+            "code": "FSN5028",
+            "name": "Capstone Project",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5028.pdf",
+            "courseKind": "project"
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Academic Integrity and Ethics in Science",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete FSN5T01 Academic Integrity and Ethics in Science for 1 credit.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-dietetics/",
+        "courses": [
+          {
+            "code": "FSN5T01",
+            "name": "Academic Integrity and Ethics in Science",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5T01.pdf",
+            "courseKind": "academic_integrity"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "POLYU-TPG-052",
+    "courseGroups": [
+      {
+        "id": "core-modules",
+        "name": "Core Modules",
+        "type": "core",
+        "creditsRequired": 21,
+        "coursesRequired": 7,
+        "ruleText": "Complete all seven Core Modules for 21 PolyU credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/igds/programme-mscebm.html",
+        "courses": [
+          {
+            "code": "ISE5756",
+            "name": "Big Data and Analytics for Industry",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/igds/pdf_file/ISE5756_BDA.pdf"
+          },
+          {
+            "code": "ISE5773",
+            "name": "Interdisciplinary Research Methods",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/igds/pdf_file/ISE5773_IRM.pdf"
+          },
+          {
+            "code": "ISE5757",
+            "name": "Logistics and Operations Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/igds/pdf_file/ISE5757_LOM.pdf"
+          },
+          {
+            "code": "ISE5758",
+            "name": "Managing Design and Manufacturing Technology",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/igds/pdf_file/ISE5758_MDMT.pdf"
+          },
+          {
+            "code": "ISE5759",
+            "name": "Project Planning Management and Control",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/igds/pdf_file/ISE5759_PPMC.pdf"
+          },
+          {
+            "code": "ISE5760",
+            "name": "Quality, Reliability and Maintenance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/igds/pdf_file/ISE5760_QRM.pdf"
+          },
+          {
+            "code": "ISE5761",
+            "name": "Strategy and Finance for Engineering Organisations",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/igds/pdf_file/ISE5761_SFEO.pdf"
+          }
+        ]
+      },
+      {
+        "id": "elective-modules",
+        "name": "Elective Modules",
+        "type": "elective",
+        "creditsRequired": 3,
+        "coursesRequired": 1,
+        "ruleText": "Complete at least one of the two published Elective Modules for 3 PolyU credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/igds/programme-mscebm.html",
+        "courses": [
+          {
+            "code": "ISE5767",
+            "name": "Leading Change",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/igds/pdf_file/ISE5767_LC.pdf"
+          },
+          {
+            "code": "ISE5768",
+            "name": "Organisations, People and Performance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/igds/pdf_file/ISE5768_OPP.pdf"
+          }
+        ]
+      },
+      {
+        "id": "project-dissertation",
+        "name": "Project (Dissertation)",
+        "type": "dissertation",
+        "creditsRequired": 12,
+        "coursesRequired": 1,
+        "ruleText": "Complete ISE5771 IGDS Dissertation for 12 PolyU credits. The linked Warwick value is 60 credits and is not added to the PolyU total.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/igds/programme-mscebm.html",
+        "courses": [
+          {
+            "code": "ISE5771",
+            "name": "IGDS Dissertation",
+            "credits": 12,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/igds/pdf_file/ISE5771_Dissertation.pdf",
+            "courseKind": "dissertation"
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Engineering Ethics and Academic Integrity",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete EEE5T03 Engineering Ethics and Academic Integrity for 1 credit.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45080-efm-efd-eqm-eqp",
+        "courses": [
+          {
+            "code": "EEE5T03",
+            "name": "Engineering Ethics and Academic Integrity",
+            "credits": 1,
+            "courseKind": "academic_integrity",
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45080-efm-efd-eqm-eqp"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "POLYU-TPG-053",
+    "courseGroups": [
+      {
+        "id": "compulsory-subjects",
+        "name": "Compulsory Subjects",
+        "type": "core",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Complete all four Compulsory Subjects for 12 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/",
+        "courses": [
+          {
+            "code": "ISE512",
+            "name": "Warehousing & Material Handling Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+          },
+          {
+            "code": "ISE526",
+            "name": "Enterprise Resources Planning",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+          },
+          {
+            "code": "ISE527",
+            "name": "Logistics Information Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+          },
+          {
+            "code": "ISE544",
+            "name": "Supply Chain Management Enabling Technologies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+          }
+        ]
+      },
+      {
+        "id": "core-subjects",
+        "name": "Core Subjects",
+        "type": "core",
+        "creditsRequired": 3,
+        "coursesRequired": 1,
+        "ruleText": "Complete at least one Core Subject on the Dissertation path or at least three Core Subjects on the non-Dissertation path. ISE550 is compulsory within the non-Dissertation Core selection.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/",
+        "courses": [
+          {
+            "code": "ISE518",
+            "name": "Workflow Design and Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+          },
+          {
+            "code": "ISE525",
+            "name": "Global Operations and Logistics Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+          },
+          {
+            "code": "ISE548",
+            "name": "Risk and Crisis Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+          },
+          {
+            "code": "ISE550",
+            "name": "Contemporary Logistics Issues in China",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/",
+            "conditionalRequirement": true
+          },
+          {
+            "code": "ISE5019",
+            "name": "Optimization Modeling & Applications",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+          },
+          {
+            "code": "ISE5606",
+            "name": "Business Intelligence and Data Mining",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+          }
+        ]
+      },
+      {
+        "id": "elective-subjects",
+        "name": "Elective Subjects",
+        "type": "elective",
+        "ruleText": "Use at most two Elective Subjects on the Dissertation path or at most three on the non-Dissertation path. Subject availability is confirmed during registration.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/",
+        "courses": [
+          {
+            "code": "ISE538",
+            "name": "Process and Performance Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+          },
+          {
+            "code": "ISE5312",
+            "name": "Industrial Human-Robot Systems and Automation",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+          },
+          {
+            "code": "ISE5323",
+            "name": "Smart Product-Service Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+          },
+          {
+            "code": "ISE5332",
+            "name": "Smart Manufacturing Operations Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+          },
+          {
+            "code": "ISE5333",
+            "name": "Industrial Blockchain and Applications",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+          },
+          {
+            "code": "LGT5002",
+            "name": "International Logistics Systems, Operations and Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+          },
+          {
+            "code": "LGT5007",
+            "name": "Shipping Economics and Markets",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+          },
+          {
+            "code": "LGT5010",
+            "name": "Port Policy and Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+          },
+          {
+            "code": "LGT5013",
+            "name": "Transport Logistics in China",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+          },
+          {
+            "code": "LGT5017",
+            "name": "Maritime Logistics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+          },
+          {
+            "code": "LGT5164",
+            "name": "Aviation Safety Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/"
+          }
+        ]
+      },
+      {
+        "id": "dissertation-option",
+        "name": "Dissertation Option",
+        "type": "dissertation",
+        "ruleText": "The 9-credit ISE529 Dissertation (ILS) is used only on the seven-taught-subject Dissertation path and replaces three taught subjects.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/ise/study/information-for-current-students/programme-related-info/subject-syllabi/",
+        "courses": [
+          {
+            "code": "ISE529",
+            "name": "Dissertation (ILS)",
+            "credits": 9,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/information-for-current-students/programme-related-info/subject-syllabi/",
+            "courseKind": "dissertation",
+            "conditionalRequirement": true
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Engineering Ethics and Academic Integrity",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete EEE5T03 Engineering Ethics and Academic Integrity for 1 credit.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mls-ml",
+        "courses": [
+          {
+            "code": "EEE5T03",
+            "name": "Engineering Ethics and Academic Integrity",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-industrial-logistics-systems/programme-curriculum/",
+            "courseKind": "academic_integrity"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "POLYU-TPG-054",
+    "courseGroups": [
+      {
+        "id": "compulsory-subjects",
+        "name": "Compulsory Subjects",
+        "type": "core",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Complete all four Compulsory Subjects for 12 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/",
+        "courses": [
+          {
+            "code": "ISE542",
+            "name": "Managing Knowledge",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+          },
+          {
+            "code": "ISE549",
+            "name": "Management of Innovation and Technology",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+          },
+          {
+            "code": "ISE5001",
+            "name": "Technology Transfer and Commercialisation",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+          },
+          {
+            "code": "ISE5601",
+            "name": "Managing and Measuring Intellectual Capital",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+          }
+        ]
+      },
+      {
+        "id": "core-subjects",
+        "name": "Core Subjects",
+        "type": "core",
+        "creditsRequired": 3,
+        "coursesRequired": 1,
+        "ruleText": "Complete at least one Core Subject on the Dissertation path or at least three Core Subjects on the non-Dissertation path. ISE5002 is compulsory within the non-Dissertation Core selection.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/",
+        "courses": [
+          {
+            "code": "ISE518",
+            "name": "Workflow Design and Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+          },
+          {
+            "code": "ISE525",
+            "name": "Global Operations and Logistics Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+          },
+          {
+            "code": "ISE559",
+            "name": "Technology Audit and Assessment",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+          },
+          {
+            "code": "ISE5002",
+            "name": "Field Study of Technology Organisations",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/",
+            "conditionalRequirement": true
+          },
+          {
+            "code": "ISE5021",
+            "name": "Technology Project Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+          },
+          {
+            "code": "ISE5606",
+            "name": "Business Intelligence and Data Mining",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+          }
+        ]
+      },
+      {
+        "id": "elective-subjects",
+        "name": "Elective Subjects",
+        "type": "elective",
+        "ruleText": "Use at most two Elective Subjects on the Dissertation path or at most three on the non-Dissertation path. A wider ISE selection may be available during registration.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/",
+        "courses": [
+          {
+            "code": "ISE5022",
+            "name": "Financial Decision Analysis for Technology Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+          },
+          {
+            "code": "ISE5026",
+            "name": "Technology Entrepreneurship and Innovation in Practice",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+          },
+          {
+            "code": "ISE5312",
+            "name": "Industrial Human-Robot Systems and Automation",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+          },
+          {
+            "code": "ISE5323",
+            "name": "Smart Product-Service Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+          },
+          {
+            "code": "ISE5332",
+            "name": "Smart Manufacturing Operations Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+          },
+          {
+            "code": "ISE5333",
+            "name": "Industrial Blockchain and Applications",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+          },
+          {
+            "code": "AAE5105",
+            "name": "Fleet Management and Aviation Sustainability",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+          },
+          {
+            "code": "AAE5112",
+            "name": "Airport Operations and Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+          },
+          {
+            "code": "AAE5301",
+            "name": "Service Design and Fleet Management for Low-Altitude Economy",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+          },
+          {
+            "code": "LGT5007",
+            "name": "Shipping Economics and Markets",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+          },
+          {
+            "code": "LGT5015",
+            "name": "Supply Chain Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+          },
+          {
+            "code": "LGT5105",
+            "name": "Management Operations Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+          },
+          {
+            "code": "MM5112",
+            "name": "Organisation and Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/"
+          }
+        ]
+      },
+      {
+        "id": "dissertation-option",
+        "name": "Dissertation Option",
+        "type": "dissertation",
+        "ruleText": "The 9-credit ISE5003 Dissertation (KTM) is used only on the seven-taught-subject Dissertation path and replaces three taught subjects.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/ise/study/information-for-current-students/programme-related-info/subject-syllabi/",
+        "courses": [
+          {
+            "code": "ISE5003",
+            "name": "Dissertation (KTM)",
+            "credits": 9,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/information-for-current-students/programme-related-info/subject-syllabi/",
+            "courseKind": "dissertation",
+            "conditionalRequirement": true
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Engineering Ethics and Academic Integrity",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete EEE5T03 Engineering Ethics and Academic Integrity for 1 credit.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt",
+        "courses": [
+          {
+            "code": "EEE5T03",
+            "name": "Engineering Ethics and Academic Integrity",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-knowledge-and-technology-management/programme-curriculum/",
+            "courseKind": "academic_integrity"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "POLYU-TPG-055",
+    "courseGroups": [
+      {
+        "id": "compulsory-subjects",
+        "name": "Compulsory Subjects",
+        "type": "core",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Complete all four Compulsory Subjects for 12 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/",
+        "courses": [
+          {
+            "code": "ISE5301",
+            "name": "Frontiers in Industry 4.0",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/"
+          },
+          {
+            "code": "ISE5311",
+            "name": "Advanced Manufacturing Processes",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/"
+          },
+          {
+            "code": "ISE5321",
+            "name": "Cyber-Physical Industry 4.0 Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/"
+          },
+          {
+            "code": "ISE5331",
+            "name": "Optimization and Data Analytics for Industry 4.0",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/"
+          }
+        ]
+      },
+      {
+        "id": "core-subjects",
+        "name": "Core Subjects",
+        "type": "core",
+        "creditsRequired": 3,
+        "coursesRequired": 1,
+        "ruleText": "Complete at least one Core Subject on the Dissertation path or at least three Core Subjects on the non-Dissertation path.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/",
+        "courses": [
+          {
+            "code": "ISE5312",
+            "name": "Industrial Human-Robot Systems and Automation",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/"
+          },
+          {
+            "code": "ISE5322",
+            "name": "Industrial Metaverse and Mixed Reality",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/"
+          },
+          {
+            "code": "ISE5323",
+            "name": "Smart Product-Service Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/"
+          },
+          {
+            "code": "ISE5332",
+            "name": "Smart Manufacturing Operations Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/"
+          },
+          {
+            "code": "ISE5333",
+            "name": "Industrial Blockchain and Applications",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/"
+          },
+          {
+            "code": "ISE538",
+            "name": "Process and Performance Measurement",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/"
+          },
+          {
+            "code": "ISE5021",
+            "name": "Technology Project Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/"
+          }
+        ]
+      },
+      {
+        "id": "elective-subjects",
+        "name": "Elective Subjects",
+        "type": "elective",
+        "ruleText": "Use at most two Elective Subjects on the Dissertation path or at most three on the non-Dissertation path.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/",
+        "courses": [
+          {
+            "code": "ISE5019",
+            "name": "Optimization Modeling & Applications",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/"
+          },
+          {
+            "code": "ISE5026",
+            "name": "Technology Entrepreneurship and Innovation in Practice",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/"
+          },
+          {
+            "code": "ISE5334",
+            "name": "Industrial Prompt Engineering for Generative Artificial Intelligence",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/"
+          }
+        ]
+      },
+      {
+        "id": "dissertation-option",
+        "name": "Dissertation Option",
+        "type": "dissertation",
+        "ruleText": "The 9-credit ISE5699 Dissertation (SM) is used only on the seven-taught-subject Dissertation path and replaces three taught subjects.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/ise/study/information-for-current-students/programme-related-info/subject-syllabi/",
+        "courses": [
+          {
+            "code": "ISE5699",
+            "name": "Dissertation (SM)",
+            "credits": 9,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/information-for-current-students/programme-related-info/subject-syllabi/",
+            "courseKind": "dissertation",
+            "conditionalRequirement": true
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Engineering Ethics and Academic Integrity",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete EEE5T03 Engineering Ethics and Academic Integrity for 1 credit.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-smf-smp",
+        "courses": [
+          {
+            "code": "EEE5T03",
+            "name": "Engineering Ethics and Academic Integrity",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ise/study/taught-postgraduate-programmes/master-of-science-in-smart-manufacturing/programme-structure/",
+            "courseKind": "academic_integrity"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "POLYU-TPG-058",
+    "courseGroups": [
+      {
+        "id": "compulsory-subjects",
+        "name": "Compulsory Subjects",
+        "type": "core",
+        "creditsRequired": 3,
+        "coursesRequired": 1,
+        "ruleText": "Complete LGT5002 for 3 credits in addition to the 1-credit AIE subject.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-ifm-tfp-ipm-tpp",
+        "courses": [
+          {
+            "code": "LGT5002",
+            "name": "International Logistics Systems, Operations and Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Academic Integrity and Ethics in Business",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete LGT5T21 Academic Integrity and Ethics in Business for 1 credit.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-ifm-tfp-ipm-tpp",
+        "courses": [
+          {
+            "code": "LGT5T21",
+            "name": "Academic Integrity and Ethics in Business",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+            "courseKind": "academic_integrity"
+          }
+        ]
+      },
+      {
+        "id": "restricted-electives",
+        "name": "Restricted Elective Subjects",
+        "type": "restricted_elective",
+        "creditsRequired": 15,
+        "coursesRequired": 5,
+        "ruleText": "Complete five 3-credit Restricted Electives: at least two International Shipping subjects, at least one Shipping Economics and Finance subject, at least one Shipping Law and Insurance subject, and at least one International Logistics subject. Additional Restricted Electives may count as Free Electives.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-ifm-tfp-ipm-tpp",
+        "courses": [
+          {
+            "code": "LGT5001",
+            "name": "Organisational Management in Shipping and Logistics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5010",
+            "name": "Port Policy and Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5071",
+            "name": "Ship Chartering Strategies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5072",
+            "name": "Liner Shipping Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5079",
+            "name": "Strategic Management for International Shipping",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5165",
+            "name": "AI and Digitalisation in the Global Shipping Industry",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5007",
+            "name": "Shipping Economics and Markets",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5065",
+            "name": "Finance for Shipping and Logistics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5012",
+            "name": "Law and Practice in Marine Insurance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5064",
+            "name": "Shipping Law",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5014",
+            "name": "Air Transport Logistics and Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5015",
+            "name": "Supply Chain Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          }
+        ]
+      },
+      {
+        "id": "free-electives-and-project",
+        "name": "Free Elective Subjects and Project Option",
+        "type": "elective",
+        "creditsRequired": 15,
+        "ruleText": "Complete either five 3-credit Free Electives or LGT5202 Project for 6 credits plus three 3-credit Free Electives. LGT5315 is a 3-credit Research Project option in the published Free Elective pool.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-ifm-tfp-ipm-tpp",
+        "courses": [
+          {
+            "code": "LGT5017",
+            "name": "Maritime Logistics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "AF5108",
+            "name": "Accounting for Managers",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/istl/student-resources/programme-requirement-documents/istl-2025-26.pdf"
+          },
+          {
+            "code": "LGT5011",
+            "name": "Admiralty Law",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5046",
+            "name": "Contract Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5170",
+            "name": "Maritime Arbitration Law",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5067",
+            "name": "Intermodal Transport Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5161",
+            "name": "Air Transport Regulatory Policy",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5162",
+            "name": "Airline Strategic Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5163",
+            "name": "Aviation Marketing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5164",
+            "name": "Aviation Safety Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5169",
+            "name": "Airport Business Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5013",
+            "name": "Transport Logistics in China",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5037",
+            "name": "Project Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5073",
+            "name": "Risk Management in Operations",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5101",
+            "name": "Statistics for Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5113",
+            "name": "Enterprise Resource Planning",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5122",
+            "name": "Applications of Decision Making Models",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5133",
+            "name": "Strategies and Technologies in Warehousing Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5152",
+            "name": "Information Systems for Supply Chain Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5419",
+            "name": "Coding for Management with Python",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5202",
+            "name": "Project",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+            "courseKind": "project",
+            "conditionalRequirement": true
+          },
+          {
+            "code": "MM501",
+            "name": "Research Methods",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/istl/student-resources/programme-requirement-documents/istl-2025-26.pdf"
+          },
+          {
+            "code": "MM544",
+            "name": "E-Commerce",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/istl/student-resources/programme-requirement-documents/istl-2025-26.pdf"
+          },
+          {
+            "code": "LGT5137",
+            "name": "Lean Six Sigma and Quality Management Techniques",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5315",
+            "name": "Research Project in International Shipping and Transport Logistics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+            "courseKind": "research_project",
+            "conditionalRequirement": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "POLYU-TPG-059",
+    "courseGroups": [
+      {
+        "id": "compulsory-subjects",
+        "name": "Compulsory Subjects",
+        "type": "core",
+        "creditsRequired": 3,
+        "coursesRequired": 1,
+        "ruleText": "Complete LGT5002 for 3 academic credits in addition to the 1-credit AIE subject.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-iss",
+        "courses": [
+          {
+            "code": "LGT5002",
+            "name": "International Logistics Systems, Operations and Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Academic Integrity and Ethics in Business",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete LGT5T21 Academic Integrity and Ethics in Business for 1 credit.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-iss",
+        "courses": [
+          {
+            "code": "LGT5T21",
+            "name": "Academic Integrity and Ethics in Business",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+            "courseKind": "academic_integrity"
+          }
+        ]
+      },
+      {
+        "id": "international-shipping-core",
+        "name": "International Shipping Core Subjects",
+        "type": "core",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Complete any four International Shipping Core Subjects for 12 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-iss",
+        "courses": [
+          {
+            "code": "LGT5001",
+            "name": "Organisational Management in Shipping and Logistics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5010",
+            "name": "Port Policy and Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5071",
+            "name": "Ship Chartering Strategies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5072",
+            "name": "Liner Shipping Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5079",
+            "name": "Strategic Management for International Shipping",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5165",
+            "name": "AI and Digitalisation in the Global Shipping Industry",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          }
+        ]
+      },
+      {
+        "id": "restricted-electives",
+        "name": "Restricted Elective Subjects",
+        "type": "restricted_elective",
+        "creditsRequired": 9,
+        "coursesRequired": 3,
+        "ruleText": "Complete three Restricted Electives for 9 credits, including at least one from each of Shipping Economics and Finance, Shipping Law and Insurance, and International Logistics. Additional Restricted Electives may count as Free Electives.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-iss",
+        "courses": [
+          {
+            "code": "LGT5007",
+            "name": "Shipping Economics and Markets",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5065",
+            "name": "Finance for Shipping and Logistics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5012",
+            "name": "Law and Practice in Marine Insurance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5064",
+            "name": "Shipping Law",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5014",
+            "name": "Air Transport Logistics and Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5015",
+            "name": "Supply Chain Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          }
+        ]
+      },
+      {
+        "id": "free-electives-and-project",
+        "name": "Free Elective Subjects and Project Option",
+        "type": "elective",
+        "creditsRequired": 15,
+        "ruleText": "Complete either five 3-credit Free Electives or LGT5202 Project for 6 credits plus three 3-credit Free Electives. LGT5315 is a 3-credit Research Project option in the published pool.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-iss",
+        "courses": [
+          {
+            "code": "LGT5017",
+            "name": "Maritime Logistics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "AF5108",
+            "name": "Accounting for Managers",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/istl-iss/student-resources/programme-requirement-document/istl-iss-2025-26.pdf"
+          },
+          {
+            "code": "LGT5011",
+            "name": "Admiralty Law",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5046",
+            "name": "Contract Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5170",
+            "name": "Maritime Arbitration Law",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5067",
+            "name": "Intermodal Transport Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5161",
+            "name": "Air Transport Regulatory Policy",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5162",
+            "name": "Airline Strategic Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5163",
+            "name": "Aviation Marketing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5164",
+            "name": "Aviation Safety Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5169",
+            "name": "Airport Business Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5013",
+            "name": "Transport Logistics in China",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5037",
+            "name": "Project Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5073",
+            "name": "Risk Management in Operations",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5101",
+            "name": "Statistics for Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5113",
+            "name": "Enterprise Resource Planning",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5122",
+            "name": "Applications of Decision Making Models",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5133",
+            "name": "Strategies and Technologies in Warehousing Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5152",
+            "name": "Information Systems for Supply Chain Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5419",
+            "name": "Coding for Management with Python",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5202",
+            "name": "Project",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+            "courseKind": "project",
+            "conditionalRequirement": true
+          },
+          {
+            "code": "MM501",
+            "name": "Research Methods",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/istl-iss/student-resources/programme-requirement-document/istl-iss-2025-26.pdf"
+          },
+          {
+            "code": "MM544",
+            "name": "E-Commerce",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/istl-iss/student-resources/programme-requirement-document/istl-iss-2025-26.pdf"
+          },
+          {
+            "code": "LGT5137",
+            "name": "Lean Six Sigma and Quality Management Techniques",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5315",
+            "name": "Research Project in International Shipping and Transport Logistics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+            "courseKind": "research_project",
+            "conditionalRequirement": true
+          },
+          {
+            "code": "LGT5105",
+            "name": "Managing Operations Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          }
+        ]
+      },
+      {
+        "id": "maritime-industry-internship",
+        "name": "Mandatory Training Subject",
+        "type": "internship",
+        "creditsRequired": 6,
+        "coursesRequired": 1,
+        "ruleText": "Complete the 240-hour LGT5222 Maritime Industry Internship for 6 training credits; the official Programme page notes that exemptions may be granted to eligible local scholarship recipients with relevant experience.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-iss",
+        "courses": [
+          {
+            "code": "LGT5222",
+            "name": "Maritime Industry Internship",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+            "courseKind": "internship"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "POLYU-TPG-060",
+    "courseGroups": [
+      {
+        "id": "compulsory-subjects",
+        "name": "Compulsory Subjects",
+        "type": "core",
+        "creditsRequired": 9,
+        "coursesRequired": 3,
+        "ruleText": "Complete all three 3-credit Compulsory Subjects in addition to the 1-credit AIE subject.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44089-sfm-sfp-gpm-spp",
+        "courses": [
+          {
+            "code": "LGT5002",
+            "name": "International Logistics Systems, Operations and Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5015",
+            "name": "Supply Chain Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5034",
+            "name": "Global Sourcing and Supply",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Academic Integrity and Ethics in Business",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete LGT5T21 Academic Integrity and Ethics in Business for 1 credit.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44089-sfm-sfp-gpm-spp",
+        "courses": [
+          {
+            "code": "LGT5T21",
+            "name": "Academic Integrity and Ethics in Business",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+            "courseKind": "academic_integrity"
+          }
+        ]
+      },
+      {
+        "id": "restricted-electives",
+        "name": "Restricted Elective Subjects",
+        "type": "restricted_elective",
+        "creditsRequired": 9,
+        "coursesRequired": 3,
+        "ruleText": "Complete three 3-credit Restricted Electives: at least one operations subject, at least one procurement subject, and at least one information-technology subject. Additional Restricted Electives may count as Free Electives.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44089-sfm-sfp-gpm-spp",
+        "courses": [
+          {
+            "code": "LGT5105",
+            "name": "Managing Operations Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5109",
+            "name": "International Operations Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5046",
+            "name": "Contract Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5083",
+            "name": "Digital Procurement Management and Analytics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5152",
+            "name": "Information Systems for Supply Chain Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "MM544",
+            "name": "E-Commerce",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/gscm/student-resources/programme-requirement-documents/gscm-2025-26.pdf"
+          }
+        ]
+      },
+      {
+        "id": "free-electives-and-project",
+        "name": "Free Elective Subjects and Project Option",
+        "type": "elective",
+        "creditsRequired": 12,
+        "ruleText": "Complete four 3-credit Free Electives, or use the 6-credit LGT5202 Project in place of two ordinary Free Electives.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44089-sfm-sfp-gpm-spp",
+        "courses": [
+          {
+            "code": "AF5108",
+            "name": "Accounting for Managers",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/gscm/student-resources/programme-requirement-documents/gscm-2025-26.pdf"
+          },
+          {
+            "code": "LGT5001",
+            "name": "Organisational Management in Shipping and Logistics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5013",
+            "name": "Transport Logistics in China",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5014",
+            "name": "Air Transport Logistics and Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5017",
+            "name": "Maritime Logistics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5037",
+            "name": "Project Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5040",
+            "name": "Supplier Development",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5073",
+            "name": "Risk Management in Operations",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5101",
+            "name": "Statistics for Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5102",
+            "name": "Models for Decision Making",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5107",
+            "name": "Total Quality Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5113",
+            "name": "Enterprise Resource Planning",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5122",
+            "name": "Applications of Decision Making Models",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5133",
+            "name": "Strategies and Technologies in Warehousing Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5137",
+            "name": "Lean Six Sigma and Quality Management Techniques",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5419",
+            "name": "Coding for Management with Python",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5425",
+            "name": "Business Analytics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5426",
+            "name": "Managing Innovation",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5202",
+            "name": "Project",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+            "courseKind": "project",
+            "conditionalRequirement": true
+          },
+          {
+            "code": "LGT5215",
+            "name": "Practice of Global Supply Chain Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "POLYU-TPG-061",
+    "courseGroups": [
+      {
+        "id": "compulsory-subjects",
+        "name": "Compulsory Subjects",
+        "type": "core",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Complete all four 3-credit Compulsory Subjects in addition to the 1-credit AIE subject.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44092-ofm-opm",
+        "courses": [
+          {
+            "code": "AF5108",
+            "name": "Accounting for Managers",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/om/student-resources/programme-requirement-documents/om-2025-26.pdf"
+          },
+          {
+            "code": "LGT5105",
+            "name": "Managing Operations Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5109",
+            "name": "International Operations Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5426",
+            "name": "Managing Innovation",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Academic Integrity and Ethics in Business",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete LGT5T21 Academic Integrity and Ethics in Business for 1 credit.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44092-ofm-opm",
+        "courses": [
+          {
+            "code": "LGT5T21",
+            "name": "Academic Integrity and Ethics in Business",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+            "courseKind": "academic_integrity"
+          }
+        ]
+      },
+      {
+        "id": "specialised-subjects",
+        "name": "Stream Specialised Subjects",
+        "type": "track_core",
+        "creditsRequired": 9,
+        "coursesRequired": 3,
+        "creditsRequiredByTrackIds": {
+          "POLYU-TPG-061-OPERATIONS-ANALYTICS": 9,
+          "POLYU-TPG-061-QUALITY-MANAGEMENT": 9,
+          "POLYU-TPG-061-OPERATIONS-STRATEGY": 9
+        },
+        "coursesRequiredByTrackIds": {
+          "POLYU-TPG-061-OPERATIONS-ANALYTICS": 3,
+          "POLYU-TPG-061-QUALITY-MANAGEMENT": 3,
+          "POLYU-TPG-061-OPERATIONS-STRATEGY": 3
+        },
+        "ruleText": "Choose one Stream and complete any three of its four Specialised Subjects for 9 credits. A fourth Specialised Subject in the selected Stream may count as a Free Elective.",
+        "appliesToTrackIds": [
+          "POLYU-TPG-061-OPERATIONS-ANALYTICS",
+          "POLYU-TPG-061-QUALITY-MANAGEMENT",
+          "POLYU-TPG-061-OPERATIONS-STRATEGY"
+        ],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44092-ofm-opm",
+        "courses": [
+          {
+            "code": "LGT5015",
+            "name": "Supply Chain Management",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-061-OPERATIONS-ANALYTICS"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+            "subjectGroups": [
+              "specialised",
+              "free-elective"
+            ]
+          },
+          {
+            "code": "LGT5113",
+            "name": "Enterprise Resource Planning",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-061-OPERATIONS-ANALYTICS"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+            "subjectGroups": [
+              "specialised",
+              "free-elective"
+            ]
+          },
+          {
+            "code": "LGT5425",
+            "name": "Business Analytics",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-061-OPERATIONS-ANALYTICS"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+            "subjectGroups": [
+              "specialised",
+              "free-elective"
+            ]
+          },
+          {
+            "code": "MM544",
+            "name": "E-Commerce",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-061-OPERATIONS-ANALYTICS"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/om/student-resources/programme-requirement-documents/om-2025-26.pdf",
+            "subjectGroups": [
+              "specialised",
+              "free-elective"
+            ]
+          },
+          {
+            "code": "LGT5101",
+            "name": "Statistics for Management",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-061-QUALITY-MANAGEMENT"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+            "subjectGroups": [
+              "specialised",
+              "free-elective"
+            ]
+          },
+          {
+            "code": "LGT5107",
+            "name": "Total Quality Management",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-061-QUALITY-MANAGEMENT"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+            "subjectGroups": [
+              "specialised",
+              "free-elective"
+            ]
+          },
+          {
+            "code": "LGT5137",
+            "name": "Lean Six Sigma and Quality Management Techniques",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-061-QUALITY-MANAGEMENT"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+            "subjectGroups": [
+              "specialised",
+              "free-elective"
+            ]
+          },
+          {
+            "code": "LGT5150",
+            "name": "Quality Management Approaches for Operational Enhancement",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-061-QUALITY-MANAGEMENT"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+            "subjectGroups": [
+              "specialised",
+              "free-elective"
+            ]
+          },
+          {
+            "code": "LGT5073",
+            "name": "Risk Management in Operations",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-061-OPERATIONS-STRATEGY"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+            "subjectGroups": [
+              "specialised",
+              "free-elective"
+            ]
+          },
+          {
+            "code": "LGT5133",
+            "name": "Strategies and Technologies in Warehousing Management",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-061-OPERATIONS-STRATEGY"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+            "subjectGroups": [
+              "specialised",
+              "free-elective"
+            ]
+          },
+          {
+            "code": "MM5112",
+            "name": "Organization and Management",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-061-OPERATIONS-STRATEGY"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/om/student-resources/programme-requirement-documents/om-2025-26.pdf",
+            "subjectGroups": [
+              "specialised",
+              "free-elective"
+            ]
+          },
+          {
+            "code": "MM531",
+            "name": "Strategic Management",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "POLYU-TPG-061-OPERATIONS-STRATEGY"
+            ],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/om/student-resources/programme-requirement-documents/om-2025-26.pdf",
+            "subjectGroups": [
+              "specialised",
+              "free-elective"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "restricted-elective",
+        "name": "Restricted Elective Subject",
+        "type": "restricted_elective",
+        "creditsRequired": 3,
+        "coursesRequired": 1,
+        "ruleText": "Complete any one 3-credit Restricted Elective. Additional Restricted Electives may count as Free Electives.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44092-ofm-opm",
+        "courses": [
+          {
+            "code": "LGT5002",
+            "name": "International Logistics Systems, Operations and Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5034",
+            "name": "Global Sourcing and Supply",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5037",
+            "name": "Project Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5040",
+            "name": "Supplier Development",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5102",
+            "name": "Models for Decision Making",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5171",
+            "name": "Contemporary Issues in Operations Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "MM576",
+            "name": "Marketing Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/om/student-resources/programme-requirement-documents/om-2025-26.pdf"
+          }
+        ]
+      },
+      {
+        "id": "free-electives-and-project",
+        "name": "Free Elective Subjects and Project Option",
+        "type": "elective",
+        "creditsRequired": 6,
+        "ruleText": "Complete two 3-credit Free Electives or the 6-credit LGT5202 Project. Eligible extra Specialised or Restricted Elective subjects also count toward this requirement and are kept in their official groups to avoid duplicate course codes.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44092-ofm-opm",
+        "courses": [
+          {
+            "code": "LGT5111",
+            "name": "Practice of Operations Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5122",
+            "name": "Applications of Decision Making Models",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5159",
+            "name": "Implementation and Auditing of Quality Management Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5419",
+            "name": "Coding for Management with Python",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5427",
+            "name": "Global Business",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5429",
+            "name": "Global Risk and Decision Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "MM501",
+            "name": "Research Methods",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/om/student-resources/programme-requirement-documents/om-2025-26.pdf"
+          },
+          {
+            "code": "LGT5202",
+            "name": "Project",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+            "courseKind": "project",
+            "conditionalRequirement": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "POLYU-TPG-062",
+    "courseGroups": [
+      {
+        "id": "compulsory-subjects",
+        "name": "Compulsory Subjects",
+        "type": "core",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Complete all four 3-credit Compulsory Subjects in addition to the 1-credit AIE subject.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44094-bfm-bpm",
+        "courses": [
+          {
+            "code": "LGT5427",
+            "name": "Global Business",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5428",
+            "name": "International Trade and Logistics Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5102",
+            "name": "Models for Decision Making",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5425",
+            "name": "Business Analytics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Academic Integrity and Ethics in Business",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete LGT5T21 Academic Integrity and Ethics in Business for 1 credit.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44094-bfm-bpm",
+        "courses": [
+          {
+            "code": "LGT5T21",
+            "name": "Academic Integrity and Ethics in Business",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+            "courseKind": "academic_integrity"
+          }
+        ]
+      },
+      {
+        "id": "restricted-electives",
+        "name": "Restricted Elective Subjects",
+        "type": "restricted_elective",
+        "creditsRequired": 9,
+        "coursesRequired": 3,
+        "ruleText": "Complete three 3-credit Restricted Electives: at least one methodology subject, at least one supply-chain/logistics/operations subject, and at least one accounting/finance/management/marketing subject. Additional Restricted Electives may count as Free Electives.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44094-bfm-bpm",
+        "courses": [
+          {
+            "code": "LGT5037",
+            "name": "Project Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5101",
+            "name": "Statistics for Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5122",
+            "name": "Applications of Decision Making Models",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5429",
+            "name": "Global Risk and Decision Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5419",
+            "name": "Coding for Management with Python",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5034",
+            "name": "Global Sourcing and Supply",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5109",
+            "name": "International Operations Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5171",
+            "name": "Contemporary Issues in Operations Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5002",
+            "name": "International Logistics Systems, Operations and Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "AF5104",
+            "name": "International Accounting",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/gbda/student-resources/programme-requirement-documents/gbda-2025-26.pdf"
+          },
+          {
+            "code": "AF5108",
+            "name": "Accounting for Managers",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/gbda/student-resources/programme-requirement-documents/gbda-2025-26.pdf"
+          },
+          {
+            "code": "AF5326",
+            "name": "Managerial Finance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/gbda/student-resources/programme-requirement-documents/gbda-2025-26.pdf"
+          },
+          {
+            "code": "MM539",
+            "name": "International Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/gbda/student-resources/programme-requirement-documents/gbda-2025-26.pdf"
+          },
+          {
+            "code": "MM576",
+            "name": "Marketing Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/gbda/student-resources/programme-requirement-documents/gbda-2025-26.pdf"
+          },
+          {
+            "code": "MM5791",
+            "name": "Global Marketing in Cross-Cultural Perspectives",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/gbda/student-resources/programme-requirement-documents/gbda-2025-26.pdf"
+          },
+          {
+            "code": "LGT5426",
+            "name": "Managing Innovation",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          }
+        ]
+      },
+      {
+        "id": "free-electives-and-projects",
+        "name": "Free Elective Subjects and Research-based Project Options",
+        "type": "elective",
+        "creditsRequired": 9,
+        "ruleText": "Complete 9 Free Elective credits. The official sources list LGT5415 as a 3-credit Research Project and LGT5202 as a 6-credit Project, but do not state a self-consistent automatic substitution rule for the 31-credit total; confirm any Project path manually.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44094-bfm-bpm",
+        "courses": [
+          {
+            "code": "AF5362",
+            "name": "International Financial Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/gbda/student-resources/programme-requirement-documents/gbda-2025-26.pdf"
+          },
+          {
+            "code": "AF5618",
+            "name": "Global Economic Environment for Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/gbda/student-resources/programme-requirement-documents/gbda-2025-26.pdf"
+          },
+          {
+            "code": "AF5627",
+            "name": "Managerial Economics with an Application to China Business",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/gbda/student-resources/programme-requirement-documents/gbda-2025-26.pdf"
+          },
+          {
+            "code": "LGT5001",
+            "name": "Organisational Management in Shipping and Logistics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5007",
+            "name": "Shipping Economics and Markets",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5014",
+            "name": "Air Transport Logistics and Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5015",
+            "name": "Supply Chain Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5067",
+            "name": "Intermodal Transport Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5073",
+            "name": "Risk Management in Operations",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5083",
+            "name": "Digital Procurement Management and Analytics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5046",
+            "name": "Contract Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5105",
+            "name": "Managing Operations Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5172",
+            "name": "Managerial Thinking and Skills Workshop",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "LGT5137",
+            "name": "Lean Six Sigma and Quality Management Techniques",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+          },
+          {
+            "code": "MM5712",
+            "name": "Marketing Management in China",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/gbda/student-resources/programme-requirement-documents/gbda-2025-26.pdf"
+          },
+          {
+            "code": "LGT5415",
+            "name": "Research Project in Global Business and Decision Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+            "courseKind": "research_project",
+            "conditionalRequirement": true
+          },
+          {
+            "code": "LGT5202",
+            "name": "Project",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+            "courseKind": "project",
+            "conditionalRequirement": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "POLYU-TPG-063",
+    "courseGroups": [
+      {
+        "id": "compulsory-subjects",
+        "name": "Compulsory Subjects",
+        "type": "core",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Complete all four 3-credit Compulsory Subjects for 12 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/",
+        "courses": [
+          {
+            "code": "MM5112",
+            "name": "Organization and Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+          },
+          {
+            "code": "MM5412",
+            "name": "Business Intelligence and Decisions",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+          },
+          {
+            "code": "MM5424",
+            "name": "Management Information Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+          },
+          {
+            "code": "MM5425",
+            "name": "Business Analytics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Academic Integrity and Business Ethics",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete MM5T21 Academic Integrity and Business Ethics for 1 credit.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/",
+        "courses": [
+          {
+            "code": "MM5T21",
+            "name": "Academic Integrity and Business Ethics",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/",
+            "courseKind": "academic_integrity"
+          }
+        ]
+      },
+      {
+        "id": "elective-subjects",
+        "name": "Elective Subjects",
+        "type": "elective",
+        "creditsRequired": 18,
+        "coursesRequired": 6,
+        "ruleText": "For the non-Dissertation route, complete any six Elective Subjects for 18 credits. For the Dissertation route, complete any two ordinary Electives for 6 credits plus MM501 Research Methods for 3 credits. MM5995 carries 0 credits and cannot by itself satisfy the credit minimum.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/",
+        "courses": [
+          {
+            "code": "MM501",
+            "name": "Research Methods",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/",
+            "subjectGroups": [
+              "elective",
+              "research-methods"
+            ]
+          },
+          {
+            "code": "MM5203",
+            "name": "Decision Making for Leadership",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+          },
+          {
+            "code": "MM531",
+            "name": "Strategic Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+          },
+          {
+            "code": "MM534",
+            "name": "Entrepreneurship",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+          },
+          {
+            "code": "MM5413",
+            "name": "Business Forecasting",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+          },
+          {
+            "code": "MM5426",
+            "name": "Business Applications of Blockchain",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+          },
+          {
+            "code": "MM5427",
+            "name": "Textual Analysis in Business",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+          },
+          {
+            "code": "MM5433",
+            "name": "Decision Analytics by Machine Learning",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+          },
+          {
+            "code": "MM544",
+            "name": "E-Commerce",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+          },
+          {
+            "code": "MM5451",
+            "name": "Technology Innovation and Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+          },
+          {
+            "code": "MM5452",
+            "name": "Seminars in Emerging Technology",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+          },
+          {
+            "code": "MM576",
+            "name": "Marketing Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+          },
+          {
+            "code": "MM5831",
+            "name": "Social Media Marketing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+          },
+          {
+            "code": "LGT5102",
+            "name": "Models for Decision Making",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+          },
+          {
+            "code": "LGT5105",
+            "name": "Managing Operations Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+          },
+          {
+            "code": "LGT5113",
+            "name": "Enterprise Resource Planning",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+          },
+          {
+            "code": "LGT5122",
+            "name": "Applications of Decision Making Models",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+          },
+          {
+            "code": "MM5913",
+            "name": "Field Study for Business Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+          },
+          {
+            "code": "MM5995",
+            "name": "MM MSc Career Workshop",
+            "credits": 0,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/",
+            "subjectGroups": [
+              "elective",
+              "career-workshop"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "dissertation-option",
+        "name": "Dissertation Option",
+        "type": "dissertation",
+        "creditsRequired": 9,
+        "coursesRequired": 1,
+        "ruleText": "The Dissertation route requires MM594 Business Analytics Dissertation for 9 credits together with MM501 Research Methods and two ordinary Electives. The non-Dissertation route does not require MM594.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/",
+        "courses": [
+          {
+            "code": "MM594",
+            "name": "Business Analytics Dissertation",
+            "credits": 9,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/",
+            "courseKind": "dissertation",
+            "conditionalRequirement": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "POLYU-TPG-064",
+    "courseGroups": [
+      {
+        "id": "compulsory-subjects",
+        "name": "Compulsory Subjects",
+        "type": "core",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Complete all four 3-credit Compulsory Subjects for 12 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/",
+        "courses": [
+          {
+            "code": "MM514",
+            "name": "Human Resource Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+          },
+          {
+            "code": "MM515",
+            "name": "Organizational Behaviour",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+          },
+          {
+            "code": "MM517",
+            "name": "Human Resource Development",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+          },
+          {
+            "code": "MM5112",
+            "name": "Organization and Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Academic Integrity and Business Ethics",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete MM5T21 Academic Integrity and Business Ethics for 1 credit.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/",
+        "courses": [
+          {
+            "code": "MM5T21",
+            "name": "Academic Integrity and Business Ethics",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/",
+            "courseKind": "academic_integrity"
+          }
+        ]
+      },
+      {
+        "id": "elective-subjects",
+        "name": "Elective Subjects",
+        "type": "elective",
+        "creditsRequired": 18,
+        "coursesRequired": 6,
+        "ruleText": "For the non-Dissertation route, complete any six 3-credit Elective Subjects for 18 credits. For the Dissertation route, complete any two ordinary Electives for 6 credits plus MM501 Research Methods for 3 credits. MM5995 carries 0 credits and cannot satisfy the credit minimum.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/",
+        "courses": [
+          {
+            "code": "MM501",
+            "name": "Research Methods",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/",
+            "subjectGroups": [
+              "elective",
+              "research-methods"
+            ]
+          },
+          {
+            "code": "MM516",
+            "name": "Management of Pay and Benefits",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+          },
+          {
+            "code": "MM5191",
+            "name": "Negotiation and Conflict Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+          },
+          {
+            "code": "MM5203",
+            "name": "Decision Making for Leadership",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+          },
+          {
+            "code": "MM5221",
+            "name": "Human Resource Management in China",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+          },
+          {
+            "code": "MM5222",
+            "name": "HRM Seminars",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+          },
+          {
+            "code": "MM5231",
+            "name": "Strategic Human Resource Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+          },
+          {
+            "code": "MM5241",
+            "name": "Managing Volunteerism",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+          },
+          {
+            "code": "MM5271",
+            "name": "Wellbeing at Work",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+          },
+          {
+            "code": "MM5281",
+            "name": "Mediation at Workplace",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+          },
+          {
+            "code": "MM531",
+            "name": "Strategic Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+          },
+          {
+            "code": "MM534",
+            "name": "Entrepreneurship",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+          },
+          {
+            "code": "MM539",
+            "name": "International Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+          },
+          {
+            "code": "MM5425",
+            "name": "Business Analytics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+          },
+          {
+            "code": "MM5433",
+            "name": "Decision Analytics by Machine Learning",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+          },
+          {
+            "code": "MM5684",
+            "name": "Leading Global Sustainability",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+          },
+          {
+            "code": "MM576",
+            "name": "Marketing Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+          },
+          {
+            "code": "MM5913",
+            "name": "Field Study for Business Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+          },
+          {
+            "code": "MM5921",
+            "name": "Practice of Human Resource Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/"
+          },
+          {
+            "code": "MM5995",
+            "name": "MM MSc Career Workshop",
+            "credits": 0,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/",
+            "subjectGroups": [
+              "elective",
+              "career-workshop"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "dissertation-option",
+        "name": "Dissertation Option",
+        "type": "dissertation",
+        "creditsRequired": 9,
+        "coursesRequired": 1,
+        "ruleText": "The Dissertation route requires MM592 HRM Dissertation for 9 credits together with MM501 Research Methods and two ordinary Electives.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/",
+        "courses": [
+          {
+            "code": "MM592",
+            "name": "HRM Dissertation",
+            "credits": 9,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/hrm/programme/",
+            "courseKind": "dissertation",
+            "conditionalRequirement": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "POLYU-TPG-065",
+    "courseGroups": [
+      {
+        "id": "compulsory-subjects",
+        "name": "Compulsory Subjects",
+        "type": "core",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Complete all four 3-credit Compulsory Subjects for 12 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/",
+        "courses": [
+          {
+            "code": "MM5112",
+            "name": "Organization and Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+          },
+          {
+            "code": "MM576",
+            "name": "Marketing Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+          },
+          {
+            "code": "MM5803",
+            "name": "Introduction to Customer Value",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+          },
+          {
+            "code": "MM587",
+            "name": "Consumer Behaviour",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Academic Integrity and Business Ethics",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete MM5T21 Academic Integrity and Business Ethics for 1 credit.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/",
+        "courses": [
+          {
+            "code": "MM5T21",
+            "name": "Academic Integrity and Business Ethics",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/",
+            "courseKind": "academic_integrity"
+          }
+        ]
+      },
+      {
+        "id": "elective-subjects",
+        "name": "Elective Subjects",
+        "type": "elective",
+        "creditsRequired": 18,
+        "coursesRequired": 6,
+        "ruleText": "For the non-Dissertation route, complete any six 3-credit Elective Subjects for 18 credits. For the Dissertation route, complete any two ordinary Electives for 6 credits plus MM501 Research Methods for 3 credits. MM5995 carries 0 credits and cannot satisfy the credit minimum.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/",
+        "courses": [
+          {
+            "code": "MM501",
+            "name": "Research Methods",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/",
+            "subjectGroups": [
+              "elective",
+              "research-methods"
+            ]
+          },
+          {
+            "code": "MM5203",
+            "name": "Decision Making for Leadership",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+          },
+          {
+            "code": "MM534",
+            "name": "Entrepreneurship",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+          },
+          {
+            "code": "MM539",
+            "name": "International Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+          },
+          {
+            "code": "MM5425",
+            "name": "Business Analytics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+          },
+          {
+            "code": "MM5433",
+            "name": "Decision Analytics by Machine Learning",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+          },
+          {
+            "code": "MM544",
+            "name": "E-Commerce",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+          },
+          {
+            "code": "MM5451",
+            "name": "Technology Innovation and Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+          },
+          {
+            "code": "MM5452",
+            "name": "Seminars in Emerging Technology",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+          },
+          {
+            "code": "MM5712",
+            "name": "Marketing Management in China",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+          },
+          {
+            "code": "MM573",
+            "name": "Marketing Strategy",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+          },
+          {
+            "code": "MM5751",
+            "name": "Content Marketing and Storytelling",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+          },
+          {
+            "code": "MM578",
+            "name": "Services Marketing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+          },
+          {
+            "code": "MM5791",
+            "name": "Global Marketing in Cross-Cultural Perspectives",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+          },
+          {
+            "code": "MM5811",
+            "name": "Marketing with Purpose: ESG and Sustainability",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+          },
+          {
+            "code": "MM582",
+            "name": "Business to Business Marketing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+          },
+          {
+            "code": "MM5831",
+            "name": "Social Media Marketing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+          },
+          {
+            "code": "MM584",
+            "name": "Sales Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+          },
+          {
+            "code": "MM5851",
+            "name": "Marketing Innovation and Industry Leadership",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+          },
+          {
+            "code": "MM5861",
+            "name": "Advanced Marketing Research",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+          },
+          {
+            "code": "MM5862",
+            "name": "Quantitative Methods for Marketing Intelligence",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+          },
+          {
+            "code": "MM588",
+            "name": "Brand Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+          },
+          {
+            "code": "MM589",
+            "name": "Promotion and Advertising",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+          },
+          {
+            "code": "MM5913",
+            "name": "Field Study for Business Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+          },
+          {
+            "code": "MM5971",
+            "name": "Practice of Marketing Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/"
+          },
+          {
+            "code": "MM5995",
+            "name": "MM MSc Career Workshop",
+            "credits": 0,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/",
+            "subjectGroups": [
+              "elective",
+              "career-workshop"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "dissertation-option",
+        "name": "Dissertation Option",
+        "type": "dissertation",
+        "creditsRequired": 9,
+        "coursesRequired": 1,
+        "ruleText": "The Dissertation route requires MM597 Marketing Management Dissertation for 9 credits together with MM501 Research Methods and two ordinary Electives.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/",
+        "courses": [
+          {
+            "code": "MM597",
+            "name": "Marketing Management Dissertation",
+            "credits": 9,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/mm/programme/",
+            "courseKind": "dissertation",
+            "conditionalRequirement": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "POLYU-TPG-066",
+    "courseGroups": [
+      {
+        "id": "compulsory-subjects",
+        "name": "Compulsory Subjects",
+        "type": "core",
+        "creditsRequired": 9,
+        "coursesRequired": 3,
+        "ruleText": "Complete all three 3-credit Compulsory Subjects for 9 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/",
+        "courses": [
+          {
+            "code": "MM5112",
+            "name": "Organization and Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+          },
+          {
+            "code": "MM5684",
+            "name": "Leading Global Sustainability",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+          },
+          {
+            "code": "MM5383",
+            "name": "International Business Policy",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Academic Integrity and Ethics in Business",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete MM5T21 Academic Integrity and Ethics in Business for 1 credit.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/",
+        "courses": [
+          {
+            "code": "MM5T21",
+            "name": "Academic Integrity and Business Ethics",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/",
+            "courseKind": "academic_integrity"
+          }
+        ]
+      },
+      {
+        "id": "core-subjects",
+        "name": "Core Subjects",
+        "type": "core",
+        "creditsRequired": 9,
+        "coursesRequired": 3,
+        "ruleText": "Complete any three of the six 3-credit Core Subjects for 9 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/",
+        "courses": [
+          {
+            "code": "MM5251",
+            "name": "Cross-Cultural Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+          },
+          {
+            "code": "MM539",
+            "name": "International Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+          },
+          {
+            "code": "MM5791",
+            "name": "Global Marketing in Cross-Cultural Perspectives",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+          },
+          {
+            "code": "MM5913",
+            "name": "Field Study for Business Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+          },
+          {
+            "code": "LGT5034",
+            "name": "Global Sourcing and Supply",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+          },
+          {
+            "code": "LGT5429",
+            "name": "Global Risk and Decision Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+          }
+        ]
+      },
+      {
+        "id": "elective-subjects",
+        "name": "Elective Subjects",
+        "type": "elective",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Complete four 3-credit Elective Subjects for 12 credits. MM5995 carries 0 credits and cannot satisfy the credit minimum.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/",
+        "courses": [
+          {
+            "code": "MM501",
+            "name": "Research Methods",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+          },
+          {
+            "code": "MM5191",
+            "name": "Negotiation and Conflict Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+          },
+          {
+            "code": "MM5203",
+            "name": "Decision Making for Leadership",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+          },
+          {
+            "code": "MM5221",
+            "name": "Human Resource Management in China",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+          },
+          {
+            "code": "MM5241",
+            "name": "Managing Volunteerism",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+          },
+          {
+            "code": "MM5281",
+            "name": "Mediation at Workplace",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+          },
+          {
+            "code": "MM531",
+            "name": "Strategic Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+          },
+          {
+            "code": "MM534",
+            "name": "Entrepreneurship",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+          },
+          {
+            "code": "MM5384",
+            "name": "Cross-sectoral Leadership for International Business",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+          },
+          {
+            "code": "MM5433",
+            "name": "Decision Analytics by Machine Learning",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+          },
+          {
+            "code": "MM5712",
+            "name": "Marketing Management in China",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+          },
+          {
+            "code": "MM5811",
+            "name": "Marketing with Purpose: ESG and Sustainability",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+          },
+          {
+            "code": "MM5935",
+            "name": "Independent Projects",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+          },
+          {
+            "code": "AF5618",
+            "name": "Global Economic Environment for Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/"
+          },
+          {
+            "code": "MM5995",
+            "name": "MM MSc Career Workshop",
+            "credits": 0,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/iml/programme/",
+            "subjectGroups": [
+              "elective",
+              "career-workshop"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "POLYU-TPG-067",
+    "courseGroups": [
+      {
+        "id": "compulsory-subjects",
+        "name": "Compulsory Subjects",
+        "type": "core",
+        "creditsRequired": 18,
+        "coursesRequired": 6,
+        "ruleText": "Complete all six 3-credit Compulsory Subjects for 18 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/",
+        "courses": [
+          {
+            "code": "COMP5434",
+            "name": "Big Data Computing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+          },
+          {
+            "code": "DSAI5101",
+            "name": "Statistical Data Mining",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+          },
+          {
+            "code": "DSAI5102",
+            "name": "Principles of Data Science",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+          },
+          {
+            "code": "DSAI5104",
+            "name": "Optimization for Machine Learning",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+          },
+          {
+            "code": "DSAI5204",
+            "name": "Efficient Data Processing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+          },
+          {
+            "code": "DSAI5207",
+            "name": "Modern Deep Learning",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+          }
+        ]
+      },
+      {
+        "id": "elective-subjects",
+        "name": "Elective Subjects",
+        "type": "elective",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "For the taught route, complete any four Elective Subjects for 12 credits. For the Dissertation route, complete any one Elective Subject for 3 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/",
+        "courses": [
+          {
+            "code": "AMA502",
+            "name": "Operations Research Methods",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+          },
+          {
+            "code": "AMA514A",
+            "name": "Applied Linear Models",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+          },
+          {
+            "code": "AMA515A",
+            "name": "Forecasting and Applied Time Series Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+          },
+          {
+            "code": "AMA524",
+            "name": "Scientific Computing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+          },
+          {
+            "code": "AMA528",
+            "name": "Probability and Stochastic Models",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+          },
+          {
+            "code": "AMA532",
+            "name": "Investment Science",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+          },
+          {
+            "code": "AMA568",
+            "name": "Advanced Topics in Quantitative Finance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+          },
+          {
+            "code": "COMP5152",
+            "name": "Advanced Data Analytics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+          },
+          {
+            "code": "COMP5423",
+            "name": "Natural Language Processing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+          },
+          {
+            "code": "DSAI5103",
+            "name": "Advanced High Dimensional Data Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+          },
+          {
+            "code": "DSAI5105",
+            "name": "Hands-on AI for Science and Technology",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+          },
+          {
+            "code": "DSAI5201",
+            "name": "Artificial Intelligence and Big Data Computing in Practice",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+          },
+          {
+            "code": "DSAI5203",
+            "name": "Brain-inspired Computing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+          },
+          {
+            "code": "DSAI5205",
+            "name": "Introduction to Artificial Intelligence",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+          },
+          {
+            "code": "DSAI5206",
+            "name": "Machine Vision and Intelligence",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+          },
+          {
+            "code": "DSAI5208",
+            "name": "Trustworthy AI Systems and Technologies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+          },
+          {
+            "code": "DSAI5209",
+            "name": "Visual Data Representation and Processing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+          },
+          {
+            "code": "DSAI5210",
+            "name": "AI Security",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/"
+          }
+        ]
+      },
+      {
+        "id": "dissertation-option",
+        "name": "Dissertation Option",
+        "type": "dissertation",
+        "creditsRequired": 9,
+        "coursesRequired": 1,
+        "ruleText": "The Dissertation route requires DSAI5901 Dissertation for 9 credits and one Elective. Eligibility normally requires the six Compulsory Subjects and AIE with a GPA of 3.0 or above at the end of Semester Two.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/",
+        "courses": [
+          {
+            "code": "DSAI5901",
+            "name": "Dissertation",
+            "credits": 9,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/",
+            "courseKind": "dissertation",
+            "conditionalRequirement": true
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Academic Integrity and Ethics",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete DSAI5T09 for 1 credit in either route.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/",
+        "courses": [
+          {
+            "code": "DSAI5T09",
+            "name": "Academic Integrity and Ethics in Computer and Mathematical Sciences",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/curriculum/",
+            "courseKind": "academic_integrity"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "POLYU-TPG-068",
+    "courseGroups": [
+      {
+        "id": "compulsory-subjects",
+        "name": "Compulsory Subjects",
+        "type": "core",
+        "creditsRequired": 15,
+        "coursesRequired": 5,
+        "ruleText": "Complete all five 3-credit Compulsory Subjects for 15 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/",
+        "courses": [
+          {
+            "code": "COMP5434",
+            "name": "Big Data Computing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+          },
+          {
+            "code": "DSAI5201",
+            "name": "Artificial Intelligence and Big Data Computing in Practice",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+          },
+          {
+            "code": "DSAI5204",
+            "name": "Efficient Data Processing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+          },
+          {
+            "code": "DSAI5205",
+            "name": "Introduction to Artificial Intelligence",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+          },
+          {
+            "code": "DSAI5207",
+            "name": "Modern Deep Learning",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+          }
+        ]
+      },
+      {
+        "id": "elective-subjects",
+        "name": "Elective Subjects",
+        "type": "elective",
+        "creditsRequired": 15,
+        "coursesRequired": 5,
+        "ruleText": "For the taught route, complete any five Elective Subjects for 15 credits. For the Dissertation route, complete any two Elective Subjects for 6 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/",
+        "courses": [
+          {
+            "code": "AMA524",
+            "name": "Scientific Computing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+          },
+          {
+            "code": "COMP5111",
+            "name": "Database Systems and Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+          },
+          {
+            "code": "COMP5221",
+            "name": "Software Project Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+          },
+          {
+            "code": "COMP5355",
+            "name": "Cyber and Internet Security",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+          },
+          {
+            "code": "COMP5423",
+            "name": "Natural Language Processing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+          },
+          {
+            "code": "DSAI5101",
+            "name": "Statistical Data Mining",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+          },
+          {
+            "code": "DSAI5102",
+            "name": "Principles of Data Science",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+          },
+          {
+            "code": "DSAI5103",
+            "name": "Advanced High Dimensional Data Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+          },
+          {
+            "code": "DSAI5104",
+            "name": "Optimization for Machine Learning",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+          },
+          {
+            "code": "DSAI5105",
+            "name": "Hands-on AI for Science and Technology",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+          },
+          {
+            "code": "DSAI5203",
+            "name": "Brain-inspired Computing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+          },
+          {
+            "code": "DSAI5206",
+            "name": "Machine Vision and Intelligence",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+          },
+          {
+            "code": "DSAI5208",
+            "name": "Trustworthy AI Systems and Technologies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+          },
+          {
+            "code": "DSAI5209",
+            "name": "Visual Data Representation and Processing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+          },
+          {
+            "code": "DSAI5210",
+            "name": "AI Security",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/"
+          }
+        ]
+      },
+      {
+        "id": "dissertation-option",
+        "name": "Dissertation Option",
+        "type": "dissertation",
+        "creditsRequired": 9,
+        "coursesRequired": 1,
+        "ruleText": "The Dissertation route requires DSAI5902 Dissertation for 9 credits and two Electives. Eligibility normally requires 12 credits and AIE with a GPA of 3.0 or above at the end of Semester One.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/",
+        "courses": [
+          {
+            "code": "DSAI5902",
+            "name": "Dissertation for Artificial Intelligence & Big Data Computing",
+            "credits": 9,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/",
+            "courseKind": "dissertation",
+            "conditionalRequirement": true
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Academic Integrity and Ethics",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete DSAI5T09 for 1 credit in either route.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/",
+        "courses": [
+          {
+            "code": "DSAI5T09",
+            "name": "Academic Integrity and Ethics in Computer and Mathematical Sciences",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/curriculum/",
+            "courseKind": "academic_integrity"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "POLYU-TPG-069",
+    "courseGroups": [
+      {
+        "id": "core-subjects",
+        "name": "Core Subjects",
+        "type": "core",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "For the Dissertation route, complete seven taught subjects including at least four Core Subjects for 12 Core credits. For the coursework route, complete ten taught subjects including at least six Core Subjects for 18 Core credits. Aerospace Engineering additionally requires ME576, ME577 and ME578 and at least one further Aerospace Core in the Dissertation route, or at least three further Aerospace Cores in the coursework route. Other Specialisms require four or six relevant Core Subjects respectively.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43100-me-met",
+        "courses": [
+          {
+            "code": "ME534",
+            "name": "Engineering Acoustics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+            "countsTowardTrackIds": [
+              "POLYU-TPG-069-AIR-NOISE-POLLUTION-MANAGEMENT"
+            ]
+          },
+          {
+            "code": "ME536",
+            "name": "Vibrations and Structure-borne Noise",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+            "countsTowardTrackIds": [
+              "POLYU-TPG-069-AIR-NOISE-POLLUTION-MANAGEMENT"
+            ]
+          },
+          {
+            "code": "ME548",
+            "name": "Computer Aided Product Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+            "countsTowardTrackIds": [
+              "POLYU-TPG-069-AEROSPACE-ENGINEERING",
+              "POLYU-TPG-069-PRODUCT-DEVELOPMENT-AND-ANALYSIS"
+            ]
+          },
+          {
+            "code": "ME552",
+            "name": "Integrated Engineering Design",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+            "countsTowardTrackIds": [
+              "POLYU-TPG-069-PRODUCT-DEVELOPMENT-AND-ANALYSIS"
+            ]
+          },
+          {
+            "code": "ME556",
+            "name": "Advanced Combustion Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+            "countsTowardTrackIds": [
+              "POLYU-TPG-069-AEROSPACE-ENGINEERING",
+              "POLYU-TPG-069-AIR-NOISE-POLLUTION-MANAGEMENT"
+            ]
+          },
+          {
+            "code": "ME558",
+            "name": "Advanced Materials and Structural Design",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+            "countsTowardTrackIds": [
+              "POLYU-TPG-069-AEROSPACE-ENGINEERING",
+              "POLYU-TPG-069-PRODUCT-DEVELOPMENT-AND-ANALYSIS"
+            ]
+          },
+          {
+            "code": "ME559",
+            "name": "Advanced Environmental and Transportation Noise Control",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+            "countsTowardTrackIds": [
+              "POLYU-TPG-069-AIR-NOISE-POLLUTION-MANAGEMENT"
+            ]
+          },
+          {
+            "code": "ME5610",
+            "name": "Air Pollution Engineering",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+            "countsTowardTrackIds": [
+              "POLYU-TPG-069-AIR-NOISE-POLLUTION-MANAGEMENT",
+              "POLYU-TPG-069-PRODUCT-DEVELOPMENT-AND-ANALYSIS"
+            ]
+          },
+          {
+            "code": "ME567",
+            "name": "Advanced Control Technology",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+            "countsTowardTrackIds": [
+              "POLYU-TPG-069-AEROSPACE-ENGINEERING"
+            ]
+          },
+          {
+            "code": "ME570",
+            "name": "Advanced Product Mechatronics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+            "countsTowardTrackIds": [
+              "POLYU-TPG-069-PRODUCT-DEVELOPMENT-AND-ANALYSIS"
+            ]
+          },
+          {
+            "code": "ME571",
+            "name": "Corrosion Control",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+            "countsTowardTrackIds": [
+              "POLYU-TPG-069-PRODUCT-DEVELOPMENT-AND-ANALYSIS"
+            ]
+          },
+          {
+            "code": "ME572",
+            "name": "Design for Sustainable Development",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+            "countsTowardTrackIds": [
+              "POLYU-TPG-069-PRODUCT-DEVELOPMENT-AND-ANALYSIS"
+            ]
+          },
+          {
+            "code": "ME573",
+            "name": "Project on Product Design and Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+            "countsTowardTrackIds": [
+              "POLYU-TPG-069-PRODUCT-DEVELOPMENT-AND-ANALYSIS"
+            ]
+          },
+          {
+            "code": "ME574",
+            "name": "Product Noise Control",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+            "countsTowardTrackIds": [
+              "POLYU-TPG-069-AIR-NOISE-POLLUTION-MANAGEMENT",
+              "POLYU-TPG-069-PRODUCT-DEVELOPMENT-AND-ANALYSIS"
+            ]
+          },
+          {
+            "code": "ME576",
+            "name": "Turbulent Flows and Aerodynamics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+            "countsTowardTrackIds": [
+              "POLYU-TPG-069-AEROSPACE-ENGINEERING"
+            ],
+            "subjectGroups": [
+              "core",
+              "aerospace-compulsory"
+            ]
+          },
+          {
+            "code": "ME577",
+            "name": "Advanced Aircraft Structures",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+            "countsTowardTrackIds": [
+              "POLYU-TPG-069-AEROSPACE-ENGINEERING"
+            ],
+            "subjectGroups": [
+              "core",
+              "aerospace-compulsory"
+            ]
+          },
+          {
+            "code": "ME578",
+            "name": "Aircraft Design",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+            "countsTowardTrackIds": [
+              "POLYU-TPG-069-AEROSPACE-ENGINEERING"
+            ],
+            "subjectGroups": [
+              "core",
+              "aerospace-compulsory"
+            ]
+          },
+          {
+            "code": "ME579",
+            "name": "Aircraft Noise and Aeroacoustics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+            "countsTowardTrackIds": [
+              "POLYU-TPG-069-AEROSPACE-ENGINEERING"
+            ]
+          },
+          {
+            "code": "ME5203",
+            "name": "Green Combustion",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+            "countsTowardTrackIds": [
+              "POLYU-TPG-069-AEROSPACE-ENGINEERING",
+              "POLYU-TPG-069-AIR-NOISE-POLLUTION-MANAGEMENT"
+            ]
+          },
+          {
+            "code": "ME5510",
+            "name": "Thermal Engineering",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+            "countsTowardTrackIds": [
+              "POLYU-TPG-069-AEROSPACE-ENGINEERING",
+              "POLYU-TPG-069-AIR-NOISE-POLLUTION-MANAGEMENT",
+              "POLYU-TPG-069-PRODUCT-DEVELOPMENT-AND-ANALYSIS"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "dissertation-option",
+        "name": "Dissertation Option",
+        "type": "dissertation",
+        "creditsRequired": 9,
+        "coursesRequired": 1,
+        "ruleText": "The Dissertation route requires ME591 Dissertation for 9 credits after seven taught subjects. For a Specialism award, the Dissertation topic must be pertinent to that Specialism.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/me/-/media/department/me/content/study/programme-documents/43100-master-of-science-in-mechanical-engineering/43100_prd_2025-26.pdf",
+        "courses": [
+          {
+            "code": "ME591",
+            "name": "Dissertation",
+            "credits": 9,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/me/-/media/department/me/content/study/programme-documents/43100-master-of-science-in-mechanical-engineering/43100_prd_2025-26.pdf",
+            "courseKind": "dissertation",
+            "conditionalRequirement": true
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Engineering Ethics and Academic Integrity",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete EEE5T03 Engineering Ethics and Academic Integrity for 1 credit in either route.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43100-me-met",
+        "courses": [
+          {
+            "code": "EEE5T03",
+            "name": "Engineering Ethics and Academic Integrity",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43100-me-met",
+            "courseKind": "academic_integrity"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "POLYU-TPG-072",
     "courseGroups": [
       {
@@ -3517,6 +9282,229 @@ module.exports = [
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "POLYU-TPG-076",
+    "courseGroups": [
+      {
+        "id": "compulsory-subjects",
+        "name": "Compulsory Subjects",
+        "type": "core",
+        "creditsRequired": 21,
+        "coursesRequired": 7,
+        "ruleText": "Complete all seven Compulsory Subjects for 21 credits during the first year of study.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/",
+        "courses": [
+          {
+            "code": "AMA542",
+            "name": "Advanced Operations Research Methods",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+          },
+          {
+            "code": "AMA540",
+            "name": "Business Forecasting",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+          },
+          {
+            "code": "AMA539",
+            "name": "Financial Modeling",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+          },
+          {
+            "code": "AMA502",
+            "name": "Operations Research Methods",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+          },
+          {
+            "code": "AMA538",
+            "name": "Principles of Risk Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+          },
+          {
+            "code": "AMA528",
+            "name": "Probability and Stochastic Models",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+          },
+          {
+            "code": "AMA541",
+            "name": "Simulation and Risk Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+          }
+        ]
+      },
+      {
+        "id": "elective-subjects",
+        "name": "Elective Subjects",
+        "type": "elective",
+        "creditsRequired": 9,
+        "coursesRequired": 3,
+        "ruleText": "Complete three 3-credit Elective Subjects from the official 2027 pool. This taught path is mutually exclusive with AMA592 Dissertation.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63024-ofm-opm",
+        "courses": [
+          {
+            "code": "AMA580",
+            "name": "Advanced Topics in InsurTech",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/msc-actuarial-and-investment-science/curriculum/"
+          },
+          {
+            "code": "AMA568",
+            "name": "Advanced Topics in Quantitative Finance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+          },
+          {
+            "code": "AF5322",
+            "name": "Corporate Risk Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+          },
+          {
+            "code": "AF5341",
+            "name": "Economics for Financial Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+          },
+          {
+            "code": "AMA532",
+            "name": "Investment Science",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+          },
+          {
+            "code": "AMA535",
+            "name": "Mathematics of Derivative Pricing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+          },
+          {
+            "code": "AMA530",
+            "name": "Mathematics of Finance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+          },
+          {
+            "code": "AMA505",
+            "name": "Optimisation Methods",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+          },
+          {
+            "code": "AF5312",
+            "name": "Principles of Corporate Finance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+          },
+          {
+            "code": "AMA567",
+            "name": "Quantum Computing for Data Science",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+          },
+          {
+            "code": "AMA524",
+            "name": "Scientific Computing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+          },
+          {
+            "code": "DSAI5101",
+            "name": "Statistical Data Mining",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+          },
+          {
+            "code": "AMA529",
+            "name": "Statistical Inference",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+          },
+          {
+            "code": "AMA569",
+            "name": "Stochastic Models for Carbon Pricing and Trading",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+          },
+          {
+            "code": "LGT5015",
+            "name": "Supply Chain Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
+          }
+        ]
+      },
+      {
+        "id": "dissertation-option",
+        "name": "Dissertation Option",
+        "type": "dissertation",
+        "creditsRequired": 9,
+        "coursesRequired": 1,
+        "ruleText": "Complete AMA592 Dissertation for 9 credits instead of the three Elective Subjects.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/",
+        "courses": [
+          {
+            "code": "AMA592",
+            "name": "Dissertation",
+            "credits": 9,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/",
+            "courseKind": "dissertation",
+            "conditionalRequirement": true
+          }
+        ]
+      },
+      {
+        "id": "academic-integrity",
+        "name": "Academic Integrity and Ethics",
+        "type": "academic_integrity",
+        "creditsRequired": 1,
+        "coursesRequired": 1,
+        "ruleText": "Complete DSAI5T09 for 1 credit in either award path.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/",
+        "courses": [
+          {
+            "code": "DSAI5T09",
+            "name": "Academic Integrity and Ethics in Computer and Mathematical Sciences",
+            "credits": 1,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.polyu.edu.hk/ama/study/pg/master-operational-and-risk-analysis/curriculum/"
           }
         ]
       }

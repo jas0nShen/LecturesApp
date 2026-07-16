@@ -1,0 +1,317 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "POLYU",
+  "academicYear": "2027-28",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "POLYU-TPG-069",
+      "faculty": "Department of Mechanical Engineering (ME)",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "trackSelectionOptional": true,
+      "tracks": [
+        {
+          "id": "POLYU-TPG-069-AEROSPACE-ENGINEERING",
+          "name": "Aerospace Engineering",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43100-me-met"
+        },
+        {
+          "id": "POLYU-TPG-069-AIR-NOISE-POLLUTION-MANAGEMENT",
+          "name": "Air/Noise Pollution Management",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43100-me-met"
+        },
+        {
+          "id": "POLYU-TPG-069-PRODUCT-DEVELOPMENT-AND-ANALYSIS",
+          "name": "Product Development and Analysis",
+          "type": "Specialism",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43100-me-met"
+        }
+      ],
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43100-me-met",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 2027 Programme page publishes the current 31-credit generic award and three Specialisms, the coursework and Dissertation routes, EEE5T03 AIE, and the complete tentative Core title matrix. The current Department of Mechanical Engineering Subject List maps all twenty titles to exact codes, while the official 2025/26 Programme Requirement Document confirms those code-title pairs, their 3-credit values, Specialism ownership and the 9-credit ME591 Dissertation. The 2027 page removes the former Green Energy Specialism, which is now a separate Sustainable Energy Programme, so that older Specialism is not retained. The generic award may use approved electives from a dynamic cross-faculty pool that the official page does not enumerate. Route choice, Specialism minima, the three compulsory Aerospace subjects and Dissertation pertinence require manual audit review.",
+      "courseGroups": [
+        {
+          "id": "core-subjects",
+          "name": "Core Subjects",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "For the Dissertation route, complete seven taught subjects including at least four Core Subjects for 12 Core credits. For the coursework route, complete ten taught subjects including at least six Core Subjects for 18 Core credits. Aerospace Engineering additionally requires ME576, ME577 and ME578 and at least one further Aerospace Core in the Dissertation route, or at least three further Aerospace Cores in the coursework route. Other Specialisms require four or six relevant Core Subjects respectively.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43100-me-met",
+          "courses": [
+            {
+              "code": "ME534",
+              "name": "Engineering Acoustics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+              "countsTowardTrackIds": [
+                "POLYU-TPG-069-AIR-NOISE-POLLUTION-MANAGEMENT"
+              ]
+            },
+            {
+              "code": "ME536",
+              "name": "Vibrations and Structure-borne Noise",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+              "countsTowardTrackIds": [
+                "POLYU-TPG-069-AIR-NOISE-POLLUTION-MANAGEMENT"
+              ]
+            },
+            {
+              "code": "ME548",
+              "name": "Computer Aided Product Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+              "countsTowardTrackIds": [
+                "POLYU-TPG-069-AEROSPACE-ENGINEERING",
+                "POLYU-TPG-069-PRODUCT-DEVELOPMENT-AND-ANALYSIS"
+              ]
+            },
+            {
+              "code": "ME552",
+              "name": "Integrated Engineering Design",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+              "countsTowardTrackIds": [
+                "POLYU-TPG-069-PRODUCT-DEVELOPMENT-AND-ANALYSIS"
+              ]
+            },
+            {
+              "code": "ME556",
+              "name": "Advanced Combustion Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+              "countsTowardTrackIds": [
+                "POLYU-TPG-069-AEROSPACE-ENGINEERING",
+                "POLYU-TPG-069-AIR-NOISE-POLLUTION-MANAGEMENT"
+              ]
+            },
+            {
+              "code": "ME558",
+              "name": "Advanced Materials and Structural Design",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+              "countsTowardTrackIds": [
+                "POLYU-TPG-069-AEROSPACE-ENGINEERING",
+                "POLYU-TPG-069-PRODUCT-DEVELOPMENT-AND-ANALYSIS"
+              ]
+            },
+            {
+              "code": "ME559",
+              "name": "Advanced Environmental and Transportation Noise Control",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+              "countsTowardTrackIds": [
+                "POLYU-TPG-069-AIR-NOISE-POLLUTION-MANAGEMENT"
+              ]
+            },
+            {
+              "code": "ME5610",
+              "name": "Air Pollution Engineering",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+              "countsTowardTrackIds": [
+                "POLYU-TPG-069-AIR-NOISE-POLLUTION-MANAGEMENT",
+                "POLYU-TPG-069-PRODUCT-DEVELOPMENT-AND-ANALYSIS"
+              ]
+            },
+            {
+              "code": "ME567",
+              "name": "Advanced Control Technology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+              "countsTowardTrackIds": [
+                "POLYU-TPG-069-AEROSPACE-ENGINEERING"
+              ]
+            },
+            {
+              "code": "ME570",
+              "name": "Advanced Product Mechatronics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+              "countsTowardTrackIds": [
+                "POLYU-TPG-069-PRODUCT-DEVELOPMENT-AND-ANALYSIS"
+              ]
+            },
+            {
+              "code": "ME571",
+              "name": "Corrosion Control",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+              "countsTowardTrackIds": [
+                "POLYU-TPG-069-PRODUCT-DEVELOPMENT-AND-ANALYSIS"
+              ]
+            },
+            {
+              "code": "ME572",
+              "name": "Design for Sustainable Development",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+              "countsTowardTrackIds": [
+                "POLYU-TPG-069-PRODUCT-DEVELOPMENT-AND-ANALYSIS"
+              ]
+            },
+            {
+              "code": "ME573",
+              "name": "Project on Product Design and Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+              "countsTowardTrackIds": [
+                "POLYU-TPG-069-PRODUCT-DEVELOPMENT-AND-ANALYSIS"
+              ]
+            },
+            {
+              "code": "ME574",
+              "name": "Product Noise Control",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+              "countsTowardTrackIds": [
+                "POLYU-TPG-069-AIR-NOISE-POLLUTION-MANAGEMENT",
+                "POLYU-TPG-069-PRODUCT-DEVELOPMENT-AND-ANALYSIS"
+              ]
+            },
+            {
+              "code": "ME576",
+              "name": "Turbulent Flows and Aerodynamics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+              "countsTowardTrackIds": [
+                "POLYU-TPG-069-AEROSPACE-ENGINEERING"
+              ],
+              "subjectGroups": [
+                "core",
+                "aerospace-compulsory"
+              ]
+            },
+            {
+              "code": "ME577",
+              "name": "Advanced Aircraft Structures",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+              "countsTowardTrackIds": [
+                "POLYU-TPG-069-AEROSPACE-ENGINEERING"
+              ],
+              "subjectGroups": [
+                "core",
+                "aerospace-compulsory"
+              ]
+            },
+            {
+              "code": "ME578",
+              "name": "Aircraft Design",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+              "countsTowardTrackIds": [
+                "POLYU-TPG-069-AEROSPACE-ENGINEERING"
+              ],
+              "subjectGroups": [
+                "core",
+                "aerospace-compulsory"
+              ]
+            },
+            {
+              "code": "ME579",
+              "name": "Aircraft Noise and Aeroacoustics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+              "countsTowardTrackIds": [
+                "POLYU-TPG-069-AEROSPACE-ENGINEERING"
+              ]
+            },
+            {
+              "code": "ME5203",
+              "name": "Green Combustion",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+              "countsTowardTrackIds": [
+                "POLYU-TPG-069-AEROSPACE-ENGINEERING",
+                "POLYU-TPG-069-AIR-NOISE-POLLUTION-MANAGEMENT"
+              ]
+            },
+            {
+              "code": "ME5510",
+              "name": "Thermal Engineering",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/me/study/course-info/subject-list/",
+              "countsTowardTrackIds": [
+                "POLYU-TPG-069-AEROSPACE-ENGINEERING",
+                "POLYU-TPG-069-AIR-NOISE-POLLUTION-MANAGEMENT",
+                "POLYU-TPG-069-PRODUCT-DEVELOPMENT-AND-ANALYSIS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dissertation-option",
+          "name": "Dissertation Option",
+          "type": "dissertation",
+          "creditsRequired": 9,
+          "coursesRequired": 1,
+          "ruleText": "The Dissertation route requires ME591 Dissertation for 9 credits after seven taught subjects. For a Specialism award, the Dissertation topic must be pertinent to that Specialism.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/me/-/media/department/me/content/study/programme-documents/43100-master-of-science-in-mechanical-engineering/43100_prd_2025-26.pdf",
+          "courses": [
+            {
+              "code": "ME591",
+              "name": "Dissertation",
+              "credits": 9,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/me/-/media/department/me/content/study/programme-documents/43100-master-of-science-in-mechanical-engineering/43100_prd_2025-26.pdf",
+              "courseKind": "dissertation",
+              "conditionalRequirement": true
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Engineering Ethics and Academic Integrity",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete EEE5T03 Engineering Ethics and Academic Integrity for 1 credit in either route.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43100-me-met",
+          "courses": [
+            {
+              "code": "EEE5T03",
+              "name": "Engineering Ethics and Academic Integrity",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43100-me-met",
+              "courseKind": "academic_integrity"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

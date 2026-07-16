@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-009",
+      "status": "verified",
+      "creditsRequired": 27,
+      "creditUnit": "units",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/master-of-public-administration-1",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The latest publicly accessible HKBU Academic Registry handbook page publishes the complete 2025-26 curriculum: five Required Courses (15 units) and four Elective Courses (12 units) from a 24-course pool. POLS7070 Independent Project carries 6 units while the page still states that students select four Elective Courses; selecting it can therefore exceed the 12-unit Elective minimum. The Project's interaction with the four-course rule and annual course availability require manual audit review; the protected 2026-27 handbook must be rechecked when it becomes publicly accessible.",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five 3-unit Required Courses (15 units).",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/master-of-public-administration-1",
+          "courses": [
+            { "code": "POLS7040", "name": "Law and Public Affairs", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/POLS7040" },
+            { "code": "POLS7050", "name": "Public Administration", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/POLS7050" },
+            { "code": "POLS7060", "name": "Research Methods for Public Administration Practitioners", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/POLS7060" },
+            { "code": "POLS7140", "name": "Public Policy and Governance", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/POLS7140" },
+            { "code": "POLS7150", "name": "Ethics and Public Affairs", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/POLS7150" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective_with_variable_credit_project",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete four Elective Courses with a 12-unit minimum. POLS7070 Independent Project carries 6 units while every other listed Elective carries 3 units, so a four-course selection containing the Project exceeds the minimum and requires manual audit review.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/master-of-public-administration-1",
+          "courses": [
+            { "code": "COMM7510", "name": "Public Administration and the Media", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7510" },
+            { "code": "COMP7025", "name": "Artificial Intelligence for Digital Transformation", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMP7025" },
+            { "code": "COMP7990", "name": "Principles and Practices of Data Analytics", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMP7990" },
+            { "code": "FIN7070", "name": "Finance and Accounting for the Public Sector", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/FIN7070" },
+            { "code": "GEOG7580", "name": "Urban Cultural Landscape", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/GEOG7580" },
+            { "code": "HIST7320", "name": "Contemporary China and Globalization", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HIST7320" },
+            { "code": "ORBS7300", "name": "Data Analytics and Programming", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ORBS7300" },
+            { "code": "PE7010", "name": "Programme and Event Planning and Management", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/PE7010" },
+            { "code": "POLS7020", "name": "E-Government", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/POLS7020" },
+            { "code": "POLS7070", "name": "Independent Project", "credits": 6, "courseKind": "project", "conditionalRequirement": true, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/POLS7070" },
+            { "code": "POLS7080", "name": "Fieldwork Learning in China and Overseas Public Administration", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/POLS7080" },
+            { "code": "POLS7090", "name": "International Political Economy", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/POLS7090" },
+            { "code": "POLS7120", "name": "Theories of International Relations", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/POLS7120" },
+            { "code": "POLS7160", "name": "Theories of Public Administration", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/POLS7160" },
+            { "code": "POLS7170", "name": "Professional Placement", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/POLS7170" },
+            { "code": "POLS7540", "name": "China-EU, Prospects, Opportunities and Challenges", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/POLS7540" },
+            { "code": "SLM7080", "name": "Health Promotion", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SLM7080" },
+            { "code": "SOSC7310", "name": "Concepts, Theories and Institutions of Global Studies", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOSC7310" },
+            { "code": "SOSC7320", "name": "Debating Global Society", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOSC7320" },
+            { "code": "SOSC7330", "name": "Globalizations", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOSC7330" },
+            { "code": "SOSC7340", "name": "Global Civil Society", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOSC7340" },
+            { "code": "SOSC7380", "name": "Medicine, Society and Culture: Public Health Perspectives", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOSC7380" },
+            { "code": "SOSC7430", "name": "Advanced Qualitative Methods", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOSC7430" },
+            { "code": "SOSC7440", "name": "Advanced Quantitative Methods", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOSC7440" }
+          ]
+        }
+      ]
+    }
+  ]
+}

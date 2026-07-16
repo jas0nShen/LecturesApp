@@ -1,0 +1,562 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "POLYU",
+  "academicYear": "2027-28",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "POLYU-TPG-048",
+      "faculty": "Department of Food Science and Nutrition (FSN)",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15057-mft",
+      "ruleReviewStatus": "verified",
+      "statusNote": "The official 2027 Programme page and current Department of Food Science and Nutrition curriculum publish the same eight required subjects and the 31-credit total. The current official FSN subject list and Subject Description Forms publish the exact codes and credits: two 6-credit subjects, four 3-credit taught subjects, the 6-credit FSN5017 Capstone Project and the 1-credit FSN5T01 Academic Integrity and Ethics in Science subject.",
+      "courseGroups": [
+        {
+          "id": "required-taught-subjects",
+          "name": "Required Taught Subjects",
+          "type": "core",
+          "creditsRequired": 24,
+          "coursesRequired": 6,
+          "ruleText": "Complete all six required taught subjects for 24 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-global-food-safety-management-and-risk-analysis/",
+          "courses": [
+            {
+              "code": "FSN5011",
+              "name": "Food Safety Risk Analysis",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5011.pdf"
+            },
+            {
+              "code": "FSN5012",
+              "name": "Global Food Safety Management",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5012.pdf"
+            },
+            {
+              "code": "FSN5013",
+              "name": "Food Safety in Action",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5013.pdf"
+            },
+            {
+              "code": "FSN5014",
+              "name": "International Food Standards, Laws and Regulations",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5014.pdf"
+            },
+            {
+              "code": "FSN5015",
+              "name": "Foodborne Chemical and Microbial Hazards: Case Studies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5015.pdf"
+            },
+            {
+              "code": "FSN5016",
+              "name": "Global Food Security",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5016.pdf"
+            }
+          ]
+        },
+        {
+          "id": "capstone-project",
+          "name": "Capstone Project",
+          "type": "project",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Complete FSN5017 Capstone Project for 6 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-global-food-safety-management-and-risk-analysis/",
+          "courses": [
+            {
+              "code": "FSN5017",
+              "name": "Capstone Project",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5017.pdf",
+              "courseKind": "project"
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Academic Integrity and Ethics in Science",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete FSN5T01 Academic Integrity and Ethics in Science for 1 credit.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-global-food-safety-management-and-risk-analysis/",
+          "courses": [
+            {
+              "code": "FSN5T01",
+              "name": "Academic Integrity and Ethics in Science",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5T01.pdf",
+              "courseKind": "academic_integrity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-049",
+      "faculty": "Department of Food Science and Nutrition (FSN)",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15058-mft",
+      "ruleReviewStatus": "verified",
+      "statusNote": "The official 2027 Programme page and current Department of Food Science and Nutrition curriculum publish the same eleven required subjects and the 31-credit total. The current departmental curriculum publishes exact codes and credits, including APSS533 and RS517. FSN5026 and FSN5028 are each scheduled as two 1.5-credit portions but remain one official 3-credit subject; they are not duplicated in the course list.",
+      "courseGroups": [
+        {
+          "id": "required-taught-and-practicum-subjects",
+          "name": "Required Taught and Practicum Subjects",
+          "type": "core",
+          "creditsRequired": 27,
+          "coursesRequired": 9,
+          "ruleText": "Complete all nine required taught and Practicum subjects for 27 credits. FSN5026 Practicum I spans two 1.5-credit teaching periods and is represented once as a 3-credit subject.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-nutrition-and-healthy-ageing/",
+          "courses": [
+            {
+              "code": "FSN5021",
+              "name": "Food Preparation and Menu Planning",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5021.pdf"
+            },
+            {
+              "code": "FSN5022",
+              "name": "Nutritional Assessment",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5022.pdf"
+            },
+            {
+              "code": "FSN5023",
+              "name": "Public Health Nutrition",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5023.pdf"
+            },
+            {
+              "code": "FSN5024",
+              "name": "Nutrition and Health for Older Adults",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5024.pdf"
+            },
+            {
+              "code": "FSN5025",
+              "name": "Nutrition Education and Counselling",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5025.pdf"
+            },
+            {
+              "code": "FSN5026",
+              "name": "Practicum I",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5026.pdf",
+              "courseKind": "internship"
+            },
+            {
+              "code": "FSN5029",
+              "name": "Advanced Human Physiology and Anatomy",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5029.pdf"
+            },
+            {
+              "code": "APSS533",
+              "name": "Mental Health and the Aged",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-nutrition-and-healthy-ageing/"
+            },
+            {
+              "code": "RS517",
+              "name": "Research Methods & Data Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-nutrition-and-healthy-ageing/"
+            }
+          ]
+        },
+        {
+          "id": "capstone-project",
+          "name": "Capstone Project",
+          "type": "project",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Complete FSN5028 Capstone Project for 3 credits across its two 1.5-credit teaching periods.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-nutrition-and-healthy-ageing/",
+          "courses": [
+            {
+              "code": "FSN5028",
+              "name": "Capstone Project",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5028.pdf",
+              "courseKind": "project"
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Academic Integrity and Ethics in Science",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete FSN5T01 Academic Integrity and Ethics in Science for 1 credit.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-nutrition-and-healthy-ageing/",
+          "courses": [
+            {
+              "code": "FSN5T01",
+              "name": "Academic Integrity and Ethics in Science",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5T01.pdf",
+              "courseKind": "academic_integrity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-050",
+      "faculty": "Department of Food Science and Nutrition (FSN)",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15058-npf",
+      "ruleReviewStatus": "verified",
+      "statusNote": "The official 2027 Programme page and current Department of Food Science and Nutrition curriculum publish the same eleven required subjects and the 31-credit total. The current departmental curriculum publishes exact codes and credits, including RS517. FSN5026, FSN5027 and FSN5028 are each scheduled as two 1.5-credit portions but remain one official 3-credit subject; they are not duplicated in the course list.",
+      "courseGroups": [
+        {
+          "id": "required-taught-and-practicum-subjects",
+          "name": "Required Taught and Practicum Subjects",
+          "type": "core",
+          "creditsRequired": 27,
+          "coursesRequired": 9,
+          "ruleText": "Complete all nine required taught and Practicum subjects for 27 credits. FSN5026 and FSN5027 each span two 1.5-credit teaching periods and are represented once as 3-credit subjects.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-nutrition-and-healthy-ageing-nutrition-in-practice/",
+          "courses": [
+            {
+              "code": "FSN5021",
+              "name": "Food Preparation and Menu Planning",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5021.pdf"
+            },
+            {
+              "code": "FSN5022",
+              "name": "Nutritional Assessment",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5022.pdf"
+            },
+            {
+              "code": "FSN5023",
+              "name": "Public Health Nutrition",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5023.pdf"
+            },
+            {
+              "code": "FSN5024",
+              "name": "Nutrition and Health for Older Adults",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5024.pdf"
+            },
+            {
+              "code": "FSN5025",
+              "name": "Nutrition Education and Counselling",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5025.pdf"
+            },
+            {
+              "code": "FSN5026",
+              "name": "Practicum I",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5026.pdf",
+              "courseKind": "internship"
+            },
+            {
+              "code": "FSN5027",
+              "name": "Practicum II",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5027.pdf",
+              "courseKind": "internship"
+            },
+            {
+              "code": "FSN5029",
+              "name": "Advanced Human Physiology and Anatomy",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5029.pdf"
+            },
+            {
+              "code": "RS517",
+              "name": "Research Methods & Data Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-nutrition-and-healthy-ageing-nutrition-in-practice/"
+            }
+          ]
+        },
+        {
+          "id": "capstone-project",
+          "name": "Capstone Project",
+          "type": "project",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Complete FSN5028 Capstone Project for 3 credits across its two 1.5-credit teaching periods.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-nutrition-and-healthy-ageing-nutrition-in-practice/",
+          "courses": [
+            {
+              "code": "FSN5028",
+              "name": "Capstone Project",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5028.pdf",
+              "courseKind": "project"
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Academic Integrity and Ethics in Science",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete FSN5T01 Academic Integrity and Ethics in Science for 1 credit.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-nutrition-and-healthy-ageing-nutrition-in-practice/",
+          "courses": [
+            {
+              "code": "FSN5T01",
+              "name": "Academic Integrity and Ethics in Science",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5T01.pdf",
+              "courseKind": "academic_integrity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-051",
+      "faculty": "Department of Food Science and Nutrition (FSN)",
+      "status": "verified",
+      "creditsRequired": 64,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15060",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 2027 Programme page publishes all eighteen required subjects and the 64-credit total. The current Department of Food Science and Nutrition curriculum, subject list and Subject Description Forms publish the exact code and credit mapping, including RS517, three Dietetic Placements, the 3-credit FSN5028 Capstone Project and FSN5T01. The current curriculum table lists 16 credits of Year 1 Semester 2 subjects but prints a 15-credit subtotal; its listed course credits plus the other term totals equal the official 64-credit Programme total. This one-credit displayed subtotal conflict requires manual review and is not used to reduce any course credit.",
+      "courseGroups": [
+        {
+          "id": "required-taught-subjects",
+          "name": "Required Taught Subjects",
+          "type": "core",
+          "creditsRequired": 42,
+          "coursesRequired": 13,
+          "ruleText": "Complete all thirteen required taught subjects for 42 credits. FSN5034 Clinical Dietetics and Medicine carries 6 credits across two teaching periods.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-dietetics/",
+          "courses": [
+            {
+              "code": "FSN5021",
+              "name": "Food Preparation and Menu Planning",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5021.pdf"
+            },
+            {
+              "code": "FSN5022",
+              "name": "Nutritional Assessment",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5022.pdf"
+            },
+            {
+              "code": "FSN5023",
+              "name": "Public Health Nutrition",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5023.pdf"
+            },
+            {
+              "code": "FSN5025",
+              "name": "Nutrition Education and Counselling",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5025.pdf"
+            },
+            {
+              "code": "FSN5029",
+              "name": "Advanced Human Physiology and Anatomy",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5029.pdf"
+            },
+            {
+              "code": "RS517",
+              "name": "Research Methods & Data Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-dietetics/"
+            },
+            {
+              "code": "FSN5030",
+              "name": "Applied Nutrition",
+              "credits": 4,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5030.pdf"
+            },
+            {
+              "code": "FSN5031",
+              "name": "Advanced Pharmacology and Nutrition",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5031.pdf"
+            },
+            {
+              "code": "FSN5032",
+              "name": "Chinese Medicine Based Diet Therapy",
+              "credits": 2,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5032.pdf"
+            },
+            {
+              "code": "FSN5033",
+              "name": "Clinical Biochemistry and Molecular Nutrition",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5033.pdf"
+            },
+            {
+              "code": "FSN5034",
+              "name": "Clinical Dietetics and Medicine",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5034.pdf"
+            },
+            {
+              "code": "FSN5036",
+              "name": "Dietetics in Practice",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5036.pdf"
+            },
+            {
+              "code": "FSN5037",
+              "name": "Professional Practice for Dietitians",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5037.pdf"
+            }
+          ]
+        },
+        {
+          "id": "dietetic-placements",
+          "name": "Dietetic Placements",
+          "type": "internship",
+          "creditsRequired": 18,
+          "coursesRequired": 3,
+          "ruleText": "Complete all three Dietetic Placements for 18 credits. Each placement is represented once even when its credits are delivered across more than one teaching period.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-dietetics/",
+          "courses": [
+            {
+              "code": "FSN5038",
+              "name": "Dietetics Placement I",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5038.pdf",
+              "courseKind": "internship"
+            },
+            {
+              "code": "FSN5039",
+              "name": "Dietetics Placement II",
+              "credits": 8,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5039.pdf",
+              "courseKind": "internship"
+            },
+            {
+              "code": "FSN5040",
+              "name": "Dietetics Placement III",
+              "credits": 7,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5040.pdf",
+              "courseKind": "internship"
+            }
+          ]
+        },
+        {
+          "id": "capstone-project",
+          "name": "Capstone Project",
+          "type": "project",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Complete FSN5028 Capstone Project for 3 credits across its two 1.5-credit teaching periods.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-dietetics/",
+          "courses": [
+            {
+              "code": "FSN5028",
+              "name": "Capstone Project",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5028.pdf",
+              "courseKind": "project"
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Academic Integrity and Ethics in Science",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete FSN5T01 Academic Integrity and Ethics in Science for 1 credit.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/fsn/study/taught-postgraduate-programmes-list/master-of-science-in-dietetics/",
+          "courses": [
+            {
+              "code": "FSN5T01",
+              "name": "Academic Integrity and Ethics in Science",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/fsn/docdrive/syllabus/FSN5T01.pdf",
+              "courseKind": "academic_integrity"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

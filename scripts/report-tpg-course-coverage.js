@@ -4,6 +4,7 @@ function inspectProgramme(programme, today = new Date()) {
   const issues = [];
   const groups = programme.courseGroups || [];
   const courses = groups.flatMap((group) => group.courses || []);
+  const verificationStatus = programme.courseVerificationStatus || 'unreviewed';
   const trackIds = new Set((programme.tracks || []).map((track) => track.id));
   const seenCodes = new Set();
   const inspectTrackReferences = (item, label) => {
@@ -26,10 +27,10 @@ function inspectProgramme(programme, today = new Date()) {
     });
   };
   if (programme.courseVerificationStatus === 'blocked') {
-    return { programmeId: programme.id, universityCode: programme.universityCode, courseCount: courses.length, issues: ['source-blocked'] };
+    return { programmeId: programme.id, universityCode: programme.universityCode, verificationStatus, courseCount: courses.length, issues: ['source-blocked'] };
   }
   if (programme.courseVerificationStatus === 'archived') {
-    return { programmeId: programme.id, universityCode: programme.universityCode, courseCount: courses.length, issues: ['archived'] };
+    return { programmeId: programme.id, universityCode: programme.universityCode, verificationStatus, courseCount: courses.length, issues: ['archived'] };
   }
   if (!groups.length) issues.push('missing-course-groups');
   if (!programme.courseSourceUrl && !programme.sourceUrl) issues.push('missing-course-source');
@@ -58,7 +59,7 @@ function inspectProgramme(programme, today = new Date()) {
   const appliesThereafter = /\band thereafter\b/i.test(year);
   if (startYear && !appliesThereafter && startYear < today.getFullYear() - 1) issues.push('stale-academic-year');
   if (programme.ruleReviewStatus === 'manual_review_required') issues.push('manual-rule-review');
-  return { programmeId: programme.id, universityCode: programme.universityCode, courseCount: courses.length, issues: [...new Set(issues)] };
+  return { programmeId: programme.id, universityCode: programme.universityCode, verificationStatus, courseCount: courses.length, issues: [...new Set(issues)] };
 }
 
 function buildCoverageReport(programmes = catalogue.programmes) {
@@ -66,9 +67,40 @@ function buildCoverageReport(programmes = catalogue.programmes) {
   const schools = [...new Set(programmes.map((item) => item.universityCode))].map((code) => {
     const items = rows.filter((row) => row.universityCode === code);
     const complete = items.filter((row) => !row.issues.some((issue) => issue !== 'manual-rule-review'));
-    return { code, programmes: items.length, complete: complete.length, pending: items.length - complete.length, courses: items.reduce((n, row) => n + row.courseCount, 0) };
+    const verified = items.filter((row) => row.verificationStatus === 'verified').length;
+    const blocked = items.filter((row) => row.verificationStatus === 'blocked').length;
+    const archived = items.filter((row) => row.verificationStatus === 'archived').length;
+    const unreviewed = items.filter((row) => row.verificationStatus === 'unreviewed').length;
+    const sourceReviewed = items.length - unreviewed;
+    return {
+      code,
+      programmes: items.length,
+      sourceReviewed,
+      sourceCoveragePercent: items.length ? Number((sourceReviewed * 100 / items.length).toFixed(1)) : 0,
+      verified,
+      blocked,
+      archived,
+      unreviewed,
+      complete: complete.length,
+      pending: items.length - complete.length,
+      courses: items.reduce((n, row) => n + row.courseCount, 0)
+    };
   });
-  return { programmes: rows.length, complete: schools.reduce((n, school) => n + school.complete, 0), schools, rows };
+  const sourceReviewed = schools.reduce((n, school) => n + school.sourceReviewed, 0);
+  const blocked = schools.reduce((n, school) => n + school.blocked, 0);
+  const archived = schools.reduce((n, school) => n + school.archived, 0);
+  const unreviewed = schools.reduce((n, school) => n + school.unreviewed, 0);
+  return {
+    programmes: rows.length,
+    sourceReviewed,
+    sourceCoveragePercent: rows.length ? Number((sourceReviewed * 100 / rows.length).toFixed(1)) : 0,
+    blocked,
+    archived,
+    unreviewed,
+    complete: schools.reduce((n, school) => n + school.complete, 0),
+    schools,
+    rows
+  };
 }
 
 function main() {
@@ -77,6 +109,7 @@ function main() {
   const filtered = school ? report.rows.filter((row) => row.universityCode === school.split('=')[1].toUpperCase()) : report.rows;
   console.log(JSON.stringify({ ...report, rows: filtered }, null, 2));
   if (process.argv.includes('--check') && report.complete !== report.programmes) process.exitCode = 1;
+  if (process.argv.includes('--check-reviewed') && report.sourceReviewed !== report.programmes) process.exitCode = 1;
 }
 
 if (require.main === module) main();

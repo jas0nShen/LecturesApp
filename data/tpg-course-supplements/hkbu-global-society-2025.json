@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-004",
+      "status": "verified",
+      "creditsRequired": 27,
+      "creditUnit": "units",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/master-of-arts-in-global-society-1",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [
+        {
+          "id": "HKBU-TPG-004-GLOBAL-CULTURES",
+          "name": "Global Cultures",
+          "type": "Concentration",
+          "creditsRequired": 27,
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/master-of-arts-in-global-society-1"
+        },
+        {
+          "id": "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT",
+          "name": "Global Social Development",
+          "type": "Concentration",
+          "creditsRequired": 27,
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/master-of-arts-in-global-society-1"
+        },
+        {
+          "id": "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY",
+          "name": "Global Political Economy",
+          "type": "Concentration",
+          "creditsRequired": 27,
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/master-of-arts-in-global-society-1"
+        }
+      ],
+      "trackSelectionOptional": false,
+      "statusNote": "The latest publicly accessible HKBU Academic Registry handbook page publishes the complete 2025-26 27-unit 4+3+2 structure: four Programme Required Courses, three Concentration Required Courses and two Electives. Global Cultures, Global Social Development and Global Political Economy are required Concentration choices. Several codes move between required and elective roles by Concentration, so each code is stored once with per-Concentration role metadata. Global Social Development requires SOC7310 and SOSC7340 plus either EDUM7470 or SOC7320; SOC7320 also appears in that Concentration's elective list. Track-dependent roles and the SOC7320 alternative therefore require manual audit review.",
+      "courseGroups": [
+        {
+          "id": "programme-required-courses",
+          "name": "Programme Required Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY"],
+          "ruleText": "Complete all four Programme Required Courses (12 units).",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/master-of-arts-in-global-society-1",
+          "courses": [
+            { "code": "SOSC7310", "name": "Concepts, Theories and Institutions of Global Studies", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOSC7310" },
+            { "code": "SOSC7320", "name": "Debating Global Society", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOSC7320" },
+            { "code": "SOSC7330", "name": "Globalizations", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOSC7330" },
+            { "code": "SOSC7410", "name": "Research Methods for Global Studies", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOSC7410" }
+          ]
+        },
+        {
+          "id": "concentration-required-courses",
+          "name": "Concentration Required Courses",
+          "type": "track_core_requirement",
+          "creditsRequiredByTrackIds": {
+            "HKBU-TPG-004-GLOBAL-CULTURES": 9,
+            "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT": 9,
+            "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY": 9
+          },
+          "coursesRequiredByTrackIds": {
+            "HKBU-TPG-004-GLOBAL-CULTURES": 3,
+            "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT": 3,
+            "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY": 3
+          },
+          "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY"],
+          "ruleText": "Complete three Concentration Required Courses (9 units). Global Social Development requires SOC7310 and SOSC7340 plus either EDUM7470 or SOC7320.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/master-of-arts-in-global-society-1",
+          "courses": []
+        },
+        {
+          "id": "elective-requirement",
+          "name": "Elective Courses",
+          "type": "track_elective_requirement",
+          "creditsRequiredByTrackIds": {
+            "HKBU-TPG-004-GLOBAL-CULTURES": 6,
+            "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT": 6,
+            "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY": 6
+          },
+          "coursesRequiredByTrackIds": {
+            "HKBU-TPG-004-GLOBAL-CULTURES": 2,
+            "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT": 2,
+            "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY": 2
+          },
+          "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY"],
+          "ruleText": "Complete two Elective Courses (6 units) from the official pool for the selected Concentration.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/master-of-arts-in-global-society-1",
+          "courses": []
+        },
+        {
+          "id": "concentration-course-pools",
+          "name": "Concentration Required and Elective Course Pools",
+          "type": "track_core_elective",
+          "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY"],
+          "ruleText": "Course roles depend on the selected Concentration. Codes shared across required and elective lists are stored once. For Global Social Development, EDUM7470 and SOC7320 are mutually exclusive required alternatives; SOC7320 is also printed in that Concentration's elective pool and must not be counted twice.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/master-of-arts-in-global-society-1",
+          "courses": [
+            { "code": "EDUM7470", "name": "Education and Social Development in a Globalized World", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT"], "typeByTrackIds": { "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT": "core_option" }, "conditionalRequirement": true, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/EDUM7470" },
+            { "code": "EURO7160", "name": "Current Issues of European Integration", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY"], "typeByTrackIds": { "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/EURO7160" },
+            { "code": "FIN7930", "name": "International Investment", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY"], "typeByTrackIds": { "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/FIN7930" },
+            { "code": "GEOG7580", "name": "Urban Cultural Landscape", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES"], "typeByTrackIds": { "HKBU-TPG-004-GLOBAL-CULTURES": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/GEOG7580" },
+            { "code": "HIST7310", "name": "Global Colonial and Postcolonial Cultures", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY"], "typeByTrackIds": { "HKBU-TPG-004-GLOBAL-CULTURES": "core", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT": "elective", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY": "elective" }, "requiredForTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HIST7310" },
+            { "code": "HIST7320", "name": "Contemporary China and Globalization", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY"], "typeByTrackIds": { "HKBU-TPG-004-GLOBAL-CULTURES": "core", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT": "elective", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY": "elective" }, "requiredForTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HIST7320" },
+            { "code": "HIST7510", "name": "South China Studies", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES"], "typeByTrackIds": { "HKBU-TPG-004-GLOBAL-CULTURES": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HIST7510" },
+            { "code": "HIST7520", "name": "Chinese Culture in Transformation", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES"], "typeByTrackIds": { "HKBU-TPG-004-GLOBAL-CULTURES": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HIST7520" },
+            { "code": "HRM7600", "name": "Global Human Resources Management and Cross-cultural Management", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY"], "typeByTrackIds": { "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HRM7600" },
+            { "code": "POLS7090", "name": "International Political Economy", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY"], "typeByTrackIds": { "HKBU-TPG-004-GLOBAL-CULTURES": "elective", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT": "elective", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY": "core" }, "requiredForTrackIds": ["HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/POLS7090" },
+            { "code": "POLS7100", "name": "Public Affairs and Public Policy", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY"], "typeByTrackIds": { "HKBU-TPG-004-GLOBAL-CULTURES": "elective", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT": "elective", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/POLS7100" },
+            { "code": "POLS7120", "name": "Theories of International Relations", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY"], "typeByTrackIds": { "HKBU-TPG-004-GLOBAL-CULTURES": "elective", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT": "elective", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY": "core" }, "requiredForTrackIds": ["HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/POLS7120" },
+            { "code": "POLS7140", "name": "Public Policy & Governance", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY"], "typeByTrackIds": { "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY": "core" }, "requiredForTrackIds": ["HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/POLS7140" },
+            { "code": "POLS7540", "name": "China-EU, Prospects, Opportunities and Challenges", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY"], "typeByTrackIds": { "HKBU-TPG-004-GLOBAL-CULTURES": "elective", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT": "elective", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/POLS7540" },
+            { "code": "SOC7310", "name": "Globalization and Development: Visions and Issues", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY"], "typeByTrackIds": { "HKBU-TPG-004-GLOBAL-CULTURES": "elective", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT": "core", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY": "elective" }, "requiredForTrackIds": ["HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOC7310" },
+            { "code": "SOC7320", "name": "Health Inequalities in a Global Context", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY"], "typeByTrackIds": { "HKBU-TPG-004-GLOBAL-CULTURES": "elective", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT": "core_option_elective", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY": "elective" }, "conditionalRequirement": true, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOC7320" },
+            { "code": "SOC7510", "name": "Social Networks in Contemporary Chinese Societies", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT"], "typeByTrackIds": { "HKBU-TPG-004-GLOBAL-CULTURES": "elective", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOC7510" },
+            { "code": "SOC7590", "name": "Popular Culture and Society in Contemporary China", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT"], "typeByTrackIds": { "HKBU-TPG-004-GLOBAL-CULTURES": "elective", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOC7590" },
+            { "code": "SOC7600", "name": "East Asia: Economic Miracles and Social Change", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT"], "typeByTrackIds": { "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOC7600" },
+            { "code": "SOSC7340", "name": "Global Civil Society", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY"], "typeByTrackIds": { "HKBU-TPG-004-GLOBAL-CULTURES": "elective", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT": "core", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY": "elective" }, "requiredForTrackIds": ["HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOSC7340" },
+            { "code": "SOSC7350", "name": "Global Cultural Industries", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY"], "typeByTrackIds": { "HKBU-TPG-004-GLOBAL-CULTURES": "core", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT": "elective", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY": "elective" }, "requiredForTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOSC7350" },
+            { "code": "SOSC7370", "name": "Independent Project", "credits": 3, "courseKind": "project", "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY"], "typeByTrackIds": { "HKBU-TPG-004-GLOBAL-CULTURES": "elective", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT": "elective", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOSC7370" },
+            { "code": "SOSC7390", "name": "Overseas Field Studies on Cities and Regions", "credits": 3, "courseKind": "field_study", "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY"], "typeByTrackIds": { "HKBU-TPG-004-GLOBAL-CULTURES": "elective", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT": "elective", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOSC7390" },
+            { "code": "SOSC7400", "name": "Professional Placement", "credits": 3, "courseKind": "placement", "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY"], "typeByTrackIds": { "HKBU-TPG-004-GLOBAL-CULTURES": "elective", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT": "elective", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOSC7400" },
+            { "code": "SOSC7430", "name": "Advanced Qualitative Methods", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY"], "typeByTrackIds": { "HKBU-TPG-004-GLOBAL-CULTURES": "elective", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT": "elective", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOSC7430" },
+            { "code": "SOSC7440", "name": "Advanced Quantitative Methods", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-004-GLOBAL-CULTURES", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY"], "typeByTrackIds": { "HKBU-TPG-004-GLOBAL-CULTURES": "elective", "HKBU-TPG-004-GLOBAL-SOCIAL-DEVELOPMENT": "elective", "HKBU-TPG-004-GLOBAL-POLITICAL-ECONOMY": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOSC7440" }
+          ]
+        }
+      ]
+    }
+  ]
+}

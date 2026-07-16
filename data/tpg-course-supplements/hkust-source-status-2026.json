@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "schoolCode": "HKUST",
   "academicYear": "2026-27",
-  "verifiedAt": "2026-07-11",
+  "verifiedAt": "2026-07-16",
   "programmes": [
     {
       "programmeId": "HKUST-TPG-001",
       "status": "archived",
       "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/",
-      "statusNote": "No unique matching Programme was found in the current 2026/27 official directory; archive status requires final manual confirmation."
+      "statusNote": "The current 2026/27 official directory lists 52 taught postgraduate Programmes and contains no unique match for Digital Master of Business Administration Program for Global Leaders. Keep this historical catalogue entry archived unless a current official Programme page is published."
     }
   ]
 }

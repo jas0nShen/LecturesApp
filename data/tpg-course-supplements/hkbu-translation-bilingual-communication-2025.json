@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-007",
+      "faculty": "Department of Translation, Interpreting and Intercultural Studies",
+      "status": "verified",
+      "creditsRequired": 27,
+      "creditUnit": "units",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/master-of-arts-in-translation-and-bilingual-communication-1",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [
+        {
+          "id": "HKBU-TPG-007-PRACTICAL",
+          "name": "Practical",
+          "type": "Stream",
+          "creditsRequired": 27,
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/master-of-arts-in-translation-and-bilingual-communication-1"
+        },
+        {
+          "id": "HKBU-TPG-007-INTERPRETING",
+          "name": "Interpreting",
+          "type": "Stream",
+          "creditsRequired": 27,
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/master-of-arts-in-translation-and-bilingual-communication-1"
+        },
+        {
+          "id": "HKBU-TPG-007-TECHNOLOGY",
+          "name": "Technology",
+          "type": "Stream",
+          "creditsRequired": 27,
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/master-of-arts-in-translation-and-bilingual-communication-1"
+        }
+      ],
+      "trackSelectionOptional": false,
+      "statusNote": "The latest publicly accessible HKBU Academic Registry handbook page publishes the complete 2025-26 27-unit curriculum for the Practical, Interpreting and Technology Streams. Each Stream requires two Common Core Courses (6 units), four Required Courses (12 units) and three Electives (9 units). Course roles change by Stream, so each code is stored once with per-Stream role metadata. Technology students must choose at least two of TRA7550, TRA7580, TRA7590, TRA7600 and TRA7610 among their three Electives. TRA7121 and TRA7122 are separately listed 3-unit Dissertation/Project electives for the Practical and Interpreting Streams, but the public page does not state whether they must be completed as a pair. The dynamic MA Course Sharing Scheme may replace one elective with approval, but its annual course list is not published on this page. Cross-role counting, the Dissertation/Project sequence and the dynamic sharing option require manual audit review.",
+      "courseGroups": [
+        {
+          "id": "common-core-courses",
+          "name": "Common Core Courses",
+          "type": "core",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING", "HKBU-TPG-007-TECHNOLOGY"],
+          "ruleText": "Complete both Common Core Courses (6 units) under every Stream.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/master-of-arts-in-translation-and-bilingual-communication-1",
+          "courses": [
+            { "code": "TRA7040", "name": "Research Methodology", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING", "HKBU-TPG-007-TECHNOLOGY"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7040" },
+            { "code": "TRA7520", "name": "Translation Technology I", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING", "HKBU-TPG-007-TECHNOLOGY"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7520" }
+          ]
+        },
+        {
+          "id": "stream-required-courses",
+          "name": "Required Courses",
+          "type": "track_core_requirement",
+          "creditsRequiredByTrackIds": {
+            "HKBU-TPG-007-PRACTICAL": 12,
+            "HKBU-TPG-007-INTERPRETING": 12,
+            "HKBU-TPG-007-TECHNOLOGY": 12
+          },
+          "coursesRequiredByTrackIds": {
+            "HKBU-TPG-007-PRACTICAL": 4,
+            "HKBU-TPG-007-INTERPRETING": 4,
+            "HKBU-TPG-007-TECHNOLOGY": 4
+          },
+          "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING", "HKBU-TPG-007-TECHNOLOGY"],
+          "ruleText": "Complete the four named Required Courses (12 units) for the selected Stream. Applicable codes are identified by per-Stream role metadata in the shared course pool.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/master-of-arts-in-translation-and-bilingual-communication-1",
+          "courses": []
+        },
+        {
+          "id": "stream-elective-requirement",
+          "name": "Elective Courses",
+          "type": "track_elective_requirement",
+          "creditsRequiredByTrackIds": {
+            "HKBU-TPG-007-PRACTICAL": 9,
+            "HKBU-TPG-007-INTERPRETING": 9,
+            "HKBU-TPG-007-TECHNOLOGY": 9
+          },
+          "coursesRequiredByTrackIds": {
+            "HKBU-TPG-007-PRACTICAL": 3,
+            "HKBU-TPG-007-INTERPRETING": 3,
+            "HKBU-TPG-007-TECHNOLOGY": 3
+          },
+          "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING", "HKBU-TPG-007-TECHNOLOGY"],
+          "ruleText": "Complete three Elective Courses (9 units) from the selected Stream's official pool. With approval, one course from the annually announced MA Course Sharing Scheme may replace one MATRAN elective; no unlisted sharing-scheme course is invented here.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/master-of-arts-in-translation-and-bilingual-communication-1",
+          "courses": []
+        },
+        {
+          "id": "technology-designated-electives",
+          "name": "Technology Stream Designated Electives",
+          "type": "track_elective_pool",
+          "coursesRequiredByTrackIds": {
+            "HKBU-TPG-007-TECHNOLOGY": 2
+          },
+          "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING", "HKBU-TPG-007-TECHNOLOGY"],
+          "ruleText": "Technology Stream students must include at least two of these five asterisked courses among their three Electives. TRA7610 is listed only for Technology; the other four also appear as ordinary Electives in the Practical and Interpreting pools.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/master-of-arts-in-translation-and-bilingual-communication-1",
+          "courses": [
+            { "code": "TRA7550", "name": "Localization", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING", "HKBU-TPG-007-TECHNOLOGY"], "typeByTrackIds": { "HKBU-TPG-007-PRACTICAL": "elective", "HKBU-TPG-007-INTERPRETING": "elective", "HKBU-TPG-007-TECHNOLOGY": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7550" },
+            { "code": "TRA7580", "name": "Audiovisual Translation", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING", "HKBU-TPG-007-TECHNOLOGY"], "typeByTrackIds": { "HKBU-TPG-007-PRACTICAL": "elective", "HKBU-TPG-007-INTERPRETING": "elective", "HKBU-TPG-007-TECHNOLOGY": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7580" },
+            { "code": "TRA7590", "name": "Digital Publishing", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING", "HKBU-TPG-007-TECHNOLOGY"], "typeByTrackIds": { "HKBU-TPG-007-PRACTICAL": "elective", "HKBU-TPG-007-INTERPRETING": "elective", "HKBU-TPG-007-TECHNOLOGY": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7590" },
+            { "code": "TRA7600", "name": "Translation and the Web", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING", "HKBU-TPG-007-TECHNOLOGY"], "typeByTrackIds": { "HKBU-TPG-007-PRACTICAL": "elective", "HKBU-TPG-007-INTERPRETING": "elective", "HKBU-TPG-007-TECHNOLOGY": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7600" },
+            { "code": "TRA7610", "name": "Introduction to Natural Language Processing", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-007-TECHNOLOGY"], "typeByTrackIds": { "HKBU-TPG-007-TECHNOLOGY": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7610" }
+          ]
+        },
+        {
+          "id": "stream-course-pools",
+          "name": "Stream Required and Elective Course Pools",
+          "type": "track_core_elective",
+          "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING", "HKBU-TPG-007-TECHNOLOGY"],
+          "ruleText": "Course roles depend on the selected Stream. Codes shared across Required and Elective lists are stored once. Courses marked with native-Chinese-speaker or alternate-year conditions preserve those official notes in per-Stream metadata.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/master-of-arts-in-translation-and-bilingual-communication-1",
+          "courses": [
+            { "code": "TRA7010", "name": "Western Translation Theory", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING", "HKBU-TPG-007-TECHNOLOGY"], "typeByTrackIds": { "HKBU-TPG-007-PRACTICAL": "elective", "HKBU-TPG-007-INTERPRETING": "elective", "HKBU-TPG-007-TECHNOLOGY": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7010" },
+            { "code": "TRA7020", "name": "Chinese Discourse on Translation", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING", "HKBU-TPG-007-TECHNOLOGY"], "typeByTrackIds": { "HKBU-TPG-007-PRACTICAL": "elective", "HKBU-TPG-007-INTERPRETING": "elective", "HKBU-TPG-007-TECHNOLOGY": "elective" }, "eligibilityNoteByTrackIds": { "HKBU-TPG-007-TECHNOLOGY": "May be chosen by native speakers of Chinese." }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7020" },
+            { "code": "TRA7030", "name": "Essential Reading in Translation Studies", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING", "HKBU-TPG-007-TECHNOLOGY"], "typeByTrackIds": { "HKBU-TPG-007-PRACTICAL": "elective", "HKBU-TPG-007-INTERPRETING": "elective", "HKBU-TPG-007-TECHNOLOGY": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7030" },
+            { "code": "TRA7050", "name": "Translation Seminars I", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING", "HKBU-TPG-007-TECHNOLOGY"], "typeByTrackIds": { "HKBU-TPG-007-PRACTICAL": "elective", "HKBU-TPG-007-INTERPRETING": "elective", "HKBU-TPG-007-TECHNOLOGY": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7050" },
+            { "code": "TRA7060", "name": "Translation Seminars II", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING", "HKBU-TPG-007-TECHNOLOGY"], "typeByTrackIds": { "HKBU-TPG-007-PRACTICAL": "elective", "HKBU-TPG-007-INTERPRETING": "elective", "HKBU-TPG-007-TECHNOLOGY": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7060" },
+            { "code": "TRA7070", "name": "Methods and Strategies of Translation", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING", "HKBU-TPG-007-TECHNOLOGY"], "typeByTrackIds": { "HKBU-TPG-007-PRACTICAL": "core", "HKBU-TPG-007-INTERPRETING": "elective", "HKBU-TPG-007-TECHNOLOGY": "elective" }, "requiredForTrackIds": ["HKBU-TPG-007-PRACTICAL"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7070" },
+            { "code": "TRA7080", "name": "Bilingual Communication: Style, Rhetoric and Delivery", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING", "HKBU-TPG-007-TECHNOLOGY"], "typeByTrackIds": { "HKBU-TPG-007-PRACTICAL": "core", "HKBU-TPG-007-INTERPRETING": "elective", "HKBU-TPG-007-TECHNOLOGY": "elective" }, "requiredForTrackIds": ["HKBU-TPG-007-PRACTICAL"], "availabilityNoteByTrackIds": { "HKBU-TPG-007-PRACTICAL": "Usually offered in alternate years.", "HKBU-TPG-007-INTERPRETING": "Usually offered in alternate years." }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7080" },
+            { "code": "TRA7090", "name": "Bilingual Presentation: Adaptation and Rewriting", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING", "HKBU-TPG-007-TECHNOLOGY"], "typeByTrackIds": { "HKBU-TPG-007-PRACTICAL": "core", "HKBU-TPG-007-INTERPRETING": "elective", "HKBU-TPG-007-TECHNOLOGY": "elective" }, "requiredForTrackIds": ["HKBU-TPG-007-PRACTICAL"], "availabilityNoteByTrackIds": { "HKBU-TPG-007-PRACTICAL": "Usually offered in alternate years.", "HKBU-TPG-007-INTERPRETING": "Usually offered in alternate years." }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7090" },
+            { "code": "TRA7100", "name": "Bilingual Writing for Creative Industries", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING", "HKBU-TPG-007-TECHNOLOGY"], "typeByTrackIds": { "HKBU-TPG-007-PRACTICAL": "elective", "HKBU-TPG-007-INTERPRETING": "elective", "HKBU-TPG-007-TECHNOLOGY": "elective" }, "availabilityNoteByTrackIds": { "HKBU-TPG-007-PRACTICAL": "Usually offered in alternate years.", "HKBU-TPG-007-INTERPRETING": "Usually offered in alternate years." }, "eligibilityNoteByTrackIds": { "HKBU-TPG-007-TECHNOLOGY": "May be chosen by native speakers of Chinese." }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7100" },
+            { "code": "TRA7110", "name": "Master Classes in Translation", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL"], "typeByTrackIds": { "HKBU-TPG-007-PRACTICAL": "core" }, "requiredForTrackIds": ["HKBU-TPG-007-PRACTICAL"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7110" },
+            { "code": "TRA7121", "name": "Dissertation/Project", "credits": 3, "courseKind": "dissertation_or_project", "conditionalRequirement": true, "linkedSequenceId": "TRA712-DISSERTATION-PROJECT", "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING"], "typeByTrackIds": { "HKBU-TPG-007-PRACTICAL": "elective", "HKBU-TPG-007-INTERPRETING": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7121" },
+            { "code": "TRA7122", "name": "Dissertation/Project", "credits": 3, "courseKind": "dissertation_or_project", "conditionalRequirement": true, "linkedSequenceId": "TRA712-DISSERTATION-PROJECT", "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING"], "typeByTrackIds": { "HKBU-TPG-007-PRACTICAL": "elective", "HKBU-TPG-007-INTERPRETING": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7122" },
+            { "code": "TRA7130", "name": "Gender Issues in Translation", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING", "HKBU-TPG-007-TECHNOLOGY"], "typeByTrackIds": { "HKBU-TPG-007-PRACTICAL": "elective", "HKBU-TPG-007-INTERPRETING": "elective", "HKBU-TPG-007-TECHNOLOGY": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7130" },
+            { "code": "TRA7140", "name": "Corpus-based Approaches to Translation", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING", "HKBU-TPG-007-TECHNOLOGY"], "typeByTrackIds": { "HKBU-TPG-007-PRACTICAL": "elective", "HKBU-TPG-007-INTERPRETING": "elective", "HKBU-TPG-007-TECHNOLOGY": "core" }, "requiredForTrackIds": ["HKBU-TPG-007-TECHNOLOGY"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7140" },
+            { "code": "TRA7170", "name": "Introduction to Interpreting", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-TECHNOLOGY"], "typeByTrackIds": { "HKBU-TPG-007-PRACTICAL": "elective", "HKBU-TPG-007-TECHNOLOGY": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7170" },
+            { "code": "TRA7180", "name": "Advanced English for Translators", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING", "HKBU-TPG-007-TECHNOLOGY"], "typeByTrackIds": { "HKBU-TPG-007-PRACTICAL": "elective", "HKBU-TPG-007-INTERPRETING": "elective", "HKBU-TPG-007-TECHNOLOGY": "elective" }, "eligibilityNoteByTrackIds": { "HKBU-TPG-007-TECHNOLOGY": "May be chosen by native speakers of Chinese." }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7180" },
+            { "code": "TRA7190", "name": "Simultaneous Interpreting", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING", "HKBU-TPG-007-TECHNOLOGY"], "typeByTrackIds": { "HKBU-TPG-007-PRACTICAL": "elective", "HKBU-TPG-007-INTERPRETING": "core", "HKBU-TPG-007-TECHNOLOGY": "elective" }, "requiredForTrackIds": ["HKBU-TPG-007-INTERPRETING"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7190" },
+            { "code": "TRA7200", "name": "Conference Interpreting", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING", "HKBU-TPG-007-TECHNOLOGY"], "typeByTrackIds": { "HKBU-TPG-007-PRACTICAL": "elective", "HKBU-TPG-007-INTERPRETING": "core", "HKBU-TPG-007-TECHNOLOGY": "elective" }, "requiredForTrackIds": ["HKBU-TPG-007-INTERPRETING"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7200" },
+            { "code": "TRA7210", "name": "Advanced Consecutive Interpreting", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING", "HKBU-TPG-007-TECHNOLOGY"], "typeByTrackIds": { "HKBU-TPG-007-PRACTICAL": "elective", "HKBU-TPG-007-INTERPRETING": "core", "HKBU-TPG-007-TECHNOLOGY": "elective" }, "requiredForTrackIds": ["HKBU-TPG-007-INTERPRETING"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7210" },
+            { "code": "TRA7220", "name": "Consecutive Interpreting", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-007-INTERPRETING"], "typeByTrackIds": { "HKBU-TPG-007-INTERPRETING": "core" }, "requiredForTrackIds": ["HKBU-TPG-007-INTERPRETING"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7220" },
+            { "code": "TRA7530", "name": "Legal Translation", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING", "HKBU-TPG-007-TECHNOLOGY"], "typeByTrackIds": { "HKBU-TPG-007-PRACTICAL": "elective", "HKBU-TPG-007-INTERPRETING": "elective", "HKBU-TPG-007-TECHNOLOGY": "elective" }, "eligibilityNoteByTrackIds": { "HKBU-TPG-007-TECHNOLOGY": "May be chosen by native speakers of Chinese." }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7530" },
+            { "code": "TRA7561", "name": "Practical and/or Theoretical Projects I", "credits": 3, "courseKind": "project", "appliesToTrackIds": ["HKBU-TPG-007-TECHNOLOGY"], "typeByTrackIds": { "HKBU-TPG-007-TECHNOLOGY": "core" }, "requiredForTrackIds": ["HKBU-TPG-007-TECHNOLOGY"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7561" },
+            { "code": "TRA7562", "name": "Practical and/or Theoretical Projects II", "credits": 3, "courseKind": "project", "appliesToTrackIds": ["HKBU-TPG-007-TECHNOLOGY"], "typeByTrackIds": { "HKBU-TPG-007-TECHNOLOGY": "core" }, "requiredForTrackIds": ["HKBU-TPG-007-TECHNOLOGY"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7562" },
+            { "code": "TRA7570", "name": "Translation Technology II", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-007-TECHNOLOGY"], "typeByTrackIds": { "HKBU-TPG-007-TECHNOLOGY": "core" }, "requiredForTrackIds": ["HKBU-TPG-007-TECHNOLOGY"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7570" },
+            { "code": "TRA7620", "name": "Business Interpreting", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING", "HKBU-TPG-007-TECHNOLOGY"], "typeByTrackIds": { "HKBU-TPG-007-PRACTICAL": "elective", "HKBU-TPG-007-INTERPRETING": "elective", "HKBU-TPG-007-TECHNOLOGY": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7620" },
+            { "code": "TRA7630", "name": "Translation in Response to Crises", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-007-PRACTICAL", "HKBU-TPG-007-INTERPRETING", "HKBU-TPG-007-TECHNOLOGY"], "typeByTrackIds": { "HKBU-TPG-007-PRACTICAL": "elective", "HKBU-TPG-007-INTERPRETING": "elective", "HKBU-TPG-007-TECHNOLOGY": "elective" }, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRA7630" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-025",
+      "status": "blocked",
+      "creditsRequired": 30,
+      "creditUnit": "credits",
+      "sourceUrl": "https://mscfom.hkbu.edu.hk/Programme/Curriculum.html",
+      "statusNote": "The official HKBU School of Business MScFOM site and its 2026-intake brochure confirm a 30-credit award for 2026-27: eight Core Courses for 24 credits and two courses selected from an eight-course Elective pool for 6 credits. They publish all sixteen current course titles, including the Family Office Practicum, but publish no course code for any Core or Elective course and no explicit per-course credit value. The brochure also states that final course titles may be adjusted for clarity and alignment with Programme objectives. Keep the Programme closed until HKBU publishes the official course codes and final titles; do not infer 3-credit values from the group totals or map provisional titles to similarly named catalogue courses."
+    },
+    {
+      "programmeId": "HKBU-TPG-029",
+      "status": "blocked",
+      "creditsRequired": 30,
+      "creditUnit": "units",
+      "sourceUrl": "https://mscaib.hkbu.edu.hk/curriculum/Curriculum.html",
+      "statusNote": "The current HKBU admissions page confirms September 2026 entry and a 30-unit structure comprising 21 Required units, including an Experiential Learning Project, plus 9 Elective units from one required Track. The official MSc in AI for Business Curriculum page publishes seven 3-credit Core course titles and two mutually exclusive Elective Tracks, each with six 3-credit titles from which students choose three. It publishes no course code for any of the nineteen titles, while the corresponding 2026-27 University Student Handbook route is currently access-restricted. Keep the Programme closed until HKBU publishes the official course codes; do not infer codes from similar existing course titles or treat either Track's title-only list as a verified coded structure."
+    }
+  ]
+}

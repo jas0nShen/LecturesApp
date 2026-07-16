@@ -41,7 +41,11 @@ function parseDirectoryLinks(html) {
 
 function parseCourseRefs(html) {
   return [...html.matchAll(/data-crse-idx="([^"]+)" data-acad-year="([^"]+)"\s+data-crse-code="([^"]+)" data-crse-prefix="([^"]+)" data-crse-log-num="([^"]+)"/g)].map((match) => ({
-    idx: match[1], academicYear: match[2], code: match[3], prefix: match[4], number: match[5]
+    idx: match[1].trim(),
+    academicYear: match[2].trim(),
+    code: match[3].trim(),
+    prefix: match[4].trim(),
+    number: match[5].trim()
   }));
 }
 

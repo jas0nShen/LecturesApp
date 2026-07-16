@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-035",
+      "status": "verified",
+      "programmeName": "Master of Science (MSc) in Entrepreneurship and Global Marketing",
+      "faculty": "School of Business",
+      "creditsRequired": 48,
+      "creditUnit": "units",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-management-marketing-and-information-systems-1/master-of-science-in-entrepreneurship-and-global-marketing",
+      "ruleReviewStatus": "verified",
+      "statusNote": "The latest publicly accessible HKBU Academic Registry handbook publishes the complete 2025-26 48-unit curriculum: twelve Required Courses for 33 units and the 15-unit MKTG7130 Business Project/Academic Dissertation. Every published course has an official code, title, explicit unit value and linked course page. MKTG7050 and MKTG7060 carry 1.5 units each; the remaining Required Courses carry 3 units each.",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 33,
+          "coursesRequired": 12,
+          "ruleText": "Complete all twelve Required Courses (33 units). MKTG7050 and MKTG7060 carry 1.5 units each; all other Required Courses carry 3 units each.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-management-marketing-and-information-systems-1/master-of-science-in-entrepreneurship-and-global-marketing",
+          "courses": [
+            { "code": "MKTG7010", "name": "Startup Creation Process and Entrepreneurial Ecosystem", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MKTG7010" },
+            { "code": "MKTG7020", "name": "Entrepreneurship and Business Opportunities", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MKTG7020" },
+            { "code": "MKTG7030", "name": "New Venture Business Planning, Small and Family Business", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MKTG7030" },
+            { "code": "MKTG7040", "name": "Accounting and Finance for Entrepreneurs", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MKTG7040" },
+            { "code": "MKTG7050", "name": "Strategic Management", "credits": 1.5, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MKTG7050" },
+            { "code": "MKTG7060", "name": "Marketing Planning", "credits": 1.5, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MKTG7060" },
+            { "code": "MKTG7070", "name": "Advanced Effective Sales, Negotiation and Intercultural Communication", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MKTG7070" },
+            { "code": "MKTG7080", "name": "Corporate Entrepreneurship and Business Development", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MKTG7080" },
+            { "code": "MKTG7090", "name": "Leadership and Team Building for Entrepreneurs", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MKTG7090" },
+            { "code": "MKTG7100", "name": "Digital Marketing Strategy", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MKTG7100" },
+            { "code": "MKTG7110", "name": "Socially Responsible Entrepreneurship in an International Context", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MKTG7110" },
+            { "code": "MKTG7120", "name": "Global Marketing", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MKTG7120" }
+          ]
+        },
+        {
+          "id": "business-project-or-academic-dissertation",
+          "name": "Business Project/Academic Dissertation",
+          "type": "project_or_dissertation",
+          "creditsRequired": 15,
+          "coursesRequired": 1,
+          "ruleText": "Complete MKTG7130 Business Project/Academic Dissertation (15 units).",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-management-marketing-and-information-systems-1/master-of-science-in-entrepreneurship-and-global-marketing",
+          "courses": [
+            { "code": "MKTG7130", "name": "Business Project/Academic Dissertation", "credits": 15, "courseKind": "project_or_dissertation", "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MKTG7130" }
+          ]
+        }
+      ]
+    }
+  ]
+}

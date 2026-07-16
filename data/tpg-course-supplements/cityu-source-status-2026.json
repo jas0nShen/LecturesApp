@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "schoolCode": "CITYU",
   "academicYear": "2026-27",
-  "verifiedAt": "2026-07-12",
+  "verifiedAt": "2026-07-16",
   "programmes": [
     {
       "programmeId": "CITYU-TPG-013",
       "status": "blocked",
       "sourceUrl": "https://www.cityu.edu.hk/en/pg/programme/program-list/2026/college-of-business/department-of-economics-and-finance/p13",
-      "statusNote": "The official 2026 admissions page states a 30-credit graduation requirement but enumerates only five Core Courses (15 credits) and three Electives (9 credits). The missing 6-credit requirement is not identified by the current official source, so the structure cannot be published without manual confirmation."
+      "statusNote": "The current official 2026 admissions page states a 30-credit graduation requirement but enumerates only five Core Courses (15 credits) and three Electives (9 credits). Its 'up to two 3-credit-unit free electives' option is explicitly part of the three-Elective list, so it does not identify the remaining 6-credit requirement. Keep the structure closed until CityUHK publishes a complete 30-credit rule or confirms the missing component."
     },
     {
       "programmeId": "CITYU-TPG-042",
       "status": "blocked",
       "sourceUrl": "https://www.cah.cityu.edu.hk/programmes-courses/postgraduate/master-degree/mach-2025/structure",
-      "statusNote": "The CityUHK first-year curriculum is fully enumerated, but the official Peking University curriculum for the 15-credit second year of the Chinese History and Cultural Heritage Stream publishes course names and 1.5-credit values without official course codes. Codes cannot be invented, so the full Programme remains source-blocked."
+      "statusNote": "The current CityUHK page fully enumerates the 30-credit first-year Chinese History curriculum and links the official Peking University curriculum updated on 30 September 2025 for the 15-credit second year of the Chinese History and Cultural Heritage Stream. The three-page PKU document publishes required and elective course names with 1.5-credit values but no official course codes. Codes cannot be invented, so the 45-credit Stream and therefore the full Programme remain source-blocked."
     }
   ]
 }

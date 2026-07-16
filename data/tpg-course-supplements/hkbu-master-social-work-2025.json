@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-016",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "units",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-work-1",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [
+        {
+          "id": "HKBU-TPG-016-MENTAL-HEALTH-PRACTICE",
+          "name": "Mental Health Practice",
+          "type": "Concentration",
+          "creditsRequired": 30,
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-work-1"
+        },
+        {
+          "id": "HKBU-TPG-016-YOUTH-WORK",
+          "name": "Youth Work",
+          "type": "Concentration",
+          "creditsRequired": 30,
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-work-1"
+        }
+      ],
+      "trackSelectionOptional": false,
+      "statusNote": "The latest publicly accessible HKBU Academic Registry handbook page publishes the complete 2025-26 30-unit curriculum: four Integrative Courses (12 units), three Concentration Courses (9 units), and three Electives (9 units). Mental Health Practice and Youth Work are required Concentrations. SOWK7110 and SOWK7210 are Mental Health Practice Concentration requirements but Youth Work electives; SOWK7170 and SOWK7240 have the opposite roles. Each cross-role code is stored once with per-Concentration role metadata. SOWK7151 and SOWK7152 are separately listed 3-unit Dissertation electives, but the public page does not state whether they must be selected as a pair. Cross-role counting, the Dissertation sequence and annual availability require manual audit review; the protected 2026-27 handbook must be rechecked when it becomes publicly accessible.",
+      "courseGroups": [
+        {
+          "id": "integrative-courses",
+          "name": "Integrative Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "appliesToTrackIds": ["HKBU-TPG-016-MENTAL-HEALTH-PRACTICE", "HKBU-TPG-016-YOUTH-WORK"],
+          "ruleText": "Complete all four Integrative Courses (12 units) under either Concentration.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-work-1",
+          "courses": [
+            { "code": "SOWK7010", "name": "Social Work in a Changing Social Context", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-016-MENTAL-HEALTH-PRACTICE", "HKBU-TPG-016-YOUTH-WORK"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7010" },
+            { "code": "SOWK7030", "name": "Critical Management Practice", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-016-MENTAL-HEALTH-PRACTICE", "HKBU-TPG-016-YOUTH-WORK"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7030" },
+            { "code": "SOWK7040", "name": "Research and Programme Evaluation", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-016-MENTAL-HEALTH-PRACTICE", "HKBU-TPG-016-YOUTH-WORK"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7040" },
+            { "code": "SOWK7410", "name": "Human Diversity and Cultural Differences", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-016-MENTAL-HEALTH-PRACTICE", "HKBU-TPG-016-YOUTH-WORK"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7410" }
+          ]
+        },
+        {
+          "id": "concentration-requirement",
+          "name": "Concentration Requirement",
+          "type": "track_core_requirement",
+          "creditsRequiredByTrackIds": {
+            "HKBU-TPG-016-MENTAL-HEALTH-PRACTICE": 9,
+            "HKBU-TPG-016-YOUTH-WORK": 9
+          },
+          "coursesRequiredByTrackIds": {
+            "HKBU-TPG-016-MENTAL-HEALTH-PRACTICE": 3,
+            "HKBU-TPG-016-YOUTH-WORK": 3
+          },
+          "appliesToTrackIds": ["HKBU-TPG-016-MENTAL-HEALTH-PRACTICE", "HKBU-TPG-016-YOUTH-WORK"],
+          "ruleText": "Complete the three named Concentration Courses (9 units) for the selected Concentration. The applicable codes are identified in the cross-role and Concentration-specific course groups.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-work-1",
+          "courses": []
+        },
+        {
+          "id": "cross-role-concentration-courses",
+          "name": "Cross-role Concentration Courses",
+          "type": "track_core_elective",
+          "appliesToTrackIds": ["HKBU-TPG-016-MENTAL-HEALTH-PRACTICE", "HKBU-TPG-016-YOUTH-WORK"],
+          "ruleText": "SOWK7110 and SOWK7210 are required for Mental Health Practice and elective for Youth Work. SOWK7170 and SOWK7240 are required for Youth Work and elective for Mental Health Practice. Each code may be counted only once.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-work-1",
+          "courses": [
+            {
+              "code": "SOWK7110",
+              "name": "Mental Health, Mental Disorder and Social Work",
+              "credits": 3,
+              "appliesToTrackIds": ["HKBU-TPG-016-MENTAL-HEALTH-PRACTICE", "HKBU-TPG-016-YOUTH-WORK"],
+              "typeByTrackIds": { "HKBU-TPG-016-MENTAL-HEALTH-PRACTICE": "core", "HKBU-TPG-016-YOUTH-WORK": "elective" },
+              "requiredForTrackIds": ["HKBU-TPG-016-MENTAL-HEALTH-PRACTICE"],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7110"
+            },
+            {
+              "code": "SOWK7210",
+              "name": "Working with Families with Mental Health Issues",
+              "credits": 3,
+              "appliesToTrackIds": ["HKBU-TPG-016-MENTAL-HEALTH-PRACTICE", "HKBU-TPG-016-YOUTH-WORK"],
+              "typeByTrackIds": { "HKBU-TPG-016-MENTAL-HEALTH-PRACTICE": "core", "HKBU-TPG-016-YOUTH-WORK": "elective" },
+              "requiredForTrackIds": ["HKBU-TPG-016-MENTAL-HEALTH-PRACTICE"],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7210"
+            },
+            {
+              "code": "SOWK7170",
+              "name": "Youth at the Margins: Theory and Practice",
+              "credits": 3,
+              "appliesToTrackIds": ["HKBU-TPG-016-MENTAL-HEALTH-PRACTICE", "HKBU-TPG-016-YOUTH-WORK"],
+              "typeByTrackIds": { "HKBU-TPG-016-MENTAL-HEALTH-PRACTICE": "elective", "HKBU-TPG-016-YOUTH-WORK": "core" },
+              "requiredForTrackIds": ["HKBU-TPG-016-YOUTH-WORK"],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7170"
+            },
+            {
+              "code": "SOWK7240",
+              "name": "Critical Youth Work",
+              "credits": 3,
+              "appliesToTrackIds": ["HKBU-TPG-016-MENTAL-HEALTH-PRACTICE", "HKBU-TPG-016-YOUTH-WORK"],
+              "typeByTrackIds": { "HKBU-TPG-016-MENTAL-HEALTH-PRACTICE": "elective", "HKBU-TPG-016-YOUTH-WORK": "core" },
+              "requiredForTrackIds": ["HKBU-TPG-016-YOUTH-WORK"],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7240"
+            }
+          ]
+        },
+        {
+          "id": "concentration-specific-courses",
+          "name": "Concentration-specific Courses",
+          "type": "track_core",
+          "appliesToTrackIds": ["HKBU-TPG-016-MENTAL-HEALTH-PRACTICE", "HKBU-TPG-016-YOUTH-WORK"],
+          "ruleText": "Mental Health Practice also requires SOWK7230; Youth Work also requires SOWK7220.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-work-1",
+          "courses": [
+            { "code": "SOWK7230", "name": "Crisis Management and Integrated Mental Health Practice", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-016-MENTAL-HEALTH-PRACTICE"], "requiredForTrackIds": ["HKBU-TPG-016-MENTAL-HEALTH-PRACTICE"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7230" },
+            { "code": "SOWK7220", "name": "Youth and Cultural Practice", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-016-YOUTH-WORK"], "requiredForTrackIds": ["HKBU-TPG-016-YOUTH-WORK"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7220" }
+          ]
+        },
+        {
+          "id": "elective-requirement",
+          "name": "Elective Requirement",
+          "type": "track_elective_requirement",
+          "creditsRequiredByTrackIds": {
+            "HKBU-TPG-016-MENTAL-HEALTH-PRACTICE": 9,
+            "HKBU-TPG-016-YOUTH-WORK": 9
+          },
+          "coursesRequiredByTrackIds": {
+            "HKBU-TPG-016-MENTAL-HEALTH-PRACTICE": 3,
+            "HKBU-TPG-016-YOUTH-WORK": 3
+          },
+          "appliesToTrackIds": ["HKBU-TPG-016-MENTAL-HEALTH-PRACTICE", "HKBU-TPG-016-YOUTH-WORK"],
+          "ruleText": "Complete three Electives (9 units) from the common pool, the selected Concentration's additional pool, and courses that are elective rather than required for the selected Concentration.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-work-1",
+          "courses": []
+        },
+        {
+          "id": "common-elective-pool",
+          "name": "Common Elective Pool",
+          "type": "elective_pool",
+          "appliesToTrackIds": ["HKBU-TPG-016-MENTAL-HEALTH-PRACTICE", "HKBU-TPG-016-YOUTH-WORK"],
+          "ruleText": "These Electives are available to both Concentrations. SOWK7151 and SOWK7152 are separately listed Dissertation components; confirm any pairing requirement manually.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-work-1",
+          "courses": [
+            { "code": "SOWK7120", "name": "Child and Adolescent Mental Health", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-016-MENTAL-HEALTH-PRACTICE", "HKBU-TPG-016-YOUTH-WORK"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7120" },
+            { "code": "SOWK7151", "name": "Dissertation", "credits": 3, "courseKind": "dissertation", "conditionalRequirement": true, "linkedSequenceId": "SOWK715-DISSERTATION", "appliesToTrackIds": ["HKBU-TPG-016-MENTAL-HEALTH-PRACTICE", "HKBU-TPG-016-YOUTH-WORK"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7151" },
+            { "code": "SOWK7152", "name": "Dissertation", "credits": 3, "courseKind": "dissertation", "conditionalRequirement": true, "linkedSequenceId": "SOWK715-DISSERTATION", "appliesToTrackIds": ["HKBU-TPG-016-MENTAL-HEALTH-PRACTICE", "HKBU-TPG-016-YOUTH-WORK"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7152" },
+            { "code": "SOWK7310", "name": "Globalization and Community Development Practice", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-016-MENTAL-HEALTH-PRACTICE", "HKBU-TPG-016-YOUTH-WORK"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7310" },
+            { "code": "SOWK7430", "name": "Narrative Approach to Counselling", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-016-MENTAL-HEALTH-PRACTICE", "HKBU-TPG-016-YOUTH-WORK"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7430" },
+            { "code": "SOWK7500", "name": "Family Therapy", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-016-MENTAL-HEALTH-PRACTICE", "HKBU-TPG-016-YOUTH-WORK"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7500" },
+            { "code": "SOWK7840", "name": "Data Methodology in Social Sciences Research", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-016-MENTAL-HEALTH-PRACTICE", "HKBU-TPG-016-YOUTH-WORK"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7840" },
+            { "code": "SOWK7890", "name": "Career Facilitation and Counselling", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-016-MENTAL-HEALTH-PRACTICE", "HKBU-TPG-016-YOUTH-WORK"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7890" }
+          ]
+        },
+        {
+          "id": "concentration-specific-electives",
+          "name": "Concentration-specific Electives",
+          "type": "track_elective",
+          "appliesToTrackIds": ["HKBU-TPG-016-MENTAL-HEALTH-PRACTICE", "HKBU-TPG-016-YOUTH-WORK"],
+          "ruleText": "SOWK7730 is an additional Mental Health Practice Elective; SOWK7440 is an additional Youth Work Elective.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-work-1",
+          "courses": [
+            { "code": "SOWK7730", "name": "Social Work with Youth", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-016-MENTAL-HEALTH-PRACTICE"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7730" },
+            { "code": "SOWK7440", "name": "Narrative Practice with Specific Youth Groups", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-016-YOUTH-WORK"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7440" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1734 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "POLYU",
+  "academicYear": "2027-28",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "POLYU-TPG-058",
+      "faculty": "Department of Logistics and Maritime Studies (LMS)",
+      "status": "verified",
+      "creditsRequired": 34,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-ifm-tfp-ipm-tpp",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 2027 Programme page and the current 2025/26 LMS Programme Requirement Document publish the 34-credit MSc structure and complete title/code mapping. The current LMS Subject Syllabi list resolves the two former placeholders as LGT5165 AI and Digitalisation in the Global Shipping Industry and LGT5315 Research Project in International Shipping and Transport Logistics. The five Restricted Electives must satisfy four focus-area minima; additional Restricted Electives may count as Free Electives, and LGT5202 Project replaces two of the five Free Electives. These cross-group and Project-equivalence rules require manual audit review. The 19-credit PgD is an early-exit award and is not modelled as MSc completion.",
+      "courseGroups": [
+        {
+          "id": "compulsory-subjects",
+          "name": "Compulsory Subjects",
+          "type": "core",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Complete LGT5002 for 3 credits in addition to the 1-credit AIE subject.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-ifm-tfp-ipm-tpp",
+          "courses": [
+            {
+              "code": "LGT5002",
+              "name": "International Logistics Systems, Operations and Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Academic Integrity and Ethics in Business",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete LGT5T21 Academic Integrity and Ethics in Business for 1 credit.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-ifm-tfp-ipm-tpp",
+          "courses": [
+            {
+              "code": "LGT5T21",
+              "name": "Academic Integrity and Ethics in Business",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+              "courseKind": "academic_integrity"
+            }
+          ]
+        },
+        {
+          "id": "restricted-electives",
+          "name": "Restricted Elective Subjects",
+          "type": "restricted_elective",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete five 3-credit Restricted Electives: at least two International Shipping subjects, at least one Shipping Economics and Finance subject, at least one Shipping Law and Insurance subject, and at least one International Logistics subject. Additional Restricted Electives may count as Free Electives.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-ifm-tfp-ipm-tpp",
+          "courses": [
+            {
+              "code": "LGT5001",
+              "name": "Organisational Management in Shipping and Logistics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5010",
+              "name": "Port Policy and Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5071",
+              "name": "Ship Chartering Strategies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5072",
+              "name": "Liner Shipping Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5079",
+              "name": "Strategic Management for International Shipping",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5165",
+              "name": "AI and Digitalisation in the Global Shipping Industry",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5007",
+              "name": "Shipping Economics and Markets",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5065",
+              "name": "Finance for Shipping and Logistics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5012",
+              "name": "Law and Practice in Marine Insurance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5064",
+              "name": "Shipping Law",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5014",
+              "name": "Air Transport Logistics and Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5015",
+              "name": "Supply Chain Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            }
+          ]
+        },
+        {
+          "id": "free-electives-and-project",
+          "name": "Free Elective Subjects and Project Option",
+          "type": "elective",
+          "creditsRequired": 15,
+          "ruleText": "Complete either five 3-credit Free Electives or LGT5202 Project for 6 credits plus three 3-credit Free Electives. LGT5315 is a 3-credit Research Project option in the published Free Elective pool.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-ifm-tfp-ipm-tpp",
+          "courses": [
+            {
+              "code": "LGT5017",
+              "name": "Maritime Logistics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5108",
+              "name": "Accounting for Managers",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/istl/student-resources/programme-requirement-documents/istl-2025-26.pdf"
+            },
+            {
+              "code": "LGT5011",
+              "name": "Admiralty Law",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5046",
+              "name": "Contract Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5170",
+              "name": "Maritime Arbitration Law",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5067",
+              "name": "Intermodal Transport Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5161",
+              "name": "Air Transport Regulatory Policy",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5162",
+              "name": "Airline Strategic Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5163",
+              "name": "Aviation Marketing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5164",
+              "name": "Aviation Safety Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5169",
+              "name": "Airport Business Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5013",
+              "name": "Transport Logistics in China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5037",
+              "name": "Project Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5073",
+              "name": "Risk Management in Operations",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5101",
+              "name": "Statistics for Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5113",
+              "name": "Enterprise Resource Planning",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5122",
+              "name": "Applications of Decision Making Models",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5133",
+              "name": "Strategies and Technologies in Warehousing Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5152",
+              "name": "Information Systems for Supply Chain Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5419",
+              "name": "Coding for Management with Python",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5202",
+              "name": "Project",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+              "courseKind": "project",
+              "conditionalRequirement": true
+            },
+            {
+              "code": "MM501",
+              "name": "Research Methods",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/istl/student-resources/programme-requirement-documents/istl-2025-26.pdf"
+            },
+            {
+              "code": "MM544",
+              "name": "E-Commerce",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/istl/student-resources/programme-requirement-documents/istl-2025-26.pdf"
+            },
+            {
+              "code": "LGT5137",
+              "name": "Lean Six Sigma and Quality Management Techniques",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5315",
+              "name": "Research Project in International Shipping and Transport Logistics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+              "courseKind": "research_project",
+              "conditionalRequirement": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-059",
+      "faculty": "Department of Logistics and Maritime Studies (LMS)",
+      "status": "verified",
+      "creditsRequired": 46,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-iss",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 2027 Programme page and the current 2025/26 full-time-stream Programme Requirement Document publish the complete 40-academic-credit plus 6-training-credit structure. The current LMS Subject Syllabi list resolves the former placeholders as LGT5165 and LGT5315 and identifies LGT5222 Maritime Industry Internship as the 6-credit training subject. Students choose four International Shipping Core Subjects, three Restricted Electives satisfying three focus minima, and either five Free Electives or LGT5202 Project plus three Free Electives. Additional Restricted Electives may count as Free Electives, so the shared pools and Project equivalence require manual audit review.",
+      "courseGroups": [
+        {
+          "id": "compulsory-subjects",
+          "name": "Compulsory Subjects",
+          "type": "core",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Complete LGT5002 for 3 academic credits in addition to the 1-credit AIE subject.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-iss",
+          "courses": [
+            {
+              "code": "LGT5002",
+              "name": "International Logistics Systems, Operations and Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Academic Integrity and Ethics in Business",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete LGT5T21 Academic Integrity and Ethics in Business for 1 credit.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-iss",
+          "courses": [
+            {
+              "code": "LGT5T21",
+              "name": "Academic Integrity and Ethics in Business",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+              "courseKind": "academic_integrity"
+            }
+          ]
+        },
+        {
+          "id": "international-shipping-core",
+          "name": "International Shipping Core Subjects",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete any four International Shipping Core Subjects for 12 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-iss",
+          "courses": [
+            {
+              "code": "LGT5001",
+              "name": "Organisational Management in Shipping and Logistics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5010",
+              "name": "Port Policy and Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5071",
+              "name": "Ship Chartering Strategies",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5072",
+              "name": "Liner Shipping Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5079",
+              "name": "Strategic Management for International Shipping",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5165",
+              "name": "AI and Digitalisation in the Global Shipping Industry",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            }
+          ]
+        },
+        {
+          "id": "restricted-electives",
+          "name": "Restricted Elective Subjects",
+          "type": "restricted_elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete three Restricted Electives for 9 credits, including at least one from each of Shipping Economics and Finance, Shipping Law and Insurance, and International Logistics. Additional Restricted Electives may count as Free Electives.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-iss",
+          "courses": [
+            {
+              "code": "LGT5007",
+              "name": "Shipping Economics and Markets",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5065",
+              "name": "Finance for Shipping and Logistics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5012",
+              "name": "Law and Practice in Marine Insurance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5064",
+              "name": "Shipping Law",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5014",
+              "name": "Air Transport Logistics and Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5015",
+              "name": "Supply Chain Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            }
+          ]
+        },
+        {
+          "id": "free-electives-and-project",
+          "name": "Free Elective Subjects and Project Option",
+          "type": "elective",
+          "creditsRequired": 15,
+          "ruleText": "Complete either five 3-credit Free Electives or LGT5202 Project for 6 credits plus three 3-credit Free Electives. LGT5315 is a 3-credit Research Project option in the published pool.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-iss",
+          "courses": [
+            {
+              "code": "LGT5017",
+              "name": "Maritime Logistics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5108",
+              "name": "Accounting for Managers",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/istl-iss/student-resources/programme-requirement-document/istl-iss-2025-26.pdf"
+            },
+            {
+              "code": "LGT5011",
+              "name": "Admiralty Law",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5046",
+              "name": "Contract Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5170",
+              "name": "Maritime Arbitration Law",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5067",
+              "name": "Intermodal Transport Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5161",
+              "name": "Air Transport Regulatory Policy",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5162",
+              "name": "Airline Strategic Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5163",
+              "name": "Aviation Marketing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5164",
+              "name": "Aviation Safety Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5169",
+              "name": "Airport Business Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5013",
+              "name": "Transport Logistics in China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5037",
+              "name": "Project Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5073",
+              "name": "Risk Management in Operations",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5101",
+              "name": "Statistics for Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5113",
+              "name": "Enterprise Resource Planning",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5122",
+              "name": "Applications of Decision Making Models",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5133",
+              "name": "Strategies and Technologies in Warehousing Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5152",
+              "name": "Information Systems for Supply Chain Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5419",
+              "name": "Coding for Management with Python",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5202",
+              "name": "Project",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+              "courseKind": "project",
+              "conditionalRequirement": true
+            },
+            {
+              "code": "MM501",
+              "name": "Research Methods",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/istl-iss/student-resources/programme-requirement-document/istl-iss-2025-26.pdf"
+            },
+            {
+              "code": "MM544",
+              "name": "E-Commerce",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/istl-iss/student-resources/programme-requirement-document/istl-iss-2025-26.pdf"
+            },
+            {
+              "code": "LGT5137",
+              "name": "Lean Six Sigma and Quality Management Techniques",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5315",
+              "name": "Research Project in International Shipping and Transport Logistics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+              "courseKind": "research_project",
+              "conditionalRequirement": true
+            },
+            {
+              "code": "LGT5105",
+              "name": "Managing Operations Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            }
+          ]
+        },
+        {
+          "id": "maritime-industry-internship",
+          "name": "Mandatory Training Subject",
+          "type": "internship",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Complete the 240-hour LGT5222 Maritime Industry Internship for 6 training credits; the official Programme page notes that exemptions may be granted to eligible local scholarship recipients with relevant experience.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-iss",
+          "courses": [
+            {
+              "code": "LGT5222",
+              "name": "Maritime Industry Internship",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+              "courseKind": "internship"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-060",
+      "faculty": "Department of Logistics and Maritime Studies (LMS)",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44089-sfm-sfp-gpm-spp",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 2027 Programme page, current 2025/26 Programme Requirement Document and LMS Subject Syllabi publish the complete 31-credit MSc structure and exact codes. The three Restricted Electives must satisfy separate operations, procurement and information-technology minima; additional Restricted Electives may count as Free Electives. LGT5202 Project carries 6 credits inside the 12-credit Free Elective requirement and therefore replaces two ordinary Free Electives. These cross-group and Project-equivalence rules require manual audit review. The 19-credit PgD is an early-exit award and is not modelled as MSc completion.",
+      "courseGroups": [
+        {
+          "id": "compulsory-subjects",
+          "name": "Compulsory Subjects",
+          "type": "core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete all three 3-credit Compulsory Subjects in addition to the 1-credit AIE subject.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44089-sfm-sfp-gpm-spp",
+          "courses": [
+            {
+              "code": "LGT5002",
+              "name": "International Logistics Systems, Operations and Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5015",
+              "name": "Supply Chain Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5034",
+              "name": "Global Sourcing and Supply",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Academic Integrity and Ethics in Business",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete LGT5T21 Academic Integrity and Ethics in Business for 1 credit.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44089-sfm-sfp-gpm-spp",
+          "courses": [
+            {
+              "code": "LGT5T21",
+              "name": "Academic Integrity and Ethics in Business",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+              "courseKind": "academic_integrity"
+            }
+          ]
+        },
+        {
+          "id": "restricted-electives",
+          "name": "Restricted Elective Subjects",
+          "type": "restricted_elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete three 3-credit Restricted Electives: at least one operations subject, at least one procurement subject, and at least one information-technology subject. Additional Restricted Electives may count as Free Electives.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44089-sfm-sfp-gpm-spp",
+          "courses": [
+            {
+              "code": "LGT5105",
+              "name": "Managing Operations Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5109",
+              "name": "International Operations Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5046",
+              "name": "Contract Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5083",
+              "name": "Digital Procurement Management and Analytics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5152",
+              "name": "Information Systems for Supply Chain Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "MM544",
+              "name": "E-Commerce",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/gscm/student-resources/programme-requirement-documents/gscm-2025-26.pdf"
+            }
+          ]
+        },
+        {
+          "id": "free-electives-and-project",
+          "name": "Free Elective Subjects and Project Option",
+          "type": "elective",
+          "creditsRequired": 12,
+          "ruleText": "Complete four 3-credit Free Electives, or use the 6-credit LGT5202 Project in place of two ordinary Free Electives.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44089-sfm-sfp-gpm-spp",
+          "courses": [
+            {
+              "code": "AF5108",
+              "name": "Accounting for Managers",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/gscm/student-resources/programme-requirement-documents/gscm-2025-26.pdf"
+            },
+            {
+              "code": "LGT5001",
+              "name": "Organisational Management in Shipping and Logistics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5013",
+              "name": "Transport Logistics in China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5014",
+              "name": "Air Transport Logistics and Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5017",
+              "name": "Maritime Logistics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5037",
+              "name": "Project Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5040",
+              "name": "Supplier Development",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5073",
+              "name": "Risk Management in Operations",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5101",
+              "name": "Statistics for Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5102",
+              "name": "Models for Decision Making",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5107",
+              "name": "Total Quality Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5113",
+              "name": "Enterprise Resource Planning",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5122",
+              "name": "Applications of Decision Making Models",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5133",
+              "name": "Strategies and Technologies in Warehousing Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5137",
+              "name": "Lean Six Sigma and Quality Management Techniques",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5419",
+              "name": "Coding for Management with Python",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5425",
+              "name": "Business Analytics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5426",
+              "name": "Managing Innovation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5202",
+              "name": "Project",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+              "courseKind": "project",
+              "conditionalRequirement": true
+            },
+            {
+              "code": "LGT5215",
+              "name": "Practice of Global Supply Chain Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-061",
+      "faculty": "Department of Logistics and Maritime Studies (LMS)",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44092-ofm-opm",
+      "ruleReviewStatus": "manual_review_required",
+      "trackSelectionOptional": false,
+      "tracks": [
+        {
+          "id": "POLYU-TPG-061-OPERATIONS-ANALYTICS",
+          "code": "OA",
+          "name": "Operations Analytics",
+          "type": "Stream",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44092-ofm-opm"
+        },
+        {
+          "id": "POLYU-TPG-061-QUALITY-MANAGEMENT",
+          "code": "QM",
+          "name": "Quality Management",
+          "type": "Stream",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44092-ofm-opm"
+        },
+        {
+          "id": "POLYU-TPG-061-OPERATIONS-STRATEGY",
+          "code": "OS",
+          "name": "Operations Strategy",
+          "type": "Stream",
+          "creditsRequired": 31,
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44092-ofm-opm"
+        }
+      ],
+      "statusNote": "The official 2027 Programme page, current 2025/26 Programme Requirement Document and LMS Subject Syllabi publish the complete 31-credit structure, three required Streams and exact course codes, including the former placeholder LGT5150 Quality Management Approaches for Operational Enhancement. Students complete any three Specialised Subjects from one Stream. Extra Specialised Subjects in that Stream may count as Free Electives, and the 6-credit LGT5202 Project may replace both ordinary Free Electives. These cross-role and Project-equivalence rules require manual audit review. The 22-credit PgD is an early-exit award and is not modelled as MSc completion.",
+      "courseGroups": [
+        {
+          "id": "compulsory-subjects",
+          "name": "Compulsory Subjects",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four 3-credit Compulsory Subjects in addition to the 1-credit AIE subject.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44092-ofm-opm",
+          "courses": [
+            {
+              "code": "AF5108",
+              "name": "Accounting for Managers",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/om/student-resources/programme-requirement-documents/om-2025-26.pdf"
+            },
+            {
+              "code": "LGT5105",
+              "name": "Managing Operations Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5109",
+              "name": "International Operations Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5426",
+              "name": "Managing Innovation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Academic Integrity and Ethics in Business",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete LGT5T21 Academic Integrity and Ethics in Business for 1 credit.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44092-ofm-opm",
+          "courses": [
+            {
+              "code": "LGT5T21",
+              "name": "Academic Integrity and Ethics in Business",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+              "courseKind": "academic_integrity"
+            }
+          ]
+        },
+        {
+          "id": "specialised-subjects",
+          "name": "Stream Specialised Subjects",
+          "type": "track_core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "creditsRequiredByTrackIds": {
+            "POLYU-TPG-061-OPERATIONS-ANALYTICS": 9,
+            "POLYU-TPG-061-QUALITY-MANAGEMENT": 9,
+            "POLYU-TPG-061-OPERATIONS-STRATEGY": 9
+          },
+          "coursesRequiredByTrackIds": {
+            "POLYU-TPG-061-OPERATIONS-ANALYTICS": 3,
+            "POLYU-TPG-061-QUALITY-MANAGEMENT": 3,
+            "POLYU-TPG-061-OPERATIONS-STRATEGY": 3
+          },
+          "ruleText": "Choose one Stream and complete any three of its four Specialised Subjects for 9 credits. A fourth Specialised Subject in the selected Stream may count as a Free Elective.",
+          "appliesToTrackIds": [
+            "POLYU-TPG-061-OPERATIONS-ANALYTICS",
+            "POLYU-TPG-061-QUALITY-MANAGEMENT",
+            "POLYU-TPG-061-OPERATIONS-STRATEGY"
+          ],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44092-ofm-opm",
+          "courses": [
+            {
+              "code": "LGT5015",
+              "name": "Supply Chain Management",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-061-OPERATIONS-ANALYTICS"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+              "subjectGroups": [
+                "specialised",
+                "free-elective"
+              ]
+            },
+            {
+              "code": "LGT5113",
+              "name": "Enterprise Resource Planning",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-061-OPERATIONS-ANALYTICS"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+              "subjectGroups": [
+                "specialised",
+                "free-elective"
+              ]
+            },
+            {
+              "code": "LGT5425",
+              "name": "Business Analytics",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-061-OPERATIONS-ANALYTICS"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+              "subjectGroups": [
+                "specialised",
+                "free-elective"
+              ]
+            },
+            {
+              "code": "MM544",
+              "name": "E-Commerce",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-061-OPERATIONS-ANALYTICS"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/om/student-resources/programme-requirement-documents/om-2025-26.pdf",
+              "subjectGroups": [
+                "specialised",
+                "free-elective"
+              ]
+            },
+            {
+              "code": "LGT5101",
+              "name": "Statistics for Management",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-061-QUALITY-MANAGEMENT"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+              "subjectGroups": [
+                "specialised",
+                "free-elective"
+              ]
+            },
+            {
+              "code": "LGT5107",
+              "name": "Total Quality Management",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-061-QUALITY-MANAGEMENT"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+              "subjectGroups": [
+                "specialised",
+                "free-elective"
+              ]
+            },
+            {
+              "code": "LGT5137",
+              "name": "Lean Six Sigma and Quality Management Techniques",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-061-QUALITY-MANAGEMENT"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+              "subjectGroups": [
+                "specialised",
+                "free-elective"
+              ]
+            },
+            {
+              "code": "LGT5150",
+              "name": "Quality Management Approaches for Operational Enhancement",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-061-QUALITY-MANAGEMENT"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+              "subjectGroups": [
+                "specialised",
+                "free-elective"
+              ]
+            },
+            {
+              "code": "LGT5073",
+              "name": "Risk Management in Operations",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-061-OPERATIONS-STRATEGY"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+              "subjectGroups": [
+                "specialised",
+                "free-elective"
+              ]
+            },
+            {
+              "code": "LGT5133",
+              "name": "Strategies and Technologies in Warehousing Management",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-061-OPERATIONS-STRATEGY"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+              "subjectGroups": [
+                "specialised",
+                "free-elective"
+              ]
+            },
+            {
+              "code": "MM5112",
+              "name": "Organization and Management",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-061-OPERATIONS-STRATEGY"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/om/student-resources/programme-requirement-documents/om-2025-26.pdf",
+              "subjectGroups": [
+                "specialised",
+                "free-elective"
+              ]
+            },
+            {
+              "code": "MM531",
+              "name": "Strategic Management",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "POLYU-TPG-061-OPERATIONS-STRATEGY"
+              ],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/om/student-resources/programme-requirement-documents/om-2025-26.pdf",
+              "subjectGroups": [
+                "specialised",
+                "free-elective"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "restricted-elective",
+          "name": "Restricted Elective Subject",
+          "type": "restricted_elective",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Complete any one 3-credit Restricted Elective. Additional Restricted Electives may count as Free Electives.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44092-ofm-opm",
+          "courses": [
+            {
+              "code": "LGT5002",
+              "name": "International Logistics Systems, Operations and Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5034",
+              "name": "Global Sourcing and Supply",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5037",
+              "name": "Project Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5040",
+              "name": "Supplier Development",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5102",
+              "name": "Models for Decision Making",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5171",
+              "name": "Contemporary Issues in Operations Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "MM576",
+              "name": "Marketing Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/om/student-resources/programme-requirement-documents/om-2025-26.pdf"
+            }
+          ]
+        },
+        {
+          "id": "free-electives-and-project",
+          "name": "Free Elective Subjects and Project Option",
+          "type": "elective",
+          "creditsRequired": 6,
+          "ruleText": "Complete two 3-credit Free Electives or the 6-credit LGT5202 Project. Eligible extra Specialised or Restricted Elective subjects also count toward this requirement and are kept in their official groups to avoid duplicate course codes.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44092-ofm-opm",
+          "courses": [
+            {
+              "code": "LGT5111",
+              "name": "Practice of Operations Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5122",
+              "name": "Applications of Decision Making Models",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5159",
+              "name": "Implementation and Auditing of Quality Management Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5419",
+              "name": "Coding for Management with Python",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5427",
+              "name": "Global Business",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5429",
+              "name": "Global Risk and Decision Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "MM501",
+              "name": "Research Methods",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/om/student-resources/programme-requirement-documents/om-2025-26.pdf"
+            },
+            {
+              "code": "LGT5202",
+              "name": "Project",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+              "courseKind": "project",
+              "conditionalRequirement": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "programmeId": "POLYU-TPG-062",
+      "faculty": "Department of Logistics and Maritime Studies (LMS)",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44094-bfm-bpm",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 2027 Programme page and current 2025/26 Programme Requirement Document publish the complete 31-credit title/code mapping, including AF5627 Managerial Economics with an Application to China Business. The detailed curriculum requires three Restricted Electives satisfying methodology, supply-chain/operations, and accounting/finance/management/marketing minima, plus 9 Free Elective credits. The overview separately describes a 6-credit Research-based Project alternative while the detailed pool lists both the 3-credit LGT5415 Research Project and 6-credit LGT5202 Project; a 6-credit Project alone would leave the published 31-credit total short. The Project equivalence and cross-group rules therefore require manual audit review and no completion percentage should be inferred from the course pool. The 19-credit PgD is an early-exit award and is not modelled as MSc completion.",
+      "courseGroups": [
+        {
+          "id": "compulsory-subjects",
+          "name": "Compulsory Subjects",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four 3-credit Compulsory Subjects in addition to the 1-credit AIE subject.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44094-bfm-bpm",
+          "courses": [
+            {
+              "code": "LGT5427",
+              "name": "Global Business",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5428",
+              "name": "International Trade and Logistics Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5102",
+              "name": "Models for Decision Making",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5425",
+              "name": "Business Analytics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Academic Integrity and Ethics in Business",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete LGT5T21 Academic Integrity and Ethics in Business for 1 credit.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44094-bfm-bpm",
+          "courses": [
+            {
+              "code": "LGT5T21",
+              "name": "Academic Integrity and Ethics in Business",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+              "courseKind": "academic_integrity"
+            }
+          ]
+        },
+        {
+          "id": "restricted-electives",
+          "name": "Restricted Elective Subjects",
+          "type": "restricted_elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete three 3-credit Restricted Electives: at least one methodology subject, at least one supply-chain/logistics/operations subject, and at least one accounting/finance/management/marketing subject. Additional Restricted Electives may count as Free Electives.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44094-bfm-bpm",
+          "courses": [
+            {
+              "code": "LGT5037",
+              "name": "Project Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5101",
+              "name": "Statistics for Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5122",
+              "name": "Applications of Decision Making Models",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5429",
+              "name": "Global Risk and Decision Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5419",
+              "name": "Coding for Management with Python",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5034",
+              "name": "Global Sourcing and Supply",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5109",
+              "name": "International Operations Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5171",
+              "name": "Contemporary Issues in Operations Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5002",
+              "name": "International Logistics Systems, Operations and Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "AF5104",
+              "name": "International Accounting",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/gbda/student-resources/programme-requirement-documents/gbda-2025-26.pdf"
+            },
+            {
+              "code": "AF5108",
+              "name": "Accounting for Managers",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/gbda/student-resources/programme-requirement-documents/gbda-2025-26.pdf"
+            },
+            {
+              "code": "AF5326",
+              "name": "Managerial Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/gbda/student-resources/programme-requirement-documents/gbda-2025-26.pdf"
+            },
+            {
+              "code": "MM539",
+              "name": "International Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/gbda/student-resources/programme-requirement-documents/gbda-2025-26.pdf"
+            },
+            {
+              "code": "MM576",
+              "name": "Marketing Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/gbda/student-resources/programme-requirement-documents/gbda-2025-26.pdf"
+            },
+            {
+              "code": "MM5791",
+              "name": "Global Marketing in Cross-Cultural Perspectives",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/gbda/student-resources/programme-requirement-documents/gbda-2025-26.pdf"
+            },
+            {
+              "code": "LGT5426",
+              "name": "Managing Innovation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            }
+          ]
+        },
+        {
+          "id": "free-electives-and-projects",
+          "name": "Free Elective Subjects and Research-based Project Options",
+          "type": "elective",
+          "creditsRequired": 9,
+          "ruleText": "Complete 9 Free Elective credits. The official sources list LGT5415 as a 3-credit Research Project and LGT5202 as a 6-credit Project, but do not state a self-consistent automatic substitution rule for the 31-credit total; confirm any Project path manually.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44094-bfm-bpm",
+          "courses": [
+            {
+              "code": "AF5362",
+              "name": "International Financial Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/gbda/student-resources/programme-requirement-documents/gbda-2025-26.pdf"
+            },
+            {
+              "code": "AF5618",
+              "name": "Global Economic Environment for Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/gbda/student-resources/programme-requirement-documents/gbda-2025-26.pdf"
+            },
+            {
+              "code": "AF5627",
+              "name": "Managerial Economics with an Application to China Business",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/gbda/student-resources/programme-requirement-documents/gbda-2025-26.pdf"
+            },
+            {
+              "code": "LGT5001",
+              "name": "Organisational Management in Shipping and Logistics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5007",
+              "name": "Shipping Economics and Markets",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5014",
+              "name": "Air Transport Logistics and Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5015",
+              "name": "Supply Chain Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5067",
+              "name": "Intermodal Transport Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5073",
+              "name": "Risk Management in Operations",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5083",
+              "name": "Digital Procurement Management and Analytics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5046",
+              "name": "Contract Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5105",
+              "name": "Managing Operations Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5172",
+              "name": "Managerial Thinking and Skills Workshop",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "LGT5137",
+              "name": "Lean Six Sigma and Quality Management Techniques",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/"
+            },
+            {
+              "code": "MM5712",
+              "name": "Marketing Management in China",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/-/media/department/lms/content/study/tpg/gbda/student-resources/programme-requirement-documents/gbda-2025-26.pdf"
+            },
+            {
+              "code": "LGT5415",
+              "name": "Research Project in Global Business and Decision Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+              "courseKind": "research_project",
+              "conditionalRequirement": true
+            },
+            {
+              "code": "LGT5202",
+              "name": "Project",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/lms/study/subject-syllabi/",
+              "courseKind": "project",
+              "conditionalRequirement": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

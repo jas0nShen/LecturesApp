@@ -13,6 +13,7 @@ module.exports = [
           {
             "code": "FINA 5190",
             "name": "Family Business",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-fofb/"
@@ -20,6 +21,7 @@ module.exports = [
           {
             "code": "FINA 5690",
             "name": "Family Office",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-fofb/"
@@ -27,6 +29,7 @@ module.exports = [
           {
             "code": "FOFB 5100",
             "name": "Family Governance",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-fofb/"
@@ -34,6 +37,7 @@ module.exports = [
           {
             "code": "FOFB 5200",
             "name": "Impact Investment and Family Philanthropy",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-fofb/"
@@ -41,6 +45,7 @@ module.exports = [
           {
             "code": "FOFB 5210",
             "name": "Family Wealth Management",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-fofb/"
@@ -74,6 +79,7 @@ module.exports = [
           {
             "code": "IMBA 5030",
             "name": "Accounting Foundations",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/hkust-emba/"
@@ -81,6 +87,7 @@ module.exports = [
           {
             "code": "IMBA 5040",
             "name": "Managerial Economics",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/hkust-emba/"
@@ -88,6 +95,7 @@ module.exports = [
           {
             "code": "IMBA 5050",
             "name": "Marketing Strategy",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/hkust-emba/"
@@ -95,6 +103,7 @@ module.exports = [
           {
             "code": "IMBA 5060",
             "name": "Accounting for Decision Making and Control",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/hkust-emba/"
@@ -102,6 +111,7 @@ module.exports = [
           {
             "code": "IMBA 5070",
             "name": "Corporate Finance",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/hkust-emba/"
@@ -109,6 +119,7 @@ module.exports = [
           {
             "code": "IMBA 5090",
             "name": "Management of Organizations",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/hkust-emba/"
@@ -116,6 +127,7 @@ module.exports = [
           {
             "code": "IMBA 5100",
             "name": "Statistical Decision Analysis",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/hkust-emba/"
@@ -123,6 +135,7 @@ module.exports = [
           {
             "code": "IMBA 5170",
             "name": "Business Simulation",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/hkust-emba/"
@@ -130,6 +143,7 @@ module.exports = [
           {
             "code": "IMBA 5340",
             "name": "Investment Analysis",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/hkust-emba/"
@@ -137,6 +151,7 @@ module.exports = [
           {
             "code": "IMBA 5660",
             "name": "Management Strategy",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/hkust-emba/"
@@ -170,6 +185,7 @@ module.exports = [
           {
             "code": "FINA 5120",
             "name": "Corporate Finance",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-fina/"
@@ -177,6 +193,7 @@ module.exports = [
           {
             "code": "FINA 5210",
             "name": "Investment Analysis",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-fina/"
@@ -184,6 +201,7 @@ module.exports = [
           {
             "code": "FINA 5250",
             "name": "Empirical Methods in Finance",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-fina/"
@@ -191,6 +209,7 @@ module.exports = [
           {
             "code": "FINA 5290",
             "name": "Derivatives Analysis",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-fina/"
@@ -198,6 +217,7 @@ module.exports = [
           {
             "code": "FINA 5360",
             "name": "Fixed Income Analysis",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-fina/"
@@ -205,6 +225,7 @@ module.exports = [
           {
             "code": "ACCT 5100",
             "name": "Corporate Reporting",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-fina/"
@@ -238,6 +259,7 @@ module.exports = [
           {
             "code": "EMBA 5010",
             "name": "Frameworks for Strategic Analysis",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/kh-emba/"
@@ -245,6 +267,7 @@ module.exports = [
           {
             "code": "EMBA 5020",
             "name": "Analytical Approach to Uncertainty",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/kh-emba/"
@@ -252,6 +275,7 @@ module.exports = [
           {
             "code": "EMBA 5030",
             "name": "Accounting: Financial Reports, Control and Analysis",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/kh-emba/"
@@ -259,6 +283,7 @@ module.exports = [
           {
             "code": "EMBA 5040",
             "name": "Marketing Management",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/kh-emba/"
@@ -266,6 +291,7 @@ module.exports = [
           {
             "code": "EMBA 5060",
             "name": "Leadership and Organizations",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/kh-emba/"
@@ -273,6 +299,7 @@ module.exports = [
           {
             "code": "EMBA 5070",
             "name": "Statistical Decision Analysis",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/kh-emba/"
@@ -280,6 +307,7 @@ module.exports = [
           {
             "code": "EMBA 5080",
             "name": "Managerial Finance",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/kh-emba/"
@@ -287,6 +315,7 @@ module.exports = [
           {
             "code": "EMBA 5110",
             "name": "Operations Management",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/kh-emba/"
@@ -294,6 +323,7 @@ module.exports = [
           {
             "code": "EMBA 5150",
             "name": "Negotiation",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/kh-emba/"
@@ -301,6 +331,7 @@ module.exports = [
           {
             "code": "EMBA 5190",
             "name": "Foundations for Strategy Formulation",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/kh-emba/"
@@ -308,6 +339,7 @@ module.exports = [
           {
             "code": "EMBA 5660",
             "name": "Capstone",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/kh-emba/"
@@ -315,6 +347,7 @@ module.exports = [
           {
             "code": "EMBA 5680",
             "name": "Microeconomics",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/kh-emba/"
@@ -348,6 +381,7 @@ module.exports = [
           {
             "code": "MAFS 5010",
             "name": "Stochastic Calculus",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
@@ -355,6 +389,7 @@ module.exports = [
           {
             "code": "MAFS 5020",
             "name": "Advanced Probability and Statistics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
@@ -362,6 +397,7 @@ module.exports = [
           {
             "code": "MAFS 5030",
             "name": "Quantitative Modeling of Derivatives Securities",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
@@ -369,20 +405,15 @@ module.exports = [
           {
             "code": "MAFS 5040",
             "name": "Quantitative Methods for Fixed-Income Instruments",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
           },
           {
-            "code": "MAFS 5110",
-            "name": "Advanced Data Analysis with Statistical Programming",
-            "sourceUrl": "https://prog-crs.hkust.edu.hk/pgcourse/2025-26/MAFS",
-            "credits": 3,
-            "appliesToTrackIds": []
-          },
-          {
             "code": "MAFS 5130",
             "name": "Quantitative Analysis of Financial Time Series",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
@@ -390,6 +421,7 @@ module.exports = [
           {
             "code": "MAFS 5140",
             "name": "Statistical Methods in Quantitative Finance",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
@@ -397,6 +429,7 @@ module.exports = [
           {
             "code": "MAFS 5210",
             "name": "Mathematical Models of Investment",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
@@ -404,6 +437,7 @@ module.exports = [
           {
             "code": "MAFS 5220",
             "name": "Quantitative Risk Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
@@ -411,6 +445,7 @@ module.exports = [
           {
             "code": "MAFS 5240",
             "name": "Software Development with C++ for Quantitative Finance",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
@@ -418,6 +453,7 @@ module.exports = [
           {
             "code": "MAFS 5270",
             "name": "Mathematical Market Microstructure",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
@@ -425,6 +461,7 @@ module.exports = [
           {
             "code": "MAFS 5280",
             "name": "Financial Markets in Hong Kong and China",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
@@ -432,6 +469,7 @@ module.exports = [
           {
             "code": "MAFS 5310",
             "name": "Portfolio Optimization: Theory and Application",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
@@ -439,6 +477,7 @@ module.exports = [
           {
             "code": "MAFS 5330",
             "name": "Structured Products: Analysis and Pricing",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
@@ -446,6 +485,7 @@ module.exports = [
           {
             "code": "MAFS 5340",
             "name": "Machine Learning and Its Applications",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
@@ -453,6 +493,7 @@ module.exports = [
           {
             "code": "MAFS 5360",
             "name": "Computing for Finance in Python",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
@@ -460,6 +501,7 @@ module.exports = [
           {
             "code": "MAFS 5370",
             "name": "Reinforcement Learning with Financial Applications",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
@@ -467,6 +509,7 @@ module.exports = [
           {
             "code": "MAFS 5380",
             "name": "Entrepreneurship in Fintech",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
@@ -474,6 +517,7 @@ module.exports = [
           {
             "code": "MAFS 5440",
             "name": "Artificial Intelligence in Fintech",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
@@ -481,6 +525,7 @@ module.exports = [
           {
             "code": "MAFS 6000",
             "name": "Capstone Project in Financial Mathematics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
@@ -488,6 +533,7 @@ module.exports = [
           {
             "code": "MAFS 6001",
             "name": "Capstone Project in Financial Mathematics II",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
@@ -495,6 +541,7 @@ module.exports = [
           {
             "code": "MAFS 6010",
             "name": "Special Topics in Financial Mathematics",
+            "creditUnit": "credits",
             "creditsMin": 2,
             "creditsMax": 4,
             "appliesToTrackIds": [],
@@ -503,6 +550,7 @@ module.exports = [
           {
             "code": "MATH 5311",
             "name": "Advanced Numerical Methods I",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
@@ -522,6 +570,7 @@ module.exports = [
           {
             "code": "MAFS 6100",
             "name": "Independent Project",
+            "creditUnit": "credits",
             "creditsMin": 3,
             "creditsMax": 6,
             "appliesToTrackIds": [],
@@ -548,6 +597,7 @@ module.exports = [
           {
             "code": "AMCC 5000",
             "name": "Creative Convergence: Foundations of Arts and Machine Creativity",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-amc/"
@@ -555,6 +605,7 @@ module.exports = [
           {
             "code": "AMCC 5330",
             "name": "Art Administration and Art Business in the New Era",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-amc/"
@@ -562,6 +613,7 @@ module.exports = [
           {
             "code": "AMCC 5410",
             "name": "Art Theory: From Plato to Posthuman Future",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-amc/"
@@ -580,6 +632,7 @@ module.exports = [
           {
             "code": "AMCC 5110",
             "name": "Programming for Arts and Creativity",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-amc/"
@@ -587,6 +640,7 @@ module.exports = [
           {
             "code": "AMCC 5120",
             "name": "Generative Art: Algorithms and Creativity",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-amc/"
@@ -594,6 +648,7 @@ module.exports = [
           {
             "code": "AMCC 5140",
             "name": "AI for Visual Arts and Creativity",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-amc/"
@@ -601,6 +656,7 @@ module.exports = [
           {
             "code": "AMCC 5150",
             "name": "Visual Computing for Visual Arts and Creativity",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-amc/"
@@ -608,6 +664,7 @@ module.exports = [
           {
             "code": "AMCC 5160",
             "name": "AI-Driven Animation and Video Generation",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-amc/"
@@ -615,6 +672,7 @@ module.exports = [
           {
             "code": "AMCC 5170",
             "name": "Interactive Visual Art with Generative Models",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-amc/"
@@ -622,6 +680,7 @@ module.exports = [
           {
             "code": "AMCC 5210",
             "name": "Practice and Techniques for Visual Creatives",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-amc/"
@@ -629,6 +688,7 @@ module.exports = [
           {
             "code": "AMCC 5220",
             "name": "Technology in Music and Sound Art",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-amc/"
@@ -636,6 +696,7 @@ module.exports = [
           {
             "code": "AMCC 5250",
             "name": "Filmmaking with AI Innovations",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-amc/"
@@ -643,6 +704,7 @@ module.exports = [
           {
             "code": "AMCC 5270",
             "name": "Art Education and Technology",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-amc/"
@@ -650,6 +712,7 @@ module.exports = [
           {
             "code": "AMCC 5310",
             "name": "Art ID, Blockchain and NFTs for Digital Creations",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-amc/"
@@ -657,6 +720,7 @@ module.exports = [
           {
             "code": "AMCC 5320",
             "name": "Management Strategies for Art and Technology Projects",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-amc/"
@@ -664,6 +728,7 @@ module.exports = [
           {
             "code": "AMCC 5340",
             "name": "Digital Art Provenance and Informatics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-amc/"
@@ -671,6 +736,7 @@ module.exports = [
           {
             "code": "AMCC 5350",
             "name": "Business Development for Art and Technology Projects",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-amc/"
@@ -678,6 +744,7 @@ module.exports = [
           {
             "code": "AMCC 5360",
             "name": "Legal Issues in Art and Technology",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-amc/"
@@ -685,6 +752,7 @@ module.exports = [
           {
             "code": "AMCC 5370",
             "name": "Models of New Cultural Space",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-amc/"
@@ -692,6 +760,7 @@ module.exports = [
           {
             "code": "AMCC 5430",
             "name": "History of Motion Picture Science",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-amc/"
@@ -699,6 +768,7 @@ module.exports = [
           {
             "code": "AMCC 6500",
             "name": "Special Topics in Arts and Machine Creativity",
+            "creditUnit": "credits",
             "creditsMin": 1,
             "creditsMax": 4,
             "appliesToTrackIds": [],
@@ -707,6 +777,7 @@ module.exports = [
           {
             "code": "AMCC 6100",
             "name": "Professional Practice and Research (Projects)",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-amc/"
@@ -714,6 +785,7 @@ module.exports = [
           {
             "code": "AMCC 6110",
             "name": "Professional Practice and Research (Internships)",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-amc/"
@@ -721,6 +793,7 @@ module.exports = [
           {
             "code": "AMCC 6950",
             "name": "Special Projects in Arts and Machine Creativity",
+            "creditUnit": "credits",
             "creditsMin": 1,
             "creditsMax": 4,
             "appliesToTrackIds": [],
@@ -745,6 +818,7 @@ module.exports = [
           {
             "code": "FINA 5120",
             "name": "Corporate Finance",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-fintech/"
@@ -752,6 +826,7 @@ module.exports = [
           {
             "code": "FINA 5210",
             "name": "Investment Analysis",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-fintech/"
@@ -759,6 +834,7 @@ module.exports = [
           {
             "code": "ISOM 5220",
             "name": "FinTech Regulation and Compliance",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-fintech/"
@@ -766,6 +842,7 @@ module.exports = [
           {
             "code": "MFIT 5001",
             "name": "AI for FinTech",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-fintech/"
@@ -773,6 +850,7 @@ module.exports = [
           {
             "code": "MFIT 5002",
             "name": "Blockchain",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-fintech/"
@@ -780,6 +858,7 @@ module.exports = [
           {
             "code": "MFIT 5003",
             "name": "Data Analysis",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-fintech/"
@@ -787,6 +866,7 @@ module.exports = [
           {
             "code": "MFIT 5004",
             "name": "Financial Data Mining",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-fintech/"
@@ -794,6 +874,7 @@ module.exports = [
           {
             "code": "MFIT 5005",
             "name": "Foundations of FinTech",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-fintech/"
@@ -812,6 +893,7 @@ module.exports = [
           {
             "code": "MFIT 5006",
             "name": "Mathematical Foundation of FinTech",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-fintech/"
@@ -819,6 +901,7 @@ module.exports = [
           {
             "code": "MFIT 5012",
             "name": "FinTech Enrichment Workshops",
+            "creditUnit": "credits",
             "credits": 0,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-fintech/"
@@ -852,6 +935,7 @@ module.exports = [
           {
             "code": "LANG 5072",
             "name": "Writing about Chinese Culture",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-cc/"
@@ -873,6 +957,7 @@ module.exports = [
           {
             "code": "HMMA 5002",
             "name": "Chinese Phonetics and Phonology",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-cc/"
@@ -880,6 +965,7 @@ module.exports = [
           {
             "code": "HMMA 5003",
             "name": "Chinese Literary History",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-cc/"
@@ -895,6 +981,7 @@ module.exports = [
           {
             "code": "HMMA 5008",
             "name": "Languages of China: Anthropological and Cognitive Dimensions",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-cc/"
@@ -902,6 +989,7 @@ module.exports = [
           {
             "code": "HMMA 5010",
             "name": "Traditional Chinese Literary Theory and Criticism",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-cc/"
@@ -909,6 +997,7 @@ module.exports = [
           {
             "code": "HMMA 5011",
             "name": "Chinese Culture in Jin Yong's Novels",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-cc/"
@@ -916,6 +1005,7 @@ module.exports = [
           {
             "code": "HMMA 5012",
             "name": "Chinese Culture in Classics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-cc/"
@@ -923,6 +1013,7 @@ module.exports = [
           {
             "code": "HMMA 5005",
             "name": "Modern Chinese History",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-cc/"
@@ -930,6 +1021,7 @@ module.exports = [
           {
             "code": "HMMA 5006",
             "name": "Anthropological Studies of China",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-cc/"
@@ -937,6 +1029,7 @@ module.exports = [
           {
             "code": "HMMA 5007",
             "name": "Fundamentals of Chinese Philosophy",
+            "creditUnit": "credits",
             "description": "This course is designed to guide students to in-depth researches into important issues in Chinese philosophy. The subject matter of the course may vary from one year to another depending on the particular interests of the instructors.",
             "credits": 3,
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-cc/",
@@ -970,6 +1063,7 @@ module.exports = [
           {
             "code": "MGCS 5001",
             "name": "Understanding China, 1700-2000: A Data-Analytic Approach",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
@@ -982,6 +1076,7 @@ module.exports = [
           {
             "code": "MGCS 5010",
             "name": "Introduction to Social Statistics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
@@ -993,6 +1088,7 @@ module.exports = [
           {
             "code": "MGCS 5024",
             "name": "China in Comparative Perspective",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
@@ -1003,6 +1099,7 @@ module.exports = [
           {
             "code": "MGCS 5033",
             "name": "Literary and Cultural Studies Humanities Seminar",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
@@ -1013,6 +1110,7 @@ module.exports = [
           {
             "code": "MGCS 5101",
             "name": "A Comparative Perspective of Religion in Ancient Civilizations",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
@@ -1023,6 +1121,7 @@ module.exports = [
           {
             "code": "MGCS 5520",
             "name": "Comparative Politics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
@@ -1033,6 +1132,7 @@ module.exports = [
           {
             "code": "MGCS 5880",
             "name": "Growing Up the Chinese Way",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/"
@@ -1051,6 +1151,7 @@ module.exports = [
           {
             "code": "LANG 5070",
             "name": "Critical Writing for Global China Studies",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/"
@@ -1071,6 +1172,7 @@ module.exports = [
           {
             "code": "MGCS 5006",
             "name": "China and the World",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
@@ -1081,6 +1183,7 @@ module.exports = [
           {
             "code": "MGCS 5008",
             "name": "The Economic and Political Development of Modern Japan",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
@@ -1091,6 +1194,7 @@ module.exports = [
           {
             "code": "MGCS 5009",
             "name": "The Economic History of Late Imperial China",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
@@ -1100,18 +1204,9 @@ module.exports = [
             ]
           },
           {
-            "code": "MGCS 5021",
-            "name": "Reform and Social Conflicts in Contemporary China",
-            "credits": 3,
-            "appliesToTrackIds": [],
-            "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
-            "countsTowardTrackIds": [
-              "HKUST-TPG-010-POLITICAL-SCIENCE"
-            ]
-          },
-          {
             "code": "MGCS 5022",
             "name": "Political Economy of China",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
@@ -1122,6 +1217,7 @@ module.exports = [
           {
             "code": "MGCS 5025",
             "name": "China and Africa",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
@@ -1132,6 +1228,7 @@ module.exports = [
           {
             "code": "MGCS 5026",
             "name": "International Law and China",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
@@ -1142,6 +1239,7 @@ module.exports = [
           {
             "code": "MGCS 5103",
             "name": "Gender and Sexuality in Modern China",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
@@ -1152,6 +1250,7 @@ module.exports = [
           {
             "code": "MGCS 5105",
             "name": "Science and Technology Studies in a Qualitative Perspective",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
@@ -1162,6 +1261,7 @@ module.exports = [
           {
             "code": "MGCS 5881",
             "name": "Psychology and Education in Chinese Society",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/"
@@ -1169,6 +1269,7 @@ module.exports = [
           {
             "code": "MGCS 5012",
             "name": "Quantitative Analysis of Social Data",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
@@ -1180,6 +1281,7 @@ module.exports = [
           {
             "code": "MGCS 5013",
             "name": "Applied Regression Analysis of Social Data",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
@@ -1190,6 +1292,7 @@ module.exports = [
           {
             "code": "MGCS 5032",
             "name": "Ethnicity in Chinese Context",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
@@ -1200,6 +1303,7 @@ module.exports = [
           {
             "code": "MGCS 5036",
             "name": "Western Opera and Asia",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
@@ -1210,6 +1314,7 @@ module.exports = [
           {
             "code": "MGCS 5037",
             "name": "Western Classical Music and the World",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
@@ -1220,6 +1325,7 @@ module.exports = [
           {
             "code": "MGCS 5102",
             "name": "Daily Life in Ancient Civilizations: China, Egypt, Greece and Rome",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
@@ -1257,6 +1363,7 @@ module.exports = [
           {
             "code": "MGCS 6981",
             "name": "Research Experience in Global China Studies",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/",
@@ -1281,6 +1388,7 @@ module.exports = [
           {
             "code": "HUMA 5696",
             "name": "The Culture of Capitalism",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-010-HISTORY-CULTURE"
@@ -1354,6 +1462,7 @@ module.exports = [
           {
             "code": "SOSC 5090",
             "name": "Quantitative Methods for Social Science Research",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-010-ACADEMIC-RESEARCH"
@@ -1379,6 +1488,7 @@ module.exports = [
           {
             "code": "HMMA 5001",
             "name": "Fundamentals of Chinese Culture",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-010-ACADEMIC-RESEARCH"
@@ -1391,6 +1501,7 @@ module.exports = [
           {
             "code": "MGCS 6100",
             "name": "Research Foundations for Global China Studies",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-010-ACADEMIC-RESEARCH"
@@ -1403,6 +1514,7 @@ module.exports = [
           {
             "code": "SOSC 5110",
             "name": "Social Science Research Design and Methods",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-010-ACADEMIC-RESEARCH"
@@ -1415,6 +1527,7 @@ module.exports = [
           {
             "code": "SOSC 5170",
             "name": "Qualitative Research Methods",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-010-ACADEMIC-RESEARCH"
@@ -1427,6 +1540,7 @@ module.exports = [
           {
             "code": "SOSC 5340",
             "name": "Econometric Approaches to Social Science Research",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-010-ACADEMIC-RESEARCH"
@@ -1453,6 +1567,7 @@ module.exports = [
           {
             "code": "MGCS 6200",
             "name": "Independent Study",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-010-ACADEMIC-RESEARCH"
@@ -1478,6 +1593,7 @@ module.exports = [
           {
             "code": "MGCS 6980",
             "name": "Research Project in Global China Studies I",
+            "creditUnit": "credits",
             "credits": 6,
             "appliesToTrackIds": [
               "HKUST-TPG-010-ACADEMIC-RESEARCH"
@@ -1490,6 +1606,7 @@ module.exports = [
           {
             "code": "MGCS 6982",
             "name": "Research Project in Global China Studies II",
+            "creditUnit": "credits",
             "credits": 6,
             "appliesToTrackIds": [
               "HKUST-TPG-010-ACADEMIC-RESEARCH"
@@ -1521,6 +1638,7 @@ module.exports = [
           {
             "code": "MILE 5000",
             "name": "Language Learning",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/"
@@ -1528,6 +1646,7 @@ module.exports = [
           {
             "code": "MILE 5002",
             "name": "Language Teaching Methodology and Curriculum Design",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/"
@@ -1535,6 +1654,7 @@ module.exports = [
           {
             "code": "MILE 5004",
             "name": "Understanding Research in Language Education",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/"
@@ -1542,6 +1662,7 @@ module.exports = [
           {
             "code": "MILE 5005",
             "name": "Descriptions of Language for English Teachers",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-011-TESL"
@@ -1551,6 +1672,7 @@ module.exports = [
           {
             "code": "MILE 5006",
             "name": "Descriptions of Language for Chinese Teachers",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-011-TCSL"
@@ -1571,6 +1693,7 @@ module.exports = [
           {
             "code": "MILE 5103",
             "name": "Testing and Assessment",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/"
@@ -1578,13 +1701,15 @@ module.exports = [
           {
             "code": "MILE 5106",
             "name": "Contrastive Analysis between Chinese and English",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/"
           },
           {
             "code": "MILE 5108",
-            "name": "* Foundations of Technology-enhanced Language Education",
+            "name": "Foundations of Technology-enhanced Language Education",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/"
@@ -1592,6 +1717,7 @@ module.exports = [
           {
             "code": "MILE 5109",
             "name": "Bi/Multilingual Approaches to Language Education",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/"
@@ -1599,6 +1725,7 @@ module.exports = [
           {
             "code": "MILE 6000",
             "name": "Supervised Teaching Practicum",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/"
@@ -1606,6 +1733,7 @@ module.exports = [
           {
             "code": "MILE 6980",
             "name": "Research Project in International Language Education",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/"
@@ -1624,6 +1752,7 @@ module.exports = [
           {
             "code": "MILE 5201",
             "name": "World Englishes",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-011-TESL"
@@ -1636,6 +1765,7 @@ module.exports = [
           {
             "code": "MILE 5202",
             "name": "Teaching Second Language Vocabulary",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-011-TESL"
@@ -1648,6 +1778,7 @@ module.exports = [
           {
             "code": "MILE 5203",
             "name": "Phonetics and Phonology for English Teachers",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-011-TESL"
@@ -1660,6 +1791,7 @@ module.exports = [
           {
             "code": "MILE 5205",
             "name": "Grammar for English Teachers",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-011-TESL"
@@ -1672,6 +1804,7 @@ module.exports = [
           {
             "code": "MILE 5206",
             "name": "Teaching English for Academic Purposes",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-011-TESL"
@@ -1684,6 +1817,7 @@ module.exports = [
           {
             "code": "MILE 5208",
             "name": "Discourse Analysis",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-011-TESL"
@@ -1696,6 +1830,7 @@ module.exports = [
           {
             "code": "MILE 5209",
             "name": "English-Medium Instruction and International Education",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-011-TESL"
@@ -1708,6 +1843,7 @@ module.exports = [
           {
             "code": "MILE 5210",
             "name": "Functional Linguistics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-011-TESL"
@@ -1734,6 +1870,7 @@ module.exports = [
           {
             "code": "MILE 5301",
             "name": "Chinese Writing and Culture",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-011-TCSL"
@@ -1745,7 +1882,8 @@ module.exports = [
           },
           {
             "code": "MILE 5302",
-            "name": "* Mandarin Chinese Grammar for L2 Chinese Teachers",
+            "name": "Mandarin Chinese Grammar for L2 Chinese Teachers",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-011-TCSL"
@@ -1758,6 +1896,7 @@ module.exports = [
           {
             "code": "MILE 5303",
             "name": "Advanced Phonetics and Phonology of the Chinese Language",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-011-TCSL"
@@ -1770,6 +1909,7 @@ module.exports = [
           {
             "code": "MILE 5304",
             "name": "Chinese Lexicology",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-011-TCSL"
@@ -1780,20 +1920,9 @@ module.exports = [
             ]
           },
           {
-            "code": "MILE 5306",
-            "name": "Understanding Chinese Language in Global Context",
-            "sourceUrl": "https://prog-crs.hkust.edu.hk/pgcourse/2023-24/MILE",
-            "credits": 3,
-            "appliesToTrackIds": [
-              "HKUST-TPG-011-TCSL"
-            ],
-            "countsTowardTrackIds": [
-              "HKUST-TPG-011-TCSL"
-            ]
-          },
-          {
             "code": "MILE 5308",
             "name": "The Practice of Teaching International Chinese",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-011-TCSL"
@@ -1825,6 +1954,7 @@ module.exports = [
           {
             "code": "GFIN 5010",
             "name": "Foundations of Investments",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gfin/"
@@ -1832,6 +1962,7 @@ module.exports = [
           {
             "code": "GFIN 5020",
             "name": "Foundations of Corporate Finance",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gfin/"
@@ -1839,6 +1970,7 @@ module.exports = [
           {
             "code": "GFIN 5040",
             "name": "Derivatives Markets",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gfin/"
@@ -1846,6 +1978,7 @@ module.exports = [
           {
             "code": "GFIN 5050",
             "name": "Applied Corporate Finance and Valuation",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gfin/"
@@ -1853,6 +1986,7 @@ module.exports = [
           {
             "code": "GFIN 5080",
             "name": "Fixed Income Instruments and Markets",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gfin/"
@@ -1860,6 +1994,7 @@ module.exports = [
           {
             "code": "GFIN 6980",
             "name": "Integrative Project in Global Finance",
+            "creditUnit": "credits",
             "credits": 4,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gfin/"
@@ -1893,6 +2028,7 @@ module.exports = [
           {
             "code": "MGMT 5210",
             "name": "Preparing to Lead",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/"
@@ -1911,6 +2047,7 @@ module.exports = [
           {
             "code": "ACCT 5100",
             "name": "Corporate Reporting",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/"
@@ -1918,6 +2055,7 @@ module.exports = [
           {
             "code": "ECON 5110",
             "name": "Managerial Microeconomics",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/"
@@ -1925,6 +2063,7 @@ module.exports = [
           {
             "code": "FINA 5120",
             "name": "Corporate Finance",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/"
@@ -1932,6 +2071,7 @@ module.exports = [
           {
             "code": "ISOM 5020",
             "name": "Technology Strategy and Management",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/"
@@ -1939,6 +2079,7 @@ module.exports = [
           {
             "code": "ISOM 5700",
             "name": "Operations Management",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/"
@@ -1946,6 +2087,7 @@ module.exports = [
           {
             "code": "MARK 5120",
             "name": "Marketing Strategy",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/"
@@ -1953,6 +2095,7 @@ module.exports = [
           {
             "code": "MGMT 5410",
             "name": "Strategic Management",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/"
@@ -1960,6 +2103,7 @@ module.exports = [
           {
             "code": "MGMT 5590",
             "name": "Responsible Leadership",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ft-pt-mba/"
@@ -2002,6 +2146,7 @@ module.exports = [
           {
             "code": "MGMT 5640",
             "name": "Time to Lead",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [
               "HKUST-TPG-013-FULL-TIME"
@@ -2119,6 +2264,7 @@ module.exports = [
           {
             "code": "ENVS 5116",
             "name": "Environmental Impact and Risk Assessment",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gmrm/"
@@ -2126,6 +2272,7 @@ module.exports = [
           {
             "code": "ENVS 5118",
             "name": "Conservation and Sustainable Development",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gmrm/"
@@ -2133,6 +2280,7 @@ module.exports = [
           {
             "code": "OCES 5401",
             "name": "Sustainable Fisheries and Aquaculture",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gmrm/"
@@ -2140,6 +2288,7 @@ module.exports = [
           {
             "code": "OCES 5402",
             "name": "Marine Resources Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gmrm/"
@@ -2158,6 +2307,7 @@ module.exports = [
           {
             "code": "ENVR 5290",
             "name": "Climate Change: Science, Policy and Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gmrm/"
@@ -2165,6 +2315,7 @@ module.exports = [
           {
             "code": "ENVS 5119",
             "name": "Pollution Monitoring and Control",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gmrm/"
@@ -2172,6 +2323,7 @@ module.exports = [
           {
             "code": "EVSM 5240",
             "name": "GIS for Environmental Professionals",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gmrm/"
@@ -2179,6 +2331,7 @@ module.exports = [
           {
             "code": "OCES 5403",
             "name": "Deep Sea Resources",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gmrm/"
@@ -2198,6 +2351,7 @@ module.exports = [
           {
             "code": "OCES 6111",
             "name": "Research Project in Global Marine Resources Management I",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gmrm/"
@@ -2205,6 +2359,7 @@ module.exports = [
           {
             "code": "OCES 6112",
             "name": "Research Project in Global Marine Resources Management II",
+            "creditUnit": "credits",
             "credits": 6,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gmrm/"
@@ -2212,6 +2367,7 @@ module.exports = [
           {
             "code": "OCES 6113",
             "name": "Research Project in Global Marine Resources Management III",
+            "creditUnit": "credits",
             "credits": 6,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gmrm/"
@@ -2235,6 +2391,7 @@ module.exports = [
           {
             "code": "PPOL 5260",
             "name": "Public Management: Theories and Practices",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpm/"
@@ -2242,6 +2399,7 @@ module.exports = [
           {
             "code": "PPOL 5280",
             "name": "Economic Reasoning for Public Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpm/"
@@ -2249,6 +2407,7 @@ module.exports = [
           {
             "code": "PPOL 5300",
             "name": "Managing the Policy Process",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpm/"
@@ -2256,6 +2415,7 @@ module.exports = [
           {
             "code": "PPOL 5310",
             "name": "Public Management for Technology Innovation",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpm/"
@@ -2263,6 +2423,7 @@ module.exports = [
           {
             "code": "PPOL 6120",
             "name": "Capstone Project",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpm/"
@@ -2281,6 +2442,7 @@ module.exports = [
           {
             "code": "CIEM 5160",
             "name": "Construction Financial Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpm/"
@@ -2288,6 +2450,7 @@ module.exports = [
           {
             "code": "CIEM 5810",
             "name": "Engineering Risk, Reliability and Decision",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpm/"
@@ -2295,6 +2458,7 @@ module.exports = [
           {
             "code": "EEMT 5300",
             "name": "Global Supply Chain Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpm/"
@@ -2302,6 +2466,7 @@ module.exports = [
           {
             "code": "EEMT 5360",
             "name": "Enterprise Systems for Digital Transformation",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpm/"
@@ -2309,6 +2474,7 @@ module.exports = [
           {
             "code": "EEMT 5510",
             "name": "Engineering Economics and Cost Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpm/"
@@ -2316,6 +2482,7 @@ module.exports = [
           {
             "code": "ENVR 5250",
             "name": "Environmental Economics and Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpm/"
@@ -2323,6 +2490,7 @@ module.exports = [
           {
             "code": "ENVR 5260",
             "name": "Environmental Policy and Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpm/"
@@ -2330,6 +2498,7 @@ module.exports = [
           {
             "code": "EVSM 5230",
             "name": "Environmental Health and Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpm/"
@@ -2337,6 +2506,7 @@ module.exports = [
           {
             "code": "EVSM 5300",
             "name": "Corporate Environmental Strategy",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpm/"
@@ -2344,14 +2514,8 @@ module.exports = [
           {
             "code": "ISOM 5370",
             "name": "Technology and Innovation Management",
+            "creditUnit": "credits",
             "credits": 2,
-            "appliesToTrackIds": [],
-            "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpm/"
-          },
-          {
-            "code": "SOSC 5620",
-            "name": "Sustainable Development",
-            "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpm/"
           }
@@ -2369,6 +2533,7 @@ module.exports = [
           {
             "code": "PPOL 5770",
             "name": "Professional Development for Taught Postgraduate Students",
+            "creditUnit": "credits",
             "credits": 0,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpm/"
@@ -2392,6 +2557,7 @@ module.exports = [
           {
             "code": "ACCT 5210",
             "name": "Managerial Accounting Foundations",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-go/"
@@ -2399,6 +2565,7 @@ module.exports = [
           {
             "code": "ECON 5200",
             "name": "Global Macroeconomics",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-go/"
@@ -2406,6 +2573,7 @@ module.exports = [
           {
             "code": "FINA 5120",
             "name": "Corporate Finance",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-go/"
@@ -2413,6 +2581,7 @@ module.exports = [
           {
             "code": "ISOM 5510",
             "name": "Data Analysis",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-go/"
@@ -2420,6 +2589,7 @@ module.exports = [
           {
             "code": "ISOM 5700",
             "name": "Operations Management",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-go/"
@@ -2427,6 +2597,7 @@ module.exports = [
           {
             "code": "MARK 5120",
             "name": "Marketing Strategy",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-go/"
@@ -2434,6 +2605,7 @@ module.exports = [
           {
             "code": "MGMT 5110",
             "name": "Managerial Communication",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-go/"
@@ -2452,6 +2624,7 @@ module.exports = [
           {
             "code": "ISOM 5730",
             "name": "Global Supply Chain Management",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-go/"
@@ -2459,6 +2632,7 @@ module.exports = [
           {
             "code": "ISOM 5810",
             "name": "Business Modeling and Optimization",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-go/"
@@ -2492,6 +2666,7 @@ module.exports = [
           {
             "code": "PPOL 5110",
             "name": "Foundation in Public Policy",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpp/"
@@ -2499,6 +2674,7 @@ module.exports = [
           {
             "code": "PPOL 5130",
             "name": "Microeconomics and Public Policy",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpp/"
@@ -2506,6 +2682,7 @@ module.exports = [
           {
             "code": "PPOL 5140",
             "name": "Quantitative Analysis and Empirical Methods",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpp/"
@@ -2513,6 +2690,7 @@ module.exports = [
           {
             "code": "PPOL 5150",
             "name": "Public Policy Analysis",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpp/"
@@ -2520,6 +2698,7 @@ module.exports = [
           {
             "code": "PPOL 5160",
             "name": "Evidence in Public Policy",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpp/"
@@ -2527,6 +2706,7 @@ module.exports = [
           {
             "code": "PPOL 5170",
             "name": "Public Management and Leadership",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpp/"
@@ -2534,6 +2714,7 @@ module.exports = [
           {
             "code": "PPOL 6110",
             "name": "Policy Analysis Project",
+            "creditUnit": "credits",
             "credits": 6,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpp/"
@@ -2575,6 +2756,7 @@ module.exports = [
           {
             "code": "PPOL 5180",
             "name": "Risk and Regulation",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-017-ESP",
@@ -2585,15 +2767,7 @@ module.exports = [
           {
             "code": "PPOL 5190",
             "name": "Policy Analysis and Design for Sustainable Development",
-            "credits": 3,
-            "appliesToTrackIds": [
-              "HKUST-TPG-017-ESP"
-            ],
-            "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpp/"
-          },
-          {
-            "code": "PPOL 5200",
-            "name": "Applied Demography",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-017-ESP"
@@ -2603,6 +2777,7 @@ module.exports = [
           {
             "code": "PPOL 5210",
             "name": "Environmental Policy and Natural Resource Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-017-ESP",
@@ -2613,6 +2788,7 @@ module.exports = [
           {
             "code": "PPOL 5240",
             "name": "Advanced Analytical Methods for Public Policy",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-017-ESP",
@@ -2623,6 +2799,7 @@ module.exports = [
           {
             "code": "PPOL 5250",
             "name": "Innovation and Sustainability",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-017-ESP"
@@ -2645,6 +2822,7 @@ module.exports = [
           {
             "code": "IPEN 5180",
             "name": "Disruptive Technologies and Society",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-017-ESP",
@@ -2655,6 +2833,7 @@ module.exports = [
           {
             "code": "IPEN 5200",
             "name": "Uncertainty, Information and Decision Making",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-017-ESP",
@@ -2665,6 +2844,7 @@ module.exports = [
           {
             "code": "PPOL 5220",
             "name": "Complex Systems for Policy",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-017-STP"
@@ -2674,6 +2854,7 @@ module.exports = [
           {
             "code": "PPOL 5230",
             "name": "Technology, Innovation and Public Policy",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-017-STP"
@@ -2683,6 +2864,7 @@ module.exports = [
           {
             "code": "PPOL 5320",
             "name": "Urban Economics and Urban Policy",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-017-STP"
@@ -2692,6 +2874,7 @@ module.exports = [
           {
             "code": "IPEN 5160",
             "name": "Big Data Applications for Business and Government",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-017-STP"
@@ -2701,6 +2884,7 @@ module.exports = [
           {
             "code": "IPEN 5250",
             "name": "Text Analysis and Machine Learning",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-017-STP"
@@ -2710,6 +2894,7 @@ module.exports = [
           {
             "code": "PPOL 5270",
             "name": "Finance, Financial Crises and Economic Development",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-017-PEPM"
@@ -2719,6 +2904,7 @@ module.exports = [
           {
             "code": "PPOL 5351",
             "name": "Environmental Economics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-017-PEPM"
@@ -2728,6 +2914,7 @@ module.exports = [
           {
             "code": "PPOL 5410",
             "name": "Public Management through the Lens of the Asian Development Bank",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-017-PEPM"
@@ -2737,6 +2924,7 @@ module.exports = [
           {
             "code": "PPOL 5480",
             "name": "Political Economy of Poverty, Inequality, and Development",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-017-PEPM"
@@ -2746,6 +2934,7 @@ module.exports = [
           {
             "code": "PPOL 5500",
             "name": "Preventing and Combating Corruption in Public and Private Sectors",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-017-PEPM"
@@ -2755,6 +2944,7 @@ module.exports = [
           {
             "code": "PPOL 5510",
             "name": "Political Economy of Global Offshore Finance and Its Regulation",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-017-PEPM"
@@ -2764,6 +2954,7 @@ module.exports = [
           {
             "code": "PPOL 5520",
             "name": "Green and Sustainable Finance",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-017-PEPM"
@@ -2773,6 +2964,7 @@ module.exports = [
           {
             "code": "IPEN 5130",
             "name": "Economics of Technology Innovation and Entrepreneurship",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-017-PEPM"
@@ -2782,6 +2974,7 @@ module.exports = [
           {
             "code": "IPEN 5300",
             "name": "Experimental Economics and Organizational Behavior",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-017-PEPM"
@@ -2791,6 +2984,7 @@ module.exports = [
           {
             "code": "IPEN 5310",
             "name": "Behavioral Economics and Public Policy",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-017-PEPM"
@@ -2800,6 +2994,7 @@ module.exports = [
           {
             "code": "IPEN 5330",
             "name": "Energy Economics and Policy",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-017-PEPM"
@@ -2809,6 +3004,7 @@ module.exports = [
           {
             "code": "IPEN 5820",
             "name": "Environmental Economics and Sustainable Development",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-017-PEPM"
@@ -2827,6 +3023,7 @@ module.exports = [
           {
             "code": "PPOL 5770",
             "name": "Professional Development for Taught Postgraduate Students",
+            "creditUnit": "credits",
             "credits": 0,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpp/"
@@ -2850,6 +3047,7 @@ module.exports = [
           {
             "code": "ISOM 5100",
             "name": "Information Strategy and Management",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ism/"
@@ -2857,6 +3055,7 @@ module.exports = [
           {
             "code": "ISOM 5270",
             "name": "Big Data Analytics",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ism/"
@@ -2864,6 +3063,7 @@ module.exports = [
           {
             "code": "ISOM 5280",
             "name": "Computer and Internet Security Management",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ism/"
@@ -2871,6 +3071,7 @@ module.exports = [
           {
             "code": "ISOM 5320",
             "name": "Digital Business and Web Analytics",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ism/"
@@ -2878,6 +3079,7 @@ module.exports = [
           {
             "code": "ISOM 5460",
             "name": "Project Management",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ism/"
@@ -2896,6 +3098,7 @@ module.exports = [
           {
             "code": "ISOM 5160",
             "name": "Python Programming for Business Applications",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ism/"
@@ -2903,6 +3106,7 @@ module.exports = [
           {
             "code": "ISOM 5260",
             "name": "Fundamentals of Database Management",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ism/"
@@ -2910,6 +3114,7 @@ module.exports = [
           {
             "code": "ISOM 5290",
             "name": "Information Systems Analysis and Design",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ism/"
@@ -2946,6 +3151,7 @@ module.exports = [
           {
             "code": "MAIE 5101",
             "name": "Programming for Artificial Intelligence",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-aie/"
@@ -2953,6 +3159,7 @@ module.exports = [
           {
             "code": "MAIE 5102",
             "name": "AI Fundamentals: Concepts and Methods",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-aie/"
@@ -2960,6 +3167,7 @@ module.exports = [
           {
             "code": "MAIE 5103",
             "name": "Artificial Intelligence Ethics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-aie/"
@@ -2978,6 +3186,7 @@ module.exports = [
           {
             "code": "MAIE 5209",
             "name": "Design and Analysis of Algorithms",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-aie/"
@@ -2985,6 +3194,7 @@ module.exports = [
           {
             "code": "MAIE 5211",
             "name": "Theory of Computation",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-aie/"
@@ -2992,6 +3202,7 @@ module.exports = [
           {
             "code": "MAIE 5212",
             "name": "Machine Learning",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-aie/"
@@ -2999,6 +3210,7 @@ module.exports = [
           {
             "code": "MAIE 5221",
             "name": "Natural Language Processing",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-aie/"
@@ -3006,6 +3218,7 @@ module.exports = [
           {
             "code": "MAIE 5421",
             "name": "Computer Vision",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-aie/"
@@ -3024,6 +3237,7 @@ module.exports = [
           {
             "code": "MAIE 5531",
             "name": "Generative Al and Large Language Models",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-aie/"
@@ -3031,6 +3245,7 @@ module.exports = [
           {
             "code": "MAIE 5532",
             "name": "Machine Learning System",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-aie/"
@@ -3038,6 +3253,7 @@ module.exports = [
           {
             "code": "MAIE 5533",
             "name": "Artificial Intelligence in Cybersecurity",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-aie/"
@@ -3056,6 +3272,7 @@ module.exports = [
           {
             "code": "MAIE 5534",
             "name": "Entrepreneurial Me",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-aie/"
@@ -3063,6 +3280,7 @@ module.exports = [
           {
             "code": "MAIE 5535",
             "name": "Startup Seminars for AI",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-aie/"
@@ -3070,6 +3288,7 @@ module.exports = [
           {
             "code": "MAIE 6000",
             "name": "Special Topics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-aie/"
@@ -3088,6 +3307,7 @@ module.exports = [
           {
             "code": "MAIE 6500",
             "name": "Innovation Management for AI",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-aie/"
@@ -3095,6 +3315,7 @@ module.exports = [
           {
             "code": "MAIE 6600",
             "name": "Internship and Entrepreneurship for AI",
+            "creditUnit": "credits",
             "credits": 5,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-aie/"
@@ -3118,6 +3339,7 @@ module.exports = [
           {
             "code": "CSIT 6910",
             "name": "Independent Project",
+            "creditUnit": "credits",
             "creditsMin": 1,
             "creditsMax": 3,
             "appliesToTrackIds": [],
@@ -3137,6 +3359,7 @@ module.exports = [
           {
             "code": "CSIT 5100",
             "name": "Engineering Reliable Software Systems",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-it/"
@@ -3144,6 +3367,7 @@ module.exports = [
           {
             "code": "CSIT 5710",
             "name": "Cryptography",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-it/"
@@ -3151,6 +3375,7 @@ module.exports = [
           {
             "code": "CSIT 5730",
             "name": "Principles of Cybersecurity",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-it/"
@@ -3158,6 +3383,7 @@ module.exports = [
           {
             "code": "CSIT 5740",
             "name": "Introduction to Software Security",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-it/"
@@ -3165,6 +3391,7 @@ module.exports = [
           {
             "code": "CSIT 5750",
             "name": "Introduction to Network Security",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-it/"
@@ -3172,6 +3399,7 @@ module.exports = [
           {
             "code": "CSIT 5760",
             "name": "Blockchain and Smart Contracts",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-it/"
@@ -3179,6 +3407,7 @@ module.exports = [
           {
             "code": "CSIT 6000",
             "name": "Topics in Information Technology",
+            "creditUnit": "credits",
             "creditsMin": 1,
             "creditsMax": 3,
             "appliesToTrackIds": [],
@@ -3205,6 +3434,7 @@ module.exports = [
           {
             "code": "ACCT 5160",
             "name": "Corporate Financial Reporting I",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-acct/"
@@ -3212,6 +3442,7 @@ module.exports = [
           {
             "code": "ACCT 5170",
             "name": "Corporate Financial Reporting II",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-acct/"
@@ -3219,6 +3450,7 @@ module.exports = [
           {
             "code": "ACCT 5180",
             "name": "Advanced Corporate Financial Reporting",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-acct/"
@@ -3226,6 +3458,7 @@ module.exports = [
           {
             "code": "ACCT 5210",
             "name": "Managerial Accounting Foundations",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-acct/"
@@ -3233,6 +3466,7 @@ module.exports = [
           {
             "code": "ACCT 5510",
             "name": "Auditing",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-acct/"
@@ -3240,6 +3474,7 @@ module.exports = [
           {
             "code": "FINA 5120",
             "name": "Corporate Finance",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-acct/"
@@ -3273,6 +3508,7 @@ module.exports = [
           {
             "code": "ISOM 5070",
             "name": "Cyber Security Risk Management",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-icsm/"
@@ -3280,6 +3516,7 @@ module.exports = [
           {
             "code": "ISOM 5100",
             "name": "Information Strategy and Management",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-icsm/"
@@ -3287,6 +3524,7 @@ module.exports = [
           {
             "code": "ISOM 5160",
             "name": "Python Programming for Business Applications",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-icsm/"
@@ -3294,6 +3532,7 @@ module.exports = [
           {
             "code": "ISOM 5180",
             "name": "Applied Network Management",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-icsm/"
@@ -3301,6 +3540,7 @@ module.exports = [
           {
             "code": "ISOM 5280",
             "name": "Computer and Internet Security Management",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-icsm/"
@@ -3308,6 +3548,7 @@ module.exports = [
           {
             "code": "ISOM 5360",
             "name": "Information Systems Auditing",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-icsm/"
@@ -3315,6 +3556,7 @@ module.exports = [
           {
             "code": "ISOM 5460",
             "name": "Project Management",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-icsm/"
@@ -3348,6 +3590,7 @@ module.exports = [
           {
             "code": "AESF 5210",
             "name": "Fluid Dynamics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ae/"
@@ -3355,6 +3598,7 @@ module.exports = [
           {
             "code": "AESF 5310",
             "name": "Advanced Aerodynamics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ae/"
@@ -3362,6 +3606,7 @@ module.exports = [
           {
             "code": "AESF 5320",
             "name": "Advanced Aircraft Structures",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ae/"
@@ -3369,6 +3614,7 @@ module.exports = [
           {
             "code": "AESF 5330",
             "name": "Advanced Aircraft Design",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ae/"
@@ -3376,6 +3622,7 @@ module.exports = [
           {
             "code": "AESF 5350",
             "name": "Advanced Aircraft Propulsion",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ae/"
@@ -3383,6 +3630,7 @@ module.exports = [
           {
             "code": "AESF 6950",
             "name": "Aeronautical Independent Project",
+            "creditUnit": "credits",
             "creditsMin": 3,
             "creditsMax": 6,
             "appliesToTrackIds": [],
@@ -3391,6 +3639,7 @@ module.exports = [
           {
             "code": "EEMT 5220",
             "name": "Six Sigma Quality Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ae/"
@@ -3409,6 +3658,7 @@ module.exports = [
           {
             "code": "AESF 5050",
             "name": "Fracture Behavior of Polymers",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ae/"
@@ -3416,6 +3666,7 @@ module.exports = [
           {
             "code": "AESF 5370",
             "name": "Composites and Nanocomposites",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ae/"
@@ -3423,6 +3674,7 @@ module.exports = [
           {
             "code": "AESF 5380",
             "name": "Computational Fluid Dynamics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ae/"
@@ -3430,6 +3682,7 @@ module.exports = [
           {
             "code": "AESF 5630",
             "name": "Avionics Technology",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ae/"
@@ -3437,6 +3690,7 @@ module.exports = [
           {
             "code": "AESF 5710",
             "name": "Hong Kong Airworthiness",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ae/"
@@ -3444,6 +3698,7 @@ module.exports = [
           {
             "code": "AESF 5720",
             "name": "Aerospace Materials and Applications",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ae/"
@@ -3451,6 +3706,7 @@ module.exports = [
           {
             "code": "AESF 5730",
             "name": "Airline Marketing",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ae/"
@@ -3458,6 +3714,7 @@ module.exports = [
           {
             "code": "AESF 5740",
             "name": "Building Airport Operational Resilience",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ae/"
@@ -3465,6 +3722,7 @@ module.exports = [
           {
             "code": "AESF 5750",
             "name": "Strategic Procurement Management in Aviation Industry",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ae/"
@@ -3472,6 +3730,7 @@ module.exports = [
           {
             "code": "AESF 5760",
             "name": "Flight Data Application in Maintenance, Safety, Efficiency and Flight Tracking",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ae/"
@@ -3479,6 +3738,7 @@ module.exports = [
           {
             "code": "AESF 5930",
             "name": "Finite Element Methods",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ae/"
@@ -3495,6 +3755,7 @@ module.exports = [
           {
             "code": "EEMT 5120",
             "name": "Operation/Production Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ae/"
@@ -3518,6 +3779,7 @@ module.exports = [
           {
             "code": "EESM 5000",
             "name": "CMOS VLSI Design",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ic/"
@@ -3525,6 +3787,7 @@ module.exports = [
           {
             "code": "EESM 5020",
             "name": "Digital VLSI System Design and Design Automation",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ic/"
@@ -3532,6 +3795,7 @@ module.exports = [
           {
             "code": "EESM 5060",
             "name": "Embedded Systems",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ic/"
@@ -3539,6 +3803,7 @@ module.exports = [
           {
             "code": "EESM 5100",
             "name": "Analog IC Analysis and Design",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ic/"
@@ -3546,6 +3811,7 @@ module.exports = [
           {
             "code": "EESM 5120",
             "name": "Advanced Analog IC Analysis and Design",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ic/"
@@ -3553,6 +3819,7 @@ module.exports = [
           {
             "code": "EESM 5200",
             "name": "Semiconductor Devices for Integrated Circuit Designs",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ic/"
@@ -3560,6 +3827,7 @@ module.exports = [
           {
             "code": "EESM 6970",
             "name": "Guided Chip Design Project",
+            "creditUnit": "credits",
             "credits": 4,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ic/"
@@ -3578,6 +3846,7 @@ module.exports = [
           {
             "code": "EESM 5310",
             "name": "Power Management Circuits and Systems",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ic/"
@@ -3585,6 +3854,7 @@ module.exports = [
           {
             "code": "EESM 5320",
             "name": "CMOS RF Integrated System and Circuit Design",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ic/"
@@ -3592,6 +3862,7 @@ module.exports = [
           {
             "code": "EESM 5830",
             "name": "Engineering Thinking: From Research to Entrepreneurship",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ic/"
@@ -3624,6 +3895,7 @@ module.exports = [
           {
             "code": "CHMS 5010",
             "name": "Chemical Data Analysis",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-anchem/"
@@ -3631,6 +3903,7 @@ module.exports = [
           {
             "code": "CHMS 5020",
             "name": "Elemental Analysis",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-anchem/"
@@ -3638,6 +3911,7 @@ module.exports = [
           {
             "code": "CHMS 5030",
             "name": "Molecular Analysis",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-anchem/"
@@ -3645,6 +3919,7 @@ module.exports = [
           {
             "code": "CHMS 5040",
             "name": "Separation Methods",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-anchem/"
@@ -3652,6 +3927,7 @@ module.exports = [
           {
             "code": "CHMS 5050",
             "name": "Optical and Electrical Methods",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-anchem/"
@@ -3670,6 +3946,7 @@ module.exports = [
           {
             "code": "CHMS 5111",
             "name": "Environmental Analysis",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-anchem/"
@@ -3677,6 +3954,7 @@ module.exports = [
           {
             "code": "CHMS 5112",
             "name": "Food and Drug Analysis",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-anchem/"
@@ -3684,6 +3962,7 @@ module.exports = [
           {
             "code": "CHMS 5120",
             "name": "Macromolecular Analysis",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-anchem/"
@@ -3691,6 +3970,7 @@ module.exports = [
           {
             "code": "CHMS 5130",
             "name": "Materials Analysis",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-anchem/"
@@ -3698,6 +3978,7 @@ module.exports = [
           {
             "code": "CHMS 5140",
             "name": "Laboratory Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-anchem/"
@@ -3716,6 +3997,7 @@ module.exports = [
           {
             "code": "CHMS 5201",
             "name": "Analytical Instrumentation Laboratory I",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-anchem/"
@@ -3723,6 +4005,7 @@ module.exports = [
           {
             "code": "CHMS 5202",
             "name": "Analytical Instrumentation Laboratory II",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-anchem/"
@@ -3730,6 +4013,7 @@ module.exports = [
           {
             "code": "CHMS 6980",
             "name": "Analytical Research Project",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-anchem/"
@@ -3753,6 +4037,7 @@ module.exports = [
           {
             "code": "IBTM 5050",
             "name": "Intelligent Building System",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ibtm/"
@@ -3760,6 +4045,7 @@ module.exports = [
           {
             "code": "IBTM 5060",
             "name": "Building Internet of Things: Technologies, Big Data and Strategies for the Building Manager",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ibtm/"
@@ -3778,6 +4064,7 @@ module.exports = [
           {
             "code": "IBTM 6010",
             "name": "Special Topics in Intelligent Building Systems",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ibtm/"
@@ -3785,6 +4072,7 @@ module.exports = [
           {
             "code": "IBTM 6950",
             "name": "Independent Studies",
+            "creditUnit": "credits",
             "creditsMin": 3,
             "creditsMax": 6,
             "appliesToTrackIds": [],
@@ -3809,6 +4097,7 @@ module.exports = [
           {
             "code": "ARIN 5101",
             "name": "Advanced Python Programming for Artificial Intelligence",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ai/"
@@ -3816,6 +4105,7 @@ module.exports = [
           {
             "code": "ARIN 5102",
             "name": "AI Fundamentals: Concepts and Methods",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ai/"
@@ -3823,6 +4113,7 @@ module.exports = [
           {
             "code": "ARIN 5103",
             "name": "Foundations of Machine Learning",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ai/"
@@ -3830,6 +4121,7 @@ module.exports = [
           {
             "code": "ARIN 5104",
             "name": "Artificial Intelligence Ethics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ai/"
@@ -3848,6 +4140,7 @@ module.exports = [
           {
             "code": "ARIN 5201",
             "name": "Machine Learning for Computer Vision",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ai/"
@@ -3855,6 +4148,7 @@ module.exports = [
           {
             "code": "ARIN 5202",
             "name": "Machine Learning for Natural Language Processing",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ai/"
@@ -3862,6 +4156,7 @@ module.exports = [
           {
             "code": "ARIN 5203",
             "name": "Foundation Models and Generative Artificial Intelligence",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ai/"
@@ -3869,6 +4164,7 @@ module.exports = [
           {
             "code": "ARIN 5204",
             "name": "Reinforcement Learning",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ai/"
@@ -3887,6 +4183,7 @@ module.exports = [
           {
             "code": "ARIN 5301",
             "name": "Human-Computer Interaction",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ai/"
@@ -3894,6 +4191,7 @@ module.exports = [
           {
             "code": "ARIN 5302",
             "name": "Medical Image Analysis",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ai/"
@@ -3901,6 +4199,7 @@ module.exports = [
           {
             "code": "ARIN 5303",
             "name": "Artificial Intelligence in Cybersecurity",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ai/"
@@ -3908,6 +4207,7 @@ module.exports = [
           {
             "code": "ARIN 5304",
             "name": "Artificial Intelligence in Healthcare",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ai/"
@@ -3915,6 +4215,7 @@ module.exports = [
           {
             "code": "ARIN 5305",
             "name": "Artificial Intelligence in Software Engineering",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ai/"
@@ -3933,6 +4234,7 @@ module.exports = [
           {
             "code": "ARIN 6900",
             "name": "Independent Project",
+            "creditUnit": "credits",
             "credits": 6,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ai/"
@@ -3951,6 +4253,7 @@ module.exports = [
           {
             "code": "ARIN 6000",
             "name": "Special Topics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ai/"
@@ -3974,6 +4277,7 @@ module.exports = [
           {
             "code": "MIMT 5010",
             "name": "Market Research for Business Applications",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-imt/"
@@ -3981,6 +4285,7 @@ module.exports = [
           {
             "code": "MIMT 5020",
             "name": "Managerial Decision Making",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-imt/"
@@ -3988,6 +4293,7 @@ module.exports = [
           {
             "code": "MIMT 5110",
             "name": "Doing Business in Asia",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-imt/"
@@ -3995,6 +4301,7 @@ module.exports = [
           {
             "code": "MIMT 5310",
             "name": "Understanding Consumers: A Strategic Approach",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-imt/"
@@ -4002,6 +4309,7 @@ module.exports = [
           {
             "code": "MIMT 5350",
             "name": "Project Management",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-imt/"
@@ -4020,6 +4328,7 @@ module.exports = [
           {
             "code": "MIMT 5120",
             "name": "Strategic Management in Asia",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-imt/"
@@ -4027,6 +4336,7 @@ module.exports = [
           {
             "code": "MIMT 5200",
             "name": "Global Citizenship: Responsible Citizenship and Global Sustainability",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-imt/"
@@ -4034,6 +4344,7 @@ module.exports = [
           {
             "code": "MIMT 5210",
             "name": "Managing Global Complexity",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-imt/"
@@ -4052,6 +4363,7 @@ module.exports = [
           {
             "code": "MGMT 5983",
             "name": "Introduction to Management",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-imt/"
@@ -4070,6 +4382,7 @@ module.exports = [
           {
             "code": "MIMT 6110",
             "name": "Skill Seminar I",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-imt/"
@@ -4077,6 +4390,7 @@ module.exports = [
           {
             "code": "MIMT 6120",
             "name": "Skill Seminar II",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-imt/"
@@ -4084,6 +4398,7 @@ module.exports = [
           {
             "code": "MIMT 6200",
             "name": "Business Project",
+            "creditUnit": "credits",
             "credits": 5,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-imt/"
@@ -4105,6 +4420,7 @@ module.exports = [
           {
             "code": "LANG 1411",
             "name": "Elementary Putonghua for Non-Chinese Language Background Students",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-imt/",
@@ -4151,6 +4467,7 @@ module.exports = [
           {
             "code": "MIMT 6300",
             "name": "International Internship",
+            "creditUnit": "credits",
             "credits": 0,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-imt/",
@@ -4173,6 +4490,7 @@ module.exports = [
           {
             "code": "MSBD 5001",
             "name": "Foundations of Data Analytics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-bdt/"
@@ -4180,6 +4498,7 @@ module.exports = [
           {
             "code": "MSBD 5002",
             "name": "Data Mining and Knowledge Discovery",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-bdt/"
@@ -4187,6 +4506,7 @@ module.exports = [
           {
             "code": "MSBD 5003",
             "name": "Big Data Computing",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-bdt/"
@@ -4194,6 +4514,7 @@ module.exports = [
           {
             "code": "MSBD 5004",
             "name": "Mathematical Methods for Data Analysis",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-bdt/"
@@ -4201,6 +4522,7 @@ module.exports = [
           {
             "code": "MSBD 6910",
             "name": "Independent Project",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-bdt/"
@@ -4219,6 +4541,7 @@ module.exports = [
           {
             "code": "MSBD 5005",
             "name": "Data Visualization",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-bdt/"
@@ -4226,6 +4549,7 @@ module.exports = [
           {
             "code": "MSBD 5006",
             "name": "Quantitative Analysis of Financial Time Series",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-bdt/"
@@ -4233,6 +4557,7 @@ module.exports = [
           {
             "code": "MSBD 5007",
             "name": "Optimization and Matrix Computation",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-bdt/"
@@ -4240,6 +4565,7 @@ module.exports = [
           {
             "code": "MSBD 5008",
             "name": "Introduction to Social Computing",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-bdt/"
@@ -4247,6 +4573,7 @@ module.exports = [
           {
             "code": "MSBD 5009",
             "name": "Parallel Programming",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-bdt/"
@@ -4254,6 +4581,7 @@ module.exports = [
           {
             "code": "MSBD 5010",
             "name": "Image Processing and Analysis",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-bdt/"
@@ -4261,6 +4589,7 @@ module.exports = [
           {
             "code": "MSBD 5012",
             "name": "Machine Learning",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-bdt/"
@@ -4268,6 +4597,7 @@ module.exports = [
           {
             "code": "MSBD 5013",
             "name": "Statistical Prediction",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-bdt/"
@@ -4275,6 +4605,7 @@ module.exports = [
           {
             "code": "MSBD 5015",
             "name": "Artificial Intelligence",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-bdt/"
@@ -4282,6 +4613,7 @@ module.exports = [
           {
             "code": "MSBD 5016",
             "name": "Deep Learning Meets Computer Vision: Practice and Applications",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-bdt/"
@@ -4289,6 +4621,7 @@ module.exports = [
           {
             "code": "MSBD 5017",
             "name": "Introduction to Blockchain Technology",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-bdt/"
@@ -4296,6 +4629,7 @@ module.exports = [
           {
             "code": "MSBD 5018",
             "name": "Natural Language Processing",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-bdt/"
@@ -4303,6 +4637,7 @@ module.exports = [
           {
             "code": "MSBD 5019",
             "name": "Spatial and Multimedia Databases",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-bdt/"
@@ -4310,6 +4645,7 @@ module.exports = [
           {
             "code": "MSBD 5020",
             "name": "Database Systems",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-bdt/"
@@ -4317,6 +4653,7 @@ module.exports = [
           {
             "code": "MSBD 5021",
             "name": "Reinforcement Learning with Financial Applications",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-bdt/"
@@ -4324,6 +4661,7 @@ module.exports = [
           {
             "code": "MSBD 5022",
             "name": "Fintech: Foundation and Applications",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-bdt/"
@@ -4331,6 +4669,7 @@ module.exports = [
           {
             "code": "MSBD 5023",
             "name": "Big Data Algorithms",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-bdt/"
@@ -4338,6 +4677,7 @@ module.exports = [
           {
             "code": "MSBD 6000",
             "name": "Special Topics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-bdt/"
@@ -4361,6 +4701,7 @@ module.exports = [
           {
             "code": "MARK 5120",
             "name": "Marketing Strategy",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mark/"
@@ -4368,6 +4709,7 @@ module.exports = [
           {
             "code": "MARK 5290",
             "name": "Understanding Consumers",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mark/"
@@ -4375,6 +4717,7 @@ module.exports = [
           {
             "code": "MARK 5310",
             "name": "Applied Marketing Research for Managers",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mark/"
@@ -4382,6 +4725,7 @@ module.exports = [
           {
             "code": "MARK 5330",
             "name": "Brand Management",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mark/"
@@ -4389,6 +4733,7 @@ module.exports = [
           {
             "code": "MARK 5390",
             "name": "Global Marketing",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mark/"
@@ -4396,6 +4741,7 @@ module.exports = [
           {
             "code": "MARK 5400",
             "name": "Marketing Analytics",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mark/"
@@ -4403,6 +4749,7 @@ module.exports = [
           {
             "code": "MARK 5430",
             "name": "Digital Marketing",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mark/"
@@ -4436,6 +4783,7 @@ module.exports = [
           {
             "code": "BEHI 5005",
             "name": "Bioimaging and Bio-signal Analysis",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-behi/"
@@ -4443,6 +4791,7 @@ module.exports = [
           {
             "code": "BEHI 5013",
             "name": "Equilibrium Behaviors, Rate Processes, and Transport Phenomena in Biological Systems",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-behi/"
@@ -4450,6 +4799,7 @@ module.exports = [
           {
             "code": "BEHI 5001",
             "name": "Data Science in Bioengineering",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-behi/"
@@ -4457,6 +4807,7 @@ module.exports = [
           {
             "code": "BEHI 5002",
             "name": "Biomaterials Engineering",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-behi/"
@@ -4464,6 +4815,7 @@ module.exports = [
           {
             "code": "BEHI 5003",
             "name": "Molecular and Cellular Bioengineering",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-behi/"
@@ -4471,6 +4823,7 @@ module.exports = [
           {
             "code": "BEHI 5004",
             "name": "Fundamentals and Applications of Sensing Technology in Healthcare",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-behi/"
@@ -4478,6 +4831,7 @@ module.exports = [
           {
             "code": "BEHI 5006",
             "name": "Synthetic Biology",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-behi/"
@@ -4485,6 +4839,7 @@ module.exports = [
           {
             "code": "BEHI 5007",
             "name": "Genomics, Proteomics and Metabolomics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-behi/"
@@ -4503,6 +4858,7 @@ module.exports = [
           {
             "code": "BEHI 5008",
             "name": "Pharmaceutical Engineering",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-behi/"
@@ -4510,6 +4866,7 @@ module.exports = [
           {
             "code": "BEHI 5009",
             "name": "Protein Engineering",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-behi/"
@@ -4517,6 +4874,7 @@ module.exports = [
           {
             "code": "BEHI 5010",
             "name": "Advanced Biochemical Engineering",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-behi/"
@@ -4524,6 +4882,7 @@ module.exports = [
           {
             "code": "BEHI 5011",
             "name": "Artificial Intelligence and Medical Imaging",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-behi/"
@@ -4531,6 +4890,7 @@ module.exports = [
           {
             "code": "BEHI 5012",
             "name": "Regulation, Ethics, Innovation, and Career Development in Biotechnology Industry",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-behi/"
@@ -4538,6 +4898,7 @@ module.exports = [
           {
             "code": "BEHI 5501",
             "name": "Deep Learning for Chemical and Biological Engineering",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-behi/"
@@ -4545,6 +4906,7 @@ module.exports = [
           {
             "code": "BEHI 6000",
             "name": "Special Topics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-behi/"
@@ -4552,6 +4914,7 @@ module.exports = [
           {
             "code": "BEHI 6101",
             "name": "Independent Project",
+            "creditUnit": "credits",
             "creditsMin": 3,
             "creditsMax": 6,
             "appliesToTrackIds": [],
@@ -4560,6 +4923,7 @@ module.exports = [
           {
             "code": "BEHI 6102",
             "name": "Integrated Design Project",
+            "creditUnit": "credits",
             "creditsMin": 3,
             "creditsMax": 6,
             "appliesToTrackIds": [],
@@ -4584,6 +4948,7 @@ module.exports = [
           {
             "code": "MATE 5001",
             "name": "Thermodynamics and Phase Diagram in Materials Science and Engineering",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mate/"
@@ -4591,6 +4956,7 @@ module.exports = [
           {
             "code": "MATE 5002",
             "name": "Materials Synthesis and Characterization",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mate/"
@@ -4598,6 +4964,7 @@ module.exports = [
           {
             "code": "MATE 5003",
             "name": "Multi-Functional Materials and Devices",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mate/"
@@ -4605,6 +4972,7 @@ module.exports = [
           {
             "code": "MATE 5004",
             "name": "Nanomaterials and Nanotechnologies",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mate/"
@@ -4612,6 +4980,7 @@ module.exports = [
           {
             "code": "MATE 5005",
             "name": "Entrepreneurship of Materials Technologies",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mate/"
@@ -4619,6 +4988,7 @@ module.exports = [
           {
             "code": "MATE 5006",
             "name": "Soft Matter",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mate/"
@@ -4626,6 +4996,7 @@ module.exports = [
           {
             "code": "MATE 5007",
             "name": "Artificial Intelligence in Materials Science and Engineering",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mate/"
@@ -4644,6 +5015,7 @@ module.exports = [
           {
             "code": "MATE 5010",
             "name": "Biomaterials Engineering",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mate/"
@@ -4651,6 +5023,7 @@ module.exports = [
           {
             "code": "MATE 5011",
             "name": "Pharmaceutical Engineering",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mate/"
@@ -4658,6 +5031,7 @@ module.exports = [
           {
             "code": "MATE 5013",
             "name": "Advanced Polymers for Engineers",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mate/"
@@ -4665,6 +5039,7 @@ module.exports = [
           {
             "code": "MATE 5014",
             "name": "Electrochemical Energy Technologies",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mate/"
@@ -4672,6 +5047,7 @@ module.exports = [
           {
             "code": "MATE 5015",
             "name": "Solar Energy Science and Technology",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mate/"
@@ -4679,6 +5055,7 @@ module.exports = [
           {
             "code": "MATE 5016",
             "name": "Polymer Physics and Advanced Applications",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mate/"
@@ -4686,6 +5063,7 @@ module.exports = [
           {
             "code": "MATE 5017",
             "name": "Iontronic Materials and Applications",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mate/"
@@ -4693,6 +5071,7 @@ module.exports = [
           {
             "code": "MATE 5018",
             "name": "Materials Processing",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mate/"
@@ -4700,6 +5079,7 @@ module.exports = [
           {
             "code": "MATE 6000",
             "name": "Special Topics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mate/"
@@ -4707,6 +5087,7 @@ module.exports = [
           {
             "code": "MATE 6101",
             "name": "Independent Project",
+            "creditUnit": "credits",
             "creditsMin": 3,
             "creditsMax": 6,
             "appliesToTrackIds": [],
@@ -4715,6 +5096,7 @@ module.exports = [
           {
             "code": "MATE 6102",
             "name": "Integrated Design Project",
+            "creditUnit": "credits",
             "creditsMin": 3,
             "creditsMax": 6,
             "appliesToTrackIds": [],
@@ -4739,6 +5121,7 @@ module.exports = [
           {
             "code": "BTEC 5210",
             "name": "Principles and Application in Biotechnology",
+            "creditUnit": "credits",
             "credits": 4,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-biot/"
@@ -4746,6 +5129,7 @@ module.exports = [
           {
             "code": "BTEC 5220",
             "name": "Business Operations of Biotechnology",
+            "creditUnit": "credits",
             "credits": 4,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-biot/"
@@ -4753,6 +5137,7 @@ module.exports = [
           {
             "code": "BTEC 5260",
             "name": "Bioanalytical Technology",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-biot/"
@@ -4760,6 +5145,7 @@ module.exports = [
           {
             "code": "BTEC 5760",
             "name": "Concepts in Bioprocessing",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-biot/"
@@ -4778,6 +5164,7 @@ module.exports = [
           {
             "code": "BTEC 5340",
             "name": "Biomarkers and Medical Devices",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-biot/"
@@ -4785,6 +5172,7 @@ module.exports = [
           {
             "code": "BTEC 5360",
             "name": "Biopharmaceutical Workshop",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-biot/"
@@ -4792,6 +5180,7 @@ module.exports = [
           {
             "code": "BTEC 5380",
             "name": "Drug Discovery and Development",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-biot/"
@@ -4799,6 +5188,7 @@ module.exports = [
           {
             "code": "BTEC 5550",
             "name": "Nutraceuticals and Transgenic Products",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-biot/"
@@ -4806,6 +5196,7 @@ module.exports = [
           {
             "code": "BTEC 5630",
             "name": "Recombinant DNA Technology and Bioproducts",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-biot/"
@@ -4813,6 +5204,7 @@ module.exports = [
           {
             "code": "BTEC 5900",
             "name": "Immuno Biotechnology",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-biot/"
@@ -4820,6 +5212,7 @@ module.exports = [
           {
             "code": "DRAP 5101",
             "name": "Global Pharmaceutical Policy: Rationales and Stakeholders",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-biot/"
@@ -4827,6 +5220,7 @@ module.exports = [
           {
             "code": "DRAP 5102",
             "name": "Biopharmaceuticals: Quality Development and Documentation",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-biot/"
@@ -4834,6 +5228,7 @@ module.exports = [
           {
             "code": "DRAP 5103",
             "name": "Big Data, Artificial Intelligence and Machine Learning in Drug Safety",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-biot/"
@@ -4841,6 +5236,7 @@ module.exports = [
           {
             "code": "EEMT 5260",
             "name": "Product Development Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-biot/"
@@ -4848,6 +5244,7 @@ module.exports = [
           {
             "code": "EEMT 5510",
             "name": "Engineering Economics and Cost Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-biot/"
@@ -4855,6 +5252,7 @@ module.exports = [
           {
             "code": "LIFS 4380",
             "name": "Pharmacology and Toxicology",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-biot/"
@@ -4862,6 +5260,7 @@ module.exports = [
           {
             "code": "LIFS 5260",
             "name": "Biochemical and Molecular Basis of Diseases",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-biot/"
@@ -4869,6 +5268,7 @@ module.exports = [
           {
             "code": "LIFS 5710",
             "name": "Cellular Regulation",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-biot/"
@@ -4887,6 +5287,7 @@ module.exports = [
           {
             "code": "BTEC 6900",
             "name": "Case Investigation in Biotechnology",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-biot/"
@@ -4894,6 +5295,7 @@ module.exports = [
           {
             "code": "BTEC 6930",
             "name": "Directed Biotechnological Research",
+            "creditUnit": "credits",
             "credits": 4,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-biot/"
@@ -4901,6 +5303,7 @@ module.exports = [
           {
             "code": "BTEC 6940",
             "name": "Advanced Biotechnological Research",
+            "creditUnit": "credits",
             "credits": 4,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-biot/"
@@ -4924,6 +5327,7 @@ module.exports = [
           {
             "code": "MAED 5021",
             "name": "Mathematical Analysis and Its Applications I",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-maed/"
@@ -4931,6 +5335,7 @@ module.exports = [
           {
             "code": "MAED 5121",
             "name": "Algebra and Its Applications I",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-maed/"
@@ -4938,6 +5343,7 @@ module.exports = [
           {
             "code": "MAED 5421",
             "name": "Probability and Statistics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-maed/"
@@ -4945,6 +5351,7 @@ module.exports = [
           {
             "code": "MAED 5731",
             "name": "Problem Solving Strategies",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-maed/"
@@ -4963,6 +5370,7 @@ module.exports = [
           {
             "code": "MAED 5032",
             "name": "Applications of Geometry and Analysis",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-maed/"
@@ -4970,6 +5378,7 @@ module.exports = [
           {
             "code": "MAED 5033",
             "name": "Complex Analysis for Mathematics Educators",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-maed/"
@@ -4977,6 +5386,7 @@ module.exports = [
           {
             "code": "MAED 5111",
             "name": "Classical and Abstract Algebra",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-maed/"
@@ -4984,6 +5394,7 @@ module.exports = [
           {
             "code": "MAED 5211",
             "name": "Classical and Modern Geometry",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-maed/"
@@ -4991,6 +5402,7 @@ module.exports = [
           {
             "code": "MAED 5321",
             "name": "Combinatorics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-maed/"
@@ -4998,6 +5410,7 @@ module.exports = [
           {
             "code": "MAED 5322",
             "name": "Methodology of Mathematics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-maed/"
@@ -5005,6 +5418,7 @@ module.exports = [
           {
             "code": "MAED 5511",
             "name": "Teaching Mathematics in the Digital Age",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-maed/"
@@ -5012,6 +5426,7 @@ module.exports = [
           {
             "code": "MAED 5611",
             "name": "Pedagogy in Mathematics Teaching",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-maed/"
@@ -5019,6 +5434,7 @@ module.exports = [
           {
             "code": "MAED 5821",
             "name": "Topics in Mathematics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-maed/"
@@ -5026,6 +5442,7 @@ module.exports = [
           {
             "code": "MAED 5841",
             "name": "Topics in Applied Mathematics for Mathematics Educators",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-maed/"
@@ -5033,6 +5450,7 @@ module.exports = [
           {
             "code": "MAED 5851",
             "name": "Scientific Computation",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-maed/"
@@ -5040,6 +5458,7 @@ module.exports = [
           {
             "code": "MAED 6980",
             "name": "MSc Project",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-maed/"
@@ -5047,6 +5466,7 @@ module.exports = [
           {
             "code": "MAED 6981",
             "name": "Independent Study",
+            "creditUnit": "credits",
             "creditsMin": 1,
             "creditsMax": 3,
             "appliesToTrackIds": [],
@@ -5071,6 +5491,7 @@ module.exports = [
           {
             "code": "ISOM 5270",
             "name": "Big Data Analytics",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ba/"
@@ -5078,6 +5499,7 @@ module.exports = [
           {
             "code": "ISOM 5460",
             "name": "Project Management",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ba/"
@@ -5085,6 +5507,7 @@ module.exports = [
           {
             "code": "ISOM 5510",
             "name": "Data Analysis",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ba/"
@@ -5092,6 +5515,7 @@ module.exports = [
           {
             "code": "ISOM 5535",
             "name": "High Dimensional Statistics with Business Applications",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ba/"
@@ -5099,6 +5523,7 @@ module.exports = [
           {
             "code": "ISOM 5610",
             "name": "Introduction to Business Analytics",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ba/"
@@ -5106,6 +5531,7 @@ module.exports = [
           {
             "code": "ISOM 5620",
             "name": "Visual Analytics for Business Decisions",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ba/"
@@ -5113,6 +5539,7 @@ module.exports = [
           {
             "code": "ISOM 5715",
             "name": "Decision Analytics",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ba/"
@@ -5120,6 +5547,7 @@ module.exports = [
           {
             "code": "ISOM 5810",
             "name": "Business Modeling and Optimization",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ba/"
@@ -5153,6 +5581,7 @@ module.exports = [
           {
             "code": "MESF 6950",
             "name": "Independent Project",
+            "creditUnit": "credits",
             "creditsMin": 3,
             "creditsMax": 6,
             "appliesToTrackIds": [],
@@ -5175,6 +5604,7 @@ module.exports = [
           {
             "code": "MESF 5010",
             "name": "Foundation of Solid Mechanics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-036-MATERIALS-TECHNOLOGY"
@@ -5187,6 +5617,7 @@ module.exports = [
           {
             "code": "MESF 5050",
             "name": "Fracture Behavior of Polymers",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-036-MATERIALS-TECHNOLOGY"
@@ -5199,6 +5630,7 @@ module.exports = [
           {
             "code": "MESF 5370",
             "name": "Composites and Nanocomposites",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-036-MATERIALS-TECHNOLOGY"
@@ -5211,6 +5643,7 @@ module.exports = [
           {
             "code": "MESF 5430",
             "name": "Thermodynamics and Kinetics of Materials",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-036-MATERIALS-TECHNOLOGY"
@@ -5223,6 +5656,7 @@ module.exports = [
           {
             "code": "MESF 5940",
             "name": "Advanced Materials Analytics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-036-MATERIALS-TECHNOLOGY"
@@ -5235,6 +5669,7 @@ module.exports = [
           {
             "code": "MESF 5950",
             "name": "Mechanical Properties and Microstructure of Materials",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-036-MATERIALS-TECHNOLOGY"
@@ -5247,6 +5682,7 @@ module.exports = [
           {
             "code": "MESF 5970",
             "name": "Smart Materials, Sensors and Transducers",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-036-MATERIALS-TECHNOLOGY"
@@ -5259,6 +5695,7 @@ module.exports = [
           {
             "code": "MESF 6910",
             "name": "Special Topics in Mechanical Engineering",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-036-MATERIALS-TECHNOLOGY"
@@ -5289,6 +5726,7 @@ module.exports = [
           {
             "code": "MCEE 5110",
             "name": "Theory and Practice in Heterogeneous Catalysis",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-cee/"
@@ -5296,6 +5734,7 @@ module.exports = [
           {
             "code": "MCEE 5120",
             "name": "Power Generation Technologies",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-cee/"
@@ -5303,6 +5742,7 @@ module.exports = [
           {
             "code": "MCEE 5130",
             "name": "Decarbonization Technologies",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-cee/"
@@ -5310,6 +5750,7 @@ module.exports = [
           {
             "code": "MCEE 5210",
             "name": "Advanced Separation Processes",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-cee/"
@@ -5317,6 +5758,7 @@ module.exports = [
           {
             "code": "MCEE 5610",
             "name": "Advanced Biochemical Engineering",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-cee/"
@@ -5324,6 +5766,7 @@ module.exports = [
           {
             "code": "MCEE 5750",
             "name": "Process Safety Management and Risk Analysis",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-cee/"
@@ -5331,6 +5774,7 @@ module.exports = [
           {
             "code": "MCEE 5820",
             "name": "Energy, Environment and Sustainable Development",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-cee/"
@@ -5338,6 +5782,7 @@ module.exports = [
           {
             "code": "MCEE 5830",
             "name": "Electrochemical Energy Technologies",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-cee/"
@@ -5345,6 +5790,7 @@ module.exports = [
           {
             "code": "MCEE 5910",
             "name": "Process Reactor Selection and Design",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-cee/"
@@ -5363,6 +5809,7 @@ module.exports = [
           {
             "code": "MCEE 5015",
             "name": "Solar Energy Science and Technology",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-cee/"
@@ -5370,6 +5817,7 @@ module.exports = [
           {
             "code": "MCEE 5501",
             "name": "Deep Learning for Chemical and Biological Engineering",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-cee/"
@@ -5377,6 +5825,7 @@ module.exports = [
           {
             "code": "MCEE 5502",
             "name": "Energy Policy",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-cee/"
@@ -5384,6 +5833,7 @@ module.exports = [
           {
             "code": "MCEE 5520",
             "name": "Advanced Polymers for Engineers",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-cee/"
@@ -5391,6 +5841,7 @@ module.exports = [
           {
             "code": "MCEE 5810",
             "name": "Energy Integration and Optimization for Process Industry",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-cee/"
@@ -5398,6 +5849,7 @@ module.exports = [
           {
             "code": "MCEE 5860",
             "name": "Chemical Product Engineering",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-cee/"
@@ -5405,6 +5857,7 @@ module.exports = [
           {
             "code": "MCEE 6000",
             "name": "Special Topics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-cee/"
@@ -5412,6 +5865,7 @@ module.exports = [
           {
             "code": "MCEE 6980",
             "name": "Independent Project",
+            "creditUnit": "credits",
             "creditsMin": 3,
             "creditsMax": 6,
             "appliesToTrackIds": [],
@@ -5436,6 +5890,7 @@ module.exports = [
           {
             "code": "MSPY 5110",
             "name": "Data Analysis for Physics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-phys/"
@@ -5443,6 +5898,7 @@ module.exports = [
           {
             "code": "MSPY 5120",
             "name": "Contemporary Physics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-phys/"
@@ -5450,6 +5906,7 @@ module.exports = [
           {
             "code": "MSPY 6771",
             "name": "MSc Physics Seminars and Tutorials",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-phys/"
@@ -5468,6 +5925,7 @@ module.exports = [
           {
             "code": "MSPY 5001",
             "name": "Semiconductor Devices and Processing",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-phys/"
@@ -5475,6 +5933,7 @@ module.exports = [
           {
             "code": "MSPY 5002",
             "name": "Quantum Materials and Technologies for Quantum Devices and Sensors",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-phys/"
@@ -5482,6 +5941,7 @@ module.exports = [
           {
             "code": "MSPY 5003",
             "name": "Metamaterials and Applications",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-phys/"
@@ -5489,6 +5949,7 @@ module.exports = [
           {
             "code": "MSPY 5004",
             "name": "Topological and 2D Materials: Physics and Applications",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-phys/"
@@ -5496,6 +5957,7 @@ module.exports = [
           {
             "code": "MSPY 5210",
             "name": "Physical Properties of Materials",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-phys/"
@@ -5503,6 +5965,7 @@ module.exports = [
           {
             "code": "MSPY 5220",
             "name": "Experimental Techniques for Material Characterization",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-phys/"
@@ -5510,6 +5973,7 @@ module.exports = [
           {
             "code": "MSPY 5230",
             "name": "Computational and Simulation Tools",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-phys/"
@@ -5517,6 +5981,7 @@ module.exports = [
           {
             "code": "MSPY 5240",
             "name": "Computational Methods in Science",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-phys/"
@@ -5524,6 +5989,7 @@ module.exports = [
           {
             "code": "MSPY 5250",
             "name": "Applications of Artificial Intelligence in Science",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-phys/"
@@ -5531,6 +5997,7 @@ module.exports = [
           {
             "code": "MSPY 6001",
             "name": "Advanced Research Projects",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-phys/"
@@ -5538,6 +6005,7 @@ module.exports = [
           {
             "code": "MSDM 5054",
             "name": "Statistical Machine Learning",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-phys/"
@@ -5545,6 +6013,7 @@ module.exports = [
           {
             "code": "MSDM 5058",
             "name": "Information Science",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-phys/"
@@ -5552,6 +6021,7 @@ module.exports = [
           {
             "code": "PHYS 5120",
             "name": "Computational Energy Materials and Electronic Structure Simulations",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-phys/"
@@ -5559,6 +6029,7 @@ module.exports = [
           {
             "code": "PHYS 5170",
             "name": "Solid State Physics I",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-phys/"
@@ -5566,6 +6037,7 @@ module.exports = [
           {
             "code": "PHYS 5260",
             "name": "Advanced Quantum Mechanics",
+            "creditUnit": "credits",
             "credits": 4,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-phys/"
@@ -5573,6 +6045,7 @@ module.exports = [
           {
             "code": "PHYS 5310",
             "name": "Statistical Mechanics I",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-phys/"
@@ -5580,6 +6053,7 @@ module.exports = [
           {
             "code": "PHYS 5520",
             "name": "Introduction to Quantum Field Theory",
+            "creditUnit": "credits",
             "credits": 4,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-phys/"
@@ -5587,6 +6061,7 @@ module.exports = [
           {
             "code": "PHYS 5820",
             "name": "Diffraction and Imaging Techniques in Materials Science",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-phys/"
@@ -5610,6 +6085,7 @@ module.exports = [
           {
             "code": "MSDM 5001",
             "name": "Introduction to Computational and Modeling Tools",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ddm/"
@@ -5617,6 +6093,7 @@ module.exports = [
           {
             "code": "MSDM 5002",
             "name": "Scientific Programming and Visualization",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ddm/"
@@ -5624,6 +6101,7 @@ module.exports = [
           {
             "code": "MSDM 5003",
             "name": "Stochastic Processes and Applications",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ddm/"
@@ -5631,6 +6109,7 @@ module.exports = [
           {
             "code": "MSDM 5004",
             "name": "Numerical Methods and Modeling in Science",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ddm/"
@@ -5638,6 +6117,7 @@ module.exports = [
           {
             "code": "MSDM 6771",
             "name": "Data-Driven Modeling Seminars and Tutorials",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ddm/"
@@ -5656,6 +6136,7 @@ module.exports = [
           {
             "code": "MSDM 5005",
             "name": "Innovation in Practice",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ddm/"
@@ -5663,6 +6144,7 @@ module.exports = [
           {
             "code": "MSDM 5051",
             "name": "Programming Algorithm and Architecture with AI",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ddm/"
@@ -5670,6 +6152,7 @@ module.exports = [
           {
             "code": "MSDM 5053",
             "name": "Quantitative Analysis of Time Series",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ddm/"
@@ -5677,6 +6160,7 @@ module.exports = [
           {
             "code": "MSDM 5054",
             "name": "Statistical Machine Learning",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ddm/"
@@ -5684,6 +6168,7 @@ module.exports = [
           {
             "code": "MSDM 5055",
             "name": "Deep Learning for Modeling: Concepts, Tools, and Techniques",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ddm/"
@@ -5691,6 +6176,7 @@ module.exports = [
           {
             "code": "MSDM 5056",
             "name": "Network Modeling",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ddm/"
@@ -5698,6 +6184,7 @@ module.exports = [
           {
             "code": "MSDM 5057",
             "name": "Business Literacy for Data Professionals",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ddm/"
@@ -5705,6 +6192,7 @@ module.exports = [
           {
             "code": "MSDM 5058",
             "name": "Information Science",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ddm/"
@@ -5712,6 +6200,7 @@ module.exports = [
           {
             "code": "MSDM 5059",
             "name": "Operations Research and Optimization",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ddm/"
@@ -5719,6 +6208,7 @@ module.exports = [
           {
             "code": "MSDM 6980",
             "name": "Computational Modeling and Simulation Project",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ddm/"
@@ -5726,6 +6216,7 @@ module.exports = [
           {
             "code": "PHYS 5120",
             "name": "Computational Energy Materials and Electronic Structure Simulations",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ddm/"
@@ -5749,6 +6240,7 @@ module.exports = [
           {
             "code": "MTLE 5001",
             "name": "Technology Leadership and Entrepreneurship",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-tle/"
@@ -5756,6 +6248,7 @@ module.exports = [
           {
             "code": "MTLE 5110",
             "name": "Product Development and Prototyping",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-tle/"
@@ -5763,6 +6256,7 @@ module.exports = [
           {
             "code": "MTLE 5810",
             "name": "Startup Workshop",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-tle/"
@@ -5781,6 +6275,7 @@ module.exports = [
           {
             "code": "MTLE 6980",
             "name": "Technology Leadership and Entrepreneurship Project",
+            "creditUnit": "credits",
             "credits": 9,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-tle/"
@@ -5814,6 +6309,7 @@ module.exports = [
           {
             "code": "DRAP 5001",
             "name": "Introduction to Drug Regulatory Science with Quality by Design",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-drap/"
@@ -5821,6 +6317,7 @@ module.exports = [
           {
             "code": "DRAP 5002",
             "name": "Drugs, Biologics and Medical Devices Development: Leadership Role",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-drap/"
@@ -5828,6 +6325,7 @@ module.exports = [
           {
             "code": "DRAP 5003",
             "name": "Safety of Medicines: From Non-clinical Development to Pharmacovigilance",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-drap/"
@@ -5835,6 +6333,7 @@ module.exports = [
           {
             "code": "DRAP 5004",
             "name": "China/USA/EU Regulatory Environment: Procedures and Applications",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-drap/"
@@ -5853,6 +6352,7 @@ module.exports = [
           {
             "code": "BTEC 5220",
             "name": "Business Operations of Biotechnology",
+            "creditUnit": "credits",
             "credits": 4,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-drap/"
@@ -5860,6 +6360,7 @@ module.exports = [
           {
             "code": "BTEC 5340",
             "name": "Biomarkers and Medical Devices",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-drap/"
@@ -5867,6 +6368,7 @@ module.exports = [
           {
             "code": "BTEC 5380",
             "name": "Drug Discovery and Development",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-drap/"
@@ -5874,6 +6376,7 @@ module.exports = [
           {
             "code": "BTEC 5550",
             "name": "Nutraceuticals and Transgenic Products",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-drap/"
@@ -5881,6 +6384,7 @@ module.exports = [
           {
             "code": "DRAP 5101",
             "name": "Global Pharmaceutical Policy: Rationales and Stakeholders",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-drap/"
@@ -5888,6 +6392,7 @@ module.exports = [
           {
             "code": "DRAP 5102",
             "name": "Biopharmaceuticals: Quality Development and Documentation",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-drap/"
@@ -5895,6 +6400,7 @@ module.exports = [
           {
             "code": "DRAP 5103",
             "name": "Big Data, Artificial Intelligence and Machine Learning in Drug Safety",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-drap/"
@@ -5902,6 +6408,7 @@ module.exports = [
           {
             "code": "DRAP 5104",
             "name": "Digital Health",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-drap/"
@@ -5909,6 +6416,7 @@ module.exports = [
           {
             "code": "DRAP 5105",
             "name": "Market Access for Pharmaceutical Products: Trends and Challenges",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-drap/"
@@ -5916,6 +6424,7 @@ module.exports = [
           {
             "code": "DRAP 5106",
             "name": "Clinical Pharmacology and Biostatistics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-drap/"
@@ -5923,6 +6432,7 @@ module.exports = [
           {
             "code": "DRAP 5107",
             "name": "Principles of Clinical Trials for Regulatory Approval",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-drap/"
@@ -5930,6 +6440,7 @@ module.exports = [
           {
             "code": "DRAP 6201",
             "name": "Industrial Internship",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-drap/"
@@ -5937,6 +6448,7 @@ module.exports = [
           {
             "code": "DRAP 6202",
             "name": "Regulatory Affairs Capstone Project",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-drap/"
@@ -5944,6 +6456,7 @@ module.exports = [
           {
             "code": "ELBT 5101",
             "name": "Intellectual Property in Biotech Ventures",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-drap/"
@@ -5951,6 +6464,7 @@ module.exports = [
           {
             "code": "ELBT 5102",
             "name": "Legal Frameworks for Biotech Business",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-drap/"
@@ -5958,6 +6472,7 @@ module.exports = [
           {
             "code": "ELBT 5103",
             "name": "Applications of AI in Different Biotech Sectors",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-drap/"
@@ -5965,6 +6480,7 @@ module.exports = [
           {
             "code": "ELBT 5104",
             "name": "Managing Biotech Projects, Teams and Operations",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-drap/"
@@ -5972,6 +6488,7 @@ module.exports = [
           {
             "code": "ELBT 5105",
             "name": "Strategic Decision-Making in Biotech Ventures",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-drap/"
@@ -5995,6 +6512,7 @@ module.exports = [
           {
             "code": "EESM 5515",
             "name": "IP Networks",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-telecom/"
@@ -6002,6 +6520,7 @@ module.exports = [
           {
             "code": "EESM 5536",
             "name": "Digital Communications: From Fundamentals to AI-Native Networks",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-telecom/"
@@ -6009,6 +6528,7 @@ module.exports = [
           {
             "code": "EESM 5539",
             "name": "Wireless Communication Networks",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-telecom/"
@@ -6016,6 +6536,7 @@ module.exports = [
           {
             "code": "EESM 5540",
             "name": "Introduction to Telecommunication Networks",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-telecom/"
@@ -6023,6 +6544,7 @@ module.exports = [
           {
             "code": "EESM 5546",
             "name": "Wireless Communication Systems",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-telecom/"
@@ -6030,6 +6552,7 @@ module.exports = [
           {
             "code": "EESM 5547",
             "name": "Multimedia Signal Processing",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-telecom/"
@@ -6037,6 +6560,7 @@ module.exports = [
           {
             "code": "EESM 5548",
             "name": "Mobile Edge Computing and Edge AI for 6G",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-telecom/"
@@ -6044,16 +6568,10 @@ module.exports = [
           {
             "code": "EESM 5820",
             "name": "Emerging Technologies in Telecommunications and 6G",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-telecom/"
-          },
-          {
-            "code": "EESM 5910",
-            "name": "Topics in Telecommunications and Network Convergence",
-            "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-telecom/",
-            "credits": 3,
-            "appliesToTrackIds": []
           },
           {
             "code": "EESM 6000-6009",
@@ -6078,6 +6596,7 @@ module.exports = [
           {
             "code": "EESM 6980",
             "name": "MSc Project",
+            "creditUnit": "credits",
             "creditsMin": 1,
             "creditsMax": 4,
             "appliesToTrackIds": [],
@@ -6102,6 +6621,7 @@ module.exports = [
           {
             "code": "ECON 5130",
             "name": "Microeconomic Analysis",
+            "creditUnit": "credits",
             "credits": 4,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/"
@@ -6109,6 +6629,7 @@ module.exports = [
           {
             "code": "ECON 5140",
             "name": "Macroeconomic Analysis",
+            "creditUnit": "credits",
             "credits": 4,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/"
@@ -6116,6 +6637,7 @@ module.exports = [
           {
             "code": "ECON 5150",
             "name": "Mathematical Foundations for Economic Analysis",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/"
@@ -6123,6 +6645,7 @@ module.exports = [
           {
             "code": "ECON 5280",
             "name": "Applied Econometrics",
+            "creditUnit": "credits",
             "credits": 4,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/"
@@ -6141,6 +6664,7 @@ module.exports = [
           {
             "code": "ECON 6950",
             "name": "MSc Project",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/"
@@ -6211,6 +6735,7 @@ module.exports = [
           {
             "code": "ECON 6980",
             "name": "Independent Project",
+            "creditUnit": "credits",
             "credits": 6,
             "appliesToTrackIds": [
               "HKUST-TPG-043-RESEARCH-PREPARATION"
@@ -6241,6 +6766,7 @@ module.exports = [
           {
             "code": "DISC 5101",
             "name": "Geospatial Data Analytics for Urban Infrastructure Planning",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-meng-disc/"
@@ -6248,6 +6774,7 @@ module.exports = [
           {
             "code": "DISC 5102",
             "name": "Remote Sensing and Smart Sensor Networks",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-meng-disc/"
@@ -6255,6 +6782,7 @@ module.exports = [
           {
             "code": "DISC 5103",
             "name": "Digital Twins for Engineering Systems and Smart Cities",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-meng-disc/"
@@ -6262,6 +6790,7 @@ module.exports = [
           {
             "code": "DISC 5104",
             "name": "High-performance Computing for Geotechnical Engineering",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-meng-disc/"
@@ -6269,6 +6798,7 @@ module.exports = [
           {
             "code": "DISC 5105",
             "name": "Autonomous Construction and Robotics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-meng-disc/"
@@ -6276,6 +6806,7 @@ module.exports = [
           {
             "code": "DISC 5201",
             "name": "Sustainable Construction Materials",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-meng-disc/"
@@ -6283,6 +6814,7 @@ module.exports = [
           {
             "code": "DISC 5202",
             "name": "Computer Vision for Structural Health Monitoring",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-meng-disc/"
@@ -6290,6 +6822,7 @@ module.exports = [
           {
             "code": "DISC 5203",
             "name": "Computer Methods for Structural Engineering",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-meng-disc/"
@@ -6297,6 +6830,7 @@ module.exports = [
           {
             "code": "DISC 5204",
             "name": "Low Altitude Economy in Sustainable Cities",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-meng-disc/"
@@ -6304,6 +6838,7 @@ module.exports = [
           {
             "code": "DISC 5205",
             "name": "Smart Transportation Planning",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-meng-disc/"
@@ -6311,6 +6846,7 @@ module.exports = [
           {
             "code": "DISC 5206",
             "name": "Sustainable Design, Planning, and Operation for Net-Zero City",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-meng-disc/"
@@ -6318,6 +6854,7 @@ module.exports = [
           {
             "code": "DISC 5207",
             "name": "Circular Economy in Infrastructure Development",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-meng-disc/"
@@ -6325,6 +6862,7 @@ module.exports = [
           {
             "code": "DISC 5208",
             "name": "Game-Theoretic Models for Smart Urban Infrastructure Systems",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-meng-disc/"
@@ -6332,6 +6870,7 @@ module.exports = [
           {
             "code": "DISC 6000",
             "name": "Special Topics in Digital and Sustainable Cities",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-meng-disc/"
@@ -6339,6 +6878,7 @@ module.exports = [
           {
             "code": "CSIT 5900",
             "name": "Artificial Intelligence",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-meng-disc/"
@@ -6346,6 +6886,7 @@ module.exports = [
           {
             "code": "CSIT 5970",
             "name": "Advanced Cloud Computing",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-meng-disc/"
@@ -6353,13 +6894,15 @@ module.exports = [
           {
             "code": "IBTM 5530",
             "name": "Risk Management and Decision-Making in Intelligent Building",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-meng-disc/"
           },
           {
             "code": "JEVE 5820",
-            "name": "* Energy, Environment and Sustainable Development",
+            "name": "Energy, Environment and Sustainable Development",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-meng-disc/"
@@ -6367,6 +6910,7 @@ module.exports = [
           {
             "code": "JEVE 5900",
             "name": "Carbon Management for Sustainable Environment",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-meng-disc/"
@@ -6374,6 +6918,7 @@ module.exports = [
           {
             "code": "PPOL 5230",
             "name": "Technology, Innovation and Public Policy",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-meng-disc/"
@@ -6381,6 +6926,7 @@ module.exports = [
           {
             "code": "PPOL 5320",
             "name": "Urban Economics and Urban Policy",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-meng-disc/"
@@ -6401,6 +6947,7 @@ module.exports = [
           {
             "code": "DISC 6980",
             "name": "MSc Project",
+            "creditUnit": "credits",
             "credits": 6,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-meng-disc/"
@@ -6421,6 +6968,7 @@ module.exports = [
           {
             "code": "DISC 6500",
             "name": "Industrial Placement",
+            "creditUnit": "credits",
             "credits": 6,
             "appliesToTrackIds": [
               "HKUST-TPG-044-MENG"
@@ -6444,6 +6992,7 @@ module.exports = [
           {
             "code": "EESM 5000",
             "name": "CMOS VLSI Design",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eleg/"
@@ -6451,6 +7000,7 @@ module.exports = [
           {
             "code": "EESM 5060",
             "name": "Embedded Systems",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eleg/"
@@ -6458,6 +7008,7 @@ module.exports = [
           {
             "code": "EESM 5600",
             "name": "Photonics Technology and Applications",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eleg/"
@@ -6465,6 +7016,7 @@ module.exports = [
           {
             "code": "EESM 5620",
             "name": "Flat Panel Displays",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eleg/"
@@ -6472,6 +7024,7 @@ module.exports = [
           {
             "code": "EESM 5650",
             "name": "Digital Communication Networks and Systems",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eleg/"
@@ -6479,6 +7032,7 @@ module.exports = [
           {
             "code": "EESM 5670",
             "name": "Advanced Architectures and Designs for Communication Networks",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eleg/"
@@ -6486,6 +7040,7 @@ module.exports = [
           {
             "code": "EESM 5720",
             "name": "Signal Analysis and Pattern Recognition",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eleg/"
@@ -6493,6 +7048,7 @@ module.exports = [
           {
             "code": "EESM 5740",
             "name": "Stochastic Learning, Estimation, and Control",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eleg/"
@@ -6500,6 +7056,7 @@ module.exports = [
           {
             "code": "EESM 5730",
             "name": "Modern Control Systems Design",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eleg/"
@@ -6507,6 +7064,7 @@ module.exports = [
           {
             "code": "EESM 5760",
             "name": "Integrated Design of RF Wireless Transceiver Systems and Building Blocks",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eleg/"
@@ -6514,6 +7072,7 @@ module.exports = [
           {
             "code": "EESM 5780",
             "name": "Diagnostic Medical Imaging",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eleg/"
@@ -6521,6 +7080,7 @@ module.exports = [
           {
             "code": "EESM 5790",
             "name": "Business for Electronic Engineers",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eleg/"
@@ -6528,6 +7088,7 @@ module.exports = [
           {
             "code": "EESM 5800",
             "name": "Modern Robotics: Theory, Development, and Case Study",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eleg/"
@@ -6535,6 +7096,7 @@ module.exports = [
           {
             "code": "EESM 5830",
             "name": "Engineering Thinking: From Research to Entrepreneurship",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eleg/"
@@ -6542,6 +7104,7 @@ module.exports = [
           {
             "code": "EESM 5840",
             "name": "Introduction to Microsensors",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eleg/"
@@ -6558,6 +7121,7 @@ module.exports = [
           {
             "code": "EESM 6900",
             "name": "Independent Study",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eleg/"
@@ -6581,6 +7145,7 @@ module.exports = [
           {
             "code": "MGMT 5210",
             "name": "Preparing to Lead",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pt-mba-biweekly/"
@@ -6588,6 +7153,7 @@ module.exports = [
           {
             "code": "ACCT 5100",
             "name": "Corporate Reporting",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pt-mba-biweekly/"
@@ -6595,6 +7161,7 @@ module.exports = [
           {
             "code": "ECON 5110",
             "name": "Managerial Microeconomics",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pt-mba-biweekly/"
@@ -6602,6 +7169,7 @@ module.exports = [
           {
             "code": "FINA 5120",
             "name": "Corporate Finance",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pt-mba-biweekly/"
@@ -6609,6 +7177,7 @@ module.exports = [
           {
             "code": "ISOM 5020",
             "name": "Technology Strategy and Management",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pt-mba-biweekly/"
@@ -6616,6 +7185,7 @@ module.exports = [
           {
             "code": "ISOM 5700",
             "name": "Operations Management",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pt-mba-biweekly/"
@@ -6623,6 +7193,7 @@ module.exports = [
           {
             "code": "MARK 5120",
             "name": "Marketing Strategy",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pt-mba-biweekly/"
@@ -6630,6 +7201,7 @@ module.exports = [
           {
             "code": "MGMT 5410",
             "name": "Strategic Management",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pt-mba-biweekly/"
@@ -6637,6 +7209,7 @@ module.exports = [
           {
             "code": "MGMT 5590",
             "name": "Responsible Leadership",
+            "creditUnit": "credits",
             "credits": 2,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pt-mba-biweekly/"
@@ -6680,6 +7253,7 @@ module.exports = [
           {
             "code": "EEMT 5990",
             "name": "Problem Solving for Engineering Managers",
+            "creditUnit": "credits",
             "credits": 1,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eem/"
@@ -6698,6 +7272,7 @@ module.exports = [
           {
             "code": "EEMT 5120",
             "name": "Operation/Production Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eem/"
@@ -6705,6 +7280,7 @@ module.exports = [
           {
             "code": "EEMT 5220",
             "name": "Six Sigma Quality Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eem/"
@@ -6712,6 +7288,7 @@ module.exports = [
           {
             "code": "EEMT 5260",
             "name": "Product Development Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eem/"
@@ -6719,6 +7296,7 @@ module.exports = [
           {
             "code": "EEMT 5300",
             "name": "Global Supply Chain Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eem/"
@@ -6726,6 +7304,7 @@ module.exports = [
           {
             "code": "EEMT 5360",
             "name": "Enterprise Systems for Digital Transformation",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eem/"
@@ -6733,6 +7312,7 @@ module.exports = [
           {
             "code": "EEMT 5500",
             "name": "Applied Probability, Statistics and Data Analytics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eem/"
@@ -6740,6 +7320,7 @@ module.exports = [
           {
             "code": "EEMT 5510",
             "name": "Engineering Economics and Cost Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eem/"
@@ -6747,6 +7328,7 @@ module.exports = [
           {
             "code": "EEMT 5520",
             "name": "Service Operations Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eem/"
@@ -6754,6 +7336,7 @@ module.exports = [
           {
             "code": "EEMT 5530",
             "name": "Financial Engineering and Risk Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eem/"
@@ -6761,6 +7344,7 @@ module.exports = [
           {
             "code": "EEMT 5540",
             "name": "IT for E-Commerce Applications",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eem/"
@@ -6768,6 +7352,7 @@ module.exports = [
           {
             "code": "EEMT 5550",
             "name": "Blockchain and Financial Technologies",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eem/"
@@ -6775,6 +7360,7 @@ module.exports = [
           {
             "code": "EEMT 5560",
             "name": "Integrated Business Solutions",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eem/"
@@ -6782,6 +7368,7 @@ module.exports = [
           {
             "code": "EEMT 6000",
             "name": "Special Topics in Engineering Enterprise Management",
+            "creditUnit": "credits",
             "creditsMin": 1,
             "creditsMax": 3,
             "appliesToTrackIds": [],
@@ -6790,6 +7377,7 @@ module.exports = [
           {
             "code": "EEMT 6900",
             "name": "Independent Study",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eem/"
@@ -6797,6 +7385,7 @@ module.exports = [
           {
             "code": "SBMT 5010",
             "name": "Accounting for Managers",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eem/"
@@ -6804,6 +7393,7 @@ module.exports = [
           {
             "code": "SBMT 5020",
             "name": "Fundamentals of Economics and Finance",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eem/"
@@ -6811,6 +7401,7 @@ module.exports = [
           {
             "code": "SBMT 5030",
             "name": "Marketing Management and Strategy",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eem/"
@@ -6834,6 +7425,7 @@ module.exports = [
           {
             "code": "MASS 5010",
             "name": "Research Methods in Social Science",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-ma-sosc/"
@@ -6841,6 +7433,7 @@ module.exports = [
           {
             "code": "MASS 5020",
             "name": "Social Statistics I",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-ma-sosc/"
@@ -6879,6 +7472,7 @@ module.exports = [
           {
             "code": "MASS 5980",
             "name": "Understanding Personality",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-048-PSYCHOLOGY"
@@ -6891,6 +7485,7 @@ module.exports = [
           {
             "code": "MASS 5981",
             "name": "Environment and Human Behavior",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-048-PSYCHOLOGY"
@@ -6903,6 +7498,7 @@ module.exports = [
           {
             "code": "MASS 5982",
             "name": "Social Cognition",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-048-PSYCHOLOGY"
@@ -6915,6 +7511,7 @@ module.exports = [
           {
             "code": "MASS 5983",
             "name": "Psychology of Well-being",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [
               "HKUST-TPG-048-PSYCHOLOGY"
@@ -6946,6 +7543,7 @@ module.exports = [
           {
             "code": "ELBT 5001",
             "name": "Biotech Venture Leadership: Navigating Science and Business",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-elbt/"
@@ -6953,6 +7551,7 @@ module.exports = [
           {
             "code": "ELBT 5002",
             "name": "Biotech Entrepreneurship: Opportunity to Commercialization",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-elbt/"
@@ -6960,6 +7559,7 @@ module.exports = [
           {
             "code": "ELBT 5003",
             "name": "Funding for Biotech Startups",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-elbt/"
@@ -6967,6 +7567,7 @@ module.exports = [
           {
             "code": "ELBT 5004",
             "name": "Biotech Product Commercialization",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-elbt/"
@@ -6985,6 +7586,7 @@ module.exports = [
           {
             "code": "ELBT 5101",
             "name": "Intellectual Property in Biotech Ventures",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-elbt/"
@@ -6992,6 +7594,7 @@ module.exports = [
           {
             "code": "ELBT 5102",
             "name": "Legal Frameworks for Biotech Business",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-elbt/"
@@ -6999,6 +7602,7 @@ module.exports = [
           {
             "code": "ELBT 5103",
             "name": "Applications of AI in Different Biotech Sectors",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-elbt/"
@@ -7006,6 +7610,7 @@ module.exports = [
           {
             "code": "ELBT 5104",
             "name": "Managing Biotech Projects, Teams and Operations",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-elbt/"
@@ -7013,6 +7618,7 @@ module.exports = [
           {
             "code": "ELBT 5105",
             "name": "Strategic Decision-Making in Biotech Ventures",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-elbt/"
@@ -7020,6 +7626,7 @@ module.exports = [
           {
             "code": "ELBT 6201",
             "name": "Biotech Industry Internship",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-elbt/"
@@ -7027,6 +7634,7 @@ module.exports = [
           {
             "code": "ELBT 6202",
             "name": "Capstone Project in Biotech",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-elbt/"
@@ -7034,6 +7642,7 @@ module.exports = [
           {
             "code": "BTEC 5220",
             "name": "Business Operations of Biotechnology",
+            "creditUnit": "credits",
             "credits": 4,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-elbt/"
@@ -7041,6 +7650,7 @@ module.exports = [
           {
             "code": "BTEC 5550",
             "name": "Nutraceuticals and Transgenic Products",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-elbt/"
@@ -7048,6 +7658,7 @@ module.exports = [
           {
             "code": "DRAP 5101",
             "name": "Global Pharmaceutical Policy: Rationales and Stakeholders",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-elbt/"
@@ -7055,6 +7666,7 @@ module.exports = [
           {
             "code": "DRAP 5103",
             "name": "Big Data, Artificial Intelligence and Machine Learning in Drug Safety",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-elbt/"
@@ -7062,6 +7674,7 @@ module.exports = [
           {
             "code": "DRAP 5104",
             "name": "Digital Health",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-elbt/"
@@ -7069,6 +7682,7 @@ module.exports = [
           {
             "code": "DRAP 5105",
             "name": "Market Access for Pharmaceutical Products: Trends and Challenges",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-elbt/"
@@ -7076,6 +7690,7 @@ module.exports = [
           {
             "code": "DRAP 5107",
             "name": "Principles of Clinical Trials for Regulatory Approval",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-elbt/"
@@ -7083,6 +7698,7 @@ module.exports = [
           {
             "code": "MTLE 5001",
             "name": "Technology Leadership and Entrepreneurship",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-elbt/"
@@ -7090,6 +7706,7 @@ module.exports = [
           {
             "code": "MTLE 5810",
             "name": "Startup Workshop",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-elbt/"
@@ -7113,6 +7730,7 @@ module.exports = [
           {
             "code": "CIEM 5140",
             "name": "Construction Project Delivery",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/",
@@ -7123,6 +7741,7 @@ module.exports = [
           {
             "code": "CIEM 5160",
             "name": "Construction Financial Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/",
@@ -7133,6 +7752,7 @@ module.exports = [
           {
             "code": "CIEM 5170",
             "name": "Building Information Modeling and Smart Construction",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/",
@@ -7143,6 +7763,7 @@ module.exports = [
           {
             "code": "CIEM 5180",
             "name": "Construction Technology for Civil Engineering Works",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/",
@@ -7153,6 +7774,7 @@ module.exports = [
           {
             "code": "CIEM 5190",
             "name": "Alternative Dispute Resolution: Law and Practice",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/",
@@ -7162,7 +7784,8 @@ module.exports = [
           },
           {
             "code": "CIEM 5810",
-            "name": "* Engineering Risk, Reliability and Decision",
+            "name": "Engineering Risk, Reliability and Decision",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/",
@@ -7173,6 +7796,7 @@ module.exports = [
           {
             "code": "CIEM 5240",
             "name": "Advanced Concrete Technology",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/",
@@ -7183,6 +7807,7 @@ module.exports = [
           {
             "code": "CIEM 5310",
             "name": "Structural Analysis and Design of Tall Buildings",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/",
@@ -7193,6 +7818,7 @@ module.exports = [
           {
             "code": "CIEM 5311",
             "name": "Building Aerodynamics and Wind-Resistant Design of High-Rise Structures",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/",
@@ -7203,6 +7829,7 @@ module.exports = [
           {
             "code": "CIEM 5320",
             "name": "Computer Aided Design Optimization of Tall Buildings",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/",
@@ -7213,6 +7840,7 @@ module.exports = [
           {
             "code": "CIEM 5380",
             "name": "Bridge Engineering",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/",
@@ -7223,6 +7851,7 @@ module.exports = [
           {
             "code": "CIEM 5390",
             "name": "Coastal Structures Design",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/",
@@ -7234,6 +7863,7 @@ module.exports = [
           {
             "code": "CIEM 5410",
             "name": "Risk Assessment and Contaminated Land Cleanup",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/",
@@ -7244,6 +7874,7 @@ module.exports = [
           {
             "code": "CIEM 5420",
             "name": "Biological Waste Treatment and Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/",
@@ -7254,6 +7885,7 @@ module.exports = [
           {
             "code": "CIEM 5460",
             "name": "Design and Management of Physico/Chemical Processes of Environmental Engineering",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/",
@@ -7264,6 +7896,7 @@ module.exports = [
           {
             "code": "CIEM 5480",
             "name": "Wastewater Treatment and Reuse",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/",
@@ -7274,6 +7907,7 @@ module.exports = [
           {
             "code": "CIEM 5620",
             "name": "Travel Demand Analysis",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/",
@@ -7284,6 +7918,7 @@ module.exports = [
           {
             "code": "CIEM 5630",
             "name": "Traffic Control Fundamentals and Practice",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/",
@@ -7294,6 +7929,7 @@ module.exports = [
           {
             "code": "CIEM 5720",
             "name": "Advanced Foundation Design",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/",
@@ -7304,6 +7940,7 @@ module.exports = [
           {
             "code": "CIEM 5740",
             "name": "Computer Methods for Slope Engineering",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/",
@@ -7314,6 +7951,7 @@ module.exports = [
           {
             "code": "CIEM 5760",
             "name": "Engineering Geology and Rock Mechanics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/",
@@ -7324,6 +7962,7 @@ module.exports = [
           {
             "code": "CIEM 5770",
             "name": "Unsaturated Soil Mechanics and Engineering",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/",
@@ -7334,6 +7973,7 @@ module.exports = [
           {
             "code": "CIEM 5790",
             "name": "Slope Engineering and Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/",
@@ -7373,6 +8013,7 @@ module.exports = [
           {
             "code": "CIEM 6980",
             "name": "MSc Project",
+            "creditUnit": "credits",
             "credits": 6,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/",
@@ -7406,6 +8047,7 @@ module.exports = [
           {
             "code": "ENVS 5111",
             "name": "Environmental Health",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ehs/"
@@ -7413,6 +8055,7 @@ module.exports = [
           {
             "code": "ENVS 5114",
             "name": "Environmental Diseases and Microbiology",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ehs/"
@@ -7420,6 +8063,7 @@ module.exports = [
           {
             "code": "ENVS 5115",
             "name": "Food Safety Control",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ehs/"
@@ -7427,6 +8071,7 @@ module.exports = [
           {
             "code": "ENVS 5117",
             "name": "Public Health and Hygiene",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ehs/"
@@ -7445,6 +8090,7 @@ module.exports = [
           {
             "code": "ENVS 5112",
             "name": "Environmental Hazards",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ehs/"
@@ -7452,6 +8098,7 @@ module.exports = [
           {
             "code": "ENVS 5113",
             "name": "Marine Ecotoxicology",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ehs/"
@@ -7459,6 +8106,7 @@ module.exports = [
           {
             "code": "ENVS 5116",
             "name": "Environmental Impact and Risk Assessment",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ehs/"
@@ -7466,6 +8114,7 @@ module.exports = [
           {
             "code": "ENVS 5118",
             "name": "Conservation and Sustainable Development",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ehs/"
@@ -7473,6 +8122,7 @@ module.exports = [
           {
             "code": "ENVS 5119",
             "name": "Pollution Monitoring and Control",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ehs/"
@@ -7480,6 +8130,7 @@ module.exports = [
           {
             "code": "ENVS 5120",
             "name": "Occupational Health and Safety",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ehs/"
@@ -7487,6 +8138,7 @@ module.exports = [
           {
             "code": "ENVS 6111",
             "name": "Environmental Health Research Project",
+            "creditUnit": "credits",
             "creditsMin": 3,
             "creditsMax": 6,
             "appliesToTrackIds": [],
@@ -7495,6 +8147,7 @@ module.exports = [
           {
             "code": "EVSM 5220",
             "name": "Advanced Environmental Chemistry",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ehs/"
@@ -7502,6 +8155,7 @@ module.exports = [
           {
             "code": "EVSM 5230",
             "name": "Environmental Health and Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ehs/"
@@ -7509,6 +8163,7 @@ module.exports = [
           {
             "code": "JEVE 5320",
             "name": "Water Quality and Assessment",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ehs/"
@@ -7516,6 +8171,7 @@ module.exports = [
           {
             "code": "JEVE 5420",
             "name": "Biological Waste Treatment and Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ehs/"
@@ -7523,6 +8179,7 @@ module.exports = [
           {
             "code": "JEVE 5440",
             "name": "Hazardous Waste Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ehs/"
@@ -7530,6 +8187,7 @@ module.exports = [
           {
             "code": "JEVE 5530",
             "name": "Environmental Management and Regulatory Compliance",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ehs/"
@@ -7537,6 +8195,7 @@ module.exports = [
           {
             "code": "OCES 5401",
             "name": "Sustainable Fisheries and Aquaculture",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ehs/"
@@ -7544,6 +8203,7 @@ module.exports = [
           {
             "code": "OCES 5403",
             "name": "Deep Sea Resources",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ehs/"
@@ -7567,6 +8227,7 @@ module.exports = [
           {
             "code": "CIEM 5810",
             "name": "Engineering Risk, Reliability and Decision",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-evem/"
@@ -7574,6 +8235,7 @@ module.exports = [
           {
             "code": "CIVL 4460",
             "name": "Process Design of Environmental Engineering Facilities",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-evem/"
@@ -7581,6 +8243,7 @@ module.exports = [
           {
             "code": "IBTM 5430",
             "name": "Indoor Air Quality Technology and Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-evem/"
@@ -7588,6 +8251,7 @@ module.exports = [
           {
             "code": "JEVE 5260",
             "name": "Global Warming and Air Pollution Meteorology",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-evem/"
@@ -7595,6 +8259,7 @@ module.exports = [
           {
             "code": "JEVE 5320",
             "name": "Water Quality and Assessment",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-evem/"
@@ -7602,6 +8267,7 @@ module.exports = [
           {
             "code": "JEVE 5410",
             "name": "Risk Assessment and Contaminated Land Cleanup",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-evem/"
@@ -7609,6 +8275,7 @@ module.exports = [
           {
             "code": "JEVE 5420",
             "name": "Biological Waste Treatment and Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-evem/"
@@ -7616,6 +8283,7 @@ module.exports = [
           {
             "code": "JEVE 5430",
             "name": "Solid Waste Landfill Engineering Design",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-evem/"
@@ -7623,6 +8291,7 @@ module.exports = [
           {
             "code": "JEVE 5440",
             "name": "Hazardous Waste Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-evem/"
@@ -7630,6 +8299,7 @@ module.exports = [
           {
             "code": "JEVE 5460",
             "name": "Design and Management of Physico/Chemical Processes of Environmental Engineering",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-evem/"
@@ -7637,6 +8307,7 @@ module.exports = [
           {
             "code": "JEVE 5470",
             "name": "Industrial Wastewater Treatment",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-evem/"
@@ -7644,6 +8315,7 @@ module.exports = [
           {
             "code": "JEVE 5480",
             "name": "Wastewater Treatment and Reuse",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-evem/"
@@ -7651,6 +8323,7 @@ module.exports = [
           {
             "code": "JEVE 5530",
             "name": "Environmental Management and Regulatory Compliance",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-evem/"
@@ -7658,6 +8331,7 @@ module.exports = [
           {
             "code": "JEVE 5820",
             "name": "Energy, Environment and Sustainable Development",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-evem/"
@@ -7665,6 +8339,7 @@ module.exports = [
           {
             "code": "JEVE 5900",
             "name": "Carbon Management for Sustainable Environment",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-evem/"
@@ -7683,6 +8358,7 @@ module.exports = [
           {
             "code": "JEVE 6980",
             "name": "Independent Project",
+            "creditUnit": "credits",
             "creditsMin": 3,
             "creditsMax": 6,
             "appliesToTrackIds": [],
@@ -7707,6 +8383,7 @@ module.exports = [
           {
             "code": "ENVR 5260",
             "name": "Environmental Policy and Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-evsm/"
@@ -7714,6 +8391,7 @@ module.exports = [
           {
             "code": "EVSM 5070",
             "name": "Environmental Impact Assessment",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-evsm/"
@@ -7732,6 +8410,7 @@ module.exports = [
           {
             "code": "ENVR 5340",
             "name": "Fundamentals of Sustainability Science and Technology",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-evsm/"
@@ -7739,6 +8418,7 @@ module.exports = [
           {
             "code": "EVSM 5220",
             "name": "Advanced Environmental Chemistry",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-evsm/"
@@ -7757,6 +8437,7 @@ module.exports = [
           {
             "code": "ENVR 5380",
             "name": "The Circular Economy – Governance, Business Practices and Modes of Transition",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-evsm/"
@@ -7764,6 +8445,7 @@ module.exports = [
           {
             "code": "EVSM 5440",
             "name": "ESG Management and Disclosure",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-evsm/"
@@ -7782,6 +8464,7 @@ module.exports = [
           {
             "code": "ENVR 5250",
             "name": "Environmental Economics and Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-evsm/"
@@ -7789,6 +8472,7 @@ module.exports = [
           {
             "code": "ENVR 5320",
             "name": "Environmental Data Analysis",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-evsm/"
@@ -7796,6 +8480,7 @@ module.exports = [
           {
             "code": "ENVR 5370",
             "name": "Energy Systems, Sustainability, and Policy",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-evsm/"
@@ -7803,6 +8488,7 @@ module.exports = [
           {
             "code": "ENVR 5390",
             "name": "Satellite Remote Sensing and Informatics",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-evsm/"
@@ -7810,6 +8496,7 @@ module.exports = [
           {
             "code": "ENVR 5400",
             "name": "Weather, Climate and Air Pollution",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-evsm/"
@@ -7817,6 +8504,7 @@ module.exports = [
           {
             "code": "ENVR 5420",
             "name": "Climate Finance and the Carbon Markets",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-evsm/"
@@ -7824,6 +8512,7 @@ module.exports = [
           {
             "code": "ENVR 6040",
             "name": "Special Topics in Environmental Science",
+            "creditUnit": "credits",
             "creditsMin": 1,
             "creditsMax": 4,
             "appliesToTrackIds": [],
@@ -7832,6 +8521,7 @@ module.exports = [
           {
             "code": "ENVR 6070",
             "name": "Special Topics in Sustainability",
+            "creditUnit": "credits",
             "creditsMin": 1,
             "creditsMax": 4,
             "appliesToTrackIds": [],
@@ -7840,6 +8530,7 @@ module.exports = [
           {
             "code": "ENVR 6090",
             "name": "Special Topics in Environmental Management",
+            "creditUnit": "credits",
             "creditsMin": 1,
             "creditsMax": 4,
             "appliesToTrackIds": [],
@@ -7848,6 +8539,7 @@ module.exports = [
           {
             "code": "EVSM 5230",
             "name": "Environmental Health and Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-evsm/"
@@ -7855,6 +8547,7 @@ module.exports = [
           {
             "code": "EVSM 5240",
             "name": "GIS for Environmental Professionals",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-evsm/"
@@ -7862,6 +8555,7 @@ module.exports = [
           {
             "code": "EVSM 5280",
             "name": "Air Pollution: From Science to Management",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-evsm/"
@@ -7869,6 +8563,7 @@ module.exports = [
           {
             "code": "EVSM 5300",
             "name": "Corporate Environmental Strategy",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-evsm/"
@@ -7876,6 +8571,7 @@ module.exports = [
           {
             "code": "EVSM 5450",
             "name": "Climate Change and Sustainability: A Transdisciplinary Approach",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-evsm/"
@@ -7883,6 +8579,7 @@ module.exports = [
           {
             "code": "EVSM 6950",
             "name": "MSc Project",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-evsm/"
@@ -7890,6 +8587,7 @@ module.exports = [
           {
             "code": "JEVE 5900",
             "name": "Carbon Management for Sustainable Environment",
+            "creditUnit": "credits",
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-evsm/"

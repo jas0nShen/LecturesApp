@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "POLYU",
+  "academicYear": "2027-28",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "POLYU-TPG-063",
+      "faculty": "Department of Management and Marketing (MM)",
+      "status": "verified",
+      "creditsRequired": 31,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23090-maf-map",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 2027 Programme page and the current Department of Management and Marketing curriculum for the 2025/26 cohort onwards publish the complete 31-credit structure, exact codes and credits. The MSc has either four Compulsory Subjects, AIE and six Electives, or four Compulsory Subjects, AIE, two Electives, MM501 Research Methods and the 9-credit MM594 Dissertation. MM501 is also an ordinary Elective in the non-Dissertation route and is represented once. The Department curriculum titles MM5427 Textual Analysis in Business and MM5T21 Academic Integrity and Business Ethics, while the 2027 Programme page uses Textual Analytics in Business and Academic Integrity and Ethics in Business; the coded Department titles are retained and the cross-role/path rules require manual audit review. The 22-credit PgD is an early-exit award and is not modelled as MSc completion.",
+      "courseGroups": [
+        {
+          "id": "compulsory-subjects",
+          "name": "Compulsory Subjects",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four 3-credit Compulsory Subjects for 12 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/",
+          "courses": [
+            {
+              "code": "MM5112",
+              "name": "Organization and Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+            },
+            {
+              "code": "MM5412",
+              "name": "Business Intelligence and Decisions",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+            },
+            {
+              "code": "MM5424",
+              "name": "Management Information Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+            },
+            {
+              "code": "MM5425",
+              "name": "Business Analytics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+            }
+          ]
+        },
+        {
+          "id": "academic-integrity",
+          "name": "Academic Integrity and Business Ethics",
+          "type": "academic_integrity",
+          "creditsRequired": 1,
+          "coursesRequired": 1,
+          "ruleText": "Complete MM5T21 Academic Integrity and Business Ethics for 1 credit.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/",
+          "courses": [
+            {
+              "code": "MM5T21",
+              "name": "Academic Integrity and Business Ethics",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/",
+              "courseKind": "academic_integrity"
+            }
+          ]
+        },
+        {
+          "id": "elective-subjects",
+          "name": "Elective Subjects",
+          "type": "elective",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "For the non-Dissertation route, complete any six Elective Subjects for 18 credits. For the Dissertation route, complete any two ordinary Electives for 6 credits plus MM501 Research Methods for 3 credits. MM5995 carries 0 credits and cannot by itself satisfy the credit minimum.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/",
+          "courses": [
+            {
+              "code": "MM501",
+              "name": "Research Methods",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/",
+              "subjectGroups": [
+                "elective",
+                "research-methods"
+              ]
+            },
+            {
+              "code": "MM5203",
+              "name": "Decision Making for Leadership",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+            },
+            {
+              "code": "MM531",
+              "name": "Strategic Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+            },
+            {
+              "code": "MM534",
+              "name": "Entrepreneurship",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+            },
+            {
+              "code": "MM5413",
+              "name": "Business Forecasting",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+            },
+            {
+              "code": "MM5426",
+              "name": "Business Applications of Blockchain",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+            },
+            {
+              "code": "MM5427",
+              "name": "Textual Analysis in Business",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+            },
+            {
+              "code": "MM5433",
+              "name": "Decision Analytics by Machine Learning",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+            },
+            {
+              "code": "MM544",
+              "name": "E-Commerce",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+            },
+            {
+              "code": "MM5451",
+              "name": "Technology Innovation and Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+            },
+            {
+              "code": "MM5452",
+              "name": "Seminars in Emerging Technology",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+            },
+            {
+              "code": "MM576",
+              "name": "Marketing Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+            },
+            {
+              "code": "MM5831",
+              "name": "Social Media Marketing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+            },
+            {
+              "code": "LGT5102",
+              "name": "Models for Decision Making",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+            },
+            {
+              "code": "LGT5105",
+              "name": "Managing Operations Systems",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+            },
+            {
+              "code": "LGT5113",
+              "name": "Enterprise Resource Planning",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+            },
+            {
+              "code": "LGT5122",
+              "name": "Applications of Decision Making Models",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+            },
+            {
+              "code": "MM5913",
+              "name": "Field Study for Business Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/"
+            },
+            {
+              "code": "MM5995",
+              "name": "MM MSc Career Workshop",
+              "credits": 0,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/",
+              "subjectGroups": [
+                "elective",
+                "career-workshop"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dissertation-option",
+          "name": "Dissertation Option",
+          "type": "dissertation",
+          "creditsRequired": 9,
+          "coursesRequired": 1,
+          "ruleText": "The Dissertation route requires MM594 Business Analytics Dissertation for 9 credits together with MM501 Research Methods and two ordinary Electives. The non-Dissertation route does not require MM594.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/",
+          "courses": [
+            {
+              "code": "MM594",
+              "name": "Business Analytics Dissertation",
+              "credits": 9,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://www.polyu.edu.hk/mm/study/tpg/ba/programme/",
+              "courseKind": "dissertation",
+              "conditionalRequirement": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

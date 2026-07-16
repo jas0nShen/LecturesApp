@@ -1,0 +1,814 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-042",
+      "programmeName": "Master of Arts (MA) in International Journalism Studies",
+      "faculty": "School of Communication",
+      "status": "verified",
+      "creditsRequired": 27,
+      "creditUnit": "units",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-communication/master-of-arts-in-international-journalism-studies",
+      "ruleReviewStatus": "manual_review_required",
+      "trackSelectionOptional": false,
+      "tracks": [
+        {
+          "id": "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+          "name": "International Journalism",
+          "type": "Concentration",
+          "creditsRequired": 27,
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-communication/master-of-arts-in-international-journalism-studies",
+          "lastVerifiedAt": "2026-07-16"
+        },
+        {
+          "id": "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM",
+          "name": "Business and Financial Journalism",
+          "type": "Concentration",
+          "creditsRequired": 27,
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-communication/master-of-arts-in-international-journalism-studies",
+          "lastVerifiedAt": "2026-07-16"
+        }
+      ],
+      "statusNote": "The latest publicly accessible 2025-26 HKBU Academic Registry handbook and the current School of Communication Programme page confirm the two Concentrations and the 27-unit award. Each Concentration requires 15 Required units and 12 Elective units, with at least 9 Elective units taken from MAIJS. International Journalism students choose either JOUR7010 or JOUR7020 as a Required Course, and may use the unselected course as an Elective. JOUR7150, JOUR7160, JOUR7170 and JOUR7180 are Required for Business and Financial Journalism but are available as Electives only to International Journalism students. Students may take at most one of JOUR7220, JOUR7230 and JOUR7240, and at most one approved external Elective. These cross-role, one-of and quota rules require manual audit review.",
+      "courseGroups": [
+        {
+          "id": "concentration-required-requirement",
+          "name": "Concentration Required Course Requirement",
+          "type": "track_core_requirement",
+          "creditsRequiredByTrackIds": {
+            "HKBU-TPG-042-INTERNATIONAL-JOURNALISM": 15,
+            "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM": 15
+          },
+          "coursesRequiredByTrackIds": {
+            "HKBU-TPG-042-INTERNATIONAL-JOURNALISM": 5,
+            "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM": 5
+          },
+          "appliesToTrackIds": [
+            "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+            "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+          ],
+          "ruleText": "Complete five Required Courses (15 units) for the selected Concentration. The applicable courses are identified in the cross-role and Concentration-specific groups.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-communication/master-of-arts-in-international-journalism-studies",
+          "courses": []
+        },
+        {
+          "id": "required-elective-cross-role-courses",
+          "name": "Required and Elective Cross-role Courses",
+          "type": "track_core_elective_cross_role",
+          "appliesToTrackIds": [
+            "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+            "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+          ],
+          "ruleText": "JOUR7010 and JOUR7020 form a one-of Required choice for International Journalism; the unselected course may count as an Elective. JOUR7040 is Required for both Concentrations. JOUR7150, JOUR7160, JOUR7170 and JOUR7180 are Required for Business and Financial Journalism and Elective only for International Journalism. Each code may count only once.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-communication/master-of-arts-in-international-journalism-studies",
+          "courses": [
+            {
+              "code": "JOUR7010",
+              "name": "International Relations Theory and Practice",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7010",
+              "conditionalRequirement": true,
+              "subjectGroups": [
+                "ij_required_choice",
+                "elective"
+              ],
+              "typeByTrackIds": {
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM": "core_choice",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM": "elective"
+              }
+            },
+            {
+              "code": "JOUR7020",
+              "name": "Comparative and International News",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7020",
+              "conditionalRequirement": true,
+              "subjectGroups": [
+                "ij_required_choice",
+                "elective"
+              ],
+              "typeByTrackIds": {
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM": "core_choice",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM": "elective"
+              }
+            },
+            {
+              "code": "JOUR7040",
+              "name": "Multimedia Journalism",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7040",
+              "requiredForTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "typeByTrackIds": {
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM": "core",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM": "core"
+              }
+            },
+            {
+              "code": "JOUR7150",
+              "name": "Business News Writing",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7150",
+              "requiredForTrackIds": [
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "typeByTrackIds": {
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM": "elective",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM": "core"
+              }
+            },
+            {
+              "code": "JOUR7160",
+              "name": "Principles of Economics",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7160",
+              "requiredForTrackIds": [
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "typeByTrackIds": {
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM": "elective",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM": "core"
+              }
+            },
+            {
+              "code": "JOUR7170",
+              "name": "Business and Finance",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7170",
+              "requiredForTrackIds": [
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "typeByTrackIds": {
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM": "elective",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM": "core"
+              }
+            },
+            {
+              "code": "JOUR7180",
+              "name": "Advanced Business News Writing and Production",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7180",
+              "requiredForTrackIds": [
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "typeByTrackIds": {
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM": "elective",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM": "core"
+              }
+            }
+          ]
+        },
+        {
+          "id": "international-journalism-required-courses",
+          "name": "International Journalism Required Courses",
+          "type": "track_core",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "appliesToTrackIds": [
+            "HKBU-TPG-042-INTERNATIONAL-JOURNALISM"
+          ],
+          "ruleText": "International Journalism students complete all three courses for 9 units, in addition to JOUR7040 and one of JOUR7010 or JOUR7020.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-communication/master-of-arts-in-international-journalism-studies",
+          "courses": [
+            {
+              "code": "JOUR7060",
+              "name": "News and Feature Writing for International Practice",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7060",
+              "requiredForTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM"
+              ]
+            },
+            {
+              "code": "JOUR7100",
+              "name": "Advanced News Writing and Production for International Practice",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7100",
+              "requiredForTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM"
+              ]
+            },
+            {
+              "code": "JOUR7290",
+              "name": "Media Law and Ethics for International Journalism",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7290",
+              "requiredForTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "elective-requirement",
+          "name": "Elective Requirement",
+          "type": "elective_requirement",
+          "creditsRequiredByTrackIds": {
+            "HKBU-TPG-042-INTERNATIONAL-JOURNALISM": 12,
+            "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM": 12
+          },
+          "coursesRequiredByTrackIds": {
+            "HKBU-TPG-042-INTERNATIONAL-JOURNALISM": 4,
+            "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM": 4
+          },
+          "appliesToTrackIds": [
+            "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+            "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+          ],
+          "ruleText": "Complete four Elective Courses (12 units), including at least three MAIJS Electives (9 units). At most one approved external Elective (3 units) may count.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-communication/master-of-arts-in-international-journalism-studies",
+          "courses": []
+        },
+        {
+          "id": "programme-elective-pool",
+          "name": "MAIJS Elective Pool",
+          "type": "elective",
+          "appliesToTrackIds": [
+            "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+            "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+          ],
+          "ruleText": "Choose from the official MAIJS Elective pool. JOUR7120 and JOUR7330 are available only to International Journalism students. At most one of JOUR7220, JOUR7230 and JOUR7240 may be selected. JOUR7130 is a Project or Dissertation and JOUR7320 is a Communication Research Thesis.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-communication/master-of-arts-in-international-journalism-studies",
+          "courses": [
+            {
+              "code": "JOUR7030",
+              "name": "Research Methods in Media and Communication",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7030"
+            },
+            {
+              "code": "JOUR7070",
+              "name": "Theories of Journalism and Communication",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7070"
+            },
+            {
+              "code": "JOUR7080",
+              "name": "Current Issues and Case Studies in International News",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7080"
+            },
+            {
+              "code": "JOUR7090",
+              "name": "International News Translation",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7090"
+            },
+            {
+              "code": "JOUR7110",
+              "name": "Reporting International Conflict",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7110"
+            },
+            {
+              "code": "JOUR7120",
+              "name": "International Business and Financial Reporting",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7120"
+            },
+            {
+              "code": "JOUR7130",
+              "name": "Project or Dissertation",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7130",
+              "courseKind": "project_or_dissertation"
+            },
+            {
+              "code": "JOUR7140",
+              "name": "Globalisation, Economics and Finance",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7140"
+            },
+            {
+              "code": "JOUR7210",
+              "name": "Longform Journalism",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7210"
+            },
+            {
+              "code": "JOUR7220",
+              "name": "Photojournalism",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7220",
+              "subjectGroups": [
+                "skills_choice"
+              ]
+            },
+            {
+              "code": "JOUR7230",
+              "name": "Broadcast Journalism",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7230",
+              "subjectGroups": [
+                "skills_choice"
+              ]
+            },
+            {
+              "code": "JOUR7240",
+              "name": "Online and Digital Journalism",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7240",
+              "subjectGroups": [
+                "skills_choice"
+              ]
+            },
+            {
+              "code": "JOUR7250",
+              "name": "Reporting China and Hong Kong",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7250"
+            },
+            {
+              "code": "JOUR7260",
+              "name": "Reporting Southeast Asia",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7260"
+            },
+            {
+              "code": "JOUR7270",
+              "name": "The Journalism Business",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7270"
+            },
+            {
+              "code": "JOUR7280",
+              "name": "Big Data Analytics for Media and Communication",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7280"
+            },
+            {
+              "code": "JOUR7300",
+              "name": "Approaches and Methods in Communication Research",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7300"
+            },
+            {
+              "code": "JOUR7310",
+              "name": "Advanced Quantitative Communication Research Methods",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7310"
+            },
+            {
+              "code": "JOUR7320",
+              "name": "Communication Research Thesis",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7320",
+              "courseKind": "dissertation"
+            },
+            {
+              "code": "JOUR7330",
+              "name": "Food and Culture Reporting",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7330"
+            },
+            {
+              "code": "JOUR7340",
+              "name": "International News in a Globalized World",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7340"
+            },
+            {
+              "code": "JOUR7350",
+              "name": "Media and Communication in Greater China",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7350"
+            },
+            {
+              "code": "JOUR7360",
+              "name": "Generative AI Assisted Reporting",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7360"
+            },
+            {
+              "code": "JOUR7370",
+              "name": "Mental Health and Journalism",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7370"
+            },
+            {
+              "code": "JOUR7380",
+              "name": "Reporting Cryptocurrency and Blockchain",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/JOUR7380"
+            }
+          ]
+        },
+        {
+          "id": "approved-external-elective-pool",
+          "name": "Approved External Elective Pool",
+          "type": "elective",
+          "creditsMax": 3,
+          "coursesMax": 1,
+          "appliesToTrackIds": [
+            "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+            "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+          ],
+          "ruleText": "At most one 3-unit course from this official cross-Programme pool may count toward the 12-unit Elective requirement, subject to quota.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-communication/master-of-arts-in-international-journalism-studies",
+          "courses": [
+            {
+              "code": "ACCT7770",
+              "name": "Corporate Accounting",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ACCT7770"
+            },
+            {
+              "code": "ACCT7780",
+              "name": "Corporate Law and Compliance",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ACCT7780"
+            },
+            {
+              "code": "ACCT7820",
+              "name": "Taxation",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ACCT7820"
+            },
+            {
+              "code": "ACCT7830",
+              "name": "Risk, Compliance and Corporate Social Responsibility",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ACCT7830"
+            },
+            {
+              "code": "COMM7010",
+              "name": "Foundations of Communication Study",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7010"
+            },
+            {
+              "code": "COMM7040",
+              "name": "Issues in Intercultural Communication",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7040"
+            },
+            {
+              "code": "COMM7050",
+              "name": "Media and Communication in Chinese Societies",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7050"
+            },
+            {
+              "code": "COMM7060",
+              "name": "Issues in Corporate Communication",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7060"
+            },
+            {
+              "code": "COMM7100",
+              "name": "Intelligent Communication: Cloud and AI Solutions for Small Organizations",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7100"
+            },
+            {
+              "code": "COMM7160",
+              "name": "Organizational Communication",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7160"
+            },
+            {
+              "code": "COMM7170",
+              "name": "Communication Campaign Workshop",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7170"
+            },
+            {
+              "code": "COMM7180",
+              "name": "Media Law and Ethics",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7180"
+            },
+            {
+              "code": "COMM7190",
+              "name": "Issues and Cases in Mass Communication",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7190"
+            },
+            {
+              "code": "COMM7200",
+              "name": "New Media Workshop",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7200"
+            },
+            {
+              "code": "COMM7220",
+              "name": "Advertising Management",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7220"
+            },
+            {
+              "code": "COMM7230",
+              "name": "Writing for Multimedia in Public Relations",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7230"
+            },
+            {
+              "code": "COMM7240",
+              "name": "Media Markets",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7240"
+            },
+            {
+              "code": "COMM7250",
+              "name": "Strategic Public Relations and Crisis Management",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7250"
+            },
+            {
+              "code": "COMM7300",
+              "name": "Consumer Insights",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7300"
+            },
+            {
+              "code": "COMM7310",
+              "name": "International Advertising",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7310"
+            },
+            {
+              "code": "COMM7510",
+              "name": "Public Administration and the Media",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7510"
+            },
+            {
+              "code": "COMM7550",
+              "name": "Advertising in China",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7550"
+            },
+            {
+              "code": "COMM7560",
+              "name": "Political Communication and Public Opinion",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7560"
+            },
+            {
+              "code": "COMM7790",
+              "name": "Communication and Technology",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7790"
+            },
+            {
+              "code": "COMM7800",
+              "name": "New Media Design and Communication",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7800"
+            },
+            {
+              "code": "COMM7860",
+              "name": "Communicating Data",
+              "credits": 3,
+              "appliesToTrackIds": [
+                "HKBU-TPG-042-INTERNATIONAL-JOURNALISM",
+                "HKBU-TPG-042-BUSINESS-FINANCIAL-JOURNALISM"
+              ],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMM7860"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

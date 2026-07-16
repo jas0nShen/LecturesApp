@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-013",
+      "programmeName": "Master of Social Sciences (MSocSc) in Smart, Resilient and Sustainable Cities",
+      "faculty": "Academy of Geography, Sociology and International Studies",
+      "status": "verified",
+      "creditsRequired": 27,
+      "creditUnit": "units",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-geography-sociology-and-international-studies-1/master-of-social-sciences-in-smart-resilient-and-sustainable-cities",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The latest publicly accessible HKBU Academic Registry handbook page publishes the complete 2025-26 27-unit curriculum: four Programme Required Courses (12 units) and a 15-unit Elective requirement. Students may complete either the 6-unit GEOG7670 Group Project or GEOG7680 Professional Placement, or replace that component with two additional 3-unit Electives. The mutually exclusive Project/Placement/extra-Electives choice and annual availability require manual audit review. GEOG7510 and GEOG7540 are officially joint courses with undergraduate students. The protected 2026-27 handbook must be rechecked when it becomes publicly accessible.",
+      "courseGroups": [
+        {
+          "id": "programme-required-courses",
+          "name": "Programme Required Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Programme Required Courses (12 units).",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-geography-sociology-and-international-studies-1/master-of-social-sciences-in-smart-resilient-and-sustainable-cities",
+          "courses": [
+            { "code": "GEOG7610", "name": "Smart, Resilient and Sustainable Cities", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/GEOG7610" },
+            { "code": "GEOG7620", "name": "Geospatial Analytics, AI and Big Data for Smart, Resilient and Sustainable Cities", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/GEOG7620" },
+            { "code": "GEOG7630", "name": "Carbon Management for Smart, Resilient and Sustainable Cities", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/GEOG7630" },
+            { "code": "GEOG7640", "name": "Geopolitics in Smart, Resilient and Sustainable Cities", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/GEOG7640" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective_with_project_or_placement",
+          "creditsRequired": 15,
+          "ruleText": "Complete 15 Elective units. Students may choose either GEOG7670 Group Project or GEOG7680 Professional Placement (6 units), or two additional 3-unit Electives instead. The Project and Placement are alternatives and must not both be counted automatically.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-geography-sociology-and-international-studies-1/master-of-social-sciences-in-smart-resilient-and-sustainable-cities",
+          "courses": [
+            { "code": "GEOG7650", "name": "The Built Environment, Transport Choice and Wellbeing", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/GEOG7650" },
+            { "code": "GEOG7660", "name": "Urban Environmental Hazards and Health", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/GEOG7660" },
+            { "code": "GEOG7670", "name": "Group Project", "credits": 6, "courseKind": "project", "conditionalRequirement": true, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/GEOG7670" },
+            { "code": "GEOG7680", "name": "Professional Placement", "credits": 6, "courseKind": "placement", "conditionalRequirement": true, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/GEOG7680" },
+            { "code": "GEOG7510", "name": "Resource and Environmental Management in China", "credits": 3, "subjectGroups": ["joint-undergraduate-course"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/GEOG7510" },
+            { "code": "GEOG7520", "name": "Urban and Regional Development of China", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/GEOG7520" },
+            { "code": "GEOG7530", "name": "Graduate Seminar on Geography of China", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/GEOG7530" },
+            { "code": "GEOG7540", "name": "Sustainable Energy and Technological Innovation in China", "credits": 3, "subjectGroups": ["joint-undergraduate-course"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/GEOG7540" }
+          ]
+        }
+      ]
+    }
+  ]
+}

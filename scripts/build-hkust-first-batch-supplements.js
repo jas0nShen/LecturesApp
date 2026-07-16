@@ -144,22 +144,7 @@ const groupRequirementOverrides = new Map([
   }]
 ]);
 
-const courseDetailOverrides = new Map([
-  ['HKUST-TPG-006/MAFS 5110', {
-    name: 'Advanced Data Analysis with Statistical Programming',
-    credits: 3,
-    sourceUrl: 'https://prog-crs.hkust.edu.hk/pgcourse/2025-26/MAFS'
-  }],
-  ['HKUST-TPG-011/MILE 5306', {
-    name: 'Understanding Chinese Language in Global Context',
-    credits: 3,
-    sourceUrl: 'https://prog-crs.hkust.edu.hk/pgcourse/2023-24/MILE'
-  }],
-  ['HKUST-TPG-042/EESM 5910', {
-    name: 'Topics in Telecommunications and Network Convergence',
-    credits: 3
-  }]
-]);
+const courseDetailOverrides = new Map();
 
 const programmeCreditOverrides = new Map([
   ['HKUST-TPG-013', 45]
@@ -1172,17 +1157,17 @@ function main() {
   selected.forEach((item) => {
     if (!item.creditsRequired || !item.courseGroups.length || item.missingCourseDetails.length || item.ungroupedCourseRefs.length) throw new Error(`${item.programmeId} is not ready for promotion`);
   });
-  fs.writeFileSync(outputPath, `${JSON.stringify({ schemaVersion: 1, schoolCode: 'HKUST', academicYear: '2026-27', verifiedAt: '2026-07-11', programmes: selected.map(promote) }, null, 2)}\n`);
+  fs.writeFileSync(outputPath, `${JSON.stringify({ schemaVersion: 1, schoolCode: 'HKUST', academicYear: '2026-27', verifiedAt: '2026-07-16', programmes: selected.map(promote) }, null, 2)}\n`);
 
   const blocked = preparedCandidates.filter((item) => !selectedIds.has(item.programmeId)).map((item) => ({
     programmeId: item.programmeId,
     status: item.error && /No unique current/.test(item.error) ? 'archived' : 'blocked',
     sourceUrl: item.sourceUrl || 'https://prog-crs.hkust.edu.hk/pgprog/2026-27/',
     statusNote: item.error && /No unique current/.test(item.error)
-      ? 'No unique matching Programme was found in the current 2026/27 official directory; archive status requires final manual confirmation.'
+      ? 'The current 2026/27 official directory lists 52 taught postgraduate Programmes and contains no unique match for Digital Master of Business Administration Program for Global Leaders. Keep this historical catalogue entry archived unless a current official Programme page is published.'
       : 'The official curriculum was collected, but course-detail or rule-group review is still incomplete.'
   }));
-  fs.writeFileSync(statusPath, `${JSON.stringify({ schemaVersion: 1, schoolCode: 'HKUST', academicYear: '2026-27', verifiedAt: '2026-07-11', programmes: blocked }, null, 2)}\n`);
+  fs.writeFileSync(statusPath, `${JSON.stringify({ schemaVersion: 1, schoolCode: 'HKUST', academicYear: '2026-27', verifiedAt: '2026-07-16', programmes: blocked }, null, 2)}\n`);
   console.log(JSON.stringify({ ok: true, verified: selected.length, pending: blocked.length }));
 }
 

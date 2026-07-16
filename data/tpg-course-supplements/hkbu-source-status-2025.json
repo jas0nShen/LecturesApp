@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-001",
+      "status": "blocked",
+      "creditsRequired": 27,
+      "creditUnit": "units",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/master-of-arts-in-ethics-and-public-affairs-1",
+      "statusNote": "The latest publicly accessible 2025-26 HKBU Academic Registry handbook confirms a 27-unit award and publishes all 12 unique course codes, titles and credits, but the Dissertation Stream rules conflict internally. Its structure summary requires 6 Foundation units, 15 Elective units and 6 Dissertation units. The detailed section instead labels Elective Courses as 18 units, then lists six 3-unit courses plus an either-or choice between LSE7060 and LSE7150, which would be seven courses or 21 units if all listed requirements applied. Keep the Programme closed until HKBU clarifies whether the Dissertation Stream selects five of the six listed courses plus one either-or course, or publishes another authoritative combination. Do not infer a 27-unit path from the conflicting subtotals; the protected 2026-27 handbook must be rechecked when it becomes publicly accessible."
+    },
+    {
+      "programmeId": "HKBU-TPG-002",
+      "status": "blocked",
+      "creditsRequired": 27,
+      "creditUnit": "units",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-language-and-culture-1/master-of-arts-in-creative-writing-for-cultural-1",
+      "statusNote": "The latest publicly accessible 2025-26 HKBU Academic Registry handbook confirms a 27-unit award and publishes 14 course codes, titles and credits, but its Master Project requirement conflicts internally. The curriculum structure and detailed course table state a 3-unit WRIT7051 Master Project, yielding 12 Required + 12 Elective + 3 Project = 27 units. The prose immediately above the course table instead says students must complete 18 units of required courses including a 6-unit Master Project, plus 12 units of Electives, which totals 30 units and contradicts both the Programme total and WRIT7051 row. Keep the Programme closed until HKBU confirms whether WRIT7051 is 3 or 6 units and corrects the required-course subtotal. Do not infer the Project credit from the arithmetic; the protected 2026-27 handbook must be rechecked when it becomes publicly accessible."
+    },
+    {
+      "programmeId": "HKBU-TPG-011",
+      "status": "blocked",
+      "creditsRequired": 30,
+      "creditUnit": "units",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-counselling-1",
+      "statusNote": "The latest publicly accessible 2025-26 HKBU Academic Registry handbook confirms a 30-unit award, three Counselling Specialisations, four Required Counselling Courses (12 units), 12 Specialisation/Elective units, and a compulsory 6-unit Practicum with 80 counselling hours. The official course table does not publish any course code or formal course title for that Practicum. Keep the Programme closed until HKBU publishes the missing 6-unit Practicum code and name; do not invent a code from the generic component label or expose the remaining 17 coded courses as a complete curriculum. The protected 2026-27 handbook must be rechecked when it becomes publicly accessible."
+    },
+    {
+      "programmeId": "HKBU-TPG-032",
+      "status": "blocked",
+      "creditsRequired": 36,
+      "creditUnit": "units",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-business-management",
+      "statusNote": "The latest publicly accessible 2025-26 HKBU Academic Registry handbook confirms a 36-unit MSc in Business Management and publishes exact codes, titles and credits for eight Core Courses (24 units), BUS7470 plus BUSD7021 and BUSD7022 as Required Courses (6 units), and the complete Programme and recommended non-Programme Elective pools. However, the curriculum summary requires 6 Elective units, while the detailed course table labels Elective Courses as 9 units; the same detailed table still totals the award as 36 units, which is only arithmetically consistent with 6 Elective units. Keep the Programme closed until HKBU corrects the conflicting Elective subtotal. Do not infer a two- or three-Elective requirement from arithmetic or expose a structure whose published group requirement is internally inconsistent."
+    },
+    {
+      "programmeId": "HKBU-TPG-044",
+      "status": "blocked",
+      "creditsRequired": 30,
+      "creditUnit": "units",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-management-marketing-and-information-systems-1/master-of-science-in-marketing-for-the-creative-economy",
+      "statusNote": "The latest publicly accessible 2025-26 HKBU Academic Registry handbook confirms a 30-unit MSc in Marketing for the Creative Economy: six Required Courses for 18 units, three Elective choices for 9 units and MKTG7200 Overseas Field Trip for 3 units. It publishes 14 current course codes, titles and 3-unit values. However, the first Elective group says students must choose one from four courses but lists only MKTG7170, VACC7010 and VACC7030. Keep the Programme closed until HKBU either publishes the missing fourth current course or corrects the stated count. Do not carry forward ACCT7060 or ACCT7960 from the different 2024-25 curriculum, infer a missing course, or expose the 14-code partial structure as complete."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-028",
+      "status": "verified",
+      "programmeName": "Master of Human Resources Management (MHRM)",
+      "faculty": "School of Business",
+      "creditsRequired": 30,
+      "creditUnit": "units",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-management-marketing-and-information-systems-1/master-of-human-resources-management",
+      "ruleReviewStatus": "verified",
+      "statusNote": "The latest publicly accessible HKBU Academic Registry handbook publishes the complete 2025-26 30-unit curriculum: seven Required Courses for 21 units and three Elective Courses selected from an eight-course pool for 9 units. Every published course has an official code, title, 3-unit value and linked course page. The handbook notes that Elective Course offerings may vary according to demand and teaching-resource availability.",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 21,
+          "coursesRequired": 7,
+          "ruleText": "Complete all seven Required Courses (21 units).",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-management-marketing-and-information-systems-1/master-of-human-resources-management",
+          "courses": [
+            { "code": "HRM7030", "name": "Workforce Planning and Talent Acquisition", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HRM7030" },
+            { "code": "HRM7040", "name": "Learning and Development", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HRM7040" },
+            { "code": "HRM7050", "name": "Performance Management", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HRM7050" },
+            { "code": "HRM7060", "name": "Reward Management", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HRM7060" },
+            { "code": "HRM7320", "name": "Industrial-organisational Psychology", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HRM7320" },
+            { "code": "HRM7610", "name": "Human Resources Research, Analytics and Consultancy", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HRM7610" },
+            { "code": "HRM7630", "name": "Ethics, Culture and Governance", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HRM7630" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Complete three Elective Courses (9 units) from the published pool. Offerings may vary according to demand and teaching-resource availability.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-management-marketing-and-information-systems-1/master-of-human-resources-management",
+          "courses": [
+            { "code": "HRM7070", "name": "Employee Relations and Employment Law", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HRM7070" },
+            { "code": "HRM7080", "name": "Human Resources Management in the PRC", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HRM7080" },
+            { "code": "HRM7160", "name": "Technology for People Management", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HRM7160" },
+            { "code": "HRM7340", "name": "International Human Resources Management", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HRM7340" },
+            { "code": "HRM7420", "name": "Employee Engagement and Well-being", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HRM7420" },
+            { "code": "HRM7640", "name": "Human Resources Analytics", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HRM7640" },
+            { "code": "HRM7650", "name": "Analytics for Talent Management", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HRM7650" },
+            { "code": "HRM7690", "name": "HRM Standards for Effective and Sustainable People Management", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HRM7690" }
+          ]
+        }
+      ]
+    }
+  ]
+}

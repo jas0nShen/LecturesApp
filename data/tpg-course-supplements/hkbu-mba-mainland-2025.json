@@ -1,0 +1,264 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-027",
+      "programmeName": "Master of Business Administration (MBA) (Mainland Class only)",
+      "faculty": "School of Business",
+      "status": "verified",
+      "creditsRequired": 45,
+      "creditUnit": "units",
+      "sourceUrl": "https://ar.hkbu.edu.hk/tpg-admissions/programmes/master-of-business-administration-mba-mainland-class-only",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [],
+      "statusNote": "The current HKBU admissions page confirms September 2026 entry and a 45-unit structure comprising 33 Core, 6 Required and 6 Advanced Elective units, and directs applicants to the Programme website or University Student Handbook for the course list. The linked 2025-26 official Handbook publishes all 29 fixed course codes and credits: eleven Core Courses, the three consecutive one-unit MBA Capstone Project parts, the zero-unit MBA Seminars and Company Visits course, the three-unit Learning in the Field course, and thirteen Advanced Electives. The three Capstone codes together form one 3-unit Required component. The Handbook also permits Recommended non-MBA Electives and states that the Advanced Elective list may vary with demand and teaching resources; only the thirteen currently published Advanced Electives are modelled as the fixed pool, while any separately approved non-MBA option requires manual audit review.",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 33,
+          "coursesRequired": 11,
+          "ruleText": "Complete all eleven Core Courses for 33 units.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-business-administration",
+          "courses": [
+            {
+              "code": "ACCT7070",
+              "name": "Accounting for Decision Making",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ACCT7070"
+            },
+            {
+              "code": "BUS7380",
+              "name": "Business Ethics and Corporate Governance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/BUS7380"
+            },
+            {
+              "code": "BUS7410",
+              "name": "Operations and Supply Chain Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/BUS7410"
+            },
+            {
+              "code": "BUSD7130",
+              "name": "Business Analytics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/BUSD7130"
+            },
+            {
+              "code": "BUSD7140",
+              "name": "Entrepreneurship and New Venture Development",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/BUSD7140"
+            },
+            {
+              "code": "ECON7600",
+              "name": "Managerial Economics in Digital Era",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ECON7600"
+            },
+            {
+              "code": "FIN7090",
+              "name": "Corporate Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/FIN7090"
+            },
+            {
+              "code": "HRM7600",
+              "name": "Global Human Resources Management and Cross-cultural Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HRM7600"
+            },
+            {
+              "code": "MGNT7240",
+              "name": "Strategic Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MGNT7240"
+            },
+            {
+              "code": "MGNT7250",
+              "name": "Leadership and Organizational Development",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MGNT7250"
+            },
+            {
+              "code": "MKT7730",
+              "name": "Marketing Strategy and Analytics",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MKT7730"
+            }
+          ]
+        },
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "required_with_project",
+          "creditsRequired": 6,
+          "coursesRequired": 5,
+          "ruleText": "Complete BUS7221, BUS7222 and BUS7223 as the three consecutive one-unit parts of the MBA Capstone Project, BUS7360 MBA Seminars and Company Visits for zero units, and BUS7520 Learning in the Field for 3 units. Together these five codes satisfy the 6-unit Required component.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-business-administration",
+          "courses": [
+            {
+              "code": "BUS7221",
+              "name": "MBA Capstone Project",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/BUS7221",
+              "courseKind": "project"
+            },
+            {
+              "code": "BUS7222",
+              "name": "MBA Capstone Project",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/BUS7222",
+              "courseKind": "project"
+            },
+            {
+              "code": "BUS7223",
+              "name": "MBA Capstone Project",
+              "credits": 1,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/BUS7223",
+              "courseKind": "project"
+            },
+            {
+              "code": "BUS7360",
+              "name": "MBA Seminars and Company Visits",
+              "credits": 0,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/BUS7360"
+            },
+            {
+              "code": "BUS7520",
+              "name": "Learning in the Field",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/BUS7520"
+            }
+          ]
+        },
+        {
+          "id": "advanced-electives",
+          "name": "Advanced Electives",
+          "type": "elective",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Complete 6 units, normally two 3-unit courses, from the published Advanced Elective list or separately approved Recommended non-MBA Electives. The fixed list may vary with demand and teaching resources; unlisted approved non-MBA options are not represented as a fixed course pool and require manual review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-business-administration",
+          "courses": [
+            {
+              "code": "ACCT7005",
+              "name": "IT Ethics and Compliance in the Digital Economy",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ACCT7005"
+            },
+            {
+              "code": "ACCT7940",
+              "name": "Enterprise Risk Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ACCT7940"
+            },
+            {
+              "code": "BUSD7150",
+              "name": "Blockchain and Their Business Applications",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/BUSD7150"
+            },
+            {
+              "code": "ECON7075",
+              "name": "Global Sustainable Investing and ESG Integration in Business",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ECON7075"
+            },
+            {
+              "code": "ECON7630",
+              "name": "International Trade and Finance",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ECON7630"
+            },
+            {
+              "code": "FIN7770",
+              "name": "Fundamental Investment and Portfolio Analysis",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/FIN7770"
+            },
+            {
+              "code": "FIN7920",
+              "name": "Financial Technology (FinTech)",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/FIN7920"
+            },
+            {
+              "code": "MGNT7340",
+              "name": "Lessons from Strategic Failures and Critical Thinking for Managers",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MGNT7340"
+            },
+            {
+              "code": "MGNT7790",
+              "name": "Sustainable Growth through Mergers and Acquisition",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MGNT7790"
+            },
+            {
+              "code": "MGNT7810",
+              "name": "Business Negotiation",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MGNT7810"
+            },
+            {
+              "code": "MGNT7830",
+              "name": "Managing Organizational Change in the AI Era",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MGNT7830"
+            },
+            {
+              "code": "MKT7740",
+              "name": "Brand Psychology and Digital Marketing",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MKT7740"
+            },
+            {
+              "code": "MKT7760",
+              "name": "Strategic Sales Management",
+              "credits": 3,
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MKT7760"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

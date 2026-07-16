@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-015",
+      "status": "verified",
+      "creditsRequired": 27,
+      "creditUnit": "units",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-sport-and-leisure-management-1",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The latest publicly accessible HKBU Academic Registry handbook page publishes the complete 2025-26 27-unit curriculum: two Required Courses (6 units) and seven Electives (21 units) from a ten-course pool. SLM7010 Foundations in Sport and Leisure Management is conditionally required for non-local students and students whose undergraduate major was not physical education, sport or recreation management. That background-dependent requirement and annual availability require manual audit review; the protected 2026-27 handbook must be rechecked when it becomes publicly accessible.",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Complete both Required Courses (6 units).",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-sport-and-leisure-management-1",
+          "courses": [
+            { "code": "SLM7020", "name": "Management Skills and Communications", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SLM7020" },
+            { "code": "SLM7100", "name": "Research Methods", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SLM7100" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective_with_background_requirement",
+          "creditsRequired": 21,
+          "coursesRequired": 7,
+          "ruleText": "Complete seven 3-unit Electives (21 units). SLM7010 is required within this quota for non-local students and for students whose undergraduate major was not physical education, sport or recreation management.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-sport-and-leisure-management-1",
+          "courses": [
+            { "code": "SLM7010", "name": "Foundations in Sport and Leisure Management", "credits": 3, "conditionalRequirement": true, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SLM7010" },
+            { "code": "SLM7030", "name": "Management of Human Resources", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SLM7030" },
+            { "code": "SLM7040", "name": "Planning and Developing Sport and Leisure Facilities", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SLM7040" },
+            { "code": "SLM7050", "name": "Marketing of Sport and Leisure Services", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SLM7050" },
+            { "code": "SLM7060", "name": "Financial Management", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SLM7060" },
+            { "code": "SLM7070", "name": "Seminar on Contemporary Issues in Sport and Leisure", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SLM7070" },
+            { "code": "SLM7080", "name": "Health Promotion", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SLM7080" },
+            { "code": "SLM7090", "name": "Development and Management of Sport and Leisure Services for Different Target Groups", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SLM7090" },
+            { "code": "SLM7140", "name": "Event Management", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SLM7140" },
+            { "code": "SLM7160", "name": "Sports Analytics", "credits": 3, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SLM7160" }
+          ]
+        }
+      ]
+    }
+  ]
+}

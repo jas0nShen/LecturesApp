@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2025-26",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-006",
+      "status": "verified",
+      "creditsRequired": 27,
+      "creditUnit": "units",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-language-and-culture-1/master-of-arts-in-literary-and-comparative-studies-1",
+      "ruleReviewStatus": "manual_review_required",
+      "tracks": [
+        {
+          "id": "HKBU-TPG-006-COURSEWORK-ONLY",
+          "name": "Coursework-only Option",
+          "type": "Award Path",
+          "creditsRequired": 27,
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-language-and-culture-1/master-of-arts-in-literary-and-comparative-studies-1"
+        },
+        {
+          "id": "HKBU-TPG-006-CULMINATING-PROJECT",
+          "name": "Culminating Project Option",
+          "type": "Award Path",
+          "creditsRequired": 27,
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-language-and-culture-1/master-of-arts-in-literary-and-comparative-studies-1"
+        }
+      ],
+      "trackSelectionOptional": false,
+      "statusNote": "The latest publicly accessible HKBU Academic Registry handbook page publishes the complete 2025-26 27-unit curriculum. Both Award Paths require five Required Courses (15 units). The Coursework-only Option completes four Electives (12 units); the Culminating Project Option completes three Electives (9 units) plus either ENG7420 MA Thesis or ENG7460 Capstone Project (3 units), subject to Programme Management Committee approval. One approved shared course from another specified HKBU taught postgraduate Programme may replace one Elective. Project approval, the external substitution and annual availability require manual audit review. The separate HKBU–University of Melbourne double degree and the 18-unit exit award are not modelled as base-MA completion paths; the protected 2026-27 handbook must be rechecked when it becomes publicly accessible.",
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "appliesToTrackIds": ["HKBU-TPG-006-COURSEWORK-ONLY", "HKBU-TPG-006-CULMINATING-PROJECT"],
+          "ruleText": "Complete all five Required Courses (15 units) under either Award Path.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-language-and-culture-1/master-of-arts-in-literary-and-comparative-studies-1",
+          "courses": [
+            { "code": "ENG7310", "name": "Literary Theory", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-006-COURSEWORK-ONLY", "HKBU-TPG-006-CULMINATING-PROJECT"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ENG7310" },
+            { "code": "ENG7320", "name": "Global Modernisms", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-006-COURSEWORK-ONLY", "HKBU-TPG-006-CULMINATING-PROJECT"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ENG7320" },
+            { "code": "ENG7330", "name": "Graduate Research Seminar", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-006-COURSEWORK-ONLY", "HKBU-TPG-006-CULMINATING-PROJECT"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ENG7330" },
+            { "code": "ENG7340", "name": "World Literatures in Modern Times", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-006-COURSEWORK-ONLY", "HKBU-TPG-006-CULMINATING-PROJECT"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ENG7340" },
+            { "code": "ENG7350", "name": "Comparative Literature and Arts", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-006-COURSEWORK-ONLY", "HKBU-TPG-006-CULMINATING-PROJECT"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ENG7350" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "track_elective",
+          "creditsRequiredByTrackIds": {
+            "HKBU-TPG-006-COURSEWORK-ONLY": 12,
+            "HKBU-TPG-006-CULMINATING-PROJECT": 9
+          },
+          "coursesRequiredByTrackIds": {
+            "HKBU-TPG-006-COURSEWORK-ONLY": 4,
+            "HKBU-TPG-006-CULMINATING-PROJECT": 3
+          },
+          "appliesToTrackIds": ["HKBU-TPG-006-COURSEWORK-ONLY", "HKBU-TPG-006-CULMINATING-PROJECT"],
+          "ruleText": "The Coursework-only Option completes four Electives (12 units); the Culminating Project Option completes three (9 units). With Programme approval, one specified external shared course may replace one Elective.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-language-and-culture-1/master-of-arts-in-literary-and-comparative-studies-1",
+          "courses": [
+            { "code": "ENG7360", "name": "The Ecocritical Imagination", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-006-COURSEWORK-ONLY", "HKBU-TPG-006-CULMINATING-PROJECT"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ENG7360" },
+            { "code": "ENG7370", "name": "World Drama", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-006-COURSEWORK-ONLY", "HKBU-TPG-006-CULMINATING-PROJECT"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ENG7370" },
+            { "code": "ENG7380", "name": "21st Century Literature", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-006-COURSEWORK-ONLY", "HKBU-TPG-006-CULMINATING-PROJECT"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ENG7380" },
+            { "code": "ENG7390", "name": "Advanced Topic in Literary and Comparative Studies", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-006-COURSEWORK-ONLY", "HKBU-TPG-006-CULMINATING-PROJECT"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ENG7390" },
+            { "code": "ENG7400", "name": "Advanced Topic in Genre Studies", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-006-COURSEWORK-ONLY", "HKBU-TPG-006-CULMINATING-PROJECT"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ENG7400" },
+            { "code": "ENG7410", "name": "Advanced Topic in Critical Theory", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-006-COURSEWORK-ONLY", "HKBU-TPG-006-CULMINATING-PROJECT"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ENG7410" },
+            { "code": "ENG7430", "name": "The Erotics of Humanism", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-006-COURSEWORK-ONLY", "HKBU-TPG-006-CULMINATING-PROJECT"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ENG7430" },
+            { "code": "ENG7440", "name": "Postcolonialism", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-006-COURSEWORK-ONLY", "HKBU-TPG-006-CULMINATING-PROJECT"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ENG7440" },
+            { "code": "ENG7450", "name": "Creative Writing", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-006-COURSEWORK-ONLY", "HKBU-TPG-006-CULMINATING-PROJECT"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ENG7450" },
+            { "code": "ENG7740", "name": "Adaptation Studies and World Literature", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-006-COURSEWORK-ONLY", "HKBU-TPG-006-CULMINATING-PROJECT"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ENG7740" },
+            { "code": "ENG7750", "name": "Global Shakespeare", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-006-COURSEWORK-ONLY", "HKBU-TPG-006-CULMINATING-PROJECT"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ENG7750" },
+            { "code": "ENG7760", "name": "Transmedia Storytelling", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-006-COURSEWORK-ONLY", "HKBU-TPG-006-CULMINATING-PROJECT"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ENG7760" }
+          ]
+        },
+        {
+          "id": "culminating-project",
+          "name": "Culminating Project",
+          "type": "project_or_thesis",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "appliesToTrackIds": ["HKBU-TPG-006-CULMINATING-PROJECT"],
+          "ruleText": "Subject to Programme Management Committee approval, complete either ENG7420 MA Thesis or ENG7460 Capstone Project for 3 units.",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-language-and-culture-1/master-of-arts-in-literary-and-comparative-studies-1",
+          "courses": [
+            { "code": "ENG7420", "name": "MA Thesis", "credits": 3, "courseKind": "dissertation", "conditionalRequirement": true, "appliesToTrackIds": ["HKBU-TPG-006-CULMINATING-PROJECT"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ENG7420" },
+            { "code": "ENG7460", "name": "Capstone Project", "credits": 3, "courseKind": "project", "conditionalRequirement": true, "appliesToTrackIds": ["HKBU-TPG-006-CULMINATING-PROJECT"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ENG7460" }
+          ]
+        }
+      ]
+    }
+  ]
+}
