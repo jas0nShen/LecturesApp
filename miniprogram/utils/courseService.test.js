@@ -19,6 +19,7 @@ global.wx = {
 };
 
 const service = require('./courseService');
+const tpgService = require('./tpgService');
 
 beforeEach(() => {
   storage.clear();
@@ -30,15 +31,52 @@ test('legacy curriculum profiles migrate to the verified intake label', () => {
   assert.equal(storage.get('userProfile').curriculumYear, '2025-26');
 });
 
-test('Study Plan capability is limited to the built-in HKU BEng CompSc sample', () => {
+test('Study Plan capability supports verified TPG structures and preserves the HKU UG mode', () => {
   assert.equal(service.getPlanningCapability().supported, false);
-  assert.equal(service.getPlanningCapability({
+  assert.deepEqual(service.getPlanningCapability({
     profileType: 'undergraduate', universityCode: 'HKU', programmeId: 1, majorId: 1
-  }).supported, true);
+  }), {
+    supported: true,
+    mode: 'hku-four-year-plan',
+    reason: '',
+    settingsUrl: '/pages/onboarding/onboarding?mode=undergraduate&profileType=undergraduate&universityCode=HKU&programmeId=1&majorId=1'
+  });
   assert.equal(service.getPlanningCapability({
     profileType: 'undergraduate', universityCode: 'HKU', programmeId: 'HKU-UG-6004-1', majorId: 'HKU-UG-6004-1-M1'
   }).supported, false);
-  assert.equal(service.getPlanningCapability({ profileType: 'tpg', programmeId: 1 }).supported, false);
+
+  const supported = service.getPlanningCapability({ profileType: 'tpg', programmeId: 'HKU-TPG-024' });
+  assert.equal(supported.supported, true);
+  assert.equal(supported.mode, 'tpg-course-plan');
+
+  const blocked = service.getPlanningCapability({ profileType: 'tpg', programmeId: 'HKU-TPG-027' });
+  assert.equal(blocked.supported, false);
+  assert.match(blocked.reason, /复核中/);
+
+  const missingTrack = service.getPlanningCapability({ profileType: 'tpg', programmeId: 'POLYU-TPG-094' });
+  assert.equal(missingTrack.supported, false);
+  assert.match(missingTrack.reason, /Track/);
+  assert.equal(service.getPlanningCapability({
+    profileType: 'tpg',
+    programmeId: 'POLYU-TPG-094',
+    trackId: 'POLYU-TPG-094-LANGUAGE-AND-COMMUNICATION'
+  }).supported, true);
+});
+
+test('TPG planning capability reports a missing verified course structure', () => {
+  const originalGetProgramme = tpgService.getProgramme;
+  tpgService.getProgramme = () => ({
+    id: 'TEST-TPG-001',
+    courseVerificationStatus: 'verified',
+    courseGroups: []
+  });
+  try {
+    const capability = service.getPlanningCapability({ profileType: 'tpg', programmeId: 'TEST-TPG-001' });
+    assert.equal(capability.supported, false);
+    assert.match(capability.reason, /暂无已核验课程组/);
+  } finally {
+    tpgService.getProgramme = originalGetProgramme;
+  }
 });
 
 test('opening profile settings falls back to reLaunch when navigateTo fails', () => {
@@ -288,6 +326,61 @@ test('study plan items can be added, updated, joined and removed', () => {
     { courseCode: 'COMP2113', plannedYear: 2, plannedTerm: '2' }
   ]);
   assert.equal(service.isCoursePlanned('COMP1117'), false);
+});
+
+test('TPG planned courses use Programme-scoped normalized keys and can be removed', () => {
+  assert.deepEqual(service.toggleTpgPlannedCourse('HKU-TPG-024', ' dent7103 '), [
+    'HKU-TPG-024:DENT7103'
+  ]);
+  assert.equal(service.isTpgCoursePlanned('HKU-TPG-024', 'DENT7103'), true);
+  assert.equal(service.isTpgCoursePlanned('HKU-TPG-025', 'DENT7103'), false);
+
+  service.toggleTpgPlannedCourse('HKU-TPG-025', 'dent7103');
+  assert.deepEqual(service.getTpgPlannedCourseKeys(), [
+    'HKU-TPG-024:DENT7103',
+    'HKU-TPG-025:DENT7103'
+  ]);
+
+  assert.deepEqual(service.toggleTpgPlannedCourse('HKU-TPG-024', 'DENT7103'), [
+    'HKU-TPG-025:DENT7103'
+  ]);
+  assert.equal(service.isTpgCoursePlanned('HKU-TPG-024', 'DENT7103'), false);
+
+  storage.set('plannedTpgCourseKeys', [
+    'HKU-TPG-025:DENT7103',
+    'HKU-TPG-025:DENT7103'
+  ]);
+  assert.deepEqual(service.removeTpgPlannedCourse('HKU-TPG-025', 'dent7103'), []);
+  assert.deepEqual(service.removeTpgPlannedCourse('HKU-TPG-025', 'dent7103'), []);
+});
+
+test('TPG planned courses are backed up, restored, summarized and cleared', () => {
+  service.toggleTpgPlannedCourse('HKU-TPG-024', 'DENT7103');
+  service.toggleTpgPlannedCourse('HKU-TPG-025', 'DENT7103');
+  assert.equal(service.getUserDataSummary().studyPlanCount, 2);
+
+  const backup = service.exportUserData();
+  assert.deepEqual(backup.data.plannedTpgCourseKeys, [
+    'HKU-TPG-024:DENT7103',
+    'HKU-TPG-025:DENT7103'
+  ]);
+
+  storage.clear();
+  assert.equal(service.importUserData(backup), true);
+  assert.deepEqual(service.getTpgPlannedCourseKeys(), backup.data.plannedTpgCourseKeys);
+  assert.equal(service.clearUserData().studyPlanCount, 0);
+  assert.deepEqual(service.getTpgPlannedCourseKeys(), []);
+
+  assert.throws(() => service.importUserData({
+    app: 'lectures-app',
+    version: 1,
+    data: { plannedTpgCourseKeys: ['HKU-TPG-024: dent7103 '] }
+  }), /Invalid plannedTpgCourseKeys/);
+  assert.throws(() => service.importUserData({
+    app: 'lectures-app',
+    version: 1,
+    data: { plannedTpgCourseKeys: [123] }
+  }), /Invalid plannedTpgCourseKeys/);
 });
 
 test('study plan analysis totals credits and flags prerequisite sequencing evidence', () => {
@@ -709,6 +802,7 @@ test('all declared local user keys are backup and restore aware', () => {
     'completedCourseIds',
     'completedOfferingCodes',
     'completedTpgCourseKeys',
+    'plannedTpgCourseKeys',
     'studyPlanItems',
     'recentlyViewedCourseCodes',
     'courseSearchHistory',
@@ -727,6 +821,7 @@ test('all declared local user keys are backup and restore aware', () => {
       completedCourseIds: [2],
       completedOfferingCodes: ['COMP2113'],
       completedTpgCourseKeys: ['POLYU-TPG-090:COMP5521'],
+      plannedTpgCourseKeys: ['POLYU-TPG-090:COMP5521'],
       studyPlanItems: [{ courseCode: 'COMP3278', year: 2, term: '1' }],
       recentlyViewedCourseCodes: ['COMP4801'],
       courseSearchHistory: ['security'],

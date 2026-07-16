@@ -15,6 +15,8 @@ Page({
     selectedTrack: null,
     trackSelectionRequired: false,
     isCurrentProgramme: false,
+    tpgPlanningSupported: false,
+    tpgPlanningReason: '',
     loadError: false,
     programmeId: ''
   },
@@ -81,13 +83,28 @@ Page({
     const isCurrentProgramme = isSavedProgramme && tpgService.isTrackSelectionComplete(programme, savedTrackId);
     const trackId = isCurrentProgramme ? savedTrackId : '';
     const courseGroups = tpgService.resolveCourseGroups(programme, trackId);
+    const status = tpgService.getStatus(programme);
+    const planningCapability = service.getPlanningCapability(profile);
+    const tpgPlanningSupported = Boolean(
+      isCurrentProgramme
+      && status.isComplete
+      && planningCapability.supported
+      && planningCapability.mode === 'tpg-course-plan'
+    );
+    let tpgPlanningReason = '';
+    if (!isSavedProgramme) tpgPlanningReason = '请先将此 Programme 设为当前课程范围。';
+    else if (status.isBlocked || !status.hasCourseGroups) tpgPlanningReason = '此 Programme 的课程结构尚未开放，暂不能使用选课计划。';
+    else if (!tpgService.isTrackSelectionComplete(programme, savedTrackId)) tpgPlanningReason = '请先选择完整的 Track，再使用选课计划。';
+    else if (!tpgPlanningSupported) tpgPlanningReason = planningCapability.reason || '当前 Programme 暂不支持选课计划。';
     this.setData({
       isCurrentProgramme,
       courseGroups,
       courseCount: courseGroups.reduce((sum, group) => sum + group.courses.length, 0),
       creditsRequired: tpgService.getCreditsRequired(programme, trackId),
       selectedTrack: trackId ? tpgService.getTrack(programme.id, trackId) : null,
-      trackSelectionRequired: tpgService.listTracks(programme).length > 0 && !programme.trackSelectionOptional
+      trackSelectionRequired: tpgService.listTracks(programme).length > 0 && !programme.trackSelectionOptional,
+      tpgPlanningSupported,
+      tpgPlanningReason
     });
   },
 
@@ -155,6 +172,14 @@ Page({
 
   goHome() {
     wx.switchTab({ url: '/pages/home/home' });
+  },
+
+  goTpgStudyPlan() {
+    if (!this.data.tpgPlanningSupported) {
+      wx.showToast({ title: this.data.tpgPlanningReason || '当前 Programme 暂不能使用选课计划', icon: 'none' });
+      return;
+    }
+    wx.navigateTo({ url: '/pages/study-plan/study-plan' });
   },
 
   onShareAppMessage() {

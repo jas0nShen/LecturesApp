@@ -64,6 +64,7 @@
         </view>
         <view class="course-title">{{item.name}}</view>
         <view class="subtitle">{{item.creditLabel}} · 点击查看课程详情</view>
+        <view wx:if="{{item.planned}}" class="planned-mark">◆ 已计划</view>
       </view>
 
       <view wx:if="{{tpgCourseCount === 0}}" class="empty tpg-empty">
@@ -83,6 +84,15 @@
           <view class="empty-action primary" bindtap="clearKeyword">清除关键词</view>
         </view>
       </view>
+    </view>
+
+    <view class="tpg-plan-entry {{tpgPlanningSupported ? '' : 'tpg-plan-entry-disabled'}}" bindtap="goTpgStudyPlan">
+      <view>
+        <view class="tpg-plan-kicker">MY COURSE PLAN</view>
+        <view class="tpg-plan-title">我的选课计划</view>
+        <view class="tpg-plan-copy">{{tpgPlanningSupported ? '按当前 Programme 和 Track 查看已计划课程' : tpgPlanningReason}}</view>
+      </view>
+      <view class="tpg-plan-arrow">›</view>
     </view>
 
     <view class="tpg-actions">

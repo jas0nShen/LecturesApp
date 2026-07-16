@@ -8,6 +8,9 @@ Page({
     typeLabel: '',
     favorite: false,
     completed: false,
+    planned: false,
+    tpgPlanningSupported: false,
+    tpgPlanningReason: '',
     dataSource: 'loading',
     isUgCourse: false,
     isTpgCourse: false,
@@ -34,7 +37,27 @@ Page({
       }
       programme = tpgService.getProgramme(options.tpgProgrammeId);
       const university = tpgService.getProgrammeUniversity(programme);
-      const item = tpgService.getProgrammeCourse(options.tpgProgrammeId, options.courseCode);
+      const profile = service.getProfile();
+      const isCurrentProgramme = Boolean(profile && profile.profileType === 'tpg' && profile.programmeId === programme.id);
+      const trackId = isCurrentProgramme ? profile.trackId || '' : '';
+      const trackSelectionComplete = tpgService.isTrackSelectionComplete(programme, trackId);
+      const status = tpgService.getStatus(programme);
+      const item = tpgService.getProgrammeCourse(options.tpgProgrammeId, options.courseCode, trackId);
+      const planningCapability = service.getPlanningCapability(profile);
+      const tpgPlanningSupported = Boolean(
+        item
+        && isCurrentProgramme
+        && trackSelectionComplete
+        && status.isComplete
+        && planningCapability.supported
+        && planningCapability.mode === 'tpg-course-plan'
+      );
+      let tpgPlanningReason = '';
+      if (!isCurrentProgramme) tpgPlanningReason = '请先将此 Programme 设为当前课程范围。';
+      else if (status.isBlocked || !status.hasCourseGroups) tpgPlanningReason = '此 Programme 的课程结构尚未开放，暂不能加入计划。';
+      else if (!trackSelectionComplete) tpgPlanningReason = '请先选择完整的 Track，再使用选课计划。';
+      else if (!item) tpgPlanningReason = '这门课程不属于当前 Track，暂不能加入当前计划。';
+      else if (!tpgPlanningSupported) tpgPlanningReason = planningCapability.reason || '当前 Programme 暂不支持选课计划。';
       const course = item ? {
         courseCode: item.code,
         titleEn: item.name,
@@ -54,6 +77,9 @@ Page({
         typeLabel: item ? item.groupName : '',
         favorite: item ? service.isTpgCourseFavorite(options.tpgProgrammeId, item.code) : false,
         completed: item ? service.isTpgCourseCompleted(options.tpgProgrammeId, item.code) : false,
+        planned: item ? service.isTpgCoursePlanned(options.tpgProgrammeId, item.code) : false,
+        tpgPlanningSupported,
+        tpgPlanningReason,
         dataSource: '授课硕士本地资料库',
         isUgCourse: false,
         isTpgCourse: true,
@@ -131,6 +157,16 @@ Page({
     }
     service.toggleCompleted(this.data.course.id);
     this.setData({ completed: service.getCompletedCourseIds().includes(this.data.course.id) });
+  },
+
+  togglePlanned() {
+    if (!this.data.isTpgCourse || !this.data.course) return;
+    if (!this.data.tpgPlanningSupported) {
+      wx.showToast({ title: this.data.tpgPlanningReason || '当前课程暂不能加入计划', icon: 'none' });
+      return;
+    }
+    service.toggleTpgPlannedCourse(this.data.tpgProgrammeId, this.data.course.courseCode);
+    this.setData({ planned: service.isTpgCoursePlanned(this.data.tpgProgrammeId, this.data.course.courseCode) });
   },
 
   copyOfficialUrl() {

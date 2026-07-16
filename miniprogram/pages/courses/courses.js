@@ -56,6 +56,8 @@ Page({
     tpgCourseCountLabel: '',
     tpgStatusTitle: '',
     tpgStatusCopy: '',
+    tpgPlanningSupported: false,
+    tpgPlanningReason: '',
     isUgCatalogue: false,
     ugProfile: null,
     ugCourses: [],
@@ -70,7 +72,19 @@ Page({
 
   onShow() {
     this.setData({ searchHistory: service.getCourseSearchHistory() });
-    this.refresh();
+    if (this._showTimer) clearTimeout(this._showTimer);
+    // switchTab can fire onShow before the tab transition has fully replaced
+    // the previous page stack. Defer subpackage activation so its temporary
+    // loader page always returns to this course tab, not to the old page.
+    this._showTimer = setTimeout(() => {
+      this._showTimer = null;
+      this.refresh();
+    }, 100);
+  },
+
+  onHide() {
+    if (this._showTimer) clearTimeout(this._showTimer);
+    this._showTimer = null;
   },
 
   async refresh() {
@@ -142,8 +156,23 @@ Page({
     if (tpgProgramme) {
       const tpgUniversity = tpgService.getProgrammeUniversity(tpgProgramme);
       const allCourses = tpgService.flattenCourses(tpgProgramme, '', profile.trackId || '');
-      const tpgCourses = tpgService.flattenCourses(tpgProgramme, this.data.keyword, profile.trackId || '');
+      const tpgCourses = tpgService.flattenCourses(tpgProgramme, this.data.keyword, profile.trackId || '').map((course) => ({
+        ...course,
+        planned: service.isTpgCoursePlanned(tpgProgramme.id, course.code)
+      }));
       const status = tpgService.getStatus(tpgProgramme);
+      const planningCapability = service.getPlanningCapability(profile);
+      const trackSelectionComplete = tpgService.isTrackSelectionComplete(tpgProgramme, profile.trackId || '');
+      const tpgPlanningSupported = Boolean(
+        status.isComplete
+        && trackSelectionComplete
+        && planningCapability.supported
+        && planningCapability.mode === 'tpg-course-plan'
+      );
+      let tpgPlanningReason = '';
+      if (status.isBlocked || !status.hasCourseGroups) tpgPlanningReason = '此 Programme 的课程结构尚未开放，暂不能使用选课计划。';
+      else if (!trackSelectionComplete) tpgPlanningReason = '请先选择完整的 Track，再使用选课计划。';
+      else if (!tpgPlanningSupported) tpgPlanningReason = planningCapability.reason || '当前 Programme 暂不支持选课计划。';
       if (requestId !== this._requestId) return;
       this.setData({
         needsSetup: false,
@@ -157,6 +186,8 @@ Page({
         tpgCourseCountLabel: status.hasCourseGroups ? '已开放课程' : '课程清单',
         tpgStatusTitle: status.title,
         tpgStatusCopy: status.copy,
+        tpgPlanningSupported,
+        tpgPlanningReason,
         dataSource: 'catalogue',
         searching: false
       });
@@ -178,7 +209,9 @@ Page({
       tpgCourses: [],
       tpgCourseCount: 0,
       tpgCourseCountDisplay: '',
-      tpgCourseCountLabel: ''
+      tpgCourseCountLabel: '',
+      tpgPlanningSupported: false,
+      tpgPlanningReason: ''
     });
 
     const ugProfile = profile && profile.profileType === 'undergraduate'
@@ -427,6 +460,14 @@ Page({
     });
   },
 
+  goTpgStudyPlan() {
+    if (!this.data.tpgPlanningSupported) {
+      wx.showToast({ title: this.data.tpgPlanningReason || '当前 Programme 暂不能使用选课计划', icon: 'none' });
+      return;
+    }
+    wx.navigateTo({ url: '/pages/study-plan/study-plan' });
+  },
+
   goTpgCatalog() {
     wx.navigateTo({ url: '/pages/tpg-catalog/tpg-catalog' });
   },
@@ -521,6 +562,7 @@ Page({
   },
 
   onUnload() {
+    if (this._showTimer) clearTimeout(this._showTimer);
     if (this._searchTimer) clearTimeout(this._searchTimer);
     this._requestId = (this._requestId || 0) + 1;
   }

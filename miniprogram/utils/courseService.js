@@ -28,6 +28,7 @@ const USER_DATA_KEYS = [
   'completedCourseIds',
   'completedOfferingCodes',
   'completedTpgCourseKeys',
+  'plannedTpgCourseKeys',
   'studyPlanItems',
   'recentlyViewedCourseCodes',
   'courseSearchHistory',
@@ -108,8 +109,59 @@ function getPlanningCapability(profile = getProfile()) {
   if (isBuiltInHkuCompSc) {
     return {
       supported: true,
+      mode: 'hku-four-year-plan',
       reason: '',
       settingsUrl: buildOnboardingUrl(profile)
+    };
+  }
+  if (profile.profileType === 'tpg') {
+    const programme = tpgService.getProgramme(profile.programmeId);
+    const settingsUrl = buildOnboardingUrl(profile);
+    if (!programme) {
+      return {
+        supported: false,
+        mode: 'tpg-course-plan',
+        reason: '当前 Programme 不存在，请重新选择 Programme。',
+        settingsUrl
+      };
+    }
+    if (['blocked', 'archived'].includes(programme.courseVerificationStatus)) {
+      return {
+        supported: false,
+        mode: 'tpg-course-plan',
+        reason: '当前 Programme 的课程来源仍在复核中，暂不开放选课计划。',
+        settingsUrl
+      };
+    }
+    if (!tpgService.hasCourseGroups(programme)) {
+      return {
+        supported: false,
+        mode: 'tpg-course-plan',
+        reason: '当前 Programme 暂无已核验课程组，暂不开放选课计划。',
+        settingsUrl
+      };
+    }
+    if (!tpgService.isTrackSelectionComplete(programme, profile.trackId || '')) {
+      return {
+        supported: false,
+        mode: 'tpg-course-plan',
+        reason: '请先选择完整的 Track，再使用选课计划。',
+        settingsUrl
+      };
+    }
+    if (programme.courseVerificationStatus !== 'verified') {
+      return {
+        supported: false,
+        mode: 'tpg-course-plan',
+        reason: '当前 Programme 的课程结构尚未完成官方复核，暂不开放选课计划。',
+        settingsUrl
+      };
+    }
+    return {
+      supported: true,
+      mode: 'tpg-course-plan',
+      reason: '',
+      settingsUrl
     };
   }
   return {
@@ -225,7 +277,7 @@ function getUserDataSummary() {
     hasProfile: Boolean(getProfile()),
     favoriteCount: favoriteCodes.size + getFavoriteTpgCourseKeys().length,
     completedCount: getCompletedOfferingCodes().length + getCompletedTpgCourseKeys().length,
-    studyPlanCount: getStudyPlanItems().length,
+    studyPlanCount: getStudyPlanItems().length + getTpgPlannedCourseKeys().length,
     noteCount: getCourseNotes().length,
     recentCount: getRecentlyViewedOfferings().length,
     searchCount: getCourseSearchHistory().length + getTpgProgrammeSearchHistory().length
@@ -250,6 +302,7 @@ function importUserData(snapshot) {
     'completedCourseIds',
     'completedOfferingCodes',
     'completedTpgCourseKeys',
+    'plannedTpgCourseKeys',
     'studyPlanItems',
     'recentlyViewedCourseCodes',
     'courseSearchHistory',
@@ -264,6 +317,18 @@ function importUserData(snapshot) {
     }
     if (key === 'courseNotes' && (!value || typeof value !== 'object' || Array.isArray(value))) {
       throw new Error('Invalid courseNotes');
+    }
+    if (key === 'plannedTpgCourseKeys' && value.some((item) => {
+      if (typeof item !== 'string') return true;
+      const separatorIndex = item.indexOf(':');
+      if (separatorIndex <= 0 || separatorIndex === item.length - 1) return true;
+      const programmeId = item.slice(0, separatorIndex);
+      const courseCode = item.slice(separatorIndex + 1);
+      return programmeId !== programmeId.trim()
+        || courseCode.includes(':')
+        || item !== buildTpgCourseKey(programmeId, courseCode);
+    })) {
+      throw new Error('Invalid plannedTpgCourseKeys');
     }
   });
   const importedProfile = parsed.data.userProfile;
@@ -404,6 +469,31 @@ function toggleTpgCourseCompleted(programmeId, courseCode) {
     ? completed.filter((item) => item !== key)
     : completed.concat(key);
   wx.setStorageSync('completedTpgCourseKeys', next);
+  return next;
+}
+
+function getTpgPlannedCourseKeys() {
+  return wx.getStorageSync('plannedTpgCourseKeys') || [];
+}
+
+function isTpgCoursePlanned(programmeId, courseCode) {
+  return getTpgPlannedCourseKeys().includes(buildTpgCourseKey(programmeId, courseCode));
+}
+
+function toggleTpgPlannedCourse(programmeId, courseCode) {
+  const key = buildTpgCourseKey(programmeId, courseCode);
+  const planned = getTpgPlannedCourseKeys();
+  const next = planned.includes(key)
+    ? planned.filter((item) => item !== key)
+    : planned.concat(key);
+  wx.setStorageSync('plannedTpgCourseKeys', next);
+  return next;
+}
+
+function removeTpgPlannedCourse(programmeId, courseCode) {
+  const key = buildTpgCourseKey(programmeId, courseCode);
+  const next = getTpgPlannedCourseKeys().filter((item) => item !== key);
+  wx.setStorageSync('plannedTpgCourseKeys', next);
   return next;
 }
 
@@ -1328,6 +1418,7 @@ module.exports = {
   getFavoriteCoursesRemote,
   getFavoriteOfferingCodes,
   getFavoriteTpgCourseKeys,
+  getTpgPlannedCourseKeys,
   getFavoriteOfferings,
   getFavorites,
   getProfile,
@@ -1348,6 +1439,7 @@ module.exports = {
   isOfferingFavorite,
   isTpgCourseCompleted,
   isTpgCourseFavorite,
+  isTpgCoursePlanned,
   isCoursePlanned,
   importUserData,
   listCourses,
@@ -1359,6 +1451,7 @@ module.exports = {
   listProgrammesRemote,
   listUniversitiesRemote,
   removeStudyPlanItem,
+  removeTpgPlannedCourse,
   recordCourseSearch,
   recordTpgProgrammeSearch,
   recordRecentlyViewed,
@@ -1373,5 +1466,6 @@ module.exports = {
   toggleOfferingCompleted,
   toggleOfferingFavorite,
   toggleTpgCourseCompleted,
-  toggleTpgCourseFavorite
+  toggleTpgCourseFavorite,
+  toggleTpgPlannedCourse
 };

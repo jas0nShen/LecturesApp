@@ -268,6 +268,56 @@ page {
 }
 .completed-mark { color: #245d4c; }
 
+.tpg-course-card .planned-mark {
+  color: #9a6b24;
+  font-size: 22rpx;
+  font-weight: 700;
+  margin-top: 12rpx;
+}
+
+.tpg-plan-entry {
+  align-items: center;
+  background: #e6f1ec;
+  border: 1rpx solid #bdd8cd;
+  border-radius: 18rpx;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 24rpx 24rpx;
+  padding: 24rpx;
+}
+
+.tpg-plan-entry-disabled {
+  background: #f0f2ef;
+  border-color: #d8ddd9;
+}
+
+.tpg-plan-kicker {
+  color: #557168;
+  font-size: 20rpx;
+  font-weight: 700;
+  letter-spacing: 1rpx;
+}
+
+.tpg-plan-title {
+  color: #17352c;
+  font-size: 30rpx;
+  font-weight: 800;
+  margin-top: 8rpx;
+}
+
+.tpg-plan-copy {
+  color: #68746f;
+  font-size: 23rpx;
+  line-height: 1.45;
+  margin-top: 8rpx;
+  padding-right: 20rpx;
+}
+
+.tpg-plan-arrow {
+  color: #0b6b55;
+  font-size: 46rpx;
+}
+
 .search-field { position: relative; }
 .search-field::before {
   color: #99a49d;

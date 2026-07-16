@@ -62,6 +62,13 @@
     <view class="tpg-entry-arrow">›</view>
   </view>
 
+  <view wx:if="{{isTpg}}" class="section tpg-entry tpg-plan-home {{planningCapability.supported && planningCapability.mode === 'tpg-course-plan' ? 'selected-tpg' : 'tpg-plan-home-disabled'}}" bindtap="goTpgStudyPlan">
+    <view class="tpg-entry-mark">MY COURSE PLAN</view>
+    <view class="tpg-entry-title">我的选课计划</view>
+    <view class="tpg-entry-copy">{{planningCapability.supported && planningCapability.mode === 'tpg-course-plan' ? '按官方课程组查看已计划课程' : planningCapability.reason}}</view>
+    <view class="tpg-entry-arrow">›</view>
+  </view>
+
   <view wx:if="{{isTpg}}" class="section tpg-next-card">
     <view class="row">
       <view>

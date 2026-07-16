@@ -226,6 +226,15 @@
   transform: translateY(-50%);
 }
 
+.tpg-plan-home {
+  margin-top: -16rpx;
+}
+
+.tpg-plan-home-disabled {
+  background: #eef1ed;
+  border-color: #d8ddd9;
+}
+
 .tpg-next-card {
   background: #fbfcfa;
   border: 1rpx solid #dbe5df;

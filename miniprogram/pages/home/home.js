@@ -134,6 +134,15 @@ Page({
     wx.navigateTo({ url: '/pages/study-plan/study-plan' });
   },
 
+  goTpgStudyPlan() {
+    const capability = this.data.planningCapability || {};
+    if (!capability.supported || capability.mode !== 'tpg-course-plan') {
+      wx.showToast({ title: capability.reason || '当前 Programme 暂不能使用选课计划', icon: 'none' });
+      return;
+    }
+    wx.navigateTo({ url: '/pages/study-plan/study-plan' });
+  },
+
   goTpgCatalog() {
     wx.navigateTo({ url: '/pages/tpg-catalog/tpg-catalog' });
   },

@@ -40,6 +40,27 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.tpg-action-row {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.plan-button {
+  background: #dcece5;
+  color: #0b5d4b;
+}
+
+.button-disabled {
+  background: #e8ece9;
+  color: #7b8681;
+}
+
+.planning-note {
+  color: #6b756f;
+  font-size: 24rpx;
+  line-height: 1.5;
+  margin-top: -16rpx;
+}
+
 .panel-title {
   font-size: 30rpx;
   font-weight: 700;

@@ -362,6 +362,28 @@
   margin-top: 14rpx;
 }
 
+.plan-button {
+  background: #dcece5;
+  border: 1rpx solid #bad5ca;
+  color: #0b5d4b;
+  font-weight: 750;
+  margin-top: 20rpx;
+}
+
+.plan-button-disabled {
+  background: #eef1ed;
+  border-color: #d8ddd9;
+  color: #7a8580;
+}
+
+.plan-reason {
+  color: #6b756f;
+  font-size: 23rpx;
+  line-height: 1.5;
+  margin-top: 12rpx;
+  text-align: center;
+}
+
 .home-button::after {
   border: 0;
 }
