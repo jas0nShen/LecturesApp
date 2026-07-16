@@ -23273,7 +23273,13 @@
       "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseGroups": [],
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-16",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R426&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "The official 2026-27 Regulations and Syllabus publishes a complete proposed 60-credit course structure, but the document is expressly marked “subject to university’s approval”. The current HKU TPG Portal also marks the programme application as closed, and its MACAIFM abbreviation conflicts with MAAIFM in the Regulations and Syllabus. Because the public official evidence does not establish final University approval for the curriculum, no proposed courses are published.",
+      "creditUnit": "credits"
     },
     {
       "id": "HKU-TPG-050",
@@ -23284,7 +23290,233 @@
       "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseGroups": [
+        {
+          "id": "option-dependent-course-pool",
+          "name": "Dissertation and Non-dissertation Course Pool",
+          "type": "path_dependent_curriculum",
+          "creditsRequired": 60,
+          "creditsRequiredByTrackIds": {
+            "HKU-TPG-050-NON-DISSERTATION": 60,
+            "HKU-TPG-050-DISSERTATION": 60
+          },
+          "coursesRequiredByTrackIds": {
+            "HKU-TPG-050-NON-DISSERTATION": 10,
+            "HKU-TPG-050-DISSERTATION": 9
+          },
+          "ruleText": "Both paths complete GEOG7101, GEOG7120 and GEOG7136. The non-dissertation option completes seven electives; the dissertation option completes five electives plus the 12-credit GEOG7122 dissertation. Full-time and part-time candidates must also observe the official semester or year credit-load limits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R266&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "GEOG7101",
+              "name": "The Chinese economies: location, transformation, and integration",
+              "credits": 6,
+              "subjectGroups": [
+                "compulsory"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R266&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "GEOG7120",
+              "name": "Urban China: cultural basis and contemporary issues",
+              "credits": 6,
+              "subjectGroups": [
+                "compulsory"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R266&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "GEOG7116",
+              "name": "Field trip",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R266&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "GEOG7117",
+              "name": "Public policies and regional development",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R266&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "GEOG7124",
+              "name": "Globalization and spatial economic transformation in China",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R266&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "GEOG7126",
+              "name": "Cultural tourism in Hong Kong, Macau and South China",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R266&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "GEOG7129",
+              "name": "Climate change, environmental resources and human carrying capacity in China",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R266&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "GEOG7137",
+              "name": "Land and housing in China",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R266&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "GEOG7141",
+              "name": "Politics of contemporary China",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R266&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "GEOG7142",
+              "name": "Big Data and GIS for China development studies",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R266&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "GEOG7143",
+              "name": "Green and blue infrastructure in China",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R266&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "GEOG7144",
+              "name": "Quantitative and spatial methods in social research",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R266&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "GEOG7145",
+              "name": "Innovation and knowledge generation in city-regions",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R266&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "GEOG7146",
+              "name": "Sustainability transitions in China: Theories, policies and practices",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R266&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "GEOG7147",
+              "name": "The Greater Bay Area: Economy, governance, regional integration",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R266&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "GEOG7148",
+              "name": "Tackling natural hazards on the China Coast: Resilience, adaptation and restoration",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R266&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "GEOG7136",
+              "name": "Research methods and directed project in China development studies",
+              "credits": 6,
+              "subjectGroups": [
+                "capstone"
+              ],
+              "appliesToTrackIds": [],
+              "courseKind": "project",
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R266&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "GEOG7122",
+              "name": "Dissertation in China development studies",
+              "credits": 12,
+              "subjectGroups": [
+                "dissertation"
+              ],
+              "appliesToTrackIds": [],
+              "courseKind": "dissertation",
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R266&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            }
+          ]
+        }
+      ],
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-16",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R266&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "The official 2026-27 Regulations and Syllabuses publish both complete 60-credit paths. The non-dissertation option comprises two compulsory courses, seven electives and GEOG7136. The dissertation option comprises two compulsory courses, five electives, GEOG7136 and GEOG7122. Path selection, different elective counts and semester or year credit-load limits require manual audit review; elective offerings vary by year.",
+      "tracks": [
+        {
+          "id": "HKU-TPG-050-NON-DISSERTATION",
+          "name": "Non-dissertation Option",
+          "type": "Award Path",
+          "creditsRequired": 60,
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R266&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+        },
+        {
+          "id": "HKU-TPG-050-DISSERTATION",
+          "name": "Dissertation Option",
+          "type": "Award Path",
+          "creditsRequired": 60,
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R266&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+        }
+      ],
+      "trackSelectionOptional": false,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required"
     },
     {
       "id": "HKU-TPG-051",
@@ -23295,7 +23527,253 @@
       "creditsRequired": 120,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseGroups": [
+        {
+          "id": "compulsory-courses",
+          "name": "Compulsory Courses",
+          "type": "core",
+          "creditsRequired": 60,
+          "coursesRequired": 10,
+          "ruleText": "Complete all ten compulsory courses. Up to two approved exemptions must be replaced by electives carrying the same credit value.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R319&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "EXAT7001",
+              "name": "Theory and principles of expressive arts therapy",
+              "credits": 6,
+              "subjectGroups": [
+                "compulsory"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R319&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "EXAT7003",
+              "name": "Community application of expressive arts",
+              "credits": 6,
+              "subjectGroups": [
+                "compulsory"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R319&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "EXAT7004",
+              "name": "Working with individuals in expressive arts therapy",
+              "credits": 6,
+              "subjectGroups": [
+                "compulsory"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R319&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "EXAT7005",
+              "name": "Working with groups in expressive arts therapy",
+              "credits": 6,
+              "subjectGroups": [
+                "compulsory"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R319&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "EXAT7006",
+              "name": "Professional practice and ethics in expressive arts therapy",
+              "credits": 6,
+              "subjectGroups": [
+                "compulsory"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R319&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "EXAT7105",
+              "name": "Assessment in clinical setting",
+              "credits": 6,
+              "subjectGroups": [
+                "compulsory"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R319&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "EXAT7106",
+              "name": "Human development and expressive arts therapy",
+              "credits": 6,
+              "subjectGroups": [
+                "compulsory"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R319&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "EXAT7107",
+              "name": "Micro-skills in counselling and psychotherapy",
+              "credits": 6,
+              "subjectGroups": [
+                "compulsory"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R319&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "MSBH6106",
+              "name": "Abnormal psychology",
+              "credits": 6,
+              "subjectGroups": [
+                "compulsory"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R319&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "MSBH7005",
+              "name": "Scientific inquiry and research methods in behavioral health",
+              "credits": 6,
+              "subjectGroups": [
+                "compulsory"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R319&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 12,
+          "coursesRequired": 2,
+          "ruleText": "Complete two electives. With approval, up to two relevant postgraduate courses offered by another curriculum of the Faculty may substitute for these electives. Not all listed electives are offered every year.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R319&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "EXAT7100",
+              "name": "Special topics in expressive arts therapy",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R319&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "EXAT7101",
+              "name": "Fundamentals of music therapy",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R319&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "EXAT7102",
+              "name": "Fundamentals of drama therapy",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R319&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "EXAT7103",
+              "name": "Fundamentals of art therapy",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R319&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "EXAT7104",
+              "name": "Fundamentals of dance and movement therapy",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R319&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "SOWK6206",
+              "name": "Play therapy",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R319&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "SOWK6259",
+              "name": "Contemporary perspectives on death, dying and bereavement",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R319&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "SOWK6274",
+              "name": "Theories and practices in positive psychology and strength-based interventions",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R319&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            }
+          ]
+        },
+        {
+          "id": "practicum-and-dissertation",
+          "name": "Practicum and Dissertation",
+          "type": "capstone",
+          "creditsRequired": 48,
+          "coursesRequired": 2,
+          "ruleText": "Complete the 36-credit EXAT7020 practicum and supervision course and the 12-credit EXAT7022 dissertation.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R319&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "EXAT7020",
+              "name": "Expressive arts therapy practicum and supervision",
+              "credits": 36,
+              "subjectGroups": [
+                "practicum"
+              ],
+              "appliesToTrackIds": [],
+              "courseKind": "practicum",
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R319&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "EXAT7022",
+              "name": "Dissertation",
+              "credits": 12,
+              "subjectGroups": [
+                "dissertation"
+              ],
+              "appliesToTrackIds": [],
+              "courseKind": "dissertation",
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R319&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            }
+          ]
+        }
+      ],
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-16",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R319&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "The official 2025-26 Regulations and Syllabuses, applicable to candidates admitted in 2024-25 and thereafter, publish the complete 120-credit structure: ten compulsory courses, two electives, the 36-credit EXAT7020 practicum and the 12-credit EXAT7022 dissertation. Up to two approved compulsory-course exemptions must be replaced by electives of the same credit value, and up to two approved Faculty postgraduate courses may substitute for curriculum electives. Those approval-dependent substitutions and practicum requirements require manual audit review; not all electives are offered every year.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required"
     },
     {
       "id": "HKU-TPG-052",
@@ -23306,7 +23784,477 @@
       "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseGroups": [
+        {
+          "id": "completion-path-course-pool",
+          "name": "MIPA Course and FLEX Pool",
+          "type": "path_dependent_curriculum",
+          "creditsRequired": 60,
+          "ruleText": "Complete POLI6004 and POLI6006, four to six electives, and POLI6031. After the four required electives, complete the equivalent of two more courses through electives or no more than two FLEX courses, approved overseas study or internship, or an approved GWU, SNU or Geneva exchange. Two 3-credit half-courses equal one course; POLI6024 equals two courses. External and cross-department FLEX offerings require Programme approval and are announced separately.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "POLI6004",
+              "name": "Theories of international relations",
+              "credits": 6,
+              "subjectGroups": [
+                "compulsory"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI6006",
+              "name": "International political economy",
+              "credits": 6,
+              "subjectGroups": [
+                "compulsory"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI6031",
+              "name": "Capstone project",
+              "credits": 12,
+              "subjectGroups": [
+                "capstone"
+              ],
+              "appliesToTrackIds": [],
+              "courseKind": "project",
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI6005",
+              "name": "International organizations",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI6007",
+              "name": "International relations in the Asia-Pacific",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI6008",
+              "name": "Understanding global problems: theory and practice",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI6010",
+              "name": "Chinese foreign policy",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI6029",
+              "name": "War and armed conflict: philosophical issues",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI6032",
+              "name": "International law",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI6033",
+              "name": "Cross-Taiwan Strait relations",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI6035",
+              "name": "War and strategy",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI6036",
+              "name": "Special topics in international relations (I)",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI6037",
+              "name": "Special topics in international relations (II)",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI6038",
+              "name": "Special topics in international political economy (I)",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI6039",
+              "name": "Special topics in international political economy (II)",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI6040",
+              "name": "Special topics in Asia Pacific international relations (I)",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI6041",
+              "name": "Special topics in Asia Pacific international relations (II)",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI6042",
+              "name": "Special topics in global and regional governance (I)",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI6043",
+              "name": "Special topics in global and regional governance (II)",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI6044",
+              "name": "World energy issues: international political economy and security",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI6045",
+              "name": "The politics of global inequality",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI6046",
+              "name": "Political and sovereign risk assessment",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI6047",
+              "name": "Law, politics and the international system",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI6048",
+              "name": "International security",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI6049",
+              "name": "Epistemics of international relations",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI7009",
+              "name": "Governance and policy in international organizations",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI7011",
+              "name": "Global information wars",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI7012",
+              "name": "Comparative politics of modern Southeast Asia",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI7013",
+              "name": "International development",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI7014",
+              "name": "International relations and the Middle East",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI7015",
+              "name": "Introduction to Research Methods in International Relations",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI7016",
+              "name": "Causal Inference in International Affairs",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI7017",
+              "name": "Politics and security on the Korean Peninsula",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI7018",
+              "name": "Armed Nonstate Governance",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI7019",
+              "name": "Workshop on Survey and Survey-Experimental Research",
+              "credits": 3,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI7020",
+              "name": "Political Risk Analysis and Forecasting",
+              "credits": 3,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI8004",
+              "name": "Government and law",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI8014",
+              "name": "NGOs and governance",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI8033",
+              "name": "Program evaluation",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI6021",
+              "name": "Overseas study at Peking University: Current issues in China’s international relations",
+              "credits": 6,
+              "subjectGroups": [
+                "flex"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI6023",
+              "name": "Overseas study at Johns Hopkins University: SAIS programme",
+              "credits": 6,
+              "subjectGroups": [
+                "flex"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI6024",
+              "name": "Overseas study at Johns Hopkins University: SAIS programme",
+              "credits": 12,
+              "subjectGroups": [
+                "flex"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI6030",
+              "name": "Overseas study at George Washington University: U.S. foreign policy summer programme",
+              "credits": 6,
+              "subjectGroups": [
+                "flex"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI6034",
+              "name": "Overseas study at Seoul National University: Seminar on area studies – East Asia in the modern world",
+              "credits": 6,
+              "subjectGroups": [
+                "flex"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            },
+            {
+              "code": "POLI6052",
+              "name": "Summer Overseas Study of International Relations in East and Southeast Asia",
+              "credits": 6,
+              "subjectGroups": [
+                "flex"
+              ],
+              "appliesToTrackIds": [],
+              "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+            }
+          ]
+        }
+      ],
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-16",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "The official 2025-26 Regulations and Syllabuses publish the complete coded HKU course pool and the 60-credit completion framework: two compulsory courses, four electives, the equivalent of two further elective/FLEX courses or approved overseas study, internship or exchange, and the 12-credit POLI6031 capstone. POLI7019 and POLI7020 are 3-credit half-courses and two half-courses equal one course; POLI6024 carries 12 credits and equals two courses. Approved exchange study and FLEX choices from other departments are announced separately and may not carry a fixed MIPA code in this syllabus. Half-course aggregation, 4-6 elective selection, FLEX limits, external approvals and exchange credit equivalencies require manual audit review.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required"
     },
     {
       "id": "HKU-TPG-053",
@@ -23317,7 +24265,13 @@
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseGroups": [],
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-16",
+      "courseSourceUrl": "https://jmsc.hku.hk/mjprogramme/",
+      "courseStatusNote": "The public official evidence does not support a complete 2025-26 curriculum. The current JMSC programme page is for 2026-27 and states a 60-credit programme, while the 2025-26 catalogue entry records 72 credits. The current page describes broad core skills and elective areas but publishes neither a complete coded course list nor the required grouping and completion path. The official 2025-26 information-session page does not resolve the credit conflict or publish the missing coded syllabus. Because the applicable credit total, course codes and completion rules cannot be verified without inference, no partial course structure is published.",
+      "creditUnit": "credits"
     },
     {
       "id": "HKU-TPG-054",
@@ -23328,7 +24282,13 @@
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseGroups": [],
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-16",
+      "courseSourceUrl": "https://jmsc.hku.hk/dfsadmission/",
+      "courseStatusNote": "The current official Documentary Filmmaking Specialisation page states a 72-credit curriculum comprising six core courses, three electives and a capstone, and publishes six core codes, five elective codes and the JMSC6200 capstone code. However, it is a 2026-27 admissions page and does not publish the credit value of any individual course or an academic-year-specific 2025-26 Regulations and Syllabuses document. The earlier official launch page confirms the programme but does not supply those missing credits or completion rules. Course credits cannot be derived by arithmetic from the 72-credit total, so no partial course structure is published.",
+      "creditUnit": "credits"
     },
     {
       "id": "HKU-TPG-055",
@@ -23339,7 +24299,13 @@
       "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseGroups": []
+      "courseGroups": [],
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-16",
+      "courseSourceUrl": "https://ppa.hku.hk/mpa/Course_Desc.html",
+      "courseStatusNote": "The official MPA structure page requires eight taught courses and either a capstone project or dissertation: four compulsory courses, four electives, and one 12-credit capstone/dissertation. The official course list and descriptions publish codes and credits for the compulsory courses, both capstone choices and almost every elective. However, POLI8032 Selected Topics in Public Administration appears in the official elective list and in the 2025-26 timetable, while its official course description omits a credit value. Because a complete published elective pool requires an official credit value for every listed course, POLI8032 cannot safely be assigned the 6 credits used by the other electives and no partial course structure is published.",
+      "creditUnit": "credits"
     },
     {
       "id": "HKU-TPG-056",

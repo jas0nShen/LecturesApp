@@ -1,0 +1,896 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "HKU-TPG-049",
+      "status": "blocked",
+      "creditsRequired": 60,
+      "creditUnit": "credits",
+      "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R426&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "statusNote": "The official 2026-27 Regulations and Syllabus publishes a complete proposed 60-credit course structure, but the document is expressly marked “subject to university’s approval”. The current HKU TPG Portal also marks the programme application as closed, and its MACAIFM abbreviation conflicts with MAAIFM in the Regulations and Syllabus. Because the public official evidence does not establish final University approval for the curriculum, no proposed courses are published.",
+      "additionalSources": [
+        "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-creative-artificial-intelligence-filmmaking-and-media-socsc"
+      ]
+    },
+    {
+      "programmeId": "HKU-TPG-050",
+      "status": "verified",
+      "creditsRequired": 60,
+      "creditUnit": "credits",
+      "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R266&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "ruleReviewStatus": "manual_review_required",
+      "trackSelectionOptional": false,
+      "tracks": [
+        {
+          "id": "HKU-TPG-050-NON-DISSERTATION",
+          "name": "Non-dissertation Option",
+          "type": "Award Path",
+          "creditsRequired": 60,
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R266&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+        },
+        {
+          "id": "HKU-TPG-050-DISSERTATION",
+          "name": "Dissertation Option",
+          "type": "Award Path",
+          "creditsRequired": 60,
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R266&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+        }
+      ],
+      "statusNote": "The official 2026-27 Regulations and Syllabuses publish both complete 60-credit paths. The non-dissertation option comprises two compulsory courses, seven electives and GEOG7136. The dissertation option comprises two compulsory courses, five electives, GEOG7136 and GEOG7122. Path selection, different elective counts and semester or year credit-load limits require manual audit review; elective offerings vary by year.",
+      "courseGroups": [
+        {
+          "id": "option-dependent-course-pool",
+          "name": "Dissertation and Non-dissertation Course Pool",
+          "type": "path_dependent_curriculum",
+          "creditsRequired": 60,
+          "creditsRequiredByTrackIds": {
+            "HKU-TPG-050-NON-DISSERTATION": 60,
+            "HKU-TPG-050-DISSERTATION": 60
+          },
+          "coursesRequiredByTrackIds": {
+            "HKU-TPG-050-NON-DISSERTATION": 10,
+            "HKU-TPG-050-DISSERTATION": 9
+          },
+          "ruleText": "Both paths complete GEOG7101, GEOG7120 and GEOG7136. The non-dissertation option completes seven electives; the dissertation option completes five electives plus the 12-credit GEOG7122 dissertation. Full-time and part-time candidates must also observe the official semester or year credit-load limits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R266&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "GEOG7101",
+              "name": "The Chinese economies: location, transformation, and integration",
+              "credits": 6,
+              "subjectGroups": [
+                "compulsory"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GEOG7120",
+              "name": "Urban China: cultural basis and contemporary issues",
+              "credits": 6,
+              "subjectGroups": [
+                "compulsory"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GEOG7116",
+              "name": "Field trip",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GEOG7117",
+              "name": "Public policies and regional development",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GEOG7124",
+              "name": "Globalization and spatial economic transformation in China",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GEOG7126",
+              "name": "Cultural tourism in Hong Kong, Macau and South China",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GEOG7129",
+              "name": "Climate change, environmental resources and human carrying capacity in China",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GEOG7137",
+              "name": "Land and housing in China",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GEOG7141",
+              "name": "Politics of contemporary China",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GEOG7142",
+              "name": "Big Data and GIS for China development studies",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GEOG7143",
+              "name": "Green and blue infrastructure in China",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GEOG7144",
+              "name": "Quantitative and spatial methods in social research",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GEOG7145",
+              "name": "Innovation and knowledge generation in city-regions",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GEOG7146",
+              "name": "Sustainability transitions in China: Theories, policies and practices",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GEOG7147",
+              "name": "The Greater Bay Area: Economy, governance, regional integration",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GEOG7148",
+              "name": "Tackling natural hazards on the China Coast: Resilience, adaptation and restoration",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "GEOG7136",
+              "name": "Research methods and directed project in China development studies",
+              "credits": 6,
+              "subjectGroups": [
+                "capstone"
+              ],
+              "appliesToTrackIds": [],
+              "courseKind": "project"
+            },
+            {
+              "code": "GEOG7122",
+              "name": "Dissertation in China development studies",
+              "credits": 12,
+              "subjectGroups": [
+                "dissertation"
+              ],
+              "appliesToTrackIds": [],
+              "courseKind": "dissertation"
+            }
+          ]
+        }
+      ],
+      "additionalSources": [
+        "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-china-development-studies-socsc"
+      ]
+    },
+    {
+      "programmeId": "HKU-TPG-051",
+      "status": "verified",
+      "creditsRequired": 120,
+      "creditUnit": "credits",
+      "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R319&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 2025-26 Regulations and Syllabuses, applicable to candidates admitted in 2024-25 and thereafter, publish the complete 120-credit structure: ten compulsory courses, two electives, the 36-credit EXAT7020 practicum and the 12-credit EXAT7022 dissertation. Up to two approved compulsory-course exemptions must be replaced by electives of the same credit value, and up to two approved Faculty postgraduate courses may substitute for curriculum electives. Those approval-dependent substitutions and practicum requirements require manual audit review; not all electives are offered every year.",
+      "courseGroups": [
+        {
+          "id": "compulsory-courses",
+          "name": "Compulsory Courses",
+          "type": "core",
+          "creditsRequired": 60,
+          "coursesRequired": 10,
+          "ruleText": "Complete all ten compulsory courses. Up to two approved exemptions must be replaced by electives carrying the same credit value.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R319&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "EXAT7001",
+              "name": "Theory and principles of expressive arts therapy",
+              "credits": 6,
+              "subjectGroups": [
+                "compulsory"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "EXAT7003",
+              "name": "Community application of expressive arts",
+              "credits": 6,
+              "subjectGroups": [
+                "compulsory"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "EXAT7004",
+              "name": "Working with individuals in expressive arts therapy",
+              "credits": 6,
+              "subjectGroups": [
+                "compulsory"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "EXAT7005",
+              "name": "Working with groups in expressive arts therapy",
+              "credits": 6,
+              "subjectGroups": [
+                "compulsory"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "EXAT7006",
+              "name": "Professional practice and ethics in expressive arts therapy",
+              "credits": 6,
+              "subjectGroups": [
+                "compulsory"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "EXAT7105",
+              "name": "Assessment in clinical setting",
+              "credits": 6,
+              "subjectGroups": [
+                "compulsory"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "EXAT7106",
+              "name": "Human development and expressive arts therapy",
+              "credits": 6,
+              "subjectGroups": [
+                "compulsory"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "EXAT7107",
+              "name": "Micro-skills in counselling and psychotherapy",
+              "credits": 6,
+              "subjectGroups": [
+                "compulsory"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MSBH6106",
+              "name": "Abnormal psychology",
+              "credits": 6,
+              "subjectGroups": [
+                "compulsory"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MSBH7005",
+              "name": "Scientific inquiry and research methods in behavioral health",
+              "credits": 6,
+              "subjectGroups": [
+                "compulsory"
+              ],
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 12,
+          "coursesRequired": 2,
+          "ruleText": "Complete two electives. With approval, up to two relevant postgraduate courses offered by another curriculum of the Faculty may substitute for these electives. Not all listed electives are offered every year.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R319&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "EXAT7100",
+              "name": "Special topics in expressive arts therapy",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "EXAT7101",
+              "name": "Fundamentals of music therapy",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "EXAT7102",
+              "name": "Fundamentals of drama therapy",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "EXAT7103",
+              "name": "Fundamentals of art therapy",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "EXAT7104",
+              "name": "Fundamentals of dance and movement therapy",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "SOWK6206",
+              "name": "Play therapy",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "SOWK6259",
+              "name": "Contemporary perspectives on death, dying and bereavement",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "SOWK6274",
+              "name": "Theories and practices in positive psychology and strength-based interventions",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "practicum-and-dissertation",
+          "name": "Practicum and Dissertation",
+          "type": "capstone",
+          "creditsRequired": 48,
+          "coursesRequired": 2,
+          "ruleText": "Complete the 36-credit EXAT7020 practicum and supervision course and the 12-credit EXAT7022 dissertation.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R319&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "EXAT7020",
+              "name": "Expressive arts therapy practicum and supervision",
+              "credits": 36,
+              "subjectGroups": [
+                "practicum"
+              ],
+              "appliesToTrackIds": [],
+              "courseKind": "practicum"
+            },
+            {
+              "code": "EXAT7022",
+              "name": "Dissertation",
+              "credits": 12,
+              "subjectGroups": [
+                "dissertation"
+              ],
+              "appliesToTrackIds": [],
+              "courseKind": "dissertation"
+            }
+          ]
+        }
+      ],
+      "additionalSources": [
+        "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-expressive-arts-therapy-socsc"
+      ]
+    },
+    {
+      "programmeId": "HKU-TPG-052",
+      "status": "verified",
+      "creditsRequired": 60,
+      "creditUnit": "credits",
+      "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 2025-26 Regulations and Syllabuses publish the complete coded HKU course pool and the 60-credit completion framework: two compulsory courses, four electives, the equivalent of two further elective/FLEX courses or approved overseas study, internship or exchange, and the 12-credit POLI6031 capstone. POLI7019 and POLI7020 are 3-credit half-courses and two half-courses equal one course; POLI6024 carries 12 credits and equals two courses. Approved exchange study and FLEX choices from other departments are announced separately and may not carry a fixed MIPA code in this syllabus. Half-course aggregation, 4-6 elective selection, FLEX limits, external approvals and exchange credit equivalencies require manual audit review.",
+      "courseGroups": [
+        {
+          "id": "completion-path-course-pool",
+          "name": "MIPA Course and FLEX Pool",
+          "type": "path_dependent_curriculum",
+          "creditsRequired": 60,
+          "ruleText": "Complete POLI6004 and POLI6006, four to six electives, and POLI6031. After the four required electives, complete the equivalent of two more courses through electives or no more than two FLEX courses, approved overseas study or internship, or an approved GWU, SNU or Geneva exchange. Two 3-credit half-courses equal one course; POLI6024 equals two courses. External and cross-department FLEX offerings require Programme approval and are announced separately.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "POLI6004",
+              "name": "Theories of international relations",
+              "credits": 6,
+              "subjectGroups": [
+                "compulsory"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI6006",
+              "name": "International political economy",
+              "credits": 6,
+              "subjectGroups": [
+                "compulsory"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI6031",
+              "name": "Capstone project",
+              "credits": 12,
+              "subjectGroups": [
+                "capstone"
+              ],
+              "appliesToTrackIds": [],
+              "courseKind": "project"
+            },
+            {
+              "code": "POLI6005",
+              "name": "International organizations",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI6007",
+              "name": "International relations in the Asia-Pacific",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI6008",
+              "name": "Understanding global problems: theory and practice",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI6010",
+              "name": "Chinese foreign policy",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI6029",
+              "name": "War and armed conflict: philosophical issues",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI6032",
+              "name": "International law",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI6033",
+              "name": "Cross-Taiwan Strait relations",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI6035",
+              "name": "War and strategy",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI6036",
+              "name": "Special topics in international relations (I)",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI6037",
+              "name": "Special topics in international relations (II)",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI6038",
+              "name": "Special topics in international political economy (I)",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI6039",
+              "name": "Special topics in international political economy (II)",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI6040",
+              "name": "Special topics in Asia Pacific international relations (I)",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI6041",
+              "name": "Special topics in Asia Pacific international relations (II)",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI6042",
+              "name": "Special topics in global and regional governance (I)",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI6043",
+              "name": "Special topics in global and regional governance (II)",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI6044",
+              "name": "World energy issues: international political economy and security",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI6045",
+              "name": "The politics of global inequality",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI6046",
+              "name": "Political and sovereign risk assessment",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI6047",
+              "name": "Law, politics and the international system",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI6048",
+              "name": "International security",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI6049",
+              "name": "Epistemics of international relations",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI7009",
+              "name": "Governance and policy in international organizations",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI7011",
+              "name": "Global information wars",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI7012",
+              "name": "Comparative politics of modern Southeast Asia",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI7013",
+              "name": "International development",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI7014",
+              "name": "International relations and the Middle East",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI7015",
+              "name": "Introduction to Research Methods in International Relations",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI7016",
+              "name": "Causal Inference in International Affairs",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI7017",
+              "name": "Politics and security on the Korean Peninsula",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI7018",
+              "name": "Armed Nonstate Governance",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI7019",
+              "name": "Workshop on Survey and Survey-Experimental Research",
+              "credits": 3,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI7020",
+              "name": "Political Risk Analysis and Forecasting",
+              "credits": 3,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI8004",
+              "name": "Government and law",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI8014",
+              "name": "NGOs and governance",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI8033",
+              "name": "Program evaluation",
+              "credits": 6,
+              "subjectGroups": [
+                "elective"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI6021",
+              "name": "Overseas study at Peking University: Current issues in China’s international relations",
+              "credits": 6,
+              "subjectGroups": [
+                "flex"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI6023",
+              "name": "Overseas study at Johns Hopkins University: SAIS programme",
+              "credits": 6,
+              "subjectGroups": [
+                "flex"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI6024",
+              "name": "Overseas study at Johns Hopkins University: SAIS programme",
+              "credits": 12,
+              "subjectGroups": [
+                "flex"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI6030",
+              "name": "Overseas study at George Washington University: U.S. foreign policy summer programme",
+              "credits": 6,
+              "subjectGroups": [
+                "flex"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI6034",
+              "name": "Overseas study at Seoul National University: Seminar on area studies – East Asia in the modern world",
+              "credits": 6,
+              "subjectGroups": [
+                "flex"
+              ],
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "POLI6052",
+              "name": "Summer Overseas Study of International Relations in East and Southeast Asia",
+              "credits": 6,
+              "subjectGroups": [
+                "flex"
+              ],
+              "appliesToTrackIds": []
+            }
+          ]
+        }
+      ],
+      "additionalSources": [
+        "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-international-and-public-affairs-socsc"
+      ]
+    }
+  ]
+}

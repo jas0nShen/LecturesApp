@@ -32,6 +32,8 @@ const { buildSupplement: buildHkuMatesolSupplement } = require('./build-hku-mate
 const { buildSupplement: buildHkuMedSupplement, TRACKS: HKU_MED_TRACKS } = require('./build-hku-med-supplement');
 const { buildSupplement: buildHkuLawFirstBatchSupplement } = require('./build-hku-law-first-batch-supplements');
 const { buildSupplement: buildHkuLawSecondBatchSupplement } = require('./build-hku-law-second-batch-supplements');
+const { buildSupplement: buildHkuSocialSciencesFirstBatchSupplement } = require('./build-hku-social-sciences-first-batch-supplements');
+const { buildSupplement: buildHkuSocialSciencesFinalBatchSupplement } = require('./build-hku-social-sciences-final-batch-supplements');
 const { TRACK_ID: HKBU_COMMUNICATION_TRACK_ID, buildSupplement: buildHkbuCommunicationSupplement } = require('./build-hkbu-communication-supplement');
 const { TRACKS: HKBU_MAIJS_TRACKS, buildSupplement: buildHkbuInternationalJournalismSupplement } = require('./build-hkbu-international-journalism-supplement');
 const { buildSupplement: buildHkbuMediaManagementSupplement } = require('./build-hkbu-media-management-supplement');
@@ -1559,6 +1561,72 @@ test('HKU Law second batch preserves programme-local pools and dynamic completio
   assert.equal(tipl.courseGroups.flatMap((group) => group.courses).filter((course) => course.credits === 6).length, 2);
   assert.match(tipl.statusNote, /one of the two 6-credit ICOM electives must complete 78 credits/);
   assert.match(tipl.statusNote, /taking both requires 75 credits/);
+});
+
+test('HKU Social Sciences first batch preserves official paths and blocks the proposed MACAIFM curriculum', () => {
+  const supplement = buildHkuSocialSciencesFirstBatchSupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'hku-social-sciences-first-batch-2025.json');
+  const byId = Object.fromEntries(supplement.programmes.map((programme) => [programme.programmeId, programme]));
+
+  assert.deepEqual(supplement.programmes.map((programme) => programme.programmeId), [
+    'HKU-TPG-049', 'HKU-TPG-050', 'HKU-TPG-051', 'HKU-TPG-052'
+  ]);
+  assert.deepEqual(supplement.programmes.map((programme) => programme.status), [
+    'blocked', 'verified', 'verified', 'verified'
+  ]);
+
+  const macaifm = byId['HKU-TPG-049'];
+  assert.equal(macaifm.courseGroups, undefined);
+  assert.match(macaifm.statusNote, /subject to university.s approval/);
+  assert.match(macaifm.statusNote, /MACAIFM abbreviation conflicts with MAAIFM/);
+
+  const mchds = byId['HKU-TPG-050'];
+  assert.equal(mchds.creditsRequired, 60);
+  assert.equal(mchds.ruleReviewStatus, 'manual_review_required');
+  assert.deepEqual(mchds.tracks.map((track) => track.name), ['Non-dissertation Option', 'Dissertation Option']);
+  assert.deepEqual(mchds.courseGroups[0].coursesRequiredByTrackIds, {
+    'HKU-TPG-050-NON-DISSERTATION': 10,
+    'HKU-TPG-050-DISSERTATION': 9
+  });
+  assert.equal(mchds.courseGroups[0].courses.length, 18);
+
+  const expressiveArts = byId['HKU-TPG-051'];
+  assert.equal(expressiveArts.creditsRequired, 120);
+  assert.deepEqual(expressiveArts.courseGroups.map((group) => group.creditsRequired), [60, 12, 48]);
+  assert.equal(expressiveArts.courseGroups.flatMap((group) => group.courses).length, 20);
+  assert.equal(expressiveArts.courseGroups[2].courses.find((course) => course.code === 'EXAT7020').credits, 36);
+
+  const mipa = byId['HKU-TPG-052'];
+  const mipaCourses = mipa.courseGroups[0].courses;
+  assert.equal(mipa.creditsRequired, 60);
+  assert.equal(mipaCourses.length, 45);
+  assert.equal(mipaCourses.find((course) => course.code === 'POLI7019').credits, 3);
+  assert.equal(mipaCourses.find((course) => course.code === 'POLI6024').credits, 12);
+
+  [mchds, expressiveArts, mipa].forEach((programme) => {
+    const codes = programme.courseGroups.flatMap((group) => group.courses).map((course) => course.code);
+    assert.equal(new Set(codes).size, codes.length, `${programme.programmeId} repeats a course code`);
+    assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  });
+});
+
+test('HKU Social Sciences final batch records exact public-source blockers without inferred courses', () => {
+  const supplement = buildHkuSocialSciencesFinalBatchSupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'hku-social-sciences-final-batch-2025.json');
+  const byId = Object.fromEntries(supplement.programmes.map((programme) => [programme.programmeId, programme]));
+
+  assert.deepEqual(supplement.programmes.map((programme) => programme.programmeId), [
+    'HKU-TPG-053', 'HKU-TPG-054', 'HKU-TPG-055'
+  ]);
+  assert.equal(supplement.programmes.every((programme) => programme.status === 'blocked'), true);
+  assert.equal(supplement.programmes.every((programme) => programme.courseGroups === undefined), true);
+  assert.match(byId['HKU-TPG-053'].statusNote, /60-credit programme/);
+  assert.match(byId['HKU-TPG-053'].statusNote, /catalogue entry records 72 credits/);
+  assert.match(byId['HKU-TPG-054'].statusNote, /does not publish the credit value of any individual course/);
+  assert.match(byId['HKU-TPG-055'].statusNote, /POLI8032/);
+  assert.match(byId['HKU-TPG-055'].statusNote, /omits a credit value/);
 });
 
 test('PolyU Hospitality and Tourism Management preserves six award paths and both project components', () => {

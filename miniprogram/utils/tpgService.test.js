@@ -9,8 +9,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 317);
-  assert.equal(coverage.courseCount, 8537);
+  assert.equal(coverage.programmeWithCoursesCount, 320);
+  assert.equal(coverage.courseCount, 8620);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -29,8 +29,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 317);
-  assert.equal(rows.length, 317);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 320);
+  assert.equal(rows.length, 320);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
@@ -63,6 +63,45 @@ test('HKU Law curricula preserve blocked source conflicts and manual path-depend
   assert.equal(tpgService.getStatus(technologyIp).courseCount, 52);
   assert.match(technologyIp.courseStatusNote, /taking both requires 75 credits/);
   assert.equal(tpgService.getProgrammeCourse(technologyIp.id, 'ICOM7125').credits, 6);
+});
+
+test('HKU Social Sciences curricula expose verified pools and exact source blockers', () => {
+  const macaifm = tpgService.getProgramme('HKU-TPG-049');
+  const mchds = tpgService.getProgramme('HKU-TPG-050');
+  const expressiveArts = tpgService.getProgramme('HKU-TPG-051');
+  const mipa = tpgService.getProgramme('HKU-TPG-052');
+  const journalism = tpgService.getProgramme('HKU-TPG-053');
+  const documentary = tpgService.getProgramme('HKU-TPG-054');
+  const publicAdministration = tpgService.getProgramme('HKU-TPG-055');
+
+  assert.equal(macaifm.courseVerificationStatus, 'blocked');
+  assert.equal(tpgService.getStatus(macaifm).courseCount, 0);
+  assert.match(macaifm.courseStatusNote, /subject to university.s approval/);
+
+  assert.equal(mchds.courseVerificationStatus, 'verified');
+  assert.equal(mchds.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.getStatus(mchds).courseCount, 18);
+  assert.deepEqual(tpgService.listTracks(mchds).map((track) => track.name), [
+    'Non-dissertation Option', 'Dissertation Option'
+  ]);
+
+  assert.equal(expressiveArts.courseVerificationStatus, 'verified');
+  assert.equal(expressiveArts.creditsRequired, 120);
+  assert.equal(tpgService.getStatus(expressiveArts).courseCount, 20);
+  assert.equal(tpgService.getProgrammeCourse(expressiveArts.id, 'EXAT7020').credits, 36);
+
+  assert.equal(mipa.courseVerificationStatus, 'verified');
+  assert.equal(tpgService.getStatus(mipa).courseCount, 45);
+  assert.equal(tpgService.getProgrammeCourse(mipa.id, 'POLI7019').credits, 3);
+  assert.equal(tpgService.getProgrammeCourse(mipa.id, 'POLI6024').credits, 12);
+
+  [journalism, documentary, publicAdministration].forEach((programme) => {
+    assert.equal(programme.courseVerificationStatus, 'blocked');
+    assert.equal(tpgService.getStatus(programme).courseCount, 0);
+  });
+  assert.match(journalism.courseStatusNote, /60-credit programme/);
+  assert.match(documentary.courseStatusNote, /credit value of any individual course/);
+  assert.match(publicAdministration.courseStatusNote, /POLI8032/);
 });
 
 test('PolyU Nursing remains blocked when official evidence omits the AIE code and taught-subject credits', () => {
@@ -6955,7 +6994,7 @@ test('TPG programmes can be filtered by course availability', () => {
   const withCourses = tpgService.filterProgrammesByAvailability(hkuProgrammes, 'courses');
   const pending = tpgService.filterProgrammesByAvailability(hkuProgrammes, 'pending');
 
-  assert.equal(withCourses.length, 52);
+  assert.equal(withCourses.length, 55);
   assert.equal(withCourses.every(tpgService.hasCourseGroups), true);
   assert.equal(pending.length, hkuProgrammes.length - withCourses.length);
   assert.equal(pending.some(tpgService.hasCourseGroups), false);

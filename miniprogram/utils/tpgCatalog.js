@@ -1162,6 +1162,12 @@ module.exports = {
       "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-16",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R426&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "The official 2026-27 Regulations and Syllabus publishes a complete proposed 60-credit course structure, but the document is expressly marked “subject to university’s approval”. The current HKU TPG Portal also marks the programme application as closed, and its MACAIFM abbreviation conflicts with MAAIFM in the Regulations and Syllabus. Because the public official evidence does not establish final University approval for the curriculum, no proposed courses are published.",
+      "creditUnit": "credits",
       "courseCount": 0
     },
     {
@@ -1173,7 +1179,31 @@ module.exports = {
       "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-16",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R266&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "The official 2026-27 Regulations and Syllabuses publish both complete 60-credit paths. The non-dissertation option comprises two compulsory courses, seven electives and GEOG7136. The dissertation option comprises two compulsory courses, five electives, GEOG7136 and GEOG7122. Path selection, different elective counts and semester or year credit-load limits require manual audit review; elective offerings vary by year.",
+      "tracks": [
+        {
+          "id": "HKU-TPG-050-NON-DISSERTATION",
+          "name": "Non-dissertation Option",
+          "type": "Award Path",
+          "creditsRequired": 60,
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R266&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+        },
+        {
+          "id": "HKU-TPG-050-DISSERTATION",
+          "name": "Dissertation Option",
+          "type": "Award Path",
+          "creditsRequired": 60,
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R266&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+        }
+      ],
+      "trackSelectionOptional": false,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 18
     },
     {
       "id": "HKU-TPG-051",
@@ -1184,7 +1214,14 @@ module.exports = {
       "creditsRequired": 120,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-16",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R319&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "The official 2025-26 Regulations and Syllabuses, applicable to candidates admitted in 2024-25 and thereafter, publish the complete 120-credit structure: ten compulsory courses, two electives, the 36-credit EXAT7020 practicum and the 12-credit EXAT7022 dissertation. Up to two approved compulsory-course exemptions must be replaced by electives of the same credit value, and up to two approved Faculty postgraduate courses may substitute for curriculum electives. Those approval-dependent substitutions and practicum requirements require manual audit review; not all electives are offered every year.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 20
     },
     {
       "id": "HKU-TPG-052",
@@ -1195,7 +1232,14 @@ module.exports = {
       "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-16",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "The official 2025-26 Regulations and Syllabuses publish the complete coded HKU course pool and the 60-credit completion framework: two compulsory courses, four electives, the equivalent of two further elective/FLEX courses or approved overseas study, internship or exchange, and the 12-credit POLI6031 capstone. POLI7019 and POLI7020 are 3-credit half-courses and two half-courses equal one course; POLI6024 carries 12 credits and equals two courses. Approved exchange study and FLEX choices from other departments are announced separately and may not carry a fixed MIPA code in this syllabus. Half-course aggregation, 4-6 elective selection, FLEX limits, external approvals and exchange credit equivalencies require manual audit review.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 45
     },
     {
       "id": "HKU-TPG-053",
@@ -1206,6 +1250,12 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-16",
+      "courseSourceUrl": "https://jmsc.hku.hk/mjprogramme/",
+      "courseStatusNote": "The public official evidence does not support a complete 2025-26 curriculum. The current JMSC programme page is for 2026-27 and states a 60-credit programme, while the 2025-26 catalogue entry records 72 credits. The current page describes broad core skills and elective areas but publishes neither a complete coded course list nor the required grouping and completion path. The official 2025-26 information-session page does not resolve the credit conflict or publish the missing coded syllabus. Because the applicable credit total, course codes and completion rules cannot be verified without inference, no partial course structure is published.",
+      "creditUnit": "credits",
       "courseCount": 0
     },
     {
@@ -1217,6 +1267,12 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-16",
+      "courseSourceUrl": "https://jmsc.hku.hk/dfsadmission/",
+      "courseStatusNote": "The current official Documentary Filmmaking Specialisation page states a 72-credit curriculum comprising six core courses, three electives and a capstone, and publishes six core codes, five elective codes and the JMSC6200 capstone code. However, it is a 2026-27 admissions page and does not publish the credit value of any individual course or an academic-year-specific 2025-26 Regulations and Syllabuses document. The earlier official launch page confirms the programme but does not supply those missing credits or completion rules. Course credits cannot be derived by arithmetic from the 72-credit total, so no partial course structure is published.",
+      "creditUnit": "credits",
       "courseCount": 0
     },
     {
@@ -1228,6 +1284,12 @@ module.exports = {
       "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
+      "academicYear": "2025-26",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-16",
+      "courseSourceUrl": "https://ppa.hku.hk/mpa/Course_Desc.html",
+      "courseStatusNote": "The official MPA structure page requires eight taught courses and either a capstone project or dissertation: four compulsory courses, four electives, and one 12-credit capstone/dissertation. The official course list and descriptions publish codes and credits for the compulsory courses, both capstone choices and almost every elective. However, POLI8032 Selected Topics in Public Administration appears in the official elective list and in the 2025-26 timetable, while its official course description omits a credit value. Because a complete published elective pool requires an official credit value for every listed course, POLI8032 cannot safely be assigned the 6 credits used by the other electives and no partial course structure is published.",
+      "creditUnit": "credits",
       "courseCount": 0
     },
     {
