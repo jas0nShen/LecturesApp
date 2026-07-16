@@ -14,22 +14,24 @@
 
 - 工作目录：`/Users/shenjingsong/Documents/develop/lecturesApp`
 - 分支：`main`
-- 1.0.5 功能提交：`2f37396 Release 1.0.5 with complete TPG source review`；本文档提交紧随其后
-- 本地 `origin/main`：`0f01d64 Expand HKU TPG curriculum coverage`；本文档提交完成后 `main` ahead 3
+- 1.0.5 最新功能提交：`f51c980 Add TPG course planning`
+- 本地 `origin/main`：`0f01d64 Expand HKU TPG curriculum coverage`；本次交接提交完成后 `main` ahead 5
 - 包版本：`1.0.5`
 - 当前 `git status --short --branch`：
 
 ```text
-## main...origin/main [ahead 3]
+## main...origin/main [ahead 5]
 ?? .playwright-cli/
 ```
 
 - `git diff`、`git diff --cached` 和 `git diff --check` 均无输出；受跟踪文件干净。
 - `.playwright-cli/` 为 96 KB 的本地浏览器诊断产物，共有 console log 和 page YAML；本次没有删除、覆盖或暂存。
 
-最近关键提交（本文档提交前）：
+最近关键提交（本次交接提交前）：
 
 ```text
+f51c980 Add TPG course planning
+18c026a Document 1.0.5 upload handoff
 2f37396 Release 1.0.5 with complete TPG source review
 8da5fdc Expand HKU law TPG curriculum coverage
 0f01d64 Expand HKU TPG curriculum coverage
@@ -57,6 +59,7 @@ df91815 Add PolyU Design curriculum and source evidence
 - 已开放项目的离线课程列表、详情、来源、课程组和 Track/路径过滤；未开放项目保留索引和来源状态。
 - 收藏、已修、最近查看、搜索历史、课程笔记、Study Plan、备份/恢复和清除数据均保存在微信本地存储。
 - TPG 收藏和已修状态以 Programme ID 加标准化课程代码为键，避免跨 Programme 冲突。
+- TPG 已支持 Programme/Track 范围内的选课计划、课程组统计、计划课程详情、移除和标记已修；切换 Track 后旧记录保留但不计入当前统计。
 - 开发版可使用零依赖 Node 本机 API；体验版和正式版在未配置生产 HTTPS 时只使用随包离线数据，不访问用户设备的 `localhost`。
 - UG 与 TPG 大型课程数据分别拆入微信分包，主包保留轻量索引；所有当前分包均低于 2 MB。
 
@@ -78,8 +81,11 @@ df91815 Add PolyU Design curriculum and source evidence
 ### 当前发布状态
 
 - Git 提交 `2f37396` 已包含 HKU Social Sciences 049 至 055、生成分包、builder、测试及 `1.0.5` 版本资料。
-- 本地 `main` 在本文档提交完成后比本地远端跟踪引用 `origin/main` ahead 3；本次没有 push。
-- 微信开发者工具已显示 `1.0.5` 代码上传成功，更新类型为“修订补丁”，备注为 `1.0.5: Complete TPG source review and expand HKU coverage`。
+- Git 提交 `f51c980` 已包含 TPG 选课计划、本地备份/恢复支持、浏览入口、Study Plan 页面和页面状态测试。
+- 本地 `main` 在本次交接提交完成后比本地远端跟踪引用 `origin/main` ahead 5；本次没有 push。
+- 微信开发者工具已显示最新 `1.0.5` 代码上传成功，更新类型为“修订补丁”，备注为 `1.0.5: Add TPG course planning`。
+- `npm run check:ship` 通过：667/667 测试、`ready=true`、主包 1,772,779 bytes，所有分包低于 2 MB。
+- 模拟器已确认从 Study Plan 返回并切换课程 Tab 后可显示 PolyU Blockchain Technology 的 36 门课程，未再停留在临时分包 loader；iOS/Android 真机未执行。
 - 上传过程中测试文件按 `packOptions.ignore` 排除；没有执行“提交审核”或“发布”。
 
 ## 尚未完成的内容
