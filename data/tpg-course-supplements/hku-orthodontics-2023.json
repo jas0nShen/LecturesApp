@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKU",
+  "academicYear": "2023-24 and thereafter",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "HKU-TPG-024",
+      "status": "verified",
+      "creditsRequired": 270,
+      "creditUnit": "credits",
+      "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R289&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "ruleReviewStatus": "verified",
+      "statusNote": "The current official R289 Regulations and Syllabuses require a minimum of 270 credits and state that all curriculum components are compulsory: 15 Faculty Core, 72 Discipline Specific, 153 Clinical and 30 Research credits. This corrects the 72-credit directory value, which matches only the Discipline Specific subtotal. The Regulations apply to the 2023-24 intake and thereafter; the Syllabuses are dated Dec 21, 2022.",
+      "courseGroups": [
+        {
+          "id": "faculty-core-courses",
+          "name": "Faculty Core Courses",
+          "type": "core",
+          "creditsRequired": 15,
+          "coursesRequired": 6,
+          "ruleText": "Complete all six Faculty Core Courses. DENT7030 is compulsory but non-credit bearing; the other five courses contribute 15 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R289&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "DENT7505",
+              "name": "Biomaterials I",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7506",
+              "name": "Biomaterials II",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT6023",
+              "name": "Oral epidemiology and clinical research methodology",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT6024",
+              "name": "Introduction to statistical analysis in dental research",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT6025",
+              "name": "Multivariable statistical analysis in dental research and use of statistical software",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7030",
+              "name": "Dissertation writing for Master of Dental Surgery and Master of Science - An Induction Course",
+              "credits": 0,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "discipline-specific-courses",
+          "name": "Discipline Specific Courses",
+          "type": "core",
+          "creditsRequired": 72,
+          "coursesRequired": 3,
+          "ruleText": "Complete Orthodontic diagnosis and treatment planning 1, 2 and 3 across Years 1, 2 and 3 for 72 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R289&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "DENT7256",
+              "name": "Orthodontic diagnosis and treatment planning 1",
+              "credits": 24,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7257",
+              "name": "Orthodontic diagnosis and treatment planning 2",
+              "credits": 24,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7258",
+              "name": "Orthodontic diagnosis and treatment planning 3",
+              "credits": 24,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "clinical-components",
+          "name": "Clinical Components",
+          "type": "core",
+          "creditsRequired": 153,
+          "coursesRequired": 4,
+          "ruleText": "Complete Clinical orthodontics 1, 2 and 3 plus the Clinical Portfolio capstone for 153 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R289&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "DENT7251",
+              "name": "Clinical orthodontics 1",
+              "credits": 48,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7252",
+              "name": "Clinical orthodontics 2",
+              "credits": 48,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7253",
+              "name": "Clinical orthodontics 3",
+              "credits": 51,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7250",
+              "name": "Capstone Experience: Clinical Portfolio",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "courseKind": "project"
+            }
+          ]
+        },
+        {
+          "id": "research-components",
+          "name": "Research Components",
+          "type": "dissertation",
+          "creditsRequired": 30,
+          "coursesRequired": 2,
+          "ruleText": "Complete Original research 2 and 3 for 30 credits and submit a dissertation or research paper in publication format.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R289&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "DENT7254",
+              "name": "Original research 2",
+              "credits": 15,
+              "appliesToTrackIds": [],
+              "courseKind": "research_project"
+            },
+            {
+              "code": "DENT7255",
+              "name": "Original research 3",
+              "credits": 15,
+              "appliesToTrackIds": [],
+              "courseKind": "research_project"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

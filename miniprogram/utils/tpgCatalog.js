@@ -528,10 +528,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Dental Surgery in Orthodontics and Dentofacial Orthopaedics (MDS(Orthodontics&DentofacialOrthopaedics;))",
       "faculty": "FACULTY OF DENTISTRY",
-      "creditsRequired": 72,
+      "creditsRequired": 270,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2023-24 and thereafter",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-16",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R289&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "The current official R289 Regulations and Syllabuses require a minimum of 270 credits and state that all curriculum components are compulsory: 15 Faculty Core, 72 Discipline Specific, 153 Clinical and 30 Research credits. This corrects the 72-credit directory value, which matches only the Discipline Specific subtotal. The Regulations apply to the 2023-24 intake and thereafter; the Syllabuses are dated Dec 21, 2022.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified",
+      "courseCount": 15
     },
     {
       "id": "HKU-TPG-025",
@@ -539,10 +546,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Dental Surgery in Paediatric Dentistry (MDS(PaediatrDent))",
       "faculty": "FACULTY OF DENTISTRY",
-      "creditsRequired": 66,
+      "creditsRequired": 270,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2023-24 and thereafter",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-16",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R294&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "The current official R294 Regulations and Syllabuses state that all curriculum components are compulsory and publish a 270-credit total: 21 Faculty Core, 66 Discipline Specific, 129 Clinical and 54 Research credits. This corrects the 66-credit directory value, which matches only the Discipline Specific subtotal. The Regulations apply to the 2023-24 intake and thereafter; the Syllabuses are dated Nov 29, 2022.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified",
+      "courseCount": 12
     },
     {
       "id": "HKU-TPG-026",
@@ -550,10 +564,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Dental Surgery in Periodontology (MDS(Perio))",
       "faculty": "FACULTY OF DENTISTRY",
-      "creditsRequired": 66,
+      "creditsRequired": 270,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2023-24 and thereafter",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-16",
+      "courseSourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf",
+      "courseStatusNote": "The current HKU Faculty of Dentistry Programme page for 2026 admissions links this official Regulations and Syllabuses PDF. It applies to candidates admitted in 2023-24 and thereafter, no longer carries the older Subject to official approval notice, and publishes a compulsory 270-credit curriculum: 18 Faculty Core, 66 Discipline Specific, 126 Clinical, 54 Research and 6 Capstone credits. This corrects the 66-credit directory value, which matches only the Discipline Specific subtotal. The Syllabuses are dated Apr 20, 2023.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified",
+      "courseCount": 23
     },
     {
       "id": "HKU-TPG-027",
@@ -561,9 +582,15 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Dental Surgery in Prosthodontics (MDS(Prostho))",
       "faculty": "FACULTY OF DENTISTRY",
-      "creditsRequired": 120,
+      "creditsRequired": 270,
       "sourceUrl": "",
       "dataLevel": "structure",
+      "academicYear": "2023-24 and thereafter",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-16",
+      "courseSourceUrl": "https://facdent.hku.hk/learning/tpg/tpg-mds-prosthodontics.php",
+      "courseStatusNote": "The current HKU Faculty of Dentistry Programme page for 2026 admissions links a detailed Regulations and Syllabuses PDF that applies to candidates admitted in 2023-24 and thereafter and publishes a 270-credit structure: 15 Faculty Core, 75 Discipline Specific, 120 Clinical, 54 Research and 6 Capstone credits. However, the current PDF document title metadata still states Subject to official approval, while the current R350 admissions Regulations and Syllabuses endpoint states that the document is not available. The official approval status and current R350 curriculum therefore cannot be confirmed. The 120-credit directory value matches only the Clinical subtotal; it is corrected to the published 270-credit total, but no course groups are exposed from the approval-pending document.",
+      "creditUnit": "credits",
       "courseCount": 0
     },
     {
@@ -575,6 +602,12 @@ module.exports = {
       "creditsRequired": 69,
       "sourceUrl": "",
       "dataLevel": "structure",
+      "academicYear": "2017-18 and thereafter",
+      "courseVerificationStatus": "blocked",
+      "courseVerifiedAt": "2026-07-16",
+      "courseSourceUrl": "https://facdent.hku.hk/learning/tpg/tpg-msc-community.php",
+      "courseStatusNote": "The current HKU Faculty of Dentistry Programme page for 2026 admissions links the official Syllabuses applying to candidates admitted in 2017-18 and thereafter and confirms a 69-credit curriculum: 9 Faculty Core, 15 General Public Health, 24 Community Dentistry, 12 Practicum and 9 Capstone credits. The 15-credit General Public Health component requires five 3-credit courses assigned by the Programme Director from an annually changing School of Public Health offering, but the official source publishes no course codes or complete course titles for that required component. The current R351 admissions Regulations and Syllabuses endpoint also states that the document is not available. The Programme remains blocked rather than exposing only the other 54 credits as an incomplete curriculum or inventing the five Public Health courses.",
+      "creditUnit": "credits",
       "courseCount": 0
     },
     {
@@ -586,7 +619,14 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2017-18 and thereafter",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-16",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R233&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "The current HKU Taught Postgraduate Admissions page identifies this Programme as R233 and links the official Regulations and Syllabuses. The Regulations apply to candidates admitted in 2017-18 and thereafter, and the Syllabuses publish a compulsory 72-credit curriculum: 9 Faculty Core, 27 Discipline Specific and 36 Research credits. The Syllabuses are dated Sep 27, 2019.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified",
+      "courseCount": 11
     },
     {
       "id": "HKU-TPG-030",
@@ -597,7 +637,14 @@ module.exports = {
       "creditsRequired": 72,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2025-26 and thereafter",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-16",
+      "courseSourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MA(TESOL).pdf",
+      "courseStatusNote": "The official 2025-26 Regulations and Syllabuses publish the complete 72-credit curriculum: six 6-credit Core Courses, the 12-credit MAES7200 Capstone Project and four 6-credit Elective Courses. MAES7001 and MAES7008 are mutually exclusive alternatives for the same Core requirement, and MAES7008 depends on an overseas partner and may not be offered every year. Elective offerings also vary annually, so the complete course pool is verified while the one-of Core choice and annual availability require manual audit review.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 21
     },
     {
       "id": "HKU-TPG-031",
@@ -608,7 +655,150 @@ module.exports = {
       "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
-      "courseCount": 0
+      "academicYear": "2025-26 and thereafter",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-16",
+      "courseSourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf",
+      "courseStatusNote": "The official 2025-26 Regulations and Syllabuses publish the complete 60-credit MEd curriculum, 134 unique course codes, the Generalist Strand and 18 Specialist Strand specialisms. Every path includes MEDD8001 (6 credits), 42 credits of specialist and/or elective courses, and a 12-credit capstone. The Specialist paths differ: five specialisms require a named fifth Specialist Elective plus two General Electives, Teaching Chinese Language and Literature in International Education requires three Specialist Electives and MEDD8009 only, and the two International Context specialisms require at least one of two named Specialist Electives. MEDD8008 also requires an Advanced Research Methods elective. The current 2026 Fields of Studies page lists 15 offered specialisms and omits Gifted Education and Talent Development, Mathematics Education, and Teaching of Mathematics in an International Context; the Syllabuses state that not all specialisms or courses are offered every year. Annual availability, cross-role courses, prerequisites, impermissible combinations and these path conditions require manual audit review.",
+      "tracks": [
+        {
+          "id": "HKU-TPG-031-GENERALIST",
+          "name": "Generalist",
+          "type": "Strand",
+          "creditsRequired": 60,
+          "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+        },
+        {
+          "id": "HKU-TPG-031-CHINESE-LANGUAGE-EDUCATION",
+          "name": "Chinese Language Education",
+          "type": "Specialism",
+          "creditsRequired": 60,
+          "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+        },
+        {
+          "id": "HKU-TPG-031-COMPARATIVE-GLOBAL-STUDIES",
+          "name": "Comparative and Global Studies in Education and Development",
+          "type": "Specialism",
+          "creditsRequired": 60,
+          "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+        },
+        {
+          "id": "HKU-TPG-031-CONTENT-LANGUAGE-INTEGRATED-LEARNING",
+          "name": "Content and Language Integrated Learning",
+          "type": "Specialism",
+          "creditsRequired": 60,
+          "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+        },
+        {
+          "id": "HKU-TPG-031-CURRICULUM-PEDAGOGY",
+          "name": "Curriculum and Pedagogy",
+          "type": "Specialism",
+          "creditsRequired": 60,
+          "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+        },
+        {
+          "id": "HKU-TPG-031-EARLY-CHILDHOOD-EDUCATION",
+          "name": "Early Childhood Education",
+          "type": "Specialism",
+          "creditsRequired": 60,
+          "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+        },
+        {
+          "id": "HKU-TPG-031-EDUCATIONAL-ADMINISTRATION-MANAGEMENT",
+          "name": "Educational Administration and Management",
+          "type": "Specialism",
+          "creditsRequired": 60,
+          "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+        },
+        {
+          "id": "HKU-TPG-031-ENGLISH-LANGUAGE-EDUCATION",
+          "name": "English Language Education",
+          "type": "Specialism",
+          "creditsRequired": 60,
+          "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+        },
+        {
+          "id": "HKU-TPG-031-GIFTED-EDUCATION-TALENT-DEVELOPMENT",
+          "name": "Gifted Education and Talent Development",
+          "type": "Specialism",
+          "creditsRequired": 60,
+          "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+        },
+        {
+          "id": "HKU-TPG-031-GUIDANCE-COUNSELLING",
+          "name": "Guidance and Counselling",
+          "type": "Specialism",
+          "creditsRequired": 60,
+          "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+        },
+        {
+          "id": "HKU-TPG-031-HIGHER-EDUCATION",
+          "name": "Higher Education",
+          "type": "Specialism",
+          "creditsRequired": 60,
+          "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+        },
+        {
+          "id": "HKU-TPG-031-MATHEMATICS-EDUCATION",
+          "name": "Mathematics Education",
+          "type": "Specialism",
+          "creditsRequired": 60,
+          "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+        },
+        {
+          "id": "HKU-TPG-031-PSYCHOLOGICAL-STUDIES-EDUCATION",
+          "name": "Psychological Studies in Education",
+          "type": "Specialism",
+          "creditsRequired": 60,
+          "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+        },
+        {
+          "id": "HKU-TPG-031-SCIENCE-EDUCATION",
+          "name": "Science Education",
+          "type": "Specialism",
+          "creditsRequired": 60,
+          "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+        },
+        {
+          "id": "HKU-TPG-031-STEM-EDUCATION",
+          "name": "STEM Education",
+          "type": "Specialism",
+          "creditsRequired": 60,
+          "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+        },
+        {
+          "id": "HKU-TPG-031-TEACHING-CHINESE-SECOND-LANGUAGE",
+          "name": "Teaching Chinese as a Second Language",
+          "type": "Specialism",
+          "creditsRequired": 60,
+          "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+        },
+        {
+          "id": "HKU-TPG-031-CHINESE-LANGUAGE-LITERATURE-INTERNATIONAL",
+          "name": "Teaching Chinese Language and Literature in International Education",
+          "type": "Specialism",
+          "creditsRequired": 60,
+          "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+        },
+        {
+          "id": "HKU-TPG-031-MATHEMATICS-INTERNATIONAL-CONTEXT",
+          "name": "Teaching of Mathematics in an International Context",
+          "type": "Specialism",
+          "creditsRequired": 60,
+          "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+        },
+        {
+          "id": "HKU-TPG-031-SCIENCE-INTERNATIONAL-CONTEXT",
+          "name": "Teaching of Science in an International Context",
+          "type": "Specialism",
+          "creditsRequired": 60,
+          "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+        }
+      ],
+      "trackSelectionOptional": false,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 134
     },
     {
       "id": "HKU-TPG-032",

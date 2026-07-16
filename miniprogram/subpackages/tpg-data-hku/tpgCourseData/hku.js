@@ -7971,6 +7971,2827 @@ module.exports = [
     ]
   },
   {
+    "id": "HKU-TPG-024",
+    "courseGroups": [
+      {
+        "id": "faculty-core-courses",
+        "name": "Faculty Core Courses",
+        "type": "core",
+        "creditsRequired": 15,
+        "coursesRequired": 6,
+        "ruleText": "Complete all six Faculty Core Courses. DENT7030 is compulsory but non-credit bearing; the other five courses contribute 15 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R289&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+        "courses": [
+          {
+            "code": "DENT7505",
+            "name": "Biomaterials I",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R289&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "DENT7506",
+            "name": "Biomaterials II",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R289&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "DENT6023",
+            "name": "Oral epidemiology and clinical research methodology",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R289&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "DENT6024",
+            "name": "Introduction to statistical analysis in dental research",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R289&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "DENT6025",
+            "name": "Multivariable statistical analysis in dental research and use of statistical software",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R289&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "DENT7030",
+            "name": "Dissertation writing for Master of Dental Surgery and Master of Science - An Induction Course",
+            "credits": 0,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R289&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          }
+        ]
+      },
+      {
+        "id": "discipline-specific-courses",
+        "name": "Discipline Specific Courses",
+        "type": "core",
+        "creditsRequired": 72,
+        "coursesRequired": 3,
+        "ruleText": "Complete Orthodontic diagnosis and treatment planning 1, 2 and 3 across Years 1, 2 and 3 for 72 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R289&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+        "courses": [
+          {
+            "code": "DENT7256",
+            "name": "Orthodontic diagnosis and treatment planning 1",
+            "credits": 24,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R289&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "DENT7257",
+            "name": "Orthodontic diagnosis and treatment planning 2",
+            "credits": 24,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R289&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "DENT7258",
+            "name": "Orthodontic diagnosis and treatment planning 3",
+            "credits": 24,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R289&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          }
+        ]
+      },
+      {
+        "id": "clinical-components",
+        "name": "Clinical Components",
+        "type": "core",
+        "creditsRequired": 153,
+        "coursesRequired": 4,
+        "ruleText": "Complete Clinical orthodontics 1, 2 and 3 plus the Clinical Portfolio capstone for 153 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R289&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+        "courses": [
+          {
+            "code": "DENT7251",
+            "name": "Clinical orthodontics 1",
+            "credits": 48,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R289&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "DENT7252",
+            "name": "Clinical orthodontics 2",
+            "credits": 48,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R289&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "DENT7253",
+            "name": "Clinical orthodontics 3",
+            "credits": 51,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R289&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "DENT7250",
+            "name": "Capstone Experience: Clinical Portfolio",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "courseKind": "project",
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R289&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          }
+        ]
+      },
+      {
+        "id": "research-components",
+        "name": "Research Components",
+        "type": "dissertation",
+        "creditsRequired": 30,
+        "coursesRequired": 2,
+        "ruleText": "Complete Original research 2 and 3 for 30 credits and submit a dissertation or research paper in publication format.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R289&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+        "courses": [
+          {
+            "code": "DENT7254",
+            "name": "Original research 2",
+            "credits": 15,
+            "appliesToTrackIds": [],
+            "courseKind": "research_project",
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R289&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "DENT7255",
+            "name": "Original research 3",
+            "credits": 15,
+            "appliesToTrackIds": [],
+            "courseKind": "research_project",
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R289&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "HKU-TPG-025",
+    "courseGroups": [
+      {
+        "id": "faculty-core-courses",
+        "name": "Faculty Core Courses",
+        "type": "core",
+        "creditsRequired": 21,
+        "coursesRequired": 8,
+        "ruleText": "Complete all eight Faculty Core Courses. DENT7030 is compulsory but non-credit bearing; the other seven courses contribute 21 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R294&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+        "courses": [
+          {
+            "code": "DENT7505",
+            "name": "Biomaterials I",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R294&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "DENT7506",
+            "name": "Biomaterials II",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R294&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "DENT6023",
+            "name": "Oral epidemiology and clinical research methodology",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R294&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "DENT6024",
+            "name": "Introduction to statistical analysis in dental research",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R294&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "DENT6025",
+            "name": "Multivariable statistical analysis in dental research and use of statistical software",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R294&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "DENT7030",
+            "name": "Dissertation writing for Master of Dental Surgery and Master of Science - An Induction Course",
+            "credits": 0,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R294&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "DENT7031",
+            "name": "Insights into stem cells and tissue engineering in dentistry",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R294&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "DENT7032",
+            "name": "Diagnostic & Advanced Dental & Maxillofacial Imaging",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R294&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          }
+        ]
+      },
+      {
+        "id": "discipline-specific-courses",
+        "name": "Discipline Specific Courses",
+        "type": "core",
+        "creditsRequired": 66,
+        "coursesRequired": 1,
+        "ruleText": "Complete Didactic Paediatric Dentistry for 66 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R294&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+        "courses": [
+          {
+            "code": "DENT7302",
+            "name": "Didactic Paediatric Dentistry",
+            "credits": 66,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R294&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          }
+        ]
+      },
+      {
+        "id": "clinical-components",
+        "name": "Clinical Components",
+        "type": "core",
+        "creditsRequired": 129,
+        "coursesRequired": 2,
+        "ruleText": "Complete Clinical Paediatric Dentistry and the Clinical Portfolio capstone for 129 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R294&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+        "courses": [
+          {
+            "code": "DENT7301",
+            "name": "Clinical Paediatric Dentistry",
+            "credits": 123,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R294&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "DENT7300",
+            "name": "Capstone Experience: Clinical Portfolio",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "courseKind": "project",
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R294&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          }
+        ]
+      },
+      {
+        "id": "research-components",
+        "name": "Research Components",
+        "type": "dissertation",
+        "creditsRequired": 54,
+        "coursesRequired": 1,
+        "ruleText": "Complete the Research project for 54 credits and submit a dissertation, project report or research paper in publication format.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R294&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+        "courses": [
+          {
+            "code": "DENT7303",
+            "name": "Research project",
+            "credits": 54,
+            "appliesToTrackIds": [],
+            "courseKind": "research_project",
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R294&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "HKU-TPG-026",
+    "courseGroups": [
+      {
+        "id": "faculty-core-courses",
+        "name": "Faculty Core Courses",
+        "type": "core",
+        "creditsRequired": 18,
+        "coursesRequired": 7,
+        "ruleText": "Complete all seven Faculty Core Courses. DENT7030 is compulsory but non-credit bearing; the other six courses contribute 18 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf",
+        "courses": [
+          {
+            "code": "DENT7505",
+            "name": "Biomaterials I",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf"
+          },
+          {
+            "code": "DENT7506",
+            "name": "Biomaterials II",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf"
+          },
+          {
+            "code": "DENT6023",
+            "name": "Oral epidemiology and clinical research methodology",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf"
+          },
+          {
+            "code": "DENT6024",
+            "name": "Introduction to statistical analysis in dental research",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf"
+          },
+          {
+            "code": "DENT6025",
+            "name": "Multivariable statistical analysis in dental research and use of statistical software",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf"
+          },
+          {
+            "code": "DENT7030",
+            "name": "Dissertation writing for Master of Dental Surgery and Master of Science - An Induction Course",
+            "credits": 0,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf"
+          },
+          {
+            "code": "DENT7032",
+            "name": "Diagnostic & Advanced Dental & Maxillofacial Imaging",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf"
+          }
+        ]
+      },
+      {
+        "id": "discipline-specific-courses",
+        "name": "Discipline Specific Courses",
+        "type": "core",
+        "creditsRequired": 66,
+        "coursesRequired": 13,
+        "ruleText": "Complete all thirteen Discipline Specific Courses across Years 1, 2 and 3 for 66 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf",
+        "courses": [
+          {
+            "code": "DENT7354",
+            "name": "Case presentations plus clinical topics",
+            "credits": 9,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf"
+          },
+          {
+            "code": "DENT7355",
+            "name": "Classic literature I",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf"
+          },
+          {
+            "code": "DENT7356",
+            "name": "Classic literature II",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf"
+          },
+          {
+            "code": "DENT7357",
+            "name": "Classic literature III",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf"
+          },
+          {
+            "code": "DENT7350",
+            "name": "Basic Perio science I",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf"
+          },
+          {
+            "code": "DENT7351",
+            "name": "Basic Perio science II",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf"
+          },
+          {
+            "code": "DENT7352",
+            "name": "Basic Perio science III",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf"
+          },
+          {
+            "code": "DENT7359",
+            "name": "Current literature I",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf"
+          },
+          {
+            "code": "DENT7360",
+            "name": "Current literature II",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf"
+          },
+          {
+            "code": "DENT7361",
+            "name": "Current literature III",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf"
+          },
+          {
+            "code": "DENT7362",
+            "name": "Joint sessions I",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf"
+          },
+          {
+            "code": "DENT7363",
+            "name": "Joint sessions II",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf"
+          },
+          {
+            "code": "DENT7364",
+            "name": "Joint sessions III",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf"
+          }
+        ]
+      },
+      {
+        "id": "clinical-components",
+        "name": "Clinical Components",
+        "type": "core",
+        "creditsRequired": 126,
+        "coursesRequired": 1,
+        "ruleText": "Complete DENT7358 Clinic (including pre-clinic) for 126 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf",
+        "courses": [
+          {
+            "code": "DENT7358",
+            "name": "Clinic (incl. pre-clinic)",
+            "credits": 126,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf"
+          }
+        ]
+      },
+      {
+        "id": "research-components",
+        "name": "Research Components",
+        "type": "dissertation",
+        "creditsRequired": 54,
+        "coursesRequired": 1,
+        "ruleText": "Complete DENT7365 Project report and oral examination for 54 credits and submit the required dissertation, project report or research paper in publication format.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf",
+        "courses": [
+          {
+            "code": "DENT7365",
+            "name": "Project report and oral examination",
+            "credits": 54,
+            "appliesToTrackIds": [],
+            "courseKind": "research_project",
+            "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf"
+          }
+        ]
+      },
+      {
+        "id": "capstone-experience",
+        "name": "Capstone Experience",
+        "type": "project",
+        "creditsRequired": 6,
+        "coursesRequired": 1,
+        "ruleText": "Complete DENT7353 Capstone Experience: Clinical Portfolio for 6 credits, including case presentations and an oral clinical examination.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf",
+        "courses": [
+          {
+            "code": "DENT7353",
+            "name": "Capstone Experience: Clinical Portfolio",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "courseKind": "project",
+            "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "HKU-TPG-029",
+    "courseGroups": [
+      {
+        "id": "faculty-core-courses",
+        "name": "Faculty Core Courses",
+        "type": "core",
+        "creditsRequired": 9,
+        "coursesRequired": 4,
+        "ruleText": "Complete all four Faculty Core Courses. DENT7030 is compulsory but non-credit bearing; the other three courses contribute 9 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R233&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+        "courses": [
+          {
+            "code": "DENT6023",
+            "name": "Oral epidemiology and clinical research methodology",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R233&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "DENT6024",
+            "name": "Introduction to statistical analysis in dental research",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R233&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "DENT6025",
+            "name": "Multivariable statistical analysis in dental research and use of statistical software",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R233&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "DENT7030",
+            "name": "Dissertation writing for Master of Dental Surgery and Master of Science - An Induction Course",
+            "credits": 0,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R233&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          }
+        ]
+      },
+      {
+        "id": "discipline-specific-courses",
+        "name": "Discipline Specific Courses",
+        "type": "core",
+        "creditsRequired": 27,
+        "coursesRequired": 5,
+        "ruleText": "Complete all five Discipline Specific Courses for 27 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R233&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+        "courses": [
+          {
+            "code": "DENT7505",
+            "name": "Biomaterials I",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R233&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "DENT7506",
+            "name": "Biomaterials II",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R233&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "DENT7502",
+            "name": "Guided Learning Tutorials",
+            "credits": 15,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R233&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "DENT7503",
+            "name": "Laboratory Class + Theme-based Sessions",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R233&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "DENT7501",
+            "name": "DMS Scientific Writing + DMS Seminar Presentation",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R233&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          }
+        ]
+      },
+      {
+        "id": "research-component",
+        "name": "Research Component",
+        "type": "dissertation",
+        "creditsRequired": 36,
+        "coursesRequired": 2,
+        "ruleText": "Complete the Laboratory Research Component and the MSc(DMS) capstone project with scientific manuscript for 36 credits, and submit the required dissertation or project report portfolio.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R233&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+        "courses": [
+          {
+            "code": "DENT7504",
+            "name": "Laboratory Research Component",
+            "credits": 18,
+            "appliesToTrackIds": [],
+            "courseKind": "research_project",
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R233&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "DENT7500",
+            "name": "Capstone experience: MSc(DMS) Project + Scientific Manuscript",
+            "credits": 18,
+            "appliesToTrackIds": [],
+            "courseKind": "dissertation",
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R233&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "HKU-TPG-030",
+    "courseGroups": [
+      {
+        "id": "core-courses",
+        "name": "Core Courses",
+        "type": "core",
+        "creditsRequired": 36,
+        "coursesRequired": 6,
+        "ruleText": "Complete MAES7002, MAES7003, MAES7004, MAES7005 and MAES7006, plus exactly one of MAES7001 or MAES7008, for 36 credits. MAES7001 and MAES7008 are mutually exclusive; MAES7008 is subject to an overseas partner and may not be offered every year.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MA(TESOL).pdf",
+        "courses": [
+          {
+            "code": "MAES7001",
+            "name": "Methodological Innovations in TESOL",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MA(TESOL).pdf"
+          },
+          {
+            "code": "MAES7008",
+            "name": "Methodological Innovations in TESOL (COIL)",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MA(TESOL).pdf"
+          },
+          {
+            "code": "MAES7002",
+            "name": "Grammar and Pedagogy",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MA(TESOL).pdf"
+          },
+          {
+            "code": "MAES7003",
+            "name": "Second Language Acquisition",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MA(TESOL).pdf"
+          },
+          {
+            "code": "MAES7004",
+            "name": "Sociolinguistics and TESOL",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MA(TESOL).pdf"
+          },
+          {
+            "code": "MAES7005",
+            "name": "Teaching Spoken Communication for English as a Global Language",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MA(TESOL).pdf"
+          },
+          {
+            "code": "MAES7006",
+            "name": "Methods of Research and Enquiry in TESOL",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MA(TESOL).pdf"
+          }
+        ]
+      },
+      {
+        "id": "capstone-project",
+        "name": "Capstone Project",
+        "type": "project",
+        "creditsRequired": 12,
+        "coursesRequired": 1,
+        "ruleText": "Complete MAES7200 Project by Independent Study for 12 credits and submit the capstone project by the end of the summer semester.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MA(TESOL).pdf",
+        "courses": [
+          {
+            "code": "MAES7200",
+            "name": "Project by Independent Study",
+            "credits": 12,
+            "appliesToTrackIds": [],
+            "courseKind": "project",
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MA(TESOL).pdf"
+          }
+        ]
+      },
+      {
+        "id": "elective-courses",
+        "name": "Elective Courses",
+        "type": "elective",
+        "creditsRequired": 24,
+        "coursesRequired": 4,
+        "ruleText": "Complete four 6-credit Elective Courses, normally two in each of the first and second semesters. Not all electives are offered annually.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MA(TESOL).pdf",
+        "courses": [
+          {
+            "code": "MAES7100",
+            "name": "Literature in Language Teaching and Learning",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MA(TESOL).pdf"
+          },
+          {
+            "code": "MAES7101",
+            "name": "Critical Discourse Studies",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MA(TESOL).pdf"
+          },
+          {
+            "code": "MAES7102",
+            "name": "Teaching Reading in English as an International Language",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MA(TESOL).pdf"
+          },
+          {
+            "code": "MAES7103",
+            "name": "Second Language Writing Instruction in Global Contexts",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MA(TESOL).pdf"
+          },
+          {
+            "code": "MAES7105",
+            "name": "Technology and English Teaching and Learning",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MA(TESOL).pdf"
+          },
+          {
+            "code": "MAES7106",
+            "name": "Testing and Assessment in TESOL",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MA(TESOL).pdf"
+          },
+          {
+            "code": "MAES7107",
+            "name": "Autonomy and Language Learning",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MA(TESOL).pdf"
+          },
+          {
+            "code": "MAES7108",
+            "name": "Corpora for Language Learning and Teaching",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MA(TESOL).pdf"
+          },
+          {
+            "code": "MAES7109",
+            "name": "Intercultural Communication",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MA(TESOL).pdf"
+          },
+          {
+            "code": "MAES7110",
+            "name": "Vocabulary Teaching and Learning",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MA(TESOL).pdf"
+          },
+          {
+            "code": "MAES7111",
+            "name": "English Language Teaching: Principles into Practice",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MA(TESOL).pdf"
+          },
+          {
+            "code": "MAES7112",
+            "name": "Teaching Listening for English as a Global Language",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MA(TESOL).pdf"
+          },
+          {
+            "code": "MAES7113",
+            "name": "Teaching Multimodality",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MA(TESOL).pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "HKU-TPG-031",
+    "courseGroups": [
+      {
+        "id": "compulsory-core-course",
+        "name": "Compulsory Core Course",
+        "type": "core",
+        "creditsRequired": 6,
+        "coursesRequired": 1,
+        "ruleText": "Complete MEDD8001 Educational Issues and Research for 6 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf",
+        "courses": [
+          {
+            "code": "MEDD8001",
+            "name": "Educational Issues and Research",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          }
+        ]
+      },
+      {
+        "id": "specialist-course-requirement",
+        "name": "Specialist Course Requirement",
+        "type": "track_core_requirement",
+        "creditsRequired": 24,
+        "coursesRequired": 4,
+        "creditsRequiredByTrackIds": {
+          "HKU-TPG-031-CHINESE-LANGUAGE-EDUCATION": 24,
+          "HKU-TPG-031-COMPARATIVE-GLOBAL-STUDIES": 24,
+          "HKU-TPG-031-CONTENT-LANGUAGE-INTEGRATED-LEARNING": 24,
+          "HKU-TPG-031-CURRICULUM-PEDAGOGY": 24,
+          "HKU-TPG-031-EARLY-CHILDHOOD-EDUCATION": 24,
+          "HKU-TPG-031-EDUCATIONAL-ADMINISTRATION-MANAGEMENT": 24,
+          "HKU-TPG-031-ENGLISH-LANGUAGE-EDUCATION": 24,
+          "HKU-TPG-031-GIFTED-EDUCATION-TALENT-DEVELOPMENT": 30,
+          "HKU-TPG-031-GUIDANCE-COUNSELLING": 30,
+          "HKU-TPG-031-HIGHER-EDUCATION": 24,
+          "HKU-TPG-031-MATHEMATICS-EDUCATION": 24,
+          "HKU-TPG-031-PSYCHOLOGICAL-STUDIES-EDUCATION": 24,
+          "HKU-TPG-031-SCIENCE-EDUCATION": 30,
+          "HKU-TPG-031-STEM-EDUCATION": 30,
+          "HKU-TPG-031-TEACHING-CHINESE-SECOND-LANGUAGE": 30,
+          "HKU-TPG-031-CHINESE-LANGUAGE-LITERATURE-INTERNATIONAL": 42,
+          "HKU-TPG-031-MATHEMATICS-INTERNATIONAL-CONTEXT": 24,
+          "HKU-TPG-031-SCIENCE-INTERNATIONAL-CONTEXT": 24
+        },
+        "coursesRequiredByTrackIds": {
+          "HKU-TPG-031-CHINESE-LANGUAGE-EDUCATION": 4,
+          "HKU-TPG-031-COMPARATIVE-GLOBAL-STUDIES": 4,
+          "HKU-TPG-031-CONTENT-LANGUAGE-INTEGRATED-LEARNING": 4,
+          "HKU-TPG-031-CURRICULUM-PEDAGOGY": 4,
+          "HKU-TPG-031-EARLY-CHILDHOOD-EDUCATION": 4,
+          "HKU-TPG-031-EDUCATIONAL-ADMINISTRATION-MANAGEMENT": 4,
+          "HKU-TPG-031-ENGLISH-LANGUAGE-EDUCATION": 4,
+          "HKU-TPG-031-GIFTED-EDUCATION-TALENT-DEVELOPMENT": 5,
+          "HKU-TPG-031-GUIDANCE-COUNSELLING": 5,
+          "HKU-TPG-031-HIGHER-EDUCATION": 4,
+          "HKU-TPG-031-MATHEMATICS-EDUCATION": 4,
+          "HKU-TPG-031-PSYCHOLOGICAL-STUDIES-EDUCATION": 4,
+          "HKU-TPG-031-SCIENCE-EDUCATION": 5,
+          "HKU-TPG-031-STEM-EDUCATION": 5,
+          "HKU-TPG-031-TEACHING-CHINESE-SECOND-LANGUAGE": 5,
+          "HKU-TPG-031-CHINESE-LANGUAGE-LITERATURE-INTERNATIONAL": 7,
+          "HKU-TPG-031-MATHEMATICS-INTERNATIONAL-CONTEXT": 4,
+          "HKU-TPG-031-SCIENCE-INTERNATIONAL-CONTEXT": 4
+        },
+        "ruleText": "Generalist students have no Specialist Course requirement. Most specialisms require four named Specialist Courses. Gifted Education and Talent Development, Guidance and Counselling, Science Education, STEM Education, and Teaching Chinese as a Second Language also require one named Specialist Elective. Teaching Chinese Language and Literature in International Education requires four Specialist Courses plus all three named Specialist Electives. Required course roles are identified by requiredForTrackIds in the course pool.",
+        "appliesToTrackIds": [
+          "HKU-TPG-031-CHINESE-LANGUAGE-EDUCATION",
+          "HKU-TPG-031-COMPARATIVE-GLOBAL-STUDIES",
+          "HKU-TPG-031-CONTENT-LANGUAGE-INTEGRATED-LEARNING",
+          "HKU-TPG-031-CURRICULUM-PEDAGOGY",
+          "HKU-TPG-031-EARLY-CHILDHOOD-EDUCATION",
+          "HKU-TPG-031-EDUCATIONAL-ADMINISTRATION-MANAGEMENT",
+          "HKU-TPG-031-ENGLISH-LANGUAGE-EDUCATION",
+          "HKU-TPG-031-GIFTED-EDUCATION-TALENT-DEVELOPMENT",
+          "HKU-TPG-031-GUIDANCE-COUNSELLING",
+          "HKU-TPG-031-HIGHER-EDUCATION",
+          "HKU-TPG-031-MATHEMATICS-EDUCATION",
+          "HKU-TPG-031-PSYCHOLOGICAL-STUDIES-EDUCATION",
+          "HKU-TPG-031-SCIENCE-EDUCATION",
+          "HKU-TPG-031-STEM-EDUCATION",
+          "HKU-TPG-031-TEACHING-CHINESE-SECOND-LANGUAGE",
+          "HKU-TPG-031-CHINESE-LANGUAGE-LITERATURE-INTERNATIONAL",
+          "HKU-TPG-031-MATHEMATICS-INTERNATIONAL-CONTEXT",
+          "HKU-TPG-031-SCIENCE-INTERNATIONAL-CONTEXT"
+        ],
+        "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf",
+        "courses": []
+      },
+      {
+        "id": "generalist-elective-course-requirement",
+        "name": "Generalist Elective Requirement",
+        "type": "elective_requirement",
+        "creditsRequired": 42,
+        "coursesRequired": 7,
+        "ruleText": "Generalist Strand students complete seven General Elective Courses for 42 credits.",
+        "appliesToTrackIds": [
+          "HKU-TPG-031-GENERALIST"
+        ],
+        "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf",
+        "courses": []
+      },
+      {
+        "id": "elective-course-requirement",
+        "name": "Specialist Strand Elective Requirement",
+        "type": "elective_requirement",
+        "creditsRequired": 18,
+        "coursesRequired": 3,
+        "creditsRequiredByTrackIds": {
+          "HKU-TPG-031-CHINESE-LANGUAGE-EDUCATION": 18,
+          "HKU-TPG-031-COMPARATIVE-GLOBAL-STUDIES": 18,
+          "HKU-TPG-031-CONTENT-LANGUAGE-INTEGRATED-LEARNING": 18,
+          "HKU-TPG-031-CURRICULUM-PEDAGOGY": 18,
+          "HKU-TPG-031-EARLY-CHILDHOOD-EDUCATION": 18,
+          "HKU-TPG-031-EDUCATIONAL-ADMINISTRATION-MANAGEMENT": 18,
+          "HKU-TPG-031-ENGLISH-LANGUAGE-EDUCATION": 18,
+          "HKU-TPG-031-GIFTED-EDUCATION-TALENT-DEVELOPMENT": 12,
+          "HKU-TPG-031-GUIDANCE-COUNSELLING": 12,
+          "HKU-TPG-031-HIGHER-EDUCATION": 18,
+          "HKU-TPG-031-MATHEMATICS-EDUCATION": 18,
+          "HKU-TPG-031-PSYCHOLOGICAL-STUDIES-EDUCATION": 18,
+          "HKU-TPG-031-SCIENCE-EDUCATION": 12,
+          "HKU-TPG-031-STEM-EDUCATION": 12,
+          "HKU-TPG-031-TEACHING-CHINESE-SECOND-LANGUAGE": 12,
+          "HKU-TPG-031-MATHEMATICS-INTERNATIONAL-CONTEXT": 18,
+          "HKU-TPG-031-SCIENCE-INTERNATIONAL-CONTEXT": 18
+        },
+        "coursesRequiredByTrackIds": {
+          "HKU-TPG-031-CHINESE-LANGUAGE-EDUCATION": 3,
+          "HKU-TPG-031-COMPARATIVE-GLOBAL-STUDIES": 3,
+          "HKU-TPG-031-CONTENT-LANGUAGE-INTEGRATED-LEARNING": 3,
+          "HKU-TPG-031-CURRICULUM-PEDAGOGY": 3,
+          "HKU-TPG-031-EARLY-CHILDHOOD-EDUCATION": 3,
+          "HKU-TPG-031-EDUCATIONAL-ADMINISTRATION-MANAGEMENT": 3,
+          "HKU-TPG-031-ENGLISH-LANGUAGE-EDUCATION": 3,
+          "HKU-TPG-031-GIFTED-EDUCATION-TALENT-DEVELOPMENT": 2,
+          "HKU-TPG-031-GUIDANCE-COUNSELLING": 2,
+          "HKU-TPG-031-HIGHER-EDUCATION": 3,
+          "HKU-TPG-031-MATHEMATICS-EDUCATION": 3,
+          "HKU-TPG-031-PSYCHOLOGICAL-STUDIES-EDUCATION": 3,
+          "HKU-TPG-031-SCIENCE-EDUCATION": 2,
+          "HKU-TPG-031-STEM-EDUCATION": 2,
+          "HKU-TPG-031-TEACHING-CHINESE-SECOND-LANGUAGE": 2,
+          "HKU-TPG-031-MATHEMATICS-INTERNATIONAL-CONTEXT": 3,
+          "HKU-TPG-031-SCIENCE-INTERNATIONAL-CONTEXT": 3
+        },
+        "ruleText": "Generalist students complete seven General Electives. Most Specialist students complete three General or Specialist Electives. Five named specialisms complete two General Electives after their fifth required Specialist Elective. Teaching Chinese Language and Literature in International Education has no General Elective requirement. The two International Context specialisms complete three electives including at least one of their two named Specialist Electives.",
+        "appliesToTrackIds": [
+          "HKU-TPG-031-CHINESE-LANGUAGE-EDUCATION",
+          "HKU-TPG-031-COMPARATIVE-GLOBAL-STUDIES",
+          "HKU-TPG-031-CONTENT-LANGUAGE-INTEGRATED-LEARNING",
+          "HKU-TPG-031-CURRICULUM-PEDAGOGY",
+          "HKU-TPG-031-EARLY-CHILDHOOD-EDUCATION",
+          "HKU-TPG-031-EDUCATIONAL-ADMINISTRATION-MANAGEMENT",
+          "HKU-TPG-031-ENGLISH-LANGUAGE-EDUCATION",
+          "HKU-TPG-031-GIFTED-EDUCATION-TALENT-DEVELOPMENT",
+          "HKU-TPG-031-GUIDANCE-COUNSELLING",
+          "HKU-TPG-031-HIGHER-EDUCATION",
+          "HKU-TPG-031-MATHEMATICS-EDUCATION",
+          "HKU-TPG-031-PSYCHOLOGICAL-STUDIES-EDUCATION",
+          "HKU-TPG-031-SCIENCE-EDUCATION",
+          "HKU-TPG-031-STEM-EDUCATION",
+          "HKU-TPG-031-TEACHING-CHINESE-SECOND-LANGUAGE",
+          "HKU-TPG-031-MATHEMATICS-INTERNATIONAL-CONTEXT",
+          "HKU-TPG-031-SCIENCE-INTERNATIONAL-CONTEXT"
+        ],
+        "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf",
+        "courses": []
+      },
+      {
+        "id": "specialist-general-elective-course-pool",
+        "name": "Specialist and General Elective Course Pool",
+        "type": "track_core_elective",
+        "creditsRequired": null,
+        "coursesRequired": null,
+        "ruleText": "The pool stores every unique 6-credit Specialist and General Elective course once. Track-specific roles are recorded in requiredForTrackIds and countsTowardTrackIds. The 22 courses tagged Advanced Research Methods satisfy the additional method-course condition for the MEDD8008 Research Project path. Not all specialisms or courses are offered every year.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf",
+        "courses": [
+          {
+            "code": "MEDD8853",
+            "name": "The Chinese Language Curriculum and its School-Based Application [中國語文課程與校本課程的應用]",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-EDUCATION"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-EDUCATION"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8854",
+            "name": "Assessment in Chinese Language Education [中國語文教育: 評估]",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-EDUCATION"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-EDUCATION"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8855",
+            "name": "Psycholinguistic and the Chinese Language Learning Process [心理語言學及中國語文學習過程]",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-EDUCATION"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-EDUCATION"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8856",
+            "name": "Chinese Reading Comprehension Instruction: Theories and Practices [中文閱讀理解教學理論與實踐]",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-EDUCATION"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-EDUCATION"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6095",
+            "name": "Addressing the Global-Local Nexus in Education",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-COMPARATIVE-GLOBAL-STUDIES"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-COMPARATIVE-GLOBAL-STUDIES"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-COMPARATIVE-GLOBAL-STUDIES"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6097",
+            "name": "Themes and Approaches in The Field of Comparative Education",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-COMPARATIVE-GLOBAL-STUDIES"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-COMPARATIVE-GLOBAL-STUDIES"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-COMPARATIVE-GLOBAL-STUDIES"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6098",
+            "name": "Critical Issues in Educational Reform",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-COMPARATIVE-GLOBAL-STUDIES"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-COMPARATIVE-GLOBAL-STUDIES"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-COMPARATIVE-GLOBAL-STUDIES"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6099",
+            "name": "Education for Sustainable Development",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-COMPARATIVE-GLOBAL-STUDIES"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-COMPARATIVE-GLOBAL-STUDIES"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-COMPARATIVE-GLOBAL-STUDIES"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8843",
+            "name": "Textual Analysis I: Academic Literacies in Science and Mathematics",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-CONTENT-LANGUAGE-INTEGRATED-LEARNING"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-CONTENT-LANGUAGE-INTEGRATED-LEARNING"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-CONTENT-LANGUAGE-INTEGRATED-LEARNING"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8844",
+            "name": "Textual Analysis II: Academic Literacies in the Social Sciences and Humanities",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-CONTENT-LANGUAGE-INTEGRATED-LEARNING"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-CONTENT-LANGUAGE-INTEGRATED-LEARNING"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-CONTENT-LANGUAGE-INTEGRATED-LEARNING"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8845",
+            "name": "Principles and Practice: Bridging Pedagogy in Content and Language Integrated Learning",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-CONTENT-LANGUAGE-INTEGRATED-LEARNING"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-CONTENT-LANGUAGE-INTEGRATED-LEARNING"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-CONTENT-LANGUAGE-INTEGRATED-LEARNING"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8846",
+            "name": "Principles and Practice: Course Design in Content and Language Integrated Learning",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-CONTENT-LANGUAGE-INTEGRATED-LEARNING"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-CONTENT-LANGUAGE-INTEGRATED-LEARNING"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-CONTENT-LANGUAGE-INTEGRATED-LEARNING"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6128",
+            "name": "Curriculum Conceptions and Design",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-CURRICULUM-PEDAGOGY"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-CURRICULUM-PEDAGOGY"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-CURRICULUM-PEDAGOGY"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6131",
+            "name": "Comparative Perspectives on Curriculum",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-CURRICULUM-PEDAGOGY"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-CURRICULUM-PEDAGOGY"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-CURRICULUM-PEDAGOGY"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8819",
+            "name": "Linking Curriculum to Learning and Pedagogy",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-CURRICULUM-PEDAGOGY"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-CURRICULUM-PEDAGOGY"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-CURRICULUM-PEDAGOGY"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8820",
+            "name": "Curriculum Implementation: Issues and Challenges",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-CURRICULUM-PEDAGOGY"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-CURRICULUM-PEDAGOGY"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-CURRICULUM-PEDAGOGY"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6141",
+            "name": "Promoting Child Development in Early Childhood Education",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-EARLY-CHILDHOOD-EDUCATION"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-EARLY-CHILDHOOD-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-EARLY-CHILDHOOD-EDUCATION"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6142",
+            "name": "Learning and Teaching in Early Childhood Education",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-EARLY-CHILDHOOD-EDUCATION"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-EARLY-CHILDHOOD-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-EARLY-CHILDHOOD-EDUCATION"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6143",
+            "name": "Planning, Management, Evaluation and Leadership in Early Childhood Education",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-EARLY-CHILDHOOD-EDUCATION"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-EARLY-CHILDHOOD-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-EARLY-CHILDHOOD-EDUCATION"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6144",
+            "name": "Contemporary Issues in Early Childhood Education",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-EARLY-CHILDHOOD-EDUCATION"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-EARLY-CHILDHOOD-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-EARLY-CHILDHOOD-EDUCATION"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6192",
+            "name": "Educational Leadership and School Management",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-EDUCATIONAL-ADMINISTRATION-MANAGEMENT"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-EDUCATIONAL-ADMINISTRATION-MANAGEMENT"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-EDUCATIONAL-ADMINISTRATION-MANAGEMENT"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6193",
+            "name": "Concepts and Issues in School-Based Management",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-EDUCATIONAL-ADMINISTRATION-MANAGEMENT"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-EDUCATIONAL-ADMINISTRATION-MANAGEMENT"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-EDUCATIONAL-ADMINISTRATION-MANAGEMENT"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6195",
+            "name": "Administrative and Organisational Theory for Educational Institutions",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-EDUCATIONAL-ADMINISTRATION-MANAGEMENT"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-EDUCATIONAL-ADMINISTRATION-MANAGEMENT"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-EDUCATIONAL-ADMINISTRATION-MANAGEMENT"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD7100",
+            "name": "Legal Aspects of Educational Administration",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-EDUCATIONAL-ADMINISTRATION-MANAGEMENT"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-EDUCATIONAL-ADMINISTRATION-MANAGEMENT"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-EDUCATIONAL-ADMINISTRATION-MANAGEMENT"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6311",
+            "name": "English Language Curriculum and Assessment",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-ENGLISH-LANGUAGE-EDUCATION"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-ENGLISH-LANGUAGE-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-ENGLISH-LANGUAGE-EDUCATION"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6702",
+            "name": "Language Awareness: Grammar and Lexis",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-ENGLISH-LANGUAGE-EDUCATION"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-ENGLISH-LANGUAGE-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-ENGLISH-LANGUAGE-EDUCATION"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6703",
+            "name": "Second Language Acquisition",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-ENGLISH-LANGUAGE-EDUCATION"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-ENGLISH-LANGUAGE-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-ENGLISH-LANGUAGE-EDUCATION"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6709",
+            "name": "An Introduction to Sociolinguistics",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-ENGLISH-LANGUAGE-EDUCATION"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-ENGLISH-LANGUAGE-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-ENGLISH-LANGUAGE-EDUCATION"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD7038",
+            "name": "Counselling, Career Education and Talent Development in Schools",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-GIFTED-EDUCATION-TALENT-DEVELOPMENT"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-GIFTED-EDUCATION-TALENT-DEVELOPMENT"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-GIFTED-EDUCATION-TALENT-DEVELOPMENT"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8831",
+            "name": "Nurturing Creativity: Theories and Practices",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-GIFTED-EDUCATION-TALENT-DEVELOPMENT"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-GIFTED-EDUCATION-TALENT-DEVELOPMENT"
+            ],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8876",
+            "name": "Psychology and Education of Gifted and Talented Individuals",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-GIFTED-EDUCATION-TALENT-DEVELOPMENT"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-GIFTED-EDUCATION-TALENT-DEVELOPMENT"
+            ],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8877",
+            "name": "Social and Emotional Needs of Gifted Individuals",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-GIFTED-EDUCATION-TALENT-DEVELOPMENT"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-GIFTED-EDUCATION-TALENT-DEVELOPMENT"
+            ],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8878",
+            "name": "Practicum in Gifted Education and Talent Development",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-GIFTED-EDUCATION-TALENT-DEVELOPMENT"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-GIFTED-EDUCATION-TALENT-DEVELOPMENT"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-GIFTED-EDUCATION-TALENT-DEVELOPMENT"
+            ],
+            "prerequisiteCodes": [
+              "MEDD8876"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6248",
+            "name": "Theories and Practices in Counselling and Group Guidance",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-GUIDANCE-COUNSELLING"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-GUIDANCE-COUNSELLING"
+            ],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8601",
+            "name": "Comprehensive Guidance and Positive Youth Development: A Whole-School Approach",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-GUIDANCE-COUNSELLING"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-GUIDANCE-COUNSELLING"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-GUIDANCE-COUNSELLING"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8602",
+            "name": "Practicum in Counselling and Group Guidance",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-GUIDANCE-COUNSELLING"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-GUIDANCE-COUNSELLING"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-GUIDANCE-COUNSELLING"
+            ],
+            "prerequisiteCodes": [
+              "MEDD6248",
+              "MEDD8678"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8884",
+            "name": "Career Counselling and Talent Development in Schools",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-GUIDANCE-COUNSELLING"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-GUIDANCE-COUNSELLING"
+            ],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8678",
+            "name": "Counselling Process, Ethics and Skills",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-GUIDANCE-COUNSELLING"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-GUIDANCE-COUNSELLING"
+            ],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6344",
+            "name": "Aims of Higher Education",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-HIGHER-EDUCATION"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-HIGHER-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-HIGHER-EDUCATION"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8917",
+            "name": "Instructional Design in Higher Education",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-HIGHER-EDUCATION"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-HIGHER-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-HIGHER-EDUCATION"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8918",
+            "name": "Contemporary Issues in Higher Education",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-HIGHER-EDUCATION"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-HIGHER-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-HIGHER-EDUCATION"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8919",
+            "name": "Science and Higher Education Systems and Policy",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-HIGHER-EDUCATION"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-HIGHER-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-HIGHER-EDUCATION"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6387",
+            "name": "Research into the Teaching and Learning of Mathematics",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-MATHEMATICS-EDUCATION",
+              "HKU-TPG-031-MATHEMATICS-INTERNATIONAL-CONTEXT"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-MATHEMATICS-EDUCATION",
+              "HKU-TPG-031-MATHEMATICS-INTERNATIONAL-CONTEXT"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-MATHEMATICS-EDUCATION",
+              "HKU-TPG-031-MATHEMATICS-INTERNATIONAL-CONTEXT"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6388",
+            "name": "Curriculum Research and Development in Mathematics",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-MATHEMATICS-EDUCATION",
+              "HKU-TPG-031-MATHEMATICS-INTERNATIONAL-CONTEXT"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-MATHEMATICS-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-MATHEMATICS-EDUCATION",
+              "HKU-TPG-031-MATHEMATICS-INTERNATIONAL-CONTEXT"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6389",
+            "name": "The Philosophical, Social and Cultural Aspects of Mathematics Education",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-MATHEMATICS-EDUCATION",
+              "HKU-TPG-031-MATHEMATICS-INTERNATIONAL-CONTEXT"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-MATHEMATICS-EDUCATION",
+              "HKU-TPG-031-MATHEMATICS-INTERNATIONAL-CONTEXT"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-MATHEMATICS-EDUCATION",
+              "HKU-TPG-031-MATHEMATICS-INTERNATIONAL-CONTEXT"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6390",
+            "name": "Innovation and Development of Instructional Design in Mathematics",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-MATHEMATICS-EDUCATION",
+              "HKU-TPG-031-MATHEMATICS-INTERNATIONAL-CONTEXT"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-MATHEMATICS-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-MATHEMATICS-EDUCATION",
+              "HKU-TPG-031-MATHEMATICS-INTERNATIONAL-CONTEXT"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6441",
+            "name": "Developmental Psychology for Educators",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-PSYCHOLOGICAL-STUDIES-EDUCATION"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-PSYCHOLOGICAL-STUDIES-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-PSYCHOLOGICAL-STUDIES-EDUCATION"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6442",
+            "name": "Cognition, Learning and Instruction",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-PSYCHOLOGICAL-STUDIES-EDUCATION"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-PSYCHOLOGICAL-STUDIES-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-PSYCHOLOGICAL-STUDIES-EDUCATION"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6443",
+            "name": "Student Development: Theory, Research and Practice",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-PSYCHOLOGICAL-STUDIES-EDUCATION"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-PSYCHOLOGICAL-STUDIES-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-PSYCHOLOGICAL-STUDIES-EDUCATION"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6444",
+            "name": "Effective Talk in the Classroom",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-PSYCHOLOGICAL-STUDIES-EDUCATION"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-PSYCHOLOGICAL-STUDIES-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-PSYCHOLOGICAL-STUDIES-EDUCATION"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6467",
+            "name": "Teaching and Learning in Science",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-SCIENCE-EDUCATION",
+              "HKU-TPG-031-SCIENCE-INTERNATIONAL-CONTEXT"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-SCIENCE-EDUCATION",
+              "HKU-TPG-031-SCIENCE-INTERNATIONAL-CONTEXT"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-SCIENCE-EDUCATION",
+              "HKU-TPG-031-SCIENCE-INTERNATIONAL-CONTEXT"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6469",
+            "name": "Trends and Issues of Science Education",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-SCIENCE-EDUCATION",
+              "HKU-TPG-031-SCIENCE-INTERNATIONAL-CONTEXT"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-SCIENCE-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-SCIENCE-EDUCATION",
+              "HKU-TPG-031-SCIENCE-INTERNATIONAL-CONTEXT"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8644",
+            "name": "Assessment in Science Education",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-SCIENCE-EDUCATION"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-SCIENCE-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-SCIENCE-EDUCATION"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8897",
+            "name": "Science Curriculum: Concepts and Themes",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-SCIENCE-EDUCATION",
+              "HKU-TPG-031-SCIENCE-INTERNATIONAL-CONTEXT"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-SCIENCE-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-SCIENCE-EDUCATION",
+              "HKU-TPG-031-SCIENCE-INTERNATIONAL-CONTEXT"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8862",
+            "name": "Classroom Practice of STEM Education",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-SCIENCE-EDUCATION"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-SCIENCE-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-SCIENCE-EDUCATION"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8859",
+            "name": "Learning, Teaching and Assessment in STEM Education",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-STEM-EDUCATION"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-STEM-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-STEM-EDUCATION"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8860",
+            "name": "Emerging Technologies in STEM Education",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-STEM-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-STEM-EDUCATION"
+            ],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8894",
+            "name": "Design Thinking and Education",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-STEM-EDUCATION"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-STEM-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-STEM-EDUCATION"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8895",
+            "name": "STEM across the Curriculum and the Society",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-STEM-EDUCATION"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-STEM-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-STEM-EDUCATION"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8896",
+            "name": "Computational Thinking and Education",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-STEM-EDUCATION"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-STEM-EDUCATION"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-STEM-EDUCATION"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6051",
+            "name": "Teaching Chinese Language in International Contexts [對外漢語教學]",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-TEACHING-CHINESE-SECOND-LANGUAGE"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-TEACHING-CHINESE-SECOND-LANGUAGE"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-TEACHING-CHINESE-SECOND-LANGUAGE"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6052",
+            "name": "Chinese (L2) Assessment and Reporting [中文第二語言教學評估與報告]",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-TEACHING-CHINESE-SECOND-LANGUAGE"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-TEACHING-CHINESE-SECOND-LANGUAGE"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-TEACHING-CHINESE-SECOND-LANGUAGE"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6054",
+            "name": "Chinese (L2) School-Based Curriculum Design [中文第二語言校本課程設計]",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-TEACHING-CHINESE-SECOND-LANGUAGE"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-TEACHING-CHINESE-SECOND-LANGUAGE"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-TEACHING-CHINESE-SECOND-LANGUAGE"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6055",
+            "name": "Research and Teaching Practice in Second Language Classrooms [中文第二語言教學研究與實踐]",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-TEACHING-CHINESE-SECOND-LANGUAGE"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-TEACHING-CHINESE-SECOND-LANGUAGE"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-TEACHING-CHINESE-SECOND-LANGUAGE"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD7104",
+            "name": "Integrating the IB Philosophy into Chinese Language Teaching [融合國際文憑課程理念的中國語言教學]",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-TEACHING-CHINESE-SECOND-LANGUAGE"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-TEACHING-CHINESE-SECOND-LANGUAGE"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-TEACHING-CHINESE-SECOND-LANGUAGE"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8837",
+            "name": "World Literature and New Textualities in International Chinese Education [國際中文教育中的世界文學與新興文本]",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-LITERATURE-INTERNATIONAL"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-LITERATURE-INTERNATIONAL"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-LITERATURE-INTERNATIONAL"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8838",
+            "name": "Teaching Language and Literature in International Chinese Education [國際中文教育: 語言和文學教學]",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-LITERATURE-INTERNATIONAL"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-LITERATURE-INTERNATIONAL"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-LITERATURE-INTERNATIONAL"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8839",
+            "name": "Literature and the Art of Performance [文學與表演藝術]",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-LITERATURE-INTERNATIONAL"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-LITERATURE-INTERNATIONAL"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-LITERATURE-INTERNATIONAL"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8840",
+            "name": "Theories of Pedagogy and Teaching Practice [教學法與教學實踐]",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-LITERATURE-INTERNATIONAL"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-LITERATURE-INTERNATIONAL"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-LITERATURE-INTERNATIONAL"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8841",
+            "name": "Integrating the IB Philosophy into Chinese Language and Literature Teaching [融合國際文憑課程理念的中國語言及文學教學]",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-LITERATURE-INTERNATIONAL"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-LITERATURE-INTERNATIONAL"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-LITERATURE-INTERNATIONAL"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8851",
+            "name": "Chinese L2 Pedagogy [中文(二語)教學法]",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-LITERATURE-INTERNATIONAL"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-LITERATURE-INTERNATIONAL"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-LITERATURE-INTERNATIONAL"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8852",
+            "name": "Chinese L2 Curriculum Design and Assessment [中文(二語)課程設計與評估]",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-LITERATURE-INTERNATIONAL"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-LITERATURE-INTERNATIONAL"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-LITERATURE-INTERNATIONAL"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6381",
+            "name": "Integrating IB Philosophy into the Teaching of Chinese Language, Mathematics and Science",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-MATHEMATICS-INTERNATIONAL-CONTEXT",
+              "HKU-TPG-031-SCIENCE-INTERNATIONAL-CONTEXT"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-MATHEMATICS-INTERNATIONAL-CONTEXT",
+              "HKU-TPG-031-SCIENCE-INTERNATIONAL-CONTEXT"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-MATHEMATICS-INTERNATIONAL-CONTEXT",
+              "HKU-TPG-031-SCIENCE-INTERNATIONAL-CONTEXT"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6382",
+            "name": "Research and/or Mathematics Teaching Practice in Classrooms",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-MATHEMATICS-INTERNATIONAL-CONTEXT"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-MATHEMATICS-INTERNATIONAL-CONTEXT"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-MATHEMATICS-INTERNATIONAL-CONTEXT"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8806",
+            "name": "Research and Science Teaching Practice in Classrooms",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-SCIENCE-INTERNATIONAL-CONTEXT"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-SCIENCE-INTERNATIONAL-CONTEXT"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-SCIENCE-INTERNATIONAL-CONTEXT"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8807",
+            "name": "The Philosophical, Social and Cultural Aspects of Science Education",
+            "credits": 6,
+            "appliesToTrackIds": [
+              "HKU-TPG-031-SCIENCE-INTERNATIONAL-CONTEXT"
+            ],
+            "requiredForTrackIds": [
+              "HKU-TPG-031-SCIENCE-INTERNATIONAL-CONTEXT"
+            ],
+            "countsTowardTrackIds": [
+              "HKU-TPG-031-SCIENCE-INTERNATIONAL-CONTEXT"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8815",
+            "name": "Introduction to Statistical Methods",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective",
+              "Advanced Research Methods"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8886",
+            "name": "Qualitative Methods: Research Design, Data Collection and Analysis",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective",
+              "Advanced Research Methods"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8887",
+            "name": "Narrative Analysis in Education",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective",
+              "Advanced Research Methods"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8888",
+            "name": "Methods for Evaluation Research in Education",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective",
+              "Advanced Research Methods"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8892",
+            "name": "Statistical Methods in Educational Research",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective",
+              "Advanced Research Methods"
+            ],
+            "prerequisiteCodes": [
+              "MEDD8815"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8898",
+            "name": "Exploring Written Discourse in Education",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective",
+              "Advanced Research Methods"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8899",
+            "name": "Advanced Statistical Methods in Educational Research",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective",
+              "Advanced Research Methods"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8900",
+            "name": "Analysing Textual and Documentary Data in Qualitative Research",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective",
+              "Advanced Research Methods"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8901",
+            "name": "Conducting Mixed Methods Research and Action Research in Your Schools",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective",
+              "Advanced Research Methods"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8907",
+            "name": "Statistical Analyses for Advancing Educational Equity and Social Justice",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective",
+              "Advanced Research Methods"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8908",
+            "name": "Foundations of Qualitative Education Research: Concepts, Strategies and Methods",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective",
+              "Advanced Research Methods"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8910",
+            "name": "Introduction to Regression Analysis and Data Visualisation",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective",
+              "Advanced Research Methods"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8921",
+            "name": "Conducting Cross-Cultural Educational Research",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective",
+              "Advanced Research Methods"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8922",
+            "name": "Philosophical and Ethical Issues in Educational Research",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective",
+              "Advanced Research Methods"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8923",
+            "name": "Qualitative Literature Reviews: From Systematic to Scoping Reviews",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective",
+              "Advanced Research Methods"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8924",
+            "name": "Understanding Subjective Experience through Q Methodology and Narrative Inquiry",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective",
+              "Advanced Research Methods"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8925",
+            "name": "Analysing Textual and Documentary Data in Quantitative Research",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective",
+              "Advanced Research Methods"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8926",
+            "name": "Methods and Measurement in Comparative Research: Happiness, Well-Being, and Education",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective",
+              "Advanced Research Methods"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8927",
+            "name": "Introduction to Data and Text Analytics with Programming",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective",
+              "Advanced Research Methods"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8932",
+            "name": "Conducting Quantitative Research Using Secondary Data with R Software",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective",
+              "Advanced Research Methods"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8933",
+            "name": "Identifying Evidence-based Practices in School Settings: Experimental Research Method and Design",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective",
+              "Advanced Research Methods"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8936",
+            "name": "Case Study Research: Examining and Responding to Contemporary Educational Challenges",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective",
+              "Advanced Research Methods"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD6609",
+            "name": "Digital Technology and Educational Leadership",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD7102",
+            "name": "Pedagogical Frameworks for Mathematics, Science and Related Subjects",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD7117",
+            "name": "Drama Appreciation and Teaching",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD7124",
+            "name": "Individual and Home Predictors of Students’ Academic Achievement",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8666",
+            "name": "Abnormal Psychology and Positive Psychology",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8669",
+            "name": "Teacher and Classroom Predictors of Students’ Academic Achievement",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8679",
+            "name": "Counselling Assessment and Interventions",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8801",
+            "name": "Classical Chinese Language and the Reading of Classical Texts",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8802",
+            "name": "Sociology of Education: Classic and Contemporary Theories",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8817",
+            "name": "The Learning Brain",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8826",
+            "name": "Technology and Second Language Teaching and Learning",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8829",
+            "name": "Effective Strategies for Learning and Teaching in Small Class Environment for Primary Education",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8833",
+            "name": "Teaching Chinese Language and Literature in IB Language A Curriculum [國際文憑課程 (語言 A): 中國語言和文學教學]",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8834",
+            "name": "World Literature and New Textualities in the IB Chinese A Curriculum [國際文憑中文課程的世界文學與新興文本]",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8835",
+            "name": "Writing for Academic Success",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8836",
+            "name": "Personal Growth of Teachers and Guidance Personnel",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8874",
+            "name": "Issues in Contemporary Curriculum Development",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "impermissibleWithCodes": [
+              "MEDD6128",
+              "MEDD6131",
+              "MEDD8819",
+              "MEDD8820"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8881",
+            "name": "Learning Design and Technology",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8889",
+            "name": "Strategic Leadership in School Administration and Management for Career Advancement",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "excludesTrackIds": [
+              "HKU-TPG-031-EDUCATIONAL-ADMINISTRATION-MANAGEMENT"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8890",
+            "name": "Edu-preneurial Leadership in Continuing Professional Development for Career Advancement",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "prerequisiteNote": "MEDD8889 is required except for students specialising in Educational Administration and Management.",
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8893",
+            "name": "Teaching Argumentative Discourse in Chinese Language: A Critical Discussion Perspective",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8903",
+            "name": "Introduction to Educational and Psychological Measurement",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "prerequisiteCodes": [
+              "MEDD8815"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8904",
+            "name": "Introduction to Factor Analysis and Structural Equation Modeling",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "prerequisiteCodes": [
+              "MEDD8815"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8909",
+            "name": "Use of Assessment for Learning to Develop Critical Thinking of Secondary Students",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8913",
+            "name": "Educational Leadership for Equity and Social Justice",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8914",
+            "name": "Implementing STEM/STEAM-Rich Making: Opportunities and Challenges",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8915",
+            "name": "Integrating IB Philosophy into the Teaching of Mathematics",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8916",
+            "name": "Public Policy in Early Childhood and Primary Education",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8920",
+            "name": "Classroom Research in General Studies and Liberal Education",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8928",
+            "name": "Educational Change in a Global Era: Theories and Debates",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8931",
+            "name": "People-centric Design for Education Using Simulation Technology",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8934",
+            "name": "Artificial Intelligence and Language Education",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8935",
+            "name": "Theories of Learning in STEM Education",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "subjectGroups": [
+              "General Elective"
+            ],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          }
+        ]
+      },
+      {
+        "id": "capstone-course",
+        "name": "Capstone Course",
+        "type": "project_or_portfolio",
+        "creditsRequired": 12,
+        "coursesRequired": 1,
+        "ruleText": "Complete either MEDD8008 Research Project or MEDD8009 Professional Portfolio for 12 credits. MEDD8008 requires at least one Advanced Research Methods elective. Teaching Chinese Language and Literature in International Education students must complete MEDD8009 and cannot choose MEDD8008.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf",
+        "courses": [
+          {
+            "code": "MEDD8008",
+            "name": "Research Project",
+            "credits": 12,
+            "courseKind": "research_project",
+            "conditionalRequirement": true,
+            "excludesTrackIds": [
+              "HKU-TPG-031-CHINESE-LANGUAGE-LITERATURE-INTERNATIONAL"
+            ],
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          },
+          {
+            "code": "MEDD8009",
+            "name": "Professional Portfolio",
+            "credits": 12,
+            "courseKind": "portfolio",
+            "conditionalRequirement": true,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MEd.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "HKU-TPG-032",
     "courseGroups": [
       {

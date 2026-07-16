@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKU",
+  "academicYear": "2023-24 and thereafter",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "HKU-TPG-026",
+      "status": "verified",
+      "creditsRequired": 270,
+      "creditUnit": "credits",
+      "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf",
+      "ruleReviewStatus": "verified",
+      "statusNote": "The current HKU Faculty of Dentistry Programme page for 2026 admissions links this official Regulations and Syllabuses PDF. It applies to candidates admitted in 2023-24 and thereafter, no longer carries the older Subject to official approval notice, and publishes a compulsory 270-credit curriculum: 18 Faculty Core, 66 Discipline Specific, 126 Clinical, 54 Research and 6 Capstone credits. This corrects the 66-credit directory value, which matches only the Discipline Specific subtotal. The Syllabuses are dated Apr 20, 2023.",
+      "courseGroups": [
+        {
+          "id": "faculty-core-courses",
+          "name": "Faculty Core Courses",
+          "type": "core",
+          "creditsRequired": 18,
+          "coursesRequired": 7,
+          "ruleText": "Complete all seven Faculty Core Courses. DENT7030 is compulsory but non-credit bearing; the other six courses contribute 18 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf",
+          "courses": [
+            {
+              "code": "DENT7505",
+              "name": "Biomaterials I",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7506",
+              "name": "Biomaterials II",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT6023",
+              "name": "Oral epidemiology and clinical research methodology",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT6024",
+              "name": "Introduction to statistical analysis in dental research",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT6025",
+              "name": "Multivariable statistical analysis in dental research and use of statistical software",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7030",
+              "name": "Dissertation writing for Master of Dental Surgery and Master of Science - An Induction Course",
+              "credits": 0,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7032",
+              "name": "Diagnostic & Advanced Dental & Maxillofacial Imaging",
+              "credits": 3,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "discipline-specific-courses",
+          "name": "Discipline Specific Courses",
+          "type": "core",
+          "creditsRequired": 66,
+          "coursesRequired": 13,
+          "ruleText": "Complete all thirteen Discipline Specific Courses across Years 1, 2 and 3 for 66 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf",
+          "courses": [
+            {
+              "code": "DENT7354",
+              "name": "Case presentations plus clinical topics",
+              "credits": 9,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7355",
+              "name": "Classic literature I",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7356",
+              "name": "Classic literature II",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7357",
+              "name": "Classic literature III",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7350",
+              "name": "Basic Perio science I",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7351",
+              "name": "Basic Perio science II",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7352",
+              "name": "Basic Perio science III",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7359",
+              "name": "Current literature I",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7360",
+              "name": "Current literature II",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7361",
+              "name": "Current literature III",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7362",
+              "name": "Joint sessions I",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7363",
+              "name": "Joint sessions II",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7364",
+              "name": "Joint sessions III",
+              "credits": 6,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "clinical-components",
+          "name": "Clinical Components",
+          "type": "core",
+          "creditsRequired": 126,
+          "coursesRequired": 1,
+          "ruleText": "Complete DENT7358 Clinic (including pre-clinic) for 126 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf",
+          "courses": [
+            {
+              "code": "DENT7358",
+              "name": "Clinic (incl. pre-clinic)",
+              "credits": 126,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "research-components",
+          "name": "Research Components",
+          "type": "dissertation",
+          "creditsRequired": 54,
+          "coursesRequired": 1,
+          "ruleText": "Complete DENT7365 Project report and oral examination for 54 credits and submit the required dissertation, project report or research paper in publication format.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf",
+          "courses": [
+            {
+              "code": "DENT7365",
+              "name": "Project report and oral examination",
+              "credits": 54,
+              "appliesToTrackIds": [],
+              "courseKind": "research_project"
+            }
+          ]
+        },
+        {
+          "id": "capstone-experience",
+          "name": "Capstone Experience",
+          "type": "project",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Complete DENT7353 Capstone Experience: Clinical Portfolio for 6 credits, including case presentations and an oral clinical examination.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://facdent.hku.hk/download/taught-postgraduate/reg-syl-mds-perio.pdf",
+          "courses": [
+            {
+              "code": "DENT7353",
+              "name": "Capstone Experience: Clinical Portfolio",
+              "credits": 6,
+              "appliesToTrackIds": [],
+              "courseKind": "project"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

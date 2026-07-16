@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKU",
+  "academicYear": "2017-18 and thereafter",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "HKU-TPG-029",
+      "status": "verified",
+      "creditsRequired": 72,
+      "creditUnit": "credits",
+      "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R233&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "ruleReviewStatus": "verified",
+      "statusNote": "The current HKU Taught Postgraduate Admissions page identifies this Programme as R233 and links the official Regulations and Syllabuses. The Regulations apply to candidates admitted in 2017-18 and thereafter, and the Syllabuses publish a compulsory 72-credit curriculum: 9 Faculty Core, 27 Discipline Specific and 36 Research credits. The Syllabuses are dated Sep 27, 2019.",
+      "courseGroups": [
+        {
+          "id": "faculty-core-courses",
+          "name": "Faculty Core Courses",
+          "type": "core",
+          "creditsRequired": 9,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Faculty Core Courses. DENT7030 is compulsory but non-credit bearing; the other three courses contribute 9 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R233&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "DENT6023",
+              "name": "Oral epidemiology and clinical research methodology",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT6024",
+              "name": "Introduction to statistical analysis in dental research",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT6025",
+              "name": "Multivariable statistical analysis in dental research and use of statistical software",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7030",
+              "name": "Dissertation writing for Master of Dental Surgery and Master of Science - An Induction Course",
+              "credits": 0,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "discipline-specific-courses",
+          "name": "Discipline Specific Courses",
+          "type": "core",
+          "creditsRequired": 27,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five Discipline Specific Courses for 27 credits.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R233&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "DENT7505",
+              "name": "Biomaterials I",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7506",
+              "name": "Biomaterials II",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7502",
+              "name": "Guided Learning Tutorials",
+              "credits": 15,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7503",
+              "name": "Laboratory Class + Theme-based Sessions",
+              "credits": 3,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "DENT7501",
+              "name": "DMS Scientific Writing + DMS Seminar Presentation",
+              "credits": 3,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "research-component",
+          "name": "Research Component",
+          "type": "dissertation",
+          "creditsRequired": 36,
+          "coursesRequired": 2,
+          "ruleText": "Complete the Laboratory Research Component and the MSc(DMS) capstone project with scientific manuscript for 36 credits, and submit the required dissertation or project report portfolio.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R233&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+          "courses": [
+            {
+              "code": "DENT7504",
+              "name": "Laboratory Research Component",
+              "credits": 18,
+              "appliesToTrackIds": [],
+              "courseKind": "research_project"
+            },
+            {
+              "code": "DENT7500",
+              "name": "Capstone experience: MSc(DMS) Project + Scientific Manuscript",
+              "credits": 18,
+              "appliesToTrackIds": [],
+              "courseKind": "dissertation"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

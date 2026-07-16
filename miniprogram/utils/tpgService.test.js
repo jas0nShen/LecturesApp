@@ -9,8 +9,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 304);
-  assert.equal(coverage.courseCount, 7578);
+  assert.equal(coverage.programmeWithCoursesCount, 310);
+  assert.equal(coverage.courseCount, 7794);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -29,8 +29,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 304);
-  assert.equal(rows.length, 304);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 310);
+  assert.equal(rows.length, 310);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
@@ -6500,6 +6500,185 @@ test('HKU Endodontics exposes the complete 270-credit compulsory curriculum', ()
   assert.match(programme.courseStatusNote, /72-credit directory value/);
 });
 
+test('HKU Orthodontics exposes the complete 270-credit compulsory curriculum', () => {
+  const programme = tpgService.getProgramme('HKU-TPG-024');
+  const courses = tpgService.flattenCourses(programme);
+  const [facultyCore, discipline, clinical, research] = programme.courseGroups;
+
+  assert.equal(programme.creditsRequired, 270);
+  assert.equal(programme.academicYear, '2023-24 and thereafter');
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.equal(tpgService.getStatus(programme).isComplete, true);
+  assert.equal(tpgService.getStatus(programme).courseCount, 15);
+  assert.equal(courses.length, 15);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 15);
+  assert.deepEqual(programme.courseGroups.map((group) => group.creditsRequired), [15, 72, 153, 30]);
+  assert.deepEqual([facultyCore.courses.length, discipline.courses.length, clinical.courses.length, research.courses.length], [6, 3, 4, 2]);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'DENT7030').credits, 0);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'DENT7253').credits, 51);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'DENT7250').courseKind, 'project');
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'DENT7254').courseKind, 'research_project');
+  assert.match(programme.courseStatusNote, /72-credit directory value/);
+});
+
+test('HKU Paediatric Dentistry exposes the complete 270-credit compulsory curriculum', () => {
+  const programme = tpgService.getProgramme('HKU-TPG-025');
+  const courses = tpgService.flattenCourses(programme);
+  const [facultyCore, discipline, clinical, research] = programme.courseGroups;
+
+  assert.equal(programme.creditsRequired, 270);
+  assert.equal(programme.academicYear, '2023-24 and thereafter');
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.equal(tpgService.getStatus(programme).isComplete, true);
+  assert.equal(tpgService.getStatus(programme).courseCount, 12);
+  assert.equal(courses.length, 12);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 12);
+  assert.deepEqual(programme.courseGroups.map((group) => group.creditsRequired), [21, 66, 129, 54]);
+  assert.deepEqual([facultyCore.courses.length, discipline.courses.length, clinical.courses.length, research.courses.length], [8, 1, 2, 1]);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'DENT7030').credits, 0);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'DENT7301').credits, 123);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'DENT7300').courseKind, 'project');
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'DENT7303').courseKind, 'research_project');
+  assert.match(programme.courseStatusNote, /66-credit directory value/);
+});
+
+test('HKU Periodontology exposes the complete 270-credit compulsory curriculum', () => {
+  const programme = tpgService.getProgramme('HKU-TPG-026');
+  const courses = tpgService.flattenCourses(programme);
+  const [facultyCore, discipline, clinical, research, capstone] = programme.courseGroups;
+
+  assert.equal(programme.creditsRequired, 270);
+  assert.equal(programme.academicYear, '2023-24 and thereafter');
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.equal(tpgService.getStatus(programme).isComplete, true);
+  assert.equal(tpgService.getStatus(programme).courseCount, 23);
+  assert.equal(courses.length, 23);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 23);
+  assert.deepEqual(programme.courseGroups.map((group) => group.creditsRequired), [18, 66, 126, 54, 6]);
+  assert.deepEqual([facultyCore.courses.length, discipline.courses.length, clinical.courses.length, research.courses.length, capstone.courses.length], [7, 13, 1, 1, 1]);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'DENT7030').credits, 0);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'DENT7358').credits, 126);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'DENT7365').courseKind, 'research_project');
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'DENT7353').courseKind, 'project');
+  assert.match(programme.courseStatusNote, /Subject to official approval/);
+  assert.match(programme.courseStatusNote, /66-credit directory value/);
+});
+
+test('HKU Prosthodontics remains unavailable while the current official curriculum is approval-pending', () => {
+  const programme = tpgService.getProgramme('HKU-TPG-027');
+
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal(programme.creditsRequired, 270);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.academicYear, '2023-24 and thereafter');
+  assert.equal(programme.courseVerifiedAt, '2026-07-16');
+  assert.equal(tpgService.hasCourseGroups(programme), false);
+  assert.equal(tpgService.getStatus(programme).courseCount, 0);
+  assert.equal(tpgService.flattenCourses(programme).length, 0);
+  assert.match(programme.courseSourceUrl, /tpg-mds-prosthodontics\.php$/);
+  assert.match(programme.courseStatusNote, /Subject to official approval/);
+  assert.match(programme.courseStatusNote, /R350/);
+  assert.match(programme.courseStatusNote, /no course groups are exposed/);
+});
+
+test('HKU Community Dentistry remains unavailable without the required Public Health course identities', () => {
+  const programme = tpgService.getProgramme('HKU-TPG-028');
+
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal(programme.creditsRequired, 69);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.academicYear, '2017-18 and thereafter');
+  assert.equal(programme.courseVerifiedAt, '2026-07-16');
+  assert.equal(tpgService.hasCourseGroups(programme), false);
+  assert.equal(tpgService.getStatus(programme).courseCount, 0);
+  assert.equal(tpgService.flattenCourses(programme).length, 0);
+  assert.match(programme.courseSourceUrl, /tpg-msc-community\.php$/);
+  assert.match(programme.courseStatusNote, /five 3-credit courses assigned by the Programme Director/);
+  assert.match(programme.courseStatusNote, /no course codes or complete course titles/);
+  assert.match(programme.courseStatusNote, /R351/);
+});
+
+test('HKU Dental Materials Science exposes the complete 72-credit compulsory curriculum', () => {
+  const programme = tpgService.getProgramme('HKU-TPG-029');
+  const courses = tpgService.flattenCourses(programme);
+  const [facultyCore, discipline, research] = programme.courseGroups;
+
+  assert.equal(programme.creditsRequired, 72);
+  assert.equal(programme.academicYear, '2017-18 and thereafter');
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.equal(tpgService.getStatus(programme).isComplete, true);
+  assert.equal(tpgService.getStatus(programme).courseCount, 11);
+  assert.equal(courses.length, 11);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 11);
+  assert.deepEqual(programme.courseGroups.map((group) => group.creditsRequired), [9, 27, 36]);
+  assert.deepEqual([facultyCore.courses.length, discipline.courses.length, research.courses.length], [4, 5, 2]);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'DENT7030').credits, 0);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'DENT7502').credits, 15);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'DENT7504').courseKind, 'research_project');
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'DENT7500').courseKind, 'dissertation');
+  assert.match(programme.courseSourceUrl, /pREF_CODE=R233/);
+});
+
+test('HKU MA(TESOL) exposes the complete verified course pool without flattening its alternative Core rule', () => {
+  const programme = tpgService.getProgramme('HKU-TPG-030');
+  const courses = tpgService.flattenCourses(programme);
+  const [core, capstone, electives] = programme.courseGroups;
+
+  assert.equal(programme.creditsRequired, 72);
+  assert.equal(programme.academicYear, '2025-26 and thereafter');
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.listTracks(programme).length, 0);
+  assert.equal(tpgService.getStatus(programme).isComplete, true);
+  assert.equal(tpgService.getStatus(programme).courseCount, 21);
+  assert.equal(courses.length, 21);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 21);
+  assert.deepEqual(programme.courseGroups.map((group) => group.creditsRequired), [36, 12, 24]);
+  assert.deepEqual([core.courses.length, capstone.courses.length, electives.courses.length], [7, 1, 13]);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'MAES7001').credits, 6);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'MAES7008').credits, 6);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'MAES7200').courseKind, 'project');
+  assert.match(core.ruleText, /mutually exclusive/);
+  assert.match(programme.courseSourceUrl, /pgdr2025-26\/Education\/MA\(TESOL\)\.pdf$/);
+});
+
+test('HKU MEd exposes every official path and resolves its path-specific requirements conservatively', () => {
+  const programme = tpgService.getProgramme('HKU-TPG-031');
+  const courses = programme.courseGroups.flatMap((group) => group.courses || []);
+  const tracks = Object.fromEntries(tpgService.listTracks(programme).map((track) => [track.name, track]));
+
+  assert.equal(programme.creditsRequired, 60);
+  assert.equal(programme.academicYear, '2025-26 and thereafter');
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(programme.trackSelectionOptional, false);
+  assert.equal(tpgService.listTracks(programme).length, 19);
+  assert.equal(tpgService.getStatus(programme).isComplete, true);
+  assert.equal(tpgService.getStatus(programme).courseCount, 134);
+  assert.equal(courses.length, 134);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 134);
+
+  const generalistGroups = tpgService.resolveCourseGroups(programme, tracks.Generalist.id);
+  assert.equal(generalistGroups.some((group) => group.id === 'specialist-course-requirement'), false);
+  assert.equal(generalistGroups.find((group) => group.id === 'generalist-elective-course-requirement').creditsRequired, 42);
+
+  const giftedGroups = tpgService.resolveCourseGroups(programme, tracks['Gifted Education and Talent Development'].id);
+  assert.equal(giftedGroups.find((group) => group.id === 'specialist-course-requirement').creditsRequired, 30);
+  assert.equal(giftedGroups.find((group) => group.id === 'elective-course-requirement').creditsRequired, 12);
+
+  const chineseInternationalId = tracks['Teaching Chinese Language and Literature in International Education'].id;
+  const chineseInternationalGroups = tpgService.resolveCourseGroups(programme, chineseInternationalId);
+  assert.equal(chineseInternationalGroups.some((group) => group.id === 'elective-course-requirement'), false);
+  assert.equal(chineseInternationalGroups.find((group) => group.id === 'specialist-course-requirement').creditsRequired, 42);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'MEDD8008', chineseInternationalId), null);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'MEDD8009', chineseInternationalId).courseKind, 'portfolio');
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'MEDD6381', tracks['Teaching of Mathematics in an International Context'].id).requiredForTrackIds.length, 2);
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'MEDD8815').subjectGroups.includes('Advanced Research Methods'), true);
+  assert.match(programme.courseSourceUrl, /pgdr2025-26\/Education\/MEd\.pdf$/);
+});
+
 test('PolyU Hospitality and Tourism Management filters six official Award Paths conservatively', () => {
   const programme = tpgService.getProgramme('POLYU-TPG-102');
   const tracks = Object.fromEntries(tpgService.listTracks(programme).map((track) => [track.code, track]));
@@ -6747,7 +6926,7 @@ test('TPG programmes can be filtered by course availability', () => {
   const withCourses = tpgService.filterProgrammesByAvailability(hkuProgrammes, 'courses');
   const pending = tpgService.filterProgrammesByAvailability(hkuProgrammes, 'pending');
 
-  assert.equal(withCourses.length, 39);
+  assert.equal(withCourses.length, 45);
   assert.equal(withCourses.every(tpgService.hasCourseGroups), true);
   assert.equal(pending.length, hkuProgrammes.length - withCourses.length);
   assert.equal(pending.some(tpgService.hasCourseGroups), false);

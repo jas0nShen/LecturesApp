@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKU",
+  "academicYear": "2025-26 and thereafter",
+  "verifiedAt": "2026-07-16",
+  "programmes": [
+    {
+      "programmeId": "HKU-TPG-030",
+      "status": "verified",
+      "creditsRequired": 72,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MA(TESOL).pdf",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official 2025-26 Regulations and Syllabuses publish the complete 72-credit curriculum: six 6-credit Core Courses, the 12-credit MAES7200 Capstone Project and four 6-credit Elective Courses. MAES7001 and MAES7008 are mutually exclusive alternatives for the same Core requirement, and MAES7008 depends on an overseas partner and may not be offered every year. Elective offerings also vary annually, so the complete course pool is verified while the one-of Core choice and annual availability require manual audit review.",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 36,
+          "coursesRequired": 6,
+          "ruleText": "Complete MAES7002, MAES7003, MAES7004, MAES7005 and MAES7006, plus exactly one of MAES7001 or MAES7008, for 36 credits. MAES7001 and MAES7008 are mutually exclusive; MAES7008 is subject to an overseas partner and may not be offered every year.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MA(TESOL).pdf",
+          "courses": [
+            {
+              "code": "MAES7001",
+              "name": "Methodological Innovations in TESOL",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAES7008",
+              "name": "Methodological Innovations in TESOL (COIL)",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAES7002",
+              "name": "Grammar and Pedagogy",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAES7003",
+              "name": "Second Language Acquisition",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAES7004",
+              "name": "Sociolinguistics and TESOL",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAES7005",
+              "name": "Teaching Spoken Communication for English as a Global Language",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAES7006",
+              "name": "Methods of Research and Enquiry in TESOL",
+              "credits": 6,
+              "appliesToTrackIds": []
+            }
+          ]
+        },
+        {
+          "id": "capstone-project",
+          "name": "Capstone Project",
+          "type": "project",
+          "creditsRequired": 12,
+          "coursesRequired": 1,
+          "ruleText": "Complete MAES7200 Project by Independent Study for 12 credits and submit the capstone project by the end of the summer semester.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MA(TESOL).pdf",
+          "courses": [
+            {
+              "code": "MAES7200",
+              "name": "Project by Independent Study",
+              "credits": 12,
+              "appliesToTrackIds": [],
+              "courseKind": "project"
+            }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 24,
+          "coursesRequired": 4,
+          "ruleText": "Complete four 6-credit Elective Courses, normally two in each of the first and second semesters. Not all electives are offered annually.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/pgdr2025-26/Education/MA(TESOL).pdf",
+          "courses": [
+            {
+              "code": "MAES7100",
+              "name": "Literature in Language Teaching and Learning",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAES7101",
+              "name": "Critical Discourse Studies",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAES7102",
+              "name": "Teaching Reading in English as an International Language",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAES7103",
+              "name": "Second Language Writing Instruction in Global Contexts",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAES7105",
+              "name": "Technology and English Teaching and Learning",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAES7106",
+              "name": "Testing and Assessment in TESOL",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAES7107",
+              "name": "Autonomy and Language Learning",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAES7108",
+              "name": "Corpora for Language Learning and Teaching",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAES7109",
+              "name": "Intercultural Communication",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAES7110",
+              "name": "Vocabulary Teaching and Learning",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAES7111",
+              "name": "English Language Teaching: Principles into Practice",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAES7112",
+              "name": "Teaching Listening for English as a Global Language",
+              "credits": 6,
+              "appliesToTrackIds": []
+            },
+            {
+              "code": "MAES7113",
+              "name": "Teaching Multimodality",
+              "credits": 6,
+              "appliesToTrackIds": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

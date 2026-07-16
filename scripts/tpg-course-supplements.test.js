@@ -22,6 +22,14 @@ const { buildSupplement: buildHkuBuddhistCounsellingSupplement } = require('./bu
 const { buildSupplement: buildHkuBuddhistStudiesSupplement } = require('./build-hku-buddhist-studies-supplement');
 const { buildSupplement: buildHkuCreativeWritingMfaSupplement } = require('./build-hku-creative-writing-mfa-supplement');
 const { buildSupplement: buildHkuEndodonticsSupplement } = require('./build-hku-endodontics-supplement');
+const { buildSupplement: buildHkuOrthodonticsSupplement } = require('./build-hku-orthodontics-supplement');
+const { buildSupplement: buildHkuPaediatricDentistrySupplement } = require('./build-hku-paediatric-dentistry-supplement');
+const { buildSupplement: buildHkuPeriodontologySupplement } = require('./build-hku-periodontology-supplement');
+const { buildSupplement: buildHkuProsthodonticsSourceStatusSupplement } = require('./build-hku-prosthodontics-source-status-supplement');
+const { buildSupplement: buildHkuCommunityDentistrySourceStatusSupplement } = require('./build-hku-community-dentistry-source-status-supplement');
+const { buildSupplement: buildHkuDentalMaterialsScienceSupplement } = require('./build-hku-dental-materials-science-supplement');
+const { buildSupplement: buildHkuMatesolSupplement } = require('./build-hku-matesol-supplement');
+const { buildSupplement: buildHkuMedSupplement, TRACKS: HKU_MED_TRACKS } = require('./build-hku-med-supplement');
 const { TRACK_ID: HKBU_COMMUNICATION_TRACK_ID, buildSupplement: buildHkbuCommunicationSupplement } = require('./build-hkbu-communication-supplement');
 const { TRACKS: HKBU_MAIJS_TRACKS, buildSupplement: buildHkbuInternationalJournalismSupplement } = require('./build-hkbu-international-journalism-supplement');
 const { buildSupplement: buildHkbuMediaManagementSupplement } = require('./build-hkbu-media-management-supplement');
@@ -1274,6 +1282,200 @@ test('HKU Endodontics preserves all five compulsory components and corrects the 
   assert.equal(research.courses.find((course) => course.code === 'DENT7114').courseKind, 'dissertation');
   assert.equal(capstone.courses.every((course) => course.courseKind === 'project'), true);
   assert.match(programme.statusNote, /corrects the 72-credit directory value/);
+});
+
+test('HKU Orthodontics preserves all compulsory components and corrects the directory subtotal', () => {
+  const supplement = buildHkuOrthodonticsSupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'hku-orthodontics-2023.json');
+  const programme = supplement.programmes[0];
+  const [facultyCore, discipline, clinical, research] = programme.courseGroups;
+
+  assert.equal(programme.programmeId, 'HKU-TPG-024');
+  assert.equal(supplement.academicYear, '2023-24 and thereafter');
+  assert.equal(programme.creditsRequired, 270);
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.deepEqual(programme.courseGroups.map((group) => group.creditsRequired), [15, 72, 153, 30]);
+  assert.deepEqual(programme.courseGroups.map((group) => group.coursesRequired), [6, 3, 4, 2]);
+  assert.deepEqual(programme.courseGroups.map((group) => group.courses.length), [6, 3, 4, 2]);
+  assert.equal(new Set(programme.courseGroups.flatMap((group) => group.courses).map((course) => course.code)).size, 15);
+  assert.equal(facultyCore.courses.find((course) => course.code === 'DENT7030').credits, 0);
+  assert.equal(discipline.courses.reduce((sum, course) => sum + course.credits, 0), 72);
+  assert.equal(clinical.courses.reduce((sum, course) => sum + course.credits, 0), 153);
+  assert.equal(research.courses.reduce((sum, course) => sum + course.credits, 0), 30);
+  assert.equal(clinical.courses.find((course) => course.code === 'DENT7250').courseKind, 'project');
+  assert.equal(research.courses.every((course) => course.courseKind === 'research_project'), true);
+  assert.match(programme.statusNote, /corrects the 72-credit directory value/);
+});
+
+test('HKU Paediatric Dentistry preserves all compulsory components and corrects the directory subtotal', () => {
+  const supplement = buildHkuPaediatricDentistrySupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'hku-paediatric-dentistry-2023.json');
+  const programme = supplement.programmes[0];
+  const [facultyCore, discipline, clinical, research] = programme.courseGroups;
+
+  assert.equal(programme.programmeId, 'HKU-TPG-025');
+  assert.equal(supplement.academicYear, '2023-24 and thereafter');
+  assert.equal(programme.creditsRequired, 270);
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.deepEqual(programme.courseGroups.map((group) => group.creditsRequired), [21, 66, 129, 54]);
+  assert.deepEqual(programme.courseGroups.map((group) => group.coursesRequired), [8, 1, 2, 1]);
+  assert.deepEqual(programme.courseGroups.map((group) => group.courses.length), [8, 1, 2, 1]);
+  assert.equal(new Set(programme.courseGroups.flatMap((group) => group.courses).map((course) => course.code)).size, 12);
+  assert.equal(facultyCore.courses.find((course) => course.code === 'DENT7030').credits, 0);
+  assert.equal(discipline.courses.reduce((sum, course) => sum + course.credits, 0), 66);
+  assert.equal(clinical.courses.reduce((sum, course) => sum + course.credits, 0), 129);
+  assert.equal(research.courses.reduce((sum, course) => sum + course.credits, 0), 54);
+  assert.equal(clinical.courses.find((course) => course.code === 'DENT7300').courseKind, 'project');
+  assert.equal(research.courses[0].courseKind, 'research_project');
+  assert.match(programme.statusNote, /corrects the 66-credit directory value/);
+});
+
+test('HKU Periodontology preserves all five compulsory components and corrects the directory subtotal', () => {
+  const supplement = buildHkuPeriodontologySupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'hku-periodontology-2023.json');
+  const programme = supplement.programmes[0];
+  const [facultyCore, discipline, clinical, research, capstone] = programme.courseGroups;
+
+  assert.equal(programme.programmeId, 'HKU-TPG-026');
+  assert.equal(supplement.academicYear, '2023-24 and thereafter');
+  assert.equal(programme.creditsRequired, 270);
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.deepEqual(programme.courseGroups.map((group) => group.creditsRequired), [18, 66, 126, 54, 6]);
+  assert.deepEqual(programme.courseGroups.map((group) => group.coursesRequired), [7, 13, 1, 1, 1]);
+  assert.deepEqual(programme.courseGroups.map((group) => group.courses.length), [7, 13, 1, 1, 1]);
+  assert.equal(new Set(programme.courseGroups.flatMap((group) => group.courses).map((course) => course.code)).size, 23);
+  assert.equal(facultyCore.courses.find((course) => course.code === 'DENT7030').credits, 0);
+  assert.equal(discipline.courses.reduce((sum, course) => sum + course.credits, 0), 66);
+  assert.equal(clinical.courses.reduce((sum, course) => sum + course.credits, 0), 126);
+  assert.equal(research.courses.reduce((sum, course) => sum + course.credits, 0), 54);
+  assert.equal(capstone.courses.reduce((sum, course) => sum + course.credits, 0), 6);
+  assert.equal(research.courses[0].courseKind, 'research_project');
+  assert.equal(capstone.courses[0].courseKind, 'project');
+  assert.match(programme.statusNote, /no longer carries the older Subject to official approval notice/);
+  assert.match(programme.statusNote, /corrects the 66-credit directory value/);
+});
+
+test('HKU Prosthodontics remains blocked while current official approval evidence is unavailable', () => {
+  const supplement = buildHkuProsthodonticsSourceStatusSupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'hku-prosthodontics-source-status-2026.json');
+  const programme = supplement.programmes[0];
+
+  assert.equal(programme.programmeId, 'HKU-TPG-027');
+  assert.equal(supplement.academicYear, '2023-24 and thereafter');
+  assert.equal(programme.status, 'blocked');
+  assert.equal(programme.creditsRequired, 270);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.courseGroups, undefined);
+  assert.match(programme.sourceUrl, /tpg-mds-prosthodontics\.php$/);
+  assert.match(programme.statusNote, /Subject to official approval/);
+  assert.match(programme.statusNote, /R350/);
+  assert.match(programme.statusNote, /120-credit directory value matches only the Clinical subtotal/);
+  assert.match(programme.statusNote, /no course groups are exposed/);
+});
+
+test('HKU Community Dentistry remains blocked without its required Public Health course identities', () => {
+  const supplement = buildHkuCommunityDentistrySourceStatusSupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'hku-community-dentistry-source-status-2026.json');
+  const programme = supplement.programmes[0];
+
+  assert.equal(programme.programmeId, 'HKU-TPG-028');
+  assert.equal(supplement.academicYear, '2017-18 and thereafter');
+  assert.equal(programme.status, 'blocked');
+  assert.equal(programme.creditsRequired, 69);
+  assert.equal(programme.creditUnit, 'credits');
+  assert.equal(programme.courseGroups, undefined);
+  assert.match(programme.sourceUrl, /tpg-msc-community\.php$/);
+  assert.match(programme.statusNote, /five 3-credit courses assigned by the Programme Director/);
+  assert.match(programme.statusNote, /no course codes or complete course titles/);
+  assert.match(programme.statusNote, /R351/);
+  assert.match(programme.statusNote, /other 54 credits as an incomplete curriculum/);
+});
+
+test('HKU Dental Materials Science preserves the complete compulsory 72-credit curriculum', () => {
+  const supplement = buildHkuDentalMaterialsScienceSupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'hku-dental-materials-science-2017.json');
+  const programme = supplement.programmes[0];
+  const [facultyCore, discipline, research] = programme.courseGroups;
+
+  assert.equal(programme.programmeId, 'HKU-TPG-029');
+  assert.equal(supplement.academicYear, '2017-18 and thereafter');
+  assert.equal(programme.creditsRequired, 72);
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.deepEqual(programme.courseGroups.map((group) => group.creditsRequired), [9, 27, 36]);
+  assert.deepEqual(programme.courseGroups.map((group) => group.coursesRequired), [4, 5, 2]);
+  assert.deepEqual(programme.courseGroups.map((group) => group.courses.length), [4, 5, 2]);
+  assert.equal(new Set(programme.courseGroups.flatMap((group) => group.courses).map((course) => course.code)).size, 11);
+  assert.equal(facultyCore.courses.find((course) => course.code === 'DENT7030').credits, 0);
+  assert.equal(discipline.courses.reduce((sum, course) => sum + course.credits, 0), 27);
+  assert.equal(research.courses.reduce((sum, course) => sum + course.credits, 0), 36);
+  assert.equal(research.courses.find((course) => course.code === 'DENT7504').courseKind, 'research_project');
+  assert.equal(research.courses.find((course) => course.code === 'DENT7500').courseKind, 'dissertation');
+  assert.match(programme.sourceUrl, /pREF_CODE=R233/);
+  assert.match(programme.statusNote, /Sep 27, 2019/);
+});
+
+test('HKU MA(TESOL) preserves the complete 72-credit curriculum and its alternative Core course', () => {
+  const supplement = buildHkuMatesolSupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'hku-matesol-2025.json');
+  const programme = supplement.programmes[0];
+  const [core, capstone, electives] = programme.courseGroups;
+
+  assert.equal(programme.programmeId, 'HKU-TPG-030');
+  assert.equal(supplement.academicYear, '2025-26 and thereafter');
+  assert.equal(programme.creditsRequired, 72);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.deepEqual(programme.courseGroups.map((group) => group.creditsRequired), [36, 12, 24]);
+  assert.deepEqual(programme.courseGroups.map((group) => group.coursesRequired), [6, 1, 4]);
+  assert.deepEqual(programme.courseGroups.map((group) => group.courses.length), [7, 1, 13]);
+  assert.equal(new Set(programme.courseGroups.flatMap((group) => group.courses).map((course) => course.code)).size, 21);
+  assert.deepEqual(core.courses.slice(0, 2).map((course) => course.code), ['MAES7001', 'MAES7008']);
+  assert.equal(capstone.courses[0].code, 'MAES7200');
+  assert.equal(capstone.courses[0].courseKind, 'project');
+  assert.equal(electives.courses.every((course) => course.credits === 6), true);
+  assert.match(core.ruleText, /exactly one of MAES7001 or MAES7008/);
+  assert.match(programme.sourceUrl, /pgdr2025-26\/Education\/MA\(TESOL\)\.pdf$/);
+});
+
+test('HKU MEd preserves all 19 paths and the complete 2025-26 course pool', () => {
+  const supplement = buildHkuMedSupplement();
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'hku-med-2025.json');
+  const programme = supplement.programmes[0];
+  const [core, specialistRequirement, generalistElectives, specialistElectives, coursePool, capstone] = programme.courseGroups;
+
+  assert.equal(programme.programmeId, 'HKU-TPG-031');
+  assert.equal(supplement.academicYear, '2025-26 and thereafter');
+  assert.equal(programme.creditsRequired, 60);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(programme.trackSelectionOptional, false);
+  assert.equal(programme.tracks.length, 19);
+  assert.equal(core.courses[0].code, 'MEDD8001');
+  assert.equal(specialistRequirement.creditsRequiredByTrackIds[HKU_MED_TRACKS.GIFTED], 30);
+  assert.equal(specialistRequirement.creditsRequiredByTrackIds[HKU_MED_TRACKS.CHINESE_INTERNATIONAL], 42);
+  assert.equal(generalistElectives.appliesToTrackIds[0], HKU_MED_TRACKS.GENERALIST);
+  assert.equal(generalistElectives.creditsRequired, 42);
+  assert.equal(specialistElectives.creditsRequiredByTrackIds[HKU_MED_TRACKS.GUIDANCE], 12);
+  assert.equal(specialistElectives.appliesToTrackIds.includes(HKU_MED_TRACKS.CHINESE_INTERNATIONAL), false);
+  assert.equal(coursePool.courses.length, 131);
+  assert.equal(new Set(coursePool.courses.map((course) => course.code)).size, 131);
+  assert.equal(coursePool.courses.filter((course) => (course.subjectGroups || []).includes('General Elective')).length, 62);
+  assert.equal(coursePool.courses.filter((course) => (course.subjectGroups || []).includes('Advanced Research Methods')).length, 22);
+  assert.deepEqual(coursePool.courses.find((course) => course.code === 'MEDD6381').requiredForTrackIds.sort(), [
+    HKU_MED_TRACKS.MATHEMATICS_INTERNATIONAL,
+    HKU_MED_TRACKS.SCIENCE_INTERNATIONAL
+  ].sort());
+  assert.equal(capstone.courses.length, 2);
+  assert.deepEqual(capstone.courses.find((course) => course.code === 'MEDD8008').excludesTrackIds, [HKU_MED_TRACKS.CHINESE_INTERNATIONAL]);
+  assert.deepEqual(coursePool.courses.find((course) => course.code === 'MEDD8602').prerequisiteCodes, ['MEDD6248', 'MEDD8678']);
+  assert.deepEqual(coursePool.courses.find((course) => course.code === 'MEDD8874').impermissibleWithCodes, ['MEDD6128', 'MEDD6131', 'MEDD8819', 'MEDD8820']);
+  assert.deepEqual(coursePool.courses.find((course) => course.code === 'MEDD8889').excludesTrackIds, [HKU_MED_TRACKS.ADMINISTRATION]);
 });
 
 test('PolyU Hospitality and Tourism Management preserves six award paths and both project components', () => {

@@ -65,8 +65,8 @@ test('feedback template can target an unsaved programme detail', () => {
 
   assert(template.includes('学校：香港大学'));
   assert(template.includes('Programme：Master of Dental Surgery in Orthodontics and Dentofacial Orthopaedics (MDS(Orthodontics&DentofacialOrthopaedics;))'));
-  assert(template.includes('当前资料状态：结构资料待拆分 · 课程清单待开放'));
-  assert(template.includes('- 需要补充的课程代码 / 课程名：这个 Programme 课程清单待开放，请补充官方课程表'));
+  assert(template.includes('当前资料状态：课程结构已开放 · 15 门课程'));
+  assert(template.includes('- 需要补充的课程代码 / 课程名：待填写'));
   assert(template.includes('HKU_Master_Course_Guide.pdf'));
 });
 

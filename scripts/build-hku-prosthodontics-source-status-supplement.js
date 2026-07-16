@@ -1,0 +1,37 @@
+const fs = require('node:fs');
+const path = require('node:path');
+
+const ROOT = path.join(__dirname, '..');
+const OUTPUT = path.join(ROOT, 'data', 'tpg-course-supplements', 'hku-prosthodontics-source-status-2026.json');
+const PROGRAMME_SOURCE = 'https://facdent.hku.hk/learning/tpg/tpg-mds-prosthodontics.php';
+
+function buildSupplement() {
+  return {
+    schemaVersion: 1,
+    schoolCode: 'HKU',
+    academicYear: '2023-24 and thereafter',
+    verifiedAt: '2026-07-16',
+    programmes: [{
+      programmeId: 'HKU-TPG-027',
+      status: 'blocked',
+      creditsRequired: 270,
+      creditUnit: 'credits',
+      sourceUrl: PROGRAMME_SOURCE,
+      statusNote: 'The current HKU Faculty of Dentistry Programme page for 2026 admissions links a detailed Regulations and Syllabuses PDF that applies to candidates admitted in 2023-24 and thereafter and publishes a 270-credit structure: 15 Faculty Core, 75 Discipline Specific, 120 Clinical, 54 Research and 6 Capstone credits. However, the current PDF document title metadata still states Subject to official approval, while the current R350 admissions Regulations and Syllabuses endpoint states that the document is not available. The official approval status and current R350 curriculum therefore cannot be confirmed. The 120-credit directory value matches only the Clinical subtotal; it is corrected to the published 270-credit total, but no course groups are exposed from the approval-pending document.'
+    }]
+  };
+}
+
+function main() {
+  const supplement = buildSupplement();
+  fs.writeFileSync(OUTPUT, `${JSON.stringify(supplement, null, 2)}\n`);
+  console.log(JSON.stringify({
+    ok: true,
+    output: path.relative(ROOT, OUTPUT),
+    programmes: 1,
+    blocked: 1
+  }));
+}
+
+if (require.main === module) main();
+module.exports = { buildSupplement };
