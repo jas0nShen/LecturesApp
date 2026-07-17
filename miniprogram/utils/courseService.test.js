@@ -41,9 +41,16 @@ test('Study Plan capability supports verified TPG structures and preserves the H
     reason: '',
     settingsUrl: '/pages/onboarding/onboarding?mode=undergraduate&profileType=undergraduate&universityCode=HKU&programmeId=1&majorId=1'
   });
-  assert.equal(service.getPlanningCapability({
+  const ugCatalogue = service.getPlanningCapability({
     profileType: 'undergraduate', universityCode: 'HKU', programmeId: 'HKU-UG-6004-1', majorId: 'HKU-UG-6004-1-M1'
-  }).supported, false);
+  });
+  assert.equal(ugCatalogue.supported, true);
+  assert.equal(ugCatalogue.mode, 'ug-course-plan');
+  const ugIndexOnly = service.getPlanningCapability({
+    profileType: 'undergraduate', universityCode: 'HKU', programmeId: 'HKU-UG-6066-20', majorId: 'HKU-UG-6066-20-M1'
+  });
+  assert.equal(ugIndexOnly.supported, false);
+  assert.match(ugIndexOnly.reason, /课程清单待开放/);
 
   const supported = service.getPlanningCapability({ profileType: 'tpg', programmeId: 'HKU-TPG-024' });
   assert.equal(supported.supported, true);
@@ -766,6 +773,7 @@ test('user data summary counts local records and clear removes every user key', 
   service.toggleTpgCourseFavorite('POLYU-TPG-090', 'COMP5521');
   service.toggleOfferingCompleted('COMP1117');
   service.toggleTpgCourseCompleted('POLYU-TPG-090', 'COMP5521');
+  service.toggleUgPlannedCourse('HKU-UG-6004-1', 'HKU-UG-6004-1-M1', 'HKU-UG-6004-1-M1-SUP-ARCH1079-3');
   service.saveStudyPlanItem('COMP1117', 1, '1');
   service.saveCourseNote('COMP1117', 'Remember this.');
   service.recordRecentlyViewed('COMP1117');
@@ -776,7 +784,7 @@ test('user data summary counts local records and clear removes every user key', 
     hasProfile: true,
     favoriteCount: 2,
     completedCount: 2,
-    studyPlanCount: 1,
+    studyPlanCount: 2,
     noteCount: 1,
     recentCount: 1,
     searchCount: 2
@@ -802,6 +810,7 @@ test('all declared local user keys are backup and restore aware', () => {
     'completedCourseIds',
     'completedOfferingCodes',
     'completedTpgCourseKeys',
+    'plannedUgCourseKeys',
     'plannedTpgCourseKeys',
     'studyPlanItems',
     'recentlyViewedCourseCodes',
@@ -821,6 +830,7 @@ test('all declared local user keys are backup and restore aware', () => {
       completedCourseIds: [2],
       completedOfferingCodes: ['COMP2113'],
       completedTpgCourseKeys: ['POLYU-TPG-090:COMP5521'],
+      plannedUgCourseKeys: ['HKU-UG-6004-1:HKU-UG-6004-1-M1:HKU-UG-6004-1-M1-SUP-ARCH1079-3'],
       plannedTpgCourseKeys: ['POLYU-TPG-090:COMP5521'],
       studyPlanItems: [{ courseCode: 'COMP3278', year: 2, term: '1' }],
       recentlyViewedCourseCodes: ['COMP4801'],
@@ -836,6 +846,28 @@ test('all declared local user keys are backup and restore aware', () => {
     () => service.importUserData({ app: 'lectures-app', version: 1, data: { favoriteOfferingCodes: 'COMP1117' } }),
     /Invalid favoriteOfferingCodes/
   );
+  assert.throws(
+    () => service.importUserData({ app: 'lectures-app', version: 1, data: { plannedUgCourseKeys: ['HKU-UG-6004-1::COURSE'] } }),
+    /Invalid plannedUgCourseKeys/
+  );
+});
+
+test('UG planned courses use Programme, Major and course identity and keep other Majors isolated', () => {
+  const programmeId = 'POLYU-UG-JS3868-14';
+  const majorId = 'POLYU-UG-JS3868-14-M1';
+  const otherMajorId = 'POLYU-UG-JS3868-14-M2';
+  const courseId = 'POLYU-UG-JS3868-14-M1-C1';
+
+  service.toggleUgPlannedCourse(programmeId, majorId, courseId);
+  service.toggleUgPlannedCourse(programmeId, majorId, courseId);
+  assert.deepEqual(service.getUgPlannedCourseKeys(), []);
+
+  service.toggleUgPlannedCourse(programmeId, majorId, courseId);
+  service.toggleUgPlannedCourse(programmeId, otherMajorId, courseId);
+  assert.equal(service.isUgCoursePlanned(programmeId, majorId, courseId), true);
+  assert.equal(service.isUgCoursePlanned(programmeId, otherMajorId, courseId), true);
+  service.removeUgPlannedCourse(programmeId, majorId, courseId);
+  assert.deepEqual(service.getUgPlannedCourseKeys(), [`${programmeId}:${otherMajorId}:${courseId}`]);
 });
 
 test('backup import accepts legacy TPG profiles and validates optional Track ownership', () => {

@@ -143,6 +143,7 @@
         </view>
         <view class="course-title">{{item.titleEn}}</view>
         <view class="subtitle">Year {{item.recommendedYear || '-'}} · {{ugProfile.major.nameEn}}</view>
+        <view wx:if="{{item.planned}}" class="planned-mark">◆ 已计划</view>
         <view wx:if="{{item.sourceUrl}}" class="ug-source-link" data-url="{{item.sourceUrl}}" catchtap="copyUgCourseSource">复制课程来源</view>
       </view>
 
@@ -163,6 +164,15 @@
           <view class="empty-action primary" bindtap="clearKeyword">清除关键词</view>
         </view>
       </view>
+    </view>
+
+    <view wx:if="{{ugPlanningSupported}}" class="tpg-plan-entry" bindtap="goUgStudyPlan">
+      <view>
+        <view class="tpg-plan-kicker">UG COURSE PLAN</view>
+        <view class="tpg-plan-title">我的本科课程计划</view>
+        <view class="tpg-plan-copy">按当前 Programme 和 Major 查看已计划课程</view>
+      </view>
+      <view class="tpg-plan-arrow">›</view>
     </view>
 
     <view class="tpg-actions">

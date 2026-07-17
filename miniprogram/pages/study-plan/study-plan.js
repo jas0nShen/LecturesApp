@@ -1,5 +1,6 @@
 const service = require('../../utils/courseService');
 const tpgService = require('../../utils/tpgService');
+const ugService = require('../../utils/ugService');
 
 function emptyReview() {
   return {
@@ -37,6 +38,24 @@ function formatTpgPlanText(plan) {
   return lines.join('\n');
 }
 
+function formatUgPlanText(plan) {
+  const lines = [
+    `${plan.universityCode} · ${plan.programmeName}`,
+    `Major: ${plan.majorName}`,
+    `Curriculum year: ${plan.curriculumYear || '待确认'}`,
+    `Planned courses: ${plan.courseCount}`,
+    `Known credits: ${plan.knownCredits || 0}`
+  ];
+  plan.groups.forEach((group) => {
+    lines.push('', `${group.name} · ${group.courseCount} 门`);
+    group.courses.forEach((course) => {
+      lines.push(`- ${course.courseCode} ${course.titleEn} · ${course.semester || '学期待确认'}${course.creditLabel ? ` · ${course.creditLabel}` : ''}`);
+    });
+  });
+  lines.push('', '仅供课程规划；不计算毕业百分比、学分差额或毕业资格。正式安排以学校课程系统和培养方案为准。');
+  return lines.join('\n');
+}
+
 Page({
   data: {
     supported: false,
@@ -52,6 +71,18 @@ Page({
       totalCredits: 0,
       completedCount: 0,
       officialCredits: 0,
+      groups: []
+    },
+    ugPlan: {
+      universityCode: '',
+      programmeId: '',
+      programmeName: '',
+      majorId: '',
+      majorName: '',
+      curriculumYear: '',
+      courseCount: 0,
+      knownCredits: 0,
+      knownCreditsDisplay: '-',
       groups: []
     },
     groups: [],
@@ -70,7 +101,90 @@ Page({
       await this.loadTpgPlan(profile);
       return;
     }
+    const capability = service.getPlanningCapability(profile);
+    if (profile && profile.profileType === 'undergraduate' && capability.mode === 'ug-course-plan') {
+      if (!capability.supported) {
+        this.setData({ supported: false, mode: 'ug-course-plan', loading: false, loadError: false, unsupportedMessage: capability.reason });
+        return;
+      }
+      await this.loadUgPlan(profile);
+      return;
+    }
     this.loadUndergraduatePlan(profile);
+  },
+
+  async loadUgPlan(profile) {
+    this.setData({ loading: true, loadError: false, mode: 'ug-course-plan' });
+    const programme = ugService.getProgramme(profile.programmeId);
+    const universityCode = profile.universityCode || (programme && programme.universityCode) || '';
+    const app = typeof getApp === 'function' ? getApp() : {};
+    try {
+      if (universityCode && app.ensureUniversityLoaded) await app.ensureUniversityLoaded(universityCode);
+    } catch (error) {
+      this.setData({ supported: false, loading: false, loadError: true, unsupportedMessage: '本科课程计划数据加载失败，请重试。' });
+      return;
+    }
+    const capability = service.getPlanningCapability(profile);
+    const ugProfile = ugService.getMajorProfile(profile.programmeId, profile.majorId, profile.curriculumYear);
+    if (!capability.supported || !ugProfile) {
+      this.setData({ supported: false, loading: false, loadError: false, unsupportedMessage: capability.reason || '本科 Programme 或 Major 资料不存在。' });
+      return;
+    }
+    const courses = ugService.listMajorCourses(profile.programmeId, profile.majorId)
+      .filter((course) => service.isUgCoursePlanned(profile.programmeId, profile.majorId, course.id))
+      .map((course) => {
+        const hasKnownCredits = course.credits !== undefined && course.credits !== null && Number.isFinite(Number(course.credits));
+        return {
+          ...course,
+          credits: hasKnownCredits ? Number(course.credits) : 0,
+          hasKnownCredits,
+          creditLabel: hasKnownCredits ? `${Number(course.credits)} credits` : '',
+          semester: course.semester || '未指定学期'
+        };
+      });
+    const years = [...new Set(courses.map((course) => {
+      const year = Number(course.recommendedYear);
+      return Number.isInteger(year) && year > 0 ? year : 0;
+    }))].sort((left, right) => {
+      if (left === 0) return 1;
+      if (right === 0) return -1;
+      return left - right;
+    });
+    const groups = years.map((year) => {
+      const groupCourses = courses.filter((course) => {
+        const recommendedYear = Number(course.recommendedYear);
+        return year === 0
+          ? !Number.isInteger(recommendedYear) || recommendedYear <= 0
+          : recommendedYear === year;
+      });
+      return {
+        id: year ? `year-${year}` : 'year-unspecified',
+        name: year ? `推荐 Year ${year}` : '未指定年级',
+        courseCount: groupCourses.length,
+        knownCredits: groupCourses.reduce((sum, course) => sum + course.credits, 0),
+        courses: groupCourses
+      };
+    });
+    const knownCredits = courses.reduce((sum, course) => sum + course.credits, 0);
+    this.setData({
+      supported: true,
+      mode: 'ug-course-plan',
+      loading: false,
+      loadError: false,
+      unsupportedMessage: '',
+      ugPlan: {
+        universityCode: ugProfile.university && ugProfile.university.code || universityCode,
+        programmeId: ugProfile.programme.id,
+        programmeName: ugProfile.programme.nameEn || ugProfile.programme.nameZh || '',
+        majorId: ugProfile.major.id,
+        majorName: ugProfile.major.nameEn || ugProfile.major.nameZh || '',
+        curriculumYear: ugProfile.curriculumYear || '',
+        courseCount: courses.length,
+        knownCredits,
+        knownCreditsDisplay: courses.some((course) => course.hasKnownCredits) ? knownCredits : '-',
+        groups
+      }
+    });
   },
 
   loadUndergraduatePlan(profile) {
@@ -204,6 +318,19 @@ Page({
     });
   },
 
+  retryPlanLoad() {
+    if (this.data.mode === 'tpg-course-plan') return this.retryTpgLoad();
+    const profile = service.getProfile();
+    const programme = profile && ugService.getProgramme(profile.programmeId);
+    const universityCode = profile && (profile.universityCode || (programme && programme.universityCode));
+    const app = typeof getApp === 'function' ? getApp() : {};
+    if (!profile || !universityCode || !app.retryUniversityLoad) return this.onShow();
+    this.setData({ loading: true, loadError: false });
+    return app.retryUniversityLoad(universityCode).then(() => this.loadUgPlan(profile)).catch(() => {
+      this.setData({ supported: false, loading: false, loadError: true, unsupportedMessage: '本科课程计划数据加载失败，请重试。' });
+    });
+  },
+
   goCourses() {
     wx.switchTab({ url: '/pages/courses/courses' });
   },
@@ -236,6 +363,35 @@ Page({
         wx.showToast({ title: '选课计划已复制' });
       }
     });
+  },
+
+  copyUgPlan() {
+    if (!this.data.ugPlan.courseCount) {
+      wx.showToast({ title: '计划中还没有课程', icon: 'none' });
+      return;
+    }
+    wx.setClipboardData({
+      data: formatUgPlanText(this.data.ugPlan),
+      success() {
+        wx.showToast({ title: '本科课程计划已复制' });
+      }
+    });
+  },
+
+  removeUgCourse(event) {
+    service.removeUgPlannedCourse(this.data.ugPlan.programmeId, this.data.ugPlan.majorId, event.currentTarget.dataset.id);
+    wx.showToast({ title: '已移出计划' });
+    return this.onShow();
+  },
+
+  openUgDetail(event) {
+    wx.navigateTo({
+      url: `/pages/course-detail/course-detail?ugId=${encodeURIComponent(event.currentTarget.dataset.id)}&universityCode=${encodeURIComponent(this.data.ugPlan.universityCode)}`
+    });
+  },
+
+  goUgCourses() {
+    wx.switchTab({ url: '/pages/courses/courses' });
   },
 
   removeTpgCourse(event) {

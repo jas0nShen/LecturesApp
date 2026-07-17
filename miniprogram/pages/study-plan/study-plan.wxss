@@ -50,6 +50,7 @@
 .tpg-plan-course .plan-row { align-items: flex-start; }
 .detail-mark { color: #0b6b55; flex: none; font-size: 19rpx; font-weight: 800; margin-top: 3rpx; }
 .tpg-plan-actions { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.ug-plan-actions { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .tpg-empty {
   background: #f7faf8;
   border: 1rpx dashed #bdd0c7;

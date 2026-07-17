@@ -8,7 +8,7 @@
     <view class="plan-kicker">PLANNING STATUS</view>
     <view class="title">Study Plan 暂不可用</view>
     <view class="subtitle">{{unsupportedMessage}}</view>
-    <view wx:if="{{loadError}}" class="plan-export retry-export" bindtap="retryTpgLoad"><view><view class="export-title">重试加载</view><view class="export-copy">重新加载当前 Programme 课程分包</view></view><view class="export-mark">RETRY →</view></view>
+    <view wx:if="{{loadError}}" class="plan-export retry-export" bindtap="retryPlanLoad"><view><view class="export-title">重试加载</view><view class="export-copy">重新加载当前课程分包</view></view><view class="export-mark">RETRY →</view></view>
     <view class="plan-export" bindtap="goCourses"><view><view class="export-title">去查看课程</view><view class="export-copy">浏览已公开的课程资料</view></view><view class="export-mark">→</view></view>
     <view class="plan-export status-export" bindtap="goSettings"><view><view class="export-title">修改学校与专业</view><view class="export-copy">查看或更新你的课程范围</view></view><view class="export-mark">SET →</view></view>
   </view>
@@ -64,6 +64,57 @@
     </view>
     <view class="section add-course" bindtap="goTpgCourses">＋ 从已核验课程添加</view>
     <view class="tpg-disclaimer">本页只整理本机选课清单，不生成毕业百分比、学分差额或通过判断。</view>
+  </block>
+  <block wx:elif="{{mode === 'ug-course-plan'}}">
+    <view class="section">
+      <view class="plan-kicker">UG COURSE PLAN</view>
+      <view class="title">我的本科课程计划</view>
+      <view class="subtitle">{{ugPlan.programmeName}}</view>
+      <view class="tpg-track">当前 Major · {{ugPlan.majorName}}</view>
+    </view>
+
+    <view class="summary-strip tpg-summary-strip">
+      <view class="summary-item"><view class="summary-value">{{ugPlan.courseCount}}</view><view class="summary-label">计划课程</view></view>
+      <view class="summary-item"><view class="summary-value">{{ugPlan.knownCreditsDisplay}}</view><view class="summary-label">已知学分</view></view>
+      <view class="summary-item"><view class="summary-value">{{ugPlan.groups.length}}</view><view class="summary-label">年级分组</view></view>
+      <view class="summary-item"><view class="summary-value">{{ugPlan.curriculumYear || '-'}}</view><view class="summary-label">课程年份</view></view>
+    </view>
+
+    <view class="plan-export {{ugPlan.courseCount ? '' : 'disabled'}}" bindtap="copyUgPlan">
+      <view><view class="export-title">复制本科课程计划</view><view class="export-copy">包含 Programme、Major、推荐年级、学期与已知学分</view></view>
+      <view class="export-mark">COPY ↗</view>
+    </view>
+
+    <view wx:if="{{ugPlan.courseCount}}" class="tpg-groups">
+      <view wx:for="{{ugPlan.groups}}" wx:key="id" class="tpg-group">
+        <view class="tpg-group-head">
+          <view class="tpg-group-name">{{item.name}}</view>
+          <view class="tpg-group-meta">{{item.courseCount}} 门<text wx:if="{{item.knownCredits}}"> · {{item.knownCredits}} credits</text></view>
+        </view>
+        <view wx:for="{{item.courses}}" wx:for-item="course" wx:key="id" class="plan-course tpg-plan-course">
+          <view class="plan-row" data-id="{{course.id}}" bindtap="openUgDetail">
+            <view>
+              <view class="course-code">{{course.courseCode}}</view>
+              <view class="course-title">{{course.titleEn}}</view>
+              <view class="course-credits">{{course.semester}}<text wx:if="{{course.creditLabel}}"> · {{course.creditLabel}}</text></view>
+              <view class="course-tags"><text class="course-tag">{{ugPlan.majorName}}</text></view>
+            </view>
+            <view class="detail-mark">详情 →</view>
+          </view>
+          <view class="plan-actions ug-plan-actions">
+            <view class="plan-action" data-id="{{course.id}}" catchtap="openUgDetail">打开详情</view>
+            <view class="plan-action danger" data-id="{{course.id}}" catchtap="removeUgCourse">移出计划</view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view wx:else class="tpg-empty">
+      <view class="tpg-empty-title">当前 Major 还没有计划课程</view>
+      <view class="tpg-empty-copy">从本科课程详情加入计划；其他 Major 的旧记录会保留，但不计入当前计划。</view>
+    </view>
+    <view class="section add-course" bindtap="goUgCourses">＋ 从本科课程清单添加</view>
+    <view class="tpg-disclaimer">本页只整理本机课程清单，不计算毕业百分比、学分差额或毕业资格。</view>
   </block>
   <block wx:else>
   <view class="section">

@@ -9,11 +9,15 @@ Page({
     favorite: false,
     completed: false,
     planned: false,
+    ugPlanningSupported: false,
+    ugPlanningReason: '',
     tpgPlanningSupported: false,
     tpgPlanningReason: '',
     dataSource: 'loading',
     isUgCourse: false,
     isTpgCourse: false,
+    ugProgrammeId: '',
+    ugMajorId: '',
     tpgProgrammeId: '',
     loadError: false,
     routeOptions: null
@@ -97,15 +101,49 @@ Page({
         wx.showToast({ title: '课程数据加载失败，请重试', icon: 'none' });
         return;
       }
-      const course = ugService.getCatalogueCourse(options.ugId, universityCode);
+      const item = ugService.getCatalogueCourse(options.ugId, universityCode);
+      const profile = service.getProfile();
+      const isCurrentMajor = Boolean(
+        item
+        && profile
+        && profile.profileType === 'undergraduate'
+        && String(profile.programmeId) === String(item.programmeId)
+        && String(profile.majorId) === String(item.majorId)
+      );
+      const planningCapability = service.getPlanningCapability(profile);
+      const ugPlanningSupported = Boolean(
+        item
+        && isCurrentMajor
+        && planningCapability.supported
+        && planningCapability.mode === 'ug-course-plan'
+      );
+      let ugPlanningReason = '';
+      if (!isCurrentMajor) ugPlanningReason = '请先将这门课所属的 Programme 和 Major 设为当前本科范围。';
+      else if (!ugPlanningSupported) ugPlanningReason = planningCapability.reason || '当前 Major 暂不支持课程计划。';
+      const major = item ? ugService.getMajor(item.majorId) : null;
+      const course = item ? {
+        ...item,
+        department: major ? major.nameEn : '',
+        language: item.language || '以学校公布为准',
+        prerequisites: item.prerequisites || '请查阅学校课程资料',
+        exclusions: item.exclusions || '请查阅学校课程资料',
+        description: item.description || `${major ? major.nameEn : 'Undergraduate'} · ${item.courseType || 'programme course'}`,
+        officialUrl: item.sourceUrl || '',
+        lastVerifiedAt: item.lastVerifiedAt || ''
+      } : null;
       this.setData({
         course,
         typeLabel: course ? service.TYPE_LABELS[course.courseType] : '',
         favorite: false,
         completed: false,
+        planned: item ? service.isUgCoursePlanned(item.programmeId, item.majorId, item.id) : false,
+        ugPlanningSupported,
+        ugPlanningReason,
         dataSource: '本科本地资料库',
         isUgCourse: true,
-        isTpgCourse: false
+        isTpgCourse: false,
+        ugProgrammeId: item ? item.programmeId : '',
+        ugMajorId: item ? item.majorId : ''
       });
       return;
     }
@@ -160,7 +198,17 @@ Page({
   },
 
   togglePlanned() {
-    if (!this.data.isTpgCourse || !this.data.course) return;
+    if (!this.data.course) return;
+    if (this.data.isUgCourse) {
+      if (!this.data.ugPlanningSupported) {
+        wx.showToast({ title: this.data.ugPlanningReason || '当前课程暂不能加入计划', icon: 'none' });
+        return;
+      }
+      service.toggleUgPlannedCourse(this.data.ugProgrammeId, this.data.ugMajorId, this.data.course.id);
+      this.setData({ planned: service.isUgCoursePlanned(this.data.ugProgrammeId, this.data.ugMajorId, this.data.course.id) });
+      return;
+    }
+    if (!this.data.isTpgCourse) return;
     if (!this.data.tpgPlanningSupported) {
       wx.showToast({ title: this.data.tpgPlanningReason || '当前课程暂不能加入计划', icon: 'none' });
       return;

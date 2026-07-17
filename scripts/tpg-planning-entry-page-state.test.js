@@ -140,3 +140,51 @@ test('home and Programme pages expose the TPG plan entry only for the current ve
   programme.page.goTpgStudyPlan();
   assert.deepEqual(programme.calls.navigations, ['/pages/study-plan/study-plan']);
 });
+
+test('opened UG Major decorates planned courses and opens the shared Study Plan page', async () => {
+  const programmeId = 'POLYU-UG-JS3868-14';
+  const majorId = 'POLYU-UG-JS3868-14-M1';
+  const courseId = 'POLYU-UG-JS3868-14-M1-C1';
+  const { page, calls } = loadPage('miniprogram/pages/courses/courses.js', {
+    userProfile: {
+      profileType: 'undergraduate',
+      universityCode: 'POLYU',
+      programmeId,
+      majorId,
+      curriculumYear: '2026'
+    },
+    plannedUgCourseKeys: [`${programmeId}:${majorId}:${courseId}`]
+  }, {
+    ensureUniversityLoaded: () => Promise.resolve()
+  });
+
+  await page.refresh();
+
+  assert.equal(page.data.isUgCatalogue, true);
+  assert.equal(page.data.ugPlanningSupported, true);
+  assert.equal(page.data.ugCourses.find((course) => course.id === courseId).planned, true);
+  page.goUgStudyPlan();
+  assert.deepEqual(calls.navigations, ['/pages/study-plan/study-plan']);
+});
+
+test('index-only UG Major does not expose a usable plan entry', async () => {
+  const { page, calls } = loadPage('miniprogram/pages/courses/courses.js', {
+    userProfile: {
+      profileType: 'undergraduate',
+      universityCode: 'HKU',
+      programmeId: 'HKU-UG-6066-20',
+      majorId: 'HKU-UG-6066-20-M1',
+      curriculumYear: '2026'
+    }
+  }, {
+    ensureUniversityLoaded: () => Promise.resolve()
+  });
+
+  await page.refresh();
+  page.goUgStudyPlan();
+
+  assert.equal(page.data.ugCourseCountDisplay, '待开放');
+  assert.equal(page.data.ugPlanningSupported, false);
+  assert.match(page.data.ugPlanningReason, /课程清单待开放/);
+  assert.equal(calls.navigations.length, 0);
+});

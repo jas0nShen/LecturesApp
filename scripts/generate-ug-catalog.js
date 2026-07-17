@@ -890,7 +890,12 @@ function writeCourseShards(catalogue, options = {}) {
       fs.rmSync(path.join(subpackagesDir, `ug-data-${getCourseShardName(universityCode)}`), { recursive: true, force: true });
     });
 
-  const shardEntries = splitCourseShardEntries(groupedCourses)
+  const splitEntries = splitCourseShardEntries(groupedCourses);
+  const finalShardByUniversity = new Map();
+  splitEntries.forEach(({ universityCode, shardName }) => {
+    finalShardByUniversity.set(universityCode, shardName);
+  });
+  const shardEntries = splitEntries
     .map(({ universityCode, shardName, courses }) => {
       const packageRoot = path.join(subpackagesDir, `ug-data-${shardName}`);
       const courseDataDir = path.join(packageRoot, 'ugCourseData');
@@ -904,6 +909,13 @@ function writeCourseShards(catalogue, options = {}) {
         `const courses = require('../../ugCourseData/${shardName}');`,
         `const universityCode = ${JSON.stringify(universityCode)};`,
         `const packageName = ${JSON.stringify(`subpackages/ug-data-${shardName}`)};`,
+        `const isFinalPackage = ${JSON.stringify(finalShardByUniversity.get(universityCode) === shardName)};`,
+        '',
+        'function buildPageUrl(page) {',
+        "  if (!page || !page.route) return '';",
+        "  const query = Object.keys(page.options || {}).map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(page.options[key])}`).join('&');",
+        "  return `/${page.route}${query ? `?${query}` : ''}`;",
+        '}',
         '',
         'Page({',
         '  onLoad() {',
@@ -911,21 +923,15 @@ function writeCourseShards(catalogue, options = {}) {
         '    if (typeof app.registerUgCourseShard === \'function\') {',
         '      app.registerUgCourseShard({ universityCode, packageName, courses });',
         '    }',
-        '    const completeActivation = () => {',
-        '      if (typeof app.completeUgCourseShardActivation === \'function\') {',
-        '        app.completeUgCourseShardActivation(packageName);',
-        '      }',
-        '    };',
-        '    const returnToCaller = (attempt = 0) => wx.navigateBack({',
-        '      delta: 1,',
-        '      success: completeActivation,',
-        '      fail() {',
-        '        if (attempt < 4) {',
-        '          setTimeout(() => returnToCaller(attempt + 1), 100);',
-        '        }',
-        '      }',
-        '    });',
-        '    setTimeout(() => returnToCaller(), 100);',
+        '    const pages = getCurrentPages();',
+        "    this.callerUrl = buildPageUrl(pages[0]);",
+        '  },',
+        '  onReady() {',
+        '    const app = getApp();',
+        '    if (typeof app.completeUgCourseShardActivation === \'function\') {',
+        '      app.completeUgCourseShardActivation(packageName);',
+        '    }',
+        '    if (isFinalPackage && this.callerUrl) wx.reLaunch({ url: this.callerUrl });',
         '  }',
         '});',
         ''

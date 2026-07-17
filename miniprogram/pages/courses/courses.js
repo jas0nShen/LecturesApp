@@ -67,6 +67,8 @@ Page({
     ugHeroSubtitle: '',
     ugStatusTitle: '',
     ugStatusCopy: '',
+    ugPlanningSupported: false,
+    ugPlanningReason: '',
     needsSetup: false
   },
 
@@ -142,6 +144,8 @@ Page({
         ugCourseCountDisplay: '',
         ugHeroTitle: '',
         ugHeroSubtitle: '',
+        ugPlanningSupported: false,
+        ugPlanningReason: '',
         courses: [],
         offerings: [],
         searching: false,
@@ -204,6 +208,8 @@ Page({
       ugCourseCountDisplay: '',
       ugHeroTitle: '',
       ugHeroSubtitle: '',
+      ugPlanningSupported: false,
+      ugPlanningReason: '',
       tpgProgramme: null,
       tpgUniversity: null,
       tpgCourses: [],
@@ -219,6 +225,7 @@ Page({
       : null;
     const ugHero = ugProfile ? this.buildUgHero(ugProfile) : {};
     if (ugProfile && ugProfile.sourceStatus === 'programme_summary_only') {
+      const planningCapability = service.getPlanningCapability(profile);
       if (requestId !== this._requestId) return;
       this.setData({
         isUgCatalogue: true,
@@ -230,6 +237,8 @@ Page({
         ugHeroSubtitle: ugHero.subtitle,
         ugStatusTitle: 'Programme / Major 已收录',
         ugStatusCopy: '课程表还在复核中；当前先保留学校与 Programme 信息。',
+        ugPlanningSupported: false,
+        ugPlanningReason: planningCapability.reason,
         courses: [],
         offerings: [],
         dataSource: 'catalogue',
@@ -239,20 +248,28 @@ Page({
     }
 
     if (ugProfile && ugProfile.sourceStatus === 'course_codes_available') {
+      const allUgCourses = ugService.listMajorCourses(profile.programmeId, profile.majorId);
       const ugCourses = ugService.listMajorCourses(profile.programmeId, profile.majorId, {
         keyword: this.data.keyword
-      });
+      }).map((course) => ({
+        ...course,
+        planned: service.isUgCoursePlanned(profile.programmeId, profile.majorId, course.id)
+      }));
+      const planningCapability = service.getPlanningCapability(profile);
+      const ugPlanningSupported = planningCapability.supported && planningCapability.mode === 'ug-course-plan';
       if (requestId !== this._requestId) return;
       this.setData({
         isUgCatalogue: true,
         ugProfile,
         ugCourses,
-        ugCourseCount: ugCourses.length,
-        ugCourseCountDisplay: ugCourses.length,
+        ugCourseCount: allUgCourses.length,
+        ugCourseCountDisplay: allUgCourses.length,
         ugHeroTitle: ugHero.title,
         ugHeroSubtitle: ugHero.subtitle,
         ugStatusTitle: '课程清单已开放',
         ugStatusCopy: '已整理公开课程代码；正式选课仍以学校系统为准。',
+        ugPlanningSupported,
+        ugPlanningReason: ugPlanningSupported ? '' : planningCapability.reason,
         courses: [],
         offerings: [],
         dataSource: 'catalogue',
@@ -463,6 +480,14 @@ Page({
   goTpgStudyPlan() {
     if (!this.data.tpgPlanningSupported) {
       wx.showToast({ title: this.data.tpgPlanningReason || '当前 Programme 暂不能使用选课计划', icon: 'none' });
+      return;
+    }
+    wx.navigateTo({ url: '/pages/study-plan/study-plan' });
+  },
+
+  goUgStudyPlan() {
+    if (!this.data.ugPlanningSupported) {
+      wx.showToast({ title: this.data.ugPlanningReason || '当前 Major 暂不能使用课程计划', icon: 'none' });
       return;
     }
     wx.navigateTo({ url: '/pages/study-plan/study-plan' });

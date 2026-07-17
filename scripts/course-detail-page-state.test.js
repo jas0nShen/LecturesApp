@@ -47,6 +47,33 @@ test('undergraduate course detail exposes a retry after a package load failure',
   assert.equal(attempts, 2);
 });
 
+test('opened undergraduate course detail toggles the Programme and Major scoped plan state', async () => {
+  const programmeId = 'POLYU-UG-JS3868-14';
+  const majorId = 'POLYU-UG-JS3868-14-M1';
+  const courseId = 'POLYU-UG-JS3868-14-M1-C1';
+  const page = loadCourseDetailPage({
+    ensureUniversityLoaded: () => Promise.resolve()
+  }, {
+    userProfile: {
+      profileType: 'undergraduate',
+      universityCode: 'POLYU',
+      programmeId,
+      majorId,
+      curriculumYear: '2026'
+    }
+  });
+
+  await page.onLoad({ ugId: courseId, universityCode: 'POLYU' });
+
+  assert.equal(page.data.course.courseCode, 'COMP1004');
+  assert.equal(page.data.ugPlanningSupported, true);
+  assert.equal(page.data.planned, false);
+  page.togglePlanned();
+  assert.equal(page.data.planned, true);
+  page.togglePlanned();
+  assert.equal(page.data.planned, false);
+});
+
 test('TPG course detail opens the selected programme course with per-course credits', async () => {
   const page = loadCourseDetailPage({});
 

@@ -8,6 +8,7 @@ function loadStudyPlanPage(initialStorage = {}, app = {}) {
   delete require.cache[require.resolve(PAGE_PATH)];
   const storage = { ...initialStorage };
   let clipboard = '';
+  const navigations = [];
   global.wx = {
     getStorageSync: (key) => storage[key],
     setStorageSync: (key, value) => { storage[key] = value; },
@@ -16,8 +17,8 @@ function loadStudyPlanPage(initialStorage = {}, app = {}) {
       if (success) success();
     },
     showToast: () => {},
-    navigateTo: () => {},
-    switchTab: () => {}
+    navigateTo: ({ url }) => { navigations.push(url); },
+    switchTab: ({ url }) => { navigations.push(url); }
   };
   global.getApp = () => app;
   let page;
@@ -31,7 +32,7 @@ function loadStudyPlanPage(initialStorage = {}, app = {}) {
     };
   };
   require(PAGE_PATH);
-  return { page, storage, getClipboard: () => clipboard };
+  return { page, storage, navigations, getClipboard: () => clipboard };
 }
 
 test('TPG Study Plan groups current Programme courses and copies a privacy-safe summary', async () => {
@@ -110,4 +111,83 @@ test('TPG Study Plan shows explicit blocked and package-load failure states', as
   await failed.page.onShow();
   assert.equal(failed.page.data.loadError, true);
   assert.match(failed.page.data.unsupportedMessage, /加载失败/);
+});
+
+test('UG Study Plan groups current Major courses, copies text, opens detail and preserves other Major records', async () => {
+  const programmeId = 'POLYU-UG-JS3868-14';
+  const majorId = 'POLYU-UG-JS3868-14-M1';
+  const courseId = 'POLYU-UG-JS3868-14-M1-C1';
+  const otherMajorKey = `${programmeId}:POLYU-UG-JS3868-14-M2:POLYU-UG-JS3868-14-M2-C1`;
+  const currentKey = `${programmeId}:${majorId}:${courseId}`;
+  const { page, storage, navigations, getClipboard } = loadStudyPlanPage({
+    userProfile: {
+      profileType: 'undergraduate',
+      universityCode: 'POLYU',
+      programmeId,
+      majorId,
+      curriculumYear: '2026'
+    },
+    plannedUgCourseKeys: [currentKey, otherMajorKey]
+  }, {
+    ensureUniversityLoaded: () => Promise.resolve()
+  });
+
+  await page.onShow();
+
+  assert.equal(page.data.mode, 'ug-course-plan');
+  assert.equal(page.data.supported, true);
+  assert.equal(page.data.ugPlan.majorId, majorId);
+  assert.equal(page.data.ugPlan.courseCount, 1);
+  assert.deepEqual(page.data.ugPlan.groups.map((group) => group.name), ['推荐 Year 1']);
+  assert.equal(page.data.ugPlan.groups[0].courses[0].courseCode, 'COMP1004');
+
+  page.copyUgPlan();
+  assert.match(getClipboard(), /Major:/);
+  assert.match(getClipboard(), /COMP1004/);
+  assert.match(getClipboard(), /不计算毕业百分比、学分差额或毕业资格/);
+  assert.doesNotMatch(getClipboard(), /\d+(?:\.\d+)?%|还差\s*\d+/);
+
+  page.openUgDetail({ currentTarget: { dataset: { id: courseId } } });
+  assert.match(navigations.at(-1), /course-detail\?ugId=.*POLYU-UG-JS3868-14-M1-C1/);
+
+  await page.removeUgCourse({ currentTarget: { dataset: { id: courseId } } });
+  assert.deepEqual(storage.plannedUgCourseKeys, [otherMajorKey]);
+  assert.equal(page.data.ugPlan.courseCount, 0);
+});
+
+test('UG Study Plan keeps index-only Majors unavailable and exposes package retry', async () => {
+  const indexOnly = loadStudyPlanPage({
+    userProfile: {
+      profileType: 'undergraduate',
+      universityCode: 'HKU',
+      programmeId: 'HKU-UG-6066-20',
+      majorId: 'HKU-UG-6066-20-M1',
+      curriculumYear: '2026'
+    }
+  });
+  await indexOnly.page.onShow();
+  assert.equal(indexOnly.page.data.supported, false);
+  assert.match(indexOnly.page.data.unsupportedMessage, /课程清单待开放/);
+
+  let attempts = 0;
+  const failed = loadStudyPlanPage({
+    userProfile: {
+      profileType: 'undergraduate',
+      universityCode: 'POLYU',
+      programmeId: 'POLYU-UG-JS3868-14',
+      majorId: 'POLYU-UG-JS3868-14-M1',
+      curriculumYear: '2026'
+    }
+  }, {
+    ensureUniversityLoaded: () => attempts ? Promise.resolve() : Promise.reject(new Error('offline')),
+    retryUniversityLoad: () => {
+      attempts += 1;
+      return Promise.resolve();
+    }
+  });
+  await failed.page.onShow();
+  assert.equal(failed.page.data.loadError, true);
+  await failed.page.retryPlanLoad();
+  assert.equal(attempts, 1);
+  assert.equal(failed.page.data.loadError, false);
 });
