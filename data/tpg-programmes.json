@@ -87425,7 +87425,7 @@
       "name": "Master of Arts in Cultural Heritage Education and Management",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 24,
       "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=9118",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
@@ -87436,9 +87436,10 @@
       "dataLevel": "programme",
       "courseGroups": [],
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-13",
+      "courseVerifiedAt": "2026-07-17",
       "courseSourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=9118",
-      "courseStatusNote": "The current 2026-27 Programme page confirms a 24-credit award comprising four 3-credit Core Courses and four 3-credit Specialisation Courses. It states that the Xiqu Specialisation is not open in 2026-27, but the public structure displays only the four Core titles and an isolated Internship in Xiqu line; it neither publishes the complete current Heritage Education and Management Specialisation course list nor any course codes. Keep the structure closed until EdUHK publishes the complete 2026-27 specialisation table and official codes; do not treat the closed Xiqu path or the incomplete page fragment as the current curriculum."
+      "courseStatusNote": "The current 2026-27 Programme page confirms Programme codes A1M116 (full-time) and C2M045 (part-time), a 24-credit-point award, four required 3-credit Core Courses and four of seven 3-credit Courses from one Specialisation. It publishes the complete Core title pool (Theories in Intangible Cultural Heritage; Methods in Research for Cultural Heritage Education and Management; Development and Management of Cultural Industries; Study on Chinese Culture) and the complete Heritage Education and Management Specialisation title pool (Cultural Heritage Studies in China; Cultural Tourism: Planning and Management; Exploring Hong Kong's Intangible Cultural Heritage; History, Society and Culture of Lingnan; Communication and Marketing in Cultural Industries; Independent Project in Cultural Heritage Management; Internship in Cultural Heritage Management). The Xiqu Specialisation and part-time mode are not open for application in 2026-27. The page publishes no course codes for any current title. Keep the structure closed until EdUHK publishes an authenticated current code table; do not infer codes from titles, Programme codes or the closed Xiqu path.",
+      "creditUnit": "credit points"
     },
     {
       "id": "EDUHK-TPG-DIR-MADHCP",

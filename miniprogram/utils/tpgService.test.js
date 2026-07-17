@@ -2566,7 +2566,7 @@ test('EdUHK incomplete current code tables remain blocked instead of exposing pa
     ['EDUHK-TPG-DIR-MA-DMEC', /BUS6085 Introduction to E-commerce/, /do not map similarly named marketing/],
     ['EDUHK-TPG-DIR-MA-IECE', /both co-delivering departments/, /do not map the new curriculum onto similarly titled legacy courses/],
     ['EDUHK-TPG-DIR-MSOCSC-TPWB', /identify only a subset/, /do not publish a partial pool/],
-    ['EDUHK-TPG-DIR-MA-CHEM', /Xiqu Specialisation is not open/, /do not treat the closed Xiqu path/],
+    ['EDUHK-TPG-DIR-MA-CHEM', /four of seven 3-credit Courses from one Specialisation/, /do not infer codes from titles/],
     ['EDUHK-TPG-DIR-MA-BRBCA', /six required 3-credit Core Courses/, /do not infer codes from titles/],
     ['EDUHK-TPG-DIR-MA-CVBLE', /four of seven 3-credit Elective Courses/, /do not.*guaranteed annual offering/],
     ['EDUHK-TPG-DIR-MA-CECI', /PFS6061, PUA6027 and PFS6076/, /do not publish the discoverable cross-Programme subset/],
@@ -2584,6 +2584,20 @@ test('EdUHK incomplete current code tables remain blocked instead of exposing pa
     assert.match(programme.courseStatusNote, evidence);
     assert.match(programme.courseStatusNote, safeguard);
   });
+});
+
+test('EdUHK Cultural Heritage records the complete current title pools while codes remain blocked', () => {
+  const programme = tpgService.getProgramme('EDUHK-TPG-DIR-MA-CHEM');
+
+  assert.equal(programme.creditsRequired, 24);
+  assert.equal(programme.creditUnit, 'credit points');
+  assert.equal(programme.courseVerifiedAt, '2026-07-17');
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.deepEqual(programme.courseGroups || [], []);
+  assert.match(programme.courseStatusNote, /Theories in Intangible Cultural Heritage/);
+  assert.match(programme.courseStatusNote, /Internship in Cultural Heritage Management/);
+  assert.match(programme.courseStatusNote, /Xiqu Specialisation and part-time mode are not open/);
+  assert.match(programme.courseStatusNote, /publishes no course codes for any current title/);
 });
 
 test('EdUHK Child and Family Education filters the official Thesis and Practice Tracks', () => {
