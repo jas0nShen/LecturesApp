@@ -8,7 +8,7 @@
 
 当前产品边界是：先保证离线发布、数据可追溯和规则不误导，再继续补课程覆盖与规划能力。未经明确产品决定，不引入登录、云同步、统计、敏感权限或生产 API。
 
-当前仓库发布资料已统一为 `1.0.6`（`package.json`、运行时 `releaseInfo`、`docs/MVP_SPEC.md`、`docs/RELEASE_CHECKLIST.md`、`docs/REVIEW_SUBMISSION.md`）。微信开发者工具现有已上传代码仍为 `1.0.5`；`1.0.6` 尚待上传，且没有提交审核或发布正式版。
+当前仓库发布资料已统一为 `1.0.6`（`package.json`、运行时 `releaseInfo`、`docs/MVP_SPEC.md`、`docs/RELEASE_CHECKLIST.md`、`docs/REVIEW_SUBMISSION.md`）。微信开发者工具官方 CLI 已上传 `1.0.6`；没有提交审核或发布正式版。
 
 ## 可验证的仓库快照
 
@@ -20,7 +20,7 @@
 - 当前 `git status --short --branch`：
 
 ```text
-## main...origin/main [ahead 6]
+## main...origin/main [ahead 7]
 ?? .playwright-cli/
 ```
 
@@ -30,6 +30,7 @@
 最近关键提交（本次交接提交前）：
 
 ```text
+361ee05 Release 1.0.6 with reliable TPG planning
 f51c980 Add TPG course planning
 18c026a Document 1.0.5 upload handoff
 2f37396 Release 1.0.5 with complete TPG source review
@@ -82,9 +83,10 @@ df91815 Add PolyU Design curriculum and source evidence
 
 - Git 提交 `2f37396` 已包含 HKU Social Sciences 049 至 055、生成分包、builder、测试及 `1.0.5` 版本资料。
 - Git 提交 `f51c980` 已包含 TPG 选课计划、本地备份/恢复支持、浏览入口、Study Plan 页面和页面状态测试。
-- 本地 `main` 在 1.0.6 功能提交完成后预计比本地远端跟踪引用 `origin/main` ahead 6；本次没有 push。
+- Git 提交 `361ee05` 已包含 `1.0.6` 版本资料、冷分包 loader 返回兜底、8 个生成 loader 和回归测试。
+- 本地 `main` 在本次上传记录提交完成后比本地远端跟踪引用 `origin/main` ahead 7；本次没有 push。
 - 微信开发者工具已显示最新 `1.0.5` 代码上传成功，更新类型为“修订补丁”，备注为 `1.0.5: Add TPG course planning`。
-- 1.0.6 发布候选包含 2026-07-17 新增的 loader 返回兜底；尚待 Git 提交和微信上传。
+- 2026-07-17 已通过微信开发者工具官方 CLI 上传 `1.0.6`，备注为 `1.0.6: Add TPG course planning and reliable loaders`，命令返回 `✔ upload`；上传包 8.6 MB，主包 1.4 MB，所有分包低于 2 MB。
 - `npm run check:ship` 通过：669/669 测试、`ready=true`、主包 1,772,938 bytes，所有分包低于 2 MB。
 - 微信官方 automation 已完成普通 `POLYU-TPG-090` 闭环：36 门课程、`COMP5521` 加入计划、列表状态、官方分组、标记已修、复制与移除均通过。
 - 多 Track `HKU-TPG-031` 验收通过：Generalist 计 1 门，Chinese Language Education 计 2 门；两条记录均保留，旧 Track 课程不计入 Generalist 当前统计。
@@ -102,7 +104,7 @@ df91815 Add PolyU Design curriculum and source evidence
 
 ### 发布与验收缺口
 
-- 仓库版本资料为 `1.0.6`；微信已上传代码仍为 `1.0.5`，上传不等于已提交审核。
+- 仓库版本资料和微信已上传代码均为 `1.0.6`；上传不等于已提交审核。
 - `docs/RELEASE_CHECKLIST.md` 的 iOS/Android 真机矩阵没有完成记录。
 - 微信后台隐私声明、服务类目、备案、审核材料核对尚未在仓库中记录为完成。
 - 尚未提交微信审核，也没有发布正式版。
@@ -255,7 +257,7 @@ npm run status:tpg-courses -- --school=HKU: PASS (448/448 reviewed, 0 unreviewed
 
 ## 已知问题、风险和不要做的事情
 
-- 不要把微信已上传的 `1.0.5` 当作 `1.0.6`，也不要把上传成功当作已提审或已发布。
+- 微信已上传 `1.0.6`，但不要把上传成功当作已提审或已发布。
 - 不要把“上传成功”写成“已提审”或“已发布”。这两个外部动作尚未执行。
 - 不要删除或提交 `.playwright-cli/`，除非用户明确决定如何处理该诊断目录。
 - 不要手改生成的 catalogue、course shard 或 loader；从 source/supplement 和 builder 修改后重新生成。
