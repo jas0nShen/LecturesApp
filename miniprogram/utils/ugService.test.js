@@ -2,6 +2,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const { test } = require('node:test');
+const vm = require('node:vm');
 
 const ugService = require('./ugService');
 const ugCourseShards = require('./ugCourseShards');
@@ -11,12 +12,20 @@ test('runtime UG shards are registered inside their own subpackage instead of st
   const hkuLoader = fs.readFileSync(path.join(__dirname, '..', 'subpackages', 'ug-data-hku', 'pages', 'loader', 'index.js'), 'utf8');
 
   assert.doesNotMatch(shardIndex, /require\(['"]\.\.\/subpackages\//);
+  assert.doesNotMatch(shardIndex, /eval\s*\(/);
+  assert.match(shardIndex, /module\.require\.bind\(module\)/);
   assert.match(hkuLoader, /registerUgCourseShard\(\{ universityCode, packageName, courses \}\)/);
-  assert.match(hkuLoader, /onReady\(\)/);
   assert.match(hkuLoader, /completeUgCourseShardActivation\(packageName\)/);
-  assert.match(hkuLoader, /const isFinalPackage = true/);
-  assert.match(hkuLoader, /wx\.reLaunch\(\{ url: this\.callerUrl \}\)/);
+  assert.match(hkuLoader, /buildPageUrl\(pages\[pages\.length - 2\]\)/);
+  assert.match(hkuLoader, /wx\.reLaunch\(\{/);
   assert.doesNotMatch(hkuLoader, /wx\.navigateBack\(\{/);
+
+  const runtimeModule = { exports: {} };
+  vm.runInNewContext(shardIndex, {
+    getApp: () => ({ globalData: {} }),
+    module: runtimeModule
+  });
+  assert.equal(runtimeModule.exports.getCoursesByUniversityCode('HKU').length, 0);
 });
 
 test('UG catalogue summarizes current undergraduate seed data', () => {

@@ -9,6 +9,16 @@
 .plan-kicker { color: #9fd1c2; font-size: 20rpx; font-weight: 750; letter-spacing: 3rpx; }
 .plan-code { font-size: 44rpx; font-weight: 850; margin-top: 24rpx; }
 .plan-title { color: #d7e8e2; font-size: 28rpx; font-weight: 700; line-height: 1.4; margin-top: 8rpx; }
+.plan-major { color: #9fd1c2; font-size: 20rpx; font-weight: 700; margin-top: 16rpx; }
+.plan-state-message { min-height: 260rpx; }
+.plan-state-title { color: #17352c; font-size: 32rpx; font-weight: 850; margin-top: 22rpx; }
+.plan-state-copy { color: #6f8179; font-size: 23rpx; line-height: 1.55; margin-top: 12rpx; }
+.state-button { margin-top: 28rpx; }
+.official-reference { background: #f4f8f6; border: 1rpx solid #d7e4de; }
+.reference-kicker { color: #0b6b55; font-size: 20rpx; font-weight: 850; letter-spacing: 2rpx; margin-bottom: 16rpx; }
+.reference-row { align-items: baseline; border-top: 1rpx solid #e0e9e5; color: #53665d; display: flex; font-size: 22rpx; justify-content: space-between; padding: 14rpx 0; }
+.reference-row text:last-child { color: #17352c; font-weight: 800; margin-left: 24rpx; text-align: right; }
+.reference-note { color: #77877f; font-size: 19rpx; line-height: 1.5; margin-top: 12rpx; }
 .field { margin-bottom: 28rpx; }
 .label { color: #52655c; font-size: 22rpx; font-weight: 700; margin-bottom: 10rpx; }
 .select {
@@ -22,3 +32,5 @@
   padding: 0 24rpx;
 }
 .plan-form .button { margin-top: 38rpx; }
+.assignment-note { color: #788981; font-size: 20rpx; line-height: 1.5; margin-top: -6rpx; }
+.clear-button { border: 1rpx solid #c8d6cf; border-radius: 14rpx; color: #64766d; font-size: 23rpx; font-weight: 750; margin-top: 18rpx; padding: 22rpx; text-align: center; }

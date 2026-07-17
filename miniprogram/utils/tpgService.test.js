@@ -1,5 +1,8 @@
 const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
 const { test } = require('node:test');
+const vm = require('node:vm');
 
 const tpgService = require('./tpgService');
 const tpgCourseShards = require('./tpgCourseShards');
@@ -34,6 +37,19 @@ test('generated TPG course shards preserve every Programme structure outside the
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
+});
+
+test('TPG shard registry avoids eval and waits for subpackage registration in the WeChat runtime', () => {
+  const shardIndex = fs.readFileSync(path.join(__dirname, 'tpgCourseShards.js'), 'utf8');
+  const runtimeModule = { exports: {} };
+
+  assert.doesNotMatch(shardIndex, /eval\s*\(/);
+  assert.match(shardIndex, /module\.require\.bind\(module\)/);
+  vm.runInNewContext(shardIndex, {
+    getApp: () => ({ globalData: {} }),
+    module: runtimeModule
+  });
+  assert.equal(runtimeModule.exports.getProgrammesByUniversityCode('HKU').length, 0);
 });
 
 test('HKU Law curricula preserve blocked source conflicts and manual path-dependent pools', () => {

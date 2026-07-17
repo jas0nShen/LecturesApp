@@ -2,7 +2,7 @@ const assert = require('node:assert/strict');
 const path = require('node:path');
 const test = require('node:test');
 
-const POLYU_A_PATH = path.join(
+const LOADER_PATH = path.join(
   __dirname,
   '..',
   'miniprogram',
@@ -12,33 +12,18 @@ const POLYU_A_PATH = path.join(
   'loader',
   'index.js'
 );
-const POLYU_B_PATH = path.join(
-  __dirname,
-  '..',
-  'miniprogram',
-  'subpackages',
-  'ug-data-polyu-b',
-  'pages',
-  'loader',
-  'index.js'
-);
 
-function loadLoader(loaderPath) {
-  delete require.cache[require.resolve(loaderPath)];
+function loadLoader() {
+  delete require.cache[require.resolve(LOADER_PATH)];
   const caller = {
     route: 'pages/courses/courses',
     options: { source: 'study plan' }
   };
-  const firstLoader = {
+  const loader = {
     route: 'subpackages/ug-data-polyu-a/pages/loader/index',
     options: {}
   };
-  const currentLoader = {
-    route: loaderPath.includes('polyu-b')
-      ? 'subpackages/ug-data-polyu-b/pages/loader/index'
-      : firstLoader.route,
-    options: {}
-  };
+  let pages = [caller, loader];
   let pageDefinition;
   let reLaunchUrl = '';
   let registered = 0;
@@ -48,7 +33,8 @@ function loadLoader(loaderPath) {
     Page: global.Page,
     getApp: global.getApp,
     getCurrentPages: global.getCurrentPages,
-    wx: global.wx
+    wx: global.wx,
+    setTimeout: global.setTimeout
   };
 
   global.Page = (definition) => { pageDefinition = definition; };
@@ -56,20 +42,24 @@ function loadLoader(loaderPath) {
     registerUgCourseShard() { registered += 1; },
     completeUgCourseShardActivation() { completed += 1; }
   });
-  global.getCurrentPages = () => loaderPath.includes('polyu-b')
-    ? [caller, firstLoader, currentLoader]
-    : [caller, currentLoader];
+  global.getCurrentPages = () => pages;
+  global.setTimeout = (callback) => {
+    callback();
+    return 1;
+  };
   global.wx = {
-    reLaunch({ url }) { reLaunchUrl = url; }
+    reLaunch({ url, success }) {
+      reLaunchUrl = url;
+      pages = [caller];
+      success();
+    }
   };
 
-  require(loaderPath);
+  require(LOADER_PATH);
 
   return {
     run() {
-      const page = {};
-      pageDefinition.onLoad.call(page);
-      pageDefinition.onReady.call(page);
+      pageDefinition.onLoad();
       return { registered, completed, reLaunchUrl };
     },
     restore() {
@@ -77,26 +67,13 @@ function loadLoader(loaderPath) {
         if (value === undefined) delete global[key];
         else global[key] = value;
       });
-      delete require.cache[require.resolve(loaderPath)];
+      delete require.cache[require.resolve(LOADER_PATH)];
     }
   };
 }
 
-test('first package of a split UG university activates without returning early', () => {
-  const runtime = loadLoader(POLYU_A_PATH);
-  try {
-    assert.deepEqual(runtime.run(), {
-      registered: 1,
-      completed: 1,
-      reLaunchUrl: ''
-    });
-  } finally {
-    runtime.restore();
-  }
-});
-
-test('final package of a split UG university returns to the original caller', () => {
-  const runtime = loadLoader(POLYU_B_PATH);
+test('UG loader reLaunches the caller before completing activation', () => {
+  const runtime = loadLoader();
   try {
     assert.deepEqual(runtime.run(), {
       registered: 1,

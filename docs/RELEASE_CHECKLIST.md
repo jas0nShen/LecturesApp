@@ -1,10 +1,10 @@
 # 微信小程序发布检查清单
 
-## 1.0.6 正式版定位
+## 1.0.7 正式版定位
 
-- 版本号：`1.0.6`
-- 目标用户：香港高校授课硕士学生；本科用户可先使用 Programme / Major 目录预览
-- 核心能力：选择 Programme、浏览授课硕士资料库、查看已开放课程组、预览本科 Programme / Major、收藏/计划 HKU 官方开课示例、查看数据状态与隐私说明
+- 版本号：`1.0.7`
+- 目标用户：香港高校本科及授课硕士学生
+- 核心能力：选择 Programme、浏览已开放课程、把本科或授课硕士课程加入本机计划、本科按 Year / Term 排期、查看数据状态与隐私说明
 - 数据边界：TPG Programme 索引已导入；课程组按 Programme 逐步开放。课程组尚未开放的 Programme 只展示索引与资料来源，暂不生成毕业判断。本科目录用于选择学校、Programme 与 Major；未复核课程规则前不生成本科毕业进度
 - 发布模式：体验版和正式版读取随包发布的离线数据，不依赖开发环境服务
 
@@ -88,7 +88,7 @@ npm run status:ug-sources -- --school HKU --missing-only --missing-limit 10 --re
 
 ## 当前发布模式
 
-1.0.6 正式版：
+1.0.7 正式版：
 
 - 开发版可连接本机服务，用于本地调试；
 - 体验版和正式版直接使用离线数据；
@@ -108,7 +108,7 @@ npm run status:ug-sources -- --school HKU --missing-only --missing-limit 10 --re
 9. 进入“我的”，查看“数据状态”、“数据与隐私”；
 10. 测试复制备份、从剪贴板恢复、清除本机数据前的二次确认。
 
-## 1.0.6 RC1 分包与能力边界专项验收
+## 1.0.7 RC1 分包与能力边界专项验收
 
 以下路径在 iOS 和 Android 都至少各走一遍。每次切换学校后，等待课程页完成加载；如果出现“课程数据加载失败”，验证“重新加载”能恢复，且不能把失败误显示成“课程清单待开放”。
 
@@ -134,6 +134,22 @@ npm run status:ug-sources -- --school HKU --missing-only --missing-limit 10 --re
 | TPG 冷分包返回 | PolyU 与 HKU 冷加载均能从临时 loader 返回调用页；针对“`navigateBack` 报成功但 loader 仍在栈顶”的模拟器行为增加 `reLaunch` 回调用页兜底 |
 
 - `npm run check:ship`：669/669 测试通过，`ready=true`。
+- iOS 真机：未执行。
+- Android 真机：未执行。
+- 本轮模拟器验收不能替代下方正式提审前的真机矩阵。
+
+## 2026-07-17 本科课程可编辑排期 v1 模拟器验收
+
+使用微信开发者工具 Stable v2.01.2510290、稳定基础库 3.8.10 完成以下本地模拟器流程；仅清除编译缓存，未清除用户本机数据：
+
+| 样本 | 验收结果 |
+| --- | --- |
+| `POLYU` Computer Science | 两个本科分包均完成加载，显示 83 门课程；`COMP1004` 可加入计划并默认进入“待安排” |
+| 本科排期编辑 | 可设置 `Year 1 / Term 1` 并移动至对应分组；复制文本正确区分用户排期与官方参考 |
+| 排期清理 | 清除排期后回到“待安排”；移出课程后 `plannedUgCourseKeys` 与 `ugCoursePlanAssignments` 均无残留 |
+| 微信基础库兼容 | UG/TPG Node 测试 fallback 不再使用 `eval`；PolyU 双分包可从 loader 返回调用页并完成 activation |
+
+- `npm run check:ship`：683/683 测试通过，`ready=true`。
 - iOS 真机：未执行。
 - Android 真机：未执行。
 - 本轮模拟器验收不能替代下方正式提审前的真机矩阵。

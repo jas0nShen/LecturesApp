@@ -2,6 +2,14 @@ const service = require('../../utils/courseService');
 const tpgService = require('../../utils/tpgService');
 const ugService = require('../../utils/ugService');
 
+const UG_PLAN_TERM_ORDER = ['1', '2', '3', 'summer', 'full year'];
+
+function getUgPlanTermLabel(term) {
+  if (term === 'summer') return 'Summer';
+  if (term === 'full year') return 'Full Year';
+  return term ? `Term ${term}` : '待安排';
+}
+
 function emptyReview() {
   return {
     courseCount: 0,
@@ -49,7 +57,7 @@ function formatUgPlanText(plan) {
   plan.groups.forEach((group) => {
     lines.push('', `${group.name} · ${group.courseCount} 门`);
     group.courses.forEach((course) => {
-      lines.push(`- ${course.courseCode} ${course.titleEn} · ${course.semester || '学期待确认'}${course.creditLabel ? ` · ${course.creditLabel}` : ''}`);
+      lines.push(`- ${course.courseCode} ${course.titleEn} · 用户计划：${course.userPlanLabel} · 官方参考：${course.officialReferenceLabel}${course.creditLabel ? ` · ${course.creditLabel}` : ''}`);
     });
   });
   lines.push('', '仅供课程规划；不计算毕业百分比、学分差额或毕业资格。正式安排以学校课程系统和培养方案为准。');
@@ -117,7 +125,7 @@ Page({
     this.setData({ loading: true, loadError: false, mode: 'ug-course-plan' });
     const programme = ugService.getProgramme(profile.programmeId);
     const universityCode = profile.universityCode || (programme && programme.universityCode) || '';
-    const app = typeof getApp === 'function' ? getApp() : {};
+    const app = typeof getApp === 'function' ? (getApp({ allowDefault: true }) || {}) : {};
     try {
       if (universityCode && app.ensureUniversityLoaded) await app.ensureUniversityLoaded(universityCode);
     } catch (error) {
@@ -130,36 +138,45 @@ Page({
       this.setData({ supported: false, loading: false, loadError: false, unsupportedMessage: capability.reason || '本科 Programme 或 Major 资料不存在。' });
       return;
     }
+    const assignmentMap = new Map(service.getUgCoursePlanAssignments().map((item) => [item.courseKey, item]));
     const courses = ugService.listMajorCourses(profile.programmeId, profile.majorId)
       .filter((course) => service.isUgCoursePlanned(profile.programmeId, profile.majorId, course.id))
       .map((course) => {
         const hasKnownCredits = course.credits !== undefined && course.credits !== null && Number.isFinite(Number(course.credits));
+        const assignment = assignmentMap.get(`${profile.programmeId}:${profile.majorId}:${course.id}`) || null;
+        const plannedYear = assignment && assignment.plannedYear !== null ? Number(assignment.plannedYear) : null;
+        const plannedTerm = assignment ? assignment.plannedTerm : '';
+        const isScheduled = Number.isInteger(plannedYear) && plannedYear >= 1 && plannedYear <= 6 && UG_PLAN_TERM_ORDER.includes(plannedTerm);
+        const recommendedYear = Number(course.recommendedYear);
+        const officialYearLabel = Number.isInteger(recommendedYear) && recommendedYear > 0 ? `Year ${recommendedYear}` : '未提供';
+        const officialTermLabel = course.semester || '未提供';
         return {
           ...course,
           credits: hasKnownCredits ? Number(course.credits) : 0,
           hasKnownCredits,
           creditLabel: hasKnownCredits ? `${Number(course.credits)} credits` : '',
-          semester: course.semester || '未指定学期'
+          plannedYear,
+          plannedTerm,
+          isScheduled,
+          userPlanLabel: `${plannedYear ? `Year ${plannedYear}` : 'Year 待安排'} · ${getUgPlanTermLabel(plannedTerm)}`,
+          officialReferenceLabel: `推荐年级 ${officialYearLabel} · 学期 ${officialTermLabel}`
         };
       });
-    const years = [...new Set(courses.map((course) => {
-      const year = Number(course.recommendedYear);
-      return Number.isInteger(year) && year > 0 ? year : 0;
-    }))].sort((left, right) => {
-      if (left === 0) return 1;
-      if (right === 0) return -1;
-      return left - right;
-    });
-    const groups = years.map((year) => {
-      const groupCourses = courses.filter((course) => {
-        const recommendedYear = Number(course.recommendedYear);
-        return year === 0
-          ? !Number.isInteger(recommendedYear) || recommendedYear <= 0
-          : recommendedYear === year;
+    const groupKeys = [...new Set(courses.map((course) => course.isScheduled ? `${course.plannedYear}:${course.plannedTerm}` : 'pending'))]
+      .sort((left, right) => {
+        if (left === 'pending') return 1;
+        if (right === 'pending') return -1;
+        const [leftYear, leftTerm] = left.split(':');
+        const [rightYear, rightTerm] = right.split(':');
+        return Number(leftYear) - Number(rightYear)
+          || UG_PLAN_TERM_ORDER.indexOf(leftTerm) - UG_PLAN_TERM_ORDER.indexOf(rightTerm);
       });
+    const groups = groupKeys.map((groupKey) => {
+      const groupCourses = courses.filter((course) => (course.isScheduled ? `${course.plannedYear}:${course.plannedTerm}` : 'pending') === groupKey);
+      const [year, term] = groupKey === 'pending' ? ['', ''] : groupKey.split(':');
       return {
-        id: year ? `year-${year}` : 'year-unspecified',
-        name: year ? `推荐 Year ${year}` : '未指定年级',
+        id: groupKey === 'pending' ? 'pending' : `year-${year}-${term.replace(/\s+/g, '-')}`,
+        name: groupKey === 'pending' ? '待安排' : `Year ${year} · ${getUgPlanTermLabel(term)}`,
         courseCount: groupCourses.length,
         knownCredits: groupCourses.reduce((sum, course) => sum + course.credits, 0),
         courses: groupCourses
@@ -238,7 +255,7 @@ Page({
   async loadTpgPlan(profile) {
     this.setData({ loading: true, loadError: false, mode: 'tpg-course-plan' });
     let programme = tpgService.getProgramme(profile.programmeId);
-    const app = typeof getApp === 'function' ? getApp() : {};
+    const app = typeof getApp === 'function' ? (getApp({ allowDefault: true }) || {}) : {};
     try {
       if (programme && app.ensureTpgUniversityLoaded) await app.ensureTpgUniversityLoaded(programme.universityCode);
     } catch (error) {
@@ -310,7 +327,7 @@ Page({
   retryTpgLoad() {
     const profile = service.getProfile();
     const programme = profile && tpgService.getProgramme(profile.programmeId);
-    const app = typeof getApp === 'function' ? getApp() : {};
+    const app = typeof getApp === 'function' ? (getApp({ allowDefault: true }) || {}) : {};
     if (!profile || !programme || !app.retryTpgUniversityLoad) return this.onShow();
     this.setData({ loading: true, loadError: false });
     return app.retryTpgUniversityLoad(programme.universityCode).then(() => this.loadTpgPlan(profile)).catch(() => {
@@ -323,7 +340,7 @@ Page({
     const profile = service.getProfile();
     const programme = profile && ugService.getProgramme(profile.programmeId);
     const universityCode = profile && (profile.universityCode || (programme && programme.universityCode));
-    const app = typeof getApp === 'function' ? getApp() : {};
+    const app = typeof getApp === 'function' ? (getApp({ allowDefault: true }) || {}) : {};
     if (!profile || !universityCode || !app.retryUniversityLoad) return this.onShow();
     this.setData({ loading: true, loadError: false });
     return app.retryUniversityLoad(universityCode).then(() => this.loadUgPlan(profile)).catch(() => {
@@ -387,6 +404,12 @@ Page({
   openUgDetail(event) {
     wx.navigateTo({
       url: `/pages/course-detail/course-detail?ugId=${encodeURIComponent(event.currentTarget.dataset.id)}&universityCode=${encodeURIComponent(this.data.ugPlan.universityCode)}`
+    });
+  },
+
+  editUgAssignment(event) {
+    wx.navigateTo({
+      url: `/pages/plan-course/plan-course?ugId=${encodeURIComponent(event.currentTarget.dataset.id)}&universityCode=${encodeURIComponent(this.data.ugPlan.universityCode)}`
     });
   },
 

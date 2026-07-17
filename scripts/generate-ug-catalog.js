@@ -891,10 +891,6 @@ function writeCourseShards(catalogue, options = {}) {
     });
 
   const splitEntries = splitCourseShardEntries(groupedCourses);
-  const finalShardByUniversity = new Map();
-  splitEntries.forEach(({ universityCode, shardName }) => {
-    finalShardByUniversity.set(universityCode, shardName);
-  });
   const shardEntries = splitEntries
     .map(({ universityCode, shardName, courses }) => {
       const packageRoot = path.join(subpackagesDir, `ug-data-${shardName}`);
@@ -909,7 +905,6 @@ function writeCourseShards(catalogue, options = {}) {
         `const courses = require('../../ugCourseData/${shardName}');`,
         `const universityCode = ${JSON.stringify(universityCode)};`,
         `const packageName = ${JSON.stringify(`subpackages/ug-data-${shardName}`)};`,
-        `const isFinalPackage = ${JSON.stringify(finalShardByUniversity.get(universityCode) === shardName)};`,
         '',
         'function buildPageUrl(page) {',
         "  if (!page || !page.route) return '';",
@@ -924,14 +919,28 @@ function writeCourseShards(catalogue, options = {}) {
         '      app.registerUgCourseShard({ universityCode, packageName, courses });',
         '    }',
         '    const pages = getCurrentPages();',
-        "    this.callerUrl = buildPageUrl(pages[0]);",
-        '  },',
-        '  onReady() {',
-        '    const app = getApp();',
-        '    if (typeof app.completeUgCourseShardActivation === \'function\') {',
-        '      app.completeUgCourseShardActivation(packageName);',
-        '    }',
-        '    if (isFinalPackage && this.callerUrl) wx.reLaunch({ url: this.callerUrl });',
+        '    const callerUrl = buildPageUrl(pages[pages.length - 2]);',
+        '    const completeActivation = () => {',
+        '      if (typeof app.completeUgCourseShardActivation === \'function\') {',
+        '        app.completeUgCourseShardActivation(packageName);',
+        '      }',
+        '    };',
+        '    const reLaunchCaller = (attempt = 0) => {',
+        '      if (!callerUrl) {',
+        '        completeActivation();',
+        '        return;',
+        '      }',
+        '      wx.reLaunch({',
+        '        url: callerUrl,',
+        '        success() {',
+        '          setTimeout(completeActivation, 100);',
+        '        },',
+        '        fail() {',
+        '          if (attempt < 4) setTimeout(() => reLaunchCaller(attempt + 1), 100);',
+        '        }',
+        '      });',
+        '    };',
+        '    reLaunchCaller();',
         '  }',
         '});',
         ''
@@ -953,9 +962,9 @@ function writeCourseShards(catalogue, options = {}) {
   });
   const nodeLoaderLines = [...entriesByUniversity.entries()].map(([universityCode, entries]) => {
     const modules = entries.map((entry) => (
-      `getNodeRequire()(${JSON.stringify(`../subpackages/ug-data-${entry.shardName}/ugCourseData/${entry.shardName}`)})`
+      `nodeRequire(${JSON.stringify(`../subpackages/ug-data-${entry.shardName}/ugCourseData/${entry.shardName}`)})`
     ));
-    return `  ${JSON.stringify(universityCode)}: () => [].concat(${modules.join(', ')}),`;
+    return `  ${JSON.stringify(universityCode)}: (nodeRequire) => [].concat(${modules.join(', ')}),`;
   });
   const counts = Object.fromEntries([...entriesByUniversity.entries()].map(([universityCode, entries]) => [
     universityCode,
@@ -978,7 +987,8 @@ function writeCourseShards(catalogue, options = {}) {
     'const cache = {};',
     '',
     'function getNodeRequire() {',
-    '  return eval(\'require\');',
+    '  if (typeof module === \'undefined\' || !module || typeof module.require !== \'function\') return null;',
+    '  return module.require.bind(module);',
     '}',
     '',
     'function getCoursesByUniversityCode(universityCode) {',
@@ -989,8 +999,9 @@ function writeCourseShards(catalogue, options = {}) {
     '      return app.globalData.ugCoursesByUniversity[key] || [];',
     '    }',
     '  }',
-    '  if (!nodeLoaders[key]) return [];',
-    '  if (!cache[key]) cache[key] = nodeLoaders[key]();',
+    '  const nodeRequire = getNodeRequire();',
+    '  if (!nodeRequire || !nodeLoaders[key]) return [];',
+    '  if (!cache[key]) cache[key] = nodeLoaders[key](nodeRequire);',
     '  return cache[key];',
     '}',
     '',

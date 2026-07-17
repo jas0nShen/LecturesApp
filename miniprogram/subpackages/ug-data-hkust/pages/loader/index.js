@@ -2,7 +2,6 @@
 const courses = require('../../ugCourseData/hkust');
 const universityCode = "HKUST";
 const packageName = "subpackages/ug-data-hkust";
-const isFinalPackage = true;
 
 function buildPageUrl(page) {
   if (!page || !page.route) return '';
@@ -17,13 +16,27 @@ Page({
       app.registerUgCourseShard({ universityCode, packageName, courses });
     }
     const pages = getCurrentPages();
-    this.callerUrl = buildPageUrl(pages[0]);
-  },
-  onReady() {
-    const app = getApp();
-    if (typeof app.completeUgCourseShardActivation === 'function') {
-      app.completeUgCourseShardActivation(packageName);
-    }
-    if (isFinalPackage && this.callerUrl) wx.reLaunch({ url: this.callerUrl });
+    const callerUrl = buildPageUrl(pages[pages.length - 2]);
+    const completeActivation = () => {
+      if (typeof app.completeUgCourseShardActivation === 'function') {
+        app.completeUgCourseShardActivation(packageName);
+      }
+    };
+    const reLaunchCaller = (attempt = 0) => {
+      if (!callerUrl) {
+        completeActivation();
+        return;
+      }
+      wx.reLaunch({
+        url: callerUrl,
+        success() {
+          setTimeout(completeActivation, 100);
+        },
+        fail() {
+          if (attempt < 4) setTimeout(() => reLaunchCaller(attempt + 1), 100);
+        }
+      });
+    };
+    reLaunchCaller();
   }
 });

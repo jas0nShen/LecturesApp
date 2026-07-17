@@ -113,7 +113,7 @@ test('TPG Study Plan shows explicit blocked and package-load failure states', as
   assert.match(failed.page.data.unsupportedMessage, /加载失败/);
 });
 
-test('UG Study Plan groups current Major courses, copies text, opens detail and preserves other Major records', async () => {
+test('UG Study Plan starts courses pending, applies user Year and Term, and preserves official reference data', async () => {
   const programmeId = 'POLYU-UG-JS3868-14';
   const majorId = 'POLYU-UG-JS3868-14-M1';
   const courseId = 'POLYU-UG-JS3868-14-M1-C1';
@@ -127,7 +127,8 @@ test('UG Study Plan groups current Major courses, copies text, opens detail and 
       majorId,
       curriculumYear: '2026'
     },
-    plannedUgCourseKeys: [currentKey, otherMajorKey]
+    plannedUgCourseKeys: [currentKey, otherMajorKey],
+    ugCoursePlanAssignments: [{ courseKey: otherMajorKey, plannedYear: 5, plannedTerm: 'full year' }]
   }, {
     ensureUniversityLoaded: () => Promise.resolve()
   });
@@ -138,20 +139,46 @@ test('UG Study Plan groups current Major courses, copies text, opens detail and 
   assert.equal(page.data.supported, true);
   assert.equal(page.data.ugPlan.majorId, majorId);
   assert.equal(page.data.ugPlan.courseCount, 1);
-  assert.deepEqual(page.data.ugPlan.groups.map((group) => group.name), ['推荐 Year 1']);
+  assert.deepEqual(page.data.ugPlan.groups.map((group) => group.name), ['待安排']);
   assert.equal(page.data.ugPlan.groups[0].courses[0].courseCode, 'COMP1004');
+  assert.match(page.data.ugPlan.groups[0].courses[0].userPlanLabel, /待安排/);
+  assert.match(page.data.ugPlan.groups[0].courses[0].officialReferenceLabel, /推荐年级 Year 1/);
+  page.copyUgPlan();
+  assert.match(getClipboard(), /用户计划：Year 待安排 · 待安排/);
+  assert.match(getClipboard(), /官方参考：推荐年级 Year 1/);
+
+  storage.ugCoursePlanAssignments.push({ courseKey: currentKey, plannedYear: 2, plannedTerm: '3' });
+  await page.onShow();
+  assert.deepEqual(page.data.ugPlan.groups.map((group) => group.name), ['Year 2 · Term 3']);
+  assert.equal(page.data.ugPlan.groups[0].courses[0].userPlanLabel, 'Year 2 · Term 3');
 
   page.copyUgPlan();
   assert.match(getClipboard(), /Major:/);
   assert.match(getClipboard(), /COMP1004/);
+  assert.match(getClipboard(), /用户计划：Year 2 · Term 3/);
+  assert.match(getClipboard(), /官方参考：推荐年级 Year 1/);
   assert.match(getClipboard(), /不计算毕业百分比、学分差额或毕业资格/);
   assert.doesNotMatch(getClipboard(), /\d+(?:\.\d+)?%|还差\s*\d+/);
 
   page.openUgDetail({ currentTarget: { dataset: { id: courseId } } });
   assert.match(navigations.at(-1), /course-detail\?ugId=.*POLYU-UG-JS3868-14-M1-C1/);
+  page.editUgAssignment({ currentTarget: { dataset: { id: courseId } } });
+  assert.match(navigations.at(-1), /plan-course\?ugId=.*POLYU-UG-JS3868-14-M1-C1/);
+
+  storage.userProfile = { ...storage.userProfile, majorId: 'POLYU-UG-JS3868-14-M2' };
+  await page.onShow();
+  assert.equal(page.data.ugPlan.majorId, 'POLYU-UG-JS3868-14-M2');
+  assert.deepEqual(page.data.ugPlan.groups.map((group) => group.name), ['Year 5 · Full Year']);
+  assert.equal(page.data.ugPlan.groups[0].courses[0].id, 'POLYU-UG-JS3868-14-M2-C1');
+
+  storage.userProfile = { ...storage.userProfile, majorId };
+  await page.onShow();
+  assert.deepEqual(page.data.ugPlan.groups.map((group) => group.name), ['Year 2 · Term 3']);
+  assert.equal(page.data.ugPlan.groups[0].courses[0].id, courseId);
 
   await page.removeUgCourse({ currentTarget: { dataset: { id: courseId } } });
   assert.deepEqual(storage.plannedUgCourseKeys, [otherMajorKey]);
+  assert.deepEqual(storage.ugCoursePlanAssignments, [{ courseKey: otherMajorKey, plannedYear: 5, plannedTerm: 'full year' }]);
   assert.equal(page.data.ugPlan.courseCount, 0);
 });
 

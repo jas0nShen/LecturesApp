@@ -14,7 +14,7 @@ test('feedback template includes launch context without uploading local user dat
   });
 
   assert(template.includes('【选课港反馈 / 纠错】'));
-  assert(template.includes('版本：1.0.6'));
+  assert(template.includes('版本：1.0.7'));
   assert(template.includes('学校：香港大学'));
   assert(template.includes('Programme：Master of Science in Artificial Intelligence (MSc(AI))'));
   assert(template.includes('当前资料状态：课程结构已开放 · 22 门课程'));

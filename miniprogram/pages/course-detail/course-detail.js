@@ -31,7 +31,7 @@ Page({
     this.setData({ loadError: false, dataSource: 'loading', routeOptions: options });
     if (options.tpgProgrammeId && options.courseCode) {
       let programme = tpgService.getProgramme(options.tpgProgrammeId);
-      const app = typeof getApp === 'function' ? getApp() : {};
+      const app = typeof getApp === 'function' ? (getApp({ allowDefault: true }) || {}) : {};
       try {
         if (programme && app.ensureTpgUniversityLoaded) await app.ensureTpgUniversityLoaded(programme.universityCode);
       } catch (error) {
@@ -92,7 +92,7 @@ Page({
       return;
     }
     if (options.ugId) {
-      const app = typeof getApp === 'function' ? getApp() : {};
+      const app = typeof getApp === 'function' ? (getApp({ allowDefault: true }) || {}) : {};
       const universityCode = options.universityCode || ugService.inferUniversityCodeFromCourseId(options.ugId);
       try {
         if (universityCode && app.ensureUniversityLoaded) await app.ensureUniversityLoaded(universityCode);
@@ -165,7 +165,7 @@ Page({
     const options = this.data.routeOptions || {};
     if (options.tpgProgrammeId) {
       const programme = tpgService.getProgramme(options.tpgProgrammeId);
-      const app = typeof getApp === 'function' ? getApp() : {};
+      const app = typeof getApp === 'function' ? (getApp({ allowDefault: true }) || {}) : {};
       if (programme && app.retryTpgUniversityLoad) {
         return app.retryTpgUniversityLoad(programme.universityCode).then(() => this.loadCourse(options)).catch(() => {
           wx.showToast({ title: '暂时无法加载，请稍后重试', icon: 'none' });

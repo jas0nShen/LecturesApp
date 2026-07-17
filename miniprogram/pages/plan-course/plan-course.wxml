@@ -1,4 +1,52 @@
-<view class="page" wx:if="{{course}}">
+<view class="page">
+  <view wx:if="{{loading}}" class="section plan-state-message">
+    <view class="plan-kicker">LOADING COURSE</view>
+    <view class="plan-state-title">正在加载本科课程</view>
+    <view class="plan-state-copy">课程资料来自本机分包，请稍候。</view>
+  </view>
+
+  <view wx:elif="{{loadError || unsupportedMessage}}" class="section plan-state-message">
+    <view class="plan-kicker">PLANNING STATUS</view>
+    <view class="plan-state-title">暂时无法调整排期</view>
+    <view class="plan-state-copy">{{unsupportedMessage}}</view>
+    <view wx:if="{{loadError}}" class="button state-button" bindtap="retryUgLoad">重试加载</view>
+  </view>
+
+  <block wx:elif="{{mode === 'ug-course-plan' && ugCourse}}">
+    <view class="plan-head">
+      <view class="plan-kicker">UG COURSE SCHEDULE</view>
+      <view class="plan-code">{{ugCourse.courseCode}}</view>
+      <view class="plan-title">{{ugCourse.titleEn}}</view>
+      <view class="plan-major">{{ugMajorName}}</view>
+    </view>
+
+    <view class="section official-reference">
+      <view class="reference-kicker">官方资料参考</view>
+      <view class="reference-row"><text>推荐年级</text><text>{{officialYearLabel}}</text></view>
+      <view class="reference-row"><text>官方学期资料</text><text>{{officialTermLabel}}</text></view>
+      <view class="reference-note">以下排期是你的本机计划，不会改写为学校官方安排。</view>
+    </view>
+
+    <view class="section panel plan-form">
+      <view class="field">
+        <view class="label">你的计划修读 Year</view>
+        <picker range="{{ugYearLabels}}" value="{{ugYearIndex}}" bindchange="onUgYearChange">
+          <view class="select">{{ugYearLabels[ugYearIndex]}}</view>
+        </picker>
+      </view>
+      <view class="field">
+        <view class="label">你的计划修读 Term</view>
+        <picker range="{{ugTermLabels}}" value="{{ugTermIndex}}" bindchange="onUgTermChange">
+          <view class="select">{{ugTermLabels[ugTermIndex]}}</view>
+        </picker>
+      </view>
+      <view class="assignment-note">Year 或 Term 任一项为“待安排”时，课程会保留在 Study Plan 的“待安排”分组。</view>
+      <view class="button" bindtap="save">保存本科排期</view>
+      <view class="clear-button" bindtap="clearUgAssignment">清除排期并设为待安排</view>
+    </view>
+  </block>
+
+  <block wx:elif="{{course}}">
   <view class="plan-head">
     <view class="plan-kicker">STUDY PLAN</view>
     <view class="plan-code">{{course.courseCode}}</view>
@@ -20,4 +68,5 @@
     </view>
     <view class="button" bindtap="save">保存到 Study Plan</view>
   </view>
+  </block>
 </view>

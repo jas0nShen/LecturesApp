@@ -774,6 +774,7 @@ test('user data summary counts local records and clear removes every user key', 
   service.toggleOfferingCompleted('COMP1117');
   service.toggleTpgCourseCompleted('POLYU-TPG-090', 'COMP5521');
   service.toggleUgPlannedCourse('HKU-UG-6004-1', 'HKU-UG-6004-1-M1', 'HKU-UG-6004-1-M1-SUP-ARCH1079-3');
+  service.saveUgCoursePlanAssignment('HKU-UG-6004-1', 'HKU-UG-6004-1-M1', 'HKU-UG-6004-1-M1-SUP-ARCH1079-3', 2, 'summer');
   service.saveStudyPlanItem('COMP1117', 1, '1');
   service.saveCourseNote('COMP1117', 'Remember this.');
   service.recordRecentlyViewed('COMP1117');
@@ -811,6 +812,7 @@ test('all declared local user keys are backup and restore aware', () => {
     'completedOfferingCodes',
     'completedTpgCourseKeys',
     'plannedUgCourseKeys',
+    'ugCoursePlanAssignments',
     'plannedTpgCourseKeys',
     'studyPlanItems',
     'recentlyViewedCourseCodes',
@@ -831,6 +833,11 @@ test('all declared local user keys are backup and restore aware', () => {
       completedOfferingCodes: ['COMP2113'],
       completedTpgCourseKeys: ['POLYU-TPG-090:COMP5521'],
       plannedUgCourseKeys: ['HKU-UG-6004-1:HKU-UG-6004-1-M1:HKU-UG-6004-1-M1-SUP-ARCH1079-3'],
+      ugCoursePlanAssignments: [{
+        courseKey: 'HKU-UG-6004-1:HKU-UG-6004-1-M1:HKU-UG-6004-1-M1-SUP-ARCH1079-3',
+        plannedYear: 2,
+        plannedTerm: 'summer'
+      }],
       plannedTpgCourseKeys: ['POLYU-TPG-090:COMP5521'],
       studyPlanItems: [{ courseCode: 'COMP3278', year: 2, term: '1' }],
       recentlyViewedCourseCodes: ['COMP4801'],
@@ -850,10 +857,48 @@ test('all declared local user keys are backup and restore aware', () => {
     () => service.importUserData({ app: 'lectures-app', version: 1, data: { plannedUgCourseKeys: ['HKU-UG-6004-1::COURSE'] } }),
     /Invalid plannedUgCourseKeys/
   );
+  assert.throws(
+    () => service.importUserData({ app: 'lectures-app', version: 1, data: { ugCoursePlanAssignments: [{ courseKey: 'A:B:C', plannedYear: 7, plannedTerm: '1' }] } }),
+    /Invalid ugCoursePlanAssignments/
+  );
+  assert.throws(
+    () => service.importUserData({ app: 'lectures-app', version: 1, data: { ugCoursePlanAssignments: [{ courseKey: 'A:B:C', plannedYear: 2, plannedTerm: 'winter' }] } }),
+    /Invalid ugCoursePlanAssignments/
+  );
+  assert.throws(
+    () => service.importUserData({ app: 'lectures-app', version: 1, data: { ugCoursePlanAssignments: [{ courseKey: 'A:B:C', plannedYear: 2, plannedTerm: '1' }] } }),
+    /Invalid ugCoursePlanAssignments/
+  );
+  assert.throws(
+    () => service.importUserData({
+      app: 'lectures-app',
+      version: 1,
+      data: {
+        plannedUgCourseKeys: ['A:B:C'],
+        ugCoursePlanAssignments: [
+          { courseKey: 'A:B:C', plannedYear: 2, plannedTerm: '1' },
+          { courseKey: 'A:B:C', plannedYear: 3, plannedTerm: '2' }
+        ]
+      }
+    }),
+    /Invalid ugCoursePlanAssignments/
+  );
+  assert.throws(
+    () => service.importUserData({
+      app: 'lectures-app',
+      version: 1,
+      data: {
+        plannedUgCourseKeys: ['A:B:C'],
+        ugCoursePlanAssignments: [{ courseKey: 'A:B:C', plannedYear: null, plannedTerm: '' }]
+      }
+    }),
+    /Invalid ugCoursePlanAssignments/
+  );
 });
 
 test('UG planned courses use Programme, Major and course identity and keep other Majors isolated', () => {
   const programmeId = 'POLYU-UG-JS3868-14';
+  const otherProgrammeId = 'POLYU-UG-OTHER';
   const majorId = 'POLYU-UG-JS3868-14-M1';
   const otherMajorId = 'POLYU-UG-JS3868-14-M2';
   const courseId = 'POLYU-UG-JS3868-14-M1-C1';
@@ -864,10 +909,56 @@ test('UG planned courses use Programme, Major and course identity and keep other
 
   service.toggleUgPlannedCourse(programmeId, majorId, courseId);
   service.toggleUgPlannedCourse(programmeId, otherMajorId, courseId);
+  service.toggleUgPlannedCourse(otherProgrammeId, majorId, courseId);
   assert.equal(service.isUgCoursePlanned(programmeId, majorId, courseId), true);
   assert.equal(service.isUgCoursePlanned(programmeId, otherMajorId, courseId), true);
+  assert.equal(service.isUgCoursePlanned(otherProgrammeId, majorId, courseId), true);
   service.removeUgPlannedCourse(programmeId, majorId, courseId);
-  assert.deepEqual(service.getUgPlannedCourseKeys(), [`${programmeId}:${otherMajorId}:${courseId}`]);
+  assert.deepEqual(service.getUgPlannedCourseKeys(), [
+    `${programmeId}:${otherMajorId}:${courseId}`,
+    `${otherProgrammeId}:${majorId}:${courseId}`
+  ]);
+});
+
+test('UG course assignments persist Year and Term per Programme and Major and clear with plan removal', () => {
+  const programmeId = 'POLYU-UG-JS3868-14';
+  const majorId = 'POLYU-UG-JS3868-14-M1';
+  const otherMajorId = 'POLYU-UG-JS3868-14-M2';
+  const courseId = 'POLYU-UG-JS3868-14-M1-C1';
+
+  service.toggleUgPlannedCourse(programmeId, majorId, courseId);
+  service.toggleUgPlannedCourse(programmeId, otherMajorId, courseId);
+  assert.equal(service.getUgCoursePlanAssignment(programmeId, majorId, courseId), null);
+
+  assert.deepEqual(service.saveUgCoursePlanAssignment(programmeId, majorId, courseId, 2, '3'), {
+    courseKey: `${programmeId}:${majorId}:${courseId}`,
+    plannedYear: 2,
+    plannedTerm: '3'
+  });
+  service.saveUgCoursePlanAssignment(programmeId, otherMajorId, courseId, 5, 'full year');
+  assert.equal(service.getUgCoursePlanAssignment(programmeId, majorId, courseId).plannedYear, 2);
+  assert.equal(service.getUgCoursePlanAssignment(programmeId, otherMajorId, courseId).plannedYear, 5);
+
+  service.saveUgCoursePlanAssignment(programmeId, majorId, courseId, 4, 'summer');
+  assert.equal(service.getUgCoursePlanAssignment(programmeId, majorId, courseId).plannedTerm, 'summer');
+  service.removeUgPlannedCourse(programmeId, majorId, courseId);
+  assert.equal(service.getUgCoursePlanAssignment(programmeId, majorId, courseId), null);
+  assert.equal(service.getUgCoursePlanAssignment(programmeId, otherMajorId, courseId).plannedTerm, 'full year');
+});
+
+test('UG course assignments support partial pending values and explicit clearing', () => {
+  const ids = ['HKU-UG-6004-1', 'HKU-UG-6004-1-M1', 'HKU-UG-6004-1-M1-SUP-ARCH1079-3'];
+  service.toggleUgPlannedCourse(...ids);
+  service.saveUgCoursePlanAssignment(...ids, 3, '');
+  assert.deepEqual(service.getUgCoursePlanAssignment(...ids), {
+    courseKey: ids.join(':'),
+    plannedYear: 3,
+    plannedTerm: ''
+  });
+  assert.deepEqual(service.saveUgCoursePlanAssignment(...ids, '', ''), []);
+  assert.equal(service.getUgCoursePlanAssignment(...ids), null);
+  assert.throws(() => service.saveUgCoursePlanAssignment(...ids, 0, '1'), /Invalid UG planned year/);
+  assert.throws(() => service.saveUgCoursePlanAssignment(...ids, 2, 'winter'), /Invalid UG planned term/);
 });
 
 test('backup import accepts legacy TPG profiles and validates optional Track ownership', () => {

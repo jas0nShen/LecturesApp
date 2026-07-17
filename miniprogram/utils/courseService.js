@@ -20,6 +20,8 @@ const STUDY_PLAN_CATEGORY_DEFS = [
   { key: 'other', label: 'Other' }
 ];
 
+const UG_COURSE_PLAN_TERMS = ['1', '2', '3', 'summer', 'full year'];
+
 const USER_DATA_KEYS = [
   'userProfile',
   'favoriteCourseIds',
@@ -29,6 +31,7 @@ const USER_DATA_KEYS = [
   'completedOfferingCodes',
   'completedTpgCourseKeys',
   'plannedUgCourseKeys',
+  'ugCoursePlanAssignments',
   'plannedTpgCourseKeys',
   'studyPlanItems',
   'recentlyViewedCourseCodes',
@@ -330,6 +333,7 @@ function importUserData(snapshot) {
     'completedOfferingCodes',
     'completedTpgCourseKeys',
     'plannedUgCourseKeys',
+    'ugCoursePlanAssignments',
     'plannedTpgCourseKeys',
     'studyPlanItems',
     'recentlyViewedCourseCodes',
@@ -366,7 +370,32 @@ function importUserData(snapshot) {
     })) {
       throw new Error('Invalid plannedUgCourseKeys');
     }
+    if (key === 'ugCoursePlanAssignments') {
+      const seenCourseKeys = new Set();
+      const invalid = value.some((item) => {
+        if (!item || typeof item !== 'object' || Array.isArray(item)) return true;
+        if (!Object.prototype.hasOwnProperty.call(item, 'courseKey')
+          || !Object.prototype.hasOwnProperty.call(item, 'plannedYear')
+          || !Object.prototype.hasOwnProperty.call(item, 'plannedTerm')) return true;
+        const parts = typeof item.courseKey === 'string' ? item.courseKey.split(':') : [];
+        if (parts.length !== 3 || parts.some((part) => !part || part !== part.trim())) return true;
+        if (item.courseKey !== buildUgCourseKey(parts[0], parts[1], parts[2]) || seenCourseKeys.has(item.courseKey)) return true;
+        seenCourseKeys.add(item.courseKey);
+        const yearPending = item.plannedYear === null || item.plannedYear === '';
+        const year = Number(item.plannedYear);
+        if (!yearPending && (!Number.isInteger(year) || year < 1 || year > 6)) return true;
+        if (typeof item.plannedTerm !== 'string' || (item.plannedTerm && !UG_COURSE_PLAN_TERMS.includes(item.plannedTerm))) return true;
+        return yearPending && !item.plannedTerm;
+      });
+      if (invalid) throw new Error('Invalid ugCoursePlanAssignments');
+    }
   });
+  if (parsed.data.ugCoursePlanAssignments) {
+    const plannedUgCourseKeys = new Set(parsed.data.plannedUgCourseKeys || []);
+    if (parsed.data.ugCoursePlanAssignments.some((item) => !plannedUgCourseKeys.has(item.courseKey))) {
+      throw new Error('Invalid ugCoursePlanAssignments');
+    }
+  }
   const importedProfile = parsed.data.userProfile;
   if (importedProfile && importedProfile.profileType === 'tpg') {
     const programme = tpgService.getProgramme(importedProfile.programmeId);
@@ -527,10 +556,10 @@ function isUgCoursePlanned(programmeId, majorId, courseId) {
 function toggleUgPlannedCourse(programmeId, majorId, courseId) {
   const key = buildUgCourseKey(programmeId, majorId, courseId);
   const planned = getUgPlannedCourseKeys();
-  const next = planned.includes(key)
-    ? planned.filter((item) => item !== key)
-    : planned.concat(key);
+  const removing = planned.includes(key);
+  const next = removing ? planned.filter((item) => item !== key) : planned.concat(key);
   wx.setStorageSync('plannedUgCourseKeys', next);
+  if (removing) clearUgCoursePlanAssignment(programmeId, majorId, courseId);
   return next;
 }
 
@@ -538,6 +567,38 @@ function removeUgPlannedCourse(programmeId, majorId, courseId) {
   const key = buildUgCourseKey(programmeId, majorId, courseId);
   const next = getUgPlannedCourseKeys().filter((item) => item !== key);
   wx.setStorageSync('plannedUgCourseKeys', next);
+  clearUgCoursePlanAssignment(programmeId, majorId, courseId);
+  return next;
+}
+
+function getUgCoursePlanAssignments() {
+  return wx.getStorageSync('ugCoursePlanAssignments') || [];
+}
+
+function getUgCoursePlanAssignment(programmeId, majorId, courseId) {
+  const key = buildUgCourseKey(programmeId, majorId, courseId);
+  return getUgCoursePlanAssignments().find((item) => item.courseKey === key) || null;
+}
+
+function saveUgCoursePlanAssignment(programmeId, majorId, courseId, plannedYear, plannedTerm) {
+  const key = buildUgCourseKey(programmeId, majorId, courseId);
+  if (!getUgPlannedCourseKeys().includes(key)) throw new Error('UG course is not in the plan');
+  const yearPending = plannedYear === null || plannedYear === undefined || plannedYear === '';
+  const year = yearPending ? null : Number(plannedYear);
+  const term = String(plannedTerm || '').trim().toLowerCase();
+  if (year !== null && (!Number.isInteger(year) || year < 1 || year > 6)) throw new Error('Invalid UG planned year');
+  if (term && !UG_COURSE_PLAN_TERMS.includes(term)) throw new Error('Invalid UG planned term');
+  if (year === null && !term) return clearUgCoursePlanAssignment(programmeId, majorId, courseId);
+  const assignment = { courseKey: key, plannedYear: year, plannedTerm: term };
+  const next = getUgCoursePlanAssignments().filter((item) => item.courseKey !== key).concat(assignment);
+  wx.setStorageSync('ugCoursePlanAssignments', next);
+  return assignment;
+}
+
+function clearUgCoursePlanAssignment(programmeId, majorId, courseId) {
+  const key = buildUgCourseKey(programmeId, majorId, courseId);
+  const next = getUgCoursePlanAssignments().filter((item) => item.courseKey !== key);
+  wx.setStorageSync('ugCoursePlanAssignments', next);
   return next;
 }
 
@@ -1483,6 +1544,8 @@ module.exports = {
   getFavoriteCoursesRemote,
   getFavoriteOfferingCodes,
   getFavoriteTpgCourseKeys,
+  getUgCoursePlanAssignment,
+  getUgCoursePlanAssignments,
   getUgPlannedCourseKeys,
   getTpgPlannedCourseKeys,
   getFavoriteOfferings,
@@ -1518,11 +1581,13 @@ module.exports = {
   listProgrammesRemote,
   listUniversitiesRemote,
   removeStudyPlanItem,
+  clearUgCoursePlanAssignment,
   removeUgPlannedCourse,
   removeTpgPlannedCourse,
   recordCourseSearch,
   recordTpgProgrammeSearch,
   recordRecentlyViewed,
+  saveUgCoursePlanAssignment,
   saveStudyPlanItem,
   saveCourseNote,
   saveProfile,

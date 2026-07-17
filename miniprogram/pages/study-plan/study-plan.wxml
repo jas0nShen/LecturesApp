@@ -76,12 +76,12 @@
     <view class="summary-strip tpg-summary-strip">
       <view class="summary-item"><view class="summary-value">{{ugPlan.courseCount}}</view><view class="summary-label">计划课程</view></view>
       <view class="summary-item"><view class="summary-value">{{ugPlan.knownCreditsDisplay}}</view><view class="summary-label">已知学分</view></view>
-      <view class="summary-item"><view class="summary-value">{{ugPlan.groups.length}}</view><view class="summary-label">年级分组</view></view>
+      <view class="summary-item"><view class="summary-value">{{ugPlan.groups.length}}</view><view class="summary-label">排期分组</view></view>
       <view class="summary-item"><view class="summary-value">{{ugPlan.curriculumYear || '-'}}</view><view class="summary-label">课程年份</view></view>
     </view>
 
     <view class="plan-export {{ugPlan.courseCount ? '' : 'disabled'}}" bindtap="copyUgPlan">
-      <view><view class="export-title">复制本科课程计划</view><view class="export-copy">包含 Programme、Major、推荐年级、学期与已知学分</view></view>
+      <view><view class="export-title">复制本科课程计划</view><view class="export-copy">包含用户排期、官方推荐参考与已知学分</view></view>
       <view class="export-mark">COPY ↗</view>
     </view>
 
@@ -96,12 +96,15 @@
             <view>
               <view class="course-code">{{course.courseCode}}</view>
               <view class="course-title">{{course.titleEn}}</view>
-              <view class="course-credits">{{course.semester}}<text wx:if="{{course.creditLabel}}"> · {{course.creditLabel}}</text></view>
+              <view class="user-schedule">用户计划 · {{course.userPlanLabel}}</view>
+              <view class="official-schedule">官方参考 · {{course.officialReferenceLabel}}</view>
+              <view wx:if="{{course.creditLabel}}" class="course-credits">{{course.creditLabel}}</view>
               <view class="course-tags"><text class="course-tag">{{ugPlan.majorName}}</text></view>
             </view>
             <view class="detail-mark">详情 →</view>
           </view>
           <view class="plan-actions ug-plan-actions">
+            <view class="plan-action schedule-action" data-id="{{course.id}}" catchtap="editUgAssignment">调整排期</view>
             <view class="plan-action" data-id="{{course.id}}" catchtap="openUgDetail">打开详情</view>
             <view class="plan-action danger" data-id="{{course.id}}" catchtap="removeUgCourse">移出计划</view>
           </view>
@@ -111,7 +114,7 @@
 
     <view wx:else class="tpg-empty">
       <view class="tpg-empty-title">当前 Major 还没有计划课程</view>
-      <view class="tpg-empty-copy">从本科课程详情加入计划；其他 Major 的旧记录会保留，但不计入当前计划。</view>
+      <view class="tpg-empty-copy">从本科课程详情加入计划；新课程会先进入“待安排”。其他 Major 的旧记录会保留，但不计入当前计划。</view>
     </view>
     <view class="section add-course" bindtap="goUgCourses">＋ 从本科课程清单添加</view>
     <view class="tpg-disclaimer">本页只整理本机课程清单，不计算毕业百分比、学分差额或毕业资格。</view>

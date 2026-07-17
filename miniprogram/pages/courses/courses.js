@@ -90,7 +90,7 @@ Page({
   },
 
   async refresh() {
-    const app = typeof getApp === 'function' ? getApp() : {};
+    const app = typeof getApp === 'function' ? (getApp({ allowDefault: true }) || {}) : {};
     if (this._searchTimer) {
       clearTimeout(this._searchTimer);
       this._searchTimer = null;
@@ -503,7 +503,7 @@ Page({
 
   retryUgLoad() {
     const profile = service.getProfile();
-    const app = typeof getApp === 'function' ? getApp() : {};
+    const app = typeof getApp === 'function' ? (getApp({ allowDefault: true }) || {}) : {};
     if (profile && profile.profileType === 'tpg') {
       const programme = tpgService.getProgramme(profile.programmeId);
       const universityCode = profile.universityCode || (programme && programme.universityCode);
