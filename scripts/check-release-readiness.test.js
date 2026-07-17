@@ -19,7 +19,7 @@ test('current mini-program passes automated release readiness checks', () => {
   const result = checkReleaseReadiness(new Date('2026-07-05T12:00:00+08:00'));
   assert.equal(result.ready, true);
   assert.deepEqual(result.errors, []);
-  assert.equal(result.release.version, '1.0.5');
+  assert.equal(result.release.version, '1.0.6');
   assert.equal(result.release.target, '香港高校课程规划助手正式版');
   assert.equal(result.release.dataMode, '体验版 / 正式版离线数据');
   assert(result.metrics.pageCount >= 10);
@@ -69,7 +69,7 @@ test('WeChat review version description stays within the 200 character limit', (
     reviewDoc,
     '### 提交审核版本描述（200 字以内）'
   );
-  assert(versionDescription.includes('1.0.5'));
+  assert(versionDescription.includes('1.0.6'));
   assert(versionDescription.length <= 200);
 });
 

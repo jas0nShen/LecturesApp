@@ -1,8 +1,8 @@
 # 微信小程序发布检查清单
 
-## 1.0.5 正式版定位
+## 1.0.6 正式版定位
 
-- 版本号：`1.0.5`
+- 版本号：`1.0.6`
 - 目标用户：香港高校授课硕士学生；本科用户可先使用 Programme / Major 目录预览
 - 核心能力：选择 Programme、浏览授课硕士资料库、查看已开放课程组、预览本科 Programme / Major、收藏/计划 HKU 官方开课示例、查看数据状态与隐私说明
 - 数据边界：TPG Programme 索引已导入；课程组按 Programme 逐步开放。课程组尚未开放的 Programme 只展示索引与资料来源，暂不生成毕业判断。本科目录用于选择学校、Programme 与 Major；未复核课程规则前不生成本科毕业进度
@@ -88,7 +88,7 @@ npm run status:ug-sources -- --school HKU --missing-only --missing-limit 10 --re
 
 ## 当前发布模式
 
-1.0.5 正式版：
+1.0.6 正式版：
 
 - 开发版可连接本机服务，用于本地调试；
 - 体验版和正式版直接使用离线数据；
@@ -108,7 +108,7 @@ npm run status:ug-sources -- --school HKU --missing-only --missing-limit 10 --re
 9. 进入“我的”，查看“数据状态”、“数据与隐私”；
 10. 测试复制备份、从剪贴板恢复、清除本机数据前的二次确认。
 
-## 1.0.5 RC1 分包与能力边界专项验收
+## 1.0.6 RC1 分包与能力边界专项验收
 
 以下路径在 iOS 和 Android 都至少各走一遍。每次切换学校后，等待课程页完成加载；如果出现“课程数据加载失败”，验证“重新加载”能恢复，且不能把失败误显示成“课程清单待开放”。
 
@@ -122,6 +122,21 @@ npm run status:ug-sources -- --school HKU --missing-only --missing-limit 10 --re
 | TPG 待开放项目 | 选择一个无课程组的 Programme，进入课程和毕业检查 | 显示“课程清单待开放”，不显示 0 门已开放课程或默认 HKU 课程 |
 | Study Plan 边界 | 对普通 UG、TPG 和未设置资料分别打开 Study Plan | 显示适用范围说明和返回入口；不得显示 HKU 默认建议或误写用户资料 |
 | HKU BEng CompSc 示例 | 打开官方开课示例、收藏/标记已修并进入 Study Plan | 仅该内置示例提供收藏、已修、计划和核心课建议；既有本机数据不被清除 |
+
+## 2026-07-17 TPG 选课计划 v1 模拟器验收
+
+使用微信开发者工具官方 automation 接口完成以下本地模拟器流程：
+
+| 样本 | 验收结果 |
+| --- | --- |
+| `POLYU-TPG-090 Blockchain Technology` | 显示 36 门课程；`COMP5521` 可加入计划；课程列表显示已计划状态；Study Plan 按官方课程组显示 1 门课程；标记已修、复制计划及移除均通过 |
+| `HKU-TPG-031 Master of Education (MEd)` | Generalist Track 只计 1 门当前课程；切换到 Chinese Language Education 后计 2 门；两条本机记录始终保留，其他 Track 课程不计入 Generalist 当前统计 |
+| TPG 冷分包返回 | PolyU 与 HKU 冷加载均能从临时 loader 返回调用页；针对“`navigateBack` 报成功但 loader 仍在栈顶”的模拟器行为增加 `reLaunch` 回调用页兜底 |
+
+- `npm run check:ship`：669/669 测试通过，`ready=true`。
+- iOS 真机：未执行。
+- Android 真机：未执行。
+- 本轮模拟器验收不能替代下方正式提审前的真机矩阵。
 
 ## 真机验收记录模板
 

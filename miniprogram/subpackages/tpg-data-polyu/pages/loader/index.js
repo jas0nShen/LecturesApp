@@ -3,22 +3,54 @@ const programmes = require('../../tpgCourseData/polyu');
 const universityCode = "POLYU";
 const packageName = "subpackages/tpg-data-polyu";
 
+function buildPageUrl(page) {
+  if (!page || !page.route) return '';
+  const query = Object.keys(page.options || {}).map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(page.options[key])}`).join('&');
+  return `/${page.route}${query ? `?${query}` : ''}`;
+}
+
 Page({
   onLoad() {
     const app = getApp();
     if (typeof app.registerTpgProgrammeShard === 'function') {
       app.registerTpgProgrammeShard({ universityCode, packageName, programmes });
     }
+    const pages = getCurrentPages();
+    const callerUrl = buildPageUrl(pages[pages.length - 2]);
+    const loaderRoute = `${packageName}/pages/loader/index`;
     const completeActivation = () => {
       if (typeof app.completeTpgProgrammeShardActivation === 'function') {
         app.completeTpgProgrammeShardActivation(packageName);
       }
     };
+    const isLoaderCurrent = () => {
+      const currentPages = getCurrentPages();
+      const current = currentPages[currentPages.length - 1];
+      return Boolean(current && current.route === loaderRoute);
+    };
+    const reLaunchCaller = (attempt = 0) => {
+      if (!callerUrl) {
+        completeActivation();
+        return;
+      }
+      wx.reLaunch({
+        url: callerUrl,
+        success: completeActivation,
+        fail() {
+          if (attempt < 4) setTimeout(() => reLaunchCaller(attempt + 1), 100);
+        }
+      });
+    };
+    const confirmReturned = () => setTimeout(() => {
+      if (isLoaderCurrent()) reLaunchCaller();
+      else completeActivation();
+    }, 100);
     const returnToCaller = (attempt = 0) => wx.navigateBack({
       delta: 1,
-      success: completeActivation,
+      success: confirmReturned,
       fail() {
         if (attempt < 4) setTimeout(() => returnToCaller(attempt + 1), 100);
+        else reLaunchCaller();
       }
     });
     setTimeout(() => returnToCaller(), 100);
