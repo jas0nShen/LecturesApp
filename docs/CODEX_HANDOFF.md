@@ -1,6 +1,6 @@
 # Codex 项目交接
 
-最后核验时间：2026-07-17（Asia/Shanghai）
+最后核验时间：2026-07-18（Asia/Shanghai）
 
 ## 当前项目目标
 
@@ -8,19 +8,19 @@
 
 当前产品边界是：先保证离线发布、数据可追溯和规则不误导，再继续补课程覆盖与规划能力。未经明确产品决定，不引入登录、云同步、统计、敏感权限或生产 API。
 
-当前仓库发布资料已统一为 `1.0.6`（`package.json`、运行时 `releaseInfo`、`docs/MVP_SPEC.md`、`docs/RELEASE_CHECKLIST.md`、`docs/REVIEW_SUBMISSION.md`）。微信开发者工具官方 CLI 已上传 `1.0.6`；没有提交审核或发布正式版。
+当前仓库发布资料已统一为 `1.0.7`（`package.json`、运行时 `releaseInfo`、`docs/MVP_SPEC.md`、`docs/RELEASE_CHECKLIST.md`、`docs/REVIEW_SUBMISSION.md`）。微信开发者工具官方 CLI 已上传 `1.0.7`；没有提交审核或发布正式版。
 
 ## 可验证的仓库快照
 
 - 工作目录：`/Users/shenjingsong/Documents/develop/lecturesApp`
 - 分支：`main`
-- 1.0.6 发布候选：TPG 选课计划、冷分包 loader 返回兜底及 669 项测试
-- 本地 `origin/main`：`0f01d64 Expand HKU TPG curriculum coverage`
-- 包版本：`1.0.6`
+- 1.0.7 发布候选：本科可编辑排期、UG 双分包加载修复、微信基础库兼容及 683 项测试
+- 本地 `origin/main`：`6915796 Add undergraduate course planning`
+- 包版本：`1.0.7`
 - 当前 `git status --short --branch`：
 
 ```text
-## main...origin/main [ahead 7]
+## main...origin/main [ahead 2]
 ?? .playwright-cli/
 ```
 
@@ -30,6 +30,10 @@
 最近关键提交（本次交接提交前）：
 
 ```text
+d39634d Release 1.0.7 with editable UG planning
+6915796 Add undergraduate course planning
+d1403bf Update EdUHK cultural heritage programme status
+8e4dc01 Document 1.0.6 upload
 361ee05 Release 1.0.6 with reliable TPG planning
 f51c980 Add TPG course planning
 18c026a Document 1.0.5 upload handoff
@@ -61,8 +65,11 @@ df91815 Add PolyU Design curriculum and source evidence
 - 收藏、已修、最近查看、搜索历史、课程笔记、Study Plan、备份/恢复和清除数据均保存在微信本地存储。
 - TPG 收藏和已修状态以 Programme ID 加标准化课程代码为键，避免跨 Programme 冲突。
 - TPG 已支持 Programme/Track 范围内的选课计划、课程组统计、计划课程详情、移除和标记已修；切换 Track 后旧记录保留但不计入当前统计。
+- 已开放课程清单的本科 Major 支持加入/移出课程、Year 1–6 与 Term 1/2/3、Summer、Full Year 排期、待安排分组和复制计划；官方推荐信息与用户排期分开展示。
+- 本科排期以 Programme + Major + Course 隔离，已纳入本机备份、恢复、清除和非法导入校验；移出课程会同步清除排期。
 - 开发版可使用零依赖 Node 本机 API；体验版和正式版在未配置生产 HTTPS 时只使用随包离线数据，不访问用户设备的 `localhost`。
-- UG 与 TPG 大型课程数据分别拆入微信分包，主包保留轻量索引；所有当前分包均低于 2 MB。
+- UG 与 TPG 大型课程数据分别拆入微信分包，主包保留轻量索引；UG 双分包 loader 可返回调用页并完成 activation，所有当前分包均低于 2 MB。
+- UG/TPG Node 测试 fallback 不再使用微信基础库禁止的 `eval`。
 
 ### 数据与规则覆盖
 
@@ -84,10 +91,12 @@ df91815 Add PolyU Design curriculum and source evidence
 - Git 提交 `2f37396` 已包含 HKU Social Sciences 049 至 055、生成分包、builder、测试及 `1.0.5` 版本资料。
 - Git 提交 `f51c980` 已包含 TPG 选课计划、本地备份/恢复支持、浏览入口、Study Plan 页面和页面状态测试。
 - Git 提交 `361ee05` 已包含 `1.0.6` 版本资料、冷分包 loader 返回兜底、8 个生成 loader 和回归测试。
-- 本地 `main` 在本次上传记录提交完成后比本地远端跟踪引用 `origin/main` ahead 7；本次没有 push。
+- Git 提交 `d39634d` 已包含本科可编辑排期、UG 双分包加载修复、微信基础库兼容、测试及 `1.0.7` 版本资料。
+- 本地 `main` 在本次上传记录提交完成后比本地远端跟踪引用 `origin/main` ahead 2；本次没有 push。
 - 微信开发者工具已显示最新 `1.0.5` 代码上传成功，更新类型为“修订补丁”，备注为 `1.0.5: Add TPG course planning`。
 - 2026-07-17 已通过微信开发者工具官方 CLI 上传 `1.0.6`，备注为 `1.0.6: Add TPG course planning and reliable loaders`，命令返回 `✔ upload`；上传包 8.6 MB，主包 1.4 MB，所有分包低于 2 MB。
-- `npm run check:ship` 通过：669/669 测试、`ready=true`、主包 1,772,938 bytes，所有分包低于 2 MB。
+- 2026-07-18 已通过微信开发者工具官方 CLI 上传 `1.0.7`，备注为 `1.0.7: Add editable UG course planning`，命令返回 `✔ upload`；实际上传包 8.6 MB，主包 1.4 MB，所有分包低于 2 MB。
+- `npm run check:ship` 通过：683/683 测试、`ready=true`、主包 1,804,892 bytes，所有分包低于 2 MB。
 - 微信官方 automation 已完成普通 `POLYU-TPG-090` 闭环：36 门课程、`COMP5521` 加入计划、列表状态、官方分组、标记已修、复制与移除均通过。
 - 多 Track `HKU-TPG-031` 验收通过：Generalist 计 1 门，Chinese Language Education 计 2 门；两条记录均保留，旧 Track 课程不计入 Generalist 当前统计。
 - PolyU 与 HKU 冷分包均能从临时 loader 返回调用页；iOS/Android 真机未执行。
@@ -104,7 +113,7 @@ df91815 Add PolyU Design curriculum and source evidence
 
 ### 发布与验收缺口
 
-- 仓库版本资料和微信已上传代码均为 `1.0.6`；上传不等于已提交审核。
+- 仓库版本资料和微信已上传代码均为 `1.0.7`；上传不等于已提交审核。
 - `docs/RELEASE_CHECKLIST.md` 的 iOS/Android 真机矩阵没有完成记录。
 - 微信后台隐私声明、服务类目、备案、审核材料核对尚未在仓库中记录为完成。
 - 尚未提交微信审核，也没有发布正式版。
@@ -125,7 +134,7 @@ npm run status:tpg-courses -- --school=HKU
 然后按以下顺序继续：
 
 1. 保留 `.playwright-cli/`；不要 reset、checkout、clean 或 stash 后遗忘。
-2. 1.0.6 包含 TPG 选课计划、loader 返回兜底、8 个生成 loader、测试和验收记录。不要把 `.playwright-cli/` 纳入提交。
+2. 1.0.7 包含本科可编辑排期、UG 双分包加载修复、微信基础库兼容、测试和验收记录。不要把 `.playwright-cli/` 纳入提交。
 3. 如继续处理 `blocked` TPG，只在获得新的官方证据时更新对应 supplement；不要根据相似 Programme、旧学年或算术推断补全课程。
 4. 每批 TPG 来源变更执行：
 
@@ -137,7 +146,7 @@ npm run check:ship
 git diff --check
 ```
 
-5. 若继续 `1.0.6` 提审，先完成 iOS/Android 真机矩阵；通过后才提交审核。上传、提交审核和发布是三个独立外部动作，均需用户明确授权。
+5. 若继续 `1.0.7` 提审，先完成 iOS/Android 真机矩阵；通过后才提交审核。上传、提交审核和发布是三个独立外部动作，均需用户明确授权。
 6. 若转入 UG 补数，先运行：
 
 ```bash
@@ -225,7 +234,7 @@ npm run status:ug-sources -- --missing-only --priority launch --missing-limit 10
 
 ## 已运行的测试及结果
 
-2026-07-17 在 `1.0.6` 发布候选完整工作区上重新运行：
+2026-07-18 在 `1.0.7` 发布候选完整工作区上重新运行：
 
 ```text
 npm run check:ship: PASS
@@ -237,7 +246,7 @@ npm run check:ship: PASS
   UG supplement validation: PASS (150 supplements; 137 explicit, 13 copied)
   directory audit: PASS, blockingErrors=[]
   server --check: PASS
-  Node tests: PASS, 669/669
+  Node tests: PASS, 683/683
   check:release: PASS, ready=true
 
 git diff --check: PASS
@@ -246,18 +255,18 @@ npm run status:tpg-courses -- --school=HKU: PASS (448/448 reviewed, 0 unreviewed
 
 发布指标：
 
-- 主包：1,772,938 bytes。
-- 总估算包体：11,841,264 bytes，166 个上传文件。
-- 所有 16 个 UG/TPG 分包低于 2 MB；最大为 `ug-data-hku`，1,485,882 bytes。
-- HKU TPG 分包：1,050,484 bytes。
+- 主包：1,804,892 bytes。
+- 总估算包体：11,876,978 bytes，166 个上传文件。
+- 所有 16 个 UG/TPG 分包低于 2 MB；最大为 `ug-data-hku`，1,486,352 bytes。
+- HKU TPG 分包：1,051,628 bytes。
 - 页面：17；敏感 API：0。
 - release warnings 仅为人工微信后台检查尚需完成，以及未配置生产 HTTPS（体验/正式版按设计离线）。
 
-文档修改后再次运行了 `git diff --check`。微信官方 automation 已完成 PolyU 普通 Programme、HKU 多 Track Programme 及冷分包返回验收；iOS/Android 真机未执行。
+文档修改后再次运行了 `git diff --check`。微信开发者工具模拟器已完成 PolyU 本科双分包、加入计划、设置/清除排期、复制及移出闭环；iOS/Android 真机未执行。
 
 ## 已知问题、风险和不要做的事情
 
-- 微信已上传 `1.0.6`，但不要把上传成功当作已提审或已发布。
+- 微信已上传 `1.0.7`，但不要把上传成功当作已提审或已发布。
 - 不要把“上传成功”写成“已提审”或“已发布”。这两个外部动作尚未执行。
 - 不要删除或提交 `.playwright-cli/`，除非用户明确决定如何处理该诊断目录。
 - 不要手改生成的 catalogue、course shard 或 loader；从 source/supplement 和 builder 修改后重新生成。
