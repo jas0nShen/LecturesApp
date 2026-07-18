@@ -4,7 +4,7 @@
 
 - 版本号：`1.0.7`
 - 目标用户：香港高校本科及授课硕士学生
-- 核心能力：选择 Programme、浏览已开放课程、把本科或授课硕士课程加入本机计划、本科按 Year / Term 排期、查看数据状态与隐私说明
+- 核心能力：选择 Programme、浏览已开放课程、把本科或授课硕士课程加入本机计划、本科按 Year / Term 排期并标记已修、查看数据状态与隐私说明
 - 数据边界：TPG Programme 索引已导入；课程组按 Programme 逐步开放。课程组尚未开放的 Programme 只展示索引与资料来源，暂不生成毕业判断。本科目录用于选择学校、Programme 与 Major；未复核课程规则前不生成本科毕业进度
 - 发布模式：体验版和正式版读取随包发布的离线数据，不依赖开发环境服务
 
@@ -146,10 +146,11 @@ npm run status:ug-sources -- --school HKU --missing-only --missing-limit 10 --re
 | --- | --- |
 | `POLYU` Computer Science | 两个本科分包均完成加载，显示 83 门课程；`COMP1004` 可加入计划并默认进入“待安排” |
 | 本科排期编辑 | 可设置 `Year 1 / Term 1` 并移动至对应分组；复制文本正确区分用户排期与官方参考 |
+| 本科已修状态 | 课程详情和 Study Plan 可标记/撤销已修；统计与复制文本同步更新；移出计划后已修状态保留 |
 | 排期清理 | 清除排期后回到“待安排”；移出课程后 `plannedUgCourseKeys` 与 `ugCoursePlanAssignments` 均无残留 |
 | 微信基础库兼容 | UG/TPG Node 测试 fallback 不再使用 `eval`；PolyU 双分包可从 loader 返回调用页并完成 activation |
 
-- `npm run check:ship`：683/683 测试通过，`ready=true`。
+- `npm run check:ship`：685/685 测试通过，`ready=true`。
 - iOS 真机：未执行。
 - Android 真机：未执行。
 - 本轮模拟器验收不能替代下方正式提审前的真机矩阵。

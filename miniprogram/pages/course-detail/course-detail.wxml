@@ -37,6 +37,7 @@
     <view class="button" bindtap="toggleCompleted">{{completed ? '标记未修' : '标记已修'}}</view>
   </view>
   <view wx:if="{{isUgCourse}}" class="section action-row">
+    <view class="button secondary" bindtap="toggleCompleted">{{completed ? '撤销已修' : '标记已修'}}</view>
     <view class="button plan-button {{ugPlanningSupported ? '' : 'button-disabled'}}" bindtap="togglePlanned">{{planned ? '移出计划' : '加入计划'}}</view>
   </view>
   <view wx:if="{{isUgCourse && !ugPlanningSupported && ugPlanningReason}}" class="section planning-note">{{ugPlanningReason}}</view>

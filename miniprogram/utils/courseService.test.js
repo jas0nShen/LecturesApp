@@ -773,6 +773,7 @@ test('user data summary counts local records and clear removes every user key', 
   service.toggleTpgCourseFavorite('POLYU-TPG-090', 'COMP5521');
   service.toggleOfferingCompleted('COMP1117');
   service.toggleTpgCourseCompleted('POLYU-TPG-090', 'COMP5521');
+  service.toggleUgCourseCompleted('HKU-UG-6004-1', 'HKU-UG-6004-1-M1', 'HKU-UG-6004-1-M1-SUP-ARCH1079-3');
   service.toggleUgPlannedCourse('HKU-UG-6004-1', 'HKU-UG-6004-1-M1', 'HKU-UG-6004-1-M1-SUP-ARCH1079-3');
   service.saveUgCoursePlanAssignment('HKU-UG-6004-1', 'HKU-UG-6004-1-M1', 'HKU-UG-6004-1-M1-SUP-ARCH1079-3', 2, 'summer');
   service.saveStudyPlanItem('COMP1117', 1, '1');
@@ -784,7 +785,7 @@ test('user data summary counts local records and clear removes every user key', 
   assert.deepEqual(service.getUserDataSummary(), {
     hasProfile: true,
     favoriteCount: 2,
-    completedCount: 2,
+    completedCount: 3,
     studyPlanCount: 2,
     noteCount: 1,
     recentCount: 1,
@@ -811,6 +812,7 @@ test('all declared local user keys are backup and restore aware', () => {
     'completedCourseIds',
     'completedOfferingCodes',
     'completedTpgCourseKeys',
+    'completedUgCourseKeys',
     'plannedUgCourseKeys',
     'ugCoursePlanAssignments',
     'plannedTpgCourseKeys',
@@ -832,6 +834,7 @@ test('all declared local user keys are backup and restore aware', () => {
       completedCourseIds: [2],
       completedOfferingCodes: ['COMP2113'],
       completedTpgCourseKeys: ['POLYU-TPG-090:COMP5521'],
+      completedUgCourseKeys: ['HKU-UG-6004-1:HKU-UG-6004-1-M1:HKU-UG-6004-1-M1-SUP-ARCH1079-3'],
       plannedUgCourseKeys: ['HKU-UG-6004-1:HKU-UG-6004-1-M1:HKU-UG-6004-1-M1-SUP-ARCH1079-3'],
       ugCoursePlanAssignments: [{
         courseKey: 'HKU-UG-6004-1:HKU-UG-6004-1-M1:HKU-UG-6004-1-M1-SUP-ARCH1079-3',
@@ -856,6 +859,14 @@ test('all declared local user keys are backup and restore aware', () => {
   assert.throws(
     () => service.importUserData({ app: 'lectures-app', version: 1, data: { plannedUgCourseKeys: ['HKU-UG-6004-1::COURSE'] } }),
     /Invalid plannedUgCourseKeys/
+  );
+  assert.throws(
+    () => service.importUserData({ app: 'lectures-app', version: 1, data: { completedUgCourseKeys: ['HKU-UG-6004-1::COURSE'] } }),
+    /Invalid completedUgCourseKeys/
+  );
+  assert.throws(
+    () => service.importUserData({ app: 'lectures-app', version: 1, data: { completedUgCourseKeys: ['A:B:C', 'A:B:C'] } }),
+    /Invalid completedUgCourseKeys/
   );
   assert.throws(
     () => service.importUserData({ app: 'lectures-app', version: 1, data: { ugCoursePlanAssignments: [{ courseKey: 'A:B:C', plannedYear: 7, plannedTerm: '1' }] } }),
@@ -894,6 +905,43 @@ test('all declared local user keys are backup and restore aware', () => {
     }),
     /Invalid ugCoursePlanAssignments/
   );
+});
+
+test('legacy backups without undergraduate completion state still import', () => {
+  const legacyBackup = {
+    app: 'lectures-app',
+    version: 1,
+    data: {
+      userProfile: { profileType: 'undergraduate', programmeId: 'A', majorId: 'B' },
+      plannedUgCourseKeys: ['A:B:C']
+    }
+  };
+
+  assert.equal(service.importUserData(legacyBackup), true);
+  assert.deepEqual(service.getCompletedUgCourseKeys(), []);
+  assert.equal(service.isUgCourseCompleted('A', 'B', 'C'), false);
+});
+
+test('UG completed courses use Programme, Major and course identity and survive plan removal', () => {
+  const programmeId = 'POLYU-UG-JS3868-14';
+  const otherProgrammeId = 'POLYU-UG-OTHER';
+  const majorId = 'POLYU-UG-JS3868-14-M1';
+  const otherMajorId = 'POLYU-UG-JS3868-14-M2';
+  const courseId = 'POLYU-UG-JS3868-14-M1-C1';
+
+  service.toggleUgPlannedCourse(programmeId, majorId, courseId);
+  service.toggleUgCourseCompleted(programmeId, majorId, courseId);
+  service.toggleUgCourseCompleted(programmeId, otherMajorId, courseId);
+  service.toggleUgCourseCompleted(otherProgrammeId, majorId, courseId);
+
+  assert.equal(service.isUgCourseCompleted(programmeId, majorId, courseId), true);
+  assert.equal(service.isUgCourseCompleted(programmeId, otherMajorId, courseId), true);
+  assert.equal(service.isUgCourseCompleted(otherProgrammeId, majorId, courseId), true);
+
+  service.removeUgPlannedCourse(programmeId, majorId, courseId);
+  assert.equal(service.isUgCourseCompleted(programmeId, majorId, courseId), true);
+  service.toggleUgPlannedCourse(programmeId, majorId, courseId);
+  assert.equal(service.isUgCourseCompleted(programmeId, majorId, courseId), true);
 });
 
 test('UG planned courses use Programme, Major and course identity and keep other Majors isolated', () => {

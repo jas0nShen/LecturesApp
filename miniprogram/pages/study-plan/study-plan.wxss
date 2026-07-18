@@ -50,7 +50,7 @@
 .tpg-plan-course .plan-row { align-items: flex-start; }
 .detail-mark { color: #0b6b55; flex: none; font-size: 19rpx; font-weight: 800; margin-top: 3rpx; }
 .tpg-plan-actions { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.ug-plan-actions { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.ug-plan-actions { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .user-schedule { color: #0b6b55; font-size: 20rpx; font-weight: 850; line-height: 1.45; margin-top: 10rpx; }
 .official-schedule { color: #788981; font-size: 19rpx; line-height: 1.45; margin-top: 5rpx; }
 .schedule-action { color: #0b6b55; }

@@ -75,13 +75,13 @@
 
     <view class="summary-strip tpg-summary-strip">
       <view class="summary-item"><view class="summary-value">{{ugPlan.courseCount}}</view><view class="summary-label">计划课程</view></view>
+      <view class="summary-item"><view class="summary-value">{{ugPlan.completedCount}}</view><view class="summary-label">已修课程</view></view>
+      <view class="summary-item"><view class="summary-value">{{ugPlan.incompleteCount}}</view><view class="summary-label">计划中未修</view></view>
       <view class="summary-item"><view class="summary-value">{{ugPlan.knownCreditsDisplay}}</view><view class="summary-label">已知学分</view></view>
-      <view class="summary-item"><view class="summary-value">{{ugPlan.groups.length}}</view><view class="summary-label">排期分组</view></view>
-      <view class="summary-item"><view class="summary-value">{{ugPlan.curriculumYear || '-'}}</view><view class="summary-label">课程年份</view></view>
     </view>
 
     <view class="plan-export {{ugPlan.courseCount ? '' : 'disabled'}}" bindtap="copyUgPlan">
-      <view><view class="export-title">复制本科课程计划</view><view class="export-copy">包含用户排期、官方推荐参考与已知学分</view></view>
+      <view><view class="export-title">复制本科课程计划</view><view class="export-copy">包含已修状态、用户排期、官方推荐参考与已知学分</view></view>
       <view class="export-mark">COPY ↗</view>
     </view>
 
@@ -99,11 +99,12 @@
               <view class="user-schedule">用户计划 · {{course.userPlanLabel}}</view>
               <view class="official-schedule">官方参考 · {{course.officialReferenceLabel}}</view>
               <view wx:if="{{course.creditLabel}}" class="course-credits">{{course.creditLabel}}</view>
-              <view class="course-tags"><text class="course-tag">{{ugPlan.majorName}}</text></view>
+              <view class="course-tags"><text class="course-tag">{{ugPlan.majorName}}</text><text class="course-tag {{course.completed ? 'completed' : ''}}">{{course.completed ? '✓ 已修' : '未修'}}</text></view>
             </view>
             <view class="detail-mark">详情 →</view>
           </view>
           <view class="plan-actions ug-plan-actions">
+            <view class="plan-action" data-id="{{course.id}}" catchtap="toggleUgCompleted">{{course.completed ? '撤销已修' : '标记已修'}}</view>
             <view class="plan-action schedule-action" data-id="{{course.id}}" catchtap="editUgAssignment">调整排期</view>
             <view class="plan-action" data-id="{{course.id}}" catchtap="openUgDetail">打开详情</view>
             <view class="plan-action danger" data-id="{{course.id}}" catchtap="removeUgCourse">移出计划</view>

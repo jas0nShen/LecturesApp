@@ -24,6 +24,7 @@ function loadCourseDetailPage(app, initialStorage = {}) {
     };
   };
   require(PAGE_PATH);
+  page._storage = storage;
   return page;
 }
 
@@ -47,7 +48,7 @@ test('undergraduate course detail exposes a retry after a package load failure',
   assert.equal(attempts, 2);
 });
 
-test('opened undergraduate course detail toggles the Programme and Major scoped plan state', async () => {
+test('opened undergraduate course detail toggles scoped plan and completion state independently', async () => {
   const programmeId = 'POLYU-UG-JS3868-14';
   const majorId = 'POLYU-UG-JS3868-14-M1';
   const courseId = 'POLYU-UG-JS3868-14-M1-C1';
@@ -68,10 +69,21 @@ test('opened undergraduate course detail toggles the Programme and Major scoped 
   assert.equal(page.data.course.courseCode, 'COMP1004');
   assert.equal(page.data.ugPlanningSupported, true);
   assert.equal(page.data.planned, false);
+  assert.equal(page.data.completed, false);
+  page.toggleCompleted();
+  assert.equal(page.data.completed, true);
   page.togglePlanned();
   assert.equal(page.data.planned, true);
   page.togglePlanned();
   assert.equal(page.data.planned, false);
+  assert.equal(page.data.completed, true);
+  assert.deepEqual(page._storage.completedUgCourseKeys, [`${programmeId}:${majorId}:${courseId}`]);
+
+  const reopened = loadCourseDetailPage({
+    ensureUniversityLoaded: () => Promise.resolve()
+  }, page._storage);
+  await reopened.onLoad({ ugId: courseId, universityCode: 'POLYU' });
+  assert.equal(reopened.data.completed, true);
 });
 
 test('TPG course detail opens the selected programme course with per-course credits', async () => {

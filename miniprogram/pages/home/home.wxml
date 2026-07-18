@@ -44,7 +44,7 @@
       <view class="action-copy">保存想修的课程</view>
     </view>
     <view class="action-card" bindtap="goProfile">
-      <view class="action-index">03</view>
+      <view class="action-index">04</view>
       <view class="action-title">我的资料</view>
       <view class="action-copy">学校、专业、年级</view>
     </view>

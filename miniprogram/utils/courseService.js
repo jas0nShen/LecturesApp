@@ -30,6 +30,7 @@ const USER_DATA_KEYS = [
   'completedCourseIds',
   'completedOfferingCodes',
   'completedTpgCourseKeys',
+  'completedUgCourseKeys',
   'plannedUgCourseKeys',
   'ugCoursePlanAssignments',
   'plannedTpgCourseKeys',
@@ -306,7 +307,7 @@ function getUserDataSummary() {
   return {
     hasProfile: Boolean(getProfile()),
     favoriteCount: favoriteCodes.size + getFavoriteTpgCourseKeys().length,
-    completedCount: getCompletedOfferingCodes().length + getCompletedTpgCourseKeys().length,
+    completedCount: getCompletedOfferingCodes().length + getCompletedTpgCourseKeys().length + getCompletedUgCourseKeys().length,
     studyPlanCount: getStudyPlanItems().length + getUgPlannedCourseKeys().length + getTpgPlannedCourseKeys().length,
     noteCount: getCourseNotes().length,
     recentCount: getRecentlyViewedOfferings().length,
@@ -332,6 +333,7 @@ function importUserData(snapshot) {
     'completedCourseIds',
     'completedOfferingCodes',
     'completedTpgCourseKeys',
+    'completedUgCourseKeys',
     'plannedUgCourseKeys',
     'ugCoursePlanAssignments',
     'plannedTpgCourseKeys',
@@ -369,6 +371,18 @@ function importUserData(snapshot) {
       return item !== buildUgCourseKey(parts[0], parts[1], parts[2]);
     })) {
       throw new Error('Invalid plannedUgCourseKeys');
+    }
+    if (key === 'completedUgCourseKeys') {
+      const seenCourseKeys = new Set();
+      const invalid = value.some((item) => {
+        if (typeof item !== 'string') return true;
+        const parts = item.split(':');
+        if (parts.length !== 3 || parts.some((part) => !part || part !== part.trim())) return true;
+        if (item !== buildUgCourseKey(parts[0], parts[1], parts[2]) || seenCourseKeys.has(item)) return true;
+        seenCourseKeys.add(item);
+        return false;
+      });
+      if (invalid) throw new Error('Invalid completedUgCourseKeys');
     }
     if (key === 'ugCoursePlanAssignments') {
       const seenCourseKeys = new Set();
@@ -543,6 +557,24 @@ function getTpgPlannedCourseKeys() {
 
 function buildUgCourseKey(programmeId, majorId, courseId) {
   return [programmeId, majorId, courseId].map((part) => String(part || '').trim()).join(':');
+}
+
+function getCompletedUgCourseKeys() {
+  return wx.getStorageSync('completedUgCourseKeys') || [];
+}
+
+function isUgCourseCompleted(programmeId, majorId, courseId) {
+  return getCompletedUgCourseKeys().includes(buildUgCourseKey(programmeId, majorId, courseId));
+}
+
+function toggleUgCourseCompleted(programmeId, majorId, courseId) {
+  const key = buildUgCourseKey(programmeId, majorId, courseId);
+  const completed = getCompletedUgCourseKeys();
+  const next = completed.includes(key)
+    ? completed.filter((item) => item !== key)
+    : completed.concat(key);
+  wx.setStorageSync('completedUgCourseKeys', next);
+  return next;
 }
 
 function getUgPlannedCourseKeys() {
@@ -1529,6 +1561,7 @@ module.exports = {
   getCompletedOfferingCodes,
   getCompletedOfferings,
   getCompletedTpgCourseKeys,
+  getCompletedUgCourseKeys,
   analyzeStudyPlan,
   getCourse,
   getDataStatus,
@@ -1570,6 +1603,7 @@ module.exports = {
   isTpgCourseFavorite,
   isTpgCoursePlanned,
   isUgCoursePlanned,
+  isUgCourseCompleted,
   isCoursePlanned,
   importUserData,
   listCourses,
@@ -1601,5 +1635,6 @@ module.exports = {
   toggleTpgCourseCompleted,
   toggleTpgCourseFavorite,
   toggleTpgPlannedCourse,
+  toggleUgCourseCompleted,
   toggleUgPlannedCourse
 };

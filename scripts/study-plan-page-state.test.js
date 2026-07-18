@@ -128,6 +128,7 @@ test('UG Study Plan starts courses pending, applies user Year and Term, and pres
       curriculumYear: '2026'
     },
     plannedUgCourseKeys: [currentKey, otherMajorKey],
+    completedUgCourseKeys: [otherMajorKey],
     ugCoursePlanAssignments: [{ courseKey: otherMajorKey, plannedYear: 5, plannedTerm: 'full year' }]
   }, {
     ensureUniversityLoaded: () => Promise.resolve()
@@ -139,6 +140,8 @@ test('UG Study Plan starts courses pending, applies user Year and Term, and pres
   assert.equal(page.data.supported, true);
   assert.equal(page.data.ugPlan.majorId, majorId);
   assert.equal(page.data.ugPlan.courseCount, 1);
+  assert.equal(page.data.ugPlan.completedCount, 0);
+  assert.equal(page.data.ugPlan.incompleteCount, 1);
   assert.deepEqual(page.data.ugPlan.groups.map((group) => group.name), ['待安排']);
   assert.equal(page.data.ugPlan.groups[0].courses[0].courseCode, 'COMP1004');
   assert.match(page.data.ugPlan.groups[0].courses[0].userPlanLabel, /待安排/);
@@ -146,6 +149,17 @@ test('UG Study Plan starts courses pending, applies user Year and Term, and pres
   page.copyUgPlan();
   assert.match(getClipboard(), /用户计划：Year 待安排 · 待安排/);
   assert.match(getClipboard(), /官方参考：推荐年级 Year 1/);
+  assert.match(getClipboard(), /COMP1004 .* 未修/);
+
+  await page.toggleUgCompleted({ currentTarget: { dataset: { id: courseId } } });
+  assert.equal(page.data.ugPlan.completedCount, 1);
+  assert.equal(page.data.ugPlan.incompleteCount, 0);
+  assert.equal(page.data.ugPlan.groups[0].courses[0].completed, true);
+  assert.deepEqual(storage.completedUgCourseKeys, [otherMajorKey, currentKey]);
+  page.copyUgPlan();
+  assert.match(getClipboard(), /Completed: 1/);
+  assert.match(getClipboard(), /Planned incomplete: 0/);
+  assert.match(getClipboard(), /COMP1004 .* 已修/);
 
   storage.ugCoursePlanAssignments.push({ courseKey: currentKey, plannedYear: 2, plannedTerm: '3' });
   await page.onShow();
@@ -179,7 +193,13 @@ test('UG Study Plan starts courses pending, applies user Year and Term, and pres
   await page.removeUgCourse({ currentTarget: { dataset: { id: courseId } } });
   assert.deepEqual(storage.plannedUgCourseKeys, [otherMajorKey]);
   assert.deepEqual(storage.ugCoursePlanAssignments, [{ courseKey: otherMajorKey, plannedYear: 5, plannedTerm: 'full year' }]);
+  assert.deepEqual(storage.completedUgCourseKeys, [otherMajorKey, currentKey]);
   assert.equal(page.data.ugPlan.courseCount, 0);
+
+  storage.plannedUgCourseKeys.push(currentKey);
+  await page.onShow();
+  assert.equal(page.data.ugPlan.completedCount, 1);
+  assert.equal(page.data.ugPlan.groups[0].courses[0].completed, true);
 });
 
 test('UG Study Plan keeps index-only Majors unavailable and exposes package retry', async () => {

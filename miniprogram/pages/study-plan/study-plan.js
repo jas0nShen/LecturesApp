@@ -52,12 +52,14 @@ function formatUgPlanText(plan) {
     `Major: ${plan.majorName}`,
     `Curriculum year: ${plan.curriculumYear || '待确认'}`,
     `Planned courses: ${plan.courseCount}`,
+    `Completed: ${plan.completedCount}`,
+    `Planned incomplete: ${plan.incompleteCount}`,
     `Known credits: ${plan.knownCredits || 0}`
   ];
   plan.groups.forEach((group) => {
     lines.push('', `${group.name} · ${group.courseCount} 门`);
     group.courses.forEach((course) => {
-      lines.push(`- ${course.courseCode} ${course.titleEn} · 用户计划：${course.userPlanLabel} · 官方参考：${course.officialReferenceLabel}${course.creditLabel ? ` · ${course.creditLabel}` : ''}`);
+      lines.push(`- ${course.courseCode} ${course.titleEn} · ${course.completed ? '已修' : '未修'} · 用户计划：${course.userPlanLabel} · 官方参考：${course.officialReferenceLabel}${course.creditLabel ? ` · ${course.creditLabel}` : ''}`);
     });
   });
   lines.push('', '仅供课程规划；不计算毕业百分比、学分差额或毕业资格。正式安排以学校课程系统和培养方案为准。');
@@ -89,6 +91,8 @@ Page({
       majorName: '',
       curriculumYear: '',
       courseCount: 0,
+      completedCount: 0,
+      incompleteCount: 0,
       knownCredits: 0,
       knownCreditsDisplay: '-',
       groups: []
@@ -154,6 +158,7 @@ Page({
           ...course,
           credits: hasKnownCredits ? Number(course.credits) : 0,
           hasKnownCredits,
+          completed: service.isUgCourseCompleted(profile.programmeId, profile.majorId, course.id),
           creditLabel: hasKnownCredits ? `${Number(course.credits)} credits` : '',
           plannedYear,
           plannedTerm,
@@ -183,6 +188,7 @@ Page({
       };
     });
     const knownCredits = courses.reduce((sum, course) => sum + course.credits, 0);
+    const completedCount = courses.filter((course) => course.completed).length;
     this.setData({
       supported: true,
       mode: 'ug-course-plan',
@@ -197,6 +203,8 @@ Page({
         majorName: ugProfile.major.nameEn || ugProfile.major.nameZh || '',
         curriculumYear: ugProfile.curriculumYear || '',
         courseCount: courses.length,
+        completedCount,
+        incompleteCount: courses.length - completedCount,
         knownCredits,
         knownCreditsDisplay: courses.some((course) => course.hasKnownCredits) ? knownCredits : '-',
         groups
@@ -411,6 +419,14 @@ Page({
     wx.navigateTo({
       url: `/pages/plan-course/plan-course?ugId=${encodeURIComponent(event.currentTarget.dataset.id)}&universityCode=${encodeURIComponent(this.data.ugPlan.universityCode)}`
     });
+  },
+
+  toggleUgCompleted(event) {
+    const courseId = event.currentTarget.dataset.id;
+    service.toggleUgCourseCompleted(this.data.ugPlan.programmeId, this.data.ugPlan.majorId, courseId);
+    const completed = service.isUgCourseCompleted(this.data.ugPlan.programmeId, this.data.ugPlan.majorId, courseId);
+    wx.showToast({ title: completed ? '已标记已修' : '已撤销已修' });
+    return this.onShow();
   },
 
   goUgCourses() {

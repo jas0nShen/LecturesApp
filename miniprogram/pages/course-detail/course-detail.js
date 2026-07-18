@@ -135,7 +135,7 @@ Page({
         course,
         typeLabel: course ? service.TYPE_LABELS[course.courseType] : '',
         favorite: false,
-        completed: false,
+        completed: item ? service.isUgCourseCompleted(item.programmeId, item.majorId, item.id) : false,
         planned: item ? service.isUgCoursePlanned(item.programmeId, item.majorId, item.id) : false,
         ugPlanningSupported,
         ugPlanningReason,
@@ -187,7 +187,12 @@ Page({
   },
 
   toggleCompleted() {
-    if (this.data.isUgCourse || !this.data.course) return;
+    if (!this.data.course) return;
+    if (this.data.isUgCourse) {
+      service.toggleUgCourseCompleted(this.data.ugProgrammeId, this.data.ugMajorId, this.data.course.id);
+      this.setData({ completed: service.isUgCourseCompleted(this.data.ugProgrammeId, this.data.ugMajorId, this.data.course.id) });
+      return;
+    }
     if (this.data.isTpgCourse) {
       service.toggleTpgCourseCompleted(this.data.tpgProgrammeId, this.data.course.courseCode);
       this.setData({ completed: service.isTpgCourseCompleted(this.data.tpgProgrammeId, this.data.course.courseCode) });
