@@ -8,20 +8,21 @@
 
 当前产品边界是：先保证离线发布、数据可追溯和规则不误导，再继续补课程覆盖与规划能力。未经明确产品决定，不引入登录、云同步、统计、敏感权限或生产 API。
 
-当前仓库发布资料已统一为 `1.0.8`（`package.json`、运行时 `releaseInfo`、`docs/MVP_SPEC.md`、`docs/RELEASE_CHECKLIST.md`、`docs/REVIEW_SUBMISSION.md`）。微信最近已上传版本仍为 `1.0.7`；`1.0.8` 尚待上传，没有提交审核或发布正式版。
+当前仓库发布资料已统一为 `1.0.8`（`package.json`、运行时 `releaseInfo`、`docs/MVP_SPEC.md`、`docs/RELEASE_CHECKLIST.md`、`docs/REVIEW_SUBMISSION.md`）。微信开发者工具官方 CLI 已上传 `1.0.8`；没有提交审核或发布正式版。
 
 ## 可验证的仓库快照
 
 - 工作目录：`/Users/shenjingsong/Documents/develop/lecturesApp`
 - 分支：`main`
 - 1.0.8 发布候选：本科与授课硕士课程扩充、本科正式 Major 合并、HKU/HKBU 多分包加载及 748 项测试
+- 当前本地发布提交：`4061944 Release 1.0.8 with expanded course coverage`
 - 本地 `origin/main`：`d438548 Document updated 1.0.7 upload`
 - 包版本：`1.0.8`
-- 当前 `git status --short --branch` 为 `main...origin/main`，没有领先或落后提交；工作区保留一整批尚未提交的 TPG/UG 课程源、生成 catalogue/shards/分包、测试与本文档修改。
+- `main` 已包含 `1.0.8` 发布提交与上传记录，相对 `origin/main` 领先 2 个提交；课程源、生成 catalogue/shards/分包、测试和版本资料已提交。
 - 本批新增源包括 HKBU TPG Ethics and Public Affairs、Marketing for the Creative Economy，以及 UG JS2060、JS2620、JS2660、JS2920；此前同一工作区的 CUHK、EdUHK、Lingnan、PolyU、CityU、HKU、HKUST 和 HKBU 补充均继续保留。
 - 旧单一 `ug-data-hku`、`ug-data-hkbu` 已由生成脚本分别替换为 `ug-data-hku-a` / `ug-data-hku-b`、`ug-data-hkbu-a` / `ug-data-hkbu-b`。这些删除与新增是既有分包拆分结果，不要手工恢复旧 loader。
 
-- 当前有一组尚未提交的 TPG/UG 课程补充与生成文件；`git diff --cached` 无输出，`git diff --check` 通过。
+- 当前课程补充与生成文件已提交；`git diff --cached` 无输出，`git diff --check` 通过。
 - `.playwright-cli/` 为 96 KB 的本地浏览器诊断产物，共有 console log 和 page YAML；本次没有删除、覆盖或暂存。
 
 最近关键提交（本次交接提交前）：
@@ -184,7 +185,8 @@ df91815 Add PolyU Design curriculum and source evidence
 - 2026-07-17 已通过微信开发者工具官方 CLI 上传 `1.0.6`，备注为 `1.0.6: Add TPG course planning and reliable loaders`，命令返回 `✔ upload`；上传包 8.6 MB，主包 1.4 MB，所有分包低于 2 MB。
 - 2026-07-18 已通过微信开发者工具官方 CLI 上传 `1.0.7`，备注为 `1.0.7: Add editable UG course planning`，命令返回 `✔ upload`；实际上传包 8.6 MB，主包 1.4 MB，所有分包低于 2 MB。
 - 2026-07-18 已用新增本科已修状态的代码再次上传同版本 `1.0.7`，备注为 `1.0.7: Add UG course completion tracking`，命令返回 `✔ upload`；本次上传覆盖此前 1.0.7 开发版，实际上传包 8.6 MB、主包 1.4 MB，所有分包低于 2 MB。
-- 当前 `1.0.8` 发布候选重新运行完整检查：748/748 测试通过、`ready=true`、主包 1,819,210 bytes，所有分包低于 2 MB；HKBU UG 已拆成两个分包，较大者 `ug-data-hkbu-b` 为 1,373,435 bytes。本轮数据尚未重新上传微信小程序。
+- 2026-07-19 已通过微信开发者工具官方 CLI 上传 `1.0.8`，备注为 `1.0.8: Expand UG and TPG course coverage`，命令返回 `✔ upload`；实际上传包 12,501,143 bytes，主包 1,463,604 bytes，所有 19 个分包低于 2 MB。
+- 当前 `1.0.8` 发布候选重新运行完整检查：748/748 测试通过、`ready=true`、主包 1,819,210 bytes，所有分包低于 2 MB；HKBU UG 已拆成两个分包，较大者 `ug-data-hkbu-b` 为 1,373,435 bytes。本轮数据已随 `1.0.8` 上传微信小程序。
 - 微信开发者工具确认 PolyU Computer Science 可加载 83 门课程，首页入口序号为 `01 / 02 / 03 / 04`；模拟器测试结束后已恢复原 Architectural Studies 资料，`plannedUgCourseKeys`、`ugCoursePlanAssignments`、`completedUgCourseKeys` 均为空。
 - 微信官方 automation 已完成普通 `POLYU-TPG-090` 闭环：36 门课程、`COMP5521` 加入计划、列表状态、官方分组、标记已修、复制与移除均通过。
 - 多 Track `HKU-TPG-031` 验收通过：Generalist 计 1 门，Chinese Language Education 计 2 门；两条记录均保留，旧 Track 课程不计入 Generalist 当前统计。
@@ -202,7 +204,7 @@ df91815 Add PolyU Design curriculum and source evidence
 
 ### 发布与验收缺口
 
-- 仓库版本资料已更新为 `1.0.8`，微信最近已上传代码仍为 `1.0.7`；上传不等于已提交审核。
+- 仓库版本资料和微信已上传代码均为 `1.0.8`；上传不等于已提交审核。
 - `docs/RELEASE_CHECKLIST.md` 的 iOS/Android 真机矩阵没有完成记录。
 - 微信后台隐私声明、服务类目、备案、审核材料核对尚未在仓库中记录为完成。
 - 尚未提交微信审核，也没有发布正式版。
@@ -356,7 +358,7 @@ npm run status:ug-sources -- --missing-only --missing-summary --missing-limit 3:
 
 ## 已知问题、风险和不要做的事情
 
-- 微信最近已上传版本为 `1.0.7`；`1.0.8` 尚待上传。不要把上传成功当作已提审或已发布。
+- 微信已上传 `1.0.8`，但不要把上传成功当作已提审或已发布。
 - 不要把“上传成功”写成“已提审”或“已发布”。这两个外部动作尚未执行。
 - 不要删除或提交 `.playwright-cli/`，除非用户明确决定如何处理该诊断目录。
 - 不要手改生成的 catalogue、course shard 或 loader；从 source/supplement 和 builder 修改后重新生成。
