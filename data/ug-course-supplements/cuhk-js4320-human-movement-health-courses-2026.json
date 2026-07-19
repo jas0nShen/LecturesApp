@@ -1,0 +1,42 @@
+{
+  "provider": "CUHK Department of Sports Science and Physical Education JS4320 Study Scheme and Course List",
+  "academicYear": "2026",
+  "sourceUrl": "https://spe.cuhk.edu.hk/programmes/bachelor-of-science-in-human-movement-science-and-health-studies-js4320/",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/hmshn/",
+  "note": "The official Study Scheme lists SPED3910 both as a required Core Course and as a Health Studies Elective. It also states 30 Core units although the eleven listed 3-unit courses total 33 units. SPED3910 is stored once under its first published role and the conflict requires manual review; no Year or Semester is inferred.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "jupasCode": "JS4320",
+      "majorName": "Human Movement Science and Health Studies",
+      "sourceUrl": "https://spe.cuhk.edu.hk/programmes/bachelor-of-science-in-human-movement-science-and-health-studies-js4320/",
+      "officialUrl": "https://admission.cuhk.edu.hk/programme/hmshn/",
+      "courses": [
+        { "code": "SPED1000", "title": "Introduction to Human Movement Science", "credits": 3, "courseType": "core", "group": "Faculty Package" },
+        { "code": "SPED2500", "title": "Exercise Nutrition and Health", "credits": 3, "courseType": "core", "group": "Faculty Package" },
+        { "code": "SPED2720", "title": "Foundation of Physical Education and Sports", "credits": 3, "courseType": "core", "group": "Faculty Package" },
+        { "code": "SPED2520", "title": "Functional Human Anatomy and Sports Injuries", "credits": 3, "courseType": "core", "group": "Core Courses in Human Movement Science and Health Studies" },
+        { "code": "SPED2540", "title": "Introduction to Exercise Physiology", "credits": 3, "courseType": "core", "group": "Core Courses in Human Movement Science and Health Studies" },
+        { "code": "SPED2600", "title": "Basic Statistics, Test and Measurement for Physical Education", "credits": 3, "courseType": "core", "group": "Core Courses in Human Movement Science and Health Studies" },
+        { "code": "SPED2610", "title": "Introduction to Exercise Biomechanics", "credits": 3, "courseType": "core", "group": "Core Courses in Human Movement Science and Health Studies" },
+        { "code": "SPED2700", "title": "Principles of Strength Training and Conditioning", "credits": 3, "courseType": "core", "group": "Core Courses in Human Movement Science and Health Studies" },
+        { "code": "SPED2810", "title": "Psychomotor Learning", "credits": 3, "courseType": "core", "group": "Core Courses in Human Movement Science and Health Studies" },
+        { "code": "SPED3500", "title": "Sports Injury and Exercise Rehabilitation", "credits": 3, "courseType": "core", "group": "Core Courses in Human Movement Science and Health Studies" },
+        { "code": "SPED3820", "title": "Introduction to Exercise and Sports Psychology", "credits": 3, "courseType": "core", "group": "Core Courses in Human Movement Science and Health Studies" },
+        { "code": "SPED3910", "title": "Adapted Physical Education and Sports", "credits": 3, "courseType": "core", "group": "Core Courses in Human Movement Science and Health Studies · also listed in the official Health Studies elective pool", "description": "Official source conflict: SPED3910 appears in both the required Core table and the Health Studies Elective pool. The Core table states 30 units although its eleven listed 3-unit courses total 33 units. Manual review required." },
+        { "code": "SPED3920", "title": "Human Growth and Health Education", "credits": 3, "courseType": "core", "group": "Core Courses in Human Movement Science and Health Studies" },
+        { "code": "SPED4570", "title": "Education and Promotion of Exercise and Health", "credits": 3, "courseType": "core", "group": "Core Courses in Human Movement Science and Health Studies" },
+        { "code": "SPED3630", "title": "Introduction to Research Methods", "credits": 3, "courseType": "core", "group": "Research Experience" },
+        { "code": "SPED4900", "title": "Research Project", "credits": 3, "courseType": "capstone", "group": "Research Experience" },
+        { "code": "SPED4201", "title": "Internship in Sports Industry", "credits": 2, "courseType": "internship", "group": "Internship" },
+        { "code": "SPED3550", "title": "Physiology of Human Performance", "credits": 3, "courseType": "major_elective", "group": "Theoretical Courses in Human Movement Science · choose two" },
+        { "code": "SPED4560", "title": "Physical Fitness Appraisal and Exercise Prescription", "credits": 3, "courseType": "major_elective", "group": "Theoretical Courses in Human Movement Science · choose two" },
+        { "code": "SPED4640", "title": "Human Kinematics and Kinetics", "credits": 3, "courseType": "major_elective", "group": "Theoretical Courses in Human Movement Science · choose two" },
+        { "code": "SPED4830", "title": "Psychological Aspects of Sports and Exercise", "credits": 3, "courseType": "major_elective", "group": "Theoretical Courses in Human Movement Science · choose two" },
+        { "code": "CHPR3002", "title": "Health Education and Health Behaviours", "credits": 3, "courseType": "major_elective", "group": "Theoretical Courses in Health Studies · choose two" },
+        { "code": "CHPR4012", "title": "Mental Health as a Public Health Issue", "credits": 3, "courseType": "major_elective", "group": "Theoretical Courses in Health Studies · choose two" },
+        { "code": "SPED3700", "title": "Sports and Health Technology", "credits": 3, "courseType": "major_elective", "group": "Theoretical Courses in Health Studies · choose two" }
+      ]
+    }
+  ]
+}

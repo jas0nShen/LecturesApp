@@ -1,0 +1,467 @@
+{
+  "provider": "CityUHK Department of English BA English cohort 2025 study plan and 2025/26 Undergraduate Catalogue",
+  "academicYear": "2025/26",
+  "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/202526/Major/BA1_EN-1.htm",
+  "officialUrl": "https://www.en.cityu.edu.hk/en/study/undergraduate",
+  "supplements": [
+    {
+      "universityCode": "CITYU",
+      "programmeId": "CITYU-UG-BAEN-31",
+      "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/202526/Major/BA1_EN-1.htm",
+      "officialUrl": "https://www.en.cityu.edu.hk/en/study/undergraduate",
+      "courses": [
+        {
+          "code": "EN2714",
+          "title": "Foundations of Literary Studies",
+          "credits": 3,
+          "recommendedYear": 1,
+          "semester": "Semester A",
+          "courseType": "core",
+          "group": "Departmental Foundation · required for both streams · 6 credits total"
+        },
+        {
+          "code": "EN2722",
+          "title": "Foundations of Language and Communication Studies",
+          "credits": 3,
+          "recommendedYear": 1,
+          "semester": "Semester B",
+          "courseType": "core",
+          "group": "Departmental Foundation · required for both streams · 6 credits total"
+        },
+        {
+          "code": "EN2711",
+          "title": "The Structure of English",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "Semester A",
+          "courseType": "core",
+          "group": "Major Core · required for both streams · 24 credits including Capstone"
+        },
+        {
+          "code": "EN2717",
+          "title": "Literature Across Time",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "Semester A",
+          "courseType": "core",
+          "group": "Major Core · required for both streams · 24 credits including Capstone"
+        },
+        {
+          "code": "EN2718",
+          "title": "Literature Across Media",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "Semester B",
+          "courseType": "core",
+          "group": "Major Core · required for both streams · 24 credits including Capstone"
+        },
+        {
+          "code": "EN3329",
+          "title": "Discourse and Pragmatics",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "Semester B",
+          "courseType": "core",
+          "group": "Major Core · required for both streams · 24 credits including Capstone"
+        },
+        {
+          "code": "EN3525",
+          "title": "English in Corporate and Professional Communication",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "Semester A",
+          "courseType": "core",
+          "group": "Major Core · required for both streams · 24 credits including Capstone"
+        },
+        {
+          "code": "EN3593",
+          "title": "Internship",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "Summer",
+          "courseType": "internship",
+          "group": "Major Core · required for both streams · 24 credits including Capstone"
+        },
+        {
+          "code": "EN4575",
+          "title": "Research Final Year Project",
+          "credits": 6,
+          "recommendedYear": 4,
+          "courseType": "capstone",
+          "group": "Capstone choice · both streams choose EN4575 or EN4576 · 6 credits",
+          "description": "The normative four-year study plan places the selected year-long Capstone across Semester A and Semester B of Year 4."
+        },
+        {
+          "code": "EN4576",
+          "title": "Professional English Final Year Project",
+          "credits": 6,
+          "recommendedYear": 4,
+          "courseType": "capstone",
+          "group": "Capstone choice · both streams choose EN4575 or EN4576 · 6 credits",
+          "description": "The normative four-year study plan places the selected year-long Capstone across Semester A and Semester B of Year 4."
+        },
+        {
+          "code": "EN3504",
+          "title": "Intercultural Communication",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "Semester A",
+          "courseType": "core",
+          "group": "EPC Stream Core · required for EPC · Language and Literature cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN3586",
+          "title": "Workplace Culture and Interaction",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "Semester B",
+          "courseType": "core",
+          "group": "EPC Stream Core · required for EPC · Language and Literature cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN3592",
+          "title": "Professional and Corporate Discourse",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "Semester A",
+          "courseType": "core",
+          "group": "EPC Stream Core · required for EPC · Language and Literature cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN4574",
+          "title": "Communication Strategies in Business Projects",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "Semester B",
+          "courseType": "core",
+          "group": "EPC Stream Core · required for EPC · Language and Literature cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN3589",
+          "title": "Modern Drama: Text and Performance",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "Semester B",
+          "courseType": "core",
+          "group": "Language and Literature Stream Core · required for Language and Literature · EPC cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN3594",
+          "title": "English as a World Language",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "Semester A",
+          "courseType": "core",
+          "group": "Language and Literature Stream Core · required for Language and Literature · EPC cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN3595",
+          "title": "English in Society",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "Semester B",
+          "courseType": "core",
+          "group": "Language and Literature Stream Core · required for Language and Literature · EPC cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN4577",
+          "title": "Critical Approaches to Literature",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "Semester A",
+          "courseType": "core",
+          "group": "Language and Literature Stream Core · required for Language and Literature · EPC cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN2502",
+          "title": "Language in Social Interaction",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "EPC primary stream elective · EPC primary pool minimum 9 credits · Language and Literature cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN2720",
+          "title": "Persuasive Writing",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "EPC primary stream elective · EPC primary pool minimum 9 credits · Language and Literature cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN2837",
+          "title": "Communicating Fashion Culture",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "EPC primary stream elective · EPC primary pool minimum 9 credits · Language and Literature cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN2859",
+          "title": "The Language of Sustainability",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "EPC primary stream elective only · EPC primary pool minimum 9 credits · not in either Language and Literature elective pool",
+          "description": "This is the only Department/Major course in the published EPC-eligible 59-code pool that is not eligible for the 58-code Language and Literature Stream pool.",
+          "majorNames": ["English and Professional Communication"]
+        },
+        {
+          "code": "EN3321",
+          "title": "Public Speaking and Presentations in Context",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "EPC primary stream elective · EPC primary pool minimum 9 credits · Language and Literature cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN3513",
+          "title": "Promotional Writing in English",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "EPC primary stream elective · EPC primary pool minimum 9 credits · Language and Literature cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN3561",
+          "title": "Advertising Copywriting in English",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "EPC primary stream elective · EPC primary pool minimum 9 credits · Language and Literature cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN4166",
+          "title": "Language and Decision Making",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "EPC primary stream elective · EPC primary pool minimum 9 credits · Language and Literature cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN4505",
+          "title": "Intercultural Organizational Communication and Institutional Interaction",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "EPC primary stream elective · EPC primary pool minimum 9 credits · Language and Literature cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN4511",
+          "title": "English in Creative and Cultural Professions",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "EPC primary stream elective · EPC primary pool minimum 9 credits · Language and Literature cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN4519",
+          "title": "Public Relations Writing in English",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "EPC primary stream elective · EPC primary pool minimum 9 credits · Language and Literature cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN4528",
+          "title": "Multimodal and Mediated Discourse",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "EPC primary stream elective · EPC primary pool minimum 9 credits · Language and Literature cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN4564",
+          "title": "Strategic Business Communication in English",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "EPC primary stream elective · EPC primary pool minimum 9 credits · Language and Literature cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN4565",
+          "title": "Negotiation in Professional Contexts",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "EPC primary stream elective · EPC primary pool minimum 9 credits · Language and Literature cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN4573",
+          "title": "Language in Law and Crime",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "EPC primary stream elective · EPC primary pool minimum 9 credits · Language and Literature cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN2131",
+          "title": "Asian Literature in English",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Language and Literature primary stream elective · Language and Literature primary pool minimum 9 credits · EPC cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN2319",
+          "title": "Introduction to English Poetry",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Language and Literature primary stream elective · Language and Literature primary pool minimum 9 credits · EPC cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN2320",
+          "title": "Fantasy in Literature",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Language and Literature primary stream elective · Language and Literature primary pool minimum 9 credits · EPC cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN2321",
+          "title": "Modern and Contemporary Fiction",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Language and Literature primary stream elective · Language and Literature primary pool minimum 9 credits · EPC cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN2322",
+          "title": "Creative Writing",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Language and Literature primary stream elective · Language and Literature primary pool minimum 9 credits · EPC cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN2721",
+          "title": "The Art of Life Narrative",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Language and Literature primary stream elective · Language and Literature primary pool minimum 9 credits · EPC cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN2801",
+          "title": "Popular Culture and Social Life",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Language and Literature primary stream elective · Language and Literature primary pool minimum 9 credits · EPC cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN2808",
+          "title": "Introduction to English Film Studies",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Language and Literature primary stream elective · Language and Literature primary pool minimum 9 credits · EPC cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN2832",
+          "title": "Literature and Music",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Language and Literature primary stream elective · Language and Literature primary pool minimum 9 credits · EPC cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN2848",
+          "title": "Language and Digital Media",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Language and Literature primary stream elective · Language and Literature primary pool minimum 9 credits · EPC cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN3327",
+          "title": "Drama Workshop",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Language and Literature primary stream elective · Language and Literature primary pool minimum 9 credits · EPC cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN3571",
+          "title": "Advanced English Phonetics and Phonology",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Language and Literature primary stream elective · Language and Literature primary pool minimum 9 credits · EPC cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN3572",
+          "title": "Fiction Writing",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Language and Literature primary stream elective · Language and Literature primary pool minimum 9 credits · EPC cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN3578",
+          "title": "Travel Writing",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Language and Literature primary stream elective · Language and Literature primary pool minimum 9 credits · EPC cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN3579",
+          "title": "World Literature in English",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Language and Literature primary stream elective · Language and Literature primary pool minimum 9 credits · EPC cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN3580",
+          "title": "Literature in the Digital Age",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Language and Literature primary stream elective · Language and Literature primary pool minimum 9 credits · EPC cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN3581",
+          "title": "Literature and the City",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Language and Literature primary stream elective · Language and Literature primary pool minimum 9 credits · EPC cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN3587",
+          "title": "Critical Discourse Analysis",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Language and Literature primary stream elective · Language and Literature primary pool minimum 9 credits · EPC cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN3588",
+          "title": "Advanced English Grammar",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Language and Literature primary stream elective · Language and Literature primary pool minimum 9 credits · EPC cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN3590",
+          "title": "Crime Fiction",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Language and Literature primary stream elective · Language and Literature primary pool minimum 9 credits · EPC cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN3591",
+          "title": "Hong Kong Language and Society",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Language and Literature primary stream elective · Language and Literature primary pool minimum 9 credits · EPC cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN4525",
+          "title": "Gender Discourse",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Language and Literature primary stream elective · Language and Literature primary pool minimum 9 credits · EPC cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN4578",
+          "title": "Shakespeare: Film, Text, Performance",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Language and Literature primary stream elective · Language and Literature primary pool minimum 9 credits · EPC cross-stream pool (up to 6 credits)"
+        },
+        {
+          "code": "EN3596",
+          "title": "English Summer Programme",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Shared primary stream elective · counts toward either Stream's 9-credit primary-pool minimum"
+        },
+        {
+          "code": "EN4579",
+          "title": "Research Skills in English Studies",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Shared primary stream elective · counts toward either Stream's 9-credit primary-pool minimum"
+        },
+        {
+          "code": "CAI4001",
+          "title": "Start-up Technology Entrepreneur Programme I",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Shared primary stream elective · counts toward either Stream's 9-credit primary-pool minimum"
+        }
+      ]
+    }
+  ]
+}

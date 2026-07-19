@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "EDUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-18",
+  "programmes": [
+    {
+      "programmeId": "EDUHK-TPG-DIR-MA-DMEC",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "credit points",
+      "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-digital-marketing-and-e-commerce",
+      "ruleReviewStatus": "verified",
+      "statusNote": "The live official 2026-27 Programme page confirms a 24-credit-point award comprising all six 3-credit-point Core Courses and any two of four 3-credit-point Elective Courses. Official EdUHK curriculum-module pages confirm every current course-code mapping and title, including the 3-credit-point Capstone Project option. The Programme page states that courses and course offerings may be changed at the University's discretion as circumstances require, so the full elective pool must not be treated as a guaranteed annual offering.",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Complete all six Core Courses (18 credit points).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-digital-marketing-and-e-commerce",
+          "courses": [
+            { "code": "BUS6085", "name": "Introduction to E-commerce and Digital Retail", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/BUS6085.html" },
+            { "code": "BUS6086", "name": "Neuromarketing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/BUS6086.html" },
+            { "code": "MDA6014", "name": "Marketing Analytics & Data Visualisation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/MDA6014.html" },
+            { "code": "MDA6015", "name": "Digital Marketing Strategy", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/MDA6015.html" },
+            { "code": "MDA6016", "name": "Influencer Marketing & Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/MDA6016.html" },
+            { "code": "MDA6006", "name": "New Media Law, Ethics and Regulation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/MDA6006.html" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective_project",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Choose any two of the four Elective Courses (6 credit points), including the optional 3-credit-point Capstone Project. Course offerings may change and the full pool is not a guaranteed annual offering.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-digital-marketing-and-e-commerce",
+          "courses": [
+            { "code": "BUS6087", "name": "Frontiers in E-commerce: Theory, Innovation, and Practice", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/BUS6087.html" },
+            { "code": "MDA6017", "name": "Public Relations Strategies in the Digital Age", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/MDA6017.html" },
+            { "code": "INT6144", "name": "AI for Knowledge Management and Professional Development", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/INT6144.html" },
+            { "code": "BUS6088", "name": "Capstone Project", "credits": 3, "courseKind": "project", "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/BUS6088.html" }
+          ]
+        }
+      ]
+    }
+  ]
+}

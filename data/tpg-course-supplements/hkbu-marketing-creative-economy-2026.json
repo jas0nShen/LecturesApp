@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-19",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-044",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "units",
+      "sourceUrl": "https://mscmce.hkbu.edu.hk/programme/curriculum.html",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The current official September 2026 admissions page confirms a 30-unit award comprising 18 Core units, 9 Elective units and the required 3-unit Overseas Field Trip. The current official MScMCE Curriculum page publishes the complete current code-and-title structure: six Core Courses, one of three Semester 1 Electives, one of two MMIS Semester 2 Electives, one of two AVA Semester 2 Electives, and MKTG7200 Field Trip. Its three-course Semester 1 pool corrects the older 2025-26 handbook text that incorrectly said 'choose one from four' while listing only three courses. The 2025-26 handbook confirms the individual 3-unit values for all fourteen carried-forward codes. MKTG7110 has a revised current title on the Programme page. Elective sub-pool selection and the official contingency for a cancelled, rescheduled or downsized Field Trip require manual audit review.",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Complete all six Core Courses (18 units), including MKTG7190 Creative Service-Learning Project.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://mscmce.hkbu.edu.hk/programme/curriculum.html",
+          "courses": [
+            { "code": "MKTG7140", "name": "Strategic Marketing Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MKTG7140" },
+            { "code": "MKTG7150", "name": "Brand Development and Sponsorship", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MKTG7150" },
+            { "code": "MKTG7160", "name": "Digital Marketing Strategies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MKTG7160" },
+            { "code": "MKTG7220", "name": "Applied Generative AI for Creative Ideation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MKTG7220" },
+            { "code": "MKTG7180", "name": "Seminars in Contemporary Marketing Issues in Creative Economies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MKTG7180" },
+            { "code": "MKTG7190", "name": "Creative Service-Learning Project", "credits": 3, "courseKind": "project", "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MKTG7190" }
+          ]
+        },
+        {
+          "id": "semester-1-elective",
+          "name": "Semester 1 Elective",
+          "type": "elective",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Choose one of the three Semester 1 Elective Courses (3 units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://mscmce.hkbu.edu.hk/programme/curriculum.html",
+          "courses": [
+            { "code": "MKTG7170", "name": "Entrepreneurship in the Creative Economies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MKTG7170" },
+            { "code": "VACC7010", "name": "Research Methodology for the Visual Arts", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/VACC7010" },
+            { "code": "VACC7030", "name": "Critically Engaged: Creative Practices in Context", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/VACC7030" }
+          ]
+        },
+        {
+          "id": "semester-2-mmis-elective",
+          "name": "Semester 2 MMIS Elective",
+          "type": "elective",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Choose one of the two Semester 2 Elective Courses offered by MMIS (3 units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://mscmce.hkbu.edu.hk/programme/curriculum.html",
+          "courses": [
+            { "code": "MKTG7110", "name": "Social Entrepreneurship and Impact-driven Business", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://mscmce.hkbu.edu.hk/programme/curriculum.html" },
+            { "code": "MKTG7210", "name": "Services Marketing Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MKTG7210" }
+          ]
+        },
+        {
+          "id": "semester-2-ava-elective",
+          "name": "Semester 2 AVA Elective",
+          "type": "elective",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Choose one of the two Semester 2 Elective Courses offered by AVA (3 units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://mscmce.hkbu.edu.hk/programme/curriculum.html",
+          "courses": [
+            { "code": "VACC7020", "name": "Visual Arts Theory & Criticism", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/VACC7020" },
+            { "code": "VACC7040", "name": "Arts & the Public: Interpretation & Presentation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/VACC7040" }
+          ]
+        },
+        {
+          "id": "overseas-field-trip",
+          "name": "Overseas Field Trip",
+          "type": "field_study",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "Complete MKTG7200 Field Trip (3 units). The Programme will provide alternatives if the trip must be cancelled, rescheduled or downsized; any alternative requires manual confirmation.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://mscmce.hkbu.edu.hk/programme/curriculum.html",
+          "courses": [
+            { "code": "MKTG7200", "name": "Field Trip", "credits": 3, "courseKind": "field_study", "conditionalRequirement": true, "appliesToTrackIds": [], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MKTG7200" }
+          ]
+        }
+      ]
+    }
+  ]
+}

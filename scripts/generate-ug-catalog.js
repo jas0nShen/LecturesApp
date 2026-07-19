@@ -1,3 +1,4 @@
+const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
@@ -11,6 +12,8 @@ const SUBPACKAGES_DIR = path.join(__dirname, '..', 'miniprogram', 'subpackages')
 // subpackage limit. The loader still exposes one key per university.
 const SHARD_COUNT_BY_UNIVERSITY = {
   CITYU: 2,
+  HKBU: 2,
+  HKU: 2,
   POLYU: 2
 };
 const HKU_CDS_OFFERINGS_PATH = path.join(__dirname, '..', 'data', 'hku-cds-offerings-2025.json');
@@ -394,6 +397,9 @@ function getCityuRecommendedYear(level = '') {
 
 function getCourseTypeFromGroup(group = '') {
   group = String(group || '').toLowerCase();
+  if (group.includes('concentration required/elective courses')) {
+    return group.includes('published elective pool') ? 'major_elective' : 'core';
+  }
   if (group.includes('capstone') || group.includes('project')) return 'capstone';
   if (group.includes('core') || group.includes('required') || group.includes('compulsory') || group.includes('elementary') || group.includes('intermediate')) return 'core';
   if (group.includes('supporting') || group.includes('college') || group.includes('gateway')) return 'foundation';
@@ -462,6 +468,82 @@ function findSupplementMajors(catalogue, programme, supplement) {
   return programmeMajors;
 }
 
+function createDeclaredSupplementMajor(catalogue, programme, supplement) {
+  const declaration = supplement.createMajor;
+  if (!declaration) return true;
+  if (typeof declaration !== 'object') return false;
+
+  const id = String(declaration.id || '').trim();
+  const code = String(declaration.code || '').trim();
+  const nameEn = compactText(declaration.nameEn || '');
+  if (!id || !code || !nameEn) return false;
+  if (supplement.majorId !== id || !id.startsWith(`${programme.id}-M`)) return false;
+
+  const existingById = catalogue.majors.find((major) => major.id === id);
+  if (existingById) {
+    return existingById.programmeId === programme.id
+      && existingById.code === code
+      && matchesText(existingById.nameEn, nameEn);
+  }
+  const existingByName = catalogue.majors.find((major) => (
+    major.programmeId === programme.id && matchesText(major.nameEn, nameEn)
+  ));
+  if (existingByName) return false;
+
+  catalogue.majors.push({
+    id,
+    programmeId: programme.id,
+    code,
+    nameEn,
+    nameZh: compactText(declaration.nameZh || nameEn),
+    courseCount: 0,
+    codedCourseCount: 0,
+    officialUrl: declaration.officialUrl || supplement.officialUrl || supplement.sourceUrl || programme.officialUrl
+  });
+  return true;
+}
+
+function applySupplementMajorOverride(catalogue, programme, supplement) {
+  const declaration = supplement.majorOverride;
+  if (!declaration) return;
+
+  assert(Array.isArray(declaration.expectedMajorIds) && declaration.expectedMajorIds.length > 0,
+    'majorOverride requires expectedMajorIds');
+  const expectedMajorIds = declaration.expectedMajorIds.slice().sort();
+  assert.equal(new Set(expectedMajorIds).size, expectedMajorIds.length,
+    'majorOverride expectedMajorIds must be unique');
+  const programmeMajors = catalogue.majors.filter((major) => major.programmeId === programme.id);
+  const currentMajorIds = programmeMajors.map((major) => major.id).sort();
+  assert.deepEqual(
+    currentMajorIds,
+    expectedMajorIds,
+    `${supplement.provider || programme.id} majorOverride no longer matches the current Major set`
+  );
+
+  const id = String(declaration.id || '').trim();
+  const code = String(declaration.code || '').trim();
+  const nameEn = compactText(declaration.nameEn || '');
+  assert.equal(supplement.programmeId, programme.id, 'majorOverride requires an exact programmeId match');
+  assert.equal(supplement.majorId, id, 'majorOverride id must match supplement.majorId');
+  assert(expectedMajorIds.includes(id), 'majorOverride id must be included in expectedMajorIds');
+  assert(id.startsWith(`${programme.id}-M`), 'majorOverride id must belong to the matched Programme');
+  assert(code && nameEn, 'majorOverride requires code and nameEn');
+
+  const replacedMajorIds = new Set(expectedMajorIds);
+  catalogue.courses = catalogue.courses.filter((course) => !replacedMajorIds.has(course.majorId));
+  catalogue.majors = catalogue.majors.filter((major) => major.programmeId !== programme.id);
+  catalogue.majors.push({
+    id,
+    programmeId: programme.id,
+    code,
+    nameEn,
+    nameZh: compactText(declaration.nameZh || nameEn),
+    courseCount: 0,
+    codedCourseCount: 0,
+    officialUrl: declaration.officialUrl || supplement.officialUrl || supplement.sourceUrl || programme.officialUrl
+  });
+}
+
 function buildGenericSupplementCourse({ course, courseIndex, major, programme, supplement }) {
   const code = String(course.code || course.courseCode || course.course_code || '').trim();
   const title = compactText(course.title || course.titleEn || course.courseTitle || course.course_title || '');
@@ -509,10 +591,20 @@ function getSupplementCourses(supplement, allSupplements) {
   return template ? template.courses.map((course) => ({ ...course })) : [];
 }
 
+function courseAppliesToMajor(course, major) {
+  const majorIds = Array.isArray(course.majorIds) ? course.majorIds : [];
+  if (majorIds.length && !majorIds.includes(major.id)) return false;
+  const majorNames = Array.isArray(course.majorNames) ? course.majorNames : [];
+  if (majorNames.length && !majorNames.some((majorName) => matchesText(major.nameEn, majorName))) return false;
+  return true;
+}
+
 function addGenericCourseSupplements(catalogue, supplements = loadGenericCourseSupplements()) {
   supplements.forEach((supplement) => {
     const programme = findSupplementProgramme(catalogue, supplement);
     if (!programme) return;
+    applySupplementMajorOverride(catalogue, programme, supplement);
+    if (!createDeclaredSupplementMajor(catalogue, programme, supplement)) return;
     const targetMajors = findSupplementMajors(catalogue, programme, supplement);
     if (!targetMajors.length) return;
     const courses = getSupplementCourses(supplement, supplements);
@@ -523,6 +615,7 @@ function addGenericCourseSupplements(catalogue, supplements = loadGenericCourseS
         .map((course) => course.courseCode)
         .filter(Boolean));
       const supplementCourses = courses
+        .filter((course) => courseAppliesToMajor(course, major))
         .map((course, courseIndex) => buildGenericSupplementCourse({
           course,
           courseIndex,

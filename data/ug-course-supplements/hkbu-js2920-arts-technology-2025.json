@@ -1,0 +1,620 @@
+{
+  "provider": "HKBU University Student Handbook 2025-2026",
+  "academicYear": "2025-2026",
+  "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and",
+  "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2920/",
+  "note": "The official 2025-2026 Programme page publishes 78 units of Major Courses: 9 units of Transdisciplinary Common Core, 21 units of Programme-specific Knowledge / Skill Courses, 15 units of Experiential Learning and 33 units attached to one selected concentration (Sound, Technology or Visual), followed by a 10-unit Honours Project. Each concentration consists of 6 foundation units, 9 core units, 9 concentration-elective units and 9 concentration-free-elective units. For the free-elective component, the Handbook recommends three more 3-unit courses from the selected concentration but explicitly permits any three 3-unit Foundation, Core or Concentration Elective courses from any of the three concentrations; this cross-concentration pool is preserved and is not treated as a narrower closed path. The Sound page contains unresolved unit conflicts: its rule says to take three listed 3-unit courses but includes four 2-unit Composition for Screen courses, while MUSI4025, MUSI4026 and MUSI4027 are displayed as 3 units on the concentration page but as 2 units on their linked 2025-2026 course pages. The course-page values are stored and the conflicts are described per course without inferring completion arithmetic. Minor title differences for VART3386, COMP3115, COMP4045 and TRAN4076 are resolved using the linked course pages. The 2026-2027 Handbook endpoint currently returns HTTP 401 Basic Authentication and is not represented as verified; this source remains explicitly scoped to 2025-2026. University Core, General Education and Free Electives outside the coded Major structure are excluded. No Year or Term is assigned.",
+  "supplements": [
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BASC-ARTT-18",
+      "jupasCode": "JS2920",
+      "programmeName": "Bachelor of Arts and Science (Hons) in Arts and Technology",
+      "majorId": "HKBU-UG-BASC-ARTT-18-M1",
+      "majorName": "Bachelor of Arts and Science (Hons) in Arts and Technology",
+      "courses": [
+        {
+          "code": "ITS1005",
+          "title": "Global Challenges I",
+          "credits": 3,
+          "group": "Transdisciplinary Common Core · all required / 9 units"
+        },
+        {
+          "code": "ITS2028",
+          "title": "Global Challenges II",
+          "credits": 3,
+          "group": "Transdisciplinary Common Core · all required / 9 units"
+        },
+        {
+          "code": "ITS2029",
+          "title": "Global Challenges II",
+          "credits": 3,
+          "group": "Transdisciplinary Common Core · all required / 9 units"
+        },
+        {
+          "code": "ARTT1005",
+          "title": "Arts Tech Theories I (Past, Present, Future)",
+          "credits": 3,
+          "group": "Programme-specific Knowledge / Skill Courses · all required / 21 units"
+        },
+        {
+          "code": "ARTT1006",
+          "title": "Arts Tech Practices I (Making Senses)",
+          "credits": 3,
+          "group": "Programme-specific Knowledge / Skill Courses · all required / 21 units"
+        },
+        {
+          "code": "ARTT2005",
+          "title": "Arts Tech Theories II (Interaction and Participation)",
+          "credits": 3,
+          "group": "Programme-specific Knowledge / Skill Courses · all required / 21 units"
+        },
+        {
+          "code": "ARTT2006",
+          "title": "Arts Tech Practices II (Transmedia Beyond Spectacles)",
+          "credits": 3,
+          "group": "Programme-specific Knowledge / Skill Courses · all required / 21 units"
+        },
+        {
+          "code": "ARTT4007",
+          "title": "Arts Tech - Special Topics",
+          "credits": 3,
+          "group": "Programme-specific Knowledge / Skill Courses · all required / 21 units"
+        },
+        {
+          "code": "COMP1015",
+          "title": "Computing for Creatives I",
+          "credits": 3,
+          "group": "Programme-specific Knowledge / Skill Courses · all required / 21 units"
+        },
+        {
+          "code": "COMP2037",
+          "title": "Computing for Creatives II",
+          "credits": 3,
+          "group": "Programme-specific Knowledge / Skill Courses · all required / 21 units"
+        },
+        {
+          "code": "ARTT3005",
+          "title": "Transdisciplinary Collaboration I",
+          "credits": 6,
+          "group": "Experiential Learning · both collaboration courses required / 12 units"
+        },
+        {
+          "code": "ARTT3006",
+          "title": "Transdisciplinary Collaboration II",
+          "credits": 6,
+          "group": "Experiential Learning · both collaboration courses required / 12 units"
+        },
+        {
+          "code": "ARTT3007",
+          "title": "Arts Tech Work Experience",
+          "credits": 3,
+          "group": "Experiential Learning · required work experience / 3 units",
+          "courseType": "internship"
+        },
+        {
+          "code": "ARTT4005",
+          "title": "Arts Tech Honours Project Preparation",
+          "credits": 3,
+          "group": "Honours Project · both courses required / 10 units",
+          "courseType": "capstone"
+        },
+        {
+          "code": "ARTT4006",
+          "title": "Arts Tech Honours Project",
+          "credits": 7,
+          "group": "Honours Project · both courses required / 10 units",
+          "courseType": "capstone"
+        },
+        {
+          "code": "MUSI2016",
+          "title": "Music Technology I",
+          "credits": 3,
+          "group": "Sound Concentration · Foundation Courses · both required / 6 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units; Technology Concentration · Concentration Elective Courses · complete 9 units from the published list",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/sound-concentration"
+        },
+        {
+          "code": "MUSI3146",
+          "title": "Interactive Audio",
+          "credits": 3,
+          "group": "Sound Concentration · Foundation Courses · both required / 6 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units; Technology Concentration · Concentration Elective Courses · complete 9 units from the published list",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/sound-concentration"
+        },
+        {
+          "code": "FILM4105",
+          "title": "Live Sound Production",
+          "credits": 3,
+          "group": "Sound Concentration · Core Courses · all required / 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units; Technology Concentration · Concentration Elective Courses · complete 9 units from the published list",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/sound-concentration"
+        },
+        {
+          "code": "MUSI2035",
+          "title": "Music Technology II",
+          "credits": 3,
+          "group": "Sound Concentration · Core Courses · all required / 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units; Technology Concentration · Concentration Elective Courses · complete 9 units from the published list",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/sound-concentration"
+        },
+        {
+          "code": "VART3456",
+          "title": "Sonic Art Practices",
+          "credits": 3,
+          "group": "Sound Concentration · Core Courses · all required / 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/sound-concentration"
+        },
+        {
+          "code": "FILM3006",
+          "title": "Film Sound",
+          "credits": 3,
+          "group": "Sound Concentration · Concentration Elective Courses · published individual-course list; section requires 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/sound-concentration"
+        },
+        {
+          "code": "FILM3085",
+          "title": "Film Music and Sound Design",
+          "credits": 3,
+          "group": "Sound Concentration · Concentration Elective Courses · published individual-course list; section requires 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/sound-concentration"
+        },
+        {
+          "code": "FILM3106",
+          "title": "Sound Design for Animation",
+          "credits": 3,
+          "group": "Sound Concentration · Concentration Elective Courses · published individual-course list; section requires 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/sound-concentration"
+        },
+        {
+          "code": "MUSI1048",
+          "title": "Composition for Screen I",
+          "credits": 2,
+          "group": "Sound Concentration · Concentration Elective Courses · published individual-course list; section requires 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/sound-concentration",
+          "description": "The Sound Concentration page places this 2-unit course under a rule worded “Take any three of the following 3-unit courses”. The 2-unit value is reproduced from both the concentration table and linked course page; no completion arithmetic is inferred."
+        },
+        {
+          "code": "MUSI1049",
+          "title": "Composition for Screen II",
+          "credits": 2,
+          "group": "Sound Concentration · Concentration Elective Courses · published individual-course list; section requires 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/sound-concentration",
+          "description": "The Sound Concentration page places this 2-unit course under a rule worded “Take any three of the following 3-unit courses”. The 2-unit value is reproduced from both the concentration table and linked course page; no completion arithmetic is inferred."
+        },
+        {
+          "code": "MUSI2048",
+          "title": "Composition for Screen III",
+          "credits": 2,
+          "group": "Sound Concentration · Concentration Elective Courses · published individual-course list; section requires 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/sound-concentration",
+          "description": "The Sound Concentration page places this 2-unit course under a rule worded “Take any three of the following 3-unit courses”. The 2-unit value is reproduced from both the concentration table and linked course page; no completion arithmetic is inferred."
+        },
+        {
+          "code": "MUSI2049",
+          "title": "Composition for Screen IV",
+          "credits": 2,
+          "group": "Sound Concentration · Concentration Elective Courses · published individual-course list; section requires 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/sound-concentration",
+          "description": "The Sound Concentration page places this 2-unit course under a rule worded “Take any three of the following 3-unit courses”. The 2-unit value is reproduced from both the concentration table and linked course page; no completion arithmetic is inferred."
+        },
+        {
+          "code": "MUSI3067",
+          "title": "Techniques of Sound Design",
+          "credits": 3,
+          "group": "Sound Concentration · Concentration Elective Courses · published individual-course list; section requires 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/sound-concentration"
+        },
+        {
+          "code": "MUSI3097",
+          "title": "Music Design and Programming for Video Games",
+          "credits": 3,
+          "group": "Sound Concentration · Concentration Elective Courses · published individual-course list; section requires 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/sound-concentration"
+        },
+        {
+          "code": "MUSI3137",
+          "title": "Immersive Creativity through Spatial Sound",
+          "credits": 3,
+          "group": "Sound Concentration · Concentration Elective Courses · published individual-course list; section requires 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units; Technology Concentration · Concentration Elective Courses · complete 9 units from the published list",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/sound-concentration"
+        },
+        {
+          "code": "MUSI3145",
+          "title": "Music and AI",
+          "credits": 3,
+          "group": "Sound Concentration · Concentration Elective Courses · published individual-course list; section requires 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units; Technology Concentration · Concentration Elective Courses · complete 9 units from the published list",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/sound-concentration"
+        },
+        {
+          "code": "MUSI4025",
+          "title": "Special Topics in Music I",
+          "credits": 2,
+          "group": "Sound Concentration · Concentration Elective Courses · published individual-course list; section requires 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUSI4025",
+          "description": "The Sound Concentration table displays 3 units, but the linked 2025-2026 Handbook course page assigns 2 units. This record uses the course-page value and preserves the unresolved curriculum-page conflict."
+        },
+        {
+          "code": "MUSI4026",
+          "title": "Special Topics in Music II",
+          "credits": 2,
+          "group": "Sound Concentration · Concentration Elective Courses · published individual-course list; section requires 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUSI4026",
+          "description": "The Sound Concentration table displays 3 units, but the linked 2025-2026 Handbook course page assigns 2 units. This record uses the course-page value and preserves the unresolved curriculum-page conflict."
+        },
+        {
+          "code": "MUSI4027",
+          "title": "Special Topics in Music III",
+          "credits": 2,
+          "group": "Sound Concentration · Concentration Elective Courses · published individual-course list; section requires 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MUSI4027",
+          "description": "The Sound Concentration table displays 3 units, but the linked 2025-2026 Handbook course page assigns 2 units. This record uses the course-page value and preserves the unresolved curriculum-page conflict."
+        },
+        {
+          "code": "MUSI4036",
+          "title": "Special Topics in Music and Technology I",
+          "credits": 3,
+          "group": "Sound Concentration · Concentration Elective Courses · published individual-course list; section requires 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/sound-concentration"
+        },
+        {
+          "code": "MUSI4037",
+          "title": "Special Topics in Music and Technology II",
+          "credits": 3,
+          "group": "Sound Concentration · Concentration Elective Courses · published individual-course list; section requires 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/sound-concentration"
+        },
+        {
+          "code": "MUSI4045",
+          "title": "Special Topics in Music and Technology III",
+          "credits": 3,
+          "group": "Sound Concentration · Concentration Elective Courses · published individual-course list; section requires 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/sound-concentration"
+        },
+        {
+          "code": "VART4105",
+          "title": "Further Studies in Craft and Design (Object Culture)",
+          "credits": 3,
+          "group": "Sound Concentration · Concentration Elective Courses · published individual-course list; section requires 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units; Visual Concentration · Concentration Elective Courses · choose 3 listed 3-unit courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/sound-concentration"
+        },
+        {
+          "code": "VART4106",
+          "title": "Further Studies in Craft and Design (Experience Design)",
+          "credits": 3,
+          "group": "Sound Concentration · Concentration Elective Courses · published individual-course list; section requires 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units; Visual Concentration · Concentration Elective Courses · choose 3 listed 3-unit courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/sound-concentration"
+        },
+        {
+          "code": "VART3386",
+          "title": "Studio: Audio-Visual Practices in Media Arts",
+          "credits": 9,
+          "group": "Sound Concentration · Concentration Elective Courses · alternative: take 1 listed 9-unit Studio course; Visual Concentration · Concentration Elective Courses · alternative: take 1 listed 9-unit Studio course",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/VART3386",
+          "description": "The concentration tables render “Audio Visual”; the linked 2025-2026 course page uses “Audio-Visual”, which is retained here."
+        },
+        {
+          "code": "VART3405",
+          "title": "Studio: Experience Design",
+          "credits": 9,
+          "group": "Sound Concentration · Concentration Elective Courses · alternative: take 1 listed 9-unit Studio course; Visual Concentration · Concentration Elective Courses · alternative: take 1 listed 9-unit Studio course",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/sound-concentration"
+        },
+        {
+          "code": "VART3436",
+          "title": "Studio: Spatial Practices in Media Arts",
+          "credits": 9,
+          "group": "Sound Concentration · Concentration Elective Courses · alternative: take 1 listed 9-unit Studio course; Visual Concentration · Concentration Elective Courses · alternative: take 1 listed 9-unit Studio course",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/sound-concentration"
+        },
+        {
+          "code": "VART3445",
+          "title": "Studio: Object Technology (Robotics and Kinetics)",
+          "credits": 9,
+          "group": "Sound Concentration · Concentration Elective Courses · alternative: take 1 listed 9-unit Studio course; Visual Concentration · Concentration Elective Courses · alternative: take 1 listed 9-unit Studio course",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/sound-concentration"
+        },
+        {
+          "code": "COMP2865",
+          "title": "Fundamental of Data Analysis and Management",
+          "credits": 3,
+          "group": "Technology Concentration · Foundation Courses · both required / 6 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/technology-concentration"
+        },
+        {
+          "code": "COMP2055",
+          "title": "Interactive Media App Development",
+          "credits": 3,
+          "group": "Technology Concentration · Foundation Courses · both required / 6 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/technology-concentration"
+        },
+        {
+          "code": "COMP3076",
+          "title": "AI and Generative Arts",
+          "credits": 3,
+          "group": "Technology Concentration · Core Courses · all required / 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units; Visual Concentration · Concentration Elective Courses · choose 3 listed 3-unit courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/technology-concentration"
+        },
+        {
+          "code": "VART3447",
+          "title": "3D Immersive Environment",
+          "credits": 3,
+          "group": "Technology Concentration · Core Courses · all required / 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units; Visual Concentration · Core Courses · all required / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/technology-concentration"
+        },
+        {
+          "code": "VART3455",
+          "title": "Image Processing in Arts and Technology",
+          "credits": 3,
+          "group": "Technology Concentration · Core Courses · all required / 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units; Visual Concentration · Core Courses · all required / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/technology-concentration"
+        },
+        {
+          "code": "COMP3057",
+          "title": "Introduction to Artificial Intelligence and Machine Learning",
+          "credits": 3,
+          "group": "Technology Concentration · Concentration Elective Courses · complete 9 units from the published list; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/technology-concentration"
+        },
+        {
+          "code": "COMP3115",
+          "title": "Exploratory Data Analysis and Visualization",
+          "credits": 3,
+          "group": "Technology Concentration · Concentration Elective Courses · complete 9 units from the published list; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMP3115",
+          "description": "The Technology Concentration table uses British spelling “Visualisation”; the linked 2025-2026 course page uses “Visualization”, which is retained here."
+        },
+        {
+          "code": "COMP4025",
+          "title": "Interactive Computer Graphics",
+          "credits": 3,
+          "group": "Technology Concentration · Concentration Elective Courses · complete 9 units from the published list; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/technology-concentration"
+        },
+        {
+          "code": "COMP4026",
+          "title": "Computer Vision and Pattern Recognition",
+          "credits": 3,
+          "group": "Technology Concentration · Concentration Elective Courses · complete 9 units from the published list; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/technology-concentration"
+        },
+        {
+          "code": "COMP4045",
+          "title": "Human Computer Interaction",
+          "credits": 3,
+          "group": "Technology Concentration · Concentration Elective Courses · complete 9 units from the published list; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/COMP4045",
+          "description": "The Technology Concentration table renders “Human - Computer Interaction”; the linked 2025-2026 course page uses “Human Computer Interaction”, which is retained here."
+        },
+        {
+          "code": "COMP4136",
+          "title": "Natural Language Processing and Large Language Models",
+          "credits": 3,
+          "group": "Technology Concentration · Concentration Elective Courses · complete 9 units from the published list; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/technology-concentration"
+        },
+        {
+          "code": "COMP4137",
+          "title": "Blockchain Technology and Applications",
+          "credits": 3,
+          "group": "Technology Concentration · Concentration Elective Courses · complete 9 units from the published list; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/technology-concentration"
+        },
+        {
+          "code": "TRAN3035",
+          "title": "Translation Technology in Practice I",
+          "credits": 3,
+          "group": "Technology Concentration · Concentration Elective Courses · complete 9 units from the published list; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/technology-concentration"
+        },
+        {
+          "code": "TRAN3046",
+          "title": "Introduction to Localization",
+          "credits": 3,
+          "group": "Technology Concentration · Concentration Elective Courses · complete 9 units from the published list; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/technology-concentration"
+        },
+        {
+          "code": "TRAN4067",
+          "title": "World Building: Language, Culture and Translation",
+          "credits": 3,
+          "group": "Technology Concentration · Concentration Elective Courses · complete 9 units from the published list; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/technology-concentration"
+        },
+        {
+          "code": "TRAN4075",
+          "title": "Machine Learning, Artificial Intelligence and Translation",
+          "credits": 3,
+          "group": "Technology Concentration · Concentration Elective Courses · complete 9 units from the published list; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/technology-concentration"
+        },
+        {
+          "code": "TRAN4076",
+          "title": "Introduction to Language Technology",
+          "credits": 3,
+          "group": "Technology Concentration · Concentration Elective Courses · complete 9 units from the published list; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/TRAN4076",
+          "description": "The Technology Concentration table renders “Introduction to Language Technologies”; the linked 2025-2026 course page uses the singular title “Introduction to Language Technology”, which is retained here."
+        },
+        {
+          "code": "VART2657",
+          "title": "Digital Photography",
+          "credits": 3,
+          "group": "Visual Concentration · Foundation Courses · choose 2 of 4 / 6 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/visual-concentration"
+        },
+        {
+          "code": "VART2667",
+          "title": "Video Editing",
+          "credits": 3,
+          "group": "Visual Concentration · Foundation Courses · choose 2 of 4 / 6 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/visual-concentration"
+        },
+        {
+          "code": "VART2726",
+          "title": "3D Software Fundamentals and Prototyping",
+          "credits": 3,
+          "group": "Visual Concentration · Foundation Courses · choose 2 of 4 / 6 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/visual-concentration"
+        },
+        {
+          "code": "VART2737",
+          "title": "Digital Modelling and Fabrication for Sculpture",
+          "credits": 3,
+          "group": "Visual Concentration · Foundation Courses · choose 2 of 4 / 6 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/visual-concentration"
+        },
+        {
+          "code": "ENGL2097",
+          "title": "Virtual Storytelling: Narration across Dimensions",
+          "credits": 3,
+          "group": "Visual Concentration · Core Courses · all required / 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/visual-concentration"
+        },
+        {
+          "code": "ENGL4067",
+          "title": "Comics and Graphic Novels",
+          "credits": 3,
+          "group": "Visual Concentration · Concentration Elective Courses · choose 3 listed 3-unit courses / 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/visual-concentration"
+        },
+        {
+          "code": "GAME3017",
+          "title": "Interactive Graphics",
+          "credits": 3,
+          "group": "Visual Concentration · Concentration Elective Courses · choose 3 listed 3-unit courses / 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/visual-concentration"
+        },
+        {
+          "code": "GAME3035",
+          "title": "Transdisciplinary Theory of Game Design",
+          "credits": 3,
+          "group": "Visual Concentration · Concentration Elective Courses · choose 3 listed 3-unit courses / 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/visual-concentration"
+        },
+        {
+          "code": "GAME3037",
+          "title": "Visual Aesthetics and Narrative Presentation",
+          "credits": 3,
+          "group": "Visual Concentration · Concentration Elective Courses · choose 3 listed 3-unit courses / 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/visual-concentration"
+        },
+        {
+          "code": "VART4065",
+          "title": "Further Studies in Studio and Media Arts (Drawing)",
+          "credits": 3,
+          "group": "Visual Concentration · Concentration Elective Courses · choose 3 listed 3-unit courses / 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/visual-concentration"
+        },
+        {
+          "code": "VART4066",
+          "title": "Further Studies in Studio and Media Arts (Painting)",
+          "credits": 3,
+          "group": "Visual Concentration · Concentration Elective Courses · choose 3 listed 3-unit courses / 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/visual-concentration"
+        },
+        {
+          "code": "VART4067",
+          "title": "Further Studies in Studio and Media Arts (Chinese Arts)",
+          "credits": 3,
+          "group": "Visual Concentration · Concentration Elective Courses · choose 3 listed 3-unit courses / 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/visual-concentration"
+        },
+        {
+          "code": "VART4075",
+          "title": "Further Studies in Studio and Media Arts (Media Arts)",
+          "credits": 3,
+          "group": "Visual Concentration · Concentration Elective Courses · choose 3 listed 3-unit courses / 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/visual-concentration"
+        },
+        {
+          "code": "VART4076",
+          "title": "Further Studies in Studio and Media Arts (Lens-based Media)",
+          "credits": 3,
+          "group": "Visual Concentration · Concentration Elective Courses · choose 3 listed 3-unit courses / 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/visual-concentration"
+        },
+        {
+          "code": "VART4077",
+          "title": "Further Studies in Studio and Media Arts (Sculpture)",
+          "credits": 3,
+          "group": "Visual Concentration · Concentration Elective Courses · choose 3 listed 3-unit courses / 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/visual-concentration"
+        },
+        {
+          "code": "VART4085",
+          "title": "Further Studies in Studio and Media Arts (Performance Studies)",
+          "credits": 3,
+          "group": "Visual Concentration · Concentration Elective Courses · choose 3 listed 3-unit courses / 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/visual-concentration"
+        },
+        {
+          "code": "VART4086",
+          "title": "Further Studies in Studio and Media Arts (Installation Art)",
+          "credits": 3,
+          "group": "Visual Concentration · Concentration Elective Courses · choose 3 listed 3-unit courses / 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/visual-concentration"
+        },
+        {
+          "code": "VART4087",
+          "title": "Further Studies in Craft and Design (Graphic Design)",
+          "credits": 3,
+          "group": "Visual Concentration · Concentration Elective Courses · choose 3 listed 3-unit courses / 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/visual-concentration"
+        },
+        {
+          "code": "VART4095",
+          "title": "Further Studies in Craft and Design (Printmaking)",
+          "credits": 3,
+          "group": "Visual Concentration · Concentration Elective Courses · choose 3 listed 3-unit courses / 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/visual-concentration"
+        },
+        {
+          "code": "VART4096",
+          "title": "Further Studies in Craft and Design (Ceramics)",
+          "credits": 3,
+          "group": "Visual Concentration · Concentration Elective Courses · choose 3 listed 3-unit courses / 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/visual-concentration"
+        },
+        {
+          "code": "VART4097",
+          "title": "Further Studies in Craft and Design (Wearables)",
+          "credits": 3,
+          "group": "Visual Concentration · Concentration Elective Courses · choose 3 listed 3-unit courses / 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/visual-concentration"
+        },
+        {
+          "code": "VART4107",
+          "title": "Further Studies in Craft and Design (Glass)",
+          "credits": 3,
+          "group": "Visual Concentration · Concentration Elective Courses · choose 3 listed 3-unit courses / 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/visual-concentration"
+        },
+        {
+          "code": "VART4116",
+          "title": "Further Studies in Craft and Design (Object Technology)",
+          "credits": 3,
+          "group": "Visual Concentration · Concentration Elective Courses · choose 3 listed 3-unit courses / 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/visual-concentration"
+        },
+        {
+          "code": "VART4127",
+          "title": "Special Topics in Visual Arts and Technology I",
+          "credits": 3,
+          "group": "Visual Concentration · Concentration Elective Courses · choose 3 listed 3-unit courses / 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/visual-concentration"
+        },
+        {
+          "code": "VART4135",
+          "title": "Special Topics in Visual Arts and Technology II",
+          "credits": 3,
+          "group": "Visual Concentration · Concentration Elective Courses · choose 3 listed 3-unit courses / 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/visual-concentration"
+        },
+        {
+          "code": "VART4136",
+          "title": "Special Topics in Visual Arts and Technology III",
+          "credits": 3,
+          "group": "Visual Concentration · Concentration Elective Courses · choose 3 listed 3-unit courses / 9 units; Concentration Free Elective Courses · eligible as a 3-unit course from any concentration; take 3 courses / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and/visual-concentration"
+        }
+      ]
+    }
+  ]
+}

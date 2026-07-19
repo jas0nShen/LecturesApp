@@ -31,7 +31,7 @@ test('loads one university package once and deduplicates concurrent callers', as
   assert.equal(loader.getUniversityLoadState('HKU'), 'ready');
 });
 
-test('treats all CityU or PolyU shards as one atomic university load', async () => {
+test('treats all split university shards as one atomic university load', async () => {
   const calls = [];
   const activations = [];
   const loader = createUniversityLoader({
@@ -91,7 +91,7 @@ test('all eight launch schools resolve either their own course package or an exp
     POLYU: 'ready',
     CITYU: 'ready',
     LINGNAN: 'ready',
-    HKBU: 'not_required',
+    HKBU: 'ready',
     EDUHK: 'not_required'
   };
 
@@ -101,5 +101,5 @@ test('all eight launch schools resolve either their own course package or an exp
     assert.equal(loader.getUniversityLoadState(universityCode), state, universityCode);
   }
   assert.deepEqual(activated, loaded);
-  assert.equal(loaded.length, 8);
+  assert.equal(loaded.length, 11);
 });

@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "EDUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-19",
+  "programmes": [
+    {
+      "programmeId": "EDUHK-TPG-DIR-MA-BRBCA",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "credit points",
+      "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-belt-and-road-business-communication-and-administration",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The live official 2026-27 Programme page confirms Programme code A1M135 and a 24-credit-point award comprising all six 3-credit-point Core Courses and any two of five 3-credit-point Elective Courses. Official EdUHK curriculum-module pages confirm every current course-code mapping and title, including the 3-credit-point Capstone Project option. PUA6036 and LIN6075 are taught in English and may be chosen only by students who satisfy the published English-language requirements; this conditional eligibility requires manual audit review.",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Complete all six Core Courses (18 credit points).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-belt-and-road-business-communication-and-administration",
+          "courses": [
+            { "code": "LIN6073", "name": "Belt and Road Languages, Cultures and History: Overview", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/LIN6073.html" },
+            { "code": "PUA6034", "name": "Bilingual English-Chinese Business Communication", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/PUA6034.html" },
+            { "code": "MDA6011", "name": "Intercultural Communication and Strategies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/MDA6011.html" },
+            { "code": "MDA6012", "name": "Public Relations Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/MDA6012.html" },
+            { "code": "MDA6007", "name": "Business Journalism and Branding on Social Media", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/MDA6007.html" },
+            { "code": "LIN6074", "name": "Technology-Enhanced Translation: Tools and Practices for the Professional Workplace", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/LIN6074.html" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective_project",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Choose any two of the five Elective Courses (6 credit points), including the optional 3-credit-point Capstone Project. PUA6036 and LIN6075 use English as the medium of instruction and require one of: IELTS Academic overall 6.0; internet-based TOEFL 80; CET Band 6 total 430; GCSE/GCE O-Level English grade C or above; or another equivalent qualification accepted case by case. Test-centre results must be valid within two years. TOEFL Home Editions, TOEFL MyBest Score, IELTS Indicator, IELTS Online, IELTS One Skill Retake, Duolingo and the National Postgraduate Entrance Examination are not accepted.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-belt-and-road-business-communication-and-administration",
+          "courses": [
+            { "code": "PUA6036", "name": "Social Dynamics in Central Asian Belt and Road Countries", "credits": 3, "conditionalRequirement": true, "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/PUA6036.html" },
+            { "code": "LIN6075", "name": "Understanding Islam: Cultures and Languages", "credits": 3, "conditionalRequirement": true, "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/LIN6075.html" },
+            { "code": "PUA6035", "name": "Intercultural Business Strategic Management and Event Planning", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/PUA6035.html" },
+            { "code": "PUA6028", "name": "Communication, Media and Public Governance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/PUA6028.html" },
+            { "code": "MDA6013", "name": "Capstone Project", "credits": 3, "courseKind": "project", "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/MDA6013.html" }
+          ]
+        }
+      ]
+    }
+  ]
+}

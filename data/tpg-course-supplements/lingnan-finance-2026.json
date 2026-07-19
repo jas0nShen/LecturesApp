@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "LINGNAN",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-18",
+  "programmes": [
+    {
+      "programmeId": "LINGNAN-TPG-DIR-16-000107-L6",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.ln.edu.hk/fin/mfin/programme/master-of-science-in-finance",
+      "ruleReviewStatus": "verified",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 21,
+          "coursesRequired": 7,
+          "ruleText": "Complete all seven Core Courses (21 credits).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/fin/mfin/programme/master-of-science-in-finance",
+          "courses": [
+            { "code": "FIN520", "name": "Corporate Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf" },
+            { "code": "FIN521", "name": "Financial Markets and Investment Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf" },
+            { "code": "FIN522", "name": "Management of Financial Institutions in Hong Kong and Mainland China", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf" },
+            { "code": "FIN523", "name": "Quantitative Methods for Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf" },
+            { "code": "FIN524", "name": "Principles of Risk Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf" },
+            { "code": "FIN525", "name": "Fixed Income Securities", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf" },
+            { "code": "FIN530", "name": "Principles of Financial Analysis and Valuation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 9,
+          "coursesRequired": 3,
+          "ruleText": "Choose any three Elective Courses (9 credits). Elective offerings are subject to sufficient demand and faculty availability, and some courses have prerequisites.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/fin/mfin/programme/master-of-science-in-finance",
+          "courses": [
+            { "code": "FIN531", "name": "Derivative Securities", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf" },
+            { "code": "FIN532", "name": "Financial Planning and Services in Hong Kong and Mainland China", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf" },
+            { "code": "FIN534", "name": "Hong Kong and Mainland China Monetary and Financial Systems", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf" },
+            { "code": "FIN535", "name": "International Financial Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf" },
+            { "code": "FIN536", "name": "Investment and Wealth Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf" },
+            { "code": "FIN537", "name": "Real Estate Investment and Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf" },
+            { "code": "FIN538", "name": "Securities Laws and Regulatory Framework in Hong Kong and Mainland China", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf" },
+            { "code": "FIN539", "name": "Algorithmic Trading and Quantitative Strategies", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf" },
+            { "code": "FIN540", "name": "Venture Capital and Private Equity", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf" },
+            { "code": "FIN541", "name": "Insurance Law in Hong Kong and Mainland China", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf" },
+            { "code": "FIN542", "name": "Insurance Practice in Hong Kong and Mainland China", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf" },
+            { "code": "FIN543", "name": "Introduction to FinTech", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf" },
+            { "code": "FIN545", "name": "Environmental, Social and Governance (ESG) Investing and Sustainable Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf" },
+            { "code": "FIN546", "name": "Structured Products in Financial Market", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf" },
+            { "code": "FIN600", "name": "Case Studies in Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf" },
+            { "code": "RIM535", "name": "Financial Risk Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf" },
+            { "code": "RIM536", "name": "Big Data Analytics for Risk Management and Insurance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf" },
+            { "code": "ACT502", "name": "Business and Company Law", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/ACT_TPG.pdf" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -112,6 +112,528 @@ module.exports = [
     ]
   },
   {
+    "id": "EDUHK-TPG-DIR-MA-BRBCA",
+    "courseGroups": [
+      {
+        "id": "core-courses",
+        "name": "Core Courses",
+        "type": "core",
+        "creditsRequired": 18,
+        "coursesRequired": 6,
+        "ruleText": "Complete all six Core Courses (18 credit points).",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-belt-and-road-business-communication-and-administration",
+        "courses": [
+          {
+            "code": "LIN6073",
+            "name": "Belt and Road Languages, Cultures and History: Overview",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/LIN6073.html"
+          },
+          {
+            "code": "PUA6034",
+            "name": "Bilingual English-Chinese Business Communication",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/PUA6034.html"
+          },
+          {
+            "code": "MDA6011",
+            "name": "Intercultural Communication and Strategies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/MDA6011.html"
+          },
+          {
+            "code": "MDA6012",
+            "name": "Public Relations Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/MDA6012.html"
+          },
+          {
+            "code": "MDA6007",
+            "name": "Business Journalism and Branding on Social Media",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/MDA6007.html"
+          },
+          {
+            "code": "LIN6074",
+            "name": "Technology-Enhanced Translation: Tools and Practices for the Professional Workplace",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/LIN6074.html"
+          }
+        ]
+      },
+      {
+        "id": "elective-courses",
+        "name": "Elective Courses",
+        "type": "elective_project",
+        "creditsRequired": 6,
+        "coursesRequired": 2,
+        "ruleText": "Choose any two of the five Elective Courses (6 credit points), including the optional 3-credit-point Capstone Project. PUA6036 and LIN6075 use English as the medium of instruction and require one of: IELTS Academic overall 6.0; internet-based TOEFL 80; CET Band 6 total 430; GCSE/GCE O-Level English grade C or above; or another equivalent qualification accepted case by case. Test-centre results must be valid within two years. TOEFL Home Editions, TOEFL MyBest Score, IELTS Indicator, IELTS Online, IELTS One Skill Retake, Duolingo and the National Postgraduate Entrance Examination are not accepted.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-belt-and-road-business-communication-and-administration",
+        "courses": [
+          {
+            "code": "PUA6036",
+            "name": "Social Dynamics in Central Asian Belt and Road Countries",
+            "credits": 3,
+            "conditionalRequirement": true,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/PUA6036.html"
+          },
+          {
+            "code": "LIN6075",
+            "name": "Understanding Islam: Cultures and Languages",
+            "credits": 3,
+            "conditionalRequirement": true,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/LIN6075.html"
+          },
+          {
+            "code": "PUA6035",
+            "name": "Intercultural Business Strategic Management and Event Planning",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/PUA6035.html"
+          },
+          {
+            "code": "PUA6028",
+            "name": "Communication, Media and Public Governance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/PUA6028.html"
+          },
+          {
+            "code": "MDA6013",
+            "name": "Capstone Project",
+            "credits": 3,
+            "courseKind": "project",
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/MDA6013.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EDUHK-TPG-DIR-MA-CVBLE",
+    "courseGroups": [
+      {
+        "id": "core-courses",
+        "name": "Core Courses",
+        "type": "core",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Complete all four Core Courses (12 credit points).",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-chinese-values-based-leadership-education",
+        "courses": [
+          {
+            "code": "CCE6002",
+            "name": "Values-Based Leadership in Education",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/CCE6002.html"
+          },
+          {
+            "code": "EDA6156",
+            "name": "Strategic Management and Planning for Edupreneurs",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/EDA6156.html"
+          },
+          {
+            "code": "COU6035",
+            "name": "Whole Person Development and Well-being in Education",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/COU6035.html"
+          },
+          {
+            "code": "GCS6033",
+            "name": "Creating the Future of China Education: A Policy and Reform Perspective",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/GCS6033.html"
+          }
+        ]
+      },
+      {
+        "id": "elective-courses",
+        "name": "Elective Courses",
+        "type": "elective",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Choose any four of the seven Elective Courses (12 credit points). The seven Elective Courses may not all be offered every year.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-chinese-values-based-leadership-education",
+        "courses": [
+          {
+            "code": "EDA6157",
+            "name": "Chinese Traditional Values and Sustainable Development Goals (SDG) in Education",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/EDA6157.html"
+          },
+          {
+            "code": "INT6139",
+            "name": "Educational Leadership in Innovation Technology: Artificial Intelligence, Big Data and Knowledge Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/INT6139.html"
+          },
+          {
+            "code": "SED6120",
+            "name": "Inclusive Education and Diversity Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6120.html"
+          },
+          {
+            "code": "EGC6013",
+            "name": "Global Educational Leadership and Practices",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/EGC6013.html"
+          },
+          {
+            "code": "SED6146",
+            "name": "Building an Inclusive and Equitable Professional and Vocational Education in China",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6146.html"
+          },
+          {
+            "code": "TLS6114",
+            "name": "Application of Professional and Vocational Skills and Knowledge for Success",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/TLS6114.html"
+          },
+          {
+            "code": "EDA6180",
+            "name": "Gender and Leadership",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/EDA6180.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EDUHK-TPG-DIR-MA-CECI",
+    "courseGroups": [
+      {
+        "id": "core-courses",
+        "name": "Core Courses",
+        "type": "core",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Complete all four Core Courses (12 credit points).",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-comparative-education-and-collaborative-innovation",
+        "courses": [
+          {
+            "code": "PFS6081",
+            "name": "Triple Helix Model: University-Industry-Government Collaboration and Innovation",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/PFS6081.html"
+          },
+          {
+            "code": "PFS6082",
+            "name": "Research Methods: Comparative and Mixed Methods",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/PFS6082.html"
+          },
+          {
+            "code": "PFS6083",
+            "name": "Education and Society: International and Comparative Perspectives",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/PFS6083.html"
+          },
+          {
+            "code": "PFS6084",
+            "name": "Transforming Education in a Changing World: Insights from Europe and Asia",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/PFS6084.html"
+          }
+        ]
+      },
+      {
+        "id": "elective-and-capstone-pathways",
+        "name": "Elective and Capstone Pathways",
+        "type": "elective_project",
+        "creditsRequired": 12,
+        "coursesRequired": null,
+        "ruleText": "Complete either four of the five 3-credit-point Elective Courses, or, if selected as an eligible full-time student, PFS6085 Capstone Project (6 credit points) plus two of the five Elective Courses.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-comparative-education-and-collaborative-innovation",
+        "courses": [
+          {
+            "code": "PFS6061",
+            "name": "Higher Education and International Development",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/PFS6061.html"
+          },
+          {
+            "code": "PUA6027",
+            "name": "Technology and Innovation Policies: Development and Trend",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/PUA6027.html"
+          },
+          {
+            "code": "PFS6076",
+            "name": "Entrepreneurialism and Interprofessional Learning in Higher Education",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/PFS6076.html"
+          },
+          {
+            "code": "ECO6002",
+            "name": "China's Regional Economy and Hong Kong's Economic Development: Challenges and Opportunities",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/ECO6002.html"
+          },
+          {
+            "code": "EDA6156",
+            "name": "Strategic Management and Planning for Edupreneurs",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/EDA6156.html"
+          },
+          {
+            "code": "PFS6085",
+            "name": "Capstone Project in Comparative Education and Collaborative Innovation",
+            "credits": 6,
+            "courseKind": "project",
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/PFS6085.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EDUHK-TPG-DIR-MA-DHRMOM",
+    "courseGroups": [
+      {
+        "id": "core-courses",
+        "name": "Core Courses",
+        "type": "core",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Complete all four Core Courses (12 credit points).",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-digital-human-resource-management-and-organisational-marketing",
+        "courses": [
+          {
+            "code": "BUS6075",
+            "name": "Digital Human Resource Management and Strategy",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/BUS6075.html"
+          },
+          {
+            "code": "BUS6076",
+            "name": "Organisational Marketing and Social Media",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/BUS6076.html"
+          },
+          {
+            "code": "BUS6077",
+            "name": "Managing Organisation in the Digital Age",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/BUS6077.html"
+          },
+          {
+            "code": "BUS6078",
+            "name": "Employee Behavior and Well-being Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/BUS6078.html"
+          }
+        ]
+      },
+      {
+        "id": "elective-courses",
+        "name": "Elective Courses",
+        "type": "elective_project",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Choose any four of the seven Elective Courses (12 credit points), including the optional 3-credit-point Capstone Project. Course offerings may change and the full pool is not a guaranteed annual offering.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-digital-human-resource-management-and-organisational-marketing",
+        "courses": [
+          {
+            "code": "BUS6079",
+            "name": "Strategic Marketing Communication and Brand Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/BUS6079.html"
+          },
+          {
+            "code": "BUS6081",
+            "name": "Financial and Performance Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/BUS6081.html"
+          },
+          {
+            "code": "BUS6080",
+            "name": "Business Research and Analytical Methods",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/BUS6080.html"
+          },
+          {
+            "code": "BUS6082",
+            "name": "Digital Leadership and Entrepreneurship in Organisations",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/BUS6082.html"
+          },
+          {
+            "code": "BUS6083",
+            "name": "AI and Emerging Technology in Business Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/BUS6083.html"
+          },
+          {
+            "code": "MDA6017",
+            "name": "Public Relations Strategies in the Digital Age",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/MDA6017.html"
+          },
+          {
+            "code": "BUS6084",
+            "name": "Capstone Project",
+            "credits": 3,
+            "courseKind": "project",
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/BUS6084.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EDUHK-TPG-DIR-MA-DMEC",
+    "courseGroups": [
+      {
+        "id": "core-courses",
+        "name": "Core Courses",
+        "type": "core",
+        "creditsRequired": 18,
+        "coursesRequired": 6,
+        "ruleText": "Complete all six Core Courses (18 credit points).",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-digital-marketing-and-e-commerce",
+        "courses": [
+          {
+            "code": "BUS6085",
+            "name": "Introduction to E-commerce and Digital Retail",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/BUS6085.html"
+          },
+          {
+            "code": "BUS6086",
+            "name": "Neuromarketing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/BUS6086.html"
+          },
+          {
+            "code": "MDA6014",
+            "name": "Marketing Analytics & Data Visualisation",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/MDA6014.html"
+          },
+          {
+            "code": "MDA6015",
+            "name": "Digital Marketing Strategy",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/MDA6015.html"
+          },
+          {
+            "code": "MDA6016",
+            "name": "Influencer Marketing & Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/MDA6016.html"
+          },
+          {
+            "code": "MDA6006",
+            "name": "New Media Law, Ethics and Regulation",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/MDA6006.html"
+          }
+        ]
+      },
+      {
+        "id": "elective-courses",
+        "name": "Elective Courses",
+        "type": "elective_project",
+        "creditsRequired": 6,
+        "coursesRequired": 2,
+        "ruleText": "Choose any two of the four Elective Courses (6 credit points), including the optional 3-credit-point Capstone Project. Course offerings may change and the full pool is not a guaranteed annual offering.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-digital-marketing-and-e-commerce",
+        "courses": [
+          {
+            "code": "BUS6087",
+            "name": "Frontiers in E-commerce: Theory, Innovation, and Practice",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/BUS6087.html"
+          },
+          {
+            "code": "MDA6017",
+            "name": "Public Relations Strategies in the Digital Age",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/MDA6017.html"
+          },
+          {
+            "code": "INT6144",
+            "name": "AI for Knowledge Management and Professional Development",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/INT6144.html"
+          },
+          {
+            "code": "BUS6088",
+            "name": "Capstone Project",
+            "credits": 3,
+            "courseKind": "project",
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/BUS6088.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "EDUHK-TPG-DIR-MA-ESM",
     "courseGroups": [
       {
@@ -280,6 +802,120 @@ module.exports = [
             "name": "Independent Project in International Higher Education",
             "credits": 3,
             "sourceUrl": "https://www.eduhk.hk/curriculum/module/PFS6077.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EDUHK-TPG-DIR-MA-NMSM",
+    "courseGroups": [
+      {
+        "id": "core-courses",
+        "name": "Core Courses",
+        "type": "core",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Complete all four Core Courses (12 credit points).",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-new-media-and-social-media",
+        "courses": [
+          {
+            "code": "MDA6001",
+            "name": "Applied Communication Research",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&ta=2&tag=AEDI&tc=1"
+          },
+          {
+            "code": "MDA6006",
+            "name": "New Media Law, Ethics and Regulation",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&ta=2&tag=AEDI&tc=1"
+          },
+          {
+            "code": "MDA6002",
+            "name": "New Media Education",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&ta=2&tag=AEDI&tc=1"
+          },
+          {
+            "code": "MDA6003",
+            "name": "Psychological Aspects of New Media and AI",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&ta=2&tag=AEDI&tc=1"
+          }
+        ]
+      },
+      {
+        "id": "elective-courses",
+        "name": "Elective Courses",
+        "type": "elective",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Choose any four of the eight Elective Courses (12 credit points). INT6139 and MDA6017 are applicable to students admitted from 2026 onwards.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-new-media-and-social-media",
+        "courses": [
+          {
+            "code": "MDA6004",
+            "name": "Online and Mobile Journalism",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&ta=2&tag=AEDI&tc=1"
+          },
+          {
+            "code": "MDA6005",
+            "name": "Multimedia Production",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&ta=2&tag=AEDI&tc=1"
+          },
+          {
+            "code": "MDA6007",
+            "name": "Business Journalism and Branding on Social Media",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&ta=2&tag=AEDI&tc=1"
+          },
+          {
+            "code": "MDA6008",
+            "name": "Application of New Media Technology in Education",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&ta=2&tag=AEDI&tc=1"
+          },
+          {
+            "code": "MDA6009",
+            "name": "New Media, Algorithm, and AI",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&ta=2&tag=AEDI&tc=1"
+          },
+          {
+            "code": "MDA6010",
+            "name": "Capstone Project",
+            "credits": 3,
+            "courseKind": "project",
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&ta=2&tag=AEDI&tc=1"
+          },
+          {
+            "code": "INT6139",
+            "name": "Educational Leadership in Innovation Technology: Artificial Intelligence, Big Data and Knowledge Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&ta=2&tag=AEDI&tc=1"
+          },
+          {
+            "code": "MDA6017",
+            "name": "Public Relations Strategies in Digital Age",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&page=0&ta=2&tag=AEDI&tc=1"
           }
         ]
       }

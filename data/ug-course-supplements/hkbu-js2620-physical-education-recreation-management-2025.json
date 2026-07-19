@@ -1,0 +1,603 @@
+{
+  "provider": "HKBU University Student Handbook 2025-2026",
+  "academicYear": "2025-2026",
+  "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/academy-of-wellness-and-human-development/bachelor-of-arts-honours-in-physical-education-and-1",
+  "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2620/",
+  "note": "The official 2025-2026 Handbook places two selectable Majors under the current PERM Programme: the established Physical Education and Recreation Management (PERM) Major and the new Sports Science Major available by application to students admitted in 2025/26. They are modelled as separate local Majors so course state remains isolated by Programme, Major and Course. The Social Sciences Common Core applies to both. For PERM, the page publishes 40 units of Major Required Courses and a base 17-unit Major Elective pattern: five theory electives (15 units) plus two skills electives (2 units). Because both required PERM internships fulfil the 3-unit Experiential Learning in Action component, the official cross-credit rule requires 3 additional units of PERM Major Elective course(s), making 20 elective units in total. For Sports Science, the page publishes 45 units of Major Required Courses and 15 units selected from its published elective list. Its required pathway uses both CMED1046 and CMED3005, or, for students not proficient in Chinese, both PERM3066 and PERM3067. PERM4898 and PERM4899 together form the 6-unit Honours Project for either Major. Three codes have minor title differences between the two programme-table sections; PERM1316, PERM3027 and PERM1435 use the titles on their linked 2025-2026 Handbook course pages. The published elective options are retained without inferring any unstated availability or automatic completion rule. University Language Courses, General Education Courses and Free Electives are excluded. No Year or Term is assigned.",
+  "supplements": [
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BA-PERM-14",
+      "jupasCode": "JS2620",
+      "programmeName": "Bachelor of Arts (Hons) in Physical Education and Recreation Management",
+      "majorId": "HKBU-UG-BA-PERM-14-M1",
+      "majorName": "Bachelor of Arts (Hons) in Physical Education and Recreation Management",
+      "courses": [
+        {
+          "code": "SOSC1006",
+          "title": "Invitation to Social Sciences",
+          "credits": 1,
+          "group": "Social Sciences Common Core · Core Course · required / 1 unit"
+        },
+        {
+          "code": "SOSC3005",
+          "title": "Community and Civic Engagement",
+          "credits": 3,
+          "group": "Social Sciences Common Core · Experiential Learning in Action · choose 1 of 2 / 3 units; fulfilled by both required PERM internships under the official cross-credit rule"
+        },
+        {
+          "code": "SOSC3006",
+          "title": "Global Outreach",
+          "credits": 3,
+          "group": "Social Sciences Common Core · Experiential Learning in Action · choose 1 of 2 / 3 units; fulfilled by both required PERM internships under the official cross-credit rule"
+        },
+        {
+          "code": "PERM1006",
+          "title": "Human Anatomy and Physiology",
+          "credits": 3,
+          "group": "PERM Major Required Courses · all required / 40 units"
+        },
+        {
+          "code": "PERM1007",
+          "title": "Sport and Exercise Psychology",
+          "credits": 3,
+          "group": "PERM Major Required Courses · all required / 40 units"
+        },
+        {
+          "code": "PERM1015",
+          "title": "History and Philosophy of Physical Education, Sport and Recreation",
+          "credits": 3,
+          "group": "PERM Major Required Courses · all required / 40 units"
+        },
+        {
+          "code": "PERM1305",
+          "title": "Swimming",
+          "credits": 1,
+          "group": "PERM Major Required Courses · all required / 40 units"
+        },
+        {
+          "code": "PERM1306",
+          "title": "Conditioning and Fitness",
+          "credits": 1,
+          "group": "PERM Major Required Courses · all required / 40 units"
+        },
+        {
+          "code": "PERM1307",
+          "title": "Dance",
+          "credits": 1,
+          "group": "PERM Major Required Courses · all required / 40 units"
+        },
+        {
+          "code": "PERM1315",
+          "title": "Gymnastics",
+          "credits": 1,
+          "group": "PERM Major Required Courses · all required / 40 units"
+        },
+        {
+          "code": "PERM1316",
+          "title": "Track and Field",
+          "credits": 1,
+          "group": "PERM Major Required Courses · all required / 40 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/PERM1316",
+          "description": "The Programme table renders a minor title variation between the PERM and Sports Science sections; this title follows the linked 2025-2026 Handbook course page."
+        },
+        {
+          "code": "PERM1317",
+          "title": "Outdoor Pursuits",
+          "credits": 1,
+          "group": "PERM Major Required Courses · all required / 40 units"
+        },
+        {
+          "code": "PERM2005",
+          "title": "Exercise Physiology",
+          "credits": 3,
+          "group": "PERM Major Required Courses · all required / 40 units"
+        },
+        {
+          "code": "PERM2006",
+          "title": "Organization and Administration in Physical Education and Recreation",
+          "credits": 3,
+          "group": "PERM Major Required Courses · all required / 40 units"
+        },
+        {
+          "code": "PERM2007",
+          "title": "Tests and Measurement",
+          "credits": 3,
+          "group": "PERM Major Required Courses · all required / 40 units"
+        },
+        {
+          "code": "PERM3006",
+          "title": "Research Methods",
+          "credits": 3,
+          "group": "PERM Major Required Courses · all required / 40 units"
+        },
+        {
+          "code": "PERM3027",
+          "title": "Prevention and Care of Sports Injuries",
+          "credits": 3,
+          "group": "PERM Major Required Courses · all required / 40 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/PERM3027",
+          "description": "The Programme table renders a minor title variation between the PERM and Sports Science sections; this title follows the linked 2025-2026 Handbook course page."
+        },
+        {
+          "code": "PERM3037",
+          "title": "Motor Learning and Development",
+          "credits": 3,
+          "group": "PERM Major Required Courses · all required / 40 units"
+        },
+        {
+          "code": "PERM3046",
+          "title": "Theory and Practice in Sport and Recreation Management",
+          "credits": 3,
+          "group": "PERM Major Required Courses · all required / 40 units"
+        },
+        {
+          "code": "PERM3056",
+          "title": "Internship - Local Placement",
+          "credits": 2,
+          "group": "PERM Major Required Courses · both internships required; together fulfil Experiential Learning in Action, requiring 3 additional units of PERM Major Elective courses (20 elective units total)",
+          "courseType": "internship",
+          "description": "The official Handbook requires both internships. Together they fulfil the 3-unit Experiential Learning in Action component; students must replace those 3 units with additional PERM Major Elective course(s), for 20 PERM elective units in total."
+        },
+        {
+          "code": "PERM3057",
+          "title": "Internship - Overseas Placement",
+          "credits": 2,
+          "group": "PERM Major Required Courses · both internships required; together fulfil Experiential Learning in Action, requiring 3 additional units of PERM Major Elective courses (20 elective units total)",
+          "courseType": "internship",
+          "description": "The official Handbook requires both internships. Together they fulfil the 3-unit Experiential Learning in Action component; students must replace those 3 units with additional PERM Major Elective course(s), for 20 PERM elective units in total."
+        },
+        {
+          "code": "PERM3007",
+          "title": "Sociology of Sport and Recreation",
+          "credits": 3,
+          "group": "PERM Major Elective Courses · Elective Theory Courses · choose 5 courses / 15 units; internship cross-credit requires 3 additional PERM elective units"
+        },
+        {
+          "code": "PERM3015",
+          "title": "Recreation Programming and Event Management",
+          "credits": 3,
+          "group": "PERM Major Elective Courses · Elective Theory Courses · choose 5 courses / 15 units; internship cross-credit requires 3 additional PERM elective units"
+        },
+        {
+          "code": "PERM3016",
+          "title": "Fitness and Recreation for Selected Population",
+          "credits": 3,
+          "group": "PERM Major Elective Courses · Elective Theory Courses · choose 5 courses / 15 units; internship cross-credit requires 3 additional PERM elective units"
+        },
+        {
+          "code": "PERM3017",
+          "title": "Health Fitness Evaluation and Assessment",
+          "credits": 3,
+          "group": "PERM Major Elective Courses · Elective Theory Courses · choose 5 courses / 15 units; internship cross-credit requires 3 additional PERM elective units"
+        },
+        {
+          "code": "PERM3025",
+          "title": "Kinesiology",
+          "credits": 3,
+          "group": "PERM Major Elective Courses · Elective Theory Courses · choose 5 courses / 15 units; internship cross-credit requires 3 additional PERM elective units"
+        },
+        {
+          "code": "PERM3026",
+          "title": "Nutrition and Health",
+          "credits": 3,
+          "group": "PERM Major Elective Courses · Elective Theory Courses · choose 5 courses / 15 units; internship cross-credit requires 3 additional PERM elective units"
+        },
+        {
+          "code": "PERM3045",
+          "title": "Sport Media and Public Relation",
+          "credits": 3,
+          "group": "PERM Major Elective Courses · Elective Theory Courses · choose 5 courses / 15 units; internship cross-credit requires 3 additional PERM elective units"
+        },
+        {
+          "code": "PERM3047",
+          "title": "Coaching Theory and Methodology",
+          "credits": 3,
+          "group": "PERM Major Elective Courses · Elective Theory Courses · choose 5 courses / 15 units; internship cross-credit requires 3 additional PERM elective units"
+        },
+        {
+          "code": "PERM3055",
+          "title": "Introduction to Horticulture",
+          "credits": 3,
+          "group": "PERM Major Elective Courses · Elective Theory Courses · choose 5 courses / 15 units; internship cross-credit requires 3 additional PERM elective units"
+        },
+        {
+          "code": "PERM3065",
+          "title": "Sports Performance and Health: The Marvel of Science, Technology, and Psychology",
+          "credits": 3,
+          "group": "PERM Major Elective Courses · Elective Theory Courses · choose 5 courses / 15 units; internship cross-credit requires 3 additional PERM elective units"
+        },
+        {
+          "code": "PERM4005",
+          "title": "Facility Management",
+          "credits": 3,
+          "group": "PERM Major Elective Courses · Elective Theory Courses · choose 5 courses / 15 units; internship cross-credit requires 3 additional PERM elective units"
+        },
+        {
+          "code": "PERM4006",
+          "title": "Financial and Human Resources Management in Leisure Services",
+          "credits": 3,
+          "group": "PERM Major Elective Courses · Elective Theory Courses · choose 5 courses / 15 units; internship cross-credit requires 3 additional PERM elective units"
+        },
+        {
+          "code": "PERM4007",
+          "title": "Leadership and Communication in Sport and Recreation",
+          "credits": 3,
+          "group": "PERM Major Elective Courses · Elective Theory Courses · choose 5 courses / 15 units; internship cross-credit requires 3 additional PERM elective units"
+        },
+        {
+          "code": "PERM4016",
+          "title": "Outdoor Recreation",
+          "credits": 3,
+          "group": "PERM Major Elective Courses · Elective Theory Courses · choose 5 courses / 15 units; internship cross-credit requires 3 additional PERM elective units"
+        },
+        {
+          "code": "PERM4017",
+          "title": "Principles and Practice of Exercise and Weight Management",
+          "credits": 3,
+          "group": "PERM Major Elective Courses · Elective Theory Courses · choose 5 courses / 15 units; internship cross-credit requires 3 additional PERM elective units"
+        },
+        {
+          "code": "PERM4115",
+          "title": "Marketing in Sport and Leisure Services",
+          "credits": 3,
+          "group": "PERM Major Elective Courses · Elective Theory Courses · choose 5 courses / 15 units; internship cross-credit requires 3 additional PERM elective units"
+        },
+        {
+          "code": "PERM4116",
+          "title": "Health Promotion",
+          "credits": 3,
+          "group": "PERM Major Elective Courses · Elective Theory Courses · choose 5 courses / 15 units; internship cross-credit requires 3 additional PERM elective units"
+        },
+        {
+          "code": "PERM1425",
+          "title": "Badminton",
+          "credits": 1,
+          "group": "PERM Major Elective Courses · Elective Skills Courses · choose 2 courses / 2 units; internship cross-credit requires 3 additional PERM elective units"
+        },
+        {
+          "code": "PERM1426",
+          "title": "Golf",
+          "credits": 1,
+          "group": "PERM Major Elective Courses · Elective Skills Courses · choose 2 courses / 2 units; internship cross-credit requires 3 additional PERM elective units"
+        },
+        {
+          "code": "PERM1427",
+          "title": "Squash",
+          "credits": 1,
+          "group": "PERM Major Elective Courses · Elective Skills Courses · choose 2 courses / 2 units; internship cross-credit requires 3 additional PERM elective units"
+        },
+        {
+          "code": "PERM1435",
+          "title": "Table-Tennis",
+          "credits": 1,
+          "group": "PERM Major Elective Courses · Elective Skills Courses · choose 2 courses / 2 units; internship cross-credit requires 3 additional PERM elective units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/PERM1435",
+          "description": "The Programme table renders a minor title variation between the PERM and Sports Science sections; this title follows the linked 2025-2026 Handbook course page."
+        },
+        {
+          "code": "PERM1436",
+          "title": "Tennis",
+          "credits": 1,
+          "group": "PERM Major Elective Courses · Elective Skills Courses · choose 2 courses / 2 units; internship cross-credit requires 3 additional PERM elective units"
+        },
+        {
+          "code": "PERM1445",
+          "title": "Taekwondo",
+          "credits": 1,
+          "group": "PERM Major Elective Courses · Elective Skills Courses · choose 2 courses / 2 units; internship cross-credit requires 3 additional PERM elective units"
+        },
+        {
+          "code": "PERM1446",
+          "title": "Tai Chi",
+          "credits": 1,
+          "group": "PERM Major Elective Courses · Elective Skills Courses · choose 2 courses / 2 units; internship cross-credit requires 3 additional PERM elective units"
+        },
+        {
+          "code": "PERM1447",
+          "title": "Basketball",
+          "credits": 1,
+          "group": "PERM Major Elective Courses · Elective Skills Courses · choose 2 courses / 2 units; internship cross-credit requires 3 additional PERM elective units"
+        },
+        {
+          "code": "PERM1455",
+          "title": "Handball",
+          "credits": 1,
+          "group": "PERM Major Elective Courses · Elective Skills Courses · choose 2 courses / 2 units; internship cross-credit requires 3 additional PERM elective units"
+        },
+        {
+          "code": "PERM1456",
+          "title": "Soccer",
+          "credits": 1,
+          "group": "PERM Major Elective Courses · Elective Skills Courses · choose 2 courses / 2 units; internship cross-credit requires 3 additional PERM elective units"
+        },
+        {
+          "code": "PERM1465",
+          "title": "Volleyball",
+          "credits": 1,
+          "group": "PERM Major Elective Courses · Elective Skills Courses · choose 2 courses / 2 units; internship cross-credit requires 3 additional PERM elective units"
+        },
+        {
+          "code": "PERM4898",
+          "title": "Honours Project",
+          "credits": 3,
+          "group": "Honours Project · both courses required / 6 units",
+          "courseType": "capstone"
+        },
+        {
+          "code": "PERM4899",
+          "title": "Honours Project",
+          "credits": 3,
+          "group": "Honours Project · both courses required / 6 units",
+          "courseType": "capstone"
+        }
+      ]
+    },
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BA-PERM-14",
+      "jupasCode": "JS2620",
+      "programmeName": "Bachelor of Arts (Hons) in Physical Education and Recreation Management",
+      "majorId": "HKBU-UG-BA-PERM-14-M2",
+      "majorName": "Sports Science Major",
+      "createMajor": {
+        "id": "HKBU-UG-BA-PERM-14-M2",
+        "code": "SPORTS-SCIENCE-MAJOR",
+        "nameEn": "Sports Science Major",
+        "nameZh": "Sports Science Major",
+        "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/academy-of-wellness-and-human-development/bachelor-of-arts-honours-in-physical-education-and-1"
+      },
+      "courses": [
+        {
+          "code": "SOSC1006",
+          "title": "Invitation to Social Sciences",
+          "credits": 1,
+          "group": "Social Sciences Common Core · Core Course · required / 1 unit"
+        },
+        {
+          "code": "SOSC3005",
+          "title": "Community and Civic Engagement",
+          "credits": 3,
+          "group": "Social Sciences Common Core · Experiential Learning in Action · choose 1 of 2 / 3 units"
+        },
+        {
+          "code": "SOSC3006",
+          "title": "Global Outreach",
+          "credits": 3,
+          "group": "Social Sciences Common Core · Experiential Learning in Action · choose 1 of 2 / 3 units"
+        },
+        {
+          "code": "PERM1006",
+          "title": "Human Anatomy and Physiology",
+          "credits": 3,
+          "group": "Sports Science Major Required Courses · common required courses within the 45-unit requirement"
+        },
+        {
+          "code": "PERM1007",
+          "title": "Sport and Exercise Psychology",
+          "credits": 3,
+          "group": "Sports Science Major Required Courses · common required courses within the 45-unit requirement"
+        },
+        {
+          "code": "PERM1015",
+          "title": "History and Philosophy of Physical Education, Sport and Recreation",
+          "credits": 3,
+          "group": "Sports Science Major Required Courses · common required courses within the 45-unit requirement"
+        },
+        {
+          "code": "PERM1305",
+          "title": "Swimming",
+          "credits": 1,
+          "group": "Sports Science Major Required Courses · common required courses within the 45-unit requirement"
+        },
+        {
+          "code": "PERM1306",
+          "title": "Conditioning and Fitness",
+          "credits": 1,
+          "group": "Sports Science Major Required Courses · common required courses within the 45-unit requirement"
+        },
+        {
+          "code": "PERM1307",
+          "title": "Dance",
+          "credits": 1,
+          "group": "Sports Science Major Required Courses · common required courses within the 45-unit requirement"
+        },
+        {
+          "code": "PERM2005",
+          "title": "Exercise Physiology",
+          "credits": 3,
+          "group": "Sports Science Major Required Courses · common required courses within the 45-unit requirement"
+        },
+        {
+          "code": "PERM2007",
+          "title": "Tests and Measurement",
+          "credits": 3,
+          "group": "Sports Science Major Required Courses · common required courses within the 45-unit requirement"
+        },
+        {
+          "code": "PERM3006",
+          "title": "Research Methods",
+          "credits": 3,
+          "group": "Sports Science Major Required Courses · common required courses within the 45-unit requirement"
+        },
+        {
+          "code": "PERM3027",
+          "title": "Prevention and Care of Sports Injuries",
+          "credits": 3,
+          "group": "Sports Science Major Required Courses · common required courses within the 45-unit requirement",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/PERM3027",
+          "description": "The Programme table renders a minor title variation between the PERM and Sports Science sections; this title follows the linked 2025-2026 Handbook course page."
+        },
+        {
+          "code": "PERM4027",
+          "title": "Advanced Exercise Physiology",
+          "credits": 3,
+          "group": "Sports Science Major Required Courses · common required courses within the 45-unit requirement"
+        },
+        {
+          "code": "BIOL2005",
+          "title": "Biological Chemistry",
+          "credits": 3,
+          "group": "Sports Science Major Required Courses · common required courses within the 45-unit requirement"
+        },
+        {
+          "code": "COMP2035",
+          "title": "AI and Data Analytics for Health and Social Innovation I",
+          "credits": 3,
+          "group": "Sports Science Major Required Courses · common required courses within the 45-unit requirement"
+        },
+        {
+          "code": "COMP2036",
+          "title": "AI and Data Analytics for Health and Social Innovation II",
+          "credits": 3,
+          "group": "Sports Science Major Required Courses · common required courses within the 45-unit requirement"
+        },
+        {
+          "code": "PERM3075",
+          "title": "Internship",
+          "credits": 3,
+          "group": "Sports Science Major Required Courses · required internship within the 45-unit requirement",
+          "courseType": "internship"
+        },
+        {
+          "code": "CMED1046",
+          "title": "Fundamental Theories of Chinese Medicine",
+          "credits": 3,
+          "group": "Sports Science Major Required Courses · Chinese-proficient path — take both courses / 6 units"
+        },
+        {
+          "code": "CMED3005",
+          "title": "Principle and practice of Orthopaedics and Traumatology of Chinese Medicine",
+          "credits": 3,
+          "group": "Sports Science Major Required Courses · Chinese-proficient path — take both courses / 6 units"
+        },
+        {
+          "code": "PERM3066",
+          "title": "Applied Physiology Project (1)",
+          "credits": 3,
+          "group": "Sports Science Major Required Courses · alternative for students not proficient in Chinese — take both courses / 6 units"
+        },
+        {
+          "code": "PERM3067",
+          "title": "Applied Physiology Project (2)",
+          "credits": 3,
+          "group": "Sports Science Major Required Courses · alternative for students not proficient in Chinese — take both courses / 6 units"
+        },
+        {
+          "code": "PERM2017",
+          "title": "Strength and Conditioning Fundamentals",
+          "credits": 3,
+          "group": "Sports Science Major Elective Courses · complete 15 units from the published course list"
+        },
+        {
+          "code": "PERM3025",
+          "title": "Kinesiology",
+          "credits": 3,
+          "group": "Sports Science Major Elective Courses · complete 15 units from the published course list"
+        },
+        {
+          "code": "PERM3026",
+          "title": "Nutrition and Health",
+          "credits": 3,
+          "group": "Sports Science Major Elective Courses · complete 15 units from the published course list"
+        },
+        {
+          "code": "PERM3037",
+          "title": "Motor Learning and Development",
+          "credits": 3,
+          "group": "Sports Science Major Elective Courses · complete 15 units from the published course list"
+        },
+        {
+          "code": "PERM4025",
+          "title": "Exercise and Molecular Metabolism",
+          "credits": 3,
+          "group": "Sports Science Major Elective Courses · complete 15 units from the published course list"
+        },
+        {
+          "code": "PERM4026",
+          "title": "Sports Analytics",
+          "credits": 3,
+          "group": "Sports Science Major Elective Courses · complete 15 units from the published course list"
+        },
+        {
+          "code": "BIOL2017",
+          "title": "Cell Biology",
+          "credits": 3,
+          "group": "Sports Science Major Elective Courses · complete 15 units from the published course list"
+        },
+        {
+          "code": "BIOL3017",
+          "title": "Molecular Biology",
+          "credits": 3,
+          "group": "Sports Science Major Elective Courses · complete 15 units from the published course list"
+        },
+        {
+          "code": "PERM1315",
+          "title": "Gymnastics",
+          "credits": 1,
+          "group": "Sports Science Major Elective Courses · complete 15 units from the published course list"
+        },
+        {
+          "code": "PERM1316",
+          "title": "Track and Field",
+          "credits": 1,
+          "group": "Sports Science Major Elective Courses · complete 15 units from the published course list",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/PERM1316",
+          "description": "The Programme table renders a minor title variation between the PERM and Sports Science sections; this title follows the linked 2025-2026 Handbook course page."
+        },
+        {
+          "code": "PERM1317",
+          "title": "Outdoor Pursuits",
+          "credits": 1,
+          "group": "Sports Science Major Elective Courses · complete 15 units from the published course list"
+        },
+        {
+          "code": "PERM1425",
+          "title": "Badminton",
+          "credits": 1,
+          "group": "Sports Science Major Elective Courses · complete 15 units from the published course list"
+        },
+        {
+          "code": "PERM1426",
+          "title": "Golf",
+          "credits": 1,
+          "group": "Sports Science Major Elective Courses · complete 15 units from the published course list"
+        },
+        {
+          "code": "PERM1435",
+          "title": "Table-Tennis",
+          "credits": 1,
+          "group": "Sports Science Major Elective Courses · complete 15 units from the published course list",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/PERM1435",
+          "description": "The Programme table renders a minor title variation between the PERM and Sports Science sections; this title follows the linked 2025-2026 Handbook course page."
+        },
+        {
+          "code": "PERM1447",
+          "title": "Basketball",
+          "credits": 1,
+          "group": "Sports Science Major Elective Courses · complete 15 units from the published course list"
+        },
+        {
+          "code": "PERM1456",
+          "title": "Soccer",
+          "credits": 1,
+          "group": "Sports Science Major Elective Courses · complete 15 units from the published course list"
+        },
+        {
+          "code": "PERM4898",
+          "title": "Honours Project",
+          "credits": 3,
+          "group": "Honours Project · both courses required / 6 units",
+          "courseType": "capstone"
+        },
+        {
+          "code": "PERM4899",
+          "title": "Honours Project",
+          "credits": 3,
+          "group": "Honours Project · both courses required / 6 units",
+          "courseType": "capstone"
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 module.exports = {
-  version: '1.0.7',
+  version: '1.0.8',
   target: '香港高校课程规划助手正式版',
   dataMode: '体验版 / 正式版离线数据',
-  releaseNote: '新增本科本机课程排期与已修状态，并增强本科双分包加载与微信基础库兼容性。'
+  releaseNote: '扩充本科及授课硕士离线课程清单，优化本科正式 Major 合并与 HKU/HKBU 分包加载。'
 };

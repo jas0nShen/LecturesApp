@@ -1,0 +1,87 @@
+{
+  "provider": "HKBU University Student Handbook 2025-2026",
+  "academicYear": "2025-2026",
+  "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours",
+  "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2110",
+  "note": "The official BBA curriculum lists 46 units of Required Courses and the Accounting Concentration lists 21 units of Concentration Required Courses. This supplement records those 67 units only. The 9-unit University Language requirement, 22-unit General Education requirement and 30-unit Free Electives are excluded because the programme page does not define them as closed coded course pools. ACCT3007 is excluded because the Accounting Concentration page identifies it as an additional HKICPA/ACCA recognition or exemption course to be taken using free-elective units, not as part of the 67-unit Major Courses requirement. No Year or Term is assigned because the official requirement tables do not specify course timing.",
+  "supplements": [
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BBA-ACCT-4",
+      "programmeCode": "BBA(ACCT)",
+      "programmeName": "Bachelor of Business Administration (Hons) - Accounting Concentration",
+      "majorId": "HKBU-UG-BBA-ACCT-4-M1",
+      "majorName": "Bachelor of Business Administration (Hons) - Accounting Concentration",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours",
+      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2110",
+      "courses": [
+        { "code": "ACCT1005", "title": "Principles of Accounting I", "credits": 3, "group": "BBA Required Courses" },
+        { "code": "ACCT1006", "title": "Principles of Accounting II", "credits": 2, "group": "BBA Required Courses" },
+        { "code": "BUSI1006", "title": "Business Research Methods", "credits": 3, "group": "BBA Required Courses" },
+        { "code": "BUSI1007", "title": "Business Coding", "credits": 1, "group": "BBA Required Courses" },
+        { "code": "BUSI2005", "title": "Organizational Behaviour", "credits": 3, "group": "BBA Required Courses" },
+        { "code": "BUSI2035", "title": "Entrepreneurship and Innovative Thinking", "credits": 3, "group": "BBA Required Courses" },
+        { "code": "BUSI2055", "title": "AI for Business", "credits": 3, "group": "BBA Required Courses" },
+        { "code": "BUSI3006", "title": "Business Ethics, CSR and Impact Investing", "credits": 3, "group": "BBA Required Courses" },
+        { "code": "BUSI3075", "title": "AI Ethics and Governance", "credits": 2, "group": "BBA Required Courses" },
+        { "code": "BUSI3097", "title": "Data Analytics for Business Decision Making", "credits": 3, "group": "BBA Required Courses" },
+        { "code": "BUSI4005", "title": "BBA Project", "credits": 3, "group": "BBA Required Courses" },
+        { "code": "BUSI4006", "title": "Strategic Management", "credits": 3, "group": "BBA Required Courses" },
+        { "code": "ECON1005", "title": "Principles of Economics I", "credits": 3, "group": "BBA Required Courses" },
+        { "code": "ECON1006", "title": "Principles of Economics II", "credits": 2, "group": "BBA Required Courses" },
+        { "code": "FINE2005", "title": "Financial Management", "credits": 3, "group": "BBA Required Courses" },
+        { "code": "LLAW3007", "title": "Principles of Law", "credits": 3, "group": "BBA Required Courses" },
+        { "code": "MKTG2005", "title": "Marketing Management", "credits": 3, "group": "BBA Required Courses" },
+        {
+          "code": "ACCT2005",
+          "title": "Intermediate Accounting I",
+          "credits": 3,
+          "group": "Accounting Concentration Required Courses",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/accounting-concentration"
+        },
+        {
+          "code": "ACCT2006",
+          "title": "Intermediate Accounting II",
+          "credits": 3,
+          "group": "Accounting Concentration Required Courses",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/accounting-concentration"
+        },
+        {
+          "code": "ACCT3005",
+          "title": "Cost and Management Accounting I",
+          "credits": 3,
+          "group": "Accounting Concentration Required Courses",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/accounting-concentration"
+        },
+        {
+          "code": "ACCT3006",
+          "title": "Hong Kong Taxation",
+          "credits": 3,
+          "group": "Accounting Concentration Required Courses",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/accounting-concentration"
+        },
+        {
+          "code": "ACCT4005",
+          "title": "Advanced Accounting I",
+          "credits": 3,
+          "group": "Accounting Concentration Required Courses",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/accounting-concentration"
+        },
+        {
+          "code": "ACCT4006",
+          "title": "Auditing I",
+          "credits": 3,
+          "group": "Accounting Concentration Required Courses",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/accounting-concentration"
+        },
+        {
+          "code": "LLAW3005",
+          "title": "Company Law",
+          "credits": 3,
+          "group": "Accounting Concentration Required Courses",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/accounting-concentration"
+        }
+      ]
+    }
+  ]
+}

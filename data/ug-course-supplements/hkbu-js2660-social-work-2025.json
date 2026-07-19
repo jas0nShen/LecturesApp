@@ -1,0 +1,62 @@
+{
+  "provider": "HKBU University Student Handbook 2025-2026",
+  "academicYear": "2025-2026",
+  "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/academy-of-wellness-and-human-development/bachelor-of-social-work-honours-1",
+  "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2660/",
+  "note": "The public 2025-2026 official Handbook publishes 4 units of Social Sciences Common Core, 45 units of Major Required Courses, an explicit 14-course Major Elective pool, and two required Honours Project courses for 3 units. The Common Core requires SOSC1006 plus one of SOSC3005 and SOSC3006. However, the official footnote says SOWK3005 Field Practice I fulfils the 3-unit Experiential Learning in Action requirement, and students must replace those 3 units with additional SOWK Major Elective units; therefore the displayed 18-unit Major Elective requirement becomes a total of 21 SOWK Major Elective units. SOWK3005, SOWK4008 and SOWK4009 are retained as required field-practice courses. The individual 2025-2026 course-directory page for SOWK1027 returns 'No result found'; its code, title and 0.5-unit value are retained from the explicit official Programme requirement table and flagged accordingly. Individual course pages supply their current canonical titles where punctuation, capitalization or wording differs from the Programme table. The 2026-2027 Handbook route currently returns HTTP 401, so no 2026-2027 course or rule is inferred. University Language, General Education and Free Electives are excluded. No Year or Term is assigned because the public requirement table does not publish course timing.",
+  "supplements": [
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BSW-15",
+      "jupasCode": "JS2660",
+      "programmeName": "Bachelor of Social Work (Hons)",
+      "majorId": "HKBU-UG-BSW-15-M1",
+      "majorName": "Bachelor of Social Work (Hons)",
+      "courses": [
+        { "code": "SOSC1006", "title": "Invitation to Social Sciences", "credits": 1, "group": "Social Sciences Common Core · required / 1 unit" },
+        { "code": "SOSC3005", "title": "Community and Civic Engagement", "credits": 3, "group": "Social Sciences Common Core · choose 1 of 2 for Experiential Learning in Action; SOWK3005 officially fulfils this requirement" },
+        { "code": "SOSC3006", "title": "Global Outreach", "credits": 3, "group": "Social Sciences Common Core · choose 1 of 2 for Experiential Learning in Action; SOWK3005 officially fulfils this requirement" },
+
+        { "code": "SOWK1025", "title": "Social Work in Contemporary Society", "credits": 2, "group": "Major Required Courses · all required / 45 units" },
+        { "code": "SOWK1026", "title": "Integrative Tutorial 1 (Service Users in Contexts A)", "credits": 0.5, "group": "Major Required Courses · all required / 45 units" },
+        { "code": "SOWK1027", "title": "Integrative Tutorial 2 (Service Users in Contexts B)", "credits": 0.5, "group": "Major Required Courses · all required / 45 units", "description": "The official Programme requirement table explicitly publishes this code, title and 0.5-unit value, but the linked 2025-2026 course directory returns no result." },
+        { "code": "SOWK2006", "title": "Social Work Values and Interventions", "credits": 2, "group": "Major Required Courses · all required / 45 units" },
+        { "code": "SOWK2016", "title": "Integrative Tutorial 3 (Harnessing Technology A)", "credits": 0.5, "group": "Major Required Courses · all required / 45 units" },
+        { "code": "SOWK2017", "title": "Integrative Tutorial 4 (Harnessing Technology B)", "credits": 0.5, "group": "Major Required Courses · all required / 45 units" },
+        { "code": "SOWK2025", "title": "Social Policy and Law", "credits": 3, "group": "Major Required Courses · all required / 45 units" },
+        { "code": "SOWK3005", "title": "Field Practice I", "credits": 10, "courseType": "internship", "group": "Major Required Courses · Field Practice / all required / 45 units", "description": "Officially fulfils the 3-unit Experiential Learning in Action requirement; students consequently complete 21 rather than 18 units of SOWK Major Electives." },
+        { "code": "SOWK3015", "title": "Integrative Tutorial 5 (Practice in Contexts A)", "credits": 0.5, "group": "Major Required Courses · all required / 45 units" },
+        { "code": "SOWK3016", "title": "Integrative Tutorial 6 (practice in contexts B)", "credits": 0.5, "group": "Major Required Courses · all required / 45 units" },
+        { "code": "SOWK3028", "title": "Theory and Practice in Social Work: Community Development I", "credits": 2, "group": "Major Required Courses · all required / 45 units" },
+        { "code": "SOWK3029", "title": "Theory and Practice in Social Work: Community Development II", "credits": 2, "group": "Major Required Courses · all required / 45 units" },
+        { "code": "SOWK3038", "title": "Theory and Practice in Social Work Group I", "credits": 2, "group": "Major Required Courses · all required / 45 units" },
+        { "code": "SOWK3039", "title": "Theory and Practice in Social Work Group II", "credits": 2, "group": "Major Required Courses · all required / 45 units" },
+        { "code": "SOWK3048", "title": "Theory and Practice in Social Work Individual (I)", "credits": 2, "group": "Major Required Courses · all required / 45 units" },
+        { "code": "SOWK3049", "title": "Theory and Practice in Social Work Individual (II)", "credits": 2, "group": "Major Required Courses · all required / 45 units" },
+        { "code": "SOWK4015", "title": "Comparing Social Welfare in Global and Chinese Contexts", "credits": 2, "group": "Major Required Courses · all required / 45 units" },
+        { "code": "SOWK4008", "title": "Field Practice II", "credits": 5, "courseType": "internship", "group": "Major Required Courses · Field Practice / all required / 45 units" },
+        { "code": "SOWK4009", "title": "Field Practice II", "credits": 5, "courseType": "internship", "group": "Major Required Courses · Field Practice / all required / 45 units" },
+        { "code": "SOWK4035", "title": "Integrative Tutorial 7 (Operational Issues in Contexts A)", "credits": 0.5, "group": "Major Required Courses · all required / 45 units" },
+        { "code": "SOWK4036", "title": "Integrative Tutorial 8 (Operational Issues in Contexts B)", "credits": 0.5, "group": "Major Required Courses · all required / 45 units" },
+
+        { "code": "SOWK1006", "title": "Human Development through the Life Span", "credits": 3, "group": "Major Elective Courses · select 21 SOWK units after SOWK3005 substitution (base requirement 18 units)" },
+        { "code": "SOWK1015", "title": "Social Dimensions of Human Societies", "credits": 3, "group": "Major Elective Courses · select 21 SOWK units after SOWK3005 substitution (base requirement 18 units)" },
+        { "code": "SOWK1017", "title": "Psychology of Positive Living", "credits": 3, "group": "Major Elective Courses · select 21 SOWK units after SOWK3005 substitution (base requirement 18 units)" },
+        { "code": "SOWK3017", "title": "Social Work Research", "credits": 3, "group": "Major Elective Courses · select 21 SOWK units after SOWK3005 substitution (base requirement 18 units)" },
+        { "code": "SOWK3205", "title": "Love and Human Sexuality", "credits": 3, "group": "Major Elective Courses · select 21 SOWK units after SOWK3005 substitution (base requirement 18 units)" },
+        { "code": "SOWK4005", "title": "Administration in Human Service Organizations", "credits": 3, "group": "Major Elective Courses · select 21 SOWK units after SOWK3005 substitution (base requirement 18 units)" },
+        { "code": "SOWK4007", "title": "Families and Social Work", "credits": 3, "group": "Major Elective Courses · select 21 SOWK units after SOWK3005 substitution (base requirement 18 units)" },
+        { "code": "SOWK4205", "title": "Social Work with Disadvantaged Groups and Social Work", "credits": 3, "group": "Major Elective Courses · select 21 SOWK units after SOWK3005 substitution (base requirement 18 units)" },
+        { "code": "SOWK4206", "title": "Older People and Social Work", "credits": 3, "group": "Major Elective Courses · select 21 SOWK units after SOWK3005 substitution (base requirement 18 units)" },
+        { "code": "SOWK4207", "title": "People with Mental Health Problems and Social Work", "credits": 3, "group": "Major Elective Courses · select 21 SOWK units after SOWK3005 substitution (base requirement 18 units)" },
+        { "code": "SOWK4215", "title": "Youth and Social Work", "credits": 3, "group": "Major Elective Courses · select 21 SOWK units after SOWK3005 substitution (base requirement 18 units)" },
+        { "code": "SOWK4216", "title": "Gender and Social Work", "credits": 3, "group": "Major Elective Courses · select 21 SOWK units after SOWK3005 substitution (base requirement 18 units)" },
+        { "code": "SOWK4225", "title": "Data Methodology in Social Sciences Research", "credits": 3, "group": "Major Elective Courses · select 21 SOWK units after SOWK3005 substitution (base requirement 18 units)" },
+        { "code": "SOWK4226", "title": "Career Facilitation and Counselling", "credits": 3, "group": "Major Elective Courses · select 21 SOWK units after SOWK3005 substitution (base requirement 18 units)" },
+
+        { "code": "SOWK4898", "title": "Social Work Honours Project", "credits": 1, "courseType": "capstone", "group": "Honours Project · both required / 3 units" },
+        { "code": "SOWK4899", "title": "Social Work Honours Project", "credits": 2, "courseType": "capstone", "group": "Honours Project · both required / 3 units" }
+      ]
+    }
+  ]
+}

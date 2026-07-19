@@ -1,0 +1,57 @@
+{
+  "provider": "HKU Li Ka Shing Faculty of Medicine Bachelor of Pharmacy Syllabuses",
+  "academicYear": "2024-25 and thereafter",
+  "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/ugdr2024-25/Medicine/BPharm.pdf",
+  "officialUrl": "https://www.pharma.hku.hk/en/Prospective-Student/Bachelor-of-Pharmacy/Curriculum-and-Structure",
+  "note": "The official syllabuses apply to candidates admitted under the four-year BPharm curriculum in 2024-25 and thereafter, so they cover the 2026-27 cohort. The Department's current curriculum page and 2026 programme brochure confirm the same four-year integrated professional structure but present themes rather than coded courses. This supplement records all 33 explicitly coded courses in the applicable syllabuses: 24 compulsory BPHM professional-core courses, 6 closed-list Year 4 BPHM electives, and 3 language-enhancement courses. The open Common Core pool is excluded because the syllabuses do not identify a closed coded list. CAES1000 is included as published but is optional for candidates who meet the stated English-language exemption. Students complete any 12 credits from the six Year 4 BPHM electives. Recommended Year is included from the official curriculum tables; no Semester is inferred because neither the applicable syllabuses nor the current curriculum structure assigns individual courses to a Semester.",
+  "supplements": [
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6494",
+      "programmeId": "HKU-UG-6494-45",
+      "majorId": "HKU-UG-6494-45-M1",
+      "majorName": "Bachelor of Pharmacy",
+      "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/ugdr2024-25/Medicine/BPharm.pdf",
+      "officialUrl": "https://www.pharma.hku.hk/en/Prospective-Student/Bachelor-of-Pharmacy/Curriculum-and-Structure",
+      "courses": [
+        { "code": "BPHM1111", "title": "Integrated Course in Basic Sciences: Anatomy, Physiology and Biochemistry", "credits": 12, "recommendedYear": 1, "courseType": "core", "group": "Professional Core — Year 1" },
+        { "code": "BPHM1120", "title": "Essential Skills for Pharmacy Students", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Professional Core — Year 1" },
+        { "code": "BPHM1121", "title": "Research Methods in Pharmacy Practice", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Professional Core — Year 1" },
+        { "code": "BPHM1122", "title": "Introduction to Pharmacy", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Professional Core — Year 1" },
+        { "code": "BPHM1132", "title": "Drug Discovery", "credits": 12, "recommendedYear": 1, "courseType": "core", "group": "Professional Core — Year 1" },
+        { "code": "CAES1000", "title": "Core University English", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "University Requirements — English Language Enhancement" },
+
+        { "code": "BPHM2123", "title": "Pharmacy Practice: Introduction", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Professional Core — Year 2" },
+        { "code": "BPHM2133", "title": "Pharmaceutical Chemistry", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Professional Core — Year 2" },
+        { "code": "BPHM2136", "title": "Dosage Form Design", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Professional Core — Year 2" },
+        { "code": "BPHM2141", "title": "Pharmacy in Body System Series – Respiratory System", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Professional Core — Year 2" },
+        { "code": "BPHM2142", "title": "Pharmacy in Body System Series – Gastrointestinal System, Drug Kinetics and Toxicities", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Professional Core — Year 2" },
+        { "code": "BPHM2143", "title": "Pharmacy in Body System Series – Cardiovascular and Renal", "credits": 12, "recommendedYear": 2, "courseType": "core", "group": "Professional Core — Year 2" },
+        { "code": "CAES9720", "title": "Academic Communication for Pharmacy Students", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "University Requirements — English in the Discipline" },
+        { "code": "CEMD9005", "title": "Practical Chinese for Pharmacy Students", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "University Requirements — Chinese Language Enhancement" },
+
+        { "code": "BPHM3125", "title": "Pharmacy Practice: Community Pharmacy", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Professional Core — Year 3" },
+        { "code": "BPHM3134", "title": "Advanced Drug Delivery", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Professional Core — Year 3" },
+        { "code": "BPHM3137", "title": "Pharmaceutical Analysis", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Professional Core — Year 3" },
+        { "code": "BPHM3144", "title": "Pharmacy in Body System Series – Endocrinology", "credits": 12, "recommendedYear": 3, "courseType": "core", "group": "Professional Core — Year 3" },
+        { "code": "BPHM3145", "title": "Pharmacy in Body System Series – Central Nervous System, Musculoskeletal and Connective Tissue Disorders", "credits": 12, "recommendedYear": 3, "courseType": "core", "group": "Professional Core — Year 3" },
+        { "code": "BPHM3146", "title": "Pharmacy in Body System Series – Microbiology and Infectious Diseases", "credits": 12, "recommendedYear": 3, "courseType": "core", "group": "Professional Core — Year 3" },
+        { "code": "BPHM3147", "title": "Pharmacy in Body System Series – Oncology", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Professional Core — Year 3" },
+
+        { "code": "BPHM4124", "title": "Pharmacy Practice: Pharmacy Law and Ethics", "credits": 6, "recommendedYear": 4, "courseType": "core", "group": "Professional Core — Year 4" },
+        { "code": "BPHM4135", "title": "Industrial Drug Development", "credits": 6, "recommendedYear": 4, "courseType": "core", "group": "Professional Core — Year 4" },
+        { "code": "BPHM4138", "title": "Biopharmaceutical Technology and Future Medicines", "credits": 6, "recommendedYear": 4, "courseType": "core", "group": "Professional Core — Year 4" },
+        { "code": "BPHM4148", "title": "Pharmacotherapy of Special Populations", "credits": 6, "recommendedYear": 4, "courseType": "core", "group": "Professional Core — Year 4" },
+        { "code": "BPHM4153", "title": "Enrichment Modules", "credits": 12, "recommendedYear": 4, "courseType": "core", "group": "Professional Core — Year 4" },
+        { "code": "BPHM4161", "title": "Research Methodology and Research Project", "credits": 12, "recommendedYear": 4, "courseType": "capstone", "group": "Professional Core — Year 4 Capstone Experience" },
+
+        { "code": "BPHM4141", "title": "Molecular Medicine", "credits": 6, "recommendedYear": 4, "courseType": "major_elective", "group": "Professional Core — Year 4 Electives · complete any 12 credits" },
+        { "code": "BPHM4142", "title": "Molecular Pharmacology", "credits": 6, "recommendedYear": 4, "courseType": "major_elective", "group": "Professional Core — Year 4 Electives · complete any 12 credits" },
+        { "code": "BPHM4143", "title": "Epidemiology and Precision Medicine", "credits": 6, "recommendedYear": 4, "courseType": "major_elective", "group": "Professional Core — Year 4 Electives · complete any 12 credits" },
+        { "code": "BPHM4144", "title": "Big Data in Healthcare", "credits": 6, "recommendedYear": 4, "courseType": "major_elective", "group": "Professional Core — Year 4 Electives · complete any 12 credits" },
+        { "code": "BPHM4151", "title": "Cosmetic Science", "credits": 6, "recommendedYear": 4, "courseType": "major_elective", "group": "Professional Core — Year 4 Electives · complete any 12 credits" },
+        { "code": "BPHM4152", "title": "Chinese Medicine for Pharmacy Students", "credits": 6, "recommendedYear": 4, "courseType": "major_elective", "group": "Professional Core — Year 4 Electives · complete any 12 credits" }
+      ]
+    }
+  ]
+}

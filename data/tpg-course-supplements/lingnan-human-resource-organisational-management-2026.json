@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "LINGNAN",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-18",
+  "programmes": [
+    {
+      "programmeId": "LINGNAN-TPG-DIR-24-000812-L6",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mschrom/curriculum",
+      "ruleReviewStatus": "manual_review_required",
+      "trackSelectionOptional": true,
+      "courseGroups": [
+        {
+          "id": "shared-core-courses",
+          "name": "Shared Core Courses",
+          "type": "core",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Complete both shared Core Courses (6 credits) under the mother Programme and the HRADT Concentration. MGT506 Action Learning Projects is a year course.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mschrom/curriculum",
+          "courses": [
+            { "code": "MGT504", "name": "Contemporary Human Resource Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/MGT_TPG.pdf" },
+            { "code": "MGT506", "name": "Action Learning Projects", "credits": 3, "courseKind": "project", "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/MGT_TPG.pdf" }
+          ]
+        },
+        {
+          "id": "path-core-and-elective-courses",
+          "name": "Path-specific Core and Elective Courses",
+          "type": "core",
+          "creditsRequired": 24,
+          "coursesRequired": 8,
+          "ruleText": "Complete eight courses (24 credits) in addition to the two shared Core Courses. Mother Programme: complete MGT501, MGT502, MGT505 and MGT507 as Core Courses, then choose four Electives from MGT601, MGT602, MGT604, MGT605, MGT606, ORM515, HRM542, HRM543 and ACT615. HRADT Concentration: complete HRM541, HRM542, HRM543 and HRM544 as Core Courses, then choose four Electives from MGT601, MGT602, MGT604, MGT605, MGT606, ORM515, MGT501, MGT502, MGT505, MGT507 and ACT615. The Core/Elective role changes require manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mschrom/curriculum",
+          "courses": [
+            { "code": "MGT501", "name": "Management of Organisations and People", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["LINGNAN-TPG-DIR-24-000812-L6-25-000384-L6"], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/MGT_TPG.pdf" },
+            { "code": "MGT502", "name": "Managing Ethically", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["LINGNAN-TPG-DIR-24-000812-L6-25-000384-L6"], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/MGT_TPG.pdf" },
+            { "code": "MGT505", "name": "Performance Management", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["LINGNAN-TPG-DIR-24-000812-L6-25-000384-L6"], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/MGT_TPG.pdf" },
+            { "code": "MGT507", "name": "Employee Learning and Career Development", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["LINGNAN-TPG-DIR-24-000812-L6-25-000384-L6"], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/MGT_TPG.pdf" },
+            { "code": "HRM541", "name": "Human Resource Analytics", "credits": 3, "appliesToTrackIds": ["LINGNAN-TPG-DIR-24-000812-L6-25-000384-L6"], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/HRM_TPG.pdf" },
+            { "code": "HRM542", "name": "Human Resource Information System", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["LINGNAN-TPG-DIR-24-000812-L6-25-000384-L6"], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/HRM_TPG.pdf" },
+            { "code": "HRM543", "name": "New Compliance of Human Resource Policy", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["LINGNAN-TPG-DIR-24-000812-L6-25-000384-L6"], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/HRM_TPG.pdf" },
+            { "code": "HRM544", "name": "Digital Adoption and Transformation", "credits": 3, "appliesToTrackIds": ["LINGNAN-TPG-DIR-24-000812-L6-25-000384-L6"], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/HRM_TPG.pdf" },
+            { "code": "MGT601", "name": "Managing Conflict in Organisations", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/MGT_TPG.pdf" },
+            { "code": "MGT602", "name": "Leadership in Organisations", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/MGT_TPG.pdf" },
+            { "code": "MGT604", "name": "Strategic Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/MGT_TPG.pdf" },
+            { "code": "MGT605", "name": "Managing Quality for People and Organisations", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/MGT_TPG.pdf" },
+            { "code": "MGT606", "name": "Organisational Analysis and Change", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/MGT_TPG.pdf" },
+            { "code": "ORM515", "name": "Business Decision Making with Software", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/ORM_TPG.pdf" },
+            { "code": "ACT615", "name": "Introduction to Python Programming", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/ACT_TPG.pdf" }
+          ]
+        }
+      ]
+    }
+  ]
+}

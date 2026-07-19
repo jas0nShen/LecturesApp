@@ -1,0 +1,2318 @@
+{
+  "provider": "HKBU University Student Handbook 2025-2026",
+  "academicYear": "2025-2026",
+  "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1",
+  "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2510/",
+  "note": "Official HKBU 2025-2026 Handbook Programme and concentration tables are used; the 2026-2027 Handbook endpoint was not available for verification. Each of the seven catalogue Major identities is isolated and shared codes are repeated only across those identities. Science Common Core is 15 units: SCIE1006 and SCIE1007 plus three of the five displayed science introductory courses. Applied Biology contains Biotechnology and Environmental Science concentration paths; its separate double-degree catalogue identity is limited to the HKBU-published Environmental Science pathway. HKBU describes that option as three years at HKBU plus Year 4 Ecology and Conservation at the University of Lincoln, but does not publish Lincoln Year 4 course codes in this Handbook, so none are invented. Biochemical and Testing Sciences retains both Biomedical Chemistry and Testing and Certification paths. Computer Science retains four single concentrations and the three officially listed DMC double concentrations; department-approved open-pool courses not named in the Handbook are not fabricated, and recommendation-only Free Elective lists are excluded. The DMC single-concentration table states 6 elective units while its later free-elective note refers to a 3-unit requirement; the table value is retained and the conflict remains unresolved. Mathematics and Statistics includes the optional Applied Statistics and Data Science concentration lists; the main-table footnote requiring all 12 Major Elective units from Group B is retained. GEST4035 has no unit value in the Programme table; its linked official 2025-2026 course page confirms 3 units. University Language, General Education and uncoded Free Electives are excluded. No Year or Term is assigned.",
+  "sources": [
+    "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-biology/bachelor-of-science-honours-in-applied-biology",
+    "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-biology/bachelor-of-science-honours-in-applied-biology/biotechnology-concentration",
+    "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-biology/bachelor-of-science-honours-in-applied-biology/environmental-science-concentration",
+    "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-biology/bachelor-of-science-honours-in-bioresource-and",
+    "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-chemistry-1/bachelor-of-science-honours-in-biochemical-and-testing",
+    "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-chemistry-1/bachelor-of-science-honours-in-biochemical-and-testing/biomedical-chemistry-concentration",
+    "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-chemistry-1/bachelor-of-science-honours-in-biochemical-and-testing/testing-and-certification-concentration",
+    "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-computer-science/bachelor-of-science-honours-in-computer-science",
+    "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-computer-science/bachelor-of-science-honours-in-computer-science/artificial-intelligence-concentration",
+    "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-computer-science/bachelor-of-science-honours-in-computer-science/computing-and-software-technologies-concentration",
+    "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-computer-science/bachelor-of-science-honours-in-computer-science/data-and-media-communication-concentration",
+    "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-computer-science/bachelor-of-science-honours-in-computer-science/information-systems-and-analytics-concentration",
+    "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-computer-science/bachelor-of-science-honours-in-computer-science/double-concentrations-artificial-data",
+    "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-computer-science/bachelor-of-science-honours-in-computer-science/double-concentrations-cst-dmc",
+    "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-computer-science/bachelor-of-science-honours-in-computer-science/double-concentrations-isa-dmc",
+    "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-mathematics-1/bachelor-of-science-honours-in-mathematics-and-statistics",
+    "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-mathematics-1/bachelor-of-science-honours-in-mathematics-and-statistics/data-science-concentration",
+    "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-mathematics-1/bachelor-of-science-honours-in-mathematics-and-statistics/applied-statistics-concentration",
+    "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-physics-1/bachelor-of-science-honours-in-green-energy-and-smart",
+    "https://handbook.ar.hkbu.edu.hk/2025-2026/course/GEST4035",
+    "https://handbook.ar.hkbu.edu.hk/2025-2026/course/MATH1025",
+    "https://www.jupas.edu.hk/en/programme/hkbu/JS2510/"
+  ],
+  "supplements": [
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BSC-12",
+      "jupasCode": "JS2510",
+      "majorId": "HKBU-UG-BSC-12-M1",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-biology/bachelor-of-science-honours-in-applied-biology",
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-biology/bachelor-of-science-honours-in-applied-biology",
+      "courses": [
+        {
+          "code": "SCIE1006",
+          "title": "Big Data and Smart Technology",
+          "credits": 3,
+          "group": "Science Common Core Courses · all required / 6 units"
+        },
+        {
+          "code": "SCIE1007",
+          "title": "Molecular Science in Daily Life",
+          "credits": 3,
+          "group": "Science Common Core Courses · all required / 6 units"
+        },
+        {
+          "code": "BIOL1005",
+          "title": "Introduction to Biology",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "CHEM1005",
+          "title": "Introduction to Chemistry",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "COMP1005",
+          "title": "Essence of Computing",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "GEST1005",
+          "title": "Introduction to Green Energy and Smart Technology",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "MATH1025",
+          "title": "Understanding Mathematics and Statistics",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "BIOL2005",
+          "title": "Biological Chemistry",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 11 units"
+        },
+        {
+          "code": "BIOL2006",
+          "title": "Microbiology",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 11 units"
+        },
+        {
+          "code": "BIOL2007",
+          "title": "Microbiology Laboratory",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 11 units"
+        },
+        {
+          "code": "BIOL2017",
+          "title": "Cell Biology",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 11 units"
+        },
+        {
+          "code": "BIOL3085",
+          "title": "Research Methods in Biological Sciences",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 11 units"
+        },
+        {
+          "code": "BIOL4898",
+          "title": "Applied Biology Project I",
+          "credits": 3,
+          "group": "Project · required / 3 units",
+          "courseType": "project"
+        },
+        {
+          "code": "BIOL2025",
+          "title": "Cell Biology Laboratory",
+          "credits": 1,
+          "group": "Biotechnology Concentration Required Courses · all required / 33 units"
+        },
+        {
+          "code": "BIOL2026",
+          "title": "Genetics and Evolution",
+          "credits": 3,
+          "group": "Biotechnology Concentration Required Courses · all required / 33 units; Environmental Science Concentration Elective Courses · closed displayed pool; 6 units"
+        },
+        {
+          "code": "BIOL2027",
+          "title": "Genetics and Evolution Laboratory",
+          "credits": 1,
+          "group": "Biotechnology Concentration Required Courses · all required / 33 units"
+        },
+        {
+          "code": "BIOL3005",
+          "title": "Animal Physiology",
+          "credits": 3,
+          "group": "Biotechnology Concentration Required Courses · all required / 33 units; Environmental Science Concentration Elective Courses · closed displayed pool; 6 units"
+        },
+        {
+          "code": "BIOL3006",
+          "title": "Animal Physiology Laboratory",
+          "credits": 1,
+          "group": "Biotechnology Concentration Required Courses · all required / 33 units"
+        },
+        {
+          "code": "BIOL3017",
+          "title": "Molecular Biology",
+          "credits": 3,
+          "group": "Biotechnology Concentration Required Courses · all required / 33 units; Environmental Science Concentration Elective Courses · closed displayed pool; 6 units"
+        },
+        {
+          "code": "BIOL3025",
+          "title": "Plant Physiology",
+          "credits": 3,
+          "group": "Biotechnology Concentration Required Courses · all required / 33 units; Environmental Science Concentration Elective Courses · closed displayed pool; 6 units"
+        },
+        {
+          "code": "BIOL3026",
+          "title": "Plant Physiology Laboratory",
+          "credits": 1,
+          "group": "Biotechnology Concentration Required Courses · all required / 33 units"
+        },
+        {
+          "code": "BIOL3035",
+          "title": "Immunology",
+          "credits": 3,
+          "group": "Biotechnology Concentration Required Courses · all required / 33 units"
+        },
+        {
+          "code": "BIOL4005",
+          "title": "Biotechnology Studies Laboratory I",
+          "credits": 2,
+          "group": "Biotechnology Concentration Required Courses · all required / 33 units"
+        },
+        {
+          "code": "BIOL4015",
+          "title": "Fermentation and Enzyme Technology",
+          "credits": 3,
+          "group": "Biotechnology Concentration Required Courses · all required / 33 units; Environmental Science Concentration Elective Courses · closed displayed pool; 6 units"
+        },
+        {
+          "code": "BIOL4025",
+          "title": "Biotechnology Studies Laboratory II",
+          "credits": 2,
+          "group": "Biotechnology Concentration Required Courses · all required / 33 units"
+        },
+        {
+          "code": "BIOL4027",
+          "title": "Developmental Biology",
+          "credits": 3,
+          "group": "Biotechnology Concentration Required Courses · all required / 33 units"
+        },
+        {
+          "code": "BIOL4036",
+          "title": "Animal and Plant Biotechnology",
+          "credits": 4,
+          "group": "Biotechnology Concentration Required Courses · all required / 33 units"
+        },
+        {
+          "code": "BIOL3056",
+          "title": "Introduction to Genome Biology",
+          "credits": 3,
+          "group": "Biotechnology Concentration Elective Courses · closed displayed pool; 3 units"
+        },
+        {
+          "code": "BIOL4017",
+          "title": "Environmental Biotechnology",
+          "credits": 3,
+          "group": "Biotechnology Concentration Elective Courses · closed displayed pool; 3 units; Environmental Science Concentration Required Courses · all required / 30 units"
+        },
+        {
+          "code": "BIOL4046",
+          "title": "Neurobiology",
+          "credits": 3,
+          "group": "Biotechnology Concentration Elective Courses · closed displayed pool; 3 units"
+        },
+        {
+          "code": "BIOL4899",
+          "title": "Applied Biology Project II",
+          "credits": 3,
+          "group": "Biotechnology Concentration Elective Courses · closed displayed pool; 3 units; Environmental Science Concentration Elective Courses · closed displayed pool; 6 units",
+          "courseType": "project"
+        },
+        {
+          "code": "BIOL2015",
+          "title": "Biodiversity",
+          "credits": 3,
+          "group": "Environmental Science Concentration Required Courses · all required / 30 units"
+        },
+        {
+          "code": "BIOL2016",
+          "title": "Biodiversity Laboratory",
+          "credits": 1,
+          "group": "Environmental Science Concentration Required Courses · all required / 30 units"
+        },
+        {
+          "code": "BIOL2045",
+          "title": "Natural Resources and Environment",
+          "credits": 3,
+          "group": "Environmental Science Concentration Required Courses · all required / 30 units"
+        },
+        {
+          "code": "BIOL3007",
+          "title": "Ecology",
+          "credits": 3,
+          "group": "Environmental Science Concentration Required Courses · all required / 30 units"
+        },
+        {
+          "code": "BIOL3015",
+          "title": "Ecology Laboratory",
+          "credits": 1,
+          "group": "Environmental Science Concentration Required Courses · all required / 30 units"
+        },
+        {
+          "code": "BIOL3016",
+          "title": "Environmental Health and Toxicology",
+          "credits": 3,
+          "group": "Environmental Science Concentration Required Courses · all required / 30 units"
+        },
+        {
+          "code": "BIOL3027",
+          "title": "Waste Treatment and Recycling",
+          "credits": 3,
+          "group": "Environmental Science Concentration Required Courses · all required / 30 units"
+        },
+        {
+          "code": "BIOL3077",
+          "title": "Urban Water Resources Management",
+          "credits": 3,
+          "group": "Environmental Science Concentration Required Courses · all required / 30 units"
+        },
+        {
+          "code": "BIOL4006",
+          "title": "Environmental Science Laboratory I",
+          "credits": 2,
+          "group": "Environmental Science Concentration Required Courses · all required / 30 units"
+        },
+        {
+          "code": "BIOL4016",
+          "title": "Principles of Environmental Management",
+          "credits": 3,
+          "group": "Environmental Science Concentration Required Courses · all required / 30 units"
+        },
+        {
+          "code": "BIOL4045",
+          "title": "Environmental Science Laboratory II",
+          "credits": 2,
+          "group": "Environmental Science Concentration Required Courses · all required / 30 units"
+        },
+        {
+          "code": "BIOL2037",
+          "title": "Introduction to Agricultural Science and Food Systems",
+          "credits": 3,
+          "group": "Environmental Science Concentration Elective Courses · closed displayed pool; 6 units"
+        },
+        {
+          "code": "BIOL3057",
+          "title": "Marine Biology",
+          "credits": 3,
+          "group": "Environmental Science Concentration Elective Courses · closed displayed pool; 6 units"
+        },
+        {
+          "code": "BIOL3065",
+          "title": "Soil Science and Fertility",
+          "credits": 3,
+          "group": "Environmental Science Concentration Elective Courses · closed displayed pool; 6 units"
+        },
+        {
+          "code": "BIOL4067",
+          "title": "Sustainable Urban Environment",
+          "credits": 3,
+          "group": "Environmental Science Concentration Elective Courses · closed displayed pool; 6 units"
+        },
+        {
+          "code": "CHEM3025",
+          "title": "Chemical Analysis",
+          "credits": 3,
+          "group": "Environmental Science Concentration Elective Courses · closed displayed pool; 6 units"
+        },
+        {
+          "code": "CHEM3026",
+          "title": "Chemical Analysis Laboratory",
+          "credits": 1,
+          "group": "Environmental Science Concentration Elective Courses · closed displayed pool; 6 units"
+        },
+        {
+          "code": "CHEM4017",
+          "title": "Environmental Chemistry and Analysis",
+          "credits": 3,
+          "group": "Environmental Science Concentration Elective Courses · closed displayed pool; 6 units"
+        }
+      ]
+    },
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BSC-12",
+      "jupasCode": "JS2510",
+      "majorId": "HKBU-UG-BSC-12-M2",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-biology/bachelor-of-science-honours-in-applied-biology",
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-biology/bachelor-of-science-honours-in-applied-biology",
+      "courses": [
+        {
+          "code": "SCIE1006",
+          "title": "Big Data and Smart Technology",
+          "credits": 3,
+          "group": "Science Common Core Courses · all required / 6 units"
+        },
+        {
+          "code": "SCIE1007",
+          "title": "Molecular Science in Daily Life",
+          "credits": 3,
+          "group": "Science Common Core Courses · all required / 6 units"
+        },
+        {
+          "code": "BIOL1005",
+          "title": "Introduction to Biology",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "CHEM1005",
+          "title": "Introduction to Chemistry",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "COMP1005",
+          "title": "Essence of Computing",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "GEST1005",
+          "title": "Introduction to Green Energy and Smart Technology",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "MATH1025",
+          "title": "Understanding Mathematics and Statistics",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "BIOL2005",
+          "title": "Biological Chemistry",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 11 units"
+        },
+        {
+          "code": "BIOL2006",
+          "title": "Microbiology",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 11 units"
+        },
+        {
+          "code": "BIOL2007",
+          "title": "Microbiology Laboratory",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 11 units"
+        },
+        {
+          "code": "BIOL2017",
+          "title": "Cell Biology",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 11 units"
+        },
+        {
+          "code": "BIOL3085",
+          "title": "Research Methods in Biological Sciences",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 11 units"
+        },
+        {
+          "code": "BIOL4898",
+          "title": "Applied Biology Project I",
+          "credits": 3,
+          "group": "Project · required / 3 units",
+          "courseType": "project"
+        },
+        {
+          "code": "BIOL2015",
+          "title": "Biodiversity",
+          "credits": 3,
+          "group": "Environmental Science Concentration Required Courses · all required / 30 units"
+        },
+        {
+          "code": "BIOL2016",
+          "title": "Biodiversity Laboratory",
+          "credits": 1,
+          "group": "Environmental Science Concentration Required Courses · all required / 30 units"
+        },
+        {
+          "code": "BIOL2045",
+          "title": "Natural Resources and Environment",
+          "credits": 3,
+          "group": "Environmental Science Concentration Required Courses · all required / 30 units"
+        },
+        {
+          "code": "BIOL3007",
+          "title": "Ecology",
+          "credits": 3,
+          "group": "Environmental Science Concentration Required Courses · all required / 30 units"
+        },
+        {
+          "code": "BIOL3015",
+          "title": "Ecology Laboratory",
+          "credits": 1,
+          "group": "Environmental Science Concentration Required Courses · all required / 30 units"
+        },
+        {
+          "code": "BIOL3016",
+          "title": "Environmental Health and Toxicology",
+          "credits": 3,
+          "group": "Environmental Science Concentration Required Courses · all required / 30 units"
+        },
+        {
+          "code": "BIOL3027",
+          "title": "Waste Treatment and Recycling",
+          "credits": 3,
+          "group": "Environmental Science Concentration Required Courses · all required / 30 units"
+        },
+        {
+          "code": "BIOL3077",
+          "title": "Urban Water Resources Management",
+          "credits": 3,
+          "group": "Environmental Science Concentration Required Courses · all required / 30 units"
+        },
+        {
+          "code": "BIOL4006",
+          "title": "Environmental Science Laboratory I",
+          "credits": 2,
+          "group": "Environmental Science Concentration Required Courses · all required / 30 units"
+        },
+        {
+          "code": "BIOL4016",
+          "title": "Principles of Environmental Management",
+          "credits": 3,
+          "group": "Environmental Science Concentration Required Courses · all required / 30 units"
+        },
+        {
+          "code": "BIOL4017",
+          "title": "Environmental Biotechnology",
+          "credits": 3,
+          "group": "Environmental Science Concentration Required Courses · all required / 30 units"
+        },
+        {
+          "code": "BIOL4045",
+          "title": "Environmental Science Laboratory II",
+          "credits": 2,
+          "group": "Environmental Science Concentration Required Courses · all required / 30 units"
+        },
+        {
+          "code": "BIOL2026",
+          "title": "Genetics and Evolution",
+          "credits": 3,
+          "group": "Environmental Science Concentration Elective Courses · closed displayed pool; 6 units"
+        },
+        {
+          "code": "BIOL2037",
+          "title": "Introduction to Agricultural Science and Food Systems",
+          "credits": 3,
+          "group": "Environmental Science Concentration Elective Courses · closed displayed pool; 6 units"
+        },
+        {
+          "code": "BIOL3005",
+          "title": "Animal Physiology",
+          "credits": 3,
+          "group": "Environmental Science Concentration Elective Courses · closed displayed pool; 6 units"
+        },
+        {
+          "code": "BIOL3017",
+          "title": "Molecular Biology",
+          "credits": 3,
+          "group": "Environmental Science Concentration Elective Courses · closed displayed pool; 6 units"
+        },
+        {
+          "code": "BIOL3025",
+          "title": "Plant Physiology",
+          "credits": 3,
+          "group": "Environmental Science Concentration Elective Courses · closed displayed pool; 6 units"
+        },
+        {
+          "code": "BIOL3057",
+          "title": "Marine Biology",
+          "credits": 3,
+          "group": "Environmental Science Concentration Elective Courses · closed displayed pool; 6 units"
+        },
+        {
+          "code": "BIOL3065",
+          "title": "Soil Science and Fertility",
+          "credits": 3,
+          "group": "Environmental Science Concentration Elective Courses · closed displayed pool; 6 units"
+        },
+        {
+          "code": "BIOL4015",
+          "title": "Fermentation and Enzyme Technology",
+          "credits": 3,
+          "group": "Environmental Science Concentration Elective Courses · closed displayed pool; 6 units"
+        },
+        {
+          "code": "BIOL4067",
+          "title": "Sustainable Urban Environment",
+          "credits": 3,
+          "group": "Environmental Science Concentration Elective Courses · closed displayed pool; 6 units"
+        },
+        {
+          "code": "BIOL4899",
+          "title": "Applied Biology Project II",
+          "credits": 3,
+          "group": "Environmental Science Concentration Elective Courses · closed displayed pool; 6 units",
+          "courseType": "project"
+        },
+        {
+          "code": "CHEM3025",
+          "title": "Chemical Analysis",
+          "credits": 3,
+          "group": "Environmental Science Concentration Elective Courses · closed displayed pool; 6 units"
+        },
+        {
+          "code": "CHEM3026",
+          "title": "Chemical Analysis Laboratory",
+          "credits": 1,
+          "group": "Environmental Science Concentration Elective Courses · closed displayed pool; 6 units"
+        },
+        {
+          "code": "CHEM4017",
+          "title": "Environmental Chemistry and Analysis",
+          "credits": 3,
+          "group": "Environmental Science Concentration Elective Courses · closed displayed pool; 6 units"
+        }
+      ]
+    },
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BSC-12",
+      "jupasCode": "JS2510",
+      "majorId": "HKBU-UG-BSC-12-M3",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-biology/bachelor-of-science-honours-in-bioresource-and",
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-biology/bachelor-of-science-honours-in-bioresource-and",
+      "courses": [
+        {
+          "code": "SCIE1006",
+          "title": "Big Data and Smart Technology",
+          "credits": 3,
+          "group": "Science Common Core Courses · all required / 6 units"
+        },
+        {
+          "code": "SCIE1007",
+          "title": "Molecular Science in Daily Life",
+          "credits": 3,
+          "group": "Science Common Core Courses · all required / 6 units"
+        },
+        {
+          "code": "BIOL1005",
+          "title": "Introduction to Biology",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "CHEM1005",
+          "title": "Introduction to Chemistry",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "COMP1005",
+          "title": "Essence of Computing",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "GEST1005",
+          "title": "Introduction to Green Energy and Smart Technology",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "MATH1025",
+          "title": "Understanding Mathematics and Statistics",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "BIOL2015",
+          "title": "Biodiversity",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 44 units"
+        },
+        {
+          "code": "BIOL2016",
+          "title": "Biodiversity Laboratory",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 44 units"
+        },
+        {
+          "code": "BIOL2026",
+          "title": "Genetics and Evolution",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 44 units"
+        },
+        {
+          "code": "BIOL2037",
+          "title": "Introduction to Agricultural Science and Food Systems",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 44 units"
+        },
+        {
+          "code": "BIOL2045",
+          "title": "Natural Resources and Environment",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 44 units"
+        },
+        {
+          "code": "BIOL2046",
+          "title": "Summer Internship",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 44 units",
+          "courseType": "internship"
+        },
+        {
+          "code": "BIOL3007",
+          "title": "Ecology",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 44 units"
+        },
+        {
+          "code": "BIOL3015",
+          "title": "Ecology Laboratory",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 44 units"
+        },
+        {
+          "code": "BIOL3065",
+          "title": "Soil Science and Fertility",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 44 units"
+        },
+        {
+          "code": "BIOL3066",
+          "title": "Soil Science and Fertility Laboratory",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 44 units"
+        },
+        {
+          "code": "BIOL3067",
+          "title": "Crop Production and Management",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 44 units"
+        },
+        {
+          "code": "BIOL3077",
+          "title": "Urban Water Resources Management",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 44 units"
+        },
+        {
+          "code": "BIOL3085",
+          "title": "Research Methods in Biological Sciences",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 44 units"
+        },
+        {
+          "code": "BIOL4047",
+          "title": "Farm Management for Urban Environment",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 44 units"
+        },
+        {
+          "code": "BIOL4055",
+          "title": "Urban Horticulture",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 44 units"
+        },
+        {
+          "code": "BIOL4057",
+          "title": "Organic Certification and Inspector Training",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 44 units"
+        },
+        {
+          "code": "BIOL4065",
+          "title": "Plant Diseases, Pests, and Weed Management",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 44 units"
+        },
+        {
+          "code": "BIOL4066",
+          "title": "Bioresource and Agricultural Science Laboratory",
+          "credits": 2,
+          "group": "Major Required Courses · all required / 44 units"
+        },
+        {
+          "code": "MKTG4057",
+          "title": "Agribusiness: Marketing and Entrepreneurship",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 44 units"
+        },
+        {
+          "code": "BIOL2006",
+          "title": "Microbiology",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 6 units"
+        },
+        {
+          "code": "BIOL3025",
+          "title": "Plant Physiology",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 6 units"
+        },
+        {
+          "code": "BIOL4016",
+          "title": "Principles of Environmental Management",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 6 units"
+        },
+        {
+          "code": "BIOL4017",
+          "title": "Environmental Biotechnology",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 6 units"
+        },
+        {
+          "code": "BIOL4067",
+          "title": "Sustainable Urban Environment",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 6 units"
+        },
+        {
+          "code": "BIOL4999",
+          "title": "Bioresource and Agricultural Science Project II",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 6 units",
+          "courseType": "project"
+        },
+        {
+          "code": "GEOG4055",
+          "title": "Rural and Agricultural Development in China",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 6 units"
+        },
+        {
+          "code": "BIOL4998",
+          "title": "Bioresource and Agricultural Science Project I",
+          "credits": 3,
+          "group": "Project · required / 3 units",
+          "courseType": "project"
+        }
+      ]
+    },
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BSC-12",
+      "jupasCode": "JS2510",
+      "majorId": "HKBU-UG-BSC-12-M4",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-chemistry-1/bachelor-of-science-honours-in-biochemical-and-testing",
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-chemistry-1/bachelor-of-science-honours-in-biochemical-and-testing",
+      "courses": [
+        {
+          "code": "SCIE1006",
+          "title": "Big Data and Smart Technology",
+          "credits": 3,
+          "group": "Science Common Core Courses · all required / 6 units"
+        },
+        {
+          "code": "SCIE1007",
+          "title": "Molecular Science in Daily Life",
+          "credits": 3,
+          "group": "Science Common Core Courses · all required / 6 units"
+        },
+        {
+          "code": "BIOL1005",
+          "title": "Introduction to Biology",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "CHEM1005",
+          "title": "Introduction to Chemistry",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "COMP1005",
+          "title": "Essence of Computing",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "GEST1005",
+          "title": "Introduction to Green Energy and Smart Technology",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "MATH1025",
+          "title": "Understanding Mathematics and Statistics",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "CHEM2005",
+          "title": "General Chemistry",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 25 units"
+        },
+        {
+          "code": "CHEM2006",
+          "title": "Integrated Chemistry Tutorials I",
+          "credits": 0,
+          "group": "Major Required Courses · all required / 25 units"
+        },
+        {
+          "code": "CHEM2007",
+          "title": "Integrated Chemistry Tutorials II",
+          "credits": 0,
+          "group": "Major Required Courses · all required / 25 units"
+        },
+        {
+          "code": "CHEM2057",
+          "title": "Inorganic Chemistry I",
+          "credits": 4,
+          "group": "Major Required Courses · all required / 25 units"
+        },
+        {
+          "code": "CHEM2065",
+          "title": "Physical Chemistry",
+          "credits": 4,
+          "group": "Major Required Courses · all required / 25 units"
+        },
+        {
+          "code": "CHEM2066",
+          "title": "Analytical Chemistry",
+          "credits": 4,
+          "group": "Major Required Courses · all required / 25 units"
+        },
+        {
+          "code": "CHEM2067",
+          "title": "Organic Chemistry I",
+          "credits": 4,
+          "group": "Major Required Courses · all required / 25 units"
+        },
+        {
+          "code": "CHEM3055",
+          "title": "Integrated Chemistry Tutorials III",
+          "credits": 0,
+          "group": "Major Required Courses · all required / 25 units"
+        },
+        {
+          "code": "CHEM3056",
+          "title": "Integrated Chemistry Tutorials IV",
+          "credits": 0,
+          "group": "Major Required Courses · all required / 25 units"
+        },
+        {
+          "code": "CHEM3066",
+          "title": "Instrumental Analysis",
+          "credits": 4,
+          "group": "Major Required Courses · all required / 25 units"
+        },
+        {
+          "code": "CHEM3077",
+          "title": "Research Method",
+          "credits": 2,
+          "group": "Major Required Courses · all required / 25 units"
+        },
+        {
+          "code": "CHEM4898",
+          "title": "Final Year Project I",
+          "credits": 3,
+          "group": "Project · required / 3 units",
+          "courseType": "project"
+        },
+        {
+          "code": "CHEM3036",
+          "title": "Biochemistry I",
+          "credits": 3,
+          "group": "Biomedical Chemistry Concentration Required Courses · all required / 15 units"
+        },
+        {
+          "code": "CHEM3067",
+          "title": "Organic Chemistry II",
+          "credits": 4,
+          "group": "Biomedical Chemistry Concentration Required Courses · all required / 15 units"
+        },
+        {
+          "code": "CHEM3075",
+          "title": "Integrated Laboratory for Biochemistry",
+          "credits": 1,
+          "group": "Biomedical Chemistry Concentration Required Courses · all required / 15 units"
+        },
+        {
+          "code": "CHEM3076",
+          "title": "Biophysical Chemistry",
+          "credits": 4,
+          "group": "Biomedical Chemistry Concentration Required Courses · all required / 15 units"
+        },
+        {
+          "code": "CHEM4097",
+          "title": "Biochemistry II",
+          "credits": 3,
+          "group": "Biomedical Chemistry Concentration Required Courses · all required / 15 units"
+        },
+        {
+          "code": "CHEM3086",
+          "title": "Inorganic Chemistry II",
+          "credits": 4,
+          "group": "Biomedical Chemistry Concentration Elective Courses · closed displayed pool; 9 units"
+        },
+        {
+          "code": "CHEM4025",
+          "title": "Advanced Instrumental Analysis",
+          "credits": 3,
+          "group": "Biomedical Chemistry Concentration Elective Courses · closed displayed pool; 9 units; Testing and Certification Concentration Required Courses · all required / 15 units"
+        },
+        {
+          "code": "CHEM4026",
+          "title": "Advanced Biomaterials",
+          "credits": 3,
+          "group": "Biomedical Chemistry Concentration Elective Courses · closed displayed pool; 9 units"
+        },
+        {
+          "code": "CHEM4027",
+          "title": "Advanced Bioanalysis",
+          "credits": 3,
+          "group": "Biomedical Chemistry Concentration Elective Courses · closed displayed pool; 9 units; Testing and Certification Concentration Elective Courses · closed displayed pool; 9 units"
+        },
+        {
+          "code": "CHEM4045",
+          "title": "Organic Synthesis",
+          "credits": 3,
+          "group": "Biomedical Chemistry Concentration Elective Courses · closed displayed pool; 9 units"
+        },
+        {
+          "code": "CHEM4046",
+          "title": "Bioinorganic Chemistry",
+          "credits": 3,
+          "group": "Biomedical Chemistry Concentration Elective Courses · closed displayed pool; 9 units"
+        },
+        {
+          "code": "CHEM4047",
+          "title": "Pharmaceutical Chemistry and Analysis",
+          "credits": 3,
+          "group": "Biomedical Chemistry Concentration Elective Courses · closed displayed pool; 9 units; Testing and Certification Concentration Elective Courses · closed displayed pool; 9 units"
+        },
+        {
+          "code": "CHEM4105",
+          "title": "Clinical Chemistry and Analysis",
+          "credits": 3,
+          "group": "Biomedical Chemistry Concentration Elective Courses · closed displayed pool; 9 units"
+        },
+        {
+          "code": "CHEM4106",
+          "title": "Computational Chemistry",
+          "credits": 3,
+          "group": "Biomedical Chemistry Concentration Elective Courses · closed displayed pool; 9 units"
+        },
+        {
+          "code": "CHEM4107",
+          "title": "Medicinal Chemistry and Drug Discovery",
+          "credits": 3,
+          "group": "Biomedical Chemistry Concentration Elective Courses · closed displayed pool; 9 units"
+        },
+        {
+          "code": "CHEM3035",
+          "title": "Integrated Laboratory for Testing and Certification",
+          "credits": 1,
+          "group": "Testing and Certification Concentration Required Courses · all required / 15 units"
+        },
+        {
+          "code": "CHEM3085",
+          "title": "Data Acquisition and Analysis",
+          "credits": 3,
+          "group": "Testing and Certification Concentration Required Courses · all required / 15 units"
+        },
+        {
+          "code": "CHEM3087",
+          "title": "Foundation of Bioanalysis",
+          "credits": 4,
+          "group": "Testing and Certification Concentration Required Courses · all required / 15 units"
+        },
+        {
+          "code": "CHEM4076",
+          "title": "Chemical Testing Laboratory Management and Accreditation",
+          "credits": 4,
+          "group": "Testing and Certification Concentration Required Courses · all required / 15 units"
+        },
+        {
+          "code": "CHEM4017",
+          "title": "Environmental Chemistry and Analysis",
+          "credits": 3,
+          "group": "Testing and Certification Concentration Elective Courses · closed displayed pool; 9 units"
+        },
+        {
+          "code": "CHEM4057",
+          "title": "Spectroscopic Techniques for Structure Determination",
+          "credits": 3,
+          "group": "Testing and Certification Concentration Elective Courses · closed displayed pool; 9 units"
+        },
+        {
+          "code": "CHEM4085",
+          "title": "Food Chemistry and Analysis",
+          "credits": 3,
+          "group": "Testing and Certification Concentration Elective Courses · closed displayed pool; 9 units"
+        },
+        {
+          "code": "CHEM4086",
+          "title": "Forensic Chemistry and Analysis",
+          "credits": 3,
+          "group": "Testing and Certification Concentration Elective Courses · closed displayed pool; 9 units"
+        }
+      ]
+    },
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BSC-12",
+      "jupasCode": "JS2510",
+      "majorId": "HKBU-UG-BSC-12-M5",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-computer-science/bachelor-of-science-honours-in-computer-science",
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-computer-science/bachelor-of-science-honours-in-computer-science",
+      "courses": [
+        {
+          "code": "SCIE1006",
+          "title": "Big Data and Smart Technology",
+          "credits": 3,
+          "group": "Science Common Core Courses · all required / 6 units"
+        },
+        {
+          "code": "SCIE1007",
+          "title": "Molecular Science in Daily Life",
+          "credits": 3,
+          "group": "Science Common Core Courses · all required / 6 units"
+        },
+        {
+          "code": "BIOL1005",
+          "title": "Introduction to Biology",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "CHEM1005",
+          "title": "Introduction to Chemistry",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "COMP1005",
+          "title": "Essence of Computing",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "GEST1005",
+          "title": "Introduction to Green Energy and Smart Technology",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "MATH1025",
+          "title": "Understanding Mathematics and Statistics",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "COMP1017",
+          "title": "Facets of Computing",
+          "credits": 2,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "COMP2006",
+          "title": "Computer Organization",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "COMP2015",
+          "title": "Data Structures and Algorithms",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "COMP2016",
+          "title": "Database Management",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "COMP2017",
+          "title": "Operating Systems",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "COMP2027",
+          "title": "Applied Linear Algebra for Computing",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "COMP2045",
+          "title": "Programming and Problem Solving",
+          "credits": 2,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "COMP2046",
+          "title": "Problem Solving using Object Oriented Approach",
+          "credits": 2,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "COMP3015",
+          "title": "Data Communications and Networking",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "COMP3047",
+          "title": "Software Engineering",
+          "credits": 4,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "COMP3055",
+          "title": "Internship",
+          "credits": 0,
+          "group": "Major Required Courses · all required / 37 units",
+          "courseType": "internship"
+        },
+        {
+          "code": "COMP4006",
+          "title": "Information Technology Professional Practices",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MATH1205",
+          "title": "Discrete Mathematics",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MATH2005",
+          "title": "Calculus, Probability, and Statistics for Computer Science",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "COMP3057",
+          "title": "Introduction to Artificial Intelligence and Machine Learning",
+          "credits": 3,
+          "group": "Artificial Intelligence Concentration Required Courses · all required / 15 units; Computing and Software Technologies Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; choose 2 under the S1/S2/S5 cross-area rule; Information Systems and Analytics Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; choose 2 under the S3/S4/S5 cross-area rule; AI + DMC Double Concentration Required Courses · all required / 15 units; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units"
+        },
+        {
+          "code": "COMP3065",
+          "title": "Artificial Intelligence Application Development",
+          "credits": 3,
+          "group": "Artificial Intelligence Concentration Required Courses · all required / 15 units; Computing and Software Technologies Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; choose 2 under the S1/S2/S5 cross-area rule; Information Systems and Analytics Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; choose 2 under the S3/S4/S5 cross-area rule; AI + DMC Double Concentration Required Courses · all required / 15 units; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units"
+        },
+        {
+          "code": "COMP4026",
+          "title": "Computer Vision and Pattern Recognition",
+          "credits": 3,
+          "group": "Artificial Intelligence Concentration Required Courses · all required / 15 units; Computing and Software Technologies Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; choose 2 under the S1/S2/S5 cross-area rule; Information Systems and Analytics Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; choose 2 under the S3/S4/S5 cross-area rule; AI + DMC Double Concentration Required Courses · all required / 15 units; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units"
+        },
+        {
+          "code": "COMP4135",
+          "title": "Recommender Systems and Applications",
+          "credits": 3,
+          "group": "Artificial Intelligence Concentration Required Courses · all required / 15 units; Computing and Software Technologies Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; choose 2 under the S1/S2/S5 cross-area rule; Information Systems and Analytics Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; choose 2 under the S3/S4/S5 cross-area rule; AI + DMC Double Concentration Required Courses · all required / 15 units; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units"
+        },
+        {
+          "code": "COMP4136",
+          "title": "Natural Language Processing and Large Language Models",
+          "credits": 3,
+          "group": "Artificial Intelligence Concentration Required Courses · all required / 15 units; Computing and Software Technologies Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; choose 2 under the S1/S2/S5 cross-area rule; Information Systems and Analytics Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; choose 2 under the S3/S4/S5 cross-area rule; AI + DMC Double Concentration Required Courses · all required / 15 units; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units"
+        },
+        {
+          "code": "COMP4928",
+          "title": "Artificial Intelligence Project I",
+          "credits": 3,
+          "group": "Artificial Intelligence Concentration Projects · both required / 6 units; AI + DMC Double Concentration Projects · both required / 6 units",
+          "courseType": "project"
+        },
+        {
+          "code": "COMP4929",
+          "title": "Artificial Intelligence Project II",
+          "credits": 3,
+          "group": "Artificial Intelligence Concentration Projects · both required / 6 units; AI + DMC Double Concentration Projects · both required / 6 units",
+          "courseType": "project"
+        },
+        {
+          "code": "COMP3005",
+          "title": "Design and Analysis of Algorithms",
+          "credits": 3,
+          "group": "Computing and Software Technologies Concentration Required Courses · all required / 9 units; Computing and Software Technologies Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; choose 2 under the S1/S2/S5 cross-area rule; Information Systems and Analytics Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; choose 2 under the S3/S4/S5 cross-area rule; CST + DMC Double Concentration Required Courses · all required / 9 units; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units"
+        },
+        {
+          "code": "COMP4057",
+          "title": "Distributed and Cloud Computing",
+          "credits": 3,
+          "group": "Computing and Software Technologies Concentration Required Courses · all required / 9 units; CST + DMC Double Concentration Required Courses · all required / 9 units"
+        },
+        {
+          "code": "COMP4107",
+          "title": "Software Design, Development and Testing",
+          "credits": 3,
+          "group": "Computing and Software Technologies Concentration Required Courses · all required / 9 units; CST + DMC Double Concentration Required Courses · all required / 9 units"
+        },
+        {
+          "code": "COMP4017",
+          "title": "Computer and Network Security",
+          "credits": 3,
+          "group": "Computing and Software Technologies Concentration Elective Courses · open displayed pool; other courses require departmental approval; S1: Web Technology and Data Engineering; 6 units; choose 2 under the S1/S2/S5 cross-area rule; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S1: Web Technology and Data Engineering; 6 units"
+        },
+        {
+          "code": "COMP4035",
+          "title": "Database System Implementation",
+          "credits": 3,
+          "group": "Computing and Software Technologies Concentration Elective Courses · open displayed pool; other courses require departmental approval; S1: Web Technology and Data Engineering; 6 units; choose 2 under the S1/S2/S5 cross-area rule; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S1: Web Technology and Data Engineering; 6 units"
+        },
+        {
+          "code": "COMP4047",
+          "title": "Internet and World Wide Web",
+          "credits": 3,
+          "group": "Computing and Software Technologies Concentration Elective Courses · open displayed pool; other courses require departmental approval; S1: Web Technology and Data Engineering; 6 units; choose 2 under the S1/S2/S5 cross-area rule; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S1: Web Technology and Data Engineering; 6 units"
+        },
+        {
+          "code": "COMP4087",
+          "title": "Selected Topics in Web Technology and Data Engineering",
+          "credits": 3,
+          "group": "Computing and Software Technologies Concentration Elective Courses · open displayed pool; other courses require departmental approval; S1: Web Technology and Data Engineering; 6 units; choose 2 under the S1/S2/S5 cross-area rule; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S1: Web Technology and Data Engineering; 6 units"
+        },
+        {
+          "code": "COMP4127",
+          "title": "Information Security",
+          "credits": 3,
+          "group": "Computing and Software Technologies Concentration Elective Courses · open displayed pool; other courses require departmental approval; S1: Web Technology and Data Engineering; 6 units; choose 2 under the S1/S2/S5 cross-area rule; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S1: Web Technology and Data Engineering; 6 units"
+        },
+        {
+          "code": "COMP4137",
+          "title": "Blockchain Technology and Applications",
+          "credits": 3,
+          "group": "Computing and Software Technologies Concentration Elective Courses · open displayed pool; other courses require departmental approval; S1: Web Technology and Data Engineering; 6 units; choose 2 under the S1/S2/S5 cross-area rule; Information Systems and Analytics Concentration Elective Courses · open displayed pool; other courses require departmental approval; S3: Intelligent Informatics; 6 units; choose 2 under the S3/S4/S5 cross-area rule; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S1: Web Technology and Data Engineering; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S3: Intelligent Informatics; 6 units"
+        },
+        {
+          "code": "COMP3066",
+          "title": "Health and Assistive Technology: Practicum",
+          "credits": 3,
+          "group": "Computing and Software Technologies Concentration Elective Courses · open displayed pool; other courses require departmental approval; S2: Digital Media and Mobile Technology; 6 units; choose 2 under the S1/S2/S5 cross-area rule; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S2: Digital Media and Mobile Technology; 6 units",
+          "courseType": "internship"
+        },
+        {
+          "code": "COMP3076",
+          "title": "AI and Generative Arts",
+          "credits": 3,
+          "group": "Computing and Software Technologies Concentration Elective Courses · open displayed pool; other courses require departmental approval; S2: Digital Media and Mobile Technology; 6 units; choose 2 under the S1/S2/S5 cross-area rule; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S2: Digital Media and Mobile Technology; 6 units"
+        },
+        {
+          "code": "COMP4025",
+          "title": "Interactive Computer Graphics",
+          "credits": 3,
+          "group": "Computing and Software Technologies Concentration Elective Courses · open displayed pool; other courses require departmental approval; S2: Digital Media and Mobile Technology; 6 units; choose 2 under the S1/S2/S5 cross-area rule; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S2: Digital Media and Mobile Technology; 6 units"
+        },
+        {
+          "code": "COMP4036",
+          "title": "Digital Media Computing and Communications",
+          "credits": 3,
+          "group": "Computing and Software Technologies Concentration Elective Courses · open displayed pool; other courses require departmental approval; S2: Digital Media and Mobile Technology; 6 units; choose 2 under the S1/S2/S5 cross-area rule; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S2: Digital Media and Mobile Technology; 6 units"
+        },
+        {
+          "code": "COMP4055",
+          "title": "Medical Image Processing and Applications",
+          "credits": 3,
+          "group": "Computing and Software Technologies Concentration Elective Courses · open displayed pool; other courses require departmental approval; S2: Digital Media and Mobile Technology; 6 units; choose 2 under the S1/S2/S5 cross-area rule; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S2: Digital Media and Mobile Technology; 6 units"
+        },
+        {
+          "code": "COMP4076",
+          "title": "Selected Topics in Digital Media and Mobile Technology",
+          "credits": 3,
+          "group": "Computing and Software Technologies Concentration Elective Courses · open displayed pool; other courses require departmental approval; S2: Digital Media and Mobile Technology; 6 units; choose 2 under the S1/S2/S5 cross-area rule; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S2: Digital Media and Mobile Technology; 6 units"
+        },
+        {
+          "code": "COMP4097",
+          "title": "Mobile Computing and Internet of Things",
+          "credits": 3,
+          "group": "Computing and Software Technologies Concentration Elective Courses · open displayed pool; other courses require departmental approval; S2: Digital Media and Mobile Technology; 6 units; choose 2 under the S1/S2/S5 cross-area rule; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S2: Digital Media and Mobile Technology; 6 units"
+        },
+        {
+          "code": "COMP3045",
+          "title": "Advanced Algorithm Design, Analysis and Implementation",
+          "credits": 3,
+          "group": "Computing and Software Technologies Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; choose 2 under the S1/S2/S5 cross-area rule; Information Systems and Analytics Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; choose 2 under the S3/S4/S5 cross-area rule; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units"
+        },
+        {
+          "code": "COMP3046",
+          "title": "Advanced Programming for Software Development",
+          "credits": 3,
+          "group": "Computing and Software Technologies Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; choose 2 under the S1/S2/S5 cross-area rule; Information Systems and Analytics Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; choose 2 under the S3/S4/S5 cross-area rule; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units"
+        },
+        {
+          "code": "COMP3077",
+          "title": "Prompt Engineering for Generative AI",
+          "credits": 3,
+          "group": "Computing and Software Technologies Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; choose 2 under the S1/S2/S5 cross-area rule; Data and Media Communication Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; Information Systems and Analytics Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; choose 2 under the S3/S4/S5 cross-area rule"
+        },
+        {
+          "code": "COMP4015",
+          "title": "Artificial Intelligence and Machine Learning",
+          "credits": 3,
+          "group": "Computing and Software Technologies Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; choose 2 under the S1/S2/S5 cross-area rule; Data and Media Communication Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; Information Systems and Analytics Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; choose 2 under the S3/S4/S5 cross-area rule; AI + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units"
+        },
+        {
+          "code": "COMP4066",
+          "title": "Principles of Programming Language",
+          "credits": 3,
+          "group": "Computing and Software Technologies Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; choose 2 under the S1/S2/S5 cross-area rule; Information Systems and Analytics Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; choose 2 under the S3/S4/S5 cross-area rule; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units"
+        },
+        {
+          "code": "COMP4067",
+          "title": "Theory of Computation",
+          "credits": 3,
+          "group": "Computing and Software Technologies Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; choose 2 under the S1/S2/S5 cross-area rule; Information Systems and Analytics Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; choose 2 under the S3/S4/S5 cross-area rule; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units"
+        },
+        {
+          "code": "COMP4086",
+          "title": "Selected Topics in Theoretical Computer Science",
+          "credits": 3,
+          "group": "Computing and Software Technologies Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; choose 2 under the S1/S2/S5 cross-area rule; Information Systems and Analytics Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; choose 2 under the S3/S4/S5 cross-area rule; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S5: Computer Science Theory and Other Advanced Topics; 6 units"
+        },
+        {
+          "code": "COMP4878",
+          "title": "Innovative Computing Project I",
+          "credits": 3,
+          "group": "Computing and Software Technologies Concentration Projects · both required / 6 units; CST + DMC Double Concentration Projects · both required / 6 units",
+          "courseType": "project"
+        },
+        {
+          "code": "COMP4879",
+          "title": "Innovative Computing Project II",
+          "credits": 3,
+          "group": "Computing and Software Technologies Concentration Projects · both required / 6 units; CST + DMC Double Concentration Projects · both required / 6 units",
+          "courseType": "project"
+        },
+        {
+          "code": "COMP3115",
+          "title": "Exploratory Data Analysis and Visualization",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration Required Courses · all required / 12 units; Information Systems and Analytics Concentration Required Courses · all required / 9 units; AI + DMC Double Concentration Required Courses · all required / 12 units; CST + DMC Double Concentration Required Courses · all required / 12 units; ISA + DMC Double Concentration Required Courses · all required / 9 units"
+        },
+        {
+          "code": "JOUR2085",
+          "title": "English News Reporting and Writing",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration Required Courses · all required / 12 units; AI + DMC Double Concentration Required Courses · all required / 12 units; CST + DMC Double Concentration Required Courses · all required / 12 units; ISA + DMC Double Concentration Required Courses · all required / 9 units"
+        },
+        {
+          "code": "JOUR2107",
+          "title": "Introduction to Journalism and Communication",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration Required Courses · all required / 12 units; AI + DMC Double Concentration Required Courses · all required / 12 units; CST + DMC Double Concentration Required Courses · all required / 12 units; ISA + DMC Double Concentration Required Courses · all required / 9 units"
+        },
+        {
+          "code": "JOUR4046",
+          "title": "Integrated Data-driven Storytelling",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration Required Courses · all required / 12 units; AI + DMC Double Concentration Required Courses · all required / 12 units; CST + DMC Double Concentration Required Courses · all required / 12 units; ISA + DMC Double Concentration Required Courses · all required / 9 units"
+        },
+        {
+          "code": "COMP4027",
+          "title": "Data Mining and Knowledge Discovery",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; Information Systems and Analytics Concentration Elective Courses · open displayed pool; other courses require departmental approval; S3: Intelligent Informatics; 6 units; choose 2 under the S3/S4/S5 cross-area rule; AI + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S3: Intelligent Informatics; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units"
+        },
+        {
+          "code": "COMP4045",
+          "title": "Human Computer Interaction",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; Information Systems and Analytics Concentration Elective Courses · open displayed pool; other courses require departmental approval; S3: Intelligent Informatics; 6 units; choose 2 under the S3/S4/S5 cross-area rule; AI + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S3: Intelligent Informatics; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units"
+        },
+        {
+          "code": "COMP4075",
+          "title": "Social Computing and Web Intelligence",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; Information Systems and Analytics Concentration Elective Courses · open displayed pool; other courses require departmental approval; S3: Intelligent Informatics; 6 units; choose 2 under the S3/S4/S5 cross-area rule; AI + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S3: Intelligent Informatics; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units"
+        },
+        {
+          "code": "COMP4125",
+          "title": "Visual Analytics",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; Information Systems and Analytics Concentration Elective Courses · open displayed pool; other courses require departmental approval; S3: Intelligent Informatics; 6 units; choose 2 under the S3/S4/S5 cross-area rule; AI + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S3: Intelligent Informatics; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units"
+        },
+        {
+          "code": "COMP4909",
+          "title": "Data Media Project II",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; AI + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units",
+          "courseType": "project"
+        },
+        {
+          "code": "COMP7930",
+          "title": "Big Data Analytics",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; AI + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units"
+        },
+        {
+          "code": "JOUR2087",
+          "title": "Multimedia and Multiplatform Journalism",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; AI + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units"
+        },
+        {
+          "code": "JOUR2105",
+          "title": "Visual Journalism",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; AI + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units"
+        },
+        {
+          "code": "JOUR2117",
+          "title": "Broadcast Reporting and Production",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; AI + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units"
+        },
+        {
+          "code": "JOUR3096",
+          "title": "Current Affairs and News Analysis",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; AI + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units"
+        },
+        {
+          "code": "JOUR3285",
+          "title": "Financial Data and Market Sentiment Analysis",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; AI + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units"
+        },
+        {
+          "code": "JOUR3287",
+          "title": "Social Media Content Management",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; AI + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units"
+        },
+        {
+          "code": "JOUR4005",
+          "title": "Theory and Practice of Journalism in Greater China",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; AI + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; CST + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; 6 units"
+        },
+        {
+          "code": "COMP4908",
+          "title": "Data Media Project I",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration Project · required / 3 units",
+          "courseType": "project"
+        },
+        {
+          "code": "COMP4116",
+          "title": "Information Systems Management",
+          "credits": 3,
+          "group": "Information Systems and Analytics Concentration Required Courses · all required / 9 units; ISA + DMC Double Concentration Required Courses · all required / 9 units"
+        },
+        {
+          "code": "COMP4117",
+          "title": "Information Systems Design and Integration",
+          "credits": 3,
+          "group": "Information Systems and Analytics Concentration Required Courses · all required / 9 units; ISA + DMC Double Concentration Required Courses · all required / 9 units"
+        },
+        {
+          "code": "COMP4085",
+          "title": "Selected Topics in Intelligent Informatics",
+          "credits": 3,
+          "group": "Information Systems and Analytics Concentration Elective Courses · open displayed pool; other courses require departmental approval; S3: Intelligent Informatics; 6 units; choose 2 under the S3/S4/S5 cross-area rule; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S3: Intelligent Informatics; 6 units"
+        },
+        {
+          "code": "COMP3035",
+          "title": "Health Information Technology",
+          "credits": 3,
+          "group": "Information Systems and Analytics Concentration Elective Courses · open displayed pool; other courses require departmental approval; S4: Enterprise Systems and Business Intelligence; 6 units; choose 2 under the S3/S4/S5 cross-area rule; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S4: Enterprise Systems and Business Intelligence; 6 units"
+        },
+        {
+          "code": "COMP4016",
+          "title": "Clinical Decision Support and Information Systems",
+          "credits": 3,
+          "group": "Information Systems and Analytics Concentration Elective Courses · open displayed pool; other courses require departmental approval; S4: Enterprise Systems and Business Intelligence; 6 units; choose 2 under the S3/S4/S5 cross-area rule; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S4: Enterprise Systems and Business Intelligence; 6 units"
+        },
+        {
+          "code": "COMP4046",
+          "title": "Information Systems Control and Auditing",
+          "credits": 3,
+          "group": "Information Systems and Analytics Concentration Elective Courses · open displayed pool; other courses require departmental approval; S4: Enterprise Systems and Business Intelligence; 6 units; choose 2 under the S3/S4/S5 cross-area rule; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S4: Enterprise Systems and Business Intelligence; 6 units"
+        },
+        {
+          "code": "COMP4077",
+          "title": "Selected Topics in Enterprise Systems and Business Intelligence",
+          "credits": 3,
+          "group": "Information Systems and Analytics Concentration Elective Courses · open displayed pool; other courses require departmental approval; S4: Enterprise Systems and Business Intelligence; 6 units; choose 2 under the S3/S4/S5 cross-area rule; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S4: Enterprise Systems and Business Intelligence; 6 units"
+        },
+        {
+          "code": "COMP4096",
+          "title": "Business Intelligence and Decision Support",
+          "credits": 3,
+          "group": "Information Systems and Analytics Concentration Elective Courses · open displayed pool; other courses require departmental approval; S4: Enterprise Systems and Business Intelligence; 6 units; choose 2 under the S3/S4/S5 cross-area rule; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S4: Enterprise Systems and Business Intelligence; 6 units"
+        },
+        {
+          "code": "COMP4106",
+          "title": "E-Business Technology",
+          "credits": 3,
+          "group": "Information Systems and Analytics Concentration Elective Courses · open displayed pool; other courses require departmental approval; S4: Enterprise Systems and Business Intelligence; 6 units; choose 2 under the S3/S4/S5 cross-area rule; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S4: Enterprise Systems and Business Intelligence; 6 units"
+        },
+        {
+          "code": "COMP4126",
+          "title": "Health Informatics: Technology and Practices",
+          "credits": 3,
+          "group": "Information Systems and Analytics Concentration Elective Courses · open displayed pool; other courses require departmental approval; S4: Enterprise Systems and Business Intelligence; 6 units; choose 2 under the S3/S4/S5 cross-area rule; ISA + DMC Double Concentration Elective Courses · open displayed pool; other courses require departmental approval; S4: Enterprise Systems and Business Intelligence; 6 units"
+        },
+        {
+          "code": "COMP4868",
+          "title": "Informatics Project I",
+          "credits": 3,
+          "group": "Information Systems and Analytics Concentration Projects · both required / 6 units; ISA + DMC Double Concentration Projects · both required / 6 units",
+          "courseType": "project"
+        },
+        {
+          "code": "COMP4869",
+          "title": "Informatics Project II",
+          "credits": 3,
+          "group": "Information Systems and Analytics Concentration Projects · both required / 6 units; ISA + DMC Double Concentration Projects · both required / 6 units",
+          "courseType": "project"
+        }
+      ]
+    },
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BSC-12",
+      "jupasCode": "JS2510",
+      "majorId": "HKBU-UG-BSC-12-M6",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-mathematics-1/bachelor-of-science-honours-in-mathematics-and-statistics",
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-mathematics-1/bachelor-of-science-honours-in-mathematics-and-statistics",
+      "courses": [
+        {
+          "code": "SCIE1006",
+          "title": "Big Data and Smart Technology",
+          "credits": 3,
+          "group": "Science Common Core Courses · all required / 6 units"
+        },
+        {
+          "code": "SCIE1007",
+          "title": "Molecular Science in Daily Life",
+          "credits": 3,
+          "group": "Science Common Core Courses · all required / 6 units"
+        },
+        {
+          "code": "BIOL1005",
+          "title": "Introduction to Biology",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "CHEM1005",
+          "title": "Introduction to Chemistry",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "COMP1005",
+          "title": "Essence of Computing",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "GEST1005",
+          "title": "Introduction to Green Energy and Smart Technology",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "MATH1025",
+          "title": "Understanding Mathematics and Statistics",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "MATH1005",
+          "title": "Calculus I",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MATH2007",
+          "title": "Programming with Mathematical Software",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MATH2205",
+          "title": "Multivariate Calculus",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MATH2206",
+          "title": "Probability and Statistics",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MATH2207",
+          "title": "Linear Algebra I",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MATH2215",
+          "title": "Mathematical Analysis",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MATH2216",
+          "title": "Statistical Methods and Theory",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MATH2225",
+          "title": "Calculus II",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MATH3205",
+          "title": "Operations Research I",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MATH3206",
+          "title": "Scientific Computing I",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MATH3405",
+          "title": "Differential Equations I",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MATH3805",
+          "title": "Regression Analysis",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MATH3806",
+          "title": "Multivariate Statistical Methods",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MATH1017",
+          "title": "Mathematics for Personal Financial Management",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group A"
+        },
+        {
+          "code": "MATH1205",
+          "title": "Discrete Mathematics",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group A"
+        },
+        {
+          "code": "MATH3095",
+          "title": "Summer Research I",
+          "credits": 1,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group A"
+        },
+        {
+          "code": "MATH3096",
+          "title": "Summer Research II",
+          "credits": 1,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group A"
+        },
+        {
+          "code": "MATH3495",
+          "title": "Job Practicum I",
+          "credits": 1,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group A",
+          "courseType": "internship"
+        },
+        {
+          "code": "MATH3496",
+          "title": "Job Practicum II",
+          "credits": 1,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group A",
+          "courseType": "internship"
+        },
+        {
+          "code": "MATH3497",
+          "title": "Job Practicum III",
+          "credits": 1,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group A",
+          "courseType": "internship"
+        },
+        {
+          "code": "MATH3406",
+          "title": "Abstract Algebra",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B"
+        },
+        {
+          "code": "MATH3407",
+          "title": "Linear Algebra II",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B"
+        },
+        {
+          "code": "MATH3415",
+          "title": "Vector Calculus",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B"
+        },
+        {
+          "code": "MATH3416",
+          "title": "Complex Analysis",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B; Applied Statistics Concentration Elective Courses · closed displayed pool; 21 units; choose 21 units"
+        },
+        {
+          "code": "MATH3426",
+          "title": "Number Theory",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B"
+        },
+        {
+          "code": "MATH3427",
+          "title": "Real Analysis",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B; Data Science Concentration Elective Courses · closed displayed pool; Group B; 15 units; choose 15 units, including at least 2 courses from Group A and at least 1 from Group B; Applied Statistics Concentration Elective Courses · closed displayed pool; 21 units; choose 21 units"
+        },
+        {
+          "code": "MATH3605",
+          "title": "Numerical Methods II",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B; Data Science Concentration Elective Courses · closed displayed pool; Group B; 15 units; choose 15 units, including at least 2 courses from Group A and at least 1 from Group B; Applied Statistics Concentration Elective Courses · closed displayed pool; 21 units; choose 21 units"
+        },
+        {
+          "code": "MATH3606",
+          "title": "Differential Equations II",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B"
+        },
+        {
+          "code": "MATH3615",
+          "title": "Introduction to Imaging Science",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B; Data Science Concentration Elective Courses · closed displayed pool; Group B; 15 units; choose 15 units, including at least 2 courses from Group A and at least 1 from Group B"
+        },
+        {
+          "code": "MATH3616",
+          "title": "Scientific Computing II",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B"
+        },
+        {
+          "code": "MATH3626",
+          "title": "Computational Statistics for Data Science",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B; Data Science Concentration Elective Courses · closed displayed pool; Group B; 15 units; choose 15 units, including at least 2 courses from Group A and at least 1 from Group B; Applied Statistics Concentration Elective Courses · closed displayed pool; 21 units; choose 21 units"
+        },
+        {
+          "code": "MATH3807",
+          "title": "Simulation",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B"
+        },
+        {
+          "code": "MATH3815",
+          "title": "Statistical Design and Analysis of Experiments",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B; Applied Statistics Concentration Elective Courses · closed displayed pool; 21 units; choose 21 units"
+        },
+        {
+          "code": "MATH3816",
+          "title": "Statistical Analysis of Sample Surveys",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B; Applied Statistics Concentration Elective Courses · closed displayed pool; 21 units; choose 21 units"
+        },
+        {
+          "code": "MATH3825",
+          "title": "Life Insurance and Life Contingencies",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B; Applied Statistics Concentration Elective Courses · closed displayed pool; 21 units; choose 21 units"
+        },
+        {
+          "code": "MATH3826",
+          "title": "Operations Research II",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B; Data Science Concentration Elective Courses · closed displayed pool; Group B; 15 units; choose 15 units, including at least 2 courses from Group A and at least 1 from Group B; Applied Statistics Concentration Elective Courses · closed displayed pool; 21 units; choose 21 units"
+        },
+        {
+          "code": "MATH3836",
+          "title": "Data Mining",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B; Data Science Concentration Required Courses · all required / 6 units; Applied Statistics Concentration Elective Courses · closed displayed pool; 21 units; choose 21 units"
+        },
+        {
+          "code": "MATH3845",
+          "title": "Interest Theory and Applications",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B"
+        },
+        {
+          "code": "MATH4205",
+          "title": "Topics in Probability Theory and Stochastic Processes",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B; Applied Statistics Concentration Elective Courses · closed displayed pool; 21 units; choose 21 units"
+        },
+        {
+          "code": "MATH4207",
+          "title": "Computational Finance",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B"
+        },
+        {
+          "code": "MATH4216",
+          "title": "Mathematical Finance",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B"
+        },
+        {
+          "code": "MATH4225",
+          "title": "Foundation of Big Data and Learning",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B; Data Science Concentration Required Courses · all required / 6 units"
+        },
+        {
+          "code": "MATH4226",
+          "title": "Introduction to Deep Learning",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B; Data Science Concentration Elective Courses · closed displayed pool; Group A; 15 units; choose 15 units, including at least 2 courses from Group A and at least 1 from Group B"
+        },
+        {
+          "code": "MATH4227",
+          "title": "Programming for Data Science",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B; Data Science Concentration Elective Courses · closed displayed pool; Group A; 15 units; choose 15 units, including at least 2 courses from Group A and at least 1 from Group B"
+        },
+        {
+          "code": "MATH4465",
+          "title": "Special Topics in Mathematics I",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B"
+        },
+        {
+          "code": "MATH4466",
+          "title": "Special Topics in Mathematics II",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B"
+        },
+        {
+          "code": "MATH4467",
+          "title": "Special Topics in Mathematics III",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B"
+        },
+        {
+          "code": "MATH4606",
+          "title": "Functional Analysis",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B"
+        },
+        {
+          "code": "MATH4615",
+          "title": "Numerical Linear Algebra",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B; Data Science Concentration Elective Courses · closed displayed pool; Group B; 15 units; choose 15 units, including at least 2 courses from Group A and at least 1 from Group B; Applied Statistics Concentration Elective Courses · closed displayed pool; 21 units; choose 21 units"
+        },
+        {
+          "code": "MATH4665",
+          "title": "Special Topics in Applied Mathematics I",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B"
+        },
+        {
+          "code": "MATH4666",
+          "title": "Special Topics in Applied Mathematics II",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B"
+        },
+        {
+          "code": "MATH4667",
+          "title": "Special Topics in Applied Mathematics III",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B"
+        },
+        {
+          "code": "MATH4685",
+          "title": "Special Topics in Actuarial Statistics I",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B"
+        },
+        {
+          "code": "MATH4686",
+          "title": "Special Topics in Actuarial Statistics II",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B"
+        },
+        {
+          "code": "MATH4687",
+          "title": "Special Topics in Actuarial Statistics III",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B"
+        },
+        {
+          "code": "MATH4805",
+          "title": "Applied Nonparametric Statistics",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B; Applied Statistics Concentration Elective Courses · closed displayed pool; 21 units; choose 21 units"
+        },
+        {
+          "code": "MATH4807",
+          "title": "Categorical Data Analysis",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B; Data Science Concentration Elective Courses · closed displayed pool; Group B; 15 units; choose 15 units, including at least 2 courses from Group A and at least 1 from Group B; Applied Statistics Concentration Elective Courses · closed displayed pool; 21 units; choose 21 units"
+        },
+        {
+          "code": "MATH4815",
+          "title": "Interior Point Methods for Convex Optimization",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B; Data Science Concentration Elective Courses · closed displayed pool; Group A; 15 units; choose 15 units, including at least 2 courses from Group A and at least 1 from Group B"
+        },
+        {
+          "code": "MATH4816",
+          "title": "Optimization Theory and Techniques",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B; Data Science Concentration Elective Courses · closed displayed pool; Group A; 15 units; choose 15 units, including at least 2 courses from Group A and at least 1 from Group B"
+        },
+        {
+          "code": "MATH4817",
+          "title": "Stochastic Models",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B; Applied Statistics Concentration Elective Courses · closed displayed pool; 21 units; choose 21 units"
+        },
+        {
+          "code": "MATH4825",
+          "title": "Survival Analysis",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B; Applied Statistics Concentration Elective Courses · closed displayed pool; 21 units; choose 21 units"
+        },
+        {
+          "code": "MATH4826",
+          "title": "Time Series and Forecasting",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B; Data Science Concentration Elective Courses · closed displayed pool; Group B; 15 units; choose 15 units, including at least 2 courses from Group A and at least 1 from Group B; Applied Statistics Concentration Elective Courses · closed displayed pool; 21 units; choose 21 units"
+        },
+        {
+          "code": "MATH4837",
+          "title": "Risk and Portfolio Management",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B"
+        },
+        {
+          "code": "MATH4865",
+          "title": "Special Topics in Operations Research I",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B"
+        },
+        {
+          "code": "MATH4866",
+          "title": "Special Topics in Operations Research II",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B"
+        },
+        {
+          "code": "MATH4867",
+          "title": "Special Topics in Operations Research III",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B"
+        },
+        {
+          "code": "MATH4875",
+          "title": "Special Topics in Statistics I",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B; Data Science Concentration Elective Courses · closed displayed pool; Group B; 15 units; choose 15 units, including at least 2 courses from Group A and at least 1 from Group B; Applied Statistics Concentration Elective Courses · closed displayed pool; 21 units; choose 21 units"
+        },
+        {
+          "code": "MATH4876",
+          "title": "Special Topics in Statistics II",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B; Data Science Concentration Elective Courses · closed displayed pool; Group B; 15 units; choose 15 units, including at least 2 courses from Group A and at least 1 from Group B; Applied Statistics Concentration Elective Courses · closed displayed pool; 21 units; choose 21 units"
+        },
+        {
+          "code": "MATH4877",
+          "title": "Special Topics in Statistics III",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B; Data Science Concentration Elective Courses · closed displayed pool; Group B; 15 units; choose 15 units, including at least 2 courses from Group A and at least 1 from Group B; Applied Statistics Concentration Elective Courses · closed displayed pool; 21 units; choose 21 units"
+        },
+        {
+          "code": "MATH4999",
+          "title": "Mathematical Science Project II",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units; Handbook footnote requires the 12 Major Elective units from Group B; Group B",
+          "courseType": "project"
+        },
+        {
+          "code": "MATH4998",
+          "title": "Mathematical Science Project I",
+          "credits": 3,
+          "group": "Project · required",
+          "courseType": "project"
+        }
+      ]
+    },
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BSC-12",
+      "jupasCode": "JS2510",
+      "majorId": "HKBU-UG-BSC-12-M7",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-physics-1/bachelor-of-science-honours-in-green-energy-and-smart",
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-physics-1/bachelor-of-science-honours-in-green-energy-and-smart",
+      "courses": [
+        {
+          "code": "SCIE1006",
+          "title": "Big Data and Smart Technology",
+          "credits": 3,
+          "group": "Science Common Core Courses · all required / 6 units"
+        },
+        {
+          "code": "SCIE1007",
+          "title": "Molecular Science in Daily Life",
+          "credits": 3,
+          "group": "Science Common Core Courses · all required / 6 units"
+        },
+        {
+          "code": "BIOL1005",
+          "title": "Introduction to Biology",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "CHEM1005",
+          "title": "Introduction to Chemistry",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "COMP1005",
+          "title": "Essence of Computing",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "GEST1005",
+          "title": "Introduction to Green Energy and Smart Technology",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "MATH1025",
+          "title": "Understanding Mathematics and Statistics",
+          "credits": 3,
+          "group": "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+        },
+        {
+          "code": "GEST2005",
+          "title": "Energy Foundation I: Heat and Motion",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "GEST2006",
+          "title": "Energy Foundation II: Electricity and Magnetism",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "GEST2007",
+          "title": "Renewable Energy Technology",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "GEST2015",
+          "title": "Energy Storage and Distribution",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "GEST2016",
+          "title": "Green Energy Laboratory I",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "GEST2017",
+          "title": "Green Energy Laboratory II",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "GEST2025",
+          "title": "Mathematical Methods",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "GEST3005",
+          "title": "Smart Sensors and IoT",
+          "credits": 4,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "GEST3006",
+          "title": "Digital Technology for Network Communication",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "GEST3007",
+          "title": "Sustainable Transportation Technology",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "GEST3015",
+          "title": "Smart Materials: Structures and Properties",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "GEST4006",
+          "title": "Energy Management of Green Building",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "GEST4026",
+          "title": "Carbon Audit and Energy Audit",
+          "credits": 4,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "BIOL2045",
+          "title": "Natural Resources and Environment",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units"
+        },
+        {
+          "code": "CHEM4006",
+          "title": "Environmental Chemistry and Pollution",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units"
+        },
+        {
+          "code": "GEOG3007",
+          "title": "Energy Problems and the Environment",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units"
+        },
+        {
+          "code": "GEOG4016",
+          "title": "Sustainable Energy and Technological Innovation in China",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units"
+        },
+        {
+          "code": "GEOG4065",
+          "title": "Energy Policy and Analysis",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units"
+        },
+        {
+          "code": "GEST2026",
+          "title": "Guided Study in Energy Science I",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units"
+        },
+        {
+          "code": "GEST3016",
+          "title": "Machine Learning: from Data to Model",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units"
+        },
+        {
+          "code": "GEST3017",
+          "title": "Green Energy Lab with Smart Devices",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units"
+        },
+        {
+          "code": "GEST3025",
+          "title": "Guided Study in Energy Science II",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units"
+        },
+        {
+          "code": "GEST3026",
+          "title": "Networks, Complexity and their Applications",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units"
+        },
+        {
+          "code": "GEST3027",
+          "title": "Principles of AI: from Model to Applications",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units"
+        },
+        {
+          "code": "GEST4007",
+          "title": "Advanced Green Energy Laboratory",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units"
+        },
+        {
+          "code": "GEST4015",
+          "title": "Advances in Displays and Lighting",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units"
+        },
+        {
+          "code": "GEST4016",
+          "title": "Topics in Green Energy and Smart Technology I",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units"
+        },
+        {
+          "code": "GEST4017",
+          "title": "Topics in Green Energy and Smart Technology II",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units"
+        },
+        {
+          "code": "GEST4025",
+          "title": "Topics in Green Energy and Smart Technology III",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units"
+        },
+        {
+          "code": "GEST4027",
+          "title": "Introduction to Robotics",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units"
+        },
+        {
+          "code": "GEST4035",
+          "title": "Fundamentals of Microelectronics and Artificial Intelligence Hardware",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units"
+        },
+        {
+          "code": "GEST4899",
+          "title": "Final Year Project II",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units",
+          "courseType": "project"
+        },
+        {
+          "code": "SCIP4005",
+          "title": "Interdisciplinary Topics in Science - Flexible Electronics",
+          "credits": 3,
+          "group": "Major Elective Courses · closed displayed pool / 12 units"
+        },
+        {
+          "code": "GEST4898",
+          "title": "Final Year Project I",
+          "credits": 3,
+          "group": "Project · required",
+          "courseType": "project"
+        }
+      ]
+    }
+  ]
+}

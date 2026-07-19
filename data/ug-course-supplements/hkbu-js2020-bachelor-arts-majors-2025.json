@@ -1,0 +1,2123 @@
+{
+  "provider": "HKBU University Student Handbook 2025-2026",
+  "academicYear": "2025-2026",
+  "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/academy-of-chinese-history-religion-and-philosophy/bachelor-of-arts-honours-in-chinese-language-and-1",
+  "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2020/",
+  "note": "The official 2025-2026 Handbook publishes each JS2020 Major on a separate Programme page; the five local Majors are stored as separate supplements and shared courses are repeated only across their respective Major identities. All five pages require 54 units of Major Courses and a 6-unit Honours/Capstone Project. Chinese Language and Literature requires eight electives with at least three from Group A, two from Group C and one each from Groups B and D. Creative and Professional Writing requires 18 elective units and states that students take at least two courses from two different modules; its displayed Either/Or pairs are retained. English Language and Literature requires eight electives, at least four at Level 3 or 4; an optional concentration requires at least six electives under that concentration and does not appear on the transcript. Its uncoded 3-unit Third Language option (Putonghua excluded) is an open option and is not fabricated as a coded course. Humanities students seeking a concentration use 18 major-elective units plus 3 Free Elective units for 21 units in one group, with the remaining 6 major-elective units taken as two courses in the other group; students without a concentration take at least three courses from each group and 24 units total. Translation requires eight electives, at least three at Level 3 or above. Minor title differences are resolved against linked 2025-2026 course pages; Chinese and LANG course pages additionally display Chinese titles, while the English Programme-table titles are retained. The 2026-2027 Handbook endpoint is currently protected by HTTP 401 Basic Authentication and is not represented as verified. University Language, General Education and uncoded Free Electives are excluded. No Year or Term is assigned.",
+  "supplements": [
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BA-1",
+      "jupasCode": "JS2020",
+      "majorId": "HKBU-UG-BA-1-M1",
+      "majorName": "Chinese Language and Literature",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/academy-of-chinese-history-religion-and-philosophy/bachelor-of-arts-honours-in-chinese-language-and-1",
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/academy-of-chinese-history-religion-and-philosophy/bachelor-of-arts-honours-in-chinese-language-and-1",
+      "courses": [
+        {
+          "code": "CHIL2005",
+          "title": "History of Classical Chinese Literature (Pre-Qin to the Five Dynasties)",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 30 units"
+        },
+        {
+          "code": "CHIL2006",
+          "title": "Introduction to Literature",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 30 units"
+        },
+        {
+          "code": "CHIL2007",
+          "title": "Modern Chinese Grammar",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 30 units"
+        },
+        {
+          "code": "CHIL2015",
+          "title": "Study Skills and Research Methodology",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 30 units"
+        },
+        {
+          "code": "CHIL2016",
+          "title": "Chinese Etymology",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 30 units"
+        },
+        {
+          "code": "CHIL2017",
+          "title": "Classical Chinese",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 30 units"
+        },
+        {
+          "code": "CHIL2025",
+          "title": "History of Classical Chinese Literature (Song to Qing Dynasties)",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 30 units"
+        },
+        {
+          "code": "CHIL2026",
+          "title": "Modern and Contemporary Chinese Literature (1917-present)",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 30 units"
+        },
+        {
+          "code": "CHIL3005",
+          "title": "Chinese Phonology",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 30 units"
+        },
+        {
+          "code": "CHIL4005",
+          "title": "Literary Criticism",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 30 units"
+        },
+        {
+          "code": "CHIL2045",
+          "title": "Classical Chinese Masterpieces in English (Thought and Culture)",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A · total 8 electives / 24 units; at least 3 from Group A"
+        },
+        {
+          "code": "CHIL4006",
+          "title": "Chinese Bibliography",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A · total 8 electives / 24 units; at least 3 from Group A"
+        },
+        {
+          "code": "CHIL4007",
+          "title": "Chinese Classics—Intensive Reading and Reflection",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A · total 8 electives / 24 units; at least 3 from Group A"
+        },
+        {
+          "code": "CHIL4015",
+          "title": "Chinese Classics and Culture",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A · total 8 electives / 24 units; at least 3 from Group A"
+        },
+        {
+          "code": "CHIL4016",
+          "title": "Chinese Thought and Literature",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A · total 8 electives / 24 units; at least 3 from Group A"
+        },
+        {
+          "code": "CHIL4017",
+          "title": "Integrated Study of Chinese Culture",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A · total 8 electives / 24 units; at least 3 from Group A"
+        },
+        {
+          "code": "CHIL4025",
+          "title": "Lun Yu",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A · total 8 electives / 24 units; at least 3 from Group A"
+        },
+        {
+          "code": "CHIL4026",
+          "title": "Modern Views on Traditional Chinese Culture",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A · total 8 electives / 24 units; at least 3 from Group A"
+        },
+        {
+          "code": "CHIL4027",
+          "title": "Selected Readings from Classical Confucian Works",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A · total 8 electives / 24 units; at least 3 from Group A"
+        },
+        {
+          "code": "CHIL4035",
+          "title": "Selected Readings from Traditional Chinese Thinkers (Zi)",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A · total 8 electives / 24 units; at least 3 from Group A"
+        },
+        {
+          "code": "CHIL4036",
+          "title": "Selected Works of Western Literature in Chinese Translations (Thought and Culture)",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A · total 8 electives / 24 units; at least 3 from Group A"
+        },
+        {
+          "code": "CHIL4037",
+          "title": "Zhuang Zi",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A · total 8 electives / 24 units; at least 3 from Group A"
+        },
+        {
+          "code": "CHIL4067",
+          "title": "Shi Jing",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A · total 8 electives / 24 units; at least 3 from Group A"
+        },
+        {
+          "code": "CHIL4107",
+          "title": "Masterpieces in Chinese Historiography (Thought and Culture)",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A · total 8 electives / 24 units; at least 3 from Group A"
+        },
+        {
+          "code": "CHIL4207",
+          "title": "Western Sinology",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A · total 8 electives / 24 units; at least 3 from Group A"
+        },
+        {
+          "code": "CHIL4045",
+          "title": "Chinese Language and Culture",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B · total 8 electives / 24 units; at least 1 from Group B"
+        },
+        {
+          "code": "CHIL4046",
+          "title": "Chinese Rhetoric",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B · total 8 electives / 24 units; at least 1 from Group B"
+        },
+        {
+          "code": "CHIL4047",
+          "title": "Chinese Semantics",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B · total 8 electives / 24 units; at least 1 from Group B"
+        },
+        {
+          "code": "CHIL4055",
+          "title": "Practical Chinese Grammar",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B · total 8 electives / 24 units; at least 1 from Group B"
+        },
+        {
+          "code": "CHIL4056",
+          "title": "Selected Masterpieces in Chinese Linguistics",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B · total 8 electives / 24 units; at least 1 from Group B"
+        },
+        {
+          "code": "CHIL4057",
+          "title": "Special Topics in Chinese Language",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B · total 8 electives / 24 units; at least 1 from Group B"
+        },
+        {
+          "code": "CHIL4305",
+          "title": "Fundamentals of Chinese Dialectology",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B · total 8 electives / 24 units; at least 1 from Group B"
+        },
+        {
+          "code": "CHIL2046",
+          "title": "Classical Chinese Masterpieces in English (Classical Literature)",
+          "credits": 3,
+          "group": "Major Elective Courses — Group C · total 8 electives / 24 units; at least 2 from Group C"
+        },
+        {
+          "code": "CHIL3006",
+          "title": "Chinese Biographic Literature (Classical Literature)",
+          "credits": 3,
+          "group": "Major Elective Courses — Group C · total 8 electives / 24 units; at least 2 from Group C"
+        },
+        {
+          "code": "CHIL3007",
+          "title": "Classical Chinese Fiction",
+          "credits": 3,
+          "group": "Major Elective Courses — Group C · total 8 electives / 24 units; at least 2 from Group C"
+        },
+        {
+          "code": "CHIL3015",
+          "title": "Selected Chinese Lyrics and Songs",
+          "credits": 3,
+          "group": "Major Elective Courses — Group C · total 8 electives / 24 units; at least 2 from Group C"
+        },
+        {
+          "code": "CHIL3016",
+          "title": "Selected Readings in Chinese Historical Writings",
+          "credits": 3,
+          "group": "Major Elective Courses — Group C · total 8 electives / 24 units; at least 2 from Group C"
+        },
+        {
+          "code": "CHIL3065",
+          "title": "Space and Place in Chinese Literature, Arts, and Culture",
+          "credits": 3,
+          "group": "Major Elective Courses — Group C · total 8 electives / 24 units; at least 2 from Group C"
+        },
+        {
+          "code": "CHIL4065",
+          "title": "Chu Ci",
+          "credits": 3,
+          "group": "Major Elective Courses — Group C · total 8 electives / 24 units; at least 2 from Group C"
+        },
+        {
+          "code": "CHIL4066",
+          "title": "Classical Chinese Drama",
+          "credits": 3,
+          "group": "Major Elective Courses — Group C · total 8 electives / 24 units; at least 2 from Group C"
+        },
+        {
+          "code": "CHIL4075",
+          "title": "Special Topics in Chinese Critical Theory (Classical Literature)",
+          "credits": 3,
+          "group": "Major Elective Courses — Group C · total 8 electives / 24 units; at least 2 from Group C"
+        },
+        {
+          "code": "CHIL4076",
+          "title": "Special Topics in Classical Chinese Fiction and Drama",
+          "credits": 3,
+          "group": "Major Elective Courses — Group C · total 8 electives / 24 units; at least 2 from Group C"
+        },
+        {
+          "code": "CHIL4077",
+          "title": "Special Topics in Classical Chinese Literature",
+          "credits": 3,
+          "group": "Major Elective Courses — Group C · total 8 electives / 24 units; at least 2 from Group C"
+        },
+        {
+          "code": "CHIL4085",
+          "title": "Special Topics in the History of Chinese Literature (Classical Literature)",
+          "credits": 3,
+          "group": "Major Elective Courses — Group C · total 8 electives / 24 units; at least 2 from Group C"
+        },
+        {
+          "code": "CHIL4086",
+          "title": "Studies in Selected Chinese Poets and/or Lyricists",
+          "credits": 3,
+          "group": "Major Elective Courses — Group C · total 8 electives / 24 units; at least 2 from Group C"
+        },
+        {
+          "code": "CHIL4087",
+          "title": "Wenxin Diaolong",
+          "credits": 3,
+          "group": "Major Elective Courses — Group C · total 8 electives / 24 units; at least 2 from Group C"
+        },
+        {
+          "code": "CHIL4097",
+          "title": "Selected Works of Western Literature in Chinese Translations (Classical Literature)",
+          "credits": 3,
+          "group": "Major Elective Courses — Group C · total 8 electives / 24 units; at least 2 from Group C"
+        },
+        {
+          "code": "CHIL4206",
+          "title": "Masterpieces in Chinese Historiography (Classical Literature)",
+          "credits": 3,
+          "group": "Major Elective Courses — Group C · total 8 electives / 24 units; at least 2 from Group C"
+        },
+        {
+          "code": "CHIL3017",
+          "title": "Creative Writing in Chinese",
+          "credits": 3,
+          "group": "Major Elective Courses — Group D · total 8 electives / 24 units; at least 1 from Group D"
+        },
+        {
+          "code": "CHIL3025",
+          "title": "Cross-cultural Dialogue: Hong Kong Literature and the World",
+          "credits": 3,
+          "group": "Major Elective Courses — Group D · total 8 electives / 24 units; at least 1 from Group D"
+        },
+        {
+          "code": "CHIL3026",
+          "title": "Modern Chinese Fiction Writing",
+          "credits": 3,
+          "group": "Major Elective Courses — Group D · total 8 electives / 24 units; at least 1 from Group D"
+        },
+        {
+          "code": "CHIL3027",
+          "title": "Modern Chinese Prose Writing",
+          "credits": 3,
+          "group": "Major Elective Courses — Group D · total 8 electives / 24 units; at least 1 from Group D"
+        },
+        {
+          "code": "CHIL3057",
+          "title": "Chinese Biographic Literature (Modern Literature)",
+          "credits": 3,
+          "group": "Major Elective Courses — Group D · total 8 electives / 24 units; at least 1 from Group D"
+        },
+        {
+          "code": "CHIL4095",
+          "title": "Single Chinese Author Forum (Modern and Contemporary Writer)",
+          "credits": 3,
+          "group": "Major Elective Courses — Group D · total 8 electives / 24 units; at least 1 from Group D"
+        },
+        {
+          "code": "CHIL4096",
+          "title": "Special Topics in Modern and Contemporary Chinese Literature",
+          "credits": 3,
+          "group": "Major Elective Courses — Group D · total 8 electives / 24 units; at least 1 from Group D"
+        },
+        {
+          "code": "CHIL4105",
+          "title": "Special Topics in Chinese Critical Theory (Modern Literature)",
+          "credits": 3,
+          "group": "Major Elective Courses — Group D · total 8 electives / 24 units; at least 1 from Group D"
+        },
+        {
+          "code": "CHIL4106",
+          "title": "Special Topics in the History of Chinese Literature (Modern Literature)",
+          "credits": 3,
+          "group": "Major Elective Courses — Group D · total 8 electives / 24 units; at least 1 from Group D"
+        },
+        {
+          "code": "CHIL4205",
+          "title": "Selected Works of Western Literature in Chinese Translations (Modern Literature)",
+          "credits": 3,
+          "group": "Major Elective Courses — Group D · total 8 electives / 24 units; at least 1 from Group D"
+        },
+        {
+          "code": "CHIL1005",
+          "title": "Selected Readings in Classical Chinese Poetry",
+          "credits": 3,
+          "group": "Major Elective Courses — Group E · optional within the 8-course / 24-unit requirement"
+        },
+        {
+          "code": "CHIL1006",
+          "title": "Selected Readings in Classical Chinese Prose",
+          "credits": 3,
+          "group": "Major Elective Courses — Group E · optional within the 8-course / 24-unit requirement"
+        },
+        {
+          "code": "CHIL2027",
+          "title": "Appreciation of Chinese Literature",
+          "credits": 3,
+          "group": "Major Elective Courses — Group E · optional within the 8-course / 24-unit requirement"
+        },
+        {
+          "code": "CHIL2035",
+          "title": "Art of Kunqu",
+          "credits": 3,
+          "group": "Major Elective Courses — Group E · optional within the 8-course / 24-unit requirement"
+        },
+        {
+          "code": "CHIL2036",
+          "title": "Chinese Literary Masterpieces and Arts",
+          "credits": 3,
+          "group": "Major Elective Courses — Group E · optional within the 8-course / 24-unit requirement"
+        },
+        {
+          "code": "CHIL2037",
+          "title": "Modern and Contemporary Chinese Literature and Visual Arts",
+          "credits": 3,
+          "group": "Major Elective Courses — Group E · optional within the 8-course / 24-unit requirement"
+        },
+        {
+          "code": "CHIL3035",
+          "title": "Business and Advertisement Writing",
+          "credits": 3,
+          "group": "Major Elective Courses — Group E · optional within the 8-course / 24-unit requirement"
+        },
+        {
+          "code": "CHIL3036",
+          "title": "Chinese Literature and Natural Ecology",
+          "credits": 3,
+          "group": "Major Elective Courses — Group E · optional within the 8-course / 24-unit requirement"
+        },
+        {
+          "code": "CHIL3037",
+          "title": "Chinese Literature and Pop Culture",
+          "credits": 3,
+          "group": "Major Elective Courses — Group E · optional within the 8-course / 24-unit requirement"
+        },
+        {
+          "code": "CHIL3045",
+          "title": "Introduction to the Study of Hong Kong Popular Chinese Lyrics",
+          "credits": 3,
+          "group": "Major Elective Courses — Group E · optional within the 8-course / 24-unit requirement"
+        },
+        {
+          "code": "CHIL3046",
+          "title": "Love and Eros in the World of Chinese Literature",
+          "credits": 3,
+          "group": "Major Elective Courses — Group E · optional within the 8-course / 24-unit requirement"
+        },
+        {
+          "code": "CHIL3047",
+          "title": "Modern Chinese Literature and Christian Culture",
+          "credits": 3,
+          "group": "Major Elective Courses — Group E · optional within the 8-course / 24-unit requirement"
+        },
+        {
+          "code": "CHIL3055",
+          "title": "Rhymed Chinese Literature Writing",
+          "credits": 3,
+          "group": "Major Elective Courses — Group E · optional within the 8-course / 24-unit requirement"
+        },
+        {
+          "code": "CHIL3056",
+          "title": "Special Topics in Chinese Arts and Chinese Literature",
+          "credits": 3,
+          "group": "Major Elective Courses — Group E · optional within the 8-course / 24-unit requirement"
+        },
+        {
+          "code": "CHIL4898",
+          "title": "Honours Project (Research Paper/Creative Writing)",
+          "credits": 3,
+          "group": "Honours Project · both courses required / 6 units",
+          "courseType": "capstone"
+        },
+        {
+          "code": "CHIL4899",
+          "title": "Honours Project (Research Paper/Creative Writing)",
+          "credits": 3,
+          "group": "Honours Project · both courses required / 6 units",
+          "courseType": "capstone"
+        }
+      ]
+    },
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BA-1",
+      "jupasCode": "JS2020",
+      "majorId": "HKBU-UG-BA-1-M2",
+      "majorName": "Creative and Professional Writing",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/academy-of-language-and-culture/bachelor-of-arts-honours-in-creative-and-professional-1",
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/academy-of-language-and-culture/bachelor-of-arts-honours-in-creative-and-professional-1",
+      "courses": [
+        {
+          "code": "HUMN2015",
+          "title": "Writing Seminar: Workshop in Creative Writing",
+          "credits": 3,
+          "group": "Major Required Courses · choose 1 of HUMN2015 / WRIT2015 within the 36-unit requirement"
+        },
+        {
+          "code": "WRIT2015",
+          "title": "Writing Seminar: Workshop in Creative Writing",
+          "credits": 3,
+          "group": "Major Required Courses · choose 1 of HUMN2015 / WRIT2015 within the 36-unit requirement"
+        },
+        {
+          "code": "HUMN3005",
+          "title": "Artistic Creativity and Aesthetics Awareness",
+          "credits": 3,
+          "group": "Major Required Courses · required within the 36-unit requirement"
+        },
+        {
+          "code": "HUMN3016",
+          "title": "Professional Writing Practicum: Essentials of the Craft of Writing",
+          "credits": 3,
+          "group": "Major Required Courses · choose 1 of HUMN3016 / WRIT3006 within the 36-unit requirement",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HUMN3016",
+          "description": "The linked 2025-2026 Handbook course page title is retained where it differs slightly from the Programme table."
+        },
+        {
+          "code": "WRIT3006",
+          "title": "Professional Writing Practicum: Essentials of the Craft of Writing",
+          "credits": 3,
+          "group": "Major Required Courses · choose 1 of HUMN3016 / WRIT3006 within the 36-unit requirement"
+        },
+        {
+          "code": "HUMN4026",
+          "title": "The Art of Creating Stories: Writing and Appreciation",
+          "credits": 3,
+          "group": "Major Required Courses · choose 1 of HUMN4026 / WRIT4007 within the 36-unit requirement"
+        },
+        {
+          "code": "WRIT4007",
+          "title": "The Art of Creating Stories: Writing and Appreciation",
+          "credits": 3,
+          "group": "Major Required Courses · choose 1 of HUMN4026 / WRIT4007 within the 36-unit requirement"
+        },
+        {
+          "code": "HUMN4027",
+          "title": "The Double Face of Creativity: Fact and Fiction",
+          "credits": 3,
+          "group": "Major Required Courses · choose 1 of HUMN4027 / WRIT4015 within the 36-unit requirement"
+        },
+        {
+          "code": "WRIT4015",
+          "title": "The Double Face of Creativity: Fact and Fiction",
+          "credits": 3,
+          "group": "Major Required Courses · choose 1 of HUMN4027 / WRIT4015 within the 36-unit requirement"
+        },
+        {
+          "code": "WRIT1005",
+          "title": "Creativity: Theory and Practice",
+          "credits": 3,
+          "group": "Major Required Courses · required within the 36-unit requirement"
+        },
+        {
+          "code": "WRIT2005",
+          "title": "Biography Writing",
+          "credits": 3,
+          "group": "Major Required Courses · required within the 36-unit requirement"
+        },
+        {
+          "code": "WRIT2006",
+          "title": "Food, Wine and Travel Writing for the Leisure Industry",
+          "credits": 3,
+          "group": "Major Required Courses · required within the 36-unit requirement"
+        },
+        {
+          "code": "WRIT2007",
+          "title": "Editing and Publishing",
+          "credits": 3,
+          "group": "Major Required Courses · required within the 36-unit requirement"
+        },
+        {
+          "code": "WRIT3007",
+          "title": "Writing for New Media",
+          "credits": 3,
+          "group": "Major Required Courses · required within the 36-unit requirement"
+        },
+        {
+          "code": "WRIT4005",
+          "title": "Cultural Differences and Creative Writing",
+          "credits": 3,
+          "group": "Major Required Courses · required within the 36-unit requirement"
+        },
+        {
+          "code": "WRIT4006",
+          "title": "Writing Internship",
+          "credits": 3,
+          "group": "Major Required Courses · required within the 36-unit requirement; Major Required Courses · required writing internship within the 36-unit requirement",
+          "courseType": "internship"
+        },
+        {
+          "code": "ENGL3015",
+          "title": "Creative Writing",
+          "credits": 3,
+          "group": "Major Elective Courses — English Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "HUMN2025",
+          "title": "Gender: Theory and Culture",
+          "credits": 3,
+          "group": "Major Elective Courses — English Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "HUMN2036",
+          "title": "Media and Communication: Issues, Concepts and Theories",
+          "credits": 3,
+          "group": "Major Elective Courses — English Elective module · complete 18 units overall and take at least 2 courses from 2 different modules; Major Elective Courses — English Elective module · Either HUMN2036 or HUMN3037"
+        },
+        {
+          "code": "HUMN3037",
+          "title": "New Media Cultures",
+          "credits": 3,
+          "group": "Major Elective Courses — English Elective module · complete 18 units overall and take at least 2 courses from 2 different modules; Major Elective Courses — English Elective module · Either HUMN2036 or HUMN3037"
+        },
+        {
+          "code": "HUMN3007",
+          "title": "Language and the Humanities",
+          "credits": 3,
+          "group": "Major Elective Courses — English Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "HUMN3015",
+          "title": "The Making of the Contemporary World",
+          "credits": 3,
+          "group": "Major Elective Courses — English Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "HUMN3046",
+          "title": "Science Fiction, Film and Culture",
+          "credits": 3,
+          "group": "Major Elective Courses — English Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "HUMN4025",
+          "title": "Cultural Studies",
+          "credits": 3,
+          "group": "Major Elective Courses — English Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "HUMN4035",
+          "title": "Special Topic in Theory and Culture",
+          "credits": 3,
+          "group": "Major Elective Courses — English Elective module · complete 18 units overall and take at least 2 courses from 2 different modules; Major Elective Courses — English Elective module · Either HUMN4035 or HUMN4045"
+        },
+        {
+          "code": "HUMN4045",
+          "title": "Special Topic in Theory and Culture",
+          "credits": 3,
+          "group": "Major Elective Courses — English Elective module · complete 18 units overall and take at least 2 courses from 2 different modules; Major Elective Courses — English Elective module · Either HUMN4035 or HUMN4045"
+        },
+        {
+          "code": "HUMN4036",
+          "title": "Special Topic in Media and Cultural Studies",
+          "credits": 3,
+          "group": "Major Elective Courses — English Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "JOUR2085",
+          "title": "English News Reporting and Writing",
+          "credits": 3,
+          "group": "Major Elective Courses — English Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "JOUR3177",
+          "title": "Advanced News and Feature Writing (English)",
+          "credits": 3,
+          "group": "Major Elective Courses — English Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "JOUR3095",
+          "title": "Business and Financial News Reporting in English",
+          "credits": 3,
+          "group": "Major Elective Courses — English Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "LANG2006",
+          "title": "English through Creative Writing",
+          "credits": 3,
+          "group": "Major Elective Courses — English Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "LANG3025",
+          "title": "Creative Writing in Children's Literature in English",
+          "credits": 3,
+          "group": "Major Elective Courses — English Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "TRAN3045",
+          "title": "Drama and Film Translation",
+          "credits": 3,
+          "group": "Major Elective Courses — English Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "TRAN4026",
+          "title": "Literary Translation",
+          "credits": 3,
+          "group": "Major Elective Courses — English Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "WRIT2016",
+          "title": "Writing for Science",
+          "credits": 3,
+          "group": "Major Elective Courses — English Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "WRIT2017",
+          "title": "Writing for Business",
+          "credits": 3,
+          "group": "Major Elective Courses — English Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "WRIT2026",
+          "title": "Special Topic in Creative Writing",
+          "credits": 3,
+          "group": "Major Elective Courses — English Elective module · complete 18 units overall and take at least 2 courses from 2 different modules; Major Elective Courses — English Elective module · Either WRIT2026 or WRIT3016"
+        },
+        {
+          "code": "WRIT3016",
+          "title": "Special Topic in Creative Writing",
+          "credits": 3,
+          "group": "Major Elective Courses — English Elective module · complete 18 units overall and take at least 2 courses from 2 different modules; Major Elective Courses — English Elective module · Either WRIT2026 or WRIT3016"
+        },
+        {
+          "code": "WRIT3025",
+          "title": "Big Stories: Writing Long-form Fictional Narratives",
+          "credits": 3,
+          "group": "Major Elective Courses — English Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "WRIT3026",
+          "title": "Poetry Writing",
+          "credits": 3,
+          "group": "Major Elective Courses — English Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "WRIT4016",
+          "title": "Writing Diaspora in a Global World",
+          "credits": 3,
+          "group": "Major Elective Courses — English Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "WRIT4017",
+          "title": "From Sacred Books to Sampling: Authorship in Creative Writing and Digital Arts",
+          "credits": 3,
+          "group": "Major Elective Courses — English Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "CHIL3026",
+          "title": "Modern Chinese Fiction Writing",
+          "credits": 3,
+          "group": "Major Elective Courses — Chinese Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "CHIL3027",
+          "title": "Modern Chinese Prose Writing",
+          "credits": 3,
+          "group": "Major Elective Courses — Chinese Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "CHIL3055",
+          "title": "Rhymed Chinese Literature Writing",
+          "credits": 3,
+          "group": "Major Elective Courses — Chinese Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "FILM2015",
+          "title": "Script Writing",
+          "credits": 3,
+          "group": "Major Elective Courses — Chinese Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "FILM4007",
+          "title": "Advanced Script Writing",
+          "credits": 3,
+          "group": "Major Elective Courses — Chinese Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "HUMN1005",
+          "title": "The Study of Culture",
+          "credits": 3,
+          "group": "Major Elective Courses — Chinese Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "HUMN3006",
+          "title": "Great Works in the Humanities",
+          "credits": 3,
+          "group": "Major Elective Courses — Chinese Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "HUMN3025",
+          "title": "Chinese Song Lyric Writing",
+          "credits": 3,
+          "group": "Major Elective Courses — Chinese Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "JOUR2077",
+          "title": "Chinese News Reporting and Writing",
+          "credits": 3,
+          "group": "Major Elective Courses — Chinese Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "JOUR3176",
+          "title": "Advanced News and Feature Writing (Chinese)",
+          "credits": 3,
+          "group": "Major Elective Courses — Chinese Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "LANG2005",
+          "title": "Creative Writing through Masterpieces",
+          "credits": 3,
+          "group": "Major Elective Courses — Chinese Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "LANG2025",
+          "title": "Chinese Writing for Business and Public Administration",
+          "credits": 3,
+          "group": "Major Elective Courses — Chinese Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "LANG3006",
+          "title": "Creative Writing: Modern Chinese Poetry",
+          "credits": 3,
+          "group": "Major Elective Courses — Chinese Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "TRAN3026",
+          "title": "Media Translation",
+          "credits": 3,
+          "group": "Major Elective Courses — Chinese Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "WRIT2025",
+          "title": "Advertisement Copywriting",
+          "credits": 3,
+          "group": "Major Elective Courses — Chinese Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "WRIT3005",
+          "title": "Reading Masterpieces and Writing Your Own",
+          "credits": 3,
+          "group": "Major Elective Courses — Chinese Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "WRIT3015",
+          "title": "Scriptwriting for Theatre",
+          "credits": 3,
+          "group": "Major Elective Courses — Chinese Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "WRIT3017",
+          "title": "Special Topic in Chinese Creative Writing",
+          "credits": 3,
+          "group": "Major Elective Courses — Chinese Elective module · complete 18 units overall and take at least 2 courses from 2 different modules"
+        },
+        {
+          "code": "WRIT4898",
+          "title": "Honours Project I",
+          "credits": 3,
+          "group": "Honours Project · both courses required / 6 units",
+          "courseType": "capstone"
+        },
+        {
+          "code": "WRIT4899",
+          "title": "Honours Project II",
+          "credits": 3,
+          "group": "Honours Project · both courses required / 6 units",
+          "courseType": "capstone"
+        }
+      ]
+    },
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BA-1",
+      "jupasCode": "JS2020",
+      "majorId": "HKBU-UG-BA-1-M3",
+      "majorName": "English Language and Literature",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/academy-of-language-and-culture/bachelor-of-arts-honours-in-english-language-and-1",
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/academy-of-language-and-culture/bachelor-of-arts-honours-in-english-language-and-1",
+      "courses": [
+        {
+          "code": "ENGL1005",
+          "title": "English, Creativity, and Cultures",
+          "credits": 3,
+          "group": "Major Required Courses · required within the 30-unit requirement"
+        },
+        {
+          "code": "ENGL2005",
+          "title": "Introduction to the Study of Language",
+          "credits": 3,
+          "group": "Major Required Courses · required within the 30-unit requirement"
+        },
+        {
+          "code": "ENGL2006",
+          "title": "Language, Culture and Society",
+          "credits": 3,
+          "group": "Major Required Courses · choose 1 of ENGL2006 / ENGL2015 within the 30-unit requirement"
+        },
+        {
+          "code": "ENGL2015",
+          "title": "Literature and Culture",
+          "credits": 3,
+          "group": "Major Required Courses · choose 1 of ENGL2006 / ENGL2015 within the 30-unit requirement"
+        },
+        {
+          "code": "ENGL2007",
+          "title": "Literary and Comparative Studies",
+          "credits": 3,
+          "group": "Major Required Courses · required within the 30-unit requirement"
+        },
+        {
+          "code": "ENGL2016",
+          "title": "Sounds of English around the World",
+          "credits": 3,
+          "group": "Major Required Courses · required within the 30-unit requirement"
+        },
+        {
+          "code": "ENGL2017",
+          "title": "Stepping Stones in English Grammar",
+          "credits": 3,
+          "group": "Major Required Courses · required within the 30-unit requirement"
+        },
+        {
+          "code": "ENGL2025",
+          "title": "The Art of Storytelling",
+          "credits": 3,
+          "group": "Major Required Courses · required within the 30-unit requirement"
+        },
+        {
+          "code": "ENGL2027",
+          "title": "Academic and Professional Writing",
+          "credits": 3,
+          "group": "Major Required Courses · required within the 30-unit requirement"
+        },
+        {
+          "code": "ENGL2097",
+          "title": "Virtual Storytelling: Narration across Dimensions",
+          "credits": 3,
+          "group": "Major Required Courses · required within the 30-unit requirement"
+        },
+        {
+          "code": "ENGL3005",
+          "title": "Research Skills in English Language and Literature",
+          "credits": 3,
+          "group": "Major Required Courses · required within the 30-unit requirement"
+        },
+        {
+          "code": "ENGL3007",
+          "title": "Discourse Studies",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration"
+        },
+        {
+          "code": "ENGL3026",
+          "title": "Special Topic in Language",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration"
+        },
+        {
+          "code": "ENGL3027",
+          "title": "Special Topic in Linguistic Theory",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration"
+        },
+        {
+          "code": "ENGL3107",
+          "title": "Acquiring and Learning a Language",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration"
+        },
+        {
+          "code": "ENGL3115",
+          "title": "Studying Hong Kong Through the Lens of Language",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration"
+        },
+        {
+          "code": "ENGL3205",
+          "title": "Components of a Word",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration"
+        },
+        {
+          "code": "ENGL3206",
+          "title": "Critical Discourse Analysis",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration"
+        },
+        {
+          "code": "ENGL3207",
+          "title": "Language and Intercultural Communication",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration"
+        },
+        {
+          "code": "ENGL3305",
+          "title": "Studying Meaning",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration"
+        },
+        {
+          "code": "ENGL3306",
+          "title": "Understanding Phonological Patterns",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration"
+        },
+        {
+          "code": "ENGL3307",
+          "title": "Architecture of Grammar",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration"
+        },
+        {
+          "code": "ENGL3315",
+          "title": "Linguistic and Literary Portrayals of Hong Kong in English",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration; Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL3316",
+          "title": "Literary and Linguistic Codes in Hong Kong Society",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration; Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL3317",
+          "title": "Sociolinguistic and Cultural Immersion in Hong Kong Language and Literature",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration; Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL3406",
+          "title": "An African Experience: Arts and Cultures through Service-learning",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration; Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL3415",
+          "title": "Foundations of Language Studies",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration"
+        },
+        {
+          "code": "ENGL3416",
+          "title": "Internship in English Studies: From Classroom to Workplace",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration; Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration",
+          "courseType": "internship"
+        },
+        {
+          "code": "ENGL4006",
+          "title": "Advanced Topic in Language",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration"
+        },
+        {
+          "code": "ENGL4007",
+          "title": "Advanced Topic in Linguistic Theory",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration"
+        },
+        {
+          "code": "ENGL4017",
+          "title": "Advanced Seminar in Language and Gender",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration"
+        },
+        {
+          "code": "ENGL4025",
+          "title": "Analysing Multimodal Communication",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration"
+        },
+        {
+          "code": "ENGL4026",
+          "title": "Exploring Intercultural Communication through Films and Literature",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration"
+        },
+        {
+          "code": "ENGL4027",
+          "title": "Exploring Bilingualism and Bilingual Education",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration"
+        },
+        {
+          "code": "ENGL4035",
+          "title": "Functional Grammar",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration"
+        },
+        {
+          "code": "ENGL4036",
+          "title": "Language, Communication and Advertising",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration"
+        },
+        {
+          "code": "ENGL4037",
+          "title": "Language and the Workplace",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration"
+        },
+        {
+          "code": "ENGL4045",
+          "title": "Language in Education",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration"
+        },
+        {
+          "code": "ENGL4047",
+          "title": "Perspectives on Universal Themes",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration"
+        },
+        {
+          "code": "ENGL4055",
+          "title": "Stories of English",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration"
+        },
+        {
+          "code": "ENGL4056",
+          "title": "Theoretical Linguist Meets World",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration"
+        },
+        {
+          "code": "ENGL4057",
+          "title": "Unravelling Syntax",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration"
+        },
+        {
+          "code": "ENGL4115",
+          "title": "Tone in Human Languages",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration"
+        },
+        {
+          "code": "ENGL4116",
+          "title": "Language and Power",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration"
+        },
+        {
+          "code": "ENGL4126",
+          "title": "Exploring Linguistics Through Experimental Methods",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration"
+        },
+        {
+          "code": "ENGL4135",
+          "title": "Linguistic Typology and Language Change",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Language and Communication Studies concentration"
+        },
+        {
+          "code": "ENGL3015",
+          "title": "Creative Writing",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL3025",
+          "title": "Faces of Comparative Literature",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL3036",
+          "title": "Chinese-Western Literary Relations",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL3037",
+          "title": "Creative Writing Workshop",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL3045",
+          "title": "Great Novels in English",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL3046",
+          "title": "Literature and the Nobel Prize",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL3055",
+          "title": "Literature and Film",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL3066",
+          "title": "Modern and Contemporary Drama",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL3096",
+          "title": "The Child and Literature",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL3105",
+          "title": "Twentieth-Century Literature",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL3106",
+          "title": "Modern and Contemporary Poetry",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL3116",
+          "title": "Hong Kong Literature",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL3405",
+          "title": "Shakespeare as Dramatist",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL3407",
+          "title": "Critical Approaches to Literature",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL3417",
+          "title": "Poetry and Poetics",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL3425",
+          "title": "Poetry",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL3426",
+          "title": "Pre-modern Drama",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ENGL3426",
+          "description": "The linked 2025-2026 Handbook course page title is retained where it differs slightly from the Programme table."
+        },
+        {
+          "code": "ENGL3427",
+          "title": "The Short Story",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL4016",
+          "title": "American Popular Fiction after 1950",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL4046",
+          "title": "Hong Kong Stories in English",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL4065",
+          "title": "Dystopian Fiction",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL4066",
+          "title": "World Literatures",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL4067",
+          "title": "Comics and Graphic Novels",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL4075",
+          "title": "Special Topic in Comparative Literature",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL4076",
+          "title": "21st Century Fiction",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL4077",
+          "title": "Detective Fiction",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL4085",
+          "title": "Special Topic in Literature",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL4086",
+          "title": "Shakespeare and His Contemporaries",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL4087",
+          "title": "Special Topic in Critical Theory",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL4095",
+          "title": "Gender and Literature",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL4096",
+          "title": "Diaspora Writing in English",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL4097",
+          "title": "Gothic Literature",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL4105",
+          "title": "Comparative Drama",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL4106",
+          "title": "Literary Journalism",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL4107",
+          "title": "Postcolonial Fiction",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL4117",
+          "title": "The Human History of Amorous Deeds",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL4125",
+          "title": "Literature and Religion",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL4127",
+          "title": "Introducing African Literatures",
+          "credits": 3,
+          "group": "Major Elective Courses · take 8 courses / 24 units; at least 4 at Level 3 or 4 — Literary and Comparative Studies concentration"
+        },
+        {
+          "code": "ENGL4898",
+          "title": "Honours Project",
+          "credits": 3,
+          "group": "Honours Project · both courses required / 6 units",
+          "courseType": "capstone"
+        },
+        {
+          "code": "ENGL4899",
+          "title": "Honours Project",
+          "credits": 3,
+          "group": "Honours Project · both courses required / 6 units",
+          "courseType": "capstone"
+        }
+      ]
+    },
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BA-1",
+      "jupasCode": "JS2020",
+      "majorId": "HKBU-UG-BA-1-M4",
+      "majorName": "Humanities",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/academy-of-language-and-culture/bachelor-of-arts-honours-in-humanities-1",
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/academy-of-language-and-culture/bachelor-of-arts-honours-in-humanities-1",
+      "courses": [
+        {
+          "code": "HUMN1006",
+          "title": "Introduction to the Humanities",
+          "credits": 3,
+          "group": "Major Required Courses · required within the 30-unit requirement"
+        },
+        {
+          "code": "HUMN2006",
+          "title": "Human Self-Discovery",
+          "credits": 3,
+          "group": "Major Required Courses · required within the 30-unit requirement"
+        },
+        {
+          "code": "HUMN2007",
+          "title": "Chinese and Western Modes of Thought",
+          "credits": 3,
+          "group": "Major Required Courses · required within the 30-unit requirement"
+        },
+        {
+          "code": "HUMN3005",
+          "title": "Artistic Creativity and Aesthetics Awareness",
+          "credits": 3,
+          "group": "Major Required Courses · required within the 30-unit requirement"
+        },
+        {
+          "code": "HUMN3006",
+          "title": "Great Works in the Humanities",
+          "credits": 3,
+          "group": "Major Required Courses · choose HUMN3006, or HUMN3087 only for students without Chinese proficiency"
+        },
+        {
+          "code": "HUMN3087",
+          "title": "Independent Study",
+          "credits": 3,
+          "group": "Major Required Courses · choose HUMN3006, or HUMN3087 only for students without Chinese proficiency",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HUMN3087",
+          "description": "The linked 2025-2026 Handbook course page title is retained where it differs slightly from the Programme table. The Programme table limits HUMN3087 to students without Chinese proficiency."
+        },
+        {
+          "code": "HUMN3007",
+          "title": "Language and the Humanities",
+          "credits": 3,
+          "group": "Major Required Courses · required within the 30-unit requirement"
+        },
+        {
+          "code": "HUMN3015",
+          "title": "The Making of the Contemporary World",
+          "credits": 3,
+          "group": "Major Required Courses · required within the 30-unit requirement"
+        },
+        {
+          "code": "HUMN3065",
+          "title": "Research Methods in the Humanities",
+          "credits": 3,
+          "group": "Major Required Courses · required within the 30-unit requirement"
+        },
+        {
+          "code": "HUMN4005",
+          "title": "Asia Discourses",
+          "credits": 3,
+          "group": "Major Required Courses · required within the 30-unit requirement"
+        },
+        {
+          "code": "HUMN4025",
+          "title": "Cultural Studies",
+          "credits": 3,
+          "group": "Major Required Courses · required within the 30-unit requirement"
+        },
+        {
+          "code": "HUMN2015",
+          "title": "Writing Seminar: Workshop in Creative Writing",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Media Studies and Creative Practice"
+        },
+        {
+          "code": "HUMN2016",
+          "title": "Performing as Human Experience",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Media Studies and Creative Practice"
+        },
+        {
+          "code": "HUMN2017",
+          "title": "A Lifelong Romance with Films",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Media Studies and Creative Practice"
+        },
+        {
+          "code": "HUMN2027",
+          "title": "Introduction to the Art of Theatre",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Media Studies and Creative Practice"
+        },
+        {
+          "code": "HUMN2036",
+          "title": "Media and Communication: Issues, Concepts and Theories",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Media Studies and Creative Practice"
+        },
+        {
+          "code": "HUMN2045",
+          "title": "The Art of Speech: Appreciation and Practice",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Media Studies and Creative Practice"
+        },
+        {
+          "code": "HUMN2047",
+          "title": "City, Space and Creativity",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Media Studies and Creative Practice"
+        },
+        {
+          "code": "HUMN3016",
+          "title": "Professional Writing Practicum: Essentials of the Craft of Writing",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Media Studies and Creative Practice",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HUMN3016",
+          "description": "The linked 2025-2026 Handbook course page title is retained where it differs slightly from the Programme table."
+        },
+        {
+          "code": "HUMN3025",
+          "title": "Chinese Song Lyric Writing",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Media Studies and Creative Practice"
+        },
+        {
+          "code": "HUMN3026",
+          "title": "Creative Industries: Theories and Practices",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Media Studies and Creative Practice"
+        },
+        {
+          "code": "HUMN3037",
+          "title": "New Media Cultures",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Media Studies and Creative Practice"
+        },
+        {
+          "code": "HUMN3045",
+          "title": "Popular Music Studies",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Media Studies and Creative Practice"
+        },
+        {
+          "code": "HUMN3046",
+          "title": "Science Fiction, Film and Culture",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Media Studies and Creative Practice"
+        },
+        {
+          "code": "HUMN3047",
+          "title": "The Present State of the Arts",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Media Studies and Creative Practice"
+        },
+        {
+          "code": "HUMN3055",
+          "title": "Popular Media and Public Culture in Hong Kong",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Media Studies and Creative Practice"
+        },
+        {
+          "code": "HUMN3056",
+          "title": "Hong Kong Films and Society",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Media Studies and Creative Practice",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HUMN3056",
+          "description": "The linked 2025-2026 Handbook course page title is retained where it differs slightly from the Programme table."
+        },
+        {
+          "code": "HUMN3075",
+          "title": "East Asia Media Cultures in the Global Age",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Media Studies and Creative Practice",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HUMN3075",
+          "description": "The linked 2025-2026 Handbook course page title is retained where it differs slightly from the Programme table."
+        },
+        {
+          "code": "HUMN3076",
+          "title": "Digital Humanities",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Media Studies and Creative Practice"
+        },
+        {
+          "code": "HUMN3077",
+          "title": "Playwriting for Drama",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Media Studies and Creative Practice"
+        },
+        {
+          "code": "HUMN3085",
+          "title": "Acting: Theory and Practice",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Media Studies and Creative Practice"
+        },
+        {
+          "code": "HUMN3086",
+          "title": "Tragedy: Idea and History",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Media Studies and Creative Practice"
+        },
+        {
+          "code": "HUMN3095",
+          "title": "Internship for Humanities Studies",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Media Studies and Creative Practice; Major Elective Courses — Group B: Cultures in Changing Environments",
+          "courseType": "internship"
+        },
+        {
+          "code": "HUMN4017",
+          "title": "Media Representations of Ethnicity",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Media Studies and Creative Practice"
+        },
+        {
+          "code": "HUMN4026",
+          "title": "The Art of Creating Stories: Writing and Appreciation",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Media Studies and Creative Practice"
+        },
+        {
+          "code": "HUMN4027",
+          "title": "The Double Face of Creativity: Fact and Fiction",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Media Studies and Creative Practice"
+        },
+        {
+          "code": "HUMN4036",
+          "title": "Special Topic in Media and Cultural Studies",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Media Studies and Creative Practice"
+        },
+        {
+          "code": "HUMN4037",
+          "title": "Special Topics in Arts and Creativity",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Media Studies and Creative Practice",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HUMN4037",
+          "description": "The linked 2025-2026 Handbook course page title is retained where it differs slightly from the Programme table."
+        },
+        {
+          "code": "HUMN4055",
+          "title": "Directing: from Text to Stage",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Media Studies and Creative Practice"
+        },
+        {
+          "code": "HUMN4056",
+          "title": "Comedy: Idea and History",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Media Studies and Creative Practice"
+        },
+        {
+          "code": "HUMN4066",
+          "title": "Disability, Culture and Technology",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Media Studies and Creative Practice"
+        },
+        {
+          "code": "HUMN1005",
+          "title": "The Study of Culture",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Cultures in Changing Environments"
+        },
+        {
+          "code": "HUMN2025",
+          "title": "Gender: Theory and Culture",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Cultures in Changing Environments"
+        },
+        {
+          "code": "HUMN2026",
+          "title": "Globalization and Culture",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Cultures in Changing Environments"
+        },
+        {
+          "code": "HUMN2035",
+          "title": "Introduction to Western Classical Culture",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Cultures in Changing Environments"
+        },
+        {
+          "code": "HUMN2055",
+          "title": "Environmental Humanities: Key Concepts",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Cultures in Changing Environments"
+        },
+        {
+          "code": "HUMN2056",
+          "title": "Climate Change Literature and Culture",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Cultures in Changing Environments"
+        },
+        {
+          "code": "HUMN2057",
+          "title": "Health and the Humanities",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Cultures in Changing Environments"
+        },
+        {
+          "code": "HUMN3027",
+          "title": "Death and Culture",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Cultures in Changing Environments"
+        },
+        {
+          "code": "HUMN3035",
+          "title": "Devil and Culture",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Cultures in Changing Environments",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HUMN3035",
+          "description": "The linked 2025-2026 Handbook course page title is retained where it differs slightly from the Programme table."
+        },
+        {
+          "code": "HUMN3036",
+          "title": "Human Beings and Their Imaginary Monsters",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Cultures in Changing Environments"
+        },
+        {
+          "code": "HUMN3057",
+          "title": "Politics of the Ordinary",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Cultures in Changing Environments"
+        },
+        {
+          "code": "HUMN3066",
+          "title": "Critical Theories I: From Marx to Adorno",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Cultures in Changing Environments"
+        },
+        {
+          "code": "HUMN3096",
+          "title": "Posthuman Futures",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Cultures in Changing Environments"
+        },
+        {
+          "code": "HUMN4006",
+          "title": "Humanism and the Individual",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Cultures in Changing Environments"
+        },
+        {
+          "code": "HUMN4007",
+          "title": "Body Cultures",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Cultures in Changing Environments"
+        },
+        {
+          "code": "HUMN4015",
+          "title": "Histories and Narratives",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Cultures in Changing Environments",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HUMN4015",
+          "description": "The linked 2025-2026 Handbook course page title is retained where it differs slightly from the Programme table."
+        },
+        {
+          "code": "HUMN4016",
+          "title": "Major Thinkers in Humanities",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Cultures in Changing Environments"
+        },
+        {
+          "code": "HUMN4035",
+          "title": "Special Topic in Theory and Culture",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Cultures in Changing Environments"
+        },
+        {
+          "code": "HUMN4045",
+          "title": "Special Topic in Theory and Culture",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Cultures in Changing Environments"
+        },
+        {
+          "code": "HUMN4047",
+          "title": "Critical Theories II: From Marcuse to Post-Marxism",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Cultures in Changing Environments"
+        },
+        {
+          "code": "HUMN4057",
+          "title": "Phenomenology and Aesthetics",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Cultures in Changing Environments"
+        },
+        {
+          "code": "HUMN4065",
+          "title": "Hermeneutics and Cultural Understanding",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Cultures in Changing Environments"
+        },
+        {
+          "code": "HUMN4067",
+          "title": "Aesthetics: Philosophy of Arts",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Cultures in Changing Environments"
+        },
+        {
+          "code": "HUMN4898",
+          "title": "Honours Project",
+          "credits": 3,
+          "group": "Honours Project · both courses required / 6 units",
+          "courseType": "capstone"
+        },
+        {
+          "code": "HUMN4899",
+          "title": "Honours Project",
+          "credits": 3,
+          "group": "Honours Project · both courses required / 6 units",
+          "courseType": "capstone"
+        }
+      ]
+    },
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BA-1",
+      "jupasCode": "JS2020",
+      "majorId": "HKBU-UG-BA-1-M5",
+      "majorName": "Translation",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/academy-of-language-and-culture/bachelor-of-arts-honours-in-translation-1",
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/academy-of-language-and-culture/bachelor-of-arts-honours-in-translation-1",
+      "courses": [
+        {
+          "code": "ENGL2005",
+          "title": "Introduction to the Study of Language",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 30 units"
+        },
+        {
+          "code": "TRAN2045",
+          "title": "Practical Translation and Interpreting I",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 30 units"
+        },
+        {
+          "code": "TRAN2046",
+          "title": "Translation and Technology I",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 30 units"
+        },
+        {
+          "code": "TRAN2047",
+          "title": "Translation in Society",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 30 units"
+        },
+        {
+          "code": "TRAN3007",
+          "title": "Critical Concepts for Intercultural Studies",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 30 units"
+        },
+        {
+          "code": "TRAN3067",
+          "title": "Practical Translation and Interpreting II",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 30 units"
+        },
+        {
+          "code": "TRAN3075",
+          "title": "Translation and Technology II",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 30 units"
+        },
+        {
+          "code": "TRAN4007",
+          "title": "Critical Practice",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 30 units"
+        },
+        {
+          "code": "TRAN4037",
+          "title": "The World as Intercultural Phenomenon",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 30 units"
+        },
+        {
+          "code": "TRAN4075",
+          "title": "Machine Learning, Artificial Intelligence and Translation",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 30 units"
+        },
+        {
+          "code": "TRAN1005",
+          "title": "Introduction to Translation",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN2007",
+          "title": "Research Methods for Translation Studies",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN2015",
+          "title": "Communication and Translation",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN2016",
+          "title": "English for Translators II: Written Genres",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN2017",
+          "title": "Reading Chinese Literature in Translation",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN2025",
+          "title": "Translating Across Media",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN2026",
+          "title": "Contrastive Language Studies: English and Chinese",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN2035",
+          "title": "Translation, Museums and Intercultural Representation",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN2036",
+          "title": "Introduction to Tibetan Culture and Language",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN2037",
+          "title": "English for Translators I: Grammar, Structure and Style",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN3026",
+          "title": "Media Translation",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN3027",
+          "title": "Spanish/Chinese Translation",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN3035",
+          "title": "Translation Technology in Practice I",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN3037",
+          "title": "Intermediate Interpreting",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN3045",
+          "title": "Drama and Film Translation",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN3046",
+          "title": "Introduction to Localization",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN3047",
+          "title": "Religion and Translation Across Time and Space",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN3055",
+          "title": "Interpreting Technology",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN3056",
+          "title": "Audiovisual Translation",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN3057",
+          "title": "Digital Publishing",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN3065",
+          "title": "Translation in Multilingual Societies: Politics and Practice",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN3066",
+          "title": "Video Game Localization",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN4006",
+          "title": "Theories and Philosophies II",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN4015",
+          "title": "Gender and Translation",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN4025",
+          "title": "Legal and Government Document Translation",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN4026",
+          "title": "Literary Translation",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN4027",
+          "title": "Special Topic(s) in Translation",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN4035",
+          "title": "Translation of Scientific and Technological Texts",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN4036",
+          "title": "Translation, Publishing and Global Circulation",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN4045",
+          "title": "Intersemiotic Translation, Adaptation and Intertextuality",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN4047",
+          "title": "Translation Workshop",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN4055",
+          "title": "Comparative Topics in Chinese/Hispanic Cultures",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN4056",
+          "title": "Community Interpreting",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN4057",
+          "title": "Conference Interpreting",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN4065",
+          "title": "Translation Technology in Practice II: Advanced Applications",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN4066",
+          "title": "Placement Portfolio II",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN4067",
+          "title": "World Building: Language, Culture and Translation",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN4076",
+          "title": "Introduction to Language Technology",
+          "credits": 3,
+          "group": "Major Elective Courses · choose 8 / 24 units; at least 3 courses at Level 3 or above"
+        },
+        {
+          "code": "TRAN4888",
+          "title": "TIIS Capstone Project",
+          "credits": 3,
+          "group": "Capstone Project · both courses required / 6 units",
+          "courseType": "capstone"
+        },
+        {
+          "code": "TRAN4889",
+          "title": "TIIS Capstone Project",
+          "credits": 3,
+          "group": "Capstone Project · both courses required / 6 units",
+          "courseType": "capstone"
+        }
+      ]
+    }
+  ]
+}

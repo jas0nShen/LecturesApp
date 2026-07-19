@@ -1,0 +1,356 @@
+{
+  "provider": "CityUHK Undergraduate Catalogue and Department of Linguistics and Translation",
+  "academicYear": "2026/27",
+  "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BA1_LLA-1.htm",
+  "officialUrl": "https://lt.cityu.edu.hk/en/programmes-courses/undergraduate/ba-linguistics-and-language-applications",
+  "supplements": [
+    {
+      "universityCode": "CITYU",
+      "programmeId": "CITYU-UG-BALLA-34",
+      "jupasCode": "JS1109",
+      "majorId": "CITYU-UG-BALLA-34-M1",
+      "majorOverride": {
+        "expectedMajorIds": [
+          "CITYU-UG-BALLA-34-M1",
+          "CITYU-UG-BALLA-34-M2",
+          "CITYU-UG-BALLA-34-M3",
+          "CITYU-UG-BALLA-34-M4",
+          "CITYU-UG-BALLA-34-M5"
+        ],
+        "id": "CITYU-UG-BALLA-34-M1",
+        "code": "LINGUISTICS-AND-LANGUAGE-APPLICATIONS",
+        "nameEn": "Linguistics and Language Applications"
+      },
+      "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BA1_LLA-1.htm",
+      "officialUrl": "https://lt.cityu.edu.hk/en/programmes-courses/undergraduate/ba-linguistics-and-language-applications",
+      "courses": [
+        {
+          "code": "LT2203",
+          "title": "Language in Society",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Core · 33 credits required",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT2203.htm"
+        },
+        {
+          "code": "LT2204",
+          "title": "Language and Mind",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Core · 33 credits required",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT2204.htm"
+        },
+        {
+          "code": "LT2207",
+          "title": "Introduction to Linguistic Research",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Core · 33 credits required",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT2207.htm"
+        },
+        {
+          "code": "LT2229",
+          "title": "Fundamentals of Linguistics",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Core · 33 credits required",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT2229.htm"
+        },
+        {
+          "code": "LT2231",
+          "title": "Introduction to Language Technology",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Core · 33 credits required",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT2231.htm"
+        },
+        {
+          "code": "LT3209",
+          "title": "Morphology and Syntax",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Core · 33 credits required",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT3209.htm"
+        },
+        {
+          "code": "LT3211",
+          "title": "Semantics and Pragmatics",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Core · 33 credits required",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT3211.htm"
+        },
+        {
+          "code": "LT3212",
+          "title": "Phonetics",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Core · 33 credits required",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT3212.htm"
+        },
+        {
+          "code": "LT3214",
+          "title": "Phonology",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Core · 33 credits required",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT3214.htm"
+        },
+        {
+          "code": "LT3233",
+          "title": "Computational Linguistics",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Core · 33 credits required",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT3233.htm"
+        },
+        {
+          "code": "LT4235",
+          "title": "Project I",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Core · 33 credits required",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT4235.htm"
+        },
+        {
+          "code": "LT2232",
+          "title": "English Linguistics – Communicative Functions of Grammar",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · General Linguistics · choose 24 credits total; at least 12 credits at B4 level",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT2232.htm"
+        },
+        {
+          "code": "LT3213",
+          "title": "Text Linguistics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · General Linguistics · choose 24 credits total; at least 12 credits at B4 level",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT3213.htm"
+        },
+        {
+          "code": "LT3216",
+          "title": "Chinese Linguistics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · General Linguistics · choose 24 credits total; at least 12 credits at B4 level",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT3216.htm"
+        },
+        {
+          "code": "LT3326",
+          "title": "Comparative Study of Chinese and English",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · General Linguistics · choose 24 credits total; at least 12 credits at B4 level",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT3326.htm"
+        },
+        {
+          "code": "LT4216",
+          "title": "Advanced Topics in Linguistics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · General Linguistics · choose 24 credits total; at least 12 credits at B4 level",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT4216.htm"
+        },
+        {
+          "code": "LT4239",
+          "title": "Conversation Analysis",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · General Linguistics · choose 24 credits total; at least 12 credits at B4 level",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT4239.htm"
+        },
+        {
+          "code": "LT4240",
+          "title": "Structure and Meaning in Language",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · General Linguistics · choose 24 credits total; at least 12 credits at B4 level",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT4240.htm"
+        },
+        {
+          "code": "LT4244",
+          "title": "Sociolinguistics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · General Linguistics · choose 24 credits total; at least 12 credits at B4 level",
+          "description": "Not for students admitted to the Undergraduate plus Taught Postgraduate Degree under CityUHK Talents Programme (BALLA + MALS) who will take or have taken LT5408 Sociolinguistics.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT4244.htm"
+        },
+        {
+          "code": "LT3210",
+          "title": "Electronic Publishing",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Computational / Corpus Linguistics · choose 24 credits total; at least 12 credits at B4 level",
+          "description": "Special double-counting restrictions apply to BALLA + MDCM / TVB double-major students; see the current official curriculum.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT3210.htm"
+        },
+        {
+          "code": "LT3220",
+          "title": "Corpus Linguistics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Computational / Corpus Linguistics · choose 24 credits total; at least 12 credits at B4 level",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT3220.htm"
+        },
+        {
+          "code": "LT3224",
+          "title": "Computational Lexicography",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Computational / Corpus Linguistics · choose 24 credits total; at least 12 credits at B4 level",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT3224.htm"
+        },
+        {
+          "code": "LT4218",
+          "title": "Advanced Topics in Computational Linguistics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Computational / Corpus Linguistics · choose 24 credits total; at least 12 credits at B4 level",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT4218.htm"
+        },
+        {
+          "code": "LT4225",
+          "title": "Computer Assisted Language Learning",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Computational / Corpus Linguistics · choose 24 credits total; at least 12 credits at B4 level",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT4225.htm"
+        },
+        {
+          "code": "LT3234",
+          "title": "Language and Cognition",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Experimental Linguistics · choose 24 credits total; at least 12 credits at B4 level",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT3234.htm"
+        },
+        {
+          "code": "LT3235",
+          "title": "Experimental Approaches to Language Studies",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Experimental Linguistics · choose 24 credits total; at least 12 credits at B4 level",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT3235.htm"
+        },
+        {
+          "code": "LT4223",
+          "title": "Experimental Phonetics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Experimental Linguistics · choose 24 credits total; at least 12 credits at B4 level",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT4223.htm"
+        },
+        {
+          "code": "LT4226",
+          "title": "Second Language Acquisition",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Experimental Linguistics · choose 24 credits total; at least 12 credits at B4 level",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT4226.htm"
+        },
+        {
+          "code": "LT4227",
+          "title": "First Language Acquisition",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Experimental Linguistics · choose 24 credits total; at least 12 credits at B4 level",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT4227.htm"
+        },
+        {
+          "code": "LT4245",
+          "title": "Psycholinguistics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Experimental Linguistics · choose 24 credits total; at least 12 credits at B4 level",
+          "description": "Not for students admitted to the Undergraduate plus Taught Postgraduate Degree under CityUHK Talents Programme (BALLA + MALS) who will take or have taken LT5406 Psycholinguistics.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT4245.htm"
+        },
+        {
+          "code": "LT4255",
+          "title": "Applied Psycholinguistics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Experimental Linguistics · choose 24 credits total; at least 12 credits at B4 level",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT4255.htm"
+        },
+        {
+          "code": "LT4256",
+          "title": "Topics in Neurolinguistics and Psycholinguistics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Experimental Linguistics · choose 24 credits total; at least 12 credits at B4 level",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT4256.htm"
+        },
+        {
+          "code": "LT2206",
+          "title": "Fundamentals of Statistics for Language Sciences",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Research Methodology · choose 24 credits total; at least 12 credits at B4 level",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT2206.htm"
+        },
+        {
+          "code": "LT4243",
+          "title": "Field and Research Methods in Linguistics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Research Methodology · choose 24 credits total; at least 12 credits at B4 level",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT4243.htm"
+        },
+        {
+          "code": "LT2306",
+          "title": "Appreciating Written Texts",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Others · choose 24 credits total; at least 12 credits at B4 level",
+          "description": "Special double-counting restrictions apply to BALLA + MDCM / TVB double-major students; see the current official curriculum.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT2306.htm"
+        },
+        {
+          "code": "LT3199",
+          "title": "Professional Internship I",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Others · choose 24 credits total; at least 12 credits at B4 level",
+          "description": "Special double-counting restrictions apply to BALLA + MDCM / TVB double-major students; see the current official curriculum.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT3199.htm"
+        },
+        {
+          "code": "LT3345",
+          "title": "Discovering and Managing Terms",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Others · choose 24 credits total; at least 12 credits at B4 level",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT3345.htm"
+        },
+        {
+          "code": "LT3399",
+          "title": "LT Global Study",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Others · choose 24 credits total; at least 12 credits at B4 level",
+          "description": "Special double-counting restrictions apply to BALLA + MDCM / TVB double-major students; see the current official curriculum.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT3399.htm"
+        },
+        {
+          "code": "LT4236",
+          "title": "Project II",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Others · choose 24 credits total; at least 12 credits at B4 level",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/LT4236.htm"
+        },
+        {
+          "code": "CAI4001",
+          "title": "Start-up Technology Entrepreneur Programme I",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Others · choose 24 credits total; at least 12 credits at B4 level",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/CAI4001.htm"
+        }
+      ]
+    }
+  ]
+}

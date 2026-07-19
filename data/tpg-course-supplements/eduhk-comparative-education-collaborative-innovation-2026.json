@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "EDUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-18",
+  "programmes": [
+    {
+      "programmeId": "EDUHK-TPG-DIR-MA-CECI",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "credit points",
+      "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-comparative-education-and-collaborative-innovation",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The live official 2026-27 Programme page confirms Programme code A1M128 and a 24-credit-point award comprising four required 3-credit-point Core Courses plus one of two completion pathways. Pathway one, open to full-time and part-time students, requires four of five 3-credit-point Elective Courses. Pathway two, available only to selected full-time students, requires the 6-credit-point Capstone Project plus two of the five Elective Courses. Official EdUHK curriculum-module pages confirm every current course-code mapping and title. The selected-student eligibility condition and the two alternative combinations require manual audit review.",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Core Courses (12 credit points).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-comparative-education-and-collaborative-innovation",
+          "courses": [
+            { "code": "PFS6081", "name": "Triple Helix Model: University-Industry-Government Collaboration and Innovation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/PFS6081.html" },
+            { "code": "PFS6082", "name": "Research Methods: Comparative and Mixed Methods", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/PFS6082.html" },
+            { "code": "PFS6083", "name": "Education and Society: International and Comparative Perspectives", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/PFS6083.html" },
+            { "code": "PFS6084", "name": "Transforming Education in a Changing World: Insights from Europe and Asia", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/PFS6084.html" }
+          ]
+        },
+        {
+          "id": "elective-and-capstone-pathways",
+          "name": "Elective and Capstone Pathways",
+          "type": "elective_project",
+          "creditsRequired": 12,
+          "coursesRequired": null,
+          "ruleText": "Complete either four of the five 3-credit-point Elective Courses, or, if selected as an eligible full-time student, PFS6085 Capstone Project (6 credit points) plus two of the five Elective Courses.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-comparative-education-and-collaborative-innovation",
+          "courses": [
+            { "code": "PFS6061", "name": "Higher Education and International Development", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/PFS6061.html" },
+            { "code": "PUA6027", "name": "Technology and Innovation Policies: Development and Trend", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/PUA6027.html" },
+            { "code": "PFS6076", "name": "Entrepreneurialism and Interprofessional Learning in Higher Education", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/PFS6076.html" },
+            { "code": "ECO6002", "name": "China's Regional Economy and Hong Kong's Economic Development: Challenges and Opportunities", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/ECO6002.html" },
+            { "code": "EDA6156", "name": "Strategic Management and Planning for Edupreneurs", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/EDA6156.html" },
+            { "code": "PFS6085", "name": "Capstone Project in Comparative Education and Collaborative Innovation", "credits": 6, "courseKind": "project", "appliesToTrackIds": [], "sourceUrl": "https://www.eduhk.hk/curriculum/module/PFS6085.html" }
+          ]
+        }
+      ]
+    }
+  ]
+}

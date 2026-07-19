@@ -7,9 +7,20 @@ const vm = require('node:vm');
 const ugService = require('./ugService');
 const ugCourseShards = require('./ugCourseShards');
 
+function getIndexOnlyMajorProfile() {
+  for (const university of ugService.listUniversities()) {
+    const programmes = ugService.listProgrammes({ universityId: university.id, degreeLevel: 'undergraduate' });
+    for (const programme of programmes) {
+      const major = ugService.listMajors(programme.id).find((item) => item.codedCourseCount === 0);
+      if (major) return ugService.getMajorProfile(programme.id, major.id, programme.curriculumYear);
+    }
+  }
+  throw new Error('Expected at least one index-only undergraduate Major fixture');
+}
+
 test('runtime UG shards are registered inside their own subpackage instead of statically required by the main package', () => {
   const shardIndex = fs.readFileSync(path.join(__dirname, 'ugCourseShards.js'), 'utf8');
-  const hkuLoader = fs.readFileSync(path.join(__dirname, '..', 'subpackages', 'ug-data-hku', 'pages', 'loader', 'index.js'), 'utf8');
+  const hkuLoader = fs.readFileSync(path.join(__dirname, '..', 'subpackages', 'ug-data-hku-a', 'pages', 'loader', 'index.js'), 'utf8');
 
   assert.doesNotMatch(shardIndex, /require\(['"]\.\.\/subpackages\//);
   assert.doesNotMatch(shardIndex, /eval\s*\(/);
@@ -32,32 +43,40 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   const summary = ugService.getCatalogueSummary();
 
   assert.equal(summary.universityCount, 8);
-  assert(summary.facultyCount > 20);
-  assert(summary.programmeCount >= 445);
-  assert(summary.majorCount >= 690);
+  assert.equal(summary.facultyCount, 70);
+  assert.equal(summary.programmeCount, 445);
+  assert.equal(summary.majorCount, 684);
   assert.equal(summary.requirementCount, 4);
-  assert(summary.courseCount >= 4630);
+  assert.equal(summary.courseCount, 12442);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert(summary.codedCourseCount >= 7396);
-  assert(summary.programmeWithCoursesCount >= 110);
-  assert(summary.pendingProgrammeCount <= 334);
+  assert.equal(summary.codedCourseCount, 12428);
+  assert.equal(summary.programmeWithCoursesCount, 177);
+  assert.equal(summary.pendingProgrammeCount, 267);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
-  assert(summary.coveragePercent >= 25);
+  assert.equal(summary.coveragePercent, 40);
   assert.match(summary.generatedAt, /^\d{4}-\d{2}-\d{2}T/);
   assert.match(summary.generatedDate, /^\d{4}-\d{2}-\d{2}$/);
 });
 
-test('split CityU and PolyU course shards aggregate through their stable university keys', () => {
+test('split CityU, HKBU, HKU and PolyU course shards aggregate through their stable university keys', () => {
   const cityuCourses = ugCourseShards.getCoursesByUniversityCode('CITYU');
+  const hkbuCourses = ugCourseShards.getCoursesByUniversityCode('HKBU');
+  const hkuCourses = ugCourseShards.getCoursesByUniversityCode('HKU');
   const polyuCourses = ugCourseShards.getCoursesByUniversityCode('POLYU');
 
   assert(cityuCourses.length > 1000);
+  assert(hkbuCourses.length > 1000);
+  assert(hkuCourses.length > 1000);
   assert(polyuCourses.length > 1000);
   assert.equal(ugCourseShards.getCourseCount('CITYU'), cityuCourses.length);
+  assert.equal(ugCourseShards.getCourseCount('HKBU'), hkbuCourses.length);
+  assert.equal(ugCourseShards.getCourseCount('HKU'), hkuCourses.length);
   assert.equal(ugCourseShards.getCourseCount('POLYU'), polyuCourses.length);
   ['CS2115', 'GE2401'].forEach((courseCode) => assert(cityuCourses.some((course) => course.courseCode === courseCode)));
+  ['ACCT1005', 'DIFH4899'].forEach((courseCode) => assert(hkbuCourses.some((course) => course.courseCode === courseCode)));
+  ['COMP1117', 'LLAW1001'].forEach((courseCode) => assert(hkuCourses.some((course) => course.courseCode === courseCode)));
   ['COMP1004', 'ME39003'].forEach((courseCode) => assert(polyuCourses.some((course) => course.courseCode === courseCode)));
 });
 
@@ -149,6 +168,79 @@ test('CUHK History exposes the verified 2025/26 required and capstone courses', 
   assert(courses.some((course) => course.courseCode === 'HIST1001' && course.courseType === 'core'));
   assert(courses.some((course) => course.courseCode === 'HIST4812' && course.courseType === 'capstone' && course.credits === 5));
   assert(ugService.listMajorCourses(history.id, major.id, { keyword: 'Western History' }).some((course) => course.courseCode === 'HIST1002'));
+});
+
+test('CUHK Human Movement Science and Health Studies exposes its official course pool without hiding the source conflict', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.jupasCode === 'JS4320');
+  const major = ugService.listMajors(programme.id).find((item) => item.nameEn === 'Human Movement Science and Health Studies');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const adapted = courses.find((course) => course.courseCode === 'SPED3910');
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 24);
+  assert.equal(courses.length, 24);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 24);
+  assert.equal(courses.filter((course) => course.courseType === 'core').length, 15);
+  assert.equal(courses.filter((course) => course.courseType === 'major_elective').length, 7);
+  assert(courses.some((course) => course.courseCode === 'SPED4201' && course.courseType === 'internship' && course.credits === 2));
+  assert(courses.some((course) => course.courseCode === 'SPED4900' && course.courseType === 'capstone'));
+  assert(courses.every((course) => course.recommendedYear === 0 && course.semester === ''));
+  assert(adapted.requirementGroups.some((group) => group.includes('also listed in the official Health Studies elective pool')));
+  assert.match(adapted.description, /Official source conflict/);
+  assert.equal(programme.courseSourceUrl, 'https://spe.cuhk.edu.hk/programmes/bachelor-of-science-in-human-movement-science-and-health-studies-js4320/');
+});
+
+test('CUHK Exercise Science and Health Education exposes only the current Programme A requirement pool', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'ESHEN');
+  const major = ugService.listMajors(programme.id).find((item) => item.nameEn === 'Exercise Science and Health Education');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 28);
+  assert.equal(courses.length, 28);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 28);
+  assert(courses.some((course) => course.courseCode === 'PHPC1001' && course.credits === 2 && course.courseType === 'core'));
+  assert(courses.some((course) => course.courseCode === 'SPED2141' && course.credits === 1));
+  assert(courses.some((course) => course.courseCode === 'SPED4201' && course.courseType === 'internship' && course.credits === 2));
+  assert(courses.some((course) => course.courseCode === 'SPED4900' && course.courseType === 'capstone'));
+  assert(courses.some((course) => course.courseCode === 'PHPC2007' && course.courseType === 'major_elective'));
+  ['SPED2050', 'SPED2122', 'PHPC2009'].forEach((courseCode) => {
+    assert.equal(courses.some((course) => course.courseCode === courseCode), false);
+  });
+  assert(courses.every((course) => course.recommendedYear === 0 && course.semester === ''));
+  assert.equal(programme.courseSourceUrl, 'https://spe.cuhk.edu.hk/programmes/bachelor-of-science-in-exercise-science-and-health-education/');
+});
+
+test('CUHK Physical Education, Exercise Science and Health exposes the 2026-27 Programme A study scheme', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.jupasCode === 'JS4329');
+  const major = ugService.listMajors(programme.id).find((item) => item.nameEn === 'Physical Education, Exercise Science and Health');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 52);
+  assert.equal(courses.length, 52);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 52);
+  assert.equal(courses.filter((course) => course.courseType === 'core').length, 39);
+  assert.equal(courses.filter((course) => course.courseType === 'major_elective').length, 11);
+  assert(courses.some((course) => course.courseCode === 'PHPC1001' && course.credits === 2 && course.courseType === 'core'));
+  assert(courses.some((course) => course.courseCode === 'SPED3400' && course.credits === 4 && /SPED3201/.test(course.description)));
+  assert(courses.some((course) => course.courseCode === 'SPED4400' && course.credits === 4 && /SPED2201/.test(course.description)));
+  assert(courses.some((course) => course.courseCode === 'SPED4201' && course.courseType === 'internship' && course.credits === 2));
+  assert(courses.some((course) => course.courseCode === 'SPED4900' && course.courseType === 'capstone'));
+  ['SPED3201', 'SPED2201'].forEach((historicalCode) => {
+    assert.equal(courses.some((course) => course.courseCode === historicalCode), false);
+  });
+  assert(courses.every((course) => course.recommendedYear === 0 && course.semester === ''));
+  assert.equal(programme.courseSourceUrl, 'https://spe.cuhk.edu.hk/programmes/bachelor-of-education-in-physical-education-exercise-science-and-health-js4329/');
 });
 
 test('HKUST Aerospace Engineering exposes the verified 2025/26 major core', () => {
@@ -420,7 +512,7 @@ test('UG per-school coverage stays visible for setup validation', () => {
     Object.fromEntries(Object.entries(coverage).map(([code, item]) => [code, [item.programmeCount, item.majorCount]])),
     {
       HKU: [137, 137], CUHK: [84, 84], HKUST: [50, 64], POLYU: [46, 110],
-      CITYU: [58, 201], HKBU: [22, 46], EDUHK: [25, 25], LINGNAN: [23, 23]
+      CITYU: [58, 194], HKBU: [22, 47], EDUHK: [25, 25], LINGNAN: [23, 23]
     }
   );
   assert(coverage.HKU.codedCourseCount >= 1842);
@@ -433,16 +525,17 @@ test('UG school coverage summarizes imported source data for the status page', (
   const coverage = ugService.getSchoolCoverage();
   const hku = coverage.find((school) => school.code === 'HKU');
   const cityu = coverage.find((school) => school.code === 'CITYU');
+  const hkbu = coverage.find((school) => school.code === 'HKBU');
   const lingnan = coverage.find((school) => school.code === 'LINGNAN');
   const polyu = coverage.find((school) => school.code === 'POLYU');
 
   assert.equal(coverage.length, 8);
   assert.equal(hku.programmeCount, 136);
   assert.equal(hku.majorCount, 136);
-  assert.equal(hku.programmeWithCoursesCount, 30);
-  assert.equal(hku.pendingProgrammeCount, 106);
-  assert.equal(hku.coveragePercent, 22);
-  assert.equal(hku.codedCourseCount, 1842);
+  assert.equal(hku.programmeWithCoursesCount, 41);
+  assert.equal(hku.pendingProgrammeCount, 95);
+  assert.equal(hku.coveragePercent, 30);
+  assert.equal(hku.codedCourseCount, 2648);
   assert.match(hku.generatedDate, /^\d{4}-\d{2}-\d{2}$/);
   assert.match(hku.updatedLabel, /^更新于 \d{4}-\d{2}-\d{2}$/);
   assert.equal(hku.badge, 'COURSES');
@@ -460,11 +553,16 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert.equal(polyu.codedCourseCount, 2472);
   assert.equal(polyu.badge, 'COURSES');
   assert.equal(polyu.sourceReadiness.indexOnly, polyu.pendingProgrammeCount);
-  assert(cityu.programmeWithCoursesCount >= 26);
-  assert(cityu.pendingProgrammeCount <= 32);
-  assert(cityu.coveragePercent >= 45);
-  assert(cityu.codedCourseCount >= 2109);
+  assert.equal(cityu.programmeWithCoursesCount, 35);
+  assert.equal(cityu.pendingProgrammeCount, 23);
+  assert.equal(cityu.coveragePercent, 60);
+  assert.equal(cityu.codedCourseCount, 2609);
   assert.equal(cityu.badge, 'COURSES');
+  assert.equal(hkbu.programmeWithCoursesCount, 21);
+  assert.equal(hkbu.pendingProgrammeCount, 1);
+  assert.equal(hkbu.coveragePercent, 95);
+  assert.equal(hkbu.codedCourseCount, 2650);
+  assert.equal(hkbu.badge, 'COURSES');
   assert.equal(lingnan.programmeWithCoursesCount, 23);
   assert.equal(lingnan.pendingProgrammeCount, 0);
   assert.equal(lingnan.coveragePercent, 100);
@@ -1143,6 +1241,262 @@ test('HKU Computing and Data Science catalogue profiles expose official course o
   assert(machineLearning.some((course) => course.courseCode === 'COMP3314'));
 });
 
+test('HKU Data and Systems Engineering exposes the 2025-26 and thereafter coded curriculum', () => {
+  const hku = ugService.listUniversities().find((item) => item.code === 'HKU');
+  const programmes = ugService.listProgrammes({ universityId: hku.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === '6315');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'HKU-UG-6315-35-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2025-26');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byType = (courseType) => courses.filter((course) => course.courseType === courseType);
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(programme.codedCourseCount, 60);
+  assert.equal(profile.codedCourseCount, 60);
+  assert.equal(courses.length, 60);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 60);
+  assert.equal(byType('core').length, 25);
+  assert.equal(byType('major_elective').length, 33);
+  assert.equal(byType('internship').length, 1);
+  assert.equal(byType('capstone').length, 1);
+  ['AILTXXXX', 'CC##XXXX', 'DASE3134', 'DASE4135'].forEach((courseCode) => {
+    assert.equal(courses.some((course) => course.courseCode === courseCode), false);
+  });
+  assert(courses.some((course) => course.courseCode === 'DASE3229' && course.credits === 0 && course.recommendedYear === 3));
+  assert(courses.some((course) => (
+    course.courseCode === 'DASE4174'
+    && course.credits === 12
+    && course.recommendedYear === 4
+    && course.semester === 'Semester 1 / Semester 2'
+  )));
+  assert.equal(programme.courseSourceUrl, 'https://www.dase.hku.hk/f/page/1011/4804/Syllabus_BEng(DASE)_2025-26_4Y.pdf');
+});
+
+test('HKU Mechanical Engineering preserves conditional and zero-credit training boundaries', () => {
+  const hku = ugService.listUniversities().find((item) => item.code === 'HKU');
+  const programmes = ugService.listProgrammes({ universityId: hku.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === '6339');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'HKU-UG-6339-36-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2025-26');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byType = (courseType) => courses.filter((course) => course.courseType === courseType);
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(programme.codedCourseCount, 60);
+  assert.equal(profile.codedCourseCount, 60);
+  assert.equal(courses.length, 60);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 60);
+  assert.equal(byType('core').length, 24);
+  assert.equal(byType('elective').length, 1);
+  assert.equal(byType('major_elective').length, 32);
+  assert.equal(byType('internship').length, 2);
+  assert.equal(byType('capstone').length, 1);
+  ['CC##XXXX', 'AILTXXXX', 'ELEC4149', 'BMED3600', 'ELEC3347', 'ENGG1320', 'ENGG1340', 'ENGG1350'].forEach((courseCode) => {
+    assert.equal(courses.some((course) => course.courseCode === courseCode), false);
+  });
+  assert(courses.some((course) => (
+    course.courseCode === 'ENGG1200'
+    && course.courseType === 'elective'
+    && course.requirementGroups.some((group) => group.includes('without HKDSE Physics'))
+  )));
+  assert(courses.some((course) => (
+    course.courseCode === 'MECH2418'
+    && course.credits === 6
+    && course.semester === 'Summer Semester'
+  )));
+  assert(courses.some((course) => (
+    course.courseCode === 'MECH3432'
+    && course.credits === 0
+    && course.courseType === 'internship'
+    && course.requirementGroups.some((group) => group.includes('not counted toward the 36-credit elective minimum'))
+  )));
+  assert(courses.some((course) => course.courseCode === 'MECH4429' && course.credits === 12 && course.courseType === 'capstone'));
+  assert.equal(programme.courseSourceUrl, 'https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(ME)_2025-26.pdf');
+});
+
+test('HKU Civil Engineering exposes the closed 2025-26 and thereafter curriculum', () => {
+  const hku = ugService.listUniversities().find((item) => item.code === 'HKU');
+  const programmes = ugService.listProgrammes({ universityId: hku.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === '6353');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'HKU-UG-6353-37-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2025-26');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byType = (courseType) => courses.filter((course) => course.courseType === courseType);
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(programme.codedCourseCount, 57);
+  assert.equal(profile.codedCourseCount, 57);
+  assert.equal(courses.length, 57);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 57);
+  assert.equal(byType('core').length, 24);
+  assert.equal(byType('major_elective').length, 31);
+  assert.equal(byType('internship').length, 1);
+  assert.equal(byType('capstone').length, 1);
+  ['CC##XXXX', 'AILTXXXX', 'ENGG1200', 'IMSE2102', 'GEOG2090', 'URBS1005'].forEach((courseCode) => {
+    assert.equal(courses.some((course) => course.courseCode === courseCode), false);
+  });
+  assert(courses.some((course) => (
+    course.courseCode === 'CIVL2114'
+    && course.credits === 0
+    && course.courseType === 'internship'
+    && course.recommendedYear === 3
+  )));
+  assert(courses.some((course) => (
+    course.courseCode === 'CIVL4101'
+    && course.credits === 6
+    && course.courseType === 'core'
+    && course.recommendedYear === 4
+  )));
+  assert(courses.some((course) => (
+    course.courseCode === 'CIVL4102'
+    && course.credits === 12
+    && course.courseType === 'capstone'
+    && course.recommendedYear === 4
+  )));
+  assert(courses.some((course) => course.courseCode === 'CIVL3141' && course.courseType === 'major_elective'));
+  assert.equal(programme.courseSourceUrl, 'https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CivE)_2025-26.pdf');
+});
+
+test('HKU Early Childhood Education and Special Education preserves the official coded curriculum boundaries', () => {
+  const hku = ugService.listUniversities().find((item) => item.code === 'HKU');
+  const programmes = ugService.listProgrammes({ universityId: hku.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === '6092');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'HKU-UG-6092-23-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2025-26');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byType = (courseType) => courses.filter((course) => course.courseType === courseType);
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(programme.codedCourseCount, 47);
+  assert.equal(profile.codedCourseCount, 47);
+  assert.equal(courses.length, 47);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 47);
+  assert.equal(byType('core').length, 29);
+  assert.equal(byType('major_elective').length, 15);
+  assert.equal(byType('internship').length, 3);
+  assert.equal(byType('capstone').length, 0);
+  ['CC##XXXX', 'AILTXXXX'].forEach((courseCode) => {
+    assert.equal(courses.some((course) => course.courseCode === courseCode), false);
+  });
+  assert(courses.some((course) => (
+    course.courseCode === 'BECE2401'
+    && course.credits === 12
+    && course.recommendedYear === 2
+    && course.courseType === 'internship'
+    && course.requirementGroups.some((group) => group.includes('Official Capstone Experience'))
+  )));
+  assert(courses.some((course) => (
+    course.courseCode === 'BECE4401'
+    && course.credits === 24
+    && course.recommendedYear === 4
+    && course.courseType === 'internship'
+  )));
+  assert(courses.some((course) => (
+    course.courseCode === 'BECE5401'
+    && course.credits === 30
+    && course.recommendedYear === 5
+    && course.courseType === 'internship'
+  )));
+  assert(courses.some((course) => (
+    course.courseCode === 'BECE5999'
+    && course.credits === 18
+    && course.recommendedYear === 5
+    && course.courseType === 'core'
+    && course.requirementGroups.some((group) => group.includes('Project'))
+  )));
+  assert(courses.some((course) => (
+    course.courseCode === 'BECE6001'
+    && course.titleEn === 'Supporting Children with Autism Spectrum Disorder'
+    && course.recommendedYear === 4
+    && course.courseType === 'major_elective'
+  )));
+  assert(courses.some((course) => course.courseCode === 'CAES1001' && course.credits === 0 && course.recommendedYear === 1));
+  assert(courses.some((course) => course.courseCode === 'CAES9430' && course.recommendedYear === 3));
+  assert(courses.some((course) => course.courseCode === 'CEDU9003' && course.recommendedYear === 2 && course.courseType === 'core'));
+  assert(courses.some((course) => course.courseCode === 'CUND9004' && course.recommendedYear === 2 && course.courseType === 'major_elective'));
+  assert(courses.every((course) => !course.semester));
+  assert.equal(
+    programme.courseSourceUrl,
+    'https://www4.hku.hk/pubunit/drcd/files/ugdr2025-26/Education/BEd(ECE%26SE).pdf'
+  );
+});
+
+test('HKU Language Education English exposes the currently published coded pool without treating open electives as closed', () => {
+  const hku = ugService.listUniversities().find((item) => item.code === 'HKU');
+  const programmes = ugService.listProgrammes({ universityId: hku.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === '6066');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'HKU-UG-6066-20-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2025-26');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byType = (courseType) => courses.filter((course) => course.courseType === courseType);
+  const cppOptions = courses.filter((course) => (
+    course.requirementGroups.some((group) => group.includes('Current Published CPP Option'))
+  ));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(programme.codedCourseCount, 210);
+  assert.equal(profile.codedCourseCount, 210);
+  assert.equal(courses.length, 210);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 210);
+  assert.equal(byType('core').length, 17);
+  assert.equal(byType('major_elective').length, 174);
+  assert.equal(byType('internship').length, 19);
+  assert.equal(byType('capstone').length, 0);
+  assert.equal(cppOptions.length, 16);
+  assert(cppOptions.every((course) => (
+    course.requirementGroups.some((group) => group.includes('pool may change; not guaranteed annually'))
+  )));
+  ['CC##XXXX', 'AILTXXXX', 'CEDU9004', 'BBED6721', 'BBED6730', 'BBED6732', 'BBED6782'].forEach((courseCode) => {
+    assert.equal(courses.some((course) => course.courseCode === courseCode), false);
+  });
+  assert(courses.some((course) => (
+    course.courseCode === 'LING1000'
+    && course.credits === 6
+    && course.recommendedYear === 1
+    && course.courseType === 'core'
+  )));
+  assert(courses.some((course) => (
+    course.courseCode === 'ENGL1040'
+    && course.titleEn === 'Literary rewriting'
+    && course.courseType === 'major_elective'
+  )));
+  assert(courses.some((course) => (
+    course.courseCode === 'ENGL2163'
+    && course.titleEn === 'Comics, graphic novel and theory'
+    && course.requirementGroups.some((group) => group.includes('Advanced Elective Pool'))
+  )));
+  assert(courses.some((course) => (
+    course.courseCode === 'BBED2521'
+    && course.recommendedYear === 2
+    && course.semester === 'Summer Semester'
+    && course.courseType === 'internship'
+  )));
+  assert(courses.some((course) => (
+    course.courseCode === 'BBED4422'
+    && course.credits === 12
+    && course.recommendedYear === 4
+    && course.semester === 'Semester 1'
+    && course.courseType === 'internship'
+    && course.requirementGroups.some((group) => group.includes('Official Capstone Experience'))
+  )));
+  assert(courses.some((course) => (
+    course.courseCode === 'BBED5422'
+    && course.credits === 12
+    && course.recommendedYear === 5
+    && course.semester === 'Semester 2'
+    && course.courseType === 'internship'
+  )));
+  assert(courses.some((course) => course.courseCode === 'CAES1001' && course.credits === 0 && course.recommendedYear === 1));
+  assert(courses.some((course) => course.courseCode === 'CAES9423' && course.recommendedYear === 2));
+  assert(courses.some((course) => course.courseCode === 'CEDU9002' && course.recommendedYear === 5 && course.courseType === 'core'));
+  assert(courses.some((course) => course.courseCode === 'CUND9004' && course.recommendedYear === 5 && course.courseType === 'major_elective'));
+  assert.equal(courses.filter((course) => course.semester).length, 3);
+  assert.equal(
+    programme.courseSourceUrl,
+    'https://www4.hku.hk/pubunit/drcd/files/ugdr2025-26/Education/BA%26BEd(LangEd).pdf'
+  );
+});
+
 test('UG major profile groups requirements with traceable courses and sources', () => {
   const profile = ugService.getMajorProfile(1, 1, '2025-26');
   const capstone = profile.requirementGroups.find((group) => group.type === 'capstone');
@@ -1188,9 +1542,7 @@ test('UG catalogue courses can be resolved by their stable card id', () => {
 test('imported UG programme profiles preserve source status without faking course rules', () => {
   const hku = ugService.listUniversities().find((item) => item.code === 'HKU');
   const programmes = ugService.listProgrammes({ universityId: hku.id, degreeLevel: 'undergraduate' });
-  const hkuArts = programmes.find((programme) => programme.code === '6066');
-  const major = ugService.listMajors(hkuArts.id)[0];
-  const profile = ugService.getMajorProfile(hkuArts.id, major.id, '2026');
+  const profile = getIndexOnlyMajorProfile();
 
   assert.equal(programmes.filter((programme) => typeof programme.id === 'string').length, 136);
   assert.equal(profile.sourceStatus, 'programme_summary_only');
@@ -1796,6 +2148,27 @@ test('HKU Architectural Studies exposes official BA(AS) timetable courses', () =
   assert(ugService.listMajorCourses(architecture.id, major.id, { keyword: 'Building Technology' }).some((course) => course.courseCode === 'ARCH2056'));
 });
 
+test('HKU Bachelor of Laws exposes verified professional, capstone and designated elective courses', () => {
+  const hku = ugService.listUniversities().find((item) => item.code === 'HKU');
+  const programmes = ugService.listProgrammes({ universityId: hku.id, degreeLevel: 'undergraduate' });
+  const llb = programmes.find((programme) => programme.code === '6406');
+  const major = ugService.listMajors(llb.id).find((item) => item.nameEn === 'Bachelor of Laws');
+  const profile = ugService.getMajorProfile(llb.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(llb.id, major.id);
+
+  assert.equal(llb.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 39);
+  assert.equal(courses.length, 39);
+  assert.equal(courses.filter((course) => course.courseType === 'core').length, 18);
+  assert.equal(courses.filter((course) => course.courseType === 'capstone').length, 9);
+  assert.equal(courses.filter((course) => course.courseType === 'major_elective').length, 12);
+  assert(courses.some((course) => course.courseCode === 'LLAW1001' && course.recommendedYear === 1 && course.credits === 6));
+  assert(courses.some((course) => course.courseCode === 'LLAW3093' && course.recommendedYear === 2));
+  assert(courses.some((course) => course.courseCode === 'LLAW3280' && course.recommendedYear === 0 && course.courseType === 'capstone'));
+  assert(courses.some((course) => course.courseCode === 'LLAW3282' && course.requirementGroups.includes('Years 3–4 combined · designated disciplinary elective alternative')));
+  assert.equal(llb.courseSourceUrl, 'https://dm.law.hku.hk/wp-content/uploads/LLB_regulations_syllabus_2025-26.pdf');
+});
+
 test('HKU Surveying and Urban Studies expose official syllabus courses', () => {
   const hku = ugService.listUniversities().find((item) => item.code === 'HKU');
   const programmes = ugService.listProgrammes({ universityId: hku.id, degreeLevel: 'undergraduate' });
@@ -2137,6 +2510,1031 @@ test('HKU Translation exposes official BA syllabus courses', () => {
   assert(ugService.listMajorCourses(translation.id, major.id, { keyword: 'translation technologies' }).some((course) => course.courseCode === 'CHIN2373'));
   assert(ugService.listMajorCourses(translation.id, major.id, { keyword: 'legal interpreting' }).some((course) => course.courseCode === 'CHIN2343'));
   assert(ugService.listMajorCourses(translation.id, major.id, { keyword: 'Journey to the West' }).some((course) => course.courseCode === 'CHIN2377'));
+});
+
+test('CUHK Pharmacy exposes the official attendance-year curriculum and alternative final-year paths', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const pharmacy = programmes.find((programme) => programme.jupasCode === 'JS4525');
+  const major = ugService.listMajors(pharmacy.id).find((item) => item.nameEn === 'Pharmacy');
+  const profile = ugService.getMajorProfile(pharmacy.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(pharmacy.id, major.id);
+
+  assert.equal(pharmacy.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 57);
+  assert.equal(courses.length, 57);
+  ['MEDF1011', 'PHAR2710', 'PHAR2711', 'PHAR2018', 'PHAR4911', 'PHAR4912', 'PHAR4201', 'PHAR4301', 'PHAR4901'].forEach((courseCode) => {
+    assert(courses.some((course) => course.courseCode === courseCode));
+  });
+  assert(courses.some((course) => course.courseCode === 'MEDF1011' && course.recommendedYear === 1 && course.courseType === 'core'));
+  assert(courses.some((course) => course.courseCode === 'PHAR2018' && course.recommendedYear === 3 && course.semester === 'Summer'));
+  assert(courses.some((course) => course.courseCode === 'PHAR4911' && course.credits === 0 && course.courseType === 'capstone'));
+  assert(courses.some((course) => course.courseCode === 'PHAR4912' && course.credits === 6 && course.courseType === 'capstone'));
+  assert(courses.some((course) => course.courseCode === 'PHAR4201' && course.courseType === 'internship'));
+  assert(courses.some((course) => course.courseCode === 'PHAR4901' && course.requirementGroups.some((group) => group.includes('choose one Clerkship option'))));
+});
+
+test('CUHK Electronic Engineering exposes the official 2025-26 standard four-year curriculum', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const electronicEngineering = programmes.find((programme) => programme.jupasCode === 'JS4434');
+  const major = ugService.listMajors(electronicEngineering.id).find((item) => item.nameEn === 'Electronic Engineering');
+  const profile = ugService.getMajorProfile(electronicEngineering.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(electronicEngineering.id, major.id);
+
+  assert.equal(electronicEngineering.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 79);
+  assert.equal(courses.length, 79);
+  ['ENGG1110', 'ESTR1002', 'ENGG1111', 'ELEG2602', 'ELEG4998', 'ELEG4999', 'ELEG3910', 'SEEM2440', 'ESTR2500', 'DOTE1030'].forEach((courseCode) => {
+    assert(courses.some((course) => course.courseCode === courseCode));
+  });
+  assert(!courses.some((course) => course.courseCode === 'ENGG1040'));
+  assert(courses.some((course) => course.courseCode === 'ENGG1111' && course.credits === 0 && course.recommendedYear === 1));
+  assert(courses.some((course) => course.courseCode === 'ELEG2602' && course.semester === 'Summer'));
+  assert(courses.some((course) => course.courseCode === 'ELEG4999' && course.recommendedYear === 4 && course.semester === 'Term 2' && course.courseType === 'capstone'));
+  assert(courses.some((course) => course.courseCode === 'DOTE1030' && course.recommendedYear === 0 && course.requirementGroups.some((group) => group.includes('choose one of SEEM2440'))));
+});
+
+test('CUHK Mechanical and Automation Engineering exposes the complete 2026-27 major course list', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const mechanical = programmes.find((programme) => programme.jupasCode === 'JS4408');
+  const major = ugService.listMajors(mechanical.id).find((item) => item.nameEn === 'Mechanical and Automation Engineering');
+  const profile = ugService.getMajorProfile(mechanical.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(mechanical.id, major.id);
+
+  assert.equal(mechanical.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 104);
+  assert.equal(courses.length, 104);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 104);
+  assert.equal(courses.filter((course) => course.requirementGroups.some((group) => group.includes('Faculty Package'))).length, 7);
+  assert.equal(courses.filter((course) => course.requirementGroups.some((group) => group.includes('Foundation Courses'))).length, 8);
+  assert.equal(courses.filter((course) => course.requirementGroups.some((group) => group.includes('Major Required Courses'))).length, 18);
+  assert.equal(courses.filter((course) => course.courseType === 'capstone').length, 4);
+  assert.equal(courses.filter((course) => course.requirementGroups.some((group) => group.includes('Breadth pool'))).length, 37);
+  assert.equal(courses.filter((course) => course.requirementGroups.some((group) => group.includes('Depth pool'))).length, 30);
+  ['ENGG1110', 'ESTR1002', 'ENGG1111', 'MAEG2602', 'MAEG4998', 'MAEG4999', 'ESTR4998', 'ESTR4999', 'SEEM2440', 'ESTR2500', 'DOTE1030'].forEach((courseCode) => {
+    assert(courses.some((course) => course.courseCode === courseCode));
+  });
+  ['ENGG1040', 'PHYS1003', 'EEEN4030', 'ESTR4404'].forEach((courseCode) => {
+    assert(!courses.some((course) => course.courseCode === courseCode));
+  });
+  assert(courses.some((course) => course.courseCode === 'ENGG1111' && course.credits === 0 && course.recommendedYear === 1));
+  assert(courses.some((course) => course.courseCode === 'PHYS1110' && course.recommendedYear === 1 && course.semester === ''));
+  assert(courses.some((course) => course.courseCode === 'MAEG2602' && course.recommendedYear === 2 && course.semester === 'Summer'));
+  assert(courses.some((course) => course.courseCode === 'MAEG4999' && course.recommendedYear === 4 && course.semester === 'Term 2'));
+  assert(courses.some((course) => course.courseCode === 'ESTR4999' && course.recommendedYear === 0 && course.semester === ''));
+});
+
+test('HKUST Mathematics exposes all explicitly named 2025-26 Track courses without fabricating open pools', () => {
+  const hkust = ugService.listUniversities().find((item) => item.code === 'HKUST');
+  const programmes = ugService.listProgrammes({ universityId: hkust.id, degreeLevel: 'undergraduate' });
+  const mathematics = programmes.find((programme) => programme.nameEn === 'BSc in Mathematics');
+  const major = ugService.listMajors(mathematics.id).find((item) => item.nameEn === 'BSc in Mathematics');
+  const profile = ugService.getMajorProfile(mathematics.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(mathematics.id, major.id);
+
+  assert.equal(mathematics.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 85);
+  assert.equal(courses.length, 85);
+  ['MATH1013', 'MATH2043', 'MATH2431', 'MATH4991', 'MATH4999', 'COMP2012H', 'COMP3711H', 'SCIE3500', 'SCIE4500'].forEach((courseCode) => {
+    assert(courses.some((course) => course.courseCode === courseCode));
+  });
+  assert(!courses.some((course) => course.courseCode === 'MATH4333'));
+  assert(courses.some((course) => course.courseCode === 'MATH4823' && course.credits === 0 && /1-4 variable credits/.test(course.description)));
+  assert(courses.some((course) => course.courseCode === 'MATH4991' && course.recommendedYear === 4 && course.courseType === 'capstone'));
+  assert(courses.some((course) => course.courseCode === 'SCIE4500' && course.recommendedYear === 0 && course.courseType === 'capstone'));
+});
+
+test('HKUST Chemistry preserves the 2025-26 Track and Option course roles and variable internship credit', () => {
+  const hkust = ugService.listUniversities().find((item) => item.code === 'HKUST');
+  const programmes = ugService.listProgrammes({ universityId: hkust.id, degreeLevel: 'undergraduate' });
+  const chemistry = programmes.find((programme) => programme.nameEn === 'BSc in Chemistry');
+  const major = ugService.listMajors(chemistry.id).find((item) => item.nameEn === 'BSc in Chemistry');
+  const profile = ugService.getMajorProfile(chemistry.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(chemistry.id, major.id);
+
+  assert.equal(chemistry.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 57);
+  assert.equal(courses.length, 57);
+  ['CHEM1011', 'CHEM2401', 'CHEM2410', 'CHEM3420', 'CHEM4350', 'CHEM4250', 'CHEM4550', 'CHEM4430', 'SCIE3500', 'SCIE4500'].forEach((courseCode) => {
+    assert(courses.some((course) => course.courseCode === courseCode));
+  });
+  assert(courses.some((course) => course.courseCode === 'CHEM2410' && course.credits === 3));
+  assert(courses.some((course) => course.courseCode === 'CHEM3610' && course.credits === 0 && /2-3 variable credits/.test(course.description)));
+  assert(courses.some((course) => course.courseCode === 'CHEM4430' && course.requirementGroups.some((group) => group.includes('IRE Required'))));
+  assert(courses.some((course) => course.courseCode === 'CHEM4692' && course.courseType === 'capstone'));
+});
+
+test('HKUST Physics uses the fixed 2025-26 curriculum without importing the later AI Option', () => {
+  const hkust = ugService.listUniversities().find((item) => item.code === 'HKUST');
+  const programmes = ugService.listProgrammes({ universityId: hkust.id, degreeLevel: 'undergraduate' });
+  const physics = programmes.find((programme) => programme.nameEn === 'BSc in Physics');
+  const major = ugService.listMajors(physics.id).find((item) => item.nameEn === 'BSc in Physics');
+  const profile = ugService.getMajorProfile(physics.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(physics.id, major.id);
+
+  assert.equal(physics.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 56);
+  assert.equal(courses.length, 56);
+  ['PHYS1111', 'PHYS3053', 'PHYS3031', 'PHYS3090', 'PHYS4291', 'PHYS4813', 'MATH4223', 'SCIE3500', 'SCIE4500'].forEach((courseCode) => {
+    assert(courses.some((course) => course.courseCode === courseCode));
+  });
+  ['PHYS3243', 'PHYS3245', 'PHYS4245', 'COMP1021', 'COMP1028'].forEach((courseCode) => {
+    assert(!courses.some((course) => course.courseCode === courseCode));
+  });
+  assert(courses.some((course) => course.courseCode === 'PHYS2021' && /Major PDF/.test(course.description)));
+  assert(courses.some((course) => course.courseCode === 'PHYS4813' && course.credits === 1));
+  assert(courses.every((course) => course.recommendedYear === 0 && course.semester === ''));
+});
+
+test('HKU Global Creative Industries exposes the pending 2026-27 official syllabus without closing open pools', () => {
+  const hku = ugService.listUniversities().find((item) => item.code === 'HKU');
+  const programmes = ugService.listProgrammes({ universityId: hku.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === '6274');
+  const major = ugService.listMajors(programme.id).find((item) => item.nameEn === 'Bachelor of Arts in Global Creative Industries');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 98);
+  assert.equal(courses.length, 98);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 98);
+  ['SOFM1001', 'SOFM2003', 'SOFM3001', 'SOFM4001', 'SOFM4002', 'GCIN2105', 'SOCI2055', 'GLAS2101', 'AILT1001', 'CAES1001'].forEach((courseCode) => {
+    assert(courses.some((course) => course.courseCode === courseCode));
+  });
+  ['GCIN1001', 'GCIN4001', 'FOSS2018', 'MUSI2079'].forEach((courseCode) => {
+    assert(!courses.some((course) => course.courseCode === courseCode));
+  });
+  assert(courses.some((course) => course.courseCode === 'CAES1001' && course.credits === 0 && course.recommendedYear === 1));
+  assert(courses.some((course) => course.courseCode === 'SOFM2003' && course.courseType === 'internship' && course.recommendedYear === 2));
+  assert(courses.some((course) => course.courseCode === 'SOFM4002' && course.courseType === 'capstone' && course.recommendedYear === 4));
+  assert(courses.some((course) => course.courseCode === 'GCIN2105' && /MUSI2079/.test(course.description)));
+  assert(courses.some((course) => course.courseCode === 'SOCI2055' && course.requirementGroups.some((group) => group.includes('Film & Media Communications / Visual Arts'))));
+  assert(courses.filter((course) => course.courseType === 'major_elective').every((course) => course.semester === ''));
+});
+
+test('HKU Humanities and Digital Technologies exposes the pending 2026-27 coded curriculum without inventing open focus pools', () => {
+  const hku = ugService.listUniversities().find((item) => item.code === 'HKU');
+  const programmes = ugService.listProgrammes({ universityId: hku.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === '6286');
+  const major = ugService.listMajors(programme.id).find((item) => item.nameEn === 'Bachelor of Arts in Humanities and Digital Technologies');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 80);
+  assert.equal(courses.length, 80);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 80);
+  ['HUDT1001', 'HUDT1002', 'HUDT2001', 'HUDT2002', 'HUDT3002', 'HUDT3100', 'HUDT4001', 'HUDT2205', 'GCIN2118', 'HIST3080'].forEach((courseCode) => {
+    assert(courses.some((course) => course.courseCode === courseCode));
+  });
+  assert(courses.some((course) => course.courseCode === 'HUDT1001' && course.recommendedYear === 1 && course.semester === 'Semester 1'));
+  assert(courses.some((course) => course.courseCode === 'HUDT2002' && course.recommendedYear === 2 && course.semester === 'Semester 2'));
+  assert(courses.some((course) => course.courseCode === 'HUDT3100' && course.courseType === 'internship' && course.recommendedYear === 0));
+  assert(courses.some((course) => course.courseCode === 'HUDT2205' && course.requirementGroups.some((group) => group.includes('Gaming Studies Advanced'))));
+  assert(courses.filter((course) => course.requirementGroups.some((group) => group.includes('Advanced'))).every((course) => course.semester === ''));
+});
+
+test('HKU AI and Data Science double degree preserves the official coded curriculum and internship credit conflict boundary', () => {
+  const hku = ugService.listUniversities().find((item) => item.code === 'HKU');
+  const programmes = ugService.listProgrammes({ universityId: hku.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === '6298');
+  const major = ugService.listMajors(programme.id).find((item) => item.nameEn === 'Bachelor of Arts and Bachelor of Engineering in Artificial Intelligence and Data Science');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 67);
+  assert.equal(courses.length, 67);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 67);
+  ['AIHU1001', 'AIHU4001', 'COMP1117', 'COMP3340', 'COMP3512', 'COMP4503', 'MATH2101', 'MATH2211', 'FITE3010', 'SDST3622', 'CAES9542'].forEach((courseCode) => {
+    assert(courses.some((course) => course.courseCode === courseCode));
+  });
+  assert(courses.some((course) => course.courseCode === 'COMP3512' && course.courseType === 'internship' && course.credits === 6 && course.recommendedYear === 0));
+  assert(courses.some((course) => course.courseCode === 'COMP4503' && course.courseType === 'capstone' && course.recommendedYear === 5));
+  assert(courses.some((course) => course.courseCode === 'MATH2101' && course.requirementGroups.some((group) => group.includes('alternative to MATH2012'))));
+  assert(courses.some((course) => course.courseCode === 'FITE3010' && course.requirementGroups.some((group) => group.includes('COMP3323/FITE3010 alternative'))));
+  assert(courses.every((course) => course.semester === ''));
+});
+
+test('HKU Pharmacy exposes the applicable four-year professional curriculum and closed Year 4 elective pool', () => {
+  const hku = ugService.listUniversities().find((item) => item.code === 'HKU');
+  const programmes = ugService.listProgrammes({ universityId: hku.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === '6494');
+  const major = ugService.listMajors(programme.id).find((item) => item.nameEn === 'Bachelor of Pharmacy');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const professionalRequired = courses.filter((course) => course.requirementGroups.some((group) => group.startsWith('Professional Core — Year')) && course.courseType !== 'major_elective');
+  const professionalElectives = courses.filter((course) => course.requirementGroups.some((group) => group.includes('Year 4 Electives')));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 33);
+  assert.equal(courses.length, 33);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 33);
+  assert.equal(professionalRequired.length, 24);
+  assert.equal(professionalRequired.reduce((sum, course) => sum + course.credits, 0), 192);
+  assert.equal(professionalElectives.length, 6);
+  assert(professionalElectives.every((course) => course.credits === 6 && course.recommendedYear === 4));
+  ['BPHM1111', 'BPHM2143', 'BPHM3147', 'BPHM4161', 'BPHM4144', 'CAES9720', 'CEMD9005'].forEach((courseCode) => {
+    assert(courses.some((course) => course.courseCode === courseCode));
+  });
+  assert(courses.some((course) => course.courseCode === 'BPHM4161' && course.courseType === 'capstone' && course.credits === 12));
+  assert(courses.every((course) => course.semester === ''));
+});
+
+test('HKU Chinese Medicine exposes the applicable six-year professional curriculum and clinical clerkship', () => {
+  const hku = ugService.listUniversities().find((item) => item.code === 'HKU');
+  const programmes = ugService.listProgrammes({ universityId: hku.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === '6482');
+  const major = ugService.listMajors(programme.id).find((item) => item.nameEn === 'Bachelor of Chinese Medicine');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const academicCore = courses.filter((course) => course.requirementGroups.some((group) => (
+    group.startsWith('Professional Core —')
+      && !group.includes('Disciplinary Electives')
+      && !group.includes('Clinical Attachment')
+      && !group.includes('Final-year Clinical Clerkship')
+  )));
+  const clinical = courses.filter((course) => course.requirementGroups.some((group) => (
+    group.includes('Clinical Attachment') || group.includes('Final-year Clinical Clerkship')
+  )));
+  const disciplinaryElectives = courses.filter((course) => course.requirementGroups.some((group) => group.includes('Disciplinary Electives')));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 55);
+  assert.equal(courses.length, 55);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 55);
+  assert.deepEqual([academicCore.length, academicCore.reduce((sum, course) => sum + course.credits, 0)], [34, 234]);
+  assert.deepEqual([clinical.length, clinical.reduce((sum, course) => sum + course.credits, 0)], [6, 114]);
+  assert.equal(disciplinaryElectives.length, 10);
+  assert(disciplinaryElectives.every((course) => course.credits === 3));
+  ['BCHM1601', 'BCHM3602', 'BCHM4608', 'BCHM5609', 'BCHM6601', 'CAES9730', 'CEMD9003'].forEach((courseCode) => {
+    assert(courses.some((course) => course.courseCode === courseCode));
+  });
+  assert(courses.some((course) => course.courseCode === 'BCHM6601' && course.courseType === 'capstone' && course.credits === 90 && course.recommendedYear === 6));
+  assert(courses.some((course) => course.courseCode === 'BCHM4608' && course.recommendedYear === 0 && /spans Year 4/.test(course.description)));
+  assert.equal(courses.filter((course) => course.semester).length, 7);
+});
+
+test('HKBU Accounting exposes only the closed 67-unit BBA and concentration requirements', () => {
+  const hkbu = ugService.listUniversities().find((item) => item.code === 'HKBU');
+  const programmes = ugService.listProgrammes({ universityId: hkbu.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'BBA(ACCT)');
+  const major = ugService.listMajors(programme.id).find((item) => item.nameEn === 'Bachelor of Business Administration (Hons) - Accounting Concentration');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 24);
+  assert.equal(courses.length, 24);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 24);
+  assert.equal(courses.reduce((sum, course) => sum + course.credits, 0), 67);
+  ['ACCT1005', 'BUSI1007', 'BUSI4005', 'ACCT2005', 'ACCT4006'].forEach((courseCode) => {
+    assert(courses.some((course) => course.courseCode === courseCode));
+  });
+  assert(!courses.some((course) => course.courseCode === 'ACCT3007'));
+  assert.equal(courses.filter((course) => course.requirementGroups.includes('BBA Required Courses')).length, 17);
+  assert.equal(courses.filter((course) => course.requirementGroups.includes('Accounting Concentration Required Courses')).length, 7);
+  assert(courses.every((course) => course.recommendedYear === 0 && course.semester === ''));
+});
+
+test('HKBU Religion, Philosophy and Ethics preserves four elective groups and duplicate group eligibility', () => {
+  const hkbu = ugService.listUniversities().find((item) => item.code === 'HKBU');
+  const programmes = ugService.listProgrammes({ universityId: hkbu.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.jupasCode === 'JS2025');
+  const major = ugService.listMajors(programme.id).find((item) => item.nameEn === 'Bachelor of Arts (Hons) in Religion, Philosophy and Ethics');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const required = courses.filter((course) => course.requirementGroups.some((group) => group.includes('Major Required Courses')));
+  const electives = courses.filter((course) => course.requirementGroups.some((group) => group.includes('Major Elective Courses')));
+  const projects = courses.filter((course) => course.requirementGroups.some((group) => group.includes('Honours Project')));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 57);
+  assert.equal(courses.length, 57);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 57);
+  assert.deepEqual([required.length, required.reduce((sum, course) => sum + course.credits, 0)], [7, 21]);
+  assert.equal(electives.length, 48);
+  assert(electives.every((course) => course.credits === 3));
+  assert.deepEqual([projects.length, projects.reduce((sum, course) => sum + course.credits, 0)], [2, 6]);
+  assert(courses.some((course) => course.courseCode === 'RELI2037' && course.requirementGroups.some((group) => group.includes('Groups A / D'))));
+  assert(courses.some((course) => course.courseCode === 'RELI3235' && course.requirementGroups.some((group) => group.includes('Groups B / C'))));
+  assert(courses.some((course) => course.courseCode === 'RELI2007' && /Group A/.test(course.prerequisites)));
+  assert(courses.some((course) => course.courseCode === 'RELI2015' && /Groups B and C/.test(course.prerequisites)));
+  assert(courses.some((course) => course.courseCode === 'RELI2035' && /Group D/.test(course.prerequisites)));
+  assert(courses.some((course) => course.courseCode === 'RELI4898' && course.courseType === 'capstone'));
+  assert(courses.some((course) => course.courseCode === 'RELI4899' && course.courseType === 'capstone'));
+  assert(courses.every((course) => course.recommendedYear === 0 && course.semester === ''));
+});
+
+test('HKBU JS2060 keeps Music and Creative Industries course identities isolated by Major', () => {
+  const programme = ugService.listProgrammes({ universityCode: 'HKBU' }).find((item) => item.jupasCode === 'JS2060');
+  const majors = Object.fromEntries(ugService.listMajors(programme.id).map((major) => [major.nameEn, major]));
+  const music = ugService.listMajorCourses(programme.id, majors.Music.id);
+  const creativeIndustries = ugService.listMajorCourses(programme.id, majors['Creative Industries'].id);
+  const source = JSON.parse(fs.readFileSync(path.join(__dirname, '..', '..', 'data', 'ug-course-supplements', 'hkbu-js2060-music-creative-industries-2025.json'), 'utf8'));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(programme.codedCourseCount, 189);
+  assert.equal(majors.Music.id, 'HKBU-UG-BA-BMUS-MUSIC-CI-3-M1');
+  assert.equal(majors['Creative Industries'].id, 'HKBU-UG-BA-BMUS-MUSIC-CI-3-M2');
+  assert.equal(music.length, 96);
+  assert.equal(creativeIndustries.length, 93);
+  assert.equal(new Set(music.map((course) => course.courseCode)).size, 96);
+  assert.equal(new Set(creativeIndustries.map((course) => course.courseCode)).size, 93);
+  assert.deepEqual(
+    music.filter((course) => course.credits === 0).map((course) => course.courseCode),
+    ['MUSI1028', 'MUSI1029', 'MUSI2028', 'MUSI2029', 'MUSI3028', 'MUSI3029', 'MUSI4028', 'MUSI4029', 'MUSI2037', 'MUSI3048', 'MUSI3049', 'MUSI4048', 'MUSI4049']
+  );
+  assert.equal(creativeIndustries.filter((course) => course.credits === 0).length, 0);
+  assert(music.some((course) => course.courseCode === 'MUSI3055' && course.credits === 3 && /coordinator-directed open pool/.test(course.requirementGroups[0])));
+  assert(!creativeIndustries.some((course) => course.courseCode === 'MUSI3055'));
+  assert(creativeIndustries.some((course) => course.courseCode === 'MUSI3086' && course.courseType === 'internship'));
+  assert(!music.some((course) => course.courseCode === 'MUSI3086'));
+  [music, creativeIndustries].forEach((courses) => {
+    const soundArt = courses.find((course) => course.courseCode === 'MUSI2057');
+    assert.equal(soundArt.credits, 2);
+    assert.match(soundArt.description, /individual course page assigns 3 units/);
+    assert.equal(courses.filter((course) => course.courseType === 'capstone').length, 2);
+    assert(courses.every((course) => course.recommendedYear === 0 && course.semester === ''));
+  });
+  assert.match(source.note, /Major Courses as 69 units, but the explicit structure is 37 \+ 21 = 58 units/);
+  assert.match(source.note, /displayed Chamber Music path contains six 1-unit courses.*producing 23/);
+  assert.match(source.note, /Directed Studies is an open coordinator-directed 21-unit pool/);
+});
+
+test('HKBU JS2620 models PERM and Sports Science as separate selectable Majors', () => {
+  const programme = ugService.listProgrammes({ universityCode: 'HKBU' }).find((item) => item.jupasCode === 'JS2620');
+  const majors = Object.fromEntries(ugService.listMajors(programme.id).map((major) => [major.id, major]));
+  const perm = ugService.listMajorCourses(programme.id, 'HKBU-UG-BA-PERM-14-M1');
+  const sportsScience = ugService.listMajorCourses(programme.id, 'HKBU-UG-BA-PERM-14-M2');
+  const sharedCodes = perm.filter((course) => sportsScience.some((candidate) => candidate.courseCode === course.courseCode));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(programme.codedCourseCount, 91);
+  assert.equal(majors['HKBU-UG-BA-PERM-14-M1'].codedCourseCount, 51);
+  assert.equal(majors['HKBU-UG-BA-PERM-14-M2'].nameEn, 'Sports Science Major');
+  assert.equal(majors['HKBU-UG-BA-PERM-14-M2'].codedCourseCount, 40);
+  assert.equal(perm.length, 51);
+  assert.equal(sportsScience.length, 40);
+  assert.equal(new Set(perm.map((course) => course.courseCode)).size, 51);
+  assert.equal(new Set(sportsScience.map((course) => course.courseCode)).size, 40);
+  assert.equal(sharedCodes.length, 26);
+  assert(perm.some((course) => course.courseCode === 'PERM3056' && course.courseType === 'internship' && /20 elective units total/.test(course.requirementGroups[0])));
+  assert(perm.some((course) => course.courseCode === 'PERM3057' && course.courseType === 'internship'));
+  assert(!perm.some((course) => course.courseCode === 'PERM4027'));
+  assert(!perm.some((course) => course.courseCode === 'CMED1046'));
+  assert(sportsScience.some((course) => course.courseCode === 'PERM4027' && /Required Courses/.test(course.requirementGroups[0])));
+  assert(sportsScience.some((course) => course.courseCode === 'CMED1046' && /Chinese-proficient path/.test(course.requirementGroups[0])));
+  assert(sportsScience.some((course) => course.courseCode === 'PERM3066' && /not proficient in Chinese/.test(course.requirementGroups[0])));
+  [perm, sportsScience].forEach((courses) => {
+    assert(courses.some((course) => course.courseCode === 'PERM4898' && course.courseType === 'capstone'));
+    assert(courses.some((course) => course.courseCode === 'PERM4899' && course.courseType === 'capstone'));
+    assert(courses.every((course) => course.recommendedYear === 0 && course.semester === ''));
+  });
+  assert(perm.every((course) => course.requirementGroups.every((group) => !group.includes('Sports Science'))));
+  assert(sportsScience.every((course) => course.requirementGroups.every((group) => !group.includes('PERM Major'))));
+});
+
+test('HKBU Social Work preserves field practice, elective substitution and Honours Project credits', () => {
+  const programme = ugService.listProgrammes({ universityCode: 'HKBU' }).find((item) => item.jupasCode === 'JS2660');
+  const major = ugService.listMajors(programme.id)[0];
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const required = courses.filter((course) => course.requirementGroups.some((group) => group.includes('Major Required Courses')));
+  const electives = courses.filter((course) => course.requirementGroups.some((group) => group.includes('Major Elective Courses')));
+  const fieldPractice = courses.filter((course) => course.courseType === 'internship');
+  const projects = courses.filter((course) => course.courseType === 'capstone');
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(courses.length, 40);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 40);
+  assert.deepEqual([required.length, required.reduce((sum, course) => sum + course.credits, 0)], [21, 45]);
+  assert.deepEqual([electives.length, electives.reduce((sum, course) => sum + course.credits, 0)], [14, 42]);
+  assert.deepEqual(fieldPractice.map((course) => [course.courseCode, course.credits]), [['SOWK3005', 10], ['SOWK4008', 5], ['SOWK4009', 5]]);
+  assert.deepEqual(projects.map((course) => [course.courseCode, course.credits]), [['SOWK4898', 1], ['SOWK4899', 2]]);
+  assert(courses.some((course) => course.courseCode === 'SOWK3005' && /21 rather than 18 units/.test(course.description)));
+  assert(courses.some((course) => course.courseCode === 'SOWK1027' && course.credits === 0.5 && /course directory returns no result/.test(course.description)));
+  assert(courses.every((course) => course.recommendedYear === 0 && course.semester === ''));
+});
+
+test('HKBU Arts and Technology preserves three concentrations and its published unit conflicts', () => {
+  const programme = ugService.listProgrammes({ universityCode: 'HKBU' }).find((item) => item.jupasCode === 'JS2920');
+  const major = ugService.listMajors(programme.id)[0];
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const source = JSON.parse(fs.readFileSync(path.join(__dirname, '..', '..', 'data', 'ug-course-supplements', 'hkbu-js2920-arts-technology-2025.json'), 'utf8'));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(courses.length, 86);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 86);
+  assert.equal(courses.filter((course) => course.requirementGroups.includes('Transdisciplinary Common Core · all required / 9 units')).length, 3);
+  assert.equal(courses.filter((course) => course.requirementGroups.includes('Programme-specific Knowledge / Skill Courses · all required / 21 units')).length, 7);
+  assert.equal(courses.filter((course) => course.requirementGroups.some((group) => group.includes('Experiential Learning'))).length, 3);
+  assert(courses.some((course) => course.courseCode === 'ARTT3007' && course.courseType === 'internship' && course.credits === 3));
+  assert.deepEqual(
+    courses.filter((course) => course.courseType === 'capstone').map((course) => [course.courseCode, course.credits]),
+    [['ARTT4005', 3], ['ARTT4006', 7]]
+  );
+  ['Sound Concentration', 'Technology Concentration', 'Visual Concentration'].forEach((name) => {
+    assert(courses.some((course) => course.requirementGroups.some((group) => group.includes(name))));
+  });
+  assert.equal(courses.filter((course) => course.requirementGroups.some((group) => group.includes('Concentration Free Elective Courses'))).length, 60);
+  ['MUSI4025', 'MUSI4026', 'MUSI4027'].forEach((courseCode) => {
+    const course = courses.find((candidate) => candidate.courseCode === courseCode);
+    assert.equal(course.credits, 2);
+    assert.match(course.description, /Concentration table displays 3 units/);
+  });
+  assert.match(source.note, /three listed 3-unit courses but includes four 2-unit Composition for Screen courses/);
+  assert.match(source.note, /2026-2027 Handbook endpoint currently returns HTTP 401/);
+  assert(courses.every((course) => course.recommendedYear === 0 && course.semester === ''));
+});
+
+test('HKBU JS2410 preserves the six-year biomedical, Chinese medicine and clinical structure', () => {
+  const programme = ugService.listProgrammes({ universityCode: 'HKBU' }).find((item) => item.jupasCode === 'JS2410');
+  const major = ugService.listMajors(programme.id)[0];
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const source = JSON.parse(fs.readFileSync(path.join(__dirname, '..', '..', 'data', 'ug-course-supplements', 'hkbu-js2410-chinese-medicine-biomedical-science-2025.json'), 'utf8'));
+  const inGroup = (group) => courses.filter((course) => course.requirementGroups.includes(group));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(programme.studyPeriod, '6 years');
+  assert.equal(courses.length, 71);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 71);
+  assert.deepEqual(
+    [inGroup('Biomedical Sciences · all required / 52 units').length, inGroup('Biomedical Sciences · all required / 52 units').reduce((sum, course) => sum + course.credits, 0)],
+    [24, 52]
+  );
+  assert.deepEqual(
+    [inGroup('Chinese Medicine · all required / 97 units').length, inGroup('Chinese Medicine · all required / 97 units').reduce((sum, course) => sum + course.credits, 0)],
+    [31, 97]
+  );
+  assert.deepEqual(
+    inGroup('Clinical Internship in Chinese Medicine · all required / 49 units').map((course) => [course.courseCode, course.credits]),
+    [['CMED4015', 12], ['CMED4018', 19], ['CMED4019', 18]]
+  );
+  assert.deepEqual(
+    inGroup('Honours Project · both required / 6 units').map((course) => [course.courseCode, course.credits]),
+    [['BMSC4898', 3], ['BMSC4899', 3]]
+  );
+  assert.equal(inGroup('Recommended Free Electives · open recommendation list / complete 9 units').length, 11);
+  ['BCME2302', 'BCME2312', 'BCHM3901', 'BCHM3905', 'BCHM3909'].forEach((courseCode) => {
+    assert(courses.some((course) => course.courseCode === courseCode));
+  });
+  assert.match(source.note, /open recommendation list and is not presented as a closed elective pool/);
+  assert.match(source.note, /excluded from the BSc \(Hons\) in Biomedical Science honours-classification GPA calculation/);
+  assert(courses.every((course) => course.recommendedYear === 0 && course.semester === ''));
+});
+
+test('HKBU JS2020 keeps five Arts Majors and their course identities isolated', () => {
+  const programme = ugService.listProgrammes({ universityCode: 'HKBU' }).find((item) => item.jupasCode === 'JS2020');
+  const majors = Object.fromEntries(ugService.listMajors(programme.id).map((major) => [major.id, major]));
+  const expectedCounts = {
+    'HKBU-UG-BA-1-M1': 74,
+    'HKBU-UG-BA-1-M2': 62,
+    'HKBU-UG-BA-1-M3': 86,
+    'HKBU-UG-BA-1-M4': 66,
+    'HKBU-UG-BA-1-M5': 50
+  };
+  const coursesByMajor = Object.fromEntries(Object.keys(expectedCounts).map((majorId) => [
+    majorId,
+    ugService.listMajorCourses(programme.id, majorId)
+  ]));
+  const source = JSON.parse(fs.readFileSync(path.join(__dirname, '..', '..', 'data', 'ug-course-supplements', 'hkbu-js2020-bachelor-arts-majors-2025.json'), 'utf8'));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(programme.codedCourseCount, 338);
+  assert.equal(Object.keys(majors).length, 5);
+  Object.entries(expectedCounts).forEach(([majorId, count]) => {
+    assert.equal(majors[majorId].codedCourseCount, count);
+    assert.equal(coursesByMajor[majorId].length, count);
+    assert.equal(new Set(coursesByMajor[majorId].map((course) => course.courseCode)).size, count);
+    assert(coursesByMajor[majorId].every((course) => course.recommendedYear === 0 && course.semester === ''));
+  });
+  assert(coursesByMajor['HKBU-UG-BA-1-M1'].some((course) => course.courseCode === 'CHIL3026'));
+  assert(coursesByMajor['HKBU-UG-BA-1-M2'].some((course) => course.courseCode === 'CHIL3026'));
+  assert(!coursesByMajor['HKBU-UG-BA-1-M3'].some((course) => course.courseCode === 'CHIL3026'));
+  assert(coursesByMajor['HKBU-UG-BA-1-M2'].some((course) => course.courseCode === 'WRIT4006' && course.courseType === 'internship'));
+  assert(coursesByMajor['HKBU-UG-BA-1-M2'].some((course) => course.courseCode === 'HUMN2036' && /Either HUMN2036 or HUMN3037/.test(course.requirementGroups[0])));
+  assert(coursesByMajor['HKBU-UG-BA-1-M3'].some((course) => course.courseCode === 'ENGL2006' && /choose 1 of ENGL2006 \/ ENGL2015/.test(course.requirementGroups[0])));
+  assert(coursesByMajor['HKBU-UG-BA-1-M4'].some((course) => course.courseCode === 'HUMN3006' && /only for students without Chinese proficiency/.test(course.requirementGroups[0])));
+  assert.deepEqual(
+    coursesByMajor['HKBU-UG-BA-1-M5'].filter((course) => course.courseType === 'capstone').map((course) => course.courseCode),
+    ['TRAN4888', 'TRAN4889']
+  );
+  assert.match(source.note, /uncoded 3-unit Third Language option.*is not fabricated as a coded course/);
+  assert.match(source.note, /18 major-elective units plus 3 Free Elective units for 21 units in one group/);
+});
+
+test('HKBU JS2420 preserves the pharmacy practicum, elective pools and Honours Project', () => {
+  const programme = ugService.listProgrammes({ universityCode: 'HKBU' }).find((item) => item.jupasCode === 'JS2420');
+  const major = ugService.listMajors(programme.id)[0];
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const inGroup = (group) => courses.filter((course) => course.requirementGroups.includes(group));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(courses.length, 46);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 46);
+  assert.deepEqual(
+    [inGroup('Major Required Courses · all required / 90 units').length, inGroup('Major Required Courses · all required / 90 units').reduce((sum, course) => sum + course.credits, 0)],
+    [37, 90]
+  );
+  assert.equal(inGroup('Major Elective Courses · first closed pool · take 1 course / 3 units').length, 3);
+  assert.equal(inGroup('Major Elective Courses · second closed pool · take 2 courses / 6 units').length, 4);
+  assert.deepEqual(
+    courses.filter((course) => course.courseType === 'internship').map((course) => [course.courseCode, course.credits]),
+    [['PCMD1025', 1], ['PCMD4005', 3.5], ['PCMD4025', 0.5]]
+  );
+  assert.deepEqual(
+    courses.filter((course) => course.courseType === 'capstone').map((course) => [course.courseCode, course.credits]),
+    [['PCMD4898', 3], ['PCMD4899', 3]]
+  );
+  assert(courses.every((course) => course.recommendedYear === 0 && course.semester === ''));
+});
+
+test('HKBU JS2940 keeps both health and social well-being concentration paths explicit', () => {
+  const programme = ugService.listProgrammes({ universityCode: 'HKBU' }).find((item) => item.jupasCode === 'JS2940');
+  const major = ugService.listMajors(programme.id)[0];
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const source = JSON.parse(fs.readFileSync(path.join(__dirname, '..', '..', 'data', 'ug-course-supplements', 'hkbu-js2940-health-social-wellbeing-2025.json'), 'utf8'));
+  const hasGroupText = (text) => courses.filter((course) => course.requirementGroups.some((group) => group.includes(text)));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(courses.length, 67);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 67);
+  assert.equal(hasGroupText('Major Courses — Transdisciplinary Common Core').length, 3);
+  const sharedElectives = hasGroupText('both concentrations · choose 6 units within the selected concentration pool');
+  assert.equal(hasGroupText('Health Technology and Informatics Concentration · choose 6 units').length + sharedElectives.length, 21);
+  assert.equal(hasGroupText('Health and Social Wellness Concentration · choose 6 units').length + sharedElectives.length, 23);
+  assert(courses.some((course) => course.courseCode === 'BIOL2047' && /Either BIOL2047 or PERM1006/.test(course.requirementGroups[0])));
+  assert(courses.some((course) => course.courseCode === 'COMP1007' && /Either COMP1007 or COMP1025/.test(course.requirementGroups[0])));
+  assert(courses.some((course) => course.courseCode === 'HSWB3005' && course.courseType === 'internship' && course.credits === 3));
+  assert(courses.some((course) => course.courseCode === 'COMP3066' && course.courseType === 'internship'));
+  assert.deepEqual(
+    courses.filter((course) => course.courseType === 'capstone').map((course) => [course.courseCode, course.credits]),
+    [['HSWB4898', 6], ['HSWB4899', 6]]
+  );
+  assert.match(source.note, /Both paths require 73 units of Major Courses and 12 units of Honours Project/);
+  assert.match(source.note, /Courses that have different roles across the two concentrations are stored once/);
+  assert(courses.every((course) => course.recommendedYear === 0 && course.semester === ''));
+});
+
+test('HKBU JS2960 preserves three Digital Futures and Humanities concentration pools', () => {
+  const programme = ugService.listProgrammes({ universityCode: 'HKBU' }).find((item) => item.jupasCode === 'JS2960');
+  const major = ugService.listMajors(programme.id)[0];
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const source = JSON.parse(fs.readFileSync(path.join(__dirname, '..', '..', 'data', 'ug-course-supplements', 'hkbu-js2960-digital-futures-humanities-2025.json'), 'utf8'));
+  const concentrationCourses = (name) => courses.filter((course) => course.requirementGroups[0].includes(`· ${name} ·`));
+  const concentrationRequired = (name) => concentrationCourses(name).filter((course) => course.requirementGroups[0].includes('concentration required course (*)'));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(courses.length, 100);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 100);
+  assert.equal(courses.filter((course) => course.requirementGroups.includes('Major Required Courses · all required / 46 units')).length, 15);
+  assert.deepEqual(
+    ['Creativity and Culture', 'Innovation, Policy and Value', 'Innovation Project Management'].map((name) => [name, concentrationCourses(name).length, concentrationRequired(name).length]),
+    [['Creativity and Culture', 34, 3], ['Innovation, Policy and Value', 22, 3], ['Innovation Project Management', 27, 3]]
+  );
+  assert(courses.some((course) => course.courseCode === 'DIFH3006' && course.courseType === 'internship' && course.credits === 3));
+  assert.deepEqual(
+    courses.filter((course) => course.courseType === 'capstone').map((course) => [course.courseCode, course.titleEn, course.credits]),
+    [['DIFH4898', 'Digital Futures and Humanities Project I', 3], ['DIFH4899', 'Digital Futures and Humanities Project II', 3]]
+  );
+  assert.match(source.note, /all other courses in that concentration are retained as its published elective pool without inferring an unstated course count/);
+  assert.match(source.note, /HIST3146 is included from the official Programme table although that row has no linked course page/);
+  assert(courses.every((course) => course.recommendedYear === 0 && course.semester === ''));
+});
+
+test('HKBU JS2510 isolates seven Science Majors and their concentration project roles', () => {
+  const programme = ugService.listProgrammes({ universityCode: 'HKBU' }).find((item) => item.jupasCode === 'JS2510');
+  const expectedCounts = {
+    'HKBU-UG-BSC-12-M1': 49,
+    'HKBU-UG-BSC-12-M2': 38,
+    'HKBU-UG-BSC-12-M3': 34,
+    'HKBU-UG-BSC-12-M4': 42,
+    'HKBU-UG-BSC-12-M5': 83,
+    'HKBU-UG-BSC-12-M6': 78,
+    'HKBU-UG-BSC-12-M7': 41
+  };
+  const coursesByMajor = Object.fromEntries(Object.keys(expectedCounts).map((majorId) => [
+    majorId,
+    ugService.listMajorCourses(programme.id, majorId)
+  ]));
+  const source = JSON.parse(fs.readFileSync(path.join(__dirname, '..', '..', 'data', 'ug-course-supplements', 'hkbu-js2510-science-majors-2025.json'), 'utf8'));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(programme.codedCourseCount, 365);
+  assert.equal(ugService.listMajors(programme.id).length, 7);
+  Object.entries(expectedCounts).forEach(([majorId, count]) => {
+    assert.equal(coursesByMajor[majorId].length, count);
+    assert.equal(new Set(coursesByMajor[majorId].map((course) => course.courseCode)).size, count);
+    assert(coursesByMajor[majorId].every((course) => course.recommendedYear === 0 && course.semester === ''));
+  });
+
+  const appliedBiology = coursesByMajor['HKBU-UG-BSC-12-M1'];
+  const doubleDegree = coursesByMajor['HKBU-UG-BSC-12-M2'];
+  const bioresource = coursesByMajor['HKBU-UG-BSC-12-M3'];
+  const biochemical = coursesByMajor['HKBU-UG-BSC-12-M4'];
+  const computerScience = coursesByMajor['HKBU-UG-BSC-12-M5'];
+  const mathematics = coursesByMajor['HKBU-UG-BSC-12-M6'];
+  const greenEnergy = coursesByMajor['HKBU-UG-BSC-12-M7'];
+  assert(appliedBiology.some((course) => course.courseCode === 'BIOL4898' && course.requirementGroups.every((group) => !group.includes('Artificial Intelligence'))));
+  assert(doubleDegree.some((course) => course.courseCode === 'BIOL4898' && course.requirementGroups.every((group) => !group.includes('Artificial Intelligence'))));
+  assert(bioresource.some((course) => course.courseCode === 'BIOL4998' && course.requirementGroups.every((group) => !group.includes('Computing and Software Technologies'))));
+  assert(biochemical.some((course) => course.courseCode === 'CHEM4898' && course.requirementGroups.every((group) => !group.includes('Computing and Software Technologies'))));
+  assert.deepEqual(
+    computerScience.filter((course) => course.courseType === 'project').map((course) => course.courseCode).sort(),
+    ['COMP4868', 'COMP4869', 'COMP4878', 'COMP4879', 'COMP4908', 'COMP4909', 'COMP4928', 'COMP4929']
+  );
+  assert(mathematics.some((course) => course.courseCode === 'MATH3495' && course.courseType === 'internship'));
+  assert(greenEnergy.some((course) => course.courseCode === 'GEST4035' && course.credits === 3));
+  assert.match(source.note, /does not publish Lincoln Year 4 course codes.*none are invented/);
+  assert.match(source.note, /DMC single-concentration table states 6 elective units.*3-unit requirement/);
+});
+
+test('HKBU JS2610 keeps six Arts and Social Sciences Major pools isolated', () => {
+  const programme = ugService.listProgrammes({ universityCode: 'HKBU' }).find((item) => item.jupasCode === 'JS2610');
+  const expectedCounts = {
+    'HKBU-UG-BA-BSOCSC-13-M1': 31,
+    'HKBU-UG-BA-BSOCSC-13-M2': 47,
+    'HKBU-UG-BA-BSOCSC-13-M3': 137,
+    'HKBU-UG-BA-BSOCSC-13-M4': 43,
+    'HKBU-UG-BA-BSOCSC-13-M5': 78,
+    'HKBU-UG-BA-BSOCSC-13-M6': 48
+  };
+  const coursesByMajor = Object.fromEntries(Object.keys(expectedCounts).map((majorId) => [
+    majorId,
+    ugService.listMajorCourses(programme.id, majorId)
+  ]));
+  const source = JSON.parse(fs.readFileSync(path.join(__dirname, '..', '..', 'data', 'ug-course-supplements', 'hkbu-js2610-arts-social-sciences-majors-2025.json'), 'utf8'));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(programme.codedCourseCount, 384);
+  assert.equal(ugService.listMajors(programme.id).length, 6);
+  Object.entries(expectedCounts).forEach(([majorId, count]) => {
+    assert.equal(coursesByMajor[majorId].length, count);
+    assert.equal(new Set(coursesByMajor[majorId].map((course) => course.courseCode)).size, count);
+    assert(coursesByMajor[majorId].every((course) => course.recommendedYear === 0 && course.semester === ''));
+  });
+
+  const europeanStudies = coursesByMajor['HKBU-UG-BA-BSOCSC-13-M1'];
+  const geography = coursesByMajor['HKBU-UG-BA-BSOCSC-13-M2'];
+  const globalChina = coursesByMajor['HKBU-UG-BA-BSOCSC-13-M3'];
+  const government = coursesByMajor['HKBU-UG-BA-BSOCSC-13-M4'];
+  const history = coursesByMajor['HKBU-UG-BA-BSOCSC-13-M5'];
+  const sociology = coursesByMajor['HKBU-UG-BA-BSOCSC-13-M6'];
+  assert(europeanStudies.some((course) => course.courseCode === 'FREN1205' && course.credits === 9));
+  assert(!geography.some((course) => course.courseCode === 'FREN1205'));
+  assert.deepEqual(globalChina.filter((course) => course.courseType === 'capstone').map((course) => course.courseCode), ['GCST4898', 'GCST4899']);
+  assert(globalChina.some((course) => course.courseCode === 'GCST2025' && course.courseType === 'internship'));
+  assert(globalChina.some((course) => course.courseCode === 'GCST3005' && course.courseType === 'major_elective'));
+  assert(government.some((course) => course.courseCode === 'POLS4898' && course.courseType === 'capstone'));
+  assert(history.some((course) => course.courseCode === 'HIST4898' && course.courseType === 'capstone'));
+  assert.deepEqual(sociology.filter((course) => course.courseType === 'capstone').map((course) => [course.courseCode, course.credits]), [['SOCI4898', 3], ['SOCI4899', 3]]);
+  assert.match(source.note, /states a 3-unit Honours Project but lists SOCI4898 and SOCI4899 at 3 units each/);
+});
+
+test('HKBU BBA isolates the closed concentration pools by Major', () => {
+  const hkbu = ugService.listUniversities().find((item) => item.code === 'HKBU');
+  const programmes = ugService.listProgrammes({ universityId: hkbu.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.jupasCode === 'JS2120');
+  const majors = Object.fromEntries(ugService.listMajors(programme.id).map((major) => [major.nameEn, major]));
+  const economics = ugService.listMajorCourses(programme.id, majors['Economics and Data Analytics'].id);
+  const finance = ugService.listMajorCourses(programme.id, majors.Finance.id);
+  const humanResources = ugService.listMajorCourses(programme.id, majors['Human Resources Management'].id);
+  const informationSystems = ugService.listMajorCourses(programme.id, majors['Information Systems and Business Intelligence'].id);
+  const marketing = ugService.listMajorCourses(programme.id, majors.Marketing.id);
+  const retail = ugService.listMajorCourses(programme.id, majors['Strategic Retail Management and Innovation'].id);
+  const fintech = ugService.listMajorCourses(programme.id, majors.FinTech.id);
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(economics.length, 42);
+  assert.equal(finance.length, 40);
+  assert.equal(humanResources.length, 35);
+  assert.equal(informationSystems.length, 43);
+  assert.equal(marketing.length, 43);
+  assert.equal(retail.length, 44);
+  assert.equal(fintech.length, 0);
+  assert.equal(new Set(economics.map((course) => course.courseCode)).size, 42);
+  assert.equal(new Set(finance.map((course) => course.courseCode)).size, 40);
+  assert.equal(new Set(humanResources.map((course) => course.courseCode)).size, 35);
+  assert.equal(new Set(informationSystems.map((course) => course.courseCode)).size, 43);
+  assert.equal(new Set(marketing.map((course) => course.courseCode)).size, 43);
+  assert.equal(new Set(retail.map((course) => course.courseCode)).size, 44);
+  assert.equal(economics.filter((course) => course.requirementGroups.includes('BBA Required Courses')).length, 17);
+  assert.equal(finance.filter((course) => course.requirementGroups.includes('BBA Required Courses')).length, 17);
+  assert.equal(economics.filter((course) => course.requirementGroups.includes('Concentration Required Courses')).length, 4);
+  assert.equal(finance.filter((course) => course.requirementGroups.includes('Concentration Required Courses')).length, 4);
+  assert.equal(economics.filter((course) => course.requirementGroups.includes('Concentration Elective Courses')).length, 21);
+  assert.equal(finance.filter((course) => course.requirementGroups.includes('Concentration Elective Courses')).length, 19);
+  assert.equal(humanResources.filter((course) => course.requirementGroups.includes('Concentration Required Courses')).length, 5);
+  assert.equal(humanResources.filter((course) => course.requirementGroups.includes('Concentration Elective Courses')).length, 13);
+  assert.equal(informationSystems.filter((course) => course.requirementGroups.includes('Concentration Required Courses')).length, 3);
+  assert.equal(informationSystems.filter((course) => course.requirementGroups.includes('Concentration Elective Courses')).length, 23);
+  assert.equal(marketing.filter((course) => course.requirementGroups.includes('Concentration Required Courses')).length, 5);
+  assert.equal(marketing.filter((course) => course.requirementGroups.includes('Concentration Elective Courses')).length, 21);
+  assert.equal(retail.filter((course) => course.requirementGroups.includes('Concentration Required Courses')).length, 4);
+  assert.equal(retail.filter((course) => course.requirementGroups.includes('Concentration Elective Courses')).length, 23);
+  ['ECON3076', 'ECON3105', 'ECON4036'].forEach((courseCode) => {
+    assert(economics.some((course) => course.courseCode === courseCode));
+    assert(!finance.some((course) => course.courseCode === courseCode));
+  });
+  ['FINE3005', 'FINE3015', 'FINE4035'].forEach((courseCode) => {
+    assert(finance.some((course) => course.courseCode === courseCode));
+    assert(!economics.some((course) => course.courseCode === courseCode));
+  });
+  assert(humanResources.some((course) => course.courseCode === 'HRMN3027' && course.credits === 0 && /does not contribute/.test(course.description)));
+  assert(!informationSystems.some((course) => course.courseCode === 'HRMN3027'));
+  assert.equal(informationSystems.filter((course) => course.courseCode === 'BUSI4027').length, 1);
+  assert(!humanResources.some((course) => course.courseCode === 'BUSI4027'));
+  ['MKTG3017', 'REMT3006'].forEach((courseCode) => {
+    assert(marketing.some((course) => course.courseCode === courseCode && course.requirementGroups.includes('Concentration Elective Courses')));
+    assert(retail.some((course) => course.courseCode === courseCode && course.requirementGroups.includes('Concentration Required Courses')));
+  });
+  assert(economics.every((course) => course.recommendedYear === 0 && course.semester === ''));
+  assert(finance.every((course) => course.recommendedYear === 0 && course.semester === ''));
+  assert(humanResources.every((course) => course.recommendedYear === 0 && course.semester === ''));
+  assert(informationSystems.every((course) => course.recommendedYear === 0 && course.semester === ''));
+  assert(marketing.every((course) => course.recommendedYear === 0 && course.semester === ''));
+  assert(retail.every((course) => course.recommendedYear === 0 && course.semester === ''));
+});
+
+test('HKBU Business Computing and Data Analytics preserves the 66-unit Major and open COMP approval rule', () => {
+  const hkbu = ugService.listUniversities().find((item) => item.code === 'HKBU');
+  const programmes = ugService.listProgrammes({ universityId: hkbu.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.jupasCode === 'JS2910');
+  const major = ugService.listMajors(programme.id).find((item) => item.nameEn === 'Bachelor of Science (Hons) in Business Computing and Data Analytics');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(courses.length, 58);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 58);
+  assert.equal(courses.filter((course) => course.requirementGroups.some((group) => group.includes('Required Courses — Business'))).length, 8);
+  assert.equal(courses.filter((course) => course.requirementGroups.some((group) => group.includes('Required Courses — Computer Science'))).length, 9);
+  assert.equal(courses.filter((course) => course.requirementGroups.some((group) => group.includes('Business Applications'))).length, 18);
+  assert.equal(courses.filter((course) => course.requirementGroups.some((group) => group.includes('Analytical Methodologies'))).length, 21);
+  assert.equal(courses.filter((course) => course.requirementGroups.some((group) => group.includes('Projects'))).length, 2);
+  assert(courses.some((course) => course.courseCode === 'COMP3056' && course.credits === 0 && course.courseType === 'internship'));
+  assert(courses.some((course) => course.courseCode === 'COMP4918' && course.courseType === 'capstone'));
+  assert(courses.some((course) => course.courseCode === 'COMP4919' && course.courseType === 'capstone'));
+  assert(courses.some((course) => course.requirementGroups.some((group) => /other COMP course subject to Department approval/.test(group))));
+  assert(courses.every((course) => course.recommendedYear === 0 && course.semester === ''));
+});
+
+test('HKBU Global Entertainment preserves the 72-unit Major and variable-credit elective pool', () => {
+  const hkbu = ugService.listUniversities().find((item) => item.code === 'HKBU');
+  const programmes = ugService.listProgrammes({ universityId: hkbu.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.jupasCode === 'JS2930');
+  const major = ugService.listMajors(programme.id).find((item) => item.nameEn === 'Global Entertainment');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(courses.length, 57);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 57);
+  assert.equal(courses.filter((course) => course.requirementGroups.some((group) => group.includes('Transdisciplinary Common Core'))).length, 3);
+  assert.equal(courses.filter((course) => course.requirementGroups.some((group) => group.includes('Experiential Learning'))).length, 3);
+  assert.equal(courses.filter((course) => course.requirementGroups.some((group) => group.includes('Knowledge/Skills Core'))).length, 9);
+  assert.equal(courses.filter((course) => course.requirementGroups.some((group) => group.includes('Knowledge/Skills Electives'))).length, 40);
+  assert.equal(courses.filter((course) => course.requirementGroups.some((group) => group.includes('Honours Project'))).length, 2);
+  ['ITS1005', 'ITS2028', 'ITS2029'].forEach((courseCode) => assert(courses.some((course) => course.courseCode === courseCode)));
+  assert(courses.some((course) => course.courseCode === 'BAGE3006' && course.courseType === 'internship' && course.credits === 3));
+  assert(courses.some((course) => course.courseCode === 'BAGE4898' && course.courseType === 'capstone'));
+  assert(courses.some((course) => course.courseCode === 'BAGE4899' && course.courseType === 'capstone'));
+  ['VART3395', 'VART3405'].forEach((courseCode) => {
+    assert(courses.some((course) => course.courseCode === courseCode && course.credits === 9));
+  });
+  assert(courses.every((course) => course.recommendedYear === 0 && course.semester === ''));
+});
+
+test('HKBU Communication keeps Journalism and PRA course pools isolated with their official paths', () => {
+  const hkbu = ugService.listUniversities().find((item) => item.code === 'HKBU');
+  const programmes = ugService.listProgrammes({ universityId: hkbu.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.jupasCode === 'JS2310');
+  const majors = Object.fromEntries(ugService.listMajors(programme.id).map((major) => [major.nameEn, major]));
+  const journalism = ugService.listMajorCourses(programme.id, majors['Journalism and Digital Media'].id);
+  const pra = ugService.listMajorCourses(programme.id, majors['Public Relations and Advertising'].id);
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(journalism.length, 104);
+  assert.equal(pra.length, 51);
+  assert.equal(new Set(journalism.map((course) => course.courseCode)).size, 104);
+  assert.equal(new Set(pra.map((course) => course.courseCode)).size, 51);
+  assert.equal(journalism.filter((course) => course.courseType === 'internship' && course.credits === 0).length, 2);
+  assert.equal(pra.filter((course) => course.courseType === 'internship').length, 1);
+  assert.equal(journalism.filter((course) => course.courseType === 'capstone').length, 5);
+  assert.equal(pra.filter((course) => course.courseType === 'capstone').length, 1);
+  assert(journalism.some((course) => course.requirementGroups.some((group) => /Broadcast Journalism Stream/.test(group))));
+  assert(journalism.some((course) => course.requirementGroups.some((group) => /International Journalism Stream/.test(group))));
+  assert(journalism.some((course) => course.requirementGroups.some((group) => /labels the pool as 14 courses but displays 20/.test(group))));
+  assert(pra.some((course) => course.requirementGroups.some((group) => /Advertising and Branding Concentration/.test(group))));
+  assert(pra.some((course) => course.requirementGroups.some((group) => /Public Relations Concentration/.test(group))));
+  assert(journalism.every((course) => course.recommendedYear === 0 && course.semester === ''));
+  assert(pra.every((course) => course.recommendedYear === 0 && course.semester === ''));
+});
+
+test('HKBU Film and Television preserves both options and the published FILM4016 conflict', () => {
+  const programme = ugService.listProgrammes({ universityCode: 'HKBU' }).find((item) => item.jupasCode === 'JS2330');
+  const major = ugService.listMajors(programme.id)[0];
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const film4016 = courses.find((course) => course.courseCode === 'FILM4016');
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(courses.length, 76);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 76);
+  assert(courses.some((course) => course.requirementGroups.some((group) => /Professional Option Core/.test(group))));
+  assert(courses.some((course) => course.requirementGroups.some((group) => /Liberal Studies Required Elective pool 1/.test(group))));
+  assert(courses.some((course) => course.requirementGroups.some((group) => /Liberal Studies Required Elective pool 2/.test(group))));
+  assert.equal(courses.filter((course) => course.courseType === 'capstone').length, 2);
+  assert.equal(film4016.courseType, 'internship');
+  assert.equal(film4016.credits, 3);
+  assert.match(film4016.description, /individual course page assigns 0 unit/);
+  assert.match(film4016.description, /manual confirmation is required/);
+  assert(courses.every((course) => course.recommendedYear === 0 && course.semester === ''));
+});
+
+test('HKBU Acting for Global Screen keeps the 49-unit required block and explicit elective pool', () => {
+  const programme = ugService.listProgrammes({ universityCode: 'HKBU' }).find((item) => item.jupasCode === 'JS2340');
+  const major = ugService.listMajors(programme.id)[0];
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const required = courses.filter((course) => course.requirementGroups.includes('Major Required Courses · all required / 49 units'));
+  const electives = courses.filter((course) => course.requirementGroups.includes('Major Elective Courses · select 30 units'));
+  const projects = courses.filter((course) => course.requirementGroups.includes('Honours Project · both required / 6 units'));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(courses.length, 51);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 51);
+  assert.deepEqual([required.length, required.reduce((sum, course) => sum + course.credits, 0)], [17, 49]);
+  assert.deepEqual([electives.length, electives.reduce((sum, course) => sum + course.credits, 0)], [32, 96]);
+  assert.deepEqual([projects.length, projects.reduce((sum, course) => sum + course.credits, 0)], [2, 6]);
+  assert(courses.some((course) => course.courseCode === 'FAGS3015' && course.credits === 1));
+  assert(courses.some((course) => course.courseCode === 'FAGS3007' && course.courseType === 'internship' && /Internship or Practicum/.test(course.description)));
+  assert(courses.every((course) => course.recommendedYear === 0 && course.semester === ''));
+});
+
+test('HKBU Game Design and Animation preserves both Streams and zero-unit practical courses', () => {
+  const programme = ugService.listProgrammes({ universityCode: 'HKBU' }).find((item) => item.jupasCode === 'JS2370');
+  const major = ugService.listMajors(programme.id)[0];
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const required = courses.filter((course) => course.requirementGroups.includes('Major Required Courses · all required / 46 units'));
+  const animation = courses.filter((course) => course.requirementGroups.includes('Advanced Animation Stream Required Courses · all 3 required / 9 units'));
+  const gameDesign = courses.filter((course) => course.requirementGroups.includes('Advanced Game Design Stream Required Courses · all 3 required / 9 units'));
+  const electives = courses.filter((course) => course.requirementGroups.includes('Major Elective Courses · select 12 units'));
+  const projects = courses.filter((course) => course.requirementGroups.includes('Honours Project · both required / 6 units'));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(courses.length, 71);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 71);
+  assert.deepEqual([required.length, required.reduce((sum, course) => sum + course.credits, 0)], [20, 46]);
+  assert.deepEqual([animation.length, animation.reduce((sum, course) => sum + course.credits, 0)], [3, 9]);
+  assert.deepEqual([gameDesign.length, gameDesign.reduce((sum, course) => sum + course.credits, 0)], [3, 9]);
+  assert.deepEqual([electives.length, electives.reduce((sum, course) => sum + course.credits, 0)], [37, 111]);
+  assert.deepEqual([projects.length, projects.reduce((sum, course) => sum + course.credits, 0)], [2, 6]);
+  assert.deepEqual(
+    courses.filter((course) => course.credits === 0).map((course) => course.courseCode),
+    ['GAME2008', 'GAME2009', 'GAME3008', 'GAME3009', 'FILM4016']
+  );
+  assert(courses.some((course) => course.courseCode === 'GAME3045' && course.credits === 1));
+  assert(courses.some((course) => course.courseCode === 'GAME1006' && course.titleEn === 'Transcultural Studies of Games'));
+  assert(courses.some((course) => course.courseCode === 'FILM4016' && course.courseType === 'internship'));
+  assert(courses.every((course) => course.recommendedYear === 0 && course.semester === ''));
+});
+
+test('HKBU Visual Arts preserves Professional Mode concentrations and the senior-year replacement', () => {
+  const programme = ugService.listProgrammes({ universityCode: 'HKBU' }).find((item) => item.jupasCode === 'JS2810');
+  const major = ugService.listMajors(programme.id)[0];
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const required = courses.filter((course) => course.requirementGroups.includes('Major Required Courses · all required / 24 units'));
+  const clusterElectives = courses.filter((course) => course.requirementGroups.some((group) => group.includes('Cluster Electives')));
+  const publishedElectives = courses.filter((course) => course.requirementGroups.some((group) => group.includes('published course list')));
+  const project = courses.find((course) => course.courseCode === 'VART4137');
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(courses.length, 77);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 77);
+  assert.deepEqual([required.length, required.reduce((sum, course) => sum + course.credits, 0)], [8, 24]);
+  assert.equal(clusterElectives.length, 28);
+  assert.equal(publishedElectives.length, 38);
+  assert(courses.some((course) => course.courseCode === 'VART2337' && course.credits === 0 && course.courseType === 'internship'));
+  assert(courses.some((course) => course.courseCode === 'VART3446' && course.credits === 3 && /senior-year replacement/.test(course.description)));
+  assert.equal(project.credits, 6);
+  assert.equal(project.courseType, 'capstone');
+  assert.match(project.description, /18 units of Level 3 studio courses/);
+  assert(courses.some((course) => course.requirementGroups.some((group) => /Studio and Media Arts Concentration/.test(group))));
+  assert(courses.some((course) => course.requirementGroups.some((group) => /Craft and Design Concentration/.test(group))));
+  assert(courses.every((course) => course.recommendedYear === 0 && course.semester === ''));
+});
+
+test('CityU BA English filters the official 2025 Stream pools while preserving the normative study plan', () => {
+  const cityu = ugService.listUniversities().find((item) => item.code === 'CITYU');
+  const programmes = ugService.listProgrammes({ universityId: cityu.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.jupasCode === 'JS1104');
+  const majors = Object.fromEntries(ugService.listMajors(programme.id).map((major) => [major.nameEn, major]));
+  const epc = ugService.listMajorCourses(programme.id, majors['English and Professional Communication'].id);
+  const literature = ugService.listMajorCourses(programme.id, majors['Language and Literature'].id);
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(epc.length, 59);
+  assert.equal(literature.length, 58);
+  assert.equal(new Set(epc.map((course) => course.courseCode)).size, 59);
+  assert.equal(new Set(literature.map((course) => course.courseCode)).size, 58);
+  assert(epc.some((course) => course.courseCode === 'EN2859' && course.requirementGroups.some((group) => group.includes('EPC primary stream elective only'))));
+  assert(!literature.some((course) => course.courseCode === 'EN2859'));
+  ['EN2714', 'EN2722', 'EN2711', 'EN3593', 'EN4575', 'EN4576', 'CAI4001'].forEach((courseCode) => {
+    assert(epc.some((course) => course.courseCode === courseCode));
+    assert(literature.some((course) => course.courseCode === courseCode));
+  });
+  assert(epc.some((course) => course.courseCode === 'EN2714' && course.recommendedYear === 1 && course.semester === 'Semester A'));
+  assert(epc.some((course) => course.courseCode === 'EN3593' && course.recommendedYear === 3 && course.semester === 'Summer'));
+  assert(epc.some((course) => course.courseCode === 'EN4575' && course.recommendedYear === 4 && course.semester === '' && /Semester A and Semester B/.test(course.description)));
+  assert(epc.filter((course) => course.courseType === 'major_elective').every((course) => course.recommendedYear === 0 && course.semester === ''));
+});
+
+test('CityU Linguistics and Language Applications exposes one official Major and the current 57-credit structure', () => {
+  const cityu = ugService.listUniversities().find((item) => item.code === 'CITYU');
+  const programme = ugService.listProgrammes({ universityId: cityu.id, degreeLevel: 'undergraduate' })
+    .find((item) => item.jupasCode === 'JS1109');
+  const majors = ugService.listMajors(programme.id);
+  const courses = ugService.listMajorCourses(programme.id, majors[0].id);
+  const core = courses.filter((course) => course.courseType === 'core');
+  const electives = courses.filter((course) => course.courseType === 'major_elective');
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.deepEqual(majors.map((major) => major.nameEn), ['Linguistics and Language Applications']);
+  assert.equal(courses.length, 40);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 40);
+  assert.deepEqual([core.length, core.reduce((sum, course) => sum + course.credits, 0)], [11, 33]);
+  assert.equal(electives.length, 29);
+  assert(electives.every((course) => course.credits === 3));
+  assert(electives.every((course) => course.requirementGroups.some((group) => (
+    group.includes('choose 24 credits total') && group.includes('at least 12 credits at B4 level')
+  ))));
+  assert(courses.some((course) => course.courseCode === 'LT4235' && course.courseType === 'core'));
+  assert(!courses.some((course) => course.courseCode === 'LT4391'));
+  assert(courses.every((course) => course.recommendedYear === 0 && course.semester === ''));
+});
+
+test('CityU International Relations and Global Affairs keeps Streams inside one official Major', () => {
+  const cityu = ugService.listUniversities().find((item) => item.code === 'CITYU');
+  const programme = ugService.listProgrammes({ universityId: cityu.id, degreeLevel: 'undergraduate' })
+    .find((item) => item.jupasCode === 'JS1102');
+  const majors = ugService.listMajors(programme.id);
+  const courses = ugService.listMajorCourses(programme.id, majors[0].id);
+  const core = courses.filter((course) => course.courseType === 'core');
+  const electives = courses.filter((course) => course.courseType === 'major_elective');
+  const streamCount = (stream) => electives.filter((course) => (
+    course.requirementGroups.some((group) => group.includes(stream))
+  )).length;
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.deepEqual(majors.map((major) => major.nameEn), ['International Relations and Global Affairs']);
+  assert.equal(courses.length, 53);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 53);
+  assert.deepEqual([core.length, core.reduce((sum, course) => sum + course.credits, 0)], [18, 51]);
+  assert.equal(electives.length, 35);
+  assert.deepEqual(
+    ['Asian Studies', 'International Studies', 'Development Studies'].map(streamCount),
+    [24, 21, 13]
+  );
+  assert(courses.some((course) => course.courseCode === 'PIA3812' && course.courseType === 'core' && course.credits === 0));
+  assert(courses.some((course) => course.courseCode === 'PIA4060' && course.courseType === 'major_elective' && course.credits === 6));
+  ['PIA3810', 'PIA3810J', 'PIA3810K'].forEach((courseCode) => {
+    assert(courses.some((course) => course.courseCode === courseCode && /Major leader/.test(course.description)));
+  });
+  assert(courses.every((course) => course.recommendedYear === 0 && course.semester === ''));
+});
+
+test('CityU Psychology keeps optional Streams inside one 63-credit Major structure', () => {
+  const cityu = ugService.listUniversities().find((item) => item.code === 'CITYU');
+  const programme = ugService.listProgrammes({ universityId: cityu.id, degreeLevel: 'undergraduate' })
+    .find((item) => item.jupasCode === 'JS1112');
+  const majors = ugService.listMajors(programme.id);
+  const courses = ugService.listMajorCourses(programme.id, majors[0].id);
+  const inGroup = (label) => courses.filter((course) => (
+    course.requirementGroups.some((group) => group.includes(label))
+  ));
+  const inStream = (label) => courses.filter((course) => (
+    `${course.requirementGroups.join(' ')} ${course.description}`.includes(label)
+  ));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.deepEqual(majors.map((major) => major.nameEn), ['Psychology']);
+  assert.equal(courses.length, 37);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 37);
+  assert.deepEqual(
+    [inGroup('Foundation-year Courses').length, inGroup('Foundation-year Courses').reduce((sum, course) => sum + course.credits, 0)],
+    [3, 9]
+  );
+  assert.deepEqual(
+    [inGroup('Core Courses').length, inGroup('Core Courses').reduce((sum, course) => sum + course.credits, 0)],
+    [11, 36]
+  );
+  assert.equal(inGroup('Major Electives').length, 20);
+  assert.deepEqual([inStream('Health and Development').length, inStream('Mind and Brain').length], [9, 6]);
+  assert(courses.some((course) => course.courseCode === 'SS2715' && course.credits === 1));
+  assert(courses.some((course) => course.courseCode === 'SS3733' && course.credits === 2));
+  assert(courses.some((course) => course.courseCode === 'SS4708' && course.credits === 6 && course.courseType === 'capstone'));
+  assert(courses.some((course) => course.courseCode === 'PIA3207' && !course.requirementGroups.some((group) => group.includes('Major Electives'))));
+  assert(courses.some((course) => course.courseCode === 'LT3234' && /cannot fulfil both/.test(course.description)));
+  assert(courses.every((course) => course.recommendedYear === 0 && course.semester === ''));
 });
 
 test('catalogue course detail resolves only the requested university shard', () => {

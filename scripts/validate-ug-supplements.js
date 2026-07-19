@@ -17,6 +17,32 @@ function assertNoPlaceholder(value, label) {
   assert(!/(?:\b(?:TODO|TBC|TBD|PLACEHOLDER)\b|待填|待补)/i.test(String(value || '')), `${label} contains placeholder text`);
 }
 
+function validateMajorOverride(supplement, label) {
+  const declaration = supplement.majorOverride;
+  if (!declaration) return;
+
+  assert.equal(typeof declaration, 'object', `${label} majorOverride must be an object`);
+  assert(supplement.programmeId, `${label} majorOverride requires programmeId`);
+  assert(supplement.majorId, `${label} majorOverride requires majorId`);
+  assert(!supplement.createMajor, `${label} cannot combine majorOverride and createMajor`);
+
+  const expectedMajorIds = declaration.expectedMajorIds;
+  assert(Array.isArray(expectedMajorIds) && expectedMajorIds.length > 0, `${label} majorOverride needs expectedMajorIds`);
+  expectedMajorIds.forEach((majorId, index) => {
+    assert.equal(typeof majorId, 'string', `${label} majorOverride expectedMajorIds[${index}] must be a string`);
+    assert(majorId.trim(), `${label} majorOverride expectedMajorIds[${index}] is empty`);
+    assert(majorId.startsWith(`${supplement.programmeId}-M`), `${label} majorOverride Major ${majorId} does not belong to programmeId`);
+  });
+  assert.equal(new Set(expectedMajorIds).size, expectedMajorIds.length, `${label} majorOverride expectedMajorIds must be unique`);
+
+  ['id', 'code', 'nameEn'].forEach((field) => {
+    assert(String(declaration[field] || '').trim(), `${label} majorOverride is missing ${field}`);
+    assertNoPlaceholder(declaration[field], `${label} majorOverride ${field}`);
+  });
+  assert.equal(supplement.majorId, declaration.id, `${label} majorOverride id must match majorId`);
+  assert(expectedMajorIds.includes(declaration.id), `${label} majorOverride id must be included in expectedMajorIds`);
+}
+
 function validateSupplement(supplement, index) {
   const label = supplement.provider || supplement.jupasCode || supplement.programmeName || `supplement #${index + 1}`;
   assert(supplement.universityCode, `${label} is missing universityCode`);
@@ -29,6 +55,7 @@ function validateSupplement(supplement, index) {
     `${label} needs an HTTPS sourceUrl or officialUrl`
   );
   assertNoPlaceholder(label, `${label} provider`);
+  validateMajorOverride(supplement, label);
 
   const hasExplicitCourses = Array.isArray(supplement.courses);
   const hasCopySource = supplement.copyCoursesFrom && Object.keys(supplement.copyCoursesFrom).length > 0;

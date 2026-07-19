@@ -1,0 +1,362 @@
+{
+  "provider": "HKBU University Student Handbook 2025-2026",
+  "academicYear": "2025-2026",
+  "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-honours-in-business-administration",
+  "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2930",
+  "note": "The official Handbook publishes 72 units of Major Courses: a 9-unit Transdisciplinary Common Core, 15 units of Programme-specific Experiential Learning including BAGE3006 Industry Internship, a 27-unit Programme-specific Knowledge/Skills Core, and 21 units selected from the explicit Programme-specific Knowledge/Skills Elective pool. It also requires both Honours Project courses for 6 units. The elective pool contains both 3-unit and 9-unit courses, so the official select-21-units rule is preserved without inferring a fixed course count. ITS course codes are normalized without the display space used on the official page. University Core, General Education and Free Electives are excluded. ITS2028 and ITS2029 remain included because the Handbook explicitly places them in the required Transdisciplinary Common Core, while noting that they fulfil General Education learning outcomes. No Year or Term is assigned because the official requirement table does not specify course timing.",
+  "supplements": [
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BA-BUSADMIN-GE-19",
+      "jupasCode": "JS2930",
+      "programmeName": "Bachelor of Arts (Hons) in Business Administration (Global Entertainment)",
+      "majorId": "HKBU-UG-BA-BUSADMIN-GE-19-M1",
+      "majorName": "Global Entertainment",
+      "courses": [
+        {
+          "code": "ITS1005",
+          "title": "Global Challenges I",
+          "credits": 3,
+          "group": "Transdisciplinary Common Core · all required / 9 units"
+        },
+        {
+          "code": "ITS2028",
+          "title": "Global Challenges II",
+          "credits": 3,
+          "group": "Transdisciplinary Common Core · all required / 9 units"
+        },
+        {
+          "code": "ITS2029",
+          "title": "Global Challenges II",
+          "credits": 3,
+          "group": "Transdisciplinary Common Core · all required / 9 units"
+        },
+        {
+          "code": "BAGE3006",
+          "title": "Industry Internship",
+          "credits": 3,
+          "courseType": "internship",
+          "group": "Programme-specific Experiential Learning · all required / 15 units"
+        },
+        {
+          "code": "BAGE3007",
+          "title": "Transdisciplinary Collaboration I",
+          "credits": 6,
+          "group": "Programme-specific Experiential Learning · all required / 15 units"
+        },
+        {
+          "code": "BAGE3015",
+          "title": "Transdisciplinary Collaboration II",
+          "credits": 6,
+          "group": "Programme-specific Experiential Learning · all required / 15 units"
+        },
+        {
+          "code": "BAGE1005",
+          "title": "Introduction to Global Entertainment Business",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Core · all required / 27 units"
+        },
+        {
+          "code": "BAGE2005",
+          "title": "Cultural Policy and Arts Administration",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Core · all required / 27 units"
+        },
+        {
+          "code": "BUSI1005",
+          "title": "The World of Business and Entrepreneurship",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Core · all required / 27 units"
+        },
+        {
+          "code": "BUSI2066",
+          "title": "Data Analytics for Business Decision Making (for non-BBA students)",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Core · all required / 27 units"
+        },
+        {
+          "code": "CRIN3005",
+          "title": "Special Topics in Creative Industries I",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Core · all required / 27 units"
+        },
+        {
+          "code": "CRIN3006",
+          "title": "Artiste Management",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Core · all required / 27 units"
+        },
+        {
+          "code": "FILM3147",
+          "title": "Entertainment 3.0: Creative Industries and Technology",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Core · all required / 27 units"
+        },
+        {
+          "code": "LLAW2007",
+          "title": "Entertainment Law",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Core · all required / 27 units"
+        },
+        {
+          "code": "MUSI3136",
+          "title": "Creative Entrepreneurship",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Core · all required / 27 units"
+        },
+        {
+          "code": "BAGE3005",
+          "title": "Global Entertainment Business Field Trip",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "BUSI3006",
+          "title": "Business Ethics, CSR and Impact Investing",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "BUSI3025",
+          "title": "Cross-Cultural and Comparative Management",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "BUSI3057",
+          "title": "Managing Entrepreneurial Ventures",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "ECON3087",
+          "title": "Understanding the Digital Economy",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "ECON3097",
+          "title": "Data Visualization for Business Storytelling",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "ECON3105",
+          "title": "Big Data Analytics with Python",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "FAGS3017",
+          "title": "Media Arts and Performance",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "FILM2047",
+          "title": "Storytelling",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "FILM3047",
+          "title": "Hollywood Cinema",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "FILM4026",
+          "title": "East Asian Cinemas: History and Current Issues",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "FINE3025",
+          "title": "Entrepreneurial Finance",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "GAME3026",
+          "title": "Online Media Management",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "GAME4036",
+          "title": "Game Economy: Cryptocurrency and Blockchain Technology",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "HIST4315",
+          "title": "Introduction to Museum Studies",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "HUMN2026",
+          "title": "Globalization and Culture",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "HUMN3026",
+          "title": "Creative Industries: Theories and Practices",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "HUMN3037",
+          "title": "New Media Cultures",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "HUMN3045",
+          "title": "Popular Music Studies",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "HUMN3075",
+          "title": "East Asia Media Cultures in the Global Age",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "HUMN4027",
+          "title": "The Double Face of Creativity: Fact and Fiction",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "ISEM3035",
+          "title": "Introduction to Business Data Analytics and Visualization",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "ISEM4017",
+          "title": "Consumer Insight: Online Customer Data Analytics and Machine Learning Approaches",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "MKTG3006",
+          "title": "Global Marketing",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "MKTG3007",
+          "title": "Consumer Behaviour",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "MKTG3026",
+          "title": "Strategic Digital Marketing",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "MKTG3046",
+          "title": "Sports Marketing",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "MKTG4026",
+          "title": "Leisure Marketing",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "MUSI3066",
+          "title": "Music and Media",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "MUSI3085",
+          "title": "Introduction to Music Business and Music Marketing",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "MUSI3096",
+          "title": "Legal Perspective in the Creative Arts",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "MUSI3097",
+          "title": "Music Design and Programming for Video Games",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "MUSI3105",
+          "title": "History and Analysis of Game Scoring",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "MUSI3107",
+          "title": "The Past and Present of Music Theatre: from Opera to Broadway",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "MUSI3115",
+          "title": "Female and LGBTQ artists in Music, Arts and Society",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "MUSI3127",
+          "title": "Sight and Sound: Great Film Music Collaborations",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "MUSI3135",
+          "title": "Listening to the Twentieth Century",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "VART3395",
+          "title": "Studio: Graphic Design",
+          "credits": 9,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "VART3405",
+          "title": "Studio: Experience Design",
+          "credits": 9,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "WRIT3007",
+          "title": "Writing for New Media",
+          "credits": 3,
+          "group": "Programme-specific Knowledge/Skills Electives · select 21 units"
+        },
+        {
+          "code": "BAGE4898",
+          "title": "Honours Project I",
+          "credits": 3,
+          "group": "Honours Project · both required / 6 units"
+        },
+        {
+          "code": "BAGE4899",
+          "title": "Honours Project II",
+          "credits": 3,
+          "group": "Honours Project · both required / 6 units"
+        }
+      ]
+    }
+  ]
+}

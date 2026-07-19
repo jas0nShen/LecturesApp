@@ -59,12 +59,6 @@
       "statusNote": "The current 2026-27 Programme page and official prospectus confirm 24 credit points: three 3-credit Core Courses, three of nine 3-credit Elective Courses, and the 6-credit Therapeutic Play Skills practicum. They publish all current titles and credits but omit the complete code table. Current official Moodle and course-sharing pages identify only a subset, including HCS6078-HCS6080, HCS6081-HCS6083, and HCS6086; the remaining cross-faculty electives are not fully mapped by a current consolidated official source. Keep the structure closed until all thirteen course codes are verified; do not publish a partial pool or infer the missing cross-faculty codes from titles."
     },
     {
-      "programmeId": "EDUHK-TPG-DIR-MA-NMSM",
-      "status": "blocked",
-      "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-new-media-and-social-media",
-      "statusNote": "The current 2026-27 Programme page confirms a 24-credit award with four 3-credit Core Courses and four of eight 3-credit Elective Courses. The official 2025-26 Programme Handbook maps the four Core Courses and the original six electives to MDA6001-MDA6010, while current official Moodle records also confirm INT6139 for the new Educational Leadership in Innovation Technology elective. However, the second elective added for students admitted from 2026 onwards, Public Relations Strategies in Digital Age, has no course code on the current Programme page and no authenticated current code result. Keep the structure closed until EdUHK publishes that final code; do not expose the old six-course elective pool or publish eleven of twelve current courses as a complete structure."
-    },
-    {
       "programmeId": "EDUHK-TPG-DIR-MSC-AIEP",
       "status": "blocked",
       "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/master-of-science-in-artificial-intelligence-for-executive-professionals-msc-aiep",
@@ -101,12 +95,6 @@
       "statusNote": "The current 2026-27 Programme page and official prospectus confirm 24 credit points: four required 3-credit Core Courses and either four 3-credit Elective Courses or two 3-credit Elective Courses plus the 6-credit Independent Research. They publish all thirteen current titles and credit values but no consolidated course code table. The overlapping Digital Governance curriculum confirms LAW6008 National Security and Informational Security, LAW6010 Cyber Criminal Law and Practice in Hong Kong, and LAW6006 Independent Research, but the other ten current National Security Law courses do not have publicly accessible official codes. Keep the structure closed until EdUHK publishes a complete current mapping; do not infer the missing LAW codes from the shared courses or numbering sequence."
     },
     {
-      "programmeId": "EDUHK-TPG-DIR-MA-DMEC",
-      "status": "blocked",
-      "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-digital-marketing-and-e-commerce",
-      "statusNote": "The current 2026-27 Programme page confirms a 24-credit award with six 3-credit Core Courses and two of four 3-credit Elective Courses, and publishes all ten titles and credit values. Current official Moodle records confirm BUS6085 Introduction to E-commerce and Digital Retail, BUS6086 Neuromarketing, MDA6014 Marketing Analytics and Data Visualisation, and BUS6087 Frontiers in E-commerce, but do not yet provide a complete mapping for the remaining current courses. Keep the structure closed until all ten codes are officially available; do not map similarly named marketing or organisational courses from other Programmes into the missing positions."
-    },
-    {
       "programmeId": "EDUHK-TPG-DIR-MA-CHEM",
       "status": "blocked",
       "verifiedAt": "2026-07-17",
@@ -114,30 +102,6 @@
       "creditUnit": "credit points",
       "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=9118",
       "statusNote": "The current 2026-27 Programme page confirms Programme codes A1M116 (full-time) and C2M045 (part-time), a 24-credit-point award, four required 3-credit Core Courses and four of seven 3-credit Courses from one Specialisation. It publishes the complete Core title pool (Theories in Intangible Cultural Heritage; Methods in Research for Cultural Heritage Education and Management; Development and Management of Cultural Industries; Study on Chinese Culture) and the complete Heritage Education and Management Specialisation title pool (Cultural Heritage Studies in China; Cultural Tourism: Planning and Management; Exploring Hong Kong's Intangible Cultural Heritage; History, Society and Culture of Lingnan; Communication and Marketing in Cultural Industries; Independent Project in Cultural Heritage Management; Internship in Cultural Heritage Management). The Xiqu Specialisation and part-time mode are not open for application in 2026-27. The page publishes no course codes for any current title. Keep the structure closed until EdUHK publishes an authenticated current code table; do not infer codes from titles, Programme codes or the closed Xiqu path."
-    },
-    {
-      "programmeId": "EDUHK-TPG-DIR-MA-BRBCA",
-      "status": "blocked",
-      "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-belt-and-road-business-communication-and-administration",
-      "statusNote": "The current 2026-27 Programme page confirms Programme code A1M135 and a 24-credit award comprising six required 3-credit Core Courses and two of five 3-credit Elective Courses, including a Capstone Project option. It publishes every current title, credit value and the extra English-language eligibility condition on two electives, but it does not publish any course codes. Public official curriculum-module searches do not expose a complete matching code table. Keep the structure closed until all eleven current course codes are officially available; do not infer codes from titles or publish the uncoded course pool."
-    },
-    {
-      "programmeId": "EDUHK-TPG-DIR-MA-CVBLE",
-      "status": "blocked",
-      "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-chinese-values-based-leadership-education",
-      "statusNote": "The current 2026-27 Programme page confirms Programme code A1M119 and a 24-credit award comprising four required 3-credit Core Courses and four of seven 3-credit Elective Courses. It publishes every current title and credit value and states that the seven electives may not all be offered every year, but it does not publish course codes. Public official curriculum-module searches do not provide a complete code mapping. Keep the structure closed until all eleven codes are officially verified; do not infer codes from titles or treat the full elective pool as a guaranteed annual offering."
-    },
-    {
-      "programmeId": "EDUHK-TPG-DIR-MA-CECI",
-      "status": "blocked",
-      "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-comparative-education-and-collaborative-innovation",
-      "statusNote": "The current 2026-27 Programme page confirms Programme code A1M128 and a 24-credit award with four required 3-credit Core Courses. Pathway one selects four of five 3-credit electives; selected full-time students may instead complete the 6-credit Capstone Project plus two electives. The page publishes all current titles and credits. Three shared electives can be mapped elsewhere to PFS6061, PUA6027 and PFS6076, but the four new Core Courses, two other electives and Capstone Project do not have a complete public current code table. Keep the structure closed until every code is officially verified; do not publish the discoverable cross-Programme subset as a complete curriculum."
-    },
-    {
-      "programmeId": "EDUHK-TPG-DIR-MA-DHRMOM",
-      "status": "blocked",
-      "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-digital-human-resource-management-and-organisational-marketing",
-      "statusNote": "The current 2026-27 Programme page confirms Programme code A1M129 and a 24-credit award comprising four required 3-credit Core Courses and four of seven 3-credit Elective Courses, including a Capstone Project option. It publishes all eleven current titles and credit values but no course codes. Although a few titles overlap other new management Programmes, the official public curriculum-module search does not expose a complete current mapping. Keep the structure closed until all eleven codes are verified; do not transfer codes from similarly titled cross-Programme courses without an official match."
     },
     {
       "programmeId": "EDUHK-TPG-DIR-MA-SRE",

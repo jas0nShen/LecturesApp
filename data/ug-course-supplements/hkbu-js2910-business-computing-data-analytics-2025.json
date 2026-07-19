@@ -1,0 +1,369 @@
+{
+  "provider": "HKBU University Student Handbook 2025-2026",
+  "academicYear": "2025-2026",
+  "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-computer-science/bachelor-of-science-honours-in-business-computing-and-data",
+  "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2910",
+  "note": "The official Handbook publishes 66 units of Major Courses: 24 units of Business required courses, 24 units of Computer Science required courses, 9 units selected from the explicit Business Applications pool, and 9 units selected from the explicit Analytical Methodologies pool. It also requires both Final Year Project courses for 6 units. COMP3056 is explicitly a required 0-unit internship. The Analytical Methodologies rule additionally permits another COMP course subject to Department approval; this supplement records the 21 explicitly listed options and preserves that open approval rule without treating the list as closed. University Language, General Education and Free Electives are excluded. Courses merely recommended for use of Free Elective units are not included. No Year or Term is assigned because the official requirement table does not specify course timing.",
+  "supplements": [
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BSC-BCDA-17",
+      "jupasCode": "JS2910",
+      "programmeName": "Bachelor of Science (Hons) in Business Computing and Data Analytics",
+      "majorId": "HKBU-UG-BSC-BCDA-17-M1",
+      "majorName": "Bachelor of Science (Hons) in Business Computing and Data Analytics",
+      "courses": [
+        {
+          "code": "BUSI3076",
+          "title": "AI Ethics and Governance",
+          "credits": 3,
+          "group": "Major Required Courses — Business · 24 units"
+        },
+        {
+          "code": "BUSI3046",
+          "title": "Business Communication in the Technology Era",
+          "credits": 3,
+          "group": "Major Required Courses — Business · 24 units"
+        },
+        {
+          "code": "ECON1007",
+          "title": "Basic Economic Principles",
+          "credits": 3,
+          "group": "Major Required Courses — Business · 24 units"
+        },
+        {
+          "code": "ECON3096",
+          "title": "Causal Inference: Capturing Cause-and-Effect Relationships with Data",
+          "credits": 3,
+          "group": "Major Required Courses — Business · 24 units"
+        },
+        {
+          "code": "ECON3106",
+          "title": "Big Data Analytics in Business",
+          "credits": 3,
+          "group": "Major Required Courses — Business · 24 units"
+        },
+        {
+          "code": "FINE2005",
+          "title": "Financial Management",
+          "credits": 3,
+          "group": "Major Required Courses — Business · 24 units"
+        },
+        {
+          "code": "FINE3005",
+          "title": "Investment Management",
+          "credits": 3,
+          "group": "Major Required Courses — Business · 24 units"
+        },
+        {
+          "code": "FINE4026",
+          "title": "FinTech for Banking and Finance",
+          "credits": 3,
+          "group": "Major Required Courses — Business · 24 units"
+        },
+        {
+          "code": "COMP1007",
+          "title": "Introduction to Python and Its Application",
+          "credits": 3,
+          "group": "Major Required Courses — Computer Science · 24 units"
+        },
+        {
+          "code": "COMP1016",
+          "title": "Mathematical Methods for Business Computing",
+          "credits": 3,
+          "group": "Major Required Courses — Computer Science · 24 units"
+        },
+        {
+          "code": "COMP2016",
+          "title": "Database Management",
+          "credits": 3,
+          "group": "Major Required Courses — Computer Science · 24 units"
+        },
+        {
+          "code": "COMP2045",
+          "title": "Programming and Problem Solving",
+          "credits": 2,
+          "group": "Major Required Courses — Computer Science · 24 units"
+        },
+        {
+          "code": "COMP3056",
+          "title": "Internship for Business Computing and Data Analytics",
+          "credits": 0,
+          "courseType": "internship",
+          "group": "Major Required Courses — Computer Science · 24 units",
+          "description": "The official Handbook lists this internship as a required 0-unit course."
+        },
+        {
+          "code": "COMP3057",
+          "title": "Introduction to Artificial Intelligence and Machine Learning",
+          "credits": 3,
+          "group": "Major Required Courses — Computer Science · 24 units"
+        },
+        {
+          "code": "COMP3115",
+          "title": "Exploratory Data Analysis and Visualization",
+          "credits": 3,
+          "group": "Major Required Courses — Computer Science · 24 units"
+        },
+        {
+          "code": "COMP4145",
+          "title": "Business, Intelligence, Decision Support and Project Development",
+          "credits": 4,
+          "group": "Major Required Courses — Computer Science · 24 units"
+        },
+        {
+          "code": "MATH1026",
+          "title": "Probability and Statistics with Software",
+          "credits": 3,
+          "group": "Major Required Courses — Computer Science · 24 units"
+        },
+        {
+          "code": "BUSI1005",
+          "title": "The World of Business and Entrepreneurship",
+          "credits": 3,
+          "group": "Major Elective Courses — Business Applications · choose 3 courses / 9 units"
+        },
+        {
+          "code": "BUSI2035",
+          "title": "Entrepreneurship and Innovative Thinking",
+          "credits": 3,
+          "group": "Major Elective Courses — Business Applications · choose 3 courses / 9 units"
+        },
+        {
+          "code": "BUSI2056",
+          "title": "Entrepreneurial Accounting and Finance (for non-BBA students)",
+          "credits": 3,
+          "group": "Major Elective Courses — Business Applications · choose 3 courses / 9 units"
+        },
+        {
+          "code": "ECON3097",
+          "title": "Data Visualization for Business Storytelling",
+          "credits": 3,
+          "group": "Major Elective Courses — Business Applications · choose 3 courses / 9 units"
+        },
+        {
+          "code": "ECON4006",
+          "title": "Time Series Analysis and Forecasting",
+          "credits": 3,
+          "group": "Major Elective Courses — Business Applications · choose 3 courses / 9 units"
+        },
+        {
+          "code": "ECON4035",
+          "title": "Economics of Digital Currencies",
+          "credits": 3,
+          "group": "Major Elective Courses — Business Applications · choose 3 courses / 9 units"
+        },
+        {
+          "code": "ECON4036",
+          "title": "Business Forecasting for Analysts",
+          "credits": 3,
+          "group": "Major Elective Courses — Business Applications · choose 3 courses / 9 units"
+        },
+        {
+          "code": "FINE2006",
+          "title": "Banking and Credit",
+          "credits": 3,
+          "group": "Major Elective Courses — Business Applications · choose 3 courses / 9 units"
+        },
+        {
+          "code": "FINE3025",
+          "title": "Entrepreneurial Finance",
+          "credits": 3,
+          "group": "Major Elective Courses — Business Applications · choose 3 courses / 9 units"
+        },
+        {
+          "code": "FINE4016",
+          "title": "Business Valuation Using Financial Statements",
+          "credits": 3,
+          "group": "Major Elective Courses — Business Applications · choose 3 courses / 9 units"
+        },
+        {
+          "code": "ISEM3036",
+          "title": "Advanced Business Analytics and Data Visualization for Digital Commerce",
+          "credits": 3,
+          "group": "Major Elective Courses — Business Applications · choose 3 courses / 9 units"
+        },
+        {
+          "code": "ISEM4017",
+          "title": "Consumer Insight: Online Customer Data Analytics and Machine Learning Approaches",
+          "credits": 3,
+          "group": "Major Elective Courses — Business Applications · choose 3 courses / 9 units"
+        },
+        {
+          "code": "ISEM4035",
+          "title": "Blockchain: Virtual Assets and Business Applications",
+          "credits": 3,
+          "group": "Major Elective Courses — Business Applications · choose 3 courses / 9 units"
+        },
+        {
+          "code": "ISEM4036",
+          "title": "Cybersecurity and Data Privacy",
+          "credits": 3,
+          "group": "Major Elective Courses — Business Applications · choose 3 courses / 9 units"
+        },
+        {
+          "code": "MKTG3047",
+          "title": "Big Data Marketing",
+          "credits": 3,
+          "group": "Major Elective Courses — Business Applications · choose 3 courses / 9 units"
+        },
+        {
+          "code": "MKTG3056",
+          "title": "Social Media Marketing",
+          "credits": 3,
+          "group": "Major Elective Courses — Business Applications · choose 3 courses / 9 units"
+        },
+        {
+          "code": "MKTG4006",
+          "title": "e-CRM",
+          "credits": 3,
+          "group": "Major Elective Courses — Business Applications · choose 3 courses / 9 units"
+        },
+        {
+          "code": "REMT3006",
+          "title": "Smart Retailing",
+          "credits": 3,
+          "group": "Major Elective Courses — Business Applications · choose 3 courses / 9 units"
+        },
+        {
+          "code": "COMP2015",
+          "title": "Data Structures and Algorithms",
+          "credits": 3,
+          "group": "Major Elective Courses — Analytical Methodologies · choose 3 courses / 9 units; other COMP course subject to Department approval"
+        },
+        {
+          "code": "COMP2027",
+          "title": "Applied Linear Algebra for Computing",
+          "credits": 3,
+          "group": "Major Elective Courses — Analytical Methodologies · choose 3 courses / 9 units; other COMP course subject to Department approval"
+        },
+        {
+          "code": "COMP3015",
+          "title": "Data Communications and Networking",
+          "credits": 3,
+          "group": "Major Elective Courses — Analytical Methodologies · choose 3 courses / 9 units; other COMP course subject to Department approval"
+        },
+        {
+          "code": "COMP3045",
+          "title": "Advanced Algorithm Design, Analysis, and Implementation",
+          "credits": 3,
+          "group": "Major Elective Courses — Analytical Methodologies · choose 3 courses / 9 units; other COMP course subject to Department approval"
+        },
+        {
+          "code": "COMP3046",
+          "title": "Advanced Programming for Software Development",
+          "credits": 3,
+          "group": "Major Elective Courses — Analytical Methodologies · choose 3 courses / 9 units; other COMP course subject to Department approval"
+        },
+        {
+          "code": "COMP3047",
+          "title": "Software Engineering",
+          "credits": 3,
+          "group": "Major Elective Courses — Analytical Methodologies · choose 3 courses / 9 units; other COMP course subject to Department approval"
+        },
+        {
+          "code": "COMP3065",
+          "title": "Artificial Intelligence Application Development",
+          "credits": 3,
+          "group": "Major Elective Courses — Analytical Methodologies · choose 3 courses / 9 units; other COMP course subject to Department approval"
+        },
+        {
+          "code": "COMP4015",
+          "title": "Artificial Intelligence and Machine Learning",
+          "credits": 3,
+          "group": "Major Elective Courses — Analytical Methodologies · choose 3 courses / 9 units; other COMP course subject to Department approval"
+        },
+        {
+          "code": "COMP4017",
+          "title": "Computer and Network Security",
+          "credits": 3,
+          "group": "Major Elective Courses — Analytical Methodologies · choose 3 courses / 9 units; other COMP course subject to Department approval"
+        },
+        {
+          "code": "COMP4027",
+          "title": "Data Mining and Knowledge Discovery",
+          "credits": 3,
+          "group": "Major Elective Courses — Analytical Methodologies · choose 3 courses / 9 units; other COMP course subject to Department approval"
+        },
+        {
+          "code": "COMP4035",
+          "title": "Database System Implementation",
+          "credits": 3,
+          "group": "Major Elective Courses — Analytical Methodologies · choose 3 courses / 9 units; other COMP course subject to Department approval"
+        },
+        {
+          "code": "COMP4045",
+          "title": "Human Computer Interaction",
+          "credits": 3,
+          "group": "Major Elective Courses — Analytical Methodologies · choose 3 courses / 9 units; other COMP course subject to Department approval"
+        },
+        {
+          "code": "COMP4046",
+          "title": "Information Systems Control and Auditing",
+          "credits": 3,
+          "group": "Major Elective Courses — Analytical Methodologies · choose 3 courses / 9 units; other COMP course subject to Department approval"
+        },
+        {
+          "code": "COMP4047",
+          "title": "Internet and World Wide Web",
+          "credits": 3,
+          "group": "Major Elective Courses — Analytical Methodologies · choose 3 courses / 9 units; other COMP course subject to Department approval"
+        },
+        {
+          "code": "COMP4075",
+          "title": "Social Computing and Web Intelligence",
+          "credits": 3,
+          "group": "Major Elective Courses — Analytical Methodologies · choose 3 courses / 9 units; other COMP course subject to Department approval"
+        },
+        {
+          "code": "COMP4097",
+          "title": "Mobile Computing and Internet of Things",
+          "credits": 3,
+          "group": "Major Elective Courses — Analytical Methodologies · choose 3 courses / 9 units; other COMP course subject to Department approval"
+        },
+        {
+          "code": "COMP4106",
+          "title": "E-Business Technology",
+          "credits": 3,
+          "group": "Major Elective Courses — Analytical Methodologies · choose 3 courses / 9 units; other COMP course subject to Department approval"
+        },
+        {
+          "code": "COMP4125",
+          "title": "Visual Analytics",
+          "credits": 3,
+          "group": "Major Elective Courses — Analytical Methodologies · choose 3 courses / 9 units; other COMP course subject to Department approval"
+        },
+        {
+          "code": "COMP4127",
+          "title": "Information Security",
+          "credits": 3,
+          "group": "Major Elective Courses — Analytical Methodologies · choose 3 courses / 9 units; other COMP course subject to Department approval"
+        },
+        {
+          "code": "COMP4136",
+          "title": "Natural Language Processing and Large Language Models",
+          "credits": 3,
+          "group": "Major Elective Courses — Analytical Methodologies · choose 3 courses / 9 units; other COMP course subject to Department approval"
+        },
+        {
+          "code": "COMP4137",
+          "title": "Blockchain Technology and Applications",
+          "credits": 3,
+          "group": "Major Elective Courses — Analytical Methodologies · choose 3 courses / 9 units; other COMP course subject to Department approval"
+        },
+        {
+          "code": "COMP4918",
+          "title": "Final Year Project I",
+          "credits": 3,
+          "group": "Projects · both required / 6 units"
+        },
+        {
+          "code": "COMP4919",
+          "title": "Final Year Project II",
+          "credits": 3,
+          "group": "Projects · both required / 6 units"
+        }
+      ]
+    }
+  ]
+}

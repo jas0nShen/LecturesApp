@@ -4,6 +4,26 @@ const test = require('node:test');
 
 const ROOT = path.join(__dirname, '..');
 const tpgService = require('../miniprogram/utils/tpgService');
+const ugService = require('../miniprogram/utils/ugService');
+
+function getIndexOnlyUgProfile() {
+  for (const university of ugService.listUniversities()) {
+    const programmes = ugService.listProgrammes({ universityId: university.id, degreeLevel: 'undergraduate' });
+    for (const programme of programmes) {
+      const major = ugService.listMajors(programme.id).find((item) => item.codedCourseCount === 0);
+      if (major) {
+        return {
+          profileType: 'undergraduate',
+          universityCode: university.code,
+          programmeId: programme.id,
+          majorId: major.id,
+          curriculumYear: programme.curriculumYear
+        };
+      }
+    }
+  }
+  throw new Error('Expected at least one index-only undergraduate Major fixture');
+}
 
 function loadPage(relativePath, initialStorage = {}, app = {}) {
   const pagePath = path.join(ROOT, relativePath);
@@ -169,13 +189,7 @@ test('opened UG Major decorates planned courses and opens the shared Study Plan 
 
 test('index-only UG Major does not expose a usable plan entry', async () => {
   const { page, calls } = loadPage('miniprogram/pages/courses/courses.js', {
-    userProfile: {
-      profileType: 'undergraduate',
-      universityCode: 'HKU',
-      programmeId: 'HKU-UG-6066-20',
-      majorId: 'HKU-UG-6066-20-M1',
-      curriculumYear: '2026'
-    }
+    userProfile: getIndexOnlyUgProfile()
   }, {
     ensureUniversityLoaded: () => Promise.resolve()
   });

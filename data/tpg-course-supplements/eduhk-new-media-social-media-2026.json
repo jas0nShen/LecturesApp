@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "EDUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-18",
+  "programmes": [
+    {
+      "programmeId": "EDUHK-TPG-DIR-MA-NMSM",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "credit points",
+      "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-new-media-and-social-media",
+      "ruleReviewStatus": "verified",
+      "statusNote": "The live official 2026-27 Programme page requires four 3-credit-point Core Courses and any four of eight 3-credit-point Elective Courses, for 24 credit points in total. The official Programme Handbook and Moodle records confirm the original MDA course codes and INT6139. The official 2026-27 Semester 1 Moodle record confirms MDA6017 Public Relations Strategies in Digital Age, resolving the final missing code.",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Core Courses (12 credit points).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-new-media-and-social-media",
+          "courses": [
+            { "code": "MDA6001", "name": "Applied Communication Research", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&ta=2&tag=AEDI&tc=1" },
+            { "code": "MDA6006", "name": "New Media Law, Ethics and Regulation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&ta=2&tag=AEDI&tc=1" },
+            { "code": "MDA6002", "name": "New Media Education", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&ta=2&tag=AEDI&tc=1" },
+            { "code": "MDA6003", "name": "Psychological Aspects of New Media and AI", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&ta=2&tag=AEDI&tc=1" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Choose any four of the eight Elective Courses (12 credit points). INT6139 and MDA6017 are applicable to students admitted from 2026 onwards.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-new-media-and-social-media",
+          "courses": [
+            { "code": "MDA6004", "name": "Online and Mobile Journalism", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&ta=2&tag=AEDI&tc=1" },
+            { "code": "MDA6005", "name": "Multimedia Production", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&ta=2&tag=AEDI&tc=1" },
+            { "code": "MDA6007", "name": "Business Journalism and Branding on Social Media", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&ta=2&tag=AEDI&tc=1" },
+            { "code": "MDA6008", "name": "Application of New Media Technology in Education", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&ta=2&tag=AEDI&tc=1" },
+            { "code": "MDA6009", "name": "New Media, Algorithm, and AI", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&ta=2&tag=AEDI&tc=1" },
+            { "code": "MDA6010", "name": "Capstone Project", "credits": 3, "courseKind": "project", "appliesToTrackIds": [], "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&ta=2&tag=AEDI&tc=1" },
+            { "code": "INT6139", "name": "Educational Leadership in Innovation Technology: Artificial Intelligence, Big Data and Knowledge Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&ta=2&tag=AEDI&tc=1" },
+            { "code": "MDA6017", "name": "Public Relations Strategies in Digital Age", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://moodle.eduhk.hk/tag/index.php?excl=1&page=0&ta=2&tag=AEDI&tc=1" }
+          ]
+        }
+      ]
+    }
+  ]
+}

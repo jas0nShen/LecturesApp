@@ -1,0 +1,2398 @@
+{
+  "provider": "HKBU University Student Handbook 2025-2026",
+  "academicYear": "2025-2026",
+  "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/",
+  "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2610",
+  "note": "The official 2025-2026 Handbook publishes separate curriculum tables for all six JS2610 catalogue Majors. Courses are intentionally repeated under each exact Major identity when shared. European Studies French and German Stream courses remain isolated in stream-specific groups, while common courses are labelled explicitly. University Language Courses, General Education Courses and Free Electives are open requirements with unit totals but no closed coded pools on these Programme pages, so they are excluded. No Year or Term is inferred. Global and China Studies theme minima, off-campus-learning substitutions and experiential-learning double counting require manual audit. The Sociology table is internally inconsistent: it states a 3-unit Honours Project but lists SOCI4898 and SOCI4899 at 3 units each, and both linked official course pages also state 3 units; both published codes are retained with the conflict marked for manual confirmation.",
+  "supplements": [
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BA-BSOCSC-13",
+      "jupasCode": "JS2610",
+      "majorId": "HKBU-UG-BA-BSOCSC-13-M1",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/academy-of-geography-sociology-and-international-studies/bachelor-of-social-sciences-honours-in-european-studies-1",
+      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2610",
+      "courses": [
+        {
+          "code": "SOSC1006",
+          "title": "Invitation to Social Sciences",
+          "credits": 1,
+          "group": "Social Sciences Common Core · Core Course / required / 1 unit"
+        },
+        {
+          "code": "SOSC3005",
+          "title": "Community and Civic Engagement",
+          "credits": 3,
+          "group": "Social Sciences Common Core · Experiential Learning in Action / Either-Or / 3 units"
+        },
+        {
+          "code": "SOSC3006",
+          "title": "Global Outreach",
+          "credits": 3,
+          "group": "Social Sciences Common Core · Experiential Learning in Action / Either-Or / 3 units"
+        },
+        {
+          "code": "EURO1205",
+          "title": "French and German Societies through the World of Film",
+          "credits": 3,
+          "group": "Major Required Courses · common to French and German Streams / stream total 66 units"
+        },
+        {
+          "code": "EURO1206",
+          "title": "Europe: Unity and Diversity",
+          "credits": 3,
+          "group": "Major Required Courses · common to French and German Streams / stream total 66 units"
+        },
+        {
+          "code": "EURO2007",
+          "title": "The Political Economy of the European Union",
+          "credits": 3,
+          "group": "Major Required Courses · common to French and German Streams / stream total 66 units"
+        },
+        {
+          "code": "EURO2015",
+          "title": "Model European Union",
+          "credits": 3,
+          "group": "Major Required Courses · common to French and German Streams / stream total 66 units"
+        },
+        {
+          "code": "EURO4005",
+          "title": "Current Issues of European Integration",
+          "credits": 3,
+          "group": "Major Required Courses · common to French and German Streams / stream total 66 units"
+        },
+        {
+          "code": "EURO4006",
+          "title": "European Economic and Business Life: travailler en contexte international",
+          "credits": 3,
+          "group": "Major Required Courses · French Stream / stream total 66 units"
+        },
+        {
+          "code": "EURO4007",
+          "title": "European Economic and Business Life: Wirtschaft im Wandel/Deutsch-chinesische Wirtschaftsbeziehungen",
+          "credits": 3,
+          "group": "Major Required Courses · German Stream / stream total 66 units"
+        },
+        {
+          "code": "EURO4205",
+          "title": "European Foreign Relations and Diplomacy: Relations extérieures et diplomatie françaises",
+          "credits": 3,
+          "group": "Major Required Courses · French Stream / stream total 66 units"
+        },
+        {
+          "code": "EURO4206",
+          "title": "European Foreign Relations and Diplomacy: Deutschlands Aussenbeziehungen und Diplomatie",
+          "credits": 3,
+          "group": "Major Required Courses · German Stream / stream total 66 units"
+        },
+        {
+          "code": "EURO4215",
+          "title": "French-Speaking Countries and Communities: la francophonie",
+          "credits": 3,
+          "group": "Major Required Courses · French Stream / stream total 66 units"
+        },
+        {
+          "code": "EURO4216",
+          "title": "German-Speaking Countries and Communities",
+          "credits": 3,
+          "group": "Major Required Courses · German Stream / stream total 66 units"
+        },
+        {
+          "code": "EURO4225",
+          "title": "Contemporary European Societies: questions d’actualité",
+          "credits": 3,
+          "group": "Major Required Courses · French Stream / stream total 66 units"
+        },
+        {
+          "code": "EURO4226",
+          "title": "Contemporary European Societies: Struktur und Zukunft der Sozialen Marktwirtschaft",
+          "credits": 3,
+          "group": "Major Required Courses · German Stream / stream total 66 units"
+        },
+        {
+          "code": "FREN1205",
+          "title": "European Language in Context I (French)",
+          "credits": 9,
+          "group": "Major Required Courses · French Stream / stream total 66 units"
+        },
+        {
+          "code": "GERM1205",
+          "title": "European Language in Context I (German)",
+          "credits": 9,
+          "group": "Major Required Courses · German Stream / stream total 66 units"
+        },
+        {
+          "code": "FREN2027",
+          "title": "Summer School on European Language and Culture (French)",
+          "credits": 6,
+          "group": "Major Required Courses · French Stream / stream total 66 units"
+        },
+        {
+          "code": "GERM2027",
+          "title": "Summer School on European Language and Culture (German)",
+          "credits": 6,
+          "group": "Major Required Courses · German Stream / stream total 66 units"
+        },
+        {
+          "code": "FREN2208",
+          "title": "European Language in Context II (French)",
+          "credits": 9,
+          "group": "Major Required Courses · French Stream / stream total 66 units"
+        },
+        {
+          "code": "FREN2209",
+          "title": "European Language in Context II (French)",
+          "credits": 9,
+          "group": "Major Required Courses · French Stream / stream total 66 units"
+        },
+        {
+          "code": "GERM2208",
+          "title": "European Language in Context II (German)",
+          "credits": 9,
+          "group": "Major Required Courses · German Stream / stream total 66 units"
+        },
+        {
+          "code": "GERM2209",
+          "title": "European Language in Context II (German)",
+          "credits": 9,
+          "group": "Major Required Courses · German Stream / stream total 66 units"
+        },
+        {
+          "code": "POLS2007",
+          "title": "Introduction to Research Methods",
+          "credits": 3,
+          "group": "Major Required Courses · common to French and German Streams / stream total 66 units"
+        },
+        {
+          "code": "POLS2205",
+          "title": "European Politics and Society: French Political and Government System",
+          "credits": 3,
+          "group": "Major Required Courses · French Stream / stream total 66 units"
+        },
+        {
+          "code": "POLS2206",
+          "title": "European Politics and Society: German Political Systems and Society",
+          "credits": 3,
+          "group": "Major Required Courses · German Stream / stream total 66 units"
+        },
+        {
+          "code": "EURO4898",
+          "title": "Honours Project (European Studies)",
+          "credits": 3,
+          "group": "Honours Project · both courses required / 6 units",
+          "courseType": "capstone"
+        },
+        {
+          "code": "EURO4899",
+          "title": "Honours Project (European Studies)",
+          "credits": 3,
+          "group": "Honours Project · both courses required / 6 units",
+          "courseType": "capstone"
+        },
+        {
+          "code": "EURO3008",
+          "title": "European Academic/Internship Semester I",
+          "credits": 9,
+          "group": "European Academic/Internship Semesters · both courses / 21 units",
+          "courseType": "internship",
+          "description": "The official table places the 21-unit European Academic/Internship Semesters beside Free Electives and states that taking both changes the Experiential Learning and free-elective accounting; manual audit is required."
+        },
+        {
+          "code": "EURO3009",
+          "title": "European Academic/Internship Semester II",
+          "credits": 12,
+          "group": "European Academic/Internship Semesters · both courses / 21 units",
+          "courseType": "internship",
+          "description": "The official table places the 21-unit European Academic/Internship Semesters beside Free Electives and states that taking both changes the Experiential Learning and free-elective accounting; manual audit is required."
+        }
+      ]
+    },
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BA-BSOCSC-13",
+      "jupasCode": "JS2610",
+      "majorId": "HKBU-UG-BA-BSOCSC-13-M2",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/academy-of-geography-sociology-and-international-studies/bachelor-of-social-sciences-honours-in-geography-1",
+      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2610",
+      "courses": [
+        {
+          "code": "SOSC1006",
+          "title": "Invitation to Social Sciences",
+          "credits": 1,
+          "group": "Social Sciences Common Core · Core Course / required / 1 unit"
+        },
+        {
+          "code": "SOSC3005",
+          "title": "Community and Civic Engagement",
+          "credits": 3,
+          "group": "Social Sciences Common Core · Experiential Learning in Action / Either-Or / 3 units"
+        },
+        {
+          "code": "SOSC3006",
+          "title": "Global Outreach",
+          "credits": 3,
+          "group": "Social Sciences Common Core · Experiential Learning in Action / Either-Or / 3 units"
+        },
+        {
+          "code": "GEOG1005",
+          "title": "Geography and the Contemporary World",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 24 units"
+        },
+        {
+          "code": "GEOG2005",
+          "title": "Cultures, Peoples and Landscapes",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 24 units"
+        },
+        {
+          "code": "GEOG2006",
+          "title": "Earth Systems: Shaping Landscapes",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 24 units"
+        },
+        {
+          "code": "GEOG2015",
+          "title": "Maps and Map Making",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 24 units"
+        },
+        {
+          "code": "GEOG2016",
+          "title": "Earth Systems: Atmosphere and Biosphere",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 24 units"
+        },
+        {
+          "code": "GEOG2017",
+          "title": "Globalization of Economic Activities",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 24 units"
+        },
+        {
+          "code": "GEOG3005",
+          "title": "Field Camp",
+          "credits": 0,
+          "group": "Major Required Courses · all required / 24 units"
+        },
+        {
+          "code": "GEOG3006",
+          "title": "Regional Geography of China",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 24 units"
+        },
+        {
+          "code": "GSIS2005",
+          "title": "Statistics for the Social Sciences",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 24 units"
+        },
+        {
+          "code": "GEOG3036",
+          "title": "Writing Spatial Stories through Qualitative Research",
+          "credits": 3,
+          "group": "Major Elective Courses · Geoanalytics and Research Practice · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG4006",
+          "title": "Advanced Quantitative Methods in Geography",
+          "credits": 3,
+          "group": "Major Elective Courses · Geoanalytics and Research Practice · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG4017",
+          "title": "Geographical Information Systems",
+          "credits": 3,
+          "group": "Major Elective Courses · Geoanalytics and Research Practice · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG4025",
+          "title": "Geographical Imaginations",
+          "credits": 3,
+          "group": "Major Elective Courses · Geoanalytics and Research Practice · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG4046",
+          "title": "Remote Sensing and Image Interpretation",
+          "credits": 3,
+          "group": "Major Elective Courses · Geoanalytics and Research Practice · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG3015",
+          "title": "Geography of Health and the Environment",
+          "credits": 3,
+          "group": "Major Elective Courses · Physical Systems and Environmental Dynamics · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG3017",
+          "title": "Global Environmental Issues and Sustainability",
+          "credits": 3,
+          "group": "Major Elective Courses · Physical Systems and Environmental Dynamics · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG4005",
+          "title": "Advanced Climatology",
+          "credits": 3,
+          "group": "Major Elective Courses · Physical Systems and Environmental Dynamics · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG4015",
+          "title": "Coastal Environments and Processes",
+          "credits": 3,
+          "group": "Major Elective Courses · Physical Systems and Environmental Dynamics · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG4027",
+          "title": "Geography of Environmental Hazards",
+          "credits": 3,
+          "group": "Major Elective Courses · Physical Systems and Environmental Dynamics · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG4057",
+          "title": "Selected Topics in the Geography of China (Physical and Environmental Geography)",
+          "credits": 3,
+          "group": "Major Elective Courses · Physical Systems and Environmental Dynamics · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG4066",
+          "title": "Seminar in Environmental Planning and Management",
+          "credits": 3,
+          "group": "Major Elective Courses · Physical Systems and Environmental Dynamics · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG4096",
+          "title": "Biogeography",
+          "credits": 3,
+          "group": "Major Elective Courses · Physical Systems and Environmental Dynamics · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG4097",
+          "title": "Ecosystems and Processes",
+          "credits": 3,
+          "group": "Major Elective Courses · Physical Systems and Environmental Dynamics · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG2026",
+          "title": "Introduction to Smart and Sustainable Cities",
+          "credits": 3,
+          "group": "Major Elective Courses · Urban Studies, Cities and Everyday Life · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG3025",
+          "title": "Population Geography",
+          "credits": 3,
+          "group": "Major Elective Courses · Urban Studies, Cities and Everyday Life · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG3027",
+          "title": "Urban Geography",
+          "credits": 3,
+          "group": "Major Elective Courses · Urban Studies, Cities and Everyday Life · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG4035",
+          "title": "Geography of Transportation",
+          "credits": 3,
+          "group": "Major Elective Courses · Urban Studies, Cities and Everyday Life · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG4056",
+          "title": "Selected Topics in the Geography of China (Human Geography)",
+          "credits": 3,
+          "group": "Major Elective Courses · Urban Studies, Cities and Everyday Life · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG4076",
+          "title": "Urban Cultural Landscape",
+          "credits": 3,
+          "group": "Major Elective Courses · Urban Studies, Cities and Everyday Life · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG4085",
+          "title": "Urban Development in China",
+          "credits": 3,
+          "group": "Major Elective Courses · Urban Studies, Cities and Everyday Life · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG4086",
+          "title": "Urban and Environmental Planning",
+          "credits": 3,
+          "group": "Major Elective Courses · Urban Studies, Cities and Everyday Life · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG2025",
+          "title": "The Guangdong-Hong Kong-Macao Greater Bay Area: A Geographical Survey",
+          "credits": 3,
+          "group": "Major Elective Courses · Regions, Development and Resource Management · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG3007",
+          "title": "Energy Problems and the Environment",
+          "credits": 3,
+          "group": "Major Elective Courses · Regions, Development and Resource Management · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG3016",
+          "title": "Geography of Pacific Asia: Regional Development and Geopolitics",
+          "credits": 3,
+          "group": "Major Elective Courses · Regions, Development and Resource Management · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG3037",
+          "title": "Environmental Health and Policy",
+          "credits": 3,
+          "group": "Major Elective Courses · Regions, Development and Resource Management · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG4016",
+          "title": "Sustainable Energy and Technological Innovation in China",
+          "credits": 3,
+          "group": "Major Elective Courses · Regions, Development and Resource Management · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG4026",
+          "title": "Geography of Economic Development",
+          "credits": 3,
+          "group": "Major Elective Courses · Regions, Development and Resource Management · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG4036",
+          "title": "Political Geography",
+          "credits": 3,
+          "group": "Major Elective Courses · Regions, Development and Resource Management · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG4047",
+          "title": "Resource and Environmental Management in China",
+          "credits": 3,
+          "group": "Major Elective Courses · Regions, Development and Resource Management · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG4055",
+          "title": "Rural and Agricultural Development in China",
+          "credits": 3,
+          "group": "Major Elective Courses · Regions, Development and Resource Management · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG4065",
+          "title": "Energy Policy and Analysis",
+          "credits": 3,
+          "group": "Major Elective Courses · Regions, Development and Resource Management · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG4087",
+          "title": "Natural Resource Evaluation and Policy Approaches",
+          "credits": 3,
+          "group": "Major Elective Courses · Regions, Development and Resource Management · published pool / select 33 units overall; at least one course from each area"
+        },
+        {
+          "code": "GEOG4898",
+          "title": "Honours Project",
+          "credits": 3,
+          "group": "Honours Project · both courses required / 6 units",
+          "courseType": "capstone"
+        },
+        {
+          "code": "GEOG4899",
+          "title": "Honours Project",
+          "credits": 3,
+          "group": "Honours Project · both courses required / 6 units",
+          "courseType": "capstone"
+        }
+      ]
+    },
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BA-BSOCSC-13",
+      "jupasCode": "JS2610",
+      "majorId": "HKBU-UG-BA-BSOCSC-13-M3",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/bachelor-of-social-sciences-honours-in-global-and-china",
+      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2610",
+      "courses": [
+        {
+          "code": "SOSC1006",
+          "title": "Invitation to Social Sciences",
+          "credits": 1,
+          "group": "Social Sciences Common Core · Core Course / required / 1 unit"
+        },
+        {
+          "code": "SOSC3005",
+          "title": "Community and Civic Engagement",
+          "credits": 3,
+          "group": "Social Sciences Common Core · Experiential Learning in Action / Either-Or / 3 units"
+        },
+        {
+          "code": "SOSC3006",
+          "title": "Global Outreach",
+          "credits": 3,
+          "group": "Social Sciences Common Core · Experiential Learning in Action / Either-Or / 3 units"
+        },
+        {
+          "code": "GCST1005",
+          "title": "Approaches in Global Studies",
+          "credits": 3,
+          "group": "Global and China Studies Required Courses · Global Studies Theory / all required / 9 units"
+        },
+        {
+          "code": "GCST2005",
+          "title": "China and the Contemporary Global Order",
+          "credits": 3,
+          "group": "Global and China Studies Required Courses · Global Studies Theory / all required / 9 units"
+        },
+        {
+          "code": "GCST4005",
+          "title": "Alternative Globalisations",
+          "credits": 3,
+          "group": "Global and China Studies Required Courses · Global Studies Theory / all required / 9 units"
+        },
+        {
+          "code": "GCST3007",
+          "title": "Research and Professional Writing",
+          "credits": 3,
+          "group": "Global and China Studies Required Courses · Research and Professional Writing / required / 3 units"
+        },
+        {
+          "code": "GSIS2005",
+          "title": "Statistics for Social Sciences",
+          "credits": 3,
+          "group": "Global and China Studies Required Courses · Quantitative Social Science Methods / required / 3 units"
+        },
+        {
+          "code": "GEOG3036",
+          "title": "Writing Spatial Stories through Qualitative Research",
+          "credits": 3,
+          "group": "Global and China Studies Required Courses · Qualitative Social Science Methods / select one / 3 units"
+        },
+        {
+          "code": "HIST3405",
+          "title": "Historical Theory and Practice",
+          "credits": 3,
+          "group": "Global and China Studies Required Courses · Qualitative Social Science Methods / select one / 3 units"
+        },
+        {
+          "code": "SOCI2005",
+          "title": "Qualitative Methods of Social Research",
+          "credits": 3,
+          "group": "Global and China Studies Required Courses · Qualitative Social Science Methods / select one / 3 units"
+        },
+        {
+          "code": "GCST2006",
+          "title": "A Political Economy of Global China",
+          "credits": 3,
+          "group": "Global and China Studies Required Courses · Researching China in the World and the World in China / all required / 9 units"
+        },
+        {
+          "code": "GCST2015",
+          "title": "Cultural Heritage and Chinese Society",
+          "credits": 3,
+          "group": "Global and China Studies Required Courses · Researching China in the World and the World in China / all required / 9 units"
+        },
+        {
+          "code": "GCST2016",
+          "title": "Sustainable China: Environment and Development Issues",
+          "credits": 3,
+          "group": "Global and China Studies Required Courses · Researching China in the World and the World in China / all required / 9 units"
+        },
+        {
+          "code": "GCST2017",
+          "title": "Summer Sojourn I",
+          "credits": 3,
+          "group": "Global and China Studies Required Courses · Experiential Learning and Capstone / Either-Or / 3 units",
+          "courseType": "core"
+        },
+        {
+          "code": "GCST2026",
+          "title": "Summer Sojourn I (for Non-Chinese Speaking Students)",
+          "credits": 3,
+          "group": "Global and China Studies Required Courses · Experiential Learning and Capstone / Either-Or / 3 units",
+          "courseType": "core"
+        },
+        {
+          "code": "GCST2025",
+          "title": "Global China Work Placement",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Experiential Learning and Capstone · published pool / select 24 units overall",
+          "courseType": "internship",
+          "description": "One of GCST2025 or GCST3005 supplies the second 3 units of the official 6-unit off-campus-learning requirement after GCST2017; substitution against Social Sciences Common Core experiential learning requires manual audit."
+        },
+        {
+          "code": "GCST3005",
+          "title": "Summer Sojourn II",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Experiential Learning and Capstone · published pool / select 24 units overall",
+          "courseType": "major_elective",
+          "description": "One of GCST2025 or GCST3005 supplies the second 3 units of the official 6-unit off-campus-learning requirement after GCST2017; substitution against Social Sciences Common Core experiential learning requires manual audit."
+        },
+        {
+          "code": "GCST3006",
+          "title": "Undergraduate Research Fellowship",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Experiential Learning and Capstone · published pool / select 24 units overall",
+          "courseType": "major_elective"
+        },
+        {
+          "code": "ECON4005",
+          "title": "China's Foreign Economic Relations and Trade",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "EURO2007",
+          "title": "The Political Economy of the European Union",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "EURO4005",
+          "title": "Current Issues of European Integration",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "GCST2007",
+          "title": "China’s Foreign Relations in a Global Context: Key Concepts and Major Issue",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "GEOG2017",
+          "title": "Globalization of Economic Activities",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "GEOG3016",
+          "title": "Geography of Pacific Asia: Regional Development and Geopolitics",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "GEOG4036",
+          "title": "Political Geography",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST2305",
+          "title": "China and the West since 1500",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST3105",
+          "title": "Contemporary China",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST3116",
+          "title": "Foreign Relations of Modern China",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST3127",
+          "title": "Historical Interactions of China and the World",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST3135",
+          "title": "The Socialist and Communist Traditions",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST3205",
+          "title": "Themes in Modern European History",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST3206",
+          "title": "History of Southeast Asia",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST3207",
+          "title": "History of the United States since 1877",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST3216",
+          "title": "History of Japan Since 1912",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST3225",
+          "title": "Europe since the First World War",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST3226",
+          "title": "History of Korea",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST3227",
+          "title": "Modern History of Singapore",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST3305",
+          "title": "China and Asia since 1900",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST3306",
+          "title": "International Relations after 1945",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST3307",
+          "title": "International Relations to 1945",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST3315",
+          "title": "Modern Japan and the West",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST3316",
+          "title": "Colonialism and Modern Asia",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST4106",
+          "title": "Contemporary Chinese Political Thought",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST4107",
+          "title": "History of Taiwan",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST4216",
+          "title": "The US in the World in the Twentieth Century",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST4305",
+          "title": "Sino-American Relations",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST4306",
+          "title": "Sino-Russian Relations",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST4316",
+          "title": "Global History of the Seas, 1400-1950",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST4317",
+          "title": "Global History of Tourism",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST4325",
+          "title": "History of Africa since Independence",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "POLS2015",
+          "title": "Government and Politics of Hong Kong",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "POLS2017",
+          "title": "Foundations of International Relations",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "POLS3017",
+          "title": "Government and Politics of China",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "POLS3237",
+          "title": "Social and Political Developments in Contemporary China",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "POLS3245",
+          "title": "China and the World",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "POLS4245",
+          "title": "Topics in Comparative and Global Politics",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "POLS4246",
+          "title": "Topics in European Politics",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "POLS4255",
+          "title": "Comparative Regionalism and Regionalization",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "POLS4257",
+          "title": "International and Global Justice",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "SOCI4066",
+          "title": "Nationalism and Identity Politics",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Foreign Relations and Politics · published pool / select 24 units overall"
+        },
+        {
+          "code": "ECON1007",
+          "title": "Basic Economic Principles",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Innovation, Economics and Development · published pool / select 24 units overall"
+        },
+        {
+          "code": "ECON2015",
+          "title": "Hong Kong Economy",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Innovation, Economics and Development · published pool / select 24 units overall"
+        },
+        {
+          "code": "ECON3006",
+          "title": "Asia-Pacific Economies",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Innovation, Economics and Development · published pool / select 24 units overall"
+        },
+        {
+          "code": "ECON3017",
+          "title": "International Trade and Finance",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Innovation, Economics and Development · published pool / select 24 units overall"
+        },
+        {
+          "code": "ECON3025",
+          "title": "Money and Banking",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Innovation, Economics and Development · published pool / select 24 units overall"
+        },
+        {
+          "code": "ECON3026",
+          "title": "Chinese Economic Developments",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Innovation, Economics and Development · published pool / select 24 units overall"
+        },
+        {
+          "code": "ECON3046",
+          "title": "Economic Development",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Innovation, Economics and Development · published pool / select 24 units overall"
+        },
+        {
+          "code": "ECON3087",
+          "title": "Understanding the Digital Economy",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Innovation, Economics and Development · published pool / select 24 units overall"
+        },
+        {
+          "code": "ECON3095",
+          "title": "Urban and Regional Economic Development in China",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Innovation, Economics and Development · published pool / select 24 units overall"
+        },
+        {
+          "code": "ECON4007",
+          "title": "Money and Finance in China",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Innovation, Economics and Development · published pool / select 24 units overall"
+        },
+        {
+          "code": "ECON4017",
+          "title": "Innovation and Entrepreneurial Economy: China and Global Development",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Innovation, Economics and Development · published pool / select 24 units overall"
+        },
+        {
+          "code": "ECON4027",
+          "title": "Financial Markets and Corporate Governance in China",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Innovation, Economics and Development · published pool / select 24 units overall"
+        },
+        {
+          "code": "ECON4035",
+          "title": "Economics of Digital Currencies",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Innovation, Economics and Development · published pool / select 24 units overall"
+        },
+        {
+          "code": "GEOG2025",
+          "title": "The Guangdong-Hong Kong-Macao Greater Bay Area: A Geographical Survey",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Innovation, Economics and Development · published pool / select 24 units overall"
+        },
+        {
+          "code": "GEOG4026",
+          "title": "Geography of Economic Development",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Innovation, Economics and Development · published pool / select 24 units overall"
+        },
+        {
+          "code": "GEOG4055",
+          "title": "Rural and Agricultural Development in China",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Innovation, Economics and Development · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST4116",
+          "title": "Intellectual Trends in Modern China",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Innovation, Economics and Development · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST4125",
+          "title": "Revolution and Nationalism in Republican China (1912-1949)",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Innovation, Economics and Development · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST4127",
+          "title": "Social and Economic Development of Modern China",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Innovation, Economics and Development · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST4217",
+          "title": "Western Intellectual Thought",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Innovation, Economics and Development · published pool / select 24 units overall"
+        },
+        {
+          "code": "SOCI3045",
+          "title": "China and Tourism",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Innovation, Economics and Development · published pool / select 24 units overall"
+        },
+        {
+          "code": "SOCI3046",
+          "title": "Global Capitalisms",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Innovation, Economics and Development · published pool / select 24 units overall"
+        },
+        {
+          "code": "SOCI3047",
+          "title": "Sociology of Consumption",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Innovation, Economics and Development · published pool / select 24 units overall"
+        },
+        {
+          "code": "SOCI4015",
+          "title": "East Asia: Economic Miracles and Social Change",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Innovation, Economics and Development · published pool / select 24 units overall"
+        },
+        {
+          "code": "GEOG2005",
+          "title": "Cultures, Peoples and Landscapes",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Culture, Heritage and Communities · published pool / select 24 units overall"
+        },
+        {
+          "code": "GEOG4076",
+          "title": "Urban Cultural Landscape",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Culture, Heritage and Communities · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST2105",
+          "title": "Introduction to Modern Chinese History",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Culture, Heritage and Communities · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST3325",
+          "title": "History of Chinese Food Culture in Global Perspective",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Culture, Heritage and Communities · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST4105",
+          "title": "History of Chinese Women since 1912",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Culture, Heritage and Communities · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST4315",
+          "title": "Introduction to Museum Studies",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Culture, Heritage and Communities · published pool / select 24 units overall"
+        },
+        {
+          "code": "SOCI2016",
+          "title": "Modern Chinese Society",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Culture, Heritage and Communities · published pool / select 24 units overall"
+        },
+        {
+          "code": "SOCI2017",
+          "title": "Popular Culture and Society",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Culture, Heritage and Communities · published pool / select 24 units overall"
+        },
+        {
+          "code": "SOCI2025",
+          "title": "Population and Social Issues",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Culture, Heritage and Communities · published pool / select 24 units overall"
+        },
+        {
+          "code": "SOCI2027",
+          "title": "Social Problems",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Culture, Heritage and Communities · published pool / select 24 units overall"
+        },
+        {
+          "code": "SOCI2035",
+          "title": "Social Inequalities",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Culture, Heritage and Communities · published pool / select 24 units overall"
+        },
+        {
+          "code": "SOCI2036",
+          "title": "Sociology of Marriage and the Family",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Culture, Heritage and Communities · published pool / select 24 units overall"
+        },
+        {
+          "code": "SOCI2037",
+          "title": "Unity and Diversity: The Making of Chinese Culture and Society",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Culture, Heritage and Communities · published pool / select 24 units overall"
+        },
+        {
+          "code": "SOCI2045",
+          "title": "Urban Sociology",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Culture, Heritage and Communities · published pool / select 24 units overall"
+        },
+        {
+          "code": "SOCI2047",
+          "title": "Hong Kong Society",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Culture, Heritage and Communities · published pool / select 24 units overall"
+        },
+        {
+          "code": "SOCI3007",
+          "title": "Global Social Transformations",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Culture, Heritage and Communities · published pool / select 24 units overall"
+        },
+        {
+          "code": "SOCI3016",
+          "title": "Political Sociology",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Culture, Heritage and Communities · published pool / select 24 units overall"
+        },
+        {
+          "code": "SOCI3017",
+          "title": "Health and Society",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Culture, Heritage and Communities · published pool / select 24 units overall"
+        },
+        {
+          "code": "SOCI3025",
+          "title": "The Internet and Society",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Culture, Heritage and Communities · published pool / select 24 units overall"
+        },
+        {
+          "code": "SOCI3026",
+          "title": "Work and Society",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Culture, Heritage and Communities · published pool / select 24 units overall"
+        },
+        {
+          "code": "SOCI3027",
+          "title": "Careers and Life Courses",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Culture, Heritage and Communities · published pool / select 24 units overall"
+        },
+        {
+          "code": "SOCI3035",
+          "title": "Sex, Gender and Society",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Culture, Heritage and Communities · published pool / select 24 units overall"
+        },
+        {
+          "code": "SOCI3037",
+          "title": "Children, Youth and Aging",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Culture, Heritage and Communities · published pool / select 24 units overall"
+        },
+        {
+          "code": "SOCI3056",
+          "title": "Community Engagement for Social Sustainability",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Culture, Heritage and Communities · published pool / select 24 units overall"
+        },
+        {
+          "code": "SOCI4006",
+          "title": "Chinese Family and Kinship",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Culture, Heritage and Communities · published pool / select 24 units overall"
+        },
+        {
+          "code": "SOCI4046",
+          "title": "Social Networks",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Culture, Heritage and Communities · published pool / select 24 units overall"
+        },
+        {
+          "code": "SOCI4055",
+          "title": "Gender in Contemporary China",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Culture, Heritage and Communities · published pool / select 24 units overall"
+        },
+        {
+          "code": "SOCI4057",
+          "title": "Social Classes under Modern Economic Reform",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · Culture, Heritage and Communities · published pool / select 24 units overall"
+        },
+        {
+          "code": "ECON4026",
+          "title": "Smart Cities: China and Global Development",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · People, City/Environment and Resources · published pool / select 24 units overall"
+        },
+        {
+          "code": "GEOG3006",
+          "title": "Regional Geography of China",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · People, City/Environment and Resources · published pool / select 24 units overall"
+        },
+        {
+          "code": "GEOG3007",
+          "title": "Energy Problems and the Environment",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · People, City/Environment and Resources · published pool / select 24 units overall"
+        },
+        {
+          "code": "GEOG3015",
+          "title": "Geography of Health and the Environment",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · People, City/Environment and Resources · published pool / select 24 units overall"
+        },
+        {
+          "code": "GEOG3017",
+          "title": "Global Environmental Issues and Sustainability",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · People, City/Environment and Resources · published pool / select 24 units overall"
+        },
+        {
+          "code": "GEOG3025",
+          "title": "Population Geography",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · People, City/Environment and Resources · published pool / select 24 units overall"
+        },
+        {
+          "code": "GEOG3027",
+          "title": "Urban Geography",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · People, City/Environment and Resources · published pool / select 24 units overall"
+        },
+        {
+          "code": "GEOG3037",
+          "title": "Environmental Health and Policy",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · People, City/Environment and Resources · published pool / select 24 units overall"
+        },
+        {
+          "code": "GEOG4016",
+          "title": "Sustainable Energy and Technological Innovation in China",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · People, City/Environment and Resources · published pool / select 24 units overall"
+        },
+        {
+          "code": "GEOG4035",
+          "title": "Geography of Transportation",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · People, City/Environment and Resources · published pool / select 24 units overall"
+        },
+        {
+          "code": "GEOG4047",
+          "title": "Resource and Environmental Management in China",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · People, City/Environment and Resources · published pool / select 24 units overall"
+        },
+        {
+          "code": "GEOG4056",
+          "title": "Selected Topics in the Geography of China (Human Geography)",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · People, City/Environment and Resources · published pool / select 24 units overall"
+        },
+        {
+          "code": "GEOG4057",
+          "title": "Selected Topics in the Geography of China (Physical and Environmental Geography)",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · People, City/Environment and Resources · published pool / select 24 units overall"
+        },
+        {
+          "code": "GEOG4065",
+          "title": "Energy Policy and Analysis",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · People, City/Environment and Resources · published pool / select 24 units overall"
+        },
+        {
+          "code": "GEOG4085",
+          "title": "Urban Development in China",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · People, City/Environment and Resources · published pool / select 24 units overall"
+        },
+        {
+          "code": "GEOG4086",
+          "title": "Urban and Environmental Planning",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · People, City/Environment and Resources · published pool / select 24 units overall"
+        },
+        {
+          "code": "GEOG4087",
+          "title": "Natural Resources Evaluation and Policy Approaches",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · People, City/Environment and Resources · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST3317",
+          "title": "The Chinese Diaspora",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · People, City/Environment and Resources · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST4145",
+          "title": "Historical Anthropology of Chinese Society",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · People, City/Environment and Resources · published pool / select 24 units overall"
+        },
+        {
+          "code": "HIST4206",
+          "title": "The Overseas Chinese in Southeast Asia",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · People, City/Environment and Resources · published pool / select 24 units overall"
+        },
+        {
+          "code": "SOCI3055",
+          "title": "Population and Social Developments in Asia",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · People, City/Environment and Resources · published pool / select 24 units overall"
+        },
+        {
+          "code": "SOCI4065",
+          "title": "Chinese Entrepreneurship and Overseas Chinese in the Global Context",
+          "credits": 3,
+          "group": "Global and China Studies Elective Courses · People, City/Environment and Resources · published pool / select 24 units overall"
+        },
+        {
+          "code": "GCST4898",
+          "title": "Honours Project",
+          "credits": 3,
+          "group": "Honours Project · both courses required / 6 units",
+          "courseType": "capstone"
+        },
+        {
+          "code": "GCST4899",
+          "title": "Honours Project",
+          "credits": 3,
+          "group": "Honours Project · both courses required / 6 units",
+          "courseType": "capstone"
+        }
+      ]
+    },
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BA-BSOCSC-13",
+      "jupasCode": "JS2610",
+      "majorId": "HKBU-UG-BA-BSOCSC-13-M4",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/academy-of-geography-sociology-and-international-studies/bachelor-of-social-sciences-honours-in-government-and-1",
+      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2610",
+      "courses": [
+        {
+          "code": "SOSC1006",
+          "title": "Invitation to Social Sciences",
+          "credits": 1,
+          "group": "Social Sciences Common Core · Core Course / required / 1 unit"
+        },
+        {
+          "code": "SOSC3005",
+          "title": "Community and Civic Engagement",
+          "credits": 3,
+          "group": "Social Sciences Common Core · Experiential Learning in Action / Either-Or / 3 units"
+        },
+        {
+          "code": "SOSC3006",
+          "title": "Global Outreach",
+          "credits": 3,
+          "group": "Social Sciences Common Core · Experiential Learning in Action / Either-Or / 3 units"
+        },
+        {
+          "code": "GSIS2005",
+          "title": "Statistics for the Social Sciences",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 24 units"
+        },
+        {
+          "code": "POLS1005",
+          "title": "Foundations of Political Science",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 24 units"
+        },
+        {
+          "code": "POLS2006",
+          "title": "Introduction to Political Economy",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 24 units"
+        },
+        {
+          "code": "POLS2007",
+          "title": "Introduction to Research Methods",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 24 units"
+        },
+        {
+          "code": "POLS2015",
+          "title": "Government and Politics of Hong Kong",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 24 units"
+        },
+        {
+          "code": "POLS2017",
+          "title": "Foundations of International Relations",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 24 units"
+        },
+        {
+          "code": "POLS2025",
+          "title": "Foundations of Political Philosophy",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 24 units"
+        },
+        {
+          "code": "POLS3017",
+          "title": "Government and Politics of China",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 24 units"
+        },
+        {
+          "code": "EURO2007",
+          "title": "The Political Economy of the European Union",
+          "credits": 3,
+          "group": "Major Elective Courses · published pool / select 11 courses / 33 units"
+        },
+        {
+          "code": "EURO2015",
+          "title": "Model European Union",
+          "credits": 3,
+          "group": "Major Elective Courses · published pool / select 11 courses / 33 units"
+        },
+        {
+          "code": "EURO3205",
+          "title": "Comparative Politics of Post-Communist Central Europe",
+          "credits": 3,
+          "group": "Major Elective Courses · published pool / select 11 courses / 33 units"
+        },
+        {
+          "code": "EURO4005",
+          "title": "Current Issues of European Integration",
+          "credits": 3,
+          "group": "Major Elective Courses · published pool / select 11 courses / 33 units"
+        },
+        {
+          "code": "POLS2016",
+          "title": "Social Movements and Contentious Politics",
+          "credits": 3,
+          "group": "Major Elective Courses · published pool / select 11 courses / 33 units"
+        },
+        {
+          "code": "POLS2026",
+          "title": "Ethics, Social Well-being, and Public Health",
+          "credits": 3,
+          "group": "Major Elective Courses · published pool / select 11 courses / 33 units"
+        },
+        {
+          "code": "POLS2205",
+          "title": "European Politics and Society: French Political and Government System",
+          "credits": 3,
+          "group": "Major Elective Courses · published pool / select 11 courses / 33 units"
+        },
+        {
+          "code": "POLS2206",
+          "title": "European Politics and Society: German Political Systems and Society",
+          "credits": 3,
+          "group": "Major Elective Courses · published pool / select 11 courses / 33 units"
+        },
+        {
+          "code": "POLS3206",
+          "title": "Government and Politics of Japan",
+          "credits": 3,
+          "group": "Major Elective Courses · published pool / select 11 courses / 33 units"
+        },
+        {
+          "code": "POLS3225",
+          "title": "Religion and Politics",
+          "credits": 3,
+          "group": "Major Elective Courses · published pool / select 11 courses / 33 units"
+        },
+        {
+          "code": "POLS3226",
+          "title": "War and Peace",
+          "credits": 3,
+          "group": "Major Elective Courses · published pool / select 11 courses / 33 units"
+        },
+        {
+          "code": "POLS3227",
+          "title": "Greater China: State and Society",
+          "credits": 3,
+          "group": "Major Elective Courses · published pool / select 11 courses / 33 units"
+        },
+        {
+          "code": "POLS3235",
+          "title": "Comparative Democracies: The United Kingdom and The United States",
+          "credits": 3,
+          "group": "Major Elective Courses · published pool / select 11 courses / 33 units"
+        },
+        {
+          "code": "POLS3236",
+          "title": "Gender and Politics",
+          "credits": 3,
+          "group": "Major Elective Courses · published pool / select 11 courses / 33 units"
+        },
+        {
+          "code": "POLS3237",
+          "title": "Social and Political Developments in Contemporary China",
+          "credits": 3,
+          "group": "Major Elective Courses · published pool / select 11 courses / 33 units"
+        },
+        {
+          "code": "POLS3245",
+          "title": "China and the World",
+          "credits": 3,
+          "group": "Major Elective Courses · published pool / select 11 courses / 33 units"
+        },
+        {
+          "code": "POLS4207",
+          "title": "Comparative Public Administration",
+          "credits": 3,
+          "group": "Major Elective Courses · published pool / select 11 courses / 33 units"
+        },
+        {
+          "code": "POLS4225",
+          "title": "Political Cultures and Economies in Transition",
+          "credits": 3,
+          "group": "Major Elective Courses · published pool / select 11 courses / 33 units"
+        },
+        {
+          "code": "POLS4226",
+          "title": "Public Policy and Governance",
+          "credits": 3,
+          "group": "Major Elective Courses · published pool / select 11 courses / 33 units"
+        },
+        {
+          "code": "POLS4227",
+          "title": "Security Studies",
+          "credits": 3,
+          "group": "Major Elective Courses · published pool / select 11 courses / 33 units"
+        },
+        {
+          "code": "POLS4236",
+          "title": "Theories of International Relations",
+          "credits": 3,
+          "group": "Major Elective Courses · published pool / select 11 courses / 33 units"
+        },
+        {
+          "code": "POLS4237",
+          "title": "Topics in Asian Politics",
+          "credits": 3,
+          "group": "Major Elective Courses · published pool / select 11 courses / 33 units"
+        },
+        {
+          "code": "POLS4245",
+          "title": "Topics in Comparative and Global Politics",
+          "credits": 3,
+          "group": "Major Elective Courses · published pool / select 11 courses / 33 units"
+        },
+        {
+          "code": "POLS4246",
+          "title": "Topics in European Politics",
+          "credits": 3,
+          "group": "Major Elective Courses · published pool / select 11 courses / 33 units"
+        },
+        {
+          "code": "POLS4247",
+          "title": "Comparative Electoral and Party Politics",
+          "credits": 3,
+          "group": "Major Elective Courses · published pool / select 11 courses / 33 units"
+        },
+        {
+          "code": "POLS4255",
+          "title": "Comparative Regionalism and Regionalization",
+          "credits": 3,
+          "group": "Major Elective Courses · published pool / select 11 courses / 33 units"
+        },
+        {
+          "code": "POLS4256",
+          "title": "Comparative Authoritarianism and Democratization",
+          "credits": 3,
+          "group": "Major Elective Courses · published pool / select 11 courses / 33 units"
+        },
+        {
+          "code": "POLS4257",
+          "title": "International and Global Justice",
+          "credits": 3,
+          "group": "Major Elective Courses · published pool / select 11 courses / 33 units"
+        },
+        {
+          "code": "POLS4265",
+          "title": "Topics in Political Theory and Philosophy",
+          "credits": 3,
+          "group": "Major Elective Courses · published pool / select 11 courses / 33 units"
+        },
+        {
+          "code": "POLS4266",
+          "title": "China-EU, Prospects, Opportunities and Challenges",
+          "credits": 3,
+          "group": "Major Elective Courses · published pool / select 11 courses / 33 units"
+        },
+        {
+          "code": "POLS4898",
+          "title": "Honours Project",
+          "credits": 3,
+          "group": "Honours Project · both courses required / 6 units",
+          "courseType": "capstone"
+        },
+        {
+          "code": "POLS4899",
+          "title": "Honours Project",
+          "credits": 3,
+          "group": "Honours Project · both courses required / 6 units",
+          "courseType": "capstone"
+        }
+      ]
+    },
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BA-BSOCSC-13",
+      "jupasCode": "JS2610",
+      "majorId": "HKBU-UG-BA-BSOCSC-13-M5",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/academy-of-chinese-history-religion-and-philosophy/bachelor-of-arts-honours-in-history-1",
+      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2610",
+      "courses": [
+        {
+          "code": "SOSC1006",
+          "title": "Invitation to Social Sciences",
+          "credits": 1,
+          "group": "Social Sciences Common Core · Core Course / required / 1 unit"
+        },
+        {
+          "code": "SOSC3005",
+          "title": "Community and Civic Engagement",
+          "credits": 3,
+          "group": "Social Sciences Common Core · Experiential Learning in Action / Either-Or / 3 units"
+        },
+        {
+          "code": "SOSC3006",
+          "title": "Global Outreach",
+          "credits": 3,
+          "group": "Social Sciences Common Core · Experiential Learning in Action / Either-Or / 3 units"
+        },
+        {
+          "code": "HIST1205",
+          "title": "World History: Civilizations in Contact",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 27 units"
+        },
+        {
+          "code": "HIST1405",
+          "title": "History, Heritage and Human Communities",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 27 units"
+        },
+        {
+          "code": "HIST3106",
+          "title": "Current Issues in Hong Kong and China",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 27 units"
+        },
+        {
+          "code": "HIST3127",
+          "title": "Historical Interactions of China and the World",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 27 units"
+        },
+        {
+          "code": "HIST3205",
+          "title": "Themes in Modern European History",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 27 units"
+        },
+        {
+          "code": "HIST3206",
+          "title": "History of Southeast Asia",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 27 units"
+        },
+        {
+          "code": "HIST3207",
+          "title": "History of the United States since 1877",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 27 units"
+        },
+        {
+          "code": "HIST3316",
+          "title": "Colonialism and Modern Asia",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 27 units"
+        },
+        {
+          "code": "HIST3405",
+          "title": "Historical Theory and Practice",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 27 units"
+        },
+        {
+          "code": "HIST1105",
+          "title": "China in the Imperial Age",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 1 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST2105",
+          "title": "Introduction to Modern Chinese History",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 1 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST2106",
+          "title": "History of Hong Kong since 1900",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 1 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST2305",
+          "title": "China and the West since 1500",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 1 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST3105",
+          "title": "Contemporary China",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 1 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST3107",
+          "title": "Early Imperial China",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 1 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST3116",
+          "title": "Foreign Relations of Modern China",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 1 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST3117",
+          "title": "History of Hong Kong to 1900",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 1 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST3125",
+          "title": "Late Imperial China",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 1 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST3126",
+          "title": "Mid Imperial China",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 1 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST3137",
+          "title": "Material Cultures of China",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 1 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST3305",
+          "title": "China and Asia since 1900",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 1 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4105",
+          "title": "History of Chinese Women since 1912",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 1 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4106",
+          "title": "Contemporary Chinese Political Thought",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 1 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4107",
+          "title": "History of Taiwan",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 1 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4115",
+          "title": "History of the Catholic Church in China",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 1 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4116",
+          "title": "Intellectual Trends in Modern China",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 1 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4117",
+          "title": "Missionaries in Modern China",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 1 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4125",
+          "title": "Revolution and Nationalism in Republican China (1912–1949)",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 1 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4126",
+          "title": "Selected Themes in the History of Chinese Women",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 1 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4127",
+          "title": "Social and Economic Development of Modern China",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 1 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4135",
+          "title": "Topic Studies in Chinese History",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 1 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4136",
+          "title": "Childhood in Imperial China",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 1 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4146",
+          "title": "Chinese Painting and Calligraphy: The Arts of the Brush",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 1 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST2205",
+          "title": "Modern Asia (1800-1945)",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 2 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST3215",
+          "title": "History of the United States to 1877",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 2 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST3216",
+          "title": "History of Japan since 1912",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 2 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST3217",
+          "title": "Nineteenth Century European History",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 2 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST3225",
+          "title": "Europe since the First World War",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 2 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST3226",
+          "title": "History of Korea",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 2 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST3227",
+          "title": "Modern History of Singapore",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 2 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST3306",
+          "title": "International Relations after 1945",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 2 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST3307",
+          "title": "International Relations to 1945",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 2 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST3315",
+          "title": "Modern Japan and the West",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 2 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST3317",
+          "title": "The Chinese Diaspora",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 2 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4205",
+          "title": "Origins of Western Imperialism",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 2 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4206",
+          "title": "The Overseas Chinese in Southeast Asia",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 2 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4215",
+          "title": "Topic Studies in Western History",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 2 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4216",
+          "title": "The US in the World in the Twentieth Century",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 2 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4305",
+          "title": "Sino-American Relations",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 2 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4306",
+          "title": "Sino-Russian Relations",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 2 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4307",
+          "title": "Topic Studies in Sino/Asian-Western Relations",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 2 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4317",
+          "title": "Global History of Tourism",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 2 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4325",
+          "title": "History of Africa since Independence",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 2 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST2405",
+          "title": "Historiographical Traditions: East and West",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 3 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST2107",
+          "title": "Introduction to Spatial History",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 3 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST3115",
+          "title": "Engendering Imperial Chinese History",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 3 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST3135",
+          "title": "The Socialist and Communist Traditions",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 3 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST3136",
+          "title": "Intangible Cultural Heritage in Hong Kong and South China",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 3 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST3145",
+          "title": "Navigating Policy Changes: Humanistic Community Engagement and Digital Insights",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 3 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST3325",
+          "title": "History of Chinese Food Culture in Global Perspective",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 3 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST3406",
+          "title": "Information Technologies and Quantitative Methods for Historical Studies",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 3 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4137",
+          "title": "Legal History of Traditional China",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 3 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4145",
+          "title": "Historical Anthropology of Chinese Society",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 3 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4207",
+          "title": "Topic Studies in Asian History",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 3 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4217",
+          "title": "Western Intellectual Thought",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 3 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4315",
+          "title": "Introduction to Museum Studies",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 3 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4316",
+          "title": "Global History of the Seas, 1400–1950",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 3 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4326",
+          "title": "Science and Society: A Historical Perspective",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 3 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4327",
+          "title": "Topic Studies in Comparative History",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 3 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4335",
+          "title": "Topic Studies in Global History",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 3 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4405",
+          "title": "Oral History and Its Local Applications",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 3 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4406",
+          "title": "Topic Studies in Cultural History",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 3 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4407",
+          "title": "Topic Studies in Social History",
+          "credits": 3,
+          "group": "Major Elective Courses · Cluster 3 · published pool / select 30 units overall; at least one course from each cluster"
+        },
+        {
+          "code": "HIST4898",
+          "title": "Honours Project",
+          "credits": 3,
+          "group": "Honours Project · both courses required / 6 units",
+          "courseType": "capstone"
+        },
+        {
+          "code": "HIST4899",
+          "title": "Honours Project",
+          "credits": 3,
+          "group": "Honours Project · both courses required / 6 units",
+          "courseType": "capstone"
+        }
+      ]
+    },
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BA-BSOCSC-13",
+      "jupasCode": "JS2610",
+      "majorId": "HKBU-UG-BA-BSOCSC-13-M6",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/academy-of-geography-sociology-and-international-studies/bachelor-of-social-sciences-honours-in-sociology-1",
+      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2610",
+      "courses": [
+        {
+          "code": "SOSC1006",
+          "title": "Invitation to Social Sciences",
+          "credits": 1,
+          "group": "Social Sciences Common Core · Core Course / required / 1 unit"
+        },
+        {
+          "code": "SOSC3005",
+          "title": "Community and Civic Engagement",
+          "credits": 3,
+          "group": "Social Sciences Common Core · Experiential Learning in Action / Either-Or / 3 units"
+        },
+        {
+          "code": "SOSC3006",
+          "title": "Global Outreach",
+          "credits": 3,
+          "group": "Social Sciences Common Core · Experiential Learning in Action / Either-Or / 3 units"
+        },
+        {
+          "code": "GSIS2005",
+          "title": "Statistics for the Social Sciences",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 18 units"
+        },
+        {
+          "code": "SOCI1005",
+          "title": "Invitation to Sociology",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 18 units"
+        },
+        {
+          "code": "SOCI2005",
+          "title": "Qualitative Methods of Social Research",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 18 units"
+        },
+        {
+          "code": "SOCI2015",
+          "title": "Classical Social Theory",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 18 units"
+        },
+        {
+          "code": "SOCI2046",
+          "title": "Designing Social Investigations",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 18 units"
+        },
+        {
+          "code": "SOCI3005",
+          "title": "Social Theory: Contemporary Approaches",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 18 units"
+        },
+        {
+          "code": "SOCI2016",
+          "title": "Modern Chinese Society",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 2 / select 3 courses / 9 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI2017",
+          "title": "Popular Culture and Society",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 2 / select 3 courses / 9 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI2025",
+          "title": "Population and Social Issues",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 2 / select 3 courses / 9 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI2027",
+          "title": "Social Problems",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 2 / select 3 courses / 9 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI2035",
+          "title": "Social Inequalities",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 2 / select 3 courses / 9 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI2036",
+          "title": "Sociology of Marriage and the Family",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 2 / select 3 courses / 9 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI2037",
+          "title": "Unity and Diversity: The Making of Chinese Culture and Society",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 2 / select 3 courses / 9 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI2045",
+          "title": "Urban Sociology",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 2 / select 3 courses / 9 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI2047",
+          "title": "Hong Kong Society",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 2 / select 3 courses / 9 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI3007",
+          "title": "Global Social Transformations",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 3 / select at least 4 courses / at least 12 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI3016",
+          "title": "Political Sociology",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 3 / select at least 4 courses / at least 12 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI3017",
+          "title": "Health and Society",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 3 / select at least 4 courses / at least 12 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI3025",
+          "title": "The Internet and Society",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 3 / select at least 4 courses / at least 12 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI3026",
+          "title": "Work and Society",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 3 / select at least 4 courses / at least 12 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI3027",
+          "title": "Careers and Life Courses",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 3 / select at least 4 courses / at least 12 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI3035",
+          "title": "Sex, Gender and Society",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 3 / select at least 4 courses / at least 12 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI3045",
+          "title": "China and Tourism",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 3 / select at least 4 courses / at least 12 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI3046",
+          "title": "Global Capitalisms",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 3 / select at least 4 courses / at least 12 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI3047",
+          "title": "Sociology of Consumption",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 3 / select at least 4 courses / at least 12 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI3055",
+          "title": "Population and Social Developments in Asia",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 3 / select at least 4 courses / at least 12 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI3056",
+          "title": "Community Engagement for Social Sustainability",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 3 / select at least 4 courses / at least 12 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI3057",
+          "title": "Leisure and Well-being: Coping with Stress",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 3 / select at least 4 courses / at least 12 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI3065",
+          "title": "Quantitative Methods of Social Research",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 3 / select at least 4 courses / at least 12 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI4006",
+          "title": "Chinese Family and Kinship",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 4 / select at least 5 courses / at least 15 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI4015",
+          "title": "East Asia: Economic Miracles and Social Change",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 4 / select at least 5 courses / at least 15 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI4016",
+          "title": "Globalization",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 4 / select at least 5 courses / at least 15 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI4017",
+          "title": "Management, Organization and Society",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 4 / select at least 5 courses / at least 15 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI4026",
+          "title": "Selected Topics in Contemporary Sociology I",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 4 / select at least 5 courses / at least 15 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI4027",
+          "title": "Selected Topics in Contemporary Sociology II",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 4 / select at least 5 courses / at least 15 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI4035",
+          "title": "Selected Topics in the Sociology of China I",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 4 / select at least 5 courses / at least 15 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI4036",
+          "title": "Selected Topics in the Sociology of China II",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 4 / select at least 5 courses / at least 15 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI4037",
+          "title": "Cultural Sociology",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 4 / select at least 5 courses / at least 15 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI4046",
+          "title": "Social Networks",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 4 / select at least 5 courses / at least 15 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI4055",
+          "title": "Gender in Contemporary China",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 4 / select at least 5 courses / at least 15 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI4066",
+          "title": "Nationalism and Identity Politics",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 4 / select at least 5 courses / at least 15 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI4067",
+          "title": "Crime, Deviance and Control",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 4 / select at least 5 courses / at least 15 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI4075",
+          "title": "Body, Self and Society",
+          "credits": 3,
+          "group": "Major Elective Courses · Level 4 / select at least 5 courses / at least 15 units; 42 elective units overall"
+        },
+        {
+          "code": "SOCI4898",
+          "title": "Honours Project",
+          "credits": 3,
+          "group": "Honours Project · official structure conflict: heading 3 units, two 3-unit courses published",
+          "courseType": "capstone",
+          "description": "The Programme table states 3 units for Honours Project but lists both SOCI4898 and SOCI4899 as 3 units; each linked official course page also states 3 units. Completion logic requires manual confirmation."
+        },
+        {
+          "code": "SOCI4899",
+          "title": "Honours Project",
+          "credits": 3,
+          "group": "Honours Project · official structure conflict: heading 3 units, two 3-unit courses published",
+          "courseType": "capstone",
+          "description": "The Programme table states 3 units for Honours Project but lists both SOCI4898 and SOCI4899 as 3 units; each linked official course page also states 3 units. Completion logic requires manual confirmation."
+        }
+      ]
+    }
+  ]
+}

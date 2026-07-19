@@ -41,8 +41,29 @@
       ]
     },
     {
-      "root": "subpackages/ug-data-hku",
-      "name": "ug-data-hku",
+      "root": "subpackages/ug-data-hku-a",
+      "name": "ug-data-hku-a",
+      "pages": [
+        "pages/loader/index"
+      ]
+    },
+    {
+      "root": "subpackages/ug-data-hku-b",
+      "name": "ug-data-hku-b",
+      "pages": [
+        "pages/loader/index"
+      ]
+    },
+    {
+      "root": "subpackages/ug-data-hkbu-a",
+      "name": "ug-data-hkbu-a",
+      "pages": [
+        "pages/loader/index"
+      ]
+    },
+    {
+      "root": "subpackages/ug-data-hkbu-b",
+      "name": "ug-data-hkbu-b",
       "pages": [
         "pages/loader/index"
       ]

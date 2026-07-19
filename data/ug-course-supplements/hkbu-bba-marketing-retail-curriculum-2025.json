@@ -1,0 +1,717 @@
+{
+  "provider": "HKBU University Student Handbook 2025-2026",
+  "academicYear": "2025-2026",
+  "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours",
+  "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2120",
+  "note": "The 2025-2026 official Handbook publishes 46 units of coded BBA Required Courses and closed 21-unit concentration structures for Marketing and Strategic Retail Management and Innovation. This supplement is intentionally limited to current catalogue majors HKBU-UG-BBA-5-M5 and HKBU-UG-BBA-5-M6. Marketing requires 15 units of Concentration Required Courses and 6 units from its elective pool. Strategic Retail Management and Innovation requires 12 units of Concentration Required Courses and 9 units from its elective pool. Courses appearing in both concentration tables retain their concentration-specific required or elective role through exact majorIds. University Language, General Education and Free Electives are excluded. No Year or Term is assigned because the official tables do not specify course timing.",
+  "supplements": [
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BBA-5",
+      "jupasCode": "JS2120",
+      "programmeName": "Bachelor of Business Administration (Hons)",
+      "courses": [
+        {
+          "code": "ACCT1005",
+          "title": "Principles of Accounting I",
+          "credits": 3,
+          "group": "BBA Required Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5",
+            "HKBU-UG-BBA-5-M6"
+          ]
+        },
+        {
+          "code": "ACCT1006",
+          "title": "Principles of Accounting II",
+          "credits": 2,
+          "group": "BBA Required Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5",
+            "HKBU-UG-BBA-5-M6"
+          ]
+        },
+        {
+          "code": "BUSI1006",
+          "title": "Business Research Methods",
+          "credits": 3,
+          "group": "BBA Required Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5",
+            "HKBU-UG-BBA-5-M6"
+          ]
+        },
+        {
+          "code": "BUSI1007",
+          "title": "Business Coding",
+          "credits": 1,
+          "group": "BBA Required Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5",
+            "HKBU-UG-BBA-5-M6"
+          ]
+        },
+        {
+          "code": "BUSI2005",
+          "title": "Organizational Behaviour",
+          "credits": 3,
+          "group": "BBA Required Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5",
+            "HKBU-UG-BBA-5-M6"
+          ]
+        },
+        {
+          "code": "BUSI2035",
+          "title": "Entrepreneurship and Innovative Thinking",
+          "credits": 3,
+          "group": "BBA Required Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5",
+            "HKBU-UG-BBA-5-M6"
+          ]
+        },
+        {
+          "code": "BUSI2055",
+          "title": "AI for Business",
+          "credits": 3,
+          "group": "BBA Required Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5",
+            "HKBU-UG-BBA-5-M6"
+          ]
+        },
+        {
+          "code": "BUSI3006",
+          "title": "Business Ethics, CSR and Impact Investing",
+          "credits": 3,
+          "group": "BBA Required Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5",
+            "HKBU-UG-BBA-5-M6"
+          ]
+        },
+        {
+          "code": "BUSI3075",
+          "title": "AI Ethics and Governance",
+          "credits": 2,
+          "group": "BBA Required Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5",
+            "HKBU-UG-BBA-5-M6"
+          ]
+        },
+        {
+          "code": "BUSI3097",
+          "title": "Data Analytics for Business Decision Making",
+          "credits": 3,
+          "group": "BBA Required Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5",
+            "HKBU-UG-BBA-5-M6"
+          ]
+        },
+        {
+          "code": "BUSI4005",
+          "title": "BBA Project",
+          "credits": 3,
+          "group": "BBA Required Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5",
+            "HKBU-UG-BBA-5-M6"
+          ]
+        },
+        {
+          "code": "BUSI4006",
+          "title": "Strategic Management",
+          "credits": 3,
+          "group": "BBA Required Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5",
+            "HKBU-UG-BBA-5-M6"
+          ]
+        },
+        {
+          "code": "ECON1005",
+          "title": "Principles of Economics I",
+          "credits": 3,
+          "group": "BBA Required Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5",
+            "HKBU-UG-BBA-5-M6"
+          ]
+        },
+        {
+          "code": "ECON1006",
+          "title": "Principles of Economics II",
+          "credits": 2,
+          "group": "BBA Required Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5",
+            "HKBU-UG-BBA-5-M6"
+          ]
+        },
+        {
+          "code": "FINE2005",
+          "title": "Financial Management",
+          "credits": 3,
+          "group": "BBA Required Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5",
+            "HKBU-UG-BBA-5-M6"
+          ]
+        },
+        {
+          "code": "LLAW3007",
+          "title": "Principles of Law",
+          "credits": 3,
+          "group": "BBA Required Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5",
+            "HKBU-UG-BBA-5-M6"
+          ]
+        },
+        {
+          "code": "MKTG2005",
+          "title": "Marketing Management",
+          "credits": 3,
+          "group": "BBA Required Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5",
+            "HKBU-UG-BBA-5-M6"
+          ]
+        },
+        {
+          "code": "MKTG3005",
+          "title": "Marketing Research Methods",
+          "credits": 3,
+          "group": "Concentration Required Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/marketing-concentration"
+        },
+        {
+          "code": "MKTG3007",
+          "title": "Consumer Behaviour",
+          "credits": 3,
+          "group": "Concentration Required Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/marketing-concentration"
+        },
+        {
+          "code": "MKTG3015",
+          "title": "Socially Responsible Marketing",
+          "credits": 3,
+          "group": "Concentration Required Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/marketing-concentration"
+        },
+        {
+          "code": "MKTG3026",
+          "title": "Strategic Digital Marketing",
+          "credits": 3,
+          "group": "Concentration Required Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/marketing-concentration"
+        },
+        {
+          "code": "MKTG4005",
+          "title": "Strategic Marketing",
+          "credits": 3,
+          "group": "Concentration Required Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/marketing-concentration"
+        },
+        {
+          "code": "BUSI3017",
+          "title": "International Business",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/marketing-concentration"
+        },
+        {
+          "code": "BUSI3055",
+          "title": "Fundamental of Social Entrepreneurship and Social Impact",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/marketing-concentration"
+        },
+        {
+          "code": "MKTG3006",
+          "title": "Global Marketing",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/marketing-concentration"
+        },
+        {
+          "code": "MKTG3016",
+          "title": "Marketing Internship",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/marketing-concentration"
+        },
+        {
+          "code": "MKTG3017",
+          "title": "Services Marketing",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/marketing-concentration"
+        },
+        {
+          "code": "MKTG3025",
+          "title": "Integrated Marketing Communications",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/marketing-concentration"
+        },
+        {
+          "code": "MKTG3046",
+          "title": "Sports Marketing",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/marketing-concentration"
+        },
+        {
+          "code": "MKTG3047",
+          "title": "Big Data Marketing",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/marketing-concentration"
+        },
+        {
+          "code": "MKTG3056",
+          "title": "Social Media Marketing",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/marketing-concentration"
+        },
+        {
+          "code": "MKTG3057",
+          "title": "Seminar in MarTech and Business Intelligence",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/marketing-concentration"
+        },
+        {
+          "code": "MKTG4006",
+          "title": "e-CRM",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/marketing-concentration"
+        },
+        {
+          "code": "MKTG4007",
+          "title": "Brand Management",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/marketing-concentration"
+        },
+        {
+          "code": "MKTG4015",
+          "title": "Sales Management",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/marketing-concentration"
+        },
+        {
+          "code": "MKTG4016",
+          "title": "Retailing",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/marketing-concentration"
+        },
+        {
+          "code": "MKTG4017",
+          "title": "Business to Business Marketing",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/marketing-concentration"
+        },
+        {
+          "code": "MKTG4025",
+          "title": "Marketing in China",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/marketing-concentration"
+        },
+        {
+          "code": "MKTG4026",
+          "title": "Leisure Marketing",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/marketing-concentration"
+        },
+        {
+          "code": "MKTG4055",
+          "title": "Event Marketing",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/marketing-concentration"
+        },
+        {
+          "code": "MKTG4056",
+          "title": "Global Marketing Field Study",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/marketing-concentration"
+        },
+        {
+          "code": "MKTG4057",
+          "title": "Agribusiness: Marketing and Entrepreneurship",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/marketing-concentration"
+        },
+        {
+          "code": "REMT3006",
+          "title": "Smart Retailing",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M5"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/marketing-concentration"
+        },
+        {
+          "code": "MKTG3017",
+          "title": "Services Marketing",
+          "credits": 3,
+          "group": "Concentration Required Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M6"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/strategic-retail-management-and-innovation-concentration"
+        },
+        {
+          "code": "REMT3005",
+          "title": "Strategic Retail Operation Management",
+          "credits": 3,
+          "group": "Concentration Required Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M6"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/strategic-retail-management-and-innovation-concentration"
+        },
+        {
+          "code": "REMT3006",
+          "title": "Smart Retailing",
+          "credits": 3,
+          "group": "Concentration Required Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M6"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/strategic-retail-management-and-innovation-concentration"
+        },
+        {
+          "code": "REMT3015",
+          "title": "Seminar in Creative Retailing",
+          "credits": 3,
+          "group": "Concentration Required Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M6"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/strategic-retail-management-and-innovation-concentration"
+        },
+        {
+          "code": "BUSI2046",
+          "title": "From Insight to Prototype: Generating Opportunities with Market Insights",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M6"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/strategic-retail-management-and-innovation-concentration"
+        },
+        {
+          "code": "BUSI3025",
+          "title": "Cross-Cultural and Comparative Management",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M6"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/strategic-retail-management-and-innovation-concentration"
+        },
+        {
+          "code": "BUSI3057",
+          "title": "Managing Entrepreneurship Ventures",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M6"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/strategic-retail-management-and-innovation-concentration"
+        },
+        {
+          "code": "BUSI3065",
+          "title": "Me, Us and Them: The Human Factor in Entrepreneurship and Innovation",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M6"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/strategic-retail-management-and-innovation-concentration"
+        },
+        {
+          "code": "ECON3007",
+          "title": "Industrial Organization and Competitive Strategy",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M6"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/strategic-retail-management-and-innovation-concentration"
+        },
+        {
+          "code": "ECON3087",
+          "title": "Understanding the Digital Economy",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M6"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/strategic-retail-management-and-innovation-concentration"
+        },
+        {
+          "code": "ECON3097",
+          "title": "Data Visualization for Business Storytelling",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M6"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/strategic-retail-management-and-innovation-concentration"
+        },
+        {
+          "code": "ECON3105",
+          "title": "Big Data Analytics with Python",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M6"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/strategic-retail-management-and-innovation-concentration"
+        },
+        {
+          "code": "ISEM3036",
+          "title": "Advanced Business Analytics and Data Visualization for Digital Commerce",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M6"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/strategic-retail-management-and-innovation-concentration"
+        },
+        {
+          "code": "ISEM4006",
+          "title": "Electronic Commerce",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M6"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/strategic-retail-management-and-innovation-concentration"
+        },
+        {
+          "code": "ISEM4016",
+          "title": "Web Site Design and Business Applications",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M6"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/strategic-retail-management-and-innovation-concentration"
+        },
+        {
+          "code": "ISEM4017",
+          "title": "Consumer Insight: Online Customer Data Analytics and Machine Learning Approaches",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M6"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/strategic-retail-management-and-innovation-concentration"
+        },
+        {
+          "code": "ISEM4036",
+          "title": "Cybersecurity and Data Privacy",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M6"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/strategic-retail-management-and-innovation-concentration"
+        },
+        {
+          "code": "MKTG3005",
+          "title": "Marketing Research Methods",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M6"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/strategic-retail-management-and-innovation-concentration"
+        },
+        {
+          "code": "MKTG3006",
+          "title": "Global Marketing",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M6"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/strategic-retail-management-and-innovation-concentration"
+        },
+        {
+          "code": "MKTG3007",
+          "title": "Consumer Behaviour",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M6"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/strategic-retail-management-and-innovation-concentration"
+        },
+        {
+          "code": "MKTG3015",
+          "title": "Socially Responsible Marketing",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M6"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/strategic-retail-management-and-innovation-concentration"
+        },
+        {
+          "code": "MKTG3025",
+          "title": "Integrated Marketing Communications",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M6"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/strategic-retail-management-and-innovation-concentration"
+        },
+        {
+          "code": "MKTG3026",
+          "title": "Strategic Digital Marketing",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M6"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/strategic-retail-management-and-innovation-concentration"
+        },
+        {
+          "code": "MKTG3047",
+          "title": "Big Data Marketing",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M6"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/strategic-retail-management-and-innovation-concentration"
+        },
+        {
+          "code": "MKTG4006",
+          "title": "e-CRM",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M6"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/strategic-retail-management-and-innovation-concentration"
+        },
+        {
+          "code": "MKTG4007",
+          "title": "Brand Management",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M6"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/strategic-retail-management-and-innovation-concentration"
+        },
+        {
+          "code": "REMT3007",
+          "title": "Retail Management Internship",
+          "credits": 3,
+          "group": "Concentration Elective Courses",
+          "majorIds": [
+            "HKBU-UG-BBA-5-M6"
+          ],
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours/strategic-retail-management-and-innovation-concentration"
+        }
+      ]
+    }
+  ]
+}

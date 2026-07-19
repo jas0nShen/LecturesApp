@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "HKBU",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-19",
+  "programmes": [
+    {
+      "programmeId": "HKBU-TPG-001",
+      "programmeName": "Master of Arts (MA) in Ethics and Public Affairs",
+      "faculty": "Faculty of Arts and Social Sciences",
+      "status": "verified",
+      "creditsRequired": 27,
+      "creditUnit": "units",
+      "sourceUrl": "https://ar.hkbu.edu.hk/tpg-admissions/programmes/master-of-arts-ma-in-ethics-and-public-affairs",
+      "ruleReviewStatus": "manual_review_required",
+      "trackSelectionOptional": false,
+      "tracks": [
+        {
+          "id": "HKBU-TPG-001-PROGRAMME-ELECTIVE",
+          "name": "Programme Elective Stream",
+          "type": "Stream",
+          "creditsRequired": 27,
+          "sourceUrl": "https://rel.hkbu.edu.hk/content/maepa/en/curriculum-structure.html",
+          "lastVerifiedAt": "2026-07-19"
+        },
+        {
+          "id": "HKBU-TPG-001-DISSERTATION",
+          "name": "Dissertation Stream",
+          "type": "Stream",
+          "creditsRequired": 27,
+          "sourceUrl": "https://rel.hkbu.edu.hk/content/maepa/en/curriculum-structure.html",
+          "lastVerifiedAt": "2026-07-19"
+        }
+      ],
+      "statusNote": "The official September 2026 admissions page and the current Programme Curriculum page resolve the older 2025-26 handbook's Dissertation Stream subtotal conflict. Both current sources require 27 units: 6 Foundation units, 15 Required/Elective units and a 6-unit Dissertation. The current Curriculum page specifies two Foundation Courses, five Elective Courses and the Dissertation; its detailed table identifies seven logical Elective options as six individually listed courses plus one either-or option between LSE7060 and LSE7150. The same page publishes every current code, title and unit value, while the 2025-26 Academic Registry course pages independently confirm all twelve course records and split the 6-unit LSE7111-2 Dissertation sequence into LSE7111 and LSE7112 at 3 units each. Dissertation Stream admission requires a first-term cGPA of 3.33 and Programme Committee approval. The Stream approval, five-of-seven logical option rule and mutually exclusive LSE7060/LSE7150 choice require manual audit review.",
+      "courseGroups": [
+        {
+          "id": "foundation-courses",
+          "name": "Foundation Courses",
+          "type": "core",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "appliesToTrackIds": ["HKBU-TPG-001-PROGRAMME-ELECTIVE", "HKBU-TPG-001-DISSERTATION"],
+          "ruleText": "Complete both 3-unit Foundation Courses under either Stream (6 units).",
+          "sourceUrl": "https://rel.hkbu.edu.hk/content/maepa/en/curriculum-structure.html",
+          "courses": [
+            { "code": "LSE7010", "name": "Approaches to the Study of Values", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-001-PROGRAMME-ELECTIVE", "HKBU-TPG-001-DISSERTATION"], "requiredForTrackIds": ["HKBU-TPG-001-PROGRAMME-ELECTIVE", "HKBU-TPG-001-DISSERTATION"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LSE7010" },
+            { "code": "LSE7120", "name": "Critical Thinking for Public Affairs", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-001-PROGRAMME-ELECTIVE", "HKBU-TPG-001-DISSERTATION"], "requiredForTrackIds": ["HKBU-TPG-001-PROGRAMME-ELECTIVE", "HKBU-TPG-001-DISSERTATION"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LSE7120" }
+          ]
+        },
+        {
+          "id": "programme-stream-required-requirement",
+          "name": "Programme Stream Required Courses",
+          "type": "track_core_requirement",
+          "creditsRequiredByTrackIds": { "HKBU-TPG-001-PROGRAMME-ELECTIVE": 18 },
+          "coursesRequiredByTrackIds": { "HKBU-TPG-001-PROGRAMME-ELECTIVE": 6 },
+          "appliesToTrackIds": ["HKBU-TPG-001-PROGRAMME-ELECTIVE"],
+          "ruleText": "Programme Elective Stream students complete all six named Required Courses (18 units). The applicable courses are identified in the shared Stream Course Pool.",
+          "sourceUrl": "https://rel.hkbu.edu.hk/content/maepa/en/curriculum-structure.html",
+          "courses": []
+        },
+        {
+          "id": "programme-stream-elective-requirement",
+          "name": "Programme Stream Elective Course",
+          "type": "track_elective_requirement",
+          "creditsRequiredByTrackIds": { "HKBU-TPG-001-PROGRAMME-ELECTIVE": 3 },
+          "coursesRequiredByTrackIds": { "HKBU-TPG-001-PROGRAMME-ELECTIVE": 1 },
+          "appliesToTrackIds": ["HKBU-TPG-001-PROGRAMME-ELECTIVE"],
+          "ruleText": "Programme Elective Stream students complete either LSE7060 or LSE7150 (3 units). The two alternatives are identified in the shared Stream Course Pool.",
+          "sourceUrl": "https://rel.hkbu.edu.hk/content/maepa/en/curriculum-structure.html",
+          "courses": []
+        },
+        {
+          "id": "dissertation-stream-elective-requirement",
+          "name": "Dissertation Stream Elective Courses",
+          "type": "track_elective_requirement_with_choice_pair",
+          "creditsRequiredByTrackIds": { "HKBU-TPG-001-DISSERTATION": 15 },
+          "coursesRequiredByTrackIds": { "HKBU-TPG-001-DISSERTATION": 5 },
+          "appliesToTrackIds": ["HKBU-TPG-001-DISSERTATION"],
+          "ruleText": "Dissertation Stream students complete five 3-unit Elective Courses from seven logical options: LSE7130, LSE7140, LSE7070, LSE7080, LSE7040, LSE7050, and one either-or option represented by LSE7060 or LSE7150. LSE7060 and LSE7150 must not both count toward this requirement. Eligibility requires a first-term cGPA of 3.33 and Programme Committee approval.",
+          "sourceUrl": "https://rel.hkbu.edu.hk/content/maepa/en/curriculum-structure.html",
+          "courses": []
+        },
+        {
+          "id": "stream-course-pool",
+          "name": "Stream Required and Elective Course Pool",
+          "type": "track_core_elective",
+          "appliesToTrackIds": ["HKBU-TPG-001-PROGRAMME-ELECTIVE", "HKBU-TPG-001-DISSERTATION"],
+          "ruleText": "The first six courses are Required in the Programme Elective Stream and Elective in the Dissertation Stream. LSE7060 and LSE7150 are Elective alternatives in both Streams. Each code may count only once, and the two alternatives must not both count toward a Stream requirement.",
+          "sourceUrl": "https://rel.hkbu.edu.hk/content/maepa/en/curriculum-structure.html",
+          "courses": [
+            { "code": "LSE7130", "name": "Social Justice", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-001-PROGRAMME-ELECTIVE", "HKBU-TPG-001-DISSERTATION"], "typeByTrackIds": { "HKBU-TPG-001-PROGRAMME-ELECTIVE": "core", "HKBU-TPG-001-DISSERTATION": "elective" }, "requiredForTrackIds": ["HKBU-TPG-001-PROGRAMME-ELECTIVE"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LSE7130" },
+            { "code": "LSE7140", "name": "Law, Liberty and Morality", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-001-PROGRAMME-ELECTIVE", "HKBU-TPG-001-DISSERTATION"], "typeByTrackIds": { "HKBU-TPG-001-PROGRAMME-ELECTIVE": "core", "HKBU-TPG-001-DISSERTATION": "elective" }, "requiredForTrackIds": ["HKBU-TPG-001-PROGRAMME-ELECTIVE"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LSE7140" },
+            { "code": "LSE7070", "name": "Public Health and the Common Good", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-001-PROGRAMME-ELECTIVE", "HKBU-TPG-001-DISSERTATION"], "typeByTrackIds": { "HKBU-TPG-001-PROGRAMME-ELECTIVE": "core", "HKBU-TPG-001-DISSERTATION": "elective" }, "requiredForTrackIds": ["HKBU-TPG-001-PROGRAMME-ELECTIVE"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LSE7070" },
+            { "code": "LSE7080", "name": "Science, Technology and Environmental Ethics", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-001-PROGRAMME-ELECTIVE", "HKBU-TPG-001-DISSERTATION"], "typeByTrackIds": { "HKBU-TPG-001-PROGRAMME-ELECTIVE": "core", "HKBU-TPG-001-DISSERTATION": "elective" }, "requiredForTrackIds": ["HKBU-TPG-001-PROGRAMME-ELECTIVE"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LSE7080" },
+            { "code": "LSE7040", "name": "Values and Socio-cultural Issues in Hong Kong Today", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-001-PROGRAMME-ELECTIVE", "HKBU-TPG-001-DISSERTATION"], "typeByTrackIds": { "HKBU-TPG-001-PROGRAMME-ELECTIVE": "core", "HKBU-TPG-001-DISSERTATION": "elective" }, "requiredForTrackIds": ["HKBU-TPG-001-PROGRAMME-ELECTIVE"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LSE7040" },
+            { "code": "LSE7050", "name": "Traditional Values and Moral Challenges in Contemporary China", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-001-PROGRAMME-ELECTIVE", "HKBU-TPG-001-DISSERTATION"], "typeByTrackIds": { "HKBU-TPG-001-PROGRAMME-ELECTIVE": "core", "HKBU-TPG-001-DISSERTATION": "elective" }, "requiredForTrackIds": ["HKBU-TPG-001-PROGRAMME-ELECTIVE"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LSE7050" },
+            { "code": "LSE7060", "name": "Globalization: Cultural and Ethical Issues", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-001-PROGRAMME-ELECTIVE", "HKBU-TPG-001-DISSERTATION"], "typeByTrackIds": { "HKBU-TPG-001-PROGRAMME-ELECTIVE": "elective", "HKBU-TPG-001-DISSERTATION": "elective" }, "conditionalRequirement": true, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LSE7060" },
+            { "code": "LSE7150", "name": "Human Rights in a Multicultural World", "credits": 3, "appliesToTrackIds": ["HKBU-TPG-001-PROGRAMME-ELECTIVE", "HKBU-TPG-001-DISSERTATION"], "typeByTrackIds": { "HKBU-TPG-001-PROGRAMME-ELECTIVE": "elective", "HKBU-TPG-001-DISSERTATION": "elective" }, "conditionalRequirement": true, "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LSE7150" }
+          ]
+        },
+        {
+          "id": "dissertation",
+          "name": "Dissertation",
+          "type": "capstone",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "appliesToTrackIds": ["HKBU-TPG-001-DISSERTATION"],
+          "ruleText": "Dissertation Stream students complete the linked LSE7111 and LSE7112 Dissertation sequence (6 units total). Entry to the Stream requires a first-term cGPA of 3.33 and Programme Committee approval.",
+          "sourceUrl": "https://rel.hkbu.edu.hk/content/maepa/en/curriculum-structure.html",
+          "courses": [
+            { "code": "LSE7111", "name": "Dissertation", "credits": 3, "courseKind": "dissertation", "conditionalRequirement": true, "linkedSequenceId": "LSE711-DISSERTATION", "appliesToTrackIds": ["HKBU-TPG-001-DISSERTATION"], "requiredForTrackIds": ["HKBU-TPG-001-DISSERTATION"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LSE7111" },
+            { "code": "LSE7112", "name": "Dissertation", "credits": 3, "courseKind": "dissertation", "conditionalRequirement": true, "linkedSequenceId": "LSE711-DISSERTATION", "appliesToTrackIds": ["HKBU-TPG-001-DISSERTATION"], "requiredForTrackIds": ["HKBU-TPG-001-DISSERTATION"], "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/LSE7112" }
+          ]
+        }
+      ]
+    }
+  ]
+}

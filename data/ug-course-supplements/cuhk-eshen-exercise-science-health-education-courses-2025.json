@@ -1,0 +1,46 @@
+{
+  "provider": "CUHK Department of Sports Science and Physical Education ESHEN Programme A Study Scheme",
+  "academicYear": "2025-26 and thereafter",
+  "sourceUrl": "https://spe.cuhk.edu.hk/programmes/bachelor-of-science-in-exercise-science-and-health-education/",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/eshen/",
+  "note": "Only the Programme A requirement pool for students admitted in 2025-26 and thereafter is included. SPED2050, SPED2122 and PHPC2009 appear in the wider Course List but not in the Programme A Study Scheme and are therefore excluded. No Year or Semester is inferred.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "ESHEN",
+      "majorName": "Exercise Science and Health Education",
+      "sourceUrl": "https://spe.cuhk.edu.hk/programmes/bachelor-of-science-in-exercise-science-and-health-education/",
+      "officialUrl": "https://admission.cuhk.edu.hk/programme/eshen/",
+      "courses": [
+        { "code": "PHPC1001", "title": "Foundations in Public Health", "credits": 2, "courseType": "core", "group": "Core Courses · 38 units required" },
+        { "code": "SPED2520", "title": "Functional Human Anatomy and Sports Injuries", "credits": 3, "courseType": "core", "group": "Core Courses · 38 units required" },
+        { "code": "SPED2540", "title": "Introduction to Exercise Physiology", "credits": 3, "courseType": "core", "group": "Core Courses · 38 units required" },
+        { "code": "SPED2600", "title": "Basic Statistics, Test and Measurement for Physical Education", "credits": 3, "courseType": "core", "group": "Core Courses · 38 units required" },
+        { "code": "SPED2610", "title": "Introduction to Exercise Biomechanics", "credits": 3, "courseType": "core", "group": "Core Courses · 38 units required" },
+        { "code": "SPED2710", "title": "Sociology of Physical Education and Sports", "credits": 3, "courseType": "core", "group": "Core Courses · 38 units required" },
+        { "code": "SPED2720", "title": "Foundation of Physical Education and Sports", "credits": 3, "courseType": "core", "group": "Core Courses · 38 units required" },
+        { "code": "SPED2810", "title": "Psychomotor Learning", "credits": 3, "courseType": "core", "group": "Core Courses · 38 units required" },
+        { "code": "SPED3430", "title": "Administration and Management in Physical Education and Sports", "credits": 3, "courseType": "core", "group": "Core Courses · 38 units required" },
+        { "code": "SPED3820", "title": "Introduction to Exercise and Sports Psychology", "credits": 3, "courseType": "core", "group": "Core Courses · 38 units required" },
+        { "code": "SPED3910", "title": "Adapted Physical Education and Sports", "credits": 3, "courseType": "core", "group": "Core Courses · 38 units required" },
+        { "code": "SPED3920", "title": "Human Growth and Health Education", "credits": 3, "courseType": "core", "group": "Core Courses · 38 units required" },
+        { "code": "SPED4570", "title": "Education and Promotion of Exercise and Health", "credits": 3, "courseType": "core", "group": "Core Courses · 38 units required" },
+        { "code": "SPED2010", "title": "Team Sports", "credits": 1, "courseType": "core", "group": "Skills Courses · 3 units required" },
+        { "code": "SPED2110", "title": "Individual Sports", "credits": 1, "courseType": "core", "group": "Skills Courses · 3 units required" },
+        { "code": "SPED2141", "title": "Fundamental Movement and Dances", "credits": 1, "courseType": "core", "group": "Skills Courses · 3 units required" },
+        { "code": "SPED3630", "title": "Introduction to Research Methods", "credits": 3, "courseType": "core", "group": "Research Experience · 6 units required" },
+        { "code": "SPED4900", "title": "Research Project", "credits": 3, "courseType": "capstone", "group": "Research Experience · 6 units required" },
+        { "code": "SPED4201", "title": "Internship in Sports Industry", "credits": 2, "courseType": "internship", "group": "Internship · 2 units required" },
+        { "code": "SPED3550", "title": "Physiology of Human Performance", "credits": 3, "courseType": "major_elective", "group": "Theoretical Courses in Exercise Science · choose at least one" },
+        { "code": "SPED3731", "title": "Selected Topics in Sports Sociology", "credits": 3, "courseType": "major_elective", "group": "Theoretical Courses in Exercise Science · choose at least one" },
+        { "code": "SPED4560", "title": "Physical Fitness Appraisal and Exercise Prescription", "credits": 3, "courseType": "major_elective", "group": "Theoretical Courses in Exercise Science · choose at least one" },
+        { "code": "SPED4640", "title": "Human Kinematics and Kinetics", "credits": 3, "courseType": "major_elective", "group": "Theoretical Courses in Exercise Science · choose at least one" },
+        { "code": "SPED4830", "title": "Psychological Aspects of Sports and Exercise", "credits": 3, "courseType": "major_elective", "group": "Theoretical Courses in Exercise Science · choose at least one" },
+        { "code": "CHPR3002", "title": "Health Education and Health Behaviours", "credits": 3, "courseType": "major_elective", "group": "Theoretical Courses in Health Studies · choose at least one" },
+        { "code": "CHPR4012", "title": "Mental Health as a Public Health Issue", "credits": 3, "courseType": "major_elective", "group": "Theoretical Courses in Health Studies · choose at least one" },
+        { "code": "PHPC2007", "title": "Nutrition and Health", "credits": 3, "courseType": "major_elective", "group": "Theoretical Courses in Health Studies · choose at least one" },
+        { "code": "SPED3700", "title": "Sports and Health Technology", "credits": 3, "courseType": "major_elective", "group": "Theoretical Courses in Health Studies · choose at least one" }
+      ]
+    }
+  ]
+}

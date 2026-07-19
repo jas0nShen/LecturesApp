@@ -20,6 +20,26 @@ global.wx = {
 
 const service = require('./courseService');
 const tpgService = require('./tpgService');
+const ugService = require('./ugService');
+
+function getIndexOnlyUgProfile() {
+  for (const university of ugService.listUniversities()) {
+    const programmes = ugService.listProgrammes({ universityId: university.id, degreeLevel: 'undergraduate' });
+    for (const programme of programmes) {
+      const major = ugService.listMajors(programme.id).find((item) => item.codedCourseCount === 0);
+      if (major) {
+        return {
+          profileType: 'undergraduate',
+          universityCode: university.code,
+          programmeId: programme.id,
+          majorId: major.id,
+          curriculumYear: programme.curriculumYear
+        };
+      }
+    }
+  }
+  throw new Error('Expected at least one index-only undergraduate Major fixture');
+}
 
 beforeEach(() => {
   storage.clear();
@@ -46,9 +66,7 @@ test('Study Plan capability supports verified TPG structures and preserves the H
   });
   assert.equal(ugCatalogue.supported, true);
   assert.equal(ugCatalogue.mode, 'ug-course-plan');
-  const ugIndexOnly = service.getPlanningCapability({
-    profileType: 'undergraduate', universityCode: 'HKU', programmeId: 'HKU-UG-6066-20', majorId: 'HKU-UG-6066-20-M1'
-  });
+  const ugIndexOnly = service.getPlanningCapability(getIndexOnlyUgProfile());
   assert.equal(ugIndexOnly.supported, false);
   assert.match(ugIndexOnly.reason, /课程清单待开放/);
 

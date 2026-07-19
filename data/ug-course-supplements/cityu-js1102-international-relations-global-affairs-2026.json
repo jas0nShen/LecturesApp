@@ -1,0 +1,456 @@
+{
+  "provider": "CityUHK Undergraduate Catalogue and Admissions Office",
+  "academicYear": "2026/27",
+  "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSS1_IRGA-1.htm",
+  "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bsocsc-international-relations-and-global-affairs",
+  "supplements": [
+    {
+      "universityCode": "CITYU",
+      "programmeId": "CITYU-UG-BSOCSCIRGA-29",
+      "jupasCode": "JS1102",
+      "majorId": "CITYU-UG-BSOCSCIRGA-29-M1",
+      "majorOverride": {
+        "expectedMajorIds": [
+          "CITYU-UG-BSOCSCIRGA-29-M1",
+          "CITYU-UG-BSOCSCIRGA-29-M2",
+          "CITYU-UG-BSOCSCIRGA-29-M3"
+        ],
+        "id": "CITYU-UG-BSOCSCIRGA-29-M1",
+        "code": "INTERNATIONAL-RELATIONS-AND-GLOBAL-AFFAIRS",
+        "nameEn": "International Relations and Global Affairs"
+      },
+      "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSS1_IRGA-1.htm",
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bsocsc-international-relations-and-global-affairs",
+      "courses": [
+        {
+          "code": "PIA2105",
+          "title": "Introduction to Political Science",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Core · 51 credits required",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA2105.htm"
+        },
+        {
+          "code": "PIA2402",
+          "title": "Introduction to Social and Political Philosophy",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Core · 51 credits required",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA2402.htm"
+        },
+        {
+          "code": "PIA2012",
+          "title": "Social Research Methods",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Core · 51 credits required",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA2012.htm"
+        },
+        {
+          "code": "PIA2030",
+          "title": "Traditions of Inquiry in the Social Sciences",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Core · 51 credits required",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA2030.htm"
+        },
+        {
+          "code": "PIA2050",
+          "title": "Comparative Politics and Societies",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Core · 51 credits required",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA2050.htm"
+        },
+        {
+          "code": "PIA3031",
+          "title": "Political Dynamics in Asia",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Core · 51 credits required",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3031.htm"
+        },
+        {
+          "code": "PIA3032",
+          "title": "State and Economy in Asia",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Core · 51 credits required",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3032.htm"
+        },
+        {
+          "code": "PIA3121",
+          "title": "Theories of International Relations",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Core · 51 credits required",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3121.htm"
+        },
+        {
+          "code": "PIA3123",
+          "title": "Theories of Development",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Core · 51 credits required",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3123.htm"
+        },
+        {
+          "code": "PIA3126",
+          "title": "International Political Economy",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Core · 51 credits required",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3126.htm"
+        },
+        {
+          "code": "PIA3130",
+          "title": "U.S. Politics and Foreign Policy",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Core · 51 credits required",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3130.htm"
+        },
+        {
+          "code": "PIA3142",
+          "title": "Global Social Movements",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Core · 51 credits required",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3142.htm"
+        },
+        {
+          "code": "PIA3151",
+          "title": "Managing New Global Challenges",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Core · 51 credits required",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3151.htm"
+        },
+        {
+          "code": "PIA3153",
+          "title": "European Politics and International Relations",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Core · 51 credits required",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3153.htm"
+        },
+        {
+          "code": "PIA3800",
+          "title": "Professional Internship",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Core · 51 credits required",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3800.htm"
+        },
+        {
+          "code": "PIA3812",
+          "title": "International Experience",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Major Core · 51 credits required",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3812.htm"
+        },
+        {
+          "code": "PIA4123",
+          "title": "International Security",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Core · 51 credits required",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA4123.htm"
+        },
+        {
+          "code": "PIA4152",
+          "title": "Globalization and Its Discontents",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Core · 51 credits required",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA4152.htm"
+        },
+        {
+          "code": "PIA2032",
+          "title": "Hong Kong: Continuity and Change",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Stream: Asian Studies",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA2032.htm"
+        },
+        {
+          "code": "PIA2040",
+          "title": "History and Society in Asia",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Streams: Asian Studies / International Studies",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA2040.htm"
+        },
+        {
+          "code": "PIA2041",
+          "title": "Political and Social Development in China",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Streams: Asian Studies / International Studies / Development Studies",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA2041.htm"
+        },
+        {
+          "code": "PIA2073",
+          "title": "Understanding Culture in Japan and China through Film",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Stream: Asian Studies",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA2073.htm"
+        },
+        {
+          "code": "PIA2104",
+          "title": "Hong Kong Governance",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Stream: Asian Studies",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA2104.htm"
+        },
+        {
+          "code": "PIA2200",
+          "title": "Introduction to International Studies Through Film",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Stream: International Studies",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA2200.htm"
+        },
+        {
+          "code": "PIA2914",
+          "title": "Introduction to Japanese Society",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Streams: Asian Studies / International Studies / Development Studies",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA2914.htm"
+        },
+        {
+          "code": "PIA2918",
+          "title": "A Portrait of Japan : Experiencing Japanese Culture",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Stream: Asian Studies",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA2918.htm"
+        },
+        {
+          "code": "PIA2958",
+          "title": "Introduction to Korean Society",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Stream: Asian Studies",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA2958.htm"
+        },
+        {
+          "code": "PIA3003",
+          "title": "PIA Summer School",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Streams: Asian Studies / International Studies / Development Studies",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3003.htm"
+        },
+        {
+          "code": "PIA3033",
+          "title": "Culture and Change in Asia",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Streams: Asian Studies / International Studies / Development Studies",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3033.htm"
+        },
+        {
+          "code": "PIA3034",
+          "title": "Environmental Challenges in Asia and the World",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Streams: Asian Studies / Development Studies",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3034.htm"
+        },
+        {
+          "code": "PIA3046",
+          "title": "Asian Migration and the Global Diasporas",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Streams: Asian Studies / International Studies / Development Studies",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3046.htm"
+        },
+        {
+          "code": "PIA3060",
+          "title": "Special Topics in Asian Studies I",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Stream: Asian Studies",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3060.htm"
+        },
+        {
+          "code": "PIA3070",
+          "title": "Special Topics in Development Studies",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Stream: Development Studies",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3070.htm"
+        },
+        {
+          "code": "PIA3111",
+          "title": "Democracy and Democratization",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Stream: International Studies",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3111.htm"
+        },
+        {
+          "code": "PIA3113",
+          "title": "Issues in Contemporary World Politics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Stream: International Studies",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3113.htm"
+        },
+        {
+          "code": "PIA3120",
+          "title": "Politics and Media",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Stream: International Studies",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3120.htm"
+        },
+        {
+          "code": "PIA3124",
+          "title": "Special Topics in International Studies I",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Stream: International Studies",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3124.htm"
+        },
+        {
+          "code": "PIA3141",
+          "title": "Spies, Intelligence and National Security",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Stream: International Studies",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3141.htm"
+        },
+        {
+          "code": "PIA3315",
+          "title": "Ethics in Government",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3315.htm"
+        },
+        {
+          "code": "PIA3544",
+          "title": "East Asia and Globalization",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Stream: Development Studies",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3544.htm"
+        },
+        {
+          "code": "PIA3810",
+          "title": "Study Tour",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Streams: Asian Studies / International Studies / Development Studies",
+          "description": "As the contents of the tour may vary from year to year, the final say as to which stream students shall be awarded rests with the Major leader.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3810.htm"
+        },
+        {
+          "code": "PIA3810J",
+          "title": "Study Tour",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Streams: Asian Studies / International Studies",
+          "description": "Applies only to where the destination is Japan. As the contents of the tour may vary from year to year, the final say as to which stream students shall be awarded rests with the Major leader.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3810J.htm"
+        },
+        {
+          "code": "PIA3810K",
+          "title": "Study Tour",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Streams: Asian Studies / International Studies",
+          "description": "Applies only to where the destination is Korea. As the contents of the tour may vary from year to year, the final say as to which stream students shall be awarded rests with the Major leader.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3810K.htm"
+        },
+        {
+          "code": "PIA3908",
+          "title": "Japan and Cultural Globalisation",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Streams: Asian Studies / International Studies",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3908.htm"
+        },
+        {
+          "code": "PIA3984",
+          "title": "Korean Culture",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Stream: Asian Studies",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3984.htm"
+        },
+        {
+          "code": "PIA4027",
+          "title": "Religions and Society in Asia",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Stream: Asian Studies",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA4027.htm"
+        },
+        {
+          "code": "PIA4028",
+          "title": "Women and Social Change in Asia",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Streams: Asian Studies / Development Studies",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA4028.htm"
+        },
+        {
+          "code": "PIA4060",
+          "title": "Directed Research Project",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total",
+          "description": "PIA4060 carries eligibility requirement of 3.0 CGPA.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA4060.htm"
+        },
+        {
+          "code": "PIA4071",
+          "title": "Globalisation and the Environment",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Streams: Asian Studies / International Studies / Development Studies",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA4071.htm"
+        },
+        {
+          "code": "PIA4072",
+          "title": "Contemporary International Politics of the Asia Pacific",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Streams: Asian Studies / International Studies",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA4072.htm"
+        },
+        {
+          "code": "PIA4122",
+          "title": "International Organisations",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Stream: International Studies",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA4122.htm"
+        },
+        {
+          "code": "PIA4127",
+          "title": "Poverty and the Politics of Aid",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Streams: Asian Studies / International Studies / Development Studies",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA4127.htm"
+        },
+        {
+          "code": "PIA4132",
+          "title": "Introduction to India",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · choose 12 credits total · Streams: Asian Studies / International Studies / Development Studies",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA4132.htm"
+        }
+      ]
+    }
+  ]
+}

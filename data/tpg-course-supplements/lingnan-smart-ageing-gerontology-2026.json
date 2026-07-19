@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "LINGNAN",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-18",
+  "programmes": [
+    {
+      "programmeId": "LINGNAN-TPG-DIR-MASTER-OF-SCIENCE-IN-SMART-AGEING-AND-GERONTOLOG",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.ln.edu.hk/sgs/sag/programme-overview",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The official LU and HKMU sources publish four 3-credit LU Core Courses, four 3-credit HKMU Core Courses and one jointly offered 6-credit Project, for 30 credits in total. The Project is coded SAG502 at LU and HSCI8621NEF at HKMU; these are institutional listings of the same joint course and only the code for the student's affiliated institution is completed. Institutional affiliation and the corresponding transfer-credit treatment require manual review.",
+      "courseGroups": [
+        {
+          "id": "lu-core-courses",
+          "name": "Core Courses offered by LU",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four LU Core Courses (12 credits).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/sgs/sag/programme-overview",
+          "courses": [
+            { "code": "MCG506", "name": "Ageing Policies in Greater China", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure" },
+            { "code": "MHM503", "name": "Research in Health and Social Services", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/MHM_TPG.pdf" },
+            { "code": "SAG501", "name": "Positive Gerontology", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/SAG_TPG.pdf" },
+            { "code": "HAM510", "name": "Data Analytics in Health and Health Services", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/HAM_TPG.pdf" }
+          ]
+        },
+        {
+          "id": "hkmu-core-courses",
+          "name": "Core Courses offered by HKMU",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four HKMU Core Courses (12 credits).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.hkmu.edu.hk/nhs/wp-content/uploads/sites/6/2025/12/Master-of-Science-in-Smart-Ageing-and-Gerontology_ENG-1.pdf",
+          "courses": [
+            { "code": "HSCI8609NEF", "name": "Smart Ageing", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.hkmu.edu.hk/admissions/course-info/hsci-8609nef/" },
+            { "code": "HSCI8610NEF", "name": "Human Genomics: Implications for Health", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.hkmu.edu.hk/admissions/course-info/hsci-8610nef/" },
+            { "code": "HSCI8611NEF", "name": "Building Resilience in the Smart Era", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.hkmu.edu.hk/admissions/course-info/hsci-8611nef/" },
+            { "code": "HSCI8608NEF", "name": "Frailty in Older Adults", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.hkmu.edu.hk/admissions/course-info/hsci-8608nef/" }
+          ]
+        },
+        {
+          "id": "joint-capstone-project",
+          "name": "Joint Capstone Project",
+          "type": "project_dissertation",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Complete the jointly offered 6-credit Smart Ageing and Gerontology Project under the code of the student's affiliated institution: SAG502 at LU or HSCI8621NEF at HKMU. These are institutional listings of the same joint course, not two separate projects.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.hkmu.edu.hk/nhs/wp-content/uploads/sites/6/2025/12/Master-of-Science-in-Smart-Ageing-and-Gerontology_ENG-1.pdf",
+          "courses": [
+            { "code": "SAG502", "name": "Smart Ageing and Gerontology Project", "credits": 6, "courseKind": "project", "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/SAG_TPG.pdf" },
+            { "code": "HSCI8621NEF", "name": "Smart Ageing and Gerontology Project", "credits": 6, "courseKind": "project", "appliesToTrackIds": [], "sourceUrl": "https://www.hkmu.edu.hk/admissions/course-info/hsci-8621nef/" }
+          ]
+        }
+      ]
+    }
+  ]
+}

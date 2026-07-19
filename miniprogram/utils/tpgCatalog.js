@@ -1288,7 +1288,7 @@ module.exports = {
       "courseVerificationStatus": "blocked",
       "courseVerifiedAt": "2026-07-16",
       "courseSourceUrl": "https://ppa.hku.hk/mpa/Course_Desc.html",
-      "courseStatusNote": "The official MPA structure page requires eight taught courses and either a capstone project or dissertation: four compulsory courses, four electives, and one 12-credit capstone/dissertation. The official course list and descriptions publish codes and credits for the compulsory courses, both capstone choices and almost every elective. However, POLI8032 Selected Topics in Public Administration appears in the official elective list and in the 2025-26 timetable, while its official course description omits a credit value. Because a complete published elective pool requires an official credit value for every listed course, POLI8032 cannot safely be assigned the 6 credits used by the other electives and no partial course structure is published.",
+      "courseStatusNote": "The current official MPA structure requires eight taught courses and either a capstone project or dissertation: four compulsory courses, four electives, and one 12-credit capstone/dissertation. The current official course list publishes four compulsory codes, two alternative capstone/dissertation codes and 23 elective codes. The course descriptions, updated on 9 June 2026, state 6 credits for all four compulsory courses and 22 of the 23 electives, and 12 credits for both POLI8012 Dissertation and POLI8028 Capstone Project. However, POLI8032 Selected Topics in Public Administration: Policy in China remains in the official elective list while its current official description still omits a credit value. POLI8032 cannot safely be assigned 6 credits by analogy with the other electives, so the complete current elective pool and therefore the full 2026-27 programme structure remain blocked; no partial course structure is published.",
       "creditUnit": "credits",
       "courseCount": 0
     },
@@ -1609,7 +1609,7 @@ module.exports = {
       "courseVerificationStatus": "blocked",
       "courseVerifiedAt": "2026-07-13",
       "courseSourceUrl": "https://higherdegree.fed.cuhk.edu.hk/en/programme/ma-degree-in-early-childhood-education/",
-      "courseStatusNote": "The official 2026-27 MA in Early Childhood Education page confirms 24 units and publishes the Core, Elective and Research Methodology code pools. The current Faculty Course Information verifies titles and units for most listed courses, including the five MECM Core Courses and all eight 1.5-unit research-method courses, but it has no current entry for elective codes PEDU6072, PEDU6503 or PEDU6701. Older official handbooks and timetables are not sufficient evidence that their former titles and credits remain current. Keep the structure closed until those three codes are restored to the current course catalogue or the Programme publishes a revised elective pool.",
+      "courseStatusNote": "The official Programme poster confirms the 2026-27 intake, and the Programme page confirms 24 units with 37 distinct codes across the Core, Elective and Research Methodology pools. Faculty Course Information currently supplies title-and-unit entries for 34 of those codes, including all five MECM Core codes and all eight 1.5-unit research-method codes, but still has no entry for elective codes PEDU6072, PEDU6503 or PEDU6701. The Programme page was updated on 16 October 2025, after the Course Information page was updated on 23 July 2025, so the catalogue omissions neither prove that the three electives were removed nor validate their former titles and units. Keep the structure closed until CUHK publishes current title-and-unit entries for those three codes or revises the official elective pool; do not substitute older handbooks or timetables.",
       "courseCount": 0
     },
     {
@@ -1783,11 +1783,30 @@ module.exports = {
       "sourceUrl": "",
       "dataLevel": "structure",
       "academicYear": "2026-27",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-13",
-      "courseSourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/study-schemes/",
-      "courseStatusNote": "The official 2026-27 Global Communication study scheme and both new specialization Streams are explicitly subject to the University's final approval. The published Stream lists also reference new course codes COMM5947 and COMM5992 that are not yet present in the official Communication course list. Keep the Programme index and official sources visible, but do not publish the superseded 2025-26 curriculum as the current structure. Recheck after final approval and course catalogue publication.",
-      "courseCount": 0
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-18",
+      "courseSourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/pdf/StudySchemeGLCfor2026Admission.pdf",
+      "courseStatusNote": "The official 2026-27 Study Scheme requires four Required Courses and four Elective Courses for 24 units. The current official Course Lists confirm the code, title and 3-unit value of every published course, including COMM5947 and COMM5992. Both optional Specialization Streams publish complete coded course combinations. With Division Head approval, other COMM courses at 5000 level or above may replace listed electives; this open-ended exception requires manual review.",
+      "tracks": [
+        {
+          "id": "CUHK-TPG-018-CHALLENGES-OF-GLOBAL-FUTURES",
+          "name": "Challenges of Global Futures",
+          "type": "Specialization Stream",
+          "creditsRequired": 24,
+          "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/pdf/StudySchemeGLCfor2026Admission.pdf"
+        },
+        {
+          "id": "CUHK-TPG-018-MAKING-AND-MEASURING-IMPACT",
+          "name": "Making and Measuring Impact",
+          "type": "Specialization Stream",
+          "creditsRequired": 24,
+          "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/pdf/StudySchemeGLCfor2026Admission.pdf"
+        }
+      ],
+      "trackSelectionOptional": true,
+      "creditUnit": "units",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 24
     },
     {
       "id": "HKUST-TPG-001",
@@ -3133,9 +3152,9 @@ module.exports = {
       "dataLevel": "programme",
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-15",
+      "courseVerifiedAt": "2026-07-18",
       "courseSourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21054-efm-epm",
-      "courseStatusNote": "The official 2027 Programme page publishes the complete 31-credit rule, nine Core Subject titles for 25 credits and any two Elective Subjects for 6 credits. The current School of Accounting and Finance 2025/26 Taught Postgraduate Subject Syllabi catalogue does not provide a complete Programme-specific code table for that curriculum. In particular, the 2027 page lists ESG Rating and Data Analysis and ESG Report and Disclosure as two separate Core Subjects, while the current official catalogue publishes only AF5132 ESG Disclosure and Rating Analysis as one 3-credit ESG-labelled subject. The catalogue also does not label AF5701 Artificial Intelligence for Business or AF5312 Principles of Corporate Finance for ESG. The Programme remains blocked rather than splitting AF5132, assigning one code to two subjects or exposing a partial course pool assembled from same-title courses in other awards.",
+      "courseStatusNote": "The official 2027 Programme page publishes the complete 31-credit rule, nine Core Subject titles for 25 credits and any two Elective Subjects for 6 credits. The current School of Accounting and Finance Programme page now publishes a complete Programme-specific code table that maps the two new Core Subjects to AF5144 ESG Report and Disclosure and AF5145 ESG Rating and Data Analysis, rather than splitting the older AF5132 course, and maps all other current Core and Elective titles. It also publishes eight common MSc/PgD Compulsory Subjects for 22 credits, including the explicit 1-credit AF5T21, plus the 3-credit MSc-only CSE539. However, no current public Subject Description Form or Programme Requirement Document explicitly states the individual credit values of AF5144 and AF5145. The Programme remains blocked rather than inferring both 3-credit values arithmetically from the 22-credit group total.",
       "creditUnit": "credits",
       "courseCount": 0
     },
@@ -4452,9 +4471,9 @@ module.exports = {
       "dataLevel": "programme",
       "academicYear": "2027-28",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-16",
+      "courseVerifiedAt": "2026-07-18",
       "courseSourceUrl": "https://www.polyu.edu.hk/rs/study/taught-postgraduate-studies/msc-programme-2026-or-after/msc-in-advanced-physiotherapy/curriculum/",
-      "courseStatusNote": "The official 2027 Programme page, the current Department of Rehabilitation Sciences Curriculum page, and the July 2026 v14 Programme leaflet publish the 31-credit paths, three Specialisms, fixed Core and Clinical Practice subject codes, and per-course credits. All three sources label the compulsory 6-credit component only as Project Study and do not publish its subject code. RS567 must not be inferred from another Rehabilitation Sciences Programme.",
+      "courseStatusNote": "The official 2027 Programme page, the current Department of Rehabilitation Sciences Curriculum page, and the July 2026 v14 Programme leaflet publish the 31-credit paths, three Specialisms, fixed Core and Clinical Practice subject codes, and per-course credits. The official 2026/27 Programme page directly identifies RS567 Project Study as the 6-credit project component for Programme 51069. However, the 2027/28 Programme page, the current MSc Programme 2026 or after curriculum image, and the current v14 leaflet omit the Project Study subject code, while no public 51069 current-year PRD or SDF is available. The Programme remains blocked rather than carrying RS567 forward from the earlier academic-year curriculum.",
       "tracks": [
         {
           "id": "POLYU-TPG-074-NEUROLOGY",
@@ -6997,17 +7016,37 @@ module.exports = {
       "universityCode": "HKBU",
       "programmeCode": "",
       "name": "Master of Arts (MA) in Ethics and Public Affairs",
-      "faculty": "",
+      "faculty": "Faculty of Arts and Social Sciences",
       "creditsRequired": 27,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "academicYear": "2025-26",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-16",
-      "courseSourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/master-of-arts-in-ethics-and-public-affairs-1",
-      "courseStatusNote": "The latest publicly accessible 2025-26 HKBU Academic Registry handbook confirms a 27-unit award and publishes all 12 unique course codes, titles and credits, but the Dissertation Stream rules conflict internally. Its structure summary requires 6 Foundation units, 15 Elective units and 6 Dissertation units. The detailed section instead labels Elective Courses as 18 units, then lists six 3-unit courses plus an either-or choice between LSE7060 and LSE7150, which would be seven courses or 21 units if all listed requirements applied. Keep the Programme closed until HKBU clarifies whether the Dissertation Stream selects five of the six listed courses plus one either-or course, or publishes another authoritative combination. Do not infer a 27-unit path from the conflicting subtotals; the protected 2026-27 handbook must be rechecked when it becomes publicly accessible.",
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-19",
+      "courseSourceUrl": "https://ar.hkbu.edu.hk/tpg-admissions/programmes/master-of-arts-ma-in-ethics-and-public-affairs",
+      "courseStatusNote": "The official September 2026 admissions page and the current Programme Curriculum page resolve the older 2025-26 handbook's Dissertation Stream subtotal conflict. Both current sources require 27 units: 6 Foundation units, 15 Required/Elective units and a 6-unit Dissertation. The current Curriculum page specifies two Foundation Courses, five Elective Courses and the Dissertation; its detailed table identifies seven logical Elective options as six individually listed courses plus one either-or option between LSE7060 and LSE7150. The same page publishes every current code, title and unit value, while the 2025-26 Academic Registry course pages independently confirm all twelve course records and split the 6-unit LSE7111-2 Dissertation sequence into LSE7111 and LSE7112 at 3 units each. Dissertation Stream admission requires a first-term cGPA of 3.33 and Programme Committee approval. The Stream approval, five-of-seven logical option rule and mutually exclusive LSE7060/LSE7150 choice require manual audit review.",
       "creditUnit": "units",
-      "courseCount": 0
+      "tracks": [
+        {
+          "id": "HKBU-TPG-001-PROGRAMME-ELECTIVE",
+          "name": "Programme Elective Stream",
+          "type": "Stream",
+          "creditsRequired": 27,
+          "sourceUrl": "https://rel.hkbu.edu.hk/content/maepa/en/curriculum-structure.html",
+          "lastVerifiedAt": "2026-07-19"
+        },
+        {
+          "id": "HKBU-TPG-001-DISSERTATION",
+          "name": "Dissertation Stream",
+          "type": "Stream",
+          "creditsRequired": 27,
+          "sourceUrl": "https://rel.hkbu.edu.hk/content/maepa/en/curriculum-structure.html",
+          "lastVerifiedAt": "2026-07-19"
+        }
+      ],
+      "trackSelectionOptional": false,
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 12
     },
     {
       "id": "HKBU-TPG-002",
@@ -7020,9 +7059,9 @@ module.exports = {
       "dataLevel": "programme",
       "academicYear": "2025-26",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-16",
-      "courseSourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-language-and-culture-1/master-of-arts-in-creative-writing-for-cultural-1",
-      "courseStatusNote": "The latest publicly accessible 2025-26 HKBU Academic Registry handbook confirms a 27-unit award and publishes 14 course codes, titles and credits, but its Master Project requirement conflicts internally. The curriculum structure and detailed course table state a 3-unit WRIT7051 Master Project, yielding 12 Required + 12 Elective + 3 Project = 27 units. The prose immediately above the course table instead says students must complete 18 units of required courses including a 6-unit Master Project, plus 12 units of Electives, which totals 30 units and contradicts both the Programme total and WRIT7051 row. Keep the Programme closed until HKBU confirms whether WRIT7051 is 3 or 6 units and corrects the required-course subtotal. Do not infer the Project credit from the arithmetic; the protected 2026-27 handbook must be rechecked when it becomes publicly accessible.",
+      "courseVerifiedAt": "2026-07-19",
+      "courseSourceUrl": "https://ar.hkbu.edu.hk/tpg-admissions/programmes/master-of-arts-ma-in-creative-writing-for-cultural-professionals",
+      "courseStatusNote": "The current official September 2026 admissions page resolves the older 2025-26 handbook's Master Project credit conflict. It confirms a 27-unit award comprising 15 Required units including the Master Project and 12 Elective units, and explicitly describes the Master Project as a 3-credit, one-semester course. The 2025-26 Academic Registry handbook and all fourteen individual course pages independently confirm WRIT7010-WRIT7040 as four 3-unit Required Courses, WRIT7051 Master Project at 3 units, and WRIT7060-WRIT7140 as nine 3-unit Elective Courses. However, the current admissions page publishes no course codes or titles, its linked Programme website currently returns a Shield Security access-restriction response, and the 2026-27 University Student Handbook remains inaccessible. Keep the Programme closed until an official current Curriculum or accessible 2026-27 handbook confirms that the fourteen 2025-26 codes, titles and group memberships remain current; do not carry the older course pool forward solely because the corrected 15-plus-12 unit structure is compatible with it.",
       "creditUnit": "units",
       "courseCount": 0
     },
@@ -7733,9 +7772,9 @@ module.exports = {
       "dataLevel": "programme",
       "academicYear": "2025-26",
       "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-16",
-      "courseSourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/master-of-science-in-business-management",
-      "courseStatusNote": "The latest publicly accessible 2025-26 HKBU Academic Registry handbook confirms a 36-unit MSc in Business Management and publishes exact codes, titles and credits for eight Core Courses (24 units), BUS7470 plus BUSD7021 and BUSD7022 as Required Courses (6 units), and the complete Programme and recommended non-Programme Elective pools. However, the curriculum summary requires 6 Elective units, while the detailed course table labels Elective Courses as 9 units; the same detailed table still totals the award as 36 units, which is only arithmetically consistent with 6 Elective units. Keep the Programme closed until HKBU corrects the conflicting Elective subtotal. Do not infer a two- or three-Elective requirement from arithmetic or expose a structure whose published group requirement is internally inconsistent.",
+      "courseVerifiedAt": "2026-07-19",
+      "courseSourceUrl": "https://ar.hkbu.edu.hk/tpg-admissions/programmes/master-of-science-msc-in-business-management",
+      "courseStatusNote": "The current official September 2026 admissions page confirms a 36-unit MSc in Business Management comprising 24 Core units, 6 Required units and 6 Elective units. The current official MScBM Curriculum page independently confirms a twelve-course path of eight Core Courses, two Required Courses and two Advanced Elective Courses, and publishes the current code-and-title pools. These current sources resolve the older 2025-26 handbook conflict between a 6-unit curriculum summary and a 9-unit detailed-table label. The 2025-26 handbook confirms 3-unit values for all carried-forward Core and ordinary Elective Courses, BUS7470 at 3 units, BUSD7021 at 1 unit and BUSD7022 at 2 units. However, the current Elective pool adds MGNT7900 Business Negotiation, whose individual credit value is not published on the current public Programme or Curriculum page; the 2025-26 handbook has no MGNT7900 record, and the 2026-27 handbook remains access-restricted. Keep the Programme closed until an official current course page or accessible handbook confirms MGNT7900 credits; do not infer 3 units from the two-Elective 6-unit group total or publish a pool with one unresolved course value.",
       "creditUnit": "units",
       "courseCount": 0
     },
@@ -8008,14 +8047,15 @@ module.exports = {
       "faculty": "",
       "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
-      "academicYear": "2025-26",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-16",
-      "courseSourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/school-of-business/department-of-management-marketing-and-information-systems-1/master-of-science-in-marketing-for-the-creative-economy",
-      "courseStatusNote": "The latest publicly accessible 2025-26 HKBU Academic Registry handbook confirms a 30-unit MSc in Marketing for the Creative Economy: six Required Courses for 18 units, three Elective choices for 9 units and MKTG7200 Overseas Field Trip for 3 units. It publishes 14 current course codes, titles and 3-unit values. However, the first Elective group says students must choose one from four courses but lists only MKTG7170, VACC7010 and VACC7030. Keep the Programme closed until HKBU either publishes the missing fourth current course or corrects the stated count. Do not carry forward ACCT7060 or ACCT7960 from the different 2024-25 curriculum, infer a missing course, or expose the 14-code partial structure as complete.",
+      "dataLevel": "structure",
+      "academicYear": "2026-27",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-19",
+      "courseSourceUrl": "https://mscmce.hkbu.edu.hk/programme/curriculum.html",
+      "courseStatusNote": "The current official September 2026 admissions page confirms a 30-unit award comprising 18 Core units, 9 Elective units and the required 3-unit Overseas Field Trip. The current official MScMCE Curriculum page publishes the complete current code-and-title structure: six Core Courses, one of three Semester 1 Electives, one of two MMIS Semester 2 Electives, one of two AVA Semester 2 Electives, and MKTG7200 Field Trip. Its three-course Semester 1 pool corrects the older 2025-26 handbook text that incorrectly said 'choose one from four' while listing only three courses. The 2025-26 handbook confirms the individual 3-unit values for all fourteen carried-forward codes. MKTG7110 has a revised current title on the Programme page. Elective sub-pool selection and the official contingency for a cancelled, rescheduled or downsized Field Trip require manual audit review.",
       "creditUnit": "units",
-      "courseCount": 0
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 14
     },
     {
       "id": "HKBU-TPG-045",
@@ -8168,7 +8208,7 @@ module.exports = {
       "name": "Master of Arts in Belt and Road Business Communication and Administration",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 24,
       "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-belt-and-road-business-communication-and-administration",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
@@ -8176,12 +8216,14 @@ module.exports = {
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-13",
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-19",
       "courseSourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-belt-and-road-business-communication-and-administration",
-      "courseStatusNote": "The current 2026-27 Programme page confirms Programme code A1M135 and a 24-credit award comprising six required 3-credit Core Courses and two of five 3-credit Elective Courses, including a Capstone Project option. It publishes every current title, credit value and the extra English-language eligibility condition on two electives, but it does not publish any course codes. Public official curriculum-module searches do not expose a complete matching code table. Keep the structure closed until all eleven current course codes are officially available; do not infer codes from titles or publish the uncoded course pool.",
-      "courseCount": 0
+      "courseStatusNote": "The live official 2026-27 Programme page confirms Programme code A1M135 and a 24-credit-point award comprising all six 3-credit-point Core Courses and any two of five 3-credit-point Elective Courses. Official EdUHK curriculum-module pages confirm every current course-code mapping and title, including the 3-credit-point Capstone Project option. PUA6036 and LIN6075 are taught in English and may be chosen only by students who satisfy the published English-language requirements; this conditional eligibility requires manual audit review.",
+      "creditUnit": "credit points",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 11
     },
     {
       "id": "EDUHK-TPG-DIR-MA-CVBLE",
@@ -8190,7 +8232,7 @@ module.exports = {
       "name": "Master of Arts in Chinese Values-Based Leadership Education",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 24,
       "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-chinese-values-based-leadership-education",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
@@ -8198,12 +8240,14 @@ module.exports = {
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-13",
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-18",
       "courseSourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-chinese-values-based-leadership-education",
-      "courseStatusNote": "The current 2026-27 Programme page confirms Programme code A1M119 and a 24-credit award comprising four required 3-credit Core Courses and four of seven 3-credit Elective Courses. It publishes every current title and credit value and states that the seven electives may not all be offered every year, but it does not publish course codes. Public official curriculum-module searches do not provide a complete code mapping. Keep the structure closed until all eleven codes are officially verified; do not infer codes from titles or treat the full elective pool as a guaranteed annual offering.",
-      "courseCount": 0
+      "courseStatusNote": "The live official 2026-27 Programme page confirms Programme code A1M119 and a 24-credit-point award comprising all four 3-credit-point Core Courses and any four of seven 3-credit-point Elective Courses. Official EdUHK curriculum-module pages confirm all eleven course-code mappings. The SED6146 module title includes the word 'Environment', while the Programme page publishes the otherwise matching title without that word. The Programme page also states that the seven Elective Courses may not all be offered every year.",
+      "creditUnit": "credit points",
+      "ruleReviewStatus": "verified",
+      "courseCount": 11
     },
     {
       "id": "EDUHK-TPG-DIR-MA-CECI",
@@ -8212,7 +8256,7 @@ module.exports = {
       "name": "Master of Arts in Comparative Education and Collaborative Innovation",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 24,
       "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-comparative-education-and-collaborative-innovation",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
@@ -8220,12 +8264,14 @@ module.exports = {
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-13",
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-18",
       "courseSourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-comparative-education-and-collaborative-innovation",
-      "courseStatusNote": "The current 2026-27 Programme page confirms Programme code A1M128 and a 24-credit award with four required 3-credit Core Courses. Pathway one selects four of five 3-credit electives; selected full-time students may instead complete the 6-credit Capstone Project plus two electives. The page publishes all current titles and credits. Three shared electives can be mapped elsewhere to PFS6061, PUA6027 and PFS6076, but the four new Core Courses, two other electives and Capstone Project do not have a complete public current code table. Keep the structure closed until every code is officially verified; do not publish the discoverable cross-Programme subset as a complete curriculum.",
-      "courseCount": 0
+      "courseStatusNote": "The live official 2026-27 Programme page confirms Programme code A1M128 and a 24-credit-point award comprising four required 3-credit-point Core Courses plus one of two completion pathways. Pathway one, open to full-time and part-time students, requires four of five 3-credit-point Elective Courses. Pathway two, available only to selected full-time students, requires the 6-credit-point Capstone Project plus two of the five Elective Courses. Official EdUHK curriculum-module pages confirm every current course-code mapping and title. The selected-student eligibility condition and the two alternative combinations require manual audit review.",
+      "creditUnit": "credit points",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 10
     },
     {
       "id": "EDUHK-TPG-DIR-MA-DHRMOM",
@@ -8234,7 +8280,7 @@ module.exports = {
       "name": "Master of Arts in Digital Human Resource Management and Organisational Marketing",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 24,
       "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-digital-human-resource-management-and-organisational-marketing",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
@@ -8242,12 +8288,14 @@ module.exports = {
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-13",
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-18",
       "courseSourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-digital-human-resource-management-and-organisational-marketing",
-      "courseStatusNote": "The current 2026-27 Programme page confirms Programme code A1M129 and a 24-credit award comprising four required 3-credit Core Courses and four of seven 3-credit Elective Courses, including a Capstone Project option. It publishes all eleven current titles and credit values but no course codes. Although a few titles overlap other new management Programmes, the official public curriculum-module search does not expose a complete current mapping. Keep the structure closed until all eleven codes are verified; do not transfer codes from similarly titled cross-Programme courses without an official match.",
-      "courseCount": 0
+      "courseStatusNote": "The live official 2026-27 Programme page confirms Programme code A1M129 and a 24-credit-point award comprising all four 3-credit-point Core Courses and any four of seven 3-credit-point Elective Courses. Official EdUHK curriculum-module pages confirm every current course-code mapping, including the 3-credit-point Capstone Project option; the BUS6078 module uses the British spelling 'Behaviour', while the Programme page uses 'Behavior'. The Programme page states that courses and course offerings may be changed at the University's discretion as circumstances require, so the full elective pool must not be treated as a guaranteed annual offering.",
+      "creditUnit": "credit points",
+      "ruleReviewStatus": "verified",
+      "courseCount": 11
     },
     {
       "id": "EDUHK-TPG-DIR-MA-DMEC",
@@ -8256,7 +8304,7 @@ module.exports = {
       "name": "Master of Arts in Digital Marketing and E-Commerce",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 24,
       "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-digital-marketing-and-e-commerce",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
@@ -8264,12 +8312,14 @@ module.exports = {
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-13",
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-18",
       "courseSourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-digital-marketing-and-e-commerce",
-      "courseStatusNote": "The current 2026-27 Programme page confirms a 24-credit award with six 3-credit Core Courses and two of four 3-credit Elective Courses, and publishes all ten titles and credit values. Current official Moodle records confirm BUS6085 Introduction to E-commerce and Digital Retail, BUS6086 Neuromarketing, MDA6014 Marketing Analytics and Data Visualisation, and BUS6087 Frontiers in E-commerce, but do not yet provide a complete mapping for the remaining current courses. Keep the structure closed until all ten codes are officially available; do not map similarly named marketing or organisational courses from other Programmes into the missing positions.",
-      "courseCount": 0
+      "courseStatusNote": "The live official 2026-27 Programme page confirms a 24-credit-point award comprising all six 3-credit-point Core Courses and any two of four 3-credit-point Elective Courses. Official EdUHK curriculum-module pages confirm every current course-code mapping and title, including the 3-credit-point Capstone Project option. The Programme page states that courses and course offerings may be changed at the University's discretion as circumstances require, so the full elective pool must not be treated as a guaranteed annual offering.",
+      "creditUnit": "credit points",
+      "ruleReviewStatus": "verified",
+      "courseCount": 10
     },
     {
       "id": "EDUHK-TPG-DIR-MA-ETFW",
@@ -8370,7 +8420,7 @@ module.exports = {
       "name": "Master of Arts in New Media and Social Media",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 24,
       "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-new-media-and-social-media",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
@@ -8378,12 +8428,14 @@ module.exports = {
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-13",
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-18",
       "courseSourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-new-media-and-social-media",
-      "courseStatusNote": "The current 2026-27 Programme page confirms a 24-credit award with four 3-credit Core Courses and four of eight 3-credit Elective Courses. The official 2025-26 Programme Handbook maps the four Core Courses and the original six electives to MDA6001-MDA6010, while current official Moodle records also confirm INT6139 for the new Educational Leadership in Innovation Technology elective. However, the second elective added for students admitted from 2026 onwards, Public Relations Strategies in Digital Age, has no course code on the current Programme page and no authenticated current code result. Keep the structure closed until EdUHK publishes that final code; do not expose the old six-course elective pool or publish eleven of twelve current courses as a complete structure.",
-      "courseCount": 0
+      "courseStatusNote": "The live official 2026-27 Programme page requires four 3-credit-point Core Courses and any four of eight 3-credit-point Elective Courses, for 24 credit points in total. The official Programme Handbook and Moodle records confirm the original MDA course codes and INT6139. The official 2026-27 Semester 1 Moodle record confirms MDA6017 Public Relations Strategies in Digital Age, resolving the final missing code.",
+      "creditUnit": "credit points",
+      "ruleReviewStatus": "verified",
+      "courseCount": 12
     },
     {
       "id": "EDUHK-TPG-DIR-MA-SRE",
@@ -9591,7 +9643,7 @@ module.exports = {
       "name": "Master of Science in International Banking and Finance",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -9599,12 +9651,14 @@ module.exports = {
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-14",
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-18",
       "courseSourceUrl": "https://www.ln.edu.hk/econ/mibf/programmeoverview/programme-structure",
-      "courseStatusNote": "The live official AY2026/27 Programme Structure publishes six 3-credit Core Courses and requires another 12 Elective credits, while the current official List of Courses publishes the coded Elective pool but not each Elective course's credit value. The linked official Student Handbook is for AY2025/26 and includes IBF613, which is absent from the live current course list, so its credit table is not applied to the current intake. Elective credits are not inferred from the prior-year handbook; the structure remains unavailable pending an official AY2026/27 credit table.",
-      "courseCount": 0
+      "courseStatusNote": "The live official Programme Structure and List of Courses publish the current six-Core plus 12-Elective-credit structure and the complete 27-course pool. The official IBF Course Descriptions PDF confirms every code, title and credit value. IBF504 and IBF615 are mutually exclusive; because IBF504 is compulsory, IBF615 cannot count in the normal award path. Mixed 3-credit and 1.5-credit Electives, prerequisites, exclusions and course availability require manual audit review.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 27
     },
     {
       "id": "LINGNAN-TPG-DIR-08-000501-6",
@@ -9673,7 +9727,7 @@ module.exports = {
       "courseVerificationStatus": "blocked",
       "courseVerifiedAt": "2026-07-14",
       "courseSourceUrl": "https://www.ln.edu.hk/orm/ebscm/about-us/programme-overview",
-      "courseStatusNote": "The live official Programme Overview publishes all course codes and the six-Required plus four-Elective 30-credit rule, but it does not publish per-course credits. Credits are not inferred from the 10-course total, so the course structure remains unavailable pending an official current credit table.",
+      "courseStatusNote": "The live Department Programme Overview and the live Faculty TPO Curriculum conflict on the current course codes and elective pool: the Department page uses the ORM501-ORM515 recodes and additionally lists ORM545 and ACT615, while the TPO page retains CDS501-CDS515 and omits those electives. The official ORM course-description PDF confirms the ORM recodes from 2025-26 but names ORM545 Cloud-based Solutions for Digital Business Transformation, whereas the Department page names it Cloud Computing for Decision Making. Codes, title and elective membership are not reconciled across the conflicting official sources, so the Programme remains blocked pending a single authoritative current curriculum.",
       "courseCount": 0
     },
     {
@@ -9683,7 +9737,7 @@ module.exports = {
       "name": "Master of Science in Finance",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -9691,12 +9745,14 @@ module.exports = {
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-14",
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-18",
       "courseSourceUrl": "https://www.ln.edu.hk/fin/mfin/programme/master-of-science-in-finance",
-      "courseStatusNote": "The live official curriculum identifies seven Core Courses (all required) and an Elective pool from which any three are selected, but it does not publish per-course credits. Credits are not inferred from the 10-course completion pattern, so the course structure remains unavailable pending an official current credit table.",
-      "courseCount": 0
+      "courseStatusNote": "",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified",
+      "courseCount": 25
     },
     {
       "id": "LINGNAN-TPG-DIR-16-000936-L6",
@@ -9889,7 +9945,7 @@ module.exports = {
       "courseVerificationStatus": "blocked",
       "courseVerifiedAt": "2026-07-14",
       "courseSourceUrl": "https://www.ln.edu.hk/sgs/mhsm/programme/programme-structure",
-      "courseStatusNote": "The live official Programme Structure publishes six 3-credit Core Courses, any two 3-credit Electives and a 6-credit Capstone Project, with every current course title, but it does not publish any course codes. The titles are not converted into invented codes, so the course structure remains unavailable pending an official coded curriculum.",
+      "courseStatusNote": "The live official Programme Structure publishes the complete 30-credit rule: six 3-credit Core Courses, any two of seven 3-credit Electives and the 6-credit MHM509 Project. The current official MHM and SEI course-description PDFs verify all six Core codes (MHM501, MHM502, MHM503, MHM504, MHM507 and MHM508), MHM509, and three Electives (MHM505, MHM506 and SEI504). No current official coded description is published for the other four named Electives: Health Policy: Theoretical and Practical Approaches; Health and Well-being of Children and Youth; NGO and Social Services: Policy and Management Perspective; and Resources Management and Fundraising in Public and Private Sectors. The missing codes are not inferred, so the Programme remains blocked pending a complete official coded Elective table.",
       "courseCount": 0
     },
     {
@@ -10565,7 +10621,7 @@ module.exports = {
       "name": "Master of Science in Human Resource and Organisational Management",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -10582,12 +10638,15 @@ module.exports = {
           "lastVerifiedAt": "2026-07-11"
         }
       ],
-      "dataLevel": "programme",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-14",
-      "courseSourceUrl": "https://www.ln.edu.hk/sgs/programmes-on-offer/master-of-science-in-human-resource-and-organisational-management",
-      "courseStatusNote": "The live official 2026-27 offer page confirms the Programme and its Human Resource Analytics and Digital Transformation Concentration. The official HRM course-description PDF at https://www.ln.edu.hk/sgs/f/page/114332/345754/HRM_TPG.pdf was last updated on 18 October 2024 and lists only four 3-credit HRM541-HRM544 courses, without the mother Programme curriculum or a complete 30-credit Track structure. Missing courses and group rules are not invented, so the Programme remains source-blocked pending a complete current official curriculum.",
-      "courseCount": 0
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-18",
+      "courseSourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mschrom/curriculum",
+      "courseStatusNote": "",
+      "trackSelectionOptional": true,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 17
     },
     {
       "id": "LINGNAN-TPG-DIR-25-000019-L6",
@@ -10596,7 +10655,7 @@ module.exports = {
       "name": "Master of Science in Risk, Insurance and Actuarial Analytics",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -10604,12 +10663,14 @@ module.exports = {
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-14",
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-18",
       "courseSourceUrl": "https://www.ln.edu.hk/orm/mscriaa/programme-curriculum",
-      "courseStatusNote": "The live official Programme Curriculum publishes five 3-credit Core Courses and an Elective pool from which any five 3-credit courses are selected, but it does not publish any course codes. The titles are not converted into invented codes, so the course structure remains unavailable pending an official coded curriculum.",
-      "courseCount": 0
+      "courseStatusNote": "The live official Programme Curriculum requires all five 3-credit Core Courses and any five 3-credit Elective Courses, for 30 credits in total. The official RIM, FIN and ACT Course Descriptions confirm the code, current title and 3-credit value of every course in the published pool. Elective availability is subject to sufficient demand and faculty availability. RIM537, RIM539 and RIM540 require RIM523, which is compulsory in the normal award path.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "verified",
+      "courseCount": 19
     },
     {
       "id": "LINGNAN-TPG-DIR-25-000168-L6",
@@ -10771,7 +10832,7 @@ module.exports = {
       "courseVerificationStatus": "blocked",
       "courseVerifiedAt": "2026-07-14",
       "courseSourceUrl": "https://www.ln.edu.hk/eng/mades",
-      "courseStatusNote": "The live official Programme page publishes the 30-credit total and coded Required, Elective and Capstone course lists for the 2026-27 curriculum, but it does not publish per-course credits or the credit and course-count requirements for each group. Credits and group rules are not inferred from the Programme total, so the structure remains unavailable pending an official current credit table.",
+      "courseStatusNote": "The live official Programme page states a 30-credit curriculum and links coded course-description PDFs that confirm course titles, categories and per-course credits, including 3-credit DES501 and 6-credit DES610. However, the page presents DES501-DES504, DES601-DES609/DES612 and DES610 only as highlighted courses and does not publish the required credit or course count for the Required, Elective and Capstone groups. The 30-credit total is not used to infer four Electives or to treat the highlighted examples as a complete pool, so the Programme remains blocked pending a complete official curriculum rule table.",
       "courseCount": 0
     },
     {
@@ -10781,7 +10842,7 @@ module.exports = {
       "name": "Master of Liberal Sciences",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://www.cspe.edu.hk/cat/CAT_LU.htm",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -10814,12 +10875,15 @@ module.exports = {
           "lastVerifiedAt": "2026-07-11"
         }
       ],
-      "dataLevel": "programme",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-14",
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-18",
       "courseSourceUrl": "https://www.ln.edu.hk/wjysis/mls/programme-overview/programme-structure",
-      "courseStatusNote": "The live official Programme Structure publishes the 30-credit mother Programme, three Concentrations and coded course tables, but the Applied Arts in TechMedia table requires three Concentration Courses while listing only LSC541 and LSC542. The missing third course is not invented, so the Programme remains unavailable pending a complete official Track table.",
-      "courseCount": 0
+      "courseStatusNote": "",
+      "trackSelectionOptional": true,
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 19
     },
     {
       "id": "LINGNAN-TPG-DIR-25-001304-L6",
@@ -10896,7 +10960,7 @@ module.exports = {
       "name": "Master of Science in Smart Ageing and Gerontology",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 30,
       "sourceUrl": "https://scholars.ln.edu.hk/en/organisations/school-of-graduate-studies/",
       "sourceLabel": "Hong Kong Qualifications Register CAT data for Lingnan University",
       "nameKind": "official_programme_name",
@@ -10904,12 +10968,14 @@ module.exports = {
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-14",
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-18",
       "courseSourceUrl": "https://www.ln.edu.hk/sgs/sag/programme-overview",
-      "courseStatusNote": "The live official Programme page states a nine-course, 30-credit structure and lists the LU and HKMU course titles, but it does not publish any course codes. The titles are not converted into invented codes, so the course structure remains unavailable pending an official coded curriculum.",
-      "courseCount": 0
+      "courseStatusNote": "The official LU and HKMU sources publish four 3-credit LU Core Courses, four 3-credit HKMU Core Courses and one jointly offered 6-credit Project, for 30 credits in total. The Project is coded SAG502 at LU and HSCI8621NEF at HKMU; these are institutional listings of the same joint course and only the code for the student's affiliated institution is completed. Institutional affiliation and the corresponding transfer-credit treatment require manual review.",
+      "creditUnit": "credits",
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 10
     }
   ]
 };

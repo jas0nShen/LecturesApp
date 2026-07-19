@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "LINGNAN",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-18",
+  "programmes": [
+    {
+      "programmeId": "LINGNAN-TPG-DIR-25-000019-L6",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.ln.edu.hk/orm/mscriaa/programme-curriculum",
+      "ruleReviewStatus": "verified",
+      "statusNote": "The live official Programme Curriculum requires all five 3-credit Core Courses and any five 3-credit Elective Courses, for 30 credits in total. The official RIM, FIN and ACT Course Descriptions confirm the code, current title and 3-credit value of every course in the published pool. Elective availability is subject to sufficient demand and faculty availability. RIM537, RIM539 and RIM540 require RIM523, which is compulsory in the normal award path.",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five Core Courses (15 credits).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/orm/mscriaa/programme-curriculum",
+          "courses": [
+            { "code": "RIM520", "name": "Principles of Risk Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf" },
+            { "code": "RIM521", "name": "Economics and Business", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf" },
+            { "code": "RIM522", "name": "Insurance Practice in Hong Kong and Mainland China", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf" },
+            { "code": "RIM523", "name": "Risk Analysis and Modelling", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf" },
+            { "code": "RIM524", "name": "Accounting and Financial Management in Financial Institutions", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Choose any five Elective Courses (15 credits). Elective offerings are subject to sufficient demand and faculty availability. RIM537, RIM539 and RIM540 require the compulsory course RIM523.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/orm/mscriaa/programme-curriculum",
+          "courses": [
+            { "code": "RIM530", "name": "Reinsurance, Risk Transfer and Risk Securitisation", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf" },
+            { "code": "RIM531", "name": "Life and Health Insurance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf" },
+            { "code": "RIM532", "name": "Financial Planning and Services in Hong Kong and Mainland China", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf" },
+            { "code": "RIM533", "name": "Property and Casualty Insurance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf" },
+            { "code": "RIM534", "name": "Insurance Law in Hong Kong and Mainland China", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf" },
+            { "code": "RIM535", "name": "Financial Risk Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf" },
+            { "code": "RIM536", "name": "Big Data Analytics for Risk Management and Insurance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf" },
+            { "code": "RIM537", "name": "Bond Market and Credit Risk Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf" },
+            { "code": "RIM538", "name": "Seminars in Risk and Insurance Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf" },
+            { "code": "RIM539", "name": "Life Contingencies and Insurance Mathematics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf" },
+            { "code": "RIM540", "name": "Ratemaking and Short-term Models", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf" },
+            { "code": "FIN531", "name": "Derivative Securities", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf" },
+            { "code": "FIN540", "name": "Venture Capital and Private Equity", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf" },
+            { "code": "ACT615", "name": "Introduction to Python Programming", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/ACT_TPG.pdf" }
+          ]
+        }
+      ]
+    }
+  ]
+}

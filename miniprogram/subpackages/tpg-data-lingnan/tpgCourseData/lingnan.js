@@ -594,6 +594,223 @@ module.exports = [
     ]
   },
   {
+    "id": "LINGNAN-TPG-DIR-08-000500-6",
+    "courseGroups": [
+      {
+        "id": "core-courses",
+        "name": "Core Courses",
+        "type": "core",
+        "creditsRequired": 18,
+        "coursesRequired": 6,
+        "ruleText": "Complete all six Core Courses (18 credits). IBF504 International Macroeconomics is compulsory and is mutually exclusive with Elective Course IBF615 International Money and Finance.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/econ/mibf/programmeoverview/programme-structure",
+        "courses": [
+          {
+            "code": "IBF502",
+            "name": "Corporate Finance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf"
+          },
+          {
+            "code": "IBF503",
+            "name": "Microeconomics for Global Business",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf"
+          },
+          {
+            "code": "IBF504",
+            "name": "International Macroeconomics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf"
+          },
+          {
+            "code": "IBF505",
+            "name": "Investment Theory and Applications",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf"
+          },
+          {
+            "code": "IBF604",
+            "name": "Financial Econometrics I",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf"
+          },
+          {
+            "code": "IBF624",
+            "name": "Fintech Trends and Challenges",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf"
+          }
+        ]
+      },
+      {
+        "id": "elective-courses",
+        "name": "Elective Courses",
+        "type": "elective",
+        "creditsRequired": 12,
+        "ruleText": "Complete any 12 credits from the official Elective pool, subject to prerequisites, exclusions and course availability. IBF504 and IBF615 are mutually exclusive; because IBF504 is a compulsory Core Course, IBF615 must not be counted toward the award. The pool contains both 3-credit and 1.5-credit courses, so no fixed coursesRequired value is asserted.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/econ/mibf/programmeoverview/programme-structure/list-of-courses",
+        "courses": [
+          {
+            "code": "IBF601",
+            "name": "Microeconomics of Banking",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf"
+          },
+          {
+            "code": "IBF602",
+            "name": "Derivatives and Risk Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf"
+          },
+          {
+            "code": "IBF603",
+            "name": "Multinational Financial Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf"
+          },
+          {
+            "code": "IBF605",
+            "name": "Business Valuation and Financial Statement Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf"
+          },
+          {
+            "code": "IBF606",
+            "name": "Financial Institutions on the Chinese Mainland and in Hong Kong",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf"
+          },
+          {
+            "code": "IBF611",
+            "name": "Management of Banks and Financial Institutions",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf"
+          },
+          {
+            "code": "IBF612",
+            "name": "Professional Issues in Banking and Finance",
+            "credits": 1.5,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf"
+          },
+          {
+            "code": "IBF614",
+            "name": "Fixed-Income Securities",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf"
+          },
+          {
+            "code": "IBF615",
+            "name": "International Money and Finance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf"
+          },
+          {
+            "code": "IBF617",
+            "name": "Global Investment",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf"
+          },
+          {
+            "code": "IBF618",
+            "name": "Financial Econometrics II",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf"
+          },
+          {
+            "code": "IBF619",
+            "name": "Accounting for Financial Professionals",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf"
+          },
+          {
+            "code": "IBF620",
+            "name": "Legal Issues in the Regulation and Compliance of Financial and Banking Institutions",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf"
+          },
+          {
+            "code": "IBF621",
+            "name": "Behavioral Finance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf"
+          },
+          {
+            "code": "IBF622",
+            "name": "Paying for the Real Economy: The Theory and Financing of International Trade",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf"
+          },
+          {
+            "code": "IBF623",
+            "name": "Quantitative Methods for Finance and Economics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf"
+          },
+          {
+            "code": "IBF625",
+            "name": "Regional Study of a Financial Centre in the East",
+            "credits": 1.5,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf"
+          },
+          {
+            "code": "IBF626",
+            "name": "Regional Study of a Financial Centre in the West",
+            "credits": 1.5,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf"
+          },
+          {
+            "code": "IBF627",
+            "name": "Practical Cases in Banking and Finance",
+            "credits": 1.5,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf"
+          },
+          {
+            "code": "IBF628",
+            "name": "Big Data and Artificial Intelligence in Finance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf"
+          },
+          {
+            "code": "IBF629",
+            "name": "Selected Seminars in Economics and Finance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "LINGNAN-TPG-DIR-08-000501-6",
     "courseGroups": [
       {
@@ -935,6 +1152,210 @@ module.exports = [
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mscmib/curriculum"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LINGNAN-TPG-DIR-16-000107-L6",
+    "courseGroups": [
+      {
+        "id": "core-courses",
+        "name": "Core Courses",
+        "type": "core",
+        "creditsRequired": 21,
+        "coursesRequired": 7,
+        "ruleText": "Complete all seven Core Courses (21 credits).",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/fin/mfin/programme/master-of-science-in-finance",
+        "courses": [
+          {
+            "code": "FIN520",
+            "name": "Corporate Finance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf"
+          },
+          {
+            "code": "FIN521",
+            "name": "Financial Markets and Investment Analysis",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf"
+          },
+          {
+            "code": "FIN522",
+            "name": "Management of Financial Institutions in Hong Kong and Mainland China",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf"
+          },
+          {
+            "code": "FIN523",
+            "name": "Quantitative Methods for Finance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf"
+          },
+          {
+            "code": "FIN524",
+            "name": "Principles of Risk Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf"
+          },
+          {
+            "code": "FIN525",
+            "name": "Fixed Income Securities",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf"
+          },
+          {
+            "code": "FIN530",
+            "name": "Principles of Financial Analysis and Valuation",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf"
+          }
+        ]
+      },
+      {
+        "id": "elective-courses",
+        "name": "Elective Courses",
+        "type": "elective",
+        "creditsRequired": 9,
+        "coursesRequired": 3,
+        "ruleText": "Choose any three Elective Courses (9 credits). Elective offerings are subject to sufficient demand and faculty availability, and some courses have prerequisites.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/fin/mfin/programme/master-of-science-in-finance",
+        "courses": [
+          {
+            "code": "FIN531",
+            "name": "Derivative Securities",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf"
+          },
+          {
+            "code": "FIN532",
+            "name": "Financial Planning and Services in Hong Kong and Mainland China",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf"
+          },
+          {
+            "code": "FIN534",
+            "name": "Hong Kong and Mainland China Monetary and Financial Systems",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf"
+          },
+          {
+            "code": "FIN535",
+            "name": "International Financial Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf"
+          },
+          {
+            "code": "FIN536",
+            "name": "Investment and Wealth Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf"
+          },
+          {
+            "code": "FIN537",
+            "name": "Real Estate Investment and Finance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf"
+          },
+          {
+            "code": "FIN538",
+            "name": "Securities Laws and Regulatory Framework in Hong Kong and Mainland China",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf"
+          },
+          {
+            "code": "FIN539",
+            "name": "Algorithmic Trading and Quantitative Strategies",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf"
+          },
+          {
+            "code": "FIN540",
+            "name": "Venture Capital and Private Equity",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf"
+          },
+          {
+            "code": "FIN541",
+            "name": "Insurance Law in Hong Kong and Mainland China",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf"
+          },
+          {
+            "code": "FIN542",
+            "name": "Insurance Practice in Hong Kong and Mainland China",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf"
+          },
+          {
+            "code": "FIN543",
+            "name": "Introduction to FinTech",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf"
+          },
+          {
+            "code": "FIN545",
+            "name": "Environmental, Social and Governance (ESG) Investing and Sustainable Finance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf"
+          },
+          {
+            "code": "FIN546",
+            "name": "Structured Products in Financial Market",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf"
+          },
+          {
+            "code": "FIN600",
+            "name": "Case Studies in Finance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf"
+          },
+          {
+            "code": "RIM535",
+            "name": "Financial Risk Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf"
+          },
+          {
+            "code": "RIM536",
+            "name": "Big Data Analytics for Risk Management and Insurance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf"
+          },
+          {
+            "code": "ACT502",
+            "name": "Business and Company Law",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/ACT_TPG.pdf"
           }
         ]
       }
@@ -4528,6 +4949,570 @@ module.exports = [
     ]
   },
   {
+    "id": "LINGNAN-TPG-DIR-24-000812-L6",
+    "courseGroups": [
+      {
+        "id": "shared-core-courses",
+        "name": "Shared Core Courses",
+        "type": "core",
+        "creditsRequired": 6,
+        "coursesRequired": 2,
+        "ruleText": "Complete both shared Core Courses (6 credits) under the mother Programme and the HRADT Concentration. MGT506 Action Learning Projects is a year course.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mschrom/curriculum",
+        "courses": [
+          {
+            "code": "MGT504",
+            "name": "Contemporary Human Resource Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/MGT_TPG.pdf"
+          },
+          {
+            "code": "MGT506",
+            "name": "Action Learning Projects",
+            "credits": 3,
+            "courseKind": "project",
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/MGT_TPG.pdf"
+          }
+        ]
+      },
+      {
+        "id": "path-core-and-elective-courses",
+        "name": "Path-specific Core and Elective Courses",
+        "type": "core",
+        "creditsRequired": 24,
+        "coursesRequired": 8,
+        "ruleText": "Complete eight courses (24 credits) in addition to the two shared Core Courses. Mother Programme: complete MGT501, MGT502, MGT505 and MGT507 as Core Courses, then choose four Electives from MGT601, MGT602, MGT604, MGT605, MGT606, ORM515, HRM542, HRM543 and ACT615. HRADT Concentration: complete HRM541, HRM542, HRM543 and HRM544 as Core Courses, then choose four Electives from MGT601, MGT602, MGT604, MGT605, MGT606, ORM515, MGT501, MGT502, MGT505, MGT507 and ACT615. The Core/Elective role changes require manual audit review.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/fb/tpo/academic-programmes/mschrom/curriculum",
+        "courses": [
+          {
+            "code": "MGT501",
+            "name": "Management of Organisations and People",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "countsTowardTrackIds": [
+              "LINGNAN-TPG-DIR-24-000812-L6-25-000384-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/MGT_TPG.pdf"
+          },
+          {
+            "code": "MGT502",
+            "name": "Managing Ethically",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "countsTowardTrackIds": [
+              "LINGNAN-TPG-DIR-24-000812-L6-25-000384-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/MGT_TPG.pdf"
+          },
+          {
+            "code": "MGT505",
+            "name": "Performance Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "countsTowardTrackIds": [
+              "LINGNAN-TPG-DIR-24-000812-L6-25-000384-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/MGT_TPG.pdf"
+          },
+          {
+            "code": "MGT507",
+            "name": "Employee Learning and Career Development",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "countsTowardTrackIds": [
+              "LINGNAN-TPG-DIR-24-000812-L6-25-000384-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/MGT_TPG.pdf"
+          },
+          {
+            "code": "HRM541",
+            "name": "Human Resource Analytics",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "LINGNAN-TPG-DIR-24-000812-L6-25-000384-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/HRM_TPG.pdf"
+          },
+          {
+            "code": "HRM542",
+            "name": "Human Resource Information System",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "countsTowardTrackIds": [
+              "LINGNAN-TPG-DIR-24-000812-L6-25-000384-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/HRM_TPG.pdf"
+          },
+          {
+            "code": "HRM543",
+            "name": "New Compliance of Human Resource Policy",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "countsTowardTrackIds": [
+              "LINGNAN-TPG-DIR-24-000812-L6-25-000384-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/HRM_TPG.pdf"
+          },
+          {
+            "code": "HRM544",
+            "name": "Digital Adoption and Transformation",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "LINGNAN-TPG-DIR-24-000812-L6-25-000384-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/HRM_TPG.pdf"
+          },
+          {
+            "code": "MGT601",
+            "name": "Managing Conflict in Organisations",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/MGT_TPG.pdf"
+          },
+          {
+            "code": "MGT602",
+            "name": "Leadership in Organisations",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/MGT_TPG.pdf"
+          },
+          {
+            "code": "MGT604",
+            "name": "Strategic Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/MGT_TPG.pdf"
+          },
+          {
+            "code": "MGT605",
+            "name": "Managing Quality for People and Organisations",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/MGT_TPG.pdf"
+          },
+          {
+            "code": "MGT606",
+            "name": "Organisational Analysis and Change",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/MGT_TPG.pdf"
+          },
+          {
+            "code": "ORM515",
+            "name": "Business Decision Making with Software",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/ORM_TPG.pdf"
+          },
+          {
+            "code": "ACT615",
+            "name": "Introduction to Python Programming",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/ACT_TPG.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LINGNAN-TPG-DIR-25-000019-L6",
+    "courseGroups": [
+      {
+        "id": "core-courses",
+        "name": "Core Courses",
+        "type": "core",
+        "creditsRequired": 15,
+        "coursesRequired": 5,
+        "ruleText": "Complete all five Core Courses (15 credits).",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/orm/mscriaa/programme-curriculum",
+        "courses": [
+          {
+            "code": "RIM520",
+            "name": "Principles of Risk Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf"
+          },
+          {
+            "code": "RIM521",
+            "name": "Economics and Business",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf"
+          },
+          {
+            "code": "RIM522",
+            "name": "Insurance Practice in Hong Kong and Mainland China",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf"
+          },
+          {
+            "code": "RIM523",
+            "name": "Risk Analysis and Modelling",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf"
+          },
+          {
+            "code": "RIM524",
+            "name": "Accounting and Financial Management in Financial Institutions",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf"
+          }
+        ]
+      },
+      {
+        "id": "elective-courses",
+        "name": "Elective Courses",
+        "type": "elective",
+        "creditsRequired": 15,
+        "coursesRequired": 5,
+        "ruleText": "Choose any five Elective Courses (15 credits). Elective offerings are subject to sufficient demand and faculty availability. RIM537, RIM539 and RIM540 require the compulsory course RIM523.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/orm/mscriaa/programme-curriculum",
+        "courses": [
+          {
+            "code": "RIM530",
+            "name": "Reinsurance, Risk Transfer and Risk Securitisation",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf"
+          },
+          {
+            "code": "RIM531",
+            "name": "Life and Health Insurance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf"
+          },
+          {
+            "code": "RIM532",
+            "name": "Financial Planning and Services in Hong Kong and Mainland China",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf"
+          },
+          {
+            "code": "RIM533",
+            "name": "Property and Casualty Insurance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf"
+          },
+          {
+            "code": "RIM534",
+            "name": "Insurance Law in Hong Kong and Mainland China",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf"
+          },
+          {
+            "code": "RIM535",
+            "name": "Financial Risk Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf"
+          },
+          {
+            "code": "RIM536",
+            "name": "Big Data Analytics for Risk Management and Insurance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf"
+          },
+          {
+            "code": "RIM537",
+            "name": "Bond Market and Credit Risk Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf"
+          },
+          {
+            "code": "RIM538",
+            "name": "Seminars in Risk and Insurance Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf"
+          },
+          {
+            "code": "RIM539",
+            "name": "Life Contingencies and Insurance Mathematics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf"
+          },
+          {
+            "code": "RIM540",
+            "name": "Ratemaking and Short-term Models",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/RIM_TPG.pdf"
+          },
+          {
+            "code": "FIN531",
+            "name": "Derivative Securities",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf"
+          },
+          {
+            "code": "FIN540",
+            "name": "Venture Capital and Private Equity",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/FIN_TPG.pdf"
+          },
+          {
+            "code": "ACT615",
+            "name": "Introduction to Python Programming",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/ACT_TPG.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LINGNAN-TPG-DIR-25-000888-L6",
+    "courseGroups": [
+      {
+        "id": "core-courses",
+        "name": "Core Courses",
+        "type": "core",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Complete all four Core Courses (12 credits).",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/wjysis/mls/programme-overview/programme-structure",
+        "courses": [
+          {
+            "code": "LSC501",
+            "name": "World History of Science",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf"
+          },
+          {
+            "code": "LSC502",
+            "name": "Scientific Study and Research Methods",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf"
+          },
+          {
+            "code": "LSC503",
+            "name": "Critical Analytical Thinking",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf"
+          },
+          {
+            "code": "LSC504",
+            "name": "Programming, Artificial Intelligence & Arts",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf"
+          }
+        ]
+      },
+      {
+        "id": "practice-courses",
+        "name": "Practice Courses",
+        "type": "project",
+        "creditsRequired": 6,
+        "ruleText": "Complete any 6 credits of Practice Courses: LSC505 and LSC506 together, or LSC507. For a selected Concentration, the field trips, events and/or projects must be associated with that Concentration; this association requires manual audit review.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/wjysis/mls/programme-overview/programme-structure",
+        "courses": [
+          {
+            "code": "LSC505",
+            "name": "MLS Field Trip",
+            "credits": 3,
+            "courseKind": "field_study",
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf"
+          },
+          {
+            "code": "LSC506",
+            "name": "MLS Event Workshop",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf"
+          },
+          {
+            "code": "LSC507",
+            "name": "Liberal Sciences Capstone Project",
+            "credits": 6,
+            "courseKind": "project",
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf"
+          }
+        ]
+      },
+      {
+        "id": "programme-elective-and-concentration-courses",
+        "name": "Programme Elective and Concentration Courses",
+        "type": "elective",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Complete four courses (12 credits). Mother Programme without a Concentration: choose any four courses from all Programme Elective and Concentration Required Courses. Applied Sports and Health Science: complete LSC521, LSC522 and LSC523, then choose one Programme Elective from LSC511-LSC514. Music and Performance: complete LSC531, LSC532 and LSC533, then choose one Programme Elective from LSC511-LSC514. Applied Arts in TechMedia: complete LSC533, LSC541 and LSC542, then choose one Programme Elective from LSC511-LSC514. The selected Concentration's three-plus-one combination requires manual audit review.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/wjysis/mls/programme-overview/programme-structure",
+        "courses": [
+          {
+            "code": "LSC511",
+            "name": "Globalisation and Culture Evolution",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf"
+          },
+          {
+            "code": "LSC512",
+            "name": "Pedagogy for Advanced Education",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf"
+          },
+          {
+            "code": "LSC513",
+            "name": "Technology and Artificial Intelligence for Education",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf"
+          },
+          {
+            "code": "LSC514",
+            "name": "Leadership and Interpersonal Skills",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf"
+          },
+          {
+            "code": "LSC521",
+            "name": "Sports Science and Health Promotion",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-25-000888-L6-25-000890-L6",
+              "LINGNAN-TPG-DIR-25-000888-L6-25-000891-L6"
+            ],
+            "countsTowardTrackIds": [
+              "LINGNAN-TPG-DIR-25-000888-L6-25-000889-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf"
+          },
+          {
+            "code": "LSC522",
+            "name": "Sports Business and Industrialisation",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-25-000888-L6-25-000890-L6",
+              "LINGNAN-TPG-DIR-25-000888-L6-25-000891-L6"
+            ],
+            "countsTowardTrackIds": [
+              "LINGNAN-TPG-DIR-25-000888-L6-25-000889-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf"
+          },
+          {
+            "code": "LSC523",
+            "name": "Sports Technology and Design",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-25-000888-L6-25-000890-L6",
+              "LINGNAN-TPG-DIR-25-000888-L6-25-000891-L6"
+            ],
+            "countsTowardTrackIds": [
+              "LINGNAN-TPG-DIR-25-000888-L6-25-000889-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf"
+          },
+          {
+            "code": "LSC531",
+            "name": "Artificial Intelligence and Music Production Technology",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-25-000888-L6-25-000889-L6",
+              "LINGNAN-TPG-DIR-25-000888-L6-25-000891-L6"
+            ],
+            "countsTowardTrackIds": [
+              "LINGNAN-TPG-DIR-25-000888-L6-25-000890-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf"
+          },
+          {
+            "code": "LSC532",
+            "name": "Entertainment Event Management",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-25-000888-L6-25-000889-L6",
+              "LINGNAN-TPG-DIR-25-000888-L6-25-000891-L6"
+            ],
+            "countsTowardTrackIds": [
+              "LINGNAN-TPG-DIR-25-000888-L6-25-000890-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf"
+          },
+          {
+            "code": "LSC533",
+            "name": "World History of Art",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-25-000888-L6-25-000889-L6"
+            ],
+            "countsTowardTrackIds": [
+              "LINGNAN-TPG-DIR-25-000888-L6-25-000890-L6",
+              "LINGNAN-TPG-DIR-25-000888-L6-25-000891-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf"
+          },
+          {
+            "code": "LSC541",
+            "name": "Digital Marketing and Social Media",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-25-000888-L6-25-000889-L6",
+              "LINGNAN-TPG-DIR-25-000888-L6-25-000890-L6"
+            ],
+            "countsTowardTrackIds": [
+              "LINGNAN-TPG-DIR-25-000888-L6-25-000891-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf"
+          },
+          {
+            "code": "LSC542",
+            "name": "Technologies Empowered Digital Media",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "excludesTrackIds": [
+              "LINGNAN-TPG-DIR-25-000888-L6-25-000889-L6",
+              "LINGNAN-TPG-DIR-25-000888-L6-25-000890-L6"
+            ],
+            "countsTowardTrackIds": [
+              "LINGNAN-TPG-DIR-25-000888-L6-25-000891-L6"
+            ],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "LINGNAN-TPG-DIR-26-000201-L6",
     "courseGroups": [
       {
@@ -4636,6 +5621,119 @@ module.exports = [
             "credits": 3,
             "appliesToTrackIds": [],
             "sourceUrl": "https://www.ln.edu.hk/socsp/msoda/programme-overview/programme-structure"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LINGNAN-TPG-DIR-MASTER-OF-SCIENCE-IN-SMART-AGEING-AND-GERONTOLOG",
+    "courseGroups": [
+      {
+        "id": "lu-core-courses",
+        "name": "Core Courses offered by LU",
+        "type": "core",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Complete all four LU Core Courses (12 credits).",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.ln.edu.hk/sgs/sag/programme-overview",
+        "courses": [
+          {
+            "code": "MCG506",
+            "name": "Ageing Policies in Greater China",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/mcg/programme-overview/programme-structure"
+          },
+          {
+            "code": "MHM503",
+            "name": "Research in Health and Social Services",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/MHM_TPG.pdf"
+          },
+          {
+            "code": "SAG501",
+            "name": "Positive Gerontology",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/SAG_TPG.pdf"
+          },
+          {
+            "code": "HAM510",
+            "name": "Data Analytics in Health and Health Services",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/HAM_TPG.pdf"
+          }
+        ]
+      },
+      {
+        "id": "hkmu-core-courses",
+        "name": "Core Courses offered by HKMU",
+        "type": "core",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Complete all four HKMU Core Courses (12 credits).",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.hkmu.edu.hk/nhs/wp-content/uploads/sites/6/2025/12/Master-of-Science-in-Smart-Ageing-and-Gerontology_ENG-1.pdf",
+        "courses": [
+          {
+            "code": "HSCI8609NEF",
+            "name": "Smart Ageing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.hkmu.edu.hk/admissions/course-info/hsci-8609nef/"
+          },
+          {
+            "code": "HSCI8610NEF",
+            "name": "Human Genomics: Implications for Health",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.hkmu.edu.hk/admissions/course-info/hsci-8610nef/"
+          },
+          {
+            "code": "HSCI8611NEF",
+            "name": "Building Resilience in the Smart Era",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.hkmu.edu.hk/admissions/course-info/hsci-8611nef/"
+          },
+          {
+            "code": "HSCI8608NEF",
+            "name": "Frailty in Older Adults",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.hkmu.edu.hk/admissions/course-info/hsci-8608nef/"
+          }
+        ]
+      },
+      {
+        "id": "joint-capstone-project",
+        "name": "Joint Capstone Project",
+        "type": "project_dissertation",
+        "creditsRequired": 6,
+        "coursesRequired": 1,
+        "ruleText": "Complete the jointly offered 6-credit Smart Ageing and Gerontology Project under the code of the student's affiliated institution: SAG502 at LU or HSCI8621NEF at HKMU. These are institutional listings of the same joint course, not two separate projects.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://www.hkmu.edu.hk/nhs/wp-content/uploads/sites/6/2025/12/Master-of-Science-in-Smart-Ageing-and-Gerontology_ENG-1.pdf",
+        "courses": [
+          {
+            "code": "SAG502",
+            "name": "Smart Ageing and Gerontology Project",
+            "credits": 6,
+            "courseKind": "project",
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/SAG_TPG.pdf"
+          },
+          {
+            "code": "HSCI8621NEF",
+            "name": "Smart Ageing and Gerontology Project",
+            "credits": 6,
+            "courseKind": "project",
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://www.hkmu.edu.hk/admissions/course-info/hsci-8621nef/"
           }
         ]
       }

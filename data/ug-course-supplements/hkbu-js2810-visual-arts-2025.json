@@ -1,0 +1,487 @@
+{
+  "provider": "HKBU University Student Handbook 2025-2026",
+  "academicYear": "2025-2026",
+  "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/academy-of-visual-arts-1/bachelor-of-arts-honours-in-visual-arts",
+  "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2810/",
+  "note": "The official 2025-2026 Handbook publishes the Professional Mode curriculum as 60 units of Major Courses, comprising 24 units of Major Required Courses and 36 units of Major Elective Courses, plus the 6-unit VART4137 Studio Honours Project. Students must complete at least 27 units of Level 3 studio courses. A concentration is established by completing 18 units of Level 3 studio courses and the 6-unit Studio Honours Project in the same division (Studio and Media Arts or Craft and Design); the remaining 9 required Level 3 studio units may be taken in the other practice division. If more than 27 Level 3 studio units are completed, the concentration is determined by the division containing the majority of completed studio units. The published Cluster Elective and Major Elective listings are recorded as official course options, but are not represented as a closed automatic completion path beyond these stated unit and concentration rules. VART2337 is a required 0-unit work experience. The Programme page states that senior-year students from the 2020 intake onwards take VART3446 to exempt VART2306; the linked course page confirms VART3446 is 3 units. The page separately describes a Liberal Arts Mode with 60 units dedicated to Visual Arts, 15 approved units in cognate disciplines and 22 Free Elective units, but does not publish a separate closed coded course table for that mode; this supplement therefore does not fabricate one. University Language Courses, General Education Courses, cognate-discipline choices and Free Electives are excluded. No Year or Term is assigned from narrative progression guidance.",
+  "supplements": [
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BA-VA-16",
+      "jupasCode": "JS2810",
+      "programmeName": "Bachelor of Arts (Hons) in Visual Arts",
+      "majorId": "HKBU-UG-BA-VA-16-M1",
+      "majorName": "Bachelor of Arts (Hons) in Visual Arts",
+      "courses": [
+        {
+          "code": "VART1005",
+          "title": "Visual Arts Practice I",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 24 units"
+        },
+        {
+          "code": "VART1006",
+          "title": "Visual Arts Practice II",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 24 units"
+        },
+        {
+          "code": "VART1305",
+          "title": "Arts and Its Histories I",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 24 units"
+        },
+        {
+          "code": "VART1306",
+          "title": "Arts and Its Histories II",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 24 units"
+        },
+        {
+          "code": "VART2305",
+          "title": "Art in the 20th Century I",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 24 units"
+        },
+        {
+          "code": "VART2306",
+          "title": "Art in the 20th Century II",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 24 units"
+        },
+        {
+          "code": "VART4035",
+          "title": "Research and Practice for Visual Artists",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 24 units"
+        },
+        {
+          "code": "VART4036",
+          "title": "Professional Practice for Visual Artists",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 24 units"
+        },
+        {
+          "code": "VART2337",
+          "title": "Visual Arts Work Experience",
+          "credits": 0,
+          "group": "Major Required Courses · required non-credit work experience",
+          "courseType": "internship",
+          "description": "The Professional Mode requires a self-organised non-credit-bearing work experience in a relevant company or institution by the end of Year 2; the Handbook states students otherwise usually may not progress to Year 3."
+        },
+        {
+          "code": "VART3446",
+          "title": "Art in the Contemporary World",
+          "credits": 3,
+          "group": "Major Required Courses · senior-year students (2020 intake onwards) take this course to exempt VART2306",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/VART3446",
+          "description": "The Programme page identifies VART3446 as the senior-year replacement for VART2306; the linked 2025-2026 Handbook course page confirms the title and 3 units."
+        },
+        {
+          "code": "VART3377",
+          "title": "Studio: Drawing and Painting",
+          "credits": 9,
+          "group": "Major Elective Courses — Cluster Electives · Studio and Media Arts Concentration · Drawing and Painting"
+        },
+        {
+          "code": "VART4065",
+          "title": "Further Studies in Studio and Media Arts (Drawing)",
+          "credits": 3,
+          "group": "Major Elective Courses — Cluster Electives · Studio and Media Arts Concentration · Drawing and Painting"
+        },
+        {
+          "code": "VART4066",
+          "title": "Further Studies in Studio and Media Arts (Painting)",
+          "credits": 3,
+          "group": "Major Elective Courses — Cluster Electives · Studio and Media Arts Concentration · Drawing and Painting"
+        },
+        {
+          "code": "VART3385",
+          "title": "Studio: Chinese Arts",
+          "credits": 9,
+          "group": "Major Elective Courses — Cluster Electives · Studio and Media Arts Concentration · Chinese Arts"
+        },
+        {
+          "code": "VART4067",
+          "title": "Further Studies in Studio and Media Arts (Chinese Arts)",
+          "credits": 3,
+          "group": "Major Elective Courses — Cluster Electives · Studio and Media Arts Concentration · Chinese Arts"
+        },
+        {
+          "code": "VART3386",
+          "title": "Studio: Audio-Visual Practices in Media Arts",
+          "credits": 9,
+          "group": "Major Elective Courses — Cluster Electives · Studio and Media Arts Concentration · Media Arts"
+        },
+        {
+          "code": "VART3436",
+          "title": "Studio: Spatial Practices in Media Arts",
+          "credits": 9,
+          "group": "Major Elective Courses — Cluster Electives · Studio and Media Arts Concentration · Media Arts"
+        },
+        {
+          "code": "VART4075",
+          "title": "Further Studies in Studio and Media Arts (Media Arts)",
+          "credits": 3,
+          "group": "Major Elective Courses — Cluster Electives · Studio and Media Arts Concentration · Media Arts"
+        },
+        {
+          "code": "VART4076",
+          "title": "Further Studies in Studio and Media Arts (Lens-based Media)",
+          "credits": 3,
+          "group": "Major Elective Courses — Cluster Electives · Studio and Media Arts Concentration · Media Arts"
+        },
+        {
+          "code": "VART3387",
+          "title": "Studio: Sculpture",
+          "credits": 9,
+          "group": "Major Elective Courses — Cluster Electives · Studio and Media Arts Concentration · Sculpture"
+        },
+        {
+          "code": "VART4077",
+          "title": "Further Studies in Studio and Media Arts (Sculpture)",
+          "credits": 3,
+          "group": "Major Elective Courses — Cluster Electives · Studio and Media Arts Concentration · Sculpture"
+        },
+        {
+          "code": "VART4085",
+          "title": "Further Studies in Studio and Media Arts (Performance Studies)",
+          "credits": 3,
+          "group": "Major Elective Courses — Cluster Electives · Studio and Media Arts Concentration · Sculpture"
+        },
+        {
+          "code": "VART4086",
+          "title": "Further Studies in Studio and Media Arts (Installation Art)",
+          "credits": 3,
+          "group": "Major Elective Courses — Cluster Electives · Studio and Media Arts Concentration · Sculpture"
+        },
+        {
+          "code": "VART3395",
+          "title": "Studio: Graphic Design",
+          "credits": 9,
+          "group": "Major Elective Courses — Cluster Electives · Craft and Design Concentration · Graphic Arts"
+        },
+        {
+          "code": "VART3437",
+          "title": "Studio: Printmaking",
+          "credits": 9,
+          "group": "Major Elective Courses — Cluster Electives · Craft and Design Concentration · Graphic Arts"
+        },
+        {
+          "code": "VART4087",
+          "title": "Further Studies in Craft and Design (Graphic Design)",
+          "credits": 3,
+          "group": "Major Elective Courses — Cluster Electives · Craft and Design Concentration · Graphic Arts"
+        },
+        {
+          "code": "VART4095",
+          "title": "Further Studies in Craft and Design (Printmaking)",
+          "credits": 3,
+          "group": "Major Elective Courses — Cluster Electives · Craft and Design Concentration · Graphic Arts"
+        },
+        {
+          "code": "VART3396",
+          "title": "Studio: Glass",
+          "credits": 9,
+          "group": "Major Elective Courses — Cluster Electives · Craft and Design Concentration · Glass and Ceramics"
+        },
+        {
+          "code": "VART3427",
+          "title": "Studio: Ceramics",
+          "credits": 9,
+          "group": "Major Elective Courses — Cluster Electives · Craft and Design Concentration · Glass and Ceramics"
+        },
+        {
+          "code": "VART4096",
+          "title": "Further Studies in Craft and Design (Ceramics)",
+          "credits": 3,
+          "group": "Major Elective Courses — Cluster Electives · Craft and Design Concentration · Glass and Ceramics"
+        },
+        {
+          "code": "VART4107",
+          "title": "Further Studies in Craft and Design (Glass)",
+          "credits": 3,
+          "group": "Major Elective Courses — Cluster Electives · Craft and Design Concentration · Glass and Ceramics"
+        },
+        {
+          "code": "VART3397",
+          "title": "Studio: Object Culture",
+          "credits": 9,
+          "group": "Major Elective Courses — Cluster Electives · Craft and Design Concentration · Object Design"
+        },
+        {
+          "code": "VART3445",
+          "title": "Studio: Object Technology (Robotics and Kinetics)",
+          "credits": 9,
+          "group": "Major Elective Courses — Cluster Electives · Craft and Design Concentration · Object Design"
+        },
+        {
+          "code": "VART4097",
+          "title": "Further Studies in Craft and Design (Wearables)",
+          "credits": 3,
+          "group": "Major Elective Courses — Cluster Electives · Craft and Design Concentration · Object Design"
+        },
+        {
+          "code": "VART4105",
+          "title": "Further Studies in Craft and Design (Object Culture)",
+          "credits": 3,
+          "group": "Major Elective Courses — Cluster Electives · Craft and Design Concentration · Object Design"
+        },
+        {
+          "code": "VART4116",
+          "title": "Further Studies in Craft and Design (Object Technology)",
+          "credits": 3,
+          "group": "Major Elective Courses — Cluster Electives · Craft and Design Concentration · Object Design"
+        },
+        {
+          "code": "VART3405",
+          "title": "Studio: Experience Design",
+          "credits": 9,
+          "group": "Major Elective Courses — Cluster Electives · Craft and Design Concentration · Experience Design"
+        },
+        {
+          "code": "VART4106",
+          "title": "Further Studies in Craft and Design (Experience Design)",
+          "credits": 3,
+          "group": "Major Elective Courses — Cluster Electives · Craft and Design Concentration · Experience Design"
+        },
+        {
+          "code": "VART2635",
+          "title": "Drawing on Location and Collage",
+          "credits": 3,
+          "group": "Major Elective Courses · Studio and Media Arts Concentration · published course list"
+        },
+        {
+          "code": "VART2636",
+          "title": "Observational and Life Drawing",
+          "credits": 3,
+          "group": "Major Elective Courses · Studio and Media Arts Concentration · published course list"
+        },
+        {
+          "code": "VART2637",
+          "title": "Painting Materials and Methods from Observation",
+          "credits": 3,
+          "group": "Major Elective Courses · Studio and Media Arts Concentration · published course list"
+        },
+        {
+          "code": "VART2645",
+          "title": "Chinese Calligraphy",
+          "credits": 3,
+          "group": "Major Elective Courses · Studio and Media Arts Concentration · published course list"
+        },
+        {
+          "code": "VART2646",
+          "title": "Chinese Seal Engraving",
+          "credits": 3,
+          "group": "Major Elective Courses · Studio and Media Arts Concentration · published course list"
+        },
+        {
+          "code": "VART2647",
+          "title": "Chinese Gongbi Painting",
+          "credits": 3,
+          "group": "Major Elective Courses · Studio and Media Arts Concentration · published course list"
+        },
+        {
+          "code": "VART2655",
+          "title": "Chinese Landscape Painting",
+          "credits": 3,
+          "group": "Major Elective Courses · Studio and Media Arts Concentration · published course list"
+        },
+        {
+          "code": "VART2656",
+          "title": "Analogue Photography",
+          "credits": 3,
+          "group": "Major Elective Courses · Studio and Media Arts Concentration · published course list"
+        },
+        {
+          "code": "VART2657",
+          "title": "Digital Photography",
+          "credits": 3,
+          "group": "Major Elective Courses · Studio and Media Arts Concentration · published course list"
+        },
+        {
+          "code": "VART2665",
+          "title": "Video Basics and Camera",
+          "credits": 3,
+          "group": "Major Elective Courses · Studio and Media Arts Concentration · published course list"
+        },
+        {
+          "code": "VART2666",
+          "title": "Sound Basics and Sound Editing",
+          "credits": 3,
+          "group": "Major Elective Courses · Studio and Media Arts Concentration · published course list"
+        },
+        {
+          "code": "VART2667",
+          "title": "Video Editing",
+          "credits": 3,
+          "group": "Major Elective Courses · Studio and Media Arts Concentration · published course list"
+        },
+        {
+          "code": "VART2675",
+          "title": "Multimedia Authoring and Physical Media",
+          "credits": 3,
+          "group": "Major Elective Courses · Studio and Media Arts Concentration · published course list"
+        },
+        {
+          "code": "VART2676",
+          "title": "Additive Sculpture from Clay and Plaster to Bronze",
+          "credits": 3,
+          "group": "Major Elective Courses · Studio and Media Arts Concentration · published course list"
+        },
+        {
+          "code": "VART2677",
+          "title": "Subtractive Sculpture on Wood and Stone",
+          "credits": 3,
+          "group": "Major Elective Courses · Studio and Media Arts Concentration · published course list"
+        },
+        {
+          "code": "VART2736",
+          "title": "Digital Tools for Web Design",
+          "credits": 3,
+          "group": "Major Elective Courses · Studio and Media Arts Concentration · published course list"
+        },
+        {
+          "code": "VART2737",
+          "title": "Digital Modelling and Fabrication for Sculpture",
+          "credits": 3,
+          "group": "Major Elective Courses · Studio and Media Arts Concentration · published course list"
+        },
+        {
+          "code": "VART2745",
+          "title": "Abstract Painting",
+          "credits": 3,
+          "group": "Major Elective Courses · Studio and Media Arts Concentration · published course list"
+        },
+        {
+          "code": "VART2685",
+          "title": "Woodworking and Metalworking",
+          "credits": 3,
+          "group": "Major Elective Courses · Craft and Design Concentration · published course list"
+        },
+        {
+          "code": "VART2686",
+          "title": "Moving Narratives",
+          "credits": 3,
+          "group": "Major Elective Courses · Craft and Design Concentration · published course list"
+        },
+        {
+          "code": "VART2687",
+          "title": "Illustration",
+          "credits": 3,
+          "group": "Major Elective Courses · Craft and Design Concentration · published course list"
+        },
+        {
+          "code": "VART2695",
+          "title": "Typography",
+          "credits": 3,
+          "group": "Major Elective Courses · Craft and Design Concentration · published course list"
+        },
+        {
+          "code": "VART2696",
+          "title": "Graphic Design",
+          "credits": 3,
+          "group": "Major Elective Courses · Craft and Design Concentration · published course list"
+        },
+        {
+          "code": "VART2697",
+          "title": "Screenprinting",
+          "credits": 3,
+          "group": "Major Elective Courses · Craft and Design Concentration · published course list"
+        },
+        {
+          "code": "VART2705",
+          "title": "Relief and Intaglio Printing",
+          "credits": 3,
+          "group": "Major Elective Courses · Craft and Design Concentration · published course list"
+        },
+        {
+          "code": "VART2706",
+          "title": "Glass Blowing",
+          "credits": 3,
+          "group": "Major Elective Courses · Craft and Design Concentration · published course list"
+        },
+        {
+          "code": "VART2707",
+          "title": "Glass Casting and Kiln-Forming",
+          "credits": 3,
+          "group": "Major Elective Courses · Craft and Design Concentration · published course list"
+        },
+        {
+          "code": "VART2715",
+          "title": "Fundamental Hand-building and Wheel-throwing Techniques for Ceramics",
+          "credits": 3,
+          "group": "Major Elective Courses · Craft and Design Concentration · published course list"
+        },
+        {
+          "code": "VART2716",
+          "title": "Alternative Techniques and Surface Treatments for Ceramics",
+          "credits": 3,
+          "group": "Major Elective Courses · Craft and Design Concentration · published course list"
+        },
+        {
+          "code": "VART2717",
+          "title": "Small Metal Jewellery",
+          "credits": 3,
+          "group": "Major Elective Courses · Craft and Design Concentration · published course list"
+        },
+        {
+          "code": "VART2725",
+          "title": "Wearables",
+          "credits": 3,
+          "group": "Major Elective Courses · Craft and Design Concentration · published course list"
+        },
+        {
+          "code": "VART2726",
+          "title": "3D Software Fundamentals and Prototyping",
+          "credits": 3,
+          "group": "Major Elective Courses · Craft and Design Concentration · published course list"
+        },
+        {
+          "code": "VART2727",
+          "title": "Hong Kong Craft and Design",
+          "credits": 3,
+          "group": "Major Elective Courses · Craft and Design Concentration · published course list"
+        },
+        {
+          "code": "VART2735",
+          "title": "Spatial Design and Display",
+          "credits": 3,
+          "group": "Major Elective Courses · Craft and Design Concentration · published course list"
+        },
+        {
+          "code": "VART4115",
+          "title": "Special Topics in Visual Arts Studies (Art History and Theory)",
+          "credits": 3,
+          "group": "Major Elective Courses · Visual Arts Studies · published course list"
+        },
+        {
+          "code": "VART4125",
+          "title": "Special Topics in Visual Arts Studies (Design History and Theory)",
+          "credits": 3,
+          "group": "Major Elective Courses · Visual Arts Studies · published course list"
+        },
+        {
+          "code": "VART4126",
+          "title": "Special Topics in Visual Arts Studies (Curatorial Practice)",
+          "credits": 3,
+          "group": "Major Elective Courses · Visual Arts Studies · published course list"
+        },
+        {
+          "code": "VART4117",
+          "title": "Further Studies (Shared Campus)",
+          "credits": 3,
+          "group": "Major Elective Courses · Interdisciplinary VA Course · published course list"
+        },
+        {
+          "code": "VART4137",
+          "title": "Studio Honours Project",
+          "credits": 6,
+          "group": "Studio Honours Project · required / 6 units; concentration uses the project in the same practice division",
+          "courseType": "capstone",
+          "description": "For Professional Mode, a concentration requires 18 units of Level 3 studio courses and this 6-unit Studio Honours Project in the same division."
+        }
+      ]
+    }
+  ]
+}

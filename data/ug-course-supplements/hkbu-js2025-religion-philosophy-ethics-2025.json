@@ -1,0 +1,365 @@
+{
+  "provider": "HKBU University Student Handbook 2025-2026",
+  "academicYear": "2025-2026",
+  "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/academy-of-chinese-history-religion-and-philosophy/bachelor-of-arts-honours-in-religion-philosophy-and-1",
+  "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2025",
+  "note": "The official Handbook publishes 21 units of Major Required Courses, 33 units of Major Elective Courses, and two required Honours Project courses for 6 units. Students must take at least two elective courses from each of Groups A, B, C and D and complete 33 elective units in total. RELI2037 is listed in Groups A and D, and RELI3235 is listed in Groups B and C; each is stored once with both eligible groups because the official rule says the same elective course may count toward only one group. The official Level 4 prerequisite/co-requisite rules tied to RELI2007, RELI2015 or RELI2036, and RELI2035 are retained. University Language, General Education and Free Electives are excluded. No Year or Term is assigned because the official requirement table does not specify course timing.",
+  "supplements": [
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BA-RPE-2",
+      "jupasCode": "JS2025",
+      "programmeName": "Bachelor of Arts (Hons) in Religion, Philosophy and Ethics",
+      "majorId": "HKBU-UG-BA-RPE-2-M1",
+      "majorName": "Bachelor of Arts (Hons) in Religion, Philosophy and Ethics",
+      "courses": [
+        {
+          "code": "RELI1005",
+          "title": "Quest for Truth and Meaning",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 21 units"
+        },
+        {
+          "code": "RELI2006",
+          "title": "Introduction to Christianity and Civilizations",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 21 units"
+        },
+        {
+          "code": "RELI2007",
+          "title": "Problems of Philosophy",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 21 units",
+          "prerequisites": "This course is the prerequisite and co-requisite for Level 4 RELI courses in Group A."
+        },
+        {
+          "code": "RELI2015",
+          "title": "Approaches to the Study of Religion",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 21 units",
+          "prerequisites": "Either RELI2015 or RELI2036 can be the prerequisite and co-requisite for Level 4 RELI courses in Groups B and C."
+        },
+        {
+          "code": "RELI2027",
+          "title": "Introduction to Chinese Philosophy and Religion",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 21 units"
+        },
+        {
+          "code": "RELI2035",
+          "title": "Introduction to Ethics",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 21 units",
+          "prerequisites": "This course is the prerequisite and co-requisite for Level 4 RELI courses in Group D."
+        },
+        {
+          "code": "RELI2036",
+          "title": "Social Scientific Study of Religion",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 21 units",
+          "prerequisites": "Either RELI2015 or RELI2036 can be the prerequisite and co-requisite for Level 4 RELI courses in Groups B and C."
+        },
+        {
+          "code": "RELI2037",
+          "title": "Big Questions in the Philosophy and Ethics of AI",
+          "credits": 3,
+          "group": "Major Elective Courses — Groups A / D · may count toward one group only"
+        },
+        {
+          "code": "RELI3006",
+          "title": "Major Streams in Chinese Philosophy",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Philosophical Studies"
+        },
+        {
+          "code": "RELI3007",
+          "title": "Philosophy, Meaning and Knowledge",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Philosophical Studies"
+        },
+        {
+          "code": "RELI3027",
+          "title": "Existentialism and Nihilism",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Philosophical Studies"
+        },
+        {
+          "code": "RELI3056",
+          "title": "Philosophy of Mind, Consciousness, and Personal Identity",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Philosophical Studies"
+        },
+        {
+          "code": "RELI3065",
+          "title": "History of Modern Western Philosophy",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Philosophical Studies"
+        },
+        {
+          "code": "RELI3087",
+          "title": "Metaphysics: Quest for Reality",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Philosophical Studies"
+        },
+        {
+          "code": "RELI3095",
+          "title": "Logic and Philosophy of Logic",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Philosophical Studies"
+        },
+        {
+          "code": "RELI3096",
+          "title": "Contemporary Analytic Philosophy",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Philosophical Studies"
+        },
+        {
+          "code": "RELI4005",
+          "title": "Philosophy of Religion",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Philosophical Studies"
+        },
+        {
+          "code": "RELI4016",
+          "title": "Selected Topics/Readings in Philosophical Studies",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Philosophical Studies"
+        },
+        {
+          "code": "RELI4047",
+          "title": "Mind in Chinese Buddhist Philosophy",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Philosophical Studies"
+        },
+        {
+          "code": "RELI4076",
+          "title": "Great Plays and Philosophy",
+          "credits": 3,
+          "group": "Major Elective Courses — Group A: Philosophical Studies"
+        },
+        {
+          "code": "RELI3005",
+          "title": "Daoist Religion",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Christian Studies and Comparative Religion"
+        },
+        {
+          "code": "RELI3017",
+          "title": "A Survey of Jewish and Christian Scriptures",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Christian Studies and Comparative Religion"
+        },
+        {
+          "code": "RELI3026",
+          "title": "Christianity, Humanism and the Contemporary World",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Christian Studies and Comparative Religion"
+        },
+        {
+          "code": "RELI3037",
+          "title": "Christian Spirituality",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Christian Studies and Comparative Religion"
+        },
+        {
+          "code": "RELI3047",
+          "title": "Islam",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Christian Studies and Comparative Religion"
+        },
+        {
+          "code": "RELI3127",
+          "title": "History of Christian Thought",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Christian Studies and Comparative Religion"
+        },
+        {
+          "code": "RELI3135",
+          "title": "Buddhism",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Christian Studies and Comparative Religion"
+        },
+        {
+          "code": "RELI3136",
+          "title": "Religious Rituals and Practices in Hong Kong",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Christian Studies and Comparative Religion"
+        },
+        {
+          "code": "RELI3137",
+          "title": "Confucianism",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Christian Studies and Comparative Religion"
+        },
+        {
+          "code": "RELI3235",
+          "title": "AI and Good Life: Global Perspectives",
+          "credits": 3,
+          "group": "Major Elective Courses — Groups B / C · may count toward one group only"
+        },
+        {
+          "code": "RELI4025",
+          "title": "Christianity and Chinese Culture",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Christian Studies and Comparative Religion"
+        },
+        {
+          "code": "RELI4027",
+          "title": "Selected Topics/Readings in Christian Studies or Comparative Religion",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Christian Studies and Comparative Religion"
+        },
+        {
+          "code": "RELI4035",
+          "title": "Comparative Religious Themes",
+          "credits": 3,
+          "group": "Major Elective Courses — Group B: Christian Studies and Comparative Religion"
+        },
+        {
+          "code": "RELI3075",
+          "title": "Religion and Animal",
+          "credits": 3,
+          "group": "Major Elective Courses — Group C: Interdisciplinary Study of Religion"
+        },
+        {
+          "code": "RELI3077",
+          "title": "Religion and Social Movements",
+          "credits": 3,
+          "group": "Major Elective Courses — Group C: Interdisciplinary Study of Religion"
+        },
+        {
+          "code": "RELI3086",
+          "title": "Religion, Violence and Peace",
+          "credits": 3,
+          "group": "Major Elective Courses — Group C: Interdisciplinary Study of Religion"
+        },
+        {
+          "code": "RELI3097",
+          "title": "Psychology and Religion",
+          "credits": 3,
+          "group": "Major Elective Courses — Group C: Interdisciplinary Study of Religion"
+        },
+        {
+          "code": "RELI3105",
+          "title": "Anthropology and Religion",
+          "credits": 3,
+          "group": "Major Elective Courses — Group C: Interdisciplinary Study of Religion"
+        },
+        {
+          "code": "RELI3106",
+          "title": "Religion and Modern Chinese Societies",
+          "credits": 3,
+          "group": "Major Elective Courses — Group C: Interdisciplinary Study of Religion"
+        },
+        {
+          "code": "RELI4015",
+          "title": "Mysticism and Religious Experience",
+          "credits": 3,
+          "group": "Major Elective Courses — Group C: Interdisciplinary Study of Religion"
+        },
+        {
+          "code": "RELI4036",
+          "title": "Religion and Ideology",
+          "credits": 3,
+          "group": "Major Elective Courses — Group C: Interdisciplinary Study of Religion"
+        },
+        {
+          "code": "RELI4037",
+          "title": "Sociology of Religion and Modern Society",
+          "credits": 3,
+          "group": "Major Elective Courses — Group C: Interdisciplinary Study of Religion"
+        },
+        {
+          "code": "RELI4046",
+          "title": "Selected Topics/Readings in Religious Studies",
+          "credits": 3,
+          "group": "Major Elective Courses — Group C: Interdisciplinary Study of Religion"
+        },
+        {
+          "code": "RELI4065",
+          "title": "Dialogue between Religion and Modern Science",
+          "credits": 3,
+          "group": "Major Elective Courses — Group C: Interdisciplinary Study of Religion"
+        },
+        {
+          "code": "RELI3016",
+          "title": "Philosophy, Morality and Society",
+          "credits": 3,
+          "group": "Major Elective Courses — Group D: Ethics and Society"
+        },
+        {
+          "code": "RELI3045",
+          "title": "Contemporary Ethical Problems: Hong Kong and Beyond",
+          "credits": 3,
+          "group": "Major Elective Courses — Group D: Ethics and Society"
+        },
+        {
+          "code": "RELI3107",
+          "title": "Chinese Moral and Political Philosophy",
+          "credits": 3,
+          "group": "Major Elective Courses — Group D: Ethics and Society"
+        },
+        {
+          "code": "RELI3115",
+          "title": "Theological Ethics",
+          "credits": 3,
+          "group": "Major Elective Courses — Group D: Ethics and Society"
+        },
+        {
+          "code": "RELI3116",
+          "title": "Islamic Values and Contemporary Society",
+          "credits": 3,
+          "group": "Major Elective Courses — Group D: Ethics and Society"
+        },
+        {
+          "code": "RELI3117",
+          "title": "Service Leadership and Meaning of Life and Death",
+          "credits": 3,
+          "group": "Major Elective Courses — Group D: Ethics and Society"
+        },
+        {
+          "code": "RELI3125",
+          "title": "Social Justice, Liberalism and Economic Equality",
+          "credits": 3,
+          "group": "Major Elective Courses — Group D: Ethics and Society"
+        },
+        {
+          "code": "RELI3126",
+          "title": "Theology, Liberalism and Sex in Chinese Societies",
+          "credits": 3,
+          "group": "Major Elective Courses — Group D: Ethics and Society"
+        },
+        {
+          "code": "RELI4066",
+          "title": "Ethics of Human Rights: Theories and Controversies",
+          "credits": 3,
+          "group": "Major Elective Courses — Group D: Ethics and Society"
+        },
+        {
+          "code": "RELI4067",
+          "title": "Environmental Ethics",
+          "credits": 3,
+          "group": "Major Elective Courses — Group D: Ethics and Society"
+        },
+        {
+          "code": "RELI4075",
+          "title": "Selected Topics/ Readings in Ethics",
+          "credits": 3,
+          "group": "Major Elective Courses — Group D: Ethics and Society"
+        },
+        {
+          "code": "RELI4898",
+          "title": "Honours Project",
+          "credits": 3,
+          "group": "Honours Project · both required / 6 units"
+        },
+        {
+          "code": "RELI4899",
+          "title": "Honours Project",
+          "credits": 3,
+          "group": "Honours Project · both required / 6 units"
+        }
+      ]
+    }
+  ]
+}

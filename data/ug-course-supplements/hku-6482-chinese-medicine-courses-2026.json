@@ -1,0 +1,81 @@
+{
+  "provider": "HKU School of Chinese Medicine BChinMed Regulations and Syllabuses",
+  "academicYear": "2021-22 and thereafter",
+  "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/ugdr2024-25/Medicine/BChinMed.pdf",
+  "officialUrl": "https://scm.hku.hk/Views/Programme/English-FTUndergrad.html",
+  "note": "The current official file was published in April 2026 and states that its BChinMed syllabuses apply to students admitted in 2021-22 and thereafter, so it covers the 2026-27 cohort. This supplement records 55 unique explicitly coded courses: 34 required academic core courses, 10 closed-list disciplinary electives, 6 required clinical attachment, practicum or clerkship courses, and 5 language-enhancement courses or explicitly coded alternatives. The open Common Core pool and unspecified language or elective substitutes are excluded. Candidates complete 12 credits of disciplinary electives: 3 credits from the Year 1 list, 3 credits from the BCHM39xx list in Year 3, and 6 credits from that list in Year 4; listed electives are not necessarily offered every year. BCHM4608 spans Year 4 and Semester 1 of Year 5 and therefore receives no single recommended Year. Semester is recorded only for the seven courses explicitly identified as full-year or Summer Semester courses. BCHM6601 is the 90-credit final-year Clinical Clerkship and the published capstone experience; no additional unissued clinical-module codes are inferred.",
+  "supplements": [
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6482",
+      "programmeId": "HKU-UG-6482-44",
+      "majorId": "HKU-UG-6482-44-M1",
+      "majorName": "Bachelor of Chinese Medicine",
+      "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/ugdr2024-25/Medicine/BChinMed.pdf",
+      "officialUrl": "https://scm.hku.hk/Views/Programme/English-FTUndergrad.html",
+      "courses": [
+        { "code": "BCHM1601", "title": "Foundation Theories of Chinese Medicine", "credits": 12, "recommendedYear": 1, "courseType": "core", "group": "Professional Core — Chinese Medicine Foundation Courses" },
+        { "code": "BCHM1602", "title": "Diagnostics of Chinese Medicine", "credits": 12, "recommendedYear": 1, "courseType": "core", "group": "Professional Core — Chinese Medicine Foundation Courses" },
+        { "code": "BCHM1605", "title": "History of Chinese Medicine", "credits": 3, "recommendedYear": 1, "courseType": "core", "group": "Professional Core — Chinese Medicine Foundation Courses" },
+        { "code": "BCHM2601", "title": "Chinese Materia Medica", "credits": 12, "recommendedYear": 2, "courseType": "core", "group": "Professional Core — Chinese Medicine Foundation Courses" },
+        { "code": "BCHM2602", "title": "Archaic Chinese Medical Literature", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Professional Core — Chinese Medicine Foundation Courses" },
+        { "code": "BCHM2603", "title": "Chinese Medicine Prescriptions", "credits": 9, "recommendedYear": 2, "courseType": "core", "group": "Professional Core — Chinese Medicine Foundation Courses" },
+        { "code": "BCHM5607", "title": "Pharmacology of Chinese Medicine", "credits": 3, "recommendedYear": 5, "courseType": "core", "group": "Professional Core — Chinese Medicine Foundation Courses" },
+
+        { "code": "BCHM3601", "title": "Canon of Chinese Medicine", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Professional Core — Chinese Medicine Classical Texts Courses" },
+        { "code": "BCHM4601", "title": "Treatise on Exogenous Febrile Diseases", "credits": 6, "recommendedYear": 4, "courseType": "core", "group": "Professional Core — Chinese Medicine Classical Texts Courses" },
+        { "code": "BCHM5602", "title": "Golden Chamber", "credits": 6, "recommendedYear": 5, "courseType": "core", "group": "Professional Core — Chinese Medicine Classical Texts Courses" },
+        { "code": "BCHM5603", "title": "Seasonal Febrile Diseases", "credits": 6, "recommendedYear": 5, "courseType": "core", "group": "Professional Core — Chinese Medicine Classical Texts Courses" },
+        { "code": "BCHM5605", "title": "Schools of Thought of Chinese Medicine", "credits": 3, "recommendedYear": 5, "courseType": "core", "group": "Professional Core — Chinese Medicine Classical Texts Courses" },
+
+        { "code": "BCHM2607", "title": "Medical Ethics and Professionalism in Chinese Medicine Practice", "credits": 6, "recommendedYear": 2, "semester": "Semester 1 / Semester 2", "courseType": "core", "group": "Professional Core — Chinese Medicine Clinical Courses" },
+        { "code": "BCHM3602", "title": "Chinese Internal Medicine", "credits": 21, "recommendedYear": 3, "semester": "Semester 1 / Semester 2", "courseType": "core", "group": "Professional Core — Chinese Medicine Clinical Courses" },
+        { "code": "BCHM3603", "title": "Foundation of Acupuncture", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Professional Core — Chinese Medicine Clinical Courses" },
+        { "code": "BCHM4602", "title": "Traumatology and Orthopaedics of Chinese Medicine", "credits": 12, "recommendedYear": 4, "courseType": "core", "group": "Professional Core — Chinese Medicine Clinical Courses" },
+        { "code": "BCHM4603", "title": "Tui-na of Chinese Medicine", "credits": 3, "recommendedYear": 4, "courseType": "core", "group": "Professional Core — Chinese Medicine Clinical Courses" },
+        { "code": "BCHM4604", "title": "Surgery of Chinese Medicine", "credits": 9, "recommendedYear": 4, "courseType": "core", "group": "Professional Core — Chinese Medicine Clinical Courses" },
+        { "code": "BCHM4605", "title": "Gynaecology of Chinese Medicine", "credits": 9, "recommendedYear": 4, "courseType": "core", "group": "Professional Core — Chinese Medicine Clinical Courses" },
+        { "code": "BCHM4606", "title": "Otorhinolaryngology of Chinese Medicine", "credits": 3, "recommendedYear": 4, "courseType": "core", "group": "Professional Core — Chinese Medicine Clinical Courses" },
+        { "code": "BCHM5601", "title": "Life Cultivation and Healthcare of Chinese Medicine", "credits": 3, "recommendedYear": 5, "courseType": "core", "group": "Professional Core — Chinese Medicine Clinical Courses" },
+        { "code": "BCHM5604", "title": "Therapeutics in Acupuncture and Moxibustion", "credits": 6, "recommendedYear": 5, "courseType": "core", "group": "Professional Core — Chinese Medicine Clinical Courses" },
+        { "code": "BCHM5606", "title": "Paediatrics of Chinese Medicine", "credits": 9, "recommendedYear": 5, "courseType": "core", "group": "Professional Core — Chinese Medicine Clinical Courses" },
+        { "code": "BCHM5608", "title": "Ophthalmology of Chinese Medicine", "credits": 3, "recommendedYear": 5, "courseType": "core", "group": "Professional Core — Chinese Medicine Clinical Courses" },
+
+        { "code": "BCHM3605", "title": "Immunology", "credits": 3, "recommendedYear": 3, "courseType": "core", "group": "Professional Core — Biomedical Sciences Courses" },
+        { "code": "BCHM3606", "title": "Pathology", "credits": 6, "recommendedYear": 3, "semester": "Semester 1 / Semester 2", "courseType": "core", "group": "Professional Core — Biomedical Sciences Courses" },
+        { "code": "BCHM4608", "title": "Fundamentals of Diagnosis", "credits": 12, "courseType": "core", "group": "Professional Core — Biomedical Sciences Courses · Year 4 to Year 5 Semester 1", "description": "The official syllabus states that this course spans Year 4 and the first semester of Year 5, with its examination at the end of Year 5 Semester 1." },
+        { "code": "BCHM4610", "title": "Evidence-based Practice and Public Health", "credits": 3, "recommendedYear": 4, "courseType": "core", "group": "Professional Core — Biomedical Sciences Courses" },
+        { "code": "BCHM5609", "title": "Medicine", "credits": 6, "recommendedYear": 5, "courseType": "core", "group": "Professional Core — Biomedical Sciences Courses" },
+        { "code": "BMSC1101", "title": "Life Science I", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Professional Core — Biomedical Sciences Courses" },
+        { "code": "BMSC2102", "title": "Life Science II", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Professional Core — Biomedical Sciences Courses" },
+        { "code": "BMSC2203", "title": "Life Science III", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Professional Core — Biomedical Sciences Courses" },
+        { "code": "BMSC3104", "title": "Life Science IV", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Professional Core — Biomedical Sciences Courses" },
+        { "code": "PHAR4612", "title": "Clinical Pharmacology", "credits": 6, "recommendedYear": 4, "courseType": "core", "group": "Professional Core — Biomedical Sciences Courses" },
+
+        { "code": "BCHM1901", "title": "Introduction to Chinese Medical Cultures", "credits": 3, "recommendedYear": 1, "courseType": "major_elective", "group": "Professional Core — Disciplinary Electives · choose 3 credits in Year 1" },
+        { "code": "BCHM1904", "title": "Medical Psychology", "credits": 3, "recommendedYear": 1, "courseType": "major_elective", "group": "Professional Core — Disciplinary Electives · choose 3 credits in Year 1" },
+        { "code": "BCHM1905", "title": "Resources and Quality Control of Chinese Medicines", "credits": 3, "recommendedYear": 1, "courseType": "major_elective", "group": "Professional Core — Disciplinary Electives · choose 3 credits in Year 1" },
+        { "code": "BCHM3901", "title": "Chinese Medicine Emergency Medicine: Syndrome Differentiation and Treatment for Acute Illness Related to Chinese Internal Medicine", "credits": 3, "courseType": "major_elective", "group": "Professional Core — Disciplinary Electives · choose 3 credits in Year 3 and 6 credits in Year 4" },
+        { "code": "BCHM3904", "title": "Analysis of Misdiagnoses in Clinical Cases", "credits": 3, "courseType": "major_elective", "group": "Professional Core — Disciplinary Electives · choose 3 credits in Year 3 and 6 credits in Year 4" },
+        { "code": "BCHM3905", "title": "Classical Prescriptions and Medical Records", "credits": 3, "courseType": "major_elective", "group": "Professional Core — Disciplinary Electives · choose 3 credits in Year 3 and 6 credits in Year 4" },
+        { "code": "BCHM3906", "title": "Chinese Medicine and Systems Biomedicine", "credits": 3, "courseType": "major_elective", "group": "Professional Core — Disciplinary Electives · choose 3 credits in Year 3 and 6 credits in Year 4" },
+        { "code": "BCHM3907", "title": "Traditional Chinese Medicine in Sports Medicine", "credits": 3, "courseType": "major_elective", "group": "Professional Core — Disciplinary Electives · choose 3 credits in Year 3 and 6 credits in Year 4" },
+        { "code": "BCHM3908", "title": "Intensive Training on Clinical Acupuncture Techniques", "credits": 3, "courseType": "major_elective", "group": "Professional Core — Disciplinary Electives · choose 3 credits in Year 3 and 6 credits in Year 4" },
+        { "code": "BCHM3909", "title": "Basic and Clinical Toxicology of Chinese Medicines", "credits": 3, "courseType": "major_elective", "group": "Professional Core — Disciplinary Electives · choose 3 credits in Year 3 and 6 credits in Year 4" },
+
+        { "code": "BCHM1604", "title": "Chinese Medicine Clinical Attachment I", "credits": 3, "recommendedYear": 1, "semester": "Summer Semester", "courseType": "internship", "group": "Professional Core — Clinical Attachment, Practicum and Clerkship" },
+        { "code": "BCHM2606", "title": "Field Trip and Chinese Medicine Dispensary Practicum", "credits": 6, "recommendedYear": 2, "semester": "Summer Semester", "courseType": "internship", "group": "Professional Core — Clinical Attachment, Practicum and Clerkship" },
+        { "code": "BCHM3609", "title": "Chinese Medicine Clinical Attachment II", "credits": 3, "recommendedYear": 3, "semester": "Summer Semester", "courseType": "internship", "group": "Professional Core — Clinical Attachment, Practicum and Clerkship" },
+        { "code": "BCHM4611", "title": "Junior Clerkship", "credits": 9, "recommendedYear": 4, "semester": "Summer Semester", "courseType": "internship", "group": "Professional Core — Clinical Attachment, Practicum and Clerkship" },
+        { "code": "BCHM5610", "title": "Chinese Medicine Clinical Attachment III", "credits": 3, "recommendedYear": 5, "courseType": "internship", "group": "Professional Core — Clinical Attachment, Practicum and Clerkship" },
+        { "code": "BCHM6601", "title": "Clinical Clerkship", "credits": 90, "recommendedYear": 6, "courseType": "capstone", "group": "Professional Core — Final-year Clinical Clerkship · 40 weeks" },
+
+        { "code": "CAES1000", "title": "Core University English", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "University Requirements — English Language Enhancement" },
+        { "code": "CAES9730", "title": "English for Clinical Clerkship for Chinese Medicine Students", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "University Requirements — English in the Discipline" },
+        { "code": "CEMD9003", "title": "Practical Chinese for Chinese Medicine Students", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "University Requirements — Chinese Language Enhancement" },
+        { "code": "CUND9002", "title": "Practical Chinese and Hong Kong Society", "credits": 6, "recommendedYear": 1, "courseType": "major_elective", "group": "University Requirements — Chinese Language Enhancement alternative for Putonghua-speaking candidates" },
+        { "code": "CUND9003", "title": "Cantonese for Non-Cantonese Speaking Students", "credits": 6, "recommendedYear": 1, "courseType": "major_elective", "group": "University Requirements — Chinese Language Enhancement alternative for Putonghua-speaking candidates" }
+      ]
+    }
+  ]
+}

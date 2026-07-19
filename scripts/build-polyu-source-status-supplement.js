@@ -136,12 +136,12 @@ const statusOverrides = {
     statusNote: 'The official 2027 Programme page publishes the complete 31-credit Carbon Neutral Cities and Urban Sustainability structure: four Compulsory Subjects, three Core Subjects and either three Elective Subjects or a 9-credit Dissertation, plus a 1-credit Academic Integrity and Ethics subject. It publishes the complete current Compulsory and Core title pools but no subject codes. The current October 2025 Department of Building Environment and Energy Engineering brochure also publishes no Programme-specific curriculum code table. Public sources therefore do not identify the codes for the four Compulsory Subjects, the complete cross-faculty Core pool, the Dissertation or the AIE subject. The Programme remains blocked rather than mapping overlapping titles to codes from other awards or exposing a partial pool.'
   },
   'POLYU-TPG-007': {
-    verifiedAt: '2026-07-15',
+    verifiedAt: '2026-07-18',
     faculty: 'School of Accounting and Finance (AF)',
     creditsRequired: 31,
     creditUnit: 'credits',
     sourceUrl: 'https://www.polyu.edu.hk/study/pg/tpg/2027/21054-efm-epm',
-    statusNote: 'The official 2027 Programme page publishes the complete 31-credit rule, nine Core Subject titles for 25 credits and any two Elective Subjects for 6 credits. The current School of Accounting and Finance 2025/26 Taught Postgraduate Subject Syllabi catalogue does not provide a complete Programme-specific code table for that curriculum. In particular, the 2027 page lists ESG Rating and Data Analysis and ESG Report and Disclosure as two separate Core Subjects, while the current official catalogue publishes only AF5132 ESG Disclosure and Rating Analysis as one 3-credit ESG-labelled subject. The catalogue also does not label AF5701 Artificial Intelligence for Business or AF5312 Principles of Corporate Finance for ESG. The Programme remains blocked rather than splitting AF5132, assigning one code to two subjects or exposing a partial course pool assembled from same-title courses in other awards.'
+    statusNote: 'The official 2027 Programme page publishes the complete 31-credit rule, nine Core Subject titles for 25 credits and any two Elective Subjects for 6 credits. The current School of Accounting and Finance Programme page now publishes a complete Programme-specific code table that maps the two new Core Subjects to AF5144 ESG Report and Disclosure and AF5145 ESG Rating and Data Analysis, rather than splitting the older AF5132 course, and maps all other current Core and Elective titles. It also publishes eight common MSc/PgD Compulsory Subjects for 22 credits, including the explicit 1-credit AF5T21, plus the 3-credit MSc-only CSE539. However, no current public Subject Description Form or Programme Requirement Document explicitly states the individual credit values of AF5144 and AF5145. The Programme remains blocked rather than inferring both 3-credit values arithmetically from the 22-credit group total.'
   },
   'POLYU-TPG-009': {
     verifiedAt: '2026-07-15',
@@ -524,7 +524,7 @@ const statusOverrides = {
     statusNote: 'The official 2027 Programme page corrects the MA total to 31 credits, identifies the Faculty of Humanities, requires applicants to choose English for Professional Communication or English Language Teaching, and publishes the current Compulsory, Specialism-specific Core, Specialism-specific Elective and Common Elective subject-title pools. The current Department of English and Communication Full Subject List recovers exact code entries for 27 named taught subjects. It also publishes ENGL5012 Research Project in Language Studies, ENGL580 Research Project and ENGL587 Research Project; the linked official Subject Description Forms assign 6 credits to each, describe ENGL580 as professional-communication research and ENGL587 as classroom-based or classroom-oriented research, but the Programme page uses only generic or plural Research Project labels and does not explicitly assign those codes or state whether ENGL5012 is included. The current Full Subject List does not publish entries for Professional Ethics and Academic Integrity or the subject-to-approval Time in Second Language Teaching and Learning. In addition, the December 2025 official Programme flyer linked from the Department 2027/28 page publishes an all-coursework Route and a coursework-and-research Route with three Specialism-specific Core subjects for either Specialism, while the 2027 Programme page requires three such Core subjects for EPC but five for ELT and does not describe those two Routes. The Programme remains blocked rather than selecting the AIE or Time subject codes from another Programme, guessing the Research Project membership, or choosing between conflicting official completion paths.'
   },
   'POLYU-TPG-074': {
-    verifiedAt: '2026-07-16',
+    verifiedAt: '2026-07-18',
     creditsRequired: 31,
     creditUnit: 'credits',
     trackSelectionOptional: true,
@@ -552,7 +552,7 @@ const statusOverrides = {
       }
     ],
     sourceUrl: 'https://www.polyu.edu.hk/rs/study/taught-postgraduate-studies/msc-programme-2026-or-after/msc-in-advanced-physiotherapy/curriculum/',
-    statusNote: 'The official 2027 Programme page, the current Department of Rehabilitation Sciences Curriculum page, and the July 2026 v14 Programme leaflet publish the 31-credit paths, three Specialisms, fixed Core and Clinical Practice subject codes, and per-course credits. All three sources label the compulsory 6-credit component only as Project Study and do not publish its subject code. RS567 must not be inferred from another Rehabilitation Sciences Programme.'
+    statusNote: 'The official 2027 Programme page, the current Department of Rehabilitation Sciences Curriculum page, and the July 2026 v14 Programme leaflet publish the 31-credit paths, three Specialisms, fixed Core and Clinical Practice subject codes, and per-course credits. The official 2026/27 Programme page directly identifies RS567 Project Study as the 6-credit project component for Programme 51069. However, the 2027/28 Programme page, the current MSc Programme 2026 or after curriculum image, and the current v14 leaflet omit the Project Study subject code, while no public 51069 current-year PRD or SDF is available. The Programme remains blocked rather than carrying RS567 forward from the earlier academic-year curriculum.'
   },
   'POLYU-TPG-104': {
     verifiedAt: '2026-07-16',

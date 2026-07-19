@@ -1,0 +1,458 @@
+{
+  "provider": "HKBU University Student Handbook 2025-2026",
+  "academicYear": "2025-2026",
+  "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-chinese-medicine-1/bachelor-of-chinese-medicine-and-bachelor-of-science",
+  "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2410/",
+  "note": "The public 2025-2026 official Handbook publishes 198 units of Major Courses: 24 coded Biomedical Sciences courses totalling 52 units, 31 coded Chinese Medicine courses totalling 97 units, and three coded Clinical Internship in Chinese Medicine courses totalling 49 units. It separately requires both 3-unit Biomedical Sciences Honours Project courses for 6 units. The Programme states that CMED4015, CMED4018 and CMED4019 are excluded from the BSc (Hons) in Biomedical Science honours-classification GPA calculation. Students must also complete 9 units of Free Electives; the Programme displays 11 recommended coded courses, including two offered by CUHK and three offered by HKU. Those 11 explicit recommendations are recorded, but the official wording is an open recommendation list and is not presented as a closed elective pool. The five external-university codes use the titles and units explicitly published by the HKBU Programme page; the remaining 66 HKBU codes are cross-checked against their individual 2025-2026 Handbook course pages. Individual course pages supply their current canonical bilingual titles where these differ from the Programme table. The 2026-2027 Handbook route currently returns HTTP 401, so no 2026-2027 course or rule is inferred. University Language and General Education course lists are excluded. No Year or Term is assigned because the public requirement table does not publish course timing.",
+  "supplements": [
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BCM-BSC-BIOMED-10",
+      "jupasCode": "JS2410",
+      "programmeName": "Bachelor of Chinese Medicine and Bachelor of Science (Hons) in Biomedical Science",
+      "majorId": "HKBU-UG-BCM-BSC-BIOMED-10-M1",
+      "majorName": "Bachelor of Chinese Medicine and Bachelor of Science (Hons) in Biomedical Science",
+      "courses": [
+        {
+          "code": "BMSC1005",
+          "title": "Anatomy",
+          "credits": 3,
+          "group": "Biomedical Sciences · all required / 52 units"
+        },
+        {
+          "code": "BMSC1007",
+          "title": "Physiology",
+          "credits": 3,
+          "group": "Biomedical Sciences · all required / 52 units"
+        },
+        {
+          "code": "BMSC1009",
+          "title": "Biomedical Sciences Lab IIA",
+          "credits": 1,
+          "group": "Biomedical Sciences · all required / 52 units"
+        },
+        {
+          "code": "BMSC1015",
+          "title": "Biochemistry and Molecular Biology",
+          "credits": 3,
+          "group": "Biomedical Sciences · all required / 52 units"
+        },
+        {
+          "code": "BMSC1016",
+          "title": "Biomedical Sciences Laboratory I 生物醫學實驗 I",
+          "credits": 0.5,
+          "group": "Biomedical Sciences · all required / 52 units"
+        },
+        {
+          "code": "BMSC1017",
+          "title": "Biomedical Sciences Laboratory III 生物醫學實驗 III",
+          "credits": 0.5,
+          "group": "Biomedical Sciences · all required / 52 units"
+        },
+        {
+          "code": "BMSC2005",
+          "title": "General Pathology",
+          "credits": 3,
+          "group": "Biomedical Sciences · all required / 52 units"
+        },
+        {
+          "code": "BMSC2007",
+          "title": "Pre-clinical Sciences Lab",
+          "credits": 1,
+          "group": "Biomedical Sciences · all required / 52 units"
+        },
+        {
+          "code": "BMSC2015",
+          "title": "Clinical Sciences Lab",
+          "credits": 1,
+          "group": "Biomedical Sciences · all required / 52 units"
+        },
+        {
+          "code": "BMSC2016",
+          "title": "Fundamental Diagnosis",
+          "credits": 4,
+          "group": "Biomedical Sciences · all required / 52 units"
+        },
+        {
+          "code": "BMSC2017",
+          "title": "Pharmacology",
+          "credits": 3,
+          "group": "Biomedical Sciences · all required / 52 units"
+        },
+        {
+          "code": "BMSC2025",
+          "title": "Microbiology and Immunology",
+          "credits": 3,
+          "group": "Biomedical Sciences · all required / 52 units"
+        },
+        {
+          "code": "BMSC3005",
+          "title": "Hematology",
+          "credits": 2,
+          "group": "Biomedical Sciences · all required / 52 units"
+        },
+        {
+          "code": "BMSC3006",
+          "title": "Cardiovascular System",
+          "credits": 2.5,
+          "group": "Biomedical Sciences · all required / 52 units"
+        },
+        {
+          "code": "BMSC3007",
+          "title": "Digestive System and Hepatobiliary System",
+          "credits": 2.5,
+          "group": "Biomedical Sciences · all required / 52 units"
+        },
+        {
+          "code": "BMSC3015",
+          "title": "Infectious Diseases and Rheumatic Diseases 傳染病及風濕病",
+          "credits": 2,
+          "group": "Biomedical Sciences · all required / 52 units"
+        },
+        {
+          "code": "BMSC3016",
+          "title": "Respiratory System",
+          "credits": 2,
+          "group": "Biomedical Sciences · all required / 52 units"
+        },
+        {
+          "code": "BMSC3017",
+          "title": "Endocrinology",
+          "credits": 2,
+          "group": "Biomedical Sciences · all required / 52 units"
+        },
+        {
+          "code": "BMSC3025",
+          "title": "Medical Ethics",
+          "credits": 1,
+          "group": "Biomedical Sciences · all required / 52 units"
+        },
+        {
+          "code": "BMSC3026",
+          "title": "Renal System",
+          "credits": 2,
+          "group": "Biomedical Sciences · all required / 52 units"
+        },
+        {
+          "code": "BMSC3027",
+          "title": "Reproductive System",
+          "credits": 2,
+          "group": "Biomedical Sciences · all required / 52 units"
+        },
+        {
+          "code": "BMSC3036",
+          "title": "Nervous System",
+          "credits": 2,
+          "group": "Biomedical Sciences · all required / 52 units"
+        },
+        {
+          "code": "BMSC3037",
+          "title": "Public Health and Family Medicine",
+          "credits": 3,
+          "group": "Biomedical Sciences · all required / 52 units"
+        },
+        {
+          "code": "BMSC3046",
+          "title": "Surgery and Emergency Medicine",
+          "credits": 3,
+          "group": "Biomedical Sciences · all required / 52 units"
+        },
+        {
+          "code": "CMED1006",
+          "title": "Fundamental Theories of Chinese Medicine 中醫基礎理論",
+          "credits": 6,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED1016",
+          "title": "Ancient Chinese Medical Prose—Selected Readings 醫古文──中醫文獻選讀",
+          "credits": 2,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED1017",
+          "title": "Diagnostics of Chinese Medicine 中醫診斷學",
+          "credits": 5,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED1027",
+          "title": "Ancient Chinese Medical Prose—Classical Chinese 醫古文──古代漢語",
+          "credits": 3,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED1035",
+          "title": "History of Chinese Medicine 中國醫學史",
+          "credits": 2,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED2005",
+          "title": "Clinical Chinese Materia Medica 臨床中藥學",
+          "credits": 6,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED2007",
+          "title": "Clinical Chinese Materia Medica Laboratory 臨床中藥學實驗",
+          "credits": 1,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED2015",
+          "title": "Acupuncture—Basic Theories 針灸學基礎",
+          "credits": 3,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED2016",
+          "title": "Acupuncture Laboratory 針灸學基礎實驗",
+          "credits": 1,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED2017",
+          "title": "Chinese Medicinal Formulae 方劑學",
+          "credits": 6,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED2025",
+          "title": "Selected Readings of Chinese Medicine Classics II—Treatise on Exogenous Febrile Diseases 中醫經典選讀（二）傷寒論",
+          "credits": 5,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED2026",
+          "title": "Selected Readings of Chinese Medicine Classics III—Golden Chamber 中醫經典選讀（三）金匱要略",
+          "credits": 4,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED2027",
+          "title": "Selected Readings of Chinese Medicine Classics IV—Science of Seasonal Febrile Diseases 中醫經典選讀（四）溫病學",
+          "credits": 4,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED2045",
+          "title": "Selected Readings of Chinese Medicine Classics I—Canon 中醫經典選讀（一）內經",
+          "credits": 4,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED3035",
+          "title": "Surgery of Chinese Medicine 中醫外科學",
+          "credits": 5,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED3036",
+          "title": "Acupuncture—Clinical Practice 臨床針灸學",
+          "credits": 4,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED3038",
+          "title": "Internal Medicine of Chinese Medicine I 中醫內科學（一）",
+          "credits": 4,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED3039",
+          "title": "Internal Medicine of Chinese Medicine II 中醫內科學（二）",
+          "credits": 4,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED3045",
+          "title": "Chinese Medicine Integrated Clinical Practice 中醫綜合見習",
+          "credits": 1,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED3046",
+          "title": "Different Theories of Chinese Medicine 中醫各家學說",
+          "credits": 4,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED3047",
+          "title": "Gynaecology of Chinese Medicine 中醫婦科學",
+          "credits": 5,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED3048",
+          "title": "Internal Medicine of Chinese Medicine—Clinic I 中醫內科學──見習（一）",
+          "credits": 1,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED3049",
+          "title": "Internal Medicine of Chinese Medicine—Clinic II 中醫內科學──見習（二）",
+          "credits": 0.5,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED3055",
+          "title": "Ophthalmology of Chinese Medicine 中醫眼科學",
+          "credits": 2,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED3056",
+          "title": "Otorhinolaryngology of Chinese Medicine 中醫五官科學",
+          "credits": 2,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED3057",
+          "title": "Paediatrics of Chinese Medicine 中醫兒科學",
+          "credits": 4,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED3058",
+          "title": "Orthopaedics and Traumatology of Chinese Medicine and Tui Na I 中醫骨傷、推拿學（一）",
+          "credits": 3,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED3059",
+          "title": "Orthopaedics and Traumatology of Chinese Medicine and Tui Na II 中醫骨傷、推拿學（二）",
+          "credits": 3,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED3065",
+          "title": "Acupuncture-Clinical Practice Attachment",
+          "credits": 0.5,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED3068",
+          "title": "Orthopaedics and Traumatology of Chinese Medicine and Tui Na Laboratory I 中醫骨傷、推拿學──實驗 (一)",
+          "credits": 1,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED3069",
+          "title": "Orthopaedics and Traumatology of Chinese Medicine and Tui Na Laboratory II 中醫骨傷、推拿學──實驗 (二)",
+          "credits": 1,
+          "group": "Chinese Medicine · all required / 97 units"
+        },
+        {
+          "code": "CMED4015",
+          "title": "Specialty Studies and Professional Training of Chinese Medicine 中醫專科研習與職業訓練",
+          "credits": 12,
+          "courseType": "internship",
+          "group": "Clinical Internship in Chinese Medicine · all required / 49 units",
+          "description": "The official Programme states that this course is excluded from the BSc (Hons) in Biomedical Science honours-classification GPA calculation."
+        },
+        {
+          "code": "CMED4018",
+          "title": "Clinical Internship I",
+          "credits": 19,
+          "courseType": "internship",
+          "group": "Clinical Internship in Chinese Medicine · all required / 49 units",
+          "description": "The official Programme states that this course is excluded from the BSc (Hons) in Biomedical Science honours-classification GPA calculation."
+        },
+        {
+          "code": "CMED4019",
+          "title": "Clinical Internship II",
+          "credits": 18,
+          "courseType": "internship",
+          "group": "Clinical Internship in Chinese Medicine · all required / 49 units",
+          "description": "The official Programme states that this course is excluded from the BSc (Hons) in Biomedical Science honours-classification GPA calculation."
+        },
+        {
+          "code": "BMSC4898",
+          "title": "Honours Project I",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Honours Project · both required / 6 units"
+        },
+        {
+          "code": "BMSC4899",
+          "title": "Honours Project II",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Honours Project · both required / 6 units"
+        },
+        {
+          "code": "BCME2302",
+          "title": "Yi-Jing and Chinese Medicine",
+          "credits": 2,
+          "description": "Explicitly recommended by the HKBU Programme page as a Free Elective offered by CUHK.",
+          "group": "Recommended Free Electives · open recommendation list / complete 9 units"
+        },
+        {
+          "code": "BCME2312",
+          "title": "Clinical Thinking Skills in Chinese Medicine",
+          "credits": 2,
+          "description": "Explicitly recommended by the HKBU Programme page as a Free Elective offered by CUHK.",
+          "group": "Recommended Free Electives · open recommendation list / complete 9 units"
+        },
+        {
+          "code": "BCHM3901",
+          "title": "Chinese Medicine Emergency Medicine: Syndrome Differentiation and treatment for Acute Illness Related to Chinese Internal Medicine",
+          "credits": 3,
+          "description": "Explicitly recommended by the HKBU Programme page as a Free Elective offered by HKU.",
+          "group": "Recommended Free Electives · open recommendation list / complete 9 units"
+        },
+        {
+          "code": "BCHM3905",
+          "title": "Classical Prescriptions and Medical Records",
+          "credits": 3,
+          "description": "Explicitly recommended by the HKBU Programme page as a Free Elective offered by HKU.",
+          "group": "Recommended Free Electives · open recommendation list / complete 9 units"
+        },
+        {
+          "code": "BCHM3909",
+          "title": "Basic and Clinical Toxicology of Chinese Medicines",
+          "credits": 3,
+          "description": "Explicitly recommended by the HKBU Programme page as a Free Elective offered by HKU.",
+          "group": "Recommended Free Electives · open recommendation list / complete 9 units"
+        },
+        {
+          "code": "CMED1015",
+          "title": "Introduction to Chinese Medicine Philosophy 中醫哲學導論",
+          "credits": 2,
+          "group": "Recommended Free Electives · open recommendation list / complete 9 units"
+        },
+        {
+          "code": "CMED1045",
+          "title": "Introduction of Acute Management in Chinese Medicine and Auxiliary Medicine 實用中醫急診及輔助醫療導論",
+          "credits": 3,
+          "group": "Recommended Free Electives · open recommendation list / complete 9 units"
+        },
+        {
+          "code": "CMED2035",
+          "title": "A Comparative Study of the Traditional Chinese and Western Medical Systems 中西醫學的比較",
+          "credits": 2,
+          "group": "Recommended Free Electives · open recommendation list / complete 9 units"
+        },
+        {
+          "code": "CMED2036",
+          "title": "Cosmetology of Traditional Chinese Medicine 中醫美容學",
+          "credits": 3,
+          "group": "Recommended Free Electives · open recommendation list / complete 9 units"
+        },
+        {
+          "code": "CMED2037",
+          "title": "Current Topics on Clinical Research in Chinese Medicine 中醫臨床研究進展",
+          "credits": 2,
+          "group": "Recommended Free Electives · open recommendation list / complete 9 units"
+        },
+        {
+          "code": "CMED3066",
+          "title": "Acupuncture - Clinical Technique and its Application 針灸臨床操作技巧及應用",
+          "credits": 2,
+          "group": "Recommended Free Electives · open recommendation list / complete 9 units"
+        }
+      ]
+    }
+  ]
+}

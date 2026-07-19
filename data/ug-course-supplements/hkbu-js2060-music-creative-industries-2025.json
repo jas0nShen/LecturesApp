@@ -1,0 +1,1181 @@
+{
+  "provider": "HKBU University Student Handbook 2025-2026",
+  "academicYear": "2025-2026",
+  "sourceUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2060/",
+  "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2060/",
+  "note": "The combined JS2060 admission entry maps to two independently published 2025-2026 Handbook curricula. Music publishes 37 units of Major Required Courses, one 21-unit concentration and two required 3-unit Honours Project courses. Its page labels Major Courses as 69 units, but the explicit structure is 37 + 21 = 58 units, and 58 Major + 6 Honours Project + 9 University Language + 22 General Education + 33 Free Electives closes the stated 128-unit degree; the conflicting 69-unit label is retained as a manual-review issue rather than used to invent courses. Music offers Composition, Directed Studies, Music Education and Performance concentrations. Directed Studies is an open coordinator-directed 21-unit pool: the displayed courses are recorded, but the list is not presented as closed, and the official 6-unit cap on Chamber Music / Group Instrument / Vocal Study remains applicable. The Music Education page labels the concentration 21 units, but its displayed Chamber Music path contains six 1-unit courses while the other fixed and choose-one requirements add 17 units, producing 23; this conflict requires manual review. The Performance table repeats MUSI4007, MUSI4015, MUSI4038 and MUSI4039; each code is stored once with all published roles, and either displayed path can reconcile to 21 units after duplicate codes are counted once. Creative Industries publishes 22 units of Major Required Courses, 15 units selected from an explicit 82-course Major Elective pool, one 21-unit concentration, and two required 3-unit Honours Project courses, closing 58 Major units plus 6 Honours Project units. It offers Popular Music Performance and Songwriting and Scoring for Film, Television and Video Games concentrations. MUSI2057 is assigned 2 units by both curricula while the individual course page assigns 3 units; the curriculum-specific 2-unit value is retained and flagged. MUSI3055 has no unit value in the Directed Studies table; its individual course page supplies 3 units. MUSI4025 and MUSI4026 use stale 2024-2025 links on the current Creative Industries page, while the current 2025-2026 course-directory pages confirm their titles and 2-unit values. Courses shared across the two curricula are duplicated only across their separate Major supplements, preserving Major-specific roles and local identity. University Language, General Education and Free Electives are excluded from both supplements. No Year or Term is assigned because the official requirement tables do not publish course timing. Concentration evidence is taken from the six official child pages under the two supplement source URLs.",
+  "supplements": [
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BA-BMUS-MUSIC-CI-3",
+      "jupasCode": "JS2060",
+      "programmeName": "Bachelor of Arts (Hons) / Bachelor of Music (Hons) (Music / Creative Industries)",
+      "majorId": "HKBU-UG-BA-BMUS-MUSIC-CI-3-M1",
+      "majorName": "Music",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/academy-of-music-1/bachelor-of-arts-honours-in-music",
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/academy-of-music-1/bachelor-of-arts-honours-in-music",
+      "courses": [
+        {
+          "code": "MUSI1005",
+          "title": "Musicianship I",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI1006",
+          "title": "Theory and Structure of Music I",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI1008",
+          "title": "Applied Music I",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI1009",
+          "title": "Applied Music II",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI1015",
+          "title": "Musicianship II",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI1016",
+          "title": "Theory and Structure of Music II",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI1018",
+          "title": "Ensemble I",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI1019",
+          "title": "Ensemble II",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI1028",
+          "title": "Music Colloquium I",
+          "credits": 0,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI1029",
+          "title": "Music Colloquium II",
+          "credits": 0,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI2008",
+          "title": "Applied Music III",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI2009",
+          "title": "Applied Music IV",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI2015",
+          "title": "Musicianship III",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI2016",
+          "title": "Music Technology I",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI2018",
+          "title": "Ensemble III",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI2019",
+          "title": "Ensemble IV",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI2028",
+          "title": "Music Colloquium III",
+          "credits": 0,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI2029",
+          "title": "Music Colloquium IV",
+          "credits": 0,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI2055",
+          "title": "Western Music",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI2056",
+          "title": "Exploring Musical Cultures Worldwide",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI3008",
+          "title": "Applied Music V",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI3009",
+          "title": "Applied Music VI",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI3018",
+          "title": "Ensemble V",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI3019",
+          "title": "Ensemble VI",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI3028",
+          "title": "Music Colloquium V",
+          "credits": 0,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI3029",
+          "title": "Music Colloquium VI",
+          "credits": 0,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI3085",
+          "title": "Introduction to Music Business and Music Marketing",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI4008",
+          "title": "Applied Music VII",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI4009",
+          "title": "Applied Music VIII",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI4018",
+          "title": "Ensemble VII",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI4019",
+          "title": "Ensemble VIII",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI4028",
+          "title": "Music Colloquium VII",
+          "credits": 0,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI4029",
+          "title": "Music Colloquium VIII",
+          "credits": 0,
+          "group": "Major Required Courses · all required / 37 units"
+        },
+        {
+          "code": "MUSI2027",
+          "title": "Composition I",
+          "credits": 2,
+          "group": "Composition Concentration Required Courses · all required / 21 units; Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units"
+        },
+        {
+          "code": "MUSI2035",
+          "title": "Music Technology II",
+          "credits": 3,
+          "group": "Composition Concentration Required Courses · all required / 21 units; Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units"
+        },
+        {
+          "code": "MUSI2047",
+          "title": "Conducting I",
+          "credits": 3,
+          "group": "Composition Concentration Required Courses · all required / 21 units; Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units; Music Education Concentration Required Courses"
+        },
+        {
+          "code": "MUSI2057",
+          "title": "Sound Art",
+          "credits": 2,
+          "group": "Composition Concentration Required Courses · all required / 21 units; Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units",
+          "description": "Official source conflict: the Programme and concentration tables assign 2 units, while the linked 2025-2026 individual course page assigns 3 units. The curriculum-specific 2-unit value is retained; manual confirmation is required."
+        },
+        {
+          "code": "MUSI3016",
+          "title": "Introduction to Orchestration",
+          "credits": 2,
+          "group": "Composition Concentration Required Courses · all required / 21 units; Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units"
+        },
+        {
+          "code": "MUSI3025",
+          "title": "Composition II",
+          "credits": 3,
+          "group": "Composition Concentration Required Courses · all required / 21 units; Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units"
+        },
+        {
+          "code": "MUSI3076",
+          "title": "Applied Orchestration for Screen",
+          "credits": 3,
+          "group": "Composition Concentration Required Courses · all required / 21 units"
+        },
+        {
+          "code": "MUSI4005",
+          "title": "Composition III",
+          "credits": 3,
+          "group": "Composition Concentration Required Courses · all required / 21 units; Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units"
+        },
+        {
+          "code": "MUSI2005",
+          "title": "Chamber Music I",
+          "credits": 1,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units; Music Education Concentration · Chamber Music path (6 listed 1-unit courses; official 21-unit total does not reconcile); Performance Concentration · Chamber Music path (6 listed 1-unit courses)"
+        },
+        {
+          "code": "MUSI2007",
+          "title": "Group Instrument/Vocal Study I",
+          "credits": 1,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units; Music Education Concentration · Group Instrument/Vocal Study path (4 listed 1-unit courses); Performance Concentration · Group Instrument/Vocal Study path (4 listed 1-unit courses)"
+        },
+        {
+          "code": "MUSI2017",
+          "title": "Chamber Music II",
+          "credits": 1,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units; Music Education Concentration · Chamber Music path (6 listed 1-unit courses; official 21-unit total does not reconcile); Performance Concentration · Chamber Music path (6 listed 1-unit courses)"
+        },
+        {
+          "code": "MUSI2026",
+          "title": "Group Instrument/Vocal Study II",
+          "credits": 1,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units; Music Education Concentration · Group Instrument/Vocal Study path (4 listed 1-unit courses); Performance Concentration · Group Instrument/Vocal Study path (4 listed 1-unit courses)"
+        },
+        {
+          "code": "MUSI2045",
+          "title": "Introduction to Music Education",
+          "credits": 3,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units; Music Education Concentration Required Courses"
+        },
+        {
+          "code": "MUSI3005",
+          "title": "Chamber Music III",
+          "credits": 1,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units; Music Education Concentration · Chamber Music path (6 listed 1-unit courses; official 21-unit total does not reconcile); Performance Concentration · Chamber Music path (6 listed 1-unit courses)"
+        },
+        {
+          "code": "MUSI3006",
+          "title": "Chamber Music IV",
+          "credits": 1,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units; Music Education Concentration · Chamber Music path (6 listed 1-unit courses; official 21-unit total does not reconcile); Performance Concentration · Chamber Music path (6 listed 1-unit courses)"
+        },
+        {
+          "code": "MUSI3007",
+          "title": "Group Instrument/Vocal Study III",
+          "credits": 1,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units; Music Education Concentration · Group Instrument/Vocal Study path (4 listed 1-unit courses); Performance Concentration · Group Instrument/Vocal Study path (4 listed 1-unit courses)"
+        },
+        {
+          "code": "MUSI3015",
+          "title": "Group Instrument/Vocal Study IV",
+          "credits": 1,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units; Music Education Concentration · Group Instrument/Vocal Study path (4 listed 1-unit courses); Performance Concentration · Group Instrument/Vocal Study path (4 listed 1-unit courses)"
+        },
+        {
+          "code": "MUSI3027",
+          "title": "Conducting II",
+          "credits": 3,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units; Music Education Concentration Required Courses"
+        },
+        {
+          "code": "MUSI3035",
+          "title": "School Music Education: Hong Kong and Beyond I",
+          "credits": 3,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units; Music Education Concentration Required Courses"
+        },
+        {
+          "code": "MUSI3036",
+          "title": "Chinese Music Topic I",
+          "credits": 2,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units"
+        },
+        {
+          "code": "MUSI3037",
+          "title": "Chinese Music Topic II",
+          "credits": 2,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units"
+        },
+        {
+          "code": "MUSI3045",
+          "title": "Comparative Studies of Asian and Western Music",
+          "credits": 2,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units"
+        },
+        {
+          "code": "MUSI3046",
+          "title": "Western Music History Topic I",
+          "credits": 2,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units"
+        },
+        {
+          "code": "MUSI3047",
+          "title": "Western Music History Topic II",
+          "credits": 2,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units"
+        },
+        {
+          "code": "MUSI3055",
+          "title": "Form and Analysis II",
+          "credits": 3,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units",
+          "description": "The Directed Studies concentration table omits the unit value; the linked 2025-2026 individual course page assigns 3 units."
+        },
+        {
+          "code": "MUSI3056",
+          "title": "Music and the Brain",
+          "credits": 3,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units"
+        },
+        {
+          "code": "MUSI3057",
+          "title": "Musicianship IV",
+          "credits": 2,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units"
+        },
+        {
+          "code": "MUSI3058",
+          "title": "Style and Performance I",
+          "credits": 3,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units; Performance Concentration Required Courses"
+        },
+        {
+          "code": "MUSI3059",
+          "title": "Style and Performance II",
+          "credits": 3,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units; Performance Concentration Required Courses"
+        },
+        {
+          "code": "MUSI3096",
+          "title": "Legal Perspective in the Creative Arts",
+          "credits": 3,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units"
+        },
+        {
+          "code": "MUSI3097",
+          "title": "Music Design and Programming for Video Games",
+          "credits": 3,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units"
+        },
+        {
+          "code": "MUSI3105",
+          "title": "History and Analysis of Game Scoring",
+          "credits": 3,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units"
+        },
+        {
+          "code": "MUSI3106",
+          "title": "Health and Wellbeing Through Exercise, Nutrition and Music-Mind-Body Dynamics",
+          "credits": 3,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units"
+        },
+        {
+          "code": "MUSI3107",
+          "title": "The Past and Present of Music Theatre: from Opera to Broadway",
+          "credits": 3,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units"
+        },
+        {
+          "code": "MUSI3115",
+          "title": "Female and LGBTQ Artists in Music, Arts and Society",
+          "credits": 3,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units"
+        },
+        {
+          "code": "MUSI3116",
+          "title": "Music, Healing, Health and Wellbeing in World Cultures",
+          "credits": 3,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units"
+        },
+        {
+          "code": "MUSI3117",
+          "title": "Music, the Mind, and Meditation for Wellbeing",
+          "credits": 3,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units"
+        },
+        {
+          "code": "MUSI3125",
+          "title": "Music, Science and Technology",
+          "credits": 3,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units"
+        },
+        {
+          "code": "MUSI3126",
+          "title": "Sounds from Earth: Music in a Globalized World",
+          "credits": 3,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units"
+        },
+        {
+          "code": "MUSI3127",
+          "title": "Sight and Sound: Great Film Music Collaborations",
+          "credits": 3,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units"
+        },
+        {
+          "code": "MUSI3135",
+          "title": "Listening to the Twentieth Century",
+          "credits": 3,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units"
+        },
+        {
+          "code": "MUSI3136",
+          "title": "Creative Entrepreneurship",
+          "credits": 3,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units"
+        },
+        {
+          "code": "MUSI4006",
+          "title": "School Music Education: Hong Kong and Beyond II",
+          "credits": 3,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units; Music Education Concentration Required Courses"
+        },
+        {
+          "code": "MUSI4007",
+          "title": "Chamber Music V",
+          "credits": 1,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units; Music Education Concentration · Chamber Music path (6 listed 1-unit courses; official 21-unit total does not reconcile); Performance Concentration · Chamber Music path (6 listed 1-unit courses); Performance Concentration Required Courses",
+          "description": "The Performance concentration table lists this course in the Chamber Music path and again among the subsequent required courses; it is stored once with both roles."
+        },
+        {
+          "code": "MUSI4015",
+          "title": "Chamber Music VI",
+          "credits": 1,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units; Music Education Concentration · Chamber Music path (6 listed 1-unit courses; official 21-unit total does not reconcile); Performance Concentration · Chamber Music path (6 listed 1-unit courses); Performance Concentration Required Courses",
+          "description": "The Performance concentration table lists this course in the Chamber Music path and again among the subsequent required courses; it is stored once with both roles."
+        },
+        {
+          "code": "MUSI4016",
+          "title": "Principles of Pedagogy",
+          "credits": 2,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units; Performance Concentration Required Courses"
+        },
+        {
+          "code": "MUSI4017",
+          "title": "Conducting III",
+          "credits": 3,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units"
+        },
+        {
+          "code": "MUSI4025",
+          "title": "Special Topics in Music I",
+          "credits": 2,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units; Music Education Concentration · choose 1 of 3 Special Topics courses / 2 units; Performance Concentration · choose 1 of 3 Special Topics courses / 2 units"
+        },
+        {
+          "code": "MUSI4026",
+          "title": "Special Topics in Music II",
+          "credits": 2,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units; Music Education Concentration · choose 1 of 3 Special Topics courses / 2 units; Performance Concentration · choose 1 of 3 Special Topics courses / 2 units"
+        },
+        {
+          "code": "MUSI4027",
+          "title": "Special Topics in Music III",
+          "credits": 2,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units; Music Education Concentration · choose 1 of 3 Special Topics courses / 2 units; Performance Concentration · choose 1 of 3 Special Topics courses / 2 units"
+        },
+        {
+          "code": "MUSI4035",
+          "title": "Special Topics in Music IV",
+          "credits": 2,
+          "group": "Directed Studies Concentration Elective Courses · displayed coordinator-directed open pool / complete 21 units"
+        },
+        {
+          "code": "MUSI2036",
+          "title": "Applied Music for Performance Major I",
+          "credits": 1,
+          "group": "Performance Concentration Required Courses"
+        },
+        {
+          "code": "MUSI2037",
+          "title": "Performance Seminar I",
+          "credits": 0,
+          "group": "Performance Concentration Required Courses"
+        },
+        {
+          "code": "MUSI3038",
+          "title": "Applied Music for Performance Major II",
+          "credits": 1,
+          "group": "Performance Concentration Required Courses"
+        },
+        {
+          "code": "MUSI3039",
+          "title": "Applied Music for Performance Major III",
+          "credits": 1,
+          "group": "Performance Concentration Required Courses"
+        },
+        {
+          "code": "MUSI3048",
+          "title": "Performance Seminar II",
+          "credits": 0,
+          "group": "Performance Concentration Required Courses"
+        },
+        {
+          "code": "MUSI3049",
+          "title": "Performance Seminar III",
+          "credits": 0,
+          "group": "Performance Concentration Required Courses"
+        },
+        {
+          "code": "MUSI4038",
+          "title": "Applied Music for Performance Major IV",
+          "credits": 1,
+          "group": "Performance Concentration Required Courses",
+          "description": "The Performance concentration table repeats this course identically; it is stored once."
+        },
+        {
+          "code": "MUSI4039",
+          "title": "Applied Music for Performance Major V",
+          "credits": 1,
+          "group": "Performance Concentration Required Courses",
+          "description": "The Performance concentration table repeats this course identically; it is stored once."
+        },
+        {
+          "code": "MUSI4048",
+          "title": "Performance Seminar IV",
+          "credits": 0,
+          "group": "Performance Concentration Required Courses"
+        },
+        {
+          "code": "MUSI4049",
+          "title": "Performance Seminar V",
+          "credits": 0,
+          "group": "Performance Concentration Required Courses"
+        },
+        {
+          "code": "MUSI4898",
+          "title": "Honours Project I",
+          "credits": 3,
+          "group": "Honours Project · both required / 6 units",
+          "courseType": "capstone"
+        },
+        {
+          "code": "MUSI4899",
+          "title": "Honours Project II",
+          "credits": 3,
+          "group": "Honours Project · both required / 6 units",
+          "courseType": "capstone"
+        }
+      ]
+    },
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BA-BMUS-MUSIC-CI-3",
+      "jupasCode": "JS2060",
+      "programmeName": "Bachelor of Arts (Hons) / Bachelor of Music (Hons) (Music / Creative Industries)",
+      "majorId": "HKBU-UG-BA-BMUS-MUSIC-CI-3-M2",
+      "majorName": "Creative Industries",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/academy-of-music-1/bachelor-of-music-honours-in-creative-industries",
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/academy-of-music-1/bachelor-of-music-honours-in-creative-industries",
+      "courses": [
+        {
+          "code": "MUSI1005",
+          "title": "Musicianship I",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 22 units"
+        },
+        {
+          "code": "MUSI1015",
+          "title": "Musicianship II",
+          "credits": 1,
+          "group": "Major Required Courses · all required / 22 units"
+        },
+        {
+          "code": "MUSI1037",
+          "title": "Music Technology for Media",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 22 units"
+        },
+        {
+          "code": "MUSI1038",
+          "title": "Music Theory I",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 22 units"
+        },
+        {
+          "code": "MUSI1039",
+          "title": "Music Theory II",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 22 units"
+        },
+        {
+          "code": "MUSI2055",
+          "title": "Western Music",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 22 units"
+        },
+        {
+          "code": "MUSI2056",
+          "title": "Exploring Musical Cultures Worldwide",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 22 units"
+        },
+        {
+          "code": "MUSI3016",
+          "title": "Introduction to Orchestration",
+          "credits": 2,
+          "group": "Major Required Courses · all required / 22 units"
+        },
+        {
+          "code": "MUSI3085",
+          "title": "Introduction to Music Business and Music Marketing",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 22 units"
+        },
+        {
+          "code": "MUSI1008",
+          "title": "Applied Music I",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI1009",
+          "title": "Applied Music II",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI1018",
+          "title": "Ensemble I",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI1019",
+          "title": "Ensemble II",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI1045",
+          "title": "Introduction to Film Music",
+          "credits": 3,
+          "group": "Major Elective Courses · select 15 units; Scoring for Film, Television and Video Games Concentration Required Courses · all required / 21 units"
+        },
+        {
+          "code": "MUSI1046",
+          "title": "Introduction to Anglophone Popular Music",
+          "credits": 3,
+          "group": "Major Elective Courses · select 15 units; Popular Music Performance and Songwriting Concentration Required Courses · all required / 21 units"
+        },
+        {
+          "code": "MUSI1048",
+          "title": "Composition for Screen I",
+          "credits": 2,
+          "group": "Major Elective Courses · select 15 units; Scoring for Film, Television and Video Games Concentration Required Courses · all required / 21 units"
+        },
+        {
+          "code": "MUSI1049",
+          "title": "Composition for Screen II",
+          "credits": 2,
+          "group": "Major Elective Courses · select 15 units; Scoring for Film, Television and Video Games Concentration Required Courses · all required / 21 units"
+        },
+        {
+          "code": "MUSI1058",
+          "title": "Instrumental/Vocal Techniques for Songwriters I",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units; Popular Music Performance and Songwriting Concentration Required Courses · all required / 21 units"
+        },
+        {
+          "code": "MUSI1059",
+          "title": "Instrumental/Vocal Techniques for Songwriters II",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units; Popular Music Performance and Songwriting Concentration Required Courses · all required / 21 units"
+        },
+        {
+          "code": "MUSI2005",
+          "title": "Chamber Music I",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI2007",
+          "title": "Group Instrument/Vocal Study I",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI2008",
+          "title": "Applied Music III",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI2009",
+          "title": "Applied Music IV",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI2015",
+          "title": "Musicianship III",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI2017",
+          "title": "Chamber Music II",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI2018",
+          "title": "Ensemble III",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI2019",
+          "title": "Ensemble IV",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI2026",
+          "title": "Group Instrument/Vocal Study II",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI2047",
+          "title": "Conducting I",
+          "credits": 3,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI2048",
+          "title": "Composition for Screen III",
+          "credits": 2,
+          "group": "Major Elective Courses · select 15 units; Scoring for Film, Television and Video Games Concentration Required Courses · all required / 21 units"
+        },
+        {
+          "code": "MUSI2049",
+          "title": "Composition for Screen IV",
+          "credits": 2,
+          "group": "Major Elective Courses · select 15 units; Scoring for Film, Television and Video Games Concentration Required Courses · all required / 21 units"
+        },
+        {
+          "code": "MUSI2057",
+          "title": "Sound Art",
+          "credits": 2,
+          "group": "Major Elective Courses · select 15 units",
+          "description": "Official source conflict: the Programme table assigns 2 units, while the linked 2025-2026 individual course page assigns 3 units. The curriculum-specific 2-unit value is retained; manual confirmation is required."
+        },
+        {
+          "code": "MUSI2058",
+          "title": "Instrumental/Vocal Techniques for Songwriters III",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units; Popular Music Performance and Songwriting Concentration Required Courses · all required / 21 units"
+        },
+        {
+          "code": "MUSI2059",
+          "title": "Instrumental/Vocal Techniques for Songwriters IV",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units; Popular Music Performance and Songwriting Concentration Required Courses · all required / 21 units"
+        },
+        {
+          "code": "MUSI2068",
+          "title": "Songwriting I",
+          "credits": 2,
+          "group": "Major Elective Courses · select 15 units; Popular Music Performance and Songwriting Concentration Required Courses · all required / 21 units"
+        },
+        {
+          "code": "MUSI2069",
+          "title": "Songwriting II",
+          "credits": 2,
+          "group": "Major Elective Courses · select 15 units; Popular Music Performance and Songwriting Concentration Required Courses · all required / 21 units"
+        },
+        {
+          "code": "MUSI2078",
+          "title": "Live Performance Workshop I",
+          "credits": 2,
+          "group": "Major Elective Courses · select 15 units; Popular Music Performance and Songwriting Concentration Required Courses · all required / 21 units"
+        },
+        {
+          "code": "MUSI2079",
+          "title": "Live Performance Workshop II",
+          "credits": 2,
+          "group": "Major Elective Courses · select 15 units; Popular Music Performance and Songwriting Concentration Required Courses · all required / 21 units"
+        },
+        {
+          "code": "MUSI2088",
+          "title": "Scoring Seminar I",
+          "credits": 2,
+          "group": "Major Elective Courses · select 15 units; Scoring for Film, Television and Video Games Concentration Required Courses · all required / 21 units"
+        },
+        {
+          "code": "MUSI2089",
+          "title": "Scoring Seminar II",
+          "credits": 2,
+          "group": "Major Elective Courses · select 15 units; Scoring for Film, Television and Video Games Concentration Required Courses · all required / 21 units"
+        },
+        {
+          "code": "MUSI3005",
+          "title": "Chamber Music III",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3006",
+          "title": "Chamber Music IV",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3007",
+          "title": "Group Instrument/Vocal Study III",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3008",
+          "title": "Applied Music V",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3009",
+          "title": "Applied Music VI",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3015",
+          "title": "Group Instrument/Vocal Study IV",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3018",
+          "title": "Ensemble V",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3019",
+          "title": "Ensemble VI",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3027",
+          "title": "Conducting II",
+          "credits": 3,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3057",
+          "title": "Musicianship IV",
+          "credits": 2,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3065",
+          "title": "Service Leadership and Community Engagement in Music",
+          "credits": 3,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3066",
+          "title": "Music and Media",
+          "credits": 3,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3067",
+          "title": "Techniques of Sound Design",
+          "credits": 3,
+          "group": "Major Elective Courses · select 15 units; Scoring for Film, Television and Video Games Concentration Required Courses · all required / 21 units"
+        },
+        {
+          "code": "MUSI3068",
+          "title": "Production Seminar for Songwriters I",
+          "credits": 2,
+          "group": "Major Elective Courses · select 15 units; Popular Music Performance and Songwriting Concentration Required Courses · all required / 21 units"
+        },
+        {
+          "code": "MUSI3069",
+          "title": "Production Seminar for Songwriters II",
+          "credits": 2,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3075",
+          "title": "Collaborative Screen Project",
+          "credits": 3,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3076",
+          "title": "Applied Orchestration for Screen",
+          "credits": 3,
+          "group": "Major Elective Courses · select 15 units; Scoring for Film, Television and Video Games Concentration Required Courses · all required / 21 units"
+        },
+        {
+          "code": "MUSI3077",
+          "title": "Arranging for Songwriters",
+          "credits": 2,
+          "group": "Major Elective Courses · select 15 units; Popular Music Performance and Songwriting Concentration Required Courses · all required / 21 units"
+        },
+        {
+          "code": "MUSI3078",
+          "title": "Live Performance Workshop III",
+          "credits": 2,
+          "group": "Major Elective Courses · select 15 units; Popular Music Performance and Songwriting Concentration Required Courses · all required / 21 units"
+        },
+        {
+          "code": "MUSI3079",
+          "title": "Live Performance Workshop IV",
+          "credits": 2,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3086",
+          "title": "Professional Development Internship",
+          "credits": 3,
+          "group": "Major Elective Courses · select 15 units",
+          "courseType": "internship"
+        },
+        {
+          "code": "MUSI3087",
+          "title": "Iconic Figures of Chinese Popular Music",
+          "credits": 3,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3088",
+          "title": "Scoring Seminar III",
+          "credits": 2,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3089",
+          "title": "Scoring Seminar IV",
+          "credits": 2,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3095",
+          "title": "Listening to Chinese Music",
+          "credits": 3,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3096",
+          "title": "Legal Perspective in the Creative Arts",
+          "credits": 3,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3097",
+          "title": "Music Design and Programming for Video Games",
+          "credits": 3,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3105",
+          "title": "History and Analysis of Game Scoring",
+          "credits": 3,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3106",
+          "title": "Health and Wellbeing Through Exercise, Nutrition and Music-Mind-Body Dynamics",
+          "credits": 3,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3107",
+          "title": "The Past and Present of Music Theatre: from Opera to Broadway",
+          "credits": 3,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3115",
+          "title": "Female and LGBTQ Artists in Music, Arts and Society",
+          "credits": 3,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3116",
+          "title": "Music, Healing, Health and Wellbeing in World Cultures",
+          "credits": 3,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3117",
+          "title": "Music, the Mind, and Meditation for Wellbeing",
+          "credits": 3,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3125",
+          "title": "Music, Science and Technology",
+          "credits": 3,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3126",
+          "title": "Sounds from Earth: Music in a Globalized World",
+          "credits": 3,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3127",
+          "title": "Sight and Sound: Great Film Music Collaborations",
+          "credits": 3,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3135",
+          "title": "Listening to the Twentieth Century",
+          "credits": 3,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3136",
+          "title": "Creative Entrepreneurship",
+          "credits": 3,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3145",
+          "title": "Music and AI",
+          "credits": 3,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI3146",
+          "title": "Interactive Audio",
+          "credits": 3,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI4007",
+          "title": "Chamber Music V",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI4008",
+          "title": "Applied Music VII",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI4009",
+          "title": "Applied Music VIII",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI4015",
+          "title": "Chamber Music VI",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI4017",
+          "title": "Conducting III",
+          "credits": 3,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI4018",
+          "title": "Ensemble VII",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI4019",
+          "title": "Ensemble VIII",
+          "credits": 1,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI4025",
+          "title": "Special Topics in Music I",
+          "credits": 2,
+          "group": "Major Elective Courses · select 15 units",
+          "description": "The 2025-2026 Programme page links to the 2024-2025 course URL; the matching 2025-2026 course-directory page confirms the title and 2-unit value used here."
+        },
+        {
+          "code": "MUSI4026",
+          "title": "Special Topics in Music II",
+          "credits": 2,
+          "group": "Major Elective Courses · select 15 units",
+          "description": "The 2025-2026 Programme page links to the 2024-2025 course URL; the matching 2025-2026 course-directory page confirms the title and 2-unit value used here."
+        },
+        {
+          "code": "MUSI4027",
+          "title": "Special Topics in Music III",
+          "credits": 2,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI4035",
+          "title": "Special Topics in Music IV",
+          "credits": 2,
+          "group": "Major Elective Courses · select 15 units"
+        },
+        {
+          "code": "MUSI4878",
+          "title": "Honours Project I",
+          "credits": 3,
+          "group": "Honours Project · both required / 6 units",
+          "courseType": "capstone"
+        },
+        {
+          "code": "MUSI4879",
+          "title": "Honours Project II",
+          "credits": 3,
+          "group": "Honours Project · both required / 6 units",
+          "courseType": "capstone"
+        }
+      ]
+    }
+  ]
+}

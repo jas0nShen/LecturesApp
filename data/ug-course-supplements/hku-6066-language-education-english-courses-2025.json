@@ -1,0 +1,1539 @@
+{
+  "provider": "HKU BA&BEd(LangEd) regulations and syllabuses",
+  "academicYear": "2025-26",
+  "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/ugdr2025-26/Education/BA%26BEd(LangEd).pdf",
+  "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-and-bachelor-of-education-language-education",
+  "note": "The official syllabus applies to students admitted in 2025-26 and thereafter. This supplement records the 210 unique coded courses explicitly published for the English Language and Linguistics Major, the Professional Core in English Language Education, and the applicable language enhancement routes; it is not the complete universe of courses a student may use toward graduation. The open 60-credit free-elective requirement, uncoded Common Core and artificial-intelligence-literacy requirements, non-credit national education and national security requirements, and other unspecified non-credit courses are excluded. CEDU9004 is excluded because the syllabus assigns it only to candidates majoring in Chinese Language, Literature and Culture. BBED6721-BBED6730, BBED6732 and BBED6782 are excluded because they are listed only as optional free electives, not as prescribed English-path courses. The 16 Community-based Professional Practicum courses are the options currently published in the syllabus, but the Faculty states that they may not be offered every year, that the pool may change, and that other opportunities may be announced. Recommended Year and Semester values appear only where the official five-year structure or course section states them; no timing is inferred from course codes.",
+  "supplements": [
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6066",
+      "majorName": "Bachelor of Arts and Bachelor of Education in Language Education - English",
+      "sourceUrl": "https://www4.hku.hk/pubunit/drcd/files/ugdr2025-26/Education/BA%26BEd(LangEd).pdf",
+      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-and-bachelor-of-education-language-education",
+      "courses": [
+        {
+          "code": "LING1000",
+          "title": "Introduction to language",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "core",
+          "group": "Major — Required Introductory Course"
+        },
+        {
+          "code": "LING1004",
+          "title": "Language structure for language learning",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory LING Option (one course required)"
+        },
+        {
+          "code": "LING2004",
+          "title": "Phonetics: Describing sounds",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory LING Option (one course required)"
+        },
+        {
+          "code": "LING2009",
+          "title": "Languages of the world",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory LING Option (one course required)"
+        },
+        {
+          "code": "LING2034",
+          "title": "Psycholinguistics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory LING Option (one course required)"
+        },
+        {
+          "code": "LING2050",
+          "title": "Grammatical description",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory LING Option (one course required)"
+        },
+        {
+          "code": "LING2056",
+          "title": "Sociolinguistics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory LING Option (one course required)"
+        },
+        {
+          "code": "ENGL1011",
+          "title": "Introduction to the study of meaning",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option A (one course required)"
+        },
+        {
+          "code": "ENGL1015",
+          "title": "Introduction to English linguistics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option A (one course required)"
+        },
+        {
+          "code": "ENGL1017",
+          "title": "Introduction to sociolinguistics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option A (one course required)"
+        },
+        {
+          "code": "ENGL1022",
+          "title": "Introduction to poetry",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option A (one course required)"
+        },
+        {
+          "code": "ENGL1025",
+          "title": "Introduction to narratives",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option A (one course required)"
+        },
+        {
+          "code": "ENGL1031",
+          "title": "English grammar(s)",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option A (one course required)"
+        },
+        {
+          "code": "ENGL1042",
+          "title": "World Englishes",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option A (one course required)"
+        },
+        {
+          "code": "ENGL1047",
+          "title": "The English lexicon",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option A (one course required)"
+        },
+        {
+          "code": "ENGL1051",
+          "title": "English sounds",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option A (one course required)"
+        },
+        {
+          "code": "ENGL1056",
+          "title": "Introduction to language and communication",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option A (one course required)"
+        },
+        {
+          "code": "ENGL1058",
+          "title": "Theorizing communication",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option A (one course required)"
+        },
+        {
+          "code": "ENGL1059",
+          "title": "Introduction to pragmatics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option A (one course required)"
+        },
+        {
+          "code": "ENGL1062",
+          "title": "Reading and writing about literature",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option A (one course required)"
+        },
+        {
+          "code": "ENGL1063",
+          "title": "Introduction to literary history",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option A (one course required)"
+        },
+        {
+          "code": "ENGL1013",
+          "title": "Introduction to 20th-century literature",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option B (one course required)"
+        },
+        {
+          "code": "ENGL1014",
+          "title": "Space and place in literature",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option B (one course required)"
+        },
+        {
+          "code": "ENGL1018",
+          "title": "Language and gender",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option B (one course required)"
+        },
+        {
+          "code": "ENGL1020",
+          "title": "Introduction to 19th-century literature",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option B (one course required)"
+        },
+        {
+          "code": "ENGL1024",
+          "title": "Introduction to world literature",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option B (one course required)"
+        },
+        {
+          "code": "ENGL1026",
+          "title": "Film adaptation",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option B (one course required)"
+        },
+        {
+          "code": "ENGL1027",
+          "title": "Analyzing discourse",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option B (one course required)"
+        },
+        {
+          "code": "ENGL1028",
+          "title": "Women’s writing",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option B (one course required)"
+        },
+        {
+          "code": "ENGL1030",
+          "title": "Renaissance literature",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option B (one course required)"
+        },
+        {
+          "code": "ENGL1033",
+          "title": "Intercultural communication",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option B (one course required)"
+        },
+        {
+          "code": "ENGL1034",
+          "title": "Language and prejudice",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option B (one course required)"
+        },
+        {
+          "code": "ENGL1035",
+          "title": "Language crimes",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option B (one course required)"
+        },
+        {
+          "code": "ENGL1036",
+          "title": "Meaning and metaphor",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option B (one course required)"
+        },
+        {
+          "code": "ENGL1040",
+          "title": "Literary rewriting",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option B (one course required)"
+        },
+        {
+          "code": "ENGL1041",
+          "title": "Introduction to literary modernism",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option B (one course required)"
+        },
+        {
+          "code": "ENGL1043",
+          "title": "Introduction to 20th-century poetry",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option B (one course required)"
+        },
+        {
+          "code": "ENGL1044",
+          "title": "Introduction to literary theory",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option B (one course required)"
+        },
+        {
+          "code": "ENGL1045",
+          "title": "“Community” in sociolinguistics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option B (one course required)"
+        },
+        {
+          "code": "ENGL1048",
+          "title": "Crime stories",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option B (one course required)"
+        },
+        {
+          "code": "ENGL1049",
+          "title": "Early modern sonnets",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option B (one course required)"
+        },
+        {
+          "code": "ENGL1050",
+          "title": "Research methods in sociolinguistics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option B (one course required)"
+        },
+        {
+          "code": "ENGL1055",
+          "title": "Language myths and realities",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option B (one course required)"
+        },
+        {
+          "code": "ENGL1060",
+          "title": "Introduction to performance and theatre studies",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option B (one course required)"
+        },
+        {
+          "code": "ENGL1061",
+          "title": "Psycholinguistics and language acquisition",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option B (one course required)"
+        },
+        {
+          "code": "ENGL1064",
+          "title": "Language, communication and media",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option B (one course required)"
+        },
+        {
+          "code": "ENGL1065",
+          "title": "Introduction to postcolonialism",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option B (one course required)"
+        },
+        {
+          "code": "ENGL1066",
+          "title": "Introduction to modern drama",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Introductory ENGL Option B (one course required)"
+        },
+        {
+          "code": "ENGL2002",
+          "title": "Language in society",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Core Pool (24 credits required)"
+        },
+        {
+          "code": "ENGL2004",
+          "title": "English syntax",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Core Pool (24 credits required)"
+        },
+        {
+          "code": "ENGL2007",
+          "title": "Literary linguistics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Core Pool (24 credits required)"
+        },
+        {
+          "code": "ENGL2030",
+          "title": "New Englishes",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Core Pool (24 credits required)"
+        },
+        {
+          "code": "ENGL2039",
+          "title": "Gender, sexuality and discourse",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Core Pool (24 credits required)"
+        },
+        {
+          "code": "ENGL2048",
+          "title": "Language and jargon",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Core Pool (24 credits required)"
+        },
+        {
+          "code": "ENGL2050",
+          "title": "English corpus linguistics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Core Pool (24 credits required)"
+        },
+        {
+          "code": "ENGL2103",
+          "title": "Language and social media",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Core Pool (24 credits required)"
+        },
+        {
+          "code": "ENGL2112",
+          "title": "History of English",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Core Pool (24 credits required)"
+        },
+        {
+          "code": "ENGL2115",
+          "title": "Theories of language acquisition",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Core Pool (24 credits required)"
+        },
+        {
+          "code": "ENGL2117",
+          "title": "English phonology and morphology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Core Pool (24 credits required)"
+        },
+        {
+          "code": "ENGL2119",
+          "title": "English in Hong Kong",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Core Pool (24 credits required)"
+        },
+        {
+          "code": "ENGL2129",
+          "title": "English as a language of science",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Core Pool (24 credits required)"
+        },
+        {
+          "code": "ENGL2130",
+          "title": "Signs, language and meaning",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Core Pool (24 credits required)"
+        },
+        {
+          "code": "ENGL2138",
+          "title": "Language and globalization",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Core Pool (24 credits required)"
+        },
+        {
+          "code": "ENGL2141",
+          "title": "Doing discourse analysis",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Core Pool (24 credits required)"
+        },
+        {
+          "code": "ENGL2146",
+          "title": "Cognitive semantics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Core Pool (24 credits required)"
+        },
+        {
+          "code": "ENGL2158",
+          "title": "Language processing and learning",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Core Pool (24 credits required)"
+        },
+        {
+          "code": "ENGL2166",
+          "title": "English phonetics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Core Pool (24 credits required)"
+        },
+        {
+          "code": "ENGL2178",
+          "title": "Language and art",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Core Pool (24 credits required)"
+        },
+        {
+          "code": "ENGL2179",
+          "title": "Theories of language and communication",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Core Pool (24 credits required)"
+        },
+        {
+          "code": "ENGL2180",
+          "title": "Language in the workplace",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Core Pool (24 credits required)"
+        },
+        {
+          "code": "ENGL2181",
+          "title": "Language and politeness",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Core Pool (24 credits required)"
+        },
+        {
+          "code": "ENGL2184",
+          "title": "Visual communication",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Core Pool (24 credits required)"
+        },
+        {
+          "code": "ENGL2185",
+          "title": "Health communication, ‘healthy’ communication",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Core Pool (24 credits required)"
+        },
+        {
+          "code": "ENGL2187",
+          "title": "Language and news media",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Core Pool (24 credits required)"
+        },
+        {
+          "code": "ENGL2194",
+          "title": "Language and advertising",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Core Pool (24 credits required)"
+        },
+        {
+          "code": "LING2003",
+          "title": "Semantics: Meaning and grammar",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Core Pool (24 credits required)"
+        },
+        {
+          "code": "LING2022",
+          "title": "Pragmatics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Core Pool (24 credits required)"
+        },
+        {
+          "code": "LING2027",
+          "title": "Phonology: An introduction to the study of sound systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Core Pool (24 credits required)"
+        },
+        {
+          "code": "ENGL2012",
+          "title": "Advanced literary theory",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2035",
+          "title": "Reading poetry and poetics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2045",
+          "title": "Travel writing",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2055",
+          "title": "The Gothic",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2074",
+          "title": "Postcolonial literature and theory",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2075",
+          "title": "The idea of China in literature",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2076",
+          "title": "Romanticism",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2079",
+          "title": "Shakespeare",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2080",
+          "title": "Women’s writing and feminist theory",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2085",
+          "title": "Creative writing",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2097",
+          "title": "Writing Hong Kong",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2104",
+          "title": "Language in the USA",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2118",
+          "title": "Law and literature",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2120",
+          "title": "Science fiction",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2122",
+          "title": "Global Victorians",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2126",
+          "title": "Law, meaning, and interpretation",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2127",
+          "title": "Language and the law",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2128",
+          "title": "Special topics in modernism",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2134",
+          "title": "World literature and theory",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2136",
+          "title": "Cross-cultural discourses",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2137",
+          "title": "Early modern drama",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2139",
+          "title": "American literature",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2142",
+          "title": "Milton",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2144",
+          "title": "Forms of contemporary literature",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2145",
+          "title": "Contemporary drama",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2147",
+          "title": "Joyce’s voices",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2149",
+          "title": "The American dream in literature",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2150",
+          "title": "The city and literature",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2152",
+          "title": "History of the novel",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2156",
+          "title": "18th-century literature",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2159",
+          "title": "21st-century poetry",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2160",
+          "title": "Sovereignty in law, theory and culture",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2161",
+          "title": "Language rights and linguistic justice",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2162",
+          "title": "Children’s and young adult literature",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2163",
+          "title": "Comics, graphic novel and theory",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2164",
+          "title": "The beginnings of English law and literature",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2165",
+          "title": "Legal fictions: United States citizenship and the right to write in America",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2167",
+          "title": "World drama",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2168",
+          "title": "The law of signs: Interpretative controversies in legal semiotics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2169",
+          "title": "Writing and violence",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2173",
+          "title": "Medieval English literature",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2174",
+          "title": "Shakespeare and the law",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2175",
+          "title": "Bad identities",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2176",
+          "title": "Writing Asian diasporas",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2177",
+          "title": "Reading and rereading Jane Austen",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2186",
+          "title": "Language and religion",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2188",
+          "title": "Language and food",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2189",
+          "title": "18th-century drama",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2190",
+          "title": "Special topics in 19th-century literature",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2191",
+          "title": "Special topics in contemporary literature",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2192",
+          "title": "Postmodern literature",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2193",
+          "title": "Special topics in aesthetics and literature",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2195",
+          "title": "Staging Asia",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "ENGL2196",
+          "title": "Literature and the mind",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2012",
+          "title": "Experimental phonetics and phonology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2013",
+          "title": "Language typology: The study of linguistic diversity",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2018",
+          "title": "Lexical-functional grammar",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2023",
+          "title": "Discourse analysis",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2030",
+          "title": "Morphology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2032",
+          "title": "Syntactic theory",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2036",
+          "title": "Child language",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2037",
+          "title": "Bilingualism",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2040",
+          "title": "Languages in contact",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2047",
+          "title": "Optimality theory",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2048",
+          "title": "Language and cognition",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2053",
+          "title": "Language and the brain",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2055",
+          "title": "Reading development and reading disorders",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2058",
+          "title": "Topics in Cantonese linguistics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2059",
+          "title": "Writing systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2060",
+          "title": "Languages of China",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2061",
+          "title": "Linguistic fieldwork",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2062",
+          "title": "Experimental syntax",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2064",
+          "title": "Language in Africa",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2065",
+          "title": "Endangered languages: Issues and methods",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2066",
+          "title": "Variation analysis",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2067",
+          "title": "Natural language processing",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2068",
+          "title": "Computational approaches to language",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2069",
+          "title": "Origins of language",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2070",
+          "title": "Historical linguistics: Languages, genes and human migrations",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2071",
+          "title": "Introductory statistics for the humanities",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2072",
+          "title": "Advanced statistics for the humanities",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2073",
+          "title": "Advanced topics in syntax",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2074",
+          "title": "Introduction to second language research",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2075",
+          "title": "Issues in language documentation",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "LING2076",
+          "title": "Mind and body: A holistic approach to the sounds of language",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Major — Advanced Elective Pool (30 credits required)"
+        },
+        {
+          "code": "BBED1101",
+          "title": "Becoming a Teaching Professional: Education in a Globalized Society 1",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "core",
+          "group": "Professional Core — Integrated Courses"
+        },
+        {
+          "code": "BBED1102",
+          "title": "Becoming a Teaching Professional: Education in a Globalized Society 2",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "core",
+          "group": "Professional Core — Integrated Courses"
+        },
+        {
+          "code": "BBED2101",
+          "title": "Becoming a Teaching Professional: Understanding Learning and Teaching 1",
+          "credits": 6,
+          "recommendedYear": 2,
+          "courseType": "core",
+          "group": "Professional Core — Integrated Courses"
+        },
+        {
+          "code": "BBED2102",
+          "title": "Becoming a Teaching Professional: Understanding Learning and Teaching 2",
+          "credits": 6,
+          "recommendedYear": 2,
+          "courseType": "core",
+          "group": "Professional Core — Integrated Courses"
+        },
+        {
+          "code": "BBED3221",
+          "title": "Pedagogy I: Learning and Teaching English in Primary School (Oracy)",
+          "credits": 6,
+          "recommendedYear": 3,
+          "courseType": "core",
+          "group": "Professional Core — Pedagogy"
+        },
+        {
+          "code": "BBED4222",
+          "title": "Pedagogy II: Learning and Teaching English in Primary School (Literacy)",
+          "credits": 6,
+          "recommendedYear": 4,
+          "courseType": "core",
+          "group": "Professional Core — Pedagogy"
+        },
+        {
+          "code": "BBED4223",
+          "title": "Pedagogy III: Learning and Teaching English in Secondary School (Oracy)",
+          "credits": 6,
+          "recommendedYear": 4,
+          "courseType": "core",
+          "group": "Professional Core — Pedagogy"
+        },
+        {
+          "code": "BBED5224",
+          "title": "Pedagogy IV: Learning and Teaching English in Secondary School (Literacy)",
+          "credits": 6,
+          "recommendedYear": 5,
+          "courseType": "core",
+          "group": "Professional Core — Pedagogy"
+        },
+        {
+          "code": "BBED4321",
+          "title": "Pedagogical Content Knowledge for Teaching English in Primary School",
+          "credits": 6,
+          "recommendedYear": 4,
+          "courseType": "core",
+          "group": "Professional Core — Pedagogical Content Knowledge"
+        },
+        {
+          "code": "BBED5322",
+          "title": "Pedagogical Content Knowledge for Teaching English in Secondary School",
+          "credits": 6,
+          "recommendedYear": 5,
+          "courseType": "core",
+          "group": "Professional Core — Pedagogical Content Knowledge"
+        },
+        {
+          "code": "BBED3002",
+          "title": "Learning Support 1 - Catering for Diverse Learning Needs",
+          "credits": 6,
+          "recommendedYear": 3,
+          "courseType": "core",
+          "group": "Professional Core — Educational Studies"
+        },
+        {
+          "code": "BBED4001",
+          "title": "Social and Philosophical Foundations of Education",
+          "credits": 6,
+          "recommendedYear": 4,
+          "courseType": "core",
+          "group": "Professional Core — Educational Studies"
+        },
+        {
+          "code": "BBED4003",
+          "title": "Learning Support 2 - Understanding and Guiding Whole-Person Development",
+          "credits": 6,
+          "recommendedYear": 4,
+          "courseType": "core",
+          "group": "Professional Core — Educational Studies"
+        },
+        {
+          "code": "BBED5021",
+          "title": "Professional Ethics in Teaching",
+          "credits": 6,
+          "recommendedYear": 5,
+          "courseType": "major_elective",
+          "group": "Professional Core — Educational Studies Elective (6 credits required)"
+        },
+        {
+          "code": "BBED5025",
+          "title": "Policy, Improvement, and Leadership in Schools",
+          "credits": 6,
+          "recommendedYear": 5,
+          "courseType": "major_elective",
+          "group": "Professional Core — Educational Studies Elective (6 credits required)"
+        },
+        {
+          "code": "BBED5026",
+          "title": "Diversity, Culture, and Justice in Education",
+          "credits": 6,
+          "recommendedYear": 5,
+          "courseType": "major_elective",
+          "group": "Professional Core — Educational Studies Elective (6 credits required)"
+        },
+        {
+          "code": "BBED5027",
+          "title": "Education for Sustainable Development: Schools as Community Centres",
+          "credits": 6,
+          "recommendedYear": 5,
+          "courseType": "major_elective",
+          "group": "Professional Core — Educational Studies Elective (6 credits required)"
+        },
+        {
+          "code": "BBED2521",
+          "title": "External Experience – English",
+          "credits": 6,
+          "recommendedYear": 2,
+          "courseType": "internship",
+          "group": "Professional Core — External Experience",
+          "semester": "Summer Semester"
+        },
+        {
+          "code": "BBED6786",
+          "title": "Enhancing English Language Learning in China: Collaboration with Teachers in Ningbo",
+          "credits": 6,
+          "recommendedYear": 3,
+          "courseType": "internship",
+          "group": "Professional Core — Current Published CPP Option (pool may change; not guaranteed annually)"
+        },
+        {
+          "code": "BBED6787",
+          "title": "Ocean Park Experiential Learning Project",
+          "credits": 6,
+          "recommendedYear": 3,
+          "courseType": "internship",
+          "group": "Professional Core — Current Published CPP Option (pool may change; not guaranteed annually)"
+        },
+        {
+          "code": "BBED6792",
+          "title": "Sustainable Development in Tibet",
+          "credits": 6,
+          "recommendedYear": 3,
+          "courseType": "internship",
+          "group": "Professional Core — Current Published CPP Option (pool may change; not guaranteed annually)"
+        },
+        {
+          "code": "BBED6794",
+          "title": "Fostering 4Cs (Critical Thinking, Creativity, Communication and Collaboration skills) through Engaging STEM/STEAM-related EL Activities",
+          "credits": 6,
+          "recommendedYear": 3,
+          "courseType": "internship",
+          "group": "Professional Core — Current Published CPP Option (pool may change; not guaranteed annually)"
+        },
+        {
+          "code": "BBED6798",
+          "title": "Design Thinking in Action",
+          "credits": 6,
+          "recommendedYear": 3,
+          "courseType": "internship",
+          "group": "Professional Core — Current Published CPP Option (pool may change; not guaranteed annually)"
+        },
+        {
+          "code": "BBED6799",
+          "title": "Understanding our Communities: Experiential Learning of Place",
+          "credits": 6,
+          "recommendedYear": 3,
+          "courseType": "internship",
+          "group": "Professional Core — Current Published CPP Option (pool may change; not guaranteed annually)"
+        },
+        {
+          "code": "BBED6802",
+          "title": "Outdoor Environmental Education Experiential Learning Project",
+          "credits": 6,
+          "recommendedYear": 3,
+          "courseType": "internship",
+          "group": "Professional Core — Current Published CPP Option (pool may change; not guaranteed annually)"
+        },
+        {
+          "code": "BBED6803",
+          "title": "Serving to Learn: Co-constructing the Community through Student Leadership",
+          "credits": 6,
+          "recommendedYear": 3,
+          "courseType": "internship",
+          "group": "Professional Core — Current Published CPP Option (pool may change; not guaranteed annually)"
+        },
+        {
+          "code": "BBED6804",
+          "title": "Greater Bay Area Hong Kong School Experiential Learning – STEAM Projects",
+          "credits": 6,
+          "recommendedYear": 3,
+          "courseType": "internship",
+          "group": "Professional Core — Current Published CPP Option (pool may change; not guaranteed annually)"
+        },
+        {
+          "code": "BBED6805",
+          "title": "‘Ps’ of Mind in Education – A Mindfulness-based Experiential Learning Project",
+          "credits": 6,
+          "recommendedYear": 3,
+          "courseType": "internship",
+          "group": "Professional Core — Current Published CPP Option (pool may change; not guaranteed annually)"
+        },
+        {
+          "code": "BBED6806",
+          "title": "Opening Doors to Education for Sustainable Development (ESD) – An Experiential Learning Project in Sri Lanka",
+          "credits": 6,
+          "recommendedYear": 3,
+          "courseType": "internship",
+          "group": "Professional Core — Current Published CPP Option (pool may change; not guaranteed annually)"
+        },
+        {
+          "code": "BBED6807",
+          "title": "Slasher Experiential Learning – An Alternative Way to Life Planning Education",
+          "credits": 6,
+          "recommendedYear": 3,
+          "courseType": "internship",
+          "group": "Professional Core — Current Published CPP Option (pool may change; not guaranteed annually)"
+        },
+        {
+          "code": "BBED6808",
+          "title": "Museums as Classrooms – Experiential Learning at Hong Kong, Greater Bay Area and Singapore Museums",
+          "credits": 6,
+          "recommendedYear": 3,
+          "courseType": "internship",
+          "group": "Professional Core — Current Published CPP Option (pool may change; not guaranteed annually)"
+        },
+        {
+          "code": "BBED6809",
+          "title": "Happiness x 4Rs Mental Health School Project – Art-based Experiential Learning",
+          "credits": 6,
+          "recommendedYear": 3,
+          "courseType": "internship",
+          "group": "Professional Core — Current Published CPP Option (pool may change; not guaranteed annually)"
+        },
+        {
+          "code": "BBED6811",
+          "title": "Unity in Diversity: Exploring Intercultural Education in Vietnam",
+          "credits": 6,
+          "recommendedYear": 3,
+          "courseType": "internship",
+          "group": "Professional Core — Current Published CPP Option (pool may change; not guaranteed annually)"
+        },
+        {
+          "code": "ARTH2110",
+          "title": "Archaeology and Digital Humanities in the Field",
+          "credits": 6,
+          "recommendedYear": 3,
+          "courseType": "internship",
+          "group": "Professional Core — Current Published CPP Option (pool may change; not guaranteed annually)"
+        },
+        {
+          "code": "BBED4422",
+          "title": "Professional Practicum I – English",
+          "credits": 12,
+          "recommendedYear": 4,
+          "courseType": "internship",
+          "group": "Professional Core — Professional Practicum · Official Capstone Experience",
+          "semester": "Semester 1"
+        },
+        {
+          "code": "BBED5422",
+          "title": "Professional Practicum II – English",
+          "credits": 12,
+          "recommendedYear": 5,
+          "courseType": "internship",
+          "group": "Professional Core — Professional Practicum · Official Capstone Experience",
+          "semester": "Semester 2"
+        },
+        {
+          "code": "CAES1001",
+          "title": "Academic Communication in English",
+          "credits": 0,
+          "recommendedYear": 1,
+          "courseType": "core",
+          "group": "Language Enhancement — Academic Communication (conditional exemption)"
+        },
+        {
+          "code": "CAES9423",
+          "title": "Academic English for Education Students",
+          "credits": 6,
+          "recommendedYear": 2,
+          "courseType": "core",
+          "group": "Language Enhancement — English in the Discipline"
+        },
+        {
+          "code": "CEDU9002",
+          "title": "Practical Chinese for BA&BEd(LangEd) Students",
+          "credits": 6,
+          "recommendedYear": 5,
+          "courseType": "core",
+          "group": "Language Enhancement — Chinese Language"
+        },
+        {
+          "code": "CHIN9501",
+          "title": "Chinese as a Foreign Language I",
+          "credits": 6,
+          "recommendedYear": 5,
+          "courseType": "major_elective",
+          "group": "Language Enhancement — Chinese Language Alternative"
+        },
+        {
+          "code": "CHIN9511",
+          "title": "Cantonese as a Foreign Language I",
+          "credits": 6,
+          "recommendedYear": 5,
+          "courseType": "major_elective",
+          "group": "Language Enhancement — Chinese Language Alternative"
+        },
+        {
+          "code": "CHIN9521",
+          "title": "The Fundamentals of Chinese Characters",
+          "credits": 6,
+          "recommendedYear": 5,
+          "courseType": "major_elective",
+          "group": "Language Enhancement — Chinese Language Alternative"
+        },
+        {
+          "code": "CHIN9522",
+          "title": "Exploration of Major Cultural Themes across Chinese History",
+          "credits": 6,
+          "recommendedYear": 5,
+          "courseType": "major_elective",
+          "group": "Language Enhancement — Chinese Language Alternative"
+        },
+        {
+          "code": "CUND9001",
+          "title": "Basic Spoken and Written Cantonese for Mandarin Speakers",
+          "credits": 6,
+          "recommendedYear": 5,
+          "courseType": "major_elective",
+          "group": "Language Enhancement — Chinese Language Alternative"
+        },
+        {
+          "code": "CUND9002",
+          "title": "Practical Chinese and Hong Kong Society",
+          "credits": 6,
+          "recommendedYear": 5,
+          "courseType": "major_elective",
+          "group": "Language Enhancement — Chinese Language Alternative"
+        },
+        {
+          "code": "CUND9003",
+          "title": "Cantonese for Non-Cantonese Speaking Students",
+          "credits": 6,
+          "recommendedYear": 5,
+          "courseType": "major_elective",
+          "group": "Language Enhancement — Chinese Language Alternative"
+        },
+        {
+          "code": "CUND9004",
+          "title": "Practical Applied Chinese Writing and Effective Presentation Skills for Non-local Mandarin Speaking Students",
+          "credits": 6,
+          "recommendedYear": 5,
+          "courseType": "major_elective",
+          "group": "Language Enhancement — Chinese Language Alternative"
+        }
+      ]
+    }
+  ]
+}

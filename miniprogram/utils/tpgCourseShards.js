@@ -11,13 +11,13 @@ const nodeLoaders = {
 };
 const counts = {
   "HKU": 55,
-  "CUHK": 8,
+  "CUHK": 9,
   "HKUST": 52,
   "POLYU": 54,
   "CITYU": 60,
-  "HKBU": 41,
-  "EDUHK": 24,
-  "LINGNAN": 26
+  "HKBU": 43,
+  "EDUHK": 30,
+  "LINGNAN": 32
 };
 const packageNames = {
   "HKU": [

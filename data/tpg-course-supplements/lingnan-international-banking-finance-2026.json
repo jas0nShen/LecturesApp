@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "LINGNAN",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-18",
+  "programmes": [
+    {
+      "programmeId": "LINGNAN-TPG-DIR-08-000500-6",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.ln.edu.hk/econ/mibf/programmeoverview/programme-structure",
+      "statusNote": "The live official Programme Structure and List of Courses publish the current six-Core plus 12-Elective-credit structure and the complete 27-course pool. The official IBF Course Descriptions PDF confirms every code, title and credit value. IBF504 and IBF615 are mutually exclusive; because IBF504 is compulsory, IBF615 cannot count in the normal award path. Mixed 3-credit and 1.5-credit Electives, prerequisites, exclusions and course availability require manual audit review.",
+      "ruleReviewStatus": "manual_review_required",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 18,
+          "coursesRequired": 6,
+          "ruleText": "Complete all six Core Courses (18 credits). IBF504 International Macroeconomics is compulsory and is mutually exclusive with Elective Course IBF615 International Money and Finance.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/econ/mibf/programmeoverview/programme-structure",
+          "courses": [
+            { "code": "IBF502", "name": "Corporate Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf" },
+            { "code": "IBF503", "name": "Microeconomics for Global Business", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf" },
+            { "code": "IBF504", "name": "International Macroeconomics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf" },
+            { "code": "IBF505", "name": "Investment Theory and Applications", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf" },
+            { "code": "IBF604", "name": "Financial Econometrics I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf" },
+            { "code": "IBF624", "name": "Fintech Trends and Challenges", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective",
+          "creditsRequired": 12,
+          "ruleText": "Complete any 12 credits from the official Elective pool, subject to prerequisites, exclusions and course availability. IBF504 and IBF615 are mutually exclusive; because IBF504 is a compulsory Core Course, IBF615 must not be counted toward the award. The pool contains both 3-credit and 1.5-credit courses, so no fixed coursesRequired value is asserted.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/econ/mibf/programmeoverview/programme-structure/list-of-courses",
+          "courses": [
+            { "code": "IBF601", "name": "Microeconomics of Banking", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf" },
+            { "code": "IBF602", "name": "Derivatives and Risk Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf" },
+            { "code": "IBF603", "name": "Multinational Financial Management", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf" },
+            { "code": "IBF605", "name": "Business Valuation and Financial Statement Analysis", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf" },
+            { "code": "IBF606", "name": "Financial Institutions on the Chinese Mainland and in Hong Kong", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf" },
+            { "code": "IBF611", "name": "Management of Banks and Financial Institutions", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf" },
+            { "code": "IBF612", "name": "Professional Issues in Banking and Finance", "credits": 1.5, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf" },
+            { "code": "IBF614", "name": "Fixed-Income Securities", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf" },
+            { "code": "IBF615", "name": "International Money and Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf" },
+            { "code": "IBF617", "name": "Global Investment", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf" },
+            { "code": "IBF618", "name": "Financial Econometrics II", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf" },
+            { "code": "IBF619", "name": "Accounting for Financial Professionals", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf" },
+            { "code": "IBF620", "name": "Legal Issues in the Regulation and Compliance of Financial and Banking Institutions", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf" },
+            { "code": "IBF621", "name": "Behavioral Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf" },
+            { "code": "IBF622", "name": "Paying for the Real Economy: The Theory and Financing of International Trade", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf" },
+            { "code": "IBF623", "name": "Quantitative Methods for Finance and Economics", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf" },
+            { "code": "IBF625", "name": "Regional Study of a Financial Centre in the East", "credits": 1.5, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf" },
+            { "code": "IBF626", "name": "Regional Study of a Financial Centre in the West", "credits": 1.5, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf" },
+            { "code": "IBF627", "name": "Practical Cases in Banking and Finance", "credits": 1.5, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf" },
+            { "code": "IBF628", "name": "Big Data and Artificial Intelligence in Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf" },
+            { "code": "IBF629", "name": "Selected Seminars in Economics and Finance", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/IBF_TPG.pdf" }
+          ]
+        }
+      ]
+    }
+  ]
+}

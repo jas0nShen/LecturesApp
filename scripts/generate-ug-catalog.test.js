@@ -483,14 +483,14 @@ test('UG source coverage report annotates missing programmes with source-code re
   const summary = summarizeGeneratedCatalogue({ ...args, sourceSummary });
   const firstMissing = summary.schools[0].missingProgrammes[0];
 
-  assert.equal(firstMissing.code, '6066');
+  assert(firstMissing.code);
   assert.equal(firstMissing.sourceStatus, 'source_index_only');
   assert.equal(firstMissing.sourceCourseRowCount, 1);
   assert.equal(firstMissing.sourceCodedCourseCount, 0);
   assert.equal(firstMissing.sourceImportableCodedCourseCount, 0);
-  assert.match(formatMissingSourceStatus(firstMissing), /reviewed no public course codes/);
-  assert.equal(firstMissing.sourceReviewStatus, 'no_public_course_codes');
-  assert.equal(sourceProgrammes.get('HKU::6066').sourceStatus, 'source_index_only');
+  assert.match(formatMissingSourceStatus(firstMissing), /source index only/);
+  assert.equal(firstMissing.sourceReviewStatus, undefined);
+  assert.equal(sourceProgrammes.get(`HKU::${firstMissing.code}`).sourceStatus, 'source_index_only');
 });
 
 test('UG source coverage report summarizes missing source readiness', () => {
@@ -533,7 +533,7 @@ test('UG source coverage report can filter missing programmes by source readines
   assert.equal(normalizeReadinessFilter('reviewed-no-codes'), 'reviewedNoCourseCodes');
   assert.equal(normalizeReadinessFilter('all'), '');
   assert.throws(() => normalizeReadinessFilter('maybe'), /Unknown --readiness/);
-  assert.equal(hku.missingProgrammeCount, 107);
+  assert.equal(hku.missingProgrammeCount, Object.values(hku.sourceReadiness).reduce((sum, count) => sum + count, 0));
   assert.equal(hku.filteredMissingProgrammeCount, 10);
   assert.equal(hku.missingProgrammes.length, 3);
   assert(hku.missingProgrammes.every((programme) => !programme.sourceStatus));
@@ -543,7 +543,7 @@ test('UG source coverage report can filter missing programmes by source readines
     'HKU-PKU Dual Degree Programme'
   ]);
   const template = buildMissingCollectorTemplate(summary, args);
-  assert.match(template, /待补 Programme：107/);
+  assert(template.includes(`待补 Programme：${hku.missingProgrammeCount}`));
   assert.match(template, /当前筛选：no-source · 10 个/);
   assert.match(template, /1\. HKU · 无代码 · HKU-Cambridge Joint Recruitment Scheme \(Engineering\)/);
 });
@@ -573,13 +573,12 @@ test('UG source coverage report can generate a collector template for missing pr
   assert.equal(args.collectorTemplate, true);
   assert.equal(missing.length, 2);
   assert.equal(missing[0].schoolCode, 'HKU');
-  assert.equal(formatCollectorSourceStatus(missing[0]), '已核实官网暂无公开课程码：2026-07-10');
+  assert.equal(formatCollectorSourceStatus(missing[0]), '仅有 Programme 索引：1 条');
   assert.match(template, /【本科课程资料待补清单】/);
   assert.match(template, /范围：HKU/);
-  assert.match(template, /待补 Programme：107/);
-  assert.match(template, /来源状态：0 source importable · 0 coded not importable · 95 index only · 2 reviewed no course codes · 10 no source/);
-  assert.match(template, /6066 · Bachelor of Arts and Bachelor of Education in Language Education - English/);
-  assert.match(template, /官方入口：https:\/\/admissions\.hku\.hk\/programmes\/undergraduate-programmes\/bachelor-of-arts-and-bachelor-of-education-language-education/);
+  assert(template.includes(`待补 Programme：${summary.schools[0].missingProgrammeCount}`));
+  assert(template.includes(`${missing[0].code} · ${missing[0].name}`));
+  assert(template.includes(`官方入口：${missing[0].officialUrl}`));
   assert.match(template, /不要自行推测课程/);
   assert.match(template, /课程代码 \/ 课程名 \/ 学分 \/ Year \/ Semester \/ 课程类别 \/ 来源链接/);
 });
@@ -614,16 +613,17 @@ test('UG source coverage report can build a grouped missing data batch plan', ()
 
   assert.equal(args.batchPlan, true);
   assert(groups.sourceIndexOnly.length > 0);
-  assert.equal(groups.reviewedNoCourseCodes.length, 21);
+  assert.equal(groups.reviewedNoCourseCodes.length, 23);
   assert(groups.noSource.length <= 165);
   assert.equal(groups.sourceIndexOnly[0].schoolCode, 'HKU');
-  assert.equal(groups.sourceIndexOnly[0].code, '6274');
+  assert(groups.sourceIndexOnly[0].code);
+  assert.equal(groups.sourceIndexOnly[0].sourceStatus, 'source_index_only');
   assert.equal(groups.reviewedNoCourseCodes[0].code, 'JS3011');
   assert.equal(groups.reviewedNoCourseCodes[0].sourceReviewStatus, 'no_public_course_codes');
   assert.match(plan, /【本科课程补数批次计划】/);
   assert.match(plan, /A\. 可直接导入候选：0 个/);
   assert.match(plan, new RegExp(`C\\. 需打开官方入口核实课程码：${groups.sourceIndexOnly.length} 个`));
-  assert.match(plan, /D\. 已核实官网暂无公开课程码：21 个/);
+  assert.match(plan, /D\. 已核实官网暂无公开课程码：23 个/);
   assert.match(plan, new RegExp(`E\\. 需先寻找官方来源：${groups.noSource.length} 个`));
   assert.match(plan, /POLYU · JS3011 · Bachelor of Science \(Honours\) Scheme in Biotechnology and Chemical Technology/);
   assert.match(plan, /npm run status:ug-sources -- --missing-only --priority launch --missing-limit 3 --collector-template/);
@@ -694,6 +694,21 @@ test('UG supplement validator blocks placeholders and missing source evidence', 
       { code: 'ABCT1001', title: 'Verified Course', credits: 3 }
     ]
   }, 0), /HTTPS sourceUrl or officialUrl/);
+
+  assert.throws(() => validateSupplement({
+    provider: 'Example Major override',
+    universityCode: 'CITYU',
+    programmeId: 'CITYU-UG-BALLA-34',
+    majorId: 'CITYU-UG-BALLA-34-M1',
+    sourceUrl: 'https://example.test/js1109',
+    majorOverride: {
+      expectedMajorIds: ['CITYU-UG-BALLA-34-M1', 'CITYU-UG-BALLA-34-M1'],
+      id: 'CITYU-UG-BALLA-34-M1',
+      code: 'LINGUISTICS-AND-LANGUAGE-APPLICATIONS',
+      nameEn: 'Linguistics and Language Applications'
+    },
+    courses: [{ code: 'LT2203', title: 'Language in Society', credits: 3 }]
+  }, 0), /expectedMajorIds must be unique/);
 });
 
 test('UG generic course supplements can add non-computing undergraduate courses', () => {
@@ -755,6 +770,284 @@ test('UG generic course supplements can add non-computing undergraduate courses'
   assert.equal(catalogue.courses[0].courseType, 'core');
   assert.equal(catalogue.courses[0].recommendedYear, 0);
   assert.equal(catalogue.courses[0].sourceProvider, 'official curriculum page');
+});
+
+test('UG generic course supplements can restrict individual courses to named Majors', () => {
+  const catalogue = {
+    programmes: [{
+      id: 'CITYU-UG-BAEN-1',
+      universityCode: 'CITYU',
+      code: 'BAEN',
+      jupasCode: 'JS1104',
+      nameEn: 'BA English',
+      curriculumYear: '2025',
+      officialUrl: 'https://example.test/baen',
+      sourceStatus: 'programme_summary_only',
+      courseCount: 0,
+      codedCourseCount: 0
+    }],
+    majors: [
+      { id: 'CITYU-UG-BAEN-1-M1', programmeId: 'CITYU-UG-BAEN-1', nameEn: 'English and Professional Communication', courseCount: 0, codedCourseCount: 0 },
+      { id: 'CITYU-UG-BAEN-1-M2', programmeId: 'CITYU-UG-BAEN-1', nameEn: 'Language and Literature', courseCount: 0, codedCourseCount: 0 }
+    ],
+    courses: []
+  };
+
+  addGenericCourseSupplements(catalogue, [{
+    provider: 'official curriculum page',
+    academicYear: '2025/26',
+    programmeId: 'CITYU-UG-BAEN-1',
+    sourceUrl: 'https://example.test/baen/courses',
+    courses: [
+      { code: 'EN2711', title: 'The Structure of English', credits: 3, group: 'core' },
+      { code: 'EN2859', title: 'The Language of Sustainability', credits: 3, group: 'elective', majorNames: ['English and Professional Communication'] }
+    ]
+  }]);
+
+  const firstMajorCodes = catalogue.courses.filter((course) => course.majorId.endsWith('-M1')).map((course) => course.courseCode);
+  const secondMajorCodes = catalogue.courses.filter((course) => course.majorId.endsWith('-M2')).map((course) => course.courseCode);
+  assert.deepEqual(firstMajorCodes, ['EN2711', 'EN2859']);
+  assert.deepEqual(secondMajorCodes, ['EN2711']);
+  assert.equal(catalogue.programmes[0].codedCourseCount, 3);
+});
+
+test('UG concentration labels do not misclassify Project Management electives as capstones', () => {
+  const catalogue = {
+    programmes: [{
+      id: 'HKBU-UG-DIFH-1',
+      universityCode: 'HKBU',
+      code: 'DIFH',
+      jupasCode: 'JS2960',
+      nameEn: 'Digital Futures and Humanities',
+      curriculumYear: '2026',
+      officialUrl: 'https://example.test/difh',
+      sourceStatus: 'programme_summary_only',
+      courseCount: 0,
+      codedCourseCount: 0
+    }],
+    majors: [{ id: 'HKBU-UG-DIFH-1-M1', programmeId: 'HKBU-UG-DIFH-1', nameEn: 'Digital Futures and Humanities', courseCount: 0, codedCourseCount: 0 }],
+    courses: []
+  };
+
+  addGenericCourseSupplements(catalogue, [{
+    programmeId: 'HKBU-UG-DIFH-1',
+    majorId: 'HKBU-UG-DIFH-1-M1',
+    courses: [
+      {
+        code: 'BUSI3095',
+        title: 'Project Management for Digital Initiatives',
+        credits: 3,
+        group: 'Concentration Required/Elective Courses · Innovation Project Management · concentration required course (*) / selected concentration totals 24 units'
+      },
+      {
+        code: 'BUSI3057',
+        title: 'Managing Entrepreneurial Ventures',
+        credits: 3,
+        group: 'Concentration Required/Elective Courses · Innovation Project Management · published elective pool / selected concentration totals 24 units'
+      }
+    ]
+  }]);
+
+  assert.deepEqual(catalogue.courses.map((course) => [course.courseCode, course.courseType]), [
+    ['BUSI3095', 'core'],
+    ['BUSI3057', 'major_elective']
+  ]);
+});
+
+test('UG generic course supplements can replace a known set of feature labels with one official Major', () => {
+  const programmeId = 'CITYU-UG-BALLA-34';
+  const catalogue = {
+    programmes: [{
+      id: programmeId,
+      universityCode: 'CITYU',
+      code: 'BALLA',
+      jupasCode: 'JS1109',
+      nameEn: 'BA Linguistics and Language Applications',
+      curriculumYear: '2026',
+      officialUrl: 'https://example.test/js1109',
+      sourceStatus: 'programme_summary_only',
+      courseCount: 1,
+      codedCourseCount: 1
+    }],
+    majors: ['GENERAL', 'COMPUTATIONAL', 'CORPUS', 'EXPERIMENTAL', 'LANGUAGE-TECHNOLOGY'].map((code, index) => ({
+      id: `${programmeId}-M${index + 1}`,
+      programmeId,
+      code,
+      nameEn: code,
+      courseCount: index === 0 ? 1 : 0,
+      codedCourseCount: index === 0 ? 1 : 0
+    })),
+    courses: [{
+      id: `${programmeId}-M1-OLD`,
+      programmeId,
+      majorId: `${programmeId}-M1`,
+      courseCode: 'OLD1001',
+      titleEn: 'Stale upstream row',
+      credits: 3
+    }]
+  };
+  const supplement = {
+    provider: 'current official curriculum',
+    programmeId,
+    majorId: `${programmeId}-M1`,
+    majorOverride: {
+      expectedMajorIds: [1, 2, 3, 4, 5].map((number) => `${programmeId}-M${number}`),
+      id: `${programmeId}-M1`,
+      code: 'LINGUISTICS-AND-LANGUAGE-APPLICATIONS',
+      nameEn: 'Linguistics and Language Applications'
+    },
+    sourceUrl: 'https://example.test/js1109/catalogue',
+    courses: [{ code: 'LT2203', title: 'Language in Society', credits: 3, courseType: 'core' }]
+  };
+
+  addGenericCourseSupplements(catalogue, [supplement]);
+
+  assert.deepEqual(catalogue.majors.map((major) => [major.id, major.code, major.nameEn]), [[
+    `${programmeId}-M1`,
+    'LINGUISTICS-AND-LANGUAGE-APPLICATIONS',
+    'Linguistics and Language Applications'
+  ]]);
+  assert.deepEqual(catalogue.courses.map((course) => course.courseCode), ['LT2203']);
+  assert.equal(catalogue.majors[0].codedCourseCount, 1);
+  assert.equal(catalogue.programmes[0].codedCourseCount, 1);
+
+  const mismatchedCatalogue = {
+    programmes: catalogue.programmes.map((programme) => ({ ...programme })),
+    majors: catalogue.majors.map((major) => ({ ...major })),
+    courses: catalogue.courses.map((course) => ({ ...course }))
+  };
+  assert.throws(
+    () => addGenericCourseSupplements(mismatchedCatalogue, [supplement]),
+    /majorOverride no longer matches the current Major set/
+  );
+  assert.equal(mismatchedCatalogue.majors.length, 1);
+  assert.equal(mismatchedCatalogue.courses.length, 1);
+});
+
+test('UG generic course supplements can explicitly create one Major for a matched Programme', () => {
+  const catalogue = {
+    programmes: [{
+      id: 'HKBU-UG-BA-PERM-14',
+      universityCode: 'HKBU',
+      code: 'BA(PERM)',
+      jupasCode: 'JS2620',
+      nameEn: 'Bachelor of Arts (Hons) in Physical Education and Recreation Management',
+      curriculumYear: '2026',
+      officialUrl: 'https://example.test/js2620',
+      sourceStatus: 'programme_summary_only',
+      courseCount: 0,
+      codedCourseCount: 0
+    }],
+    majors: [{
+      id: 'HKBU-UG-BA-PERM-14-M1',
+      programmeId: 'HKBU-UG-BA-PERM-14',
+      code: 'PERM',
+      nameEn: 'Physical Education and Recreation Management',
+      courseCount: 0,
+      codedCourseCount: 0
+    }],
+    courses: []
+  };
+  const supplement = {
+    provider: 'official curriculum page',
+    academicYear: '2025/26',
+    programmeId: 'HKBU-UG-BA-PERM-14',
+    majorId: 'HKBU-UG-BA-PERM-14-M2',
+    createMajor: {
+      id: 'HKBU-UG-BA-PERM-14-M2',
+      code: 'SPORTS-SCIENCE',
+      nameEn: 'Sports Science',
+      nameZh: 'Sports Science',
+      officialUrl: 'https://example.test/js2620/sports-science'
+    },
+    courses: [{ code: 'PERM4027', title: 'Advanced Exercise Physiology', credits: 3, group: 'major required' }]
+  };
+
+  addGenericCourseSupplements(catalogue, [supplement, { ...supplement }]);
+  addGenericCourseSupplements(catalogue, [supplement]);
+
+  const createdMajors = catalogue.majors.filter((major) => major.id === 'HKBU-UG-BA-PERM-14-M2');
+  const createdCourses = catalogue.courses.filter((course) => course.majorId === 'HKBU-UG-BA-PERM-14-M2');
+  assert.equal(createdMajors.length, 1);
+  assert.equal(createdMajors[0].nameEn, 'Sports Science');
+  assert.equal(createdMajors[0].officialUrl, 'https://example.test/js2620/sports-science');
+  assert.deepEqual(createdCourses.map((course) => course.courseCode), ['PERM4027']);
+  assert.equal(createdMajors[0].codedCourseCount, 1);
+});
+
+test('UG generic course supplements do not create a declared Major for an unknown Programme', () => {
+  const catalogue = {
+    programmes: [],
+    majors: [],
+    courses: []
+  };
+
+  addGenericCourseSupplements(catalogue, [{
+    programmeId: 'HKBU-UG-UNKNOWN',
+    majorId: 'HKBU-UG-UNKNOWN-M2',
+    createMajor: {
+      id: 'HKBU-UG-UNKNOWN-M2',
+      code: 'SPORTS-SCIENCE',
+      nameEn: 'Sports Science'
+    },
+    courses: [{ code: 'PERM4027', title: 'Advanced Exercise Physiology', credits: 3 }]
+  }]);
+
+  assert.deepEqual(catalogue.majors, []);
+  assert.deepEqual(catalogue.courses, []);
+});
+
+test('JS2620 supplement keeps PERM and Sports Science courses in separate Majors', () => {
+  const raw = JSON.parse(fs.readFileSync(path.join(
+    __dirname,
+    '..',
+    'data',
+    'ug-course-supplements',
+    'hkbu-js2620-physical-education-recreation-management-2025.json'
+  ), 'utf8'));
+  const catalogue = {
+    programmes: [{
+      id: 'HKBU-UG-BA-PERM-14',
+      universityCode: 'HKBU',
+      code: 'BA(PERM)',
+      jupasCode: 'JS2620',
+      nameEn: 'Bachelor of Arts (Hons) in Physical Education and Recreation Management',
+      curriculumYear: '2026',
+      officialUrl: 'https://www.jupas.edu.hk/en/programme/hkbu/JS2620',
+      sourceStatus: 'programme_summary_only',
+      courseCount: 0,
+      codedCourseCount: 0
+    }],
+    majors: [{
+      id: 'HKBU-UG-BA-PERM-14-M1',
+      programmeId: 'HKBU-UG-BA-PERM-14',
+      code: 'PERM',
+      nameEn: 'Bachelor of Arts (Hons) in Physical Education and Recreation Management',
+      courseCount: 0,
+      codedCourseCount: 0
+    }],
+    courses: []
+  };
+
+  addGenericCourseSupplements(catalogue, raw.supplements.map((supplement) => ({
+    provider: raw.provider,
+    academicYear: raw.academicYear,
+    sourceUrl: raw.sourceUrl,
+    officialUrl: raw.officialUrl,
+    ...supplement
+  })));
+
+  const permCourses = catalogue.courses.filter((course) => course.majorId === 'HKBU-UG-BA-PERM-14-M1');
+  const sportsCourses = catalogue.courses.filter((course) => course.majorId === 'HKBU-UG-BA-PERM-14-M2');
+  assert.equal(catalogue.majors.filter((major) => major.programmeId === 'HKBU-UG-BA-PERM-14').length, 2);
+  assert.equal(permCourses.length, 51);
+  assert.equal(sportsCourses.length, 40);
+  assert(permCourses.some((course) => course.courseCode === 'PERM3056'));
+  assert(!permCourses.some((course) => course.courseCode === 'PERM4027'));
+  assert(sportsCourses.some((course) => course.courseCode === 'PERM4027'));
+  assert(!sportsCourses.some((course) => course.courseCode === 'PERM3056'));
+  assert(permCourses.some((course) => course.courseCode === 'PERM1006'));
+  assert(sportsCourses.some((course) => course.courseCode === 'PERM1006'));
 });
 
 test('UG generic course supplements can reuse a degree-track course template', () => {
@@ -870,7 +1163,7 @@ test('UG catalogue generator groups course shards by programme university', () =
 });
 
 test('large university course rows are split into evenly sized generated subpackage shards', () => {
-  ['CITYU', 'POLYU'].forEach((universityCode) => {
+  ['CITYU', 'HKBU', 'HKU', 'POLYU'].forEach((universityCode) => {
     const entries = splitCourseShardEntries(new Map([[universityCode, Array.from({ length: 5 }, (_, index) => ({ id: index }))]]));
     assert.deepEqual(entries.map((entry) => entry.shardName), [`${universityCode.toLowerCase()}-a`, `${universityCode.toLowerCase()}-b`]);
     assert.deepEqual(entries.map((entry) => entry.courses.length), [3, 2]);

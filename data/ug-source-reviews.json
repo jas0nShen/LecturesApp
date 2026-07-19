@@ -166,5 +166,37 @@
     "status": "no_public_course_codes",
     "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3648",
     "note": "Official PolyU JUPAS and School of Nursing pages confirm the 2026 five-year Nursing curriculum, 117 academic credits plus 35 clinical/field credits and its broad subject areas. A publicly listed coded table belongs to the separate three-year senior-year-admission programme, with different entry requirements and credits, so it cannot be assigned to JS3648. Keep the five-year programme as index/source-only until a current coded curriculum source is available."
+  },
+  {
+    "universityCode": "HKBU",
+    "programmeCode": "JS2950",
+    "reviewedAt": "2026-07-19",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/division-of-transdisciplinary-undergraduate-programmes/bachelor-of-arts-science-and-technology-honours",
+    "note": "The official 2025-26 Handbook publishes 57 units across 14 fixed coded courses, including the 6-unit ITS3005 Internship and two 6-unit Honours Project courses. It separately requires 36 units of Personalised Knowledge and Skills selected, with an Academic Supervisor and approval, from any HKBU courses except those offered by the School of Chinese Medicine. That open, student-specific component has no stable exhaustive code pool; the Programme page also does not publish closed code lists for University Core, General Education or Free Electives. Publishing only the 14 fixed courses would misrepresent this highly individualised curriculum as complete. Keep JS2950 index/source-only until an official versioned source defines a complete Programme-specific pool; the 2026-27 Handbook is currently access-restricted."
+  },
+  {
+    "universityCode": "HKU",
+    "programmeCode": "6705",
+    "reviewedAt": "2026-07-19",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-psychology",
+    "note": "The official 2026-27 Bachelor of Psychology admissions page and Programme leaflet describe the current Programme but publish no coded curriculum, per-course credits or requirement-group table. The current Department of Psychology undergraduate page still links only the 2023-24 Regulations and Syllabus and the 2023-24 recommended pathway. Those older files contain a complete coded structure for that cohort, but no current official evidence states that their course codes, titles, credits and groups remain applicable to 2026-27. Keep 6705 index/source-only until HKU publishes current regulations or explicitly confirms the older structure remains in force."
+  },
+  {
+    "universityCode": "EDUHK",
+    "programmeCode": "JS8005",
+    "reviewedAt": "2026-07-19",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/heam_cht",
+    "note": "The current EdUHK admissions page, FHM Programme page and 2026-27 prospectus confirm that A5B109 is a five-year, 156-credit-point co-terminal double degree, including 71 credit points of Major studies, 30 Education Studies, 22 Field Experience, 18 General Education, 9 Language Enhancement, 6 Final Year Project and a compulsory 2-credit-point internship. They do not publish a current course-by-course table of codes, titles, credits or assignments to Core, Elective, Education Major, Field Experience and Final Year Project groups. Individual FHM course outlines and predecessor single-degree curricula do not establish membership in this double degree. Keep JS8005 index/source-only until EdUHK publishes an authenticated current coded curriculum."
+  },
+  {
+    "universityCode": "CUHK",
+    "programmeCode": "JS4018",
+    "reviewedAt": "2026-07-19",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://www.chi.cuhk.edu.hk/en/study/ba-hons-in-chinese-language-and-literature/study-schemes-and-courses/4year-curriculum/",
+    "note": "The official 2026-27 Major Programme Requirement publishes the 66-unit structure, 11 required CHLL codes and four Specialty elective code groups, but the official 2026-27 Course Offerings page exposes only 19 unique CHLL codes and does not verify current titles and units for the remaining curriculum pool. The Major Requirement also repeats CHLL3402 in the Modern Chinese Literature list, so the complete current code pool cannot be reconciled without inference. Keep JS4018 index-only and do not publish an annual offering subset as the full Major curriculum."
   }
 ]

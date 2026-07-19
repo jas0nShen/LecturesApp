@@ -38,7 +38,7 @@
       "programmeId": "CUHK-TPG-010",
       "status": "blocked",
       "sourceUrl": "https://higherdegree.fed.cuhk.edu.hk/en/programme/ma-degree-in-early-childhood-education/",
-      "statusNote": "The official 2026-27 MA in Early Childhood Education page confirms 24 units and publishes the Core, Elective and Research Methodology code pools. The current Faculty Course Information verifies titles and units for most listed courses, including the five MECM Core Courses and all eight 1.5-unit research-method courses, but it has no current entry for elective codes PEDU6072, PEDU6503 or PEDU6701. Older official handbooks and timetables are not sufficient evidence that their former titles and credits remain current. Keep the structure closed until those three codes are restored to the current course catalogue or the Programme publishes a revised elective pool."
+      "statusNote": "The official Programme poster confirms the 2026-27 intake, and the Programme page confirms 24 units with 37 distinct codes across the Core, Elective and Research Methodology pools. Faculty Course Information currently supplies title-and-unit entries for 34 of those codes, including all five MECM Core codes and all eight 1.5-unit research-method codes, but still has no entry for elective codes PEDU6072, PEDU6503 or PEDU6701. The Programme page was updated on 16 October 2025, after the Course Information page was updated on 23 July 2025, so the catalogue omissions neither prove that the three electives were removed nor validate their former titles and units. Keep the structure closed until CUHK publishes current title-and-unit entries for those three codes or revises the official elective pool; do not substitute older handbooks or timetables."
     },
     {
       "programmeId": "CUHK-TPG-011",
@@ -57,12 +57,6 @@
       "status": "blocked",
       "sourceUrl": "https://www.law.cuhk.edu.hk/app/study-with-us/master-of-laws-llm-in-international-economic-law/",
       "statusNote": "The official 2026-27 LLM in International Economic Law page confirms 24 units: 12 units from four named Required Courses and 12 elective units. CUHK LAW separately identifies the required codes LAWS6301, LAWS6302, LAWS6303 and LAWS6311 and codes for many international-law electives, but the Programme also lists additional electives, approved JD/other LLM courses, Independent Research and Independent Research Dissertation without one complete current code-and-unit table. Do not publish the discoverable subset as if it were the full elective structure. Keep the Programme closed until every Programme-listed option and both research choices can be mapped to current official codes and units."
-    },
-    {
-      "programmeId": "CUHK-TPG-018",
-      "status": "blocked",
-      "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/study-schemes/",
-      "statusNote": "The official 2026-27 Global Communication study scheme and both new specialization Streams are explicitly subject to the University's final approval. The published Stream lists also reference new course codes COMM5947 and COMM5992 that are not yet present in the official Communication course list. Keep the Programme index and official sources visible, but do not publish the superseded 2025-26 curriculum as the current structure. Recheck after final approval and course catalogue publication."
     }
   ]
 }

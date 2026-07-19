@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-17T15:32:22.456Z",
+  "generatedAt": "2026-07-19T12:56:16.490Z",
   "universities": [
     {
       "id": "HKU",
@@ -889,9 +889,10 @@ const catalogue = {
       "studyPeriod": "5-year",
       "type": "Double Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-and-bachelor-of-education-language-education",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 210,
+      "codedCourseCount": 210,
+      "courseSourceUrl": "https://www4.hku.hk/pubunit/drcd/files/ugdr2025-26/Education/BA%26BEd(LangEd).pdf"
     },
     {
       "id": "HKU-UG-6078-21",
@@ -948,9 +949,10 @@ const catalogue = {
       "studyPeriod": "5-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-education-early-childhood-education-and-special",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 47,
+      "codedCourseCount": 47,
+      "courseSourceUrl": "https://www4.hku.hk/pubunit/drcd/files/ugdr2025-26/Education/BEd(ECE%26SE).pdf"
     },
     {
       "id": "HKU-UG-6107-24",
@@ -1107,9 +1109,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-global-creative-industries",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 98,
+      "codedCourseCount": 98,
+      "courseSourceUrl": "https://hkums.hku.hk/wp-content/uploads/2026/05/BAGCIN-reg-syl_26-27-1.pdf"
     },
     {
       "id": "HKU-UG-6286-32",
@@ -1126,9 +1129,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-humanities-and-digital-technologies",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 80,
+      "codedCourseCount": 80,
+      "courseSourceUrl": "https://arts.hku.hk/wp-content/uploads/2026/07/BAHDT_Syllabuses_2026-27.pdf"
     },
     {
       "id": "HKU-UG-6298-33",
@@ -1145,9 +1149,10 @@ const catalogue = {
       "studyPeriod": "5-year",
       "type": "Double Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-and-bachelor-of-engineering-artificial",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 67,
+      "codedCourseCount": 67,
+      "courseSourceUrl": "https://aidata.arts.hku.hk/wp-content/uploads/2026/01/BABEngSYL.pdf"
     },
     {
       "id": "HKU-UG-6303-34",
@@ -1183,9 +1188,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-engineering-data-and-systems-engineering",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 60,
+      "codedCourseCount": 60,
+      "courseSourceUrl": "https://www.dase.hku.hk/f/page/1011/4804/Syllabus_BEng(DASE)_2025-26_4Y.pdf"
     },
     {
       "id": "HKU-UG-6339-36",
@@ -1202,9 +1208,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-engineering-mechanical-engineering",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 60,
+      "codedCourseCount": 60,
+      "courseSourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(ME)_2025-26.pdf"
     },
     {
       "id": "HKU-UG-6353-37",
@@ -1221,9 +1228,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-engineering-civil-engineering",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 57,
+      "codedCourseCount": 57,
+      "courseSourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CivE)_2025-26.pdf"
     },
     {
       "id": "HKU-UG-6377-38",
@@ -1259,9 +1267,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-laws",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 39,
+      "codedCourseCount": 39,
+      "courseSourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLB_regulations_syllabus_2025-26.pdf"
     },
     {
       "id": "HKU-UG-6418-40",
@@ -1354,9 +1363,10 @@ const catalogue = {
       "studyPeriod": "6-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-chinese-medicine",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 55,
+      "codedCourseCount": 55,
+      "courseSourceUrl": "https://www4.hku.hk/pubunit/drcd/files/ugdr2024-25/Medicine/BChinMed.pdf"
     },
     {
       "id": "HKU-UG-6494-45",
@@ -1373,9 +1383,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-pharmacy",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 33,
+      "codedCourseCount": 33,
+      "courseSourceUrl": "https://www4.hku.hk/pubunit/drcd/files/ugdr2024-25/Medicine/BPharm.pdf"
     },
     {
       "id": "HKU-UG-6602-46",
@@ -3719,9 +3730,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/eshen/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 28,
+      "codedCourseCount": 28,
+      "courseSourceUrl": "https://spe.cuhk.edu.hk/programmes/bachelor-of-science-in-exercise-science-and-health-education/"
     },
     {
       "id": "CUHK-UG-HMSHN-33",
@@ -3738,9 +3750,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/hmshn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 24,
+      "codedCourseCount": 24,
+      "courseSourceUrl": "https://spe.cuhk.edu.hk/programmes/bachelor-of-science-in-human-movement-science-and-health-studies-js4320/"
     },
     {
       "id": "CUHK-UG-LDTEN-34",
@@ -3795,9 +3808,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/peshn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 52,
+      "codedCourseCount": 52,
+      "courseSourceUrl": "https://spe.cuhk.edu.hk/programmes/bachelor-of-education-in-physical-education-exercise-science-and-health-js4329/"
     },
     {
       "id": "CUHK-UG-ASEIN-37",
@@ -3950,9 +3964,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/elegn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 79,
+      "codedCourseCount": 79,
+      "courseSourceUrl": "https://www.ee.cuhk.edu.hk/images/content/curriculum/undergraduate_programme/course_list/ELEGN_ENG_25.pdf"
     },
     {
       "id": "CUHK-UG-EEENN-45",
@@ -4064,9 +4079,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/maegn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 104,
+      "codedCourseCount": 104,
+      "courseSourceUrl": "https://www4.mae.cuhk.edu.hk/wp-content/uploads/2026/07/MAEGN_study-scheme_20260710.pdf"
     },
     {
       "id": "CUHK-UG-SEEMN-51",
@@ -4273,9 +4289,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/pharn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 57,
+      "codedCourseCount": 57,
+      "courseSourceUrl": "https://www.pharmacy.cuhk.edu.hk/1/education/ug/bpharm/"
     },
     {
       "id": "CUHK-UG-PHPCN-62",
@@ -4908,9 +4925,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BSc in Chemistry",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-science/chemistry",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 57,
+      "codedCourseCount": 57,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/CHEM"
     },
     {
       "id": "HKUST-UG-JS5230-DEPARTMENT-OF-CIVIL-AND-ENVIRONMENTAL-ENG-11",
@@ -5424,9 +5442,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BSc in Mathematics",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-science/mathematics",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 85,
+      "codedCourseCount": 85,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/MATH"
     },
     {
       "id": "HKUST-UG-JS5813-BSC-IN-MATHEMATICS-AND-ECONOMICS-38",
@@ -5538,9 +5557,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BSc in Physics",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-science/physics",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 56,
+      "codedCourseCount": 56,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/PHYS"
     },
     {
       "id": "HKUST-UG-JS5318-44",
@@ -7146,9 +7166,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1102",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 53,
+      "codedCourseCount": 53,
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSS1_IRGA-1.htm"
     },
     {
       "id": "CITYU-UG-BACHIS-30",
@@ -7185,9 +7206,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1104",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 117,
+      "codedCourseCount": 117,
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/ug/202526/Major/BA1_EN-1.htm"
     },
     {
       "id": "CITYU-UG-COM-32",
@@ -7243,9 +7265,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1109",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 40,
+      "codedCourseCount": 40,
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BA1_LLA-1.htm"
     },
     {
       "id": "CITYU-UG-BSOCSCCRSO-35",
@@ -7281,9 +7304,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1112",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 37,
+      "codedCourseCount": 37,
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSS1_PSY-1.htm"
     },
     {
       "id": "CITYU-UG-BSOCSCSW-37",
@@ -7723,9 +7747,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2020",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 338,
+      "codedCourseCount": 338,
+      "courseSourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/academy-of-language-and-culture/bachelor-of-arts-honours-in-translation-1"
     },
     {
       "id": "HKBU-UG-BA-RPE-2",
@@ -7742,9 +7767,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2025",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 57,
+      "codedCourseCount": 57,
+      "courseSourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/academy-of-chinese-history-religion-and-philosophy/bachelor-of-arts-honours-in-religion-philosophy-and-1"
     },
     {
       "id": "HKBU-UG-BA-BMUS-MUSIC-CI-3",
@@ -7761,9 +7787,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2060",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 189,
+      "codedCourseCount": 189,
+      "courseSourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/academy-of-music-1/bachelor-of-music-honours-in-creative-industries"
     },
     {
       "id": "HKBU-UG-BBA-ACCT-4",
@@ -7780,9 +7807,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2110",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 24,
+      "codedCourseCount": 24,
+      "courseSourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours"
     },
     {
       "id": "HKBU-UG-BBA-5",
@@ -7799,9 +7827,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2120",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 247,
+      "codedCourseCount": 247,
+      "courseSourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-business-1/bachelor-of-business-administration-honours"
     },
     {
       "id": "HKBU-UG-BCOMM-6",
@@ -7818,9 +7847,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2310",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 155,
+      "codedCourseCount": 155,
+      "courseSourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-communication-1/department-of-communication-studies/public-relations-and-advertising-major"
     },
     {
       "id": "HKBU-UG-BA-FTV-7",
@@ -7837,9 +7867,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2330",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 76,
+      "codedCourseCount": 76,
+      "courseSourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/academy-of-film-1/bachelor-of-arts-honours-in-film-and-television"
     },
     {
       "id": "HKBU-UG-BFA-AGS-8",
@@ -7856,9 +7887,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2340",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 51,
+      "codedCourseCount": 51,
+      "courseSourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/academy-of-film-1/bachelor-of-fine-arts-hons-in-acting-for-global-screen"
     },
     {
       "id": "HKBU-UG-BCOMM-GDA-9",
@@ -7875,9 +7907,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2370",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 71,
+      "codedCourseCount": 71,
+      "courseSourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-communication-1/department-of-interactive-media/game-design-and-animation-major"
     },
     {
       "id": "HKBU-UG-BCM-BSC-BIOMED-10",
@@ -7894,9 +7927,10 @@ const catalogue = {
       "studyPeriod": "6 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2410",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 71,
+      "codedCourseCount": 71,
+      "courseSourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-chinese-medicine-1/bachelor-of-chinese-medicine-and-bachelor-of-science"
     },
     {
       "id": "HKBU-UG-BPHARM-11",
@@ -7913,9 +7947,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2420",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 46,
+      "codedCourseCount": 46,
+      "courseSourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-chinese-medicine-1/bachelor-of-pharmacy-honours-in-chinese-medicine"
     },
     {
       "id": "HKBU-UG-BSC-12",
@@ -7932,9 +7967,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2510",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 365,
+      "codedCourseCount": 365,
+      "courseSourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-physics-1/bachelor-of-science-honours-in-green-energy-and-smart"
     },
     {
       "id": "HKBU-UG-BA-BSOCSC-13",
@@ -7951,9 +7987,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2610",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 384,
+      "codedCourseCount": 384,
+      "courseSourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/academy-of-geography-sociology-and-international-studies/bachelor-of-social-sciences-honours-in-sociology-1"
     },
     {
       "id": "HKBU-UG-BA-PERM-14",
@@ -7970,9 +8007,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2620",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 91,
+      "codedCourseCount": 91,
+      "courseSourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/academy-of-wellness-and-human-development/bachelor-of-arts-honours-in-physical-education-and-1"
     },
     {
       "id": "HKBU-UG-BSW-15",
@@ -7989,9 +8027,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2660",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 40,
+      "codedCourseCount": 40,
+      "courseSourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/academy-of-wellness-and-human-development/bachelor-of-social-work-honours-1"
     },
     {
       "id": "HKBU-UG-BA-VA-16",
@@ -8008,9 +8047,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2810",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 77,
+      "codedCourseCount": 77,
+      "courseSourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/academy-of-visual-arts-1/bachelor-of-arts-honours-in-visual-arts"
     },
     {
       "id": "HKBU-UG-BSC-BCDA-17",
@@ -8027,9 +8067,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2910",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 58,
+      "codedCourseCount": 58,
+      "courseSourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-computer-science/bachelor-of-science-honours-in-business-computing-and-data"
     },
     {
       "id": "HKBU-UG-BASC-ARTT-18",
@@ -8046,9 +8087,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2920",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 86,
+      "codedCourseCount": 86,
+      "courseSourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-and-science-honours-in-arts-and"
     },
     {
       "id": "HKBU-UG-BA-BUSADMIN-GE-19",
@@ -8065,9 +8107,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2930",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 57,
+      "codedCourseCount": 57,
+      "courseSourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/bachelor-of-arts-honours-in-business-administration"
     },
     {
       "id": "HKBU-UG-BSOCSC-BSC-HSWB-20",
@@ -8084,9 +8127,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2940",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 67,
+      "codedCourseCount": 67,
+      "courseSourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/bachelor-of-social-sciences-honours-bachelor-of-science"
     },
     {
       "id": "HKBU-UG-BASCT-21",
@@ -8122,9 +8166,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2960",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 100,
+      "codedCourseCount": 100,
+      "courseSourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/bachelor-of-arts-and-science-hons-in-digital-futures-and-humanities"
     },
     {
       "id": "EDUHK-UG-JS8001-1",
@@ -9307,8 +9352,8 @@ const catalogue = {
       "code": "BACHELOR-OF-ARTS-AND-BACHELOR-OF-EDUCATION-IN-LA",
       "nameEn": "Bachelor of Arts and Bachelor of Education in Language Education - English",
       "nameZh": "Bachelor of Arts and Bachelor of Education in Language Education - English",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 211,
+      "codedCourseCount": 210,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-and-bachelor-of-education-language-education"
     },
     {
@@ -9337,8 +9382,8 @@ const catalogue = {
       "code": "BACHELOR-OF-EDUCATION-IN-EARLY-CHILDHOOD-EDUCATI",
       "nameEn": "Bachelor of Education in Early Childhood Education and Special Education",
       "nameZh": "Bachelor of Education in Early Childhood Education and Special Education",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 48,
+      "codedCourseCount": 47,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-education-early-childhood-education-and-special"
     },
     {
@@ -9417,9 +9462,9 @@ const catalogue = {
       "code": "BACHELOR-OF-ARTS-IN-GLOBAL-CREATIVE-INDUSTRIES",
       "nameEn": "Bachelor of Arts in Global Creative Industries",
       "nameZh": "Bachelor of Arts in Global Creative Industries",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-global-creative-industries"
+      "courseCount": 99,
+      "codedCourseCount": 98,
+      "officialUrl": "https://hkums.hku.hk/gcin-programme/"
     },
     {
       "id": "HKU-UG-6286-32-M1",
@@ -9427,9 +9472,9 @@ const catalogue = {
       "code": "BACHELOR-OF-ARTS-IN-HUMANITIES-AND-DIGITAL-TECHN",
       "nameEn": "Bachelor of Arts in Humanities and Digital Technologies",
       "nameZh": "Bachelor of Arts in Humanities and Digital Technologies",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-humanities-and-digital-technologies"
+      "courseCount": 81,
+      "codedCourseCount": 80,
+      "officialUrl": "https://www.hdt.arts.hku.hk/curriculum-structure"
     },
     {
       "id": "HKU-UG-6298-33-M1",
@@ -9437,9 +9482,9 @@ const catalogue = {
       "code": "BACHELOR-OF-ARTS-AND-BACHELOR-OF-ENGINEERING-IN-",
       "nameEn": "Bachelor of Arts and Bachelor of Engineering in Artificial Intelligence and Data Science",
       "nameZh": "Bachelor of Arts and Bachelor of Engineering in Artificial Intelligence and Data Science",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-arts-and-bachelor-of-engineering-artificial"
+      "courseCount": 68,
+      "codedCourseCount": 67,
+      "officialUrl": "https://aidata.arts.hku.hk/programme/"
     },
     {
       "id": "HKU-UG-6303-34-M1",
@@ -9457,8 +9502,8 @@ const catalogue = {
       "code": "BACHELOR-OF-ENGINEERING-IN-DATA-AND-SYSTEMS-ENGI",
       "nameEn": "Bachelor of Engineering in Data and Systems Engineering",
       "nameZh": "Bachelor of Engineering in Data and Systems Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 61,
+      "codedCourseCount": 60,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-engineering-data-and-systems-engineering"
     },
     {
@@ -9467,8 +9512,8 @@ const catalogue = {
       "code": "BACHELOR-OF-ENGINEERING-IN-MECHANICAL-ENGINEERIN",
       "nameEn": "Bachelor of Engineering in Mechanical Engineering",
       "nameZh": "Bachelor of Engineering in Mechanical Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 61,
+      "codedCourseCount": 60,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-engineering-mechanical-engineering"
     },
     {
@@ -9477,8 +9522,8 @@ const catalogue = {
       "code": "BACHELOR-OF-ENGINEERING-IN-CIVIL-ENGINEERING",
       "nameEn": "Bachelor of Engineering in Civil Engineering",
       "nameZh": "Bachelor of Engineering in Civil Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 58,
+      "codedCourseCount": 57,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-engineering-civil-engineering"
     },
     {
@@ -9497,9 +9542,9 @@ const catalogue = {
       "code": "BACHELOR-OF-LAWS",
       "nameEn": "Bachelor of Laws",
       "nameZh": "Bachelor of Laws",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-laws"
+      "courseCount": 40,
+      "codedCourseCount": 39,
+      "officialUrl": "https://dm.law.hku.hk/regulations/"
     },
     {
       "id": "HKU-UG-6418-40-M1",
@@ -9547,9 +9592,9 @@ const catalogue = {
       "code": "BACHELOR-OF-CHINESE-MEDICINE",
       "nameEn": "Bachelor of Chinese Medicine",
       "nameZh": "Bachelor of Chinese Medicine",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-chinese-medicine"
+      "courseCount": 56,
+      "codedCourseCount": 55,
+      "officialUrl": "https://scm.hku.hk/Views/Programme/English-FTUndergrad.html"
     },
     {
       "id": "HKU-UG-6494-45-M1",
@@ -9557,9 +9602,9 @@ const catalogue = {
       "code": "BACHELOR-OF-PHARMACY",
       "nameEn": "Bachelor of Pharmacy",
       "nameZh": "Bachelor of Pharmacy",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-pharmacy"
+      "courseCount": 34,
+      "codedCourseCount": 33,
+      "officialUrl": "https://www.pharma.hku.hk/en/Prospective-Student/Bachelor-of-Pharmacy/Curriculum-and-Structure"
     },
     {
       "id": "HKU-UG-6602-46-M1",
@@ -10787,8 +10832,8 @@ const catalogue = {
       "code": "EXERCISE-SCIENCE-AND-HEALTH-EDUCATION",
       "nameEn": "Exercise Science and Health Education",
       "nameZh": "Exercise Science and Health Education",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 29,
+      "codedCourseCount": 28,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/eshen/"
     },
     {
@@ -10797,8 +10842,8 @@ const catalogue = {
       "code": "HUMAN-MOVEMENT-SCIENCE-AND-HEALTH-STUDIES",
       "nameEn": "Human Movement Science and Health Studies",
       "nameZh": "Human Movement Science and Health Studies",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 25,
+      "codedCourseCount": 24,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/hmshn/"
     },
     {
@@ -10827,8 +10872,8 @@ const catalogue = {
       "code": "PHYSICAL-EDUCATION-EXERCISE-SCIENCE-AND-HEALTH",
       "nameEn": "Physical Education, Exercise Science and Health",
       "nameZh": "Physical Education, Exercise Science and Health",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 53,
+      "codedCourseCount": 52,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/peshn/"
     },
     {
@@ -10907,8 +10952,8 @@ const catalogue = {
       "code": "ELECTRONIC-ENGINEERING",
       "nameEn": "Electronic Engineering",
       "nameZh": "Electronic Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 80,
+      "codedCourseCount": 79,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/elegn/"
     },
     {
@@ -10967,8 +11012,8 @@ const catalogue = {
       "code": "MECHANICAL-AND-AUTOMATION-ENGINEERING",
       "nameEn": "Mechanical and Automation Engineering",
       "nameZh": "Mechanical and Automation Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 105,
+      "codedCourseCount": 104,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/maegn/"
     },
     {
@@ -11077,8 +11122,8 @@ const catalogue = {
       "code": "PHARMACY",
       "nameEn": "Pharmacy",
       "nameZh": "Pharmacy",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 58,
+      "codedCourseCount": 57,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/pharn/"
     },
     {
@@ -11407,9 +11452,9 @@ const catalogue = {
       "code": "BSC-IN-CHEMISTRY",
       "nameEn": "BSc in Chemistry",
       "nameZh": "BSc in Chemistry",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-science/chemistry"
+      "courseCount": 58,
+      "codedCourseCount": 57,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26chem.pdf"
     },
     {
       "id": "HKUST-UG-JS5230-DEPARTMENT-OF-CIVIL-AND-ENVIRONMENTAL-ENG-11-M1",
@@ -11777,9 +11822,9 @@ const catalogue = {
       "code": "BSC-IN-MATHEMATICS",
       "nameEn": "BSc in Mathematics",
       "nameZh": "BSc in Mathematics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-science/mathematics"
+      "courseCount": 86,
+      "codedCourseCount": 85,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26math.pdf"
     },
     {
       "id": "HKUST-UG-JS5813-BSC-IN-MATHEMATICS-AND-ECONOMICS-38-M1",
@@ -11847,9 +11892,9 @@ const catalogue = {
       "code": "BSC-IN-PHYSICS",
       "nameEn": "BSc in Physics",
       "nameZh": "BSc in Physics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-science/physics"
+      "courseCount": 57,
+      "codedCourseCount": 56,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26phys.pdf"
     },
     {
       "id": "HKUST-UG-JS5318-44-M1",
@@ -13992,36 +14037,6 @@ const catalogue = {
       "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bsc-data-and-systems-engineering"
     },
     {
-      "id": "CITYU-UG-BSOCSCIRGA-29-M1",
-      "programmeId": "CITYU-UG-BSOCSCIRGA-29",
-      "code": "ASIAN-STUDIES",
-      "nameEn": "Asian Studies",
-      "nameZh": "Asian Studies",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1102"
-    },
-    {
-      "id": "CITYU-UG-BSOCSCIRGA-29-M2",
-      "programmeId": "CITYU-UG-BSOCSCIRGA-29",
-      "code": "INTERNATIONAL-STUDIES",
-      "nameEn": "International Studies",
-      "nameZh": "International Studies",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1102"
-    },
-    {
-      "id": "CITYU-UG-BSOCSCIRGA-29-M3",
-      "programmeId": "CITYU-UG-BSOCSCIRGA-29",
-      "code": "DEVELOPMENT-STUDIES",
-      "nameEn": "Development Studies",
-      "nameZh": "Development Studies",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1102"
-    },
-    {
       "id": "CITYU-UG-BACHIS-30-M1",
       "programmeId": "CITYU-UG-BACHIS-30",
       "code": "CHINESE",
@@ -14047,9 +14062,9 @@ const catalogue = {
       "code": "ENGLISH-AND-PROFESSIONAL-COMMUNICATION",
       "nameEn": "English and Professional Communication",
       "nameZh": "English and Professional Communication",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1104"
+      "courseCount": 60,
+      "codedCourseCount": 59,
+      "officialUrl": "https://www.en.cityu.edu.hk/en/study/undergraduate"
     },
     {
       "id": "CITYU-UG-BAEN-31-M2",
@@ -14057,9 +14072,9 @@ const catalogue = {
       "code": "LANGUAGE-AND-LITERATURE",
       "nameEn": "Language and Literature",
       "nameZh": "Language and Literature",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1104"
+      "courseCount": 59,
+      "codedCourseCount": 58,
+      "officialUrl": "https://www.en.cityu.edu.hk/en/study/undergraduate"
     },
     {
       "id": "CITYU-UG-COM-32-M1",
@@ -14100,56 +14115,6 @@ const catalogue = {
       "courseCount": 1,
       "codedCourseCount": 0,
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1108"
-    },
-    {
-      "id": "CITYU-UG-BALLA-34-M1",
-      "programmeId": "CITYU-UG-BALLA-34",
-      "code": "GENERAL-LINGUISTICS",
-      "nameEn": "General Linguistics",
-      "nameZh": "General Linguistics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1109"
-    },
-    {
-      "id": "CITYU-UG-BALLA-34-M2",
-      "programmeId": "CITYU-UG-BALLA-34",
-      "code": "COMPUTATIONAL-LINGUISTICS",
-      "nameEn": "Computational Linguistics",
-      "nameZh": "Computational Linguistics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1109"
-    },
-    {
-      "id": "CITYU-UG-BALLA-34-M3",
-      "programmeId": "CITYU-UG-BALLA-34",
-      "code": "CORPUS-LINGUISTICS",
-      "nameEn": "Corpus Linguistics",
-      "nameZh": "Corpus Linguistics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1109"
-    },
-    {
-      "id": "CITYU-UG-BALLA-34-M4",
-      "programmeId": "CITYU-UG-BALLA-34",
-      "code": "EXPERIMENTAL-LINGUISTICS",
-      "nameEn": "Experimental Linguistics",
-      "nameZh": "Experimental Linguistics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1109"
-    },
-    {
-      "id": "CITYU-UG-BALLA-34-M5",
-      "programmeId": "CITYU-UG-BALLA-34",
-      "code": "LANGUAGE-TECHNOLOGY-AND-APPLICATIONS",
-      "nameEn": "Language Technology and Applications",
-      "nameZh": "Language Technology and Applications",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1109"
     },
     {
       "id": "CITYU-UG-BSOCSCCRSO-35-M1",
@@ -14200,26 +14165,6 @@ const catalogue = {
       "courseCount": 1,
       "codedCourseCount": 0,
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1111"
-    },
-    {
-      "id": "CITYU-UG-BSOCSCPSY-36-M1",
-      "programmeId": "CITYU-UG-BSOCSCPSY-36",
-      "code": "HEALTH-AND-DEVELOPMENT",
-      "nameEn": "Health and Development",
-      "nameZh": "Health and Development",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1112"
-    },
-    {
-      "id": "CITYU-UG-BSOCSCPSY-36-M2",
-      "programmeId": "CITYU-UG-BSOCSCPSY-36",
-      "code": "MIND-AND-BRAIN",
-      "nameEn": "Mind and Brain",
-      "nameZh": "Mind and Brain",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1112"
     },
     {
       "id": "CITYU-UG-BSOCSCSW-37-M1",
@@ -15067,9 +15012,9 @@ const catalogue = {
       "code": "CHINESE-LANGUAGE-AND-LITERATURE",
       "nameEn": "Chinese Language and Literature",
       "nameZh": "Chinese Language and Literature",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2020"
+      "courseCount": 75,
+      "codedCourseCount": 74,
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/academy-of-chinese-history-religion-and-philosophy/bachelor-of-arts-honours-in-chinese-language-and-1"
     },
     {
       "id": "HKBU-UG-BA-1-M2",
@@ -15077,9 +15022,9 @@ const catalogue = {
       "code": "CREATIVE-AND-PROFESSIONAL-WRITING",
       "nameEn": "Creative and Professional Writing",
       "nameZh": "Creative and Professional Writing",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2020"
+      "courseCount": 63,
+      "codedCourseCount": 62,
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/academy-of-language-and-culture/bachelor-of-arts-honours-in-creative-and-professional-1"
     },
     {
       "id": "HKBU-UG-BA-1-M3",
@@ -15087,9 +15032,9 @@ const catalogue = {
       "code": "ENGLISH-LANGUAGE-AND-LITERATURE",
       "nameEn": "English Language and Literature",
       "nameZh": "English Language and Literature",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2020"
+      "courseCount": 87,
+      "codedCourseCount": 86,
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/academy-of-language-and-culture/bachelor-of-arts-honours-in-english-language-and-1"
     },
     {
       "id": "HKBU-UG-BA-1-M4",
@@ -15097,9 +15042,9 @@ const catalogue = {
       "code": "HUMANITIES",
       "nameEn": "Humanities",
       "nameZh": "Humanities",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2020"
+      "courseCount": 67,
+      "codedCourseCount": 66,
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/academy-of-language-and-culture/bachelor-of-arts-honours-in-humanities-1"
     },
     {
       "id": "HKBU-UG-BA-1-M5",
@@ -15107,9 +15052,9 @@ const catalogue = {
       "code": "TRANSLATION",
       "nameEn": "Translation",
       "nameZh": "Translation",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2020"
+      "courseCount": 51,
+      "codedCourseCount": 50,
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/academy-of-language-and-culture/bachelor-of-arts-honours-in-translation-1"
     },
     {
       "id": "HKBU-UG-BA-RPE-2-M1",
@@ -15117,8 +15062,8 @@ const catalogue = {
       "code": "BACHELOR-OF-ARTS-HONS-IN-RELIGION-PHILOSOPHY-AND",
       "nameEn": "Bachelor of Arts (Hons) in Religion, Philosophy and Ethics",
       "nameZh": "Bachelor of Arts (Hons) in Religion, Philosophy and Ethics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 58,
+      "codedCourseCount": 57,
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2025"
     },
     {
@@ -15127,9 +15072,9 @@ const catalogue = {
       "code": "MUSIC",
       "nameEn": "Music",
       "nameZh": "Music",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2060"
+      "courseCount": 97,
+      "codedCourseCount": 96,
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/academy-of-music-1/bachelor-of-arts-honours-in-music"
     },
     {
       "id": "HKBU-UG-BA-BMUS-MUSIC-CI-3-M2",
@@ -15137,9 +15082,9 @@ const catalogue = {
       "code": "CREATIVE-INDUSTRIES",
       "nameEn": "Creative Industries",
       "nameZh": "Creative Industries",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2060"
+      "courseCount": 94,
+      "codedCourseCount": 93,
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-creative-arts-1/academy-of-music-1/bachelor-of-music-honours-in-creative-industries"
     },
     {
       "id": "HKBU-UG-BBA-ACCT-4-M1",
@@ -15147,8 +15092,8 @@ const catalogue = {
       "code": "BACHELOR-OF-BUSINESS-ADMINISTRATION-HONS-ACCOUNT",
       "nameEn": "Bachelor of Business Administration (Hons) - Accounting Concentration",
       "nameZh": "Bachelor of Business Administration (Hons) - Accounting Concentration",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 25,
+      "codedCourseCount": 24,
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2110"
     },
     {
@@ -15157,8 +15102,8 @@ const catalogue = {
       "code": "ECONOMICS-AND-DATA-ANALYTICS",
       "nameEn": "Economics and Data Analytics",
       "nameZh": "Economics and Data Analytics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 43,
+      "codedCourseCount": 42,
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2120"
     },
     {
@@ -15167,8 +15112,8 @@ const catalogue = {
       "code": "FINANCE",
       "nameEn": "Finance",
       "nameZh": "Finance",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 41,
+      "codedCourseCount": 40,
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2120"
     },
     {
@@ -15177,8 +15122,8 @@ const catalogue = {
       "code": "HUMAN-RESOURCES-MANAGEMENT",
       "nameEn": "Human Resources Management",
       "nameZh": "Human Resources Management",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 36,
+      "codedCourseCount": 35,
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2120"
     },
     {
@@ -15187,8 +15132,8 @@ const catalogue = {
       "code": "INFORMATION-SYSTEMS-AND-BUSINESS-INTELLIGENCE",
       "nameEn": "Information Systems and Business Intelligence",
       "nameZh": "Information Systems and Business Intelligence",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 44,
+      "codedCourseCount": 43,
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2120"
     },
     {
@@ -15197,8 +15142,8 @@ const catalogue = {
       "code": "MARKETING",
       "nameEn": "Marketing",
       "nameZh": "Marketing",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 44,
+      "codedCourseCount": 43,
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2120"
     },
     {
@@ -15207,8 +15152,8 @@ const catalogue = {
       "code": "STRATEGIC-RETAIL-MANAGEMENT-AND-INNOVATION",
       "nameEn": "Strategic Retail Management and Innovation",
       "nameZh": "Strategic Retail Management and Innovation",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 45,
+      "codedCourseCount": 44,
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2120"
     },
     {
@@ -15237,9 +15182,9 @@ const catalogue = {
       "code": "JOURNALISM-AND-DIGITAL-MEDIA",
       "nameEn": "Journalism and Digital Media",
       "nameZh": "Journalism and Digital Media",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2310"
+      "courseCount": 105,
+      "codedCourseCount": 104,
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-communication-1/department-of-journalism/journalism-and-digital-media-major"
     },
     {
       "id": "HKBU-UG-BCOMM-6-M2",
@@ -15247,9 +15192,9 @@ const catalogue = {
       "code": "PUBLIC-RELATIONS-AND-ADVERTISING",
       "nameEn": "Public Relations and Advertising",
       "nameZh": "Public Relations and Advertising",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2310"
+      "courseCount": 52,
+      "codedCourseCount": 51,
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-communication-1/department-of-communication-studies/public-relations-and-advertising-major"
     },
     {
       "id": "HKBU-UG-BA-FTV-7-M1",
@@ -15257,8 +15202,8 @@ const catalogue = {
       "code": "BACHELOR-OF-ARTS-HONS-IN-FILM-AND-TELEVISION",
       "nameEn": "Bachelor of Arts (Hons) in Film and Television",
       "nameZh": "Bachelor of Arts (Hons) in Film and Television",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 77,
+      "codedCourseCount": 76,
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2330"
     },
     {
@@ -15267,8 +15212,8 @@ const catalogue = {
       "code": "BACHELOR-OF-FINE-ARTS-HONS-IN-ACTING-FOR-GLOBAL-",
       "nameEn": "Bachelor of Fine Arts (Hons) in Acting for Global Screen",
       "nameZh": "Bachelor of Fine Arts (Hons) in Acting for Global Screen",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 52,
+      "codedCourseCount": 51,
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2340"
     },
     {
@@ -15277,9 +15222,9 @@ const catalogue = {
       "code": "BACHELOR-OF-COMMUNICATION-HONS-IN-GAME-DESIGN-AN",
       "nameEn": "Bachelor of Communication (Hons) in Game Design and Animation",
       "nameZh": "Bachelor of Communication (Hons) in Game Design and Animation",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2370"
+      "courseCount": 72,
+      "codedCourseCount": 71,
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-communication-1/department-of-interactive-media/game-design-and-animation-major"
     },
     {
       "id": "HKBU-UG-BCM-BSC-BIOMED-10-M1",
@@ -15287,9 +15232,9 @@ const catalogue = {
       "code": "BACHELOR-OF-CHINESE-MEDICINE-AND-BACHELOR-OF-SCI",
       "nameEn": "Bachelor of Chinese Medicine and Bachelor of Science (Hons) in Biomedical Science",
       "nameZh": "Bachelor of Chinese Medicine and Bachelor of Science (Hons) in Biomedical Science",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2410"
+      "courseCount": 72,
+      "codedCourseCount": 71,
+      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2410/"
     },
     {
       "id": "HKBU-UG-BPHARM-11-M1",
@@ -15297,9 +15242,9 @@ const catalogue = {
       "code": "BACHELOR-OF-PHARMACY-HONS-IN-CHINESE-MEDICINE",
       "nameEn": "Bachelor of Pharmacy (Hons) in Chinese Medicine",
       "nameZh": "Bachelor of Pharmacy (Hons) in Chinese Medicine",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2420"
+      "courseCount": 47,
+      "codedCourseCount": 46,
+      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2420/"
     },
     {
       "id": "HKBU-UG-BSC-12-M1",
@@ -15307,9 +15252,9 @@ const catalogue = {
       "code": "APPLIED-BIOLOGY",
       "nameEn": "Applied Biology",
       "nameZh": "Applied Biology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2510"
+      "courseCount": 50,
+      "codedCourseCount": 49,
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-biology/bachelor-of-science-honours-in-applied-biology"
     },
     {
       "id": "HKBU-UG-BSC-12-M2",
@@ -15317,9 +15262,9 @@ const catalogue = {
       "code": "APPLIED-BIOLOGY-AND-ECOLOGY-AND-CONSERVATION-DOU",
       "nameEn": "Applied Biology and Ecology and Conservation [Double Degree]",
       "nameZh": "Applied Biology and Ecology and Conservation [Double Degree]",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2510"
+      "courseCount": 39,
+      "codedCourseCount": 38,
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-biology/bachelor-of-science-honours-in-applied-biology"
     },
     {
       "id": "HKBU-UG-BSC-12-M3",
@@ -15327,9 +15272,9 @@ const catalogue = {
       "code": "BIORESOURCE-AND-AGRICULTURAL-SCIENCE",
       "nameEn": "Bioresource and Agricultural Science",
       "nameZh": "Bioresource and Agricultural Science",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2510"
+      "courseCount": 35,
+      "codedCourseCount": 34,
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-biology/bachelor-of-science-honours-in-bioresource-and"
     },
     {
       "id": "HKBU-UG-BSC-12-M4",
@@ -15337,9 +15282,9 @@ const catalogue = {
       "code": "BIOCHEMICAL-AND-TESTING-SCIENCES",
       "nameEn": "Biochemical and Testing Sciences",
       "nameZh": "Biochemical and Testing Sciences",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2510"
+      "courseCount": 43,
+      "codedCourseCount": 42,
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-chemistry-1/bachelor-of-science-honours-in-biochemical-and-testing"
     },
     {
       "id": "HKBU-UG-BSC-12-M5",
@@ -15347,9 +15292,9 @@ const catalogue = {
       "code": "COMPUTER-SCIENCE",
       "nameEn": "Computer Science",
       "nameZh": "Computer Science",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2510"
+      "courseCount": 84,
+      "codedCourseCount": 83,
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-computer-science/bachelor-of-science-honours-in-computer-science"
     },
     {
       "id": "HKBU-UG-BSC-12-M6",
@@ -15357,9 +15302,9 @@ const catalogue = {
       "code": "MATHEMATICS-AND-STATISTICS",
       "nameEn": "Mathematics and Statistics",
       "nameZh": "Mathematics and Statistics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2510"
+      "courseCount": 79,
+      "codedCourseCount": 78,
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-mathematics-1/bachelor-of-science-honours-in-mathematics-and-statistics"
     },
     {
       "id": "HKBU-UG-BSC-12-M7",
@@ -15367,9 +15312,9 @@ const catalogue = {
       "code": "GREEN-ENERGY-AND-SMART-TECHNOLOGY",
       "nameEn": "Green Energy and Smart Technology",
       "nameZh": "Green Energy and Smart Technology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2510"
+      "courseCount": 42,
+      "codedCourseCount": 41,
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-physics-1/bachelor-of-science-honours-in-green-energy-and-smart"
     },
     {
       "id": "HKBU-UG-BA-BSOCSC-13-M1",
@@ -15377,8 +15322,8 @@ const catalogue = {
       "code": "EUROPEAN-STUDIES-FRENCH-GERMAN-STREAM",
       "nameEn": "European Studies [French/German Stream]",
       "nameZh": "European Studies [French/German Stream]",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 32,
+      "codedCourseCount": 31,
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2610"
     },
     {
@@ -15387,8 +15332,8 @@ const catalogue = {
       "code": "GEOGRAPHY",
       "nameEn": "Geography",
       "nameZh": "Geography",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 48,
+      "codedCourseCount": 47,
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2610"
     },
     {
@@ -15397,8 +15342,8 @@ const catalogue = {
       "code": "GLOBAL-AND-CHINA-STUDIES",
       "nameEn": "Global and China Studies",
       "nameZh": "Global and China Studies",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 138,
+      "codedCourseCount": 137,
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2610"
     },
     {
@@ -15407,8 +15352,8 @@ const catalogue = {
       "code": "GOVERNMENT-AND-INTERNATIONAL-STUDIES",
       "nameEn": "Government and International Studies",
       "nameZh": "Government and International Studies",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 44,
+      "codedCourseCount": 43,
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2610"
     },
     {
@@ -15417,8 +15362,8 @@ const catalogue = {
       "code": "HISTORY",
       "nameEn": "History",
       "nameZh": "History",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 79,
+      "codedCourseCount": 78,
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2610"
     },
     {
@@ -15427,8 +15372,8 @@ const catalogue = {
       "code": "SOCIOLOGY",
       "nameEn": "Sociology",
       "nameZh": "Sociology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 49,
+      "codedCourseCount": 48,
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2610"
     },
     {
@@ -15437,9 +15382,9 @@ const catalogue = {
       "code": "BACHELOR-OF-ARTS-HONS-IN-PHYSICAL-EDUCATION-AND-",
       "nameEn": "Bachelor of Arts (Hons) in Physical Education and Recreation Management",
       "nameZh": "Bachelor of Arts (Hons) in Physical Education and Recreation Management",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2620"
+      "courseCount": 52,
+      "codedCourseCount": 51,
+      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2620/"
     },
     {
       "id": "HKBU-UG-BSW-15-M1",
@@ -15447,9 +15392,9 @@ const catalogue = {
       "code": "BACHELOR-OF-SOCIAL-WORK-HONS",
       "nameEn": "Bachelor of Social Work (Hons)",
       "nameZh": "Bachelor of Social Work (Hons)",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2660"
+      "courseCount": 41,
+      "codedCourseCount": 40,
+      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2660/"
     },
     {
       "id": "HKBU-UG-BA-VA-16-M1",
@@ -15457,9 +15402,9 @@ const catalogue = {
       "code": "BACHELOR-OF-ARTS-HONS-IN-VISUAL-ARTS",
       "nameEn": "Bachelor of Arts (Hons) in Visual Arts",
       "nameZh": "Bachelor of Arts (Hons) in Visual Arts",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2810"
+      "courseCount": 78,
+      "codedCourseCount": 77,
+      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2810/"
     },
     {
       "id": "HKBU-UG-BSC-BCDA-17-M1",
@@ -15467,8 +15412,8 @@ const catalogue = {
       "code": "BACHELOR-OF-SCIENCE-HONS-IN-BUSINESS-COMPUTING-A",
       "nameEn": "Bachelor of Science (Hons) in Business Computing and Data Analytics",
       "nameZh": "Bachelor of Science (Hons) in Business Computing and Data Analytics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 59,
+      "codedCourseCount": 58,
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2910"
     },
     {
@@ -15477,9 +15422,9 @@ const catalogue = {
       "code": "BACHELOR-OF-ARTS-AND-SCIENCE-HONS-IN-ARTS-AND-TE",
       "nameEn": "Bachelor of Arts and Science (Hons) in Arts and Technology",
       "nameZh": "Bachelor of Arts and Science (Hons) in Arts and Technology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2920"
+      "courseCount": 87,
+      "codedCourseCount": 86,
+      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2920/"
     },
     {
       "id": "HKBU-UG-BA-BUSADMIN-GE-19-M1",
@@ -15487,8 +15432,8 @@ const catalogue = {
       "code": "GLOBAL-ENTERTAINMENT",
       "nameEn": "Global Entertainment",
       "nameZh": "Global Entertainment",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 58,
+      "codedCourseCount": 57,
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2930"
     },
     {
@@ -15497,8 +15442,8 @@ const catalogue = {
       "code": "BACHELOR-OF-SOCIAL-SCIENCES-HONS-BACHELOR-OF-SCI",
       "nameEn": "Bachelor of Social Sciences (Hons) / Bachelor of Science (Hons) in Innovation in Health and Social Well-Being",
       "nameZh": "Bachelor of Social Sciences (Hons) / Bachelor of Science (Hons) in Innovation in Health and Social Well-Being",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 68,
+      "codedCourseCount": 67,
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2940"
     },
     {
@@ -15517,9 +15462,9 @@ const catalogue = {
       "code": "BACHELOR-OF-ARTS-AND-SCIENCE-HONS-IN-DIGITAL-FUT",
       "nameEn": "Bachelor of Arts and Science (Hons) in Digital Futures and Humanities",
       "nameZh": "Bachelor of Arts and Science (Hons) in Digital Futures and Humanities",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2960"
+      "courseCount": 101,
+      "codedCourseCount": 100,
+      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2960/"
     },
     {
       "id": "EDUHK-UG-JS8001-1-M1",
@@ -16000,17 +15945,58 @@ const catalogue = {
       "courseCount": 39,
       "codedCourseCount": 39,
       "officialUrl": "https://www.ln.edu.hk/admissions/ug/programme/jupas-applicants/film-and-visual-arts"
+    },
+    {
+      "id": "CITYU-UG-BSOCSCIRGA-29-M1",
+      "programmeId": "CITYU-UG-BSOCSCIRGA-29",
+      "code": "INTERNATIONAL-RELATIONS-AND-GLOBAL-AFFAIRS",
+      "nameEn": "International Relations and Global Affairs",
+      "nameZh": "International Relations and Global Affairs",
+      "courseCount": 53,
+      "codedCourseCount": 53,
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bsocsc-international-relations-and-global-affairs"
+    },
+    {
+      "id": "CITYU-UG-BALLA-34-M1",
+      "programmeId": "CITYU-UG-BALLA-34",
+      "code": "LINGUISTICS-AND-LANGUAGE-APPLICATIONS",
+      "nameEn": "Linguistics and Language Applications",
+      "nameZh": "Linguistics and Language Applications",
+      "courseCount": 40,
+      "codedCourseCount": 40,
+      "officialUrl": "https://lt.cityu.edu.hk/en/programmes-courses/undergraduate/ba-linguistics-and-language-applications"
+    },
+    {
+      "id": "CITYU-UG-BSOCSCPSY-36-M1",
+      "programmeId": "CITYU-UG-BSOCSCPSY-36",
+      "code": "PSYCHOLOGY",
+      "nameEn": "Psychology",
+      "nameZh": "Psychology",
+      "courseCount": 37,
+      "codedCourseCount": 37,
+      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1112"
+    },
+    {
+      "id": "HKBU-UG-BA-PERM-14-M2",
+      "programmeId": "HKBU-UG-BA-PERM-14",
+      "code": "SPORTS-SCIENCE-MAJOR",
+      "nameEn": "Sports Science Major",
+      "nameZh": "Sports Science Major",
+      "courseCount": 40,
+      "codedCourseCount": 40,
+      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2620/"
     }
   ],
   "courseShardCounts": {
-    "CITYU": 2362,
-    "CUHK": 294,
-    "HKU": 1842,
-    "HKUST": 492,
+    "CITYU": 2609,
+    "CUHK": 638,
+    "HKBU": 2650,
+    "HKU": 2648,
+    "HKUST": 690,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 8183
+  "codedCourseCount": 12428
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

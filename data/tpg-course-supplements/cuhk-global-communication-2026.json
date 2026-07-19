@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "CUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-18",
+  "programmes": [
+    {
+      "programmeId": "CUHK-TPG-018",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "units",
+      "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/pdf/StudySchemeGLCfor2026Admission.pdf",
+      "ruleReviewStatus": "manual_review_required",
+      "trackSelectionOptional": true,
+      "statusNote": "The official 2026-27 Study Scheme requires four Required Courses and four Elective Courses for 24 units. The current official Course Lists confirm the code, title and 3-unit value of every published course, including COMM5947 and COMM5992. Both optional Specialization Streams publish complete coded course combinations. With Division Head approval, other COMM courses at 5000 level or above may replace listed electives; this open-ended exception requires manual review.",
+      "tracks": [
+        {
+          "id": "CUHK-TPG-018-CHALLENGES-OF-GLOBAL-FUTURES",
+          "name": "Challenges of Global Futures",
+          "type": "Specialization Stream",
+          "creditsRequired": 24,
+          "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/pdf/StudySchemeGLCfor2026Admission.pdf"
+        },
+        {
+          "id": "CUHK-TPG-018-MAKING-AND-MEASURING-IMPACT",
+          "name": "Making and Measuring Impact",
+          "type": "Specialization Stream",
+          "creditsRequired": 24,
+          "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/pdf/StudySchemeGLCfor2026Admission.pdf"
+        }
+      ],
+      "courseGroups": [
+        {
+          "id": "required-courses",
+          "name": "Required Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Required Courses (12 units).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/pdf/StudySchemeGLCfor2026Admission.pdf",
+          "courses": [
+            { "code": "COMM5120", "name": "Emerging Global Media and Cultures", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/course-lists/" },
+            { "code": "COMM5520", "name": "Applied Communication Research", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/course-lists/" },
+            { "code": "COMM5710", "name": "Seminar in Communication Theories", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/course-lists/" },
+            { "code": "COMM5711", "name": "Reframing Narratives of the Global", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/course-lists/" }
+          ]
+        },
+        {
+          "id": "elective-course-pool",
+          "name": "Elective Course Pool",
+          "type": "elective_with_optional_streams",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Without a Specialization Stream, choose any four listed Elective Courses (12 units). Challenges of Global Futures requires any two of COMM5510/COMM5590/COMM5723/COMM5725/COMM5775/COMM5992, any one of COMM5838/COMM5771/COMM5947/COMM6420, and COMM5773. Making and Measuring Impact requires any two of COMM5636/COMM5725/COMM5735/COMM5773/COMM5775/COMM5992, any one of COMM5510/COMM5530/COMM5649/COMM5772/COMM5947, and COMM5771. Approved substitutions from other COMM courses at 5000 level or above require manual review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/pdf/StudySchemeGLCfor2026Admission.pdf",
+          "courses": [
+            { "code": "COMM5110", "name": "Topical Studies in Communication I", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/course-lists/" },
+            { "code": "COMM5111", "name": "Topical Studies in Communication II", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/course-lists/" },
+            { "code": "COMM5510", "name": "Media Management", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-018-CHALLENGES-OF-GLOBAL-FUTURES", "CUHK-TPG-018-MAKING-AND-MEASURING-IMPACT"], "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/course-lists/" },
+            { "code": "COMM5530", "name": "Crisis Management", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-018-MAKING-AND-MEASURING-IMPACT"], "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/course-lists/" },
+            { "code": "COMM5590", "name": "Culture and Communication", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-018-CHALLENGES-OF-GLOBAL-FUTURES"], "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/course-lists/" },
+            { "code": "COMM5636", "name": "Beat Reporting in Technology, Health and Environment", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-018-MAKING-AND-MEASURING-IMPACT"], "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/course-lists/" },
+            { "code": "COMM5649", "name": "Analyzing Public Affairs", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-018-MAKING-AND-MEASURING-IMPACT"], "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/course-lists/" },
+            { "code": "COMM5723", "name": "Public Relations and Globalization", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-018-CHALLENGES-OF-GLOBAL-FUTURES"], "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/course-lists/" },
+            { "code": "COMM5725", "name": "Multistakeholder Decision Making and Media Practice", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-018-CHALLENGES-OF-GLOBAL-FUTURES", "CUHK-TPG-018-MAKING-AND-MEASURING-IMPACT"], "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/course-lists/" },
+            { "code": "COMM5735", "name": "New Media and Society", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-018-MAKING-AND-MEASURING-IMPACT"], "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/course-lists/" },
+            { "code": "COMM5771", "name": "Topical Studies in Global Communication I", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-018-CHALLENGES-OF-GLOBAL-FUTURES", "CUHK-TPG-018-MAKING-AND-MEASURING-IMPACT"], "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/course-lists/" },
+            { "code": "COMM5772", "name": "Topical Studies in Global Communication II", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-018-MAKING-AND-MEASURING-IMPACT"], "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/course-lists/" },
+            { "code": "COMM5773", "name": "Topical Studies in Global Communication III", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-018-CHALLENGES-OF-GLOBAL-FUTURES", "CUHK-TPG-018-MAKING-AND-MEASURING-IMPACT"], "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/course-lists/" },
+            { "code": "COMM5775", "name": "Cultures in Media", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-018-CHALLENGES-OF-GLOBAL-FUTURES", "CUHK-TPG-018-MAKING-AND-MEASURING-IMPACT"], "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/course-lists/" },
+            { "code": "COMM5838", "name": "Mastering Digital Media Content", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-018-CHALLENGES-OF-GLOBAL-FUTURES"], "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/course-lists/" },
+            { "code": "COMM5947", "name": "Data Science and AI in New Media", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-018-CHALLENGES-OF-GLOBAL-FUTURES", "CUHK-TPG-018-MAKING-AND-MEASURING-IMPACT"], "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/course-lists/" },
+            { "code": "COMM5992", "name": "Critical Data Studies", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-018-CHALLENGES-OF-GLOBAL-FUTURES", "CUHK-TPG-018-MAKING-AND-MEASURING-IMPACT"], "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/course-lists/" },
+            { "code": "COMM6120", "name": "Topical Studies in Communication III", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/course-lists/" },
+            { "code": "COMM6121", "name": "Topical Studies in Communication IV", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/course-lists/" },
+            { "code": "COMM6420", "name": "Strategies for Integrated Communication Campaigns", "credits": 3, "appliesToTrackIds": [], "countsTowardTrackIds": ["CUHK-TPG-018-CHALLENGES-OF-GLOBAL-FUTURES"], "sourceUrl": "https://pg.com.cuhk.edu.hk/pgp_global/course-lists/" }
+          ]
+        }
+      ]
+    }
+  ]
+}

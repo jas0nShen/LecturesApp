@@ -1,0 +1,984 @@
+{
+  "provider": "HKBU University Student Handbook 2025-2026",
+  "academicYear": "2025-2026",
+  "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-communication-1/bachelor-of-communication-honours",
+  "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2310/",
+  "note": "The official Programme page requires 9 units of School Core Courses: COMM1015 and COMM2035 plus one of COMM2026, COMM2027 and COMM2036. The Journalism and Digital Media Major page publishes 18 units of Major Required Courses, a section labelled 31 units of Concentration Courses, 6 units of Major Elective Courses and a 3-unit Honours Project. It offers Journalism and Data and Media Communication concentrations and the displayed stream rules are retained exactly. The page labels the Data and Media Communication General Stream elective pool as “the following 14 courses” but displays 20 coded courses; it also contains path-level unit totals that do not consistently reconcile with the stated 31-unit Concentration total. This supplement records every displayed coded course and the conflicting labels without inferring a correction. Courses repeated across required, stream and elective lists are stored once with all official roles. The Public Relations and Advertising Major page publishes 28 units of Major Required Courses, 18 units of Concentration Courses, 6 units of Major Elective Courses and a 3-unit Honours Project; its Advertising and Branding and Public Relations concentration rules are retained. University Language Courses, General Education Courses and Free Electives are excluded. No Year or Term is assigned because the official requirement tables do not specify course timing.",
+  "supplements": [
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BCOMM-6",
+      "jupasCode": "JS2310",
+      "programmeName": "Bachelor of Communication (Hons) (Journalism and Digital Media / Public Relations and Advertising)",
+      "majorId": "HKBU-UG-BCOMM-6-M1",
+      "majorName": "Journalism and Digital Media",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-communication-1/department-of-journalism/journalism-and-digital-media-major",
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-communication-1/department-of-journalism/journalism-and-digital-media-major",
+      "courses": [
+        {
+          "code": "COMM1015",
+          "title": "Studies in Communication, Media, and Journalism",
+          "credits": 3,
+          "group": "School Core Courses · all required / 6 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-communication-1/bachelor-of-communication-honours"
+        },
+        {
+          "code": "COMM2035",
+          "title": "Communication, Ethics and Law",
+          "credits": 3,
+          "group": "School Core Courses · all required / 6 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-communication-1/bachelor-of-communication-honours"
+        },
+        {
+          "code": "COMM2026",
+          "title": "Human Communication",
+          "credits": 3,
+          "group": "School Core Courses · choose 1 of 3 / 3 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-communication-1/bachelor-of-communication-honours"
+        },
+        {
+          "code": "COMM2027",
+          "title": "AI and Digital Communication",
+          "credits": 3,
+          "group": "School Core Courses · choose 1 of 3 / 3 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-communication-1/bachelor-of-communication-honours"
+        },
+        {
+          "code": "COMM2036",
+          "title": "Media Design and Digital Applications",
+          "credits": 3,
+          "group": "School Core Courses · choose 1 of 3 / 3 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-communication-1/bachelor-of-communication-honours"
+        },
+        {
+          "code": "JOUR2077",
+          "title": "Chinese News Reporting and Writing",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 18 units"
+        },
+        {
+          "code": "JOUR2085",
+          "title": "English News Reporting and Writing",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 18 units"
+        },
+        {
+          "code": "JOUR2116",
+          "title": "Finance and Economics for Journalists",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 18 units; Data and Media Communication Concentration Required Courses · all required"
+        },
+        {
+          "code": "JOUR3137",
+          "title": "Journalism and Communication Theory",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 18 units"
+        },
+        {
+          "code": "JOUR3157",
+          "title": "Law and Ethics for Journalists",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 18 units"
+        },
+        {
+          "code": "JOUR4007",
+          "title": "Research Methods in Communication",
+          "credits": 3,
+          "group": "Major Required Courses · all required / 18 units"
+        },
+        {
+          "code": "JOUR2126",
+          "title": "Data Journalism",
+          "credits": 2,
+          "group": "Journalism Concentration Required Courses · all required"
+        },
+        {
+          "code": "JOUR3016",
+          "title": "Political Economy for Journalists",
+          "credits": 3,
+          "group": "Journalism Concentration Required Courses · all required"
+        },
+        {
+          "code": "JOUR4015",
+          "title": "Journalism Internship",
+          "credits": 0,
+          "group": "Journalism Concentration Required Courses · required 0-unit internship",
+          "courseType": "internship",
+          "description": "The official Handbook lists this internship as a required 0-unit course."
+        },
+        {
+          "code": "JOUR3105",
+          "title": "Current Issues in Journalism",
+          "credits": 3,
+          "group": "Journalism Concentration Required Courses · choose 2 of 5; Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR4025",
+          "title": "Critical Studies of Media",
+          "credits": 3,
+          "group": "Journalism Concentration Required Courses · choose 2 of 5; Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR4047",
+          "title": "Comparative Perspectives on Media",
+          "credits": 3,
+          "group": "Journalism Concentration Required Courses · choose 2 of 5; Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR4055",
+          "title": "Media, Technology and Globalisation",
+          "credits": 3,
+          "group": "Journalism Concentration Required Courses · choose 2 of 5; Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR4056",
+          "title": "Media Management",
+          "credits": 3,
+          "group": "Journalism Concentration Required Courses · choose 2 of 5; Data and Media Communication Concentration — General Stream Elective Courses · choose 2; Handbook labels the pool as 14 courses but displays 20; Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR2087",
+          "title": "Multimedia and Multiplatform Journalism",
+          "credits": 3,
+          "group": "Journalism Concentration Required Courses · choose 1 of 2; Data and Media Communication Concentration Required Courses · all required"
+        },
+        {
+          "code": "JOUR2117",
+          "title": "Broadcast Reporting and Production",
+          "credits": 3,
+          "group": "Journalism Concentration Required Courses · choose 1 of 2"
+        },
+        {
+          "code": "JOUR3245",
+          "title": "Journalism Practicum I (Chinese)",
+          "credits": 2,
+          "group": "Journalism Concentration · choose one practicum course group — Chinese sequence (take both)"
+        },
+        {
+          "code": "JOUR3246",
+          "title": "Journalism Practicum II (Chinese)",
+          "credits": 2,
+          "group": "Journalism Concentration · choose one practicum course group — Chinese sequence (take both)"
+        },
+        {
+          "code": "JOUR3255",
+          "title": "Journalism Practicum I (English)",
+          "credits": 2,
+          "group": "Journalism Concentration · choose one practicum course group — English sequence (take both); Data and Media Communication Concentration — General Stream Elective Courses · choose 2; Handbook labels the pool as 14 courses but displays 20"
+        },
+        {
+          "code": "JOUR3256",
+          "title": "Journalism Practicum II (English)",
+          "credits": 2,
+          "group": "Journalism Concentration · choose one practicum course group — English sequence (take both); Data and Media Communication Concentration — General Stream Elective Courses · choose 2; Handbook labels the pool as 14 courses but displays 20"
+        },
+        {
+          "code": "JOUR3047",
+          "title": "News Anchoring",
+          "credits": 3,
+          "group": "Journalism Concentration — Broadcast Journalism Stream Required Courses · all required; Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3185",
+          "title": "Advanced Broadcast Production",
+          "credits": 3,
+          "group": "Journalism Concentration — Broadcast Journalism Stream Required Courses · all required; Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3265",
+          "title": "Journalism Practicum I (Broadcast)",
+          "credits": 2,
+          "group": "Journalism Concentration — Broadcast Journalism Stream Required Courses · all required"
+        },
+        {
+          "code": "JOUR3295",
+          "title": "Journalism Practicum II (Broadcast)",
+          "credits": 2,
+          "group": "Journalism Concentration — Broadcast Journalism Stream Required Courses · all required"
+        },
+        {
+          "code": "JOUR3315",
+          "title": "Journalism Practicum III (Broadcast)",
+          "credits": 2,
+          "group": "Journalism Concentration — Broadcast Journalism Stream Required Courses · all required"
+        },
+        {
+          "code": "JOUR4066",
+          "title": "News Documentary",
+          "credits": 3,
+          "group": "Journalism Concentration — Broadcast Journalism Stream Required Courses · all required; Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3145",
+          "title": "Investigative Reporting (Chinese)",
+          "credits": 3,
+          "group": "Journalism Concentration — Chinese Journalism Stream Required Courses · all required; Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3176",
+          "title": "Advanced News and Feature Writing (Chinese)",
+          "credits": 3,
+          "group": "Journalism Concentration — Chinese Journalism Stream Required Courses · all required; Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3247",
+          "title": "Journalism Practicum III (Chinese)",
+          "credits": 2,
+          "group": "Journalism Concentration — Chinese Journalism Stream Required Courses · all required"
+        },
+        {
+          "code": "JOUR3296",
+          "title": "Journalism Practicum IV (Chinese)",
+          "credits": 2,
+          "group": "Journalism Concentration — Chinese Journalism Stream Required Courses · all required"
+        },
+        {
+          "code": "JOUR4005",
+          "title": "Theory and Practice of Journalism in Greater China",
+          "credits": 3,
+          "group": "Journalism Concentration — Chinese Journalism Stream Required Courses · all required; Data and Media Communication Concentration — General Stream Elective Courses · choose 2; Handbook labels the pool as 14 courses but displays 20; Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3095",
+          "title": "Business and Financial News Reporting in English",
+          "credits": 3,
+          "group": "Journalism Concentration — Financial Journalism Stream Required Courses · choose 1 of 2 reporting courses; Data and Media Communication Concentration — Financial Journalism Stream Required Courses · choose 1 of 2 reporting courses; Data and Media Communication Concentration — General Stream Elective Courses · choose 2; Handbook labels the pool as 14 courses but displays 20; Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3286",
+          "title": "Reporting Business and Financial News in Chinese",
+          "credits": 3,
+          "group": "Journalism Concentration — Financial Journalism Stream Required Courses · choose 1 of 2 reporting courses; Data and Media Communication Concentration — Financial Journalism Stream Required Courses · choose 1 of 2 reporting courses; Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3165",
+          "title": "Unlocking Finance",
+          "credits": 3,
+          "group": "Journalism Concentration — Financial Journalism Stream Required Courses · all required; Data and Media Communication Concentration — Financial Journalism Stream Required Courses · all required; Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3266",
+          "title": "Journalism Practicum I (Finance)",
+          "credits": 2,
+          "group": "Journalism Concentration — Financial Journalism Stream Required Courses · all required; Data and Media Communication Concentration — Financial Journalism Stream Required Courses · all required"
+        },
+        {
+          "code": "JOUR3267",
+          "title": "Journalism Practicum II (Finance)",
+          "credits": 2,
+          "group": "Journalism Concentration — Financial Journalism Stream Required Courses · all required; Data and Media Communication Concentration — Financial Journalism Stream Required Courses · all required"
+        },
+        {
+          "code": "JOUR3316",
+          "title": "Journalism Practicum III (Finance)",
+          "credits": 2,
+          "group": "Journalism Concentration — Financial Journalism Stream Required Courses · all required; Data and Media Communication Concentration — Financial Journalism Stream Required Courses · all required"
+        },
+        {
+          "code": "JOUR4065",
+          "title": "Strategic Investments and Contemporary Economics",
+          "credits": 3,
+          "group": "Journalism Concentration — Financial Journalism Stream Required Courses · all required; Data and Media Communication Concentration — Financial Journalism Stream Required Courses · all required; Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3146",
+          "title": "Investigative Reporting (English)",
+          "credits": 3,
+          "group": "Journalism Concentration — International Journalism Stream Required Courses · all required; Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3177",
+          "title": "Advanced News and Feature Writing (English)",
+          "credits": 3,
+          "group": "Journalism Concentration — International Journalism Stream Required Courses · all required; Data and Media Communication Concentration — General Stream Required Courses · all required; Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3257",
+          "title": "Journalism Practicum III (English)",
+          "credits": 2,
+          "group": "Journalism Concentration — International Journalism Stream Required Courses · all required"
+        },
+        {
+          "code": "JOUR3297",
+          "title": "Journalism Practicum IV (English)",
+          "credits": 2,
+          "group": "Journalism Concentration — International Journalism Stream Required Courses · all required"
+        },
+        {
+          "code": "JOUR4057",
+          "title": "International News in a Globalized World",
+          "credits": 3,
+          "group": "Journalism Concentration — International Journalism Stream Required Courses · all required; Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "COMP1007",
+          "title": "Introduction to Python and Its Applications",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration Required Courses · choose 1 of 2 coding courses"
+        },
+        {
+          "code": "COMP1025",
+          "title": "Coding for Humanists",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration Required Courses · choose 1 of 2 coding courses"
+        },
+        {
+          "code": "COMP2865",
+          "title": "Fundamental of Data Analysis and Management",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration Required Courses · all required"
+        },
+        {
+          "code": "COMP3115",
+          "title": "Exploratory Data Analysis and Visualization",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration Required Courses · all required"
+        },
+        {
+          "code": "JOUR3305",
+          "title": "Journalism Practicum I (Data)",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration Required Courses · all required"
+        },
+        {
+          "code": "JOUR4046",
+          "title": "Integrated Data-driven Storytelling",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration Required Courses · all required"
+        },
+        {
+          "code": "JOUR4067",
+          "title": "Data and Media Communication Internship",
+          "credits": 0,
+          "group": "Data and Media Communication Concentration — Financial Journalism Stream · required 0-unit internship",
+          "courseType": "internship",
+          "description": "The official Handbook lists this internship as a required 0-unit course."
+        },
+        {
+          "code": "JOUR3306",
+          "title": "Journalism Practicum II (Data)",
+          "credits": 2,
+          "group": "Data and Media Communication Concentration — General Stream Required Courses · all required"
+        },
+        {
+          "code": "JOUR3307",
+          "title": "Journalism Practicum III (Data)",
+          "credits": 2,
+          "group": "Data and Media Communication Concentration — General Stream Required Courses · all required"
+        },
+        {
+          "code": "COMP3057",
+          "title": "Introduction to Artificial Intelligence and Machine Learning",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration — General Stream Elective Courses · choose 2; Handbook labels the pool as 14 courses but displays 20"
+        },
+        {
+          "code": "COMP3925",
+          "title": "Data Analysis Studio",
+          "credits": 1,
+          "group": "Data and Media Communication Concentration — General Stream Elective Courses · choose 2; Handbook labels the pool as 14 courses but displays 20"
+        },
+        {
+          "code": "COMP4015",
+          "title": "Artificial Intelligence and Machine Learning",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration — General Stream Elective Courses · choose 2; Handbook labels the pool as 14 courses but displays 20"
+        },
+        {
+          "code": "COMP4027",
+          "title": "Data Mining and Knowledge Discovery",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration — General Stream Elective Courses · choose 2; Handbook labels the pool as 14 courses but displays 20"
+        },
+        {
+          "code": "COMP4045",
+          "title": "Human Computer Interaction",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration — General Stream Elective Courses · choose 2; Handbook labels the pool as 14 courses but displays 20"
+        },
+        {
+          "code": "COMP4075",
+          "title": "Social Computing and Web Intelligence",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration — General Stream Elective Courses · choose 2; Handbook labels the pool as 14 courses but displays 20"
+        },
+        {
+          "code": "COMP4125",
+          "title": "Visual Analytics",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration — General Stream Elective Courses · choose 2; Handbook labels the pool as 14 courses but displays 20"
+        },
+        {
+          "code": "COMP4136",
+          "title": "Natural Language Processing and Large Language Models",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration — General Stream Elective Courses · choose 2; Handbook labels the pool as 14 courses but displays 20"
+        },
+        {
+          "code": "COMP4909",
+          "title": "Data Media Project II",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration — General Stream Elective Courses · choose 2; Handbook labels the pool as 14 courses but displays 20"
+        },
+        {
+          "code": "COMP7930",
+          "title": "Big Data Analytics",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration — General Stream Elective Courses · choose 2; Handbook labels the pool as 14 courses but displays 20"
+        },
+        {
+          "code": "JOUR3155",
+          "title": "Investigative Reporting for Data and Media Communication",
+          "credits": 2,
+          "group": "Data and Media Communication Concentration — General Stream Elective Courses · choose 2; Handbook labels the pool as 14 courses but displays 20"
+        },
+        {
+          "code": "JOUR3285",
+          "title": "Financial Data and Market Sentiment Analysis",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration — General Stream Elective Courses · choose 2; Handbook labels the pool as 14 courses but displays 20; Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3287",
+          "title": "Social Media Content Management",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration — General Stream Elective Courses · choose 2; Handbook labels the pool as 14 courses but displays 20; Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR4017",
+          "title": "China Reporting and Writing",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration — General Stream Elective Courses · choose 2; Handbook labels the pool as 14 courses but displays 20; Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "PRAO4087",
+          "title": "Algorithm and Communication",
+          "credits": 3,
+          "group": "Data and Media Communication Concentration — General Stream Elective Courses · choose 2; Handbook labels the pool as 14 courses but displays 20"
+        },
+        {
+          "code": "JOUR2097",
+          "title": "Advanced News and Feature Writing (Finance)",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR2105",
+          "title": "Visual Journalism",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR2106",
+          "title": "Data Visualization",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR2125",
+          "title": "Photojournalism and Documentary Photography",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3057",
+          "title": "Finance and Investment",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3075",
+          "title": "Economics for Financial Journalists",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3077",
+          "title": "Magazine Design and Editing",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3085",
+          "title": "Media Transformation and Institutional Change in Historical Perspective",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3096",
+          "title": "Current Affairs and News Analysis",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3097",
+          "title": "Current Hong Kong Issues for Communicators",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3106",
+          "title": "Images of Media in Popular Culture",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3117",
+          "title": "News Translation",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3125",
+          "title": "Strategic Television Communication",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3126",
+          "title": "Visual Literacy: Critical Appreciation of Photos",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3135",
+          "title": "Analytical and Opinion Writing",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3147",
+          "title": "Investigative Reporting (Finance)",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3175",
+          "title": "Contemporary Issues in Journalism",
+          "credits": 1,
+          "group": "Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3186",
+          "title": "Generative AI- Assisted Reporting",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3187",
+          "title": "Mental Health and Journalism",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3205",
+          "title": "Convergence Editing (Broadcast)",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3215",
+          "title": "Convergence Editing (Chinese)",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3225",
+          "title": "Convergence Editing (English)",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3235",
+          "title": "Convergence Editing (Finance)",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR3275",
+          "title": "Immersive Journalism",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR4045",
+          "title": "Entrepreneurial Journalism",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR4075",
+          "title": "Morally Controversial Issues in the Media",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR4076",
+          "title": "Media Innovations: AI and Cloud Solutions for Social Engagement",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units; International Journalism Stream electives must be taught in English"
+        },
+        {
+          "code": "JOUR4845",
+          "title": "Honours Project in Broadcast Journalism",
+          "credits": 3,
+          "group": "Honours Project · Journalism Concentration — take the project matching the selected stream / 3 units",
+          "courseType": "capstone"
+        },
+        {
+          "code": "JOUR4865",
+          "title": "Honours Project in Chinese Journalism",
+          "credits": 3,
+          "group": "Honours Project · Journalism Concentration — take the project matching the selected stream / 3 units",
+          "courseType": "capstone"
+        },
+        {
+          "code": "JOUR4875",
+          "title": "Honours Project in Financial Journalism",
+          "credits": 3,
+          "group": "Honours Project · Journalism Concentration — take the project matching the selected stream / 3 units",
+          "courseType": "capstone"
+        },
+        {
+          "code": "JOUR4885",
+          "title": "Honours Project in International Journalism",
+          "credits": 3,
+          "group": "Honours Project · Journalism Concentration — take the project matching the selected stream / 3 units",
+          "courseType": "capstone"
+        },
+        {
+          "code": "JOUR4855",
+          "title": "Honours Project in Data and Media Communication",
+          "credits": 3,
+          "group": "Honours Project · Data and Media Communication Concentration — required / 3 units",
+          "courseType": "capstone"
+        }
+      ]
+    },
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BCOMM-6",
+      "jupasCode": "JS2310",
+      "programmeName": "Bachelor of Communication (Hons) (Journalism and Digital Media / Public Relations and Advertising)",
+      "majorId": "HKBU-UG-BCOMM-6-M2",
+      "majorName": "Public Relations and Advertising",
+      "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-communication-1/department-of-communication-studies/public-relations-and-advertising-major",
+      "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-communication-1/department-of-communication-studies/public-relations-and-advertising-major",
+      "courses": [
+        {
+          "code": "COMM1015",
+          "title": "Studies in Communication, Media, and Journalism",
+          "credits": 3,
+          "group": "School Core Courses · all required / 6 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-communication-1/bachelor-of-communication-honours"
+        },
+        {
+          "code": "COMM2035",
+          "title": "Communication, Ethics and Law",
+          "credits": 3,
+          "group": "School Core Courses · all required / 6 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-communication-1/bachelor-of-communication-honours"
+        },
+        {
+          "code": "COMM2026",
+          "title": "Human Communication",
+          "credits": 3,
+          "group": "School Core Courses · choose 1 of 3 / 3 units; Major Elective Courses · complete 6 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-communication-1/bachelor-of-communication-honours"
+        },
+        {
+          "code": "COMM2027",
+          "title": "AI and Digital Communication",
+          "credits": 3,
+          "group": "School Core Courses · choose 1 of 3 / 3 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-communication-1/bachelor-of-communication-honours"
+        },
+        {
+          "code": "COMM2036",
+          "title": "Media Design and Digital Applications",
+          "credits": 3,
+          "group": "School Core Courses · choose 1 of 3 / 3 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/school-of-communication-1/bachelor-of-communication-honours"
+        },
+        {
+          "code": "COMM2006",
+          "title": "Communication Theory (Communication Studies)",
+          "credits": 3,
+          "group": "Major Required Courses · all required before the two choice groups / 22 units"
+        },
+        {
+          "code": "COMM2007",
+          "title": "Communication Research Method (Communication Studies)",
+          "credits": 3,
+          "group": "Major Required Courses · all required before the two choice groups / 22 units"
+        },
+        {
+          "code": "PRAO2007",
+          "title": "Principles and Practices of Advertising",
+          "credits": 3,
+          "group": "Major Required Courses · all required before the two choice groups / 22 units"
+        },
+        {
+          "code": "PRAO2015",
+          "title": "Principles and Practices of Public Relations",
+          "credits": 3,
+          "group": "Major Required Courses · all required before the two choice groups / 22 units"
+        },
+        {
+          "code": "PRAO3015",
+          "title": "Consumer Perspectives in Public Relations and Advertising",
+          "credits": 3,
+          "group": "Major Required Courses · all required before the two choice groups / 22 units"
+        },
+        {
+          "code": "PRAO3056",
+          "title": "Campaign Planning and Management",
+          "credits": 3,
+          "group": "Major Required Courses · all required before the two choice groups / 22 units"
+        },
+        {
+          "code": "PRAO3086",
+          "title": "Data Analytics and Visualization for Strategic Communication",
+          "credits": 3,
+          "group": "Major Required Courses · all required before the two choice groups / 22 units"
+        },
+        {
+          "code": "PRAO3106",
+          "title": "Strategic Communication Internship and Practicum",
+          "credits": 1,
+          "group": "Major Required Courses · required 1-unit internship and practicum",
+          "courseType": "internship"
+        },
+        {
+          "code": "PRAO4006",
+          "title": "Advanced Qualitative Communication Research",
+          "credits": 3,
+          "group": "Major Required Courses · choose 1 of 2 research courses / 3 units; Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO4065",
+          "title": "Advanced Quantitative Communication Research",
+          "credits": 3,
+          "group": "Major Required Courses · choose 1 of 2 research courses / 3 units; Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO3085",
+          "title": "Social Media @ Work",
+          "credits": 3,
+          "group": "Major Required Courses · choose 1 of 4 communication courses / 3 units; Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO3087",
+          "title": "Organizational Communication Issues and Processes",
+          "credits": 3,
+          "group": "Major Required Courses · choose 1 of 4 communication courses / 3 units; Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO4057",
+          "title": "Organizational Decision Making and Problem Solving",
+          "credits": 3,
+          "group": "Major Required Courses · choose 1 of 4 communication courses / 3 units; Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO4066",
+          "title": "Leadership Communication",
+          "credits": 3,
+          "group": "Major Required Courses · choose 1 of 4 communication courses / 3 units; Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO3005",
+          "title": "Content Creation in Advertising",
+          "credits": 3,
+          "group": "Advertising and Branding Concentration Required Courses · all 6 courses / 18 units; Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO3007",
+          "title": "Advertising Design and Visualization",
+          "credits": 3,
+          "group": "Advertising and Branding Concentration Required Courses · all 6 courses / 18 units; Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO3046",
+          "title": "Audience Measurement and Engagement",
+          "credits": 3,
+          "group": "Advertising and Branding Concentration Required Courses · all 6 courses / 18 units; Public Relations Concentration Elective Courses · choose 3 of 5 / 9 units; Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO4025",
+          "title": "Brand Strategy and Communication",
+          "credits": 3,
+          "group": "Advertising and Branding Concentration Required Courses · all 6 courses / 18 units; Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO4037",
+          "title": "Narrative and Brand Storytelling",
+          "credits": 3,
+          "group": "Advertising and Branding Concentration Required Courses · all 6 courses / 18 units; Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO4056",
+          "title": "Creative Brand Expression",
+          "credits": 3,
+          "group": "Advertising and Branding Concentration Required Courses · all 6 courses / 18 units; Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO3035",
+          "title": "Public Relations Writing",
+          "credits": 3,
+          "group": "Public Relations Concentration Required Courses · all 3 courses / 9 units; Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO3047",
+          "title": "Corporate Social Responsibility and Stakeholder Engagement",
+          "credits": 3,
+          "group": "Public Relations Concentration Required Courses · all 3 courses / 9 units; Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO4016",
+          "title": "Strategic Issues and Crisis Management",
+          "credits": 3,
+          "group": "Public Relations Concentration Required Courses · all 3 courses / 9 units; Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO2046",
+          "title": "Internal Communication and Employee Engagement",
+          "credits": 3,
+          "group": "Public Relations Concentration Elective Courses · choose 3 of 5 / 9 units; Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO3017",
+          "title": "Digital Public Relations",
+          "credits": 3,
+          "group": "Public Relations Concentration Elective Courses · choose 3 of 5 / 9 units; Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO3067",
+          "title": "Health Communication and Information Campaigns",
+          "credits": 3,
+          "group": "Public Relations Concentration Elective Courses · choose 3 of 5 / 9 units; Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO4045",
+          "title": "Media Relations Writing and Training",
+          "credits": 3,
+          "group": "Public Relations Concentration Elective Courses · choose 3 of 5 / 9 units; Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO2036",
+          "title": "Group Communication",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO2037",
+          "title": "Interpersonal Communication",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO2045",
+          "title": "Interviewing",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO2047",
+          "title": "Media Design for Corporate Communication",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO2055",
+          "title": "Programming for Digital Communication",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO3027",
+          "title": "Digital Audio and Video Production",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO3065",
+          "title": "Fundraising Events, Sponsorships, and Donor Management",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO3066",
+          "title": "Writing for Professional Communication",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO3075",
+          "title": "Intercultural Communication",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO3076",
+          "title": "Communication Training for Organizations",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO4027",
+          "title": "Financial Public Relations",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO4036",
+          "title": "Social Communication and Advertising",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO4047",
+          "title": "Service Experiences and Luxury Branding",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO4067",
+          "title": "Communication Entrepreneurship",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO4075",
+          "title": "Comprehensive Management Trainee Assessment",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO4076",
+          "title": "Conflict and Negotiation",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO4077",
+          "title": "Special Topics in Communication Studies",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO4087",
+          "title": "Algorithm and Communication",
+          "credits": 3,
+          "group": "Major Elective Courses · complete 6 units"
+        },
+        {
+          "code": "PRAO4895",
+          "title": "Strategic Communication Honours Project",
+          "credits": 3,
+          "group": "Honours Project · required / 3 units",
+          "courseType": "capstone"
+        }
+      ]
+    }
+  ]
+}

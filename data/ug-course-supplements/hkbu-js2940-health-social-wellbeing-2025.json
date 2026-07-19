@@ -1,0 +1,113 @@
+{
+  "provider": "HKBU University Student Handbook 2025-2026",
+  "academicYear": "2025-2026",
+  "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-arts-and-social-sciences/bachelor-of-social-sciences-honours-bachelor-of-science",
+  "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2940",
+  "note": "The official 2025-2026 Handbook defines two concentration paths within the Programme. Both paths require 73 units of Major Courses and 12 units of Honours Project. Health Technology and Informatics comprises 9 units of Transdisciplinary Common Core, 15 units of Programme-specific Experiential Learning, 43 units of Programme-specific Knowledge/Skills Core and 6 units selected from its closed Major Elective pool. Health and Social Wellness comprises 9, 12, 46 and 6 units respectively. The official Either/Or pairs are retained in the group labels. Courses that have different roles across the two concentrations are stored once with both official roles in the group label so Programme-and-course identity remains unique. HSWB3005 is a 3-unit Summer Internship requiring 220-230 hours with a relevant local or overseas organisation or event; COMP3066 is the Health Technology and Informatics practicum; HSWB4898 and HSWB4899 are the two 6-unit Honours Project courses. University Core, General Education and Free Electives are excluded because the Programme page does not publish them as closed coded pools. No Year or Term is assigned because the official requirements table does not specify course timing. The 2026-2027 Handbook endpoint returns HTTP 401 and is not represented as verified.",
+  "supplements": [
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BSOCSC-BSC-HSWB-20",
+      "jupasCode": "JS2940",
+      "majorId": "HKBU-UG-BSOCSC-BSC-HSWB-20-M1",
+      "courses": [
+        { "code": "ITS1005", "title": "Global Challenges I", "credits": 3, "group": "Major Courses — Transdisciplinary Common Core" },
+        { "code": "ITS2028", "title": "Global Challenges II", "credits": 3, "group": "Major Courses — Transdisciplinary Common Core" },
+        { "code": "ITS2029", "title": "Global Challenges II", "credits": 3, "group": "Major Courses — Transdisciplinary Common Core" },
+
+        { "code": "COMP2035", "title": "AI and Data Analytics for Health and Social Innovation I", "credits": 3, "group": "Major Courses — Programme-specific Experiential Learning · common" },
+        { "code": "COMP2036", "title": "AI and Data Analytics for Health and Social Innovation II", "credits": 3, "group": "Major Courses — Programme-specific Experiential Learning · common" },
+        {
+          "code": "HSWB3005",
+          "title": "Summer Internship",
+          "credits": 3,
+          "group": "Major Courses — Programme-specific Experiential Learning · common",
+          "courseType": "internship",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HSWB3005",
+          "description": "The official course page requires 220-230 hours with a relevant local or overseas organisation or event before graduation; placements may be in public, private, voluntary or commercial organisations or agencies."
+        },
+        { "code": "COMP3066", "title": "Health and Assistive Technology: Practicum", "credits": 3, "group": "Major Courses — Programme-specific Experiential Learning · Health Technology and Informatics Concentration", "courseType": "internship" },
+        { "code": "COMP4126", "title": "Health Informatics: Technology and Practices", "credits": 3, "group": "Major Courses — Programme-specific Experiential Learning · Health Technology and Informatics Concentration" },
+        { "code": "SOCI3057", "title": "Leisure and Well-Being: Coping with Stress", "credits": 3, "group": "Major Courses — Programme-specific Experiential Learning · Health and Social Wellness Concentration" },
+
+        { "code": "HSWB1005", "title": "Introduction to Innovation in Health and Social Wellbeing", "credits": 3, "group": "Major Courses — Programme-specific Knowledge/Skills Core · common" },
+        { "code": "BIOL2047", "title": "You and Your Health", "credits": 3, "group": "Major Courses — Programme-specific Knowledge/Skills Core · common · Either BIOL2047 or PERM1006" },
+        { "code": "PERM1006", "title": "Human Anatomy and Physiology", "credits": 3, "group": "Major Courses — Programme-specific Knowledge/Skills Core · common · Either BIOL2047 or PERM1006" },
+        { "code": "BUSI1005", "title": "World of Business and Entrepreneurship", "credits": 3, "group": "Major Courses — Programme-specific Knowledge/Skills Core · common" },
+        { "code": "COMP1007", "title": "Introduction to Python and Its Applications", "credits": 3, "group": "Major Courses — Programme-specific Knowledge/Skills Core · common · Either COMP1007 or COMP1025" },
+        { "code": "COMP1025", "title": "Coding for Humanists", "credits": 3, "group": "Major Courses — Programme-specific Knowledge/Skills Core · common · Either COMP1007 or COMP1025" },
+        { "code": "COMP2865", "title": "Fundamentals of Data Analysis and Management", "credits": 3, "group": "Major Courses — Programme-specific Knowledge/Skills Core · common" },
+        { "code": "COMP3075", "title": "User Experience Design in Health and Well-being", "credits": 3, "group": "Major Courses — Programme-specific Knowledge/Skills Core · common" },
+        { "code": "GSIS2005", "title": "Statistics for Social Sciences", "credits": 3, "group": "Major Courses — Programme-specific Knowledge/Skills Core · common" },
+        { "code": "HUMN2057", "title": "Health and the Humanities", "credits": 3, "group": "Major Courses — Programme-specific Knowledge/Skills Core · common" },
+        { "code": "POLS2026", "title": "Ethics, Social Well-being, and Public Health", "credits": 3, "group": "Major Courses — Programme-specific Knowledge/Skills Core · common" },
+        { "code": "SOWK2005", "title": "Human Behaviour and Diversity", "credits": 3, "group": "Major Courses — Programme-specific Knowledge/Skills Core · common" },
+
+        { "code": "BIOL3005", "title": "Animal Physiology", "credits": 3, "group": "Major Courses — Programme-specific Knowledge/Skills Core · Health Technology and Informatics Concentration" },
+        { "code": "COMP3115", "title": "Exploratory Data Analysis and Visualization", "credits": 3, "group": "Major Courses — Programme-specific Knowledge/Skills Core · Health Technology and Informatics Concentration" },
+        { "code": "COMP4145", "title": "Business Intelligence, Decision Support and Project Development", "credits": 4, "group": "Major Courses — Programme-specific Knowledge/Skills Core · Health Technology and Informatics Concentration" },
+        { "code": "ITEC3015", "title": "Web Development for Data Storytellers", "credits": 3, "group": "Major Courses — Programme-specific Knowledge/Skills Core · Health Technology and Informatics Concentration" },
+
+        { "code": "BUSI3055", "title": "Fundamentals of Social Entrepreneurship and Social Impact", "credits": 3, "group": "Major Courses — Programme-specific Knowledge/Skills Core · Health and Social Wellness Concentration; Major Elective Courses — Health Technology and Informatics Concentration · choose 6 units" },
+        { "code": "PERM2005", "title": "Exercise Physiology", "credits": 3, "group": "Major Courses — Programme-specific Knowledge/Skills Core · Health and Social Wellness Concentration · Either PERM2005 or PERM3026; Major Elective Courses — Health Technology and Informatics Concentration · choose 6 units" },
+        { "code": "PERM3026", "title": "Nutrition and Health", "credits": 3, "group": "Major Courses — Programme-specific Knowledge/Skills Core · Health and Social Wellness Concentration · Either PERM2005 or PERM3026; Major Elective Courses — Health Technology and Informatics Concentration · choose 6 units" },
+        { "code": "PERM4116", "title": "Health Promotion", "credits": 3, "group": "Major Courses — Programme-specific Knowledge/Skills Core · Health and Social Wellness Concentration · Either PERM4116 or PRAO3067; Major Elective Courses — Health Technology and Informatics Concentration · choose 6 units" },
+        { "code": "PRAO3067", "title": "Health Communication and Information Campaigns", "credits": 3, "group": "Major Courses — Programme-specific Knowledge/Skills Core · Health and Social Wellness Concentration · Either PERM4116 or PRAO3067; Major Elective Courses — Health Technology and Informatics Concentration · choose 6 units" },
+        { "code": "SOCI2007", "title": "Quantitative Methods of Social Research", "credits": 3, "group": "Major Courses — Programme-specific Knowledge/Skills Core · Health and Social Wellness Concentration" },
+        { "code": "SOSC1006", "title": "Invitation to Social Sciences", "credits": 1, "group": "Major Courses — Programme-specific Knowledge/Skills Core · Health and Social Wellness Concentration" },
+        { "code": "SOWK3215", "title": "Programme Development and Evaluation", "credits": 3, "group": "Major Courses — Programme-specific Knowledge/Skills Core · Health and Social Wellness Concentration" },
+
+        { "code": "BIOL3016", "title": "Environmental Health and Toxicology", "credits": 3, "group": "Major Elective Courses — Health Technology and Informatics Concentration · choose 6 units" },
+        { "code": "BUSI2035", "title": "Entrepreneurship and Innovative Thinking", "credits": 3, "group": "Major Elective Courses — both concentrations · choose 6 units within the selected concentration pool" },
+        { "code": "BUSI2047", "title": "Social Innovation and Entrepreneurship", "credits": 3, "group": "Major Elective Courses — both concentrations · choose 6 units within the selected concentration pool" },
+        { "code": "COMP3057", "title": "Introduction to AI and Machine Learning", "credits": 3, "group": "Major Elective Courses — Health Technology and Informatics Concentration · choose 6 units" },
+        { "code": "COMP4026", "title": "Computer Vision and Pattern Recognition", "credits": 3, "group": "Major Elective Courses — Health Technology and Informatics Concentration · choose 6 units" },
+        { "code": "COMP4027", "title": "Data Mining and Knowledge Discovery", "credits": 3, "group": "Major Elective Courses — Health Technology and Informatics Concentration · choose 6 units" },
+        { "code": "COMP4055", "title": "Medical Image Processing and Applications", "credits": 3, "group": "Major Elective Courses — Health Technology and Informatics Concentration · choose 6 units" },
+        { "code": "COMP4097", "title": "Mobile Computing and Internet of Things", "credits": 3, "group": "Major Elective Courses — Health Technology and Informatics Concentration · choose 6 units" },
+        { "code": "COMP4116", "title": "Information Systems Management", "credits": 3, "group": "Major Elective Courses — Health Technology and Informatics Concentration · choose 6 units" },
+        { "code": "COMP4136", "title": "Natural Language Processing and Large Language Models", "credits": 3, "group": "Major Elective Courses — Health Technology and Informatics Concentration · choose 6 units" },
+        { "code": "COMP4137", "title": "Blockchain Technology and Applications", "credits": 3, "group": "Major Elective Courses — Health Technology and Informatics Concentration · choose 6 units" },
+        { "code": "GEOG3015", "title": "Geography of Health and the Environment", "credits": 3, "group": "Major Elective Courses — both concentrations · choose 6 units within the selected concentration pool" },
+        { "code": "PERM3017", "title": "Health Fitness Evaluation and Assessment", "credits": 3, "group": "Major Elective Courses — both concentrations · choose 6 units within the selected concentration pool" },
+        { "code": "PERM4017", "title": "Principles and Practice of Exercise and Weight Management", "credits": 3, "group": "Major Elective Courses — both concentrations · choose 6 units within the selected concentration pool" },
+        { "code": "PERM4115", "title": "Marketing in Sport and Leisure Services", "credits": 3, "group": "Major Elective Courses — both concentrations · choose 6 units within the selected concentration pool" },
+        { "code": "SOWK3207", "title": "Creativity, Wellbeing and Art Therapy", "credits": 3, "group": "Major Elective Courses — both concentrations · choose 6 units within the selected concentration pool" },
+
+        { "code": "GCST2016", "title": "Sustainable China: Environment and Development Issues", "credits": 3, "group": "Major Elective Courses — Health and Social Wellness Concentration · choose 6 units" },
+        { "code": "GEOG3017", "title": "Global Environmental Issues and Sustainability", "credits": 3, "group": "Major Elective Courses — Health and Social Wellness Concentration · choose 6 units" },
+        { "code": "GEOG3037", "title": "Environmental Health and Policy", "credits": 3, "group": "Major Elective Courses — Health and Social Wellness Concentration · choose 6 units" },
+        { "code": "GEOG3045", "title": "Developing Interdisciplinary Field Studies for Environmental or Social Issues", "credits": 3, "group": "Major Elective Courses — Health and Social Wellness Concentration · choose 6 units" },
+        { "code": "GEOG4017", "title": "Geographical Information Systems", "credits": 3, "group": "Major Elective Courses — Health and Social Wellness Concentration · choose 6 units" },
+        { "code": "GEOG4027", "title": "Geography of Environmental Hazards", "credits": 3, "group": "Major Elective Courses — Health and Social Wellness Concentration · choose 6 units" },
+        { "code": "HIST3325", "title": "History of Chinese Food Culture in Global Perspective", "credits": 3, "group": "Major Elective Courses — Health and Social Wellness Concentration · choose 6 units" },
+        { "code": "HIST4207", "title": "Topic Studies in Asian History: History of Asian Medicine", "credits": 3, "group": "Major Elective Courses — Health and Social Wellness Concentration · choose 6 units" },
+        { "code": "HIST4326", "title": "Science and Society: A Historical Perspective", "credits": 3, "group": "Major Elective Courses — Health and Social Wellness Concentration · choose 6 units" },
+        { "code": "PERM3065", "title": "Sports Performance and Health: The Marvel of Science, Technology, and Psychology", "credits": 3, "group": "Major Elective Courses — Health and Social Wellness Concentration · choose 6 units" },
+        { "code": "PSYC3005", "title": "Abnormal Psychology", "credits": 3, "group": "Major Elective Courses — Health and Social Wellness Concentration · choose 6 units" },
+        { "code": "PSYC3006", "title": "Positive Psychology", "credits": 3, "group": "Major Elective Courses — Health and Social Wellness Concentration · choose 6 units" },
+        { "code": "PSYC3007", "title": "Cognitive Psychology", "credits": 3, "group": "Major Elective Courses — Health and Social Wellness Concentration · choose 6 units" },
+        { "code": "SOCI2005", "title": "Qualitative Methods of Social Research", "credits": 3, "group": "Major Elective Courses — Health and Social Wellness Concentration · choose 6 units" },
+        { "code": "SOCI3007", "title": "Global Social Transformations", "credits": 3, "group": "Major Elective Courses — Health and Social Wellness Concentration · choose 6 units" },
+        { "code": "SOCI3017", "title": "Health and Society", "credits": 3, "group": "Major Elective Courses — Health and Social Wellness Concentration · choose 6 units" },
+
+        {
+          "code": "HSWB4898",
+          "title": "Honours Project I",
+          "credits": 6,
+          "group": "Honours Project — Programme-specific Experiential Learning",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HSWB4898",
+          "description": "First half of the official two-semester evidence-based research and development Honours Project."
+        },
+        {
+          "code": "HSWB4899",
+          "title": "Honours Project II",
+          "credits": 6,
+          "group": "Honours Project — Programme-specific Experiential Learning",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/HSWB4899",
+          "description": "Second half of the official two-semester evidence-based research and development Honours Project."
+        }
+      ]
+    }
+  ]
+}

@@ -5,18 +5,6 @@
   "verifiedAt": "2026-07-14",
   "programmes": [
     {
-      "programmeId": "LINGNAN-TPG-DIR-16-000107-L6",
-      "status": "blocked",
-      "sourceUrl": "https://www.ln.edu.hk/fin/mfin/programme/master-of-science-in-finance",
-      "statusNote": "The live official curriculum identifies seven Core Courses (all required) and an Elective pool from which any three are selected, but it does not publish per-course credits. Credits are not inferred from the 10-course completion pattern, so the course structure remains unavailable pending an official current credit table."
-    },
-    {
-      "programmeId": "LINGNAN-TPG-DIR-MASTER-OF-SCIENCE-IN-SMART-AGEING-AND-GERONTOLOG",
-      "status": "blocked",
-      "sourceUrl": "https://www.ln.edu.hk/sgs/sag/programme-overview",
-      "statusNote": "The live official Programme page states a nine-course, 30-credit structure and lists the LU and HKMU course titles, but it does not publish any course codes. The titles are not converted into invented codes, so the course structure remains unavailable pending an official coded curriculum."
-    },
-    {
       "programmeId": "LINGNAN-TPG-DIR-21-001281-L6",
       "status": "blocked",
       "sourceUrl": "https://www.ln.edu.hk/sgs/ham/programme/programme-structure",
@@ -26,7 +14,7 @@
       "programmeId": "LINGNAN-TPG-DIR-19-000493-L6",
       "status": "blocked",
       "sourceUrl": "https://www.ln.edu.hk/sgs/mhsm/programme/programme-structure",
-      "statusNote": "The live official Programme Structure publishes six 3-credit Core Courses, any two 3-credit Electives and a 6-credit Capstone Project, with every current course title, but it does not publish any course codes. The titles are not converted into invented codes, so the course structure remains unavailable pending an official coded curriculum."
+      "statusNote": "The live official Programme Structure publishes the complete 30-credit rule: six 3-credit Core Courses, any two of seven 3-credit Electives and the 6-credit MHM509 Project. The current official MHM and SEI course-description PDFs verify all six Core codes (MHM501, MHM502, MHM503, MHM504, MHM507 and MHM508), MHM509, and three Electives (MHM505, MHM506 and SEI504). No current official coded description is published for the other four named Electives: Health Policy: Theoretical and Practical Approaches; Health and Well-being of Children and Youth; NGO and Social Services: Policy and Management Perspective; and Resources Management and Fundraising in Public and Private Sectors. The missing codes are not inferred, so the Programme remains blocked pending a complete official coded Elective table."
     },
     {
       "programmeId": "LINGNAN-TPG-DIR-25-000294-L6",
@@ -41,18 +29,6 @@
       "statusNote": "The live official AY2026/27 curriculum and course-description pages publish a 30-credit structure of seven 3-credit Required Courses and any three 3-credit Electives, with every current course title, but neither page publishes course codes. The titles are not matched to codes from other Programmes, so the course structure remains unavailable pending an official coded curriculum."
     },
     {
-      "programmeId": "LINGNAN-TPG-DIR-25-000019-L6",
-      "status": "blocked",
-      "sourceUrl": "https://www.ln.edu.hk/orm/mscriaa/programme-curriculum",
-      "statusNote": "The live official Programme Curriculum publishes five 3-credit Core Courses and an Elective pool from which any five 3-credit courses are selected, but it does not publish any course codes. The titles are not converted into invented codes, so the course structure remains unavailable pending an official coded curriculum."
-    },
-    {
-      "programmeId": "LINGNAN-TPG-DIR-25-000888-L6",
-      "status": "blocked",
-      "sourceUrl": "https://www.ln.edu.hk/wjysis/mls/programme-overview/programme-structure",
-      "statusNote": "The live official Programme Structure publishes the 30-credit mother Programme, three Concentrations and coded course tables, but the Applied Arts in TechMedia table requires three Concentration Courses while listing only LSC541 and LSC542. The missing third course is not invented, so the Programme remains unavailable pending a complete official Track table."
-    },
-    {
       "programmeId": "LINGNAN-TPG-DIR-22-001024-L6",
       "status": "blocked",
       "sourceUrl": "https://www.ln.edu.hk/sgs/achm/programme-overview/programme-structure",
@@ -62,7 +38,7 @@
       "programmeId": "LINGNAN-TPG-DIR-15-003341-L6",
       "status": "blocked",
       "sourceUrl": "https://www.ln.edu.hk/orm/ebscm/about-us/programme-overview",
-      "statusNote": "The live official Programme Overview publishes all course codes and the six-Required plus four-Elective 30-credit rule, but it does not publish per-course credits. Credits are not inferred from the 10-course total, so the course structure remains unavailable pending an official current credit table."
+      "statusNote": "The live Department Programme Overview and the live Faculty TPO Curriculum conflict on the current course codes and elective pool: the Department page uses the ORM501-ORM515 recodes and additionally lists ORM545 and ACT615, while the TPO page retains CDS501-CDS515 and omits those electives. The official ORM course-description PDF confirms the ORM recodes from 2025-26 but names ORM545 Cloud-based Solutions for Digital Business Transformation, whereas the Department page names it Cloud Computing for Decision Making. Codes, title and elective membership are not reconciled across the conflicting official sources, so the Programme remains blocked pending a single authoritative current curriculum."
     },
     {
       "programmeId": "LINGNAN-TPG-DIR-25-001304-L6",
@@ -74,7 +50,7 @@
       "programmeId": "LINGNAN-TPG-DIR-25-000634-L6",
       "status": "blocked",
       "sourceUrl": "https://www.ln.edu.hk/eng/mades",
-      "statusNote": "The live official Programme page publishes the 30-credit total and coded Required, Elective and Capstone course lists for the 2026-27 curriculum, but it does not publish per-course credits or the credit and course-count requirements for each group. Credits and group rules are not inferred from the Programme total, so the structure remains unavailable pending an official current credit table."
+      "statusNote": "The live official Programme page states a 30-credit curriculum and links coded course-description PDFs that confirm course titles, categories and per-course credits, including 3-credit DES501 and 6-credit DES610. However, the page presents DES501-DES504, DES601-DES609/DES612 and DES610 only as highlighted courses and does not publish the required credit or course count for the Required, Elective and Capstone groups. The 30-credit total is not used to infer four Electives or to treat the highlighted examples as a complete pool, so the Programme remains blocked pending a complete official curriculum rule table."
     },
     {
       "programmeId": "LINGNAN-TPG-DIR-25-000348-L6",
@@ -99,12 +75,6 @@
       "status": "blocked",
       "sourceUrl": "https://www.ln.edu.hk/sgs/programmes-on-offer/master-of-china-and-regional-development-studies",
       "statusNote": "The live official 2026-27 offer page confirms the Programme and its three Concentrations, while the official CRS course-description PDF at https://www.ln.edu.hk/sgs/f/page/114332/345754/CRS_TPG.pdf lists CRS501-CRS517 as 3-credit courses. Neither source publishes the current Programme-wide and per-Concentration Core/Elective distribution or completion requirements. Track rules are not inferred from course titles, so the structure remains unavailable pending an official current curriculum table."
-    },
-    {
-      "programmeId": "LINGNAN-TPG-DIR-24-000812-L6",
-      "status": "blocked",
-      "sourceUrl": "https://www.ln.edu.hk/sgs/programmes-on-offer/master-of-science-in-human-resource-and-organisational-management",
-      "statusNote": "The live official 2026-27 offer page confirms the Programme and its Human Resource Analytics and Digital Transformation Concentration. The official HRM course-description PDF at https://www.ln.edu.hk/sgs/f/page/114332/345754/HRM_TPG.pdf was last updated on 18 October 2024 and lists only four 3-credit HRM541-HRM544 courses, without the mother Programme curriculum or a complete 30-credit Track structure. Missing courses and group rules are not invented, so the Programme remains source-blocked pending a complete current official curriculum."
     },
     {
       "programmeId": "LINGNAN-TPG-DIR-25-000168-L6",

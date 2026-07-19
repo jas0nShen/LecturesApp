@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "LINGNAN",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-18",
+  "programmes": [
+    {
+      "programmeId": "LINGNAN-TPG-DIR-25-000888-L6",
+      "status": "verified",
+      "creditsRequired": 30,
+      "creditUnit": "credits",
+      "sourceUrl": "https://www.ln.edu.hk/wjysis/mls/programme-overview/programme-structure",
+      "ruleReviewStatus": "manual_review_required",
+      "trackSelectionOptional": true,
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Core Courses (12 credits).",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/wjysis/mls/programme-overview/programme-structure",
+          "courses": [
+            { "code": "LSC501", "name": "World History of Science", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf" },
+            { "code": "LSC502", "name": "Scientific Study and Research Methods", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf" },
+            { "code": "LSC503", "name": "Critical Analytical Thinking", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf" },
+            { "code": "LSC504", "name": "Programming, Artificial Intelligence & Arts", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf" }
+          ]
+        },
+        {
+          "id": "practice-courses",
+          "name": "Practice Courses",
+          "type": "project",
+          "creditsRequired": 6,
+          "ruleText": "Complete any 6 credits of Practice Courses: LSC505 and LSC506 together, or LSC507. For a selected Concentration, the field trips, events and/or projects must be associated with that Concentration; this association requires manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/wjysis/mls/programme-overview/programme-structure",
+          "courses": [
+            { "code": "LSC505", "name": "MLS Field Trip", "credits": 3, "courseKind": "field_study", "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf" },
+            { "code": "LSC506", "name": "MLS Event Workshop", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf" },
+            { "code": "LSC507", "name": "Liberal Sciences Capstone Project", "credits": 6, "courseKind": "project", "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf" }
+          ]
+        },
+        {
+          "id": "programme-elective-and-concentration-courses",
+          "name": "Programme Elective and Concentration Courses",
+          "type": "elective",
+          "creditsRequired": 12,
+          "coursesRequired": 4,
+          "ruleText": "Complete four courses (12 credits). Mother Programme without a Concentration: choose any four courses from all Programme Elective and Concentration Required Courses. Applied Sports and Health Science: complete LSC521, LSC522 and LSC523, then choose one Programme Elective from LSC511-LSC514. Music and Performance: complete LSC531, LSC532 and LSC533, then choose one Programme Elective from LSC511-LSC514. Applied Arts in TechMedia: complete LSC533, LSC541 and LSC542, then choose one Programme Elective from LSC511-LSC514. The selected Concentration's three-plus-one combination requires manual audit review.",
+          "appliesToTrackIds": [],
+          "sourceUrl": "https://www.ln.edu.hk/wjysis/mls/programme-overview/programme-structure",
+          "courses": [
+            { "code": "LSC511", "name": "Globalisation and Culture Evolution", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf" },
+            { "code": "LSC512", "name": "Pedagogy for Advanced Education", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf" },
+            { "code": "LSC513", "name": "Technology and Artificial Intelligence for Education", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf" },
+            { "code": "LSC514", "name": "Leadership and Interpersonal Skills", "credits": 3, "appliesToTrackIds": [], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf" },
+            { "code": "LSC521", "name": "Sports Science and Health Promotion", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-25-000888-L6-25-000890-L6", "LINGNAN-TPG-DIR-25-000888-L6-25-000891-L6"], "countsTowardTrackIds": ["LINGNAN-TPG-DIR-25-000888-L6-25-000889-L6"], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf" },
+            { "code": "LSC522", "name": "Sports Business and Industrialisation", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-25-000888-L6-25-000890-L6", "LINGNAN-TPG-DIR-25-000888-L6-25-000891-L6"], "countsTowardTrackIds": ["LINGNAN-TPG-DIR-25-000888-L6-25-000889-L6"], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf" },
+            { "code": "LSC523", "name": "Sports Technology and Design", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-25-000888-L6-25-000890-L6", "LINGNAN-TPG-DIR-25-000888-L6-25-000891-L6"], "countsTowardTrackIds": ["LINGNAN-TPG-DIR-25-000888-L6-25-000889-L6"], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf" },
+            { "code": "LSC531", "name": "Artificial Intelligence and Music Production Technology", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-25-000888-L6-25-000889-L6", "LINGNAN-TPG-DIR-25-000888-L6-25-000891-L6"], "countsTowardTrackIds": ["LINGNAN-TPG-DIR-25-000888-L6-25-000890-L6"], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf" },
+            { "code": "LSC532", "name": "Entertainment Event Management", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-25-000888-L6-25-000889-L6", "LINGNAN-TPG-DIR-25-000888-L6-25-000891-L6"], "countsTowardTrackIds": ["LINGNAN-TPG-DIR-25-000888-L6-25-000890-L6"], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf" },
+            { "code": "LSC533", "name": "World History of Art", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-25-000888-L6-25-000889-L6"], "countsTowardTrackIds": ["LINGNAN-TPG-DIR-25-000888-L6-25-000890-L6", "LINGNAN-TPG-DIR-25-000888-L6-25-000891-L6"], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf" },
+            { "code": "LSC541", "name": "Digital Marketing and Social Media", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-25-000888-L6-25-000889-L6", "LINGNAN-TPG-DIR-25-000888-L6-25-000890-L6"], "countsTowardTrackIds": ["LINGNAN-TPG-DIR-25-000888-L6-25-000891-L6"], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf" },
+            { "code": "LSC542", "name": "Technologies Empowered Digital Media", "credits": 3, "appliesToTrackIds": [], "excludesTrackIds": ["LINGNAN-TPG-DIR-25-000888-L6-25-000889-L6", "LINGNAN-TPG-DIR-25-000888-L6-25-000890-L6"], "countsTowardTrackIds": ["LINGNAN-TPG-DIR-25-000888-L6-25-000891-L6"], "sourceUrl": "https://www.ln.edu.hk/sgs/f/page/114332/345754/LSC_TPG.pdf" }
+          ]
+        }
+      ]
+    }
+  ]
+}
