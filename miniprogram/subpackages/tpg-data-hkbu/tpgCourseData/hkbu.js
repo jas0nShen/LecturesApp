@@ -289,6 +289,134 @@ module.exports = [
     ]
   },
   {
+    "id": "HKBU-TPG-002",
+    "courseGroups": [
+      {
+        "id": "required-courses",
+        "name": "Required Courses",
+        "type": "core",
+        "creditsRequired": 15,
+        "coursesRequired": 5,
+        "ruleText": "Complete all five 3-unit Core Courses, including WRIT7051 Master Project (15 units).",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://hmw.hkbu.edu.hk/programmes/postgraduates/macwcp/curriculum/en-course/",
+        "courses": [
+          {
+            "code": "WRIT7010",
+            "name": "Stylistics and Aesthetics",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://hmw.hkbu.edu.hk/assets/WRIT7010-1.pdf"
+          },
+          {
+            "code": "WRIT7020",
+            "name": "Theory as Writing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://hmw.hkbu.edu.hk/assets/WRIT7020.pdf"
+          },
+          {
+            "code": "WRIT7030",
+            "name": "Cultural Professionals and Creative Industries",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://hmw.hkbu.edu.hk/assets/WRIT7030.pdf"
+          },
+          {
+            "code": "WRIT7040",
+            "name": "Creative Writing and Non-Print Media",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://hmw.hkbu.edu.hk/assets/WRIT7040.pdf"
+          },
+          {
+            "code": "WRIT7051",
+            "name": "Master Project",
+            "credits": 3,
+            "courseKind": "project",
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://hmw.hkbu.edu.hk/assets/WRIT7051.pdf"
+          }
+        ]
+      },
+      {
+        "id": "elective-courses",
+        "name": "Elective Courses",
+        "type": "elective",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Choose four of the nine 3-unit Elective Courses (12 units).",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://hmw.hkbu.edu.hk/programmes/postgraduates/macwcp/curriculum/en-course/",
+        "courses": [
+          {
+            "code": "WRIT7060",
+            "name": "Histories and Narratives",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://hmw.hkbu.edu.hk/assets/WRIT7060.pdf"
+          },
+          {
+            "code": "WRIT7070",
+            "name": "Writing Gender",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://hmw.hkbu.edu.hk/assets/WRIT7070.pdf"
+          },
+          {
+            "code": "WRIT7080",
+            "name": "Text and Image",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://hmw.hkbu.edu.hk/assets/WRIT7080.pdf"
+          },
+          {
+            "code": "WRIT7090",
+            "name": "Writing in Critical Situations",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://hmw.hkbu.edu.hk/assets/WRIT7090.pdf"
+          },
+          {
+            "code": "WRIT7100",
+            "name": "Writing Bootcamp",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://hmw.hkbu.edu.hk/assets/WRIT7100.pdf"
+          },
+          {
+            "code": "WRIT7110",
+            "name": "Writing (for) Performance",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://hmw.hkbu.edu.hk/assets/WRIT7110.pdf"
+          },
+          {
+            "code": "WRIT7120",
+            "name": "Single Author / Artist Study",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://hmw.hkbu.edu.hk/assets/WRIT7120.pdf"
+          },
+          {
+            "code": "WRIT7130",
+            "name": "Writing for Diversity",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://hmw.hkbu.edu.hk/assets/WRIT7130.pdf"
+          },
+          {
+            "code": "WRIT7140",
+            "name": "Practicum in Literary Publishing",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://hmw.hkbu.edu.hk/assets/WRIT7140.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "HKBU-TPG-003",
     "courseGroups": [
       {

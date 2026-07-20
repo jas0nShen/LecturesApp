@@ -45,13 +45,13 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.universityCount, 8);
   assert.equal(summary.facultyCount, 70);
   assert.equal(summary.programmeCount, 445);
-  assert.equal(summary.majorCount, 684);
+  assert.equal(summary.majorCount, 679);
   assert.equal(summary.requirementCount, 4);
-  assert.equal(summary.courseCount, 12442);
+  assert.equal(summary.courseCount, 12525);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 12428);
-  assert.equal(summary.programmeWithCoursesCount, 177);
-  assert.equal(summary.pendingProgrammeCount, 267);
+  assert.equal(summary.codedCourseCount, 12511);
+  assert.equal(summary.programmeWithCoursesCount, 179);
+  assert.equal(summary.pendingProgrammeCount, 265);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
@@ -512,7 +512,7 @@ test('UG per-school coverage stays visible for setup validation', () => {
     Object.fromEntries(Object.entries(coverage).map(([code, item]) => [code, [item.programmeCount, item.majorCount]])),
     {
       HKU: [137, 137], CUHK: [84, 84], HKUST: [50, 64], POLYU: [46, 110],
-      CITYU: [58, 194], HKBU: [22, 47], EDUHK: [25, 25], LINGNAN: [23, 23]
+      CITYU: [58, 189], HKBU: [22, 47], EDUHK: [25, 25], LINGNAN: [23, 23]
     }
   );
   assert(coverage.HKU.codedCourseCount >= 1842);
@@ -553,10 +553,10 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert.equal(polyu.codedCourseCount, 2472);
   assert.equal(polyu.badge, 'COURSES');
   assert.equal(polyu.sourceReadiness.indexOnly, polyu.pendingProgrammeCount);
-  assert.equal(cityu.programmeWithCoursesCount, 35);
-  assert.equal(cityu.pendingProgrammeCount, 23);
-  assert.equal(cityu.coveragePercent, 60);
-  assert.equal(cityu.codedCourseCount, 2609);
+  assert.equal(cityu.programmeWithCoursesCount, 37);
+  assert.equal(cityu.pendingProgrammeCount, 21);
+  assert.equal(cityu.coveragePercent, 64);
+  assert.equal(cityu.codedCourseCount, 2692);
   assert.equal(cityu.badge, 'COURSES');
   assert.equal(hkbu.programmeWithCoursesCount, 21);
   assert.equal(hkbu.pendingProgrammeCount, 1);
@@ -3499,6 +3499,62 @@ test('CityU International Relations and Global Affairs keeps Streams inside one 
   ['PIA3810', 'PIA3810J', 'PIA3810K'].forEach((courseCode) => {
     assert(courses.some((course) => course.courseCode === courseCode && /Major leader/.test(course.description)));
   });
+  assert(courses.every((course) => course.recommendedYear === 0 && course.semester === ''));
+});
+
+test('CityU Public Affairs and Management keeps two Streams inside one official Major', () => {
+  const cityu = ugService.listUniversities().find((item) => item.code === 'CITYU');
+  const programme = ugService.listProgrammes({ universityId: cityu.id, degreeLevel: 'undergraduate' })
+    .find((item) => item.jupasCode === 'JS1108');
+  const majors = ugService.listMajors(programme.id);
+  const courses = ugService.listMajorCourses(programme.id, majors[0].id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+  const groupText = (code) => byCode[code].requirementGroups.join(' ');
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.deepEqual(majors.map((major) => major.nameEn), ['Public Affairs and Management']);
+  assert.equal(courses.length, 56);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 56);
+  assert(courses.every((course) => course.credits === 3));
+  assert.equal(courses.filter((course) => course.requirementGroups.some((group) => group.includes('Foundation-year Courses'))).length, 5);
+  assert.match(groupText('PIA2012'), /Public Affairs and Governance \/ Public Policy and Management/);
+  assert.match(groupText('PIA2402'), /Public Affairs and Governance Stream Core/);
+  assert.match(groupText('PIA2402'), /Public Policy and Management Stream Elective/);
+  assert.match(groupText('PIA3241'), /Public Policy and Management Stream Core/);
+  assert.match(groupText('PIA3241'), /Public Affairs and Governance Stream Elective/);
+  ['PIA3810', 'PIA3810J', 'PIA3810K'].forEach((code) => assert(byCode[code]));
+  ['PIA3800', 'CAI4001'].forEach((code) => {
+    assert.match(byCode[code].description, /either PIA3800 or CAI4001/i);
+    assert.match(byCode[code].description, /must not both count/);
+  });
+  assert(courses.every((course) => course.recommendedYear === 0 && course.semester === ''));
+});
+
+test('CityU Crime Science keeps admission Features inside one official 57-credit Major', () => {
+  const cityu = ugService.listUniversities().find((item) => item.code === 'CITYU');
+  const programme = ugService.listProgrammes({ universityId: cityu.id, degreeLevel: 'undergraduate' })
+    .find((item) => item.jupasCode === 'JS1111');
+  const majors = ugService.listMajors(programme.id);
+  const courses = ugService.listMajorCourses(programme.id, majors[0].id);
+  const inGroup = (label) => courses.filter((course) => (
+    course.requirementGroups.some((group) => group.includes(label))
+  ));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.deepEqual(majors.map((major) => major.nameEn), ['Crime Science']);
+  assert.equal(courses.length, 27);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 27);
+  assert.deepEqual(
+    [inGroup('Foundation-year Courses').length, inGroup('Foundation-year Courses').reduce((sum, course) => sum + course.credits, 0)],
+    [3, 9]
+  );
+  assert.deepEqual(
+    [inGroup('Major Core').length, inGroup('Major Core').reduce((sum, course) => sum + course.credits, 0)],
+    [12, 39]
+  );
+  assert.equal(inGroup('Major Electives').length, 12);
+  assert(courses.some((course) => course.courseCode === 'SS4296' && course.credits === 6 && course.courseType === 'capstone'));
+  assert(courses.some((course) => course.courseCode === 'CAI4001' && course.courseType === 'major_elective'));
   assert(courses.every((course) => course.recommendedYear === 0 && course.semester === ''));
 });
 

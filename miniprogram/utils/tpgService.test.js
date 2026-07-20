@@ -12,8 +12,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 335);
-  assert.equal(coverage.courseCount, 8852);
+  assert.equal(coverage.programmeWithCoursesCount, 336);
+  assert.equal(coverage.courseCount, 8866);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -32,8 +32,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 335);
-  assert.equal(rows.length, 335);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 336);
+  assert.equal(rows.length, 336);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
@@ -5014,17 +5014,30 @@ test('HKBU Marketing for the Creative Economy preserves its corrected 30-unit st
   assert.match(programme.courseStatusNote, /cancelled, rescheduled or downsized Field Trip/);
 });
 
-test('HKBU Creative Writing remains blocked until the current coded course pool is confirmed', () => {
+test('HKBU Creative Writing preserves the current five-plus-four 27-unit award path', () => {
   const programme = tpgService.getProgramme('HKBU-TPG-002');
+  const groups = Object.fromEntries(programme.courseGroups.map((group) => [group.id, group]));
+  const courses = tpgService.flattenCourses(programme);
 
-  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal(programme.courseVerificationStatus, 'verified');
+  assert.equal(programme.ruleReviewStatus, 'verified');
   assert.equal(programme.creditsRequired, 27);
   assert.equal(programme.creditUnit, 'units');
-  assert.equal((programme.courseGroups || []).length, 0);
-  assert.match(programme.courseStatusNote, /15 Required units including the Master Project and 12 Elective units/);
-  assert.match(programme.courseStatusNote, /Master Project as a 3-credit, one-semester course/);
-  assert.match(programme.courseStatusNote, /current admissions page publishes no course codes or titles/);
-  assert.match(programme.courseStatusNote, /confirms that the fourteen 2025-26 codes, titles and group memberships remain current/);
+  assert.equal(courses.length, 14);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 14);
+  assert.deepEqual(
+    [groups['required-courses'].creditsRequired, groups['required-courses'].coursesRequired, groups['required-courses'].courses.length],
+    [15, 5, 5]
+  );
+  assert.deepEqual(
+    [groups['elective-courses'].creditsRequired, groups['elective-courses'].coursesRequired, groups['elective-courses'].courses.length],
+    [12, 4, 9]
+  );
+  assert(courses.every((course) => course.credits === 3));
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'WRIT7030').name, 'Cultural Professionals and Creative Industries');
+  assert.equal(tpgService.getProgrammeCourse(programme.id, 'WRIT7051').courseKind, 'project');
+  assert.match(programme.courseStatusNote, /linked official course outlines confirm a 3-unit value/);
+  assert.match(programme.courseStatusNote, /unavailable 2026-27 handbook is no longer a blocker/);
 });
 
 test('HKBU Language Studies filters its Dissertation and Non-dissertation Award Paths', () => {

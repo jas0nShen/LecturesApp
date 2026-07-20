@@ -1,0 +1,532 @@
+{
+  "provider": "CityUHK Undergraduate Catalogue and JUPAS",
+  "academicYear": "2026/27",
+  "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSS1_PAFM-1.htm",
+  "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1108",
+  "note": "The current CityUHK Catalogue publishes one Major, Public Affairs and Management, with two Streams: Public Affairs and Governance and Public Policy and Management. The Streams are not separate Majors. Normative four-year students complete 15 credit units of Foundation-year Courses, then specialize in one Stream and complete that Stream's 33 credit units of Core Courses and 15 credit units of Stream Electives, for 63 Major credit units. Stream completion and the official Either PIA3800 or CAI4001 restriction require manual review. The Catalogue publishes no course-level Year or Term assignments; Catalogue Term Semester A 2026/27 identifies the curriculum version only.",
+  "supplements": [
+    {
+      "universityCode": "CITYU",
+      "programmeId": "CITYU-UG-BSOCSCPAFM-33",
+      "jupasCode": "JS1108",
+      "majorId": "CITYU-UG-BSOCSCPAFM-33-M1",
+      "majorOverride": {
+        "expectedMajorIds": [
+          "CITYU-UG-BSOCSCPAFM-33-M1",
+          "CITYU-UG-BSOCSCPAFM-33-M2"
+        ],
+        "id": "CITYU-UG-BSOCSCPAFM-33-M1",
+        "code": "PUBLIC-AFFAIRS-AND-MANAGEMENT",
+        "nameEn": "Public Affairs and Management"
+      },
+      "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSS1_PAFM-1.htm",
+      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1108",
+      "courses": [
+        {
+          "code": "PIA2105",
+          "title": "Introduction to Political Science",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Foundation-year Courses · 15 credit units required · both Streams",
+          "description": "Required for normative four-year students before completing one selected Stream. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA2105.htm"
+        },
+        {
+          "code": "PIA2107",
+          "title": "Government and Law",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Foundation-year Courses · 15 credit units required · both Streams",
+          "description": "Required for normative four-year students before completing one selected Stream. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA2107.htm"
+        },
+        {
+          "code": "PIA2307",
+          "title": "Introduction to Public Governance",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Foundation-year Courses · 15 credit units required · both Streams",
+          "description": "Required for normative four-year students before completing one selected Stream. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA2307.htm"
+        },
+        {
+          "code": "PIA2400",
+          "title": "Introduction to Ethics and Public Policy",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Foundation-year Courses · 15 credit units required · both Streams",
+          "description": "Required for normative four-year students before completing one selected Stream. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA2400.htm"
+        },
+        {
+          "code": "PIA2530",
+          "title": "Exploring Public Affairs in Globalised Cities",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Foundation-year Courses · 15 credit units required · both Streams",
+          "description": "Required for normative four-year students before completing one selected Stream. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA2530.htm"
+        },
+        {
+          "code": "PIA2012",
+          "title": "Social Research Methods",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Stream Core · Public Affairs and Governance / Public Policy and Management · each Stream requires 33 credit units",
+          "description": "Required in either selected Stream. Students must specialize in one Stream, whose completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA2012.htm"
+        },
+        {
+          "code": "PIA2050",
+          "title": "Comparative Politics and Societies",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Stream Core · Public Affairs and Governance · 33 credit units required",
+          "description": "Required only in the Public Affairs and Governance Stream. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA2050.htm"
+        },
+        {
+          "code": "PIA2402",
+          "title": "Introduction to Social and Political Philosophy",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Public Affairs and Governance Stream Core · Public Policy and Management Stream Elective",
+          "description": "Required in the Public Affairs and Governance Stream; alternatively eligible toward the 15-credit Public Policy and Management Stream Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA2402.htm"
+        },
+        {
+          "code": "PIA3032",
+          "title": "State and Economy in Asia",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Public Affairs and Governance Stream Core · Public Policy and Management Stream Elective",
+          "description": "Required in the Public Affairs and Governance Stream; alternatively eligible toward the 15-credit Public Policy and Management Stream Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3032.htm"
+        },
+        {
+          "code": "PIA3109",
+          "title": "Approaches in Political Analysis",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Stream Core · Public Affairs and Governance · 33 credit units required",
+          "description": "Required only in the Public Affairs and Governance Stream. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3109.htm"
+        },
+        {
+          "code": "PIA3111",
+          "title": "Democracy and Democratization",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Stream Core · Public Affairs and Governance · 33 credit units required",
+          "description": "Required only in the Public Affairs and Governance Stream. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3111.htm"
+        },
+        {
+          "code": "PIA3121",
+          "title": "Theories of International Relations",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Stream Core · Public Affairs and Governance · 33 credit units required",
+          "description": "Required only in the Public Affairs and Governance Stream. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3121.htm"
+        },
+        {
+          "code": "PIA3127",
+          "title": "Political Institutions and Behaviour",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Stream Core · Public Affairs and Governance · 33 credit units required",
+          "description": "Required only in the Public Affairs and Governance Stream. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3127.htm"
+        },
+        {
+          "code": "PIA3900",
+          "title": "Innovation and Governance",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Stream Core · Public Affairs and Governance / Public Policy and Management · each Stream requires 33 credit units",
+          "description": "Required in either selected Stream. Students must specialize in one Stream, whose completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3900.htm"
+        },
+        {
+          "code": "PIA4142",
+          "title": "Global Public Health",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Public Affairs and Governance Stream Core · Public Policy and Management Stream Elective",
+          "description": "Required in the Public Affairs and Governance Stream; alternatively eligible toward the 15-credit Public Policy and Management Stream Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA4142.htm"
+        },
+        {
+          "code": "PIA4601",
+          "title": "Undergraduate Research Project",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Stream Core · Public Affairs and Governance / Public Policy and Management · each Stream requires 33 credit units",
+          "description": "Required in either selected Stream. Students must specialize in one Stream, whose completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA4601.htm"
+        },
+        {
+          "code": "PIA2308",
+          "title": "Working with Clients in Public Service",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Stream Core · Public Policy and Management · 33 credit units required",
+          "description": "Required only in the Public Policy and Management Stream. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA2308.htm"
+        },
+        {
+          "code": "PIA2524",
+          "title": "Management Skills for Public Managers",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Stream Core · Public Policy and Management · 33 credit units required",
+          "description": "Required only in the Public Policy and Management Stream. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA2524.htm"
+        },
+        {
+          "code": "PIA3241",
+          "title": "Policy Processes and Institutions",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Public Policy and Management Stream Core · Public Affairs and Governance Stream Elective",
+          "description": "Required in the Public Policy and Management Stream; alternatively eligible toward the 15-credit Public Affairs and Governance Stream Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3241.htm"
+        },
+        {
+          "code": "PIA3306",
+          "title": "Organizational Behaviour for Public Management",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Stream Core · Public Policy and Management · 33 credit units required",
+          "description": "Required only in the Public Policy and Management Stream. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3306.htm"
+        },
+        {
+          "code": "PIA3307",
+          "title": "Managing Financial Resources in Public and Nonprofit Sectors",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Stream Core · Public Policy and Management · 33 credit units required",
+          "description": "Required only in the Public Policy and Management Stream. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3307.htm"
+        },
+        {
+          "code": "PIA3310",
+          "title": "Smart Government and Sustainable Cities",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Public Policy and Management Stream Core · Public Affairs and Governance Stream Elective",
+          "description": "Required in the Public Policy and Management Stream; alternatively eligible toward the 15-credit Public Affairs and Governance Stream Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3310.htm"
+        },
+        {
+          "code": "PIA3316",
+          "title": "Managing Human Resources in Public and Nonprofit Sectors",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Stream Core · Public Policy and Management · 33 credit units required",
+          "description": "Required only in the Public Policy and Management Stream. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3316.htm"
+        },
+        {
+          "code": "PIA3921",
+          "title": "Urban and Social Policy",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Stream Core · Public Policy and Management · 33 credit units required",
+          "description": "Required only in the Public Policy and Management Stream. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3921.htm"
+        },
+        {
+          "code": "PIA2104",
+          "title": "Hong Kong Governance",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Affairs and Governance · choose 15 credit units",
+          "description": "Eligible only for the Public Affairs and Governance Stream Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA2104.htm"
+        },
+        {
+          "code": "PIA2201",
+          "title": "Public Policy and Social Development",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Affairs and Governance · choose 15 credit units",
+          "description": "Eligible only for the Public Affairs and Governance Stream Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA2201.htm"
+        },
+        {
+          "code": "PIA2224",
+          "title": "Environmental Issues and Sustainable Development",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Affairs and Governance / Public Policy and Management · each Stream requires 15 credit units",
+          "description": "Eligible for either selected Stream's Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA2224.htm"
+        },
+        {
+          "code": "PIA2405",
+          "title": "Introduction to Confucian Political Philosophy",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Affairs and Governance · choose 15 credit units",
+          "description": "Eligible only for the Public Affairs and Governance Stream Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA2405.htm"
+        },
+        {
+          "code": "PIA3003",
+          "title": "PIA Summer School",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Affairs and Governance / Public Policy and Management · each Stream requires 15 credit units",
+          "description": "Eligible for either selected Stream's Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3003.htm"
+        },
+        {
+          "code": "PIA3031",
+          "title": "Political Dynamics in Asia",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Affairs and Governance · choose 15 credit units",
+          "description": "Eligible only for the Public Affairs and Governance Stream Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3031.htm"
+        },
+        {
+          "code": "PIA3112",
+          "title": "Conflict and Resolution",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Affairs and Governance · choose 15 credit units",
+          "description": "Eligible only for the Public Affairs and Governance Stream Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3112.htm"
+        },
+        {
+          "code": "PIA3113",
+          "title": "Issues in Contemporary World Politics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Affairs and Governance · choose 15 credit units",
+          "description": "Eligible only for the Public Affairs and Governance Stream Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3113.htm"
+        },
+        {
+          "code": "PIA3120",
+          "title": "Politics and Media",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Affairs and Governance / Public Policy and Management · each Stream requires 15 credit units",
+          "description": "Eligible for either selected Stream's Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3120.htm"
+        },
+        {
+          "code": "PIA3122",
+          "title": "Rethinking the Value of Democracy",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Affairs and Governance · choose 15 credit units",
+          "description": "Eligible only for the Public Affairs and Governance Stream Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3122.htm"
+        },
+        {
+          "code": "PIA3123",
+          "title": "Theories of Development",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Affairs and Governance · choose 15 credit units",
+          "description": "Eligible only for the Public Affairs and Governance Stream Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3123.htm"
+        },
+        {
+          "code": "PIA3126",
+          "title": "International Political Economy",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Affairs and Governance · choose 15 credit units",
+          "description": "Eligible only for the Public Affairs and Governance Stream Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3126.htm"
+        },
+        {
+          "code": "PIA3130",
+          "title": "U.S. Politics and Foreign Policy",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Affairs and Governance · choose 15 credit units",
+          "description": "Eligible only for the Public Affairs and Governance Stream Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3130.htm"
+        },
+        {
+          "code": "PIA3153",
+          "title": "European Politics and International Relations",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Affairs and Governance · choose 15 credit units",
+          "description": "Eligible only for the Public Affairs and Governance Stream Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3153.htm"
+        },
+        {
+          "code": "PIA3315",
+          "title": "Ethics in Government",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Affairs and Governance · choose 15 credit units",
+          "description": "Eligible only for the Public Affairs and Governance Stream Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3315.htm"
+        },
+        {
+          "code": "PIA3600",
+          "title": "Experiential Learning for Public Affairs",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Affairs and Governance / Public Policy and Management · each Stream requires 15 credit units",
+          "description": "Eligible for either selected Stream's Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3600.htm"
+        },
+        {
+          "code": "PIA3607",
+          "title": "Advanced Research Methodology",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Affairs and Governance / Public Policy and Management · each Stream requires 15 credit units",
+          "description": "Eligible for either selected Stream's Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3607.htm"
+        },
+        {
+          "code": "PIA3710",
+          "title": "Contemporary Chinese Politics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Affairs and Governance · choose 15 credit units",
+          "description": "Eligible only for the Public Affairs and Governance Stream Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3710.htm"
+        },
+        {
+          "code": "PIA3810",
+          "title": "Study Tour",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Affairs and Governance / Public Policy and Management · each Stream requires 15 credit units",
+          "description": "Eligible for either selected Stream's Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3810.htm"
+        },
+        {
+          "code": "PIA3810J",
+          "title": "Study Tour",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Affairs and Governance / Public Policy and Management · each Stream requires 15 credit units",
+          "description": "Eligible for either selected Stream's Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3810J.htm"
+        },
+        {
+          "code": "PIA3810K",
+          "title": "Study Tour",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Affairs and Governance / Public Policy and Management · each Stream requires 15 credit units",
+          "description": "Eligible for either selected Stream's Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3810K.htm"
+        },
+        {
+          "code": "PIA4152",
+          "title": "Globalization and Its Discontents",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Affairs and Governance / Public Policy and Management · each Stream requires 15 credit units",
+          "description": "Eligible for either selected Stream's Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA4152.htm"
+        },
+        {
+          "code": "PIA3800",
+          "title": "Professional Internship",
+          "credits": 3,
+          "courseType": "internship",
+          "group": "Stream Elective · Public Affairs and Governance / Public Policy and Management · each Stream requires 15 credit units",
+          "description": "Eligible for either selected Stream's Elective pool. The official Catalogue requires either PIA3800 or CAI4001; the two courses must not both count toward Stream completion, which requires manual review.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3800.htm"
+        },
+        {
+          "code": "CAI4001",
+          "title": "Start-up Technology Entrepreneur Programme I",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Affairs and Governance / Public Policy and Management · each Stream requires 15 credit units",
+          "description": "Eligible for either selected Stream's Elective pool. The official Catalogue requires either PIA3800 or CAI4001; the two courses must not both count toward Stream completion, which requires manual review.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/CAI4001.htm"
+        },
+        {
+          "code": "PIA2527",
+          "title": "Law for Housing Studies",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Policy and Management · choose 15 credit units",
+          "description": "Eligible only for the Public Policy and Management Stream Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA2527.htm"
+        },
+        {
+          "code": "PIA3207",
+          "title": "Health Care Policy and Ethics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Policy and Management · choose 15 credit units",
+          "description": "Eligible only for the Public Policy and Management Stream Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3207.htm"
+        },
+        {
+          "code": "PIA3309",
+          "title": "Comparative Public Policy and Management",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Policy and Management · choose 15 credit units",
+          "description": "Eligible only for the Public Policy and Management Stream Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3309.htm"
+        },
+        {
+          "code": "PIA3410",
+          "title": "Management Ethics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Policy and Management · choose 15 credit units",
+          "description": "Eligible only for the Public Policy and Management Stream Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3410.htm"
+        },
+        {
+          "code": "PIA3503",
+          "title": "Urbanization and Health Management",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Policy and Management · choose 15 credit units",
+          "description": "Eligible only for the Public Policy and Management Stream Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3503.htm"
+        },
+        {
+          "code": "PIA3525",
+          "title": "Building Technology and Services for Housing Managers",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Policy and Management · choose 15 credit units",
+          "description": "Eligible only for the Public Policy and Management Stream Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA3525.htm"
+        },
+        {
+          "code": "PIA4953",
+          "title": "Housing Policy in Contemporary Society",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Policy and Management · choose 15 credit units",
+          "description": "Eligible only for the Public Policy and Management Stream Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA4953.htm"
+        },
+        {
+          "code": "PIA4954",
+          "title": "Housing Management and Practice",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Stream Elective · Public Policy and Management · choose 15 credit units",
+          "description": "Eligible only for the Public Policy and Management Stream Elective pool. Stream completion must be checked manually.",
+          "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/PIA4954.htm"
+        }
+      ]
+    }
+  ]
+}

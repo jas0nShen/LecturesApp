@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-19T12:56:16.490Z",
+  "generatedAt": "2026-07-20T08:02:24.916Z",
   "universities": [
     {
       "id": "HKU",
@@ -7246,9 +7246,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1108",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 56,
+      "codedCourseCount": 56,
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSS1_PAFM-1.htm"
     },
     {
       "id": "CITYU-UG-BALLA-34",
@@ -7285,9 +7286,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1111",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 27,
+      "codedCourseCount": 27,
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSS1_CRS-1.htm"
     },
     {
       "id": "CITYU-UG-BSOCSCPSY-36",
@@ -14097,76 +14099,6 @@ const catalogue = {
       "officialUrl": "https://www.cityu.edu.hk/admo/programmes/department-media-and-communication-options-ba-digital-television-and-broadcasting-ba"
     },
     {
-      "id": "CITYU-UG-BSOCSCPAFM-33-M1",
-      "programmeId": "CITYU-UG-BSOCSCPAFM-33",
-      "code": "PUBLIC-AFFAIRS-AND-GOVERNANCE",
-      "nameEn": "Public Affairs and Governance",
-      "nameZh": "Public Affairs and Governance",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1108"
-    },
-    {
-      "id": "CITYU-UG-BSOCSCPAFM-33-M2",
-      "programmeId": "CITYU-UG-BSOCSCPAFM-33",
-      "code": "PUBLIC-POLICY-AND-MANAGEMENT",
-      "nameEn": "Public Policy and Management",
-      "nameZh": "Public Policy and Management",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1108"
-    },
-    {
-      "id": "CITYU-UG-BSOCSCCRSO-35-M1",
-      "programmeId": "CITYU-UG-BSOCSCCRSO-35",
-      "code": "CRIME-PREVENTION",
-      "nameEn": "Crime Prevention",
-      "nameZh": "Crime Prevention",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1111"
-    },
-    {
-      "id": "CITYU-UG-BSOCSCCRSO-35-M2",
-      "programmeId": "CITYU-UG-BSOCSCCRSO-35",
-      "code": "SECURITY-PRACTICE",
-      "nameEn": "Security Practice",
-      "nameZh": "Security Practice",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1111"
-    },
-    {
-      "id": "CITYU-UG-BSOCSCCRSO-35-M3",
-      "programmeId": "CITYU-UG-BSOCSCCRSO-35",
-      "code": "GLOBAL-POLICING",
-      "nameEn": "Global Policing",
-      "nameZh": "Global Policing",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1111"
-    },
-    {
-      "id": "CITYU-UG-BSOCSCCRSO-35-M4",
-      "programmeId": "CITYU-UG-BSOCSCCRSO-35",
-      "code": "CRIME-ANALYTICS",
-      "nameEn": "Crime Analytics",
-      "nameZh": "Crime Analytics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1111"
-    },
-    {
-      "id": "CITYU-UG-BSOCSCCRSO-35-M5",
-      "programmeId": "CITYU-UG-BSOCSCCRSO-35",
-      "code": "CYBER-AND-FUTURE-CRIMES",
-      "nameEn": "Cyber and Future Crimes",
-      "nameZh": "Cyber and Future Crimes",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1111"
-    },
-    {
       "id": "CITYU-UG-BSOCSCSW-37-M1",
       "programmeId": "CITYU-UG-BSOCSCSW-37",
       "code": "SOCIAL-ENGAGEMENT-AND-CONCERN-FOR-PEOPLE-S-HEALT",
@@ -15957,6 +15889,16 @@ const catalogue = {
       "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bsocsc-international-relations-and-global-affairs"
     },
     {
+      "id": "CITYU-UG-BSOCSCPAFM-33-M1",
+      "programmeId": "CITYU-UG-BSOCSCPAFM-33",
+      "code": "PUBLIC-AFFAIRS-AND-MANAGEMENT",
+      "nameEn": "Public Affairs and Management",
+      "nameZh": "Public Affairs and Management",
+      "courseCount": 56,
+      "codedCourseCount": 56,
+      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1108"
+    },
+    {
       "id": "CITYU-UG-BALLA-34-M1",
       "programmeId": "CITYU-UG-BALLA-34",
       "code": "LINGUISTICS-AND-LANGUAGE-APPLICATIONS",
@@ -15965,6 +15907,16 @@ const catalogue = {
       "courseCount": 40,
       "codedCourseCount": 40,
       "officialUrl": "https://lt.cityu.edu.hk/en/programmes-courses/undergraduate/ba-linguistics-and-language-applications"
+    },
+    {
+      "id": "CITYU-UG-BSOCSCCRSO-35-M1",
+      "programmeId": "CITYU-UG-BSOCSCCRSO-35",
+      "code": "CRIME-SCIENCE",
+      "nameEn": "Crime Science",
+      "nameZh": "Crime Science",
+      "courseCount": 27,
+      "codedCourseCount": 27,
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bsocsc-crime-science"
     },
     {
       "id": "CITYU-UG-BSOCSCPSY-36-M1",
@@ -15988,7 +15940,7 @@ const catalogue = {
     }
   ],
   "courseShardCounts": {
-    "CITYU": 2609,
+    "CITYU": 2692,
     "CUHK": 638,
     "HKBU": 2650,
     "HKU": 2648,
@@ -15996,7 +15948,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 12428
+  "codedCourseCount": 12511
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

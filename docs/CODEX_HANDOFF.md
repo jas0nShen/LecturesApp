@@ -14,20 +14,21 @@
 
 - 工作目录：`/Users/shenjingsong/Documents/develop/lecturesApp`
 - 分支：`main`
-- 1.0.8 发布候选：本科与授课硕士课程扩充、本科正式 Major 合并、HKU/HKBU 多分包加载及 748 项测试
-- 当前本地发布提交：`4061944 Release 1.0.8 with expanded course coverage`
-- 本地 `origin/main`：`d438548 Document updated 1.0.7 upload`
+- 1.0.8 发布后课程补充工作区：HKBU TPG Creative Writing、CityU UG JS1108/JS1111 及 750 项测试
+- 当前本地与 `origin/main`：`233f0f3 Document 1.0.8 upload`
 - 包版本：`1.0.8`
-- `main` 已包含 `1.0.8` 发布提交与上传记录，相对 `origin/main` 领先 2 个提交；课程源、生成 catalogue/shards/分包、测试和版本资料已提交。
+- `main` 与 `origin/main` 同步；当前工作区保留本批尚未提交的 TPG/UG source supplements、生成 catalogue/shards/分包、测试与本文档修改。
 - 本批新增源包括 HKBU TPG Ethics and Public Affairs、Marketing for the Creative Economy，以及 UG JS2060、JS2620、JS2660、JS2920；此前同一工作区的 CUHK、EdUHK、Lingnan、PolyU、CityU、HKU、HKUST 和 HKBU 补充均继续保留。
 - 旧单一 `ug-data-hku`、`ug-data-hkbu` 已由生成脚本分别替换为 `ug-data-hku-a` / `ug-data-hku-b`、`ug-data-hkbu-a` / `ug-data-hkbu-b`。这些删除与新增是既有分包拆分结果，不要手工恢复旧 loader。
 
-- 当前课程补充与生成文件已提交；`git diff --cached` 无输出，`git diff --check` 通过。
+- 本批课程补充尚未提交或上传；`git diff --cached` 无输出，`git diff --check` 通过。
 - `.playwright-cli/` 为 96 KB 的本地浏览器诊断产物，共有 console log 和 page YAML；本次没有删除、覆盖或暂存。
 
 最近关键提交（本次交接提交前）：
 
 ```text
+233f0f3 Document 1.0.8 upload
+4061944 Release 1.0.8 with expanded course coverage
 d438548 Document updated 1.0.7 upload
 d03f7b3 Add undergraduate course completion tracking
 292e5ec Document 1.0.7 upload
@@ -75,14 +76,14 @@ df91815 Add PolyU Design curriculum and source evidence
 
 ### 数据与规则覆盖
 
-2026-07-19 重新运行覆盖报告所得当前值：
+2026-07-20 重新运行覆盖报告所得当前值：
 
 - TPG：8 所学校、448 个 Programme，全部 448 个已完成来源审查，来源覆盖率 100%。
-- TPG：335 个 Programme 有课程结构，Programme-local 课程共 8,852 门。
-- TPG 状态：112 个 `blocked`、1 个 `archived`、0 个 `unreviewed`。
+- TPG：336 个 Programme 有课程结构，Programme-local 课程共 8,866 门。
+- TPG 状态：111 个 `blocked`、1 个 `archived`、0 个 `unreviewed`。
 - HKU：62/62 已审查，55 个 `verified`、7 个 `blocked`、2,517 门 Programme-local 课程。
 - PolyU：105/105 已审查，54 个已核验课程结构、51 个来源阻塞、1,334 门课程。
-- HKBU：48/48 已审查，43 个已核验课程结构、5 个来源阻塞、1,215 门课程。
+- HKBU：48/48 已审查，44 个已核验课程结构、4 个来源阻塞、1,229 门课程。
 - HKUST：53/53 已审查，52 个已核验课程结构、1 个归档、769 门课程。
 - 已加入 PolyU `POLYU-TPG-038 Chinese Language and Literature`：31 credits、44 门课程，含中文语言/文学选修块、非 LST 选修与有条件 Dissertation。
 - 已完成 HKU `HKU-TPG-049` 至 `055` 的最后一批来源审查：050 MChDS（18 门）、051 MExpArtsTh（20 门）、052 MIPA（45 门）为 `verified`；049、053、054、055 因官方审批、学分冲突或逐课学分缺口为 `blocked`。
@@ -97,7 +98,7 @@ df91815 Add PolyU Design curriculum and source evidence
 - HKBU `HKBU-TPG-032 Master of Science in Business Management` 继续 `blocked`，但 blocker 已按 2026 当前官方资料收窄：招生页与 MScBM Curriculum 页面均确认 8 Core、2 Required、2 Elective 的 36-unit 路径，旧 Handbook 的 6/9 Elective units 小计冲突已解决。当前 Elective pool 新增 `MGNT7900 Business Negotiation`，公开页面未给逐课 units，2026-27 Handbook 仍需授权；不从“两门共 6 units”算术推断该课为 3 units。
 - 已补充 HKBU `HKBU-TPG-001 Master of Arts in Ethics and Public Affairs` 的两条 27-unit Stream。当前招生页与 Programme Curriculum 已解决旧 Handbook 的 Dissertation Stream 小计冲突：两门 Foundation 共 6 units、从七个逻辑选项选 5 门共 15 units、`LSE7111` 与 `LSE7112` Dissertation 共 6 units；七个逻辑选项是六门独立课程加 `LSE7060 / LSE7150` 二选一。Programme Elective Stream 为两门 Foundation、六门 Required 加该二选一。cGPA 3.33、委员会批准和互斥选择保留 `manual_review_required`。
 - 已补充 HKBU `HKBU-TPG-044 Master of Science in Marketing for the Creative Economy` 当前 30-unit 结构：6 门 Core 共 18 units、Semester 1 三选一、Semester 2 MMIS 二选一、Semester 2 AVA 二选一，以及 3-unit `MKTG7200` Field Trip，共 14 个唯一代码。当前 Curriculum 页面已把旧 Handbook 的“four courses 但只列三门”改为明确三选一；Field Trip 被取消、改期或缩减时的替代仍由 Programme 决定，故保留 `manual_review_required`。
-- HKBU `HKBU-TPG-002 Master of Arts in Creative Writing for Cultural Professionals` 继续 `blocked`，但旧 Master Project 学分冲突已由 2026 招生页解决：当前结构明确为 15 Required units（含 3-credit、单学期 Master Project）加 12 Elective units，共 27 units。当前招生页不列代码或标题，Programme Curriculum 返回 Shield Security 访问限制，2026-27 Handbook 也不可访问，因此不能把 2025-26 的 14 个代码直接视为当前课程池。
+- 已补充 HKBU `HKBU-TPG-002 Master of Arts in Creative Writing for Cultural Professionals`：当前招生页与直接链接的 Programme Curriculum 闭合 27-unit 路径，包括 5 门 Core/Required 共 15 units（含 `WRIT7051` Master Project）及 9 门 Elective 任选 4 门共 12 units。14 份官方 course outline 均确认每门 3 units；`WRIT7030` 采用正式 outline 的复数标题 `Creative Industries`。结构可直接机器判定，已从 `blocked` 改为 `verified`。
 - 已补充 Lingnan `LINGNAN-TPG-DIR-16-000107-L6 Master of Science in Finance`：7 门 Core 全部必修、18 门 Elective 任选 3 门，共 30 credits；25 门课程的代码、标题和 3-credit 学分均来自当前 Programme 页面与官方 FIN/RIM/ACT Course Description PDF。
 - 已补充 Lingnan `LINGNAN-TPG-DIR-08-000500-6 Master of Science in International Banking and Finance`：6 门 Core 共 18 credits、21 门混合 3/1.5-credit Elective 修满 12 credits；保留 IBF504/IBF615 互斥并标记 `manual_review_required`。
 - 已补充 Lingnan `LINGNAN-TPG-DIR-25-000019-L6 Master of Science in Risk, Insurance and Actuarial Analytics`：5 门 Core 全部必修、14 门 Elective 任选五门，所有课程均为 3 credits，总计 30 credits；19 门课程代码、标题和学分由官方 RIM、FIN、ACT Course Description PDF 交叉确认。
@@ -113,10 +114,12 @@ df91815 Add PolyU Design curriculum and source evidence
 - PolyU `POLYU-TPG-074 Master of Science in Advanced Physiotherapy` 继续 `blocked`：同一 Programme 的 2026/27 官方页面明确 `RS567 Project Study` 为 6 credits，但 2027/28 Programme 页面、现行 2026-or-after Curriculum 图和 v14 leaflet 都未重申代码，且没有公开的当前 51069 PRD/SDF；不跨学年搬运 `RS567`。
 - PolyU `POLYU-TPG-011 Master of Science in Low-altitude Economy` 继续 `blocked`：2027 Programme 页面已闭合 8 门 Core、7 门 Elective 和两条 31-credit 路径，但官方 PRD、当前 AAE Subject List 及 2026/27 leaflet 均未发布 9-credit Dissertation 的课程代码；不从其他 Programme 类推 Dissertation code。
 - HKU `HKU-TPG-055 Master of Public Administration` 继续 `blocked`：当前官方来源已闭合 4 门 Compulsory、23 门 Elective、`POLI8012` Dissertation 和 `POLI8028` Capstone Project 的代码与组结构；4 门 Compulsory 和 22 门 Elective 均为 6 credits，两项毕业项目均为 12 credits，但 `POLI8032 Selected Topics in Public Administration: Policy in China` 的 2026-06-09 当前课程描述仍未注明学分，不从其他 Elective 推断为 6 credits。
-- UG：8 所学校、444 个 Programme、683 个 Major、12,428 条 Major-local 带代码课程、177 个 Programme 已开放课程清单；运行时 267 个 Programme 待开放，来源覆盖报告另有 268 个 Programme-level 缺口。
+- UG：8 所学校、444 个 Programme、678 个 Major、12,511 条 Major-local 带代码课程、179 个 Programme 已开放课程清单；运行时 265 个 Programme 待开放，来源覆盖报告另有 266 个 Programme-level 缺口。
 - 已补充 CityU `JS1109 BA Linguistics and Language Applications` 当前 2026/27 课程结构：唯一正式 Major 下 40 门唯一代码，11 门 Core 共 33 credits、29 门 Major Elective 候选池（选 24 credits，至少 12 credits 为 B4 level），全部课程 3 credits。上游 JUPAS 标题中的五项 Features 不再被伪建成五个 Major；`LT4235` 按当前 Catalogue 保持 Core，不纳入旧 2025/26 pool 的 `LT4391`，也不从旧 Suggested Study Plan 搬运 Year/Term。
 - 已补充 CityU `JS1102 BSocSc International Relations and Global Affairs` 当前 2026/27 课程结构：唯一正式 Major 下 53 个唯一代码，18 门 Core 共 51 credits（含 0-credit `PIA3812` International Experience）及 35 门 Major Elective 候选池（选 12 credits）。Asian Studies、International Studies、Development Studies 分别是 24、21、13 门的重叠 Stream 子集，不再伪建成三个 Major；`PIA3810/3810J/3810K` 的最终 Stream award 由 Major leader 决定，未自动推断。
 - 已补充 CityU `JS1112 BSocSc Psychology` 当前 2026/27 课程结构：唯一 Psychology Major 下 37 个唯一代码，Foundation 3 门/9 credits、Core 11 门/36 credits、Major Elective 主池 20 门（选 18 credits），另保留 3 门仅列于 Stream pool 的课程。Health and Development 与 Mind and Brain 分别是 9 门和 6 门的可选 Stream 子集，不再伪建成两个 Major；`SS2715` 1 credit、`SS3733` 2 credits、`SS4708` 6 credits 均来自当前课程页，`LT3234` 不可与 College-specified requirement 双算的限制已保留。
+- 已补充 CityU `JS1108 BSocSc Public Affairs and Management` 当前 2026/27 课程结构：唯一正式 Major 下 56 个唯一代码，5 门 Foundation 共 15 credits；Public Affairs and Governance 与 Public Policy and Management 是二选一 Stream，每条路径再修 33-credit Core 和 15-credit Elective，Major 共 63 credits。共享课程只保留一条记录并合并身份；`PIA3800 / CAI4001` 互斥与 Stream 路径保留人工核对说明，不填 Year/Term。
+- 已补充 CityU `JS1111 BSocSc Crime Science` 当前 2026/27 课程结构：唯一 Crime Science Major 下 27 个唯一代码，Foundation 3 门/9 credits、Core 12 门/39 credits、Major Elective 12 门（选 9 credits），Major 共 57 credits。JUPAS 标题的五项 Features 不再伪建成五个 Major；`SS4296` 保留为 6-credit Capstone，不从开课学期推断推荐 Year/Term。
 - CUHK `JS4018 Chinese Language and Literature` 继续仅索引：2026-27 Major Requirement 发布 66-unit 结构、11 个 Required code 和四类 Specialty elective code，但当前 Course Offerings 只能核实 19 个唯一代码的 title/unit，且 Modern Chinese Literature 列表重复 `CHLL3402`，无法无推断地闭合当前完整课程池；已记录 `no_public_course_codes`，不以年度开课子集冒充完整 curriculum。
 - 已补充 HKBU `JS2020 Bachelor of Arts (Hons)` 的 5 个独立 Major：Chinese Language and Literature 74 门、Creative and Professional Writing 62 门、English Language and Literature 86 门、Humanities 66 门、Translation 50 门，共 338 条 Major-local 课程记录、312 个跨 Major 唯一代码。共享代码继续按 Programme + Major 隔离；Third Language、Humanities 额外 Free Elective 等未编码开放项只记录边界，不伪造课程。
 - 已补充 HKBU `JS2410 Bachelor of Chinese Medicine and Bachelor of Science (Hons) in Biomedical Science` 的 71 个唯一代码：Biomedical Sciences 24 门/52 units、Chinese Medicine 31 门/97 units、Clinical Internship 3 门/49 units、Honours Project 2 门/6 units，以及 11 门公开推荐的 Free Elective 课程。推荐清单保持开放性质，不表述为封闭选修池。
@@ -186,7 +189,7 @@ df91815 Add PolyU Design curriculum and source evidence
 - 2026-07-18 已通过微信开发者工具官方 CLI 上传 `1.0.7`，备注为 `1.0.7: Add editable UG course planning`，命令返回 `✔ upload`；实际上传包 8.6 MB，主包 1.4 MB，所有分包低于 2 MB。
 - 2026-07-18 已用新增本科已修状态的代码再次上传同版本 `1.0.7`，备注为 `1.0.7: Add UG course completion tracking`，命令返回 `✔ upload`；本次上传覆盖此前 1.0.7 开发版，实际上传包 8.6 MB、主包 1.4 MB，所有分包低于 2 MB。
 - 2026-07-19 已通过微信开发者工具官方 CLI 上传 `1.0.8`，备注为 `1.0.8: Expand UG and TPG course coverage`，命令返回 `✔ upload`；实际上传包 12,501,143 bytes，主包 1,463,604 bytes，所有 19 个分包低于 2 MB。
-- 当前 `1.0.8` 发布候选重新运行完整检查：748/748 测试通过、`ready=true`、主包 1,819,210 bytes，所有分包低于 2 MB；HKBU UG 已拆成两个分包，较大者 `ug-data-hkbu-b` 为 1,373,435 bytes。本轮数据已随 `1.0.8` 上传微信小程序。
+- 当前补数工作区重新运行完整检查：750/750 测试通过、`ready=true`、主包 1,817,444 bytes，所有分包低于 2 MB；本批 HKBU TPG 与 CityU UG 课程数据尚未 commit、push 或重新上传微信小程序。
 - 微信开发者工具确认 PolyU Computer Science 可加载 83 门课程，首页入口序号为 `01 / 02 / 03 / 04`；模拟器测试结束后已恢复原 Architectural Studies 资料，`plannedUgCourseKeys`、`ugCoursePlanAssignments`、`completedUgCourseKeys` 均为空。
 - 微信官方 automation 已完成普通 `POLYU-TPG-090` 闭环：36 门课程、`COMP5521` 加入计划、列表状态、官方分组、标记已修、复制与移除均通过。
 - 多 Track `HKU-TPG-031` 验收通过：Generalist 计 1 门，Chinese Language Education 计 2 门；两条记录均保留，旧 Track 课程不计入 Generalist 当前统计。
@@ -198,8 +201,8 @@ df91815 Add PolyU Design curriculum and source evidence
 ### 最具体的数据缺口
 
 - 八校 TPG 已达到 100% source reviewed；没有剩余 `unreviewed` Programme。
-- 仍有 112 个 Programme 因官方公开来源缺代码、学分、Track 归属、最终审批或规则冲突而标记 `blocked`。除非出现新的官方证据，不应把它们当作待猜测补全项。
-- UG 来源覆盖报告仍有 268 个缺口：124 个 index-only、23 个 reviewed-no-codes、121 个 no-source；运行时轻量目录按来源 Programme 口径显示 267 个待开放项。下一批继续从官方课程手册或部门课程页取证，不从 Programme 简介反推代码或规则。
+- 仍有 111 个 Programme 因官方公开来源缺代码、学分、Track 归属、最终审批或规则冲突而标记 `blocked`。除非出现新的官方证据，不应把它们当作待猜测补全项。
+- UG 来源覆盖报告仍有 266 个缺口：124 个 index-only、23 个 reviewed-no-codes、119 个 no-source；运行时轻量目录按来源 Programme 口径显示 265 个待开放项。下一批继续从官方课程手册或部门课程页取证，不从 Programme 简介反推代码或规则。
 - 多个已核验 TPG Programme 仍标记 `manual_review_required`，表示课程池可发布，但复杂路径/跨组最低要求不能由当前规则引擎自动证明。
 
 ### 发布与验收缺口
@@ -325,30 +328,30 @@ npm run status:ug-sources -- --missing-only --priority launch --missing-limit 10
 
 ## 已运行的测试及结果
 
-2026-07-19 在 `1.0.8` 发布候选完整工作区上重新运行：
+2026-07-20 在当前课程补充工作区上重新运行：
 
 ```text
 npm run check:ship: PASS
   check:ug-sync: PASS
   check:tpg-directory-sync: PASS
-  check:tpg-course-sync: PASS (244 files, 448 Programmes)
-  check:tpg-catalog-sync: PASS (8 schools, 448 Programmes, 8 packages, 335 course structures)
+  check:tpg-course-sync: PASS (245 files, 448 Programmes)
+  check:tpg-catalog-sync: PASS (8 schools, 448 Programmes, 8 packages, 336 course structures)
   seed/data validation: PASS
-  UG supplement validation: PASS (215 supplements; 202 explicit, 13 copied)
+  UG supplement validation: PASS (217 supplements; 204 explicit, 13 copied)
   directory audit: PASS, blockingErrors=[]
   server --check: PASS
-  Node tests: PASS, 748/748
+  Node tests: PASS, 750/750
   check:release: PASS, ready=true
 
 git diff --check: PASS
 npm run status:tpg-courses -- --school=HKU: PASS (448/448 reviewed, 0 unreviewed)
-npm run status:ug-sources -- --missing-only --missing-summary --missing-limit 3: PASS (270 Programme-level source gaps: 124 index-only, 23 reviewed-no-codes, 123 no-source; runtime pending 269)
+npm run status:ug-sources -- --missing-only --missing-summary --missing-limit 3: PASS (266 Programme-level source gaps: 124 index-only, 23 reviewed-no-codes, 119 no-source; runtime pending 265)
 ```
 
 发布指标：
 
-- 主包：1,819,210 bytes。
-- 总估算包体：16,082,733 bytes，181 个上传文件。
+- 主包：1,817,444 bytes。
+- 总估算包体：16,159,899 bytes，181 个上传文件。
 - 所有 19 个 UG/TPG 分包低于 2 MB；HKBU UG 为 `ug-data-hkbu-a` 1,339,364 bytes 与 `ug-data-hkbu-b` 1,373,435 bytes；`ug-data-hku-a` 为 1,168,298 bytes，`ug-data-hku-b` 为 1,009,199 bytes。
 - HKU TPG 分包：1,051,628 bytes。
 - 页面：17；敏感 API：0。

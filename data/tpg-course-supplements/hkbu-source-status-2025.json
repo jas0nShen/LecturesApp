@@ -5,15 +5,6 @@
   "verifiedAt": "2026-07-16",
   "programmes": [
     {
-      "programmeId": "HKBU-TPG-002",
-      "status": "blocked",
-      "verifiedAt": "2026-07-19",
-      "creditsRequired": 27,
-      "creditUnit": "units",
-      "sourceUrl": "https://ar.hkbu.edu.hk/tpg-admissions/programmes/master-of-arts-ma-in-creative-writing-for-cultural-professionals",
-      "statusNote": "The current official September 2026 admissions page resolves the older 2025-26 handbook's Master Project credit conflict. It confirms a 27-unit award comprising 15 Required units including the Master Project and 12 Elective units, and explicitly describes the Master Project as a 3-credit, one-semester course. The 2025-26 Academic Registry handbook and all fourteen individual course pages independently confirm WRIT7010-WRIT7040 as four 3-unit Required Courses, WRIT7051 Master Project at 3 units, and WRIT7060-WRIT7140 as nine 3-unit Elective Courses. However, the current admissions page publishes no course codes or titles, its linked Programme website currently returns a Shield Security access-restriction response, and the 2026-27 University Student Handbook remains inaccessible. Keep the Programme closed until an official current Curriculum or accessible 2026-27 handbook confirms that the fourteen 2025-26 codes, titles and group memberships remain current; do not carry the older course pool forward solely because the corrected 15-plus-12 unit structure is compatible with it."
-    },
-    {
       "programmeId": "HKBU-TPG-011",
       "status": "blocked",
       "creditsRequired": 30,

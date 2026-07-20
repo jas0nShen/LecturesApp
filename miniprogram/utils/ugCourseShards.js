@@ -9,7 +9,7 @@ const nodeLoaders = {
   "POLYU": (nodeRequire) => [].concat(nodeRequire("../subpackages/ug-data-polyu-a/ugCourseData/polyu-a"), nodeRequire("../subpackages/ug-data-polyu-b/ugCourseData/polyu-b")),
 };
 const counts = {
-  "CITYU": 2609,
+  "CITYU": 2692,
   "CUHK": 638,
   "HKBU": 2650,
   "HKU": 2648,
