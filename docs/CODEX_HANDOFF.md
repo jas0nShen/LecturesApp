@@ -15,10 +15,10 @@
 - 工作目录：`/Users/shenjingsong/Documents/develop/lecturesApp`
 - 分支：`main`
 - 1.0.8 最新课程补充：HKU TPG Master of Public Administration、CityU UG JS1113 Social Work 及 751 项测试
-- 本批课程数据提交：`e4500fd Add HKBU and CityU course curricula`
+- 本批课程数据提交：`3afc6e9 Add CityU social work and HKU public administration curricula`
 - 包版本：`1.0.8`
-- `main` 与 `origin/main` 同步；提交 `e4500fd` 已包含本批 TPG/UG source supplements、生成 catalogue/shards/分包和测试。
-- 本批新增源包括 HKBU TPG Ethics and Public Affairs、Marketing for the Creative Economy，以及 UG JS2060、JS2620、JS2660、JS2920；此前同一工作区的 CUHK、EdUHK、Lingnan、PolyU、CityU、HKU、HKUST 和 HKBU 补充均继续保留。
+- `main` 与 `origin/main` 同步；提交 `3afc6e9` 已包含本批 TPG/UG source supplements、生成 catalogue/shards/分包和测试。
+- 本批新增 CityU UG JS1113 Social Work，并以正式 Regulations 与专用 Course Descriptions 将 HKU TPG Master of Public Administration 从 `blocked` 闭合为 30 门课程的 `verified` 结构；此前同一工作区的 CUHK、EdUHK、Lingnan、PolyU、CityU、HKU、HKUST 和 HKBU 补充均继续保留。
 - 旧单一 `ug-data-hku`、`ug-data-hkbu` 已由生成脚本分别替换为 `ug-data-hku-a` / `ug-data-hku-b`、`ug-data-hkbu-a` / `ug-data-hkbu-b`。这些删除与新增是既有分包拆分结果，不要手工恢复旧 loader。
 
 - 本批课程补充已提交、推送并以 `1.0.8` 重新上传；`git diff --check` 通过。
@@ -27,6 +27,8 @@
 最近关键提交（本次交接提交前）：
 
 ```text
+3afc6e9 Add CityU social work and HKU public administration curricula
+1e524a5 Document refreshed 1.0.8 upload
 e4500fd Add HKBU and CityU course curricula
 233f0f3 Document 1.0.8 upload
 4061944 Release 1.0.8 with expanded course coverage
@@ -185,13 +187,14 @@ df91815 Add PolyU Design curriculum and source evidence
 - Git 提交 `361ee05` 已包含 `1.0.6` 版本资料、冷分包 loader 返回兜底、8 个生成 loader 和回归测试。
 - Git 提交 `d39634d` 已包含本科可编辑排期、UG 双分包加载修复、微信基础库兼容、测试及 `1.0.7` 版本资料。
 - Git 提交 `d03f7b3` 已包含本科已修状态、Study Plan 状态统计与复制、首页入口序号修复、测试及更新后的 `1.0.7` 发布资料。
-- 本地 `main` 与本地远端跟踪引用 `origin/main` 同步；当前课程补充已由提交 `e4500fd` 推送。
+- 本地 `main` 与本地远端跟踪引用 `origin/main` 同步；当前课程补充已由提交 `3afc6e9` 推送。
 - 微信开发者工具已显示最新 `1.0.5` 代码上传成功，更新类型为“修订补丁”，备注为 `1.0.5: Add TPG course planning`。
 - 2026-07-17 已通过微信开发者工具官方 CLI 上传 `1.0.6`，备注为 `1.0.6: Add TPG course planning and reliable loaders`，命令返回 `✔ upload`；上传包 8.6 MB，主包 1.4 MB，所有分包低于 2 MB。
 - 2026-07-18 已通过微信开发者工具官方 CLI 上传 `1.0.7`，备注为 `1.0.7: Add editable UG course planning`，命令返回 `✔ upload`；实际上传包 8.6 MB，主包 1.4 MB，所有分包低于 2 MB。
 - 2026-07-18 已用新增本科已修状态的代码再次上传同版本 `1.0.7`，备注为 `1.0.7: Add UG course completion tracking`，命令返回 `✔ upload`；本次上传覆盖此前 1.0.7 开发版，实际上传包 8.6 MB、主包 1.4 MB，所有分包低于 2 MB。
 - 2026-07-19 已通过微信开发者工具官方 CLI 上传 `1.0.8`，备注为 `1.0.8: Expand UG and TPG course coverage`，命令返回 `✔ upload`；实际上传包 12,501,143 bytes，主包 1,463,604 bytes，所有 19 个分包低于 2 MB。
 - 2026-07-20 已用 HKBU TPG Creative Writing 与 CityU UG JS1108/JS1111 课程数据重新上传同版本 `1.0.8`，备注为 `1.0.8: Add HKBU and CityU course curricula`，命令返回 `✔ upload`；本次上传覆盖此前 1.0.8 开发版，实际上传包 12,563,551 bytes、主包 1,462,259 bytes，所有 19 个分包低于 2 MB。
+- 2026-07-20 已用 CityU UG JS1113 Social Work 与 HKU TPG Master of Public Administration 课程数据重新上传同版本 `1.0.8`，备注为 `1.0.8: Add CityU Social Work and HKU MPA curricula`，命令返回 `✔ upload`；本次上传覆盖此前 1.0.8 开发版，实际上传包 12,591,430 bytes、主包 1,461,460 bytes，所有 19 个分包低于 2 MB。
 - 当前课程补充重新运行完整检查：751/751 测试通过、`ready=true`、主包 1,816,485 bytes，所有分包低于 2 MB。
 - 微信开发者工具确认 PolyU Computer Science 可加载 83 门课程，首页入口序号为 `01 / 02 / 03 / 04`；模拟器测试结束后已恢复原 Architectural Studies 资料，`plannedUgCourseKeys`、`ugCoursePlanAssignments`、`completedUgCourseKeys` 均为空。
 - 微信官方 automation 已完成普通 `POLYU-TPG-090` 闭环：36 门课程、`COMP5521` 加入计划、列表状态、官方分组、标记已修、复制与移除均通过。
