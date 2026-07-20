@@ -23209,6 +23209,259 @@ module.exports = [
     ]
   },
   {
+    "id": "HKU-TPG-055",
+    "courseGroups": [
+      {
+        "id": "compulsory-courses",
+        "name": "Compulsory Courses",
+        "type": "core",
+        "creditsRequired": 24,
+        "coursesRequired": 4,
+        "ruleText": "Complete all four compulsory courses for 24 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+        "courses": [
+          {
+            "code": "POLI7002",
+            "name": "Public administration: scope and issues",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "POLI8017",
+            "name": "Workshop in public affairs",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "POLI8026",
+            "name": "Workshop in managerial skills",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "POLI8027",
+            "name": "Public administration in Hong Kong",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          }
+        ]
+      },
+      {
+        "id": "elective-courses",
+        "name": "Elective Courses",
+        "type": "elective",
+        "creditsRequired": 24,
+        "coursesRequired": 4,
+        "ruleText": "Complete four 6-credit MPA electives, or complete three MPA electives and use up to 6 credits of approved MIPA Core or Elective courses. The cross-Programme substitution and annual offerings require manual review.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+        "courses": [
+          {
+            "code": "POLI7001",
+            "name": "Human resource management",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "POLI7003",
+            "name": "Public policy: issues and approaches",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "POLI7004",
+            "name": "Public management reform",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "POLI7005",
+            "name": "Comparative public policy",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "POLI7006",
+            "name": "Politics and public administration in the era of climate change",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "POLI7007",
+            "name": "The art and science of policy-making in Hong Kong",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "POLI7008",
+            "name": "The governance of China and past experience",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "POLI7009",
+            "name": "Governance and policy in international organizations",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "POLI8002",
+            "name": "Ethics and public affairs",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "POLI8003",
+            "name": "Financial management",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "POLI8004",
+            "name": "Government and law",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "POLI8008",
+            "name": "Public administration in China",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "POLI8009",
+            "name": "Policy design and analysis",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "POLI8011",
+            "name": "Selected topics in public policy",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "POLI8014",
+            "name": "NGOs and governance",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "POLI8019",
+            "name": "Comparative public administration reform",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "POLI8021",
+            "name": "Public organization and management",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "POLI8023",
+            "name": "Selected topics in public management",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "POLI8029",
+            "name": "Non-profit management",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "POLI8030",
+            "name": "Institutional analysis for public policy and management",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "POLI8031",
+            "name": "Collaborative governance",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "POLI8032",
+            "name": "Selected topics in public administration",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "POLI8033",
+            "name": "Program evaluation",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "POLI8034",
+            "name": "Digital society and governance",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          }
+        ]
+      },
+      {
+        "id": "capstone-experience",
+        "name": "Capstone Experience",
+        "type": "project",
+        "creditsRequired": 12,
+        "coursesRequired": 1,
+        "ruleText": "Complete either POLI8012 Dissertation or POLI8028 Capstone Project for 12 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+        "courses": [
+          {
+            "code": "POLI8012",
+            "name": "Dissertation",
+            "credits": 12,
+            "courseKind": "dissertation",
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          },
+          {
+            "code": "POLI8028",
+            "name": "Capstone project",
+            "credits": 12,
+            "courseKind": "project",
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "HKU-TPG-056",
     "courseGroups": [
       {

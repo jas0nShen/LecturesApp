@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-20T08:02:24.916Z",
+  "generatedAt": "2026-07-20T08:55:17.142Z",
   "universities": [
     {
       "id": "HKU",
@@ -7326,9 +7326,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1113",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 33,
+      "codedCourseCount": 33,
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSS1_SW-1.htm"
     },
     {
       "id": "CITYU-UG-BSOCSCCR-LLB-38",
@@ -14099,36 +14100,6 @@ const catalogue = {
       "officialUrl": "https://www.cityu.edu.hk/admo/programmes/department-media-and-communication-options-ba-digital-television-and-broadcasting-ba"
     },
     {
-      "id": "CITYU-UG-BSOCSCSW-37-M1",
-      "programmeId": "CITYU-UG-BSOCSCSW-37",
-      "code": "SOCIAL-ENGAGEMENT-AND-CONCERN-FOR-PEOPLE-S-HEALT",
-      "nameEn": "Social Engagement and Concern for People’s Health and Well-Being",
-      "nameZh": "Social Engagement and Concern for People’s Health and Well-Being",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1113"
-    },
-    {
-      "id": "CITYU-UG-BSOCSCSW-37-M2",
-      "programmeId": "CITYU-UG-BSOCSCSW-37",
-      "code": "HUMAN-DIVERSITIES-AND-SUSTAINABILITY",
-      "nameEn": "Human Diversities and Sustainability",
-      "nameZh": "Human Diversities and Sustainability",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1113"
-    },
-    {
-      "id": "CITYU-UG-BSOCSCSW-37-M3",
-      "programmeId": "CITYU-UG-BSOCSCSW-37",
-      "code": "PEOPLE-IN-ENVIRONMENT-INTERVENTIONS",
-      "nameEn": "People-in-Environment Interventions",
-      "nameZh": "People-in-Environment Interventions",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1113"
-    },
-    {
       "id": "CITYU-UG-BSOCSCCR-LLB-38-M1",
       "programmeId": "CITYU-UG-BSOCSCCR-LLB-38",
       "code": "BSOCSC-CRIME-SCIENCE-AND-BACHELOR-OF-LAWS",
@@ -15929,6 +15900,16 @@ const catalogue = {
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1112"
     },
     {
+      "id": "CITYU-UG-BSOCSCSW-37-M1",
+      "programmeId": "CITYU-UG-BSOCSCSW-37",
+      "code": "SOCIAL-WORK",
+      "nameEn": "Social Work",
+      "nameZh": "Social Work",
+      "courseCount": 33,
+      "codedCourseCount": 33,
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bsocsc-social-work"
+    },
+    {
       "id": "HKBU-UG-BA-PERM-14-M2",
       "programmeId": "HKBU-UG-BA-PERM-14",
       "code": "SPORTS-SCIENCE-MAJOR",
@@ -15940,7 +15921,7 @@ const catalogue = {
     }
   ],
   "courseShardCounts": {
-    "CITYU": 2692,
+    "CITYU": 2725,
     "CUHK": 638,
     "HKBU": 2650,
     "HKU": 2648,
@@ -15948,7 +15929,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 12511
+  "codedCourseCount": 12544
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

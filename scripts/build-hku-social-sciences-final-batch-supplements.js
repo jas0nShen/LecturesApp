@@ -13,7 +13,10 @@ const SOURCES = {
   mpaStructure: 'https://ppa.hku.hk/mpa/Programme_Structure.html',
   mpaCourseList: 'https://ppa.hku.hk/mpa/Course_List.html',
   mpaCourseDescriptions: 'https://ppa.hku.hk/mpa/Course_Desc.html',
-  mpaCurrentProgramme: 'https://ppa.hku.hk/taught-postgraduate/master-of-public-administration-mpa/'
+  mpaCurrentProgramme: 'https://ppa.hku.hk/taught-postgraduate/master-of-public-administration-mpa/',
+  mpaCurrentCourseDescriptions: 'https://ppa.hku.hk/taught-postgraduate/master-of-public-administration-mpa/mpa-course-descriptions/',
+  mpaRegulations: 'https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y',
+  mipaRegulations: 'https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y'
 };
 
 function buildProgrammes() {
@@ -41,15 +44,87 @@ function buildProgrammes() {
     },
     {
       programmeId: 'HKU-TPG-055',
-      status: 'blocked',
+      status: 'verified',
       creditsRequired: 60,
       creditUnit: 'credits',
-      sourceUrl: SOURCES.mpaCourseDescriptions,
-      statusNote: 'The official MPA structure page requires eight taught courses and either a capstone project or dissertation: four compulsory courses, four electives, and one 12-credit capstone/dissertation. The official course list and descriptions publish codes and credits for the compulsory courses, both capstone choices and almost every elective. However, POLI8032 Selected Topics in Public Administration appears in the official elective list and in the 2025-26 timetable, while its official course description omits a credit value. Because a complete published elective pool requires an official credit value for every listed course, POLI8032 cannot safely be assigned the 6 credits used by the other electives and no partial course structure is published.',
+      sourceUrl: SOURCES.mpaRegulations,
+      ruleReviewStatus: 'manual_review_required',
+      statusNote: 'The official 2025-26 Regulations and Syllabuses, applicable to the 2025-26 intake and thereafter, confirm a 60-credit award comprising four 6-credit compulsory courses, four 6-credit electives and either the 12-credit POLI8012 Dissertation or POLI8028 Capstone Project. The same Regulations and the dedicated 2025-26 Course Descriptions confirm POLI8032 Selected Topics in Public Administration at 6 credits, resolving the omission in the older general Course_Desc.html page. With Department approval, up to 6 elective credits may instead come from the MIPA Core or Elective lists; that cross-Programme substitution and annual course availability require manual review.',
+      courseGroups: [
+        {
+          id: 'compulsory-courses',
+          name: 'Compulsory Courses',
+          type: 'core',
+          creditsRequired: 24,
+          coursesRequired: 4,
+          ruleText: 'Complete all four compulsory courses for 24 credits.',
+          appliesToTrackIds: [],
+          sourceUrl: SOURCES.mpaRegulations,
+          courses: [
+            ['POLI7002', 'Public administration: scope and issues'],
+            ['POLI8017', 'Workshop in public affairs'],
+            ['POLI8026', 'Workshop in managerial skills'],
+            ['POLI8027', 'Public administration in Hong Kong']
+          ].map(([code, name]) => ({ code, name, credits: 6, appliesToTrackIds: [] }))
+        },
+        {
+          id: 'elective-courses',
+          name: 'Elective Courses',
+          type: 'elective',
+          creditsRequired: 24,
+          coursesRequired: 4,
+          ruleText: 'Complete four 6-credit MPA electives, or complete three MPA electives and use up to 6 credits of approved MIPA Core or Elective courses. The cross-Programme substitution and annual offerings require manual review.',
+          appliesToTrackIds: [],
+          sourceUrl: SOURCES.mpaRegulations,
+          courses: [
+            ['POLI7001', 'Human resource management'],
+            ['POLI7003', 'Public policy: issues and approaches'],
+            ['POLI7004', 'Public management reform'],
+            ['POLI7005', 'Comparative public policy'],
+            ['POLI7006', 'Politics and public administration in the era of climate change'],
+            ['POLI7007', 'The art and science of policy-making in Hong Kong'],
+            ['POLI7008', 'The governance of China and past experience'],
+            ['POLI7009', 'Governance and policy in international organizations'],
+            ['POLI8002', 'Ethics and public affairs'],
+            ['POLI8003', 'Financial management'],
+            ['POLI8004', 'Government and law'],
+            ['POLI8008', 'Public administration in China'],
+            ['POLI8009', 'Policy design and analysis'],
+            ['POLI8011', 'Selected topics in public policy'],
+            ['POLI8014', 'NGOs and governance'],
+            ['POLI8019', 'Comparative public administration reform'],
+            ['POLI8021', 'Public organization and management'],
+            ['POLI8023', 'Selected topics in public management'],
+            ['POLI8029', 'Non-profit management'],
+            ['POLI8030', 'Institutional analysis for public policy and management'],
+            ['POLI8031', 'Collaborative governance'],
+            ['POLI8032', 'Selected topics in public administration'],
+            ['POLI8033', 'Program evaluation'],
+            ['POLI8034', 'Digital society and governance']
+          ].map(([code, name]) => ({ code, name, credits: 6, appliesToTrackIds: [] }))
+        },
+        {
+          id: 'capstone-experience',
+          name: 'Capstone Experience',
+          type: 'project',
+          creditsRequired: 12,
+          coursesRequired: 1,
+          ruleText: 'Complete either POLI8012 Dissertation or POLI8028 Capstone Project for 12 credits.',
+          appliesToTrackIds: [],
+          sourceUrl: SOURCES.mpaRegulations,
+          courses: [
+            { code: 'POLI8012', name: 'Dissertation', credits: 12, courseKind: 'dissertation', appliesToTrackIds: [] },
+            { code: 'POLI8028', name: 'Capstone project', credits: 12, courseKind: 'project', appliesToTrackIds: [] }
+          ]
+        }
+      ],
       additionalSources: [
         SOURCES.mpaStructure,
         SOURCES.mpaCourseList,
-        SOURCES.mpaCurrentProgramme
+        SOURCES.mpaCurrentProgramme,
+        SOURCES.mpaCurrentCourseDescriptions,
+        SOURCES.mpaCourseDescriptions,
+        SOURCES.mipaRegulations
       ]
     }
   ];
@@ -59,8 +134,9 @@ function buildProgrammes() {
     'HKU-TPG-054',
     'HKU-TPG-055'
   ]);
-  assert(programmes.every((entry) => entry.status === 'blocked'));
-  assert(programmes.every((entry) => !entry.courseGroups));
+  assert.deepEqual(programmes.map((entry) => entry.status), ['blocked', 'blocked', 'verified']);
+  assert(programmes.slice(0, 2).every((entry) => !entry.courseGroups));
+  assert.equal(programmes[2].courseGroups.flatMap((group) => group.courses).length, 30);
   assert.equal(new Set(programmes.map((entry) => entry.sourceUrl)).size, programmes.length);
   return programmes;
 }
@@ -84,7 +160,7 @@ function main() {
     programmes: supplement.programmes.length,
     verified: supplement.programmes.filter((entry) => entry.status === 'verified').length,
     blocked: supplement.programmes.filter((entry) => entry.status === 'blocked').length,
-    courses: 0
+    courses: supplement.programmes.flatMap((programme) => programme.courseGroups || []).flatMap((group) => group.courses || []).length
   }));
 }
 

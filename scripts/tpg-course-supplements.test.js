@@ -1611,7 +1611,7 @@ test('HKU Social Sciences first batch preserves official paths and blocks the pr
   });
 });
 
-test('HKU Social Sciences final batch records exact public-source blockers without inferred courses', () => {
+test('HKU Social Sciences final batch preserves blockers and opens the verified MPA curriculum', () => {
   const supplement = buildHkuSocialSciencesFinalBatchSupplement();
   const catalogue = require('../data/tpg-programmes.json');
   validateSupplement(supplement, catalogue, 'hku-social-sciences-final-batch-2025.json');
@@ -1620,13 +1620,17 @@ test('HKU Social Sciences final batch records exact public-source blockers witho
   assert.deepEqual(supplement.programmes.map((programme) => programme.programmeId), [
     'HKU-TPG-053', 'HKU-TPG-054', 'HKU-TPG-055'
   ]);
-  assert.equal(supplement.programmes.every((programme) => programme.status === 'blocked'), true);
-  assert.equal(supplement.programmes.every((programme) => programme.courseGroups === undefined), true);
+  assert.deepEqual(supplement.programmes.map((programme) => programme.status), ['blocked', 'blocked', 'verified']);
+  assert.equal(supplement.programmes.slice(0, 2).every((programme) => programme.courseGroups === undefined), true);
   assert.match(byId['HKU-TPG-053'].statusNote, /60-credit programme/);
   assert.match(byId['HKU-TPG-053'].statusNote, /catalogue entry records 72 credits/);
   assert.match(byId['HKU-TPG-054'].statusNote, /does not publish the credit value of any individual course/);
-  assert.match(byId['HKU-TPG-055'].statusNote, /POLI8032/);
-  assert.match(byId['HKU-TPG-055'].statusNote, /omits a credit value/);
+  const mpa = byId['HKU-TPG-055'];
+  assert.equal(mpa.ruleReviewStatus, 'manual_review_required');
+  assert.deepEqual(mpa.courseGroups.map((group) => [group.courses.length, group.creditsRequired]), [[4, 24], [24, 24], [2, 12]]);
+  assert.equal(mpa.courseGroups[1].courses.find((course) => course.code === 'POLI8032').credits, 6);
+  assert.match(mpa.statusNote, /dedicated 2025-26 Course Descriptions/);
+  assert.match(mpa.statusNote, /up to 6 elective credits/);
 });
 
 test('PolyU Hospitality and Tourism Management preserves six award paths and both project components', () => {

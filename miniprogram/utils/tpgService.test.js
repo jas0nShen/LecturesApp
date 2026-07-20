@@ -12,8 +12,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 336);
-  assert.equal(coverage.courseCount, 8866);
+  assert.equal(coverage.programmeWithCoursesCount, 337);
+  assert.equal(coverage.courseCount, 8896);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -32,8 +32,8 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 336);
-  assert.equal(rows.length, 336);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 337);
+  assert.equal(rows.length, 337);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
@@ -111,13 +111,18 @@ test('HKU Social Sciences curricula expose verified pools and exact source block
   assert.equal(tpgService.getProgrammeCourse(mipa.id, 'POLI7019').credits, 3);
   assert.equal(tpgService.getProgrammeCourse(mipa.id, 'POLI6024').credits, 12);
 
-  [journalism, documentary, publicAdministration].forEach((programme) => {
+  [journalism, documentary].forEach((programme) => {
     assert.equal(programme.courseVerificationStatus, 'blocked');
     assert.equal(tpgService.getStatus(programme).courseCount, 0);
   });
   assert.match(journalism.courseStatusNote, /60-credit programme/);
   assert.match(documentary.courseStatusNote, /credit value of any individual course/);
-  assert.match(publicAdministration.courseStatusNote, /POLI8032/);
+  assert.equal(publicAdministration.courseVerificationStatus, 'verified');
+  assert.equal(publicAdministration.ruleReviewStatus, 'manual_review_required');
+  assert.equal(tpgService.getStatus(publicAdministration).courseCount, 30);
+  assert.equal(tpgService.getProgrammeCourse(publicAdministration.id, 'POLI8032').credits, 6);
+  assert.deepEqual(publicAdministration.courseGroups.map((group) => group.coursesRequired), [4, 4, 1]);
+  assert.match(publicAdministration.courseStatusNote, /up to 6 elective credits/);
 });
 
 test('PolyU Nursing remains blocked when official evidence omits the AIE code and taught-subject credits', () => {
@@ -7393,7 +7398,7 @@ test('TPG programmes can be filtered by course availability', () => {
   const withCourses = tpgService.filterProgrammesByAvailability(hkuProgrammes, 'courses');
   const pending = tpgService.filterProgrammesByAvailability(hkuProgrammes, 'pending');
 
-  assert.equal(withCourses.length, 55);
+  assert.equal(withCourses.length, 56);
   assert.equal(withCourses.every(tpgService.hasCourseGroups), true);
   assert.equal(pending.length, hkuProgrammes.length - withCourses.length);
   assert.equal(pending.some(tpgService.hasCourseGroups), false);

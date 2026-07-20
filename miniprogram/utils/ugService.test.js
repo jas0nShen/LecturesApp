@@ -45,17 +45,17 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.universityCount, 8);
   assert.equal(summary.facultyCount, 70);
   assert.equal(summary.programmeCount, 445);
-  assert.equal(summary.majorCount, 679);
+  assert.equal(summary.majorCount, 677);
   assert.equal(summary.requirementCount, 4);
-  assert.equal(summary.courseCount, 12525);
+  assert.equal(summary.courseCount, 12558);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 12511);
-  assert.equal(summary.programmeWithCoursesCount, 179);
-  assert.equal(summary.pendingProgrammeCount, 265);
+  assert.equal(summary.codedCourseCount, 12544);
+  assert.equal(summary.programmeWithCoursesCount, 180);
+  assert.equal(summary.pendingProgrammeCount, 264);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
-  assert.equal(summary.coveragePercent, 40);
+  assert.equal(summary.coveragePercent, 41);
   assert.match(summary.generatedAt, /^\d{4}-\d{2}-\d{2}T/);
   assert.match(summary.generatedDate, /^\d{4}-\d{2}-\d{2}$/);
 });
@@ -512,7 +512,7 @@ test('UG per-school coverage stays visible for setup validation', () => {
     Object.fromEntries(Object.entries(coverage).map(([code, item]) => [code, [item.programmeCount, item.majorCount]])),
     {
       HKU: [137, 137], CUHK: [84, 84], HKUST: [50, 64], POLYU: [46, 110],
-      CITYU: [58, 189], HKBU: [22, 47], EDUHK: [25, 25], LINGNAN: [23, 23]
+      CITYU: [58, 187], HKBU: [22, 47], EDUHK: [25, 25], LINGNAN: [23, 23]
     }
   );
   assert(coverage.HKU.codedCourseCount >= 1842);
@@ -553,10 +553,10 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert.equal(polyu.codedCourseCount, 2472);
   assert.equal(polyu.badge, 'COURSES');
   assert.equal(polyu.sourceReadiness.indexOnly, polyu.pendingProgrammeCount);
-  assert.equal(cityu.programmeWithCoursesCount, 37);
-  assert.equal(cityu.pendingProgrammeCount, 21);
-  assert.equal(cityu.coveragePercent, 64);
-  assert.equal(cityu.codedCourseCount, 2692);
+  assert.equal(cityu.programmeWithCoursesCount, 38);
+  assert.equal(cityu.pendingProgrammeCount, 20);
+  assert.equal(cityu.coveragePercent, 66);
+  assert.equal(cityu.codedCourseCount, 2725);
   assert.equal(cityu.badge, 'COURSES');
   assert.equal(hkbu.programmeWithCoursesCount, 21);
   assert.equal(hkbu.pendingProgrammeCount, 1);
@@ -3555,6 +3555,37 @@ test('CityU Crime Science keeps admission Features inside one official 57-credit
   assert.equal(inGroup('Major Electives').length, 12);
   assert(courses.some((course) => course.courseCode === 'SS4296' && course.credits === 6 && course.courseType === 'capstone'));
   assert(courses.some((course) => course.courseCode === 'CAI4001' && course.courseType === 'major_elective'));
+  assert(courses.every((course) => course.recommendedYear === 0 && course.semester === ''));
+});
+
+test('CityU Social Work keeps admission Features inside one official 81-credit Major', () => {
+  const cityu = ugService.listUniversities().find((item) => item.code === 'CITYU');
+  const programme = ugService.listProgrammes({ universityId: cityu.id, degreeLevel: 'undergraduate' })
+    .find((item) => item.jupasCode === 'JS1113');
+  const majors = ugService.listMajors(programme.id);
+  const courses = ugService.listMajorCourses(programme.id, majors[0].id);
+  const inGroup = (label) => courses.filter((course) => (
+    course.requirementGroups.some((group) => group.includes(label))
+  ));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.deepEqual(majors.map((major) => major.nameEn), ['Social Work']);
+  assert.equal(courses.length, 33);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 33);
+  assert.deepEqual(
+    [inGroup('Foundation-year Courses').length, inGroup('Foundation-year Courses').reduce((sum, course) => sum + course.credits, 0)],
+    [3, 9]
+  );
+  assert.deepEqual(
+    [inGroup('Major Core').length, inGroup('Major Core').reduce((sum, course) => sum + course.credits, 0)],
+    [20, 66]
+  );
+  assert.deepEqual(
+    [inGroup('Area 1 Service Users').length, inGroup('Area 2 Advanced and Critical Practice').length],
+    [5, 5]
+  );
+  assert(courses.some((course) => course.courseCode === 'SS3292' && course.credits === 8 && course.courseType === 'internship'));
+  assert(courses.some((course) => course.courseCode === 'SS4291' && course.credits === 8 && course.courseType === 'internship'));
   assert(courses.every((course) => course.recommendedYear === 0 && course.semester === ''));
 });
 

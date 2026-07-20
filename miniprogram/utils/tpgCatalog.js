@@ -1285,12 +1285,13 @@ module.exports = {
       "sourceUrl": "",
       "dataLevel": "structure",
       "academicYear": "2025-26",
-      "courseVerificationStatus": "blocked",
+      "courseVerificationStatus": "verified",
       "courseVerifiedAt": "2026-07-16",
-      "courseSourceUrl": "https://ppa.hku.hk/mpa/Course_Desc.html",
-      "courseStatusNote": "The current official MPA structure requires eight taught courses and either a capstone project or dissertation: four compulsory courses, four electives, and one 12-credit capstone/dissertation. The current official course list publishes four compulsory codes, two alternative capstone/dissertation codes and 23 elective codes. The course descriptions, updated on 9 June 2026, state 6 credits for all four compulsory courses and 22 of the 23 electives, and 12 credits for both POLI8012 Dissertation and POLI8028 Capstone Project. However, POLI8032 Selected Topics in Public Administration: Policy in China remains in the official elective list while its current official description still omits a credit value. POLI8032 cannot safely be assigned 6 credits by analogy with the other electives, so the complete current elective pool and therefore the full 2026-27 programme structure remain blocked; no partial course structure is published.",
+      "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
+      "courseStatusNote": "The official 2025-26 Regulations and Syllabuses, applicable to the 2025-26 intake and thereafter, confirm a 60-credit award comprising four 6-credit compulsory courses, four 6-credit electives and either the 12-credit POLI8012 Dissertation or POLI8028 Capstone Project. The same Regulations and the dedicated 2025-26 Course Descriptions confirm POLI8032 Selected Topics in Public Administration at 6 credits, resolving the omission in the older general Course_Desc.html page. With Department approval, up to 6 elective credits may instead come from the MIPA Core or Elective lists; that cross-Programme substitution and annual course availability require manual review.",
       "creditUnit": "credits",
-      "courseCount": 0
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 30
     },
     {
       "id": "HKU-TPG-056",
