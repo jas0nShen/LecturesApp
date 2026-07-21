@@ -1,0 +1,3669 @@
+{
+  "provider": "HKU Faculty of Social Sciences official BSocSc Regulations and Syllabuses",
+  "academicYear": "2025-26 and thereafter",
+  "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf",
+  "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences",
+  "note": "The official 2025-26 BSocSc Regulations and Syllabuses publish the coded Politics and Public Administration first-major structure and seven optional second-major structures recorded here. POLI3154 is confirmed as a 6-credit course by the official HKU Department of Politics and Public Administration course list. Geospatial Data Science is excluded because its published structure contains placeholder GEOG4xxx course codes and remains pending approval.",
+  "supplements": [
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6717",
+      "programmeId": "HKU-UG-6717-62",
+      "programmeName": "Bachelor of Social Sciences (Major in Politics and Public Administration)",
+      "majorId": "HKU-UG-6717-62-M1",
+      "majorName": "Politics and Public Administration",
+      "majorRole": "first_major",
+      "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf",
+      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences",
+      "ruleSummary": "96 credits: POLI1003 + 12 prerequisite credits from two other units; POLI2104 methods + two of four gateway courses; 30 credits advanced PPA electives; 6-12 capstone; 24 Social Innovation and Global Citizenship. Optional specialist stream requires 24 advanced PPA credits in one stream but is not recorded on transcript/certificate.",
+      "evidenceGap": "The 12-credit prerequisite is expressed by unit rather than a closed coded choice list. Stream affiliations are deferred to the department website. POLI3154 is listed without a credit value in the official PDF; its 6-credit value is confirmed by the official department course list.",
+      "recommendedStatus": "pending_manual_review",
+      "courses": [
+        {
+          "code": "COMP3160",
+          "title": "POLI3161. E-Government: Frameworks, instruments, and applications",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "ECON2276",
+          "title": "State, law and the economy",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "ENVS3402",
+          "title": "environmental science",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "EUST3010",
+          "title": "European political and economic institutions and processes",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "FOSS2018",
+          "title": "Social Innovation internship",
+          "credits": 12,
+          "courseType": "experiential",
+          "group": "Social Innovation requirement: FOSS2018 or FOSS2024 + FOSS2025",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "FOSS2019",
+          "title": "Global Citizenship internship",
+          "credits": 12,
+          "courseType": "experiential",
+          "group": "Global Citizenship requirement: FOSS2019 or FOSS2022 + FOSS2023, or approved 12-credit exchange/overseas summer",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "FOSS2022",
+          "title": "Global intensive learning programme",
+          "credits": 6,
+          "courseType": "experiential",
+          "group": "Global Citizenship requirement: FOSS2019 or FOSS2022 + FOSS2023, or approved 12-credit exchange/overseas summer",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "FOSS2023",
+          "title": "Global Social Impact lab",
+          "credits": 6,
+          "courseType": "experiential",
+          "group": "Global Citizenship requirement: FOSS2019 or FOSS2022 + FOSS2023, or approved 12-credit exchange/overseas summer",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "FOSS2024",
+          "title": "Experiential Learning I – Field Immersion",
+          "credits": 6,
+          "courseType": "experiential",
+          "group": "Social Innovation requirement: FOSS2018 or FOSS2024 + FOSS2025",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "FOSS2025",
+          "title": "Experiential Learning II – Advanced Praxis",
+          "credits": 6,
+          "courseType": "experiential",
+          "group": "Social Innovation requirement: FOSS2018 or FOSS2024 + FOSS2025",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "LLAW3080",
+          "title": "POLI3065. Public organization and management",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI1003",
+          "title": "Making sense of politics",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Introductory disciplinary course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI2104",
+          "title": "Research methods in politics and public administration",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI2105",
+          "title": "Introduction to comparative politics",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Gateway requirement; choose 2 of 4 / 12 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI2106",
+          "title": "Introduction to international relations",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Gateway requirement; choose 2 of 4 / 12 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI2107",
+          "title": "Introduction to political theory",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Gateway requirement; choose 2 of 4 / 12 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI2108",
+          "title": "Introduction to public administration",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Gateway requirement; choose 2 of 4 / 12 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3001",
+          "title": "Special topics in political science",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3002",
+          "title": "Special topics in political theory",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3005",
+          "title": "Capitalism and social justice",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3010",
+          "title": "Democracy and its critics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3015",
+          "title": "Ethics and public policy",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3019",
+          "title": "Hong Kong and the world",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3020",
+          "title": "Hong Kong politics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3022",
+          "title": "Contemporary Chinese politics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3023",
+          "title": "Special topics in Chinese politics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3024",
+          "title": "Special topics in public administration",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3025",
+          "title": "Managerial skills in public organizations",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3027",
+          "title": "Public policy research",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3031",
+          "title": "Politics of economic reform in China",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3034",
+          "title": "Public administration in China",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3035",
+          "title": "Public administration in Hong Kong",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3037",
+          "title": "Managing people in public organizations",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3039",
+          "title": "Public policy analysis",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3040",
+          "title": "Public sector management",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3044",
+          "title": "United States politics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3047",
+          "title": "United States foreign policy",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3051",
+          "title": "Issues in Chinese political philosophy",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3052",
+          "title": "International relations of East Asia",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3059",
+          "title": "China and the world",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3061",
+          "title": "Hong Kong and South China: The political economy of regional development and cooperation",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3067",
+          "title": "Sex, drugs, and the limits of liberalism",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3069",
+          "title": "Public policy, politics and social change",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3076",
+          "title": "Special topics in international politics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3077",
+          "title": "Special topics in comparative politics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3079",
+          "title": "Global justice",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3080",
+          "title": "Global political economy",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3093",
+          "title": "Understanding social protest",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3094",
+          "title": "Political participation: Why and how?",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3095",
+          "title": "Civil society and governance",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3097",
+          "title": "Modernity and globalization",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3098",
+          "title": "Nonprofit management",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3103",
+          "title": "Rise of the Global South? Colonialism, development, and the changing 24 world order",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3110",
+          "title": "Dilemmas of humanitarian intervention",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3113",
+          "title": "On the ethics of violence",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3115",
+          "title": "Politics and public opinion",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3116",
+          "title": "Theories and practice of social leadership",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3117",
+          "title": "Special topics in public policy",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3118",
+          "title": "Special topics in NGO studies",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3119",
+          "title": "Causes of international war",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3121",
+          "title": "Environmental policy",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3122",
+          "title": "Strategic leadership in civil society organizations",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3123",
+          "title": "Politics of the two Koreas",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3124",
+          "title": "Justice and good life",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3126",
+          "title": "Politics of contemporary Japan",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3127",
+          "title": "The politics of the European Union",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3129",
+          "title": "Foreign policy decision making",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3130",
+          "title": "Latin American politics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3131",
+          "title": "In search of good policy: An introduction to policy evaluation",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3132",
+          "title": "Terrorism and political violence",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3133",
+          "title": "Contemporary Southeast Asian politics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3134",
+          "title": "Politics and security on the Korean Peninsula",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3136",
+          "title": "The politics of international law",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3137",
+          "title": "Nationalism: Theories and practices",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3138",
+          "title": "Institutional analysis for reform",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3139",
+          "title": "The United Nations and global governance",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3140",
+          "title": "International development",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3141",
+          "title": "Punishment and political theory",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3142",
+          "title": "Democratization",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3143",
+          "title": "Politics of global inequality",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3144",
+          "title": "Early Confucian political philosophy",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3145",
+          "title": "Contemporary Confucian political philosophy",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3146",
+          "title": "Making sense of economics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3147",
+          "title": "Behavioural public policy",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3148",
+          "title": "Data science in politics and public administration",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3149",
+          "title": "Digital governance and regulation",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3150",
+          "title": "Climate change policy, politics, and governance",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3151",
+          "title": "Business, society, and public policy",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3152",
+          "title": "Democratic theory",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3153",
+          "title": "Diversity and equity in public administration: A comparative perspective",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3154",
+          "title": "Liberalism vs. identity politics",
+          "credits": 6,
+          "sourceUrl": "https://ppa.hku.hk/undergraduate/courses-and-timetables/undergraduate-courses/",
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits"
+        },
+        {
+          "code": "POLI3156",
+          "title": "Elite politics in China",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3157",
+          "title": "European politics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3158",
+          "title": "Globalization, automation, and labor",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3159",
+          "title": "Public administration and the public",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3162",
+          "title": "China: A multi-perspective inquiry",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3163",
+          "title": "Investigating China: Issues and critiques",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3164",
+          "title": "International Relations of the Middle East and North Africa",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3165",
+          "title": "Analyzing international relations data",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3166",
+          "title": "International institutions and cooperation",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3167",
+          "title": "Nuclear Politics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI4046",
+          "title": "Thesis in politics and public administration",
+          "credits": 12,
+          "courseType": "capstone",
+          "group": "Capstone experience; official timing Semesters V-VI or VII-VIII",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI4092",
+          "title": "Capstone experience: Research internship in politics and public administration",
+          "credits": 6,
+          "recommendedYear": 4,
+          "courseType": "capstone",
+          "group": "Capstone experience",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI4109",
+          "title": "Capstone experience: Directed project in politics and public administration",
+          "credits": 6,
+          "recommendedYear": 4,
+          "courseType": "capstone",
+          "group": "Capstone experience",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI4110",
+          "title": "Advanced seminar I",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI4111",
+          "title": "Advanced seminar II",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI4112",
+          "title": "Advanced seminar III",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI4113",
+          "title": "Advanced seminar IV",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI4114",
+          "title": "Advanced seminar in international politics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI4115",
+          "title": "Advanced seminar on strategy and politics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI4116",
+          "title": "International Relations field seminar",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced PPA disciplinary elective pool; select 30 credits",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        }
+      ]
+    },
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6717",
+      "programmeId": "HKU-UG-6717-55",
+      "programmeName": "Bachelor of Social Sciences (Major in Cognitive Science)",
+      "majorId": "HKU-UG-6717-55-M1",
+      "majorName": "Cognitive Science",
+      "majorRole": "second_major",
+      "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf",
+      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences",
+      "ruleSummary": "72-credit second major: PSYC1001 plus one of COMP1117/LING1000/LING2034/PHIL1012; 12 prerequisite credits from two listed units; PSYC2066 + PSYC2067; five electives / 30 credits from the published interdisciplinary pool; PSYC4068 capstone.",
+      "evidenceGap": "The 12-credit prerequisite is expressed by unit rather than a closed coded choice list. The elective table omits repeated credit labels, but the rule explicitly defines five electives as 30 credits; each listed elective is therefore recorded as 6 credits from that official arithmetic.",
+      "recommendedStatus": "pending_manual_review",
+      "courses": [
+        {
+          "code": "COMP1117",
+          "title": "Computer programming",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Introductory disciplinary course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "COMP3270",
+          "title": "Artificial intelligence",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "COMP3314",
+          "title": "Machine learning",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "COMP3340",
+          "title": "Applied deep learning",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "COMP3407",
+          "title": "Scientific computing",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "LING1000",
+          "title": "Introduction to language",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Introductory disciplinary course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "LING2034",
+          "title": "Psycholinguistics",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Introductory disciplinary course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "LING2036",
+          "title": "Child language",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "LING2037",
+          "title": "Bilingualism",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "LING2048",
+          "title": "Language and cognition",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "LING2053",
+          "title": "Language and the brain",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "LING2055",
+          "title": "Reading development and reading disorders",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "LING2067",
+          "title": "Natural language processing",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "LING2068",
+          "title": "Computational approaches to language",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "LING2069",
+          "title": "Origins of language",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "LING2074",
+          "title": "Introduction to second language research",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "LING3005",
+          "title": "Advanced topics in reading, language and cognition",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "LING3007",
+          "title": "Seminar in Psycholinguistics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PHIL1012",
+          "title": "Mind and knowledge: An introduction to philosophy",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Introductory disciplinary course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PHIL2075",
+          "title": "The semantics/pragmatics distinction",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PHIL2220",
+          "title": "The mind",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PHIL2225",
+          "title": "The philosophy of artificial intelligence",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PHIL2230",
+          "title": "Philosophy and cognitive science",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PHIL2245",
+          "title": "Philosophy and emotions",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PHIL2260",
+          "title": "Seminar in mind and language",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PHIL2410",
+          "title": "Mind and language in Chinese thought",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PHIL2510",
+          "title": "Logic",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PHIL2520",
+          "title": "Philosophy of logic",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PHIL2610",
+          "title": "Philosophy of language",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PHIL2651",
+          "title": "Bad language: the philosophy of non-ideal language use",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC1001",
+          "title": "Introduction to psychology",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Introductory disciplinary course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2007",
+          "title": "Cognitive psychology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2009",
+          "title": "Life-span developmental psychology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2022",
+          "title": "Biological psychology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2035",
+          "title": "Introduction to educational psychology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2051",
+          "title": "Perception",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2066",
+          "title": "Foundations of cognitive science",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2067",
+          "title": "Seminars in cognitive science",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC3054",
+          "title": "Human neuropsychology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC3061",
+          "title": "Advanced issues in perception",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC3064",
+          "title": "Advanced developmental psychology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC3068",
+          "title": "Advanced cognitive psychology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC4068",
+          "title": "Research project in cognitive science",
+          "credits": 6,
+          "courseType": "capstone",
+          "group": "Capstone experience",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SDST3612",
+          "title": "Statistical machine learning",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        }
+      ]
+    },
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6717",
+      "programmeId": "HKU-UG-6717-57",
+      "programmeName": "Bachelor of Social Sciences (Major in Counselling)",
+      "majorId": "HKU-UG-6717-57-M1",
+      "majorName": "Counselling",
+      "majorRole": "second_major",
+      "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf",
+      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences",
+      "ruleSummary": "72-credit second major: choose one of SOWK1004/SOWK1012; 12 prerequisite credits from two listed units; all three 6-credit core courses; 30 elective credits from the three published groups; SOWK4009 capstone.",
+      "evidenceGap": "The 12-credit prerequisite is expressed by unit rather than a closed coded choice list. The capstone is officially timed Year III or IV.",
+      "recommendedStatus": "pending_manual_review",
+      "courses": [
+        {
+          "code": "SOWK1004",
+          "title": "Human behaviour and the social environment I",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Introductory disciplinary course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK1012",
+          "title": "Communication and counselling skills in everyday life",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Introductory disciplinary course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK2020",
+          "title": "Oncology, palliative and hospice care",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK2065",
+          "title": "Understanding and working with young people",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK2069",
+          "title": "Counselling in health care settings",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK2075",
+          "title": "Violence in intimate relationships",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK2092",
+          "title": "Adventure-Based Counselling: Theory and practices",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK2098",
+          "title": "Working with people with disabilities",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK2099",
+          "title": "Separation, divorce and remarriage",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK2109",
+          "title": "Working with ethnically diverse communities in Hong Kong",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK2111",
+          "title": "Addictive behaviour",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK2112",
+          "title": "Working with special target populations",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK2114",
+          "title": "Special interventions: Theories and techniques",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK2119",
+          "title": "Mediation and negotiation",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK2120",
+          "title": "Counselling in business setting",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK2126",
+          "title": "Special topics in counselling",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK2133",
+          "title": "Population aging and the controversies",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK2135",
+          "title": "Theory and practice in family counselling",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK2137",
+          "title": "Theories in counselling",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK2138",
+          "title": "Foundation skills in counselling",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK2209",
+          "title": "Issues and interventions in mental health settings",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK3033",
+          "title": "Working with youth at risk and juvenile offenders",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK3060",
+          "title": "Career skills training",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK3087",
+          "title": "Counselling for emotional and relational competence",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK3089",
+          "title": "Integrative counselling methods in action: Theories, practice and research",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK3090",
+          "title": "Human behaviour and emerging technology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK3091",
+          "title": "Mental health sciences and society",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK3093",
+          "title": "Play therapy",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK3096",
+          "title": "Solution-focused therapy",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK3097",
+          "title": "Trauma, resilience, and growth",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK3106",
+          "title": "Use of creative arts in social work practice",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK3115",
+          "title": "Frontiers in interventions around death, dying and bereavement",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK3116",
+          "title": "A self-reflective journey",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK3131",
+          "title": "Encounter with embodiment: Therapeutic use of drama in social work settings",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK3134",
+          "title": "Cognitive behavioural therapy for common mental health 38 problems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK3141",
+          "title": "Contemporary complementary and alternative psychosocial interventions for people with physical and mental health needs",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK3142",
+          "title": "Compassionate mind and practice: Paths to healing and growth",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK3307",
+          "title": "Working with families",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK4009",
+          "title": "Capstone project in counselling",
+          "credits": 6,
+          "courseType": "capstone",
+          "group": "Capstone experience",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK4010",
+          "title": "Experiential learning through the client’s lens",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        }
+      ]
+    },
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6717",
+      "programmeId": "HKU-UG-6717-58",
+      "programmeName": "Bachelor of Social Sciences (Major in Criminology)",
+      "majorId": "HKU-UG-6717-58-M1",
+      "majorName": "Criminology",
+      "majorRole": "second_major",
+      "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf",
+      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences",
+      "ruleSummary": "72-credit second major: choose SOCI1001 or SOCI1004; 12 prerequisite credits from two listed units; SOCI2071 compulsory; 12 core credits with Group A/B rule dependent on whether Sociology is first major; 30 elective credits (minimum 18 Sociology + 12 other departments); SOCI4096 capstone.",
+      "evidenceGap": "The 12-credit prerequisite is expressed by unit rather than a closed coded choice list. Law electives are subject to availability; LLAW1008 is encouraged preparation rather than a major requirement.",
+      "recommendedStatus": "pending_manual_review",
+      "courses": [
+        {
+          "code": "JMSC2001",
+          "title": "Media law and ethics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "JMSC2013",
+          "title": "The press, politics and government",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "LLAW1008",
+          "title": "The legal system",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "LLAW3001",
+          "title": "Introduction to legal theory",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "LLAW3022",
+          "title": "Human rights in Hong Kong",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "LLAW3057",
+          "title": "International criminal law",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "LLAW3062",
+          "title": "Human rights in China",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "LLAW3066",
+          "title": "Cross-border Legal Relations between the Mainland and Hong Kong",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "LLAW3071",
+          "title": "Equality and non-discrimination",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "LLAW3101",
+          "title": "Cybercrime",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "LLAW3115",
+          "title": "Rights and remedies in the criminal process",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "LLAW3137",
+          "title": "Corruption: China in comparative perspective",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "LLAW3141",
+          "title": "Law and film",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "LLAW3145",
+          "title": "Law, economics, regulation and development",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "LLAW3146",
+          "title": "Multiculturalism and the law",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3005",
+          "title": "Capitalism and social justice",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3079",
+          "title": "Global justice",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3113",
+          "title": "On the ethics of violence",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3124",
+          "title": "Justice and good life",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI1001",
+          "title": "Introduction to sociology",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Introductory disciplinary course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI1004",
+          "title": "Introduction to sociology: The world’s on fire (and other problems)",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Introductory disciplinary course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI2030",
+          "title": "Quantitative research methods",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI2043",
+          "title": "Qualitative research methods",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI2071",
+          "title": "Criminology",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI2095",
+          "title": "Quantitative social sciences: From correlation to causality",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3001",
+          "title": "Foundations in computational social science",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3011",
+          "title": "Gender and crime",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3033",
+          "title": "Research project",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3038",
+          "title": "Social control",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3041",
+          "title": "Social problems",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3046",
+          "title": "Sociology of law",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3047",
+          "title": "Sociology of punishment",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3054",
+          "title": "Triads and organized crime",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3056",
+          "title": "Criminal justice: Policy and practice",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3060",
+          "title": "Fraud, corruption and computer crime",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3067",
+          "title": "Crime and the media",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3069",
+          "title": "Crime and the city",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3076",
+          "title": "Globalization and crime",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3078",
+          "title": "Drug control in comparative perspective",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3082",
+          "title": "Social and cultural studies internship",
+          "credits": 12,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3094",
+          "title": "Youth crime in the global city",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3095",
+          "title": "Public sociology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3097",
+          "title": "Special topics in criminology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3105",
+          "title": "Global criminology",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI4096",
+          "title": "Capstone project in criminology",
+          "credits": 6,
+          "courseType": "capstone",
+          "group": "Capstone experience",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK2034",
+          "title": "Youth crime and juvenile justice issues",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK2075",
+          "title": "Violence in intimate relationships",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK3030",
+          "title": "Law and social administration",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK3033",
+          "title": "Working with youth at risk and juvenile offenders",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        }
+      ]
+    },
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6717",
+      "programmeId": "HKU-UG-6717-60",
+      "programmeName": "Bachelor of Social Sciences (Major in Media and Cultural Studies)",
+      "majorId": "HKU-UG-6717-60-M1",
+      "majorName": "Media and Cultural Studies",
+      "majorRole": "second_major",
+      "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf",
+      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences",
+      "ruleSummary": "72-credit second major: choose SOCI1001 or SOCI1004; 12 prerequisite credits from two listed units; SOCI2080 compulsory; choose two core courses / 12 credits with at least one Group A; five electives / 30 credits, no more than two from one department except the 12-credit internship; SOCI4098 capstone.",
+      "evidenceGap": "The 12-credit prerequisite is expressed by unit rather than a closed coded choice list. SOCI3104 is listed without a printed credit label but the core rule states each core course is 6 credits; internship eligibility requires Programme Coordinator approval.",
+      "recommendedStatus": "pending_manual_review",
+      "courses": [
+        {
+          "code": "AMER2014",
+          "title": "A dream in the heart: Varieties of Asian American culture",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "AMER2015",
+          "title": "The American City",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "AMER2022",
+          "title": "What’s on TV? Television and American culture",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG3304",
+          "title": "Tourism policy and planning",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG3414",
+          "title": "Social justice and the city",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "HIST2031",
+          "title": "History through film",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "HIST2067",
+          "title": "Sex, gender and modernity in China",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "HIST2069",
+          "title": "The History of American Popular Culture",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "HIST2085",
+          "title": "The History of Modern Sexual Identity and Discourse",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "JAPN2011",
+          "title": "Anthropology of Japan",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "JAPN2031",
+          "title": "The media and Japan",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "JAPN3008",
+          "title": "Contemporary Japanese popular music",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "JMSC2001",
+          "title": "Media law and ethics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "JMSC2013",
+          "title": "The press, politics and government",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "JMSC2017",
+          "title": "Journalism traditions",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "JMSC2019",
+          "title": "Digital media and society",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "JMSC3006",
+          "title": "Covering the environment",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "JMSC3009",
+          "title": "Covering China",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "MUSI2015",
+          "title": "Popular music: From Cantopop to techno",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "MUSI2016",
+          "title": "Music of contemporary Hong Kong",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "MUSI2044",
+          "title": "Film music",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2020",
+          "title": "Fundamentals of social psychology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI1001",
+          "title": "Introduction to sociology",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Introductory disciplinary course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI1004",
+          "title": "Introduction to sociology: The world’s on fire (and other 46 problems)",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Introductory disciplinary course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI2043",
+          "title": "Qualitative research methods",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI2080",
+          "title": "Media and culture in modern societies",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI2095",
+          "title": "Quantitative social sciences: From correlation to causality",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3001",
+          "title": "Foundations in computational social science",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3003",
+          "title": "China’s vision for humanity: Critical issues facing contemporary Chinese society",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3006",
+          "title": "Critical issues in media studies",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3012",
+          "title": "Gender and society",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3015",
+          "title": "Hong Kong popular culture",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3019",
+          "title": "Modern culture and lifestyles",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3035",
+          "title": "Selected topics in social and cultural anthropology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3055",
+          "title": "Tourism, culture and society",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3067",
+          "title": "Crime and the media",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3075",
+          "title": "Hong Kong: Community and cultural policy in the global context",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3077",
+          "title": "Media, culture and communication in Contemporary China",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3081",
+          "title": "Sexuality, culture and identity",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3082",
+          "title": "Social and Cultural Studies internship",
+          "credits": 12,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3085",
+          "title": "Understanding media",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3086",
+          "title": "Sociology of art",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3088",
+          "title": "Sociology of knowledge, science and technology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3091",
+          "title": "Sociology of culture",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3092",
+          "title": "Social spaces",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3095",
+          "title": "Public sociology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3098",
+          "title": "Special topics in media and cultural studies",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3101",
+          "title": "Anthropology of artificial intelligence: Human-like machine, machine-like societies",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3103",
+          "title": "Social movements and contentious politics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3104",
+          "title": "The sociology of creativity",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI4098",
+          "title": "Capstone project in media and cultural studies",
+          "credits": 6,
+          "courseType": "capstone",
+          "group": "Capstone experience",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        }
+      ]
+    },
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6717",
+      "programmeId": "HKU-UG-6717-61",
+      "programmeName": "Bachelor of Social Sciences (Major in Neuroscience)",
+      "majorId": "HKU-UG-6717-61-M1",
+      "majorName": "Neuroscience",
+      "majorRole": "second_major",
+      "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf",
+      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences",
+      "ruleSummary": "72-credit second major only: PSYC1001; 12 relevant introductory prerequisite credits; all four core courses / 24 credits; 24 elective credits including at least 12 from Neuroscience electives, offered by at least two departments and including an outside-Psychology course; choose one 6-credit capstone.",
+      "evidenceGap": "Prior Psychology Department approval and science background are required. The prerequisite selection is individualized and not a closed coded pool. PSYC4101 is a 12-credit major-only elective, not the capstone requirement.",
+      "recommendedStatus": "pending_manual_review",
+      "courses": [
+        {
+          "code": "BBMS3011",
+          "title": "Molecular neuroscience",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "BBMS3012",
+          "title": "Stem cell biotechnologies in regenerative medicine",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "BIOL3105",
+          "title": "Animal physiology & environmental adaptation",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "BMED3501",
+          "title": "Medical imaging",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC1001",
+          "title": "Introduction to psychology",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Introductory disciplinary course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2007",
+          "title": "Cognitive psychology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2051",
+          "title": "Perception",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2101",
+          "title": "Foundations of neuroscience I",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2102",
+          "title": "Seminar in neuroscience",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2103",
+          "title": "Foundations of neuroscience II",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2110",
+          "title": "Developmental neuroscience",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2111",
+          "title": "Neurobiological basis of psychological issues",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2112",
+          "title": "Research internship in neuroscience",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2113",
+          "title": "Introduction to brain imaging",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2114",
+          "title": "Special topics in neuroscience",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2115",
+          "title": "The science of emotion",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2116",
+          "title": "Decision making and neuroeconomics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC3054",
+          "title": "Human neuropsychology",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC3061",
+          "title": "Advanced issues in perception",
+          "credits": 6,
+          "courseType": "capstone",
+          "group": "Capstone experience",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC3068",
+          "title": "Advanced cognitive psychology",
+          "credits": 6,
+          "courseType": "capstone",
+          "group": "Capstone experience",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC4101",
+          "title": "Thesis in neuroscience",
+          "credits": 12,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "PSYC4102",
+          "title": "Capstone project in neuroscience",
+          "credits": 6,
+          "courseType": "capstone",
+          "group": "Capstone experience",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        }
+      ]
+    },
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6717",
+      "programmeId": "HKU-UG-6717-66",
+      "programmeName": "Bachelor of Social Sciences (Major in Urban Governance)",
+      "majorId": "HKU-UG-6717-66-M1",
+      "majorName": "Urban Governance",
+      "majorRole": "second_major",
+      "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf",
+      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences",
+      "ruleSummary": "72-credit second major: choose one of nine GEOG introductory courses in Years 1-2; 12 prerequisite credits from two listed units; choose three core courses / 18 credits; 30 elective credits across three themes; 6-credit capstone in Year 4, normally GEOG4001 with specified contingency substitutions.",
+      "evidenceGap": "The 12-credit prerequisite is expressed by unit rather than a closed coded choice list. The PDF contains legacy/inconsistent Sociology codes and a truncated parenthesis for GEOG4004; these are retained as printed and should be reconciled against current course pages before verification.",
+      "recommendedStatus": "pending_manual_review",
+      "courses": [
+        {
+          "code": "GEOG1002",
+          "title": "Hong Kong: Land, people and resources",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Introductory disciplinary course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG1003",
+          "title": "Contemporary global environmental issues",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Introductory disciplinary course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG1005",
+          "title": "Map use, reading and interpretation",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Introductory disciplinary course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG1012",
+          "title": "Economic and social development in an urbanizing world",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Introductory disciplinary course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG1016",
+          "title": "Nature conservation for sustainable societies",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Introductory disciplinary course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG1017",
+          "title": "Human geography in a globalizing world",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Introductory disciplinary course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG1020",
+          "title": "Modern maps in the age of big data",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Introductory disciplinary course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG1021",
+          "title": "Geographic issues of Polar Regions",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Introductory disciplinary course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG1022",
+          "title": "Global change and sustainable development",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Introductory disciplinary course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2013",
+          "title": "Sustainable development: Introduction and quantification",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2018",
+          "title": "Transport geography",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2030",
+          "title": "Global development",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2065",
+          "title": "Urban planning: Principles and practices",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2078",
+          "title": "Cities and the urban world: A global introduction to urban geography",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2090",
+          "title": "Introduction to geographic information systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2109",
+          "title": "Population geography and social development",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2120",
+          "title": "Introductory spatial analysis",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2124",
+          "title": "Environmental change and socio-political conflicts",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2127",
+          "title": "Environmental management",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2130",
+          "title": "Field methods in geography",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2132",
+          "title": "World cities",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2136",
+          "title": "Political geography: International relations and the world economy",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2137",
+          "title": "Introduction to research design in geography",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2138",
+          "title": "Hong Kong’s environment: Issues and policies",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2143",
+          "title": "Planning in an era of changes",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2144",
+          "title": "The evolution of transport policy in Hong Kong",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2146",
+          "title": "Climate change, air quality and environmental monitoring",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2149",
+          "title": "Financial geography",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2151",
+          "title": "Climate change and social responses",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2152",
+          "title": "Health and medical geography",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2158",
+          "title": "Urban sustainability and climate governance",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2161",
+          "title": "Human-nature interaction for sustainability analysis and management",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2164",
+          "title": "The creative city",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2166",
+          "title": "Emerging FinTech landscapes",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2167",
+          "title": "Energy, environment, and climate",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2168",
+          "title": "Sustainable land resource planning and management",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2169",
+          "title": "Geography and global health",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2170",
+          "title": "Cultural geographies",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2171",
+          "title": "Environmental, social, and governance",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG2172",
+          "title": "Gender in globalizing world",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG3141",
+          "title": "Remote sensing applications",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG3202",
+          "title": "GIS in environmental studies",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG3203",
+          "title": "Climate change and the environment",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG3204",
+          "title": "Urban hydrology and water quality",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG3207",
+          "title": "Environmental management: Impact assessment",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG3210",
+          "title": "Trees for green and liveable cities",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG3213",
+          "title": "Ecosystem services and sustainable society",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG3214",
+          "title": "Corporate social responsibility and environmental auditing",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG3302",
+          "title": "Principles and practice of ecotourism",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG3304",
+          "title": "Tourism policy and planning",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG3402",
+          "title": "Port and airport development",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG3403",
+          "title": "Exploring Korean cities and urban planning through K-movies and dramas",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG3414",
+          "title": "Social justice and the city",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG3417",
+          "title": "Health, wellbeing, place and GIS",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG3420",
+          "title": "Transport and society",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG3421",
+          "title": "Studying cities: Quantitative methods for urban research",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG3422",
+          "title": "Contemporary urban transportation issues",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG3424",
+          "title": "Urban development and planning: The Hong Kong experience",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG3425",
+          "title": "Cities of the Western Hemisphere",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG3426",
+          "title": "Social networks and geography",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG3428",
+          "title": "Regional economic policy",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG3429",
+          "title": "Geographies of Transpacific Empire",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG3433",
+          "title": "Applied geostatistics for urban research",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG4001",
+          "title": "Non-local field studies",
+          "credits": 6,
+          "recommendedYear": 4,
+          "courseType": "capstone",
+          "group": "Capstone experience",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG4002",
+          "title": "Directed project in geography’",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG4003",
+          "title": "Honours dissertation’",
+          "credits": 12,
+          "recommendedYear": 4,
+          "courseType": "capstone",
+          "group": "Capstone experience",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG4004",
+          "title": "Directed project in urban governance",
+          "credits": 6,
+          "courseType": "capstone",
+          "group": "Capstone experience",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG4005",
+          "title": "Research frontiers in physical geography",
+          "credits": 12,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG4006",
+          "title": "Research frontiers in human geography",
+          "credits": 12,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "GEOG4007",
+          "title": "Advanced remote sensing and GIS",
+          "credits": 12,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3012",
+          "title": "East Asian political economy",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3027",
+          "title": "Public policy research",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3037",
+          "title": "Managing people in public organizations",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "POLI3095",
+          "title": "Civil society and governance",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI2009",
+          "title": "Economic development and social change",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI2064",
+          "title": "Information society in global perspective",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI2066",
+          "title": "The Asian economic miracles and beyond",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI2087",
+          "title": "Urban society and culture",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3002",
+          "title": "Social stratification and social class: Finding and knowing your place",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOCI3054",
+          "title": "Triads and organized crime",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK2034",
+          "title": "Youth crime and juvenile justice issues",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK2122",
+          "title": "Community building and the civil society",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        },
+        {
+          "code": "SOWK4055",
+          "title": "Management in human service organizations",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool",
+          "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
+        }
+      ]
+    },
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6717",
+      "programmeId": "HKU-UG-6717-63",
+      "programmeName": "Bachelor of Social Sciences (Major in Psychology)",
+      "majorId": "HKU-UG-6717-63-M1",
+      "majorName": "Psychology",
+      "majorRole": "second_major",
+      "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf",
+      "officialUrl": "https://psychology.hku.hk/undergraduate/",
+      "ruleSummary": "72-credit second major for non-BPsych students: PSYC1001 + PSYC1004; 12 prerequisite credits from two listed units; five fixed core courses plus one of PSYC2007/PSYC2051; 6 advanced elective credits; one 6-credit Advanced Lab capstone.",
+      "evidenceGap": "The 12-credit prerequisite is expressed by unit rather than a closed coded choice list. The official course list includes the 12-credit PSYC4007 independent study although the second-major elective requirement is 6 credits; its applicability requires manual confirmation.",
+      "recommendedStatus": "pending_manual_review",
+      "courses": [
+        {
+          "code": "PSYC1001",
+          "title": "Introduction to psychology",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Both introductory disciplinary courses required",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC1004",
+          "title": "Introduction to quantitative methods in psychology",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Both introductory disciplinary courses required",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2002",
+          "title": "Psychological testing and measurement",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced disciplinary elective pool; complete 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2005",
+          "title": "Introduction to counselling and therapeutic psychology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced disciplinary elective pool; complete 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2007",
+          "title": "Cognitive psychology",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Advanced disciplinary core alternative; choose 1 of 2",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2009",
+          "title": "Life -span developmental psychology",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Advanced disciplinary core course; required",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2010",
+          "title": "History and issues in psychology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced disciplinary elective pool; complete 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2019",
+          "title": "Psychology of personality",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Advanced disciplinary core course; required",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2020",
+          "title": "Fundamentals of social psychology",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Advanced disciplinary core course; required",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2022",
+          "title": "Biological psychology",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Advanced disciplinary core course; required",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2035",
+          "title": "Introduction to educational psychology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced disciplinary elective pool; complete 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2036",
+          "title": "Special topics in psychology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced disciplinary elective pool; complete 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2038",
+          "title": "Psychology of language",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced disciplinary elective pool; complete 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2051",
+          "title": "Perception",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Advanced disciplinary core alternative; choose 1 of 2",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2059",
+          "title": "Current issues in applied developmental psychol ogy",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced disciplinary elective pool; complete 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2060",
+          "title": "Research and quantitative methods in psychology",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Advanced disciplinary core course; required",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2062",
+          "title": "Introduction to psychopathology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced disciplinary elective pool; complete 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2063",
+          "title": "Industrial/organizational psychology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced disciplinary elective pool; complete 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2065",
+          "title": "Health psychology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced disciplinary elective pool; complete 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2066",
+          "title": "Foundations of cognitive science",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced disciplinary elective pool; complete 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2067",
+          "title": "Seminars in cognitive science",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced disciplinary elective pool; complete 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2071",
+          "title": "Judgments and decision making",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced disciplinary elective pool; complete 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2072",
+          "title": "Research internship in psychology I",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced disciplinary elective pool; complete 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2073",
+          "title": "Research internship in psycho logy II",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced disciplinary elective pool; complete 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2074",
+          "title": "Mindfulness -based cognitive therapy",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced disciplinary elective pool; complete 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2101",
+          "title": "Foundations of neuroscience I",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced disciplinary elective pool; complete 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2102",
+          "title": "Seminar in neuroscience",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced disciplinary elective pool; complete 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2103",
+          "title": "Foundations of neuroscience II",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced disciplinary elective pool; complete 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2110",
+          "title": "Development al neuroscience",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced disciplinary elective pool; complete 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2111",
+          "title": "Neurobiological basis of psychological issues",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced disciplinary elective pool; complete 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2113",
+          "title": "Introduction to brain imaging",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced disciplinary elective pool; complete 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2115",
+          "title": "The science of emotion",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced disciplinary elective pool; complete 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC2116",
+          "title": "Decision making and neuroeconomics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Advanced disciplinary elective pool; complete 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC3051",
+          "title": "Advanced personality psychology",
+          "credits": 6,
+          "courseType": "capstone",
+          "group": "Advanced Lab capstone pool; choose 1 course / 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC3052",
+          "title": "Advanced social psychology",
+          "credits": 6,
+          "courseType": "capstone",
+          "group": "Advanced Lab capstone pool; choose 1 course / 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC3053",
+          "title": "Advanced research in industrial/organizational psychology",
+          "credits": 6,
+          "courseType": "capstone",
+          "group": "Advanced Lab capstone pool; choose 1 course / 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC3054",
+          "title": "Human neuropsychology",
+          "credits": 6,
+          "courseType": "capstone",
+          "group": "Advanced Lab capstone pool; choose 1 course / 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC3061",
+          "title": "Advanc ed issues in perception",
+          "credits": 6,
+          "courseType": "capstone",
+          "group": "Advanced Lab capstone pool; choose 1 course / 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC3064",
+          "title": "Advanced developmental psychology",
+          "credits": 6,
+          "courseType": "capstone",
+          "group": "Advanced Lab capstone pool; choose 1 course / 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC3068",
+          "title": "Advanced cognitive psychology",
+          "credits": 6,
+          "courseType": "capstone",
+          "group": "Advanced Lab capstone pool; choose 1 course / 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        },
+        {
+          "code": "PSYC4007",
+          "title": "Independent study in psychology",
+          "credits": 12,
+          "courseType": "major_elective",
+          "group": "Advanced disciplinary elective pool; complete 6 credits",
+          "sourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
+        }
+      ]
+    }
+  ]
+}

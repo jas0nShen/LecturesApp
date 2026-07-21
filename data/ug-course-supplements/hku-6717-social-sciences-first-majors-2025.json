@@ -1,0 +1,1791 @@
+{
+  "provider": "HKU Faculty of Social Sciences official BSocSc Regulations and Syllabuses",
+  "academicYear": "2025-26 and thereafter",
+  "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf",
+  "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences",
+  "note": "The official 2025-26 BSocSc Regulations and Syllabuses publish the coded first-major structures recorded here. Uncoded cross-discipline prerequisite choices and approved exchange or overseas-summer alternatives are not fabricated as courses. Politics and Public Administration is maintained in the companion supplement, where the official department course list confirms POLI3154 as 6 credits.",
+  "supplements": [
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6717",
+      "programmeId": "HKU-UG-6717-56",
+      "programmeName": "Bachelor of Social Sciences (Major in Computational Social Science)",
+      "majorId": "HKU-UG-6717-56-M1",
+      "majorName": "Computational Social Science",
+      "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf",
+      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences",
+      "courses": [
+        {
+          "code": "BSDS3002",
+          "title": "Social computing: methods and applications",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computational Social Science disciplinary elective pool; standard major selects 5, concentration path selects 1 plus 4 from one named discipline"
+        },
+        {
+          "code": "BSDS3003",
+          "title": "Data structure and algorithm",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computational Social Science disciplinary elective pool; standard major selects 5, concentration path selects 1 plus 4 from one named discipline"
+        },
+        {
+          "code": "COMP3312",
+          "title": "Law and ethics in data science",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computational Social Science disciplinary elective pool; standard major selects 5, concentration path selects 1 plus 4 from one named discipline"
+        },
+        {
+          "code": "FOSS1007",
+          "title": "Introduction to computational social science",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Introductory disciplinary course"
+        },
+        {
+          "code": "FOSS2018",
+          "title": "Social Innovation internship",
+          "credits": 12,
+          "courseType": "experiential",
+          "group": "Social Innovation requirement: FOSS2018 or FOSS2024 + FOSS2025"
+        },
+        {
+          "code": "FOSS2019",
+          "title": "Global Citizenship internship",
+          "credits": 12,
+          "courseType": "experiential",
+          "group": "Global Citizenship requirement: FOSS2019 or FOSS2022 + FOSS2023, or approved 12-credit exchange/overseas summer"
+        },
+        {
+          "code": "FOSS2022",
+          "title": "Global intensive learning programme",
+          "credits": 6,
+          "courseType": "experiential",
+          "group": "Global Citizenship requirement: FOSS2019 or FOSS2022 + FOSS2023, or approved 12-credit exchange/overseas summer"
+        },
+        {
+          "code": "FOSS2023",
+          "title": "Global Social Impact lab",
+          "credits": 6,
+          "courseType": "experiential",
+          "group": "Global Citizenship requirement: FOSS2019 or FOSS2022 + FOSS2023, or approved 12-credit exchange/overseas summer"
+        },
+        {
+          "code": "FOSS2024",
+          "title": "Experiential Learning I – Field Immersion",
+          "credits": 6,
+          "courseType": "experiential",
+          "group": "Social Innovation requirement: FOSS2018 or FOSS2024 + FOSS2025"
+        },
+        {
+          "code": "FOSS2025",
+          "title": "Experiential Learning II – Advanced Praxis",
+          "credits": 6,
+          "courseType": "experiential",
+          "group": "Social Innovation requirement: FOSS2018 or FOSS2024 + FOSS2025"
+        },
+        {
+          "code": "FOSS4007",
+          "title": "Capstone project in computational social science",
+          "credits": 6,
+          "recommendedYear": 4,
+          "courseType": "capstone",
+          "group": "Capstone experience"
+        },
+        {
+          "code": "GEOG2090",
+          "title": "Introduction to geographic information systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computational Social Science disciplinary elective pool; standard major selects 5, concentration path selects 1 plus 4 from one named discipline"
+        },
+        {
+          "code": "GEOG2120",
+          "title": "Introductory spatial analysis",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computational Social Science disciplinary elective pool; standard major selects 5, concentration path selects 1 plus 4 from one named discipline"
+        },
+        {
+          "code": "GEOG2166",
+          "title": "Emerging FinTech landscapes",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computational Social Science disciplinary elective pool; standard major selects 5, concentration path selects 1 plus 4 from one named discipline"
+        },
+        {
+          "code": "GEOG3417",
+          "title": "Health, wellbeing, place and GIS",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computational Social Science disciplinary elective pool; standard major selects 5, concentration path selects 1 plus 4 from one named discipline"
+        },
+        {
+          "code": "GEOG3426",
+          "title": "Social networks and geography",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computational Social Science disciplinary elective pool; standard major selects 5, concentration path selects 1 plus 4 from one named discipline"
+        },
+        {
+          "code": "JMSC2019",
+          "title": "Digital media and society",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computational Social Science disciplinary elective pool; standard major selects 5, concentration path selects 1 plus 4 from one named discipline"
+        },
+        {
+          "code": "JMSC2032",
+          "title": "Digital media analytics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computational Social Science disciplinary elective pool; standard major selects 5, concentration path selects 1 plus 4 from one named discipline"
+        },
+        {
+          "code": "JMSC2034",
+          "title": "Data journalism",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computational Social Science disciplinary elective pool; standard major selects 5, concentration path selects 1 plus 4 from one named discipline"
+        },
+        {
+          "code": "POLI3148",
+          "title": "Data science in politics and public administration",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computational Social Science disciplinary elective pool; standard major selects 5, concentration path selects 1 plus 4 from one named discipline"
+        },
+        {
+          "code": "POLI3149",
+          "title": "Digital governance and regulation",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computational Social Science disciplinary elective pool; standard major selects 5, concentration path selects 1 plus 4 from one named discipline"
+        },
+        {
+          "code": "POLI3160",
+          "title": "Web3.0 for social impact: An innovative and experiential venture",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computational Social Science disciplinary elective pool; standard major selects 5, concentration path selects 1 plus 4 from one named discipline"
+        },
+        {
+          "code": "POLI3161",
+          "title": "E-government: Framework, instruments, and applications",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computational Social Science disciplinary elective pool; standard major selects 5, concentration path selects 1 plus 4 from one named discipline"
+        },
+        {
+          "code": "PSYC2007",
+          "title": "Cognitive psychology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computational Social Science disciplinary elective pool; standard major selects 5, concentration path selects 1 plus 4 from one named discipline"
+        },
+        {
+          "code": "PSYC2009",
+          "title": "Life-span developmental psychology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computational Social Science disciplinary elective pool; standard major selects 5, concentration path selects 1 plus 4 from one named discipline"
+        },
+        {
+          "code": "PSYC2066",
+          "title": "Foundations of cognitive science",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computational Social Science disciplinary elective pool; standard major selects 5, concentration path selects 1 plus 4 from one named discipline"
+        },
+        {
+          "code": "SOCI1005",
+          "title": "Programming for social scientists",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Introductory disciplinary course"
+        },
+        {
+          "code": "SOCI2095",
+          "title": "Quantitative social sciences: from correlation to causality",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course"
+        },
+        {
+          "code": "SOCI3001",
+          "title": "Foundations in computational social science",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course"
+        },
+        {
+          "code": "SOCI3088",
+          "title": "Sociology of knowledge, science and technology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computational Social Science disciplinary elective pool; standard major selects 5, concentration path selects 1 plus 4 from one named discipline"
+        },
+        {
+          "code": "SOCI3101",
+          "title": "Anthropology of artificial intelligence: Human-like machines, machine-like societies",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computational Social Science disciplinary elective pool; standard major selects 5, concentration path selects 1 plus 4 from one named discipline"
+        },
+        {
+          "code": "SOWK3090",
+          "title": "Human behaviour and emerging technology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computational Social Science disciplinary elective pool; standard major selects 5, concentration path selects 1 plus 4 from one named discipline"
+        },
+        {
+          "code": "SOWK3136",
+          "title": "Application of big data analytics in social sciences",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course"
+        }
+      ]
+    },
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6717",
+      "programmeId": "HKU-UG-6717-59",
+      "programmeName": "Bachelor of Social Sciences (Major in Geography)",
+      "majorId": "HKU-UG-6717-59-M1",
+      "majorName": "Geography",
+      "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf",
+      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences",
+      "courses": [
+        {
+          "code": "FOSS2018",
+          "title": "Social Innovation internship",
+          "credits": 12,
+          "courseType": "experiential",
+          "group": "Social Innovation requirement: FOSS2018 or FOSS2024 + FOSS2025"
+        },
+        {
+          "code": "FOSS2019",
+          "title": "Global Citizenship internship",
+          "credits": 12,
+          "courseType": "experiential",
+          "group": "Global Citizenship requirement: FOSS2019 or FOSS2022 + FOSS2023, or approved 12-credit exchange/overseas summer"
+        },
+        {
+          "code": "FOSS2022",
+          "title": "Global intensive learning programme",
+          "credits": 6,
+          "courseType": "experiential",
+          "group": "Global Citizenship requirement: FOSS2019 or FOSS2022 + FOSS2023, or approved 12-credit exchange/overseas summer"
+        },
+        {
+          "code": "FOSS2023",
+          "title": "Global Social Impact lab",
+          "credits": 6,
+          "courseType": "experiential",
+          "group": "Global Citizenship requirement: FOSS2019 or FOSS2022 + FOSS2023, or approved 12-credit exchange/overseas summer"
+        },
+        {
+          "code": "FOSS2024",
+          "title": "Experiential Learning I – Field Immersion",
+          "credits": 6,
+          "courseType": "experiential",
+          "group": "Social Innovation requirement: FOSS2018 or FOSS2024 + FOSS2025"
+        },
+        {
+          "code": "FOSS2025",
+          "title": "Experiential Learning II – Advanced Praxis",
+          "credits": 6,
+          "courseType": "experiential",
+          "group": "Social Innovation requirement: FOSS2018 or FOSS2024 + FOSS2025"
+        },
+        {
+          "code": "GEOG1016",
+          "title": "Nature conservation for sustainable societies",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Introductory disciplinary course"
+        },
+        {
+          "code": "GEOG1017",
+          "title": "Human geography in a globalizing world",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Introductory disciplinary course"
+        },
+        {
+          "code": "GEOG2004",
+          "title": "Atmospheric environment and global climate",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2013",
+          "title": "Sustainable development: Introduction and quantification",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2018",
+          "title": "Transport geography",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2030",
+          "title": "Global development",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2055",
+          "title": "Water resources and management",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2056",
+          "title": "Tourism and the shrinking world",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2057",
+          "title": "Leisure and recreation in modern society",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2065",
+          "title": "Urban planning: principles and practices",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2078",
+          "title": "Cities and the urban world: A global introduction to urban geography",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2090",
+          "title": "Introduction to geographic information systems",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Disciplinary method course; choose at least 6 credits"
+        },
+        {
+          "code": "GEOG2096",
+          "title": "Human impacts on ecosystems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2109",
+          "title": "Population geography and social development",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2120",
+          "title": "Introductory spatial analysis",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2124",
+          "title": "Environmental change and socio-political conflicts",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2125",
+          "title": "China’s natural environment and resources",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2126",
+          "title": "Understanding China: The land and the people",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2127",
+          "title": "Environmental management",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2128",
+          "title": "Economic geography",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2130",
+          "title": "Field methods in geography",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Disciplinary method course; choose at least 6 credits"
+        },
+        {
+          "code": "GEOG2132",
+          "title": "World cities",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2135",
+          "title": "Climate, energy and life",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2136",
+          "title": "Political geography: international relations and the world economy",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2137",
+          "title": "Introduction to research design in geography",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2138",
+          "title": "Hong Kong’s environment: Issues and policies",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2140",
+          "title": "Landscape ecology and sustainable societies",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2143",
+          "title": "Planning in an era of changes",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2144",
+          "title": "The evolution of transport policy in Hong Kong",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2145",
+          "title": "Introduction to disaster risk management techniques",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2146",
+          "title": "Climate change, air quality and environmental monitoring",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2147",
+          "title": "Building smart cities with GIS",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2149",
+          "title": "Financial geography",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2150",
+          "title": "Introduction to China’s environmental and sustainable development issues",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2151",
+          "title": "Climate change and social responses",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2152",
+          "title": "Health and medical geography",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2153",
+          "title": "Smartphones, K-pop, and Kimchi: South Korea beyond the miracle",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2154",
+          "title": "Healthy food, place, and sustainability",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2156",
+          "title": "Introduction to remote sensing",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Disciplinary method course; choose at least 6 credits"
+        },
+        {
+          "code": "GEOG2157",
+          "title": "Open-source GIS",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Disciplinary method course; choose at least 6 credits"
+        },
+        {
+          "code": "GEOG2158",
+          "title": "Urban sustainability and climate governance",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2160",
+          "title": "Sustainable waste management and circular economy in Hong Kong",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2161",
+          "title": "Human-nature interaction for sustainability analysis and management",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2163",
+          "title": "Geographies of religion - people, spaces and spiritualities",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2164",
+          "title": "The creative city",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2165",
+          "title": "Global landforms",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2166",
+          "title": "Emerging FinTech landscapes",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2167",
+          "title": "Energy, environment, and climate",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2168",
+          "title": "Sustainable land resource planning and management",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2169",
+          "title": "Geography and global health",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2170",
+          "title": "Cultural geographies",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2171",
+          "title": "Environmental, social, and governance",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG2172",
+          "title": "Gender in a globalizing world",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG3101",
+          "title": "China’s tourism resources and management",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG3104",
+          "title": "Globalizing China: Development issues",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG3141",
+          "title": "Remote sensing applications",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Disciplinary method course; choose at least 6 credits"
+        },
+        {
+          "code": "GEOG3202",
+          "title": "GIS in environmental studies",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG3203",
+          "title": "Climate change and the environment",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG3204",
+          "title": "Urban hydrology and water quality",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG3205",
+          "title": "Environmental hazards",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG3207",
+          "title": "Environmental management: Impact assessment",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG3210",
+          "title": "Trees for green and liveable cities",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG3213",
+          "title": "Ecosystem services and sustainable society",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG3214",
+          "title": "Corporate social responsibility and environmental auditing",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG3302",
+          "title": "Principles and practice of ecotourism",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG3304",
+          "title": "Tourism policy and planning",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG3402",
+          "title": "Port and airport development",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG3403",
+          "title": "Exploring Korean cities and urban planning through K-movies and dramas",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG3414",
+          "title": "Social justice and the city",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG3417",
+          "title": "Health, wellbeing, place and GIS",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG3420",
+          "title": "Transport and society",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG3421",
+          "title": "Studying cities: quantitative methods for urban research",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG3422",
+          "title": "Contemporary urban transportation issues",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG3424",
+          "title": "Urban development and planning: the Hong Kong experience",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG3425",
+          "title": "Cities of the Western Hemisphere",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG3426",
+          "title": "Social networks and geography",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG3427",
+          "title": "Human-nature interaction and sustainability",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG3428",
+          "title": "Regional economic policy",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG3429",
+          "title": "Geographies of transpacific empire",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG3430",
+          "title": "Geospatial data for environment change",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG3431",
+          "title": "Advanced GIS",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG3432",
+          "title": "GIS workshop",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG3433",
+          "title": "Applied geostatistics for urban research",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG4001",
+          "title": "Non-local field studies",
+          "credits": 6,
+          "recommendedYear": 4,
+          "courseType": "capstone",
+          "group": "Capstone experience"
+        },
+        {
+          "code": "GEOG4002",
+          "title": "Directed project in geography",
+          "credits": 6,
+          "recommendedYear": 4,
+          "courseType": "capstone",
+          "group": "Capstone experience"
+        },
+        {
+          "code": "GEOG4003",
+          "title": "Honours dissertation",
+          "credits": 12,
+          "recommendedYear": 4,
+          "courseType": "capstone",
+          "group": "Capstone experience"
+        },
+        {
+          "code": "GEOG4008",
+          "title": "Research frontiers in physical geography – Part A",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG4009",
+          "title": "Research frontiers in physical geography – Part B",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG4010",
+          "title": "Research fFrontiers in human geography – Part A",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG4011",
+          "title": "Research frontiers in human geography – Part B",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG4012",
+          "title": "Advanced GIS",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        },
+        {
+          "code": "GEOG4013",
+          "title": "Advanced remote sensing",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool; at least 18 credits at Level 3000+ excluding GEOG4001"
+        }
+      ]
+    },
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6717",
+      "programmeId": "HKU-UG-6717-64",
+      "programmeName": "Bachelor of Social Sciences (Major in Social Policy and Social Development)",
+      "majorId": "HKU-UG-6717-64-M1",
+      "majorName": "Social Policy and Social Development",
+      "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf",
+      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences",
+      "courses": [
+        {
+          "code": "FOSS2018",
+          "title": "Social Innovation internship",
+          "credits": 12,
+          "courseType": "experiential",
+          "group": "Social Innovation requirement: FOSS2018 or FOSS2024 + FOSS2025"
+        },
+        {
+          "code": "FOSS2019",
+          "title": "Global Citizenship internship",
+          "credits": 12,
+          "courseType": "experiential",
+          "group": "Global Citizenship requirement: FOSS2019 or FOSS2022 + FOSS2023, or approved 12-credit exchange/overseas summer"
+        },
+        {
+          "code": "FOSS2022",
+          "title": "Global intensive learning programme",
+          "credits": 6,
+          "courseType": "experiential",
+          "group": "Global Citizenship requirement: FOSS2019 or FOSS2022 + FOSS2023, or approved 12-credit exchange/overseas summer"
+        },
+        {
+          "code": "FOSS2023",
+          "title": "Global Social Impact lab",
+          "credits": 6,
+          "courseType": "experiential",
+          "group": "Global Citizenship requirement: FOSS2019 or FOSS2022 + FOSS2023, or approved 12-credit exchange/overseas summer"
+        },
+        {
+          "code": "FOSS2024",
+          "title": "Experiential Learning I – Field Immersion",
+          "credits": 6,
+          "courseType": "experiential",
+          "group": "Social Innovation requirement: FOSS2018 or FOSS2024 + FOSS2025"
+        },
+        {
+          "code": "FOSS2025",
+          "title": "Experiential Learning II – Advanced Praxis",
+          "credits": 6,
+          "courseType": "experiential",
+          "group": "Social Innovation requirement: FOSS2018 or FOSS2024 + FOSS2025"
+        },
+        {
+          "code": "SOWK1015",
+          "title": "Introduction to social policy and social development",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Introductory disciplinary course"
+        },
+        {
+          "code": "SOWK2023",
+          "title": "Social policy issues in Hong Kong",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective — Theory and Social Issues; select within 24-credit elective requirement"
+        },
+        {
+          "code": "SOWK2062",
+          "title": "Special topics in policy study",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective — Theory and Social Issues; select within 24-credit elective requirement"
+        },
+        {
+          "code": "SOWK2122",
+          "title": "Community building and the civil society",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective — Theory and Social Issues; select within 24-credit elective requirement"
+        },
+        {
+          "code": "SOWK2131",
+          "title": "Behavioural economics for social change",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective — Theory and Social Issues; select within 24-credit elective requirement"
+        },
+        {
+          "code": "SOWK2132",
+          "title": "International comparative social policy",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective — Theory and Social Issues; select within 24-credit elective requirement"
+        },
+        {
+          "code": "SOWK2134",
+          "title": "Social development in modern China",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective — Theory and Social Issues; select within 24-credit elective requirement"
+        },
+        {
+          "code": "SOWK2139",
+          "title": "Human centered approach for social innovation: Design thinking",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective — Theory and Social Issues; select within 24-credit elective requirement"
+        },
+        {
+          "code": "SOWK2140",
+          "title": "Diversity and social inclusion",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective — Theory and Social Issues; select within 24-credit elective requirement"
+        },
+        {
+          "code": "SOWK2141",
+          "title": "Social entrepreneurship and social innovation",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course"
+        },
+        {
+          "code": "SOWK2142",
+          "title": "Advanced social policy and social development",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course"
+        },
+        {
+          "code": "SOWK2143",
+          "title": "Social research methods",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course"
+        },
+        {
+          "code": "SOWK2144",
+          "title": "Introduction to social data analysis",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Major core / compulsory course"
+        },
+        {
+          "code": "SOWK3088",
+          "title": "Becoming a change maker: Skills and practice for effective social entrepreneurship and social innovation",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective — Theory and Social Issues; select within 24-credit elective requirement"
+        },
+        {
+          "code": "SOWK3092",
+          "title": "Migration and mobility",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective — Theory and Social Issues; select within 24-credit elective requirement"
+        },
+        {
+          "code": "SOWK3094",
+          "title": "Project development and management",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective — Theory and Social Issues; select within 24-credit elective requirement"
+        },
+        {
+          "code": "SOWK3098",
+          "title": "Community partnership, public engagement and political dynamics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective — Theory and Social Issues; select within 24-credit elective requirement"
+        },
+        {
+          "code": "SOWK3099",
+          "title": "Population and development",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective — Theory and Social Issues; select within 24-credit elective requirement"
+        },
+        {
+          "code": "SOWK3133",
+          "title": "Policy advocacy practice",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective — Theory and Social Issues; select within 24-credit elective requirement"
+        },
+        {
+          "code": "SOWK3135",
+          "title": "Doing good and doing well: Business model for social enterprise",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective — Theory and Social Issues; select within 24-credit elective requirement"
+        },
+        {
+          "code": "SOWK3136",
+          "title": "Application of big data analytics in social sciences",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective — Research and Methodology; no more than 2 courses"
+        },
+        {
+          "code": "SOWK3137",
+          "title": "Qualitative data analysis",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective — Research and Methodology; no more than 2 courses"
+        },
+        {
+          "code": "SOWK3138",
+          "title": "Advanced social data analysis",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective — Research and Methodology; no more than 2 courses"
+        },
+        {
+          "code": "SOWK3139",
+          "title": "Policy and programme evaluation",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective — Research and Methodology; no more than 2 courses"
+        },
+        {
+          "code": "SOWK3140",
+          "title": "Survey methods for social science research",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective — Research and Methodology; no more than 2 courses"
+        },
+        {
+          "code": "SOWK4011",
+          "title": "Capstone project in social policy and social development",
+          "credits": 6,
+          "courseType": "capstone",
+          "group": "Capstone experience; official timing Year III or IV"
+        },
+        {
+          "code": "SOWK4055",
+          "title": "Management in human service organizations",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective — Theory and Social Issues; select within 24-credit elective requirement"
+        }
+      ]
+    },
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6717",
+      "programmeId": "HKU-UG-6717-65",
+      "programmeName": "Bachelor of Social Sciences (Major in Sociology)",
+      "majorId": "HKU-UG-6717-65-M1",
+      "majorName": "Sociology",
+      "sourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf",
+      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences",
+      "courses": [
+        {
+          "code": "FOSS2018",
+          "title": "Social Innovation internship",
+          "credits": 12,
+          "courseType": "experiential",
+          "group": "Social Innovation requirement: FOSS2018 or FOSS2024 + FOSS2025"
+        },
+        {
+          "code": "FOSS2019",
+          "title": "Global Citizenship internship",
+          "credits": 12,
+          "courseType": "experiential",
+          "group": "Global Citizenship requirement: FOSS2019 or FOSS2022 + FOSS2023, or approved 12-credit exchange/overseas summer"
+        },
+        {
+          "code": "FOSS2022",
+          "title": "Global intensive learning programme",
+          "credits": 6,
+          "courseType": "experiential",
+          "group": "Global Citizenship requirement: FOSS2019 or FOSS2022 + FOSS2023, or approved 12-credit exchange/overseas summer"
+        },
+        {
+          "code": "FOSS2023",
+          "title": "Global Social Impact lab",
+          "credits": 6,
+          "courseType": "experiential",
+          "group": "Global Citizenship requirement: FOSS2019 or FOSS2022 + FOSS2023, or approved 12-credit exchange/overseas summer"
+        },
+        {
+          "code": "FOSS2024",
+          "title": "Experiential Learning I – Field Immersion",
+          "credits": 6,
+          "courseType": "experiential",
+          "group": "Social Innovation requirement: FOSS2018 or FOSS2024 + FOSS2025"
+        },
+        {
+          "code": "FOSS2025",
+          "title": "Experiential Learning II – Advanced Praxis",
+          "credits": 6,
+          "courseType": "experiential",
+          "group": "Social Innovation requirement: FOSS2018 or FOSS2024 + FOSS2025"
+        },
+        {
+          "code": "SOCI1001",
+          "title": "Introduction to sociology",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Introductory disciplinary course"
+        },
+        {
+          "code": "SOCI1003",
+          "title": "Introduction to anthropology",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Introductory disciplinary course"
+        },
+        {
+          "code": "SOCI1004",
+          "title": "Introduction to sociology: The world’s on fire (and other problems)",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Introductory disciplinary course"
+        },
+        {
+          "code": "SOCI2001",
+          "title": "Classical social theory",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Compulsory course"
+        },
+        {
+          "code": "SOCI2030",
+          "title": "Quantitative research methods",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Compulsory methods alternative; choose 1 of 2"
+        },
+        {
+          "code": "SOCI2043",
+          "title": "Qualitative research methods",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Compulsory course"
+        },
+        {
+          "code": "SOCI2071",
+          "title": "Criminology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI2080",
+          "title": "Media and culture in modern societies",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI2095",
+          "title": "Quantitative Social Science: From correlation to causality",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Compulsory methods alternative; choose 1 of 2"
+        },
+        {
+          "code": "SOCI3001",
+          "title": "Foundations in computational social science",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3002",
+          "title": "Social stratification and social class: Finding and knowing your place",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Core course pool; choose 2 courses / 12 credits"
+        },
+        {
+          "code": "SOCI3003",
+          "title": "China’s vision for humanity: Critical issues facing contemporary Chinese society",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3006",
+          "title": "Critical issues in media studies",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3009",
+          "title": "Economic development and social change",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3010",
+          "title": "Education and society",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Core course pool; choose 2 courses / 12 credits"
+        },
+        {
+          "code": "SOCI3011",
+          "title": "Gender and crime",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3012",
+          "title": "Gender and society",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Core course pool; choose 2 courses / 12 credits"
+        },
+        {
+          "code": "SOCI3013",
+          "title": "Gender in Chinese societies",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3015",
+          "title": "Hong Kong popular culture",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3016",
+          "title": "Hong Kong society",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3017",
+          "title": "Japanese economic institutions",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3019",
+          "title": "Modern culture and lifestyles",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3021",
+          "title": "Marriage and the family",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Core course pool; choose 2 courses / 12 credits"
+        },
+        {
+          "code": "SOCI3024",
+          "title": "Modern social theory",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Compulsory course"
+        },
+        {
+          "code": "SOCI3027",
+          "title": "Politics and society",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Core course pool; choose 2 courses / 12 credits"
+        },
+        {
+          "code": "SOCI3033",
+          "title": "Research project",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3035",
+          "title": "Selected topics in social and cultural anthropology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3036",
+          "title": "Anthropology of South China",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3038",
+          "title": "Social control",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3041",
+          "title": "Social problems",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Core course pool; choose 2 courses / 12 credits"
+        },
+        {
+          "code": "SOCI3044",
+          "title": "Economic sociology",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Core course pool; choose 2 courses / 12 credits"
+        },
+        {
+          "code": "SOCI3046",
+          "title": "Sociology of law",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3047",
+          "title": "Sociology of punishment",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3049",
+          "title": "The body and society",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3052",
+          "title": "Traditional Chinese society",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3053",
+          "title": "Youth culture",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3054",
+          "title": "Triads and organized crime",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3055",
+          "title": "Tourism, culture and society",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3056",
+          "title": "Criminal justice: Policy and practice",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3060",
+          "title": "Fraud, corruption and computer crime",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3061",
+          "title": "Religion and society",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Core course pool; choose 2 courses / 12 credits"
+        },
+        {
+          "code": "SOCI3063",
+          "title": "Ethnicity, culture and identity",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3064",
+          "title": "Information society in global perspective",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3066",
+          "title": "The Asian economic miracles and beyond",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3067",
+          "title": "Crime and the media",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3068",
+          "title": "Religious movements and conflicts",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3069",
+          "title": "Crime and the city",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3073",
+          "title": "Global migration",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Core course pool; choose 2 courses / 12 credits"
+        },
+        {
+          "code": "SOCI3075",
+          "title": "Hong Kong: Community and cultural policy in the global context",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3076",
+          "title": "Globalization and crime",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3077",
+          "title": "Media, culture and communication in contemporary China",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3078",
+          "title": "Drug control in comparative perspective",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3081",
+          "title": "Sexuality, culture and identity",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3082",
+          "title": "Social and cultural studies internship",
+          "credits": 12,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3084",
+          "title": "Globalization and culture",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3085",
+          "title": "Understanding media",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3086",
+          "title": "Sociology of art",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3087",
+          "title": "Urban society and culture",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3088",
+          "title": "Sociology of knowledge, science and technology",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Core course pool; choose 2 courses / 12 credits"
+        },
+        {
+          "code": "SOCI3089",
+          "title": "Japanese consumer society and popular culture",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3091",
+          "title": "Sociology of culture",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Core course pool; choose 2 courses / 12 credits"
+        },
+        {
+          "code": "SOCI3092",
+          "title": "Social spaces",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Core course pool; choose 2 courses / 12 credits"
+        },
+        {
+          "code": "SOCI3093",
+          "title": "Medicine and society",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Core course pool; choose 2 courses / 12 credits"
+        },
+        {
+          "code": "SOCI3094",
+          "title": "Youth crime in the global city",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3095",
+          "title": "Public sociology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3096",
+          "title": "Special topics in sociology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3097",
+          "title": "Special topics in criminology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3098",
+          "title": "Special topics in media and cultural studies",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3099",
+          "title": "Special topics in contemporary theory",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3100",
+          "title": "Culture and cognition",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3101",
+          "title": "Anthropology of artificial intelligence: Human-like machines, machine- like societies",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3102",
+          "title": "Understanding population change",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Core course pool; choose 2 courses / 12 credits"
+        },
+        {
+          "code": "SOCI3103",
+          "title": "Social movements and contentious politics",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Core course pool; choose 2 courses / 12 credits"
+        },
+        {
+          "code": "SOCI3104",
+          "title": "The sociology of creativity",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI3105",
+          "title": "Global criminology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary elective pool"
+        },
+        {
+          "code": "SOCI4095",
+          "title": "Capstone project",
+          "credits": 6,
+          "courseType": "capstone",
+          "group": "Capstone experience"
+        }
+      ]
+    }
+  ]
+}

@@ -47,15 +47,15 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.programmeCount, 445);
   assert.equal(summary.majorCount, 677);
   assert.equal(summary.requirementCount, 4);
-  assert.equal(summary.courseCount, 12558);
+  assert.equal(summary.courseCount, 13245);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 12544);
-  assert.equal(summary.programmeWithCoursesCount, 180);
-  assert.equal(summary.pendingProgrammeCount, 264);
+  assert.equal(summary.codedCourseCount, 13231);
+  assert.equal(summary.programmeWithCoursesCount, 192);
+  assert.equal(summary.pendingProgrammeCount, 252);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
-  assert.equal(summary.coveragePercent, 41);
+  assert.equal(summary.coveragePercent, 43);
   assert.match(summary.generatedAt, /^\d{4}-\d{2}-\d{2}T/);
   assert.match(summary.generatedDate, /^\d{4}-\d{2}-\d{2}$/);
 });
@@ -532,10 +532,10 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert.equal(coverage.length, 8);
   assert.equal(hku.programmeCount, 136);
   assert.equal(hku.majorCount, 136);
-  assert.equal(hku.programmeWithCoursesCount, 41);
-  assert.equal(hku.pendingProgrammeCount, 95);
-  assert.equal(hku.coveragePercent, 30);
-  assert.equal(hku.codedCourseCount, 2648);
+  assert.equal(hku.programmeWithCoursesCount, 53);
+  assert.equal(hku.pendingProgrammeCount, 83);
+  assert.equal(hku.coveragePercent, 39);
+  assert.equal(hku.codedCourseCount, 3335);
   assert.match(hku.generatedDate, /^\d{4}-\d{2}-\d{2}$/);
   assert.match(hku.updatedLabel, /^更新于 \d{4}-\d{2}-\d{2}$/);
   assert.equal(hku.badge, 'COURSES');
@@ -2775,6 +2775,130 @@ test('HKU Chinese Medicine exposes the applicable six-year professional curricul
   assert(courses.some((course) => course.courseCode === 'BCHM6601' && course.courseType === 'capstone' && course.credits === 90 && course.recommendedYear === 6));
   assert(courses.some((course) => course.courseCode === 'BCHM4608' && course.recommendedYear === 0 && /spans Year 4/.test(course.description)));
   assert.equal(courses.filter((course) => course.semester).length, 7);
+});
+
+test('HKU 6717 exposes all 12 published BSocSc first- and second-major course structures', () => {
+  const expected = [
+    {
+      programmeId: 'HKU-UG-6717-55',
+      programmeName: 'Bachelor of Social Sciences (Major in Cognitive Science)',
+      majorId: 'HKU-UG-6717-55-M1',
+      majorName: 'Cognitive Science',
+      courseCount: 44,
+      representatives: { foundation: 'COMP1117', core: 'PSYC2066', major_elective: 'COMP3270', capstone: 'PSYC4068' }
+    },
+    {
+      programmeId: 'HKU-UG-6717-56',
+      programmeName: 'Bachelor of Social Sciences (Major in Computational Social Science)',
+      majorId: 'HKU-UG-6717-56-M1',
+      majorName: 'Computational Social Science',
+      courseCount: 33,
+      representatives: { core: 'SOCI3001', major_elective: 'BSDS3002', capstone: 'FOSS4007', experiential: 'FOSS2018' }
+    },
+    {
+      programmeId: 'HKU-UG-6717-57',
+      programmeName: 'Bachelor of Social Sciences (Major in Counselling)',
+      majorId: 'HKU-UG-6717-57-M1',
+      majorName: 'Counselling',
+      courseCount: 40,
+      representatives: { foundation: 'SOWK1004', core: 'SOWK2137', major_elective: 'SOWK2020', capstone: 'SOWK4009' }
+    },
+    {
+      programmeId: 'HKU-UG-6717-58',
+      programmeName: 'Bachelor of Social Sciences (Major in Criminology)',
+      majorId: 'HKU-UG-6717-58-M1',
+      majorName: 'Criminology',
+      courseCount: 49,
+      representatives: { foundation: 'SOCI1001', core: 'SOCI2030', major_elective: 'JMSC2001', capstone: 'SOCI4096' }
+    },
+    {
+      programmeId: 'HKU-UG-6717-59',
+      programmeName: 'Bachelor of Social Sciences (Major in Geography)',
+      majorId: 'HKU-UG-6717-59-M1',
+      majorName: 'Geography',
+      courseCount: 98,
+      representatives: { core: 'GEOG2090', major_elective: 'GEOG3424', capstone: 'GEOG4003', experiential: 'FOSS2019' }
+    },
+    {
+      programmeId: 'HKU-UG-6717-60',
+      programmeName: 'Bachelor of Social Sciences (Major in Media and Cultural Studies)',
+      majorId: 'HKU-UG-6717-60-M1',
+      majorName: 'Media and Cultural Studies',
+      courseCount: 51,
+      representatives: { foundation: 'SOCI1001', core: 'SOCI2043', major_elective: 'AMER2014', capstone: 'SOCI4098' }
+    },
+    {
+      programmeId: 'HKU-UG-6717-61',
+      programmeName: 'Bachelor of Social Sciences (Major in Neuroscience)',
+      majorId: 'HKU-UG-6717-61-M1',
+      majorName: 'Neuroscience',
+      courseCount: 22,
+      representatives: { foundation: 'PSYC1001', core: 'PSYC2101', major_elective: 'BBMS3011', capstone: 'PSYC3061' }
+    },
+    {
+      programmeId: 'HKU-UG-6717-62',
+      programmeName: 'Bachelor of Social Sciences (Major in Politics and Public Administration)',
+      majorId: 'HKU-UG-6717-62-M1',
+      majorName: 'Politics and Public Administration',
+      courseCount: 111,
+      representatives: { foundation: 'POLI1003', core: 'POLI2104', major_elective: 'POLI3154', capstone: 'POLI4046', experiential: 'FOSS2018' }
+    },
+    {
+      programmeId: 'HKU-UG-6717-63',
+      programmeName: 'Bachelor of Social Sciences (Major in Psychology)',
+      majorId: 'HKU-UG-6717-63-M1',
+      majorName: 'Psychology',
+      courseCount: 41,
+      representatives: { foundation: 'PSYC1001', core: 'PSYC2007', major_elective: 'PSYC2002', capstone: 'PSYC3051' }
+    },
+    {
+      programmeId: 'HKU-UG-6717-64',
+      programmeName: 'Bachelor of Social Sciences (Major in Social Policy and Social Development)',
+      majorId: 'HKU-UG-6717-64-M1',
+      majorName: 'Social Policy and Social Development',
+      courseCount: 33,
+      representatives: { core: 'SOWK2141', major_elective: 'SOWK4055', capstone: 'SOWK4011', experiential: 'FOSS2024' }
+    },
+    {
+      programmeId: 'HKU-UG-6717-65',
+      programmeName: 'Bachelor of Social Sciences (Major in Sociology)',
+      majorId: 'HKU-UG-6717-65-M1',
+      majorName: 'Sociology',
+      courseCount: 82,
+      representatives: { core: 'SOCI3024', major_elective: 'SOCI3105', capstone: 'SOCI4095', experiential: 'FOSS2025' }
+    },
+    {
+      programmeId: 'HKU-UG-6717-66',
+      programmeName: 'Bachelor of Social Sciences (Major in Urban Governance)',
+      majorId: 'HKU-UG-6717-66-M1',
+      majorName: 'Urban Governance',
+      courseCount: 83,
+      representatives: { foundation: 'GEOG1002', core: 'GEOG2013', major_elective: 'GEOG2018', capstone: 'GEOG4001' }
+    }
+  ];
+
+  assert.equal(expected.length, 12);
+  expected.forEach(({ programmeId, programmeName, majorId, majorName, courseCount, representatives }) => {
+    const programme = ugService.getProgramme(programmeId);
+    const majors = ugService.listMajors(programmeId);
+    const courses = ugService.listMajorCourses(programmeId, majorId);
+
+    assert.equal(programme.id, programmeId);
+    assert.equal(programme.code, '6717');
+    assert.equal(programme.nameEn, programmeName);
+    assert.equal(programme.sourceStatus, 'course_codes_available');
+    assert.deepEqual(majors.map((major) => [major.id, major.nameEn]), [[majorId, majorName]]);
+    assert.equal(programme.codedCourseCount, courseCount);
+    assert.equal(majors[0].codedCourseCount, courseCount);
+    assert.equal(courses.length, courseCount);
+    assert.equal(new Set(courses.map((course) => course.courseCode)).size, courseCount);
+    Object.entries(representatives).forEach(([courseType, courseCode]) => {
+      assert(courses.some((course) => course.courseCode === courseCode && course.courseType === courseType));
+    });
+    courses.forEach((course) => {
+      assert.doesNotMatch(`${course.courseCode} ${course.titleEn}`, /(?:\b(?:TODO|TBC|TBD|PLACEHOLDER)\b|待填|待补|xxx)/i);
+    });
+  });
 });
 
 test('HKBU Accounting exposes only the closed 67-unit BBA and concentration requirements', () => {

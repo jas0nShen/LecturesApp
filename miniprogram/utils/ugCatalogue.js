@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-20T08:55:17.142Z",
+  "generatedAt": "2026-07-21T12:30:53.135Z",
   "universities": [
     {
       "id": "HKU",
@@ -1574,9 +1574,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 44,
+      "codedCourseCount": 44,
+      "courseSourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
     },
     {
       "id": "HKU-UG-6717-56",
@@ -1593,9 +1594,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 33,
+      "codedCourseCount": 33,
+      "courseSourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
     },
     {
       "id": "HKU-UG-6717-57",
@@ -1612,9 +1614,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 40,
+      "codedCourseCount": 40,
+      "courseSourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
     },
     {
       "id": "HKU-UG-6717-58",
@@ -1631,9 +1634,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 49,
+      "codedCourseCount": 49,
+      "courseSourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
     },
     {
       "id": "HKU-UG-6717-59",
@@ -1650,9 +1654,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 98,
+      "codedCourseCount": 98,
+      "courseSourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
     },
     {
       "id": "HKU-UG-6717-60",
@@ -1669,9 +1674,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 51,
+      "codedCourseCount": 51,
+      "courseSourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
     },
     {
       "id": "HKU-UG-6717-61",
@@ -1688,9 +1694,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 22,
+      "codedCourseCount": 22,
+      "courseSourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
     },
     {
       "id": "HKU-UG-6717-62",
@@ -1707,9 +1714,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 111,
+      "codedCourseCount": 111,
+      "courseSourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
     },
     {
       "id": "HKU-UG-6717-63",
@@ -1726,9 +1734,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 41,
+      "codedCourseCount": 41,
+      "courseSourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
     },
     {
       "id": "HKU-UG-6717-64",
@@ -1745,9 +1754,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 33,
+      "codedCourseCount": 33,
+      "courseSourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
     },
     {
       "id": "HKU-UG-6717-65",
@@ -1764,9 +1774,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 82,
+      "codedCourseCount": 82,
+      "courseSourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
     },
     {
       "id": "HKU-UG-6717-66",
@@ -1783,9 +1794,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 83,
+      "codedCourseCount": 83,
+      "courseSourceUrl": "https://web.socsc.hku.hk/wp-content/uploads/2026/02/BSocSc_2025-26.pdf"
     },
     {
       "id": "HKU-UG-6729-67",
@@ -9705,8 +9717,8 @@ const catalogue = {
       "code": "COGNITIVE-SCIENCE",
       "nameEn": "Cognitive Science",
       "nameZh": "Cognitive Science",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 45,
+      "codedCourseCount": 44,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences"
     },
     {
@@ -9715,8 +9727,8 @@ const catalogue = {
       "code": "COMPUTATIONAL-SOCIAL-SCIENCE",
       "nameEn": "Computational Social Science",
       "nameZh": "Computational Social Science",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 34,
+      "codedCourseCount": 33,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences"
     },
     {
@@ -9725,8 +9737,8 @@ const catalogue = {
       "code": "COUNSELLING",
       "nameEn": "Counselling",
       "nameZh": "Counselling",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 41,
+      "codedCourseCount": 40,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences"
     },
     {
@@ -9735,8 +9747,8 @@ const catalogue = {
       "code": "CRIMINOLOGY",
       "nameEn": "Criminology",
       "nameZh": "Criminology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 50,
+      "codedCourseCount": 49,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences"
     },
     {
@@ -9745,8 +9757,8 @@ const catalogue = {
       "code": "GEOGRAPHY",
       "nameEn": "Geography",
       "nameZh": "Geography",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 99,
+      "codedCourseCount": 98,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences"
     },
     {
@@ -9755,8 +9767,8 @@ const catalogue = {
       "code": "MEDIA-AND-CULTURAL-STUDIES",
       "nameEn": "Media and Cultural Studies",
       "nameZh": "Media and Cultural Studies",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 52,
+      "codedCourseCount": 51,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences"
     },
     {
@@ -9765,8 +9777,8 @@ const catalogue = {
       "code": "NEUROSCIENCE",
       "nameEn": "Neuroscience",
       "nameZh": "Neuroscience",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 23,
+      "codedCourseCount": 22,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences"
     },
     {
@@ -9775,8 +9787,8 @@ const catalogue = {
       "code": "POLITICS-AND-PUBLIC-ADMINISTRATION",
       "nameEn": "Politics and Public Administration",
       "nameZh": "Politics and Public Administration",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 112,
+      "codedCourseCount": 111,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences"
     },
     {
@@ -9785,9 +9797,9 @@ const catalogue = {
       "code": "PSYCHOLOGY",
       "nameEn": "Psychology",
       "nameZh": "Psychology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences"
+      "courseCount": 42,
+      "codedCourseCount": 41,
+      "officialUrl": "https://psychology.hku.hk/undergraduate/"
     },
     {
       "id": "HKU-UG-6717-64-M1",
@@ -9795,8 +9807,8 @@ const catalogue = {
       "code": "SOCIAL-POLICY-AND-SOCIAL-DEVELOPMENT",
       "nameEn": "Social Policy and Social Development",
       "nameZh": "Social Policy and Social Development",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 34,
+      "codedCourseCount": 33,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences"
     },
     {
@@ -9805,8 +9817,8 @@ const catalogue = {
       "code": "SOCIOLOGY",
       "nameEn": "Sociology",
       "nameZh": "Sociology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 83,
+      "codedCourseCount": 82,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences"
     },
     {
@@ -9815,8 +9827,8 @@ const catalogue = {
       "code": "URBAN-GOVERNANCE",
       "nameEn": "Urban Governance",
       "nameZh": "Urban Governance",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 84,
+      "codedCourseCount": 83,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences"
     },
     {
@@ -15924,12 +15936,12 @@ const catalogue = {
     "CITYU": 2725,
     "CUHK": 638,
     "HKBU": 2650,
-    "HKU": 2648,
+    "HKU": 3335,
     "HKUST": 690,
     "LINGNAN": 721,
     "POLYU": 2472
   },
-  "codedCourseCount": 12544
+  "codedCourseCount": 13231
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
