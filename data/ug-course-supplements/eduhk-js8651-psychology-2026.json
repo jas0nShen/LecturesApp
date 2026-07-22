@@ -1,0 +1,52 @@
+{
+  "provider": "The Education University of Hong Kong 2026/27 Undergraduate Programme Course List",
+  "academicYear": "2026/27",
+  "sourceUrl": "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BSocSc(Psy).pdf",
+  "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/psy",
+  "supplements": [
+    {
+      "universityCode": "EDUHK",
+      "programmeId": "EDUHK-UG-JS8651-14",
+      "jupasCode": "JS8651",
+      "majorId": "EDUHK-UG-JS8651-14-M1",
+      "evidenceNote": "The official 2026/27 Major Course List publishes 34 unique course codes and titles under one broad Major Course List: 29 PSY courses and five Cross-Faculty Core rows. It marks PSY1030 for Year 1 Admission only and states that Cross-Faculty Core Components I, II and III are worth 1 credit point each, with one of three published Component III options chosen. The current Programme page confirms EdUHK Programme Code A4B075, JUPAS Code JS8651, and identifies PSY4038 Industrial Internship and PSY4074 Scientific Study in Psychology I: Research Internship as the two 3-cp Internship options. The public course list does not map the remaining PSY rows to the published Foundation and Core, Major Interdisciplinary, Major Elective or concentration domains, does not publish their individual credit points, and does not publish a recommended year/semester pattern. Those fields remain unknown, and the broad coded subset does not assert a graduation path or completion decision.",
+      "courses": [
+        { "code": "PSY1030", "title": "Basic Principles of Psychology", "courseType": "programme_course", "group": "Major Course · Year 1 Admission only" },
+        { "code": "PSY2001", "title": "Biological Psychology", "courseType": "programme_course", "group": "Major Course" },
+        { "code": "PSY2007", "title": "Social Psychology", "courseType": "programme_course", "group": "Major Course" },
+        { "code": "PSY2008", "title": "Cognitive Psychology", "courseType": "programme_course", "group": "Major Course" },
+        { "code": "PSY2020", "title": "Human Development across the Lifespan", "courseType": "programme_course", "group": "Major Course" },
+        { "code": "PSY2031", "title": "Research Methods in Psychology", "courseType": "programme_course", "group": "Major Course" },
+        { "code": "PSY2032", "title": "Statistical Methods in Psychology I", "courseType": "programme_course", "group": "Major Course" },
+        { "code": "PSY3004", "title": "Personality Psychology", "courseType": "programme_course", "group": "Major Course" },
+        { "code": "PSY3005", "title": "Abnormal Psychology", "courseType": "programme_course", "group": "Major Course" },
+        { "code": "PSY3021", "title": "Learning Theories and Processes", "courseType": "programme_course", "group": "Major Course" },
+        { "code": "PSY3033", "title": "Statistical Methods in Psychology II", "courseType": "programme_course", "group": "Major Course" },
+        { "code": "PSY4029", "title": "Professional Issues and Practices in Psychology", "courseType": "programme_course", "group": "Major Course" },
+        { "code": "PSY4058", "title": "Guidance and Counselling", "courseType": "programme_course", "group": "Major Course" },
+        { "code": "PSY3018", "title": "Child and Adolescent Psychopathology", "courseType": "programme_course", "group": "Major Course" },
+        { "code": "PSY3019", "title": "Stress and Coping", "courseType": "programme_course", "group": "Major Course" },
+        { "code": "PSY3022", "title": "Cross-cultural Psychology", "courseType": "programme_course", "group": "Major Course" },
+        { "code": "PSY3024", "title": "Psychology of Language", "courseType": "programme_course", "group": "Major Course" },
+        { "code": "PSY3025", "title": "Educational Psychology", "courseType": "programme_course", "group": "Major Course" },
+        { "code": "PSY3026", "title": "Health Psychology", "courseType": "programme_course", "group": "Major Course" },
+        { "code": "PSY3027", "title": "Interpersonal Communication Skills", "courseType": "programme_course", "group": "Major Course" },
+        { "code": "PSY3082", "title": "Industrial and Organizational Psychology", "courseType": "programme_course", "group": "Major Course" },
+        { "code": "PSY4023", "title": "Neuroscience and Psychology", "courseType": "programme_course", "group": "Major Course" },
+        { "code": "PSY4028", "title": "Multicultural Minds in Communication", "courseType": "programme_course", "group": "Major Course" },
+        { "code": "PSY4038", "title": "Industrial Internship", "credits": 3, "courseType": "internship", "group": "Major Course · Internship option" },
+        { "code": "PSY4054", "title": "Theory and Practice of Psychotherapy", "courseType": "programme_course", "group": "Major Course" },
+        { "code": "PSY4073", "title": "Capstone Project", "courseType": "capstone", "group": "Major Course" },
+        { "code": "PSY4074", "title": "Scientific Study in Psychology I: Research Internship", "credits": 3, "courseType": "internship", "group": "Major Course · Internship option" },
+        { "code": "PSY4075", "title": "Scientific Study in Psychology II: Honours Project", "courseType": "capstone", "group": "Major Course" },
+        { "code": "PSY4083", "title": "Educational Neuroscience", "courseType": "programme_course", "group": "Major Course" },
+
+        { "code": "CFA1001", "title": "Cross-faculty Core Course (Component I: Basic Law and National Security Education)", "credits": 1, "courseType": "core", "group": "Cross-Faculty Core Course · Component I" },
+        { "code": "CFB3013", "title": "Cross-Faculty Core Course: Component II – Visits in Greater Bay Area", "credits": 1, "courseType": "core", "group": "Cross-Faculty Core Course · Component II" },
+        { "code": "CFC3018", "title": "Cross-Faculty Core Course: Component III – Diversity, equity, and inclusion in the Greater Bay Area (GBA)", "credits": 1, "courseType": "major_elective", "group": "Cross-Faculty Core Course · Component III option (choose 1)" },
+        { "code": "CFC3024", "title": "Cross-Faculty Core Course: Component III – Artificial Intelligence Enhanced Educational Entrepreneurship in GBA", "credits": 1, "courseType": "major_elective", "group": "Cross-Faculty Core Course · Component III option (choose 1)" },
+        { "code": "CFC3026", "title": "Cross-Faculty Core Course: Component III – Supporting Students with Diverse Learning Needs in the Greater Bay Area", "credits": 1, "courseType": "major_elective", "group": "Cross-Faculty Core Course · Component III option (choose 1)" }
+      ]
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-21T12:30:53.135Z",
+  "generatedAt": "2026-07-22T07:18:16.373Z",
   "universities": [
     {
       "id": "HKU",
@@ -1555,9 +1555,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-psychology",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 67,
+      "codedCourseCount": 67,
+      "courseSourceUrl": "https://psychology.hku.hk/wp-content/programmes/UG/BPsych_2025-26.pdf"
     },
     {
       "id": "HKU-UG-6717-55",
@@ -1814,9 +1815,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science-actuarial-science",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 30,
+      "codedCourseCount": 30,
+      "courseSourceUrl": "https://saasweb.hku.hk/courses/202526/BSc(ActuarSc)_2025.html"
     },
     {
       "id": "HKU-UG-6731-68",
@@ -1833,9 +1835,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-work",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 107,
+      "codedCourseCount": 107,
+      "courseSourceUrl": "https://web.socialwork.hku.hk/wp-content/uploads/2025/10/BSWFT-student-handbook-2025-26_final.pdf"
     },
     {
       "id": "HKU-UG-6755-69",
@@ -3205,9 +3208,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/chesb/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 94,
+      "codedCourseCount": 94,
+      "courseSourceUrl": "https://www.ccs.cuhk.edu.hk/wp-content/uploads/chesb2025.pdf"
     },
     {
       "id": "CUHK-UG-ENGEN-5",
@@ -5860,9 +5864,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3791",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 34,
+      "codedCourseCount": 34,
+      "courseSourceUrl": "https://www.polyu.edu.hk/bre/docdrive/32405%20BRE%20Undergraduate%20Programme%20document%20202526%20combined%20202509.pdf"
     },
     {
       "id": "POLYU-UG-JS3211-9",
@@ -6603,9 +6608,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3789",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 2,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 175,
+      "codedCourseCount": 175,
+      "courseSourceUrl": "https://www.polyu.edu.hk/bre/docdrive/32405%20BRE%20Undergraduate%20Programme%20document%20202526%20combined%20202509.pdf"
     },
     {
       "id": "CITYU-UG-BSCCFFT-1",
@@ -7415,9 +7421,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1202",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 281,
+      "codedCourseCount": 281,
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSC1_CHEM-1.htm"
     },
     {
       "id": "CITYU-UG-BSCCS-42",
@@ -7533,9 +7540,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1210",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 50,
+      "codedCourseCount": 50,
+      "courseSourceUrl": "https://www.cityu.edu.hk/mse/-/media/project/cityuhk/academic/mse/current-students/undergraduate/major/1-cir-for-majormase_cohort-202526-9-may-2025_250627.pdf?rev=668bdf7c0bc444ca9fa48adf3c5d165b&hash=0741439235EB0570079D41FFC6F5050D"
     },
     {
       "id": "CITYU-UG-BENGBME-48",
@@ -8202,9 +8210,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "Bachelor's Degree Programme",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8001/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 0,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 68,
+      "codedCourseCount": 68,
+      "courseSourceUrl": "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BA(CDA)%26BEd(MU).pdf"
     },
     {
       "id": "EDUHK-UG-JS8002-2",
@@ -8222,9 +8231,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "Bachelor's Degree Programme",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8002/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 0,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 68,
+      "codedCourseCount": 68,
+      "courseSourceUrl": "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BA(CDA)%26BEd(VA).pdf"
     },
     {
       "id": "EDUHK-UG-JS8003-3",
@@ -8282,9 +8292,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "Bachelor's Degree Programme",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8005/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 0,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 41,
+      "codedCourseCount": 41,
+      "courseSourceUrl": "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BA(HE&AM)&BEd(CHT).pdf"
     },
     {
       "id": "EDUHK-UG-JS8006-6",
@@ -8462,9 +8473,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "Bachelor's Degree Programme",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8651/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 0,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 34,
+      "codedCourseCount": 34,
+      "courseSourceUrl": "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BSocSc(Psy).pdf"
     },
     {
       "id": "EDUHK-UG-JS8663-15",
@@ -8482,9 +8494,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "Bachelor's Degree Programme",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8663/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 0,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 25,
+      "codedCourseCount": 25,
+      "courseSourceUrl": "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BA(SE).pdf"
     },
     {
       "id": "EDUHK-UG-JS8674-16",
@@ -8502,9 +8515,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "Bachelor's Degree Programme",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8674/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 0,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 24,
+      "codedCourseCount": 24,
+      "courseSourceUrl": "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BA(DCCC).pdf"
     },
     {
       "id": "EDUHK-UG-JS8675-17",
@@ -8522,9 +8536,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "Bachelor's Degree Programme",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8675/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 0,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 22,
+      "codedCourseCount": 22,
+      "courseSourceUrl": "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BA(ESDC).pdf"
     },
     {
       "id": "EDUHK-UG-JS8685-18",
@@ -8542,9 +8557,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "Bachelor's Degree Programme",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8685/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 0,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 29,
+      "codedCourseCount": 29,
+      "courseSourceUrl": "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BA(CDA).pdf"
     },
     {
       "id": "EDUHK-UG-JS8686-19",
@@ -8562,9 +8578,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "Bachelor's Degree Programme",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8686/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 0,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 29,
+      "codedCourseCount": 29,
+      "courseSourceUrl": "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BA(CDA).pdf"
     },
     {
       "id": "EDUHK-UG-JS8687-20",
@@ -8582,9 +8599,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "Bachelor's Degree Programme",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8687/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 0,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 30,
+      "codedCourseCount": 30,
+      "courseSourceUrl": "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BA(HE&AM).pdf"
     },
     {
       "id": "EDUHK-UG-JS8688-21",
@@ -8602,9 +8620,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "Bachelor's Degree Programme",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8688/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 0,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 23,
+      "codedCourseCount": 23,
+      "courseSourceUrl": "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BA(PF).pdf"
     },
     {
       "id": "EDUHK-UG-JS8702-22",
@@ -8622,9 +8641,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "Bachelor's Degree Programme",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8702/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 0,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 26,
+      "codedCourseCount": 26,
+      "courseSourceUrl": "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BSc(IEM).pdf"
     },
     {
       "id": "EDUHK-UG-JS8714-23",
@@ -8642,9 +8662,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "Bachelor's Degree Programme",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8714/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 0,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 27,
+      "codedCourseCount": 27,
+      "courseSourceUrl": "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BSc(AI%26EdTech).pdf"
     },
     {
       "id": "EDUHK-UG-JS8726-24",
@@ -8662,9 +8683,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "Bachelor's Degree Programme",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8726/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 0,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 38,
+      "codedCourseCount": 38,
+      "courseSourceUrl": "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BSc(SPSC).pdf"
     },
     {
       "id": "EDUHK-UG-JS8727-25",
@@ -8682,9 +8704,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "Bachelor's Degree Programme",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8727/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 0,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 23,
+      "codedCourseCount": 23,
+      "courseSourceUrl": "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BSc(SPR).pdf"
     },
     {
       "id": "LINGNAN-UG-JS7101-1",
@@ -9707,9 +9730,9 @@ const catalogue = {
       "code": "BACHELOR-OF-PSYCHOLOGY",
       "nameEn": "Bachelor of Psychology",
       "nameZh": "Bachelor of Psychology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-psychology"
+      "courseCount": 68,
+      "codedCourseCount": 67,
+      "officialUrl": "https://psychology.hku.hk/undergraduate/"
     },
     {
       "id": "HKU-UG-6717-55-M1",
@@ -9837,8 +9860,8 @@ const catalogue = {
       "code": "BACHELOR-OF-SCIENCE-IN-ACTUARIAL-SCIENCE",
       "nameEn": "Bachelor of Science in Actuarial Science",
       "nameZh": "Bachelor of Science in Actuarial Science",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 31,
+      "codedCourseCount": 30,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science-actuarial-science"
     },
     {
@@ -9847,9 +9870,9 @@ const catalogue = {
       "code": "BACHELOR-OF-SOCIAL-WORK",
       "nameEn": "Bachelor of Social Work",
       "nameZh": "Bachelor of Social Work",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-work"
+      "courseCount": 108,
+      "codedCourseCount": 107,
+      "officialUrl": "https://web.socialwork.hku.hk/bachelor-of-social-work/"
     },
     {
       "id": "HKU-UG-6755-69-M1",
@@ -10560,16 +10583,6 @@ const catalogue = {
       "courseCount": 1,
       "codedCourseCount": 0,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/chlln/"
-    },
-    {
-      "id": "CUHK-UG-CHESB-4-M1",
-      "programmeId": "CUHK-UG-CHESB-4",
-      "code": "CHINESE-STUDIES",
-      "nameEn": "Chinese Studies",
-      "nameZh": "Chinese Studies",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admission.cuhk.edu.hk/programme/chesb/"
     },
     {
       "id": "CUHK-UG-ENGEN-5-M1",
@@ -12177,8 +12190,8 @@ const catalogue = {
       "code": "BACHELOR-OF-SCIENCE-HONOURS-IN-BUILDING-ENGINEER",
       "nameEn": "Bachelor of Science (Honours) in Building Engineering and Management",
       "nameZh": "Bachelor of Science (Honours) in Building Engineering and Management",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 35,
+      "codedCourseCount": 34,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3791"
     },
     {
@@ -13100,16 +13113,6 @@ const catalogue = {
       "courseCount": 6,
       "codedCourseCount": 0,
       "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3160"
-    },
-    {
-      "id": "POLYU-UG-JS3789-46-M1",
-      "programmeId": "POLYU-UG-JS3789-46",
-      "code": "BACHELOR-OF-SCIENCE-HONOURS-IN-SURVEYING",
-      "nameEn": "Bachelor of Science (Honours) in Surveying",
-      "nameZh": "Bachelor of Science (Honours) in Surveying",
-      "courseCount": 2,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3789"
     },
     {
       "id": "CITYU-UG-BSCCFFT-1-M1",
@@ -14187,9 +14190,9 @@ const catalogue = {
       "code": "COMPREHENSIVE-CHEMISTRY",
       "nameEn": "Comprehensive Chemistry",
       "nameZh": "Comprehensive Chemistry",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1202"
+      "courseCount": 70,
+      "codedCourseCount": 69,
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bsc-chemistry"
     },
     {
       "id": "CITYU-UG-BSCCHEM-41-M2",
@@ -14197,9 +14200,9 @@ const catalogue = {
       "code": "COSMETIC-CHEMISTRY",
       "nameEn": "Cosmetic Chemistry",
       "nameZh": "Cosmetic Chemistry",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1202"
+      "courseCount": 70,
+      "codedCourseCount": 69,
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bsc-chemistry"
     },
     {
       "id": "CITYU-UG-BSCCHEM-41-M3",
@@ -14207,9 +14210,9 @@ const catalogue = {
       "code": "FORENSIC-CHEMISTRY",
       "nameEn": "Forensic Chemistry",
       "nameZh": "Forensic Chemistry",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1202"
+      "courseCount": 72,
+      "codedCourseCount": 71,
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bsc-chemistry"
     },
     {
       "id": "CITYU-UG-BSCCHEM-41-M4",
@@ -14217,9 +14220,9 @@ const catalogue = {
       "code": "GLOBAL-RESEARCH-ENRICHMENT-AND-TECHNOPRENEURSHIP",
       "nameEn": "Global Research Enrichment and Technopreneurship (GREAT)",
       "nameZh": "Global Research Enrichment and Technopreneurship (GREAT)",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1202"
+      "courseCount": 73,
+      "codedCourseCount": 72,
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bsc-chemistry"
     },
     {
       "id": "CITYU-UG-BSCCS-42-M1",
@@ -14430,56 +14433,6 @@ const catalogue = {
       "courseCount": 15,
       "codedCourseCount": 14,
       "officialUrl": "https://www.cityu.edu.hk/phy_portal/download/1_BScAP/3_Recommended%20Study%20Plan/admitted%20to%20the%20major%20in%20202526/Normative%204-year%202526.pdf"
-    },
-    {
-      "id": "CITYU-UG-BENGMASE-47-M1",
-      "programmeId": "CITYU-UG-BENGMASE-47",
-      "code": "HKIE-ACCREDITED",
-      "nameEn": "HKIE Accredited",
-      "nameZh": "HKIE Accredited",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1210"
-    },
-    {
-      "id": "CITYU-UG-BENGMASE-47-M2",
-      "programmeId": "CITYU-UG-BENGMASE-47",
-      "code": "INDUSTRIAL-AND-RESEARCH-INTERNSHIPS",
-      "nameEn": "Industrial and Research Internships",
-      "nameZh": "Industrial and Research Internships",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1210"
-    },
-    {
-      "id": "CITYU-UG-BENGMASE-47-M3",
-      "programmeId": "CITYU-UG-BENGMASE-47",
-      "code": "OVERSEAS-DOUBLE-DEGREES",
-      "nameEn": "Overseas Double-degrees",
-      "nameZh": "Overseas Double-degrees",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1210"
-    },
-    {
-      "id": "CITYU-UG-BENGMASE-47-M4",
-      "programmeId": "CITYU-UG-BENGMASE-47",
-      "code": "KNOWLEDGE-TRANSFER",
-      "nameEn": "Knowledge Transfer",
-      "nameZh": "Knowledge Transfer",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1210"
-    },
-    {
-      "id": "CITYU-UG-BENGMASE-47-M5",
-      "programmeId": "CITYU-UG-BENGMASE-47",
-      "code": "WORLD-LEADING-RESEARCH",
-      "nameEn": "World-leading Research",
-      "nameZh": "World-leading Research",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1210"
     },
     {
       "id": "CITYU-UG-BENGBME-48-M1",
@@ -15387,9 +15340,9 @@ const catalogue = {
       "code": "BA-CDA-BED-MU",
       "nameEn": "Bachelor of Arts (Honours) in Creative and Digital Arts and Bachelor of Education (Honours) (Music)",
       "nameZh": "創意藝術與數碼藝術榮譽文學士及音樂教育榮譽學士",
-      "courseCount": 0,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8001/"
+      "courseCount": 68,
+      "codedCourseCount": 68,
+      "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/ba_bed_mu"
     },
     {
       "id": "EDUHK-UG-JS8002-2-M1",
@@ -15397,9 +15350,9 @@ const catalogue = {
       "code": "BA-CDA-BED-VA",
       "nameEn": "Bachelor of Arts (Honours) in Creative and Digital Arts and Bachelor of Education (Honours) (Visual Arts)",
       "nameZh": "創意藝術與數碼藝術榮譽文學士及視覺藝術教育榮譽學士",
-      "courseCount": 0,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8002/"
+      "courseCount": 68,
+      "codedCourseCount": 68,
+      "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/ba_bed_va"
     },
     {
       "id": "EDUHK-UG-JS8003-3-M1",
@@ -15427,9 +15380,9 @@ const catalogue = {
       "code": "BA-HE-AM-BED-CHI-HIST",
       "nameEn": "Bachelor of Arts (Honours) in Heritage Education and Arts Management and Bachelor of Education (Honours) (Chinese History)",
       "nameZh": "文化傳承教育與藝術管理榮譽文學士及中國歷史教育榮譽學士",
-      "courseCount": 0,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8005/"
+      "courseCount": 41,
+      "codedCourseCount": 41,
+      "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/heam_cht"
     },
     {
       "id": "EDUHK-UG-JS8006-6-M1",
@@ -15517,9 +15470,9 @@ const catalogue = {
       "code": "BSOCSC-PSY",
       "nameEn": "Bachelor of Social Sciences (Honours) in Psychology",
       "nameZh": "心理學榮譽社會科學學士",
-      "courseCount": 0,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8651/"
+      "courseCount": 34,
+      "codedCourseCount": 34,
+      "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/psy"
     },
     {
       "id": "EDUHK-UG-JS8663-15-M1",
@@ -15527,9 +15480,9 @@ const catalogue = {
       "code": "BA-SE",
       "nameEn": "Bachelor of Arts (Honours) in Special Education",
       "nameZh": "特殊教育榮譽文學士",
-      "courseCount": 0,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8663/"
+      "courseCount": 25,
+      "codedCourseCount": 25,
+      "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/base"
     },
     {
       "id": "EDUHK-UG-JS8674-16-M1",
@@ -15537,9 +15490,9 @@ const catalogue = {
       "code": "BA-DCCC",
       "nameEn": "Bachelor of Arts (Honours) in Digital Chinese Culture and Communication",
       "nameZh": "數碼中國文化與傳意榮譽文學士",
-      "courseCount": 0,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8674/"
+      "courseCount": 24,
+      "codedCourseCount": 24,
+      "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/dccc"
     },
     {
       "id": "EDUHK-UG-JS8675-17-M1",
@@ -15547,9 +15500,9 @@ const catalogue = {
       "code": "BA-ESDC",
       "nameEn": "Bachelor of Arts (Honours) in English Studies and Digital Communication",
       "nameZh": "英語研究及數碼傳訊榮譽文學士",
-      "courseCount": 0,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8675/"
+      "courseCount": 22,
+      "codedCourseCount": 22,
+      "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/esdc"
     },
     {
       "id": "EDUHK-UG-JS8685-18-M1",
@@ -15557,9 +15510,9 @@ const catalogue = {
       "code": "BA-CDA-MU",
       "nameEn": "Bachelor of Arts (Honours) in Creative and Digital Arts (Music)",
       "nameZh": "創意藝術與數碼藝術榮譽文學士 (音樂)",
-      "courseCount": 0,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8685/"
+      "courseCount": 29,
+      "codedCourseCount": 29,
+      "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/bacda"
     },
     {
       "id": "EDUHK-UG-JS8686-19-M1",
@@ -15567,9 +15520,9 @@ const catalogue = {
       "code": "BA-CDA-VA",
       "nameEn": "Bachelor of Arts (Honours) in Creative and Digital Arts (Visual Arts)",
       "nameZh": "創意藝術與數碼藝術榮譽文學士 (視覺藝術)",
-      "courseCount": 0,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8686/"
+      "courseCount": 29,
+      "codedCourseCount": 29,
+      "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/bacda"
     },
     {
       "id": "EDUHK-UG-JS8687-20-M1",
@@ -15577,9 +15530,9 @@ const catalogue = {
       "code": "BA-HE-AM",
       "nameEn": "Bachelor of Arts (Honours) in Heritage Education and Arts Management",
       "nameZh": "文化傳承教育與藝術管理榮譽文學士",
-      "courseCount": 0,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8687/"
+      "courseCount": 30,
+      "codedCourseCount": 30,
+      "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/heam"
     },
     {
       "id": "EDUHK-UG-JS8688-21-M1",
@@ -15587,9 +15540,9 @@ const catalogue = {
       "code": "BA-PF",
       "nameEn": "Bachelor of Arts (Honours) in Personal Finance",
       "nameZh": "個人理財榮譽文學士",
-      "courseCount": 0,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8688/"
+      "courseCount": 23,
+      "codedCourseCount": 23,
+      "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/bapf"
     },
     {
       "id": "EDUHK-UG-JS8702-22-M1",
@@ -15597,9 +15550,9 @@ const catalogue = {
       "code": "BSC-IEM",
       "nameEn": "Bachelor of Science (Honours) in Integrated Environmental Management",
       "nameZh": "綜合環境管理榮譽理學士",
-      "courseCount": 0,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8702/"
+      "courseCount": 26,
+      "codedCourseCount": 26,
+      "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/iem"
     },
     {
       "id": "EDUHK-UG-JS8714-23-M1",
@@ -15607,9 +15560,9 @@ const catalogue = {
       "code": "BSC-AI-EDTECH",
       "nameEn": "Bachelor of Science (Honours) in Artificial Intelligence and Educational Technology",
       "nameZh": "人工智能與教育科技榮譽理學士",
-      "courseCount": 0,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8714/"
+      "courseCount": 27,
+      "codedCourseCount": 27,
+      "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/aiet"
     },
     {
       "id": "EDUHK-UG-JS8726-24-M1",
@@ -15617,9 +15570,9 @@ const catalogue = {
       "code": "BSC-SPSC",
       "nameEn": "Bachelor of Science (Honours) in Sports Science and Coaching",
       "nameZh": "運動科學及教練榮譽理學士",
-      "courseCount": 0,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8726/"
+      "courseCount": 38,
+      "codedCourseCount": 38,
+      "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/spsc"
     },
     {
       "id": "EDUHK-UG-JS8727-25-M1",
@@ -15627,9 +15580,9 @@ const catalogue = {
       "code": "BSC-SPR",
       "nameEn": "Bachelor of Science (Honours) in Speech Pathology and Rehabilitation",
       "nameZh": "言語病理學及復康榮譽理學士",
-      "courseCount": 0,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8727/"
+      "courseCount": 23,
+      "codedCourseCount": 23,
+      "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/spr"
     },
     {
       "id": "LINGNAN-UG-JS7101-1-M1",
@@ -15922,6 +15875,36 @@ const catalogue = {
       "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bsocsc-social-work"
     },
     {
+      "id": "CITYU-UG-BENGMASE-47-M1",
+      "programmeId": "CITYU-UG-BENGMASE-47",
+      "code": "MATERIALS-SCIENCE-AND-ENGINEERING",
+      "nameEn": "Materials Science and Engineering",
+      "nameZh": "Materials Science and Engineering",
+      "courseCount": 50,
+      "codedCourseCount": 50,
+      "officialUrl": "https://www.cityu.edu.hk/en/mse/current-students/undergraduate/major"
+    },
+    {
+      "id": "CUHK-UG-CHESB-4-M1",
+      "programmeId": "CUHK-UG-CHESB-4",
+      "code": "INTERNATIONAL-STREAM",
+      "nameEn": "International Stream",
+      "nameZh": "International Stream",
+      "courseCount": 47,
+      "codedCourseCount": 47,
+      "officialUrl": "https://admission.cuhk.edu.hk/programme/chesb/"
+    },
+    {
+      "id": "CUHK-UG-CHESB-4-M2",
+      "programmeId": "CUHK-UG-CHESB-4",
+      "code": "CHINESE-NATIVE-STREAM",
+      "nameEn": "Chinese Native Stream",
+      "nameZh": "Chinese Native Stream",
+      "courseCount": 47,
+      "codedCourseCount": 47,
+      "officialUrl": "https://admission.cuhk.edu.hk/programme/chesb/"
+    },
+    {
       "id": "HKBU-UG-BA-PERM-14-M2",
       "programmeId": "HKBU-UG-BA-PERM-14",
       "code": "SPORTS-SCIENCE-MAJOR",
@@ -15930,18 +15913,69 @@ const catalogue = {
       "courseCount": 40,
       "codedCourseCount": 40,
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2620/"
+    },
+    {
+      "id": "POLYU-UG-JS3789-46-M1",
+      "programmeId": "POLYU-UG-JS3789-46",
+      "code": "BUILDING-SURVEYING",
+      "nameEn": "Building Surveying",
+      "nameZh": "Building Surveying",
+      "courseCount": 35,
+      "codedCourseCount": 35,
+      "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3789"
+    },
+    {
+      "id": "POLYU-UG-JS3789-46-M2",
+      "programmeId": "POLYU-UG-JS3789-46",
+      "code": "GENERAL-PRACTICE-SURVEYING",
+      "nameEn": "General Practice Surveying",
+      "nameZh": "General Practice Surveying",
+      "courseCount": 35,
+      "codedCourseCount": 35,
+      "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3789"
+    },
+    {
+      "id": "POLYU-UG-JS3789-46-M3",
+      "programmeId": "POLYU-UG-JS3789-46",
+      "code": "PLANNING-AND-DEVELOPMENT",
+      "nameEn": "Planning and Development",
+      "nameZh": "Planning and Development",
+      "courseCount": 35,
+      "codedCourseCount": 35,
+      "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3789"
+    },
+    {
+      "id": "POLYU-UG-JS3789-46-M4",
+      "programmeId": "POLYU-UG-JS3789-46",
+      "code": "PROPERTY-AND-FACILITY-MANAGEMENT",
+      "nameEn": "Property and Facility Management",
+      "nameZh": "Property and Facility Management",
+      "courseCount": 35,
+      "codedCourseCount": 35,
+      "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3789"
+    },
+    {
+      "id": "POLYU-UG-JS3789-46-M5",
+      "programmeId": "POLYU-UG-JS3789-46",
+      "code": "QUANTITY-SURVEYING",
+      "nameEn": "Quantity Surveying",
+      "nameZh": "Quantity Surveying",
+      "courseCount": 35,
+      "codedCourseCount": 35,
+      "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3789"
     }
   ],
   "courseShardCounts": {
-    "CITYU": 2725,
-    "CUHK": 638,
+    "CITYU": 3056,
+    "CUHK": 732,
+    "EDUHK": 507,
     "HKBU": 2650,
-    "HKU": 3335,
+    "HKU": 3539,
     "HKUST": 690,
     "LINGNAN": 721,
-    "POLYU": 2472
+    "POLYU": 2681
   },
-  "codedCourseCount": 13231
+  "codedCourseCount": 14576
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

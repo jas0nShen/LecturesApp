@@ -1,0 +1,62 @@
+{
+  "provider": "The Education University of Hong Kong 2026/27 Undergraduate Programme Course List",
+  "academicYear": "2026/27",
+  "sourceUrl": "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BA(HE&AM)&BEd(CHT).pdf",
+  "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/heam_cht",
+  "supplements": [
+    {
+      "universityCode": "EDUHK",
+      "programmeId": "EDUHK-UG-JS8005-5",
+      "jupasCode": "JS8005",
+      "majorId": "EDUHK-UG-JS8005-5-M1",
+      "evidenceNote": "The official programme-specific PDF identifies Programme A5B109, Year of Entry 2026/27 and publishes 41 coded courses across Discipline Studies Major, Education Major, Cross-faculty Core, Education Studies Core and Pedagogy groups. It does not publish per-course credit points, Year/Semester assignments, the number of Major Electives or Cross-faculty options to select, the Education Studies Restricted Elective pool, or coded lists for Field Experience, General Education, Language Enhancement and Final Year Project. This supplement exposes only the verified published course subset and does not present it as a complete 156-cp graduation structure.",
+      "courses": [
+        { "code": "HEM3001", "title": "Museum Studies and Museum Education: Practices and Problems", "courseType": "core", "group": "Discipline Studies Major (Core)" },
+        { "code": "HEM3005", "title": "Cultural Heritage in Hong Kong and the Greater Bay Area", "courseType": "core", "group": "Discipline Studies Major (Core)" },
+        { "code": "HEM3006", "title": "Arts Planning and Management", "courseType": "core", "group": "Discipline Studies Major (Core)" },
+        { "code": "HEM3007", "title": "Arts Education in Community Context", "courseType": "core", "group": "Discipline Studies Major (Core)" },
+        { "code": "HEM3008", "title": "Heritage Education: Issues and Perspectives", "courseType": "core", "group": "Discipline Studies Major (Core)" },
+        { "code": "HEM4009", "title": "Cultural History for Arts Appreciation: Cross-cultural Perspectives", "courseType": "core", "group": "Discipline Studies Major (Core)" },
+        { "code": "HEM4010", "title": "Knowing about M+ Museum and the Palace Museum in WKCD", "courseType": "core", "group": "Discipline Studies Major (Core)" },
+        { "code": "HEM4011", "title": "Digital Technology and its Application in Heritage Education", "courseType": "core", "group": "Discipline Studies Major (Core)" },
+        { "code": "INS3076", "title": "Entrepreneurship and Arts Management", "courseType": "core", "group": "Discipline Studies Major (Core)" },
+        { "code": "SSC4336", "title": "Issues in Heritage Conservation and its Policy", "courseType": "core", "group": "Discipline Studies Major (Core)" },
+        { "code": "HEM3002", "title": "Internship", "courseType": "internship", "group": "Discipline Studies Major (Core)" },
+
+        { "code": "HIS1078", "title": "Modern Hong Kong: From Opium War to Basic Law", "courseType": "major_elective", "group": "Discipline Studies Major (Elective) - published pool; selection rule not published" },
+        { "code": "SSC1338", "title": "Hong Kong: Society and Culture", "courseType": "major_elective", "group": "Discipline Studies Major (Elective) - published pool; selection rule not published" },
+        { "code": "HEM4033", "title": "Innovative Museum Engagement and Audience Experience through Digital Media", "courseType": "major_elective", "group": "Discipline Studies Major (Elective) - published pool; selection rule not published" },
+
+        { "code": "HIS1022", "title": "Methodologies: Sources, Practices and Field Research", "courseType": "core", "group": "Education Major" },
+        { "code": "HIS2040", "title": "History of China I: From Pre-Qin to Han", "courseType": "core", "group": "Education Major" },
+        { "code": "HIS2041", "title": "History of China II: From Wei, Jin to the Five Dynasties", "courseType": "core", "group": "Education Major" },
+        { "code": "HIS2042", "title": "History of China III: From Sung to Mid-Qing", "courseType": "core", "group": "Education Major" },
+        { "code": "HIS2074", "title": "Topics in Global History", "courseType": "core", "group": "Education Major" },
+        { "code": "HIS2076", "title": "China: Reform and Revolution from Late Qing to 1949", "courseType": "core", "group": "Education Major" },
+        { "code": "HIS3047", "title": "Chinese Historical Geography", "courseType": "core", "group": "Education Major" },
+        { "code": "HIS3075", "title": "Special Topics in Chinese Social and Cultural History", "courseType": "core", "group": "Education Major" },
+        { "code": "HIS3077", "title": "Revolution and Modernity: History of the PRC", "courseType": "core", "group": "Education Major" },
+        { "code": "HIS3079", "title": "Special Topics on Chinese History: History of Political and Legal Systems in China", "courseType": "core", "group": "Education Major" },
+        { "code": "HIS4048", "title": "Chinese Intellectual History", "courseType": "core", "group": "Education Major" },
+
+        { "code": "CFA1001", "title": "Cross-faculty Core Course - Component I: Basic Law and National Security Education", "courseType": "core", "group": "Cross-faculty Core Course - Component I" },
+        { "code": "CFB3004", "title": "Cross-faculty Core Course - Component II: Visits in Greater Bay Area", "courseType": "major_elective", "group": "Cross-faculty Core Course - Component II published option; selection rule not published" },
+        { "code": "CFB3027", "title": "Cross-faculty Core Course - Component II: Visits in Greater Bay Area", "courseType": "major_elective", "group": "Cross-faculty Core Course - Component II published option; selection rule not published" },
+        { "code": "CFB3032", "title": "Cross-faculty Core Course - Component II: Visits in Greater Bay Area (Cultural Immersion in Zhongshan)", "courseType": "major_elective", "group": "Cross-faculty Core Course - Component II published option; selection rule not published" },
+        { "code": "CFC3002", "title": "Cross-faculty Core Course - Component III: Language Education in the GBA", "courseType": "major_elective", "group": "Cross-faculty Core Course - Component III published option; selection rule not published" },
+        { "code": "CFC3003", "title": "Cross-faculty Core Course - Component III: Lingnan Art and Culture", "courseType": "major_elective", "group": "Cross-faculty Core Course - Component III published option; selection rule not published" },
+        { "code": "CFC3030", "title": "Cross-faculty Core Course - Component III: History and Culture of GBA", "courseType": "major_elective", "group": "Cross-faculty Core Course - Component III published option; selection rule not published" },
+        { "code": "CFC3035", "title": "Cross-faculty Core Course - Component III: Language Use in the Greater Bay Area", "courseType": "major_elective", "group": "Cross-faculty Core Course - Component III published option; selection rule not published" },
+
+        { "code": "EDA4149", "title": "Teachers and Teaching in Context", "courseType": "core", "group": "Education Studies (Core)" },
+        { "code": "PFS2013", "title": "Philosophical and Socio-cultural Issues in Education", "courseType": "core", "group": "Education Studies (Core)" },
+        { "code": "PSY2050", "title": "Basic Psychology for Educators: Useful Concepts from Educational and Positive Psychology", "courseType": "core", "group": "Education Studies (Core)" },
+        { "code": "SED4116", "title": "School Guidance and Managing Diversity", "courseType": "core", "group": "Education Studies (Core)" },
+        { "code": "TLS3092", "title": "Effective Teaching & Positive Classroom", "courseType": "core", "group": "Education Studies (Core)" },
+        { "code": "TLS3098", "title": "Curriculum and Assessment", "courseType": "core", "group": "Education Studies (Core)" },
+        { "code": "HIS2028", "title": "Pedagogy of Chinese History I", "courseType": "core", "group": "Pedagogy for Major" },
+        { "code": "HIS3029", "title": "Pedagogy of Chinese History II", "courseType": "core", "group": "Pedagogy for Major" }
+      ]
+    }
+  ]
+}

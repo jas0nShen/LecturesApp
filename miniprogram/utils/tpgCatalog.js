@@ -1146,11 +1146,11 @@ module.exports = {
       "dataLevel": "structure",
       "academicYear": "2025-26",
       "courseVerificationStatus": "verified",
-      "courseVerifiedAt": "2026-07-14",
+      "courseVerifiedAt": "2026-07-22",
       "courseSourceUrl": "https://www.mscai.hku.hk/curriculum/",
-      "courseStatusNote": "",
+      "courseStatusNote": "The current official Curriculum page matches the existing 22-course 2025-26 structure but does not identify its academic year, so the course table is not relabelled as 2026-27 solely from the separate September 2026 intake pages. The normal path requires at least one course from each of Lists A, B and C. Candidates who previously completed the same or similar courses and cannot select an unstudied course from a List may, subject to transcript review and approval, take up to 18 credits from the other two Lists; this exception requires manual audit review.",
       "creditUnit": "credits",
-      "ruleReviewStatus": "verified",
+      "ruleReviewStatus": "manual_review_required",
       "courseCount": 22
     },
     {
@@ -1247,16 +1247,17 @@ module.exports = {
       "programmeCode": "",
       "name": "Master of Journalism (MJ)",
       "faculty": "FACULTY OF SOCIAL SCIENCES",
-      "creditsRequired": 72,
+      "creditsRequired": 60,
       "sourceUrl": "",
       "dataLevel": "structure",
       "academicYear": "2025-26",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-16",
-      "courseSourceUrl": "https://jmsc.hku.hk/mjprogramme/",
-      "courseStatusNote": "The public official evidence does not support a complete 2025-26 curriculum. The current JMSC programme page is for 2026-27 and states a 60-credit programme, while the 2025-26 catalogue entry records 72 credits. The current page describes broad core skills and elective areas but publishes neither a complete coded course list nor the required grouping and completion path. The official 2025-26 information-session page does not resolve the credit conflict or publish the missing coded syllabus. Because the applicable credit total, course codes and completion rules cannot be verified without inference, no partial course structure is published.",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-22",
+      "courseSourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf",
+      "courseStatusNote": "The official 2024-25 Regulations and Syllabuses apply to candidates admitted in 2024-25 and thereafter and verify the complete 2025-26 Master of Journalism structure. Candidates complete four compulsory courses, the 6-credit JMSC6044 capstone and five to seven 6-credit courses from the published 31-course pool, for 60 to 72 credits. With approval, up to 12 elective credits may come from designated HKU postgraduate courses; Summer Institute study may exempt up to 6 credits; professional-experience waivers require equal-credit replacements; and courses are not offered every year. These exceptions and the variable 60-to-72-credit award require manual review. The current 2026-27 website shows curriculum changes but does not provide a year-labelled complete coded syllabus, so those changes are not merged into this 2025-26 structure.",
       "creditUnit": "credits",
-      "courseCount": 0
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 36
     },
     {
       "id": "HKU-TPG-054",
@@ -1268,12 +1269,13 @@ module.exports = {
       "sourceUrl": "",
       "dataLevel": "structure",
       "academicYear": "2025-26",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-16",
-      "courseSourceUrl": "https://jmsc.hku.hk/dfsadmission/",
-      "courseStatusNote": "The current official Documentary Filmmaking Specialisation page states a 72-credit curriculum comprising six core courses, three electives and a capstone, and publishes six core codes, five elective codes and the JMSC6200 capstone code. However, it is a 2026-27 admissions page and does not publish the credit value of any individual course or an academic-year-specific 2025-26 Regulations and Syllabuses document. The earlier official launch page confirms the programme but does not supply those missing credits or completion rules. Course credits cannot be derived by arithmetic from the 72-credit total, so no partial course structure is published.",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-22",
+      "courseSourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf",
+      "courseStatusNote": "The official 2024-25 Regulations and Syllabuses apply to candidates admitted in 2024-25 and thereafter and verify the complete 2025-26 Documentary Filmmaking specialisation under the Master of Journalism award. Candidates complete five compulsory courses for 36 credits, the 18-credit JMSC6200 capstone and three of nine 6-credit electives for a 72-credit award. Approved external postgraduate electives, equal-credit core replacements and annual availability require manual review. The current 2026-27 page publishes a materially changed code list but omits per-course credits, so that later structure remains blocked and is not merged into this cohort.",
       "creditUnit": "credits",
-      "courseCount": 0
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 15
     },
     {
       "id": "HKU-TPG-055",
@@ -1286,7 +1288,7 @@ module.exports = {
       "dataLevel": "structure",
       "academicYear": "2025-26",
       "courseVerificationStatus": "verified",
-      "courseVerifiedAt": "2026-07-16",
+      "courseVerifiedAt": "2026-07-22",
       "courseSourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R58&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y",
       "courseStatusNote": "The official 2025-26 Regulations and Syllabuses, applicable to the 2025-26 intake and thereafter, confirm a 60-credit award comprising four 6-credit compulsory courses, four 6-credit electives and either the 12-credit POLI8012 Dissertation or POLI8028 Capstone Project. The same Regulations and the dedicated 2025-26 Course Descriptions confirm POLI8032 Selected Topics in Public Administration at 6 credits, resolving the omission in the older general Course_Desc.html page. With Department approval, up to 6 elective credits may instead come from the MIPA Core or Elective lists; that cross-Programme substitution and annual course availability require manual review.",
       "creditUnit": "credits",
@@ -1555,14 +1557,15 @@ module.exports = {
       "programmeCode": "",
       "name": "Business Analytics",
       "faculty": "",
-      "creditsRequired": 36,
+      "creditsRequired": 30,
       "sourceUrl": "",
       "dataLevel": "structure",
       "academicYear": "2026-27",
       "courseVerificationStatus": "blocked",
       "courseVerifiedAt": "2026-07-13",
-      "courseSourceUrl": "https://masters.bschool.cuhk.edu.hk/programmes/mscba/curriculum/",
-      "courseStatusNote": "The official 2026-27 Business Analytics curriculum confirms 30 credits, five Core Courses and five Elective Courses, but the public curriculum and brochure expose titles without a complete current course-code table (only selected examples such as DOTE6696BA are coded). The directory record still carries 36 credits. Keep the Programme closed until every published course title is mapped to an official current code and the stale total is corrected from authoritative evidence.",
+      "courseSourceUrl": "https://masters.bschool.cuhk.edu.hk/wp-content/uploads/2024/12/CUHK-MScBA-Brochure-2026-2027_20251008.pdf",
+      "courseStatusNote": "The official 2026-27 MSc in Business Analytics brochure confirms a 30-credit award: all five Core Courses (15 credits) and five Elective Courses (15 credits). It names a published pool of five Core and twelve Elective titles, but supplies a current code only for DOTE6696BA Advanced Business Analytics Practicum; the other 16 titles have no official 2026-27 code-to-title listing, and the brochure does not print per-course units. The live Programme page now targets 2027-28 and cannot backfill the prior academic year. Keep the structure closed until CUHK publishes the complete 2026-27 code-title-unit table; do not infer codes from titles or later-year materials.",
+      "creditUnit": "units",
       "courseCount": 0
     },
     {
@@ -7367,14 +7370,39 @@ module.exports = {
       "faculty": "",
       "creditsRequired": 30,
       "sourceUrl": "",
-      "dataLevel": "programme",
+      "dataLevel": "structure",
       "academicYear": "2025-26",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-16",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-22",
       "courseSourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-counselling-1",
-      "courseStatusNote": "The latest publicly accessible 2025-26 HKBU Academic Registry handbook confirms a 30-unit award, three Counselling Specialisations, four Required Counselling Courses (12 units), 12 Specialisation/Elective units, and a compulsory 6-unit Practicum with 80 counselling hours. The official course table does not publish any course code or formal course title for that Practicum. Keep the Programme closed until HKBU publishes the missing 6-unit Practicum code and name; do not invent a code from the generic component label or expose the remaining 17 coded courses as a complete curriculum. The protected 2026-27 handbook must be rechecked when it becomes publicly accessible.",
+      "courseStatusNote": "The current official Programme page and the publicly accessible 2025-26 HKBU Academic Registry handbook consistently confirm a 30-unit award with four Required Counselling Courses (12 units), one of three Counselling Specialisations contributing 12 units, and a compulsory 6-unit Practicum with 80 direct counselling hours. The Programme and course pages publish all 19 distinct codes, titles and unit values, including SOWK7801 Counselling Practicum I and SOWK7802 Counselling Practicum II at 3 units each. Youth and Generic students must include SOWK7120 or SOWK7110 for HKPCA recognition, and SOWK7910 requires SOWK7510; these cross-course constraints and annual availability remain manual checks.",
       "creditUnit": "units",
-      "courseCount": 0
+      "tracks": [
+        {
+          "id": "HKBU-TPG-011-YOUTH-COUNSELLING",
+          "name": "Youth Counselling Specialisation",
+          "type": "Specialisation",
+          "creditsRequired": 30,
+          "sourceUrl": "https://sowk.hkbu.edu.hk/en/programmes/master-of-social-sciences-in-counselling.html"
+        },
+        {
+          "id": "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING",
+          "name": "Mental Health Counselling Specialisation",
+          "type": "Specialisation",
+          "creditsRequired": 30,
+          "sourceUrl": "https://sowk.hkbu.edu.hk/en/programmes/master-of-social-sciences-in-counselling.html"
+        },
+        {
+          "id": "HKBU-TPG-011-GENERIC-COUNSELLING",
+          "name": "Generic Counselling Specialisation",
+          "type": "Specialisation",
+          "creditsRequired": 30,
+          "sourceUrl": "https://sowk.hkbu.edu.hk/en/programmes/master-of-social-sciences-in-counselling.html"
+        }
+      ],
+      "trackSelectionOptional": false,
+      "ruleReviewStatus": "manual_review_required",
+      "courseCount": 19
     },
     {
       "id": "HKBU-TPG-012",
@@ -8330,7 +8358,7 @@ module.exports = {
       "name": "Master of Arts in Emerging Technology for Future Workforce",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 24,
       "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/master-of-arts-in-emerging-technology-for-future-workforce",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
@@ -8338,12 +8366,14 @@ module.exports = {
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-13",
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-22",
       "courseSourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/master-of-arts-in-emerging-technology-for-future-workforce",
-      "courseStatusNote": "The current 2026-27 Programme page confirms 24 credit points: four 3-credit Core Courses and four of six 3-credit Elective Courses, and publishes all ten current titles. Public official EdUHK staff teaching records identify INT6140 Future of Work and Workforce Trends and INT6145 Innovation, Creativity and Forecasting Skills, but the current Programme page and public curriculum module search do not provide a complete code mapping for the other eight courses. Keep the structure closed until all ten codes are officially available; do not extrapolate the missing codes from the two confirmed INT61xx records or map similarly titled courses from other Programmes.",
-      "courseCount": 0
+      "courseStatusNote": "The live official 2026-27 Programme page confirms a 24-credit-point award comprising all four 3-credit-point Core Courses and any four of six 3-credit-point Elective Courses. Official EdUHK curriculum-module pages now confirm the code and title of every current course. INT6146 Capstone Project remains an optional Elective Course and offers the research-project and internship pathways described on the Programme page; neither pathway changes the published 3-credit value or the four-of-six elective completion rule. The full-time and part-time curriculum tables publish different study schedules but the same award requirements.",
+      "creditUnit": "credit points",
+      "ruleReviewStatus": "verified",
+      "courseCount": 10
     },
     {
       "id": "EDUHK-TPG-DIR-MA-ESM",
@@ -8626,7 +8656,7 @@ module.exports = {
       "name": "Master of Science in Environmental, Social and Governance for Sustainable Development",
       "academicYear": "2026-27",
       "faculty": "Faculty / School shown on official programme page",
-      "creditsRequired": null,
+      "creditsRequired": 24,
       "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/ESGSD",
       "sourceLabel": "EdUHK official taught postgraduate programme directory",
       "nameKind": "official_programme_name",
@@ -8634,12 +8664,14 @@ module.exports = {
       "sourceStatus": "programme_directory_verified",
       "directorySupplement": true,
       "tracks": [],
-      "dataLevel": "programme",
-      "courseVerificationStatus": "blocked",
-      "courseVerifiedAt": "2026-07-13",
+      "dataLevel": "structure",
+      "courseVerificationStatus": "verified",
+      "courseVerifiedAt": "2026-07-22",
       "courseSourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/ESGSD",
-      "courseStatusNote": "The current 2026-27 Programme page confirms 24 credit points: five required 3-credit Core Courses and three of four 3-credit Elective Courses, and publishes all nine current titles and credit values. The overlapping EMPAL curriculum confirms PUA6027 Technology and Innovation Policies: Development and Trend, but the Programme page, official leaflet and public curriculum-module search do not provide codes for the other eight ESG-specific courses. Keep the structure closed until EdUHK publishes a complete current code table; do not infer the missing codes from the single shared PUA6027 elective or publish a one-course partial pool.",
-      "courseCount": 0
+      "courseStatusNote": "The live official 2026-27 Programme page confirms a 24-credit-point award comprising all five 3-credit Core Courses and any three of four 3-credit Elective Courses. Official EdUHK curriculum-module pages now confirm the complete current code-to-title mapping: ESG6001-ESG6005 are the five Core Courses, ESG6006-ESG6008 are three Elective options, and the shared PUA6027 is the fourth Elective option. Each course carries 3 credit points under the Programme page, so the published five-core plus three-of-four-elective completion path closes exactly without inferred codes or credits.",
+      "creditUnit": "credit points",
+      "ruleReviewStatus": "verified",
+      "courseCount": 9
     },
     {
       "id": "EDUHK-TPG-DIR-MED",

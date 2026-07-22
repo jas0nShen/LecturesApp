@@ -7,10 +7,12 @@
     {
       "programmeId": "HKU-TPG-048",
       "status": "verified",
+      "verifiedAt": "2026-07-22",
       "creditsRequired": 72,
       "creditUnit": "credits",
       "sourceUrl": "https://www.mscai.hku.hk/curriculum/",
-      "ruleReviewStatus": "verified",
+      "statusNote": "The current official Curriculum page matches the existing 22-course 2025-26 structure but does not identify its academic year, so the course table is not relabelled as 2026-27 solely from the separate September 2026 intake pages. The normal path requires at least one course from each of Lists A, B and C. Candidates who previously completed the same or similar courses and cannot select an unstudied course from a List may, subject to transcript review and approval, take up to 18 credits from the other two Lists; this exception requires manual audit review.",
+      "ruleReviewStatus": "manual_review_required",
       "courseGroups": [
         {
           "id": "compulsory-courses",
@@ -37,7 +39,7 @@
           "type": "elective",
           "creditsRequired": 6,
           "coursesRequired": 1,
-          "ruleText": "Complete at least one 6-credit course from List A as part of the 18-credit Disciplinary Electives requirement.",
+          "ruleText": "Normal path: complete at least one 6-credit course from List A as part of the 18-credit Disciplinary Electives requirement. Prior-study exception: subject to transcript review and approval, a candidate unable to select an unstudied course from a List may take up to 18 credits from the other two Lists.",
           "appliesToTrackIds": [],
           "sourceUrl": "https://www.mscai.hku.hk/curriculum/",
           "courses": [
@@ -54,7 +56,7 @@
           "type": "elective",
           "creditsRequired": 6,
           "coursesRequired": 1,
-          "ruleText": "Complete at least one 6-credit course from List B as part of the 18-credit Disciplinary Electives requirement.",
+          "ruleText": "Normal path: complete at least one 6-credit course from List B as part of the 18-credit Disciplinary Electives requirement. Prior-study exception: subject to transcript review and approval, a candidate unable to select an unstudied course from a List may take up to 18 credits from the other two Lists.",
           "appliesToTrackIds": [],
           "sourceUrl": "https://www.mscai.hku.hk/curriculum/",
           "courses": [
@@ -70,7 +72,7 @@
           "type": "elective",
           "creditsRequired": 6,
           "coursesRequired": 1,
-          "ruleText": "Complete at least one 6-credit course from List C as part of the 18-credit Disciplinary Electives requirement.",
+          "ruleText": "Normal path: complete at least one 6-credit course from List C as part of the 18-credit Disciplinary Electives requirement. Prior-study exception: subject to transcript review and approval, a candidate unable to select an unstudied course from a List may take up to 18 credits from the other two Lists.",
           "appliesToTrackIds": [],
           "sourceUrl": "https://www.mscai.hku.hk/curriculum/",
           "courses": [

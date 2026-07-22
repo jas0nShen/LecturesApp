@@ -139,6 +139,14 @@ function checkReleaseReadiness(now = new Date()) {
   if (ugSummary.majorCount < 600) {
     errors.push(`UG catalogue includes ${ugSummary.majorCount} majors/tracks, expected at least 600`);
   }
+  const declaredSubpackageRoots = new Set((app.subpackages || []).map((subpackage) => String(subpackage.root || '')));
+  ugSummary.universityCodes
+    .flatMap((universityCode) => ugCourseShards.getPackageNames(universityCode))
+    .forEach((packageRoot) => {
+      if (!declaredSubpackageRoots.has(packageRoot)) {
+        errors.push(`UG course package ${packageRoot} is generated but missing from app.json subpackages`);
+      }
+    });
 
   const uploadFiles = walkFiles(MINI_ROOT).filter((file) => {
     const relative = path.relative(MINI_ROOT, file);

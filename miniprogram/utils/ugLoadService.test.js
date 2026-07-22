@@ -92,7 +92,7 @@ test('all eight launch schools resolve either their own course package or an exp
     CITYU: 'ready',
     LINGNAN: 'ready',
     HKBU: 'ready',
-    EDUHK: 'not_required'
+    EDUHK: 'ready'
   };
 
   for (const [universityCode, state] of Object.entries(expectedStates)) {
@@ -101,5 +101,5 @@ test('all eight launch schools resolve either their own course package or an exp
     assert.equal(loader.getUniversityLoadState(universityCode), state, universityCode);
   }
   assert.deepEqual(activated, loaded);
-  assert.equal(loaded.length, 11);
+  assert.equal(loaded.length, 12);
 });

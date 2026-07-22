@@ -1,0 +1,64 @@
+{
+  "provider": "HKU School of Computing and Data Science BSc(ActuarSc) Programme Requirements",
+  "academicYear": "2025-26 and thereafter",
+  "sourceUrl": "https://saasweb.hku.hk/courses/202526/BSc(ActuarSc)_2025.html",
+  "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science-actuarial-science",
+  "note": "The official Programme Requirements apply to the 2025 Year 1 intake and specify a 240-credit degree with 132 credits of disciplinary requirements: 42 Year I core credits, 42 Year II core credits, 30 Year III core credits, at least 12 Year IV disciplinary elective credits and at least 6 Capstone credits. This supplement records all 30 unique explicitly listed course codes. University Requirements, Common Core courses, free electives and courses for an additional major or minor remain open pools and are not fabricated as closed lists. Students normally complete eight full-time academic semesters, with an optional full-time internship of six months or longer extending beyond those semesters.",
+  "sources": [
+    "https://saasweb.hku.hk/current/as.php",
+    "https://saasweb.hku.hk/current/bsc_actuarsc.php",
+    "https://saasresearch.hku.hk/share/bsc_actuarsc/2025-26/BSc(ActuarSc)-Regulations.pdf",
+    "https://saasresearch.hku.hk/share/bsc_actuarsc/2025-26/BSc(ActuarSc)-Syllabuses.pdf",
+    "https://saasresearch.hku.hk/share/student/u2025/AC/FlowChart_BSc(ActuarSc)(2025).pdf"
+  ],
+  "supplements": [
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6729",
+      "programmeId": "HKU-UG-6729-67",
+      "programmeName": "Bachelor of Science in Actuarial Science",
+      "majorId": "HKU-UG-6729-67-M1",
+      "majorName": "Bachelor of Science in Actuarial Science",
+      "sourceUrl": "https://saasweb.hku.hk/courses/202526/BSc(ActuarSc)_2025.html",
+      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science-actuarial-science",
+      "ruleSummary": "132 disciplinary credits: 42 credits of Year I core, 42 credits of Year II core, 30 credits of Year III core, at least 12 credits from the Year IV disciplinary elective pool, and at least 6 credits from the Capstone pool.",
+      "evidenceGap": "University Requirements, Common Core courses, free electives and any additional major or minor are open choices outside this closed disciplinary-course supplement. The Programme Requirements assign courses by curriculum year but do not prescribe a normative semester.",
+      "courses": [
+        { "code": "ACCT1101", "title": "Introduction to Financial Accounting", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Year I disciplinary core - all seven courses required / 42 credits" },
+        { "code": "ECON1210", "title": "Introductory Microeconomics", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Year I disciplinary core - all seven courses required / 42 credits" },
+        { "code": "ECON1220", "title": "Introductory Macroeconomics", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Year I disciplinary core - all seven courses required / 42 credits" },
+        { "code": "MATH1821", "title": "Mathematical Methods for Actuarial Science I", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Year I disciplinary core - all seven courses required / 42 credits" },
+        { "code": "MATH2822", "title": "Mathematical Methods for Actuarial Science II", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Year I disciplinary core - all seven courses required / 42 credits" },
+        { "code": "SDST2901", "title": "Probability and Statistics: Foundations of Actuarial Science", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Year I disciplinary core - all seven courses required / 42 credits" },
+        { "code": "SDST2902", "title": "Financial Mathematics", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Year I disciplinary core - all seven courses required / 42 credits" },
+
+        { "code": "COMP1117", "title": "Computer Programming", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Year II disciplinary core - all seven courses required / 42 credits" },
+        { "code": "SDST3901", "title": "Life Contingencies I", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Year II disciplinary core - all seven courses required / 42 credits" },
+        { "code": "SDST3902", "title": "Mathematical Statistics", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Year II disciplinary core - all seven courses required / 42 credits" },
+        { "code": "SDST3903", "title": "Stochastic Models", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Year II disciplinary core - all seven courses required / 42 credits" },
+        { "code": "SDST3904", "title": "Corporate Finance for Actuarial Science", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Year II disciplinary core - all seven courses required / 42 credits" },
+        { "code": "SDST3905", "title": "Introduction to Financial Derivatives", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Year II disciplinary core - all seven courses required / 42 credits" },
+        { "code": "SDST3907", "title": "Linear Models and Forecasting", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Year II disciplinary core - all seven courses required / 42 credits" },
+
+        { "code": "SDST3906", "title": "Risk Theory I", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Year III disciplinary core - all five courses required / 30 credits" },
+        { "code": "SDST3908", "title": "Credibility Theory and Loss Modelling", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Year III disciplinary core - all five courses required / 30 credits" },
+        { "code": "SDST3909", "title": "Life Contingencies II", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Year III disciplinary core - all five courses required / 30 credits" },
+        { "code": "SDST3910", "title": "Financial Economics I", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Year III disciplinary core - all five courses required / 30 credits" },
+        { "code": "SDST4904", "title": "Statistical Learning for Risk Modelling", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Year III disciplinary core - all five courses required / 30 credits" },
+
+        { "code": "SDST3911", "title": "Financial Economics II", "credits": 6, "recommendedYear": 4, "courseType": "major_elective", "group": "Year IV disciplinary elective pool - select at least 12 credits" },
+        { "code": "SDST3951", "title": "Topics on Advanced Actuarial Modelling", "credits": 6, "recommendedYear": 4, "courseType": "major_elective", "group": "Year IV disciplinary elective pool - select at least 12 credits" },
+        { "code": "SDST3953", "title": "Fundamentals of Actuarial Practice", "credits": 6, "recommendedYear": 4, "courseType": "major_elective", "group": "Year IV disciplinary elective pool - select at least 12 credits" },
+        { "code": "SDST3954", "title": "Current Topics in Actuarial Science", "credits": 6, "recommendedYear": 4, "courseType": "major_elective", "group": "Year IV disciplinary elective pool - select at least 12 credits" },
+        { "code": "SDST3956", "title": "Life Contingencies III", "credits": 6, "recommendedYear": 4, "courseType": "major_elective", "group": "Year IV disciplinary elective pool - select at least 12 credits" },
+        { "code": "SDST4901", "title": "Risk Theory II", "credits": 6, "recommendedYear": 4, "courseType": "major_elective", "group": "Year IV disciplinary elective pool - select at least 12 credits" },
+        { "code": "SDST4902", "title": "Selected Topics in Actuarial Science", "credits": 6, "recommendedYear": 4, "courseType": "major_elective", "group": "Year IV disciplinary elective pool - select at least 12 credits" },
+        { "code": "SDST4903", "title": "Actuarial Techniques for General Insurance", "credits": 6, "recommendedYear": 4, "courseType": "major_elective", "group": "Year IV disciplinary elective pool - select at least 12 credits" },
+
+        { "code": "SDST4711", "title": "Capstone Experience for Actuarial Science Undergraduates", "credits": 6, "recommendedYear": 4, "courseType": "capstone", "group": "Capstone pool - select at least 6 credits" },
+        { "code": "SDST4767", "title": "Actuarial Science Internship", "credits": 6, "recommendedYear": 4, "courseType": "capstone", "group": "Capstone pool - select at least 6 credits" },
+        { "code": "SDST4798", "title": "Statistics and Actuarial Science Project", "credits": 6, "recommendedYear": 4, "courseType": "capstone", "group": "Capstone pool - select at least 6 credits" }
+      ]
+    }
+  ]
+}

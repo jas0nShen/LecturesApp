@@ -65,22 +65,6 @@
   },
   {
     "universityCode": "POLYU",
-    "programmeCode": "JS3791",
-    "reviewedAt": "2026-07-10",
-    "status": "no_public_course_codes",
-    "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3791",
-    "note": "Official PolyU JUPAS page confirms the 2026 four-year Building Engineering and Management degree, Common Year One, 121 academic credits plus 2 training credits, work-integrated education and accreditation. Publicly searchable coded subject records belong to separate SPEED or senior-year programmes with different programme codes and entry structures, so they cannot be assigned to JS3791. Keep this programme as index/source-only until a current four-year coded curriculum source is publicly available."
-  },
-  {
-    "universityCode": "POLYU",
-    "programmeCode": "JS3789",
-    "reviewedAt": "2026-07-10",
-    "status": "no_public_course_codes",
-    "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3789",
-    "note": "Official PolyU JUPAS and programme pages confirm the 2026 four-year Surveying degree, Common Year One, five discipline choices, compulsory work-integrated education, capstone project and broad curriculum structure. The publicly accessible pages direct students to the department for subject information but do not publish a current stable subject-code table or semester-by-semester course rows. Keep this programme as index/source-only until a publicly accessible coded curriculum source is available."
-  },
-  {
-    "universityCode": "POLYU",
     "programmeCode": "JS3011",
     "reviewedAt": "2026-07-09",
     "status": "no_public_course_codes",
@@ -176,20 +160,12 @@
     "note": "The official 2025-26 Handbook publishes 57 units across 14 fixed coded courses, including the 6-unit ITS3005 Internship and two 6-unit Honours Project courses. It separately requires 36 units of Personalised Knowledge and Skills selected, with an Academic Supervisor and approval, from any HKBU courses except those offered by the School of Chinese Medicine. That open, student-specific component has no stable exhaustive code pool; the Programme page also does not publish closed code lists for University Core, General Education or Free Electives. Publishing only the 14 fixed courses would misrepresent this highly individualised curriculum as complete. Keep JS2950 index/source-only until an official versioned source defines a complete Programme-specific pool; the 2026-27 Handbook is currently access-restricted."
   },
   {
-    "universityCode": "HKU",
-    "programmeCode": "6705",
-    "reviewedAt": "2026-07-19",
-    "status": "no_public_course_codes",
-    "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-psychology",
-    "note": "The official 2026-27 Bachelor of Psychology admissions page and Programme leaflet describe the current Programme but publish no coded curriculum, per-course credits or requirement-group table. The current Department of Psychology undergraduate page still links only the 2023-24 Regulations and Syllabus and the 2023-24 recommended pathway. Those older files contain a complete coded structure for that cohort, but no current official evidence states that their course codes, titles, credits and groups remain applicable to 2026-27. Keep 6705 index/source-only until HKU publishes current regulations or explicitly confirms the older structure remains in force."
-  },
-  {
     "universityCode": "EDUHK",
     "programmeCode": "JS8005",
-    "reviewedAt": "2026-07-19",
-    "status": "no_public_course_codes",
+    "reviewedAt": "2026-07-22",
+    "status": "public_course_codes_partial",
     "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/heam_cht",
-    "note": "The current EdUHK admissions page, FHM Programme page and 2026-27 prospectus confirm that A5B109 is a five-year, 156-credit-point co-terminal double degree, including 71 credit points of Major studies, 30 Education Studies, 22 Field Experience, 18 General Education, 9 Language Enhancement, 6 Final Year Project and a compulsory 2-credit-point internship. They do not publish a current course-by-course table of codes, titles, credits or assignments to Core, Elective, Education Major, Field Experience and Final Year Project groups. Individual FHM course outlines and predecessor single-degree curricula do not establish membership in this double degree. Keep JS8005 index/source-only until EdUHK publishes an authenticated current coded curriculum."
+    "note": "The official programme-specific 2026/27 A5B109 course-list PDF publishes 41 codes and titles across Discipline Studies Major, Education Major, Cross-faculty Core, Education Studies Core and Pedagogy groups. These verified published courses are exposed as a partial planning list. The PDF does not publish per-course credit points, Year/Semester assignments, Major Elective or Cross-faculty selection counts, the Education Studies Restricted Elective pool, or coded lists for Field Experience, General Education, Language Enhancement and Final Year Project, so the list must not be presented as a complete 156-cp graduation structure."
   },
   {
     "universityCode": "CUHK",

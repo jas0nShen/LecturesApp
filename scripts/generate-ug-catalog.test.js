@@ -273,7 +273,7 @@ test('UG source coverage report includes generated catalogue supplement coverage
   const cityu = summary.schools.find((school) => school.code === 'CITYU');
   const lingnan = summary.schools.find((school) => school.code === 'LINGNAN');
 
-  assert.equal(summary.totals.programmeCount, 445);
+  assert.equal(summary.totals.programmeCount, 444);
   assert(summary.totals.codedCourseCount >= 7396);
   assert(summary.totals.programmeWithCoursesCount >= 110);
   assert(cityu.programmeWithCoursesCount >= 26);
@@ -281,6 +281,60 @@ test('UG source coverage report includes generated catalogue supplement coverage
   assert(cityu.courseProgrammes.some((programme) => programme.code === 'JS1001' && programme.codedCourseCount > 0));
   assert.equal(lingnan.missingProgrammeCount, 0);
   assert.equal(lingnan.courseProgrammes.length, 23);
+});
+
+test('HKU Bachelor of Social Work preserves the official professional core and disciplinary elective pools', () => {
+  const catalogue = require('../miniprogram/utils/ugCatalogue');
+  const programme = catalogue.programmes.find((item) => item.id === 'HKU-UG-6731-68');
+  const major = catalogue.majors.find((item) => item.id === 'HKU-UG-6731-68-M1');
+  const courses = catalogue.courses.filter((item) => item.majorId === major.id);
+  const courseCodes = courses.map((item) => item.courseCode);
+  const departmentRequired = courses.filter((item) => item.requirementGroups.some((group) => group.includes('Department required')));
+  const macroElectives = courses.filter((item) => item.requirementGroups.some((group) => group.includes('Macro Application')));
+  const microElectives = courses.filter((item) => item.requirementGroups.some((group) => group.includes('Micro Application')));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(programme.codedCourseCount, 107);
+  assert.equal(major.codedCourseCount, 107);
+  assert.equal(courses.length, 107);
+  assert.equal(new Set(courseCodes).size, 107);
+  assert.equal(departmentRequired.length, 18);
+  assert.equal(departmentRequired.reduce((total, course) => total + course.credits, 0), 126);
+  assert.equal(macroElectives.length, 26);
+  assert.equal(microElectives.length, 47);
+  assert(courses.some((item) => item.courseCode === 'SOWK4006' && item.credits === 15 && item.recommendedYear === 3));
+  assert(courses.some((item) => item.courseCode === 'SOWK4007' && item.credits === 15 && item.recommendedYear === 4));
+  assert(courses.some((item) => item.courseCode === 'SOWK3030' && item.recommendedYear === 0));
+  assert(courses.some((item) => item.courseCode === 'SOWK4055' && item.recommendedYear === 0));
+  assert(courses.some((item) => item.courseCode === 'PSYC1001'));
+  assert(['SOCI1001', 'SOCI1003', 'SOCI1004'].every((code) => courseCodes.includes(code)));
+  assert(!courses.some((item) => /Common Core|Free Elective/i.test(item.courseCode)));
+});
+
+test('HKU Bachelor of Psychology preserves the 84-credit major and both capstone paths', () => {
+  const catalogue = require('../miniprogram/utils/ugCatalogue');
+  const programme = catalogue.programmes.find((item) => item.id === 'HKU-UG-6705-54');
+  const major = catalogue.majors.find((item) => item.id === 'HKU-UG-6705-54-M1');
+  const courses = catalogue.courses.filter((item) => item.majorId === major.id);
+  const courseCodes = courses.map((item) => item.courseCode);
+  const fixedCore = courses.filter((item) => item.requirementGroups.some((group) => group.includes('all five fixed courses')));
+  const advancedElectives = courses.filter((item) => item.requirementGroups.some((group) => group.includes('advanced disciplinary elective pool')));
+  const capstones = courses.filter((item) => item.courseType === 'capstone');
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(programme.codedCourseCount, 67);
+  assert.equal(major.codedCourseCount, 67);
+  assert.equal(courses.length, 67);
+  assert.equal(new Set(courseCodes).size, 67);
+  assert.equal(fixedCore.length, 5);
+  assert.equal(advancedElectives.length, 25);
+  assert.equal(capstones.length, 12);
+  assert(['PSYC1001', 'PSYC1004', 'PSYC2007', 'PSYC2051', 'PSYC2060'].every((code) => courseCodes.includes(code)));
+  assert(['PSYC4007', 'PSYC4008', 'PSYC4009'].every((code) => courseCodes.includes(code)));
+  assert(['FOSS2018', 'PSYC2075', 'FOSS2019', 'FOSS2022', 'FOSS2023'].every((code) => courseCodes.includes(code)));
+  assert(!courses.some((item) => /AILTxxxx|Common Core|Free Elective/i.test(item.courseCode)));
+  assert(courses.some((item) => item.courseCode === 'PSYC3054' && item.recommendedYear === 4));
+  assert(courses.some((item) => item.courseCode === 'PSYC2060' && item.recommendedYear === 0));
 });
 
 test('CityU Data Science programmes expose the verified first-year curriculum', () => {
@@ -534,7 +588,7 @@ test('UG source coverage report can filter missing programmes by source readines
   assert.equal(normalizeReadinessFilter('all'), '');
   assert.throws(() => normalizeReadinessFilter('maybe'), /Unknown --readiness/);
   assert.equal(hku.missingProgrammeCount, Object.values(hku.sourceReadiness).reduce((sum, count) => sum + count, 0));
-  assert.equal(hku.filteredMissingProgrammeCount, 10);
+  assert.equal(hku.filteredMissingProgrammeCount, 9);
   assert.equal(hku.missingProgrammes.length, 3);
   assert(hku.missingProgrammes.every((programme) => !programme.sourceStatus));
   assert.deepEqual(hku.missingProgrammes.map((programme) => programme.name), [
@@ -544,7 +598,7 @@ test('UG source coverage report can filter missing programmes by source readines
   ]);
   const template = buildMissingCollectorTemplate(summary, args);
   assert(template.includes(`待补 Programme：${hku.missingProgrammeCount}`));
-  assert.match(template, /当前筛选：no-source · 10 个/);
+  assert.match(template, new RegExp(`当前筛选：no-source · ${hku.filteredMissingProgrammeCount} 个`));
   assert.match(template, /1\. HKU · 无代码 · HKU-Cambridge Joint Recruitment Scheme \(Engineering\)/);
 });
 
@@ -613,7 +667,7 @@ test('UG source coverage report can build a grouped missing data batch plan', ()
 
   assert.equal(args.batchPlan, true);
   assert(groups.sourceIndexOnly.length > 0);
-  assert.equal(groups.reviewedNoCourseCodes.length, 23);
+  assert.equal(groups.reviewedNoCourseCodes.length, 19);
   assert(groups.noSource.length <= 165);
   assert.equal(groups.sourceIndexOnly[0].schoolCode, 'HKU');
   assert(groups.sourceIndexOnly[0].code);
@@ -623,7 +677,7 @@ test('UG source coverage report can build a grouped missing data batch plan', ()
   assert.match(plan, /【本科课程补数批次计划】/);
   assert.match(plan, /A\. 可直接导入候选：0 个/);
   assert.match(plan, new RegExp(`C\\. 需打开官方入口核实课程码：${groups.sourceIndexOnly.length} 个`));
-  assert.match(plan, /D\. 已核实官网暂无公开课程码：23 个/);
+  assert.match(plan, new RegExp(`D\\. 已核实官网暂无公开课程码：${groups.reviewedNoCourseCodes.length} 个`));
   assert.match(plan, new RegExp(`E\\. 需先寻找官方来源：${groups.noSource.length} 个`));
   assert.match(plan, /POLYU · JS3011 · Bachelor of Science \(Honours\) Scheme in Biotechnology and Chemical Technology/);
   assert.match(plan, /npm run status:ug-sources -- --missing-only --priority launch --missing-limit 3 --collector-template/);
@@ -638,19 +692,19 @@ test('UG source coverage report can filter reviewed no-code programmes', () => {
   const polyu = summary.schools[0];
   const template = buildMissingCollectorTemplate(summary, args);
 
-  assert.equal(polyu.filteredMissingProgrammeCount, 19);
+  assert.equal(polyu.filteredMissingProgrammeCount, 17);
   assert.equal(polyu.missingProgrammes.length, 10);
   assert.equal(polyu.missingProgrammes[0].code, 'JS3214');
   assert.equal(polyu.missingProgrammes[0].sourceReviewStatus, 'no_public_course_codes');
   assert.equal(polyu.missingProgrammes[1].code, 'JS3011');
   assert.equal(polyu.missingProgrammes[1].sourceReviewStatus, 'no_public_course_codes');
-  assert.equal(polyu.missingProgrammes[2].code, 'JS3791');
+  assert.equal(polyu.missingProgrammes[2].code, 'JS3211');
   assert.equal(polyu.missingProgrammes[2].sourceReviewStatus, 'no_public_course_codes');
   assert(polyu.missingProgrammes.some((programme) => programme.code === 'JS3255' && programme.sourceReviewStatus === 'no_public_course_codes'));
   assert(polyu.missingProgrammes.some((programme) => programme.code === 'JS3569' && programme.sourceReviewStatus === 'no_public_course_codes'));
   assert.match(formatMissingSourceStatus(polyu.missingProgrammes[0]), /reviewed no public course codes/);
   assert.match(formatCollectorSourceStatus(polyu.missingProgrammes[0]), /已核实官网暂无公开课程码/);
-  assert.match(template, /当前筛选：reviewed-no-codes · 19 个/);
+  assert.match(template, /当前筛选：reviewed-no-codes · 17 个/);
 });
 
 test('UG source coverage report can generate a safe supplement starter template', () => {

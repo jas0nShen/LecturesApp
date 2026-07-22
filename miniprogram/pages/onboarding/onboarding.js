@@ -293,9 +293,9 @@ Page({
 
   async loadTpg(profile) {
     const tpgUniversities = tpgService.listUniversities();
-    const selectedTpgUniversity = tpgUniversities.find(
-      (item) => item.code === (profile && profile.universityCode)
-    );
+    const selectedTpgUniversity = profile && profile.profileType === 'tpg'
+      ? tpgUniversities.find((item) => item.code === profile.universityCode)
+      : null;
     if (!selectedTpgUniversity) {
       this.setData({
         tpgUniversities,
@@ -511,7 +511,9 @@ Page({
       programmes,
       filteredUgProgrammes,
       programmeOptions: filteredUgProgrammes.map(formatUgProgrammeOption),
-      visibleUgProgrammes: this.decorateUgProgrammes(filteredUgProgrammes.slice(0, 5)),
+      visibleUgProgrammes: this.decorateUgProgrammes(
+        ugKeyword ? filteredUgProgrammes : filteredUgProgrammes.slice(0, 5)
+      ),
       ugKeyword,
       ugUniversityIndex: selectedUniversityIndex >= 0 ? selectedUniversityIndex : 0,
       ugProgrammeIndex: selectedIndex >= 0 ? selectedIndex : 0,
@@ -815,7 +817,9 @@ Page({
       filteredTpgProgrammes,
       tpgUniversityOptions: this.data.tpgUniversities.map(formatTpgUniversityOption),
       tpgProgrammeOptions: filteredTpgProgrammes.map(formatTpgProgrammeOption),
-      visibleTpgProgrammes: this.decorateTpgProgrammes(filteredTpgProgrammes.slice(0, 5)),
+      visibleTpgProgrammes: this.decorateTpgProgrammes(
+        tpgKeyword ? filteredTpgProgrammes : filteredTpgProgrammes.slice(0, 5)
+      ),
       tpgKeyword,
       tpgUniversityIndex: tpgUniversityIndex >= 0 ? tpgUniversityIndex : 0,
       tpgProgrammeIndex: selectedIndex >= 0 ? selectedIndex : 0,

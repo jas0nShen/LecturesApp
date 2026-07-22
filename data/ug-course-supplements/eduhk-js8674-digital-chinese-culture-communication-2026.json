@@ -1,0 +1,42 @@
+{
+  "provider": "The Education University of Hong Kong 2026/27 Undergraduate Programme Course List",
+  "academicYear": "2026/27",
+  "sourceUrl": "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BA(DCCC).pdf",
+  "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/dccc",
+  "supplements": [
+    {
+      "universityCode": "EDUHK",
+      "programmeId": "EDUHK-UG-JS8674-16",
+      "jupasCode": "JS8674",
+      "majorId": "EDUHK-UG-JS8674-16-M1",
+      "evidenceNote": "The official 2026/27 course-list PDF publishes 24 unique course codes and titles, including the alternative Component II and Component III Cross-Faculty Core choices. It does not publish per-course credit points, a recommended year/semester pattern, or coded Final Year Project, Living and Working in Our Country, Minor/Elective, General Education or Language Enhancement lists. The programme page publishes only domain-level credit totals, so those totals are not assigned to individual courses and the uncoded domains are not invented here.",
+      "courses": [
+        { "code": "CHI1559", "title": "Modern Chinese Language", "courseType": "core", "group": "Major Course List" },
+        { "code": "CHI2571", "title": "Media Writing", "courseType": "core", "group": "Major Course List" },
+        { "code": "CHI2943", "title": "Chinese for Cross-Cultural Communication in the Greater Bay Area", "courseType": "core", "group": "Major Course List" },
+        { "code": "CHI2944", "title": "Digital Literacy in Chinese Language and Culture Learning", "courseType": "core", "group": "Major Course List" },
+        { "code": "LIT3080", "title": "Classical Chinese Literature", "courseType": "core", "group": "Major Course List" },
+        { "code": "CHI3714", "title": "Classical Chinese Language", "courseType": "core", "group": "Major Course List" },
+        { "code": "CHI3942", "title": "Chinese Folklore", "courseType": "core", "group": "Major Course List" },
+        { "code": "CHI3945", "title": "Chinese Etymology and Digitalisation", "courseType": "core", "group": "Major Course List" },
+        { "code": "CHI3946", "title": "Emerging Technologies in Chinese Culture and Communication", "courseType": "core", "group": "Major Course List" },
+        { "code": "CHI3949", "title": "Internship", "courseType": "internship", "group": "Major Course List · Internship" },
+        { "code": "CHI4947", "title": "AI and Digital Humanities", "courseType": "core", "group": "Major Course List" },
+        { "code": "CHI4948", "title": "Chinese Language Databases and Cultural Studies", "courseType": "core", "group": "Major Course List" },
+        { "code": "CUS1002", "title": "Introduction to Chinese Culture", "courseType": "core", "group": "Major Course List" },
+        { "code": "LIT2083", "title": "Modern and Contemporary Chinese Literature", "courseType": "core", "group": "Major Course List" },
+        { "code": "INT3106", "title": "Introduction to Programming for Lang Studies", "courseType": "core", "group": "Major Course List" },
+        { "code": "INS4086", "title": "Knowledge, Practice and Creativity: The Pearl River Delta’s History, Culture and Arts", "courseType": "core", "group": "Major Course List" },
+
+        { "code": "CFA1001", "title": "Cross-Faculty Core Course - Component I: Basic Law and National Security Education", "courseType": "core", "group": "Cross-Faculty Core Course · Component I" },
+        { "code": "CFB3004", "title": "Cross-Faculty Core Course - Component II: Visits in Greater Bay Area", "courseType": "major_elective", "group": "Cross-Faculty Core Course · Component II option (choose 1)" },
+        { "code": "CFB3027", "title": "Cross-Faculty Core Course - Component II: Visits in Greater Bay Area", "courseType": "major_elective", "group": "Cross-Faculty Core Course · Component II option (choose 1)" },
+        { "code": "CFB3032", "title": "Cross-Faculty Core Course - Component II: Visits in Greater Bay Area", "courseType": "major_elective", "group": "Cross-Faculty Core Course · Component II option (choose 1)" },
+        { "code": "CFC3002", "title": "Cross-Faculty Core Course - Component III: Language Education in the GBA", "courseType": "major_elective", "group": "Cross-Faculty Core Course · Component III option (choose 1)" },
+        { "code": "CFC3003", "title": "Cross-Faculty Core Course - Component III: Lingnan Art and Culture", "courseType": "major_elective", "group": "Cross-Faculty Core Course · Component III option (choose 1)" },
+        { "code": "CFC3030", "title": "Cross-Faculty Core Course - Component III: History and Culture of GBA", "courseType": "major_elective", "group": "Cross-Faculty Core Course · Component III option (choose 1)" },
+        { "code": "CFC3035", "title": "Cross-Faculty Core Course - Component III: Language Use in the Greater Bay Area", "courseType": "major_elective", "group": "Cross-Faculty Core Course · Component III option (choose 1)" }
+      ]
+    }
+  ]
+}

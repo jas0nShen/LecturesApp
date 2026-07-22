@@ -1,0 +1,40 @@
+{
+  "provider": "The Education University of Hong Kong 2026/27 Undergraduate Programme Course List",
+  "academicYear": "2026/27",
+  "sourceUrl": "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BA(ESDC).pdf",
+  "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/esdc",
+  "supplements": [
+    {
+      "universityCode": "EDUHK",
+      "programmeId": "EDUHK-UG-JS8675-17",
+      "jupasCode": "JS8675",
+      "majorId": "EDUHK-UG-JS8675-17-M1",
+      "evidenceNote": "The official 2026/27 course-list PDF publishes 22 unique codes and titles under the broad Major Course List, including the combined-code Component II, Component III and INS4085/INS4086 rows. It does not map the listed courses to the programme page's internal Core, Major Interdisciplinary, Major Elective or Living and Working in Our Country subtotals, and it does not publish coded Final Year Project, Minor/Elective, General Education or Language Enhancement lists. Only the compulsory Internship's 3 credit points are stated directly on the programme page; other per-course credits and the recommended year/semester pattern remain unknown.",
+      "courses": [
+        { "code": "ENG1324", "title": "Introduction to Linguistics", "courseType": "core", "group": "Major Course List" },
+        { "code": "ENG1326", "title": "Introduction to English Phonetics and Phonology", "courseType": "core", "group": "Major Course List" },
+        { "code": "ENG2246", "title": "Introduction to Sociolinguistics", "courseType": "core", "group": "Major Course List" },
+        { "code": "ENG2347", "title": "Words and Their Meanings", "courseType": "core", "group": "Major Course List" },
+        { "code": "ENG3340", "title": "Spoken and Written Discourse", "courseType": "core", "group": "Major Course List" },
+        { "code": "ENG3346", "title": "English as a Global Language", "courseType": "core", "group": "Major Course List" },
+        { "code": "INT3106", "title": "Introduction to Programming for Language Studies", "courseType": "core", "group": "Major Course List" },
+        { "code": "LIN3043", "title": "Computer-assisted Translation", "courseType": "core", "group": "Major Course List" },
+        { "code": "LIN3044", "title": "English for Cross-cultural Communication in the Greater Bay Area and Beyond", "courseType": "core", "group": "Major Course List" },
+        { "code": "LIN3045", "title": "English Grammar", "courseType": "core", "group": "Major Course List" },
+        { "code": "LIN3046", "title": "Language Information Management", "courseType": "core", "group": "Major Course List" },
+        { "code": "LIN3048", "title": "Internship", "credits": 3, "courseType": "internship", "group": "Major Course List · Internship" },
+
+        { "code": "CFA1001", "title": "Cross-Faculty Core Course - Component I: Basic Law and National Security Education", "courseType": "core", "group": "Cross-Faculty Core Course · Component I" },
+        { "code": "CFB3004", "title": "Cross-Faculty Core Course - Component II: Visits in Greater Bay Area", "courseType": "major_elective", "group": "Cross-Faculty Core Course · Component II shared-title option" },
+        { "code": "CFB3027", "title": "Cross-Faculty Core Course - Component II: Visits in Greater Bay Area", "courseType": "major_elective", "group": "Cross-Faculty Core Course · Component II shared-title option" },
+        { "code": "CFB3032", "title": "Cross-Faculty Core Course - Component II: Visits in Greater Bay Area", "courseType": "major_elective", "group": "Cross-Faculty Core Course · Component II shared-title option" },
+        { "code": "CFC3002", "title": "Cross-Faculty Core Course - Component III: Language Education in the GBA", "courseType": "major_elective", "group": "Cross-Faculty Core Course · Component III option" },
+        { "code": "CFC3003", "title": "Cross-Faculty Core Course - Component III: Lingnan Art and Culture", "courseType": "major_elective", "group": "Cross-Faculty Core Course · Component III option" },
+        { "code": "CFC3030", "title": "Cross-Faculty Core Course - Component III: History and Culture of GBA", "courseType": "major_elective", "group": "Cross-Faculty Core Course · Component III option" },
+        { "code": "CFC3035", "title": "Cross-Faculty Core Course - Component III: Language Use in the Greater Bay Area", "courseType": "major_elective", "group": "Cross-Faculty Core Course · Component III option" },
+        { "code": "INS4085", "title": "Knowledge, Practice and Creativity: The Pearl River Delta’s History, Culture and Arts", "courseType": "core", "group": "Major Course List · shared-title INS code" },
+        { "code": "INS4086", "title": "Knowledge, Practice and Creativity: The Pearl River Delta’s History, Culture and Arts", "courseType": "core", "group": "Major Course List · shared-title INS code" }
+      ]
+    }
+  ]
+}

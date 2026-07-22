@@ -79,19 +79,30 @@
     </view>
 
     <view wx:if="{{selectedUniversity.id && filteredUgProgrammes.length}}" class="programme-results">
-      <view
-        wx:for="{{visibleUgProgrammes}}"
-        wx:key="id"
-        class="programme-result {{selectedProgramme.id === item.id ? 'programme-result-active' : ''}}"
-        data-id="{{item.id}}"
-        bindtap="selectUgProgramme"
-      >
-        <view class="result-code">{{item.code || item.jupasCode || selectedUniversity.code}}</view>
-        <view class="result-main">
-          <view class="result-name">{{item.nameZh}}</view>
-          <view class="result-meta">{{item.faculty || 'Faculty 待确认'}} · {{item.courseStatusLabel}}</view>
-        </view>
+      <view class="programme-results-head">
+        <view>{{ugKeyword ? '全部 ' + filteredUgProgrammes.length + ' 个搜索结果' : 'Programme 预览'}}</view>
+        <view class="programme-results-hint">{{ugKeyword ? '上下滑动浏览' : '点击上方查看全部'}}</view>
       </view>
+      <scroll-view
+        class="programme-results-list {{ugKeyword ? 'programme-results-list-scrollable' : ''}}"
+        scroll-y="{{ugKeyword ? true : false}}"
+        enhanced="{{true}}"
+        show-scrollbar="{{false}}"
+      >
+        <view
+          wx:for="{{visibleUgProgrammes}}"
+          wx:key="id"
+          class="programme-result {{selectedProgramme.id === item.id ? 'programme-result-active' : ''}}"
+          data-id="{{item.id}}"
+          bindtap="selectUgProgramme"
+        >
+          <view class="result-code">{{item.code || item.jupasCode || selectedUniversity.code}}</view>
+          <view class="result-main">
+            <view class="result-name">{{item.nameZh}}</view>
+            <view class="result-meta">{{item.faculty || 'Faculty 待确认'}} · {{item.courseStatusLabel}}</view>
+          </view>
+        </view>
+      </scroll-view>
     </view>
 
     <view wx:if="{{selectedUniversity.id && !filteredUgProgrammes.length}}" class="programme-empty">
@@ -184,19 +195,30 @@
     </view>
 
     <view wx:if="{{selectedTpgUniversity.code && filteredTpgProgrammes.length}}" class="programme-results">
-      <view
-        wx:for="{{visibleTpgProgrammes}}"
-        wx:key="id"
-        class="programme-result {{selectedTpgProgramme.id === item.id ? 'programme-result-active' : ''}}"
-        data-id="{{item.id}}"
-        bindtap="selectTpgProgramme"
-      >
-        <view class="result-code">{{item.programmeCode || item.universityCode}}</view>
-        <view class="result-main">
-          <view class="result-name">{{item.name}}</view>
-          <view class="result-meta">{{item.faculty || 'Faculty 待确认'}} · {{item.creditsRequired ? item.creditsRequired + ' credits / units' : '学分待确认'}} · {{item.courseStatusLabel}}</view>
-        </view>
+      <view class="programme-results-head">
+        <view>{{tpgKeyword ? '全部 ' + filteredTpgProgrammes.length + ' 个搜索结果' : 'Programme 预览'}}</view>
+        <view class="programme-results-hint">{{tpgKeyword ? '上下滑动浏览' : '点击上方查看全部'}}</view>
       </view>
+      <scroll-view
+        class="programme-results-list {{tpgKeyword ? 'programme-results-list-scrollable' : ''}}"
+        scroll-y="{{tpgKeyword ? true : false}}"
+        enhanced="{{true}}"
+        show-scrollbar="{{false}}"
+      >
+        <view
+          wx:for="{{visibleTpgProgrammes}}"
+          wx:key="id"
+          class="programme-result {{selectedTpgProgramme.id === item.id ? 'programme-result-active' : ''}}"
+          data-id="{{item.id}}"
+          bindtap="selectTpgProgramme"
+        >
+          <view class="result-code">{{item.programmeCode || item.universityCode}}</view>
+          <view class="result-main">
+            <view class="result-name">{{item.name}}</view>
+            <view class="result-meta">{{item.faculty || 'Faculty 待确认'}} · {{item.creditsRequired ? item.creditsRequired + ' credits / units' : '学分待确认'}} · {{item.courseStatusLabel}}</view>
+          </view>
+        </view>
+      </scroll-view>
     </view>
 
     <view wx:if="{{selectedTpgUniversity.code && !filteredTpgProgrammes.length}}" class="programme-empty">

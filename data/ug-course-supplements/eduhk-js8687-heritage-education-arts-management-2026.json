@@ -1,0 +1,52 @@
+{
+  "provider": "The Education University of Hong Kong 2026/27 Undergraduate Programme Course List",
+  "academicYear": "2026/27",
+  "sourceUrl": "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BA(HE&AM).pdf",
+  "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/heam",
+  "supplements": [
+    {
+      "universityCode": "EDUHK",
+      "programmeId": "EDUHK-UG-JS8687-20",
+      "jupasCode": "JS8687",
+      "majorId": "EDUHK-UG-JS8687-20-M1",
+      "evidenceNote": "The official 2026/27 course-list PDF publishes course codes, titles and curriculum groups, but not per-course credit points or a recommended year/semester study pattern. Credits and recommendedYear are therefore intentionally left unknown. The programme page confirms 121 cps for First Year Entry, 60 cps for Senior Year Entry, a 69-cp First Year Entry Major domain, a 6-cp Final Year Project domain, and a 200-hour summer internship, but those aggregates are not allocated to individual courses here.",
+      "courses": [
+        { "code": "CUS1022", "title": "Chinese History, Culture and Heritage", "courseType": "foundation", "group": "Interdisciplinary Major (Foundation)" },
+        { "code": "SSC1338", "title": "Hong Kong: Society and Culture", "courseType": "foundation", "group": "Interdisciplinary Major (Foundation)" },
+        { "code": "HEM2019", "title": "Experiencing Work Culture of Arts/Culture and Creative Industries in Mainland China", "courseType": "foundation", "group": "Interdisciplinary Major (Foundation)" },
+        { "code": "HEM2012", "title": "Foundational Seminars/Workshops on Heritage/Museum Studies and Education", "courseType": "foundation", "group": "Interdisciplinary Major (Foundation)" },
+        { "code": "HEM2017", "title": "Media, Technology and Communications", "courseType": "foundation", "group": "Interdisciplinary Major (Foundation)" },
+        { "code": "SSC2340", "title": "Oral History and Cultural Conservation in Hong Kong and the Greater Bay Area", "courseType": "foundation", "group": "Interdisciplinary Major (Foundation)" },
+
+        { "code": "CFA1001", "title": "Component I – Basic Law and National Security Education", "courseType": "core", "group": "Cross-Faculty Core Course · Component I" },
+        { "code": "CFB3023", "title": "Component II – Visits in Greater Bay Area", "courseType": "core", "group": "Cross-Faculty Core Course · Component II" },
+        { "code": "CFC3018", "title": "Component III – Diversity, Equity, and Inclusion in the Greater Bay Area", "courseType": "major_elective", "group": "Cross-Faculty Core Course · Component III option (choose 1)" },
+        { "code": "CFC3024", "title": "Component III – Artificial Intelligence Enhanced Educational Entrepreneurship in GBA", "courseType": "major_elective", "group": "Cross-Faculty Core Course · Component III option (choose 1)" },
+        { "code": "CFC3026", "title": "Component III – Supporting Students with Diverse Learning Needs in the Greater Bay Area", "courseType": "major_elective", "group": "Cross-Faculty Core Course · Component III option (choose 1)" },
+
+        { "code": "HEM3001", "title": "Museum Studies and Museum Education: Practices and Problems", "courseType": "core", "group": "Interdisciplinary Major" },
+        { "code": "HEM3005", "title": "Cultural Heritage in Hong Kong and the Greater Bay Area", "courseType": "core", "group": "Interdisciplinary Major" },
+        { "code": "HEM3006", "title": "Arts Planning and Management", "courseType": "core", "group": "Interdisciplinary Major" },
+        { "code": "HEM3007", "title": "Arts Education in Community Context", "courseType": "core", "group": "Interdisciplinary Major" },
+        { "code": "HEM3008", "title": "Heritage Education: Issues and Perspectives", "courseType": "core", "group": "Interdisciplinary Major" },
+        { "code": "HEM4009", "title": "Cultural History for Arts Appreciation: Cross-cultural Perspectives", "courseType": "core", "group": "Interdisciplinary Major" },
+        { "code": "HEM4010", "title": "Knowing about M+ Museum and the Palace Museum in WKCD", "courseType": "core", "group": "Interdisciplinary Major" },
+        { "code": "HEM4011", "title": "Digital Technology and Its Application in Heritage Education", "courseType": "core", "group": "Interdisciplinary Major" },
+        { "code": "INS3076", "title": "Entrepreneurship and Arts Management", "courseType": "core", "group": "Interdisciplinary Major" },
+        { "code": "SSC4336", "title": "Issues in Heritage Conservation and its Policy", "courseType": "core", "group": "Interdisciplinary Major" },
+
+        { "code": "PFS3066", "title": "21st Century Skills and Values Education", "courseType": "core", "group": "Programme Package" },
+        { "code": "EDA3127", "title": "Organizational and Executive Management: Cross-cultural Perspectives", "courseType": "core", "group": "Programme Package" },
+        { "code": "HEM4003", "title": "Field-based Learning in China and the Greater Bay Area", "courseType": "core", "group": "Programme Package" },
+        { "code": "HEM4004", "title": "Advanced Seminars/Workshops on Heritage/Museum Education and Arts Management", "courseType": "core", "group": "Programme Package" },
+
+        { "code": "HEM3002", "title": "Internship", "courseType": "internship", "group": "Internship" },
+
+        { "code": "PRJ4005", "title": "Honours Project I: Research Methods and Proposal", "courseType": "capstone", "group": "Final Year Project · Honours Project path" },
+        { "code": "PRJ4006", "title": "Honours Project II: Research Report", "courseType": "capstone", "group": "Final Year Project · Honours Project path" },
+        { "code": "PRJ4007", "title": "Capstone Project I: Research Methods and Proposal", "courseType": "capstone", "group": "Final Year Project · Capstone Project path" },
+        { "code": "PRJ4008", "title": "Capstone Project II: Project Output", "courseType": "capstone", "group": "Final Year Project · Capstone Project path" }
+      ]
+    }
+  ]
+}

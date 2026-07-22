@@ -2,6 +2,7 @@
 const nodeLoaders = {
   "CITYU": (nodeRequire) => [].concat(nodeRequire("../subpackages/ug-data-cityu-a/ugCourseData/cityu-a"), nodeRequire("../subpackages/ug-data-cityu-b/ugCourseData/cityu-b")),
   "CUHK": (nodeRequire) => [].concat(nodeRequire("../subpackages/ug-data-cuhk/ugCourseData/cuhk")),
+  "EDUHK": (nodeRequire) => [].concat(nodeRequire("../subpackages/ug-data-eduhk/ugCourseData/eduhk")),
   "HKBU": (nodeRequire) => [].concat(nodeRequire("../subpackages/ug-data-hkbu-a/ugCourseData/hkbu-a"), nodeRequire("../subpackages/ug-data-hkbu-b/ugCourseData/hkbu-b")),
   "HKU": (nodeRequire) => [].concat(nodeRequire("../subpackages/ug-data-hku-a/ugCourseData/hku-a"), nodeRequire("../subpackages/ug-data-hku-b/ugCourseData/hku-b")),
   "HKUST": (nodeRequire) => [].concat(nodeRequire("../subpackages/ug-data-hkust/ugCourseData/hkust")),
@@ -9,13 +10,14 @@ const nodeLoaders = {
   "POLYU": (nodeRequire) => [].concat(nodeRequire("../subpackages/ug-data-polyu-a/ugCourseData/polyu-a"), nodeRequire("../subpackages/ug-data-polyu-b/ugCourseData/polyu-b")),
 };
 const counts = {
-  "CITYU": 2725,
-  "CUHK": 638,
+  "CITYU": 3056,
+  "CUHK": 732,
+  "EDUHK": 507,
   "HKBU": 2650,
-  "HKU": 3335,
+  "HKU": 3539,
   "HKUST": 690,
   "LINGNAN": 721,
-  "POLYU": 2472
+  "POLYU": 2681
 };
 const packageNames = {
   "CITYU": [
@@ -24,6 +26,9 @@ const packageNames = {
   ],
   "CUHK": [
     "subpackages/ug-data-cuhk"
+  ],
+  "EDUHK": [
+    "subpackages/ug-data-eduhk"
   ],
   "HKBU": [
     "subpackages/ug-data-hkbu-a",

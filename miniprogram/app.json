@@ -41,6 +41,13 @@
       ]
     },
     {
+      "root": "subpackages/ug-data-eduhk",
+      "name": "ug-data-eduhk",
+      "pages": [
+        "pages/loader/index"
+      ]
+    },
+    {
       "root": "subpackages/ug-data-hku-a",
       "name": "ug-data-hku-a",
       "pages": [

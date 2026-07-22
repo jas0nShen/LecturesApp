@@ -1,0 +1,46 @@
+{
+  "provider": "The Education University of Hong Kong 2026/27 Undergraduate Programme Course Lists",
+  "academicYear": "2026/27",
+  "sourceUrl": "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BSc(SPR).pdf",
+  "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/spr",
+  "sources": [
+    "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BSc(SPR).pdf",
+    "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BSc(SPR)_Integrated%20Minor.pdf"
+  ],
+  "supplements": [
+    {
+      "universityCode": "EDUHK",
+      "programmeId": "EDUHK-UG-JS8727-25",
+      "jupasCode": "JS8727",
+      "majorId": "EDUHK-UG-JS8727-25-M1",
+      "evidenceNote": "The official 2026/27 Major Course List and Integrated Minor Course List publish 23 unique confirmed codes and titles: fourteen named Major courses, one Major Interdisciplinary Course, three Cross-Faculty Core components and five Integrated Minor courses. The Cross-Faculty Core description explicitly assigns 1 credit point to each component; the other public course rows do not publish per-course credit points or a recommended year/semester pattern, so those fields remain unknown. The Programme page confirms a 69-cp Major domain including Practicum, a 15-cp Integrated Minor and a 6-cp Final Year Project, but the public course lists do not identify Practicum or Final Year Project course codes. Those missing components are not invented, and this published-code subset does not assert graduation completion or professional accreditation.",
+      "courses": [
+        { "code": "SPR1001", "title": "Medical Aspects of Communication Disorders", "courseType": "core", "group": "Major Course" },
+        { "code": "SPR3011", "title": "Acoustics for Speech, Language, and Hearing", "courseType": "core", "group": "Major Course" },
+        { "code": "SPR2007", "title": "Educational Counselling, Therapeutic Process and Teaching Pedagogy", "courseType": "core", "group": "Major Course" },
+        { "code": "SPR1002", "title": "Phonetics and Phonology", "courseType": "core", "group": "Major Course" },
+        { "code": "SPR1003", "title": "Language Development", "courseType": "core", "group": "Major Course" },
+        { "code": "SPR2005", "title": "Speech, Language and Communication Disorders", "courseType": "core", "group": "Major Course" },
+        { "code": "SPR1004", "title": "Chinese-English Contrastive Grammar", "courseType": "core", "group": "Major Course" },
+        { "code": "SPR3012", "title": "Audiology and Aural Rehabilitation", "courseType": "core", "group": "Major Course" },
+        { "code": "SPR2006", "title": "Assessment and Intervention for Speech, Language, and Communication in Children", "courseType": "core", "group": "Major Course" },
+        { "code": "SPR3009", "title": "Assessment and Intervention for Speech, Language, and Communication in Adults", "courseType": "core", "group": "Major Course" },
+        { "code": "SPR2008", "title": "Learning Disabilities, Reading and Writing Disorders in Children and Adolescents", "courseType": "core", "group": "Major Course" },
+        { "code": "SPR3010", "title": "Acquired Neurogenic Communication Disorders, Dysphagia, and Pediatric Swallowing", "courseType": "core", "group": "Major Course" },
+        { "code": "SPR4014", "title": "Fluency, Voice, Head and Neck Cancer", "courseType": "core", "group": "Major Course" },
+        { "code": "SPR4013", "title": "Bilingualism, Craniofacial Anomalies, Augmentative and Alternative Communication", "courseType": "core", "group": "Major Course" },
+        { "code": "SPR4015", "title": "Supporting Students with Social, Emotional, Behavioral and Developmental Disabilities in the Classroom", "courseType": "core", "group": "Major Interdisciplinary Course" },
+
+        { "code": "CFA1001", "title": "Cross-faculty Core Course (Component I)", "credits": 1, "courseType": "core", "group": "Cross-Faculty Core Course · Component I" },
+        { "code": "CFB3034", "title": "Cross-faculty Core Course (Component II)", "credits": 1, "courseType": "core", "group": "Cross-Faculty Core Course · Component II" },
+        { "code": "CFC3026", "title": "Cross-faculty Core Course (Component III)", "credits": 1, "courseType": "core", "group": "Cross-Faculty Core Course · Component III" },
+
+        { "code": "PSY1030", "title": "Basic Principles of Psychology", "courseType": "core", "group": "Integrated Minor" },
+        { "code": "PSY2020", "title": "Human Development Across the Lifespan", "courseType": "core", "group": "Integrated Minor" },
+        { "code": "PSY3025", "title": "Educational Psychology", "courseType": "core", "group": "Integrated Minor" },
+        { "code": "HCS4059", "title": "Elderly Rehabilitation and Education", "courseType": "core", "group": "Integrated Minor" },
+        { "code": "HCS4075", "title": "Theory and Therapeutic Play for Children’s Well-Being", "courseType": "core", "group": "Integrated Minor" }
+      ]
+    }
+  ]
+}

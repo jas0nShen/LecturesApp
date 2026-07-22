@@ -22142,7 +22142,7 @@ module.exports = [
         "type": "elective",
         "creditsRequired": 6,
         "coursesRequired": 1,
-        "ruleText": "Complete at least one 6-credit course from List A as part of the 18-credit Disciplinary Electives requirement.",
+        "ruleText": "Normal path: complete at least one 6-credit course from List A as part of the 18-credit Disciplinary Electives requirement. Prior-study exception: subject to transcript review and approval, a candidate unable to select an unstudied course from a List may take up to 18 credits from the other two Lists.",
         "appliesToTrackIds": [],
         "sourceUrl": "https://www.mscai.hku.hk/curriculum/",
         "courses": [
@@ -22189,7 +22189,7 @@ module.exports = [
         "type": "elective",
         "creditsRequired": 6,
         "coursesRequired": 1,
-        "ruleText": "Complete at least one 6-credit course from List B as part of the 18-credit Disciplinary Electives requirement.",
+        "ruleText": "Normal path: complete at least one 6-credit course from List B as part of the 18-credit Disciplinary Electives requirement. Prior-study exception: subject to transcript review and approval, a candidate unable to select an unstudied course from a List may take up to 18 credits from the other two Lists.",
         "appliesToTrackIds": [],
         "sourceUrl": "https://www.mscai.hku.hk/curriculum/",
         "courses": [
@@ -22229,7 +22229,7 @@ module.exports = [
         "type": "elective",
         "creditsRequired": 6,
         "coursesRequired": 1,
-        "ruleText": "Complete at least one 6-credit course from List C as part of the 18-credit Disciplinary Electives requirement.",
+        "ruleText": "Normal path: complete at least one 6-credit course from List C as part of the 18-credit Disciplinary Electives requirement. Prior-study exception: subject to transcript review and approval, a candidate unable to select an unstudied course from a List may take up to 18 credits from the other two Lists.",
         "appliesToTrackIds": [],
         "sourceUrl": "https://www.mscai.hku.hk/curriculum/",
         "courses": [
@@ -23203,6 +23203,445 @@ module.exports = [
             ],
             "appliesToTrackIds": [],
             "sourceUrl": "https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "HKU-TPG-053",
+    "courseGroups": [
+      {
+        "id": "compulsory-courses",
+        "name": "Compulsory Courses",
+        "type": "core",
+        "creditsRequired": 24,
+        "coursesRequired": 4,
+        "ruleText": "Complete all four compulsory courses for 24 credits. A professional-experience waiver must be replaced by another course carrying the same number of credits and requires manual approval.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf",
+        "courses": [
+          {
+            "code": "JMSC6001",
+            "name": "Reporting and writing",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6093",
+            "name": "Video news production",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6109",
+            "name": "Media law and ethics",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6140",
+            "name": "A.I. and media innovation",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          }
+        ]
+      },
+      {
+        "id": "core-elective-pool",
+        "name": "Core and Elective Course Pool",
+        "type": "elective",
+        "creditsRequired": 30,
+        "coursesRequired": 5,
+        "ruleText": "Complete five to seven 6-credit courses from this pool for 30 to 42 credits. With approval, up to two designated HKU postgraduate courses may replace up to 12 credits; annual offerings vary. The minimum award is 60 credits and the maximum is 72 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf",
+        "courses": [
+          {
+            "code": "JMSC6014",
+            "name": "Advanced reporting and writing (English)",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6027",
+            "name": "Covering China",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6041",
+            "name": "Special topics in journalism II",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6103",
+            "name": "Reporting global affairs",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6111",
+            "name": "Long form and feature writing",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6126",
+            "name": "Covering climate change",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6127",
+            "name": "Gender and the journalist",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC7001",
+            "name": "Entertainment, arts and culture journalism",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC7007",
+            "name": "Interpreting and using business journalism in a global era",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC7008",
+            "name": "Global financial journalism",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6045",
+            "name": "Special topics in journalism III",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6085",
+            "name": "Documentary film appreciation",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6118",
+            "name": "Advanced video and multimedia production",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6119",
+            "name": "Writing and producing for TV news",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6120",
+            "name": "Podcasting and audio news",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6123",
+            "name": "Motion graphics for journalists",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6125",
+            "name": "Generative A.I. in media applications",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6131",
+            "name": "Advanced video production",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6132",
+            "name": "Multimedia production",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6046",
+            "name": "Special topics in journalism IV",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6055",
+            "name": "Research methods for media studies",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6113",
+            "name": "Data journalism",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6116",
+            "name": "Media data analysis",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6117",
+            "name": "Digital media entrepreneurship",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6124",
+            "name": "Data skills",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6130",
+            "name": "News literacy and digital factchecking",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6040",
+            "name": "Special topics in journalism I",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6104",
+            "name": "Readings in China media and society",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6115",
+            "name": "Journalism internship",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6121",
+            "name": "Independent study project",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6128",
+            "name": "Public communication, campaigns and engagements",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          }
+        ]
+      },
+      {
+        "id": "capstone-project",
+        "name": "Master's Project",
+        "type": "capstone",
+        "creditsRequired": 6,
+        "coursesRequired": 1,
+        "ruleText": "Complete JMSC6044 for 6 credits. The official Option A and Option B are alternative project formats within the same course.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf",
+        "courses": [
+          {
+            "code": "JMSC6044",
+            "name": "Master's project",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "HKU-TPG-054",
+    "courseGroups": [
+      {
+        "id": "compulsory-documentary-courses",
+        "name": "Compulsory Documentary Filmmaking Courses",
+        "type": "core",
+        "creditsRequired": 36,
+        "coursesRequired": 5,
+        "ruleText": "Complete all five compulsory Documentary Filmmaking courses for 36 credits. Any approved core waiver must be replaced by a course carrying the same number of credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf",
+        "courses": [
+          {
+            "code": "JMSC6085",
+            "name": "Documentary film appreciation",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6100",
+            "name": "Documentary film production",
+            "credits": 12,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6201",
+            "name": "The art of non-fictional camerawork",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6202",
+            "name": "Audience design in documentary",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6203",
+            "name": "Post-production in documentary",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          }
+        ]
+      },
+      {
+        "id": "documentary-electives",
+        "name": "Documentary Filmmaking Electives",
+        "type": "elective",
+        "creditsRequired": 18,
+        "coursesRequired": 3,
+        "ruleText": "Complete three 6-credit electives from the nine-course pool. With approval, up to two designated HKU postgraduate courses may replace up to 12 credits; annual offerings vary.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf",
+        "courses": [
+          {
+            "code": "JMSC6040",
+            "name": "Special topics in journalism I",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6041",
+            "name": "Special topics in journalism II",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6046",
+            "name": "Special topics in journalism IV",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6104",
+            "name": "Readings in China media and society",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6111",
+            "name": "Long form and feature writing",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6125",
+            "name": "Generative A.I. in media applications",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6130",
+            "name": "News literacy and digital fact-checking",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6132",
+            "name": "Multimedia production",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          },
+          {
+            "code": "JMSC6140",
+            "name": "A.I. and media innovation",
+            "credits": 6,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
+          }
+        ]
+      },
+      {
+        "id": "documentary-capstone",
+        "name": "Documentary Filmmaking Capstone",
+        "type": "capstone",
+        "creditsRequired": 18,
+        "coursesRequired": 1,
+        "ruleText": "Complete JMSC6200 for 18 credits.",
+        "appliesToTrackIds": [],
+        "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf",
+        "courses": [
+          {
+            "code": "JMSC6200",
+            "name": "Documentary filmmaking capstone",
+            "credits": 18,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf"
           }
         ]
       }

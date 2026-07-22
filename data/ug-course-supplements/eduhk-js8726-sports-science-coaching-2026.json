@@ -1,0 +1,60 @@
+{
+  "provider": "The Education University of Hong Kong 2026/27 Undergraduate Programme Course List",
+  "academicYear": "2026/27",
+  "sourceUrl": "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BSc(SPSC).pdf",
+  "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/spsc",
+  "supplements": [
+    {
+      "universityCode": "EDUHK",
+      "programmeId": "EDUHK-UG-JS8726-24",
+      "jupasCode": "JS8726",
+      "majorId": "EDUHK-UG-JS8726-24-M1",
+      "evidenceNote": "The official 2026/27 course-list PDF publishes separate Year 1 and Senior Year admission structures, two Year 1 strands, 38 unique confirmed course codes and group-level credit totals. Individual credits are recorded only for one-course groups whose published group total identifies that course directly; credits for multi-course groups remain unknown rather than being derived arithmetically. The three Cross-Faculty Core components have titles but no course codes in this Programme PDF and are omitted rather than assigned invented codes. This union course list preserves admission-path and Strand labels for planning and does not assert one fixed graduation path.",
+      "courses": [
+        { "code": "PES1272", "title": "Introduction to Practical and Theoretical Considerations in Sports Coaching", "courseType": "core", "group": "Year 1 admission · Major Core · 30 cps group" },
+        { "code": "PES1273", "title": "Physical Activity and Health Promotion", "courseType": "core", "group": "Year 1 admission · Major Core · 30 cps group" },
+        { "code": "PES1274", "title": "Sports Management and Development", "courseType": "core", "group": "Year 1 admission · Major Core · 30 cps group" },
+        { "code": "PES1275", "title": "Sports and Exercise for Special Populations", "courseType": "core", "group": "Year 1 admission · Major Core · 30 cps group" },
+        { "code": "PES2276", "title": "Human Anatomy", "courseType": "core", "group": "Year 1 admission · Major Core · 30 cps group" },
+        { "code": "PES2277", "title": "Exercise Programme and Design", "courseType": "core", "group": "Year 1 admission · Major Core · 30 cps group" },
+        { "code": "PES2278", "title": "Exercise Physiology", "courseType": "core", "group": "Year 1 admission · Major Core · 30 cps group" },
+        { "code": "PES3280", "title": "Pedagogy and Practice in Sports Coaching", "courseType": "core", "group": "Year 1 admission · Major Core · 30 cps group" },
+        { "code": "PES3297", "title": "Sports Performance and Movement Analysis", "courseType": "core", "group": "Year 1 and Senior Year admissions · Major Core" },
+        { "code": "PES3322", "title": "Professional Practice and Talent Development in Sports Coaching", "courseType": "core", "group": "Year 1 admission · Major Core · 30 cps group" },
+
+        { "code": "PES3283", "title": "Motor Skill Acquisition, Control and Development", "courseType": "core", "group": "Year 1 Sports Coaching Strand / Senior Year Major Core" },
+        { "code": "PES3284", "title": "Introduction of Sports Injury and Prevention", "courseType": "core", "group": "Year 1 Sports Coaching Strand / Senior Year Major Core" },
+        { "code": "PES3285", "title": "Sports Nutrition for High Performance", "courseType": "core", "group": "Year 1 Sports Coaching Strand / Senior Year Major Core" },
+        { "code": "PES4289", "title": "Strength and Conditioning", "courseType": "core", "group": "Year 1 Sports Coaching Strand / Senior Year Major Core" },
+        { "code": "PES4290", "title": "Psychology for Sports and Exercise", "courseType": "core", "group": "Year 1 Sports Coaching Strand / Senior Year Major Core" },
+        { "code": "PES4308", "title": "Sports Development: Elite Sports, Sports Marketing and Sports Event", "courseType": "core", "group": "Year 1 admission · Sports Coaching Strand · 18 cps group" },
+
+        { "code": "PES3319", "title": "Introduction to Sports Technology", "courseType": "core", "group": "Year 1 admission · Digital Technology and Sports Strand · 18 cps group" },
+        { "code": "PES3306", "title": "Measurement and Statistics in Exercise and Sports Science", "courseType": "core", "group": "Year 1 admission · Digital Technology and Sports Strand · 18 cps group" },
+        { "code": "PES3314", "title": "Data Science in Sports and Exercise", "courseType": "core", "group": "Year 1 admission · Digital Technology and Sports Strand · 18 cps group" },
+        { "code": "PES4310", "title": "Application of Technology in Physical Activity and Health Promotion for Contemporary Society", "courseType": "core", "group": "Year 1 admission · Digital Technology and Sports Strand · 18 cps group" },
+        { "code": "PES4323", "title": "Current Issues and Trends in Digital Sports Industry", "courseType": "core", "group": "Year 1 admission · Digital Technology and Sports Strand · 18 cps group" },
+        { "code": "PES4324", "title": "Digital Marketing in Sports Event Management", "courseType": "core", "group": "Year 1 admission · Digital Technology and Sports Strand · 18 cps group" },
+
+        { "code": "PFS4325", "title": "Holistic Athlete Development: Life Coaching and Whole-Person Growth Through Sports", "credits": 3, "courseType": "core", "group": "Year 1 admission · Major Interdisciplinary Course" },
+        { "code": "PES3325", "title": "Sports Science and Coaching in the Chinese Mainland", "credits": 3, "courseType": "core", "group": "Year 1 admission · Living and Working in Our Country" },
+        { "code": "PFS3065", "title": "Life Education and Whole-person Development", "courseType": "core", "group": "Senior Year admission · Major Core · 24 cps group" },
+        { "code": "PES4291", "title": "Sports Marketing and Event Management", "courseType": "core", "group": "Senior Year admission · Major Core · 24 cps group" },
+        { "code": "PFS4067", "title": "Life Coaching Through Sports", "credits": 3, "courseType": "core", "group": "Senior Year admission · Major Interdisciplinary Course" },
+
+        { "code": "PES4292", "title": "Internship", "credits": 3, "courseType": "internship", "group": "Year 1 and Senior Year admissions · Internship" },
+        { "code": "PES4293", "title": "Honours Project I: Research Methods and Proposal", "courseType": "capstone", "group": "Final Year Project · Honours Project path · 6 cps group" },
+        { "code": "PES4294", "title": "Honours Project II: Research Report", "courseType": "capstone", "group": "Final Year Project · Honours Project path · 6 cps group" },
+        { "code": "PES4295", "title": "Capstone Project I: Research Methods and Proposal", "courseType": "capstone", "group": "Final Year Project · Capstone Project path · 6 cps group" },
+        { "code": "PES4296", "title": "Capstone Project II: Project Output", "courseType": "capstone", "group": "Final Year Project · Capstone Project path · 6 cps group" },
+
+        { "code": "PFS3066", "title": "21st Century Skills and Values Education", "credits": 3, "courseType": "core", "group": "Programme Package · Compulsory Course" },
+        { "code": "PES3287", "title": "Practical Sports Skill Training", "courseType": "major_elective", "group": "Programme Package · choose 2 of 5 · 6 cps group" },
+        { "code": "PES3176", "title": "Outdoor and Adventure Activities", "courseType": "major_elective", "group": "Programme Package · choose 2 of 5 · 6 cps group" },
+        { "code": "PES3305", "title": "Advanced Exercise Physiology and Application", "courseType": "major_elective", "group": "Programme Package · choose 2 of 5 · 6 cps group" },
+        { "code": "PSY3087", "title": "Mindfulness, Sports and Wellbeing", "courseType": "major_elective", "group": "Programme Package · choose 2 of 5 · 6 cps group" },
+        { "code": "PSY4086", "title": "Positive Psychology in Sports", "courseType": "major_elective", "group": "Programme Package · choose 2 of 5 · 6 cps group" }
+      ]
+    }
+  ]
+}

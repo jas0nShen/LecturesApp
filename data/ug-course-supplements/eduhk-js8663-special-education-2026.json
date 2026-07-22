@@ -1,0 +1,46 @@
+{
+  "provider": "The Education University of Hong Kong 2026/27 Undergraduate Programme Course List",
+  "academicYear": "2026/27",
+  "sourceUrl": "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BA(SE).pdf",
+  "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/base",
+  "supplements": [
+    {
+      "universityCode": "EDUHK",
+      "programmeId": "EDUHK-UG-JS8663-15",
+      "jupasCode": "JS8663",
+      "majorId": "EDUHK-UG-JS8663-15-M1",
+      "evidenceNote": "The official 2026/27 BA(SE) course-list PDF publishes 25 usable course codes and titles: seventeen Major courses including the Practicum, three Final Year Project courses, and five Cross-Faculty Core courses. It explicitly labels eight Major courses for Year 1 Admission only and two for Senior Year Admission only; those admission-path labels are preserved without assigning recommendedYear or semester. The Cross-Faculty Core description explicitly assigns 1 credit point to each component, so the five coded Component I, II and III options are recorded as 1-cp courses. Other individual course credits are left unknown: programme-level totals are not allocated to courses, and SED4094 describes two 1.5-cp parts without explicitly publishing a per-course total, so it is not summed here. One course row, Special Education in Mainland China, has the code 'To be provided' and is omitted rather than assigned an invented code. Representative linked official course pages independently confirm the code and English course identity for SED1064, SED4060, SED4094 and CFC3026; the course-list PDF remains the source for displayed titles, groups and admission-path labels. The supplement preserves the Component III choice and the Honours Project / Capstone Project alternatives without asserting one fixed graduation path or completion.",
+      "courses": [
+        { "code": "ECE1196", "title": "Special Education – Family, School and Community Contexts", "courseType": "core", "group": "Major Course · Year 1 Admission only" },
+        { "code": "PSY1049", "title": "Learning and Motivation", "courseType": "core", "group": "Major Course · Year 1 Admission only" },
+        { "code": "SED1064", "title": "Human Development: Biological Processes", "courseType": "core", "group": "Major Course · Year 1 Admission only" },
+        { "code": "SED2078", "title": "Sensory and Physical Disabilities", "courseType": "core", "group": "Major Course · Year 1 Admission only" },
+        { "code": "SED2079", "title": "Language, Communication and Literacy Development: Process and Instruction", "courseType": "core", "group": "Major Course · Year 1 Admission only" },
+        { "code": "SED2080", "title": "Multiple Talents of Individuals with Special Educational Needs", "courseType": "core", "group": "Major Course · Year 1 Admission only" },
+        { "code": "SED2051", "title": "Social, Emotional, Behavioural and Developmental Difficulties", "courseType": "core", "group": "Major Course · Year 1 Admission only" },
+        { "code": "SED2052", "title": "Healthcare, Recreation and Assistive Technology for People with Special Needs", "courseType": "core", "group": "Major Course · Year 1 Admission only" },
+
+        { "code": "SED4074", "title": "Developing an Inclusive Classroom for Diverse Learning", "courseType": "core", "group": "Major Course · Senior Year Admission only" },
+        { "code": "SED4057", "title": "Sensory and Physical Disabilities – Communication, Education and Provision", "courseType": "core", "group": "Major Course · Senior Year Admission only" },
+
+        { "code": "SED2050", "title": "Global Perspectives on Special Education", "courseType": "core", "group": "Major Course" },
+        { "code": "SED4082", "title": "Special Education – Assessment, Intervention and Approaches", "courseType": "core", "group": "Major Course" },
+        { "code": "SED3056", "title": "Managing Learning Disabilities – Strategies and Techniques", "courseType": "core", "group": "Major Course" },
+        { "code": "SED4058", "title": "Social and Emotional Learning – Strategies and Techniques", "courseType": "core", "group": "Major Course" },
+        { "code": "SED4059", "title": "Therapeutic Support and Management", "courseType": "core", "group": "Major Course" },
+        { "code": "SED4093", "title": "Sexuality Education: Inclusive and Rights-Based Perspective", "courseType": "core", "group": "Major Course" },
+        { "code": "SED4060", "title": "Practicum", "courseType": "fieldwork", "group": "Practicum" },
+
+        { "code": "SED4094", "title": "Basic Research Methods and Proposal", "courseType": "capstone", "group": "Final Year Project · Common preparation" },
+        { "code": "SED4095", "title": "Honours Project", "courseType": "capstone", "group": "Final Year Project · Honours Project path" },
+        { "code": "SED4096", "title": "Capstone Project", "courseType": "capstone", "group": "Final Year Project · Capstone Project path" },
+
+        { "code": "CFA1001", "title": "Cross-Faculty Core Course: Component I – Basic Law/ National Security Education", "credits": 1, "courseType": "core", "group": "Cross-Faculty Core Course · Component I" },
+        { "code": "CFB3025", "title": "Cross-Faculty Core Course: Component II – Visits in Greater Bay Area", "credits": 1, "courseType": "core", "group": "Cross-Faculty Core Course · Component II" },
+        { "code": "CFC3026", "title": "Cross-Faculty Core Course: Component III – Supporting Students with Diverse Learning Needs in the Greater Bay Area", "credits": 1, "courseType": "major_elective", "group": "Cross-Faculty Core Course · Component III option (choose 1)" },
+        { "code": "CFC3024", "title": "Cross-Faculty Core Course: Component III – Artificial Intelligence Enhanced Educational Entrepreneurship in GBA", "credits": 1, "courseType": "major_elective", "group": "Cross-Faculty Core Course · Component III option (choose 1)" },
+        { "code": "CFC3018", "title": "Cross-Faculty Core Course: Component III – Diversity, equity, and inclusion in the Greater Bay Area (GBA)", "credits": 1, "courseType": "major_elective", "group": "Cross-Faculty Core Course · Component III option (choose 1)" }
+      ]
+    }
+  ]
+}

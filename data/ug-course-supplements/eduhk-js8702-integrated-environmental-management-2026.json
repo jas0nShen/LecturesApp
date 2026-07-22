@@ -1,0 +1,48 @@
+{
+  "provider": "The Education University of Hong Kong 2026/27 Undergraduate Programme Course List",
+  "academicYear": "2026/27",
+  "sourceUrl": "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BSc(IEM).pdf",
+  "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/iem",
+  "supplements": [
+    {
+      "universityCode": "EDUHK",
+      "programmeId": "EDUHK-UG-JS8702-22",
+      "jupasCode": "JS8702",
+      "majorId": "EDUHK-UG-JS8702-22-M1",
+      "evidenceNote": "The official course-list PDF dated 15 September 2025 publishes 26 courses with confirmed codes, titles and curriculum groups. It publishes credit points only as group or pathway totals, not as per-course values, and does not publish a recommended year/semester study pattern; per-course credits, recommendedYear and semester are therefore intentionally left unknown. Five Major Core courses, SSC3316, INS3068 and GGP2033 are marked as required for Year 1 Admissions only. Cross-Faculty Core Course Component III has no course code or fixed title and is intentionally omitted rather than assigned an invented course. The programme page confirms 121 cps for Year 1 Admissions and 60 cps for Senior Year Admissions, but this supplement does not allocate those totals to individual courses or assert graduation completion.",
+      "courses": [
+        { "code": "SSC2315", "title": "Society and Nature", "courseType": "core", "group": "Major Core" },
+        { "code": "SCB2003", "title": "Ecology", "courseType": "core", "group": "Major Core" },
+        { "code": "SES2049", "title": "Environmental Science and Management", "courseType": "core", "group": "Major Core" },
+        { "code": "SES1050", "title": "Statistics for Environmental Analysis", "courseType": "core", "group": "Major Core" },
+        { "code": "SES2051", "title": "Pollution Control and Waste Management", "courseType": "core", "group": "Major Core" },
+        { "code": "SES4052", "title": "Environmental Impact Assessment", "courseType": "core", "group": "Major Core" },
+        { "code": "SES3053", "title": "Environmental Modelling", "courseType": "core", "group": "Major Core" },
+        { "code": "SES3067", "title": "Practical Skills in Environmental Science", "courseType": "core", "group": "Major Core" },
+        { "code": "SSC3317", "title": "Environmental Politics and Policy", "courseType": "core", "group": "Major Core" },
+        { "code": "SSC3318", "title": "Environmental Economics", "courseType": "core", "group": "Major Core" },
+        { "code": "SES4054", "title": "Environmental and Public Health Risk Assessments", "courseType": "core", "group": "Major Core" },
+        { "code": "SES4055", "title": "Food Security, Safety and Management", "courseType": "core", "group": "Major Core" },
+
+        { "code": "GGP3023", "title": "Conservation and Management of Natural Resources", "courseType": "major_elective", "group": "Major Elective Course · choose 1 of 4" },
+        { "code": "SES3056", "title": "Innovative Technologies for Environmental Management", "courseType": "major_elective", "group": "Major Elective Course · choose 1 of 4" },
+        { "code": "INS3069", "title": "Environmental Education and Communication", "courseType": "major_elective", "group": "Major Elective Course · choose 1 of 4" },
+        { "code": "SSC3316", "title": "Environmental Ethics", "courseType": "major_elective", "group": "Major Elective Course · choose 1 of 4" },
+
+        { "code": "INS3068", "title": "Contemporary Environmental Issues", "courseType": "core", "group": "Overseas Field Trip" },
+        { "code": "GGP2033", "title": "Living and Working in Our Country for Environmental Management", "courseType": "core", "group": "Living and Working in Our Country" },
+        { "code": "INS4065", "title": "The Sustainable Development Goals and Education", "courseType": "core", "group": "Major Interdisciplinary Course" },
+
+        { "code": "CFA1001", "title": "Component I: Basic Law and National Security Education", "courseType": "core", "group": "Cross-Faculty Core Course · Component I" },
+        { "code": "CFB3020", "title": "Component II: Visits in Greater Bay Area", "courseType": "core", "group": "Cross-Faculty Core Course · Component II" },
+
+        { "code": "INS4070", "title": "Internship", "courseType": "internship", "group": "Internship" },
+
+        { "code": "INS4071", "title": "Honours Project I: Research Methods and Proposal", "courseType": "capstone", "group": "Final Year Project · Honours Project path" },
+        { "code": "INS4072", "title": "Honours Project II: Research Report", "courseType": "capstone", "group": "Final Year Project · Honours Project path" },
+        { "code": "INS4073", "title": "Capstone Project I: Research Methods and Proposal", "courseType": "capstone", "group": "Final Year Project · Capstone Project path" },
+        { "code": "INS4074", "title": "Capstone Project II: Project Output", "courseType": "capstone", "group": "Final Year Project · Capstone Project path" }
+      ]
+    }
+  ]
+}

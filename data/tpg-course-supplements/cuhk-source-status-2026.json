@@ -19,8 +19,10 @@
     {
       "programmeId": "CUHK-TPG-007",
       "status": "blocked",
-      "sourceUrl": "https://masters.bschool.cuhk.edu.hk/programmes/mscba/curriculum/",
-      "statusNote": "The official 2026-27 Business Analytics curriculum confirms 30 credits, five Core Courses and five Elective Courses, but the public curriculum and brochure expose titles without a complete current course-code table (only selected examples such as DOTE6696BA are coded). The directory record still carries 36 credits. Keep the Programme closed until every published course title is mapped to an official current code and the stale total is corrected from authoritative evidence."
+      "sourceUrl": "https://masters.bschool.cuhk.edu.hk/wp-content/uploads/2024/12/CUHK-MScBA-Brochure-2026-2027_20251008.pdf",
+      "creditsRequired": 30,
+      "creditUnit": "units",
+      "statusNote": "The official 2026-27 MSc in Business Analytics brochure confirms a 30-credit award: all five Core Courses (15 credits) and five Elective Courses (15 credits). It names a published pool of five Core and twelve Elective titles, but supplies a current code only for DOTE6696BA Advanced Business Analytics Practicum; the other 16 titles have no official 2026-27 code-to-title listing, and the brochure does not print per-course units. The live Programme page now targets 2027-28 and cannot backfill the prior academic year. Keep the structure closed until CUHK publishes the complete 2026-27 code-title-unit table; do not infer codes from titles or later-year materials."
     },
     {
       "programmeId": "CUHK-TPG-008",

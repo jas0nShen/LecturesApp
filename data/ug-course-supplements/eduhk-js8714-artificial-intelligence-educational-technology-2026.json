@@ -1,0 +1,47 @@
+{
+  "provider": "The Education University of Hong Kong 2026/27 Undergraduate Programme Course List",
+  "academicYear": "2026/27",
+  "sourceUrl": "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BSc(AI%26EdTech).pdf",
+  "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/aiet",
+  "supplements": [
+    {
+      "universityCode": "EDUHK",
+      "programmeId": "EDUHK-UG-JS8714-23",
+      "jupasCode": "JS8714",
+      "majorId": "EDUHK-UG-JS8714-23-M1",
+      "evidenceNote": "The official 2026/27 course-list PDF publishes 27 courses with confirmed codes and titles under Major Core, Major Elective Courses, Major Interdisciplinary Course, Living and Working in Our Country, Internship, and Final Year Project. It publishes credit-point totals by curriculum group, but not per-course credit points or a recommended year/semester study pattern, so credits, recommendedYear and semester are intentionally left unknown. The three Cross-Faculty Core Course components have no course codes in the PDF and are intentionally omitted rather than assigned invented codes. The programme page confirms 121 cps for Year 1 Admissions and 60 cps for Senior Year Admissions, but those aggregates are not allocated to individual courses here and this supplement does not assert graduation completion.",
+      "courses": [
+        { "code": "MTH1201", "title": "Mathematical Foundations of Artificial Intelligence", "courseType": "core", "group": "Major Core" },
+        { "code": "INT2067", "title": "Introduction to Programming and Problem Solving", "courseType": "core", "group": "Major Core" },
+        { "code": "INT2171", "title": "Data Structures and Algorithms", "courseType": "core", "group": "Major Core" },
+        { "code": "INT2172", "title": "Object-Oriented Programming", "courseType": "core", "group": "Major Core" },
+        { "code": "MTH4169", "title": "Introduction to Probability and Statistics", "courseType": "core", "group": "Major Core" },
+        { "code": "TLS3075", "title": "Digital Games and Learning in Educational Settings", "courseType": "core", "group": "Major Core" },
+        { "code": "INT4096", "title": "Artificial Intelligence and Machine Learning in Education", "courseType": "core", "group": "Major Core" },
+        { "code": "INT4089", "title": "Technologies in STEM and AI Education", "courseType": "core", "group": "Major Core" },
+        { "code": "INT4174", "title": "Neural Networks and Deep Learning", "courseType": "core", "group": "Major Core" },
+        { "code": "INT4173", "title": "Natural Language Processing and Large Language Models", "courseType": "core", "group": "Major Core" },
+        { "code": "INT4176", "title": "Cryptography and Network Security", "courseType": "core", "group": "Major Core" },
+
+        { "code": "INT4059", "title": "Computer-Aided 3D Design and Printing Technologies", "courseType": "major_elective", "group": "Major Elective Courses · choose 2 of 9" },
+        { "code": "INT4177", "title": "Big Data Analytics", "courseType": "major_elective", "group": "Major Elective Courses · choose 2 of 9" },
+        { "code": "INT4178", "title": "Robotics and Intelligent Systems", "courseType": "major_elective", "group": "Major Elective Courses · choose 2 of 9" },
+        { "code": "INT4179", "title": "Computer Vision for Education", "courseType": "major_elective", "group": "Major Elective Courses · choose 2 of 9" },
+        { "code": "INT4175", "title": "Designing AI-Integrated STEAM Learning Experiences", "courseType": "major_elective", "group": "Major Elective Courses · choose 2 of 9" },
+        { "code": "INT4074", "title": "Mobile Applications Design and Development", "courseType": "major_elective", "group": "Major Elective Courses · choose 2 of 9" },
+        { "code": "INT4087", "title": "Web Database Applications for Data Analytics", "courseType": "major_elective", "group": "Major Elective Courses · choose 2 of 9" },
+        { "code": "INT4098", "title": "Applied Robotics with Applications to Special Education", "courseType": "major_elective", "group": "Major Elective Courses · choose 2 of 9" },
+        { "code": "TLS3074", "title": "Educational Technology Enhanced Curriculum and Assessment", "courseType": "major_elective", "group": "Major Elective Courses · choose 2 of 9" },
+
+        { "code": "INT4099", "title": "Emerging Technologies for Language Learning and Assessment", "courseType": "core", "group": "Major Interdisciplinary Course" },
+        { "code": "INT3156", "title": "Introduction to Educational Technology and Its Applications in Chinese Mainland", "courseType": "core", "group": "Living and Working in Our Country" },
+        { "code": "INT4100", "title": "Internship", "courseType": "internship", "group": "Internship" },
+
+        { "code": "INT4101", "title": "Honours Project I: Research Methods and Proposal", "courseType": "capstone", "group": "Final Year Project · Honours Project path" },
+        { "code": "INT4102", "title": "Honours Project II: Research Report", "courseType": "capstone", "group": "Final Year Project · Honours Project path" },
+        { "code": "INT4103", "title": "Capstone Project I: Research Methods and Proposal", "courseType": "capstone", "group": "Final Year Project · Capstone Project path" },
+        { "code": "INT4104", "title": "Capstone Project II: Project Output", "courseType": "capstone", "group": "Final Year Project · Capstone Project path" }
+      ]
+    }
+  ]
+}

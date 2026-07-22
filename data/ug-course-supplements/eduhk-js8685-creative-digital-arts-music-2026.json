@@ -1,0 +1,51 @@
+{
+  "provider": "The Education University of Hong Kong 2026/27 Undergraduate Programme Course List",
+  "academicYear": "2026/27",
+  "sourceUrl": "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BA(CDA).pdf",
+  "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/bacda",
+  "supplements": [
+    {
+      "universityCode": "EDUHK",
+      "programmeId": "EDUHK-UG-JS8685-18",
+      "jupasCode": "JS8685",
+      "majorId": "EDUHK-UG-JS8685-18-M1",
+      "evidenceNote": "The official 2026/27 BA(CDA) course-list PDF publishes course codes, titles and curriculum groups for the shared curriculum and separately labels the Music-only and Visual-Arts-only courses. This JS8685 supplement includes the shared courses and the Music courses, excludes ART1232 and the five Visual Arts Subject Focus courses marked for Visual Arts students only, and retains visual-arts-related courses because the official PDF lists them in the shared Major Elective Courses group. Representative linked official course synopsis pages independently confirm the code and English course identity for MUS1346, CDA3002, MUS4349, INS3087 and INS4059; the course-list PDF remains the source for the displayed English titles and curriculum groups. The PDF does not publish per-course credit points or a recommended year/semester study pattern, so credits, recommendedYear and semester are intentionally left unknown. The programme page publishes only domain-level credit totals, including an uncoded 3-cp Cross-Faculty Core Course, and those aggregates are not allocated to individual courses here. Uncoded or TBC programme domains are omitted, and this supplement preserves the two official Final Year Project paths without asserting graduation completion.",
+      "courses": [
+        { "code": "CAC1006", "title": "Contextual Studies of Creative Arts", "courseType": "foundation", "group": "Foundation Courses" },
+        { "code": "CDA2001", "title": "Culture and Technology in Creative Industries and Education", "courseType": "foundation", "group": "Foundation Courses" },
+        { "code": "MUS1346", "title": "Exploring Digital Music", "courseType": "foundation", "group": "Foundation Courses · Music students only" },
+
+        { "code": "CDA3002", "title": "Arts Administration and Management", "courseType": "core", "group": "Compulsory Courses · Arts Management and Entrepreneurship" },
+        { "code": "CDA3003", "title": "Entrepreneurship in Creative Industries", "courseType": "core", "group": "Compulsory Courses · Arts Management and Entrepreneurship" },
+        { "code": "CDA4004", "title": "Cultural and Creative Industries in the Greater Bay Area", "courseType": "core", "group": "Compulsory Courses · Arts Management and Entrepreneurship" },
+
+        { "code": "MUS2348", "title": "Digital Media and Music Learning", "courseType": "core", "group": "Compulsory Courses · Music Subject Focus" },
+        { "code": "MUS3338", "title": "Popular Music and Society", "courseType": "core", "group": "Compulsory Courses · Music Subject Focus" },
+        { "code": "MUS3347", "title": "Technology in the Popular Music Industry", "courseType": "core", "group": "Compulsory Courses · Music Subject Focus" },
+        { "code": "MUS3350", "title": "Digital Music Creation and Performance", "courseType": "core", "group": "Compulsory Courses · Music Subject Focus" },
+        { "code": "MUS4349", "title": "Studio Music Production", "courseType": "core", "group": "Compulsory Courses · Music Subject Focus" },
+
+        { "code": "CAC3021", "title": "Dance with a Voice", "courseType": "major_elective", "group": "Major Elective Courses" },
+        { "code": "CAC4020", "title": "Interdisciplinary Theatre Production", "courseType": "major_elective", "group": "Major Elective Courses" },
+        { "code": "CDA3006", "title": "Coding for Visual Arts and Digital Games", "courseType": "major_elective", "group": "Major Elective Courses" },
+        { "code": "CDA3007", "title": "Art Tech Education for the Cultural Sector", "courseType": "major_elective", "group": "Major Elective Courses" },
+        { "code": "CDA3008", "title": "Hong Kong Art and Music Culture", "courseType": "major_elective", "group": "Major Elective Courses" },
+        { "code": "CDA3011", "title": "Materials and Techniques of Music", "courseType": "major_elective", "group": "Major Elective Courses" },
+        { "code": "CDA4005", "title": "Music for Film", "courseType": "major_elective", "group": "Major Elective Courses" },
+        { "code": "CDA4009", "title": "Art and Music Interdisciplinary Project", "courseType": "major_elective", "group": "Major Elective Courses" },
+        { "code": "CDA4010", "title": "Chinese Art and Material Culture", "courseType": "major_elective", "group": "Major Elective Courses" },
+        { "code": "MUS1213", "title": "Jazz Study: An Introduction", "courseType": "major_elective", "group": "Major Elective Courses" },
+
+        { "code": "INS4054", "title": "Cultural Development for Diversity in the Global Context", "courseType": "core", "group": "Major Interdisciplinary Course" },
+        { "code": "CAC3018", "title": "Regional Summer Institute", "courseType": "core", "group": "Student Experiential Learning Courses" },
+        { "code": "INS3087", "title": "Internship (including pre-internship workshops)", "courseType": "internship", "group": "Student Experiential Learning Courses · Internship" },
+        { "code": "CDA3012", "title": "Arts and Culture in China", "courseType": "core", "group": "Living and Working in Our Country" },
+
+        { "code": "INS4059", "title": "Honours Project I: Research Methods and Proposal", "courseType": "capstone", "group": "Final Year Project · Honours Project path" },
+        { "code": "INS4060", "title": "Honours Project II: Research Report", "courseType": "capstone", "group": "Final Year Project · Honours Project path" },
+        { "code": "INS4061", "title": "Capstone Project I: Research Methods and Proposal", "courseType": "capstone", "group": "Final Year Project · Capstone Project path" },
+        { "code": "INS4062", "title": "Capstone Project II: Project Output", "courseType": "capstone", "group": "Final Year Project · Capstone Project path" }
+      ]
+    }
+  ]
+}

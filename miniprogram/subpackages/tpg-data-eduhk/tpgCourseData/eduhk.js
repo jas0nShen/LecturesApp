@@ -634,6 +634,94 @@ module.exports = [
     ]
   },
   {
+    "id": "EDUHK-TPG-DIR-MA-ETFW",
+    "courseGroups": [
+      {
+        "id": "core-courses",
+        "name": "Core Courses",
+        "type": "core",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Complete all four Core Courses (12 credit points).",
+        "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/master-of-arts-in-emerging-technology-for-future-workforce",
+        "courses": [
+          {
+            "code": "INT6140",
+            "name": "Future of Work and Workforce Trends",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/INT6140.html"
+          },
+          {
+            "code": "INT6141",
+            "name": "Emerging Technologies for Workforce Development",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/INT6141.html"
+          },
+          {
+            "code": "INT6148",
+            "name": "Futuristic Mindset and Leadership in the Digital Age",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/INT6148.html"
+          },
+          {
+            "code": "INT6144",
+            "name": "AI for Knowledge Management and Professional Development",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/INT6144.html"
+          }
+        ]
+      },
+      {
+        "id": "elective-courses",
+        "name": "Elective Courses",
+        "type": "elective_project",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Choose any four of the six Elective Courses (12 credit points). INT6146 Capstone Project is an optional 3-credit Elective Course with either a research-project or internship pathway.",
+        "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/master-of-arts-in-emerging-technology-for-future-workforce",
+        "courses": [
+          {
+            "code": "INT6142",
+            "name": "Envision and Design Global Education Futures",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/INT6142.html"
+          },
+          {
+            "code": "INT6147",
+            "name": "Well-being and Productivity in the Digital Age",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/INT6147.html"
+          },
+          {
+            "code": "INT6143",
+            "name": "Data Mining for Trends Analysis and Forecasting",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/INT6143.html"
+          },
+          {
+            "code": "INT6145",
+            "name": "Innovation, Creativity and Forecasting Skills",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/INT6145.html"
+          },
+          {
+            "code": "INT6136",
+            "name": "Trends in Artificial Intelligence at Workplace and at Home",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/INT6136.html"
+          },
+          {
+            "code": "INT6146",
+            "name": "Capstone Project",
+            "credits": 3,
+            "courseKind": "project",
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/INT6146.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "EDUHK-TPG-DIR-MA-ESM",
     "courseGroups": [
       {
@@ -1090,6 +1178,87 @@ module.exports = [
             "name": "Application of Neuroscience in Technology and Media Education",
             "credits": 3,
             "sourceUrl": "https://mscedn.eduhk.hk/doc/MScEdN-Student-Handbook.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EDUHK-TPG-DIR-MSC-ESGSD",
+    "courseGroups": [
+      {
+        "id": "core-courses",
+        "name": "Core Courses",
+        "type": "core",
+        "creditsRequired": 15,
+        "coursesRequired": 5,
+        "ruleText": "Complete all five Core Courses (15 credit points).",
+        "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/ESGSD",
+        "courses": [
+          {
+            "code": "ESG6001",
+            "name": "Theoretical Perspectives on ESG",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/ESG6001.html"
+          },
+          {
+            "code": "ESG6002",
+            "name": "Climate Change Challenges",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/ESG6002.html"
+          },
+          {
+            "code": "ESG6003",
+            "name": "Green Finance and Carbon Trading",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/ESG6003.html"
+          },
+          {
+            "code": "ESG6005",
+            "name": "Sustainability Assessment and ESG Reporting",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/ESG6005.html"
+          },
+          {
+            "code": "ESG6004",
+            "name": "Ethics and Compliance for ESG",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/ESG6004.html"
+          }
+        ]
+      },
+      {
+        "id": "elective-courses",
+        "name": "Elective Courses",
+        "type": "elective",
+        "creditsRequired": 9,
+        "coursesRequired": 3,
+        "ruleText": "Choose any three of the four Elective Courses (9 credit points).",
+        "sourceUrl": "https://aapsef.eduhk.hk/study/prospective-students/academic-programmes/ESGSD",
+        "courses": [
+          {
+            "code": "ESG6006",
+            "name": "Contemporary Practices on ESG",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/ESG6006.html"
+          },
+          {
+            "code": "ESG6007",
+            "name": "Corporate Governance and Sustainability",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/ESG6007.html"
+          },
+          {
+            "code": "ESG6008",
+            "name": "ESG Project Management",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/ESG6008.html"
+          },
+          {
+            "code": "PUA6027",
+            "name": "Technology and Innovation Policies: Development and Trend",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/PUA6027.html"
           }
         ]
       }

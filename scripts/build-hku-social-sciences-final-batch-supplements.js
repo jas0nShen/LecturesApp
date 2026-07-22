@@ -5,8 +5,8 @@ const path = require('node:path');
 const ROOT = path.join(__dirname, '..');
 const OUTPUT = path.join(ROOT, 'data', 'tpg-course-supplements', 'hku-social-sciences-final-batch-2025.json');
 const SOURCES = {
-  journalismProgramme: 'https://jmsc.hku.hk/mjprogramme/',
-  journalismAdmissions: 'https://jmsc.hku.hk/mjadmissions/',
+  journalismRegulations: 'https://jmsc.hku.hk/wp-content/uploads/2024/09/MJ_RS_2024-25.pdf',
+  journalismProgramme: 'https://jmsc.hku.hk/postgraduate/',
   journalismInformationSession: 'https://jmsc.hku.hk/2024/11/master-of-journalism-25-26-information-session/',
   documentary: 'https://jmsc.hku.hk/dfsadmission/',
   documentaryLaunch: 'https://jmsc.hku.hk/2024/02/jmsc-launches-asias-first-journalism-masters-degree-in-documentary-filmmaking/',
@@ -19,28 +19,157 @@ const SOURCES = {
   mipaRegulations: 'https://sweb.hku.hk/tola/servlet/ApplicantDownloadForm/getForm?pREF_CODE=R144&pDOCUMENT_TYPE=REGULATIONSYLLABUS&pVIEW=Y'
 };
 
+function sixCreditCourses(rows) {
+  return rows.map(([code, name]) => ({ code, name, credits: 6, appliesToTrackIds: [] }));
+}
+
 function buildProgrammes() {
   const programmes = [
     {
       programmeId: 'HKU-TPG-053',
-      status: 'blocked',
-      creditsRequired: 72,
+      status: 'verified',
+      creditsRequired: 60,
       creditUnit: 'credits',
-      sourceUrl: SOURCES.journalismProgramme,
-      statusNote: 'The public official evidence does not support a complete 2025-26 curriculum. The current JMSC programme page is for 2026-27 and states a 60-credit programme, while the 2025-26 catalogue entry records 72 credits. The current page describes broad core skills and elective areas but publishes neither a complete coded course list nor the required grouping and completion path. The official 2025-26 information-session page does not resolve the credit conflict or publish the missing coded syllabus. Because the applicable credit total, course codes and completion rules cannot be verified without inference, no partial course structure is published.',
+      sourceUrl: SOURCES.journalismRegulations,
+      ruleReviewStatus: 'manual_review_required',
+      statusNote: 'The official 2024-25 Regulations and Syllabuses apply to candidates admitted in 2024-25 and thereafter and verify the complete 2025-26 Master of Journalism structure. Candidates complete four compulsory courses, the 6-credit JMSC6044 capstone and five to seven 6-credit courses from the published 31-course pool, for 60 to 72 credits. With approval, up to 12 elective credits may come from designated HKU postgraduate courses; Summer Institute study may exempt up to 6 credits; professional-experience waivers require equal-credit replacements; and courses are not offered every year. These exceptions and the variable 60-to-72-credit award require manual review. The current 2026-27 website shows curriculum changes but does not provide a year-labelled complete coded syllabus, so those changes are not merged into this 2025-26 structure.',
       additionalSources: [
-        SOURCES.journalismAdmissions,
+        SOURCES.journalismProgramme,
         SOURCES.journalismInformationSession
+      ],
+      courseGroups: [
+        {
+          id: 'compulsory-courses',
+          name: 'Compulsory Courses',
+          type: 'core',
+          creditsRequired: 24,
+          coursesRequired: 4,
+          ruleText: 'Complete all four compulsory courses for 24 credits. A professional-experience waiver must be replaced by another course carrying the same number of credits and requires manual approval.',
+          appliesToTrackIds: [],
+          sourceUrl: SOURCES.journalismRegulations,
+          courses: sixCreditCourses([
+            ['JMSC6001', 'Reporting and writing'],
+            ['JMSC6093', 'Video news production'],
+            ['JMSC6109', 'Media law and ethics'],
+            ['JMSC6140', 'A.I. and media innovation']
+          ])
+        },
+        {
+          id: 'core-elective-pool',
+          name: 'Core and Elective Course Pool',
+          type: 'elective',
+          creditsRequired: 30,
+          coursesRequired: 5,
+          ruleText: 'Complete five to seven 6-credit courses from this pool for 30 to 42 credits. With approval, up to two designated HKU postgraduate courses may replace up to 12 credits; annual offerings vary. The minimum award is 60 credits and the maximum is 72 credits.',
+          appliesToTrackIds: [],
+          sourceUrl: SOURCES.journalismRegulations,
+          courses: sixCreditCourses([
+            ['JMSC6014', 'Advanced reporting and writing (English)'],
+            ['JMSC6027', 'Covering China'],
+            ['JMSC6041', 'Special topics in journalism II'],
+            ['JMSC6103', 'Reporting global affairs'],
+            ['JMSC6111', 'Long form and feature writing'],
+            ['JMSC6126', 'Covering climate change'],
+            ['JMSC6127', 'Gender and the journalist'],
+            ['JMSC7001', 'Entertainment, arts and culture journalism'],
+            ['JMSC7007', 'Interpreting and using business journalism in a global era'],
+            ['JMSC7008', 'Global financial journalism'],
+            ['JMSC6045', 'Special topics in journalism III'],
+            ['JMSC6085', 'Documentary film appreciation'],
+            ['JMSC6118', 'Advanced video and multimedia production'],
+            ['JMSC6119', 'Writing and producing for TV news'],
+            ['JMSC6120', 'Podcasting and audio news'],
+            ['JMSC6123', 'Motion graphics for journalists'],
+            ['JMSC6125', 'Generative A.I. in media applications'],
+            ['JMSC6131', 'Advanced video production'],
+            ['JMSC6132', 'Multimedia production'],
+            ['JMSC6046', 'Special topics in journalism IV'],
+            ['JMSC6055', 'Research methods for media studies'],
+            ['JMSC6113', 'Data journalism'],
+            ['JMSC6116', 'Media data analysis'],
+            ['JMSC6117', 'Digital media entrepreneurship'],
+            ['JMSC6124', 'Data skills'],
+            ['JMSC6130', 'News literacy and digital factchecking'],
+            ['JMSC6040', 'Special topics in journalism I'],
+            ['JMSC6104', 'Readings in China media and society'],
+            ['JMSC6115', 'Journalism internship'],
+            ['JMSC6121', 'Independent study project'],
+            ['JMSC6128', 'Public communication, campaigns and engagements']
+          ])
+        },
+        {
+          id: 'capstone-project',
+          name: "Master's Project",
+          type: 'capstone',
+          creditsRequired: 6,
+          coursesRequired: 1,
+          ruleText: 'Complete JMSC6044 for 6 credits. The official Option A and Option B are alternative project formats within the same course.',
+          appliesToTrackIds: [],
+          sourceUrl: SOURCES.journalismRegulations,
+          courses: [{ code: 'JMSC6044', name: "Master's project", credits: 6, appliesToTrackIds: [] }]
+        }
       ]
     },
     {
       programmeId: 'HKU-TPG-054',
-      status: 'blocked',
+      status: 'verified',
       creditsRequired: 72,
       creditUnit: 'credits',
-      sourceUrl: SOURCES.documentary,
-      statusNote: 'The current official Documentary Filmmaking Specialisation page states a 72-credit curriculum comprising six core courses, three electives and a capstone, and publishes six core codes, five elective codes and the JMSC6200 capstone code. However, it is a 2026-27 admissions page and does not publish the credit value of any individual course or an academic-year-specific 2025-26 Regulations and Syllabuses document. The earlier official launch page confirms the programme but does not supply those missing credits or completion rules. Course credits cannot be derived by arithmetic from the 72-credit total, so no partial course structure is published.',
-      additionalSources: [SOURCES.documentaryLaunch]
+      sourceUrl: SOURCES.journalismRegulations,
+      ruleReviewStatus: 'manual_review_required',
+      statusNote: 'The official 2024-25 Regulations and Syllabuses apply to candidates admitted in 2024-25 and thereafter and verify the complete 2025-26 Documentary Filmmaking specialisation under the Master of Journalism award. Candidates complete five compulsory courses for 36 credits, the 18-credit JMSC6200 capstone and three of nine 6-credit electives for a 72-credit award. Approved external postgraduate electives, equal-credit core replacements and annual availability require manual review. The current 2026-27 page publishes a materially changed code list but omits per-course credits, so that later structure remains blocked and is not merged into this cohort.',
+      additionalSources: [SOURCES.documentary, SOURCES.documentaryLaunch],
+      courseGroups: [
+        {
+          id: 'compulsory-documentary-courses',
+          name: 'Compulsory Documentary Filmmaking Courses',
+          type: 'core',
+          creditsRequired: 36,
+          coursesRequired: 5,
+          ruleText: 'Complete all five compulsory Documentary Filmmaking courses for 36 credits. Any approved core waiver must be replaced by a course carrying the same number of credits.',
+          appliesToTrackIds: [],
+          sourceUrl: SOURCES.journalismRegulations,
+          courses: [
+            { code: 'JMSC6085', name: 'Documentary film appreciation', credits: 6, appliesToTrackIds: [] },
+            { code: 'JMSC6100', name: 'Documentary film production', credits: 12, appliesToTrackIds: [] },
+            { code: 'JMSC6201', name: 'The art of non-fictional camerawork', credits: 6, appliesToTrackIds: [] },
+            { code: 'JMSC6202', name: 'Audience design in documentary', credits: 6, appliesToTrackIds: [] },
+            { code: 'JMSC6203', name: 'Post-production in documentary', credits: 6, appliesToTrackIds: [] }
+          ]
+        },
+        {
+          id: 'documentary-electives',
+          name: 'Documentary Filmmaking Electives',
+          type: 'elective',
+          creditsRequired: 18,
+          coursesRequired: 3,
+          ruleText: 'Complete three 6-credit electives from the nine-course pool. With approval, up to two designated HKU postgraduate courses may replace up to 12 credits; annual offerings vary.',
+          appliesToTrackIds: [],
+          sourceUrl: SOURCES.journalismRegulations,
+          courses: sixCreditCourses([
+            ['JMSC6040', 'Special topics in journalism I'],
+            ['JMSC6041', 'Special topics in journalism II'],
+            ['JMSC6046', 'Special topics in journalism IV'],
+            ['JMSC6104', 'Readings in China media and society'],
+            ['JMSC6111', 'Long form and feature writing'],
+            ['JMSC6125', 'Generative A.I. in media applications'],
+            ['JMSC6130', 'News literacy and digital fact-checking'],
+            ['JMSC6132', 'Multimedia production'],
+            ['JMSC6140', 'A.I. and media innovation']
+          ])
+        },
+        {
+          id: 'documentary-capstone',
+          name: 'Documentary Filmmaking Capstone',
+          type: 'capstone',
+          creditsRequired: 18,
+          coursesRequired: 1,
+          ruleText: 'Complete JMSC6200 for 18 credits.',
+          appliesToTrackIds: [],
+          sourceUrl: SOURCES.journalismRegulations,
+          courses: [{ code: 'JMSC6200', name: 'Documentary filmmaking capstone', credits: 18, appliesToTrackIds: [] }]
+        }
+      ]
     },
     {
       programmeId: 'HKU-TPG-055',
@@ -134,10 +263,14 @@ function buildProgrammes() {
     'HKU-TPG-054',
     'HKU-TPG-055'
   ]);
-  assert.deepEqual(programmes.map((entry) => entry.status), ['blocked', 'blocked', 'verified']);
-  assert(programmes.slice(0, 2).every((entry) => !entry.courseGroups));
-  assert.equal(programmes[2].courseGroups.flatMap((group) => group.courses).length, 30);
-  assert.equal(new Set(programmes.map((entry) => entry.sourceUrl)).size, programmes.length);
+  assert.deepEqual(programmes.map((entry) => entry.status), ['verified', 'verified', 'verified']);
+  assert.deepEqual(programmes.map((entry) => entry.courseGroups.flatMap((group) => group.courses).length), [36, 15, 30]);
+  programmes.forEach((entry) => {
+    const codes = entry.courseGroups.flatMap((group) => group.courses).map((course) => course.code);
+    assert.equal(new Set(codes).size, codes.length, `${entry.programmeId} repeats a course code`);
+  });
+  assert.equal(programmes[0].sourceUrl, programmes[1].sourceUrl);
+  assert.notEqual(programmes[0].sourceUrl, programmes[2].sourceUrl);
   return programmes;
 }
 
@@ -146,7 +279,7 @@ function buildSupplement() {
     schemaVersion: 1,
     schoolCode: 'HKU',
     academicYear: '2025-26',
-    verifiedAt: '2026-07-16',
+    verifiedAt: '2026-07-22',
     programmes: buildProgrammes()
   };
 }

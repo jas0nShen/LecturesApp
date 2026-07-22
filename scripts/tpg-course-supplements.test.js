@@ -100,6 +100,31 @@ function fixtureSupplement() {
   };
 }
 
+test('HKU MSc Artificial Intelligence keeps the prior-study elective exception under manual review', () => {
+  const supplement = require('../data/tpg-course-supplements/hku-ai-data-science-2026.json');
+  const programme = supplement.programmes.find((item) => item.programmeId === 'HKU-TPG-048');
+  const electiveGroups = programme.courseGroups.filter((group) => group.id.startsWith('disciplinary-electives-list-'));
+
+  assert.equal(supplement.academicYear, '2025-26');
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.match(programme.statusNote, /does not identify its academic year/);
+  assert.match(programme.statusNote, /up to 18 credits from the other two Lists/);
+  assert.equal(electiveGroups.length, 3);
+  assert(electiveGroups.every((group) => /Prior-study exception/.test(group.ruleText)));
+});
+
+test('CUHK Business Analytics records the official 30-unit award while the code table remains blocked', () => {
+  const supplement = require('../data/tpg-course-supplements/cuhk-source-status-2026.json');
+  const programme = supplement.programmes.find((item) => item.programmeId === 'CUHK-TPG-007');
+
+  assert.equal(programme.status, 'blocked');
+  assert.equal(programme.creditsRequired, 30);
+  assert.equal(programme.creditUnit, 'units');
+  assert.match(programme.sourceUrl, /CUHK-MScBA-Brochure-2026-2027/);
+  assert.match(programme.statusNote, /other 16 titles/);
+  assert.match(programme.statusNote, /2027-28/);
+});
+
 test('HKUST course reference parsing trims official attribute whitespace', () => {
   const [course] = parseHkustCourseRefs('<button data-crse-idx=" 108001 " data-acad-year="2026-27 " data-crse-code="OCES6111 " data-crse-prefix="OCES " data-crse-log-num="6111 ">Course</button>');
 
@@ -1611,7 +1636,7 @@ test('HKU Social Sciences first batch preserves official paths and blocks the pr
   });
 });
 
-test('HKU Social Sciences final batch preserves blockers and opens the verified MPA curriculum', () => {
+test('HKU Social Sciences final batch opens Journalism, Documentary Filmmaking and MPA curricula', () => {
   const supplement = buildHkuSocialSciencesFinalBatchSupplement();
   const catalogue = require('../data/tpg-programmes.json');
   validateSupplement(supplement, catalogue, 'hku-social-sciences-final-batch-2025.json');
@@ -1620,11 +1645,23 @@ test('HKU Social Sciences final batch preserves blockers and opens the verified 
   assert.deepEqual(supplement.programmes.map((programme) => programme.programmeId), [
     'HKU-TPG-053', 'HKU-TPG-054', 'HKU-TPG-055'
   ]);
-  assert.deepEqual(supplement.programmes.map((programme) => programme.status), ['blocked', 'blocked', 'verified']);
-  assert.equal(supplement.programmes.slice(0, 2).every((programme) => programme.courseGroups === undefined), true);
-  assert.match(byId['HKU-TPG-053'].statusNote, /60-credit programme/);
-  assert.match(byId['HKU-TPG-053'].statusNote, /catalogue entry records 72 credits/);
-  assert.match(byId['HKU-TPG-054'].statusNote, /does not publish the credit value of any individual course/);
+  assert.deepEqual(supplement.programmes.map((programme) => programme.status), ['verified', 'verified', 'verified']);
+  const journalism = byId['HKU-TPG-053'];
+  const documentary = byId['HKU-TPG-054'];
+  assert.equal(journalism.creditsRequired, 60);
+  assert.equal(journalism.ruleReviewStatus, 'manual_review_required');
+  assert.deepEqual(journalism.courseGroups.map((group) => [group.courses.length, group.creditsRequired, group.coursesRequired]), [[4, 24, 4], [31, 30, 5], [1, 6, 1]]);
+  assert.match(journalism.statusNote, /60 to 72 credits/);
+  assert.match(journalism.statusNote, /current 2026-27 website shows curriculum changes/);
+  assert.equal(documentary.ruleReviewStatus, 'manual_review_required');
+  assert.deepEqual(documentary.courseGroups.map((group) => [group.courses.length, group.creditsRequired, group.coursesRequired]), [[5, 36, 5], [9, 18, 3], [1, 18, 1]]);
+  assert.equal(documentary.courseGroups[0].courses.find((course) => course.code === 'JMSC6100').credits, 12);
+  assert.equal(documentary.courseGroups[2].courses[0].code, 'JMSC6200');
+  assert.match(documentary.statusNote, /specialisation under the Master of Journalism award/);
+  [journalism, documentary].forEach((programme) => {
+    const codes = programme.courseGroups.flatMap((group) => group.courses).map((course) => course.code);
+    assert.equal(new Set(codes).size, codes.length, `${programme.programmeId} repeats a course code`);
+  });
   const mpa = byId['HKU-TPG-055'];
   assert.equal(mpa.ruleReviewStatus, 'manual_review_required');
   assert.deepEqual(mpa.courseGroups.map((group) => [group.courses.length, group.creditsRequired]), [[4, 24], [24, 24], [2, 12]]);

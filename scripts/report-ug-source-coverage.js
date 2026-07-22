@@ -2,6 +2,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { SOURCES, listCourses, validateSourceDir } = require('./generate-ug-catalog');
 const ugService = require('../miniprogram/utils/ugService');
+const ugCatalogue = require('../miniprogram/utils/ugCatalogue');
 
 const DEFAULT_SOURCE_DIR = '/Users/shenjingsong/Documents/Codex/2026-07-06/pdf/outputs';
 const DEFAULT_SOURCE_REVIEW_FILE = path.join(__dirname, '..', 'data', 'ug-source-reviews.json');
@@ -428,11 +429,12 @@ function summarizeGeneratedCatalogue(options = {}) {
   const sourceProgrammes = getSourceProgrammeMap(options.sourceSummary);
   const sourceReviews = getSourceReviewMap(options.sourceReviews);
   let schools = filterSchools(ugService.listUniversities().map((university) => {
-    const programmes = ugService.listProgrammes({
-      universityId: university.id,
-      degreeLevel: 'undergraduate'
-    });
-    const majors = programmes.flatMap((programme) => ugService.listMajors(programme.id));
+    const programmes = ugCatalogue.programmes.filter((programme) => (
+      String(programme.universityId) === String(university.id)
+      && programme.degreeLevel === 'undergraduate'
+    ));
+    const programmeIds = new Set(programmes.map((programme) => programme.id));
+    const majors = ugCatalogue.majors.filter((major) => programmeIds.has(major.programmeId));
     const courseProgrammes = programmes
       .filter((programme) => (programme.codedCourseCount || 0) > 0)
       .map((programme) => ({

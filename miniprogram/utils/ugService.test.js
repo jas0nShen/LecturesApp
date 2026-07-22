@@ -45,17 +45,17 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.universityCount, 8);
   assert.equal(summary.facultyCount, 70);
   assert.equal(summary.programmeCount, 445);
-  assert.equal(summary.majorCount, 677);
+  assert.equal(summary.majorCount, 678);
   assert.equal(summary.requirementCount, 4);
-  assert.equal(summary.courseCount, 13245);
+  assert.equal(summary.courseCount, 14590);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 13231);
-  assert.equal(summary.programmeWithCoursesCount, 192);
-  assert.equal(summary.pendingProgrammeCount, 252);
+  assert.equal(summary.codedCourseCount, 14576);
+  assert.equal(summary.programmeWithCoursesCount, 215);
+  assert.equal(summary.pendingProgrammeCount, 229);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
-  assert.equal(summary.coveragePercent, 43);
+  assert.equal(summary.coveragePercent, 48);
   assert.match(summary.generatedAt, /^\d{4}-\d{2}-\d{2}T/);
   assert.match(summary.generatedDate, /^\d{4}-\d{2}-\d{2}$/);
 });
@@ -422,13 +422,13 @@ test('UG pending programme collection text is copy-ready for data sourcing', () 
   const text = ugService.buildPendingCollectionText({ universityCode: 'POLYU', limit: 2 });
 
   assert.equal(pending.length, 2);
-  assert.equal(allPending.length, 19);
+  assert.equal(allPending.length, 17);
   assert.equal(pending[0].universityCode, 'POLYU');
   assert.equal(pending[0].sourceStatusLabel, '仅索引 / 来源');
   assert.match(pending[0].officialUrl, /^https:\/\//);
   assert.match(text, /【本科课程资料待补清单】/);
   assert.match(text, /范围：POLYU/);
-  assert.match(text, /待补 Programme：19/);
+  assert.match(text, /待补 Programme：17/);
   assert.match(text, /课程代码 \/ 课程名 \/ 学分 \/ Year \/ Semester \/ 课程类别 \/ 来源链接/);
   assert.match(text, /不要推测课程/);
 });
@@ -460,7 +460,7 @@ test('UG pending programme collection can be filtered by source readiness', () =
   assert.equal(polyuNoSource.length, 0);
   assert.equal(ugService.getPendingSourceReadinessKey({}), 'noSource');
   assert.equal(ugService.getPendingSourceStatus({}), '缺来源');
-  assert.match(text, /待补 Programme：19/);
+  assert.match(text, /待补 Programme：17/);
   assert.match(text, /当前筛选：no-source · 0 个/);
   assert.match(text, /暂无待补 Programme/);
 });
@@ -511,13 +511,13 @@ test('UG per-school coverage stays visible for setup validation', () => {
   assert.deepEqual(
     Object.fromEntries(Object.entries(coverage).map(([code, item]) => [code, [item.programmeCount, item.majorCount]])),
     {
-      HKU: [137, 137], CUHK: [84, 84], HKUST: [50, 64], POLYU: [46, 110],
-      CITYU: [58, 187], HKBU: [22, 47], EDUHK: [25, 25], LINGNAN: [23, 23]
+      HKU: [137, 137], CUHK: [84, 85], HKUST: [50, 64], POLYU: [46, 114],
+      CITYU: [58, 183], HKBU: [22, 47], EDUHK: [25, 25], LINGNAN: [23, 23]
     }
   );
   assert(coverage.HKU.codedCourseCount >= 1842);
   assert(coverage.CITYU.codedCourseCount >= 2109);
-  assert(coverage.POLYU.codedCourseCount >= 2472);
+  assert(coverage.POLYU.codedCourseCount >= 2647);
   assert(coverage.LINGNAN.codedCourseCount >= 721);
 });
 
@@ -532,10 +532,10 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert.equal(coverage.length, 8);
   assert.equal(hku.programmeCount, 136);
   assert.equal(hku.majorCount, 136);
-  assert.equal(hku.programmeWithCoursesCount, 53);
-  assert.equal(hku.pendingProgrammeCount, 83);
-  assert.equal(hku.coveragePercent, 39);
-  assert.equal(hku.codedCourseCount, 3335);
+  assert.equal(hku.programmeWithCoursesCount, 56);
+  assert.equal(hku.pendingProgrammeCount, 80);
+  assert.equal(hku.coveragePercent, 41);
+  assert.equal(hku.codedCourseCount, 3539);
   assert.match(hku.generatedDate, /^\d{4}-\d{2}-\d{2}$/);
   assert.match(hku.updatedLabel, /^更新于 \d{4}-\d{2}-\d{2}$/);
   assert.equal(hku.badge, 'COURSES');
@@ -547,16 +547,16 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert(cuhk.coveragePercent > 0);
   assert(cuhk.codedCourseCount >= 131);
   assert.equal(cuhk.badge, 'COURSES');
-  assert.equal(polyu.programmeWithCoursesCount, 27);
-  assert.equal(polyu.pendingProgrammeCount, 19);
-  assert.equal(polyu.coveragePercent, 59);
-  assert.equal(polyu.codedCourseCount, 2472);
+  assert.equal(polyu.programmeWithCoursesCount, 29);
+  assert.equal(polyu.pendingProgrammeCount, 17);
+  assert.equal(polyu.coveragePercent, 63);
+  assert.equal(polyu.codedCourseCount, 2681);
   assert.equal(polyu.badge, 'COURSES');
   assert.equal(polyu.sourceReadiness.indexOnly, polyu.pendingProgrammeCount);
-  assert.equal(cityu.programmeWithCoursesCount, 38);
-  assert.equal(cityu.pendingProgrammeCount, 20);
-  assert.equal(cityu.coveragePercent, 66);
-  assert.equal(cityu.codedCourseCount, 2725);
+  assert.equal(cityu.programmeWithCoursesCount, 40);
+  assert.equal(cityu.pendingProgrammeCount, 18);
+  assert.equal(cityu.coveragePercent, 69);
+  assert.equal(cityu.codedCourseCount, 3056);
   assert.equal(cityu.badge, 'COURSES');
   assert.equal(hkbu.programmeWithCoursesCount, 21);
   assert.equal(hkbu.pendingProgrammeCount, 1);
@@ -610,6 +610,36 @@ test('PolyU Fashion exposes official SFT subject cluster courses', () => {
   assert(designCourses.some((course) => course.courseCode === 'SFT415CP' && course.courseType === 'capstone'));
   assert(businessCourses.some((course) => course.courseCode === 'SFT413FB' && course.titleEn === 'Fashion Brand Management'));
   assert(ugService.listMajorCourses(fashion.id, fashionBusiness.id, { keyword: 'AI in Fashion' }).some((course) => course.courseCode === 'SFT303AF'));
+});
+
+test('PolyU Surveying keeps five official disciplines isolated with shared progression subjects', () => {
+  const polyu = ugService.listUniversities().find((item) => item.code === 'POLYU');
+  const programmes = ugService.listProgrammes({ universityId: polyu.id, degreeLevel: 'undergraduate' });
+  const surveying = programmes.find((programme) => programme.code === 'JS3789');
+  const majors = ugService.listMajors(surveying.id);
+
+  assert.equal(surveying.sourceStatus, 'course_codes_available');
+  assert.equal(surveying.codedCourseCount, 175);
+  assert.deepEqual(majors.map((major) => major.nameEn), [
+    'Building Surveying',
+    'General Practice Surveying',
+    'Planning and Development',
+    'Property and Facility Management',
+    'Quantity Surveying'
+  ]);
+  assert(majors.every((major) => major.codedCourseCount === 35));
+
+  const building = majors.find((major) => major.nameEn === 'Building Surveying');
+  const quantity = majors.find((major) => major.nameEn === 'Quantity Surveying');
+  const buildingCourses = ugService.listMajorCourses(surveying.id, building.id);
+  const quantityCourses = ugService.listMajorCourses(surveying.id, quantity.id);
+
+  assert(buildingCourses.some((course) => course.courseCode === 'BRE204' && course.recommendedYear === 3));
+  assert(buildingCourses.some((course) => course.courseCode === 'BRE466' && course.courseType === 'capstone' && course.credits === 6));
+  assert(!buildingCourses.some((course) => course.courseCode === 'BRE439'));
+  assert(quantityCourses.some((course) => course.courseCode === 'BRE439'));
+  assert(quantityCourses.some((course) => course.courseCode === 'BRE442'));
+  assert(!quantityCourses.some((course) => course.courseCode === 'BRE204'));
 });
 
 test('PolyU Accounting and Finance Scheme exposes official AF programme requirement subjects', () => {

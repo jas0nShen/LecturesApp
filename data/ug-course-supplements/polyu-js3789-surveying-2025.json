@@ -1,0 +1,178 @@
+{
+  "provider": "PolyU BRE JS3789 Surveying Scheme Book 2025/26",
+  "academicYear": "2025/26",
+  "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/32405%20BRE%20Undergraduate%20Programme%20document%20202526%20combined%20202509.pdf",
+  "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3789",
+  "additionalSourceUrls": [
+    "https://www.polyu.edu.hk/cmi/study/undergraduate-programmes/bachelor-of-science-honours-in-surveying_js3789/",
+    "https://www.polyu.edu.hk/cmi/study/undergraduate-programmes/bre-scheme-books/"
+  ],
+  "note": "The official 2026 entry page requires 120 academic credits plus 2 training credits and says students choose one of five surveying disciplines in Year 3. The latest publicly linked Scheme Book is for the 2025/26 cohort; its coded progression pattern and discipline tables are used as the course source, while the 2026 page independently confirms the same five current discipline identities. Building Surveying, General Practice Surveying, Planning and Development, Property and Facility Management, and Quantity Surveying are therefore modelled as separate Major/Track identities. Each track contains the 24 unique coded shared progression subjects and its 11 published discipline-specific subjects. Recommended Year and Semester follow the Scheme Book's explicit Stage 1-4 progression; BRE299 and BRE365 remain unassigned to one Year because the official pattern spans alternative or multiple stages. Uncoded LCR, CAR, GUR and Free Elective slots are omitted, and this coded planning subset does not assert graduation completion.",
+  "supplements": [
+    {
+      "universityCode": "POLYU",
+      "programmeId": "POLYU-UG-JS3789-46",
+      "programmeCode": "JS3789",
+      "majorId": "POLYU-UG-JS3789-46-M1",
+      "majorName": "Building Surveying",
+      "majorOverride": {
+        "expectedMajorIds": [
+          "POLYU-UG-JS3789-46-M1"
+        ],
+        "id": "POLYU-UG-JS3789-46-M1",
+        "code": "BUILDING-SURVEYING",
+        "nameEn": "Building Surveying",
+        "nameZh": "Building Surveying"
+      },
+      "courses": [
+        { "code": "BRE204", "title": "Structure I", "credits": 3, "year": 3, "semester": "Semester 1", "courseType": "core", "group": "Building Surveying discipline-specific subject · Stage 3" },
+        { "code": "BRE363", "title": "Construction Economics", "credits": 3, "year": 3, "semester": "Semester 1", "courseType": "core", "group": "Building Surveying discipline-specific subject · Stage 3" },
+        { "code": "BRE370", "title": "Intermediate Construction Technology & Materials", "credits": 3, "year": 3, "semester": "Semester 1", "courseType": "core", "group": "Building Surveying discipline-specific subject · Stage 3" },
+        { "code": "BRE472", "title": "Information Technology & Building Information Modelling for Construction Management", "credits": 3, "year": 3, "semester": "Semester 1", "courseType": "core", "group": "Building Surveying discipline-specific subject · Stage 3" },
+        { "code": "BRE345", "title": "Measurement, Documentation & Estimating", "credits": 3, "year": 3, "semester": "Semester 2", "courseType": "core", "group": "Building Surveying discipline-specific subject · Stage 3" },
+        { "code": "BRE364", "title": "Construction Contract Law & Administration", "credits": 3, "year": 3, "semester": "Semester 2", "courseType": "core", "group": "Building Surveying discipline-specific subject · Stage 3" },
+        { "code": "BRE415", "title": "Dispute Resolution", "credits": 3, "year": 4, "semester": "Semester 1", "courseType": "core", "group": "Building Surveying discipline-specific elective · required after discipline choice · Stage 4" },
+        { "code": "BRE453", "title": "Building Services II", "credits": 3, "year": 4, "semester": "Semester 1", "courseType": "core", "group": "Building Surveying discipline-specific elective · required after discipline choice · Stage 4" },
+        { "code": "BRE461", "title": "Environmental Impact & Assessment", "credits": 3, "year": 4, "semester": "Semester 1", "courseType": "core", "group": "Building Surveying discipline-specific elective · required after discipline choice · Stage 4" },
+        { "code": "BRE435", "title": "Design, Adaptation & Conversion", "credits": 3, "year": 4, "semester": "Semester 2", "courseType": "core", "group": "Building Surveying discipline-specific elective · required after discipline choice · Stage 4" },
+        { "code": "BRE437", "title": "Facility Management", "credits": 3, "year": 4, "semester": "Semester 2", "courseType": "core", "group": "Building Surveying discipline-specific elective · required after discipline choice · Stage 4" }
+      ]
+    },
+    {
+      "universityCode": "POLYU",
+      "programmeId": "POLYU-UG-JS3789-46",
+      "programmeCode": "JS3789",
+      "majorId": "POLYU-UG-JS3789-46-M2",
+      "majorName": "General Practice Surveying",
+      "createMajor": {
+        "id": "POLYU-UG-JS3789-46-M2",
+        "code": "GENERAL-PRACTICE-SURVEYING",
+        "nameEn": "General Practice Surveying",
+        "nameZh": "General Practice Surveying"
+      },
+      "courses": [
+        { "code": "BRE315", "title": "Property Valuation", "credits": 3, "year": 3, "semester": "Semester 1", "courseType": "core", "group": "General Practice Surveying discipline-specific subject · Stage 3" },
+        { "code": "BRE371", "title": "Introduction to Property Management", "credits": 3, "year": 3, "semester": "Semester 1", "courseType": "core", "group": "General Practice Surveying discipline-specific subject · Stage 3" },
+        { "code": "BRE397", "title": "Property Management Accounting", "credits": 3, "year": 3, "semester": "Semester 1", "courseType": "core", "group": "General Practice Surveying discipline-specific subject · Stage 3" },
+        { "code": "BRE337", "title": "Property Law", "credits": 3, "year": 3, "semester": "Semester 2", "courseType": "core", "group": "General Practice Surveying discipline-specific subject · Stage 3" },
+        { "code": "BRE362", "title": "Urban Economics & Property Investment", "credits": 3, "year": 3, "semester": "Semester 2", "courseType": "core", "group": "General Practice Surveying discipline-specific subject · Stage 3" },
+        { "code": "BRE427", "title": "Applied Property Investment", "credits": 3, "year": 4, "semester": "Semester 1", "courseType": "core", "group": "General Practice Surveying discipline-specific elective · required after discipline choice · Stage 4" },
+        { "code": "BRE4291", "title": "Real Estate Marketing", "credits": 3, "year": 4, "semester": "Semester 1", "courseType": "core", "group": "General Practice Surveying discipline-specific elective · required after discipline choice · Stage 4" },
+        { "code": "BRE465", "title": "Asset Management", "credits": 3, "year": 4, "semester": "Semester 1", "courseType": "core", "group": "General Practice Surveying discipline-specific elective · required after discipline choice · Stage 4" },
+        { "code": "BRE463", "title": "Business Valuation and Accounts", "credits": 3, "year": 4, "semester": "Semester 1", "courseType": "core", "group": "General Practice Surveying discipline-specific elective · required after discipline choice · Stage 4" },
+        { "code": "BRE418", "title": "Real Estate Development", "credits": 3, "year": 4, "semester": "Semester 2", "courseType": "core", "group": "General Practice Surveying discipline-specific elective · required after discipline choice · Stage 4" },
+        { "code": "BRE436", "title": "Applied Property Valuation", "credits": 3, "year": 4, "semester": "Semester 2", "courseType": "core", "group": "General Practice Surveying discipline-specific elective · required after discipline choice · Stage 4" }
+      ]
+    },
+    {
+      "universityCode": "POLYU",
+      "programmeId": "POLYU-UG-JS3789-46",
+      "programmeCode": "JS3789",
+      "majorId": "POLYU-UG-JS3789-46-M3",
+      "majorName": "Planning and Development",
+      "createMajor": {
+        "id": "POLYU-UG-JS3789-46-M3",
+        "code": "PLANNING-AND-DEVELOPMENT",
+        "nameEn": "Planning and Development",
+        "nameZh": "Planning and Development"
+      },
+      "courses": [
+        { "code": "BRE315", "title": "Property Valuation", "credits": 3, "year": 3, "semester": "Semester 1", "courseType": "core", "group": "Planning and Development discipline-specific subject · Stage 3" },
+        { "code": "BRE371", "title": "Introduction to Property Management", "credits": 3, "year": 3, "semester": "Semester 1", "courseType": "core", "group": "Planning and Development discipline-specific subject · Stage 3" },
+        { "code": "BRE397", "title": "Property Management Accounting", "credits": 3, "year": 3, "semester": "Semester 1", "courseType": "core", "group": "Planning and Development discipline-specific subject · Stage 3" },
+        { "code": "BRE337", "title": "Property Law", "credits": 3, "year": 3, "semester": "Semester 2", "courseType": "core", "group": "Planning and Development discipline-specific subject · Stage 3" },
+        { "code": "BRE362", "title": "Urban Economics & Property Investment", "credits": 3, "year": 3, "semester": "Semester 2", "courseType": "core", "group": "Planning and Development discipline-specific subject · Stage 3" },
+        { "code": "BRE427", "title": "Applied Property Investment", "credits": 3, "year": 4, "semester": "Semester 1", "courseType": "core", "group": "Planning and Development discipline-specific elective · required after discipline choice · Stage 4" },
+        { "code": "BRE4291", "title": "Real Estate Marketing", "credits": 3, "year": 4, "semester": "Semester 1", "courseType": "core", "group": "Planning and Development discipline-specific elective · required after discipline choice · Stage 4" },
+        { "code": "BRE465", "title": "Asset Management", "credits": 3, "year": 4, "semester": "Semester 1", "courseType": "core", "group": "Planning and Development discipline-specific elective · required after discipline choice · Stage 4" },
+        { "code": "BRE463", "title": "Business Valuation and Accounts", "credits": 3, "year": 4, "semester": "Semester 1", "courseType": "core", "group": "Planning and Development discipline-specific elective · required after discipline choice · Stage 4" },
+        { "code": "BRE418", "title": "Real Estate Development", "credits": 3, "year": 4, "semester": "Semester 2", "courseType": "core", "group": "Planning and Development discipline-specific elective · required after discipline choice · Stage 4" },
+        { "code": "BRE464", "title": "Urban Planning", "credits": 3, "year": 4, "semester": "Semester 2", "courseType": "core", "group": "Planning and Development discipline-specific elective · required after discipline choice · Stage 4" }
+      ]
+    },
+    {
+      "universityCode": "POLYU",
+      "programmeId": "POLYU-UG-JS3789-46",
+      "programmeCode": "JS3789",
+      "majorId": "POLYU-UG-JS3789-46-M4",
+      "majorName": "Property and Facility Management",
+      "createMajor": {
+        "id": "POLYU-UG-JS3789-46-M4",
+        "code": "PROPERTY-AND-FACILITY-MANAGEMENT",
+        "nameEn": "Property and Facility Management",
+        "nameZh": "Property and Facility Management"
+      },
+      "courses": [
+        { "code": "BRE315", "title": "Property Valuation", "credits": 3, "year": 3, "semester": "Semester 1", "courseType": "core", "group": "Property and Facility Management discipline-specific subject · Stage 3" },
+        { "code": "BRE371", "title": "Introduction to Property Management", "credits": 3, "year": 3, "semester": "Semester 1", "courseType": "core", "group": "Property and Facility Management discipline-specific subject · Stage 3" },
+        { "code": "BRE397", "title": "Property Management Accounting", "credits": 3, "year": 3, "semester": "Semester 1", "courseType": "core", "group": "Property and Facility Management discipline-specific subject · Stage 3" },
+        { "code": "BRE337", "title": "Property Law", "credits": 3, "year": 3, "semester": "Semester 2", "courseType": "core", "group": "Property and Facility Management discipline-specific subject · Stage 3" },
+        { "code": "BRE362", "title": "Urban Economics & Property Investment", "credits": 3, "year": 3, "semester": "Semester 2", "courseType": "core", "group": "Property and Facility Management discipline-specific subject · Stage 3" },
+        { "code": "BRE427", "title": "Applied Property Investment", "credits": 3, "year": 4, "semester": "Semester 1", "courseType": "core", "group": "Property and Facility Management discipline-specific elective · required after discipline choice · Stage 4" },
+        { "code": "BRE4291", "title": "Real Estate Marketing", "credits": 3, "year": 4, "semester": "Semester 1", "courseType": "core", "group": "Property and Facility Management discipline-specific elective · required after discipline choice · Stage 4" },
+        { "code": "BRE465", "title": "Asset Management", "credits": 3, "year": 4, "semester": "Semester 1", "courseType": "core", "group": "Property and Facility Management discipline-specific elective · required after discipline choice · Stage 4" },
+        { "code": "BRE463", "title": "Business Valuation and Accounts", "credits": 3, "year": 4, "semester": "Semester 1", "courseType": "core", "group": "Property and Facility Management discipline-specific elective · required after discipline choice · Stage 4" },
+        { "code": "BRE418", "title": "Real Estate Development", "credits": 3, "year": 4, "semester": "Semester 2", "courseType": "core", "group": "Property and Facility Management discipline-specific elective · required after discipline choice · Stage 4" },
+        { "code": "BRE436", "title": "Applied Property Valuation", "credits": 3, "year": 4, "semester": "Semester 2", "courseType": "core", "group": "Property and Facility Management discipline-specific elective · required after discipline choice · Stage 4" }
+      ]
+    },
+    {
+      "universityCode": "POLYU",
+      "programmeId": "POLYU-UG-JS3789-46",
+      "programmeCode": "JS3789",
+      "majorId": "POLYU-UG-JS3789-46-M5",
+      "majorName": "Quantity Surveying",
+      "createMajor": {
+        "id": "POLYU-UG-JS3789-46-M5",
+        "code": "QUANTITY-SURVEYING",
+        "nameEn": "Quantity Surveying",
+        "nameZh": "Quantity Surveying"
+      },
+      "courses": [
+        { "code": "BRE363", "title": "Construction Economics", "credits": 3, "year": 3, "semester": "Semester 1", "courseType": "core", "group": "Quantity Surveying discipline-specific subject · Stage 3" },
+        { "code": "BRE370", "title": "Intermediate Construction Technology & Materials", "credits": 3, "year": 3, "semester": "Semester 1", "courseType": "core", "group": "Quantity Surveying discipline-specific subject · Stage 3" },
+        { "code": "BRE472", "title": "Information Technology & Building Information Modelling for Construction Management", "credits": 3, "year": 3, "semester": "Semester 1", "courseType": "core", "group": "Quantity Surveying discipline-specific subject · Stage 3" },
+        { "code": "BRE345", "title": "Measurement, Documentation & Estimating", "credits": 3, "year": 3, "semester": "Semester 2", "courseType": "core", "group": "Quantity Surveying discipline-specific subject · Stage 3" },
+        { "code": "BRE364", "title": "Construction Contract Law & Administration", "credits": 3, "year": 3, "semester": "Semester 2", "courseType": "core", "group": "Quantity Surveying discipline-specific subject · Stage 3" },
+        { "code": "BRE415", "title": "Dispute Resolution", "credits": 3, "year": 4, "semester": "Semester 1", "courseType": "core", "group": "Quantity Surveying discipline-specific elective · required after discipline choice · Stage 4" },
+        { "code": "BRE453", "title": "Building Services II", "credits": 3, "year": 4, "semester": "Semester 1", "courseType": "core", "group": "Quantity Surveying discipline-specific elective · required after discipline choice · Stage 4" },
+        { "code": "BRE461", "title": "Environmental Impact & Assessment", "credits": 3, "year": 4, "semester": "Semester 1", "courseType": "core", "group": "Quantity Surveying discipline-specific elective · required after discipline choice · Stage 4" },
+        { "code": "BRE439", "title": "Engineering Contract Procedures", "credits": 3, "year": 4, "semester": "Semester 2", "courseType": "core", "group": "Quantity Surveying discipline-specific elective · required after discipline choice · Stage 4" },
+        { "code": "BRE440", "title": "Cost & Value Management", "credits": 3, "year": 4, "semester": "Semester 2", "courseType": "core", "group": "Quantity Surveying discipline-specific elective · required after discipline choice · Stage 4" },
+        { "code": "BRE442", "title": "Forecasting & Competition in the Built Environment", "credits": 3, "year": 4, "semester": "Semester 2", "courseType": "core", "group": "Quantity Surveying discipline-specific elective · required after discipline choice · Stage 4" }
+      ]
+    },
+    {
+      "universityCode": "POLYU",
+      "programmeId": "POLYU-UG-JS3789-46",
+      "programmeCode": "JS3789",
+      "evidenceNote": "These 24 unique coded progression subjects are shared across all five current surveying disciplines. Generic uncoded LCR, CAR, GUR and Free Elective slots are intentionally excluded.",
+      "courses": [
+        { "code": "MM1031", "title": "Introduction to Innovation and Entrepreneurship", "credits": 1, "year": 1, "semester": "Semester 1", "courseType": "core", "group": "Stage 1 coded progression subject" },
+        { "code": "CE1001", "title": "Construction and Environmental Professionals in Society", "credits": 3, "year": 1, "semester": "Semester 1", "courseType": "core", "group": "Stage 1 coded progression subject" },
+        { "code": "AMA1140", "title": "Mathematics for Construction and Environment", "credits": 3, "year": 1, "semester": "Semester 1", "courseType": "foundation", "group": "Stage 1 · Faculty Compulsory 1" },
+        { "code": "APSS1L01", "title": "Leadership & Intra-Personal Development - Tomorrow's Leaders", "credits": 3, "year": 1, "semester": "Semester 1", "courseType": "core", "group": "Stage 1 · General University Requirement" },
+        { "code": "CE1002", "title": "Introduction to AI and Data Analytics for Construction and Environment", "credits": 2, "year": 1, "semester": "Semester 2", "courseType": "core", "group": "Stage 1 · General University Requirement" },
+        { "code": "AP10001", "title": "Introduction to Physics", "credits": 3, "year": 1, "semester": "Semester 2", "courseType": "foundation", "group": "Stage 1 · Faculty Compulsory 2 with CAR D · General University Requirement" },
+        { "code": "BRE299", "title": "Work-Integrated Education (WIE)", "credits": 2, "semester": "Stage 1 or Stage 2 Summer Semester", "courseType": "internship", "group": "Compulsory Work-Integrated Education · 2 training credits" },
+        { "code": "ELC3421", "title": "English for Construction & Environmental Professionals", "credits": 3, "year": 2, "semester": "Semester 1", "courseType": "core", "group": "Stage 2 compulsory progression subject" },
+        { "code": "BRE350", "title": "Project Management & Procurement", "credits": 3, "year": 2, "semester": "Semester 1", "courseType": "core", "group": "Stage 2 compulsory core foundation subject" },
+        { "code": "BRE258", "title": "Industrial Safety I", "credits": 1, "year": 2, "semester": "Semester 1", "courseType": "core", "group": "Stage 2 compulsory safety subject" },
+        { "code": "BRE2031", "title": "Environmental Science", "credits": 3, "year": 2, "semester": "Semester 1", "courseType": "core", "group": "Stage 2 compulsory core foundation subject" },
+        { "code": "BRE263", "title": "Construction Economics & Finance", "credits": 3, "year": 2, "semester": "Semester 1", "courseType": "core", "group": "Stage 2 compulsory core foundation subject" },
+        { "code": "BRE2171", "title": "Planning and Development: Theories and Practices", "credits": 2, "year": 2, "semester": "Semester 2", "courseType": "core", "group": "Stage 2 compulsory core foundation subject" },
+        { "code": "BRE2061", "title": "Legal Context for Building and Construction Professionals in Society", "credits": 2, "year": 2, "semester": "Semester 2", "courseType": "core", "group": "Stage 2 compulsory core foundation subject" },
+        { "code": "BRE2691", "title": "Introductory Integrated Professional Workshop I", "credits": 2, "year": 2, "semester": "Semester 2", "courseType": "core", "group": "Stage 2 compulsory project subject" },
+        { "code": "BRE349", "title": "Building Services I", "credits": 3, "year": 2, "semester": "Semester 2", "courseType": "core", "group": "Stage 2 compulsory core foundation subject" },
+        { "code": "BRE265", "title": "Introductory Construction Technology & Materials", "credits": 3, "year": 2, "semester": "Semester 2", "courseType": "core", "group": "Stage 2 compulsory core foundation subject" },
+        { "code": "BRE336", "title": "Development Control Law", "credits": 3, "year": 3, "semester": "Semester 1", "courseType": "core", "group": "Stage 3 shared compulsory subject" },
+        { "code": "BRE365", "title": "International Study", "credits": 1, "semester": "Stage 3 Semester 1 / Semester 2 / Summer Semester; Stage 4 Semester 1", "courseType": "core", "group": "Shared core subject spanning four semesters" },
+        { "code": "BRE366", "title": "Analytical Skills & Methods", "credits": 2, "year": 3, "semester": "Semester 1", "courseType": "core", "group": "Stage 3 shared compulsory subject" },
+        { "code": "BRE3261", "title": "Building Maintenance Planning and Technology", "credits": 2, "year": 3, "semester": "Semester 2", "courseType": "core", "group": "Stage 3 shared compulsory subject" },
+        { "code": "BRE369", "title": "Integrated Professional Workshop II", "credits": 3, "year": 3, "semester": "Semester 2", "courseType": "core", "group": "Stage 3 shared compulsory project subject" },
+        { "code": "BRE466", "title": "Capstone Project", "credits": 6, "year": 4, "semester": "Semester 1 / Semester 2", "courseType": "capstone", "group": "Stage 4 shared compulsory capstone" },
+        { "code": "BRE469", "title": "Integrated Professional Workshop III", "credits": 3, "year": 4, "semester": "Semester 2", "courseType": "core", "group": "Stage 4 shared compulsory project subject" }
+      ]
+    }
+  ]
+}

@@ -142,6 +142,71 @@ test('Programme keyword handlers accept confirm text event fallbacks', async () 
   assert.equal(page.data.selectedTpgProgramme.name, 'Blockchain Technology');
 });
 
+test('undergraduate Programme search keeps every match browsable and selectable', async () => {
+  const page = loadOnboardingPage({
+    profileType: 'undergraduate',
+    universityCode: 'HKU',
+    programmeId: 'HKU-UG-6274-33',
+    majorId: 'HKU-UG-6274-33-M1',
+    curriculumYear: '2026',
+    currentYear: 1
+  });
+  await page.onLoad({ mode: 'undergraduate' });
+
+  page.onUgKeyword({ detail: { value: 'social' } });
+
+  assert(page.data.filteredUgProgrammes.length > 5);
+  assert.equal(page.data.visibleUgProgrammes.length, page.data.filteredUgProgrammes.length);
+  const laterProgramme = page.data.filteredUgProgrammes[10];
+  page.selectUgProgramme({ currentTarget: { dataset: { id: laterProgramme.id } } });
+  assert.equal(page.data.selectedProgramme.id, laterProgramme.id);
+  assert.equal(page.data.ugSelectedIndexLabel, `11 / ${page.data.filteredUgProgrammes.length}`);
+});
+
+test('inline Programme search results use a fixed-height nested scroller', () => {
+  const wxml = fs.readFileSync(
+    path.join(ROOT, 'miniprogram', 'pages', 'onboarding', 'onboarding.wxml'),
+    'utf8'
+  );
+  const wxss = fs.readFileSync(
+    path.join(ROOT, 'miniprogram', 'pages', 'onboarding', 'onboarding.wxss'),
+    'utf8'
+  );
+
+  assert.equal((wxml.match(/class="programme-results-list \{\{(?:ug|tpg)Keyword \? 'programme-results-list-scrollable' : ''\}\}"/g) || []).length, 2);
+  assert.equal((wxml.match(/scroll-y="\{\{(?:ug|tpg)Keyword \? true : false\}\}"/g) || []).length, 2);
+  assert.match(wxss, /\.programme-results-list-scrollable\s*\{[^}]*height:\s*620rpx;/s);
+});
+
+test('TPG Programme search keeps every match available in the inline result list', async () => {
+  const page = loadOnboardingPage({
+    profileType: 'tpg',
+    universityCode: 'POLYU',
+    programmeId: 'POLYU-TPG-001'
+  });
+  await page.onLoad({ mode: 'tpg' });
+
+  page.onTpgKeyword({ detail: { value: 'management' } });
+
+  assert(page.data.filteredTpgProgrammes.length > 5);
+  assert.equal(page.data.visibleTpgProgrammes.length, page.data.filteredTpgProgrammes.length);
+});
+
+test('Programme sheets use a real scroll height instead of max-height alone', () => {
+  const wxml = fs.readFileSync(
+    path.join(ROOT, 'miniprogram', 'pages', 'onboarding', 'onboarding.wxml'),
+    'utf8'
+  );
+  const wxss = fs.readFileSync(
+    path.join(ROOT, 'miniprogram', 'pages', 'onboarding', 'onboarding.wxss'),
+    'utf8'
+  );
+
+  assert.equal((wxml.match(/class="sheet-list sheet-list-tall" scroll-y/g) || []).length, 2);
+  assert.match(wxss, /\.sheet-list\s*\{[^}]*height:\s*560rpx;/s);
+  assert.match(wxss, /\.sheet-list-tall\s*\{[^}]*height:\s*680rpx;/s);
+});
+
 test('Programme inputs do not rebuild the selection on blur before a button tap completes', () => {
   const wxml = fs.readFileSync(
     path.join(ROOT, 'miniprogram', 'pages', 'onboarding', 'onboarding.wxml'),
@@ -174,6 +239,29 @@ test('undergraduate school switching does not wait for course packages', async (
   await page.selectUgUniversityByIndex(hkuIndex);
   await page.selectUgUniversityByIndex(polyuIndex);
 
+  assert.equal(page.data.selectedUniversity.code, 'POLYU');
+});
+
+test('editing an undergraduate profile does not preload the same university TPG package', async () => {
+  let tpgLoadCount = 0;
+  const page = loadOnboardingPage({
+    profileType: 'undergraduate',
+    universityId: 'POLYU',
+    universityCode: 'POLYU',
+    programmeId: 'POLYU-UG-JS3220-2',
+    majorId: 'POLYU-UG-JS3220-2-M1',
+    curriculumYear: '2026',
+    currentYear: 1
+  }, {
+    ensureTpgUniversityLoaded: async () => {
+      tpgLoadCount += 1;
+    }
+  });
+
+  await page.onLoad({ mode: 'undergraduate' });
+
+  assert.equal(tpgLoadCount, 0);
+  assert.equal(page.data.mode, 'undergraduate');
   assert.equal(page.data.selectedUniversity.code, 'POLYU');
 });
 

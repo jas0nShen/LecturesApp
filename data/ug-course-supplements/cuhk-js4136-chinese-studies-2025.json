@@ -1,0 +1,98 @@
+{
+  "provider": "CUHK Centre for China Studies BA Chinese Studies Study Scheme 2025/26",
+  "academicYear": "2025/26",
+  "sourceUrl": "https://www.ccs.cuhk.edu.hk/wp-content/uploads/chesb2025.pdf",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/chesb/",
+  "additionalSourceUrls": [
+    "https://www.ccs.cuhk.edu.hk/programmes/undergraduate-programmes/ba-in-chinese-studies/study-scheme/",
+    "https://www.ccs.cuhk.edu.hk/programmes/undergraduate-programmes/ba-in-chinese-studies/course-list/",
+    "https://www.ccs.cuhk.edu.hk/wp-content/uploads/BA-brochure-2025-entry.pdf"
+  ],
+  "note": "The official 2025/26 Study Scheme publishes a 66-unit Major requirement: 9 Faculty Package units, 30 Required units and 27 Elective units. Students are assigned to either the International Stream or Chinese Native Stream, complete four Stream Courses, three fixed Experiential Learning Courses, two fixed Research Component Courses and nine Major Electives under the published level and subject-area minima. Both Streams are modelled as separate Major/Track identities so local plans remain isolated. This supplement records all 47 CHES-coded courses whose code, title and 3-unit value are explicitly printed in the Study Scheme. The Faculty Package's two-of-many external Arts choices and the International Stream's CLCP/approved CLCC language pools are not included because the Study Scheme publishes their codes but not their official titles; the same omission applies to non-CHES external options. Recommended Year and Term are assigned only where the official course pattern fixes them. This verified coded planning subset does not claim that the omitted external pools or University Core requirements have been completed.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeId": "CUHK-UG-CHESB-4",
+      "programmeCode": "CHESB",
+      "jupasCode": "JS4136",
+      "majorId": "CUHK-UG-CHESB-4-M1",
+      "majorName": "International Stream",
+      "majorOverride": {
+        "expectedMajorIds": ["CUHK-UG-CHESB-4-M1"],
+        "id": "CUHK-UG-CHESB-4-M1",
+        "code": "INTERNATIONAL-STREAM",
+        "nameEn": "International Stream",
+        "nameZh": "International Stream"
+      },
+      "evidenceNote": "The CHES-coded pool is complete for the published Study Scheme. Code-only external Faculty Package and CLCP/CLCC language choices are intentionally omitted because their official titles are not printed in this Programme source.",
+      "courses": [
+        { "code": "CHES1000", "title": "Introduction to Chinese Studies", "credits": 3, "year": 1, "semester": "Term 1", "courseType": "core", "group": "Major Required · Introductory Course" },
+        { "code": "CHES1101", "title": "China in Global Perspectives", "credits": 3, "year": 1, "semester": "Term 1", "courseType": "core", "group": "Faculty Package · pre-assigned" },
+        { "code": "CHES1102", "title": "Chinese Religion in Everyday Life Practice", "credits": 3, "semester": "Year 1 to Year 2", "courseType": "elective", "group": "Faculty Package option" },
+        { "code": "CHES2001", "title": "Modern Chinese History", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective · Chinese Native Stream option" },
+        { "code": "CHES2002", "title": "Chinese Culture and Society in Transformation", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective · Chinese Native Stream option" },
+        { "code": "CHES2003", "title": "China's Political Economy", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective · Chinese Native Stream option" },
+        { "code": "CHES2004", "title": "Chinese Literature in Translation", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective · Chinese Native Stream option" },
+        { "code": "CHES2005", "title": "Emotional Landscapes of Contemporary China", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective" },
+        { "code": "CHES2007", "title": "China on Screen", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective · Chinese Native Stream option" },
+        { "code": "CHES2102", "title": "China's Business Environment in Historical Perspective", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective · Chinese Native Stream option" },
+        { "code": "CHES2103", "title": "Popular Culture in Contemporary China", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective · Chinese Native Stream option" },
+        { "code": "CHES2104", "title": "Consumer Culture in Contemporary China", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective · Chinese Native Stream option" },
+        { "code": "CHES2105", "title": "Modern Chinese Literature", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective · Chinese Native Stream option" },
+        { "code": "CHES2106", "title": "Chinese Philosophical and Religious Traditions", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective · Chinese Native Stream option" },
+        { "code": "CHES2107", "title": "An Introduction to the Development of Science and Technology in China", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective" },
+        { "code": "CHES2108", "title": "Innovation, Catch-up and China's Development", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective" },
+        { "code": "CHES2109", "title": "State and Market in Modern China", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective" },
+        { "code": "CHES2111", "title": "Foreign Policy of China", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective" },
+        { "code": "CHES2126", "title": "Teaching and Learning Chinese as a Second Language", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective" },
+        { "code": "CHES3000", "title": "Ethnicity and Regional Culture in China", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective · 3000 level" },
+        { "code": "CHES3002", "title": "China's Financial Reforms: Problems and Perspectives", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective · 3000 level" },
+        { "code": "CHES3004", "title": "Media China", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective · 3000 level" },
+        { "code": "CHES3005", "title": "Social Issues and Problems in Contemporary China", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective · 3000 level" },
+        { "code": "CHES3006", "title": "China's Strategic and Diplomatic Cultures", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective · 3000 level" },
+        { "code": "CHES3007", "title": "Urban China", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective · 3000 level" },
+        { "code": "CHES3008", "title": "Environment and Society in China", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective · 3000 level" },
+        { "code": "CHES3009", "title": "Youth in China", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective · 3000 level" },
+        { "code": "CHES3010", "title": "Governing China", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective · 3000 level" },
+        { "code": "CHES3011", "title": "Financialization and China's Development", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective · 3000 level" },
+        { "code": "CHES3012", "title": "Trauma and Memory in 20th and 21st Century China", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective · 3000 level" },
+        { "code": "CHES3014", "title": "Family, Marriage and Love: Exploring Intimate Relationships in Contemporary China", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective · 3000 level" },
+        { "code": "CHES3102", "title": "East Asian Film Genres in a Globalizing World", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective · 3000 level" },
+        { "code": "CHES3103", "title": "Art in Contemporary China", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective · 3000 level" },
+        { "code": "CHES3104", "title": "Chinese Innovation Cultures", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective · 3000 level" },
+        { "code": "CHES3105", "title": "Cultural History of China", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective · 3000 level" },
+        { "code": "CHES3106", "title": "Chinese Legal and Justice Cultures", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective · 3000 level" },
+        { "code": "CHES3107", "title": "China and Regional Order", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective · 3000 level" },
+        { "code": "CHES3200", "title": "Advanced Chinese Literature Seminar", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective · 3000 level" },
+        { "code": "CHES3201", "title": "Special Topics in Chinese Studies", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "elective", "group": "Major Elective · 3000 level" },
+        { "code": "CHES3300", "title": "China Summer Field Trip", "credits": 3, "year": 2, "semester": "Summer Session", "courseType": "fieldwork", "group": "Major Required · Experiential Learning" },
+        { "code": "CHES3400", "title": "Social Enterprise Project in China", "credits": 3, "year": 3, "semester": "Summer Session", "courseType": "project", "group": "Major Required · Experiential Learning" },
+        { "code": "CHES3401", "title": "Guided Fieldwork in China", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "fieldwork", "group": "Major Elective · prior approval required" },
+        { "code": "CHES3402", "title": "China Experience Internship", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "internship", "group": "Major Elective · prior approval required" },
+        { "code": "CHES3403", "title": "Social-Cultural Immersion", "credits": 3, "year": 2, "semester": "Summer Session", "courseType": "fieldwork", "group": "Major Required · Experiential Learning" },
+        { "code": "CHES3500", "title": "Chinese Studies Research Methods", "credits": 3, "year": 4, "semester": "Term 1", "courseType": "core", "group": "Major Required · Research Component" },
+        { "code": "CHES4003", "title": "Research Team Lab", "credits": 3, "semester": "Year 1 Term 2 to Year 4", "courseType": "research", "group": "Major Elective · prior approval required · 4000 level" },
+        { "code": "CHES4500", "title": "Thesis Research Paper", "credits": 3, "year": 4, "semester": "Term 2", "courseType": "capstone", "group": "Major Required · Research Component · Capstone" }
+      ]
+    },
+    {
+      "universityCode": "CUHK",
+      "programmeId": "CUHK-UG-CHESB-4",
+      "programmeCode": "CHESB",
+      "jupasCode": "JS4136",
+      "majorId": "CUHK-UG-CHESB-4-M2",
+      "majorName": "Chinese Native Stream",
+      "createMajor": {
+        "id": "CUHK-UG-CHESB-4-M2",
+        "code": "CHINESE-NATIVE-STREAM",
+        "nameEn": "Chinese Native Stream",
+        "nameZh": "Chinese Native Stream"
+      },
+      "copyCoursesFrom": {
+        "universityCode": "CUHK",
+        "programmeId": "CUHK-UG-CHESB-4",
+        "majorName": "International Stream"
+      }
+    }
+  ]
+}

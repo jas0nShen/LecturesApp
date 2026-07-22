@@ -285,10 +285,34 @@
 }
 
 .programme-results {
-  display: flex;
-  flex-direction: column;
-  gap: 12rpx;
   margin: -8rpx 0 24rpx;
+}
+
+.programme-results-head {
+  align-items: center;
+  color: #35564b;
+  display: flex;
+  font-size: 22rpx;
+  font-weight: 800;
+  justify-content: space-between;
+  letter-spacing: 0.4rpx;
+  padding: 0 4rpx 12rpx;
+}
+
+.programme-results-hint {
+  color: #6f827a;
+  font-size: 21rpx;
+  font-weight: 650;
+}
+
+.programme-results-list {
+  box-sizing: border-box;
+  padding-right: 4rpx;
+}
+
+.programme-results-list-scrollable {
+  height: 620rpx;
+  overscroll-behavior: contain;
 }
 
 .programme-result {
@@ -298,6 +322,7 @@
   border-radius: 16rpx;
   display: flex;
   gap: 16rpx;
+  margin-bottom: 12rpx;
   padding: 18rpx;
 }
 
@@ -511,10 +536,12 @@
 }
 
 .sheet-list {
+  height: 560rpx;
   max-height: 560rpx;
 }
 
 .sheet-list-tall {
+  height: 680rpx;
   max-height: 680rpx;
 }
 

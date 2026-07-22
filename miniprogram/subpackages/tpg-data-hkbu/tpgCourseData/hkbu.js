@@ -3740,6 +3740,323 @@ module.exports = [
     ]
   },
   {
+    "id": "HKBU-TPG-011",
+    "courseGroups": [
+      {
+        "id": "required-counselling-courses",
+        "name": "Required Counselling Courses",
+        "type": "core",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Complete all four Required Counselling Courses (12 units).",
+        "appliesToTrackIds": [],
+        "courses": [
+          {
+            "code": "SOWK7040",
+            "name": "Research and Programme Evaluation",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-counselling-1"
+          },
+          {
+            "code": "SOWK7410",
+            "name": "Human Diversity and Cultural Differences",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-counselling-1"
+          },
+          {
+            "code": "SOWK7420",
+            "name": "Theories in Counselling and Therapy",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-counselling-1"
+          },
+          {
+            "code": "SOWK7450",
+            "name": "Processes and Issues in Counselling",
+            "credits": 3,
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-counselling-1"
+          }
+        ],
+        "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-counselling-1"
+      },
+      {
+        "id": "counselling-specialisation-courses",
+        "name": "Counselling Specialisation Courses",
+        "type": "track_requirement",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Complete four Specialisation courses (12 units). Youth Counselling requires SOWK7170, SOWK7430 and SOWK7440 plus one eligible elective. Mental Health Counselling requires SOWK7120, SOWK7510 and SOWK7790 plus one eligible elective. Generic Counselling chooses four courses from this pool. For HKPCA recognition, Youth and Generic Counselling students must include SOWK7120 or SOWK7110; SOWK7910 requires SOWK7510. These conditions and annual availability require manual review.",
+        "appliesToTrackIds": [
+          "HKBU-TPG-011-YOUTH-COUNSELLING",
+          "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING",
+          "HKBU-TPG-011-GENERIC-COUNSELLING"
+        ],
+        "courses": [
+          {
+            "code": "SOWK7110",
+            "name": "Mental Health, Mental Disorder and Social Work",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "HKBU-TPG-011-YOUTH-COUNSELLING",
+              "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING",
+              "HKBU-TPG-011-GENERIC-COUNSELLING"
+            ],
+            "typeByTrackIds": {
+              "HKBU-TPG-011-YOUTH-COUNSELLING": "elective",
+              "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING": "elective",
+              "HKBU-TPG-011-GENERIC-COUNSELLING": "elective"
+            },
+            "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-counselling-1"
+          },
+          {
+            "code": "SOWK7120",
+            "name": "Child and Adolescent Mental Health",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "HKBU-TPG-011-YOUTH-COUNSELLING",
+              "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING",
+              "HKBU-TPG-011-GENERIC-COUNSELLING"
+            ],
+            "typeByTrackIds": {
+              "HKBU-TPG-011-YOUTH-COUNSELLING": "elective",
+              "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING": "core",
+              "HKBU-TPG-011-GENERIC-COUNSELLING": "elective"
+            },
+            "requiredForTrackIds": [
+              "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING"
+            ],
+            "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-counselling-1"
+          },
+          {
+            "code": "SOWK7170",
+            "name": "Youth at the Margins: Theory and Practice",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "HKBU-TPG-011-YOUTH-COUNSELLING",
+              "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING",
+              "HKBU-TPG-011-GENERIC-COUNSELLING"
+            ],
+            "typeByTrackIds": {
+              "HKBU-TPG-011-YOUTH-COUNSELLING": "core",
+              "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING": "elective",
+              "HKBU-TPG-011-GENERIC-COUNSELLING": "elective"
+            },
+            "requiredForTrackIds": [
+              "HKBU-TPG-011-YOUTH-COUNSELLING"
+            ],
+            "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-counselling-1"
+          },
+          {
+            "code": "SOWK7430",
+            "name": "Narrative Approach to Counselling",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "HKBU-TPG-011-YOUTH-COUNSELLING",
+              "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING",
+              "HKBU-TPG-011-GENERIC-COUNSELLING"
+            ],
+            "typeByTrackIds": {
+              "HKBU-TPG-011-YOUTH-COUNSELLING": "core",
+              "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING": "elective",
+              "HKBU-TPG-011-GENERIC-COUNSELLING": "elective"
+            },
+            "requiredForTrackIds": [
+              "HKBU-TPG-011-YOUTH-COUNSELLING"
+            ],
+            "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-counselling-1"
+          },
+          {
+            "code": "SOWK7440",
+            "name": "Narrative Practice with Specific Youth Groups",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "HKBU-TPG-011-YOUTH-COUNSELLING",
+              "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING",
+              "HKBU-TPG-011-GENERIC-COUNSELLING"
+            ],
+            "typeByTrackIds": {
+              "HKBU-TPG-011-YOUTH-COUNSELLING": "core",
+              "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING": "elective",
+              "HKBU-TPG-011-GENERIC-COUNSELLING": "elective"
+            },
+            "requiredForTrackIds": [
+              "HKBU-TPG-011-YOUTH-COUNSELLING"
+            ],
+            "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-counselling-1"
+          },
+          {
+            "code": "SOWK7470",
+            "name": "Counselling Project",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "HKBU-TPG-011-YOUTH-COUNSELLING",
+              "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING",
+              "HKBU-TPG-011-GENERIC-COUNSELLING"
+            ],
+            "typeByTrackIds": {
+              "HKBU-TPG-011-YOUTH-COUNSELLING": "elective",
+              "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING": "elective",
+              "HKBU-TPG-011-GENERIC-COUNSELLING": "elective"
+            },
+            "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-counselling-1"
+          },
+          {
+            "code": "SOWK7500",
+            "name": "Family Therapy",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "HKBU-TPG-011-YOUTH-COUNSELLING",
+              "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING",
+              "HKBU-TPG-011-GENERIC-COUNSELLING"
+            ],
+            "typeByTrackIds": {
+              "HKBU-TPG-011-YOUTH-COUNSELLING": "elective",
+              "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING": "elective",
+              "HKBU-TPG-011-GENERIC-COUNSELLING": "elective"
+            },
+            "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-counselling-1"
+          },
+          {
+            "code": "SOWK7510",
+            "name": "Cognitive-behavioural Therapy",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "HKBU-TPG-011-YOUTH-COUNSELLING",
+              "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING",
+              "HKBU-TPG-011-GENERIC-COUNSELLING"
+            ],
+            "typeByTrackIds": {
+              "HKBU-TPG-011-YOUTH-COUNSELLING": "elective",
+              "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING": "core",
+              "HKBU-TPG-011-GENERIC-COUNSELLING": "elective"
+            },
+            "requiredForTrackIds": [
+              "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING"
+            ],
+            "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-counselling-1"
+          },
+          {
+            "code": "SOWK7790",
+            "name": "Mental Health Counselling with Older People",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "HKBU-TPG-011-YOUTH-COUNSELLING",
+              "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING",
+              "HKBU-TPG-011-GENERIC-COUNSELLING"
+            ],
+            "typeByTrackIds": {
+              "HKBU-TPG-011-YOUTH-COUNSELLING": "elective",
+              "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING": "core",
+              "HKBU-TPG-011-GENERIC-COUNSELLING": "elective"
+            },
+            "requiredForTrackIds": [
+              "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING"
+            ],
+            "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-counselling-1"
+          },
+          {
+            "code": "SOWK7840",
+            "name": "Data Methodology in Social Sciences Research",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "HKBU-TPG-011-YOUTH-COUNSELLING",
+              "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING",
+              "HKBU-TPG-011-GENERIC-COUNSELLING"
+            ],
+            "typeByTrackIds": {
+              "HKBU-TPG-011-YOUTH-COUNSELLING": "elective",
+              "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING": "elective",
+              "HKBU-TPG-011-GENERIC-COUNSELLING": "elective"
+            },
+            "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-counselling-1"
+          },
+          {
+            "code": "SOWK7890",
+            "name": "Career Facilitation and Counselling",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "HKBU-TPG-011-YOUTH-COUNSELLING",
+              "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING",
+              "HKBU-TPG-011-GENERIC-COUNSELLING"
+            ],
+            "typeByTrackIds": {
+              "HKBU-TPG-011-YOUTH-COUNSELLING": "elective",
+              "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING": "elective",
+              "HKBU-TPG-011-GENERIC-COUNSELLING": "elective"
+            },
+            "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-counselling-1"
+          },
+          {
+            "code": "SOWK7900",
+            "name": "Creativity, Wellbeing and Art Therapy",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "HKBU-TPG-011-YOUTH-COUNSELLING",
+              "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING",
+              "HKBU-TPG-011-GENERIC-COUNSELLING"
+            ],
+            "typeByTrackIds": {
+              "HKBU-TPG-011-YOUTH-COUNSELLING": "elective",
+              "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING": "elective",
+              "HKBU-TPG-011-GENERIC-COUNSELLING": "elective"
+            },
+            "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-counselling-1"
+          },
+          {
+            "code": "SOWK7910",
+            "name": "Cognitive Behavior Therapy Skills Workshop",
+            "credits": 3,
+            "appliesToTrackIds": [
+              "HKBU-TPG-011-YOUTH-COUNSELLING",
+              "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING",
+              "HKBU-TPG-011-GENERIC-COUNSELLING"
+            ],
+            "typeByTrackIds": {
+              "HKBU-TPG-011-YOUTH-COUNSELLING": "elective",
+              "HKBU-TPG-011-MENTAL-HEALTH-COUNSELLING": "elective",
+              "HKBU-TPG-011-GENERIC-COUNSELLING": "elective"
+            },
+            "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-counselling-1"
+          }
+        ],
+        "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-counselling-1"
+      },
+      {
+        "id": "counselling-practicum",
+        "name": "Counselling Practicum",
+        "type": "practicum",
+        "creditsRequired": 6,
+        "coursesRequired": 2,
+        "ruleText": "Complete both 3-unit Counselling Practicum courses and the Programme's 80 direct counselling hours, related supervision and training requirements.",
+        "appliesToTrackIds": [],
+        "courses": [
+          {
+            "code": "SOWK7801",
+            "name": "Counselling Practicum I",
+            "credits": 3,
+            "courseKind": "practicum",
+            "linkedSequenceId": "SOWK780-COUNSELLING-PRACTICUM",
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7801"
+          },
+          {
+            "code": "SOWK7802",
+            "name": "Counselling Practicum II",
+            "credits": 3,
+            "courseKind": "practicum",
+            "linkedSequenceId": "SOWK780-COUNSELLING-PRACTICUM",
+            "appliesToTrackIds": [],
+            "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/SOWK7802"
+          }
+        ],
+        "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/academy-of-wellness-and-human-development-1/master-of-social-sciences-in-counselling-1"
+      }
+    ]
+  },
+  {
     "id": "HKBU-TPG-012",
     "courseGroups": [
       {

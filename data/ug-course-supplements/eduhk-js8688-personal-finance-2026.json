@@ -1,0 +1,40 @@
+{
+  "provider": "The Education University of Hong Kong 2026/27 Undergraduate Programme Course List",
+  "academicYear": "2026/27",
+  "sourceUrl": "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BA(PF).pdf",
+  "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/bapf",
+  "supplements": [
+    {
+      "universityCode": "EDUHK",
+      "programmeId": "EDUHK-UG-JS8688-21",
+      "jupasCode": "JS8688",
+      "majorId": "EDUHK-UG-JS8688-21-M1",
+      "evidenceNote": "The official 2026/27 course-list PDF publishes 23 courses with confirmed codes and titles under the Major Course List, but does not publish per-course credit points or a recommended year/semester study pattern. Credits and recommendedYear are therefore intentionally left unknown. A twenty-fourth row, Cross-Faculty Core Course Component III, still uses TBC as its course code and is intentionally omitted rather than assigned an invented code. The programme page confirms 121 cps for First Year Entry, 60 cps for Senior Year Entry, a 51-cp First Year Entry Major domain and a 6-cp Final Year Project domain, but those aggregates are not allocated to individual courses here and this supplement does not assert graduation completion.",
+      "courses": [
+        { "code": "BUS1048", "title": "Global Business Environment and Financial Markets", "courseType": "core", "group": "Major Course" },
+        { "code": "SSC1189", "title": "Introduction to Economics", "courseType": "core", "group": "Major Course" },
+        { "code": "BUS2013", "title": "Financial Accounting", "courseType": "core", "group": "Major Course" },
+        { "code": "BUS2050", "title": "Banking and Credit", "courseType": "core", "group": "Major Course" },
+        { "code": "BUS2051", "title": "Budgeting and Taxation", "courseType": "core", "group": "Major Course" },
+        { "code": "BUS3054", "title": "Household Finance and Wealth Management", "courseType": "core", "group": "Major Course" },
+        { "code": "BUS1049", "title": "Quantitative Analysis in Finance", "courseType": "core", "group": "Major Course" },
+        { "code": "BUS4059", "title": "Investment Analysis and Portfolio Management for Personal Needs", "courseType": "core", "group": "Major Course" },
+        { "code": "BUS4058", "title": "Ethics and Decision Making in Finance", "courseType": "core", "group": "Major Course" },
+        { "code": "BUS3056", "title": "Lifelong and Retirement Financial Planning", "courseType": "core", "group": "Major Course" },
+        { "code": "BUS4060", "title": "Risk Management for Investment", "courseType": "core", "group": "Major Course" },
+        { "code": "BUS3057", "title": "Sustainable Finance and ESG Investment", "courseType": "core", "group": "Major Course" },
+        { "code": "BUS3052", "title": "Financial Intervention and Counselling", "courseType": "core", "group": "Major Course" },
+        { "code": "BUS3053", "title": "Financial Technology", "courseType": "core", "group": "Major Course" },
+        { "code": "BUS3055", "title": "Internship", "courseType": "internship", "group": "Internship" },
+        { "code": "INS4084", "title": "Psychology of Money and Financial Decision Making", "courseType": "core", "group": "Major Interdisciplinary Course" },
+        { "code": "CFA1001", "title": "Cross-faculty Core Course (Component I: Basic Law and National Security Education)", "courseType": "core", "group": "Cross-Faculty Core Course · Component I" },
+        { "code": "CFB3033", "title": "Cross-faculty Core Course: Component II – Visits in Greater Bay Area", "courseType": "core", "group": "Cross-Faculty Core Course · Component II" },
+        { "code": "BUS2072", "title": "Experiencing Financial Practitioners' Workplace and Life in Shenzhen", "courseType": "core", "group": "Living and Working in Our Country" },
+        { "code": "BUS4061", "title": "Honours Project I: Research Methods and Proposal", "courseType": "capstone", "group": "Final Year Project · Honours Project path" },
+        { "code": "BUS4062", "title": "Honours Project II: Research Report", "courseType": "capstone", "group": "Final Year Project · Honours Project path" },
+        { "code": "BUS4063", "title": "Capstone Project I: Research Methods and Proposal", "courseType": "capstone", "group": "Final Year Project · Capstone Project path" },
+        { "code": "BUS4064", "title": "Capstone Project II: Project Output", "courseType": "capstone", "group": "Final Year Project · Capstone Project path" }
+      ]
+    }
+  ]
+}

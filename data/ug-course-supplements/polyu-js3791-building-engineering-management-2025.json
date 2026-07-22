@@ -1,0 +1,59 @@
+{
+  "provider": "PolyU BRE JS3791 Building Engineering and Management Scheme Book 2025/26",
+  "academicYear": "2025/26",
+  "sourceUrl": "https://www.polyu.edu.hk/bre/docdrive/32405%20BRE%20Undergraduate%20Programme%20document%20202526%20combined%20202509.pdf",
+  "officialUrl": "https://www.polyu.edu.hk/study/ug/jupas/2026/js3791",
+  "additionalSourceUrls": [
+    "https://www.polyu.edu.hk/cmi/study/undergraduate-programmes/bre-scheme-books/"
+  ],
+  "note": "The official 2026 entry page confirms the four-year BSc (Hons) in Building Engineering and Management, 120 academic credits plus 2 training credits, compulsory Work-Integrated Education and a 6-credit Capstone Project. The latest publicly linked BRE Scheme Book is for the 2025/26 cohort; its coded progression pattern is used as the course source. This supplement records all 34 unique coded subjects in that progression pattern with the published Stage and Semester. BRE299 may be completed in the Stage 1 or Stage 2 Summer Semester, BRE365 spans four semesters from Stage 3 Semester 1 through Stage 4 Semester 1, and BRE466 spans both Stage 4 semesters, so those multi-stage subjects are not forced into a single recommended year or term. Uncoded LCR, CAR, GUR and Free Elective slots are omitted. The optional Secondary Major in AI and Data Analytics has a different 146-credit requirement and is not modelled as the default BEM Major. This coded planning subset does not assert graduation completion.",
+  "supplements": [
+    {
+      "universityCode": "POLYU",
+      "programmeId": "POLYU-UG-JS3791-8",
+      "programmeCode": "JS3791",
+      "majorId": "POLYU-UG-JS3791-8-M1",
+      "majorName": "Bachelor of Science (Honours) in Building Engineering and Management",
+      "evidenceNote": "All coded subjects come from the official 2025/26 BRE progression pattern for the standard BEM Major. Generic uncoded requirement slots and the optional AIDA Secondary Major are intentionally excluded.",
+      "courses": [
+        { "code": "MM1031", "title": "Introduction to Innovation and Entrepreneurship", "credits": 1, "year": 1, "semester": "Semester 1", "courseType": "core", "group": "Stage 1 coded progression subject" },
+        { "code": "CE1001", "title": "Construction and Environmental Professionals in Society", "credits": 3, "year": 1, "semester": "Semester 1", "courseType": "core", "group": "Stage 1 Faculty compulsory subject" },
+        { "code": "AMA1140", "title": "Mathematics for Construction and Environment", "credits": 3, "year": 1, "semester": "Semester 1", "courseType": "foundation", "group": "Stage 1 Faculty Compulsory 1" },
+        { "code": "APSS1L01", "title": "Leadership & Intra-Personal Development - Tomorrow's Leaders", "credits": 3, "year": 1, "semester": "Semester 1", "courseType": "core", "group": "Stage 1 General University Requirement" },
+        { "code": "CE1002", "title": "Introduction to AI and Data Analytics for Construction and Environment", "credits": 2, "year": 1, "semester": "Semester 2", "courseType": "core", "group": "Stage 1 Faculty compulsory subject with General University Requirement" },
+        { "code": "AP10001", "title": "Introduction to Physics", "credits": 3, "year": 1, "semester": "Semester 2", "courseType": "foundation", "group": "Stage 1 Faculty Compulsory 2 with CAR D" },
+        { "code": "BRE299", "title": "Work-Integrated Education (WIE)", "credits": 2, "semester": "Stage 1 or Stage 2 Summer Semester", "courseType": "internship", "group": "Compulsory Work-Integrated Education · 2 training credits" },
+
+        { "code": "ELC3421", "title": "English for Construction & Environmental Professionals", "credits": 3, "year": 2, "semester": "Semester 1", "courseType": "core", "group": "Stage 2 coded progression subject" },
+        { "code": "BRE350", "title": "Project Management & Procurement", "credits": 3, "year": 2, "semester": "Semester 1", "courseType": "core", "group": "Stage 2 coded progression subject" },
+        { "code": "CSE20290", "title": "Introduction to Geotechnology", "credits": 3, "year": 2, "semester": "Semester 1", "courseType": "core", "group": "Stage 2 coded progression subject" },
+        { "code": "BRE258", "title": "Industrial Safety I", "credits": 1, "year": 2, "semester": "Semester 1", "courseType": "core", "group": "Stage 2 safety subject" },
+        { "code": "BRE2031", "title": "Environmental Science", "credits": 3, "year": 2, "semester": "Semester 1", "courseType": "core", "group": "Stage 2 coded progression subject" },
+        { "code": "BRE263", "title": "Construction Economics & Finance", "credits": 3, "year": 2, "semester": "Semester 1", "courseType": "core", "group": "Stage 2 coded progression subject" },
+        { "code": "AMA290", "title": "Engineering Mathematics", "credits": 3, "year": 2, "semester": "Semester 2", "courseType": "foundation", "group": "Stage 2 coded progression subject" },
+        { "code": "BRE262", "title": "Project Studio", "credits": 3, "year": 2, "semester": "Semester 2", "courseType": "project", "group": "Stage 2 coded progression subject" },
+        { "code": "LSGI2961", "title": "Engineering Surveying", "credits": 3, "year": 2, "semester": "Semester 2", "courseType": "core", "group": "Stage 2 coded progression subject" },
+        { "code": "BRE349", "title": "Building Services I", "credits": 3, "year": 2, "semester": "Semester 2", "courseType": "core", "group": "Stage 2 coded progression subject" },
+        { "code": "BRE265", "title": "Introductory Construction Technology & Materials", "credits": 3, "year": 2, "semester": "Semester 2", "courseType": "core", "group": "Stage 2 coded progression subject" },
+
+        { "code": "BRE204", "title": "Structure I", "credits": 3, "year": 3, "semester": "Semester 1", "courseType": "core", "group": "Stage 3 coded progression subject" },
+        { "code": "BRE365", "title": "International Study", "credits": 1, "semester": "Stage 3 Semester 1 / Semester 2 / Summer Semester; Stage 4 Semester 1", "courseType": "core", "group": "Core subject spanning four semesters" },
+        { "code": "BRE366", "title": "Analytical Skills & Methods", "credits": 2, "year": 3, "semester": "Semester 1", "courseType": "core", "group": "Stage 3 coded progression subject" },
+        { "code": "BRE370", "title": "Intermediate Construction Technology & Materials", "credits": 3, "year": 3, "semester": "Semester 1", "courseType": "core", "group": "Stage 3 coded progression subject" },
+        { "code": "BRE472", "title": "Information Technology & Building Information Modelling for Construction Management", "credits": 3, "year": 3, "semester": "Semester 1", "courseType": "core", "group": "Stage 3 coded progression subject" },
+        { "code": "BRE302", "title": "Structure II", "credits": 3, "year": 3, "semester": "Semester 2", "courseType": "core", "group": "Stage 3 coded progression subject" },
+        { "code": "BRE3261", "title": "Building Maintenance Planning and Technology", "credits": 2, "year": 3, "semester": "Semester 2", "courseType": "core", "group": "Stage 3 coded progression subject" },
+        { "code": "BRE345", "title": "Measurement, Documentation & Estimating", "credits": 3, "year": 3, "semester": "Semester 2", "courseType": "core", "group": "Stage 3 coded progression subject" },
+        { "code": "BRE364", "title": "Construction Contract Law & Administration", "credits": 3, "year": 3, "semester": "Semester 2", "courseType": "core", "group": "Stage 3 coded progression subject" },
+
+        { "code": "BRE4393", "title": "Temporary Work Design", "credits": 3, "year": 4, "semester": "Semester 1 / Semester 2", "courseType": "core", "group": "Stage 4 subject split into two 1.5-credit semester components" },
+        { "code": "BRE453", "title": "Building Services II", "credits": 3, "year": 4, "semester": "Semester 1", "courseType": "core", "group": "Stage 4 coded progression subject" },
+        { "code": "BRE461", "title": "Environmental Impact & Assessment", "credits": 3, "year": 4, "semester": "Semester 1", "courseType": "core", "group": "Stage 4 coded progression subject" },
+        { "code": "BRE462", "title": "Advanced Construction Technology", "credits": 3, "year": 4, "semester": "Semester 1", "courseType": "core", "group": "Stage 4 coded progression subject" },
+        { "code": "BRE466", "title": "Capstone Project", "credits": 6, "year": 4, "semester": "Semester 1 / Semester 2", "courseType": "capstone", "group": "Stage 4 compulsory capstone spanning two semesters" },
+        { "code": "BRE426", "title": "Geotechnical & Foundation Engineering", "credits": 3, "year": 4, "semester": "Semester 2", "courseType": "core", "group": "Stage 4 coded progression subject" },
+        { "code": "BRE4281", "title": "Construction Engineering Management", "credits": 3, "year": 4, "semester": "Semester 2", "courseType": "core", "group": "Stage 4 coded progression subject" }
+      ]
+    }
+  ]
+}

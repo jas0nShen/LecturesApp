@@ -1,0 +1,81 @@
+{
+  "provider": "City University of Hong Kong Materials Science and Engineering Curriculum Information Records",
+  "academicYear": "2026/27",
+  "sourceUrl": "https://www.cityu.edu.hk/mse/-/media/project/cityuhk/academic/mse/current-students/undergraduate/major/1-cir-for-majormase_cohort-202526-9-may-2025_250627.pdf?rev=668bdf7c0bc444ca9fa48adf3c5d165b&hash=0741439235EB0570079D41FFC6F5050D",
+  "officialUrl": "https://www.cityu.edu.hk/en/mse/current-students/undergraduate/major",
+  "supplements": [
+    {
+      "universityCode": "CITYU",
+      "programmeId": "CITYU-UG-BENGMASE-47",
+      "jupasCode": "JS1210",
+      "majorId": "CITYU-UG-BENGMASE-47-M1",
+      "majorOverride": {
+        "expectedMajorIds": [
+          "CITYU-UG-BENGMASE-47-M1",
+          "CITYU-UG-BENGMASE-47-M2",
+          "CITYU-UG-BENGMASE-47-M3",
+          "CITYU-UG-BENGMASE-47-M4",
+          "CITYU-UG-BENGMASE-47-M5"
+        ],
+        "id": "CITYU-UG-BENGMASE-47-M1",
+        "code": "MATERIALS-SCIENCE-AND-ENGINEERING",
+        "nameEn": "Materials Science and Engineering"
+      },
+      "evidenceNote": "The official Major and Common Requirements CIRs apply from Semester A 2025/26 and thereafter, so they directly cover the 2026/27 cohort. They publish a 121-credit normative structure: 31 Gateway Education, 6 College Requirement, 60 Major Core, 12 Major Elective and 12 Free Elective/Minor credits. This supplement includes every explicitly coded common, college, Major Core, capstone-path and Major Elective option. Distributional Gateway Education and free-elective choices are omitted because the CIR defines them by area rather than a fixed programme-specific code pool. The department has not published a 2026/27 Recommended Study Plan, so recommendedYear and semester remain unknown; official B1-B4 course levels are not converted into study years. The formal Common Requirements CIR identifies MSE2066 Materials Engineers in Society, which is used instead of the conflicting MSE2006 code on the admissions summary page. The five generated marketing-feature pseudo-Majors are consolidated into the single official Materials Science and Engineering Major.",
+      "courses": [
+        { "code": "GE1401", "title": "University English", "credits": 3, "courseType": "foundation", "group": "Gateway Education - University English" },
+        { "code": "GE2410", "title": "English for Engineering", "credits": 3, "courseType": "foundation", "group": "Gateway Education - Discipline-specific English" },
+        { "code": "GE1501", "title": "Chinese Civilisation - History and Philosophy", "credits": 3, "courseType": "foundation", "group": "Gateway Education - Chinese Civilisation" },
+        { "code": "GE1601", "title": "Whole-Person Development", "credits": 1, "courseType": "foundation", "group": "Gateway Education - Whole-Person Development" },
+        { "code": "MA1200", "title": "Calculus and Basic Linear Algebra I", "credits": 3, "courseType": "foundation", "group": "Gateway Education - College-specified mathematics choice I" },
+        { "code": "MA1300", "title": "Enhanced Calculus and Linear Algebra I", "credits": 3, "courseType": "foundation", "group": "Gateway Education - College-specified mathematics choice I" },
+        { "code": "MA1201", "title": "Calculus and Basic Linear Algebra II", "credits": 3, "courseType": "foundation", "group": "Gateway Education - College-specified mathematics choice II" },
+        { "code": "MA1301", "title": "Enhanced Calculus and Linear Algebra II", "credits": 3, "courseType": "foundation", "group": "Gateway Education - College-specified mathematics choice II" },
+        { "code": "MSE2066", "title": "Materials Engineers in Society", "credits": 3, "courseType": "foundation", "group": "Gateway Education - College-specified course" },
+        { "code": "PHY1201", "title": "General Physics I", "credits": 3, "courseType": "foundation", "group": "College Requirement" },
+        { "code": "CHEM1300", "title": "Principles of General Chemistry", "credits": 3, "courseType": "foundation", "group": "College Requirement" },
+
+        { "code": "CS1302", "title": "Introduction to Computer Programming", "credits": 3, "courseType": "core", "group": "Major Core - 60 credits required" },
+        { "code": "PHY1202", "title": "General Physics II", "credits": 3, "courseType": "core", "group": "Major Core - 60 credits required" },
+        { "code": "MSE1001", "title": "Programme Induction", "credits": 0, "courseType": "core", "group": "Major Core - compulsory zero-credit course" },
+        { "code": "MSE2102", "title": "Introduction to Materials Science and Engineering", "credits": 3, "courseType": "core", "group": "Major Core - 60 credits required" },
+        { "code": "MSE2104", "title": "Mechanical Behaviour of Materials", "credits": 3, "courseType": "core", "group": "Major Core - 60 credits required" },
+        { "code": "MSE2106", "title": "Quantum Properties of Materials", "credits": 3, "courseType": "core", "group": "Major Core - 60 credits required" },
+        { "code": "MSE2107", "title": "Measurement Theory and Application", "credits": 3, "courseType": "core", "group": "Major Core - 60 credits required" },
+        { "code": "MSE2108", "title": "Materials Chemistry", "credits": 3, "courseType": "core", "group": "Major Core - 60 credits required" },
+        { "code": "MSE2109", "title": "Bonding and Structure of Materials", "credits": 3, "courseType": "core", "group": "Major Core - 60 credits required" },
+        { "code": "MSE2243", "title": "Workshop Practice", "credits": 3, "courseType": "core", "group": "Major Core - 60 credits required" },
+        { "code": "MSE3110", "title": "Deformation and Fracture", "credits": 3, "courseType": "core", "group": "Major Core - 60 credits required" },
+        { "code": "MSE3113", "title": "Soft Materials", "credits": 3, "courseType": "core", "group": "Major Core - 60 credits required" },
+        { "code": "MSE3114", "title": "Fundamentals of Scientific Computing: a Course Powered by AI", "credits": 3, "courseType": "core", "group": "Major Core - 60 credits required" },
+        { "code": "MSE3171", "title": "Materials Characterization", "credits": 3, "courseType": "core", "group": "Major Core - 60 credits required" },
+        { "code": "MSE3172", "title": "Electronic Properties of Solids", "credits": 3, "courseType": "core", "group": "Major Core - 60 credits required" },
+        { "code": "MSE3190", "title": "Thermodynamics of Materials", "credits": 3, "courseType": "core", "group": "Major Core - 60 credits required" },
+        { "code": "MSE3195", "title": "Kinetics and Phase Transformations", "credits": 3, "courseType": "core", "group": "Major Core - 60 credits required" },
+        { "code": "MSE3244", "title": "Design Laboratory", "credits": 3, "courseType": "core", "group": "Major Core - 60 credits required" },
+        { "code": "MA2001", "title": "Multi-variable Calculus and Linear Algebra", "credits": 3, "courseType": "core", "group": "Major Core - mathematics choice" },
+        { "code": "MA2158", "title": "Linear Algebra and Calculus", "credits": 3, "courseType": "core", "group": "Major Core - mathematics choice" },
+        { "code": "MA2181", "title": "Mathematical Methods for Engineering", "credits": 3, "courseType": "core", "group": "Major Core - mathematics choice" },
+        { "code": "MSE4116", "title": "Dissertation", "credits": 6, "courseType": "capstone", "group": "Major Core - 6-credit capstone completion path choice" },
+        { "code": "FS4003", "title": "CES Placement Project", "credits": 6, "courseType": "capstone", "group": "Major Core - 6-credit capstone completion path choice" },
+
+        { "code": "MA2172", "title": "Applied Statistics for Sciences and Engineering", "credits": 3, "courseType": "major_elective", "group": "Major Elective - 12 credits required" },
+        { "code": "MA2177", "title": "Engineering Mathematics and Statistics", "credits": 3, "courseType": "major_elective", "group": "Major Elective - 12 credits required" },
+        { "code": "MSE3111", "title": "Ceramic Materials", "credits": 3, "courseType": "major_elective", "group": "Major Elective - 12 credits required" },
+        { "code": "MSE3130", "title": "Biomaterials", "credits": 3, "courseType": "major_elective", "group": "Major Elective - 12 credits required" },
+        { "code": "MSE4121", "title": "Thin Films", "credits": 3, "courseType": "major_elective", "group": "Major Elective - 12 credits required" },
+        { "code": "MSE4170", "title": "Corrosion and Protection of Materials", "credits": 3, "courseType": "major_elective", "group": "Major Elective - 12 credits required" },
+        { "code": "MSE4118", "title": "Composites", "credits": 3, "courseType": "major_elective", "group": "Major Elective - 12 credits required" },
+        { "code": "MSE4119", "title": "Modeling Materials: a Course Powered by AI", "credits": 3, "courseType": "major_elective", "group": "Major Elective - 12 credits required" },
+        { "code": "MSE4124", "title": "Failure Analysis and Case Studies", "credits": 3, "courseType": "major_elective", "group": "Major Elective - 12 credits required" },
+        { "code": "MSE4178", "title": "Nanostructures & Nanotechnology", "credits": 3, "courseType": "major_elective", "group": "Major Elective - 12 credits required" },
+        { "code": "MSE4179", "title": "Advanced Materials Characterization and its Industrial Applications", "credits": 3, "courseType": "major_elective", "group": "Major Elective - 12 credits required" },
+        { "code": "MSE4307", "title": "Building Materials", "credits": 3, "courseType": "major_elective", "group": "Major Elective - 12 credits required" },
+        { "code": "MSE4714", "title": "Special Topics in Materials Science and Engineering I", "credits": 3, "courseType": "major_elective", "group": "Major Elective - 12 credits required" },
+        { "code": "MSE4715", "title": "Special Topics in Materials Science and Engineering II", "credits": 3, "courseType": "major_elective", "group": "Major Elective - 12 credits required" },
+        { "code": "FS4002", "title": "Industrial Attachment Scheme", "credits": 3, "courseType": "internship", "group": "Major Elective - 12 credits required" },
+        { "code": "FS4005", "title": "Overseas Internship Scheme", "credits": 3, "courseType": "internship", "group": "Major Elective - 12 credits required" }
+      ]
+    }
+  ]
+}
