@@ -1,6 +1,6 @@
 # Codex 项目交接
 
-最后核验时间：2026-07-22（Asia/Shanghai）
+最后核验时间：2026-07-24（Asia/Shanghai）
 
 ## 当前项目目标
 
@@ -8,25 +8,27 @@
 
 当前产品边界是：先保证离线发布、数据可追溯和规则不误导，再继续补课程覆盖与规划能力。未经明确产品决定，不引入登录、云同步、统计、敏感权限或生产 API。
 
-当前仓库发布资料已统一为 `1.0.10`（`package.json`、运行时 `releaseInfo`、`docs/MVP_SPEC.md`、`docs/RELEASE_CHECKLIST.md`、`docs/REVIEW_SUBMISSION.md`）。微信开发者工具官方 CLI 已上传 `1.0.10`；没有提交审核或发布正式版。
+当前仓库发布资料已统一为 `1.0.11`（`package.json`、运行时 `releaseInfo`、`docs/MVP_SPEC.md`、`docs/RELEASE_CHECKLIST.md`、`docs/REVIEW_SUBMISSION.md`）。用户已在本机手动上传微信 `1.0.11`；没有提交审核或发布正式版。
 
 ## 可验证的仓库快照
 
 - 工作目录：`/Users/shenjingsong/Documents/develop/lecturesApp`
 - 分支：`main`
-- 1.0.10 已将 Programme 搜索结果改为展示全部匹配项，并在固定高度区域内滚动选择，UG/TPG 均覆盖；同时补充多校 UG/TPG 课程并新增 EdUHK UG 分包。
-- 本批课程、搜索体验和 `1.0.10` 版本资料已由提交 `b0bff29 Release 1.0.10 with expanded curricula and search improvements` 提交并推送。
-- 包版本：`1.0.10`
+- 1.0.11 已补充多校 UG/TPG 官方来源课程、拆分 HKUST UG 双分包，并允许规则待复核 Programme 只读浏览已核验课程；同时修复 `audit.wxml` 微信编译问题。
+- 本批课程、只读浏览、HKUST 双分包、编译修复和 `1.0.11` 版本资料已由提交 `2d7aff5 Release 1.0.11 with expanded verified curricula` 提交并推送。
+- 包版本：`1.0.11`
 - `main` 与 `origin/main` 的提交同步；本批 source supplements、生成 catalogue/shards/分包、版本资料和测试均已推送。
 - 本批依据 HKU 官方 2025-26 BSocSc Regulations and Syllabuses，开放 `6717 Bachelor of Social Sciences` 的 5 个 First Major 与 7 个 Second Major，共 687 条 Major-local 课程。Geospatial Data Science 因官方仍含 `GEOG4xxx` 占位且待批而不发布；`6705 Bachelor of Psychology` 因当前学年没有可核验的 coded curriculum 继续仅索引。
 - 旧单一 `ug-data-hku`、`ug-data-hkbu` 已由生成脚本分别替换为 `ug-data-hku-a` / `ug-data-hku-b`、`ug-data-hkbu-a` / `ug-data-hkbu-b`。这些删除与新增是既有分包拆分结果，不要手工恢复旧 loader。
 
-- 本批改动已提交、推送并以 `1.0.10` 上传；`git diff --check` 通过。
+- 本批改动已提交、推送并由用户在本机手动上传为微信 `1.0.11`；`git diff --check` 通过。手动上传的实际备注、总包和主包数值未在本交接中推断。
 - `.playwright-cli/` 为 96 KB 的本地浏览器诊断产物，共有 console log 和 page YAML；本次没有删除、覆盖或暂存。
 
 最近关键提交（本次交接提交前）：
 
 ```text
+2d7aff5 Release 1.0.11 with expanded verified curricula
+92d43b7 Document 1.0.10 upload
 b0bff29 Release 1.0.10 with expanded curricula and search improvements
 9ebd7f7 Document 1.0.9 upload
 0a9c817 Release 1.0.9 with HKU social sciences curricula
@@ -83,11 +85,11 @@ df91815 Add PolyU Design curriculum and source evidence
 
 ### 数据与规则覆盖
 
-2026-07-22 重新运行发布门禁所得当前值：
+2026-07-24 重新核对当前发布摘要所得当前值：
 
 - TPG：8 所学校、448 个 Programme，全部 448 个已完成来源审查，来源覆盖率 100%。
-- TPG：342 个 Programme 有课程结构，Programme-local 课程共 8,985 门。
-- TPG 状态：105 个 `blocked`、1 个 `archived`、0 个 `unreviewed`。
+- TPG：346 个 Programme 已开放课程组，Programme-local 课程共 9,057 门。
+- TPG 状态：101 个 `blocked`、1 个 `archived`、0 个 `unreviewed`。
 - HKU：62/62 已审查，58 个 `verified`、4 个 `blocked`、2,598 门 Programme-local 课程。
 - PolyU：105/105 已审查，54 个已核验课程结构、51 个来源阻塞、1,334 门课程。
 - HKBU：48/48 已审查，45 个已核验课程结构、3 个来源阻塞、1,248 门课程。
@@ -121,7 +123,7 @@ df91815 Add PolyU Design curriculum and source evidence
 - PolyU `POLYU-TPG-074 Master of Science in Advanced Physiotherapy` 继续 `blocked`：同一 Programme 的 2026/27 官方页面明确 `RS567 Project Study` 为 6 credits，但 2027/28 Programme 页面、现行 2026-or-after Curriculum 图和 v14 leaflet 都未重申代码，且没有公开的当前 51069 PRD/SDF；不跨学年搬运 `RS567`。
 - PolyU `POLYU-TPG-011 Master of Science in Low-altitude Economy` 继续 `blocked`：2027 Programme 页面已闭合 8 门 Core、7 门 Elective 和两条 31-credit 路径，但官方 PRD、当前 AAE Subject List 及 2026/27 leaflet 均未发布 9-credit Dissertation 的课程代码；不从其他 Programme 类推 Dissertation code。
 - 已补充 HKU `HKU-TPG-055 Master of Public Administration` 当前 60-credit 结构：4 门 Compulsory 共 24 credits、24 门内部 Elective 通常选 4 门共 24 credits，以及 12-credit `POLI8012 Dissertation` / `POLI8028 Capstone project` 二选一，共 30 个唯一代码。正式 Regulations 与专用 Course Descriptions 均确认 `POLI8032` 为 6 credits；最多 6 credits 的获批 MIPA 替代及完成路径继续标记 `manual_review_required`。
-- UG：8 所学校、444 个 Programme、215 个 Programme 已开放课程清单，Programme/Major-local 带代码课程共 14,576 条；本批新增 EdUHK UG 分包。
+- UG：8 所学校、444 个 Programme、677 个 Major/Track、Programme/Major-local 带代码课程共 16,203 条；本批拆分 HKUST UG 双分包。
 - 已补充 HKU `6717 Bachelor of Social Sciences` 官方 2025-26 syllabus 中可核验的 12 个 Major、687 条 Major-local 课程：First Major 为 Computational Social Science、Geography、Politics and Public Administration、Social Policy and Social Development、Sociology；Second Major 为 Cognitive Science、Counselling、Criminology、Media and Cultural Studies、Neuroscience、Psychology、Urban Governance。`POLI3154` 以 HKU PPA 官方课程页确认 6 credits；Geospatial Data Science 因 `GEOG4xxx` 占位和待批状态未发布。
 - 已补充 CityU `JS1109 BA Linguistics and Language Applications` 当前 2026/27 课程结构：唯一正式 Major 下 40 门唯一代码，11 门 Core 共 33 credits、29 门 Major Elective 候选池（选 24 credits，至少 12 credits 为 B4 level），全部课程 3 credits。上游 JUPAS 标题中的五项 Features 不再被伪建成五个 Major；`LT4235` 按当前 Catalogue 保持 Core，不纳入旧 2025/26 pool 的 `LT4391`，也不从旧 Suggested Study Plan 搬运 Year/Term。
 - 已补充 CityU `JS1102 BSocSc International Relations and Global Affairs` 当前 2026/27 课程结构：唯一正式 Major 下 53 个唯一代码，18 门 Core 共 51 credits（含 0-credit `PIA3812` International Experience）及 35 门 Major Elective 候选池（选 12 credits）。Asian Studies、International Studies、Development Studies 分别是 24、21、13 门的重叠 Stream 子集，不再伪建成三个 Major；`PIA3810/3810J/3810K` 的最终 Stream award 由 Major leader 决定，未自动推断。
@@ -192,7 +194,7 @@ df91815 Add PolyU Design curriculum and source evidence
 - Git 提交 `361ee05` 已包含 `1.0.6` 版本资料、冷分包 loader 返回兜底、8 个生成 loader 和回归测试。
 - Git 提交 `d39634d` 已包含本科可编辑排期、UG 双分包加载修复、微信基础库兼容、测试及 `1.0.7` 版本资料。
 - Git 提交 `d03f7b3` 已包含本科已修状态、Study Plan 状态统计与复制、首页入口序号修复、测试及更新后的 `1.0.7` 发布资料。
-- 本地 `main` 与本地远端跟踪引用 `origin/main` 同步；提交 `b0bff29` 已包含 Programme 搜索体验优化、多校 UG/TPG 课程补充、新增 EdUHK UG 分包与 `1.0.10` 版本资料。
+- 本地 `main` 与本地远端跟踪引用 `origin/main` 同步；提交 `2d7aff5` 已包含多校 UG/TPG 课程补充、规则待复核 Programme 只读课程浏览、HKUST UG 双分包、`audit.wxml` 编译修复及 `1.0.11` 版本资料。
 - 微信开发者工具已显示最新 `1.0.5` 代码上传成功，更新类型为“修订补丁”，备注为 `1.0.5: Add TPG course planning`。
 - 2026-07-17 已通过微信开发者工具官方 CLI 上传 `1.0.6`，备注为 `1.0.6: Add TPG course planning and reliable loaders`，命令返回 `✔ upload`；上传包 8.6 MB，主包 1.4 MB，所有分包低于 2 MB。
 - 2026-07-18 已通过微信开发者工具官方 CLI 上传 `1.0.7`，备注为 `1.0.7: Add editable UG course planning`，命令返回 `✔ upload`；实际上传包 8.6 MB，主包 1.4 MB，所有分包低于 2 MB。
@@ -202,7 +204,8 @@ df91815 Add PolyU Design curriculum and source evidence
 - 2026-07-20 已用 CityU UG JS1113 Social Work 与 HKU TPG Master of Public Administration 课程数据重新上传同版本 `1.0.8`，备注为 `1.0.8: Add CityU Social Work and HKU MPA curricula`，命令返回 `✔ upload`；本次上传覆盖此前 1.0.8 开发版，实际上传包 12,591,430 bytes、主包 1,461,460 bytes，所有 19 个分包低于 2 MB。
 - 2026-07-21 已通过微信开发者工具官方 CLI 上传 `1.0.9`，备注为 `1.0.9: Add HKU Social Sciences curricula`，命令返回 `✔ upload`；实际上传包 13,077,986 bytes、主包 1,462,512 bytes，所有 19 个分包低于 2 MB。首次尝试因登录过期返回 code 10，使用官方 `cli login` 扫码重新登录后上传成功。
 - 2026-07-22 已通过微信开发者工具官方 CLI 上传 `1.0.10`，备注为 `1.0.10: Improve programme search and expand curricula`，命令返回 `✔ upload`；实际上传包 14,033,865 bytes、主包 1,468,887 bytes，所有 20 个分包低于 2 MB。
-- 当前课程补充重新运行完整检查：788/788 测试通过、`ready=true`、主包预估 1,824,971 bytes，所有分包低于 2 MB。
+- 2026-07-24 用户确认已在本机手动上传微信 `1.0.11`。本次没有由 Codex 获得 CLI 输出，因此不记录未经提供的实际备注或实际上传包体；该状态不等于已提交审核或已发布。
+- 1.0.11 发布代码完整检查：892/892 测试通过、`ready=true`、主包预估 1,834,184 bytes，所有 21 个 UG/TPG 分包均低于 2 MB，敏感 API 为 0。
 - 微信开发者工具确认 PolyU Computer Science 可加载 83 门课程，首页入口序号为 `01 / 02 / 03 / 04`；模拟器测试结束后已恢复原 Architectural Studies 资料，`plannedUgCourseKeys`、`ugCoursePlanAssignments`、`completedUgCourseKeys` 均为空。
 - 微信官方 automation 已完成普通 `POLYU-TPG-090` 闭环：36 门课程、`COMP5521` 加入计划、列表状态、官方分组、标记已修、复制与移除均通过。
 - 多 Track `HKU-TPG-031` 验收通过：Generalist 计 1 门，Chinese Language Education 计 2 门；两条记录均保留，旧 Track 课程不计入 Generalist 当前统计。
@@ -214,13 +217,13 @@ df91815 Add PolyU Design curriculum and source evidence
 ### 最具体的数据缺口
 
 - 八校 TPG 已达到 100% source reviewed；没有剩余 `unreviewed` Programme。
-- 仍有 105 个 Programme 因官方公开来源缺代码、学分、Track 归属、最终审批或规则冲突而标记 `blocked`。除非出现新的官方证据，不应把它们当作待猜测补全项。
-- UG 来源覆盖报告仍有 229 个缺口：110 个 index-only、19 个 reviewed-no-codes、100 个 no-source；运行时轻量目录按 Programme 口径同样显示 229 个待开放项。下一批继续从官方课程手册或部门课程页取证，不从 Programme 简介反推代码或规则。
+- 仍有 101 个 Programme 因官方公开来源缺代码、学分、Track 归属、最终审批或规则冲突而标记 `blocked`。除非出现新的官方证据，不应把它们当作待猜测补全项。
+- UG 来源覆盖报告仍有 198 个缺口：82 个 index-only、18 个 reviewed-no-codes、98 个 no-source。下一批继续从官方课程手册或部门课程页取证，不从 Programme 简介反推代码或规则。
 - 多个已核验 TPG Programme 仍标记 `manual_review_required`，表示课程池可发布，但复杂路径/跨组最低要求不能由当前规则引擎自动证明。
 
 ### 发布与验收缺口
 
-- 仓库版本资料和微信已上传代码均为 `1.0.10`；上传不等于已提交审核。
+- 仓库版本资料和微信已上传代码均为 `1.0.11`；上传不等于已提交审核。
 - `docs/RELEASE_CHECKLIST.md` 的 iOS/Android 真机矩阵没有完成记录。
 - 微信后台隐私声明、服务类目、备案、审核材料核对尚未在仓库中记录为完成。
 - 尚未提交微信审核，也没有发布正式版。
@@ -241,7 +244,7 @@ npm run status:tpg-courses -- --school=HKU
 然后按以下顺序继续：
 
 1. 保留 `.playwright-cli/`；不要 reset、checkout、clean 或 stash 后遗忘。
-2. 1.0.10 包含 Programme 搜索结果完整滚动选择、多校 UG/TPG 课程补充、新增 EdUHK UG 分包及相关测试。不要把 `.playwright-cli/` 纳入提交。
+2. 1.0.11 包含多校 UG/TPG 课程补充、规则待复核 Programme 只读课程浏览、HKUST UG 双分包、`audit.wxml` 编译修复及相关测试。不要把 `.playwright-cli/` 纳入提交。
 3. 如继续处理 `blocked` TPG，只在获得新的官方证据时更新对应 supplement；不要根据相似 Programme、旧学年或算术推断补全课程。
 4. 每批 TPG 来源变更执行：
 
@@ -253,7 +256,7 @@ npm run check:ship
 git diff --check
 ```
 
-5. 若继续 `1.0.10` 提审，先完成 iOS/Android 真机矩阵；通过后才提交审核。上传、提交审核和发布是三个独立外部动作，均需用户明确授权。
+5. 若继续 `1.0.11` 提审，先完成 iOS/Android 真机矩阵；通过后才提交审核。上传、提交审核和发布是三个独立外部动作，均需用户明确授权。
 6. 若转入 UG 补数，先运行：
 
 ```bash
@@ -331,7 +334,7 @@ npm run status:ug-sources -- --missing-only --priority launch --missing-limit 10
 
 ## 当前工作区
 
-本批 Programme 搜索体验优化、多校 UG/TPG 课程补充、`1.0.10` 版本资料和代码提交均已推送；当前工作区除本交接记录外仅保留：
+本批多校 UG/TPG 课程补充、规则待复核 Programme 只读课程浏览、HKUST UG 双分包、微信编译修复和 `1.0.11` 版本资料均已提交并推送；当前工作区除本交接记录外仅保留：
 
 ```text
 ?? .playwright-cli/
@@ -341,31 +344,32 @@ npm run status:ug-sources -- --missing-only --priority launch --missing-limit 10
 
 ## 已运行的测试及结果
 
-2026-07-22 在当前课程补充工作区上重新运行：
+2026-07-24 在提交 `2d7aff5` 和本交接文档工作区上重新运行：
 
 ```text
 npm run check:ship: PASS
   check:ug-sync: PASS
   check:tpg-directory-sync: PASS
-  check:tpg-course-sync: PASS (245 files, 448 Programmes)
-  check:tpg-catalog-sync: PASS (8 schools, 448 Programmes, 8 packages, 342 course structures)
+  check:tpg-course-sync: PASS (250 files, 448 Programmes)
+  check:tpg-catalog-sync: PASS (8 schools, 448 Programmes, 8 packages, 347 browsable course structures)
   seed/data validation: PASS
   UG supplement validation: PASS
   directory audit: PASS, blockingErrors=[]
   server --check: PASS
-  Node tests: PASS, 788/788
+  Node tests: PASS, 892/892
   check:release: PASS, ready=true
 
 git diff --check: PASS
 npm run status:tpg-courses -- --school=HKU: PASS (448/448 reviewed, 0 unreviewed)
-npm run status:ug-sources -- --missing-only --missing-summary --missing-limit 3: PASS (229 Programme-level source gaps: 110 index-only, 19 reviewed-no-codes, 100 no-source; runtime pending 229)
+npm run status:ug-sources -- --missing-only --missing-summary --missing-limit 3: PASS (198 Programme-level source gaps: 82 index-only, 18 reviewed-no-codes, 98 no-source)
 ```
 
 发布指标：
 
-- 主包预估：1,824,971 bytes；微信 CLI 实际上传主包：1,468,887 bytes。
-- 微信 CLI 实际上传总包：14,033,865 bytes。
-- 所有 20 个 UG/TPG 分包低于 2 MB。
+- 主包预估：1,834,184 bytes。
+- 总估算包体：19,571,214 bytes，191 个上传文件。
+- 手动上传的实际总包与主包数值未记录，不沿用 1.0.10 的 CLI 数值。
+- 所有 21 个 UG/TPG 分包低于 2 MB。
 - 页面：17；敏感 API：0。
 - release warnings 仅为人工微信后台检查尚需完成，以及未配置生产 HTTPS（体验/正式版按设计离线）。
 
@@ -373,7 +377,7 @@ npm run status:ug-sources -- --missing-only --missing-summary --missing-limit 3:
 
 ## 已知问题、风险和不要做的事情
 
-- 微信已上传 `1.0.10`，但不要把上传成功当作已提审或已发布。
+- 微信已由用户手动上传 `1.0.11`，但不要把上传成功当作已提审或已发布。
 - 不要把“上传成功”写成“已提审”或“已发布”。这两个外部动作尚未执行。
 - 不要删除或提交 `.playwright-cli/`，除非用户明确决定如何处理该诊断目录。
 - 不要手改生成的 catalogue、course shard 或 loader；从 source/supplement 和 builder 修改后重新生成。
