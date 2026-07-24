@@ -9,6 +9,8 @@ Page({
     statusTitle: '',
     statusCopy: '',
     hasCourseGroups: false,
+    courseStructureOpen: false,
+    isCourseListOnly: false,
     courseCount: 0,
     courseGroups: [],
     creditsRequired: 0,
@@ -48,6 +50,8 @@ Page({
       programme,
       university,
       hasCourseGroups: status.hasCourseGroups,
+      courseStructureOpen: status.isComplete,
+      isCourseListOnly: status.isCourseListOnly,
       courseCount: courseGroups.reduce((sum, group) => sum + group.courses.length, 0),
       courseGroups,
       creditsRequired: tpgService.getCreditsRequired(programme, trackId),
@@ -104,7 +108,9 @@ Page({
       selectedTrack: trackId ? tpgService.getTrack(programme.id, trackId) : null,
       trackSelectionRequired: tpgService.listTracks(programme).length > 0 && !programme.trackSelectionOptional,
       tpgPlanningSupported,
-      tpgPlanningReason
+      tpgPlanningReason,
+      courseStructureOpen: status.isComplete,
+      isCourseListOnly: status.isCourseListOnly
     });
   },
 

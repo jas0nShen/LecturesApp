@@ -3,6 +3,7 @@ const tpgService = require('../../utils/tpgService');
 const ugService = require('../../utils/ugService');
 
 function buildTpgAudit(programme, university, trackId = '') {
+  const status = tpgService.getStatus(programme);
   const groups = tpgService.resolveCourseGroups(programme, trackId).map((group, groupIndex) => ({
     ...group,
     courses: (group.courses || []).map((course, courseIndex) => ({
@@ -10,12 +11,14 @@ function buildTpgAudit(programme, university, trackId = '') {
       rowKey: `${groupIndex}-${course.code}-${courseIndex}`,
       credits: tpgService.resolveAuditCredits(course),
       creditStatus: course.credits !== undefined ? 'official' : course.creditsMin ? 'official_range' : 'unknown',
-      creditLabel: tpgService.getCourseCreditLabel(course),
-      completed: service.isTpgCourseCompleted(programme.id, course.code)
+      creditLabel: tpgService.getCourseCreditLabel({
+        ...course,
+        creditUnit: course.creditUnit || group.creditUnit || programme.creditUnit
+      }),
+      completed: status.isComplete && service.isTpgCourseCompleted(programme.id, course.code)
     })),
     courseCount: (group.courses || []).length
   }));
-  const status = tpgService.getStatus(programme);
   const courseCount = status.courseCount;
   const totalCredits = tpgService.getCreditsRequired(programme, trackId);
   const completedCourses = groups.flatMap((group) => group.courses).filter((course) => course.completed);
@@ -40,7 +43,13 @@ function buildTpgAudit(programme, university, trackId = '') {
       state: `共 ${courseCount} 门可选`
     }
   ];
-  const nextChecks = status.hasCourseGroups
+  const nextChecks = status.isCourseListOnly
+    ? [
+        '浏览已由官方来源核实的课程代码与名称',
+        '逐门学分或完成路径仍以 Programme Handbook 为准',
+        '规则复核完成前不记录已修状态、不计算毕业进度'
+      ]
+    : status.hasCourseGroups
     ? [
         '查看已拆出的必修/选修课程组',
         '对照 Programme Handbook 与学校选课系统',
@@ -65,12 +74,16 @@ function buildTpgAudit(programme, university, trackId = '') {
     unknownCompletedCredits,
     needsManualReview: !status.isComplete || programme.ruleReviewStatus === 'manual_review_required' || unknownCompletedCredits > 0,
     hasCourseGroups: status.hasCourseGroups,
+    isCourseListOnly: status.isCourseListOnly,
+    canTrackCompletion: status.isComplete,
     statusTitle: status.title,
     statusCopy: status.copy,
-    detailEntryCopy: status.hasCourseGroups
-      ? `${courseCount} 门课程已开放 · 点击查看 Programme 详情`
+    detailEntryCopy: status.isCourseListOnly
+      ? `${courseCount} 门课程已核实 · 规则仍在复核`
+      : status.hasCourseGroups
+        ? `${courseCount} 门课程已开放 · 点击查看 Programme 详情`
       : '点击查看 Programme 来源、学分与收录状态',
-    progressLabel: status.hasCourseGroups ? '可查看课程组' : '暂不计算进度'
+    progressLabel: status.isComplete ? '可查看课程组' : status.isCourseListOnly ? '仅浏览课程清单' : '暂不计算进度'
   };
 }
 
@@ -201,7 +214,7 @@ Page({
   toggleTpgCourseCompleted(event) {
     const programme = this.data.tpgAudit && this.data.tpgAudit.programme;
     const courseCode = event.currentTarget.dataset.code;
-    if (!programme || !courseCode) return;
+    if (!programme || !courseCode || !tpgService.getStatus(programme).isComplete) return;
     service.toggleTpgCourseCompleted(programme.id, courseCode);
     this.setData({
       tpgAudit: buildTpgAudit(programme, this.data.tpgAudit.university, (service.getProfile() || {}).trackId || '')

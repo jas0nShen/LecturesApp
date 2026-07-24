@@ -33,12 +33,12 @@
           <view class="tpg-number {{tpgCourseCount ? '' : 'text-status'}}">{{tpgCourseCountDisplay}}</view>
           <view class="tpg-number-label">{{tpgCourseCountLabel}}</view>
         </view>
-        <view class="tpg-seal">{{tpgCourseCount ? '课程' : '索引'}}</view>
+        <view class="tpg-seal">{{tpgCourseListOnly ? '清单' : (tpgCourseCount ? '课程' : '索引')}}</view>
       </view>
     </view>
 
     <view class="section tpg-status course-status">
-      <view class="stamp-mark">{{tpgCourseCount ? '课程已开放' : '复核中'}}</view>
+      <view class="stamp-mark">{{tpgCourseListOnly ? '规则复核中' : (tpgCourseCount ? '课程已开放' : '复核中')}}</view>
       <view class="tpg-status-copy">
         <view class="stamp-title">{{tpgStatusTitle}}</view>
         <view class="stamp-copy">{{tpgStatusCopy}}</view>

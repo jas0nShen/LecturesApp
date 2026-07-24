@@ -1,0 +1,96 @@
+{
+  "provider": "HKUST 2025/26 BBA in Information Systems Major Requirements",
+  "academicYear": "2025/26",
+  "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/IS",
+  "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26is.pdf",
+  "note": "This supplement is cohort-specific to students admitted in 2025-26 and binds only the plain BBA in Information Systems Major. It records the explicit Major Required courses, the two optional Options, and ISOM 4400 because the official rule names it as a 6-credit exception. The IS elective requirement remains an open rule: at least 3 ISOM courses totaling at least 10 credits, coded between 3000 and 3499 or between 4000 and 4499; using the 6-credit ISOM 4400 may reduce the minimum number of courses by one, and Option Required Courses may not be counted toward this elective requirement. The dynamic ISOM catalog is not converted into a permanent closed elective pool. Eligible catalog courses can carry variable credits, including ISOM 3000 and ISOM 4000 at 0-4 credits and ISOM 4490 at 1-4 credits, so completion must use credits actually attained rather than assuming 3 credits per course. COMP 1021 and COMP 1022P are prior-course triggers for the programming alternative only and are not requirement-course rows. Recommended Year and semester values come only from the official 2025-26 normative pathway; anonymous elective-credit placements are not assigned to ISOM 4400 or other individual electives. The 2026-27 catalog-linked pathway URL currently returns 404, so no 2026-27 pathway placement is inferred. University Common Core, English, Legal Education, School requirements, and additional electives used to reach 120 credits remain outside this Programme-local supplement.",
+  "supplements": [
+    {
+      "universityCode": "HKUST",
+      "programmeId": "HKUST-UG-JS5314-33",
+      "majorId": "HKUST-UG-JS5314-33-M1",
+      "programmeName": "BBA in Information Systems",
+      "courseCatalogueUrl": "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/ISOM",
+      "pathwayUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26pw_is.pdf",
+      "unavailable2026PathwayUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202627/pdf/26-27pw_is.pdf",
+      "courses": [
+        {
+          "code": "ISOM3210",
+          "title": "Information Systems Analysis and Design",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "Fall",
+          "courseType": "core",
+          "group": "Major Required"
+        },
+        {
+          "code": "ISOM3260",
+          "title": "Database Design and Administration",
+          "credits": 4,
+          "recommendedYear": 3,
+          "semester": "Spring",
+          "courseType": "core",
+          "group": "Major Required"
+        },
+        {
+          "code": "ISOM3320",
+          "title": "Business Applications Development in Java",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "Spring",
+          "courseType": "core",
+          "group": "Major Required · take ISOM 3320 or ISOM 3400 · students who have taken COMP 1021 must take ISOM 3320; COMP 1021 is a prior-course trigger, not an additional requirement course"
+        },
+        {
+          "code": "ISOM3400",
+          "title": "Business Applications Development in Python",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "Spring",
+          "courseType": "core",
+          "group": "Major Required · take ISOM 3320 or ISOM 3400 · students who have taken COMP 1022P must take ISOM 3400; COMP 1022P is a prior-course trigger, not an additional requirement course"
+        },
+        {
+          "code": "ISOM4400",
+          "title": "Information Systems Project",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Named IS elective exception · open pool requires at least 3 ISOM courses totaling at least 10 credits, coded 3000-3499 or 4000-4499 · using ISOM 4400 may reduce the minimum course count by one · Option Required Courses may not be counted · not a permanent closed elective pool",
+          "description": "The official pathway assigns 4 anonymous IS elective credits to Year 2 Spring and 6 anonymous IS elective credits to Year 3 Fall, but it does not identify ISOM 4400; no individual Year or semester is inferred."
+        },
+        {
+          "code": "ISOM3360",
+          "title": "Data Mining for Business Analytics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Optional Business Analytics Option · students may graduate without an Option · if selected, complete both Option Required Courses in addition to the Major Requirements · may not be counted toward the IS elective requirement"
+        },
+        {
+          "code": "ISOM3900",
+          "title": "Decision Analytics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Optional Business Analytics Option · students may graduate without an Option · if selected, complete both Option Required Courses in addition to the Major Requirements · may not be counted toward the IS elective requirement"
+        },
+        {
+          "code": "ISOM4100",
+          "title": "Information Systems Auditing",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "Fall",
+          "courseType": "major_elective",
+          "group": "Optional Information Systems Auditing Option · students may graduate without an Option · if selected, complete both Option Required Courses in addition to the Major Requirements · may not be counted toward the IS elective requirement · the pathway also marks Year 3 Fall as another offered term subject to program-office advice"
+        },
+        {
+          "code": "ISOM4300",
+          "title": "Information Systems Control and Assurance",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "Spring",
+          "courseType": "major_elective",
+          "group": "Optional Information Systems Auditing Option · students may graduate without an Option · if selected, complete both Option Required Courses in addition to the Major Requirements · may not be counted toward the IS elective requirement · the pathway also marks Year 2 Spring as another offered term subject to program-office advice"
+        }
+      ]
+    }
+  ]
+}

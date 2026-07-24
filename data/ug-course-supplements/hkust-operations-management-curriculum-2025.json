@@ -1,0 +1,152 @@
+{
+  "provider": "HKUST 2025/26 BBA in Operations Management Major Requirements",
+  "academicYear": "2025/26",
+  "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/OM",
+  "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26om.pdf",
+  "note": "This cohort-specific supplement binds only the plain BBA in Operations Management Major for students admitted in 2025-26. It records the two Major Required courses, the complete 12-course restricted OM elective list for Business Analytics Option students, and the explicitly named requirements of the two optional Options. Students without an Option instead choose any four ISOM courses coded 3500-3999 except ISOM 3780, or 4500-4999, totaling at least 12 credits; this dynamic range is not converted into a permanent closed graduation pool. Business Analytics Option students must choose four courses from the recorded restricted list for the OM elective requirement, then complete ISOM 3360 and ISOM 3900 in addition; Option Required Courses may not also count toward the OM elective requirement. Supply Chain Management Option students complete ISOM 3760 plus one of ISOM 3730, ISOM 4740, ISOM 4750, or ISOM 4780. Students may graduate without an Option. No individual Year or semester is inferred from anonymous or grouped pathway placements. School Requirements, University Common Core, Legal Education, and additional electives used to reach 120 credits remain outside this Programme-local supplement.",
+  "supplements": [
+    {
+      "universityCode": "HKUST",
+      "programmeId": "HKUST-UG-JS5317-42",
+      "majorId": "HKUST-UG-JS5317-42-M1",
+      "programmeName": "BBA in Operations Management",
+      "courseCatalogueUrl": "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/ISOM",
+      "pathwayUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26pw_om.pdf",
+      "courses": [
+        {
+          "code": "ISOM3710",
+          "title": "Business Modeling and Optimization",
+          "credits": 4,
+          "courseType": "core",
+          "group": "Major Required"
+        },
+        {
+          "code": "ISOM3770",
+          "title": "Global Supply Chain Management",
+          "credits": 4,
+          "courseType": "core",
+          "group": "Major Required"
+        },
+        {
+          "code": "ISOM3530",
+          "title": "Business Data Analytics",
+          "credits": 4,
+          "courseType": "major_elective",
+          "group": "Restricted OM elective list for Business Analytics Option · choose 4 courses from the 12 recorded rows · Option Required Courses may not also count"
+        },
+        {
+          "code": "ISOM3540",
+          "title": "Introduction to Probability Models",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Restricted OM elective list for Business Analytics Option · choose 4 courses from the 12 recorded rows · Option Required Courses may not also count"
+        },
+        {
+          "code": "ISOM4520",
+          "title": "Statistics for Financial Risk Management",
+          "credits": 4,
+          "courseType": "major_elective",
+          "group": "Restricted OM elective list for Business Analytics Option · choose 4 courses from the 12 recorded rows · Option Required Courses may not also count"
+        },
+        {
+          "code": "ISOM4530",
+          "title": "Statistical Analysis of Financial Data in R/S-plus",
+          "credits": 4,
+          "courseType": "major_elective",
+          "group": "Restricted OM elective list for Business Analytics Option · choose 4 courses from the 12 recorded rows · Option Required Courses may not also count"
+        },
+        {
+          "code": "ISOM4540",
+          "title": "Time Series Analysis and Forecasting",
+          "credits": 4,
+          "courseType": "major_elective",
+          "group": "Restricted OM elective list for Business Analytics Option · choose 4 courses from the 12 recorded rows · Option Required Courses may not also count"
+        },
+        {
+          "code": "ISOM4720",
+          "title": "Simulation in Business and Management",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Restricted OM elective list for Business Analytics Option · choose 4 courses from the 12 recorded rows · Option Required Courses may not also count"
+        },
+        {
+          "code": "ISOM4740",
+          "title": "Enterprise Resource Management",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Restricted OM elective list for Business Analytics Option · also one of four alternatives for the optional Supply Chain Management Option · no duplicate counting"
+        },
+        {
+          "code": "ISOM4780",
+          "title": "Integrated Planning and Execution",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Restricted OM elective list for Business Analytics Option · also one of four alternatives for the optional Supply Chain Management Option · no duplicate counting"
+        },
+        {
+          "code": "ISOM4810",
+          "title": "OM Best Practices",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Restricted OM elective list for Business Analytics Option · choose 4 courses from the 12 recorded rows · Option Required Courses may not also count"
+        },
+        {
+          "code": "ISOM4830",
+          "title": "Analytics for Service Operations",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Restricted OM elective list for Business Analytics Option · choose 4 courses from the 12 recorded rows · Option Required Courses may not also count"
+        },
+        {
+          "code": "ISOM4860",
+          "title": "Decision and Data Analytics in Financial Markets",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Restricted OM elective list for Business Analytics Option · choose 4 courses from the 12 recorded rows · Option Required Courses may not also count"
+        },
+        {
+          "code": "ISOM4880",
+          "title": "Operations Management Project",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Restricted OM elective list for Business Analytics Option · choose 4 courses from the 12 recorded rows · Option Required Courses may not also count"
+        },
+        {
+          "code": "ISOM3360",
+          "title": "Data Mining for Business Analytics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Optional Business Analytics Option Required · complete with ISOM 3900 in addition to Major Requirements · may not count toward the OM elective requirement"
+        },
+        {
+          "code": "ISOM3900",
+          "title": "Decision Analytics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Optional Business Analytics Option Required · complete with ISOM 3360 in addition to Major Requirements · may not count toward the OM elective requirement"
+        },
+        {
+          "code": "ISOM3730",
+          "title": "Quality and Process Management",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Optional Supply Chain Management Option · take one of ISOM 3730, ISOM 4740, ISOM 4750, or ISOM 4780, plus ISOM 3760"
+        },
+        {
+          "code": "ISOM4750",
+          "title": "Business Project Management",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Optional Supply Chain Management Option · take one of ISOM 3730, ISOM 4740, ISOM 4750, or ISOM 4780, plus ISOM 3760"
+        },
+        {
+          "code": "ISOM3760",
+          "title": "Logistics Management",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Optional Supply Chain Management Option Required · complete with one of ISOM 3730, ISOM 4740, ISOM 4750, or ISOM 4780"
+        }
+      ]
+    }
+  ]
+}

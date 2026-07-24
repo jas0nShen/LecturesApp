@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-22T07:18:16.373Z",
+  "generatedAt": "2026-07-24T08:24:20.446Z",
   "universities": [
     {
       "id": "HKU",
@@ -1874,9 +1874,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-business-administration",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 63,
+      "codedCourseCount": 63,
+      "courseSourceUrl": "https://ug.hkubs.hku.hk/f/page/254425/263331/BBA_Syllabuses%202025-26.pdf"
     },
     {
       "id": "HKU-UG-6755-71",
@@ -4961,9 +4962,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BEng in Civil and Environmental Engineering",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-engineering/civil-and-environmental-engineering",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 52,
+      "codedCourseCount": 52,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/CIEV"
     },
     {
       "id": "HKUST-UG-JS5230-DEPARTMENT-OF-CIVIL-AND-ENVIRONMENTAL-ENG-12",
@@ -5040,9 +5042,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BSc in Data Analytics and Artificial Intelligence in Science",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-science/data-analytics-and-artificial-intelligence-in-science",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 46,
+      "codedCourseCount": 46,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/DASC"
     },
     {
       "id": "HKUST-UG-JS5102-SCIENCE-GROUP-A-JS5282-ENGINEERING-WITH-E-16",
@@ -5059,9 +5062,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BSc in Data Science and Technology",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/joint-school-program/data-science-and-technology",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 67,
+      "codedCourseCount": 67,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/DSCT"
     },
     {
       "id": "HKUST-UG-JS5260-DEPARTMENT-OF-INDUSTRIAL-ENGINEERING-AND--17",
@@ -5078,9 +5082,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BEng in Decision Analytics",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-engineering/decision-analytics",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 41,
+      "codedCourseCount": 41,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/DA"
     },
     {
       "id": "HKUST-UG-JS5901-18",
@@ -5116,9 +5121,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BBA in Economics",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-business-and-management/economics",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 45,
+      "codedCourseCount": 45,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/ECON"
     },
     {
       "id": "HKUST-UG-JS5331-20",
@@ -5135,9 +5141,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BSc in Economics and Finance",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-business-and-management/economics-and-finance",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 68,
+      "codedCourseCount": 68,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/ECOF"
     },
     {
       "id": "HKUST-UG-JS5250-DEPARTMENT-OF-ELECTRONIC-AND-COMPUTER-ENG-21",
@@ -5154,9 +5161,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BEng in Electronic Engineering",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-engineering/electronic-engineering",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 34,
+      "codedCourseCount": 34,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/ELEC"
     },
     {
       "id": "HKUST-UG-JS5220-DEPARTMENT-OF-CHEMICAL-AND-BIOLOGICAL-ENG-22",
@@ -5173,9 +5181,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BEng in Energy and Environmental Engineering",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-engineering/energy-and-environmental-engineering",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 63,
+      "codedCourseCount": 63,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/EEEN"
     },
     {
       "id": "HKUST-UG-JS5282-ENGINEERING-WITH-EXTENDED-MAJOR-IN-ARTIFI-23",
@@ -5211,9 +5220,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BSc in Environmental Management and Technology",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/academy-of-interdisciplinary-studies/environmental-management-and-technology",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 56,
+      "codedCourseCount": 56,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/EVMT"
     },
     {
       "id": "HKUST-UG-BBA-IN-EURASIAN-BUSINESS-25",
@@ -5249,9 +5259,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BBA in Finance",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-business-and-management/finance",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 24,
+      "codedCourseCount": 24,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/FINA"
     },
     {
       "id": "HKUST-UG-BBA-IN-GENERAL-BUSINESS-MANAGEMENT-27",
@@ -5268,9 +5279,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://join.hkust.edu.hk/taxonomy/term/46620",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 198,
+      "codedCourseCount": 198,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/GBM"
     },
     {
       "id": "HKUST-UG-JS5313-28",
@@ -5287,9 +5299,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BBA in Global Business",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-business-and-management/global-business",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 43,
+      "codedCourseCount": 43,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/GBUS"
     },
     {
       "id": "HKUST-UG-JS5411-29",
@@ -5306,9 +5319,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BSc in Global China Studies",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-humanities-and-social-science/global-china-studies",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 88,
+      "codedCourseCount": 88,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/GCS"
     },
     {
       "id": "HKUST-UG-JS5711-30",
@@ -5325,9 +5339,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BSc in Innovation, Design and Technology",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/academy-of-interdisciplinary-studies/innovation-design-and-technology",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 98,
+      "codedCourseCount": 98,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2026-27/IDT"
     },
     {
       "id": "HKUST-UG-N-A-31",
@@ -5363,9 +5378,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BEng in Industrial Engineering and Engineering Management",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-engineering/industrial-engineering-and-engineering-management",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 49,
+      "codedCourseCount": 49,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/IEEM"
     },
     {
       "id": "HKUST-UG-JS5314-33",
@@ -5382,9 +5398,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BBA in Information Systems",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-business-and-management/information-systems",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 9,
+      "codedCourseCount": 9,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/IS"
     },
     {
       "id": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34",
@@ -5420,9 +5437,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BBA in Management",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-business-and-management/management",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 14,
+      "codedCourseCount": 14,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/MGMT"
     },
     {
       "id": "HKUST-UG-JS5316-36",
@@ -5439,9 +5457,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BBA in Marketing",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-business-and-management/marketing",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 13,
+      "codedCourseCount": 13,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/MARK"
     },
     {
       "id": "HKUST-UG-JS5102-SCIENCE-GROUP-A-37",
@@ -5478,9 +5497,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BSc in Mathematics and Economics",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/joint-school-program/mathematics-and-economics",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 45,
+      "codedCourseCount": 45,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/MAEC"
     },
     {
       "id": "HKUST-UG-JS5270-DEPARTMENT-OF-MECHANICAL-AND-AEROSPACE-EN-39",
@@ -5497,9 +5517,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BEng in Mechanical Engineering",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-engineering/mechanical-engineering",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 55,
+      "codedCourseCount": 55,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/MECH"
     },
     {
       "id": "HKUST-UG-JS5250-DEPARTMENT-OF-ELECTRONIC-AND-COMPUTER-ENG-40",
@@ -5516,9 +5537,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BEng in Microelectronics and Integrated Circuits",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-engineering/microelectronics-and-integrated-circuits",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 55,
+      "codedCourseCount": 55,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/MEIC"
     },
     {
       "id": "HKUST-UG-JS5102-SCIENCE-GROUP-A-JS5103-SCIENCE-GROUP-B-41",
@@ -5535,9 +5557,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BSc in Ocean Science and Technology",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-science/ocean-science-and-technology",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 52,
+      "codedCourseCount": 52,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/OST"
     },
     {
       "id": "HKUST-UG-JS5317-42",
@@ -5554,9 +5577,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BBA in Operations Management",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-business-and-management/operations-management",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 19,
+      "codedCourseCount": 19,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/OM"
     },
     {
       "id": "HKUST-UG-JS5102-SCIENCE-GROUP-A-43",
@@ -5593,9 +5617,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BBA in Professional Accounting",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-business-and-management/professional-accounting",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 37,
+      "codedCourseCount": 37,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/ACCT"
     },
     {
       "id": "HKUST-UG-JS5332-45",
@@ -5612,9 +5637,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BSc in Quantitative Finance",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-business-and-management/quantitative-finance",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 80,
+      "codedCourseCount": 80,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/QFIN"
     },
     {
       "id": "HKUST-UG-JS5412-46",
@@ -5631,9 +5657,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BSc in Quantitative Social Analysis",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-humanities-and-social-science/quantitative-social-analysis",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 41,
+      "codedCourseCount": 41,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/QSA"
     },
     {
       "id": "HKUST-UG-JS5814-BSC-IN-RISK-MANAGEMENT-AND-BUSINESS-INTEL-47",
@@ -5650,9 +5677,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BSc in Risk Management and Business Intelligence",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/joint-school-program/risk-management-and-business-intelligence",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 85,
+      "codedCourseCount": 85,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/RMBI"
     },
     {
       "id": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48",
@@ -5688,9 +5716,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BSc in Sustainable and Green Finance",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/joint-school-program/sustainable-and-green-finance",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 33,
+      "codedCourseCount": 33,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/SGFN"
     },
     {
       "id": "HKUST-UG-WORLD-BACHELOR-IN-BUSINESS-50",
@@ -8170,9 +8199,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2950",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 14,
+      "codedCourseCount": 14,
+      "courseSourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/division-of-transdisciplinary-undergraduate-programmes/bachelor-of-arts-science-and-technology-honours"
     },
     {
       "id": "HKBU-UG-BASC-DIFH-22",
@@ -8252,9 +8282,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "Bachelor's Degree Programme",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8003/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 0,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 40,
+      "codedCourseCount": 40,
+      "courseSourceUrl": "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BA(DCCC)%26BEd(CL).pdf"
     },
     {
       "id": "EDUHK-UG-JS8004-4",
@@ -9890,9 +9921,9 @@ const catalogue = {
       "code": "FINANCE",
       "nameEn": "Finance",
       "nameZh": "Finance",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-business-administration"
+      "courseCount": 64,
+      "codedCourseCount": 63,
+      "officialUrl": "https://ug.hkubs.hku.hk/programme/bba"
     },
     {
       "id": "HKU-UG-6755-71-M1",
@@ -11490,9 +11521,9 @@ const catalogue = {
       "code": "BENG-IN-CIVIL-AND-ENVIRONMENTAL-ENGINEERING",
       "nameEn": "BEng in Civil and Environmental Engineering",
       "nameZh": "BEng in Civil and Environmental Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-engineering/civil-and-environmental-engineering"
+      "courseCount": 53,
+      "codedCourseCount": 52,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202627/pdf/25-26ciev.pdf"
     },
     {
       "id": "HKUST-UG-JS5230-DEPARTMENT-OF-CIVIL-AND-ENVIRONMENTAL-ENG-12-M1",
@@ -11540,9 +11571,9 @@ const catalogue = {
       "code": "BSC-IN-DATA-ANALYTICS-AND-ARTIFICIAL-INTELLIGENC",
       "nameEn": "BSc in Data Analytics and Artificial Intelligence in Science",
       "nameZh": "BSc in Data Analytics and Artificial Intelligence in Science",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-science/data-analytics-and-artificial-intelligence-in-science"
+      "courseCount": 47,
+      "codedCourseCount": 46,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202627/pdf/25-26dasc.pdf"
     },
     {
       "id": "HKUST-UG-JS5102-SCIENCE-GROUP-A-JS5282-ENGINEERING-WITH-E-16-M1",
@@ -11550,9 +11581,9 @@ const catalogue = {
       "code": "BSC-IN-DATA-SCIENCE-AND-TECHNOLOGY",
       "nameEn": "BSc in Data Science and Technology",
       "nameZh": "BSc in Data Science and Technology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/joint-school-program/data-science-and-technology"
+      "courseCount": 68,
+      "codedCourseCount": 67,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26dsct.pdf"
     },
     {
       "id": "HKUST-UG-JS5260-DEPARTMENT-OF-INDUSTRIAL-ENGINEERING-AND--17-M1",
@@ -11560,9 +11591,9 @@ const catalogue = {
       "code": "BENG-IN-DECISION-ANALYTICS",
       "nameEn": "BEng in Decision Analytics",
       "nameZh": "BEng in Decision Analytics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-engineering/decision-analytics"
+      "courseCount": 42,
+      "codedCourseCount": 41,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202627/pdf/25-26da.pdf"
     },
     {
       "id": "HKUST-UG-JS5901-18-M1",
@@ -11600,9 +11631,9 @@ const catalogue = {
       "code": "BBA-IN-ECONOMICS",
       "nameEn": "BBA in Economics",
       "nameZh": "BBA in Economics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-business-and-management/economics"
+      "courseCount": 46,
+      "codedCourseCount": 45,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26econ.pdf"
     },
     {
       "id": "HKUST-UG-JS5311-19-M2",
@@ -11620,9 +11651,9 @@ const catalogue = {
       "code": "BSC-IN-ECONOMICS-AND-FINANCE",
       "nameEn": "BSc in Economics and Finance",
       "nameZh": "BSc in Economics and Finance",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-business-and-management/economics-and-finance"
+      "courseCount": 69,
+      "codedCourseCount": 68,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26ecof.pdf"
     },
     {
       "id": "HKUST-UG-JS5331-20-M2",
@@ -11640,9 +11671,9 @@ const catalogue = {
       "code": "BENG-IN-ELECTRONIC-ENGINEERING",
       "nameEn": "BEng in Electronic Engineering",
       "nameZh": "BEng in Electronic Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-engineering/electronic-engineering"
+      "courseCount": 35,
+      "codedCourseCount": 34,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202627/pdf/25-26elec.pdf"
     },
     {
       "id": "HKUST-UG-JS5220-DEPARTMENT-OF-CHEMICAL-AND-BIOLOGICAL-ENG-22-M1",
@@ -11650,9 +11681,9 @@ const catalogue = {
       "code": "BENG-IN-ENERGY-AND-ENVIRONMENTAL-ENGINEERING",
       "nameEn": "BEng in Energy and Environmental Engineering",
       "nameZh": "BEng in Energy and Environmental Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-engineering/energy-and-environmental-engineering"
+      "courseCount": 64,
+      "codedCourseCount": 63,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202627/pdf/25-26eeen.pdf"
     },
     {
       "id": "HKUST-UG-JS5282-ENGINEERING-WITH-EXTENDED-MAJOR-IN-ARTIFI-23-M1",
@@ -11670,9 +11701,9 @@ const catalogue = {
       "code": "BSC-IN-ENVIRONMENTAL-MANAGEMENT-AND-TECHNOLOGY",
       "nameEn": "BSc in Environmental Management and Technology",
       "nameZh": "BSc in Environmental Management and Technology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/academy-of-interdisciplinary-studies/environmental-management-and-technology"
+      "courseCount": 57,
+      "codedCourseCount": 56,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202627/pdf/25-26evmt.pdf"
     },
     {
       "id": "HKUST-UG-BBA-IN-EURASIAN-BUSINESS-25-M1",
@@ -11690,9 +11721,9 @@ const catalogue = {
       "code": "BBA-IN-FINANCE",
       "nameEn": "BBA in Finance",
       "nameZh": "BBA in Finance",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-business-and-management/finance"
+      "courseCount": 13,
+      "codedCourseCount": 12,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202627/pdf/25-26fina.pdf"
     },
     {
       "id": "HKUST-UG-JS5312-26-M2",
@@ -11700,9 +11731,9 @@ const catalogue = {
       "code": "BUSINESS-WITH-EXTENDED-MAJOR-IN-AI-DMCA",
       "nameEn": "Business with Extended Major in AI / DMCA",
       "nameZh": "Business with Extended Major in AI / DMCA",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-business-and-management/finance"
+      "courseCount": 13,
+      "codedCourseCount": 12,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202627/pdf/25-26fina.pdf"
     },
     {
       "id": "HKUST-UG-BBA-IN-GENERAL-BUSINESS-MANAGEMENT-27-M1",
@@ -11710,9 +11741,9 @@ const catalogue = {
       "code": "BBA-IN-GENERAL-BUSINESS-MANAGEMENT",
       "nameEn": "BBA in General Business Management",
       "nameZh": "BBA in General Business Management",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/taxonomy/term/46620"
+      "courseCount": 199,
+      "codedCourseCount": 198,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202627/pdf/25-26gbm.pdf"
     },
     {
       "id": "HKUST-UG-JS5313-28-M1",
@@ -11720,9 +11751,9 @@ const catalogue = {
       "code": "BBA-IN-GLOBAL-BUSINESS",
       "nameEn": "BBA in Global Business",
       "nameZh": "BBA in Global Business",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-business-and-management/global-business"
+      "courseCount": 44,
+      "codedCourseCount": 43,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26gbus.pdf"
     },
     {
       "id": "HKUST-UG-JS5313-28-M2",
@@ -11740,9 +11771,9 @@ const catalogue = {
       "code": "BSC-IN-GLOBAL-CHINA-STUDIES",
       "nameEn": "BSc in Global China Studies",
       "nameZh": "BSc in Global China Studies",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-humanities-and-social-science/global-china-studies"
+      "courseCount": 89,
+      "codedCourseCount": 88,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202627/pdf/25-26gcs.pdf"
     },
     {
       "id": "HKUST-UG-JS5711-30-M1",
@@ -11750,9 +11781,9 @@ const catalogue = {
       "code": "BSC-IN-INNOVATION-DESIGN-AND-TECHNOLOGY",
       "nameEn": "BSc in Innovation, Design and Technology",
       "nameZh": "BSc in Innovation, Design and Technology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/academy-of-interdisciplinary-studies/innovation-design-and-technology"
+      "courseCount": 99,
+      "codedCourseCount": 98,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202627/pdf/26-27idt.pdf"
     },
     {
       "id": "HKUST-UG-N-A-31-M1",
@@ -11770,9 +11801,9 @@ const catalogue = {
       "code": "BENG-IN-INDUSTRIAL-ENGINEERING-AND-ENGINEERING-M",
       "nameEn": "BEng in Industrial Engineering and Engineering Management",
       "nameZh": "BEng in Industrial Engineering and Engineering Management",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-engineering/industrial-engineering-and-engineering-management"
+      "courseCount": 50,
+      "codedCourseCount": 49,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26ieem.pdf"
     },
     {
       "id": "HKUST-UG-JS5314-33-M1",
@@ -11780,9 +11811,9 @@ const catalogue = {
       "code": "BBA-IN-INFORMATION-SYSTEMS",
       "nameEn": "BBA in Information Systems",
       "nameZh": "BBA in Information Systems",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-business-and-management/information-systems"
+      "courseCount": 10,
+      "codedCourseCount": 9,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26is.pdf"
     },
     {
       "id": "HKUST-UG-JS5314-33-M2",
@@ -11810,9 +11841,9 @@ const catalogue = {
       "code": "BBA-IN-MANAGEMENT",
       "nameEn": "BBA in Management",
       "nameZh": "BBA in Management",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-business-and-management/management"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26mgmt.pdf"
     },
     {
       "id": "HKUST-UG-JS5315-35-M2",
@@ -11830,9 +11861,9 @@ const catalogue = {
       "code": "BBA-IN-MARKETING",
       "nameEn": "BBA in Marketing",
       "nameZh": "BBA in Marketing",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-business-and-management/marketing"
+      "courseCount": 14,
+      "codedCourseCount": 13,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26mark.pdf"
     },
     {
       "id": "HKUST-UG-JS5316-36-M2",
@@ -11860,9 +11891,9 @@ const catalogue = {
       "code": "BSC-IN-MATHEMATICS-AND-ECONOMICS",
       "nameEn": "BSc in Mathematics and Economics",
       "nameZh": "BSc in Mathematics and Economics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/joint-school-program/mathematics-and-economics"
+      "courseCount": 46,
+      "codedCourseCount": 45,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202627/pdf/25-26maec.pdf"
     },
     {
       "id": "HKUST-UG-JS5270-DEPARTMENT-OF-MECHANICAL-AND-AEROSPACE-EN-39-M1",
@@ -11870,9 +11901,9 @@ const catalogue = {
       "code": "BENG-IN-MECHANICAL-ENGINEERING",
       "nameEn": "BEng in Mechanical Engineering",
       "nameZh": "BEng in Mechanical Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-engineering/mechanical-engineering"
+      "courseCount": 56,
+      "codedCourseCount": 55,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26mech.pdf"
     },
     {
       "id": "HKUST-UG-JS5250-DEPARTMENT-OF-ELECTRONIC-AND-COMPUTER-ENG-40-M1",
@@ -11880,9 +11911,9 @@ const catalogue = {
       "code": "BENG-IN-MICROELECTRONICS-AND-INTEGRATED-CIRCUITS",
       "nameEn": "BEng in Microelectronics and Integrated Circuits",
       "nameZh": "BEng in Microelectronics and Integrated Circuits",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-engineering/microelectronics-and-integrated-circuits"
+      "courseCount": 56,
+      "codedCourseCount": 55,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26meic.pdf"
     },
     {
       "id": "HKUST-UG-JS5102-SCIENCE-GROUP-A-JS5103-SCIENCE-GROUP-B-41-M1",
@@ -11890,9 +11921,9 @@ const catalogue = {
       "code": "BSC-IN-OCEAN-SCIENCE-AND-TECHNOLOGY",
       "nameEn": "BSc in Ocean Science and Technology",
       "nameZh": "BSc in Ocean Science and Technology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-science/ocean-science-and-technology"
+      "courseCount": 53,
+      "codedCourseCount": 52,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26ost.pdf"
     },
     {
       "id": "HKUST-UG-JS5317-42-M1",
@@ -11900,9 +11931,9 @@ const catalogue = {
       "code": "BBA-IN-OPERATIONS-MANAGEMENT",
       "nameEn": "BBA in Operations Management",
       "nameZh": "BBA in Operations Management",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-business-and-management/operations-management"
+      "courseCount": 20,
+      "codedCourseCount": 19,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26om.pdf"
     },
     {
       "id": "HKUST-UG-JS5317-42-M2",
@@ -11930,9 +11961,9 @@ const catalogue = {
       "code": "BBA-IN-PROFESSIONAL-ACCOUNTING",
       "nameEn": "BBA in Professional Accounting",
       "nameZh": "BBA in Professional Accounting",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-business-and-management/professional-accounting"
+      "courseCount": 38,
+      "codedCourseCount": 37,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26acct.pdf"
     },
     {
       "id": "HKUST-UG-JS5318-44-M2",
@@ -11950,9 +11981,9 @@ const catalogue = {
       "code": "BSC-IN-QUANTITATIVE-FINANCE",
       "nameEn": "BSc in Quantitative Finance",
       "nameZh": "BSc in Quantitative Finance",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-business-and-management/quantitative-finance"
+      "courseCount": 41,
+      "codedCourseCount": 40,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202627/pdf/25-26qfin.pdf"
     },
     {
       "id": "HKUST-UG-JS5332-45-M2",
@@ -11960,9 +11991,9 @@ const catalogue = {
       "code": "BUSINESS-WITH-EXTENDED-MAJOR-IN-AI-DMCA-SUST",
       "nameEn": "Business with Extended Major in AI / DMCA / SUST",
       "nameZh": "Business with Extended Major in AI / DMCA / SUST",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-business-and-management/quantitative-finance"
+      "courseCount": 41,
+      "codedCourseCount": 40,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202627/pdf/25-26qfin.pdf"
     },
     {
       "id": "HKUST-UG-JS5412-46-M1",
@@ -11970,9 +12001,9 @@ const catalogue = {
       "code": "BSC-IN-QUANTITATIVE-SOCIAL-ANALYSIS",
       "nameEn": "BSc in Quantitative Social Analysis",
       "nameZh": "BSc in Quantitative Social Analysis",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-humanities-and-social-science/quantitative-social-analysis"
+      "courseCount": 42,
+      "codedCourseCount": 41,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202627/pdf/25-26qsa.pdf"
     },
     {
       "id": "HKUST-UG-JS5814-BSC-IN-RISK-MANAGEMENT-AND-BUSINESS-INTEL-47-M1",
@@ -11980,9 +12011,9 @@ const catalogue = {
       "code": "BSC-IN-RISK-MANAGEMENT-AND-BUSINESS-INTELLIGENCE",
       "nameEn": "BSc in Risk Management and Business Intelligence",
       "nameZh": "BSc in Risk Management and Business Intelligence",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/joint-school-program/risk-management-and-business-intelligence"
+      "courseCount": 86,
+      "codedCourseCount": 85,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202627/pdf/25-26rmbi.pdf"
     },
     {
       "id": "HKUST-UG-JS5814-BSC-IN-RISK-MANAGEMENT-AND-BUSINESS-INTEL-47-M2",
@@ -12010,9 +12041,9 @@ const catalogue = {
       "code": "BSC-IN-SUSTAINABLE-AND-GREEN-FINANCE",
       "nameEn": "BSc in Sustainable and Green Finance",
       "nameZh": "BSc in Sustainable and Green Finance",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/joint-school-program/sustainable-and-green-finance"
+      "courseCount": 34,
+      "codedCourseCount": 33,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202627/pdf/25-26sgfn.pdf"
     },
     {
       "id": "HKUST-UG-WORLD-BACHELOR-IN-BUSINESS-50-M1",
@@ -15320,9 +15351,9 @@ const catalogue = {
       "code": "BACHELOR-OF-ARTS-SCIENCE-AND-TECHNOLOGY-HONS-IN-",
       "nameEn": "Bachelor of Arts, Science and Technology (Hons) in Individualised Major",
       "nameZh": "Bachelor of Arts, Science and Technology (Hons) in Individualised Major",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2950"
+      "courseCount": 15,
+      "codedCourseCount": 14,
+      "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2950/"
     },
     {
       "id": "HKBU-UG-BASC-DIFH-22-M1",
@@ -15360,9 +15391,9 @@ const catalogue = {
       "code": "BA-DCCC-BED-CL",
       "nameEn": "Bachelor of Arts (Honours) in Digital Chinese Culture and Communication and Bachelor of Education (Honours) (Chinese Language)",
       "nameZh": "數碼中國文化與傳意榮譽文學士及中文教育榮譽學士",
-      "courseCount": 0,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/eduhk/JS8003/"
+      "courseCount": 40,
+      "codedCourseCount": 40,
+      "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/dccc_cl"
     },
     {
       "id": "EDUHK-UG-JS8004-4-M1",
@@ -15968,14 +15999,14 @@ const catalogue = {
   "courseShardCounts": {
     "CITYU": 3056,
     "CUHK": 732,
-    "EDUHK": 507,
-    "HKBU": 2650,
-    "HKU": 3539,
-    "HKUST": 690,
+    "EDUHK": 547,
+    "HKBU": 2664,
+    "HKU": 3602,
+    "HKUST": 2200,
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 14576
+  "codedCourseCount": 16203
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

@@ -41,11 +41,12 @@
     <view class="button plan-button {{ugPlanningSupported ? '' : 'button-disabled'}}" bindtap="togglePlanned">{{planned ? '移出计划' : '加入计划'}}</view>
   </view>
   <view wx:if="{{isUgCourse && !ugPlanningSupported && ugPlanningReason}}" class="section planning-note">{{ugPlanningReason}}</view>
-  <view wx:if="{{isTpgCourse}}" class="section action-row tpg-action-row">
+  <view wx:if="{{isTpgCourse && tpgCourseActionsEnabled}}" class="section action-row tpg-action-row">
     <view class="button secondary" bindtap="toggleFavorite">{{favorite ? '取消收藏' : '收藏课程'}}</view>
     <view class="button" bindtap="toggleCompleted">{{completed ? '标记未修' : '标记已修'}}</view>
     <view class="button plan-button {{tpgPlanningSupported ? '' : 'button-disabled'}}" bindtap="togglePlanned">{{planned ? '移出计划' : '加入计划'}}</view>
   </view>
+  <view wx:if="{{isTpgCourse && !tpgCourseActionsEnabled}}" class="section planning-note">当前仅开放已核实课程清单浏览；分组和学分规则完成复核前，不记录收藏、已修状态或选课计划。</view>
   <view wx:if="{{isTpgCourse && !tpgPlanningSupported && tpgPlanningReason}}" class="section planning-note">{{tpgPlanningReason}}</view>
 
   <view class="section panel">

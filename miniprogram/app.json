@@ -76,8 +76,15 @@
       ]
     },
     {
-      "root": "subpackages/ug-data-hkust",
-      "name": "ug-data-hkust",
+      "root": "subpackages/ug-data-hkust-a",
+      "name": "ug-data-hkust-a",
+      "pages": [
+        "pages/loader/index"
+      ]
+    },
+    {
+      "root": "subpackages/ug-data-hkust-b",
+      "name": "ug-data-hkust-b",
       "pages": [
         "pages/loader/index"
       ]

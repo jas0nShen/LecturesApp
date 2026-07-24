@@ -101,5 +101,5 @@ test('all eight launch schools resolve either their own course package or an exp
     assert.equal(loader.getUniversityLoadState(universityCode), state, universityCode);
   }
   assert.deepEqual(activated, loaded);
-  assert.equal(loaded.length, 12);
+  assert.equal(loaded.length, 13);
 });

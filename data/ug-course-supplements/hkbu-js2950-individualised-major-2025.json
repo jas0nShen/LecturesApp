@@ -1,0 +1,130 @@
+{
+  "provider": "HKBU University Student Handbook 2025-2026",
+  "academicYear": "2025-2026",
+  "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/division-of-transdisciplinary-undergraduate-programmes/bachelor-of-arts-science-and-technology-honours",
+  "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2950/",
+  "note": "The official 2025-2026 Programme page publishes a 128-unit curriculum and all 14 fixed coded Programme requirements: 45 units of fixed Major Courses and a 12-unit Honours Project, for 57 coded units in total. The remaining 36 units of Major Courses are Personalised Knowledge and Skills: students may, in consultation with their Academic Supervisors, select any HKBU course except courses offered by the School of Chinese Medicine, subject to prerequisites and approval of the individualised study plan and course selection. That student-specific open pool has no exhaustive stable code list and is not expanded into fabricated course records. The uncoded University Core, General Education and Free Elective components are also excluded. This is therefore a verified fixed-course planning list, not a closed Programme pool or a graduation-completion decision. The 2026-2027 Handbook endpoint currently returns HTTP 401 Basic Authentication, so this supplement remains explicitly scoped to 2025-2026. No Year or Term is assigned because the official table does not publish course timing.",
+  "supplements": [
+    {
+      "universityCode": "HKBU",
+      "programmeId": "HKBU-UG-BASCT-21",
+      "jupasCode": "JS2950",
+      "programmeName": "Bachelor of Arts, Science and Technology (Hons) in Individualised Major",
+      "majorId": "HKBU-UG-BASCT-21-M1",
+      "majorName": "Bachelor of Arts, Science and Technology (Hons) in Individualised Major",
+      "openPoolRule": {
+        "label": "Personalised Knowledge and Skills",
+        "credits": 36,
+        "eligibility": "Any course offered by HKBU except courses offered by the School of Chinese Medicine",
+        "academicSupervisorConsultationRequired": true,
+        "prerequisitesApply": true,
+        "studyPlanAndCourseSelectionApprovalRequired": true,
+        "exhaustiveCodeListPublished": false,
+        "manualReviewRequired": true
+      },
+      "courses": [
+        {
+          "code": "ITS1005",
+          "title": "Global Challenges I",
+          "credits": 3,
+          "group": "Transdisciplinary Common Core · all three courses required / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ITS1005"
+        },
+        {
+          "code": "ITS2028",
+          "title": "Global Challenges II",
+          "credits": 3,
+          "group": "Transdisciplinary Common Core · all three courses required / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ITS2028"
+        },
+        {
+          "code": "ITS2029",
+          "title": "Global Challenges II",
+          "credits": 3,
+          "group": "Transdisciplinary Common Core · all three courses required / 9 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ITS2029"
+        },
+        {
+          "code": "ITS1007",
+          "title": "Methods of Inquiry",
+          "credits": 3,
+          "group": "Learning to Learn Courses · both courses required / 6 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ITS1007"
+        },
+        {
+          "code": "RELI1006",
+          "title": "Reasoning for Real World Problem Solving",
+          "credits": 3,
+          "group": "Learning to Learn Courses · both courses required / 6 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/RELI1006"
+        },
+        {
+          "code": "ITS1018",
+          "title": "Transdisciplinary Guided Study I",
+          "credits": 3,
+          "group": "Solution-Based Learning Modules · all six Major courses required / 24 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ITS1018"
+        },
+        {
+          "code": "ITS1019",
+          "title": "Transdisciplinary Guided Study II",
+          "credits": 3,
+          "group": "Solution-Based Learning Modules · all six Major courses required / 24 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ITS1019"
+        },
+        {
+          "code": "ITS2018",
+          "title": "Transdisciplinary Problem Solving I",
+          "credits": 3,
+          "group": "Solution-Based Learning Modules · all six Major courses required / 24 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ITS2018"
+        },
+        {
+          "code": "ITS2019",
+          "title": "Transdisciplinary Problem Solving II",
+          "credits": 3,
+          "group": "Solution-Based Learning Modules · all six Major courses required / 24 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ITS2019"
+        },
+        {
+          "code": "ITS3008",
+          "title": "Transdisciplinary Knowledge Application and Transfer I",
+          "credits": 6,
+          "group": "Solution-Based Learning Modules · all six Major courses required / 24 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ITS3008"
+        },
+        {
+          "code": "ITS3009",
+          "title": "Transdisciplinary Knowledge Application and Transfer II",
+          "credits": 6,
+          "group": "Solution-Based Learning Modules · all six Major courses required / 24 units",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ITS3009"
+        },
+        {
+          "code": "ITS3005",
+          "title": "Internship",
+          "credits": 6,
+          "group": "Internship · required / 6 units",
+          "courseType": "internship",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ITS3005"
+        },
+        {
+          "code": "ITS4898",
+          "title": "Transdisciplinary Honours Project I",
+          "credits": 6,
+          "group": "Honours Project · both courses required / 12 units",
+          "courseType": "capstone",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ITS4898"
+        },
+        {
+          "code": "ITS4899",
+          "title": "Transdisciplinary Honours Project II",
+          "credits": 6,
+          "group": "Honours Project · both courses required / 12 units",
+          "courseType": "capstone",
+          "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/course/ITS4899"
+        }
+      ]
+    }
+  ]
+}

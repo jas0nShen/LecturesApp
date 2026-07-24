@@ -47,36 +47,40 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.programmeCount, 445);
   assert.equal(summary.majorCount, 678);
   assert.equal(summary.requirementCount, 4);
-  assert.equal(summary.courseCount, 14590);
+  assert.equal(summary.courseCount, 16217);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 14576);
-  assert.equal(summary.programmeWithCoursesCount, 215);
-  assert.equal(summary.pendingProgrammeCount, 229);
+  assert.equal(summary.codedCourseCount, 16203);
+  assert.equal(summary.programmeWithCoursesCount, 246);
+  assert.equal(summary.pendingProgrammeCount, 198);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
-  assert.equal(summary.coveragePercent, 48);
+  assert.equal(summary.coveragePercent, 55);
   assert.match(summary.generatedAt, /^\d{4}-\d{2}-\d{2}T/);
   assert.match(summary.generatedDate, /^\d{4}-\d{2}-\d{2}$/);
 });
 
-test('split CityU, HKBU, HKU and PolyU course shards aggregate through their stable university keys', () => {
+test('split CityU, HKBU, HKU, HKUST and PolyU course shards aggregate through their stable university keys', () => {
   const cityuCourses = ugCourseShards.getCoursesByUniversityCode('CITYU');
   const hkbuCourses = ugCourseShards.getCoursesByUniversityCode('HKBU');
   const hkuCourses = ugCourseShards.getCoursesByUniversityCode('HKU');
+  const hkustCourses = ugCourseShards.getCoursesByUniversityCode('HKUST');
   const polyuCourses = ugCourseShards.getCoursesByUniversityCode('POLYU');
 
   assert(cityuCourses.length > 1000);
   assert(hkbuCourses.length > 1000);
   assert(hkuCourses.length > 1000);
+  assert(hkustCourses.length > 1000);
   assert(polyuCourses.length > 1000);
   assert.equal(ugCourseShards.getCourseCount('CITYU'), cityuCourses.length);
   assert.equal(ugCourseShards.getCourseCount('HKBU'), hkbuCourses.length);
   assert.equal(ugCourseShards.getCourseCount('HKU'), hkuCourses.length);
+  assert.equal(ugCourseShards.getCourseCount('HKUST'), hkustCourses.length);
   assert.equal(ugCourseShards.getCourseCount('POLYU'), polyuCourses.length);
   ['CS2115', 'GE2401'].forEach((courseCode) => assert(cityuCourses.some((course) => course.courseCode === courseCode)));
   ['ACCT1005', 'DIFH4899'].forEach((courseCode) => assert(hkbuCourses.some((course) => course.courseCode === courseCode)));
   ['COMP1117', 'LLAW1001'].forEach((courseCode) => assert(hkuCourses.some((course) => course.courseCode === courseCode)));
+  ['COMP1021', 'MGMT2130'].forEach((courseCode) => assert(hkustCourses.some((course) => course.courseCode === courseCode)));
   ['COMP1004', 'ME39003'].forEach((courseCode) => assert(polyuCourses.some((course) => course.courseCode === courseCode)));
 });
 
@@ -532,10 +536,10 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert.equal(coverage.length, 8);
   assert.equal(hku.programmeCount, 136);
   assert.equal(hku.majorCount, 136);
-  assert.equal(hku.programmeWithCoursesCount, 56);
-  assert.equal(hku.pendingProgrammeCount, 80);
-  assert.equal(hku.coveragePercent, 41);
-  assert.equal(hku.codedCourseCount, 3539);
+  assert.equal(hku.programmeWithCoursesCount, 57);
+  assert.equal(hku.pendingProgrammeCount, 79);
+  assert.equal(hku.coveragePercent, 42);
+  assert.equal(hku.codedCourseCount, 3602);
   assert.match(hku.generatedDate, /^\d{4}-\d{2}-\d{2}$/);
   assert.match(hku.updatedLabel, /^更新于 \d{4}-\d{2}-\d{2}$/);
   assert.equal(hku.badge, 'COURSES');
@@ -558,10 +562,10 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert.equal(cityu.coveragePercent, 69);
   assert.equal(cityu.codedCourseCount, 3056);
   assert.equal(cityu.badge, 'COURSES');
-  assert.equal(hkbu.programmeWithCoursesCount, 21);
-  assert.equal(hkbu.pendingProgrammeCount, 1);
-  assert.equal(hkbu.coveragePercent, 95);
-  assert.equal(hkbu.codedCourseCount, 2650);
+  assert.equal(hkbu.programmeWithCoursesCount, 22);
+  assert.equal(hkbu.pendingProgrammeCount, 0);
+  assert.equal(hkbu.coveragePercent, 100);
+  assert.equal(hkbu.codedCourseCount, 2664);
   assert.equal(hkbu.badge, 'COURSES');
   assert.equal(lingnan.programmeWithCoursesCount, 23);
   assert.equal(lingnan.pendingProgrammeCount, 0);
@@ -3784,4 +3788,62 @@ test('catalogue course detail resolves only the requested university shard', () 
   assert.equal(ugService.getCatalogueCourse(cityu.id, 'CITYU').courseCode, cityu.courseCode);
   assert.equal(ugService.getCatalogueCourse(cityu.id).courseCode, cityu.courseCode);
   assert.equal(ugService.getCatalogueCourse(cityu.id, 'HKU'), null);
+});
+
+test('HKUST Finance and Quantitative Finance expose official coded requirements and bounded elective pools', () => {
+  const hkust = ugService.listUniversities().find((item) => item.code === 'HKUST');
+  const programmes = ugService.listProgrammes({ universityId: hkust.id, degreeLevel: 'undergraduate' });
+  const finance = programmes.find((item) => item.nameEn === 'BBA in Finance');
+  const quantitativeFinance = programmes.find((item) => item.nameEn === 'BSc in Quantitative Finance');
+  const financeMajor = ugService.listMajors(finance.id)[0];
+  const quantitativeFinanceMajor = ugService.listMajors(quantitativeFinance.id)[0];
+  const financeCourses = ugService.listMajorCourses(finance.id, financeMajor.id);
+  const quantitativeFinanceCourses = ugService.listMajorCourses(quantitativeFinance.id, quantitativeFinanceMajor.id);
+
+  assert.equal(finance.sourceStatus, 'course_codes_available');
+  assert.equal(financeCourses.length, 12);
+  assert(financeCourses.some((course) => (
+    course.courseCode === 'FINA3001'
+    && course.titleEn === 'Key Skills for Finance Professionals (A)'
+    && course.credits === 1
+  )));
+  assert(quantitativeFinance.sourceStatus === 'course_codes_available');
+  assert.equal(quantitativeFinanceCourses.length, 40);
+  assert.equal(new Set(quantitativeFinanceCourses.map((course) => course.courseCode)).size, 40);
+  assert.equal(
+    quantitativeFinanceCourses.filter((course) => course.requirementGroups.some((group) => group.includes('Area B'))).length,
+    12
+  );
+  assert.equal(
+    quantitativeFinanceCourses.filter((course) => course.requirementGroups.some((group) => group.includes('Area C'))).length,
+    16
+  );
+  assert(!quantitativeFinanceCourses.some((course) => /3XXX|4XXX/.test(course.courseCode)));
+});
+
+test('HKUST joint Programmes expose only their official 2025/26 first-major coded requirements', () => {
+  const hkust = ugService.listUniversities().find((item) => item.code === 'HKUST');
+  const programmes = ugService.listProgrammes({ universityId: hkust.id, degreeLevel: 'undergraduate' });
+  const cases = [
+    ['BSc in Mathematics and Economics', 45, 'MATH4994'],
+    ['BSc in Risk Management and Business Intelligence', 85, 'RMBI4980'],
+    ['BSc in Sustainable and Green Finance', 33, 'SGFN4733']
+  ];
+
+  for (const [programmeName, expectedCount, representativeCode] of cases) {
+    const programme = programmes.find((item) => item.nameEn === programmeName);
+    const majors = ugService.listMajors(programme.id);
+    const firstMajor = majors.find((major) => major.id.endsWith('-M1'));
+    const courses = ugService.listMajorCourses(programme.id, firstMajor.id);
+
+    assert.equal(programme.sourceStatus, 'course_codes_available');
+    assert.equal(courses.length, expectedCount);
+    assert.equal(new Set(courses.map((course) => course.courseCode)).size, expectedCount);
+    assert(courses.some((course) => course.courseCode === representativeCode));
+    assert(!courses.some((course) => ['ECON4000', 'FINA3000'].includes(course.courseCode)));
+  }
+
+  const rmbi = programmes.find((item) => item.nameEn === 'BSc in Risk Management and Business Intelligence');
+  const dualDegree = ugService.listMajors(rmbi.id).find((major) => major.id.endsWith('-M2'));
+  assert.equal(ugService.listMajorCourses(rmbi.id, dualDegree.id).length, 0);
 });

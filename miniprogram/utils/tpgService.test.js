@@ -5,6 +5,7 @@ const { test } = require('node:test');
 const vm = require('node:vm');
 
 const tpgService = require('./tpgService');
+const tpgCatalogue = require('./tpgCatalog');
 const tpgCourseShards = require('./tpgCourseShards');
 
 test('TPG catalogue coverage summarizes eight-school MVP data', () => {
@@ -12,8 +13,10 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
 
   assert.equal(coverage.schoolCount, 8);
   assert.equal(coverage.programmeCount, 448);
-  assert.equal(coverage.programmeWithCoursesCount, 342);
-  assert.equal(coverage.courseCount, 8985);
+  assert.equal(coverage.programmeWithCoursesCount, 346);
+  assert.equal(coverage.courseCount, 9057);
+  assert.equal(coverage.browsableProgrammeCount, 347);
+  assert.equal(coverage.courseListOnlyProgrammeCount, 1);
   assert.deepEqual(
     coverage.schools.map((school) => [school.code, school.programmeCount]),
     [
@@ -29,11 +32,83 @@ test('TPG catalogue coverage summarizes eight-school MVP data', () => {
   );
 });
 
+test('TPG status exposes blocked course-list-only Programmes as browsable but incomplete', () => {
+  const programme = {
+    courseVerificationStatus: 'blocked',
+    dataLevel: 'course_list',
+    courseGroups: [{
+      courses: [
+        { code: 'SED6026', name: 'Practicum I', creditsMin: 3, creditsMax: 6 }
+      ]
+    }]
+  };
+  const status = tpgService.getStatus(programme);
+
+  assert.equal(status.courseCount, 1);
+  assert.equal(status.hasCourseGroups, true);
+  assert.equal(status.hasBrowsableCourses, true);
+  assert.equal(status.hasStructure, false);
+  assert.equal(status.isCourseListOnly, true);
+  assert.equal(status.isComplete, false);
+  assert.equal(status.isBlocked, true);
+});
+
+test('EdUHK Educational Speech-Language Pathology runtime keeps its 23-course list blocked and preserves Practicum ranges', () => {
+  const programme = tpgService.getProgramme('EDUHK-TPG-DIR-MSCESLPLD');
+  const status = tpgService.getStatus(programme);
+  const courses = tpgService.flattenCourses(programme);
+  const practicum = courses.filter((course) => ['SED6026', 'SED6065', 'SED6066', 'SED6067'].includes(course.code));
+
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal(programme.dataLevel, 'course_list');
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(status.isCourseListOnly, true);
+  assert.equal(status.isComplete, false);
+  assert.equal(status.courseCount, 23);
+  assert.equal(courses.length, 23);
+  assert.deepEqual(practicum.map((course) => course.creditLabel), Array(4).fill('3–6 credit points'));
+});
+
+test('TPG summaries count course-list-only Programmes as browsable without increasing verified structures', () => {
+  const programme = {
+    id: 'TEST-TPG-COURSE-LIST-ONLY',
+    universityCode: 'EDUHK',
+    name: 'Course List Only',
+    academicYear: '2026-27',
+    creditsRequired: 81,
+    courseVerificationStatus: 'blocked',
+    dataLevel: 'course_list',
+    courseGroups: [{
+      courses: [
+        { code: 'SED6026', name: 'Practicum I', creditsMin: 3, creditsMax: 6 }
+      ]
+    }]
+  };
+  const before = tpgService.getSchoolCoverage();
+  tpgCatalogue.programmes.push(programme);
+  try {
+    const summary = tpgService.getProfileSummary({
+      profileType: 'tpg',
+      programmeId: programme.id,
+      universityCode: programme.universityCode
+    });
+    const after = tpgService.getSchoolCoverage();
+
+    assert.equal(summary.statusLabel, '已核实 1 门课程，规则复核中');
+    assert.equal(after.programmeWithCoursesCount, before.programmeWithCoursesCount);
+    assert.equal(after.browsableProgrammeCount, before.browsableProgrammeCount + 1);
+    assert.equal(after.courseListOnlyProgrammeCount, before.courseListOnlyProgrammeCount + 1);
+    assert.equal(after.courseCount, before.courseCount + 1);
+  } finally {
+    tpgCatalogue.programmes.pop();
+  }
+});
+
 test('generated TPG course shards preserve every Programme structure outside the loader lifecycle', () => {
   const universityCodes = tpgService.listUniversities().map((university) => university.code);
   const rows = universityCodes.flatMap((code) => tpgCourseShards.getProgrammesByUniversityCode(code));
-  assert.equal(tpgCourseShards.getProgrammeCount(), 342);
-  assert.equal(rows.length, 342);
+  assert.equal(tpgCourseShards.getProgrammeCount(), 347);
+  assert.equal(rows.length, 347);
   assert.equal(new Set(rows.map((programme) => programme.id)).size, rows.length);
   assert.equal(tpgCourseShards.getPackageNames('CITYU').length, 1);
   assert.equal(rows.find((programme) => programme.id === 'CITYU-TPG-047').courseGroups.length, 3);
@@ -2006,8 +2081,9 @@ test('Lingnan incomplete official curricula remain explicit source blockers', ()
 
   assert.equal(healthAnalytics.courseVerificationStatus, 'blocked');
   assert.equal(tpgService.getStatus(healthAnalytics).courseCount, 0);
-  assert.match(healthAnalytics.courseStatusNote, /21-credit Core group/);
-  assert.match(healthAnalytics.courseStatusNote, /does not publish any course codes/);
+  assert.match(healthAnalytics.courseStatusNote, /30-credit award/);
+  assert.match(healthAnalytics.courseStatusNote, /seven of the thirteen current courses/);
+  assert.match(healthAnalytics.courseStatusNote, /all six titles/);
 
   assert.equal(healthServices.courseVerificationStatus, 'blocked');
   assert.equal(tpgService.getStatus(healthServices).courseCount, 0);
@@ -2538,15 +2614,33 @@ test('EdUHK AI and Educational Technology preserves the complete five-plus-three
   assert.match(core.ruleText, /semester distribution differs by study mode/);
 });
 
-test('EdUHK Personal Finance Education remains blocked on the official Internship credit conflict', () => {
+test('EdUHK Personal Finance Education exposes both verified 24-credit completion paths', () => {
   const programme = tpgService.getProgramme('EDUHK-TPG-DIR-MA-PFE');
+  const courseworkTrack = programme.tracks.find((track) => track.code === 'COURSEWORK');
+  const researchTrack = programme.tracks.find((track) => track.code === 'RESEARCH');
+  const courseworkGroups = tpgService.resolveCourseGroups(programme, courseworkTrack.id);
+  const researchGroups = tpgService.resolveCourseGroups(programme, researchTrack.id);
+  const courses = programme.courseGroups.flatMap((group) => group.courses);
 
-  assert.equal(programme.courseVerificationStatus, 'blocked');
-  assert.equal(programme.dataLevel, 'programme');
-  assert.deepEqual(programme.courseGroups || [], []);
-  assert.match(programme.courseStatusNote, /BUS6046.*6 credit points/);
-  assert.match(programme.courseStatusNote, /Publishing either value would contradict another current official source/);
-  assert.match(programme.courseStatusNote, /do not force BUS6046 into the 3-credit elective rule/);
+  assert.equal(programme.courseVerificationStatus, 'verified');
+  assert.equal(programme.dataLevel, 'structure');
+  assert.equal(programme.creditsRequired, 24);
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.equal(programme.tracks.length, 2);
+  assert.equal(courses.length, 12);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 12);
+  assert.equal(courseworkGroups.reduce((sum, group) => sum + group.creditsRequired, 0), 24);
+  assert.equal(researchGroups.reduce((sum, group) => sum + group.creditsRequired, 0), 24);
+  assert.deepEqual(
+    [tpgService.getProgrammeCourse(programme.id, 'BUS6046', courseworkTrack.id).credits, tpgService.getProgrammeCourse(programme.id, 'BUS6046', courseworkTrack.id).courseKind],
+    [3, 'internship']
+  );
+  assert.deepEqual(
+    [tpgService.getProgrammeCourse(programme.id, 'BUS6040', researchTrack.id).credits, tpgService.getProgrammeCourse(programme.id, 'BUS6040', researchTrack.id).courseKind],
+    [6, 'project']
+  );
+  assert.match(programme.courseStatusNote, /current BUS6046 outline.*confirms 3 credit points/);
+  assert.match(programme.courseStatusNote, /supersedes the older 6-credit outline conflict/);
 });
 
 test('EdUHK STEM Education remains blocked rather than inferring its omitted course codes', () => {
@@ -2555,9 +2649,9 @@ test('EdUHK STEM Education remains blocked rather than inferring its omitted cou
   assert.equal(programme.courseVerificationStatus, 'blocked');
   assert.equal(programme.dataLevel, 'programme');
   assert.deepEqual(programme.courseGroups || [], []);
-  assert.match(programme.courseStatusNote, /publish every current title and credit value but omit the course codes/);
-  assert.match(programme.courseStatusNote, /only a subset of codes/);
-  assert.match(programme.courseStatusNote, /do not infer the missing codes from numbering patterns/);
+  assert.match(programme.courseStatusNote, /all six 3-credit Core Courses/);
+  assert.match(programme.courseStatusNote, /seven of the ten current titles/);
+  assert.match(programme.courseStatusNote, /do not publish a partial course pool or infer the three missing codes/);
 });
 
 test('EdUHK Master of Education remains blocked rather than carrying forward its 2024-25 code table', () => {
@@ -2802,18 +2896,14 @@ test('EdUHK Belt and Road Business Communication preserves conditional electives
 
 test('EdUHK incomplete current code tables remain blocked instead of exposing partial pools', () => {
   const expectations = [
-    ['EDUHK-TPG-DIR-MSOCSC-SCM', /superseded four-Core structure/, /do not carry forward the obsolete 2023-24 mapping/],
-    ['EDUHK-TPG-DIR-MSC-ADS', /does not publish the course codes/, /do not infer codes from related MIT offerings/],
+    ['EDUHK-TPG-DIR-MSOCSC-SCM', /PES6250-PES6259/, /do not publish a partial elective pool/],
     ['EDUHK-TPG-DIR-MSC-LSSE', /subject to review/, /do not infer codes from similarly titled learning-sciences/],
-    ['EDUHK-TPG-DIR-MSCESLPLD', /maps all 23 published titles/, /do not infer one of the possible 3\/6 distributions/],
     ['EDUHK-TPG-DIR-MSC-AIEP', /two required 3-credit Project Courses/, /do not infer codes from AI course titles/],
-    ['EDUHK-TPG-DIR-MA-MLE', /five required 3-credit Core Courses/, /do not substitute the older PSY6069/],
     ['EDUHK-TPG-DIR-MOT', /87-credit professional award/, /do not substitute similarly themed rehabilitation/],
     ['EDUHK-TPG-DIR-LLM-NSL', /LAW6008 National Security and Informational Security/, /do not infer the missing LAW codes/],
-    ['EDUHK-TPG-DIR-MA-IECE', /both co-delivering departments/, /do not map the new curriculum onto similarly titled legacy courses/],
+    ['EDUHK-TPG-DIR-MA-IECE', /co-delivering .* departments/, /do not map generic or similarly titled courses from another Programme/],
     ['EDUHK-TPG-DIR-MSOCSC-TPWB', /identify only a subset/, /do not publish a partial pool/],
-    ['EDUHK-TPG-DIR-MA-CHEM', /four of seven 3-credit Courses from one Specialisation/, /do not infer codes from titles/],
-    ['EDUHK-TPG-DIR-MA-SRE', /Programme codes A1M132\/C2M059/, /do not infer a science, robotics or project code sequence/],
+    ['EDUHK-TPG-DIR-MA-SRE', /Programme codes A1M132\/C2M059/, /do not publish a partial elective pool or infer the missing code/],
     ['EDUHK-TPG-DIR-MGM', /first-intake 2027-28/, /do not infer codes from shared management titles/],
     ['EDUHK-TPG-DIR-MM', /four of eighteen 3-credit Elective Courses/, /do not infer codes from titles/]
   ];
@@ -2866,18 +2956,26 @@ test('EdUHK ESG for Sustainable Development exposes the complete five-core plus 
   assert.match(electives.ruleText, /Choose any three of the four Elective Courses/);
 });
 
-test('EdUHK Cultural Heritage records the complete current title pools while codes remain blocked', () => {
+test('EdUHK Cultural Heritage exposes the complete current Heritage specialisation', () => {
   const programme = tpgService.getProgramme('EDUHK-TPG-DIR-MA-CHEM');
+  const courses = tpgService.flattenCourses(programme);
+  const core = programme.courseGroups.find((group) => group.id === 'core-courses');
+  const specialisation = programme.courseGroups.find((group) => group.id === 'heritage-education-management-specialisation');
 
   assert.equal(programme.creditsRequired, 24);
   assert.equal(programme.creditUnit, 'credit points');
-  assert.equal(programme.courseVerifiedAt, '2026-07-17');
-  assert.equal(programme.courseVerificationStatus, 'blocked');
-  assert.deepEqual(programme.courseGroups || [], []);
-  assert.match(programme.courseStatusNote, /Theories in Intangible Cultural Heritage/);
-  assert.match(programme.courseStatusNote, /Internship in Cultural Heritage Management/);
+  assert.equal(programme.courseVerifiedAt, '2026-07-24');
+  assert.equal(programme.courseVerificationStatus, 'verified');
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.equal(courses.length, 11);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 11);
+  assert.equal(courses.every((course) => course.credits === 3), true);
+  assert.deepEqual([core.creditsRequired, core.coursesRequired, core.courses.length], [12, 4, 4]);
+  assert.deepEqual([specialisation.creditsRequired, specialisation.coursesRequired, specialisation.courses.length], [12, 4, 7]);
+  assert.equal(courses.find((course) => course.code === 'PRJ6010').courseKind, 'project');
+  assert.equal(courses.find((course) => course.code === 'HEM6028').courseKind, 'internship');
   assert.match(programme.courseStatusNote, /Xiqu Specialisation and part-time mode are not open/);
-  assert.match(programme.courseStatusNote, /publishes no course codes for any current title/);
+  assert.match(programme.courseStatusNote, /2026-27 Semester 2 instance is not yet published/);
 });
 
 test('EdUHK Child and Family Education filters the official Thesis and Practice Tracks', () => {
@@ -4553,7 +4651,7 @@ test('CityU Juris Doctor preserves optional specializations and conditional PCLL
   assert.equal(specializations.coursesRequired, 4);
   assert.deepEqual([intensiveSeminar.creditsMin, intensiveSeminar.creditsMax], [1, 2]);
   assert.equal(intensiveSeminar.creditStatus, 'official_range');
-  assert.equal(intensiveSeminar.creditLabel, '1–2 credits');
+  assert.equal(intensiveSeminar.creditLabel, '1–2 credit units');
   assert.deepEqual(commercialLaw.countsTowardTrackIds, [
     'CITYU-TPG-059-INTERNATIONAL-COMMERCIAL-LAW',
     'CITYU-TPG-059-CHINESE-COMPARATIVE-LAW'
@@ -7476,4 +7574,26 @@ test('TPG programme source text is copyable even without a direct URL', () => {
   assert(sourceText.includes('Source file: HKU_Master_Course_Guide.pdf'));
   assert(sourceText.includes('Academic year: 2025-26'));
   assert(sourceText.includes('For planning reference only'));
+});
+
+test('EdUHK Applied Data Science and Mindfulness programmes expose their verified 2026-27 structures', () => {
+  const appliedDataScience = tpgService.getProgramme('EDUHK-TPG-DIR-MSC-ADS');
+  const mindfulness = tpgService.getProgramme('EDUHK-TPG-DIR-MA-MLE');
+
+  assert.deepEqual(
+    [appliedDataScience, mindfulness].map((programme) => [
+      programme.courseVerificationStatus,
+      programme.ruleReviewStatus,
+      programme.creditsRequired,
+      tpgService.getStatus(programme).courseCount
+    ]),
+    [
+      ['verified', 'verified', 24, 11],
+      ['verified', 'verified', 24, 15]
+    ]
+  );
+  assert.equal(tpgService.getProgrammeCourse(appliedDataScience.id, 'INT6181').name, 'Applied Programming with Python');
+  assert.equal(tpgService.getProgrammeCourse(mindfulness.id, 'PSY6103').credits, 6);
+  assert.equal(tpgService.getProgrammeCourse(mindfulness.id, 'PSY6103').courseKind, 'project');
+  assert.equal(mindfulness.courseGroups.find((group) => group.id === 'elective-courses').creditsRequired, 9);
 });

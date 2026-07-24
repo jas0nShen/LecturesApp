@@ -191,10 +191,13 @@ Page({
           selected: Boolean(selectedProgramme && selectedProgramme.id === programme.id),
           academicYear: university.academicYear,
           courseCount: status.courseCount,
-          statusLabel: status.hasCourseGroups
-            ? `${status.courseCount} 门课程`
+          statusReady: status.isComplete,
+          statusLabel: status.isCourseListOnly
+            ? `${status.courseCount} 门课程 · 规则复核中`
+            : status.hasCourseGroups
+              ? `${status.courseCount} 门课程`
             : status.hasStructure ? '结构待拆分' : '索引已导入',
-          statusBadge: status.hasCourseGroups ? 'COURSES' : status.hasStructure ? 'STRUCTURE' : 'INDEX'
+          statusBadge: status.isCourseListOnly ? 'COURSE LIST' : status.hasCourseGroups ? 'COURSES' : status.hasStructure ? 'STRUCTURE' : 'INDEX'
         };
       }),
       resultCount: programmes.length,

@@ -14,6 +14,7 @@ const SHARD_COUNT_BY_UNIVERSITY = {
   CITYU: 2,
   HKBU: 2,
   HKU: 2,
+  HKUST: 2,
   POLYU: 2
 };
 const HKU_CDS_OFFERINGS_PATH = path.join(__dirname, '..', 'data', 'hku-cds-offerings-2025.json');

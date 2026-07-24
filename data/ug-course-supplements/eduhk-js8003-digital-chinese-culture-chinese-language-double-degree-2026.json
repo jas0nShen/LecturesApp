@@ -1,0 +1,59 @@
+{
+  "provider": "The Education University of Hong Kong 2026/27 Undergraduate Programme Course List",
+  "academicYear": "2026/27",
+  "sourceUrl": "https://www.apply.eduhk.hk/ug/pdf/programmes/course_list/BA(DCCC)%26BEd(CL).pdf",
+  "officialUrl": "https://www.apply.eduhk.hk/ug/programmes/dccc_cl",
+  "supplements": [
+    {
+      "universityCode": "EDUHK",
+      "programmeId": "EDUHK-UG-JS8003-3",
+      "jupasCode": "JS8003",
+      "majorId": "EDUHK-UG-JS8003-3-M1",
+      "evidenceNote": "The official programme-specific PDF identifies Programme A5B107, Year of Entry 2026/27 and publishes 40 unique coded courses: 32 under Major Course List and 8 under Education Studies Course List. The official programme page separately publishes the 156-cp domain totals (Major 71, Education Studies 30, Field Experience 22, General Education 18, Language Enhancement 9 and Final Year Project 6), but neither source publishes per-course credit points or Year/Semester assignments. The PDF does not separate most Major courses into Discipline Studies Major versus Education Major, does not separate Education Studies into Core, Restricted Elective and Pedagogy subgroups, and does not publish selection rules. Field Experience, General Education, Language Enhancement and Final Year Project have no programme-specific coded lists and are omitted rather than assigned invented codes. This supplement exposes only the verified published course subset and does not present it as a complete 156-cp graduation structure.",
+      "courses": [
+        { "code": "CCE1001", "title": "Introduction to Chinese Classical Learning", "courseType": "programme_course", "group": "Major Course List - subgroup and selection rules not published" },
+        { "code": "CHI1559", "title": "Modern Chinese Language", "courseType": "programme_course", "group": "Major Course List - subgroup and selection rules not published" },
+        { "code": "CHI3565", "title": "Chinese Rhetoric", "courseType": "programme_course", "group": "Major Course List - subgroup and selection rules not published" },
+        { "code": "CHI3575", "title": "Chinese Etymology", "courseType": "programme_course", "group": "Major Course List - subgroup and selection rules not published" },
+        { "code": "CHI3714", "title": "Classical Chinese Language", "courseType": "programme_course", "group": "Major Course List - subgroup and selection rules not published" },
+        { "code": "CUS4019", "title": "Selected Readings of Chinese Philosophical Works", "courseType": "programme_course", "group": "Major Course List - subgroup and selection rules not published" },
+        { "code": "LIT1001", "title": "Introduction to Literature", "courseType": "programme_course", "group": "Major Course List - subgroup and selection rules not published" },
+        { "code": "LIT2003", "title": "Creative Writing", "courseType": "programme_course", "group": "Major Course List - subgroup and selection rules not published" },
+        { "code": "LIT2006", "title": "Classical Chinese Literature (I) (From Pre-Qin to Sui and Tang)", "courseType": "programme_course", "group": "Major Course List - subgroup and selection rules not published" },
+        { "code": "LIT2007", "title": "Classical Chinese Literature (II) (From Song to Qing)", "courseType": "programme_course", "group": "Major Course List - subgroup and selection rules not published" },
+        { "code": "LIT2083", "title": "Modern and Contemporary Chinese Literature", "courseType": "programme_course", "group": "Major Course List - subgroup and selection rules not published" },
+        { "code": "CHI3946", "title": "Emerging Technologies in Chinese Culture and Communication", "courseType": "programme_course", "group": "Major Course List - subgroup and selection rules not published" },
+        { "code": "CHI4948", "title": "Chinese Language Databases and Cultural Studies", "courseType": "programme_course", "group": "Major Course List - subgroup and selection rules not published" },
+        { "code": "CHI1719", "title": "Chinese Language Teaching Methods I", "courseType": "programme_course", "group": "Major Course List - subgroup and selection rules not published" },
+        { "code": "CHI3436", "title": "School-based Language Curriculum and Teaching Materials", "courseType": "programme_course", "group": "Major Course List - subgroup and selection rules not published" },
+        { "code": "CHI3614", "title": "The Instructional Psychology of Chinese Language Teaching", "courseType": "programme_course", "group": "Major Course List - subgroup and selection rules not published" },
+        { "code": "CHI3617", "title": "Theories and Practices of Classroom Language", "courseType": "programme_course", "group": "Major Course List - subgroup and selection rules not published" },
+        { "code": "CHI3677", "title": "Instruction of Various Types of Texts", "courseType": "programme_course", "group": "Major Course List - subgroup and selection rules not published" },
+        { "code": "CHI3713", "title": "Putonghua Phonetic Study and its Theoretical Applications", "courseType": "programme_course", "group": "Major Course List - subgroup and selection rules not published" },
+        { "code": "CHI3725", "title": "Chinese Language Teaching and Literacy of Information Technology", "courseType": "programme_course", "group": "Major Course List - subgroup and selection rules not published" },
+        { "code": "CHI3741", "title": "Recitation and Language Teaching", "courseType": "programme_course", "group": "Major Course List - subgroup and selection rules not published" },
+        { "code": "CHI4615", "title": "Instructional Design & Development of Chinese Language for NCS", "courseType": "programme_course", "group": "Major Course List - subgroup and selection rules not published" },
+
+        { "code": "CFA1001", "title": "Cross-faculty Core Course - Component I: Basic Law and National Security Education", "courseType": "core", "group": "Major Course List - Cross-faculty Core Course Component I" },
+        { "code": "CFB3004", "title": "Cross-faculty Core Course - Component II: Visits in Greater Bay Area", "courseType": "major_elective", "group": "Major Course List - Cross-faculty Core Course Component II published option; selection rule not published" },
+        { "code": "CFB3027", "title": "Cross-faculty Core Course - Component II: Visits in Greater Bay Area", "courseType": "major_elective", "group": "Major Course List - Cross-faculty Core Course Component II published option; selection rule not published" },
+        { "code": "CFB3032", "title": "Cross-faculty Core Course - Component II: Visits in Greater Bay Area (Cultural Immersion in Zhongshan)", "courseType": "major_elective", "group": "Major Course List - Cross-faculty Core Course Component II published option; selection rule not published" },
+        { "code": "CFC3002", "title": "Cross-faculty Core Course - Component III: Language Education in the GBA", "courseType": "major_elective", "group": "Major Course List - Cross-faculty Core Course Component III published option; selection rule not published" },
+        { "code": "CFC3003", "title": "Cross-faculty Core Course - Component III: Lingnan Art and Culture", "courseType": "major_elective", "group": "Major Course List - Cross-faculty Core Course Component III published option; selection rule not published" },
+        { "code": "CFC3030", "title": "Cross-faculty Core Course - Component III: History and Culture of GBA", "courseType": "major_elective", "group": "Major Course List - Cross-faculty Core Course Component III published option; selection rule not published" },
+        { "code": "CFC3035", "title": "Cross-faculty Core Course - Component III: Language Use in the Greater Bay Area", "courseType": "major_elective", "group": "Major Course List - Cross-faculty Core Course Component III published option; selection rule not published" },
+        { "code": "CHI3665", "title": "Putonghua Immersion Programme", "courseType": "core", "group": "Major Course List - compulsory Immersion Programme" },
+        { "code": "CHI3949", "title": "Internship", "courseType": "internship", "group": "Major Course List - Internship" },
+
+        { "code": "CHI2720", "title": "Chinese Language Teaching Methods II", "courseType": "programme_course", "group": "Education Studies Course List - subgroup and selection rules not published" },
+        { "code": "CHI3721", "title": "Chinese Language Teaching Methods III", "courseType": "programme_course", "group": "Education Studies Course List - subgroup and selection rules not published" },
+        { "code": "EDA4149", "title": "Teachers and Teaching in Context", "courseType": "programme_course", "group": "Education Studies Course List - subgroup and selection rules not published" },
+        { "code": "PFS2013", "title": "Philosophical and Socio-cultural Issues in Education", "courseType": "programme_course", "group": "Education Studies Course List - subgroup and selection rules not published" },
+        { "code": "PSY2050", "title": "Basic Psychology for Educators: Useful Concepts from Educational and Positive Psychology", "courseType": "programme_course", "group": "Education Studies Course List - subgroup and selection rules not published" },
+        { "code": "SED4116", "title": "School Guidance and Managing Diversity", "courseType": "programme_course", "group": "Education Studies Course List - subgroup and selection rules not published" },
+        { "code": "TLS3092", "title": "Effective Teaching and Positive Classroom Learning Environment", "courseType": "programme_course", "group": "Education Studies Course List - subgroup and selection rules not published" },
+        { "code": "TLS3098", "title": "Curriculum and Assessment", "courseType": "programme_course", "group": "Education Studies Course List - subgroup and selection rules not published" }
+      ]
+    }
+  ]
+}

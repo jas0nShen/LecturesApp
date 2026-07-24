@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "EDUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-24",
+  "programmes": [
+    {
+      "programmeId": "EDUHK-TPG-DIR-MA-MLE",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "credit points",
+      "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-mindfulness-and-life-education",
+      "ruleReviewStatus": "verified",
+      "statusNote": "The live official 2026-27 Programme page confirms five required 3-credit Core Courses and 9 elective credit points, for 24 credit points in total. Current official curriculum-module pages and 2026-27 Moodle records now close the complete code-to-title mapping, including the five new Core Courses and the 6-credit PSY6103 Research Project. The Elective pool is complete but individual courses are not represented as guaranteed every year.",
+      "courseGroups": [
+        {
+          "id": "core-courses",
+          "name": "Core Courses",
+          "type": "core",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five Core Courses (15 credit points).",
+          "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-mindfulness-and-life-education",
+          "courses": [
+            { "code": "PSY6098", "name": "Religions, Spirituality and Life Education", "credits": 3, "sourceUrl": "https://www.eduhk.hk/curriculum/module/PSY6098.html" },
+            { "code": "PSY6099", "name": "Mindfulness Practice", "credits": 3, "sourceUrl": "https://www.eduhk.hk/curriculum/module/PSY6099.html" },
+            { "code": "PSY6101", "name": "Mindfulness, Well-Being and Meaning in Life", "credits": 3, "sourceUrl": "https://www.eduhk.hk/curriculum/module/PSY6101.html" },
+            { "code": "PSY6100", "name": "Mindfulness in Values and Life Education", "credits": 3, "sourceUrl": "https://www.eduhk.hk/curriculum/module/PSY6100.html" },
+            { "code": "PSY6102", "name": "Research Methods in Mindfulness and Life Education", "credits": 3, "sourceUrl": "https://www.eduhk.hk/curriculum/module/PSY6102.html" }
+          ]
+        },
+        {
+          "id": "elective-courses",
+          "name": "Elective Courses",
+          "type": "elective_project",
+          "creditsRequired": 9,
+          "ruleText": "Complete 9 elective credit points: choose any three 3-credit Elective Courses, or complete the 6-credit PSY6103 Research Project plus one 3-credit Elective Course.",
+          "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-mindfulness-and-life-education",
+          "courses": [
+            { "code": "PSY6103", "name": "Research Project in Mindfulness and Life Education", "credits": 6, "courseKind": "project", "sourceUrl": "https://www.eduhk.hk/curriculum/module/PSY6103.html" },
+            { "code": "EDA6157", "name": "Chinese Traditional Values and Sustainable Development Goals (SDG) in Education", "credits": 3, "sourceUrl": "https://www.eduhk.hk/curriculum/module/EDA6157.html" },
+            { "code": "COU6035", "name": "Whole Person Development and Well-Being in Education", "credits": 3, "sourceUrl": "https://www.eduhk.hk/curriculum/module/COU6035.html" },
+            { "code": "SED6120", "name": "Inclusive Education and Diversity Management", "credits": 3, "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6120.html" },
+            { "code": "EGC6013", "name": "Global Educational Leadership and Practices", "credits": 3, "sourceUrl": "https://www.eduhk.hk/curriculum/module/EGC6013.html" },
+            { "code": "PSY6093", "name": "Application of Neuroscience in Mental Health and Education", "credits": 3, "sourceUrl": "https://www.eduhk.hk/curriculum/module/PSY6093.html" },
+            { "code": "EDS6010", "name": "Advances in Neuroscientific Studies of Learning and Teaching", "credits": 3, "sourceUrl": "https://www.eduhk.hk/curriculum/module/EDS6010.html" },
+            { "code": "INT6147", "name": "Well-being and Productivity in the Digital Age", "credits": 3, "sourceUrl": "https://www.eduhk.hk/curriculum/module/INT6147.html" },
+            { "code": "HCS6084", "name": "Therapeutic Use of Music and Imagery", "credits": 3, "sourceUrl": "https://www.eduhk.hk/curriculum/module/HCS6084.html" },
+            { "code": "HCS6085", "name": "Musicking for Life and Well-being", "credits": 3, "sourceUrl": "https://www.eduhk.hk/curriculum/module/HCS6085.html" }
+          ]
+        }
+      ]
+    }
+  ]
+}

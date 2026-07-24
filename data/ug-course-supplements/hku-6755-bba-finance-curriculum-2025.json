@@ -1,0 +1,470 @@
+{
+  "provider": "HKU Business School BBA Syllabuses 2025-26",
+  "academicYear": "2025-26 and thereafter (subject to approval)",
+  "sourceUrl": "https://ug.hkubs.hku.hk/f/page/254425/263331/BBA_Syllabuses%202025-26.pdf",
+  "officialUrl": "https://ug.hkubs.hku.hk/programme/bba",
+  "note": "The official BBA Syllabuses 2025-26 state that they apply to candidates admitted in 2025-26 and thereafter, subject to approval. This supplement is intentionally limited to HKU-UG-6755-70 / HKU-UG-6755-70-M1, the BBA Major in Finance. The 78-credit major comprises 24 credits of Faculty Core, 36 credits of Disciplinary Core, and 18 credits of Disciplinary Electives. The Finance disciplinary elective appendix is a closed dated list for this syllabus: students complete 12 credits from that list, so the 12-credit FINA4392 Dissertation can satisfy the credit requirement by itself. Courses are not necessarily offered every year. Language, Common Core, AI literacy and 108 credits of free electives remain outside this Programme-local supplement because those requirements contain open or placeholder course ranges.",
+  "supplements": [
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6755",
+      "programmeId": "HKU-UG-6755-70",
+      "programmeName": "Bachelor of Business Administration (Major in Finance)",
+      "majorId": "HKU-UG-6755-70-M1",
+      "majorName": "Bachelor of Business Administration (Major in Finance)",
+      "sourceUrl": "https://ug.hkubs.hku.hk/f/page/254425/263331/BBA_Syllabuses%202025-26.pdf",
+      "officialUrl": "https://ug.hkubs.hku.hk/programme/bba",
+      "ruleSummary": "78 major credits: 24 Faculty Core credits (ACCT1101, ECON1210, FINA1310, and one 6-credit statistics option); 36 Disciplinary Core credits (ECON1220, one 6-credit mathematics option, ECON2280, FINA2320, FINA2322, and ECON4200 capstone); and 18 Disciplinary Elective credits (one 6-credit business option plus 12 credits from the Finance disciplinary elective list).",
+      "evidenceGap": "The official document is marked subject to approval and says listed courses are not necessarily offered every year. It gives broad Year 2/3/4 ranges rather than a single normative year for the business option and Finance disciplinary electives, so those rows do not receive a recommendedYear. Language, Common Core, AI literacy and free electives are open or partly placeholder-coded requirements and are excluded.",
+      "courses": [
+        {
+          "code": "ACCT1101",
+          "title": "Introduction to financial accounting",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Faculty Core - required / 6 credits"
+        },
+        {
+          "code": "ECON1210",
+          "title": "Introductory microeconomics",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Faculty Core - required / 6 credits"
+        },
+        {
+          "code": "FINA1310",
+          "title": "Corporate finance",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Faculty Core - required / 6 credits"
+        },
+        {
+          "code": "ECON1280",
+          "title": "Analysis of economic data",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Faculty Core statistics requirement - choose ECON1280 or IIMT1640 / 6 credits; Year 1 or 2"
+        },
+        {
+          "code": "IIMT1640",
+          "title": "Probability and statistics for business",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Faculty Core statistics requirement - choose ECON1280 or IIMT1640 / 6 credits; Year 1 or 2"
+        },
+        {
+          "code": "ECON1220",
+          "title": "Introductory macroeconomics",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Disciplinary Core - required / 6 credits; Year 1 or 2"
+        },
+        {
+          "code": "MATH1009",
+          "title": "Basic mathematics for business and economics",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "core",
+          "group": "Disciplinary Core mathematics requirement - choose MATH1009 or MATH1013 / 6 credits"
+        },
+        {
+          "code": "MATH1013",
+          "title": "University mathematics II",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "core",
+          "group": "Disciplinary Core mathematics requirement - choose MATH1009 or MATH1013 / 6 credits"
+        },
+        {
+          "code": "ECON2280",
+          "title": "Introductory econometrics",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Disciplinary Core - required / 6 credits; Year 2 or 3"
+        },
+        {
+          "code": "FINA2320",
+          "title": "Investments and portfolio analysis",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Disciplinary Core - required / 6 credits; Year 2 or 3"
+        },
+        {
+          "code": "FINA2322",
+          "title": "Derivatives",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Disciplinary Core - required / 6 credits; Year 2 or 3"
+        },
+        {
+          "code": "ECON4200",
+          "title": "Senior seminar in economics and finance",
+          "credits": 6,
+          "recommendedYear": 4,
+          "courseType": "capstone",
+          "group": "Disciplinary Core capstone - required / 6 credits"
+        },
+        {
+          "code": "IIMT2601",
+          "title": "Management information systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary Elective business requirement - choose IIMT2601, MGMT2401 or MKTG2501 / 6 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "MGMT2401",
+          "title": "Principles of management",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary Elective business requirement - choose IIMT2601, MGMT2401 or MKTG2501 / 6 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "MKTG2501",
+          "title": "Introduction to marketing",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Disciplinary Elective business requirement - choose IIMT2601, MGMT2401 or MKTG2501 / 6 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "ACCT3114",
+          "title": "Valuation using financial statements",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA2311",
+          "title": "Case studies in corporate finance",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA2312",
+          "title": "Advanced corporate finance",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA2330",
+          "title": "Financial markets and institutions",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA2331",
+          "title": "Management of commercial banks",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA2332",
+          "title": "International banking",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA2334",
+          "title": "Banking - strategies, operations and controls",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA2342",
+          "title": "Insurance: theory and practice",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA2343",
+          "title": "Lending and credit in private banking and corporate banking (1)",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA2344",
+          "title": "Lending and credit in private banking and corporate banking (2)",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA2350",
+          "title": "Text analytics and natural language processing in finance and fintech",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA2382",
+          "title": "Real estate finance",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA2383",
+          "title": "International financial management",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA2385",
+          "title": "Sustainability in business and finance",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA2386",
+          "title": "Social network analysis in finance",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA2390",
+          "title": "Financial programming and databases",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA3316",
+          "title": "Investment banking: valuation, LBOs, and M&A",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA3317",
+          "title": "Entrepreneurial finance",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA3318",
+          "title": "China's financial system and markets",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA3319",
+          "title": "Green finance and impact investing",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA3322",
+          "title": "Credit risk",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA3323",
+          "title": "Fixed income securities",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA3324",
+          "title": "Interest rate models",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA3325",
+          "title": "Alternative investments",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA3326",
+          "title": "Equity valuation and investment management",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA3327",
+          "title": "Hedge funds: strategies, business management, and institutions",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA3334",
+          "title": "Private banking and wealth management",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA3335",
+          "title": "Current issues in asset management and private banking industry",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA3336",
+          "title": "Family office and asset owners",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA3337",
+          "title": "Venture capital and private equity",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA3338",
+          "title": "Multi-asset investing",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA3339",
+          "title": "Private credit",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA3340",
+          "title": "Risk management",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA3350",
+          "title": "Mathematical finance",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA3351",
+          "title": "Spreadsheet financial modeling",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA3353",
+          "title": "Regulatory, operational and valuation issues in finance institutions",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA3360",
+          "title": "Financial practicum",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA3381",
+          "title": "Behavioural finance",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA3382",
+          "title": "Structured finance and securitization",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA3383",
+          "title": "Financial regulations and compliance",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA3384",
+          "title": "Behavioural and sociological finance",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA3385",
+          "title": "ESG investing and sustainable banking",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA3386",
+          "title": "Digital assets",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA3391",
+          "title": "Reading course",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA4341",
+          "title": "Quantitative risk management",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA4354",
+          "title": "Financial engineering",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA4359",
+          "title": "Data analytics, quantitative finance, and blockchain finance",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        },
+        {
+          "code": "FINA4392",
+          "title": "Dissertation",
+          "credits": 12,
+          "courseType": "major_elective",
+          "group": "Finance disciplinary elective pool - complete 12 credits; Year 2, 3 or 4"
+        }
+      ]
+    }
+  ]
+}

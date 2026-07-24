@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "EDUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-24",
+  "programmes": [
+    {
+      "programmeId": "EDUHK-TPG-DIR-MA-PFE",
+      "status": "verified",
+      "creditsRequired": 24,
+      "creditUnit": "credit points",
+      "sourceUrl": "https://www.eduhk.hk/ssps/mapfe",
+      "ruleReviewStatus": "verified",
+      "trackSelectionOptional": false,
+      "statusNote": "The current 2026-27 Programme page publishes all twelve course codes and official outline links and confirms two 24-credit completion paths. The coursework path completes all seven 3-credit Core Courses plus one of four 3-credit Elective Courses. The approved Research Project path completes the five common Core Courses, one of BUS6073 or BUS6074, and the 6-credit BUS6040 Research Project. The current BUS6046 outline, created and published in August 2025 and linked directly from the Programme page, confirms 3 credit points; it supersedes the older 6-credit outline conflict previously recorded for this Programme.",
+      "tracks": [
+        {
+          "id": "EDUHK-TPG-DIR-MA-PFE-COURSEWORK",
+          "code": "COURSEWORK",
+          "name": "Coursework Path",
+          "type": "Completion Path",
+          "creditsRequired": 24,
+          "sourceUrl": "https://www.eduhk.hk/ssps/mapfe"
+        },
+        {
+          "id": "EDUHK-TPG-DIR-MA-PFE-RESEARCH",
+          "code": "RESEARCH",
+          "name": "Research Project Path",
+          "type": "Completion Path",
+          "creditsRequired": 24,
+          "sourceUrl": "https://www.eduhk.hk/ssps/mapfe"
+        }
+      ],
+      "courseGroups": [
+        {
+          "id": "common-core-courses",
+          "name": "Common Core Courses",
+          "type": "core",
+          "creditsRequired": 15,
+          "coursesRequired": 5,
+          "ruleText": "Complete all five common Core Courses (15 credit points) under either completion path.",
+          "appliesToTrackIds": [
+            "EDUHK-TPG-DIR-MA-PFE-COURSEWORK",
+            "EDUHK-TPG-DIR-MA-PFE-RESEARCH"
+          ],
+          "sourceUrl": "https://www.eduhk.hk/ssps/mapfe",
+          "courses": [
+            { "code": "BUS6031", "name": "Global Financial Market and Instruments", "credits": 3, "sourceUrl": "https://www.eduhk.hk/ssps/sites/default/files/pdf/course%20outline/MA%20(PFE)/BUS6031.pdf" },
+            { "code": "BUS6032", "name": "Quantitative Analysis for Financial Studies", "credits": 3, "sourceUrl": "https://www.eduhk.hk/ssps/sites/default/files/pdf/course%20outline/MA%20(PFE)/BUS6032.pdf" },
+            { "code": "BUS6033", "name": "FinTech and Consumer Finance", "credits": 3, "sourceUrl": "https://www.eduhk.hk/ssps/sites/default/files/pdf/course%20outline/MA%20(PFE)/BUS6033.pdf" },
+            { "code": "BUS6034", "name": "Ethical Issues and Decision Making in Personal Finance", "credits": 3, "sourceUrl": "https://www.eduhk.hk/ssps/sites/default/files/pdf/course%20outline/MA%20(PFE)/BUS6034.pdf" },
+            { "code": "BUS6037", "name": "Financial Literacy Education for All Aged Groups", "credits": 3, "sourceUrl": "https://www.eduhk.hk/ssps/sites/default/files/pdf/course%20outline/MA%20(PFE)/BUS6037.pdf" }
+          ]
+        },
+        {
+          "id": "advanced-core-courses",
+          "name": "Advanced Core Courses",
+          "type": "core",
+          "ruleText": "The Coursework Path completes both courses for 6 credit points. The Research Project Path completes either BUS6073 or BUS6074 for 3 credit points.",
+          "appliesToTrackIds": [
+            "EDUHK-TPG-DIR-MA-PFE-COURSEWORK",
+            "EDUHK-TPG-DIR-MA-PFE-RESEARCH"
+          ],
+          "creditsRequiredByTrackIds": {
+            "EDUHK-TPG-DIR-MA-PFE-COURSEWORK": 6,
+            "EDUHK-TPG-DIR-MA-PFE-RESEARCH": 3
+          },
+          "coursesRequiredByTrackIds": {
+            "EDUHK-TPG-DIR-MA-PFE-COURSEWORK": 2,
+            "EDUHK-TPG-DIR-MA-PFE-RESEARCH": 1
+          },
+          "sourceUrl": "https://www.eduhk.hk/ssps/mapfe",
+          "courses": [
+            { "code": "BUS6073", "name": "Investment Analysis and Risk Management", "credits": 3, "sourceUrl": "https://www.eduhk.hk/ssps/sites/default/files/pdf/course%20outline/MA%20(PFE)/BUS6073.pdf" },
+            { "code": "BUS6074", "name": "Comprehensive Practical Financial Planning", "credits": 3, "sourceUrl": "https://www.eduhk.hk/ssps/sites/default/files/pdf/course%20outline/MA%20(PFE)/BUS6074.pdf" }
+          ]
+        },
+        {
+          "id": "coursework-elective-courses",
+          "name": "Coursework Path Elective Courses",
+          "type": "track_elective",
+          "creditsRequired": 3,
+          "coursesRequired": 1,
+          "ruleText": "The Coursework Path chooses one of the four Elective Courses (3 credit points).",
+          "appliesToTrackIds": [
+            "EDUHK-TPG-DIR-MA-PFE-COURSEWORK"
+          ],
+          "sourceUrl": "https://www.eduhk.hk/ssps/mapfe",
+          "courses": [
+            { "code": "BUS6039", "name": "Contemporary Issues in Personal Finance Education", "credits": 3, "sourceUrl": "https://www.eduhk.hk/ssps/sites/default/files/pdf/course%20outline/MA%20(PFE)/BUS6039.pdf" },
+            { "code": "BUS6046", "name": "Internship Programme in Personal Finance Education", "credits": 3, "courseKind": "internship", "sourceUrl": "https://www.eduhk.hk/ssps/sites/default/files/pdf/course%20outline/MA%20(PFE)/BUS6046.pdf" },
+            { "code": "BUS6071", "name": "Sustainable Finance and ESG Investment", "credits": 3, "sourceUrl": "https://www.eduhk.hk/ssps/sites/default/files/pdf/course%20outline/MA%20(PFE)/BUS6071.pdf" },
+            { "code": "BUS6089", "name": "Family Office Management", "credits": 3, "sourceUrl": "https://www.eduhk.hk/ssps/sites/default/files/pdf/course%20outline/MA%20(PFE)/BUS6089.pdf" }
+          ]
+        },
+        {
+          "id": "research-project-path",
+          "name": "Research Project Path",
+          "type": "project",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Students approved for the Research Project Path complete BUS6040 Research Project (6 credit points) instead of the Coursework Path elective and one of BUS6073 or BUS6074.",
+          "appliesToTrackIds": [
+            "EDUHK-TPG-DIR-MA-PFE-RESEARCH"
+          ],
+          "sourceUrl": "https://www.eduhk.hk/ssps/mapfe",
+          "courses": [
+            { "code": "BUS6040", "name": "Research Project", "credits": 6, "courseKind": "project", "sourceUrl": "https://www.eduhk.hk/ssps/sites/default/files/pdf/course%20outline/MA%20(PFE)/BUS6040.pdf" }
+          ]
+        }
+      ]
+    }
+  ]
+}

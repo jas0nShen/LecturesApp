@@ -1,0 +1,131 @@
+{
+  "provider": "HKUST 2025/26 BBA in Management Major Requirements",
+  "academicYear": "2025/26",
+  "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/MGMT",
+  "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26mgmt.pdf",
+  "note": "This cohort-specific supplement binds only the plain BBA in Management Major for students admitted in 2025-26. It records every explicitly coded Major Required alternative and every course named under the three optional Options. The Major elective requirement remains an open rule: any three MGMT courses at 3000 level or above, totaling at least 9 credits; Option Required Courses may not be reused for that elective requirement. The dynamic MGMT catalogue is not converted into a permanent closed elective pool. Students may graduate without an Option; if an Option is selected, all of its requirements are additional to the Major Requirements, and courses used for another MGMT Option cannot be reused. Recommended Year and semester values are attached only where the official 2025-26 normative pathway places a named Major course or alternative group. The pathway covers the Consulting Option only, so no placement is inferred for the Corporate Social Responsibility and Sustainability or Human Resources Option courses. School Requirements, University Common Core, Legal Education, and additional electives used to reach 120 credits remain outside this Programme-local supplement.",
+  "supplements": [
+    {
+      "universityCode": "HKUST",
+      "programmeId": "HKUST-UG-JS5315-35",
+      "majorId": "HKUST-UG-JS5315-35-M1",
+      "programmeName": "BBA in Management",
+      "courseCatalogueUrl": "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/MGMT",
+      "pathwayUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26pw_mgmt.pdf",
+      "courses": [
+        {
+          "code": "MGMT3110",
+          "title": "Human Resources Management",
+          "credits": 4,
+          "recommendedYear": 2,
+          "semester": "Spring",
+          "courseType": "core",
+          "group": "Major Required · take MGMT 3110 or MGMT 3120 · Human Resources Option students must take MGMT 3110 · Consulting Option students must take MGMT 3120 · the pathway also marks Year 3 Fall as another offered term subject to program-office advice"
+        },
+        {
+          "code": "MGMT3120",
+          "title": "Managerial Leadership",
+          "credits": 4,
+          "recommendedYear": 2,
+          "semester": "Spring",
+          "courseType": "core",
+          "group": "Major Required · take MGMT 3110 or MGMT 3120 · Human Resources Option students must take MGMT 3110 · Consulting Option students must take MGMT 3120 · the pathway also marks Year 3 Fall as another offered term subject to program-office advice"
+        },
+        {
+          "code": "MGMT3130",
+          "title": "Judgement and Decision Making in Organizations",
+          "credits": 4,
+          "recommendedYear": 3,
+          "semester": "Fall",
+          "courseType": "core",
+          "group": "Major Required · take MGMT 3130 or MGMT 3140 · Consulting Option students must take MGMT 3140"
+        },
+        {
+          "code": "MGMT3140",
+          "title": "Negotiation",
+          "credits": 4,
+          "recommendedYear": 3,
+          "semester": "Fall",
+          "courseType": "core",
+          "group": "Major Required · take MGMT 3130 or MGMT 3140 · Consulting Option students must take MGMT 3140"
+        },
+        {
+          "code": "MGMT4210",
+          "title": "Corporate Strategy",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "Spring",
+          "courseType": "core",
+          "group": "Major Required · take MGMT 4210 or MGMT 4220 · Consulting and Corporate Social Responsibility and Sustainability Option students must take MGMT 4210"
+        },
+        {
+          "code": "MGMT4220",
+          "title": "Entrepreneurship and Innovation",
+          "credits": 4,
+          "recommendedYear": 3,
+          "semester": "Spring",
+          "courseType": "core",
+          "group": "Major Required · take MGMT 4210 or MGMT 4220 · Consulting and Corporate Social Responsibility and Sustainability Option students must take MGMT 4210"
+        },
+        {
+          "code": "MGMT3160",
+          "title": "Environmental Business Strategies",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Optional Consulting Option · take MGMT 3110, MGMT 3160, or MGMT 4230, plus MGMT 4250 · complete in addition to Major Requirements · no cross-Option reuse"
+        },
+        {
+          "code": "MGMT4230",
+          "title": "International Management",
+          "credits": 4,
+          "courseType": "major_elective",
+          "group": "Optional Consulting Option · take MGMT 3110, MGMT 3160, or MGMT 4230, plus MGMT 4250 · complete in addition to Major Requirements · no cross-Option reuse"
+        },
+        {
+          "code": "MGMT4250",
+          "title": "Management Consulting",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "Fall",
+          "courseType": "major_elective",
+          "group": "Optional Consulting Option · required together with one of MGMT 3110, MGMT 3160, or MGMT 4230 · complete in addition to Major Requirements · no cross-Option reuse"
+        },
+        {
+          "code": "MGMT3170",
+          "title": "Managing CSR (Corporate Social Responsibility)",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Optional Corporate Social Responsibility and Sustainability Option · take MGMT 3160 and MGMT 3170 · MGMT 4210 must also be used for the Major Required alternative · complete in addition to Major Requirements · no cross-Option reuse"
+        },
+        {
+          "code": "MGMT4270",
+          "title": "Training and Development",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Optional Human Resources Option · choose two of MGMT 4270, MGMT 4280, MGMT 4290, and MGMT 4300 · MGMT 3110 must also be used for the Major Required alternative · complete in addition to Major Requirements · no cross-Option reuse"
+        },
+        {
+          "code": "MGMT4280",
+          "title": "Transnational Legal Issues and Dispute Settlement",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Optional Human Resources Option · choose two of MGMT 4270, MGMT 4280, MGMT 4290, and MGMT 4300 · MGMT 3110 must also be used for the Major Required alternative · complete in addition to Major Requirements · no cross-Option reuse"
+        },
+        {
+          "code": "MGMT4290",
+          "title": "HR Analytics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Optional Human Resources Option · choose two of MGMT 4270, MGMT 4280, MGMT 4290, and MGMT 4300 · MGMT 3110 must also be used for the Major Required alternative · complete in addition to Major Requirements · no cross-Option reuse"
+        },
+        {
+          "code": "MGMT4300",
+          "title": "Knowing and Managing Your Social Networks for Careers and Business",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Optional Human Resources Option · choose two of MGMT 4270, MGMT 4280, MGMT 4290, and MGMT 4300 · MGMT 3110 must also be used for the Major Required alternative · complete in addition to Major Requirements · no cross-Option reuse"
+        }
+      ]
+    }
+  ]
+}

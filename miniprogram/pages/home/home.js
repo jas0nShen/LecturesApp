@@ -5,6 +5,7 @@ const ugService = require('../../utils/ugService');
 function buildTpgNextSteps(summary) {
   if (!summary) return [];
   const hasCourses = summary.courseCount > 0;
+  const isCourseListOnly = Boolean(summary.isCourseListOnly);
   return [
     {
       status: 'DONE',
@@ -15,17 +16,21 @@ function buildTpgNextSteps(summary) {
     {
       status: hasCourses ? 'READY' : 'CHECKING',
       statusLabel: hasCourses ? '可查看' : '复核中',
-      title: hasCourses ? '课程结构可查看' : '课程清单待开放',
+      title: isCourseListOnly ? '课程清单可浏览' : hasCourses ? '课程结构可查看' : '课程清单待开放',
       copy: hasCourses
-        ? `${summary.statusLabel}，可以先浏览必修/选修分组。`
+        ? isCourseListOnly
+          ? `${summary.statusLabel}；仅供浏览，不代表毕业规则已开放。`
+          : `${summary.statusLabel}，可以先浏览必修/选修分组。`
         : '已保留 Programme 入口；课程组完成复核后会直接显示。'
     },
     {
-      status: hasCourses ? 'NEXT' : 'SAFE',
-      statusLabel: hasCourses ? '下一步' : '安全提示',
-      title: hasCourses ? '下一步：对照官方要求' : '下一步：查看资料来源',
+      status: hasCourses && !isCourseListOnly ? 'NEXT' : 'SAFE',
+      statusLabel: hasCourses && !isCourseListOnly ? '下一步' : '安全提示',
+      title: isCourseListOnly ? '暂不计算毕业进度' : hasCourses ? '下一步：对照官方要求' : '下一步：查看资料来源',
       copy: hasCourses
-        ? '毕业检查页会展示课程组，但正式选课前仍以学校官网为准。'
+        ? isCourseListOnly
+          ? '课程分组和逐门学分仍待复核，不开放已修记录、计划或毕业判断。'
+          : '毕业检查页会展示课程组，但正式选课前仍以学校官网为准。'
         : '课程组未开放前，暂不生成该 Programme 的毕业完成度。'
     }
   ];

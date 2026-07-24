@@ -1,0 +1,116 @@
+{
+  "provider": "HKUST 2025/26 BBA in Marketing Major Requirements and MARK Course Catalogue",
+  "academicYear": "2025/26",
+  "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/MARK",
+  "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26mark.pdf",
+  "note": "This cohort-specific supplement binds only the plain BBA in Marketing Major for students admitted in 2025-26. The official Major Requirements name MARK 3220, MARK 3420, and MARK 4210 as required courses and define the elective requirement as any three MARK courses at 3000 level or above totaling at least 12 credits. The remaining rows are a dated snapshot of the eligible 2025-26 MARK catalogue, not a permanent closed graduation pool; actual availability and later catalogue changes still require official confirmation. MARK 4290 has an official 0-4 credit range and MARK 4980 has an official 2-4 credit range, so both use credits 0 locally and must not add a guessed value to known-credit totals. Recommended Year and semester values come only from the named rows in the official 2025-26 normative pathway. The three anonymous 4-credit elective placements are not assigned to individual catalogue courses. School Requirements, University Common Core, Legal Education, and additional electives used to reach 120 credits remain outside this Programme-local supplement.",
+  "supplements": [
+    {
+      "universityCode": "HKUST",
+      "programmeId": "HKUST-UG-JS5316-36",
+      "majorId": "HKUST-UG-JS5316-36-M1",
+      "programmeName": "BBA in Marketing",
+      "courseCatalogueUrl": "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/MARK",
+      "pathwayUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26pw_mark.pdf",
+      "courses": [
+        {
+          "code": "MARK3220",
+          "title": "Marketing Research",
+          "credits": 4,
+          "recommendedYear": 3,
+          "semester": "Fall",
+          "courseType": "core",
+          "group": "Major Required · the pathway also marks Year 2 Spring as another offered term subject to program-office advice"
+        },
+        {
+          "code": "MARK3420",
+          "title": "Consumer Behavior",
+          "credits": 4,
+          "recommendedYear": 2,
+          "semester": "Spring",
+          "courseType": "core",
+          "group": "Major Required · the pathway also marks Year 3 Fall as another offered term subject to program-office advice"
+        },
+        {
+          "code": "MARK4210",
+          "title": "Strategic Marketing",
+          "credits": 4,
+          "recommendedYear": 4,
+          "semester": "Spring",
+          "courseType": "core",
+          "group": "Major Required"
+        },
+        {
+          "code": "MARK3410",
+          "title": "Promotion and Advertising Management",
+          "credits": 4,
+          "courseType": "major_elective",
+          "group": "2025-26 MARK 3000-level-or-above catalogue snapshot · choose any 3 courses totaling at least 12 credits · open pool, not a permanent closed graduation list"
+        },
+        {
+          "code": "MARK3430",
+          "title": "Global Marketing",
+          "credits": 4,
+          "courseType": "major_elective",
+          "group": "2025-26 MARK 3000-level-or-above catalogue snapshot · choose any 3 courses totaling at least 12 credits · open pool, not a permanent closed graduation list"
+        },
+        {
+          "code": "MARK3460",
+          "title": "Retail management in the digital age",
+          "credits": 4,
+          "courseType": "major_elective",
+          "group": "2025-26 MARK 3000-level-or-above catalogue snapshot · choose any 3 courses totaling at least 12 credits · open pool, not a permanent closed graduation list"
+        },
+        {
+          "code": "MARK3480",
+          "title": "Pricing Strategy",
+          "credits": 4,
+          "courseType": "major_elective",
+          "group": "2025-26 MARK 3000-level-or-above catalogue snapshot · choose any 3 courses totaling at least 12 credits · open pool, not a permanent closed graduation list"
+        },
+        {
+          "code": "MARK3510",
+          "title": "Business to Business Marketing",
+          "credits": 4,
+          "courseType": "major_elective",
+          "group": "2025-26 MARK 3000-level-or-above catalogue snapshot · choose any 3 courses totaling at least 12 credits · open pool, not a permanent closed graduation list"
+        },
+        {
+          "code": "MARK3610",
+          "title": "Digital Marketing",
+          "credits": 4,
+          "courseType": "major_elective",
+          "group": "2025-26 MARK 3000-level-or-above catalogue snapshot · choose any 3 courses totaling at least 12 credits · open pool, not a permanent closed graduation list"
+        },
+        {
+          "code": "MARK3620",
+          "title": "Marketing Analytics",
+          "credits": 4,
+          "courseType": "major_elective",
+          "group": "2025-26 MARK 3000-level-or-above catalogue snapshot · choose any 3 courses totaling at least 12 credits · open pool, not a permanent closed graduation list"
+        },
+        {
+          "code": "MARK4290",
+          "title": "Special Topics",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "2025-26 MARK 3000-level-or-above catalogue snapshot · choose any 3 courses totaling at least 12 credits · official variable credit range 0-4 · open pool, not a permanent closed graduation list"
+        },
+        {
+          "code": "MARK4450",
+          "title": "Brand Management",
+          "credits": 4,
+          "courseType": "major_elective",
+          "group": "2025-26 MARK 3000-level-or-above catalogue snapshot · choose any 3 courses totaling at least 12 credits · open pool, not a permanent closed graduation list"
+        },
+        {
+          "code": "MARK4980",
+          "title": "Independent Study",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "2025-26 MARK 3000-level-or-above catalogue snapshot · choose any 3 courses totaling at least 12 credits · official variable credit range 2-4 · open pool, not a permanent closed graduation list"
+        }
+      ]
+    }
+  ]
+}

@@ -29149,5 +29149,159 @@ module.exports = [
     "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2420/",
     "sourceProvider": "HKBU University Student Handbook 2025-2026",
     "academicYear": "2025-2026"
+  },
+  {
+    "id": "HKBU-UG-BSC-12-M1-SUP-SCIE1006-1",
+    "programmeId": "HKBU-UG-BSC-12",
+    "majorId": "HKBU-UG-BSC-12-M1",
+    "courseCode": "SCIE1006",
+    "titleEn": "Big Data and Smart Technology",
+    "titleZh": "Big Data and Smart Technology",
+    "credits": 3,
+    "recommendedYear": 0,
+    "semester": "",
+    "courseType": "core",
+    "requirementGroups": [
+      "Science Common Core Courses · all required / 6 units"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-biology/bachelor-of-science-honours-in-applied-biology",
+    "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-biology/bachelor-of-science-honours-in-applied-biology",
+    "sourceProvider": "HKBU University Student Handbook 2025-2026",
+    "academicYear": "2025-2026"
+  },
+  {
+    "id": "HKBU-UG-BSC-12-M1-SUP-SCIE1007-2",
+    "programmeId": "HKBU-UG-BSC-12",
+    "majorId": "HKBU-UG-BSC-12-M1",
+    "courseCode": "SCIE1007",
+    "titleEn": "Molecular Science in Daily Life",
+    "titleZh": "Molecular Science in Daily Life",
+    "credits": 3,
+    "recommendedYear": 0,
+    "semester": "",
+    "courseType": "core",
+    "requirementGroups": [
+      "Science Common Core Courses · all required / 6 units"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-biology/bachelor-of-science-honours-in-applied-biology",
+    "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-biology/bachelor-of-science-honours-in-applied-biology",
+    "sourceProvider": "HKBU University Student Handbook 2025-2026",
+    "academicYear": "2025-2026"
+  },
+  {
+    "id": "HKBU-UG-BSC-12-M1-SUP-BIOL1005-3",
+    "programmeId": "HKBU-UG-BSC-12",
+    "majorId": "HKBU-UG-BSC-12-M1",
+    "courseCode": "BIOL1005",
+    "titleEn": "Introduction to Biology",
+    "titleZh": "Introduction to Biology",
+    "credits": 3,
+    "recommendedYear": 0,
+    "semester": "",
+    "courseType": "core",
+    "requirementGroups": [
+      "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-biology/bachelor-of-science-honours-in-applied-biology",
+    "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-biology/bachelor-of-science-honours-in-applied-biology",
+    "sourceProvider": "HKBU University Student Handbook 2025-2026",
+    "academicYear": "2025-2026"
+  },
+  {
+    "id": "HKBU-UG-BSC-12-M1-SUP-CHEM1005-4",
+    "programmeId": "HKBU-UG-BSC-12",
+    "majorId": "HKBU-UG-BSC-12-M1",
+    "courseCode": "CHEM1005",
+    "titleEn": "Introduction to Chemistry",
+    "titleZh": "Introduction to Chemistry",
+    "credits": 3,
+    "recommendedYear": 0,
+    "semester": "",
+    "courseType": "core",
+    "requirementGroups": [
+      "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-biology/bachelor-of-science-honours-in-applied-biology",
+    "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-biology/bachelor-of-science-honours-in-applied-biology",
+    "sourceProvider": "HKBU University Student Handbook 2025-2026",
+    "academicYear": "2025-2026"
+  },
+  {
+    "id": "HKBU-UG-BSC-12-M1-SUP-COMP1005-5",
+    "programmeId": "HKBU-UG-BSC-12",
+    "majorId": "HKBU-UG-BSC-12-M1",
+    "courseCode": "COMP1005",
+    "titleEn": "Essence of Computing",
+    "titleZh": "Essence of Computing",
+    "credits": 3,
+    "recommendedYear": 0,
+    "semester": "",
+    "courseType": "core",
+    "requirementGroups": [
+      "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-biology/bachelor-of-science-honours-in-applied-biology",
+    "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-biology/bachelor-of-science-honours-in-applied-biology",
+    "sourceProvider": "HKBU University Student Handbook 2025-2026",
+    "academicYear": "2025-2026"
+  },
+  {
+    "id": "HKBU-UG-BSC-12-M1-SUP-GEST1005-6",
+    "programmeId": "HKBU-UG-BSC-12",
+    "majorId": "HKBU-UG-BSC-12-M1",
+    "courseCode": "GEST1005",
+    "titleEn": "Introduction to Green Energy and Smart Technology",
+    "titleZh": "Introduction to Green Energy and Smart Technology",
+    "credits": 3,
+    "recommendedYear": 0,
+    "semester": "",
+    "courseType": "core",
+    "requirementGroups": [
+      "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-biology/bachelor-of-science-honours-in-applied-biology",
+    "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-biology/bachelor-of-science-honours-in-applied-biology",
+    "sourceProvider": "HKBU University Student Handbook 2025-2026",
+    "academicYear": "2025-2026"
+  },
+  {
+    "id": "HKBU-UG-BSC-12-M1-SUP-MATH1025-7",
+    "programmeId": "HKBU-UG-BSC-12",
+    "majorId": "HKBU-UG-BSC-12-M1",
+    "courseCode": "MATH1025",
+    "titleEn": "Understanding Mathematics and Statistics",
+    "titleZh": "Understanding Mathematics and Statistics",
+    "credits": 3,
+    "recommendedYear": 0,
+    "semester": "",
+    "courseType": "core",
+    "requirementGroups": [
+      "Science Common Core Courses · closed displayed pool: choose 3 of 5 / 9 units"
+    ],
+    "prerequisites": "",
+    "exclusions": "",
+    "description": "",
+    "sourceUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-biology/bachelor-of-science-honours-in-applied-biology",
+    "officialUrl": "https://handbook.ar.hkbu.edu.hk/2025-2026/academic-programmes/undergraduate-programmes/faculty-of-science-1/department-of-biology/bachelor-of-science-honours-in-applied-biology",
+    "sourceProvider": "HKBU University Student Handbook 2025-2026",
+    "academicYear": "2025-2026"
   }
 ];

@@ -7,8 +7,11 @@
     {
       "programmeId": "LINGNAN-TPG-DIR-21-001281-L6",
       "status": "blocked",
+      "verifiedAt": "2026-07-24",
+      "creditsRequired": 30,
+      "creditUnit": "credits",
       "sourceUrl": "https://www.ln.edu.hk/sgs/ham/programme/programme-structure",
-      "statusNote": "The live official Programme Structure publishes a 21-credit Core group, one 3-credit Elective and a 6-credit Capstone Project, with every current course title, but it does not publish any course codes. The titles are not converted into invented codes, so the course structure remains unavailable pending an official coded curriculum."
+      "statusNote": "The live official Programme Structure confirms a 30-credit award comprising seven 3-credit Core Courses, one of five 3-credit Elective Courses and the 6-credit Health Analytics and Management Project. The official HAM_TPG course-description PDF, last updated 12 February 2025, identifies exact current code-title-credit matches for only seven of the thirteen current courses: HAM501-HAM504, HAM509, HAM510 and the HAM506 Capstone Project. It does not identify current codes for Managing Service Users and Stakeholders, Chinese Medicine in Health and Social Services, Leadership and Interpersonal Skills for Technology Professionals or AI in Health Data Analysis and Management. Its HAM505 Gerontechnology and Innovation in Health Services and HAM507 Understanding Health and Social Care titles also differ from the current Modern Technology in Health and Social Services and Theorising Health and Social Services titles, so those older mappings are not carried forward. The live page further marks Modern Technology, Theorising and AI as subject to Senate approval. Keep the Programme blocked until a current official coded table resolves all six titles and their approval status; do not publish the seven known courses as a complete pool or infer replacements from the 2025 PDF."
     },
     {
       "programmeId": "LINGNAN-TPG-DIR-19-000493-L6",

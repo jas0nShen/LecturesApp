@@ -166,7 +166,22 @@
         {
           "programmeCode": "MA(PFE)",
           "name": "Master of Arts in Personal Finance Education",
-          "sourceUrl": "https://www.eduhk.hk/ssps/mapfe"
+          "sourceUrl": "https://www.eduhk.hk/ssps/mapfe",
+          "trackSelectionOptional": false,
+          "tracks": [
+            {
+              "code": "COURSEWORK",
+              "name": "Coursework Path",
+              "type": "Completion Path",
+              "sourceUrl": "https://www.eduhk.hk/ssps/mapfe"
+            },
+            {
+              "code": "RESEARCH",
+              "name": "Research Project Path",
+              "type": "Completion Path",
+              "sourceUrl": "https://www.eduhk.hk/ssps/mapfe"
+            }
+          ]
         },
         {
           "programmeCode": "MA(PPE)",

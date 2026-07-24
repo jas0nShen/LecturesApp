@@ -24,8 +24,8 @@
     </view>
   </view>
 
-  <view class="status-card {{hasCourseGroups ? 'status-ready' : ''}}">
-    <view class="status-mark">{{hasCourseGroups ? '已开放' : '复核中'}}</view>
+  <view class="status-card {{courseStructureOpen ? 'status-ready' : ''}}">
+    <view class="status-mark">{{courseStructureOpen ? '已开放' : (isCourseListOnly ? '清单复核中' : '复核中')}}</view>
     <view class="status-content">
       <view class="status-title">{{statusTitle}}</view>
       <view class="status-copy">{{statusCopy}}</view>
@@ -43,7 +43,8 @@
   </view>
 
   <view wx:if="{{hasCourseGroups}}" class="section">
-    <view class="section-kicker">课程结构</view>
+    <view class="section-kicker">{{isCourseListOnly ? '已核实课程清单' : '课程结构'}}</view>
+    <view wx:if="{{isCourseListOnly}}" class="pending-copy">仅供浏览课程代码、名称与官方学分范围；分组和毕业规则仍在复核，不计算完成进度。</view>
     <view wx:if="{{selectedTrack}}" class="pending-copy">当前方向：{{selectedTrack.name}}</view>
     <view wx:elif="{{trackSelectionRequired}}" class="pending-copy">此 Programme 必须先选择 Track，选择后才会显示对应课程范围。</view>
     <view

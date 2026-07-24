@@ -896,6 +896,123 @@ module.exports = [
     ]
   },
   {
+    "id": "EDUHK-TPG-DIR-MA-MLE",
+    "courseGroups": [
+      {
+        "id": "core-courses",
+        "name": "Core Courses",
+        "type": "core",
+        "creditsRequired": 15,
+        "coursesRequired": 5,
+        "ruleText": "Complete all five Core Courses (15 credit points).",
+        "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-mindfulness-and-life-education",
+        "courses": [
+          {
+            "code": "PSY6098",
+            "name": "Religions, Spirituality and Life Education",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/PSY6098.html"
+          },
+          {
+            "code": "PSY6099",
+            "name": "Mindfulness Practice",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/PSY6099.html"
+          },
+          {
+            "code": "PSY6101",
+            "name": "Mindfulness, Well-Being and Meaning in Life",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/PSY6101.html"
+          },
+          {
+            "code": "PSY6100",
+            "name": "Mindfulness in Values and Life Education",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/PSY6100.html"
+          },
+          {
+            "code": "PSY6102",
+            "name": "Research Methods in Mindfulness and Life Education",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/PSY6102.html"
+          }
+        ]
+      },
+      {
+        "id": "elective-courses",
+        "name": "Elective Courses",
+        "type": "elective_project",
+        "creditsRequired": 9,
+        "ruleText": "Complete 9 elective credit points: choose any three 3-credit Elective Courses, or complete the 6-credit PSY6103 Research Project plus one 3-credit Elective Course.",
+        "sourceUrl": "https://aedi.eduhk.hk/programmes/postgraduate-programmes/master-of-arts-in-mindfulness-and-life-education",
+        "courses": [
+          {
+            "code": "PSY6103",
+            "name": "Research Project in Mindfulness and Life Education",
+            "credits": 6,
+            "courseKind": "project",
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/PSY6103.html"
+          },
+          {
+            "code": "EDA6157",
+            "name": "Chinese Traditional Values and Sustainable Development Goals (SDG) in Education",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/EDA6157.html"
+          },
+          {
+            "code": "COU6035",
+            "name": "Whole Person Development and Well-Being in Education",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/COU6035.html"
+          },
+          {
+            "code": "SED6120",
+            "name": "Inclusive Education and Diversity Management",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6120.html"
+          },
+          {
+            "code": "EGC6013",
+            "name": "Global Educational Leadership and Practices",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/EGC6013.html"
+          },
+          {
+            "code": "PSY6093",
+            "name": "Application of Neuroscience in Mental Health and Education",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/PSY6093.html"
+          },
+          {
+            "code": "EDS6010",
+            "name": "Advances in Neuroscientific Studies of Learning and Teaching",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/EDS6010.html"
+          },
+          {
+            "code": "INT6147",
+            "name": "Well-being and Productivity in the Digital Age",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/INT6147.html"
+          },
+          {
+            "code": "HCS6084",
+            "name": "Therapeutic Use of Music and Imagery",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/HCS6084.html"
+          },
+          {
+            "code": "HCS6085",
+            "name": "Musicking for Life and Well-being",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/HCS6085.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "EDUHK-TPG-DIR-MA-NMSM",
     "courseGroups": [
       {
@@ -1375,6 +1492,101 @@ module.exports = [
             "sourceUrl": "https://www.eduhk.hk/ece/en/learning_teaching.php?s=courses"
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": "EDUHK-TPG-DIR-MA-CHEM",
+    "courseGroups": [
+      {
+        "id": "core-courses",
+        "name": "Core Courses",
+        "type": "core",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Complete all four Core Courses (12 credit points).",
+        "courses": [
+          {
+            "code": "HEM6020",
+            "name": "Theories in Intangible Cultural Heritage",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/HEM6020.html"
+          },
+          {
+            "code": "HEM6021",
+            "name": "Methods in Research for Cultural Heritage Education and Management",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/HEM6021.html"
+          },
+          {
+            "code": "HEM6022",
+            "name": "Development and Management of Cultural Industries",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/HEM6022.html"
+          },
+          {
+            "code": "CHI6936",
+            "name": "Study on Chinese Culture",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/CHI6936.html"
+          }
+        ],
+        "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=9118"
+      },
+      {
+        "id": "heritage-education-management-specialisation",
+        "name": "Heritage Education and Management Specialisation",
+        "type": "elective",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Choose any four of the seven Courses in the Heritage Education and Management Specialisation (12 credit points).",
+        "courses": [
+          {
+            "code": "HEM6023",
+            "name": "Cultural Heritage Studies in China",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/HEM6023.html"
+          },
+          {
+            "code": "HEM6024",
+            "name": "Cultural Tourism: Planning and Management",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/HEM6024.html"
+          },
+          {
+            "code": "HEM6025",
+            "name": "Exploring Hong Kong's Intangible Cultural Heritage",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/HEM6025.html"
+          },
+          {
+            "code": "HEM6026",
+            "name": "History, Society and Culture of Lingnan",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/HEM6026.html"
+          },
+          {
+            "code": "HEM6027",
+            "name": "Communication and Marketing in Cultural Industries",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/HEM6027.html"
+          },
+          {
+            "code": "PRJ6010",
+            "name": "Independent Project in Cultural Heritage Management",
+            "credits": 3,
+            "courseKind": "project",
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/PRJ6010.html"
+          },
+          {
+            "code": "HEM6028",
+            "name": "Internship in Cultural Heritage Management",
+            "credits": 3,
+            "courseKind": "internship",
+            "sourceUrl": "https://moodle.eduhk.hk/course/search.php?search=HEM6028"
+          }
+        ],
+        "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=9118"
       }
     ]
   },
@@ -2201,6 +2413,149 @@ module.exports = [
     ]
   },
   {
+    "id": "EDUHK-TPG-DIR-MA-PFE",
+    "courseGroups": [
+      {
+        "id": "common-core-courses",
+        "name": "Common Core Courses",
+        "type": "core",
+        "creditsRequired": 15,
+        "coursesRequired": 5,
+        "ruleText": "Complete all five common Core Courses (15 credit points) under either completion path.",
+        "appliesToTrackIds": [
+          "EDUHK-TPG-DIR-MA-PFE-COURSEWORK",
+          "EDUHK-TPG-DIR-MA-PFE-RESEARCH"
+        ],
+        "sourceUrl": "https://www.eduhk.hk/ssps/mapfe",
+        "courses": [
+          {
+            "code": "BUS6031",
+            "name": "Global Financial Market and Instruments",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/ssps/sites/default/files/pdf/course%20outline/MA%20(PFE)/BUS6031.pdf"
+          },
+          {
+            "code": "BUS6032",
+            "name": "Quantitative Analysis for Financial Studies",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/ssps/sites/default/files/pdf/course%20outline/MA%20(PFE)/BUS6032.pdf"
+          },
+          {
+            "code": "BUS6033",
+            "name": "FinTech and Consumer Finance",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/ssps/sites/default/files/pdf/course%20outline/MA%20(PFE)/BUS6033.pdf"
+          },
+          {
+            "code": "BUS6034",
+            "name": "Ethical Issues and Decision Making in Personal Finance",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/ssps/sites/default/files/pdf/course%20outline/MA%20(PFE)/BUS6034.pdf"
+          },
+          {
+            "code": "BUS6037",
+            "name": "Financial Literacy Education for All Aged Groups",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/ssps/sites/default/files/pdf/course%20outline/MA%20(PFE)/BUS6037.pdf"
+          }
+        ]
+      },
+      {
+        "id": "advanced-core-courses",
+        "name": "Advanced Core Courses",
+        "type": "core",
+        "ruleText": "The Coursework Path completes both courses for 6 credit points. The Research Project Path completes either BUS6073 or BUS6074 for 3 credit points.",
+        "appliesToTrackIds": [
+          "EDUHK-TPG-DIR-MA-PFE-COURSEWORK",
+          "EDUHK-TPG-DIR-MA-PFE-RESEARCH"
+        ],
+        "creditsRequiredByTrackIds": {
+          "EDUHK-TPG-DIR-MA-PFE-COURSEWORK": 6,
+          "EDUHK-TPG-DIR-MA-PFE-RESEARCH": 3
+        },
+        "coursesRequiredByTrackIds": {
+          "EDUHK-TPG-DIR-MA-PFE-COURSEWORK": 2,
+          "EDUHK-TPG-DIR-MA-PFE-RESEARCH": 1
+        },
+        "sourceUrl": "https://www.eduhk.hk/ssps/mapfe",
+        "courses": [
+          {
+            "code": "BUS6073",
+            "name": "Investment Analysis and Risk Management",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/ssps/sites/default/files/pdf/course%20outline/MA%20(PFE)/BUS6073.pdf"
+          },
+          {
+            "code": "BUS6074",
+            "name": "Comprehensive Practical Financial Planning",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/ssps/sites/default/files/pdf/course%20outline/MA%20(PFE)/BUS6074.pdf"
+          }
+        ]
+      },
+      {
+        "id": "coursework-elective-courses",
+        "name": "Coursework Path Elective Courses",
+        "type": "track_elective",
+        "creditsRequired": 3,
+        "coursesRequired": 1,
+        "ruleText": "The Coursework Path chooses one of the four Elective Courses (3 credit points).",
+        "appliesToTrackIds": [
+          "EDUHK-TPG-DIR-MA-PFE-COURSEWORK"
+        ],
+        "sourceUrl": "https://www.eduhk.hk/ssps/mapfe",
+        "courses": [
+          {
+            "code": "BUS6039",
+            "name": "Contemporary Issues in Personal Finance Education",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/ssps/sites/default/files/pdf/course%20outline/MA%20(PFE)/BUS6039.pdf"
+          },
+          {
+            "code": "BUS6046",
+            "name": "Internship Programme in Personal Finance Education",
+            "credits": 3,
+            "courseKind": "internship",
+            "sourceUrl": "https://www.eduhk.hk/ssps/sites/default/files/pdf/course%20outline/MA%20(PFE)/BUS6046.pdf"
+          },
+          {
+            "code": "BUS6071",
+            "name": "Sustainable Finance and ESG Investment",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/ssps/sites/default/files/pdf/course%20outline/MA%20(PFE)/BUS6071.pdf"
+          },
+          {
+            "code": "BUS6089",
+            "name": "Family Office Management",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/ssps/sites/default/files/pdf/course%20outline/MA%20(PFE)/BUS6089.pdf"
+          }
+        ]
+      },
+      {
+        "id": "research-project-path",
+        "name": "Research Project Path",
+        "type": "project",
+        "creditsRequired": 6,
+        "coursesRequired": 1,
+        "ruleText": "Students approved for the Research Project Path complete BUS6040 Research Project (6 credit points) instead of the Coursework Path elective and one of BUS6073 or BUS6074.",
+        "appliesToTrackIds": [
+          "EDUHK-TPG-DIR-MA-PFE-RESEARCH"
+        ],
+        "sourceUrl": "https://www.eduhk.hk/ssps/mapfe",
+        "courses": [
+          {
+            "code": "BUS6040",
+            "name": "Research Project",
+            "credits": 6,
+            "courseKind": "project",
+            "sourceUrl": "https://www.eduhk.hk/ssps/sites/default/files/pdf/course%20outline/MA%20(PFE)/BUS6040.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "EDUHK-TPG-DIR-MA-PPE",
     "courseGroups": [
       {
@@ -2925,6 +3280,99 @@ module.exports = [
     ]
   },
   {
+    "id": "EDUHK-TPG-DIR-MSC-ADS",
+    "courseGroups": [
+      {
+        "id": "core-courses",
+        "name": "Core Courses",
+        "type": "core",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Complete all four Core Courses (12 credit points).",
+        "sourceUrl": "https://www.eduhk.hk/mit/en/mscads",
+        "courses": [
+          {
+            "code": "INT6163",
+            "name": "Advanced Data Analytics",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/INT6163.html"
+          },
+          {
+            "code": "INT6181",
+            "name": "Applied Programming with Python",
+            "credits": 3,
+            "sourceUrl": "https://moodle.eduhk.hk/course/search.php?search=INT6181"
+          },
+          {
+            "code": "INT6164",
+            "name": "Database Systems and Management",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/INT6164.html"
+          },
+          {
+            "code": "INT6165",
+            "name": "Foundations for Data Science and AI",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/INT6165.html"
+          }
+        ]
+      },
+      {
+        "id": "elective-courses",
+        "name": "Elective Courses",
+        "type": "elective",
+        "creditsRequired": 12,
+        "coursesRequired": 4,
+        "ruleText": "Choose any four of the seven Elective Courses (12 credit points). Course availability is subject to the University's current offering.",
+        "sourceUrl": "https://www.eduhk.hk/mit/en/mscads",
+        "courses": [
+          {
+            "code": "INT6166",
+            "name": "Advanced Artificial Intelligence",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/INT6166.html"
+          },
+          {
+            "code": "INT6182",
+            "name": "Cyber Security and its Application in Education",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/INT6182.html"
+          },
+          {
+            "code": "INT6167",
+            "name": "Data Visualisation",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/INT6167.html"
+          },
+          {
+            "code": "MTH6200",
+            "name": "Predictive Analytics",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/MTH6200.html"
+          },
+          {
+            "code": "INT6168",
+            "name": "Generative Artificial Intelligence and Applications",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/INT6168.html"
+          },
+          {
+            "code": "INT6169",
+            "name": "Learning Analytics and Educational Data Science",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/INT6169.html"
+          },
+          {
+            "code": "INT6170",
+            "name": "Social Computing and Media Data Analytics",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/INT6170.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "EDUHK-TPG-DIR-MSC-AI-EDTECH",
     "courseGroups": [
       {
@@ -3232,6 +3680,202 @@ module.exports = [
             "sourceUrl": "https://www.eduhk.hk/curriculum/module/EDA6168.html"
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": "EDUHK-TPG-DIR-MSCESLPLD",
+    "courseGroups": [
+      {
+        "id": "professional-study",
+        "name": "Professional Study",
+        "type": "core",
+        "creditsRequired": 48,
+        "coursesRequired": 16,
+        "ruleText": "Complete all 16 Professional Study courses (48 credit points).",
+        "courses": [
+          {
+            "code": "SED6010",
+            "name": "Medical Aspects of Special Education, Communication Disorders and Learning Disabilities",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6010.html"
+          },
+          {
+            "code": "SED6011",
+            "name": "Acoustics for Speech, Language, Hearing and Learning",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6011.html"
+          },
+          {
+            "code": "SED6012",
+            "name": "Educational Counselling, Therapeutic Process and Teaching Pedagogy",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6012.html"
+          },
+          {
+            "code": "SED6013",
+            "name": "Phonetics and Phonology for Education",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6013.html"
+          },
+          {
+            "code": "SED6014",
+            "name": "Language Development",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6014.html"
+          },
+          {
+            "code": "SED6015",
+            "name": "Speech, Language and Communication Disorders",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6015.html"
+          },
+          {
+            "code": "SED6016",
+            "name": "Bilingualism and Bilingual Education",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6016.html"
+          },
+          {
+            "code": "SED6017",
+            "name": "Structure of Chinese for Education",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6017.html"
+          },
+          {
+            "code": "SED6018",
+            "name": "Audiology and Aural Rehabilitation in Educational Settings",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6018.html"
+          },
+          {
+            "code": "SED6019",
+            "name": "Assessment and Intervention for Speech, Language, Communication and Learning",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6019.html"
+          },
+          {
+            "code": "SED6020",
+            "name": "Learning Disabilities, Reading and Writing Disorders",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6020.html"
+          },
+          {
+            "code": "SED6021",
+            "name": "Language Disorders in Children and Adolescents",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6021.html"
+          },
+          {
+            "code": "SED6022",
+            "name": "Supporting Students with Social, Emotional, Behavioural and Developmental Disabilities in the Classroom",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6022.html"
+          },
+          {
+            "code": "SED6023",
+            "name": "Advanced Studies I - Acquired Language Disorders and Dysphagia",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6023.html"
+          },
+          {
+            "code": "SED6024",
+            "name": "Advanced Studies II - Acquired Speech Disorders",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6024.html"
+          },
+          {
+            "code": "SED6025",
+            "name": "Advanced Studies III - School-based SLP, Craniofacial Anomalies and AAC",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6025.html"
+          }
+        ],
+        "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=231"
+      },
+      {
+        "id": "practicum",
+        "name": "Practicum",
+        "type": "practicum",
+        "creditsRequired": 21,
+        "coursesRequired": 4,
+        "ruleText": "Complete all four Practicum courses for 21 credit points in total. Each course is officially published as carrying 3-6 credit points; the individual distribution is not published and must be reviewed manually.",
+        "courses": [
+          {
+            "code": "SED6026",
+            "name": "Practicum I",
+            "creditsMin": 3,
+            "creditsMax": 6,
+            "courseKind": "practicum",
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6026.html"
+          },
+          {
+            "code": "SED6065",
+            "name": "Practicum II",
+            "creditsMin": 3,
+            "creditsMax": 6,
+            "courseKind": "practicum",
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6065.html"
+          },
+          {
+            "code": "SED6066",
+            "name": "Advanced Practicum in Adult and Educational Settings I",
+            "creditsMin": 3,
+            "creditsMax": 6,
+            "courseKind": "practicum",
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6066.html"
+          },
+          {
+            "code": "SED6067",
+            "name": "Advanced Practicum in Adult and Educational Settings II",
+            "creditsMin": 3,
+            "creditsMax": 6,
+            "courseKind": "practicum",
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6067.html"
+          }
+        ],
+        "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=231"
+      },
+      {
+        "id": "research-methods",
+        "name": "Research Methods",
+        "type": "core",
+        "creditsRequired": 6,
+        "coursesRequired": 2,
+        "ruleText": "Complete both Research Methods courses (6 credit points).",
+        "courses": [
+          {
+            "code": "SED6030",
+            "name": "Research Methods and Evidence-based Practice",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6030.html"
+          },
+          {
+            "code": "SED6031",
+            "name": "Advanced Research Methods",
+            "credits": 3,
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6031.html"
+          }
+        ],
+        "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=231"
+      },
+      {
+        "id": "evidence-based-capstone-project",
+        "name": "Evidence-based Capstone Project",
+        "type": "project",
+        "creditsRequired": 6,
+        "coursesRequired": 1,
+        "ruleText": "Complete the Evidence-based Capstone Project (6 credit points).",
+        "courses": [
+          {
+            "code": "SED6032",
+            "name": "Evidence-based Capstone Project",
+            "credits": 6,
+            "courseKind": "project",
+            "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6032.html"
+          }
+        ],
+        "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=231"
       }
     ]
   },

@@ -17,8 +17,14 @@ function walkFiles(directory) {
 }
 
 function summarizeTpgCatalogue(tpgCatalogue) {
-  const programmeWithCourses = tpgCatalogue.programmes.filter((programme) => (
+  const browsableProgrammes = tpgCatalogue.programmes.filter((programme) => (
     (programme.courseGroups || []).some((group) => (group.courses || []).length > 0)
+  ));
+  const programmeWithCourses = browsableProgrammes.filter((programme) => (
+    programme.courseVerificationStatus === 'verified'
+  ));
+  const courseListOnlyProgrammes = browsableProgrammes.filter((programme) => (
+    programme.dataLevel === 'course_list'
   ));
   const courseCount = tpgCatalogue.programmes.reduce((total, programme) => (
     total + (programme.courseGroups || []).reduce((groupTotal, group) => (
@@ -29,6 +35,8 @@ function summarizeTpgCatalogue(tpgCatalogue) {
     schoolCount: tpgCatalogue.universities.length,
     programmeCount: tpgCatalogue.programmes.length,
     programmeWithCoursesCount: programmeWithCourses.length,
+    browsableProgrammeCount: browsableProgrammes.length,
+    courseListOnlyProgrammeCount: courseListOnlyProgrammes.length,
     courseCount,
     schoolCodes: tpgCatalogue.universities.map((university) => university.code)
   };
@@ -210,6 +218,8 @@ function checkReleaseReadiness(now = new Date()) {
       tpgSchoolCount: tpgSummary.schoolCount,
       tpgProgrammeCount: tpgSummary.programmeCount,
       tpgProgrammeWithCoursesCount: tpgSummary.programmeWithCoursesCount,
+      tpgBrowsableProgrammeCount: tpgSummary.browsableProgrammeCount,
+      tpgCourseListOnlyProgrammeCount: tpgSummary.courseListOnlyProgrammeCount,
       tpgCourseCount: tpgSummary.courseCount,
       ugSchoolCount: ugSummary.universityCount,
       ugProgrammeCount: ugSummary.programmeCount,

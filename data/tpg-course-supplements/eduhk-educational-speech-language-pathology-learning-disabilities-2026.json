@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "schoolCode": "EDUHK",
+  "academicYear": "2026-27",
+  "verifiedAt": "2026-07-24",
+  "programmes": [
+    {
+      "programmeId": "EDUHK-TPG-DIR-MSCESLPLD",
+      "status": "blocked",
+      "courseListOnly": true,
+      "creditsRequired": 81,
+      "creditUnit": "credit points",
+      "sourceUrl": "https://www.eduhk.hk/fehd/en/programmes.php?id=231",
+      "ruleReviewStatus": "manual_review_required",
+      "statusNote": "The current 2026-27 Programme page confirms the complete 81-credit course list and four published group totals. The Department of Special Education and Counselling curriculum modules confirm all 23 course codes and titles. The four Practicum modules are each published only as 3-6 credit points while the Programme page confirms their combined 21-credit requirement; their individual credit values must not be inferred. Expose the verified course list for browsing, but keep the Programme blocked and require manual review for completion rules until EdUHK publishes the exact Practicum credit distribution.",
+      "courseGroups": [
+        {
+          "id": "professional-study",
+          "name": "Professional Study",
+          "type": "core",
+          "creditsRequired": 48,
+          "coursesRequired": 16,
+          "ruleText": "Complete all 16 Professional Study courses (48 credit points).",
+          "courses": [
+            {
+              "code": "SED6010",
+              "name": "Medical Aspects of Special Education, Communication Disorders and Learning Disabilities",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6010.html"
+            },
+            {
+              "code": "SED6011",
+              "name": "Acoustics for Speech, Language, Hearing and Learning",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6011.html"
+            },
+            {
+              "code": "SED6012",
+              "name": "Educational Counselling, Therapeutic Process and Teaching Pedagogy",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6012.html"
+            },
+            {
+              "code": "SED6013",
+              "name": "Phonetics and Phonology for Education",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6013.html"
+            },
+            {
+              "code": "SED6014",
+              "name": "Language Development",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6014.html"
+            },
+            {
+              "code": "SED6015",
+              "name": "Speech, Language and Communication Disorders",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6015.html"
+            },
+            {
+              "code": "SED6016",
+              "name": "Bilingualism and Bilingual Education",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6016.html"
+            },
+            {
+              "code": "SED6017",
+              "name": "Structure of Chinese for Education",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6017.html"
+            },
+            {
+              "code": "SED6018",
+              "name": "Audiology and Aural Rehabilitation in Educational Settings",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6018.html"
+            },
+            {
+              "code": "SED6019",
+              "name": "Assessment and Intervention for Speech, Language, Communication and Learning",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6019.html"
+            },
+            {
+              "code": "SED6020",
+              "name": "Learning Disabilities, Reading and Writing Disorders",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6020.html"
+            },
+            {
+              "code": "SED6021",
+              "name": "Language Disorders in Children and Adolescents",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6021.html"
+            },
+            {
+              "code": "SED6022",
+              "name": "Supporting Students with Social, Emotional, Behavioural and Developmental Disabilities in the Classroom",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6022.html"
+            },
+            {
+              "code": "SED6023",
+              "name": "Advanced Studies I - Acquired Language Disorders and Dysphagia",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6023.html"
+            },
+            {
+              "code": "SED6024",
+              "name": "Advanced Studies II - Acquired Speech Disorders",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6024.html"
+            },
+            {
+              "code": "SED6025",
+              "name": "Advanced Studies III - School-based SLP, Craniofacial Anomalies and AAC",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6025.html"
+            }
+          ]
+        },
+        {
+          "id": "practicum",
+          "name": "Practicum",
+          "type": "practicum",
+          "creditsRequired": 21,
+          "coursesRequired": 4,
+          "ruleText": "Complete all four Practicum courses for 21 credit points in total. Each course is officially published as carrying 3-6 credit points; the individual distribution is not published and must be reviewed manually.",
+          "courses": [
+            {
+              "code": "SED6026",
+              "name": "Practicum I",
+              "creditsMin": 3,
+              "creditsMax": 6,
+              "courseKind": "practicum",
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6026.html"
+            },
+            {
+              "code": "SED6065",
+              "name": "Practicum II",
+              "creditsMin": 3,
+              "creditsMax": 6,
+              "courseKind": "practicum",
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6065.html"
+            },
+            {
+              "code": "SED6066",
+              "name": "Advanced Practicum in Adult and Educational Settings I",
+              "creditsMin": 3,
+              "creditsMax": 6,
+              "courseKind": "practicum",
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6066.html"
+            },
+            {
+              "code": "SED6067",
+              "name": "Advanced Practicum in Adult and Educational Settings II",
+              "creditsMin": 3,
+              "creditsMax": 6,
+              "courseKind": "practicum",
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6067.html"
+            }
+          ]
+        },
+        {
+          "id": "research-methods",
+          "name": "Research Methods",
+          "type": "core",
+          "creditsRequired": 6,
+          "coursesRequired": 2,
+          "ruleText": "Complete both Research Methods courses (6 credit points).",
+          "courses": [
+            {
+              "code": "SED6030",
+              "name": "Research Methods and Evidence-based Practice",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6030.html"
+            },
+            {
+              "code": "SED6031",
+              "name": "Advanced Research Methods",
+              "credits": 3,
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6031.html"
+            }
+          ]
+        },
+        {
+          "id": "evidence-based-capstone-project",
+          "name": "Evidence-based Capstone Project",
+          "type": "project",
+          "creditsRequired": 6,
+          "coursesRequired": 1,
+          "ruleText": "Complete the Evidence-based Capstone Project (6 credit points).",
+          "courses": [
+            {
+              "code": "SED6032",
+              "name": "Evidence-based Capstone Project",
+              "credits": 6,
+              "courseKind": "project",
+              "sourceUrl": "https://www.eduhk.hk/curriculum/module/SED6032.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

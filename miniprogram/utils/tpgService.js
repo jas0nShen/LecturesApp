@@ -167,18 +167,22 @@ function flattenCourses(programme, keyword = '', trackId = '') {
   if (!programme) return [];
   const normalized = normalizeKeyword(keyword);
   return resolveCourseGroups(programme, trackId).flatMap((group, groupIndex) => (
-    (group.courses || []).map((course, courseIndex) => ({
-      ...course,
-      rowKey: `${groupIndex}-${course.code}-${courseIndex}`,
-      groupName: group.name,
-      credits: resolveCourseCredits(course),
-      creditStatus: course.credits !== undefined && course.credits !== null && Number.isFinite(Number(course.credits)) && Number(course.credits) >= 0 ? 'official' : Number(course.creditsMin) > 0 ? 'official_range' : 'unknown',
-      creditLabel: getCourseCreditLabel(course),
-      groupCreditsRequired: group.creditsRequired,
-      groupType: group.type || '',
-      ruleText: group.ruleText || '',
-      searchableText: `${course.code} ${course.name} ${group.name}`.toLowerCase()
-    }))
+    (group.courses || []).map((course, courseIndex) => {
+      const creditUnit = course.creditUnit || group.creditUnit || programme.creditUnit || 'credits';
+      return {
+        ...course,
+        creditUnit,
+        rowKey: `${groupIndex}-${course.code}-${courseIndex}`,
+        groupName: group.name,
+        credits: resolveCourseCredits(course),
+        creditStatus: course.credits !== undefined && course.credits !== null && Number.isFinite(Number(course.credits)) && Number(course.credits) >= 0 ? 'official' : Number(course.creditsMin) > 0 ? 'official_range' : 'unknown',
+        creditLabel: getCourseCreditLabel({ ...course, creditUnit }),
+        groupCreditsRequired: group.creditsRequired,
+        groupType: group.type || '',
+        ruleText: group.ruleText || '',
+        searchableText: `${course.code} ${course.name} ${group.name}`.toLowerCase()
+      };
+    })
   )).filter((course) => !normalized || course.searchableText.includes(normalized));
 }
 
@@ -205,12 +209,16 @@ function hasCourseGroups(programme) {
 function getStatus(programme) {
   const courseCount = countCourses(programme);
   const hasStructure = programme && programme.dataLevel === 'structure';
+  const isCourseListOnly = Boolean(programme && programme.dataLevel === 'course_list');
+  const hasBrowsableCourses = courseCount > 0;
   const isComplete = Boolean(programme && programme.courseVerificationStatus === 'verified' && courseCount > 0);
   const isBlocked = Boolean(programme && ['blocked', 'archived'].includes(programme.courseVerificationStatus));
   return {
     courseCount,
-    hasCourseGroups: courseCount > 0,
+    hasCourseGroups: hasBrowsableCourses,
+    hasBrowsableCourses,
     hasStructure,
+    isCourseListOnly,
     isComplete,
     isBlocked,
     title: isComplete ? '课程结构已开放' : courseCount ? '课程清单已录入，结构复核中' : isBlocked ? '课程来源待解决' : hasStructure ? '结构资料待拆分' : 'Programme 索引',
@@ -266,6 +274,7 @@ function getProfileSummary(profile) {
   const programme = getProgramme(profile.programmeId);
   const university = programme ? getProgrammeUniversity(programme) : getUniversity(profile.universityCode);
   const courseCount = programme ? countCourses(programme) : profile.courseCount || 0;
+  const status = getStatus(programme);
   const track = programme && profile.trackId ? getTrack(programme.id, profile.trackId) : null;
   return {
     programme,
@@ -274,7 +283,11 @@ function getProfileSummary(profile) {
     courseCount,
     schoolLabel: university.shortName || profile.universityName || profile.universityCode,
     yearLabel: (programme && programme.academicYear) || university.academicYear || profile.curriculumYear,
-    statusLabel: courseCount ? `已录入 ${courseCount} 门课程` : '课程清单待开放',
+    statusLabel: status.isCourseListOnly
+      ? `已核实 ${courseCount} 门课程，规则复核中`
+      : courseCount
+        ? `已录入 ${courseCount} 门课程`
+        : '课程清单待开放',
     creditsLabel: programme && getCreditsRequired(programme, profile.trackId)
       ? `${getCreditsRequired(programme, profile.trackId)} credits / units`
       : profile.creditsRequired
@@ -286,13 +299,17 @@ function getProfileSummary(profile) {
 function getSchoolCoverage() {
   const schools = listUniversities().map((university) => {
     const programmes = listProgrammes(university.code);
-    const programmeWithCourses = programmes.filter(hasCourseGroups);
+    const programmeWithCourses = programmes.filter((programme) => getStatus(programme).isComplete);
+    const browsableProgrammes = programmes.filter((programme) => getStatus(programme).hasBrowsableCourses);
+    const courseListOnlyProgrammes = programmes.filter((programme) => getStatus(programme).isCourseListOnly);
     const courseCount = programmes.reduce((sum, programme) => sum + countCourses(programme), 0);
     const hasStructure = programmes.some((programme) => programme.dataLevel === 'structure');
     return {
       ...university,
       programmeCount: programmes.length,
       programmeWithCoursesCount: programmeWithCourses.length,
+      browsableProgrammeCount: browsableProgrammes.length,
+      courseListOnlyProgrammeCount: courseListOnlyProgrammes.length,
       courseCount,
       coverageLabel: courseCount
         ? `${programmeWithCourses.length} 个 Programme 已拆课程`
@@ -305,10 +322,14 @@ function getSchoolCoverage() {
   const totals = schools.reduce((summary, school) => ({
     programmeCount: summary.programmeCount + school.programmeCount,
     programmeWithCoursesCount: summary.programmeWithCoursesCount + school.programmeWithCoursesCount,
+    browsableProgrammeCount: summary.browsableProgrammeCount + school.browsableProgrammeCount,
+    courseListOnlyProgrammeCount: summary.courseListOnlyProgrammeCount + school.courseListOnlyProgrammeCount,
     courseCount: summary.courseCount + school.courseCount
   }), {
     programmeCount: 0,
     programmeWithCoursesCount: 0,
+    browsableProgrammeCount: 0,
+    courseListOnlyProgrammeCount: 0,
     courseCount: 0
   });
 

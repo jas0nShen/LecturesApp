@@ -13,6 +13,7 @@ Page({
     ugPlanningReason: '',
     tpgPlanningSupported: false,
     tpgPlanningReason: '',
+    tpgCourseActionsEnabled: false,
     dataSource: 'loading',
     isUgCourse: false,
     isTpgCourse: false,
@@ -67,6 +68,7 @@ Page({
         titleEn: item.name,
         titleZh: '',
         credits: item.credits,
+        creditLabel: item.creditLabel || tpgService.getCourseCreditLabel(item),
         semester: '以学校选课系统为准',
         department: programme && programme.faculty || '',
         language: '以学校公布为准',
@@ -84,6 +86,7 @@ Page({
         planned: item ? service.isTpgCoursePlanned(options.tpgProgrammeId, item.code) : false,
         tpgPlanningSupported,
         tpgPlanningReason,
+        tpgCourseActionsEnabled: status.isComplete,
         dataSource: '授课硕士本地资料库',
         isUgCourse: false,
         isTpgCourse: true,
@@ -178,6 +181,7 @@ Page({
   toggleFavorite() {
     if (this.data.isUgCourse || !this.data.course) return;
     if (this.data.isTpgCourse) {
+      if (!this.data.tpgCourseActionsEnabled) return;
       service.toggleTpgCourseFavorite(this.data.tpgProgrammeId, this.data.course.courseCode);
       this.setData({ favorite: service.isTpgCourseFavorite(this.data.tpgProgrammeId, this.data.course.courseCode) });
       return;
@@ -194,6 +198,7 @@ Page({
       return;
     }
     if (this.data.isTpgCourse) {
+      if (!this.data.tpgCourseActionsEnabled) return;
       service.toggleTpgCourseCompleted(this.data.tpgProgrammeId, this.data.course.courseCode);
       this.setData({ completed: service.isTpgCourseCompleted(this.data.tpgProgrammeId, this.data.course.courseCode) });
       return;

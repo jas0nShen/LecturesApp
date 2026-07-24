@@ -56,6 +56,7 @@ Page({
     tpgCourseCountLabel: '',
     tpgStatusTitle: '',
     tpgStatusCopy: '',
+    tpgCourseListOnly: false,
     tpgPlanningSupported: false,
     tpgPlanningReason: '',
     isUgCatalogue: false,
@@ -137,6 +138,7 @@ Page({
         tpgCourseCount: 0,
         tpgCourseCountDisplay: '',
         tpgCourseCountLabel: '',
+        tpgCourseListOnly: false,
         isUgCatalogue: false,
         ugProfile: null,
         ugCourses: [],
@@ -159,12 +161,12 @@ Page({
       : null;
     if (tpgProgramme) {
       const tpgUniversity = tpgService.getProgrammeUniversity(tpgProgramme);
+      const status = tpgService.getStatus(tpgProgramme);
       const allCourses = tpgService.flattenCourses(tpgProgramme, '', profile.trackId || '');
       const tpgCourses = tpgService.flattenCourses(tpgProgramme, this.data.keyword, profile.trackId || '').map((course) => ({
         ...course,
-        planned: service.isTpgCoursePlanned(tpgProgramme.id, course.code)
+        planned: status.isComplete && service.isTpgCoursePlanned(tpgProgramme.id, course.code)
       }));
-      const status = tpgService.getStatus(tpgProgramme);
       const planningCapability = service.getPlanningCapability(profile);
       const trackSelectionComplete = tpgService.isTrackSelectionComplete(tpgProgramme, profile.trackId || '');
       const tpgPlanningSupported = Boolean(
@@ -187,9 +189,10 @@ Page({
         tpgCourses,
         tpgCourseCount: allCourses.length,
         tpgCourseCountDisplay: status.hasCourseGroups ? allCourses.length : '待开放',
-        tpgCourseCountLabel: status.hasCourseGroups ? '已开放课程' : '课程清单',
+        tpgCourseCountLabel: status.isComplete ? '已开放课程' : status.isCourseListOnly ? '已核实课程' : '课程清单',
         tpgStatusTitle: status.title,
         tpgStatusCopy: status.copy,
+        tpgCourseListOnly: status.isCourseListOnly,
         tpgPlanningSupported,
         tpgPlanningReason,
         dataSource: 'catalogue',
@@ -216,6 +219,7 @@ Page({
       tpgCourseCount: 0,
       tpgCourseCountDisplay: '',
       tpgCourseCountLabel: '',
+      tpgCourseListOnly: false,
       tpgPlanningSupported: false,
       tpgPlanningReason: ''
     });

@@ -70,6 +70,10 @@ function validateSupplement(supplement, catalogue, file = 'supplement') {
     assert(!seenProgrammeIds.has(entry.programmeId), `${file} repeats ${entry.programmeId}`);
     seenProgrammeIds.add(entry.programmeId);
     assert(['verified', 'blocked', 'archived'].includes(entry.status), `${entry.programmeId} has an invalid status`);
+    if (entry.courseListOnly !== undefined) {
+      assert.equal(typeof entry.courseListOnly, 'boolean', `${entry.programmeId} has an invalid courseListOnly flag`);
+      if (entry.courseListOnly) assert(entry.status === 'blocked', `${entry.programmeId} can use courseListOnly only while blocked`);
+    }
     if (entry.programmeName !== undefined) {
       assert(typeof entry.programmeName === 'string' && entry.programmeName.trim(), `${entry.programmeId} has an invalid programmeName`);
     }
@@ -100,7 +104,8 @@ function validateSupplement(supplement, catalogue, file = 'supplement') {
       assert.equal(typeof entry.trackSelectionOptional, 'boolean', `${entry.programmeId} has invalid trackSelectionOptional`);
     }
 
-    if (entry.status !== 'verified') {
+    const isCourseListOnly = entry.status === 'blocked' && entry.courseListOnly === true;
+    if (entry.status !== 'verified' && !isCourseListOnly) {
       assert(!(entry.courseGroups || []).length, `${entry.programmeId} cannot publish courses while ${entry.status}`);
       assert(entry.statusNote, `${entry.programmeId} needs a statusNote`);
       return;
@@ -108,6 +113,7 @@ function validateSupplement(supplement, catalogue, file = 'supplement') {
 
     assert(Number(entry.creditsRequired) > 0, `${entry.programmeId} needs creditsRequired`);
     assert(entry.creditUnit, `${entry.programmeId} needs creditUnit`);
+    if (isCourseListOnly) assert(entry.statusNote, `${entry.programmeId} needs a statusNote`);
     assert(Array.isArray(entry.courseGroups) && entry.courseGroups.length, `${entry.programmeId} needs courseGroups`);
     const trackIds = new Set((entry.tracks || programme.tracks || []).map((track) => track.id));
     const courseCodes = new Set();
@@ -165,7 +171,7 @@ function applySupplements(catalogue, supplementFiles) {
       if (entry.trackSelectionOptional !== undefined) programme.trackSelectionOptional = Boolean(entry.trackSelectionOptional);
       if (entry.creditsRequired !== undefined) programme.creditsRequired = entry.creditsRequired;
       if (entry.creditUnit !== undefined) programme.creditUnit = entry.creditUnit;
-      if (entry.status === 'verified') {
+      if (entry.status === 'verified' || entry.courseListOnly === true) {
         programme.creditsRequired = entry.creditsRequired;
         programme.creditUnit = entry.creditUnit;
         programme.courseGroups = entry.courseGroups.map((group) => ({
@@ -176,8 +182,10 @@ function applySupplements(catalogue, supplementFiles) {
             sourceUrl: course.sourceUrl || group.sourceUrl || entry.sourceUrl
           }))
         }));
-        programme.dataLevel = 'structure';
-        programme.ruleReviewStatus = entry.ruleReviewStatus || 'manual_review_required';
+        programme.dataLevel = entry.courseListOnly === true ? 'course_list' : 'structure';
+        programme.ruleReviewStatus = entry.courseListOnly === true
+          ? 'manual_review_required'
+          : entry.ruleReviewStatus || 'manual_review_required';
       }
     });
   });

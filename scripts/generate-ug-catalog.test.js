@@ -667,7 +667,7 @@ test('UG source coverage report can build a grouped missing data batch plan', ()
 
   assert.equal(args.batchPlan, true);
   assert(groups.sourceIndexOnly.length > 0);
-  assert.equal(groups.reviewedNoCourseCodes.length, 19);
+  assert.equal(groups.reviewedNoCourseCodes.length, 18);
   assert(groups.noSource.length <= 165);
   assert.equal(groups.sourceIndexOnly[0].schoolCode, 'HKU');
   assert(groups.sourceIndexOnly[0].code);
@@ -1217,7 +1217,7 @@ test('UG catalogue generator groups course shards by programme university', () =
 });
 
 test('large university course rows are split into evenly sized generated subpackage shards', () => {
-  ['CITYU', 'HKBU', 'HKU', 'POLYU'].forEach((universityCode) => {
+  ['CITYU', 'HKBU', 'HKU', 'HKUST', 'POLYU'].forEach((universityCode) => {
     const entries = splitCourseShardEntries(new Map([[universityCode, Array.from({ length: 5 }, (_, index) => ({ id: index }))]]));
     assert.deepEqual(entries.map((entry) => entry.shardName), [`${universityCode.toLowerCase()}-a`, `${universityCode.toLowerCase()}-b`]);
     assert.deepEqual(entries.map((entry) => entry.courses.length), [3, 2]);

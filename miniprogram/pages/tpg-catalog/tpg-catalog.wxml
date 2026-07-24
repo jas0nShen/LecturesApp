@@ -94,14 +94,14 @@
         <view class="school-stamp">{{item.universityCode}}</view>
         <view class="programme-badges">
           <view wx:if="{{item.selected}}" class="selected-badge">已选择</view>
-          <view class="data-level {{item.courseCount ? 'data-level-ready' : ''}}">{{item.statusBadge}}</view>
+          <view class="data-level {{item.statusReady ? 'data-level-ready' : ''}}">{{item.statusBadge}}</view>
           <view class="programme-arrow">›</view>
         </view>
       </view>
       <view class="programme-name">{{item.name}}</view>
       <view wx:if="{{item.faculty}}" class="programme-faculty">{{item.faculty}}</view>
       <view class="programme-status">
-        <view class="status-pill {{item.courseCount ? 'status-pill-ready' : ''}}">{{item.statusLabel}}</view>
+        <view class="status-pill {{item.statusReady ? 'status-pill-ready' : ''}}">{{item.statusLabel}}</view>
         <view class="status-year">{{item.academicYear}}</view>
       </view>
       <view class="programme-meta">

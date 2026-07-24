@@ -1,0 +1,344 @@
+{
+  "provider": "HKUST 2025/26 BBA in Global Business Major Requirements",
+  "academicYear": "2025/26",
+  "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/GBUS",
+  "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26gbus.pdf",
+  "note": "This supplement is cohort-specific to students admitted in 2025-26 and binds only the plain BBA in Global Business Major. It records the explicit Major Required course codes and the complete Area A and Area B lists published in the intake-specific Major Requirements PDF. ISOM 4780 is stored once because it is both an alternative to GBUS 3030 and an Area B elective. The GBUS 2040 alternative is published only as the range SBMT 2100-2110, Community Services Project, with 1-4 variable credits; the 2025-26 SBMT course catalog does not expose verified individual current course rows, so the range rule is retained without fabricating eleven course codes. MARK 4290F is retained because the intake-specific Major Requirements PDF explicitly names the code, title and 4 credits even though the subject catalog exposes only the umbrella MARK 4290 Special Topics row. TEMG 4950 carries official variable 3-5 credits, so its local credits value is 0 rather than assuming either endpoint. The Global Business elective rule requires at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses; courses used for an additional SBM major may not be counted. The official pathway assigns anonymous elective credits and grouped alternative placements, so those values are not projected onto individual elective or alternative course rows. Only unambiguous code-specific placements are stored: GBUS 2010 in Year 2 Spring and GBUS 4910 in Year 4 Fall, with Year 4 Spring also marked by the pathway as another offered term for GBUS 4910. GBUS 1000 is shown as a zero-credit continuing requirement across multiple terms and therefore has no single recommended Year or semester. One regular term of study abroad, University Common Core, English, Legal Education, School requirements, and additional electives used to reach 120 credits remain outside this Programme-local coded list.",
+  "supplements": [
+    {
+      "universityCode": "HKUST",
+      "programmeId": "HKUST-UG-JS5313-28",
+      "majorId": "HKUST-UG-JS5313-28-M1",
+      "programmeName": "BBA in Global Business",
+      "courseCatalogueUrls": [
+        "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/GBUS",
+        "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/ISOM",
+        "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/ACCT",
+        "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/ECON",
+        "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/MARK",
+        "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/MGMT",
+        "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/ISDN",
+        "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/PPOL",
+        "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/SOSC",
+        "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/ENTR",
+        "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/ENVR",
+        "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/TEMG"
+      ],
+      "pathwayUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26pw_gbus.pdf",
+      "courses": [
+        {
+          "code": "GBUS1000",
+          "title": "Global Leadership Development",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Major Required",
+          "description": "The official normative pathway shows this zero-credit requirement continuing across multiple terms after Major declaration; no single recommended Year or semester is assigned."
+        },
+        {
+          "code": "GBUS2010",
+          "title": "Global Business Analysis",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "Spring",
+          "courseType": "core",
+          "group": "Major Required"
+        },
+        {
+          "code": "GBUS2040",
+          "title": "Environmental, Social, and Governance (ESG) Corporate Project",
+          "credits": 1,
+          "courseType": "core",
+          "group": "Major Required alternative · choose GBUS 2040 or an SBMT 2100-2110 Community Services Project · the SBMT range carries 1-4 variable credits and is not expanded into fabricated individual course codes"
+        },
+        {
+          "code": "GBUS3030",
+          "title": "Global Business Case Studies",
+          "credits": 4,
+          "courseType": "core",
+          "group": "Major Required alternative · choose GBUS 3030 or ISOM 4780 · 3-4 credits attained"
+        },
+        {
+          "code": "ISOM4780",
+          "title": "Integrated Planning and Execution",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required alternative · choose GBUS 3030 or ISOM 4780 · 3-4 credits attained; Global Business Electives · Area B: Business Strategy and Innovation · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "GBUS4910",
+          "title": "Capstone Project",
+          "credits": 4,
+          "recommendedYear": 4,
+          "semester": "Fall",
+          "courseType": "core",
+          "group": "Major Required · the pathway also marks Year 4 Spring as another offered term subject to program-office advice"
+        },
+
+        {
+          "code": "GBUS3010",
+          "title": "Global Perspectives on Contemporary Issues",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area A: Global and Societal Perspective · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "GBUS3040",
+          "title": "Business and ESG Management for Asia and Emerging Markets",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area A: Global and Societal Perspective · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "GBUS3060",
+          "title": "Value Investing in Global Markets",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area A: Global and Societal Perspective · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "ACCT3610",
+          "title": "Business Law",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area A: Global and Societal Perspective · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "ECON4364",
+          "title": "International Trade and Investment",
+          "credits": 4,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area A: Global and Societal Perspective · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "ECON4474",
+          "title": "Hong Kong's Economy",
+          "credits": 4,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area A: Global and Societal Perspective · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "MARK3430",
+          "title": "Global Marketing",
+          "credits": 4,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area A: Global and Societal Perspective · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "MARK4290F",
+          "title": "Brand Activism in Strategic Marketing",
+          "credits": 4,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area A: Global and Societal Perspective · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · intake-specific explicit code under the MARK 4290 Special Topics umbrella · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "MGMT3120",
+          "title": "Managerial Leadership",
+          "credits": 4,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area A: Global and Societal Perspective · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "MGMT3170",
+          "title": "Managing CSR (Corporate Social Responsibility)",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area A: Global and Societal Perspective · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "MGMT4230",
+          "title": "International Management",
+          "credits": 4,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area A: Global and Societal Perspective · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "MGMT4240",
+          "title": "Strategic Management in China",
+          "credits": 4,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area A: Global and Societal Perspective · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "MGMT4250",
+          "title": "Management Consulting",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area A: Global and Societal Perspective · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "ISDN2200",
+          "title": "Systems Thinking and Design",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area A: Global and Societal Perspective · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "PPOL3210",
+          "title": "Energy Policy",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area A: Global and Societal Perspective · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "SOSC4260",
+          "title": "China's Economic Transformation",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area A: Global and Societal Perspective · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+
+        {
+          "code": "GBUS2030",
+          "title": "From Zero to Exit – Journey of A Start-up",
+          "credits": 2,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area B: Business Strategy and Innovation · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "GBUS2050",
+          "title": "Blue Ocean Strategy Innovation and Execution",
+          "credits": 2,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area B: Business Strategy and Innovation · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "GBUS3050",
+          "title": "Deal Making in Asia and Emerging Markets",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area B: Business Strategy and Innovation · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "ECON4264",
+          "title": "Economics of Innovation and Entrepreneurship",
+          "credits": 4,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area B: Business Strategy and Innovation · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "ISOM3900",
+          "title": "Decision Analytics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area B: Business Strategy and Innovation · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "ISOM4020",
+          "title": "Innovation Management and Technology Entrepreneurship",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area B: Business Strategy and Innovation · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "ISOM4040",
+          "title": "Digital Strategy and Transformation",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area B: Business Strategy and Innovation · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "ISOM4750",
+          "title": "Business Project Management",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area B: Business Strategy and Innovation · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "MARK3220",
+          "title": "Marketing Research",
+          "credits": 4,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area B: Business Strategy and Innovation · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "MARK3480",
+          "title": "Pricing Strategy",
+          "credits": 4,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area B: Business Strategy and Innovation · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "MARK3610",
+          "title": "Digital Marketing",
+          "credits": 4,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area B: Business Strategy and Innovation · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "MARK4450",
+          "title": "Brand Management",
+          "credits": 4,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area B: Business Strategy and Innovation · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "MGMT3140",
+          "title": "Negotiation",
+          "credits": 4,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area B: Business Strategy and Innovation · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "MGMT3160",
+          "title": "Environmental Business Strategies",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area B: Business Strategy and Innovation · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "MGMT4210",
+          "title": "Corporate Strategy",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area B: Business Strategy and Innovation · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "MGMT4220",
+          "title": "Entrepreneurship and Innovation",
+          "credits": 4,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area B: Business Strategy and Innovation · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "ENTR3030",
+          "title": "Social Innovations and Entrepreneurship",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area B: Business Strategy and Innovation · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "ENTR3360",
+          "title": "From Product Innovations to Successful Technology Startups",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area B: Business Strategy and Innovation · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "ENVR3310",
+          "title": "Green Business Strategy",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area B: Business Strategy and Innovation · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "ISDN4200",
+          "title": "Product Management",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area B: Business Strategy and Innovation · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · courses used for an additional SBM major may not be counted"
+        },
+        {
+          "code": "TEMG4950",
+          "title": "T&M Corporate Consulting Project",
+          "credits": 0,
+          "creditsMin": 3,
+          "creditsMax": 5,
+          "creditRange": "3-5",
+          "courseType": "major_elective",
+          "group": "Global Business Electives · Area B: Business Strategy and Innovation · at least 15 credits from the specified list, at least 6 credits from each area, and at least 2 GBUS-offered courses · official variable 3-5 credits · courses used for an additional SBM major may not be counted",
+          "description": "The official 2025/26 requirements and course catalog list 3-5 variable credits; 0 means unknown for local known-credit totals."
+        }
+      ]
+    }
+  ]
+}

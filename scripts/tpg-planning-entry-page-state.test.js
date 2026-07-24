@@ -122,6 +122,33 @@ test('blocked TPG Programme keeps the plan entry disabled with an observable rea
   assert.match(calls.toasts.at(-1).title, /课程结构尚未开放/);
 });
 
+test('course-list-only TPG Programme exposes verified rows without plans or planned markers', async () => {
+  const programmeId = 'EDUHK-TPG-DIR-MSCESLPLD';
+  const courseCode = 'SED6026';
+  const { page, calls } = loadPage('miniprogram/pages/courses/courses.js', {
+    userProfile: {
+      profileType: 'tpg',
+      programmeId,
+      universityCode: 'EDUHK',
+      trackId: ''
+    },
+    plannedTpgCourseKeys: [`${programmeId}:${courseCode}`]
+  }, {
+    ensureTpgUniversityLoaded: () => Promise.resolve()
+  });
+
+  await page.refresh();
+  page.goTpgStudyPlan();
+
+  assert.equal(page.data.tpgCourseListOnly, true);
+  assert.equal(page.data.tpgCourseCount, 23);
+  assert.equal(page.data.tpgCourseCountLabel, '已核实课程');
+  assert.equal(page.data.tpgCourses.find((course) => course.code === courseCode).creditLabel, '3–6 credit points');
+  assert.equal(page.data.tpgCourses.find((course) => course.code === courseCode).planned, false);
+  assert.equal(page.data.tpgPlanningSupported, false);
+  assert.equal(calls.navigations.length, 0);
+});
+
 test('TPG package load failure stays visible instead of becoming an empty catalogue', async () => {
   const { page } = loadPage('miniprogram/pages/courses/courses.js', {
     userProfile: {

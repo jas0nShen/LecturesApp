@@ -19,25 +19,29 @@ test('current mini-program passes automated release readiness checks', () => {
   const result = checkReleaseReadiness(new Date('2026-07-05T12:00:00+08:00'));
   assert.equal(result.ready, true);
   assert.deepEqual(result.errors, []);
-  assert.equal(result.release.version, '1.0.10');
+  assert.equal(result.release.version, '1.0.11');
   assert.equal(result.release.target, '香港高校课程规划助手正式版');
   assert.equal(result.release.dataMode, '体验版 / 正式版离线数据');
   assert(result.metrics.pageCount >= 10);
   assert.equal(result.metrics.offeringCount, 56);
   assert.equal(result.metrics.tpgSchoolCount, 8);
   assert.equal(result.metrics.tpgProgrammeCount, 448);
-  assert.equal(result.metrics.tpgProgrammeWithCoursesCount, 342);
-  assert.equal(result.metrics.tpgCourseCount, 8985);
+  assert.equal(result.metrics.tpgProgrammeWithCoursesCount, 346);
+  assert.equal(result.metrics.tpgBrowsableProgrammeCount, 347);
+  assert.equal(result.metrics.tpgCourseListOnlyProgrammeCount, 1);
+  assert.equal(result.metrics.tpgCourseCount, 9057);
   assert.equal(result.metrics.ugSchoolCount, 8);
   assert.equal(result.metrics.ugProgrammeCount, 444);
   assert.equal(result.metrics.ugMajorCount, 677);
-  assert.equal(result.metrics.ugCodedCourseCount, 14576);
-  assert.equal(result.metrics.ugProgrammeWithCoursesCount, 215);
+  assert.equal(result.metrics.ugCodedCourseCount, 16203);
+  assert.equal(result.metrics.ugProgrammeWithCoursesCount, 246);
   assert(result.metrics.packageBytes > 0);
   assert(result.metrics.mainPackageBytes > 0);
   assert(result.metrics.mainPackageBytes <= 2 * 1024 * 1024);
-  assert.equal(result.metrics.subpackageBytes.length, 20);
+  assert.equal(result.metrics.subpackageBytes.length, 21);
   assert(result.metrics.subpackageBytes.some((subpackage) => subpackage.root === 'subpackages/ug-data-eduhk'));
+  assert(result.metrics.subpackageBytes.some((subpackage) => subpackage.root === 'subpackages/ug-data-hkust-a'));
+  assert(result.metrics.subpackageBytes.some((subpackage) => subpackage.root === 'subpackages/ug-data-hkust-b'));
   assert(result.metrics.subpackageBytes.every((subpackage) => subpackage.bytes <= 2 * 1024 * 1024));
   assert.match(result.manualChecklist.reviewMaterial, /REVIEW_SUBMISSION/);
 });
@@ -70,7 +74,7 @@ test('WeChat review version description stays within the 200 character limit', (
     reviewDoc,
     '### 提交审核版本描述（200 字以内）'
   );
-  assert(versionDescription.includes('1.0.10'));
+  assert(versionDescription.includes('1.0.11'));
   assert(versionDescription.length <= 200);
 });
 
@@ -112,7 +116,8 @@ test('home page avoids internal launch status labels', () => {
   assert(homePage.includes('{{item.statusLabel}}'));
   assert(homeLogic.includes("statusLabel: '已选择'"));
   assert(homeLogic.includes("statusLabel: hasCourses ? '可查看' : '复核中'"));
-  assert(homeLogic.includes("statusLabel: hasCourses ? '下一步' : '安全提示'"));
+  assert(homeLogic.includes("statusLabel: hasCourses && !isCourseListOnly ? '下一步' : '安全提示'"));
+  assert(homeLogic.includes("title: isCourseListOnly ? '暂不计算毕业进度'"));
   assert(!homePage.includes('MVP STATUS'));
   assert(!homePage.includes('UG STATUS'));
   assert(!homePage.includes('{{item.status}}'));
@@ -161,9 +166,9 @@ test('TPG course page avoids misleading zero-course hero copy', () => {
   assert(!homePage.includes('选择你的授课硕士 Programme'));
   assert(coursesPage.includes('tpgCourseCountDisplay'));
   assert(coursesPage.includes('tpgCourseCountLabel'));
-  assert(coursesPage.includes("{{tpgCourseCount ? '课程已开放' : '复核中'}}"));
+  assert(coursesPage.includes("{{tpgCourseListOnly ? '规则复核中' : (tpgCourseCount ? '课程已开放' : '复核中')}}"));
   assert(coursesPage.includes("{{ugCourseCount ? '课程已开放' : '复核中'}}"));
-  assert(coursesPage.includes("{{tpgCourseCount ? '课程' : '索引'}}"));
+  assert(coursesPage.includes("{{tpgCourseListOnly ? '清单' : (tpgCourseCount ? '课程' : '索引')}}"));
   assert(coursesPage.includes("{{ugCourseCount ? '课程' : '索引'}}"));
   assert(coursesPage.includes('先选范围'));
   assert(coursesPage.includes('先选择你的课程范围'));
@@ -177,12 +182,29 @@ test('TPG course page avoids misleading zero-course hero copy', () => {
 
 test('TPG programme detail uses user-facing status labels', () => {
   const programmePage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'tpg-programme', 'tpg-programme.wxml'), 'utf8');
-  assert(programmePage.includes("{{hasCourseGroups ? '已开放' : '复核中'}}"));
+  assert(programmePage.includes("{{courseStructureOpen ? '已开放' : (isCourseListOnly ? '清单复核中' : '复核中')}}"));
+  assert(programmePage.includes("{{isCourseListOnly ? '已核实课程清单' : '课程结构'}}"));
   assert(programmePage.includes("{{isCurrentProgramme ? '本机已保存' : '尚未保存'}}"));
   assert(programmePage.includes('课程结构'));
   ['VERIFIED', 'IN REVIEW', 'SAVED LOCALLY', 'NOT SAVED YET', 'COURSE STRUCTURE'].forEach((label) => {
     assert(!programmePage.includes(label), `Programme detail still exposes internal label: ${label}`);
   });
+});
+
+test('TPG course-list-only mode stays browse-only across Programme, course detail and audit pages', () => {
+  const programmePage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'tpg-programme', 'tpg-programme.wxml'), 'utf8');
+  const courseDetailPage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'course-detail', 'course-detail.wxml'), 'utf8');
+  const courseDetailLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'course-detail', 'course-detail.js'), 'utf8');
+  const auditPage = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'audit', 'audit.wxml'), 'utf8');
+  const auditLogic = fs.readFileSync(path.join(ROOT, 'miniprogram', 'pages', 'audit', 'audit.js'), 'utf8');
+
+  assert(programmePage.includes('仅供浏览课程代码、名称与官方学分范围'));
+  assert(courseDetailPage.includes('isTpgCourse && tpgCourseActionsEnabled'));
+  assert(courseDetailPage.includes('不记录收藏、已修状态或选课计划'));
+  assert(courseDetailLogic.includes('tpgCourseActionsEnabled: status.isComplete'));
+  assert(auditPage.includes('tpgAudit.canTrackCompletion'));
+  assert(auditPage.includes('已核实课程清单（不计算进度）'));
+  assert(auditLogic.includes('if (!programme || !courseCode || !tpgService.getStatus(programme).isComplete) return'));
 });
 
 test('home page hides graduation progress until a profile is saved', () => {

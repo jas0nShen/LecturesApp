@@ -34,13 +34,13 @@
           <view class="big-number">{{tpgAudit.totalCredits || '--'}}</view>
           <view class="subtitle">毕业学分 / units</view>
         </view>
-        <view class="verified-seal">{{tpgAudit.hasCourseGroups ? 'STRUCTURE' : 'REVIEW'}}<br/>TPG</view>
+        <view class="verified-seal">{{tpgAudit.isCourseListOnly ? 'LIST' : (tpgAudit.hasCourseGroups ? 'STRUCTURE' : 'REVIEW')}}<br/>TPG</view>
       </view>
       <view class="curriculum-note">{{tpgAudit.statusCopy}}</view>
       <view class="source-line">数据源：授课硕士本地资料库</view>
     </view>
 
-    <view class="section tpg-snapshot">
+    <view wx:if="{{tpgAudit.canTrackCompletion}}" class="section tpg-snapshot">
       <view wx:for="{{tpgAudit.snapshot}}" wx:key="label" class="tpg-snapshot-item">
         <view class="tpg-snapshot-value">{{item.value}}</view>
         <view class="tpg-snapshot-label">{{item.label}}</view>
@@ -58,7 +58,7 @@
     </view>
 
     <view wx:if="{{tpgAudit.hasCourseGroups}}" class="section">
-      <view class="section-heading">已录入的课程组</view>
+      <view class="section-heading">{{tpgAudit.isCourseListOnly ? '已核实课程清单（不计算进度）' : '已录入的课程组'}}</view>
       <view wx:for="{{tpgAudit.groups}}" wx:key="name" class="panel requirement tpg-group">
         <view class="row">
           <view class="panel-title">{{item.name}}</view>
@@ -66,14 +66,24 @@
         </view>
         <view wx:if="{{item.creditsRequired}}" class="partial-label">{{item.creditsRequired}} CREDITS / UNITS REQUIRED</view>
         <view class="tpg-course-preview">
-          <view
-            wx:for="{{item.courses}}"
-            wx:key="rowKey"
-            wx:for-item="course"
-            class="missing-course {{course.completed ? 'tpg-course-completed' : ''}}"
-            data-code="{{course.code}}"
-            bindtap="toggleTpgCourseCompleted"
-          >{{course.completed ? '✓' : '○'}} {{course.code}} · {{course.name}} · {{course.creditLabel}}</view>
+          <block wx:if="{{tpgAudit.canTrackCompletion}}">
+            <view
+              wx:for="{{item.courses}}"
+              wx:key="rowKey"
+              wx:for-item="course"
+              class="missing-course {{course.completed ? 'tpg-course-completed' : ''}}"
+              data-code="{{course.code}}"
+              bindtap="toggleTpgCourseCompleted"
+            >{{course.completed ? '✓' : '○'}} {{course.code}} · {{course.name}} · {{course.creditLabel}}</view>
+          </block>
+          <block wx:else>
+            <view
+              wx:for="{{item.courses}}"
+              wx:key="rowKey"
+              wx:for-item="course"
+              class="missing-course"
+            >{{course.code}} · {{course.name}} · {{course.creditLabel}}</view>
+          </block>
         </view>
       </view>
     </view>

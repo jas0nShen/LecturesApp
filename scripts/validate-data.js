@@ -130,9 +130,13 @@ tpgCatalogue.programmes.forEach((programme) => {
   if (programme.academicYear) {
     assert.match(programme.academicYear, /^\d{4}-\d{2}(?: and thereafter)?$/, `${programme.id} has an invalid academic year`);
   }
-  assert(['programme', 'structure'].includes(programme.dataLevel));
+  assert(['programme', 'structure', 'course_list'].includes(programme.dataLevel));
   assert(Array.isArray(programme.courseGroups));
   assert(Array.isArray(programme.tracks || []));
+  if (programme.dataLevel === 'course_list') {
+    assert.equal(programme.courseVerificationStatus, 'blocked', `${programme.id} course-list-only data must remain blocked`);
+    assert.equal(programme.ruleReviewStatus, 'manual_review_required', `${programme.id} course-list-only rules need manual review`);
+  }
   assert.match(
     programme.sourceUrl || tpgCatalogue.universities.find((item) => item.code === programme.universityCode).sourceUrl,
     /^https:\/\//,
@@ -156,7 +160,7 @@ tpgCatalogue.programmes.forEach((programme) => {
       courseCodes.push(course.code);
     });
   });
-  if (programme.courseVerificationStatus === 'verified') {
+  if (programme.courseVerificationStatus === 'verified' || programme.dataLevel === 'course_list') {
     assert.match(programme.courseVerifiedAt || '', /^\d{4}-\d{2}-\d{2}$/, `${programme.id} needs a course verification date`);
     assert.match(programme.courseSourceUrl || '', /^https:\/\//, `${programme.id} needs an official course source`);
     assert(programme.creditUnit, `${programme.id} needs a credit unit`);

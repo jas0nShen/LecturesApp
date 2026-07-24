@@ -136,3 +136,31 @@ test('blocked TPG Programme does not expose course planning', async () => {
   assert.equal(page.data.tpgPlanningSupported, false);
   assert.match(page.data.tpgPlanningReason, /课程结构尚未开放/);
 });
+
+test('course-list-only TPG detail shows official credit ranges without local state actions', async () => {
+  const programmeId = 'EDUHK-TPG-DIR-MSCESLPLD';
+  const courseCode = 'SED6026';
+  const page = loadCourseDetailPage({}, {
+    userProfile: {
+      profileType: 'tpg',
+      programmeId,
+      universityCode: 'EDUHK',
+      trackId: ''
+    }
+  });
+
+  await page.onLoad({ tpgProgrammeId: programmeId, courseCode });
+
+  assert.equal(page.data.course.creditLabel, '3–6 credit points');
+  assert.equal(page.data.tpgCourseActionsEnabled, false);
+  assert.equal(page.data.tpgPlanningSupported, false);
+  page.toggleFavorite();
+  page.toggleCompleted();
+  page.togglePlanned();
+  assert.equal(page.data.favorite, false);
+  assert.equal(page.data.completed, false);
+  assert.equal(page.data.planned, false);
+  assert.equal(page._storage.favoriteTpgCourseKeys, undefined);
+  assert.equal(page._storage.completedTpgCourseKeys, undefined);
+  assert.equal(page._storage.plannedTpgCourseKeys, undefined);
+});

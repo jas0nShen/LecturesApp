@@ -249,6 +249,36 @@ test('blocked TPG supplements can correct official totals and Award Paths withou
   assert.equal(programme.dataLevel, 'programme');
 });
 
+test('blocked TPG supplements can expose a complete course list without claiming verified rules', () => {
+  const catalogue = fixtureCatalogue();
+  const supplement = fixtureSupplement();
+  supplement.programmes[0].status = 'blocked';
+  supplement.programmes[0].courseListOnly = true;
+  supplement.programmes[0].statusNote = 'The course list is complete, but an exact practicum credit split is not published.';
+
+  validateSupplement(supplement, catalogue, 'course-list-only.json');
+  const imported = applySupplements(catalogue, [{ file: 'course-list-only.json', value: supplement }]);
+  const programme = imported.programmes[0];
+
+  assert.equal(programme.courseVerificationStatus, 'blocked');
+  assert.equal(programme.dataLevel, 'course_list');
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.equal(programme.courseGroups[0].courses[0].code, 'TST5001');
+});
+
+test('TPG course supplements reject blocked or archived course groups without the explicit course-list-only contract', () => {
+  const blocked = fixtureSupplement();
+  blocked.programmes[0].status = 'blocked';
+  blocked.programmes[0].statusNote = 'Incomplete rules.';
+  assert.throws(() => validateSupplement(blocked, fixtureCatalogue(), 'blocked.json'), /cannot publish courses while blocked/);
+
+  const archived = fixtureSupplement();
+  archived.programmes[0].status = 'archived';
+  archived.programmes[0].courseListOnly = true;
+  archived.programmes[0].statusNote = 'Archived Programme.';
+  assert.throws(() => validateSupplement(archived, fixtureCatalogue(), 'archived.json'), /can use courseListOnly only while blocked/);
+});
+
 test('TPG course supplements can correct official Programme metadata without changing its stable ID', () => {
   const catalogue = fixtureCatalogue();
   catalogue.programmes[0].name = 'Broken directory label';
@@ -1385,6 +1415,100 @@ test('HKU Periodontology preserves all five compulsory components and corrects t
   assert.equal(capstone.courses[0].courseKind, 'project');
   assert.match(programme.statusNote, /no longer carries the older Subject to official approval notice/);
   assert.match(programme.statusNote, /corrects the 66-credit directory value/);
+});
+
+test('EdUHK Educational Speech-Language Pathology exposes 23 browsable courses without inferring Practicum credits', () => {
+  const supplement = require('../data/tpg-course-supplements/eduhk-educational-speech-language-pathology-learning-disabilities-2026.json');
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'eduhk-educational-speech-language-pathology-learning-disabilities-2026.json');
+  const programme = supplement.programmes[0];
+  const practicum = programme.courseGroups.find((group) => group.id === 'practicum');
+  const courses = programme.courseGroups.flatMap((group) => group.courses);
+
+  assert.equal(programme.programmeId, 'EDUHK-TPG-DIR-MSCESLPLD');
+  assert.equal(programme.status, 'blocked');
+  assert.equal(programme.courseListOnly, true);
+  assert.equal(programme.creditsRequired, 81);
+  assert.equal(programme.ruleReviewStatus, 'manual_review_required');
+  assert.deepEqual(programme.courseGroups.map((group) => group.creditsRequired), [48, 21, 6, 6]);
+  assert.deepEqual(programme.courseGroups.map((group) => group.courses.length), [16, 4, 2, 1]);
+  assert.equal(courses.length, 23);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 23);
+  assert.deepEqual(
+    practicum.courses.map((course) => [course.code, course.credits, course.creditsMin, course.creditsMax]),
+    [
+      ['SED6026', undefined, 3, 6],
+      ['SED6065', undefined, 3, 6],
+      ['SED6066', undefined, 3, 6],
+      ['SED6067', undefined, 3, 6]
+    ]
+  );
+  assert.match(programme.statusNote, /must not be inferred/);
+});
+
+test('EdUHK Cultural Heritage Education and Management exposes the complete current Heritage specialisation', () => {
+  const supplement = require('../data/tpg-course-supplements/eduhk-cultural-heritage-education-management-2026.json');
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'eduhk-cultural-heritage-education-management-2026.json');
+  const programme = supplement.programmes[0];
+  const [core, heritage] = programme.courseGroups;
+  const courses = programme.courseGroups.flatMap((group) => group.courses);
+
+  assert.equal(programme.programmeId, 'EDUHK-TPG-DIR-MA-CHEM');
+  assert.equal(programme.status, 'verified');
+  assert.equal(programme.creditsRequired, 24);
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.deepEqual(programme.courseGroups.map((group) => group.creditsRequired), [12, 12]);
+  assert.deepEqual(programme.courseGroups.map((group) => group.coursesRequired), [4, 4]);
+  assert.deepEqual(programme.courseGroups.map((group) => group.courses.length), [4, 7]);
+  assert.deepEqual(core.courses.map((course) => course.code), ['HEM6020', 'HEM6021', 'HEM6022', 'CHI6936']);
+  assert.deepEqual(heritage.courses.map((course) => course.code), ['HEM6023', 'HEM6024', 'HEM6025', 'HEM6026', 'HEM6027', 'PRJ6010', 'HEM6028']);
+  assert.equal(courses.every((course) => course.credits === 3), true);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 11);
+  assert.equal(courses.some((course) => course.code === 'HEM6029'), false);
+  assert.equal(courses.find((course) => course.code === 'PRJ6010').courseKind, 'project');
+  assert.equal(courses.find((course) => course.code === 'HEM6028').courseKind, 'internship');
+  assert.match(courses.find((course) => course.code === 'HEM6028').sourceUrl, /moodle\.eduhk\.hk/);
+  assert.match(programme.statusNote, /2026-27 Semester 2 instance is not yet published/);
+  assert.match(programme.statusNote, /Xiqu Specialisation.*not open/);
+});
+
+test('EdUHK Personal Finance Education preserves both current 24-credit completion paths', () => {
+  const supplement = require('../data/tpg-course-supplements/eduhk-personal-finance-education-2026.json');
+  const catalogue = require('../data/tpg-programmes.json');
+  validateSupplement(supplement, catalogue, 'eduhk-personal-finance-education-2026.json');
+  const programme = supplement.programmes[0];
+  const [commonCore, advancedCore, courseworkElectives, researchProject] = programme.courseGroups;
+  const courses = programme.courseGroups.flatMap((group) => group.courses);
+  const trackIds = programme.tracks.map((track) => track.id);
+
+  assert.equal(programme.programmeId, 'EDUHK-TPG-DIR-MA-PFE');
+  assert.equal(programme.status, 'verified');
+  assert.equal(programme.creditsRequired, 24);
+  assert.equal(programme.ruleReviewStatus, 'verified');
+  assert.deepEqual(programme.courseGroups.map((group) => group.courses.length), [5, 2, 4, 1]);
+  assert.equal(new Set(courses.map((course) => course.code)).size, 12);
+  assert.deepEqual(advancedCore.creditsRequiredByTrackIds, {
+    [trackIds[0]]: 6,
+    [trackIds[1]]: 3
+  });
+  assert.deepEqual(advancedCore.coursesRequiredByTrackIds, {
+    [trackIds[0]]: 2,
+    [trackIds[1]]: 1
+  });
+  assert.equal(commonCore.creditsRequired, 15);
+  assert.equal(courseworkElectives.appliesToTrackIds[0], trackIds[0]);
+  assert.equal(researchProject.appliesToTrackIds[0], trackIds[1]);
+  assert.deepEqual(
+    [courses.find((course) => course.code === 'BUS6046').credits, courses.find((course) => course.code === 'BUS6046').courseKind],
+    [3, 'internship']
+  );
+  assert.deepEqual(
+    [courses.find((course) => course.code === 'BUS6040').credits, courses.find((course) => course.code === 'BUS6040').courseKind],
+    [6, 'project']
+  );
+  assert.match(programme.statusNote, /current BUS6046 outline.*confirms 3 credit points/);
+  assert.match(programme.statusNote, /supersedes the older 6-credit outline conflict/);
 });
 
 test('HKU Prosthodontics remains blocked while current official approval evidence is unavailable', () => {
