@@ -1,6 +1,6 @@
 module.exports = {
-  version: '1.0.11',
+  version: '1.0.12',
   target: '香港高校课程规划助手正式版',
   dataMode: '体验版 / 正式版离线数据',
-  releaseNote: '扩充多校本科与授课硕士课程清单，并完善规则待复核 Programme 的只读课程浏览。'
+  releaseNote: '扩充 HKU 商科、经济、统计、会计及法学双学位官方课程清单。'
 };

@@ -45,17 +45,17 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.universityCount, 8);
   assert.equal(summary.facultyCount, 70);
   assert.equal(summary.programmeCount, 445);
-  assert.equal(summary.majorCount, 678);
+  assert.equal(summary.majorCount, 685);
   assert.equal(summary.requirementCount, 4);
-  assert.equal(summary.courseCount, 16217);
+  assert.equal(summary.courseCount, 17287);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 16203);
-  assert.equal(summary.programmeWithCoursesCount, 246);
-  assert.equal(summary.pendingProgrammeCount, 198);
+  assert.equal(summary.codedCourseCount, 17273);
+  assert.equal(summary.programmeWithCoursesCount, 262);
+  assert.equal(summary.pendingProgrammeCount, 182);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
-  assert.equal(summary.coveragePercent, 55);
+  assert.equal(summary.coveragePercent, 59);
   assert.match(summary.generatedAt, /^\d{4}-\d{2}-\d{2}T/);
   assert.match(summary.generatedDate, /^\d{4}-\d{2}-\d{2}$/);
 });
@@ -515,7 +515,7 @@ test('UG per-school coverage stays visible for setup validation', () => {
   assert.deepEqual(
     Object.fromEntries(Object.entries(coverage).map(([code, item]) => [code, [item.programmeCount, item.majorCount]])),
     {
-      HKU: [137, 137], CUHK: [84, 85], HKUST: [50, 64], POLYU: [46, 114],
+      HKU: [137, 144], CUHK: [84, 85], HKUST: [50, 64], POLYU: [46, 114],
       CITYU: [58, 183], HKBU: [22, 47], EDUHK: [25, 25], LINGNAN: [23, 23]
     }
   );
@@ -535,11 +535,11 @@ test('UG school coverage summarizes imported source data for the status page', (
 
   assert.equal(coverage.length, 8);
   assert.equal(hku.programmeCount, 136);
-  assert.equal(hku.majorCount, 136);
-  assert.equal(hku.programmeWithCoursesCount, 57);
-  assert.equal(hku.pendingProgrammeCount, 79);
-  assert.equal(hku.coveragePercent, 42);
-  assert.equal(hku.codedCourseCount, 3602);
+  assert.equal(hku.majorCount, 143);
+  assert.equal(hku.programmeWithCoursesCount, 73);
+  assert.equal(hku.pendingProgrammeCount, 63);
+  assert.equal(hku.coveragePercent, 54);
+  assert.equal(hku.codedCourseCount, 4672);
   assert.match(hku.generatedDate, /^\d{4}-\d{2}-\d{2}$/);
   assert.match(hku.updatedLabel, /^更新于 \d{4}-\d{2}-\d{2}$/);
   assert.equal(hku.badge, 'COURSES');

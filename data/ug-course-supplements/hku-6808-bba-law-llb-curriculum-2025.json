@@ -1,0 +1,190 @@
+{
+  "provider": "HKU BBA(Law) and LLB Syllabuses 2025-26",
+  "academicYear": "2025-26 and thereafter (subject to approval)",
+  "sourceUrl": "https://ug.hkubs.hku.hk/f/curriculum/255366/BBA(Law)%26LLB_Syllabuses%202025-26.pdf",
+  "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-business-administration-law-and-bachelor-of-laws",
+  "note": "The official 2025-26 BBA(Law)&LLB syllabus applies to candidates admitted in 2025-26 and thereafter, subject to approval. It defines a 300-credit double degree with either a 78-credit Business Major or a 108-credit Accounting Professional Core, plus a 156-credit Law Professional Core. The Business Stream explicitly requires one of five BBA Majors, so those Programme-local lists reuse the corresponding current official BBA syllabus already maintained in this repository. The 6808 syllabus publishes every fixed Law and Accounting core code but leaves the Law capstone and 42-credit disciplinary elective requirements as LLAWxxxx. The current LLB syllabus closes the designated capstone pool and the designated disciplinary-elective subset; those verified codes are included for browsing, but they are not the complete 42-credit Law elective universe. Open Common Core, free-elective, CUNDxxxx, AILTxxxx and other placeholder ranges are excluded. This supplement must therefore remain a partial planning list and must not produce a completion percentage.",
+  "supplements": [
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6808",
+      "programmeId": "HKU-UG-6808-80",
+      "majorId": "HKU-UG-6808-80-M1",
+      "majorOverride": {
+        "expectedMajorIds": ["HKU-UG-6808-80-M1"],
+        "id": "HKU-UG-6808-80-M1",
+        "code": "BUSINESS-EDI",
+        "nameEn": "Business Stream - Entrepreneurship, Design and Innovation",
+        "nameZh": "Business Stream - Entrepreneurship, Design and Innovation"
+      },
+      "sourceUrl": "https://ug.hkubs.hku.hk/f/page/254425/263331/BBA_Syllabuses%202025-26.pdf",
+      "copyCoursesFrom": {
+        "universityCode": "HKU",
+        "programmeId": "HKU-UG-6755-69",
+        "majorName": "Bachelor of Business Administration (Major in Entrepreneurship, Design and Innovation)"
+      }
+    },
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6808",
+      "programmeId": "HKU-UG-6808-80",
+      "majorId": "HKU-UG-6808-80-M2",
+      "createMajor": {
+        "id": "HKU-UG-6808-80-M2",
+        "code": "BUSINESS-FINANCE",
+        "nameEn": "Business Stream - Finance",
+        "nameZh": "Business Stream - Finance"
+      },
+      "sourceUrl": "https://ug.hkubs.hku.hk/f/page/254425/263331/BBA_Syllabuses%202025-26.pdf",
+      "copyCoursesFrom": {
+        "universityCode": "HKU",
+        "programmeId": "HKU-UG-6755-70",
+        "majorName": "Bachelor of Business Administration (Major in Finance)"
+      }
+    },
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6808",
+      "programmeId": "HKU-UG-6808-80",
+      "majorId": "HKU-UG-6808-80-M3",
+      "createMajor": {
+        "id": "HKU-UG-6808-80-M3",
+        "code": "BUSINESS-HRM",
+        "nameEn": "Business Stream - Human Resource Management",
+        "nameZh": "Business Stream - Human Resource Management"
+      },
+      "sourceUrl": "https://ug.hkubs.hku.hk/f/page/254425/263331/BBA_Syllabuses%202025-26.pdf",
+      "copyCoursesFrom": {
+        "universityCode": "HKU",
+        "programmeId": "HKU-UG-6755-71",
+        "majorName": "Bachelor of Business Administration (Major in Human Resource Management)"
+      }
+    },
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6808",
+      "programmeId": "HKU-UG-6808-80",
+      "majorId": "HKU-UG-6808-80-M4",
+      "createMajor": {
+        "id": "HKU-UG-6808-80-M4",
+        "code": "BUSINESS-ISA",
+        "nameEn": "Business Stream - Information Systems and Analytics",
+        "nameZh": "Business Stream - Information Systems and Analytics"
+      },
+      "sourceUrl": "https://ug.hkubs.hku.hk/f/page/254425/263331/BBA_Syllabuses%202025-26.pdf",
+      "copyCoursesFrom": {
+        "universityCode": "HKU",
+        "programmeId": "HKU-UG-6755-72",
+        "majorName": "Bachelor of Business Administration (Major in Information Systems and Analytics)"
+      }
+    },
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6808",
+      "programmeId": "HKU-UG-6808-80",
+      "majorId": "HKU-UG-6808-80-M5",
+      "createMajor": {
+        "id": "HKU-UG-6808-80-M5",
+        "code": "BUSINESS-MARKETING",
+        "nameEn": "Business Stream - Marketing",
+        "nameZh": "Business Stream - Marketing"
+      },
+      "sourceUrl": "https://ug.hkubs.hku.hk/f/page/254425/263331/BBA_Syllabuses%202025-26.pdf",
+      "copyCoursesFrom": {
+        "universityCode": "HKU",
+        "programmeId": "HKU-UG-6755-73",
+        "majorName": "Bachelor of Business Administration (Major in Marketing)"
+      }
+    },
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6808",
+      "programmeId": "HKU-UG-6808-80",
+      "majorId": "HKU-UG-6808-80-M6",
+      "createMajor": {
+        "id": "HKU-UG-6808-80-M6",
+        "code": "ACCOUNTING",
+        "nameEn": "Accounting Stream",
+        "nameZh": "Accounting Stream"
+      },
+      "courses": [
+        { "code": "ACCT1101", "title": "Introduction to financial accounting", "credits": 6, "recommendedYear": 1, "courseType": "foundation", "group": "Professional Core in Accounting - Faculty Core required / 6 credits" },
+        { "code": "ECON1210", "title": "Introductory microeconomics", "credits": 6, "recommendedYear": 1, "courseType": "foundation", "group": "Professional Core in Accounting - Faculty Core required / 6 credits" },
+        { "code": "ECON1280", "title": "Analysis of economic data", "credits": 6, "recommendedYear": 1, "courseType": "foundation", "group": "Professional Core in Accounting - choose ECON1280 or IIMT1640 / 6 credits" },
+        { "code": "IIMT1640", "title": "Probability and statistics for business", "credits": 6, "recommendedYear": 1, "courseType": "foundation", "group": "Professional Core in Accounting - choose ECON1280 or IIMT1640 / 6 credits" },
+        { "code": "FINA1310", "title": "Corporate finance", "credits": 6, "recommendedYear": 2, "courseType": "foundation", "group": "Professional Core in Accounting - Faculty Core required / 6 credits" },
+        { "code": "ACCT2102", "title": "Intermediate financial accounting I", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Professional Core in Accounting - Disciplinary Core required / 6 credits" },
+        { "code": "ACCT2105", "title": "Introduction to management accounting", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Professional Core in Accounting - Disciplinary Core required / 6 credits" },
+        { "code": "IIMT2601", "title": "Management information systems", "credits": 6, "courseType": "core", "group": "Professional Core in Accounting - Disciplinary Core required / 6 credits; Year 2 or 3" },
+        { "code": "MGMT2401", "title": "Principles of management", "credits": 6, "courseType": "core", "group": "Professional Core in Accounting - Disciplinary Core required / 6 credits; Year 2 or 3" },
+        { "code": "MKTG2501", "title": "Introduction to marketing", "credits": 6, "courseType": "core", "group": "Professional Core in Accounting - Disciplinary Core required / 6 credits; Year 2 or 3" },
+        { "code": "IIMT3636", "title": "Decision and risk analysis I", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Professional Core in Accounting - Disciplinary Core required / 6 credits" },
+        { "code": "ACCT3103", "title": "Intermediate financial accounting II", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Professional Core in Accounting - Disciplinary Core required / 6 credits" },
+        { "code": "ACCT3106", "title": "Management control", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Professional Core in Accounting - Disciplinary Core required / 6 credits" },
+        { "code": "ACCT3107", "title": "Hong Kong taxation", "credits": 6, "courseType": "core", "group": "Professional Core in Accounting - Disciplinary Core required / 6 credits; Year 4 or 5" },
+        { "code": "ACCT3109", "title": "Auditing", "credits": 6, "courseType": "core", "group": "Professional Core in Accounting - Disciplinary Core required / 6 credits; Year 4 or 5" },
+        { "code": "ACCT3112", "title": "Accounting data management and analytics", "credits": 6, "courseType": "capstone", "group": "Professional Core in Accounting - required Capstone / 6 credits; Year 4 or 5" },
+        { "code": "ACCT4104", "title": "Advanced financial accounting", "credits": 6, "courseType": "core", "group": "Professional Core in Accounting - Disciplinary Core required / 6 credits; Year 4 or 5" },
+        { "code": "ECON1220", "title": "Introductory macroeconomics", "credits": 6, "courseType": "core", "group": "Professional Core in Accounting - Disciplinary Core required / 6 credits; Year 4 or 5" },
+        { "code": "FINA2320", "title": "Investments and portfolio analysis", "credits": 6, "courseType": "core", "group": "Professional Core in Accounting - Disciplinary Core required / 6 credits; Year 4 or 5" }
+      ]
+    },
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6808",
+      "programmeId": "HKU-UG-6808-80",
+      "evidenceNote": "These Programme-wide rows are the fixed coded language, AI and Law requirements from the 6808 syllabus, plus the current LLB syllabus's complete designated capstone pool and designated disciplinary-elective subset. The 42-credit Law disciplinary-elective requirement is broader than the published designated subset, so this list is intentionally partial.",
+      "courses": [
+        { "code": "CAES1001", "title": "Academic communication in English", "credits": 0, "recommendedYear": 1, "courseType": "foundation", "group": "UG 5 Languages - required unless exempt / 0 credits" },
+        { "code": "CDDL9001", "title": "Practical Chinese for double degree law students", "credits": 6, "courseType": "foundation", "group": "UG 5 Languages - normal Chinese requirement / 6 credits; Year 1, 2 or 3" },
+        { "code": "CHIN9501", "title": "Chinese as a Foreign Language I", "credits": 6, "courseType": "foundation", "group": "UG 5 Languages - approved CDDL9001 alternative / 6 credits" },
+        { "code": "CHIN9511", "title": "Cantonese as a Foreign Language I", "credits": 6, "courseType": "foundation", "group": "UG 5 Languages - approved CDDL9001 alternative / 6 credits" },
+        { "code": "CHIN9521", "title": "The Fundamentals of Chinese Characters", "credits": 6, "courseType": "foundation", "group": "UG 5 Languages - approved CDDL9001 alternative / 6 credits" },
+        { "code": "CHIN9522", "title": "Exploration of Major Cultural Themes across Chinese History", "credits": 6, "courseType": "foundation", "group": "UG 5 Languages - approved CDDL9001 alternative / 6 credits" },
+        { "code": "AILT1001", "title": "Artificial intelligence literacy I", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "UG 5 Artificial Intelligence Literacy - required / 3 credits" },
+
+        { "code": "LLAW1001", "title": "Law of contract I", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Professional Core in Law - required / 6 credits" },
+        { "code": "LLAW1002", "title": "Law of contract II", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Professional Core in Law - required / 6 credits" },
+        { "code": "LLAW1008", "title": "The legal system of the Hong Kong SAR", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Professional Core in Law - required / 6 credits" },
+        { "code": "LLAW1014", "title": "Criminal law I", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Professional Core in Law - required / 6 credits" },
+        { "code": "LLAW1015", "title": "Criminal law II", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Professional Core in Law - required / 6 credits" },
+        { "code": "LLAW1016", "title": "Legal research and writing", "credits": 6, "courseType": "core", "group": "Professional Core in Law - required / 6 credits; Year 1 or 2" },
+        { "code": "LLAW1005", "title": "Law of tort I", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Professional Core in Law - required / 6 credits" },
+        { "code": "LLAW1006", "title": "Law of tort II", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Professional Core in Law - required / 6 credits" },
+        { "code": "LLAW2012", "title": "Commercial law", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Professional Core in Law - required / 6 credits" },
+        { "code": "LLAW3010", "title": "Business associations", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Professional Core in Law - required / 6 credits" },
+        { "code": "LLAW2001", "title": "Constitutional law", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Professional Core in Law - required / 6 credits" },
+        { "code": "LLAW3093", "title": "Administrative law", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Professional Core in Law - required / 6 credits" },
+        { "code": "LLAW2009", "title": "Introduction to Chinese legal system", "credits": 6, "courseType": "core", "group": "Professional Core in Law - required / 6 credits; Year 4 or 5" },
+        { "code": "LLAW2018", "title": "Land law I", "credits": 6, "courseType": "core", "group": "Professional Core in Law - required / 6 credits; Year 4 or 5" },
+        { "code": "LLAW2019", "title": "Land law II", "credits": 6, "courseType": "core", "group": "Professional Core in Law - required / 6 credits; Year 4 or 5" },
+        { "code": "LLAW3001", "title": "Introduction to legal theory", "credits": 6, "courseType": "core", "group": "Professional Core in Law - required / 6 credits; Year 4 or 5" },
+        { "code": "LLAW3094", "title": "Equity and trusts I", "credits": 6, "courseType": "core", "group": "Professional Core in Law - required / 6 credits; Year 4 or 5" },
+        { "code": "LLAW3095", "title": "Equity and trusts II", "credits": 6, "courseType": "core", "group": "Professional Core in Law - required / 6 credits; Year 4 or 5" },
+
+        { "code": "LLAW3148", "title": "Clinical legal education", "credits": 6, "courseType": "capstone", "group": "Professional Core in Law - designated Capstone alternative / 6 credits; Year 4 or 5", "sourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLB_regulations_syllabus_2025-26.pdf" },
+        { "code": "LLAW3198", "title": "Clinical legal education (China)", "credits": 6, "courseType": "capstone", "group": "Professional Core in Law - designated Capstone alternative / 6 credits; Year 4 or 5", "sourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLB_regulations_syllabus_2025-26.pdf" },
+        { "code": "LLAW3256", "title": "Clinical legal education (special needs financial planning)", "credits": 6, "courseType": "capstone", "group": "Professional Core in Law - designated Capstone alternative / 6 credits; Year 4 or 5", "sourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLB_regulations_syllabus_2025-26.pdf" },
+        { "code": "LLAW3280", "title": "Clinical legal education - refugee and human trafficking stream", "credits": 6, "courseType": "capstone", "group": "Professional Core in Law - designated Capstone alternative / 6 credits; Year 4 or 5", "sourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLB_regulations_syllabus_2025-26.pdf" },
+        { "code": "LLAW3246", "title": "Disability rights clinic", "credits": 6, "courseType": "capstone", "group": "Professional Core in Law - designated Capstone alternative / 6 credits; Year 4 or 5", "sourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLB_regulations_syllabus_2025-26.pdf" },
+        { "code": "LLAW3281", "title": "Human rights in practice clinic", "credits": 6, "courseType": "capstone", "group": "Professional Core in Law - designated Capstone alternative / 6 credits; Year 4 or 5", "sourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLB_regulations_syllabus_2025-26.pdf" },
+        { "code": "LLAW3187", "title": "Mooting and dispute resolution", "credits": 6, "courseType": "capstone", "group": "Professional Core in Law - designated Capstone alternative / 6 credits; Year 4 or 5", "sourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLB_regulations_syllabus_2025-26.pdf" },
+        { "code": "LLAW3230", "title": "Public interest clinic", "credits": 6, "courseType": "capstone", "group": "Professional Core in Law - designated Capstone alternative / 6 credits; Year 4 or 5", "sourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLB_regulations_syllabus_2025-26.pdf" },
+        { "code": "LLAW3252", "title": "The global migration legal clinic", "credits": 6, "courseType": "capstone", "group": "Professional Core in Law - designated Capstone alternative / 6 credits; Year 4 or 5", "sourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLB_regulations_syllabus_2025-26.pdf" },
+
+        { "code": "LLAW3205", "title": "Advanced legal theory", "credits": 6, "courseType": "major_elective", "group": "Professional Core in Law - designated disciplinary elective subset; complete at least 6 of the broader 42 elective credits; Year 4 or 5", "sourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLB_regulations_syllabus_2025-26.pdf" },
+        { "code": "LLAW3016", "title": "Comparative law", "credits": 6, "courseType": "major_elective", "group": "Professional Core in Law - designated disciplinary elective subset; complete at least 6 of the broader 42 elective credits; Year 4 or 5", "sourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLB_regulations_syllabus_2025-26.pdf" },
+        { "code": "LLAW3157", "title": "Foundations of international law", "credits": 6, "courseType": "major_elective", "group": "Professional Core in Law - designated disciplinary elective subset; complete at least 6 of the broader 42 elective credits; Year 4 or 5", "sourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLB_regulations_syllabus_2025-26.pdf" },
+        { "code": "LLAW3216", "title": "Justice", "credits": 6, "courseType": "major_elective", "group": "Professional Core in Law - designated disciplinary elective subset; complete at least 6 of the broader 42 elective credits; Year 4 or 5", "sourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLB_regulations_syllabus_2025-26.pdf" },
+        { "code": "LLAW3128", "title": "Law and literature", "credits": 6, "courseType": "major_elective", "group": "Professional Core in Law - designated disciplinary elective subset; complete at least 6 of the broader 42 elective credits; Year 4 or 5", "sourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLB_regulations_syllabus_2025-26.pdf" },
+        { "code": "LLAW3172", "title": "Law and social theory", "credits": 6, "courseType": "major_elective", "group": "Professional Core in Law - designated disciplinary elective subset; complete at least 6 of the broader 42 elective credits; Year 4 or 5", "sourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLB_regulations_syllabus_2025-26.pdf" },
+        { "code": "LLAW3283", "title": "Law and society", "credits": 6, "courseType": "major_elective", "group": "Professional Core in Law - designated disciplinary elective subset; complete at least 6 of the broader 42 elective credits; Year 4 or 5", "sourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLB_regulations_syllabus_2025-26.pdf" },
+        { "code": "LLAW3233", "title": "Law, history and culture", "credits": 6, "courseType": "major_elective", "group": "Professional Core in Law - designated disciplinary elective subset; complete at least 6 of the broader 42 elective credits; Year 4 or 5", "sourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLB_regulations_syllabus_2025-26.pdf" },
+        { "code": "LLAW3039", "title": "Legal history", "credits": 6, "courseType": "major_elective", "group": "Professional Core in Law - designated disciplinary elective subset; complete at least 6 of the broader 42 elective credits; Year 4 or 5", "sourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLB_regulations_syllabus_2025-26.pdf" },
+        { "code": "LLAW3235", "title": "Punishment and society", "credits": 6, "courseType": "major_elective", "group": "Professional Core in Law - designated disciplinary elective subset; complete at least 6 of the broader 42 elective credits; Year 4 or 5", "sourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLB_regulations_syllabus_2025-26.pdf" },
+        { "code": "LLAW3282", "title": "The economic analysis of law", "credits": 6, "courseType": "major_elective", "group": "Professional Core in Law - designated disciplinary elective subset; complete at least 6 of the broader 42 elective credits; Year 4 or 5", "sourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLB_regulations_syllabus_2025-26.pdf" },
+        { "code": "LLAW3278", "title": "The legal profession", "credits": 6, "courseType": "major_elective", "group": "Professional Core in Law - designated disciplinary elective subset; complete at least 6 of the broader 42 elective credits; Year 4 or 5", "sourceUrl": "https://dm.law.hku.hk/wp-content/uploads/LLB_regulations_syllabus_2025-26.pdf" }
+      ]
+    }
+  ]
+}

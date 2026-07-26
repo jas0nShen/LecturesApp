@@ -543,7 +543,7 @@ test('UG source coverage report annotates missing programmes with source-code re
   assert.equal(firstMissing.sourceCodedCourseCount, 0);
   assert.equal(firstMissing.sourceImportableCodedCourseCount, 0);
   assert.match(formatMissingSourceStatus(firstMissing), /source index only/);
-  assert.equal(firstMissing.sourceReviewStatus, undefined);
+  assert.equal(firstMissing.sourceReviewStatus, 'public_course_codes_partial');
   assert.equal(sourceProgrammes.get(`HKU::${firstMissing.code}`).sourceStatus, 'source_index_only');
 });
 
@@ -667,13 +667,28 @@ test('UG source coverage report can build a grouped missing data batch plan', ()
 
   assert.equal(args.batchPlan, true);
   assert(groups.sourceIndexOnly.length > 0);
-  assert.equal(groups.reviewedNoCourseCodes.length, 18);
+  assert.equal(groups.reviewedNoCourseCodes.length, 21);
   assert(groups.noSource.length <= 165);
   assert.equal(groups.sourceIndexOnly[0].schoolCode, 'HKU');
   assert(groups.sourceIndexOnly[0].code);
   assert.equal(groups.sourceIndexOnly[0].sourceStatus, 'source_index_only');
   assert.equal(groups.reviewedNoCourseCodes[0].code, 'JS3011');
   assert.equal(groups.reviewedNoCourseCodes[0].sourceReviewStatus, 'no_public_course_codes');
+  assert(groups.reviewedNoCourseCodes.some((programme) => (
+    programme.schoolCode === 'HKU'
+    && programme.code === '6418'
+    && programme.sourceReviewStatus === 'no_public_course_codes'
+  )));
+  assert(groups.reviewedNoCourseCodes.some((programme) => (
+    programme.schoolCode === 'HKU'
+    && programme.code === '6468'
+    && programme.sourceReviewStatus === 'no_public_course_codes'
+  )));
+  assert(groups.reviewedNoCourseCodes.some((programme) => (
+    programme.schoolCode === 'HKU'
+    && programme.code === '6602'
+    && programme.sourceReviewStatus === 'no_public_course_codes'
+  )));
   assert.match(plan, /【本科课程补数批次计划】/);
   assert.match(plan, /A\. 可直接导入候选：0 个/);
   assert.match(plan, new RegExp(`C\\. 需打开官方入口核实课程码：${groups.sourceIndexOnly.length} 个`));

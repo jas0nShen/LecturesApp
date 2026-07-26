@@ -174,5 +174,61 @@
     "status": "no_public_course_codes",
     "officialUrl": "https://www.chi.cuhk.edu.hk/en/study/ba-hons-in-chinese-language-and-literature/study-schemes-and-courses/4year-curriculum/",
     "note": "The official 2026-27 Major Programme Requirement publishes the 66-unit structure, 11 required CHLL codes and four Specialty elective code groups, but the official 2026-27 Course Offerings page exposes only 19 unique CHLL codes and does not verify current titles and units for the remaining curriculum pool. The Major Requirement also repeats CHLL3402 in the Modern Chinese Literature list, so the complete current code pool cannot be reconciled without inference. Keep JS4018 index-only and do not publish an annual offering subset as the full Major curriculum."
+  },
+  {
+    "universityCode": "HKU",
+    "programmeCode": "6303",
+    "reviewedAt": "2026-07-26",
+    "status": "public_course_codes_partial",
+    "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-engineering-elite-programme",
+    "note": "The official HKU admission page confirms that the BEng Elite Programme is an umbrella route whose students may choose Civil Engineering, Computer Engineering, Electrical Engineering, Electronic Engineering, Industrial Engineering and Logistics Management, Mechanical Engineering, Computer Science, or Artificial Intelligence and Data Science as their BEng degree. The current public evidence set closes only some of those degree curricula and does not provide one complete Programme-local curriculum covering all eight choices. Do not merge courses from different degrees into the existing aggregate Major or present a subset as the complete Elite Programme. Keep 6303 index-only until every choice has a current official coded curriculum and can be represented as an isolated Programme-local Major."
+  },
+  {
+    "universityCode": "HKU",
+    "programmeCode": "6377",
+    "reviewedAt": "2026-07-26",
+    "status": "public_course_codes_partial",
+    "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-engineering-and-master-of-science-engineering",
+    "note": "The official HKU admission page confirms that this 4+1 scheme combines one of six BEng degrees - Civil Engineering, Computer Engineering, Electrical Engineering, Electronic Engineering, Industrial Engineering and Logistics Management, or Mechanical Engineering - with the MSc(Eng) in Artificial Intelligence in Engineering, and that students may opt out after completing the chosen bachelor's degree. The current public evidence set does not close all six cohort-specific BEng curricula together with the MSc component. Do not copy only the available Civil and Mechanical Engineering lists, merge different degrees into one Major, or omit the postgraduate component while presenting the result as the complete 6377 scheme. Keep 6377 index-only until every degree path and the MSc component can be represented with current official coded evidence."
+  },
+  {
+    "universityCode": "HKU",
+    "programmeCode": "6418",
+    "reviewedAt": "2026-07-26",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://hkumed-ugadmissions.hku.hk/ug_programmes/bachelor-of-nursing/",
+    "note": "The current official HKUMed Bachelor of Nursing programme outline publishes the five-year, 303-credit, 44-course curriculum by year and semester, including course titles, credits and practica, but it does not publish course codes. The official 6418 admissions page confirms that the Advanced Leadership Track builds on this BNurs curriculum and adds a Leadership Development Programme plus optional articulation to MNurs or MBBS, without a coded ALT-specific course table. Do not map older NURS codes onto the current title-only structure or copy the ordinary BNurs outline as a complete ALT curriculum. Keep 6418 index-only until an official current coded curriculum and the ALT-specific components are publicly available."
+  },
+  {
+    "universityCode": "HKU",
+    "programmeCode": "6468",
+    "reviewedAt": "2026-07-26",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://hkumed-ugadmissions.hku.hk/ug_programmes/bachelor-of-nursing/",
+    "note": "The current official HKUMed Bachelor of Nursing programme outline publishes a complete five-year, 303-credit, 44-course structure by year and semester, with course titles, credits and practica, but no course codes. The 2025-26 HKU Degree Regulations and Curricula page links to this title-only programme outline rather than a current coded syllabus. Do not reuse the 2024-25 BNurs PDF codes as if they were verified for the current curriculum. Keep 6468 index-only until HKU publishes a current stable coded course table."
+  },
+  {
+    "universityCode": "HKU",
+    "programmeCode": "6602",
+    "reviewedAt": "2026-07-26",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://admissions.hku.hk/sites/default/files/2025-10/I-School_Leaflet_2026.pdf",
+    "note": "The official HKU School of Innovation 2026 programme leaflet describes the four-year project-led curriculum, integrated foundational courses spanning science, technology, design and entrepreneurship, a personalised technology focus, a six-to-eight-month full-time co-op and a startup-like capstone. It does not publish any course codes, per-course credits, fixed foundation-course titles or a closed technology-focus pool. Do not construct a curriculum from similarly named HKU courses or treat the illustrative project themes as courses. Keep 6602 index-only until the School publishes a current coded curriculum."
+  },
+  {
+    "universityCode": "HKU",
+    "programmeCode": "6808",
+    "reviewedAt": "2026-07-26",
+    "status": "public_course_codes_partial",
+    "officialUrl": "https://ug.hkubs.hku.hk/f/curriculum/255366/BBA(Law)%26LLB_Syllabuses%202025-26.pdf",
+    "note": "The official 2025-26 BBA(Law)&LLB syllabus applies to the 2025-26 cohort and thereafter, subject to approval. It closes the 300-credit structure, the five named Business Major paths, the Accounting Professional Core and every fixed Law core code. Current BBA and LLB syllabuses close the five Business Major pools, the designated Law capstone pool and the designated disciplinary-elective subset. However, the 6808 syllabus requires 42 credits of Law disciplinary electives from a broader LLAWxxxx universe and does not publish that complete universe in the Programme-specific table. Publish the six isolated Programme-local Stream/Major lists for read-only planning, but do not present them as a complete graduation structure or calculate a completion percentage."
+  },
+  {
+    "universityCode": "HKU",
+    "programmeCode": "6810",
+    "reviewedAt": "2026-07-26",
+    "status": "public_course_codes_partial",
+    "officialUrl": "https://ppa.hku.hk/wp-content/uploads/2025/01/BSSGLLLB-table_2024-25.pdf",
+    "note": "The official Programme-specific table applies to the 2024-25 cohort and thereafter and closes the 300-credit category totals, fixed PPA and Law core codes, PPA capstone alternatives, language codes, ten Law capstone alternatives and seven designated Law disciplinary electives. The current 2025-26 LLB syllabus removes LLAW3058 from the capstone pool and renames LLAW3230 from Business of justice clinic to Public interest clinic, so publish only the nine-code current capstone intersection using the current title. The current BSocSc syllabus supplies the coded Social Innovation and Global Citizenship alternatives. The Programme-specific table still requires eight PPA electives and 42 credits of Law electives without publishing either complete Programme-local pool; it also leaves the FOSS introductory course, Common Core and free electives unnamed. Expose the 54 verified codes for read-only planning, but do not present them as a complete graduation structure or calculate a completion percentage."
   }
 ]

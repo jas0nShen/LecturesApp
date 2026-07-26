@@ -14,7 +14,7 @@ const counts = {
   "CUHK": 732,
   "EDUHK": 547,
   "HKBU": 2664,
-  "HKU": 3602,
+  "HKU": 4672,
   "HKUST": 2200,
   "LINGNAN": 721,
   "POLYU": 2681

@@ -1,0 +1,153 @@
+{
+  "provider": "HKU School of Computing and Data Science BStat Syllabus 2025-26",
+  "academicYear": "2025-26 and thereafter",
+  "sourceUrl": "https://www.cds.hku.hk/wp-content/uploads/2025/04/Syllabus_BStat_2025-26-UG5.pdf",
+  "officialUrl": "https://www.cds.hku.hk/prospective-students/undergraduate/6779-statistical-decision-sciences/",
+  "additionalSourceUrls": [
+    "https://admissions.hku.hk/programmes/undergraduate-programmes/statistical-decision-sciences",
+    "https://www.cds.hku.hk/wp-content/uploads/2024/10/hku-cds_a5-programme-leaflet_6779.pdf"
+  ],
+  "note": "The official syllabus applies to the four-year BStat curriculum for students admitted in 2025-26 and thereafter. It requires one of three Professional Cores, which are modelled as isolated Programme-local Majors: Statistics, Decision Analytics, and Risk Management. This supplement records every code and title explicitly listed in the BStat degree requirements: two named UG5 courses, each Professional Core's introductory and advanced disciplinary courses, all four introductory mathematics alternatives, every bounded advanced elective list, and the four shared Capstone options. The unnamed Chinese language enhancement course, the open Common Core and Digital Literacy pools, non-credit national-education requirements, and the 66-credit open elective component are not expanded into fabricated course records. No recommended Year or semester is assigned because the syllabus classifies courses by introductory or advanced level rather than a normative study year.",
+  "supplements": [
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6779",
+      "programmeId": "HKU-UG-6779-76",
+      "majorId": "HKU-UG-6779-76-M1",
+      "majorName": "Professional Core in Statistics",
+      "majorOverride": {
+        "expectedMajorIds": ["HKU-UG-6779-76-M1"],
+        "id": "HKU-UG-6779-76-M1",
+        "code": "PROFESSIONAL-CORE-IN-STATISTICS",
+        "nameEn": "Professional Core in Statistics",
+        "nameZh": "Professional Core in Statistics"
+      },
+      "ruleSummary": "240 credits: 54 UG5 credits, 30 introductory core credits, 12 introductory elective credits from either List A or List B, 42 advanced core credits, at least 30 advanced elective credits with at least 6 from List C1 and at least 12 from List C2, at least 6 Capstone credits, and 66 open elective credits.",
+      "evidenceGap": "Only CAES1001 and CAES9821 are named and coded within the 54-credit UG5 requirement. The Chinese language enhancement, Common Core, Digital Literacy, national-education and 66-credit open elective components do not have closed Programme-specific coded lists in the syllabus.",
+      "courses": [
+        { "code": "CAES1001", "title": "Academic Communication in English", "credits": 0, "courseType": "core", "group": "UG5 Requirements · unless exempted", "majorIds": ["HKU-UG-6779-76-M1", "HKU-UG-6779-76-M2", "HKU-UG-6779-76-M3"] },
+        { "code": "CAES9821", "title": "Professional and Technical Communication for Statistical Sciences", "credits": 6, "courseType": "core", "group": "UG5 Requirements", "majorIds": ["HKU-UG-6779-76-M1", "HKU-UG-6779-76-M2", "HKU-UG-6779-76-M3"] },
+
+        { "code": "COMP1117", "title": "Computer Programming", "credits": 6, "courseType": "core", "group": "Disciplinary Core · Introductory", "majorIds": ["HKU-UG-6779-76-M1", "HKU-UG-6779-76-M2", "HKU-UG-6779-76-M3"] },
+        { "code": "MATH1013", "title": "University Mathematics II", "credits": 6, "courseType": "core", "group": "Disciplinary Core · Introductory", "majorIds": ["HKU-UG-6779-76-M1", "HKU-UG-6779-76-M2", "HKU-UG-6779-76-M3"] },
+        { "code": "SDST1600", "title": "Statistics: Ideas and Concepts", "credits": 6, "courseType": "core", "group": "Disciplinary Core · Introductory", "majorIds": ["HKU-UG-6779-76-M1", "HKU-UG-6779-76-M2", "HKU-UG-6779-76-M3"] },
+        { "code": "SDST2601", "title": "Probability and Statistics I", "credits": 6, "courseType": "core", "group": "Disciplinary Core · Introductory", "majorIds": ["HKU-UG-6779-76-M1", "HKU-UG-6779-76-M2", "HKU-UG-6779-76-M3"] },
+        { "code": "SDST2602", "title": "Probability and Statistics II", "credits": 6, "courseType": "core", "group": "Disciplinary Core · Introductory", "majorIds": ["HKU-UG-6779-76-M1", "HKU-UG-6779-76-M2", "HKU-UG-6779-76-M3"] },
+        { "code": "COMP2113", "title": "Programming Technologies", "credits": 6, "courseType": "core", "group": "Disciplinary Core · Introductory · Decision Analytics", "majorIds": ["HKU-UG-6779-76-M2"] },
+        { "code": "COMP2118", "title": "Data Structures and Algorithms Essentials", "credits": 6, "courseType": "core", "group": "Disciplinary Core · Introductory · Decision Analytics", "majorIds": ["HKU-UG-6779-76-M2"] },
+
+        { "code": "MATH2012", "title": "Fundamental Concepts of Mathematics", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Introductory · List A for general study · take both List A courses or both List B courses", "majorIds": ["HKU-UG-6779-76-M1", "HKU-UG-6779-76-M2", "HKU-UG-6779-76-M3"] },
+        { "code": "MATH2014", "title": "Multivariable Calculus and Linear Algebra", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Introductory · List A for general study · take both List A courses or both List B courses", "majorIds": ["HKU-UG-6779-76-M1", "HKU-UG-6779-76-M2", "HKU-UG-6779-76-M3"] },
+        { "code": "MATH2101", "title": "Linear Algebra I", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Introductory · List B for advanced study · take both List A courses or both List B courses", "majorIds": ["HKU-UG-6779-76-M1", "HKU-UG-6779-76-M2", "HKU-UG-6779-76-M3"] },
+        { "code": "MATH2211", "title": "Multivariable Calculus", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Introductory · List B for advanced study · take both List A courses or both List B courses", "majorIds": ["HKU-UG-6779-76-M1", "HKU-UG-6779-76-M2", "HKU-UG-6779-76-M3"] },
+
+        { "code": "SDST3600", "title": "Linear Statistical Analysis", "credits": 6, "courseType": "core", "group": "Disciplinary Core · Advanced", "majorIds": ["HKU-UG-6779-76-M1", "HKU-UG-6779-76-M2", "HKU-UG-6779-76-M3"] },
+        { "code": "SDST4610", "title": "Bayesian Learning", "credits": 6, "courseType": "core", "group": "Disciplinary Core · Advanced", "majorIds": ["HKU-UG-6779-76-M1", "HKU-UG-6779-76-M2", "HKU-UG-6779-76-M3"] },
+
+        { "code": "SDST3602", "title": "Statistical Inference", "credits": 6, "courseType": "core", "group": "Disciplinary Core · Advanced · Statistics", "majorIds": ["HKU-UG-6779-76-M1"] },
+        { "code": "SDST3603", "title": "Stochastic Processes", "credits": 6, "courseType": "core", "group": "Disciplinary Core · Advanced · Statistics", "majorIds": ["HKU-UG-6779-76-M1"] },
+        { "code": "SDST3620", "title": "Modern Nonparametric Statistics", "credits": 6, "courseType": "core", "group": "Disciplinary Core · Advanced · Statistics", "majorIds": ["HKU-UG-6779-76-M1"] },
+        { "code": "SDST3621", "title": "Statistical Data Analysis", "credits": 6, "courseType": "core", "group": "Disciplinary Core · Advanced · Statistics", "majorIds": ["HKU-UG-6779-76-M1"] },
+        { "code": "SDST4602", "title": "Multivariate Data Analysis", "credits": 6, "courseType": "core", "group": "Disciplinary Core · Advanced · Statistics", "majorIds": ["HKU-UG-6779-76-M1"] },
+
+        { "code": "MATH3904", "title": "Introduction to Optimization", "credits": 6, "courseType": "core", "group": "Disciplinary Core · Advanced · Decision Analytics", "majorIds": ["HKU-UG-6779-76-M2"] },
+        { "code": "SDST3612", "title": "Statistical Machine Learning", "credits": 6, "courseType": "core", "group": "Disciplinary Core · Advanced · Decision Analytics", "majorIds": ["HKU-UG-6779-76-M2"] },
+        { "code": "SDST4609", "title": "Big Data Analytics", "credits": 6, "courseType": "core", "group": "Disciplinary Core · Advanced · Decision Analytics", "majorIds": ["HKU-UG-6779-76-M2"] },
+        { "code": "SDST4611", "title": "High-Dimensional Statistical Learning", "credits": 6, "courseType": "core", "group": "Disciplinary Core · Advanced · Decision Analytics", "majorIds": ["HKU-UG-6779-76-M2"] },
+
+        { "code": "SDST3609", "title": "The Statistics of Investment Risk", "credits": 6, "courseType": "core", "group": "Disciplinary Core · Advanced · Risk Management", "majorIds": ["HKU-UG-6779-76-M3"] },
+        { "code": "SDST3615", "title": "Practical Mathematics for Investment", "credits": 6, "courseType": "core", "group": "Disciplinary Core · Advanced · Risk Management", "majorIds": ["HKU-UG-6779-76-M3"] },
+        { "code": "SDST3618", "title": "Derivatives and Risk Management", "credits": 6, "courseType": "core", "group": "Disciplinary Core · Advanced · Risk Management", "majorIds": ["HKU-UG-6779-76-M3"] },
+        { "code": "SDST4601", "title": "Time-Series Analysis", "credits": 6, "courseType": "core", "group": "Disciplinary Core · Advanced · Risk Management", "majorIds": ["HKU-UG-6779-76-M3"] },
+        { "code": "SDST4607", "title": "Credit Risk Analysis", "credits": 6, "courseType": "core", "group": "Disciplinary Core · Advanced · Risk Management", "majorIds": ["HKU-UG-6779-76-M3"] },
+        { "code": "SDST4608", "title": "Market Risk Analysis", "credits": 6, "courseType": "core", "group": "Disciplinary Core · Advanced · Risk Management", "majorIds": ["HKU-UG-6779-76-M3"] },
+
+        { "code": "SDST3612", "title": "Statistical Machine Learning", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Statistics List C1 · at least 6 credits from C1", "majorIds": ["HKU-UG-6779-76-M1"] },
+        { "code": "SDST3655", "title": "Survival Analysis", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Statistics List C1 · at least 6 credits from C1", "majorIds": ["HKU-UG-6779-76-M1"] },
+        { "code": "SDST4601", "title": "Time-Series Analysis", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Statistics List C1 · at least 6 credits from C1", "majorIds": ["HKU-UG-6779-76-M1"] },
+        { "code": "SDST3021", "title": "Modern Biostatistics", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Statistics List C2 · at least 12 credits from C2", "majorIds": ["HKU-UG-6779-76-M1"] },
+        { "code": "SDST3604", "title": "Design and Analysis of Experiments", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Statistics List C2 · at least 12 credits from C2", "majorIds": ["HKU-UG-6779-76-M1"] },
+        { "code": "SDST3606", "title": "Business Logistics", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Statistics List C2 · at least 12 credits from C2", "majorIds": ["HKU-UG-6779-76-M1"] },
+        { "code": "SDST3607", "title": "Statistics in Clinical Medicine and Bio-medical Research", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Statistics List C2 · at least 12 credits from C2", "majorIds": ["HKU-UG-6779-76-M1"] },
+        { "code": "SDST3608", "title": "Statistical Genetics", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Statistics List C2 · at least 12 credits from C2", "majorIds": ["HKU-UG-6779-76-M1"] },
+        { "code": "SDST3613", "title": "Marketing Analytics", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Statistics List C2 · at least 12 credits from C2", "majorIds": ["HKU-UG-6779-76-M1"] },
+        { "code": "SDST3617", "title": "Sample Survey Methods", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Statistics List C2 · at least 12 credits from C2", "majorIds": ["HKU-UG-6779-76-M1"] },
+        { "code": "SDST4611", "title": "High-Dimensional Statistical Learning", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Statistics List C2 · at least 12 credits from C2", "majorIds": ["HKU-UG-6779-76-M1"] },
+        { "code": "SDST4613", "title": "Causal Inference", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Statistics List C2 · at least 12 credits from C2", "majorIds": ["HKU-UG-6779-76-M1"] },
+        { "code": "SDST7609", "title": "Research Methods in Statistics", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Statistics List C2 · at least 12 credits from C2", "majorIds": ["HKU-UG-6779-76-M1"] },
+        { "code": "SDST7610", "title": "Advanced Probability", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Statistics List C2 · at least 12 credits from C2", "majorIds": ["HKU-UG-6779-76-M1"] },
+
+        { "code": "COMP3251", "title": "Algorithm Design", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Decision Analytics List D · select at least 24 credits", "majorIds": ["HKU-UG-6779-76-M2"] },
+        { "code": "COMP3252", "title": "Algorithm Design and Analysis", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Decision Analytics List D · select at least 24 credits", "majorIds": ["HKU-UG-6779-76-M2"] },
+        { "code": "COMP3278", "title": "Introduction to Database Management Systems", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Decision Analytics List D · select at least 24 credits", "majorIds": ["HKU-UG-6779-76-M2"] },
+        { "code": "COMP3407", "title": "Scientific Computing", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Decision Analytics List D · select at least 24 credits", "majorIds": ["HKU-UG-6779-76-M2"] },
+        { "code": "SDST3620", "title": "Modern Nonparametric Statistics", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Decision Analytics List D · select at least 24 credits", "majorIds": ["HKU-UG-6779-76-M2"] },
+        { "code": "SDST3621", "title": "Statistical Data Analysis", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Decision Analytics List D · select at least 24 credits", "majorIds": ["HKU-UG-6779-76-M2"] },
+        { "code": "SDST3622", "title": "Data Visualization", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Decision Analytics List D · select at least 24 credits", "majorIds": ["HKU-UG-6779-76-M2"] },
+        { "code": "SDST4011", "title": "Natural Language Processing", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Decision Analytics List D · select at least 24 credits", "majorIds": ["HKU-UG-6779-76-M2"] },
+        { "code": "SDST4023", "title": "Medical Image Analysis", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Decision Analytics List D · select at least 24 credits", "majorIds": ["HKU-UG-6779-76-M2"] },
+        { "code": "SDST4601", "title": "Time-Series Analysis", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Decision Analytics List D · select at least 24 credits", "majorIds": ["HKU-UG-6779-76-M2"] },
+        { "code": "SDST4602", "title": "Multivariate Data Analysis", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Decision Analytics List D · select at least 24 credits", "majorIds": ["HKU-UG-6779-76-M2"] },
+        { "code": "SDST4612", "title": "Interpretable Machine Learning", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Decision Analytics List D · select at least 24 credits", "majorIds": ["HKU-UG-6779-76-M2"] },
+        { "code": "SDST4613", "title": "Causal Inference", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Decision Analytics List D · select at least 24 credits", "majorIds": ["HKU-UG-6779-76-M2"] },
+        { "code": "SDST7609", "title": "Research Methods in Statistics", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Decision Analytics List D · select at least 24 credits", "majorIds": ["HKU-UG-6779-76-M2"] },
+
+        { "code": "SDST3602", "title": "Statistical Inference", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Risk Management List E · select at least 24 credits", "majorIds": ["HKU-UG-6779-76-M3"] },
+        { "code": "SDST3603", "title": "Stochastic Processes", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Risk Management List E · select at least 24 credits", "majorIds": ["HKU-UG-6779-76-M3"] },
+        { "code": "SDST3610", "title": "Risk Management and Insurance", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Risk Management List E · select at least 24 credits", "majorIds": ["HKU-UG-6779-76-M3"] },
+        { "code": "SDST3612", "title": "Statistical Machine Learning", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Risk Management List E · select at least 24 credits", "majorIds": ["HKU-UG-6779-76-M3"] },
+        { "code": "SDST3655", "title": "Survival Analysis", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Risk Management List E · select at least 24 credits", "majorIds": ["HKU-UG-6779-76-M3"] },
+        { "code": "SDST3910", "title": "Financial Economics I", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Risk Management List E · select at least 24 credits", "majorIds": ["HKU-UG-6779-76-M3"] },
+        { "code": "SDST3911", "title": "Financial Economics II", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Risk Management List E · select at least 24 credits", "majorIds": ["HKU-UG-6779-76-M3"] },
+        { "code": "SDST4603", "title": "Current Topics in Risk Management", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Risk Management List E · select at least 24 credits", "majorIds": ["HKU-UG-6779-76-M3"] },
+        { "code": "SDST4606", "title": "Risk Management and Basel Accords in Banking and Finance", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Risk Management List E · select at least 24 credits", "majorIds": ["HKU-UG-6779-76-M3"] },
+        { "code": "SDST4614", "title": "Quantitative Risk Management", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Risk Management List E · select at least 24 credits", "majorIds": ["HKU-UG-6779-76-M3"] },
+        { "code": "SDST7609", "title": "Research Methods in Statistics", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Risk Management List E · select at least 24 credits", "majorIds": ["HKU-UG-6779-76-M3"] },
+        { "code": "SDST7610", "title": "Advanced Probability", "credits": 6, "courseType": "major_elective", "group": "Disciplinary Elective · Advanced · Risk Management List E · select at least 24 credits", "majorIds": ["HKU-UG-6779-76-M3"] },
+
+        { "code": "SDST3799", "title": "Directed Studies in Statistics", "credits": 6, "courseType": "capstone", "group": "Capstone Experience · select at least 6 credits", "majorIds": ["HKU-UG-6779-76-M1", "HKU-UG-6779-76-M2", "HKU-UG-6779-76-M3"] },
+        { "code": "SDST4710", "title": "Capstone Experience for Statistics Undergraduates", "credits": 6, "courseType": "capstone", "group": "Capstone Experience · select at least 6 credits", "majorIds": ["HKU-UG-6779-76-M1", "HKU-UG-6779-76-M2", "HKU-UG-6779-76-M3"] },
+        { "code": "SDST4766", "title": "Statistics Internship", "credits": 6, "courseType": "capstone", "group": "Capstone Experience · select at least 6 credits", "majorIds": ["HKU-UG-6779-76-M1", "HKU-UG-6779-76-M2", "HKU-UG-6779-76-M3"] },
+        { "code": "SDST4799", "title": "Statistics Project", "credits": 12, "courseType": "capstone", "group": "Capstone Experience · select at least 6 credits · reduces the open elective requirement from 66 to 60 credits", "majorIds": ["HKU-UG-6779-76-M1", "HKU-UG-6779-76-M2", "HKU-UG-6779-76-M3"] }
+      ]
+    },
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6779",
+      "programmeId": "HKU-UG-6779-76",
+      "majorId": "HKU-UG-6779-76-M2",
+      "majorName": "Professional Core in Decision Analytics",
+      "createMajor": {
+        "id": "HKU-UG-6779-76-M2",
+        "code": "PROFESSIONAL-CORE-IN-DECISION-ANALYTICS",
+        "nameEn": "Professional Core in Decision Analytics",
+        "nameZh": "Professional Core in Decision Analytics"
+      },
+      "ruleSummary": "240 credits: 54 UG5 credits, 42 introductory core credits, 12 introductory elective credits from either List A or List B, 36 advanced core credits, at least 24 advanced elective credits from List D, at least 6 Capstone credits, and 66 open elective credits.",
+      "copyCoursesFrom": {
+        "universityCode": "HKU",
+        "programmeId": "HKU-UG-6779-76",
+        "majorName": "Professional Core in Statistics"
+      }
+    },
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6779",
+      "programmeId": "HKU-UG-6779-76",
+      "majorId": "HKU-UG-6779-76-M3",
+      "majorName": "Professional Core in Risk Management",
+      "createMajor": {
+        "id": "HKU-UG-6779-76-M3",
+        "code": "PROFESSIONAL-CORE-IN-RISK-MANAGEMENT",
+        "nameEn": "Professional Core in Risk Management",
+        "nameZh": "Professional Core in Risk Management"
+      },
+      "ruleSummary": "240 credits: 54 UG5 credits, 30 introductory core credits, 12 introductory elective credits from either List A or List B, 48 advanced core credits, at least 24 advanced elective credits from List E, at least 6 Capstone credits, and 66 open elective credits.",
+      "copyCoursesFrom": {
+        "universityCode": "HKU",
+        "programmeId": "HKU-UG-6779-76",
+        "majorName": "Professional Core in Statistics"
+      }
+    }
+  ]
+}

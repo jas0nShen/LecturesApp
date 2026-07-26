@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-24T08:24:20.446Z",
+  "generatedAt": "2026-07-26T13:29:55.996Z",
   "universities": [
     {
       "id": "HKU",
@@ -1855,9 +1855,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-business-administration",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 17,
+      "codedCourseCount": 17,
+      "courseSourceUrl": "https://ug.hkubs.hku.hk/f/page/254425/263331/BBA_Syllabuses%202025-26.pdf"
     },
     {
       "id": "HKU-UG-6755-70",
@@ -1894,9 +1895,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-business-administration",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 18,
+      "codedCourseCount": 18,
+      "courseSourceUrl": "https://ug.hkubs.hku.hk/f/page/254425/263331/BBA_Syllabuses%202025-26.pdf"
     },
     {
       "id": "HKU-UG-6755-72",
@@ -1913,9 +1915,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-business-administration",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 16,
+      "codedCourseCount": 16,
+      "courseSourceUrl": "https://ug.hkubs.hku.hk/f/page/254425/263331/BBA_Syllabuses%202025-26.pdf"
     },
     {
       "id": "HKU-UG-6755-73",
@@ -1932,9 +1935,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-business-administration",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 21,
+      "codedCourseCount": 21,
+      "courseSourceUrl": "https://ug.hkubs.hku.hk/f/page/254425/263331/BBA_Syllabuses%202025-26.pdf"
     },
     {
       "id": "HKU-UG-6767-74",
@@ -1951,9 +1955,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-economics-bachelor-of-economics-and-finance",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 61,
+      "codedCourseCount": 61,
+      "courseSourceUrl": "https://ug.hkubs.hku.hk/f/curriculum/255026/BEcon_Syllabuses%202025-26.pdf"
     },
     {
       "id": "HKU-UG-6767-75",
@@ -1970,9 +1975,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-economics-bachelor-of-economics-and-finance",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 111,
+      "codedCourseCount": 111,
+      "courseSourceUrl": "https://ug.hkubs.hku.hk/f/curriculum/255368/BEcon%26Fin_Syllabuses%202025-26.pdf"
     },
     {
       "id": "HKU-UG-6779-76",
@@ -1989,9 +1995,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/statistical-decision-sciences",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 108,
+      "codedCourseCount": 108,
+      "courseSourceUrl": "https://www.cds.hku.hk/wp-content/uploads/2025/04/Syllabus_BStat_2025-26-UG5.pdf"
     },
     {
       "id": "HKU-UG-6781-77",
@@ -2008,9 +2015,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-business-administration-accounting-and-finance",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 69,
+      "codedCourseCount": 69,
+      "courseSourceUrl": "https://ug.hkubs.hku.hk/f/curriculum/255361/BBA%28Acc%26Fin%29_Syllabuses%202025-26.pdf"
     },
     {
       "id": "HKU-UG-6781-78",
@@ -2027,9 +2035,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-business-administration-accounting-and-finance",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 39,
+      "codedCourseCount": 39,
+      "courseSourceUrl": "https://ug.hkubs.hku.hk/f/curriculum/255363/BBA%28ADA%29_Syllabuses%202025-26.pdf"
     },
     {
       "id": "HKU-UG-6793-79",
@@ -2046,9 +2055,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-business-administration-business-analytics",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 19,
+      "codedCourseCount": 19,
+      "courseSourceUrl": "https://ug.hkubs.hku.hk/f/curriculum/255364/BBA%28BA%29_Syllabuses%202025-26.pdf"
     },
     {
       "id": "HKU-UG-6808-80",
@@ -2065,9 +2075,10 @@ const catalogue = {
       "studyPeriod": "5-year",
       "type": "Double Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-business-administration-law-and-bachelor-of-laws",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 430,
+      "codedCourseCount": 430,
+      "courseSourceUrl": "https://ug.hkubs.hku.hk/f/curriculum/255366/BBA(Law)%26LLB_Syllabuses%202025-26.pdf"
     },
     {
       "id": "HKU-UG-6810-81",
@@ -2084,9 +2095,10 @@ const catalogue = {
       "studyPeriod": "5-year",
       "type": "Double Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences-government-and-laws-and-bachelor-of",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 54,
+      "codedCourseCount": 54,
+      "courseSourceUrl": "https://ppa.hku.hk/wp-content/uploads/2025/01/BSSGLLLB-table_2024-25.pdf"
     },
     {
       "id": "HKU-UG-6822-82",
@@ -2122,9 +2134,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science-marketing-analytics-and-technology",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 25,
+      "codedCourseCount": 25,
+      "courseSourceUrl": "https://ug.hkubs.hku.hk/f/curriculum/255370/BSc%28MAT%29_Syllabuses%202025-26_v20250811.pdf"
     },
     {
       "id": "HKU-UG-6858-84",
@@ -2369,9 +2382,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-finance-asset-management-and-private-banking",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 29,
+      "codedCourseCount": 29,
+      "courseSourceUrl": "https://ug.hkubs.hku.hk/f/curriculum/255369/BFin%28AMPB%29_Syllabuses%202025-26.pdf"
     },
     {
       "id": "HKU-UG-6884-97",
@@ -2388,9 +2402,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science-quantitative-finance",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 32,
+      "codedCourseCount": 32,
+      "courseSourceUrl": "https://ug.hkubs.hku.hk/f/curriculum/255371/BSc%28QFin%29_Syllabuses%202025-26.pdf"
     },
     {
       "id": "HKU-UG-6896-98",
@@ -2407,9 +2422,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-business-administration-international-business-and",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 21,
+      "codedCourseCount": 21,
+      "courseSourceUrl": "https://ug.hkubs.hku.hk/f/curriculum/255365/BBA%28IBGM%29_Syllabuses%202025-26.pdf"
     },
     {
       "id": "HKU-UG-6901-99",
@@ -9911,9 +9927,9 @@ const catalogue = {
       "code": "ENTREPRENEURSHIP-DESIGN-AND-INNOVATION",
       "nameEn": "Entrepreneurship, Design and Innovation",
       "nameZh": "Entrepreneurship, Design and Innovation",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-business-administration"
+      "courseCount": 18,
+      "codedCourseCount": 17,
+      "officialUrl": "https://ug.hkubs.hku.hk/programme/bba"
     },
     {
       "id": "HKU-UG-6755-70-M1",
@@ -9931,9 +9947,9 @@ const catalogue = {
       "code": "HUMAN-RESOURCE-MANAGEMENT",
       "nameEn": "Human Resource Management",
       "nameZh": "Human Resource Management",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-business-administration"
+      "courseCount": 19,
+      "codedCourseCount": 18,
+      "officialUrl": "https://ug.hkubs.hku.hk/programme/bba"
     },
     {
       "id": "HKU-UG-6755-72-M1",
@@ -9941,9 +9957,9 @@ const catalogue = {
       "code": "INFORMATION-SYSTEMS-AND-ANALYTICS",
       "nameEn": "Information Systems and Analytics",
       "nameZh": "Information Systems and Analytics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-business-administration"
+      "courseCount": 17,
+      "codedCourseCount": 16,
+      "officialUrl": "https://ug.hkubs.hku.hk/programme/bba"
     },
     {
       "id": "HKU-UG-6755-73-M1",
@@ -9951,9 +9967,9 @@ const catalogue = {
       "code": "MARKETING",
       "nameEn": "Marketing",
       "nameZh": "Marketing",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-business-administration"
+      "courseCount": 22,
+      "codedCourseCount": 21,
+      "officialUrl": "https://ug.hkubs.hku.hk/programme/bba"
     },
     {
       "id": "HKU-UG-6767-74-M1",
@@ -9961,9 +9977,9 @@ const catalogue = {
       "code": "ECONOMICS",
       "nameEn": "Economics",
       "nameZh": "Economics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-economics-bachelor-of-economics-and-finance"
+      "courseCount": 62,
+      "codedCourseCount": 61,
+      "officialUrl": "https://ug.hkubs.hku.hk/programme/becon"
     },
     {
       "id": "HKU-UG-6767-75-M1",
@@ -9971,19 +9987,9 @@ const catalogue = {
       "code": "ECONOMICS-AND-FINANCE",
       "nameEn": "Economics and Finance",
       "nameZh": "Economics and Finance",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-economics-bachelor-of-economics-and-finance"
-    },
-    {
-      "id": "HKU-UG-6779-76-M1",
-      "programmeId": "HKU-UG-6779-76",
-      "code": "STATISTICAL-DECISION-SCIENCES",
-      "nameEn": "Statistical Decision Sciences",
-      "nameZh": "Statistical Decision Sciences",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/statistical-decision-sciences"
+      "courseCount": 112,
+      "codedCourseCount": 111,
+      "officialUrl": "https://ug.hkubs.hku.hk/programme/becon-and-fin"
     },
     {
       "id": "HKU-UG-6781-77-M1",
@@ -9991,9 +9997,9 @@ const catalogue = {
       "code": "PROFESSIONAL-CORE-IN-ACCOUNTING",
       "nameEn": "Professional Core in Accounting",
       "nameZh": "Professional Core in Accounting",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-business-administration-accounting-and-finance"
+      "courseCount": 70,
+      "codedCourseCount": 69,
+      "officialUrl": "https://ug.hkubs.hku.hk/programme/bba-acc-and-fin"
     },
     {
       "id": "HKU-UG-6781-78-M1",
@@ -10001,9 +10007,9 @@ const catalogue = {
       "code": "PROFESSIONAL-CORE-IN-ACCOUNTING-DATA-ANALYTICS",
       "nameEn": "Professional Core in Accounting Data Analytics",
       "nameZh": "Professional Core in Accounting Data Analytics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-business-administration-accounting-and-finance"
+      "courseCount": 40,
+      "codedCourseCount": 39,
+      "officialUrl": "https://ug.hkubs.hku.hk/programme/bba-ada"
     },
     {
       "id": "HKU-UG-6793-79-M1",
@@ -10011,19 +10017,9 @@ const catalogue = {
       "code": "BACHELOR-OF-BUSINESS-ADMINISTRATION-BUSINESS-ANA",
       "nameEn": "Bachelor of Business Administration (Business Analytics)",
       "nameZh": "Bachelor of Business Administration (Business Analytics)",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-business-administration-business-analytics"
-    },
-    {
-      "id": "HKU-UG-6808-80-M1",
-      "programmeId": "HKU-UG-6808-80",
-      "code": "BACHELOR-OF-BUSINESS-ADMINISTRATION-LAW-AND-BACH",
-      "nameEn": "Bachelor of Business Administration (Law) and Bachelor of Laws",
-      "nameZh": "Bachelor of Business Administration (Law) and Bachelor of Laws",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-business-administration-law-and-bachelor-of-laws"
+      "courseCount": 20,
+      "codedCourseCount": 19,
+      "officialUrl": "https://ug.hkubs.hku.hk/programme/bba-ba"
     },
     {
       "id": "HKU-UG-6810-81-M1",
@@ -10031,8 +10027,8 @@ const catalogue = {
       "code": "BACHELOR-OF-SOCIAL-SCIENCES-GOVERNMENT-AND-LAWS-",
       "nameEn": "Bachelor of Social Sciences (Government and Laws) and Bachelor of Laws",
       "nameZh": "Bachelor of Social Sciences (Government and Laws) and Bachelor of Laws",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 55,
+      "codedCourseCount": 54,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-social-sciences-government-and-laws-and-bachelor-of"
     },
     {
@@ -10051,9 +10047,9 @@ const catalogue = {
       "code": "BACHELOR-OF-SCIENCE-IN-MARKETING-ANALYTICS-AND-T",
       "nameEn": "Bachelor of Science in Marketing Analytics and Technology",
       "nameZh": "Bachelor of Science in Marketing Analytics and Technology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science-marketing-analytics-and-technology"
+      "courseCount": 26,
+      "codedCourseCount": 25,
+      "officialUrl": "https://ug.hkubs.hku.hk/programme/bsc-mat"
     },
     {
       "id": "HKU-UG-6858-84-M1",
@@ -10181,9 +10177,9 @@ const catalogue = {
       "code": "BACHELOR-OF-FINANCE-IN-ASSET-MANAGEMENT-AND-PRIV",
       "nameEn": "Bachelor of Finance in Asset Management and Private Banking",
       "nameZh": "Bachelor of Finance in Asset Management and Private Banking",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-finance-asset-management-and-private-banking"
+      "courseCount": 30,
+      "codedCourseCount": 29,
+      "officialUrl": "https://ug.hkubs.hku.hk/programme/bfin-ampb"
     },
     {
       "id": "HKU-UG-6884-97-M1",
@@ -10191,9 +10187,9 @@ const catalogue = {
       "code": "BACHELOR-OF-SCIENCE-IN-QUANTITATIVE-FINANCE",
       "nameEn": "Bachelor of Science in Quantitative Finance",
       "nameZh": "Bachelor of Science in Quantitative Finance",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science-quantitative-finance"
+      "courseCount": 33,
+      "codedCourseCount": 32,
+      "officialUrl": "https://ug.hkubs.hku.hk/programme/bsc-qfin"
     },
     {
       "id": "HKU-UG-6896-98-M1",
@@ -10201,9 +10197,9 @@ const catalogue = {
       "code": "BACHELOR-OF-BUSINESS-ADMINISTRATION-IN-INTERNATI",
       "nameEn": "Bachelor of Business Administration in International Business and Global Management",
       "nameZh": "Bachelor of Business Administration in International Business and Global Management",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-business-administration-international-business-and"
+      "courseCount": 22,
+      "codedCourseCount": 21,
+      "officialUrl": "https://ug.hkubs.hku.hk/programme/bba-ibgm"
     },
     {
       "id": "HKU-UG-6901-99-M1",
@@ -15946,6 +15942,96 @@ const catalogue = {
       "officialUrl": "https://www.jupas.edu.hk/en/programme/hkbu/JS2620/"
     },
     {
+      "id": "HKU-UG-6779-76-M1",
+      "programmeId": "HKU-UG-6779-76",
+      "code": "PROFESSIONAL-CORE-IN-STATISTICS",
+      "nameEn": "Professional Core in Statistics",
+      "nameZh": "Professional Core in Statistics",
+      "courseCount": 36,
+      "codedCourseCount": 36,
+      "officialUrl": "https://www.cds.hku.hk/prospective-students/undergraduate/6779-statistical-decision-sciences/"
+    },
+    {
+      "id": "HKU-UG-6779-76-M2",
+      "programmeId": "HKU-UG-6779-76",
+      "code": "PROFESSIONAL-CORE-IN-DECISION-ANALYTICS",
+      "nameEn": "Professional Core in Decision Analytics",
+      "nameZh": "Professional Core in Decision Analytics",
+      "courseCount": 37,
+      "codedCourseCount": 37,
+      "officialUrl": "https://www.cds.hku.hk/prospective-students/undergraduate/6779-statistical-decision-sciences/"
+    },
+    {
+      "id": "HKU-UG-6779-76-M3",
+      "programmeId": "HKU-UG-6779-76",
+      "code": "PROFESSIONAL-CORE-IN-RISK-MANAGEMENT",
+      "nameEn": "Professional Core in Risk Management",
+      "nameZh": "Professional Core in Risk Management",
+      "courseCount": 35,
+      "codedCourseCount": 35,
+      "officialUrl": "https://www.cds.hku.hk/prospective-students/undergraduate/6779-statistical-decision-sciences/"
+    },
+    {
+      "id": "HKU-UG-6808-80-M1",
+      "programmeId": "HKU-UG-6808-80",
+      "code": "BUSINESS-EDI",
+      "nameEn": "Business Stream - Entrepreneurship, Design and Innovation",
+      "nameZh": "Business Stream - Entrepreneurship, Design and Innovation",
+      "courseCount": 63,
+      "codedCourseCount": 63,
+      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-business-administration-law-and-bachelor-of-laws"
+    },
+    {
+      "id": "HKU-UG-6808-80-M2",
+      "programmeId": "HKU-UG-6808-80",
+      "code": "BUSINESS-FINANCE",
+      "nameEn": "Business Stream - Finance",
+      "nameZh": "Business Stream - Finance",
+      "courseCount": 109,
+      "codedCourseCount": 109,
+      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-business-administration-law-and-bachelor-of-laws"
+    },
+    {
+      "id": "HKU-UG-6808-80-M3",
+      "programmeId": "HKU-UG-6808-80",
+      "code": "BUSINESS-HRM",
+      "nameEn": "Business Stream - Human Resource Management",
+      "nameZh": "Business Stream - Human Resource Management",
+      "courseCount": 64,
+      "codedCourseCount": 64,
+      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-business-administration-law-and-bachelor-of-laws"
+    },
+    {
+      "id": "HKU-UG-6808-80-M4",
+      "programmeId": "HKU-UG-6808-80",
+      "code": "BUSINESS-ISA",
+      "nameEn": "Business Stream - Information Systems and Analytics",
+      "nameZh": "Business Stream - Information Systems and Analytics",
+      "courseCount": 62,
+      "codedCourseCount": 62,
+      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-business-administration-law-and-bachelor-of-laws"
+    },
+    {
+      "id": "HKU-UG-6808-80-M5",
+      "programmeId": "HKU-UG-6808-80",
+      "code": "BUSINESS-MARKETING",
+      "nameEn": "Business Stream - Marketing",
+      "nameZh": "Business Stream - Marketing",
+      "courseCount": 67,
+      "codedCourseCount": 67,
+      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-business-administration-law-and-bachelor-of-laws"
+    },
+    {
+      "id": "HKU-UG-6808-80-M6",
+      "programmeId": "HKU-UG-6808-80",
+      "code": "ACCOUNTING",
+      "nameEn": "Accounting Stream",
+      "nameZh": "Accounting Stream",
+      "courseCount": 65,
+      "codedCourseCount": 65,
+      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-business-administration-law-and-bachelor-of-laws"
+    },
+    {
       "id": "POLYU-UG-JS3789-46-M1",
       "programmeId": "POLYU-UG-JS3789-46",
       "code": "BUILDING-SURVEYING",
@@ -16001,12 +16087,12 @@ const catalogue = {
     "CUHK": 732,
     "EDUHK": 547,
     "HKBU": 2664,
-    "HKU": 3602,
+    "HKU": 4672,
     "HKUST": 2200,
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 16203
+  "codedCourseCount": 17273
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

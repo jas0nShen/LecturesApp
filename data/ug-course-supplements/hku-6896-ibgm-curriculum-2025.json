@@ -1,0 +1,43 @@
+{
+  "provider": "HKU Business School BBA(IBGM) Syllabuses 2025-26",
+  "academicYear": "2025-26 and thereafter (subject to approval)",
+  "officialUrl": "https://ug.hkubs.hku.hk/programme/bba-ibgm",
+  "note": "The official 2025-26 syllabus applies to candidates admitted in 2025-26 and thereafter, subject to approval. The 96-credit First Major in International Business and Global Management comprises 24 Faculty Core credits, 60 credits from ten required Disciplinary Core courses and 12 Disciplinary Elective credits from one List A course and one List B course. The separate 72-credit or greater Second Major is open to any discipline offered by FBE or HKU and is not expanded into the Programme-local IBGM pool. Language, Common Core, AI literacy, non-credit University requirements and free electives are excluded because they contain open or placeholder course ranges. The compulsory overseas exchange is retained in the evidence note but has no prescribed HKU course code. Courses are not necessarily offered every year.",
+  "supplements": [
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6896",
+      "programmeId": "HKU-UG-6896-98",
+      "programmeName": "Bachelor of Business Administration in International Business and Global Management",
+      "majorId": "HKU-UG-6896-98-M1",
+      "majorName": "Bachelor of Business Administration in International Business and Global Management",
+      "sourceUrl": "https://ug.hkubs.hku.hk/f/curriculum/255365/BBA%28IBGM%29_Syllabuses%202025-26.pdf",
+      "officialUrl": "https://ug.hkubs.hku.hk/programme/bba-ibgm",
+      "ruleSummary": "96 first-major credits: 24 Faculty Core credits including one statistics choice, 60 credits from ten required Disciplinary Core courses including STRA4701 as the capstone, and 12 credits from two Disciplinary Electives comprising one List A course and one List B course.",
+      "evidenceGap": "The official syllabus is subject to approval and says courses are not necessarily offered every year. The statistics alternative and one-from-each-elective-list rule require manual checking. The separate Second Major may be any FBE or HKU discipline with at least 72 credits, so its open course pool is not expanded into the IBGM First Major. The compulsory overseas exchange has no prescribed HKU course code. Open or placeholder-coded University and free-elective requirements are excluded.",
+      "courses": [
+        { "code": "ACCT1101", "title": "Introduction to financial accounting", "credits": 6, "recommendedYear": 1, "courseType": "foundation", "group": "Faculty Core - required / 6 credits" },
+        { "code": "ECON1210", "title": "Introductory microeconomics", "credits": 6, "recommendedYear": 1, "courseType": "foundation", "group": "Faculty Core - required / 6 credits" },
+        { "code": "ECON1280", "title": "Analysis of economic data", "credits": 6, "recommendedYear": 1, "courseType": "foundation", "group": "Faculty Core statistics requirement - choose ECON1280 or IIMT1640 / 6 credits" },
+        { "code": "IIMT1640", "title": "Probability and statistics for business", "credits": 6, "recommendedYear": 1, "courseType": "foundation", "group": "Faculty Core statistics requirement - choose ECON1280 or IIMT1640 / 6 credits" },
+        { "code": "FINA1310", "title": "Corporate finance", "credits": 6, "recommendedYear": 2, "courseType": "foundation", "group": "Faculty Core - required / 6 credits" },
+        { "code": "MKTG2501", "title": "Introduction to marketing", "credits": 6, "recommendedYear": 1, "courseType": "core", "group": "Disciplinary Core - required / 6 credits" },
+        { "code": "BUSI1805", "title": "International field trip", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Disciplinary Core - required / 6 credits" },
+        { "code": "IIMT2601", "title": "Management information systems", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Disciplinary Core - required / 6 credits" },
+        { "code": "MGMT2401", "title": "Principles of management", "credits": 6, "recommendedYear": 2, "courseType": "core", "group": "Disciplinary Core - required / 6 credits" },
+        { "code": "BUSI3808", "title": "Global analysis team project", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Disciplinary Core - required / 6 credits" },
+        { "code": "STRA3702", "title": "International business environment", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Disciplinary Core - required / 6 credits" },
+        { "code": "STRA4702", "title": "Global corporate strategy", "credits": 6, "recommendedYear": 3, "courseType": "core", "group": "Disciplinary Core - required / 6 credits" },
+        { "code": "BUSI3809", "title": "Leadership development programme", "credits": 6, "recommendedYear": 4, "courseType": "core", "group": "Disciplinary Core - required / 6 credits" },
+        { "code": "STRA3703", "title": "Multinational corporations", "credits": 6, "recommendedYear": 4, "courseType": "core", "group": "Disciplinary Core - required / 6 credits" },
+        { "code": "STRA4701", "title": "Strategic management", "credits": 6, "recommendedYear": 4, "courseType": "capstone", "group": "Disciplinary Core capstone - required / 6 credits" },
+        { "code": "BUSI3801", "title": "Business law", "credits": 6, "recommendedYear": 4, "courseType": "major_elective", "group": "Disciplinary Electives List A - choose one course / 6 credits" },
+        { "code": "BUSI3803", "title": "Company law", "credits": 6, "recommendedYear": 4, "courseType": "major_elective", "group": "Disciplinary Electives List A - choose one course / 6 credits" },
+        { "code": "FINA2390", "title": "Financial programming and databases", "credits": 6, "recommendedYear": 4, "courseType": "major_elective", "group": "Disciplinary Electives List B - choose one course / 6 credits" },
+        { "code": "FINA2350", "title": "Text analytics and natural language processing in finance and fintech", "credits": 6, "recommendedYear": 4, "courseType": "major_elective", "group": "Disciplinary Electives List B - choose one course / 6 credits" },
+        { "code": "MKTG3511", "title": "Advertising management", "credits": 6, "recommendedYear": 4, "courseType": "major_elective", "group": "Disciplinary Electives List B - choose one course / 6 credits" },
+        { "code": "MKTG3524", "title": "Digital marketing", "credits": 6, "recommendedYear": 4, "courseType": "major_elective", "group": "Disciplinary Electives List B - choose one course / 6 credits" }
+      ]
+    }
+  ]
+}
