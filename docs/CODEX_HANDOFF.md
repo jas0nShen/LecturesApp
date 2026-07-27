@@ -15,20 +15,22 @@
 - 工作目录：`/Users/shenjingsong/Documents/develop/lecturesApp`
 - 分支：`main`
 - 1.0.12 已补充 HKU 商科、经济、统计、会计及法学双学位官方课程清单，并对规则未闭合 Programme 保持只读浏览，不显示未经核验的毕业完成比例。
-- 本批课程、来源审查、生成 catalogue/shards/分包、测试和 `1.0.12` 版本资料已由提交 `7c2e66f Release 1.0.12 with expanded HKU curricula` 提交并推送。
+- HKU 商科与法学批次由提交 `7c2e66f` 发布；HKU `6688 Science Master Class` 与 `6901 Bachelor of Science` 批次已由提交 `c1076cf Expand HKU science curricula for 1.0.12` 提交并推送。
 - 包版本：`1.0.12`
 - `main` 与 `origin/main` 的提交同步；本批 source supplements、生成 catalogue/shards/分包、版本资料和测试均已推送。
-- 当前工作区另有尚未提交、推送或上传微信的 HKU `6688 Science Master Class` 与 `6901 Bachelor of Science` 课程补充；下面的 18,318 条 UG 课程、280 个已开放 Programme、HKU 三分包及 943/943 测试均指当前工作区，不是已上传的 1.0.12 包。
+- 当前 1.0.12 微信开发版已包含 HKU `6688 Science Master Class` 与 `6901 Bachelor of Science` 课程补充；下面的 18,318 条 UG 课程、280 个已开放 Programme、HKU 三分包及 943/943 测试均对应本次已上传代码。
 - 本批开放 HKU `6755` 其余 BBA Major、`6767` Economics、`6779` Statistical Decision Sciences、`6781` Accounting、`6896` IBGM、Asset Management and Private Banking、Quantitative Finance、Business Analytics、Marketing Analytics and Technology，以及 `6808` / `6810` 两个 Law double degree 的官方可核验课程。
 - `6808` 与 `6810` 的 Law elective universe 未由 Programme-specific 来源闭合，因此只发布已核验代码供只读浏览，不生成完整毕业结构或完成百分比。
 - 旧单一 `ug-data-hku`、`ug-data-hkbu` 已由生成脚本替换；当前工作区 HKU 使用 `ug-data-hku-a` / `ug-data-hku-b` / `ug-data-hku-c` 三分包，HKBU 使用 `ug-data-hkbu-a` / `ug-data-hkbu-b` 双分包。不要手工恢复旧 loader。
 
 - 本批改动已提交、推送并通过微信官方 CLI 上传为 `1.0.12`，备注为 `1.0.12: Expand verified HKU business and law curricula`，命令返回 `✔ upload`；实际上传包 16,126,571 bytes，主包 1,479,261 bytes，所有 21 个分包均低于 2 MB。
+- 2026-07-27 已用提交 `c1076cf` 的 HKU Science 更新覆盖上传同版本 `1.0.12`，备注为 `1.0.12: Expand HKU Science Master Class and BSc curricula`，命令返回 `✔ upload`；实际上传包 17,042,129 bytes，主包 1,481,797 bytes，所有 22 个分包均低于 2 MB。
 - `.playwright-cli/` 为 96 KB 的本地浏览器诊断产物，共有 console log 和 page YAML；本次没有删除、覆盖或暂存。
 
 最近关键提交（本次交接提交前）：
 
 ```text
+c1076cf Expand HKU science curricula for 1.0.12
 7c2e66f Release 1.0.12 with expanded HKU curricula
 b00e26c Document 1.0.11 upload
 2d7aff5 Release 1.0.11 with expanded verified curricula
@@ -213,7 +215,8 @@ df91815 Add PolyU Design curriculum and source evidence
 - 2026-07-24 用户确认已在本机手动上传微信 `1.0.11`。本次没有由 Codex 获得 CLI 输出，因此不记录未经提供的实际备注或实际上传包体；该状态不等于已提交审核或已发布。
 - 1.0.11 发布代码完整检查：892/892 测试通过、`ready=true`、主包预估 1,834,184 bytes，所有 21 个 UG/TPG 分包均低于 2 MB，敏感 API 为 0。
 - 2026-07-26 已通过微信开发者工具官方 CLI 上传 `1.0.12`，备注为 `1.0.12: Expand verified HKU business and law curricula`，命令返回 `✔ upload`；实际上传包 16,126,571 bytes、主包 1,479,261 bytes，所有 21 个分包均低于 2 MB。
-- 1.0.12 发布代码完整检查：935/935 测试通过、`ready=true`、主包预估 1,837,990 bytes，总估算包体 20,523,553 bytes，敏感 API 为 0。
+- 2026-07-27 已用 HKU `6688 Science Master Class` 与 `6901 Bachelor of Science` 数据覆盖上传同版本 `1.0.12`，备注为 `1.0.12: Expand HKU Science Master Class and BSc curricula`，命令返回 `✔ upload`；实际上传包 17,042,129 bytes、主包 1,481,797 bytes，所有 22 个分包均低于 2 MB。
+- 1.0.12 最新上传代码完整检查：943/943 测试通过、`ready=true`、主包预估 1,840,771 bytes，总估算包体 21,609,152 bytes，敏感 API 为 0。
 - 微信开发者工具确认 PolyU Computer Science 可加载 83 门课程，首页入口序号为 `01 / 02 / 03 / 04`；模拟器测试结束后已恢复原 Architectural Studies 资料，`plannedUgCourseKeys`、`ugCoursePlanAssignments`、`completedUgCourseKeys` 均为空。
 - 微信官方 automation 已完成普通 `POLYU-TPG-090` 闭环：36 门课程、`COMP5521` 加入计划、列表状态、官方分组、标记已修、复制与移除均通过。
 - 多 Track `HKU-TPG-031` 验收通过：Generalist 计 1 门，Chinese Language Education 计 2 门；两条记录均保留，旧 Track 课程不计入 Generalist 当前统计。
@@ -342,20 +345,9 @@ npm run status:ug-sources -- --missing-only --priority launch --missing-limit 10
 
 ## 当前工作区
 
-已上传的 1.0.12 HKU 商科与法学批次仍停留在提交 `8ddcd66`；当前工作区新增的 HKU `6688 Science Master Class` 与 `6901 Bachelor of Science` 批次尚未提交、推送或上传微信。当前主要差异包括：
+当前 1.0.12 微信开发版对应已推送提交 `c1076cf`，包含 HKU `6688 Science Master Class` 与 `6901 Bachelor of Science` 批次。工作区只保留用户本地诊断目录：
 
 ```text
-data/ug-course-supplements/hku-6688-science-master-class-2026.json
-data/ug-course-supplements/hku-6901-bachelor-of-science-2026.json
-scripts/hku-6688-science-master-class-supplement.test.js
-scripts/hku-6901-bachelor-of-science-supplement.test.js
-scripts/generate-ug-catalog.js 及相关计数/分包测试
-miniprogram/app.json
-miniprogram/utils/ugCatalogue.js
-miniprogram/utils/ugCourseShards.js
-miniprogram/subpackages/ug-data-hku-a/
-miniprogram/subpackages/ug-data-hku-b/
-miniprogram/subpackages/ug-data-hku-c/
 ?? .playwright-cli/
 ```
 
@@ -387,7 +379,7 @@ npm run status:ug-sources -- --missing-only --missing-summary --missing-limit 0:
 
 - 当前工作区主包预估：1,840,771 bytes。
 - 当前工作区总估算包体：21,609,152 bytes，196 个上传文件。
-- 已上传 1.0.12 的历史 CLI 实际包：16,126,571 bytes；实际主包：1,479,261 bytes。
+- 最新上传 1.0.12 的 CLI 实际包：17,042,129 bytes；实际主包：1,481,797 bytes。
 - 当前 22 个 UG/TPG 分包均低于 2 MB；最大为 `ug-data-hku-a` 1,777,011 bytes。
 - 页面：17；敏感 API：0。
 - release warnings 仅为人工微信后台检查尚需完成，以及未配置生产 HTTPS（体验/正式版按设计离线）。
