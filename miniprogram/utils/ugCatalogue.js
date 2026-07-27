@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-26T13:29:55.996Z",
+  "generatedAt": "2026-07-27T04:24:55.371Z",
   "universities": [
     {
       "id": "HKU",
@@ -1422,9 +1422,10 @@ const catalogue = {
       "studyPeriod": "4.5-5-year",
       "type": "Double Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/science-master-class",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 93,
+      "codedCourseCount": 93,
+      "courseSourceUrl": "https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Major&Code=MajorInBiologicalScIntensive&AdmissionYear=2026"
     },
     {
       "id": "HKU-UG-6688-48",
@@ -1441,9 +1442,10 @@ const catalogue = {
       "studyPeriod": "4.5-5-year",
       "type": "Double Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/science-master-class",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 91,
+      "codedCourseCount": 91,
+      "courseSourceUrl": "https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Major&Code=MajorInChemistryIntensive&AdmissionYear=2026"
     },
     {
       "id": "HKU-UG-6688-49",
@@ -1460,9 +1462,10 @@ const catalogue = {
       "studyPeriod": "4.5-5-year",
       "type": "Double Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/science-master-class",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 91,
+      "codedCourseCount": 91,
+      "courseSourceUrl": "https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Major&Code=MajorInEcologyBiodiversityIntensive&AdmissionYear=2026"
     },
     {
       "id": "HKU-UG-6688-50",
@@ -1479,9 +1482,10 @@ const catalogue = {
       "studyPeriod": "4.5-5-year",
       "type": "Double Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/science-master-class",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 90,
+      "codedCourseCount": 90,
+      "courseSourceUrl": "https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Major&Code=MajorInGeologyIntensive&AdmissionYear=2026"
     },
     {
       "id": "HKU-UG-6688-51",
@@ -1498,9 +1502,10 @@ const catalogue = {
       "studyPeriod": "4.5-5-year",
       "type": "Double Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/science-master-class",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 101,
+      "codedCourseCount": 101,
+      "courseSourceUrl": "https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Major&Code=MajorInMathematicsIntensive&AdmissionYear=2026"
     },
     {
       "id": "HKU-UG-6688-52",
@@ -1517,9 +1522,10 @@ const catalogue = {
       "studyPeriod": "4.5-5-year",
       "type": "Double Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/science-master-class",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 86,
+      "codedCourseCount": 86,
+      "courseSourceUrl": "https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Major&Code=MajorInMolecularBiolBiotechIntensive&AdmissionYear=2026"
     },
     {
       "id": "HKU-UG-6688-53",
@@ -1536,9 +1542,10 @@ const catalogue = {
       "studyPeriod": "4.5-5-year",
       "type": "Double Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/science-master-class",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 106,
+      "codedCourseCount": 106,
+      "courseSourceUrl": "https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Major&Code=MajorInPhysicsIntensive&AdmissionYear=2026"
     },
     {
       "id": "HKU-UG-6705-54",
@@ -2442,9 +2449,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 29,
+      "codedCourseCount": 29,
+      "courseSourceUrl": "https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Major&Code=MajorInBiochemistry&AdmissionYear=2026"
     },
     {
       "id": "HKU-UG-6901-100",
@@ -2461,9 +2469,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 36,
+      "codedCourseCount": 36,
+      "courseSourceUrl": "https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Major&Code=MajorInBiologicalSc&AdmissionYear=2026"
     },
     {
       "id": "HKU-UG-6901-101",
@@ -2480,9 +2489,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 32,
+      "codedCourseCount": 32,
+      "courseSourceUrl": "https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Major&Code=MajorInChemistry&AdmissionYear=2026"
     },
     {
       "id": "HKU-UG-6901-102",
@@ -2499,9 +2509,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 26,
+      "codedCourseCount": 26,
+      "courseSourceUrl": "https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Major&Code=MajorInEarthSystemSc&AdmissionYear=2026"
     },
     {
       "id": "HKU-UG-6901-103",
@@ -2518,9 +2529,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 31,
+      "codedCourseCount": 31,
+      "courseSourceUrl": "https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Major&Code=MajorInEcologyBiodiversity&AdmissionYear=2026"
     },
     {
       "id": "HKU-UG-6901-104",
@@ -2537,9 +2549,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 41,
+      "codedCourseCount": 41,
+      "courseSourceUrl": "https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Major&Code=MajorInEnvironmentalScience&AdmissionYear=2026"
     },
     {
       "id": "HKU-UG-6901-105",
@@ -2556,9 +2569,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 36,
+      "codedCourseCount": 36,
+      "courseSourceUrl": "https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Major&Code=MajorInFoodNSc&AdmissionYear=2026"
     },
     {
       "id": "HKU-UG-6901-106",
@@ -2575,9 +2589,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 27,
+      "codedCourseCount": 27,
+      "courseSourceUrl": "https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Major&Code=MajorInGeology&AdmissionYear=2026"
     },
     {
       "id": "HKU-UG-6901-107",
@@ -2594,9 +2609,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 53,
+      "codedCourseCount": 53,
+      "courseSourceUrl": "https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Major&Code=MajorInMathematics&AdmissionYear=2026"
     },
     {
       "id": "HKU-UG-6901-108",
@@ -2613,9 +2629,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 28,
+      "codedCourseCount": 28,
+      "courseSourceUrl": "https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Major&Code=MajorInMolecularBiolBiotech&AdmissionYear=2026"
     },
     {
       "id": "HKU-UG-6901-109",
@@ -2632,9 +2649,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 48,
+      "codedCourseCount": 48,
+      "courseSourceUrl": "https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Major&Code=MajorInPhysics&AdmissionYear=2026"
     },
     {
       "id": "HKU-UG-6925-110",
@@ -9707,8 +9725,8 @@ const catalogue = {
       "code": "BIOLOGICAL-SCIENCES",
       "nameEn": "Biological Sciences",
       "nameZh": "Biological Sciences",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 94,
+      "codedCourseCount": 93,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/science-master-class"
     },
     {
@@ -9717,8 +9735,8 @@ const catalogue = {
       "code": "CHEMISTRY",
       "nameEn": "Chemistry",
       "nameZh": "Chemistry",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 92,
+      "codedCourseCount": 91,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/science-master-class"
     },
     {
@@ -9727,8 +9745,8 @@ const catalogue = {
       "code": "ECOLOGY-BIODIVERSITY",
       "nameEn": "Ecology & Biodiversity",
       "nameZh": "Ecology & Biodiversity",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 92,
+      "codedCourseCount": 91,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/science-master-class"
     },
     {
@@ -9737,8 +9755,8 @@ const catalogue = {
       "code": "GEOLOGY",
       "nameEn": "Geology",
       "nameZh": "Geology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 91,
+      "codedCourseCount": 90,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/science-master-class"
     },
     {
@@ -9747,8 +9765,8 @@ const catalogue = {
       "code": "MATHEMATICS",
       "nameEn": "Mathematics",
       "nameZh": "Mathematics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 102,
+      "codedCourseCount": 101,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/science-master-class"
     },
     {
@@ -9757,8 +9775,8 @@ const catalogue = {
       "code": "MOLECULAR-BIOLOGY-BIOTECHNOLOGY",
       "nameEn": "Molecular Biology & Biotechnology",
       "nameZh": "Molecular Biology & Biotechnology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 87,
+      "codedCourseCount": 86,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/science-master-class"
     },
     {
@@ -9767,8 +9785,8 @@ const catalogue = {
       "code": "PHYSICS",
       "nameEn": "Physics",
       "nameZh": "Physics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 107,
+      "codedCourseCount": 106,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/science-master-class"
     },
     {
@@ -10207,8 +10225,8 @@ const catalogue = {
       "code": "BIOCHEMISTRY",
       "nameEn": "Biochemistry",
       "nameZh": "Biochemistry",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 30,
+      "codedCourseCount": 29,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science"
     },
     {
@@ -10217,8 +10235,8 @@ const catalogue = {
       "code": "BIOLOGICAL-SCIENCES",
       "nameEn": "Biological Sciences",
       "nameZh": "Biological Sciences",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 37,
+      "codedCourseCount": 36,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science"
     },
     {
@@ -10227,8 +10245,8 @@ const catalogue = {
       "code": "CHEMISTRY",
       "nameEn": "Chemistry",
       "nameZh": "Chemistry",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 33,
+      "codedCourseCount": 32,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science"
     },
     {
@@ -10237,8 +10255,8 @@ const catalogue = {
       "code": "EARTH-SYSTEM-SCIENCE",
       "nameEn": "Earth System Science",
       "nameZh": "Earth System Science",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 27,
+      "codedCourseCount": 26,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science"
     },
     {
@@ -10247,8 +10265,8 @@ const catalogue = {
       "code": "ECOLOGY-AND-BIODIVERSITY",
       "nameEn": "Ecology and Biodiversity",
       "nameZh": "Ecology and Biodiversity",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 32,
+      "codedCourseCount": 31,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science"
     },
     {
@@ -10257,8 +10275,8 @@ const catalogue = {
       "code": "ENVIRONMENTAL-SCIENCE",
       "nameEn": "Environmental Science",
       "nameZh": "Environmental Science",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 42,
+      "codedCourseCount": 41,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science"
     },
     {
@@ -10267,8 +10285,8 @@ const catalogue = {
       "code": "FOOD-AND-NUTRITIONAL-SCIENCE",
       "nameEn": "Food and Nutritional Science",
       "nameZh": "Food and Nutritional Science",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 37,
+      "codedCourseCount": 36,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science"
     },
     {
@@ -10277,8 +10295,8 @@ const catalogue = {
       "code": "GEOLOGY",
       "nameEn": "Geology",
       "nameZh": "Geology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 28,
+      "codedCourseCount": 27,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science"
     },
     {
@@ -10287,8 +10305,8 @@ const catalogue = {
       "code": "MATHEMATICS",
       "nameEn": "Mathematics",
       "nameZh": "Mathematics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 54,
+      "codedCourseCount": 53,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science"
     },
     {
@@ -10297,8 +10315,8 @@ const catalogue = {
       "code": "MOLECULAR-BIOLOGY-AND-BIOTECHNOLOGY",
       "nameEn": "Molecular Biology and Biotechnology",
       "nameZh": "Molecular Biology and Biotechnology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 29,
+      "codedCourseCount": 28,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science"
     },
     {
@@ -10307,8 +10325,8 @@ const catalogue = {
       "code": "PHYSICS",
       "nameEn": "Physics",
       "nameZh": "Physics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 49,
+      "codedCourseCount": 48,
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science"
     },
     {
@@ -16087,12 +16105,12 @@ const catalogue = {
     "CUHK": 732,
     "EDUHK": 547,
     "HKBU": 2664,
-    "HKU": 4672,
+    "HKU": 5717,
     "HKUST": 2200,
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 17273
+  "codedCourseCount": 18318
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

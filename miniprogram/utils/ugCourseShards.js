@@ -4,7 +4,7 @@ const nodeLoaders = {
   "CUHK": (nodeRequire) => [].concat(nodeRequire("../subpackages/ug-data-cuhk/ugCourseData/cuhk")),
   "EDUHK": (nodeRequire) => [].concat(nodeRequire("../subpackages/ug-data-eduhk/ugCourseData/eduhk")),
   "HKBU": (nodeRequire) => [].concat(nodeRequire("../subpackages/ug-data-hkbu-a/ugCourseData/hkbu-a"), nodeRequire("../subpackages/ug-data-hkbu-b/ugCourseData/hkbu-b")),
-  "HKU": (nodeRequire) => [].concat(nodeRequire("../subpackages/ug-data-hku-a/ugCourseData/hku-a"), nodeRequire("../subpackages/ug-data-hku-b/ugCourseData/hku-b")),
+  "HKU": (nodeRequire) => [].concat(nodeRequire("../subpackages/ug-data-hku-a/ugCourseData/hku-a"), nodeRequire("../subpackages/ug-data-hku-b/ugCourseData/hku-b"), nodeRequire("../subpackages/ug-data-hku-c/ugCourseData/hku-c")),
   "HKUST": (nodeRequire) => [].concat(nodeRequire("../subpackages/ug-data-hkust-a/ugCourseData/hkust-a"), nodeRequire("../subpackages/ug-data-hkust-b/ugCourseData/hkust-b")),
   "LINGNAN": (nodeRequire) => [].concat(nodeRequire("../subpackages/ug-data-lingnan/ugCourseData/lingnan")),
   "POLYU": (nodeRequire) => [].concat(nodeRequire("../subpackages/ug-data-polyu-a/ugCourseData/polyu-a"), nodeRequire("../subpackages/ug-data-polyu-b/ugCourseData/polyu-b")),
@@ -14,7 +14,7 @@ const counts = {
   "CUHK": 732,
   "EDUHK": 547,
   "HKBU": 2664,
-  "HKU": 4672,
+  "HKU": 5717,
   "HKUST": 2200,
   "LINGNAN": 721,
   "POLYU": 2681
@@ -36,7 +36,8 @@ const packageNames = {
   ],
   "HKU": [
     "subpackages/ug-data-hku-a",
-    "subpackages/ug-data-hku-b"
+    "subpackages/ug-data-hku-b",
+    "subpackages/ug-data-hku-c"
   ],
   "HKUST": [
     "subpackages/ug-data-hkust-a",

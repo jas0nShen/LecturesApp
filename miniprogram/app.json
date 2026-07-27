@@ -62,6 +62,13 @@
       ]
     },
     {
+      "root": "subpackages/ug-data-hku-c",
+      "name": "ug-data-hku-c",
+      "pages": [
+        "pages/loader/index"
+      ]
+    },
+    {
       "root": "subpackages/ug-data-hkbu-a",
       "name": "ug-data-hkbu-a",
       "pages": [

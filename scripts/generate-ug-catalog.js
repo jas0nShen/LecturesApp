@@ -13,7 +13,7 @@ const SUBPACKAGES_DIR = path.join(__dirname, '..', 'miniprogram', 'subpackages')
 const SHARD_COUNT_BY_UNIVERSITY = {
   CITYU: 2,
   HKBU: 2,
-  HKU: 2,
+  HKU: 3,
   HKUST: 2,
   POLYU: 2
 };

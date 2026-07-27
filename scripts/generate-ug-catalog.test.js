@@ -1232,9 +1232,13 @@ test('UG catalogue generator groups course shards by programme university', () =
 });
 
 test('large university course rows are split into evenly sized generated subpackage shards', () => {
-  ['CITYU', 'HKBU', 'HKU', 'HKUST', 'POLYU'].forEach((universityCode) => {
+  ['CITYU', 'HKBU', 'HKUST', 'POLYU'].forEach((universityCode) => {
     const entries = splitCourseShardEntries(new Map([[universityCode, Array.from({ length: 5 }, (_, index) => ({ id: index }))]]));
     assert.deepEqual(entries.map((entry) => entry.shardName), [`${universityCode.toLowerCase()}-a`, `${universityCode.toLowerCase()}-b`]);
     assert.deepEqual(entries.map((entry) => entry.courses.length), [3, 2]);
   });
+
+  const hkuEntries = splitCourseShardEntries(new Map([['HKU', Array.from({ length: 7 }, (_, index) => ({ id: index }))]]));
+  assert.deepEqual(hkuEntries.map((entry) => entry.shardName), ['hku-a', 'hku-b', 'hku-c']);
+  assert.deepEqual(hkuEntries.map((entry) => entry.courses.length), [3, 3, 1]);
 });

@@ -1,6 +1,6 @@
 # Codex 项目交接
 
-最后核验时间：2026-07-26（Asia/Shanghai）
+最后核验时间：2026-07-27（Asia/Shanghai）
 
 ## 当前项目目标
 
@@ -18,9 +18,10 @@
 - 本批课程、来源审查、生成 catalogue/shards/分包、测试和 `1.0.12` 版本资料已由提交 `7c2e66f Release 1.0.12 with expanded HKU curricula` 提交并推送。
 - 包版本：`1.0.12`
 - `main` 与 `origin/main` 的提交同步；本批 source supplements、生成 catalogue/shards/分包、版本资料和测试均已推送。
+- 当前工作区另有尚未提交、推送或上传微信的 HKU `6688 Science Master Class` 与 `6901 Bachelor of Science` 课程补充；下面的 18,318 条 UG 课程、280 个已开放 Programme、HKU 三分包及 943/943 测试均指当前工作区，不是已上传的 1.0.12 包。
 - 本批开放 HKU `6755` 其余 BBA Major、`6767` Economics、`6779` Statistical Decision Sciences、`6781` Accounting、`6896` IBGM、Asset Management and Private Banking、Quantitative Finance、Business Analytics、Marketing Analytics and Technology，以及 `6808` / `6810` 两个 Law double degree 的官方可核验课程。
 - `6808` 与 `6810` 的 Law elective universe 未由 Programme-specific 来源闭合，因此只发布已核验代码供只读浏览，不生成完整毕业结构或完成百分比。
-- 旧单一 `ug-data-hku`、`ug-data-hkbu` 已由生成脚本分别替换为 `ug-data-hku-a` / `ug-data-hku-b`、`ug-data-hkbu-a` / `ug-data-hkbu-b`。这些删除与新增是既有分包拆分结果，不要手工恢复旧 loader。
+- 旧单一 `ug-data-hku`、`ug-data-hkbu` 已由生成脚本替换；当前工作区 HKU 使用 `ug-data-hku-a` / `ug-data-hku-b` / `ug-data-hku-c` 三分包，HKBU 使用 `ug-data-hkbu-a` / `ug-data-hkbu-b` 双分包。不要手工恢复旧 loader。
 
 - 本批改动已提交、推送并通过微信官方 CLI 上传为 `1.0.12`，备注为 `1.0.12: Expand verified HKU business and law curricula`，命令返回 `✔ upload`；实际上传包 16,126,571 bytes，主包 1,479,261 bytes，所有 21 个分包均低于 2 MB。
 - `.playwright-cli/` 为 96 KB 的本地浏览器诊断产物，共有 console log 和 page YAML；本次没有删除、覆盖或暂存。
@@ -126,7 +127,9 @@ df91815 Add PolyU Design curriculum and source evidence
 - PolyU `POLYU-TPG-074 Master of Science in Advanced Physiotherapy` 继续 `blocked`：同一 Programme 的 2026/27 官方页面明确 `RS567 Project Study` 为 6 credits，但 2027/28 Programme 页面、现行 2026-or-after Curriculum 图和 v14 leaflet 都未重申代码，且没有公开的当前 51069 PRD/SDF；不跨学年搬运 `RS567`。
 - PolyU `POLYU-TPG-011 Master of Science in Low-altitude Economy` 继续 `blocked`：2027 Programme 页面已闭合 8 门 Core、7 门 Elective 和两条 31-credit 路径，但官方 PRD、当前 AAE Subject List 及 2026/27 leaflet 均未发布 9-credit Dissertation 的课程代码；不从其他 Programme 类推 Dissertation code。
 - 已补充 HKU `HKU-TPG-055 Master of Public Administration` 当前 60-credit 结构：4 门 Compulsory 共 24 credits、24 门内部 Elective 通常选 4 门共 24 credits，以及 12-credit `POLI8012 Dissertation` / `POLI8028 Capstone project` 二选一，共 30 个唯一代码。正式 Regulations 与专用 Course Descriptions 均确认 `POLI8032` 为 6 credits；最多 6 credits 的获批 MIPA 替代及完成路径继续标记 `manual_review_required`。
-- UG：8 所学校、444 个 Programme、684 个 Major/Track、Programme/Major-local 带代码课程共 17,273 条；262 个 Programme 已开放课程代码。
+- UG：8 所学校、444 个 Programme、684 个 Major/Track、Programme/Major-local 带代码课程共 18,318 条；280 个 Programme 已开放课程代码。
+- 当前工作区已补充 HKU `6688 Science Master Class` 七个 2026 cohort Programme：Biological Sciences、Chemistry、Ecology & Biodiversity、Geology、Mathematics、Molecular Biology & Biotechnology、Physics。七个 Programme 分别开放 93、91、91、90、101、86、106 门 Programme-local 课程，共 658 条；每条记录包含对应 144-150 credit Intensive Major 代码表及共享的 53 门 MRes 课程。MRes 保留 `INRE6033` 3-credit Research Ethics、51 门 6-credit Research Postgraduate elective（选 18 credits）和 `INRE7999` 42-credit Research Project；开放 UG5、Common Core、free elective、Science Foundation 豁免、认证、Physics theme、exchange equivalence 与跨 degree counting 均未被伪造成自动毕业规则。
+- 当前工作区已补充 HKU `6901 Bachelor of Science` 十一个 2026 cohort Major：Biochemistry、Biological Sciences、Chemistry、Earth System Science、Ecology and Biodiversity、Environmental Science、Food and Nutritional Science、Geology、Mathematics、Molecular Biology and Biotechnology、Physics，共 387 条 Programme-local 课程。官方 96-credit Major 结构、Core/Elective/Capstone、Area/List、互斥和逐课备注均保留；开放 UG5、语言、Common Core、free elective、second major/minor 与审批依赖课程未被伪造成封闭课程池或自动毕业判断。
 - 已补充 HKU `6717 Bachelor of Social Sciences` 官方 2025-26 syllabus 中可核验的 12 个 Major、687 条 Major-local 课程：First Major 为 Computational Social Science、Geography、Politics and Public Administration、Social Policy and Social Development、Sociology；Second Major 为 Cognitive Science、Counselling、Criminology、Media and Cultural Studies、Neuroscience、Psychology、Urban Governance。`POLI3154` 以 HKU PPA 官方课程页确认 6 credits；Geospatial Data Science 因 `GEOG4xxx` 占位和待批状态未发布。
 - 已补充 CityU `JS1109 BA Linguistics and Language Applications` 当前 2026/27 课程结构：唯一正式 Major 下 40 门唯一代码，11 门 Core 共 33 credits、29 门 Major Elective 候选池（选 24 credits，至少 12 credits 为 B4 level），全部课程 3 credits。上游 JUPAS 标题中的五项 Features 不再被伪建成五个 Major；`LT4235` 按当前 Catalogue 保持 Core，不纳入旧 2025/26 pool 的 `LT4391`，也不从旧 Suggested Study Plan 搬运 Year/Term。
 - 已补充 CityU `JS1102 BSocSc International Relations and Global Affairs` 当前 2026/27 课程结构：唯一正式 Major 下 53 个唯一代码，18 门 Core 共 51 credits（含 0-credit `PIA3812` International Experience）及 35 门 Major Elective 候选池（选 12 credits）。Asian Studies、International Studies、Development Studies 分别是 24、21、13 门的重叠 Stream 子集，不再伪建成三个 Major；`PIA3810/3810J/3810K` 的最终 Stream award 由 Major leader 决定，未自动推断。
@@ -223,7 +226,7 @@ df91815 Add PolyU Design curriculum and source evidence
 
 - 八校 TPG 已达到 100% source reviewed；没有剩余 `unreviewed` Programme。
 - 仍有 101 个 Programme 因官方公开来源缺代码、学分、Track 归属、最终审批或规则冲突而标记 `blocked`。除非出现新的官方证据，不应把它们当作待猜测补全项。
-- UG 来源覆盖报告仍有 182 个缺口：63 个 index-only、21 个 reviewed-no-codes、98 个 no-source。下一批继续从官方课程手册或部门课程页取证，不从 Programme 简介反推代码或规则。
+- UG 来源覆盖报告仍有 164 个缺口：45 个 index-only、21 个 reviewed-no-codes、98 个 no-source。下一批继续从官方课程手册或部门课程页取证，不从 Programme 简介反推代码或规则。
 - 多个已核验 TPG Programme 仍标记 `manual_review_required`，表示课程池可发布，但复杂路径/跨组最低要求不能由当前规则引擎自动证明。
 
 ### 发布与验收缺口
@@ -339,9 +342,20 @@ npm run status:ug-sources -- --missing-only --priority launch --missing-limit 10
 
 ## 当前工作区
 
-本批 HKU 课程补充、来源审查、生成分包、测试和 `1.0.12` 版本资料均已提交并推送；当前工作区除本交接记录外仅保留：
+已上传的 1.0.12 HKU 商科与法学批次仍停留在提交 `8ddcd66`；当前工作区新增的 HKU `6688 Science Master Class` 与 `6901 Bachelor of Science` 批次尚未提交、推送或上传微信。当前主要差异包括：
 
 ```text
+data/ug-course-supplements/hku-6688-science-master-class-2026.json
+data/ug-course-supplements/hku-6901-bachelor-of-science-2026.json
+scripts/hku-6688-science-master-class-supplement.test.js
+scripts/hku-6901-bachelor-of-science-supplement.test.js
+scripts/generate-ug-catalog.js 及相关计数/分包测试
+miniprogram/app.json
+miniprogram/utils/ugCatalogue.js
+miniprogram/utils/ugCourseShards.js
+miniprogram/subpackages/ug-data-hku-a/
+miniprogram/subpackages/ug-data-hku-b/
+miniprogram/subpackages/ug-data-hku-c/
 ?? .playwright-cli/
 ```
 
@@ -349,7 +363,7 @@ npm run status:ug-sources -- --missing-only --priority launch --missing-limit 10
 
 ## 已运行的测试及结果
 
-2026-07-26 在提交 `7c2e66f` 和本交接文档工作区上重新运行：
+2026-07-27 在当前未提交 HKU 6688 与 6901 工作区上重新运行：
 
 ```text
 npm run check:ship: PASS
@@ -361,20 +375,20 @@ npm run check:ship: PASS
   UG supplement validation: PASS
   directory audit: PASS, blockingErrors=[]
   server --check: PASS
-  Node tests: PASS, 935/935
+  Node tests: PASS, 943/943
   check:release: PASS, ready=true
 
 git diff --check: PASS
 npm run status:tpg-courses -- --school=HKU: PASS (448/448 reviewed, 0 unreviewed)
-npm run status:ug-sources -- --missing-only --missing-summary --missing-limit 0: PASS (182 Programme-level source gaps: 63 index-only, 21 reviewed-no-codes, 98 no-source)
+npm run status:ug-sources -- --missing-only --missing-summary --missing-limit 0: PASS (164 Programme-level source gaps: 45 index-only, 21 reviewed-no-codes, 98 no-source)
 ```
 
 发布指标：
 
-- 主包预估：1,837,990 bytes。
-- 总估算包体：20,523,553 bytes，191 个上传文件。
-- CLI 实际上传包：16,126,571 bytes；实际主包：1,479,261 bytes。
-- 所有 21 个 UG/TPG 分包低于 2 MB。
+- 当前工作区主包预估：1,840,771 bytes。
+- 当前工作区总估算包体：21,609,152 bytes，196 个上传文件。
+- 已上传 1.0.12 的历史 CLI 实际包：16,126,571 bytes；实际主包：1,479,261 bytes。
+- 当前 22 个 UG/TPG 分包均低于 2 MB；最大为 `ug-data-hku-a` 1,777,011 bytes。
 - 页面：17；敏感 API：0。
 - release warnings 仅为人工微信后台检查尚需完成，以及未配置生产 HTTPS（体验/正式版按设计离线）。
 
