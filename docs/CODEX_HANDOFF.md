@@ -1,6 +1,6 @@
 # Codex 项目交接
 
-最后核验时间：2026-07-28（Asia/Shanghai）
+最后核验时间：2026-07-29（Asia/Shanghai）
 
 ## 当前项目目标
 
@@ -8,7 +8,7 @@
 
 当前产品边界是：先保证离线发布、数据可追溯和规则不误导，再继续补课程覆盖与规划能力。未经明确产品决定，不引入登录、云同步、统计、敏感权限或生产 API。
 
-当前仓库发布资料已统一为 `1.0.12`（`package.json`、运行时 `releaseInfo`、`docs/MVP_SPEC.md`、`docs/RELEASE_CHECKLIST.md`、`docs/REVIEW_SUBMISSION.md`）。微信官方 CLI 已用当前 Git 最新课程批次成功覆盖上传 `1.0.12`；没有提交审核或发布正式版。
+当前仓库发布资料已统一为 `1.0.13`（`package.json`、运行时 `releaseInfo`、`docs/MVP_SPEC.md`、`docs/RELEASE_CHECKLIST.md`、`docs/REVIEW_SUBMISSION.md`）。微信官方 CLI 已用当前 Git 发布提交成功上传 `1.0.13`；没有提交审核或发布正式版。
 
 ## 可验证的仓库快照
 
@@ -16,8 +16,8 @@
 - 分支：`main`
 - 1.0.12 已补充 HKU 商科、经济、统计、会计及法学双学位官方课程清单，并对规则未闭合 Programme 保持只读浏览，不显示未经核验的毕业完成比例。
 - HKU 商科与法学批次由提交 `7c2e66f` 发布；HKU `6688 Science Master Class` 与 `6901 Bachelor of Science` 批次由提交 `c1076cf` 发布；HKU `6987 Computer Engineering / Electrical Engineering / Electronic Engineering` 三 Major 与 HKU `6925` / `6858` / `6897` 来源审查由提交 `8fa7ce8 Expand HKU engineering curricula for 1.0.12` 发布。
-- 包版本：`1.0.12`
-- 当前课程提交 `40253ca` 已推送到 `origin/main`；其 source supplement、生成 catalogue/shards/分包和测试均已推送。
+- 包版本：`1.0.13`
+- 当前发布提交 `2228b33` 已推送到 `origin/main`；课程基线为 `40253ca`，其 source supplement、生成 catalogue/shards/分包和测试均已推送。
 - 当前 Git 代码已包含 CUHK `JASPN Japanese Studies` 58 门 Major-assigned JASP 课程；标准、Local、Stream、senior-entry 与 double-Major 路径未完整闭合，因此保持只读浏览，不生成毕业完成百分比。
 - 当前 Git 代码也已包含 CUHK `RELSN Religious Studies` 63 门 Religious Studies Area 课程；标准与 senior-entry 路径因 Cultural Studies 和跨院 Concentration 开放池未闭合而保持只读浏览。
 - 当前 Git 代码还包含 CUHK `PUHSN Public Humanities` 88 门 2025-26 intake-specific 课程；标准与 senior-entry 路径、外系 Faculty Package、Religious Studies Areas、Concentration 替代及课程复用规则未闭合，因此保持只读浏览，不生成毕业完成百分比。
@@ -30,7 +30,7 @@
 - 当前 Git 代码新增 CUHK `SOCIN Sociology` 62 门 2025-26 Major 课程：`SOCI1001`、9 门 Required 与 52 门 Elective pool，全部为官方明确的 3 units。`SOCI1102` 只出现在通用 Course List 和 Minor，不在 2025-26 Major pool，未导入；跨院 Faculty Package、Concentration、senior-entry、double Major 与 JD 路径未闭合，因此保持只读浏览，不生成毕业完成百分比。
 - 当前 Git 代码新增 CUHK `ECONN Economics` 61 门课程：官网所称 12 门 core（含 Faculty Package 固定课 `ECON2011`）以及官方 Course List 中全部 49 门 3000/4000-level ECON elective。PDF 的 66 门 Course List 与本地目标集合已自动比对，代码、标题、学分均无缺失、多余或差异。
 - `ECONN` 官方 2024-25 requirement 同时允许 5000+ ECON、MATH 与 Data Analytics 跨系开放池，并包含五个 Concentration、数学豁免、两类 senior-entry 及独立 CUHK-Tsinghua 路径；这些规则未闭合，因此该 61 门清单保持只读浏览，不生成毕业完成百分比。非 Required 且低于 3000 level 的 `ECON1010`、`1210`、`1220`、`1310`、`1420` 未导入。
-- 当前 1.0.12 微信开发版已覆盖上传至提交 `40253ca` 的 CUHK `ECONN Economics` 批次，包含此前尚未上传的 `JASPN` / `RELSN` / `PUHSN` / `TRANN` / `THEON` / `SOWKN` / `SOCIN` 课程数据。
+- 当前 1.0.13 微信开发版已上传至发布提交 `2228b33`，课程基线为 CUHK `ECONN Economics` 提交 `40253ca`，并包含 `JASPN` / `RELSN` / `PUHSN` / `TRANN` / `THEON` / `SOWKN` / `SOCIN` 课程数据。
 - 本批开放 HKU `6755` 其余 BBA Major、`6767` Economics、`6779` Statistical Decision Sciences、`6781` Accounting、`6896` IBGM、Asset Management and Private Banking、Quantitative Finance、Business Analytics、Marketing Analytics and Technology，以及 `6808` / `6810` 两个 Law double degree 的官方可核验课程。
 - `6808` 与 `6810` 的 Law elective universe 未由 Programme-specific 来源闭合，因此只发布已核验代码供只读浏览，不生成完整毕业结构或完成百分比。
 - 旧单一 `ug-data-hku`、`ug-data-hkbu` 已由生成脚本替换；当前工作区 HKU 使用 `ug-data-hku-a` / `ug-data-hku-b` / `ug-data-hku-c` 三分包，HKBU 使用 `ug-data-hkbu-a` / `ug-data-hkbu-b` 双分包。不要手工恢复旧 loader。
@@ -43,6 +43,7 @@
 - 2026-07-28 已用提交 `7ac01a2` 的 CUHK `HISTN-PUH Public History` 与 `CHEDN Early Childhood Education` 课程更新覆盖上传同版本 `1.0.12`，备注为 `1.0.12: Add CUHK Public History and Early Childhood Education`，命令返回 `✔ upload`；实际上传包 17,464,660 bytes，主包 1,482,845 bytes，所有 22 个分包均低于 2 MB。
 - 2026-07-28 已用提交 `0cb0e93` 的 CUHK `ENGEN English` 课程更新覆盖上传同版本 `1.0.12`，备注为 `1.0.12: Add CUHK English curriculum`，命令返回 `✔ upload`；实际上传包 17,511,130 bytes，主包 1,483,018 bytes，所有 22 个分包均低于 2 MB。
 - 2026-07-28 已用提交 `40253ca` 的 CUHK `ECONN Economics` 课程更新覆盖上传同版本 `1.0.12`，备注为 `1.0.12: Add CUHK Economics curriculum`，命令返回 `✔ upload`；实际上传包 17,860,415 bytes，主包 1,483,876 bytes，所有 22 个分包均低于 2 MB。
+- 2026-07-29 已用发布提交 `2228b33` 上传 `1.0.13`，备注为 `1.0.13: Expand verified CUHK curricula`，命令返回 `✔ upload`；实际上传包 17,860,451 bytes，主包 1,483,912 bytes，所有 22 个分包均低于 2 MB。
 - `.playwright-cli/` 为 96 KB 的本地浏览器诊断产物，共有 console log 和 page YAML；本次没有删除、覆盖或暂存。
 
 最近关键提交（本次交接提交前）：
@@ -290,7 +291,7 @@ df91815 Add PolyU Design curriculum and source evidence
 
 ### 发布与验收缺口
 
-- 仓库版本资料、Git 最新课程批次与微信开发版均已同步为 `1.0.12`；上传不等于已提交审核，当前仍未提交审核或发布正式版。
+- 仓库版本资料、Git 发布提交与微信开发版均已同步为 `1.0.13`；上传不等于已提交审核，当前仍未提交审核或发布正式版。
 - `docs/RELEASE_CHECKLIST.md` 的 iOS/Android 真机矩阵没有完成记录。
 - 微信后台隐私声明、服务类目、备案、审核材料核对尚未在仓库中记录为完成。
 - 尚未提交微信审核，也没有发布正式版。
@@ -323,7 +324,7 @@ npm run check:ship
 git diff --check
 ```
 
-5. 若继续 `1.0.12` 提审，先完成 iOS/Android 真机矩阵；通过后才提交审核。上传、提交审核和发布是三个独立外部动作，均需用户明确授权。
+5. 若继续 `1.0.13` 提审，先完成 iOS/Android 真机矩阵；通过后才提交审核。上传、提交审核和发布是三个独立外部动作，均需用户明确授权。
 6. 若转入 UG 补数，先运行：
 
 ```bash
@@ -401,7 +402,7 @@ npm run status:ug-sources -- --missing-only --priority launch --missing-limit 10
 
 ## 当前工作区
 
-当前 1.0.12 微信开发版与 Git 均已覆盖至课程提交 `40253ca`，包含 CUHK `ECONN Economics` 以及此前尚未上传的 `JASPN` / `RELSN` / `PUHSN` / `TRANN` / `THEON` / `SOWKN` / `SOCIN` 批次。交接文档提交后，工作区只保留用户本地诊断目录：
+当前 1.0.13 微信开发版与 Git 均已覆盖至发布提交 `2228b33`，课程基线为 `40253ca`，包含 CUHK `ECONN Economics` 以及 `JASPN` / `RELSN` / `PUHSN` / `TRANN` / `THEON` / `SOWKN` / `SOCIN` 批次。交接文档提交后，工作区只保留用户本地诊断目录：
 
 ```text
 ?? .playwright-cli/
@@ -411,7 +412,7 @@ npm run status:ug-sources -- --missing-only --priority launch --missing-limit 10
 
 ## 已运行的测试及结果
 
-2026-07-28 在已推送并上传的 CUHK `ECONN Economics` 代码上重新运行：
+2026-07-29 在已推送并上传的 `1.0.13` 发布提交上重新运行：
 
 ```text
 npm run check:ship: PASS
@@ -433,9 +434,9 @@ npm run status:ug-sources -- --missing-only --missing-summary --missing-limit 0:
 
 发布指标：
 
-- 当前代码主包预估：1,843,170 bytes。
-- 当前代码总估算包体：22,582,954 bytes，196 个上传文件。
-- 最新上传 1.0.12 的 CLI 实际包：17,860,415 bytes；实际主包：1,483,876 bytes。
+- 当前代码主包预估：1,843,206 bytes。
+- 当前代码总估算包体：22,582,990 bytes，196 个上传文件。
+- 最新上传 1.0.13 的 CLI 实际包：17,860,451 bytes；实际主包：1,483,912 bytes。
 - 当前 22 个 UG/TPG 分包均低于 2 MB；最大为 `ug-data-hku-a` 1,869,435 bytes。
 - 页面：17；敏感 API：0。
 - release warnings 仅为人工微信后台检查尚需完成，以及未配置生产 HTTPS（体验/正式版按设计离线）。
@@ -444,7 +445,7 @@ npm run status:ug-sources -- --missing-only --missing-summary --missing-limit 0:
 
 ## 已知问题、风险和不要做的事情
 
-- 微信已通过官方 CLI 用提交 `40253ca` 覆盖上传 `1.0.12`；这只表示开发版上传成功，不等于已提审或已发布。
+- 微信已通过官方 CLI 用发布提交 `2228b33` 上传 `1.0.13`；这只表示开发版上传成功，不等于已提审或已发布。
 - 不要把“上传成功”写成“已提审”或“已发布”。这两个外部动作尚未执行。
 - 不要删除或提交 `.playwright-cli/`，除非用户明确决定如何处理该诊断目录。
 - 不要手改生成的 catalogue、course shard 或 loader；从 source/supplement 和 builder 修改后重新生成。
