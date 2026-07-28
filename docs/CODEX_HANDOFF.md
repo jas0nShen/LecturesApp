@@ -17,8 +17,8 @@
 - 1.0.12 已补充 HKU 商科、经济、统计、会计及法学双学位官方课程清单，并对规则未闭合 Programme 保持只读浏览，不显示未经核验的毕业完成比例。
 - HKU 商科与法学批次由提交 `7c2e66f` 发布；HKU `6688 Science Master Class` 与 `6901 Bachelor of Science` 批次由提交 `c1076cf` 发布；HKU `6987 Computer Engineering / Electrical Engineering / Electronic Engineering` 三 Major 与 HKU `6925` / `6858` / `6897` 来源审查由提交 `8fa7ce8 Expand HKU engineering curricula for 1.0.12` 发布。
 - 包版本：`1.0.12`
-- 当前课程提交 `b459e73` 已推送到 `origin/main`；其 source supplement、生成 catalogue/shards/分包和测试均已推送。
-- 当前 1.0.12 微信开发版已包含 CUHK `GDRSN Gender Studies` 的 62 门课程；当前已上传代码指标为 18,729 条 UG 课程、283 个已开放 Programme 和 954/954 测试。
+- 当前课程提交 `7ac01a2` 已推送到 `origin/main`；其 source supplement、生成 catalogue/shards/分包和测试均已推送。
+- 当前 1.0.12 微信开发版已包含 CUHK `HISTN-PUH Public History` 与 `CHEDN Early Childhood Education` 批次；当前已上传代码指标为 18,770 条 UG 课程、285 个已开放 Programme 和 958/958 测试。
 - 本批开放 HKU `6755` 其余 BBA Major、`6767` Economics、`6779` Statistical Decision Sciences、`6781` Accounting、`6896` IBGM、Asset Management and Private Banking、Quantitative Finance、Business Analytics、Marketing Analytics and Technology，以及 `6808` / `6810` 两个 Law double degree 的官方可核验课程。
 - `6808` 与 `6810` 的 Law elective universe 未由 Programme-specific 来源闭合，因此只发布已核验代码供只读浏览，不生成完整毕业结构或完成百分比。
 - 旧单一 `ug-data-hku`、`ug-data-hkbu` 已由生成脚本替换；当前工作区 HKU 使用 `ug-data-hku-a` / `ug-data-hku-b` / `ug-data-hku-c` 三分包，HKBU 使用 `ug-data-hkbu-a` / `ug-data-hkbu-b` 双分包。不要手工恢复旧 loader。
@@ -28,11 +28,14 @@
 - 2026-07-28 已用提交 `8fa7ce8` 的 HKU Engineering 更新覆盖上传同版本 `1.0.12`，备注为 `1.0.12: Expand verified HKU engineering curricula`，命令返回 `✔ upload`；实际上传包 17,355,407 bytes，主包 1,482,362 bytes，所有 22 个分包均低于 2 MB。
 - 2026-07-28 已用提交 `96f706c` 的 CUHK `SOCIN-SSD` Sociology 课程更新覆盖上传同版本 `1.0.12`，备注为 `1.0.12: Add CUHK society and sustainability courses`，命令返回 `✔ upload`；实际上传包 17,381,929 bytes，主包 1,482,509 bytes，所有 22 个分包均低于 2 MB。
 - 2026-07-28 已用提交 `b459e73` 的 CUHK `GDRSN Gender Studies` 课程更新覆盖上传同版本 `1.0.12`，备注为 `1.0.12: Add CUHK Gender Studies courses`，命令返回 `✔ upload`；实际上传包 17,432,373 bytes，主包 1,482,654 bytes，所有 22 个分包均低于 2 MB。
+- 2026-07-28 已用提交 `7ac01a2` 的 CUHK `HISTN-PUH Public History` 与 `CHEDN Early Childhood Education` 课程更新覆盖上传同版本 `1.0.12`，备注为 `1.0.12: Add CUHK Public History and Early Childhood Education`，命令返回 `✔ upload`；实际上传包 17,464,660 bytes，主包 1,482,845 bytes，所有 22 个分包均低于 2 MB。
 - `.playwright-cli/` 为 96 KB 的本地浏览器诊断产物，共有 console log 和 page YAML；本次没有删除、覆盖或暂存。
 
 最近关键提交（本次交接提交前）：
 
 ```text
+7ac01a2 Add CUHK public history and early childhood curricula
+0d471b7 Document CUHK Gender Studies upload
 b459e73 Add CUHK gender studies courses
 96f706c Add CUHK society and sustainability courses
 8fa7ce8 Expand HKU engineering curricula for 1.0.12
@@ -135,9 +138,11 @@ df91815 Add PolyU Design curriculum and source evidence
 - PolyU `POLYU-TPG-074 Master of Science in Advanced Physiotherapy` 继续 `blocked`：同一 Programme 的 2026/27 官方页面明确 `RS567 Project Study` 为 6 credits，但 2027/28 Programme 页面、现行 2026-or-after Curriculum 图和 v14 leaflet 都未重申代码，且没有公开的当前 51069 PRD/SDF；不跨学年搬运 `RS567`。
 - PolyU `POLYU-TPG-011 Master of Science in Low-altitude Economy` 继续 `blocked`：2027 Programme 页面已闭合 8 门 Core、7 门 Elective 和两条 31-credit 路径，但官方 PRD、当前 AAE Subject List 及 2026/27 leaflet 均未发布 9-credit Dissertation 的课程代码；不从其他 Programme 类推 Dissertation code。
 - 已补充 HKU `HKU-TPG-055 Master of Public Administration` 当前 60-credit 结构：4 门 Compulsory 共 24 credits、24 门内部 Elective 通常选 4 门共 24 credits，以及 12-credit `POLI8012 Dissertation` / `POLI8028 Capstone project` 二选一，共 30 个唯一代码。正式 Regulations 与专用 Course Descriptions 均确认 `POLI8032` 为 6 credits；最多 6 credits 的获批 MIPA 替代及完成路径继续标记 `manual_review_required`。
-- 当前工作区 UG：8 所学校、444 个 Programme、686 个 Major/Track、Programme/Major-local 带代码课程共 18,729 条；283 个 Programme 已开放课程代码。
+- 当前工作区 UG：8 所学校、444 个 Programme、686 个 Major/Track、Programme/Major-local 带代码课程共 18,770 条；285 个 Programme 已开放课程代码。
 - 已补充 CUHK `SOCIN-SSD Society and Sustainable Development` 的 33 门唯一 Sociology 课程，包括 10 门 Required 和 24 个 Elective 选项中合并重复出现的 `SOCI4020`。官方公开页未逐课发布 units、Year 或 Term，因此全部保持未知；Earth System Science 与 Diversity cluster 尚未完成逐课交叉核验，没有导入。本 Programme 继续作为 partial read-only 课程清单，不生成毕业完成百分比。
 - 已补充 CUHK `GDRSN Gender Studies` 的 62 门唯一课程，包括 5 门普通 Required、`GDRS4009` Internship、`GDRS4005` / `GDRS4010` Thesis 路径及 54 门 Elective。Programme 文字说明发布 21-unit Required 与 33-unit Elective，但两张表分别标为 18 与 36 units，故逐课学分保持未知、只读浏览且不生成毕业完成百分比。`GDRD3002` 在当前 Programme 表和院系 Course Listing 中均如此拼写，按官方原码保留；23 门带 `#` 的外系课程保留 Major GPA 注释，非 GDRS 课程最多 6 units 的限制仅作人工复核提示。
+- 已补充 CUHK `HISTN-PUH Public History` 当前 Programme 页面明确列出的 10 门课程 highlights：两门 Required 和八门 Elective。代码与标题已用 History Study Scheme、2026-27 Course Offerings 及官方课程档案交叉核验；官方页面只发布 57-unit 总额而未发布完整当前 coded curriculum，因此全部学分保持未知，仅作 partial read-only 浏览，不生成毕业完成百分比。`HIST4702` 保留 curriculum base code，并记录当前 offering section `HIST4702RS`；`HIST4180RH` 按官方历史 section code 保留，未臆造稳定 base code。
+- 已补充 CUHK `CHEDN Early Childhood Education (BA)` 适用于 2017-18 及以后 Higher Diploma holders 的完整 55-unit Major：16 门 Required 共 47 units，包括 8-unit Educational Studies、29-unit Subject Knowledge、7-unit Research Experience 和 3-unit Internship；另有 15 门封闭 Elective pool 选 8 units，共 31 个唯一代码。官方 Course List 闭合逐课标题和 units；70-71 graduation total 中开放的 15-16 University Core units 未导入。
 - 当前工作区已补充 HKU `6987` 的三条独立 Major：Computer Engineering 108 门、Electrical Engineering 105 门、Electronic Engineering 103 门。官方 2025-26 syllabus 明确适用于该学年及以后入学者，并闭合每条 240-credit 结构、Engineering/Discipline Core、A-E/I/J Discipline Elective groups、0-credit `ELEC3841` Internship、12-credit `ELEC4848` Senior Design Project 及 optional Focus。七门仅出现在 Focus 表的 COMP/FITE/MECH 课程已用当前 HKU CDS 课程页或 BEng(ME) syllabus 交叉核实学分；Core 与 Elective 身份按 Major 隔离，互斥课程关系保留，开放 general Elective、Common Core、未命名第二门 AILT 和获批 MSc 课程不被伪造成封闭池。
 - HKU `6925 Bachelor of Engineering in Biomedical Engineering` 继续仅索引：当前 SBME Programme 页没有逐课 code/credits/group，Faculty Regulations and Syllabuses 页面当前 BME Regulations 与 Syllabus 只链接到 2024、2025 栏为空。已记录 `no_public_course_codes`，不把 2024 syllabus 当作 2026 cohort。
 - HKU `6858 Bachelor of Science and Bachelor of Laws` 的十二个 catalogue entry 继续仅索引：Admissions 页确认五年制双学位、十一条 Science Major 选择和 LLB professional-core entry，但没有 Programme-specific coded curriculum、类别学分、重叠规则或完成路径。普通 `6901 BSc` 与 standalone LLB syllabuses 只能证明组件课程，不能证明 6858 的组合、替代和 capstone 规则；已记录 `public_course_codes_partial`，不直接复制组件课程。
@@ -214,7 +219,7 @@ df91815 Add PolyU Design curriculum and source evidence
 - Git 提交 `361ee05` 已包含 `1.0.6` 版本资料、冷分包 loader 返回兜底、8 个生成 loader 和回归测试。
 - Git 提交 `d39634d` 已包含本科可编辑排期、UG 双分包加载修复、微信基础库兼容、测试及 `1.0.7` 版本资料。
 - Git 提交 `d03f7b3` 已包含本科已修状态、Study Plan 状态统计与复制、首页入口序号修复、测试及更新后的 `1.0.7` 发布资料。
-- 本地 `main` 与本地远端跟踪引用 `origin/main` 同步；提交 `7c2e66f` 已包含本批 HKU 课程补充、来源审查、生成分包、测试及 `1.0.12` 版本资料。
+- 本地 `main` 与本地远端跟踪引用 `origin/main` 同步；提交 `7ac01a2` 已包含 CUHK Public History、Early Childhood Education source supplements、生成分包和测试。
 - 微信开发者工具已显示最新 `1.0.5` 代码上传成功，更新类型为“修订补丁”，备注为 `1.0.5: Add TPG course planning`。
 - 2026-07-17 已通过微信开发者工具官方 CLI 上传 `1.0.6`，备注为 `1.0.6: Add TPG course planning and reliable loaders`，命令返回 `✔ upload`；上传包 8.6 MB，主包 1.4 MB，所有分包低于 2 MB。
 - 2026-07-18 已通过微信开发者工具官方 CLI 上传 `1.0.7`，备注为 `1.0.7: Add editable UG course planning`，命令返回 `✔ upload`；实际上传包 8.6 MB，主包 1.4 MB，所有分包低于 2 MB。
@@ -231,7 +236,8 @@ df91815 Add PolyU Design curriculum and source evidence
 - 2026-07-28 已用 HKU `6987` 三 Major 课程数据与 HKU `6925` / `6858` / `6897` 来源审查覆盖上传同版本 `1.0.12`，备注为 `1.0.12: Expand verified HKU engineering curricula`，命令返回 `✔ upload`；实际上传包 17,355,407 bytes、主包 1,482,362 bytes，所有 22 个分包均低于 2 MB。
 - 2026-07-28 已用 CUHK `SOCIN-SSD` 的 33 门 Sociology 课程覆盖上传同版本 `1.0.12`，备注为 `1.0.12: Add CUHK society and sustainability courses`，命令返回 `✔ upload`；实际上传包 17,381,929 bytes、主包 1,482,509 bytes，所有 22 个分包均低于 2 MB。
 - 2026-07-28 已用 CUHK `GDRSN Gender Studies` 的 62 门课程覆盖上传同版本 `1.0.12`，备注为 `1.0.12: Add CUHK Gender Studies courses`，命令返回 `✔ upload`；实际上传包 17,432,373 bytes、主包 1,482,654 bytes，所有 22 个分包均低于 2 MB。
-- 1.0.12 最新上传代码完整检查：954/954 测试通过、`ready=true`、主包预估 1,841,838 bytes，总估算包体 22,066,188 bytes，敏感 API 为 0。
+- 2026-07-28 已用 CUHK `HISTN-PUH Public History` 与 `CHEDN Early Childhood Education` 课程覆盖上传同版本 `1.0.12`，备注为 `1.0.12: Add CUHK Public History and Early Childhood Education`，命令返回 `✔ upload`；实际上传包 17,464,660 bytes、主包 1,482,845 bytes，所有 22 个分包均低于 2 MB。
+- 1.0.12 最新上传代码完整检查：958/958 测试通过、`ready=true`、主包预估 1,842,049 bytes，总估算包体 22,105,137 bytes，敏感 API 为 0。
 - 微信开发者工具确认 PolyU Computer Science 可加载 83 门课程，首页入口序号为 `01 / 02 / 03 / 04`；模拟器测试结束后已恢复原 Architectural Studies 资料，`plannedUgCourseKeys`、`ugCoursePlanAssignments`、`completedUgCourseKeys` 均为空。
 - 微信官方 automation 已完成普通 `POLYU-TPG-090` 闭环：36 门课程、`COMP5521` 加入计划、列表状态、官方分组、标记已修、复制与移除均通过。
 - 多 Track `HKU-TPG-031` 验收通过：Generalist 计 1 门，Chinese Language Education 计 2 门；两条记录均保留，旧 Track 课程不计入 Generalist 当前统计。
@@ -244,7 +250,7 @@ df91815 Add PolyU Design curriculum and source evidence
 
 - 八校 TPG 已达到 100% source reviewed；没有剩余 `unreviewed` Programme。
 - 仍有 101 个 Programme 因官方公开来源缺代码、学分、Track 归属、最终审批或规则冲突而标记 `blocked`。除非出现新的官方证据，不应把它们当作待猜测补全项。
-- UG 来源覆盖报告仍有 161 个缺口：40 个 index-only、23 个 reviewed-no-codes、98 个 no-source。下一批继续从官方课程手册或部门课程页取证，不从 Programme 简介反推代码或规则。
+- UG 来源覆盖报告仍有 159 个缺口：38 个 index-only、23 个 reviewed-no-codes、98 个 no-source。下一批继续从官方课程手册或部门课程页取证，不从 Programme 简介反推代码或规则。
 - 多个已核验 TPG Programme 仍标记 `manual_review_required`，表示课程池可发布，但复杂路径/跨组最低要求不能由当前规则引擎自动证明。
 
 ### 发布与验收缺口
@@ -270,7 +276,7 @@ npm run status:tpg-courses -- --school=HKU
 然后按以下顺序继续：
 
 1. 保留 `.playwright-cli/`；不要 reset、checkout、clean 或 stash 后遗忘。
-2. CUHK `GDRSN Gender Studies` 课程补充、生成的 CUHK 分包及专项测试已由提交 `b459e73` 推送并上传微信。不要重复生成，不要把 `.playwright-cli/` 纳入提交。
+2. CUHK `HISTN-PUH Public History` 与 `CHEDN Early Childhood Education` source supplements、生成的 CUHK 分包及专项测试已由提交 `7ac01a2` 推送并上传微信。不要重复生成，也不要把 `.playwright-cli/` 纳入提交。
 3. 如继续处理 `blocked` TPG，只在获得新的官方证据时更新对应 supplement；不要根据相似 Programme、旧学年或算术推断补全课程。
 4. 每批 TPG 来源变更执行：
 
@@ -360,7 +366,7 @@ npm run status:ug-sources -- --missing-only --priority launch --missing-limit 10
 
 ## 当前工作区
 
-当前 1.0.12 微信开发版对应已推送课程提交 `b459e73`，包含 CUHK `GDRSN Gender Studies` 的 62 门课程。工作区只保留交接文档改动和用户本地诊断目录：
+当前 1.0.12 微信开发版对应已推送课程提交 `7ac01a2`，包含 CUHK `HISTN-PUH Public History` 与 `CHEDN Early Childhood Education` 批次。课程代码已提交后，工作区只保留交接文档改动与用户本地诊断目录：
 
 ```text
  M docs/CODEX_HANDOFF.md
@@ -371,7 +377,7 @@ npm run status:ug-sources -- --missing-only --priority launch --missing-limit 10
 
 ## 已运行的测试及结果
 
-2026-07-28 在已推送并上传的 CUHK `GDRSN Gender Studies` 代码上重新运行：
+2026-07-28 在提交并上传的 CUHK `HISTN-PUH Public History` 与 `CHEDN Early Childhood Education` 代码上重新运行：
 
 ```text
 npm run check:ship: PASS
@@ -383,19 +389,19 @@ npm run check:ship: PASS
   UG supplement validation: PASS
   directory audit: PASS, blockingErrors=[]
   server --check: PASS
-  Node tests: PASS, 954/954
+  Node tests: PASS, 958/958
   check:release: PASS, ready=true
 
 git diff --check: PASS
 npm run status:tpg-courses -- --school=HKU: PASS (448/448 reviewed, 0 unreviewed)
-npm run status:ug-sources -- --missing-only --missing-summary --missing-limit 0: PASS (161 Programme-level source gaps: 40 index-only, 23 reviewed-no-codes, 98 no-source)
+npm run status:ug-sources -- --missing-only --missing-summary --missing-limit 0: PASS (159 Programme-level source gaps: 38 index-only, 23 reviewed-no-codes, 98 no-source)
 ```
 
 发布指标：
 
-- 当前代码主包预估：1,841,838 bytes。
-- 当前代码总估算包体：22,066,188 bytes，196 个上传文件。
-- 最新上传 1.0.12 的 CLI 实际包：17,432,373 bytes；实际主包：1,482,654 bytes。
+- 当前代码主包预估：1,842,049 bytes。
+- 当前代码总估算包体：22,105,137 bytes，196 个上传文件。
+- 最新上传 1.0.12 的 CLI 实际包：17,464,660 bytes；实际主包：1,482,845 bytes。
 - 当前 22 个 UG/TPG 分包均低于 2 MB；最大为 `ug-data-hku-a` 1,869,435 bytes。
 - 页面：17；敏感 API：0。
 - release warnings 仅为人工微信后台检查尚需完成，以及未配置生产 HTTPS（体验/正式版按设计离线）。
