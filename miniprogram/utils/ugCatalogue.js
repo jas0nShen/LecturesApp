@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-28T10:28:07.854Z",
+  "generatedAt": "2026-07-28T11:16:26.329Z",
   "universities": [
     {
       "id": "HKU",
@@ -4731,9 +4731,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/sowkn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 32,
+      "codedCourseCount": 32,
+      "courseSourceUrl": "https://web.swk.cuhk.edu.hk/en-gb/undergraduate/major-programmes"
     },
     {
       "id": "CUHK-UG-SOCIN-SSD-82",
@@ -11396,8 +11397,8 @@ const catalogue = {
       "code": "SOCIAL-WORK",
       "nameEn": "Social Work",
       "nameZh": "Social Work",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 33,
+      "codedCourseCount": 32,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/sowkn/"
     },
     {
@@ -16133,7 +16134,7 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 3056,
-    "CUHK": 1219,
+    "CUHK": 1251,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
@@ -16141,7 +16142,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 19121
+  "codedCourseCount": 19153
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

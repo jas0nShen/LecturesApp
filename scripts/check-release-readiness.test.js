@@ -33,8 +33,8 @@ test('current mini-program passes automated release readiness checks', () => {
   assert.equal(result.metrics.ugSchoolCount, 8);
   assert.equal(result.metrics.ugProgrammeCount, 444);
   assert.equal(result.metrics.ugMajorCount, 686);
-  assert.equal(result.metrics.ugCodedCourseCount, 19121);
-  assert.equal(result.metrics.ugProgrammeWithCoursesCount, 291);
+  assert.equal(result.metrics.ugCodedCourseCount, 19153);
+  assert.equal(result.metrics.ugProgrammeWithCoursesCount, 292);
   assert(result.metrics.packageBytes > 0);
   assert(result.metrics.mainPackageBytes > 0);
   assert(result.metrics.mainPackageBytes <= 2 * 1024 * 1024);

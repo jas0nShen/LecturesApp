@@ -1,0 +1,54 @@
+{
+  "provider": "CUHK Department of Social Work current Major Programme Study Scheme and course list",
+  "academicYear": "Current department Study Scheme reviewed on 2026-07-28",
+  "sourceUrl": "https://web.swk.cuhk.edu.hk/en-gb/undergraduate/major-programmes",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/sowkn/",
+  "note": "The current official Department of Social Work page publishes a minimum 72-unit Study Scheme, its Year 1-4 placement pattern and the complete Social Work Major Course List. This supplement exposes the 31 courses in that Major list plus SOWK1001, the named Social Work Faculty Package course required by the Study Scheme. The 72-unit path consists of 9 Faculty Package units, fixed Major courses, one of SOWK3240/SOWK3250, and at least three Year 4 options from SOWK4030 and the published Seminar pool. SOWK2050 is explicitly optional in the Year 2 summer. The Major table leaves the SOWK4580 units cell blank, so its local credits value remains 0 to mean unknown rather than assuming the 3-unit value of neighbouring seminars. The two additional cross-department Faculty Package courses and the separate requirement to take at least one PSYC and one SOCI course remain open pools whose current Programme-specific rows are not closed by the Department page. The resulting 32-course list is intentionally browse-only and must not be presented as a complete 72-unit graduation audit.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "SOWKN",
+      "jupasCode": "JS4874",
+      "programmeId": "CUHK-UG-SOWKN-81",
+      "majorId": "CUHK-UG-SOWKN-81-M1",
+      "courses": [
+        { "code": "SOWK1001", "title": "Introduction to Social Work and Social Welfare", "credits": 3, "recommendedYear": 1, "semester": "Term 1", "courseType": "core", "group": "Faculty Package · fixed Social Work course · choose two additional Faculty of Social Science courses from different departments/schools", "sourceUrl": "https://web.swk.cuhk.edu.hk/en-gb/undergraduate/faculty-package-courses/sowk-1001" },
+        { "code": "SOWK2001", "title": "Student-orientated Teaching I", "credits": 2, "recommendedYear": 1, "semester": "Term 1", "courseType": "core", "group": "Major Required · fixed" },
+        { "code": "SOWK2110", "title": "Human Behaviour and the Social Environment", "credits": 3, "recommendedYear": 1, "semester": "Term 2", "courseType": "core", "group": "Major Required · fixed" },
+
+        { "code": "SOWK2020", "title": "Philosophy and Principles of Social Work", "credits": 3, "recommendedYear": 2, "semester": "Term 1", "courseType": "core", "group": "Major Required · fixed" },
+        { "code": "SOWK2210", "title": "Social Casework", "credits": 3, "recommendedYear": 2, "semester": "Term 1", "courseType": "core", "group": "Major Required · fixed" },
+        { "code": "SOWK2220", "title": "Social Group Work", "credits": 3, "recommendedYear": 2, "semester": "Term 1", "courseType": "core", "group": "Major Required · fixed" },
+        { "code": "SOWK2140", "title": "Mental Disorders", "credits": 2, "recommendedYear": 2, "semester": "Term 2", "courseType": "core", "group": "Major Required · fixed" },
+        { "code": "SOWK2230", "title": "Community Work", "credits": 3, "recommendedYear": 2, "semester": "Term 2", "courseType": "core", "group": "Major Required · fixed" },
+        { "code": "SOWK2430", "title": "Social Work Field Laboratory", "credits": 2, "recommendedYear": 2, "semester": "Term 2", "courseType": "core", "group": "Major Required · fixed" },
+        { "code": "SOWK2050", "title": "Interprofessional Learning for Social Work in Health Care", "credits": 3, "recommendedYear": 2, "courseType": "major_elective", "group": "Optional Year 2 summer elective · not part of the fixed 72-unit path" },
+
+        { "code": "SOWK3410", "title": "Field Instruction I", "credits": 4, "recommendedYear": 3, "courseType": "internship", "group": "Major Required · first placement · September to March sequence with SOWK3420" },
+        { "code": "SOWK3420", "title": "Field Instruction II", "credits": 4, "recommendedYear": 3, "courseType": "internship", "group": "Major Required · first placement · September to March sequence with SOWK3410" },
+        { "code": "SOWK3340", "title": "Social Policy and Planning", "credits": 3, "recommendedYear": 3, "semester": "Term 1", "courseType": "core", "group": "Major Required · fixed" },
+        { "code": "SOWK3240", "title": "Clinical Social Work Theories and Practice", "credits": 3, "recommendedYear": 3, "semester": "Term 1", "courseType": "major_elective", "group": "Major Required choice · complete at least one of SOWK3240 and SOWK3250" },
+        { "code": "SOWK3250", "title": "Macro Social Work Theories and Practice", "credits": 3, "recommendedYear": 3, "semester": "Term 1", "courseType": "major_elective", "group": "Major Required choice · complete at least one of SOWK3240 and SOWK3250" },
+        { "code": "SOWK3310", "title": "Social Welfare Administration", "credits": 3, "recommendedYear": 3, "semester": "Term 2", "courseType": "core", "group": "Major Required · fixed" },
+        { "code": "SOWK3320", "title": "Social Work Research", "credits": 3, "recommendedYear": 3, "semester": "Term 2", "courseType": "core", "group": "Major Required · fixed" },
+
+        { "code": "SOWK4410", "title": "Field Instruction III", "credits": 4, "recommendedYear": 4, "courseType": "internship", "group": "Major Required · second placement · September to March sequence with SOWK4420" },
+        { "code": "SOWK4420", "title": "Field Instruction IV", "credits": 4, "recommendedYear": 4, "courseType": "internship", "group": "Major Required · second placement · September to March sequence with SOWK4410" },
+        { "code": "SOWK4350", "title": "Law and Social Work", "credits": 3, "recommendedYear": 4, "semester": "Term 1", "courseType": "core", "group": "Major Required · fixed" },
+        { "code": "SOWK4020", "title": "Student-oriented Teaching II", "credits": 2, "recommendedYear": 4, "semester": "Term 2", "courseType": "core", "group": "Major Required · fixed" },
+
+        { "code": "SOWK4030", "title": "Social Work Guided Research", "credits": 3, "recommendedYear": 4, "courseType": "major_elective", "group": "Year 4 option pool · complete at least 3 courses across SOWK4030 and the published Seminar options" },
+        { "code": "SOWK4510", "title": "Seminar I: Family Centered Social Work", "credits": 3, "recommendedYear": 4, "courseType": "major_elective", "group": "Year 4 option pool · complete at least 3 courses across SOWK4030 and the published Seminar options" },
+        { "code": "SOWK4520", "title": "Seminar II: Social Work with Young People", "credits": 3, "recommendedYear": 4, "courseType": "major_elective", "group": "Year 4 option pool · complete at least 3 courses across SOWK4030 and the published Seminar options" },
+        { "code": "SOWK4530", "title": "Seminar III: Social Work with Older People", "credits": 3, "recommendedYear": 4, "courseType": "major_elective", "group": "Year 4 option pool · complete at least 3 courses across SOWK4030 and the published Seminar options" },
+        { "code": "SOWK4540", "title": "Seminar IV: Social Work with People with Special Needs", "credits": 3, "recommendedYear": 4, "courseType": "major_elective", "group": "Year 4 option pool · complete at least 3 courses across SOWK4030 and the published Seminar options" },
+        { "code": "SOWK4550", "title": "Seminar V: Poverty and Social Exclusion", "credits": 3, "recommendedYear": 4, "courseType": "major_elective", "group": "Year 4 option pool · complete at least 3 courses across SOWK4030 and the published Seminar options" },
+        { "code": "SOWK4570", "title": "Seminar VII: Art-based Social Work Practice", "credits": 3, "recommendedYear": 4, "courseType": "major_elective", "group": "Year 4 option pool · complete at least 3 courses across SOWK4030 and the published Seminar options" },
+        { "code": "SOWK4580", "title": "Seminar VIII: Gender and Sexuality in Social Work Practice", "credits": 0, "recommendedYear": 4, "courseType": "major_elective", "group": "Year 4 option pool · complete at least 3 courses across SOWK4030 and the published Seminar options · official Major table leaves units blank", "description": "The current official Major Course List publishes the code and title but leaves the units cell blank; 0 means unknown for local known-credit totals." },
+        { "code": "SOWK4590", "title": "Seminar IX: Family Therapy", "credits": 3, "recommendedYear": 4, "courseType": "major_elective", "group": "Year 4 option pool · complete at least 3 courses across SOWK4030 and the published Seminar options" },
+        { "code": "SOWK4591", "title": "Seminar X: Research Seminar", "credits": 3, "recommendedYear": 4, "courseType": "major_elective", "group": "Year 4 option pool · complete at least 3 courses across SOWK4030 and the published Seminar options" },
+        { "code": "SOWK4592", "title": "Seminar XI: Special Seminar", "credits": 3, "recommendedYear": 4, "courseType": "major_elective", "group": "Year 4 option pool · complete at least 3 courses across SOWK4030 and the published Seminar options" }
+      ]
+    }
+  ]
+}
