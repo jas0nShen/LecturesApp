@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-28T11:16:26.329Z",
+  "generatedAt": "2026-07-28T11:54:58.240Z",
   "universities": [
     {
       "id": "HKU",
@@ -4771,9 +4771,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/socin/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 62,
+      "codedCourseCount": 62,
+      "courseSourceUrl": "https://www.soc.cuhk.edu.hk/wp-content/uploads/2025/08/SOCIN_ENG_25.docx"
     },
     {
       "id": "CUHK-UG-URSPN-84",
@@ -11417,8 +11418,8 @@ const catalogue = {
       "code": "SOCIOLOGY",
       "nameEn": "Sociology",
       "nameZh": "Sociology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 63,
+      "codedCourseCount": 62,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/socin/"
     },
     {
@@ -16134,7 +16135,7 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 3056,
-    "CUHK": 1251,
+    "CUHK": 1313,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
@@ -16142,7 +16143,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 19153
+  "codedCourseCount": 19215
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
