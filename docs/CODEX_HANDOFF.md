@@ -17,8 +17,10 @@
 - 1.0.12 已补充 HKU 商科、经济、统计、会计及法学双学位官方课程清单，并对规则未闭合 Programme 保持只读浏览，不显示未经核验的毕业完成比例。
 - HKU 商科与法学批次由提交 `7c2e66f` 发布；HKU `6688 Science Master Class` 与 `6901 Bachelor of Science` 批次由提交 `c1076cf` 发布；HKU `6987 Computer Engineering / Electrical Engineering / Electronic Engineering` 三 Major 与 HKU `6925` / `6858` / `6897` 来源审查由提交 `8fa7ce8 Expand HKU engineering curricula for 1.0.12` 发布。
 - 包版本：`1.0.12`
-- 当前课程提交 `0cb0e93` 已推送到 `origin/main`；其 source supplement、生成 catalogue/shards/分包和测试均已推送。
-- 当前 1.0.12 微信开发版已包含 CUHK `ENGEN English` 57 门课程，以及 `CHPRN Community Health Practice` / `BSCGB Gerontology` 官方来源审查；当前已上传代码指标为 18,827 条 UG 课程、286 个已开放 Programme 和 961/961 测试。
+- 当前课程提交 `d4e873c` 已推送到 `origin/main`；其 source supplement、生成 catalogue/shards/分包和测试均已推送。
+- 当前 Git 代码已包含 CUHK `JASPN Japanese Studies` 58 门 Major-assigned JASP 课程；标准、Local、Stream、senior-entry 与 double-Major 路径未完整闭合，因此保持只读浏览，不生成毕业完成百分比。
+- 当前 Git 代码也已包含 CUHK `RELSN Religious Studies` 63 门 Religious Studies Area 课程；标准与 senior-entry 路径因 Cultural Studies 和跨院 Concentration 开放池未闭合而保持只读浏览。
+- 当前 1.0.12 微信开发版仍停留在 CUHK `ENGEN English` 批次，指标为 18,827 条 UG 课程、286 个已开放 Programme 和 961/961 测试。提交 `d4e873c` 的上传尝试因登录态过期返回 code 10；随后一次二维码登录返回 code 25 超时，第二次登录在手机端未确认且二维码界面持续加载后手动停止，因此 `JASPN` 与 `RELSN` 批次均尚未上传。
 - 本批开放 HKU `6755` 其余 BBA Major、`6767` Economics、`6779` Statistical Decision Sciences、`6781` Accounting、`6896` IBGM、Asset Management and Private Banking、Quantitative Finance、Business Analytics、Marketing Analytics and Technology，以及 `6808` / `6810` 两个 Law double degree 的官方可核验课程。
 - `6808` 与 `6810` 的 Law elective universe 未由 Programme-specific 来源闭合，因此只发布已核验代码供只读浏览，不生成完整毕业结构或完成百分比。
 - 旧单一 `ug-data-hku`、`ug-data-hkbu` 已由生成脚本替换；当前工作区 HKU 使用 `ug-data-hku-a` / `ug-data-hku-b` / `ug-data-hku-c` 三分包，HKBU 使用 `ug-data-hkbu-a` / `ug-data-hkbu-b` 双分包。不要手工恢复旧 loader。
@@ -35,6 +37,9 @@
 最近关键提交（本次交接提交前）：
 
 ```text
+d4e873c Add CUHK Religious Studies curriculum
+3ea4b89 Add CUHK Japanese Studies curriculum
+7eba274 Document CUHK English upload
 0cb0e93 Add CUHK English curriculum for 1.0.12
 59ea157 Document CUHK curricula upload
 7ac01a2 Add CUHK public history and early childhood curricula
@@ -141,7 +146,9 @@ df91815 Add PolyU Design curriculum and source evidence
 - PolyU `POLYU-TPG-074 Master of Science in Advanced Physiotherapy` 继续 `blocked`：同一 Programme 的 2026/27 官方页面明确 `RS567 Project Study` 为 6 credits，但 2027/28 Programme 页面、现行 2026-or-after Curriculum 图和 v14 leaflet 都未重申代码，且没有公开的当前 51069 PRD/SDF；不跨学年搬运 `RS567`。
 - PolyU `POLYU-TPG-011 Master of Science in Low-altitude Economy` 继续 `blocked`：2027 Programme 页面已闭合 8 门 Core、7 门 Elective 和两条 31-credit 路径，但官方 PRD、当前 AAE Subject List 及 2026/27 leaflet 均未发布 9-credit Dissertation 的课程代码；不从其他 Programme 类推 Dissertation code。
 - 已补充 HKU `HKU-TPG-055 Master of Public Administration` 当前 60-credit 结构：4 门 Compulsory 共 24 credits、24 门内部 Elective 通常选 4 门共 24 credits，以及 12-credit `POLI8012 Dissertation` / `POLI8028 Capstone project` 二选一，共 30 个唯一代码。正式 Regulations 与专用 Course Descriptions 均确认 `POLI8032` 为 6 credits；最多 6 credits 的获批 MIPA 替代及完成路径继续标记 `manual_review_required`。
-- 当前工作区 UG：8 所学校、444 个 Programme、686 个 Major/Track、Programme/Major-local 带代码课程共 18,827 条；286 个 Programme 已开放课程代码。
+- 当前工作区 UG：8 所学校、444 个 Programme、686 个 Major/Track、Programme/Major-local 带代码课程共 18,948 条；288 个 Programme 已开放课程代码。
+- 已补充 CUHK `RELSN Religious Studies` 适用于 2025-26 入学者的 63 门 Religious Studies Area 课程：19 门 Required/Required-choice、2 门 Capstone 和 42 门 Major Elective，全部由当前 Study Scheme 闭合代码、标题、3-unit 学分、Area 与 Concentration 角色。标准 Major 为 66 units，senior-entry 为 51 units；标准路径要求的两门 Cultural Studies Area Elective、跨院 Faculty Package、四个 Concentration 的外系开放池、课程复用限制及最多五门额外 THEO 规则未完整导入，因此仅提供只读浏览，不生成毕业完成百分比。
+- 已补充 CUHK `JASPN Japanese Studies` 适用于 2025-26 入学者的 58 门 Major-assigned JASP 课程：8 门 Required、2 门 Capstone 和 48 门 Major Elective，并保留三条 Stream、resident-study 前开课、推荐 Year/Term 和逐课 units。标准 Major 与 Local Study Scheme 均为 66 units，Stream 路径为 72 units；51-unit senior-entry、90-unit Japanese Studies and History double Major、跨院系 Faculty Package/Elective、exchange 与语言替代规则未完整闭合，因此仅提供只读浏览，不生成毕业完成百分比。
 - 已补充 CUHK `ENGEN English` 当前 Department Course List 与适用于 2026-27 及以后入学者的 Major Programme Requirement：当前共 57 门 `ENGE` 课程，包括 `ENGE1000` Faculty Package、7 门 Required 和 49 门 Major Elective；Creative Writing Stream 的两门 Required 与七选四路径保留在课程分组证据中。官方 66-unit Major 另含两门只显示缩写代码、未发布标题的 Faculty Package 选择，因此本地只开放已闭合代码、标题和 units 的 57 门只读课程，不生成完整毕业完成百分比。
 - CUHK `CHPRN Community Health Practice` 与 `BSCGB Gerontology` 继续仅索引：官方 Programme 页面分别确认两年制 articulation honours programme、至少 69 units，以及 220 小时 supervised field work / 180 小时 Gerontological Practicum；页面虽显示 AY2025-26 与 AY2022-23 Course List 标题，但公开正文和页面资源均没有课程代码、标题、units 或分组表。两项已记录为 `no_public_course_codes`，不从总学分反推逐课学分，也不复制相似 Public Health 课程。
 - 已补充 CUHK `SOCIN-SSD Society and Sustainable Development` 的 33 门唯一 Sociology 课程，包括 10 门 Required 和 24 个 Elective 选项中合并重复出现的 `SOCI4020`。官方公开页未逐课发布 units、Year 或 Term，因此全部保持未知；Earth System Science 与 Diversity cluster 尚未完成逐课交叉核验，没有导入。本 Programme 继续作为 partial read-only 课程清单，不生成毕业完成百分比。
@@ -243,7 +250,8 @@ df91815 Add PolyU Design curriculum and source evidence
 - 2026-07-28 已用 CUHK `GDRSN Gender Studies` 的 62 门课程覆盖上传同版本 `1.0.12`，备注为 `1.0.12: Add CUHK Gender Studies courses`，命令返回 `✔ upload`；实际上传包 17,432,373 bytes、主包 1,482,654 bytes，所有 22 个分包均低于 2 MB。
 - 2026-07-28 已用 CUHK `HISTN-PUH Public History` 与 `CHEDN Early Childhood Education` 课程覆盖上传同版本 `1.0.12`，备注为 `1.0.12: Add CUHK Public History and Early Childhood Education`，命令返回 `✔ upload`；实际上传包 17,464,660 bytes、主包 1,482,845 bytes，所有 22 个分包均低于 2 MB。
 - 2026-07-28 已用 CUHK `ENGEN English` 57 门课程覆盖上传同版本 `1.0.12`，备注为 `1.0.12: Add CUHK English curriculum`，命令返回 `✔ upload`；实际上传包 17,511,130 bytes、主包 1,483,018 bytes，所有 22 个分包均低于 2 MB。
-- 1.0.12 最新上传代码完整检查：961/961 测试通过、`ready=true`、主包预估 1,842,232 bytes，总估算包体 22,160,851 bytes，敏感 API 为 0。
+- 2026-07-28 提交 `d4e873c` 的 CUHK `JASPN Japanese Studies` 与 `RELSN Religious Studies` 代码已推送到 GitHub；本轮拟用备注为 `1.0.12: Add CUHK Religious Studies curriculum`。微信 CLI 上传因登录态过期返回 code 10；随后一次二维码登录返回 code 25 超时，第二次登录在手机端未确认且二维码界面持续加载后手动停止，因此本批尚未上传。
+- 当前 Git 代码完整检查：965/965 测试通过、`ready=true`、主包预估 1,842,483 bytes，总估算包体 22,272,932 bytes，所有 22 个分包低于 2 MB，敏感 API 为 0。
 - 微信开发者工具确认 PolyU Computer Science 可加载 83 门课程，首页入口序号为 `01 / 02 / 03 / 04`；模拟器测试结束后已恢复原 Architectural Studies 资料，`plannedUgCourseKeys`、`ugCoursePlanAssignments`、`completedUgCourseKeys` 均为空。
 - 微信官方 automation 已完成普通 `POLYU-TPG-090` 闭环：36 门课程、`COMP5521` 加入计划、列表状态、官方分组、标记已修、复制与移除均通过。
 - 多 Track `HKU-TPG-031` 验收通过：Generalist 计 1 门，Chinese Language Education 计 2 门；两条记录均保留，旧 Track 课程不计入 Generalist 当前统计。
@@ -256,12 +264,12 @@ df91815 Add PolyU Design curriculum and source evidence
 
 - 八校 TPG 已达到 100% source reviewed；没有剩余 `unreviewed` Programme。
 - 仍有 101 个 Programme 因官方公开来源缺代码、学分、Track 归属、最终审批或规则冲突而标记 `blocked`。除非出现新的官方证据，不应把它们当作待猜测补全项。
-- UG 来源覆盖报告仍有 158 个缺口：36 个 index-only、25 个 reviewed-no-codes、97 个 no-source。下一批继续从官方课程手册或部门课程页取证，不从 Programme 简介反推代码或规则。
+- UG 来源覆盖报告仍有 156 个缺口：36 个 index-only、25 个 reviewed-no-codes、95 个 no-source。下一批继续从官方课程手册或部门课程页取证，不从 Programme 简介反推代码或规则。
 - 多个已核验 TPG Programme 仍标记 `manual_review_required`，表示课程池可发布，但复杂路径/跨组最低要求不能由当前规则引擎自动证明。
 
 ### 发布与验收缺口
 
-- 仓库版本资料和微信已上传代码均为 `1.0.12`；上传不等于已提交审核。
+- 仓库版本资料与微信开发版版本号均为 `1.0.12`，但 Git 最新 `d4e873c` 的 `JASPN` / `RELSN` 批次尚未覆盖上传；上传不等于已提交审核。
 - `docs/RELEASE_CHECKLIST.md` 的 iOS/Android 真机矩阵没有完成记录。
 - 微信后台隐私声明、服务类目、备案、审核材料核对尚未在仓库中记录为完成。
 - 尚未提交微信审核，也没有发布正式版。
@@ -394,18 +402,18 @@ npm run check:ship: PASS
   UG supplement validation: PASS
   directory audit: PASS, blockingErrors=[]
   server --check: PASS
-  Node tests: PASS, 961/961
+  Node tests: PASS, 965/965
   check:release: PASS, ready=true
 
 git diff --check: PASS
 npm run status:tpg-courses -- --school=HKU: PASS (448/448 reviewed, 0 unreviewed)
-npm run status:ug-sources -- --missing-only --missing-summary --missing-limit 0: PASS (158 Programme-level source gaps: 36 index-only, 25 reviewed-no-codes, 97 no-source)
+npm run status:ug-sources -- --missing-only --missing-summary --missing-limit 0: PASS (156 Programme-level source gaps: 36 index-only, 25 reviewed-no-codes, 95 no-source)
 ```
 
 发布指标：
 
-- 当前代码主包预估：1,842,232 bytes。
-- 当前代码总估算包体：22,160,851 bytes，196 个上传文件。
+- 当前代码主包预估：1,842,483 bytes。
+- 当前代码总估算包体：22,272,932 bytes，196 个上传文件。
 - 最新上传 1.0.12 的 CLI 实际包：17,511,130 bytes；实际主包：1,483,018 bytes。
 - 当前 22 个 UG/TPG 分包均低于 2 MB；最大为 `ug-data-hku-a` 1,869,435 bytes。
 - 页面：17；敏感 API：0。
