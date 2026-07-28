@@ -1,0 +1,2716 @@
+{
+  "provider": "HKU Faculty of Engineering BEng(CE/EE/ElecE) Syllabus",
+  "academicYear": "2025-26 and thereafter (subject to approval)",
+  "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+  "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-engineering-computer-engineering-electrical",
+  "note": "The official syllabus applies to 2025-26 entrants and thereafter, so it covers the 2026 cohort. The aggregate 6987 admission entry is represented as three isolated selectable Majors. Each list contains its own fixed Engineering Core, Discipline Core, complete published A-E/I/J Discipline Elective universe, optional Focus memberships, compulsory internship and capstone. The Focus tables also name seven courses outside A-E/I/J; their credits are cross-checked against current official HKU CDS course pages or the official BEng(ME) syllabus before inclusion. The open general Elective category, Common Core, unnamed second AILT course, approved MSc choices and other non-credit University requirements are excluded. A course appearing in an official subject group but already compulsory for a Major is kept only as Core for that Major and is not double-counted as an elective.",
+  "supplements": [
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6987",
+      "programmeId": "HKU-UG-6987-124",
+      "majorId": "HKU-UG-6987-124-M1",
+      "majorOverride": {
+        "expectedMajorIds": [
+          "HKU-UG-6987-124-M1"
+        ],
+        "id": "HKU-UG-6987-124-M1",
+        "code": "COMPUTER-ENGINEERING",
+        "nameEn": "Computer Engineering",
+        "nameZh": "Computer Engineering"
+      },
+      "evidenceNote": "The official 2025-26 Computer Engineering syllabus applies to students admitted in 2025-26 and thereafter and publishes the complete 240-credit category structure, fixed core, Discipline Elective groups, optional Focuses, internship and capstone. Focus-only COMP/FITE credits are cross-checked against the official 2025-26 School of Computing and Data Science course pages; MECH3430 and MECH3431 credits are cross-checked against the official BEng(ME) 2025-26 syllabus. Open general Electives, Common Core, the unnamed second AILT course, approved MSc choices and non-credit University requirements are excluded rather than fabricated.",
+      "courses": [
+        {
+          "code": "CAES1001",
+          "title": "Academic communication in English",
+          "credits": 0,
+          "courseType": "foundation",
+          "group": "Computer Engineering - explicit UG5 requirement; Common Core, the unnamed second AILT course and other non-credit University requirements are excluded",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "CAES9541",
+          "title": "Technical English for electrical and electronic engineering",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Computer Engineering - explicit UG5 requirement; Common Core, the unnamed second AILT course and other non-credit University requirements are excluded",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "CENG9001",
+          "title": "Practical Chinese for engineering students",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Computer Engineering - explicit UG5 requirement; Common Core, the unnamed second AILT course and other non-credit University requirements are excluded",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "AILT1001",
+          "title": "Artificial intelligence literacy I",
+          "credits": 3,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Computer Engineering - explicit UG5 requirement; Common Core, the unnamed second AILT course and other non-credit University requirements are excluded",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "MATH1851",
+          "title": "Calculus and ordinary differential equations",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Computer Engineering - required Engineering Core / 42 credits",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "MATH1853",
+          "title": "Linear algebra, probability & statistics",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Computer Engineering - required Engineering Core / 42 credits",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ENGG1101",
+          "title": "Engineering challenges",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Computer Engineering - required Engineering Core / 42 credits",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ENGG1300",
+          "title": "Fundamental mechanics",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Computer Engineering - required Engineering Core / 42 credits",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ENGG1310",
+          "title": "Electricity & electronics",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Computer Engineering - required Engineering Core / 42 credits",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ENGG1330",
+          "title": "Computer programming I",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Computer Engineering - required Engineering Core / 42 credits",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP1117 or ENGG1111 or IIMT2602"
+        },
+        {
+          "code": "COMP2113",
+          "title": "Programming technologies",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Computer Engineering - required Engineering Core / 42 credits",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "ENGG1340 or COMP2123"
+        },
+        {
+          "code": "COMP2119",
+          "title": "Introduction to data structures and algorithms",
+          "credits": 6,
+          "recommendedYear": 2,
+          "courseType": "core",
+          "group": "Computer Engineering - required Introductory Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "COMP2121",
+          "title": "Discrete mathematics",
+          "credits": 6,
+          "recommendedYear": 2,
+          "courseType": "core",
+          "group": "Computer Engineering - required Introductory Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "MATH3600"
+        },
+        {
+          "code": "ELEC2346",
+          "title": "Electric circuit theory",
+          "credits": 6,
+          "recommendedYear": 2,
+          "courseType": "core",
+          "group": "Computer Engineering - required Introductory Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC2441",
+          "title": "Computer organization and microprocessors",
+          "credits": 6,
+          "recommendedYear": 2,
+          "courseType": "core",
+          "group": "Computer Engineering - required Introductory Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP2120"
+        },
+        {
+          "code": "ELEC2840",
+          "title": "Engineering training",
+          "credits": 6,
+          "recommendedYear": 2,
+          "courseType": "core",
+          "group": "Computer Engineering - required Introductory Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC2844",
+          "title": "Probabilistic systems analysis",
+          "credits": 6,
+          "recommendedYear": 2,
+          "courseType": "core",
+          "group": "Computer Engineering - required Introductory Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "STAT2601"
+        },
+        {
+          "code": "COMP3230",
+          "title": "Principles of operating systems",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Computer Engineering - required Advanced Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "ELEC3541"
+        },
+        {
+          "code": "ELEC3443",
+          "title": "Computer networks",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Computer Engineering - required Advanced Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP3234"
+        },
+        {
+          "code": "ELEC3544",
+          "title": "Data science with foundation models",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Computer Engineering - required Advanced Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3342",
+          "title": "Digital system design",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Computer Engineering - required Advanced Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3844",
+          "title": "Engineering management and society",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Computer Engineering - required Advanced Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3848",
+          "title": "Integrated design project",
+          "credits": 6,
+          "recommendedYear": 3,
+          "courseType": "core",
+          "group": "Computer Engineering - required Advanced Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3442",
+          "title": "Embedded systems",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Computer Engineering - required Advanced Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3841",
+          "title": "Internship",
+          "credits": 0,
+          "recommendedYear": 3,
+          "courseType": "internship",
+          "group": "Computer Engineering - compulsory non-credit-bearing Internship",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4848",
+          "title": "Senior design project",
+          "credits": 12,
+          "recommendedYear": 4,
+          "courseType": "capstone",
+          "group": "Computer Engineering - compulsory Capstone Experience / 12 credits",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC2147",
+          "title": "Electrical energy technology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group A Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "MECH2406"
+        },
+        {
+          "code": "ELEC3141",
+          "title": "Power transmission and distribution",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group A Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3142",
+          "title": "Electrical energy conversion",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group A Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3143",
+          "title": "Power electronics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group A Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3152",
+          "title": "Metropolitan mass transportation",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group A Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4141",
+          "title": "Electric railway systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group A Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4142",
+          "title": "Power system protection and switchgear",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group A Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4144",
+          "title": "Electric vehicle technology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group A Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4145",
+          "title": "Building services - electrical services",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group A Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4146",
+          "title": "Building services - electrical installations",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group A Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4147",
+          "title": "Power system analysis and control",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group A Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4148",
+          "title": "Smart grid and renewable energy systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group A Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4149",
+          "title": "Basic lighting engineering",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group A Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4151",
+          "title": "Hybrid electric propulsion technology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group A Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC2347",
+          "title": "Fundamentals of optics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group B Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3347",
+          "title": "Electronic materials and quantum physics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group B Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3349",
+          "title": "Optical devices",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group B Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3350",
+          "title": "Electronic circuits and devices I",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group B Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3351",
+          "title": "Electronic circuits and devices II",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group B Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4248",
+          "title": "Photonic systems technologies",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group B Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4251",
+          "title": "Microscopy",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group B Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4342",
+          "title": "Embedded machine learning: A software-hardware design flow",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group B Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4343",
+          "title": "Design of digital integrated circuits",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group B Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Ambient Computing; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4344",
+          "title": "Advanced electronic circuits",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group B Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4642",
+          "title": "VLSI design principles",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group B Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Ambient Computing; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC2245",
+          "title": "Control systems I",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group C Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3241",
+          "title": "Signals and linear systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group C Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3244",
+          "title": "Digital signal processing",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group C Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3249",
+          "title": "Pattern recognition and machine intelligence",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group C Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Robotic & Autonomous Systems; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3255",
+          "title": "Control systems II",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group C Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Robotic & Autonomous Systems; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4244",
+          "title": "Multimedia signals and applications",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group C Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Ambient Computing; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP3315"
+        },
+        {
+          "code": "ELEC4245",
+          "title": "Digital image processing",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group C Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Ambient Computing; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4252",
+          "title": "Robotic control and vision",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group C Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC2243",
+          "title": "Introduction to electricity and magnetism",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group D Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3243",
+          "title": "Fundamentals of next-generation communications",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group D Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3248",
+          "title": "Engineering electromagnetism and antenna design",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group D Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4241",
+          "title": "Communication systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group D Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4253",
+          "title": "Wireless communications",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group D Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4254",
+          "title": "Microwave and RF engineering",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group D Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4256",
+          "title": "Wireless networking in the era of machine learning",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group D Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4257",
+          "title": "Telecommunications systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group D Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4442",
+          "title": "Advanced networking technologies",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group D Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC2543",
+          "title": "Object-oriented programming and data structures",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group E Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP2119"
+        },
+        {
+          "code": "ELEC2544",
+          "title": "Introduction to electronic commerce and financial technology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group E Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3441",
+          "title": "Computer architecture",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group E Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP3231"
+        },
+        {
+          "code": "ELEC3541",
+          "title": "Software engineering and operating systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group E Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP3230 and COMP3297"
+        },
+        {
+          "code": "ELEC3542",
+          "title": "Advanced programming and application development",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group E Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3543",
+          "title": "Advanced systems programming",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group E Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Big Data Processing; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3545",
+          "title": "Introduction to embodied artificial intelligence",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group E Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3641",
+          "title": "Human computer interaction",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group E Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3643",
+          "title": "Systems and network programming",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group E Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP3402"
+        },
+        {
+          "code": "ELEC3644",
+          "title": "Advanced mobile apps development",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group E Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Ambient Computing; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4542",
+          "title": "Introduction to deep learning for computer vision",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group E Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Robotic & Autonomous Systems; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP3340"
+        },
+        {
+          "code": "ELEC4543",
+          "title": "Fuzzy systems and neural networks",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group E Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4544",
+          "title": "Artificial intelligence and deep learning",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group E Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Big Data Processing; Robotic & Autonomous Systems; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4545",
+          "title": "Time series analysis with financial applications",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group E Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4546",
+          "title": "Investment and trading for engineering students",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group E Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4547",
+          "title": "Emerging technology for VR/AR",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group E Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Robotic & Autonomous Systems; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4640",
+          "title": "Distributed computing systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group E Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Big Data Processing; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4641",
+          "title": "Computer network security",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group E Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP3355"
+        },
+        {
+          "code": "ELEC2843",
+          "title": "Multivariable calculus and elementary partial differential equations",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group I Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC2845",
+          "title": "Applied optimization and applications",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group I Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "ELEC3846 and COMP3407"
+        },
+        {
+          "code": "MECH3407",
+          "title": "Advanced partial differential equations & complex variables",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group I Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3846",
+          "title": "Numerical methods and optimization",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group I Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP3407"
+        },
+        {
+          "code": "ELEC4745",
+          "title": "Queueing theory",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group I Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "COMP2396",
+          "title": "Object-oriented programming and Java",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group J Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "ELEC2543 or FITE2000"
+        },
+        {
+          "code": "COMP3234",
+          "title": "Computer and communication networks",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group J Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "ELEC3443"
+        },
+        {
+          "code": "COMP3235",
+          "title": "Compiling techniques",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group J Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "COMP3278",
+          "title": "Introduction to database management systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group J Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "IIMT3601"
+        },
+        {
+          "code": "COMP3297",
+          "title": "Software engineering",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group J Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "IIMT3602"
+        },
+        {
+          "code": "COMP3322",
+          "title": "Modern technologies on World Wide Web",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group J Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "IIMT3663"
+        },
+        {
+          "code": "COMP3323",
+          "title": "Advanced database systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group J Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Big Data Processing; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "FITE3010"
+        },
+        {
+          "code": "COMP3329",
+          "title": "Computer game design and programming",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group J Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "COMP3352",
+          "title": "Algorithmic game theory",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group J Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "COMP3354",
+          "title": "Statistical learning",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group J Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "COMP3355",
+          "title": "Cyber security",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group J Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "ELEC4641"
+        },
+        {
+          "code": "COMP3407",
+          "title": "Scientific computing",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - Group J Discipline Elective. Complete 30 credits of Discipline Electives: 12 credits of advanced courses from Groups E and J, plus 18 credits from Groups A, B, C, D, E, I and J. The separate 24-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Big Data Processing; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "COMP3270",
+          "title": "Artificial intelligence",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - published optional Focus course outside Groups A-E/I/J. Optional Focus membership: Ambient Computing; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3270.html",
+          "prerequisites": "COMP2118 or COMP2119 or COMP2502 or FITE2000",
+          "exclusions": "ELEC4544 or IIMT3688"
+        },
+        {
+          "code": "COMP3314",
+          "title": "Machine learning",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - published optional Focus course outside Groups A-E/I/J. Optional Focus membership: Ambient Computing; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3314.html",
+          "prerequisites": "COMP2118 or COMP2119 or COMP2502 or ELEC2543 or FITE2000; and MATH1013 or MATH1853 or MATH2014"
+        },
+        {
+          "code": "COMP3358",
+          "title": "Distributed and parallel computing",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - published optional Focus course outside Groups A-E/I/J. Optional Focus membership: Big Data Processing; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3358.html",
+          "prerequisites": "COMP3230 or COMP3234"
+        },
+        {
+          "code": "FITE3010",
+          "title": "Big data and data mining",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - published optional Focus course outside Groups A-E/I/J. Optional Focus membership: Big Data Processing; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/fite3010.html",
+          "prerequisites": "FITE1010 or MATH1013 or MATH1853 or MATH2101; and COMP2119 or COMP2502 or ELEC2543 or FITE2000",
+          "exclusions": "COMP3323"
+        },
+        {
+          "code": "COMP3356",
+          "title": "Robotics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Computer Engineering - published optional Focus course outside Groups A-E/I/J. Optional Focus membership: Robotic & Autonomous Systems; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2025/comp3356.html",
+          "prerequisites": "MATH1013 or MATH1853 or MATH2014; and COMP2121 or SDST2601 or STAT2601; and COMP2118 or COMP2119 or FITE2000"
+        }
+      ]
+    },
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6987",
+      "programmeId": "HKU-UG-6987-124",
+      "majorId": "HKU-UG-6987-124-M2",
+      "createMajor": {
+        "id": "HKU-UG-6987-124-M2",
+        "code": "ELECTRICAL-ENGINEERING",
+        "nameEn": "Electrical Engineering",
+        "nameZh": "Electrical Engineering"
+      },
+      "evidenceNote": "The official 2025-26 Electrical Engineering syllabus applies to students admitted in 2025-26 and thereafter and publishes the complete 240-credit category structure, fixed core, Discipline Elective groups, optional Focuses, internship and capstone. Focus-only COMP/FITE credits are cross-checked against the official 2025-26 School of Computing and Data Science course pages; MECH3430 and MECH3431 credits are cross-checked against the official BEng(ME) 2025-26 syllabus. Open general Electives, Common Core, the unnamed second AILT course, approved MSc choices and non-credit University requirements are excluded rather than fabricated.",
+      "courses": [
+        {
+          "code": "CAES1001",
+          "title": "Academic communication in English",
+          "credits": 0,
+          "courseType": "foundation",
+          "group": "Electrical Engineering - explicit UG5 requirement; Common Core, the unnamed second AILT course and other non-credit University requirements are excluded",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "CAES9541",
+          "title": "Technical English for electrical and electronic engineering",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Electrical Engineering - explicit UG5 requirement; Common Core, the unnamed second AILT course and other non-credit University requirements are excluded",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "CENG9001",
+          "title": "Practical Chinese for engineering students",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Electrical Engineering - explicit UG5 requirement; Common Core, the unnamed second AILT course and other non-credit University requirements are excluded",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "AILT1001",
+          "title": "Artificial intelligence literacy I",
+          "credits": 3,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Electrical Engineering - explicit UG5 requirement; Common Core, the unnamed second AILT course and other non-credit University requirements are excluded",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "MATH1851",
+          "title": "Calculus and ordinary differential equations",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Electrical Engineering - required Engineering Core / 42 credits",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "MATH1853",
+          "title": "Linear algebra, probability & statistics",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Electrical Engineering - required Engineering Core / 42 credits",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ENGG1101",
+          "title": "Engineering challenges",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Electrical Engineering - required Engineering Core / 42 credits",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ENGG1300",
+          "title": "Fundamental mechanics",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Electrical Engineering - required Engineering Core / 42 credits",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ENGG1310",
+          "title": "Electricity & electronics",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Electrical Engineering - required Engineering Core / 42 credits",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ENGG1330",
+          "title": "Computer programming I",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Electrical Engineering - required Engineering Core / 42 credits",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP1117 or ENGG1111 or IIMT2602"
+        },
+        {
+          "code": "COMP2113",
+          "title": "Programming technologies",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Electrical Engineering - required Engineering Core / 42 credits",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "ENGG1340 or COMP2123"
+        },
+        {
+          "code": "ELEC2147",
+          "title": "Electrical energy technology",
+          "credits": 6,
+          "recommendedYear": 2,
+          "courseType": "core",
+          "group": "Electrical Engineering - required Introductory Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "MECH2406"
+        },
+        {
+          "code": "ELEC2243",
+          "title": "Introduction to electricity and magnetism",
+          "credits": 6,
+          "recommendedYear": 2,
+          "courseType": "core",
+          "group": "Electrical Engineering - required Introductory Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC2346",
+          "title": "Electric circuit theory",
+          "credits": 6,
+          "recommendedYear": 2,
+          "courseType": "core",
+          "group": "Electrical Engineering - required Introductory Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC2441",
+          "title": "Computer organization and microprocessors",
+          "credits": 6,
+          "recommendedYear": 2,
+          "courseType": "core",
+          "group": "Electrical Engineering - required Introductory Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP2120"
+        },
+        {
+          "code": "ELEC2840",
+          "title": "Engineering training",
+          "credits": 6,
+          "recommendedYear": 2,
+          "courseType": "core",
+          "group": "Electrical Engineering - required Introductory Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC2843",
+          "title": "Multivariable calculus and elementary partial differential equations",
+          "credits": 6,
+          "recommendedYear": 2,
+          "courseType": "core",
+          "group": "Electrical Engineering - required Introductory Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3141",
+          "title": "Power transmission and distribution",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Electrical Engineering - required Advanced Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3142",
+          "title": "Electrical energy conversion",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Electrical Engineering - required Advanced Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3143",
+          "title": "Power electronics",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Electrical Engineering - required Advanced Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3241",
+          "title": "Signal and linear systems",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Electrical Engineering - required Advanced Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3844",
+          "title": "Engineering management and society",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Electrical Engineering - required Advanced Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3848",
+          "title": "Integrated design project",
+          "credits": 6,
+          "recommendedYear": 3,
+          "courseType": "core",
+          "group": "Electrical Engineering - required Advanced Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3841",
+          "title": "Internship",
+          "credits": 0,
+          "recommendedYear": 3,
+          "courseType": "internship",
+          "group": "Electrical Engineering - compulsory non-credit-bearing Internship",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4848",
+          "title": "Senior design project",
+          "credits": 12,
+          "recommendedYear": 4,
+          "courseType": "capstone",
+          "group": "Electrical Engineering - compulsory Capstone Experience / 12 credits",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3152",
+          "title": "Metropolitan mass transportation",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group A Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4141",
+          "title": "Electric railway systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group A Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Modern Electric Transportation; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4142",
+          "title": "Power system protection and switchgear",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group A Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Smart Power Systems; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4144",
+          "title": "Electric vehicle technology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group A Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Modern Electric Transportation; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4145",
+          "title": "Building services - electrical services",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group A Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Intelligent Built Environment; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4146",
+          "title": "Building services - electrical installations",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group A Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Modern Electric Transportation; Intelligent Built Environment; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4147",
+          "title": "Power system analysis and control",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group A Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Smart Power Systems; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4148",
+          "title": "Smart grid and renewable energy systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group A Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Smart Power Systems; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4149",
+          "title": "Basic lighting engineering",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group A Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Intelligent Built Environment; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4151",
+          "title": "Hybrid electric propulsion technology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group A Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Modern Electric Transportation; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC2347",
+          "title": "Fundamentals of optics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group B Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3342",
+          "title": "Digital system design",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group B Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3347",
+          "title": "Electronic materials and quantum physics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group B Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3349",
+          "title": "Optical devices",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group B Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3350",
+          "title": "Electronic circuits and devices I",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group B Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3351",
+          "title": "Electronic circuits and devices II",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group B Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4248",
+          "title": "Photonic systems technologies",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group B Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4251",
+          "title": "Microscopy",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group B Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4342",
+          "title": "Embedded machine learning: A software-hardware design flow",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group B Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4343",
+          "title": "Design of digital integrated circuits",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group B Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4344",
+          "title": "Advanced electronic circuits",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group B Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4642",
+          "title": "VLSI design principles",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group B Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC2245",
+          "title": "Control systems I",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group C Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3244",
+          "title": "Digital signal processing",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group C Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3249",
+          "title": "Pattern recognition and machine intelligence",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group C Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3255",
+          "title": "Control systems II",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group C Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4244",
+          "title": "Multimedia signals and applications",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group C Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP3315"
+        },
+        {
+          "code": "ELEC4245",
+          "title": "Digital image processing",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group C Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4252",
+          "title": "Robotic control and vision",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group C Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3243",
+          "title": "Fundamentals of next-generation communications",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group D Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3248",
+          "title": "Engineering electromagnetism and antenna design",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group D Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3443",
+          "title": "Computer networks",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group D Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP3234"
+        },
+        {
+          "code": "ELEC4241",
+          "title": "Communication systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group D Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4253",
+          "title": "Wireless communications",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group D Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4254",
+          "title": "Microwave and RF engineering",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group D Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4256",
+          "title": "Wireless networking in the era of machine learning",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group D Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4257",
+          "title": "Telecommunications systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group D Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4442",
+          "title": "Advanced networking technologies",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group D Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC2543",
+          "title": "Object-oriented programming and data structures",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group E Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP2119"
+        },
+        {
+          "code": "ELEC2544",
+          "title": "Introduction to electronic commerce and financial technology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group E Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3441",
+          "title": "Computer architecture",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group E Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP3231"
+        },
+        {
+          "code": "ELEC3442",
+          "title": "Embedded systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group E Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3541",
+          "title": "Software engineering and operating systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group E Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP3230 and COMP3297"
+        },
+        {
+          "code": "ELEC3542",
+          "title": "Advanced programming and application development",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group E Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3543",
+          "title": "Advanced systems programming",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group E Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3544",
+          "title": "Data science with foundation models",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group E Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3545",
+          "title": "Introduction to embodied artificial intelligence",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group E Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3641",
+          "title": "Human computer interaction",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group E Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3643",
+          "title": "Systems and network programming",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group E Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP3402"
+        },
+        {
+          "code": "ELEC3644",
+          "title": "Advanced mobile apps development",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group E Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4542",
+          "title": "Introduction to deep learning for computer vision",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group E Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP3340"
+        },
+        {
+          "code": "ELEC4543",
+          "title": "Fuzzy systems and neural networks",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group E Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4544",
+          "title": "Artificial intelligence and deep learning",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group E Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4545",
+          "title": "Time series analysis with financial applications",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group E Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4546",
+          "title": "Investment and trading for engineering students",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group E Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4547",
+          "title": "Emerging technology for VR/AR",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group E Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4640",
+          "title": "Distributed computing systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group E Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4641",
+          "title": "Computer network security",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group E Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP3355"
+        },
+        {
+          "code": "COMP2121",
+          "title": "Discrete mathematics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group I Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "MATH3600"
+        },
+        {
+          "code": "ELEC2844",
+          "title": "Probabilistic systems analysis",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group I Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "STAT2601"
+        },
+        {
+          "code": "ELEC2845",
+          "title": "Applied optimization and applications",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group I Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "ELEC3846 and COMP3407"
+        },
+        {
+          "code": "MECH3407",
+          "title": "Advanced partial differential equations & complex variables",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group I Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3846",
+          "title": "Numerical methods and optimization",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group I Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP3407"
+        },
+        {
+          "code": "ELEC4745",
+          "title": "Queueing theory",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group I Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "COMP2119",
+          "title": "Introduction to data structures and algorithms",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group J Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "COMP2396",
+          "title": "Object-oriented programming and Java",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group J Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "ELEC2543 or FITE2000"
+        },
+        {
+          "code": "COMP3230",
+          "title": "Principles of operating systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group J Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "ELEC3541"
+        },
+        {
+          "code": "COMP3234",
+          "title": "Computer and communication networks",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group J Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "ELEC3443"
+        },
+        {
+          "code": "COMP3235",
+          "title": "Compiling techniques",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group J Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "COMP3278",
+          "title": "Introduction to database management systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group J Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "IIMT3601"
+        },
+        {
+          "code": "COMP3297",
+          "title": "Software engineering",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group J Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "IIMT3602"
+        },
+        {
+          "code": "COMP3322",
+          "title": "Modern technologies on World Wide Web",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group J Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "IIMT3663"
+        },
+        {
+          "code": "COMP3323",
+          "title": "Advanced database systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group J Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "FITE3010"
+        },
+        {
+          "code": "COMP3329",
+          "title": "Computer game design and programming",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group J Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "COMP3352",
+          "title": "Algorithmic game theory",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group J Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "COMP3354",
+          "title": "Statistical learning",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group J Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "COMP3355",
+          "title": "Cyber security",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group J Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "ELEC4641"
+        },
+        {
+          "code": "COMP3407",
+          "title": "Scientific computing",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - Group J Discipline Elective. Complete 48 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 18 advanced credits comprising one course from each of ELEC4142/ELEC4147, ELEC4146/ELEC4149 and ELEC4141/ELEC4144. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "MECH3430",
+          "title": "Fire protection in buildings",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - published optional Focus course outside Groups A-E/I/J. Optional Focus membership: Intelligent Built Environment; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(ME)_2025-26.pdf"
+        },
+        {
+          "code": "MECH3431",
+          "title": "Utility services in buildings",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electrical Engineering - published optional Focus course outside Groups A-E/I/J. Optional Focus membership: Intelligent Built Environment; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(ME)_2025-26.pdf"
+        }
+      ]
+    },
+    {
+      "universityCode": "HKU",
+      "programmeCode": "6987",
+      "programmeId": "HKU-UG-6987-124",
+      "majorId": "HKU-UG-6987-124-M3",
+      "createMajor": {
+        "id": "HKU-UG-6987-124-M3",
+        "code": "ELECTRONIC-ENGINEERING",
+        "nameEn": "Electronic Engineering",
+        "nameZh": "Electronic Engineering"
+      },
+      "evidenceNote": "The official 2025-26 Electronic Engineering syllabus applies to students admitted in 2025-26 and thereafter and publishes the complete 240-credit category structure, fixed core, Discipline Elective groups, optional Focuses, internship and capstone. Focus-only COMP/FITE credits are cross-checked against the official 2025-26 School of Computing and Data Science course pages; MECH3430 and MECH3431 credits are cross-checked against the official BEng(ME) 2025-26 syllabus. Open general Electives, Common Core, the unnamed second AILT course, approved MSc choices and non-credit University requirements are excluded rather than fabricated.",
+      "courses": [
+        {
+          "code": "CAES1001",
+          "title": "Academic communication in English",
+          "credits": 0,
+          "courseType": "foundation",
+          "group": "Electronic Engineering - explicit UG5 requirement; Common Core, the unnamed second AILT course and other non-credit University requirements are excluded",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "CAES9541",
+          "title": "Technical English for electrical and electronic engineering",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Electronic Engineering - explicit UG5 requirement; Common Core, the unnamed second AILT course and other non-credit University requirements are excluded",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "CENG9001",
+          "title": "Practical Chinese for engineering students",
+          "credits": 6,
+          "courseType": "foundation",
+          "group": "Electronic Engineering - explicit UG5 requirement; Common Core, the unnamed second AILT course and other non-credit University requirements are excluded",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "AILT1001",
+          "title": "Artificial intelligence literacy I",
+          "credits": 3,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Electronic Engineering - explicit UG5 requirement; Common Core, the unnamed second AILT course and other non-credit University requirements are excluded",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "MATH1851",
+          "title": "Calculus and ordinary differential equations",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Electronic Engineering - required Engineering Core / 42 credits",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "MATH1853",
+          "title": "Linear algebra, probability & statistics",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Electronic Engineering - required Engineering Core / 42 credits",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ENGG1101",
+          "title": "Engineering challenges",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Electronic Engineering - required Engineering Core / 42 credits",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ENGG1300",
+          "title": "Fundamental mechanics",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Electronic Engineering - required Engineering Core / 42 credits",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ENGG1310",
+          "title": "Electricity & electronics",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Electronic Engineering - required Engineering Core / 42 credits",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ENGG1330",
+          "title": "Computer programming I",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Electronic Engineering - required Engineering Core / 42 credits",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP1117 or ENGG1111 or IIMT2602"
+        },
+        {
+          "code": "COMP2113",
+          "title": "Programming technologies",
+          "credits": 6,
+          "recommendedYear": 1,
+          "courseType": "foundation",
+          "group": "Electronic Engineering - required Engineering Core / 42 credits",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "ENGG1340 or COMP2123"
+        },
+        {
+          "code": "ELEC2147",
+          "title": "Electrical energy technology",
+          "credits": 6,
+          "recommendedYear": 2,
+          "courseType": "core",
+          "group": "Electronic Engineering - required Introductory Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "MECH2406"
+        },
+        {
+          "code": "ELEC2243",
+          "title": "Introduction to electricity and magnetism",
+          "credits": 6,
+          "recommendedYear": 2,
+          "courseType": "core",
+          "group": "Electronic Engineering - required Introductory Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC2346",
+          "title": "Electric circuit theory",
+          "credits": 6,
+          "recommendedYear": 2,
+          "courseType": "core",
+          "group": "Electronic Engineering - required Introductory Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC2441",
+          "title": "Computer organization and microprocessors",
+          "credits": 6,
+          "recommendedYear": 2,
+          "courseType": "core",
+          "group": "Electronic Engineering - required Introductory Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP2120"
+        },
+        {
+          "code": "ELEC2543",
+          "title": "Object-oriented programming and data structures",
+          "credits": 6,
+          "recommendedYear": 2,
+          "courseType": "core",
+          "group": "Electronic Engineering - required Introductory Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP2119"
+        },
+        {
+          "code": "ELEC2840",
+          "title": "Engineering training",
+          "credits": 6,
+          "recommendedYear": 2,
+          "courseType": "core",
+          "group": "Electronic Engineering - required Introductory Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC2843",
+          "title": "Multivariable calculus and elementary partial differential equations",
+          "credits": 6,
+          "recommendedYear": 2,
+          "courseType": "core",
+          "group": "Electronic Engineering - required Introductory Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3241",
+          "title": "Signal and linear systems",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Electronic Engineering - required Advanced Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3243",
+          "title": "Fundamentals of next-generation communications",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Electronic Engineering - required Advanced Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3350",
+          "title": "Electronic circuits and devices I",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Electronic Engineering - required Advanced Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3543",
+          "title": "Advanced systems programming",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Electronic Engineering - required Advanced Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3844",
+          "title": "Engineering management and society",
+          "credits": 6,
+          "courseType": "core",
+          "group": "Electronic Engineering - required Advanced Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3848",
+          "title": "Integrated design project",
+          "credits": 6,
+          "recommendedYear": 3,
+          "courseType": "core",
+          "group": "Electronic Engineering - required Advanced Discipline Core",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3841",
+          "title": "Internship",
+          "credits": 0,
+          "recommendedYear": 3,
+          "courseType": "internship",
+          "group": "Electronic Engineering - compulsory non-credit-bearing Internship",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4848",
+          "title": "Senior design project",
+          "credits": 12,
+          "recommendedYear": 4,
+          "courseType": "capstone",
+          "group": "Electronic Engineering - compulsory Capstone Experience / 12 credits",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3141",
+          "title": "Power transmission and distribution",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group A Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3142",
+          "title": "Electrical energy conversion",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group A Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3143",
+          "title": "Power electronics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group A Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3152",
+          "title": "Metropolitan mass transportation",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group A Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4141",
+          "title": "Electric railway systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group A Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4142",
+          "title": "Power system protection and switchgear",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group A Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4144",
+          "title": "Electric vehicle technology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group A Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4145",
+          "title": "Building services - electrical services",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group A Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4146",
+          "title": "Building services - electrical installations",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group A Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4147",
+          "title": "Power system analysis and control",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group A Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4148",
+          "title": "Smart grid and renewable energy systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group A Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4149",
+          "title": "Basic lighting engineering",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group A Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4151",
+          "title": "Hybrid electric propulsion technology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group A Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC2347",
+          "title": "Fundamentals of optics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group B Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3342",
+          "title": "Digital system design",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group B Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Nanoelectronics; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3347",
+          "title": "Electronic materials and quantum physics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group B Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Nanoelectronics; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3349",
+          "title": "Optical devices",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group B Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3351",
+          "title": "Electronic circuits and devices II",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group B Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Nanoelectronics; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4248",
+          "title": "Photonic systems technologies",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group B Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Next-generation communications; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4251",
+          "title": "Microscopy",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group B Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4342",
+          "title": "Embedded machine learning: A software-hardware design flow",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group B Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Data and AI systems; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4343",
+          "title": "Design of digital integrated circuits",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group B Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Nanoelectronics; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4344",
+          "title": "Advanced electronic circuits",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group B Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Nanoelectronics; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4642",
+          "title": "VLSI design principles",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group B Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Nanoelectronics; Data and AI systems; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC2245",
+          "title": "Control systems I",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group C Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Data and AI systems; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3244",
+          "title": "Digital signal processing",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group C Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Data and AI systems; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3249",
+          "title": "Pattern recognition and machine intelligence",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group C Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Data and AI systems; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3255",
+          "title": "Control systems II",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group C Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4244",
+          "title": "Multimedia signals and applications",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group C Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Data and AI systems; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP3315"
+        },
+        {
+          "code": "ELEC4245",
+          "title": "Digital image processing",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group C Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4252",
+          "title": "Robotic control and vision",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group C Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Data and AI systems; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3248",
+          "title": "Engineering electromagnetism and antenna design",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group D Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Next-generation communications; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3443",
+          "title": "Computer networks",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group D Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Next-generation communications; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP3234"
+        },
+        {
+          "code": "ELEC4241",
+          "title": "Communication systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group D Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Next-generation communications; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4253",
+          "title": "Wireless communications",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group D Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Next-generation communications; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4254",
+          "title": "Microwave and RF engineering",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group D Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Next-generation communications; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4256",
+          "title": "Wireless networking in the era of machine learning",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group D Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4257",
+          "title": "Telecommunications systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group D Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Next-generation communications; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4442",
+          "title": "Advanced networking technologies",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group D Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Next-generation communications; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC2544",
+          "title": "Introduction to electronic commerce and financial technology",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group E Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3441",
+          "title": "Computer architecture",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group E Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP3231"
+        },
+        {
+          "code": "ELEC3442",
+          "title": "Embedded systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group E Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3541",
+          "title": "Software engineering and operating systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group E Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP3230 and COMP3297"
+        },
+        {
+          "code": "ELEC3542",
+          "title": "Advanced programming and application development",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group E Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3544",
+          "title": "Data science with foundation models",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group E Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3545",
+          "title": "Introduction to embodied artificial intelligence",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group E Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3641",
+          "title": "Human computer interaction",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group E Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3643",
+          "title": "Systems and network programming",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group E Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP3402"
+        },
+        {
+          "code": "ELEC3644",
+          "title": "Advanced mobile apps development",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group E Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4542",
+          "title": "Introduction to deep learning for computer vision",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group E Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP3340"
+        },
+        {
+          "code": "ELEC4543",
+          "title": "Fuzzy systems and neural networks",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group E Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4544",
+          "title": "Artificial intelligence and deep learning",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group E Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool. Optional Focus membership: Data and AI systems; Focus courses cannot be double-counted between Focuses.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4545",
+          "title": "Time series analysis with financial applications",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group E Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4546",
+          "title": "Investment and trading for engineering students",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group E Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4547",
+          "title": "Emerging technology for VR/AR",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group E Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4640",
+          "title": "Distributed computing systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group E Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC4641",
+          "title": "Computer network security",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group E Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP3355"
+        },
+        {
+          "code": "COMP2121",
+          "title": "Discrete mathematics",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group I Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "MATH3600"
+        },
+        {
+          "code": "ELEC2844",
+          "title": "Probabilistic systems analysis",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group I Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "STAT2601"
+        },
+        {
+          "code": "ELEC2845",
+          "title": "Applied optimization and applications",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group I Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "ELEC3846 and COMP3407"
+        },
+        {
+          "code": "MECH3407",
+          "title": "Advanced partial differential equations & complex variables",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group I Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "ELEC3846",
+          "title": "Numerical methods and optimization",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group I Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "COMP3407"
+        },
+        {
+          "code": "ELEC4745",
+          "title": "Queueing theory",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group I Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "COMP2119",
+          "title": "Introduction to data structures and algorithms",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group J Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "COMP2396",
+          "title": "Object-oriented programming and Java",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group J Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "ELEC2543 or FITE2000"
+        },
+        {
+          "code": "COMP3230",
+          "title": "Principles of operating systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group J Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "ELEC3541"
+        },
+        {
+          "code": "COMP3234",
+          "title": "Computer and communication networks",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group J Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "ELEC3443"
+        },
+        {
+          "code": "COMP3235",
+          "title": "Compiling techniques",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group J Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "COMP3278",
+          "title": "Introduction to database management systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group J Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "IIMT3601"
+        },
+        {
+          "code": "COMP3297",
+          "title": "Software engineering",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group J Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "IIMT3602"
+        },
+        {
+          "code": "COMP3322",
+          "title": "Modern technologies on World Wide Web",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group J Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "IIMT3663"
+        },
+        {
+          "code": "COMP3323",
+          "title": "Advanced database systems",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group J Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "FITE3010"
+        },
+        {
+          "code": "COMP3329",
+          "title": "Computer game design and programming",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group J Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "COMP3352",
+          "title": "Algorithmic game theory",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group J Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "COMP3354",
+          "title": "Statistical learning",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group J Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        },
+        {
+          "code": "COMP3355",
+          "title": "Cyber security",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group J Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf",
+          "exclusions": "ELEC4641"
+        },
+        {
+          "code": "COMP3407",
+          "title": "Scientific computing",
+          "credits": 6,
+          "courseType": "major_elective",
+          "group": "Electronic Engineering - Group J Discipline Elective. Complete 42 credits of Discipline Electives: 24 credits from Groups A, B, C, D, E and J; 6 credits from Group I; and 12 credits of advanced courses from Groups B, C, D and E. The separate 12-credit general Elective category is open and is not represented as a closed pool.",
+          "sourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
+        }
+      ]
+    }
+  ]
+}

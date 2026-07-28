@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-27T04:24:55.371Z",
+  "generatedAt": "2026-07-27T22:40:19.931Z",
   "universities": [
     {
       "id": "HKU",
@@ -2935,9 +2935,10 @@ const catalogue = {
       "studyPeriod": "4-year",
       "type": "Single Degree Programme",
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-engineering-computer-engineering-electrical",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 316,
+      "codedCourseCount": 316,
+      "courseSourceUrl": "https://engg.hku.hk/Portals/0/UG/syllabuses/Syllabus_BEng(CE_EE_ElecE)_2025-26.pdf"
     },
     {
       "id": "HKU-UG-6999-125",
@@ -10470,16 +10471,6 @@ const catalogue = {
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-biomedical-sciences"
     },
     {
-      "id": "HKU-UG-6987-124-M1",
-      "programmeId": "HKU-UG-6987-124",
-      "code": "BACHELOR-OF-ENGINEERING-IN-COMPUTER-ENGINEERING-",
-      "nameEn": "Bachelor of Engineering in Computer Engineering / Electrical Engineering / Electronic Engineering",
-      "nameZh": "Bachelor of Engineering in Computer Engineering / Electrical Engineering / Electronic Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-engineering-computer-engineering-electrical"
-    },
-    {
       "id": "HKU-UG-6999-125-M1",
       "programmeId": "HKU-UG-6999-125",
       "code": "COMPUTING-AND-DATA-SCIENCE",
@@ -16050,6 +16041,36 @@ const catalogue = {
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-business-administration-law-and-bachelor-of-laws"
     },
     {
+      "id": "HKU-UG-6987-124-M1",
+      "programmeId": "HKU-UG-6987-124",
+      "code": "COMPUTER-ENGINEERING",
+      "nameEn": "Computer Engineering",
+      "nameZh": "Computer Engineering",
+      "courseCount": 108,
+      "codedCourseCount": 108,
+      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-engineering-computer-engineering-electrical"
+    },
+    {
+      "id": "HKU-UG-6987-124-M2",
+      "programmeId": "HKU-UG-6987-124",
+      "code": "ELECTRICAL-ENGINEERING",
+      "nameEn": "Electrical Engineering",
+      "nameZh": "Electrical Engineering",
+      "courseCount": 105,
+      "codedCourseCount": 105,
+      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-engineering-computer-engineering-electrical"
+    },
+    {
+      "id": "HKU-UG-6987-124-M3",
+      "programmeId": "HKU-UG-6987-124",
+      "code": "ELECTRONIC-ENGINEERING",
+      "nameEn": "Electronic Engineering",
+      "nameZh": "Electronic Engineering",
+      "courseCount": 103,
+      "codedCourseCount": 103,
+      "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-engineering-computer-engineering-electrical"
+    },
+    {
       "id": "POLYU-UG-JS3789-46-M1",
       "programmeId": "POLYU-UG-JS3789-46",
       "code": "BUILDING-SURVEYING",
@@ -16105,12 +16126,12 @@ const catalogue = {
     "CUHK": 732,
     "EDUHK": 547,
     "HKBU": 2664,
-    "HKU": 5717,
+    "HKU": 6033,
     "HKUST": 2200,
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 18318
+  "codedCourseCount": 18634
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

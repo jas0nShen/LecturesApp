@@ -230,5 +230,29 @@
     "status": "public_course_codes_partial",
     "officialUrl": "https://ppa.hku.hk/wp-content/uploads/2025/01/BSSGLLLB-table_2024-25.pdf",
     "note": "The official Programme-specific table applies to the 2024-25 cohort and thereafter and closes the 300-credit category totals, fixed PPA and Law core codes, PPA capstone alternatives, language codes, ten Law capstone alternatives and seven designated Law disciplinary electives. The current 2025-26 LLB syllabus removes LLAW3058 from the capstone pool and renames LLAW3230 from Business of justice clinic to Public interest clinic, so publish only the nine-code current capstone intersection using the current title. The current BSocSc syllabus supplies the coded Social Innovation and Global Citizenship alternatives. The Programme-specific table still requires eight PPA electives and 42 credits of Law electives without publishing either complete Programme-local pool; it also leaves the FOSS introductory course, Common Core and free electives unnamed. Expose the 54 verified codes for read-only planning, but do not present them as a complete graduation structure or calculate a completion percentage."
+  },
+  {
+    "universityCode": "HKU",
+    "programmeCode": "6925",
+    "reviewedAt": "2026-07-27",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://sbme.hku.hk/programme",
+    "note": "The current official School of Biomedical Engineering Programme page describes the interdisciplinary curriculum, learning themes and professional preparation for the Bachelor of Engineering in Biomedical Engineering, but it does not publish a coded course table, per-course credits or course groups. The Faculty of Engineering Regulations and Syllabuses page at https://engg.hku.hk/Teaching-Learning/BEng-BASc/Academic-Programmes/Regulations-Syllabuses currently links BME Regulations and Syllabus only for 2024 and leaves the 2025 columns empty. Do not reuse the 2024 BME syllabus for the 2026 cohort without a current applicability statement. Keep 6925 index/source-only until HKU publishes a current coded curriculum."
+  },
+  {
+    "universityCode": "HKU",
+    "programmeCode": "6858",
+    "reviewedAt": "2026-07-27",
+    "status": "public_course_codes_partial",
+    "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-science-and-bachelor-of-laws",
+    "note": "The current official BSc&LLB admissions page confirms a five-year double degree and twelve selectable catalogue entries: eleven Science Major choices plus an LLB professional-core entry. It describes specially designed courses and capstone experiences but does not publish the Programme-specific coded curriculum, category credits, overlap rules or completion paths. Current standalone BSc and LLB syllabuses publish component course codes, but they do not establish which rows, substitutions, electives or capstones apply inside the combined 6858 curriculum. Do not copy the 6901 BSc Major lists or standalone LLB list into 6858 and present the result as a complete double degree. Keep all twelve entries index-only until HKU publishes a current Programme-specific coded structure."
+  },
+  {
+    "universityCode": "HKU",
+    "programmeCode": "6897",
+    "reviewedAt": "2026-07-27",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-engineering-computer-engineering-bachelor-of-0",
+    "note": "The current official admissions entry for 6897 publishes only the three degree names and the statement 'Subject to approval'; it does not publish a study period, Programme type, coded course table, credits, groups or a mapping to the separately listed 6987 admission entry. The Faculty 2025-26 CE/EE/ElecE syllabus applies to those degrees but does not identify 6897 as the applicable admission code. Do not copy the verified 6987 Major lists into 6897 without an official code mapping or an approved Programme-specific curriculum. Keep 6897 index/source-only until HKU publishes that evidence."
   }
 ]
