@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-28T07:02:47.911Z",
+  "generatedAt": "2026-07-28T09:28:35.671Z",
   "universities": [
     {
       "id": "HKU",
@@ -3483,9 +3483,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/trann/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 41,
+      "codedCourseCount": 41,
+      "courseSourceUrl": "https://www.traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=22"
     },
     {
       "id": "CUHK-UG-BAJDN-17",
@@ -10744,8 +10745,8 @@ const catalogue = {
       "code": "TRANSLATION",
       "nameEn": "Translation",
       "nameZh": "Translation",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 42,
+      "codedCourseCount": 41,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/trann/"
     },
     {
@@ -16131,7 +16132,7 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 3056,
-    "CUHK": 1134,
+    "CUHK": 1175,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
@@ -16139,7 +16140,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 19036
+  "codedCourseCount": 19077
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

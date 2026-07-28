@@ -47,11 +47,11 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.programmeCount, 445);
   assert.equal(summary.majorCount, 687);
   assert.equal(summary.requirementCount, 4);
-  assert.equal(summary.courseCount, 19050);
+  assert.equal(summary.courseCount, 19091);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 19036);
-  assert.equal(summary.programmeWithCoursesCount, 289);
-  assert.equal(summary.pendingProgrammeCount, 155);
+  assert.equal(summary.codedCourseCount, 19077);
+  assert.equal(summary.programmeWithCoursesCount, 290);
+  assert.equal(summary.pendingProgrammeCount, 154);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
@@ -245,6 +245,29 @@ test('CUHK Public Humanities exposes the intake-specific 88-course list as brows
   assert.equal(byCode.CURE2024, undefined);
   assert.equal(byCode.CURE3031, undefined);
   assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Digital Humanities' }).some((course) => course.courseCode === 'CURE2010'));
+});
+
+test('CUHK Translation exposes the current 41-course Major list as browse-only', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'TRANN');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-TRANN-16-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2025');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 41);
+  assert.equal(courses.length, 41);
+  assert.equal(byCode.TRAN1010.courseType, 'core');
+  assert.equal(byCode.TRAN4510.courseType, 'capstone');
+  assert.match(byCode.TRAN4900.requirementGroups[0], /thesis language/);
+  assert.match(byCode.TRAN2120.requirementGroups[0], /Cluster A/);
+  assert.match(byCode.TRAN2240.requirementGroups[0], /Cluster B/);
+  assert.equal(byCode.TRAN4120, undefined);
+  assert.equal(byCode.TRAN1000, undefined);
+  assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Translation Technologies' }).some((course) => course.courseCode === 'TRAN3620'));
 });
 
 test('CUHK Religious Studies exposes all current Religious Studies Area courses as browse-only', () => {

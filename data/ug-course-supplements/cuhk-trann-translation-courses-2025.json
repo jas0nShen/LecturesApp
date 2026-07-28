@@ -1,0 +1,63 @@
+{
+  "provider": "CUHK Department of Translation 2025-26-and-thereafter Major Programme Requirement and current Course List",
+  "academicYear": "Applicable to students admitted in 2025-26 and thereafter",
+  "sourceUrl": "https://www.traserver.tra.cuhk.edu.hk/en/pro_student.php?cid=2&id=22",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/trann/",
+  "note": "The official Department page publishes a 66-unit Translation Major for students admitted in 2025-26 and thereafter: 9 units of Faculty Package courses, four fixed Required Courses, any two of three Capstone courses, and 39 units of Major Electives including at least one course from each of Cluster A and Cluster B. The 2026-27 official admissions leaflet independently confirms the 66-unit structure and recommended four-year course pattern. This supplement exposes all 41 current departmental courses named by the 2025-26-and-thereafter Major requirement: four fixed Required Courses, three Capstone options and 34 Major Electives. It does not import the cross-department Faculty Package pool because the Translation Department page publishes the codes but not the complete current titles and applicability details for those external courses; TRAN1000 is explicitly inapplicable to Translation Major students. TRAN4120 is excluded because the current official Course List marks it cancelled effective from 2023-24. TRAN4050 and TRAN4840 are excluded because their rows are commented out and they do not appear in the 2025-26-and-thereafter requirement. The list is intentionally browse-only and must not be presented as a complete 66-unit graduation audit.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "TRANN",
+      "jupasCode": "JS4123",
+      "programmeId": "CUHK-UG-TRANN-16",
+      "majorId": "CUHK-UG-TRANN-16-M1",
+      "courses": [
+        { "code": "TRAN1010", "title": "Principles of Translation", "credits": 3, "recommendedYear": 1, "courseType": "core", "group": "Required Courses · fixed · 2025-26 and thereafter" },
+        { "code": "TRAN1030", "title": "Introduction to Interpreting", "credits": 3, "recommendedYear": 1, "courseType": "core", "group": "Required Courses · fixed · 2025-26 and thereafter" },
+        { "code": "TRAN2070", "title": "Introduction to Translation Studies", "credits": 3, "recommendedYear": 2, "courseType": "core", "group": "Required Courses · fixed · 2025-26 and thereafter" },
+        { "code": "TRAN2610", "title": "Introduction to Computer-aided Translation", "credits": 3, "recommendedYear": 2, "courseType": "core", "group": "Required Courses · fixed · 2025-26 and thereafter" },
+
+        { "code": "TRAN4510", "title": "Translation Project: English-Chinese", "credits": 3, "recommendedYear": 4, "courseType": "capstone", "group": "Required Courses · Capstone · choose any 2 from TRAN4510, TRAN4520 and TRAN4900 · final year" },
+        { "code": "TRAN4520", "title": "Translation Project: Chinese-English", "credits": 3, "recommendedYear": 4, "courseType": "capstone", "group": "Required Courses · Capstone · choose any 2 from TRAN4510, TRAN4520 and TRAN4900 · final year" },
+        { "code": "TRAN4900", "title": "Translation Thesis", "credits": 3, "recommendedYear": 4, "courseType": "capstone", "group": "Required Courses · Capstone · choose any 2 from TRAN4510, TRAN4520 and TRAN4900 · thesis language must differ from the selected translation project's target language" },
+
+        { "code": "TRAN2120", "title": "History of Translation", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Cluster A: Translation Studies · complete at least 1 Cluster A course" },
+        { "code": "TRAN3080", "title": "Research Methodology in Translation Studies", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Cluster A: Translation Studies · complete at least 1 Cluster A course" },
+        { "code": "TRAN3720", "title": "Special Topics in Translation", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Cluster A: Translation Studies · complete at least 1 Cluster A course" },
+        { "code": "TRAN4070", "title": "Advanced Translation Studies", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Cluster A: Translation Studies · complete at least 1 Cluster A course" },
+        { "code": "TRAN4210", "title": "Translation Criticism", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Cluster A: Translation Studies · complete at least 1 Cluster A course" },
+
+        { "code": "TRAN2140", "title": "Simultaneous Interpreting: Putonghua-English", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Cluster B: Interpreting · complete at least 1 Cluster B course" },
+        { "code": "TRAN2150", "title": "Simultaneous Interpreting: Cantonese-English", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Cluster B: Interpreting · complete at least 1 Cluster B course" },
+        { "code": "TRAN2240", "title": "Consecutive Interpreting: Putonghua-English", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Cluster B: Interpreting · complete at least 1 Cluster B course" },
+        { "code": "TRAN2250", "title": "Consecutive Interpreting: Cantonese-English", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Cluster B: Interpreting · complete at least 1 Cluster B course" },
+        { "code": "TRAN3240", "title": "Legal Interpreting", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Cluster B: Interpreting · complete at least 1 Cluster B course" },
+
+        { "code": "TRAN1120", "title": "Basic Skills of Translation", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Other electives · 39 elective units overall including Cluster A and B requirements" },
+        { "code": "TRAN1130", "title": "Textual Analysis and Readings", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Other electives · 39 elective units overall including Cluster A and B requirements" },
+        { "code": "TRAN2020", "title": "Writing Skills and Translation", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Other electives · 39 elective units overall including Cluster A and B requirements" },
+        { "code": "TRAN2050", "title": "Lexicography and Translation", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Other electives · 39 elective units overall including Cluster A and B requirements" },
+        { "code": "TRAN2110", "title": "Culture and Translation", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Other electives · 39 elective units overall including Cluster A and B requirements" },
+        { "code": "TRAN2130", "title": "Language Studies for Translation", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Other electives · 39 elective units overall including Cluster A and B requirements" },
+        { "code": "TRAN2840", "title": "Introduction to Legal Translation", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Other electives · 39 elective units overall including Cluster A and B requirements" },
+        { "code": "TRAN3170", "title": "Literary Translation Strategies: Chinese-English", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Other electives · 39 elective units overall including Cluster A and B requirements" },
+        { "code": "TRAN3180", "title": "Genres in Literary Translation: Chinese-English", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Other electives · 39 elective units overall including Cluster A and B requirements" },
+        { "code": "TRAN3270", "title": "Literary Translation Strategies: English-Chinese", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Other electives · 39 elective units overall including Cluster A and B requirements" },
+        { "code": "TRAN3280", "title": "Genres in Literary Translation: English-Chinese", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Other electives · 39 elective units overall including Cluster A and B requirements" },
+        { "code": "TRAN3620", "title": "Translation Technologies in the Age of AI", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Other electives · 39 elective units overall including Cluster A and B requirements" },
+        { "code": "TRAN3800", "title": "Arts Translation", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Other electives · 39 elective units overall including Cluster A and B requirements" },
+        { "code": "TRAN3810", "title": "Government and Public Affairs Translation", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Other electives · 39 elective units overall including Cluster A and B requirements" },
+        { "code": "TRAN3820", "title": "Commercial Translation", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Other electives · 39 elective units overall including Cluster A and B requirements" },
+        { "code": "TRAN3830", "title": "Mass Media Translation", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Other electives · 39 elective units overall including Cluster A and B requirements" },
+        { "code": "TRAN3844", "title": "Translation of Legal Documents in Judicial Procedure", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Other electives · 39 elective units overall including Cluster A and B requirements" },
+        { "code": "TRAN3845", "title": "Translation of General Legal Documents", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Other electives · 39 elective units overall including Cluster A and B requirements" },
+        { "code": "TRAN3850", "title": "Science and Technology Translation", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Other electives · 39 elective units overall including Cluster A and B requirements" },
+        { "code": "TRAN3860", "title": "Audiovisual Translation", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Other electives · 39 elective units overall including Cluster A and B requirements" },
+        { "code": "TRAN3870", "title": "Translation of Texts in the Social Sciences", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Other electives · 39 elective units overall including Cluster A and B requirements" },
+        { "code": "TRAN3880", "title": "Public Relations Translation", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Other electives · 39 elective units overall including Cluster A and B requirements" },
+        { "code": "TRAN3890", "title": "Financial Translation", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Other electives · 39 elective units overall including Cluster A and B requirements" },
+        { "code": "TRAN4800", "title": "Professional Development of Translators and Interpreters", "credits": 3, "courseType": "major_elective", "group": "Major Electives · Other electives · 39 elective units overall including Cluster A and B requirements" }
+      ]
+    }
+  ]
+}
