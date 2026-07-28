@@ -1,0 +1,27 @@
+{
+  "provider": "CUHK Department of History Public History Programme and official course archive",
+  "academicYear": "Current Programme page and 2026-27 course offerings",
+  "sourceUrl": "https://www.history.cuhk.edu.hk/en/study/ba-programme/public-history-programme/",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/histn-puh/",
+  "note": "The CUHK admission page links the Department of History's current Public History Programme page. That page states a minimum 57-unit Major Programme Requirement and publishes two Required Course highlights plus eight Elective Course highlights, but it does not publish the complete coded curriculum or per-course units. Codes and titles are cross-checked against the Department's official Study Scheme, 2026-27 Course Offerings and archived course records. HIST4702 is the curriculum code for Digital History; the 2026-27 offering is listed as section HIST4702RS. The archived Ordinary Voices offering is listed as HIST4180RH and is preserved with that official section code because the current Programme page does not publish a stable base code. The current Programme page misspells Documentaries as Documentories; the title below follows the official course archive. All ten courses remain credit-unknown and form only a partial read-only planning list. They must not be treated as the complete 57-unit curriculum or produce a graduation completion percentage.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "HISTN-PUH",
+      "programmeId": "CUHK-UG-HISTN-PUH-12",
+      "majorId": "CUHK-UG-HISTN-PUH-12-M1",
+      "courses": [
+        { "code": "HIST1700", "title": "Introduction to Public History: Theory and Practice", "credits": 0, "courseType": "core", "group": "Public History Required Course highlight · current page publishes no per-course units · partial read-only list" },
+        { "code": "HIST1701", "title": "History for Tomorrow: Technology and the Humanities", "credits": 0, "courseType": "core", "group": "Public History Required Course highlight · current page publishes no per-course units · partial read-only list" },
+        { "code": "HIST4703", "title": "Christianity in World History", "credits": 0, "courseType": "major_elective", "group": "Public History Elective Course highlight · current page publishes no complete coded elective pool · partial read-only list" },
+        { "code": "HIST4702", "title": "Digital History", "credits": 0, "courseType": "major_elective", "group": "Public History Elective Course highlight · 2026-27 offering section HIST4702RS · partial read-only list" },
+        { "code": "HIST3701", "title": "History, Memory, and Monuments", "credits": 0, "courseType": "major_elective", "group": "Public History Elective Course highlight · current page wording is History, Memory and Monument · partial read-only list" },
+        { "code": "HIST2701", "title": "Local History and Public History", "credits": 0, "courseType": "major_elective", "group": "Public History Elective Course highlight · current page publishes no complete coded elective pool · partial read-only list" },
+        { "code": "HIST3441", "title": "Museum and Heritage", "credits": 0, "courseType": "major_elective", "group": "Public History Elective Course highlight · current page publishes no complete coded elective pool · partial read-only list" },
+        { "code": "HIST2010", "title": "Oral History: Methods and Practices", "credits": 0, "courseType": "major_elective", "group": "Public History Elective Course highlight · current page publishes no complete coded elective pool · partial read-only list" },
+        { "code": "HIST4180RH", "title": "Ordinary Voices, Extraordinary Stories: History and Memory in Documentaries and Biographies", "credits": 0, "courseType": "major_elective", "group": "Public History Elective Course highlight · official archived section code · stable base code not published on current Programme page" },
+        { "code": "HIST4704", "title": "Women, Society, and Politics in Modern China", "credits": 0, "courseType": "major_elective", "group": "Public History Elective Course highlight · current page publishes no complete coded elective pool · partial read-only list" }
+      ]
+    }
+  ]
+}

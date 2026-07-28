@@ -1,0 +1,48 @@
+{
+  "provider": "CUHK Bachelor of Arts in Early Childhood Education Programme Study Scheme and Course List",
+  "academicYear": "Applicable to students admitted in 2017-18 and thereafter (Higher Diploma holders)",
+  "sourceUrl": "https://www.fed.cuhk.edu.hk/ece/en/programme-of-study/course-list/",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/chedn/",
+  "note": "The CUHK admission page links the Bachelor of Arts in Early Childhood Education Programme. Its official Study Scheme applies to Higher Diploma holders admitted in 2017-18 and thereafter and requires 55 Major units: 47 Required units and 8 Elective units. Required courses comprise 8 units of Educational Studies, 29 units of Subject Knowledge, 7 units of Research Experience and a 3-unit Internship. Students additionally complete 8 units from the 15-course Elective pool. The Programme's official Course List publishes all 31 codes, English titles and per-course units used below and states that the list is subject to change without prior notice. The 70-71 minimum graduation total also contains 15-16 units of University Core Requirements that are not a closed Programme course list and are not imported here. The Major GPA note for CHED, EDUC and SPED courses at level 2000 or above and the hash-marked BECE3130 and MUSC2545 is retained as a planning note rather than simplified into an automatic graduation decision.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "CHEDN",
+      "programmeId": "CUHK-UG-CHEDN-30",
+      "majorId": "CUHK-UG-CHEDN-30-M1",
+      "courses": [
+        { "code": "EDUC2120", "title": "Principles and Implementation of Curriculum and Instructional Design", "credits": 3, "courseType": "core", "group": "Required Courses · Educational Studies · complete all 8 units" },
+        { "code": "EDUC2220", "title": "Educational Thought", "credits": 2, "courseType": "core", "group": "Required Courses · Educational Studies · complete all 8 units" },
+        { "code": "EDUC2240", "title": "Understanding Schooling and Education Policy in Hong Kong", "credits": 3, "courseType": "core", "group": "Required Courses · Educational Studies · complete all 8 units" },
+        { "code": "CHED3160", "title": "Children’s Play in Early Childhood Education", "credits": 3, "courseType": "core", "group": "Required Courses · Subject Knowledge · complete all 29 units" },
+        { "code": "CHED4120", "title": "Language and Literacy Development in Young Children", "credits": 3, "courseType": "core", "group": "Required Courses · Subject Knowledge · complete all 29 units" },
+        { "code": "CHED4140", "title": "Maths, Science, and Tech Experiences in Early Childhood", "credits": 3, "courseType": "core", "group": "Required Courses · Subject Knowledge · complete all 29 units" },
+        { "code": "CHED4220", "title": "Home-School-Community Collaboration for School Development", "credits": 3, "courseType": "core", "group": "Required Courses · Subject Knowledge · complete all 29 units" },
+        { "code": "CHED4340", "title": "Supporting Preschool Children with Special Educational Needs", "credits": 3, "courseType": "core", "group": "Required Courses · Subject Knowledge · complete all 29 units" },
+        { "code": "CHED4350", "title": "Assessment for the Development and Learning of Young Children", "credits": 3, "courseType": "core", "group": "Required Courses · Subject Knowledge · complete all 29 units" },
+        { "code": "CHED4360", "title": "Advanced Study of Early Childhood Development", "credits": 3, "courseType": "core", "group": "Required Courses · Subject Knowledge · complete all 29 units" },
+        { "code": "CHED4410", "title": "Fundamental Movement Skill and Rhythmic Activity for Young Children", "credits": 3, "courseType": "core", "group": "Required Courses · Subject Knowledge · complete all 29 units" },
+        { "code": "CHED4510", "title": "Values Education in Early Childhood Education", "credits": 2, "courseType": "core", "group": "Required Courses · Subject Knowledge · complete all 29 units" },
+        { "code": "CHED4530", "title": "Contemporary Issues in Early Childhood Education", "credits": 3, "courseType": "core", "group": "Required Courses · Subject Knowledge · complete all 29 units" },
+        { "code": "CHED4320", "title": "Introduction to Educational Research", "credits": 3, "courseType": "core", "group": "Required Courses · Research Experience · complete all 7 units" },
+        { "code": "CHED4540", "title": "Research Project", "credits": 4, "courseType": "capstone", "group": "Required Courses · Research Experience · complete all 7 units" },
+        { "code": "CHED4550", "title": "Internship", "credits": 3, "courseType": "internship", "group": "Required Courses · Internship · complete all 3 units" },
+        { "code": "BECE3130", "title": "Art Therapy in Kindergarten Settings", "credits": 3, "courseType": "major_elective", "group": "Elective Courses · complete 8 units from 15-course pool · official # Major GPA marker" },
+        { "code": "CHED4150", "title": "Children’s Literature", "credits": 2, "courseType": "major_elective", "group": "Elective Courses · complete 8 units from 15-course pool" },
+        { "code": "CHED4210", "title": "Leadership and Management in Early Childhood Settings", "credits": 3, "courseType": "major_elective", "group": "Elective Courses · complete 8 units from 15-course pool" },
+        { "code": "CHED4310", "title": "Aesthetic Experience and Creative Expressions in Early Childhood", "credits": 3, "courseType": "major_elective", "group": "Elective Courses · complete 8 units from 15-course pool" },
+        { "code": "CHED4330", "title": "Personal Growth of Teachers", "credits": 2, "courseType": "major_elective", "group": "Elective Courses · complete 8 units from 15-course pool" },
+        { "code": "CHED4370", "title": "Counselling Young Children", "credits": 2, "courseType": "major_elective", "group": "Elective Courses · complete 8 units from 15-course pool" },
+        { "code": "CHED4520", "title": "Guided Study in Issues of Child Development", "credits": 3, "courseType": "major_elective", "group": "Elective Courses · complete 8 units from 15-course pool" },
+        { "code": "EDUC2210", "title": "Education and Society in Hong Kong", "credits": 2, "courseType": "major_elective", "group": "Elective Courses · complete 8 units from 15-course pool" },
+        { "code": "EDUC3150", "title": "Global Dialogues on Education for Sustainable Development in the Curriculum", "credits": 2, "courseType": "major_elective", "group": "Elective Courses · complete 8 units from 15-course pool" },
+        { "code": "EDUC3200", "title": "Developing Intercultural Competence: Experiential Learning", "credits": 3, "courseType": "major_elective", "group": "Elective Courses · complete 8 units from 15-course pool" },
+        { "code": "EDUC3270", "title": "Engendering Education", "credits": 2, "courseType": "major_elective", "group": "Elective Courses · complete 8 units from 15-course pool" },
+        { "code": "EDUC3280", "title": "An Introduction to Moral and Citizenship Education", "credits": 2, "courseType": "major_elective", "group": "Elective Courses · complete 8 units from 15-course pool" },
+        { "code": "EDUC3290", "title": "Meaning Concerns, Life and Death Education", "credits": 2, "courseType": "major_elective", "group": "Elective Courses · complete 8 units from 15-course pool" },
+        { "code": "MUSC2545", "title": "Music Therapy", "credits": 2, "courseType": "major_elective", "group": "Elective Courses · complete 8 units from 15-course pool · official # Major GPA marker" },
+        { "code": "SPED3920", "title": "Human Growth and Health Education", "credits": 3, "courseType": "major_elective", "group": "Elective Courses · complete 8 units from 15-course pool" }
+      ]
+    }
+  ]
+}

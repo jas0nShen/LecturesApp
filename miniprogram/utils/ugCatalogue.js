@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-28T03:52:31.192Z",
+  "generatedAt": "2026-07-28T04:27:39.874Z",
   "universities": [
     {
       "id": "HKU",
@@ -3402,9 +3402,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/histn-puh/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 10,
+      "codedCourseCount": 10,
+      "courseSourceUrl": "https://www.history.cuhk.edu.hk/en/study/ba-programme/public-history-programme/"
     },
     {
       "id": "CUHK-UG-PUHSN-13",
@@ -3744,9 +3745,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/chedn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 31,
+      "codedCourseCount": 31,
+      "courseSourceUrl": "https://www.fed.cuhk.edu.hk/ece/en/programme-of-study/course-list/"
     },
     {
       "id": "CUHK-UG-ELEDN-31",
@@ -10698,8 +10700,8 @@ const catalogue = {
       "code": "PUBLIC-HISTORY",
       "nameEn": "Public History",
       "nameZh": "Public History",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 11,
+      "codedCourseCount": 10,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/histn-puh/"
     },
     {
@@ -10878,8 +10880,8 @@ const catalogue = {
       "code": "EARLY-CHILDHOOD-EDUCATION-BA",
       "nameEn": "Early Childhood Education (BA)",
       "nameZh": "Early Childhood Education (BA)",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 32,
+      "codedCourseCount": 31,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/chedn/"
     },
     {
@@ -16125,7 +16127,7 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 3056,
-    "CUHK": 827,
+    "CUHK": 868,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
@@ -16133,7 +16135,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 18729
+  "codedCourseCount": 18770
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
