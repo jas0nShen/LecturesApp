@@ -1,0 +1,50 @@
+{
+  "provider": "CUHK Department of Sociology Society and Sustainable Development curriculum and course listing",
+  "academicYear": "2026 entry / 2025-26 course listing",
+  "sourceUrl": "https://www.soc.cuhk.edu.hk/undergraduate/curriculum/concentrations/society-and-sustainable-development-sociology-programme/",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/socin-ssd/",
+  "note": "The CUHK 2026 admission page links the Department of Sociology's Society and Sustainable Development curriculum. That curriculum publishes a 61-unit path comprising 30 units of required Sociology courses, 15 units selected from a named Sociology pool, 7 units from Earth System Science and 9 units from a Diversity cluster. This supplement publishes the complete 33-code Sociology portion after merging SOCI4020, which appears both in the required list and as a conditionally eligible concentration course. Every included code and English title is also present in the current CUHK Sociology Course Listing, including SOCI2203, SOCI2219, SOCI3240 and SOCI3241, whose SSD annotations still refer to consideration in 2024-25. The public pages do not print per-course units or a recommended year/term beside these course rows, so credits, recommendedYear and semester remain unknown instead of being inferred from group totals. Earth System Science and Diversity-cluster rows are excluded until their current titles, units and alternative-code relationships are independently closed. This is a partial read-only planning list and must not produce a graduation completion percentage.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "SOCIN-SSD",
+      "programmeId": "CUHK-UG-SOCIN-SSD-82",
+      "majorId": "CUHK-UG-SOCIN-SSD-82-M1",
+      "courses": [
+        { "code": "SOCI1001", "title": "Introduction to Sociology", "credits": 0, "courseType": "core", "group": "SSD Sociology Required Courses · 30-unit group · per-course units not published" },
+        { "code": "SOCI1002", "title": "Approaching Sociology", "credits": 0, "courseType": "core", "group": "SSD Sociology Required Courses · 30-unit group · per-course units not published" },
+        { "code": "SOCI2003", "title": "Social Research Methods", "credits": 0, "courseType": "core", "group": "SSD Sociology Required Courses · 30-unit group · per-course units not published" },
+        { "code": "SOCI2004", "title": "Social Statistics", "credits": 0, "courseType": "core", "group": "SSD Sociology Required Courses · 30-unit group · per-course units not published" },
+        { "code": "SOCI2104", "title": "Sociology and Hong Kong", "credits": 0, "courseType": "core", "group": "SSD Sociology Required Courses · 30-unit group · per-course units not published" },
+        { "code": "SOCI3003", "title": "Classical Sociological Theory", "credits": 0, "courseType": "core", "group": "SSD Sociology Required Courses · 30-unit group · per-course units not published" },
+        { "code": "SOCI3223", "title": "Contemporary Sociological Theory", "credits": 0, "courseType": "core", "group": "SSD Sociology Required Courses · 30-unit group · per-course units not published" },
+        { "code": "SOCI3231", "title": "Qualitative Research", "credits": 0, "courseType": "core", "group": "SSD Sociology Required Courses · 30-unit group · per-course units not published" },
+        { "code": "SOCI4010", "title": "Graduation Thesis I", "credits": 0, "courseType": "capstone", "group": "SSD Sociology Required Courses · Capstone · 30-unit group · per-course units not published" },
+        { "code": "SOCI4020", "title": "Graduation Thesis II", "credits": 0, "courseType": "capstone", "group": "SSD Sociology Required Course and conditional Sociology elective · Capstone · concentration-theme and supervisor-endorsement rules apply" },
+        { "code": "SOCI2116", "title": "Criminals and the Law", "credits": 0, "courseType": "major_elective", "group": "SSD Sociology Elective Courses · select 15 units · per-course units not published" },
+        { "code": "SOCI2203", "title": "Social Problems and Social Policy", "credits": 0, "courseType": "major_elective", "group": "SSD Sociology Elective Courses · select 15 units · SSD page retains a 2024-25 consideration annotation" },
+        { "code": "SOCI2208", "title": "Urban Sociology", "credits": 0, "courseType": "major_elective", "group": "SSD Sociology Elective Courses · select 15 units · per-course units not published" },
+        { "code": "SOCI2216", "title": "Social Problems in China", "credits": 0, "courseType": "major_elective", "group": "SSD Sociology Elective Courses · select 15 units · per-course units not published" },
+        { "code": "SOCI2218", "title": "Marriage and Family", "credits": 0, "courseType": "major_elective", "group": "SSD Sociology Elective Courses · select 15 units · current listing notes old code SOCI3222" },
+        { "code": "SOCI2219", "title": "Youth and Society", "credits": 0, "courseType": "major_elective", "group": "SSD Sociology Elective Courses · select 15 units · SSD page retains a 2024-25 consideration annotation" },
+        { "code": "SOCI3002", "title": "Social Stratification", "credits": 0, "courseType": "major_elective", "group": "SSD Sociology Elective Courses · select 15 units · per-course units not published" },
+        { "code": "SOCI3102", "title": "Social Networks and Social Capital", "credits": 0, "courseType": "major_elective", "group": "SSD Sociology Elective Courses · select 15 units · per-course units not published" },
+        { "code": "SOCI3204", "title": "Sociology of Crime and Deviance", "credits": 0, "courseType": "major_elective", "group": "SSD Sociology Elective Courses · select 15 units · per-course units not published" },
+        { "code": "SOCI3208", "title": "Gender & Society", "credits": 0, "courseType": "major_elective", "group": "SSD Sociology Elective Courses · select 15 units · per-course units not published" },
+        { "code": "SOCI3227", "title": "Social Demography", "credits": 0, "courseType": "major_elective", "group": "SSD Sociology Elective Courses · select 15 units · per-course units not published" },
+        { "code": "SOCI3230", "title": "Globalization and China", "credits": 0, "courseType": "major_elective", "group": "SSD Sociology Elective Courses · select 15 units · per-course units not published" },
+        { "code": "SOCI3237", "title": "Medical Sociology", "credits": 0, "courseType": "major_elective", "group": "SSD Sociology Elective Courses · select 15 units · current listing notes old code SOCI4207" },
+        { "code": "SOCI3238", "title": "Digital Sociology", "credits": 0, "courseType": "major_elective", "group": "SSD Sociology Elective Courses · select 15 units · per-course units not published" },
+        { "code": "SOCI3239", "title": "Environment and Society", "credits": 0, "courseType": "major_elective", "group": "SSD Sociology Elective Courses · select 15 units · per-course units not published" },
+        { "code": "SOCI3240", "title": "Social Studies of Science", "credits": 0, "courseType": "major_elective", "group": "SSD Sociology Elective Courses · select 15 units · SSD page retains a 2024-25 consideration annotation" },
+        { "code": "SOCI3241", "title": "Introduction to Global Sociology", "credits": 0, "courseType": "major_elective", "group": "SSD Sociology Elective Courses · select 15 units · SSD page retains a 2024-25 consideration annotation" },
+        { "code": "SOCI4202", "title": "Community Service-Based Learning for Sociology Students", "credits": 0, "courseType": "major_elective", "group": "SSD Sociology Elective Courses · select 15 units · per-course units not published" },
+        { "code": "SOCI4204", "title": "Sociology of Education", "credits": 0, "courseType": "major_elective", "group": "SSD Sociology Elective Courses · select 15 units · per-course units not published" },
+        { "code": "SOCI4210", "title": "Science and Technology Studies", "credits": 0, "courseType": "major_elective", "group": "SSD Sociology Elective Courses · select 15 units · per-course units not published" },
+        { "code": "SOCI4211", "title": "Sociology Internship: Nurturing Competency for Meeting Future Challenges", "credits": 0, "courseType": "internship", "group": "SSD Sociology Elective Courses · select 15 units · concentration-theme and supervisor-endorsement rules apply" },
+        { "code": "SOCI4410", "title": "Directed Studies I", "credits": 0, "courseType": "major_elective", "group": "SSD Sociology Elective Courses · select 15 units · concentration-theme and supervisor-endorsement rules apply" },
+        { "code": "SOCI4420", "title": "Directed Studies II", "credits": 0, "courseType": "major_elective", "group": "SSD Sociology Elective Courses · select 15 units · concentration-theme and supervisor-endorsement rules apply" }
+      ]
+    }
+  ]
+}
