@@ -47,11 +47,11 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.programmeCount, 445);
   assert.equal(summary.majorCount, 687);
   assert.equal(summary.requirementCount, 4);
-  assert.equal(summary.courseCount, 18784);
+  assert.equal(summary.courseCount, 18841);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 18770);
-  assert.equal(summary.programmeWithCoursesCount, 285);
-  assert.equal(summary.pendingProgrammeCount, 159);
+  assert.equal(summary.codedCourseCount, 18827);
+  assert.equal(summary.programmeWithCoursesCount, 286);
+  assert.equal(summary.pendingProgrammeCount, 158);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
@@ -172,6 +172,31 @@ test('CUHK History exposes the verified 2025/26 required and capstone courses', 
   assert(courses.some((course) => course.courseCode === 'HIST1001' && course.courseType === 'core'));
   assert(courses.some((course) => course.courseCode === 'HIST4812' && course.courseType === 'capstone' && course.credits === 5));
   assert(ugService.listMajorCourses(history.id, major.id, { keyword: 'Western History' }).some((course) => course.courseCode === 'HIST1002'));
+});
+
+test('CUHK English exposes the current departmental pool as a partial read-only list', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'ENGEN');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-ENGEN-5-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 57);
+  assert.equal(courses.length, 57);
+  assert.equal(courses.filter((course) => (
+    course.requirementGroups.some((group) => group.startsWith('Major Elective Courses'))
+  )).length, 49);
+  assert.equal(byCode.ENGE4701.courseType, 'capstone');
+  assert.equal(byCode.ENGE4701.credits, 1);
+  assert.equal(byCode.ENGE4702.courseType, 'capstone');
+  assert.equal(byCode.ENGE4702.credits, 5);
+  assert.equal(byCode.ENGE3900.courseType, 'internship');
+  assert.equal(byCode.ENGE4700, undefined);
+  assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Forensic Linguistics' }).some((course) => course.courseCode === 'ENGE2540'));
 });
 
 test('CUHK Public History exposes only the official ten-course highlight list', () => {

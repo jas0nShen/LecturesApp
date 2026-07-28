@@ -667,7 +667,7 @@ test('UG source coverage report can build a grouped missing data batch plan', ()
 
   assert.equal(args.batchPlan, true);
   assert(groups.sourceIndexOnly.length > 0);
-  assert.equal(groups.reviewedNoCourseCodes.length, 23);
+  assert.equal(groups.reviewedNoCourseCodes.length, 25);
   assert(groups.noSource.length <= 165);
   assert.equal(groups.sourceIndexOnly[0].schoolCode, 'HKU');
   assert(groups.sourceIndexOnly[0].code);

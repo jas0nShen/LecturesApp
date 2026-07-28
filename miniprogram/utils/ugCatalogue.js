@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-28T04:27:39.874Z",
+  "generatedAt": "2026-07-28T04:57:56.979Z",
   "universities": [
     {
       "id": "HKU",
@@ -3264,9 +3264,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/engen/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 57,
+      "codedCourseCount": 57,
+      "courseSourceUrl": "https://www.eng.cuhk.edu.hk/programmes/ug-programme/study-scheme/major-programme-in-english/applicable-to-students-admitted-in-2026-27-and-thereafter/"
     },
     {
       "id": "CUHK-UG-FAASN-6",
@@ -10630,8 +10631,8 @@ const catalogue = {
       "code": "ENGLISH",
       "nameEn": "English",
       "nameZh": "English",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 58,
+      "codedCourseCount": 57,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/engen/"
     },
     {
@@ -16127,7 +16128,7 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 3056,
-    "CUHK": 868,
+    "CUHK": 925,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
@@ -16135,7 +16136,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 18770
+  "codedCourseCount": 18827
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

@@ -176,6 +176,22 @@
     "note": "The official 2026-27 Major Programme Requirement publishes the 66-unit structure, 11 required CHLL codes and four Specialty elective code groups, but the official 2026-27 Course Offerings page exposes only 19 unique CHLL codes and does not verify current titles and units for the remaining curriculum pool. The Major Requirement also repeats CHLL3402 in the Modern Chinese Literature list, so the complete current code pool cannot be reconciled without inference. Keep JS4018 index-only and do not publish an annual offering subset as the full Major curriculum."
   },
   {
+    "universityCode": "CUHK",
+    "programmeCode": "CHPRN",
+    "reviewedAt": "2026-07-28",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://www.bsc.sphpc.cuhk.edu.hk/bsc-in-community-health-practice",
+    "note": "The official current Programme page confirms a two-year full-time articulation honours programme, a minimum 69-unit graduation requirement and 220 hours of supervised field work. It displays accordion headings for AY2025-26 and AY2022-23 course lists, but both published accordion bodies are empty and the page resources contain no course codes, titles, units or group table. Do not infer individual credits from the 69-unit total or copy Public Health courses into this distinct articulation programme. Keep CHPRN index/source-only until the School publishes a coded course list."
+  },
+  {
+    "universityCode": "CUHK",
+    "programmeCode": "BSCGB",
+    "reviewedAt": "2026-07-28",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://www.bsc.sphpc.cuhk.edu.hk/bsc-in-gerontology",
+    "note": "The official current Programme page confirms a two-year full-time articulation honours programme, a minimum 69-unit graduation requirement and a 180-hour Gerontological Practicum. It displays accordion headings for AY2025-26 and AY2022-23 course lists, but both published accordion bodies are empty and the page resources contain no course codes, titles, units or group table. Do not infer individual credits from the 69-unit total or copy similarly named public-health courses into Gerontology. Keep BSCGB index/source-only until the School publishes a coded course list."
+  },
+  {
     "universityCode": "HKU",
     "programmeCode": "6303",
     "reviewedAt": "2026-07-26",
