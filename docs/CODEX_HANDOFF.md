@@ -17,7 +17,7 @@
 - 1.0.12 已补充 HKU 商科、经济、统计、会计及法学双学位官方课程清单，并对规则未闭合 Programme 保持只读浏览，不显示未经核验的毕业完成比例。
 - HKU 商科与法学批次由提交 `7c2e66f` 发布；HKU `6688 Science Master Class` 与 `6901 Bachelor of Science` 批次由提交 `c1076cf` 发布；HKU `6987 Computer Engineering / Electrical Engineering / Electronic Engineering` 三 Major 与 HKU `6925` / `6858` / `6897` 来源审查由提交 `8fa7ce8 Expand HKU engineering curricula for 1.0.12` 发布。
 - 包版本：`1.0.12`
-- 当前课程提交 `e065c61` 已推送到 `origin/main`；其 source supplement、生成 catalogue/shards/分包和测试均已推送。
+- 当前课程提交 `27a9ac1` 已推送到 `origin/main`；其 source supplement、生成 catalogue/shards/分包和测试均已推送。
 - 当前 Git 代码已包含 CUHK `JASPN Japanese Studies` 58 门 Major-assigned JASP 课程；标准、Local、Stream、senior-entry 与 double-Major 路径未完整闭合，因此保持只读浏览，不生成毕业完成百分比。
 - 当前 Git 代码也已包含 CUHK `RELSN Religious Studies` 63 门 Religious Studies Area 课程；标准与 senior-entry 路径因 Cultural Studies 和跨院 Concentration 开放池未闭合而保持只读浏览。
 - 当前 Git 代码还包含 CUHK `PUHSN Public Humanities` 88 门 2025-26 intake-specific 课程；标准与 senior-entry 路径、外系 Faculty Package、Religious Studies Areas、Concentration 替代及课程复用规则未闭合，因此保持只读浏览，不生成毕业完成百分比。
@@ -26,7 +26,8 @@
 - `TRANN` 官方 Course List 明确将 `TRAN4120` 标记为自 2023-24 取消；`TRAN4050` 与 `TRAN4840` 只存在于 HTML 注释，且均不在 2025-26-and-thereafter requirement 中；`TRAN1000` 明确不适用于 Translation Major。四门均未导入。
 - 当前 Git 代码新增 CUHK `THEON Theology` 44 门 2025-26 BA Major / Theological Studies Areas 1-5 课程：10 门 Major Required、34 门额外 Area 课程。跨院 Faculty Package、开放 CURE 选修池及可重复 Special Topics 的毕业计算未由本地规则闭合，因此保持只读浏览，不生成毕业完成百分比。
 - `THEON` 2025-26 Student Handbook 第 5-7 页已通过文本提取与逐页渲染核验；PDF 唯一代码与 supplement 为 44/44。手册漏填 `THEO2224` 学分，实时官方课程表与课程页均确认 3 units；手册写 `THEO2234 Catholic Dogmatic`，实时官方课程表与课程页使用 `Catholic Dogmatics`，supplement 采用实时标题并显式记录差异。
-- 当前 1.0.12 微信开发版仍停留在 CUHK `ENGEN English` 批次，指标为 18,827 条 UG 课程、286 个已开放 Programme 和 961/961 测试。提交 `d4e873c` 的 `JASPN` / `RELSN`、`6dedaa2` 的 `PUHSN`、`2831a34` 的 `TRANN` 与 `e065c61` 的 `THEON` 批次均尚未上传；2026-07-28 在 `e065c61` 推送后重新检查登录状态为 `false`，两次新二维码登录均因未完成扫码确认返回 code 25。
+- 当前 Git 代码新增 CUHK `SOWKN Social Work` 32 门课程：14 门 Core、4 门 Field Instruction、14 门 Major Elective。跨院 Faculty Package、PSYC/SOCI 开放池及 Year 4 option 路径未闭合，`SOWK4580` 官方 units 单元格为空，因此保持只读浏览且该课以 0 表示未知学分，不生成毕业完成百分比。
+- 当前 1.0.12 微信开发版仍停留在 CUHK `ENGEN English` 批次，指标为 18,827 条 UG 课程、286 个已开放 Programme 和 961/961 测试。提交 `d4e873c` 的 `JASPN` / `RELSN`、`6dedaa2` 的 `PUHSN`、`2831a34` 的 `TRANN`、`e065c61` 的 `THEON` 与 `27a9ac1` 的 `SOWKN` 批次均尚未上传；2026-07-28 在 `27a9ac1` 推送后检查登录状态为 `false`，新二维码登录因 Mac 锁屏未完成扫码确认并返回 code 25。
 - 本批开放 HKU `6755` 其余 BBA Major、`6767` Economics、`6779` Statistical Decision Sciences、`6781` Accounting、`6896` IBGM、Asset Management and Private Banking、Quantitative Finance、Business Analytics、Marketing Analytics and Technology，以及 `6808` / `6810` 两个 Law double degree 的官方可核验课程。
 - `6808` 与 `6810` 的 Law elective universe 未由 Programme-specific 来源闭合，因此只发布已核验代码供只读浏览，不生成完整毕业结构或完成百分比。
 - 旧单一 `ug-data-hku`、`ug-data-hkbu` 已由生成脚本替换；当前工作区 HKU 使用 `ug-data-hku-a` / `ug-data-hku-b` / `ug-data-hku-c` 三分包，HKBU 使用 `ug-data-hkbu-a` / `ug-data-hkbu-b` 双分包。不要手工恢复旧 loader。
@@ -264,7 +265,8 @@ df91815 Add PolyU Design curriculum and source evidence
 - 2026-07-28 提交 `6dedaa2` 的 CUHK `PUHSN Public Humanities` 88 门课程已推送到 GitHub；拟用备注为 `1.0.12: Add CUHK Public Humanities curriculum`。微信开发者工具登录状态为 `false`，连续两次新二维码登录均因未完成扫码确认返回 code 25，因此本批也尚未上传。
 - 2026-07-28 提交 `2831a34` 的 CUHK `TRANN Translation` 41 门课程已推送到 GitHub；拟用备注为 `1.0.12: Add CUHK Translation curriculum`。推送后微信开发者工具登录状态为 `false`，连续两次新二维码登录均因未完成扫码确认返回 code 25，因此包含 `JASPN` / `RELSN` / `PUHSN` / `TRANN` 的当前代码仍未上传。
 - 2026-07-28 提交 `e065c61` 的 CUHK `THEON Theology` 44 门课程已推送到 GitHub；拟用备注为 `1.0.12: Add CUHK Theology curriculum`。推送后微信开发者工具登录状态为 `false`，两次新二维码登录均因未完成扫码确认返回 code 25，因此包含 `JASPN` / `RELSN` / `PUHSN` / `TRANN` / `THEON` 的当前代码仍未上传。
-- 当前 Git 代码完整检查：971/971 测试通过、`ready=true`、19,121 条 UG coded courses、291 个已开放 Programme、主包预估 1,842,854 bytes、总估算包体 22,438,033 bytes，所有 22 个分包低于 2 MB，敏感 API 为 0。
+- 2026-07-28 提交 `27a9ac1` 的 CUHK `SOWKN Social Work` 32 门课程已推送到 GitHub；拟用备注为 `1.0.12: Add CUHK Social Work curriculum`。`npm run check:ship` 通过 973/973 测试且 `ready=true`；微信开发者工具登录状态为 `false`，新二维码登录因 Mac 锁屏未完成扫码确认并返回 code 25，因此当前代码仍未上传。
+- 当前 Git 代码完整检查：973/973 测试通过、`ready=true`、19,153 条 UG coded courses、292 个已开放 Programme、主包预估 1,842,951 bytes、总估算包体 22,466,528 bytes，所有 22 个分包低于 2 MB，敏感 API 为 0。
 - 微信开发者工具确认 PolyU Computer Science 可加载 83 门课程，首页入口序号为 `01 / 02 / 03 / 04`；模拟器测试结束后已恢复原 Architectural Studies 资料，`plannedUgCourseKeys`、`ugCoursePlanAssignments`、`completedUgCourseKeys` 均为空。
 - 微信官方 automation 已完成普通 `POLYU-TPG-090` 闭环：36 门课程、`COMP5521` 加入计划、列表状态、官方分组、标记已修、复制与移除均通过。
 - 多 Track `HKU-TPG-031` 验收通过：Generalist 计 1 门，Chinese Language Education 计 2 门；两条记录均保留，旧 Track 课程不计入 Generalist 当前统计。
@@ -425,8 +427,8 @@ npm run status:ug-sources -- --missing-only --missing-summary --missing-limit 0:
 
 发布指标：
 
-- 当前代码主包预估：1,842,854 bytes。
-- 当前代码总估算包体：22,438,033 bytes，196 个上传文件。
+- 当前代码主包预估：1,842,951 bytes。
+- 当前代码总估算包体：22,466,528 bytes，196 个上传文件。
 - 最新上传 1.0.12 的 CLI 实际包：17,511,130 bytes；实际主包：1,483,018 bytes。
 - 当前 22 个 UG/TPG 分包均低于 2 MB；最大为 `ug-data-hku-a` 1,869,435 bytes。
 - 页面：17；敏感 API：0。
@@ -436,7 +438,7 @@ npm run status:ug-sources -- --missing-only --missing-summary --missing-limit 0:
 
 ## 已知问题、风险和不要做的事情
 
-- 微信此前已通过官方 CLI 上传 `1.0.12`，但当前 Git 的 `JASPN` / `RELSN` / `PUHSN` 批次尚未覆盖上传；不要把历史上传成功当作当前代码已上传，更不要当作已提审或已发布。
+- 微信此前已通过官方 CLI 上传 `1.0.12`，但当前 Git 的 `JASPN` / `RELSN` / `PUHSN` / `TRANN` / `THEON` / `SOWKN` 批次尚未覆盖上传；不要把历史上传成功当作当前代码已上传，更不要当作已提审或已发布。
 - 不要把“上传成功”写成“已提审”或“已发布”。这两个外部动作尚未执行。
 - 不要删除或提交 `.playwright-cli/`，除非用户明确决定如何处理该诊断目录。
 - 不要手改生成的 catalogue、course shard 或 loader；从 source/supplement 和 builder 修改后重新生成。
