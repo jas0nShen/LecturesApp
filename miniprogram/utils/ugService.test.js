@@ -47,11 +47,11 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.programmeCount, 445);
   assert.equal(summary.majorCount, 687);
   assert.equal(summary.requirementCount, 4);
-  assert.equal(summary.courseCount, 18962);
+  assert.equal(summary.courseCount, 19050);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 18948);
-  assert.equal(summary.programmeWithCoursesCount, 288);
-  assert.equal(summary.pendingProgrammeCount, 156);
+  assert.equal(summary.codedCourseCount, 19036);
+  assert.equal(summary.programmeWithCoursesCount, 289);
+  assert.equal(summary.pendingProgrammeCount, 155);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
@@ -220,6 +220,31 @@ test('CUHK Japanese Studies exposes the current Major-assigned JASP pool as brow
   assert.match(byCode.JASP3700.requirementGroups[0], /Japanese Language and Linguistics Stream/);
   assert.equal(byCode.JASP1100, undefined);
   assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Japanese Philosophy' }).some((course) => course.courseCode === 'JASP3800'));
+});
+
+test('CUHK Public Humanities exposes the intake-specific 88-course list as browse-only', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'PUHSN');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-PUHSN-13-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2025');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 88);
+  assert.equal(courses.length, 88);
+  assert.equal(byCode.CURE1000.semester, 'Fall / Spring');
+  assert.equal(byCode.CURE1009.courseType, 'core');
+  assert.equal(byCode.CURE4014.courseType, 'capstone');
+  assert.equal(byCode.CURE4038.courseType, 'capstone');
+  assert.equal(byCode.CURE3408.titleEn, 'Curating and Managing Arts Festival');
+  assert.match(byCode.CURE2404.requirementGroups[0], /CURE2024/);
+  assert.match(byCode.CURE3013.requirementGroups[0], /CURE3031/);
+  assert.equal(byCode.CURE2024, undefined);
+  assert.equal(byCode.CURE3031, undefined);
+  assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Digital Humanities' }).some((course) => course.courseCode === 'CURE2010'));
 });
 
 test('CUHK Religious Studies exposes all current Religious Studies Area courses as browse-only', () => {

@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-28T06:04:02.456Z",
+  "generatedAt": "2026-07-28T07:02:47.911Z",
   "universities": [
     {
       "id": "HKU",
@@ -3424,9 +3424,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/puhsn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 88,
+      "codedCourseCount": 88,
+      "courseSourceUrl": "https://www.cuhk.edu.hk/crs/download/StudyScheme/BAPH/BAPH_ENG_25.pdf"
     },
     {
       "id": "CUHK-UG-RELSN-14",
@@ -10713,9 +10714,9 @@ const catalogue = {
       "code": "PUBLIC-HUMANITIES",
       "nameEn": "Public Humanities",
       "nameZh": "Public Humanities",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admission.cuhk.edu.hk/programme/puhsn/"
+      "courseCount": 89,
+      "codedCourseCount": 88,
+      "officialUrl": "https://www2.crs.cuhk.edu.hk/baph/courses/course-list"
     },
     {
       "id": "CUHK-UG-RELSN-14-M1",
@@ -16130,7 +16131,7 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 3056,
-    "CUHK": 1046,
+    "CUHK": 1134,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
@@ -16138,7 +16139,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 18948
+  "codedCourseCount": 19036
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
