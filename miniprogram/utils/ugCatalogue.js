@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-28T05:23:41.068Z",
+  "generatedAt": "2026-07-28T06:04:02.456Z",
   "universities": [
     {
       "id": "HKU",
@@ -3443,9 +3443,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/relsn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 63,
+      "codedCourseCount": 63,
+      "courseSourceUrl": "https://www.cuhk.edu.hk/crs/download/StudyScheme/BARS/RELSN_ENG_25.pdf"
     },
     {
       "id": "CUHK-UG-THEON-15",
@@ -10722,9 +10723,9 @@ const catalogue = {
       "code": "RELIGIOUS-STUDIES",
       "nameEn": "Religious Studies",
       "nameZh": "Religious Studies",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admission.cuhk.edu.hk/programme/relsn/"
+      "courseCount": 64,
+      "codedCourseCount": 63,
+      "officialUrl": "https://www2.crs.cuhk.edu.hk/bars/curriculum-and-concentrations/course-list"
     },
     {
       "id": "CUHK-UG-THEON-15-M1",
@@ -16129,7 +16130,7 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 3056,
-    "CUHK": 983,
+    "CUHK": 1046,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
@@ -16137,7 +16138,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 18885
+  "codedCourseCount": 18948
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
