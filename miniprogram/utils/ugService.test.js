@@ -47,15 +47,15 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.programmeCount, 445);
   assert.equal(summary.majorCount, 687);
   assert.equal(summary.requirementCount, 4);
-  assert.equal(summary.courseCount, 18841);
+  assert.equal(summary.courseCount, 18899);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 18827);
-  assert.equal(summary.programmeWithCoursesCount, 286);
-  assert.equal(summary.pendingProgrammeCount, 158);
+  assert.equal(summary.codedCourseCount, 18885);
+  assert.equal(summary.programmeWithCoursesCount, 287);
+  assert.equal(summary.pendingProgrammeCount, 157);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
-  assert.equal(summary.coveragePercent, 64);
+  assert.equal(summary.coveragePercent, 65);
   assert.match(summary.generatedAt, /^\d{4}-\d{2}-\d{2}T/);
   assert.match(summary.generatedDate, /^\d{4}-\d{2}-\d{2}$/);
 });
@@ -197,6 +197,29 @@ test('CUHK English exposes the current departmental pool as a partial read-only 
   assert.equal(byCode.ENGE3900.courseType, 'internship');
   assert.equal(byCode.ENGE4700, undefined);
   assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Forensic Linguistics' }).some((course) => course.courseCode === 'ENGE2540'));
+});
+
+test('CUHK Japanese Studies exposes the current Major-assigned JASP pool as browse-only', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'JASPN');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-JASPN-8-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2025');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 58);
+  assert.equal(courses.length, 58);
+  assert.equal(byCode.JASP2470.credits, 6);
+  assert.equal(byCode.JASP2480.credits, 6);
+  assert.equal(byCode.JASP4601.courseType, 'capstone');
+  assert.equal(byCode.JASP4602.courseType, 'capstone');
+  assert.match(byCode.JASP2600.requirementGroups[0], /Business and Management Stream/);
+  assert.match(byCode.JASP3700.requirementGroups[0], /Japanese Language and Linguistics Stream/);
+  assert.equal(byCode.JASP1100, undefined);
+  assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Japanese Philosophy' }).some((course) => course.courseCode === 'JASP3800'));
 });
 
 test('CUHK Public History exposes only the official ten-course highlight list', () => {

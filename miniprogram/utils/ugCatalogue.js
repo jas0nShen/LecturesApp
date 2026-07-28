@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-28T04:57:56.979Z",
+  "generatedAt": "2026-07-28T05:23:41.068Z",
   "universities": [
     {
       "id": "HKU",
@@ -3324,9 +3324,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/jaspn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 58,
+      "codedCourseCount": 58,
+      "courseSourceUrl": "https://www.jas.cuhk.edu.hk/wp-content/uploads/2025/08/JASPN-Study-Scheme_ENG_25.pdf"
     },
     {
       "id": "CUHK-UG-LINGN-9",
@@ -10661,8 +10662,8 @@ const catalogue = {
       "code": "JAPANESE-STUDIES",
       "nameEn": "Japanese Studies",
       "nameZh": "Japanese Studies",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 59,
+      "codedCourseCount": 58,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/jaspn/"
     },
     {
@@ -16128,7 +16129,7 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 3056,
-    "CUHK": 925,
+    "CUHK": 983,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
@@ -16136,7 +16137,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 18827
+  "codedCourseCount": 18885
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
