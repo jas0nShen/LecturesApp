@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-28T03:25:30.116Z",
+  "generatedAt": "2026-07-28T03:52:31.192Z",
   "universities": [
     {
       "id": "HKU",
@@ -4570,9 +4570,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/gdrsn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 62,
+      "codedCourseCount": 62,
+      "courseSourceUrl": "https://www.gender.cuhk.edu.hk/programmes-and-courses/undergraduate-programme/bachelor-of-social-science-in-gender-studies"
     },
     {
       "id": "CUHK-UG-GRMDN-74",
@@ -11307,8 +11308,8 @@ const catalogue = {
       "code": "GENDER-STUDIES",
       "nameEn": "Gender Studies",
       "nameZh": "Gender Studies",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 63,
+      "codedCourseCount": 62,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/gdrsn/"
     },
     {
@@ -16124,7 +16125,7 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 3056,
-    "CUHK": 765,
+    "CUHK": 827,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
@@ -16132,7 +16133,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 18667
+  "codedCourseCount": 18729
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

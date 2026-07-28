@@ -47,11 +47,11 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.programmeCount, 445);
   assert.equal(summary.majorCount, 687);
   assert.equal(summary.requirementCount, 4);
-  assert.equal(summary.courseCount, 18681);
+  assert.equal(summary.courseCount, 18743);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 18667);
-  assert.equal(summary.programmeWithCoursesCount, 282);
-  assert.equal(summary.pendingProgrammeCount, 162);
+  assert.equal(summary.codedCourseCount, 18729);
+  assert.equal(summary.programmeWithCoursesCount, 283);
+  assert.equal(summary.pendingProgrammeCount, 161);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
@@ -172,6 +172,25 @@ test('CUHK History exposes the verified 2025/26 required and capstone courses', 
   assert(courses.some((course) => course.courseCode === 'HIST1001' && course.courseType === 'core'));
   assert(courses.some((course) => course.courseCode === 'HIST4812' && course.courseType === 'capstone' && course.credits === 5));
   assert(ugService.listMajorCourses(history.id, major.id, { keyword: 'Western History' }).some((course) => course.courseCode === 'HIST1002'));
+});
+
+test('CUHK Gender Studies exposes the current read-only course list without resolving source-unit conflicts', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'GDRSN');
+  const major = ugService.listMajors(programme.id).find((item) => item.nameEn === 'Gender Studies');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.codedCourseCount, 62);
+  assert.equal(courses.length, 62);
+  assert(courses.every((course) => course.credits === 0));
+  assert(courses.some((course) => course.courseCode === 'GDRD3002' && course.titleEn === 'Gender Studies: Special Topic II'));
+  assert(courses.some((course) => course.courseCode === 'GDRS4009' && course.courseType === 'internship'));
+  assert(courses.some((course) => course.courseCode === 'GDRS4005' && course.courseType === 'capstone'));
+  assert(courses.some((course) => course.courseCode === 'ANTH2310' && course.requirementGroups.some((group) => group.includes('official # marker'))));
+  assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Diversity, Equity' }).some((course) => course.courseCode === 'GDRS3016'));
 });
 
 test('CUHK Human Movement Science and Health Studies exposes its official course pool without hiding the source conflict', () => {
