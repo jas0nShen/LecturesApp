@@ -17,10 +17,12 @@
 - 1.0.12 已补充 HKU 商科、经济、统计、会计及法学双学位官方课程清单，并对规则未闭合 Programme 保持只读浏览，不显示未经核验的毕业完成比例。
 - HKU 商科与法学批次由提交 `7c2e66f` 发布；HKU `6688 Science Master Class` 与 `6901 Bachelor of Science` 批次由提交 `c1076cf` 发布；HKU `6987 Computer Engineering / Electrical Engineering / Electronic Engineering` 三 Major 与 HKU `6925` / `6858` / `6897` 来源审查由提交 `8fa7ce8 Expand HKU engineering curricula for 1.0.12` 发布。
 - 包版本：`1.0.12`
-- 当前课程提交 `d4e873c` 已推送到 `origin/main`；其 source supplement、生成 catalogue/shards/分包和测试均已推送。
+- 当前课程提交 `6dedaa2` 已推送到 `origin/main`；其 source supplement、生成 catalogue/shards/分包和测试均已推送。
 - 当前 Git 代码已包含 CUHK `JASPN Japanese Studies` 58 门 Major-assigned JASP 课程；标准、Local、Stream、senior-entry 与 double-Major 路径未完整闭合，因此保持只读浏览，不生成毕业完成百分比。
 - 当前 Git 代码也已包含 CUHK `RELSN Religious Studies` 63 门 Religious Studies Area 课程；标准与 senior-entry 路径因 Cultural Studies 和跨院 Concentration 开放池未闭合而保持只读浏览。
-- 当前 1.0.12 微信开发版仍停留在 CUHK `ENGEN English` 批次，指标为 18,827 条 UG 课程、286 个已开放 Programme 和 961/961 测试。提交 `d4e873c` 的上传尝试因登录态过期返回 code 10；随后一次二维码登录返回 code 25 超时，第二次登录在手机端未确认且二维码界面持续加载后手动停止，因此 `JASPN` 与 `RELSN` 批次均尚未上传。
+- 当前 Git 代码还包含 CUHK `PUHSN Public Humanities` 88 门 2025-26 intake-specific 课程；标准与 senior-entry 路径、外系 Faculty Package、Religious Studies Areas、Concentration 替代及课程复用规则未闭合，因此保持只读浏览，不生成毕业完成百分比。
+- `PUHSN` 保留 Study Scheme 的 `CURE2404`、`CURE3013` 和 `CURE3408 Curating and Managing Arts Festival`；当前 Course List / Offering 分别出现 `CURE2024`、`CURE3031` 与 `Curating and Organizing Arts Festival`，来源冲突已显式记录，没有静默替换 intake-specific 代码或标题。
+- 当前 1.0.12 微信开发版仍停留在 CUHK `ENGEN English` 批次，指标为 18,827 条 UG 课程、286 个已开放 Programme 和 961/961 测试。提交 `d4e873c` 的 `JASPN` / `RELSN` 批次与提交 `6dedaa2` 的 `PUHSN` 批次均尚未上传；2026-07-28 本轮开发者工具登录状态为 `false`，连续两次新二维码登录均因未完成扫码确认返回 code 25。
 - 本批开放 HKU `6755` 其余 BBA Major、`6767` Economics、`6779` Statistical Decision Sciences、`6781` Accounting、`6896` IBGM、Asset Management and Private Banking、Quantitative Finance、Business Analytics、Marketing Analytics and Technology，以及 `6808` / `6810` 两个 Law double degree 的官方可核验课程。
 - `6808` 与 `6810` 的 Law elective universe 未由 Programme-specific 来源闭合，因此只发布已核验代码供只读浏览，不生成完整毕业结构或完成百分比。
 - 旧单一 `ug-data-hku`、`ug-data-hkbu` 已由生成脚本替换；当前工作区 HKU 使用 `ug-data-hku-a` / `ug-data-hku-b` / `ug-data-hku-c` 三分包，HKBU 使用 `ug-data-hkbu-a` / `ug-data-hkbu-b` 双分包。不要手工恢复旧 loader。
@@ -37,6 +39,8 @@
 最近关键提交（本次交接提交前）：
 
 ```text
+6dedaa2 Add CUHK Public Humanities curriculum
+88d0d63 Document CUHK curriculum upload status
 d4e873c Add CUHK Religious Studies curriculum
 3ea4b89 Add CUHK Japanese Studies curriculum
 7eba274 Document CUHK English upload
@@ -251,7 +255,8 @@ df91815 Add PolyU Design curriculum and source evidence
 - 2026-07-28 已用 CUHK `HISTN-PUH Public History` 与 `CHEDN Early Childhood Education` 课程覆盖上传同版本 `1.0.12`，备注为 `1.0.12: Add CUHK Public History and Early Childhood Education`，命令返回 `✔ upload`；实际上传包 17,464,660 bytes、主包 1,482,845 bytes，所有 22 个分包均低于 2 MB。
 - 2026-07-28 已用 CUHK `ENGEN English` 57 门课程覆盖上传同版本 `1.0.12`，备注为 `1.0.12: Add CUHK English curriculum`，命令返回 `✔ upload`；实际上传包 17,511,130 bytes、主包 1,483,018 bytes，所有 22 个分包均低于 2 MB。
 - 2026-07-28 提交 `d4e873c` 的 CUHK `JASPN Japanese Studies` 与 `RELSN Religious Studies` 代码已推送到 GitHub；本轮拟用备注为 `1.0.12: Add CUHK Religious Studies curriculum`。微信 CLI 上传因登录态过期返回 code 10；随后一次二维码登录返回 code 25 超时，第二次登录在手机端未确认且二维码界面持续加载后手动停止，因此本批尚未上传。
-- 当前 Git 代码完整检查：965/965 测试通过、`ready=true`、主包预估 1,842,483 bytes，总估算包体 22,272,932 bytes，所有 22 个分包低于 2 MB，敏感 API 为 0。
+- 2026-07-28 提交 `6dedaa2` 的 CUHK `PUHSN Public Humanities` 88 门课程已推送到 GitHub；拟用备注为 `1.0.12: Add CUHK Public Humanities curriculum`。微信开发者工具登录状态为 `false`，连续两次新二维码登录均因未完成扫码确认返回 code 25，因此本批也尚未上传。
+- 当前 Git 代码完整检查：967/967 测试通过、`ready=true`、19,036 条 UG coded courses、289 个已开放 Programme、主包预估 1,842,592 bytes、总估算包体 22,354,275 bytes，所有 22 个分包低于 2 MB，敏感 API 为 0。
 - 微信开发者工具确认 PolyU Computer Science 可加载 83 门课程，首页入口序号为 `01 / 02 / 03 / 04`；模拟器测试结束后已恢复原 Architectural Studies 资料，`plannedUgCourseKeys`、`ugCoursePlanAssignments`、`completedUgCourseKeys` 均为空。
 - 微信官方 automation 已完成普通 `POLYU-TPG-090` 闭环：36 门课程、`COMP5521` 加入计划、列表状态、官方分组、标记已修、复制与移除均通过。
 - 多 Track `HKU-TPG-031` 验收通过：Generalist 计 1 门，Chinese Language Education 计 2 门；两条记录均保留，旧 Track 课程不计入 Generalist 当前统计。
@@ -264,12 +269,12 @@ df91815 Add PolyU Design curriculum and source evidence
 
 - 八校 TPG 已达到 100% source reviewed；没有剩余 `unreviewed` Programme。
 - 仍有 101 个 Programme 因官方公开来源缺代码、学分、Track 归属、最终审批或规则冲突而标记 `blocked`。除非出现新的官方证据，不应把它们当作待猜测补全项。
-- UG 来源覆盖报告仍有 156 个缺口：36 个 index-only、25 个 reviewed-no-codes、95 个 no-source。下一批继续从官方课程手册或部门课程页取证，不从 Programme 简介反推代码或规则。
+- UG 来源覆盖报告仍有 155 个缺口：36 个 index-only、25 个 reviewed-no-codes、94 个 no-source。下一批继续从官方课程手册或部门课程页取证，不从 Programme 简介反推代码或规则。
 - 多个已核验 TPG Programme 仍标记 `manual_review_required`，表示课程池可发布，但复杂路径/跨组最低要求不能由当前规则引擎自动证明。
 
 ### 发布与验收缺口
 
-- 仓库版本资料与微信开发版版本号均为 `1.0.12`，但 Git 最新 `d4e873c` 的 `JASPN` / `RELSN` 批次尚未覆盖上传；上传不等于已提交审核。
+- 仓库版本资料与微信开发版版本号均为 `1.0.12`，但 Git 最新 `6dedaa2` 所含 `JASPN` / `RELSN` / `PUHSN` 批次尚未覆盖上传；上传不等于已提交审核。
 - `docs/RELEASE_CHECKLIST.md` 的 iOS/Android 真机矩阵没有完成记录。
 - 微信后台隐私声明、服务类目、备案、审核材料核对尚未在仓库中记录为完成。
 - 尚未提交微信审核，也没有发布正式版。
@@ -380,7 +385,7 @@ npm run status:ug-sources -- --missing-only --priority launch --missing-limit 10
 
 ## 当前工作区
 
-当前 1.0.12 微信开发版对应已推送课程提交 `0cb0e93`，包含 CUHK `ENGEN English` 与 `CHPRN` / `BSCGB` 来源审查批次。交接文档提交后，工作区只保留用户本地诊断目录：
+当前 1.0.12 微信开发版对应已推送课程提交 `0cb0e93`，包含 CUHK `ENGEN English` 与 `CHPRN` / `BSCGB` 来源审查批次；Git 当前课程提交为 `6dedaa2`，后续 `JASPN` / `RELSN` / `PUHSN` 数据尚未覆盖上传。交接文档提交后，工作区只保留用户本地诊断目录：
 
 ```text
 ?? .playwright-cli/
@@ -390,7 +395,7 @@ npm run status:ug-sources -- --missing-only --priority launch --missing-limit 10
 
 ## 已运行的测试及结果
 
-2026-07-28 在提交并上传的 CUHK `ENGEN English` 与 `CHPRN` / `BSCGB` 来源审查代码上重新运行：
+2026-07-28 在已推送但尚未覆盖上传的 CUHK `PUHSN Public Humanities` 代码上重新运行：
 
 ```text
 npm run check:ship: PASS
@@ -402,18 +407,18 @@ npm run check:ship: PASS
   UG supplement validation: PASS
   directory audit: PASS, blockingErrors=[]
   server --check: PASS
-  Node tests: PASS, 965/965
+  Node tests: PASS, 967/967
   check:release: PASS, ready=true
 
 git diff --check: PASS
 npm run status:tpg-courses -- --school=HKU: PASS (448/448 reviewed, 0 unreviewed)
-npm run status:ug-sources -- --missing-only --missing-summary --missing-limit 0: PASS (156 Programme-level source gaps: 36 index-only, 25 reviewed-no-codes, 95 no-source)
+npm run status:ug-sources -- --missing-only --missing-summary --missing-limit 0: PASS (155 Programme-level source gaps: 36 index-only, 25 reviewed-no-codes, 94 no-source)
 ```
 
 发布指标：
 
-- 当前代码主包预估：1,842,483 bytes。
-- 当前代码总估算包体：22,272,932 bytes，196 个上传文件。
+- 当前代码主包预估：1,842,592 bytes。
+- 当前代码总估算包体：22,354,275 bytes，196 个上传文件。
 - 最新上传 1.0.12 的 CLI 实际包：17,511,130 bytes；实际主包：1,483,018 bytes。
 - 当前 22 个 UG/TPG 分包均低于 2 MB；最大为 `ug-data-hku-a` 1,869,435 bytes。
 - 页面：17；敏感 API：0。
@@ -423,7 +428,7 @@ npm run status:ug-sources -- --missing-only --missing-summary --missing-limit 0:
 
 ## 已知问题、风险和不要做的事情
 
-- 微信已通过官方 CLI 上传 `1.0.12`，但不要把上传成功当作已提审或已发布。
+- 微信此前已通过官方 CLI 上传 `1.0.12`，但当前 Git 的 `JASPN` / `RELSN` / `PUHSN` 批次尚未覆盖上传；不要把历史上传成功当作当前代码已上传，更不要当作已提审或已发布。
 - 不要把“上传成功”写成“已提审”或“已发布”。这两个外部动作尚未执行。
 - 不要删除或提交 `.playwright-cli/`，除非用户明确决定如何处理该诊断目录。
 - 不要手改生成的 catalogue、course shard 或 loader；从 source/supplement 和 builder 修改后重新生成。
