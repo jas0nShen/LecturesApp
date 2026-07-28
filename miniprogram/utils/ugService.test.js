@@ -47,11 +47,11 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.programmeCount, 445);
   assert.equal(summary.majorCount, 687);
   assert.equal(summary.requirementCount, 4);
-  assert.equal(summary.courseCount, 19229);
+  assert.equal(summary.courseCount, 19290);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 19215);
-  assert.equal(summary.programmeWithCoursesCount, 293);
-  assert.equal(summary.pendingProgrammeCount, 151);
+  assert.equal(summary.codedCourseCount, 19276);
+  assert.equal(summary.programmeWithCoursesCount, 294);
+  assert.equal(summary.pendingProgrammeCount, 150);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);

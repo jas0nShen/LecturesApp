@@ -28,6 +28,8 @@
 - `THEON` 2025-26 Student Handbook 第 5-7 页已通过文本提取与逐页渲染核验；PDF 唯一代码与 supplement 为 44/44。手册漏填 `THEO2224` 学分，实时官方课程表与课程页均确认 3 units；手册写 `THEO2234 Catholic Dogmatic`，实时官方课程表与课程页使用 `Catholic Dogmatics`，supplement 采用实时标题并显式记录差异。
 - 当前 Git 代码新增 CUHK `SOWKN Social Work` 32 门课程：14 门 Core、4 门 Field Instruction、14 门 Major Elective。跨院 Faculty Package、PSYC/SOCI 开放池及 Year 4 option 路径未闭合，`SOWK4580` 官方 units 单元格为空，因此保持只读浏览且该课以 0 表示未知学分，不生成毕业完成百分比。
 - 当前 Git 代码新增 CUHK `SOCIN Sociology` 62 门 2025-26 Major 课程：`SOCI1001`、9 门 Required 与 52 门 Elective pool，全部为官方明确的 3 units。`SOCI1102` 只出现在通用 Course List 和 Minor，不在 2025-26 Major pool，未导入；跨院 Faculty Package、Concentration、senior-entry、double Major 与 JD 路径未闭合，因此保持只读浏览，不生成毕业完成百分比。
+- 当前 Git 代码新增 CUHK `ECONN Economics` 61 门课程：官网所称 12 门 core（含 Faculty Package 固定课 `ECON2011`）以及官方 Course List 中全部 49 门 3000/4000-level ECON elective。PDF 的 66 门 Course List 与本地目标集合已自动比对，代码、标题、学分均无缺失、多余或差异。
+- `ECONN` 官方 2024-25 requirement 同时允许 5000+ ECON、MATH 与 Data Analytics 跨系开放池，并包含五个 Concentration、数学豁免、两类 senior-entry 及独立 CUHK-Tsinghua 路径；这些规则未闭合，因此该 61 门清单保持只读浏览，不生成毕业完成百分比。非 Required 且低于 3000 level 的 `ECON1010`、`1210`、`1220`、`1310`、`1420` 未导入。
 - 当前 1.0.12 微信开发版仍停留在 CUHK `ENGEN English` 批次，指标为 18,827 条 UG 课程、286 个已开放 Programme 和 961/961 测试。提交 `d4e873c` 的 `JASPN` / `RELSN`、`6dedaa2` 的 `PUHSN`、`2831a34` 的 `TRANN`、`e065c61` 的 `THEON`、`27a9ac1` 的 `SOWKN` 与 `656203c` 的 `SOCIN` 批次均尚未上传。
 - 本批开放 HKU `6755` 其余 BBA Major、`6767` Economics、`6779` Statistical Decision Sciences、`6781` Accounting、`6896` IBGM、Asset Management and Private Banking、Quantitative Finance、Business Analytics、Marketing Analytics and Technology，以及 `6808` / `6810` 两个 Law double degree 的官方可核验课程。
 - `6808` 与 `6810` 的 Law elective universe 未由 Programme-specific 来源闭合，因此只发布已核验代码供只读浏览，不生成完整毕业结构或完成百分比。
@@ -268,7 +270,7 @@ df91815 Add PolyU Design curriculum and source evidence
 - 2026-07-28 提交 `e065c61` 的 CUHK `THEON Theology` 44 门课程已推送到 GitHub；拟用备注为 `1.0.12: Add CUHK Theology curriculum`。推送后微信开发者工具登录状态为 `false`，两次新二维码登录均因未完成扫码确认返回 code 25，因此包含 `JASPN` / `RELSN` / `PUHSN` / `TRANN` / `THEON` 的当前代码仍未上传。
 - 2026-07-28 提交 `27a9ac1` 的 CUHK `SOWKN Social Work` 32 门课程已推送到 GitHub；拟用备注为 `1.0.12: Add CUHK Social Work curriculum`。`npm run check:ship` 通过 973/973 测试且 `ready=true`；微信开发者工具登录状态为 `false`，新二维码登录因 Mac 锁屏未完成扫码确认并返回 code 25，因此当前代码仍未上传。
 - 2026-07-28 提交 `656203c` 的 CUHK `SOCIN Sociology` 62 门课程已推送到 GitHub。以备注 `1.0.12: Add CUHK Sociology curriculum` 执行微信上传时先返回登录过期 `code 10`，随后两次官方 CLI 二维码登录均因未完成扫码确认返回 `code 25`，因此包含该批次的当前代码仍未上传。
-- 当前 Git 代码完整检查：975/975 测试通过、`ready=true`、19,215 条 UG coded courses、293 个已开放 Programme、主包预估 1,843,056 bytes、总估算包体 22,524,920 bytes，所有 22 个分包低于 2 MB，敏感 API 为 0。
+- 当前 Git 代码完整检查：976/976 测试通过、`ready=true`、19,276 条 UG coded courses、294 个已开放 Programme、主包预估 1,843,170 bytes、总估算包体 22,582,954 bytes，所有 22 个分包低于 2 MB，敏感 API 为 0。
 - 微信开发者工具确认 PolyU Computer Science 可加载 83 门课程，首页入口序号为 `01 / 02 / 03 / 04`；模拟器测试结束后已恢复原 Architectural Studies 资料，`plannedUgCourseKeys`、`ugCoursePlanAssignments`、`completedUgCourseKeys` 均为空。
 - 微信官方 automation 已完成普通 `POLYU-TPG-090` 闭环：36 门课程、`COMP5521` 加入计划、列表状态、官方分组、标记已修、复制与移除均通过。
 - 多 Track `HKU-TPG-031` 验收通过：Generalist 计 1 门，Chinese Language Education 计 2 门；两条记录均保留，旧 Track 课程不计入 Generalist 当前统计。
@@ -281,12 +283,12 @@ df91815 Add PolyU Design curriculum and source evidence
 
 - 八校 TPG 已达到 100% source reviewed；没有剩余 `unreviewed` Programme。
 - 仍有 101 个 Programme 因官方公开来源缺代码、学分、Track 归属、最终审批或规则冲突而标记 `blocked`。除非出现新的官方证据，不应把它们当作待猜测补全项。
-- UG 来源覆盖报告仍有 151 个缺口：36 个 index-only、25 个 reviewed-no-codes、90 个 no-source。下一批继续从官方课程手册或部门课程页取证，不从 Programme 简介反推代码或规则。
+- UG 来源覆盖报告仍有 150 个缺口：36 个 index-only、25 个 reviewed-no-codes、89 个 no-source。下一批继续从官方课程手册或部门课程页取证，不从 Programme 简介反推代码或规则。
 - 多个已核验 TPG Programme 仍标记 `manual_review_required`，表示课程池可发布，但复杂路径/跨组最低要求不能由当前规则引擎自动证明。
 
 ### 发布与验收缺口
 
-- 仓库版本资料与微信开发版版本号均为 `1.0.12`，但 Git 最新 `656203c` 所含 `JASPN` / `RELSN` / `PUHSN` / `TRANN` / `THEON` / `SOWKN` / `SOCIN` 批次尚未覆盖上传；上传不等于已提交审核。
+- 仓库版本资料与微信开发版版本号均为 `1.0.12`，但 Git 最新课程批次所含 `JASPN` / `RELSN` / `PUHSN` / `TRANN` / `THEON` / `SOWKN` / `SOCIN` / `ECONN` 尚未覆盖上传；上传不等于已提交审核。
 - `docs/RELEASE_CHECKLIST.md` 的 iOS/Android 真机矩阵没有完成记录。
 - 微信后台隐私声明、服务类目、备案、审核材料核对尚未在仓库中记录为完成。
 - 尚未提交微信审核，也没有发布正式版。
