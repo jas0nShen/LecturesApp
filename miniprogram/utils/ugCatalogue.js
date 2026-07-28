@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-28T09:28:35.671Z",
+  "generatedAt": "2026-07-28T10:28:07.854Z",
   "universities": [
     {
       "id": "HKU",
@@ -3464,9 +3464,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/theon/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 44,
+      "codedCourseCount": 44,
+      "courseSourceUrl": "https://www.theology.cuhk.edu.hk/sites/default/files/student_handbook/Student%20Handbook_DSCCC_2025-26_v1_2025.08.20.pdf"
     },
     {
       "id": "CUHK-UG-TRANN-16",
@@ -10735,9 +10736,9 @@ const catalogue = {
       "code": "THEOLOGY",
       "nameEn": "Theology",
       "nameZh": "Theology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admission.cuhk.edu.hk/programme/theon/"
+      "courseCount": 45,
+      "codedCourseCount": 44,
+      "officialUrl": "https://www.theology.cuhk.edu.hk/en/programmes/ba.html"
     },
     {
       "id": "CUHK-UG-TRANN-16-M1",
@@ -16132,7 +16133,7 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 3056,
-    "CUHK": 1175,
+    "CUHK": 1219,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
@@ -16140,7 +16141,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 19077
+  "codedCourseCount": 19121
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

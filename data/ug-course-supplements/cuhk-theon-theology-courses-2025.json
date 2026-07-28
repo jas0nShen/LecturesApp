@@ -1,0 +1,67 @@
+{
+  "provider": "CUHK Divinity School of Chung Chi College 2025-26 Student Handbook and current BA Theology curriculum",
+  "academicYear": "2025-26; BA requirements applicable to students admitted in 2022-23 and thereafter",
+  "sourceUrl": "https://www.theology.cuhk.edu.hk/sites/default/files/student_handbook/Student%20Handbook_DSCCC_2025-26_v1_2025.08.20.pdf",
+  "officialUrl": "https://www.theology.cuhk.edu.hk/en/programmes/ba.html",
+  "note": "The official 2025-26 Student Handbook publishes the current Bachelor of Arts in Theology curriculum for students admitted in 2022-23 and thereafter: 9 units of Faculty Package, 28 units of Major Required Courses and 33 units of Major Electives within a 123-unit degree. This supplement exposes the 44 unique courses explicitly listed in the Handbook's Major Required and Theological Studies Areas 1-5 tables: ten Major Required courses and 34 additional Area courses. It omits the cross-department Faculty Package and the open CURE elective pool because their complete current titles and applicability are not closed by the BA course tables. The Handbook leaves the THEO2224 unit cell blank; the official current course list and THEO2224 course page both confirm 3 units. The Handbook writes THEO2234 as 'Catholic Dogmatic', while the official current course list and course page use 'Catholic Dogmatics'; this supplement uses the current course-page title. Ten Special Topics courses marked with a caret may be taken more than once in different terms, which the local course-key model does not automatically audit. The resulting list is intentionally browse-only and must not be presented as a complete 70-unit Major or 123-unit graduation audit.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "THEON",
+      "jupasCode": "JS4111",
+      "programmeId": "CUHK-UG-THEON-15",
+      "majorId": "CUHK-UG-THEON-15-M1",
+      "courses": [
+        { "code": "CURE1122", "title": "Chinese Culture and Its Religion", "credits": 3, "courseType": "core", "group": "Major Required Courses · fixed · scheduled across Year 2-3 in the recommended pattern" },
+        { "code": "PHIL1110", "title": "Introduction to Philosophy", "credits": 3, "courseType": "core", "group": "Major Required Courses · fixed · scheduled across Year 2-3 in the recommended pattern" },
+        { "code": "THEO1211", "title": "Introduction to the Hebrew Bible", "credits": 3, "recommendedYear": 1, "courseType": "core", "group": "Major Required Courses · fixed · also listed in Theological Studies Area 1: Biblical Studies" },
+        { "code": "THEO1212", "title": "Introduction to the New Testament", "credits": 3, "recommendedYear": 1, "courseType": "core", "group": "Major Required Courses · fixed · also listed in Theological Studies Area 1: Biblical Studies" },
+        { "code": "THEO2235", "title": "Systematic Theology I", "credits": 3, "courseType": "core", "group": "Major Required Courses · fixed · also listed in Theological Studies Area 3: Theology · scheduled across Year 2-3" },
+        { "code": "THEO2236", "title": "Systematic Theology II", "credits": 3, "courseType": "core", "group": "Major Required Courses · fixed · also listed in Theological Studies Area 3: Theology · scheduled across Year 2-3" },
+        { "code": "THEO2241", "title": "Pastoral Theology", "credits": 3, "recommendedYear": 3, "courseType": "core", "group": "Major Required Courses · fixed · also listed in Theological Studies Area 4: Pastoral Studies" },
+        { "code": "THEO3221", "title": "History of Christianity in China", "credits": 3, "recommendedYear": 2, "courseType": "core", "group": "Major Required Courses · fixed · also listed in Theological Studies Area 2: History of Christianity" },
+        { "code": "THEO4241", "title": "Field Education I", "credits": 2, "recommendedYear": 4, "courseType": "core", "group": "Major Required Courses · fixed · also listed in Theological Studies Area 4: Pastoral Studies" },
+        { "code": "THEO4242", "title": "Field Education II", "credits": 2, "recommendedYear": 4, "courseType": "core", "group": "Major Required Courses · fixed · also listed in Theological Studies Area 4: Pastoral Studies" },
+
+        { "code": "THEO2211", "title": "Pentateuchal Studies", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 1: Biblical Studies · complete at least two Area 1 courses at 2000 level or above" },
+        { "code": "THEO2212", "title": "Prophetic Literature", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 1: Biblical Studies · complete at least two Area 1 courses at 2000 level or above" },
+        { "code": "THEO2213", "title": "Wisdom and the Psalms", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 1: Biblical Studies · complete at least two Area 1 courses at 2000 level or above" },
+        { "code": "THEO2214", "title": "Synoptic Gospels", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 1: Biblical Studies · complete at least two Area 1 courses at 2000 level or above" },
+        { "code": "THEO2215", "title": "Johannine Literature", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 1: Biblical Studies · complete at least two Area 1 courses at 2000 level or above" },
+        { "code": "THEO2216", "title": "Pauline Letters", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 1: Biblical Studies · complete at least two Area 1 courses at 2000 level or above" },
+        { "code": "THEO3213", "title": "Biblical Studies: Special Topics I", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 1: Biblical Studies · complete at least two Area 1 courses at 2000 level or above · repeatable in different terms" },
+        { "code": "THEO3214", "title": "Biblical Studies: Special Topics II", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 1: Biblical Studies · complete at least two Area 1 courses at 2000 level or above · repeatable in different terms" },
+        { "code": "THEO3215", "title": "New Testament Greek I", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 1: Biblical Studies · complete at least two Area 1 courses at 2000 level or above" },
+        { "code": "THEO3216", "title": "New Testament Greek II", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 1: Biblical Studies · complete at least two Area 1 courses at 2000 level or above" },
+        { "code": "THEO3217", "title": "Biblical Hebrew I", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 1: Biblical Studies · complete at least two Area 1 courses at 2000 level or above" },
+        { "code": "THEO3218", "title": "Biblical Hebrew II", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 1: Biblical Studies · complete at least two Area 1 courses at 2000 level or above" },
+
+        { "code": "THEO2221", "title": "Early and Medieval Church", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 2: History of Christianity · complete one Area 2 course" },
+        { "code": "THEO2224", "title": "History of Christianity in Asia", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 2: History of Christianity · complete one Area 2 course · unit confirmed by the current official course page" },
+        { "code": "THEO3220", "title": "History of Christianity: Special Topics I", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 2: History of Christianity · complete one Area 2 course · repeatable in different terms" },
+        { "code": "THEO3222", "title": "History of Christianity in Hong Kong", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 2: History of Christianity · complete one Area 2 course" },
+        { "code": "THEO3229", "title": "History of Christianity: Special Topics II", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 2: History of Christianity · complete one Area 2 course · repeatable in different terms" },
+
+        { "code": "THEO2231", "title": "Humanity and Salvation", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 3: Theology · complete at least two Area 3 courses at 2000 level or above" },
+        { "code": "THEO2234", "title": "Catholic Dogmatics", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 3: Theology · complete at least two Area 3 courses at 2000 level or above · title follows the current official course page" },
+        { "code": "THEO3235", "title": "Theological Studies: Special Topics I", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 3: Theology · complete at least two Area 3 courses at 2000 level or above · repeatable in different terms" },
+        { "code": "THEO3236", "title": "Theological Studies: Special Topics II", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 3: Theology · complete at least two Area 3 courses at 2000 level or above · repeatable in different terms" },
+
+        { "code": "THEO3240", "title": "Local Church Study", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 4: Pastoral Studies · complete one Area 4 course" },
+        { "code": "THEO3241", "title": "Homiletics", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 4: Pastoral Studies · complete one Area 4 course" },
+        { "code": "THEO3242", "title": "Denominational Tradition and Polity", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 4: Pastoral Studies · complete one Area 4 course" },
+        { "code": "THEO3244", "title": "Liturgics", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 4: Pastoral Studies · complete one Area 4 course" },
+        { "code": "THEO3245", "title": "Preaching", "credits": 2, "courseType": "major_elective", "group": "Theological Studies Area 4: Pastoral Studies · complete one Area 4 course" },
+        { "code": "THEO3246", "title": "Death and Dying", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 4: Pastoral Studies · complete one Area 4 course" },
+        { "code": "THEO3247", "title": "Pastoral Studies: Special Topics I", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 4: Pastoral Studies · complete one Area 4 course · repeatable in different terms" },
+        { "code": "THEO3248", "title": "Pastoral Studies: Special Topics II", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 4: Pastoral Studies · complete one Area 4 course · repeatable in different terms" },
+
+        { "code": "THEO2251", "title": "Foundation of Religious Education", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 5: Christianity and Society · complete one Area 5 course" },
+        { "code": "THEO3252", "title": "Approaches to Mission Studies", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 5: Christianity and Society · complete one Area 5 course" },
+        { "code": "THEO3254", "title": "Christian Ethics", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 5: Christianity and Society · complete one Area 5 course" },
+        { "code": "THEO3255", "title": "Christianity and Society: Special Topics I", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 5: Christianity and Society · complete one Area 5 course · repeatable in different terms" },
+        { "code": "THEO3256", "title": "Christianity and Society: Special Topics II", "credits": 3, "courseType": "major_elective", "group": "Theological Studies Area 5: Christianity and Society · complete one Area 5 course · repeatable in different terms" }
+      ]
+    }
+  ]
+}
