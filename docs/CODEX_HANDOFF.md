@@ -1,6 +1,6 @@
 # Codex 项目交接
 
-最后核验时间：2026-07-29（Asia/Shanghai）
+最后核验时间：2026-07-30（Asia/Shanghai）
 
 ## 当前项目目标
 
@@ -17,7 +17,7 @@
 - 1.0.12 已补充 HKU 商科、经济、统计、会计及法学双学位官方课程清单，并对规则未闭合 Programme 保持只读浏览，不显示未经核验的毕业完成比例。
 - HKU 商科与法学批次由提交 `7c2e66f` 发布；HKU `6688 Science Master Class` 与 `6901 Bachelor of Science` 批次由提交 `c1076cf` 发布；HKU `6987 Computer Engineering / Electrical Engineering / Electronic Engineering` 三 Major 与 HKU `6925` / `6858` / `6897` 来源审查由提交 `8fa7ce8 Expand HKU engineering curricula for 1.0.12` 发布。
 - 包版本：`1.0.13`
-- 当前课程更新提交 `0c640ce` 已推送到 `origin/main`；`1.0.13` 发布起始提交为 `2228b33`。
+- 当前课程更新提交 `24e0373` 已推送到 `origin/main`；`1.0.13` 发布起始提交为 `2228b33`。
 - 当前 Git 代码已包含 CUHK `JASPN Japanese Studies` 58 门 Major-assigned JASP 课程；标准、Local、Stream、senior-entry 与 double-Major 路径未完整闭合，因此保持只读浏览，不生成毕业完成百分比。
 - 当前 Git 代码也已包含 CUHK `RELSN Religious Studies` 63 门 Religious Studies Area 课程；标准与 senior-entry 路径因 Cultural Studies 和跨院 Concentration 开放池未闭合而保持只读浏览。
 - 当前 Git 代码还包含 CUHK `PUHSN Public Humanities` 88 门 2025-26 intake-specific 课程；标准与 senior-entry 路径、外系 Faculty Package、Religious Studies Areas、Concentration 替代及课程复用规则未闭合，因此保持只读浏览，不生成毕业完成百分比。
@@ -34,7 +34,8 @@
 - `GRMDN` 保留 6 门 ordinary required、3 门 Field Studies、2 门 Final Year Thesis 及四个 Concentration 的课程池和必选条件。已核验逐课学分仅有 `GRMD1401=3`、`GRMD1403=3`、`GRMD1011=2`，其余 59 门以 0 表示未知；跨院 Faculty Package、senior-entry 与完整 elective 路径未闭合，因此保持只读浏览，不生成毕业完成百分比。
 - 当前 Git 代码新增 CUHK `NSCIN Natural Sciences` 40 门 2026-27-and-thereafter Required Courses 唯一代码，覆盖 Biological Sciences、Biotechnology、Environmental Studies、Food and Nutrition、Data Science、Chemical and Testing Sciences 与 Physical Sciences 七个 Concentration；自动目标集合比对为 `missing=[]`、`extra=[]`。
 - `NSCIN` 是两年制 Non-JUPAS senior-entry Programme，Major requirement 为 51 units。公开页面仅按学科范围定义开放 elective pools，未发布封闭代码表；10 门组内选项没有逐课学分，因此以 0 表示未知。当前只发布 40 门 Required-code union 供只读浏览，不生成毕业完成百分比。
-- 当前 1.0.13 微信开发版已上传至课程更新提交 `0c640ce`，包含 CUHK `GRMDN` / `NSCIN` 以及此前 `ECONN` / `JASPN` / `RELSN` / `PUHSN` / `TRANN` / `THEON` / `SOWKN` / `SOCIN` 课程数据。
+- 当前 Git 代码新增 CUHK `RMSCN Risk Management Science` 官方 Course List 的全部 16 门 RMSC 课程，其中 7 门 Core、5 门 Major Elective、4 门 Capstone；3 门为 1 unit，其余 13 门为 3 units。普通 Major 与 Risk Analytics Stream 的外系课程池、University Core、free electives 及 CUHK-Edinburgh transfer pattern 未闭合，因此保持只读浏览，不生成毕业完成百分比。
+- 当前 1.0.13 微信开发版已上传至课程更新提交 `24e0373`，包含 CUHK `RMSCN` / `GRMDN` / `NSCIN` 以及此前 `ECONN` / `JASPN` / `RELSN` / `PUHSN` / `TRANN` / `THEON` / `SOWKN` / `SOCIN` 课程数据。
 - 本批开放 HKU `6755` 其余 BBA Major、`6767` Economics、`6779` Statistical Decision Sciences、`6781` Accounting、`6896` IBGM、Asset Management and Private Banking、Quantitative Finance、Business Analytics、Marketing Analytics and Technology，以及 `6808` / `6810` 两个 Law double degree 的官方可核验课程。
 - `6808` 与 `6810` 的 Law elective universe 未由 Programme-specific 来源闭合，因此只发布已核验代码供只读浏览，不生成完整毕业结构或完成百分比。
 - 旧单一 `ug-data-hku`、`ug-data-hkbu` 已由生成脚本替换；当前工作区 HKU 使用 `ug-data-hku-a` / `ug-data-hku-b` / `ug-data-hku-c` 三分包，HKBU 使用 `ug-data-hkbu-a` / `ug-data-hkbu-b` 双分包。不要手工恢复旧 loader。
@@ -49,11 +50,14 @@
 - 2026-07-28 已用提交 `40253ca` 的 CUHK `ECONN Economics` 课程更新覆盖上传同版本 `1.0.12`，备注为 `1.0.12: Add CUHK Economics curriculum`，命令返回 `✔ upload`；实际上传包 17,860,415 bytes，主包 1,483,876 bytes，所有 22 个分包均低于 2 MB。
 - 2026-07-29 已用发布提交 `2228b33` 上传 `1.0.13`，备注为 `1.0.13: Expand verified CUHK curricula`，命令返回 `✔ upload`；实际上传包 17,860,451 bytes，主包 1,483,912 bytes，所有 22 个分包均低于 2 MB。
 - 2026-07-29 已用课程更新提交 `0c640ce` 覆盖上传同版本 `1.0.13`，备注为 `1.0.13: Add CUHK geography and natural sciences curricula`，命令返回 `✔ upload`；实际上传包 17,942,875 bytes，主包 1,484,086 bytes，所有 22 个分包均低于 2 MB。
+- 2026-07-30 已用课程更新提交 `24e0373` 覆盖上传同版本 `1.0.13`，备注为 `1.0.13: Add CUHK Risk Management Science curriculum`，命令返回 `✔ upload`；实际上传包 17,955,401 bytes，主包 1,484,173 bytes，所有 22 个分包均低于 2 MB。
 - `.playwright-cli/` 为 96 KB 的本地浏览器诊断产物，共有 console log 和 page YAML；本次没有删除、覆盖或暂存。
 
 最近关键提交（本次交接提交前）：
 
 ```text
+24e0373 Add CUHK Risk Management Science curriculum
+8371d0b Document CUHK curricula upload status
 0c640ce Add CUHK geography and natural sciences curricula
 ca99b8f Document 1.0.13 upload status
 2228b33 Release 1.0.13 with expanded CUHK curricula
@@ -281,7 +285,7 @@ df91815 Add PolyU Design curriculum and source evidence
 - 2026-07-28 提交 `27a9ac1` 的 CUHK `SOWKN Social Work` 32 门课程已推送到 GitHub；拟用备注为 `1.0.12: Add CUHK Social Work curriculum`。`npm run check:ship` 通过 973/973 测试且 `ready=true`；微信开发者工具登录状态为 `false`，新二维码登录因 Mac 锁屏未完成扫码确认并返回 code 25，因此当前代码仍未上传。
 - 2026-07-28 提交 `656203c` 的 CUHK `SOCIN Sociology` 62 门课程已推送到 GitHub。以备注 `1.0.12: Add CUHK Sociology curriculum` 执行微信上传时先返回登录过期 `code 10`，随后两次官方 CLI 二维码登录均因未完成扫码确认返回 `code 25`，因此包含该批次的当前代码仍未上传。
 - 2026-07-28 提交 `40253ca` 的 CUHK `ECONN Economics` 61 门课程已推送到 GitHub，并以备注 `1.0.12: Add CUHK Economics curriculum` 成功覆盖上传微信开发版，命令返回 `✔ upload`；本次上传已包含上述此前尚未上传的 CUHK 课程批次。
-- 当前工作区完整检查：980/980 测试通过、`ready=true`、19,378 条 UG coded courses、296 个已开放 Programme、主包预估 1,843,400 bytes、总估算包体 22,681,958 bytes，所有 22 个分包低于 2 MB，敏感 API 为 0。
+- 当前工作区完整检查：982/982 测试通过、`ready=true`、19,394 条 UG coded courses、297 个已开放 Programme、主包预估 1,843,497 bytes、总估算包体 22,697,086 bytes，所有 22 个分包低于 2 MB，敏感 API 为 0。
 - 微信开发者工具确认 PolyU Computer Science 可加载 83 门课程，首页入口序号为 `01 / 02 / 03 / 04`；模拟器测试结束后已恢复原 Architectural Studies 资料，`plannedUgCourseKeys`、`ugCoursePlanAssignments`、`completedUgCourseKeys` 均为空。
 - 微信官方 automation 已完成普通 `POLYU-TPG-090` 闭环：36 门课程、`COMP5521` 加入计划、列表状态、官方分组、标记已修、复制与移除均通过。
 - 多 Track `HKU-TPG-031` 验收通过：Generalist 计 1 门，Chinese Language Education 计 2 门；两条记录均保留，旧 Track 课程不计入 Generalist 当前统计。
