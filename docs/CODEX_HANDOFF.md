@@ -8,7 +8,7 @@
 
 当前产品边界是：先保证离线发布、数据可追溯和规则不误导，再继续补课程覆盖与规划能力。未经明确产品决定，不引入登录、云同步、统计、敏感权限或生产 API。
 
-当前仓库发布资料已统一为 `1.0.13`（`package.json`、运行时 `releaseInfo`、`docs/MVP_SPEC.md`、`docs/RELEASE_CHECKLIST.md`、`docs/REVIEW_SUBMISSION.md`）。微信官方 CLI 已用当前 Git 发布提交成功上传 `1.0.13`；没有提交审核或发布正式版。
+当前仓库发布资料已统一为 `1.0.13`（`package.json`、运行时 `releaseInfo`、`docs/MVP_SPEC.md`、`docs/RELEASE_CHECKLIST.md`、`docs/REVIEW_SUBMISSION.md`）。微信官方 CLI 最近一次成功上传的 `1.0.13` 对应课程提交 `24e0373`；当前 Git 课程提交 `3355041` 尚未上传。没有提交审核或发布正式版。
 
 ## 可验证的仓库快照
 
@@ -17,7 +17,7 @@
 - 1.0.12 已补充 HKU 商科、经济、统计、会计及法学双学位官方课程清单，并对规则未闭合 Programme 保持只读浏览，不显示未经核验的毕业完成比例。
 - HKU 商科与法学批次由提交 `7c2e66f` 发布；HKU `6688 Science Master Class` 与 `6901 Bachelor of Science` 批次由提交 `c1076cf` 发布；HKU `6987 Computer Engineering / Electrical Engineering / Electronic Engineering` 三 Major 与 HKU `6925` / `6858` / `6897` 来源审查由提交 `8fa7ce8 Expand HKU engineering curricula for 1.0.12` 发布。
 - 包版本：`1.0.13`
-- 当前课程更新提交 `24e0373` 已推送到 `origin/main`；`1.0.13` 发布起始提交为 `2228b33`。
+- 当前课程更新提交 `3355041` 已推送到 `origin/main`；`1.0.13` 发布起始提交为 `2228b33`。
 - 当前 Git 代码已包含 CUHK `JASPN Japanese Studies` 58 门 Major-assigned JASP 课程；标准、Local、Stream、senior-entry 与 double-Major 路径未完整闭合，因此保持只读浏览，不生成毕业完成百分比。
 - 当前 Git 代码也已包含 CUHK `RELSN Religious Studies` 63 门 Religious Studies Area 课程；标准与 senior-entry 路径因 Cultural Studies 和跨院 Concentration 开放池未闭合而保持只读浏览。
 - 当前 Git 代码还包含 CUHK `PUHSN Public Humanities` 88 门 2025-26 intake-specific 课程；标准与 senior-entry 路径、外系 Faculty Package、Religious Studies Areas、Concentration 替代及课程复用规则未闭合，因此保持只读浏览，不生成毕业完成百分比。
@@ -53,6 +53,7 @@
 - 2026-07-29 已用发布提交 `2228b33` 上传 `1.0.13`，备注为 `1.0.13: Expand verified CUHK curricula`，命令返回 `✔ upload`；实际上传包 17,860,451 bytes，主包 1,483,912 bytes，所有 22 个分包均低于 2 MB。
 - 2026-07-29 已用课程更新提交 `0c640ce` 覆盖上传同版本 `1.0.13`，备注为 `1.0.13: Add CUHK geography and natural sciences curricula`，命令返回 `✔ upload`；实际上传包 17,942,875 bytes，主包 1,484,086 bytes，所有 22 个分包均低于 2 MB。
 - 2026-07-30 已用课程更新提交 `24e0373` 覆盖上传同版本 `1.0.13`，备注为 `1.0.13: Add CUHK Risk Management Science curriculum`，命令返回 `✔ upload`；实际上传包 17,955,401 bytes，主包 1,484,173 bytes，所有 22 个分包均低于 2 MB。
+- 2026-07-30 课程更新提交 `3355041` 已推送到 GitHub。以备注 `1.0.13: Add CUHK mathematics and quantitative finance curricula` 上传时返回登录过期 `code 10`；随后官方 CLI 二维码登录持续等待但未完成手机端确认，已停止等待。因此该提交尚未上传微信。
 - `.playwright-cli/` 为 96 KB 的本地浏览器诊断产物，共有 console log 和 page YAML；本次没有删除、覆盖或暂存。
 
 最近关键提交（本次交接提交前）：
@@ -416,19 +417,10 @@ npm run status:ug-sources -- --missing-only --priority launch --missing-limit 10
 
 ## 当前工作区
 
-当前 1.0.13 微信开发版已覆盖至课程更新提交 `24e0373`，Git `main` 与 `origin/main` 同步至上传记录提交 `e532ab0`。工作区新增 `MATHN-ERM Enrichment Mathematics` 与 `QFINN Quantitative Finance` source supplements、生成 catalogue/shard、专项与运行时测试，尚未提交或上传：
+当前 1.0.13 微信开发版已覆盖至课程更新提交 `24e0373`。`MATHN-ERM Enrichment Mathematics` 与 `QFINN Quantitative Finance` source supplements、生成 catalogue/shard、专项与运行时测试已由提交 `3355041` 推送到 `origin/main`，但尚未上传微信。交接文档提交前，工作区只保留用户本地诊断目录：
 
 ```text
-M  miniprogram/subpackages/ug-data-cuhk/ugCourseData/cuhk.js
-M  miniprogram/utils/ugCatalogue.js
-M  miniprogram/utils/ugCourseShards.js
-M  miniprogram/utils/ugService.test.js
-M  scripts/check-release-readiness.test.js
 ?? .playwright-cli/
-?? data/ug-course-supplements/cuhk-mathn-erm-enrichment-mathematics-courses-2026.json
-?? data/ug-course-supplements/cuhk-qfinn-quantitative-finance-courses-2025.json
-?? scripts/cuhk-mathn-erm-enrichment-mathematics-supplement.test.js
-?? scripts/cuhk-qfinn-quantitative-finance-supplement.test.js
 ```
 
 `.playwright-cli/` 仍保持未跟踪；本次没有重置、删除、覆盖或清理该目录。
@@ -468,7 +460,7 @@ npm run status:ug-sources -- --missing-only --missing-summary --missing-limit 0:
 
 ## 已知问题、风险和不要做的事情
 
-- 微信已通过官方 CLI 用课程更新提交 `0c640ce` 上传 `1.0.13`；这只表示开发版上传成功，不等于已提审或已发布。
+- 微信已通过官方 CLI 用课程更新提交 `24e0373` 上传 `1.0.13`；当前 Git 课程提交 `3355041` 因登录未完成而尚未上传。这只表示此前开发版上传成功，不等于已提审或已发布。
 - 不要把“上传成功”写成“已提审”或“已发布”。这两个外部动作尚未执行。
 - 不要删除或提交 `.playwright-cli/`，除非用户明确决定如何处理该诊断目录。
 - 不要手改生成的 catalogue、course shard 或 loader；从 source/supplement 和 builder 修改后重新生成。
