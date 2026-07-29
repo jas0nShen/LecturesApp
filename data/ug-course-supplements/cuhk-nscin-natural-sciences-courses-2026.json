@@ -1,0 +1,67 @@
+{
+  "provider": "CUHK Faculty of Science Natural Sciences curriculum",
+  "academicYear": "Concentration Requirements for 2026-27 and thereafter; reviewed on 2026-07-29",
+  "sourceUrl": "https://www.sci.cuhk.edu.hk/nsci/curriculum/",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/nscin/",
+  "additionalSourceUrls": [
+    "https://www.sci.cuhk.edu.hk/wp-content/uploads/NSCI_UG.pdf"
+  ],
+  "note": "The current official Faculty of Science curriculum page defines Natural Sciences as a two-year senior-entry Programme requiring at least 69 units for graduation. Its 51-unit Major requirement includes at least 32 science units from one of seven Concentrations: Biological Sciences, Biotechnology, Environmental Studies, Food and Nutrition, Data Science, Chemical and Testing Sciences, or Physical Sciences. This supplement exposes the union of all 40 uniquely coded courses explicitly named in the 2026-27-and-thereafter Required Courses tables. Shared and alternative-course membership is preserved in each course group. The page defines the remaining Concentration and outside-Concentration electives only through open BCHE, BIOL, CHEM, CMBI, EESC, FNSC, LSCI, MATH, MBTE, PHYS, RMSC and STAT course pools, with level, laboratory and research-unit constraints; it does not publish closed code lists for those pools. CHEM2110, CHEM2120, CHEM2200 and CHEM2300 are an any-three group worth 7-8 units, while the six Physical Sciences foundation choices form an any-two 6-unit group, so their individual credits remain 0 rather than being inferred from group totals. The official brochure visually confirms the seven-Concentration and 51-unit structure but does not add current course codes. Because the open elective universes and complete 51-unit paths are not closed by the public page, this 40-course required-code list is intentionally browse-only and must not produce a graduation completion percentage.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "NSCIN",
+      "programmeId": "CUHK-UG-NSCIN-66",
+      "majorId": "CUHK-UG-NSCIN-66-M1",
+      "courses": [
+        { "code": "NSCI3100", "title": "Career Path Planning", "credits": 1, "courseType": "core", "group": "Major Required · fixed in all seven Concentrations" },
+        { "code": "NSCI3000", "title": "Science and Applications of Biomimicry", "credits": 2, "courseType": "major_elective", "group": "Major Required choice · choose NSCI3000 or NSCI3200 in every Concentration" },
+        { "code": "NSCI3200", "title": "Healthy Ageing", "credits": 2, "courseType": "major_elective", "group": "Major Required choice · choose NSCI3000 or NSCI3200 in every Concentration" },
+
+        { "code": "BCHE2030", "title": "Fundamentals of Biochemistry", "credits": 3, "courseType": "core", "group": "Biological Sciences Required choice · choose BCHE2030 or BIOL2120 · Biotechnology Required · Food and Nutrition Required" },
+        { "code": "BIOL2120", "title": "Cell Biology", "credits": 3, "courseType": "core", "group": "Biological Sciences Required choice · choose BCHE2030 or BIOL2120 · Biotechnology Required · Food and Nutrition Required choice · choose BIOL2120 or LSCI1002" },
+        { "code": "BIOL2210", "title": "Ecology", "credits": 3, "courseType": "core", "group": "Biological Sciences Required choice · choose BIOL2210 or MBTE2010 · Environmental Studies Required" },
+        { "code": "MBTE2010", "title": "Diversity of Life: Applications and Sustainability", "credits": 2, "courseType": "core", "group": "Biological Sciences Required choice · choose BIOL2210 or MBTE2010 · Biotechnology Required" },
+
+        { "code": "MBTE2000", "title": "Introduction to Molecular Biotechnology", "credits": 2, "courseType": "core", "group": "Biotechnology Required" },
+        { "code": "LSCI2002", "title": "Basic Laboratory Techniques in Life Sciences", "credits": 2, "courseType": "major_elective", "group": "Biotechnology Required choice · choose LSCI2002 or MBTE4033" },
+        { "code": "MBTE4033", "title": "Methods in Molecular Biotechnology Laboratory I", "credits": 2, "courseType": "major_elective", "group": "Biotechnology Required choice · choose LSCI2002 or MBTE4033" },
+
+        { "code": "EESC2270", "title": "Introduction to Environmental Science", "credits": 3, "courseType": "core", "group": "Environmental Studies Required" },
+        { "code": "EESC2515", "title": "Environmental Chemistry", "credits": 3, "courseType": "core", "group": "Environmental Studies Required" },
+        { "code": "EESC3520", "title": "Environmental and Biochemical Toxicology", "credits": 3, "courseType": "core", "group": "Environmental Studies Required" },
+
+        { "code": "LSCI1002", "title": "Introduction to Biological Sciences", "credits": 3, "courseType": "major_elective", "group": "Food and Nutrition Required choice · choose BIOL2120 or LSCI1002" },
+        { "code": "FNSC2001", "title": "Introduction to Food Science and Technology", "credits": 2, "courseType": "core", "group": "Food and Nutrition Required" },
+        { "code": "FNSC2002", "title": "Nutrition for Health", "credits": 2, "courseType": "core", "group": "Food and Nutrition Required" },
+
+        { "code": "STAT2001", "title": "Basic Concepts in Statistics and Probability I", "credits": 3, "courseType": "core", "group": "Data Science Required" },
+        { "code": "STAT2005", "title": "Programming Languages for Statistics", "credits": 3, "courseType": "core", "group": "Data Science Required" },
+        { "code": "STAT2006", "title": "Basic Concepts in Statistics and Probability II", "credits": 3, "courseType": "core", "group": "Data Science Required" },
+        { "code": "STAT3008", "title": "Applied Regression Analysis", "credits": 3, "courseType": "core", "group": "Data Science Required" },
+        { "code": "NSCI4051", "title": "Workshop on Data Science", "credits": 3, "courseType": "core", "group": "Data Science Required" },
+
+        { "code": "CHEM2400", "title": "Analytical Chemistry", "credits": 2, "courseType": "core", "group": "Chemical and Testing Sciences Required" },
+        { "code": "CHEM2872", "title": "Fundamental Analytical Chemistry Laboratory", "credits": 2, "courseType": "core", "group": "Chemical and Testing Sciences Required" },
+        { "code": "CHEM3410", "title": "Instrumental Analysis", "credits": 3, "courseType": "core", "group": "Chemical and Testing Sciences Required" },
+        { "code": "CHEM3870", "title": "Instrumental Analysis Laboratory", "credits": 2, "courseType": "core", "group": "Chemical and Testing Sciences Required" },
+        { "code": "CHEM3420", "title": "Accreditation of Laboratory Tests", "credits": 2, "courseType": "core", "group": "Chemical and Testing Sciences Required" },
+        { "code": "CHEM4960", "title": "Research Projects in Chemical Science I", "credits": 2, "courseType": "core", "group": "Chemical and Testing Sciences Required · research course" },
+        { "code": "CHEM4970", "title": "Research Projects in Chemical Science II", "credits": 2, "courseType": "core", "group": "Chemical and Testing Sciences Required · research course" },
+        { "code": "CHEM2110", "title": "Fundamentals of Spectroscopic Analysis", "credits": 0, "courseType": "major_elective", "group": "Chemical and Testing Sciences Required choice · complete any 3 of CHEM2110, CHEM2120, CHEM2200 and CHEM2300 for 7-8 units · individual units not published" },
+        { "code": "CHEM2120", "title": "Main Group Chemistry", "credits": 0, "courseType": "major_elective", "group": "Chemical and Testing Sciences Required choice · complete any 3 of CHEM2110, CHEM2120, CHEM2200 and CHEM2300 for 7-8 units · individual units not published" },
+        { "code": "CHEM2200", "title": "Organic Functional Groups: Structure and Reactivity", "credits": 0, "courseType": "major_elective", "group": "Chemical and Testing Sciences Required choice · complete any 3 of CHEM2110, CHEM2120, CHEM2200 and CHEM2300 for 7-8 units · individual units not published" },
+        { "code": "CHEM2300", "title": "Thermodynamics and Chemical Equilibrium", "credits": 0, "courseType": "major_elective", "group": "Chemical and Testing Sciences Required choice · complete any 3 of CHEM2110, CHEM2120, CHEM2200 and CHEM2300 for 7-8 units · individual units not published" },
+        { "code": "STAT1011", "title": "Introduction to Statistics", "credits": 3, "courseType": "major_elective", "group": "Chemical and Testing Sciences Required choice · choose STAT1011 or STAT1012" },
+        { "code": "STAT1012", "title": "Statistics for Life Sciences", "credits": 3, "courseType": "major_elective", "group": "Chemical and Testing Sciences Required choice · choose STAT1011 or STAT1012" },
+
+        { "code": "CHEM1070", "title": "Principles of Modern Chemistry", "credits": 0, "courseType": "major_elective", "group": "Physical Sciences Required choice · complete any 2 of CHEM1070, CHEM1072, MATH1010, MATH1520, PHYS1002 and PHYS1111 for 6 units · individual units not published" },
+        { "code": "CHEM1072", "title": "General Chemistry", "credits": 0, "courseType": "major_elective", "group": "Physical Sciences Required choice · complete any 2 of CHEM1070, CHEM1072, MATH1010, MATH1520, PHYS1002 and PHYS1111 for 6 units · individual units not published" },
+        { "code": "MATH1010", "title": "University Mathematics", "credits": 0, "courseType": "major_elective", "group": "Physical Sciences Required choice · complete any 2 of CHEM1070, CHEM1072, MATH1010, MATH1520, PHYS1002 and PHYS1111 for 6 units · individual units not published" },
+        { "code": "MATH1520", "title": "University Mathematics for Applications", "credits": 0, "courseType": "major_elective", "group": "Physical Sciences Required choice · complete any 2 of CHEM1070, CHEM1072, MATH1010, MATH1520, PHYS1002 and PHYS1111 for 6 units · individual units not published" },
+        { "code": "PHYS1002", "title": "General Physics", "credits": 0, "courseType": "major_elective", "group": "Physical Sciences Required choice · complete any 2 of CHEM1070, CHEM1072, MATH1010, MATH1520, PHYS1002 and PHYS1111 for 6 units · individual units not published" },
+        { "code": "PHYS1111", "title": "University Physics I", "credits": 0, "courseType": "major_elective", "group": "Physical Sciences Required choice · complete any 2 of CHEM1070, CHEM1072, MATH1010, MATH1520, PHYS1002 and PHYS1111 for 6 units · individual units not published" }
+      ]
+    }
+  ]
+}

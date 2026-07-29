@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-28T12:46:49.096Z",
+  "generatedAt": "2026-07-29T16:12:15.657Z",
   "universities": [
     {
       "id": "HKU",
@@ -4445,9 +4445,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/nscin/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 40,
+      "codedCourseCount": 40,
+      "courseSourceUrl": "https://www.sci.cuhk.edu.hk/nsci/curriculum/"
     },
     {
       "id": "CUHK-UG-RMSCN-67",
@@ -4599,9 +4600,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/grmdn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 62,
+      "codedCourseCount": 62,
+      "courseSourceUrl": "https://www.grm.cuhk.edu.hk/cab/undergraduate/GRMD_Course_List_2526_2627.pdf"
     },
     {
       "id": "CUHK-UG-GCOMN-75",
@@ -11249,8 +11251,8 @@ const catalogue = {
       "code": "NATURAL-SCIENCES",
       "nameEn": "Natural Sciences",
       "nameZh": "Natural Sciences",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 41,
+      "codedCourseCount": 40,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/nscin/"
     },
     {
@@ -11329,9 +11331,9 @@ const catalogue = {
       "code": "GEOGRAPHY-AND-RESOURCE-MANAGEMENT",
       "nameEn": "Geography and Resource Management",
       "nameZh": "Geography and Resource Management",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admission.cuhk.edu.hk/programme/grmdn/"
+      "courseCount": 63,
+      "codedCourseCount": 62,
+      "officialUrl": "https://www.grm.cuhk.edu.hk/en/ug/programmes/overview/"
     },
     {
       "id": "CUHK-UG-GCOMN-75-M1",
@@ -16136,7 +16138,7 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 3056,
-    "CUHK": 1374,
+    "CUHK": 1476,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
@@ -16144,7 +16146,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 19276
+  "codedCourseCount": 19378
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

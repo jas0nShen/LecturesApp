@@ -47,15 +47,15 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.programmeCount, 445);
   assert.equal(summary.majorCount, 687);
   assert.equal(summary.requirementCount, 4);
-  assert.equal(summary.courseCount, 19290);
+  assert.equal(summary.courseCount, 19392);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 19276);
-  assert.equal(summary.programmeWithCoursesCount, 294);
-  assert.equal(summary.pendingProgrammeCount, 150);
+  assert.equal(summary.codedCourseCount, 19378);
+  assert.equal(summary.programmeWithCoursesCount, 296);
+  assert.equal(summary.pendingProgrammeCount, 148);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
-  assert.equal(summary.coveragePercent, 66);
+  assert.equal(summary.coveragePercent, 67);
   assert.match(summary.generatedAt, /^\d{4}-\d{2}-\d{2}T/);
   assert.match(summary.generatedDate, /^\d{4}-\d{2}-\d{2}$/);
 });
@@ -313,6 +313,56 @@ test('CUHK Social Work exposes the current 32-course Study Scheme list as browse
   assert.equal(byCode.SOWK4580.credits, 0);
   assert.match(byCode.SOWK4580.description, /units cell blank/);
   assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Family Therapy' }).some((course) => course.courseCode === 'SOWK4590'));
+});
+
+test('CUHK Geography and Resource Management exposes the official 62-course pool as browse-only', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'GRMDN');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-GRMDN-74-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2025');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 62);
+  assert.equal(courses.length, 62);
+  assert.equal(courses.filter((course) => course.courseType === 'core').length, 6);
+  assert.equal(courses.filter((course) => course.courseType === 'fieldwork').length, 3);
+  assert.equal(courses.filter((course) => course.courseType === 'capstone').length, 2);
+  assert.equal(courses.filter((course) => course.courseType === 'major_elective').length, 51);
+  assert.equal(courses.filter((course) => course.credits === 0).length, 59);
+  assert.equal(byCode.GRMD1011.credits, 2);
+  assert.equal(byCode.GRMD1401.credits, 3);
+  assert.equal(byCode.GRMD1403.credits, 3);
+  assert.match(byCode.GRMD2501.requirementGroups[0], /Smart Cities and Sustainability Governance Concentration/);
+  assert.match(byCode.GRMD3018.requirementGroups[0], /official Field Study Trips pool/);
+  assert.notEqual(byCode.GRMD1001.titleEn, byCode.GRMD1011.titleEn);
+  assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Urban Big Data' }).some((course) => course.courseCode === 'GRMD4502'));
+});
+
+test('CUHK Natural Sciences exposes seven current Concentration required-code pools as browse-only', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'NSCIN');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-NSCIN-66-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 40);
+  assert.equal(courses.length, 40);
+  assert.equal(courses.filter((course) => course.courseType === 'core').length, 23);
+  assert.equal(courses.filter((course) => course.courseType === 'major_elective').length, 17);
+  assert.equal(courses.filter((course) => course.credits === 0).length, 10);
+  assert.equal(byCode.NSCI3100.credits, 1);
+  assert.match(byCode.NSCI3000.requirementGroups[0], /NSCI3000 or NSCI3200/);
+  assert.match(byCode.CHEM2110.requirementGroups[0], /any 3/);
+  assert.match(byCode.PHYS1111.requirementGroups[0], /any 2/);
+  assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Workshop on Data Science' }).some((course) => course.courseCode === 'NSCI4051'));
 });
 
 test('CUHK Sociology exposes the 2025-26 62-course Major pool as browse-only', () => {
